@@ -16,10 +16,12 @@
       --border: oklch(90.5% 0.006 250);
       --accent: oklch(58% 0.18 255);
       --accent-soft: color-mix(in oklch, var(--accent) 10%, transparent);
+      --surface-hover: oklch(97% 0.004 240);
       --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "PingFang SC", sans-serif;
       --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "PingFang SC", sans-serif;
       --font-mono: "JetBrains Mono", "IBM Plex Mono", Menlo, monospace;
-      --radius: 12px;
+      --radius: 8px;
+      --radius-lg: 12px;
       --container: 900px;
     }
 
@@ -31,6 +33,7 @@
       --border: oklch(22% 0.008 250);
       --accent: oklch(64% 0.16 250);
       --accent-soft: color-mix(in oklch, var(--accent) 15%, transparent);
+      --surface-hover: oklch(19% 0.012 250);
     }
 
     * { box-sizing: border-box; }
@@ -60,7 +63,7 @@
       margin: 0 auto;
       padding: 0 24px;
     }
-    .topbar {
+    .topnav {
       position: sticky;
       top: 0;
       z-index: 10;
@@ -68,23 +71,87 @@
       background: color-mix(in oklch, var(--bg) 82%, transparent);
       border-bottom: 1px solid var(--border);
     }
-    .topbar-inner {
+    .topnav-inner {
       min-height: 64px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
     }
-    .topbar-actions {
+    .topnav .logo {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
       display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+    .brand-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+    }
+    .topnav-actions {
+      display: flex;
+      align-items: center;
       gap: 10px;
       flex-wrap: wrap;
     }
-    .chip {
-      padding: 8px 12px;
+    .control-btn {
+      min-height: 32px;
+      padding: 6px 12px;
       border: 1px solid var(--border);
-      border-radius: 999px;
+      border-radius: var(--radius);
       background: var(--surface);
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .control-btn:hover {
+      background: var(--surface-hover);
+      border-color: var(--fg);
+    }
+    .language-picker {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+    .language-picker svg {
+      position: absolute;
+      left: 10px;
+      width: 15px;
+      height: 15px;
+      color: var(--muted);
+      pointer-events: none;
+    }
+    .language-select {
+      min-height: 32px;
+      min-width: 96px;
+      padding: 5px 30px 5px 32px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--fg);
+      font: 600 13px/1.2 var(--font-body);
+      appearance: none;
+      background-image:
+        linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+        linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+      background-position:
+        calc(100% - 16px) 14px,
+        calc(100% - 11px) 14px;
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+    }
+    .language-select:hover,
+    .language-select:focus {
+      outline: none;
+      border-color: var(--fg);
+      background-color: var(--surface-hover);
     }
     main {
       padding: 48px 0 80px;
@@ -125,7 +192,7 @@
     .panel {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: var(--radius-lg);
       padding: 22px;
     }
     .panel h2 {
@@ -177,16 +244,27 @@
   </style>
 </head>
 <body data-theme="light">
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="index.html" class="chip">
-        <span data-zh="返回时间轴" data-en="Back to timeline">Back to timeline</span>
+  <header class="topnav">
+    <div class="container topnav-inner">
+      <a href="index.html" class="logo" aria-label="EpochArc home">
+        <img class="brand-icon" src="assets/logo-icon.svg" alt="" aria-hidden="true">
+        <span>EpochArc</span>
       </a>
-      <div class="topbar-actions">
-        <button class="chip" id="langToggle">
-          <span id="langText">中文</span>
-        </button>
-        <button class="chip" id="themeToggle">
+      <div class="topnav-actions">
+        <label class="language-picker" aria-label="Language">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path stroke-linecap="round" d="M3.6 9h16.8M3.6 15h16.8M12 3c2.2 2.4 3.3 5.4 3.3 9S14.2 18.6 12 21M12 3C9.8 5.4 8.7 8.4 8.7 12S9.8 18.6 12 21"></path>
+          </svg>
+          <select class="language-select" id="langSelect">
+            <option value="en">EN</option>
+            <option value="zh-Hans">中文</option>
+          </select>
+        </label>
+        <button class="control-btn" id="themeToggle">
+          <svg id="themeIcon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+          </svg>
           <span id="themeText" data-zh="深色模式" data-en="Dark Mode">Dark Mode</span>
         </button>
       </div>
@@ -304,31 +382,43 @@
 
   <script>
     const state = {
-      lang: localStorage.getItem('od-lang') || 'en',
+      lang: normalizeLang(localStorage.getItem('od-lang') || 'en'),
       theme: localStorage.getItem('od-theme') || 'light'
     };
 
-    const langText = document.getElementById('langText');
+    const langSelect = document.getElementById('langSelect');
     const themeText = document.getElementById('themeText');
+    const themeIcon = document.getElementById('themeIcon');
+
+    function normalizeLang(lang) {
+      return lang === 'zh' || lang === 'zh-CN' || lang === 'zh-Hant' ? 'zh-Hans' : 'en';
+    }
+
+    function isChinese() {
+      return state.lang === 'zh-Hans';
+    }
 
     function updateLocale() {
-      document.documentElement.lang = state.lang === 'zh' ? 'zh-CN' : 'en';
-      langText.innerText = state.lang === 'zh' ? 'English' : '中文';
+      document.documentElement.lang = isChinese() ? 'zh-Hans' : 'en';
+      langSelect.value = state.lang;
       document.querySelectorAll('[data-zh]').forEach((el) => {
-        el.innerText = state.lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+        el.innerText = isChinese() ? el.getAttribute('data-zh') : el.getAttribute('data-en');
       });
-      themeText.innerText = state.lang === 'zh'
+      themeText.innerText = isChinese()
         ? (state.theme === 'light' ? '深色模式' : '浅色模式')
         : (state.theme === 'light' ? 'Dark Mode' : 'Light Mode');
     }
 
     function updateTheme() {
       document.body.setAttribute('data-theme', state.theme);
+      themeIcon.innerHTML = state.theme === 'dark'
+        ? '<path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707m12.728 6.364A9 9 0 115.636 5.636m12.728 12.728A9 9 0 015.636 5.636"></path>'
+        : '<path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>';
       updateLocale();
     }
 
-    document.getElementById('langToggle').addEventListener('click', () => {
-      state.lang = state.lang === 'zh' ? 'en' : 'zh';
+    langSelect.addEventListener('change', (event) => {
+      state.lang = normalizeLang(event.target.value);
       localStorage.setItem('od-lang', state.lang);
       updateLocale();
     });
