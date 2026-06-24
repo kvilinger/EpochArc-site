@@ -1,0 +1,4574 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EpochArc · AI Milestones, Signals, and Forecasts</title>
+  <meta name="description" content="EpochArc tracks AI milestones, organizes signals, and maps forward-looking forecasts in a structured bilingual timeline." />
+  <meta name="theme-color" content="#f7f8fb" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="application-name" content="EpochArc" />
+  <meta name="apple-mobile-web-app-title" content="EpochArc" />
+  <meta property="og:title" content="EpochArc · AI Milestones, Signals, and Forecasts" />
+  <meta property="og:description" content="A bilingual project for tracking AI milestones, organizing signals, and mapping forward-looking forecasts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="EpochArc" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:image" content="/og-image.svg" />
+  <meta property="og:image:type" content="image/svg+xml" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EpochArc · AI Milestones, Signals, and Forecasts" />
+  <meta name="twitter:description" content="A bilingual project for tracking AI milestones, organizing signals, and mapping forward-looking forecasts." />
+  <meta name="twitter:image" content="/og-image.svg" />
+  <link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "EpochArc",
+      "alternateName": "EpochArc",
+      "description": "A bilingual public timeline of AI milestones, signals, and forward-looking forecasts.",
+      "inLanguage": ["zh-CN", "en"]
+    }
+  </script>
+  <style>
+    /* ─── Modern Minimal Theme Variables ───────────────────────────────── */
+    :root {
+      /* Light Mode Palette (Codified Brand Spec) */
+      --bg:            oklch(98.5% 0.003 240);
+      --surface:       oklch(100% 0 0);
+      --surface-hover: oklch(97% 0.004 240);
+      --fg:            oklch(15% 0.015 250);
+      --muted:         oklch(52% 0.012 250);
+      --border:        oklch(90.5% 0.006 250);
+      --accent:        oklch(58% 0.18 255); /* Electric Blue-Cyan */
+      --highlight:     oklch(62% 0.22 25);  /* Vibrant Red/Coral for focus outline */
+      
+      /* Inactive Filter Buttons (Codified Brand Spec) */
+      --btn-inactive-bg:     oklch(97.2% 0.004 250);
+      --btn-inactive-border: oklch(89.5% 0.006 250);
+      
+      /* Category Colors (Tailored Light Mode) */
+      --color-foundation: oklch(50% 0.2 260); /* Blue */
+      --color-apps:       oklch(48% 0.2 140); /* Green */
+      --color-hardware:   oklch(52% 0.2 45);  /* Coral */
+      --color-embodied:   oklch(48% 0.22 310); /* Magenta */
+      --color-social:     oklch(48% 0.18 200); /* Teal */
+
+      --accent-soft: color-mix(in oklch, var(--accent) 10%, transparent);
+      --fg-soft:     color-mix(in oklch, var(--fg) 5%, transparent);
+
+      /* Fonts (Codified Brand Spec) */
+      --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'PingFang SC', sans-serif;
+      --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'PingFang SC', sans-serif;
+      --font-mono:    'JetBrains Mono', 'IBM Plex Mono', Menlo, monospace;
+
+      /* Scales */
+      --fs-h1: clamp(36px, 5.5vw, 64px);
+      --fs-h2: clamp(24px, 3.5vw, 36px);
+      --fs-h3: 20px;
+      --fs-lead: 18px;
+      --fs-body: 15px;
+      --fs-meta: 13px;
+
+      /* Spacing */
+      --gap-xs: 8px;
+      --gap-sm: 12px;
+      --gap-md: 20px;
+      --gap-lg: 32px;
+      --gap-xl: 56px;
+      --container: 960px; /* Locked to brand-spec container width */
+      --gutter: 24px;
+
+      /* Radius */
+      --radius: 8px;
+      --radius-lg: 12px;
+      --radius-pill: 999px;
+
+      /* Motion */
+      --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Dark Mode Overrides */
+    [data-theme="dark"] {
+      --bg:            oklch(12% 0.008 250);
+      --surface:       oklch(16% 0.01 250);
+      --surface-hover: oklch(19% 0.012 250);
+      --fg:            oklch(93% 0.005 250);
+      --muted:         oklch(60% 0.008 250);
+      --border:        oklch(22% 0.008 250);
+      --accent:        oklch(64% 0.16 250);
+      
+      --btn-inactive-bg:     oklch(19% 0.01 250);
+      --btn-inactive-border: oklch(25% 0.012 250);
+
+      /* Category Colors (Tailored Dark Mode) */
+      --color-foundation: oklch(70% 0.16 260);
+      --color-apps:       oklch(72% 0.16 140);
+      --color-hardware:   oklch(74% 0.16 45);
+      --color-embodied:   oklch(70% 0.18 310);
+      --color-social:     oklch(72% 0.14 200);
+      
+      --accent-soft: color-mix(in oklch, var(--accent) 15%, transparent);
+      --fg-soft:     color-mix(in oklch, var(--fg) 8%, transparent);
+    }
+
+    /* ─── Reset & Base ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      font-size: var(--fs-body);
+      line-height: 1.5;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      transition: background var(--transition-smooth), color var(--transition-smooth);
+      padding-bottom: var(--gap-xl);
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; background: none; border: none; padding: 0; color: inherit; }
+    p { text-wrap: pretty; margin: 0; }
+    h1, h2, h3, h4 { text-wrap: balance; margin: 0; font-weight: 700; letter-spacing: -0.02em; }
+
+    /* ─── Layout primitives ─────────────────────────────────────────── */
+    .container {
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+    }
+    .stack { display: flex; flex-direction: column; }
+    .stack > * + * { margin-top: var(--gap-md); }
+    .row { display: flex; align-items: center; gap: var(--gap-md); }
+    .row-between { display: flex; align-items: center; justify-content: space-between; gap: var(--gap-md); }
+
+    /* ─── Topbar Navigation ──────────────────────────────────────────── */
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: color-mix(in oklch, var(--bg) 85%, transparent);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: background var(--transition-smooth), border-color var(--transition-smooth);
+    }
+    .topnav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .topnav .logo {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .topnav .logo svg {
+      width: 24px;
+      height: 24px;
+      color: var(--accent);
+    }
+    .brand-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+    }
+    .topnav-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-sm);
+    }
+    .control-btn {
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: var(--fs-meta);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-smooth);
+      background: var(--surface);
+    }
+    .control-btn:hover {
+      border-color: var(--fg);
+      background: var(--surface-hover);
+    }
+    .language-picker {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+    .language-picker svg {
+      position: absolute;
+      left: 10px;
+      width: 15px;
+      height: 15px;
+      color: var(--muted);
+      pointer-events: none;
+    }
+    .language-select {
+      min-height: 32px;
+      min-width: 104px;
+      padding: 5px 30px 5px 32px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--fg);
+      font-size: var(--fs-meta);
+      font-weight: 600;
+      appearance: none;
+      transition: var(--transition-smooth);
+      background-image:
+        linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+        linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+      background-position:
+        calc(100% - 16px) 14px,
+        calc(100% - 11px) 14px;
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+    }
+    .language-select:hover,
+    .language-select:focus {
+      outline: none;
+      border-color: var(--fg);
+      background-color: var(--surface-hover);
+    }
+
+    /* ─── Hero Section ──────────────────────────────────────────────── */
+    .hero {
+      padding-top: clamp(28px, 6vw, 56px);
+      padding-bottom: clamp(16px, 3vw, 28px);
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: var(--fs-h1);
+      line-height: 1.05;
+      margin-bottom: 0;
+    }
+    .hero .lead {
+      display: none;
+    }
+
+    /* ─── Horizontal Predictions Row ────────────────────────────────── */
+    .predictions-section {
+      padding-block: var(--gap-md);
+      margin-bottom: var(--gap-lg);
+    }
+    .section-title {
+      font-size: 13px;
+      font-family: var(--font-mono);
+      letter-spacing: 0.01em;
+      color: var(--muted);
+      margin-bottom: var(--gap-md);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .predictions-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--gap-md);
+    }
+    @media (max-width: 900px) {
+      .predictions-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 550px) {
+      .predictions-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .predict-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: var(--gap-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+    .predict-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--border);
+      transition: var(--transition-smooth);
+    }
+    .predict-card.voted::before {
+      background: var(--accent);
+    }
+    .predict-header {
+      margin-bottom: var(--gap-sm);
+    }
+    .predict-header .expected-year {
+      font-family: var(--font-mono);
+      font-size: var(--fs-meta);
+      color: var(--muted);
+      font-weight: 600;
+      display: none;
+      margin-bottom: 4px;
+    }
+    .predict-header h3 {
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+    .predict-header p {
+      font-size: var(--fs-meta);
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .vote-area {
+      margin-top: var(--gap-md);
+    }
+    .vote-btn {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: var(--transition-smooth);
+      background: var(--surface);
+    }
+    .vote-btn:hover {
+      border-color: var(--fg);
+      background: var(--fg-soft);
+    }
+    .predict-card.voted .vote-btn {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .vote-bar-container {
+      width: 100%;
+      height: 4px;
+      background: var(--border);
+      border-radius: var(--radius-pill);
+      margin-top: var(--gap-xs);
+      overflow: hidden;
+    }
+    .vote-bar {
+      height: 100%;
+      background: var(--accent);
+      width: 0%;
+      transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .vote-stat {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ─── Timeline Filter Controls ──────────────────────────────────── */
+    .timeline-filter-bar {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.5fr) repeat(3, minmax(150px, 1fr));
+      align-items: end;
+      gap: 12px;
+      padding-block: 6px 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: var(--gap-lg);
+    }
+    .search-input-wrapper {
+      position: relative;
+      width: 100%;
+    }
+    .search-input-wrapper svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      color: var(--muted);
+    }
+    .search-input {
+      width: 100%;
+      min-height: 36px;
+      padding: 7px 12px 7px 36px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 13px;
+      background: var(--btn-inactive-bg);
+      color: var(--fg);
+      transition: var(--transition-smooth);
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--fg);
+      box-shadow: 0 0 0 2px var(--fg-soft);
+    }
+    .filter-groups {
+      display: contents;
+    }
+    .filter-field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: 0;
+    }
+    .filter-label {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      min-height: 14px;
+    }
+    .filter-label.ghost {
+      opacity: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+    .filter-select {
+      min-height: 36px;
+      padding: 6px 34px 6px 12px;
+      background: var(--btn-inactive-bg);
+      border: 1px solid var(--btn-inactive-border);
+      border-radius: var(--radius);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--fg);
+      transition: var(--transition-smooth);
+      appearance: none;
+      background-image:
+        linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+        linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+      background-position:
+        calc(100% - 17px) 16px,
+        calc(100% - 12px) 16px;
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+    }
+    .filter-select:hover {
+      background: var(--surface-hover);
+      border-color: var(--muted);
+    }
+    .filter-select:focus {
+      outline: none;
+      border-color: var(--fg);
+      box-shadow: 0 0 0 2px var(--fg-soft);
+    }
+    @media (max-width: 900px) {
+      .timeline-filter-bar {
+        grid-template-columns: minmax(220px, 1fr) repeat(2, minmax(140px, 1fr));
+      }
+      .timeline-filter-bar .filter-field:first-child {
+        grid-column: 1 / -1;
+      }
+    }
+    @media (max-width: 720px) {
+      .timeline-filter-bar {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ─── Vertical Timeline ─────────────────────────────────────────── */
+    .timeline-wrapper {
+      position: relative;
+      --timeline-axis-col: 64px;
+      padding-left: 28px;
+    }
+    .timeline-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 8px; /* Mathematically center-aligned on mobile */
+      width: 2px;
+      background: var(--border);
+      z-index: 1;
+      transition: var(--transition-smooth);
+    }
+    @media (min-width: 651px) {
+      .timeline-wrapper {
+        padding-left: 0;
+      }
+      .timeline-line {
+        left: calc(4ch + (var(--timeline-axis-col) / 2));
+        transform: translateX(-50%);
+      }
+    }
+    .timeline-container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-lg);
+    }
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 4ch var(--timeline-axis-col) minmax(0, 1fr);
+      gap: 0;
+      align-items: stretch;
+      z-index: 2;
+    }
+    @media (max-width: 650px) {
+      .timeline-item {
+        grid-template-columns: 24px minmax(0, 1fr);
+        gap: var(--gap-xs);
+      }
+    }
+    .timeline-date-col {
+      font-family: var(--font-mono);
+      color: var(--fg);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2px;
+      min-height: 38px;
+      padding-right: 0;
+      text-align: left;
+    }
+    .timeline-year {
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 800;
+      color: var(--fg);
+    }
+    .timeline-subdate {
+      font-size: 11px;
+      line-height: 1.2;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 650px) {
+      .timeline-date-col {
+        grid-column: 2;
+        grid-row: 1;
+        align-items: flex-start;
+        padding-left: 18px;
+        padding-right: 0;
+        text-align: left;
+      }
+    }
+    .timeline-dot {
+      grid-column: 2;
+      align-self: center;
+      justify-self: center;
+      position: relative;
+      z-index: 3;
+      width: var(--dot-size, 10px);
+      height: var(--dot-size, 10px);
+      border-radius: 50%;
+      background: var(--bg);
+      border: var(--dot-border, 2px) solid var(--border);
+      transition: var(--transition-smooth);
+    }
+    @media (max-width: 650px) {
+      .timeline-dot {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: start;
+        margin-top: 10px;
+      }
+    }
+    
+    /* Interactive glowing nodes based on category of item */
+    .timeline-item[data-category="foundation"]:hover .timeline-dot { border-color: var(--color-foundation); background: var(--color-foundation); }
+    .timeline-item[data-category="apps"]:hover .timeline-dot { border-color: var(--color-apps); background: var(--color-apps); }
+    .timeline-item[data-category="hardware"]:hover .timeline-dot { border-color: var(--color-hardware); background: var(--color-hardware); }
+    .timeline-item[data-category="embodied"]:hover .timeline-dot { border-color: var(--color-embodied); background: var(--color-embodied); }
+    .timeline-item[data-category="social"]:hover .timeline-dot { border-color: var(--color-social); background: var(--color-social); }
+    .timeline-item[data-category="model"]:hover .timeline-dot,
+    .timeline-item[data-category="capability"]:hover .timeline-dot,
+    .timeline-item[data-category="research"]:hover .timeline-dot { border-color: var(--color-foundation); background: var(--color-foundation); }
+    .timeline-item[data-category="product"]:hover .timeline-dot,
+    .timeline-item[data-category="open_source"]:hover .timeline-dot { border-color: var(--color-apps); background: var(--color-apps); }
+    .timeline-item[data-category="regulation"]:hover .timeline-dot,
+    .timeline-item[data-category="safety"]:hover .timeline-dot { border-color: var(--color-hardware); background: var(--color-hardware); }
+
+    /* Node Level 3: Critical Node (Full Card Highlight) */
+    .timeline-card-l3 {
+      background: var(--surface);
+      border: 1px solid var(--fg);
+      border-radius: var(--radius-lg);
+      padding: var(--gap-md);
+      box-shadow: 0 4px 20px var(--fg-soft);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .timeline-card-l3:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--fg-soft);
+    }
+    .timeline-dot.level-3 {
+      --dot-size: 12px;
+      --dot-border: 3px;
+      border-color: var(--fg);
+    }
+
+    /* Node Level 2: Major Node (Standard Card) */
+    .timeline-card-l2 {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: var(--gap-md);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .timeline-card-l2:hover {
+      transform: translateY(-2px);
+      border-color: var(--fg);
+    }
+    .timeline-dot.level-2 {
+      --dot-size: 10px;
+      --dot-border: 2px;
+    }
+    
+    /* Node Level 1: Minor Node (Compact Record) */
+    .timeline-card-l1 {
+      background: color-mix(in oklch, var(--surface) 72%, var(--bg));
+      border: 1px solid color-mix(in oklch, var(--border) 84%, transparent);
+      border-radius: var(--radius-lg);
+      padding: 12px var(--gap-md);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .timeline-card-l1-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--gap-sm);
+    }
+    .timeline-card-l1:hover {
+      border-color: var(--muted);
+      background: var(--surface);
+    }
+    .timeline-dot.level-1 {
+      --dot-size: 8px;
+      --dot-border: 2px;
+    }
+
+    .timeline-entry {
+      position: relative;
+      grid-column: 3;
+      min-width: 0;
+    }
+    @media (max-width: 650px) {
+      .timeline-entry {
+        grid-column: 2;
+        grid-row: 2;
+      }
+    }
+    .timeline-card-l3.expanded,
+    .timeline-card-l2.expanded {
+      border-color: color-mix(in oklch, var(--accent) 36%, var(--border));
+      box-shadow: none;
+      background:
+        linear-gradient(90deg, color-mix(in oklch, var(--accent) 7%, transparent), transparent 34%),
+        var(--surface);
+    }
+    .timeline-card-l3.expanded::before,
+    .timeline-card-l2.expanded::before {
+      content: '';
+      position: absolute;
+      inset: 14px auto 14px 0;
+      width: 3px;
+      border-radius: var(--radius-pill);
+      background: var(--accent);
+    }
+    .timeline-card-l1.expanded {
+      color: var(--fg);
+      border-color: color-mix(in oklch, var(--accent) 36%, var(--border));
+      background: linear-gradient(90deg, color-mix(in oklch, var(--accent) 6%, transparent), transparent 42%);
+    }
+    .timeline-card-l1.expanded::before {
+      content: '';
+      position: absolute;
+      inset: 12px auto 12px 0;
+      width: 3px;
+      border-radius: var(--radius-pill);
+      background: var(--accent);
+    }
+    .timeline-card-l3.expanded,
+    .timeline-card-l2.expanded,
+    .timeline-card-l1.expanded {
+      padding-bottom: var(--gap-md);
+    }
+
+    /* Card Content Details */
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--muted);
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+    .card-meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    .timeline-node-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .timeline-node-main {
+      min-width: 0;
+      flex: 1;
+    }
+    .timeline-node-main .card-meta {
+      margin-bottom: 8px;
+    }
+    .timeline-node-side {
+      min-width: 136px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+      padding-top: 1px;
+      text-align: right;
+    }
+    .timeline-node-level {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      line-height: 1.1;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .timeline-node-impact {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.1;
+      color: var(--fg);
+      white-space: nowrap;
+    }
+    .timeline-node-consensus {
+      font-size: 12px;
+      line-height: 1.3;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .category-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: var(--radius-pill);
+      display: inline-flex;
+      align-items: center;
+      transition: var(--transition-smooth);
+    }
+    .category-badge.foundation {
+      background: color-mix(in oklch, var(--color-foundation) 12%, transparent);
+      color: var(--color-foundation);
+    }
+    .category-badge.apps {
+      background: color-mix(in oklch, var(--color-apps) 12%, transparent);
+      color: var(--color-apps);
+    }
+    .category-badge.hardware {
+      background: color-mix(in oklch, var(--color-hardware) 12%, transparent);
+      color: var(--color-hardware);
+    }
+    .category-badge.embodied {
+      background: color-mix(in oklch, var(--color-embodied) 12%, transparent);
+      color: var(--color-embodied);
+    }
+    .category-badge.social {
+      background: color-mix(in oklch, var(--color-social) 12%, transparent);
+      color: var(--color-social);
+    }
+    .category-badge.model,
+    .category-badge.capability,
+    .category-badge.research {
+      background: color-mix(in oklch, var(--color-foundation) 12%, transparent);
+      color: var(--color-foundation);
+    }
+    .category-badge.product,
+    .category-badge.open_source {
+      background: color-mix(in oklch, var(--color-apps) 12%, transparent);
+      color: var(--color-apps);
+    }
+    .category-badge.regulation,
+    .category-badge.safety {
+      background: color-mix(in oklch, var(--color-hardware) 12%, transparent);
+      color: var(--color-hardware);
+    }
+
+    .score-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .score-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .card-content h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+    .card-content p.summary {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .timeline-card-l1 .timeline-node-head {
+      align-items: center;
+    }
+    .timeline-card-l1 .card-content h3 {
+      font-size: 14px;
+      line-height: 1.35;
+      margin-bottom: 0;
+    }
+    @media (max-width: 650px) {
+      .timeline-node-head,
+      .timeline-card-l1 .timeline-node-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .timeline-node-side {
+        min-width: 0;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        gap: 10px;
+      }
+    }
+
+    .timeline-details {
+      margin-top: var(--gap-sm);
+      padding-top: var(--gap-sm);
+      border-top: 1px solid var(--border);
+      animation: revealDetails 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes revealDetails {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .detail-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-sm);
+    }
+    .detail-section + .detail-section {
+      margin-top: var(--gap-md);
+      padding-top: var(--gap-md);
+      border-top: 1px solid var(--border);
+    }
+    .detail-title {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--muted);
+      letter-spacing: 0.01em;
+    }
+    .impact-list,
+    .source-list,
+    .tag-list {
+      display: grid;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .impact-item {
+      padding: var(--gap-sm) 0;
+      border-top: 1px solid var(--border);
+    }
+    .impact-item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .impact-head,
+    .source-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--gap-sm);
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+    .impact-name,
+    .source-title {
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .impact-score {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+    }
+    .impact-description,
+    .source-meta {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: var(--gap-sm);
+      padding: var(--gap-sm) 0;
+      border-top: 1px solid var(--border);
+    }
+    .source-card:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .source-index {
+      width: 26px;
+      height: 26px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      background: color-mix(in oklch, var(--bg) 70%, var(--surface));
+    }
+    .source-body {
+      min-width: 0;
+    }
+    .source-quote {
+      margin-top: 8px;
+      padding: 8px 10px;
+      border-left: 2px solid var(--accent);
+      background: color-mix(in oklch, var(--accent) 5%, transparent);
+      color: var(--fg);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .source-status {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--font-mono);
+    }
+    .source-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      background: var(--surface);
+    }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .tag-list li {
+      padding: 3px 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--gap-md);
+      padding-block: var(--gap-md);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .field-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .field-item .label {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--font-body);
+    }
+    .field-item .val {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .field-item .val.text-success {
+      color: var(--color-apps);
+    }
+    .gauge-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .gauge-bar {
+      flex: 1;
+      height: 8px;
+      background: var(--border);
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+    }
+    .gauge-fill {
+      height: 100%;
+      background: var(--accent);
+      border-radius: var(--radius-pill);
+    }
+    .gauge-val {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* Curator Commentary Callout Box */
+    .curator-commentary {
+      margin-top: var(--gap-sm);
+      padding: var(--gap-md);
+      background: var(--bg);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      transition: background var(--transition-smooth);
+    }
+    .commentary-label {
+      display: block;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .commentary-text {
+      font-size: 14px;
+      color: var(--fg);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .source-link-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border: 1px solid var(--fg);
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-weight: 600;
+      transition: var(--transition-smooth);
+      margin-top: var(--gap-md);
+    }
+    .source-link-btn:hover {
+      background: var(--fg);
+      color: var(--bg);
+    }
+    .status-panel {
+      padding: var(--gap-md);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      color: var(--muted);
+      text-align: center;
+    }
+    .status-panel strong {
+      display: block;
+      color: var(--fg);
+      margin-bottom: 6px;
+    }
+    .status-link {
+      color: var(--fg);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ─── Footer ────────────────────────────────────────────────────── */
+    .pagefoot {
+      padding-block: var(--gap-xl);
+      border-top: 1px solid var(--border);
+      margin-top: var(--gap-xl);
+      color: var(--muted);
+      font-size: var(--fs-meta);
+      transition: border-color var(--transition-smooth);
+    }
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .footer-links a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    @media (max-width: 680px) {
+      .pagefoot .row-between {
+        align-items: flex-start;
+      }
+      .footer-links {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body data-theme="light">
+
+  <!-- Sticky Top Nav -->
+  <header class="topnav" data-od-id="topnav">
+    <div class="container topnav-inner">
+      <div class="logo">
+        <img class="brand-icon" src="assets/logo-icon.svg" alt="" aria-hidden="true">
+        <span data-zh="EpochArc" data-en="EpochArc">EpochArc</span>
+      </div>
+      <div class="topnav-actions">
+        <label class="language-picker" aria-label="Language">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path stroke-linecap="round" d="M3.6 9h16.8M3.6 15h16.8M12 3c2.2 2.4 3.3 5.4 3.3 9S14.2 18.6 12 21M12 3C9.8 5.4 8.7 8.4 8.7 12S9.8 18.6 12 21"></path>
+          </svg>
+          <select class="language-select" id="langSelect">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="ja">JA</option>
+            <option value="zh-Hans">简中</option>
+            <option value="zh-Hant">繁中</option>
+            <option value="fr">FR</option>
+          </select>
+        </label>
+        <button class="control-btn" id="themeToggle">
+          <svg id="themeIcon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+          </svg>
+          <span id="themeText" data-zh="深色模式" data-en="Dark Mode">深色模式</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container" data-od-id="hero">
+    <h1 id="heroTitle" data-zh="Where is AI Going?" data-en="Where is AI Going?">Where is AI Going?</h1>
+  </section>
+
+  <!-- Horizontal Predictions Section -->
+  <section class="container predictions-section" data-od-id="predictions">
+    <div class="section-title" id="predTitle" data-zh="前瞻预测" data-en="Forward-Looking Predictions">前瞻预测</div>
+    <div class="predictions-grid" id="predictionsContainer">
+      <!-- Generated predictions will be injected here -->
+    </div>
+  </section>
+
+  <!-- Vertical Timeline Section -->
+  <section class="container" data-od-id="timeline">
+    <div class="section-title" id="timelineTitle" data-zh="策展时间轴" data-en="Curated Timeline">策展时间轴</div>
+    
+    <!-- Timeline Filters -->
+    <div class="timeline-filter-bar">
+      <label class="filter-field">
+        <span class="filter-label ghost" aria-hidden="true">Search</span>
+        <div class="search-input-wrapper">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <input type="text" class="search-input" id="searchInput" placeholder="搜索事件..." data-zh-placeholder="搜索事件..." data-en-placeholder="Search events...">
+        </div>
+      </label>
+      
+      <div class="filter-groups">
+        <label class="filter-field">
+          <span class="filter-label" data-zh="重要度" data-en="Significance">重要度</span>
+          <select class="filter-select" id="significanceFilter" aria-label="重要度筛选">
+            <option value="all" data-zh="全部 L1-L3" data-en="All L1-L3">全部 L1-L3</option>
+            <option value="3" data-zh="L3 转折点" data-en="L3 Turning Point">L3 转折点</option>
+            <option value="2" data-zh="L2 关键" data-en="L2 Key">L2 关键</option>
+            <option value="1" data-zh="L1 重要" data-en="L1 Important">L1 重要</option>
+          </select>
+        </label>
+        <label class="filter-field">
+          <span class="filter-label" data-zh="影响维度" data-en="Impact Dimension">影响维度</span>
+          <select class="filter-select" id="impactFilter" aria-label="影响维度筛选">
+            <option value="all" data-zh="全部维度" data-en="All Dimensions">全部维度</option>
+            <option value="capability_leap" data-zh="能力跃迁" data-en="Capability Leap">能力跃迁</option>
+            <option value="economic_disruption" data-zh="经济冲击" data-en="Economic Disruption">经济冲击</option>
+            <option value="access_democratization" data-zh="普惠化" data-en="Access Democratization">普惠化</option>
+            <option value="risk_creation" data-zh="风险制造" data-en="Risk Creation">风险制造</option>
+            <option value="paradigm_shift" data-zh="认知转变" data-en="Paradigm Shift">认知转变</option>
+          </select>
+        </label>
+        <label class="filter-field">
+          <span class="filter-label" data-zh="可信度" data-en="Consensus">可信度</span>
+          <select class="filter-select" id="consensusFilter" aria-label="可信度筛选">
+            <option value="all" data-zh="全部可信度" data-en="All Consensus">全部可信度</option>
+            <option value="broad" data-zh="广泛共识" data-en="Broad">广泛共识</option>
+            <option value="debated" data-zh="存在争议" data-en="Debated">存在争议</option>
+            <option value="emerging" data-zh="新兴判断" data-en="Emerging">新兴判断</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <!-- Timeline List -->
+    <div class="timeline-wrapper">
+      <div class="timeline-line"></div>
+      <div class="timeline-container" id="timelineContainer">
+        <!-- Event items will be injected here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pagefoot" data-od-id="footer">
+    <div class="container row-between">
+      <span id="footCopyright" data-zh="© 2026 EpochArc · Curated by an independent maker" data-en="© 2026 EpochArc · Curated by an independent maker">© 2026 EpochArc · Curated by an independent maker</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="methods.html"><span data-zh="方法与来源" data-en="Methodology">方法与来源</span></a>
+        <a href="data/events.json"><span data-zh="时间轴数据" data-en="Timeline data">时间轴数据</span></a>
+        <a href="data/forecasts.json"><span data-zh="预测数据" data-en="Forecast data">预测数据</span></a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <script type="application/json" id="fallback-forecasts-data">
+[
+  {
+    "id": "agi",
+    "slug": "agi",
+    "title": {
+      "en": "Artificial General Intelligence",
+      "zhHans": "通用人工智能 (AGI)"
+    },
+    "thesis": {
+      "en": "AI systems that surpass human intelligence in most economically valuable tasks, including reasoning and multi-step planning.",
+      "zhHans": "系统在绝大多数具备经济价值的任务中达到超越人类的智能水平，包含抽象推理与多步规划能力。"
+    },
+    "description": {
+      "en": "AI systems that surpass human intelligence in most economically valuable tasks, including reasoning and multi-step planning.",
+      "zhHans": "系统在绝大多数具备经济价值的任务中达到超越人类的智能水平，包含抽象推理与多步规划能力。"
+    },
+    "forecastType": "capability",
+    "status": "active",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "expectedWindow": {
+      "start": "2027",
+      "end": "2029",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "C"
+    },
+    "rationale": {
+      "signalsFor": [],
+      "signalsAgainst": [],
+      "assumptions": [
+        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      ]
+    },
+    "resolution": {
+      "achievedWhen": {
+        "en": "An AI system demonstrates broad autonomous capability across knowledge work, software, scientific reasoning, and multi-step planning under multiple independent evaluations and real workflows for at least 90 days.",
+        "zhHans": "在多个独立评测和真实工作流中，系统持续展现跨知识工作、软件、科学推理和多步规划的广泛自主能力，并可被第三方复核至少 90 天。"
+      },
+      "notAchievedWhen": {
+        "en": "A closed demo, a single benchmark result, hidden human handoff, or unverifiable claim does not count.",
+        "zhHans": "仅有封闭演示、单一 benchmark 高分、隐藏人工接管或不可复核声明时，不算达成。"
+      },
+      "measurementSources": [
+        "independent benchmarks",
+        "model cards",
+        "technical reports",
+        "auditor reports",
+        "regulatory documents"
+      ],
+      "minimumDuration": "90 days"
+    },
+    "sources": [],
+    "relatedEvents": [],
+    "tags": [
+      "agi"
+    ],
+    "votes": {
+      "totalVotes": 0,
+      "yes": 0,
+      "no": 0,
+      "unsure": 0,
+      "updatedAt": "2026-06-24"
+    },
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "robot",
+    "slug": "robot",
+    "title": {
+      "en": "General Embodied AI",
+      "zhHans": "通用具身智能机器人"
+    },
+    "thesis": {
+      "en": "Humanoid robots powered by general physical intelligence performing domestic chores and manufacturing labor at scale.",
+      "zhHans": "具备通用物理智能的人形机器人，可进入家庭执行家务，或在制造业和物流中进行规模化自主替代劳作。"
+    },
+    "description": {
+      "en": "Humanoid robots powered by general physical intelligence performing domestic chores and manufacturing labor at scale.",
+      "zhHans": "具备通用物理智能的人形机器人，可进入家庭执行家务，或在制造业和物流中进行规模化自主替代劳作。"
+    },
+    "forecastType": "product",
+    "status": "active",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "expectedWindow": {
+      "start": "2028",
+      "end": "2030",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "C"
+    },
+    "rationale": {
+      "signalsFor": [],
+      "signalsAgainst": [],
+      "assumptions": [
+        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      ]
+    },
+    "resolution": {
+      "achievedWhen": {
+        "en": "General embodied systems reliably complete multiple task classes in homes, manufacturing, or logistics, with sustained commercially deployable use cases.",
+        "zhHans": "通用具身系统在家庭、制造或物流等非结构化环境中稳定完成多类任务，并出现可商业部署的持续使用案例。"
+      },
+      "notAchievedWhen": {
+        "en": "A lab-only demo, teleoperated video, or success on a single task does not count.",
+        "zhHans": "只在实验室演示、遥操作视频或单一任务上成功，不算达成。"
+      },
+      "measurementSources": [
+        "independent benchmarks",
+        "model cards",
+        "technical reports",
+        "auditor reports",
+        "regulatory documents"
+      ],
+      "minimumDuration": "90 days"
+    },
+    "sources": [],
+    "relatedEvents": [],
+    "tags": [
+      "robot"
+    ],
+    "votes": {
+      "totalVotes": 0,
+      "yes": 0,
+      "no": 0,
+      "unsure": 0,
+      "updatedAt": "2026-06-24"
+    },
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "alignment",
+    "slug": "alignment",
+    "title": {
+      "en": "Superalignment & ASI Control",
+      "zhHans": "超级对齐与智能控制"
+    },
+    "thesis": {
+      "en": "Solving the control and alignment problem of artificial systems that are orders of magnitude smarter than humans.",
+      "zhHans": "彻底解决比人类更聪明数个数量级的超智能（ASI）控制和价值观绑定问题，消除潜在失控性生存危机。"
+    },
+    "description": {
+      "en": "Solving the control and alignment problem of artificial systems that are orders of magnitude smarter than humans.",
+      "zhHans": "彻底解决比人类更聪明数个数量级的超智能（ASI）控制和价值观绑定问题，消除潜在失控性生存危机。"
+    },
+    "forecastType": "safety",
+    "status": "active",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "expectedWindow": {
+      "start": "2029",
+      "end": "2032",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "C"
+    },
+    "rationale": {
+      "signalsFor": [],
+      "signalsAgainst": [],
+      "assumptions": [
+        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      ]
+    },
+    "resolution": {
+      "achievedWhen": {
+        "en": "Control, alignment, and failure-handling methods for systems materially stronger than humans are independently audited and remain effective in real deployment.",
+        "zhHans": "面向明显强于人类的系统，出现被独立审计认可的控制、对齐和失效处置框架，并在真实部署中持续有效。"
+      },
+      "notAchievedWhen": {
+        "en": "Principle statements, a single safety benchmark, or an undeployed research prototype do not count.",
+        "zhHans": "只有原则声明、单项安全评测或未经部署验证的研究原型，不算达成。"
+      },
+      "measurementSources": [
+        "independent benchmarks",
+        "model cards",
+        "technical reports",
+        "auditor reports",
+        "regulatory documents"
+      ],
+      "minimumDuration": "90 days"
+    },
+    "sources": [],
+    "relatedEvents": [],
+    "tags": [
+      "alignment"
+    ],
+    "votes": {
+      "totalVotes": 0,
+      "yes": 0,
+      "no": 0,
+      "unsure": 0,
+      "updatedAt": "2026-06-24"
+    },
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "science",
+    "slug": "science",
+    "title": {
+      "en": "AI Scientific Singularity",
+      "zhHans": "科学发现奇点"
+    },
+    "thesis": {
+      "en": "AI systems becoming autonomous scientific pioneers, generating novel theories and unlocking scalable fusion energy.",
+      "zhHans": "AI 系统成为科学研究的引领者，自主设计实验、推导物理学或生命科学定律，甚至完成可控核聚变规模商用。"
+    },
+    "description": {
+      "en": "AI systems becoming autonomous scientific pioneers, generating novel theories and unlocking scalable fusion energy.",
+      "zhHans": "AI 系统成为科学研究的引领者，自主设计实验、推导物理学或生命科学定律，甚至完成可控核聚变规模商用。"
+    },
+    "forecastType": "science",
+    "status": "active",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "expectedWindow": {
+      "start": "2030",
+      "end": "2035",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "C"
+    },
+    "rationale": {
+      "signalsFor": [],
+      "signalsAgainst": [],
+      "assumptions": [
+        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      ]
+    },
+    "resolution": {
+      "achievedWhen": {
+        "en": "AI systems autonomously propose verifiable hypotheses, design experiments, and drive at least one independently confirmed discovery in a major scientific field.",
+        "zhHans": "AI 系统自主提出可验证科学假设、设计实验并推动至少一个重要领域产生被独立确认的新发现。"
+      },
+      "notAchievedWhen": {
+        "en": "Drafting papers, assisting analysis, or proposing unverified hypotheses does not count.",
+        "zhHans": "仅生成论文草稿、辅助分析数据或提出未验证假设，不算达成。"
+      },
+      "measurementSources": [
+        "independent benchmarks",
+        "model cards",
+        "technical reports",
+        "auditor reports",
+        "regulatory documents"
+      ],
+      "minimumDuration": "90 days"
+    },
+    "sources": [],
+    "relatedEvents": [],
+    "tags": [
+      "science"
+    ],
+    "votes": {
+      "totalVotes": 0,
+      "yes": 0,
+      "no": 0,
+      "unsure": 0,
+      "updatedAt": "2026-06-24"
+    },
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  }
+]
+  </script>
+  <script type="application/json" id="fallback-events-data">
+[
+  {
+    "id": "turing-test-paper",
+    "slug": "turing-test-paper",
+    "title": {
+      "en": "Turing Proposes Imitation Game",
+      "zhHans": "阿兰·图灵提出模仿游戏"
+    },
+    "summary": {
+      "en": "Alan Turing publishes \"Computing Machinery and Intelligence\", introducing the Turing Test for machine behavior.",
+      "zhHans": "阿兰·图灵发表经典论文《计算机器与智能》，首次定义了著名的“图灵测试”，指明机器智能的标准。"
+    },
+    "narrative": {
+      "en": "The fountainhead of AI philosophy. By shifting the debate away from the metaphysical \"can machines think\" to the behavioral \"can a machine mimic human chat,\" Turing established a benchmark that remains relevant in the era of LLMs.",
+      "zhHans": "这是现代人工智能思想的终极源泉。图灵避开了复杂的“机器是否能思考”的哲学争论，转而用“模仿游戏”的客观行为测试来定义智能。半个多世纪过去了，图灵测试至今仍在大模型主宰交互的当下被反复引用。"
+    },
+    "date": "1950",
+    "datePrecision": "year",
+    "category": "research",
+    "status": "published",
+    "significance": 3,
+    "impactIndex": 9,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Alan Turing publishes \"Computing Machinery and Intelligence\", introducing the Turing Test for machine behavior.",
+          "zhHans": "阿兰·图灵发表经典论文《计算机器与智能》，首次定义了著名的“图灵测试”，指明机器智能的标准。"
+        },
+        "affectedGroups": [
+          "学术界",
+          "科学家",
+          "哲学家"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "turing-test-paper-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The fountainhead of AI philosophy. By shifting the debate away from the metaphysical \"can machines think\" to the behavioral \"can a machine mimic human chat,\" Turing established a benchmark that remains relevant in the era of LLMs.",
+          "zhHans": "这是现代人工智能思想的终极源泉。图灵避开了复杂的“机器是否能思考”的哲学争论，转而用“模仿游戏”的客观行为测试来定义智能。半个多世纪过去了，图灵测试至今仍在大模型主宰交互的当下被反复引用。"
+        },
+        "affectedGroups": [
+          "学术界",
+          "科学家",
+          "哲学家"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "turing-test-paper-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Alan Turing publishes \"Computing Machinery and Intelligence\", introducing the Turing Test for machine behavior.",
+          "zhHans": "阿兰·图灵发表经典论文《计算机器与智能》，首次定义了著名的“图灵测试”，指明机器智能的标准。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "turing-test-paper-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "The fountainhead of AI philosophy. By shifting the debate away from the metaphysical \"can machines think\" to the behavioral \"can a machine mimic human chat,\" Turing established a benchmark that remains relevant in the era of LLMs.",
+          "zhHans": "这是现代人工智能思想的终极源泉。图灵避开了复杂的“机器是否能思考”的哲学争论，转而用“模仿游戏”的客观行为测试来定义智能。半个多世纪过去了，图灵测试至今仍在大模型主宰交互的当下被反复引用。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "turing-test-paper-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "turing-test-paper-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "Turing, A.M. (1950) \"Computing Machinery and Intelligence\""
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "research",
+      "理论基石",
+      "阿兰",
+      "图灵提出模仿游戏"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "dartmouth-conf",
+    "slug": "dartmouth-conf",
+    "title": {
+      "en": "Dartmouth Conference Convenes",
+      "zhHans": "达特茅斯人工智能会议举行"
+    },
+    "summary": {
+      "en": "John McCarthy, Marvin Minsky, and others gather, coining the term \"Artificial Intelligence\".",
+      "zhHans": "麦卡锡、明斯基等人共同发起，首次提出“人工智能 (Artificial Intelligence)”概念。"
+    },
+    "narrative": {
+      "en": "The formal founding moment of AI as an academic discipline. The organizers famously estimated that a 2-month, 10-man study could make significant progress on machine learning and cognitive reasoning, setting off the first wave of optimistic AI research.",
+      "zhHans": "这是人工智能正式作为独立学术领域的诞生时刻。在这场为期两月的研讨会上，学者们乐观地预言，只要十个聪明人合作一夏天，就能在学习、推理等智能问题上取得决定性进展，为随后的理性主义AI时代拉开了序幕。"
+    },
+    "date": "1956",
+    "datePrecision": "year",
+    "category": "research",
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 8,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "John McCarthy, Marvin Minsky, and others gather, coining the term \"Artificial Intelligence\".",
+          "zhHans": "麦卡锡、明斯基等人共同发起，首次提出“人工智能 (Artificial Intelligence)”概念。"
+        },
+        "affectedGroups": [
+          "计算机科学",
+          "数学家"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "dartmouth-conf-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "The formal founding moment of AI as an academic discipline. The organizers famously estimated that a 2-month, 10-man study could make significant progress on machine learning and cognitive reasoning, setting off the first wave of optimistic AI research.",
+          "zhHans": "这是人工智能正式作为独立学术领域的诞生时刻。在这场为期两月的研讨会上，学者们乐观地预言，只要十个聪明人合作一夏天，就能在学习、推理等智能问题上取得决定性进展，为随后的理性主义AI时代拉开了序幕。"
+        },
+        "affectedGroups": [
+          "计算机科学",
+          "数学家"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "dartmouth-conf-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "John McCarthy, Marvin Minsky, and others gather, coining the term \"Artificial Intelligence\".",
+          "zhHans": "麦卡锡、明斯基等人共同发起，首次提出“人工智能 (Artificial Intelligence)”概念。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "dartmouth-conf-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "The formal founding moment of AI as an academic discipline. The organizers famously estimated that a 2-month, 10-man study could make significant progress on machine learning and cognitive reasoning, setting off the first wave of optimistic AI research.",
+          "zhHans": "这是人工智能正式作为独立学术领域的诞生时刻。在这场为期两月的研讨会上，学者们乐观地预言，只要十个聪明人合作一夏天，就能在学习、推理等智能问题上取得决定性进展，为随后的理性主义AI时代拉开了序幕。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "dartmouth-conf-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "dartmouth-conf-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "McCarthy et al. 1955 Proposal"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "research",
+      "理论基石",
+      "达特茅斯人工智能会议举行"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "backprop-pop",
+    "slug": "backprop-pop",
+    "title": {
+      "en": "Backpropagation Popularization",
+      "zhHans": "反向传播算法被普及推广"
+    },
+    "summary": {
+      "en": "Hinton and colleagues publish in Nature, making backpropagation the anchor for training multi-layer neural networks.",
+      "zhHans": "Hinton等学者在《自然》发表文章，使反向传播算法成为训练多层神经网络的核心工具。"
+    },
+    "narrative": {
+      "en": "While the math of backpropagation was derived earlier, this paper demonstrated its ability to discover internal representations in hidden layers. It bridged the mathematical and engineering pathways for modern gradient descent.",
+      "zhHans": "虽然反向传播思想早已存在，但这篇论文证明了它在多层前馈神经网络中自动提取内部表征的能力。它为神经网络的自动微分训练打通了数学和工程的路径，使得训练更深维度的多层网络成为可能。"
+    },
+    "date": "1986",
+    "datePrecision": "year",
+    "category": "research",
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 8,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Hinton and colleagues publish in Nature, making backpropagation the anchor for training multi-layer neural networks.",
+          "zhHans": "Hinton等学者在《自然》发表文章，使反向传播算法成为训练多层神经网络的核心工具。"
+        },
+        "affectedGroups": [
+          "早期联结主义AI研究者"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "backprop-pop-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "While the math of backpropagation was derived earlier, this paper demonstrated its ability to discover internal representations in hidden layers. It bridged the mathematical and engineering pathways for modern gradient descent.",
+          "zhHans": "虽然反向传播思想早已存在，但这篇论文证明了它在多层前馈神经网络中自动提取内部表征的能力。它为神经网络的自动微分训练打通了数学和工程的路径，使得训练更深维度的多层网络成为可能。"
+        },
+        "affectedGroups": [
+          "早期联结主义AI研究者"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "backprop-pop-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Hinton and colleagues publish in Nature, making backpropagation the anchor for training multi-layer neural networks.",
+          "zhHans": "Hinton等学者在《自然》发表文章，使反向传播算法成为训练多层神经网络的核心工具。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "backprop-pop-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "While the math of backpropagation was derived earlier, this paper demonstrated its ability to discover internal representations in hidden layers. It bridged the mathematical and engineering pathways for modern gradient descent.",
+          "zhHans": "虽然反向传播思想早已存在，但这篇论文证明了它在多层前馈神经网络中自动提取内部表征的能力。它为神经网络的自动微分训练打通了数学和工程的路径，使得训练更深维度的多层网络成为可能。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "backprop-pop-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "backprop-pop-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "Rumelhart, Hinton, & Williams (1986) Nature Paper"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "research",
+      "理论基石",
+      "反向传播算法被普及推广"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "deep-blue-kasparov",
+    "slug": "deep-blue-kasparov",
+    "title": {
+      "en": "Deep Blue Beats Kasparov",
+      "zhHans": "深蓝计算机击败卡斯帕罗夫"
+    },
+    "summary": {
+      "en": "IBM's supercomputer defeats the world chess champion Garry Kasparov, proving classical search efficiency.",
+      "zhHans": "IBM 的“深蓝”超级计算机击败国际象棋世界冠军卡斯帕罗夫，宣告了经典暴力搜索的威力。"
+    },
+    "narrative": {
+      "en": "Referred to as the \"last stand of the human brain,\" Deep Blue relied on brute force chess acceleration hardware calculating 200 million positions per second. Though distinct from neural nets, it fundamentally breached human cognitive defenses.",
+      "zhHans": "这次人机大战被称为“大脑的最后一战”。深蓝依托硬件暴力加速和评估算法，每秒能计算两亿步。尽管它与今天大语言模型的神经网络架构毫无共通之处，但它彻底改变了公众对“机器能否超越人类智商”的心理防线。"
+    },
+    "date": "1997",
+    "datePrecision": "year",
+    "category": "capability",
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 7,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "access_democratization",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "IBM's supercomputer defeats the world chess champion Garry Kasparov, proving classical search efficiency.",
+          "zhHans": "IBM 的“深蓝”超级计算机击败国际象棋世界冠军卡斯帕罗夫，宣告了经典暴力搜索的威力。"
+        },
+        "affectedGroups": [
+          "国际象棋爱好者",
+          "认知科学家"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "deep-blue-kasparov-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "economic_disruption",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Referred to as the \"last stand of the human brain,\" Deep Blue relied on brute force chess acceleration hardware calculating 200 million positions per second. Though distinct from neural nets, it fundamentally breached human cognitive defenses.",
+          "zhHans": "这次人机大战被称为“大脑的最后一战”。深蓝依托硬件暴力加速和评估算法，每秒能计算两亿步。尽管它与今天大语言模型的神经网络架构毫无共通之处，但它彻底改变了公众对“机器能否超越人类智商”的心理防线。"
+        },
+        "affectedGroups": [
+          "国际象棋爱好者",
+          "认知科学家"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "deep-blue-kasparov-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "IBM's supercomputer defeats the world chess champion Garry Kasparov, proving classical search efficiency.",
+          "zhHans": "IBM 的“深蓝”超级计算机击败国际象棋世界冠军卡斯帕罗夫，宣告了经典暴力搜索的威力。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "deep-blue-kasparov-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "Referred to as the \"last stand of the human brain,\" Deep Blue relied on brute force chess acceleration hardware calculating 200 million positions per second. Though distinct from neural nets, it fundamentally breached human cognitive defenses.",
+          "zhHans": "这次人机大战被称为“大脑的最后一战”。深蓝依托硬件暴力加速和评估算法，每秒能计算两亿步。尽管它与今天大语言模型的神经网络架构毫无共通之处，但它彻底改变了公众对“机器能否超越人类智商”的心理防线。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "deep-blue-kasparov-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "deep-blue-kasparov-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "IBM Archives"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "capability",
+      "行业应用",
+      "深蓝计算机击败卡斯帕罗夫"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "alexnet-imagenet",
+    "slug": "alexnet-imagenet",
+    "title": {
+      "en": "AlexNet Wins ImageNet",
+      "zhHans": "AlexNet 赢得 ImageNet 挑战赛"
+    },
+    "summary": {
+      "en": "A deep convolutional neural network crushes computer vision benchmarks, starting the current deep learning wave.",
+      "zhHans": "深度卷积神经网络 AlexNet 以巨大优势在视觉识别挑战赛中夺冠，引爆了现代深度学习海啸。"
+    },
+    "narrative": {
+      "en": "Using GPU acceleration and deep layers, AlexNet slashed the ImageNet top-5 error rate from 26% to 16%. It proved to the world that representation learning and deep networks had rendered manual hand-engineered features obsolete.",
+      "zhHans": "AlexNet 凭借 GPU 加速与卷积深度网络的结合，将 ImageNet 图像识别的错误率从 26% 骤降至 16%，用无可辩驳的数据向世界证明了：手工设计特征的时代结束了，表征学习与大规模深度学习将统治计算机视觉。"
+    },
+    "date": "2012",
+    "datePrecision": "year",
+    "category": "research",
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 7,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "A deep convolutional neural network crushes computer vision benchmarks, starting the current deep learning wave.",
+          "zhHans": "深度卷积神经网络 AlexNet 以巨大优势在视觉识别挑战赛中夺冠，引爆了现代深度学习海啸。"
+        },
+        "affectedGroups": [
+          "计算机视觉",
+          "模式识别学者"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "alexnet-imagenet-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Using GPU acceleration and deep layers, AlexNet slashed the ImageNet top-5 error rate from 26% to 16%. It proved to the world that representation learning and deep networks had rendered manual hand-engineered features obsolete.",
+          "zhHans": "AlexNet 凭借 GPU 加速与卷积深度网络的结合，将 ImageNet 图像识别的错误率从 26% 骤降至 16%，用无可辩驳的数据向世界证明了：手工设计特征的时代结束了，表征学习与大规模深度学习将统治计算机视觉。"
+        },
+        "affectedGroups": [
+          "计算机视觉",
+          "模式识别学者"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "alexnet-imagenet-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "A deep convolutional neural network crushes computer vision benchmarks, starting the current deep learning wave.",
+          "zhHans": "深度卷积神经网络 AlexNet 以巨大优势在视觉识别挑战赛中夺冠，引爆了现代深度学习海啸。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "alexnet-imagenet-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "Using GPU acceleration and deep layers, AlexNet slashed the ImageNet top-5 error rate from 26% to 16%. It proved to the world that representation learning and deep networks had rendered manual hand-engineered features obsolete.",
+          "zhHans": "AlexNet 凭借 GPU 加速与卷积深度网络的结合，将 ImageNet 图像识别的错误率从 26% 骤降至 16%，用无可辩驳的数据向世界证明了：手工设计特征的时代结束了，表征学习与大规模深度学习将统治计算机视觉。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "alexnet-imagenet-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "alexnet-imagenet-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "Krizhevsky et al. (2012)"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "research",
+      "基础模型",
+      "AlexNet",
+      "赢得"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "alphago-lee",
+    "slug": "alphago-lee",
+    "title": {
+      "en": "AlphaGo Defeats Lee Sedol",
+      "zhHans": "AlphaGo 击败棋圣李世石"
+    },
+    "summary": {
+      "en": "DeepMind's AlphaGo wins 4:1 against 18-time world champion Lee Sedol, proving intuition-like heuristics in huge search spaces.",
+      "zhHans": "DeepMind 的 AlphaGo 在围棋对决中 4:1 战胜世界冠军李世石，展现了在极其开阔搜索空间中的非凡直觉。"
+    },
+    "narrative": {
+      "en": "This landmark match shattered the myth of Go as a game untouchable by machines. AlphaGo's infamous \"Move 37\" in game 2 transcended centuries of human textbooks, demonstrating neural network-driven \"machine intuition\" to the public.",
+      "zhHans": "这场对局彻底粉碎了“AI 围棋无法战胜人类顶尖棋手”的预言。AlphaGo 在第 2 局中下出的第 37 手突破了人类数千年棋谱的常规，首次向普罗大众展示了神经网络在没有硬编码启发式规则下具备发散思维和“直觉倾向”。"
+    },
+    "date": "2016",
+    "datePrecision": "year",
+    "category": "capability",
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 8,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "DeepMind's AlphaGo wins 4:1 against 18-time world champion Lee Sedol, proving intuition-like heuristics in huge search spaces.",
+          "zhHans": "DeepMind 的 AlphaGo 在围棋对决中 4:1 战胜世界冠军李世石，展现了在极其开阔搜索空间中的非凡直觉。"
+        },
+        "affectedGroups": [
+          "围棋界",
+          "传统社会认知",
+          "科研圈"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "alphago-lee-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "This landmark match shattered the myth of Go as a game untouchable by machines. AlphaGo's infamous \"Move 37\" in game 2 transcended centuries of human textbooks, demonstrating neural network-driven \"machine intuition\" to the public.",
+          "zhHans": "这场对局彻底粉碎了“AI 围棋无法战胜人类顶尖棋手”的预言。AlphaGo 在第 2 局中下出的第 37 手突破了人类数千年棋谱的常规，首次向普罗大众展示了神经网络在没有硬编码启发式规则下具备发散思维和“直觉倾向”。"
+        },
+        "affectedGroups": [
+          "围棋界",
+          "传统社会认知",
+          "科研圈"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "alphago-lee-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "DeepMind's AlphaGo wins 4:1 against 18-time world champion Lee Sedol, proving intuition-like heuristics in huge search spaces.",
+          "zhHans": "DeepMind 的 AlphaGo 在围棋对决中 4:1 战胜世界冠军李世石，展现了在极其开阔搜索空间中的非凡直觉。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "alphago-lee-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "This landmark match shattered the myth of Go as a game untouchable by machines. AlphaGo's infamous \"Move 37\" in game 2 transcended centuries of human textbooks, demonstrating neural network-driven \"machine intuition\" to the public.",
+          "zhHans": "这场对局彻底粉碎了“AI 围棋无法战胜人类顶尖棋手”的预言。AlphaGo 在第 2 局中下出的第 37 手突破了人类数千年棋谱的常规，首次向普罗大众展示了神经网络在没有硬编码启发式规则下具备发散思维和“直觉倾向”。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "alphago-lee-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "alphago-lee-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "DeepMind Nature Paper"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "capability",
+      "基础模型",
+      "AlphaGo",
+      "击败棋圣李世石"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "transformer-birth",
+    "slug": "transformer-birth",
+    "title": {
+      "en": "The Transformer Architecture",
+      "zhHans": "Transformer 架构横空出世"
+    },
+    "summary": {
+      "en": "Google researchers publish \"Attention Is All You Need\", introducing self-attention which anchors all modern LLMs.",
+      "zhHans": "谷歌研究员发表《Attention Is All You Need》，引入自注意力机制，奠定了所有现代大语言模型的地基。"
+    },
+    "narrative": {
+      "en": "The Transformer bypassed the sequential processing bottleneck of traditional RNNs, enabling massively parallel training. Its self-attention mechanism quickly unified natural language and multimodal research, providing the foundation for GPT and Midjourney.",
+      "zhHans": "Transformer 突破了传统循环神经网络（RNN）难以进行长依赖并行训练的瓶颈。它用简单的自注意力机制（Self-Attention）横扫 NLP 乃至多模态领域，成为包括 GPT 系列、Claude 以及 Midjourney 等大模型最底层的架构积木。"
+    },
+    "date": "2017",
+    "datePrecision": "year",
+    "category": "research",
+    "status": "published",
+    "significance": 3,
+    "impactIndex": 10,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Google researchers publish \"Attention Is All You Need\", introducing self-attention which anchors all modern LLMs.",
+          "zhHans": "谷歌研究员发表《Attention Is All You Need》，引入自注意力机制，奠定了所有现代大语言模型的地基。"
+        },
+        "affectedGroups": [
+          "人工智能研发界",
+          "科技公司"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "transformer-birth-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The Transformer bypassed the sequential processing bottleneck of traditional RNNs, enabling massively parallel training. Its self-attention mechanism quickly unified natural language and multimodal research, providing the foundation for GPT and Midjourney.",
+          "zhHans": "Transformer 突破了传统循环神经网络（RNN）难以进行长依赖并行训练的瓶颈。它用简单的自注意力机制（Self-Attention）横扫 NLP 乃至多模态领域，成为包括 GPT 系列、Claude 以及 Midjourney 等大模型最底层的架构积木。"
+        },
+        "affectedGroups": [
+          "人工智能研发界",
+          "科技公司"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "transformer-birth-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Google researchers publish \"Attention Is All You Need\", introducing self-attention which anchors all modern LLMs.",
+          "zhHans": "谷歌研究员发表《Attention Is All You Need》，引入自注意力机制，奠定了所有现代大语言模型的地基。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "transformer-birth-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "The Transformer bypassed the sequential processing bottleneck of traditional RNNs, enabling massively parallel training. Its self-attention mechanism quickly unified natural language and multimodal research, providing the foundation for GPT and Midjourney.",
+          "zhHans": "Transformer 突破了传统循环神经网络（RNN）难以进行长依赖并行训练的瓶颈。它用简单的自注意力机制（Self-Attention）横扫 NLP 乃至多模态领域，成为包括 GPT 系列、Claude 以及 Midjourney 等大模型最底层的架构积木。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "transformer-birth-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "transformer-birth-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "Vaswani et al. (2017) Paper"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "research",
+      "基础模型",
+      "Transformer",
+      "架构横空出世"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "gpt3-release",
+    "slug": "gpt3-release",
+    "title": {
+      "en": "GPT-3 Defines Few-Shot Prompting",
+      "zhHans": "GPT-3 开启少样本提示词时代"
+    },
+    "summary": {
+      "en": "OpenAI releases GPT-3 with 175B parameters, shifting NLP research from task-specific fine-tuning to generic few-shot prompts.",
+      "zhHans": "OpenAI 推出 1750 亿参数的 GPT-3，确立了通过少样本提示（Few-shot prompting）执行通用任务的路线。"
+    },
+    "narrative": {
+      "en": "GPT-3 demonstrated the sheer power of Scaling Laws. By reaching 175 billion parameters, it performed diverse text tasks without weight updates, introducing the software industry to prompt engineering.",
+      "zhHans": "GPT-3 以 1750 亿参数的恐怖规模让业界看到了“尺度定律（Scaling Law）”的威力。它无需针对特定任务微调，只需给出几个输入输出示例（Few-Shot），就能直接理解并生成各种文本和简单代码，开启了基于 Prompting 的交互新时代。"
+    },
+    "date": "2020-05-28",
+    "datePrecision": "day",
+    "category": "model",
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 8,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "OpenAI releases GPT-3 with 175B parameters, shifting NLP research from task-specific fine-tuning to generic few-shot prompts.",
+          "zhHans": "OpenAI 推出 1750 亿参数的 GPT-3，确立了通过少样本提示（Few-shot prompting）执行通用任务的路线。"
+        },
+        "affectedGroups": [
+          "开发者",
+          "NLP工程师",
+          "创企"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "gpt3-release-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "GPT-3 demonstrated the sheer power of Scaling Laws. By reaching 175 billion parameters, it performed diverse text tasks without weight updates, introducing the software industry to prompt engineering.",
+          "zhHans": "GPT-3 以 1750 亿参数的恐怖规模让业界看到了“尺度定律（Scaling Law）”的威力。它无需针对特定任务微调，只需给出几个输入输出示例（Few-Shot），就能直接理解并生成各种文本和简单代码，开启了基于 Prompting 的交互新时代。"
+        },
+        "affectedGroups": [
+          "开发者",
+          "NLP工程师",
+          "创企"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "gpt3-release-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "OpenAI releases GPT-3 with 175B parameters, shifting NLP research from task-specific fine-tuning to generic few-shot prompts.",
+          "zhHans": "OpenAI 推出 1750 亿参数的 GPT-3，确立了通过少样本提示（Few-shot prompting）执行通用任务的路线。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "gpt3-release-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "GPT-3 demonstrated the sheer power of Scaling Laws. By reaching 175 billion parameters, it performed diverse text tasks without weight updates, introducing the software industry to prompt engineering.",
+          "zhHans": "GPT-3 以 1750 亿参数的恐怖规模让业界看到了“尺度定律（Scaling Law）”的威力。它无需针对特定任务微调，只需给出几个输入输出示例（Few-Shot），就能直接理解并生成各种文本和简单代码，开启了基于 Prompting 的交互新时代。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "gpt3-release-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "gpt3-release-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "Brown et al. (2020) GPT-3 Paper"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "model",
+      "基础模型",
+      "GPT-3",
+      "开启少样本提示词时代"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "dalle-copilot",
+    "slug": "dalle-copilot",
+    "title": {
+      "en": "Copilot and DALL-E Launch",
+      "zhHans": "GitHub Copilot 与 DALL-E 1 推出"
+    },
+    "summary": {
+      "en": "Code automation and visual synthesis enter public workflows, spinning the flywheel of generative AI.",
+      "zhHans": "文字生成代码与图像进入实用阶段，生成式 AI 的双轮驱动正式运转。"
+    },
+    "narrative": {
+      "en": "In 2021, writing code (GitHub Copilot) and creating digital art (DALL-E) transitioned to paid products. This drastically optimized developer velocity while starting initial debates on data licensing and training copyright.",
+      "zhHans": "2021年，代码编写（Copilot，基于 Codex）与创意绘图（DALL-E 1，基于连接 CLIP）首次走出实验室，成为白领日常辅助的高效工具。这不仅大幅提升了编程生产力，也拉开了 AI 商业化收费和版权伦理纷争的序幕。"
+    },
+    "date": "2021-06-29",
+    "datePrecision": "day",
+    "category": "product",
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 7,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "access_democratization",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Code automation and visual synthesis enter public workflows, spinning the flywheel of generative AI.",
+          "zhHans": "文字生成代码与图像进入实用阶段，生成式 AI 的双轮驱动正式运转。"
+        },
+        "affectedGroups": [
+          "软件工程师",
+          "创意设计师"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "dalle-copilot-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "economic_disruption",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "In 2021, writing code (GitHub Copilot) and creating digital art (DALL-E) transitioned to paid products. This drastically optimized developer velocity while starting initial debates on data licensing and training copyright.",
+          "zhHans": "2021年，代码编写（Copilot，基于 Codex）与创意绘图（DALL-E 1，基于连接 CLIP）首次走出实验室，成为白领日常辅助的高效工具。这不仅大幅提升了编程生产力，也拉开了 AI 商业化收费和版权伦理纷争的序幕。"
+        },
+        "affectedGroups": [
+          "软件工程师",
+          "创意设计师"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "dalle-copilot-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Code automation and visual synthesis enter public workflows, spinning the flywheel of generative AI.",
+          "zhHans": "文字生成代码与图像进入实用阶段，生成式 AI 的双轮驱动正式运转。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "dalle-copilot-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "In 2021, writing code (GitHub Copilot) and creating digital art (DALL-E) transitioned to paid products. This drastically optimized developer velocity while starting initial debates on data licensing and training copyright.",
+          "zhHans": "2021年，代码编写（Copilot，基于 Codex）与创意绘图（DALL-E 1，基于连接 CLIP）首次走出实验室，成为白领日常辅助的高效工具。这不仅大幅提升了编程生产力，也拉开了 AI 商业化收费和版权伦理纷争的序幕。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "dalle-copilot-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "dalle-copilot-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "GitHub & OpenAI Product Releases"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "product",
+      "行业应用",
+      "GitHub",
+      "Copilot"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "chatgpt-release",
+    "slug": "chatgpt-release",
+    "title": {
+      "en": "ChatGPT Consumer Release",
+      "zhHans": "ChatGPT 消费级奇点爆发"
+    },
+    "summary": {
+      "en": "OpenAI launches ChatGPT, making large-scale LLMs accessible to the masses and triggering a global AI arms race.",
+      "zhHans": "OpenAI 发布 ChatGPT，将超大规模语言模型直观地推向大众，触发了人类社会全方位的 AI 军备竞赛。"
+    },
+    "narrative": {
+      "en": "The release of ChatGPT was the ultimate sociological catalyst in AI history. Breaking accessibility barriers with a chat UI, generative AI saturated daily work and academic writing overnight, raising massive debates on copyright, education, and labor.",
+      "zhHans": "ChatGPT 的推出是 AI 历史上最伟大的社会学实验。它以对话框的形式打破了技术门槛，导致生成式 AI 迅速渗透到日常工作与学术写作。这一事件引发了全行业对知识产权、AI 考试舞弊和白领危记的激烈讨论。"
+    },
+    "date": "2022-11-30",
+    "datePrecision": "day",
+    "category": "model",
+    "status": "published",
+    "significance": 3,
+    "impactIndex": 10,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "access_democratization",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "OpenAI launches ChatGPT, making large-scale LLMs accessible to the masses and triggering a global AI arms race.",
+          "zhHans": "OpenAI 发布 ChatGPT，将超大规模语言模型直观地推向大众，触发了人类社会全方位的 AI 军备竞赛。"
+        },
+        "affectedGroups": [
+          "知识工作者",
+          "教育界",
+          "大众"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "chatgpt-release-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "economic_disruption",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The release of ChatGPT was the ultimate sociological catalyst in AI history. Breaking accessibility barriers with a chat UI, generative AI saturated daily work and academic writing overnight, raising massive debates on copyright, education, and labor.",
+          "zhHans": "ChatGPT 的推出是 AI 历史上最伟大的社会学实验。它以对话框的形式打破了技术门槛，导致生成式 AI 迅速渗透到日常工作与学术写作。这一事件引发了全行业对知识产权、AI 考试舞弊和白领危记的激烈讨论。"
+        },
+        "affectedGroups": [
+          "知识工作者",
+          "教育界",
+          "大众"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "chatgpt-release-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "OpenAI launches ChatGPT, making large-scale LLMs accessible to the masses and triggering a global AI arms race.",
+          "zhHans": "OpenAI 发布 ChatGPT，将超大规模语言模型直观地推向大众，触发了人类社会全方位的 AI 军备竞赛。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "chatgpt-release-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "The release of ChatGPT was the ultimate sociological catalyst in AI history. Breaking accessibility barriers with a chat UI, generative AI saturated daily work and academic writing overnight, raising massive debates on copyright, education, and labor.",
+          "zhHans": "ChatGPT 的推出是 AI 历史上最伟大的社会学实验。它以对话框的形式打破了技术门槛，导致生成式 AI 迅速渗透到日常工作与学术写作。这一事件引发了全行业对知识产权、AI 考试舞弊和白领危记的激烈讨论。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "chatgpt-release-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "chatgpt-release-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "OpenAI Announcement"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "model",
+      "行业应用",
+      "ChatGPT",
+      "消费级奇点爆发"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "nvidia-h100",
+    "slug": "nvidia-h100",
+    "title": {
+      "en": "NVIDIA H100 Hardware Supremacy",
+      "zhHans": "NVIDIA H100 确立 AI 算力主权"
+    },
+    "summary": {
+      "en": "NVIDIA Hopper architecture (H100) becomes the physical currency for frontier training, making compute a strategic national asset.",
+      "zhHans": "英伟达 H100 成为大模型训练与推理的通用“硬通货”，算力成为国家与大厂的核心战略资源。"
+    },
+    "narrative": {
+      "en": "Built with Hopper architecture and a dedicated Transformer Engine, the H100 sped up training workloads of trillion-parameter models. Sovereign states and hyperscalers scrambled to hoard GPUs, making AI computing capability the ultimate strategic baseline.",
+      "zhHans": "NVIDIA H100 依托 Hopper 架构和 Transformer Engine，使万亿参数大模型的训练效率提高数倍。各大科技巨头和主权国家疯狂采购，导致芯片供应链出现长达数月的短缺，直接推高了全球算力基建的估值，使英伟达迅速成为万亿美元级科技帝国。"
+    },
+    "date": "2023",
+    "datePrecision": "year",
+    "category": "model",
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 9,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "economic_disruption",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "NVIDIA Hopper architecture (H100) becomes the physical currency for frontier training, making compute a strategic national asset.",
+          "zhHans": "英伟达 H100 成为大模型训练与推理的通用“硬通货”，算力成为国家与大厂的核心战略资源。"
+        },
+        "affectedGroups": [
+          "芯片制造商",
+          "云服务商",
+          "大模型厂商"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-h100-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "access_democratization",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Built with Hopper architecture and a dedicated Transformer Engine, the H100 sped up training workloads of trillion-parameter models. Sovereign states and hyperscalers scrambled to hoard GPUs, making AI computing capability the ultimate strategic baseline.",
+          "zhHans": "算力集中化提高了前沿模型训练门槛，也推动云端推理能力向更多组织外溢。"
+        },
+        "affectedGroups": [
+          "芯片制造商",
+          "云服务商",
+          "大模型厂商"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-h100-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "NVIDIA Hopper architecture (H100) becomes the physical currency for frontier training, making compute a strategic national asset.",
+          "zhHans": "英伟达 H100 成为大模型训练与推理的通用“硬通货”，算力成为国家与大厂的核心战略资源。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-h100-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "Built with Hopper architecture and a dedicated Transformer Engine, the H100 sped up training workloads of trillion-parameter models. Sovereign states and hyperscalers scrambled to hoard GPUs, making AI computing capability the ultimate strategic baseline.",
+          "zhHans": "NVIDIA H100 依托 Hopper 架构和 Transformer Engine，使万亿参数大模型的训练效率提高数倍。各大科技巨头和主权国家疯狂采购，导致芯片供应链出现长达数月的短缺，直接推高了全球算力基建的估值，使英伟达迅速成为万亿美元级科技帝国。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-h100-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nvidia-h100-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "NVIDIA GTC Keynote"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "model",
+      "智能硬件",
+      "NVIDIA",
+      "H100"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "multimodal-emergence",
+    "slug": "multimodal-emergence",
+    "title": {
+      "en": "Multimodal Convergence",
+      "zhHans": "多模态能力涌现"
+    },
+    "summary": {
+      "en": "Large models escape single-text limits. Native audio, visual, and text inputs achieve unified representation.",
+      "zhHans": "大模型彻底告别单一文本模式，视觉、音频和图像生成实现了原生混合输入与理解。"
+    },
+    "narrative": {
+      "en": "Early multimodal systems patched separate image encoders. In late 2023, industry leaders transitioned to truly unified multimodal architecture, encoding diverse media inputs under the same Token schema for highly robust spatial-structural comprehension.",
+      "zhHans": "早期的多模态主要靠外挂独立的图像编码器，而2023年主流厂商转向了真正统一的多模态大底座，数据在底层以相同的 Token 编码流动，从而极大提升了对现实物理空间、设计图纸和音频语调等高维非结构化数据的领悟准确性。"
+    },
+    "date": "2023",
+    "datePrecision": "year",
+    "category": "capability",
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 7,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Large models escape single-text limits. Native audio, visual, and text inputs achieve unified representation.",
+          "zhHans": "大模型彻底告别单一文本模式，视觉、音频和图像生成实现了原生混合输入与理解。"
+        },
+        "affectedGroups": [
+          "研究人员",
+          "创意工作者"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "multimodal-emergence-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Early multimodal systems patched separate image encoders. In late 2023, industry leaders transitioned to truly unified multimodal architecture, encoding diverse media inputs under the same Token schema for highly robust spatial-structural comprehension.",
+          "zhHans": "早期的多模态主要靠外挂独立的图像编码器，而2023年主流厂商转向了真正统一的多模态大底座，数据在底层以相同的 Token 编码流动，从而极大提升了对现实物理空间、设计图纸和音频语调等高维非结构化数据的领悟准确性。"
+        },
+        "affectedGroups": [
+          "研究人员",
+          "创意工作者"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "multimodal-emergence-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Large models escape single-text limits. Native audio, visual, and text inputs achieve unified representation.",
+          "zhHans": "大模型彻底告别单一文本模式，视觉、音频和图像生成实现了原生混合输入与理解。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "multimodal-emergence-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "Early multimodal systems patched separate image encoders. In late 2023, industry leaders transitioned to truly unified multimodal architecture, encoding diverse media inputs under the same Token schema for highly robust spatial-structural comprehension.",
+          "zhHans": "早期的多模态主要靠外挂独立的图像编码器，而2023年主流厂商转向了真正统一的多模态大底座，数据在底层以相同的 Token 编码流动，从而极大提升了对现实物理空间、设计图纸和音频语调等高维非结构化数据的领悟准确性。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "multimodal-emergence-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "multimodal-emergence-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "GPT-4V 发布与 Gemini 双子座架构报告"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "capability",
+      "基础模型",
+      "多模态能力涌现"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "agentic-workflows",
+    "slug": "agentic-workflows",
+    "title": {
+      "en": "Rise of Agentic Workflows",
+      "zhHans": "智能体工作流的爆发"
+    },
+    "summary": {
+      "en": "Transitioning from basic single-prompt interactions to autonomous \"plan-execute-reflect\" loops, scaling production usability.",
+      "zhHans": "从简单的单次对话，转向具备“规划-执行-自错”闭环的自主 Agentic 工作流，AI 迈入生产级应用。"
+    },
+    "narrative": {
+      "en": "2024 marked the migration of agentic frameworks from academia into enterprise. AI transformed from passive chatbots into systems with long-term memory, custom tools, and multi-step self-correction. This shifts human work from execution to orchestration.",
+      "zhHans": "2024年是智能体架构从学术研究走向工业落地的元年。AI 不再只是响应式对话窗口，而是拥有内存、工具箱，并在多步骤循环中自动纠错。它改变了人机协作的基础协议，工程师和文员的工作流开始以监督和审核为主，而非动手操纵。"
+    },
+    "date": "2024",
+    "datePrecision": "year",
+    "category": "product",
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 8,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "access_democratization",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Transitioning from basic single-prompt interactions to autonomous \"plan-execute-reflect\" loops, scaling production usability.",
+          "zhHans": "从简单的单次对话，转向具备“规划-执行-自错”闭环的自主 Agentic 工作流，AI 迈入生产级应用。"
+        },
+        "affectedGroups": [
+          "软件工程师",
+          "知识工作者"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "agentic-workflows-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "economic_disruption",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "2024 marked the migration of agentic frameworks from academia into enterprise. AI transformed from passive chatbots into systems with long-term memory, custom tools, and multi-step self-correction. This shifts human work from execution to orchestration.",
+          "zhHans": "2024年是智能体架构从学术研究走向工业落地的元年。AI 不再只是响应式对话窗口，而是拥有内存、工具箱，并在多步骤循环中自动纠错。它改变了人机协作的基础协议，工程师和文员的工作流开始以监督和审核为主，而非动手操纵。"
+        },
+        "affectedGroups": [
+          "软件工程师",
+          "知识工作者"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "agentic-workflows-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Transitioning from basic single-prompt interactions to autonomous \"plan-execute-reflect\" loops, scaling production usability.",
+          "zhHans": "从简单的单次对话，转向具备“规划-执行-自错”闭环的自主 Agentic 工作流，AI 迈入生产级应用。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "agentic-workflows-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "2024 marked the migration of agentic frameworks from academia into enterprise. AI transformed from passive chatbots into systems with long-term memory, custom tools, and multi-step self-correction. This shifts human work from execution to orchestration.",
+          "zhHans": "2024年是智能体架构从学术研究走向工业落地的元年。AI 不再只是响应式对话窗口，而是拥有内存、工具箱，并在多步骤循环中自动纠错。它改变了人机协作的基础协议，工程师和文员的工作流开始以监督和审核为主，而非动手操纵。"
+        },
+        "claimType": "interpretation",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "agentic-workflows-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "agentic-workflows-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "OpenAI DevDay & 行业共识报告"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "product",
+      "行业应用",
+      "智能体工作流的爆发"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "long-context-video",
+    "slug": "long-context-video",
+    "title": {
+      "en": "Million-Context & Video Gen",
+      "zhHans": "百万级上下文与视频生成"
+    },
+    "summary": {
+      "en": "Context windows scale up to 2M tokens, transforming raw analysis of documents and codebases, alongside Sora video simulation.",
+      "zhHans": "上下文窗口扩大至200万Tokens，突破海量数据物理界限，Sora开启物理世界生成式模拟。"
+    },
+    "narrative": {
+      "en": "Massive context windows transform AI into domain co-pilots capable of ingesting vast documentation. However, quadratic O(N²) memory consumption remains a critical bottleneck, accelerating research in Rotary Position Embeddings (RoPE) and state-space architectures like Mamba.",
+      "zhHans": "超长上下文极具实用价值，使得 AI 成为可以一次性吞入整本API文档甚至整个小型项目代码库的超级专家；然而对于更长的上下文，二次方计算复杂度仍然是巨大挑战，学术界正基于 RoPE 以及新型的 Mamba 状态空间结构展开突围。"
+    },
+    "date": "2024",
+    "datePrecision": "year",
+    "category": "capability",
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 8,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Context windows scale up to 2M tokens, transforming raw analysis of documents and codebases, alongside Sora video simulation.",
+          "zhHans": "上下文窗口扩大至200万Tokens，突破海量数据物理界限，Sora开启物理世界生成式模拟。"
+        },
+        "affectedGroups": [
+          "视频创作者",
+          "软件工程师",
+          "法务人员"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "long-context-video-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Massive context windows transform AI into domain co-pilots capable of ingesting vast documentation. However, quadratic O(N²) memory consumption remains a critical bottleneck, accelerating research in Rotary Position Embeddings (RoPE) and state-space architectures like Mamba.",
+          "zhHans": "超长上下文极具实用价值，使得 AI 成为可以一次性吞入整本API文档甚至整个小型项目代码库的超级专家；然而对于更长的上下文，二次方计算复杂度仍然是巨大挑战，学术界正基于 RoPE 以及新型的 Mamba 状态空间结构展开突围。"
+        },
+        "affectedGroups": [
+          "视频创作者",
+          "软件工程师",
+          "法务人员"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "long-context-video-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Context windows scale up to 2M tokens, transforming raw analysis of documents and codebases, alongside Sora video simulation.",
+          "zhHans": "上下文窗口扩大至200万Tokens，突破海量数据物理界限，Sora开启物理世界生成式模拟。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "long-context-video-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "Massive context windows transform AI into domain co-pilots capable of ingesting vast documentation. However, quadratic O(N²) memory consumption remains a critical bottleneck, accelerating research in Rotary Position Embeddings (RoPE) and state-space architectures like Mamba.",
+          "zhHans": "超长上下文极具实用价值，使得 AI 成为可以一次性吞入整本API文档甚至整个小型项目代码库的超级专家；然而对于更长的上下文，二次方计算复杂度仍然是巨大挑战，学术界正基于 RoPE 以及新型的 Mamba 状态空间结构展开突围。"
+        },
+        "claimType": "interpretation",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "long-context-video-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "long-context-video-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "Google Gemini 1.5 Pro & OpenAI Sora Launch"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "capability",
+      "基础模型",
+      "百万级上下文与视频生成"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "autonomous-multi-agents",
+    "slug": "autonomous-multi-agents",
+    "title": {
+      "en": "Autonomous Multi-Agent Networks",
+      "zhHans": "自主协同 Agent 与群体智能"
+    },
+    "summary": {
+      "en": "Evolving from reactive chat assistants to autonomous actors with distinct intents, memory structures, and self-reflection loops, completing end-to-end operational pipelines without oversight.",
+      "zhHans": "从受指令驱动的“对话助手”演进为具备独立意图、记忆检索、长程规划与自我修正能力的软件实体，能够在无人干预的情况下编排极其复杂的企业级工程工作流。"
+    },
+    "narrative": {
+      "en": "The defining transition is shifting inference computational budgets to runtime, letting models reflect and route tasks for seconds or minutes before outputting. This reduces hallucination rates while enabling complex loop pipelines like self-testing and self-debugging.",
+      "zhHans": "Agent 的最大转变是将传统生成中的推理时间（Inference Time）前置，允许模型在输出答案前独立循环思考几秒至几分钟。这一层“思维链长考”极大地压低了幻觉，并使 Agent 具备了编写自身测试、编译出错、自动修改等行为循环。"
+    },
+    "date": "2025",
+    "datePrecision": "year",
+    "category": "product",
+    "status": "published",
+    "significance": 3,
+    "impactIndex": 9,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "access_democratization",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Evolving from reactive chat assistants to autonomous actors with distinct intents, memory structures, and self-reflection loops, completing end-to-end operational pipelines without oversight.",
+          "zhHans": "从受指令驱动的“对话助手”演进为具备独立意图、记忆检索、长程规划与自我修正能力的软件实体，能够在无人干预的情况下编排极其复杂的企业级工程工作流。"
+        },
+        "affectedGroups": [
+          "企业管理者",
+          "IT 运维",
+          "软件开发商"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "autonomous-multi-agents-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "economic_disruption",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The defining transition is shifting inference computational budgets to runtime, letting models reflect and route tasks for seconds or minutes before outputting. This reduces hallucination rates while enabling complex loop pipelines like self-testing and self-debugging.",
+          "zhHans": "Agent 的最大转变是将传统生成中的推理时间（Inference Time）前置，允许模型在输出答案前独立循环思考几秒至几分钟。这一层“思维链长考”极大地压低了幻觉，并使 Agent 具备了编写自身测试、编译出错、自动修改等行为循环。"
+        },
+        "affectedGroups": [
+          "企业管理者",
+          "IT 运维",
+          "软件开发商"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "autonomous-multi-agents-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Evolving from reactive chat assistants to autonomous actors with distinct intents, memory structures, and self-reflection loops, completing end-to-end operational pipelines without oversight.",
+          "zhHans": "从受指令驱动的“对话助手”演进为具备独立意图、记忆检索、长程规划与自我修正能力的软件实体，能够在无人干预的情况下编排极其复杂的企业级工程工作流。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "autonomous-multi-agents-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "The defining transition is shifting inference computational budgets to runtime, letting models reflect and route tasks for seconds or minutes before outputting. This reduces hallucination rates while enabling complex loop pipelines like self-testing and self-debugging.",
+          "zhHans": "Agent 的最大转变是将传统生成中的推理时间（Inference Time）前置，允许模型在输出答案前独立循环思考几秒至几分钟。这一层“思维链长考”极大地压低了幻觉，并使 Agent 具备了编写自身测试、编译出错、自动修改等行为循环。"
+        },
+        "claimType": "interpretation",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "autonomous-multi-agents-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "autonomous-multi-agents-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "2025 AI Agent 落地白皮书"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "product",
+      "行业应用",
+      "自主协同",
+      "Agent"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "embodied-ai-vla",
+    "slug": "embodied-ai-vla",
+    "title": {
+      "en": "Embodied AI: Neural Control for Robotics",
+      "zhHans": "物理世界交互：人形机器人的大脑"
+    },
+    "summary": {
+      "en": "Vision-Language-Action (VLA) models interface with hardware, allowing bipedal systems to master dexterous hand-eye coordination tasks without prior training.",
+      "zhHans": "视觉语言动作大模型（VLA）与仿生硬件深度结合，机器人脱离硬编码，零样本泛化地在非结构化环境中执行高难度手眼协调任务。"
+    },
+    "narrative": {
+      "en": "The developmental shift focuses on backpropagation in physical environments. Harnessing action token pipelines, models process physical sensory feeds (rigidity, mass, inertia) concurrently to enable tasks once deemed impossible, such as managing soft fabrics or complex wiring.",
+      "zhHans": "这一阶段的重心从单纯的模拟器训练转移到了“真实物理世界的反向传播”，机器人在现实交互中感知阻力与重力。依靠高度压缩的多模态感知信息和动作序列联合训练，AI 实现了让机械臂掌握折叠柔软衣物、精细扭拧螺丝等曾被视为天堑的能力。"
+    },
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "model",
+    "status": "published",
+    "significance": 3,
+    "impactIndex": 9,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Vision-Language-Action (VLA) models interface with hardware, allowing bipedal systems to master dexterous hand-eye coordination tasks without prior training.",
+          "zhHans": "视觉语言动作大模型（VLA）与仿生硬件深度结合，机器人脱离硬编码，零样本泛化地在非结构化环境中执行高难度手眼协调任务。"
+        },
+        "affectedGroups": [
+          "制造业工人",
+          "仓储物流人员",
+          "家庭服务业"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "embodied-ai-vla-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The developmental shift focuses on backpropagation in physical environments. Harnessing action token pipelines, models process physical sensory feeds (rigidity, mass, inertia) concurrently to enable tasks once deemed impossible, such as managing soft fabrics or complex wiring.",
+          "zhHans": "这一阶段的重心从单纯的模拟器训练转移到了“真实物理世界的反向传播”，机器人在现实交互中感知阻力与重力。依靠高度压缩的多模态感知信息和动作序列联合训练，AI 实现了让机械臂掌握折叠柔软衣物、精细扭拧螺丝等曾被视为天堑的能力。"
+        },
+        "affectedGroups": [
+          "制造业工人",
+          "仓储物流人员",
+          "家庭服务业"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "embodied-ai-vla-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Vision-Language-Action (VLA) models interface with hardware, allowing bipedal systems to master dexterous hand-eye coordination tasks without prior training.",
+          "zhHans": "视觉语言动作大模型（VLA）与仿生硬件深度结合，机器人脱离硬编码，零样本泛化地在非结构化环境中执行高难度手眼协调任务。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "embodied-ai-vla-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "The developmental shift focuses on backpropagation in physical environments. Harnessing action token pipelines, models process physical sensory feeds (rigidity, mass, inertia) concurrently to enable tasks once deemed impossible, such as managing soft fabrics or complex wiring.",
+          "zhHans": "这一阶段的重心从单纯的模拟器训练转移到了“真实物理世界的反向传播”，机器人在现实交互中感知阻力与重力。依靠高度压缩的多模态感知信息和动作序列联合训练，AI 实现了让机械臂掌握折叠柔软衣物、精细扭拧螺丝等曾被视为天堑的能力。"
+        },
+        "claimType": "interpretation",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "embodied-ai-vla-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "embodied-ai-vla-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "具身智能与仿生机器人前沿论坛"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "model",
+      "具身智能",
+      "物理世界交互",
+      "人形机器人的大脑"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "scientific-discovery-engine",
+    "slug": "scientific-discovery-engine",
+    "title": {
+      "en": "AI-Driven Scientific Discovery",
+      "zhHans": "AI 驱动的科学发现引擎"
+    },
+    "summary": {
+      "en": "Across bio-physics, battery chemistry, and fusion dynamics, AI evolves from pattern-matching to formulating hypotheses, directing automated lab arrays for massive discovery cycles.",
+      "zhHans": "在生物物理、前沿材料等领域，AI 自主提出假说、设计闭环湿实验室，极大加速了人类的科学探索周期。"
+    },
+    "narrative": {
+      "en": "Autonomous closed-loop wet laboratories iterate molecular synthesis around the clock. By identifying advanced topological arrangements, AI enables dramatic breakthroughs in battery design, custom bio-therapeutics, and super-conductive compound matching.",
+      "zhHans": "这一里程碑式的跃升意味着 AI 实验室能够在无人监督下开展化学合成，全天候迭代。由于 AI 能够识别极度复杂的拓扑网络结构，因此在新型常温超导材料搜索、抗癌靶向药分子设计以及电池正负极材料革新上，其产出速度会呈几个数量级爆发。"
+    },
+    "date": "2028",
+    "datePrecision": "year",
+    "category": "social",
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 9,
+    "consensusLevel": "emerging",
+    "controversy": true,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "paradigm_shift",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Across bio-physics, battery chemistry, and fusion dynamics, AI evolves from pattern-matching to formulating hypotheses, directing automated lab arrays for massive discovery cycles.",
+          "zhHans": "在生物物理、前沿材料等领域，AI 自主提出假说、设计闭环湿实验室，极大加速了人类的科学探索周期。"
+        },
+        "affectedGroups": [
+          "科学家",
+          "医学研究员",
+          "材料工程师"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "scientific-discovery-engine-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "risk_creation",
+        "severity": -2,
+        "direction": "negative",
+        "description": {
+          "en": "Autonomous closed-loop wet laboratories iterate molecular synthesis around the clock. By identifying advanced topological arrangements, AI enables dramatic breakthroughs in battery design, custom bio-therapeutics, and super-conductive compound matching.",
+          "zhHans": "这一里程碑式的跃升意味着 AI 实验室能够在无人监督下开展化学合成，全天候迭代。由于 AI 能够识别极度复杂的拓扑网络结构，因此在新型常温超导材料搜索、抗癌靶向药分子设计以及电池正负极材料革新上，其产出速度会呈几个数量级爆发。"
+        },
+        "affectedGroups": [
+          "科学家",
+          "医学研究员",
+          "材料工程师"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "scientific-discovery-engine-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Across bio-physics, battery chemistry, and fusion dynamics, AI evolves from pattern-matching to formulating hypotheses, directing automated lab arrays for massive discovery cycles.",
+          "zhHans": "在生物物理、前沿材料等领域，AI 自主提出假说、设计闭环湿实验室，极大加速了人类的科学探索周期。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "scientific-discovery-engine-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "Autonomous closed-loop wet laboratories iterate molecular synthesis around the clock. By identifying advanced topological arrangements, AI enables dramatic breakthroughs in battery design, custom bio-therapeutics, and super-conductive compound matching.",
+          "zhHans": "这一里程碑式的跃升意味着 AI 实验室能够在无人监督下开展化学合成，全天候迭代。由于 AI 能够识别极度复杂的拓扑网络结构，因此在新型常温超导材料搜索、抗癌靶向药分子设计以及电池正负极材料革新上，其产出速度会呈几个数量级爆发。"
+        },
+        "claimType": "interpretation",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "scientific-discovery-engine-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "scientific-discovery-engine-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "自然科学与AI前沿趋势预测"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "social",
+      "社会影响",
+      "AI",
+      "驱动的科学发现引擎"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "early-stage-agi",
+    "slug": "early-stage-agi",
+    "title": {
+      "en": "Early-Stage AGI Integration",
+      "zhHans": "初代通用人工智能 (AGI) 出现"
+    },
+    "summary": {
+      "en": "Systems achieve generalized cognitive abstraction, mastering unfamiliar domains dynamically while expressing fluid flexibility in intellectual, virtual, and physically adaptive tasks.",
+      "zhHans": "系统展现出强大的通识与抽象推理本领，能零成本地掌握全新行业知识，在知识工作和物理操作层面展现出等同于顶尖人类水平的多样性。"
+    },
+    "narrative": {
+      "en": "At this threshold, cognitive neural architectures run automated optimization routines on their own core engines. Global productivity curves undergo structural inversion, making security protocols and co-existence frameworks the ultimate global priority.",
+      "zhHans": "在这个历史节点上，AI 开始具备自我迭代其本身神经网络代码的能力，这通常伴随着算力的极度膨胀和去中心化安全架构的建立。社会工作的结构和全球生产力模型将面临重构，安全与共生的治理框架将成为世界级的首要议题。"
+    },
+    "date": "2030",
+    "datePrecision": "year",
+    "category": "model",
+    "status": "published",
+    "significance": 3,
+    "impactIndex": 10,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "impacts": [
+      {
+        "id": "impact-1",
+        "dimension": "capability_leap",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Systems achieve generalized cognitive abstraction, mastering unfamiliar domains dynamically while expressing fluid flexibility in intellectual, virtual, and physically adaptive tasks.",
+          "zhHans": "系统展现出强大的通识与抽象推理本领，能零成本地掌握全新行业知识，在知识工作和物理操作层面展现出等同于顶尖人类水平的多样性。"
+        },
+        "affectedGroups": [
+          "全球社会所有知识",
+          "体力劳动者"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "early-stage-agi-source-1"
+        ]
+      },
+      {
+        "id": "impact-2",
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "At this threshold, cognitive neural architectures run automated optimization routines on their own core engines. Global productivity curves undergo structural inversion, making security protocols and co-existence frameworks the ultimate global priority.",
+          "zhHans": "在这个历史节点上，AI 开始具备自我迭代其本身神经网络代码的能力，这通常伴随着算力的极度膨胀和去中心化安全架构的建立。社会工作的结构和全球生产力模型将面临重构，安全与共生的治理框架将成为世界级的首要议题。"
+        },
+        "affectedGroups": [
+          "全球社会所有知识",
+          "体力劳动者"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "early-stage-agi-source-1"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "fact-1",
+        "text": {
+          "en": "Systems achieve generalized cognitive abstraction, mastering unfamiliar domains dynamically while expressing fluid flexibility in intellectual, virtual, and physically adaptive tasks.",
+          "zhHans": "系统展现出强大的通识与抽象推理本领，能零成本地掌握全新行业知识，在知识工作和物理操作层面展现出等同于顶尖人类水平的多样性。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "early-stage-agi-source-1"
+        ]
+      },
+      {
+        "id": "assessment-1",
+        "text": {
+          "en": "At this threshold, cognitive neural architectures run automated optimization routines on their own core engines. Global productivity curves undergo structural inversion, making security protocols and co-existence frameworks the ultimate global priority.",
+          "zhHans": "在这个历史节点上，AI 开始具备自我迭代其本身神经网络代码的能力，这通常伴随着算力的极度膨胀和去中心化安全架构的建立。社会工作的结构和全球生产力模型将面临重构，安全与共生的治理框架将成为世界级的首要议题。"
+        },
+        "claimType": "interpretation",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "early-stage-agi-source-1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "early-stage-agi-source-1",
+        "supports": [
+          "fact-1",
+          "impact-1",
+          "impact-2"
+        ],
+        "quote": "AGI 安全与共生治理宣言"
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "tags": [
+      "model",
+      "基础模型",
+      "初代通用人工智能",
+      "AGI"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "lastSourceCheckAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  }
+]
+  </script>
+
+  <script type="application/json" id="fallback-sources-data">
+[
+  {
+    "id": "turing-test-paper-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "Turing, A.M. (1950) \"Computing Machinery and Intelligence\"",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "dartmouth-conf-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "McCarthy et al. 1955 Proposal",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "backprop-pop-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "Rumelhart, Hinton, & Williams (1986) Nature Paper",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "deep-blue-kasparov-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "IBM Archives",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "alexnet-imagenet-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "Krizhevsky et al. (2012)",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "alphago-lee-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "DeepMind Nature Paper",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "transformer-birth-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "Vaswani et al. (2017) Paper",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "gpt3-release-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "Brown et al. (2020) GPT-3 Paper",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "dalle-copilot-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "GitHub & OpenAI Product Releases",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "chatgpt-release-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "OpenAI Announcement",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "nvidia-h100-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "NVIDIA GTC Keynote",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "multimodal-emergence-source-1",
+    "type": "primary",
+    "tier": 1,
+    "title": "GPT-4V 发布与 Gemini 双子座架构报告",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "zh-CN",
+    "independence": "primary_actor",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "agentic-workflows-source-1",
+    "type": "analysis",
+    "tier": 3,
+    "title": "OpenAI DevDay & 行业共识报告",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "zh-CN",
+    "independence": "independent",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "long-context-video-source-1",
+    "type": "analysis",
+    "tier": 3,
+    "title": "Google Gemini 1.5 Pro & OpenAI Sora Launch",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "en",
+    "independence": "independent",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "autonomous-multi-agents-source-1",
+    "type": "analysis",
+    "tier": 3,
+    "title": "2025 AI Agent 落地白皮书",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "zh-CN",
+    "independence": "independent",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "embodied-ai-vla-source-1",
+    "type": "analysis",
+    "tier": 3,
+    "title": "具身智能与仿生机器人前沿论坛",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "zh-CN",
+    "independence": "independent",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "scientific-discovery-engine-source-1",
+    "type": "analysis",
+    "tier": 3,
+    "title": "自然科学与AI前沿趋势预测",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "zh-CN",
+    "independence": "independent",
+    "notes": "Canonical URL pending. Replace before public launch."
+  },
+  {
+    "id": "early-stage-agi-source-1",
+    "type": "analysis",
+    "tier": 3,
+    "title": "AGI 安全与共生治理宣言",
+    "url": "",
+    "accessedAt": "2026-06-24",
+    "language": "zh-CN",
+    "independence": "independent",
+    "notes": "Canonical URL pending. Replace before public launch."
+  }
+]
+  </script>
+
+  <script>
+    const LANGUAGES = {
+      en: { html: 'en', content: 'en' },
+      es: { html: 'es', content: 'en' },
+      ja: { html: 'ja', content: 'en' },
+      'zh-Hans': { html: 'zh-Hans', content: 'zh' },
+      'zh-Hant': { html: 'zh-Hant', content: 'zh' },
+      fr: { html: 'fr', content: 'en' }
+    };
+
+    const UI_TEXT = {
+      darkMode: { en: 'Dark Mode', es: 'Modo oscuro', ja: 'ダーク', 'zh-Hans': '深色模式', 'zh-Hant': '深色模式', fr: 'Mode sombre' },
+      lightMode: { en: 'Light Mode', es: 'Modo claro', ja: 'ライト', 'zh-Hans': '浅色模式', 'zh-Hant': '淺色模式', fr: 'Mode clair' },
+      loadingPredictions: { en: 'Loading predictions', es: 'Cargando predicciones', ja: '予測を読み込み中', 'zh-Hans': '正在加载预测数据', 'zh-Hant': '正在載入預測資料', fr: 'Chargement des prévisions' },
+      loadingPredictionsBody: { en: 'The page is loading structured content files.', es: 'La página está cargando archivos de contenido estructurado.', ja: '構造化コンテンツを読み込んでいます。', 'zh-Hans': '页面正在读取独立数据文件。', 'zh-Hant': '頁面正在讀取獨立資料檔案。', fr: 'La page charge les fichiers de contenu structurés.' },
+      predictionsError: { en: 'Prediction data unavailable', es: 'Predicciones no disponibles', ja: '予測データを利用できません', 'zh-Hans': '预测数据加载失败', 'zh-Hant': '預測資料載入失敗', fr: 'Prévisions indisponibles' },
+      predictionsErrorBody: { en: 'Serve the site over HTTP and verify that data/forecasts.json is reachable.', es: 'Sirve el sitio por HTTP y verifica que data/forecasts.json esté disponible.', ja: 'HTTP 経由でサイトを開き、data/forecasts.json を確認してください。', 'zh-Hans': '请通过静态服务器访问站点，或检查 data/forecasts.json 是否可用。', 'zh-Hant': '請透過靜態伺服器存取網站，或檢查 data/forecasts.json 是否可用。', fr: 'Servez le site en HTTP et vérifiez que data/forecasts.json est accessible.' },
+      loadingTimeline: { en: 'Loading timeline', es: 'Cargando cronología', ja: 'タイムラインを読み込み中', 'zh-Hans': '正在加载时间轴', 'zh-Hant': '正在載入時間軸', fr: 'Chargement de la chronologie' },
+      loadingTimelineBody: { en: 'The site is loading timeline data from JSON.', es: 'El sitio está cargando la cronología desde JSON.', ja: 'JSON からタイムラインを読み込んでいます。', 'zh-Hans': '站点正在加载独立事件数据。', 'zh-Hant': '網站正在載入獨立事件資料。', fr: 'Le site charge les données de chronologie depuis JSON.' },
+      timelineError: { en: 'Timeline unavailable', es: 'Cronología no disponible', ja: 'タイムラインを利用できません', 'zh-Hans': '时间轴数据加载失败', 'zh-Hant': '時間軸資料載入失敗', fr: 'Chronologie indisponible' },
+      timelineErrorBody: { en: 'This build depends on static JSON files. Make sure data/events.json is deployed.', es: 'Esta versión depende de archivos JSON estáticos. Asegúrate de publicar data/events.json.', ja: 'このビルドは静的 JSON に依存します。data/events.json が公開されているか確認してください。', 'zh-Hans': '当前版本依赖静态 JSON 文件，请确认部署时包含 data/events.json。', 'zh-Hant': '目前版本依賴靜態 JSON 檔案，請確認部署時包含 data/events.json。', fr: 'Cette version dépend de fichiers JSON statiques. Vérifiez que data/events.json est déployé.' },
+      openMethodology: { en: 'Open methodology', es: 'Ver metodología', ja: '方法を見る', 'zh-Hans': '查看方法页', 'zh-Hant': '查看方法頁', fr: 'Voir la méthodologie' },
+      voted: { en: 'Voted', es: 'Votado', ja: '投票済み', 'zh-Hans': '已投票', 'zh-Hant': '已投票', fr: 'Voté' },
+      vote: { en: 'Vote', es: 'Votar', ja: '投票', 'zh-Hans': '投一票', 'zh-Hant': '投一票', fr: 'Voter' },
+      votes: { en: 'votes', es: 'votos', ja: '票', 'zh-Hans': '票', 'zh-Hant': '票', fr: 'votes' },
+      noResults: { en: 'No matching node records found', es: 'No hay eventos coincidentes', ja: '一致する記録はありません', 'zh-Hans': '暂无匹配的节点数据', 'zh-Hant': '暫無符合的節點資料', fr: 'Aucun événement correspondant' },
+      impactScore: { en: 'Impact', es: 'Impacto', ja: '影響', 'zh-Hans': '影响分', 'zh-Hant': '影響分', fr: 'Impact' },
+      affected: { en: 'Affected', es: 'Afectados', ja: '影響対象', 'zh-Hans': '影响对象', 'zh-Hant': '影響對象', fr: 'Affectés' }
+    };
+
+    function normalizeLang(lang) {
+      if (lang === 'zh') return 'zh-Hans';
+      if (lang === 'zh-CN') return 'zh-Hans';
+      if (lang === 'zh-TW' || lang === 'zh-HK') return 'zh-Hant';
+      return LANGUAGES[lang] ? lang : 'en';
+    }
+
+    function contentLang() {
+      return LANGUAGES[state.lang]?.content || 'en';
+    }
+
+    function isChineseContent() {
+      return contentLang() === 'zh';
+    }
+
+    function text(key) {
+      const entry = UI_TEXT[key] || {};
+      return entry[state.lang] || entry[contentLang()] || entry.en || key;
+    }
+
+    function localizedText(entry) {
+      if (!entry) return '';
+      if (typeof entry === 'string') return entry;
+      return entry[state.lang] || entry[contentLang()] || entry.zhHans || entry.zhHant || entry.zh || entry.en || '';
+    }
+
+    function labelFor(entry) {
+      return localizedText(entry);
+    }
+
+    function localizedRecord(record) {
+      return {
+        title: localizedText(record?.title),
+        summary: localizedText(record?.summary || record?.thesis),
+        desc: localizedText(record?.description || record?.thesis || record?.summary),
+        category: localizedText(record?.categoryLabel),
+        source: localizedText(record?.sourceLabel),
+        description: localizedText(record?.narrative || record?.description || record?.summary || record?.thesis)
+      };
+    }
+
+    /* ─── State Management ──────────────────────────────────────────── */
+    const state = {
+      lang: normalizeLang(localStorage.getItem('od-lang') || 'en'),
+      theme: localStorage.getItem('od-theme') || 'light', // 'light' or 'dark'
+      filters: {
+        significance: 'all',
+        impactDimension: 'all',
+        consensusLevel: 'all'
+      },
+      searchQuery: '',
+      activeEventId: null,
+      dataStatus: 'loading',
+      dataError: '',
+      votes: JSON.parse(localStorage.getItem('od-votes-v2')) || {
+        agi: 412,
+        robot: 285,
+        alignment: 320,
+        science: 198
+      },
+      hasVoted: JSON.parse(localStorage.getItem('od-has-voted')) || {}
+    };
+
+    /* ─── Content Data ──────────────────────────────────────────────── */
+    let forecasts = [];
+    let aiEvents = [];
+    let sourcesById = new Map();
+
+    /* ─── DOM Elements ──────────────────────────────────────────────── */
+    const categoryLabels = {
+      model: { zh: '模型发布', en: 'Model Release' },
+      capability: { zh: '能力突破', en: 'Capability Breakthrough' },
+      research: { zh: '研究范式', en: 'Research Paradigm' },
+      product: { zh: '产品化', en: 'Productization' },
+      open_source: { zh: '开源事件', en: 'Open Source' },
+      regulation: { zh: '政策法规', en: 'Regulation' },
+      safety: { zh: '安全伦理', en: 'Safety / Ethics' },
+      social: { zh: '社会影响', en: 'Social Impact' }
+    };
+
+    const impactLabels = {
+      capability_leap: { zh: '能力跃迁', en: 'Capability Leap' },
+      economic_disruption: { zh: '经济冲击', en: 'Economic Disruption' },
+      access_democratization: { zh: '普惠化', en: 'Access Democratization' },
+      risk_creation: { zh: '风险制造', en: 'Risk Creation' },
+      paradigm_shift: { zh: '认知转变', en: 'Paradigm Shift' }
+    };
+
+    const timeframeLabels = {
+      immediate: { zh: '即时', en: 'Immediate' },
+      short: { zh: '短期', en: 'Short Term' },
+      medium: { zh: '中期', en: 'Medium Term' },
+      long: { zh: '长期', en: 'Long Term' }
+    };
+
+    const consensusLabels = {
+      broad: { zh: '广泛共识', en: 'Broad Consensus' },
+      debated: { zh: '存在争议', en: 'Debated' },
+      emerging: { zh: '新兴判断', en: 'Emerging' }
+    };
+    const sourceTypeLabels = {
+      primary: { zh: '原始资料', en: 'Primary' },
+      analysis: { zh: '分析资料', en: 'Analysis' }
+    };
+
+    async function loadJson(url) {
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`${url}: ${response.status}`);
+      }
+      return response.json();
+    }
+
+    function readFallbackJson(id) {
+      const node = document.getElementById(id);
+      if (!node) return null;
+      return JSON.parse(node.textContent);
+    }
+
+    function loadFallbackData(error) {
+      const predictionData = readFallbackJson('fallback-forecasts-data');
+      const eventData = readFallbackJson('fallback-events-data');
+      const sourceData = readFallbackJson('fallback-sources-data');
+      if (!predictionData || !eventData || !sourceData) {
+        throw error;
+      }
+      forecasts = predictionData;
+      aiEvents = eventData;
+      sourcesById = new Map(sourceData.map((source) => [source.id, source]));
+      state.dataStatus = 'ready';
+      state.dataError = '';
+    }
+
+    async function loadSiteData() {
+      state.dataStatus = 'loading';
+      state.dataError = '';
+      renderPredictions();
+      renderTimeline();
+
+      try {
+        const [forecastData, eventData, sourceData] = await Promise.all([
+          loadJson('data/forecasts.json'),
+          loadJson('data/events.json'),
+          loadJson('data/sources.json')
+        ]);
+        forecasts = forecastData;
+        aiEvents = eventData;
+        sourcesById = new Map(sourceData.map((source) => [source.id, source]));
+        state.dataStatus = 'ready';
+      } catch (error) {
+        try {
+          loadFallbackData(error);
+        } catch (fallbackError) {
+          state.dataStatus = 'error';
+          state.dataError = String(fallbackError.message || fallbackError);
+        }
+      }
+
+      renderPredictions();
+      renderTimeline();
+    }
+
+    const elements = {
+      langSelect: document.getElementById('langSelect'),
+      themeToggle: document.getElementById('themeToggle'),
+      themeIcon: document.getElementById('themeIcon'),
+      themeText: document.getElementById('themeText'),
+      predictionsContainer: document.getElementById('predictionsContainer'),
+      timelineContainer: document.getElementById('timelineContainer'),
+      searchInput: document.getElementById('searchInput'),
+      significanceFilter: document.getElementById('significanceFilter'),
+      impactFilter: document.getElementById('impactFilter'),
+      consensusFilter: document.getElementById('consensusFilter'),
+    };
+
+    /* ─── Language Switcher Logic ───────────────────────────────────── */
+    function updateLocale() {
+      document.documentElement.lang = LANGUAGES[state.lang]?.html || 'en';
+      if (elements.langSelect) {
+        elements.langSelect.value = state.lang;
+      }
+      
+      // Update all elements with data-zh / data-en
+      document.querySelectorAll('[data-zh]').forEach(el => {
+        const translated = el.getAttribute(`data-${state.lang}`);
+        el.innerText = translated || (isChineseContent() ? el.getAttribute('data-zh') : el.getAttribute('data-en'));
+      });
+
+      // Update placeholders
+      document.querySelectorAll('[data-zh-placeholder]').forEach(el => {
+        const translated = el.getAttribute(`data-${state.lang}-placeholder`);
+        el.setAttribute('placeholder', translated || (isChineseContent() ? el.getAttribute('data-zh-placeholder') : el.getAttribute('data-en-placeholder')));
+      });
+
+      renderPredictions();
+      renderTimeline();
+      updateThemeLabels();
+    }
+
+    elements.langSelect.addEventListener('change', (event) => {
+      state.lang = normalizeLang(event.target.value);
+      localStorage.setItem('od-lang', state.lang);
+      updateLocale();
+    });
+
+    /* ─── Theme Switcher Logic ──────────────────────────────────────── */
+    function updateTheme() {
+      document.body.setAttribute('data-theme', state.theme);
+      updateThemeLabels();
+      
+      // Update icon dynamically
+      if (state.theme === 'dark') {
+        elements.themeIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707m12.728 6.364A9 9 0 115.636 5.636m12.728 12.728A9 9 0 015.636 5.636"></path>`;
+      } else {
+        elements.themeIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>`;
+      }
+    }
+
+    elements.themeToggle.addEventListener('click', () => {
+      state.theme = state.theme === 'light' ? 'dark' : 'light';
+      localStorage.setItem('od-theme', state.theme);
+      updateTheme();
+    });
+
+    function updateThemeLabels() {
+      elements.themeText.innerText = state.theme === 'light' ? text('darkMode') : text('lightMode');
+    }
+
+    function renderStatus(container, title, body, linkText) {
+      container.innerHTML = `
+        <div class="status-panel">
+          <strong>${title}</strong>
+          <span>${body}</span>
+          ${linkText ? `<div style="margin-top: 8px;"><a class="status-link" href="methods.html">${linkText}</a></div>` : ''}
+        </div>
+      `;
+    }
+
+    /* ─── Predictions Voting Logic ──────────────────────────────────── */
+    function renderPredictions() {
+      if (state.dataStatus === 'loading') {
+        renderStatus(
+          elements.predictionsContainer,
+          text('loadingPredictions'),
+          text('loadingPredictionsBody')
+        );
+        return;
+      }
+
+      if (state.dataStatus === 'error') {
+        renderStatus(
+          elements.predictionsContainer,
+          text('predictionsError'),
+          text('predictionsErrorBody'),
+          text('openMethodology')
+        );
+        return;
+      }
+
+      elements.predictionsContainer.innerHTML = '';
+      const totalVotes = Object.values(state.votes).reduce((a, b) => a + b, 0);
+
+      forecasts.forEach(p => {
+        const itemVotes = state.votes[p.id] || 0;
+        const percentage = totalVotes > 0 ? Math.round((itemVotes / totalVotes) * 100) : 0;
+        const userHasVoted = state.hasVoted[p.id];
+        const cardClass = userHasVoted ? 'predict-card voted' : 'predict-card';
+        const buttonText = userHasVoted ? text('voted') : text('vote');
+        const copy = localizedRecord(p);
+
+        const card = document.createElement('div');
+        card.className = cardClass;
+        card.innerHTML = `
+          <div class="predict-header">
+            <h3>${copy.title}</h3>
+            <p>${copy.desc}</p>
+          </div>
+          <div class="vote-area">
+            <button class="vote-btn" onclick="vote('${p.id}')">
+              <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 13px; height: 13px;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+              </svg>
+              <span>${buttonText}</span>
+            </button>
+            <div class="vote-bar-container">
+              <div class="vote-bar" style="width: ${percentage}%"></div>
+            </div>
+            <div class="vote-stat">
+              <span>${itemVotes} ${text('votes')}</span>
+              <span>${percentage}%</span>
+            </div>
+          </div>
+        `;
+        elements.predictionsContainer.appendChild(card);
+      });
+    }
+
+    window.vote = function(id) {
+      if (state.hasVoted[id]) {
+        state.votes[id] -= 1;
+        delete state.hasVoted[id];
+      } else {
+        state.votes[id] += 1;
+        state.hasVoted[id] = true;
+      }
+      localStorage.setItem('od-votes-v2', JSON.stringify(state.votes));
+      localStorage.setItem('od-has-voted', JSON.stringify(state.hasVoted));
+      renderPredictions();
+    };
+
+    /* ─── Curated Timeline Rendering ────────────────────────────────── */
+    function renderTimeline() {
+      if (state.dataStatus === 'loading') {
+        renderStatus(
+          elements.timelineContainer,
+          text('loadingTimeline'),
+          text('loadingTimelineBody')
+        );
+        return;
+      }
+
+      if (state.dataStatus === 'error') {
+        renderStatus(
+          elements.timelineContainer,
+          text('timelineError'),
+          text('timelineErrorBody'),
+          text('openMethodology')
+        );
+        return;
+      }
+
+      elements.timelineContainer.innerHTML = '';
+      
+      const filteredEvents = aiEvents
+        .slice()
+        .sort((a, b) => b.date.localeCompare(a.date))
+        .filter(e => {
+        if (state.filters.significance !== 'all' && e.significance !== parseInt(state.filters.significance)) {
+          return false;
+        }
+        if (state.filters.impactDimension !== 'all' && !e.impacts.some(impact => impact.dimension === state.filters.impactDimension)) {
+          return false;
+        }
+        if (state.filters.consensusLevel !== 'all' && e.consensusLevel !== state.filters.consensusLevel) {
+          return false;
+        }
+        if (state.searchQuery) {
+          const query = state.searchQuery.toLowerCase();
+          const copy = localizedRecord(e);
+          const matchesTitle = copy.title.toLowerCase().includes(query);
+          const matchesCategory = labelFor(categoryLabels[e.category]).toLowerCase().includes(query);
+          const matchesSummary = copy.summary.toLowerCase().includes(query);
+          const matchesTags = e.tags.some(tag => tag.toLowerCase().includes(query));
+          return matchesTitle || matchesCategory || matchesSummary || matchesTags;
+        }
+        return true;
+      });
+
+      filteredEvents.forEach(e => {
+        const item = document.createElement('div');
+        item.className = `timeline-item sig-${e.significance}`;
+        item.setAttribute('data-category', e.category);
+        item.id = `item-${e.id}`;
+        
+        let nodeHTML = '';
+        const copy = localizedRecord(e);
+        const catClass = e.category || 'research';
+        const categoryName = labelFor(categoryLabels[e.category]);
+        const consensusName = labelFor(consensusLabels[e.consensusLevel]);
+        const dateHTML = renderTimelineDate(e);
+        const detailsHTML = state.activeEventId === e.id ? renderEventDetails(e) : '';
+        const expandedClass = state.activeEventId === e.id ? ' expanded' : '';
+        const metricsHTML = renderNodeMetrics(e, consensusName);
+
+        if (e.significance === 3) {
+          // Critical Node Layout
+          nodeHTML = `
+            <div class="timeline-date-col">
+              ${dateHTML}
+            </div>
+            <div class="timeline-dot level-3"></div>
+            <div class="timeline-entry">
+              <div class="timeline-card-l3${expandedClass}" role="button" tabindex="0" onclick="openDetails('${e.id}')">
+                <div class="timeline-node-head">
+                  <div class="timeline-node-main">
+                    <div class="card-meta">
+                      <span class="category-badge ${catClass}">${categoryName}</span>
+                    </div>
+                    <div class="card-content">
+                      <h3>${copy.title}</h3>
+                      <p class="summary">${copy.summary}</p>
+                    </div>
+                  </div>
+                  ${metricsHTML}
+                </div>
+                ${detailsHTML}
+              </div>
+            </div>
+          `;
+        } else if (e.significance === 2) {
+          // Major Node Layout
+          nodeHTML = `
+            <div class="timeline-date-col">
+              ${dateHTML}
+            </div>
+            <div class="timeline-dot level-2"></div>
+            <div class="timeline-entry">
+              <div class="timeline-card-l2${expandedClass}" role="button" tabindex="0" onclick="openDetails('${e.id}')">
+                <div class="timeline-node-head">
+                  <div class="timeline-node-main">
+                    <div class="card-meta">
+                      <span class="category-badge ${catClass}">${categoryName}</span>
+                    </div>
+                    <div class="card-content">
+                      <h3>${copy.title}</h3>
+                      <p class="summary">${copy.summary}</p>
+                    </div>
+                  </div>
+                  ${metricsHTML}
+                </div>
+                ${detailsHTML}
+              </div>
+            </div>
+          `;
+        } else {
+          // Minor Record Layout
+          nodeHTML = `
+            <div class="timeline-date-col">
+              ${dateHTML}
+            </div>
+            <div class="timeline-dot level-1"></div>
+            <div class="timeline-entry">
+              <div class="timeline-card-l1${expandedClass}" role="button" tabindex="0" onclick="openDetails('${e.id}')">
+                <div class="timeline-node-head">
+                  <div class="timeline-node-main">
+                    <div class="card-meta">
+                      <span class="category-badge ${catClass}">${categoryName}</span>
+                    </div>
+                    <div class="card-content">
+                      <h3>${copy.title}</h3>
+                    </div>
+                  </div>
+                  ${metricsHTML}
+                </div>
+                ${detailsHTML}
+              </div>
+            </div>
+          `;
+        }
+        
+        item.innerHTML = nodeHTML;
+        elements.timelineContainer.appendChild(item);
+      });
+
+      if (filteredEvents.length === 0) {
+        const noResult = document.createElement('div');
+        noResult.style.padding = '40px 0';
+        noResult.style.textAlign = 'center';
+        noResult.style.color = 'var(--muted)';
+        noResult.innerText = text('noResults');
+        elements.timelineContainer.appendChild(noResult);
+      }
+    }
+
+    function renderTimelineDate(e) {
+      const raw = String(e.date || '');
+      const parts = raw.split('-');
+      const year = parts[0] || raw;
+      let subdate = '';
+
+      if (e.datePrecision === 'day' && parts.length >= 3) {
+        subdate = isChineseContent()
+          ? `${Number(parts[1])}月${Number(parts[2])}日`
+          : new Date(`${parts[0]}-${parts[1]}-${parts[2]}T00:00:00`).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      } else if (e.datePrecision === 'month' && parts.length >= 2) {
+        subdate = isChineseContent()
+          ? `${Number(parts[1])}月`
+          : new Date(`${parts[0]}-${parts[1]}-01T00:00:00`).toLocaleDateString('en-US', { month: 'short' });
+      }
+
+      return `
+        <span class="timeline-year">${year}</span>
+        ${subdate ? `<span class="timeline-subdate">${subdate}</span>` : ''}
+      `;
+    }
+
+    function renderNodeMetrics(e, consensusName) {
+      const impactLabel = text('impactScore');
+      return `
+        <div class="timeline-node-side">
+          <span class="timeline-node-level">L${e.significance}</span>
+          <span class="timeline-node-impact">${impactLabel} ${e.impactIndex}/10</span>
+          <span class="timeline-node-consensus">${consensusName}</span>
+        </div>
+      `;
+    }
+
+    function renderEventDetails(e) {
+      const copy = localizedRecord(e);
+      const eventSources = (e.sources || []).map((sourceRef) => ({
+        ref: sourceRef,
+        source: sourcesById.get(sourceRef.sourceId) || { id: sourceRef.sourceId, title: sourceRef.sourceId, type: 'unknown', url: '' }
+      }));
+
+      const sourceItems = eventSources.map(({ ref, source }, index) => `
+        <li class="source-card">
+          <span class="source-index">[${index + 1}]</span>
+          <div class="source-body">
+            <div class="source-row">
+              <span class="source-title">${source.title}</span>
+              <span class="impact-score">${labelFor(sourceTypeLabels[source.type]) || source.type}</span>
+            </div>
+            <p class="source-meta">${source.url || (isChineseContent() ? '当前记录的是来源指向。推荐后续补 DOI、原始页面链接、存档链接和抓取时间。' : 'This currently stores the citation pointer. Next step: add DOI, canonical URL, archive URL, and capture timestamp.')}</p>
+            ${ref.quote ? `<div class="source-quote">${ref.quote}</div>` : ''}
+            <div class="source-status">
+              <span class="source-chip">${isChineseContent() ? '引用已记录' : 'Citation logged'}</span>
+              <span class="source-chip">${source.url ? (isChineseContent() ? '原文可访问' : 'Live source') : (isChineseContent() ? '待补原文链接' : 'URL pending')}</span>
+              <span>${isChineseContent() ? '建议保留本地摘录或网页快照，避免原始页面失效。' : 'Preserve a local excerpt or web snapshot to guard against link rot.'}</span>
+            </div>
+          </div>
+        </li>
+      `).join('');
+
+      const impactItems = e.impacts.map(impact => `
+        <li class="impact-item">
+          <div class="impact-head">
+            <span class="impact-name">${labelFor(impactLabels[impact.dimension])}</span>
+            <span class="impact-score">${impact.severity > 0 ? '+' : ''}${impact.severity} · ${labelFor(timeframeLabels[impact.timeframe])}</span>
+          </div>
+          <p class="impact-description">${localizedText(impact.description)}</p>
+          <p class="impact-description">${text('affected')}: ${impact.affectedGroups.join(isChineseContent() ? '、' : ', ')}</p>
+        </li>
+      `).join('');
+
+      return `
+        <div class="timeline-details">
+          <div class="detail-section">
+            <span class="detail-title">${isChineseContent() ? '事件摘要' : 'Event Summary'}</span>
+            <p class="commentary-text">${copy.description}</p>
+          </div>
+          <div class="detail-section">
+            <span class="detail-title">${isChineseContent() ? '影响评估' : 'Impact Assessment'}</span>
+            <ul class="impact-list">${impactItems}</ul>
+          </div>
+          <div class="detail-section">
+            <span class="detail-title">${isChineseContent() ? '可信度与来源' : 'Consensus And Sources'}</span>
+            <div class="field-grid" style="padding: 0; border: 0;">
+              <div class="field-item">
+                <span class="label">${isChineseContent() ? '重要度' : 'Significance'}</span>
+                <span class="val">L${e.significance}</span>
+              </div>
+              <div class="field-item">
+                <span class="label">${isChineseContent() ? '可信度' : 'Consensus'}</span>
+                <span class="val">${labelFor(consensusLabels[e.consensusLevel])}</span>
+              </div>
+              <div class="field-item">
+                <span class="label">${isChineseContent() ? '是否有争议' : 'Controversy'}</span>
+                <span class="val">${e.controversy ? (isChineseContent() ? '是' : 'Yes') : (isChineseContent() ? '否' : 'No')}</span>
+              </div>
+              <div class="field-item">
+                <span class="label">${isChineseContent() ? '日期精度' : 'Date Precision'}</span>
+                <span class="val">${e.datePrecision}</span>
+              </div>
+            </div>
+            <ul class="source-list">${sourceItems}</ul>
+          </div>
+          <div class="detail-section">
+            <span class="detail-title">${isChineseContent() ? '标签' : 'Tags'}</span>
+            <ul class="tag-list">${e.tags.map(tag => `<li>${tag}</li>`).join('')}</ul>
+          </div>
+        </div>
+      `;
+    }
+
+    /* ─── Interactive Inline Details ────────────────────────────────── */
+    window.openDetails = function(id, shouldPushState = true) {
+      const e = aiEvents.find(item => item.id === id);
+      if (!e) return;
+
+      state.activeEventId = state.activeEventId === id && shouldPushState ? null : id;
+      renderTimeline();
+      
+      if (shouldPushState) {
+        history.pushState(null, '', state.activeEventId ? `?event=${e.id}` : window.location.pathname);
+      }
+    };
+
+    window.closeDetails = function(shouldPushState = true) {
+      state.activeEventId = null;
+      renderTimeline();
+      if (shouldPushState) {
+        history.pushState(null, '', window.location.pathname);
+      }
+    };
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDetails(true);
+    });
+
+    /* ─── Browser Back-button (History) Integration ─────────────────── */
+    window.addEventListener('popstate', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const eventId = urlParams.get('event');
+      if (eventId) {
+        openDetails(eventId, false);
+      } else {
+        closeDetails(false);
+      }
+    });
+
+    /* ─── Search and Filtering ──────────────────────────────────────── */
+    elements.searchInput.addEventListener('input', (e) => {
+      state.searchQuery = e.target.value;
+      renderTimeline();
+    });
+
+    elements.timelineContainer.addEventListener('keydown', (e) => {
+      if ((e.key === 'Enter' || e.key === ' ') && e.target.closest('[role="button"]')) {
+        e.preventDefault();
+        const item = e.target.closest('.timeline-item');
+        if (item) openDetails(item.id.replace('item-', ''));
+      }
+    });
+
+    elements.significanceFilter.addEventListener('change', (e) => {
+      state.filters.significance = e.target.value;
+      renderTimeline();
+    });
+    elements.impactFilter.addEventListener('change', (e) => {
+      state.filters.impactDimension = e.target.value;
+      renderTimeline();
+    });
+    elements.consensusFilter.addEventListener('change', (e) => {
+      state.filters.consensusLevel = e.target.value;
+      renderTimeline();
+    });
+
+    /* ─── Initialization ────────────────────────────────────────────── */
+    async function init() {
+      // Check query param for initial page load
+      const urlParams = new URLSearchParams(window.location.search);
+      const eventId = urlParams.get('event');
+      
+      // Update UI languages & themes
+      updateLocale();
+      updateTheme();
+      await loadSiteData();
+      
+      if (eventId && state.dataStatus === 'ready') {
+        setTimeout(() => openDetails(eventId, false), 300);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

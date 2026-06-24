@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Methodology & Sources · EpochArc</title>
+  <meta name="description" content="Methodology for EpochArc: how the site separates AI milestones, evidence, impact assessments, forecasts, and source standards." />
+  <meta name="theme-color" content="#f7f8fb" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <style>
+    :root {
+      --bg: oklch(98.5% 0.003 240);
+      --surface: oklch(100% 0 0);
+      --fg: oklch(15% 0.015 250);
+      --muted: oklch(52% 0.012 250);
+      --border: oklch(90.5% 0.006 250);
+      --accent: oklch(58% 0.18 255);
+      --accent-soft: color-mix(in oklch, var(--accent) 10%, transparent);
+      --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "PingFang SC", sans-serif;
+      --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "PingFang SC", sans-serif;
+      --font-mono: "JetBrains Mono", "IBM Plex Mono", Menlo, monospace;
+      --radius: 12px;
+      --container: 900px;
+    }
+
+    [data-theme="dark"] {
+      --bg: oklch(12% 0.008 250);
+      --surface: oklch(16% 0.01 250);
+      --fg: oklch(93% 0.005 250);
+      --muted: oklch(60% 0.008 250);
+      --border: oklch(22% 0.008 250);
+      --accent: oklch(64% 0.16 250);
+      --accent-soft: color-mix(in oklch, var(--accent) 15%, transparent);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, var(--accent-soft), transparent 30%),
+        var(--bg);
+      color: var(--fg);
+      font: 15px/1.6 var(--font-body);
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    button {
+      font: inherit;
+      cursor: pointer;
+      color: inherit;
+      background: none;
+      border: 0;
+    }
+    .container {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+      background: color-mix(in oklch, var(--bg) 82%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+    .topbar-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .topbar-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+    }
+    main {
+      padding: 48px 0 80px;
+    }
+    .hero {
+      margin-bottom: 32px;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      font-family: var(--font-display);
+      letter-spacing: -0.02em;
+    }
+    h1 {
+      font-size: clamp(32px, 6vw, 56px);
+      line-height: 1.05;
+      margin-bottom: 12px;
+    }
+    .lead {
+      max-width: 60ch;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .meta-row {
+      margin-top: 16px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+    .panel h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .panel p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .panel p + p,
+    .panel ul,
+    .panel ol {
+      margin-top: 12px;
+    }
+    ul, ol {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    li + li {
+      margin-top: 8px;
+    }
+    .definition-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .definition {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      background: color-mix(in oklch, var(--surface) 76%, var(--bg));
+    }
+    .definition strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--fg);
+    }
+    .code-link {
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0 40px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body data-theme="light">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="chip">
+        <span data-zh="返回时间轴" data-en="Back to timeline">Back to timeline</span>
+      </a>
+      <div class="topbar-actions">
+        <button class="chip" id="langToggle">
+          <span id="langText">中文</span>
+        </button>
+        <button class="chip" id="themeToggle">
+          <span id="themeText" data-zh="深色模式" data-en="Dark Mode">Dark Mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 data-zh="方法与来源" data-en="Methodology & Sources">Methodology & Sources</h1>
+      <p class="lead" data-zh="EpochArc 将 AI 发展拆成事实、来源证据、影响评估和前瞻预测。这里说明本站如何收录内容、评估重要度、处理争议，并裁定预测是否达成。" data-en="EpochArc separates AI history into facts, sources, impact assessments, and forecasts. This page explains how entries are selected, scored, challenged, and resolved over time.">
+        EpochArc separates AI history into facts, sources, impact assessments, and forecasts. This page explains how entries are selected, scored, challenged, and resolved over time.
+      </p>
+      <div class="meta-row">
+        <span data-zh="更新日期 2026-06-24" data-en="Updated 2026-06-24">Updated 2026-06-24</span>
+        <a href="DATA-MODEL.md" class="code-link">DATA-MODEL.md</a>
+        <a href="data/events.json" class="code-link">data/events.json</a>
+        <a href="data/forecasts.json" class="code-link">data/forecasts.json</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2 data-zh="编辑原则" data-en="Editorial scope">Editorial scope</h2>
+        <p data-zh="本站不是论文数据库，也不是实时新闻流。每个正式节点都需要回答三件事：发生了什么、证据在哪里、为什么它改变了 AI 的长期脉络。" data-en="EpochArc is not a paper database or a real-time news feed. Each published milestone must answer three questions: what happened, where the evidence is, and why it changed the long arc of AI.">
+          EpochArc is not a paper database or a real-time news feed. Each published milestone must answer three questions: what happened, where the evidence is, and why it changed the long arc of AI.
+        </p>
+        <p data-zh="历史事件、影响评估和未来预测会被分开处理。事实可以被验证；影响评估是基于证据的判断；预测必须写明未来如何裁定。" data-en="Historical events, impact assessments, and forecasts are handled separately. Facts must be verifiable, assessments must be evidence-linked, and forecasts must define how they will be judged later.">
+          Historical events, impact assessments, and forecasts are handled separately. Facts must be verifiable, assessments must be evidence-linked, and forecasts must define how they will be judged later.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2 data-zh="分级与筛选" data-en="Significance levels">Significance levels</h2>
+        <div class="definition-list">
+          <div class="definition">
+            <strong>L1</strong>
+            <span data-zh="重要节点：对长期脉络有帮助，但不一定单独改变行业走向。" data-en="Important record: useful for long-term context, but not necessarily a turning point on its own.">Important record: useful for long-term context, but not necessarily a turning point on its own.</span>
+          </div>
+          <div class="definition">
+            <strong>L2</strong>
+            <span data-zh="关键节点：对研究范式、产品化或产业结构产生了明确推动。" data-en="Key event: clearly pushed research paradigms, product adoption, or industry structure.">Key event: clearly pushed research paradigms, product adoption, or industry structure.</span>
+          </div>
+          <div class="definition">
+            <strong>L3</strong>
+            <span data-zh="转折点：改变公众认知、资本配置或技术主路线的节点。" data-en="Turning point: changed public perception, capital allocation, or the mainstream technical trajectory.">Turning point: changed public perception, capital allocation, or the mainstream technical trajectory.</span>
+          </div>
+        </div>
+        <p data-zh="L3 会被严格控制数量。新事件如果只有热度，默认不会直接标为转折点，除非影响已经跨出研究圈并被独立来源确认。" data-en="L3 is intentionally rare. A new event is not treated as a turning point just because it is loud; it needs evidence of durable impact beyond a narrow technical audience.">
+          L3 is intentionally rare. A new event is not treated as a turning point just because it is loud; it needs evidence of durable impact beyond a narrow technical audience.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2 data-zh="来源标准" data-en="Source standards">Source standards</h2>
+        <div class="definition-list">
+          <div class="definition">
+            <strong data-zh="Tier 1 · 原始来源" data-en="Tier 1 · Primary sources">Tier 1 · Primary sources</strong>
+            <span data-zh="论文、官方公告、模型卡、代码仓库、法规原文、法院文件和技术报告。" data-en="Papers, official announcements, model cards, repositories, laws, court filings, and technical reports.">Papers, official announcements, model cards, repositories, laws, court filings, and technical reports.</span>
+          </div>
+          <div class="definition">
+            <strong data-zh="Tier 2 · 独立确认" data-en="Tier 2 · Independent confirmation">Tier 2 · Independent confirmation</strong>
+            <span data-zh="可靠媒体、机构报告、学术综述和监管解读，用于确认影响和外部采用。" data-en="Reliable reporting, institutional reports, academic reviews, and regulatory analysis used to confirm impact and adoption.">Reliable reporting, institutional reports, academic reviews, and regulatory analysis used to confirm impact and adoption.</span>
+          </div>
+          <div class="definition">
+            <strong data-zh="Tier 3-4 · 分析与发现信号" data-en="Tier 3-4 · Analysis and discovery signals">Tier 3-4 · Analysis and discovery signals</strong>
+            <span data-zh="专家博客、专业通讯、HN、Reddit 和社交讨论可以帮助发现候选，但不能单独支撑正式结论。" data-en="Expert blogs, newsletters, HN, Reddit, and social discussion can surface candidates, but they cannot independently support a published conclusion.">Expert blogs, newsletters, HN, Reddit, and social discussion can surface candidates, but they cannot independently support a published conclusion.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 data-zh="评分与共识" data-en="Scores and consensus">Scores and consensus</h2>
+        <p data-zh="Impact Score 是 0-10 的展示分，用来综合重要度、影响维度、证据等级和持续性。它不是数学真理，也不会替代来源证据。" data-en="Impact Score is a 0-10 display score combining significance, affected dimensions, evidence grade, and durability. It is not a claim of mathematical certainty and does not replace source evidence.">
+          Impact Score is a 0-10 display score combining significance, affected dimensions, evidence grade, and durability. It is not a claim of mathematical certainty and does not replace source evidence.
+        </p>
+        <p data-zh="共识分为 broad、debated 和 emerging。争议不是扣分项，而是提醒读者：事实、意义、归因或长期后果仍有不同解释。" data-en="Consensus is labeled as broad, debated, or emerging. Controversy is not hidden; it tells readers where the fact, meaning, attribution, or long-term consequences remain contested.">
+          Consensus is labeled as broad, debated, or emerging. Controversy is not hidden; it tells readers where the fact, meaning, attribution, or long-term consequences remain contested.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2 data-zh="预测裁定" data-en="Forecast resolution">Forecast resolution</h2>
+        <p data-zh="预测必须给出时间窗口、支持信号、反向信号、达成标准和未达成标准。只出现一次封闭演示、单一 benchmark 高分或不可复核传闻，不应算作达成。" data-en="Forecasts must include a time window, supporting signals, counter-signals, achieved criteria, and not-achieved criteria. A closed demo, a single benchmark result, or an unverifiable rumor should not count as resolution.">
+          Forecasts must include a time window, supporting signals, counter-signals, achieved criteria, and not-achieved criteria. A closed demo, a single benchmark result, or an unverifiable rumor should not count as resolution.
+        </p>
+        <p data-zh="读者投票只代表读者观点，不会改变历史事件评分，也不会作为事实证据。" data-en="Reader votes represent audience expectations only. They do not change historical scores and are not treated as evidence.">
+          Reader votes represent audience expectations only. They do not change historical scores and are not treated as evidence.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2 data-zh="开放数据与限制" data-en="Open data and limitations">Open data and limitations</h2>
+        <p data-zh="主时间轴和预测卡保留为公开 JSON，便于审阅、引用和迁移到未来的 CMS 或数据库。正式发布前，来源 URL、归档链接和预测裁定字段仍需要继续补齐。" data-en="The main timeline and forecast cards remain available as public JSON for review, citation, and future migration to a CMS or database. Before wider launch, source URLs, archive links, and forecast resolution fields should be completed.">
+          The main timeline, forecast cards, and source index remain available as public JSON for review, citation, and future migration to a CMS or database. Before wider launch, source URLs, archive links, and forecast resolution fields should be completed.
+        </p>
+        <p data-zh="本站是结构化策展项目，不是学术数据库、投资建议或监管结论。内容会随来源和证据变化继续修订。" data-en="EpochArc is a structured curation project, not an academic database, investment advice, or a regulatory conclusion. Entries may be revised as evidence improves.">
+          EpochArc is a structured curation project, not an academic database, investment advice, or a regulatory conclusion. Entries may be revised as evidence improves.
+        </p>
+        <ul>
+          <li><a href="DATA-MODEL.md">DATA-MODEL.md</a></li>
+          <li><a href="data/events.json">data/events.json</a></li>
+          <li><a href="data/forecasts.json">data/forecasts.json</a></li>
+          <li><a href="data/sources.json">data/sources.json</a></li>
+          <li><a href="LAUNCH-CHECKLIST.md">LAUNCH-CHECKLIST.md</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span data-zh="EpochArc · 方法页" data-en="EpochArc · Methodology page">EpochArc · Methodology page</span>
+    </div>
+  </footer>
+
+  <script>
+    const state = {
+      lang: localStorage.getItem('od-lang') || 'en',
+      theme: localStorage.getItem('od-theme') || 'light'
+    };
+
+    const langText = document.getElementById('langText');
+    const themeText = document.getElementById('themeText');
+
+    function updateLocale() {
+      document.documentElement.lang = state.lang === 'zh' ? 'zh-CN' : 'en';
+      langText.innerText = state.lang === 'zh' ? 'English' : '中文';
+      document.querySelectorAll('[data-zh]').forEach((el) => {
+        el.innerText = state.lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+      });
+      themeText.innerText = state.lang === 'zh'
+        ? (state.theme === 'light' ? '深色模式' : '浅色模式')
+        : (state.theme === 'light' ? 'Dark Mode' : 'Light Mode');
+    }
+
+    function updateTheme() {
+      document.body.setAttribute('data-theme', state.theme);
+      updateLocale();
+    }
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      state.lang = state.lang === 'zh' ? 'en' : 'zh';
+      localStorage.setItem('od-lang', state.lang);
+      updateLocale();
+    });
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      state.theme = state.theme === 'light' ? 'dark' : 'light';
+      localStorage.setItem('od-theme', state.theme);
+      updateTheme();
+    });
+
+    updateTheme();
+  </script>
+</body>
+</html>

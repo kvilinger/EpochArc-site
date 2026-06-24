@@ -1,0 +1,294 @@
+[
+  {
+    "id": "agi",
+    "slug": "agi",
+    "title": {
+      "en": "Artificial General Intelligence",
+      "zhHans": "通用人工智能 (AGI)"
+    },
+    "thesis": {
+      "en": "AI systems that surpass human intelligence in most economically valuable tasks, including reasoning and multi-step planning.",
+      "zhHans": "系统在绝大多数具备经济价值的任务中达到超越人类的智能水平，包含抽象推理与多步规划能力。"
+    },
+    "description": {
+      "en": "AI systems that surpass human intelligence in most economically valuable tasks, including reasoning and multi-step planning.",
+      "zhHans": "系统在绝大多数具备经济价值的任务中达到超越人类的智能水平，包含抽象推理与多步规划能力。"
+    },
+    "forecastType": "capability",
+    "status": "active",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "expectedWindow": {
+      "start": "2027",
+      "end": "2029",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "C"
+    },
+    "rationale": {
+      "signalsFor": [],
+      "signalsAgainst": [],
+      "assumptions": [
+        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      ]
+    },
+    "resolution": {
+      "achievedWhen": {
+        "en": "An AI system demonstrates broad autonomous capability across knowledge work, software, scientific reasoning, and multi-step planning under multiple independent evaluations and real workflows for at least 90 days.",
+        "zhHans": "在多个独立评测和真实工作流中，系统持续展现跨知识工作、软件、科学推理和多步规划的广泛自主能力，并可被第三方复核至少 90 天。"
+      },
+      "notAchievedWhen": {
+        "en": "A closed demo, a single benchmark result, hidden human handoff, or unverifiable claim does not count.",
+        "zhHans": "仅有封闭演示、单一 benchmark 高分、隐藏人工接管或不可复核声明时，不算达成。"
+      },
+      "measurementSources": [
+        "independent benchmarks",
+        "model cards",
+        "technical reports",
+        "auditor reports",
+        "regulatory documents"
+      ],
+      "minimumDuration": "90 days"
+    },
+    "sources": [],
+    "relatedEvents": [],
+    "tags": [
+      "agi"
+    ],
+    "votes": {
+      "totalVotes": 0,
+      "yes": 0,
+      "no": 0,
+      "unsure": 0,
+      "updatedAt": "2026-06-24"
+    },
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "robot",
+    "slug": "robot",
+    "title": {
+      "en": "General Embodied AI",
+      "zhHans": "通用具身智能机器人"
+    },
+    "thesis": {
+      "en": "Humanoid robots powered by general physical intelligence performing domestic chores and manufacturing labor at scale.",
+      "zhHans": "具备通用物理智能的人形机器人，可进入家庭执行家务，或在制造业和物流中进行规模化自主替代劳作。"
+    },
+    "description": {
+      "en": "Humanoid robots powered by general physical intelligence performing domestic chores and manufacturing labor at scale.",
+      "zhHans": "具备通用物理智能的人形机器人，可进入家庭执行家务，或在制造业和物流中进行规模化自主替代劳作。"
+    },
+    "forecastType": "product",
+    "status": "active",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "expectedWindow": {
+      "start": "2028",
+      "end": "2030",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "C"
+    },
+    "rationale": {
+      "signalsFor": [],
+      "signalsAgainst": [],
+      "assumptions": [
+        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      ]
+    },
+    "resolution": {
+      "achievedWhen": {
+        "en": "General embodied systems reliably complete multiple task classes in homes, manufacturing, or logistics, with sustained commercially deployable use cases.",
+        "zhHans": "通用具身系统在家庭、制造或物流等非结构化环境中稳定完成多类任务，并出现可商业部署的持续使用案例。"
+      },
+      "notAchievedWhen": {
+        "en": "A lab-only demo, teleoperated video, or success on a single task does not count.",
+        "zhHans": "只在实验室演示、遥操作视频或单一任务上成功，不算达成。"
+      },
+      "measurementSources": [
+        "independent benchmarks",
+        "model cards",
+        "technical reports",
+        "auditor reports",
+        "regulatory documents"
+      ],
+      "minimumDuration": "90 days"
+    },
+    "sources": [],
+    "relatedEvents": [],
+    "tags": [
+      "robot"
+    ],
+    "votes": {
+      "totalVotes": 0,
+      "yes": 0,
+      "no": 0,
+      "unsure": 0,
+      "updatedAt": "2026-06-24"
+    },
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "alignment",
+    "slug": "alignment",
+    "title": {
+      "en": "Superalignment & ASI Control",
+      "zhHans": "超级对齐与智能控制"
+    },
+    "thesis": {
+      "en": "Solving the control and alignment problem of artificial systems that are orders of magnitude smarter than humans.",
+      "zhHans": "彻底解决比人类更聪明数个数量级的超智能（ASI）控制和价值观绑定问题，消除潜在失控性生存危机。"
+    },
+    "description": {
+      "en": "Solving the control and alignment problem of artificial systems that are orders of magnitude smarter than humans.",
+      "zhHans": "彻底解决比人类更聪明数个数量级的超智能（ASI）控制和价值观绑定问题，消除潜在失控性生存危机。"
+    },
+    "forecastType": "safety",
+    "status": "active",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "expectedWindow": {
+      "start": "2029",
+      "end": "2032",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "C"
+    },
+    "rationale": {
+      "signalsFor": [],
+      "signalsAgainst": [],
+      "assumptions": [
+        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      ]
+    },
+    "resolution": {
+      "achievedWhen": {
+        "en": "Control, alignment, and failure-handling methods for systems materially stronger than humans are independently audited and remain effective in real deployment.",
+        "zhHans": "面向明显强于人类的系统，出现被独立审计认可的控制、对齐和失效处置框架，并在真实部署中持续有效。"
+      },
+      "notAchievedWhen": {
+        "en": "Principle statements, a single safety benchmark, or an undeployed research prototype do not count.",
+        "zhHans": "只有原则声明、单项安全评测或未经部署验证的研究原型，不算达成。"
+      },
+      "measurementSources": [
+        "independent benchmarks",
+        "model cards",
+        "technical reports",
+        "auditor reports",
+        "regulatory documents"
+      ],
+      "minimumDuration": "90 days"
+    },
+    "sources": [],
+    "relatedEvents": [],
+    "tags": [
+      "alignment"
+    ],
+    "votes": {
+      "totalVotes": 0,
+      "yes": 0,
+      "no": 0,
+      "unsure": 0,
+      "updatedAt": "2026-06-24"
+    },
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  },
+  {
+    "id": "science",
+    "slug": "science",
+    "title": {
+      "en": "AI Scientific Singularity",
+      "zhHans": "科学发现奇点"
+    },
+    "thesis": {
+      "en": "AI systems becoming autonomous scientific pioneers, generating novel theories and unlocking scalable fusion energy.",
+      "zhHans": "AI 系统成为科学研究的引领者，自主设计实验、推导物理学或生命科学定律，甚至完成可控核聚变规模商用。"
+    },
+    "description": {
+      "en": "AI systems becoming autonomous scientific pioneers, generating novel theories and unlocking scalable fusion energy.",
+      "zhHans": "AI 系统成为科学研究的引领者，自主设计实验、推导物理学或生命科学定律，甚至完成可控核聚变规模商用。"
+    },
+    "forecastType": "science",
+    "status": "active",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "expectedWindow": {
+      "start": "2030",
+      "end": "2035",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "C"
+    },
+    "rationale": {
+      "signalsFor": [],
+      "signalsAgainst": [],
+      "assumptions": [
+        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      ]
+    },
+    "resolution": {
+      "achievedWhen": {
+        "en": "AI systems autonomously propose verifiable hypotheses, design experiments, and drive at least one independently confirmed discovery in a major scientific field.",
+        "zhHans": "AI 系统自主提出可验证科学假设、设计实验并推动至少一个重要领域产生被独立确认的新发现。"
+      },
+      "notAchievedWhen": {
+        "en": "Drafting papers, assisting analysis, or proposing unverified hypotheses does not count.",
+        "zhHans": "仅生成论文草稿、辅助分析数据或提出未验证假设，不算达成。"
+      },
+      "measurementSources": [
+        "independent benchmarks",
+        "model cards",
+        "technical reports",
+        "auditor reports",
+        "regulatory documents"
+      ],
+      "minimumDuration": "90 days"
+    },
+    "sources": [],
+    "relatedEvents": [],
+    "tags": [
+      "science"
+    ],
+    "votes": {
+      "totalVotes": 0,
+      "yes": 0,
+      "no": 0,
+      "unsure": 0,
+      "updatedAt": "2026-06-24"
+    },
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "EpochArc editorial"
+    }
+  }
+]
