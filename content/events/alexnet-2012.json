@@ -1,0 +1,174 @@
+{
+  "id": "alexnet-2012",
+  "slug": "alexnet",
+  "title": {
+    "en": "AlexNet wins ImageNet, igniting the deep learning revolution",
+    "zhHans": "AlexNet 赢得 ImageNet 竞赛，引爆深度学习革命"
+  },
+  "summary": {
+    "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton's AlexNet crushed the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2012, achieving a top-5 error rate of 15.3%—over 10 percentage points better than the runner-up's 26.2%. The key innovation: training a deep convolutional neural network on two NVIDIA GTX 580 GPUs. This single result convinced the computer vision community that deep learning on GPUs was the future, ending decades of hand-engineered feature methods and launching the modern AI era.",
+    "zhHans": "Alex Krizhevsky、Ilya Sutskever 和 Geoffrey Hinton 的 AlexNet 在 2012 年 ImageNet 大规模视觉识别挑战赛（ILSVRC）中以 15.3% 的 top-5 错误率碾压对手——比亚军的 26.2% 低了超过 10 个百分点。关键创新：在两块 NVIDIA GTX 580 GPU 上训练深度卷积神经网络。这一单一结果让计算机视觉界确信 GPU 深度学习代表了未来，终结了数十年的手工设计特征方法，开启了现代 AI 时代。"
+  },
+  "narrative": {
+    "en": "For years, the ImageNet competition was dominated by teams using carefully hand-crafted features—SIFT, HOG, bag-of-visual-words. Each year brought incremental improvements of 1-2%. Then came a submission from the University of Toronto. Alex Krizhevsky, a Ph.D. student, trained a neural network with 60 million parameters on two consumer-grade NVIDIA GPUs in his bedroom at his parents' house. The network had 5 convolutional layers, 3 fully-connected layers, and introduced innovations now taken for granted: ReLU activations (which trained 6x faster than tanh), dropout regularization, and data augmentation. The result was absurdly decisive: 15.3% error vs. 26.2% for the second place. The computer vision community's reaction went from skepticism to wholesale conversion within a year. By ILSVRC 2013, nearly all top entries used deep convolutional networks. This single result triggered a chain reaction: it proved that the 'ImageNet moment' could be replicated in other domains—speech (deep speech recognition), NLP (word embeddings → LSTMs → Transformers), reinforcement learning (DQN playing Atari), and eventually, generative models. The GPU became the standard compute substrate for AI. NVIDIA transformed from a gaming company to a trillion-dollar AI infrastructure provider. The three authors' trajectories illustrate the stakes: Alex Krizhevsky left academia for Google then founded a startup; Ilya Sutskever co-founded OpenAI and served as its Chief Scientist through ChatGPT and GPT-4; Geoffrey Hinton went on to win the 2018 Turing Award (with Yann LeCun and Yoshua Bengio) and later left Google to speak freely about AI safety risks. The AlexNet paper, 'ImageNet Classification with Deep Convolutional Neural Networks,' has been cited over 150,000 times—making it one of the most influential papers in computer science history.",
+    "zhHans": "多年来，ImageNet 竞赛一直由使用精心手工设计特征（SIFT、HOG、视觉词袋）的团队主导。每年仅有 1-2% 的增量改进。然后来自多伦多大学的一份提交改变了这一切。博士生 Alex Krizhevsky 在他父母家的卧室里，用两块消费级 NVIDIA GPU 训练了一个 6000 万参数的神经网络。这个网络有 5 个卷积层、3 个全连接层，并引入了如今被视为理所当然的创新：ReLU 激活（比 tanh 训练快 6 倍）、dropout 正则化和数据增强。结果是碾压性的：15.3% 错误率对第二名的 26.2%。计算机视觉界的反应在一年之内从怀疑变成了全面转向。到 ILSVRC 2013 年，几乎所有顶级参赛作品都使用了深度卷积网络。这一结果触发了连锁反应：它证明了\"ImageNet 时刻\"可以在其他领域复制——语音（深度语音识别）、NLP（词嵌入 → LSTM → Transformer）、强化学习（DQN 玩 Atari 游戏），以及最终，生成模型。GPU 成为 AI 的标准计算基板。NVIDIA 从一家游戏公司转型为万亿美元市值的 AI 基础设施提供商。三位作者的轨迹说明了这场赌注的高度：Alex Krizhevsky 离开学术界加入 Google 然后创办了初创公司；Ilya Sutskever 共同创立了 OpenAI 并担任其首席科学家直至 ChatGPT 和 GPT-4；Geoffrey Hinton 于 2018 年获得图灵奖（与 Yann LeCun 和 Yoshua Bengio 共同获奖），后来离开 Google 以便自由地谈论 AI 安全风险。AlexNet 论文《使用深度卷积神经网络进行 ImageNet 分类》已被引用超过 150,000 次——成为计算机科学史上最有影响力的论文之一。"
+  },
+  "date": "2012-09-30",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 30, 2012",
+    "zhHans": "2012年9月30日"
+  },
+  "status": "published",
+  "significance": 3,
+  "impactIndex": 10,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Halved the error rate of the previous state of the art on ImageNet. Proved that deep neural networks trained on GPUs could dramatically outperform decades of hand-engineered computer vision techniques. The architectural innovations (ReLU, dropout, GPU training) became standard in virtually all subsequent deep learning systems.",
+        "zhHans": "将 ImageNet 上的错误率砍半。证明了在 GPU 上训练的深度神经网络可以大幅超越数十年的手工设计计算机视觉技术。其架构创新（ReLU、dropout、GPU 训练）几乎成为所有后续深度学习系统的标准。"
+      },
+      "affectedGroups": [
+        "computer vision researchers",
+        "AI researchers",
+        "GPU computing engineers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "krizhevsky-alexnet-2012"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Validated GPU computing for AI, directly catalyzing NVIDIA's transformation from a gaming hardware company to a trillion-dollar AI infrastructure platform. Triggered massive investment in deep learning startups and research labs across the entire tech industry.",
+        "zhHans": "验证了 GPU 计算在 AI 领域的可行性，直接催化了 NVIDIA 从游戏硬件公司到万亿美元 AI 基础设施平台的转型。在整个科技行业触发了对深度学习初创公司和研究实验室的大规模投资。"
+      },
+      "affectedGroups": [
+        "semiconductor industry",
+        "investors",
+        "tech companies",
+        "NVIDIA"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "krizhevsky-alexnet-2012"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Ended the era of hand-engineered features and inaugurated the era of learned representations. The 'end-to-end deep learning' paradigm AlexNet demonstrated—raw pixels in, classification out—spread from vision to NLP to speech to robotics, becoming the dominant approach across all of AI.",
+        "zhHans": "终结了手工设计特征的时代，开启了学习表示的时代。AlexNet 展示的\"端到端深度学习\"范式——原始像素输入、分类结果输出——从视觉扩展到 NLP、语音、机器人，成为整个 AI 的主导方法。"
+      },
+      "affectedGroups": [
+        "all AI subfields",
+        "researchers",
+        "engineers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "krizhevsky-alexnet-2012"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Demonstrated that world-class AI could be built on consumer GPUs (GTX 580, ~$500 each) rather than requiring supercomputers. A Ph.D. student in his bedroom could now produce research that surpassed well-funded corporate labs. This democratization of compute—combined with open-source frameworks like Caffe and TensorFlow—enabled the explosion of deep learning research globally.",
+        "zhHans": "证明了世界级 AI 可以在消费级 GPU（GTX 580，每块约 $500）上构建，而不需要超级计算机。一个卧室里的博士生现在可以产出超越资金充足的企业实验室的研究成果。这种计算能力的普及化——结合 Caffe 和 TensorFlow 等开源框架——使全球深度学习研究的爆发成为可能。"
+      },
+      "affectedGroups": [
+        "researchers",
+        "students",
+        "independent developers",
+        "startups"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "krizhevsky-alexnet-2012"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "alexnet-imagenet-2012",
+      "text": {
+        "en": "AlexNet won ILSVRC 2012 with 15.3% top-5 error rate, outperforming the runner-up (26.2%) by 10.9 percentage points.",
+        "zhHans": "AlexNet 以 15.3% 的 top-5 错误率赢得 ILSVRC 2012，比亚军（26.2%）低 10.9 个百分点。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "krizhevsky-alexnet-2012"
+      ]
+    },
+    {
+      "id": "alexnet-gpu-deep-learning-revolution",
+      "text": {
+        "en": "AlexNet's success proved that GPUs were practical for training deep neural networks at scale, directly triggering the deep learning revolution across all AI subfields and establishing GPU computing as the standard AI infrastructure.",
+        "zhHans": "AlexNet 的成功证明了 GPU 在大规模训练深度神经网络方面的实用性，直接触发了所有 AI 子领域的深度学习革命，将 GPU 计算确立为标准的 AI 基础设施。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "krizhevsky-alexnet-2012",
+        "nvidia-gpu-ai-transformation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "krizhevsky-alexnet-2012",
+      "supports": [
+        "alexnet-imagenet-2012",
+        "alexnet-gpu-deep-learning-revolution"
+      ],
+      "quote": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes."
+    },
+    {
+      "sourceId": "nvidia-gpu-ai-transformation",
+      "supports": [
+        "alexnet-gpu-deep-learning-revolution"
+      ],
+      "quote": "AlexNet was trained on 2 Nvidia GTX 580 GPUs in Krizhevsky's bedroom at his parents' house."
+    }
+  ],
+  "relatedEvents": [
+    "perceptron-1958",
+    "transformer-2017",
+    "gpt3-2020"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for AlexNet / ImageNet 2012."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

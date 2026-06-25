@@ -1,0 +1,160 @@
+{
+  "id": "stable-diffusion-2022",
+  "slug": "stable-diffusion",
+  "title": {
+    "en": "Stable Diffusion open-sources text-to-image generation to the public",
+    "zhHans": "Stable Diffusion 将文本到图像生成开源给公众"
+  },
+  "summary": {
+    "en": "Stability AI released Stable Diffusion in August 2022, an open-weight text-to-image model that could generate high-quality images from natural language descriptions on consumer-grade GPUs. Unlike DALL-E 2 (closed API) and Midjourney (proprietary), Stable Diffusion's weights were released publicly, sparking an explosion of community tools, fine-tunes, and creative applications. It transformed AI art from a curiosity into a mass phenomenon practically overnight.",
+    "zhHans": "Stability AI 于 2022 年 8 月发布了 Stable Diffusion，一个开源的文本到图像模型，可以在消费级 GPU 上从自然语言描述生成高质量图像。与 DALL-E 2（封闭 API）和 Midjourney（专有）不同，Stable Diffusion 的权重公开发布，引发了一波社区工具、微调和创意应用的爆发。它几乎在一夜之间将 AI 艺术从一种新奇事物转变为大众现象。"
+  },
+  "narrative": {
+    "en": "Stable Diffusion was built on the latent diffusion architecture (Rombach et al., 2022, 'High-Resolution Image Synthesis with Latent Diffusion Models'), a University of Heidelberg / Runway ML collaboration. Stability AI funded the compute resources for training on 256 NVIDIA A100 GPUs. The model was trained on LAION-5B, a massive dataset of 5 billion image-text pairs scraped from the internet. The key innovation was performing the diffusion process in a compressed latent space rather than pixel space, drastically reducing computation. The release of the weights led to an immediate explosion: within weeks, tools like AUTOMATIC1111's web UI, Dreambooth fine-tuning, ControlNet, and LoRAs emerged from the community. The open ecosystem surpassed the quality of closed alternatives within months. The legal and ethical challenges were equally dramatic. Artists filed lawsuits alleging copyright infringement. The European Union, US Copyright Office, and national governments began formulating AI art regulation. The LAION dataset was shown to contain exploitative content, leading to the release of a cleaned version. The cat-and-mouse game between AI-generated content detection and generation began. Stable Diffusion's open-weight release established a new paradigm for AI model distribution: the 'open-weight' model, which became the standard for subsequent releases like Llama (text), Whisper (speech), and YOLO (vision). Its existence made proprietary models negotiable—anyone could run their own inference, diminishing the moat of closed APIs.",
+    "zhHans": "Stable Diffusion 基于潜在扩散架构（Rombach 等人，2022 年《High-Resolution Image Synthesis with Latent Diffusion Models》），由海德堡大学和 Runway ML 合作开发。Stability AI 资助了在 256 块 NVIDIA A100 GPU 上训练的计算资源。模型在 LAION-5B 上训练，这是一个包含 50 亿个从互联网抓取的图像-文本对的庞大数据集。关键创新是在压缩的潜在空间而不是像素空间中进行扩散过程，从而大幅降低了计算量。权重的发布立即引发了一场爆发：数周之内，AUTOMATIC1111 的 Web UI、Dreambooth 微调、ControlNet 和 LoRA 等工具从社区中涌现。开放生态系统在数月内超越了封闭替代方案的质量。法律和伦理挑战同样剧烈。艺术家提起诉讼，指控版权侵权。欧盟、美国版权局和各国政府开始制定 AI 艺术法规。LAION 数据集被发现有易受攻击的内容，导致清理后的版本发布。AI 生成内容的检测与生成之间的猫鼠游戏开始了。Stable Diffusion 的开源权重发布建立了一种新的 AI 模型分发范式：\"开源权重\"模型，这成为后续发布的标准，如 Llama（文本）、Whisper（语音）和 YOLO（视觉）。它的存在使专有模型变得可协商——任何人都可以运行自己的推理，削弱了封闭 API 的护城河。"
+  },
+  "date": "2022-08-22",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "August 22, 2022",
+    "zhHans": "2022年8月22日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Open-weight release enabled anyone with a consumer GPU to generate high-quality images from text. Created a rich ecosystem of community tools (AUTOMATIC1111, ComfyUI), fine-tuning techniques (Dreambooth, LoRA), and control methods (ControlNet). Set the 'open-weight' distribution model that became the standard for subsequent foundational models.",
+        "zhHans": "开源权重发布使任何拥有消费级 GPU 的人都能从文本生成高质量图像。创建了丰富的社区工具生态（AUTOMATIC1111、ComfyUI）、微调技术（Dreambooth、LoRA）和控制方法（ControlNet）。确立了\"开源权重\"分发模型，成为后续基础模型的标配。"
+      },
+      "affectedGroups": [
+        "artists",
+        "designers",
+        "hobbyists",
+        "students",
+        "startups"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "stability-stable-diffusion-2022",
+        "wikipedia-stable-diffusion"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Disrupted the economics of commercial illustration, stock photography, and graphic design. Artists protested on social media platforms. Services like Shutterstock introduced AI-generated content policies while facing existential threat. The model's training on copyrighted images without consent led to multiple class-action lawsuits.",
+        "zhHans": "打乱了商业插画、图库摄影和平面设计的经济模式。艺术家在社交媒体平台上抗议。Shutterstock 等服务商被迫引入 AI 生成内容政策，同时面临生存威胁。模型在未经许可的版权图像上训练导致了多起集体诉讼。"
+      },
+      "affectedGroups": [
+        "illustrators",
+        "photographers",
+        "graphic designers",
+        "stock image industry"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "wikipedia-stable-diffusion"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Raised fundamental questions about copyright in AI training data, the right of artists to opt out, and the potential for generating non-consensual imagery. Sparked regulatory discussions worldwide about AI-generated content labeling and accountability.",
+        "zhHans": "引发了关于 AI 训练数据中版权、艺术家退出权以及生成未经同意图像的可能性的根本问题。引发了全球范围内关于 AI 生成内容标签和责任的监管讨论。"
+      },
+      "affectedGroups": [
+        "artists",
+        "policymakers",
+        "legal professionals",
+        "general public"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "wikipedia-stable-diffusion"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "stable-diffusion-release-2022",
+      "text": {
+        "en": "Stability AI released Stable Diffusion on August 22, 2022, an open-weight text-to-image model based on latent diffusion, trained on 256 A100 GPUs on the LAION-5B dataset.",
+        "zhHans": "Stability AI 于 2022 年 8 月 22 日发布了 Stable Diffusion，一个基于潜在扩散的开源权重文本到图像模型，在 LAION-5B 数据集上用 256 块 A100 GPU 训练。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "stability-stable-diffusion-2022"
+      ]
+    },
+    {
+      "id": "stable-diffusion-open-weight-paradigm",
+      "text": {
+        "en": "Stable Diffusion's open-weight release established a new distribution model for AI foundational models, enabling community-driven innovation and diminishing the moat of closed API-based AI services.",
+        "zhHans": "Stable Diffusion 的开源权重发布为 AI 基础模型建立了新的分发模式，推动了社区驱动的创新，削弱了封闭 API AI 服务的护城河。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "stability-stable-diffusion-2022",
+        "wikipedia-stable-diffusion"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "stability-stable-diffusion-2022",
+      "supports": [
+        "stable-diffusion-release-2022",
+        "stable-diffusion-open-weight-paradigm"
+      ],
+      "quote": "Stable Diffusion is a text-to-image model that enables you to create realistic images from text descriptions. The model was trained on 256 Nvidia A100 GPUs."
+    },
+    {
+      "sourceId": "wikipedia-stable-diffusion",
+      "supports": [
+        "stable-diffusion-release-2022",
+        "stable-diffusion-open-weight-paradigm"
+      ],
+      "quote": "Stable Diffusion is a deep learning, text-to-image model released in 2022 based on diffusion techniques."
+    }
+  ],
+  "relatedEvents": [
+    "sora-2024",
+    "chatgpt-2022",
+    "gan-2014"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Stable Diffusion open-weight release."
+      }
+    ]
+  },
+  "categories": [
+    "capability",
+    "product"
+  ]
+}

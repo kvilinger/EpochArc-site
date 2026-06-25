@@ -1,0 +1,119 @@
+{
+  "id": "dall-e-2021",
+  "slug": "dall-e",
+  "title": {
+    "en": "OpenAI unveils DALL-E, showing AI can generate images from text descriptions",
+    "zhHans": "OpenAI 公布 DALL-E，展示 AI 可以从文本描述生成图像"
+  },
+  "summary": {
+    "en": "On January 5, 2021, OpenAI announced DALL-E, a 12-billion-parameter version of GPT-3 trained to generate images from text captions. It could produce novel compositions — 'a daikon radish in a tutu walking a dog' — that demonstrated combinatorial creativity. While the outputs were low-resolution, DALL-E proved that generative text-to-image was feasible, laying the groundwork for DALL-E 2, Stable Diffusion, and the entire AI image generation revolution that followed.",
+    "zhHans": "2021 年 1 月 5 日，OpenAI 宣布了 DALL-E，一个 120 亿参数的 GPT-3 变体，经过训练可以从文本描述生成图像。它能够生成新颖的组合——\"穿着芭蕾舞裙遛狗的大根萝卜\"——展示了组合创造力。虽然输出分辨率较低，DALL-E 证明了生成式文本到图像是可行的，为 DALL-E 2、Stable Diffusion 以及随后的整个 AI 图像生成革命奠定了基础。"
+  },
+  "narrative": {
+    "en": "DALL-E (a portmanteau of Dali and WALL-E) was a GPT-3 model trained on image-text pairs rather than just text. It used autoregressive generation over discrete image tokens (dVAE encoding), treating image generation as a language modeling problem scaled up. The results were rough — 256×256 pixel outputs with noticeable artifacts — but the conceptual leap was enormous. DALL-E could follow instructions like 'a cube made of water' or 'a snail made of harp strings' and produce something recognizable. The model had 12 billion parameters and was trained on a dataset of 250 million text-image pairs. OpenAI accompanied the announcement with a carefully curated set of examples but did not release the model publicly due to safety concerns (potential for generating misleading or harmful images). The safety justification was controversial within the AI community. DALL-E took its name loosely from the surrealist painter Salvador Dalí, hinting at its ability to generate surreal combinations of concepts. DALL-E's demonstration — though rough — proved the core concept and directly inspired what followed: DALL-E 2 (April 2022), Imagen (Google, May 2022), Parti (Google, June 2022), and the open-source revolution of Stable Diffusion (August 2022). DALL-E itself was never released as a product; instead, it was a research demonstration that shaped the trajectory of generative AI.",
+    "zhHans": "DALL-E（达利和 WALL-E 的合成词）是一个在图像-文本对而非纯文本上训练的 GPT-3 模型。它使用离散图像标记上的自回归生成（dVAE 编码），将图像生成视为一个扩展了的语言建模问题。结果虽然粗糙——256×256 像素输出，带有明显的伪影——但概念飞跃是巨大的。DALL-E 可以遵循\"由水构成的立方体\"或\"由竖琴弦构成的蜗牛\"等指令，并生成可识别的图像。模型有 120 亿参数，在 2.5 亿文本-图像对的数据集上训练。OpenAI 在宣布时配上精心策划的示例集，但由于安全担忧（可能生成误导性或有害图像），并未公开发布模型。这一安全理由在 AI 社区内部存在争议。DALL-E 的名字大致来源于超现实主义画家萨尔瓦多·达利，暗示其生成概念的超现实组合的能力。DALL-E 的演示——虽然粗糙——证明了核心概念，并直接启发了后续的 DALL-E 2（2022 年 4 月）、Imagen（Google，2022 年 5 月）、Parti（Google，2022 年 6 月）以及 Stable Diffusion（2022 年 8 月）的开源革命。DALL-E 本身从未作为产品发布；相反，它是一个塑造了生成式 AI 发展方向的研究演示。"
+  },
+  "date": "2021-01-05",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "January 5, 2021",
+    "zhHans": "2021年1月5日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 4,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "First successful demonstration that a generative language model could produce coherent novel images from text descriptions, proving text-to-image generation was feasible and sparking the generative AI race.",
+        "zhHans": "首次成功证明生成式语言模型可以从文本描述生成连贯的新颖图像，证明了文本到图像生成是可行的，并触发了生成式 AI 竞赛。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "computer vision researchers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-dalle-2021",
+        "wikipedia-dalle"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Introduced the public to the concept of AI-generated images from text, preparing the cultural ground for the explosion of generative AI tools that followed in 2022.",
+        "zhHans": "向公众引入了从文本生成 AI 图像的概念，为 2022 年生成式 AI 工具的爆发做了文化预热。"
+      },
+      "affectedGroups": [
+        "general public",
+        "artists",
+        "creative professionals"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-dalle-2021"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "dalle-announced-2021",
+      "text": {
+        "en": "OpenAI announced DALL-E on January 5, 2021, a 12-billion parameter GPT-3 variant trained to generate images from text captions.",
+        "zhHans": "OpenAI 于 2021 年 1 月 5 日宣布了 DALL-E，一个 120 亿参数的 GPT-3 变体，经过训练可以从文本说明生成图像。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-dalle-2021"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "openai-dalle-2021",
+      "supports": [
+        "dalle-announced-2021"
+      ],
+      "quote": "We've trained a neural network called DALL-E that creates images from text captions for a wide range of concepts expressible in natural language."
+    },
+    {
+      "sourceId": "wikipedia-dalle",
+      "supports": [
+        "dalle-announced-2021"
+      ],
+      "quote": "DALL-E is a text-to-image generation model developed by OpenAI using a 12-billion parameter version of GPT-3."
+    }
+  ],
+  "relatedEvents": [
+    "stable-diffusion-2022",
+    "gpt3-2020"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for DALL-E text-to-image model."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

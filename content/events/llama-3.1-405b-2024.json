@@ -1,0 +1,124 @@
+{
+  "id": "llama-3.1-405b-2024",
+  "slug": "llama-3.1-405b",
+  "title": {
+    "en": "Meta releases Llama 3.1 405B, the first frontier-level open-source AI model",
+    "zhHans": "Meta 发布 Llama 3.1 405B，第一个达到前沿水平的开源 AI 模型"
+  },
+  "summary": {
+    "en": "On July 23, 2024, Meta released Llama 3.1 405B — the first open-weight model to match closed-source frontier models like GPT-4 and Claude 3.5 Sonnet on key benchmarks. With 405 billion dense parameters and a 128K token context window, it proved that open-source AI could compete at the highest level. The release reshaped the AI industry by demonstrating that open models could match proprietary ones, accelerating the open-weight ecosystem that would define 2025.",
+    "zhHans": "2024 年 7 月 23 日，Meta 发布了 Llama 3.1 405B——第一个在关键基准上匹配 GPT-4 和 Claude 3.5 Sonnet 等闭源前沿模型的开源权重模型。拥有 4050 亿稠密参数和 128K token 上下文窗口，它证明了开源 AI 可以在最高水平上竞争。这次发布重塑了 AI 行业，证明了开放模型可以匹敌专有模型，加速了将定义 2025 年的开源权重生态系统。"
+  },
+  "narrative": {
+    "en": "Meta had released Llama 2 in July 2023 as a capable open model, but it clearly trailed GPT-4 by a significant margin. Throughout early 2024, the narrative was that open-source models were catching up but hadn't reached frontier performance. Llama 3.1 405B shattered that narrative. At 405 billion parameters, it was the largest openly available dense transformer model ever released. Its benchmarks were genuinely competitive: MMLU 88.6%, HumanEval 89.0%, MATH 73.8% — matching or approaching GPT-4 and Claude 3.5 Sonnet. The 128K context window was competitive with proprietary models. Meta also released 8B and 70B variants, making frontier-level performance accessible at various compute levels. The release had profound strategic implications. Mark Zuckerberg argued publicly that open-source AI was necessary to prevent any single company from controlling AI development. This positioned Meta as the champion of open AI against OpenAI and Google's closed models. The Llama 3.1 release triggered a wave of fine-tuned models, derivative works, and deployments in the open ecosystem. It also pressured other labs: Mistral, Qwen, and DeepSeek all accelerated their open-weight releases. By 2025, the open-weight ecosystem built on Llama's foundation would prove to be a decisive force in the AI landscape.",
+    "zhHans": "Meta 在 2023 年 7 月发布了 Llama 2，作为一个有能力的开源模型，但它明显落后于 GPT-4。整个 2024 年初，叙事是开源模型在追赶但尚未达到前沿性能。Llama 3.1 405B 打破了这一叙事。拥有 4050 亿参数，它是有史以来发布的最大的公开可用稠密 Transformer 模型。其基准测试成绩具有真正的竞争力：MMLU 88.6%，HumanEval 89.0%，MATH 73.8%——匹配或接近 GPT-4 和 Claude 3.5 Sonnet。128K 上下文窗口与专有模型具有竞争力。Meta 还发布了 8B 和 70B 变体，使前沿水平的性能在各种算力水平上都可访问。这次发布具有深远的战略意义。Mark Zuckerberg 公开主张开源 AI 对于防止任何单一公司控制 AI 发展是必要的。这使 Meta 定位为对抗 OpenAI 和 Google 闭源模型的开源 AI 捍卫者。Llama 3.1 的发布在开源生态系统中引发了一波微调模型、衍生作品和部署。它还向其他实验室施加了压力：Mistral、Qwen 和 DeepSeek 都加速了他们的开源权重发布。到 2025 年，建立在 Llama 基础上的开源权重生态系统将被证明是 AI 格局中的决定性力量。"
+  },
+  "date": "2024-07-23",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "July 23, 2024",
+    "zhHans": "2024年7月23日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 7,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "First open-weight model to match closed-source frontier performance. Proved that open-source AI could compete at the highest level. Reset industry debate from 'if' open models could match proprietary to 'when and how.' Accelerated the open-weight ecosystem that defined the 2025 AI landscape.",
+        "zhHans": "第一个匹配闭源前沿性能的开源权重模型。证明了开源 AI 可以在最高水平上竞争。将行业辩论从\"开放模型能否匹敌专有模型\"重置为\"何时以及如何\"。加速了定义 2025 年 AI 格局的开源权重生态系统。"
+      },
+      "affectedGroups": [
+        "AI developers",
+        "open-source community",
+        "startups",
+        "AI labs"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "meta-llama-3.1",
+        "meta-llama-3.1-405b-review"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Made frontier-level AI performance available to anyone who could run or host the model. Enabled fine-tuning, customization, and local deployment that proprietary models did not allow. Available in 8B, 70B, and 405B sizes for different compute tiers.",
+        "zhHans": "使任何人只要能运行或托管模型就可以获得前沿水平的 AI 性能。支持专有模型不允许的微调、定制化和本地部署。提供 8B、70B 和 405B 三种规模以适应不同算力层次。"
+      },
+      "affectedGroups": [
+        "developers",
+        "researchers",
+        "startups",
+        "enterprises",
+        "global south"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "meta-llama-3.1"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "llama-3.1-405b-release-2024",
+      "text": {
+        "en": "Meta released Llama 3.1 405B on July 23, 2024 — the first open-weight model to match GPT-4 and Claude 3.5 Sonnet on key benchmarks.",
+        "zhHans": "Meta 于 2024 年 7 月 23 日发布 Llama 3.1 405B——第一个在关键基准上匹配 GPT-4 和 Claude 3.5 Sonnet 的开源权重模型。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "meta-llama-3.1"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "meta-llama-3.1",
+      "supports": [
+        "llama-3.1-405b-release-2024"
+      ],
+      "quote": "We're publicly releasing Meta Llama 3.1 405B, which we believe is the world's largest and most capable openly available foundation model."
+    },
+    {
+      "sourceId": "meta-llama-3.1-405b-review",
+      "supports": [
+        "llama-3.1-405b-release-2024"
+      ],
+      "quote": "Meta Llama 3.1 405B launched July 23, 2024 as the first open-weight model to benchmark competitively against GPT-4o and Claude 3.5 Sonnet."
+    }
+  ],
+  "relatedEvents": [
+    "llama-2023",
+    "gpt4-2023",
+    "deepseek-r1-2025"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Llama 3.1 405B."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

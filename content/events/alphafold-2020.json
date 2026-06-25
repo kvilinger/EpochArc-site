@@ -1,0 +1,159 @@
+{
+  "id": "alphafold-2020",
+  "slug": "alphafold",
+  "title": {
+    "en": "DeepMind's AlphaFold solves protein folding — a 50-year grand challenge in biology",
+    "zhHans": "DeepMind 的 AlphaFold 破解蛋白质折叠——50 年的生物学重大挑战"
+  },
+  "summary": {
+    "en": "At CASP14 (November 2020), DeepMind's AlphaFold achieved atomic-level accuracy in predicting protein structures from amino acid sequences — solving a problem that had eluded biologists for 50 years. The system's median prediction error was 1.2 angstroms (the width of an atom), effectively matching experimental methods. The breakthrough was described by Nature as 'a game-changer' and by biologists as transformative as the discovery of the structure of DNA.",
+    "zhHans": "在 CASP14（2020 年 11 月）上，DeepMind 的 AlphaFold 在从氨基酸序列预测蛋白质结构方面实现了原子级精度——解决了一个困扰生物学家 50 年的问题。系统的中位预测误差为 1.2 埃（原子的宽度），基本与实验方法相当。这一突破被《自然》称为\"游戏规则改变者\"，被生物学家认为与 DNA 结构的发现具有同等变革意义。"
+  },
+  "narrative": {
+    "en": "Protein folding — determining a protein's three-dimensional structure from its linear sequence of amino acids — had been one of biology's grandest challenges since the 1972 Nobel Prize winner Christian Anfinsen theorized that sequence determined structure. Experimental methods (X-ray crystallography, cryo-EM, NMR) remained expensive, slow, and often failed for challenging proteins. DeepMind entered CASP (Critical Assessment of Structure Prediction) in 2018 with AlphaFold1, winning but with limited accuracy. Two years later, AlphaFold2 used a novel architecture combining transformers (Evoformer) with geometric attention, trained end-to-end on protein structures from the Protein Data Bank. The results were stunning: across CASP14's targets, AlphaFold2 achieved a median Global Distance Test (GDT) score of 92.4 out of 100 — essentially experimental-grade accuracy. The reaction from structural biologists was disbelief, then euphoria. John Moult, CASP co-founder, called it 'a turning point.' DeepMind open-sourced the model and created the AlphaFold Protein Structure Database in partnership with the European Bioinformatics Institute, which now contains over 200 million predicted protein structures freely accessible to researchers worldwide. The impact on drug discovery, understanding disease mechanisms, and synthetic biology has been profound. By 2024, AlphaFold had been cited over 50,000 times and used in research across malaria vaccines, antibiotic resistance, plastic-degrading enzymes, and cancer biology.",
+    "zhHans": "蛋白质折叠——从氨基酸的线性序列确定蛋白质的三维结构——自 1972 年诺贝尔奖得主 Christian Anfinsen 提出序列决定结构的理论以来，一直是生物学最重大的挑战之一。实验方法（X射线晶体学、冷冻电镜、核磁共振）仍然昂贵、缓慢，且对困难的蛋白质常常失败。DeepMind 于 2018 年首次参加 CASP，使用 AlphaFold1 获胜但精度有限。两年后，AlphaFold2 使用了结合 Transformer（Evoformer）与几何注意力的新颖架构，在蛋白质数据银行的结构上进行了端到端训练。结果令人震惊：在 CASP14 的所有目标上，AlphaFold2 实现了 92.4 分（满分 100）的中位全局距离测试得分——基本达到了实验级精度。结构生物学家的反应从难以置信到狂喜。CASP 联合创始人 John Moult 称其为\"一个转折点\"。DeepMind 开源了模型，并与欧洲生物信息学研究所合作创建了 AlphaFold 蛋白质结构数据库，该数据库现在包含超过 2 亿个预测的蛋白质结构，全球研究人员可以免费访问。对药物发现、理解疾病机制和合成生物学的影响是深远的。到 2024 年，AlphaFold 已被引用超过 50,000 次，并用于疟疾疫苗、抗生素耐药性、塑料降解酶和癌症生物学等广泛领域的研究。"
+  },
+  "date": "2020-11-30",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "November 30, 2020",
+    "zhHans": "2020年11月30日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 8,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "AI achieved atomic-level accuracy on the protein folding problem — a 50-year grand challenge in biology. The end-to-end approach (predicting structure directly from sequence) proved more powerful than decades of physics-based simulation methods.",
+        "zhHans": "AI 在蛋白质折叠问题上实现了原子级精度——一个 50 年的生物学重大挑战。端到端方法（直接从序列预测结构）被证明比数十年的基于物理的模拟方法更强大。"
+      },
+      "affectedGroups": [
+        "biologists",
+        "drug discovery researchers",
+        "computational chemists"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "jumper-alphafold-2021",
+        "deepmind-alphafold-casp14"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Demonstrated that AI could solve fundamental scientific problems beyond games and language. Changed the perception of AI from a 'interesting tool for tech' to a 'core scientific instrument.' Catalyzed the field of AI for science, inspiring applications in materials science, drug discovery, and climate research.",
+        "zhHans": "证明了 AI 可以解决游戏和语言之外的基础科学问题。将 AI 的认知从\"科技的有趣工具\"转变为\"核心科学仪器\"。催化了 AI for Science 领域，启发了在材料科学、药物发现和气候研究中的应用。"
+      },
+      "affectedGroups": [
+        "scientists",
+        "researchers",
+        "pharmaceutical industry",
+        "general public"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "jumper-alphafold-2021",
+        "deepmind-alphafold-casp14"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "The AlphaFold Protein Structure Database (200M+ structures) made structural biology data freely available to any researcher worldwide, eliminating the need for expensive experimental equipment for routine structure prediction. Particularly transformative for underfunded labs and developing-country researchers.",
+        "zhHans": "AlphaFold 蛋白质结构数据库（2 亿+结构）使结构生物学数据对全球任何研究人员免费开放，消除了日常结构预测中对昂贵实验设备的需求。对资金不足的实验室和发展中国家研究人员尤其具有变革意义。"
+      },
+      "affectedGroups": [
+        "researchers worldwide",
+        "pharmaceutical industry",
+        "students",
+        "developing-country scientists"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "jumper-alphafold-2021",
+        "deepmind-alphafold-casp14"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "alphafold-casp14-2020",
+      "text": {
+        "en": "DeepMind's AlphaFold achieved a median GDT score of 92.4/100 at CASP14 in November 2020, representing atomic-level accuracy in protein structure prediction — solving a 50-year grand challenge in biology.",
+        "zhHans": "DeepMind 的 AlphaFold 在 2020 年 11 月的 CASP14 上实现了 92.4/100 的中位 GDT 得分，在蛋白质结构预测上达到原子级精度——解决了一个 50 年的生物学重大挑战。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "jumper-alphafold-2021",
+        "deepmind-alphafold-casp14"
+      ]
+    },
+    {
+      "id": "alphafold-database-impact",
+      "text": {
+        "en": "The AlphaFold Protein Structure Database, launched in partnership with EMBL-EBI, made over 200 million predicted protein structures freely available to researchers worldwide, transforming structural biology and drug discovery.",
+        "zhHans": "AlphaFold 蛋白质结构数据库与 EMBL-EBI 合作推出，将超过 2 亿个预测蛋白质结构免费提供给全球研究人员，改变了结构生物学和药物发现。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "jumper-alphafold-2021",
+        "deepmind-alphafold-casp14"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "jumper-alphafold-2021",
+      "supports": [
+        "alphafold-casp14-2020",
+        "alphafold-database-impact"
+      ],
+      "quote": "Proteins are essential to life, and understanding their structure can facilitate a mechanistic understanding of their function. Through an iterative process, we developed AlphaFold, which achieves accuracy comparable to experimental methods in many cases."
+    },
+    {
+      "sourceId": "deepmind-alphafold-casp14",
+      "supports": [
+        "alphafold-casp14-2020",
+        "alphafold-database-impact"
+      ],
+      "quote": "AlphaFold revealed the 3D structure of proteins at an atomic level — a breakthrough that can accelerate drug discovery and our understanding of disease."
+    }
+  ],
+  "relatedEvents": [
+    "gpt3-2020",
+    "alexnet-2012"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for AlphaFold protein folding breakthrough."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

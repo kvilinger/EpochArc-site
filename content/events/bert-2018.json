@@ -1,0 +1,136 @@
+{
+  "id": "bert-2018",
+  "slug": "bert",
+  "title": {
+    "en": "Google releases BERT, transforming NLP with bidirectional pre-training",
+    "zhHans": "Google 发布 BERT，用双向预训练改变自然语言处理"
+  },
+  "summary": {
+    "en": "Google AI published 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,' introducing a method that pre-trained a Transformer model bidirectionally on a large text corpus using masked language modeling. BERT achieved state-of-the-art results on 11 NLP benchmarks within months of release, and its open-source model and pre-trained weights made transfer learning in NLP accessible to anyone, launching the 'BERT era' of NLP.",
+    "zhHans": "Google AI 发表了《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》，引入了一种使用掩码语言建模在大型文本语料库上双向预训练 Transformer 模型的方法。BERT 在发布后的几个月内在 11 个 NLP 基准测试上取得了最先进的结果，其开源模型和预训练权重使自然语言处理的迁移学习变得人人可及，开启了 NLP 的\"BERT 时代\"。"
+  },
+  "narrative": {
+    "en": "Before BERT, the dominant approach to language model pre-training was unidirectional (left-to-right or right-to-left), because bidirectional context leaked the target word during training. BERT solved this with masked language modeling: randomly hide 15% of tokens and train the model to predict them from surrounding context. This simple innovation produced dramatically better representations. The paper demonstrated that the same pre-trained BERT model, with a single task-specific output layer added, achieved new state-of-the-art results across 11 different NLP tasks—question answering, sentiment analysis, named entity recognition, natural language inference, and more. Google open-sourced BERT (along with pre-trained weights) in November 2018. Within months, 'BERT' and its derivatives (RoBERTa, DistilBERT, ALBERT, etc.) became the default approach for virtually all NLP systems. Google integrated BERT into its search engine in late 2019, describing it as 'the biggest leap forward in the past five years' for search quality. BERT's reign was relatively short-lived. By 2020, autoregressive models like OpenAI's GPT-2 and GPT-3—which used unidirectional left-to-right training but at much larger scale—proved that scaling unidirectional LMs could match or exceed BERT on most benchmarks. Nevertheless, BERT's conceptual contribution—the idea that deep bidirectional understanding matters for language—remained influential, and the masked language modeling objective was later incorporated into T5, ELECTRA, and even GPT-style models' training methodologies.",
+    "zhHans": "在 BERT 之前，语言模型预训练的主导方法是单向的（从左到右或从右到左），因为双向上下文会在训练时泄露目标词。BERT 使用掩码语言建模解决了这个问题：随机隐藏 15% 的标记，训练模型根据周围上下文预测它们。这一简单的创新产生了大幅改善的表示。论文证明，同一个预训练的 BERT 模型，仅添加一个任务特定的输出层，就在 11 个不同的 NLP 任务上取得了新的最佳结果——问答、情感分析、命名实体识别、自然语言推理等。Google 于 2018 年 11 月开源了 BERT（连同预训练权重）。数个月内，BERT 及其衍生模型（RoBERTa、DistilBERT、ALBERT 等）成为几乎所有 NLP 系统的默认方法。Google 于 2019 年底将 BERT 整合到其搜索引擎中，称其为\"过去五年搜索质量最大的飞跃\"。BERT 的统治相对短暂。到 2020 年，OpenAI 的 GPT-2 和 GPT-3 等自回归模型——使用单向从左到右训练但规模大得多——证明扩大单向语言模型可以在大多数基准上匹配或超越 BERT。尽管如此，BERT 的概念贡献——深度双向理解对语言很重要——仍然具有影响力，掩码语言建模目标后来被纳入 T5、ELECTRA，甚至 GPT 风格模型的训练方法中。"
+  },
+  "date": "2018-10-11",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "October 11, 2018",
+    "zhHans": "2018年10月11日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 4,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Introduced masked language modeling for bidirectional pre-training, achieving state-of-the-art on 11 NLP benchmarks. Pre-trained BERT embeddings became the universal starting point for NLP systems until being superseded by larger-scale autoregressive models.",
+        "zhHans": "引入了用于双向预训练的掩码语言建模，在 11 个 NLP 基准上取得了最佳结果。预训练的 BERT 嵌入成为 NLP 系统的通用起点，直到被更大规模的自回归模型所取代。"
+      },
+      "affectedGroups": [
+        "NLP researchers",
+        "AI engineers",
+        "Google"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "devlin-bert-2018",
+        "google-bert-blog-2018"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Open-sourced pre-trained models and weights made state-of-the-art NLP accessible to anyone with a GPU, significantly lowering the barrier to entry. Thousands of companies and research groups built on BERT, creating a rich ecosystem of fine-tuned models.",
+        "zhHans": "开源预训练模型和权重使最先进的 NLP 技术对任何有 GPU 的人都可访问，大大降低了入门门槛。数千家公司和研究团体在 BERT 之上构建，创建了丰富的微调模型生态系统。"
+      },
+      "affectedGroups": [
+        "students",
+        "startups",
+        "independent researchers",
+        "small businesses"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "devlin-bert-2018",
+        "google-bert-blog-2018"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "bert-published-2018",
+      "text": {
+        "en": "Google AI published BERT (Bidirectional Encoder Representations from Transformers) in October 2018, achieving state-of-the-art results on 11 NLP tasks using masked language model pre-training.",
+        "zhHans": "Google AI 于 2018 年 10 月发表了 BERT，使用掩码语言模型预训练在 11 个 NLP 任务上取得了最佳结果。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "devlin-bert-2018"
+      ]
+    },
+    {
+      "id": "bert-open-source-impact",
+      "text": {
+        "en": "BERT's open-source release democratized NLP pre-training, enabling widespread adoption and creating a rich ecosystem of fine-tuned models across thousands of applications.",
+        "zhHans": "BERT 的开源发布使 NLP 预训练民主化，实现了广泛采用，并在数千个应用中创造了丰富的微调模型生态系统。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "devlin-bert-2018",
+        "google-bert-blog-2018"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "devlin-bert-2018",
+      "supports": [
+        "bert-published-2018",
+        "bert-open-source-impact"
+      ],
+      "quote": "BERT obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% absolute improvement)."
+    },
+    {
+      "sourceId": "google-bert-blog-2018",
+      "supports": [
+        "bert-open-source-impact"
+      ],
+      "quote": "We are releasing the pre-trained BERT model and code so that anyone can use it to build a question answering system or other language understanding system."
+    }
+  ],
+  "relatedEvents": [
+    "transformer-2017",
+    "gpt3-2020"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for BERT."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

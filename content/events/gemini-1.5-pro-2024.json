@@ -1,0 +1,112 @@
+{
+  "id": "gemini-1.5-pro-2024",
+  "slug": "gemini-1.5-pro",
+  "title": {
+    "en": "Google releases Gemini 1.5 Pro with a million-token context window",
+    "zhHans": "Google 发布 Gemini 1.5 Pro，百万 token 上下文窗口"
+  },
+  "summary": {
+    "en": "On February 15, 2024, Google released Gemini 1.5 Pro, the first large language model with a 1 million token context window — later expanded to 2 million. This breakthrough allowed the model to process entire codebases, hundred-page documents, and hours of video in a single prompt, achieving a 'needle in a haystack' retrieval accuracy of 99.7% across the full context. It set a new capability frontier that competitors raced to match throughout 2024.",
+    "zhHans": "2024 年 2 月 15 日，Google 发布了 Gemini 1.5 Pro，第一个拥有 100 万 token 上下文窗口的大语言模型——后扩展至 200 万。这一突破使模型能在单次提示中处理整个代码库、上百页文档和数小时的视频，在全上下文范围内实现了 99.7% 的\"大海捞针\"检索准确率。它设定了一个新的能力边界，竞争对手在 2024 年竞相追赶。"
+  },
+  "narrative": {
+    "en": "Until Gemini 1.5 Pro, LLMs typically processed 4K-128K tokens of context. Google's MoE (Mixture-of-Experts) architecture achieved a 10x+ jump by using a highly efficient attention mechanism. The model could find a sentence buried in 700,000 tokens of Shakespeare, reason across an entire codebase, and analyze hour-long videos. Google's blog demonstrated it processing the transcript of the Apollo 11 moon landing — finding specific mission-critical details buried in thousands of words. The release was initially available to developers via AI Studio and Vertex AI, with consumer rollout later in the year. The 1M+ context window became a competitive battleground: by year-end, Anthropic's Claude could process 200K, Gemini itself offered 2M, and various startups announced context windows of 1M+ tokens. While some questioned whether longer context always meant better reasoning, Gemini 1.5 Pro demonstrated a genuine capability expansion — making possible use cases (analyzing entire legal cases, reviewing full audit trails) that were impractical before.",
+    "zhHans": "在 Gemini 1.5 Pro 之前，LLM 通常处理 4K-128K token 的上下文。Google 的 MoE（混合专家）架构通过使用高效的注意力机制实现了 10 倍以上的跃升。该模型能在 70 万 token 的莎士比亚作品中找出一句话，推理整个代码库，分析长视频。Google 的博客展示了它处理阿波罗 11 号登月转录文本的能力——在数千词中找到特定任务关键细节。该版本最初通过 AI Studio 和 Vertex AI 向开发者开放，消费者版本在当年晚些时候推出。百万以上 token 的上下文窗口成为竞争战场：到年底，Anthropic 的 Claude 可处理 200K，Gemini 自身提供 2M，多家初创公司宣布了百万以上 token 的上下文窗口。虽然有人质疑更长的上下文是否总是意味着更好的推理，但 Gemini 1.5 Pro 展示了一种真正的能力扩展——使以前不切实际的用例（分析整个法律案件、审查完整审计追踪）成为可能。"
+  },
+  "date": "2024-02-15",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "February 15, 2024",
+    "zhHans": "2024年2月15日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "10x+ context window expansion from standard 128K to 1M tokens. 99.7% needle-in-a-haystack accuracy. Enabled entirely new use cases: full-codebase analysis, hundred-page document reasoning, long-form video understanding in a single prompt.",
+        "zhHans": "上下文窗口从标准的 128K 扩展 10 倍以上至 1M token。99.7% 的大海捞针准确率。开启了全新的用例：整个代码库分析、上百页文档推理、长视频理解——全部在单次提示中完成。"
+      },
+      "affectedGroups": [
+        "developers",
+        "researchers",
+        "enterprise users",
+        "legal professionals"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-gemini-1.5-pro-2024"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Triggered industry-wide race to longer context windows. By end of 2024, every major AI lab was competing on context length as a key capability metric alongside reasoning and multimodality.",
+        "zhHans": "触发了全行业对更长上下文窗口的竞赛。到 2024 年底，每个主要 AI 实验室都将上下文长度与推理和多模态并列为关键能力指标。"
+      },
+      "affectedGroups": [
+        "AI companies",
+        "researchers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-gemini-1.5-pro-2024"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gemini-1.5-pro-1m-context-2024",
+      "text": {
+        "en": "Google released Gemini 1.5 Pro on February 15, 2024 with a 1 million token context window, later expanded to 2 million tokens.",
+        "zhHans": "Google 于 2024 年 2 月 15 日发布 Gemini 1.5 Pro，拥有 100 万 token 上下文窗口，后扩展至 200 万。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-gemini-1.5-pro-2024"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "google-gemini-1.5-pro-2024",
+      "supports": [
+        "gemini-1.5-pro-1m-context-2024"
+      ],
+      "quote": "Gemini 1.5 Pro delivers dramatically enhanced performance, with a breakthrough in context-window length — up to 1 million tokens consistently."
+    }
+  ],
+  "relatedEvents": [
+    "gpt4-2023",
+    "gpt4o-2024"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Gemini 1.5 Pro."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "gan-2014",
+  "slug": "gan",
+  "title": {
+    "en": "Ian Goodfellow invents Generative Adversarial Networks (GANs)",
+    "zhHans": "Ian Goodfellow 发明生成对抗网络"
+  },
+  "summary": {
+    "en": "Ian Goodfellow published 'Generative Adversarial Nets,' introducing a novel framework where two neural networks—a generator and a discriminator—compete against each other in a zero-sum game. The generator learns to produce increasingly realistic samples while the discriminator learns to distinguish real from fake. GANs became the dominant paradigm for generative AI until supplanted by diffusion models in the mid-2020s, fundamentally changing how the field thought about unsupervised learning.",
+    "zhHans": "Ian Goodfellow 发表了《Generative Adversarial Nets》，引入了一个新颖的框架：两个神经网络——生成器和判别器——在零和博弈中相互竞争。生成器学习生成越来越真实的样本，而判别器学习区分真伪。GAN 成为生成式 AI 的主导范式，直到 2020 年代中期被扩散模型取代，从根本上改变了该领域对无监督学习的思考方式。"
+  },
+  "narrative": {
+    "en": "The origin story is legendary: Goodfellow conceived the idea during a bar argument with colleagues in Montreal in 2014. He went home and implemented it overnight—it worked on the first try. The GAN framework was elegantly simple: a generator network creates fake data from random noise; a discriminator network tries to tell real data from fake. The two are trained simultaneously in a minimax game, each pushing the other to improve. The paper was presented at NeurIPS 2014. GANs sparked an explosion of creative applications: face generation (StyleGAN), image-to-image translation (pix2pix, CycleGAN), super-resolution (SRGAN), and deepfakes. By the late 2010s, GANs were arguably the most active research area in AI. However, they were notoriously hard to train—mode collapse, non-convergence, and vanishing gradients plagued practitioners. By 2022-2023, diffusion models (DALL-E 2, Stable Diffusion, Midjourney) had surpassed GANs in image quality and training stability, ending the GAN era for text-to-image generation. Despite being superseded, GANs left a lasting conceptual contribution: the idea of adversarial training, which later influenced reinforcement learning (adversarial RL), security (adversarial examples), and alignment research.",
+    "zhHans": "其起源故事极具传奇色彩：Goodfellow 于 2014 年在蒙特利尔与同事在酒吧争论时构思了这个想法。他回家后连夜实现——第一次尝试就成功了。GAN 框架优雅简洁：生成器网络从随机噪声中创建伪造数据；判别器网络试图区分真实数据和伪造数据。两者在极小化极大博弈中同时训练，相互推动对方改进。论文在 NeurIPS 2014 上发表。GAN 引发了一波创作应用爆炸：人脸生成（StyleGAN）、图像到图像转换（pix2pix、CycleGAN）、超分辨率（SRGAN）和深度伪造。到 2010 年代末，GAN 可以说是 AI 中最活跃的研究领域。然而，它们以难以训练而闻名——模式崩溃、不收敛和梯度消失困扰着实践者。到 2022-2023 年，扩散模型（DALL-E 2、Stable Diffusion、Midjourney）在图像质量和训练稳定性上超越了 GAN，终结了文本到图像生成的 GAN 时代。尽管被超越，GAN 留下了一个持久的理念贡献：对抗训练——后来影响了强化学习（对抗性 RL）、安全性（对抗样本）和对齐研究。"
+  },
+  "date": "2014-06",
+  "datePrecision": "month",
+  "displayDate": {
+    "en": "June 2014",
+    "zhHans": "2014年6月"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Introduced the adversarial training paradigm for generative modeling. GANs enabled realistic synthetic images, style transfer, and data augmentation at a quality previously impossible. The framework influenced multiple subfields beyond generation, including adversarial robustness and alignment.",
+        "zhHans": "引入了生成建模的对抗训练范式。GAN 使得逼真合成图像、风格迁移和数据增强达到了此前不可能的质量。该框架影响了生成之外的多个子领域，包括对抗鲁棒性和对齐研究。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "computer vision researchers",
+        "creative practitioners"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "goodfellow-gan-2014",
+        "wikipedia-gan"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "GANs enabled the creation of deepfakes, raising significant concerns about identity fraud, misinformation, and the erosion of photographic evidence. The technology prompted early public conversations about AI-generated content ethics that would later intensify with LLMs.",
+        "zhHans": "GAN 使得深度伪造的创建成为可能，引发了关于身份欺诈、虚假信息和照片证据可信度侵蚀的重大担忧。该技术促使了关于 AI 生成内容伦理的早期公共对话，这些对话后来随着大语言模型的发展而加剧。"
+      },
+      "affectedGroups": [
+        "general public",
+        "journalists",
+        "policymakers",
+        "legal professionals"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "wikipedia-gan"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gan-invented-2014",
+      "text": {
+        "en": "Ian Goodfellow published 'Generative Adversarial Nets' at NeurIPS 2014, introducing the GAN framework where a generator and discriminator compete in a zero-sum game.",
+        "zhHans": "Ian Goodfellow 在 NeurIPS 2014 上发表了《Generative Adversarial Nets》，引入了生成器和判别器在零和博弈中竞争的 GAN 框架。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "goodfellow-gan-2014"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "goodfellow-gan-2014",
+      "supports": [
+        "gan-invented-2014"
+      ],
+      "quote": "We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G."
+    },
+    {
+      "sourceId": "wikipedia-gan",
+      "supports": [
+        "gan-invented-2014"
+      ],
+      "quote": "GANs have been called the most interesting idea in the last ten years in machine learning."
+    }
+  ],
+  "relatedEvents": [
+    "alexnet-2012",
+    "transformer-2017"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Generative Adversarial Networks."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

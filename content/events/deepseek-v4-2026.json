@@ -1,0 +1,113 @@
+{
+  "id": "deepseek-v4-2026",
+  "slug": "deepseek-v4",
+  "title": {
+    "en": "DeepSeek releases V4, an open-weight 1.6 trillion parameter model that undercuts all competitors on price",
+    "zhHans": "DeepSeek 发布 V4，1.6 万亿参数开源权重模型，价格上低于所有竞争对手"
+  },
+  "summary": {
+    "en": "On April 24, 2026, DeepSeek released V4, its most powerful open-weight model family — with V4-Pro at 1.6 trillion total parameters (49B active) and V4-Flash at 284B (13B active), both under the MIT license with a 1-million token context window. Priced at $0.87 per million output tokens, V4 undercut GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro by 5-10x. The release demonstrated that the open-weight ecosystem had permanently reshaped AI economics.",
+    "zhHans": "2026 年 4 月 24 日，DeepSeek 发布了 V4，其最强大的开源权重模型家族——V4-Pro 拥有 1.6 万亿总参数（490 亿活跃），V4-Flash 拥有 2840 亿参数（130 亿活跃），均采用 MIT 许可，支持 100 万 token 上下文窗口。定价每百万输出 token 仅 0.87 美元，比 GPT-5.5、Claude Opus 4.7 和 Gemini 3.1 Pro 便宜 5-10 倍。这次发布证明了开源权重生态系统已永久重塑了 AI 的经济性。"
+  },
+  "narrative": {
+    "en": "DeepSeek V4 was the continuation of a trajectory that began with DeepSeek-R1 in January 2025. Where R1 had shocked the industry by proving open-source could match closed-source reasoning, V4 extended that proof to scale: a 1.6 trillion parameter open-weight model that was competitive with the best closed-source models while being dramatically cheaper. The architecture continued DeepSeek's Mixture-of-Experts approach, with only 49B parameters active per token — making inference efficient despite the massive total parameter count. Key benchmarks showed V4-Pro competitive with GPT-5.5 and Claude Opus 4.7 across reasoning, coding, and mathematics. V4-Flash offered a smaller, faster option for high-volume deployments. The pricing — $0.87/M output tokens — was intentionally aggressive, designed to capture market share from US competitors. The release had three major implications. First, it validated DeepSeek's long-term strategy: the Chinese lab had gone from 'interesting open-source experiment' to 'permanent frontier competitor' in 16 months. Second, it continued the commoditization of frontier AI: if a 1.6T open-weight model cost $0.87/M, the era of $15-75/M pricing for closed models was unsustainable. Third, it intensified the US-China AI competition: DeepSeek's ability to produce frontier-competitive models despite US chip restrictions demonstrated the limits of export controls. The open-weight community embraced V4 immediately, with fine-tuned variants appearing on Hugging Face within hours of release.",
+    "zhHans": "DeepSeek V4 延续了始于 2025 年 1 月 DeepSeek-R1 的轨迹。R1 通过证明开源可以匹配闭源推理能力震惊了行业，V4 则将这一证明扩展到规模层面：一个 1.6 万亿参数的开源权重模型，与最好的闭源模型竞争，同时价格大幅降低。架构延续了 DeepSeek 的混合专家方法，每个 token 仅激活 490 亿参数——使得尽管总参数数量庞大，推理仍然高效。关键基准测试显示 V4-Pro 在推理、编程和数学方面与 GPT-5.5 和 Claude Opus 4.7 具有竞争力。V4-Flash 为高容量部署提供了更小、更快的选择。定价——每百万输出 token 0.87 美元——是故意激进的，旨在从美国竞争对手手中夺取市场份额。这次发布有三个主要影响。首先，它验证了 DeepSeek 的长期战略：这家中国实验室在 16 个月内从\"有趣的开源实验\"转变为\"永久的前沿竞争者\"。其次，它继续了前沿 AI 的商品化：如果一个 1.6T 开源权重模型只要 0.87 美元，那么闭源模型 15-75 美元的定价时代是不可持续的。第三，它加剧了中美 AI 竞争：DeepSeek 尽管受到美国芯片限制仍能生产前沿竞争性模型的能力证明了出口管制的局限性。开源社区立即接受了 V4，发布后数小时内就有微调变体出现在 Hugging Face 上。"
+  },
+  "date": "2026-04-24",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "April 24, 2026",
+    "zhHans": "2026年4月24日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "economic_disruption",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Priced at $0.87/M output tokens — 5-10x cheaper than GPT-5.5, Claude, and Gemini. Accelerated the commoditization of frontier AI. Put sustained downward pressure on AI model pricing across the industry.",
+        "zhHans": "定价每百万输出 token 仅 0.87 美元——比 GPT-5.5、Claude 和 Gemini 便宜 5-10 倍。加速了前沿 AI 的商品化。对整个行业的 AI 模型定价施加了持续的下行压力。"
+      },
+      "affectedGroups": [
+        "AI developers",
+        "startups",
+        "enterprises",
+        "AI companies"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "deepseek-v4-morphllm"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "MIT-licensed 1.6T open-weight model made frontier-level AI accessible to anyone who could host it. Continued the DeepSeek lineage of making advanced AI available at dramatically reduced costs.",
+        "zhHans": "MIT 许可的 1.6T 开源权重模型使任何能托管它的人都可以获得前沿级 AI。延续了 DeepSeek 以大幅降低成本提供先进 AI 的谱系。"
+      },
+      "affectedGroups": [
+        "developers",
+        "researchers",
+        "global south"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "deepseek-v4-morphllm"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "deepseek-v4-release-2026",
+      "text": {
+        "en": "DeepSeek released V4 on April 24, 2026 — an open-weight (MIT) model family with V4-Pro at 1.6T parameters and V4-Flash at 284B, priced at $0.87/M output tokens.",
+        "zhHans": "DeepSeek 于 2026 年 4 月 24 日发布 V4——一个开源权重（MIT）模型家族，V4-Pro 拥有 1.6T 参数，V4-Flash 拥有 284B 参数，定价每百万输出 token 仅 0.87 美元。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "deepseek-v4-morphllm"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "deepseek-v4-morphllm",
+      "supports": [
+        "deepseek-v4-release-2026"
+      ],
+      "quote": "DeepSeek V4 is an open-weight mixture-of-experts model family released April 24, 2026 under the MIT license."
+    }
+  ],
+  "relatedEvents": [
+    "deepseek-r1-2025"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for DeepSeek V4."
+      }
+    ]
+  },
+  "categories": [
+    "capability",
+    "commerce"
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "sora-2024",
+  "slug": "sora",
+  "title": {
+    "en": "OpenAI previews Sora, the first text-to-video model that looked like it was working",
+    "zhHans": "OpenAI 预览 Sora，第一个看起来真的能用的文本生视频模型"
+  },
+  "summary": {
+    "en": "On February 15, 2024, OpenAI unveiled Sora, a text-to-video generation model that produced strikingly coherent, photorealistic video clips up to one minute long from text prompts. Unlike previous text-to-video efforts that produced glitchy, short, and disjointed output, Sora's results demonstrated object permanence, physical consistency, and cinematic quality. The announcement was a 'GPT-1 moment for video'—the first time video generation seemed to genuinely work.",
+    "zhHans": "2024 年 2 月 15 日，OpenAI 公布了 Sora，一个文本生视频生成模型，可以从文本提示中生成惊人连贯、逼真的一分钟长视频片段。与此前产生闪烁、短促且脱节输出的文本生视频尝试不同，Sora 的结果展示了物体持久性、物理一致性和电影级的质量。这一宣布是\"视频的 GPT-1 时刻\"——第一次看起来视频生成真的能用了。"
+  },
+  "narrative": {
+    "en": "The Sora announcement broke with OpenAI's pattern of rolling access. Rather than putting it behind an API or waitlist, they released a curated set of demonstration videos on social media and a technical report. The videos were stunning: a photorealistic woolly mammoth moving through a snowy landscape, a cinematic tracking shot of a Tokyo street in the snow, a short fluffy monster next to a candle, and fake historical footage of the California gold rush. The quality was so far beyond existing text-to-video systems (Runway, Pika) that it triggered a new wave of both excitement and alarm. Hollywood took immediate notice. Tyler Perry halted an $800 million studio expansion, saying the technology would make physical sets obsolete. The WGA and SAG-AFTRA, fresh off their 2023 strikes, pushed for stronger AI protections. Adobe, Runway, and Google accelerated their own video generation work. OpenAI CEO Sam Altman used Sora to generate videos based on user suggestions on X (then Twitter), turning the launch into an interactive spectacle. The technical report, 'Video Generation Models as World Simulators,' revealed Sora was built on a diffusion transformer architecture—combining the diffusion models used in image generation (like DALL-E) with the Transformer architecture proven in language models. This architectural choice, treating video patches analogously to text tokens, hinted at a path toward models that understand the physical world, not just generate pixels. Sora was released publicly as 'Sora Turbo' in December 2024, at which point the novelty had already been absorbed into an accelerating landscape of AI-generated media, deepfake concerns, and debates about the future of visual truth.",
+    "zhHans": "Sora 的公布打破了 OpenAI 逐步推出的模式。他们没有将其放在 API 或候补名单后，而是在社交媒体上发布了一组精心策划的演示视频和一篇技术报告。这些视频令人惊叹：一只逼真的长毛猛犸象在雪景中行走，一个东京雪街的电影级跟拍镜头，蜡烛旁的毛茸茸小怪物，以及加利福尼亚淘金热的伪造历史画面。其质量远超现有的文本生视频系统（Runway、Pika），引发了一轮新的兴奋与警觉。好莱坞立即关注。Tyler Perry 暂停了一项 8 亿美元的制片厂扩建计划，称这项技术将使实景布景过时。刚从 2023 年罢工中走出来的 WGA 和 SAG-AFTRA 推动了更强的 AI 保护。Adobe、Runway 和 Google 加速了各自的视频生成工作。OpenAI CEO Sam Altman 在 X（当时是 Twitter）上使用 Sora 根据用户建议生成视频，将发布变成了一场互动盛宴。技术报告《作为世界模拟器的视频生成模型》揭示了 Sora 基于扩散 Transformer 架构——将用于图像生成的扩散模型（如 DALL-E）与在语言模型中验证过的 Transformer 架构结合起来。这一架构选择将视频区块类比于文本标记，暗示了通向理解物理世界而非仅仅生成像素的模型的道路。Sora 于 2024 年 12 月作为\"Sora Turbo\"公开发布，此时其新奇性已被吸收进 AI 生成媒体、深度伪造担忧以及关于视觉真相未来的辩论的加速景观中。"
+  },
+  "date": "2024-02-15",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "February 15, 2024",
+    "zhHans": "2024年2月15日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 7,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "First text-to-video model to demonstrate object permanence, coherent motion, and cinematic quality at up to one minute length. The diffusion transformer architecture (combining diffusion with Transformers) proved transferable from image to video generation, suggesting a convergence path for generative AI architectures.",
+        "zhHans": "首个展示物体持久性、连贯运动和电影级质量的文本生视频模型，视频长度可达一分钟。扩散 Transformer 架构（将扩散与 Transformer 结合）证明了可以从图像生成转移到视频生成，暗示了生成式 AI 架构的融合路径。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "filmmakers",
+        "VFX artists",
+        "content creators"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-sora-2024",
+        "wikipedia-sora"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Threatened the economics of physical film production, stock footage, and advertising video creation. Tyler Perry halted an $800M studio expansion. The visual effects and advertising industries began reassessing their cost structures. Competitors (Runway, Pika, Adobe, Google) accelerated video generation R&D.",
+        "zhHans": "威胁了实体电影制作、素材库和广告视频创作的经济模式。Tyler Perry 暂停了 8 亿美元的制片厂扩建。视觉特效和广告行业开始重新评估其成本结构。竞争对手（Runway、Pika、Adobe、Google）加速了视频生成研发。"
+      },
+      "affectedGroups": [
+        "film industry",
+        "advertisers",
+        "stock footage providers",
+        "VFX artists"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-sora-2024"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Accelerated concerns about AI-generated deepfakes, misinformation through synthetic video, and the erosion of visual evidence in journalism, law, and politics. The 2024 global election year made these concerns especially acute.",
+        "zhHans": "加速了对 AI 生成深度伪造、通过合成视频传播虚假信息以及在新闻、法律和政治中视觉证据被侵蚀的担忧。2024 年的全球选举年使这些担忧尤为尖锐。"
+      },
+      "affectedGroups": [
+        "journalists",
+        "policymakers",
+        "legal professionals",
+        "general public"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "wikipedia-sora"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "sora-announcement-fact",
+      "text": {
+        "en": "OpenAI previewed Sora, a text-to-video generation model, on February 15, 2024. The model generates up to one-minute videos from text prompts with photorealistic quality and object permanence.",
+        "zhHans": "OpenAI 于 2024 年 2 月 15 日预览了文本生视频模型 Sora。该模型从文本提示生成长达一分钟的视频，具有逼真的质量和物体持久性。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-sora-2024"
+      ]
+    },
+    {
+      "id": "sora-video-gpt1-moment",
+      "text": {
+        "en": "Sora represented a 'GPT-1 moment for video'—the first time video generation demonstrated coherent, usable results that suggested scaling alone could unlock further capabilities.",
+        "zhHans": "Sora 代表了\"视频的 GPT-1 时刻\"——第一次视频生成展示了连贯的、可用的结果，暗示仅靠规模扩展就能解锁更多能力。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-sora-2024",
+        "wikipedia-sora"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "openai-sora-2024",
+      "supports": [
+        "sora-announcement-fact",
+        "sora-video-gpt1-moment"
+      ],
+      "quote": "The original Sora model from February 2024 was in many ways the GPT‑1 moment for video—the first time video generation started to seem like it was working."
+    },
+    {
+      "sourceId": "wikipedia-sora",
+      "supports": [
+        "sora-announcement-fact",
+        "sora-video-gpt1-moment"
+      ],
+      "quote": "On February 15, 2024, OpenAI first announced Sora with a set of demonstration videos including an SUV driving down a mountain road, a 'short fluffy monster' next to a candle, and two people walking through Tokyo in the snow."
+    }
+  ],
+  "relatedEvents": [
+    "chatgpt-2022",
+    "transformer-2017"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Sora text-to-video model."
+      }
+    ]
+  },
+  "categories": [
+    "product"
+  ]
+}

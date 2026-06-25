@@ -1,0 +1,113 @@
+{
+  "id": "gemini-deep-think-imo-gold-2025",
+  "slug": "gemini-deep-think-imo-gold",
+  "title": {
+    "en": "Google DeepMind's Gemini Deep Think achieves gold medal at the International Mathematical Olympiad",
+    "zhHans": "Google DeepMind 的 Gemini Deep Think 在国际数学奥林匹克竞赛中获得金牌"
+  },
+  "summary": {
+    "en": "In July 2025, Google DeepMind announced that an advanced version of Gemini with Deep Think had achieved a gold-medal standard at the International Mathematical Olympiad, scoring 35 out of 42 points. This marked the first time an AI system reached the highest level of the world's most prestigious mathematics competition for pre-university students — solving problems requiring deep mathematical reasoning, creativity, and multi-step logic. The achievement demonstrated that inference-time compute scaling could match the most challenging human intellectual benchmarks.",
+    "zhHans": "2025 年 7 月，Google DeepMind 宣布带 Deep Think 功能的增强版 Gemini 在国际数学奥林匹克竞赛中达到了金牌标准，获得了 42 分中的 35 分。这标志着 AI 系统首次达到世界最负盛名的大学预科数学竞赛的最高水平——解决了需要深度数学推理、创造力和多步骤逻辑的问题。这一成就证明了推理时计算缩放可以匹配最具挑战性的人类智力基准。"
+  },
+  "narrative": {
+    "en": "The International Mathematical Olympiad is the world's most challenging mathematics competition for high school students, requiring contestants to solve six proof-based problems across two days. In 2024, DeepMind's AlphaProof + AlphaGeometry 2 had achieved a silver medal (28/42 points). The 2025 breakthrough with Gemini Deep Think improved to 35/42 — a gold medal. Unlike AlphaProof which used formal mathematical verification, Gemini Deep Think used natural-language reasoning augmented by 'Deep Think,' a test-time compute technique that allowed the model to explore multiple solution paths, verify its reasoning, and refine its approach before finalizing an answer. This was significant for two reasons. First, it showed that general-purpose language models, not just specialized math systems, could reach the highest levels of mathematical reasoning. Second, the Deep Think approach — scaling inference-time compute rather than training larger models — validated the paradigm that o1 had introduced in September 2024. Google's approach was to apply Deep Think to an already capable Gemini model, dramatically improving its IMO performance without retraining. The result placed Gemini Deep Think among the top IMO gold medalists, outperforming most human contestants. The achievement was reported by Ars Technica, Nature, and major media outlets. It was quickly followed by similar results from OpenAI's o3 (which claimed gold without following formal IMO rules). The milestone had implications beyond mathematics: it suggested that with sufficient inference-time compute, AI could match human experts across STEM fields requiring rigorous reasoning.",
+    "zhHans": "国际数学奥林匹克竞赛是面向高中生的世界上最具挑战性的数学竞赛，要求参赛者在两天内解答六道基于证明的问题。2024 年，DeepMind 的 AlphaProof + AlphaGeometry 2 获得了银牌（28/42 分）。2025 年，Gemini Deep Think 取得突破，提高到 35/42 分——获得金牌。与使用形式数学验证的 AlphaProof 不同，Gemini Deep Think 使用自然语言推理，并通过\"Deep Think\"——一种测试时计算技术——增强，允许模型在给出最终答案之前探索多种解题路径、验证推理并优化方法。这一点之所以重要有两个原因。首先，它表明通用语言模型——而不仅仅是专门的数学系统——可以到达数学推理的最高水平。其次，Deep Think 方法——扩展推理时计算而不是训练更大的模型——验证了 o1 在 2024 年 9 月引入的范式。Google 的方法是将 Deep Think 应用于已经具备能力的 Gemini 模型，在不重新训练的情况下大幅提高其 IMO 性能。结果使 Gemini Deep Think 跻身顶级 IMO 金牌得主之列，超过了大多数人类参赛者。这一成就被 Ars Technica、Nature 和主要媒体广泛报道。OpenAI 的 o3 很快也声称了类似结果。这一里程碑的意义超出了数学领域：它表明只要有足够的推理时计算，AI 可以在需要严格推理的 STEM 领域中匹配人类专家。"
+  },
+  "date": "2025-07-01",
+  "datePrecision": "month",
+  "displayDate": {
+    "en": "July 2025",
+    "zhHans": "2025年7月"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 7,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "AI reached gold-medal level at the International Mathematical Olympiad — the world's most challenging pre-university math competition. Scored 35/42, outperforming most human contestants. Demonstrated general-purpose LLMs could match top human mathematical reasoning.",
+        "zhHans": "AI 在国际数学奥林匹克竞赛——世界最具挑战性的大学预科数学竞赛——中达到了金牌水平。获得 35/42 分，超过了大多数人类参赛者。证明了通用 LLM 可以匹配顶级人类的数学推理能力。"
+      },
+      "affectedGroups": [
+        "mathematicians",
+        "AI researchers",
+        "educators",
+        "students"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "deepmind-gemini-deep-think-imo"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Validated inference-time compute scaling as a path to expert-level reasoning. Showed that spending more compute at inference time (Deep Think) could match training larger models — reinforcing the reasoning model paradigm introduced by o1.",
+        "zhHans": "验证了推理时计算缩放作为达到专家级推理的路径。证明了在推理时投入更多计算（Deep Think）可以匹配训练更大模型——强化了 o1 引入的推理模型范式。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "ML engineers",
+        "AI companies"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "deepmind-gemini-deep-think-imo"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gemini-deep-think-imo-gold-2025",
+      "text": {
+        "en": "Google DeepMind's Gemini with Deep Think achieved a gold-medal score of 35/42 at the International Mathematical Olympiad in July 2025.",
+        "zhHans": "Google DeepMind 的带 Deep Think 功能的 Gemini 在 2025 年 7 月的国际数学奥林匹克竞赛中取得了 35/42 的金牌成绩。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "deepmind-gemini-deep-think-imo"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "deepmind-gemini-deep-think-imo",
+      "supports": [
+        "gemini-deep-think-imo-gold-2025"
+      ],
+      "quote": "Advanced version of Gemini with Deep Think officially achieves gold-medal standard at the International Mathematical Olympiad."
+    }
+  ],
+  "relatedEvents": [
+    "o1-2024",
+    "alphafold-2020"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Gemini Deep Think IMO Gold."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

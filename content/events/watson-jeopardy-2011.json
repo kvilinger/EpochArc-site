@@ -1,0 +1,134 @@
+{
+  "id": "watson-jeopardy-2011",
+  "slug": "watson-jeopardy",
+  "title": {
+    "en": "IBM Watson defeats human champions on Jeopardy!",
+    "zhHans": "IBM Watson 在 Jeopardy! 上击败人类冠军"
+  },
+  "summary": {
+    "en": "On February 16, 2011, IBM's Watson supercomputer defeated all-time Jeopardy! champions Ken Jennings and Brad Rutter across three episodes. Watson used natural language processing and information retrieval over 200 million pages of content, demonstrating that machines could handle the ambiguity of natural language at human-comparable levels in a constrained domain.",
+    "zhHans": "2011 年 2 月 16 日，IBM 的 Watson 超级计算机在三期节目中击败了 Jeopardy! 历史总冠军 Ken Jennings 和 Brad Rutter。Watson 使用自然语言处理和检索技术，在 2 亿页内容上进行实时分析，证明了机器可以在受限领域以接近人类的水平处理自然语言的模糊性。"
+  },
+  "narrative": {
+    "en": "Jeopardy! is significantly harder for computers than chess. The clues require parsing puns, wordplay, indirect references, and cultural knowledge across an unbounded range of topics. Watson, developed by IBM Research under David Ferrucci, ran on 90 IBM Power 750 servers (2,880 processor cores) and was never connected to the internet during the match. It processed natural language questions in seconds, ranked its confidence across millions of possible answers, and triggered a physical buzzer mechanism to compete with the speed of human reflexes. The match was broadcast over three nights (February 14-16, 2011) and watched by millions. Watson won with $77,147, with Jennings at $24,000 and Rutter at $21,600. One memorable moment: Watson answered in a category about 'U.S. Cities' with 'What is Toronto?'—demonstrating the system's limitations in understanding geographic context. IBM pledged never to use Watson for weaponry and instead commercialized it for healthcare (tumor diagnosis), financial services, and customer service. However, Watson Health failed to deliver on its promises and was shut down in 2022, becoming a cautionary tale about overhyping AI capabilities. Despite the limited commercial outcome, the Jeopardy! victory served as a bridge between Deep Blue's narrow symbolic strength and the deep learning breakthroughs that followed.",
+    "zhHans": "Jeopardy! 对计算机而言比国际象棋困难得多。线索需要解析双关语、文字游戏、间接引用以及跨无限主题的文化知识。Watson 由 IBM 研究院 David Ferrucci 领导开发，运行在 90 台 IBM Power 750 服务器（2,880 个处理器核心）上，比赛期间从未接入互联网。它在几秒钟内处理自然语言问题，对数百万个可能答案进行置信度排序，并触动物理蜂鸣器机制以与人类反应速度竞争。比赛在三晚（2011 年 2 月 14-16 日）播出，数百万人观看。Watson 以 $77,147 获胜，Jennings $24,000，Rutter $21,600。一个令人难忘的时刻：Watson 在一个关于\"美国城市\"的类别中回答了\"多伦多是什么？\"——展示了系统在地理上下文理解方面的局限。IBM 承诺绝不为武器用途使用 Watson，而是将其商业化用于医疗（肿瘤诊断）、金融服务和客户服务。然而，Watson Health 未能兑现其承诺，于 2022 年关停，成为过度炒作 AI 能力的警示故事。尽管商业成果有限，Jeopardy! 的胜利仍然架起了深蓝的窄域符号方法到后续深度学习突破之间的桥梁。"
+  },
+  "date": "2011-02-16",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "February 16, 2011",
+    "zhHans": "2011年2月16日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Demonstrated that NLP + information retrieval could parse natural language ambiguity in a competitive real-time setting. However, the approach (hand-engineered features, massive compute, no real learning) proved to be a dead end compared to deep learning alternatives that emerged shortly after.",
+        "zhHans": "证明了自然语言处理与信息检索结合可以在竞争性的实时环境中解析自然语言的模糊性。然而，其方法（手工设计特征、大规模计算、没有真正的学习能力）被随后出现的深度学习替代方案证明是死胡同。"
+      },
+      "affectedGroups": [
+        "NLP researchers",
+        "IBM",
+        "computer scientists"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "ibm-watson-jeopardy",
+        "axios-watson-2021"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Publicly demonstrated that machines could compete with humans on general knowledge quizzes involving natural language understanding. Shifted public perception from 'AI can play chess' to 'AI can answer any question.'",
+        "zhHans": "公开展示了机器可以在涉及自然语言理解的一般知识问答中与人类竞争。将公众认知从\"AI 能下国际象棋\"推进到\"AI 能回答任何问题\"。"
+      },
+      "affectedGroups": [
+        "general public",
+        "media",
+        "business leaders"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "ibm-watson-jeopardy"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "watson-defeats-jennings-rutter",
+      "text": {
+        "en": "IBM Watson defeated Jeopardy! champions Ken Jennings and Brad Rutter across three episodes broadcast February 14-16, 2011, winning $77,147.",
+        "zhHans": "IBM Watson 在 2011 年 2 月 14-16 日播出的三期节目中击败了 Jeopardy! 冠军 Ken Jennings 和 Brad Rutter，赢得 $77,147。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "ibm-watson-jeopardy"
+      ]
+    },
+    {
+      "id": "watson-health-legacy",
+      "text": {
+        "en": "Watson was commercialized for healthcare, financial services, and customer service, but Watson Health was shut down in 2022 after failing to meet expectations.",
+        "zhHans": "Watson 被商业化用于医疗、金融服务和客户服务，但 Watson Health 在未能达到预期后于 2022 年关停。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "axios-watson-2021"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "ibm-watson-jeopardy",
+      "supports": [
+        "watson-defeats-jennings-rutter",
+        "watson-health-legacy"
+      ],
+      "quote": "Watson defeated the two most celebrated champions in Jeopardy! history—Ken Jennings and Brad Rutter—in a three-day event."
+    },
+    {
+      "sourceId": "axios-watson-2021",
+      "supports": [
+        "watson-health-legacy"
+      ],
+      "quote": "IBM has spent years trying to make its Watson technology a business success. The results have been mixed."
+    }
+  ],
+  "relatedEvents": [
+    "deep-blue-1997",
+    "alexnet-2012"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Watson Jeopardy! victory."
+      }
+    ]
+  },
+  "categories": [
+    "capability",
+    "society"
+  ]
+}

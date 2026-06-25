@@ -1,0 +1,165 @@
+{
+  "id": "eliza-1966",
+  "slug": "eliza",
+  "title": {
+    "en": "Joseph Weizenbaum creates ELIZA, the first conversational agent in history",
+    "zhHans": "Joseph Weizenbaum 创建 ELIZA，史上第一个对话程序"
+  },
+  "summary": {
+    "en": "MIT professor Joseph Weizenbaum published ELIZA—a computer program that could simulate conversation by pattern-matching and keyword-triggered script responses. Its DOCTOR script mimicked a Rogerian psychotherapist so convincingly that Weizenbaum's own secretary asked him to leave the room so she could speak with it privately. This was the first time anyone mistook a machine for a human conversational partner.",
+    "zhHans": "MIT 教授 Joseph Weizenbaum 发表 ELIZA——一个通过模式匹配和关键词触发脚本应答来模拟对话的计算机程序。其 DOCTOR 脚本模仿 Rogerian 心理治疗师的对话方式如此逼真，以至于 Weizenbaum 的秘书要求他离开房间，让她与程序私下交谈。这是人类历史上第一次将机器误认为人类对话伙伴。"
+  },
+  "narrative": {
+    "en": "In January 1966, the Communications of the ACM published a paper titled 'ELIZA—A Computer Program for the Study of Natural Language Communication Between Man and Machine.' The author, Joseph Weizenbaum, had built the program on MIT's Project MAC time-sharing system. He named it after Eliza Doolittle from George Bernard Shaw's Pygmalion—a working-class woman trained to pass as a member of high society. The analogy was apt: ELIZA had no understanding whatsoever. It worked by scanning for keywords in the user's input and plugging them into scripted response templates. 'I am BLAH' became 'How long have you been BLAH?' The most famous script, DOCTOR, used the non-directive questioning style of Rogerian psychotherapy—a deliberate choice by Weizenbaum because it required no real-world knowledge. The DOCTOR could always ask 'Tell me more about that' or 'Why do you say that?' without needing to know what 'that' referred to. The effect on users was startling. Weizenbaum was alarmed when his secretary, who had watched him build the program, asked him to leave the room during her conversation with ELIZA. He later wrote: 'I had not realized that extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people.' This observation—now called the Eliza Effect—led Weizenbaum to spend the rest of his career warning against over-attributing intelligence to machines. His 1976 book 'Computer Power and Human Reason' became one of the earliest and most sustained ethical critiques of artificial intelligence. The irony is that ELIZA was never intended as a chatbot or a therapeutic tool. Weizenbaum saw it as a language processing research platform. But the public, and the computing industry, saw something else entirely: the birth of human-computer conversation. Today, every Siri query, every ChatGPT message, and every customer service chatbot traces its lineage back to a 1966 pattern-matcher running on a time-shared mainframe in Cambridge, Massachusetts.",
+    "zhHans": "1966 年 1 月，《ACM 通讯》发表了一篇题为《ELIZA——用于研究人与机器之间自然语言交流的计算机程序》的论文。作者 Joseph Weizenbaum 在 MIT 的 Project MAC 分时系统上构建了这个程序。他以萧伯纳戏剧《卖花女》中的伊莱莎·杜利特尔（Eliza Doolittle）命名——一个被训练以冒充上流社会成员的下层阶级女性。这个比喻很恰当：ELIZA 根本没有任何理解力。它通过扫描用户输入中的关键词并将其插入预设的应答模板来工作。\"我是某某\"变成\"你多久以来一直是某某？\"最著名的脚本 DOCTOR 使用了 Rogerian 心理治疗的非引导式提问风格——Weizenbaum 故意选择这种风格，因为它不需要任何真实世界知识。DOCTOR 总是可以问\"多跟我说说这件事\"或\"你为什么这样说？\"而不需要知道\"这件事\"指的是什么。对用户的影响是惊人的。当 Weizenbaum 的秘书——她亲眼看着 Weizenbaum 构建程序——在与 ELIZA 交谈时要求他离开房间，Weizenbaum 感到震惊。他后来写道：\"我没有意识到，极其短暂地接触一个相对简单的计算机程序就能在相当正常的人身上引发强大的妄想思维。\"这一观察——现在被称为 Eliza 效应——促使 Weizenbaum 在余生中致力于警告人们不要过度将智能归因于机器。他 1976 年的著作《计算机力量与人类理性》成为对人工智能最早、最持久的伦理批判之一。讽刺的是，ELIZA 从未被设计为聊天机器人或治疗工具。Weizenbaum 将其视为一个语言处理研究平台。但公众和计算机行业看到了截然不同的东西：人机对话的诞生。今天，每一个 Siri 查询、每一条 ChatGPT 消息、每一个客服聊天机器人，都可以追溯到 1966 年在马萨诸塞州剑桥的一台分时大型机上运行的模式匹配程序。"
+  },
+  "date": "1966-01",
+  "datePrecision": "month",
+  "displayDate": {
+    "en": "January 1966",
+    "zhHans": "1966年1月"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 7,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "First demonstration that machines could engage in apparently meaningful dialogue with humans, establishing the fundamental paradigm of conversational AI. The pattern-matching architecture remained the dominant approach for chatbots for over four decades.",
+        "zhHans": "首次证明机器可以与人类进行表面上富有意义的对话，确立了对话式 AI 的基本范式。模式匹配架构在超过四十年的时间里一直是聊天机器人的主导方法。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "computer scientists",
+        "linguistics researchers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "weizenbaum-eliza-1966",
+        "smithsonian-eliza-2026"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Bridged AI and the humanities in an unprecedented way. ELIZA raised profound questions about what it means to 'understand' and whether machines deserve moral consideration—questions that remain central to AI ethics today. Weizenbaum's own ethical awakening, triggered by the ELIZA effect, seeded the field of AI ethics a full decade before it was named.",
+        "zhHans": "以前所未有的方式打通了 AI 与人文学科的联系。ELIZA 引发了关于\"理解\"意味着什么以及机器是否值得道德考量的深刻问题——这些至今仍是 AI 伦理的核心议题。Weizenbaum 自身的伦理觉醒由 Eliza 效应触发，在 AI 伦理这个领域被命名之前整整十年就播下了种子。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "philosophers",
+        "ethicists",
+        "general public"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "weizenbaum-eliza-1966",
+        "smithsonian-eliza-2026",
+        "weizenbaum-1976-computer-power"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "ELIZA became widely distributed and played with, exposing non-technical users to the idea that computers could 'talk.' It planted the cultural seed for public expectations of conversational AI that would take 50+ years to be genuinely met.",
+        "zhHans": "ELIZA 被广泛分发和使用，让非技术用户接触到计算机可以\"交谈\"的理念。它在大众文化中种下了对对话式 AI 的期待的种子——这颗种子需要 50 多年才被真正满足。"
+      },
+      "affectedGroups": [
+        "general public",
+        "students",
+        "hobbyists"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "smithsonian-eliza-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "eliza-published-1966",
+      "text": {
+        "en": "Joseph Weizenbaum published ELIZA in the Communications of the ACM, Volume 9, Number 1 (January 1966).",
+        "zhHans": "Joseph Weizenbaum 于 1966 年 1 月在《ACM 通讯》第 9 卷第 1 期发表了 ELIZA。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "weizenbaum-eliza-1966"
+      ]
+    },
+    {
+      "id": "eliza-effect-observed",
+      "text": {
+        "en": "Users, including Weizenbaum's secretary, attributed human-like understanding to ELIZA despite its simple keyword-matching mechanism. Weizenbaum called this 'powerful delusional thinking in quite normal people.'",
+        "zhHans": "包括 Weizenbaum 秘书在内的用户将人类般的理解力归因于 ELIZA，尽管其机制仅是简单的关键词匹配。Weizenbaum 将此称为\"相当正常的人身上的强大妄想思维\"。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "weizenbaum-eliza-1966",
+        "smithsonian-eliza-2026",
+        "weizenbaum-1976-computer-power"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "weizenbaum-eliza-1966",
+      "supports": [
+        "eliza-published-1966",
+        "eliza-effect-observed"
+      ],
+      "quote": "ELIZA is a program operating within the MAC time-sharing system at MIT which makes certain kinds of natural language conversation between man and computer possible."
+    },
+    {
+      "sourceId": "smithsonian-eliza-2026",
+      "supports": [
+        "eliza-effect-observed"
+      ],
+      "quote": "The program didn't need to be complex for this technique to work. 'I am blah' can be transformed to 'How long have you been blah,' independently of the meaning of 'blah.'"
+    },
+    {
+      "sourceId": "weizenbaum-1976-computer-power",
+      "supports": [
+        "eliza-effect-observed"
+      ],
+      "quote": "I had not realized that extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people."
+    }
+  ],
+  "relatedEvents": [
+    "turing-test-1950",
+    "dartmouth-1956",
+    "chatgpt-2022"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Weizenbaum's ELIZA."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "openai-operator-2025",
+  "slug": "openai-operator",
+  "title": {
+    "en": "OpenAI launches Operator, the first AI agent that can browse the web autonomously",
+    "zhHans": "OpenAI 发布 Operator，首个可自主浏览网页的 AI Agent"
+  },
+  "summary": {
+    "en": "On January 23, 2025, OpenAI released Operator, a research preview of an AI agent that could autonomously navigate a web browser to perform tasks — ordering groceries, making dinner reservations, filling out forms. Powered by a Computer-Using Agent (CUA) model combining GPT-4o vision with o-series reasoning, Operator marked OpenAI's entry into the agent space. By July 2025, it was fully integrated into ChatGPT, making autonomous browsing a standard feature for hundreds of millions of users.",
+    "zhHans": "2025 年 1 月 23 日，OpenAI 发布 Operator，一个 AI Agent 的研究预览版，可自主操作浏览器执行任务——订购杂货、预订晚餐、填写表单。它由计算机使用代理（CUA）模型驱动，结合了 GPT-4o 的视觉能力和 o 系列推理能力，标志着 OpenAI 进入 Agent 领域。到 2025 年 7 月，它已完全集成到 ChatGPT 中，使自主浏览成为数亿用户的标准功能。"
+  },
+  "narrative": {
+    "en": "Operator represented a major product shift for OpenAI: from answering questions to taking actions. Unlike chatbots that responded to prompts, Operator could navigate complex websites, log into accounts, fill out multi-step forms, compare products across tabs, and handle exceptions like CAPTCHAs and cookie consent banners. The agent showed its work in a dedicated browser window, allowing users to supervise and intervene. The January launch was limited to US Pro users. The impact was immediate and twofold. First, it validated the 'AI agent' category for mainstream consumers — showing that AI could not just talk but act. Second, it triggered a competitive scramble: Anthropic's Computer Use (October 2024) had preceded it, but Operator was more polished. By summer 2025, Google, Meta, and multiple startups had all launched competing browser agents. The July 2025 integration into ChatGPT was transformative: every ChatGPT user could now delegate web tasks. The quality varied — Operator handled simple e-commerce well but struggled with complex enterprise workflows — but the direction was clear: 2025 was the year AI agents became a consumer reality.",
+    "zhHans": "Operator 代表了 OpenAI 的重大产品转变：从回答问题到采取行动。与响应提示的聊天机器人不同，Operator 可以操作复杂的网站、登录账户、填写多步骤表单、跨标签页比较产品、并处理验证码和 Cookie 同意横幅等例外情况。Agent 在专用浏览器窗口中展示其操作，允许用户监督和干预。1 月的发布限于美国 Pro 用户。其影响是直接且双重的。首先，它为主流消费者验证了\"AI Agent\"这一类别——展示了 AI 不仅能说话还能行动。其次，它引发了一场竞争竞赛：Anthropic 的 Computer Use（2024 年 10 月）先于它出现，但 Operator 更成熟。到 2025 年夏季，Google、Meta 和多家初创公司都推出了竞争性的浏览器 Agent。2025 年 7 月集成到 ChatGPT 中具有变革性意义：现在每个 ChatGPT 用户都可以委托网络任务。质量各有不同——Operator 处理简单电商得很好，但在复杂企业工作流中仍有困难——但方向是明确的：2025 年是 AI Agent 成为消费者现实的一年。"
+  },
+  "date": "2025-01-23",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "January 23, 2025",
+    "zhHans": "2025年1月23日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "First mainstream AI agent product capable of autonomous web browsing. Combined computer vision with reasoning to navigate real websites. Validated the 'agent' category for consumer AI.",
+        "zhHans": "首个能够自主浏览网页的主流 AI Agent 产品。结合了计算机视觉和推理能力来操作真实网站。验证了消费级 AI 的\"Agent\"类别。"
+      },
+      "affectedGroups": [
+        "ChatGPT users",
+        "consumers",
+        "AI companies"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-operator"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Triggered industry-wide agent race. Every major AI company launched competing browser agents within months. Integrated into ChatGPT by July 2025, making agent capabilities available at massive scale.",
+        "zhHans": "触发了全行业的 Agent 竞赛。每家主要 AI 公司都在数月内推出了竞争性浏览器 Agent。2025 年 7 月集成到 ChatGPT，使 Agent 能力在大规模范围内可用。"
+      },
+      "affectedGroups": [
+        "AI companies",
+        "web platforms",
+        "developers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "techcrunch-operator"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "openai-operator-release-2025",
+      "text": {
+        "en": "OpenAI released Operator on January 23, 2025 — an AI agent that autonomously browses the web to perform tasks, powered by a Computer-Using Agent model.",
+        "zhHans": "OpenAI 于 2025 年 1 月 23 日发布 Operator——一个由计算机使用代理模型驱动的 AI Agent，可自主浏览网页执行任务。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-operator"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "openai-operator",
+      "supports": [
+        "openai-operator-release-2025"
+      ],
+      "quote": "A research preview of an agent that can use its own browser to perform tasks for you."
+    },
+    {
+      "sourceId": "techcrunch-operator",
+      "supports": [
+        "openai-operator-release-2025"
+      ],
+      "quote": "OpenAI launches Operator, an AI agent that performs tasks autonomously."
+    }
+  ],
+  "relatedEvents": [
+    "gpt4o-2024",
+    "o1-2024"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for OpenAI Operator."
+      }
+    ]
+  },
+  "categories": [
+    "product"
+  ]
+}

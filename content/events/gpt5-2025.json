@@ -1,0 +1,133 @@
+{
+  "id": "gpt5-2025",
+  "slug": "gpt-5",
+  "title": {
+    "en": "OpenAI releases GPT-5, unifying reasoning, multimodality, and task execution in a single system",
+    "zhHans": "OpenAI 发布 GPT-5，将推理、多模态和任务执行统一到单一系统中"
+  },
+  "summary": {
+    "en": "On August 7, 2025, OpenAI released GPT-5, a unified AI system that combined advanced reasoning, native multimodality, and autonomous task execution — eliminating the need for users to switch between separate models (GPT-4o for chat, o-series for reasoning, DALL-E for images). According to Sam Altman, GPT-5 could 'provide PhD-level expertise' across domains. The release marked the culmination of OpenAI's journey from a single-purpose language model (GPT-3, 2020) to a general-purpose AI system capable of reasoning, creating, and acting.",
+    "zhHans": "2025 年 8 月 7 日，OpenAI 发布了 GPT-5，一个统一的 AI 系统，结合了高级推理、原生多模态和自主任务执行——消除了用户在独立模型之间切换的需要（GPT-4o 用于聊天，o 系列用于推理，DALL-E 用于图像）。据 Sam Altman 称，GPT-5 可以跨领域\"提供博士级专业知识\"。这次发布标志着 OpenAI 从单一用途语言模型（GPT-3，2020）到能够推理、创造和行动的通用 AI 系统的旅程达到了顶峰。"
+  },
+  "narrative": {
+    "en": "GPT-5 was the model that OpenAI had been building toward since GPT-3. The previous architecture required separate models for different tasks: GPT-4o for chat and vision, o1/o3 for reasoning, DALL-E for image generation. GPT-5 unified all three in a single neural network. It could: reason through complex multi-step problems using internal chain-of-thought (inherited from o-series), understand and generate text, images, and audio natively, and execute multi-step tasks autonomously — browsing the web, using tools, writing and running code. The benchmarks were impressive but not uniformly transformative. GPT-5 scored at PhD-level on GPQA Diamond, near the top on Humanity's Last Exam, and set new records on various coding benchmarks. However, it also had embarrassing failures — struggling with basic spelling, simple geography questions, and tasks that required common sense — a reminder that 'PhD-level' expertise in specialized domains did not equate to general intelligence. OpenAI emphasized GPT-5's 'thinking level toggle' — users could control how much compute the model spent on reasoning, from quick answers to deep analysis. This reinforced the inference-time compute paradigm. The release had three major implications. First, it validated the 'unified model' thesis: one model for all tasks was possible and practical. Second, it reset expectations for AGI timelines — Altman's 'PhD-level' claim triggered debate about whether GPT-5 qualified as AGI or not. Third, it triggered responses: Anthropic, Google, and DeepSeek all accelerated their unified model roadmaps. GPT-5.1 followed in November 2025 with a thinking/instant mode split.",
+    "zhHans": "GPT-5 是 OpenAI 自 GPT-3 以来一直在构建的模型。之前的架构需要不同任务使用不同模型：GPT-4o 用于聊天和视觉，o1/o3 用于推理，DALL-E 用于图像生成。GPT-5 将三者统一到单一神经网络中。它可以：使用内部思维链（继承自 o 系列）推理复杂的多步骤问题；原生理解和生成文本、图像和音频；并自主执行多步骤任务——浏览网页、使用工具、编写和运行代码。基准测试令人印象深刻但不统一具有变革性。GPT-5 在 GPQA Diamond 上达到博士级水平，在 Humanity's Last Exam 上接近顶部，并在多个编程基准上刷新了纪录。然而，它也有令人尴尬的失败——在基本拼写、简单地理问题和需要常识的任务上遇到困难——这提醒我们，在专业领域的\"博士级\"专业知识并不等同于通用智能。OpenAI 强调了 GPT-5 的\"思考级别切换\"——用户可以控制模型在推理上花费多少计算资源，从快速回答到深度分析。这强化了推理时计算范式。这次发布有三个主要影响。首先，它验证了\"统一模型\"论点：一个模型处理所有任务是可能且实用的。其次，它重置了对 AGI 时间线的预期——Altman 的\"博士级\"声明引发了关于 GPT-5 是否符合 AGI 资格的辩论。第三，它引发了回应：Anthropic、Google 和 DeepSeek 都加速了他们的统一模型路线图。GPT-5.1 于 2025 年 11 月发布，增加了思考/即时模式切换。"
+  },
+  "date": "2025-08-07",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "August 7, 2025",
+    "zhHans": "2025年8月7日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 7,
+  "consensusLevel": "broad",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "First model to unify advanced reasoning, native multimodality, and autonomous task execution in a single system. PhD-level on GPQA Diamond. Set new records on coding and reasoning benchmarks. Eliminated need for model switching.",
+        "zhHans": "第一个将高级推理、原生多模态和自主任务执行统一到单一系统中的模型。在 GPQA Diamond 上达到博士级。在编程和推理基准上刷新了纪录。消除了模型切换的需要。"
+      },
+      "affectedGroups": [
+        "ChatGPT users",
+        "developers",
+        "enterprises"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "wikipedia-gpt5"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Validated the 'unified model' paradigm — one model for all tasks. Reset AGI timeline expectations. Triggered industry-wide race to unified models. Reinforced inference-time compute scaling as core capability mechanism.",
+        "zhHans": "验证了\"统一模型\"范式——一个模型处理所有任务。重置了 AGI 时间线预期。引发了全行业对统一模型的竞赛。强化了推理时计算缩放作为核心能力机制。"
+      },
+      "affectedGroups": [
+        "AI industry",
+        "researchers",
+        "investors"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "wikipedia-gpt5"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "Basic task failures (spelling, geography) despite PhD-level claims raised questions about reliability and overclaiming. 'PhD-level' AGI claims triggered debate about whether such framing was misleading.",
+        "zhHans": "尽管声称博士级水平，但基本任务上的失败（拼写、地理）引发了对可靠性和过度宣传的质疑。\"博士级\"AGI 声明引发了关于这种框架是否具有误导性的辩论。"
+      },
+      "affectedGroups": [
+        "general public",
+        "policymakers",
+        "AI researchers"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "wikipedia-gpt5"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gpt5-release-2025",
+      "text": {
+        "en": "OpenAI released GPT-5 on August 7, 2025 — a unified AI system combining reasoning, multimodality, and autonomous task execution.",
+        "zhHans": "OpenAI 于 2025 年 8 月 7 日发布 GPT-5——一个结合推理、多模态和自主任务执行的统一 AI 系统。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "wikipedia-gpt5"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "wikipedia-gpt5",
+      "supports": [
+        "gpt5-release-2025"
+      ],
+      "quote": "GPT-5 is a multimodal large language model developed by OpenAI. Launched on August 7, 2025."
+    }
+  ],
+  "relatedEvents": [
+    "gpt4-2023",
+    "gpt4o-2024",
+    "o1-2024",
+    "chatgpt-2022"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for GPT-5."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

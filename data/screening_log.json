@@ -1,0 +1,702 @@
+{
+  "_description": "候选事件初筛评分日志。每条记录对应一次 5 维 × 0-2 快速打分，用于后续审核和数据模型迭代时的回溯分析。分数不入 event JSON，只在此留存。",
+  "_schema": {
+    "candidateId": "临时标识，用于指代候选事件",
+    "eventId": "该候选通过审核后对应的 content/events/ 中的 id（可选，事后回填）",
+    "source": "发现信源",
+    "screenedAt": "评分日期",
+    "scores": {
+      "verifiability": "0-2: 无来源→有二级→有原始来源",
+      "novelty": "0-2: 重复→增量→新节点",
+      "spillover": "0-2: 圈内→单一群体→跨领域",
+      "durability": "0-2: 短期→可能持续→已制度化",
+      "sourceQuality": "0-2: 流言→可靠二级→原始+独立确认"
+    },
+    "total": "5 项之和，满分 10",
+    "decision": "skip (0-4) / pool (5-7) / draft (8-10)",
+    "notes": "简短判断理由",
+    "reviewed": "是否已通过审核进入 content/events/"
+  },
+  "entries": [
+    {
+      "candidateId": "deepseek-r1-2025",
+      "eventId": "deepseek-r1-2025",
+      "source": "Wikipedia 2025 in AI + Reuters + CNBC",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 3,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 11,
+      "decision": "draft",
+      "notes": "Open-source reasoning matching o1 at fraction of cost. Triggered $593B NVIDIA wipeout and global semiconductor selloff.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "stargate-project-2025",
+      "eventId": null,
+      "source": "Wikipedia 2025 in AI + OpenAI blog",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "$500B AI infrastructure investment by OpenAI/SoftBank/Oracle/MGX. Infrastructure scale unprecedented but not a technical breakthrough.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "openai-operator-2025",
+      "eventId": "openai-operator-2025",
+      "source": "Wikipedia 2025 in AI + TechCrunch",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "First autonomous browser agent from OpenAI. July 2025 integrated into ChatGPT as ChatGPT agent. Early stage but triggered agent race.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "eu-ai-act-2025",
+      "eventId": "eu-ai-act-enforcement-2025",
+      "source": "EU digital strategy + Wikipedia",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 3,
+        "sourceQuality": 2
+      },
+      "total": 11,
+      "decision": "draft",
+      "notes": "First binding comprehensive AI regulation worldwide. Prohibited practices + AI literacy obligations effective Feb 2 2025. Global regulatory template.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "vibe-coding-2025",
+      "eventId": null,
+      "source": "Wikipedia 2025 in AI + IBM",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 6,
+      "decision": "pool",
+      "notes": "Cultural term coined by Andrej Karpathy defining AI-assisted programming era. Novel terminology but unclear lasting impact.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "paris-ai-summit-2025",
+      "eventId": null,
+      "source": "Wikipedia AI Action Summit 2025",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Paris AI Action Summit Feb 10-11 2025. France committed €109B AI investment. 61 countries signed. Global governance milestone but limited enforcement.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "musk-openai-bid-2025",
+      "eventId": null,
+      "source": "Wikipedia 2025 in AI + NYT",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "total": 7,
+      "decision": "pool",
+      "notes": "Elon Musk led $97.4B hostile bid for OpenAI nonprofit. Rejected Feb 14. Dramatic corporate governance event but no lasting structural impact.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "gpt45-orion-2025",
+      "eventId": null,
+      "source": "Wikipedia GPT-4.5 + Live Science",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 7,
+      "decision": "pool",
+      "notes": "First AI model to pass original Turing test (73% human rate). Symbolic philosophical milestone but evolutionary model - quickly superseded by o3 and GPT-5.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "gpt-image-2025",
+      "eventId": "gpt-image-2025",
+      "source": "Wikipedia GPT Image + CNN",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Native image generation in ChatGPT. Ghibli-style images went globally viral March 27. Sparked major copyright/ethics debate. Product integration breakthrough.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "llama4-2025",
+      "eventId": "llama-4-2025",
+      "source": "Meta AI blog + Wikipedia",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Meta's natively multimodal open-weight model (Maverick + Scout). Continues Llama open-weight lineage. Important for open ecosystem standardization.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "qwen3-2025",
+      "eventId": null,
+      "source": "Wikipedia Qwen + GitHub",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Alibaba's open-source reasoning model family under Apache 2.0. Represents China's open-source frontier competitiveness alongside DeepSeek.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "google-ai-mode-search-2025",
+      "eventId": "google-ai-mode-search-2025",
+      "source": "Google blog + Search Engine Land",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 3,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 11,
+      "decision": "draft",
+      "notes": "Google's largest product change: Gemini-powered AI Mode in Search. Transforms search from link-list to answer-generation. Changes fundamental web economics.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "veo3-2025",
+      "eventId": null,
+      "source": "Google DeepMind blog + CNET",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 7,
+      "decision": "pool",
+      "notes": "Google's state-of-the-art video generation model, integrated into YouTube Studio. Competitive response to Sora but evolutionary advance.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "claude-code-2025",
+      "eventId": null,
+      "source": "Wikipedia Claude + Anthropic",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Terminal-native AI coding agent released Feb preview, May GA. Mainstreamed agentic coding workflows. Competed with Cursor, Copilot, Devin.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "gpt5-2025",
+      "eventId": "gpt5-2025",
+      "source": "Wikipedia GPT-5 + OpenAI",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Unified reasoning+multimodal+task execution system. Eliminates need to switch between specialized models. 'PhD-level expertise' claim. Product architecture paradigm shift.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "openai-pbc-restructure-2025",
+      "eventId": "openai-pbc-restructure-2025",
+      "source": "Wikipedia + NYT + CNBC",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "OpenAI completed transition from nonprofit-control to Public Benefit Corporation (PBC) Oct 28 2025. $130B valuation at stake. Ends years-long governance saga.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "figure-bmw-humanoid-2025",
+      "eventId": "figure-bmw-humanoid-2025",
+      "source": "Figure AI + BMW press release",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Figure 02 humanoid robot deployed at BMW Spartanburg plant. 10-hour autonomous shifts producing 30,000+ BMW X3 vehicles. First genuine humanoid robot production deployment.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "gemini-deep-think-imo-gold-2025",
+      "eventId": "gemini-deep-think-imo-gold-2025",
+      "source": "Google DeepMind blog + Ars Technica",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Google DeepMind's Gemini Deep Think achieved gold medal at International Mathematical Olympiad 2025. 35/42 points. AI reaches highest level of human mathematical competition.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "nvidia-4-trillion-market-cap-2025",
+      "eventId": "nvidia-4-trillion-2025",
+      "source": "Wikipedia AI bubble + Reuters",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "NVIDIA reached $4T market cap July 2025 (first company ever). $5T by Oct 2025. Symbol of AI investment boom becoming dominant economic force.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "california-sb53-2025",
+      "eventId": "california-sb53-2025",
+      "source": "California Governor press + Brookings + TechCrunch",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "California SB 53 signed Sep 29 2025, first US state AI safety law. Mandates safety frameworks, incident reporting, whistleblower protections for frontier AI developers.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "balaji-whistleblower-2025",
+      "eventId": "suchir-balaji-2025",
+      "source": "Wikipedia Suchir Balaji + SF Standard + Fortune",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "OpenAI whistleblower Suchir Balaji (26) death ruled suicide Feb 14 2025. Spotlighted AI whistleblower protection gaps. Catalyst for SB 53 and federal whistleblower act.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "nytimes-openai-copyright-2025",
+      "eventId": null,
+      "source": "NPR + Copyright Alliance",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "NYT v. OpenAI copyright case proceeds Mar 26 2025. Judge allows core infringement claims to continue. Landmark case defining whether AI training on copyrighted content is fair use.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "anthropic-asl3-2025",
+      "eventId": "anthropic-asl3-2025",
+      "source": "Anthropic Responsible Scaling Policy v3.0",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Anthropic activated ASL-3 safeguards in May 2025. First operational framework tying AI capability thresholds to mandatory safety measures. New research paradigm for safety.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "ai-job-displacement-2025",
+      "eventId": null,
+      "source": "CBS News + Intellizence + Programs.com",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "First wave of AI-driven layoffs: Chegg 45% workforce cut, Ergo 1000 jobs, ING 230 roles. Microsoft/IBM/Meta/Amazon cite automation in earnings calls. McKinsey projects 30% hours automated by 2030.",
+      "reviewed": false
+    },
+    {
+      "candidateId": "charlie-safety-act-2025",
+      "eventId": null,
+      "source": "US Senate Judiciary press release",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 7,
+      "decision": "pool",
+      "notes": "US AI Whistleblower Protection Act proposed in Senate. Federal complement to California SB 53. Status unclear (proposed, not enacted).",
+      "reviewed": false
+    },
+    {
+      "candidateId": "eu-ai-act-2024",
+      "eventId": "eu-ai-act-2024",
+      "source": "EU official + Wikipedia",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 3,
+        "durability": 3,
+        "sourceQuality": 2
+      },
+      "total": 12,
+      "decision": "draft",
+      "notes": "First comprehensive AI regulation globally. Passed European Parliament Mar 13, entered into force Aug 1, 2024.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "llama-3.1-405b-2024",
+      "eventId": "llama-3.1-405b-2024",
+      "source": "Meta AI blog + ChatForest review",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "First open-weight frontier model matching GPT-4 and Claude 3.5 Sonnet. 405B dense params, 128K context. Changed open-source paradigm.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "alphafold-nobel-2024",
+      "eventId": "alphafold-nobel-2024",
+      "source": "NobelPrize.org + Nature",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 3,
+        "durability": 3,
+        "sourceQuality": 2
+      },
+      "total": 12,
+      "decision": "draft",
+      "notes": "First AI system to win a Nobel Prize. AlphaFold2 recognized for predicting 200M protein structures. Legitimized AI as scientific tool at highest level.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "apple-intelligence-2024",
+      "eventId": "apple-intelligence-2024",
+      "source": "Apple Newsroom + The Verge",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Apple brings AI to 2B+ devices at WWDC 2024. Privacy-first approach + ChatGPT integration. Major product milestone but late to AI race.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "scarlett-johansson-openai-2024",
+      "eventId": "scarlett-johansson-openai-2024",
+      "source": "NYT + NPR + Guardian",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "ChatGPT voice 'Sky' sounded 'eerily similar' to Scarlett Johansson. Raised AI consent/ethics debate. OpenAI pulled the voice.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "suno-udio-lawsuit-2024",
+      "eventId": "suno-udio-lawsuit-2024",
+      "source": "RIAA + Guardian + Forbes",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Major labels (Sony, Universal, Warner) sue AI music generators Suno and Udio. Set template for AI x copyright litigation. Partial settlements in 2025.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "gemini-1.5-pro-2024",
+      "eventId": "gemini-1.5-pro-2024",
+      "source": "Google blog + AI Timeline",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "First model with 1M token context window (later 2M). Could process entire codebases/books in single prompt. Capability breakthrough in context length.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "grok-deepfake-crisis-2026",
+      "eventId": "grok-deepfake-crisis-2026",
+      "source": "Wikipedia 2026 in AI + FT",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "xAI's Grok image gen created explicit deepfakes. Indonesia, Malaysia, Philippines blocked access. Ofcom launched investigation. Major safety/ethics failure.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "deepseek-v4-2026",
+      "eventId": "deepseek-v4-2026",
+      "source": "DeepSeek official + Morph LLM",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "DeepSeek V4 open-weight (MIT). V4-Pro 1.6T MoE, V4-Flash 284B. Underpriced all frontier models. Continued open-weight competitiveness.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "sora-shutdown-2026",
+      "eventId": "sora-shutdown-2026",
+      "source": "OpenAI Help Center + TechXplore",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "OpenAI shut down Sora web/app April 26, 2026. First major AI product discontinuation by a frontier lab. Revealed limits of AI video generation economics.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "eu-ai-act-simplification-2026",
+      "eventId": "eu-ai-act-simplification-2026",
+      "source": "Wikipedia 2026 in AI",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "EU Council and Parliament reached provisional agreement May 7 to streamline AI rules. Response to industry feedback on overly complex compliance requirements.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "florida-sues-openai-2026",
+      "eventId": "florida-sues-openai-2026",
+      "source": "NBC News + NPR + Politico",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Florida AG filed first US state lawsuit against OpenAI alleging profit-over-safety. Landmark in AI liability litigation. Could set precedent for state-level AI lawsuits.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "ai-layoffs-wave-2026",
+      "eventId": "ai-layoffs-wave-2026",
+      "source": "NYT + NPR + TechCrunch + CNBC",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Meta cut 8K jobs (10%), moved 7K to AI roles. 92K+ tech workers laid off in 2026 H1 citing AI. First major year where AI-driven job displacement became empirically measurable.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "openclaw-2026",
+      "eventId": "openclaw-2026",
+      "source": "Wikipedia + TechCrunch + BI + NVIDIA",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Fastest-growing dev tool in history. 247K GitHub stars in 60d. Creator joined OpenAI. NVIDIA built NemoClaw. China 'raising the lobster' cultural phenomenon.",
+      "reviewed": true
+    },
+    {
+      "candidateId": "vibecoding-2025",
+      "eventId": "vibecoding-2025",
+      "source": "Wikipedia + Karpathy tweet",
+      "screenedAt": "2026-06-24",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Karpathy coined 'vibe coding' Feb 2 2025. Collins Word of the Year 2025. Captured shift from syntax craft to intent-driven coding with LLMs.",
+      "reviewed": true
+    }
+  ]
+}

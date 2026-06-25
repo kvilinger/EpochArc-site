@@ -1,0 +1,93 @@
+{
+  "id": "llama-4-2025",
+  "slug": "llama-4",
+  "title": {
+    "en": "Meta releases Llama 4, the first natively multimodal open-weight model family",
+    "zhHans": "Meta 发布 Llama 4，首个原生多模态开源权重模型家族"
+  },
+  "summary": {
+    "en": "In April 2025, Meta released Llama 4, the first open-weight model family built with natively multimodal architecture — processing text, images, and video jointly from the ground up rather than adding vision as a separate module. The family included Llama 4 Maverick (flagship reasoning) and Llama 4 Scout (efficient deployment). Building on the Llama 3.1 405B breakthrough, Llama 4 established open-weight multimodal AI as the new baseline for the open-source ecosystem.",
+    "zhHans": "2025 年 4 月，Meta 发布了 Llama 4，第一个从底层设计为原生多模态架构的开源权重模型家族——联合处理文本、图像和视频，而不是将视觉作为单独模块添加。该家族包括 Llama 4 Maverick（旗舰推理）和 Llama 4 Scout（高效部署）。在 Llama 3.1 405B 突破的基础上，Llama 4 确立了开源权重多模态 AI 作为开源生态系统的新基线。"
+  },
+  "narrative": {
+    "en": "The Llama 4 release continued Meta's strategy of open-weight AI leadership. While Llama 3 had proven that open models could match closed-source on text, Llama 4 aimed to do the same for multimodality — the ability to understand and generate across text, images, and video. Previous open multimodal models (like LLaVA) had been patched together by adding a vision encoder to a text LLM. Llama 4 was trained end-to-end as a multimodal model, achieving significantly better visual reasoning. The Maverick variant was optimized for agentic and reasoning tasks; Scout was designed for efficient deployment at lower compute budgets. The release was notable for its timing: it arrived just as the industry was converging on multimodality as the default expectation for any serious AI model. Competing with GPT-4o's native multimodality and Google's Gemini, Llama 4 ensured that the open-source ecosystem would not fall behind on the multimodal frontier. The models were released under Meta's custom license — more permissive than Llama 3 but with usage restrictions for large-scale services — sparking continued debate about what 'open source' meant for AI. Llama 4's release cemented the trend that each generation of open-weight models was closing the gap with proprietary systems faster than the previous generation.",
+    "zhHans": "Llama 4 的发布延续了 Meta 在开源权重 AI 领域的领导战略。Llama 3 已经证明了开放模型在文本上可以匹配闭源，Llama 4 的目标是在多模态方面做到同样的事情——跨文本、图像和视频理解和生成的能力。之前的开放多模态模型（如 LLaVA）是通过向文本 LLM 添加视觉编码器拼凑而成的。Llama 4 作为多模态模型端到端训练，实现了显著更好的视觉推理。Maverick 变体针对 Agent 和推理任务进行了优化；Scout 设计用于在较低计算预算下高效部署。此次发布的时机值得注意：它恰逢行业将多模态汇聚为任何严肃 AI 模型的默认期望之时。与 GPT-4o 的原生多模态和 Google 的 Gemini 竞争，Llama 4 确保了开源生态系统在多模态前沿不会落后。这些模型在 Meta 的自定义许可下发布——比 Llama 3 更宽松但对大规模服务有使用限制——引发了关于 AI 的\"开源\"含义的持续辩论。Llama 4 的发布巩固了一个趋势：每一代开源权重模型都比上一代更快地缩小了与专有系统的差距。"
+  },
+  "date": "2025-04-01",
+  "datePrecision": "month",
+  "displayDate": {
+    "en": "April 2025",
+    "zhHans": "2025年4月"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "First natively multimodal open-weight model family. End-to-end multimodal training achieved significantly better visual reasoning than patched approaches. Established multimodality as default for open-weight ecosystem.",
+        "zhHans": "首个原生多模态开源权重模型家族。端到端多模态训练实现了比拼凑方法显著更好的视觉推理。确立了多模态作为开源权重生态系统的默认标准。"
+      },
+      "affectedGroups": [
+        "AI developers",
+        "open-source community",
+        "researchers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "meta-llama-4"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "llama-4-release-2025",
+      "text": {
+        "en": "Meta released Llama 4 in April 2025 — the first natively multimodal open-weight model family including Maverick and Scout variants.",
+        "zhHans": "Meta 于 2025 年 4 月发布 Llama 4——首个原生多模态开源权重模型家族，包括 Maverick 和 Scout 变体。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "meta-llama-4"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "meta-llama-4",
+      "supports": [
+        "llama-4-release-2025"
+      ],
+      "quote": "The Llama 4 herd: The beginning of a new era of natively multimodal AI innovation."
+    }
+  ],
+  "relatedEvents": [
+    "llama-3.1-405b-2024",
+    "llama-2023"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Llama 4."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

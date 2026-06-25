@@ -1,0 +1,159 @@
+{
+  "id": "o1-2024",
+  "slug": "o1",
+  "title": {
+    "en": "OpenAI releases o1, the first reasoning model that 'thinks before it answers'",
+    "zhHans": "OpenAI 发布 o1，第一个\"思考后再回答\"的推理模型"
+  },
+  "summary": {
+    "en": "On September 12, 2024, OpenAI released o1 (codenamed 'Strawberry'), a large language model trained to spend more time 'thinking' before generating responses — using a chain-of-thought reasoning process internally. o1 scored in the 89th percentile on the International Mathematics Olympiad qualifier and reached PhD-level accuracy on physics, chemistry, and biology benchmarks. It demonstrated that scaling compute at inference time — not just training time — could unlock new capabilities, opening a second axis of AI progress.",
+    "zhHans": "2024 年 9 月 12 日，OpenAI 发布了 o1（代号\"Strawberry\"），一个经过训练在生成回复前花更多时间\"思考\"的大语言模型——内部使用思维链推理过程。o1 在国际数学奥林匹克资格赛中达到了第 89 百分位，在物理、化学和生物基准上达到了博士级准确率。它证明了在推理时——而不仅仅是训练时——扩展计算量可以解锁新能力，为 AI 进展开辟了第二个轴。"
+  },
+  "narrative": {
+    "en": "o1 represented the most significant conceptual shift in LLM architecture since the Transformer itself. The core insight was simple: if you let a model 'think' longer by generating an internal chain-of-thought before answering, it performs dramatically better on complex reasoning tasks. The model was trained using reinforcement learning to improve its chain-of-thought process — effectively learning how to think, not just what to output. The results were eye-opening. On the AIME (American Invitational Mathematics Examination), o1 solved 12/15 problems (vs. 1.8/15 for GPT-4o). On GPQA Diamond (PhD-level science), it exceeded expert accuracy. The model's reasoning ability generalized across chemistry, physics, biology, math, and coding. OpenAI framed this as a new paradigm: scaling inference-time compute (more 'thinking' = better answers) was now an axis of improvement alongside scaling training-time compute (more parameters + more data = better accuracy). The release also came with significant safety implications. o1's chain-of-thought reasoning made it more resistant to jailbreaking — it could 'think through' whether a request was harmful even when cleverly phrased. However, the internal reasoning being hidden from users raised new questions about AI transparency. The model was quickly followed by o1-mini (a smaller, cheaper version), o3 (December 2024, a further improvement in reasoning capability), and Google's Gemini 2.0 Flash Thinking. o1 established 'reasoning models' as a distinct category that all major AI labs would race to compete in throughout 2024 and 2025.",
+    "zhHans": "o1 代表了自 Transformer 以来 LLM 架构上最重要的概念转变。核心洞察很简单：如果你让模型在回答前通过内部思维链\"思考\"更长时间，它在复杂推理任务上的表现会大幅提升。该模型使用强化学习训练以改进其思维链过程——实际上是学习如何思考，而不仅仅是输出什么。结果令人大开眼界。在 AIME（美国邀请赛数学考试）上，o1 解答了 12/15 题（GPT-4o 为 1.8/15）。在 GPQA Diamond（博士级科学）上，它超过了专家准确率。模型的推理能力泛化到化学、物理、生物学、数学和编程。OpenAI 将此框架化为一个新的范式：扩展推理时计算（更多的\"思考\"=更好的答案）现在与扩展训练时计算（更多参数+更多数据=更好准确率）并列成为改进的方向。这次发布还伴随着重要的安全影响。o1 的思维链推理使其更抗越狱——即使请求被巧妙措辞，它也可以通过\"思考\"来判定是否有害。然而，对用户隐藏的内部推理过程引发了关于 AI 透明度的新问题。该模型之后很快发布了 o1-mini（更小、更便宜的版本）、o3（2024 年 12 月，推理能力进一步提升）和 Google 的 Gemini 2.0 Flash Thinking。o1 确立了\"推理模型\"作为独立类别，所有主要 AI 实验室将在 2024 和 2025 年竞相竞争。"
+  },
+  "date": "2024-09-12",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 12, 2024",
+    "zhHans": "2024年9月12日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 7,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Introduced test-time compute scaling as a new axis of AI progress. o1 achieved PhD-level accuracy on science benchmarks (GPQA Diamond) and solved 12/15 AIME math problems vs. GPT-4o's 1.8/15. The chain-of-thought reasoning approach generalized across chemistry, physics, biology, math, and coding — matching or exceeding expert human performance on hard reasoning tasks.",
+        "zhHans": "引入了测试时计算缩放作为 AI 进展的新维度。o1 在科学基准（GPQA Diamond）上达到博士级准确率，在 AIME 数学中解答 12/15 题（GPT-4o 为 1.8/15）。思维链推理方法泛化到化学、物理、生物学、数学和编程——在硬推理任务上达到或超过了人类专家水平。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "mathematicians",
+        "scientists",
+        "software engineers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-o1-2024",
+        "theverge-o1-2024"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Changed the AI field's understanding of scaling from a single axis (training compute) to two axes (training + inference compute). The concept of 'reasoning models' became a new category. Labs including Google, Anthropic, and DeepSeek all launched their own reasoning models in response. The idea that giving a model more time to 'think' improves performance had profound implications for AI system design, pricing, and capability forecasting.",
+        "zhHans": "将 AI 领域对缩放的理解从单一轴（训练计算）改变为两个轴（训练 + 推理计算）。\"推理模型\"的概念成为一个新类别。包括 Google、Anthropic 和 DeepSeek 在内的实验室都推出了自己的推理模型作为回应。给予模型更多时间\"思考\"可以提升性能这一观点对 AI 系统设计、定价和能力预测产生了深远影响。"
+      },
+      "affectedGroups": [
+        "entire AI field",
+        "researchers",
+        "AI companies",
+        "policymakers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-o1-2024",
+        "theverge-o1-2024"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "Hidden chain-of-thought reasoning raised transparency concerns — users could see the model's output but not its reasoning process. The model's improved resistance to jailbreaking was positive for safety, but the potential for deceptive reasoning (the model could 'think' harmful things without revealing them) created new AI governance challenges.",
+        "zhHans": "隐藏的思维链推理引发了透明度担忧——用户可以看到模型的输出但看不到其推理过程。模型抗越狱能力的提升对安全是积极的，但欺骗性推理的潜力（模型可以\"思考\"有害内容而不暴露出来）创造了新的 AI 治理挑战。"
+      },
+      "affectedGroups": [
+        "AI safety researchers",
+        "policymakers",
+        "ethicists",
+        "general public"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-o1-2024"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "o1-released-2024",
+      "text": {
+        "en": "OpenAI released o1 on September 12, 2024 — a reasoning model that uses internal chain-of-thought to spend more time 'thinking' before answering, achieving PhD-level accuracy on science benchmarks.",
+        "zhHans": "OpenAI 于 2024 年 9 月 12 日发布 o1——一个使用内部思维链在回答前花更多时间\"思考\"的推理模型，在科学基准上达到博士级准确率。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-o1-2024"
+      ]
+    },
+    {
+      "id": "o1-test-time-scaling",
+      "text": {
+        "en": "o1 established test-time compute scaling as a second axis of AI progress alongside training-time scaling, creating the 'reasoning model' category that all major AI labs would adopt.",
+        "zhHans": "o1 确立了测试时计算缩放作为与训练时缩放并列的 AI 进展第二轴，创造了所有主要 AI 实验室都会采用的\"推理模型\"类别。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-o1-2024",
+        "theverge-o1-2024"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "openai-o1-2024",
+      "supports": [
+        "o1-released-2024",
+        "o1-test-time-scaling"
+      ],
+      "quote": "We've developed a new series of AI models designed to spend more time thinking before they respond. They can reason through complex tasks and solve harder problems than previous models."
+    },
+    {
+      "sourceId": "theverge-o1-2024",
+      "supports": [
+        "o1-released-2024",
+        "o1-test-time-scaling"
+      ],
+      "quote": "OpenAI releases o1, its first model with 'reasoning' abilities."
+    }
+  ],
+  "relatedEvents": [
+    "gpt4-2023",
+    "gpt4o-2024",
+    "transformer-2017"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for o1 reasoning model."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

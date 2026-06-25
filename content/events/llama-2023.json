@@ -1,0 +1,140 @@
+{
+  "id": "llama-2023",
+  "slug": "llama",
+  "title": {
+    "en": "Meta releases LLaMA, triggering the open-weight LLM revolution",
+    "zhHans": "Meta 发布 LLaMA，触发开源权重大语言模型革命"
+  },
+  "summary": {
+    "en": "Meta published LLaMA (Large Language Model Meta AI) in February 2023, a set of foundation language models from 7B to 65B parameters trained on publicly available data only. LLaMA-13B outperformed GPT-3 (175B) on most benchmarks, proving that smaller, well-trained models could rival much larger ones. Although originally released under a non-commercial research license, the weights were leaked and quickly fine-tuned by the community — spawning the open-weight LLM ecosystem that reshaped the AI industry.",
+    "zhHans": "Meta 于 2023 年 2 月发表 LLaMA，一组从 7B 到 65B 参数的基础语言模型，仅在公开可用的数据上训练。LLaMA-13B 在大多数基准测试上超过了 GPT-3（175B），证明了更小但训练更好的模型可以与更大的模型竞争。虽然最初以非商业研究许可发布，权重被泄露并迅速被社区微调——催生了重塑 AI 产业的开源权重大语言模型生态。"
+  },
+  "narrative": {
+    "en": "Meta's LLaMA paper landed in an AI landscape dominated by closed-source LLMs from OpenAI and Google. The key claim: training on high-quality public data (Common Crawl, C4, Wikipedia, GitHub, etc.) rather than proprietary or web-scraped data could produce competitive results. LLaMA-13B's performance — matching GPT-3 on most benchmarks with 13x fewer parameters — was the headline. The model weights were shared with academic researchers via a request form. Within days, the weights were leaked on 4chan. What followed was a Cambrian explosion of community LLMs. Alpaca (by Stanford) fine-tuned LLaMA-7B for $600. Vicuna (by LMSYS) reached 90% of ChatGPT quality. WizardLM, Koala, and dozens more followed. The leaked LLaMA weights became the seed for the entire open-source LLM ecosystem. Meta responded by releasing LLaMA 2 in July 2023 under a commercial license, explicitly enabling business use. LLaMA 2's release with 7B, 13B, and 70B sizes, along with a detailed model card and safety evaluation, set a new standard for responsible open model release. By 2024, LLaMA 3 (8B, 70B, 405B) had become the de facto standard for open-weight LLMs. The LLaMA lineage demonstrated that democratized AI — accessible to individuals, startups, and researchers globally — could co-exist with and pressure the closed-source ecosystem, forcing pricing changes and enabling a global wave of LLM applications.",
+    "zhHans": "Meta 的 LLaMA 论文出现在由 OpenAI 和 Google 的闭源 LLM 主导的 AI 格局中。关键主张：在高质量公开数据（Common Crawl、C4、Wikipedia、GitHub 等）而非专有数据上训练可以产生有竞争力的结果。LLaMA-13B 的性能——在大多数基准测试上匹配 GPT-3 而参数少 13 倍——是头条新闻。模型权重通过申请表格与学术研究人员共享。数天内，权重在 4chan 上被泄露。随后是社区 LLM 的寒武纪大爆发。斯坦福大学的 Alpaca 以 $600 微调了 LLaMA-7B。LMSYS 的 Vicuna 达到了 ChatGPT 质量的 90%。WizardLM、Koala 等数十个模型接踵而至。泄露的 LLaMA 权重成为整个开源 LLM 生态的种子。Meta 的回应是于 2023 年 7 月以商业许可发布 LLaMA 2，明确允许商业使用。LLaMA 2 以 7B、13B 和 70B 大小发布，附有详细的模型卡和安全评估，为负责任的开放模型发布设定了新标准。到 2024 年，LLaMA 3（8B、70B、405B）已成为开源权重 LLM 的事实标准。LLaMA 谱系证明，民主化的 AI——全球的个人、初创公司和研究人员都可访问——可以与闭源生态共存并对其施加压力，迫使定价变化并推动了全球范围的 LLM 应用浪潮。"
+  },
+  "date": "2023-02-24",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "February 24, 2023",
+    "zhHans": "2023年2月24日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 7,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Triggered the open-weight LLM revolution. LLaMA's leaked weights enabled thousands of startups, researchers, and individuals worldwide to build, fine-tune, and deploy their own LLMs. The LLaMA ecosystem (Alpaca, Vicuna, Llama 2/3) made state-of-the-art language modeling accessible to anyone with modest compute resources, fundamentally altering the power dynamics of the AI industry.",
+        "zhHans": "触发了开源权重 LLM 革命。LLaMA 的泄露权重使全球数千家初创公司、研究人员和个人能够构建、微调和部署自己的 LLM。LLaMA 生态（Alpaca、Vicuna、Llama 2/3）使任何拥有适度计算资源的人都能使用最先进的语言建模，从根本上改变了 AI 产业的力量格局。"
+      },
+      "affectedGroups": [
+        "researchers",
+        "startups",
+        "small businesses",
+        "independent developers",
+        "global south"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "touvron-llama-2023",
+        "meta-llama-overview"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Forced pricing pressure on closed-source API providers (OpenAI, Anthropic) by providing a viable free alternative. Enabled a global wave of LLM-powered applications and startups that could not have afforded API-based models. Meta's decision to release commercially (Llama 2) directly challenged the business models of closed LLM companies.",
+        "zhHans": "通过提供可行的免费替代方案，对闭源 API 提供商（OpenAI、Anthropic）施加了定价压力。推动了一波全球范围的 LLM 驱动的应用和初创公司，这些公司原本无法承担基于 API 的模型。Meta 决定以商业许可发布（Llama 2）直接挑战了闭源 LLM 公司的商业模式。"
+      },
+      "affectedGroups": [
+        "tech industry",
+        "startups",
+        "investors",
+        "AI API providers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "touvron-llama-2023",
+        "meta-llama-overview"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "llama-published-2023",
+      "text": {
+        "en": "Meta published LLaMA on February 24, 2023 — a set of 7B to 65B parameter language models trained exclusively on publicly available data. LLaMA-13B outperformed GPT-3 (175B) on most benchmarks.",
+        "zhHans": "Meta 于 2023 年 2 月 24 日发表 LLaMA——一组 7B 到 65B 参数的语言模型，仅在公开可用数据上训练。LLaMA-13B 在大多数基准测试上超过了 GPT-3（175B）。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "touvron-llama-2023"
+      ]
+    },
+    {
+      "id": "llama-open-ecosystem",
+      "text": {
+        "en": "LLaMA's leaked weights triggered an open-weight LLM ecosystem including Alpaca, Vicuna, and Llama 2/3, democratizing access to state-of-the-art language models and reshaping the AI industry.",
+        "zhHans": "LLaMA 的泄露权重催生了包含 Alpaca、Vicuna 和 Llama 2/3 的开源权重 LLM 生态，使最先进语言模型的使用民主化，重塑了 AI 产业。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "touvron-llama-2023",
+        "meta-llama-overview"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "touvron-llama-2023",
+      "supports": [
+        "llama-published-2023",
+        "llama-open-ecosystem"
+      ],
+      "quote": "We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. LLaMA-13B outperforms GPT-3 on most benchmarks."
+    },
+    {
+      "sourceId": "meta-llama-overview",
+      "supports": [
+        "llama-open-ecosystem"
+      ],
+      "quote": "Meta Llama is a collection of state-of-the-art large language models designed to help developers and researchers build generative AI experiences."
+    }
+  ],
+  "relatedEvents": [
+    "gpt3-2020",
+    "chatgpt-2022",
+    "github-copilot-2022"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for LLaMA open-weight LLM."
+      }
+    ]
+  },
+  "categories": [
+    "society",
+    "capability"
+  ]
+}

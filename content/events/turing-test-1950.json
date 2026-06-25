@@ -1,0 +1,197 @@
+{
+  "id": "turing-test-1950",
+  "slug": "turing-test",
+  "title": {
+    "en": "Alan Turing publishes \"Computing Machinery and Intelligence\", proposing the Turing Test",
+    "zhHans": "艾伦·图灵发表《计算机器与智能》，提出图灵测试"
+  },
+  "summary": {
+    "en": "Alan Turing published his landmark paper in Mind, proposing the \"Imitation Game\"—a test to determine whether machines can think. Rather than defining \"thinking\" philosophically, Turing framed intelligence as a behavioral question: can a machine converse well enough to be indistinguishable from a human? This paper is widely regarded as the philosophical foundation of artificial intelligence.",
+    "zhHans": "艾伦·图灵在哲学期刊 Mind 上发表里程碑论文《计算机器与智能》，提出用\"模仿游戏\"（后称图灵测试）来判断机器是否能思考。图灵不纠缠\"思考\"的哲学定义，而是将智能转化为可操作的行为问题：机器能否在对话中让人无法分辨？这篇论文被公认为人工智能的哲学奠基之作。"
+  },
+  "narrative": {
+    "en": "Turing's 28-page paper appeared in the October 1950 issue of Mind. It opens with a deceptively simple question: \"Can machines think?\" Turing immediately sets this aside as \"too meaningless to deserve discussion\" and replaces it with a concrete, testable alternative—the Imitation Game. In this game, a human interrogator converses with two hidden participants (one human, one machine) and tries to identify which is which. If the machine can fool the interrogator as often as a human can, Turing argued, we have no good reason to deny it is thinking. The paper also anticipated and refuted nine major objections to machine intelligence—from theological arguments to the \"mathematical objection\" based on Gödel's incompleteness theorems. Remarkably, Turing predicted that by the year 2000, computers with 10^9 bits of storage would be able to play the imitation game well enough that an average interrogator would have no more than a 70% chance of correct identification after five minutes of questioning. While his timeline was too optimistic, the core paradigm he established—judging intelligence by performance rather than by internal mechanism—has shaped all subsequent AI research. The paper has since become one of the most cited and referenced philosophical works ever published, influencing not only computer science but also epistemology, cognitive science, and the philosophy of mind.",
+    "zhHans": "图灵的 28 页论文发表于 1950 年 10 月号的 Mind。开篇以一个看似简单的问题切入：\"机器能思考吗？\"图灵随即将其搁置，认为这个问题\"太过无意义不值得讨论\"，转而提出一个具体的、可检验的替代方案——模仿游戏。游戏中，一个人类审问者与两个隐藏的参与者（一个人类、一个机器）通过文本对话交流，试图判断谁是谁。如果机器能像人类一样频繁地骗过审问者，图灵认为我们没有理由否认它在思考。论文还预见并反驳了对机器智能的九种主要反对意见——从神学论证到基于哥德尔不完备定理的\"数学反对\"。图灵惊人地预测：到 2000 年，拥有 10^9 位存储容量的计算机将能玩好模仿游戏，让普通审问者在五分钟提问后正确识别的概率不超过 70%。虽然时间线过于乐观，但他建立的核心范式——通过表现而非内部机制来判断智能——塑造了此后所有 AI 研究。这篇论文已成为有史以来被引用和讨论最多的哲学文献之一，不仅影响计算机科学，也影响认识论、认知科学和心灵哲学。"
+  },
+  "date": "1950-10",
+  "datePrecision": "month",
+  "displayDate": {
+    "en": "October 1950",
+    "zhHans": "1950年10月"
+  },
+  "status": "published",
+  "significance": 3,
+  "impactIndex": 6,
+  "consensusLevel": "broad",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Transformed the question of machine intelligence from abstract philosophy into an operational, testable framework. The behavioral criterion replaced essentialist debates about what \"thinking\" means, defining the fundamental research question for 70+ years of AI.",
+        "zhHans": "将机器智能的问题从抽象哲学转变为可操作的、可检验的框架。行为标准取代了关于\"思考\"本质的本质主义辩论，定义了此后 70 余年 AI 研究的基本问题方向。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "philosophers",
+        "cognitive scientists"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "turing-1950-paper",
+        "ieee-turing-test-75-2025",
+        "sep-turing-test"
+      ]
+    },
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Established natural language dialogue as the benchmark for machine intelligence, a standard that remains central to NLP research and has directly influenced the design goals of modern language models from ELIZA to GPT-4.",
+        "zhHans": "确立了自然语言对话作为机器智能的基准，这一标准至今仍是 NLP 研究的核心目标，并直接影响从 ELIZA 到 GPT-4 的现代语言模型的设计方向。"
+      },
+      "affectedGroups": [
+        "NLP researchers",
+        "AI engineers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "turing-1950-paper",
+        "ieee-spectrum-70-years-ai-2026"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "The behavioral criterion alone proved insufficient: John Searle's Chinese Room Argument (1980) demonstrated that passing the Turing Test does not guarantee genuine understanding or consciousness. This created an enduring philosophical debate about whether behavioral tests can adequately measure intelligence, with implications for AI safety and ethics.",
+        "zhHans": "仅靠行为标准被证明不足：John Searle 的中文屋论证（1980）表明通过图灵测试不保证真正的理解或意识。这创造了关于行为测试是否能充分衡量智能的持久哲学辩论，对 AI 安全和伦理产生深远影响。"
+      },
+      "affectedGroups": [
+        "philosophers",
+        "AI safety researchers",
+        "ethicists"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sep-chinese-room",
+        "searle-1980-minds-brains"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "turing-published-1950",
+      "text": {
+        "en": "Alan Turing published \"Computing Machinery and Intelligence\" in the October 1950 issue of Mind, volume 49, pages 433-460.",
+        "zhHans": "艾伦·图灵于 1950 年 10 月在 Mind 杂志第 49 卷发表《计算机器与智能》，第 433-460 页。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "turing-1950-paper"
+      ]
+    },
+    {
+      "id": "turing-behavioral-shift",
+      "text": {
+        "en": "Turing's paper shifted the question of machine intelligence from philosophical definitions of \"thinking\" to a behavioral, falsifiable test—a framework that all subsequent AI research follows.",
+        "zhHans": "图灵的论文将机器智能问题从\"思考\"的哲学定义转向行为性的、可证伪的测试——这一框架被此后所有 AI 研究所遵循。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "ieee-turing-test-75-2025",
+        "ieee-spectrum-70-years-ai-2026"
+      ]
+    },
+    {
+      "id": "chinese-room-limitation",
+      "text": {
+        "en": "John Searle's Chinese Room Argument (1980) demonstrated that passing a behavioral test does not prove genuine understanding, exposing a fundamental limitation in the Turing Test as a measure of intelligence.",
+        "zhHans": "John Searle 的中文屋论证（1980）表明通过行为测试不能证明真正的理解，揭示了图灵测试作为智能衡量标准的根本局限。"
+      },
+      "claimType": "limitation",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sep-chinese-room",
+        "searle-1980-minds-brains"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "turing-1950-paper",
+      "supports": [
+        "turing-published-1950"
+      ],
+      "quote": "I propose to consider the question, 'Can machines think?'"
+    },
+    {
+      "sourceId": "ieee-turing-test-75-2025",
+      "supports": [
+        "turing-behavioral-shift"
+      ],
+      "quote": "The Turing test became a cornerstone in the philosophy and science of artificial intelligence."
+    },
+    {
+      "sourceId": "ieee-spectrum-70-years-ai-2026",
+      "supports": [
+        "turing-behavioral-shift"
+      ],
+      "quote": "The test remains an influential concept in AI and the philosophy of intelligence."
+    },
+    {
+      "sourceId": "sep-turing-test",
+      "supports": [
+        "turing-behavioral-shift"
+      ],
+      "quote": null
+    },
+    {
+      "sourceId": "sep-chinese-room",
+      "supports": [
+        "chinese-room-limitation"
+      ],
+      "quote": "The Chinese Room Argument holds that a computer executing a program cannot have a mind, understanding, or consciousness."
+    },
+    {
+      "sourceId": "searle-1980-minds-brains",
+      "supports": [
+        "chinese-room-limitation"
+      ],
+      "quote": null
+    }
+  ],
+  "relatedEvents": [
+    "dartmouth-1956",
+    "eliza-1966"
+  ],
+  "relatedForecasts": [
+    "agi-2027-2029"
+  ],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Turing's 1950 paper."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

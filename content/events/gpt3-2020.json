@@ -1,0 +1,158 @@
+{
+  "id": "gpt3-2020",
+  "slug": "gpt-3",
+  "title": {
+    "en": "OpenAI releases GPT-3, proving that scaling language models unlocks emergent capabilities",
+    "zhHans": "OpenAI 发布 GPT-3，证明规模化语言模型可解锁涌现能力"
+  },
+  "summary": {
+    "en": "In June 2020, OpenAI published GPT-3 (Generative Pre-trained Transformer 3), a 175-billion-parameter language model that demonstrated remarkable few-shot learning—the ability to perform novel tasks from just a handful of examples without fine-tuning. GPT-3 could write essays, generate code, translate languages, and answer questions at a quality that often blurred the line between human and machine output. The paper 'Language Models are Few-Shot Learners' (Brown et al.) validated the scaling hypothesis: larger models trained on more data get qualitatively better, not just incrementally better.",
+    "zhHans": "2020 年 6 月，OpenAI 发表了 GPT-3（生成式预训练 Transformer 3），一个拥有 1750 亿参数的语言模型，展示了卓越的少样本学习能力——仅需寥寥几个示例即可执行新任务，无需微调。GPT-3 撰写的文章、生成的代码、翻译的语言和回答的问题，其质量经常模糊了人类与机器输出之间的界限。论文《语言模型是少样本学习者》（Brown 等人）验证了缩放假说：更大的模型在更多数据上训练会得到质的提升，而不仅仅是量的改进。"
+  },
+  "narrative": {
+    "en": "GPT-3 was not the first large language model—GPT-2 (1.5B parameters) had made headlines a year earlier for being 'too dangerous to release.' But GPT-3 was different in scale and kind. At 175 billion parameters, trained on a filtered version of Common Crawl (hundreds of billions of tokens), it exhibited abilities that its smaller predecessors did not: basic arithmetic, language translation, code generation, and even primitive reasoning—all without task-specific training. The paper described these as 'emergent' capabilities, a term that would become central to the later debate about whether scaling alone could produce general intelligence. OpenAI commercialized GPT-3 via an API, creating a new business model for foundation models that competitors rapidly adopted. Developers built products on top of it—copywriting tools (Jasper, Copy.ai), code assistants (GitHub Copilot used an OpenAI model), and conversational AI. GPT-3 also sparked intense public debate: about AI-generated misinformation, bias in large-scale training data, the environmental cost of training, and the concentration of AI capability in a few well-funded labs. The scaling approach proved so compelling that it reshaped the AI industry. Microsoft invested $1 billion in OpenAI in 2019 and secured an exclusive GPT-3 license in 2020. Google, DeepMind, Meta, and Anthropic all launched their own large language model programs in response. GPT-3 itself was quickly superseded—InstructGPT (2022) refined it with human feedback, and GPT-4 (2023) scaled it further—but the 2020 paper marked the moment when 'scale' became the dominant force in AI progress, and the question shifted from 'can we build a bigger model?' to 'what capabilities emerge when we do?'",
+    "zhHans": "GPT-3 不是第一个大语言模型——GPT-2（15 亿参数）一年前就因\"太危险而无法发布\"登上了头条。但 GPT-3 在规模和质量上是不同的。拥有 1750 亿参数，在过滤过的 Common Crawl（数千亿标记）上训练，它展示了更小的前代模型所没有的能力：基本算术、语言翻译、代码生成，甚至初步推理——所有这些都不需要任务特定的训练。论文将这些描述为\"涌现\"能力，这一术语后来成为关于仅靠规模扩展是否能产生通用智能的辩论的核心。OpenAI 通过 API 将 GPT-3 商业化，为基础模型创造了新的商业模式，竞争对手迅速采纳。开发者在它之上构建产品——文案工具（Jasper、Copy.ai）、代码助手（GitHub Copilot 使用了 OpenAI 模型）和对话式 AI。GPT-3 也引发了激烈的公共辩论：关于 AI 生成的虚假信息、大规模训练数据中的偏见、训练的环境成本以及 AI 能力集中在少数资金充足的实验室手中。缩放方法被证明如此说服力，以至于重塑了 AI 产业。微软在 2019 年向 OpenAI 投资 10 亿美元，并在 2020 年获得了 GPT-3 的独家许可。Google、DeepMind、Meta 和 Anthropic 都推出了自己的大语言模型项目作为回应。GPT-3 本身很快被超越——InstructGPT（2022 年）通过人类反馈进行了改进，GPT-4（2023 年）进一步扩展了规模——但 2020 年的论文标志着\"规模\"成为 AI 进步的主导力量，问题从\"我们能建立更大的模型吗？\"转变为\"当我们这样做时会出现什么能力？\""
+  },
+  "date": "2020-06-11",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "June 11, 2020",
+    "zhHans": "2020年6月11日"
+  },
+  "status": "published",
+  "significance": 3,
+  "impactIndex": 9,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Demonstrated emergent few-shot learning at scale. GPT-3 could perform tasks it was never explicitly trained for—translation, arithmetic, code generation, question answering—simply from a few examples in the prompt. This established 'prompting' as a new programming paradigm and proved the scaling hypothesis to a skeptical field.",
+        "zhHans": "展示了大规模下的涌现式少样本学习。GPT-3 可以执行它从未被明确训练过的任务——翻译、算术、代码生成、问答——仅通过在提示中的几个示例。这确立了\"提示\"作为一种新编程范式的地位，并向持怀疑态度的领域证明了缩放假说。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "NLP researchers",
+        "software developers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "brown-gpt3-2020",
+        "kaplan-scaling-laws-2020"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Created the 'foundation model' business model: a single large model, accessible via API, that developers could adapt to thousands of downstream applications. This API-driven model became the default for AI commercialization. Microsoft invested billions, and an entire ecosystem of startups (Jasper, Copy.ai, GitHub Copilot) launched on GPT-3.",
+        "zhHans": "创造了\"基础模型\"商业模式：一个单一的大型模型通过 API 访问，开发者可将其适配到数千个下游应用。这种 API 驱动的模式成为 AI 商业化的默认方式。微软投资了数十亿美元，一整个初创公司生态系统（Jasper、Copy.ai、GitHub Copilot）在 GPT-3 上启动。"
+      },
+      "affectedGroups": [
+        "tech industry",
+        "investors",
+        "startups",
+        "Microsoft",
+        "OpenAI"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "brown-gpt3-2020"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Raised public awareness of AI risks at scale: generation of convincing misinformation, amplification of training data biases, environmental cost of training (estimated 552 tonnes of CO₂), and concentration of AI capability in a small number of well-funded labs.",
+        "zhHans": "提高了公众对规模化 AI 风险的认识：产生令人信服的虚假信息、放大训练数据中的偏见、训练的环境成本（估计 552 吨 CO₂）以及 AI 能力集中在少数资金充足的实验室手中。"
+      },
+      "affectedGroups": [
+        "policymakers",
+        "ethicists",
+        "general public",
+        "researchers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "brown-gpt3-2020"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gpt3-scaling-emergence",
+      "text": {
+        "en": "GPT-3, a 175-billion-parameter language model, demonstrated that scaling model size and training data leads to emergent capabilities not present in smaller models, including few-shot learning, basic arithmetic, and code generation without task-specific fine-tuning.",
+        "zhHans": "GPT-3，一个拥有 1750 亿参数的语言模型，证明了模型规模和数据规模的扩大能产生较小模型中不存在的涌现能力，包括少样本学习、基本算术和代码生成，而无需任务特定的微调。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "brown-gpt3-2020"
+      ]
+    },
+    {
+      "id": "gpt3-foundation-model-economy",
+      "text": {
+        "en": "GPT-3 established the 'foundation model via API' business model and triggered a global race among tech giants to build ever-larger language models, fundamentally restructuring the AI industry around scale.",
+        "zhHans": "GPT-3 建立了\"通过 API 提供基础模型\"的商业模式，并触发了科技巨头间建立更大语言模型的全球竞赛，从根本上围绕规模重构了 AI 产业。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "brown-gpt3-2020",
+        "kaplan-scaling-laws-2020"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "brown-gpt3-2020",
+      "supports": [
+        "gpt3-scaling-emergence",
+        "gpt3-foundation-model-economy"
+      ],
+      "quote": "We demonstrate that scaling up language models greatly improves task-agnostic, few-shot performance."
+    },
+    {
+      "sourceId": "kaplan-scaling-laws-2020",
+      "supports": [
+        "gpt3-scaling-emergence",
+        "gpt3-foundation-model-economy"
+      ],
+      "quote": "Power-law relationships predict model performance from scale, enabling informed resource allocation."
+    }
+  ],
+  "relatedEvents": [
+    "transformer-2017",
+    "chatgpt-2022",
+    "alexnet-2012"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for GPT-3."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

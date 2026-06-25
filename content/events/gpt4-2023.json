@@ -1,0 +1,156 @@
+{
+  "id": "gpt4-2023",
+  "slug": "gpt-4",
+  "title": {
+    "en": "OpenAI releases GPT-4, the first multimodal large language model",
+    "zhHans": "OpenAI 发布 GPT-4，第一个多模态大语言模型"
+  },
+  "summary": {
+    "en": "On March 14, 2023, OpenAI released GPT-4 — a multimodal model that could accept both text and image inputs while generating text outputs. GPT-4 scored in the 90th percentile on the bar exam, the 99th percentile on the SAT, and demonstrated dramatically improved reasoning, factuality, and steerability over GPT-3.5. It was integrated into ChatGPT Plus as a premium tier, and its API became the default for developers building on LLMs. GPT-4 raised the bar on what LLMs could do and set a new baseline for AI capability that persisted until the model release wave of late 2024.",
+    "zhHans": "2023 年 3 月 14 日，OpenAI 发布了 GPT-4——一个可以同时接受文本和图像输入并生成文本输出的多模态模型。GPT-4 在律师资格考试中达到了第 90 百分位，SAT 中第 99 百分位，并在推理能力、事实准确性和可引导性上相比 GPT-3.5 有显著提升。它被集成到 ChatGPT Plus 作为付费层，其 API 成为基于 LLM 构建的开发者的默认选择。GPT-4 提高了 LLM 能力的上限，并为 AI 能力设定了新的基线，这一基线一直保持到 2024 年底的模型发布潮。"
+  },
+  "narrative": {
+    "en": "GPT-4 was the culmination of the scaling approach OpenAI had pioneered with GPT-3. While OpenAI did not disclose its parameter count (citing competitive concerns), estimates placed it at 1.7 trillion parameters across a Mixture-of-Experts architecture with 8 expert models of 220B parameters each. The key advance was multimodal input — GPT-4 could process images, diagrams, screenshots, and handwritten text, not just typed text. In a paper accompanying the release, OpenAI evaluated GPT-4 on a battery of professional exams: it scored in the top 10% of test-takers on the Uniform Bar Exam (vs. bottom 10% for GPT-3.5), the 88th percentile on the LSAT, and the 99th percentile on the SAT Math. The model showed dramatically reduced hallucinations compared to GPT-3.5 and was more steerable (it could follow complex instructions with multiple constraints). GPT-4 also introduced the 'system prompt' concept, allowing developers to set the model's behavior, tone, and boundaries. GPT-4's release triggered a new phase in the AI industry: competitors raced to match its capabilities (Claude 3, Gemini 1.5, Llama 3), while regulators intensified scrutiny. The European Union's AI Act negotiations accelerated after its release. Its vision capabilities — reading diagrams, understanding memes, analyzing medical scans — opened use cases in education, accessibility, healthcare, and scientific research. GPT-4 was subsequently upgraded (GPT-4 Turbo, GPT-4o), but the March 2023 release marked the moment when LLMs became capable enough to be genuinely useful across a vast range of professional and creative tasks.",
+    "zhHans": "GPT-4 是 OpenAI 在 GPT-3 上开创的缩放方法的顶峰。OpenAI 没有披露其参数量（引述竞争关切），估计它采用混合专家架构，共 1.7 万亿参数，分为 8 个 2200 亿参数的专家模型。关键进展是多模态输入——GPT-4 可以处理图像、图表、截图和手写文字，而不仅仅是文本。在随发布附带的论文中，OpenAI 在一系列专业考试中评估了 GPT-4：它在统一律师资格考试中位于前 10%（GPT-3.5 位于后 10%），LSAT 第 88 百分位，SAT 数学第 99 百分位。与 GPT-3.5 相比，该模型的幻觉显著减少，可引导性更强（可以遵循包含多个约束的复杂指令）。GPT-4 还引入了\"系统提示\"概念，允许开发者设定模型的行为、语气和边界。GPT-4 的发布触发了 AI 产业的新阶段：竞争对手竞相追赶其能力（Claude 3、Gemini 1.5、Llama 3），同时监管机构加强审查。欧盟 AI 法案的谈判在其发布后加速。其视觉能力——阅读图表、理解迷因、分析医学扫描——在教育、无障碍、医疗保健和科学研究中开辟了新的应用场景。GPT-4 后来进行了升级（GPT-4 Turbo、GPT-4o），但 2023 年 3 月的发布标志着大语言模型已经足够强大，可以在广泛的专业和创造性任务中真正发挥作用。"
+  },
+  "date": "2023-03-14",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "March 14, 2023",
+    "zhHans": "2023年3月14日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 7,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Achieved professional-level performance on standardised exams (90th percentile bar exam, 99th percentile SAT Math). Introduced multimodal input (vision + text) at scale. Demonstrated significant reductions in hallucination and improved instruction-following compared to GPT-3.5.",
+        "zhHans": "在标准化考试中达到专业级别表现（律师资格考试前 10%，SAT 数学第 99 百分位）。大规模引入了多模态输入（视觉+文本）。与 GPT-3.5 相比，幻觉显著减少，指令遵循能力明显提升。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "developers",
+        "professionals",
+        "students"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-gpt4-2023",
+        "techcrunch-gpt4-2023"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Accelerated AI integration across professional services (law, accounting, consulting, software). ChatGPT Plus ($20/month with GPT-4) became the fastest-growing consumer subscription product. Triggered a wave of enterprise AI adoption across Fortune 500 companies.",
+        "zhHans": "加速了 AI 在专业服务领域（法律、会计、咨询、软件）的整合。ChatGPT Plus（含 GPT-4，每月 $20）成为增长最快的消费者订阅产品。触发了财富 500 强企业的企业级 AI 采用浪潮。"
+      },
+      "affectedGroups": [
+        "tech industry",
+        "professional services",
+        "enterprises",
+        "investors"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-gpt4-2023"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Raised the stakes on AI safety, alignment, and regulation. GPT-4's improved capabilities (including vision) expanded the surface area for misuse — generating convincing fake documents, detailed instructions for harmful activities, and automated disinformation at scale. Accelerated regulatory efforts including the EU AI Act.",
+        "zhHans": "提高了 AI 安全、对齐和监管的紧迫性。GPT-4 的增强能力（包括视觉）扩大了滥用的范围——生成令人信服的伪造文件、有害活动的详细指令以及大规模自动虚假信息。加速了包括欧盟 AI 法案在内的监管努力。"
+      },
+      "affectedGroups": [
+        "policymakers",
+        "ethicists",
+        "general public",
+        "AI safety researchers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-gpt4-2023"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gpt4-multimodal-release-2023",
+      "text": {
+        "en": "OpenAI released GPT-4 on March 14, 2023 — a multimodal model accepting text and image inputs, scoring in the top 10% of test-takers on the Uniform Bar Exam.",
+        "zhHans": "OpenAI 于 2023 年 3 月 14 日发布 GPT-4——一个可接受文本和图像输入的多模态模型，在统一律师资格考试中位于前 10%。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "openai-gpt4-2023"
+      ]
+    },
+    {
+      "id": "gpt4-capability-baseline",
+      "text": {
+        "en": "GPT-4 set a new capability baseline for LLMs that remained competitive through late 2024, achieved through a Mixture-of-Experts architecture estimated at 1.7T parameters.",
+        "zhHans": "GPT-4 为 LLM 设定了新的能力基线，该基线一直保持竞争力到 2024 年底，通过估计 1.7T 参数的混合专家架构实现。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-gpt4-2023"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "openai-gpt4-2023",
+      "supports": [
+        "gpt4-multimodal-release-2023",
+        "gpt4-capability-baseline"
+      ],
+      "quote": "We've created GPT-4, the latest milestone in OpenAI's effort in scaling up deep learning. GPT-4 is a large multimodal model that exhibits human-level performance on various professional and academic benchmarks."
+    },
+    {
+      "sourceId": "techcrunch-gpt4-2023",
+      "supports": [
+        "gpt4-multimodal-release-2023"
+      ],
+      "quote": "OpenAI releases GPT-4, a multimodal AI that it claims is state-of-the-art."
+    }
+  ],
+  "relatedEvents": [
+    "gpt3-2020",
+    "chatgpt-2022",
+    "llama-2023"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for GPT-4 multimodal LLM."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

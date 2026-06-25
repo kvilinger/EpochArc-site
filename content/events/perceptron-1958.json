@@ -1,0 +1,153 @@
+{
+  "id": "perceptron-1958",
+  "slug": "perceptron",
+  "title": {
+    "en": "Frank Rosenblatt demonstrates the Perceptron, the first artificial neural network that learns",
+    "zhHans": "Frank Rosenblatt 演示感知机，第一个能学习的人工神经网络"
+  },
+  "summary": {
+    "en": "Frank Rosenblatt, a psychologist at the Cornell Aeronautical Laboratory, demonstrated the Perceptron—the first machine capable of learning from experience. Using an IBM 704 computer, it taught itself to distinguish between marked and unmarked cards after 50 trials. The New York Times called it \"the embryo of an electronic computer that the Navy expects will be able to walk, talk, see, write, reproduce itself and be conscious of its existence.\"",
+    "zhHans": "康奈尔航空实验室的心理学家 Frank Rosenblatt 演示了感知机——第一个能从经验中学习的机器。在一台 IBM 704 计算机上，它经过 50 次试验学会了区分左右标记的卡片。《纽约时报》称之为\"海军期望能够行走、说话、观看、书写、自我复制并意识到自身存在的电子计算机的胚胎。\""
+  },
+  "narrative": {
+    "en": "In July 1958, the U.S. Office of Naval Research unveiled a remarkable demonstration. A five-ton IBM 704 computer was fed a series of punch cards. After 50 trials, it taught itself to distinguish cards marked on the left from cards marked on the right—without being explicitly programmed for the task. Rosenblatt, who held a Ph.D. in psychology from Cornell, had been inspired by the way biological neurons work together. His Perceptron was a single-layer neural network that adjusted its internal connections based on whether its predictions were right or wrong—a mechanism that remains the foundation of all modern deep learning. The demonstration generated enormous excitement. The New Yorker called it \"the first serious rival to the human brain ever devised.\" Rosenblatt was optimistic, writing that \"we are about to witness the birth of such a machine—a machine capable of perceiving, recognizing and identifying its surroundings without any human training or control.\" But the enthusiasm was short-lived. In 1969, Marvin Minsky and Seymour Papert published \"Perceptrons,\" a book that mathematically proved the limitations of single-layer perceptrons (they could not solve the XOR problem). The book is often blamed for triggering the first \"AI winter\"—a period of drastically reduced funding and interest in neural network research. Rosenblatt died in a boating accident in 1971 at age 43, never seeing the revival of his ideas. Yet his core insight—that machines could learn from data by adjusting weighted connections—proved correct. When Geoffrey Hinton, Yann LeCun, and others revived neural networks in the 1980s and 2000s using multi-layer architectures, they were directly building on Rosenblatt's foundation. Today's trillion-parameter language models are the Perceptron's intellectual descendants.",
+    "zhHans": "1958 年 7 月，美国海军研究办公室公布了一场引人注目的演示。一台重五吨的 IBM 704 计算机被输入一系列穿孔卡片。经过 50 次试验，它学会了区分左边标记和右边标记的卡片——而没有被显式编程来做这项任务。Rosenblatt 拥有康奈尔大学心理学博士学位，他受到生物神经元共同工作方式的启发。他的感知机是一个单层神经网络，会根据预测正确与否来调整内部连接——这一机制至今仍是所有现代深度学习的基础。这次演示引起了巨大的兴奋。《纽约客》将其称为\"有史以来第一个人类大脑的严肃竞争对手\"。Rosenblatt 乐观地写道：\"我们即将见证这样一台机器的诞生——一台能够感知、识别和辨认其周围环境，无需任何人类训练或控制的机器。\"但热衷是短暂的。1969 年，Marvin Minsky 和 Seymour Papert 出版了《感知机》一书，在数学上证明了单层感知机的局限（它们无法解决 XOR 问题）。这本书常被指责为触发了第一次\"AI 冬天\"——一段神经网络研究资金和兴趣急剧下降的时期。Rosenblatt 于 1971 年在一场划船事故中去世，年仅 43 岁，从未看到他的思想复兴。然而他的核心洞察——机器可以通过调整加权连接从数据中学习——被证明是正确的。当 Geoffrey Hinton、Yann LeCun 等人在 1980 年代和 2000 年代使用多层架构复兴神经网络时，他们直接建立在 Rosenblatt 的基础上。今天万亿参数的语言模型是感知机的知识后裔。"
+  },
+  "date": "1958-07",
+  "datePrecision": "month",
+  "displayDate": {
+    "en": "July 1958",
+    "zhHans": "1958年7月"
+  },
+  "status": "published",
+  "significance": 3,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 3,
+      "direction": "positive",
+      "description": {
+        "en": "Proved that machines can learn from data rather than merely execute pre-programmed instructions. The perceptron's learning algorithm—adjusting weights through iterative error correction—is the direct ancestor of backpropagation and all modern deep learning training methods.",
+        "zhHans": "证明了机器可以从数据中学习，而非仅仅执行预设指令。感知机的学习算法——通过迭代纠错调整权重——是反向传播和所有现代深度学习训练方法的直接祖先。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "machine learning engineers",
+        "computer scientists"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "cornell-chronicle-perceptron-2019",
+        "mbrenndoerfer-perceptron-2025"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Seeded the connectionist approach to AI—learning through interconnected artificial neurons—as an alternative to the dominant symbolic AI paradigm. Though connectionism was sidelined during the first AI winter, it ultimately triumphed with the deep learning revolution of the 2010s.",
+        "zhHans": "播种了连接主义 AI 方法——通过互联人工神经元学习——作为主导符号 AI 范式的替代方案。虽然连接主义在第一次 AI 冬天中被边缘化，但最终在 2010 年代的深度学习革命中取得了胜利。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "neuroscientists",
+        "cognitive scientists"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "cornell-chronicle-perceptron-2019"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "The perceptron's principle of parallel matrix computation became the foundation for GPU-accelerated AI. This indirectly drove NVIDIA's transformation from a gaming graphics company into a trillion-dollar AI computing platform.",
+        "zhHans": "感知机的并行矩阵计算原理成为 GPU 加速 AI 的基础。这间接推动了 NVIDIA 从游戏图形公司转型为万亿美元市值的 AI 计算平台。"
+      },
+      "affectedGroups": [
+        "semiconductor industry",
+        "investors",
+        "hardware engineers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "cornell-chronicle-perceptron-2019"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "perceptron-demo-1958",
+      "text": {
+        "en": "Frank Rosenblatt demonstrated the Perceptron at the Cornell Aeronautical Laboratory in July 1958, showing that a machine could learn to classify visual patterns after 50 trials on an IBM 704 computer.",
+        "zhHans": "Frank Rosenblatt 于 1958 年 7 月在康奈尔航空实验室演示了感知机，展示了一台机器在 IBM 704 计算机上经过 50 次试验后能够学会分类视觉模式。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "cornell-chronicle-perceptron-2019"
+      ]
+    },
+    {
+      "id": "perceptron-foundation-deep-learning",
+      "text": {
+        "en": "The perceptron's learning algorithm—iterative weight adjustment based on prediction error—is the direct ancestor of backpropagation and all modern deep learning, establishing the fundamental principle that machines can learn from data.",
+        "zhHans": "感知机的学习算法——基于预测误差的迭代权重调整——是反向传播和所有现代深度学习的直接祖先，确立了机器可以从数据中学习的基本原则。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "cornell-chronicle-perceptron-2019",
+        "mbrenndoerfer-perceptron-2025"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "cornell-chronicle-perceptron-2019",
+      "supports": [
+        "perceptron-demo-1958",
+        "perceptron-foundation-deep-learning"
+      ],
+      "quote": "The perceptron was the first neural network. The foundations for all of this artificial intelligence were laid at Cornell."
+    },
+    {
+      "sourceId": "mbrenndoerfer-perceptron-2025",
+      "supports": [
+        "perceptron-foundation-deep-learning"
+      ],
+      "quote": "In 1958, Frank Rosenblatt created the perceptron at Cornell Aeronautical Laboratory, the first artificial neural network that could actually learn to classify patterns."
+    }
+  ],
+  "relatedEvents": [
+    "dartmouth-1956",
+    "eliza-1966"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Initial v2 entry for Rosenblatt's Perceptron."
+      }
+    ]
+  },
+  "categories": [
+    "capability"
+  ]
+}

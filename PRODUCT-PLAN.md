@@ -1,25 +1,25 @@
 # EpochArc 产品与上线规划
 
 **更新日期**：2026-06-24  
-**定位**：AI development roadmap, evidence index, and forward-looking forecast site.
+**定位**：AI development roadmap, evidence index, and future signals site.
 
 ---
 
 ## 1. 产品定位
 
-EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心价值是把 AI 发展的重要事实、来源证据、影响判断和前瞻预测整理成一条可筛选、可追溯、可更新的路线记录。
+EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心价值是把 AI 发展的重要事实、来源证据、影响判断和未来信号整理成一条可筛选、可追溯、可更新的路线记录。
 
 目标用户：
 
 - 想快速理解 AI 发展脉络的普通读者。
 - 需要有序追踪 AI 里程碑的产品、投资、研究和创作者人群。
-- 希望看到预测和历史节点如何互相连接的长期关注者。
+- 希望看到未来方向和历史节点如何互相连接的长期关注者。
 
 核心体验：
 
-- 首页直接进入时间轴和预测，不做营销式 landing page。
+- 首页直接进入时间轴和 Future Signals，不做营销式 landing page。
 - 每个节点可展开，看到摘要、影响评估、可信度和来源。
-- 预测必须能被未来裁定，不只是口号或年份猜测。
+- Future Signals 必须能被未来裁定，不只是口号或年份猜测。
 - 方法页公开收录和评分规则，让读者知道本站如何判断。
 
 ---
@@ -30,7 +30,7 @@ EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心�
 
 - 改变 AI 技术路线、产品化路径、社会认知、监管议程或产业结构的事件。
 - 可被来源验证的事实节点。
-- 有明确达成标准的未来预测。
+- 有明确达成标准的未来方向。
 
 不追求：
 
@@ -143,30 +143,20 @@ functions/
 
 ---
 
-## 7. 投票功能
+## 7. Future Signals 与投票
 
-可以实现。第一版建议只给预测卡投票：
+Future Signals 的完整数据来源、采纳标准、达成裁定、投票和运营规则见 [FORECASTS-SPEC.md](/Users/gang/Documents/Project/WhereIsAIGoing/FORECASTS-SPEC.md)。
 
-- 用户选择：`will happen` / `will not happen` / `unsure`。
-- 前端展示总票数和比例。
-- 后端用 D1 保存聚合和匿名事件。
-- 防刷：IP hash + user agent hash + forecast id + 日期窗口；不要存明文 IP。
-- 明确声明：投票代表读者观点，不影响事实评分。
+核心原则：
 
-建议 D1 表：
+- 模块对外命名为 `Future Signals / 未来信号`，不是 `Predictions`。
+- 每条方向必须有支持信号、反向信号、时间窗口和达成/未达成标准。
+- 用户投票命名为 `Reader Pulse / 读者预期`，只代表参与者预期，不作为事实证据。
+- 不登录的第一版使用 localStorage + D1 `voter_hash` + rate limit 做软防刷。
+- 同一用户对同一方向只有一个当前有效投票，但允许改投。
+- Future Signal 达成后应关联或生成时间轴事件，形成历史闭环。
 
-```sql
-CREATE TABLE forecast_votes (
-  id TEXT PRIMARY KEY,
-  forecast_id TEXT NOT NULL,
-  vote TEXT NOT NULL CHECK (vote IN ('yes', 'no', 'unsure')),
-  voter_hash TEXT NOT NULL,
-  created_at TEXT NOT NULL
-);
-
-CREATE INDEX idx_forecast_votes_forecast_id
-ON forecast_votes (forecast_id);
-```
+第一版可以先保留低摩擦投票，但不要把投票排序、投票比例或读者意见包装成预测概率。
 
 ---
 
@@ -177,7 +167,7 @@ ON forecast_votes (forecast_id);
 - 维护 v2 结构的 `data/events.json`、`data/forecasts.json` 和 `data/sources.json`。
 - 补齐所有空 URL 来源。
 - 给 Impact Score 增加 tooltip 或方法页解释。
-- 将预测卡补上更完整的支持信号、反向信号和来源。
+- 将 Future Signals 卡补上更完整的支持信号、反向信号和来源。
 - 方法页公开 v2 简版规则。
 
 ### Phase 2：结构化内容生产
@@ -224,7 +214,7 @@ ON forecast_votes (forecast_id);
 ### 布局
 
 - 内容最大宽度：`960px`。
-- 首页直接进入预测和时间轴，不做 landing page。
+- 首页直接进入 Future Signals 和时间轴，不做 landing page。
 - 卡片圆角保持 8-12px，不使用过度胶囊化的大面积容器。
 - 时间轴要保持时间、轴线、圆点和右侧节点的几何对齐。
 - 详情内容在原节点内展开，不弹出独立大卡。
@@ -241,8 +231,8 @@ ON forecast_votes (forecast_id);
 
 1. 补齐 L2/L3 事件的可点击来源 URL。
 2. 每个 L3 事件至少有 2 个独立来源。
-3. 每个预测有达成标准和未达成标准。
-4. 方法页公开来源分级、评分规则和预测裁定规则。
+3. 每个 Future Signal 有达成标准和未达成标准。
+4. 方法页公开来源分级、评分规则和 Future Signal 裁定规则。
 5. 数据校验脚本能在部署前阻断明显错误。
 6. 投票如上线，必须有隐私说明和反刷策略。
 7. 配置生产域名、`sitemap.xml`、canonical / `og:url`。

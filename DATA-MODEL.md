@@ -1,8 +1,8 @@
 # EpochArc 数据模型与内容治理规范
 
-**版本**:v2.0
+**版本**:v2.1
 **更新日期**:2026-06-24
-**适用范围**:AI 历史时间轴、前瞻预测、来源证据、评分标准与内容治理
+**适用范围**：AI 历史时间轴、未来信号、来源证据、评分标准与内容治理
 **目标**:让 EpochArc 成为一个可持续维护、可公开解释、可被质疑和修正的 AI 发展记录网站。
 
 产品定位、技术路线、投票实现和视觉规范见 [PRODUCT-PLAN.md](/Users/gang/Documents/Project/WhereIsAIGoing/PRODUCT-PLAN.md)。
@@ -88,7 +88,7 @@ export interface AIEvent {
   datePrecision: DatePrecision;
   displayDate?: LocalizedText;        // 如 "November 30, 2022"
 
-  category: EventCategory;
+  categories: EventCategory[];         // 1-2个分类，第一个为主分类
   status: ContentStatus;              // candidate / draft / reviewed / published / archived
 
   significance: SignificanceLevel;    // L1-L3
@@ -131,14 +131,12 @@ export type ConsensusLevel =
   | 'emerging';   // 新兴判断,证据还在积累
 
 export type EventCategory =
-  | 'model'
-  | 'capability'
-  | 'research'
-  | 'product'
-  | 'open_source'
-  | 'regulation'
-  | 'safety'
-  | 'social';
+  | 'capability'   // 能力突破
+  | 'product'      // 产品工具
+  | 'commerce'     // 商业产业
+  | 'governance'   // 治理监管
+  | 'safety'       // 安全伦理
+  | 'society';     // 社会文化
 ```
 
 #### 直接迁移原则
@@ -173,34 +171,58 @@ data/sources.json          ← 从事件/预测中自动提取生成
 
 ---
 
-### 2.2 事件类型：`EventCategory`
+### 2.2 事件分类：`categories`
 
-`category` 是时间轴卡片顶部标签的来源，也是一个主筛选维度。它描述事件的**主属性**，不是影响结果；影响结果放在 `impacts.dimension`。
+`categories` 是一个长度为 1-2 的数组。第一个是**主分类**（前端徽章着色和筛选以此为准），第二个是可选的**次分类**（当事件的重要叙事需要两个维度才能完整表达时使用）。
 
-`category` 是编辑的定性判断，不是从来源中自动提取的。同一个事件可以有多种归类角度，选择"最能解释它为什么被收录"的那一个。
+分类描述的是事件的**主属性**，不是影响结果；影响结果放在 `impacts.dimension`。
 
-每条事件只能有一个主类型。如果一个事件同时具备多个属性，其余侧面通过 `claims` 或 `impacts` 表达，不从 category 层面做多标签。
+#### 六分类定义
 
-| Category | 中文标签 | 判定标准 |
+| Category | 中文 | 一句话 | 判定标准 |
+| --- | --- | --- | --- |
+| `capability` | 能力突破 | AI 做到了以前做不到的事 | 前沿模型发布、首次达到人类/超人类水平、新范式（论文/架构/训练方法）改变了技术路线。不包含每次 benchmark 提升——必须是"能讲给不用 AI 的普通人听，对方会觉得'哇，真的吗'"的突破 |
+| `product` | 产品工具 | AI 变成了普通人能用的东西 | AI 能力进入用户可使用的产品、工具、工作流或平台。包括开源项目被当作产品使用（如 OpenClaw）。包含产品上线、重大迭代、退出市场（如 Sora 关停） |
+| `commerce` | 商业产业 | AI 公司、资本、市场的关键变化 | 公司治理重组、估值/市值里程碑、行业格局改变（如一家公司影响整个市场）、关键人事变动、重大交易/合作/收购、以 AI 为由的大规模裁员（作为商业决策面） |
+| `governance` | 治理监管 | 政府开始管 AI 了 | 法律、监管、法院判例、行政命令、国际协议、监管机构行动。面向行业监管而非个别公司 |
+| `safety` | 安全伦理 | AI 闯祸了，或引发伦理危机 | 安全事故、伦理争议、吹哨人事件、安全评测揭示新风险、深度伪造事件、版权诉讼（当核心争议是 AI 失控而非商业利益时） |
+| `society` | 社会文化 | AI 改变了社会，不用 AI 的人也能感受到 | 文化现象（如 vibecoding 流行、"养龙虾"梗）、就业危机（作为社会影响面）、公众认知时刻（如诺贝尔奖认可 AI）、开源运动改变行业权力结构 |
+
+#### 多分类规则
+
+一个事件最多 2 个分类。加第二分类的条件：
+
+> 对候选的第二分类，问：**"如果删掉这个分类维度，讲这个事件时会丢失多少信息？"**
+> 丢失 ≥ 30% → 加为第二分类；丢失 < 30% → 不加。
+
+**判定启发：**
+
+| 主分类 | 常见第二分类 | 典型触发条件 |
 | --- | --- | --- |
-| `model` | 模型发布 | 某个模型、模型族、模型版本或模型能力包被正式发布,并成为事件主体 |
-| `capability` | 能力突破 | 重点是 AI 首次或显著地完成此前不可行/不可用的任务,而不只是发布了一个产品 |
-| `research` | 研究范式 | 论文、算法、架构、训练方法或评测范式改变了研究路线 |
-| `product` | 产品化 | AI 能力进入用户可使用的产品、工作流、平台或商业服务 |
-| `open_source` | 开源事件 | 权重、代码、数据集、工具链或开放生态事件改变了访问门槛 |
-| `regulation` | 政策法规 | 法律、监管、法院、标准或政府政策成为事件主体 |
-| `safety` | 安全伦理 | 对齐、安全评测、伦理风险、暂停倡议、治理框架或事故成为事件主体 |
-| `social` | 社会影响 | 就业、教育、版权、媒体、公众舆论、劳动市场等社会外溢影响成为事件主体 |
+| `capability` | `commerce` | 模型发布引发巨大市场波动（如 DeepSeek R1 → $593B 美股蒸发） |
+| `capability` | `society` | 技术突破被全社会认可为文化时刻（如 AlphaFold 获诺贝尔奖） |
+| `commerce` | `society` | 公司决策引发大规模就业危机（如 Meta 裁 8000 人） |
+| `governance` | `safety` | 诉讼或监管直接源于安全事故（如佛罗里达诉 OpenAI） |
+| `product` | `commerce` | 产品变动揭示商业压力（如 Sora 关停 → 成本压力） |
+| `product` | `society` | 产品成为文化现象（如 OpenClaw 引发中国"养龙虾"热潮） |
+| `safety` | `society` | 安全事件引发公众广泛关注（如 Grok 深度伪造多国封禁） |
 
-判定优先级:
+**反例（不加第二分类）：**
+- GPT-4 发布：`capability` 为主，产品面可通过 `claims` 表达，信息丢失 < 30% → 不加 `product`
+- 欧盟 AI 法案通过：`governance` 足够，社会影响是长期后果 → 不加 `society`
 
-1. 如果事件主体是法规、法院或政策,优先 `regulation`。
-2. 如果事件主体是安全、伦理或对齐事件,优先 `safety`。
-3. 如果事件主体是模型发布,优先 `model`;它带来的能力变化写入 `impacts`。
-4. 如果事件主体是论文/架构/方法,优先 `research`。
-5. 如果事件主体是用户可直接使用的服务或工作流,优先 `product`。
-6. 如果事件的关键变化是开放访问,优先 `open_source`。
-7. 如果以上都不是,而重点是社会外溢后果,使用 `social`。
+#### 日期选择规则
+
+时间轴上的日期是 **"大量普通人可感知到这件事的时刻"**，而不是最早的酝酿或代码提交时间：
+
+| 事件形态 | 日期取什么 | 例子 |
+| --- | --- | --- |
+| 单日事件 | 发生日 | GPT-4 发布日、佛罗里达诉讼提起日 |
+| 渐变 + 引爆 | 引爆点（新闻量/GitHub stars/社交讨论爆发的那天或那周） | OpenClaw 取 2026-01-25（HN 发布引爆），而非 2025-11-24（Warelay 首次提交） |
+| 无明确引爆点 | 最早的大规模公开报道日 | vibecoding 概念流行取 Karpathy 造词那天（2025-02），而非后续数月的扩散 |
+| 仍在进行中 | 取有代表性的里程碑日 | AI 裁员潮取 Meta 宣布裁 8000 人那天（2026-05-19），这本身代表了一个可测量拐点 |
+
+酝酿期和后续扩散放在 `narrative` 中叙述，不改变时间轴日期。
 
 ---
 
@@ -333,9 +355,13 @@ export interface SourceRef {
 
 ---
 
-### 2.6 预测:`AIForecast`
+### 2.6 未来信号：`AIForecast`
 
-预测必须独立建模,不应只靠 `expected + description`。
+对外产品命名使用 **Future Signals / 未来信号**，避免让用户误以为本站在做确定性预测。内部数据仍使用 `AIForecast` / `forecasts.json`，含义是“可裁定的未来方向记录”。
+
+完整采纳标准、投票逻辑和运营规则见 [FORECASTS-SPEC.md](/Users/gang/Documents/Project/WhereIsAIGoing/FORECASTS-SPEC.md)。
+
+未来信号必须独立建模，不应只靠 `expected + description`。
 
 ```ts
 export interface AIForecast {
@@ -421,7 +447,7 @@ export interface ForecastVoteSummary {
 }
 ```
 
-预测卡展示时建议显示:
+未来信号卡展示时建议显示：
 
 - 预测窗口:例如 `2027-2029`,不要只写单一年份。
 - 置信度:低 / 中 / 高,不要早期就伪装成精确概率。
@@ -644,9 +670,9 @@ impactIndex =
 
 ---
 
-## 6. 预测内容规范
+## 6. 未来信号内容规范
 
-### 6.1 预测从哪里来
+### 6.1 未来信号从哪里来
 
 预测不应来自单一专家观点,也不应来自社交媒体热度。建议使用"信号篮子":
 
@@ -810,7 +836,7 @@ EpochArc 的数据方法不是"宣布 AI 真相",而是把 AI 发展的事实、
     "en": "November 30, 2022",
     "zhHans": "2022年11月30日"
   },
-  "category": "product",
+  "categories": ["product", "society"],
   "status": "published",
   "significance": 3,
   "impactIndex": 9,
