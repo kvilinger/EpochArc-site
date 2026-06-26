@@ -2038,6 +2038,55 @@
       cursor: help;
     }
 
+    /* ─── Cookie Notice ──────────────────────────────────────────── */
+    .cookie-notice {
+      position: fixed;
+      bottom: -100px;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: color-mix(in oklch, var(--surface) 92%, transparent);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      transition: bottom 0.3s ease;
+    }
+    .cookie-notice.show {
+      bottom: 0;
+    }
+    .cookie-notice-text {
+      font-size: 14px;
+      color: var(--c-text-secondary);
+      max-width: 600px;
+    }
+    .cookie-notice-close {
+      flex-shrink: 0;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--fg);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .cookie-notice-close:hover {
+      background: var(--border);
+    }
+    @media (max-width: 600px) {
+      .cookie-notice {
+        flex-direction: column;
+        text-align: center;
+        padding: 12px;
+        gap: 10px;
+      }
+    }
+
     /* ─── Back to Top Button ─────────────────────────────────────────── */
     .back-to-top {
       position: fixed;
@@ -3726,7 +3775,24 @@
         tooltip.classList.remove('show');
       }
     };
+
+    /* ─── Cookie Notice ──────────────────────────────────────────── */
+    (function() {
+      if (localStorage.getItem('ea-cookie-notice-dismissed')) return;
+      const banner = document.getElementById('cookie-notice');
+      if (banner) {
+        banner.classList.add('show');
+        banner.querySelector('.cookie-notice-close').onclick = function() {
+          banner.classList.remove('show');
+          localStorage.setItem('ea-cookie-notice-dismissed', '1');
+        };
+      }
+    })();
   </script>
   <div id="global-tooltip" class="global-tooltip"></div>
+  <div id="cookie-notice" class="cookie-notice">
+    <span class="cookie-notice-text" data-zh="本站使用匿名 Cookie 用于投票功能，不追踪个人数据。" data-en="This site uses an anonymous cookie for optional voting features. No personal data is tracked.">This site uses an anonymous cookie for optional voting features. No personal data is tracked.</span>
+    <button class="cookie-notice-close" data-zh="知道了" data-en="Got it">Got it</button>
+  </div>
 </body>
 </html>
