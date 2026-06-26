@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "epocharc-site",
+  "pages_build_output_dir": "./",
+  "d1_databases": [
+    {
+      "binding": "READER_PULSE_DB",
+      "database_name": "reader-pulse-db",
+      "database_id": "ce13e2fb-4770-4baa-85a5-c35748efacb5"
+    }
+  ]
+}
