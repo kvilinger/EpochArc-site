@@ -2408,7 +2408,15 @@
     const SELECTION_COUNTS_STORAGE_KEY = 'ea-forecast-selection-counts-v1';
 
     const state = {
-      lang: normalizeLang(localStorage.getItem('od-lang') || 'en'),
+      // Detect browser language for initial default
+      function detectBrowserLang() {
+        const langs = navigator.languages || [navigator.language || ''];
+        for (const l of langs) {
+          if (l.startsWith('zh')) return 'zh-Hans';
+        }
+        return 'en';
+      }
+      lang: normalizeLang(localStorage.getItem('od-lang') || detectBrowserLang()),
       theme: localStorage.getItem('od-theme') || 'light', // 'light' or 'dark'
       filters: {
         significance: 'all',
