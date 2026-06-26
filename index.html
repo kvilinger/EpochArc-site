@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EpochArc · AI Milestones, Signals, and Forecasts</title>
-  <meta name="description" content="EpochArc tracks AI milestones, organizes evidence, and maps future signals in a structured bilingual timeline." />
+  <title>EpochArc · AI Milestones, Evidence, and Possible Directions</title>
+  <meta name="description" content="EpochArc tracks AI milestones, organizes evidence, and maps possible directions in a structured bilingual timeline." />
   <meta name="theme-color" content="#f7f8fb" />
   <meta name="color-scheme" content="light dark" />
   <meta name="application-name" content="EpochArc" />
   <meta name="apple-mobile-web-app-title" content="EpochArc" />
-  <meta property="og:title" content="EpochArc · AI Milestones, Signals, and Forecasts" />
-  <meta property="og:description" content="A bilingual project for tracking AI milestones, organizing evidence, and mapping future signals." />
+  <link rel="canonical" href="https://epoch-arc.com/" />
+  <meta property="og:title" content="EpochArc · AI Milestones, Evidence, and Possible Directions" />
+  <meta property="og:description" content="A bilingual project for tracking AI milestones, organizing evidence, and mapping possible directions." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://epoch-arc.com/" />
   <meta property="og:site_name" content="EpochArc" />
   <meta property="og:locale" content="zh_CN" />
-  <meta property="og:image" content="/og-image.svg" />
+  <meta property="og:image" content="https://epoch-arc.com/og-image.svg" />
   <meta property="og:image:type" content="image/svg+xml" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="EpochArc · AI Milestones, Signals, and Forecasts" />
-  <meta name="twitter:description" content="A bilingual project for tracking AI milestones, organizing evidence, and mapping future signals." />
-  <meta name="twitter:image" content="/og-image.svg" />
+  <meta name="twitter:title" content="EpochArc · AI Milestones, Evidence, and Possible Directions" />
+  <meta name="twitter:description" content="A bilingual project for tracking AI milestones, organizing evidence, and mapping possible directions." />
+  <meta name="twitter:image" content="https://epoch-arc.com/og-image.svg" />
   <link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml" />
   <link rel="manifest" href="/site.webmanifest" />
   <script type="application/ld+json">
@@ -30,7 +32,7 @@
       "@type": "WebSite",
       "name": "EpochArc",
       "alternateName": "EpochArc",
-      "description": "A bilingual public timeline of AI milestones, evidence, and future signals.",
+      "description": "A bilingual public timeline of AI milestones, evidence, and possible directions.",
       "inLanguage": ["zh-CN", "en"]
     }
   </script>
@@ -293,8 +295,12 @@
     }
     .predictions-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: var(--gap-md);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      align-items: stretch;
+    }
+    .predictions-grid.compact-mode {
+      grid-auto-rows: 1fr;
     }
     @media (max-width: 900px) {
       .predictions-grid {
@@ -310,27 +316,90 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: var(--gap-md);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: var(--transition-smooth);
+      padding: 18px;
+      transition: border-color 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
       position: relative;
       overflow: hidden;
     }
-    .predict-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: var(--border);
-      transition: var(--transition-smooth);
+    .predict-card.compact {
+      min-height: 224px;
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      cursor: pointer;
     }
-    .predict-card.voted::before {
-      background: var(--accent);
+    .predict-card.compact:hover {
+      border-color: color-mix(in oklch, var(--fg) 28%, var(--border));
+      box-shadow: 0 18px 42px rgba(15, 23, 42, 0.06);
+    }
+    .predict-card.is-expanded {
+      grid-column: 1 / -1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      align-items: start;
+      cursor: default;
+      border-color: color-mix(in oklch, var(--fg) 42%, var(--border));
+      box-shadow: 0 18px 52px rgba(15, 23, 42, 0.08);
+      padding: 18px 20px 18px;
+      isolation: isolate;
+    }
+    .predict-card.selected {
+      border-color: color-mix(in oklch, var(--accent) 58%, var(--border));
+      background:
+        linear-gradient(180deg, color-mix(in oklch, var(--accent) 8%, transparent), transparent 42%),
+        var(--surface);
+      box-shadow:
+        0 0 0 1px color-mix(in oklch, var(--accent) 18%, transparent),
+        0 18px 52px rgba(15, 23, 42, 0.08);
+    }
+    .predict-main {
+      min-width: 0;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+    .predict-card.compact .predict-main {
+      min-height: 100%;
+      grid-template-rows: auto minmax(0, 1fr);
+    }
+    .predict-card.is-expanded .predict-main {
+      min-height: auto;
+      grid-template-rows: auto;
+      padding-right: 0;
+      gap: 10px;
     }
     .predict-header {
-      margin-bottom: var(--gap-sm);
+      margin-bottom: 0;
+      min-width: 0;
+      display: grid;
+      gap: 6px;
+      align-content: start;
+    }
+    .predict-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      min-height: 16px;
+    }
+    .predict-card.compact .predict-meta {
+      margin-bottom: 10px;
+      align-items: flex-start;
+    }
+    .signal-count {
+      display: inline-flex;
+      align-items: center;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .forecast-status {
+      color: var(--muted);
     }
     .predict-header .expected-year {
       font-family: var(--font-mono);
@@ -341,22 +410,121 @@
       margin-bottom: 4px;
     }
     .predict-header h3 {
-      font-size: 16px;
+      font-size: 17px;
       line-height: 1.25;
       font-weight: 700;
-      margin: 0 0 6px;
+      margin: 0;
+      min-width: 0;
+    }
+    .predict-card.compact .predict-header h3 {
+      min-height: calc(1.25em * 2);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
     }
     .predict-header p {
       font-size: var(--fs-meta);
       color: var(--muted);
-      line-height: 1.4;
+      line-height: 1.48;
+      margin: 0;
+      min-width: 0;
     }
-    .vote-area {
-      margin-top: var(--gap-md);
+    .predict-card.compact .predict-header p {
+      min-height: calc(1.48em * 4);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
     }
-    .vote-btn {
-      width: 100%;
-      padding: 8px 12px;
+    .predict-card.is-expanded .predict-header p {
+      max-width: 72ch;
+      display: block;
+      overflow: visible;
+    }
+    .predict-expanded-topline {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: start;
+    }
+    .predict-expanded-title {
+      min-width: 0;
+      display: grid;
+      gap: 2px;
+    }
+    .predict-expanded-controls {
+      display: inline-flex;
+      align-items: center;
+      justify-self: end;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .forecast-selection-badge {
+      min-width: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: none;
+      box-shadow: none;
+      backdrop-filter: none;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      justify-content: flex-end;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .predict-card.compact .forecast-selection-badge {
+      min-width: 0;
+      padding: 0;
+    }
+    body[data-theme="dark"] .forecast-selection-badge {
+      background: none;
+      box-shadow: none;
+    }
+    .forecast-selection-count {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 700;
+      color: var(--fg);
+    }
+    .predict-card.compact .forecast-selection-count {
+      font-size: 12px;
+    }
+    .forecast-selection-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    .predict-card.compact .forecast-selection-label {
+      font-size: 11px;
+    }
+    .predict-intro {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--fg);
+      max-width: 78ch;
+    }
+    .predict-action-row {
+      display: flex;
+      gap: 0;
+      align-items: center;
+      justify-content: center;
+      padding-top: 8px;
+      border-top: 1px solid color-mix(in oklch, var(--fg) 8%, var(--border));
+    }
+    .predict-card.compact .predict-action-row {
+      margin-top: auto;
+    }
+    .forecast-action {
+      min-height: 40px;
+      min-width: 126px;
+      padding: 0 14px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
       font-size: 13px;
@@ -367,49 +535,442 @@
       gap: 6px;
       transition: var(--transition-smooth);
       background: var(--surface);
+      cursor: pointer;
     }
-    .vote-btn:hover {
+    .predict-card.compact .forecast-action {
+      width: 100%;
+      min-width: 0;
+    }
+    .forecast-action:hover {
       border-color: var(--fg);
       background: var(--fg-soft);
     }
-    .predict-card.voted .vote-btn {
-      background: var(--accent-soft);
+    .forecast-action.primary {
+      background: var(--fg);
+      border-color: var(--fg);
+      color: var(--bg);
+    }
+    .forecast-action.primary:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    .forecast-choice-button {
+      min-height: auto;
+      padding: 0 0 2px;
+      border: 0;
+      border-bottom: 1px solid color-mix(in oklch, var(--accent) 46%, var(--border));
+      border-radius: 0;
+      background: none;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .forecast-choice-button:hover {
+      background: none;
       border-color: var(--accent);
       color: var(--accent);
     }
-    .vote-bar-container {
-      width: 100%;
-      height: 4px;
-      background: var(--border);
-      border-radius: var(--radius-pill);
-      margin-top: var(--gap-xs);
+    .forecast-choice-button.secondary {
+      background: none;
+      color: var(--muted);
+      border-bottom-color: color-mix(in oklch, var(--fg) 14%, var(--border));
+    }
+    .forecast-choice-button.secondary:hover {
+      background: none;
+      border-bottom-color: var(--fg);
+      color: var(--fg);
+    }
+    .forecast-toggle {
+      width: auto;
+      min-height: auto;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: none;
+      color: var(--fg);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      line-height: 0;
+    }
+    .forecast-toggle:hover {
+      background: none;
+      color: var(--accent);
+    }
+    body[data-theme="dark"] .forecast-toggle {
+      background: none;
+    }
+    .forecast-chevron {
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      flex: 0 0 auto;
+    }
+    .forecast-chevron.up {
+      transform: rotate(180deg);
+    }
+    .prediction-details {
+      display: none;
+    }
+    .predict-expanded-content {
+      min-width: 0;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      min-height: auto;
+    }
+    .predict-card.is-expanded .prediction-details {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      align-items: start;
+      padding: 10px 14px;
+      border: 1px solid color-mix(in oklch, var(--fg) 10%, var(--border));
+      border-radius: calc(var(--radius-lg) - 2px);
+      background:
+        linear-gradient(180deg, color-mix(in oklch, var(--surface-hover) 74%, transparent), transparent),
+        color-mix(in oklch, var(--surface) 92%, var(--surface-hover));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.32), 0 12px 28px rgba(15, 23, 42, 0.05);
+      position: relative;
+      z-index: 1;
+    }
+    body[data-theme="dark"] .predict-card.is-expanded .prediction-details {
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 16px 34px rgba(2, 6, 23, 0.24);
+    }
+    .detail-stack {
+      min-width: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .detail-block {
+      min-width: 0;
+      display: grid;
+      align-content: start;
+      gap: 8px;
+      padding-left: 0;
+      border-left: 0;
+    }
+    .detail-label {
+      display: none;
+    }
+    .detail-text {
+      margin: 0;
+      font-size: var(--fs-meta);
+      line-height: 1.42;
+      color: var(--fg);
+      min-width: 0;
+    }
+    .predict-card.is-expanded .detail-text {
+      display: block;
+      overflow: visible;
+    }
+    .support-column {
+      min-width: 0;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+    .support-matrix {
+      min-width: 0;
+      display: grid;
+      gap: 0;
+    }
+    .support-row-list {
+      display: grid;
+      gap: 0;
+    }
+    .support-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      align-items: start;
+      padding: 8px 0;
+      border-top: 1px solid color-mix(in oklch, var(--fg) 8%, var(--border));
+    }
+    .support-row:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+    .support-card-list {
+      display: grid;
+      gap: 10px;
+    }
+    .support-card {
+      min-width: 0;
+      display: grid;
+      gap: 4px;
+      padding: 0;
+    }
+    .support-card-copy {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.4;
+      color: var(--fg);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
       overflow: hidden;
     }
-    .vote-bar {
-      height: 100%;
-      background: var(--accent);
-      width: 0%;
-      transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    .support-links-cell {
+      min-width: 0;
+      max-width: 100%;
+      display: block;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
     }
-    .vote-stat {
+    .support-links-cell::-webkit-scrollbar {
+      display: none;
+    }
+    .signal-links-stack {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 6px;
       align-items: center;
+      white-space: nowrap;
+      width: max-content;
+    }
+    .signal-list {
+      display: grid;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .signal-item {
+      display: grid;
+      gap: 7px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .signal-item:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+    .signal-item-label {
+      font-weight: 650;
+      color: var(--fg);
+      font-size: 13px;
+      line-height: 1.38;
+    }
+    .signal-item-summary {
+      display: none;
+    }
+    .signal-event-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .signal-event-link {
+      display: inline-flex;
+      align-items: center;
+      max-width: none;
+      padding: 4px 7px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: color-mix(in oklch, var(--surface-hover) 80%, var(--surface));
+      color: var(--muted);
+      font-size: 10px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .signal-source-link {
+      text-decoration: none;
+      background: color-mix(in oklch, var(--surface) 88%, var(--surface-hover));
+    }
+    .signal-event-more {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 8px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: color-mix(in oklch, var(--surface-hover) 74%, var(--surface));
+      color: var(--muted);
+      font-size: 11px;
+      font-family: var(--font-mono);
+    }
+    .signal-event-link:hover {
+      border-color: color-mix(in oklch, var(--fg) 26%, var(--border));
+      color: var(--fg);
+      background: var(--surface-hover);
+    }
+    .detail-list {
+      margin: 0;
+      padding-left: 16px;
+      display: grid;
+      gap: 6px;
+      color: var(--fg);
+      font-size: var(--fs-meta);
+      line-height: 1.42;
+    }
+    .predict-expanded-toolbar {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      padding-top: 8px;
+      border-top: 1px solid color-mix(in oklch, var(--fg) 8%, var(--border));
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
+      position: static;
+      z-index: auto;
+    }
+    .predict-collapse-button {
+      width: auto;
+      min-height: auto;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: none;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .predict-collapse-button:hover {
+      background: none;
+      color: var(--fg);
+    }
+    body[data-theme="dark"] .predict-collapse-button {
+      background: none;
+    }
+    .direction-entry {
+      grid-column: 1 / -1;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      padding: 12px 16px;
+      display: grid;
+      gap: 12px;
+    }
+    .direction-entry-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+    }
+    .direction-entry-title {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .direction-entry-sub {
+      margin-top: 2px;
       font-family: var(--font-mono);
       font-size: 11px;
       color: var(--muted);
-      margin-top: 4px;
+    }
+    .direction-list {
+      display: none;
+      border-top: 1px solid var(--border);
+    }
+    .direction-entry.open .direction-list {
+      display: block;
+    }
+    .direction-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .direction-row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .direction-row-title {
+      color: var(--fg);
+      font-weight: 650;
+      font-size: 14px;
+    }
+    .direction-row-meta {
+      margin-top: 3px;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 11px;
+    }
+    .direction-entry .forecast-action,
+    .predict-expanded-toolbar .forecast-action {
+      flex: 0 0 132px;
+    }
+    @media (max-width: 900px) {
+      .predict-card.is-expanded {
+        grid-column: 1 / -1;
+      }
+      .support-row {
+        gap: 8px;
+        align-items: start;
+      }
+      .predict-expanded-topline {
+        grid-template-columns: 1fr;
+      }
+      .predict-expanded-controls {
+        justify-content: flex-start;
+      }
+      .forecast-selection-badge {
+        justify-content: flex-start;
+        text-align: left;
+      }
+      .support-links-cell {
+        min-width: 0;
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 550px) {
+      .predict-action-row {
+        align-items: center;
+        flex-direction: row;
+      }
+      .direction-entry .forecast-action {
+        width: 100%;
+        min-width: 0;
+        flex-basis: auto;
+      }
+      .predict-card.is-expanded {
+        padding: 18px 16px 18px;
+      }
+      .predict-card.is-expanded .prediction-details {
+        padding: 10px 12px;
+      }
+      .direction-entry-head,
+      .direction-row {
+        grid-template-columns: 1fr;
+        align-items: stretch;
+      }
+      .predict-expanded-controls {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
     }
 
     /* ─── Timeline Filter Controls ──────────────────────────────────── */
     .timeline-filter-bar {
-      display: grid;
-      grid-template-columns: minmax(220px, 1.35fr) repeat(4, minmax(118px, 0.9fr));
-      align-items: end;
+      display: flex;
+      align-items: flex-end;
       gap: 10px;
       padding-block: 6px 12px;
       border-bottom: 1px solid var(--border);
       margin-bottom: var(--gap-lg);
+      flex-wrap: nowrap;
+      width: 100%;
     }
     .search-input-wrapper {
       position: relative;
@@ -417,23 +978,25 @@
     }
     .search-input-wrapper svg {
       position: absolute;
-      left: 12px;
+      left: 10px;
       top: 50%;
       transform: translateY(-50%);
       width: 16px;
       height: 16px;
       color: var(--muted);
+      pointer-events: none;
+      transition: color 0.2s ease;
     }
     .search-input {
       width: 100%;
       min-height: 36px;
-      padding: 7px 12px 7px 36px;
+      padding: 7px 12px 7px 32px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
       font-size: 13px;
       background: var(--btn-inactive-bg);
       color: var(--fg);
-      transition: var(--transition-smooth);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, padding 0.35s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease;
     }
     .search-input:focus {
       outline: none;
@@ -441,12 +1004,42 @@
       box-shadow: 0 0 0 2px var(--fg-soft);
     }
     .filter-groups {
-      display: contents;
+      display: flex;
+      gap: 8px;
+      flex: 1;
+      min-width: 0;
     }
     .filter-field {
       display: flex;
       flex-direction: column;
       gap: 4px;
+      min-width: 0;
+    }
+    
+    /* 搜索框的外层容器及动态展开过渡 */
+    .timeline-filter-bar > .filter-field:first-child {
+      width: 36px;
+      flex-shrink: 0;
+      transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .timeline-filter-bar > .filter-field:first-child.is-expanded {
+      width: 220px;
+    }
+    
+    /* 未展开时的输入框样式，隐藏文字和占位符以避开溢出 */
+    .timeline-filter-bar > .filter-field:first-child:not(.is-expanded) .search-input {
+      padding-left: 32px;
+      padding-right: 0;
+      color: transparent;
+      caret-color: transparent;
+      cursor: pointer;
+    }
+    .timeline-filter-bar > .filter-field:first-child:not(.is-expanded) .search-input::placeholder {
+      color: transparent;
+    }
+    
+    .filter-groups > .filter-field {
+      flex: 1;
       min-width: 0;
     }
     .filter-label {
@@ -464,7 +1057,7 @@
     }
     .filter-select {
       min-height: 36px;
-      padding: 6px 30px 6px 10px;
+      padding: 6px 20px 6px 8px;
       background: var(--btn-inactive-bg);
       border: 1px solid var(--btn-inactive-border);
       border-radius: var(--radius);
@@ -477,8 +1070,8 @@
         linear-gradient(45deg, transparent 50%, var(--muted) 50%),
         linear-gradient(135deg, var(--muted) 50%, transparent 50%);
       background-position:
-        calc(100% - 17px) 16px,
-        calc(100% - 12px) 16px;
+        calc(100% - 13px) 16px,
+        calc(100% - 8px) 16px;
       background-size: 5px 5px, 5px 5px;
       background-repeat: no-repeat;
     }
@@ -491,17 +1084,88 @@
       border-color: var(--fg);
       box-shadow: 0 0 0 2px var(--fg-soft);
     }
+    
+    /* 重置按钮外层容器 - 常驻固定大小 */
+    .filter-reset-field {
+      align-self: flex-end;
+      height: 36px;
+      width: 36px;
+      flex: 0 0 36px;
+      display: flex;
+      margin-left: 2px;
+    }
+    
+    .filter-reset-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--btn-inactive-border);
+      border-radius: var(--radius);
+      background: var(--btn-inactive-bg);
+      color: var(--muted);
+      cursor: pointer;
+      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+    .filter-reset-btn svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    /* 悬停活跃状态（非 disabled 时有效） */
+    .filter-reset-btn:not(:disabled):hover {
+      background: var(--surface-hover);
+      border-color: var(--muted);
+      color: var(--fg);
+    }
+    .filter-reset-btn:not(:disabled):hover svg {
+      transform: rotate(-180deg);
+    }
+    .filter-reset-btn:focus {
+      outline: none;
+      border-color: var(--fg);
+      box-shadow: 0 0 0 2px var(--fg-soft);
+    }
+    
+    /* 禁用状态（无活跃过滤器时） */
+    .filter-reset-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    
+    /* 移动端与平板响应式覆盖 */
     @media (max-width: 900px) {
       .timeline-filter-bar {
-        grid-template-columns: minmax(220px, 1fr) repeat(2, minmax(140px, 1fr));
+        flex-wrap: wrap;
       }
-      .timeline-filter-bar .filter-field:first-child {
-        grid-column: 1 / -1;
+      .timeline-filter-bar > .filter-field:first-child {
+        width: 100% !important;
+      }
+      .timeline-filter-bar > .filter-field:first-child .search-input {
+        padding-left: 32px !important;
+        padding-right: 12px !important;
+        color: var(--fg) !important;
+        caret-color: auto !important;
+        cursor: text !important;
+      }
+      .timeline-filter-bar > .filter-field:first-child .search-input::placeholder {
+        color: var(--muted) !important;
+      }
+      .filter-groups {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .filter-groups > .filter-field {
+        flex: 1 1 calc(33.33% - 8px);
+        min-width: 120px;
       }
     }
-    @media (max-width: 720px) {
-      .timeline-filter-bar {
-        grid-template-columns: 1fr;
+    @media (max-width: 500px) {
+      .filter-groups > .filter-field {
+        flex: 1 1 calc(50% - 6px);
       }
     }
 
@@ -534,6 +1198,7 @@
       display: flex;
       flex-direction: column;
       gap: var(--gap-lg);
+      overflow-anchor: none;
     }
     .timeline-item {
       position: relative;
@@ -542,6 +1207,7 @@
       gap: 0;
       align-items: stretch;
       z-index: 2;
+      overflow-anchor: none;
     }
     @media (max-width: 650px) {
       .timeline-item {
@@ -622,8 +1288,15 @@
       border-radius: var(--radius-lg);
       padding: var(--gap-md);
       box-shadow: 0 4px 20px var(--fg-soft);
+      cursor: pointer;
       transition: var(--transition-smooth);
       position: relative;
+    }
+    .timeline-card-l3:focus-visible,
+    .timeline-card-l2:focus-visible,
+    .timeline-card-l1:focus-visible {
+      outline: 2px solid var(--highlight);
+      outline-offset: 3px;
     }
     .timeline-card-l3:hover {
       transform: translateY(-2px);
@@ -641,6 +1314,7 @@
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       padding: var(--gap-md);
+      cursor: pointer;
       transition: var(--transition-smooth);
       position: relative;
     }
@@ -659,6 +1333,7 @@
       border: 1px solid color-mix(in oklch, var(--border) 84%, transparent);
       border-radius: var(--radius-lg);
       padding: 12px var(--gap-md);
+      cursor: pointer;
       transition: var(--transition-smooth);
       position: relative;
     }
@@ -740,9 +1415,9 @@
       align-items: center;
     }
     .timeline-node-head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: start;
       gap: 16px;
     }
     .timeline-node-main {
@@ -753,13 +1428,22 @@
       margin-bottom: 8px;
     }
     .timeline-node-side {
-      min-width: 136px;
+      min-width: max-content;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 6px;
+      justify-content: space-between;
+      align-self: stretch;
+      gap: 14px;
       padding-top: 1px;
       text-align: right;
+    }
+    .timeline-node-meta {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.45;
+      white-space: nowrap;
     }
     .timeline-node-level {
       font-family: var(--font-mono);
@@ -782,37 +1466,37 @@
       color: var(--muted);
       white-space: nowrap;
     }
-    .timeline-toggle {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 68px;
-      min-height: 30px;
-      padding: 6px 11px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-pill);
-      background: color-mix(in oklch, var(--surface) 88%, var(--bg));
-      color: var(--fg);
-      font-size: 12px;
-      font-weight: 700;
+    .timeline-card-indicator {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      pointer-events: none;
       transition: var(--transition-smooth);
     }
-    .timeline-toggle:hover {
-      border-color: color-mix(in oklch, var(--fg) 42%, var(--border));
-      background: var(--surface-hover);
+    .timeline-card-indicator::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 47%;
+      width: 8px;
+      height: 8px;
+      border-right: 1.7px solid var(--muted);
+      border-bottom: 1.7px solid var(--muted);
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: var(--transition-smooth);
     }
-    .timeline-toggle:active {
-      transform: translateY(1px);
+    .timeline-card-l3.expanded .timeline-card-indicator,
+    .timeline-card-l2.expanded .timeline-card-indicator,
+    .timeline-card-l1.expanded .timeline-card-indicator {
+      opacity: 1;
+      transform: none;
     }
-    .timeline-toggle:focus-visible {
-      outline: 2px solid var(--highlight);
-      outline-offset: 2px;
-    }
-    .timeline-card-l3.expanded .timeline-toggle,
-    .timeline-card-l2.expanded .timeline-toggle,
-    .timeline-card-l1.expanded .timeline-toggle {
-      border-color: color-mix(in oklch, var(--accent) 30%, var(--border));
-      background: color-mix(in oklch, var(--accent) 8%, var(--surface));
+    .timeline-card-l3.expanded .timeline-card-indicator::before,
+    .timeline-card-l2.expanded .timeline-card-indicator::before,
+    .timeline-card-l1.expanded .timeline-card-indicator::before {
+      top: 55%;
+      border-color: var(--muted);
+      transform: translate(-50%, -50%) rotate(225deg);
     }
     .category-badge {
       font-size: 11px;
@@ -887,18 +1571,20 @@
     @media (max-width: 650px) {
       .timeline-node-head,
       .timeline-card-l1 .timeline-node-head {
-        flex-direction: column;
-        align-items: flex-start;
+        grid-template-columns: 1fr;
       }
       .timeline-node-side {
-        min-width: 0;
-        width: 100%;
+        min-width: max-content;
+        width: auto;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-end;
         text-align: left;
-        gap: 10px;
+        gap: 14px;
+      }
+      .timeline-node-meta {
+        white-space: nowrap;
+        text-align: left;
       }
     }
 
@@ -906,6 +1592,7 @@
       margin-top: var(--gap-sm);
       padding-top: var(--gap-sm);
       border-top: 1px solid var(--border);
+      cursor: default;
       display: grid;
       grid-template-rows: 0fr;
       opacity: 0;
@@ -926,6 +1613,38 @@
     .timeline-details-inner {
       min-height: 0;
       overflow: hidden;
+    }
+    .details-collapse {
+      width: 100%;
+      margin-top: var(--gap-lg);
+      padding: 12px 14px 2px;
+      border: 0;
+      border-top: 1px solid color-mix(in oklch, var(--border) 82%, transparent);
+      border-radius: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+    }
+    .details-collapse:hover {
+      color: var(--fg);
+      background: transparent;
+    }
+    .details-collapse:focus-visible {
+      outline: 2px solid var(--highlight);
+      outline-offset: 2px;
+    }
+    .details-collapse::after {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin-left: 8px;
+      border-right: 1.5px solid currentColor;
+      border-bottom: 1.5px solid currentColor;
+      transform: translateY(2px) rotate(225deg);
     }
     .detail-section {
       display: flex;
@@ -963,6 +1682,9 @@
     .evidence-item .label {
       color: var(--muted);
       font-size: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
     .evidence-item .val {
       color: var(--fg);
@@ -1214,7 +1936,8 @@
     }
     @media (prefers-reduced-motion: reduce) {
       .timeline-details,
-      .timeline-toggle,
+      .timeline-card-indicator,
+      .details-collapse,
       .timeline-card-l3,
       .timeline-card-l2,
       .timeline-card-l1 {
@@ -1282,6 +2005,103 @@
         justify-content: flex-start;
       }
     }
+
+    /* Global Tooltip Styling */
+    .global-tooltip {
+      position: absolute;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--fg);
+      padding: 10px 14px;
+      border-radius: var(--radius);
+      font-size: 11px;
+      line-height: 1.5;
+      width: 290px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.15s ease, transform 0.15s ease;
+      transform: translateY(4px);
+      white-space: normal;
+    }
+    .global-tooltip.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .info-trigger {
+      display: inline-flex;
+      align-items: center;
+      vertical-align: middle;
+      cursor: help;
+    }
+
+    /* ─── Back to Top Button ─────────────────────────────────────────── */
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      /* 宽屏下定位在内容区域（960px）外侧右边 24px 处（半宽 480px + 间距 24px + 自身宽度 44px = 548px） */
+      /* 窄屏下自动回缩到距离屏幕右侧 20px 处 */
+      right: max(20px, calc(50% - 548px));
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-pill);
+      background: color-mix(in oklch, var(--surface) 80%, transparent);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      color: var(--fg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(16px);
+      transition: 
+        opacity var(--transition-smooth), 
+        transform var(--transition-smooth), 
+        background var(--transition-smooth), 
+        border-color var(--transition-smooth),
+        box-shadow var(--transition-smooth);
+      z-index: 90;
+    }
+
+    [data-theme="dark"] .back-to-top {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .back-to-top.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      background: var(--surface-hover);
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .back-to-top:active {
+      transform: translateY(-1px);
+    }
+
+    .back-to-top svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--fg);
+      transition: stroke var(--transition-smooth), transform var(--transition-smooth);
+    }
+
+    .back-to-top:hover svg {
+      stroke: var(--accent);
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body data-theme="light">
@@ -1316,12 +2136,12 @@
 
   <!-- Hero -->
   <section class="hero container" data-od-id="hero">
-    <h1 id="heroTitle" data-zh="Where is AI Going?" data-en="Where is AI Going?">Where is AI Going?</h1>
+    <h1 id="heroTitle" data-zh="What Comes Next?" data-en="What Comes Next?">What Comes Next?</h1>
   </section>
 
   <!-- Horizontal Future Signals Section -->
   <section class="container predictions-section" data-od-id="predictions">
-    <div class="section-title" id="predTitle" data-zh="未来信号" data-en="Future Signals">未来信号</div>
+    <div class="section-title" id="predTitle" data-zh="可能方向" data-en="Possible Directions">可能方向</div>
     <div class="predictions-grid" id="predictionsContainer">
       <!-- Future signal cards will be injected here -->
     </div>
@@ -1377,14 +2197,29 @@
           </select>
         </label>
         <label class="filter-field">
-          <span class="filter-label" data-zh="可信度" data-en="Consensus">可信度</span>
-          <select class="filter-select" id="consensusFilter" aria-label="可信度筛选">
-            <option value="all" data-zh="全部可信度" data-en="All Consensus">全部可信度</option>
-            <option value="broad" data-zh="广泛共识" data-en="Broad">广泛共识</option>
-            <option value="debated" data-zh="存在争议" data-en="Debated">存在争议</option>
-            <option value="emerging" data-zh="新兴判断" data-en="Emerging">新兴判断</option>
+          <span class="filter-label" data-zh="共识度" data-en="Consensus">共识度</span>
+          <select class="filter-select" id="consensusFilter" aria-label="解读共识筛选">
+            <option value="all" data-zh="全部" data-en="All">全部</option>
+            <option value="broad" data-zh="广泛共识" data-en="Broad Consensus">广泛共识</option>
+            <option value="debated" data-zh="仍在讨论" data-en="Actively Debated">仍在讨论</option>
+            <option value="emerging" data-zh="共识形成中" data-en="Emerging Consensus">共识形成中</option>
           </select>
         </label>
+        <label class="filter-field">
+          <span class="filter-label" data-zh="年份" data-en="Year">年份</span>
+          <select class="filter-select" id="yearFilter" aria-label="年份筛选">
+            <option value="all" data-zh="全部年份" data-en="All Years">全部年份</option>
+          </select>
+        </label>
+        
+        <!-- 动态清空所有筛选与搜索按钮 -->
+        <div class="filter-reset-field" id="filterResetField">
+          <button class="filter-reset-btn" id="filterResetBtn" aria-label="重置所有筛选" data-zh-title="重置所有筛选" data-en-title="Reset all filters" disabled>
+            <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -1407,6 +2242,11 @@
     </div>
   </footer>
 
+  <button id="backToTopBtn" class="back-to-top" aria-label="回到顶部" data-zh-title="回到顶部" data-en-title="Back to Top" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 
   <script type="application/json" id="fallback-forecasts-data">[]</script>
   <script type="application/json" id="fallback-events-data">[]</script>
@@ -1422,23 +2262,39 @@
     const UI_TEXT = {
       darkMode: { en: 'Dark Mode', es: 'Modo oscuro', ja: 'ダーク', 'zh-Hans': '深色模式', 'zh-Hant': '深色模式', fr: 'Mode sombre' },
       lightMode: { en: 'Light Mode', es: 'Modo claro', ja: 'ライト', 'zh-Hans': '浅色模式', 'zh-Hant': '淺色模式', fr: 'Mode clair' },
-      loadingPredictions: { en: 'Loading future signals', es: 'Loading future signals', ja: 'Loading future signals', 'zh-Hans': '正在加载未来信号', 'zh-Hant': '正在載入未來信號', fr: 'Loading future signals' },
-      loadingPredictionsBody: { en: 'The page is loading structured content files.', es: 'La página está cargando archivos de contenido estructurado.', ja: '構造化コンテンツを読み込んでいます。', 'zh-Hans': '页面正在读取独立数据文件。', 'zh-Hant': '頁面正在讀取獨立資料檔案。', fr: 'La page charge les fichiers de contenu structurés.' },
-      predictionsError: { en: 'Future signals unavailable', es: 'Future signals unavailable', ja: 'Future signals unavailable', 'zh-Hans': '未来信号加载失败', 'zh-Hant': '未來信號載入失敗', fr: 'Future signals unavailable' },
-      predictionsErrorBody: { en: 'Serve the site over HTTP and verify that data/forecasts.json is reachable.', es: 'Serve the site over HTTP and verify that data/forecasts.json is reachable.', ja: 'Serve the site over HTTP and verify that data/forecasts.json is reachable.', 'zh-Hans': '请通过静态服务器访问站点，或检查 data/forecasts.json 是否可用。', 'zh-Hant': '請透過靜態伺服器存取網站，或檢查 data/forecasts.json 是否可用。', fr: 'Serve the site over HTTP and verify that data/forecasts.json is reachable.' },
+      loadingPredictions: { en: 'Loading possible directions', 'zh-Hans': '正在加载可能方向' },
+      loadingPredictionsBody: { en: 'The page is loading structured content files.', 'zh-Hans': '页面正在读取独立数据文件。' },
+      predictionsError: { en: 'Possible directions unavailable', 'zh-Hans': '可能方向加载失败' },
+      predictionsErrorBody: { en: 'Serve the site over HTTP and verify that data/forecasts.json is reachable.', 'zh-Hans': '请通过静态服务器访问站点，或检查 data/forecasts.json 是否可用。' },
       loadingTimeline: { en: 'Loading timeline', es: 'Cargando cronología', ja: 'タイムラインを読み込み中', 'zh-Hans': '正在加载时间轴', 'zh-Hant': '正在載入時間軸', fr: 'Chargement de la chronologie' },
       loadingTimelineBody: { en: 'The site is loading timeline data from JSON.', es: 'El sitio está cargando la cronología desde JSON.', ja: 'JSON からタイムラインを読み込んでいます。', 'zh-Hans': '站点正在加载独立事件数据。', 'zh-Hant': '網站正在載入獨立事件資料。', fr: 'Le site charge les données de chronologie depuis JSON.' },
       timelineError: { en: 'Timeline unavailable', es: 'Cronología no disponible', ja: 'タイムラインを利用できません', 'zh-Hans': '时间轴数据加载失败', 'zh-Hant': '時間軸資料載入失敗', fr: 'Chronologie indisponible' },
       timelineErrorBody: { en: 'This build depends on static JSON files. Make sure data/events.json is deployed.', es: 'Esta versión depende de archivos JSON estáticos. Asegúrate de publicar data/events.json.', ja: 'このビルドは静的 JSON に依存します。data/events.json が公開されているか確認してください。', 'zh-Hans': '当前版本依赖静态 JSON 文件，请确认部署时包含 data/events.json。', 'zh-Hant': '目前版本依賴靜態 JSON 檔案，請確認部署時包含 data/events.json。', fr: 'Cette version dépend de fichiers JSON statiques. Vérifiez que data/events.json est déployé.' },
       openMethodology: { en: 'Open methodology', es: 'Ver metodología', ja: '方法を見る', 'zh-Hans': '查看方法页', 'zh-Hant': '查看方法頁', fr: 'Voir la méthodologie' },
-      voted: { en: 'Voted', es: 'Votado', ja: '投票済み', 'zh-Hans': '已投票', 'zh-Hant': '已投票', fr: 'Voté' },
-      vote: { en: 'Vote', es: 'Votar', ja: '投票', 'zh-Hans': '投一票', 'zh-Hant': '投一票', fr: 'Voter' },
-      votes: { en: 'votes', es: 'votos', ja: '票', 'zh-Hans': '票', 'zh-Hant': '票', fr: 'votes' },
+      reviewDirection: { en: 'Open direction', 'zh-Hans': '打开方向' },
+      closeDetails: { en: 'Collapse', 'zh-Hans': '收起' },
+      chooseDirection: { en: 'Pick this', 'zh-Hans': '选这个' },
+      selectedDirection: { en: 'My pick', 'zh-Hans': '我的选择' },
+      otherDirections: { en: 'Other directions', 'zh-Hans': '其他方向' },
+      showAllDirections: { en: 'Show all', 'zh-Hans': '查看全部' },
+      hideAllDirections: { en: 'Hide', 'zh-Hans': '收起' },
+      changeDirection: { en: 'Open', 'zh-Hans': '打开' },
+      clearSelection: { en: 'Clear pick', 'zh-Hans': '取消选择' },
+      activeStatus: { en: 'Monitoring', 'zh-Hans': '观察中' },
+      availableDirections: { en: 'directions available', 'zh-Hans': '个可切换方向' },
+      linkedSignals: { en: 'linked signals', 'zh-Hans': '个关联信号' },
+      signalBasis: { en: 'Supporting signals', 'zh-Hans': '支持信息' },
+      relatedEventsTitle: { en: 'Related events', 'zh-Hans': '关联事件' },
+      sourceLinksTitle: { en: 'Sources', 'zh-Hans': '来源链接' },
+      peopleTracking: { en: 'selected', 'zh-Hans': '人已选' },
+      currentBaseline: { en: 'Current baseline', 'zh-Hans': '当前基线' },
+      whyThisDirection: { en: 'Why this direction', 'zh-Hans': '为何值得看' },
+      counterSignal: { en: 'Current constraints', 'zh-Hans': '当前限制' },
+      openQuestions: { en: 'Open questions', 'zh-Hans': '开放问题' },
+      linkedEvents: { en: 'Linked events', 'zh-Hans': '关联事件' },
       noResults: { en: 'No matching node records found', es: 'No hay eventos coincidentes', ja: '一致する記録はありません', 'zh-Hans': '暂无匹配的节点数据', 'zh-Hant': '暫無符合的節點資料', fr: 'Aucun événement correspondant' },
       impactScore: { en: 'Impact', es: 'Impacto', ja: '影響', 'zh-Hans': '影响分', 'zh-Hant': '影響分', fr: 'Impact' },
-      affected: { en: 'Affected', es: 'Afectados', ja: '影響対象', 'zh-Hans': '影响对象', 'zh-Hant': '影響對象', fr: 'Affectés' },
-      expandDetails: { en: 'Details', es: 'Detalles', ja: '詳細', 'zh-Hans': '展开', 'zh-Hant': '展開', fr: 'Détails' },
-      collapseDetails: { en: 'Collapse', es: 'Cerrar', ja: '閉じる', 'zh-Hans': '收起', 'zh-Hant': '收起', fr: 'Réduire' }
+      affected: { en: 'Affected', es: 'Afectados', ja: '影響対象', 'zh-Hans': '影响对象', 'zh-Hant': '影響對象', fr: 'Affectés' }
     };
 
     function normalizeLang(lang) {
@@ -1471,13 +2327,19 @@
       return localizedText(entry);
     }
 
-    function renderTimelineWithTransition() {
+    function renderTimelineWithTransition(afterRender) {
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (!reduceMotion && document.startViewTransition) {
-        document.startViewTransition(() => renderTimeline());
+        const transition = document.startViewTransition(() => renderTimeline());
+        if (typeof afterRender === 'function') {
+          transition.updateCallbackDone.then(afterRender);
+        }
         return;
       }
       renderTimeline();
+      if (typeof afterRender === 'function') {
+        afterRender();
+      }
     }
 
     function localizedRecord(record) {
@@ -1492,6 +2354,10 @@
     }
 
     /* ─── State Management ──────────────────────────────────────────── */
+    const READER_PULSE_API = '/api/reader-pulse';
+    const SELECTED_FORECAST_STORAGE_KEY = 'ea-selected-forecast-v1';
+    const SELECTION_COUNTS_STORAGE_KEY = 'ea-forecast-selection-counts-v1';
+
     const state = {
       lang: normalizeLang(localStorage.getItem('od-lang') || 'en'),
       theme: localStorage.getItem('od-theme') || 'light', // 'light' or 'dark'
@@ -1499,19 +2365,19 @@
         significance: 'all',
         category: 'all',
         impactDimension: 'all',
-        consensusLevel: 'all'
+        consensusLevel: 'all',
+        year: 'all'
       },
       searchQuery: '',
       openEventIds: new Set(),
+      previewForecastId: '',
+      selectedForecastId: localStorage.getItem(SELECTED_FORECAST_STORAGE_KEY) || '',
+      selectedForecastExpanded: false,
+      forecastSelectionCounts: readSelectionCounts(),
+      readerPulseSource: 'local',
+      directionsPanelOpen: false,
       dataStatus: 'loading',
-      dataError: '',
-      votes: JSON.parse(localStorage.getItem('od-votes-v2')) || {
-        agi: 412,
-        robot: 285,
-        alignment: 320,
-        science: 198
-      },
-      hasVoted: JSON.parse(localStorage.getItem('od-has-voted')) || {}
+      dataError: ''
     };
 
     /* ─── Content Data ──────────────────────────────────────────────── */
@@ -1532,11 +2398,6 @@
       unknown: { zhHans: '来源资料', zhHant: '來源資料', en: 'Source' }
     };
 
-    const datePrecisionLabels = {
-      day: { zhHans: '精确到日', zhHant: '精確到日', en: 'Day-level' },
-      month: { zhHans: '精确到月', zhHant: '精確到月', en: 'Month-level' },
-      year: { zhHans: '精确到年', zhHant: '精確到年', en: 'Year-level' }
-    };
 
     async function loadJson(url) {
       const response = await fetch(url, { cache: 'no-store' });
@@ -1564,6 +2425,173 @@
       sourcesById = new Map(sourceData.map((source) => [source.id, source]));
       state.dataStatus = 'ready';
       state.dataError = '';
+    }
+
+    // 获取除了 excludeFilterKey 外，应用了其它所有条件的过滤事件子集
+    function getFilteredEventsExcept(excludeFilterKey) {
+      return aiEvents.filter(e => {
+        // 1. Significance
+        if (excludeFilterKey !== 'significance') {
+          if (state.filters.significance !== 'all' && e.significance !== parseInt(state.filters.significance)) {
+            return false;
+          }
+        }
+        // 2. Category
+        if (excludeFilterKey !== 'category') {
+          if (state.filters.category !== 'all' && !e.categories.includes(state.filters.category)) {
+            return false;
+          }
+        }
+        // 3. Impact Dimension
+        if (excludeFilterKey !== 'impactDimension') {
+          if (state.filters.impactDimension !== 'all' && !e.impacts.some(impact => impact.dimension === state.filters.impactDimension)) {
+            return false;
+          }
+        }
+        // 4. Consensus Level
+        if (excludeFilterKey !== 'consensusLevel') {
+          if (state.filters.consensusLevel !== 'all' && e.consensusLevel !== state.filters.consensusLevel) {
+            return false;
+          }
+        }
+        // 5. Year
+        if (excludeFilterKey !== 'year') {
+          if (state.filters.year !== 'all') {
+            const eventYear = String(e.date || '').split('-')[0];
+            if (eventYear !== state.filters.year) {
+              return false;
+            }
+          }
+        }
+        // 6. Search Query
+        if (state.searchQuery) {
+          const query = state.searchQuery.toLowerCase();
+          const copy = localizedRecord(e);
+          const matchesTitle = copy.title.toLowerCase().includes(query);
+          const matchesCategory = e.categories.some(c => labelFor(categoryLabels[c]).toLowerCase().includes(query));
+          const matchesSummary = copy.summary.toLowerCase().includes(query);
+          const matchesTags = Array.isArray(e.tags) && e.tags.some(tag => tag.toLowerCase().includes(query));
+          if (!(matchesTitle || matchesCategory || matchesSummary || matchesTags)) {
+            return false;
+          }
+        }
+        return true;
+      });
+    }
+
+    function initFilterOptionsWithCounts() {
+      const yearSelect = document.getElementById('yearFilter');
+      
+      // 如果年份下拉框尚未初始化，则提取全部事件中的年份做一次性 DOM 生成
+      if (yearSelect && yearSelect.options.length <= 1) {
+        const years = new Set();
+        aiEvents.forEach(e => {
+          const year = String(e.date || '').split('-')[0];
+          if (year) years.add(year);
+        });
+        const sortedYears = Array.from(years).sort((a, b) => b - a);
+        yearSelect.innerHTML = '';
+        
+        const allOption = document.createElement('option');
+        allOption.value = 'all';
+        allOption.setAttribute('data-zh', '全部年份');
+        allOption.setAttribute('data-en', 'All Years');
+        allOption.innerText = '全部年份';
+        yearSelect.appendChild(allOption);
+        
+        sortedYears.forEach(y => {
+          const option = document.createElement('option');
+          option.value = y;
+          option.setAttribute('data-zh', `${y}年`);
+          option.setAttribute('data-en', y);
+          option.innerText = y;
+          yearSelect.appendChild(option);
+        });
+      }
+
+      const updateOptions = (selector, counts) => {
+        document.querySelectorAll(selector).forEach(opt => {
+          const val = opt.value;
+          const count = counts[val] || 0;
+          let baseZh = opt.getAttribute('data-zh') || opt.innerText;
+          let baseEn = opt.getAttribute('data-en') || opt.innerText;
+          
+          baseZh = baseZh.replace(/（\d+）$/, '');
+          baseEn = baseEn.replace(/\s*\(\d+\)$/, '');
+          
+          opt.setAttribute('data-zh', `${baseZh}（${count}）`);
+          opt.setAttribute('data-en', `${baseEn} (${count})`);
+        });
+      };
+
+      // 1. Significance
+      const sigEvents = getFilteredEventsExcept('significance');
+      const sigCounts = {
+        all: sigEvents.length,
+        3: sigEvents.filter(e => e.significance === 3).length,
+        2: sigEvents.filter(e => e.significance === 2).length,
+        1: sigEvents.filter(e => e.significance === 1).length
+      };
+      updateOptions('#significanceFilter option', sigCounts);
+
+      // 2. Event Category
+      const catEvents = getFilteredEventsExcept('category');
+      const catCounts = { all: catEvents.length };
+      catEvents.forEach(e => {
+        if (e.categories) {
+          e.categories.forEach(c => {
+            catCounts[c] = (catCounts[c] || 0) + 1;
+          });
+        }
+      });
+      updateOptions('#categoryFilter option', catCounts);
+
+      // 3. Impact Dimension
+      const dimEvents = getFilteredEventsExcept('impactDimension');
+      const dimCounts = { all: dimEvents.length };
+      dimEvents.forEach(e => {
+        if (e.impacts) {
+          e.impacts.forEach(imp => {
+            dimCounts[imp.dimension] = (dimCounts[imp.dimension] || 0) + 1;
+          });
+        }
+      });
+      updateOptions('#impactFilter option', dimCounts);
+
+      // 4. Consensus
+      const conEvents = getFilteredEventsExcept('consensusLevel');
+      const conCounts = {
+        all: conEvents.length,
+        broad: conEvents.filter(e => e.consensusLevel === 'broad').length,
+        debated: conEvents.filter(e => e.consensusLevel === 'debated').length,
+        emerging: conEvents.filter(e => e.consensusLevel === 'emerging').length
+      };
+      updateOptions('#consensusFilter option', conCounts);
+
+      // 5. Dynamic Year Filter
+      const yearEvents = getFilteredEventsExcept('year');
+      const yearCounts = { all: yearEvents.length };
+      yearEvents.forEach(e => {
+        const year = String(e.date || '').split('-')[0];
+        if (year) {
+          yearCounts[year] = (yearCounts[year] || 0) + 1;
+        }
+      });
+      updateOptions('#yearFilter option', yearCounts);
+      
+      updateLocale();
+      updateResetButtonState();
+    }
+
+    function updateResetButtonState() {
+      const isFiltered = state.searchQuery !== '' ||
+                         state.filters.significance !== 'all' ||
+                         state.filters.category !== 'all' ||
+                         state.filters.impactDimension !== 'all' ||
+                         state.filters.consensusLevel !== 'all' ||
+                         state.filters.year !== 'all';
+                         
+      elements.filterResetBtn.disabled = !isFiltered;
     }
 
     async function loadSiteData() {
@@ -1596,6 +2624,9 @@
         }
       }
 
+      initFilterOptionsWithCounts();
+      updateLocale();
+
       renderPredictions();
       renderTimeline();
     }
@@ -1612,6 +2643,10 @@
       categoryFilter: document.getElementById('categoryFilter'),
       impactFilter: document.getElementById('impactFilter'),
       consensusFilter: document.getElementById('consensusFilter'),
+      yearFilter: document.getElementById('yearFilter'),
+      filterResetField: document.getElementById('filterResetField'),
+      filterResetBtn: document.getElementById('filterResetBtn'),
+      backToTopBtn: document.getElementById('backToTopBtn'),
     };
 
     /* ─── Language Switcher Logic ───────────────────────────────────── */
@@ -1631,6 +2666,12 @@
       document.querySelectorAll('[data-zh-placeholder]').forEach(el => {
         const translated = el.getAttribute(`data-${state.lang}-placeholder`);
         el.setAttribute('placeholder', translated || (isChineseContent() ? el.getAttribute('data-zh-placeholder') : el.getAttribute('data-en-placeholder')));
+      });
+
+      // Update titles
+      document.querySelectorAll('[data-zh-title]').forEach(el => {
+        const translated = el.getAttribute(`data-${state.lang}-title`);
+        el.setAttribute('title', translated || (isChineseContent() ? el.getAttribute('data-zh-title') : el.getAttribute('data-en-title')));
       });
 
       renderPredictions();
@@ -1677,9 +2718,335 @@
       `;
     }
 
-    /* ─── Predictions Voting Logic ──────────────────────────────────── */
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    function readSelectionCounts() {
+      try {
+        const raw = localStorage.getItem(SELECTION_COUNTS_STORAGE_KEY);
+        if (!raw) return {};
+        return sanitizeSelectionCounts(JSON.parse(raw));
+      } catch (error) {
+        return {};
+      }
+    }
+
+    function persistSelectionCounts() {
+      localStorage.setItem(SELECTION_COUNTS_STORAGE_KEY, JSON.stringify(state.forecastSelectionCounts));
+    }
+
+    function persistSelectedForecastId() {
+      if (state.selectedForecastId) {
+        localStorage.setItem(SELECTED_FORECAST_STORAGE_KEY, state.selectedForecastId);
+      } else {
+        localStorage.removeItem(SELECTED_FORECAST_STORAGE_KEY);
+      }
+    }
+
+    function sanitizeSelectionCounts(value) {
+      if (!value || typeof value !== 'object') return {};
+      return Object.fromEntries(
+        Object.entries(value).flatMap(([forecastId, count]) => {
+          const parsed = Math.max(0, Math.floor(Number(count) || 0));
+          return parsed ? [[forecastId, parsed]] : [];
+        })
+      );
+    }
+
+    function applyReaderPulseState({ selectedForecastId = '', counts = {}, source = 'local', persistCounts = true }) {
+      state.selectedForecastId = selectedForecastId || '';
+      if (!state.selectedForecastId) {
+        state.selectedForecastExpanded = false;
+      }
+      state.forecastSelectionCounts = sanitizeSelectionCounts(counts);
+      state.readerPulseSource = source;
+      persistSelectedForecastId();
+      if (persistCounts) {
+        persistSelectionCounts();
+      }
+    }
+
+    function syncLocalReaderPulseState(selectedForecastId = state.selectedForecastId) {
+      applyReaderPulseState({
+        selectedForecastId,
+        counts: selectedForecastId ? { [selectedForecastId]: 1 } : {},
+        source: 'local'
+      });
+    }
+
+    function applyRemoteReaderPulsePayload(payload) {
+      applyReaderPulseState({
+        selectedForecastId: typeof payload?.selectedForecastId === 'string' ? payload.selectedForecastId : '',
+        counts: payload?.counts || {},
+        source: 'remote',
+        persistCounts: false
+      });
+    }
+
+    async function loadReaderPulseStateFromApi() {
+      try {
+        const response = await fetch(READER_PULSE_API, {
+          cache: 'no-store',
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        if (!response.ok) return false;
+        applyRemoteReaderPulsePayload(await response.json());
+        return true;
+      } catch (error) {
+        return false;
+      }
+    }
+
+    async function submitReaderPulseSelection(forecastId) {
+      try {
+        const response = await fetch(READER_PULSE_API, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            forecastId: forecastId || ''
+          })
+        });
+        if (!response.ok) return false;
+        applyRemoteReaderPulsePayload(await response.json());
+        return true;
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function getForecastSelectionCount(forecastId) {
+      const stored = Number(state.forecastSelectionCounts?.[forecastId] || 0);
+      if (state.selectedForecastId === forecastId) {
+        return Math.max(stored, 1);
+      }
+      return stored;
+    }
+
+    function formatSelectionCount(forecastId) {
+      const count = getForecastSelectionCount(forecastId);
+      return {
+        count,
+        label: `${count} ${text('peopleTracking')}`
+      };
+    }
+
+    function signalSummary(forecast) {
+      const list = Array.isArray(forecast?.signals) ? forecast.signals.filter(item => item.status === 'observed') : [];
+      return { observed: list.length, total: list.length };
+    }
+
+    function truncateText(value, maxLength = 24) {
+      const text = String(value ?? '');
+      if (text.length <= maxLength) return text;
+      return `${text.slice(0, maxLength - 1).trimEnd()}…`;
+    }
+
+    function signalEventChips(signal) {
+      const eventIds = Array.isArray(signal?.eventIds) ? signal.eventIds : [];
+      const linkedEvents = eventIds
+        .map((eventId) => aiEvents.find((event) => event.id === eventId))
+        .filter(Boolean);
+
+      if (!linkedEvents.length) return '';
+
+      const visibleEvents = linkedEvents.slice(0, 2);
+      const hiddenCount = linkedEvents.length - visibleEvents.length;
+
+      return `${visibleEvents.map((event) => {
+        const copy = localizedRecord(event);
+        const year = String(event.date || '').split('-')[0];
+        const label = truncateText(copy.title || event.id, 22);
+        const chip = year ? `${year} · ${label}` : label;
+        return `<button class="signal-event-link" type="button" onclick="jumpToEvent('${event.id}')">${escapeHtml(chip)}</button>`;
+      }).join('')}${hiddenCount > 0 ? `<span class="signal-event-more">+${hiddenCount}</span>` : ''}`;
+    }
+
+    function signalEventLinks(signal) {
+      const chips = signalEventChips(signal);
+      if (!chips) return '';
+      return `<div class="signal-event-links" aria-label="${escapeHtml(text('linkedEvents'))}">${chips}</div>`;
+    }
+
+    function signalSourceChips(signal) {
+      const sourceIds = Array.isArray(signal?.sourceIds) ? signal.sourceIds : [];
+      const linkedSources = sourceIds
+        .map((sourceId) => sourcesById.get(sourceId))
+        .filter((source) => source && source.url);
+
+      if (!linkedSources.length) return '';
+
+      return `${linkedSources.slice(0, 3).map((source) => {
+        const label = truncateText(source.title || source.id, 26);
+        return `<a class="signal-event-link signal-source-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`;
+      }).join('')}${linkedSources.length > 3 ? `<span class="signal-event-more">+${linkedSources.length - 3}</span>` : ''}`;
+    }
+
+    function signalSourceLinks(signal) {
+      const chips = signalSourceChips(signal);
+      if (!chips) return '';
+      return `<div class="signal-event-links" aria-label="${escapeHtml(text('sourceLinksTitle'))}">${chips}</div>`;
+    }
+
+    function signalSupportRows(forecast) {
+      const list = Array.isArray(forecast?.signals) ? forecast.signals.filter(item => item.status === 'observed') : [];
+      if (!list.length) return '';
+      return `
+        <section class="support-matrix">
+          <div class="support-row-list">
+            ${list.map(item => {
+              const eventChips = signalEventChips(item);
+              const sourceChips = signalSourceChips(item);
+              return `
+                <article class="support-row">
+                  <div class="support-card">
+                    <p class="support-card-copy">${escapeHtml(localizedText(item.summary))}</p>
+                  </div>
+                  <div class="support-links-cell">
+                    <div class="signal-links-stack">
+                      ${eventChips}
+                      ${sourceChips}
+                    </div>
+                  </div>
+                </article>
+              `;
+            }).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    function predictionDetails(forecast) {
+      return signalSupportRows(forecast);
+    }
+
+    function chevronIcon(direction = 'down') {
+      const directionClass = direction === 'up' ? 'forecast-chevron up' : 'forecast-chevron';
+      return `
+        <svg class="${directionClass}" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3.5 6.25 8 10.75l4.5-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      `;
+    }
+
+    function compactCardAction(forecast) {
+      return `<button class="forecast-toggle" type="button" aria-label="${escapeHtml(text('reviewDirection'))}" onclick="event.stopPropagation(); previewForecast('${forecast.id}')">${chevronIcon('down')}</button>`;
+    }
+
+    function expandedPrimaryAction(forecast, mode) {
+      if (mode === 'selected') {
+        return `<button class="forecast-choice-button secondary" type="button" onclick="event.stopPropagation(); clearSelectedForecast()">${escapeHtml(text('clearSelection'))}</button>`;
+      }
+      return `<button class="forecast-choice-button" type="button" onclick="event.stopPropagation(); chooseForecast('${forecast.id}')">${escapeHtml(text('chooseDirection'))}</button>`;
+    }
+
+    function expandedCollapseAction(mode) {
+      const handler = mode === 'selected' ? 'collapseSelectedForecast()' : 'clearPreview()';
+      return `<button class="predict-collapse-button" type="button" onclick="event.stopPropagation(); ${handler}">${escapeHtml(text('closeDetails'))}${chevronIcon('up')}</button>`;
+    }
+
+    function renderForecastCard(forecast, mode = 'compact') {
+      const copy = localizedRecord(forecast);
+      const signals = signalSummary(forecast);
+      const isExpanded = mode === 'expanded' || mode === 'selected';
+      const isSelected = state.selectedForecastId === forecast.id;
+      const selection = formatSelectionCount(forecast.id);
+      const cardClass = ['predict-card', mode, isExpanded ? 'is-expanded' : '', isSelected ? 'selected' : ''].filter(Boolean).join(' ');
+      const signalText = signals.total ? `${signals.observed} ${text('linkedSignals')}` : text('activeStatus');
+      return `
+        <article class="${cardClass}" onclick="${mode === 'compact' ? `previewForecast('${forecast.id}')` : ''}">
+          <div class="predict-main">
+            <div class="predict-header">
+              ${isExpanded ? `
+                <div class="predict-expanded-topline">
+                  <div class="predict-expanded-title">
+                    <h3>${escapeHtml(copy.title)}</h3>
+                  </div>
+                  <div class="predict-expanded-controls">
+                    ${expandedPrimaryAction(forecast, mode)}
+                    <div class="forecast-selection-badge" aria-label="${escapeHtml(selection.label)}">
+                      <span class="forecast-selection-count">${escapeHtml(selection.count)}</span>
+                      <span class="forecast-selection-label">${escapeHtml(text('peopleTracking'))}</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="predict-intro">${escapeHtml(copy.desc)}</p>
+              ` : `
+                <div class="predict-meta">
+                  <span class="signal-count">${escapeHtml(signalText)}</span>
+                  <div class="forecast-selection-badge" aria-label="${escapeHtml(selection.label)}">
+                    <span class="forecast-selection-count">${escapeHtml(selection.count)}</span>
+                    <span class="forecast-selection-label">${escapeHtml(text('peopleTracking'))}</span>
+                  </div>
+                </div>
+                <h3>${escapeHtml(copy.title)}</h3>
+                <p>${escapeHtml(copy.desc)}</p>
+              `}
+            </div>
+            ${!isExpanded ? `
+              <div class="predict-action-row">
+                ${compactCardAction(forecast)}
+              </div>
+            ` : ''}
+          </div>
+          ${isExpanded ? `
+            <div class="predict-expanded-content">
+              <div class="prediction-details">
+                ${predictionDetails(forecast)}
+              </div>
+              <div class="predict-expanded-toolbar">
+                ${expandedCollapseAction(mode)}
+              </div>
+            </div>
+          ` : ''}
+        </article>
+      `;
+    }
+
+    function renderDirectionEntry(activeId, isConfirmed = false) {
+      const others = forecasts.filter(f => f.id !== activeId);
+      return `
+        <div class="direction-entry ${state.directionsPanelOpen ? 'open' : ''}">
+          <div class="direction-entry-head">
+            <div>
+              <div class="direction-entry-title">${escapeHtml(text('otherDirections'))}</div>
+              <div class="direction-entry-sub">${escapeHtml(others.length)} ${escapeHtml(text('availableDirections'))}</div>
+            </div>
+            <button class="forecast-action" onclick="toggleDirectionsPanel()">${escapeHtml(text(state.directionsPanelOpen ? 'hideAllDirections' : 'showAllDirections'))}</button>
+          </div>
+          <div class="direction-list">
+            ${others.map(forecast => {
+              const copy = localizedRecord(forecast);
+              const signals = signalSummary(forecast);
+              return `
+                <div class="direction-row">
+                  <div>
+                    <div class="direction-row-title">${escapeHtml(copy.title)}</div>
+                    <div class="direction-row-meta">${escapeHtml(signals.observed)} ${escapeHtml(text('linkedSignals'))} · ${escapeHtml(text('activeStatus'))}</div>
+                  </div>
+                  <button class="forecast-action" onclick="previewForecast('${forecast.id}')">${escapeHtml(text('changeDirection'))}</button>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    /* ─── Future Signals Selection Logic ────────────────────────────── */
     function renderPredictions() {
       if (state.dataStatus === 'loading') {
+        elements.predictionsContainer.classList.remove('compact-mode');
         renderStatus(
           elements.predictionsContainer,
           text('loadingPredictions'),
@@ -1689,6 +3056,7 @@
       }
 
       if (state.dataStatus === 'error') {
+        elements.predictionsContainer.classList.remove('compact-mode');
         renderStatus(
           elements.predictionsContainer,
           text('predictionsError'),
@@ -1699,54 +3067,96 @@
       }
 
       elements.predictionsContainer.innerHTML = '';
-      const totalVotes = Object.values(state.votes).reduce((a, b) => a + b, 0);
 
-      forecasts.forEach(p => {
-        const itemVotes = state.votes[p.id] || 0;
-        const percentage = totalVotes > 0 ? Math.round((itemVotes / totalVotes) * 100) : 0;
-        const userHasVoted = state.hasVoted[p.id];
-        const cardClass = userHasVoted ? 'predict-card voted' : 'predict-card';
-        const buttonText = userHasVoted ? text('voted') : text('vote');
-        const copy = localizedRecord(p);
+      const selected = forecasts.find(f => f.id === state.selectedForecastId);
+      if (selected && state.selectedForecastExpanded) {
+        elements.predictionsContainer.classList.remove('compact-mode');
+        elements.predictionsContainer.innerHTML = renderForecastCard(selected, 'selected') + renderDirectionEntry(selected.id, true);
+        return;
+      }
 
-        const card = document.createElement('div');
-        card.className = cardClass;
-        card.innerHTML = `
-          <div class="predict-header">
-            <h3>${copy.title}</h3>
-            <p>${copy.desc}</p>
-          </div>
-          <div class="vote-area">
-            <button class="vote-btn" onclick="vote('${p.id}')">
-              <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 13px; height: 13px;">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
-              </svg>
-              <span>${buttonText}</span>
-            </button>
-            <div class="vote-bar-container">
-              <div class="vote-bar" style="width: ${percentage}%"></div>
-            </div>
-            <div class="vote-stat">
-              <span>${itemVotes} ${text('votes')}</span>
-              <span>${percentage}%</span>
-            </div>
-          </div>
-        `;
-        elements.predictionsContainer.appendChild(card);
-      });
+      const preview = forecasts.find(f => f.id === state.previewForecastId);
+      if (preview) {
+        elements.predictionsContainer.classList.remove('compact-mode');
+        elements.predictionsContainer.innerHTML = renderForecastCard(preview, 'expanded') + renderDirectionEntry(preview.id, false);
+        return;
+      }
+
+      elements.predictionsContainer.classList.add('compact-mode');
+      elements.predictionsContainer.innerHTML = forecasts.map(forecast => {
+        return renderForecastCard(forecast, 'compact');
+      }).join('');
     }
 
-    window.vote = function(id) {
-      if (state.hasVoted[id]) {
-        state.votes[id] -= 1;
-        delete state.hasVoted[id];
-      } else {
-        state.votes[id] += 1;
-        state.hasVoted[id] = true;
+    window.previewForecast = async function(id) {
+      if (state.selectedForecastId === id) {
+        state.selectedForecastExpanded = true;
+        state.previewForecastId = '';
+        state.directionsPanelOpen = false;
+        renderPredictions();
+        return;
       }
-      localStorage.setItem('od-votes-v2', JSON.stringify(state.votes));
-      localStorage.setItem('od-has-voted', JSON.stringify(state.hasVoted));
+
+      state.previewForecastId = state.previewForecastId === id ? '' : id;
+      state.selectedForecastExpanded = false;
+      state.directionsPanelOpen = false;
       renderPredictions();
+    };
+
+    window.clearPreview = function() {
+      state.previewForecastId = '';
+      state.directionsPanelOpen = false;
+      renderPredictions();
+    };
+
+    window.chooseForecast = async function(id) {
+      if (state.selectedForecastId !== id) {
+        const syncedRemotely = await submitReaderPulseSelection(id);
+        if (!syncedRemotely) {
+          syncLocalReaderPulseState(id);
+        }
+      }
+      persistSelectedForecastId();
+      state.selectedForecastExpanded = true;
+      state.previewForecastId = '';
+      state.directionsPanelOpen = false;
+      renderPredictions();
+    };
+
+    window.collapseSelectedForecast = function() {
+      state.selectedForecastExpanded = false;
+      state.previewForecastId = '';
+      state.directionsPanelOpen = false;
+      renderPredictions();
+    };
+
+    window.clearSelectedForecast = async function(shouldRender = true) {
+      const clearedRemotely = await submitReaderPulseSelection('');
+      if (!clearedRemotely) {
+        syncLocalReaderPulseState('');
+      }
+      state.previewForecastId = '';
+      state.directionsPanelOpen = false;
+      if (shouldRender) {
+        renderPredictions();
+      }
+    };
+
+    window.toggleDirectionsPanel = function() {
+      state.directionsPanelOpen = !state.directionsPanelOpen;
+      renderPredictions();
+    };
+
+    window.jumpToEvent = function(id) {
+      if (!id) return;
+      state.openEventIds.add(id);
+      renderTimeline();
+      requestAnimationFrame(() => {
+        const node = document.getElementById(`item-${id}`);
+        if (node) {
+          node.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
     };
 
     /* ─── Curated Timeline Rendering ────────────────────────────────── */
@@ -1789,6 +3199,12 @@
         if (state.filters.consensusLevel !== 'all' && e.consensusLevel !== state.filters.consensusLevel) {
           return false;
         }
+        if (state.filters.year !== 'all') {
+          const eventYear = String(e.date || '').split('-')[0];
+          if (eventYear !== state.filters.year) {
+            return false;
+          }
+        }
         if (state.searchQuery) {
           const query = state.searchQuery.toLowerCase();
           const copy = localizedRecord(e);
@@ -1820,7 +3236,7 @@
         const detailsId = `details-${e.id}`;
         const detailsHTML = isExpanded ? renderEventDetails(e, detailsId) : '';
         const expandedClass = isExpanded ? ' expanded' : '';
-        const metricsHTML = renderNodeMetrics(e, consensusName, isExpanded, detailsId);
+        const metricsHTML = renderNodeMetrics(e, consensusName);
 
         if (e.significance === 3) {
           // Critical Node Layout
@@ -1830,7 +3246,7 @@
             </div>
             <div class="timeline-dot level-3"></div>
             <div class="timeline-entry">
-              <article class="timeline-card-l3${expandedClass}">
+              <article class="timeline-card-l3${expandedClass}" tabindex="0" aria-expanded="${isExpanded}" aria-controls="${detailsId}" onclick="toggleDetails('${e.id}')" onkeydown="handleCardKeydown(event, '${e.id}')">
                 <div class="timeline-node-head">
                   <div class="timeline-node-main">
                     <div class="card-meta">
@@ -1856,7 +3272,7 @@
             </div>
             <div class="timeline-dot level-2"></div>
             <div class="timeline-entry">
-              <article class="timeline-card-l2${expandedClass}">
+              <article class="timeline-card-l2${expandedClass}" tabindex="0" aria-expanded="${isExpanded}" aria-controls="${detailsId}" onclick="toggleDetails('${e.id}')" onkeydown="handleCardKeydown(event, '${e.id}')">
                 <div class="timeline-node-head">
                   <div class="timeline-node-main">
                     <div class="card-meta">
@@ -1882,7 +3298,7 @@
             </div>
             <div class="timeline-dot level-1"></div>
             <div class="timeline-entry">
-              <article class="timeline-card-l1${expandedClass}">
+              <article class="timeline-card-l1${expandedClass}" tabindex="0" aria-expanded="${isExpanded}" aria-controls="${detailsId}" onclick="toggleDetails('${e.id}')" onkeydown="handleCardKeydown(event, '${e.id}')">
                 <div class="timeline-node-head">
                   <div class="timeline-node-main">
                     <div class="card-meta">
@@ -1941,15 +3357,12 @@
       `;
     }
 
-    function renderNodeMetrics(e, consensusName, isExpanded, detailsId) {
-      const impactLabel = text('impactScore');
-      const toggleLabel = isExpanded ? text('collapseDetails') : text('expandDetails');
+    function renderNodeMetrics(e, consensusName) {
+      const impactLabel = isChineseContent() ? '影响' : 'Impact';
       return `
         <div class="timeline-node-side">
-          <span class="timeline-node-level">L${e.significance}</span>
-          <span class="timeline-node-impact">${impactLabel} ${e.impactIndex}/10</span>
-          <span class="timeline-node-consensus">${consensusName}</span>
-          <button class="timeline-toggle" type="button" aria-expanded="${isExpanded}" aria-controls="${detailsId}" onclick="toggleDetails('${e.id}')">${toggleLabel}</button>
+          <span class="timeline-node-meta">L${e.significance} · ${impactLabel} ${e.impactIndex}/10 · ${consensusName}</span>
+          <span class="timeline-card-indicator" aria-hidden="true"></span>
         </div>
       `;
     }
@@ -1972,14 +3385,13 @@
             <div class="source-body">
               <div class="source-row">
                 ${sourceTitle}
-                <span class="source-kind">${sourceKind}</span>
               </div>
               <p class="source-meta">${source.url || (isChineseContent() ? '当前记录的是来源指向。推荐后续补 DOI、原始页面链接、存档链接和抓取时间。' : 'This currently stores the citation pointer. Next step: add DOI, canonical URL, archive URL, and capture timestamp.')}</p>
               ${ref.quote ? `<div class="source-quote">${ref.quote}</div>` : ''}
               <div class="source-status">
+                <span class="source-chip">${sourceKind}</span>
                 <span class="source-chip">${isChineseContent() ? '引用已记录' : 'Citation logged'}</span>
                 <span class="source-chip">${source.url ? (isChineseContent() ? '原文可访问' : 'Live source') : (isChineseContent() ? '待补原文链接' : 'URL pending')}</span>
-                <span>${isChineseContent() ? '建议保留本地摘录或网页快照，避免原始页面失效。' : 'Preserve a local excerpt or web snapshot to guard against link rot.'}</span>
               </div>
             </div>
           </li>
@@ -1998,7 +3410,7 @@
       `).join('');
 
       return `
-        <div class="timeline-details" id="${detailsId}">
+        <div class="timeline-details" id="${detailsId}" onclick="event.stopPropagation()" onkeydown="event.stopPropagation()">
           <div class="timeline-details-inner">
             <div class="detail-section">
               <span class="detail-title">${isChineseContent() ? '事件摘要' : 'Event Summary'}</span>
@@ -2009,27 +3421,48 @@
               <ul class="impact-list">${impactItems}</ul>
             </div>
             <div class="detail-section">
-              <span class="detail-title">${isChineseContent() ? '可信度与来源' : 'Consensus And Sources'}</span>
+              <span class="detail-title">${isChineseContent() ? '共识度与来源' : 'Consensus &amp; Sources'}</span>
               <div class="evidence-summary">
                 <div class="evidence-item">
-                  <span class="label">${isChineseContent() ? '重要度' : 'Significance'}</span>
+                  <span class="label">
+                    ${isChineseContent() ? '重要度' : 'Significance'}
+                    <span class="info-trigger" onmouseover="showGlobalTooltip(event, 'significance')" onmouseout="hideGlobalTooltip()">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.6;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </span>
+                  </span>
                   <span class="val">L${e.significance}</span>
                 </div>
                 <div class="evidence-item">
-                  <span class="label">${isChineseContent() ? '分类' : 'Category'}</span>
+                  <span class="label">
+                    ${isChineseContent() ? '分类' : 'Category'}
+                    <span class="info-trigger" onmouseover="showGlobalTooltip(event, 'category')" onmouseout="hideGlobalTooltip()">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.6;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </span>
+                  </span>
                   <span class="val">${e.categories.map(c => labelFor(categoryLabels[c])).join(' / ')}</span>
                 </div>
                 <div class="evidence-item">
-                  <span class="label">${isChineseContent() ? '可信度' : 'Consensus'}</span>
+                  <span class="label">
+                    ${isChineseContent() ? '共识度' : 'Consensus'}
+                    <span class="info-trigger" onmouseover="showGlobalTooltip(event, 'consensus')" onmouseout="hideGlobalTooltip()">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.6;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </span>
+                  </span>
                   <span class="val">${labelFor(consensusLabels[e.consensusLevel])}</span>
                 </div>
                 <div class="evidence-item">
-                  <span class="label">${isChineseContent() ? '日期精度' : 'Date Precision'}</span>
-                  <span class="val">${labelFor(datePrecisionLabels[e.datePrecision]) || e.datePrecision}</span>
+                  <span class="label">
+                    ${isChineseContent() ? '影响指数' : 'Impact Index'}
+                    <span class="info-trigger" onmouseover="showGlobalTooltip(event, 'impactIndex')" onmouseout="hideGlobalTooltip()">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.6;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </span>
+                  </span>
+                  <span class="val">${e.impactIndex}/10</span>
                 </div>
               </div>
               <ul class="source-list">${sourceItems}</ul>
             </div>
+            <button class="details-collapse" type="button" onclick="collapseDetailsFromFooter(event, '${e.id}')">${isChineseContent() ? '收起' : 'Collapse'}</button>
           </div>
         </div>
       `;
@@ -2064,6 +3497,46 @@
       }
     };
 
+    window.collapseDetailsFromFooter = function(event, id) {
+      event.stopPropagation();
+      const e = aiEvents.find(item => item.id === id);
+      const item = document.getElementById(`item-${id}`);
+      if (!e || !item || !state.openEventIds.has(id)) return;
+
+      const anchor = item.nextElementSibling || item;
+      const anchorId = anchor.id;
+      const previousTop = anchor.getBoundingClientRect().top;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      const previousHtmlOverflowAnchor = document.documentElement.style.overflowAnchor;
+      const previousBodyOverflowAnchor = document.body.style.overflowAnchor;
+
+      state.openEventIds.delete(id);
+      document.documentElement.style.scrollBehavior = 'auto';
+      document.documentElement.style.overflowAnchor = 'none';
+      document.body.style.overflowAnchor = 'none';
+      renderTimeline();
+
+      const updatedAnchor = document.getElementById(anchorId);
+      if (updatedAnchor) {
+        const nextTop = updatedAnchor.getBoundingClientRect().top;
+        window.scrollTo(window.scrollX, window.scrollY + nextTop - previousTop);
+      }
+      requestAnimationFrame(() => {
+        document.documentElement.style.scrollBehavior = previousScrollBehavior;
+        document.documentElement.style.overflowAnchor = previousHtmlOverflowAnchor;
+        document.body.style.overflowAnchor = previousBodyOverflowAnchor;
+      });
+
+      history.pushState(null, '', window.location.pathname);
+    };
+
+    window.handleCardKeydown = function(event, id) {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      if (event.target !== event.currentTarget) return;
+      event.preventDefault();
+      toggleDetails(id);
+    };
+
     window.closeDetails = function(shouldPushState = true) {
       state.openEventIds.clear();
       renderTimelineWithTransition();
@@ -2086,38 +3559,114 @@
     });
 
     /* ─── Search and Filtering ──────────────────────────────────────── */
+    const searchField = elements.searchInput.closest('.filter-field');
+    function updateSearchExpansion() {
+      if (document.activeElement === elements.searchInput || elements.searchInput.value.trim() !== '') {
+        searchField.classList.add('is-expanded');
+      } else {
+        searchField.classList.remove('is-expanded');
+      }
+    }
+    
+    elements.searchInput.addEventListener('focus', updateSearchExpansion);
+    elements.searchInput.addEventListener('blur', updateSearchExpansion);
+    
     elements.searchInput.addEventListener('input', (e) => {
       state.searchQuery = e.target.value;
+      updateSearchExpansion();
+      initFilterOptionsWithCounts();
       renderTimeline();
     });
 
     elements.significanceFilter.addEventListener('change', (e) => {
       state.filters.significance = e.target.value;
+      initFilterOptionsWithCounts();
       renderTimeline();
     });
     elements.categoryFilter.addEventListener('change', (e) => {
       state.filters.category = e.target.value;
+      initFilterOptionsWithCounts();
       renderTimeline();
     });
     elements.impactFilter.addEventListener('change', (e) => {
       state.filters.impactDimension = e.target.value;
+      initFilterOptionsWithCounts();
       renderTimeline();
     });
     elements.consensusFilter.addEventListener('change', (e) => {
       state.filters.consensusLevel = e.target.value;
+      initFilterOptionsWithCounts();
       renderTimeline();
     });
+    elements.yearFilter.addEventListener('change', (e) => {
+      state.filters.year = e.target.value;
+      initFilterOptionsWithCounts();
+      renderTimeline();
+    });
+
+    elements.filterResetBtn.addEventListener('click', () => {
+      state.searchQuery = '';
+      state.filters.significance = 'all';
+      state.filters.category = 'all';
+      state.filters.impactDimension = 'all';
+      state.filters.consensusLevel = 'all';
+      state.filters.year = 'all';
+      
+      elements.searchInput.value = '';
+      elements.significanceFilter.value = 'all';
+      elements.categoryFilter.value = 'all';
+      elements.impactFilter.value = 'all';
+      elements.consensusFilter.value = 'all';
+      elements.yearFilter.value = 'all';
+      
+      updateSearchExpansion();
+      initFilterOptionsWithCounts();
+      renderTimeline();
+    });
+    
+    // 初始化执行一次，防止浏览器缓存的输入文本与搜索框展开样式发生错位
+    updateSearchExpansion();
+
+    /* ─── Back to Top Button Interaction ────────────────────────────── */
+    let toggleBackToTop = () => {};
+    if (elements.backToTopBtn) {
+      const timelineTitle = document.getElementById('timelineTitle');
+      toggleBackToTop = () => {
+        // 双重安全判定：只有当用户滚过了 Hero 区域（scrollY > 200）且时间轴标题已进入或越过屏幕底边时才显示
+        if (window.scrollY > 200 && timelineTitle && timelineTitle.getBoundingClientRect().top <= window.innerHeight) {
+          elements.backToTopBtn.classList.add('is-visible');
+        } else {
+          elements.backToTopBtn.classList.remove('is-visible');
+        }
+      };
+
+      window.addEventListener('scroll', toggleBackToTop);
+      
+      elements.backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
 
     /* ─── Initialization ────────────────────────────────────────────── */
     async function init() {
       // Check query param for initial page load
       const urlParams = new URLSearchParams(window.location.search);
       const eventId = urlParams.get('event');
+      const readerPulseLoaded = await loadReaderPulseStateFromApi();
+      if (!readerPulseLoaded) {
+        syncLocalReaderPulseState(state.selectedForecastId);
+      }
       
       // Update UI languages & themes
       updateLocale();
       updateTheme();
       await loadSiteData();
+      
+      // 此时数据已完全加载并完成初次渲染，页面高度已撑开，可以准确执行初始滚动判定
+      toggleBackToTop();
       
       if (eventId && state.dataStatus === 'ready') {
         setTimeout(() => openDetails(eventId, false), 300);
@@ -2125,6 +3674,64 @@
     }
 
     init();
+
+    // Tooltip definitions and handlers
+    const TOOLTIP_TEXTS = {
+      significance: {
+        zh: '<strong>重要度分级 (L1-L3)：</strong>编辑评定的历史重要度。<br>· <strong>L1 (Important)</strong>：长期脉络有记录价值，影响范围明确但有限。<br>· <strong>L2 (Key)</strong>：显著推动研究范式、产品、商业、政策或认知中至少一项。<br>· <strong>L3 (Turning Point)</strong>：改变主流技术路线、公众认知或社会行为，影响跨领域且可持续。',
+        en: '<strong>Significance (L1-L3):</strong> Editorial historical evaluation.<br>· <strong>L1 (Important)</strong>: Worthy of long-term record; clear but limited impact.<br>· <strong>L2 (Key)</strong>: Key driver of paradigms, adoption, business models, or policy.<br>· <strong>L3 (Turning Point)</strong>: Reshapes tech trajectories, public perception, or regulation.'
+      },
+      category: {
+        zh: '<strong>事件分类 (Category)：</strong>事件的主导属性类型。<br>· <strong>模型发布</strong>：具体 AI 模型、模型族或能力包的正式发布。<br>· <strong>能力突破</strong>：AI 首次或显著完成了此前不可行的任务。<br>· <strong>研究范式</strong>：论文、算法、架构或评测改变了研究路线。<br>· <strong>产品化</strong>：AI 能力进入了用户实际可用的产品、平台与商业服务。<br>· <strong>开源事件</strong>：开源权重、代码、数据集或生态改变了访问门槛。<br>· <strong>政策法规</strong>：法律、监管、政策或重大判决成为事件主体。<br>· <strong>安全伦理</strong>：对齐、伦理风险、治理框架、重大事故或暂停倡议。<br>· <strong>社会影响</strong>：就业、版权、舆论、劳动市场等社会外溢后果。',
+        en: '<strong>Event Category:</strong> Primary attribute of the recorded event.<br>· <strong>Model</strong>: Release of models, model families, or capabilities.<br>· <strong>Capability</strong>: AI demonstrating previously impossible tasks.<br>· <strong>Research</strong>: Papers, architectures, or paradigms shifting research paths.<br>· <strong>Product</strong>: AI entering shipping products, workflows, or platforms.<br>· <strong>Open Source</strong>: Open weights, codes, or datasets changing access.<br>· <strong>Regulation</strong>: Laws, policies, regulatory acts, or court rulings.<br>· <strong>Safety</strong>: Alignment research, governance, ethical incidents, or safety actions.<br>· <strong>Social</strong>: Market, copyright, education, or macroeconomic impacts.'
+      },
+      consensus: {
+        zh: '<strong>共识度</strong> — 反映事件的事实确定性及影响解释的认同程度。<br>请区分：共识度衡量的是<em>对事件的解读</em>到了什么层面，而非事件真实与否。<br>· <strong>广泛共识</strong>：事实清晰，影响解释被广泛接受。<br>· <strong>仍在讨论</strong>：事实清晰，但对影响规模、归因或后果存在分歧。<br>· <strong>共识形成中</strong>：事实和影响的判断都仍在积累中。',
+        en: '<strong>Consensus</strong> — Reflects how settled the facts are and how widely the impact interpretation is accepted.<br>Note: This is about <em>interpretation status</em>, not whether the event is real.<br>· <strong>Broad Consensus</strong>: Facts are clear; the impact interpretation is widely agreed upon.<br>· <strong>Actively Debated</strong>: Facts are clear, but the scale, attribution, or consequences remain contested.<br>· <strong>Emerging Consensus</strong>: Both factual understanding and impact judgment are still developing.'
+      },
+      impactIndex: {
+        zh: '<strong>影响指数算法 (0-10)：</strong>定量评估事件的影响强弱。<br>· <strong>维度得分</strong>：基于能力、经济、普惠、风险、认知等 5 维度影响严重度绝对值求和 (除以3，上限 4 分)。<br>· <strong>证据加分</strong>：支撑材料证据可信度 (最低A级+1.5分，D级-1分)。<br>· <strong>持续性加分</strong>：长期影响+1.5分，中期+1分，短期+0.5分。<br>· <strong>受众广度加分</strong>：影响群体数量 (≥4类+2分)。<br>· <strong>争议调整</strong>：高争议但证据不足时扣减 0.5 分。',
+        en: '<strong>Impact Index Algorithm (0-10):</strong> Quantifies overall event impact.<br>· <strong>Dimension</strong>: Sum of severity absolute values of 5 key areas (cap/econ/access/risk/paradigm, max 4.0).<br>· <strong>Evidence</strong>: Lowest source evidence grade bonus (A:+1.5, D:-1.0).<br>· <strong>Durability</strong>: Higher timeframe bonus (long:+1.5, med:+1.0, short:+0.5).<br>· <strong>Scope</strong>: Number of affected groups (>=4 groups:+2.0).<br>· <strong>Controversy</strong>: Deducts 0.5 if high debate with low evidence.'
+      }
+    };
+
+    window.showGlobalTooltip = function(event, key) {
+      const tooltip = document.getElementById('global-tooltip');
+      if (!tooltip) return;
+      
+      const lang = isChineseContent() ? 'zh' : 'en';
+      tooltip.innerHTML = TOOLTIP_TEXTS[key][lang];
+      
+      tooltip.classList.add('show');
+      
+      // Calculate positioning dynamically
+      const rect = event.currentTarget.getBoundingClientRect();
+      
+      let left = rect.left + (rect.width / 2) - 145; // 145 is half of tooltip width (290px)
+      let top = rect.top - tooltip.offsetHeight - 8;
+      
+      // Guard boundaries (screen margins)
+      if (left < 10) left = 10;
+      if (left + 290 > window.innerWidth - 10) {
+        left = window.innerWidth - 300;
+      }
+      
+      // Flip below if not enough room on top
+      if (top < 10) {
+        top = rect.bottom + 8;
+      }
+      
+      tooltip.style.left = `${left + window.scrollX}px`;
+      tooltip.style.top = `${top + window.scrollY}px`;
+    };
+
+    window.hideGlobalTooltip = function() {
+      const tooltip = document.getElementById('global-tooltip');
+      if (tooltip) {
+        tooltip.classList.remove('show');
+      }
+    };
   </script>
+  <div id="global-tooltip" class="global-tooltip"></div>
 </body>
 </html>

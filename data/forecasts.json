@@ -1,294 +1,762 @@
 [
   {
-    "id": "agi",
-    "slug": "agi",
+    "id": "ai-software-teams",
+    "slug": "ai-software-teams",
     "title": {
-      "en": "Artificial General Intelligence",
-      "zhHans": "通用人工智能 (AGI)"
+      "en": "AI Software Teams",
+      "zhHans": "AI 软件团队"
     },
     "thesis": {
-      "en": "AI systems that surpass human intelligence in most economically valuable tasks, including reasoning and multi-step planning.",
-      "zhHans": "系统在绝大多数具备经济价值的任务中达到超越人类的智能水平，包含抽象推理与多步规划能力。"
+      "en": "Software work is moving from one-off AI assistance toward coordinated agentic loops that look increasingly team-like.",
+      "zhHans": "软件工作正从一次性的 AI 辅助，走向越来越像团队协作的智能体闭环。"
     },
     "description": {
-      "en": "AI systems that surpass human intelligence in most economically valuable tasks, including reasoning and multi-step planning.",
-      "zhHans": "系统在绝大多数具备经济价值的任务中达到超越人类的智能水平，包含抽象推理与多步规划能力。"
+      "en": "AI coding tools help plan tasks, write code, run tests, and handle maintenance, changing how software teams work day to day.",
+      "zhHans": "AI 编程工具已经不只是补全代码，还在参与拆任务、写代码、跑测试和做维护，直接改变日常开发流程。"
     },
     "forecastType": "capability",
     "status": "active",
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "createdAt": "2026-06-25",
+    "updatedAt": "2026-06-25",
+    "lastReviewedAt": "2026-06-25",
+    "reviewCadence": "monthly",
     "expectedWindow": {
       "start": "2027",
-      "end": "2029",
-      "precision": "year"
-    },
-    "confidence": {
-      "level": "medium",
-      "evidenceGrade": "C"
-    },
-    "rationale": {
-      "signalsFor": [],
-      "signalsAgainst": [],
-      "assumptions": [
-        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
-      ]
-    },
-    "resolution": {
-      "achievedWhen": {
-        "en": "An AI system demonstrates broad autonomous capability across knowledge work, software, scientific reasoning, and multi-step planning under multiple independent evaluations and real workflows for at least 90 days.",
-        "zhHans": "在多个独立评测和真实工作流中，系统持续展现跨知识工作、软件、科学推理和多步规划的广泛自主能力，并可被第三方复核至少 90 天。"
-      },
-      "notAchievedWhen": {
-        "en": "A closed demo, a single benchmark result, hidden human handoff, or unverifiable claim does not count.",
-        "zhHans": "仅有封闭演示、单一 benchmark 高分、隐藏人工接管或不可复核声明时，不算达成。"
-      },
-      "measurementSources": [
-        "independent benchmarks",
-        "model cards",
-        "technical reports",
-        "auditor reports",
-        "regulatory documents"
-      ],
-      "minimumDuration": "90 days"
-    },
-    "sources": [],
-    "relatedEvents": [],
-    "tags": [
-      "agi"
-    ],
-    "votes": {
-      "totalVotes": 0,
-      "yes": 0,
-      "no": 0,
-      "unsure": 0,
-      "updatedAt": "2026-06-24"
-    },
-    "editorial": {
-      "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
-      "reviewedAt": "2026-06-24",
-      "publishedAt": "2026-06-24",
-      "curator": "EpochArc editorial"
-    }
-  },
-  {
-    "id": "robot",
-    "slug": "robot",
-    "title": {
-      "en": "General Embodied AI",
-      "zhHans": "通用具身智能机器人"
-    },
-    "thesis": {
-      "en": "Humanoid robots powered by general physical intelligence performing domestic chores and manufacturing labor at scale.",
-      "zhHans": "具备通用物理智能的人形机器人，可进入家庭执行家务，或在制造业和物流中进行规模化自主替代劳作。"
-    },
-    "description": {
-      "en": "Humanoid robots powered by general physical intelligence performing domestic chores and manufacturing labor at scale.",
-      "zhHans": "具备通用物理智能的人形机器人，可进入家庭执行家务，或在制造业和物流中进行规模化自主替代劳作。"
-    },
-    "forecastType": "product",
-    "status": "active",
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
-    "expectedWindow": {
-      "start": "2028",
       "end": "2030",
       "precision": "year"
     },
     "confidence": {
       "level": "medium",
-      "evidenceGrade": "C"
+      "evidenceGrade": "B"
     },
     "rationale": {
-      "signalsFor": [],
-      "signalsAgainst": [],
-      "assumptions": [
-        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      "currentBaseline": {
+        "en": "AI coding tools are already embedded in real development environments. Code generation, patch drafting, review assistance, and limited agentic execution are no longer hypothetical.",
+        "zhHans": "AI 编程工具已经进入真实开发环境。代码生成、补丁草拟、审查辅助以及有限的智能体执行都不再是假设。"
+      },
+      "whyThisDirection": {
+        "en": "The important shift is not whether AI can write code, but whether software work starts to look like a coordinated loop between humans and multiple AI roles rather than a single assistant completing isolated prompts.",
+        "zhHans": "真正重要的变化，不是 AI 会不会写代码，而是软件工作是否会从“单个助手响应单个提示”转向“人类与多个 AI 角色形成协调闭环”。"
+      },
+      "counterSignal": {
+        "en": "Repository context remains brittle, verification is expensive, and security or accountability failures still make fully trusted multi-step coding workflows hard to sustain.",
+        "zhHans": "代码库上下文仍然脆弱，验证成本仍高，安全与责任问题也使多步编程工作流很难被完全信任。"
+      },
+      "openQuestions": [
+        {
+          "en": "Will AI-assisted coding remain a productivity layer, or start to absorb durable ownership of bounded software work?",
+          "zhHans": "AI 编程会一直停留在效率层，还是会开始承担边界明确的软件工作的持续所有权？"
+        },
+        {
+          "en": "What evidence would show that teams trust AI not just to draft code, but to participate in maintenance, review, and recovery cycles?",
+          "zhHans": "什么样的证据才能说明团队信任 AI 参与的不只是代码草拟，而是维护、审查与恢复闭环？"
+        }
       ]
     },
-    "resolution": {
-      "achievedWhen": {
-        "en": "General embodied systems reliably complete multiple task classes in homes, manufacturing, or logistics, with sustained commercially deployable use cases.",
-        "zhHans": "通用具身系统在家庭、制造或物流等非结构化环境中稳定完成多类任务，并出现可商业部署的持续使用案例。"
+    "signals": [
+      {
+        "id": "copilot-mainstream-dev-workflow",
+        "kind": "product",
+        "status": "observed",
+        "label": {
+          "en": "AI pair programming is already embedded in daily development tools.",
+          "zhHans": "AI 结对编程已经嵌入日常开发工具。"
+        },
+        "summary": {
+          "en": "GitHub Copilot's general availability marked the point where AI-generated code became a normal part of mainstream software tooling rather than a lab novelty.",
+          "zhHans": "GitHub Copilot 的全面可用，标志着 AI 生成代码成为主流软件工具链的一部分，而不再只是实验室新奇事物。"
+        },
+        "eventIds": [
+          "github-copilot-2022"
+        ],
+        "sourceIds": [
+          "github-copilot-ga-2022",
+          "mckinsey-state-ai-2025"
+        ]
       },
-      "notAchievedWhen": {
-        "en": "A lab-only demo, teleoperated video, or success on a single task does not count.",
-        "zhHans": "只在实验室演示、遥操作视频或单一任务上成功，不算达成。"
+      {
+        "id": "vibe-coding-shifted-behavior",
+        "kind": "workflow",
+        "status": "observed",
+        "label": {
+          "en": "Developers now describe and steer code through LLMs, not just hand-write everything.",
+          "zhHans": "开发者已经开始通过 LLM 描述和引导代码，而不再只靠手写完成一切。"
+        },
+        "summary": {
+          "en": "The rise of 'vibe coding' showed that AI-mediated software creation had become visible enough to name a new developer behavior pattern.",
+          "zhHans": "“vibe coding” 的流行说明，AI 介导的软件创建方式已经明显到足以被命名为一种新的开发行为模式。"
+        },
+        "eventIds": [
+          "vibecoding-2025"
+        ],
+        "sourceIds": [
+          "karpathy-vibe-coding-tweet",
+          "wikipedia-vibe-coding",
+          "stanford-ai-index-2026"
+        ]
       },
-      "measurementSources": [
-        "independent benchmarks",
-        "model cards",
-        "technical reports",
-        "auditor reports",
-        "regulatory documents"
-      ],
-      "minimumDuration": "90 days"
-    },
-    "sources": [],
-    "relatedEvents": [],
-    "tags": [
-      "robot"
+      {
+        "id": "coding-agents-are-moving-beyond-autocomplete",
+        "kind": "incident",
+        "status": "observed",
+        "label": {
+          "en": "Coding agents are already exposing multi-step and background execution behavior.",
+          "zhHans": "编程智能体已经显露出多步执行和后台运行的行为特征。"
+        },
+        "summary": {
+          "en": "The Claude Code leak showed that frontier coding products were already experimenting with persistent background actions and broader task handling, even if the trust model remained fragile.",
+          "zhHans": "Claude Code 泄露事件表明，前沿编程产品已经在试验持久后台动作和更广的任务处理，即便其信任模型仍然脆弱。"
+        },
+        "eventIds": [
+          "claude-code-leak-2026"
+        ],
+        "sourceIds": [
+          "thehackernews-claude-code-leak",
+          "cnbc-claude-code-leak",
+          "stanford-ai-index-2026"
+        ]
+      }
     ],
-    "votes": {
-      "totalVotes": 0,
-      "yes": 0,
-      "no": 0,
-      "unsure": 0,
-      "updatedAt": "2026-06-24"
+    "consensusBasis": {
+      "resolutionMode": "monitor_only",
+      "basisType": "none",
+      "summary": {
+        "en": "Public sources clearly show that AI coding workflows are deepening, but there is no external industry-wide standard for when 'AI software teams' should be declared real. This direction is monitored through event-linked signals rather than public completion criteria.",
+        "zhHans": "公开资料已经清楚显示 AI 编程工作流在加深，但目前并不存在一个外部、行业范围的公开标准，用来判断“AI 软件团队”何时算成立。因此这个方向只做事件化信号跟踪，不公开设定完成标准。"
+      },
+      "sourceIds": [
+        "nist-ai-rmf-1-0",
+        "nist-genai-profile-2024",
+        "metr-long-tasks-2025"
+      ]
     },
+    "sources": [
+      {
+        "sourceId": "github-copilot-ga-2022",
+        "supports": [
+          "signals",
+          "historicalBaseline"
+        ]
+      },
+      {
+        "sourceId": "mckinsey-state-ai-2025",
+        "supports": [
+          "signals",
+          "workflowAdoption"
+        ]
+      },
+      {
+        "sourceId": "stanford-ai-index-2026",
+        "supports": [
+          "signals",
+          "capabilityContext"
+        ]
+      },
+      {
+        "sourceId": "metr-long-tasks-2025",
+        "supports": [
+          "consensusBasis",
+          "evaluationContext"
+        ]
+      },
+      {
+        "sourceId": "nist-ai-rmf-1-0",
+        "supports": [
+          "consensusBasis"
+        ]
+      },
+      {
+        "sourceId": "nist-genai-profile-2024",
+        "supports": [
+          "consensusBasis"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "github-copilot-2022",
+      "vibecoding-2025",
+      "claude-code-leak-2026"
+    ],
+    "tags": [
+      "coding",
+      "software-engineering",
+      "agents",
+      "developer-tools"
+    ],
     "editorial": {
-      "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
-      "reviewedAt": "2026-06-24",
-      "publishedAt": "2026-06-24",
-      "curator": "EpochArc editorial"
+      "createdAt": "2026-06-25",
+      "updatedAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "publishedAt": "2026-06-25",
+      "curator": "EpochArc editorial",
+      "screeningRunId": "possible-directions-2026-06-25c"
     }
   },
   {
-    "id": "alignment",
-    "slug": "alignment",
+    "id": "autonomous-enterprise-workflows",
+    "slug": "autonomous-enterprise-workflows",
     "title": {
-      "en": "Superalignment & ASI Control",
-      "zhHans": "超级对齐与智能控制"
+      "en": "Autonomous Enterprise Workflows",
+      "zhHans": "自主企业工作流"
     },
     "thesis": {
-      "en": "Solving the control and alignment problem of artificial systems that are orders of magnitude smarter than humans.",
-      "zhHans": "彻底解决比人类更聪明数个数量级的超智能（ASI）控制和价值观绑定问题，消除潜在失控性生存危机。"
+      "en": "Agentic systems are moving from isolated demos toward repeatable workflow execution across real business tools.",
+      "zhHans": "智能体系统正从孤立演示走向跨真实业务工具的可重复工作流执行。"
     },
     "description": {
-      "en": "Solving the control and alignment problem of artificial systems that are orders of magnitude smarter than humans.",
-      "zhHans": "彻底解决比人类更聪明数个数量级的超智能（ASI）控制和价值观绑定问题，消除潜在失控性生存危机。"
+      "en": "Agents run defined workflows across tools like email, CRM, ERP, and ticketing systems, reducing manual handoffs between teams.",
+      "zhHans": "让智能体在邮件、CRM、ERP、工单等系统之间自动跑固定流程，减少人工切换和交接。"
     },
-    "forecastType": "safety",
+    "forecastType": "product",
     "status": "active",
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "createdAt": "2026-06-25",
+    "updatedAt": "2026-06-25",
+    "lastReviewedAt": "2026-06-25",
+    "reviewCadence": "monthly",
     "expectedWindow": {
-      "start": "2029",
-      "end": "2032",
+      "start": "2027",
+      "end": "2030",
       "precision": "year"
     },
     "confidence": {
       "level": "medium",
-      "evidenceGrade": "C"
+      "evidenceGrade": "B"
     },
     "rationale": {
-      "signalsFor": [],
-      "signalsAgainst": [],
-      "assumptions": [
-        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      "currentBaseline": {
+        "en": "Agents can already browse, call tools, fill forms, and coordinate short tasks. Enterprises are experimenting, but broad operational trust is still uneven.",
+        "zhHans": "智能体已经能浏览网页、调用工具、填写表单并协调短任务。企业也在试验，但对其进行广泛运营级信任仍然很不均衡。"
+      },
+      "whyThisDirection": {
+        "en": "What matters now is whether these capabilities stay as product demos and copilots, or become repeatable workflow layers across support, operations, reporting, and internal systems.",
+        "zhHans": "现在真正值得看的是，这些能力会停留在产品演示和副驾层，还是会成为客服、运营、报告和内部系统中的可重复工作流层。"
+      },
+      "counterSignal": {
+        "en": "Exception handling, confidentiality, approvals, system integration, and liability remain major blockers to treating agents as trusted enterprise operators.",
+        "zhHans": "异常处理、保密要求、审批流程、系统集成和责任归属，仍然是把智能体当作可信企业执行者的主要障碍。"
+      },
+      "openQuestions": [
+        {
+          "en": "Which enterprise workflows are bounded enough for real agent autonomy, and which still depend too heavily on human judgment?",
+          "zhHans": "哪些企业工作流足够边界明确，适合真正的智能体自治？哪些又仍然过度依赖人工判断？"
+        },
+        {
+          "en": "What public evidence would show that enterprises trust agents beyond pilots and internal showcases?",
+          "zhHans": "什么样的公开证据才能说明企业对智能体的信任已经超越试点和内部展示？"
+        }
       ]
     },
-    "resolution": {
-      "achievedWhen": {
-        "en": "Control, alignment, and failure-handling methods for systems materially stronger than humans are independently audited and remain effective in real deployment.",
-        "zhHans": "面向明显强于人类的系统，出现被独立审计认可的控制、对齐和失效处置框架，并在真实部署中持续有效。"
+    "signals": [
+      {
+        "id": "autonomous-agents-broke-into-mainstream-awareness",
+        "kind": "product",
+        "status": "observed",
+        "label": {
+          "en": "Autonomous agents have already entered mainstream developer awareness.",
+          "zhHans": "自主智能体已经进入主流开发者视野。"
+        },
+        "summary": {
+          "en": "Auto-GPT was a turning point in making goal-driven agents legible to ordinary developers, even before enterprise reliability was solved.",
+          "zhHans": "Auto-GPT 让以目标驱动的智能体首次被普通开发者清晰感知，即便企业级可靠性当时仍未解决。"
+        },
+        "eventIds": [
+          "auto-gpt-2023"
+        ],
+        "sourceIds": [
+          "wikipedia-auto-gpt",
+          "github-autogpt"
+        ]
       },
-      "notAchievedWhen": {
-        "en": "Principle statements, a single safety benchmark, or an undeployed research prototype do not count.",
-        "zhHans": "只有原则声明、单项安全评测或未经部署验证的研究原型，不算达成。"
+      {
+        "id": "agent-infrastructure-and-products-are-forming",
+        "kind": "infrastructure",
+        "status": "observed",
+        "label": {
+          "en": "Agent infrastructure and first-party agent products are now appearing together.",
+          "zhHans": "智能体基础设施和一方产品正在同时成形。"
+        },
+        "summary": {
+          "en": "MCP, Project Mariner, and Operator collectively show that major labs are building not just agent demos, but the protocols, interfaces, and products needed for multi-step task execution.",
+          "zhHans": "MCP、Project Mariner 和 Operator 共同表明，大型实验室正在构建的不只是智能体演示，而是支撑多步任务执行所需的协议、界面和产品。"
+        },
+        "eventIds": [
+          "mcp-protocol-2024",
+          "gemini-2-agents-2024",
+          "openai-operator-2025"
+        ],
+        "sourceIds": [
+          "anthropic-mcp-blog-2024",
+          "google-gemini-2-blog-2024",
+          "openai-operator"
+        ]
       },
-      "measurementSources": [
-        "independent benchmarks",
-        "model cards",
-        "technical reports",
-        "auditor reports",
-        "regulatory documents"
-      ],
-      "minimumDuration": "90 days"
-    },
-    "sources": [],
-    "relatedEvents": [],
-    "tags": [
-      "alignment"
+      {
+        "id": "independent-tracking-of-agent-adoption-now-exists",
+        "kind": "market",
+        "status": "observed",
+        "label": {
+          "en": "Independent reports now treat deployed agents as a real adoption category.",
+          "zhHans": "独立报告已经把已部署智能体视为一个真实的采用类别。"
+        },
+        "summary": {
+          "en": "Independent tracking from MIT, Stanford, and McKinsey suggests that agent deployment and enterprise experimentation are now large enough to measure, not just to speculate about.",
+          "zhHans": "来自 MIT、Stanford 和麦肯锡的独立追踪说明，智能体部署和企业试验已经发展到足以被测量，而不只是被猜测。"
+        },
+        "eventIds": [
+          "mcp-protocol-2024",
+          "openai-operator-2025"
+        ],
+        "sourceIds": [
+          "mit-ai-agent-index-2025",
+          "stanford-ai-index-2026",
+          "mckinsey-state-ai-2025"
+        ]
+      }
     ],
-    "votes": {
-      "totalVotes": 0,
-      "yes": 0,
-      "no": 0,
-      "unsure": 0,
-      "updatedAt": "2026-06-24"
+    "consensusBasis": {
+      "resolutionMode": "monitor_only",
+      "basisType": "none",
+      "summary": {
+        "en": "Public evidence shows that enterprise agent infrastructure and experimentation are real, but there is still no widely accepted outside standard for when 'autonomous enterprise workflows' should be declared achieved. The module therefore tracks concrete signals and deployment language rather than publishing a private completion line.",
+        "zhHans": "公开证据已经表明企业智能体基础设施和试验是真实存在的，但目前仍没有被广泛接受的外部标准，用来判断“自主企业工作流”何时算达成。因此模块只跟踪具体信号和部署表述，而不公开设定一条私有完成线。"
+      },
+      "sourceIds": [
+        "nist-ai-rmf-1-0",
+        "mit-ai-agent-index-2025",
+        "eu-ai-act-official"
+      ]
     },
+    "sources": [
+      {
+        "sourceId": "anthropic-mcp-blog-2024",
+        "supports": [
+          "signals",
+          "infrastructureContext"
+        ]
+      },
+      {
+        "sourceId": "google-gemini-2-blog-2024",
+        "supports": [
+          "signals",
+          "productContext"
+        ]
+      },
+      {
+        "sourceId": "openai-operator",
+        "supports": [
+          "signals",
+          "productContext"
+        ]
+      },
+      {
+        "sourceId": "mit-ai-agent-index-2025",
+        "supports": [
+          "signals",
+          "consensusBasis"
+        ]
+      },
+      {
+        "sourceId": "mckinsey-state-ai-2025",
+        "supports": [
+          "signals",
+          "adoptionContext"
+        ]
+      },
+      {
+        "sourceId": "nist-ai-rmf-1-0",
+        "supports": [
+          "consensusBasis"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "auto-gpt-2023",
+      "mcp-protocol-2024",
+      "gemini-2-agents-2024",
+      "openai-operator-2025"
+    ],
+    "tags": [
+      "agents",
+      "enterprise-ai",
+      "workflow-automation",
+      "tool-use"
+    ],
     "editorial": {
-      "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
-      "reviewedAt": "2026-06-24",
-      "publishedAt": "2026-06-24",
-      "curator": "EpochArc editorial"
+      "createdAt": "2026-06-25",
+      "updatedAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "publishedAt": "2026-06-25",
+      "curator": "EpochArc editorial",
+      "screeningRunId": "possible-directions-2026-06-25c"
     }
   },
   {
-    "id": "science",
-    "slug": "science",
+    "id": "robots-leave-the-pilot-zone",
+    "slug": "robots-leave-the-pilot-zone",
     "title": {
-      "en": "AI Scientific Singularity",
-      "zhHans": "科学发现奇点"
+      "en": "Robots Leave the Pilot Zone",
+      "zhHans": "机器人走出试点区"
     },
     "thesis": {
-      "en": "AI systems becoming autonomous scientific pioneers, generating novel theories and unlocking scalable fusion energy.",
-      "zhHans": "AI 系统成为科学研究的引领者，自主设计实验、推导物理学或生命科学定律，甚至完成可控核聚变规模商用。"
+      "en": "Embodied AI is moving from staged demonstrations toward real commercial environments where deployment, uptime, and workflow integration matter.",
+      "zhHans": "具身 AI 正从舞台化演示走向真实商业环境，在那里部署、可用时长和工作流集成才是关键。"
     },
     "description": {
-      "en": "AI systems becoming autonomous scientific pioneers, generating novel theories and unlocking scalable fusion energy.",
-      "zhHans": "AI 系统成为科学研究的引领者，自主设计实验、推导物理学或生命科学定律，甚至完成可控核聚变规模商用。"
+      "en": "Robots move from demos into warehouses, factories, and service sites, where they are expected to work reliably inside real operations.",
+      "zhHans": "把机器人从演示和试点带到仓库、工厂和服务现场，直接接入真实运营并稳定工作。"
+    },
+    "forecastType": "product",
+    "status": "active",
+    "createdAt": "2026-06-25",
+    "updatedAt": "2026-06-25",
+    "lastReviewedAt": "2026-06-25",
+    "reviewCadence": "quarterly",
+    "expectedWindow": {
+      "start": "2027",
+      "end": "2031",
+      "precision": "year"
+    },
+    "confidence": {
+      "level": "medium",
+      "evidenceGrade": "B"
+    },
+    "rationale": {
+      "currentBaseline": {
+        "en": "Robotics demos, teleoperation-heavy showcases, and pilot projects already exist. Those are no longer enough to count as meaningful evidence on their own.",
+        "zhHans": "机器人演示、重度依赖遥操作的展示和试点项目已经存在。单凭这些，已经不足以构成有意义的证据。"
+      },
+      "whyThisDirection": {
+        "en": "What matters now is whether embodied AI is leaving the demo circuit and entering constrained but real operating environments where customers care about reliability, integration, and ongoing value.",
+        "zhHans": "现在真正要看的，是具身 AI 是否正在离开演示回路，进入那些客户真正关心可靠性、集成和持续价值的受约束真实环境。"
+      },
+      "counterSignal": {
+        "en": "Safety, dexterity, site adaptation, cost, and unclear boundaries between autonomy and hidden teleoperation still make robotics claims easy to overstate.",
+        "zhHans": "安全、灵巧性、场地适配、成本，以及自治与隐藏遥操作之间边界不清，仍然使机器人叙事很容易被夸大。"
+      },
+      "openQuestions": [
+        {
+          "en": "Will current deployments persist beyond headline moments and isolated flagship sites?",
+          "zhHans": "当前部署会超越新闻高光时刻和孤立旗舰场地，继续持续下去吗？"
+        },
+        {
+          "en": "Can one embodied platform generalize across enough tasks and sites to matter commercially?",
+          "zhHans": "单一具身平台能否在足够多的任务和场地之间泛化，从而具备商业意义？"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "id": "robot-foundation-models-are-arriving",
+        "kind": "research",
+        "status": "observed",
+        "label": {
+          "en": "Foundation-model style robotics platforms are now being launched for physical-world reasoning.",
+          "zhHans": "面向物理世界推理的基础模型式机器人平台已经开始发布。"
+        },
+        "summary": {
+          "en": "Gemini Robotics marked a clear attempt to connect frontier multimodal reasoning with embodied control rather than treating robotics as a separate research island.",
+          "zhHans": "Gemini Robotics 明确尝试把前沿多模态推理与具身控制连接起来，而不再把机器人视为独立的研究孤岛。"
+        },
+        "eventIds": [
+          "gemini-robotics-2025"
+        ],
+        "sourceIds": [
+          "google-gemini-robotics-2025"
+        ]
+      },
+      {
+        "id": "real-factory-deployment-is-now-public",
+        "kind": "deployment",
+        "status": "observed",
+        "label": {
+          "en": "Humanoid robots are already documented in real production environments, not just lab footage.",
+          "zhHans": "人形机器人已经在真实生产环境中留下公开记录，而不只是实验室画面。"
+        },
+        "summary": {
+          "en": "Figure's BMW deployment shifted the conversation from what robots might do to what they were already doing in an actual factory setting.",
+          "zhHans": "Figure 在 BMW 的部署把讨论从“机器人可能做到什么”推进到了“机器人已经在真实工厂里做什么”。"
+        },
+        "eventIds": [
+          "figure-bmw-humanoid-2025"
+        ],
+        "sourceIds": [
+          "figure-bmw-production"
+        ]
+      },
+      {
+        "id": "embodied-ai-is-being-discussed-as-operations",
+        "kind": "workflow",
+        "status": "observed",
+        "label": {
+          "en": "Embodied AI is increasingly framed in terms of deployment and operations, not pure spectacle.",
+          "zhHans": "具身 AI 越来越多地被用部署与运营的语言来描述，而不只是表演。"
+        },
+        "summary": {
+          "en": "Taken together, Gemini Robotics and Figure at BMW suggest that the leading edge of robotics discourse is shifting from showpieces toward operational integration.",
+          "zhHans": "把 Gemini Robotics 和 Figure 在 BMW 的案例放在一起看，机器人领域的前沿叙事正在从样板秀转向运营集成。"
+        },
+        "eventIds": [
+          "gemini-robotics-2025",
+          "figure-bmw-humanoid-2025"
+        ],
+        "sourceIds": [
+          "google-gemini-robotics-2025",
+          "figure-bmw-production",
+          "stanford-ai-index-2026"
+        ]
+      }
+    ],
+    "consensusBasis": {
+      "resolutionMode": "monitor_only",
+      "basisType": "none",
+      "summary": {
+        "en": "There is growing public evidence that embodied AI is entering real operations, but no stable outside rulebook yet defines when robots have truly left the pilot phase. This direction therefore stays in monitoring mode and follows event-linked deployment evidence rather than publishing a house threshold.",
+        "zhHans": "具身 AI 正在进入真实运营环境的公开证据越来越多，但目前仍没有稳定的外部规则来界定机器人何时真正走出试点阶段。因此这个方向保持观察模式，跟踪事件化部署证据，而不公布本站自定义门槛。"
+      },
+      "sourceIds": [
+        "nist-ai-rmf-1-0",
+        "oecd-ai-principles-2019",
+        "google-gemini-robotics-2025"
+      ]
+    },
+    "sources": [
+      {
+        "sourceId": "google-gemini-robotics-2025",
+        "supports": [
+          "signals",
+          "technicalContext"
+        ]
+      },
+      {
+        "sourceId": "figure-bmw-production",
+        "supports": [
+          "signals",
+          "deploymentContext"
+        ]
+      },
+      {
+        "sourceId": "stanford-ai-index-2026",
+        "supports": [
+          "signals",
+          "ecosystemContext"
+        ]
+      },
+      {
+        "sourceId": "nist-ai-rmf-1-0",
+        "supports": [
+          "consensusBasis"
+        ]
+      },
+      {
+        "sourceId": "oecd-ai-principles-2019",
+        "supports": [
+          "consensusBasis"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "gemini-robotics-2025",
+      "figure-bmw-humanoid-2025"
+    ],
+    "tags": [
+      "robotics",
+      "embodied-ai",
+      "automation",
+      "commercial-deployment"
+    ],
+    "editorial": {
+      "createdAt": "2026-06-25",
+      "updatedAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "publishedAt": "2026-06-25",
+      "curator": "EpochArc editorial",
+      "screeningRunId": "possible-directions-2026-06-25c"
+    }
+  },
+  {
+    "id": "ai-native-discovery-pipelines",
+    "slug": "ai-native-discovery-pipelines",
+    "title": {
+      "en": "AI-Native Discovery Pipelines",
+      "zhHans": "AI 原生发现流水线"
+    },
+    "thesis": {
+      "en": "AI is beginning to appear not only as a scientific tool, but as part of the workflow through which discovery itself is generated, tested, and scaled.",
+      "zhHans": "AI 开始出现的不只是科学工具角色，而是逐渐进入发现本身被生成、验证和扩展的工作流。"
+    },
+    "description": {
+      "en": "AI helps generate hypotheses, design experiments, analyze results, and push the next round of research faster.",
+      "zhHans": "用 AI 生成假设、设计实验、分析结果，再推进下一轮研究，把发现流程跑快。"
     },
     "forecastType": "science",
     "status": "active",
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "createdAt": "2026-06-25",
+    "updatedAt": "2026-06-25",
+    "lastReviewedAt": "2026-06-25",
+    "reviewCadence": "quarterly",
     "expectedWindow": {
-      "start": "2030",
-      "end": "2035",
+      "start": "2027",
+      "end": "2031",
       "precision": "year"
     },
     "confidence": {
       "level": "medium",
-      "evidenceGrade": "C"
+      "evidenceGrade": "B"
     },
     "rationale": {
-      "signalsFor": [],
-      "signalsAgainst": [],
-      "assumptions": [
-        "Resolution criteria are provisional and should be refined when source-backed forecasts are added."
+      "currentBaseline": {
+        "en": "AI already helps with protein structure prediction, literature work, optimization, and scientific coding. Those are important facts, but they do not by themselves prove a general discovery pipeline.",
+        "zhHans": "AI 已经能辅助蛋白质结构预测、文献处理、优化和科研编程。这些都是重要事实，但它们本身并不能证明一种通用的发现流水线已经成立。"
+      },
+      "whyThisDirection": {
+        "en": "What matters is whether repeated loops of proposal, evaluation, refinement, and external uptake are starting to emerge around AI-mediated discovery, not just one famous research success at a time.",
+        "zhHans": "真正重要的是，围绕 AI 介导的发现，是否正在出现由提出、评估、迭代和外部采纳组成的重复闭环，而不只是一次又一次著名的单点成功。"
+      },
+      "counterSignal": {
+        "en": "Many discovery claims still come from the system builders themselves, and independent validation, reproducibility, and attribution remain difficult.",
+        "zhHans": "许多发现主张仍然来自系统构建者自身，独立验证、可复现性和贡献归因仍然困难。"
+      },
+      "openQuestions": [
+        {
+          "en": "When does AI stop being a strong research tool and start becoming part of a repeatable discovery workflow?",
+          "zhHans": "AI 何时才算不只是强大的研究工具，而是真正进入了可重复的发现工作流？"
+        },
+        {
+          "en": "What public evidence would show that outside groups can validate or reuse these AI-originated workflows?",
+          "zhHans": "什么样的公开证据才能说明外部团队可以验证或复用这些 AI 原生工作流？"
+        }
       ]
     },
-    "resolution": {
-      "achievedWhen": {
-        "en": "AI systems autonomously propose verifiable hypotheses, design experiments, and drive at least one independently confirmed discovery in a major scientific field.",
-        "zhHans": "AI 系统自主提出可验证科学假设、设计实验并推动至少一个重要领域产生被独立确认的新发现。"
+    "signals": [
+      {
+        "id": "alphafold-became-scientific-infrastructure",
+        "kind": "research",
+        "status": "observed",
+        "label": {
+          "en": "AI has already become core infrastructure for at least one major scientific workflow.",
+          "zhHans": "AI 已经成为至少一种重大科学工作流的核心基础设施。"
+        },
+        "summary": {
+          "en": "AlphaFold and its later Nobel recognition made it clear that AI can move from assistance to becoming part of the working substrate of modern science.",
+          "zhHans": "AlphaFold 以及后来的诺奖认可，清楚地表明 AI 可以从辅助工具转变为现代科学工作底座的一部分。"
+        },
+        "eventIds": [
+          "alphafold-2020",
+          "alphafold-nobel-2024"
+        ],
+        "sourceIds": [
+          "jumper-alphafold-2021",
+          "nobel-chemistry-2024"
+        ]
       },
-      "notAchievedWhen": {
-        "en": "Drafting papers, assisting analysis, or proposing unverified hypotheses does not count.",
-        "zhHans": "仅生成论文草稿、辅助分析数据或提出未验证假设，不算达成。"
+      {
+        "id": "algorithmic-discovery-is-now-a-public-claim",
+        "kind": "research",
+        "status": "observed",
+        "label": {
+          "en": "AI-assisted algorithm and engineering discovery is now being presented as a repeatable workflow claim.",
+          "zhHans": "AI 辅助算法与工程发现，已经开始被表述为一种可重复的工作流主张。"
+        },
+        "summary": {
+          "en": "AlphaEvolve pushed the conversation from isolated AI help toward an explicit claim that AI can participate in an iterative discovery loop for algorithms and systems.",
+          "zhHans": "AlphaEvolve 把讨论从孤立的 AI 帮助，推进到了 AI 可以参与算法和系统迭代发现闭环的明确主张。"
+        },
+        "eventIds": [
+          "alphaevolve-2025"
+        ],
+        "sourceIds": [
+          "google-alphaevolve-2025"
+        ]
       },
-      "measurementSources": [
-        "independent benchmarks",
-        "model cards",
-        "technical reports",
-        "auditor reports",
-        "regulatory documents"
-      ],
-      "minimumDuration": "90 days"
-    },
-    "sources": [],
-    "relatedEvents": [],
-    "tags": [
-      "science"
+      {
+        "id": "advanced-science-reasoning-is-improving",
+        "kind": "benchmark",
+        "status": "observed",
+        "label": {
+          "en": "Frontier systems are visibly improving on advanced scientific and mathematical reasoning tasks.",
+          "zhHans": "前沿系统在高阶科学与数学推理任务上的进步已经清晰可见。"
+        },
+        "summary": {
+          "en": "Gemini Deep Think's IMO result strengthened the case that frontier models are pushing into reasoning territory relevant to future discovery workflows.",
+          "zhHans": "Gemini Deep Think 在 IMO 上的表现，进一步加强了这样一个判断：前沿模型正在进入与未来发现工作流相关的高阶推理领域。"
+        },
+        "eventIds": [
+          "gemini-deep-think-imo-gold-2025"
+        ],
+        "sourceIds": [
+          "deepmind-gemini-deep-think-imo",
+          "stanford-ai-index-2026"
+        ]
+      }
     ],
-    "votes": {
-      "totalVotes": 0,
-      "yes": 0,
-      "no": 0,
-      "unsure": 0,
-      "updatedAt": "2026-06-24"
+    "consensusBasis": {
+      "resolutionMode": "monitor_only",
+      "basisType": "none",
+      "summary": {
+        "en": "Public evidence strongly suggests that AI is entering more of the discovery workflow, but there is no mature external consensus yet for when 'AI-native discovery pipelines' should be declared real in a binary sense. This direction remains a monitored pattern rather than a publicly scored finish line.",
+        "zhHans": "公开证据已经强烈提示 AI 正在进入更多发现工作流环节，但目前仍没有成熟的外部共识，能够以二元方式判断“AI 原生发现流水线”何时算成立。因此这个方向仍是被持续观察的模式，而不是公开计分的终点线。"
+      },
+      "sourceIds": [
+        "nist-ai-rmf-1-0",
+        "oecd-ai-principles-2019",
+        "stanford-ai-index-2026"
+      ]
     },
+    "sources": [
+      {
+        "sourceId": "jumper-alphafold-2021",
+        "supports": [
+          "signals",
+          "historicalBaseline"
+        ]
+      },
+      {
+        "sourceId": "nobel-chemistry-2024",
+        "supports": [
+          "signals",
+          "historicalValidation"
+        ]
+      },
+      {
+        "sourceId": "google-alphaevolve-2025",
+        "supports": [
+          "signals",
+          "workflowContext"
+        ]
+      },
+      {
+        "sourceId": "stanford-ai-index-2026",
+        "supports": [
+          "signals",
+          "consensusBasis"
+        ]
+      },
+      {
+        "sourceId": "nist-ai-rmf-1-0",
+        "supports": [
+          "consensusBasis"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "alphafold-2020",
+      "alphafold-nobel-2024",
+      "alphaevolve-2025",
+      "gemini-deep-think-imo-gold-2025"
+    ],
+    "tags": [
+      "science",
+      "discovery",
+      "research-automation",
+      "algorithms"
+    ],
     "editorial": {
-      "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
-      "reviewedAt": "2026-06-24",
-      "publishedAt": "2026-06-24",
-      "curator": "EpochArc editorial"
+      "createdAt": "2026-06-25",
+      "updatedAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "publishedAt": "2026-06-25",
+      "curator": "EpochArc editorial",
+      "screeningRunId": "possible-directions-2026-06-25c"
     }
   }
 ]

@@ -3,8 +3,8 @@
 **状态**：跟随项目源文件，非独立文档。源文件变更时本 skill 应同步更新。
 
 **源文件**（规范来源，以这些为准）：
-- `WORKFLOW.md` — 发现→初筛→确认→发布全流程
-- `DATA-MODEL.md` — 数据结构、评分系统、验证规则
+- [WORKFLOW.md](../workflow/WORKFLOW.md) — 发现→初筛→确认→发布全流程
+- [DATA-MODEL.md](../data/DATA-MODEL.md) — 数据结构、评分系统、验证规则
 - `data/labels.json` — 所有枚举字段的展示标签（中英）
 
 ---
@@ -13,7 +13,27 @@
 
 ### 一、发现层 → 候选池
 
-扫描 7 个信源：arXiv、Hugging Face Daily Papers、Papers with Code、Hacker News、Reddit r/MachineLearning、Import AI 周刊、The Batch。
+扫描可用信源：
+
+| 通道 | 状态 | 采集方式 |
+|:--|:--:|:--|
+| Hugging Face Daily Papers | ✅ 可用 | `curl https://huggingface.co/api/daily_papers?limit=20` |
+| Hacker News | ✅ 可用 | Firebase API（公开） |
+| Brave Search → Reddit（代理） | ✅ 可用 | `node search.js -n 10 "reddit.com AI trending"` |
+| Brave Search → X/Twitter（代理） | ✅ 可用 | `node search.js -n 10 "x.com AI breakthrough"` |
+| Gmail — Import AI | ✅ 已连接，无内容 | `gws gmail users messages list`（需 gws CLI） |
+| Gmail — The Batch | ✅ 已连接，未订阅 | 同上 |
+
+详见 [WORKFLOW.md](../workflow/WORKFLOW.md) 信源矩阵。
+
+在年度/批次 sweep 中补充以下**社区热点信号**（解决产品工具/社会文化类遗漏）：
+
+| 信号类型 | 搜索方法 | 发现目标 |
+|:--|:--|:--|
+| GitHub 增速最快仓库 | `"fastest growing open source AI project {year}"` | 开源工具爆火 |
+| 社区爆火 AI 工具 | `"viral AI tool agent {year} GitHub trending"` / `"Hacker News top AI posts {year}"` | 草根产品爆发 |
+| AI 概念流行 | `"AI buzzword new term coined {year}"` / `"AI concept went viral mainstream {year}"` | 概念/文化时刻 |
+| 商业/资本信号 | `"AI company valuation IPO restructuring {year}"` / `"AI market cap milestone trillion {year}"` | 产业格局变动 |
 
 每一个信号用 5 维 × 0-2 分快速初筛：
 
@@ -27,7 +47,7 @@
 
 阈值：0-4 不收录 | 5-7 候选池 | 8-10 直接草稿。
 
-**记录方式**：分数和理由写入 `data/screening_log.json`，每条候选一个 entry。通过审核后回填 `eventId` 与正式事件关联。该文件用于后续数据模型迭代时的回溯分析。
+**记录方式**：事件候选可写入本地候选日志（例如 `data/event_screening_log.json`，不要求公开）；首页方向的公开运行记录维护在 `data/possible_directions_screening_log.json`。通过审核后回填 `eventId` 与正式事件关联，形成可追溯链条。
 
 ### 发现后检查：6 分类维度覆盖
 
@@ -49,7 +69,23 @@
 | 3️⃣ 行业报告 | 独立第三方权威分析 | `evidenceGrade` 升级 (C→B→A) |
 | 4️⃣ 争议批评 | 反方观点、安全伦理风险 | `controversy`, `consensusLevel`, `claims[limitation]` |
 
-**第 5 层 — 按分类定向深挖**：批次收集中若发现某分类空白，执行分类级 Brave 搜索（如 safety → "AI safety incident whistleblower 2025"，social → "AI job displacement company layoff 2025"），从结果中发现被遗漏的候选事件。
+**第 5 层 — 按分类定向深挖 + 社区热点信号**：批次收集中若发现某分类空白，执行分类级 Brave 搜索。同时补充社区热点搜索如下：
+
+```bash
+# 产品工具类 — 社区爆火信号
+"fastest growing open source AI project {year}"
+"viral AI tool agent {year} GitHub trending"
+"Hacker News top AI posts {year} breakthrough"
+
+# 社会文化类 — 概念流行信号
+"AI buzzword new term coined {year}"
+"AI concept went viral mainstream {year}"
+"AI cultural phenomenon meme trend {year}"
+
+# 商业产业类 — 公司/资本信号
+"AI company valuation IPO restructuring acquisition {year}"
+"AI market cap milestone trillion valuation {year}"
+```
 
 ### 三、AI 草稿生成
 
@@ -60,7 +96,7 @@
 - 分类来源 → `sources[*].sourceId` 引用 `data/sources.json`
 - 识别争议 → `controversy`, `claims[claimType = limitation]`
 - 中英双语 → `LocalizedText` 的 `en` 和 `zhHans`
-- 计算 `impactIndex`（见 DATA-MODEL.md 公式）
+- 计算 `impactIndex`（见 [DATA-MODEL.md](../data/DATA-MODEL.md) 公式）
 
 **AI 不做**（留给人工）：
 - `significance` (L1/L2/L3) — 最重要的编辑判断
@@ -69,7 +105,7 @@
 
 ### 四、人工审核 → 提交
 
-审核清单在 WORKFLOW.md「五、人工审核清单」。通过后：
+审核清单在 [WORKFLOW.md](../workflow/WORKFLOW.md)「五、人工审核清单」。通过后：
 
 1. `content/events/` 下提交 JSON
 2. 更新 `data/sources.json`（如有新来源）
@@ -83,15 +119,17 @@
 | 概念 | 说明 |
 |------|------|
 | `categories` | 字符串数组，1-2 个，第一个为主分类。多分类用 30% 信息丢失测试决定 |
+| **日期规则** | 时间轴上的日期 = "大量普通人可感知到这件事的时刻"。渐变事件取引爆点（OpenClaw 取 HN 发布日而非代码首次提交日），概念流行取造词日，持续进行的事件取代表性里程碑日 |
+| **6 分类** | `capability` 能力突破 / `product` 产品工具 / `commerce` 商业产业 / `governance` 治理监管 / `safety` 安全伦理 / `society` 社会文化。次分类通过 30% 信息丢失测试准入 |
 | `significance` | L1-L3，独立于 impactIndex |
-| `impactIndex` | 0-10，公式见 DATA-MODEL.md |
+| `impactIndex` | 0-10，公式见 [DATA-MODEL.md](../data/DATA-MODEL.md) |
 | `consensusLevel` | broad / debated / emerging |
 | `controversy` | boolean，有则必须配 claims[limitation] |
 | `sources` | 只存 sourceId，不存完整 URL（查 data/sources.json） |
 | `relatedEvents` | 双向引用，脚本会校验 |
 | `LocalizedText` | 必须同时有 `en` 和 `zhHans` |
 
-完整类型定义见 DATA-MODEL.md `## 2. 核心类型定义`。
+完整类型定义见 [DATA-MODEL.md](../data/DATA-MODEL.md) `## 2. 核心类型定义`。
 
 ---
 
@@ -99,7 +137,7 @@
 
 展示标签统一从 `data/labels.json` 加载，前端 HTML 不硬编码任何映射。分类 `category` 枚举值的语义轴见 labels.json，目前有 6 个分类。
 
-具体定义和判定标准见 DATA-MODEL.md `## 2.2`。
+具体定义和判定标准见 [DATA-MODEL.md](../data/DATA-MODEL.md) `## 2.2`。
 
 ---
 
@@ -119,14 +157,15 @@
 
 ```
 project-root/
-├── WORKFLOW.md          ← 完整流程（本 skill 的上游）
-├── DATA-MODEL.md        ← 数据模型和评分体系
+├── workflow/WORKFLOW.md ← 完整流程（本 skill 的上游）
+├── data/DATA-MODEL.md   ← 数据模型和评分体系
 ├── SKILL.md             ← 当前文件（流程摘要）
 ├── content/events/      ← 源事件 JSON（每文件一个事件）
 ├── data/
 │   ├── events.json      ← 合并后的公开数据（build 产物）
 │   ├── sources.json     ← 来源库
-│   ├── forecasts.json   ← 预测库
+│   ├── forecasts.json   ← Possible Directions 数据
+│   ├── possible_directions_screening_log.json ← 方向筛选运行记录
 │   └── labels.json      ← 枚举标签映射
 ├── scripts/
 │   └── build_events.py  ← 合并 content/events/*.json
@@ -135,4 +174,4 @@ project-root/
 
 ---
 
-**本 skill 不替代 WORKFLOW.md 和 DATA-MODEL.md。当流程或模型变更时，先更新那两个文件，再同步本 skill。**
+**本 skill 不替代 [WORKFLOW.md](../workflow/WORKFLOW.md) 和 [DATA-MODEL.md](../data/DATA-MODEL.md)。当流程或模型变更时，先更新那两个文件，再同步本 skill。**

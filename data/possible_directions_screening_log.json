@@ -1,0 +1,432 @@
+{
+  "version": "2.0",
+  "runId": "possible-directions-2026-06-25c",
+  "runDate": "2026-06-25",
+  "publicModuleName": {
+    "en": "Possible Directions",
+    "zhHans": "可能方向"
+  },
+  "methodology": {
+    "summary": {
+      "en": "Public directions are event-linked observation tracks. They are built from published timeline events, observed real-world signals, explicit constraints, and an external-consensus search. Without a stable public standard for resolution, a direction remains monitor_only.",
+      "zhHans": "公开方向是与时间轴事件绑定的观察轨道。它们建立在已发布事件、已观察到的现实信号、明确限制以及外部共识检索之上。如果缺少稳定的公开裁定标准，该方向就保持 monitor_only。"
+    },
+    "checks": [
+      {
+        "id": "event_anchoring",
+        "name": {
+          "en": "Event anchoring",
+          "zhHans": "事件锚定"
+        },
+        "description": {
+          "en": "Every public direction must point back to published timeline events.",
+          "zhHans": "每条公开方向都必须回指到已发布的时间轴事件。"
+        }
+      },
+      {
+        "id": "observed_signals",
+        "name": {
+          "en": "Observed signals",
+          "zhHans": "已观察信号"
+        },
+        "description": {
+          "en": "A direction must be supported by at least two already-observed signals rather than private future checklist items.",
+          "zhHans": "方向必须由至少两条已经发生的现实信号支撑，而不是项目内部私设的未来清单。"
+        }
+      },
+      {
+        "id": "independent_sources",
+        "name": {
+          "en": "Independent sourcing",
+          "zhHans": "独立来源"
+        },
+        "description": {
+          "en": "Evidence cannot rely on a single company voice; it must include independent reporting, analysis, or public frameworks where available.",
+          "zhHans": "证据不能只依赖单一公司的口径；在可行时必须补充独立报道、分析或公开框架。"
+        }
+      },
+      {
+        "id": "not_already_normal",
+        "name": {
+          "en": "Not already normal",
+          "zhHans": "尚未成为常态"
+        },
+        "description": {
+          "en": "The wording must stay above current reality so a reasonable reader does not conclude the direction is already broadly achieved.",
+          "zhHans": "方向表述必须高于当前现实，避免让普通读者合理地认为它已经被广泛实现。"
+        }
+      },
+      {
+        "id": "counter_signal_present",
+        "name": {
+          "en": "Counter-signal present",
+          "zhHans": "限制已写明"
+        },
+        "description": {
+          "en": "Each direction must explicitly state current blockers, uncertainty, or contrary evidence.",
+          "zhHans": "每条方向都必须明确写出当前阻碍、不确定性或反向证据。"
+        }
+      },
+      {
+        "id": "external_consensus_search",
+        "name": {
+          "en": "External consensus search",
+          "zhHans": "外部共识检索"
+        },
+        "description": {
+          "en": "Before publication, we search for regulatory, benchmark, or market consensus definitions of what would count as real deployment or realization.",
+          "zhHans": "在公开前，我们会检索监管口径、benchmark 方法或市场共识，看外部是否已经定义了什么算真实落地或实现。"
+        }
+      }
+    ],
+    "decisionOutcomes": [
+      "publish",
+      "hold",
+      "reject"
+    ],
+    "publicModes": [
+      "monitor_only",
+      "consensus_gated"
+    ]
+  },
+  "externalFrameworks": [
+    {
+      "sourceId": "nist-ai-rmf-1-0",
+      "role": "governance-and-monitoring-basis"
+    },
+    {
+      "sourceId": "nist-genai-profile-2024",
+      "role": "genai-risk-and-oversight-basis"
+    },
+    {
+      "sourceId": "oecd-ai-principles-2019",
+      "role": "public-interest-and-accountability-basis"
+    },
+    {
+      "sourceId": "mit-ai-agent-index-2025",
+      "role": "agent-adoption-reference"
+    },
+    {
+      "sourceId": "stanford-ai-index-2026",
+      "role": "industry-and-social-adoption-reference"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "ai-software-teams",
+      "title": {
+        "en": "AI Software Teams",
+        "zhHans": "AI 软件团队"
+      },
+      "decision": "publish",
+      "publicationMode": "monitor_only",
+      "basisType": "none",
+      "checks": {
+        "eventAnchored": true,
+        "observedSignals": true,
+        "independentSources": true,
+        "notAlreadyNormal": true,
+        "counterSignalPresent": true,
+        "externalConsensusSearchComplete": true
+      },
+      "expectedWindow": {
+        "start": "2027",
+        "end": "2030"
+      },
+      "currentBaseline": {
+        "en": "AI coding tools are already embedded in real development environments. Code generation, patch drafting, review assistance, and limited agentic execution are no longer hypothetical.",
+        "zhHans": "AI 编码工具已经嵌入真实开发环境。代码生成、补丁草拟、审查辅助和有限的代理式执行都不再只是设想。"
+      },
+      "whyThisDirection": {
+        "en": "The important shift is not whether AI can write code, but whether software work starts to look like a coordinated loop between humans and multiple AI roles rather than a single assistant completing isolated prompts.",
+        "zhHans": "真正重要的变化，不是 AI 会不会写代码，而是软件工作是否会从“单一助手响应单次提示”转向“人类与多个 AI 角色协同循环”的工作方式。"
+      },
+      "counterSignal": {
+        "en": "Repository context remains brittle, verification is expensive, and security or accountability failures still make fully trusted multi-step coding workflows hard to sustain.",
+        "zhHans": "仓库上下文仍然脆弱，验证成本很高，安全与责任问题也让多步编程工作流难以被完全信任。"
+      },
+      "linkedEventIds": [
+        "github-copilot-2022",
+        "vibecoding-2025",
+        "claude-code-leak-2026"
+      ],
+      "observedSignalIds": [
+        "copilot-mainstream-dev-workflow",
+        "vibe-coding-shifted-behavior",
+        "coding-agents-are-moving-beyond-autocomplete"
+      ],
+      "supportingSourceIds": [
+        "github-copilot-ga-2022",
+        "mckinsey-state-ai-2025",
+        "stanford-ai-index-2026",
+        "metr-long-tasks-2025",
+        "nist-ai-rmf-1-0",
+        "nist-genai-profile-2024"
+      ],
+      "consensusSearch": {
+        "result": {
+          "en": "We found public governance and measurement frameworks, but no stable external consensus defining when an AI system counts as a real software team. Keep monitor_only.",
+          "zhHans": "我们找到了公开治理和测量框架，但还没有发现稳定的外部共识来定义“AI 何时算一个真正的软件团队”。因此保持 monitor_only。"
+        },
+        "sourceIds": [
+          "metr-long-tasks-2025",
+          "nist-ai-rmf-1-0",
+          "nist-genai-profile-2024"
+        ]
+      }
+    },
+    {
+      "id": "autonomous-enterprise-workflows",
+      "title": {
+        "en": "Autonomous Enterprise Workflows",
+        "zhHans": "自主企业工作流"
+      },
+      "decision": "publish",
+      "publicationMode": "monitor_only",
+      "basisType": "none",
+      "checks": {
+        "eventAnchored": true,
+        "observedSignals": true,
+        "independentSources": true,
+        "notAlreadyNormal": true,
+        "counterSignalPresent": true,
+        "externalConsensusSearchComplete": true
+      },
+      "expectedWindow": {
+        "start": "2027",
+        "end": "2030"
+      },
+      "currentBaseline": {
+        "en": "Agents can already browse, call tools, fill forms, and coordinate short tasks. Enterprises are experimenting, but broad operational trust is still uneven.",
+        "zhHans": "代理已经可以浏览网页、调用工具、填写表单并协调短任务。企业端也在实验，但广泛的运营级信任还远未稳定。"
+      },
+      "whyThisDirection": {
+        "en": "What matters now is whether these capabilities stay as product demos and copilots, or become repeatable workflow layers across support, operations, reporting, and internal systems.",
+        "zhHans": "现在真正值得看的，是这些能力会停留在产品演示和副驾驶阶段，还是会进入支持、运营、报表和内部系统中的可重复工作流层。"
+      },
+      "counterSignal": {
+        "en": "Exception handling, confidentiality, approvals, system integration, and liability remain major blockers to treating agents as trusted enterprise operators.",
+        "zhHans": "异常处理、保密要求、审批链路、系统集成和责任归属，仍然是把代理当成可信企业操作员的主要阻碍。"
+      },
+      "linkedEventIds": [
+        "auto-gpt-2023",
+        "mcp-protocol-2024",
+        "gemini-2-agents-2024",
+        "openai-operator-2025"
+      ],
+      "observedSignalIds": [
+        "autonomous-agents-broke-into-mainstream-awareness",
+        "agent-infrastructure-and-products-are-forming",
+        "independent-tracking-of-agent-adoption-now-exists"
+      ],
+      "supportingSourceIds": [
+        "anthropic-mcp-blog-2024",
+        "google-gemini-2-blog-2024",
+        "openai-operator",
+        "mit-ai-agent-index-2025",
+        "mckinsey-state-ai-2025",
+        "nist-ai-rmf-1-0"
+      ],
+      "consensusSearch": {
+        "result": {
+          "en": "We found adoption indexes and risk frameworks, but not a broadly accepted external definition for when an agent fully owns an enterprise workflow. Keep monitor_only.",
+          "zhHans": "我们找到了采用指数和风险框架，但还没有发现一个被广泛接受的外部定义，来判断代理何时算真正拥有企业工作流。因此保持 monitor_only。"
+        },
+        "sourceIds": [
+          "mit-ai-agent-index-2025",
+          "mckinsey-state-ai-2025",
+          "nist-ai-rmf-1-0"
+        ]
+      }
+    },
+    {
+      "id": "robots-leave-the-pilot-zone",
+      "title": {
+        "en": "Robots Leave the Pilot Zone",
+        "zhHans": "机器人走出试点区"
+      },
+      "decision": "publish",
+      "publicationMode": "monitor_only",
+      "basisType": "none",
+      "checks": {
+        "eventAnchored": true,
+        "observedSignals": true,
+        "independentSources": true,
+        "notAlreadyNormal": true,
+        "counterSignalPresent": true,
+        "externalConsensusSearchComplete": true
+      },
+      "expectedWindow": {
+        "start": "2027",
+        "end": "2031"
+      },
+      "currentBaseline": {
+        "en": "Robotics demos, teleoperation-heavy showcases, and pilot projects already exist. Those are no longer enough to count as meaningful evidence on their own.",
+        "zhHans": "机器人演示、重度遥操作展示和试点项目已经很多了。它们本身已经不足以构成有意义的落地证据。"
+      },
+      "whyThisDirection": {
+        "en": "What matters now is whether embodied AI is leaving the demo circuit and entering constrained but real operating environments where customers care about reliability, integration, and ongoing value.",
+        "zhHans": "现在真正重要的是，具身 AI 是否会离开演示舞台，进入受约束但真实的运行环境，在那里客户关心的是可靠性、集成能力和持续价值。"
+      },
+      "counterSignal": {
+        "en": "Safety, dexterity, site adaptation, cost, and unclear boundaries between autonomy and hidden teleoperation still make robotics claims easy to overstate.",
+        "zhHans": "安全、灵巧性、场地适应、成本，以及自主性与隐性遥操作之间边界不清，仍然让机器人叙事很容易被夸大。"
+      },
+      "linkedEventIds": [
+        "gemini-robotics-2025",
+        "figure-bmw-humanoid-2025"
+      ],
+      "observedSignalIds": [
+        "robot-foundation-models-are-arriving",
+        "real-factory-deployment-is-now-public",
+        "embodied-ai-is-being-discussed-as-operations"
+      ],
+      "supportingSourceIds": [
+        "google-gemini-robotics-2025",
+        "figure-bmw-production",
+        "stanford-ai-index-2026",
+        "nist-ai-rmf-1-0",
+        "oecd-ai-principles-2019"
+      ],
+      "consensusSearch": {
+        "result": {
+          "en": "We found public principles and deployment reporting, but no stable outside consensus defining exactly when general-purpose robots count as having left the pilot zone. Keep monitor_only.",
+          "zhHans": "我们找到了公开原则和部署报道，但还没有稳定的外部共识来定义通用机器人何时算真正走出试点区。因此保持 monitor_only。"
+        },
+        "sourceIds": [
+          "google-gemini-robotics-2025",
+          "stanford-ai-index-2026",
+          "oecd-ai-principles-2019"
+        ]
+      }
+    },
+    {
+      "id": "ai-native-discovery-pipelines",
+      "title": {
+        "en": "AI-Native Discovery Pipelines",
+        "zhHans": "AI 原生发现流水线"
+      },
+      "decision": "publish",
+      "publicationMode": "monitor_only",
+      "basisType": "none",
+      "checks": {
+        "eventAnchored": true,
+        "observedSignals": true,
+        "independentSources": true,
+        "notAlreadyNormal": true,
+        "counterSignalPresent": true,
+        "externalConsensusSearchComplete": true
+      },
+      "expectedWindow": {
+        "start": "2027",
+        "end": "2031"
+      },
+      "currentBaseline": {
+        "en": "AI already helps with protein structure prediction, literature work, optimization, and scientific coding. Those are important facts, but they do not by themselves prove a general discovery pipeline.",
+        "zhHans": "AI 已经在蛋白结构预测、文献工作、优化和科研编程中发挥作用。这些都是重要事实，但它们本身还不能证明一个通用的发现流水线已经成立。"
+      },
+      "whyThisDirection": {
+        "en": "What matters is whether repeated loops of proposal, evaluation, refinement, and external uptake are starting to emerge around AI-mediated discovery, not just one famous research success at a time.",
+        "zhHans": "真正值得观察的是，围绕 AI 介导的发现过程，是否正在形成“提出假设、评估、修正、外部吸收”的重复循环，而不只是零星的著名成功案例。"
+      },
+      "counterSignal": {
+        "en": "Many discovery claims still come from the system builders themselves, and independent validation, reproducibility, and attribution remain difficult.",
+        "zhHans": "很多发现类叙事仍然主要来自系统建造者自身，独立验证、可复现性和贡献归因依然困难。"
+      },
+      "linkedEventIds": [
+        "alphafold-2020",
+        "alphafold-nobel-2024",
+        "alphaevolve-2025",
+        "gemini-deep-think-imo-gold-2025"
+      ],
+      "observedSignalIds": [
+        "alphafold-became-scientific-infrastructure",
+        "algorithmic-discovery-is-now-a-public-claim",
+        "advanced-science-reasoning-is-improving"
+      ],
+      "supportingSourceIds": [
+        "jumper-alphafold-2021",
+        "nobel-chemistry-2024",
+        "google-alphaevolve-2025",
+        "stanford-ai-index-2026",
+        "nist-ai-rmf-1-0"
+      ],
+      "consensusSearch": {
+        "result": {
+          "en": "We found strong milestone evidence and external scientific recognition, but no stable public consensus for when AI-originated discovery becomes a generally accepted pipeline state. Keep monitor_only.",
+          "zhHans": "我们找到了强有力的里程碑证据和外部科学认可，但还没有稳定的公开共识来定义 AI 原生发现何时算成为一个被普遍接受的流水线状态。因此保持 monitor_only。"
+        },
+        "sourceIds": [
+          "jumper-alphafold-2021",
+          "nobel-chemistry-2024",
+          "stanford-ai-index-2026",
+          "nist-ai-rmf-1-0"
+        ]
+      }
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "ai-assurance-infrastructure",
+      "reason": {
+        "en": "Important as shared governance and verification infrastructure, but still clearer as methodology or policy support than as a homepage direction.",
+        "zhHans": "作为共享治理和验证基础设施很重要，但目前更适合作为方法或政策支撑，而不是首页方向卡。"
+      }
+    },
+    {
+      "id": "ai-native-video-synthetic-media",
+      "reason": {
+        "en": "Strong product signal, but the direction still reads too much like a capability wave rather than a stable observation track.",
+        "zhHans": "产品信号很强，但这条方向目前更像能力浪潮，还不够像稳定的观察主题。"
+      }
+    },
+    {
+      "id": "open-weight-frontier-pressure",
+      "reason": {
+        "en": "Important for market structure, but still better treated as a timeline and industry-power topic unless a clearer downstream observation frame emerges.",
+        "zhHans": "它对市场结构很重要，但在出现更清晰的下游观察框架前，更适合作为时间轴和产业力量主题处理。"
+      }
+    },
+    {
+      "id": "compute-energy-bottleneck",
+      "reason": {
+        "en": "A real constraint direction, but less legible and less participatory for the homepage than the current four.",
+        "zhHans": "这是真实存在的约束方向，但相比当前四条，在首页上的可理解性和参与感都更弱。"
+      }
+    }
+  ],
+  "supersededPublicDirections": [
+    {
+      "previousId": "ai-coding-automation",
+      "replacementId": "ai-software-teams",
+      "reason": {
+        "en": "The earlier wording sat too close to current reality and was easy to misread as already achieved.",
+        "zhHans": "旧表述离当前现实太近，很容易被误读为已经实现。"
+      }
+    },
+    {
+      "previousId": "autonomous-ai-agents",
+      "replacementId": "autonomous-enterprise-workflows",
+      "reason": {
+        "en": "The earlier wording was too broad and too easy to collapse into today's demos and pilots.",
+        "zhHans": "旧表述太宽，也太容易和今天的演示与试点混在一起。"
+      }
+    },
+    {
+      "previousId": "general-purpose-robotics-limited-deployment",
+      "replacementId": "robots-leave-the-pilot-zone",
+      "reason": {
+        "en": "The revised framing is more legible to non-specialists and less likely to confuse pilots with operating environments.",
+        "zhHans": "新的表述对非专业读者更清晰，也更不容易把试点和真实运行环境混为一谈。"
+      }
+    },
+    {
+      "previousId": "ai-led-scientific-discovery",
+      "replacementId": "ai-native-discovery-pipelines",
+      "reason": {
+        "en": "The revised framing emphasizes repeatable process formation rather than one-off breakthroughs.",
+        "zhHans": "新的表述强调的是可重复的过程形成，而不是一次性的突破案例。"
+      }
+    }
+  ]
+}

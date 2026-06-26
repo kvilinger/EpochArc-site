@@ -1,0 +1,109 @@
+{
+  "id": "openai-jalapeno-chip-2026",
+  "date": "2026-06-24",
+  "datePrecision": "day",
+  "title": {
+    "en": "OpenAI Unveils Jalapeño, Its First Custom AI Inference Chip",
+    "zhHans": "OpenAI 发布首款自研 AI 推理芯片 Jalapeño"
+  },
+  "summary": {
+    "en": "On June 24, 2026, OpenAI unveiled Jalapeño, its first custom-designed AI inference processor, built in collaboration with Broadcom. Developed in just nine months, the chip is optimized for LLM inference (targeting GPT-5.3 Codex Spark) and promises substantially better performance than current state-of-the-art GPUs, with initial deployment targeted by end of 2026. The move marks OpenAI's first step toward vertical integration of its AI infrastructure, reducing dependence on Nvidia GPUs, and signals a broader industry trend where AI companies build custom silicon to control cost and performance.",
+    "zhHans": "2026年6月24日，OpenAI 发布了 Jalapeño，其首款自研 AI 推理处理器，与 Broadcom 合作开发。该芯片在九个月内完成设计，针对 LLM 推理（面向 GPT-5.3 Codex Spark）进行了优化，性能声称显著优于当前最先进的 GPU，计划2026年底前初步部署。此举标志着 OpenAI 向 AI 基础设施垂直整合迈出第一步，减少对 Nvidia GPU 的依赖，也反映了 AI 公司自研芯片以控制成本和性能的更广泛行业趋势。"
+  },
+  "narrative": {
+    "en": "OpenAI announced Jalapeño on June 24, 2026, its first internally-designed AI chip, co-developed with Broadcom. The inference processor was designed and manufactured in nine months — an unusually fast cycle for custom silicon. Engineering samples are already running GPT-5.3 Codex Spark workloads in OpenAI's labs. While OpenAI did not release specific benchmark numbers, Broadcom CEO Hock Tan stated the chip delivers roughly 50% cheaper inference versus comparable GPU solutions. The chip only handles inference for now, but OpenAI hinted that training chips could follow. Jalapeño is part of a broader industry shift: Google (TPU), Amazon (Trainium/Inferentia), Microsoft (Maia), and now OpenAI are all building custom AI silicon to reduce Nvidia dependency.",
+    "zhHans": "OpenAI 于2026年6月24日宣布了 Jalapeño，其首款内部设计的 AI 芯片，与 Broadcom 合作开发。这款推理处理器在九个月内完成设计和制造——对于定制芯片来说异常快速。工程样品已在 OpenAI 实验室中运行 GPT-5.3 Codex Spark 工作负载。OpenAI 未公布具体基准数据，但 Broadcom CEO Hock Tan 表示该芯片推理成本比同类 GPU 解决方案低约 50%。目前该芯片仅处理推理，但 OpenAI 暗示后续可能推出训练芯片。Jalapeño 是更广泛行业趋势的一部分：Google（TPU）、Amazon（Trainium/Inferentia）、Microsoft（Maia）以及现在的 OpenAI 都在构建自研 AI 芯片以减少对 Nvidia 的依赖。"
+  },
+  "categories": [
+    "commerce",
+    "capability"
+  ],
+  "significance": 1,
+  "impactIndex": 7,
+  "controversy": false,
+  "consensusLevel": "broad",
+  "claims": [
+    {
+      "claimType": "fact",
+      "text": {
+        "en": "OpenAI unveiled Jalapeño, its first custom AI inference chip, designed with Broadcom, on June 24, 2026. Engineering samples are running GPT-5.3 Codex Spark.",
+        "zhHans": "OpenAI 于2026年6月24日发布了首款自研 AI 推理芯片 Jalapeño，与 Broadcom 合作设计。工程样品已在运行 GPT-5.3 Codex Spark。"
+      },
+      "sourceIds": [
+        "openai-jalapeno-announce-2026",
+        "techcrunch-openai-chip-2026"
+      ]
+    },
+    {
+      "claimType": "fact",
+      "text": {
+        "en": "The chip was developed in 9 months and targets initial deployment by end of 2026, with Broadcom CEO claiming roughly 50% cheaper inference vs GPUs.",
+        "zhHans": "该芯片在九个月内完成开发，目标 2026 年底前初步部署，Broadcom CEO 称推理成本比 GPU 降低约 50%。"
+      },
+      "sourceIds": [
+        "cnbc-openai-chip-2026",
+        "cnn-openai-chip-2026"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "sources": [
+    {
+      "sourceId": "openai-jalapeno-announce-2026",
+      "relevance": "Official announcement"
+    },
+    {
+      "sourceId": "techcrunch-openai-chip-2026",
+      "relevance": "Tech media coverage of the chip announcement"
+    },
+    {
+      "sourceId": "cnbc-openai-chip-2026",
+      "relevance": "Business coverage with industry context"
+    },
+    {
+      "sourceId": "cnn-openai-chip-2026",
+      "relevance": "Mainstream news coverage"
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "economic_disruption",
+      "direction": "negative",
+      "severity": 2,
+      "description": {
+        "en": "OpenAI joining the custom AI chip race signals intensifying competition for Nvidia's dominant GPU market position. Increased disaggregation of the AI hardware supply chain.",
+        "zhHans": "OpenAI 加入自研 AI 芯片竞赛，预示着 Nvidia 主导的 GPU 市场地位面临更激烈竞争。AI 硬件供应链的分散化趋势加剧。"
+      },
+      "timeframe": "long",
+      "affectedGroups": [
+        "Nvidia",
+        "AI hardware industry",
+        "AI companies"
+      ],
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "cnbc-openai-chip-2026",
+        "techcrunch-openai-chip-2026"
+      ]
+    },
+    {
+      "dimension": "capability_leap",
+      "direction": "positive",
+      "severity": 1,
+      "description": {
+        "en": "Custom inference silicon optimized for OpenAI's models could reduce inference latency and cost, potentially enabling new use cases, but chips won't deploy until end of 2026 at earliest.",
+        "zhHans": "为 OpenAI 模型优化的定制推理芯片可降低推理延迟和成本，可能带来新用例，但芯片最早要到 2026 年底才能部署。"
+      },
+      "timeframe": "medium",
+      "affectedGroups": [
+        "ChatGPT users",
+        "OpenAI API customers"
+      ],
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "cnn-openai-chip-2026",
+        "openai-jalapeno-announce-2026"
+      ]
+    }
+  ]
+}

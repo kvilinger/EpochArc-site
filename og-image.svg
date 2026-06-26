@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">EpochArc social preview image</title>
+  <desc id="desc">EpochArc tracks AI milestones, evidence, and possible directions in a bilingual timeline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="70" x2="1050" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="170" y1="132" x2="1030" y2="498" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#f7faff" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="233" y1="183" x2="312" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="116" y="116" width="968" height="422" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0901961 0 0 0 0 0.164706 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1054" cy="114" r="136" fill="#dbeafe" fill-opacity="0.7"/>
+  <circle cx="151" cy="562" r="182" fill="#e0ecff" fill-opacity="0.65"/>
+  <path d="M0 520C184 456 315 438 514 470C712 502 901 587 1200 540V630H0V520Z" fill="#edf3ff"/>
+
+  <g filter="url(#shadow)">
+    <rect x="156" y="132" width="888" height="342" rx="28" fill="url(#panel)"/>
+    <rect x="156.75" y="132.75" width="886.5" height="340.5" rx="27.25" stroke="#d6e2f3" stroke-width="1.5"/>
+  </g>
+
+  <rect x="210" y="178" width="110" height="110" rx="30" fill="#ffffff"/>
+  <circle cx="265" cy="233" r="42" stroke="#94a3b8" stroke-width="1.6"/>
+  <path d="M265 191V275" stroke="#d9e2ef" stroke-width="1" stroke-dasharray="4 5"/>
+  <path d="M223 233H307" stroke="#d9e2ef" stroke-width="1" stroke-dasharray="4 5"/>
+  <path d="M233 255C239 228 260 207 286 211" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M233 255C250 261 279 257 296 233" stroke="#0f172a" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 5"/>
+  <circle cx="233" cy="255" r="8" fill="#0f172a" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="260" cy="214" r="6.5" fill="#2563eb" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="286" cy="211" r="10" fill="#2563eb" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="296" cy="233" r="8" fill="#0f172a" stroke="#ffffff" stroke-width="2.5"/>
+
+  <text x="350" y="212" fill="#2563eb" font-size="22" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" letter-spacing="0.08em">EPOCHARC</text>
+  <text x="350" y="286" fill="#0f172a" font-size="58" font-weight="760" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">AI Milestones, Evidence,</text>
+  <text x="350" y="352" fill="#0f172a" font-size="58" font-weight="760" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">and Possible Directions</text>
+  <text x="350" y="410" fill="#475569" font-size="25" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">A bilingual timeline for tracking where AI is going.</text>
+
+  <g>
+    <rect x="212" y="366" width="102" height="34" rx="17" fill="#dbeafe"/>
+    <text x="233" y="389" fill="#2563eb" font-size="18" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">L1-L3</text>
+    <rect x="326" y="366" width="120" height="34" rx="17" fill="#eaf2ff"/>
+    <text x="347" y="389" fill="#2563eb" font-size="18" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Evidence</text>
+    <rect x="458" y="366" width="154" height="34" rx="17" fill="#eaf2ff"/>
+    <text x="479" y="389" fill="#2563eb" font-size="18" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Reader Pulse</text>
+  </g>
+
+  <text x="156" y="560" fill="#64748b" font-size="22" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">epoch-arc.com</text>
+</svg>

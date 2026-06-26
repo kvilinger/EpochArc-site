@@ -1,0 +1,100 @@
+{
+  "id": "auto-gpt-2023",
+  "slug": "auto-gpt",
+  "title": {
+    "en": "Auto-GPT goes viral, giving mainstream developers their first taste of autonomous AI agents",
+    "zhHans": "Auto-GPT 病毒式传播，让主流开发者首次体验自主 AI 智能体"
+  },
+  "summary": {
+    "en": "Released on March 30, 2023 by developer Toran Bruce Richards, Auto-GPT was an open-source autonomous AI agent that could break down goals into sub-tasks and execute them using tools like web browsing and file management. It went viral on GitHub, becoming the first widely accessible demonstration of 'AI agents' — AI systems that act autonomously rather than just generating text. Auto-GPT inspired a wave of agent-building and laid the conceptual groundwork for the agent boom of 2025-2026.",
+    "zhHans": "2023 年 3 月 30 日，由开发者 Toran Bruce Richards 发布的 Auto-GPT 是一个开源自主 AI 智能体，可以将目标分解为子任务并使用网络浏览和文件管理等工具执行。它在 GitHub 上病毒式传播，成为首个广泛可用的\"AI 智能体\"演示——AI 系统自主行动而不仅仅是生成文本。Auto-GPT 激发了智能体构建浪潮，并为 2025-2026 年的智能体爆发奠定了概念基础。"
+  },
+  "narrative": {
+    "en": "Auto-GPT represented a conceptual leap at the time of its release. Until March 2023, the dominant mental model of AI was 'chatbot' — you ask, it responds. Auto-GPT inverted this: give it a goal, and it runs independently, chaining LLM calls, web searches, file operations, and code execution until the goal is achieved or it gets stuck. The project was built on GPT-4's API, and its viral success demonstrated that developers were hungry for autonomous capabilities. The ChaosGPT experiment — where someone tasked Auto-GPT with 'destroying humanity' — brought mainstream media attention. Auto-GPT had significant limitations: it frequently got stuck in loops, hallucinated, and incurred high API costs. But its impact on the AI ecosystem was disproportionate to its technical maturity. It introduced the concept of 'agents' to a generation of developers who had only known 'chatbots.' Projects like BabyAGI followed, creating an ecosystem of autonomous agent frameworks. Auto-GPT would later be seen as a prototype for what became the 2025-2026 agent explosion — OpenAI Operator, Claude Code, OpenClaw, and others all realized the vision Auto-GPT had sketched in 2023.",
+    "zhHans": "Auto-GPT 在发布时代表了一个概念上的飞跃。直到 2023 年 3 月，AI 的主流心智模型还是\"聊天机器人\"——你提问，它回答。Auto-GPT 颠覆了这一点：给它一个目标，它独立运行，串联 LLM 调用、网络搜索、文件操作和代码执行，直到目标达成或陷入困境。该项目基于 GPT-4 的 API，其病毒式传播证明了开发者对自主能力渴望已久。ChaosGPT 实验——有人让 Auto-GPT 去\"毁灭人类\"——带来了主流媒体关注。Auto-GPT 有显著限制：频繁陷入循环、产生幻觉、API 成本高昂。但它对 AI 生态系统的影响与其技术成熟度不成比例。它向一代只知道\"聊天机器人\"的开发者介绍了\"智能体\"概念。BabyAGI 等项目随后出现，创建了自主智能体框架的生态系统。Auto-GPT 后来被视为 2025-2026 年智能体爆发的原型——OpenAI Operator、Claude Code、OpenClaw 等都实现了 Auto-GPT 在 2023 年勾勒的愿景。"
+  },
+  "date": "2023-03-30",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "March 30, 2023",
+    "zhHans": "2023年3月30日"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 4,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Introduced the 'autonomous agent' paradigm to mainstream developers. Inspired a generation of agent frameworks and laid conceptual groundwork for the 2025-2026 agent boom.",
+        "zhHans": "向主流开发者引入了\"自主智能体\"范式。启发了一代智能体框架，为 2025-2026 年的智能体爆发奠定了概念基础。"
+      },
+      "affectedGroups": [
+        "AI developers",
+        "researchers",
+        "startups"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "wikipedia-auto-gpt"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "auto-gpt-release-2023",
+      "text": {
+        "en": "Auto-GPT was released on March 30, 2023 as an open-source autonomous AI agent. It quickly went viral on GitHub, demonstrating goal-driven autonomous task execution.",
+        "zhHans": "Auto-GPT 于 2023 年 3 月 30 日作为开源自主 AI 智能体发布。它迅速在 GitHub 上病毒式传播，展示了目标驱动的自主任务执行。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "wikipedia-auto-gpt"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "wikipedia-auto-gpt",
+      "supports": [
+        "auto-gpt-release-2023"
+      ],
+      "quote": "AutoGPT — open-source autonomous AI agent. Released in March 2023, the project quickly gained popularity on GitHub."
+    },
+    {
+      "sourceId": "github-autogpt",
+      "supports": [],
+      "quote": "An experimental open-source attempt to make GPT-4 fully autonomous."
+    }
+  ],
+  "relatedEvents": [
+    "gpt4-2023",
+    "openai-operator-2025",
+    "claude-code-launch-2025",
+    "openclaw-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-25",
+    "updatedAt": "2026-06-25",
+    "reviewedAt": "2026-06-25",
+    "publishedAt": "2026-06-25",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-25",
+        "changeType": "created",
+        "summary": "Added Auto-GPT — first viral autonomous AI agent, agent concept prototype."
+      }
+    ]
+  }
+}

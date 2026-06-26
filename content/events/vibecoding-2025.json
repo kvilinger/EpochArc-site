@@ -19,7 +19,10 @@
     "en": "February 2, 2025",
     "zhHans": "2025年2月2日"
   },
-  "categories": ["society", "product"],
+  "categories": [
+    "society",
+    "product"
+  ],
   "status": "published",
   "significance": 1,
   "impactIndex": 5,
@@ -34,10 +37,17 @@
         "en": "Gave language to a profound shift in programming practice. Named Collins Word of the Year 2025 and listed by Merriam-Webster. Crystallized the transformation of software engineering from precise syntax manipulation to intent-driven AI collaboration.",
         "zhHans": "为编程实践中的深刻变革赋予了语言。被《柯林斯英语词典》评为 2025 年度词汇，被《韦氏词典》收录。凝固了软件工程从精确语法操作向意图驱动的 AI 协作的转变。"
       },
-      "affectedGroups": ["software developers", "students", "AI companies", "general public"],
+      "affectedGroups": [
+        "software developers",
+        "students",
+        "AI companies",
+        "general public"
+      ],
       "timeframe": "long",
       "evidenceGrade": "A",
-      "sourceIds": ["wikipedia-vibe-coding"]
+      "sourceIds": [
+        "wikipedia-vibe-coding"
+      ]
     }
   ],
   "claims": [
@@ -49,13 +59,29 @@
       },
       "claimType": "fact",
       "evidenceGrade": "A",
-      "sourceIds": ["wikipedia-vibe-coding"]
+      "sourceIds": [
+        "wikipedia-vibe-coding"
+      ]
     }
   ],
   "sources": [
-    { "sourceId": "wikipedia-vibe-coding", "supports": ["vibecoding-coined-fact"], "quote": "The term was coined in February 2025 by computer scientist Andrej Karpathy. It was named the Collins English Dictionary Word of the Year for 2025." }
+    {
+      "sourceId": "wikipedia-vibe-coding",
+      "supports": [
+        "vibecoding-coined-fact"
+      ],
+      "quote": "The term was coined in February 2025 by computer scientist Andrej Karpathy. It was named the Collins English Dictionary Word of the Year for 2025."
+    },
+    {
+      "sourceId": "karpathy-vibe-coding-tweet",
+      "supports": [],
+      "quote": "There's a new kind of coding I call 'vibe coding'."
+    }
   ],
-  "relatedEvents": ["chatgpt-2022", "github-copilot-2022"],
+  "relatedEvents": [
+    "chatgpt-2022",
+    "github-copilot-2022"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
@@ -64,7 +90,11 @@
     "publishedAt": "2026-06-24",
     "curator": "gang",
     "changeLog": [
-      { "date": "2026-06-24", "changeType": "created", "summary": "Added vibe coding — Collins Word of the Year 2025, conceptual shift in programming." }
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Added vibe coding — Collins Word of the Year 2025, conceptual shift in programming."
+      }
     ]
   }
 }

@@ -1,0 +1,84 @@
+{
+  "id": "mcp-protocol-2024",
+  "slug": "model-context-protocol",
+  "title": {
+    "en": "Anthropic introduces the Model Context Protocol (MCP), an open standard connecting AI to real-world tools",
+    "zhHans": "Anthropic 发布模型上下文协议（MCP），连接 AI 与现实工具的开源标准"
+  },
+  "summary": {
+    "en": "On November 25, 2024, Anthropic open-sourced the Model Context Protocol (MCP), a standard for connecting AI systems to external data sources, tools, and services. MCP replaced fragmented per-integration implementations with a single open protocol. It was rapidly adopted by OpenAI, Google, and the broader AI ecosystem, becoming the de facto standard for AI-tool integration and enabling the wave of autonomous AI agents that followed.",
+    "zhHans": "2024 年 11 月 25 日，Anthropic 开源了模型上下文协议（MCP），一个用于连接 AI 系统与外部数据源、工具和服务的标准。MCP 用单一开放协议取代了碎片化的按集成实现。它迅速被 OpenAI、Google 和更广泛的 AI 生态系统采用，成为 AI 工具集成的事实标准，为后来自主 AI 智能体的浪潮奠定了基础。"
+  },
+  "narrative": {
+    "en": "Before MCP, every AI tool integration required custom implementation: connecting an LLM to Google Drive, Slack, GitHub, or a database demanded per-service adapters that were brittle and non-transferable. Anthropic engineers David Soria Parra and Justin Spahr-Summers designed MCP to solve this: a standardized protocol where any MCP-compatible AI assistant could connect to any MCP server, regardless of the underlying service. The protocol was open-sourced under an Apache 2.0 license with SDKs for Python and TypeScript, plus pre-built servers for Google Drive, Slack, GitHub, Git, Postgres, and Puppeteer. MCP's architecture was deliberately simple: a client-server model where the AI assistant (client) sends requests to tool servers that expose resources, tools, and prompts. This meant developers could build a tool integration once and it would work with any MCP-compatible AI system. The industry response was rapid. OpenAI announced MCP support within weeks. Google integrated MCP into its AI platforms. By 2025, MCP had become the de facto standard for AI tool integration, with hundreds of community-contributed servers and enterprise adoption. The protocol was widely credited with accelerating the agentic AI wave — by providing a standardized way for AI to interact with external tools, MCP made it practical for AI agents to autonomously perform real-world tasks across multiple systems. Without MCP, the wave of AI agents that followed (OpenAI Operator, OpenClaw, Claude Code, etc.) would have required far more custom integration work. MCP represented a rare example of an AI lab prioritizing open infrastructure over proprietary advantage — and it reshaped the industry as a result.",
+    "zhHans": "在 MCP 之前，每个 AI 工具集成都需要自定义实现：将 LLM 连接到 Google Drive、Slack、GitHub 或数据库需要按服务定制的适配器，既脆弱又不可移植。Anthropic 工程师 David Soria Parra 和 Justin Spahr-Summers 设计了 MCP 来解决这个问题：一个标准化协议，任何兼容 MCP 的 AI 助手都可以连接到任何 MCP 服务器，无论底层服务是什么。该协议以 Apache 2.0 许可开源，附带了 Python 和 TypeScript 的 SDK，以及 Google Drive、Slack、GitHub、Git、Postgres 和 Puppeteer 的预构建服务器。MCP 的架构故意保持简单：一个客户端-服务器模型，AI 助手（客户端）向暴露资源、工具和提示的工具服务器发送请求。这意味着开发者可以构建一次工具集成，它就能与任何兼容 MCP 的 AI 系统一起工作。行业反应迅速。OpenAI 在数周内宣布支持 MCP。Google 将 MCP 集成到其 AI 平台中。到 2025 年，MCP 已成为 AI 工具集成的事实标准，拥有数百个社区贡献的服务器和企业采用。该协议被广泛归功于加速了智能体 AI 浪潮——通过提供 AI 与外部工具交互的标准化方式，MCP 使 AI 智能体能够跨多个系统自主执行现实世界任务变得切实可行。没有 MCP，随后的 AI 智能体浪潮（OpenAI Operator、OpenClaw、Claude Code 等）将需要更多的自定义集成工作。MCP 代表了一个罕见的案例——AI 实验室将开放基础设施优先于专有优势——并因此重塑了整个行业。"
+  },
+  "date": "2024-11-25",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "November 25, 2024",
+    "zhHans": "2024年11月25日"
+  },
+  "categories": ["product"],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Standardized AI-tool integration, making it practical for AI agents to autonomously interact with multiple external systems. Enabled the 2025-2026 wave of autonomous AI agents by reducing integration friction.",
+        "zhHans": "标准化了 AI 工具集成，使 AI 智能体自主与多个外部系统交互变得切实可行。通过减少集成摩擦，赋能了 2025-2026 年自主 AI 智能体的浪潮。"
+      },
+      "affectedGroups": ["AI developers", "enterprises", "AI companies", "SaaS providers"],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": ["anthropic-mcp-blog-2024", "wikipedia-mcp"]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Open standard under Apache 2.0, with SDKs and pre-built servers for major platforms. Reduced integration cost for smaller developers and made AI-tool connectivity accessible beyond large enterprises.",
+        "zhHans": "Apache 2.0 下的开放标准，附带主流平台的 SDK 和预构建服务器。降低了小型开发者的集成成本，使 AI 工具连接超越了大型企业的范围。"
+      },
+      "affectedGroups": ["indie developers", "startups", "enterprises"],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": ["anthropic-mcp-blog-2024"]
+    }
+  ],
+  "claims": [
+    {
+      "id": "mcp-announcement-2024",
+      "text": {
+        "en": "Anthropic open-sourced the Model Context Protocol on November 25, 2024 — an open standard for connecting AI assistants to external data systems and tools.",
+        "zhHans": "Anthropic 于 2024 年 11 月 25 日将模型上下文协议开源——一个用于连接 AI 助手与外部数据系统和工具的开放标准。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": ["anthropic-mcp-blog-2024"]
+    }
+  ],
+  "sources": [
+    { "sourceId": "anthropic-mcp-blog-2024", "supports": ["mcp-announcement-2024"], "quote": "Today, we're open-sourcing the Model Context Protocol (MCP), a new standard for connecting AI assistants to the systems where data lives." },
+    { "sourceId": "wikipedia-mcp", "supports": [], "quote": "MCP was announced by Anthropic in November 2024 as an open standard." }
+  ],
+  "relatedEvents": ["openai-operator-2025", "openclaw-2026"],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-25",
+    "updatedAt": "2026-06-25",
+    "reviewedAt": "2026-06-25",
+    "publishedAt": "2026-06-25",
+    "curator": "gang",
+    "changeLog": [
+      { "date": "2026-06-25", "changeType": "created", "summary": "Added MCP — open standard for AI-tool integration, industry standard." }
+    ]
+  }
+}

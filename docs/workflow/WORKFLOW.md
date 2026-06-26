@@ -1,8 +1,11 @@
 # EpochArc 信息收集工作流
 
-**版本**：v2.0  
-**更新日期**：2026-06-24  
-**适用范围**：从信号发现到事件发布的完整搜集流程，匹配 v2 数据模型（`events.json`、`forecasts.json`、`sources.json`）
+**版本**：v2.1  
+**更新日期**：2026-06-25
+
+> ⚠️ **核心原则：所有工作严格按照流程、体系和标准执行。**
+> 任何关于是否收录、如何分类、打什么分的决定，必须依据本文档定义的流程（发现→初筛→确认→发布）、DATA-MODEL.md 定义的评分和数据类型、STYLE-GUIDE.md 定义的文案规范。
+> 不凭感觉做编辑判断，不跳过验证步骤，不让直觉替代数据。如有冲突，以文档为准。
 
 ---
 
@@ -20,6 +23,8 @@
 
 Brave Search 只做确认层的深挖，不做发现层的扫描——否则会漏掉论文、社区信号和未报道的突破。
 
+> ⚠️ **通道状态速查**：Gmail 已连接，Reddit 通过 Brave Search 代理可用，X/Twitter 同。详见下方信源矩阵。
+
 ---
 
 ## 一、发现层：7 个信源并行扫描
@@ -30,48 +35,68 @@ Brave Search 只做确认层的深挖，不做发现层的扫描——否则会�
 
 ### 信源矩阵
 
-| # | 信源 | 覆盖类型 | 采集方式 | 时效 |
-|---|------|---------|---------|------|
-| 1 | **arXiv** (cs.AI, cs.LG, cs.CL) | 研究论文原始流 | `http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&max_results=50` | 日更 |
-| 2 | **Hugging Face Daily Papers** | 社区筛选的研究热点 | `GET https://huggingface.co/api/daily_papers?limit=20` | 日更 |
-| 3 | **Papers with Code** | 论文的实际影响力（GitHub stars + 引用） | `https://paperswithcode.com/api/v1/papers/?items_per_page=20` | 日更 |
-| 4 | **Hacker News** | 科技社区注意力信号 | `https://hacker-news.firebaseio.com/v0/topstories.json` → 过滤 AI/LLM/ML 关键词 | 小时级 |
-| 5 | **Reddit r/MachineLearning** | AI 社区热议话题 | `https://www.reddit.com/r/MachineLearning/hot.json?limit=25` | 小时级 |
-| 6 | **Import AI 周刊** (Jack Clark) | 高质量人工策展 AI 新闻 | 邮件订阅，每周一封 | 周更 |
-| 7 | **The Batch** (Andrew Ng) | 行业向 AI 周报 | 邮件订阅，每周一封 | 周更 |
+| # | 信源 | 覆盖类型 | 采集方式 | 状态 | 操作说明 |
+|---|------|---------|---------|------|--------|
+| 1 | **Hugging Face Daily Papers** | 社区筛选的研究热点 | `GET https://huggingface.co/api/daily_papers?limit=20` | ✅ 可用 | 无需操作。自动替代 arXiv + Papers with Code |
+| 2 | **Hacker News** | 科技社区注意力信号 | Firebase API (公开) | ✅ 可用 | 无需操作 |
+| 3 | **Gmail — Import AI 周刊** | 高质量人工策展 AI 新闻 | `gws gmail users messages list --params '{"userId": "me", "q": "from:importai@substack.com"}'` | ✅ 已连接，无内容 | Import AI 订阅刚创建，尚无正式内容。等周报进来即可 |
+| 4 | **Gmail — The Batch** | 行业向 AI 周报 | `gws gmail users messages list --params '{"userId": "me", "q": "from:thebatch@deeplearning.ai"}'` | ✅ 已连接，未订阅 | 如果你订阅了 The Batch，邮件自动进入 Gmail，我就能读 |
+| 5 | **Brave Search → Reddit** | AI 社区热议话题（代理） | Brave Search API: `reddit.com MachineLearning trending {keywords}` | ✅ 可用（代理） | 无需操作。Reddit 原生 API 被封锁，用 Brave Search 搜索 `reddit.com` 替代 <br>`node search.js -n 10 "reddit.com trending AI June 2026"` |
+| 6 | **Brave Search → X/Twitter** | 科技社区注意力信号（代理） | Brave Search API: `x.com OR twitter.com AI {keywords}` | ✅ 可用（代理） | 无需操作。Twitter 原生 API 需付费，用 Brave Search 搜索 `x.com` 替代 <br>`node search.js -n 10 "x.com AI breakthrough June 2026"` |
+| 7 | **Brave Search → 通用 AI 新闻** | 发现层兜底 | Brave Search 通用搜索 | ✅ 可用 | 当其他通道全都无结果时，用 AI 新闻搜索兜底 |
 
-信源 1~5 可通过脚本一键拉取；6~7 人肉做最后一道安全网。
+> **当前实际可用通道**: 6 个通道可用（HF Daily Papers + HN + Gmail/Import AI + Gmail/The Batch + Brave→Reddit + Brave→X）。
+> Brave Search 既做发现层（代理 Reddit/X），也做确认层（四层漏斗），但它不替代 HF 和 HN 的原始 API。
+> ⚠️ arXiv / Papers with Code / Reddit 原生 API 均已放弃，分别由 HF Daily Papers / Brave Search 替代。
 
-### 为什么是这 7 个
+### 为什么选这些通道
 
-- **arXiv**：最原始的研究信号，噪音最大但不会漏论文
-- **HF Daily Papers**：社区已筛过一遍，专注"值得读的论文"
-- **Papers with Code**：代码 + 引用双重验证，区分"被炒作的论文"和"真正好用的论文"
-- **HN + Reddit**：社区注意力的风向标，很多重要事件在媒体报道前先在这里发酵
-- **Import AI + The Batch**：最后的安全网——防止自动化漏掉政策/社会/文化层面的重要事件
+- **HF Daily Papers**：arXiv 的精华版，社区已筛过一遍，专注"值得读的论文"。替代 arXiv 和 Papers with Code
+- **HN + Brave→Reddit + Brave→X**：三类社区注意力风向标。很多重要事件在媒体报道前先在这里发酵
+- **Import AI + The Batch**：人工策展的安全网——防止自动化漏掉政策/社会/文化层面的重要事件
+- **通用 Brave Search**：兜底——当其他通道全无结果时，直接搜索 AI 新闻
 
-### 采集脚本示例
+### 采集脚本（全部通道）
 
 ```bash
-# arXiv 最近 50 篇
-curl -s "http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=50" | python3 -c "
-import sys, xml.etree.ElementTree as ET
-tree = ET.parse(sys.stdin)
-for entry in tree.findall('{http://www.w3.org/2005/Atom}entry'):
-    title = entry.find('{http://www.w3.org/2005/Atom}title').text.strip()
-    link = entry.find('{http://www.w3.org/2005/Atom}id').text
-    published = entry.find('{http://www.w3.org/2005/Atom}published').text
-    print(f'{published[:10]} | {title[:80]} | {link}')
-"
-
-# Hugging Face Daily Papers
-curl -s "https://huggingface.co/api/daily_papers?limit=10" | python3 -c "
+# 1) Hugging Face Daily Papers（替代 arXiv + Papers with Code）
+curl -s "https://huggingface.co/api/daily_papers?limit=20" | python3 -c "
 import sys, json
 data = json.load(sys.stdin)
 for item in data:
     p = item['paper']
-    print(f\"{p['publishedAt'][:10]} | {p['title'][:80]} | upvotes={item.get('upvotes',0)}\")
+    print(f\"{p['publishedAt'][:10]} | ★{item.get('upvotes',0):>3} | {p['title'][:80]}\")
 "
+
+# 2) Hacker News 顶部故事（过滤 AI 关键词）
+IDS=\\$(curl -s "https://hacker-news.firebaseio.com/v0/topstories.json" | python3 -c "import sys,json; ids=json.load(sys.stdin); print(' '.join(str(i) for i in ids[:30]))")
+for id in \$IDS; do
+  curl -s "https://hacker-news.firebaseio.com/v0/item/\$id.json" | python3 -c "
+import sys, json, re
+i = json.load(sys.stdin)
+title = i.get('title','')
+url = i.get('url','')
+score = i.get('score',0)
+if re.search(r'AI|LLM|GPT|Claude|Gemini|DeepSeek|Anthropic|OpenAI|agent|transformer|neural|machine learning|language model', title, re.I):
+    print(f'[{score}] {title[:80]} | {url}')
+"
+done
+
+# 3) Gmail — Import AI（需先授权 gws）
+gws gmail users messages list --params '{"userId": "me", "q": "from:importai@substack.com", "maxResults": 5}' --format json | python3 -c "
+import sys, json
+d = json.load(sys.stdin)
+for m in d.get('messages', []):
+    print(m['id'])
+"
+
+# 4) Brave Search → Reddit（发现层代理）
+export BRAVE_API_KEY="YOUR_KEY"
+cd /path/to/brave-search-skill && node search.js -n 10 "reddit.com AI trending June 2026"
+
+# 5) Brave Search → X/Twitter（发现层代理）
+export BRAVE_API_KEY="YOUR_KEY"
+cd /path/to/brave-search-skill && node search.js -n 10 "x.com AI breakthrough June 2026"
 ```
 
 ---
@@ -129,7 +154,7 @@ brave search "事件名称 parameters model architecture paper" -n 5 --content
 
 **产出** → 填充 `AIEvent`:
 
-> 初筛评分（五维×0-2）写入 `data/screening_log.json`。确认层完成后，该 entry 的 `eventId` 回填为正式事件 ID，形成"候选→审核→发布"的可追溯链条。
+> 初筛评分（五维×0-2）写入本地候选日志（例如 `data/event_screening_log.json`）。确认层完成后，该 entry 的 `eventId` 回填为正式事件 ID，形成"候选→审核→发布"的可追溯链条。
 
 | 搜索到的信息 | v2 字段 |
 |-------------|---------|
@@ -245,6 +270,85 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 
 ---
 
+## 八、各渠道搜索方法与执行要求
+
+### 渠道 1：Hugging Face Daily Papers
+
+| 属性 | 内容 |
+|:--|:--|
+| API 地址 | `https://huggingface.co/api/daily_papers?limit=20` |
+| 频率 | 每次扫查前执行 1 次 |
+| 搜索方法 | curl + python 解析（见上方采集脚本） |
+| 输出 | 每篇论文的发布时间、★评分、标题 |
+| 结果判断 | ★ ≥ 50 或标题含突破性关键词 → 进入候选 |
+| 替代 | 替代 arXiv API（被 rate limit）和 Papers with Code（403） |
+
+### 渠道 2：Hacker News
+
+| 属性 | 内容 |
+|:--|:--|
+| API 地址 | `https://hacker-news.firebaseio.com/v0/topstories.json` + `item/{id}.json` |
+| 频率 | 每次扫查前执行 1 次 |
+| 搜索方法 | 取 top 30 → 逐个获取标题/URL → 过滤 AI 关键词 |
+| 输出 | 每个匹配故事的[得分] 标题 | URL |
+| AI 关键词 | AI、LLM、GPT、Claude、Gemini、DeepSeek、Anthropic、OpenAI、agent、transformer、neural、machine learning、language model |
+| 结果判断 | score ≥ 50 且标题显式提及 AI 事件 → 进入候选 |
+
+### 渠道 3：Gmail — Import AI 周刊
+
+| 属性 | 内容 |
+|:--|:--|
+| API 方式 | `gws` CLI（Google Workspace CLI） |
+| 前置要求 | 已安装 `gws` + OAuth 授权，可读写 Gmail |
+| 搜索命令 | `gws gmail users messages list --params '{"userId": "me", "q": "from:importai@substack.com", "maxResults": 5}' --format json` |
+| 获取正文 | 用 `gws gmail users messages get` 解析邮件正文，提取新闻标题 > 来源 |
+| 当前状态 | Import AI 刚订阅，尚无正式周报内容。等待中 |
+
+### 渠道 4：Gmail — The Batch
+
+| 属性 | 内容 |
+|:--|:--|
+| API 方式 | 同上（`gws` CLI） |
+| 搜索命令 | `gws gmail users messages list --params '{"userId": "me", "q": "from:thebatch@deeplearning.ai", "maxResults": 5}' --format json` |
+| 当前状态 | 未订阅此邮件。如需订阅，请到 deeplearning.ai 注册 |
+
+### 渠道 5：Brave Search → Reddit（代理）
+
+| 属性 | 内容 |
+|:--|:--|
+| 工具 | `search.js`（Brave Search API） |
+| 前置要求 | `BRAVE_API_KEY` 环境变量 |
+| 搜索方法 | 不用 `site:` 前缀，用自然语言 + `reddit.com` 关键词 |
+| 示例查询 | `node search.js -n 10 "reddit.com AI trending June 2026"` |
+| 补充查询 | `node search.js -n 10 "reddit.com r/MachineLearning breakthrough June 2026"` |
+| 输出 | Reddit 讨论帖标题、URL、摘要 |
+| 结果判断 | 帖子热度高（从标题推断）且内容指向未收录事件 → 进入候选 |
+| 替代 | 替代 Reddit 原生 API（被封锁，需 OAuth token） |
+
+### 渠道 6：Brave Search → X/Twitter（代理）
+
+| 属性 | 内容 |
+|:--|:--|
+| 工具 | `search.js`（Brave Search API） |
+| 前置要求 | `BRAVE_API_KEY` 环境变量 |
+| 搜索方法 | 搜索 `x.com` 或 `twitter.com` 内容 |
+| 示例查询 | `node search.js -n 10 "x.com AI breakthrough June 2026"` |
+| 分类查询 | `node search.js -n 10 "x.com AI regulation lawsuit regulation 2026"` |
+| 输出 | X/Twitter 帖子链接、摘要 |
+| 结果判断 | 转发量高或来自权威账号 → 进入候选 |
+| 注意 | Brave Search 对 X 的索引可能延迟 1-2 天，不适用于实时追踪 |
+
+### 渠道 7：Brave Search → 通用 AI 新闻（兜底）
+
+| 属性 | 内容 |
+|:--|:--|
+| 工具 | `search.js`（Brave Search API） |
+| 搜索方法 | 直接搜索 AI 相关关键词，无平台限制 |
+| 示例查询 | `node search.js -n 10 "AI news June 2026"` |
+| 用途 | 当所有其他通道都无结果时兜底扫描 |
+
+---
+
 ## 四、AI 辅助生成 JSON 草稿
 
 确认层搜索完成后，将搜索结果交给 agent 生成完整的 v2 JSON。
@@ -304,14 +408,15 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 
 适合个人策展，每周一次：
 
-1. 运行脚本拉取 5 个 API 信源 → 输出候选列表
-2. 人工浏览 Import AI + The Batch 邮件 → 补充候选
-3. **分类覆盖自查**：按 6 个分类染色候选列表，标记空白类别
-4. 对空白类别，agent 执行**第 5 层定向搜索** → 补充遗漏候选
-5. 对每个候选，agent 执行四层 Brave Search → 生成 JSON 草稿
-6. 人工审核 → 提交到 `content/events/`
-7. 运行 `npm run build:data` → 生成 `data/events.json`
-8. 前端自动渲染
+1. 运行脚本拉取 HF Daily Papers + Hacker News → 输出候选列表
+2. 执行 Brave Search → Reddit + X/Twitter 代理搜索 → 补充社区信号
+3. （可选）Gmail 拉取 Import AI + The Batch → 补充人工策展内容
+4. **分类覆盖自查**：按 6 个分类染色候选列表，标记空白类别
+5. 对空白类别，agent 执行**第 5 层定向搜索** → 补充遗漏候选
+6. 对每个候选，agent 执行四层 Brave Search → 生成 JSON 草稿
+7. 人工审核 → 提交到 `content/events/`
+8. 运行 `npm run build:data` → 生成 `data/events.json`
+9. 前端自动渲染
 
 ### 第二版（可选）：Scheduled Worker
 
@@ -333,14 +438,15 @@ Scheduled Worker (每天)
 
 Brave Search 对历史事件和学术内容的索引质量足够好。多个搜索引擎不会显著提升覆盖率，只会增加重复结果和噪音。关键在于用对搜索场景——Brave 做深挖，API 信源做发现。
 
-### Q: arXiv 每天几百篇论文，怎么筛？
+### Q: arXiv / Papers with Code / Reddit 原生 API 为什么不用了？
 
-两层过滤：
-1. HF Daily Papers 已经人工筛过一轮——每天 10-20 篇精选
-2. Papers with Code 的 GitHub stars 和引用数提供客观热度信号
-3. 只有在以上两层被标记为"值得关注"的论文，才会进入 Brave Search 确认层
+- **arXiv**：被 rate limit，无法稳定调用。用 HF Daily Papers 替代，后者每天精选 arXiv 论文
+- **Papers with Code**：同被 rate limit。HF 的效果更好（社区投票 + 热度)
+- **Reddit 原生 API**：全面封锁未认证请求。用 Brave Search 搜索 `reddit.com` 替代
 
-不会从 arXiv 原始流里人工筛选。
+### Q: X/Twitter 有原生 API 吗？
+
+X API 现在需要付费订阅（$100+/月）才能读写。用 Brave Search 搜索 `x.com` 或 `twitter.com` 作为替代。虽然不如原生 API 实时，但用于发现大型事件已经足够。
 
 ### Q: 发现层会不会漏掉重要的公司发布（如 OpenAI、Google）？
 
@@ -355,15 +461,15 @@ Brave Search 对历史事件和学术内容的索引质量足够好。多个搜�
 
 | 环节 | 耗时 |
 |------|------|
-| 脚本拉取 5 个 API 信源 | 自动 |
-| 浏览 Import AI + The Batch | 10 分钟 |
+| 脚本拉取 HF + HN + Brave→Reddit/X | 自动 |
+| 浏览 Gmail（Import AI / The Batch） | 5 分钟 |
 | agent 对候选执行 Brave Search + 生成 JSON | 自动（每次 1-3 分钟） |
 | 人工审核 | 10-20 分钟 |
 | 构建 + 部署 | 自动 |
 
-**合计**：每周 20-30 分钟人工时间。
+**合计**：每周 15-25 分钟人工时间。
 
 ---
 
-*此文档与 DATA-MODEL.md v2.0 配套使用。
-DATA-MODEL.md 定义"存什么"，本文档定义"怎么找到要存的内容"。*
+*此文档与 [DATA-MODEL.md](../data/DATA-MODEL.md) v2.0 配套使用。
+[DATA-MODEL.md](../data/DATA-MODEL.md) 定义"存什么"，本文档定义"怎么找到要存的内容"。*

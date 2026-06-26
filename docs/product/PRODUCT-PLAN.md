@@ -1,13 +1,13 @@
 # EpochArc 产品与上线规划
 
-**更新日期**：2026-06-24  
-**定位**：AI development roadmap, evidence index, and future signals site.
+**更新日期**：2026-06-25  
+**定位**：AI development roadmap, evidence index, and possible directions site.
 
 ---
 
 ## 1. 产品定位
 
-EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心价值是把 AI 发展的重要事实、来源证据、影响判断和未来信号整理成一条可筛选、可追溯、可更新的路线记录。
+EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心价值是把 AI 发展的重要事实、来源证据、影响判断和可能方向整理成一条可筛选、可追溯、可更新的路线记录。
 
 目标用户：
 
@@ -17,9 +17,9 @@ EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心�
 
 核心体验：
 
-- 首页直接进入时间轴和 Future Signals，不做营销式 landing page。
-- 每个节点可展开，看到摘要、影响评估、可信度和来源。
-- Future Signals 必须能被未来裁定，不只是口号或年份猜测。
+- 首页直接进入 Possible Directions 和时间轴，不做营销式 landing page。
+- 每个节点可展开，看到摘要、影响评估、解读共识和来源。
+- Possible Directions 必须来自事件化信号，不是空泛口号或闭门造车的完成标准。
 - 方法页公开收录和评分规则，让读者知道本站如何判断。
 
 ---
@@ -30,7 +30,7 @@ EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心�
 
 - 改变 AI 技术路线、产品化路径、社会认知、监管议程或产业结构的事件。
 - 可被来源验证的事实节点。
-- 有明确达成标准的未来方向。
+- 与已发生事件形成闭环、且仍值得持续观察的中期方向。
 
 不追求：
 
@@ -52,7 +52,7 @@ EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心�
 - L1-L3 重要度定义。
 - Impact Score 的基本含义。
 - 共识度和争议标记定义。
-- 预测达成与裁定原则。
+- Possible Directions 的公开方法、共识搜索与限制说明。
 - 修订、纠错和局限性说明。
 
 不必公开：
@@ -135,7 +135,7 @@ functions/
    - 必填字段。
    - 来源 URL 不为空。
    - L2/L3 来源数量达标。
-   - 预测必须有达成标准。
+   - Possible Directions 必须具备事件锚点、observed signals、counterSignal 与共识状态。
    - 多语言字段完整性。
 5. 构建生成 `data/events.json`、`data/forecasts.json`、`data/sources.json`。
 6. Cloudflare Pages 自动部署。
@@ -143,18 +143,18 @@ functions/
 
 ---
 
-## 7. Future Signals 与投票
+## 7. Possible Directions 与 Reader Pulse
 
-Future Signals 的完整数据来源、采纳标准、达成裁定、投票和运营规则见 [FORECASTS-SPEC.md](/Users/gang/Documents/Project/WhereIsAIGoing/FORECASTS-SPEC.md)。
+Possible Directions 的完整数据来源、采纳标准、事件联动、读者交互和运营规则见 [FORECASTS-SPEC.md](FORECASTS-SPEC.md)。
 
 核心原则：
 
-- 模块对外命名为 `Future Signals / 未来信号`，不是 `Predictions`。
-- 每条方向必须有支持信号、反向信号、时间窗口和达成/未达成标准。
+- 首页模块对外命名为 `Possible Directions / 可能方向`，不是 `Predictions`；`Future Signals` 只保留在内部方法语境。
+- 每条方向必须有事件化信号、反向约束、时间窗口，以及 `monitor_only` 或 `consensus_gated` 的公开状态。
 - 用户投票命名为 `Reader Pulse / 读者预期`，只代表参与者预期，不作为事实证据。
 - 不登录的第一版使用 localStorage + D1 `voter_hash` + rate limit 做软防刷。
 - 同一用户对同一方向只有一个当前有效投票，但允许改投。
-- Future Signal 达成后应关联或生成时间轴事件，形成历史闭环。
+- 方向首先必须由时间轴事件支撑；只有未来出现外部共识基础时，才讨论是否进入公开裁定。
 
 第一版可以先保留低摩擦投票，但不要把投票排序、投票比例或读者意见包装成预测概率。
 
@@ -167,7 +167,7 @@ Future Signals 的完整数据来源、采纳标准、达成裁定、投票和�
 - 维护 v2 结构的 `data/events.json`、`data/forecasts.json` 和 `data/sources.json`。
 - 补齐所有空 URL 来源。
 - 给 Impact Score 增加 tooltip 或方法页解释。
-- 将 Future Signals 卡补上更完整的支持信号、反向信号和来源。
+- 将 Possible Directions 卡补上事件化信号、反向约束和来源链路。
 - 方法页公开 v2 简版规则。
 
 ### Phase 2：结构化内容生产
@@ -190,7 +190,8 @@ Future Signals 的完整数据来源、采纳标准、达成裁定、投票和�
 ### 品牌
 
 - 品牌名：EpochArc。
-- 首页主标题：`Where is AI Going?`
+- 首页主标题：`What Comes Next?`
+- 方向模块标题：`Possible Directions / 可能方向`
 - 语气：克制、清晰、信息优先，不刻意宏大。
 
 ### 颜色
@@ -214,7 +215,7 @@ Future Signals 的完整数据来源、采纳标准、达成裁定、投票和�
 ### 布局
 
 - 内容最大宽度：`960px`。
-- 首页直接进入 Future Signals 和时间轴，不做 landing page。
+- 首页直接进入 Possible Directions 和时间轴，不做 landing page。
 - 卡片圆角保持 8-12px，不使用过度胶囊化的大面积容器。
 - 时间轴要保持时间、轴线、圆点和右侧节点的几何对齐。
 - 详情内容在原节点内展开，不弹出独立大卡。
@@ -231,8 +232,8 @@ Future Signals 的完整数据来源、采纳标准、达成裁定、投票和�
 
 1. 补齐 L2/L3 事件的可点击来源 URL。
 2. 每个 L3 事件至少有 2 个独立来源。
-3. 每个 Future Signal 有达成标准和未达成标准。
-4. 方法页公开来源分级、评分规则和 Future Signal 裁定规则。
+3. 每个 Possible Direction 都有事件化信号和来源链路。
+4. 方法页公开来源分级、信号规则、`monitor_only` 逻辑和限制说明。
 5. 数据校验脚本能在部署前阻断明显错误。
 6. 投票如上线，必须有隐私说明和反刷策略。
 7. 配置生产域名、`sitemap.xml`、canonical / `og:url`。

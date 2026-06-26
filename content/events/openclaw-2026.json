@@ -19,7 +19,10 @@
     "en": "January 25, 2026",
     "zhHans": "2026年1月25日"
   },
-  "categories": ["product", "society"],
+  "categories": [
+    "product",
+    "society"
+  ],
   "status": "published",
   "significance": 1,
   "impactIndex": 7,
@@ -34,10 +37,18 @@
         "en": "Made personal AI agents accessible to anyone through open-source MIT license. 247K GitHub stars and rapid China adoption demonstrated the demand for autonomous AI tools. NVIDIA's NemoClaw extended it to enterprise. Showed that AI agents could be grassroots, not just corporate products.",
         "zhHans": "通过 MIT 开源许可使任何人都可以使用个人 AI 智能体。24.7 万 GitHub Star 和中国的快速采纳证明了自主 AI 工具的需求。NVIDIA 的 NemoClaw 将其扩展到企业领域。证明了 AI 智能体可以是草根的，而不仅仅是公司产品。"
       },
-      "affectedGroups": ["developers", "consumers", "enterprises", "Chinese users"],
+      "affectedGroups": [
+        "developers",
+        "consumers",
+        "enterprises",
+        "Chinese users"
+      ],
       "timeframe": "medium",
       "evidenceGrade": "A",
-      "sourceIds": ["wikipedia-openclaw", "techcrunch-openclaw-joins-openai"]
+      "sourceIds": [
+        "wikipedia-openclaw",
+        "techcrunch-openclaw-joins-openai"
+      ]
     },
     {
       "dimension": "risk_creation",
@@ -47,10 +58,17 @@
         "en": "Meta alignment director's email deletion incident highlighted the risks of autonomous agents with unrestricted access. Security researchers compared it to 'giving full access to your computer to a guy you met at a bar.' Triggered industry-wide debate on AI agent safety and permission models.",
         "zhHans": "Meta 对齐总监的邮件删除事件突显了具有无限制访问权限的自主智能体的风险。安全研究人员将其比作\"把电脑完全访问权交给一个你在酒吧认识的人\"。引发了全行业关于 AI 智能体安全和权限模型的辩论。"
       },
-      "affectedGroups": ["AI companies", "security researchers", "consumers", "regulators"],
+      "affectedGroups": [
+        "AI companies",
+        "security researchers",
+        "consumers",
+        "regulators"
+      ],
       "timeframe": "short",
       "evidenceGrade": "A",
-      "sourceIds": ["bi-meta-openclaw-email"]
+      "sourceIds": [
+        "bi-meta-openclaw-email"
+      ]
     },
     {
       "dimension": "paradigm_shift",
@@ -60,10 +78,17 @@
         "en": "Changed perception of AI agents from corporate products to grassroots tools. China's 'raising the lobster' meme became a cultural phenomenon. NVIDIA's Jensen Huang called OpenClaw 'the operating system for personal AI.' Led to creator being hired by OpenAI to build the next generation of agents.",
         "zhHans": "将 AI 智能体的认知从公司产品转变为草根工具。中国的\"养龙虾\"梗成为文化现象。NVIDIA 的 Jensen Huang 称 OpenClaw 为\"个人 AI 的操作系统\"。导致创建者被 OpenAI 聘用以构建下一代智能体。"
       },
-      "affectedGroups": ["general public", "AI industry", "Chinese internet users"],
+      "affectedGroups": [
+        "general public",
+        "AI industry",
+        "Chinese internet users"
+      ],
       "timeframe": "medium",
       "evidenceGrade": "B",
-      "sourceIds": ["nvidia-nemoclaw-announcement", "bi-openclaw-china-robots"]
+      "sourceIds": [
+        "nvidia-nemoclaw-announcement",
+        "bi-openclaw-china-robots"
+      ]
     }
   ],
   "claims": [
@@ -75,7 +100,9 @@
       },
       "claimType": "fact",
       "evidenceGrade": "A",
-      "sourceIds": ["wikipedia-openclaw"]
+      "sourceIds": [
+        "wikipedia-openclaw"
+      ]
     },
     {
       "id": "openclaw-safety-incident",
@@ -85,17 +112,45 @@
       },
       "claimType": "fact",
       "evidenceGrade": "A",
-      "sourceIds": ["bi-meta-openclaw-email"]
+      "sourceIds": [
+        "bi-meta-openclaw-email"
+      ]
     }
   ],
   "sources": [
-    { "sourceId": "wikipedia-openclaw", "supports": ["openclaw-launch-viral"], "quote": "OpenClaw — open-source AI agent framework, 247,000 stars and 47,700 forks on GitHub as of March 2, 2026." },
-    { "sourceId": "techcrunch-openclaw-joins-openai", "supports": [], "quote": "OpenClaw creator Peter Steinberger joins OpenAI." },
-    { "sourceId": "bi-meta-openclaw-email", "supports": ["openclaw-safety-incident"], "quote": "Meta alignment director Summer Yue hooked OpenClaw up to her inbox. Then, the bot tried to delete her emails." },
-    { "sourceId": "nvidia-nemoclaw-announcement", "supports": [], "quote": "NVIDIA announces NemoClaw for the OpenClaw Community." },
-    { "sourceId": "bi-openclaw-china-robots", "supports": [], "quote": "China is putting OpenClaw into robots while the US debates the dangers of rogue AI." }
+    {
+      "sourceId": "wikipedia-openclaw",
+      "supports": [
+        "openclaw-launch-viral"
+      ],
+      "quote": "OpenClaw — open-source AI agent framework, 247,000 stars and 47,700 forks on GitHub as of March 2, 2026."
+    },
+    {
+      "sourceId": "techcrunch-openclaw-joins-openai",
+      "supports": [],
+      "quote": "OpenClaw creator Peter Steinberger joins OpenAI."
+    },
+    {
+      "sourceId": "bi-meta-openclaw-email",
+      "supports": [
+        "openclaw-safety-incident"
+      ],
+      "quote": "Meta alignment director Summer Yue hooked OpenClaw up to her inbox. Then, the bot tried to delete her emails."
+    },
+    {
+      "sourceId": "nvidia-nemoclaw-announcement",
+      "supports": [],
+      "quote": "NVIDIA announces NemoClaw for the OpenClaw Community."
+    },
+    {
+      "sourceId": "bi-openclaw-china-robots",
+      "supports": [],
+      "quote": "China is putting OpenClaw into robots while the US debates the dangers of rogue AI."
+    }
   ],
-  "relatedEvents": [],
+  "relatedEvents": [
+    "mcp-protocol-2024"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
@@ -104,7 +159,11 @@
     "publishedAt": "2026-06-24",
     "curator": "gang",
     "changeLog": [
-      { "date": "2026-06-24", "changeType": "created", "summary": "Added OpenClaw — fastest-growing dev tool in history, personal AI agent phenomenon." }
+      {
+        "date": "2026-06-24",
+        "changeType": "created",
+        "summary": "Added OpenClaw — fastest-growing dev tool in history, personal AI agent phenomenon."
+      }
     ]
   }
 }

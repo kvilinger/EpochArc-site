@@ -4,8 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Methodology & Sources · EpochArc</title>
-  <meta name="description" content="Methodology for EpochArc: how the site separates AI milestones, evidence, impact assessments, future signals, and source standards." />
+  <meta name="description" content="Methodology for EpochArc: how the site curates AI milestones, evidence, impact assessments, possible directions, and source standards." />
   <meta name="theme-color" content="#f7f8fb" />
+  <link rel="canonical" href="https://epoch-arc.com/methods.html" />
+  <meta property="og:title" content="Methodology & Sources · EpochArc" />
+  <meta property="og:description" content="Methodology for EpochArc: how the site curates AI milestones, evidence, impact assessments, possible directions, and source standards." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://epoch-arc.com/methods.html" />
+  <meta property="og:site_name" content="EpochArc" />
+  <meta property="og:image" content="https://epoch-arc.com/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Methodology & Sources · EpochArc" />
+  <meta name="twitter:description" content="Methodology for EpochArc: how the site curates AI milestones, evidence, impact assessments, possible directions, and source standards." />
+  <meta name="twitter:image" content="https://epoch-arc.com/og-image.svg" />
   <link rel="manifest" href="/site.webmanifest" />
   <style>
     :root {
@@ -22,7 +33,7 @@
       --font-mono: "JetBrains Mono", "IBM Plex Mono", Menlo, monospace;
       --radius: 8px;
       --radius-lg: 12px;
-      --container: 900px;
+      --container: 960px;
     }
 
     [data-theme="dark"] {
@@ -170,7 +181,6 @@
       margin-bottom: 12px;
     }
     .lead {
-      max-width: 60ch;
       color: var(--muted);
       font-size: 18px;
     }
@@ -274,101 +284,97 @@
   <main class="container">
     <section class="hero">
       <h1 data-zh="方法与来源" data-en="Methodology & Sources">Methodology & Sources</h1>
-      <p class="lead" data-zh="EpochArc 将 AI 发展拆成事实、来源证据、影响评估和未来信号。这里说明本站如何收录内容、评估重要度、处理争议，并裁定未来方向是否达成。" data-en="EpochArc separates AI history into facts, sources, impact assessments, and future signals. This page explains how entries are selected, scored, challenged, and resolved over time.">
-        EpochArc separates AI history into facts, sources, impact assessments, and future signals. This page explains how entries are selected, scored, challenged, and resolved over time.
+      <p class="lead" data-zh="EpochArc 将人工智能发展史中的重大事件整理为可复核的事实、来源证据、影响评估与可能方向。本页面说明本站的收录准则、重要度评级模型、争议共识处理方式，以及 Possible Directions 的公开监测规则。" data-en="EpochArc structures the history of artificial intelligence into verifiable facts, source evidence, impact assessments, and possible directions. This page explains our editorial criteria, significance model, controversy handling, and the public monitoring rules behind Possible Directions.">
+        EpochArc structures the history of artificial intelligence into verifiable facts, source evidence, impact assessments, and possible directions. This page explains our editorial criteria, significance model, controversy handling, and the public monitoring rules behind Possible Directions.
       </p>
       <div class="meta-row">
-        <span data-zh="更新日期 2026-06-24" data-en="Updated 2026-06-24">Updated 2026-06-24</span>
-        <a href="DATA-MODEL.md" class="code-link">DATA-MODEL.md</a>
-        <a href="data/events.json" class="code-link">data/events.json</a>
-        <a href="data/forecasts.json" class="code-link">data/forecasts.json</a>
+        <span data-zh="更新日期 2026-06-25" data-en="Updated 2026-06-25">Updated 2026-06-25</span>
       </div>
     </section>
 
     <div class="grid">
       <section class="panel">
-        <h2 data-zh="编辑原则" data-en="Editorial scope">Editorial scope</h2>
-        <p data-zh="本站不是论文数据库，也不是实时新闻流。每个正式节点都需要回答三件事：发生了什么、证据在哪里、为什么它改变了 AI 的长期脉络。" data-en="EpochArc is not a paper database or a real-time news feed. Each published milestone must answer three questions: what happened, where the evidence is, and why it changed the long arc of AI.">
-          EpochArc is not a paper database or a real-time news feed. Each published milestone must answer three questions: what happened, where the evidence is, and why it changed the long arc of AI.
+        <h2 data-zh="收录范围与原则" data-en="Editorial Scope & Curation Principles">Editorial Scope & Curation Principles</h2>
+        <p data-zh="EpochArc 既非学术文献库，亦非实时新闻流。收录的每一个历史里程碑节点均须明确回答三个核心问题：具体事实为何、来源证据链是否完备、以及该事件如何在长期维度上重塑了人工智能的发展脉络。" data-en="EpochArc is neither an academic bibliography database nor a real-time news feed. Each curated milestone must rigorously substantiate three dimensions: the verifiable event details, the completeness of the primary evidence chain, and the mechanism by which it reshapes the long-term trajectory of AI development.">
+          EpochArc is neither an academic bibliography database nor a real-time news feed. Each curated milestone must rigorously substantiate three dimensions: the verifiable event details, the completeness of the primary evidence chain, and the mechanism by which it reshapes the long-term trajectory of AI development.
         </p>
-        <p data-zh="历史事件、影响评估和未来信号会被分开处理。事实可以被验证；影响评估是基于证据的判断；未来信号必须写明未来如何裁定。" data-en="Historical events, impact assessments, and future signals are handled separately. Facts must be verifiable, assessments must be evidence-linked, and future signals must define how they will be judged later.">
-          Historical events, impact assessments, and future signals are handled separately. Facts must be verifiable, assessments must be evidence-linked, and future signals must define how they will be judged later.
+        <p data-zh="历史事件、影响评估与 Possible Directions 采用差异化流程处理。历史事实须可客观复核；影响评估是基于事实与佐证的综合判断；Possible Directions 则必须建立在已发布事件、已观察信号与外部共识检索之上。" data-en="Historical events, impact assessments, and Possible Directions follow distinct methods. Empirical facts must be independently verifiable; impact assessments are synthesis judgments anchored in source evidence; and Possible Directions must be built on published events, observed signals, and an external-consensus search.">
+          Historical events, impact assessments, and Possible Directions follow distinct methods. Empirical facts must be independently verifiable; impact assessments are synthesis judgments anchored in source evidence; and Possible Directions must be built on published events, observed signals, and an external-consensus search.
         </p>
       </section>
 
       <section class="panel">
-        <h2 data-zh="分级与筛选" data-en="Significance levels">Significance levels</h2>
+        <h2 data-zh="重要度分级与评定标准" data-en="Significance Levels & Curation Criteria">Significance Levels & Curation Criteria</h2>
         <div class="definition-list">
           <div class="definition">
             <strong>L1</strong>
-            <span data-zh="重要节点：对长期脉络有帮助，但不一定单独改变行业走向。" data-en="Important record: useful for long-term context, but not necessarily a turning point on its own.">Important record: useful for long-term context, but not necessarily a turning point on its own.</span>
+            <span data-zh="重要记录：具有长期脉络参考价值的记录点，但不一定独立决定行业演进走向。" data-en="Important Record: Entries providing essential long-term context without necessarily shifting the industry trajectory independently.">Important Record: Entries providing essential long-term context without necessarily shifting the industry trajectory independently.</span>
           </div>
           <div class="definition">
             <strong>L2</strong>
-            <span data-zh="关键节点：对研究范式、产品化或产业结构产生了明确推动。" data-en="Key event: clearly pushed research paradigms, product adoption, or industry structure.">Key event: clearly pushed research paradigms, product adoption, or industry structure.</span>
+            <span data-zh="关键里程碑：在科学研究范式、突破性产品商业化落地或产业格局重塑方面产生明确且显著的推动作用。" data-en="Key Milestone: Events demonstrating a demonstrable and significant impact on scientific research paradigms, product adoption, or market structure.">Key Milestone: Events demonstrating a demonstrable and significant impact on scientific research paradigms, product adoption, or market structure.</span>
           </div>
           <div class="definition">
             <strong>L3</strong>
-            <span data-zh="转折点：改变公众认知、资本配置或技术主路线的节点。" data-en="Turning point: changed public perception, capital allocation, or the mainstream technical trajectory.">Turning point: changed public perception, capital allocation, or the mainstream technical trajectory.</span>
+            <span data-zh="历史转折点：从根本上重塑公众认知、引导大规模资本重新配置，或彻底扭转主流技术路线的标志性事件。" data-en="Turning Point: Landmark events that fundamentally alter public consensus, steer macro-scale capital allocation, or pivot the mainstream technical trajectory.">Turning Point: Landmark events that fundamentally alter public consensus, steer macro-scale capital allocation, or pivot the mainstream technical trajectory.</span>
           </div>
         </div>
-        <p data-zh="L3 会被严格控制数量。新事件如果只有热度，默认不会直接标为转折点，除非影响已经跨出研究圈并被独立来源确认。" data-en="L3 is intentionally rare. A new event is not treated as a turning point just because it is loud; it needs evidence of durable impact beyond a narrow technical audience.">
-          L3 is intentionally rare. A new event is not treated as a turning point just because it is loud; it needs evidence of durable impact beyond a narrow technical audience.
+        <p data-zh="本站对 L3（历史转折点）的数量进行极其严格的准入控制。新近发生的事件即使具有极高舆论热度，在默认情况下亦不会被直接评定为转折点，除非其深远影响已溢出研究领域，且获得多方独立、权威来源的交叉印证。" data-en="L3 designations are subject to stringent gatekeeping to maintain historical proportionality. High-profile contemporary events will not be classified as turning points solely due to media prominence; they require evidence of structural spillover beyond specialized domains, cross-verified by independent and authoritative sources.">
+          L3 designations are subject to stringent gatekeeping to maintain historical proportionality. High-profile contemporary events will not be classified as turning points solely due to media prominence; they require evidence of structural spillover beyond specialized domains, cross-verified by independent and authoritative sources.
         </p>
       </section>
 
       <section class="panel">
-        <h2 data-zh="来源标准" data-en="Source standards">Source standards</h2>
+        <h2 data-zh="来源分级与证据标准" data-en="Source Hierarchy & Evidence Standards">Source Hierarchy & Evidence Standards</h2>
         <div class="definition-list">
           <div class="definition">
-            <strong data-zh="Tier 1 · 原始来源" data-en="Tier 1 · Primary sources">Tier 1 · Primary sources</strong>
-            <span data-zh="论文、官方公告、模型卡、代码仓库、法规原文、法院文件和技术报告。" data-en="Papers, official announcements, model cards, repositories, laws, court filings, and technical reports.">Papers, official announcements, model cards, repositories, laws, court filings, and technical reports.</span>
+            <strong data-zh="Tier 1 · 一手原始凭证" data-en="Tier 1 · Primary Sources & Direct Evidence">Tier 1 · Primary Sources & Direct Evidence</strong>
+            <span data-zh="学术文献、官方发布公告、官方模型说明卡（Model Cards）、开源代码仓库、法律法规原文、司法法院裁决书及官方发布的技术报告。" data-en="Peer-reviewed literature, official corporate/institutional announcements, model cards, public source code repositories, statutory legal texts, judicial filings, and official technical specifications.">Peer-reviewed literature, official corporate/institutional announcements, model cards, public source code repositories, statutory legal texts, judicial filings, and official technical specifications.</span>
           </div>
           <div class="definition">
-            <strong data-zh="Tier 2 · 独立确认" data-en="Tier 2 · Independent confirmation">Tier 2 · Independent confirmation</strong>
-            <span data-zh="可靠媒体、机构报告、学术综述和监管解读，用于确认影响和外部采用。" data-en="Reliable reporting, institutional reports, academic reviews, and regulatory analysis used to confirm impact and adoption.">Reliable reporting, institutional reports, academic reviews, and regulatory analysis used to confirm impact and adoption.</span>
+            <strong data-zh="Tier 2 · 独立第三方评定" data-en="Tier 2 · Independent Third-Party Verification">Tier 2 · Independent Third-Party Verification</strong>
+            <span data-zh="具公信力的主流媒体深度报道、权威行业分析机构报告、同行评审的学术综述，以及专业监管政策解读，用于确证行业影响及广泛采用情况。" data-en="High-credibility journalism, authoritative institutional reports, peer-reviewed academic literature reviews, and professional policy analyses used to validate macro-level impacts and real-world adoption.">High-credibility journalism, authoritative institutional reports, peer-reviewed academic literature reviews, and professional policy analyses used to validate macro-level impacts and real-world adoption.</span>
           </div>
           <div class="definition">
-            <strong data-zh="Tier 3-4 · 分析与发现信号" data-en="Tier 3-4 · Analysis and discovery signals">Tier 3-4 · Analysis and discovery signals</strong>
-            <span data-zh="专家博客、专业通讯、HN、Reddit 和社交讨论可以帮助发现候选，但不能单独支撑正式结论。" data-en="Expert blogs, newsletters, HN, Reddit, and social discussion can surface candidates, but they cannot independently support a published conclusion.">Expert blogs, newsletters, HN, Reddit, and social discussion can surface candidates, but they cannot independently support a published conclusion.</span>
+            <strong data-zh="Tier 3-4 · 分析研判与线索检索" data-en="Tier 3-4 · Intelligence Discovery & Interpretive Signals">Tier 3-4 · Intelligence Discovery & Interpretive Signals</strong>
+            <span data-zh="行业专家独立博客、专业电子周报、Hacker News、Reddit 及主流社交媒体讨论。此类信号仅用于检索候选事件，不得作为支撑本站正式收录或重要度评级的独立证据。" data-en="Expert commentaries, specialized newsletters, community aggregates (e.g., Hacker News, Reddit), and social media discussions. These channels are utilized solely for event discovery and pipeline sourcing, and are insufficient on their own to substantiate formal inclusion or rating.">Expert commentaries, specialized newsletters, community aggregates (e.g., Hacker News, Reddit), and social media discussions. These channels are utilized solely for event discovery and pipeline sourcing, and are insufficient on their own to substantiate formal inclusion or rating.</span>
           </div>
         </div>
       </section>
 
       <section class="panel">
-        <h2 data-zh="评分与共识" data-en="Scores and consensus">Scores and consensus</h2>
-        <p data-zh="Impact Score 是 0-10 的展示分，用来综合重要度、影响维度、证据等级和持续性。它不是数学真理，也不会替代来源证据。" data-en="Impact Score is a 0-10 display score combining significance, affected dimensions, evidence grade, and durability. It is not a claim of mathematical certainty and does not replace source evidence.">
-          Impact Score is a 0-10 display score combining significance, affected dimensions, evidence grade, and durability. It is not a claim of mathematical certainty and does not replace source evidence.
+        <h2 data-zh="影响指数评分与共识分类" data-en="Impact Scoring & Consensus Taxonomy">Impact Scoring & Consensus Taxonomy</h2>
+        <p data-zh="影响指数（Impact Score）是一套量化展示指标，用以综合权衡事件的重要度级别、影响维度严重性、佐证链的证据强度以及影响的持续性。该指标并非绝对的数学定理，绝不可凌驾或替代底层一手来源的真实证据。" data-en="The Impact Score (scaled 0-10) is a composite quantitative index designed to synthesize significance level, multi-dimensional severity, evidentiary strength, and temporal durability. It is a heuristic display score rather than an absolute mathematical axiom, and does not supersede direct empirical evidence.">
+          The Impact Score (scaled 0-10) is a composite quantitative index designed to synthesize significance level, multi-dimensional severity, evidentiary strength, and temporal durability. It is a heuristic display score rather than an absolute mathematical axiom, and does not supersede direct empirical evidence.
         </p>
-        <p data-zh="共识分为 broad、debated 和 emerging。争议不是扣分项，而是提醒读者：事实、意义、归因或长期后果仍有不同解释。" data-en="Consensus is labeled as broad, debated, or emerging. Controversy is not hidden; it tells readers where the fact, meaning, attribution, or long-term consequences remain contested.">
-          Consensus is labeled as broad, debated, or emerging. Controversy is not hidden; it tells readers where the fact, meaning, attribution, or long-term consequences remain contested.
-        </p>
-      </section>
-
-      <section class="panel">
-        <h2 data-zh="未来信号裁定" data-en="Future Signals resolution">Future Signals resolution</h2>
-        <p data-zh="未来信号必须给出时间窗口、支持信号、反向信号、达成标准和未达成标准。只出现一次封闭演示、单一 benchmark 高分或不可复核传闻，不应算作达成。" data-en="Future Signals must include a time window, supporting signals, counter-signals, achieved criteria, and not-achieved criteria. A closed demo, a single benchmark result, or an unverifiable rumor should not count as resolution.">
-          Future Signals must include a time window, supporting signals, counter-signals, achieved criteria, and not-achieved criteria. A closed demo, a single benchmark result, or an unverifiable rumor should not count as resolution.
-        </p>
-        <p data-zh="读者投票只代表读者预期，不会改变历史事件评分，也不会作为事实证据。" data-en="Reader votes represent audience expectations only. They do not change historical scores and are not treated as evidence.">
-          Reader votes represent audience expectations only. They do not change historical scores and are not treated as evidence.
+        <p data-zh="事件共识度分为“广泛共识（Broad）”、“存在争议（Debated）”及“新兴研判（Emerging）”。标注争议并非对事件价值的扣减，而是旨在客观提示读者：该事件的事实本身、历史定位、归因逻辑或中长期外部后果在业内仍存在不同的理性阐释。" data-en="Consensus classification is categorized into Broad, Debated, or Emerging. A 'Debated' label does not imply a negative rating; rather, it alerts readers that the empirical facts, historical significance, causal attribution, or long-term implications remain open to competing interpretations.">
+          Consensus classification is categorized into Broad, Debated, or Emerging. A 'Debated' label does not imply a negative rating; rather, it alerts readers that the empirical facts, historical significance, causal attribution, or long-term implications remain open to competing interpretations.
         </p>
       </section>
 
       <section class="panel">
-        <h2 data-zh="开放数据与限制" data-en="Open data and limitations">Open data and limitations</h2>
-        <p data-zh="主时间轴、未来信号卡和来源索引保留为公开 JSON，便于审阅、引用和迁移到未来的 CMS 或数据库。正式发布前，来源 URL、归档链接和裁定字段仍需要继续补齐。" data-en="The main timeline, future signal cards, and source index remain available as public JSON for review, citation, and future migration to a CMS or database. Before wider launch, source URLs, archive links, and resolution fields should be completed.">
-          The main timeline, future signal cards, and source index remain available as public JSON for review, citation, and future migration to a CMS or database. Before wider launch, source URLs, archive links, and resolution fields should be completed.
+        <h2 data-zh="可能方向与公开裁定" data-en="Possible Directions & Public Resolution">Possible Directions & Public Resolution</h2>
+        <p data-zh="首页的 Possible Directions 不是本站对未来的判决，而是由已发布时间轴事件支撑的观察方向。每条方向都必须回指到真实发生的事件与来源，展示“哪些现实信号已经出现”，而不是由本站自行发明完成清单。" data-en="Possible Directions are not in-house verdicts about the future. They are observation tracks built from published timeline events, and every public direction must point back to real events and sources. The module shows which signals have already appeared in the world; it does not invent a private completion checklist.">
+          Possible Directions are not in-house verdicts about the future. They are observation tracks built from published timeline events, and every public direction must point back to real events and sources. The module shows which signals have already appeared in the world; it does not invent a private completion checklist.
         </p>
-        <p data-zh="本站是结构化策展项目，不是学术数据库、投资建议或监管结论。内容会随来源和证据变化继续修订。" data-en="EpochArc is a structured curation project, not an academic database, investment advice, or a regulatory conclusion. Entries may be revised as evidence improves.">
-          EpochArc is a structured curation project, not an academic database, investment advice, or a regulatory conclusion. Entries may be revised as evidence improves.
+        <p data-zh="除非存在公开的外部共识基础——例如监管标准、行业广泛采用的评测口径，或多个独立来源对“什么算落地”已有近似一致表述——本站不会公开定义某条方向“何时算实现”。在缺少这类共识时，方向保持 monitor only：持续观察、补充证据、记录限制，但不做二元裁定。" data-en="EpochArc does not publicly define when a direction is 'achieved' unless there is an external consensus basis, such as a regulatory standard, a broadly used evaluation norm, or a stable cross-source industry definition of what counts as real deployment. In the absence of that basis, the direction remains monitor only: we keep tracking signals, evidence, and constraints without issuing a binary resolution.">
+          EpochArc does not publicly define when a direction is "achieved" unless there is an external consensus basis, such as a regulatory standard, a broadly used evaluation norm, or a stable cross-source industry definition of what counts as real deployment. In the absence of that basis, the direction remains monitor only: we keep tracking signals, evidence, and constraints without issuing a binary resolution.
+        </p>
+        <p data-zh="本站收集的读者选择或投票只反映参与者当下更想追踪什么方向，不会更改任何历史事件的客观评分，也不会被当作趋势已经成立的证据。" data-en="Reader selections reflect what people want to keep watching; they do not change historical scoring and are never treated as evidence that a direction has already come true.">
+          Reader selections reflect what people want to keep watching; they do not change historical scoring and are never treated as evidence that a direction has already come true.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2 data-zh="数据开放性与局限性声明" data-en="Data Openness & Scope Limitations">Data Openness & Scope Limitations</h2>
+        <p data-zh="本站的核心时间轴数据、Possible Directions 卡片及来源索引始终以 JSON 形式向公众开放，便于公开审阅、引用，以及向其他 CMS 或数据库结构迁移。在正式公开发布前，部分来源 URL、历史归档链接与抓取时间仍将持续补充和审计。" data-en="To ensure transparency, our curated core timeline database, Possible Directions cards, and source bibliography index remain publicly available as JSON. This supports open review, citation, and migration to other CMS or database schemas. Before full release, source URLs, archive links, and capture metadata will continue to be expanded and audited.">
+          To ensure transparency, our curated core timeline database, Possible Directions cards, and source bibliography index remain publicly available as JSON. This supports open review, citation, and migration to other CMS or database schemas. Before full release, source URLs, archive links, and capture metadata will continue to be expanded and audited.
+        </p>
+        <p data-zh="本网站系出于结构化策展目的设立的独立项目，不应被视为权威的学术引文数据库、投资建议参考，或主权性质的监管合规结论。所有条目内容及评分均将根据最新的权威事实证据和一手来源变动进行动态修订。" data-en="EpochArc is a structures-based curation initiative; it does not constitute an exhaustive academic reference library, investment advice, or formal regulatory findings. All entries are subject to continuous refinement and revision as new empirical evidence or Direct Evidence emerges.">
+          EpochArc is a structures-based curation initiative; it does not constitute an exhaustive academic reference library, investment advice, or formal regulatory findings. All entries are subject to continuous refinement and revision as new empirical evidence or Direct Evidence emerges.
         </p>
         <ul>
-          <li><a href="DATA-MODEL.md">DATA-MODEL.md</a></li>
-          <li><a href="data/events.json">data/events.json</a></li>
-          <li><a href="data/forecasts.json">data/forecasts.json</a></li>
-          <li><a href="data/sources.json">data/sources.json</a></li>
-          <li><a href="LAUNCH-CHECKLIST.md">LAUNCH-CHECKLIST.md</a></li>
+          <li><a href="docs/LAUNCH-CHECKLIST.md">LAUNCH-CHECKLIST.md</a></li>
         </ul>
       </section>
     </div>
@@ -391,7 +397,7 @@
     const themeIcon = document.getElementById('themeIcon');
 
     function normalizeLang(lang) {
-      return lang === 'zh' || lang === 'zh-CN' || lang === 'zh-Hant' ? 'zh-Hans' : 'en';
+      return lang === 'zh' || lang === 'zh-CN' || lang === 'zh-Hant' || lang === 'zh-Hans' ? 'zh-Hans' : 'en';
     }
 
     function isChinese() {
@@ -399,12 +405,26 @@
     }
 
     function updateLocale() {
-      document.documentElement.lang = isChinese() ? 'zh-Hans' : 'en';
+      const isZh = isChinese();
+      document.documentElement.lang = isZh ? 'zh-Hans' : 'en';
       langSelect.value = state.lang;
+      
+      // 动态更新页面 Title
+      document.title = isZh ? '方法与来源 · EpochArc' : 'Methodology & Sources · EpochArc';
+      
+      // 动态更新 Meta Description
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', isZh 
+          ? 'EpochArc 方法页：如何科学地对 AI 里程碑进行结构化收录、重要度评级、争议共识处理以及 Possible Directions 公开监测。' 
+          : 'Methodology for EpochArc: how the site curates AI milestones, source evidence, impact assessments, and Possible Directions.'
+        );
+      }
+
       document.querySelectorAll('[data-zh]').forEach((el) => {
-        el.innerText = isChinese() ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+        el.innerText = isZh ? el.getAttribute('data-zh') : el.getAttribute('data-en');
       });
-      themeText.innerText = isChinese()
+      themeText.innerText = isZh
         ? (state.theme === 'light' ? '深色模式' : '浅色模式')
         : (state.theme === 'light' ? 'Dark Mode' : 'Light Mode');
     }

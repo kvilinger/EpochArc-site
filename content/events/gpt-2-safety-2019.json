@@ -1,0 +1,99 @@
+{
+  "id": "gpt-2-safety-2019",
+  "slug": "gpt-2-staged-release",
+  "title": {
+    "en": "OpenAI says GPT-2 is 'too dangerous to release' — the first mainstream AI safety debate goes global",
+    "zhHans": "OpenAI 称 GPT-2\"危险不宜发布\"——首场主流 AI 安全辩论席卷全球"
+  },
+  "summary": {
+    "en": "On February 14, 2019, OpenAI announced GPT-2, a language model capable of generating remarkably coherent text. But instead of releasing it fully, OpenAI withheld the complete model, citing 'concerns about malicious applications.' The decision sparked an intense global debate: was OpenAI responsibly cautious or grandstanding for attention? The staged rollout — releasing progressively larger versions over months — became a template for AI safety disclosure. It also marked the first time ordinary people heard the argument that AI could be too dangerous to release, permanently changing how the public thought about AI risk.",
+    "zhHans": "2019 年 2 月 14 日，OpenAI 发布了 GPT-2，一个能够生成极其连贯文本的语言模型。但 OpenAI 没有完全发布它，而是以\"对恶意应用的担忧\"为由扣留了完整模型。这一决定引发了一场激烈的全球辩论：OpenAI 是谨慎负责还是在吸引眼球？分阶段发布——在数月内逐步发布越来越大的版本——成了 AI 安全披露的模板。这也标志着普通人第一次听到\"AI 可能危险到不宜发布\"的论点，永久改变了公众对 AI 风险的看法。"
+  },
+  "narrative": {
+    "en": "GPT-2 was a significant leap forward in text generation. With 1.5 billion parameters, it could write news articles, stories, and dialogue that were difficult to distinguish from human writing. OpenAI's blog post included samples — including the famous 'unicorn story' — that went viral. But the headline was the refusal to release the full model. OpenAI's decision was controversial within the AI community. Critics argued that the staged release was a publicity stunt — GPT-2 was impressive but not revolutionary, and withholding the model was overblown. Supporters countered that the paper had already demonstrated the model's ability to generate convincing fake news, spam, and impersonations, and that responsible disclosure was essential. The debate itself became the story, generating front-page coverage in major newspapers. The staged release unfolded over nine months: February 2019 (small 124M model), May 2019 (medium 355M), August 2019 (large 774M), and finally November 2019 (full 1.5B model). By the time the full model was released, no catastrophic misuse had occurred — but the precedent was set. OpenAI had established the 'staged disclosure' model that would later be used for GPT-4 and other advanced models. More importantly, the GPT-2 debate moved AI safety from an academic concern to a dinner-table topic. It made the general public aware that AI development involved decisions about what to build and what to hold back.",
+    "zhHans": "GPT-2 在文本生成方面是一次重大飞跃。拥有 15 亿参数，它可以写出难以与人类写作区分开的新闻文章、故事和对话。OpenAI 的博客文章包含了示例——包括著名的\"独角兽故事\"——迅速走红。但头条新闻是拒绝发布完整模型。OpenAI 的决定在 AI 社区内引发了争议。批评者认为分阶段发布是一种公关噱头——GPT-2 令人印象深刻但并非革命性，扣留模型是小题大做。支持者反驳说论文已经展示了模型生成令人信服的假新闻、垃圾邮件和冒充的能力，负责任的披露至关重要。辩论本身成了故事，登上了主要报纸的头版。分阶段发布历时九个月：2019 年 2 月（小号 1.24 亿参数）、2019 年 5 月（中号 3.55 亿）、2019 年 8 月（大号 7.74 亿）、最终 2019 年 11 月（完整 15 亿模型）。到完整模型发布时，没有发生灾难性的滥用——但先例已经确立。OpenAI 建立了后来用于 GPT-4 和其他高级模型的\"分阶段披露\"模式。更重要的是，GPT-2 的辩论将 AI 安全从一个学术关注变成了餐桌话题。它让普通公众意识到 AI 发展涉及关于构建什么和保留什么的决策。"
+  },
+  "date": "2019-02-14",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "February 14, 2019",
+    "zhHans": "2019年2月14日"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "broad",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Established the staged disclosure model for advanced AI models. First time the 'too dangerous to release' debate reached mainstream audiences. Shifted public perception of AI from purely exciting to potentially risky.",
+        "zhHans": "确立了高级 AI 模型的分阶段披露模式。首次将\"危险不宜发布\"的辩论带入主流视野。将公众对 AI 的认知从纯粹令人兴奋转变为潜在风险。"
+      },
+      "affectedGroups": [
+        "general public",
+        "AI companies",
+        "policymakers",
+        "researchers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "slate-gpt2-safety-2019"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gpt2-withheld-2019",
+      "text": {
+        "en": "OpenAI announced GPT-2 on February 14, 2019, but withheld the full model due to safety concerns, releasing progressively larger versions over 9 months.",
+        "zhHans": "OpenAI 于 2019 年 2 月 14 日发布了 GPT-2，但出于安全担忧扣留了完整模型，在 9 个月内逐步发布越来越大版本。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "slate-gpt2-safety-2019"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "slate-gpt2-safety-2019",
+      "supports": [
+        "gpt2-withheld-2019"
+      ],
+      "quote": "OpenAI says its text-generating algorithm GPT-2 is too dangerous to release."
+    },
+    {
+      "sourceId": "wikipedia-gpt2",
+      "supports": [],
+      "quote": "GPT-2 was announced in February 2019."
+    }
+  ],
+  "relatedEvents": [
+    "gpt3-2020",
+    "gpt4-2023"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-06-25",
+    "updatedAt": "2026-06-25",
+    "reviewedAt": "2026-06-25",
+    "publishedAt": "2026-06-25",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-25",
+        "changeType": "created",
+        "summary": "Added GPT-2 staged release — first mainstream AI safety debate, staged disclosure model."
+      }
+    ]
+  }
+}
