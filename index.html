@@ -3046,12 +3046,7 @@
     /* ─── Future Signals Selection Logic ────────────────────────────── */
     function renderPredictions() {
       if (state.dataStatus === 'loading') {
-        elements.predictionsContainer.classList.remove('compact-mode');
-        renderStatus(
-          elements.predictionsContainer,
-          text('loadingPredictions'),
-          text('loadingPredictionsBody')
-        );
+        elements.predictionsContainer.innerHTML = '';
         return;
       }
 
