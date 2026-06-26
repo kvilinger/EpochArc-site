@@ -2369,7 +2369,7 @@
     function localizedText(entry) {
       if (!entry) return '';
       if (typeof entry === 'string') return entry;
-      return entry[state.lang] || entry[contentLang()] || entry.zhHans || entry.zhHant || entry.zh || entry.en || '';
+      return entry[state.lang] || entry[state.lang.replace('-', '')] || entry[contentLang()] || entry.zhHans || entry.zhHant || entry.zh || entry.en || '';
     }
 
     function labelFor(entry) {
@@ -2703,6 +2703,50 @@
       document.documentElement.lang = LANGUAGES[state.lang]?.html || 'en';
       if (elements.langSelect) {
         elements.langSelect.value = state.lang;
+      }
+      
+      // Update page title
+      const isZh = isChineseContent();
+      document.title = isZh
+        ? 'EpochArc · AI 里程碑、证据与可能方向'
+        : 'EpochArc · AI Milestones, Evidence, and Possible Directions';
+      
+      // Update meta description
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', isZh
+          ? '跟踪 AI 发展历程中的关键里程碑、来源证据与可能方向的双语时间轴。'
+          : 'A bilingual timeline tracking AI milestones, evidence, and possible directions.'
+        );
+      }
+      
+      // Update OG tags
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', document.title);
+      
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) {
+        ogDesc.setAttribute('content', isZh
+          ? 'EpochArc — 结构化追踪 AI 里程碑、来源证据与可能方向。'
+          : 'A bilingual project for tracking AI milestones, organizing evidence, and mapping possible directions.'
+        );
+      }
+      
+      const ogLocale = document.querySelector('meta[property="og:locale"]');
+      if (ogLocale) {
+        ogLocale.setAttribute('content', isZh ? 'zh_CN' : 'en_US');
+      }
+      
+      // Update Twitter tags
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute('content', document.title);
+      
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) {
+        twDesc.setAttribute('content', isZh
+          ? 'EpochArc — 结构化追踪 AI 里程碑、来源证据与可能方向。'
+          : 'A bilingual project for tracking AI milestones, organizing evidence, and mapping possible directions.'
+        );
       }
       
       // Update all elements with data-zh / data-en
