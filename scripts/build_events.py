@@ -496,3 +496,56 @@ if os.path.exists(DIST_DIR):
     shutil.copytree(EVENTS_OUTPUT_DIR, os.path.join(DIST_DIR, 'events'), dirs_exist_ok=True)
     print(f"✅ Synced static events to {DIST_DIR}/events/")
 
+# ─────────────────── 回填 HTML Fallback 数据 ───────────────────
+import re
+
+def inject_fallback_data(html_path, forecasts_json, events_json, sources_json):
+    if not os.path.exists(html_path):
+        return False
+    with open(html_path, 'r', encoding='utf-8') as fh:
+        content = fh.read()
+    
+    # 替换 fallback-forecasts-data
+    def replace_forecasts(match):
+        return match.group(1) + forecasts_json + match.group(2)
+    content = re.sub(
+        r'(<script\s+type="application/json"\s+id="fallback-forecasts-data">).*?(</script>)',
+        replace_forecasts,
+        content,
+        flags=re.DOTALL
+    )
+    # 替换 fallback-events-data
+    def replace_events(match):
+        return match.group(1) + events_json + match.group(2)
+    content = re.sub(
+        r'(<script\s+type="application/json"\s+id="fallback-events-data">).*?(</script>)',
+        replace_events,
+        content,
+        flags=re.DOTALL
+    )
+    # 替换 fallback-sources-data
+    def replace_sources(match):
+        return match.group(1) + sources_json + match.group(2)
+    content = re.sub(
+        r'(<script\s+type="application/json"\s+id="fallback-sources-data">).*?(</script>)',
+        replace_sources,
+        content,
+        flags=re.DOTALL
+    )
+    
+    with open(html_path, 'w', encoding='utf-8') as fh:
+        fh.write(content)
+    return True
+
+# 准备这三个 JSON 的紧凑字符串
+with open(os.path.join(ROOT_DIR, 'data', 'forecasts.json'), 'r', encoding='utf-8') as fh:
+    forecasts_data_str = json.dumps(json.load(fh), ensure_ascii=False)
+with open(os.path.join(ROOT_DIR, 'data', 'events.json'), 'r', encoding='utf-8') as fh:
+    events_data_str = json.dumps(json.load(fh), ensure_ascii=False)
+with open(os.path.join(ROOT_DIR, 'data', 'sources.json'), 'r', encoding='utf-8') as fh:
+    sources_data_str = json.dumps(json.load(fh), ensure_ascii=False)
+
+inject_fallback_data(os.path.join(ROOT_DIR, 'index.html'), forecasts_data_str, events_data_str, sources_data_str)
+inject_fallback_data(os.path.join(ROOT_DIR, 'dist', 'index.html'), forecasts_data_str, events_data_str, sources_data_str)
+print("✅ Injected fallback data into index.html and dist/index.html")
+
