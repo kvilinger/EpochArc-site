@@ -131,3 +131,368 @@ with open(OUTPUT_FILE, 'w') as fh:
     json.dump(events, fh, ensure_ascii=False, indent=2)
 
 print(f"✅ Built {OUTPUT_FILE} with {len(events)} events ({len(warnings)} warnings)")
+
+# ─────────────────── SSG 详情页静态生成 ───────────────────
+import shutil
+import os
+
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+TEMPLATE_FILE = os.path.join(ROOT_DIR, 'templates', 'detail_template.html')
+EVENTS_OUTPUT_DIR = os.path.join(ROOT_DIR, 'events')
+SOURCES_FILE = os.path.join(ROOT_DIR, 'data', 'sources.json')
+
+# 确保 events 临时输出目录存在并清空
+if os.path.exists(EVENTS_OUTPUT_DIR):
+    shutil.rmtree(EVENTS_OUTPUT_DIR)
+os.makedirs(EVENTS_OUTPUT_DIR, exist_ok=True)
+
+# 加载 sources.json
+with open(SOURCES_FILE) as fh:
+    sources_data = json.load(fh)
+sources_by_id = {s['id']: s for s in sources_data}
+
+# 建立 events id 快速索引
+events_by_id = {e['id']: e for e in events}
+
+if os.path.exists(TEMPLATE_FILE):
+    with open(TEMPLATE_FILE, 'r', encoding='utf-8') as tf:
+        template_content = tf.read()
+        
+    for e in events:
+        eid = e['id']
+        copy_title_en = e['title']['en']
+        copy_title_zh = e['title']['zhHans']
+        copy_desc_en = e['summary']['en']
+        copy_desc_zh = e['summary']['zhHans']
+        
+        # 1. 渲染 Impacts HTML
+        impact_items = []
+        for imp in e.get('impacts', []):
+            dim = imp.get('dimension')
+            dim_en = labels['impactDimension'].get(dim, {}).get('en', dim)
+            dim_zh = labels['impactDimension'].get(dim, {}).get('zhHans', dim)
+            
+            tf_val = imp.get('timeframe')
+            tf_en = labels['timeframe'].get(tf_val, {}).get('en', tf_val)
+            tf_zh = labels['timeframe'].get(tf_val, {}).get('zhHans', tf_val)
+            
+            desc_en = imp.get('description', {}).get('en', '')
+            desc_zh = imp.get('description', {}).get('zhHans', '')
+            
+            affected_en = ', '.join(imp.get('affectedGroups', []))
+            affected_zh = '、'.join(imp.get('affectedGroups', []))
+            
+            severity_val = f"+{imp.get('severity')}" if imp.get('severity') > 0 else str(imp.get('severity'))
+            
+            impact_items.append(f'''
+              <li class="impact-item">
+                <div class="impact-head">
+                  <span class="impact-name" data-zh="{dim_zh}" data-en="{dim_en}">{dim_en}</span>
+                  <span class="impact-score" data-zh="{severity_val} · {tf_zh}" data-en="{severity_val} · {tf_en}">{severity_val} · {tf_en}</span>
+                </div>
+                <p class="impact-description" data-zh="{desc_zh}" data-en="{desc_en}">{desc_en}</p>
+                <p class="impact-description" data-zh="受影响群体: {affected_zh}" data-en="Affected Groups: {affected_en}">Affected Groups: {affected_en}</p>
+              </li>
+            ''')
+            
+        # 2. 渲染 Sources HTML
+        source_items = []
+        for s_idx, source_ref in enumerate(e.get('sources', [])):
+            src_id = source_ref.get('sourceId')
+            src = sources_by_id.get(src_id, {'id': src_id, 'title': src_id, 'type': 'unknown', 'url': ''})
+            
+            source_types_translation = {
+                'paper': {'en': 'Academic Paper', 'zhHans': '学术论文'},
+                'news': {'en': 'News Report', 'zhHans': '新闻报道'},
+                'blog': {'en': 'Official Blog / Announcement', 'zhHans': '官方博文/公告'},
+                'code': {'en': 'Code Repository', 'zhHans': '开源代码库'},
+                'tweet': {'en': 'Social Media Post', 'zhHans': '社交媒体发布'},
+                'governance': {'en': 'Official Document', 'zhHans': '政策官方文档'},
+                'unknown': {'en': 'Reference Evidence', 'zhHans': '参考证据'}
+            }
+            src_type = src.get('type', 'unknown')
+            type_en = source_types_translation.get(src_type, source_types_translation['unknown'])['en']
+            type_zh = source_types_translation.get(src_type, source_types_translation['unknown'])['zhHans']
+            
+            title_html = f'<a class="source-title source-title-link" href="{src.get("url")}" target="_blank" rel="noopener noreferrer">{src.get("title")}</a>' if src.get("url") else f'<span class="source-title">{src.get("title")}</span>'
+            quote_html = f'<div class="source-quote">{source_ref.get("quote")}</div>' if source_ref.get('quote') else ''
+            
+            meta_en = f'URL: {src.get("url")}' if src.get("url") else 'URL pending'
+            meta_zh = f'原文可访问: {src.get("url")}' if src.get("url") else '待补原文链接'
+            
+            source_items.append(f'''
+              <li class="source-card">
+                <span class="source-index">{s_idx + 1}</span>
+                <div class="source-body">
+                  <div class="source-row">
+                    {title_html}
+                  </div>
+                  <p class="source-meta" data-zh="{meta_zh}" data-en="{meta_en}">{meta_en}</p>
+                  {quote_html}
+                  <div class="source-status">
+                    <span class="source-chip" data-zh="{type_zh}" data-en="{type_en}">{type_en}</span>
+                    <span class="source-chip" data-zh="引用已记录" data-en="Citation logged">Citation logged</span>
+                    <span class="source-chip" data-zh="原文可访问" data-en="Live source">Live source</span>
+                  </div>
+                </div>
+              </li>
+            ''')
+            
+        impacts_html = '\n'.join(impact_items)
+        sources_html = '\n'.join(source_items)
+            
+        # 3. 计算关联关系
+        related_ids = set(e.get('relatedEvents', []))
+        for other_e in events:
+            if eid in other_e.get('relatedEvents', []):
+                related_ids.add(other_e['id'])
+        related_ids.discard(eid)
+        
+        related_events_list = [events_by_id[rid] for rid in related_ids if rid in events_by_id]
+        related_events_list.sort(key=lambda x: x['date'])
+        
+        precursors = [re for re in related_events_list if re['date'] < e['date']]
+        successors = [re for re in related_events_list if re['date'] > e['date']]
+        
+        # 静态 JSON 字典注入供 hover 用
+        related_data_dict = {}
+        for re in related_events_list:
+            cat = re['categories'][0]
+            cat_en = labels['category'].get(cat, {}).get('en', cat)
+            cat_zh = labels['category'].get(cat, {}).get('zhHans', cat)
+            related_data_dict[re['id']] = {
+                'date': re['date'],
+                'significance': re['significance'],
+                'category': {'en': cat_en, 'zh': cat_zh},
+                'title': {'en': re['title']['en'], 'zh': re['title']['zhHans']},
+                'summary': {'en': re['summary']['en'], 'zh': re['summary']['zhHans']}
+            }
+        related_data_json = json.dumps(related_data_dict, ensure_ascii=False)
+        
+        # 前驱
+        precursors_html = ''
+        if precursors:
+            cards = []
+            for p in precursors:
+                cards.append(f'''
+                  <div class="related-card" onclick="navigateToEvent('{p['id']}')">
+                    <div class="related-card-meta">
+                      <span>{p['date']}</span>
+                      <span class="sig-badge">L{p['significance']}</span>
+                    </div>
+                    <h4 class="related-card-title" data-zh="{p['title']['zhHans']}" data-en="{p['title']['en']}">{p['title']['en']}</h4>
+                    <p class="related-card-summary" data-zh="{p['summary']['zhHans']}" data-en="{p['summary']['en']}">{p['summary']['en']}</p>
+                  </div>
+                ''')
+            precursors_html = f'''
+              <div class="related-row">
+                <div class="related-row-title">
+                  <span data-zh="← 前驱事件 (Origins)" data-en="← Origins">← Origins</span>
+                </div>
+                <div class="related-cards-container">
+                  {''.join(cards)}
+                </div>
+              </div>
+            '''
+            
+        # 后继
+        successors_html = ''
+        if successors:
+            cards = []
+            for s in successors:
+                cards.append(f'''
+                  <div class="related-card" onclick="navigateToEvent('{s['id']}')">
+                    <div class="related-card-meta">
+                      <span>{s['date']}</span>
+                      <span class="sig-badge">L{s['significance']}</span>
+                    </div>
+                    <h4 class="related-card-title" data-zh="{s['title']['zhHans']}" data-en="{s['title']['en']}">{s['title']['en']}</h4>
+                    <p class="related-card-summary" data-zh="{s['summary']['zhHans']}" data-en="{s['summary']['en']}">{s['summary']['en']}</p>
+                  </div>
+                ''')
+            successors_html = f'''
+              <div class="related-row">
+                <div class="related-row-title">
+                  <span data-zh="→ 后继事件 (Successors)" data-en="→ Successors">→ Successors</span>
+                </div>
+                <div class="related-cards-container">
+                  {''.join(cards)}
+                </div>
+              </div>
+            '''
+            
+        # SVG 局部演进图谱
+        topology_html = ''
+        if related_events_list:
+            view_width = 700
+            view_height = 280
+            center_node_x = 350
+            center_node_y = 140
+            precursor_x = 110
+            successor_x = 590
+            
+            visible_precursors = precursors[-4:]
+            visible_successors = successors[:4]
+            
+            nodes_markup = []
+            links_markup = []
+            
+            defs_markup = '''
+              <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 2 L 10 5 L 0 8 z" fill="var(--border)" />
+                </marker>
+                <marker id="arrow-highlighted" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 2 L 10 5 L 0 8 z" fill="var(--accent)" />
+                </marker>
+              </defs>
+            '''
+            
+            c_title_en = e['title']['en'][:20] + '...' if len(e['title']['en']) > 22 else e['title']['en']
+            c_title_zh = e['title']['zhHans'][:12] + '...' if len(e['title']['zhHans']) > 14 else e['title']['zhHans']
+            nodes_markup.append(f'''
+              <g class="svg-node" onclick="event.stopPropagation()" onmouseenter="showEventTooltip(event, '{eid}')" onmouseleave="hideEventTooltip()">
+                <rect class="svg-node-rect center-node breathing-aura" x="{center_node_x - 95}" y="{center_node_y - 26}" width="190" height="52" />
+                <text class="svg-node-title" x="{center_node_x}" y="{center_node_y - 2}" text-anchor="middle" data-zh="{c_title_zh}" data-en="{c_title_en}">{c_title_en}</text>
+                <text class="svg-node-date" x="{center_node_x}" y="{center_node_y + 16}" text-anchor="middle">{e['date']} · L{e['significance']}</text>
+              </g>
+            ''')
+            
+            if visible_precursors:
+                gap_y = view_height / (len(visible_precursors) + 1)
+                for idx, p in enumerate(visible_precursors):
+                    node_y = gap_y * (idx + 1)
+                    p_title_en = p['title']['en'][:18] + '...' if len(p['title']['en']) > 20 else p['title']['en']
+                    p_title_zh = p['title']['zhHans'][:11] + '...' if len(p['title']['zhHans']) > 13 else p['title']['zhHans']
+                    
+                    st_x = precursor_x + 85
+                    st_y = node_y
+                    ed_x = center_node_x - 95
+                    ed_y = center_node_y
+                    ct_x1 = st_x + 40
+                    ct_y1 = st_y
+                    ct_x2 = ed_x - 40
+                    ct_y2 = ed_y
+                    
+                    links_markup.append(f'''
+                      <path class="svg-link-path" id="link-{p['id']}-{eid}" d="M {st_x} {st_y} C {ct_x1} {ct_y1}, {ct_x2} {ct_y2}, {ed_x} {ed_y}" marker-end="url(#arrow)" />
+                    ''')
+                    
+                    nodes_markup.append(f'''
+                      <g class="svg-node" onclick="navigateToEvent('{p['id']}')" onmouseenter="highlightLink('link-{p['id']}-{eid}', true); showEventTooltip(event, '{p['id']}')" onmouseleave="highlightLink('link-{p['id']}-{eid}', false); hideEventTooltip()">
+                        <rect class="svg-node-rect" x="{precursor_x - 85}" y="{node_y - 22}" width="170" height="44" />
+                        <text class="svg-node-title" x="{precursor_x}" y="{node_y - 2}" text-anchor="middle" data-zh="{p_title_zh}" data-en="{p_title_en}">{p_title_en}</text>
+                        <text class="svg-node-date" x="{precursor_x}" y="{node_y + 12}" text-anchor="middle">{p['date']} · L{p['significance']}</text>
+                      </g>
+                    ''')
+                    
+            if visible_successors:
+                gap_y = view_height / (len(visible_successors) + 1)
+                for idx, s in enumerate(visible_successors):
+                    node_y = gap_y * (idx + 1)
+                    s_title_en = s['title']['en'][:18] + '...' if len(s['title']['en']) > 20 else s['title']['en']
+                    s_title_zh = s['title']['zhHans'][:11] + '...' if len(s['title']['zhHans']) > 13 else s['title']['zhHans']
+                    
+                    st_x = center_node_x + 95
+                    st_y = center_node_y
+                    ed_x = successor_x - 85
+                    ed_y = node_y
+                    ct_x1 = st_x + 40
+                    ct_y1 = st_y
+                    ct_x2 = ed_x - 40
+                    ct_y2 = ed_y
+                    
+                    links_markup.append(f'''
+                      <path class="svg-link-path" id="link-{eid}-{s['id']}" d="M {st_x} {st_y} C {ct_x1} {ct_y1}, {ct_x2} {ct_y2}, {ed_x} {ed_y}" marker-end="url(#arrow)" />
+                    ''')
+                    
+                    nodes_markup.append(f'''
+                      <g class="svg-node" onclick="navigateToEvent('{s['id']}')" onmouseenter="highlightLink('link-{eid}-{s['id']}', true); showEventTooltip(event, '{s['id']}')" onmouseleave="highlightLink('link-{eid}-{s['id']}', false); hideEventTooltip()">
+                        <rect class="svg-node-rect" x="{successor_x - 85}" y="{node_y - 22}" width="170" height="44" />
+                        <text class="svg-node-title" x="{successor_x}" y="{node_y - 2}" text-anchor="middle" data-zh="{s_title_zh}" data-en="{s_title_en}">{s_title_en}</text>
+                        <text class="svg-node-date" x="{successor_x}" y="{node_y + 12}" text-anchor="middle">{s['date']} · L{s['significance']}</text>
+                      </g>
+                    ''')
+                    
+            links_markup_str = '\n'.join(links_markup)
+            nodes_markup_str = '\n'.join(nodes_markup)
+            topology_html = f'''
+              <div class="related-topology-container">
+                <span class="related-topology-title" data-zh="局部演进图谱 (Local Lineage)" data-en="Local Lineage">Local Lineage</span>
+                <svg class="related-svg" viewBox="0 0 {view_width} {view_height}">
+                  {defs_markup}
+                  {links_markup_str}
+                  {nodes_markup_str}
+                </svg>
+              </div>
+            '''
+            
+        related_section_html = ''
+        if related_events_list:
+            related_section_html = f'''
+              <section class="detail-block related-section">
+                <h3 data-zh="关联事件" data-en="Related Events">关联事件</h3>
+                {precursors_html}
+                {successors_html}
+                {topology_html}
+              </section>
+            '''
+            
+        # 4. 生成多语言分类和共识字符串
+        primary_cat = e['categories'][0]
+        primary_cat_name_en = labels['category'].get(primary_cat, {}).get('en', primary_cat)
+        primary_cat_name_zh = labels['category'].get(primary_cat, {}).get('zhHans', primary_cat)
+        
+        secondary_cat_html = ''
+        if len(e['categories']) > 1:
+            sec_cat = e['categories'][1]
+            sec_cat_en = labels['category'].get(sec_cat, {}).get('en', sec_cat)
+            sec_cat_zh = labels['category'].get(sec_cat, {}).get('zhHans', sec_cat)
+            secondary_cat_html = f'<span class="category-badge secondary {sec_cat}" data-zh="{sec_cat_zh}" data-en="{sec_cat_en}">{sec_cat_en}</span>'
+            
+        cats_en = ' / '.join([labels['category'].get(c, {}).get('en', c) for c in e['categories']])
+        cats_zh = ' / '.join([labels['category'].get(c, {}).get('zhHans', c) for c in e['categories']])
+        
+        con = e['consensusLevel']
+        con_en = labels['consensus'].get(con, {}).get('en', con)
+        con_zh = labels['consensus'].get(con, {}).get('zhHans', con)
+        
+        # 5. 替换占位符并写出物理文件
+        page_html = template_content
+        page_html = page_html.replace('{{SEO_TITLE}}', copy_title_en)
+        page_html = page_html.replace('{{SEO_DESC}}', copy_desc_en)
+        page_html = page_html.replace('{{SLUG}}', eid)
+        page_html = page_html.replace('{{ID}}', eid)
+        page_html = page_html.replace('{{DATE}}', e['date'])
+        page_html = page_html.replace('{{TITLE_ZH}}', copy_title_zh)
+        page_html = page_html.replace('{{TITLE_EN}}', copy_title_en)
+        page_html = page_html.replace('{{PRIMARY_CAT}}', primary_cat)
+        page_html = page_html.replace('{{PRIMARY_CAT_NAME}}', primary_cat_name_en)
+        page_html = page_html.replace('{{SECONDARY_CAT_HTML}}', secondary_cat_html)
+        page_html = page_html.replace('{{DESC_ZH}}', copy_desc_zh)
+        page_html = page_html.replace('{{DESC_EN}}', copy_desc_en)
+        page_html = page_html.replace('{{IMPACTS}}', impacts_html)
+        page_html = page_html.replace('{{SIGNIFICANCE}}', str(e['significance']))
+        page_html = page_html.replace('{{CATEGORIES}}', f'<span data-zh="{cats_zh}" data-en="{cats_en}">{cats_en}</span>')
+        page_html = page_html.replace('{{CONSENSUS}}', f'<span data-zh="{con_zh}" data-en="{con_en}">{con_en}</span>')
+        page_html = page_html.replace('{{IMPACT_INDEX}}', str(e['impactIndex']))
+        page_html = page_html.replace('{{SOURCES}}', sources_html)
+        page_html = page_html.replace('{{RELATED}}', related_section_html)
+        page_html = page_html.replace('{{RELATED_DATA_JSON}}', related_data_json)
+        
+        # 写出到 events/{eid}/index.html 
+        event_dir = os.path.join(EVENTS_OUTPUT_DIR, eid)
+        os.makedirs(event_dir, exist_ok=True)
+        event_output_file = os.path.join(event_dir, 'index.html')
+        with open(event_output_file, 'w', encoding='utf-8') as ev_fh:
+            ev_fh.write(page_html)
+            
+    print(f"✅ Generated {len(events)} static event detail pages inside {EVENTS_OUTPUT_DIR}")
+
+# ─────────────────── 同步 SSG 页面至 dist/ ───────────────────
+DIST_DIR = os.path.join(ROOT_DIR, 'dist')
+if os.path.exists(DIST_DIR):
+    shutil.copytree(EVENTS_OUTPUT_DIR, os.path.join(DIST_DIR, 'events'), dirs_exist_ok=True)
+    print(f"✅ Synced static events to {DIST_DIR}/events/")
+

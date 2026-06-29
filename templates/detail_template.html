@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{SEO_TITLE}} · EpochArc</title>
+  <meta name="description" content="{{SEO_DESC}}" />
+  <meta name="theme-color" content="#f7f8fb" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="application-name" content="EpochArc" />
+  
+  <meta property="og:title" content="{{SEO_TITLE}} · EpochArc" />
+  <meta property="og:description" content="{{SEO_DESC}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://epoch-arc.com/events/{{SLUG}}" />
+  <meta property="og:image" content="https://epoch-arc.com/og-image.svg" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{SEO_TITLE}} · EpochArc" />
+  <meta name="twitter:description" content="{{SEO_DESC}}" />
+  <meta name="twitter:image" content="https://epoch-arc.com/og-image.svg" />
+  
+  <link rel="icon" href="/assets/logo-icon.svg" type="image/svg+xml" />
+  
+  <!-- Vite 编译后的详情页专有样式 -->
+  <link rel="stylesheet" href="/src/css/detail.css" />
+</head>
+<body data-theme="light">
+
+  <!-- Sticky Top Nav -->
+  <header class="topnav">
+    <div class="container topnav-inner">
+      <a href="/" class="logo">
+        <img class="brand-icon" src="/assets/logo-icon.svg" alt="" aria-hidden="true">
+        <span>EpochArc</span>
+      </a>
+      <div class="topnav-actions">
+        <label class="language-picker" aria-label="Language">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path stroke-linecap="round" d="M3.6 9h16.8M3.6 15h16.8M12 3c2.2 2.4 3.3 5.4 3.3 9S14.2 18.6 12 21M12 3C9.8 5.4 8.7 8.4 8.7 12S9.8 18.6 12 21"></path>
+          </svg>
+          <select class="language-select" id="langSelect">
+            <option value="en">EN</option>
+            <option value="zh-Hans">中文</option>
+          </select>
+        </label>
+        <button class="control-btn" id="themeToggle">
+          <svg id="themeIcon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+          </svg>
+          <span id="themeText" data-zh="深色模式" data-en="Dark Mode">深色模式</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs & Event Details -->
+  <main class="detail-page-container">
+    <a href="/?event={{ID}}" class="back-link">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      <span data-zh="返回时间轴" data-en="Back to Timeline">返回时间轴</span>
+    </a>
+
+    <article class="event-detail-card">
+      <header class="event-header">
+        <div class="event-date">{{DATE}}</div>
+        <h1 class="event-title" data-zh="{{TITLE_ZH}}" data-en="{{TITLE_EN}}">{{TITLE_EN}}</h1>
+        <div class="event-meta-row">
+          <span class="category-badge {{PRIMARY_CAT}}">{{PRIMARY_CAT_NAME}}</span>
+          {{SECONDARY_CAT_HTML}}
+        </div>
+      </header>
+
+      <!-- Event Summary & Narrative -->
+      <section class="detail-block">
+        <h3 data-zh="事件摘要" data-en="Event Summary">事件摘要</h3>
+        <p class="summary-text" data-zh="{{DESC_ZH}}" data-en="{{DESC_EN}}">{{DESC_EN}}</p>
+      </section>
+
+      <!-- Impact Assessment -->
+      <section class="detail-block">
+        <h3 data-zh="影响评估" data-en="Impact Assessment">影响评估</h3>
+        <ul class="impact-list">
+          {{IMPACTS}}
+        </ul>
+      </section>
+
+      <!-- Consensus & Sources -->
+      <section class="detail-block">
+        <h3 data-zh="共识度与来源" data-en="Consensus &amp; Sources">共识度与来源</h3>
+        <div class="evidence-summary">
+          <div class="evidence-item">
+            <span class="label" data-zh="重要度" data-en="Significance">重要度</span>
+            <span class="val">L{{SIGNIFICANCE}}</span>
+          </div>
+          <div class="evidence-item">
+            <span class="label" data-zh="分类" data-en="Category">分类</span>
+            <span class="val">{{CATEGORIES}}</span>
+          </div>
+          <div class="evidence-item">
+            <span class="label" data-zh="共识度" data-en="Consensus">共识度</span>
+            <span class="val">{{CONSENSUS}}</span>
+          </div>
+          <div class="evidence-item">
+            <span class="label" data-zh="影响指数" data-en="Impact Index">影响指数</span>
+            <span class="val">{{IMPACT_INDEX}}/10</span>
+          </div>
+        </div>
+        <ul class="source-list">
+          {{SOURCES}}
+        </ul>
+      </section>
+
+      <!-- Related Events Visualization Section -->
+      {{RELATED}}
+
+    </article>
+  </main>
+
+  <footer class="pagefoot">
+    <div class="container row-between">
+      <span id="footCopyright" data-zh="© 2026 EpochArc · Curated by an independent maker" data-en="© 2026 EpochArc · Curated by an independent maker">© 2026 EpochArc · Curated by an independent maker</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/methods.html"><span data-zh="方法与来源" data-en="Methodology">方法与来源</span></a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Global Tooltip and Cookie Notice DOM -->
+  <div id="global-tooltip" class="global-tooltip"></div>
+  <div id="cookie-notice" class="cookie-notice">
+    <span class="cookie-notice-text" data-zh="本站使用匿名 Cookie 用于投票功能，不追踪个人数据。" data-en="This site uses an anonymous cookie for optional voting features. No personal data is tracked.">This site uses an anonymous cookie for optional voting features. No personal data is tracked.</span>
+    <button class="cookie-notice-close" data-zh="知道了" data-en="Got it">Got it</button>
+  </div>
+
+  <!-- 静态注入当前页关联节点的简要数据，供 Hover Tooltip 使用 -->
+  <script>
+    window.relatedEventsData = {{RELATED_DATA_JSON}};
+  </script>
+
+  <!-- Vite 编译后的详情页逻辑脚本 -->
+  <script type="module" src="/src/js/detail.js"></script>
+</body>
+</html>
