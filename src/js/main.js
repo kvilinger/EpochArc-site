@@ -1769,7 +1769,15 @@ const LANGUAGES = {
       toggleBackToTop();
       
       if (eventId && state.dataStatus === 'ready') {
-        setTimeout(() => openDetails(eventId, false), 300);
+        setTimeout(() => {
+          openDetails(eventId, false);
+          setTimeout(() => {
+            const targetItem = document.getElementById(`item-${eventId}`);
+            if (targetItem) {
+              targetItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 150);
+        }, 300);
       }
     }
 
