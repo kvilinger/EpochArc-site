@@ -1415,28 +1415,21 @@
       align-items: center;
     }
     .timeline-node-head {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      align-items: start;
-      gap: 16px;
+      display: block;
+      position: relative;
     }
     .timeline-node-main {
       min-width: 0;
-      flex: 1;
     }
     .timeline-node-main .card-meta {
       margin-bottom: 8px;
     }
     .timeline-node-side {
-      min-width: max-content;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: space-between;
-      align-self: stretch;
-      gap: 14px;
-      padding-top: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
       text-align: right;
+      pointer-events: none;
     }
     .timeline-node-meta {
       color: var(--muted);
@@ -1554,11 +1547,17 @@
     .card-content h3 {
       font-size: 18px;
       margin-bottom: 6px;
+      padding-right: 180px; /* 避开右上角标签，防止重叠 */
     }
     .card-content p.summary {
       font-size: 14px;
       color: var(--muted);
       line-height: 1.45;
+    }
+    .timeline-card-action {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
     }
     .timeline-card-l1 .timeline-node-head {
       align-items: center;
@@ -1571,16 +1570,16 @@
     @media (max-width: 650px) {
       .timeline-node-head,
       .timeline-card-l1 .timeline-node-head {
-        grid-template-columns: 1fr;
+        display: block;
       }
       .timeline-node-side {
-        min-width: max-content;
-        width: auto;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
+        position: static;
+        margin-top: 10px;
         text-align: left;
-        gap: 14px;
+        pointer-events: auto;
+      }
+      .card-content h3 {
+        padding-right: 0;
       }
       .timeline-node-meta {
         white-space: nowrap;
@@ -1933,6 +1932,208 @@
     .source-link-btn:hover {
       background: var(--fg);
       color: var(--bg);
+    }
+
+    /* ─── 关联事件与图谱 (Related Events & Topology) ───────────────── */
+    .related-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-md);
+    }
+    .related-row-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .related-cards-container {
+      display: flex;
+      gap: var(--gap-md);
+      overflow-x: auto;
+      padding-top: 8px;
+      padding-bottom: 10px;
+      margin-top: -8px;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    /* 美化滚动条 */
+    .related-cards-container::-webkit-scrollbar {
+      height: 6px;
+    }
+    .related-cards-container::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .related-cards-container::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: var(--radius-pill);
+    }
+    .related-cards-container::-webkit-scrollbar-thumb:hover {
+      background: var(--muted);
+    }
+    .related-card {
+      flex: 0 0 240px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      text-align: left;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.2s ease,
+                  box-shadow 0.2s ease;
+      position: relative;
+    }
+    .related-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+      box-shadow: 0 6px 16px color-mix(in oklch, var(--accent) 8%, transparent);
+    }
+    .related-card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--muted);
+    }
+    .related-card-meta .sig-badge {
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .related-card-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--fg);
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0;
+    }
+    .related-card-summary {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.45;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0;
+    }
+    .related-topology-container {
+      margin-top: var(--gap-sm);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: color-mix(in oklch, var(--surface) 97%, var(--bg));
+      padding: var(--gap-md) var(--gap-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--gap-sm);
+    }
+    .related-topology-title {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .related-svg {
+      width: 100%;
+      height: 280px;
+      overflow: visible;
+    }
+    .svg-node {
+      cursor: pointer;
+      outline: none;
+    }
+    .svg-node-rect {
+      fill: var(--surface);
+      stroke: var(--border);
+      stroke-width: 1;
+      rx: 6px;
+      transition: stroke 0.2s ease, stroke-width 0.2s ease, filter 0.2s ease;
+    }
+    .svg-node:hover .svg-node-rect {
+      stroke: var(--accent);
+      stroke-width: 1.5;
+      filter: drop-shadow(0 4px 8px color-mix(in oklch, var(--accent) 15%, transparent));
+    }
+    .svg-node-rect.center-node {
+      stroke: var(--accent);
+      stroke-width: 2;
+      fill: color-mix(in oklch, var(--accent) 2%, var(--surface));
+      filter: drop-shadow(0 0 6px color-mix(in oklch, var(--accent) 12%, transparent));
+    }
+    .svg-node-title {
+      font-size: 10.5px;
+      font-weight: 700;
+      fill: var(--fg);
+    }
+    .svg-node-date {
+      font-size: 9px;
+      font-family: var(--font-mono);
+      fill: var(--muted);
+    }
+    .svg-node-badge {
+      font-size: 8.5px;
+      font-family: var(--font-mono);
+      fill: var(--accent);
+      font-weight: 700;
+    }
+    .svg-link-path {
+      fill: none;
+      stroke: var(--border);
+      stroke-width: 1.2;
+      transition: stroke 0.2s ease, stroke-width 0.2s ease;
+    }
+    .svg-link-path.highlighted {
+      stroke: var(--accent);
+      stroke-width: 2;
+    }
+    
+    /* 呼吸脉冲效果 */
+    @keyframes breathingAura {
+      0% { filter: drop-shadow(0 0 4px color-mix(in oklch, var(--accent) 10%, transparent)); }
+      50% { filter: drop-shadow(0 0 10px color-mix(in oklch, var(--accent) 30%, transparent)); }
+      100% { filter: drop-shadow(0 0 4px color-mix(in oklch, var(--accent) 10%, transparent)); }
+    }
+    .breathing-aura {
+      animation: breathingAura 2.4s infinite ease-in-out;
+    }
+
+    /* 呼吸高亮闪烁 (Flash Highlight) */
+    @keyframes flashHighlight {
+      0% {
+        outline: 2px solid transparent;
+        background: transparent;
+      }
+      20% {
+        outline: 3.5px solid var(--highlight);
+        outline-offset: 6px;
+        background: color-mix(in oklch, var(--highlight) 8%, transparent);
+        border-radius: var(--radius-lg);
+      }
+      100% {
+        outline: 2px solid transparent;
+        background: transparent;
+      }
+    }
+    .flash-highlight-active {
+      animation: flashHighlight 2s ease-in-out;
+    }
+
+    @media (max-width: 760px) {
+      .related-topology-container {
+        display: none; /* 窄屏隐藏 SVG 图谱，只留卡片带 */
+      }
     }
     @media (prefers-reduced-motion: reduce) {
       .timeline-details,
@@ -3353,6 +3554,9 @@
                     <div class="card-content">
                       <h3>${copy.title}</h3>
                       <p class="summary">${copy.summary}</p>
+                      <div class="timeline-card-action">
+                        <span class="timeline-card-indicator" aria-hidden="true"></span>
+                      </div>
                     </div>
                   </div>
                   ${metricsHTML}
@@ -3379,6 +3583,9 @@
                     <div class="card-content">
                       <h3>${copy.title}</h3>
                       <p class="summary">${copy.summary}</p>
+                      <div class="timeline-card-action">
+                        <span class="timeline-card-indicator" aria-hidden="true"></span>
+                      </div>
                     </div>
                   </div>
                   ${metricsHTML}
@@ -3404,6 +3611,9 @@
                     </div>
                     <div class="card-content">
                       <h3>${copy.title}</h3>
+                      <div class="timeline-card-action">
+                        <span class="timeline-card-indicator" aria-hidden="true"></span>
+                      </div>
                     </div>
                   </div>
                   ${metricsHTML}
@@ -3459,7 +3669,6 @@
       return `
         <div class="timeline-node-side">
           <span class="timeline-node-meta">L${e.significance} · ${impactLabel} ${e.impactIndex}/10 · ${consensusName}</span>
-          <span class="timeline-card-indicator" aria-hidden="true"></span>
         </div>
       `;
     }
@@ -3505,6 +3714,203 @@
           <p class="impact-description">${text('affected')}: ${impact.affectedGroups.join(isChineseContent() ? '、' : ', ')}</p>
         </li>
       `).join('');
+
+      // 计算关联关系
+      const currentId = e.id;
+      const relatedIds = new Set(e.relatedEvents || []);
+      aiEvents.forEach(evt => {
+        if (evt.relatedEvents && evt.relatedEvents.includes(currentId)) {
+          relatedIds.add(evt.id);
+        }
+      });
+      relatedIds.delete(currentId);
+
+      const relatedEventsList = Array.from(relatedIds)
+        .map(rid => aiEvents.find(evt => evt.id === rid))
+        .filter(Boolean)
+        .sort((a, b) => a.date.localeCompare(b.date));
+
+      const precursors = relatedEventsList.filter(evt => evt.date < e.date);
+      const successors = relatedEventsList.filter(evt => evt.date > e.date);
+
+      // 渲染前驱卡片带
+      let precursorsHTML = '';
+      if (precursors.length > 0) {
+        const cards = precursors.map(p => {
+          const pCopy = localizedRecord(p);
+          return `
+            <div class="related-card" onclick="navigateToEvent('${p.id}')">
+              <div class="related-card-meta">
+                <span>${p.date}</span>
+                <span class="sig-badge">L${p.significance}</span>
+              </div>
+              <h4 class="related-card-title">${pCopy.title}</h4>
+              <p class="related-card-summary">${pCopy.summary}</p>
+            </div>
+          `;
+        }).join('');
+        precursorsHTML = `
+          <div class="related-row">
+            <div class="related-row-title">
+              <span>← ${isChineseContent() ? '前驱事件 (Origins)' : 'Origins'}</span>
+            </div>
+            <div class="related-cards-container">
+              ${cards}
+            </div>
+          </div>
+        `;
+      }
+
+      // 渲染后继卡片带
+      let successorsHTML = '';
+      if (successors.length > 0) {
+        const cards = successors.map(s => {
+          const sCopy = localizedRecord(s);
+          return `
+            <div class="related-card" onclick="navigateToEvent('${s.id}')">
+              <div class="related-card-meta">
+                <span>${s.date}</span>
+                <span class="sig-badge">L${s.significance}</span>
+              </div>
+              <h4 class="related-card-title">${sCopy.title}</h4>
+              <p class="related-card-summary">${sCopy.summary}</p>
+            </div>
+          `;
+        }).join('');
+        successorsHTML = `
+          <div class="related-row">
+            <div class="related-row-title">
+              <span>→ ${isChineseContent() ? '后继事件 (Successors)' : 'Successors'}</span>
+            </div>
+            <div class="related-cards-container">
+              ${cards}
+            </div>
+          </div>
+        `;
+      }
+
+      // 绘制 SVG 拓扑图
+      let topologyHTML = '';
+      if (relatedEventsList.length > 0) {
+        const viewWidth = 700;
+        const viewHeight = 280;
+        const centerNodeX = 350;
+        const centerNodeY = 140;
+        const precursorX = 110;
+        const successorX = 590;
+
+        const visiblePrecursors = precursors.slice(-4); // 选最接近的 4 个
+        const visibleSuccessors = successors.slice(0, 4); // 选最接近的 4 个
+
+        let nodesMarkup = '';
+        let linksMarkup = '';
+
+        let defsMarkup = `
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 2 L 10 5 L 0 8 z" fill="var(--border)" />
+            </marker>
+            <marker id="arrow-highlighted" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 2 L 10 5 L 0 8 z" fill="var(--accent)" />
+            </marker>
+          </defs>
+        `;
+
+        // 渲染中心节点
+        const centerTitle = copy.title.length > 22 ? copy.title.substring(0, 20) + '...' : copy.title;
+        nodesMarkup += `
+          <g class="svg-node" onclick="event.stopPropagation()" onmouseenter="showEventTooltip(event, '${e.id}')" onmouseleave="hideEventTooltip()">
+            <rect class="svg-node-rect center-node breathing-aura" x="${centerNodeX - 95}" y="${centerNodeY - 26}" width="190" height="52" />
+            <text class="svg-node-title" x="${centerNodeX}" y="${centerNodeY - 2}" text-anchor="middle" title="${copy.title}">${centerTitle}</text>
+            <text class="svg-node-date" x="${centerNodeX}" y="${centerNodeY + 16}" text-anchor="middle">${e.date} · L${e.significance}</text>
+          </g>
+        `;
+
+        // 渲染前驱节点与连线
+        if (visiblePrecursors.length > 0) {
+          const gapY = viewHeight / (visiblePrecursors.length + 1);
+          visiblePrecursors.forEach((p, idx) => {
+            const nodeY = gapY * (idx + 1);
+            const pCopy = localizedRecord(p);
+            const pTitle = pCopy.title.length > 20 ? pCopy.title.substring(0, 18) + '...' : pCopy.title;
+
+            const startX = precursorX + 85;
+            const startY = nodeY;
+            const endX = centerNodeX - 95;
+            const endY = centerNodeY;
+            const ctrlX1 = startX + 40;
+            const ctrlY1 = startY;
+            const ctrlX2 = endX - 40;
+            const ctrlY2 = endY;
+
+            linksMarkup += `
+              <path class="svg-link-path" id="link-${p.id}-${e.id}" d="M ${startX} ${startY} C ${ctrlX1} ${ctrlY1}, ${ctrlX2} ${ctrlY2}, ${endX} ${endY}" marker-end="url(#arrow)" />
+            `;
+
+            nodesMarkup += `
+              <g class="svg-node" onclick="navigateToEvent('${p.id}')" onmouseenter="highlightLink('link-${p.id}-${e.id}', true); showEventTooltip(event, '${p.id}')" onmouseleave="highlightLink('link-${p.id}-${e.id}', false); hideEventTooltip()">
+                <rect class="svg-node-rect" x="${precursorX - 85}" y="${nodeY - 22}" width="170" height="44" />
+                <text class="svg-node-title" x="${precursorX}" y="${nodeY - 2}" text-anchor="middle">${pTitle}</text>
+                <text class="svg-node-date" x="${precursorX}" y="${nodeY + 12}" text-anchor="middle">${p.date} · L${p.significance}</text>
+              </g>
+            `;
+          });
+        }
+
+        // 渲染后继节点与连线
+        if (visibleSuccessors.length > 0) {
+          const gapY = viewHeight / (visibleSuccessors.length + 1);
+          visibleSuccessors.forEach((s, idx) => {
+            const nodeY = gapY * (idx + 1);
+            const sCopy = localizedRecord(s);
+            const sTitle = sCopy.title.length > 20 ? sCopy.title.substring(0, 18) + '...' : sCopy.title;
+
+            const startX = centerNodeX + 95;
+            const startY = centerNodeY;
+            const endX = successorX - 85;
+            const endY = nodeY;
+            const ctrlX1 = startX + 40;
+            const ctrlY1 = startY;
+            const ctrlX2 = endX - 40;
+            const ctrlY2 = endY;
+
+            linksMarkup += `
+              <path class="svg-link-path" id="link-${e.id}-${s.id}" d="M ${startX} ${startY} C ${ctrlX1} ${ctrlY1}, ${ctrlX2} ${ctrlY2}, ${endX} ${endY}" marker-end="url(#arrow)" />
+            `;
+
+            nodesMarkup += `
+              <g class="svg-node" onclick="navigateToEvent('${s.id}')" onmouseenter="highlightLink('link-${e.id}-${s.id}', true); showEventTooltip(event, '${s.id}')" onmouseleave="highlightLink('link-${e.id}-${s.id}', false); hideEventTooltip()">
+                <rect class="svg-node-rect" x="${successorX - 85}" y="${nodeY - 22}" width="170" height="44" />
+                <text class="svg-node-title" x="${successorX}" y="${nodeY - 2}" text-anchor="middle">${sTitle}</text>
+                <text class="svg-node-date" x="${successorX}" y="${nodeY + 12}" text-anchor="middle">${s.date} · L${s.significance}</text>
+              </g>
+            `;
+          });
+        }
+
+        topologyHTML = `
+          <div class="related-topology-container">
+            <span class="related-topology-title">${isChineseContent() ? '局部演进图谱 (Local Lineage)' : 'Local Lineage'}</span>
+            <svg class="related-svg" viewBox="0 0 ${viewWidth} ${viewHeight}">
+              ${defsMarkup}
+              ${linksMarkup}
+              ${nodesMarkup}
+            </svg>
+          </div>
+        `;
+      }
+
+      let relatedSectionHTML = '';
+      if (relatedEventsList.length > 0) {
+        relatedSectionHTML = `
+          <div class="detail-section related-section">
+            <span class="detail-title">${isChineseContent() ? '关联事件' : 'Related Events'}</span>
+            ${precursorsHTML}
+            ${successorsHTML}
+            ${topologyHTML}
+          </div>
+        `;
+      }
 
       return `
         <div class="timeline-details" id="${detailsId}" onclick="event.stopPropagation()" onkeydown="event.stopPropagation()">
@@ -3559,11 +3965,95 @@
               </div>
               <ul class="source-list">${sourceItems}</ul>
             </div>
+            ${relatedSectionHTML}
             <button class="details-collapse" type="button" onclick="collapseDetailsFromFooter(event, '${e.id}')">${isChineseContent() ? '收起' : 'Collapse'}</button>
           </div>
         </div>
       `;
     }
+
+    /* ─── Related Events Navigation & SVG Highlight ─────────────────── */
+    window.navigateToEvent = function(id) {
+      state.openEventIds.clear();
+      state.openEventIds.add(id);
+      renderTimeline();
+
+      setTimeout(() => {
+        const targetItem = document.getElementById(`item-${id}`);
+        if (targetItem) {
+          targetItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          const card = targetItem.querySelector('.timeline-card-l3, .timeline-card-l2, .timeline-card-l1');
+          if (card) {
+            card.classList.add('flash-highlight-active');
+            setTimeout(() => {
+              card.classList.remove('flash-highlight-active');
+            }, 2000);
+          }
+        }
+      }, 120);
+
+      history.pushState(null, '', `?event=${id}`);
+    };
+
+    window.highlightLink = function(linkId, doHighlight) {
+      const link = document.getElementById(linkId);
+      if (link) {
+        if (doHighlight) {
+          link.classList.add('highlighted');
+          link.setAttribute('marker-end', 'url(#arrow-highlighted)');
+        } else {
+          link.classList.remove('highlighted');
+          link.setAttribute('marker-end', 'url(#arrow)');
+        }
+      }
+    };
+
+    window.showEventTooltip = function(event, id) {
+      const e = aiEvents.find(evt => evt.id === id);
+      if (!e) return;
+      
+      const tooltip = document.getElementById('global-tooltip');
+      if (!tooltip) return;
+
+      const copy = localizedRecord(e);
+      const catName = labelFor(categoryLabels[e.categories[0]]) || e.categories[0];
+      
+      const content = `
+        <div style="font-family: var(--font-body); text-align: left; display: flex; flex-direction: column; gap: 6px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 4px; margin-bottom: 2px;">
+            <span>${e.date}</span>
+            <span style="color: var(--accent); font-weight: 700;">L${e.significance} · ${catName}</span>
+          </div>
+          <strong style="font-size: 12.5px; color: var(--fg); line-height: 1.4; display: block;">${copy.title}</strong>
+          <p style="font-size: 11.5px; color: var(--muted); line-height: 1.45; margin: 0;">${copy.summary}</p>
+        </div>
+      `;
+
+      tooltip.innerHTML = content;
+      tooltip.classList.add('show');
+
+      const rect = event.currentTarget.getBoundingClientRect();
+      let left = rect.left + (rect.width / 2) - 145;
+      let top = rect.top - tooltip.offsetHeight - 8;
+
+      if (left < 10) left = 10;
+      if (left + 290 > window.innerWidth - 10) {
+        left = window.innerWidth - 300;
+      }
+      if (top < 10) {
+        top = rect.bottom + 8;
+      }
+
+      tooltip.style.left = `${left + window.scrollX}px`;
+      tooltip.style.top = `${top + window.scrollY}px`;
+    };
+
+    window.hideEventTooltip = function() {
+      const tooltip = document.getElementById('global-tooltip');
+      if (tooltip) {
+        tooltip.classList.remove('show');
+      }
+    };
 
     /* ─── Interactive Inline Details ────────────────────────────────── */
     window.openDetails = function(id, shouldPushState = true) {
@@ -3653,6 +4143,15 @@
       state.openEventIds.clear();
       if (eventId) state.openEventIds.add(eventId);
       renderTimelineWithTransition();
+
+      if (eventId) {
+        setTimeout(() => {
+          const targetItem = document.getElementById(`item-${eventId}`);
+          if (targetItem) {
+            targetItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 150);
+      }
     });
 
     /* ─── Search and Filtering ──────────────────────────────────────── */
