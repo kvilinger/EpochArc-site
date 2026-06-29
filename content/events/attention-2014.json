@@ -1,0 +1,130 @@
+{
+  "id": "attention-2014",
+  "slug": "attention-mechanism",
+  "title": {
+    "en": "Attention mechanism proposed — the foundation of modern AI architectures",
+    "zhHans": "注意力机制被提出——现代 AI 架构的基础"
+  },
+  "summary": {
+    "en": "Bahdanau, Cho, and Bengio publish 'Neural Machine Translation by Jointly Learning to Align and Translate', introducing the attention mechanism that allows neural networks to dynamically focus on relevant parts of input when generating output. This innovation directly leads to the Transformer architecture.",
+    "zhHans": "Bahdanau、Cho 和 Bengio 发表《Neural Machine Translation by Jointly Learning to Align and Translate》，提出注意力机制，让神经网络在生成输出时能动态聚焦输入相关部分。该创新直接催生了 Transformer 架构。"
+  },
+  "narrative": {
+    "en": "Early neural machine translation (NMT) used an encoder-decoder architecture with a fixed-length context vector. The encoder compressed the entire source sentence into this single vector, which became a bottleneck — the network struggled with longer sentences.\n\nBahdanau attention solved this by allowing the decoder to dynamically search for relevant parts of the source sentence at each generation step. Instead of relying on a single fixed vector, the model computed a weighted combination of all encoder hidden states, with weights determined by relevance to the current target word.\n\nThis 'soft attention' mechanism improved translation quality dramatically, especially for long sentences. But its deeper legacy is even larger: the attention mechanism became the core innovation behind the Transformer (2017), which replaced recurrence entirely with attention. Every major AI system since — GPT, BERT, DALL-E, Stable Diffusion, Claude — builds on variants of the attention mechanism introduced by this paper.",
+    "zhHans": "早期的神经机器翻译使用编码器-解码器架构，中间是一个固定长度的上下文向量。编码器将整个源句子压缩进这个单一向量，这成为瓶颈——网络在长句上表现很差。\n\nBahdanau 注意力机制解决了这个问题：解码器在每一步生成时都能动态搜索源句子中的相关部分。模型不再依赖一个固定的向量，而是计算所有编码器隐藏状态的加权组合，权重由当前目标词的相关性决定。\n\n这种“软注意力”机制大幅提升了翻译质量，尤其是在长句上。但它更深远的影响在后头：注意力机制成为 Transformer（2017）的核心创新——Transformer 完全用注意力取代了循环神经网络。此后几乎所有主流 AI 系统——GPT、BERT、DALL-E、Stable Diffusion、Claude——都建立在这篇论文提出的注意力机制变体之上。"
+  },
+  "date": "2014-09-01",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 1, 2014",
+    "zhHans": "2014 年 9 月 1 日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 10,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Attention is the core innovation behind Transformer and all subsequent large language models.",
+        "zhHans": "注意力机制是 Transformer 及所有后续大语言模型的核心创新。"
+      },
+      "affectedGroups": [
+        "ai researchers",
+        "nlp practitioners",
+        "deep learning community"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "arxiv-1409.0473",
+        "wikipedia-attention-mechanism"
+      ]
+    },
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Enabled neural machine translation to surpass traditional statistical methods, especially on long sentences.",
+        "zhHans": "使神经机器翻译超越传统统计方法，尤其是在长句翻译上。"
+      },
+      "affectedGroups": [
+        "nlp researchers",
+        "translation services",
+        "language industry"
+      ],
+      "timeframe": "medium",
+      "sourceIds": [
+        "arxiv-1409.0473"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Attention mechanisms became the foundation of billions of daily AI interactions through search, translation, and chatbots.",
+        "zhHans": "注意力机制成为每天数十亿次 AI 交互的基础——搜索、翻译、聊天机器人无不依赖它。"
+      },
+      "affectedGroups": [
+        "general public",
+        "developers"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "wikipedia-attention-mechanism"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "attention-first-proposal",
+      "statement": {
+        "en": "Bahdanau et al. proposed the first attention mechanism for neural machine translation in September 2014.",
+        "zhHans": "Bahdanau 等人于 2014 年 9 月首次提出用于神经机器翻译的注意力机制。"
+      },
+      "type": "fact",
+      "confidence": "confirmed",
+      "sources": [
+        "arxiv-1409.0473",
+        "wikipedia-attention-mechanism"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "arxiv-1409.0473",
+      "supports": [
+        "attention-first-proposal"
+      ]
+    },
+    {
+      "sourceId": "wikipedia-attention-mechanism",
+      "supports": [
+        "attention-first-proposal"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "transformer-2017",
+    "bert-2018",
+    "gpt-2-safety-2019"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "curatorNote": {
+      "en": "Added during 2026 historical gap fill. Attention mechanism is arguably the single most important architectural innovation of the deep learning era.",
+      "zhHans": "2026 年历史空白补全时添加。注意力机制可以说是深度学习时代最重要的架构创新。"
+    },
+    "lastReviewed": "2026-06-29",
+    "reviewer": "editorial-agent"
+  }
+}

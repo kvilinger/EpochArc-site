@@ -1,0 +1,139 @@
+{
+  "id": "tensorflow-2015",
+  "slug": "tensorflow",
+  "title": {
+    "en": "Google open-sources TensorFlow — deep learning becomes accessible",
+    "zhHans": "Google 开源 TensorFlow——深度学习走向普及"
+  },
+  "summary": {
+    "en": "Google releases TensorFlow as an open-source deep learning framework under Apache 2.0 license. It quickly becomes the most widely adopted machine learning library, powering research and production systems across industries.",
+    "zhHans": "Google 以 Apache 2.0 协议开源 TensorFlow 深度学习框架。它迅速成为最广泛采用的机器学习库，支撑了各行业的研究与生产系统。"
+  },
+  "narrative": {
+    "en": "Before TensorFlow, deep learning frameworks were either proprietary (Google's DistBelief, Facebook's early internal tools) or academic projects (Caffe, Theano) with limited production readiness. Researchers shared code through PDFs and ad-hoc scripts.\n\nTensorFlow changed this by combining Google's production-scale engineering with an open, flexible architecture. Its computational graph model, automatic differentiation, Python API, and visualization tool TensorBoard made deep learning accessible to anyone with a laptop. Within a week of launch, it gained over 11,000 GitHub stars.\n\nTensorFlow's open-source release was a pivotal moment: it democratized access to state-of-the-art deep learning tools, accelerated research by enabling reproducible experiments, and established open-source AI infrastructure as the industry norm.",
+    "zhHans": "在 TensorFlow 之前，深度学习框架要么是闭源的（Google 的 DistBelief、Facebook 的内部工具），要么是学术项目（Caffe、Theano），不足以支撑生产环境。研究者通过 PDF 和临时脚本分享代码。\n\nTensorFlow 改变了这一切：它将 Google 的生产级工程能力与开放的灵活架构结合在一起。计算图模型、自动微分、Python API 和可视化工具 TensorBoard 让任何人只要有台笔记本就能做深度学习。上线一周内获得超过 11,000 个 GitHub Star。\n\nTensorFlow 的开源发布是一个转折点：它将最先进的深度学习工具民主化，通过可复现实验加速了研究，并确立了开源 AI 基础设施的行业标准。"
+  },
+  "date": "2015-11-09",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "November 9, 2015",
+    "zhHans": "2015 年 11 月 9 日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 9,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "categories": [
+    "product"
+  ],
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "TensorFlow made deep learning tools accessible to anyone, from students to startups to enterprise teams.",
+        "zhHans": "TensorFlow 让任何人都能使用深度学习工具——从学生到初创公司再到企业团队。"
+      },
+      "affectedGroups": [
+        "developers",
+        "researchers",
+        "students",
+        "startups"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "tensorflow-2015-blog",
+        "wikipedia-tensorflow"
+      ]
+    },
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Enabled reproducible deep learning research and scalable production deployments across industries.",
+        "zhHans": "使深度学习研究可复现，并支撑各行业的大规模生产部署。"
+      },
+      "affectedGroups": [
+        "ai researchers",
+        "machine learning engineers"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "tensorflow-2015-blog"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Open-source AI infrastructure lowered barriers to entry, accelerating the AI startup ecosystem.",
+        "zhHans": "开源 AI 基础设施降低了进入门槛，加速了 AI 创业生态。"
+      },
+      "affectedGroups": [
+        "startups",
+        "tech industry"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "wikipedia-tensorflow"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "tensorflow-open-source-date",
+      "statement": {
+        "en": "TensorFlow was released as open source on November 9, 2015 under Apache 2.0 license.",
+        "zhHans": "TensorFlow 于 2015 年 11 月 9 日以 Apache 2.0 协议开源发布。"
+      },
+      "type": "fact",
+      "confidence": "confirmed",
+      "sources": [
+        "tensorflow-2015-blog",
+        "wikipedia-tensorflow"
+      ]
+    },
+    {
+      "id": "tensorflow-github-stars",
+      "statement": {
+        "en": "TensorFlow gained over 11,000 GitHub stars in its first week after launch.",
+        "zhHans": "TensorFlow 上线第一周获得超过 11,000 个 GitHub Star。"
+      },
+      "type": "fact",
+      "confidence": "confirmed",
+      "sources": []
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "tensorflow-2015-blog",
+      "supports": [
+        "tensorflow-open-source-date"
+      ]
+    },
+    {
+      "sourceId": "wikipedia-tensorflow",
+      "supports": [
+        "tensorflow-open-source-date"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "alexnet-2012",
+    "transformer-2017",
+    "resnet-2015"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "curatorNote": {
+      "en": "Added during 2026 historical gap fill. TensorFlow marks the democratization of deep learning tools.",
+      "zhHans": "2026 年历史空白补全时添加。TensorFlow 标志着深度学习工具的民主化。"
+    },
+    "lastReviewed": "2026-06-29",
+    "reviewer": "editorial-agent"
+  }
+}

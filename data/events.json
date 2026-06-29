@@ -100,6 +100,135 @@
     ]
   },
   {
+    "id": "ai-winter-1987",
+    "slug": "ai-winter-expert-systems",
+    "title": {
+      "en": "Second AI Winter — expert systems market collapses",
+      "zhHans": "第二次 AI 寒冬——专家系统市场崩溃"
+    },
+    "summary": {
+      "en": "After a decade of hype and commercial investment in expert systems, a combination of technical limitations, unmet expectations, and funding cuts triggered the second AI winter. The Lisp machine industry collapsed, government funding was slashed, and AI research entered a prolonged downturn.",
+      "zhHans": "在长达十年的专家系统炒作和商业投资之后，技术局限、预期未达和资金削减共同触发了第二次 AI 寒冬。Lisp 机器产业崩溃，政府资助大幅削减，AI 研究进入长期低迷。"
+    },
+    "narrative": {
+      "en": "The 1980s saw an AI boom fueled by expert systems — rule-based programs that encoded human expertise for specialized tasks. Companies like Symbolics and Lisp Machines Inc. built specialized hardware. Japan's Fifth Generation Computer project promised revolutionary AI. Governments and corporations poured billions into AI research.\n\nBut expert systems had fundamental limitations: they couldn't learn, couldn't handle uncertainty, and maintaining their knowledge bases was prohibitively expensive. As these limitations became apparent, enthusiasm turned to disappointment. By 1987, the Lisp machine market collapsed. The U.S. and British governments significantly cut AI funding. Japan's Fifth Generation project failed to deliver its promises.\n\nThe second AI winter lasted roughly from 1987 to 1993. It reshaped AI research: connectionism (neural networks) emerged as an alternative to symbolic AI, and the field moved toward more rigorous, statistical methods. Many AI researchers rebranded their work as 'machine learning' or 'data science' to avoid the AI label.",
+      "zhHans": "20 世纪 80 年代，AI 的热潮由专家系统驱动——这些基于规则的编程系统将人类专业知识编码用于特定任务。Symbolics 和 Lisp Machines Inc. 等公司制造了专门的硬件。日本的第五代计算机项目承诺革命性的 AI。政府和公司向 AI 研究投入了数十亿美元。\n\n但专家系统有根本性的局限：无法学习、无法处理不确定性、知识库维护成本极高。随着这些局限逐渐显现，热情转为失望。到 1987 年，Lisp 机器市场崩溃。美英政府大幅削减 AI 资金。日本的第五代项目未能兑现承诺。\n\n第二次 AI 寒冬大约持续到 1993 年。它重塑了 AI 研究：联结主义（神经网络）作为符号 AI 的替代方案兴起，该领域转向更严谨的统计方法。许多 AI 研究者将工作更名为“机器学习”或“数据科学”以避开 AI 标签。"
+    },
+    "date": "1987-10",
+    "datePrecision": "month",
+    "displayDate": {
+      "en": "October 1987",
+      "zhHans": "1987 年 10 月"
+    },
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 8,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "categories": [
+      "commerce",
+      "governance"
+    ],
+    "impacts": [
+      {
+        "dimension": "economic_disruption",
+        "severity": 2,
+        "direction": "negative",
+        "description": {
+          "en": "Lisp machine industry collapsed; billions in government and corporate investment lost.",
+          "zhHans": "Lisp 机器产业崩溃，数十亿政府和企业投资损失。"
+        },
+        "affectedGroups": [
+          "investors",
+          "tech companies",
+          "lisp machine industry"
+        ],
+        "timeframe": "medium",
+        "sourceIds": [
+          "wikipedia-ai-winter",
+          "reuters-ai-boom-bust-2018"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "mixed",
+        "description": {
+          "en": "Ended the symbolic AI era and paved the way for the connectionist (neural network) revolution.",
+          "zhHans": "结束了符号 AI 时代，为联结主义（神经网络）革命铺平了道路。"
+        },
+        "affectedGroups": [
+          "ai researchers",
+          "academia"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "wikipedia-ai-winter"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": 1,
+        "direction": "negative",
+        "description": {
+          "en": "AI funding was slashed; the field suffered a decade-long reputation and investment drought.",
+          "zhHans": "AI 资金被大幅削减，领域经历了长达十年的人才流失和声誉危机。"
+        },
+        "affectedGroups": [
+          "ai researchers",
+          "students",
+          "general public"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "reuters-ai-boom-bust-2018"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "ai-winter-start",
+        "statement": {
+          "en": "The second AI winter is widely dated to 1987-1993, triggered by the collapse of the expert systems market.",
+          "zhHans": "第二次 AI 寒冬通常被认为发生在 1987-1993 年，由专家系统市场崩溃触发。"
+        },
+        "type": "fact",
+        "confidence": "confirmed",
+        "sources": [
+          "wikipedia-ai-winter",
+          "reuters-ai-boom-bust-2018"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "wikipedia-ai-winter",
+        "supports": [
+          "ai-winter-start"
+        ]
+      },
+      {
+        "sourceId": "reuters-ai-boom-bust-2018",
+        "supports": [
+          "ai-winter-start"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "turing-test-1950",
+      "dartmouth-1956"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "curatorNote": {
+        "en": "Added during 2026 historical gap fill. AI winter provides crucial context for understanding AI's boom-and-bust cycles.",
+        "zhHans": "2026 年历史空白补全时添加。AI 寒冬提供了理解 AI 繁荣-衰退周期的重要背景。"
+      },
+      "lastReviewed": "2026-06-29",
+      "reviewer": "editorial-agent"
+    }
+  },
+  {
     "id": "alexnet-2012",
     "slug": "alexnet",
     "title": {
@@ -1173,6 +1302,136 @@
           "summary": "Added Apple Siri AI at WWDC 2026 — Siri finally gets real AI overhaul, biggest consumer AI moment of 2026."
         }
       ]
+    }
+  },
+  {
+    "id": "attention-2014",
+    "slug": "attention-mechanism",
+    "title": {
+      "en": "Attention mechanism proposed — the foundation of modern AI architectures",
+      "zhHans": "注意力机制被提出——现代 AI 架构的基础"
+    },
+    "summary": {
+      "en": "Bahdanau, Cho, and Bengio publish 'Neural Machine Translation by Jointly Learning to Align and Translate', introducing the attention mechanism that allows neural networks to dynamically focus on relevant parts of input when generating output. This innovation directly leads to the Transformer architecture.",
+      "zhHans": "Bahdanau、Cho 和 Bengio 发表《Neural Machine Translation by Jointly Learning to Align and Translate》，提出注意力机制，让神经网络在生成输出时能动态聚焦输入相关部分。该创新直接催生了 Transformer 架构。"
+    },
+    "narrative": {
+      "en": "Early neural machine translation (NMT) used an encoder-decoder architecture with a fixed-length context vector. The encoder compressed the entire source sentence into this single vector, which became a bottleneck — the network struggled with longer sentences.\n\nBahdanau attention solved this by allowing the decoder to dynamically search for relevant parts of the source sentence at each generation step. Instead of relying on a single fixed vector, the model computed a weighted combination of all encoder hidden states, with weights determined by relevance to the current target word.\n\nThis 'soft attention' mechanism improved translation quality dramatically, especially for long sentences. But its deeper legacy is even larger: the attention mechanism became the core innovation behind the Transformer (2017), which replaced recurrence entirely with attention. Every major AI system since — GPT, BERT, DALL-E, Stable Diffusion, Claude — builds on variants of the attention mechanism introduced by this paper.",
+      "zhHans": "早期的神经机器翻译使用编码器-解码器架构，中间是一个固定长度的上下文向量。编码器将整个源句子压缩进这个单一向量，这成为瓶颈——网络在长句上表现很差。\n\nBahdanau 注意力机制解决了这个问题：解码器在每一步生成时都能动态搜索源句子中的相关部分。模型不再依赖一个固定的向量，而是计算所有编码器隐藏状态的加权组合，权重由当前目标词的相关性决定。\n\n这种“软注意力”机制大幅提升了翻译质量，尤其是在长句上。但它更深远的影响在后头：注意力机制成为 Transformer（2017）的核心创新——Transformer 完全用注意力取代了循环神经网络。此后几乎所有主流 AI 系统——GPT、BERT、DALL-E、Stable Diffusion、Claude——都建立在这篇论文提出的注意力机制变体之上。"
+    },
+    "date": "2014-09-01",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "September 1, 2014",
+      "zhHans": "2014 年 9 月 1 日"
+    },
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 10,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "categories": [
+      "capability",
+      "product"
+    ],
+    "impacts": [
+      {
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Attention is the core innovation behind Transformer and all subsequent large language models.",
+          "zhHans": "注意力机制是 Transformer 及所有后续大语言模型的核心创新。"
+        },
+        "affectedGroups": [
+          "ai researchers",
+          "nlp practitioners",
+          "deep learning community"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "arxiv-1409.0473",
+          "wikipedia-attention-mechanism"
+        ]
+      },
+      {
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Enabled neural machine translation to surpass traditional statistical methods, especially on long sentences.",
+          "zhHans": "使神经机器翻译超越传统统计方法，尤其是在长句翻译上。"
+        },
+        "affectedGroups": [
+          "nlp researchers",
+          "translation services",
+          "language industry"
+        ],
+        "timeframe": "medium",
+        "sourceIds": [
+          "arxiv-1409.0473"
+        ]
+      },
+      {
+        "dimension": "access_democratization",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Attention mechanisms became the foundation of billions of daily AI interactions through search, translation, and chatbots.",
+          "zhHans": "注意力机制成为每天数十亿次 AI 交互的基础——搜索、翻译、聊天机器人无不依赖它。"
+        },
+        "affectedGroups": [
+          "general public",
+          "developers"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "wikipedia-attention-mechanism"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "attention-first-proposal",
+        "statement": {
+          "en": "Bahdanau et al. proposed the first attention mechanism for neural machine translation in September 2014.",
+          "zhHans": "Bahdanau 等人于 2014 年 9 月首次提出用于神经机器翻译的注意力机制。"
+        },
+        "type": "fact",
+        "confidence": "confirmed",
+        "sources": [
+          "arxiv-1409.0473",
+          "wikipedia-attention-mechanism"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "arxiv-1409.0473",
+        "supports": [
+          "attention-first-proposal"
+        ]
+      },
+      {
+        "sourceId": "wikipedia-attention-mechanism",
+        "supports": [
+          "attention-first-proposal"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "transformer-2017",
+      "bert-2018",
+      "gpt-2-safety-2019"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "curatorNote": {
+        "en": "Added during 2026 historical gap fill. Attention mechanism is arguably the single most important architectural innovation of the deep learning era.",
+        "zhHans": "2026 年历史空白补全时添加。注意力机制可以说是深度学习时代最重要的架构创新。"
+      },
+      "lastReviewed": "2026-06-29",
+      "reviewer": "editorial-agent"
     }
   },
   {
@@ -7934,6 +8193,147 @@
     ]
   },
   {
+    "id": "resnet-2015",
+    "slug": "resnet",
+    "title": {
+      "en": "ResNet wins ImageNet — residual connections enable ultra-deep networks",
+      "zhHans": "ResNet 赢得 ImageNet 冠军——残差连接让超深网络成为可能"
+    },
+    "summary": {
+      "en": "Kaiming He et al. publish Deep Residual Learning for Image Recognition, introducing residual connections that allow training of neural networks with over 150 layers. ResNet achieves 3.57% top-5 error on ImageNet, surpassing human-level performance for the first time on this benchmark.",
+      "zhHans": "何恺明等人发表《Deep Residual Learning for Image Recognition》，提出残差连接，使训练超过 150 层的神经网络成为可能。ResNet 在 ImageNet 上达到 3.57% 的 top-5 错误率，首次在该基准上超越人类水平。"
+    },
+    "narrative": {
+      "en": "Before ResNet, deep neural networks suffered from the degradation problem: adding more layers actually increased training error, making it impossible to train very deep networks. Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun at Microsoft Research proposed residual learning—instead of learning the desired mapping directly, the network learns the residual (difference) between input and output via skip connections.\n\nThis seemingly simple architectural change had profound implications. It enabled networks with 152 layers (8x deeper than VGG nets) but with lower complexity. An ensemble of ResNets won 1st place in all five ILSVRC 2015 competitions: classification, detection, localization, and COCO detection and segmentation.\n\nResidual connections became a universal building block in virtually all subsequent deep learning architectures—Transformers, GPT, BERT, AlphaGo Zero, AlphaFold—making ResNet one of the most cited and influential deep learning papers ever published.",
+      "zhHans": "在 ResNet 之前，深度神经网络面临退化问题：增加层数反而使训练误差上升，无法训练真正的深层网络。微软研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习——不直接学习期望的映射，而是通过跳跃连接学习输入与输出之间的残差。\n\n这一看似简单的架构改动产生了深远影响。它让 152 层的网络成为可能（比 VGG 深 8 倍），计算复杂度反而更低。ResNet 集成模型赢得了 ILSVRC 2015 全部五个赛项的第一名：分类、检测、定位，以及 COCO 检测和分割。\n\n残差连接成为几乎所有后续深度学习架构的通用构建模块——Transformer、GPT、BERT、AlphaGo Zero、AlphaFold 都依赖它。ResNet 也因此成为有史以来被引用最多、影响最深远的深度学习论文之一。"
+    },
+    "date": "2015-12-10",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "December 10, 2015",
+      "zhHans": "2015 年 12 月 10 日"
+    },
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 9,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "categories": [
+      "capability"
+    ],
+    "impacts": [
+      {
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Residual connections became a universal building block in nearly all subsequent neural network architectures.",
+          "zhHans": "残差连接几乎成为所有后续神经网络架构的标准组件。"
+        },
+        "affectedGroups": [
+          "ai researchers",
+          "machine learning engineers"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "arxiv-1512.03385"
+        ]
+      },
+      {
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Enabled training of networks 8× deeper than previously possible, achieving superhuman ImageNet accuracy.",
+          "zhHans": "使得训练比之前深 8 倍的网络成为可能，在 ImageNet 上达到超人准确率。"
+        },
+        "affectedGroups": [
+          "computer vision researchers",
+          "deep learning practitioners"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "arxiv-1512.03385"
+        ]
+      },
+      {
+        "dimension": "access_democratization",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "The simplicity of residual connections made deep networks easier to train, lowering the barrier for practitioners.",
+          "zhHans": "残差连接简化了深度网络的训练，降低了实践者的入门门槛。"
+        },
+        "affectedGroups": [
+          "machine learning practitioners",
+          "students"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "wikipedia-resnet"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "resnet-imagenet-first",
+        "statement": {
+          "en": "ResNet won 1st place in ILSVRC 2015 classification with 3.57% top-5 error.",
+          "zhHans": "ResNet 以 3.57% top-5 错误率赢得 ILSVRC 2015 图像分类第一名。"
+        },
+        "type": "fact",
+        "confidence": "confirmed",
+        "sources": [
+          "arxiv-1512.03385",
+          "wikipedia-resnet"
+        ]
+      },
+      {
+        "id": "resnet-152-layer",
+        "statement": {
+          "en": "ResNet-152 is 8× deeper than VGG nets while having lower computational complexity.",
+          "zhHans": "ResNet-152 比 VGG 深 8 倍，但计算复杂度更低。"
+        },
+        "type": "fact",
+        "confidence": "confirmed",
+        "sources": [
+          "arxiv-1512.03385"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "arxiv-1512.03385",
+        "supports": [
+          "resnet-imagenet-first",
+          "resnet-152-layer"
+        ]
+      },
+      {
+        "sourceId": "wikipedia-resnet",
+        "supports": [
+          "resnet-imagenet-first"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "alexnet-2012",
+      "transformer-2017",
+      "dqn-atari-2013"
+    ],
+    "relatedForecasts": [
+      "ai-native-discovery-pipelines"
+    ],
+    "editorial": {
+      "curatorNote": {
+        "en": "Added during 2026 historical gap fill. ResNet is foundational to the deep learning era.",
+        "zhHans": "2026 年历史空白补全时添加。ResNet 是深度学习时代的基础性工作。"
+      },
+      "lastReviewed": "2026-06-29",
+      "reviewer": "editorial-agent"
+    }
+  },
+  {
     "id": "sam-altman-ouster-2023",
     "slug": "sam-altman-ouster",
     "title": {
@@ -8996,6 +9396,145 @@
       "safety",
       "commerce"
     ]
+  },
+  {
+    "id": "tensorflow-2015",
+    "slug": "tensorflow",
+    "title": {
+      "en": "Google open-sources TensorFlow — deep learning becomes accessible",
+      "zhHans": "Google 开源 TensorFlow——深度学习走向普及"
+    },
+    "summary": {
+      "en": "Google releases TensorFlow as an open-source deep learning framework under Apache 2.0 license. It quickly becomes the most widely adopted machine learning library, powering research and production systems across industries.",
+      "zhHans": "Google 以 Apache 2.0 协议开源 TensorFlow 深度学习框架。它迅速成为最广泛采用的机器学习库，支撑了各行业的研究与生产系统。"
+    },
+    "narrative": {
+      "en": "Before TensorFlow, deep learning frameworks were either proprietary (Google's DistBelief, Facebook's early internal tools) or academic projects (Caffe, Theano) with limited production readiness. Researchers shared code through PDFs and ad-hoc scripts.\n\nTensorFlow changed this by combining Google's production-scale engineering with an open, flexible architecture. Its computational graph model, automatic differentiation, Python API, and visualization tool TensorBoard made deep learning accessible to anyone with a laptop. Within a week of launch, it gained over 11,000 GitHub stars.\n\nTensorFlow's open-source release was a pivotal moment: it democratized access to state-of-the-art deep learning tools, accelerated research by enabling reproducible experiments, and established open-source AI infrastructure as the industry norm.",
+      "zhHans": "在 TensorFlow 之前，深度学习框架要么是闭源的（Google 的 DistBelief、Facebook 的内部工具），要么是学术项目（Caffe、Theano），不足以支撑生产环境。研究者通过 PDF 和临时脚本分享代码。\n\nTensorFlow 改变了这一切：它将 Google 的生产级工程能力与开放的灵活架构结合在一起。计算图模型、自动微分、Python API 和可视化工具 TensorBoard 让任何人只要有台笔记本就能做深度学习。上线一周内获得超过 11,000 个 GitHub Star。\n\nTensorFlow 的开源发布是一个转折点：它将最先进的深度学习工具民主化，通过可复现实验加速了研究，并确立了开源 AI 基础设施的行业标准。"
+    },
+    "date": "2015-11-09",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "November 9, 2015",
+      "zhHans": "2015 年 11 月 9 日"
+    },
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 9,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "categories": [
+      "product"
+    ],
+    "impacts": [
+      {
+        "dimension": "access_democratization",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "TensorFlow made deep learning tools accessible to anyone, from students to startups to enterprise teams.",
+          "zhHans": "TensorFlow 让任何人都能使用深度学习工具——从学生到初创公司再到企业团队。"
+        },
+        "affectedGroups": [
+          "developers",
+          "researchers",
+          "students",
+          "startups"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "tensorflow-2015-blog",
+          "wikipedia-tensorflow"
+        ]
+      },
+      {
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Enabled reproducible deep learning research and scalable production deployments across industries.",
+          "zhHans": "使深度学习研究可复现，并支撑各行业的大规模生产部署。"
+        },
+        "affectedGroups": [
+          "ai researchers",
+          "machine learning engineers"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "tensorflow-2015-blog"
+        ]
+      },
+      {
+        "dimension": "economic_disruption",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Open-source AI infrastructure lowered barriers to entry, accelerating the AI startup ecosystem.",
+          "zhHans": "开源 AI 基础设施降低了进入门槛，加速了 AI 创业生态。"
+        },
+        "affectedGroups": [
+          "startups",
+          "tech industry"
+        ],
+        "timeframe": "long",
+        "sourceIds": [
+          "wikipedia-tensorflow"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "tensorflow-open-source-date",
+        "statement": {
+          "en": "TensorFlow was released as open source on November 9, 2015 under Apache 2.0 license.",
+          "zhHans": "TensorFlow 于 2015 年 11 月 9 日以 Apache 2.0 协议开源发布。"
+        },
+        "type": "fact",
+        "confidence": "confirmed",
+        "sources": [
+          "tensorflow-2015-blog",
+          "wikipedia-tensorflow"
+        ]
+      },
+      {
+        "id": "tensorflow-github-stars",
+        "statement": {
+          "en": "TensorFlow gained over 11,000 GitHub stars in its first week after launch.",
+          "zhHans": "TensorFlow 上线第一周获得超过 11,000 个 GitHub Star。"
+        },
+        "type": "fact",
+        "confidence": "confirmed",
+        "sources": []
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "tensorflow-2015-blog",
+        "supports": [
+          "tensorflow-open-source-date"
+        ]
+      },
+      {
+        "sourceId": "wikipedia-tensorflow",
+        "supports": [
+          "tensorflow-open-source-date"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "alexnet-2012",
+      "transformer-2017",
+      "resnet-2015"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "curatorNote": {
+        "en": "Added during 2026 historical gap fill. TensorFlow marks the democratization of deep learning tools.",
+        "zhHans": "2026 年历史空白补全时添加。TensorFlow 标志着深度学习工具的民主化。"
+      },
+      "lastReviewed": "2026-06-29",
+      "reviewer": "editorial-agent"
+    }
   },
   {
     "id": "transformer-2017",

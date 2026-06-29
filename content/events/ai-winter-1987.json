@@ -1,0 +1,129 @@
+{
+  "id": "ai-winter-1987",
+  "slug": "ai-winter-expert-systems",
+  "title": {
+    "en": "Second AI Winter — expert systems market collapses",
+    "zhHans": "第二次 AI 寒冬——专家系统市场崩溃"
+  },
+  "summary": {
+    "en": "After a decade of hype and commercial investment in expert systems, a combination of technical limitations, unmet expectations, and funding cuts triggered the second AI winter. The Lisp machine industry collapsed, government funding was slashed, and AI research entered a prolonged downturn.",
+    "zhHans": "在长达十年的专家系统炒作和商业投资之后，技术局限、预期未达和资金削减共同触发了第二次 AI 寒冬。Lisp 机器产业崩溃，政府资助大幅削减，AI 研究进入长期低迷。"
+  },
+  "narrative": {
+    "en": "The 1980s saw an AI boom fueled by expert systems — rule-based programs that encoded human expertise for specialized tasks. Companies like Symbolics and Lisp Machines Inc. built specialized hardware. Japan's Fifth Generation Computer project promised revolutionary AI. Governments and corporations poured billions into AI research.\n\nBut expert systems had fundamental limitations: they couldn't learn, couldn't handle uncertainty, and maintaining their knowledge bases was prohibitively expensive. As these limitations became apparent, enthusiasm turned to disappointment. By 1987, the Lisp machine market collapsed. The U.S. and British governments significantly cut AI funding. Japan's Fifth Generation project failed to deliver its promises.\n\nThe second AI winter lasted roughly from 1987 to 1993. It reshaped AI research: connectionism (neural networks) emerged as an alternative to symbolic AI, and the field moved toward more rigorous, statistical methods. Many AI researchers rebranded their work as 'machine learning' or 'data science' to avoid the AI label.",
+    "zhHans": "20 世纪 80 年代，AI 的热潮由专家系统驱动——这些基于规则的编程系统将人类专业知识编码用于特定任务。Symbolics 和 Lisp Machines Inc. 等公司制造了专门的硬件。日本的第五代计算机项目承诺革命性的 AI。政府和公司向 AI 研究投入了数十亿美元。\n\n但专家系统有根本性的局限：无法学习、无法处理不确定性、知识库维护成本极高。随着这些局限逐渐显现，热情转为失望。到 1987 年，Lisp 机器市场崩溃。美英政府大幅削减 AI 资金。日本的第五代项目未能兑现承诺。\n\n第二次 AI 寒冬大约持续到 1993 年。它重塑了 AI 研究：联结主义（神经网络）作为符号 AI 的替代方案兴起，该领域转向更严谨的统计方法。许多 AI 研究者将工作更名为“机器学习”或“数据科学”以避开 AI 标签。"
+  },
+  "date": "1987-10",
+  "datePrecision": "month",
+  "displayDate": {
+    "en": "October 1987",
+    "zhHans": "1987 年 10 月"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 8,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "categories": [
+    "commerce",
+    "governance"
+  ],
+  "impacts": [
+    {
+      "dimension": "economic_disruption",
+      "severity": 2,
+      "direction": "negative",
+      "description": {
+        "en": "Lisp machine industry collapsed; billions in government and corporate investment lost.",
+        "zhHans": "Lisp 机器产业崩溃，数十亿政府和企业投资损失。"
+      },
+      "affectedGroups": [
+        "investors",
+        "tech companies",
+        "lisp machine industry"
+      ],
+      "timeframe": "medium",
+      "sourceIds": [
+        "wikipedia-ai-winter",
+        "reuters-ai-boom-bust-2018"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "mixed",
+      "description": {
+        "en": "Ended the symbolic AI era and paved the way for the connectionist (neural network) revolution.",
+        "zhHans": "结束了符号 AI 时代，为联结主义（神经网络）革命铺平了道路。"
+      },
+      "affectedGroups": [
+        "ai researchers",
+        "academia"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "wikipedia-ai-winter"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": 1,
+      "direction": "negative",
+      "description": {
+        "en": "AI funding was slashed; the field suffered a decade-long reputation and investment drought.",
+        "zhHans": "AI 资金被大幅削减，领域经历了长达十年的人才流失和声誉危机。"
+      },
+      "affectedGroups": [
+        "ai researchers",
+        "students",
+        "general public"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "reuters-ai-boom-bust-2018"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "ai-winter-start",
+      "statement": {
+        "en": "The second AI winter is widely dated to 1987-1993, triggered by the collapse of the expert systems market.",
+        "zhHans": "第二次 AI 寒冬通常被认为发生在 1987-1993 年，由专家系统市场崩溃触发。"
+      },
+      "type": "fact",
+      "confidence": "confirmed",
+      "sources": [
+        "wikipedia-ai-winter",
+        "reuters-ai-boom-bust-2018"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "wikipedia-ai-winter",
+      "supports": [
+        "ai-winter-start"
+      ]
+    },
+    {
+      "sourceId": "reuters-ai-boom-bust-2018",
+      "supports": [
+        "ai-winter-start"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "turing-test-1950",
+    "dartmouth-1956"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "curatorNote": {
+      "en": "Added during 2026 historical gap fill. AI winter provides crucial context for understanding AI's boom-and-bust cycles.",
+      "zhHans": "2026 年历史空白补全时添加。AI 寒冬提供了理解 AI 繁荣-衰退周期的重要背景。"
+    },
+    "lastReviewed": "2026-06-29",
+    "reviewer": "editorial-agent"
+  }
+}

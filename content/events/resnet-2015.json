@@ -1,0 +1,141 @@
+{
+  "id": "resnet-2015",
+  "slug": "resnet",
+  "title": {
+    "en": "ResNet wins ImageNet — residual connections enable ultra-deep networks",
+    "zhHans": "ResNet 赢得 ImageNet 冠军——残差连接让超深网络成为可能"
+  },
+  "summary": {
+    "en": "Kaiming He et al. publish Deep Residual Learning for Image Recognition, introducing residual connections that allow training of neural networks with over 150 layers. ResNet achieves 3.57% top-5 error on ImageNet, surpassing human-level performance for the first time on this benchmark.",
+    "zhHans": "何恺明等人发表《Deep Residual Learning for Image Recognition》，提出残差连接，使训练超过 150 层的神经网络成为可能。ResNet 在 ImageNet 上达到 3.57% 的 top-5 错误率，首次在该基准上超越人类水平。"
+  },
+  "narrative": {
+    "en": "Before ResNet, deep neural networks suffered from the degradation problem: adding more layers actually increased training error, making it impossible to train very deep networks. Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun at Microsoft Research proposed residual learning—instead of learning the desired mapping directly, the network learns the residual (difference) between input and output via skip connections.\n\nThis seemingly simple architectural change had profound implications. It enabled networks with 152 layers (8x deeper than VGG nets) but with lower complexity. An ensemble of ResNets won 1st place in all five ILSVRC 2015 competitions: classification, detection, localization, and COCO detection and segmentation.\n\nResidual connections became a universal building block in virtually all subsequent deep learning architectures—Transformers, GPT, BERT, AlphaGo Zero, AlphaFold—making ResNet one of the most cited and influential deep learning papers ever published.",
+    "zhHans": "在 ResNet 之前，深度神经网络面临退化问题：增加层数反而使训练误差上升，无法训练真正的深层网络。微软研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习——不直接学习期望的映射，而是通过跳跃连接学习输入与输出之间的残差。\n\n这一看似简单的架构改动产生了深远影响。它让 152 层的网络成为可能（比 VGG 深 8 倍），计算复杂度反而更低。ResNet 集成模型赢得了 ILSVRC 2015 全部五个赛项的第一名：分类、检测、定位，以及 COCO 检测和分割。\n\n残差连接成为几乎所有后续深度学习架构的通用构建模块——Transformer、GPT、BERT、AlphaGo Zero、AlphaFold 都依赖它。ResNet 也因此成为有史以来被引用最多、影响最深远的深度学习论文之一。"
+  },
+  "date": "2015-12-10",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "December 10, 2015",
+    "zhHans": "2015 年 12 月 10 日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 9,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "categories": [
+    "capability"
+  ],
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Residual connections became a universal building block in nearly all subsequent neural network architectures.",
+        "zhHans": "残差连接几乎成为所有后续神经网络架构的标准组件。"
+      },
+      "affectedGroups": [
+        "ai researchers",
+        "machine learning engineers"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "arxiv-1512.03385"
+      ]
+    },
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Enabled training of networks 8× deeper than previously possible, achieving superhuman ImageNet accuracy.",
+        "zhHans": "使得训练比之前深 8 倍的网络成为可能，在 ImageNet 上达到超人准确率。"
+      },
+      "affectedGroups": [
+        "computer vision researchers",
+        "deep learning practitioners"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "arxiv-1512.03385"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "The simplicity of residual connections made deep networks easier to train, lowering the barrier for practitioners.",
+        "zhHans": "残差连接简化了深度网络的训练，降低了实践者的入门门槛。"
+      },
+      "affectedGroups": [
+        "machine learning practitioners",
+        "students"
+      ],
+      "timeframe": "long",
+      "sourceIds": [
+        "wikipedia-resnet"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "resnet-imagenet-first",
+      "statement": {
+        "en": "ResNet won 1st place in ILSVRC 2015 classification with 3.57% top-5 error.",
+        "zhHans": "ResNet 以 3.57% top-5 错误率赢得 ILSVRC 2015 图像分类第一名。"
+      },
+      "type": "fact",
+      "confidence": "confirmed",
+      "sources": [
+        "arxiv-1512.03385",
+        "wikipedia-resnet"
+      ]
+    },
+    {
+      "id": "resnet-152-layer",
+      "statement": {
+        "en": "ResNet-152 is 8× deeper than VGG nets while having lower computational complexity.",
+        "zhHans": "ResNet-152 比 VGG 深 8 倍，但计算复杂度更低。"
+      },
+      "type": "fact",
+      "confidence": "confirmed",
+      "sources": [
+        "arxiv-1512.03385"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "arxiv-1512.03385",
+      "supports": [
+        "resnet-imagenet-first",
+        "resnet-152-layer"
+      ]
+    },
+    {
+      "sourceId": "wikipedia-resnet",
+      "supports": [
+        "resnet-imagenet-first"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "alexnet-2012",
+    "transformer-2017",
+    "dqn-atari-2013"
+  ],
+  "relatedForecasts": [
+    "ai-native-discovery-pipelines"
+  ],
+  "editorial": {
+    "curatorNote": {
+      "en": "Added during 2026 historical gap fill. ResNet is foundational to the deep learning era.",
+      "zhHans": "2026 年历史空白补全时添加。ResNet 是深度学习时代的基础性工作。"
+    },
+    "lastReviewed": "2026-06-29",
+    "reviewer": "editorial-agent"
+  }
+}
