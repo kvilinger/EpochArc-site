@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && python3 scripts/build_events.py",
+    "build": "vite build && python3 scripts/build_events.py && python3 scripts/build_arcs.py",
     "preview": "vite preview"
   },
   "devDependencies": {
