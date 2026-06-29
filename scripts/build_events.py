@@ -459,7 +459,32 @@ if os.path.exists(TEMPLATE_FILE):
         con_zh = labels['consensus'].get(con, {}).get('zhHans', con)
         
         # 5. 替换占位符并写出物理文件
+        schema_data = {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": copy_title_en,
+            "description": copy_desc_en,
+            "datePublished": e['date'],
+            "dateModified": e.get('editorial', {}).get('updatedAt', e['date']),
+            "author": {
+                "@type": "Organization",
+                "name": "EpochArc",
+                "url": "https://epoch-arc.com"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "EpochArc",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://epoch-arc.com/assets/logo-icon.svg"
+                }
+            },
+            "mainEntityOfPage": f"https://epoch-arc.com/events/{eid}/"
+        }
+        schema_json_ld = f'<script type="application/ld+json">\n{json.dumps(schema_data, ensure_ascii=False, indent=2)}\n</script>'
+
         page_html = template_content
+        page_html = page_html.replace('{{SCHEMA_JSON_LD}}', schema_json_ld)
         page_html = page_html.replace('{{SEO_TITLE}}', copy_title_en)
         page_html = page_html.replace('{{SEO_DESC}}', copy_desc_en)
         page_html = page_html.replace('{{SLUG}}', eid)
@@ -548,4 +573,36 @@ with open(os.path.join(ROOT_DIR, 'data', 'sources.json'), 'r', encoding='utf-8')
 inject_fallback_data(os.path.join(ROOT_DIR, 'index.html'), forecasts_data_str, events_data_str, sources_data_str)
 inject_fallback_data(os.path.join(ROOT_DIR, 'dist', 'index.html'), forecasts_data_str, events_data_str, sources_data_str)
 print("✅ Injected fallback data into index.html and dist/index.html")
+
+# ─────────────────── 自动生成 sitemap.xml ───────────────────
+def generate_sitemap(events):
+    import datetime
+    today = datetime.date.today().isoformat()
+    
+    xml_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        f'  <url><loc>https://epoch-arc.com/</loc><lastmod>{today}</lastmod></url>',
+        f'  <url><loc>https://epoch-arc.com/methods.html</loc><lastmod>{today}</lastmod></url>'
+    ]
+    
+    for e in events:
+        slug = e['id']
+        xml_lines.append(f'  <url><loc>https://epoch-arc.com/events/{slug}/</loc><lastmod>{today}</lastmod></url>')
+        
+    xml_lines.append('</urlset>')
+    sitemap_content = '\n'.join(xml_lines)
+    
+    # 写入根目录下
+    with open(os.path.join(ROOT_DIR, 'sitemap.xml'), 'w', encoding='utf-8') as fh:
+        fh.write(sitemap_content)
+    # 如果 dist/ 存在，同样写入 dist/
+    if os.path.exists(DIST_DIR):
+        with open(os.path.join(DIST_DIR, 'sitemap.xml'), 'w', encoding='utf-8') as fh:
+            fh.write(sitemap_content)
+            
+    print("✅ Generated sitemap.xml with physical routes successfully")
+
+generate_sitemap(events)
+
 
