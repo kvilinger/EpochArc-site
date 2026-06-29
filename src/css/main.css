@@ -1,5 +1,9 @@
 @import "./global.css";
 
+[id^="item-"] {
+  scroll-margin-top: 88px;
+}
+
     .predict-card.is-expanded .predict-header p {
       max-width: 72ch;
       display: block;

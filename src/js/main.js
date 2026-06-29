@@ -946,7 +946,9 @@ const LANGUAGES = {
       requestAnimationFrame(() => {
         const node = document.getElementById(`item-${id}`);
         if (node) {
-          node.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          if (typeof window.hideEventTooltip === 'function') window.hideEventTooltip();
+          if (typeof window.hideGlobalTooltip === 'function') window.hideGlobalTooltip();
+          node.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     };
@@ -1460,12 +1462,12 @@ const LANGUAGES = {
               <ul class="source-list">${sourceItems}</ul>
             </div>
             ${relatedSectionHTML}
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: var(--gap-md); margin-top: var(--gap-lg); border-top: 1px solid color-mix(in oklch, var(--border) 82%, transparent); padding-top: 12px;">
-              <a class="source-title-link" href="/events/${e.id}" style="font-size: 13px; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
-                <span>${isChineseContent() ? '查看独立详情页' : 'View standalone detail page'}</span>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: var(--gap-md); margin-top: var(--gap-lg); border-top: 1px solid color-mix(in oklch, var(--border) 82%, transparent); padding-top: 12px; padding-bottom: 2px;">
+              <a class="source-title-link" href="events/${e.id}/index.html" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               </a>
-              <button class="details-collapse" type="button" onclick="collapseDetailsFromFooter(event, '${e.id}')" style="margin-top: 0; border-top: 0; padding: 0; width: auto; font-weight: 700; display: inline-flex; align-items: center; gap: 2px;">${isChineseContent() ? '收起' : 'Collapse'}</button>
+              <button class="details-collapse" type="button" onclick="collapseDetailsFromFooter(event, '${e.id}')" style="margin-top: 0; border-top: 0; padding: 0; width: auto; font-weight: 700; display: inline-flex; align-items: center; gap: 2px; margin-right: 8px;">${isChineseContent() ? '收起' : 'Collapse'}</button>
             </div>
           </div>
         </div>
@@ -1474,6 +1476,8 @@ const LANGUAGES = {
 
     /* ─── Related Events Navigation & SVG Highlight ─────────────────── */
     window.navigateToEvent = function(id) {
+      if (typeof window.hideEventTooltip === 'function') window.hideEventTooltip();
+      if (typeof window.hideGlobalTooltip === 'function') window.hideGlobalTooltip();
       state.openEventIds.clear();
       state.openEventIds.add(id);
       renderTimeline();
@@ -1481,7 +1485,7 @@ const LANGUAGES = {
       setTimeout(() => {
         const targetItem = document.getElementById(`item-${id}`);
         if (targetItem) {
-          targetItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
           const card = targetItem.querySelector('.timeline-card-l3, .timeline-card-l2, .timeline-card-l1');
           if (card) {
             card.classList.add('flash-highlight-active');
@@ -1648,7 +1652,7 @@ const LANGUAGES = {
         setTimeout(() => {
           const targetItem = document.getElementById(`item-${eventId}`);
           if (targetItem) {
-            targetItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            targetItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
         }, 150);
       }

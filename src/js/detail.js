@@ -80,7 +80,7 @@ if (themeToggle) {
 
 // 关联事件跳转
 window.navigateToEvent = function(id) {
-  window.location.href = `/events/${id}`;
+  window.location.href = `../${id}/index.html`;
 };
 
 // SVG 拓扑图 Hover 连线高亮
