@@ -112,8 +112,8 @@ const LANGUAGES = {
     }
 
     const state = {
-      lang: normalizeLang(localStorage.getItem('od-lang') || detectBrowserLang()),
-      theme: localStorage.getItem('od-theme') || 'light', // 'light' or 'dark'
+      lang: normalizeLang(localStorage.getItem('epocharc-lang') || detectBrowserLang()),
+      theme: localStorage.getItem('epocharc-theme') || 'light', // 'light' or 'dark'
       filters: {
         significance: 'all',
         category: 'all',
@@ -478,7 +478,7 @@ const LANGUAGES = {
 
     elements.langSelect.addEventListener('change', (event) => {
       state.lang = normalizeLang(event.target.value);
-      localStorage.setItem('od-lang', state.lang);
+      localStorage.setItem('epocharc-lang', state.lang);
       updateLocale();
     });
 
@@ -497,12 +497,14 @@ const LANGUAGES = {
 
     elements.themeToggle.addEventListener('click', () => {
       state.theme = state.theme === 'light' ? 'dark' : 'light';
-      localStorage.setItem('od-theme', state.theme);
+      localStorage.setItem('epocharc-theme', state.theme);
       updateTheme();
     });
 
     function updateThemeLabels() {
-      elements.themeText.innerText = state.theme === 'light' ? text('darkMode') : text('lightMode');
+      if (elements.themeText) {
+        elements.themeText.innerText = state.theme === 'light' ? text('darkMode') : text('lightMode');
+      }
     }
 
     function renderStatus(container, title, body, linkText) {

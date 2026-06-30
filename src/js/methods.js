@@ -8,8 +8,8 @@ function detectBrowserLang() {
 }
 
 const state = {
-  lang: normalizeLang(localStorage.getItem('od-lang') || detectBrowserLang()),
-  theme: localStorage.getItem('od-theme') || 'light'
+  lang: normalizeLang(localStorage.getItem('epocharc-lang') || detectBrowserLang()),
+  theme: localStorage.getItem('epocharc-theme') || 'light'
 };
 
 const langSelect = document.getElementById('langSelect');
@@ -65,7 +65,7 @@ function updateTheme() {
 if (langSelect) {
   langSelect.addEventListener('change', (event) => {
     state.lang = normalizeLang(event.target.value);
-    localStorage.setItem('od-lang', state.lang);
+    localStorage.setItem('epocharc-lang', state.lang);
     updateLocale();
   });
 }
@@ -74,7 +74,7 @@ const themeToggle = document.getElementById('themeToggle');
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
     state.theme = state.theme === 'light' ? 'dark' : 'light';
-    localStorage.setItem('od-theme', state.theme);
+    localStorage.setItem('epocharc-theme', state.theme);
     updateTheme();
   });
 }
