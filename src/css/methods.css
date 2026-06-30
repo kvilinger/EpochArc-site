@@ -1,4 +1,4 @@
-@import "./global.css";
+@import "./global.css?v=2.2.8";
 
 main {
   padding: 48px 0 80px;
@@ -140,9 +140,22 @@ tr:last-child td {
   line-height: 1.5;
 }
 footer {
-  padding-block: var(--gap-lg);
+  height: 64px;
+  display: flex;
+  align-items: center;
   border-top: 1px solid var(--border);
-  margin-top: 64px;
+  margin-top: 0;
   color: var(--muted);
   font-size: 13px;
+}
+@media (max-width: 680px) {
+  footer {
+    height: auto;
+    padding-block: var(--gap-md);
+  }
+  footer .row-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 }

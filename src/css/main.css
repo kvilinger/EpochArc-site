@@ -1747,9 +1747,11 @@
 
     /* ─── Footer ────────────────────────────────────────────────────── */
     .pagefoot {
-      padding-block: var(--gap-xl);
+      height: 64px;
+      display: flex;
+      align-items: center;
       border-top: 1px solid var(--border);
-      margin-top: var(--gap-xl);
+      margin-top: 0;
       color: var(--muted);
       font-size: var(--fs-meta);
       transition: border-color var(--transition-smooth);
@@ -1766,8 +1768,14 @@
       text-underline-offset: 3px;
     }
     @media (max-width: 680px) {
+      .pagefoot {
+        height: auto;
+        padding-block: var(--gap-md);
+      }
       .pagefoot .row-between {
+        flex-direction: column;
         align-items: flex-start;
+        gap: 12px;
       }
       .footer-links {
         justify-content: flex-start;
