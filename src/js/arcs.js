@@ -11,11 +11,34 @@ window.navigateToEvent = function(id) {
 // 渐进式增强：用全局事件代理拦截所有 .arc-anchor-event 事件卡片的点击，自动兼容各种协议与 URL 斜杠路径
 document.addEventListener('click', function(e) {
   const anchor = e.target.closest('.arc-anchor-event');
+  const logo = e.target.closest('.logo');
+  const arcsBtn = e.target.closest('.nav-arcs-btn');
+
   if (anchor) {
     e.preventDefault();
     const id = anchor.getAttribute('data-event-id');
     if (id) {
       window.navigateToEvent(id);
+    }
+  }
+
+  if (logo) {
+    e.preventDefault();
+    if (window.location.protocol === 'file:') {
+      const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
+      window.location.href = isSubDir ? '../../index.html' : 'index.html';
+    } else {
+      window.location.href = '/';
+    }
+  }
+
+  if (arcsBtn) {
+    e.preventDefault();
+    if (window.location.protocol === 'file:') {
+      const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
+      window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
+    } else {
+      window.location.href = '/arcs.html';
     }
   }
 });

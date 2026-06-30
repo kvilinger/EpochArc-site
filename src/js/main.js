@@ -1781,6 +1781,49 @@ const LANGUAGES = {
           }, 150);
         }, 300);
       }
+
+      // 全局顶导路由自适应分流，完美规避 http 线上各级 URL 部署 404
+      document.addEventListener('click', function(e) {
+        const logo = e.target.closest('.logo');
+        const arcsBtn = e.target.closest('.nav-arcs-btn');
+        const detailLink = e.target.closest('.source-title-link');
+        
+        if (logo) {
+          e.preventDefault();
+          if (window.location.protocol === 'file:') {
+            const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
+            window.location.href = isSubDir ? '../../index.html' : 'index.html';
+          } else {
+            window.location.href = '/';
+          }
+        }
+        
+        if (arcsBtn) {
+          e.preventDefault();
+          if (window.location.protocol === 'file:') {
+            const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
+            window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
+          } else {
+            window.location.href = '/arcs.html';
+          }
+        }
+
+        if (detailLink) {
+          const href = detailLink.getAttribute('href');
+          if (href && href.startsWith('events/')) {
+            e.preventDefault();
+            const parts = href.split('/');
+            const id = parts[1];
+            if (id) {
+              if (window.location.protocol === 'file:') {
+                window.location.href = `events/${id}/index.html`;
+              } else {
+                window.location.href = `/events/${id}/index.html`;
+              }
+            }
+          }
+        }
+      });
     }
 
     init();
