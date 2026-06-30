@@ -280,7 +280,7 @@ else:
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT change 'arc-anchor-event' class name or its children structure. -->
                   <!-- It must strictly match CSS styling rules in arcs.css. -->
                   <!-- Make sure to link to events/{ev_id}/index.html detail pages directly. -->
-                  <a class="arc-anchor-event" href="../../events/{ev_id}/index.html">
+                  <a class="arc-anchor-event" data-event-id="{ev_id}" href="../../events/{ev_id}/index.html">
                     <span class="sig-dot l{ev_sig}"></span>
                     <span class="event-date">{ev_date}</span>
                     <span class="event-name" data-zh="{html_escape(ev_title_zh)}" data-en="{html_escape(ev_title_en)}">{html_escape(ev_title_en)}</span>
