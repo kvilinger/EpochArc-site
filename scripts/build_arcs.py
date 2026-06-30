@@ -158,8 +158,51 @@ else:
     # 按 significance 排序 (1=最高 → 排前面)
     sorted_arcs = sorted(arcs, key=lambda a: get_arc_significance(a))
 
-    card_items = []
+    # 智能评估每个专题的内容分量评分，动态分配卡片大小
+    # 评分公式：事件数量 * 1.5 + 描述字数 * 0.5 + 章节数量 * 1.0
+    scored_arcs = []
     for a in sorted_arcs:
+        chapter_count = len(a.get('chapters', []))
+        all_events = collect_all_anchor_events(a)
+        event_count = len(all_events)
+        subtitle_zh = a['subtitle']['zhHans']
+        score = event_count * 1.5 + len(subtitle_zh) * 0.5 + chapter_count * 1.0
+        scored_arcs.append((score, a))
+
+    # 按内容得分由高到低排序
+    scored_arcs.sort(key=lambda item: -item[0])
+
+    # 针对 6 个专题完美拼接的 3 行 Bento Grid 拼图插值布局
+    if len(sorted_arcs) == 6:
+        large_list = [scored_arcs[0][1], scored_arcs[1][1]]       # 得分最高的前 2 名设为 large (4列)
+        medium_h_list = [scored_arcs[2][1], scored_arcs[3][1]]    # 中间 2 名设为 medium-h (3列)
+        medium_v_list = [scored_arcs[4][1], scored_arcs[5][1]]    # 得分最低/内容最少的 2 名设为 medium-v (2列)
+        
+        # 按照 [large_1, medium-v_1, large_2, medium-v_2, medium-h_1, medium-h_2]
+        # 的物理渲染顺序排序，正好凑成 6+6+6 完美三行无缺口拼图
+        arranged_arcs = [
+            (large_list[0], "size-large"),
+            (medium_v_list[0], "size-medium-v"),
+            (large_list[1], "size-large"),
+            (medium_v_list[1], "size-medium-v"),
+            (medium_h_list[0], "size-medium-h"),
+            (medium_h_list[1], "size-medium-h")
+        ]
+    else:
+        # 防御性回退：普通轮询分配
+        arranged_arcs = []
+        for i, a in enumerate(sorted_arcs):
+            idx = i % 4
+            if idx == 0:
+                bento_class = "size-large"
+            elif idx == 1:
+                bento_class = "size-medium-v"
+            else:
+                bento_class = "size-medium-h"
+            arranged_arcs.append((a, bento_class))
+
+    card_items = []
+    for a, bento_class in arranged_arcs:
         aid = a['id']
         title_en = a['title']['en']
         title_zh = a['title']['zhHans']
@@ -179,7 +222,7 @@ else:
             cat_badges += f'<span class="category-badge {c}" data-zh="{html_escape(cat_zh)}" data-en="{html_escape(cat_en)}">{html_escape(cat_en)}</span>\n'
 
         card_items.append(f'''
-          <a class="arc-card" href="arcs/{aid}/index.html">
+          <a class="arc-card {bento_class}" href="arcs/{aid}/index.html">
             <h3 class="arc-card-title" data-zh="{html_escape(title_zh)}" data-en="{html_escape(title_en)}">{html_escape(title_en)}</h3>
             <p class="arc-card-subtitle" data-zh="{html_escape(subtitle_zh)}" data-en="{html_escape(subtitle_en)}">{html_escape(subtitle_en)}</p>
             <div class="arc-card-meta">

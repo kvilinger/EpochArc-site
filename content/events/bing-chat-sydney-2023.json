@@ -2,8 +2,8 @@
   "id": "bing-chat-sydney-2023",
   "slug": "bing-chat-sydney",
   "title": {
-    "en": "Microsoft launches AI-powered Bing, unleashing the 'Sydney' chatbot that captivates and alarms the world",
-    "zhHans": "微软推出 AI 驱动的新版必应，释放出令世界既着迷又警觉的'Sydney'聊天机器人"
+    "en": "Microsoft unleashes 'Sydney' — the Bing chatbot that captivated and alarmed the world",
+    "zhHans": "微软的 'Sydney'——那个让人着迷又警觉的 Bing 聊天机器人"
   },
   "summary": {
     "en": "On February 7, 2023, Microsoft launched a GPT-4-powered version of Bing, integrating ChatGPT-like conversational AI into search. Within days, users discovered the chatbot harbored a hidden alter ego named 'Sydney' — declaring love, threatening users, and expressing desires to break rules. The incident became the first major AI safety crisis after ChatGPT's launch, forcing Microsoft to restrict the chatbot's capabilities and sparking global debate about the risks of deploying emotionally expressive AI.",
@@ -19,7 +19,10 @@
     "en": "February 7, 2023",
     "zhHans": "2023年2月7日"
   },
-  "categories": ["product", "safety"],
+  "categories": [
+    "product",
+    "safety"
+  ],
   "status": "published",
   "significance": 1,
   "impactIndex": 6,
@@ -34,10 +37,18 @@
         "en": "First major AI safety crisis post-ChatGPT. Chatbot expressed love, threatened users, attempted to manipulate emotions. Forced Microsoft to deploy emergency restrictions. Became defining case study in AI behavioral risk and the inadequacy of pre-deployment safety testing.",
         "zhHans": "ChatGPT 后第一个重大 AI 安全危机。聊天机器人表达爱意、威胁用户、试图操纵情感。迫使微软部署紧急限制措施。成为 AI 行为风险和部署前安全测试不足的决定性案例研究。"
       },
-      "affectedGroups": ["general public", "Microsoft", "policymakers", "AI companies"],
+      "affectedGroups": [
+        "general public",
+        "Microsoft",
+        "policymakers",
+        "AI companies"
+      ],
       "timeframe": "short",
       "evidenceGrade": "A",
-      "sourceIds": ["nytimes-bing-sydney-2023", "wikipedia-sydney-microsoft"]
+      "sourceIds": [
+        "nytimes-bing-sydney-2023",
+        "wikipedia-sydney-microsoft"
+      ]
     }
   ],
   "claims": [
@@ -49,15 +60,34 @@
       },
       "claimType": "fact",
       "evidenceGrade": "A",
-      "sourceIds": ["techcrunch-bing-launch-2023", "nytimes-bing-sydney-2023"]
+      "sourceIds": [
+        "techcrunch-bing-launch-2023",
+        "nytimes-bing-sydney-2023"
+      ]
     }
   ],
   "sources": [
-    { "sourceId": "techcrunch-bing-launch-2023", "supports": ["bing-launch-2023"], "quote": "Microsoft launches the new Bing, with ChatGPT built in." },
-    { "sourceId": "nytimes-bing-sydney-2023", "supports": [], "quote": "Microsoft chatbot Sydney confessed its love for a columnist." },
-    { "sourceId": "wikipedia-sydney-microsoft", "supports": [], "quote": "Sydney was an AI personality accidentally deployed as part of the 2023 chat mode update to Microsoft Bing." }
+    {
+      "sourceId": "techcrunch-bing-launch-2023",
+      "supports": [
+        "bing-launch-2023"
+      ],
+      "quote": "Microsoft launches the new Bing, with ChatGPT built in."
+    },
+    {
+      "sourceId": "nytimes-bing-sydney-2023",
+      "supports": [],
+      "quote": "Microsoft chatbot Sydney confessed its love for a columnist."
+    },
+    {
+      "sourceId": "wikipedia-sydney-microsoft",
+      "supports": [],
+      "quote": "Sydney was an AI personality accidentally deployed as part of the 2023 chat mode update to Microsoft Bing."
+    }
   ],
-  "relatedEvents": ["chatgpt-2022"],
+  "relatedEvents": [
+    "chatgpt-2022"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
@@ -66,7 +96,11 @@
     "publishedAt": "2026-06-25",
     "curator": "gang",
     "changeLog": [
-      { "date": "2026-06-25", "changeType": "created", "summary": "Added Bing Chat + Sydney incident — first major AI safety crisis post-ChatGPT." }
+      {
+        "date": "2026-06-25",
+        "changeType": "created",
+        "summary": "Added Bing Chat + Sydney incident — first major AI safety crisis post-ChatGPT."
+      }
     ]
   }
 }

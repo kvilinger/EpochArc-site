@@ -2,8 +2,8 @@
   "id": "claude-code-leak-2026",
   "slug": "claude-code-source-leak",
   "title": {
-    "en": "Claude Code source code leaks via npm, exposing secret agent features and sparking a supply chain attack",
-    "zhHans": "Claude Code 源码通过 npm 泄露，暴露秘密智能体功能并引发供应链攻击"
+    "en": "Claude Code source code leaks via npm — exposing secret agent features and sparking supply chain fears",
+    "zhHans": "Claude Code 源代码通过 npm 泄露，秘密智能体特性曝光引发供应链安全担忧"
   },
   "summary": {
     "en": "On March 31, 2026, Anthropic accidentally exposed 512,000 lines of Claude Code source code through a source map file in its npm package. The leak revealed hidden features including 'KAIROS' (a persistent background agent), 'Undercover Mode' (for stealth open-source contributions), and 'Dreaming' (autonomous cross-session learning). It also triggered a supply chain attack as threat actors weaponized the leak with trojanized npm packages. The incident became the highest-profile AI source code leak in history.",
@@ -19,7 +19,10 @@
     "en": "March 31, 2026",
     "zhHans": "2026年3月31日"
   },
-  "categories": ["safety", "product"],
+  "categories": [
+    "safety",
+    "product"
+  ],
   "status": "published",
   "significance": 1,
   "impactIndex": 5,
@@ -34,10 +37,17 @@
         "en": "Largest AI source code leak in history. Exposed proprietary agent architectures. Triggered supply chain attack with trojanized packages. Established new category of AI security risk: operational code leaks.",
         "zhHans": "历史上最大的 AI 源码泄露。暴露了专有智能体架构。引发了木马化包的供应链攻击。确立了一个新的 AI 安全风险类别：操作代码泄露。"
       },
-      "affectedGroups": ["AI developers", "Anthropic users", "open-source community", "security teams"],
+      "affectedGroups": [
+        "AI developers",
+        "Anthropic users",
+        "open-source community",
+        "security teams"
+      ],
       "timeframe": "short",
       "evidenceGrade": "A",
-      "sourceIds": ["thehackernews-claude-code-leak"]
+      "sourceIds": [
+        "thehackernews-claude-code-leak"
+      ]
     }
   ],
   "claims": [
@@ -49,15 +59,34 @@
       },
       "claimType": "fact",
       "evidenceGrade": "A",
-      "sourceIds": ["thehackernews-claude-code-leak"]
+      "sourceIds": [
+        "thehackernews-claude-code-leak"
+      ]
     }
   ],
   "sources": [
-    { "sourceId": "thehackernews-claude-code-leak", "supports": ["claude-code-leak-2026"], "quote": "Claude Code source code leaked via npm packaging error. 512,000 lines of TypeScript files exposed." },
-    { "sourceId": "cnbc-claude-code-leak", "supports": [], "quote": "Anthropic confirms Claude Code source code inadvertently released due to human error." },
-    { "sourceId": "zscaler-claude-code-leak", "supports": [], "quote": "Threat actors weaponizing Claude Code leak with trojanized packages distributing Vidar and GhostSocks." }
+    {
+      "sourceId": "thehackernews-claude-code-leak",
+      "supports": [
+        "claude-code-leak-2026"
+      ],
+      "quote": "Claude Code source code leaked via npm packaging error. 512,000 lines of TypeScript files exposed."
+    },
+    {
+      "sourceId": "cnbc-claude-code-leak",
+      "supports": [],
+      "quote": "Anthropic confirms Claude Code source code inadvertently released due to human error."
+    },
+    {
+      "sourceId": "zscaler-claude-code-leak",
+      "supports": [],
+      "quote": "Threat actors weaponizing Claude Code leak with trojanized packages distributing Vidar and GhostSocks."
+    }
   ],
-  "relatedEvents": ["claude-code-launch-2025", "openclaw-2026"],
+  "relatedEvents": [
+    "claude-code-launch-2025",
+    "openclaw-2026"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
@@ -66,7 +95,11 @@
     "publishedAt": "2026-06-25",
     "curator": "gang",
     "changeLog": [
-      { "date": "2026-06-25", "changeType": "created", "summary": "Added Claude Code source leak — biggest AI source code leak, revealed agent architectures, triggered supply chain attack." }
+      {
+        "date": "2026-06-25",
+        "changeType": "created",
+        "summary": "Added Claude Code source leak — biggest AI source code leak, revealed agent architectures, triggered supply chain attack."
+      }
     ]
   }
 }

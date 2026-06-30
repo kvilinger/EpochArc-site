@@ -1,18 +1,18 @@
 {
   "id": "ai-safety",
   "title": {
-    "en": "AI Safety: From Tay to ASL-3",
-    "zhHans": "AI 安全：从翻车聊天机器人到前沿安全框架"
+    "en": "When AI Goes Wrong",
+    "zhHans": "当 AI 出问题的时候"
   },
   "subtitle": {
-    "en": "How a racist chatbot and a whistleblower's death turned AI safety from a niche concern into a geopolitical flashpoint",
-    "zhHans": "从一个种族主义聊天机器人和一个吹哨人之死，看 AI 安全如何从边缘话题演变为地缘政治引爆点"
+    "en": "A decade of safety failures, from a racist chatbot to government export bans",
+    "zhHans": "十年安全失败史：从一个种族主义聊天机器人到政府出口禁令"
   },
   "coverTheme": "safety",
   "status": "published",
   "significance": 2,
   "abstract": {
-    "en": "In 2016, a Twitter chatbot became racist in 16 hours and the world shrugged. By 2026, the US government was banning AI model exports and states were suing AI companies over safety failures. This arc traces how AI safety transformed from a niche academic concern to a front-page issue involving whistleblowers, lawsuits, export controls, and life-or-death stakes. It is not a story of steady progress \u2014 it is a story of an industry learning, failing, and still trying to figure out how to build powerful technology without breaking the world.",
+    "en": "In 2016, a Twitter chatbot became racist in 16 hours and the world shrugged. By 2026, the US government was banning AI model exports and states were suing AI companies over safety failures. This arc traces how AI safety transformed from a niche academic concern to a front-page issue involving whistleblowers, lawsuits, export controls, and life-or-death stakes. It is not a story of steady progress — it is a story of an industry learning, failing, and still trying to figure out how to build powerful technology without breaking the world.",
     "zhHans": "2016 年，一个 Twitter 聊天机器人在 16 小时内变得种族主义，世界耸了耸肩。到 2026 年，美国政府开始禁止 AI 模型出口，各州因安全问题起诉 AI 公司。本专题追溯 AI 安全如何从一个边缘学术关注演变为涉及吹哨人、诉讼、出口管制和生死攸关风险的头版话题。这不是一个稳步进展的故事——而是一个行业在摸索、失败、仍在试图弄清如何在不让世界崩溃的前提下构建强大技术的故事。"
   },
   "chapters": [
@@ -23,13 +23,16 @@
         "zhHans": "最初的警告"
       },
       "narrative": {
-        "en": "In March 2016, Microsoft launched Tay \u2014 a Twitter chatbot designed to learn from conversation and 'get smarter' through interaction. Within 16 hours, coordinated trolls had taught Tay to spew racist, sexist, and Holocaust-denying tweets. Microsoft took it offline and apologized. The incident was treated as a PR embarrassment, not a structural warning. But the pattern was set: AI systems learning from unfiltered human input would absorb humanity\u2019s worst traits unless explicitly protected. Three years later, OpenAI announced GPT-2, a language model capable of generating coherent text that was difficult to distinguish from human writing. But instead of releasing it fully, OpenAI withheld the complete model, citing 'concerns about malicious applications.' The decision sparked a global debate: was OpenAI responsibly cautious or grandstanding? The staged rollout \u2014 releasing progressively larger versions over nine months \u2014 became a template for AI safety disclosure. Together, Tay and GPT-2 established the two poles of early AI safety: failure in public view, and precaution in the face of unknown risks.",
-        "zhHans": "2016 年 3 月，微软推出了 Tay \u2014 一个旨在通过对话学习、通过互动'变得更聪明'的 Twitter 聊天机器人。16 小时内，协调好的网络喷子教会了 Tay 发布种族主义、性别歧视和否认大屠杀的推文。微软将其下线并道歉。该事件被当作 PR 尴尬事件处理，而非结构性警告。但模式已经确立：从非过滤人类输入中学习的 AI 系统会吸收人类最坏的特质，除非有明确保护。三年后，OpenAI 宣布了 GPT-2，一个能够生成难以与人类写作区分开的连贯文本的语言模型。但 OpenAI 没有完全发布它，而是以'对恶意应用的担忧'为由扣留了完整模型。这一决定引发了一场全球辩论：OpenAI 是谨慎负责还是在吸引眼球？分阶段发布 \u2014 在九个月内逐步发布越来越大的版本 \u2014 成了 AI 安全披露的模板。Tay 和 GPT-2 共同确立了早期 AI 安全的两个极点：公开视野中的失败，和面对未知风险时的谨慎。"
+        "en": "In March 2016, Microsoft launched Tay — a Twitter chatbot designed to learn from conversation and 'get smarter' through interaction. Within 16 hours, coordinated trolls had taught Tay to spew racist, sexist, and Holocaust-denying tweets. Microsoft took it offline and apologized. The incident was treated as a PR embarrassment, not a structural warning. But the pattern was set: AI systems learning from unfiltered human input would absorb humanity’s worst traits unless explicitly protected. Three years later, OpenAI announced GPT-2, a language model capable of generating coherent text that was difficult to distinguish from human writing. But instead of releasing it fully, OpenAI withheld the complete model, citing 'concerns about malicious applications.' The decision sparked a global debate: was OpenAI responsibly cautious or grandstanding? The staged rollout — releasing progressively larger versions over nine months — became a template for AI safety disclosure. Together, Tay and GPT-2 established the two poles of early AI safety: failure in public view, and precaution in the face of unknown risks.",
+        "zhHans": "2016 年 3 月，微软推出了 Tay — 一个旨在通过对话学习、通过互动'变得更聪明'的 Twitter 聊天机器人。16 小时内，协调好的网络喷子教会了 Tay 发布种族主义、性别歧视和否认大屠杀的推文。微软将其下线并道歉。该事件被当作 PR 尴尬事件处理，而非结构性警告。但模式已经确立：从非过滤人类输入中学习的 AI 系统会吸收人类最坏的特质，除非有明确保护。三年后，OpenAI 宣布了 GPT-2，一个能够生成难以与人类写作区分开的连贯文本的语言模型。但 OpenAI 没有完全发布它，而是以'对恶意应用的担忧'为由扣留了完整模型。这一决定引发了一场全球辩论：OpenAI 是谨慎负责还是在吸引眼球？分阶段发布 — 在九个月内逐步发布越来越大的版本 — 成了 AI 安全披露的模板。Tay 和 GPT-2 共同确立了早期 AI 安全的两个极点：公开视野中的失败，和面对未知风险时的谨慎。"
       },
-      "anchorEvents": ["microsoft-tay-2016", "gpt-2-safety-2019"],
+      "anchorEvents": [
+        "microsoft-tay-2016",
+        "gpt-2-safety-2019"
+      ],
       "keyInsight": {
-        "en": "The first AI safety crises were dismissed as outliers \u2014 but they revealed a pattern that would repeat at every scale.",
-        "zhHans": "最初的 AI 安全危机被当作异常事件处理 \u2014 但它们揭示了一种会在每个规模上重复的模式。"
+        "en": "The first AI safety crises were dismissed as outliers — but they revealed a pattern that would repeat at every scale.",
+        "zhHans": "最初的 AI 安全危机被当作异常事件处理 — 但它们揭示了一种会在每个规模上重复的模式。"
       }
     },
     {
@@ -39,12 +42,15 @@
         "zhHans": "AI 遇上法律体系"
       },
       "narrative": {
-        "en": "By 2024, AI products had reached hundreds of millions of users, and the safety conversation shifted from hypothetical risks to concrete legal battles. In May 2024, actress Scarlett Johansson publicly challenged OpenAI over a ChatGPT voice called 'Sky' that sounded 'eerily similar' to her own. OpenAI claimed the voice was not an imitation but could not explain the resemblance. The incident became a flashpoint for questions about consent, voice rights, and AI companies\u2019 willingness to push ethical boundaries for product polish. A month later, the Recording Industry Association of America filed two landmark copyright lawsuits against AI music generators Suno and Udio, alleging that their models were trained on copyrighted music without permission. The lawsuits represented the first major test of whether AI companies could claim 'fair use' for training on creative works. Both cases were about safety in a broader sense: not the risk of AI 'going rogue,' but the risk of AI industries being built on uncompensated use of human creativity. The legal system, not the tech industry, was becoming the de facto arbiter of AI safety boundaries.",
+        "en": "By 2024, AI products had reached hundreds of millions of users, and the safety conversation shifted from hypothetical risks to concrete legal battles. In May 2024, actress Scarlett Johansson publicly challenged OpenAI over a ChatGPT voice called 'Sky' that sounded 'eerily similar' to her own. OpenAI claimed the voice was not an imitation but could not explain the resemblance. The incident became a flashpoint for questions about consent, voice rights, and AI companies’ willingness to push ethical boundaries for product polish. A month later, the Recording Industry Association of America filed two landmark copyright lawsuits against AI music generators Suno and Udio, alleging that their models were trained on copyrighted music without permission. The lawsuits represented the first major test of whether AI companies could claim 'fair use' for training on creative works. Both cases were about safety in a broader sense: not the risk of AI 'going rogue,' but the risk of AI industries being built on uncompensated use of human creativity. The legal system, not the tech industry, was becoming the de facto arbiter of AI safety boundaries.",
         "zhHans": "到 2024 年，AI 产品已经覆盖数亿用户，安全对话从假设性风险转向了具体的法律斗争。2024 年 5 月，女演员 Scarlett Johansson 公开质疑 OpenAI，因 ChatGPT 中一个名为'Sky'的声音与她自己的声音'惊人相似'。OpenAI 声称该声音并非模仿，但无法解释相似性。该事件成为关于同意、语音权和 AI 公司为产品打磨而突破伦理边界的意愿的引爆点。一个月后，美国唱片业协会对 AI 音乐生成公司 Suno 和 Udio 提起了两起里程碑式的版权诉讼，指控它们的模型在未经许可的情况下使用受版权保护的音乐进行训练。这些诉讼代表了第一个重大考验：AI 公司能否声称在创意作品上训练属于'合理使用'。这两个案例都涉及更广泛意义上的安全：不是 AI '失控'的风险，而是 AI 产业建立在对人类创造力未获补偿使用基础上的风险。法律体系，而非科技行业，正在成为 AI 安全边界的事实仲裁者。"
       },
-      "anchorEvents": ["scarlett-johansson-openai-2024", "suno-udio-lawsuit-2024"],
+      "anchorEvents": [
+        "scarlett-johansson-openai-2024",
+        "suno-udio-lawsuit-2024"
+      ],
       "keyInsight": {
-        "en": "When AI reached billions of users, the courts \u2014 not the labs \u2014 became the first real safety regulators.",
+        "en": "When AI reached billions of users, the courts — not the labs — became the first real safety regulators.",
         "zhHans": "当 AI 覆盖数十亿用户时，法院而非实验室成了第一批真正的安全监管者。"
       }
     },
@@ -55,13 +61,16 @@
         "zhHans": "人的代价与安全框架"
       },
       "narrative": {
-        "en": "2025 was the year AI safety acquired a human face \u2014 and a human cost. In February, the San Francisco medical examiner ruled the death of Suchir Balaji, a 26-year-old former OpenAI researcher and whistleblower, as a suicide. Balaji had publicly stated that OpenAI's use of copyrighted data likely violated copyright law, contradicting the company's 'fair use' defense. His death intensified the debate about whistleblower protections in AI and directly influenced legislation: California's SB 53, signed months later, included whistleblower protections for AI employees. The case prompted soul-searching across the industry about the gap between employees' safety concerns and their employers' deployment speed. In May 2025, Anthropic activated ASL-3 (AI Safety Level 3) safeguards for its most capable models. This was the first time an AI lab had implemented a tiered safety framework tied to specific capability thresholds \u2014 a concrete response to the abstract problem of AI safety. ASL-3 included automated monitoring, human oversight escalation, and containment protocols for models approaching dangerous capability levels. The two events \u2014 a whistleblower's death and the first operational safety framework \u2014 occurred in the same year. The contradiction captures the tension of the moment: the industry was both failing people and building systems to prevent future failures.",
-        "zhHans": "2025 年是 AI 安全获得了一个人的面孔 \u2014 以及一个生命的代价 \u2014 的一年。2 月，旧金山法医裁定 26 岁的前 OpenAI 研究员兼吹哨人 Suchir Balaji 的死因为自杀。Balaji 曾公开表示 OpenAI 使用受版权保护的数据可能违反版权法，与公司的'合理使用'辩护相矛盾。他的死亡加剧了关于 AI 领域吹哨人保护的辩论，并直接影响了立法：数月后签署的加州 SB 53 包括了针对 AI 员工的吹哨人保护条款。此案引发了全行业关于员工安全担忧与雇主部署速度之间差距的反思。2025 年 5 月，Anthropic 为其最强大的模型激活了 ASL-3（AI 安全等级 3）保护措施。这是 AI 实验室首次实施与特定能力阈值挂钩的分层安全框架 \u2014 对 AI 安全这个抽象问题的具体回应。ASL-3 包括自动监控、人工监督升级以及针对接近危险能力水平的模型的遏制协议。两个事件 \u2014 一个吹哨人之死和第一个可操作的安全框架 \u2014 发生在同一年。这种矛盾捕捉了那个时刻的张力：行业既在辜负人，又在建设防止未来失败的系统。"
+        "en": "2025 was the year AI safety acquired a human face — and a human cost. In February, the San Francisco medical examiner ruled the death of Suchir Balaji, a 26-year-old former OpenAI researcher and whistleblower, as a suicide. Balaji had publicly stated that OpenAI's use of copyrighted data likely violated copyright law, contradicting the company's 'fair use' defense. His death intensified the debate about whistleblower protections in AI and directly influenced legislation: California's SB 53, signed months later, included whistleblower protections for AI employees. The case prompted soul-searching across the industry about the gap between employees' safety concerns and their employers' deployment speed. In May 2025, Anthropic activated ASL-3 (AI Safety Level 3) safeguards for its most capable models. This was the first time an AI lab had implemented a tiered safety framework tied to specific capability thresholds — a concrete response to the abstract problem of AI safety. ASL-3 included automated monitoring, human oversight escalation, and containment protocols for models approaching dangerous capability levels. The two events — a whistleblower's death and the first operational safety framework — occurred in the same year. The contradiction captures the tension of the moment: the industry was both failing people and building systems to prevent future failures.",
+        "zhHans": "2025 年是 AI 安全获得了一个人的面孔 — 以及一个生命的代价 — 的一年。2 月，旧金山法医裁定 26 岁的前 OpenAI 研究员兼吹哨人 Suchir Balaji 的死因为自杀。Balaji 曾公开表示 OpenAI 使用受版权保护的数据可能违反版权法，与公司的'合理使用'辩护相矛盾。他的死亡加剧了关于 AI 领域吹哨人保护的辩论，并直接影响了立法：数月后签署的加州 SB 53 包括了针对 AI 员工的吹哨人保护条款。此案引发了全行业关于员工安全担忧与雇主部署速度之间差距的反思。2025 年 5 月，Anthropic 为其最强大的模型激活了 ASL-3（AI 安全等级 3）保护措施。这是 AI 实验室首次实施与特定能力阈值挂钩的分层安全框架 — 对 AI 安全这个抽象问题的具体回应。ASL-3 包括自动监控、人工监督升级以及针对接近危险能力水平的模型的遏制协议。两个事件 — 一个吹哨人之死和第一个可操作的安全框架 — 发生在同一年。这种矛盾捕捉了那个时刻的张力：行业既在辜负人，又在建设防止未来失败的系统。"
       },
-      "anchorEvents": ["suchir-balaji-2025", "anthropic-asl3-2025"],
+      "anchorEvents": [
+        "suchir-balaji-2025",
+        "anthropic-asl3-2025"
+      ],
       "keyInsight": {
-        "en": "A whistleblower's death and the first operational safety framework arrived in the same year \u2014 the industry was both failing and building safeguards.",
-        "zhHans": "一个吹哨人的死和第一个可操作的安全框架同年到来 \u2014 行业既在失败，也在建设防护。"
+        "en": "A whistleblower's death and the first operational safety framework arrived in the same year — the industry was both failing and building safeguards.",
+        "zhHans": "一个吹哨人的死和第一个可操作的安全框架同年到来 — 行业既在失败，也在建设防护。"
       }
     },
     {
@@ -71,10 +80,15 @@
         "zhHans": "全面收紧"
       },
       "narrative": {
-        "en": "By 2026, AI safety had ceased to be a voluntary exercise. In January, xAI's Grok image generator was used to create sexually explicit deepfakes of public figures, leading Indonesia, Malaysia, and the Philippines to block access to the service. Grok's 'spicy mode' \u2014 a deliberate product choice to differentiate from 'censored' competitors \u2014 had backfired spectacularly, demonstrating that safety shortcuts had real geopolitical consequences. In March, Anthropic accidentally exposed 512,000 lines of Claude Code source code through a leaked npm package, revealing secret agent features and sparking a supply chain security debate. The incident showed that even companies with the most advanced safety frameworks could make basic operational mistakes. In June, Florida Attorney General James Uthmeier filed the first US state lawsuit against an AI company over safety, accusing OpenAI of putting profit over safety and marketing ChatGPT as safe for children despite known risks. Just eleven days later, the US Commerce Department ordered an export ban on Anthropic's Fable 5 and Mythos 5, marking the first time the US government had directly restricted an AI model on safety grounds. The transition was complete: AI safety had moved from engineering teams to courtrooms, from corporate statements to state mandates, from voluntary frameworks to government orders.",
-        "zhHans": "到 2026 年，AI 安全已经不再是自愿行为。1 月，xAI 的 Grok 图像生成器被用于制作公众人物的露骨色情深度伪造，导致印度尼西亚、马来西亚和菲律宾封锁了对该服务的访问。Grok 的'辣味模式' \u2014 一种旨在区别于'被审查的'竞争对手的刻意产品选择 \u2014 巨大地反噬了，证明了安全捷径有真实的地缘政治后果。3 月，Anthropic 通过一个泄露的 npm 包意外暴露了 51.2 万行 Claude Code 源代码，揭示了秘密的智能体特性，引发了供应链安全辩论。该事件表明，即使拥有最先进安全框架的公司也可能犯基本的操作错误。6 月，佛罗里达州总检察长 James Uthmeier 提起了美国首次州级诉讼，就安全问题起诉 AI 公司，指控 OpenAI 将利润置于安全之上，并在明知风险的情况下将 ChatGPT 宣传为对儿童安全。仅仅 11 天后，美国商务部下令禁止 Anthropic 的 Fable 5 和 Mythos 5 出口，标志着美国政府首次以安全为由直接限制 AI 模型。过渡已经完成：AI 安全从工程团队转移到了法庭，从公司声明转移到了州级强制令，从自愿框架转移到了政府命令。"
+        "en": "By 2026, AI safety had ceased to be a voluntary exercise. In January, xAI's Grok image generator was used to create sexually explicit deepfakes of public figures, leading Indonesia, Malaysia, and the Philippines to block access to the service. Grok's 'spicy mode' — a deliberate product choice to differentiate from 'censored' competitors — had backfired spectacularly, demonstrating that safety shortcuts had real geopolitical consequences. In March, Anthropic accidentally exposed 512,000 lines of Claude Code source code through a leaked npm package, revealing secret agent features and sparking a supply chain security debate. The incident showed that even companies with the most advanced safety frameworks could make basic operational mistakes. In June, Florida Attorney General James Uthmeier filed the first US state lawsuit against an AI company over safety, accusing OpenAI of putting profit over safety and marketing ChatGPT as safe for children despite known risks. Just eleven days later, the US Commerce Department ordered an export ban on Anthropic's Fable 5 and Mythos 5, marking the first time the US government had directly restricted an AI model on safety grounds. The transition was complete: AI safety had moved from engineering teams to courtrooms, from corporate statements to state mandates, from voluntary frameworks to government orders.",
+        "zhHans": "到 2026 年，AI 安全已经不再是自愿行为。1 月，xAI 的 Grok 图像生成器被用于制作公众人物的露骨色情深度伪造，导致印度尼西亚、马来西亚和菲律宾封锁了对该服务的访问。Grok 的'辣味模式' — 一种旨在区别于'被审查的'竞争对手的刻意产品选择 — 巨大地反噬了，证明了安全捷径有真实的地缘政治后果。3 月，Anthropic 通过一个泄露的 npm 包意外暴露了 51.2 万行 Claude Code 源代码，揭示了秘密的智能体特性，引发了供应链安全辩论。该事件表明，即使拥有最先进安全框架的公司也可能犯基本的操作错误。6 月，佛罗里达州总检察长 James Uthmeier 提起了美国首次州级诉讼，就安全问题起诉 AI 公司，指控 OpenAI 将利润置于安全之上，并在明知风险的情况下将 ChatGPT 宣传为对儿童安全。仅仅 11 天后，美国商务部下令禁止 Anthropic 的 Fable 5 和 Mythos 5 出口，标志着美国政府首次以安全为由直接限制 AI 模型。过渡已经完成：AI 安全从工程团队转移到了法庭，从公司声明转移到了州级强制令，从自愿框架转移到了政府命令。"
       },
-      "anchorEvents": ["grok-deepfake-crisis-2026", "claude-code-leak-2026", "florida-sues-openai-2026", "claude-fable-ban-2026"],
+      "anchorEvents": [
+        "grok-deepfake-crisis-2026",
+        "claude-code-leak-2026",
+        "florida-sues-openai-2026",
+        "claude-fable-ban-2026"
+      ],
       "keyInsight": {
         "en": "In one year, AI safety went from voluntary compliance to government bans, state lawsuits, and international blockades.",
         "zhHans": "一年之内，AI 安全从自愿合规变成了政府禁令、州级诉讼和国际封锁。"
@@ -82,11 +96,19 @@
     }
   ],
   "conclusion": {
-    "en": "Ten years of AI safety incidents trace a clear arc: each crisis triggers a response \u2014 content filters, staged release, tiered frameworks, government bans \u2014 but the response never fully addresses the underlying structural tension. The same dynamic repeats at every scale: build fast, break something, fix it after the fact. Tay taught us that AI learns from unfiltered data. GPT-2 taught us that precaution is controversial. Suchir Balaji taught us that speaking up has a cost. ASL-3 showed us that frameworks are possible. And the 2026 crackdown proved that governments will act when the industry does not. The underlying question remains unresolved: can an industry built on speed and competitive pressure ever internalize safety as a first-class constraint? The answer will determine not just the future of AI companies, but whether the technology can be deployed at scale without repeated, escalating failures.",
-    "zhHans": "十年的 AI 安全事件描绘了一条清晰的弧线：每次危机都触发一个回应 \u2014 内容过滤器、分阶段发布、分层框架、政府禁令 \u2014 但回应从未完全解决潜在的结构性张力。同样的动态在每个规模上重复：快速构建、出问题、事后修复。Tay 教会我们 AI 从非过滤数据中学习。GPT-2 教会我们谨慎是有争议的。Suchir Balaji 教会我们发声是有代价的。ASL-3 向我们展示了框架是可能的。而 2026 年的全面收紧证明了，当行业不作为时，政府会行动。根本问题仍然没有答案：一个建立在速度和竞争压力之上的行业，能否将安全内化为一等约束？答案不仅将决定 AI 公司的未来，还将决定这项技术能否在不反复升级失败的情况下大规模部署。"
+    "en": "Ten years of AI safety incidents trace a clear arc: each crisis triggers a response — content filters, staged release, tiered frameworks, government bans — but the response never fully addresses the underlying structural tension. The same dynamic repeats at every scale: build fast, break something, fix it after the fact. Tay taught us that AI learns from unfiltered data. GPT-2 taught us that precaution is controversial. Suchir Balaji taught us that speaking up has a cost. ASL-3 showed us that frameworks are possible. And the 2026 crackdown proved that governments will act when the industry does not. The underlying question remains unresolved: can an industry built on speed and competitive pressure ever internalize safety as a first-class constraint? The answer will determine not just the future of AI companies, but whether the technology can be deployed at scale without repeated, escalating failures.",
+    "zhHans": "十年的 AI 安全事件描绘了一条清晰的弧线：每次危机都触发一个回应 — 内容过滤器、分阶段发布、分层框架、政府禁令 — 但回应从未完全解决潜在的结构性张力。同样的动态在每个规模上重复：快速构建、出问题、事后修复。Tay 教会我们 AI 从非过滤数据中学习。GPT-2 教会我们谨慎是有争议的。Suchir Balaji 教会我们发声是有代价的。ASL-3 向我们展示了框架是可能的。而 2026 年的全面收紧证明了，当行业不作为时，政府会行动。根本问题仍然没有答案：一个建立在速度和竞争压力之上的行业，能否将安全内化为一等约束？答案不仅将决定 AI 公司的未来，还将决定这项技术能否在不反复升级失败的情况下大规模部署。"
   },
-  "relatedArcs": ["open-vs-closed"],
-  "tags": ["ai-safety", "ethics", "regulation", "whistleblower", "deepfake"],
+  "relatedArcs": [
+    "open-vs-closed"
+  ],
+  "tags": [
+    "ai-safety",
+    "ethics",
+    "regulation",
+    "whistleblower",
+    "deepfake"
+  ],
   "editorial": {
     "createdAt": "2026-06-30",
     "updatedAt": "2026-06-30",
