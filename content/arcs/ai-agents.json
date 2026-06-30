@@ -1,19 +1,19 @@
 {
   "id": "ai-agents",
   "title": {
-    "en": "Stop Talking, Start Doing",
-    "zhHans": "别说了，动手吧"
+    "en": "AI Agents: From Chat to Action",
+    "zhHans": "AI 智能体：从聊天到行动"
   },
   "subtitle": {
-    "en": "How AI agents crossed from a buggy demo to a consumer product in three years",
-    "zhHans": "AI 智能体如何在三年内从 bug 满天飞的演示变成消费品"
+    "en": "How autonomous AI agents evolved from a hacky open-source demo to the most consequential product shift since the smartphone",
+    "zhHans": "自主 AI 智能体如何从一个简陋的开源演示演变为自智能手机以来最重要的产品转型"
   },
   "coverTheme": "product",
   "status": "published",
   "significance": 2,
   "abstract": {
-    "en": "In March 2023, a solo developer released an open-source experiment called Auto-GPT — an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents — Claude Code, OpenAI Operator, OpenClaw — to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.",
-    "zhHans": "2023 年 3 月，一个独立开发者发布了一个名为 Auto-GPT 的开源实验 — 一个可以自主设定目标并追求目标的 AI。它有 bug、成本高昂、而且经常没用。三年后，数百万人使用 AI 智能体 — Claude Code、OpenAI Operator、OpenClaw — 来编写生产代码、浏览网页和管理日常任务。本专题追溯了从原型到基础设施再到产品的旅程：一个拼凑出来的演示如何揭示了一种渴望，整个行业争先恐后地去满足它，以及 AI 如何从对话式跨越到自主式。"
+    "en": "In March 2023, a solo developer released an open-source experiment called Auto-GPT \u2014 an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents \u2014 Claude Code, OpenAI Operator, OpenClaw \u2014 to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.",
+    "zhHans": "2023 年 3 月，一个独立开发者发布了一个名为 Auto-GPT 的开源实验 \u2014 一个可以自主设定目标并追求目标的 AI。它有 bug、成本高昂、而且经常没用。三年后，数百万人使用 AI 智能体 \u2014 Claude Code、OpenAI Operator、OpenClaw \u2014 来编写生产代码、浏览网页和管理日常任务。本专题追溯了从原型到基础设施再到产品的旅程：一个拼凑出来的演示如何揭示了一种渴望，整个行业争先恐后地去满足它，以及 AI 如何从对话式跨越到自主式。"
   },
   "chapters": [
     {
@@ -23,15 +23,13 @@
         "zhHans": "原型：Auto-GPT"
       },
       "narrative": {
-        "en": "In March 2023, developer Toran Bruce Richards released Auto-GPT, an open-source experiment built on GPT-4's API. Instead of a chatbot that responded to prompts, Auto-GPT inverted the paradigm: give it a goal ('research the top AI companies and write a report'), and it would autonomously chain LLM calls, web searches, file operations, and code execution until the goal was achieved. It went viral on GitHub — the first widely accessible demonstration of an 'AI agent.' The project had severe limitations: it frequently got stuck in loops, hallucinated confidently, and racked up API costs. The ChaosGPT experiment — where someone tasked it with 'destroying humanity' — brought mainstream media attention. But its impact was disproportionate to its technical maturity. Auto-GPT introduced the concept of 'agents' to a generation of developers who had only known 'chatbots.' It demonstrated a latent demand — developers didn't just want AI to talk; they wanted AI to do. The prototype was crude, but the direction was unmistakable.",
-        "zhHans": "2023 年 3 月，开发者 Toran Bruce Richards 发布了 Auto-GPT，一个基于 GPT-4 API 的开源实验。与响应提示的聊天机器人不同，Auto-GPT 颠覆了范式：给它一个目标（'研究顶尖 AI 公司并写一份报告'），它就会自主串联 LLM 调用、网络搜索、文件操作和代码执行，直到目标达成。它在 GitHub 上病毒式传播 — 首个广泛可用的'AI 智能体'演示。该项目有严重的限制：频繁陷入循环、自信地产生幻觉、API 成本飞涨。ChaosGPT 实验 — 有人让它去'毁灭人类' — 带来了主流媒体关注。但其影响与其技术成熟度不成比例。Auto-GPT 向一代只知道'聊天机器人'的开发者介绍了'智能体'概念。它展示了潜在需求 — 开发者不仅希望 AI 说话，更希望 AI 做事。原型是粗糙的，但方向已经不可逆转。"
+        "en": "In March 2023, developer Toran Bruce Richards released Auto-GPT, an open-source experiment built on GPT-4's API. Instead of a chatbot that responded to prompts, Auto-GPT inverted the paradigm: give it a goal ('research the top AI companies and write a report'), and it would autonomously chain LLM calls, web searches, file operations, and code execution until the goal was achieved. It went viral on GitHub \u2014 the first widely accessible demonstration of an 'AI agent.' The project had severe limitations: it frequently got stuck in loops, hallucinated confidently, and racked up API costs. The ChaosGPT experiment \u2014 where someone tasked it with 'destroying humanity' \u2014 brought mainstream media attention. But its impact was disproportionate to its technical maturity. Auto-GPT introduced the concept of 'agents' to a generation of developers who had only known 'chatbots.' It demonstrated a latent demand \u2014 developers didn't just want AI to talk; they wanted AI to do. The prototype was crude, but the direction was unmistakable.",
+        "zhHans": "2023 年 3 月，开发者 Toran Bruce Richards 发布了 Auto-GPT，一个基于 GPT-4 API 的开源实验。与响应提示的聊天机器人不同，Auto-GPT 颠覆了范式：给它一个目标（'研究顶尖 AI 公司并写一份报告'），它就会自主串联 LLM 调用、网络搜索、文件操作和代码执行，直到目标达成。它在 GitHub 上病毒式传播 \u2014 首个广泛可用的'AI 智能体'演示。该项目有严重的限制：频繁陷入循环、自信地产生幻觉、API 成本飞涨。ChaosGPT 实验 \u2014 有人让它去'毁灭人类' \u2014 带来了主流媒体关注。但其影响与其技术成熟度不成比例。Auto-GPT 向一代只知道'聊天机器人'的开发者介绍了'智能体'概念。它展示了潜在需求 \u2014 开发者不仅希望 AI 说话，更希望 AI 做事。原型是粗糙的，但方向已经不可逆转。"
       },
-      "anchorEvents": [
-        "auto-gpt-2023"
-      ],
+      "anchorEvents": ["auto-gpt-2023"],
       "keyInsight": {
-        "en": "The first agent was a hack — and that's exactly why it mattered. It proved demand before the infrastructure existed.",
-        "zhHans": "第一个智能体是个拼凑品 — 而这正是它重要的原因。它在基础设施存在之前就证明了需求。"
+        "en": "The first agent was a hack \u2014 and that's exactly why it mattered. It proved demand before the infrastructure existed.",
+        "zhHans": "第一个智能体是个拼凑品 \u2014 而这正是它重要的原因。它在基础设施存在之前就证明了需求。"
       }
     },
     {
@@ -41,16 +39,13 @@
         "zhHans": "管道：智能体的基础设施"
       },
       "narrative": {
-        "en": "Auto-GPT proved that agents were wanted, but it also proved that point solutions wouldn't scale. Every tool integration required custom code; every AI model needed its own adapter; there was no standard way for agents to interact with the world. Two developments in late 2024 addressed this. In November, Anthropic open-sourced the Model Context Protocol (MCP) — a standardized protocol for connecting AI systems to external tools, data sources, and services. Any MCP-compatible agent could now connect to any MCP server: Google Drive, Slack, GitHub, databases. In December, Google launched Gemini 2.0 with Project Mariner, a research prototype demonstrating an AI agent that could browse the web and complete tasks inside the browser. Project Mariner showed what agents could do when they had the right tools — navigating websites, filling forms, managing multi-step workflows. Together, MCP and Mariner addressed the two prerequisites for practical agents: a standard way to connect to tools, and a demonstration of what that connectivity enabled. The plumbing was being laid. The agent era was no longer a question of 'if' but 'how fast.'",
-        "zhHans": "Auto-GPT 证明了智能体是被需要的，但它也证明了点式解决方案无法规模化。每个工具集成都需要自定义代码；每个 AI 模型需要自己的适配器；没有智能体与世界交互的标准方式。2024 年底的两项进展解决了这个问题。11 月，Anthropic 开源了模型上下文协议（MCP）— 一个用于连接 AI 系统与外部工具、数据源和服务的标准化协议。任何兼容 MCP 的智能体现在都能连接到任何 MCP 服务器：Google Drive、Slack、GitHub、数据库。12 月，Google 推出了 Gemini 2.0 和 Project Mariner，一个研究原型，展示了一个可以浏览网页并在浏览器内完成任务 AI 智能体。Project Mariner 展示了智能体在拥有正确工具时能做什么 — 浏览网站、填写表单、管理多步工作流。MCP 和 Mariner 共同解决了实用智能体的两个前提条件：连接工具的标准方式，以及这种连接能实现什么的示范。管道正在铺设。智能体时代不再是'是否'的问题，而是'多快'的问题。"
+        "en": "Auto-GPT proved that agents were wanted, but it also proved that point solutions wouldn't scale. Every tool integration required custom code; every AI model needed its own adapter; there was no standard way for agents to interact with the world. Two developments in late 2024 addressed this. In November, Anthropic open-sourced the Model Context Protocol (MCP) \u2014 a standardized protocol for connecting AI systems to external tools, data sources, and services. Any MCP-compatible agent could now connect to any MCP server: Google Drive, Slack, GitHub, databases. In December, Google launched Gemini 2.0 with Project Mariner, a research prototype demonstrating an AI agent that could browse the web and complete tasks inside the browser. Project Mariner showed what agents could do when they had the right tools \u2014 navigating websites, filling forms, managing multi-step workflows. Together, MCP and Mariner addressed the two prerequisites for practical agents: a standard way to connect to tools, and a demonstration of what that connectivity enabled. The plumbing was being laid. The agent era was no longer a question of 'if' but 'how fast.'",
+        "zhHans": "Auto-GPT 证明了智能体是被需要的，但它也证明了点式解决方案无法规模化。每个工具集成都需要自定义代码；每个 AI 模型需要自己的适配器；没有智能体与世界交互的标准方式。2024 年底的两项进展解决了这个问题。11 月，Anthropic 开源了模型上下文协议（MCP）\u2014 一个用于连接 AI 系统与外部工具、数据源和服务的标准化协议。任何兼容 MCP 的智能体现在都能连接到任何 MCP 服务器：Google Drive、Slack、GitHub、数据库。12 月，Google 推出了 Gemini 2.0 和 Project Mariner，一个研究原型，展示了一个可以浏览网页并在浏览器内完成任务 AI 智能体。Project Mariner 展示了智能体在拥有正确工具时能做什么 \u2014 浏览网站、填写表单、管理多步工作流。MCP 和 Mariner 共同解决了实用智能体的两个前提条件：连接工具的标准方式，以及这种连接能实现什么的示范。管道正在铺设。智能体时代不再是'是否'的问题，而是'多快'的问题。"
       },
-      "anchorEvents": [
-        "mcp-protocol-2024",
-        "gemini-2-agents-2024"
-      ],
+      "anchorEvents": ["mcp-protocol-2024", "gemini-2-agents-2024"],
       "keyInsight": {
-        "en": "The agent revolution needed a protocol as much as it needed models — MCP was the unsung infrastructure that made everything else possible.",
-        "zhHans": "智能体革命既需要模型，也需要协议 — MCP 是那个让一切成为可能的幕后基础设施。"
+        "en": "The agent revolution needed a protocol as much as it needed models \u2014 MCP was the unsung infrastructure that made everything else possible.",
+        "zhHans": "智能体革命既需要模型，也需要协议 \u2014 MCP 是那个让一切成为可能的幕后基础设施。"
       }
     },
     {
@@ -60,13 +55,10 @@
         "zhHans": "第一批真正好用的智能体"
       },
       "narrative": {
-        "en": "January and February 2025 brought the first wave of production-ready agents. OpenAI launched Operator on January 23 — an AI agent that could browse the web autonomously, fill forms, book tickets, and complete multi-step online tasks. Unlike Auto-GPT's fragile chaining of API calls, Operator interacted with web pages visually, using a model trained to 'see' and 'click' like a human user. It was limited (slow, expensive, sometimes wrong) but it worked — the first agent that a non-technical user could hand a real task. A month later, Anthropic released Claude Code — a terminal-based coding agent that could understand entire codebases, write patches, and execute multi-step development tasks. Unlike earlier AI coding tools (Copilot, Cursor) that assisted within an IDE, Claude Code functioned as an autonomous agent: given a bug report, it would find the issue, write a fix, test it, and submit a pull request. By mid-2025, Claude Code had become the first agent that real development teams trusted with production code. Operator and Claude Code revealed that the agent market had two entry points: the web (for everyone) and the terminal (for developers). Both had crossed the threshold from 'interesting demo' to 'useful tool.'",
-        "zhHans": "2025 年 1 月和 2 月迎来了第一批生产级智能体。OpenAI 于 1 月 23 日发布 Operator — 一个可以自主浏览网页、填写表单、预订票务、完成多步在线任务的 AI 智能体。与 Auto-GPT 脆弱的 API 调用链不同，Operator 以视觉方式与网页交互，使用经过训练的模型像人类用户一样'看'和'点击'。它有限制（慢、昂贵、有时出错），但它确实能用 — 第一个非技术用户可以交给真实任务的智能体。一个月后，Anthropic 发布了 Claude Code — 一个基于终端的编程智能体，可以理解整个代码仓库、编写补丁、执行多步开发任务。与早期在 IDE 内辅助的 AI 编程工具（Copilot、Cursor）不同，Claude Code 作为自主智能体运作：收到一个 bug 报告，它会找到问题、编写修复、测试它、并提交拉取请求。到 2025 年年中，Claude Code 成为第一个真实开发团队信任处理生产代码的智能体。Operator 和 Claude Code 揭示了智能体市场有两个入口：网页（面向所有人）和终端（面向开发者）。两者都从'有趣的演示'跨越到了'有用的工具'。"
+        "en": "January and February 2025 brought the first wave of production-ready agents. OpenAI launched Operator on January 23 \u2014 an AI agent that could browse the web autonomously, fill forms, book tickets, and complete multi-step online tasks. Unlike Auto-GPT's fragile chaining of API calls, Operator interacted with web pages visually, using a model trained to 'see' and 'click' like a human user. It was limited (slow, expensive, sometimes wrong) but it worked \u2014 the first agent that a non-technical user could hand a real task. A month later, Anthropic released Claude Code \u2014 a terminal-based coding agent that could understand entire codebases, write patches, and execute multi-step development tasks. Unlike earlier AI coding tools (Copilot, Cursor) that assisted within an IDE, Claude Code functioned as an autonomous agent: given a bug report, it would find the issue, write a fix, test it, and submit a pull request. By mid-2025, Claude Code had become the first agent that real development teams trusted with production code. Operator and Claude Code revealed that the agent market had two entry points: the web (for everyone) and the terminal (for developers). Both had crossed the threshold from 'interesting demo' to 'useful tool.'",
+        "zhHans": "2025 年 1 月和 2 月迎来了第一批生产级智能体。OpenAI 于 1 月 23 日发布 Operator \u2014 一个可以自主浏览网页、填写表单、预订票务、完成多步在线任务的 AI 智能体。与 Auto-GPT 脆弱的 API 调用链不同，Operator 以视觉方式与网页交互，使用经过训练的模型像人类用户一样'看'和'点击'。它有限制（慢、昂贵、有时出错），但它确实能用 \u2014 第一个非技术用户可以交给真实任务的智能体。一个月后，Anthropic 发布了 Claude Code \u2014 一个基于终端的编程智能体，可以理解整个代码仓库、编写补丁、执行多步开发任务。与早期在 IDE 内辅助的 AI 编程工具（Copilot、Cursor）不同，Claude Code 作为自主智能体运作：收到一个 bug 报告，它会找到问题、编写修复、测试它、并提交拉取请求。到 2025 年年中，Claude Code 成为第一个真实开发团队信任处理生产代码的智能体。Operator 和 Claude Code 揭示了智能体市场有两个入口：网页（面向所有人）和终端（面向开发者）。两者都从'有趣的演示'跨越到了'有用的工具'。"
       },
-      "anchorEvents": [
-        "openai-operator-2025",
-        "claude-code-launch-2025"
-      ],
+      "anchorEvents": ["openai-operator-2025", "claude-code-launch-2025"],
       "keyInsight": {
         "en": "The first production agents entered through two doors: web browsing for everyone, and coding for developers.",
         "zhHans": "第一批生产级智能体通过两扇门进入：面向所有人的网页浏览，和面向开发者的编程。"
@@ -79,33 +71,22 @@
         "zhHans": "从代码走向文化"
       },
       "narrative": {
-        "en": "As agents proved themselves in the terminal, their influence began changing how people thought about programming itself. In February 2025, OpenAI co-founder Andrej Karpathy coined the term 'vibe coding' — the practice of letting AI write code while the human merely describes what they want, sometimes without even reading the output. The term went viral because it named something real: agents were not just assisting programmers; they were redefining what it meant to program. By January 2026, agents had reached consumers. OpenClaw, a personal AI agent that could manage schedules, browsing, shopping, and communications, went viral — creating the first mainstream personal AI agent phenomenon. Unlike Claude Code (for developers) and Operator (for web tasks), OpenClaw was a general-purpose personal assistant that millions of non-technical users adopted into their daily lives. OpenClaw's virality proved that agents were not just a developer tool or a business product — they were becoming a consumer category. The journey from Auto-GPT's rough prototype to OpenClaw's mainstream adoption took less than three years. In that time, agents had evolved from a conceptual demonstration to an infrastructure layer to a set of production tools to a consumer phenomenon. The shift from 'chat' to 'action' was complete.",
-        "zhHans": "随着智能体在终端中证明了自己，它们的影响开始改变人们对编程本身的看法。2025 年 2 月，OpenAI 联合创始人 Andrej Karpathy 创造了'氛围编程'（vibe coding）这个词 — 让 AI 写代码，而人类仅描述他们想要什么，有时甚至不阅读输出。这个词病毒式传播，因为它命名了一个真实存在的东西：智能体不仅仅在辅助程序员；它们在重新定义编程的意义。到 2026 年 1 月，智能体已经触及消费者。OpenClaw，一个可以管理日程、浏览、购物和通讯的个人 AI 智能体，病毒式传播 — 创造了第一个主流个人 AI 智能体现象。与 Claude Code（面向开发者）和 Operator（面向网页任务）不同，OpenClaw 是一个通用个人助手，数百万非技术用户将其融入日常生活。OpenClaw 的爆火证明了智能体不仅是一个开发者工具或商业产品 — 它们正在成为消费者品类。从 Auto-GPT 的粗糙原型到 OpenClaw 的主流普及，这条旅程用了不到三年。在这段时间里，智能体从概念演示演变为基础设施层，再到一组生产工具，最后到消费者现象。从'聊天'到'行动'的转变已经完成。"
+        "en": "As agents proved themselves in the terminal, their influence began changing how people thought about programming itself. In February 2025, OpenAI co-founder Andrej Karpathy coined the term 'vibe coding' \u2014 the practice of letting AI write code while the human merely describes what they want, sometimes without even reading the output. The term went viral because it named something real: agents were not just assisting programmers; they were redefining what it meant to program. By January 2026, agents had reached consumers. OpenClaw, a personal AI agent that could manage schedules, browsing, shopping, and communications, went viral \u2014 creating the first mainstream personal AI agent phenomenon. Unlike Claude Code (for developers) and Operator (for web tasks), OpenClaw was a general-purpose personal assistant that millions of non-technical users adopted into their daily lives. OpenClaw's virality proved that agents were not just a developer tool or a business product \u2014 they were becoming a consumer category. The journey from Auto-GPT's rough prototype to OpenClaw's mainstream adoption took less than three years. In that time, agents had evolved from a conceptual demonstration to an infrastructure layer to a set of production tools to a consumer phenomenon. The shift from 'chat' to 'action' was complete.",
+        "zhHans": "随着智能体在终端中证明了自己，它们的影响开始改变人们对编程本身的看法。2025 年 2 月，OpenAI 联合创始人 Andrej Karpathy 创造了'氛围编程'（vibe coding）这个词 \u2014 让 AI 写代码，而人类仅描述他们想要什么，有时甚至不阅读输出。这个词病毒式传播，因为它命名了一个真实存在的东西：智能体不仅仅在辅助程序员；它们在重新定义编程的意义。到 2026 年 1 月，智能体已经触及消费者。OpenClaw，一个可以管理日程、浏览、购物和通讯的个人 AI 智能体，病毒式传播 \u2014 创造了第一个主流个人 AI 智能体现象。与 Claude Code（面向开发者）和 Operator（面向网页任务）不同，OpenClaw 是一个通用个人助手，数百万非技术用户将其融入日常生活。OpenClaw 的爆火证明了智能体不仅是一个开发者工具或商业产品 \u2014 它们正在成为消费者品类。从 Auto-GPT 的粗糙原型到 OpenClaw 的主流普及，这条旅程用了不到三年。在这段时间里，智能体从概念演示演变为基础设施层，再到一组生产工具，最后到消费者现象。从'聊天'到'行动'的转变已经完成。"
       },
-      "anchorEvents": [
-        "vibecoding-2025",
-        "openclaw-2026"
-      ],
+      "anchorEvents": ["vibecoding-2025", "openclaw-2026"],
       "keyInsight": {
-        "en": "Agents crossed from developer tool to consumer product in under three years — faster than the smartphone itself.",
-        "zhHans": "智能体在不到三年内从开发者工具跨越到了消费者产品 — 比智能手机本身还快。"
+        "en": "Agents crossed from developer tool to consumer product in under three years \u2014 faster than the smartphone itself.",
+        "zhHans": "智能体在不到三年内从开发者工具跨越到了消费者产品 \u2014 比智能手机本身还快。"
       }
     }
   ],
   "conclusion": {
-    "en": "The agent transformation happened with breathtaking speed. In March 2023, the concept of an 'AI agent' was a buggy open-source experiment. By January 2026, millions of people were using agents daily for work and personal tasks. The infrastructure — MCP, visual browsing models, terminal agents — was built in real time, in response to demand that Auto-GPT had revealed. The shift from chat to action is perhaps the most consequential product transition in AI since ChatGPT itself. It changes the fundamental relationship between humans and AI: from asking to delegating. The question that remains is not whether agents will become ubiquitous — that trajectory is set. The question is what happens when agents start delegating to other agents, and humans become spectators in the loops they once controlled.",
-    "zhHans": "智能体转型的速度令人叹为观止。2023 年 3 月，'AI 智能体'的概念还是一个充满 bug 的开源实验。到 2026 年 1 月，数百万人每天都在工作和个人任务中使用智能体。基础设施 — MCP、视觉浏览模型、终端智能体 — 是在实时建造的，以回应 Auto-GPT 所揭示的需求。从聊天到行动的转变，也许是自 ChatGPT 以来 AI 领域最重要的产品转型。它改变了人与 AI 之间的基本关系：从询问到委托。剩下的问题不是智能体是否会无处不在 — 这个轨迹已经确定。问题是当智能体开始委托其他智能体时会发生什么，而人类变成了他们曾经控制的循环中的旁观者。"
+    "en": "The agent transformation happened with breathtaking speed. In March 2023, the concept of an 'AI agent' was a buggy open-source experiment. By January 2026, millions of people were using agents daily for work and personal tasks. The infrastructure \u2014 MCP, visual browsing models, terminal agents \u2014 was built in real time, in response to demand that Auto-GPT had revealed. The shift from chat to action is perhaps the most consequential product transition in AI since ChatGPT itself. It changes the fundamental relationship between humans and AI: from asking to delegating. The question that remains is not whether agents will become ubiquitous \u2014 that trajectory is set. The question is what happens when agents start delegating to other agents, and humans become spectators in the loops they once controlled.",
+    "zhHans": "智能体转型的速度令人叹为观止。2023 年 3 月，'AI 智能体'的概念还是一个充满 bug 的开源实验。到 2026 年 1 月，数百万人每天都在工作和个人任务中使用智能体。基础设施 \u2014 MCP、视觉浏览模型、终端智能体 \u2014 是在实时建造的，以回应 Auto-GPT 所揭示的需求。从聊天到行动的转变，也许是自 ChatGPT 以来 AI 领域最重要的产品转型。它改变了人与 AI 之间的基本关系：从询问到委托。剩下的问题不是智能体是否会无处不在 \u2014 这个轨迹已经确定。问题是当智能体开始委托其他智能体时会发生什么，而人类变成了他们曾经控制的循环中的旁观者。"
   },
-  "relatedArcs": [
-    "open-vs-closed"
-  ],
-  "tags": [
-    "ai-agents",
-    "autonomous",
-    "mcp",
-    "claude-code",
-    "openclaw"
-  ],
+  "relatedArcs": ["open-vs-closed"],
+  "tags": ["ai-agents", "autonomous", "mcp", "claude-code", "openclaw"],
   "editorial": {
     "createdAt": "2026-06-30",
     "updatedAt": "2026-06-30",

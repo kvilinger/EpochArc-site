@@ -1,5 +1,5 @@
-@import "./global.css?v=2.3.0";
-@import "./main.css?v=2.3.0";
+@import "./global.css?v=2.2.8";
+@import "./main.css?v=2.2.8";
 
 /* ─── Arc List Page ──────────────────────────────────────── */
 .arcs-page-container {
@@ -28,76 +28,50 @@
 }
 
 .arcs-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
 }
 
 .arc-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  padding: var(--gap-md) var(--gap-md) var(--gap-md);
   text-decoration: none;
   transition: var(--transition-smooth);
   position: relative;
   overflow: hidden;
 }
 
-/* Bento size configurations */
-.arc-card.size-large {
-  grid-column: span 4;
-  grid-row: span 2;
-  min-height: 280px;
-  background: linear-gradient(135deg, var(--surface) 60%, color-mix(in oklch, var(--accent) 6%, transparent));
-}
-
-.arc-card.size-medium-v {
-  grid-column: span 2;
-  grid-row: span 2;
-  min-height: 280px;
-  background: linear-gradient(180deg, var(--surface) 60%, color-mix(in oklch, oklch(65% 0.16 30) 6%, transparent));
-}
-
-.arc-card.size-medium-h {
-  grid-column: span 3;
-  min-height: 180px;
-}
-
-/* Hover effects with subtle dynamic border glow */
-.arc-card::after {
+.arc-card::before {
   content: '';
   position: absolute;
-  inset: 0;
-  border-radius: var(--radius-lg);
-  padding: 1.5px;
-  background: linear-gradient(135deg, transparent 50%, var(--accent));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
   opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+  transition: opacity 0.2s ease;
 }
 
 .arc-card:hover {
-  transform: translateY(-4px);
-  border-color: transparent;
-  box-shadow: 0 16px 36px color-mix(in oklch, var(--fg) 8%, transparent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px color-mix(in oklch, var(--fg) 6%, transparent);
 }
 
-.arc-card:hover::after {
+.arc-card:hover::before {
   opacity: 1;
 }
 
 .arc-card-title {
-  font-size: 20px;
+  font-size: var(--fs-h3);
   font-weight: 800;
   color: var(--fg);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   line-height: 1.3;
 }
 
@@ -105,7 +79,7 @@
   font-size: var(--fs-body);
   color: var(--muted);
   line-height: 1.5;
-  margin-bottom: 24px;
+  margin-bottom: var(--gap-sm);
 }
 
 .arc-card-meta {
@@ -127,22 +101,7 @@
 .arc-card-tags {
   display: flex;
   gap: 6px;
-  margin-top: 14px;
-  flex-wrap: wrap;
-}
-
-/* Responsive adjustments */
-@media (max-width: 860px) {
-  .arcs-grid {
-    grid-template-columns: 1fr;
-  }
-  .arc-card.size-large,
-  .arc-card.size-medium-v,
-  .arc-card.size-medium-h {
-    grid-column: span 1;
-    grid-row: span 1;
-    min-height: auto;
-  }
+  margin-top: var(--gap-xs);
 }
 
 .arc-tag {
