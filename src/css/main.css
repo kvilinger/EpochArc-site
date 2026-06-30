@@ -1123,8 +1123,12 @@
     }
     .timeline-card-action {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
       margin-top: 8px;
+    }
+    .expanded .card-view-link {
+      display: none !important;
     }
     .timeline-card-l1 .timeline-node-head {
       align-items: center;

@@ -1053,6 +1053,10 @@ const LANGUAGES = {
                       <h3>${copy.title}</h3>
                       <p class="summary">${copy.summary}</p>
                       <div class="timeline-card-action">
+                        <a class="source-title-link card-view-link" href="events/${e.id}/index.html" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                          <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
+                          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
                         <span class="timeline-card-indicator" aria-hidden="true"></span>
                       </div>
                     </div>
@@ -1082,6 +1086,10 @@ const LANGUAGES = {
                       <h3>${copy.title}</h3>
                       <p class="summary">${copy.summary}</p>
                       <div class="timeline-card-action">
+                        <a class="source-title-link card-view-link" href="events/${e.id}/index.html" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                          <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
+                          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
                         <span class="timeline-card-indicator" aria-hidden="true"></span>
                       </div>
                     </div>
@@ -1110,6 +1118,10 @@ const LANGUAGES = {
                     <div class="card-content">
                       <h3>${copy.title}</h3>
                       <div class="timeline-card-action">
+                        <a class="source-title-link card-view-link" href="events/${e.id}/index.html" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                          <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
+                          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
                         <span class="timeline-card-indicator" aria-hidden="true"></span>
                       </div>
                     </div>
