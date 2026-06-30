@@ -272,7 +272,7 @@ else:
                 ev_date = ev['date']
                 ev_sig = ev['significance']
                 event_cards.append(f'''
-                  <a class="arc-anchor-event" href="../../index.html?event={ev_id}">
+                  <a class="arc-anchor-event" href="../../events/{ev_id}/index.html">
                     <span class="sig-dot l{ev_sig}"></span>
                     <span class="event-date">{ev_date}</span>
                     <span class="event-name" data-zh="{html_escape(ev_title_zh)}" data-en="{html_escape(ev_title_en)}">{html_escape(ev_title_en)}</span>
