@@ -210,90 +210,6 @@ if os.path.exists(TEMPLATE_FILE):
               </li>
             ''')
             
-        # 1b. 渲染 Impact Evolution (新增：影响力演进追踪)
-        # ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT change class names or DOM structure.
-        # This strictly aligns with detail.css styling.
-        impact_evolution_html = ''
-        impact_updates = e.get('impactUpdates', [])
-        if impact_updates:
-            mini_nodes = []
-            evolution_cards = []
-            for upd in impact_updates:
-                upd_date = upd.get('date', '')
-                upd_ms_en = html_escape(upd.get('milestone', {}).get('en', ''))
-                upd_ms_zh = html_escape(upd.get('milestone', {}).get('zhHans', ''))
-                upd_sum_en = html_escape(upd.get('summary', {}).get('en', ''))
-                upd_sum_zh = html_escape(upd.get('summary', {}).get('zhHans', ''))
-                severity_delta = upd.get('severityDelta', '+0')
-                cum_severity = upd.get('cumulativeSeverity', 1)
-                dim = upd.get('dimension', 'paradigm_shift')
-                linked_id = upd.get('linkedEventId', '')
-                
-                # 获取关联事件详情
-                linked_ev = events_by_id.get(linked_id, {})
-                linked_title_en = html_escape(linked_ev.get('title', {}).get('en', ''))
-                linked_title_zh = html_escape(linked_ev.get('title', {}).get('zhHans', ''))
-                linked_date = linked_ev.get('date', '')
-                
-                dim_en = labels['impactDimension'].get(dim, {}).get('en', dim)
-                dim_zh = labels['impactDimension'].get(dim, {}).get('zhHans', dim)
-                
-                # 拼接横轴 mini 节点
-                mini_nodes.append(f'''
-                  <div class="mini-node-wrapper" data-linked-id="{linked_id}">
-                    <div class="mini-node dim-{dim} severity-{cum_severity}"></div>
-                    <span class="mini-node-date">{upd_date}</span>
-                    <span class="mini-node-badge">{severity_delta}</span>
-                  </div>
-                ''')
-                
-                # 拼接详情卡片
-                evolution_cards.append(f'''
-                  <div class="evolution-card dim-{dim}" id="upd-{linked_id}">
-                    <div class="evolution-card-header">
-                      <span class="evolution-date">{upd_date}</span>
-                      <span class="evolution-badge badge-delta">变化: {severity_delta}</span>
-                      <span class="evolution-badge badge-cum">累积: L{cum_severity}</span>
-                      <span class="evolution-dimension" data-zh="{html_escape(dim_zh)}" data-en="{html_escape(dim_en)}">{html_escape(dim_en)}</span>
-                    </div>
-                    <h4 class="evolution-milestone" data-zh="{upd_ms_zh}" data-en="{upd_ms_en}">{upd_ms_en}</h4>
-                    <p class="evolution-summary" data-zh="{upd_sum_zh}" data-en="{upd_sum_en}">{upd_sum_en}</p>
-                    <div class="evolution-link-row">
-                      <a class="evolution-link-btn" href="javascript:navigateToEvent('{linked_id}')">
-                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"></path>
-                        </svg>
-                        <span data-zh="证据: {linked_title_zh} ({linked_date})" data-en="Evidence: {linked_title_en} ({linked_date})">Evidence: {linked_title_en} ({linked_date})</span>
-                      </a>
-                    </div>
-                  </div>
-                ''')
-                
-            mini_nodes_html = '\n'.join(mini_nodes)
-            evolution_cards_html = '\n'.join(evolution_cards)
-            
-            impact_evolution_html = f'''
-              <section class="detail-block impact-evolution-block">
-                <h3 class="evolution-block-title" data-zh="影响力演进追踪" data-en="Impact Evolution Tracking">
-                  影响力演进追踪
-                  <span class="evolution-toggle-hint" data-zh="点击展开详情" data-en="Click to expand details">Click to expand details</span>
-                </h3>
-                
-                <!-- 静态横向演进轴 -->
-                <div class="impact-timeline-mini">
-                  <div class="mini-line"></div>
-                  <div class="mini-nodes-container">
-                    {mini_nodes_html}
-                  </div>
-                </div>
-                
-                <!-- 里程碑详细卡片列表 (默认折叠) -->
-                <div class="impact-evolution-details collapsed">
-                  {evolution_cards_html}
-                </div>
-              </section>
-            '''
-
         # 2. 渲染 Sources HTML
         source_items = []
         for s_idx, source_ref in enumerate(e.get('sources', [])):
@@ -608,7 +524,6 @@ if os.path.exists(TEMPLATE_FILE):
         page_html = page_html.replace('{{DESC_ZH}}', copy_desc_zh)
         page_html = page_html.replace('{{DESC_EN}}', copy_desc_en)
         page_html = page_html.replace('{{IMPACTS}}', impacts_html)
-        page_html = page_html.replace('{{IMPACT_EVOLUTION_HTML}}', impact_evolution_html)
         page_html = page_html.replace('{{SIGNIFICANCE}}', str(e['significance']))
         page_html = page_html.replace('{{CATEGORIES}}', f'<span data-zh="{cats_zh}" data-en="{cats_en}">{cats_en}</span>')
         page_html = page_html.replace('{{CONSENSUS}}', f'<span data-zh="{con_zh}" data-en="{con_en}">{con_en}</span>')
