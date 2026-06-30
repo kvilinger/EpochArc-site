@@ -28,63 +28,71 @@
 }
 
 .arcs-grid {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-md);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 .arc-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: var(--gap-md) var(--gap-md) var(--gap-md);
+  padding: 24px;
+  min-height: 220px;
   text-decoration: none;
   transition: var(--transition-smooth);
   position: relative;
   overflow: hidden;
 }
 
-.arc-card::before {
+/* Hover effects with subtle dynamic border glow */
+.arc-card::after {
   content: '';
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--accent);
+  inset: 0;
+  border-radius: var(--radius-lg);
+  padding: 1.5px;
+  background: linear-gradient(135deg, transparent 50%, var(--accent));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .arc-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px color-mix(in oklch, var(--fg) 6%, transparent);
+  transform: translateY(-4px);
+  border-color: transparent;
+  box-shadow: 0 16px 32px color-mix(in oklch, var(--fg) 8%, transparent);
 }
 
-.arc-card:hover::before {
+.arc-card:hover::after {
   opacity: 1;
 }
 
 .arc-card-title {
-  font-size: var(--fs-h3);
+  font-size: 20px;
   font-weight: 800;
   color: var(--fg);
-  margin-bottom: 6px;
-  line-height: 1.3;
+  margin-bottom: 8px;
+  line-height: 1.35;
 }
 
 .arc-card-subtitle {
   font-size: var(--fs-body);
   color: var(--muted);
   line-height: 1.5;
-  margin-bottom: var(--gap-sm);
+  margin-bottom: 20px;
 }
 
 .arc-card-meta {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--gap-sm);
   flex-wrap: wrap;
   font-size: var(--fs-meta);
@@ -101,7 +109,20 @@
 .arc-card-tags {
   display: flex;
   gap: 6px;
-  margin-top: var(--gap-xs);
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .arcs-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .arc-card {
+    min-height: auto;
+    padding: 20px;
+  }
 }
 
 .arc-tag {
