@@ -5,8 +5,8 @@
     "zhHans": "Transformer 帝国：从论文到万亿产业"
   },
   "subtitle": {
-    "en": "How a single architecture reshaped computing parameters and market valuations",
-    "zhHans": "一种架构如何重塑了计算边界与万亿美元的硬件市场"
+    "en": "A single architecture reshaped computing from translation tasks to trillion-dollar markets",
+    "zhHans": "一种架构从翻译任务开始，重塑了整个计算产业的价值链"
   },
   "coverTheme": "capability",
   "status": "published",
@@ -26,7 +26,10 @@
         "en": "In 2014, Bahdanau et al. introduced the attention mechanism to alleviate the information bottleneck in sequence-to-sequence Recurrent Neural Networks (RNNs). However, sequential dependencies in RNNs (such as LSTM) remained a hard constraint, preventing parallel processing across GPU clusters. In June 2017, Vaswani et al. published 'Attention Is All You Need,' proposing the Transformer. By removing recurrence entirely, it allowed parallel training. On the WMT 2014 English-to-German translation task, the Transformer achieved a state-of-the-art 28.4 BLEU score. Crucially, it required only 3.15e18 FLOPS of training compute—about a fraction of the cost of previous architectures, proving that architectural simplification could significantly improve computational efficiency.",
         "zhHans": "2014 年，Bahdanau 等人引入了注意力机制，以缓解循环神经网络（RNN）中固定长度向量的信息瓶颈。然而，RNN（如 LSTM）的顺序依赖关系仍是硬约束，限制了在 GPU 集群上的并行化训练。2017 年 6 月，Vaswani 等人发表《Attention Is All You Need》，提出 Transformer 架构，彻底移除了循环结构。在 WMT 2014 英语-德语翻译任务上，该模型取得了 28.4 BLEU 的 SOTA 分数。更重要的是，其训练仅消耗 3.15e18 FLOPS 的算力——仅为先前主流架构的几分之一，实证了通过架构简化换取极高计算并行度的可行性。"
       },
-      "anchorEvents": ["attention-2014", "transformer-2017"],
+      "anchorEvents": [
+        "attention-2014",
+        "transformer-2017"
+      ],
       "keyInsight": {
         "en": "Removing recurrence unlocked GPU parallel training scalability.",
         "zhHans": "彻底移除循环结构释放了 GPU 并行计算的扩展上限"
@@ -42,7 +45,10 @@
         "en": "In 2018, Google released BERT-Large, a 340-million-parameter encoder model that set SOTA records on 11 NLP tasks, including GLUE and SQuAD benchmarks. In parallel, OpenAI focused on a decoder-only architecture. In 2020, OpenAI scaled this trajectory with GPT-3, featuring 175 billion parameters trained on 300 billion tokens with an estimated 3.14e23 FLOPS of compute. GPT-3 demonstrated few-shot learning capabilities without weight updates, executing code generation and logical reasoning tasks. This empirical success validated the scaling laws proposed by Kaplan et al., showing that cross-entropy loss decreases as a power-law function of parameter count, dataset size, and training compute.",
         "zhHans": "2018 年，Google 发布了 3.4 亿参数的编码器模型 BERT-Large，在 GLUE 和 SQuAD 等 11 项自然语言处理基准上刷新了纪录。与此同时，OpenAI 锁定了仅解码器（Decoder-only）的架构。2020 年，OpenAI 推出了拥有 1750 亿参数的 GPT-3，该模型在 3000 亿 Token 数据上用约 3.14e23 FLOPS 的算力完成预训练。GPT-3 在不进行权重更新的情况下展示出少样本学习（Few-shot）能力，直接运行代码生成和复杂翻译任务。这一实证成功支撑了 Kaplan 等人提出的规模法则（Scaling Laws）：交叉熵损失与模型参数量、数据集规模及训练总算力呈幂律关系负相关。"
       },
-      "anchorEvents": ["bert-2018", "gpt3-2020"],
+      "anchorEvents": [
+        "bert-2018",
+        "gpt3-2020"
+      ],
       "keyInsight": {
         "en": "Performance scales as a power-law function of compute and data.",
         "zhHans": "模型损失与算力、参数和数据量呈精确的幂律负相关"
@@ -58,7 +64,10 @@
         "en": "In November 2022, OpenAI launched ChatGPT, which reached 100 million monthly active users in 60 days, making it the fastest-growing consumer application in history. While GPT-3.5 served as the baseline, the addition of Reinforcement Learning from Human Feedback (RLHF) aligned model outputs to user intent. In March 2023, OpenAI released GPT-4. Reports indicated a Mixture-of-Experts (MoE) architecture totaling approximately 1.8 trillion parameters across 16 experts, operating with a 128k token context window. GPT-4 scored in the 90th percentile of the Uniform Bar Exam and 99th percentile of the Biology Olympiad, establishing that dense and sparse parameter scaling yields high-level cognitive task accuracy.",
         "zhHans": "2022 年 11 月，OpenAI 推出 ChatGPT，在 60 收官天内实现了 1 亿月活跃用户，成为史上增速最快的消费级应用。尽管底层基于百亿级参数的 GPT-3.5，但引入人类反馈强化学习（RLHF）大幅对齐了输出意图。2023 年 3 月，GPT-4 发布。据业界估算，它采用了包含 16 个专家的混合专家（MoE）架构，总参数量达 1.8 万亿，支持 128k 上下文。GPT-4 在模拟美国统一律师考试中取得了前 10%（90th percentile）的成绩，在生物奥林匹克中名列前 1%（99th percentile），验证了稀疏参数扩展对高难度认知任务的攻坚能力。"
       },
-      "anchorEvents": ["chatgpt-2022", "gpt4-2023"],
+      "anchorEvents": [
+        "chatgpt-2022",
+        "gpt4-2023"
+      ],
       "keyInsight": {
         "en": "Sparse MoE scaling enabled trillion-parameter training feasibility.",
         "zhHans": "稀疏 MoE 架构解决了万亿参数模型单设备显存溢出的计算瓶颈"
@@ -74,7 +83,11 @@
         "en": "By 2024, scaling strategy diversified. GPT-4o combined text, vision, and audio into a single neural network, reducing audio latency to an average of 232 milliseconds—matching human conversation speeds. In September 2024, OpenAI introduced o1, shifting focus from pre-training compute to inference-time compute. By using reinforcement learning to generate chains of thought before outputting answers, o1 improved performance on the American Invitational Mathematics Examination (AIME) from GPT-4o's 13.4% to 83.3%. By 2025, GPT-5 integrated these paradigms with unified reasoning, backed by mega-datacenters requiring tens of thousands of H100 GPUs and tens of billions in capital expenditure. In parallel, NVIDIA's market capitalization surpassed $3 trillion, reflecting the massive financial scale required to sustain this infrastructure.",
         "zhHans": "到 2024 年，扩展策略走向多元。GPT-4o 实现了原生多模态融合，将音频响应延迟缩短至平均 232 毫秒。2024 年 9 月，OpenAI 推出 o1，将算力重心由预训练转移到推理时计算（Inference-time Compute），利用强化学习在输出前生成思考链。o1 在美国数学邀请赛（AIME）中的准确率从 GPT-4o 的 13.4% 暴涨至 83.3%。2025 年，GPT-5 整合了原生多模态与系统推理能力，其背后是容纳数万张 H100/B200 芯片、耗资数百亿美元的超大型数据中心。伴随这一进程，NVIDIA 市值突破 3 万亿美元，印证了维持这一物理计算边界所需的庞大金融支撑。"
       },
-      "anchorEvents": ["gpt4o-2024", "o1-2024", "gpt5-2025"],
+      "anchorEvents": [
+        "gpt4o-2024",
+        "o1-2024",
+        "gpt5-2025"
+      ],
       "keyInsight": {
         "en": "Inference-time search bypassed pre-training sample complexity limits.",
         "zhHans": "推理时计算（RL搜索）绕过了高质量预训练语料枯竭的实证上限"
@@ -86,7 +99,11 @@
     "zhHans": "在短短八年里，Transformer 架构在算力消耗上扩展了超过 9 个数量级，完成了从一个机器翻译工具到万亿计算时代硬件基础设施层的跃迁。实证结果表明，极端的规模与基础结构先验（如自注意力）相结合，可以产生超乎预期的认知能力。然而，随着计算集群容量逼近吉瓦级、高质量自然语言数据集遭遇枯竭上限，当前扩展范式的能效比与对齐控制仍是未决的关键挑战。"
   },
   "relatedArcs": [],
-  "tags": ["transformer", "scaling", "foundation-models"],
+  "tags": [
+    "transformer",
+    "scaling",
+    "foundation-models"
+  ],
   "editorial": {
     "createdAt": "2026-06-29",
     "updatedAt": "2026-06-29",

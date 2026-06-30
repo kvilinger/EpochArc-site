@@ -2,8 +2,8 @@
   "id": "gemini-2-agents-2024",
   "slug": "gemini-2-0-project-mariner",
   "title": {
-    "en": "Google launches Gemini 2.0 with Project Mariner, unveiling its vision for an AI agent ecosystem",
-    "zhHans": "Google 发布 Gemini 2.0 及 Project Mariner，展示 AI 智能体生态愿景"
+    "en": "Google launches Gemini 2.0 with Project Mariner, unveiling a vision for AI agents",
+    "zhHans": "Google 发布 Gemini 2.0 和 Project Mariner，展示 AI 智能体愿景"
   },
   "summary": {
     "en": "On December 11, 2024, Google DeepMind launched Gemini 2.0, its 'agentic era' AI model, alongside three agent projects: Project Mariner (browser agent), Project Astra (universal assistant prototype), and Jules (coding agent). The launch signalled Google's formal entry into the AI agent race, bringing agent-native capabilities to billions of users through Google's existing product ecosystem.",
@@ -19,7 +19,10 @@
     "en": "December 11, 2024",
     "zhHans": "2024年12月11日"
   },
-  "categories": ["product", "capability"],
+  "categories": [
+    "product",
+    "capability"
+  ],
   "status": "published",
   "significance": 1,
   "impactIndex": 5,
@@ -34,10 +37,17 @@
         "en": "First mainstream platform to natively support multimodal input, tool use, and autonomous execution in a single model. Brought agent capabilities to the billions of users in Google's ecosystem.",
         "zhHans": "首个原生支持多模态输入、工具使用和自主执行的单一模型的主流平台。将智能体能力带给 Google 生态中的数十亿用户。"
       },
-      "affectedGroups": ["Google users", "AI developers", "enterprises"],
+      "affectedGroups": [
+        "Google users",
+        "AI developers",
+        "enterprises"
+      ],
       "timeframe": "medium",
       "evidenceGrade": "A",
-      "sourceIds": ["google-gemini-2-blog-2024", "forbes-gemini-mariner-2024"]
+      "sourceIds": [
+        "google-gemini-2-blog-2024",
+        "forbes-gemini-mariner-2024"
+      ]
     },
     {
       "dimension": "paradigm_shift",
@@ -47,10 +57,15 @@
         "en": "Signal that the largest platform company in the world was betting on AI agents, not just chatbots. Agent capabilities becoming embedded in everyday tools, not requiring separate products.",
         "zhHans": "表明全球最大的平台公司押注于 AI 智能体，而不仅仅是聊天机器人。智能体能力正在嵌入日常工具，不需要单独产品。"
       },
-      "affectedGroups": ["general public", "tech industry"],
+      "affectedGroups": [
+        "general public",
+        "tech industry"
+      ],
       "timeframe": "medium",
       "evidenceGrade": "B",
-      "sourceIds": ["forbes-gemini-mariner-2024"]
+      "sourceIds": [
+        "forbes-gemini-mariner-2024"
+      ]
     }
   ],
   "claims": [
@@ -62,14 +77,29 @@
       },
       "claimType": "fact",
       "evidenceGrade": "A",
-      "sourceIds": ["google-gemini-2-blog-2024"]
+      "sourceIds": [
+        "google-gemini-2-blog-2024"
+      ]
     }
   ],
   "sources": [
-    { "sourceId": "google-gemini-2-blog-2024", "supports": ["gemini-2-agents-2024"], "quote": "Introducing Gemini 2.0, our new AI model for the agentic era." },
-    { "sourceId": "forbes-gemini-mariner-2024", "supports": [], "quote": "Google Launches Mariner, A New AI Agent Based On Updated Gemini 2.0." }
+    {
+      "sourceId": "google-gemini-2-blog-2024",
+      "supports": [
+        "gemini-2-agents-2024"
+      ],
+      "quote": "Introducing Gemini 2.0, our new AI model for the agentic era."
+    },
+    {
+      "sourceId": "forbes-gemini-mariner-2024",
+      "supports": [],
+      "quote": "Google Launches Mariner, A New AI Agent Based On Updated Gemini 2.0."
+    }
   ],
-  "relatedEvents": ["o1-2024", "claude-3-5-sonnet-2024"],
+  "relatedEvents": [
+    "o1-2024",
+    "claude-3-5-sonnet-2024"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
@@ -78,7 +108,11 @@
     "publishedAt": "2026-06-25",
     "curator": "gang",
     "changeLog": [
-      { "date": "2026-06-25", "changeType": "created", "summary": "Added Gemini 2.0 + Project Mariner — Google's agent ecosystem launch." }
+      {
+        "date": "2026-06-25",
+        "changeType": "created",
+        "summary": "Added Gemini 2.0 + Project Mariner — Google's agent ecosystem launch."
+      }
     ]
   }
 }

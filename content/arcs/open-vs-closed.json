@@ -1,19 +1,19 @@
 {
   "id": "open-vs-closed",
   "title": {
-    "en": "Open vs Closed: AI\u2019s Two Paths",
+    "en": "Open vs Closed: AI’s Two Paths",
     "zhHans": "开源 vs 闭源：AI 的两条路线"
   },
   "subtitle": {
-    "en": "How the fork between open-weight and proprietary models reshaped the AI industry",
-    "zhHans": "开源权重与专有模型的分岔如何重塑了 AI 产业格局"
+    "en": "The competition between open-weight and proprietary models that divided the AI industry",
+    "zhHans": "开源权重与专有模型之间的竞争，将 AI 产业分裂为两条平行路线"
   },
   "coverTheme": "capability",
   "status": "published",
   "significance": 3,
   "abstract": {
-    "en": "In 2020, frontier AI meant closed APIs from a handful of companies. By 2026, open-weight models matched proprietary ones on most benchmarks, and a single open-source release from a Chinese lab could wipe $593 billion from the US stock market in a day. This arc traces the fork between closed-source and open-weight AI \u2014 from the implicit monopoly of compute, through the LLaMA leak that started an open revolution, to DeepSeek\u2019s efficiency shock and the geopolitical twist of export controls that backfired. The question is no longer whether open source can compete, but what happens when both paths converge on commoditization.",
-    "zhHans": "2020 年，前沿 AI 意味着少数几家公司的封闭 API。到 2026 年，开源权重模型在大多数基准测试上已经追上专有模型，中国实验室的一次开源发布就能让美国股市单日蒸发 5930 亿美元。本专题追踪 AI 的闭源与开源两条路线的分岔——从算力垄断的默认闭源，到 LLaMA 泄露引发的开放革命，再到 DeepSeek 的效率冲击和出口管制反向加速的地缘政治转折。问题已经不是\u201C开源能否竞争\u201D，而是两条路线在趋同于商品化时，接下来会发生什么。"
+    "en": "In 2020, frontier AI meant closed APIs from a handful of companies. By 2026, open-weight models matched proprietary ones on most benchmarks, and a single open-source release from a Chinese lab could wipe $593 billion from the US stock market in a day. This arc traces the fork between closed-source and open-weight AI — from the implicit monopoly of compute, through the LLaMA leak that started an open revolution, to DeepSeek’s efficiency shock and the geopolitical twist of export controls that backfired. The question is no longer whether open source can compete, but what happens when both paths converge on commoditization.",
+    "zhHans": "2020 年，前沿 AI 意味着少数几家公司的封闭 API。到 2026 年，开源权重模型在大多数基准测试上已经追上专有模型，中国实验室的一次开源发布就能让美国股市单日蒸发 5930 亿美元。本专题追踪 AI 的闭源与开源两条路线的分岔——从算力垄断的默认闭源，到 LLaMA 泄露引发的开放革命，再到 DeepSeek 的效率冲击和出口管制反向加速的地缘政治转折。问题已经不是“开源能否竞争”，而是两条路线在趋同于商品化时，接下来会发生什么。"
   },
   "chapters": [
     {
@@ -23,12 +23,17 @@
         "zhHans": "默认闭源的时代"
       },
       "narrative": {
-        "en": "Before 2023, the phrase \u201Copen-source AI\u201D meant open-source frameworks like TensorFlow and PyTorch \u2014 not open models. Frontier models were inherently closed because training them required compute resources that only a handful of companies could afford. OpenAI\u2019s GPT-3 (June 2020), a 175-billion-parameter model trained on 300 billion tokens with an estimated 3.14e23 FLOPS, was accessible only through a paid API. DALL-E 2 (April 2022) was a closed web app. GitHub Copilot (June 2022) charged $19/month. And ChatGPT (November 2022) was free to use but its weights were entirely proprietary. There was no \u201Copen vs closed\u201D debate because there was no open option. The debate simply didn\u2019t exist.",
-        "zhHans": "2023 年之前，\u201C开源 AI\u201D指的是开源框架如 TensorFlow 和 PyTorch——而不是开放的模型。前沿模型天生就是闭源的，因为训练它们所需的计算资源只有少数公司负担得起。OpenAI 的 GPT-3（2020 年 6 月），一个 1750 亿参数的模型，在 3000 亿 token 上训练，消耗约 3.14e23 FLOPS 算力，只能通过付费 API 访问。DALL-E 2（2022 年 4 月）是一个封闭的网页应用。GitHub Copilot（2022 年 6 月）每月收费 19 美元。ChatGPT（2022 年 11 月）免费使用但权重完全不公开。没有\u201C开源 vs 闭源\u201D的争论，因为根本没有开源的选项——这个争论根本不存在。"
+        "en": "Before 2023, the phrase “open-source AI” meant open-source frameworks like TensorFlow and PyTorch — not open models. Frontier models were inherently closed because training them required compute resources that only a handful of companies could afford. OpenAI’s GPT-3 (June 2020), a 175-billion-parameter model trained on 300 billion tokens with an estimated 3.14e23 FLOPS, was accessible only through a paid API. DALL-E 2 (April 2022) was a closed web app. GitHub Copilot (June 2022) charged $19/month. And ChatGPT (November 2022) was free to use but its weights were entirely proprietary. There was no “open vs closed” debate because there was no open option. The debate simply didn’t exist.",
+        "zhHans": "2023 年之前，“开源 AI”指的是开源框架如 TensorFlow 和 PyTorch——而不是开放的模型。前沿模型天生就是闭源的，因为训练它们所需的计算资源只有少数公司负担得起。OpenAI 的 GPT-3（2020 年 6 月），一个 1750 亿参数的模型，在 3000 亿 token 上训练，消耗约 3.14e23 FLOPS 算力，只能通过付费 API 访问。DALL-E 2（2022 年 4 月）是一个封闭的网页应用。GitHub Copilot（2022 年 6 月）每月收费 19 美元。ChatGPT（2022 年 11 月）免费使用但权重完全不公开。没有“开源 vs 闭源”的争论，因为根本没有开源的选项——这个争论根本不存在。"
       },
-      "anchorEvents": ["gpt3-2020", "dall-e-2-2022", "github-copilot-2022", "chatgpt-2022"],
+      "anchorEvents": [
+        "gpt3-2020",
+        "dall-e-2-2022",
+        "github-copilot-2022",
+        "chatgpt-2022"
+      ],
       "keyInsight": {
-        "en": "Closed source wasn\u2019t a business choice \u2014 it was a physical constraint of compute concentration.",
+        "en": "Closed source wasn’t a business choice — it was a physical constraint of compute concentration.",
         "zhHans": "闭源不是商业选择——是算力集中的物理约束导致的默认状态。"
       }
     },
@@ -39,10 +44,15 @@
         "zhHans": "改变一切的泄露"
       },
       "narrative": {
-        "en": "The fork began in August 2022, when Stability AI open-sourced Stable Diffusion \u2014 a text-to-image model that rivaled closed offerings from OpenAI and Google. Anyone with a consumer GPU could generate high-quality images. But the real shock came six months later. Meta released LLaMA in February 2023 under a non-commercial research license, sharing weights with academic researchers via a request form. Within days, the weights were leaked on 4chan. What followed was a Cambrian explosion: Stanford\u2019s Alpaca fine-tuned LLaMA-7B for $600; LMSYS\u2019s Vicuna reached 90% of ChatGPT quality; dozens of derivative models emerged within weeks. The leaked LLaMA weights became the seed of the entire open-weight LLM ecosystem. Meta responded by releasing Llama 2 under a commercial license in July 2023, and by July 2024, Llama 3.1 405B became the first open-weight model to reach frontier-level performance \u2014 the open path was now real.",
+        "en": "The fork began in August 2022, when Stability AI open-sourced Stable Diffusion — a text-to-image model that rivaled closed offerings from OpenAI and Google. Anyone with a consumer GPU could generate high-quality images. But the real shock came six months later. Meta released LLaMA in February 2023 under a non-commercial research license, sharing weights with academic researchers via a request form. Within days, the weights were leaked on 4chan. What followed was a Cambrian explosion: Stanford’s Alpaca fine-tuned LLaMA-7B for $600; LMSYS’s Vicuna reached 90% of ChatGPT quality; dozens of derivative models emerged within weeks. The leaked LLaMA weights became the seed of the entire open-weight LLM ecosystem. Meta responded by releasing Llama 2 under a commercial license in July 2023, and by July 2024, Llama 3.1 405B became the first open-weight model to reach frontier-level performance — the open path was now real.",
         "zhHans": "分岔始于 2022 年 8 月：Stability AI 开源了 Stable Diffusion，一个在图像生成上与 OpenAI 和 Google 的闭源产品竞争的文生图模型。任何人都可以用消费级 GPU 生成高质量图像。但真正的冲击发生在六个月后。Meta 在 2023 年 2 月以非商业研究许可发布了 LLaMA，通过申请表与学术研究人员共享权重。数天内，权重在 4chan 上被泄露。接下来是寒武纪大爆发：斯坦福的 Alpaca 以 600 美元微调了 LLaMA-7B；LMSYS 的 Vicuna 达到了 ChatGPT 质量的 90%；数周内涌现了数十个衍生模型。泄露的 LLaMA 权重成为整个开源权重 LLM 生态的种子。Meta 的回应是在 2023 年 7 月以商业许可发布 Llama 2，到 2024 年 7 月，Llama 3.1 405B 成为第一个达到前沿水平的开源权重模型——开放路线现在成了真正可行的选择。"
       },
-      "anchorEvents": ["stable-diffusion-2022", "llama-2023", "auto-gpt-2023", "llama-3.1-405b-2024"],
+      "anchorEvents": [
+        "stable-diffusion-2022",
+        "llama-2023",
+        "auto-gpt-2023",
+        "llama-3.1-405b-2024"
+      ],
       "keyInsight": {
         "en": "The open-weight revolution began not with a business decision, but with a leak on 4chan.",
         "zhHans": "开源权重革命不是由商业决策启动的——始于 4chan 上的一次泄露。"
@@ -55,10 +65,14 @@
         "zhHans": "效率冲击"
       },
       "narrative": {
-        "en": "On January 20, 2025, Chinese AI lab DeepSeek released R1 \u2014 an MIT-licensed open-weight reasoning model matching OpenAI\u2019s o1 on key benchmarks. The training cost: approximately $5.9 million, roughly 1/20th of comparable closed models. Using Mixture-of-Experts architecture and the GRPO (Group Relative Policy Optimization) reinforcement learning technique, DeepSeek proved that frontier reasoning didn\u2019t require billions of dollars in compute. The market reaction one week later was unprecedented: Nvidia lost $593 billion in a single day \u2014 the largest single-day value loss in history. The Nasdaq fell 3%. Tech billionaires lost nearly $100 billion combined. The selloff reflected a fundamental revaluation: if frontier AI could be built with fewer GPUs, the entire $500B AI infrastructure buildout needed re-examination. DeepSeek R1 demonstrated that open-source models could not only compete with closed ones on quality, but also expose the economic assumptions behind the closed-source ecosystem.",
+        "en": "On January 20, 2025, Chinese AI lab DeepSeek released R1 — an MIT-licensed open-weight reasoning model matching OpenAI’s o1 on key benchmarks. The training cost: approximately $5.9 million, roughly 1/20th of comparable closed models. Using Mixture-of-Experts architecture and the GRPO (Group Relative Policy Optimization) reinforcement learning technique, DeepSeek proved that frontier reasoning didn’t require billions of dollars in compute. The market reaction one week later was unprecedented: Nvidia lost $593 billion in a single day — the largest single-day value loss in history. The Nasdaq fell 3%. Tech billionaires lost nearly $100 billion combined. The selloff reflected a fundamental revaluation: if frontier AI could be built with fewer GPUs, the entire $500B AI infrastructure buildout needed re-examination. DeepSeek R1 demonstrated that open-source models could not only compete with closed ones on quality, but also expose the economic assumptions behind the closed-source ecosystem.",
         "zhHans": "2025 年 1 月 20 日，中国 AI 实验室 DeepSeek 发布了 R1——一个以 MIT 许可发布的开源权重推理模型，在关键基准上匹配 OpenAI 的 o1。训练成本：约 590 万美元，大约是可比闭源模型的二十分之一。利用混合专家架构和 GRPO（组相对策略优化）强化学习技术，DeepSeek 证明了前沿推理不需要数十亿美元的算力。一周后的市场反应史无前例：Nvidia 单日蒸发 5930 亿美元——历史上最大的单日市值损失。纳斯达克下跌 3%。科技亿万富翁合计损失近 1000 亿美元。这次抛售反映了一个根本性的重估：如果前沿 AI 可以用更少的 GPU 构建，那么整个 5000 亿美元的 AI 基础设施建设就需要重新审视。DeepSeek R1 证明了开源模型不仅可以在质量上与闭源模型竞争，还能揭露闭源生态背后的经济假设。"
       },
-      "anchorEvents": ["deepseek-r1-2025", "llama-4-2025", "gpt5-2025"],
+      "anchorEvents": [
+        "deepseek-r1-2025",
+        "llama-4-2025",
+        "gpt5-2025"
+      ],
       "keyInsight": {
         "en": "When open models matched closed ones on quality, the entire capital allocation thesis for AI collapsed and reset.",
         "zhHans": "当开源模型在质量上追平闭源时，整个 AI 资本配置逻辑崩溃并重置了。"
@@ -71,10 +85,14 @@
         "zhHans": "地缘政治的反转"
       },
       "narrative": {
-        "en": "On June 12, 2026, the US government ordered an export ban on Anthropic\u2019s Fable 5, citing national security concerns. The intended message: closed frontier models from American companies must not flow to adversaries. The actual outcome was immediate and ironic. The very next day \u2014 June 13 \u2014 Z.ai (formerly Zhipu AI) released GLM-5.2, a 744-billion-parameter MoE model under the MIT license with a 1-million-token context window. On coding benchmarks (FrontierSWE, PostTrainBench), it matched or exceeded GPT-5.5 at roughly one-sixth the inference cost. Z.ai explicitly framed the timing as a direct response to the Fable 5 ban. The pattern was now clear: export controls on closed models were not containing AI capability \u2014 they were accelerating open-source alternatives. DeepSeek V4, released in April 2026 with 1.6 trillion parameters trained on Huawei Ascend chips, confirmed that the open path had become the primary channel for AI capability diffusion across borders.",
+        "en": "On June 12, 2026, the US government ordered an export ban on Anthropic’s Fable 5, citing national security concerns. The intended message: closed frontier models from American companies must not flow to adversaries. The actual outcome was immediate and ironic. The very next day — June 13 — Z.ai (formerly Zhipu AI) released GLM-5.2, a 744-billion-parameter MoE model under the MIT license with a 1-million-token context window. On coding benchmarks (FrontierSWE, PostTrainBench), it matched or exceeded GPT-5.5 at roughly one-sixth the inference cost. Z.ai explicitly framed the timing as a direct response to the Fable 5 ban. The pattern was now clear: export controls on closed models were not containing AI capability — they were accelerating open-source alternatives. DeepSeek V4, released in April 2026 with 1.6 trillion parameters trained on Huawei Ascend chips, confirmed that the open path had become the primary channel for AI capability diffusion across borders.",
         "zhHans": "2026 年 6 月 12 日，美国政府以国家安全为由，下令禁止 Anthropic 的 Fable 5 出口。意图很明确：美国的闭源前沿模型不能流向对手国家。但实际结果充满了讽刺意味。就在第二天——6 月 13 日——Z.ai（原智谱 AI）以 MIT 许可发布了 GLM-5.2，一个 7440 亿参数的混合专家模型，拥有 100 万 token 上下文窗口。在编程基准测试（FrontierSWE、PostTrainBench）上，它以约六分之一的推理成本匹配甚至超越了 GPT-5.5。Z.ai 明确将发布时机定位为对 Fable 5 禁令的直接回应。模式已经很清楚：对闭源模型的出口管制并没有遏制 AI 能力的扩散——它们反而加速了开源替代方案的发展。DeepSeek V4 在 2026 年 4 月发布，一个 1.6 万亿参数、在华为昇腾芯片上训练的模型，证实了开放路径已经成为 AI 能力跨境扩散的主要渠道。"
       },
-      "anchorEvents": ["claude-fable-ban-2026", "glm-52-open-source-2026", "deepseek-v4-2026"],
+      "anchorEvents": [
+        "claude-fable-ban-2026",
+        "glm-52-open-source-2026",
+        "deepseek-v4-2026"
+      ],
       "keyInsight": {
         "en": "Export controls on closed models became the most effective accelerator of open-source alternatives.",
         "zhHans": "对闭源模型的出口管制成了开源替代最有效的加速器。"
@@ -87,22 +105,36 @@
         "zhHans": "前方的分岔"
       },
       "narrative": {
-        "en": "By mid-2026, the benchmark gap between open and closed models had shrunk from a canyon to a crack. Open models matched or exceeded closed ones on MMLU, MATH, HumanEval, and GPQA Diamond. Closed models maintained a lead only on complex agentic coding (SWE-bench) and human preference (Chatbot Arena). The question has shifted from \u201Ccan open source compete?\u201D to a more uncomfortable one: what happens when both paths commoditize? OpenAI\u2019s restructure as a for-profit PBC (October 2025) signaled that the closed path needs a sustainable business model. Sora\u2019s shutdown (April 2026) showed that even frontier labs kill products that don\u2019t find market fit. Meanwhile, open standards like Anthropic\u2019s MCP Protocol (November 2024) and consumer phenomena like OpenClaw (January 2026) suggested that the real competition is moving from model capability to ecosystem control, data access, and distribution. The fork is no longer a binary choice. It has become a structural feature of the AI industry \u2014 two parallel paths that will coexist, compete, and reshape each other for years to come.",
-        "zhHans": "到 2026 年中，开源与闭源模型之间的基准差距已经从鸿沟缩小到裂缝。开源模型在 MMLU、MATH、HumanEval 和 GPQA Diamond 上已经匹配或超越闭源模型。闭源模型仅在复杂智能体编码（SWE-bench）和用户偏好（Chatbot Arena）上保持领先。问题已经从\u201C开源能否竞争\u201D转向了一个更不舒服的问题：两条路线都走向商品化时会发生什么？OpenAI 重组为营利性公益公司（2025 年 10 月）表明闭源路线需要一个可持续的商业模式。Sora 的关停（2026 年 4 月）显示即使是前沿实验室也会砍掉找不到市场契合的产品。与此同时，Anthropic 的 MCP 协议（2024 年 11 月）等开放标准和 OpenClaw（2026 年 1 月）等消费者现象表明，真正的竞争正在从模型能力转向生态系统控制、数据访问和分发渠道。这个分岔不再是一个二元选择。它已经成为 AI 产业的一个结构性特征——两条平行的路径将在未来数年内共存、竞争并相互塑造。"
+        "en": "By mid-2026, the benchmark gap between open and closed models had shrunk from a canyon to a crack. Open models matched or exceeded closed ones on MMLU, MATH, HumanEval, and GPQA Diamond. Closed models maintained a lead only on complex agentic coding (SWE-bench) and human preference (Chatbot Arena). The question has shifted from “can open source compete?” to a more uncomfortable one: what happens when both paths commoditize? OpenAI’s restructure as a for-profit PBC (October 2025) signaled that the closed path needs a sustainable business model. Sora’s shutdown (April 2026) showed that even frontier labs kill products that don’t find market fit. Meanwhile, open standards like Anthropic’s MCP Protocol (November 2024) and consumer phenomena like OpenClaw (January 2026) suggested that the real competition is moving from model capability to ecosystem control, data access, and distribution. The fork is no longer a binary choice. It has become a structural feature of the AI industry — two parallel paths that will coexist, compete, and reshape each other for years to come.",
+        "zhHans": "到 2026 年中，开源与闭源模型之间的基准差距已经从鸿沟缩小到裂缝。开源模型在 MMLU、MATH、HumanEval 和 GPQA Diamond 上已经匹配或超越闭源模型。闭源模型仅在复杂智能体编码（SWE-bench）和用户偏好（Chatbot Arena）上保持领先。问题已经从“开源能否竞争”转向了一个更不舒服的问题：两条路线都走向商品化时会发生什么？OpenAI 重组为营利性公益公司（2025 年 10 月）表明闭源路线需要一个可持续的商业模式。Sora 的关停（2026 年 4 月）显示即使是前沿实验室也会砍掉找不到市场契合的产品。与此同时，Anthropic 的 MCP 协议（2024 年 11 月）等开放标准和 OpenClaw（2026 年 1 月）等消费者现象表明，真正的竞争正在从模型能力转向生态系统控制、数据访问和分发渠道。这个分岔不再是一个二元选择。它已经成为 AI 产业的一个结构性特征——两条平行的路径将在未来数年内共存、竞争并相互塑造。"
       },
-      "anchorEvents": ["openai-pbc-restructure-2025", "mcp-protocol-2024", "sora-shutdown-2026", "openclaw-2026"],
+      "anchorEvents": [
+        "openai-pbc-restructure-2025",
+        "mcp-protocol-2024",
+        "sora-shutdown-2026",
+        "openclaw-2026"
+      ],
       "keyInsight": {
-        "en": "The real competition is no longer model quality \u2014 it\u2019s ecosystem, data access, and distribution control.",
+        "en": "The real competition is no longer model quality — it’s ecosystem, data access, and distribution control.",
         "zhHans": "真正的竞争不再是模型质量——而是生态系统、数据访问和分发渠道的控制权。"
       }
     }
   ],
   "conclusion": {
-    "en": "In six years, AI went from having no open-source model ecosystem at all to a world where open-weight models are a permanent feature of the landscape. The fork was driven not by ideology but by events: a weight leak, an efficiency breakthrough, and a geopolitical miscalculation. Closed-source models still lead in certain domains, but the margin is thin and shrinking. The deeper story is that the open vs closed debate was never really about philosophy \u2014 it was about who controls access to AI capability. And that question, far from being settled, has only become more consequential as both paths mature.",
+    "en": "In six years, AI went from having no open-source model ecosystem at all to a world where open-weight models are a permanent feature of the landscape. The fork was driven not by ideology but by events: a weight leak, an efficiency breakthrough, and a geopolitical miscalculation. Closed-source models still lead in certain domains, but the margin is thin and shrinking. The deeper story is that the open vs closed debate was never really about philosophy — it was about who controls access to AI capability. And that question, far from being settled, has only become more consequential as both paths mature.",
     "zhHans": "六年时间，AI 从完全没有开源模型生态，走到开源权重模型成为行业固定特征的时代。这条分岔不是由意识形态驱动的，而是由一连串事件驱动的：一次权重泄露、一个效率突破、一个地缘政治误判。闭源模型在特定领域仍保持领先，但优势正在缩窄。更深层的故事是，开源与闭源的争论从来不是关于哲学——而是关于谁控制着 AI 能力的访问权。而这个问题，远未尘埃落定，反而随着两条路线的成熟变得更加关键。"
   },
-  "relatedArcs": ["transformer-empire"],
-  "tags": ["open-source", "closed-source", "deepseek", "llama", "geopolitics", "ai-governance"],
+  "relatedArcs": [
+    "transformer-empire"
+  ],
+  "tags": [
+    "open-source",
+    "closed-source",
+    "deepseek",
+    "llama",
+    "geopolitics",
+    "ai-governance"
+  ],
   "editorial": {
     "createdAt": "2026-06-30",
     "updatedAt": "2026-06-30",
