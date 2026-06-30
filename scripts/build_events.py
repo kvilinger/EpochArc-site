@@ -172,7 +172,11 @@ if os.path.exists(TEMPLATE_FILE):
         eid = e['id']
         copy_title_en = e['title']['en']
         copy_title_zh = e['title']['zhHans']
-        copy_desc_en = e['summary']['en']
+        if 'searchSummary' in e and 'en' in e['searchSummary'] and e['searchSummary']['en']:
+            copy_desc_en = e['searchSummary']['en']
+        else:
+            raw_summary = e.get('summary', {}).get('en', '')
+            copy_desc_en = (raw_summary[:147] + '...') if len(raw_summary) > 150 else raw_summary
         copy_desc_zh = e['summary']['zhHans']
         
         # 1. 渲染 Impacts HTML

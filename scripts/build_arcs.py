@@ -358,10 +358,23 @@ else:
         }
         schema_json_ld = f'<script type="application/ld+json">\n{json.dumps(schema_data, ensure_ascii=False, indent=2)}\n</script>'
 
+        # 优化专题 Arc 的 SEO_TITLE (支持 searchTitle 字段与中英双语检索词联合拼接)
+        if 'searchTitle' in a and 'en' in a['searchTitle'] and a['searchTitle']['en']:
+            seo_title = a['searchTitle']['en']
+        else:
+            seo_title = f"{title_zh} | {title_en}"
+
+        # 优化专题 Arc 的 SEO_DESC (支持 searchSummary 字段与截短回退)
+        if 'searchSummary' in a and 'en' in a['searchSummary'] and a['searchSummary']['en']:
+            seo_desc = a['searchSummary']['en']
+        else:
+            raw_abstract = a.get('abstract', {}).get('en', '')
+            seo_desc = (raw_abstract[:147] + '...') if len(raw_abstract) > 150 else raw_abstract
+
         # ── 替换模板占位符 ──
         page_html = detail_template
-        page_html = page_html.replace('{{SEO_TITLE}}', html_escape(title_en))
-        page_html = page_html.replace('{{SEO_DESC}}', html_escape(abstract_en))
+        page_html = page_html.replace('{{SEO_TITLE}}', html_escape(seo_title))
+        page_html = page_html.replace('{{SEO_DESC}}', html_escape(seo_desc))
         page_html = page_html.replace('{{SLUG}}', aid)
         page_html = page_html.replace('{{TITLE_EN}}', html_escape(title_en))
         page_html = page_html.replace('{{TITLE_ZH}}', html_escape(title_zh))
