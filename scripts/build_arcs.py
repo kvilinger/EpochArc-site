@@ -220,18 +220,22 @@ else:
         conclusion_zh = a['conclusion']['zhHans']
         cover_theme = a.get('coverTheme', 'default')
 
+        # 中文大写数字映射
+        ZH_NUMS = {1: '一', 2: '二', 3: '三', 4: '四', 5: '五', 6: '六', 7: '七', 8: '八', 9: '九', 10: '十'}
+
         # ── 生成 TOC HTML ──
         toc_items = []
         for ci, ch in enumerate(a['chapters']):
             ch_num = ci + 1
             ch_title_en = ch['title']['en']
             ch_title_zh = ch['title']['zhHans']
+            zh_num = ZH_NUMS.get(ch_num, str(ch_num))
             toc_items.append(
-                f'<li><a href="#chapter-{ch["id"]}" data-zh="第{ch_num}章: {html_escape(ch_title_zh)}" '
-                f'data-en="Ch.{ch_num}: {html_escape(ch_title_en)}">'
-                f'Ch.{ch_num}: {html_escape(ch_title_en)}</a></li>'
+                f'<a href="#chapter-{ch["id"]}" data-zh="{zh_num}、{html_escape(ch_title_zh)}" '
+                f'data-en="{ch_num:02d}. {html_escape(ch_title_en)}">'
+                f'{ch_num:02d}. {html_escape(ch_title_en)}</a>'
             )
-        toc_html = '<ul class="arc-toc">\n' + '\n'.join(toc_items) + '\n</ul>' if toc_items else ''
+        toc_html = '<div class="arc-toc">\n' + '\n'.join(toc_items) + '\n</div>' if toc_items else ''
 
         # ── 生成 Chapters HTML ──
         chapter_blocks = []
@@ -242,21 +246,22 @@ else:
             ch_title_zh = ch['title']['zhHans']
             ch_narrative_en = ch['narrative']['en']
             ch_narrative_zh = ch['narrative']['zhHans']
+            zh_num = ZH_NUMS.get(ch_num, str(ch_num))
 
-            # Key Insight box
+            # Key Insight box (对齐 arcs.css 的 .arc-key-insight 类名)
             ki = ch.get('keyInsight', {})
             ki_en = ki.get('en', '') if isinstance(ki, dict) else str(ki)
             ki_zh = ki.get('zhHans', '') if isinstance(ki, dict) else str(ki)
             key_insight_html = ''
             if ki_en or ki_zh:
                 key_insight_html = f'''
-                <div class="key-insight-box">
-                  <span class="key-insight-label" data-zh="关键洞察" data-en="Key Insight">Key Insight</span>
-                  <p class="key-insight-text" data-zh="{html_escape(ki_zh)}" data-en="{html_escape(ki_en)}">{html_escape(ki_en)}</p>
+                <div class="arc-key-insight">
+                  <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
+                  <p data-zh="{html_escape(ki_zh)}" data-en="{html_escape(ki_en)}">{html_escape(ki_en)}</p>
                 </div>
                 '''
 
-            # Anchor event mini-cards
+            # Anchor event mini-cards (对齐 arcs.css 的 .arc-anchor-event 类名与彩色重要度圆点)
             event_cards = []
             for ev_id in ch.get('anchorEvents', []):
                 ev = events_by_id.get(ev_id)
@@ -267,25 +272,23 @@ else:
                 ev_date = ev['date']
                 ev_sig = ev['significance']
                 event_cards.append(f'''
-                  <a class="anchor-event-card" href="../../index.html?event={ev_id}">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">{ev_date}</span>
-                      <span class="sig-badge">L{ev_sig}</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="{html_escape(ev_title_zh)}" data-en="{html_escape(ev_title_en)}">{html_escape(ev_title_en)}</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event={ev_id}">
+                    <span class="sig-dot l{ev_sig}"></span>
+                    <span class="event-date">{ev_date}</span>
+                    <span class="event-name" data-zh="{html_escape(ev_title_zh)}" data-en="{html_escape(ev_title_en)}">{html_escape(ev_title_en)}</span>
                   </a>
                 ''')
             events_html = '\n'.join(event_cards)
 
+            # Chapters block (对齐 arcs.css 的 .arc-chapter-header 等类名，移除第N章前缀改为直观的前置数字)
             chapter_blocks.append(f'''
               <section class="arc-chapter" id="chapter-{ch_id}">
-                <div class="chapter-header">
-                  <span class="chapter-number" data-zh="第{ch_num}章" data-en="Chapter {ch_num}">Chapter {ch_num}</span>
-                  <h2 class="chapter-title" data-zh="{html_escape(ch_title_zh)}" data-en="{html_escape(ch_title_en)}">{html_escape(ch_title_en)}</h2>
+                <div class="arc-chapter-header">
+                  <h2 class="arc-chapter-title" data-zh="{zh_num}、{html_escape(ch_title_zh)}" data-en="{ch_num:02d}. {html_escape(ch_title_en)}">{ch_num:02d}. {html_escape(ch_title_en)}</h2>
                 </div>
-                <div class="chapter-narrative" data-zh="{html_escape(ch_narrative_zh)}" data-en="{html_escape(ch_narrative_en)}">{html_escape(ch_narrative_en)}</div>
+                <div class="arc-chapter-narrative" data-zh="{html_escape(ch_narrative_zh)}" data-en="{html_escape(ch_narrative_en)}">{html_escape(ch_narrative_en)}</div>
                 {key_insight_html}
-                <div class="anchor-events-grid">
+                <div class="arc-anchor-events">
                   {events_html}
                 </div>
               </section>

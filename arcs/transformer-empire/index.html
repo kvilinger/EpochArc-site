@@ -85,12 +85,12 @@
     </div>
 
     <!-- Table of Contents -->
-    <ul class="arc-toc">
-<li><a href="#chapter-origins" data-zh="第1章: 起源与顺序计算瓶颈" data-en="Ch.1: Origins &amp; RNN Bottleneck">Ch.1: Origins &amp; RNN Bottleneck</a></li>
-<li><a href="#chapter-understanding-emerges" data-zh="第2章: 双向表征与规模法则" data-en="Ch.2: Encoder-Decoder Divergence &amp; Scaling Laws">Ch.2: Encoder-Decoder Divergence &amp; Scaling Laws</a></li>
-<li><a href="#chapter-chatgpt-moment" data-zh="第3章: ChatGPT 时刻与混合专家模型" data-en="Ch.3: The ChatGPT Moment &amp; MoE Scaling">Ch.3: The ChatGPT Moment &amp; MoE Scaling</a></li>
-<li><a href="#chapter-scaling-frontier" data-zh="第4章: 原生多模态与推理时计算" data-en="Ch.4: Native Multimodality &amp; Inference-Time Compute">Ch.4: Native Multimodality &amp; Inference-Time Compute</a></li>
-</ul>
+    <div class="arc-toc">
+<a href="#chapter-origins" data-zh="一、起源与顺序计算瓶颈" data-en="01. Origins &amp; RNN Bottleneck">01. Origins &amp; RNN Bottleneck</a>
+<a href="#chapter-understanding-emerges" data-zh="二、双向表征与规模法则" data-en="02. Encoder-Decoder Divergence &amp; Scaling Laws">02. Encoder-Decoder Divergence &amp; Scaling Laws</a>
+<a href="#chapter-chatgpt-moment" data-zh="三、ChatGPT 时刻与混合专家模型" data-en="03. The ChatGPT Moment &amp; MoE Scaling">03. The ChatGPT Moment &amp; MoE Scaling</a>
+<a href="#chapter-scaling-frontier" data-zh="四、原生多模态与推理时计算" data-en="04. Native Multimodality &amp; Inference-Time Compute">04. Native Multimodality &amp; Inference-Time Compute</a>
+</div>
 
     <!-- Abstract -->
     <div class="arc-abstract">
@@ -100,34 +100,29 @@
     <!-- Chapters -->
     
               <section class="arc-chapter" id="chapter-origins">
-                <div class="chapter-header">
-                  <span class="chapter-number" data-zh="第1章" data-en="Chapter 1">Chapter 1</span>
-                  <h2 class="chapter-title" data-zh="起源与顺序计算瓶颈" data-en="Origins &amp; RNN Bottleneck">Origins &amp; RNN Bottleneck</h2>
+                <div class="arc-chapter-header">
+                  <h2 class="arc-chapter-title" data-zh="一、起源与顺序计算瓶颈" data-en="01. Origins &amp; RNN Bottleneck">01. Origins &amp; RNN Bottleneck</h2>
                 </div>
-                <div class="chapter-narrative" data-zh="2014 年，Bahdanau 等人引入了注意力机制，以缓解循环神经网络（RNN）中固定长度向量的信息瓶颈。然而，RNN（如 LSTM）的顺序依赖关系仍是硬约束，限制了在 GPU 集群上的并行化训练。2017 年 6 月，Vaswani 等人发表《Attention Is All You Need》，提出 Transformer 架构，彻底移除了循环结构。在 WMT 2014 英语-德语翻译任务上，该模型取得了 28.4 BLEU 的 SOTA 分数。更重要的是，其训练仅消耗 3.15e18 FLOPS 的算力——仅为先前主流架构的几分之一，实证了通过架构简化换取极高计算并行度的可行性。" data-en="In 2014, Bahdanau et al. introduced the attention mechanism to alleviate the information bottleneck in sequence-to-sequence Recurrent Neural Networks (RNNs). However, sequential dependencies in RNNs (such as LSTM) remained a hard constraint, preventing parallel processing across GPU clusters. In June 2017, Vaswani et al. published &#39;Attention Is All You Need,&#39; proposing the Transformer. By removing recurrence entirely, it allowed parallel training. On the WMT 2014 English-to-German translation task, the Transformer achieved a state-of-the-art 28.4 BLEU score. Crucially, it required only 3.15e18 FLOPS of training compute—about a fraction of the cost of previous architectures, proving that architectural simplification could significantly improve computational efficiency.">In 2014, Bahdanau et al. introduced the attention mechanism to alleviate the information bottleneck in sequence-to-sequence Recurrent Neural Networks (RNNs). However, sequential dependencies in RNNs (such as LSTM) remained a hard constraint, preventing parallel processing across GPU clusters. In June 2017, Vaswani et al. published &#39;Attention Is All You Need,&#39; proposing the Transformer. By removing recurrence entirely, it allowed parallel training. On the WMT 2014 English-to-German translation task, the Transformer achieved a state-of-the-art 28.4 BLEU score. Crucially, it required only 3.15e18 FLOPS of training compute—about a fraction of the cost of previous architectures, proving that architectural simplification could significantly improve computational efficiency.</div>
+                <div class="arc-chapter-narrative" data-zh="2014 年，Bahdanau 等人引入了注意力机制，以缓解循环神经网络（RNN）中固定长度向量的信息瓶颈。然而，RNN（如 LSTM）的顺序依赖关系仍是硬约束，限制了在 GPU 集群上的并行化训练。2017 年 6 月，Vaswani 等人发表《Attention Is All You Need》，提出 Transformer 架构，彻底移除了循环结构。在 WMT 2014 英语-德语翻译任务上，该模型取得了 28.4 BLEU 的 SOTA 分数。更重要的是，其训练仅消耗 3.15e18 FLOPS 的算力——仅为先前主流架构的几分之一，实证了通过架构简化换取极高计算并行度的可行性。" data-en="In 2014, Bahdanau et al. introduced the attention mechanism to alleviate the information bottleneck in sequence-to-sequence Recurrent Neural Networks (RNNs). However, sequential dependencies in RNNs (such as LSTM) remained a hard constraint, preventing parallel processing across GPU clusters. In June 2017, Vaswani et al. published &#39;Attention Is All You Need,&#39; proposing the Transformer. By removing recurrence entirely, it allowed parallel training. On the WMT 2014 English-to-German translation task, the Transformer achieved a state-of-the-art 28.4 BLEU score. Crucially, it required only 3.15e18 FLOPS of training compute—about a fraction of the cost of previous architectures, proving that architectural simplification could significantly improve computational efficiency.">In 2014, Bahdanau et al. introduced the attention mechanism to alleviate the information bottleneck in sequence-to-sequence Recurrent Neural Networks (RNNs). However, sequential dependencies in RNNs (such as LSTM) remained a hard constraint, preventing parallel processing across GPU clusters. In June 2017, Vaswani et al. published &#39;Attention Is All You Need,&#39; proposing the Transformer. By removing recurrence entirely, it allowed parallel training. On the WMT 2014 English-to-German translation task, the Transformer achieved a state-of-the-art 28.4 BLEU score. Crucially, it required only 3.15e18 FLOPS of training compute—about a fraction of the cost of previous architectures, proving that architectural simplification could significantly improve computational efficiency.</div>
                 
-                <div class="key-insight-box">
-                  <span class="key-insight-label" data-zh="关键洞察" data-en="Key Insight">Key Insight</span>
-                  <p class="key-insight-text" data-zh="彻底移除循环结构释放了 GPU 并行计算的扩展上限" data-en="Removing recurrence unlocked GPU parallel training scalability.">Removing recurrence unlocked GPU parallel training scalability.</p>
+                <div class="arc-key-insight">
+                  <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
+                  <p data-zh="彻底移除循环结构释放了 GPU 并行计算的扩展上限" data-en="Removing recurrence unlocked GPU parallel training scalability.">Removing recurrence unlocked GPU parallel training scalability.</p>
                 </div>
                 
-                <div class="anchor-events-grid">
+                <div class="arc-anchor-events">
                   
-                  <a class="anchor-event-card" href="../../index.html?event=attention-2014">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2014-09-01</span>
-                      <span class="sig-badge">L2</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="注意力机制被提出——现代 AI 架构的基础" data-en="Attention mechanism proposed — the foundation of modern AI architectures">Attention mechanism proposed — the foundation of modern AI architectures</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=attention-2014">
+                    <span class="sig-dot l2"></span>
+                    <span class="event-date">2014-09-01</span>
+                    <span class="event-name" data-zh="注意力机制被提出——现代 AI 架构的基础" data-en="Attention mechanism proposed — the foundation of modern AI architectures">Attention mechanism proposed — the foundation of modern AI architectures</span>
                   </a>
                 
 
-                  <a class="anchor-event-card" href="../../index.html?event=transformer-2017">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2017-12</span>
-                      <span class="sig-badge">L3</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="《Attention Is All You Need》——Transformer 架构诞生" data-en="&quot;Attention Is All You Need&quot; — the Transformer architecture is born">&quot;Attention Is All You Need&quot; — the Transformer architecture is born</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=transformer-2017">
+                    <span class="sig-dot l3"></span>
+                    <span class="event-date">2017-12</span>
+                    <span class="event-name" data-zh="《Attention Is All You Need》——Transformer 架构诞生" data-en="&quot;Attention Is All You Need&quot; — the Transformer architecture is born">&quot;Attention Is All You Need&quot; — the Transformer architecture is born</span>
                   </a>
                 
                 </div>
@@ -135,34 +130,29 @@
             
 
               <section class="arc-chapter" id="chapter-understanding-emerges">
-                <div class="chapter-header">
-                  <span class="chapter-number" data-zh="第2章" data-en="Chapter 2">Chapter 2</span>
-                  <h2 class="chapter-title" data-zh="双向表征与规模法则" data-en="Encoder-Decoder Divergence &amp; Scaling Laws">Encoder-Decoder Divergence &amp; Scaling Laws</h2>
+                <div class="arc-chapter-header">
+                  <h2 class="arc-chapter-title" data-zh="二、双向表征与规模法则" data-en="02. Encoder-Decoder Divergence &amp; Scaling Laws">02. Encoder-Decoder Divergence &amp; Scaling Laws</h2>
                 </div>
-                <div class="chapter-narrative" data-zh="2018 年，Google 发布了 3.4 亿参数的编码器模型 BERT-Large，在 GLUE 和 SQuAD 等 11 项自然语言处理基准上刷新了纪录。与此同时，OpenAI 锁定了仅解码器（Decoder-only）的架构。2020 年，OpenAI 推出了拥有 1750 亿参数的 GPT-3，该模型在 3000 亿 Token 数据上用约 3.14e23 FLOPS 的算力完成预训练。GPT-3 在不进行权重更新的情况下展示出少样本学习（Few-shot）能力，直接运行代码生成和复杂翻译任务。这一实证成功支撑了 Kaplan 等人提出的规模法则（Scaling Laws）：交叉熵损失与模型参数量、数据集规模及训练总算力呈幂律关系负相关。" data-en="In 2018, Google released BERT-Large, a 340-million-parameter encoder model that set SOTA records on 11 NLP tasks, including GLUE and SQuAD benchmarks. In parallel, OpenAI focused on a decoder-only architecture. In 2020, OpenAI scaled this trajectory with GPT-3, featuring 175 billion parameters trained on 300 billion tokens with an estimated 3.14e23 FLOPS of compute. GPT-3 demonstrated few-shot learning capabilities without weight updates, executing code generation and logical reasoning tasks. This empirical success validated the scaling laws proposed by Kaplan et al., showing that cross-entropy loss decreases as a power-law function of parameter count, dataset size, and training compute.">In 2018, Google released BERT-Large, a 340-million-parameter encoder model that set SOTA records on 11 NLP tasks, including GLUE and SQuAD benchmarks. In parallel, OpenAI focused on a decoder-only architecture. In 2020, OpenAI scaled this trajectory with GPT-3, featuring 175 billion parameters trained on 300 billion tokens with an estimated 3.14e23 FLOPS of compute. GPT-3 demonstrated few-shot learning capabilities without weight updates, executing code generation and logical reasoning tasks. This empirical success validated the scaling laws proposed by Kaplan et al., showing that cross-entropy loss decreases as a power-law function of parameter count, dataset size, and training compute.</div>
+                <div class="arc-chapter-narrative" data-zh="2018 年，Google 发布了 3.4 亿参数的编码器模型 BERT-Large，在 GLUE 和 SQuAD 等 11 项自然语言处理基准上刷新了纪录。与此同时，OpenAI 锁定了仅解码器（Decoder-only）的架构。2020 年，OpenAI 推出了拥有 1750 亿参数的 GPT-3，该模型在 3000 亿 Token 数据上用约 3.14e23 FLOPS 的算力完成预训练。GPT-3 在不进行权重更新的情况下展示出少样本学习（Few-shot）能力，直接运行代码生成和复杂翻译任务。这一实证成功支撑了 Kaplan 等人提出的规模法则（Scaling Laws）：交叉熵损失与模型参数量、数据集规模及训练总算力呈幂律关系负相关。" data-en="In 2018, Google released BERT-Large, a 340-million-parameter encoder model that set SOTA records on 11 NLP tasks, including GLUE and SQuAD benchmarks. In parallel, OpenAI focused on a decoder-only architecture. In 2020, OpenAI scaled this trajectory with GPT-3, featuring 175 billion parameters trained on 300 billion tokens with an estimated 3.14e23 FLOPS of compute. GPT-3 demonstrated few-shot learning capabilities without weight updates, executing code generation and logical reasoning tasks. This empirical success validated the scaling laws proposed by Kaplan et al., showing that cross-entropy loss decreases as a power-law function of parameter count, dataset size, and training compute.">In 2018, Google released BERT-Large, a 340-million-parameter encoder model that set SOTA records on 11 NLP tasks, including GLUE and SQuAD benchmarks. In parallel, OpenAI focused on a decoder-only architecture. In 2020, OpenAI scaled this trajectory with GPT-3, featuring 175 billion parameters trained on 300 billion tokens with an estimated 3.14e23 FLOPS of compute. GPT-3 demonstrated few-shot learning capabilities without weight updates, executing code generation and logical reasoning tasks. This empirical success validated the scaling laws proposed by Kaplan et al., showing that cross-entropy loss decreases as a power-law function of parameter count, dataset size, and training compute.</div>
                 
-                <div class="key-insight-box">
-                  <span class="key-insight-label" data-zh="关键洞察" data-en="Key Insight">Key Insight</span>
-                  <p class="key-insight-text" data-zh="模型损失与算力、参数和数据量呈精确的幂律负相关" data-en="Performance scales as a power-law function of compute and data.">Performance scales as a power-law function of compute and data.</p>
+                <div class="arc-key-insight">
+                  <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
+                  <p data-zh="模型损失与算力、参数和数据量呈精确的幂律负相关" data-en="Performance scales as a power-law function of compute and data.">Performance scales as a power-law function of compute and data.</p>
                 </div>
                 
-                <div class="anchor-events-grid">
+                <div class="arc-anchor-events">
                   
-                  <a class="anchor-event-card" href="../../index.html?event=bert-2018">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2018-10-11</span>
-                      <span class="sig-badge">L1</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="Google 发布 BERT，用双向预训练改变自然语言处理" data-en="Google releases BERT, transforming NLP with bidirectional pre-training">Google releases BERT, transforming NLP with bidirectional pre-training</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=bert-2018">
+                    <span class="sig-dot l1"></span>
+                    <span class="event-date">2018-10-11</span>
+                    <span class="event-name" data-zh="Google 发布 BERT，用双向预训练改变自然语言处理" data-en="Google releases BERT, transforming NLP with bidirectional pre-training">Google releases BERT, transforming NLP with bidirectional pre-training</span>
                   </a>
                 
 
-                  <a class="anchor-event-card" href="../../index.html?event=gpt3-2020">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2020-06-11</span>
-                      <span class="sig-badge">L3</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="OpenAI 发布 GPT-3，证明规模化语言模型可解锁涌现能力" data-en="OpenAI releases GPT-3, proving that scaling language models unlocks emergent capabilities">OpenAI releases GPT-3, proving that scaling language models unlocks emergent capabilities</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=gpt3-2020">
+                    <span class="sig-dot l3"></span>
+                    <span class="event-date">2020-06-11</span>
+                    <span class="event-name" data-zh="OpenAI 发布 GPT-3，证明规模化语言模型可解锁涌现能力" data-en="OpenAI releases GPT-3, proving that scaling language models unlocks emergent capabilities">OpenAI releases GPT-3, proving that scaling language models unlocks emergent capabilities</span>
                   </a>
                 
                 </div>
@@ -170,34 +160,29 @@
             
 
               <section class="arc-chapter" id="chapter-chatgpt-moment">
-                <div class="chapter-header">
-                  <span class="chapter-number" data-zh="第3章" data-en="Chapter 3">Chapter 3</span>
-                  <h2 class="chapter-title" data-zh="ChatGPT 时刻与混合专家模型" data-en="The ChatGPT Moment &amp; MoE Scaling">The ChatGPT Moment &amp; MoE Scaling</h2>
+                <div class="arc-chapter-header">
+                  <h2 class="arc-chapter-title" data-zh="三、ChatGPT 时刻与混合专家模型" data-en="03. The ChatGPT Moment &amp; MoE Scaling">03. The ChatGPT Moment &amp; MoE Scaling</h2>
                 </div>
-                <div class="chapter-narrative" data-zh="2022 年 11 月，OpenAI 推出 ChatGPT，在 60 收官天内实现了 1 亿月活跃用户，成为史上增速最快的消费级应用。尽管底层基于百亿级参数的 GPT-3.5，但引入人类反馈强化学习（RLHF）大幅对齐了输出意图。2023 年 3 月，GPT-4 发布。据业界估算，它采用了包含 16 个专家的混合专家（MoE）架构，总参数量达 1.8 万亿，支持 128k 上下文。GPT-4 在模拟美国统一律师考试中取得了前 10%（90th percentile）的成绩，在生物奥林匹克中名列前 1%（99th percentile），验证了稀疏参数扩展对高难度认知任务的攻坚能力。" data-en="In November 2022, OpenAI launched ChatGPT, which reached 100 million monthly active users in 60 days, making it the fastest-growing consumer application in history. While GPT-3.5 served as the baseline, the addition of Reinforcement Learning from Human Feedback (RLHF) aligned model outputs to user intent. In March 2023, OpenAI released GPT-4. Reports indicated a Mixture-of-Experts (MoE) architecture totaling approximately 1.8 trillion parameters across 16 experts, operating with a 128k token context window. GPT-4 scored in the 90th percentile of the Uniform Bar Exam and 99th percentile of the Biology Olympiad, establishing that dense and sparse parameter scaling yields high-level cognitive task accuracy.">In November 2022, OpenAI launched ChatGPT, which reached 100 million monthly active users in 60 days, making it the fastest-growing consumer application in history. While GPT-3.5 served as the baseline, the addition of Reinforcement Learning from Human Feedback (RLHF) aligned model outputs to user intent. In March 2023, OpenAI released GPT-4. Reports indicated a Mixture-of-Experts (MoE) architecture totaling approximately 1.8 trillion parameters across 16 experts, operating with a 128k token context window. GPT-4 scored in the 90th percentile of the Uniform Bar Exam and 99th percentile of the Biology Olympiad, establishing that dense and sparse parameter scaling yields high-level cognitive task accuracy.</div>
+                <div class="arc-chapter-narrative" data-zh="2022 年 11 月，OpenAI 推出 ChatGPT，在 60 收官天内实现了 1 亿月活跃用户，成为史上增速最快的消费级应用。尽管底层基于百亿级参数的 GPT-3.5，但引入人类反馈强化学习（RLHF）大幅对齐了输出意图。2023 年 3 月，GPT-4 发布。据业界估算，它采用了包含 16 个专家的混合专家（MoE）架构，总参数量达 1.8 万亿，支持 128k 上下文。GPT-4 在模拟美国统一律师考试中取得了前 10%（90th percentile）的成绩，在生物奥林匹克中名列前 1%（99th percentile），验证了稀疏参数扩展对高难度认知任务的攻坚能力。" data-en="In November 2022, OpenAI launched ChatGPT, which reached 100 million monthly active users in 60 days, making it the fastest-growing consumer application in history. While GPT-3.5 served as the baseline, the addition of Reinforcement Learning from Human Feedback (RLHF) aligned model outputs to user intent. In March 2023, OpenAI released GPT-4. Reports indicated a Mixture-of-Experts (MoE) architecture totaling approximately 1.8 trillion parameters across 16 experts, operating with a 128k token context window. GPT-4 scored in the 90th percentile of the Uniform Bar Exam and 99th percentile of the Biology Olympiad, establishing that dense and sparse parameter scaling yields high-level cognitive task accuracy.">In November 2022, OpenAI launched ChatGPT, which reached 100 million monthly active users in 60 days, making it the fastest-growing consumer application in history. While GPT-3.5 served as the baseline, the addition of Reinforcement Learning from Human Feedback (RLHF) aligned model outputs to user intent. In March 2023, OpenAI released GPT-4. Reports indicated a Mixture-of-Experts (MoE) architecture totaling approximately 1.8 trillion parameters across 16 experts, operating with a 128k token context window. GPT-4 scored in the 90th percentile of the Uniform Bar Exam and 99th percentile of the Biology Olympiad, establishing that dense and sparse parameter scaling yields high-level cognitive task accuracy.</div>
                 
-                <div class="key-insight-box">
-                  <span class="key-insight-label" data-zh="关键洞察" data-en="Key Insight">Key Insight</span>
-                  <p class="key-insight-text" data-zh="稀疏 MoE 架构解决了万亿参数模型单设备显存溢出的计算瓶颈" data-en="Sparse MoE scaling enabled trillion-parameter training feasibility.">Sparse MoE scaling enabled trillion-parameter training feasibility.</p>
+                <div class="arc-key-insight">
+                  <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
+                  <p data-zh="稀疏 MoE 架构解决了万亿参数模型单设备显存溢出的计算瓶颈" data-en="Sparse MoE scaling enabled trillion-parameter training feasibility.">Sparse MoE scaling enabled trillion-parameter training feasibility.</p>
                 </div>
                 
-                <div class="anchor-events-grid">
+                <div class="arc-anchor-events">
                   
-                  <a class="anchor-event-card" href="../../index.html?event=chatgpt-2022">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2022-11-30</span>
-                      <span class="sig-badge">L3</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="OpenAI 发布 ChatGPT，两个月内将 AI 带给 1 亿用户" data-en="OpenAI launches ChatGPT, bringing AI to 100 million users in two months">OpenAI launches ChatGPT, bringing AI to 100 million users in two months</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=chatgpt-2022">
+                    <span class="sig-dot l3"></span>
+                    <span class="event-date">2022-11-30</span>
+                    <span class="event-name" data-zh="OpenAI 发布 ChatGPT，两个月内将 AI 带给 1 亿用户" data-en="OpenAI launches ChatGPT, bringing AI to 100 million users in two months">OpenAI launches ChatGPT, bringing AI to 100 million users in two months</span>
                   </a>
                 
 
-                  <a class="anchor-event-card" href="../../index.html?event=gpt4-2023">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2023-03-14</span>
-                      <span class="sig-badge">L2</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="OpenAI 发布 GPT-4，第一个多模态大语言模型" data-en="OpenAI releases GPT-4, the first multimodal large language model">OpenAI releases GPT-4, the first multimodal large language model</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=gpt4-2023">
+                    <span class="sig-dot l2"></span>
+                    <span class="event-date">2023-03-14</span>
+                    <span class="event-name" data-zh="OpenAI 发布 GPT-4，第一个多模态大语言模型" data-en="OpenAI releases GPT-4, the first multimodal large language model">OpenAI releases GPT-4, the first multimodal large language model</span>
                   </a>
                 
                 </div>
@@ -205,43 +190,36 @@
             
 
               <section class="arc-chapter" id="chapter-scaling-frontier">
-                <div class="chapter-header">
-                  <span class="chapter-number" data-zh="第4章" data-en="Chapter 4">Chapter 4</span>
-                  <h2 class="chapter-title" data-zh="原生多模态与推理时计算" data-en="Native Multimodality &amp; Inference-Time Compute">Native Multimodality &amp; Inference-Time Compute</h2>
+                <div class="arc-chapter-header">
+                  <h2 class="arc-chapter-title" data-zh="四、原生多模态与推理时计算" data-en="04. Native Multimodality &amp; Inference-Time Compute">04. Native Multimodality &amp; Inference-Time Compute</h2>
                 </div>
-                <div class="chapter-narrative" data-zh="到 2024 年，扩展策略走向多元。GPT-4o 实现了原生多模态融合，将音频响应延迟缩短至平均 232 毫秒。2024 年 9 月，OpenAI 推出 o1，将算力重心由预训练转移到推理时计算（Inference-time Compute），利用强化学习在输出前生成思考链。o1 在美国数学邀请赛（AIME）中的准确率从 GPT-4o 的 13.4% 暴涨至 83.3%。2025 年，GPT-5 整合了原生多模态与系统推理能力，其背后是容纳数万张 H100/B200 芯片、耗资数百亿美元的超大型数据中心。伴随这一进程，NVIDIA 市值突破 3 万亿美元，印证了维持这一物理计算边界所需的庞大金融支撑。" data-en="By 2024, scaling strategy diversified. GPT-4o combined text, vision, and audio into a single neural network, reducing audio latency to an average of 232 milliseconds—matching human conversation speeds. In September 2024, OpenAI introduced o1, shifting focus from pre-training compute to inference-time compute. By using reinforcement learning to generate chains of thought before outputting answers, o1 improved performance on the American Invitational Mathematics Examination (AIME) from GPT-4o&#39;s 13.4% to 83.3%. By 2025, GPT-5 integrated these paradigms with unified reasoning, backed by mega-datacenters requiring tens of thousands of H100 GPUs and tens of billions in capital expenditure. In parallel, NVIDIA&#39;s market capitalization surpassed $3 trillion, reflecting the massive financial scale required to sustain this infrastructure.">By 2024, scaling strategy diversified. GPT-4o combined text, vision, and audio into a single neural network, reducing audio latency to an average of 232 milliseconds—matching human conversation speeds. In September 2024, OpenAI introduced o1, shifting focus from pre-training compute to inference-time compute. By using reinforcement learning to generate chains of thought before outputting answers, o1 improved performance on the American Invitational Mathematics Examination (AIME) from GPT-4o&#39;s 13.4% to 83.3%. By 2025, GPT-5 integrated these paradigms with unified reasoning, backed by mega-datacenters requiring tens of thousands of H100 GPUs and tens of billions in capital expenditure. In parallel, NVIDIA&#39;s market capitalization surpassed $3 trillion, reflecting the massive financial scale required to sustain this infrastructure.</div>
+                <div class="arc-chapter-narrative" data-zh="到 2024 年，扩展策略走向多元。GPT-4o 实现了原生多模态融合，将音频响应延迟缩短至平均 232 毫秒。2024 年 9 月，OpenAI 推出 o1，将算力重心由预训练转移到推理时计算（Inference-time Compute），利用强化学习在输出前生成思考链。o1 在美国数学邀请赛（AIME）中的准确率从 GPT-4o 的 13.4% 暴涨至 83.3%。2025 年，GPT-5 整合了原生多模态与系统推理能力，其背后是容纳数万张 H100/B200 芯片、耗资数百亿美元的超大型数据中心。伴随这一进程，NVIDIA 市值突破 3 万亿美元，印证了维持这一物理计算边界所需的庞大金融支撑。" data-en="By 2024, scaling strategy diversified. GPT-4o combined text, vision, and audio into a single neural network, reducing audio latency to an average of 232 milliseconds—matching human conversation speeds. In September 2024, OpenAI introduced o1, shifting focus from pre-training compute to inference-time compute. By using reinforcement learning to generate chains of thought before outputting answers, o1 improved performance on the American Invitational Mathematics Examination (AIME) from GPT-4o&#39;s 13.4% to 83.3%. By 2025, GPT-5 integrated these paradigms with unified reasoning, backed by mega-datacenters requiring tens of thousands of H100 GPUs and tens of billions in capital expenditure. In parallel, NVIDIA&#39;s market capitalization surpassed $3 trillion, reflecting the massive financial scale required to sustain this infrastructure.">By 2024, scaling strategy diversified. GPT-4o combined text, vision, and audio into a single neural network, reducing audio latency to an average of 232 milliseconds—matching human conversation speeds. In September 2024, OpenAI introduced o1, shifting focus from pre-training compute to inference-time compute. By using reinforcement learning to generate chains of thought before outputting answers, o1 improved performance on the American Invitational Mathematics Examination (AIME) from GPT-4o&#39;s 13.4% to 83.3%. By 2025, GPT-5 integrated these paradigms with unified reasoning, backed by mega-datacenters requiring tens of thousands of H100 GPUs and tens of billions in capital expenditure. In parallel, NVIDIA&#39;s market capitalization surpassed $3 trillion, reflecting the massive financial scale required to sustain this infrastructure.</div>
                 
-                <div class="key-insight-box">
-                  <span class="key-insight-label" data-zh="关键洞察" data-en="Key Insight">Key Insight</span>
-                  <p class="key-insight-text" data-zh="推理时计算（RL搜索）绕过了高质量预训练语料枯竭的实证上限" data-en="Inference-time search bypassed pre-training sample complexity limits.">Inference-time search bypassed pre-training sample complexity limits.</p>
+                <div class="arc-key-insight">
+                  <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
+                  <p data-zh="推理时计算（RL搜索）绕过了高质量预训练语料枯竭的实证上限" data-en="Inference-time search bypassed pre-training sample complexity limits.">Inference-time search bypassed pre-training sample complexity limits.</p>
                 </div>
                 
-                <div class="anchor-events-grid">
+                <div class="arc-anchor-events">
                   
-                  <a class="anchor-event-card" href="../../index.html?event=gpt4o-2024">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2024-05-13</span>
-                      <span class="sig-badge">L1</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="OpenAI 发布 GPT-4o，将实时语音对话带入每个人的 AI 交互" data-en="OpenAI releases GPT-4o, bringing real-time voice conversation with AI to everyone">OpenAI releases GPT-4o, bringing real-time voice conversation with AI to everyone</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=gpt4o-2024">
+                    <span class="sig-dot l1"></span>
+                    <span class="event-date">2024-05-13</span>
+                    <span class="event-name" data-zh="OpenAI 发布 GPT-4o，将实时语音对话带入每个人的 AI 交互" data-en="OpenAI releases GPT-4o, bringing real-time voice conversation with AI to everyone">OpenAI releases GPT-4o, bringing real-time voice conversation with AI to everyone</span>
                   </a>
                 
 
-                  <a class="anchor-event-card" href="../../index.html?event=o1-2024">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2024-09-12</span>
-                      <span class="sig-badge">L2</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="OpenAI 发布 o1，第一个&quot;思考后再回答&quot;的推理模型" data-en="OpenAI releases o1, the first reasoning model that &#39;thinks before it answers&#39;">OpenAI releases o1, the first reasoning model that &#39;thinks before it answers&#39;</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=o1-2024">
+                    <span class="sig-dot l2"></span>
+                    <span class="event-date">2024-09-12</span>
+                    <span class="event-name" data-zh="OpenAI 发布 o1，第一个&quot;思考后再回答&quot;的推理模型" data-en="OpenAI releases o1, the first reasoning model that &#39;thinks before it answers&#39;">OpenAI releases o1, the first reasoning model that &#39;thinks before it answers&#39;</span>
                   </a>
                 
 
-                  <a class="anchor-event-card" href="../../index.html?event=gpt5-2025">
-                    <div class="anchor-event-meta">
-                      <span class="anchor-event-date">2025-08-07</span>
-                      <span class="sig-badge">L2</span>
-                    </div>
-                    <h4 class="anchor-event-title" data-zh="OpenAI 发布 GPT-5，将推理、多模态和任务执行统一到单一系统中" data-en="OpenAI releases GPT-5, unifying reasoning, multimodality, and task execution in a single system">OpenAI releases GPT-5, unifying reasoning, multimodality, and task execution in a single system</h4>
+                  <a class="arc-anchor-event" href="../../index.html?event=gpt5-2025">
+                    <span class="sig-dot l2"></span>
+                    <span class="event-date">2025-08-07</span>
+                    <span class="event-name" data-zh="OpenAI 发布 GPT-5，将推理、多模态和任务执行统一到单一系统中" data-en="OpenAI releases GPT-5, unifying reasoning, multimodality, and task execution in a single system">OpenAI releases GPT-5, unifying reasoning, multimodality, and task execution in a single system</span>
                   </a>
                 
                 </div>
