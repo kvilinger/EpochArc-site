@@ -112,7 +112,7 @@
                 
                 <div class="arc-key-insight">
                   <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
-                  <p data-zh="彻底移除循环结构释放了 GPU 并行计算的扩展上限" data-en="Removing recurrence unlocked GPU parallel training scalability.">Removing recurrence unlocked GPU parallel training scalability.</p>
+                  <p data-zh="彻底移除循环结构释放了 GPU 并行计算的扩展上限。用并行取代顺序计算这一设计决策，是整个 scaling 路径的起点。没有它，后续一切数十亿参数的模型都无从谈起。" data-en="Removing recurrence unlocked GPU parallel training scalability. This single design decision — trading sequential computation for parallelism — is what made the entire scaling trajectory possible. Without it, none of the billion-parameter models that followed would have been feasible.">Removing recurrence unlocked GPU parallel training scalability. This single design decision — trading sequential computation for parallelism — is what made the entire scaling trajectory possible. Without it, none of the billion-parameter models that followed would have been feasible.</p>
                 </div>
                 
                 <div class="arc-anchor-events">
@@ -149,7 +149,7 @@
                 
                 <div class="arc-key-insight">
                   <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
-                  <p data-zh="模型损失与算力、参数和数据量呈精确的幂律负相关" data-en="Performance scales as a power-law function of compute and data.">Performance scales as a power-law function of compute and data.</p>
+                  <p data-zh="模型损失与算力、参数和数据量呈精确的幂律负相关。scaling law 把 AI 研究从一门手艺变成了可以预测的工程学科。从 2020 年起，核心问题不再是「什么架构最好」，而是「你负担得起多少算力」。" data-en="Performance scales as a power-law function of compute and data. The scaling laws transformed AI research from a craft into an engineering discipline. From 2020 onward, the question shifted from ‘what architecture works’ to ‘how much compute can you afford.’">Performance scales as a power-law function of compute and data. The scaling laws transformed AI research from a craft into an engineering discipline. From 2020 onward, the question shifted from ‘what architecture works’ to ‘how much compute can you afford.’</p>
                 </div>
                 
                 <div class="arc-anchor-events">
@@ -186,7 +186,7 @@
                 
                 <div class="arc-key-insight">
                   <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
-                  <p data-zh="稀疏 MoE 架构解决了万亿参数模型单设备显存溢出的计算瓶颈" data-en="Sparse MoE scaling enabled trillion-parameter training feasibility.">Sparse MoE scaling enabled trillion-parameter training feasibility.</p>
+                  <p data-zh="稀疏 MoE 架构解决了万亿参数模型单设备显存溢出的计算瓶颈。但真正的突破不是模型架构本身，而是 RLHF 对齐技术。正是这项技术把原始语言模型变成了数亿普通人觉得真正有用的东西。" data-en="Sparse MoE scaling enabled trillion-parameter training feasibility. But the real breakthrough wasn’t the architecture — it was RLHF. The alignment technique that turned a raw language model into something millions of ordinary people found genuinely useful.">Sparse MoE scaling enabled trillion-parameter training feasibility. But the real breakthrough wasn’t the architecture — it was RLHF. The alignment technique that turned a raw language model into something millions of ordinary people found genuinely useful.</p>
                 </div>
                 
                 <div class="arc-anchor-events">
@@ -223,7 +223,7 @@
                 
                 <div class="arc-key-insight">
                   <div class="arc-key-insight-label" data-zh="核心洞察" data-en="Key Insight">Key Insight</div>
-                  <p data-zh="推理时计算（RL搜索）绕过了高质量预训练语料枯竭的实证上限" data-en="Inference-time search bypassed pre-training sample complexity limits.">Inference-time search bypassed pre-training sample complexity limits.</p>
+                  <p data-zh="推理时计算（RL搜索）绕过了高质量预训练语料枯竭的实证上限。从预训练算力到推理时算力的重心转移意味着第二个范式转换。瓶颈从「你有多少数据」变成了「你愿意在推理时花多少算力」。" data-en="Inference-time search bypassed pre-training sample complexity limits. This shift from pre-training compute to inference-time compute represents a second paradigm shift. It changes the bottleneck from ‘how much data you have’ to ‘how much compute you are willing to spend at inference time.’">Inference-time search bypassed pre-training sample complexity limits. This shift from pre-training compute to inference-time compute represents a second paradigm shift. It changes the bottleneck from ‘how much data you have’ to ‘how much compute you are willing to spend at inference time.’</p>
                 </div>
                 
                 <div class="arc-anchor-events">
@@ -264,7 +264,19 @@
     <!-- Conclusion -->
     <div class="arc-conclusion">
       <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
-      <p class="arc-conclusion-text" data-zh="在短短八年里，Transformer 架构在算力消耗上扩展了超过 9 个数量级，完成了从一个机器翻译工具到万亿计算时代硬件基础设施层的跃迁。实证结果表明，极端的规模与基础结构先验（如自注意力）相结合，可以产生超乎预期的认知能力。然而，随着计算集群容量逼近吉瓦级、高质量自然语言数据集遭遇枯竭上限，当前扩展范式的能效比与对齐控制仍是未决的关键挑战。" data-en="The Transformer architecture has scaled over nine orders of magnitude in compute, transitioning from translation software to the hardware layer of a new computing era. The empirical results demonstrate that raw scale combined with basic structural priors (like self-attention) yields unexpected cognitive capabilities. However, as compute clusters approach the gigawatt scale and dataset quality limits are hit, the efficiency and alignment challenges of this scaling paradigm remain critical unresolved issues.">The Transformer architecture has scaled over nine orders of magnitude in compute, transitioning from translation software to the hardware layer of a new computing era. The empirical results demonstrate that raw scale combined with basic structural priors (like self-attention) yields unexpected cognitive capabilities. However, as compute clusters approach the gigawatt scale and dataset quality limits are hit, the efficiency and alignment challenges of this scaling paradigm remain critical unresolved issues.</p>
+      <p class="arc-conclusion-text" data-zh="Transformer 的 scaling 故事不只是技术成就，它更是 2020 年代最核心的经济叙事。不到十年，一个架构洞察重塑了整个计算栈：从 2017 年的论文到 NVIDIA 三万亿市值，从机器翻译到支撑新一代软件的基础设施。证据很清楚：极端的规模加上基础结构先验，可以产生连创造者自己都没有预料到的能力。
+
+但这不是一个没有代价的故事——而且代价正在快速累积。前沿训练的计算需求已经超过了一些小国的总能耗。互联网上高质量文本已经被大量耗尽。让 ChatGPT 足够安全推向大众的对齐技术，目前仍是脆弱的权宜之计，远非稳固的解决方案。这个产业用 scaling 把自己逼到了一个角落：下一个数量级的算力扩张需要能源效率和数据效率的突破，或者二者同时突破。
+
+更深层的问题——这条时间线无法回答的问题——是 Transformer 的轨迹会继续还是趋于平稳。这个架构的持久力超出了 2017 年任何人的预期。但持久不等于宿命。从预训练 scaling 到推理时计算的重心转移说明范式已经在变了。接替它的东西，可能和 Transformer 完全不同。" data-en="The Transformer scaling story is not just a technical achievement. It is the defining economic narrative of the 2020s. In less than a decade, a single architectural insight reshaped the entire computing stack: from a 2017 paper to NVIDIA’s $3-trillion valuation, from machine translation to the infrastructure that underpins a new generation of software. The evidence is clear: raw scale combined with basic structural priors produces capabilities that surprise even their creators.
+
+But this is not a story without costs — and the costs are mounting. The computational demands of frontier training now exceed the energy output of small countries. The internet’s stock of high-quality text has been largely exhausted. And the alignment techniques that made ChatGPT safe enough for public use remain fragile shortcuts, not robust solutions. The industry has scaled its way into a corner: the next orders of magnitude in compute will require breakthroughs in energy, data efficiency, or both.
+
+The deeper question — the one this timeline cannot answer — is whether the Transformer’s trajectory will continue or plateau. The architecture has proven more durable than anyone expected in 2017. But durability is not destiny. The transition from pre-training scaling to inference-time compute suggests the paradigm is already shifting. What comes next may not look like the Transformer at all.">The Transformer scaling story is not just a technical achievement. It is the defining economic narrative of the 2020s. In less than a decade, a single architectural insight reshaped the entire computing stack: from a 2017 paper to NVIDIA’s $3-trillion valuation, from machine translation to the infrastructure that underpins a new generation of software. The evidence is clear: raw scale combined with basic structural priors produces capabilities that surprise even their creators.
+
+But this is not a story without costs — and the costs are mounting. The computational demands of frontier training now exceed the energy output of small countries. The internet’s stock of high-quality text has been largely exhausted. And the alignment techniques that made ChatGPT safe enough for public use remain fragile shortcuts, not robust solutions. The industry has scaled its way into a corner: the next orders of magnitude in compute will require breakthroughs in energy, data efficiency, or both.
+
+The deeper question — the one this timeline cannot answer — is whether the Transformer’s trajectory will continue or plateau. The architecture has proven more durable than anyone expected in 2017. But durability is not destiny. The transition from pre-training scaling to inference-time compute suggests the paradigm is already shifting. What comes next may not look like the Transformer at all.</p>
     </div>
 
     <!-- Related Arcs -->
