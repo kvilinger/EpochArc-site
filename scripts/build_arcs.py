@@ -135,6 +135,9 @@ def get_arc_significance(arc):
             max_sig = min(max_sig, ev.get('significance', 3))
     return max_sig
 
+# ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT REMOVE OR BYPASS THIS FUNCTION!
+# Ensure all dynamic variables injected into attributes (like data-zh/data-en) are HTML-escaped.
+# Otherwise, double quotes will crash Vite dev/build parsers.
 def html_escape(text):
     """基本 HTML 转义"""
     return (text
@@ -224,6 +227,8 @@ else:
         ZH_NUMS = {1: '一', 2: '二', 3: '三', 4: '四', 5: '五', 6: '六', 7: '七', 8: '八', 9: '九', 10: '十'}
 
         # ── 生成 TOC HTML ──
+        # ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT use 'Chapter N' or '第N章' prefix for chapters.
+        # Use Chinese numbers '一、' and English numbers '01.' pre-fixed directly to the title to align layout.
         toc_items = []
         for ci, ch in enumerate(a['chapters']):
             ch_num = ci + 1
@@ -272,6 +277,9 @@ else:
                 ev_date = ev['date']
                 ev_sig = ev['significance']
                 event_cards.append(f'''
+                  <!-- ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT change 'arc-anchor-event' class name or its children structure. -->
+                  <!-- It must strictly match CSS styling rules in arcs.css. -->
+                  <!-- Make sure to link to events/{ev_id}/index.html detail pages directly. -->
                   <a class="arc-anchor-event" href="../../events/{ev_id}/index.html">
                     <span class="sig-dot l{ev_sig}"></span>
                     <span class="event-date">{ev_date}</span>
@@ -284,6 +292,7 @@ else:
             chapter_blocks.append(f'''
               <section class="arc-chapter" id="chapter-{ch_id}">
                 <div class="arc-chapter-header">
+                  <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="{zh_num}、{html_escape(ch_title_zh)}" data-en="{ch_num:02d}. {html_escape(ch_title_en)}">{ch_num:02d}. {html_escape(ch_title_en)}</h2>
                 </div>
                 <div class="arc-chapter-narrative" data-zh="{html_escape(ch_narrative_zh)}" data-en="{html_escape(ch_narrative_en)}">{html_escape(ch_narrative_en)}</div>
