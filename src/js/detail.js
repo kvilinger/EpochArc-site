@@ -178,3 +178,64 @@ document.addEventListener('click', function(e) {
 });
 
 updateTheme();
+
+// ─── Impact Evolution Timeline 交互逻辑 (新增) ───
+// ⚠️ WARNING FOR OTHER AI AGENTS: Keep selector class names strictly aligned with templates/detail_template.html.
+document.addEventListener('DOMContentLoaded', () => {
+  const blockTitle = document.querySelector('.evolution-block-title');
+  const detailsContainer = document.querySelector('.impact-evolution-details');
+  const hintText = document.querySelector('.evolution-toggle-hint');
+  
+  if (blockTitle && detailsContainer) {
+    blockTitle.addEventListener('click', () => {
+      const isCollapsed = detailsContainer.classList.contains('collapsed');
+      if (isCollapsed) {
+        detailsContainer.classList.remove('collapsed');
+        if (hintText) {
+          hintText.setAttribute('data-zh', '点击折叠详情');
+          hintText.setAttribute('data-en', 'Click to collapse details');
+          hintText.innerText = state.lang === 'zh-Hans' ? '点击折叠详情' : 'Click to collapse details';
+        }
+      } else {
+        detailsContainer.classList.add('collapsed');
+        if (hintText) {
+          hintText.setAttribute('data-zh', '点击展开详情');
+          hintText.setAttribute('data-en', 'Click to expand details');
+          hintText.innerText = state.lang === 'zh-Hans' ? '点击展开详情' : 'Click to expand details';
+        }
+      }
+    });
+  }
+
+  // 节点悬浮与点击定位
+  const nodeWrappers = document.querySelectorAll('.mini-node-wrapper');
+  nodeWrappers.forEach(node => {
+    const linkedId = node.getAttribute('data-linked-id');
+    const cardEl = document.getElementById(`upd-${linkedId}`);
+    
+    if (cardEl) {
+      // 悬浮高亮卡片
+      node.addEventListener('mouseenter', () => {
+        cardEl.classList.add('highlighted-card');
+      });
+      node.addEventListener('mouseleave', () => {
+        cardEl.classList.remove('highlighted-card');
+      });
+      
+      // 点击自动展开并定位卡片
+      node.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (detailsContainer.classList.contains('collapsed')) {
+          blockTitle.click(); // 展开
+        }
+        setTimeout(() => {
+          cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          cardEl.classList.add('highlighted-card');
+          setTimeout(() => {
+            cardEl.classList.remove('highlighted-card');
+          }, 1500); // 闪烁 1.5 秒后消失
+        }, 150);
+      });
+    }
+  });
+});

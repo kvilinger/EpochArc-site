@@ -92,6 +92,62 @@
       ]
     }
   ],
+  "impactUpdates": [
+    {
+      "date": "2018-10",
+      "milestone": {
+        "en": "BERT proves Transformer's generality in NLU",
+        "zhHans": "BERT 证明了 Transformer 在自然语言理解上的通用性"
+      },
+      "summary": {
+        "en": "Within 18 months of the paper's release, Google adapted the Transformer architecture for Natural Language Understanding via BERT, simultaneously breaking state-of-the-art records on 11 diverse NLP benchmarks. This demonstrated that attention-based architectures could generalize far beyond machine translation.",
+        "zhHans": "在论文发表 18 个月内，Google 通过 BERT 将 Transformer 架构应用到自然语言理解中，同时在 11 项 NLP 评测基准中刷新 SOTA 记录。这证明了基于注意力的架构不仅能做机器翻译，还能泛化到更广的文本理解任务。"
+      },
+      "severityDelta": "+1",
+      "cumulativeSeverity": 2,
+      "dimension": "paradigm_shift",
+      "linkedEventId": "bert-2018",
+      "sourceIds": [
+        "wikipedia-transformer"
+      ]
+    },
+    {
+      "date": "2020-06",
+      "milestone": {
+        "en": "GPT-3 demonstrates scaling laws and few-shot capability",
+        "zhHans": "GPT-3 展示了规模法则与少样本学习能力"
+      },
+      "summary": {
+        "en": "OpenAI scaled the Transformer decoder to 175 billion parameters in GPT-3. The model demonstrated that scaling the Transformer architecture with more data and compute results in emergent few-shot capabilities (such as code generation and reasoning) without task-specific training, establishing the modern foundation model paradigm.",
+        "zhHans": "OpenAI 将 Transformer 解码器架构在 GPT-3 中扩展到 1750 亿参数。该模型证明了在更多 data 和算力下扩展 Transformer 架构会带来涌现的少样本能力（如代码生成和基础推理），确立了现代基座模型范式。"
+      },
+      "severityDelta": "+1",
+      "cumulativeSeverity": 3,
+      "dimension": "capability_leap",
+      "linkedEventId": "gpt3-2020",
+      "sourceIds": [
+        "wikipedia-transformer"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "milestone": {
+        "en": "ChatGPT triggers massive economic and global product adoption",
+        "zhHans": "ChatGPT 触发全球范围的大规模产品落地与经济重组"
+      },
+      "summary": {
+        "en": "ChatGPT, built on the Transformer-based GPT-3.5, reached 100 million monthly active users in 2 months. This demonstrated the immense commercial and economic disruption potential of generative AI, forcing tech giants to pivot to 'AI-first' strategies and accelerating GPU infrastructure demand globally.",
+        "zhHans": "基于 Transformer 的 GPT-3.5 打造的 ChatGPT 在 2 个月内突破 1 亿月活。这展示了生成式 AI 巨大的商业和经济颠覆潜力，迫使全球科技巨头转向“AI 优先”战略，极大地加速了全球 GPU 算力基础设施的建设。"
+      },
+      "severityDelta": "+1",
+      "cumulativeSeverity": 4,
+      "dimension": "economic_disruption",
+      "linkedEventId": "chatgpt-2022",
+      "sourceIds": [
+        "wikipedia-transformer"
+      ]
+    }
+  ],
   "claims": [
     {
       "id": "transformer-published-2017",
