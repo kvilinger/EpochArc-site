@@ -8,8 +8,8 @@ function detectBrowserLang() {
 }
 
 const state = {
-  lang: localStorage.getItem('od-lang') || detectBrowserLang(),
-  theme: localStorage.getItem('od-theme') || 'light'
+  lang: localStorage.getItem('epocharc-lang') || detectBrowserLang(),
+  theme: localStorage.getItem('epocharc-theme') || 'light'
 };
 
 function normalizeLang(lang) {
@@ -64,7 +64,7 @@ function updateTheme() {
 if (langSelect) {
   langSelect.addEventListener('change', (event) => {
     state.lang = normalizeLang(event.target.value);
-    localStorage.setItem('od-lang', state.lang);
+    localStorage.setItem('epocharc-lang', state.lang);
     updateLocale();
   });
 }
@@ -73,14 +73,18 @@ const themeToggle = document.getElementById('themeToggle');
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
     state.theme = state.theme === 'light' ? 'dark' : 'light';
-    localStorage.setItem('od-theme', state.theme);
+    localStorage.setItem('epocharc-theme', state.theme);
     updateTheme();
   });
 }
 
-// 关联事件跳转
+// 关联事件跳转（智能兼容本地 file:// 相对定位与线上 http 绝对根路径定位）
 window.navigateToEvent = function(id) {
-  window.location.href = `../${id}/index.html`;
+  if (window.location.protocol === 'file:') {
+    window.location.href = `../${id}/index.html`;
+  } else {
+    window.location.href = `/events/${id}/index.html`;
+  }
 };
 
 // SVG 拓扑图 Hover 连线高亮
