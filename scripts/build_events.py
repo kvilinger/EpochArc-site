@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """Build data/events.json from content/events/*.json with full validation"""
-import json, os, glob, sys
+import json, os, glob, sys, html
+
+def html_escape(text):
+    if not text:
+        return ""
+    return html.escape(str(text), quote=True)
+
 
 EVENTS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'content', 'events')
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'events.json')
@@ -178,18 +184,19 @@ if os.path.exists(TEMPLATE_FILE):
             tf_zh = labels['timeframe'].get(tf_val, {}).get('zhHans', tf_val)
             
             desc_en = imp.get('description', {}).get('en', '')
-            desc_zh = imp.get('description', {}).get('zhHans', '')
+            desc_zh = html_escape(imp.get('description', {}).get('zhHans', ''))
+            desc_en = html_escape(imp.get('description', {}).get('en', ''))
             
-            affected_en = ', '.join(imp.get('affectedGroups', []))
-            affected_zh = '、'.join(imp.get('affectedGroups', []))
+            affected_en = html_escape(', '.join(imp.get('affectedGroups', [])))
+            affected_zh = html_escape('、'.join(imp.get('affectedGroups', [])))
             
             severity_val = f"+{imp.get('severity')}" if imp.get('severity') > 0 else str(imp.get('severity'))
             
             impact_items.append(f'''
               <li class="impact-item">
                 <div class="impact-head">
-                  <span class="impact-name" data-zh="{dim_zh}" data-en="{dim_en}">{dim_en}</span>
-                  <span class="impact-score" data-zh="{severity_val} · {tf_zh}" data-en="{severity_val} · {tf_en}">{severity_val} · {tf_en}</span>
+                  <span class="impact-name" data-zh="{html_escape(dim_zh)}" data-en="{html_escape(dim_en)}">{html_escape(dim_en)}</span>
+                  <span class="impact-score" data-zh="{severity_val} · {html_escape(tf_zh)}" data-en="{severity_val} · {html_escape(tf_en)}">{severity_val} · {html_escape(tf_en)}</span>
                 </div>
                 <p class="impact-description" data-zh="{desc_zh}" data-en="{desc_en}">{desc_en}</p>
                 <p class="impact-description" data-zh="受影响群体: {affected_zh}" data-en="Affected Groups: {affected_en}">Affected Groups: {affected_en}</p>
@@ -218,8 +225,8 @@ if os.path.exists(TEMPLATE_FILE):
             title_html = f'<a class="source-title source-title-link" href="{src.get("url")}" target="_blank" rel="noopener noreferrer">{src.get("title")}</a>' if src.get("url") else f'<span class="source-title">{src.get("title")}</span>'
             quote_html = f'<div class="source-quote">{source_ref.get("quote")}</div>' if source_ref.get('quote') else ''
             
-            meta_en = f'URL: {src.get("url")}' if src.get("url") else 'URL pending'
-            meta_zh = f'原文可访问: {src.get("url")}' if src.get("url") else '待补原文链接'
+            meta_en = html_escape(f'URL: {src.get("url")}' if src.get("url") else 'URL pending')
+            meta_zh = html_escape(f'原文可访问: {src.get("url")}' if src.get("url") else '待补原文链接')
             
             source_items.append(f'''
               <li class="source-card">
@@ -231,7 +238,7 @@ if os.path.exists(TEMPLATE_FILE):
                   <p class="source-meta" data-zh="{meta_zh}" data-en="{meta_en}">{meta_en}</p>
                   {quote_html}
                   <div class="source-status">
-                    <span class="source-chip" data-zh="{type_zh}" data-en="{type_en}">{type_en}</span>
+                    <span class="source-chip" data-zh="{html_escape(type_zh)}" data-en="{html_escape(type_en)}">{html_escape(type_en)}</span>
                     <span class="source-chip" data-zh="引用已记录" data-en="Citation logged">Citation logged</span>
                     <span class="source-chip" data-zh="原文可访问" data-en="Live source">Live source</span>
                   </div>
@@ -275,14 +282,18 @@ if os.path.exists(TEMPLATE_FILE):
         if precursors:
             cards = []
             for p in precursors:
+                p_title_zh = html_escape(p['title']['zhHans'])
+                p_title_en = html_escape(p['title']['en'])
+                p_summary_zh = html_escape(p['summary']['zhHans'])
+                p_summary_en = html_escape(p['summary']['en'])
                 cards.append(f'''
                   <div class="related-card" onclick="navigateToEvent('{p['id']}')">
                     <div class="related-card-meta">
                       <span>{p['date']}</span>
                       <span class="sig-badge">L{p['significance']}</span>
                     </div>
-                    <h4 class="related-card-title" data-zh="{p['title']['zhHans']}" data-en="{p['title']['en']}">{p['title']['en']}</h4>
-                    <p class="related-card-summary" data-zh="{p['summary']['zhHans']}" data-en="{p['summary']['en']}">{p['summary']['en']}</p>
+                    <h4 class="related-card-title" data-zh="{p_title_zh}" data-en="{p_title_en}">{p_title_en}</h4>
+                    <p class="related-card-summary" data-zh="{p_summary_zh}" data-en="{p_summary_en}">{p_summary_en}</p>
                   </div>
                 ''')
             precursors_html = f'''
@@ -301,14 +312,18 @@ if os.path.exists(TEMPLATE_FILE):
         if successors:
             cards = []
             for s in successors:
+                s_title_zh = html_escape(s['title']['zhHans'])
+                s_title_en = html_escape(s['title']['en'])
+                s_summary_zh = html_escape(s['summary']['zhHans'])
+                s_summary_en = html_escape(s['summary']['en'])
                 cards.append(f'''
                   <div class="related-card" onclick="navigateToEvent('{s['id']}')">
                     <div class="related-card-meta">
                       <span>{s['date']}</span>
                       <span class="sig-badge">L{s['significance']}</span>
                     </div>
-                    <h4 class="related-card-title" data-zh="{s['title']['zhHans']}" data-en="{s['title']['en']}">{s['title']['en']}</h4>
-                    <p class="related-card-summary" data-zh="{s['summary']['zhHans']}" data-en="{s['summary']['en']}">{s['summary']['en']}</p>
+                    <h4 class="related-card-title" data-zh="{s_title_zh}" data-en="{s_title_en}">{s_title_en}</h4>
+                    <p class="related-card-summary" data-zh="{s_summary_zh}" data-en="{s_summary_en}">{s_summary_en}</p>
                   </div>
                 ''')
             successors_html = f'''
@@ -349,8 +364,8 @@ if os.path.exists(TEMPLATE_FILE):
               </defs>
             '''
             
-            c_title_en = e['title']['en'][:20] + '...' if len(e['title']['en']) > 22 else e['title']['en']
-            c_title_zh = e['title']['zhHans'][:12] + '...' if len(e['title']['zhHans']) > 14 else e['title']['zhHans']
+            c_title_en = html_escape(e['title']['en'][:20] + '...' if len(e['title']['en']) > 22 else e['title']['en'])
+            c_title_zh = html_escape(e['title']['zhHans'][:12] + '...' if len(e['title']['zhHans']) > 14 else e['title']['zhHans'])
             nodes_markup.append(f'''
               <g class="svg-node" onclick="event.stopPropagation()" onmouseenter="showEventTooltip(event, '{eid}')" onmouseleave="hideEventTooltip()">
                 <rect class="svg-node-rect center-node breathing-aura" x="{center_node_x - 95}" y="{center_node_y - 26}" width="190" height="52" />
@@ -363,8 +378,8 @@ if os.path.exists(TEMPLATE_FILE):
                 gap_y = view_height / (len(visible_precursors) + 1)
                 for idx, p in enumerate(visible_precursors):
                     node_y = gap_y * (idx + 1)
-                    p_title_en = p['title']['en'][:18] + '...' if len(p['title']['en']) > 20 else p['title']['en']
-                    p_title_zh = p['title']['zhHans'][:11] + '...' if len(p['title']['zhHans']) > 13 else p['title']['zhHans']
+                    p_title_en = html_escape(p['title']['en'][:18] + '...' if len(p['title']['en']) > 20 else p['title']['en'])
+                    p_title_zh = html_escape(p['title']['zhHans'][:11] + '...' if len(p['title']['zhHans']) > 13 else p['title']['zhHans'])
                     
                     st_x = precursor_x + 85
                     st_y = node_y
@@ -391,8 +406,8 @@ if os.path.exists(TEMPLATE_FILE):
                 gap_y = view_height / (len(visible_successors) + 1)
                 for idx, s in enumerate(visible_successors):
                     node_y = gap_y * (idx + 1)
-                    s_title_en = s['title']['en'][:18] + '...' if len(s['title']['en']) > 20 else s['title']['en']
-                    s_title_zh = s['title']['zhHans'][:11] + '...' if len(s['title']['zhHans']) > 13 else s['title']['zhHans']
+                    s_title_en = html_escape(s['title']['en'][:18] + '...' if len(s['title']['en']) > 20 else s['title']['en'])
+                    s_title_zh = html_escape(s['title']['zhHans'][:11] + '...' if len(s['title']['zhHans']) > 13 else s['title']['zhHans'])
                     
                     st_x = center_node_x + 95
                     st_y = center_node_y
