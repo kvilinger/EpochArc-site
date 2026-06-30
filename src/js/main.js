@@ -781,6 +781,7 @@ const LANGUAGES = {
                 </div>
                 <p class="predict-intro">${escapeHtml(copy.desc)}</p>
               ` : `
+                <h3>${escapeHtml(copy.title)}</h3>
                 <div class="predict-meta">
                   <span class="signal-count">${escapeHtml(signalText)}</span>
                   <div class="forecast-selection-badge" aria-label="${escapeHtml(selection.label)}">
@@ -788,7 +789,6 @@ const LANGUAGES = {
                     <span class="forecast-selection-label">${escapeHtml(text('peopleTracking'))}</span>
                   </div>
                 </div>
-                <h3>${escapeHtml(copy.title)}</h3>
                 <p>${escapeHtml(copy.desc)}</p>
               `}
             </div>

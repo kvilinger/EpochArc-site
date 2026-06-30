@@ -55,7 +55,7 @@
       font-size: 12px;
       line-height: 1;
       font-weight: 700;
-      color: var(--fg);
+      color: var(--accent);
     }
     .predict-card.compact .forecast-selection-count {
       font-size: 12px;
@@ -1032,6 +1032,7 @@
       height: 24px;
       pointer-events: none;
       transition: var(--transition-smooth);
+      margin-left: auto;
     }
     .timeline-card-indicator::before {
       content: '';
@@ -1123,8 +1124,6 @@
     }
     .timeline-card-action {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
       margin-top: 8px;
     }
     .expanded .card-view-link {
