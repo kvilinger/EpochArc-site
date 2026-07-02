@@ -547,7 +547,21 @@ if os.path.exists(DIST_DIR):
     shutil.copytree(EVENTS_OUTPUT_DIR, os.path.join(DIST_DIR, 'events'), dirs_exist_ok=True)
     print(f"✅ Synced static events to {DIST_DIR}/events/")
 
-# ─────────────────── 回填 HTML Fallback 数据 ───────────────────
+# ─────────────────── Fallback 数据裁剪与回填 ───────────────────
+FALLBACK_KEEP_KEYS = {'id', 'title', 'date', 'datePrecision', 'summary',
+                      'categories', 'significance', 'impactIndex'}
+
+def trim_for_fallback(events):
+    """裁剪 events 数据用于 HTML fallback，去掉详情页才需要的字段"""
+    trimmed = []
+    for e in events:
+        entry = {}
+        for key in FALLBACK_KEEP_KEYS:
+            if key in e:
+                entry[key] = e[key]
+        trimmed.append(entry)
+    return trimmed
+
 import re
 
 def inject_fallback_data(html_path, forecasts_json, events_json, sources_json):
@@ -592,13 +606,26 @@ def inject_fallback_data(html_path, forecasts_json, events_json, sources_json):
 with open(os.path.join(ROOT_DIR, 'data', 'forecasts.json'), 'r', encoding='utf-8') as fh:
     forecasts_data_str = json.dumps(json.load(fh), ensure_ascii=False)
 with open(os.path.join(ROOT_DIR, 'data', 'events.json'), 'r', encoding='utf-8') as fh:
-    events_data_str = json.dumps(json.load(fh), ensure_ascii=False)
+    full_events_list = json.load(fh)
+    events_data_str = json.dumps(full_events_list, ensure_ascii=False)
 with open(os.path.join(ROOT_DIR, 'data', 'sources.json'), 'r', encoding='utf-8') as fh:
     sources_data_str = json.dumps(json.load(fh), ensure_ascii=False)
 
-inject_fallback_data(os.path.join(ROOT_DIR, 'index.html'), forecasts_data_str, events_data_str, sources_data_str)
-inject_fallback_data(os.path.join(ROOT_DIR, 'dist', 'index.html'), forecasts_data_str, events_data_str, sources_data_str)
-print("✅ Injected fallback data into index.html and dist/index.html")
+# 生成精简版 events_summary.json
+trimmed_events = trim_for_fallback(full_events_list)
+trimmed_events_str = json.dumps(trimmed_events, ensure_ascii=False, default=str)
+summary_path = os.path.join(ROOT_DIR, 'data', 'events_summary.json')
+with open(summary_path, 'w', encoding='utf-8') as fh:
+    fh.write(trimmed_events_str)
+# 同步写入 dist/data/ 如果存在的话
+dist_data_dir = os.path.join(ROOT_DIR, 'dist', 'data')
+if os.path.exists(dist_data_dir):
+    with open(os.path.join(dist_data_dir, 'events_summary.json'), 'w', encoding='utf-8') as fh:
+        fh.write(trimmed_events_str)
+
+inject_fallback_data(os.path.join(ROOT_DIR, 'index.html'), forecasts_data_str, trimmed_events_str, sources_data_str)
+inject_fallback_data(os.path.join(ROOT_DIR, 'dist', 'index.html'), forecasts_data_str, trimmed_events_str, sources_data_str)
+print("✅ Injected slimmed fallback data into index.html and dist/index.html")
 
 # ─────────────────── 自动生成 sitemap.xml ───────────────────
 def generate_sitemap(events):

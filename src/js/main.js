@@ -347,6 +347,30 @@ const LANGUAGES = {
       elements.filterResetBtn.disabled = !isFiltered;
     }
 
+    let fullEventDataLoaded = false;
+    let fullEventDataPromise = null;
+
+    async function ensureFullEventData() {
+      if (fullEventDataLoaded) return Promise.resolve();
+      if (!fullEventDataPromise) {
+        fullEventDataPromise = loadJson('data/events.json').then(data => {
+          const summaryMap = new Map(aiEvents.map(e => [e.id, e]));
+          data.forEach(full => {
+            const existing = summaryMap.get(full.id);
+            if (existing) {
+              Object.assign(existing, full);
+            }
+          });
+          fullEventDataLoaded = true;
+          renderTimeline();
+        }).catch(err => {
+          fullEventDataPromise = null;
+          throw err;
+        });
+      }
+      return fullEventDataPromise;
+    }
+
     async function loadSiteData() {
       state.dataStatus = 'loading';
       state.dataError = '';
@@ -357,7 +381,7 @@ const LANGUAGES = {
         const [labelsData, forecastData, eventData, sourceData] = await Promise.all([
           loadJson('data/labels.json'),
           loadJson('data/forecasts.json'),
-          loadJson('data/events.json'),
+          loadJson('data/events_summary.json'),
           loadJson('data/sources.json')
         ]);
         categoryLabels = labelsData.category || {};
@@ -1185,6 +1209,24 @@ const LANGUAGES = {
 
     function renderEventDetails(e, detailsId) {
       const copy = localizedRecord(e);
+      
+      const isPartial = !e.narrative && !e.impacts;
+      if (isPartial) {
+        return `
+          <div class="timeline-details" id="${detailsId}" onclick="event.stopPropagation()" onkeydown="event.stopPropagation()">
+            <div class="timeline-details-inner">
+              <div class="detail-section" style="text-align: center; padding: var(--gap-lg) 0;">
+                <p style="color: var(--muted); font-size: 14px; margin-bottom: 16px;">
+                  ${isChineseContent() ? '加载详情中…' : 'Loading details…'}
+                </p>
+                <a href="events/${e.id}/index.html" class="source-title-link" style="font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 4px;" onclick="event.stopPropagation()">
+                  <span>${isChineseContent() ? '直接查看完整事件页面 →' : 'View full event page →'}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }
       const eventSources = (e.sources || []).map((sourceRef) => ({
         ref: sourceRef,
         source: sourcesById.get(sourceRef.sourceId) || { id: sourceRef.sourceId, title: sourceRef.sourceId, type: 'unknown', url: '' }
@@ -1574,9 +1616,11 @@ const LANGUAGES = {
     };
 
     /* ─── Interactive Inline Details ────────────────────────────────── */
-    window.openDetails = function(id, shouldPushState = true) {
+     window.openDetails = function(id, shouldPushState = true) {
       const e = aiEvents.find(item => item.id === id);
       if (!e) return;
+
+      ensureFullEventData().catch(() => {});
 
       state.openEventIds.add(id);
       renderTimelineWithTransition();
@@ -1589,6 +1633,8 @@ const LANGUAGES = {
     window.toggleDetails = function(id, shouldPushState = true) {
       const e = aiEvents.find(item => item.id === id);
       if (!e) return;
+
+      ensureFullEventData().catch(() => {});
 
       if (state.openEventIds.has(id)) {
         state.openEventIds.delete(id);
