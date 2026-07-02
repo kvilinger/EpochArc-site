@@ -417,6 +417,8 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 7. 人工审核 → 提交到 `content/events/`
 8. 运行 `npm run build:data` → 生成 `data/events.json`
 9. 前端自动渲染
+10. **整理审核报告**：将本次发现的候选事件整理为摘要格式（事件名称、日期、分类、评分、来源摘要、确认层关键发现），发送给用户审核。**不执行 git push**，只做 `npm run build` 本地验证
+11. **用户确认后**：执行 `git add -A && git commit` 和 `git push origin main` → Cloudflare Pages 自动部署
 
 ### 第二版（可选）：Scheduled Worker
 
