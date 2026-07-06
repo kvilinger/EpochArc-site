@@ -340,7 +340,9 @@ else:
             "@type": "Article",
             "headline": title_en,
             "description": abstract_en,
+            "datePublished": a.get('editorial', {}).get('createdAt', datetime.date.today().isoformat()),
             "dateModified": a.get('editorial', {}).get('updatedAt', datetime.date.today().isoformat()),
+            "image": "https://epoch-arc.com/og-image.svg",
             "author": {
                 "@type": "Organization",
                 "name": "EpochArc",

@@ -492,6 +492,8 @@ if os.path.exists(TEMPLATE_FILE):
             "description": copy_desc_en,
             "datePublished": e['date'],
             "dateModified": e.get('editorial', {}).get('updatedAt', e['date']),
+            "image": "https://epoch-arc.com/og-image.svg",
+            "articleSection": ', '.join(labels['category'].get(c, {}).get('en', c) for c in e.get('categories', [])),
             "author": {
                 "@type": "Organization",
                 "name": "EpochArc",

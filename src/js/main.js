@@ -436,15 +436,15 @@ const LANGUAGES = {
       // Update page title
       const isZh = isChineseContent();
       document.title = isZh
-        ? 'EpochArc · AI 里程碑、证据与可能方向'
-        : 'EpochArc · AI Milestones, Evidence, and Possible Directions';
+        ? 'EpochArc · AI 发展史时间线：从 1950 到 2026 的人工智能里程碑'
+        : 'EpochArc · AI Timeline: Key Milestones in Artificial Intelligence from 1950 to 2026';
       
       // Update meta description
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
         metaDesc.setAttribute('content', isZh
-          ? '跟踪 AI 发展历程中的关键里程碑、来源证据与可能方向的双语时间轴。'
-          : 'A bilingual timeline tracking AI milestones, evidence, and possible directions.'
+          ? '完整的人工智能发展时间线，覆盖 1950 年至 2026 年。83+ 个精心筛选的里程碑事件，包括 ChatGPT、AlphaGo、DeepSeek、Claude 等，附影响分析和来源证据。'
+          : 'Explore the complete AI timeline from 1950 to 2026. 83+ curated milestones including ChatGPT, AlphaGo, DeepSeek, Claude — with impact analysis and evidence.'
         );
       }
       
@@ -455,8 +455,8 @@ const LANGUAGES = {
       const ogDesc = document.querySelector('meta[property="og:description"]');
       if (ogDesc) {
         ogDesc.setAttribute('content', isZh
-          ? 'EpochArc — 结构化追踪 AI 里程碑、来源证据与可能方向。'
-          : 'A bilingual project for tracking AI milestones, organizing evidence, and mapping possible directions.'
+          ? '完整的人工智能发展时间线，覆盖 1950 年至 2026 年。83+ 个里程碑事件，附影响分析。'
+          : 'Explore the complete AI timeline from 1950 to 2026. 83+ curated milestones with impact analysis and evidence.'
         );
       }
       
