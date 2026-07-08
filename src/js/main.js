@@ -818,7 +818,7 @@ const LANGUAGES = {
               <div class="predict-action-row">
                 <div class="predict-footer-left">
                   <button class="forecast-mini-vote-btn" type="button" onclick="event.stopPropagation(); ${isSelected ? 'clearSelectedForecast()' : `chooseForecast('${forecast.id}')`}">
-                    ${isSelected ? `✓ ${escapeHtml(text('voteSelected'))}` : escapeHtml(text('votePick'))}
+                    ${isSelected ? escapeHtml(text('voteSelected')) : escapeHtml(text('votePick'))}
                   </button>
                   <div class="forecast-selection-badge" aria-label="${escapeHtml(selection.label)}">
                     <span class="forecast-selection-count">${escapeHtml(selection.count)}</span>
@@ -944,7 +944,6 @@ const LANGUAGES = {
         }
       }
       persistSelectedForecastId();
-      state.selectedForecastExpanded = true;
       state.previewForecastId = '';
       state.directionsPanelOpen = false;
       renderPredictions();
