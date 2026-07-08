@@ -333,6 +333,7 @@
     .predict-card.compact .predict-main {
       min-height: 100%;
       grid-template-rows: auto minmax(0, 1fr);
+      gap: 0;
     }
     .predict-card.is-expanded .predict-main {
       min-height: auto;
