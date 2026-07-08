@@ -24,6 +24,8 @@ const LANGUAGES = {
       hideAllDirections: { en: 'Hide', 'zh-Hans': '收起' },
       changeDirection: { en: 'Open', 'zh-Hans': '打开' },
       clearSelection: { en: 'Clear pick', 'zh-Hans': '取消选择' },
+      votePick: { en: 'Select', 'zh-Hans': '选择' },
+      voteSelected: { en: 'Selected', 'zh-Hans': '已选' },
       activeStatus: { en: 'Monitoring', 'zh-Hans': '观察中' },
       availableDirections: { en: 'directions available', 'zh-Hans': '个可切换方向' },
       linkedSignals: { en: 'linked signals', 'zh-Hans': '个关联信号' },
@@ -807,18 +809,25 @@ const LANGUAGES = {
               ` : `
                 <h3>${escapeHtml(copy.title)}</h3>
                 <p>${escapeHtml(copy.desc)}</p>
-                <div class="predict-meta">
+                <div class="predict-meta-signals">
                   <span class="signal-count">${escapeHtml(signalText)}</span>
-                  <div class="forecast-selection-badge" aria-label="${escapeHtml(selection.label)}">
-                    <span class="forecast-selection-count">${escapeHtml(selection.count)}</span>
-                    <span class="forecast-selection-label">${escapeHtml(text('peopleTracking'))}</span>
-                  </div>
                 </div>
               `}
             </div>
             ${!isExpanded ? `
               <div class="predict-action-row">
-                ${compactCardAction(forecast)}
+                <div class="predict-footer-left">
+                  <button class="forecast-mini-vote-btn" type="button" onclick="event.stopPropagation(); ${isSelected ? 'clearSelectedForecast()' : `chooseForecast('${forecast.id}')`}">
+                    ${isSelected ? `✓ ${escapeHtml(text('voteSelected'))}` : escapeHtml(text('votePick'))}
+                  </button>
+                  <div class="forecast-selection-badge" aria-label="${escapeHtml(selection.label)}">
+                    <span class="forecast-selection-count">${escapeHtml(selection.count)}</span>
+                    <span class="forecast-selection-label">${escapeHtml(text('peopleTracking'))}</span>
+                  </div>
+                </div>
+                <div class="predict-footer-right">
+                  ${compactCardAction(forecast)}
+                </div>
               </div>
             ` : ''}
           </div>

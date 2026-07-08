@@ -77,13 +77,46 @@
       color: var(--fg);
       max-width: 78ch;
     }
+    .predict-meta-signals {
+      margin-top: 10px;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
     .predict-action-row {
       display: flex;
-      gap: 0;
       align-items: center;
-      justify-content: center;
-      padding-top: 8px;
+      justify-content: space-between;
+      padding-top: 10px;
       border-top: 1px solid color-mix(in oklch, var(--fg) 8%, var(--border));
+    }
+    .predict-footer-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .predict-footer-right {
+      display: flex;
+      align-items: center;
+    }
+    .forecast-mini-vote-btn {
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      background: var(--btn-inactive-bg);
+      border: 1px solid var(--btn-inactive-border);
+      color: var(--fg);
+    }
+    .forecast-mini-vote-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .predict-card.selected .forecast-mini-vote-btn {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
     }
     .predict-card.compact .predict-action-row {
       margin-top: auto;
