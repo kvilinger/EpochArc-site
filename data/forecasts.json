@@ -17,8 +17,8 @@
     "forecastType": "capability",
     "status": "active",
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
-    "lastReviewedAt": "2026-06-25",
+    "updatedAt": "2026-07-09",
+    "lastReviewedAt": "2026-07-09",
     "reviewCadence": "monthly",
     "expectedWindow": {
       "start": "2027",
@@ -104,16 +104,19 @@
           "zhHans": "编程智能体已经显露出多步执行和后台运行的行为特征。"
         },
         "summary": {
-          "en": "The Claude Code leak showed that frontier coding products were already experimenting with persistent background actions and broader task handling, even if the trust model remained fragile.",
-          "zhHans": "Claude Code 泄露事件表明，前沿编程产品已经在试验持久后台动作和更广的任务处理，即便其信任模型仍然脆弱。"
+          "en": "The Claude Code leak showed that frontier coding products were already experimenting with persistent background actions. Fable 5's autonomous 2.5-hour CUDA kernel development on KernelBench-Mega (18.71x speedup, single kernel launch) proved that AI systems can now do full-cycle systems-level programming — silent analysis, Roofline modelling, implementation, and optimization.",
+          "zhHans": "Claude Code 泄露事件表明前沿编程产品已经在试验持久后台操作。Fable 5 在 KernelBench-Mega 上自主花了 2.5 小时开发 CUDA 内核（18.71 倍加速、单次内核启动），证明 AI 系统已经能完成完整的系统级编程——静默分析、Roofline 建模、实现和优化。"
         },
         "eventIds": [
-          "claude-code-leak-2026"
+          "claude-code-leak-2026",
+          "fable-5-kernelbench-2026"
         ],
         "sourceIds": [
           "thehackernews-claude-code-leak",
           "cnbc-claude-code-leak",
-          "stanford-ai-index-2026"
+          "stanford-ai-index-2026",
+          "biggo-fable5-kernel-2026",
+          "import-ai-464-2026"
         ]
       }
     ],
@@ -170,12 +173,25 @@
         "supports": [
           "consensusBasis"
         ]
+      },
+      {
+        "sourceId": "biggo-fable5-kernel-2026",
+        "supports": [
+          "signals"
+        ]
+      },
+      {
+        "sourceId": "import-ai-464-2026",
+        "supports": [
+          "signals"
+        ]
       }
     ],
     "relatedEvents": [
       "github-copilot-2022",
       "vibecoding-2025",
-      "claude-code-leak-2026"
+      "claude-code-leak-2026",
+      "fable-5-kernelbench-2026"
     ],
     "tags": [
       "coding",
@@ -185,8 +201,8 @@
     ],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
-      "reviewedAt": "2026-06-25",
+      "updatedAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
       "publishedAt": "2026-06-25",
       "curator": "EpochArc editorial",
       "screeningRunId": "possible-directions-2026-06-25c"
@@ -210,8 +226,8 @@
     "forecastType": "product",
     "status": "active",
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
-    "lastReviewedAt": "2026-06-25",
+    "updatedAt": "2026-07-09",
+    "lastReviewedAt": "2026-07-09",
     "reviewCadence": "monthly",
     "expectedWindow": {
       "start": "2027",
@@ -276,18 +292,22 @@
           "zhHans": "智能体基础设施和一方产品正在同时成形。"
         },
         "summary": {
-          "en": "MCP, Project Mariner, and Operator collectively show that major labs are building not just agent demos, but the protocols, interfaces, and products needed for multi-step task execution.",
-          "zhHans": "MCP、Project Mariner 和 Operator 共同表明，大型实验室正在构建的不只是智能体演示，而是支撑多步任务执行所需的协议、界面和产品。"
+          "en": "MCP, Project Mariner, Operator, and now GPT-5.6's ultra mode (multi-agent delegation) collectively show that major labs are building the protocols, products, and autonomous task execution frameworks needed for enterprise-grade multi-step workflows. Fable 5's 2.5-hour autonomous kernel development demonstrates agents can sustain long-horizon tasks without human intervention.",
+          "zhHans": "MCP、Project Mariner、Operator，以及现在 GPT-5.6 的 ultra 模式（多智能体委托）共同表明，大型实验室正在构建企业级多步工作流所需的协议、产品和自主任务执行框架。Fable 5 的 2.5 小时自主内核开发表明智能体能无需人工干预维持长周期任务。"
         },
         "eventIds": [
           "mcp-protocol-2024",
           "gemini-2-agents-2024",
-          "openai-operator-2025"
+          "openai-operator-2025",
+          "gpt-5-6-broad-launch-2026",
+          "fable-5-kernelbench-2026"
         ],
         "sourceIds": [
           "anthropic-mcp-blog-2024",
           "google-gemini-2-blog-2024",
-          "openai-operator"
+          "openai-operator",
+          "reuters-gpt56-approval-2026",
+          "import-ai-464-2026"
         ]
       },
       {
@@ -310,6 +330,27 @@
           "mit-ai-agent-index-2025",
           "stanford-ai-index-2026",
           "mckinsey-state-ai-2025"
+        ]
+      },
+      {
+        "id": "multi-agent-coordination-entering-production",
+        "kind": "product",
+        "status": "observed",
+        "label": {
+          "en": "Multi-agent coordination and long-horizon autonomous execution are entering production.",
+          "zhHans": "多智能体协调和长周期自主执行正在进入生产。"
+        },
+        "summary": {
+          "en": "GPT-5.6 Sol's ultra mode (delegating work to multiple agents) and Fable 5's autonomous 2.5-hour CUDA kernel development demonstrate that the capability boundary for enterprise agent workflows has shifted from single-step demos to sustained, multi-agent operations.",
+          "zhHans": "GPT-5.6 Sol 的 ultra 模式（将工作委托给多个智能体）和 Fable 5 的 2.5 小时自主 CUDA 内核开发表明，企业智能体工作流的能力边界已从单步演示扩展到可持续的多智能体操作。"
+        },
+        "eventIds": [
+          "gpt-5-6-broad-launch-2026",
+          "fable-5-kernelbench-2026"
+        ],
+        "sourceIds": [
+          "reuters-gpt56-approval-2026",
+          "import-ai-464-2026"
         ]
       }
     ],
@@ -367,13 +408,27 @@
         "supports": [
           "consensusBasis"
         ]
+      },
+      {
+        "sourceId": "reuters-gpt56-approval-2026",
+        "supports": [
+          "signals"
+        ]
+      },
+      {
+        "sourceId": "import-ai-464-2026",
+        "supports": [
+          "signals"
+        ]
       }
     ],
     "relatedEvents": [
       "auto-gpt-2023",
       "mcp-protocol-2024",
       "gemini-2-agents-2024",
-      "openai-operator-2025"
+      "openai-operator-2025",
+      "gpt-5-6-broad-launch-2026",
+      "fable-5-kernelbench-2026"
     ],
     "tags": [
       "agents",
@@ -383,8 +438,8 @@
     ],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
-      "reviewedAt": "2026-06-25",
+      "updatedAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
       "publishedAt": "2026-06-25",
       "curator": "EpochArc editorial",
       "screeningRunId": "possible-directions-2026-06-25c"
@@ -408,8 +463,8 @@
     "forecastType": "product",
     "status": "active",
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
-    "lastReviewedAt": "2026-06-25",
+    "updatedAt": "2026-07-09",
+    "lastReviewedAt": "2026-07-09",
     "reviewCadence": "quarterly",
     "expectedWindow": {
       "start": "2027",
@@ -566,8 +621,8 @@
     ],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
-      "reviewedAt": "2026-06-25",
+      "updatedAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
       "publishedAt": "2026-06-25",
       "curator": "EpochArc editorial",
       "screeningRunId": "possible-directions-2026-06-25c"
@@ -591,8 +646,8 @@
     "forecastType": "science",
     "status": "active",
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
-    "lastReviewedAt": "2026-06-25",
+    "updatedAt": "2026-07-09",
+    "lastReviewedAt": "2026-07-09",
     "reviewCadence": "quarterly",
     "expectedWindow": {
       "start": "2027",
@@ -687,6 +742,27 @@
           "deepmind-gemini-deep-think-imo",
           "stanford-ai-index-2026"
         ]
+      },
+      {
+        "id": "full-stack-ai-scientific-research-in-nature",
+        "kind": "research",
+        "status": "observed",
+        "label": {
+          "en": "Full-stack automated AI scientific research has appeared in peer-reviewed publications.",
+          "zhHans": "全栈 AI 自动化科学研究已出现在同行评审出版物中。"
+        },
+        "summary": {
+          "en": "Nature published 'The AI Scientist' (March 2026) demonstrating end-to-end automation of the entire scientific process — from idea generation through experimentation to manuscript writing. Google's Hypothesis Generation system (I/O 2026) introduced multi-agent idea tournaments for research. These show the discovery pipeline automation concept is no longer theoretical.",
+          "zhHans": "Nature 发表了 'The AI Scientist'（2026年3月），展示了从想法生成到实验再到论文写作的端到端科学流程自动化。Google 的 Hypothesis Generation 系统（I/O 2026）引入了多智能体想法锦标赛。这些表明发现流水线自动化已不再是理论概念。"
+        },
+        "eventIds": [
+          "gemini-deep-think-imo-gold-2025",
+          "alphaevolve-2025"
+        ],
+        "sourceIds": [
+          "nature-ai-scientist-2026",
+          "google-hypothesis-generation-2026"
+        ]
       }
     ],
     "consensusBasis": {
@@ -736,6 +812,18 @@
         "supports": [
           "consensusBasis"
         ]
+      },
+      {
+        "sourceId": "nature-ai-scientist-2026",
+        "supports": [
+          "signals"
+        ]
+      },
+      {
+        "sourceId": "google-hypothesis-generation-2026",
+        "supports": [
+          "signals"
+        ]
       }
     ],
     "relatedEvents": [
@@ -752,8 +840,8 @@
     ],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
-      "reviewedAt": "2026-06-25",
+      "updatedAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
       "publishedAt": "2026-06-25",
       "curator": "EpochArc editorial",
       "screeningRunId": "possible-directions-2026-06-25c"
