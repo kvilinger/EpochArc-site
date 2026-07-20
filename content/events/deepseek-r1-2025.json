@@ -6,7 +6,7 @@
     "zhHans": "DeepSeek 发布 R1，开源推理模型震撼全球市场"
   },
   "searchSummary": {
-    "en": "DeepSeek R1: an open-source reasoning model matching OpenAI\u2019s best at a fraction of the cost. How a Chinese AI lab shocked global markets in 2025.",
+    "en": "DeepSeek R1: an open-source reasoning model matching OpenAI’s best at a fraction of the cost. How a Chinese AI lab shocked global markets in 2025.",
     "zhHans": "DeepSeek R1：2025 年 1 月发布的开源推理模型，以极低成本达到 OpenAI 顶级水平。了解这家中国 AI 实验室如何震惊全球市场。"
   },
   "summary": {
@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 9,
+  "impactIndex": 7,
   "consensusLevel": "broad",
   "controversy": false,
   "impacts": [
@@ -84,6 +84,20 @@
       "sourceIds": [
         "deepseek-r1-release"
       ]
+    },
+    {
+      "id": "deepseek-r1-2025-impact-claim",
+      "text": {
+        "en": "Triggered $593B Nvidia single-day market cap loss — the largest in US history. Global AI semiconductor selloff. Nasdaq fell 3%. Forced revaluation of $500B AI infrastructure buildout. Raised fundamental questions about the compute-centric AI investment thesis.",
+        "zhHans": "引发 Nvidia 单日 5930 亿美元市值损失——美国历史上最大。全球 AI 半导体抛售。纳斯达克下跌 3%。迫使人们对 5000 亿美元 AI 基础设施建设进行重新评估。对以算力为中心的 AI 投资逻辑提出了根本性质疑。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "reuters-deepseek-nvidia",
+        "cnbc-deepseek-selloff"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -126,7 +140,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for DeepSeek R1."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "capability",

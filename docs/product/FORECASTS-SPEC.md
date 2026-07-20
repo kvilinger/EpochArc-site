@@ -1,6 +1,6 @@
 # Possible Directions 产品规范
 
-**更新日期**：2026-06-25  
+**更新日期**：2026-07-20
 **模块定位**：把时间轴中已经出现的现实信号组织成值得持续观察的方向，而不是对未来下判决。
 
 关联文档：
@@ -46,13 +46,13 @@ Possible Directions 回答：
 
 每张方向卡只展示四类信息：
 
-1. **Current baseline**  
+1. **Current baseline**
    当前已经发生到什么程度。
-2. **Why this direction**  
+2. **Why this direction**
    为什么这些事件与信号合起来值得单独观察。
-3. **Observed signals**  
+3. **Observed signals**
    已经出现的现实信号，每条都必须绑定时间轴事件和来源。
-4. **Open questions / constraints**  
+4. **Open questions / constraints**
    当前仍未解决的问题、限制和不确定性。
 
 默认不展示：
@@ -159,6 +159,13 @@ Possible Directions 不是独立漂浮模块，必须与时间轴形成闭环。
 - 本站采用的公开口径是什么
 
 即便如此，也应避免把页面做成“判卷式打分板”。
+
+### 6.3 状态与裁定记录
+
+- `monitor_only` 不得进入 `resolved_true`、`resolved_false` 或 `partially_resolved`。
+- 进入任何 resolved 状态前，必须先切换为 `consensus_gated`，记录采用的外部标准、版本、裁定日期、证据来源和 reviewer。
+- `superseded` 必须指向替代方向；`retracted` 必须公开说明撤回原因。
+- 状态变化必须同时更新顶层 `updatedAt`、`lastReviewedAt` 和 `editorial` 中对应字段。
 
 ---
 

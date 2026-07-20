@@ -29,7 +29,7 @@
   ],
   "status": "published",
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": false,
   "impacts": [
@@ -122,6 +122,21 @@
         "wikipedia-claude",
         "anthropic-claude-code"
       ]
+    },
+    {
+      "id": "claude-code-launch-2025-impact-claim",
+      "text": {
+        "en": "Shifted developer perception of AI from 'chatbot that suggests code' to 'agent that can be trusted with production coding tasks.' Established the terminal agent paradigm.",
+        "zhHans": "将开发者对 AI 的认知从\"会建议代码的聊天机器人\"转变为\"可以信赖其处理生产级编程任务的智能体\"。确立了终端智能体范式。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "wikipedia-claude",
+        "anthropic-claude-code",
+        "scriptbyai-claude-timeline"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -169,6 +184,8 @@
         "changeType": "created",
         "summary": "Added Claude Code launch — first widely-adopted production coding agent, marking agent transition from demo to daily tool."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

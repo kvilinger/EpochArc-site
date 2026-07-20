@@ -19,7 +19,9 @@ SOURCES_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 
 events = []
 for f in sorted(glob.glob(os.path.join(EVENTS_DIR, '*.json'))):
     with open(f) as fh:
-        events.append(json.load(fh))
+        event = json.load(fh)
+        if event.get('status') == 'published':
+            events.append(event)
 
 # Load labels for validation
 with open(LABELS_FILE) as fh:
@@ -618,7 +620,7 @@ if os.path.exists(TEMPLATE_FILE):
             "description": copy_desc_en,
             "datePublished": e['date'],
             "dateModified": e.get('editorial', {}).get('updatedAt', e['date']),
-            "image": "https://epoch-arc.com/og-image.svg",
+            "image": f"https://epoch-arc.com/assets/og/events/{e['slug']}.png",
             "articleSection": ', '.join(labels['category'].get(c, {}).get('en', c) for c in e.get('categories', [])),
             "author": {
                 "@type": "Organization",
@@ -633,7 +635,7 @@ if os.path.exists(TEMPLATE_FILE):
                     "url": "https://epoch-arc.com/assets/logo-icon.svg"
                 }
             },
-            "mainEntityOfPage": f"https://epoch-arc.com/events/{eid}/"
+            "mainEntityOfPage": f"https://epoch-arc.com/events/{e['slug']}/"
         }
         schema_json_ld = f'<script type="application/ld+json">\n{json.dumps(schema_data, ensure_ascii=False, indent=2)}\n</script>'
 
@@ -641,7 +643,7 @@ if os.path.exists(TEMPLATE_FILE):
         page_html = page_html.replace('{{SCHEMA_JSON_LD}}', schema_json_ld)
         page_html = page_html.replace('{{SEO_TITLE}}', copy_title_en)
         page_html = page_html.replace('{{SEO_DESC}}', copy_desc_en)
-        page_html = page_html.replace('{{SLUG}}', eid)
+        page_html = page_html.replace('{{SLUG}}', e['slug'])
         page_html = page_html.replace('{{ID}}', eid)
         page_html = page_html.replace('{{DATE}}', e['date'])
         page_html = page_html.replace('{{TITLE_ZH}}', copy_title_zh)
@@ -660,8 +662,8 @@ if os.path.exists(TEMPLATE_FILE):
         page_html = page_html.replace('{{RELATED}}', related_section_html)
         page_html = page_html.replace('{{RELATED_DATA_JSON}}', related_data_json)
         
-        # 写出到 events/{eid}/index.html 
-        event_dir = os.path.join(EVENTS_OUTPUT_DIR, eid)
+        # 写出到 events/{slug}/index.html
+        event_dir = os.path.join(EVENTS_OUTPUT_DIR, e['slug'])
         os.makedirs(event_dir, exist_ok=True)
         event_output_file = os.path.join(event_dir, 'index.html')
         with open(event_output_file, 'w', encoding='utf-8') as ev_fh:
@@ -768,7 +770,7 @@ def generate_sitemap(events):
     ]
     
     for e in events:
-        slug = e['id']
+        slug = e['slug']
         xml_lines.append(f'  <url><loc>https://epoch-arc.com/events/{slug}/</loc><lastmod>{today}</lastmod></url>')
         
     xml_lines.append('</urlset>')

@@ -23,7 +23,7 @@
     "safety"
   ],
   "significance": 2,
-  "impactIndex": 9,
+  "impactIndex": 7,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -77,6 +77,21 @@
       ],
       "id": "claude-fable-ban-2026-claim-4",
       "evidenceGrade": "B"
+    },
+    {
+      "id": "claude-fable-ban-2026-impact-claim",
+      "text": {
+        "en": "First-ever US export ban on a general-purpose AI model, establishing a precedent for treating frontier AI as a national security asset akin to munitions.",
+        "zhHans": "美国首次对通用 AI 模型实施出口禁令，为将前沿 AI 视为类似军需品的国家安全资产开创了先例。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "anthropic-fable-suspension-2026",
+        "forbes-fable-ban-2026",
+        "fortune-fable-ban-2026"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "relatedEvents": [
@@ -120,7 +135,7 @@
     {
       "dimension": "paradigm_shift",
       "direction": "negative",
-      "severity": 3,
+      "severity": -3,
       "description": {
         "en": "First-ever US export ban on a general-purpose AI model, establishing a precedent for treating frontier AI as a national security asset akin to munitions.",
         "zhHans": "美国首次对通用 AI 模型实施出口禁令，为将前沿 AI 视为类似军需品的国家安全资产开创了先例。"
@@ -141,7 +156,7 @@
     {
       "dimension": "paradigm_shift",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "The ban reshaped the global AI landscape: US export controls pushed Chinese companies to accelerate open-source development (GLM-5.2 released days later under MIT license as direct response).",
         "zhHans": "禁令重塑了全球 AI 格局：美国的出口管制促使中国公司加速开源开发（GLM-5.2 数天后以 MIT 许可发布，作为直接回应）。"
@@ -160,7 +175,7 @@
     {
       "dimension": "risk_creation",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "Five Eyes joint statement warned that AI models capable of devastating cyberattacks on governments and businesses are months away, elevating AI risk discourse to national security level.",
         "zhHans": "五眼联盟联合声明警告，能够对政府和企业发动毁灭性网络攻击的 AI 模型距离现实仅剩数月，将 AI 风险讨论提升到国家安全层面。"
@@ -187,6 +202,12 @@
         "changeType": "created",
         "summary": "Initial event entry."
       }
-    ]
-  }
+    ],
+    "reviewedAt": "2026-06-30",
+    "reviewer": "gang",
+    "publishedAt": "2026-06-30",
+    "reviewProvenance": "legacy_pre_v23"
+  },
+  "slug": "claude-fable-ban-2026",
+  "status": "published"
 }

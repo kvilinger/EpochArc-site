@@ -6,7 +6,7 @@
     "zhHans": "欧盟 AI 法案生效，全球首部综合性 AI 法律进入执行阶段"
   },
   "searchSummary": {
-    "en": "The EU AI Act took effect in 2025 \u2014 the world\u2019s first comprehensive AI law entered enforcement. How Europe\u2019s risk-based regulation reshaped how AI is built and deployed globally.",
+    "en": "The EU AI Act took effect in 2025 — the world’s first comprehensive AI law entered enforcement. How Europe’s risk-based regulation reshaped how AI is built and deployed globally.",
     "zhHans": "欧盟 AI 法案于 2025 年生效——全球第一部综合性 AI 法律进入执行阶段。欧洲的基于风险的监管如何重塑了全球 AI 的构建和部署方式。"
   },
   "summary": {
@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 8,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": true,
   "impacts": [
@@ -64,7 +64,10 @@
       ],
       "timeframe": "medium",
       "evidenceGrade": "B",
-      "sourceIds": []
+      "sourceIds": [
+        "eu-digital-strategy",
+        "reuters-eu-ai-act-delay-2025"
+      ]
     }
   ],
   "claims": [
@@ -91,6 +94,19 @@
       "sourceIds": [
         "eu-digital-strategy"
       ]
+    },
+    {
+      "id": "eu-ai-act-enforcement-2025-impact-claim",
+      "text": {
+        "en": "First operational AI regulation at scale. Shifted AI compliance from voluntary to mandatory. Created operational enforcement infrastructure (AI Office). Established risk-based classification as global regulatory template. Influenced laws in California, Japan, Canada, Brazil, India.",
+        "zhHans": "第一个大规模运作的 AI 监管。将 AI 合规从自愿转变为强制。建立了运作的执行基础设施（AI 办公室）。确立了基于风险的分类作为全球监管模板。影响了加州、日本、加拿大、巴西、印度的法律。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "eu-digital-strategy"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -103,7 +119,6 @@
     },
     {
       "sourceId": "reuters-eu-ai-act-delay-2025",
-      "supports": [],
       "quote": "EU to delay high-risk AI rules until 2027."
     }
   ],
@@ -123,7 +138,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for EU AI Act enforcement."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "governance"

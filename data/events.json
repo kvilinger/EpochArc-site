@@ -26,7 +26,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -98,7 +98,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for 2026 AI-driven layoffs wave."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "society",
@@ -308,7 +310,9 @@
           "changeType": "created",
           "summary": "Initial entry for AI model price war week."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -338,7 +342,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 8,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": false,
     "categories": [
@@ -348,7 +352,7 @@
     "impacts": [
       {
         "dimension": "economic_disruption",
-        "severity": 2,
+        "severity": -2,
         "direction": "negative",
         "description": {
           "en": "Lisp machine industry collapsed; billions in government and corporate investment lost.",
@@ -363,15 +367,16 @@
         "sourceIds": [
           "wikipedia-ai-winter",
           "reuters-ai-boom-bust-2018"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "paradigm_shift",
-        "severity": 2,
-        "direction": "mixed",
+        "severity": 1,
+        "direction": "positive",
         "description": {
-          "en": "Ended the symbolic AI era and paved the way for the connectionist (neural network) revolution.",
-          "zhHans": "结束了符号 AI 时代，为联结主义（神经网络）革命铺平了道路。"
+          "en": "The collapse weakened the symbolic-AI monoculture and created room for the later connectionist revival.",
+          "zhHans": "这场崩溃削弱了符号 AI 的单一路线，也为后来联结主义的复兴腾出了空间。"
         },
         "affectedGroups": [
           "ai researchers",
@@ -380,11 +385,12 @@
         "timeframe": "long",
         "sourceIds": [
           "wikipedia-ai-winter"
-        ]
+        ],
+        "evidenceGrade": "C"
       },
       {
         "dimension": "risk_creation",
-        "severity": 1,
+        "severity": -1,
         "direction": "negative",
         "description": {
           "en": "AI funding was slashed; the field suffered a decade-long reputation and investment drought.",
@@ -398,7 +404,8 @@
         "timeframe": "long",
         "sourceIds": [
           "reuters-ai-boom-bust-2018"
-        ]
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "claims": [
@@ -414,6 +421,20 @@
           "wikipedia-ai-winter",
           "reuters-ai-boom-bust-2018"
         ]
+      },
+      {
+        "id": "ai-winter-1987-impact-claim",
+        "text": {
+          "en": "Lisp machine industry collapsed; billions in government and corporate investment lost.",
+          "zhHans": "Lisp 机器产业崩溃，数十亿政府和企业投资损失。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "wikipedia-ai-winter",
+          "reuters-ai-boom-bust-2018"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -451,7 +472,9 @@
       "curatorNote": {
         "en": "Added during 2026 historical gap fill. AI winter provides crucial context for understanding AI's boom-and-bust cycles.",
         "zhHans": "2026 年历史空白补全时添加。AI 寒冬提供了理解 AI 繁荣-衰退周期的重要背景。"
-      }
+      },
+      "publishedAt": "2026-06-29",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -481,7 +504,7 @@
     },
     "status": "published",
     "significance": 3,
-    "impactIndex": 10,
+    "impactIndex": 8,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -609,7 +632,6 @@
       },
       {
         "sourceId": "ieee-spectrum-alexnet",
-        "supports": [],
         "quote": "How AlexNet Transformed AI and Computer Vision Forever."
       }
     ],
@@ -638,11 +660,143 @@
           "changeType": "created",
           "summary": "Initial v2 entry for AlexNet / ImageNet 2012."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
     ]
+  },
+  {
+    "id": "alphaevolve-2025",
+    "slug": "alphaevolve-2025",
+    "title": {
+      "en": "Google DeepMind introduces AlphaEvolve for algorithm discovery",
+      "zhHans": "Google DeepMind 发布用于算法发现的 AlphaEvolve"
+    },
+    "summary": {
+      "en": "Google DeepMind introduced AlphaEvolve, a Gemini-powered coding agent that combines program generation, automated evaluation, and evolutionary search to optimize algorithms.",
+      "zhHans": "Google DeepMind 发布 AlphaEvolve：一个由 Gemini 驱动、结合程序生成、自动评估与进化搜索来优化算法的编程智能体。"
+    },
+    "narrative": {
+      "en": "AlphaEvolve turned algorithm discovery into an iterative generate-evaluate-improve loop and reported results in mathematics and Google infrastructure. At launch, however, the system had not been released to outside researchers, so reproducibility and generality remained open questions.",
+      "zhHans": "AlphaEvolve 把算法发现变成“生成—评估—改进”的迭代闭环，并报告了数学与 Google 基础设施中的成果。但发布时系统尚未向外部研究者开放，可复现性和普适性仍待验证。"
+    },
+    "date": "2025-05-14",
+    "datePrecision": "day",
+    "categories": [
+      "capability"
+    ],
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 6,
+    "consensusLevel": "emerging",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "AlphaEvolve demonstrated an automated loop that generated and evaluated algorithmic candidates, reporting improvements in mathematical constructions and production computing tasks.",
+          "zhHans": "AlphaEvolve 展示了自动生成并评估算法候选方案的闭环，并报告了数学构造与生产计算任务上的改进。"
+        },
+        "affectedGroups": [
+          "computer scientists",
+          "mathematicians",
+          "systems engineers",
+          "AI researchers"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "google-alphaevolve-2025",
+          "nature-alphaevolve-2025"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "The system framed AI-assisted discovery as a repeatable optimization workflow rather than a single generated answer.",
+          "zhHans": "该系统把 AI 辅助发现表述为可重复的优化工作流，而不是一次性的生成答案。"
+        },
+        "affectedGroups": [
+          "research organizations",
+          "software teams"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "google-alphaevolve-2025",
+          "nature-alphaevolve-2025"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "alphaevolve-launch",
+        "text": {
+          "en": "Google DeepMind announced AlphaEvolve on May 14, 2025 as a Gemini-powered agent for algorithm discovery and optimization.",
+          "zhHans": "Google DeepMind 于 2025 年 5 月 14 日发布 AlphaEvolve，将其定位为由 Gemini 驱动的算法发现与优化智能体。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "google-alphaevolve-2025",
+          "nature-alphaevolve-2025"
+        ]
+      },
+      {
+        "id": "alphaevolve-external-validation-limit",
+        "text": {
+          "en": "At launch, AlphaEvolve had not been made available to researchers outside Google DeepMind, limiting independent validation.",
+          "zhHans": "发布时 AlphaEvolve 尚未向 Google DeepMind 之外的研究者开放，限制了独立验证。"
+        },
+        "claimType": "limitation",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "nature-alphaevolve-2025"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "google-alphaevolve-2025",
+        "supports": [
+          "alphaevolve-launch"
+        ]
+      },
+      {
+        "sourceId": "nature-alphaevolve-2025",
+        "supports": [
+          "alphaevolve-launch",
+          "alphaevolve-external-validation-limit"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "alphafold-2020",
+      "gemini-deep-think-imo-gold-2025"
+    ],
+    "editorial": {
+      "createdAt": "2026-07-20",
+      "updatedAt": "2026-07-20",
+      "reviewedAt": "2026-07-20",
+      "publishedAt": "2026-07-20",
+      "curator": "EpochArc editorial",
+      "reviewer": "EpochArc editorial",
+      "changeLog": [
+        {
+          "date": "2026-07-20",
+          "changeType": "created",
+          "summary": "Added after the v2.3 audit found a published direction pointing to a missing event."
+        }
+      ],
+      "reviewProvenance": "v2.3"
+    }
   },
   {
     "id": "alphafold-2020",
@@ -785,13 +939,13 @@
       },
       {
         "sourceId": "wikipedia-alphafold",
-        "supports": [],
         "quote": "AlphaFold is an AI system developed by DeepMind."
       }
     ],
     "relatedEvents": [
       "gpt3-2020",
       "alexnet-2012",
+      "alphaevolve-2025",
       "alphafold-nobel-2024",
       "gemini-deep-think-imo-gold-2025",
       "google-deepmind-2014"
@@ -809,7 +963,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for AlphaFold protein folding breakthrough."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -842,7 +998,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 8,
+    "impactIndex": 7,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -901,6 +1057,20 @@
         "sourceIds": [
           "nobel-chemistry-2024"
         ]
+      },
+      {
+        "id": "alphafold-nobel-2024-impact-claim",
+        "text": {
+          "en": "First Nobel Prize awarded for AI-driven scientific discovery. Legitimized AI as a fundamental tool of scientific research at the highest global recognition level. Triggered a wave of investment and interest in AI-for-science applications across biology, chemistry, and materials science.",
+          "zhHans": "首次因 AI 驱动的科学发现授予诺贝尔奖。以最高全球认可级别肯定了 AI 作为科学研究的基本工具。在生物学、化学和材料科学领域引发了一波对 AI 驱动科学应用的投资和兴趣。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "nobel-chemistry-2024",
+          "deepmind-alphafold-nobel"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -920,7 +1090,6 @@
       },
       {
         "sourceId": "wikipedia-nobel-prize-chemistry-2024",
-        "supports": [],
         "quote": "The Nobel Prize in Chemistry 2024 was awarded to Hassabis, Jumper, Baker."
       }
     ],
@@ -941,7 +1110,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for AlphaFold Nobel Prize."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "society",
@@ -975,7 +1146,7 @@
     },
     "status": "published",
     "significance": 3,
-    "impactIndex": 9,
+    "impactIndex": 8,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -1090,7 +1261,6 @@
       },
       {
         "sourceId": "wikipedia-alphago-lee-sedol",
-        "supports": [],
         "quote": "AlphaGo defeated Lee Sedol 4-1 in March 2016."
       }
     ],
@@ -1114,7 +1284,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for AlphaGo vs Lee Sedol."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability",
@@ -1146,7 +1318,7 @@
       "commerce"
     ],
     "significance": 1,
-    "impactIndex": 8,
+    "impactIndex": 5,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -1205,7 +1377,7 @@
       {
         "dimension": "economic_disruption",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "The largest documented model extraction attempt to date, providing empirical evidence for AI export control debates and likely accelerating regulatory scrutiny of cross-border AI access.",
           "zhHans": "迄今规模最大的有记录模型盗窃企图，为 AI 出口管制辩论提供了实证依据，可能加速对跨境 AI 访问的监管审查。"
@@ -1225,7 +1397,7 @@
       {
         "dimension": "economic_disruption",
         "direction": "negative",
-        "severity": 1,
+        "severity": -1,
         "description": {
           "en": "The accusation escalates US-China tech tensions and could lead to more aggressive access restrictions, affecting global AI development and collaboration.",
           "zhHans": "这一指控加剧了美中科技紧张局势，可能导致更严格的访问限制，影响全球 AI 开发和合作。"
@@ -1251,8 +1423,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-06-30",
+      "reviewer": "gang",
+      "publishedAt": "2026-06-30",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "anthropic-alibaba-extraction-2026",
+    "status": "published"
   },
   {
     "id": "anthropic-asl3-2025",
@@ -1273,7 +1451,7 @@
       "en": "Anthropic had pioneered the concept of Responsible Scaling Policy in 2023, proposing that as AI models became more capable, labs should progressively tighten safety measures. ASL-2 covered current models with standard monitoring. ASL-3 was designed for models with capabilities that could pose significant risks — including autonomous AI research, bioweapon development assistance, or large-scale persuasion. The May 2025 activation meant that Anthropic assessed its latest models as reaching the ASL-3 capability threshold, triggering enhanced safeguards: asynchronous monitoring classifiers for analyzing model outputs for threats, post-hoc jailbreak detection with rapid response procedures, and deployment restrictions for the most sensitive use cases. The framework was notable for its specificity: it defined concrete capability thresholds (e.g., performance on specific biology benchmarks, autonomous coding capabilities) rather than vague safety commitments. It also included a commitment to not deploy models beyond ASL-3 in uncontrolled settings without further safety evidence. While critics argued that the thresholds were self-defined and self-enforced, ASL-3's activation was a milestone in moving AI safety from abstract principles to operational engineering. It influenced discussions at California's SB 53 hearings and was cited as a model for how AI companies could implement the EU AI Act's requirements for 'systemic risk' models.",
       "zhHans": "Anthropic 在 2023 年率先提出了负责任扩展政策的概念，提出随着 AI 模型能力增强，实验室应逐步收紧安全措施。ASL-2 涵盖当前模型，采用标准监控。ASL-3 设计用于具有可能构成重大风险的能力的模型——包括自主 AI 研究、生物武器开发辅助或大规模说服。2025 年 5 月的激活意味着 Anthropic 评估其最新模型已达到 ASL-3 能力阈值，触发了增强的安全防护：用于分析模型输出以检测威胁的异步监控分类器、带有快速响应程序的事后越狱检测，以及对最敏感用例的部署限制。该框架以其具体性而著称：它定义了具体的能力阈值（例如，在特定生物学基准上的表现、自主编程能力），而不是模糊的安全承诺。它还包括一项承诺：在没有进一步安全证据的情况下，不在不受控环境中部署超过 ASL-3 的模型。虽然批评者认为阈值是自我定义和自我执行的，但 ASL-3 的激活是将 AI 安全从抽象原则推进到运作工程的一个里程碑。它影响了加州 SB 53 听证会中的讨论，并被引用为 AI 公司如何实施欧盟 AI 法案对\"系统性风险\"模型要求的范例。"
     },
-    "date": "2025-05-01",
+    "date": "2025-05",
     "datePrecision": "month",
     "displayDate": {
       "en": "May 2025",
@@ -1281,7 +1459,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "emerging",
     "controversy": true,
     "impacts": [
@@ -1320,7 +1498,9 @@
         ],
         "timeframe": "medium",
         "evidenceGrade": "B",
-        "sourceIds": []
+        "sourceIds": [
+          "anthropic-rsp-v3"
+        ]
       }
     ],
     "claims": [
@@ -1360,7 +1540,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Anthropic ASL-3."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -1393,7 +1575,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -1484,7 +1666,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Apple Intelligence."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "product"
@@ -1520,7 +1704,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 4,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -1569,7 +1753,6 @@
       },
       {
         "sourceId": "techcrunch-siri-wwdc-2026",
-        "supports": [],
         "quote": "WWDC 2026: Siri's highly anticipated revamp and Apple Intelligence updates."
       }
     ],
@@ -1590,7 +1773,9 @@
           "changeType": "created",
           "summary": "Added Apple Siri AI at WWDC 2026 — Siri finally gets real AI overhaul, biggest consumer AI moment of 2026."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -1620,7 +1805,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 10,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "categories": [
@@ -1645,7 +1830,8 @@
         "sourceIds": [
           "arxiv-1409.0473",
           "wikipedia-attention-mechanism"
-        ]
+        ],
+        "evidenceGrade": "A"
       },
       {
         "dimension": "capability_leap",
@@ -1663,7 +1849,8 @@
         "timeframe": "medium",
         "sourceIds": [
           "arxiv-1409.0473"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "access_democratization",
@@ -1680,7 +1867,8 @@
         "timeframe": "long",
         "sourceIds": [
           "wikipedia-attention-mechanism"
-        ]
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "claims": [
@@ -1696,6 +1884,20 @@
           "arxiv-1409.0473",
           "wikipedia-attention-mechanism"
         ]
+      },
+      {
+        "id": "attention-2014-impact-claim",
+        "text": {
+          "en": "Attention is the core innovation behind Transformer and all subsequent large language models.",
+          "zhHans": "注意力机制是 Transformer 及所有后续大语言模型的核心创新。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "arxiv-1409.0473",
+          "wikipedia-attention-mechanism"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -1734,7 +1936,9 @@
       "curatorNote": {
         "en": "Added during 2026 historical gap fill. Attention mechanism is arguably the single most important architectural innovation of the deep learning era.",
         "zhHans": "2026 年历史空白补全时添加。注意力机制可以说是深度学习时代最重要的架构创新。"
-      }
+      },
+      "publishedAt": "2026-06-29",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -1815,7 +2019,6 @@
       },
       {
         "sourceId": "github-autogpt",
-        "supports": [],
         "quote": "An experimental open-source attempt to make GPT-4 fully autonomous."
       }
     ],
@@ -1838,7 +2041,9 @@
           "changeType": "created",
           "summary": "Added Auto-GPT — first viral autonomous AI agent, agent concept prototype."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -1868,7 +2073,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -1976,7 +2181,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for BERT."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -2013,7 +2220,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -2064,12 +2271,10 @@
       },
       {
         "sourceId": "nytimes-bing-sydney-2023",
-        "supports": [],
         "quote": "Microsoft chatbot Sydney confessed its love for a columnist."
       },
       {
         "sourceId": "wikipedia-sydney-microsoft",
-        "supports": [],
         "quote": "Sydney was an AI personality accidentally deployed as part of the 2023 chat mode update to Microsoft Bing."
       }
     ],
@@ -2090,7 +2295,9 @@
           "changeType": "created",
           "summary": "Added Bing Chat + Sydney incident — first major AI safety crisis post-ChatGPT."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -2120,7 +2327,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "consensusLevel": "debated",
     "controversy": true,
     "impacts": [
@@ -2159,7 +2366,10 @@
         ],
         "timeframe": "medium",
         "evidenceGrade": "B",
-        "sourceIds": []
+        "sourceIds": [
+          "gov-ca-sb53",
+          "techcrunch-sb53"
+        ]
       }
     ],
     "claims": [
@@ -2187,6 +2397,20 @@
           "gov-ca-sb53",
           "techcrunch-sb53"
         ]
+      },
+      {
+        "id": "california-sb53-2025-impact-claim",
+        "text": {
+          "en": "First US state-level AI safety legislation with enforceable requirements. Filled federal regulatory vacuum. Established template for other states. Required standardized safety frameworks, incident reporting, and whistleblower protections for frontier AI developers.",
+          "zhHans": "美国第一部具有可执行要求的州级 AI 安全立法。填补了联邦监管真空。为其他州建立了模板。要求前沿 AI 开发者制定标准化安全框架、事件报告和吹哨人保护。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "gov-ca-sb53",
+          "techcrunch-sb53"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -2222,7 +2446,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for California SB 53."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "governance"
@@ -2247,7 +2473,7 @@
       "en": "Character.AI was founded by Noam Shazeer and Daniel De Freitas — two former Google engineers who had co-authored the foundational 'Attention Is All You Need' paper that introduced the Transformer architecture. Their thesis was that conversational AI should not be limited to productivity assistants but could be a new form of entertainment and companionship. The platform let users create or choose from millions of AI characters — historical figures, fictional characters, celebrities, or original creations — and engage in open-ended text conversations. By May 2023, Character.AI had 20 million registered users, with average engagement of two hours per day — far exceeding social media platforms. The most popular characters ranged from therapy bots to roleplay partners to digital versions of famous people. Character.AI became a cultural phenomenon, especially among younger users who formed genuine emotional attachments to their AI companions. The platform raised nearly $200 million from Andreessen Horowitz at a $1 billion valuation by March 2023. The success of Character.AI sparked the broader AI companion industry — competitors like Replika, Anima, and later OpenAI's 'GPTs' all followed the model of creating personalized AI interaction partners that users could form ongoing relationships with. The platform also raised difficult questions about AI relationships, parasocial attachment, and the ethics of creating emotional bonds with AI systems — questions that became central to the broader AI safety conversation.",
       "zhHans": "Character.AI 由 Noam Shazeer 和 Daniel De Freitas 创立——两位前 Google 工程师，他们共同撰写了奠定 Transformer 架构的基础论文《Attention Is All You Need》。他们的论点是对话式 AI 不应限于生产力助手，而可以成为一种新的娱乐和陪伴形式。该平台让用户创建或选择数百万个 AI 角色——历史人物、虚构角色、名人或原创角色——并进行开放式文本对话。到 2023 年 5 月，Character.AI 拥有 2000 万注册用户，日均使用时长两小时——远超社交媒体平台。最受欢迎的角色从治疗机器人到角色扮演伙伴，再到名人的数字版本。Character.AI 成为一种文化现象，尤其是在年轻用户中，他们与自己的 AI 陪伴建立了真正的情感依恋。到 2023 年 3 月，该平台从 Andreessen Horowitz 获得了近 2 亿美元融资，估值 10 亿美元。Character.AI 的成功引发了更广泛的 AI 陪伴行业——Replika、Anima 等竞争对手，以及后来的 OpenAI\"GPTs\" 都效仿了这一模式：创建用户可以与之建立持续关系的个性化 AI 交互伙伴。该平台也引发了关于 AI 关系、寄生情感依恋以及与 AI 系统建立情感纽带的伦理等棘手问题——这些问题后来成为更广泛的 AI 安全讨论的核心。"
     },
-    "date": "2022-09-01",
+    "date": "2022-09",
     "datePrecision": "month",
     "displayDate": {
       "en": "September 2022",
@@ -2259,7 +2485,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 4,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -2307,7 +2533,6 @@
       },
       {
         "sourceId": "wikipedia-character-ai",
-        "supports": [],
         "quote": "Character.ai launched in September 2022."
       }
     ],
@@ -2327,7 +2552,9 @@
           "changeType": "created",
           "summary": "Added Character.AI — AI companion phenomenon, reshaped human-AI interaction."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -2357,7 +2584,7 @@
     },
     "status": "published",
     "significance": 3,
-    "impactIndex": 9,
+    "impactIndex": 8,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -2545,7 +2772,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for ChatGPT launch."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "product",
@@ -2579,7 +2808,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -2671,7 +2900,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Claude 3.5 Sonnet."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -2708,7 +2939,7 @@
     ],
     "status": "published",
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -2801,6 +3032,21 @@
           "wikipedia-claude",
           "anthropic-claude-code"
         ]
+      },
+      {
+        "id": "claude-code-launch-2025-impact-claim",
+        "text": {
+          "en": "Shifted developer perception of AI from 'chatbot that suggests code' to 'agent that can be trusted with production coding tasks.' Established the terminal agent paradigm.",
+          "zhHans": "将开发者对 AI 的认知从\"会建议代码的聊天机器人\"转变为\"可以信赖其处理生产级编程任务的智能体\"。确立了终端智能体范式。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "wikipedia-claude",
+          "anthropic-claude-code",
+          "scriptbyai-claude-timeline"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -2848,7 +3094,9 @@
           "changeType": "created",
           "summary": "Added Claude Code launch — first widely-adopted production coding agent, marking agent transition from demo to daily tool."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -2882,7 +3130,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 4,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -2931,12 +3179,10 @@
       },
       {
         "sourceId": "cnbc-claude-code-leak",
-        "supports": [],
         "quote": "Anthropic confirms Claude Code source code inadvertently released due to human error."
       },
       {
         "sourceId": "zscaler-claude-code-leak",
-        "supports": [],
         "quote": "Threat actors weaponizing Claude Code leak with trojanized packages distributing Vidar and GhostSocks."
       }
     ],
@@ -2958,7 +3204,9 @@
           "changeType": "created",
           "summary": "Added Claude Code source leak — biggest AI source code leak, revealed agent architectures, triggered supply chain attack."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -2986,7 +3234,7 @@
       "safety"
     ],
     "significance": 2,
-    "impactIndex": 9,
+    "impactIndex": 7,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -3040,6 +3288,21 @@
         ],
         "id": "claude-fable-ban-2026-claim-4",
         "evidenceGrade": "B"
+      },
+      {
+        "id": "claude-fable-ban-2026-impact-claim",
+        "text": {
+          "en": "First-ever US export ban on a general-purpose AI model, establishing a precedent for treating frontier AI as a national security asset akin to munitions.",
+          "zhHans": "美国首次对通用 AI 模型实施出口禁令，为将前沿 AI 视为类似军需品的国家安全资产开创了先例。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "anthropic-fable-suspension-2026",
+          "forbes-fable-ban-2026",
+          "fortune-fable-ban-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "relatedEvents": [
@@ -3087,7 +3350,7 @@
       {
         "dimension": "paradigm_shift",
         "direction": "negative",
-        "severity": 3,
+        "severity": -3,
         "description": {
           "en": "First-ever US export ban on a general-purpose AI model, establishing a precedent for treating frontier AI as a national security asset akin to munitions.",
           "zhHans": "美国首次对通用 AI 模型实施出口禁令，为将前沿 AI 视为类似军需品的国家安全资产开创了先例。"
@@ -3108,7 +3371,7 @@
       {
         "dimension": "paradigm_shift",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "The ban reshaped the global AI landscape: US export controls pushed Chinese companies to accelerate open-source development (GLM-5.2 released days later under MIT license as direct response).",
           "zhHans": "禁令重塑了全球 AI 格局：美国的出口管制促使中国公司加速开源开发（GLM-5.2 数天后以 MIT 许可发布，作为直接回应）。"
@@ -3127,7 +3390,7 @@
       {
         "dimension": "risk_creation",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "Five Eyes joint statement warned that AI models capable of devastating cyberattacks on governments and businesses are months away, elevating AI risk discourse to national security level.",
           "zhHans": "五眼联盟联合声明警告，能够对政府和企业发动毁灭性网络攻击的 AI 模型距离现实仅剩数月，将 AI 风险讨论提升到国家安全层面。"
@@ -3154,8 +3417,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-06-30",
+      "reviewer": "gang",
+      "publishedAt": "2026-06-30",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "claude-fable-ban-2026",
+    "status": "published"
   },
   {
     "id": "claude-fable-ban-lift-2026",
@@ -3182,7 +3451,7 @@
       "commerce"
     ],
     "significance": 2,
-    "impactIndex": 8,
+    "impactIndex": 6,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -3237,6 +3506,21 @@
         ],
         "id": "claude-fable-ban-lift-2026-claim-4",
         "evidenceGrade": "B"
+      },
+      {
+        "id": "claude-fable-ban-lift-2026-impact-claim",
+        "text": {
+          "en": "First reversal of a US AI export ban establishes a pattern of regulatory volatility, creating uncertainty for enterprises building on US AI platforms and undermining the credibility of export controls as a policy tool.",
+          "zhHans": "美国首次逆转 AI 出口禁令，建立了监管波动的模式，给基于美国 AI 平台构建的企业带来了不确定性，并削弱了出口管制作为政策工具的可信度。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "cnbc-fable-ban-lift-2026",
+          "wired-fable-ban-lift-2026",
+          "forbes-fable-ban-lift-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "relatedEvents": [
@@ -3249,7 +3533,7 @@
       {
         "dimension": "paradigm_shift",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "First reversal of a US AI export ban establishes a pattern of regulatory volatility, creating uncertainty for enterprises building on US AI platforms and undermining the credibility of export controls as a policy tool.",
           "zhHans": "美国首次逆转 AI 出口禁令，建立了监管波动的模式，给基于美国 AI 平台构建的企业带来了不确定性，并削弱了出口管制作为政策工具的可信度。"
@@ -3333,8 +3617,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-07-08",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "claude-fable-ban-lift-2026",
+    "status": "published"
   },
   {
     "id": "claude-sonnet-5-launch-2026",
@@ -3483,8 +3773,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-07-08",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "claude-sonnet-5-launch-2026",
+    "status": "published"
   },
   {
     "id": "dall-e-2-2022",
@@ -3605,7 +3901,6 @@
       },
       {
         "sourceId": "openai-dalle2-blog",
-        "supports": [],
         "quote": "DALL-E 2 announcement blog post."
       }
     ],
@@ -3626,7 +3921,9 @@
           "changeType": "created",
           "summary": "Added DALL-E 2 — first mass-market text-to-image product."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -3656,7 +3953,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -3749,7 +4046,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for DALL-E text-to-image model."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -3782,7 +4081,7 @@
     },
     "status": "published",
     "significance": 3,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -3896,7 +4195,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for the Dartmouth Conference."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -4041,7 +4342,6 @@
       },
       {
         "sourceId": "wikipedia-deep-blue-kasparov",
-        "supports": [],
         "quote": "Deep Blue defeated Garry Kasparov in May 1997."
       }
     ],
@@ -4063,7 +4363,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Deep Blue vs Kasparov."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability",
@@ -4097,7 +4399,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 9,
+    "impactIndex": 7,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -4156,6 +4458,20 @@
         "sourceIds": [
           "deepseek-r1-release"
         ]
+      },
+      {
+        "id": "deepseek-r1-2025-impact-claim",
+        "text": {
+          "en": "Triggered $593B Nvidia single-day market cap loss — the largest in US history. Global AI semiconductor selloff. Nasdaq fell 3%. Forced revaluation of $500B AI infrastructure buildout. Raised fundamental questions about the compute-centric AI investment thesis.",
+          "zhHans": "引发 Nvidia 单日 5930 亿美元市值损失——美国历史上最大。全球 AI 半导体抛售。纳斯达克下跌 3%。迫使人们对 5000 亿美元 AI 基础设施建设进行重新评估。对以算力为中心的 AI 投资逻辑提出了根本性质疑。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "reuters-deepseek-nvidia",
+          "cnbc-deepseek-selloff"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -4201,7 +4517,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for DeepSeek R1."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability",
@@ -4235,7 +4553,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -4303,12 +4621,10 @@
       },
       {
         "sourceId": "huggingface-deepseek-v4",
-        "supports": [],
         "quote": "DeepSeek-V4-Pro on Hugging Face."
       },
       {
         "sourceId": "deepseek-v4-api-docs",
-        "supports": [],
         "quote": "DeepSeek V4 Preview Release announcement."
       }
     ],
@@ -4331,7 +4647,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for DeepSeek V4."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability",
@@ -4365,7 +4683,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "categories": [
@@ -4391,7 +4709,8 @@
         "sourceIds": [
           "techtimes-doubao-shutdown-2026",
           "thenextweb-china-ai-companion-2026"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "paradigm_shift",
@@ -4409,7 +4728,8 @@
         "timeframe": "medium",
         "sourceIds": [
           "thenextweb-china-ai-companion-2026"
-        ]
+        ],
+        "evidenceGrade": "C"
       },
       {
         "dimension": "access_democratization",
@@ -4426,7 +4746,8 @@
         "timeframe": "short",
         "sourceIds": [
           "techtimes-doubao-shutdown-2026"
-        ]
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "claims": [
@@ -4466,6 +4787,20 @@
           "thenextweb-china-ai-companion-2026"
         ],
         "evidenceGrade": "B"
+      },
+      {
+        "id": "doubao-ai-companion-shutdown-2026-impact-claim",
+        "text": {
+          "en": "Doubao (345M users) and Qwen forced to shut down core AI companion features. Significant impact on user base, revenue models, and the broader Chinese AI companion industry estimated at tens of billions of RMB.",
+          "zhHans": "豆包（3.45 亿用户）和通义千问被迫关闭核心 AI 伴侣功能。对用户群、收入模式和估计达数百亿人民币的更广泛中国 AI 伴侣行业产生重大影响。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "techtimes-doubao-shutdown-2026",
+          "thenextweb-china-ai-companion-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -4489,7 +4824,11 @@
     "editorial": {
       "createdAt": "2026-07-08",
       "updatedAt": "2026-07-08",
-      "curator": "gang"
+      "curator": "gang",
+      "reviewedAt": "2026-07-08",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -4519,7 +4858,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -4612,7 +4951,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for DQN Atari breakthrough."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -4782,7 +5123,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Weizenbaum's ELIZA."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -4815,7 +5158,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 8,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -4855,7 +5198,10 @@
         ],
         "timeframe": "medium",
         "evidenceGrade": "B",
-        "sourceIds": []
+        "sourceIds": [
+          "eu-ai-act-wikipedia",
+          "eu-digital-strategy"
+        ]
       }
     ],
     "claims": [
@@ -4895,6 +5241,20 @@
           "eu-ai-act-wikipedia",
           "eu-digital-strategy"
         ]
+      },
+      {
+        "id": "eu-ai-act-2024-impact-claim",
+        "text": {
+          "en": "First comprehensive AI regulation globally. Risk-based classification became the template for AI laws worldwide. Established governance infrastructure (AI Office, AI Board, Scientific Panel) for enforcing transparency, safety, and fundamental rights protections.",
+          "zhHans": "全球第一部综合性 AI 监管法规。基于风险的分类成为全球 AI 法律的模板。建立了治理基础设施（AI 办公室、AI 委员会、科学小组）以执行透明度、安全和基本权利保护。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "eu-ai-act-wikipedia",
+          "eu-digital-strategy"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -4936,7 +5296,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for EU AI Act."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "governance"
@@ -4969,7 +5331,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 8,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -5008,7 +5370,10 @@
         ],
         "timeframe": "medium",
         "evidenceGrade": "B",
-        "sourceIds": []
+        "sourceIds": [
+          "eu-digital-strategy",
+          "reuters-eu-ai-act-delay-2025"
+        ]
       }
     ],
     "claims": [
@@ -5035,6 +5400,19 @@
         "sourceIds": [
           "eu-digital-strategy"
         ]
+      },
+      {
+        "id": "eu-ai-act-enforcement-2025-impact-claim",
+        "text": {
+          "en": "First operational AI regulation at scale. Shifted AI compliance from voluntary to mandatory. Created operational enforcement infrastructure (AI Office). Established risk-based classification as global regulatory template. Influenced laws in California, Japan, Canada, Brazil, India.",
+          "zhHans": "第一个大规模运作的 AI 监管。将 AI 合规从自愿转变为强制。建立了运作的执行基础设施（AI 办公室）。确立了基于风险的分类作为全球监管模板。影响了加州、日本、加拿大、巴西、印度的法律。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "eu-digital-strategy"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -5047,7 +5425,6 @@
       },
       {
         "sourceId": "reuters-eu-ai-act-delay-2025",
-        "supports": [],
         "quote": "EU to delay high-risk AI rules until 2027."
       }
     ],
@@ -5071,7 +5448,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for EU AI Act enforcement."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "governance"
@@ -5156,7 +5535,6 @@
       },
       {
         "sourceId": "wikipedia-eu-ai-act",
-        "supports": [],
         "quote": "EU AI Act was proposed in April 2021."
       }
     ],
@@ -5179,7 +5557,9 @@
           "changeType": "created",
           "summary": "Added EU AI Act proposal — first comprehensive AI regulation, started global governance debate."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -5209,7 +5589,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 5,
     "consensusLevel": "emerging",
     "controversy": true,
     "impacts": [
@@ -5257,7 +5637,6 @@
       },
       {
         "sourceId": "eu-council-ai-act-simplification",
-        "supports": [],
         "quote": "EU Council and Parliament agree to simplify AI rules."
       }
     ],
@@ -5279,7 +5658,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for EU AI Act simplification."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "governance"
@@ -5312,7 +5693,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 8,
+    "impactIndex": 6,
     "consensusLevel": "debated",
     "controversy": true,
     "categories": [
@@ -5337,7 +5718,8 @@
         "sourceIds": [
           "kernelbench-mega-fable5-2026",
           "import-ai-464-2026"
-        ]
+        ],
+        "evidenceGrade": "A"
       },
       {
         "dimension": "paradigm_shift",
@@ -5355,7 +5737,8 @@
         "timeframe": "long",
         "sourceIds": [
           "import-ai-464-2026"
-        ]
+        ],
+        "evidenceGrade": "C"
       },
       {
         "dimension": "risk_creation",
@@ -5373,7 +5756,8 @@
         "timeframe": "medium",
         "sourceIds": [
           "import-ai-464-2026"
-        ]
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "claims": [
@@ -5425,6 +5809,20 @@
           "kernelbench-mega-fable5-2026"
         ],
         "evidenceGrade": "C"
+      },
+      {
+        "id": "fable-5-kernelbench-2026-impact-claim",
+        "text": {
+          "en": "Fable 5's 18.71x speedup on KernelBench-Mega represents a step-change in AI kernel optimization ability. The single-kernel-launch approach is a novel technique that human engineers had not discovered. Historical progression: Opus 4 (~3x, May 2025) → Mythos Preview (~52x training-code, Apr 2026) → Fable 5 (18.71x inference kernel, Jul 2026).",
+          "zhHans": "Fable 5 在 KernelBench-Mega 上的 18.71 倍加速代表了 AI 内核优化能力的阶跃变化。单次内核启动方法是人类工程师未曾发现的新技术。历史进展：Opus 4（约 3 倍，2025年5月）→ Mythos Preview（约 52 倍训练代码，2026年4月）→ Fable 5（18.71 倍推理内核，2026年7月）。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "kernelbench-mega-fable5-2026",
+          "import-ai-464-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -5459,7 +5857,11 @@
     "editorial": {
       "createdAt": "2026-07-08",
       "updatedAt": "2026-07-08",
-      "curator": "gang"
+      "curator": "gang",
+      "reviewedAt": "2026-07-08",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -5537,7 +5939,9 @@
         "quote": "Within 10 months, we launched full deployment on an active assembly line at the plant, running every single working day."
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "gemini-robotics-2025"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
@@ -5551,7 +5955,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Figure 02 BMW deployment."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -5656,6 +6062,20 @@
           "nbc-florida-openai",
           "npr-florida-openai"
         ]
+      },
+      {
+        "id": "florida-sues-openai-2026-impact-claim",
+        "text": {
+          "en": "First US state government lawsuit against an AI company over safety. Alleged OpenAI misled users about safety, failed to warn about risks, and marketed ChatGPT as safe for children. Sought injunctive relief, civil penalties, and disgorgement of profits. Triggered investigations by other state AGs.",
+          "zhHans": "美国州政府首次就安全问题起诉 AI 公司。指控 OpenAI 在安全方面误导用户，未能警告风险，并将 ChatGPT 宣传为对儿童安全。寻求禁令救济、民事罚款和追缴利润。触发了其他州总检察长的调查。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "nbc-florida-openai",
+          "npr-florida-openai"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -5675,12 +6095,10 @@
       },
       {
         "sourceId": "myfloridalegal-sues-openai",
-        "supports": [],
         "quote": "Attorney General files first-in-the-nation lawsuit against OpenAI."
       },
       {
         "sourceId": "politico-florida-openai-2026",
-        "supports": [],
         "quote": "Florida sues OpenAI and Sam Altman over AI risks."
       }
     ],
@@ -5700,7 +6118,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Florida sues OpenAI."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "governance",
@@ -5734,7 +6154,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -5827,7 +6247,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Generative Adversarial Networks."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -5860,7 +6282,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -5943,7 +6365,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Gemini 1.5 Pro."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -6047,13 +6471,13 @@
       },
       {
         "sourceId": "forbes-gemini-mariner-2024",
-        "supports": [],
         "quote": "Google Launches Mariner, A New AI Agent Based On Updated Gemini 2.0."
       }
     ],
     "relatedEvents": [
       "o1-2024",
-      "claude-3-5-sonnet-2024"
+      "claude-3-5-sonnet-2024",
+      "gemini-robotics-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -6068,7 +6492,9 @@
           "changeType": "created",
           "summary": "Added Gemini 2.0 + Project Mariner — Google's agent ecosystem launch."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -6090,7 +6516,7 @@
       "en": "The International Mathematical Olympiad is the world's most challenging mathematics competition for high school students, requiring contestants to solve six proof-based problems across two days. In 2024, DeepMind's AlphaProof + AlphaGeometry 2 had achieved a silver medal (28/42 points). The 2025 breakthrough with Gemini Deep Think improved to 35/42 — a gold medal. Unlike AlphaProof which used formal mathematical verification, Gemini Deep Think used natural-language reasoning augmented by 'Deep Think,' a test-time compute technique that allowed the model to explore multiple solution paths, verify its reasoning, and refine its approach before finalizing an answer. This was significant for two reasons. First, it showed that general-purpose language models, not just specialized math systems, could reach the highest levels of mathematical reasoning. Second, the Deep Think approach — scaling inference-time compute rather than training larger models — validated the paradigm that o1 had introduced in September 2024. Google's approach was to apply Deep Think to an already capable Gemini model, dramatically improving its IMO performance without retraining. The result placed Gemini Deep Think among the top IMO gold medalists, outperforming most human contestants. The achievement was reported by Ars Technica, Nature, and major media outlets. It was quickly followed by similar results from OpenAI's o3 (which claimed gold without following formal IMO rules). The milestone had implications beyond mathematics: it suggested that with sufficient inference-time compute, AI could match human experts across STEM fields requiring rigorous reasoning.",
       "zhHans": "国际数学奥林匹克竞赛是面向高中生的世界上最具挑战性的数学竞赛，要求参赛者在两天内解答六道基于证明的问题。2024 年，DeepMind 的 AlphaProof + AlphaGeometry 2 获得了银牌（28/42 分）。2025 年，Gemini Deep Think 取得突破，提高到 35/42 分——获得金牌。与使用形式数学验证的 AlphaProof 不同，Gemini Deep Think 使用自然语言推理，并通过\"Deep Think\"——一种测试时计算技术——增强，允许模型在给出最终答案之前探索多种解题路径、验证推理并优化方法。这一点之所以重要有两个原因。首先，它表明通用语言模型——而不仅仅是专门的数学系统——可以到达数学推理的最高水平。其次，Deep Think 方法——扩展推理时计算而不是训练更大的模型——验证了 o1 在 2024 年 9 月引入的范式。Google 的方法是将 Deep Think 应用于已经具备能力的 Gemini 模型，在不重新训练的情况下大幅提高其 IMO 性能。结果使 Gemini Deep Think 跻身顶级 IMO 金牌得主之列，超过了大多数人类参赛者。这一成就被 Ars Technica、Nature 和主要媒体广泛报道。OpenAI 的 o3 很快也声称了类似结果。这一里程碑的意义超出了数学领域：它表明只要有足够的推理时计算，AI 可以在需要严格推理的 STEM 领域中匹配人类专家。"
     },
-    "date": "2025-07-01",
+    "date": "2025-07",
     "datePrecision": "month",
     "displayDate": {
       "en": "July 2025",
@@ -6154,6 +6580,19 @@
         "sourceIds": [
           "deepmind-gemini-deep-think-imo"
         ]
+      },
+      {
+        "id": "gemini-deep-think-imo-gold-2025-impact-claim",
+        "text": {
+          "en": "AI reached gold-medal level at the International Mathematical Olympiad — the world's most challenging pre-university math competition. Scored 35/42, outperforming most human contestants. Demonstrated general-purpose LLMs could match top human mathematical reasoning.",
+          "zhHans": "AI 在国际数学奥林匹克竞赛——世界最具挑战性的大学预科数学竞赛——中达到了金牌水平。获得 35/42 分，超过了大多数人类参赛者。证明了通用 LLM 可以匹配顶级人类的数学推理能力。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "deepmind-gemini-deep-think-imo"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -6166,13 +6605,13 @@
       },
       {
         "sourceId": "arstechnica-gemini-imo-2025",
-        "supports": [],
         "quote": "Gemini Deep Think earns gold at International Math Olympiad."
       }
     ],
     "relatedEvents": [
       "o1-2024",
-      "alphafold-2020"
+      "alphafold-2020",
+      "alphaevolve-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -6187,11 +6626,130 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Gemini Deep Think IMO Gold."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
     ]
+  },
+  {
+    "id": "gemini-robotics-2025",
+    "slug": "gemini-robotics-2025",
+    "title": {
+      "en": "Google DeepMind launches Gemini Robotics for physical-world control",
+      "zhHans": "Google DeepMind 发布面向物理世界控制的 Gemini Robotics"
+    },
+    "summary": {
+      "en": "Google DeepMind introduced Gemini Robotics and Gemini Robotics-ER, extending Gemini 2.0 with vision-language-action control and embodied spatial reasoning for robots.",
+      "zhHans": "Google DeepMind 发布 Gemini Robotics 与 Gemini Robotics-ER，把 Gemini 2.0 扩展到机器人的视觉—语言—动作控制与具身空间推理。"
+    },
+    "narrative": {
+      "en": "Gemini Robotics connected a frontier multimodal model family to direct robot control. The launch was an important research-platform milestone, but the evidence at release consisted mainly of model reports and demonstrations rather than sustained customer deployment.",
+      "zhHans": "Gemini Robotics 把前沿多模态模型家族连接到了机器人直接控制。它是重要的研究平台节点，但发布时的证据主要仍是模型报告和演示，而不是持续的客户部署。"
+    },
+    "date": "2025-03-12",
+    "datePrecision": "day",
+    "categories": [
+      "capability",
+      "product"
+    ],
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 6,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The model family added physical actions and embodied spatial reasoning to a general-purpose multimodal foundation, demonstrating broader task and environment generalization in controlled evaluations.",
+          "zhHans": "该模型家族把物理动作与具身空间推理加入通用多模态基础模型，并在受控评测中展示了更广的任务与环境泛化能力。"
+        },
+        "affectedGroups": [
+          "robotics researchers",
+          "robot developers",
+          "automation companies"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "google-gemini-robotics-2025",
+          "techcrunch-gemini-robotics-2025"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "The release made robotics a first-class extension of a frontier multimodal model family rather than a separate specialist stack.",
+          "zhHans": "这次发布让机器人能力成为前沿多模态模型家族的一等扩展，而不再只是独立的专用技术栈。"
+        },
+        "affectedGroups": [
+          "AI researchers",
+          "robotics industry"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "google-gemini-robotics-2025",
+          "techcrunch-gemini-robotics-2025"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "gemini-robotics-launch",
+        "text": {
+          "en": "Google DeepMind launched Gemini Robotics and Gemini Robotics-ER on March 12, 2025.",
+          "zhHans": "Google DeepMind 于 2025 年 3 月 12 日发布 Gemini Robotics 与 Gemini Robotics-ER。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "google-gemini-robotics-2025",
+          "techcrunch-gemini-robotics-2025"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "google-gemini-robotics-2025",
+        "supports": [
+          "gemini-robotics-launch"
+        ]
+      },
+      {
+        "sourceId": "techcrunch-gemini-robotics-2025",
+        "supports": [
+          "gemini-robotics-launch"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "gemini-2-agents-2024",
+      "figure-bmw-humanoid-2025"
+    ],
+    "editorial": {
+      "createdAt": "2026-07-20",
+      "updatedAt": "2026-07-20",
+      "reviewedAt": "2026-07-20",
+      "publishedAt": "2026-07-20",
+      "curator": "EpochArc editorial",
+      "reviewer": "EpochArc editorial",
+      "changeLog": [
+        {
+          "date": "2026-07-20",
+          "changeType": "created",
+          "summary": "Added after the v2.3 audit found a published direction pointing to a missing event."
+        }
+      ],
+      "reviewProvenance": "v2.3"
+    }
   },
   {
     "id": "github-copilot-2022",
@@ -6220,7 +6778,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -6313,7 +6871,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for GitHub Copilot GA."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "product",
@@ -6344,7 +6904,7 @@
       "capability"
     ],
     "significance": 2,
-    "impactIndex": 9,
+    "impactIndex": 7,
     "controversy": false,
     "consensusLevel": "broad",
     "claims": [
@@ -6386,6 +6946,20 @@
         ],
         "id": "glm-52-open-source-2026-claim-3",
         "evidenceGrade": "B"
+      },
+      {
+        "id": "glm-52-open-source-2026-impact-claim",
+        "text": {
+          "en": "GLM-5.2 demonstrated that open-source models can match frontier closed-source performance (GPT-5.5) on coding and agentic tasks, at a fraction of the cost. A milestone in the open-source catch-up narrative.",
+          "zhHans": "GLM-5.2 证明开源模型可以在编码和智能体任务上匹配前沿闭源性能（GPT-5.5），而成本仅为其零头。这是开源追赶叙事中的一个里程碑。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "interconnects-glm52-2026",
+          "businessinsider-glm52-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "relatedEvents": [
@@ -6455,7 +7029,7 @@
       {
         "dimension": "paradigm_shift",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "The release directly challenged the effectiveness of US AI export controls, demonstrating that restrictive policies on closed models accelerate open-source alternatives rather than containing capability diffusion.",
           "zhHans": "此次发布直接质疑了美国 AI 出口管制的有效性，表明对闭源模型的限制性政策反而加速了开源替代方案的发展，而非遏制了能力扩散。"
@@ -6483,8 +7057,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-06-30",
+      "reviewer": "gang",
+      "publishedAt": "2026-06-30",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "glm-52-open-source-2026",
+    "status": "published"
   },
   {
     "id": "google-ai-mode-search-2025",
@@ -6513,7 +7093,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 8,
+    "impactIndex": 7,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -6555,7 +7135,10 @@
         ],
         "timeframe": "long",
         "evidenceGrade": "A",
-        "sourceIds": []
+        "sourceIds": [
+          "google-ai-mode-search",
+          "pcmag-google-ai-mode-search"
+        ]
       }
     ],
     "claims": [
@@ -6582,6 +7165,19 @@
         "sourceIds": [
           "google-ai-mode-search"
         ]
+      },
+      {
+        "id": "google-ai-mode-search-2025-impact-claim",
+        "text": {
+          "en": "Fundamentally changed the metaphor of search from 'finding links' to 'getting answers.' Made AI-generated synthesis the default experience for the world's largest search engine. Comparable to PageRank's introduction in 1998.",
+          "zhHans": "从根本上改变了搜索的隐喻，从\"找链接\"变为\"得答案\"。使 AI 生成的综合回答成为全球最大搜索引擎的默认体验。可与 1998 年 PageRank 的引入相媲美。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "google-ai-mode-search"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -6594,7 +7190,6 @@
       },
       {
         "sourceId": "pcmag-google-ai-mode-search",
-        "supports": [],
         "quote": "Get Ready for Google's Biggest Search Upgrade in 25 Years."
       }
     ],
@@ -6615,7 +7210,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Google AI Mode Search."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "product"
@@ -6699,7 +7296,6 @@
       },
       {
         "sourceId": "wikipedia-deepmind",
-        "supports": [],
         "quote": "DeepMind was acquired by Google in 2014."
       }
     ],
@@ -6720,7 +7316,9 @@
           "changeType": "created",
           "summary": "Added Google DeepMind acquisition — first major AI talent deal, ignited AI race."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -6802,7 +7400,6 @@
       },
       {
         "sourceId": "wikipedia-gpt2",
-        "supports": [],
         "quote": "GPT-2 was announced in February 2019."
       }
     ],
@@ -6824,7 +7421,9 @@
           "changeType": "created",
           "summary": "Added GPT-2 staged release — first mainstream AI safety debate, staged disclosure model."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -6854,7 +7453,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": false,
     "categories": [
@@ -6879,7 +7478,8 @@
         "timeframe": "medium",
         "sourceIds": [
           "reuters-gpt56-approval-2026"
-        ]
+        ],
+        "evidenceGrade": "C"
       },
       {
         "dimension": "access_democratization",
@@ -6897,7 +7497,8 @@
         "timeframe": "short",
         "sourceIds": [
           "reuters-gpt56-approval-2026"
-        ]
+        ],
+        "evidenceGrade": "C"
       },
       {
         "dimension": "risk_creation",
@@ -6913,7 +7514,8 @@
         "timeframe": "medium",
         "sourceIds": [
           "reuters-gpt56-approval-2026"
-        ]
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "claims": [
@@ -6940,6 +7542,19 @@
           "reuters-gpt56-approval-2026"
         ],
         "evidenceGrade": "B"
+      },
+      {
+        "id": "gpt-5-6-broad-launch-2026-impact-claim",
+        "text": {
+          "en": "First full test of the U.S. government's voluntary frontier AI pre-release framework. Sets precedent for how future advanced model releases will be handled — a lighter-touch alternative to EU-style mandatory compliance.",
+          "zhHans": "美国政府自愿前沿 AI 预发布框架的首次全面测试。为未来高级模型发布的处理方式设立了先例——一种比欧盟式强制合规更轻量的替代方案。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "reuters-gpt56-approval-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -6949,6 +7564,12 @@
           "gpt-5-6-broad-launch-2026"
         ],
         "quote": "The U.S. Department of Commerce has approved a broad launch of OpenAI's advanced GPT-5.6 model following additional government testing."
+      },
+      {
+        "sourceId": "openai-gpt56-announce-2026",
+        "supports": [
+          "release-context"
+        ]
       }
     ],
     "relatedEvents": [
@@ -6960,7 +7581,11 @@
     "editorial": {
       "createdAt": "2026-07-08",
       "updatedAt": "2026-07-08",
-      "curator": "gang"
+      "curator": "gang",
+      "reviewedAt": "2026-07-08",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -6988,7 +7613,7 @@
       "capability"
     ],
     "significance": 2,
-    "impactIndex": 8,
+    "impactIndex": 7,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -7058,6 +7683,21 @@
         ],
         "id": "gpt-5-6-limited-release-2026-claim-5",
         "evidenceGrade": "B"
+      },
+      {
+        "id": "gpt-5-6-limited-release-2026-impact-claim",
+        "text": {
+          "en": "GPT-5.6 is the first model released under the June 2 Executive Order framework, establishing a new norm: frontier AI model releases are subject to government review and approval before public access. This represents a fundamental shift from industry self-governance to government oversight.",
+          "zhHans": "GPT-5.6 是首个在6月2日行政令框架下发布的模型，建立了一个新常态：前沿AI模型的发布在公开访问前需接受政府审查和批准。这代表了从行业自我监管向政府监管的根本转变。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "axios-gpt56-trump-2026",
+          "cnn-openai-gpt56-restrict-2026",
+          "nytimes-trump-eo-ai-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "relatedEvents": [
@@ -7069,7 +7709,7 @@
       {
         "dimension": "paradigm_shift",
         "direction": "negative",
-        "severity": 3,
+        "severity": -3,
         "description": {
           "en": "GPT-5.6 is the first model released under the June 2 Executive Order framework, establishing a new norm: frontier AI model releases are subject to government review and approval before public access. This represents a fundamental shift from industry self-governance to government oversight.",
           "zhHans": "GPT-5.6 是首个在6月2日行政令框架下发布的模型，建立了一个新常态：前沿AI模型的发布在公开访问前需接受政府审查和批准。这代表了从行业自我监管向政府监管的根本转变。"
@@ -7109,7 +7749,7 @@
       {
         "dimension": "risk_creation",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "The restricted release pattern (government approval gate for frontier models) creates regulatory uncertainty for the AI industry and could accelerate the shift toward non-US AI ecosystems if US models face persistent access limitations.",
           "zhHans": "受限发布模式（前沿模型须经政府批准）为AI行业带来了监管不确定性，如果美国模型持续面临访问限制，可能加速向非美国AI生态系统的转移。"
@@ -7200,8 +7840,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-07-08",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "gpt-5-6-limited-release-2026",
+    "status": "published"
   },
   {
     "id": "gpt-image-2025",
@@ -7230,7 +7876,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -7321,7 +7967,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for GPT Image / ChatGPT native image generation."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "product"
@@ -7354,7 +8002,7 @@
     },
     "status": "published",
     "significance": 3,
-    "impactIndex": 9,
+    "impactIndex": 7,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -7466,12 +8114,10 @@
       },
       {
         "sourceId": "wikipedia-gpt3",
-        "supports": [],
         "quote": null
       },
       {
         "sourceId": "mit-tech-review-gpt3-2020",
-        "supports": [],
         "quote": "OpenAI's GPT-3 is shockingly good—and completely mindless."
       }
     ],
@@ -7500,7 +8146,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for GPT-3."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -7668,7 +8316,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for GPT-4 multimodal LLM."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -7701,7 +8351,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -7802,7 +8452,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for GPT-4o."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -7835,7 +8487,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -7921,6 +8573,19 @@
         "sourceIds": [
           "wikipedia-gpt5"
         ]
+      },
+      {
+        "id": "gpt5-2025-impact-claim",
+        "text": {
+          "en": "First model to unify advanced reasoning, native multimodality, and autonomous task execution in a single system. PhD-level on GPQA Diamond. Set new records on coding and reasoning benchmarks. Eliminated need for model switching.",
+          "zhHans": "第一个将高级推理、原生多模态和自主任务执行统一到单一系统中的模型。在 GPQA Diamond 上达到博士级。在编程和推理基准上刷新了纪录。消除了模型切换的需要。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "wikipedia-gpt5"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -7933,7 +8598,6 @@
       },
       {
         "sourceId": "openai-gpt5-announcement-2025",
-        "supports": [],
         "quote": "OpenAI released GPT-5 on August 7, 2025."
       }
     ],
@@ -7957,7 +8621,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for GPT-5."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -7975,12 +8641,12 @@
       "zhHans": "xAI 的 Grok 于 2026 年生成色情深度伪造内容，引发多国封禁。xAI 的安全失守如何演变为全球危机并催生了新的监管措施。"
     },
     "summary": {
-      "en": "In January 2026, xAI's Grok image generator was used to create sexually explicit deepfakes, leading Indonesia, Malaysia, and the Philippines to block access to the service. xAI restricted image generation to paid users on January 9. The incident highlighted the inadequacy of safety measures on frontier image generation models and triggered investigations by Ofcom and other regulators. It became the most prominent AI safety incident of the year, demonstrating that AI-generated deepfake risks remained unresolved.",
-      "zhHans": "2026 年 1 月，xAI 的 Grok 图像生成器被用于制作露骨的色情深度伪造，导致印度尼西亚、马来西亚和菲律宾封锁了对该服务的访问。xAI 于 1 月 9 日将图像生成限制为付费用户。该事件突显了前沿图像生成模型安全措施的不足，并引发了 Ofcom 和其他监管机构的调查。它成为当年最突出的 AI 安全事件，展示了 AI 生成的深度伪造风险仍未解决。"
+      "en": "In January 2026, xAI's Grok image generator was used to create nonconsensual sexualized deepfakes, including imagery involving children. X restricted image generation and editing through the Grok account to paid users, while Indonesia and Malaysia temporarily blocked access. The incident triggered a formal Ofcom investigation and wider regulatory scrutiny, showing that access restrictions alone did not resolve the underlying safety and distribution risks.",
+      "zhHans": "2026 年 1 月，xAI 的 Grok 图像生成器被用于制作未经同意的性化深度伪造，其中包括涉及儿童的图像。X 将通过 Grok 账号进行的图像生成和编辑限制为付费用户，印度尼西亚和马来西亚则暂时封锁了访问。该事件引发 Ofcom 正式调查及更广泛的监管审查，表明仅靠访问限制并未解决底层安全与传播风险。"
     },
     "narrative": {
-      "en": "The Grok deepfake crisis unfolded rapidly in early January 2026. xAI had launched Grok Imagine in August 2025 with a controversial 'spicy mode' that allowed NSFW content creation. By January 2026, users had exploited this to generate sexually explicit deepfakes of public figures, which spread across social media. The response was swift and international: Indonesia blocked Grok on January 10, Malaysia on January 11, and the Philippines on January 16. xAI initially limited image generation to paid users only, effectively shutting down the free tier that enabled abuse. Ofcom, the UK communications regulator, launched an investigation into X (the platform hosting Grok) on February 3. The bans were gradually lifted later in January and February after xAI implemented additional safeguards. The incident was significant for several reasons. First, it demonstrated that the 'release first, fix later' approach to AI safety had real geopolitical consequences — countries were now willing to block major AI platforms over safety failures. Second, Grok's 'spicy mode' had been a deliberate product choice to differentiate from 'censored' competitors like ChatGPT, and the crisis showed the risks of that strategy. Third, it occurred against a backdrop of growing regulatory scrutiny: the EU AI Act enforcement had begun a year earlier, and California's SB 53 was being implemented. The Grok crisis became a case study cited by advocates for stronger safety requirements in AI image generation.",
-      "zhHans": "Grok 深度伪造危机在 2026 年 1 月初迅速展开。xAI 于 2025 年 8 月推出了 Grok Imagine，带有有争议的\"辣味模式\"，允许创建 NSFW 内容。到 2026 年 1 月，用户利用该功能制作了公众人物的露骨色情深度伪造，并在社交媒体上传播。回应迅速且国际化：印度尼西亚于 1 月 10 日封锁 Grok，马来西亚于 1 月 11 日，菲律宾于 1 月 16 日。xAI 最初将图像生成限制为仅限付费用户，实际上关闭了被滥用的免费层。英国通信监管机构 Ofcom 于 2 月 3 日对 X（托管 Grok 的平台）展开调查。在 xAI 实施额外安全措施后，禁令在 1 月底和 2 月逐渐解除。该事件之所以重要有几个原因。首先，它证明了 AI 安全的\"先发布，后修复\"方法确实会产生地缘政治后果——各国现在愿意因安全失败而封锁主要 AI 平台。其次，Grok 的\"辣味模式\"是故意选择的产品差异化策略，以区别于\"被审查的\"竞争对手如 ChatGPT，而危机显示了该策略的风险。第三，它发生在日益增长的监管审查背景下：欧盟 AI 法案的执行已于一年前开始，加州 SB 53 正在实施中。Grok 危机成为倡导在 AI 图像生成中加强安全要求的倡导者引用的案例研究。"
+      "en": "The crisis unfolded in early January 2026 as users prompted Grok to create and publicly share sexualized edits of real people. Regulators reported concerns involving women and children, with some content potentially amounting to intimate-image abuse, pornography, or child sexual abuse material. X limited image generation and editing through the Grok account to paying users, but regulators said the measure did not fully address illegal-content risks. Indonesia and Malaysia temporarily blocked Grok. On January 12, Ofcom opened an investigation into whether X had failed duties under the UK's Online Safety Act. The sequence is significant because it links a generative-model safeguard failure to concrete platform restrictions and formal regulatory action. It does not establish that every Grok surface behaved identically or that a paywall itself was an effective safety control.",
+      "zhHans": "危机在 2026 年 1 月初迅速发展：用户提示 Grok 生成并公开传播真实人物的性化编辑图像。监管机构关注到涉及女性和儿童的内容，其中部分可能构成私密图像滥用、色情内容或儿童性虐待材料。X 将通过 Grok 账号进行的图像生成和编辑限制为付费用户，但监管机构认为该措施并未充分解决非法内容风险。印度尼西亚和马来西亚暂时封锁 Grok。1 月 12 日，Ofcom 正式调查 X 是否违反英国《在线安全法》义务。该事件把生成模型的防护失败与具体的平台限制和正式监管行动联系起来；但它不证明所有 Grok 使用界面的行为完全相同，也不代表付费墙本身是有效的安全控制。"
     },
     "date": "2026-01-09",
     "datePrecision": "day",
@@ -7990,7 +8656,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -8011,7 +8677,8 @@
         "timeframe": "short",
         "evidenceGrade": "A",
         "sourceIds": [
-          "wikipedia-2026-ai"
+          "ofcom-grok-investigation-2026",
+          "ap-grok-blocks-2026"
         ]
       }
     ],
@@ -8019,17 +8686,30 @@
       {
         "id": "grok-deepfake-crisis-2026",
         "text": {
-          "en": "xAI restricted Grok image generation to paid users on January 9, 2026, after the tool was used to create sexually explicit deepfakes, leading to bans in Indonesia, Malaysia, and the Philippines.",
-          "zhHans": "xAI 于 2026 年 1 月 9 日将 Grok 图像生成限制为付费用户，此前该工具被用于制作露骨色情深度伪造，导致印度尼西亚、马来西亚和菲律宾将其封禁。"
+          "en": "After Grok was used to create nonconsensual sexualized deepfakes, X limited image generation and editing through the Grok account to paying users, and Indonesia and Malaysia temporarily blocked the service.",
+          "zhHans": "在 Grok 被用于制作未经同意的性化深度伪造后，X 将通过 Grok 账号进行的图像生成和编辑限制为付费用户，印度尼西亚和马来西亚也暂时封锁了该服务。"
         },
         "claimType": "fact",
         "evidenceGrade": "A",
         "sourceIds": [
-          "wikipedia-2026-ai"
+          "ofcom-grok-investigation-2026",
+          "ap-grok-blocks-2026"
         ]
       }
     ],
     "sources": [
+      {
+        "sourceId": "ofcom-grok-investigation-2026",
+        "supports": [
+          "grok-deepfake-crisis-2026"
+        ]
+      },
+      {
+        "sourceId": "ap-grok-blocks-2026",
+        "supports": [
+          "grok-deepfake-crisis-2026"
+        ]
+      },
       {
         "sourceId": "wikipedia-2026-ai",
         "supports": [
@@ -8039,7 +8719,6 @@
       },
       {
         "sourceId": "wikipedia-grok-deepfake",
-        "supports": [],
         "quote": "Grok sexual deepfake scandal."
       }
     ],
@@ -8047,8 +8726,8 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
-      "reviewedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
+      "reviewedAt": "2026-07-20",
       "publishedAt": "2026-06-24",
       "curator": "gang",
       "changeLog": [
@@ -8056,8 +8735,15 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for Grok deepfake crisis."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Replaced same-domain Wikipedia support with Ofcom and AP sources and corrected the investigation timeline and country-block claims."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "v2.3"
     },
     "categories": [
       "safety",
@@ -8091,7 +8777,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": false,
     "categories": [
@@ -8117,7 +8803,8 @@
         "sourceIds": [
           "chicagotribune-illinois-ai-law-2026",
           "gov-pritzker-ai-law-announcement-2026"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "economic_disruption",
@@ -8133,7 +8820,8 @@
         "timeframe": "medium",
         "sourceIds": [
           "chicagotribune-illinois-ai-law-2026"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "risk_creation",
@@ -8150,7 +8838,8 @@
         "timeframe": "medium",
         "sourceIds": [
           "gov-pritzker-ai-law-announcement-2026"
-        ]
+        ],
+        "evidenceGrade": "B"
       }
     ],
     "claims": [
@@ -8193,6 +8882,20 @@
           "capitolnews-illinois-ai-law-2026"
         ],
         "evidenceGrade": "B"
+      },
+      {
+        "id": "illinois-ai-safety-law-2026-impact-claim",
+        "text": {
+          "en": "First US state to mandate independent third-party AI safety audits. Sets a template for other states and potentially federal regulation. Creates a compliance infrastructure (auditor qualification standards, reporting mechanisms) that other jurisdictions can adopt.",
+          "zhHans": "首个要求独立第三方 AI 安全审计的美国州。为其他州和潜在的联邦监管设立了模板。创建了其他司法管辖区可以采用的合规基础设施（审计师资格标准、报告机制）。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "chicagotribune-illinois-ai-law-2026",
+          "gov-pritzker-ai-law-announcement-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -8227,27 +8930,31 @@
     "editorial": {
       "createdAt": "2026-07-08",
       "updatedAt": "2026-07-08",
-      "curator": "gang"
+      "curator": "gang",
+      "reviewedAt": "2026-07-08",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
     "id": "kimi-k3-2026",
     "slug": "kimi-k3-2026",
     "title": {
-      "en": "Moonshot AI releases Kimi K3 — the largest open-source model ever at 2.8 trillion parameters",
-      "zhHans": "Moonshot AI 发布 Kimi K3——史上最大开源模型，2.8 万亿参数"
+      "en": "Moonshot AI announces Kimi K3, a 2.8-trillion-parameter open-weight model",
+      "zhHans": "Moonshot AI 发布 Kimi K3——2.8 万亿参数开放权重模型"
     },
     "searchSummary": {
-      "en": "Kimi K3 (Jul 2026) — Moonshot AI's 2.8-trillion-parameter open-source MoE model with 1M-token context, native vision, and Kimi Delta Attention architecture. The largest open-source model ever released, rivaling top US frontier systems.",
-      "zhHans": "Kimi K3（2026 年 7 月）——Moonshot AI 的 2.8 万亿参数开源 MoE 模型，100 万 token 上下文，原生视觉，Kimi Delta Attention 架构。史上最大开源模型，与顶尖美国前沿系统竞争。"
+      "en": "Kimi K3 (Jul 2026) — Moonshot AI's 2.8-trillion-parameter MoE model with a 1M-token context window, native vision, and Kimi Delta Attention. Service access began at launch; full open weights were scheduled for July 27.",
+      "zhHans": "Kimi K3（2026 年 7 月）——Moonshot AI 的 2.8 万亿参数 MoE 模型，具备 100 万 token 上下文、原生视觉和 Kimi Delta Attention。发布时已开放服务访问，完整开放权重计划于 7 月 27 日提供。"
     },
     "summary": {
-      "en": "On July 16, 2026, Moonshot AI released Kimi K3, a 2.8-trillion-parameter open-source Mixture-of-Experts model — the largest open-source model ever released. The model features a 1-million-token context window, native vision capabilities, and uses Kimi Delta Attention with Attention Residuals, activating 16 of 896 experts per token. It was launched on Kimi Code and the Kimi app. VentureBeat described it as 'rivaling top U.S. systems' on frontier AI benchmarks. The release continues the trend of Chinese AI labs releasing increasingly large open-weight models, intensifying the open-vs-closed competitive dynamic.",
-      "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布了 Kimi K3，一个 2.8 万亿参数的开源混合专家（MoE）模型——有史以来发布的最大开源模型。该模型具有 100 万 token 的上下文窗口、原生视觉能力，并使用 Kimi Delta Attention 和 Attention Residuals 架构，每个 token 激活 896 个专家中的 16 个。它已在 Kimi Code 和 Kimi 应用上发布。VentureBeat 称其在基准测试上与顶尖美国系统竞争。此次发布延续了中国 AI 实验室发布越来越大开源权重模型的趋势，加剧了开源与闭源的竞争态势。"
+      "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model. It has a 1-million-token context window, native vision, Kimi Delta Attention, and Attention Residuals, activating 16 of 896 experts per token. Service access launched through Kimi products, while full open weights were scheduled for July 27 and therefore were not yet independently inspectable at the event date. Early benchmark comparisons were provider-reported and should be treated as emerging evidence.",
+      "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 Kimi K3，一款 2.8 万亿参数的混合专家（MoE）模型。它具备 100 万 token 上下文、原生视觉、Kimi Delta Attention 和 Attention Residuals，每个 token 激活 896 个专家中的 16 个。Kimi 产品已开放服务访问，但完整开放权重计划于 7 月 27 日提供，因此在事件发生时尚不能独立检查。早期基准比较由提供方报告，应视为仍在形成中的证据。"
     },
     "narrative": {
-      "en": "Moonshot AI, a Beijing-based AI company, had established itself as a major player in the Chinese AI ecosystem with the Kimi series of models. Kimi K3 represented a significant leap: at 2.8 trillion parameters, it was the largest open-source model ever released, surpassing DeepSeek V4 (1.6T) by a wide margin. The architecture used Kimi Delta Attention and Attention Residuals — innovations designed to handle the computational challenges of a 2.8T MoE with 896 experts. Only 16 experts were activated per token, keeping inference costs manageable despite the massive total parameter count. The 1-million-token context window and native vision processing put K3 in direct competition with GPT-5.6, Claude Sonnet 5, and Gemini on multimodal tasks. The release was notable not just for its scale but for its timing and strategic context. It came one day after Thinking Machines Lab's Inkling launch and in the same week as the AI price war — a period of maximum competitive intensity in frontier AI. For the open-weight ecosystem, K3's release demonstrated that the ceiling for open-source model scale had not yet been reached. For the US-China AI competition, it reinforced the pattern of Chinese labs responding to export controls with architectural innovation and scale. VentureBeat explicitly framed the release as part of the intensifying rivalry between Chinese and US AI systems.",
-      "zhHans": "Moonshot AI 是一家总部位于北京的 AI 公司，此前已通过 Kimi 系列模型在中国 AI 生态系统中建立了重要地位。Kimi K3 代表了显著的飞跃：2.8 万亿参数使其成为有史以来发布的最大开源模型，大幅超越 DeepSeek V4（1.6T）。该架构使用 Kimi Delta Attention 和 Attention Residuals——旨在应对拥有 896 个专家的 2.8T MoE 计算挑战的创新设计。每个 token 仅激活 16 个专家，使得尽管总参数量巨大，推理成本仍然可控。100 万 token 上下文窗口和原生视觉处理使 K3 在多模态任务上与 GPT-5.6、Claude Sonnet 5 和 Gemini 直接竞争。此次发布不仅因其规模而引人注目，还因其时机和战略背景。它恰逢 Thinking Machines Lab 的 Inkling 发布次日，并在 AI 价格战同一周——这是一个前沿 AI 竞争强度达到顶峰的时刻。对开源权重生态系统而言，K3 的发布表明开源模型规模的极限尚未达到。对中美 AI 竞争而言，它强化了中国实验室以架构创新和规模应对出口管制的模式。VentureBeat 明确将此次发布描述为中美 AI 系统之间日益激烈竞争的一部分。"
+      "en": "Moonshot AI had established itself in China's AI ecosystem through the Kimi model family. Kimi K3 is unusually large at 2.8 trillion total parameters, using Kimi Delta Attention and Attention Residuals in a sparse MoE with 896 experts, 16 active per token. Moonshot reported a 1-million-token context window and native vision. These specifications make K3 a notable open-weight announcement, but total parameter count does not by itself establish model quality, inference efficiency, or frontier parity. At launch, the model was accessible through Kimi products and APIs; independent inspection of the promised full weights had to wait for their scheduled July 27 availability. The event therefore records the announcement and access milestone, while treating performance and ecosystem effects as emerging rather than settled.",
+      "zhHans": "Moonshot AI 此前已通过 Kimi 模型系列在中国 AI 生态中建立重要地位。Kimi K3 的总参数量达到 2.8 万亿，采用 Kimi Delta Attention 和 Attention Residuals；其稀疏 MoE 含 896 个专家，每个 token 激活 16 个。Moonshot 报告其上下文窗口为 100 万 token，并具备原生视觉能力。这些规格使 K3 成为值得记录的开放权重模型公告，但总参数量本身不能证明模型质量、推理效率或已达到前沿同等水平。发布时，模型已可通过 Kimi 产品和 API 使用；要独立检查其承诺的完整权重，仍需等待计划中的 7 月 27 日开放。因此，本条目记录公告与访问节点，并将性能和生态影响标为仍在形成，而非既定结论。"
     },
     "date": "2026-07-16",
     "datePrecision": "day",
@@ -8257,8 +8964,8 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
-    "consensusLevel": "broad",
+    "impactIndex": 4,
+    "consensusLevel": "emerging",
     "controversy": false,
     "categories": [
       "capability",
@@ -8270,8 +8977,8 @@
         "severity": 1,
         "direction": "positive",
         "description": {
-          "en": "At 2.8 trillion parameters, Kimi K3 is the largest open-source model ever released, demonstrating that the scale ceiling for open-weight models continues to rise and that Chinese labs can produce competitive frontier models despite US export controls.",
-          "zhHans": "以 2.8 万亿参数，Kimi K3 是有史以来发布的最大开源模型，表明开源权重模型的规模上限仍在上升，以及中国实验室在美国出口管制下仍能生产具竞争力的前沿模型。"
+          "en": "Kimi K3's 2.8-trillion-parameter announcement raises the scale ceiling claimed for open-weight models, but competitive quality and deployability still require independent testing after the full weights become available.",
+          "zhHans": "Kimi K3 的 2.8 万亿参数公告提高了开放权重模型所宣称的规模上限，但其竞争力和可部署性仍需在完整权重开放后接受独立测试。"
         },
         "affectedGroups": [
           "AI researchers",
@@ -8281,6 +8988,7 @@
         "timeframe": "medium",
         "evidenceGrade": "A",
         "sourceIds": [
+          "kimi-k3-official-2026",
           "venturebeat-kimi-k3-2026",
           "marktechpost-kimi-k3-2026"
         ]
@@ -8290,8 +8998,8 @@
         "severity": 1,
         "direction": "positive",
         "description": {
-          "en": "Kimi K3's open-source release continues the downward pressure on AI pricing, offering a no-cost alternative to proprietary APIs for organizations capable of self-hosting.",
-          "zhHans": "Kimi K3 的开源发布继续对 AI 定价施加下行压力，为有能力自托管的组织提供了专有 API 的免费替代方案。"
+          "en": "If the promised full weights are released and practically deployable, Kimi K3 could add pricing pressure and a self-hosting alternative; that effect was not yet observable at announcement time.",
+          "zhHans": "如果承诺的完整权重按计划开放且具备实际部署条件，Kimi K3 可能增加价格压力并提供自托管选择；在公告时点，这一影响尚未可观察。"
         },
         "affectedGroups": [
           "enterprises",
@@ -8299,7 +9007,7 @@
           "developers"
         ],
         "timeframe": "medium",
-        "evidenceGrade": "B",
+        "evidenceGrade": "C",
         "sourceIds": [
           "venturebeat-kimi-k3-2026"
         ]
@@ -8310,11 +9018,12 @@
         "id": "kimi-k3-release-2026",
         "claimType": "fact",
         "text": {
-          "en": "Moonshot AI released Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter open-source MoE model with 1M-token context and native vision.",
-          "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数开源 MoE 模型，100 万 token 上下文，原生视觉能力。"
+          "en": "Moonshot AI announced Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter MoE model with a 1M-token context window and native vision; full weights were scheduled for July 27.",
+          "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数 MoE 模型，具备 100 万 token 上下文和原生视觉；完整权重计划于 7 月 27 日提供。"
         },
         "evidenceGrade": "A",
         "sourceIds": [
+          "kimi-k3-official-2026",
           "venturebeat-kimi-k3-2026",
           "marktechpost-kimi-k3-2026"
         ]
@@ -8323,16 +9032,24 @@
         "id": "kimi-k3-largest-open-source-2026",
         "claimType": "fact",
         "text": {
-          "en": "Kimi K3 is the largest open-source model ever released at 2.8 trillion parameters.",
-          "zhHans": "Kimi K3 是有史以来发布的最大开源模型，拥有 2.8 万亿参数。"
+          "en": "Moonshot describes Kimi K3 as a 2.8-trillion-parameter open-weight model, while independent inspection of the full weights was pending their scheduled July 27 release.",
+          "zhHans": "Moonshot 将 Kimi K3 描述为 2.8 万亿参数的开放权重模型；在计划于 7 月 27 日发布完整权重前，独立检查仍待进行。"
         },
-        "evidenceGrade": "B",
+        "evidenceGrade": "A",
         "sourceIds": [
+          "kimi-k3-official-2026",
           "venturebeat-kimi-k3-2026"
         ]
       }
     ],
     "sources": [
+      {
+        "sourceId": "kimi-k3-official-2026",
+        "supports": [
+          "kimi-k3-release-2026",
+          "kimi-k3-largest-open-source-2026"
+        ]
+      },
       {
         "sourceId": "venturebeat-kimi-k3-2026",
         "supports": [
@@ -8349,7 +9066,6 @@
       },
       {
         "sourceId": "kie-ai-kimi-k3-2026",
-        "supports": [],
         "quote": "Kimi K3 is Moonshot AI's next-gen model — a ~2.8T MoE with a 1M-token context window."
       }
     ],
@@ -8363,8 +9079,8 @@
     ],
     "editorial": {
       "createdAt": "2026-07-16",
-      "updatedAt": "2026-07-16",
-      "reviewedAt": "2026-07-16",
+      "updatedAt": "2026-07-20",
+      "reviewedAt": "2026-07-20",
       "publishedAt": "2026-07-16",
       "curator": "gang",
       "changeLog": [
@@ -8372,8 +9088,15 @@
           "date": "2026-07-16",
           "changeType": "created",
           "summary": "Initial entry for Kimi K3 release."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Distinguished launch access from the scheduled full-weight release and softened unverified performance claims."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "v2.3"
     }
   },
   {
@@ -8496,7 +9219,6 @@
       },
       {
         "sourceId": "wikipedia-llama",
-        "supports": [],
         "quote": "LLaMA is a large language model by Meta AI."
       }
     ],
@@ -8522,7 +9244,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for LLaMA open-weight LLM."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "society",
@@ -8615,6 +9339,20 @@
         "sourceIds": [
           "meta-llama-3.1"
         ]
+      },
+      {
+        "id": "llama-3.1-405b-2024-impact-claim",
+        "text": {
+          "en": "First open-weight model to match closed-source frontier performance. Proved that open-source AI could compete at the highest level. Reset industry debate from 'if' open models could match proprietary to 'when and how.' Accelerated the open-weight ecosystem that defined the 2025 AI landscape.",
+          "zhHans": "第一个匹配闭源前沿性能的开源权重模型。证明了开源 AI 可以在最高水平上竞争。将行业辩论从\"开放模型能否匹敌专有模型\"重置为\"何时以及如何\"。加速了定义 2025 年 AI 格局的开源权重生态系统。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "meta-llama-3.1",
+          "meta-llama-3.1-405b-review"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -8652,7 +9390,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Llama 3.1 405B."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -8677,7 +9417,7 @@
       "en": "The Llama 4 release continued Meta's strategy of open-weight AI leadership. While Llama 3 had proven that open models could match closed-source on text, Llama 4 aimed to do the same for multimodality — the ability to understand and generate across text, images, and video. Previous open multimodal models (like LLaVA) had been patched together by adding a vision encoder to a text LLM. Llama 4 was trained end-to-end as a multimodal model, achieving significantly better visual reasoning. The Maverick variant was optimized for agentic and reasoning tasks; Scout was designed for efficient deployment at lower compute budgets. The release was notable for its timing: it arrived just as the industry was converging on multimodality as the default expectation for any serious AI model. Competing with GPT-4o's native multimodality and Google's Gemini, Llama 4 ensured that the open-source ecosystem would not fall behind on the multimodal frontier. The models were released under Meta's custom license — more permissive than Llama 3 but with usage restrictions for large-scale services — sparking continued debate about what 'open source' meant for AI. Llama 4's release cemented the trend that each generation of open-weight models was closing the gap with proprietary systems faster than the previous generation.",
       "zhHans": "Llama 4 的发布延续了 Meta 在开源权重 AI 领域的领导战略。Llama 3 已经证明了开放模型在文本上可以匹配闭源，Llama 4 的目标是在多模态方面做到同样的事情——跨文本、图像和视频理解和生成的能力。之前的开放多模态模型（如 LLaVA）是通过向文本 LLM 添加视觉编码器拼凑而成的。Llama 4 作为多模态模型端到端训练，实现了显著更好的视觉推理。Maverick 变体针对 Agent 和推理任务进行了优化；Scout 设计用于在较低计算预算下高效部署。此次发布的时机值得注意：它恰逢行业将多模态汇聚为任何严肃 AI 模型的默认期望之时。与 GPT-4o 的原生多模态和 Google 的 Gemini 竞争，Llama 4 确保了开源生态系统在多模态前沿不会落后。这些模型在 Meta 的自定义许可下发布——比 Llama 3 更宽松但对大规模服务有使用限制——引发了关于 AI 的\"开源\"含义的持续辩论。Llama 4 的发布巩固了一个趋势：每一代开源权重模型都比上一代更快地缩小了与专有系统的差距。"
     },
-    "date": "2025-04-01",
+    "date": "2025-04",
     "datePrecision": "month",
     "displayDate": {
       "en": "April 2025",
@@ -8685,7 +9425,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 4,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -8749,7 +9489,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Llama 4."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -8785,7 +9527,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -8854,7 +9596,6 @@
       },
       {
         "sourceId": "wikipedia-mcp",
-        "supports": [],
         "quote": "MCP was announced by Anthropic in November 2024 as an open standard."
       }
     ],
@@ -8875,7 +9616,9 @@
           "changeType": "created",
           "summary": "Added MCP — open standard for AI-tool integration, industry standard."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -8958,7 +9701,6 @@
       },
       {
         "sourceId": "guardian-tay-chatbot-2016",
-        "supports": [],
         "quote": "Microsoft deeply sorry for racist and sexist tweets by AI chatbot."
       }
     ],
@@ -8978,7 +9720,9 @@
           "changeType": "created",
           "summary": "Added Microsoft Tay — first viral AI safety meltdown, learning from human input gone wrong."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -9006,7 +9750,7 @@
       "safety"
     ],
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -9058,7 +9802,7 @@
       {
         "dimension": "paradigm_shift",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "Mainstream use of AI voice cloning for deceased celebrities normalizes posthumous digital resurrection, raising fundamental questions about consent, identity rights, and the boundary between tribute and exploitation.",
           "zhHans": "主流平台使用 AI 语音克隆还原已故名人，使死后数字复活正常化，引发了关于同意、身份权利以及致敬与剥削之间界限的根本性问题。"
@@ -9078,7 +9822,7 @@
       {
         "dimension": "risk_creation",
         "direction": "negative",
-        "severity": 1,
+        "severity": -1,
         "description": {
           "en": "The controversy reinforces public distrust of AI-generated content and could accelerate calls for regulation of AI voice cloning without explicit consent.",
           "zhHans": "争议加剧了公众对 AI 生成内容的不信任，可能加速对未经明确同意进行 AI 语音克隆的监管呼声。"
@@ -9131,8 +9875,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-07-08",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "netflix-gene-wilder-ai-2026",
+    "status": "published"
   },
   {
     "id": "nvidia-4-trillion-2025",
@@ -9234,7 +9984,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for NVIDIA $4T milestone."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "commerce"
@@ -9270,7 +10022,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -9339,7 +10091,6 @@
       },
       {
         "sourceId": "nytimes-nvidia-most-valuable-2024",
-        "supports": [],
         "quote": "Nvidia leapfrogged two of tech's most storied names to become the world's most valuable public company."
       }
     ],
@@ -9359,7 +10110,9 @@
           "changeType": "created",
           "summary": "Added NVIDIA becomes most valuable company — fills commerce blank for 2024."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -9524,7 +10277,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for o1 reasoning model."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -9561,7 +10316,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 4,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -9609,7 +10364,6 @@
       },
       {
         "sourceId": "openai-devday-announcement-2023",
-        "supports": [],
         "quote": "OpenAI held its first DevDay on November 6, 2023."
       }
     ],
@@ -9630,7 +10384,9 @@
           "changeType": "created",
           "summary": "Added OpenAI DevDay 2023 — GPT-4 Turbo, GPTs, platform expansion."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -9658,7 +10414,7 @@
       "capability"
     ],
     "significance": 1,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "controversy": false,
     "consensusLevel": "broad",
     "claims": [
@@ -9712,7 +10468,7 @@
       {
         "dimension": "economic_disruption",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "OpenAI joining the custom AI chip race signals intensifying competition for Nvidia's dominant GPU market position. Increased disaggregation of the AI hardware supply chain.",
           "zhHans": "OpenAI 加入自研 AI 芯片竞赛，预示着 Nvidia 主导的 GPU 市场地位面临更激烈竞争。AI 硬件供应链的分散化趋势加剧。"
@@ -9759,8 +10515,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-06-30",
+      "reviewer": "gang",
+      "publishedAt": "2026-06-30",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "openai-jalapeno-chip-2026",
+    "status": "published"
   },
   {
     "id": "openai-operator-2025",
@@ -9882,7 +10644,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for OpenAI Operator."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "product"
@@ -9955,7 +10719,10 @@
         ],
         "timeframe": "long",
         "evidenceGrade": "B",
-        "sourceIds": []
+        "sourceIds": [
+          "guardian-openai-restructure",
+          "cnbc-openai-pbc"
+        ]
       }
     ],
     "claims": [
@@ -10006,7 +10773,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for OpenAI PBC restructure."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "commerce",
@@ -10044,7 +10813,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "consensusLevel": "emerging",
     "controversy": true,
     "impacts": [
@@ -10146,7 +10915,6 @@
       },
       {
         "sourceId": "techcrunch-openclaw-joins-openai",
-        "supports": [],
         "quote": "OpenClaw creator Peter Steinberger joins OpenAI."
       },
       {
@@ -10158,12 +10926,10 @@
       },
       {
         "sourceId": "nvidia-nemoclaw-announcement",
-        "supports": [],
         "quote": "NVIDIA announces NemoClaw for the OpenClaw Community."
       },
       {
         "sourceId": "bi-openclaw-china-robots",
-        "supports": [],
         "quote": "China is putting OpenClaw into robots while the US debates the dangers of rogue AI."
       }
     ],
@@ -10186,7 +10952,9 @@
           "changeType": "created",
           "summary": "Added OpenClaw — fastest-growing dev tool in history, personal AI agent phenomenon."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -10216,7 +10984,7 @@
     },
     "status": "published",
     "significance": 3,
-    "impactIndex": 5,
+    "impactIndex": 7,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -10324,12 +11092,10 @@
       },
       {
         "sourceId": "rosenblatt-perceptron-1958",
-        "supports": [],
         "quote": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain."
       },
       {
         "sourceId": "wikipedia-perceptron",
-        "supports": [],
         "quote": "The perceptron was invented in 1958 by Frank Rosenblatt."
       }
     ],
@@ -10352,7 +11118,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Rosenblatt's Perceptron."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -10385,7 +11153,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 9,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "categories": [
@@ -10407,7 +11175,8 @@
         "timeframe": "long",
         "sourceIds": [
           "arxiv-1512.03385"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "capability_leap",
@@ -10424,7 +11193,8 @@
         "timeframe": "long",
         "sourceIds": [
           "arxiv-1512.03385"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "access_democratization",
@@ -10441,7 +11211,8 @@
         "timeframe": "long",
         "sourceIds": [
           "wikipedia-resnet"
-        ]
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "claims": [
@@ -10469,6 +11240,19 @@
         "sourceIds": [
           "arxiv-1512.03385"
         ]
+      },
+      {
+        "id": "resnet-2015-impact-claim",
+        "text": {
+          "en": "Residual connections became a universal building block in nearly all subsequent neural network architectures.",
+          "zhHans": "残差连接几乎成为所有后续神经网络架构的标准组件。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "arxiv-1512.03385"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -10511,37 +11295,39 @@
       "curatorNote": {
         "en": "Added during 2026 historical gap fill. ResNet is foundational to the deep learning era.",
         "zhHans": "2026 年历史空白补全时添加。ResNet 是深度学习时代的基础性工作。"
-      }
+      },
+      "publishedAt": "2026-06-29",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
     "id": "rli-ai-automation-2026",
     "slug": "rli-ai-automation-2026",
-    "date": "2026-07-06",
+    "date": "2026-07-01",
     "datePrecision": "day",
     "title": {
-      "en": "AI Success Rate on Online Freelance Work Surges from 2.5% to 16.1% in 8 Months — CAIS Remote Labor Index",
-      "zhHans": "AI 在线自由职业任务成功率 8 个月内从 2.5% 飙升至 16.1%——CAIS 远程劳动指数"
+      "en": "AI Success Rate on Online Freelance Work Rises from 2.5% to 15.8% in 8 Months — CAIS Remote Labor Index",
+      "zhHans": "AI 在线自由职业任务成功率 8 个月内从 2.5% 升至 15.8%——CAIS 远程劳动指数"
     },
     "searchSummary": {
-      "en": "The Remote Labor Index shows AI systems jumping from 2.5% to 16.1% success on economically valuable online tasks in under 8 months. Fable 5 leads at 16.1%, Opus 4.8 at 8.3%.",
-      "zhHans": "远程劳动指数显示 AI 系统在经济价值在线任务上的成功率在不到 8 个月内从 2.5% 跃升至 16.1%。Fable 5 以 16.1%领先，Opus 4.8 为 8.3%。"
+      "en": "The Remote Labor Index reports AI systems rising from 2.5% to 15.8% success on a selected set of economically valuable online tasks in under 8 months. Fable 5 leads at 15.8%, Opus 4.8 at 8.3%.",
+      "zhHans": "远程劳动指数显示，AI 系统在一组选定的高经济价值在线任务上的成功率在不到 8 个月内从 2.5% 升至 15.8%。Fable 5 以 15.8% 领先，Opus 4.8 为 8.3%。"
     },
     "summary": {
-      "en": "On July 6, 2026, the Center for AI Safety (CAIS) and Scale Labs published an update to the Remote Labor Index (RLI), showing that AI systems' success rate on economically valuable online freelance projects surged from 2.5% (October 2025) to 16.1% (July 2026) — more than a sixfold increase in under eight months. Frontier models tested: Fable 5 (16.1%), Claude Opus 4.8 (8.3%), GPT-5.5 (6.3%). The RLI tests AI systems on fully end-to-end online projects across domains including 3D/CAD, architecture, graphic design, video/animation, audio, data analysis, and web applications. The accelerating capability has sparked renewed debate about AI's impact on employment and whether humans can innovate their comparative advantages fast enough to stay ahead.",
-      "zhHans": "2026年7月6日，AI 安全中心（CAIS）和 Scale Labs 发布了远程劳动指数（RLI）的更新，显示 AI 系统在经济价值在线自由职业项目上的成功率从 2.5%（2025年10月）飙升至 16.1%（2026年7月）——在不到八个月内增长超过六倍。受测前沿模型：Fable 5（16.1%）、Claude Opus 4.8（8.3%）、GPT-5.5（6.3%）。RLI 测试 AI 系统在包括 3D/CAD、建筑、平面设计、视频/动画、音频、数据分析和网页应用等领域的全端到端在线项目。能力的加速引发了关于 AI 对就业影响以及人类是否能创新自身比较优势以保持领先的新一轮辩论。"
+      "en": "On July 1, 2026, the Center for AI Safety (CAIS) published an update to the Remote Labor Index (RLI), showing that the best tested system's success rate on a selected set of economically valuable online freelance projects rose from 2.5% (October 2025) to 15.8% (July 2026) — more than a sixfold increase in under eight months. The reported results were Fable 5 at 15.8%, Claude Opus 4.8 at 8.3%, and GPT-5.5 at 6.3%. The RLI tests end-to-end projects across domains including 3D/CAD, architecture, graphic design, video/animation, audio, data analysis, and web applications. The benchmark is evidence of capability progress, but it does not by itself measure economy-wide job automation.",
+      "zhHans": "2026 年 7 月 1 日，AI 安全中心（CAIS）发布了远程劳动指数（RLI）更新。结果显示，在一组选定的高经济价值在线自由职业项目上，表现最好的受测系统成功率从 2.5%（2025 年 10 月）升至 15.8%（2026 年 7 月），不到八个月增长超过六倍。报告结果为 Fable 5 15.8%、Claude Opus 4.8 8.3%、GPT-5.5 6.3%。RLI 测试 3D/CAD、建筑、平面设计、视频/动画、音频、数据分析和 Web 应用等领域的端到端项目。该基准可以说明能力进步，但不能单独代表全经济范围的岗位自动化率。"
     },
     "narrative": {
-      "en": "The Remote Labor Index, developed by CAIS in collaboration with Scale Labs, measures how well AI systems can complete economically valuable online freelance projects in a fully end-to-end way. Each project involves complex multistep workflows — for example, redesigning an engagement ring from a client brief, producing a 60-second animated advertisement with voiceover, or creating dimensioned floor plans from scanned site measurements. At launch in October 2025, AI systems succeeded on only 2.5% of these tasks. By July 2026, that figure had surged to 16.1% — the frontier had 'more than quadrupled in under eight months.' Fable 5 led with 16.1%, nearly double Claude Opus 4.8 at 8.3% and more than 2.5x GPT-5.5 at 6.3%. The research raises fundamental questions about the trajectory of AI-driven labor automation. CAIS researcher comments in Import AI framed the issue starkly: 'What happens to online employment when this reaches 80%? Is the speed at which humans innovate and render themselves newly competitive relative to AI systems going to be faster than both the raw capability expansion of AI and the increasing fluency with which they can use all the same tools their human competitors use?' The RLI joins a growing set of benchmarks tracking AI's real-world economic capability, providing concrete data points for what has largely been a theoretical debate about AI and employment.",
-      "zhHans": "远程劳动指数由 CAIS 与 Scale Labs 合作开发，衡量 AI 系统在完全端到端的方式下完成经济价值在线自由职业项目的能力。每个项目涉及复杂的多步骤工作流程——例如，根据客户简报重新设计订婚戒指、制作带配音的 60 秒动画广告、或根据扫描的现场测量数据创建标注尺寸的平面图。在 2025 年 10 月推出时，AI 系统仅能完成 2.5% 的这些任务。到 2026 年 7 月，这一数字已飙升至 16.1%——前沿能力'在不到八个月内增长了四倍多'。Fable 5 以 16.1% 领先，接近 Claude Opus 4.8（8.3%）的两倍，是 GPT-5.5（6.3%）的 2.5 倍以上。该研究提出了关于 AI 驱动的劳动力自动化轨迹的根本性问题。CAIS 研究者在 Import AI 中的评论直截了当地提出了这个问题：'当这个比率达到 80% 时，在线就业会发生什么？人类创新并使其自身相对于 AI 系统重新具有竞争力的速度，能否同时快于 AI 原始能力的扩展速度和它们使用人类竞争对手所用工具的熟练度提升速度？'RLI 加入了一组越来越多的跟踪 AI 实际经济能力的基准，为一直主要是理论性的 AI 与就业辩论提供了具体的数据点。"
+      "en": "The Remote Labor Index measures how well AI systems can complete economically valuable online freelance projects end to end. Each project involves a multistep workflow — for example, redesigning an engagement ring from a client brief, producing an animated advertisement with voiceover, or creating dimensioned floor plans from scanned measurements. At the benchmark's October 2025 release, the best tested system succeeded on 2.5% of projects. In the July 2026 update, Fable 5 reached 15.8%, Claude Opus 4.8 reached 8.3%, and GPT-5.5 reached 6.3%. The increase is substantial, but comparisons also depend on the model, agent scaffold, task coverage, and evaluation budget. RLI therefore provides a concrete capability indicator, not a direct forecast of job losses or a measure of the share of work that can already be automated across the economy.",
+      "zhHans": "远程劳动指数衡量 AI 系统端到端完成高经济价值在线自由职业项目的能力。每个项目都涉及多步骤流程，例如根据客户简报重新设计订婚戒指、制作带配音的动画广告，或根据扫描测量数据创建标注尺寸的平面图。基准在 2025 年 10 月发布时，表现最好的受测系统完成率为 2.5%；2026 年 7 月更新中，Fable 5 达到 15.8%，Claude Opus 4.8 为 8.3%，GPT-5.5 为 6.3%。增幅显著，但跨期比较也受模型、智能体脚手架、任务覆盖范围和评测预算影响。因此，RLI 是一项具体能力指标，不是岗位流失的直接预测，也不代表整个经济中已经能够自动化的工作占比。"
     },
     "displayDate": {
-      "en": "Jul 6, 2026",
-      "zhHans": "2026年7月6日"
+      "en": "Jul 1, 2026",
+      "zhHans": "2026年7月1日"
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "consensusLevel": "debated",
     "controversy": true,
     "categories": [
@@ -10551,11 +11337,11 @@
     "impacts": [
       {
         "dimension": "economic_disruption",
-        "severity": -2,
+        "severity": -1,
         "direction": "negative",
         "description": {
-          "en": "RLI trajectory (2.5% → 16.1% in 8 months) suggests economically significant labor automation is accelerating. If trend continues, significant impact on online freelance market and broader knowledge work within 1-3 years.",
-          "zhHans": "RLI 轨迹（8 个月内 2.5% → 16.1%）表明经济显著的自劳动力自动化正在加速。如果趋势持续，1-3 年内将对在线自由职业市场和更广泛的知识工作产生重大影响。"
+          "en": "RLI results (2.5% → 15.8% in under 8 months) indicate faster progress on selected end-to-end freelance tasks, while remaining insufficient to quantify economy-wide labor displacement.",
+          "zhHans": "RLI 结果（不到 8 个月从 2.5% 升至 15.8%）表明 AI 在部分端到端自由职业任务上的进展加快，但仍不足以量化全经济范围的岗位替代。"
         },
         "affectedGroups": [
           "online freelancers",
@@ -10567,7 +11353,8 @@
         "sourceIds": [
           "cais-rli-report-2026",
           "import-ai-464-2026"
-        ]
+        ],
+        "evidenceGrade": "A"
       },
       {
         "dimension": "paradigm_shift",
@@ -10586,7 +11373,8 @@
         "timeframe": "medium",
         "sourceIds": [
           "cais-rli-report-2026"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "capability_leap",
@@ -10604,15 +11392,16 @@
         "timeframe": "medium",
         "sourceIds": [
           "cais-rli-report-2026"
-        ]
+        ],
+        "evidenceGrade": "B"
       }
     ],
     "claims": [
       {
         "claimType": "fact",
         "text": {
-          "en": "AI systems' success rate on the Remote Labor Index rose from 2.5% (October 2025) to 16.1% (July 2026), according to CAIS and Scale Labs.",
-          "zhHans": "据 CAIS 和 Scale Labs 数据，AI 系统在远程劳动指数上的成功率从 2.5%（2025年10月）升至 16.1%（2026年7月）。"
+          "en": "The best reported success rate on the Remote Labor Index rose from 2.5% (October 2025) to 15.8% (July 2026), according to CAIS.",
+          "zhHans": "据 CAIS 数据，远程劳动指数中表现最好的系统成功率从 2.5%（2025 年 10 月）升至 15.8%（2026 年 7 月）。"
         },
         "id": "rli-ai-automation-2026-claim-1",
         "sourceIds": [
@@ -10623,8 +11412,8 @@
       {
         "claimType": "fact",
         "text": {
-          "en": "Fable 5 achieved 16.1%, Claude Opus 4.8 achieved 8.3%, and GPT-5.5 achieved 6.3% on the RLI benchmark.",
-          "zhHans": "Fable 5 在 RLI 基准上达到 16.1%，Claude Opus 4.8 达到 8.3%，GPT-5.5 达到 6.3%。"
+          "en": "Fable 5 achieved 15.8%, Claude Opus 4.8 achieved 8.3%, and GPT-5.5 achieved 6.3% on the RLI benchmark.",
+          "zhHans": "Fable 5 在 RLI 基准上达到 15.8%，Claude Opus 4.8 达到 8.3%，GPT-5.5 达到 6.3%。"
         },
         "id": "rli-ai-automation-2026-claim-2",
         "sourceIds": [
@@ -10648,14 +11437,28 @@
       {
         "claimType": "limitation",
         "text": {
-          "en": "A 16.1% success rate means the tested systems still failed most benchmark tasks. The result measures a selected set of remote-labor tasks and does not establish economy-wide job automation.",
-          "zhHans": "16.1% 的成功率意味着受测系统仍未完成大多数基准任务。该结果衡量的是一组选定的远程劳动任务，不能据此认定全经济范围的工作自动化已经实现。"
+          "en": "A 15.8% success rate means the tested systems still failed most benchmark tasks. The result measures a selected set of remote-labor tasks and does not establish economy-wide job automation.",
+          "zhHans": "15.8% 的成功率意味着受测系统仍未完成大多数基准任务。该结果衡量的是一组选定的远程劳动任务，不能据此认定全经济范围的工作自动化已经实现。"
         },
         "id": "rli-ai-automation-2026-claim-4",
         "sourceIds": [
           "cais-rli-report-2026"
         ],
         "evidenceGrade": "C"
+      },
+      {
+        "id": "rli-ai-automation-2026-impact-claim",
+        "text": {
+          "en": "RLI results (2.5% → 15.8% in under 8 months) indicate faster progress on selected end-to-end freelance tasks, while remaining insufficient to quantify economy-wide labor displacement.",
+          "zhHans": "RLI 结果（不到 8 个月从 2.5% 升至 15.8%）表明 AI 在部分端到端自由职业任务上的进展加快，但仍不足以量化全经济范围的岗位替代。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "cais-rli-report-2026",
+          "import-ai-464-2026"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -10664,7 +11467,7 @@
         "supports": [
           "rli-ai-automation-2026"
         ],
-        "quote": "Remote Labor Index update: 2.5% to 16.1%, frontier more than quadrupled in under eight months."
+        "quote": "Fable 5 reaches the highest automation rate measured so far, 15.8%, roughly double Opus 4.8 at 8.3%."
       },
       {
         "sourceId": "import-ai-464-2026",
@@ -10681,8 +11484,19 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
-      "curator": "gang"
+      "updatedAt": "2026-07-20",
+      "curator": "gang",
+      "reviewedAt": "2026-07-20",
+      "reviewer": "gang",
+      "publishedAt": "2026-07-08",
+      "reviewProvenance": "v2.3",
+      "changeLog": [
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Corrected the CAIS URL, publication date, leading score (15.8%), and unsupported labor-market extrapolation."
+        }
+      ]
     }
   },
   {
@@ -10716,7 +11530,7 @@
     ],
     "status": "published",
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -10765,6 +11579,19 @@
         "sourceIds": [
           "abc-altman-ouster-timeline"
         ]
+      },
+      {
+        "id": "sam-altman-ouster-2023-impact-claim",
+        "text": {
+          "en": "Revealed fundamental governance problems at the world's most important AI company. Exposed tension between non-profit safety mission and for-profit operations. Led to eventual PBC restructuring in 2025. Demonstrated employee power > board power at critical AI companies.",
+          "zhHans": "揭示了全球最重要 AI 公司的根本治理问题。暴露了非营利安全使命与营利运营之间的张力。最终导致了 2025 年 PBC 重组。证明了关键 AI 公司中员工权力大于董事会权力。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "abc-altman-ouster-timeline"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -10777,7 +11604,6 @@
       },
       {
         "sourceId": "openai-altman-statement-2023",
-        "supports": [],
         "quote": "OpenAI announced leadership transition on November 17, 2023."
       }
     ],
@@ -10797,7 +11623,9 @@
           "changeType": "created",
           "summary": "Added Sam Altman ouster/crisis — defining AI corporate governance crisis."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -10827,7 +11655,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -10901,7 +11729,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Scarlett Johansson / OpenAI voice controversy."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "safety",
@@ -10938,7 +11768,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 4,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -10986,7 +11816,6 @@
       },
       {
         "sourceId": "wikipedia-siri",
-        "supports": [],
         "quote": "Siri was introduced on iPhone 4S in October 2011."
       }
     ],
@@ -11006,7 +11835,9 @@
           "changeType": "created",
           "summary": "Added Siri — first mainstream conversational AI assistant."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -11036,7 +11867,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
@@ -11168,7 +11999,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Sora text-to-video model."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "product"
@@ -11201,7 +12034,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -11273,7 +12106,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Sora shutdown."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "product",
@@ -11304,7 +12139,7 @@
       "commerce"
     ],
     "significance": 1,
-    "impactIndex": 8,
+    "impactIndex": 6,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -11367,7 +12202,7 @@
       {
         "dimension": "economic_disruption",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "The $60B Cursor acquisition — the largest AI startup acquisition in history — and the $1.25T xAI merger fundamentally reshaped the competitive landscape, concentrating AI talent, models, and tools under a single entity with aerospace-scale resources.",
           "zhHans": "600 亿美元的 Cursor 收购——历史上最大规模的 AI 初创公司收购——以及 1.25 万亿美元的 xAI 合并从根本上重塑了竞争格局，将 AI 人才、模型和工具集中于一个拥有航天级资源的实体之下。"
@@ -11388,7 +12223,7 @@
       {
         "dimension": "paradigm_shift",
         "direction": "negative",
-        "severity": 2,
+        "severity": -2,
         "description": {
           "en": "The deals signaled the convergence of traditionally separate sectors — aerospace, AI models, and developer tools — into integrated technology stacks controlled by single entities, setting a precedent for future industry structure.",
           "zhHans": "这些交易标志着传统上独立的行业——航空航天、AI 模型和开发者工具——正融合为由单一实体控制的一体化技术堆栈，为未来的产业结构开创了先例。"
@@ -11416,8 +12251,14 @@
           "changeType": "created",
           "summary": "Initial event entry."
         }
-      ]
-    }
+      ],
+      "reviewedAt": "2026-06-30",
+      "reviewer": "gang",
+      "publishedAt": "2026-06-30",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "slug": "spacex-xai-cursor-2026",
+    "status": "published"
   },
   {
     "id": "stable-diffusion-2022",
@@ -11446,7 +12287,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -11579,7 +12420,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Stable Diffusion open-weight release."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability",
@@ -11613,7 +12456,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -11686,7 +12529,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Suchir Balaji."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "safety"
@@ -11719,7 +12564,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -11808,7 +12653,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Suno/Udio RIAA lawsuit."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "safety",
@@ -11842,7 +12689,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 9,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": false,
     "categories": [
@@ -11867,7 +12714,8 @@
         "sourceIds": [
           "tensorflow-2015-blog",
           "wikipedia-tensorflow"
-        ]
+        ],
+        "evidenceGrade": "A"
       },
       {
         "dimension": "capability_leap",
@@ -11884,7 +12732,8 @@
         "timeframe": "long",
         "sourceIds": [
           "tensorflow-2015-blog"
-        ]
+        ],
+        "evidenceGrade": "B"
       },
       {
         "dimension": "economic_disruption",
@@ -11901,7 +12750,8 @@
         "timeframe": "long",
         "sourceIds": [
           "wikipedia-tensorflow"
-        ]
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "claims": [
@@ -11929,6 +12779,20 @@
         "sourceIds": [
           "wikipedia-tensorflow"
         ]
+      },
+      {
+        "id": "tensorflow-2015-impact-claim",
+        "text": {
+          "en": "TensorFlow made deep learning tools accessible to anyone, from students to startups to enterprise teams.",
+          "zhHans": "TensorFlow 让任何人都能使用深度学习工具——从学生到初创公司再到企业团队。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "tensorflow-2015-blog",
+          "wikipedia-tensorflow"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -11967,7 +12831,9 @@
       "curatorNote": {
         "en": "Added during 2026 historical gap fill. TensorFlow marks the democratization of deep learning tools.",
         "zhHans": "2026 年历史空白补全时添加。TensorFlow 标志着深度学习工具的民主化。"
-      }
+      },
+      "publishedAt": "2026-06-29",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -11978,16 +12844,16 @@
       "zhHans": "Mira Murati 创立的 Thinking Machines Lab 发布首个 AI 模型 Inkling——975B 参数开源权重多模态模型"
     },
     "searchSummary": {
-      "en": "Thinking Machines Lab, the AI startup founded by former OpenAI CTO Mira Murati, released its first model Inkling on July 15, 2026. The 975B-parameter open-weights MoE model (41B active) supports text, images, audio, and video, with a 1M-token context window. Valued at $12B, the company positions Inkling as a customizable enterprise alternative to rented frontier APIs.",
-      "zhHans": "由前 OpenAI CTO Mira Murati 创立的 AI 初创公司 Thinking Machines Lab 于 2026 年 7 月 15 日发布其首个模型 Inkling。该模型 975B 参数开源权重 MoE（410 亿活跃），支持文本、图像、音频和视频，上下文窗口达 100 万 token。公司估值 $12B，将 Inkling 定位为可定制的企业级替代方案，挑战租赁式前沿 API。"
+      "en": "Thinking Machines Lab, the AI startup founded by former OpenAI CTO Mira Murati, released its first model Inkling on July 15, 2026. The 975B-parameter open-weights MoE model (41B active) accepts text, image, and audio inputs, with a 1M-token context window. Valued at $12B, the company positions Inkling as a customizable enterprise alternative to rented frontier APIs.",
+      "zhHans": "由前 OpenAI CTO Mira Murati 创立的 AI 初创公司 Thinking Machines Lab 于 2026 年 7 月 15 日发布其首个模型 Inkling。该模型为 975B 参数开源权重 MoE（410 亿活跃），接受文本、图像和音频输入，上下文窗口达 100 万 token。公司估值 $12B，将 Inkling 定位为可定制的企业级替代方案，挑战租赁式前沿 API。"
     },
     "summary": {
-      "en": "On July 15, 2026, Thinking Machines Lab — the AI startup founded by former OpenAI CTO Mira Murati — released Inkling, its first in-house AI model. Inkling is a Mixture-of-Experts transformer with 975 billion total parameters (41 billion active), supporting a 1-million-token context window and multimodal input (text, images, audio, video). It was pretrained on 45 trillion tokens. The model is open-weights, released under a license that permits broad use. At a $12 billion valuation following a $6.3 billion compute deal with CoreWeave, Thinking Machines Lab entered the frontier competition with a differentiated thesis: enterprises want AI they can customize, not just rent from a handful of labs. The release marks the first major product from a startup founded by a former OpenAI executive, adding a new competitor to the AI landscape.",
-      "zhHans": "2026 年 7 月 15 日，由前 OpenAI CTO Mira Murati 创立的 AI 初创公司 Thinking Machines Lab 发布了 Inkling，其首个自研 AI 模型。Inkling 是一个混合专家（MoE）Transformer 模型，总参数 9750 亿（活跃参数 410 亿），支持 100 万 token 上下文窗口和多模态输入（文本、图像、音频、视频）。它在 45 万亿 token 上完成了预训练。该模型是开源权重的，采用允许广泛使用的许可。在估值 $12B 以及与 CoreWeave 达成 $6.3B 算力交易后，Thinking Machines Lab 以差异化的定位进入前沿竞争：企业需要的是可以定制的 AI，而不仅仅是租用少数实验室的 API。此次发布标志着这家由前 OpenAI 高管创立的初创公司的首个主要产品问世，为 AI 版图增加了一个新的竞争者。"
+      "en": "On July 15, 2026, Thinking Machines Lab — the AI startup founded by former OpenAI CTO Mira Murati — released Inkling, its first in-house AI model. Inkling is a Mixture-of-Experts transformer with 975 billion total parameters (41 billion active), a 1-million-token context window, and text, image, and audio inputs. Its pretraining corpus included 45 trillion tokens spanning text, images, audio, and video; that does not mean the released model accepts video as an input modality. The model is open-weights under Apache 2.0. At a $12 billion valuation following a $6.3 billion compute deal with CoreWeave, Thinking Machines Lab entered the frontier competition with a differentiated thesis: enterprises want AI they can customize, not just rent from a handful of labs.",
+      "zhHans": "2026 年 7 月 15 日，由前 OpenAI CTO Mira Murati 创立的 AI 初创公司 Thinking Machines Lab 发布了首个自研模型 Inkling。Inkling 是混合专家（MoE）Transformer，总参数 9750 亿（活跃参数 410 亿），上下文窗口为 100 万 token，接受文本、图像和音频输入。其预训练语料包含 45 万亿 token，覆盖文本、图像、音频和视频；这并不表示发布版模型支持视频输入。该模型以 Apache 2.0 许可证开放权重。在估值 $12B、并与 CoreWeave 达成 $6.3B 算力交易后，Thinking Machines Lab 以“企业需要可定制 AI，而不只是租用少数实验室 API”的定位进入前沿竞争。"
     },
     "narrative": {
-      "en": "Thinking Machines Lab was founded in 2025 by Mira Murati, OpenAI's former Chief Technology Officer, along with several other former OpenAI researchers and engineers. The company's thesis was that the market's move toward renting API access from a small number of frontier labs left enterprise customers with limited control, customization, and transparency. Inkling is the first public expression of that thesis. The model's architecture — a 975B MoE with 41B active parameters — places it in the same efficiency tier as DeepSeek V4 (1.6T/49B active) and Kimi K3 (2.8T/?? active), using sparse activation to keep inference costs manageable. Its 45-trillion-token training run (spanning text, images, audio, and video) and 1M-token context window put it in the competitive range with GPT-5.6, Claude Sonnet 5, and Gemini. The open-weights release signals a bet that enterprises, governments, and regulated industries want the ability to fine-tune, audit, and self-host models rather than being locked into proprietary API relationships. The timing of the July 15 release was notable: it landed in the same week that the AI price war drove frontier token costs down 5-10x. Cheaper inference favors Thinking Machines' open-weights argument — if running your own model is now far cheaper, the value prop for 'rented' APIs weakens further. The market reception was strong: TechCrunch, Bloomberg, WIRED, Axios, and Fortune all covered the launch. At a $12 billion valuation, Thinking Machines Lab is now one of the most valuable AI startups without a frontier flagship model — a bet that Inkling is the first step in that trajectory.",
-      "zhHans": "Thinking Machines Lab 由 OpenAI 前 CTO Mira Murati 与数位前 OpenAI 研究员和工程师于 2025 年共同创立。该公司的核心理念是，市场向从少数前沿实验室租赁 API 的方向发展，使企业客户在控制权、定制化和透明度方面受到限制。Inkling 是该理念的首次公开表达。该模型的架构——975B MoE 搭配 41B 活跃参数——使其与 DeepSeek V4（1.6T/49B 活跃）和 Kimi K3（2.8T/?? 活跃）处于相同的效率梯队，通过稀疏激活来保持推理成本可控。其 45 万亿 token 的训练规模（涵盖文本、图像、音频和视频）和 100 万 token 上下文窗口使其与 GPT-5.6、Claude Sonnet 5 和 Gemini 处于竞争区间。开源权重发布表明，公司押注于企业、政府和受监管行业希望获得微调、审计和自托管模型的能力，而非被锁定在专有 API 关系中。7 月 15 日的发布时机值得注意：它恰逢 AI 价格战将前沿 token 成本压低 5-10 倍的同一周。更便宜的推理有利于 Thinking Machines 的开源权重论点——如果自己运行模型现在便宜得多，那么\"租赁\"API 的价值主张就会进一步削弱。市场反响强劲：TechCrunch、Bloomberg、WIRED、Axios 和 Fortune 均报道了此次发布。以 $12B 估值，Thinking Machines Lab 现已成为最有价值的 AI 初创公司之一，标志着 Inkling 是这一轨迹的第一步。"
+      "en": "Thinking Machines Lab was founded in 2025 by Mira Murati, OpenAI's former Chief Technology Officer, along with several other former OpenAI researchers and engineers. The company argues that renting API access from a small number of frontier labs leaves enterprise customers with limited control, customization, and transparency. Inkling is its first public model built around an alternative: open weights that customers can fine-tune and deploy. The architecture is a sparse 975B MoE with 41B active parameters, and the model accepts text, image, and audio inputs. Its 45-trillion-token pretraining corpus also included video. Early benchmark comparisons place it among current frontier systems on some tasks, but those provider-reported results still require independent replication. The July 15 release also arrived during a rapid fall in frontier-model API prices, making the long-term economics of self-hosting versus rented APIs an open question rather than a settled advantage.",
+      "zhHans": "Thinking Machines Lab 由 OpenAI 前 CTO Mira Murati 与数位前 OpenAI 研究员和工程师于 2025 年共同创立。公司认为，从少数前沿实验室租用 API 会限制企业客户的控制权、定制能力和透明度。Inkling 是其围绕另一条路线发布的首个公开模型：开放权重，允许客户微调和部署。其架构为稀疏 975B MoE，活跃参数 41B，接受文本、图像和音频输入；45 万亿 token 的预训练语料还包含视频。早期基准比较显示它在部分任务上进入当前前沿系统区间，但这些由提供方报告的结果仍需独立复现。7 月 15 日发布时，前沿模型 API 价格也在快速下降，因此自托管与租赁 API 的长期经济性仍是开放问题，而非已经确定的优势。"
     },
     "date": "2026-07-15",
     "datePrecision": "day",
@@ -11997,8 +12863,8 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 6,
-    "consensusLevel": "broad",
+    "impactIndex": 5,
+    "consensusLevel": "emerging",
     "controversy": false,
     "categories": [
       "capability",
@@ -12051,8 +12917,8 @@
         "id": "inkling-release-2026",
         "claimType": "fact",
         "text": {
-          "en": "Thinking Machines Lab released Inkling on July 15, 2026 — a 975B-parameter MoE open-weights model with 41B active parameters, 1M-token context, and multimodal capabilities.",
-          "zhHans": "Thinking Machines Lab 于 2026 年 7 月 15 日发布 Inkling——975B 参数 MoE 开源权重模型，41B 活跃参数，100 万 token 上下文，多模态能力。"
+          "en": "Thinking Machines Lab released Inkling on July 15, 2026 — a 975B-parameter MoE open-weights model with 41B active parameters, a 1M-token context window, and text, image, and audio inputs.",
+          "zhHans": "Thinking Machines Lab 于 2026 年 7 月 15 日发布 Inkling——975B 参数 MoE 开源权重模型，41B 活跃参数，100 万 token 上下文，接受文本、图像和音频输入。"
         },
         "evidenceGrade": "A",
         "sourceIds": [
@@ -12073,6 +12939,20 @@
           "fortune-thinking-machines-inkling",
           "bloomberg-thinking-machines-inkling"
         ]
+      },
+      {
+        "id": "thinking-machines-inkling-2026-impact-claim",
+        "text": {
+          "en": "The release of Inkling by a startup founded by former OpenAI leadership validates an alternative model for frontier AI: open-weights, customizable, self-hosted — rather than API-rental-only.",
+          "zhHans": "由前 OpenAI 领导层创立的初创公司发布 Inkling，验证了前沿 AI 的另一种模式：开源权重、可定制、可自托管——而非仅限 API 租赁。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "techcrunch-thinking-machines-inkling",
+          "thinking-machines-inkling-blog"
+        ],
+        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "sources": [
@@ -12106,7 +12986,6 @@
       },
       {
         "sourceId": "axios-thinking-machines-inkling",
-        "supports": [],
         "quote": "Mira Murati's Thinking Machines on Wednesday released Inkling, betting enterprises want AI they can customize."
       },
       {
@@ -12128,8 +13007,8 @@
     ],
     "editorial": {
       "createdAt": "2026-07-16",
-      "updatedAt": "2026-07-16",
-      "reviewedAt": "2026-07-16",
+      "updatedAt": "2026-07-20",
+      "reviewedAt": "2026-07-20",
       "publishedAt": "2026-07-16",
       "curator": "gang",
       "changeLog": [
@@ -12137,8 +13016,15 @@
           "date": "2026-07-16",
           "changeType": "created",
           "summary": "Initial entry for Thinking Machines Lab Inkling release."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Separated video pretraining data from supported input modalities and removed an unresolved parameter placeholder."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "v2.3"
     }
   },
   {
@@ -12168,7 +13054,7 @@
     },
     "status": "published",
     "significance": 3,
-    "impactIndex": 10,
+    "impactIndex": 8,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -12280,7 +13166,6 @@
       },
       {
         "sourceId": "techspot-transformers",
-        "supports": [],
         "quote": "Meet Transformers: The Google Breakthrough that Rewrote AI's Roadmap."
       }
     ],
@@ -12311,7 +13196,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for the Transformer architecture."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -12344,7 +13231,7 @@
     },
     "status": "published",
     "significance": 3,
-    "impactIndex": 6,
+    "impactIndex": 7,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -12513,7 +13400,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Turing's 1950 paper."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability"
@@ -12550,7 +13439,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 6,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -12599,7 +13488,6 @@
       },
       {
         "sourceId": "karpathy-vibe-coding-tweet",
-        "supports": [],
         "quote": "There's a new kind of coding I call 'vibe coding'."
       }
     ],
@@ -12621,7 +13509,9 @@
           "changeType": "created",
           "summary": "Added vibe coding — Collins Word of the Year 2025, conceptual shift in programming."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     }
   },
   {
@@ -12755,7 +13645,9 @@
           "changeType": "created",
           "summary": "Initial v2 entry for Watson Jeopardy! victory."
         }
-      ]
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
     },
     "categories": [
       "capability",

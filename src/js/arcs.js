@@ -1,10 +1,14 @@
 /* ─── Arc Pages: Language, Theme, Navigation ─── */
 
+function sitePath(path) {
+  return typeof window.localizedSitePath === 'function' ? window.localizedSitePath(path) : path;
+}
+
 window.navigateToEvent = function(id) {
   if (window.location.protocol === 'file:') {
     window.location.href = `../../events/${id}/index.html`;
   } else {
-    window.location.href = `/events/${id}/`;
+    window.location.href = sitePath(`/events/${id}/`);
   }
 };
 
@@ -28,7 +32,7 @@ document.addEventListener('click', function(e) {
       const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
       window.location.href = isSubDir ? '../../index.html' : 'index.html';
     } else {
-      window.location.href = '/';
+      window.location.href = sitePath('/');
     }
   }
 
@@ -38,7 +42,7 @@ document.addEventListener('click', function(e) {
       const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
       window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
     } else {
-      window.location.href = '/arcs';
+      window.location.href = sitePath('/arcs');
     }
   }
 });

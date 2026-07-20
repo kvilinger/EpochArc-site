@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 5,
   "consensusLevel": "broad",
   "controversy": false,
   "categories": [
@@ -51,7 +51,8 @@
       "sourceIds": [
         "chicagotribune-illinois-ai-law-2026",
         "gov-pritzker-ai-law-announcement-2026"
-      ]
+      ],
+      "evidenceGrade": "B"
     },
     {
       "dimension": "economic_disruption",
@@ -67,7 +68,8 @@
       "timeframe": "medium",
       "sourceIds": [
         "chicagotribune-illinois-ai-law-2026"
-      ]
+      ],
+      "evidenceGrade": "B"
     },
     {
       "dimension": "risk_creation",
@@ -84,7 +86,8 @@
       "timeframe": "medium",
       "sourceIds": [
         "gov-pritzker-ai-law-announcement-2026"
-      ]
+      ],
+      "evidenceGrade": "B"
     }
   ],
   "claims": [
@@ -127,6 +130,20 @@
         "capitolnews-illinois-ai-law-2026"
       ],
       "evidenceGrade": "B"
+    },
+    {
+      "id": "illinois-ai-safety-law-2026-impact-claim",
+      "text": {
+        "en": "First US state to mandate independent third-party AI safety audits. Sets a template for other states and potentially federal regulation. Creates a compliance infrastructure (auditor qualification standards, reporting mechanisms) that other jurisdictions can adopt.",
+        "zhHans": "首个要求独立第三方 AI 安全审计的美国州。为其他州和潜在的联邦监管设立了模板。创建了其他司法管辖区可以采用的合规基础设施（审计师资格标准、报告机制）。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "chicagotribune-illinois-ai-law-2026",
+        "gov-pritzker-ai-law-announcement-2026"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -161,6 +178,10 @@
   "editorial": {
     "createdAt": "2026-07-08",
     "updatedAt": "2026-07-08",
-    "curator": "gang"
+    "curator": "gang",
+    "reviewedAt": "2026-07-08",
+    "reviewer": "gang",
+    "publishedAt": "2026-07-08",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

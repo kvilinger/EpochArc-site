@@ -39,8 +39,8 @@ Brave Search 有两个明确角色：只用于 Reddit/X/通用新闻的代理发
 |---|------|---------|---------|------|--------|
 | 1 | **Hugging Face Daily Papers** | 社区筛选的研究热点 | `GET https://huggingface.co/api/daily_papers?limit=20` | ✅ 可用 | 无需操作。自动替代 arXiv + Papers with Code |
 | 2 | **Hacker News** | 科技社区注意力信号 | Firebase API (公开) | ✅ 可用 | 无需操作 |
-| 3 | **Gmail — Import AI 周刊** | 高质量人工策展 AI 新闻 | `python3 scripts/check_mail.py import-ai` | ✅ 可用 | App Password 方式，永不过期 |
-| 4 | **Gmail — The Batch** | 行业向 AI 周报 | `python3 scripts/check_mail.py the-batch` | ✅ 可用 | App Password 方式，永不过期 |
+| 3 | **Gmail — Import AI 周刊** | 高质量人工策展 AI 新闻 | `python3 scripts/check_mail.py import-ai` | ✅ 可用 | Gmail IMAP + macOS 钥匙串中的 App Password；不依赖 7 天 OAuth 测试令牌 |
+| 4 | **Gmail — The Batch** | 行业向 AI 周报 | `python3 scripts/check_mail.py the-batch` | ✅ 可用 | 同上 |
 | 5 | **Brave Search → Reddit** | AI 社区热议话题（代理） | Brave Search API: `reddit.com MachineLearning trending {keywords}` | ✅ 可用（代理） | 无需操作。Reddit 原生 API 被封锁，用 Brave Search 搜索 `reddit.com` 替代 <br>`node search.js -n 10 "reddit.com trending AI June 2026"` |
 | 6 | **Brave Search → X/Twitter** | 科技社区注意力信号（代理） | Brave Search API: `x.com OR twitter.com AI {keywords}` | ✅ 可用（代理） | 无需操作。Twitter 原生 API 需付费，用 Brave Search 搜索 `x.com` 替代 <br>`node search.js -n 10 "x.com AI breakthrough June 2026"` |
 | 7 | **Brave Search → 通用 AI 新闻** | 发现层兜底 | Brave Search 通用搜索 | ✅ 可用 | 当其他通道全都无结果时，用 AI 新闻搜索兜底 |
@@ -82,9 +82,20 @@ if re.search(r'AI|LLM|GPT|Claude|Gemini|DeepSeek|Anthropic|OpenAI|agent|transfor
 "
 done
 
-# 3) Gmail — Import AI（App Password 方式，永不过期）
-python3 scripts/check_mail.py import-ai  # 最新一期全文
-python3 scripts/check_mail.py import-ai --list  # 仅标题
+# 3) Gmail — Import AI / The Batch（IMAP + App Password）
+python3 scripts/check_mail.py test               # 检查 IMAP 登录和邮件数量
+python3 scripts/check_mail.py import-ai          # Import AI 最新一期正文（默认最多 15,000 字符）
+python3 scripts/check_mail.py import-ai --list   # Import AI 最新一期标题
+python3 scripts/check_mail.py the-batch          # The Batch 最新一期正文（默认最多 15,000 字符）
+python3 scripts/check_mail.py the-batch --list   # The Batch 最新一期标题
+
+# 年度/批次回溯：读取最近 4 期且不截断；N 按实际回溯范围调整
+python3 scripts/check_mail.py import-ai --limit 4 --max-chars 0
+python3 scripts/check_mail.py the-batch --limit 4 --max-chars 0
+
+# App Password 存在 macOS 钥匙串中，不写入项目文件。
+# 它不受 OAuth 测试应用 7 天令牌限制，但修改 Google 账号密码、
+# 手动撤销 App Password 或管理员策略变化时仍会失效。
 
 # 4) Brave Search → Reddit（发现层代理）
 export BRAVE_API_KEY="YOUR_KEY"
@@ -150,7 +161,7 @@ brave search "事件名称 parameters model architecture paper" -n 5 --content
 
 **产出** → 填充 `AIEvent`:
 
-> 初筛评分（五维×0-2）统一写入 `data/screening_log.json`。合法决定值只有 `skip`、`pool`、`draft`。确认层完成后回填 `eventId`、`reviewed`、`reviewedAt` 和 `reviewer`，形成“候选→审核→发布”的可追溯链条。
+> 初筛评分（五维×0-2）统一写入 `data/screening_log.json`。每条记录必须携带 `runId`，并能回指包含时间窗、通道状态、查询、失败原因和重试结果的批次记录。合法决定值只有 `skip`、`pool`、`draft`。确认层完成后回填 `eventId`、`reviewed`、`reviewedAt` 和 `reviewer`，形成“候选→审核→发布”的可追溯链条。历史条目缺少 `runId` 时只能标记为迁移债务，不得虚构批次信息。
 
 | 搜索到的信息 | v2 字段 |
 |-------------|---------|
@@ -294,17 +305,21 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 
 | 属性 | 内容 |
 |:--|:--|
-| 前置要求 | App Password（已存入 macOS 钥匙串 `epocharc-gmail-app-password`） |
-| 搜索命令 | `python3 scripts/check_mail.py import-ai`（全文）或 `--list`（仅标题） |
-| 当前状态 | ✅ 可用。Import AI 已有 4 期邮件，最新：#464 (Jul 6) |
+| 连接方式 | Gmail IMAP over SSL（`imap.gmail.com:993`） |
+| 前置要求 | Google 账号已启用两步验证并创建 App Password；密码存入 macOS 钥匙串服务 `epocharc-gmail-app-password`，不得写入仓库 |
+| 连接检查 | `python3 scripts/check_mail.py test` |
+| 搜索命令 | 日常：`python3 scripts/check_mail.py import-ai`（最新一期，默认最多 15,000 字符）；回溯：`python3 scripts/check_mail.py import-ai --limit N --max-chars 0` |
+| 当前状态 | ✅ 可用；每轮以脚本实际返回结果为准 |
 
 ### 渠道 4：Gmail — The Batch
 
 | 属性 | 内容 |
 |:--|:--|
-| API 方式 | IMAP + App Password |
-| 搜索命令 | `python3 scripts/check_mail.py the-batch`（全文）或 `--list`（仅标题） |
-| 当前状态 | ✅ 可用。已有 4 期邮件，最新：(Jul 16, 2026) |
+| 连接方式 | 同上 |
+| 搜索命令 | 日常：`python3 scripts/check_mail.py the-batch`（最新一期，默认最多 15,000 字符）；回溯：`python3 scripts/check_mail.py the-batch --limit N --max-chars 0` |
+| 当前状态 | ✅ 可用；每轮以脚本实际返回结果为准 |
+
+> App Password 是长期凭据，不受 OAuth 测试应用 7 天令牌限制；但它并非不可撤销。修改 Google 账号密码、手动撤销 App Password 或组织管理员策略变化后，需要重新创建并更新钥匙串。任何登录或查询失败都必须记录在批次通道状态中，不得把静态文档中的“可用”当作本轮已完成覆盖。
 
 ### 渠道 5：Brave Search → Reddit（代理）
 

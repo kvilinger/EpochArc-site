@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 8,
+  "impactIndex": 5,
   "consensusLevel": "broad",
   "controversy": false,
   "categories": [
@@ -35,7 +35,7 @@
   "impacts": [
     {
       "dimension": "economic_disruption",
-      "severity": 2,
+      "severity": -2,
       "direction": "negative",
       "description": {
         "en": "Lisp machine industry collapsed; billions in government and corporate investment lost.",
@@ -50,15 +50,16 @@
       "sourceIds": [
         "wikipedia-ai-winter",
         "reuters-ai-boom-bust-2018"
-      ]
+      ],
+      "evidenceGrade": "B"
     },
     {
       "dimension": "paradigm_shift",
-      "severity": 2,
-      "direction": "mixed",
+      "severity": 1,
+      "direction": "positive",
       "description": {
-        "en": "Ended the symbolic AI era and paved the way for the connectionist (neural network) revolution.",
-        "zhHans": "结束了符号 AI 时代，为联结主义（神经网络）革命铺平了道路。"
+        "en": "The collapse weakened the symbolic-AI monoculture and created room for the later connectionist revival.",
+        "zhHans": "这场崩溃削弱了符号 AI 的单一路线，也为后来联结主义的复兴腾出了空间。"
       },
       "affectedGroups": [
         "ai researchers",
@@ -67,11 +68,12 @@
       "timeframe": "long",
       "sourceIds": [
         "wikipedia-ai-winter"
-      ]
+      ],
+      "evidenceGrade": "C"
     },
     {
       "dimension": "risk_creation",
-      "severity": 1,
+      "severity": -1,
       "direction": "negative",
       "description": {
         "en": "AI funding was slashed; the field suffered a decade-long reputation and investment drought.",
@@ -85,7 +87,8 @@
       "timeframe": "long",
       "sourceIds": [
         "reuters-ai-boom-bust-2018"
-      ]
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "claims": [
@@ -101,6 +104,20 @@
         "wikipedia-ai-winter",
         "reuters-ai-boom-bust-2018"
       ]
+    },
+    {
+      "id": "ai-winter-1987-impact-claim",
+      "text": {
+        "en": "Lisp machine industry collapsed; billions in government and corporate investment lost.",
+        "zhHans": "Lisp 机器产业崩溃，数十亿政府和企业投资损失。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "wikipedia-ai-winter",
+        "reuters-ai-boom-bust-2018"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -138,6 +155,8 @@
     "curatorNote": {
       "en": "Added during 2026 historical gap fill. AI winter provides crucial context for understanding AI's boom-and-bust cycles.",
       "zhHans": "2026 年历史空白补全时添加。AI 寒冬提供了理解 AI 繁荣-衰退周期的重要背景。"
-    }
+    },
+    "publishedAt": "2026-06-29",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

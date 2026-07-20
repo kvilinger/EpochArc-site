@@ -6,7 +6,7 @@
     "zhHans": "Google 在搜索中推出 AI Mode，25 年来搜索方式的最大变革"
   },
   "searchSummary": {
-    "en": "Google launched AI Mode in Search in 2025 \u2014 the biggest change to how search works in 25 years. How AI-generated answers are transforming the web\u2019s primary gateway.",
+    "en": "Google launched AI Mode in Search in 2025 — the biggest change to how search works in 25 years. How AI-generated answers are transforming the web’s primary gateway.",
     "zhHans": "Google 于 2025 年在搜索中推出 AI Mode——25 年来搜索方式的最大变革。AI 生成的答案如何改变了互联网的主要入口。"
   },
   "summary": {
@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 8,
+  "impactIndex": 7,
   "consensusLevel": "broad",
   "controversy": true,
   "impacts": [
@@ -67,7 +67,10 @@
       ],
       "timeframe": "long",
       "evidenceGrade": "A",
-      "sourceIds": []
+      "sourceIds": [
+        "google-ai-mode-search",
+        "pcmag-google-ai-mode-search"
+      ]
     }
   ],
   "claims": [
@@ -94,6 +97,19 @@
       "sourceIds": [
         "google-ai-mode-search"
       ]
+    },
+    {
+      "id": "google-ai-mode-search-2025-impact-claim",
+      "text": {
+        "en": "Fundamentally changed the metaphor of search from 'finding links' to 'getting answers.' Made AI-generated synthesis the default experience for the world's largest search engine. Comparable to PageRank's introduction in 1998.",
+        "zhHans": "从根本上改变了搜索的隐喻，从\"找链接\"变为\"得答案\"。使 AI 生成的综合回答成为全球最大搜索引擎的默认体验。可与 1998 年 PageRank 的引入相媲美。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-ai-mode-search"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -106,7 +122,6 @@
     },
     {
       "sourceId": "pcmag-google-ai-mode-search",
-      "supports": [],
       "quote": "Get Ready for Google's Biggest Search Upgrade in 25 Years."
     }
   ],
@@ -127,7 +142,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for Google AI Mode Search."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "product"

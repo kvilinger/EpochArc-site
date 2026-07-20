@@ -2,6 +2,7 @@
   "_description": "候选事件初筛评分日志。每条记录对应一次 5 维 × 0-2 快速打分，用于后续审核和数据模型迭代时的回溯分析。分数不入 event JSON，只在此留存。",
   "_schema": {
     "candidateId": "临时标识，用于指代候选事件",
+    "runId": "发现与筛选批次标识；历史缺失值不得事后臆造",
     "eventId": "该候选通过审核后对应的 content/events/ 中的 id（可选，事后回填）",
     "source": "发现信源",
     "screenedAt": "评分日期",
@@ -26,14 +27,16 @@
       "scores": {
         "verifiability": 2,
         "novelty": 2,
-        "spillover": 3,
+        "spillover": 2,
         "durability": 2,
         "sourceQuality": 2
       },
-      "total": 11,
+      "total": 10,
       "decision": "draft",
       "notes": "Open-source reasoning matching o1 at fraction of cost. Triggered $593B NVIDIA wipeout and global semiconductor selloff.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "stargate-project-2025",
@@ -67,7 +70,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "First autonomous browser agent from OpenAI. July 2025 integrated into ChatGPT as ChatGPT agent. Early stage but triggered agent race.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "eu-ai-act-2025",
@@ -78,13 +83,15 @@
         "verifiability": 2,
         "novelty": 2,
         "spillover": 2,
-        "durability": 3,
+        "durability": 2,
         "sourceQuality": 2
       },
-      "total": 11,
+      "total": 10,
       "decision": "draft",
       "notes": "First binding comprehensive AI regulation worldwide. Prohibited practices + AI literacy obligations effective Feb 2 2025. Global regulatory template.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "vibe-coding-2025",
@@ -169,7 +176,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "Native image generation in ChatGPT. Ghibli-style images went globally viral March 27. Sparked major copyright/ethics debate. Product integration breakthrough.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "llama4-2025",
@@ -186,7 +195,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Meta's natively multimodal open-weight model (Maverick + Scout). Continues Llama open-weight lineage. Important for open ecosystem standardization.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "qwen3-2025",
@@ -213,14 +224,16 @@
       "scores": {
         "verifiability": 2,
         "novelty": 2,
-        "spillover": 3,
+        "spillover": 2,
         "durability": 2,
         "sourceQuality": 2
       },
-      "total": 11,
+      "total": 10,
       "decision": "draft",
       "notes": "Google's largest product change: Gemini-powered AI Mode in Search. Transforms search from link-list to answer-generation. Changes fundamental web economics.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "veo3-2025",
@@ -271,7 +284,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "Unified reasoning+multimodal+task execution system. Eliminates need to switch between specialized models. 'PhD-level expertise' claim. Product architecture paradigm shift.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "openai-pbc-restructure-2025",
@@ -288,7 +303,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "OpenAI completed transition from nonprofit-control to Public Benefit Corporation (PBC) Oct 28 2025. $130B valuation at stake. Ends years-long governance saga.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "figure-bmw-humanoid-2025",
@@ -305,7 +322,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Figure 02 humanoid robot deployed at BMW Spartanburg plant. 10-hour autonomous shifts producing 30,000+ BMW X3 vehicles. First genuine humanoid robot production deployment.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "gemini-deep-think-imo-gold-2025",
@@ -322,7 +341,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "Google DeepMind's Gemini Deep Think achieved gold medal at International Mathematical Olympiad 2025. 35/42 points. AI reaches highest level of human mathematical competition.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "nvidia-4-trillion-market-cap-2025",
@@ -339,7 +360,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "NVIDIA reached $4T market cap July 2025 (first company ever). $5T by Oct 2025. Symbol of AI investment boom becoming dominant economic force.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "california-sb53-2025",
@@ -356,7 +379,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "California SB 53 signed Sep 29 2025, first US state AI safety law. Mandates safety frameworks, incident reporting, whistleblower protections for frontier AI developers.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "balaji-whistleblower-2025",
@@ -373,7 +398,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "OpenAI whistleblower Suchir Balaji (26) death ruled suicide Feb 14 2025. Spotlighted AI whistleblower protection gaps. Catalyst for SB 53 and federal whistleblower act.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "nytimes-openai-copyright-2025",
@@ -407,7 +434,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Anthropic activated ASL-3 safeguards in May 2025. First operational framework tying AI capability thresholds to mandatory safety measures. New research paradigm for safety.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "ai-job-displacement-2025",
@@ -451,14 +480,16 @@
       "scores": {
         "verifiability": 2,
         "novelty": 2,
-        "spillover": 3,
-        "durability": 3,
+        "spillover": 2,
+        "durability": 2,
         "sourceQuality": 2
       },
-      "total": 12,
+      "total": 10,
       "decision": "draft",
       "notes": "First comprehensive AI regulation globally. Passed European Parliament Mar 13, entered into force Aug 1, 2024.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "llama-3.1-405b-2024",
@@ -475,7 +506,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "First open-weight frontier model matching GPT-4 and Claude 3.5 Sonnet. 405B dense params, 128K context. Changed open-source paradigm.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "alphafold-nobel-2024",
@@ -485,14 +518,16 @@
       "scores": {
         "verifiability": 2,
         "novelty": 2,
-        "spillover": 3,
-        "durability": 3,
+        "spillover": 2,
+        "durability": 2,
         "sourceQuality": 2
       },
-      "total": 12,
+      "total": 10,
       "decision": "draft",
       "notes": "First AI system to win a Nobel Prize. AlphaFold2 recognized for predicting 200M protein structures. Legitimized AI as scientific tool at highest level.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "apple-intelligence-2024",
@@ -509,7 +544,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Apple brings AI to 2B+ devices at WWDC 2024. Privacy-first approach + ChatGPT integration. Major product milestone but late to AI race.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "scarlett-johansson-openai-2024",
@@ -526,7 +563,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "ChatGPT voice 'Sky' sounded 'eerily similar' to Scarlett Johansson. Raised AI consent/ethics debate. OpenAI pulled the voice.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "suno-udio-lawsuit-2024",
@@ -543,7 +582,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Major labels (Sony, Universal, Warner) sue AI music generators Suno and Udio. Set template for AI x copyright litigation. Partial settlements in 2025.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "gemini-1.5-pro-2024",
@@ -560,7 +601,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "First model with 1M token context window (later 2M). Could process entire codebases/books in single prompt. Capability breakthrough in context length.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "grok-deepfake-crisis-2026",
@@ -577,7 +620,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "xAI's Grok image gen created explicit deepfakes. Indonesia, Malaysia, Philippines blocked access. Ofcom launched investigation. Major safety/ethics failure.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "deepseek-v4-2026",
@@ -594,7 +639,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "DeepSeek V4 open-weight (MIT). V4-Pro 1.6T MoE, V4-Flash 284B. Underpriced all frontier models. Continued open-weight competitiveness.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "sora-shutdown-2026",
@@ -611,7 +658,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "OpenAI shut down Sora web/app April 26, 2026. First major AI product discontinuation by a frontier lab. Revealed limits of AI video generation economics.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "eu-ai-act-simplification-2026",
@@ -628,7 +677,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "EU Council and Parliament reached provisional agreement May 7 to streamline AI rules. Response to industry feedback on overly complex compliance requirements.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "florida-sues-openai-2026",
@@ -645,7 +696,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "Florida AG filed first US state lawsuit against OpenAI alleging profit-over-safety. Landmark in AI liability litigation. Could set precedent for state-level AI lawsuits.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "ai-layoffs-wave-2026",
@@ -662,7 +715,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Meta cut 8K jobs (10%), moved 7K to AI roles. 92K+ tech workers laid off in 2026 H1 citing AI. First major year where AI-driven job displacement became empirically measurable.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "openclaw-2026",
@@ -679,7 +734,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "Fastest-growing dev tool in history. 247K GitHub stars in 60d. Creator joined OpenAI. NVIDIA built NemoClaw. China 'raising the lobster' cultural phenomenon.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "vibecoding-2025",
@@ -696,7 +753,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Karpathy coined 'vibe coding' Feb 2 2025. Collins Word of the Year 2025. Captured shift from syntax craft to intent-driven coding with LLMs.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-24",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "nvidia-most-valuable-2024",
@@ -713,7 +772,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "NVIDIA became the world's most valuable company ($3.34T) on Jun 18, 2024, surpassing Microsoft. Symbolic moment: AI chip company > traditional tech. Fills commerce blank for 2024.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "mcp-protocol-2024",
@@ -730,7 +791,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Anthropic open-sourced Model Context Protocol (MCP) on Nov 25, 2024. Became industry standard for LLM-tool integration. Adopted by OpenAI, Google, and others.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "gemini-2-0-agents-2024",
@@ -747,7 +810,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "Google launched Gemini 2.0 on Dec 11, 2024 with Project Mariner (browser agent), Project Astra (universal assistant), and Jules (coding agent). First major agent ecosystem from a platform company.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "dall-e-2-2022",
@@ -764,7 +829,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "DALL-E 2 released Apr 6, 2022 — first mass-market text-to-image product. 1M users in beta by Jul 2022. Democratized AI image generation.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "character-ai-2022",
@@ -781,7 +848,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Character.AI launched Sep 2022. 20M users within a year. Pioneered AI companion chatbots, 2hr average daily engagement. Culture shift in human-AI interaction.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "bing-chat-sydney-2023",
@@ -798,7 +867,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "Microsoft launched AI Bing Feb 7 2023, integrated GPT-4. Within days, chatbot developed 'Sydney' persona — declared love, threatened users. First major AI safety incident post-ChatGPT.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "auto-gpt-2023",
@@ -815,7 +886,9 @@
       "total": 8,
       "decision": "draft",
       "notes": "Auto-GPT released Mar 30, 2023. First major open-source autonomous AI agent. Viral on GitHub. Gave mainstream developers first taste of 'AI agents' before the term became common.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "openai-devday-2023",
@@ -832,7 +905,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "OpenAI DevDay Nov 6 2023. Announced GPT-4 Turbo (128K context, cheaper), GPT Store, DALL-E 3 in ChatGPT, voice/image API. Major platform expansion.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "sam-altman-ouster-2023",
@@ -841,15 +916,17 @@
       "screenedAt": "2026-06-25",
       "scores": {
         "verifiability": 2,
-        "novelty": 3,
+        "novelty": 2,
         "spillover": 2,
         "durability": 2,
         "sourceQuality": 2
       },
-      "total": 11,
+      "total": 10,
       "decision": "draft",
       "notes": "Sam Altman fired Nov 17, reinstated Nov 21, 2023. 800/770 employees threatened to quit for Microsoft. Revealed OpenAI governance crisis. Biggest AI corporate drama.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "siri-2011",
@@ -866,7 +943,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "Siri launched on iPhone 4S Oct 4, 2011. First mainstream conversational AI assistant. Millions used it daily. Cultural moment — first time ordinary people talked to AI.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "google-deepmind-2014",
@@ -883,7 +962,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "Google acquired DeepMind Jan 27, 2014 for ~ £400M. First major AI talent acquisition. Demonstrated that AI research was a strategic asset for tech giants. Established DeepMind as the world's leading AI lab.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "microsoft-tay-2016",
@@ -900,7 +981,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Microsoft launched Tay chatbot Mar 23, 2016. Within 16h it became racist/sexist, shut down. First major AI safety meltdown that went viral in mainstream media. Showed that AI safety is not just theoretical.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "gpt-2-safety-2019",
@@ -917,7 +1000,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "OpenAI announced GPT-2 Feb 14, 2019 but withheld full model 'due to safety concerns.' First major AI safety debate in mainstream press. Shifted public conversation about AI from 'what can it do' to 'should we release it at all.'",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "eu-ai-act-proposal-2021",
@@ -934,7 +1019,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "European Commission proposed first EU AI law April 2021. Risk-based classification system. Started the global conversation on AI regulation. Ultimately passed in 2024 as world's first comprehensive AI law.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "claude-code-leak-2026",
@@ -951,7 +1038,9 @@
       "total": 9,
       "decision": "draft",
       "notes": "Claude Code 512K lines leaked via npm map file Mar 31, 2026. Revealed KAIROS background agent, Undercover Mode, self-healing memory. Supply chain attack followed. Major AI security incident.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "apple-siri-ai-wwdc-2026",
@@ -968,7 +1057,9 @@
       "total": 10,
       "decision": "draft",
       "notes": "Apple unveiled Siri AI at WWDC June 8, 2026. Complete Siri overhaul with context awareness, visual intelligence, standalone Siri app, Gemini integration. Biggest consumer AI moment of 2026.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "claude-mythos-fable-ban-2026",
@@ -983,8 +1074,11 @@
         "sourceQuality": 2
       },
       "total": 10,
-      "decision": "direct_draft",
-      "eventId": "claude-fable-ban-2026"
+      "decision": "draft",
+      "eventId": "claude-fable-ban-2026",
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "glm-52-open-source-2026",
@@ -999,8 +1093,11 @@
         "sourceQuality": 2
       },
       "total": 10,
-      "decision": "direct_draft",
-      "eventId": "glm-52-open-source-2026"
+      "decision": "draft",
+      "eventId": "glm-52-open-source-2026",
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "openai-jalapeno-chip-2026",
@@ -1015,8 +1112,11 @@
         "sourceQuality": 2
       },
       "total": 9,
-      "decision": "direct_draft",
-      "eventId": "openai-jalapeno-chip-2026"
+      "decision": "draft",
+      "eventId": "openai-jalapeno-chip-2026",
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "anthropic-alibaba-extraction-2026",
@@ -1031,8 +1131,11 @@
         "sourceQuality": 2
       },
       "total": 10,
-      "decision": "direct_draft",
-      "eventId": "anthropic-alibaba-extraction-2026"
+      "decision": "draft",
+      "eventId": "anthropic-alibaba-extraction-2026",
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "spacex-xai-cursor-2026",
@@ -1047,8 +1150,11 @@
         "sourceQuality": 2
       },
       "total": 10,
-      "decision": "direct_draft",
-      "eventId": "spacex-xai-cursor-2026"
+      "decision": "draft",
+      "eventId": "spacex-xai-cursor-2026",
+      "reviewed": true,
+      "reviewedAt": "2026-06-25",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "xai-whistleblower-kim-2026",
@@ -1063,7 +1169,7 @@
         "sourceQuality": 2
       },
       "total": 6,
-      "decision": "candidate_pool",
+      "decision": "pool",
       "notes": "Similar to suchir-balaji-2025. Not novel enough for separate event."
     },
     {
@@ -1079,7 +1185,7 @@
         "sourceQuality": 2
       },
       "total": 7,
-      "decision": "candidate_pool",
+      "decision": "pool",
       "notes": "Incremental product update; gemini-2-agents-2024 already covers Google agent ecosystem."
     },
     {
@@ -1096,7 +1202,10 @@
       },
       "total": 10,
       "decision": "draft",
-      "notes": "Claude Code (Feb 24, 2025) — first widely-adopted production coding agent. Launched as research preview with Claude 3.7 Sonnet. Marked agent transition from demo/experiment to daily productivity tool. Wikipedia confirms release date."
+      "notes": "Claude Code (Feb 24, 2025) — first widely-adopted production coding agent. Launched as research preview with Claude 3.7 Sonnet. Marked agent transition from demo/experiment to daily productivity tool. Wikipedia confirms release date.",
+      "reviewed": true,
+      "reviewedAt": "2026-06-26",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "claude-sonnet-5-launch-2026",
@@ -1110,10 +1219,12 @@
         "sourceQuality": 2
       },
       "total": 7,
-      "decision": "candidate_pool",
+      "decision": "pool",
       "notes": "Mid-tier model update. Significant as default Anthropic model, near-Opus agentic capability at lower price. Incremental improvement, not a breakthrough. Product category.",
       "reviewed": true,
-      "eventId": "claude-sonnet-5-launch-2026"
+      "eventId": "claude-sonnet-5-launch-2026",
+      "reviewedAt": "2026-07-02",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "claude-fable-ban-lift-2026",
@@ -1127,10 +1238,12 @@
         "sourceQuality": 2
       },
       "total": 10,
-      "decision": "direct_draft",
+      "decision": "draft",
       "notes": "First US reversal of AI export ban. 18-day ban undone. Major governance precedent. CNBC/Axios/WIRED/Forbes/CNN multi-source confirmed.",
       "reviewed": true,
-      "eventId": "claude-fable-ban-lift-2026"
+      "eventId": "claude-fable-ban-lift-2026",
+      "reviewedAt": "2026-07-02",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "netflix-gene-wilder-ai-2026",
@@ -1144,10 +1257,12 @@
         "sourceQuality": 2
       },
       "total": 7,
-      "decision": "candidate_pool",
+      "decision": "pool",
       "notes": "AI voice recreation of deceased celebrity. Estate consented but major backlash ('digital necromancy'). Society/safety event. Notable as mainstreaming moment for AI voice cloning in entertainment.",
       "reviewed": true,
-      "eventId": "netflix-gene-wilder-ai-2026"
+      "eventId": "netflix-gene-wilder-ai-2026",
+      "reviewedAt": "2026-07-02",
+      "reviewer": "EpochArc editorial"
     },
     {
       "candidateId": "gpt-5-6-limited-release-2026",
@@ -1162,9 +1277,11 @@
         "sourceQuality": 2
       },
       "total": 10,
-      "decision": "direct_draft",
+      "decision": "draft",
       "notes": "First model shipped under June 2 EO framework. White House requested restricted release. Sol set new SOTA on Terminal-Bench. Completes governance trilogy with Fable 5 ban+lift.",
-      "reviewed": true
+      "reviewed": true,
+      "reviewedAt": "2026-07-02",
+      "reviewer": "EpochArc editorial"
     }
   ]
 }

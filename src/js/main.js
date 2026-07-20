@@ -3,6 +3,10 @@ const LANGUAGES = {
       'zh-Hans': { html: 'zh-Hans', content: 'zh' }
     };
 
+    function sitePath(path) {
+      return typeof window.localizedSitePath === 'function' ? window.localizedSitePath(path) : path;
+    }
+
     const UI_TEXT = {
       darkMode: { en: 'Dark Mode', es: 'Modo oscuro', ja: 'ダーク', 'zh-Hans': '深色模式', 'zh-Hant': '深色模式', fr: 'Mode sombre' },
       lightMode: { en: 'Light Mode', es: 'Modo claro', ja: 'ライト', 'zh-Hans': '浅色模式', 'zh-Hant': '淺色模式', fr: 'Mode clair' },
@@ -16,6 +20,7 @@ const LANGUAGES = {
       timelineErrorBody: { en: 'This build depends on static JSON files. Make sure data/events.json is deployed.', es: 'Esta versión depende de archivos JSON estáticos. Asegúrate de publicar data/events.json.', ja: 'このビルドは静的 JSON に依存します。data/events.json が公開されているか確認してください。', 'zh-Hans': '当前版本依赖静态 JSON 文件，请确认部署时包含 data/events.json。', 'zh-Hant': '目前版本依賴靜態 JSON 檔案，請確認部署時包含 data/events.json。', fr: 'Cette version dépend de fichiers JSON statiques. Vérifiez que data/events.json est déployé.' },
       openMethodology: { en: 'Open methodology', es: 'Ver metodología', ja: '方法を見る', 'zh-Hans': '查看方法页', 'zh-Hant': '查看方法頁', fr: 'Voir la méthodologie' },
       reviewDirection: { en: 'Open direction', 'zh-Hans': '打开方向' },
+      fullDirection: { en: 'Read full direction', 'zh-Hans': '查看完整方向' },
       closeDetails: { en: 'Collapse', 'zh-Hans': '收起' },
       chooseDirection: { en: 'Pick this', 'zh-Hans': '选这个' },
       selectedDirection: { en: 'My pick', 'zh-Hans': '我的选择' },
@@ -447,15 +452,15 @@ const LANGUAGES = {
       // Update page title
       const isZh = isChineseContent();
       document.title = isZh
-        ? 'EpochArc · AI 发展史时间线：从 1950 到 2026 的人工智能里程碑'
-        : 'EpochArc · AI Timeline: Key Milestones in Artificial Intelligence from 1950 to 2026';
+        ? 'EpochArc · AI 时间轴：1950 至今的重要里程碑'
+        : 'EpochArc · AI Timeline: Key Milestones from 1950 to Today';
       
       // Update meta description
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
         metaDesc.setAttribute('content', isZh
-          ? '完整的人工智能发展时间线，覆盖 1950 年至 2026 年。83+ 个精心筛选的里程碑事件，包括 ChatGPT、AlphaGo、DeepSeek、Claude 等，附影响分析和来源证据。'
-          : 'Explore the complete AI timeline from 1950 to 2026. 83+ curated milestones including ChatGPT, AlphaGo, DeepSeek, Claude — with impact analysis and evidence.'
+          ? '浏览 93 个经过策展的 AI 里程碑，以及对应来源、影响分析、专题叙事与可能方向。'
+          : 'Explore 93 curated AI milestones with evidence, impact analysis, narrative arcs, and possible directions.'
         );
       }
       
@@ -466,8 +471,8 @@ const LANGUAGES = {
       const ogDesc = document.querySelector('meta[property="og:description"]');
       if (ogDesc) {
         ogDesc.setAttribute('content', isZh
-          ? '完整的人工智能发展时间线，覆盖 1950 年至 2026 年。83+ 个里程碑事件，附影响分析。'
-          : 'Explore the complete AI timeline from 1950 to 2026. 83+ curated milestones with impact analysis and evidence.'
+          ? '浏览 93 个经过策展的 AI 里程碑，以及对应来源、影响分析、专题叙事与可能方向。'
+          : 'Explore 93 curated AI milestones with evidence, impact analysis, narrative arcs, and possible directions.'
         );
       }
       
@@ -483,8 +488,8 @@ const LANGUAGES = {
       const twDesc = document.querySelector('meta[name="twitter:description"]');
       if (twDesc) {
         twDesc.setAttribute('content', isZh
-          ? 'EpochArc — 结构化追踪 AI 里程碑、来源证据与可能方向。'
-          : 'A bilingual project for tracking AI milestones, organizing evidence, and mapping possible directions.'
+          ? '浏览 93 个经过策展的 AI 里程碑，以及对应来源、影响分析、专题叙事与可能方向。'
+          : 'Explore 93 curated AI milestones with evidence, impact analysis, narrative arcs, and possible directions.'
         );
       }
       
@@ -789,6 +794,10 @@ const LANGUAGES = {
       return `<button class="predict-collapse-button" type="button" onclick="event.stopPropagation(); ${handler}">${escapeHtml(text('closeDetails'))}${chevronIcon('up')}</button>`;
     }
 
+    function fullDirectionLink(forecast) {
+      return `<a class="forecast-full-link" href="/directions/${encodeURIComponent(forecast.slug || forecast.id)}/" onclick="event.stopPropagation()">${escapeHtml(text('fullDirection'))}<span aria-hidden="true">→</span></a>`;
+    }
+
     function renderForecastCard(forecast, mode = 'compact') {
       const copy = localizedRecord(forecast);
       const signals = signalSummary(forecast);
@@ -846,6 +855,7 @@ const LANGUAGES = {
                 ${predictionDetails(forecast)}
               </div>
               <div class="predict-expanded-toolbar">
+                ${fullDirectionLink(forecast)}
                 ${expandedCollapseAction(mode)}
               </div>
             </div>
@@ -1872,7 +1882,7 @@ const LANGUAGES = {
             const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
             window.location.href = isSubDir ? '../../index.html' : 'index.html';
           } else {
-            window.location.href = '/';
+            window.location.href = sitePath('/');
           }
         }
         
@@ -1882,7 +1892,7 @@ const LANGUAGES = {
             const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
             window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
           } else {
-            window.location.href = '/arcs';
+            window.location.href = sitePath('/arcs');
           }
         }
 
@@ -1896,7 +1906,7 @@ const LANGUAGES = {
               if (window.location.protocol === 'file:') {
                 window.location.href = `events/${id}/index.html`;
               } else {
-                window.location.href = `/events/${id}/`;
+                window.location.href = sitePath(`/events/${id}/`);
               }
             }
           }

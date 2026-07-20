@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 9,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": false,
   "categories": [
@@ -47,7 +47,8 @@
       "timeframe": "long",
       "sourceIds": [
         "arxiv-1512.03385"
-      ]
+      ],
+      "evidenceGrade": "B"
     },
     {
       "dimension": "capability_leap",
@@ -64,7 +65,8 @@
       "timeframe": "long",
       "sourceIds": [
         "arxiv-1512.03385"
-      ]
+      ],
+      "evidenceGrade": "B"
     },
     {
       "dimension": "access_democratization",
@@ -81,7 +83,8 @@
       "timeframe": "long",
       "sourceIds": [
         "wikipedia-resnet"
-      ]
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "claims": [
@@ -109,6 +112,19 @@
       "sourceIds": [
         "arxiv-1512.03385"
       ]
+    },
+    {
+      "id": "resnet-2015-impact-claim",
+      "text": {
+        "en": "Residual connections became a universal building block in nearly all subsequent neural network architectures.",
+        "zhHans": "残差连接几乎成为所有后续神经网络架构的标准组件。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "arxiv-1512.03385"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -150,6 +166,8 @@
     "curatorNote": {
       "en": "Added during 2026 historical gap fill. ResNet is foundational to the deep learning era.",
       "zhHans": "2026 年历史空白补全时添加。ResNet 是深度学习时代的基础性工作。"
-    }
+    },
+    "publishedAt": "2026-06-29",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

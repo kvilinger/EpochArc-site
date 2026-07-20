@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 9,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": false,
   "categories": [
@@ -50,7 +50,8 @@
       "sourceIds": [
         "tensorflow-2015-blog",
         "wikipedia-tensorflow"
-      ]
+      ],
+      "evidenceGrade": "A"
     },
     {
       "dimension": "capability_leap",
@@ -67,7 +68,8 @@
       "timeframe": "long",
       "sourceIds": [
         "tensorflow-2015-blog"
-      ]
+      ],
+      "evidenceGrade": "B"
     },
     {
       "dimension": "economic_disruption",
@@ -84,7 +86,8 @@
       "timeframe": "long",
       "sourceIds": [
         "wikipedia-tensorflow"
-      ]
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "claims": [
@@ -112,6 +115,20 @@
       "sourceIds": [
         "wikipedia-tensorflow"
       ]
+    },
+    {
+      "id": "tensorflow-2015-impact-claim",
+      "text": {
+        "en": "TensorFlow made deep learning tools accessible to anyone, from students to startups to enterprise teams.",
+        "zhHans": "TensorFlow 让任何人都能使用深度学习工具——从学生到初创公司再到企业团队。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "tensorflow-2015-blog",
+        "wikipedia-tensorflow"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -150,6 +167,8 @@
     "curatorNote": {
       "en": "Added during 2026 historical gap fill. TensorFlow marks the democratization of deep learning tools.",
       "zhHans": "2026 年历史空白补全时添加。TensorFlow 标志着深度学习工具的民主化。"
-    }
+    },
+    "publishedAt": "2026-06-29",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

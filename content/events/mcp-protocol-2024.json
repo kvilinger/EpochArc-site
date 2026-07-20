@@ -6,7 +6,7 @@
     "zhHans": "Anthropic 发布模型上下文协议（MCP），连接 AI 与现实工具的开源标准"
   },
   "searchSummary": {
-    "en": "MCP (Model Context Protocol) by Anthropic \u2014 an open standard connecting AI models to real-world tools and data. How a protocol could unify AI tool integration.",
+    "en": "MCP (Model Context Protocol) by Anthropic — an open standard connecting AI models to real-world tools and data. How a protocol could unify AI tool integration.",
     "zhHans": "Anthropic 发布的模型上下文协议（MCP）——连接 AI 模型与真实工具和数据的开放标准。一个协议如何统一 AI 工具集成的方式。"
   },
   "summary": {
@@ -23,10 +23,12 @@
     "en": "November 25, 2024",
     "zhHans": "2024年11月25日"
   },
-  "categories": ["product"],
+  "categories": [
+    "product"
+  ],
   "status": "published",
   "significance": 1,
-  "impactIndex": 5,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": false,
   "impacts": [
@@ -38,10 +40,18 @@
         "en": "Standardized AI-tool integration, making it practical for AI agents to autonomously interact with multiple external systems. Enabled the 2025-2026 wave of autonomous AI agents by reducing integration friction.",
         "zhHans": "标准化了 AI 工具集成，使 AI 智能体自主与多个外部系统交互变得切实可行。通过减少集成摩擦，赋能了 2025-2026 年自主 AI 智能体的浪潮。"
       },
-      "affectedGroups": ["AI developers", "enterprises", "AI companies", "SaaS providers"],
+      "affectedGroups": [
+        "AI developers",
+        "enterprises",
+        "AI companies",
+        "SaaS providers"
+      ],
       "timeframe": "medium",
       "evidenceGrade": "A",
-      "sourceIds": ["anthropic-mcp-blog-2024", "wikipedia-mcp"]
+      "sourceIds": [
+        "anthropic-mcp-blog-2024",
+        "wikipedia-mcp"
+      ]
     },
     {
       "dimension": "access_democratization",
@@ -51,10 +61,16 @@
         "en": "Open standard under Apache 2.0, with SDKs and pre-built servers for major platforms. Reduced integration cost for smaller developers and made AI-tool connectivity accessible beyond large enterprises.",
         "zhHans": "Apache 2.0 下的开放标准，附带主流平台的 SDK 和预构建服务器。降低了小型开发者的集成成本，使 AI 工具连接超越了大型企业的范围。"
       },
-      "affectedGroups": ["indie developers", "startups", "enterprises"],
+      "affectedGroups": [
+        "indie developers",
+        "startups",
+        "enterprises"
+      ],
       "timeframe": "medium",
       "evidenceGrade": "A",
-      "sourceIds": ["anthropic-mcp-blog-2024"]
+      "sourceIds": [
+        "anthropic-mcp-blog-2024"
+      ]
     }
   ],
   "claims": [
@@ -66,14 +82,28 @@
       },
       "claimType": "fact",
       "evidenceGrade": "A",
-      "sourceIds": ["anthropic-mcp-blog-2024"]
+      "sourceIds": [
+        "anthropic-mcp-blog-2024"
+      ]
     }
   ],
   "sources": [
-    { "sourceId": "anthropic-mcp-blog-2024", "supports": ["mcp-announcement-2024"], "quote": "Today, we're open-sourcing the Model Context Protocol (MCP), a new standard for connecting AI assistants to the systems where data lives." },
-    { "sourceId": "wikipedia-mcp", "supports": [], "quote": "MCP was announced by Anthropic in November 2024 as an open standard." }
+    {
+      "sourceId": "anthropic-mcp-blog-2024",
+      "supports": [
+        "mcp-announcement-2024"
+      ],
+      "quote": "Today, we're open-sourcing the Model Context Protocol (MCP), a new standard for connecting AI assistants to the systems where data lives."
+    },
+    {
+      "sourceId": "wikipedia-mcp",
+      "quote": "MCP was announced by Anthropic in November 2024 as an open standard."
+    }
   ],
-  "relatedEvents": ["openai-operator-2025", "openclaw-2026"],
+  "relatedEvents": [
+    "openai-operator-2025",
+    "openclaw-2026"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
@@ -82,7 +112,13 @@
     "publishedAt": "2026-06-25",
     "curator": "gang",
     "changeLog": [
-      { "date": "2026-06-25", "changeType": "created", "summary": "Added MCP — open standard for AI-tool integration, industry standard." }
-    ]
+      {
+        "date": "2026-06-25",
+        "changeType": "created",
+        "summary": "Added MCP — open standard for AI-tool integration, industry standard."
+      }
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

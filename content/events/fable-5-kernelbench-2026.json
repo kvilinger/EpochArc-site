@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 8,
+  "impactIndex": 6,
   "consensusLevel": "debated",
   "controversy": true,
   "categories": [
@@ -50,7 +50,8 @@
       "sourceIds": [
         "kernelbench-mega-fable5-2026",
         "import-ai-464-2026"
-      ]
+      ],
+      "evidenceGrade": "A"
     },
     {
       "dimension": "paradigm_shift",
@@ -68,7 +69,8 @@
       "timeframe": "long",
       "sourceIds": [
         "import-ai-464-2026"
-      ]
+      ],
+      "evidenceGrade": "C"
     },
     {
       "dimension": "risk_creation",
@@ -86,7 +88,8 @@
       "timeframe": "medium",
       "sourceIds": [
         "import-ai-464-2026"
-      ]
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "claims": [
@@ -138,6 +141,20 @@
         "kernelbench-mega-fable5-2026"
       ],
       "evidenceGrade": "C"
+    },
+    {
+      "id": "fable-5-kernelbench-2026-impact-claim",
+      "text": {
+        "en": "Fable 5's 18.71x speedup on KernelBench-Mega represents a step-change in AI kernel optimization ability. The single-kernel-launch approach is a novel technique that human engineers had not discovered. Historical progression: Opus 4 (~3x, May 2025) → Mythos Preview (~52x training-code, Apr 2026) → Fable 5 (18.71x inference kernel, Jul 2026).",
+        "zhHans": "Fable 5 在 KernelBench-Mega 上的 18.71 倍加速代表了 AI 内核优化能力的阶跃变化。单次内核启动方法是人类工程师未曾发现的新技术。历史进展：Opus 4（约 3 倍，2025年5月）→ Mythos Preview（约 52 倍训练代码，2026年4月）→ Fable 5（18.71 倍推理内核，2026年7月）。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "kernelbench-mega-fable5-2026",
+        "import-ai-464-2026"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -172,6 +189,10 @@
   "editorial": {
     "createdAt": "2026-07-08",
     "updatedAt": "2026-07-08",
-    "curator": "gang"
+    "curator": "gang",
+    "reviewedAt": "2026-07-08",
+    "reviewer": "gang",
+    "publishedAt": "2026-07-08",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

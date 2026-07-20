@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 5,
   "consensusLevel": "broad",
   "controversy": false,
   "categories": [
@@ -50,7 +50,8 @@
       "timeframe": "medium",
       "sourceIds": [
         "reuters-gpt56-approval-2026"
-      ]
+      ],
+      "evidenceGrade": "C"
     },
     {
       "dimension": "access_democratization",
@@ -68,7 +69,8 @@
       "timeframe": "short",
       "sourceIds": [
         "reuters-gpt56-approval-2026"
-      ]
+      ],
+      "evidenceGrade": "C"
     },
     {
       "dimension": "risk_creation",
@@ -84,7 +86,8 @@
       "timeframe": "medium",
       "sourceIds": [
         "reuters-gpt56-approval-2026"
-      ]
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "claims": [
@@ -111,6 +114,19 @@
         "reuters-gpt56-approval-2026"
       ],
       "evidenceGrade": "B"
+    },
+    {
+      "id": "gpt-5-6-broad-launch-2026-impact-claim",
+      "text": {
+        "en": "First full test of the U.S. government's voluntary frontier AI pre-release framework. Sets precedent for how future advanced model releases will be handled — a lighter-touch alternative to EU-style mandatory compliance.",
+        "zhHans": "美国政府自愿前沿 AI 预发布框架的首次全面测试。为未来高级模型发布的处理方式设立了先例——一种比欧盟式强制合规更轻量的替代方案。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "reuters-gpt56-approval-2026"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -120,6 +136,12 @@
         "gpt-5-6-broad-launch-2026"
       ],
       "quote": "The U.S. Department of Commerce has approved a broad launch of OpenAI's advanced GPT-5.6 model following additional government testing."
+    },
+    {
+      "sourceId": "openai-gpt56-announce-2026",
+      "supports": [
+        "release-context"
+      ]
     }
   ],
   "relatedEvents": [
@@ -129,6 +151,10 @@
   "editorial": {
     "createdAt": "2026-07-08",
     "updatedAt": "2026-07-08",
-    "curator": "gang"
+    "curator": "gang",
+    "reviewedAt": "2026-07-08",
+    "reviewer": "gang",
+    "publishedAt": "2026-07-08",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

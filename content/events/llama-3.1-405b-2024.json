@@ -84,6 +84,20 @@
       "sourceIds": [
         "meta-llama-3.1"
       ]
+    },
+    {
+      "id": "llama-3.1-405b-2024-impact-claim",
+      "text": {
+        "en": "First open-weight model to match closed-source frontier performance. Proved that open-source AI could compete at the highest level. Reset industry debate from 'if' open models could match proprietary to 'when and how.' Accelerated the open-weight ecosystem that defined the 2025 AI landscape.",
+        "zhHans": "第一个匹配闭源前沿性能的开源权重模型。证明了开源 AI 可以在最高水平上竞争。将行业辩论从\"开放模型能否匹敌专有模型\"重置为\"何时以及如何\"。加速了定义 2025 年 AI 格局的开源权重生态系统。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "meta-llama-3.1",
+        "meta-llama-3.1-405b-review"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -120,7 +134,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for Llama 3.1 405B."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "capability"

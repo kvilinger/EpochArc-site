@@ -1,3 +1,7 @@
+function sitePath(path) {
+  return typeof window.localizedSitePath === 'function' ? window.localizedSitePath(path) : path;
+}
+
 // Detect browser language for initial default
 function detectBrowserLang() {
   const langs = navigator.languages || [navigator.language || ''];
@@ -36,8 +40,8 @@ function updateLocale() {
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) {
     metaDesc.setAttribute('content', isZh 
-      ? 'EpochArc 方法页：如何科学地对 AI 里程碑进行结构化收录、重要度评级、争议共识处理以及可能方向公开监测。' 
-      : 'Methodology for EpochArc: how the site curates AI milestones, source evidence, impact assessments, and Possible Directions.'
+      ? '了解 EpochArc 如何筛选 AI 里程碑、评估来源证据、计算影响指数并复核可能方向。'
+      : 'How EpochArc curates AI milestones, evaluates evidence, scores impact, and reviews possible directions.'
     );
   }
 
@@ -113,7 +117,7 @@ document.addEventListener('click', function(e) {
       const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
       window.location.href = isSubDir ? '../../index.html' : 'index.html';
     } else {
-      window.location.href = '/';
+      window.location.href = sitePath('/');
     }
   }
   
@@ -123,7 +127,7 @@ document.addEventListener('click', function(e) {
       const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
       window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
     } else {
-      window.location.href = '/arcs';
+      window.location.href = sitePath('/arcs');
     }
   }
 });

@@ -6,7 +6,7 @@
     "zhHans": "Anthropic 激活 ASL-3 安全协议，建立首个与能力阈值挂钩的可操作 AI 安全框架"
   },
   "searchSummary": {
-    "en": "Anthropic activated ASL-3 safety protocol in 2025 \u2014 the first operational AI safety framework tied to capability thresholds. How frontier labs are building structured safety responses.",
+    "en": "Anthropic activated ASL-3 safety protocol in 2025 — the first operational AI safety framework tied to capability thresholds. How frontier labs are building structured safety responses.",
     "zhHans": "Anthropic 于 2025 年激活 ASL-3 安全协议——第一个与 AI 能力阈值挂钩的可操作安全框架。前沿实验室如何构建结构化的 AI 安全响应机制。"
   },
   "summary": {
@@ -17,7 +17,7 @@
     "en": "Anthropic had pioneered the concept of Responsible Scaling Policy in 2023, proposing that as AI models became more capable, labs should progressively tighten safety measures. ASL-2 covered current models with standard monitoring. ASL-3 was designed for models with capabilities that could pose significant risks — including autonomous AI research, bioweapon development assistance, or large-scale persuasion. The May 2025 activation meant that Anthropic assessed its latest models as reaching the ASL-3 capability threshold, triggering enhanced safeguards: asynchronous monitoring classifiers for analyzing model outputs for threats, post-hoc jailbreak detection with rapid response procedures, and deployment restrictions for the most sensitive use cases. The framework was notable for its specificity: it defined concrete capability thresholds (e.g., performance on specific biology benchmarks, autonomous coding capabilities) rather than vague safety commitments. It also included a commitment to not deploy models beyond ASL-3 in uncontrolled settings without further safety evidence. While critics argued that the thresholds were self-defined and self-enforced, ASL-3's activation was a milestone in moving AI safety from abstract principles to operational engineering. It influenced discussions at California's SB 53 hearings and was cited as a model for how AI companies could implement the EU AI Act's requirements for 'systemic risk' models.",
     "zhHans": "Anthropic 在 2023 年率先提出了负责任扩展政策的概念，提出随着 AI 模型能力增强，实验室应逐步收紧安全措施。ASL-2 涵盖当前模型，采用标准监控。ASL-3 设计用于具有可能构成重大风险的能力的模型——包括自主 AI 研究、生物武器开发辅助或大规模说服。2025 年 5 月的激活意味着 Anthropic 评估其最新模型已达到 ASL-3 能力阈值，触发了增强的安全防护：用于分析模型输出以检测威胁的异步监控分类器、带有快速响应程序的事后越狱检测，以及对最敏感用例的部署限制。该框架以其具体性而著称：它定义了具体的能力阈值（例如，在特定生物学基准上的表现、自主编程能力），而不是模糊的安全承诺。它还包括一项承诺：在没有进一步安全证据的情况下，不在不受控环境中部署超过 ASL-3 的模型。虽然批评者认为阈值是自我定义和自我执行的，但 ASL-3 的激活是将 AI 安全从抽象原则推进到运作工程的一个里程碑。它影响了加州 SB 53 听证会中的讨论，并被引用为 AI 公司如何实施欧盟 AI 法案对\"系统性风险\"模型要求的范例。"
   },
-  "date": "2025-05-01",
+  "date": "2025-05",
   "datePrecision": "month",
   "displayDate": {
     "en": "May 2025",
@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 1,
-  "impactIndex": 5,
+  "impactIndex": 6,
   "consensusLevel": "emerging",
   "controversy": true,
   "impacts": [
@@ -64,7 +64,9 @@
       ],
       "timeframe": "medium",
       "evidenceGrade": "B",
-      "sourceIds": []
+      "sourceIds": [
+        "anthropic-rsp-v3"
+      ]
     }
   ],
   "claims": [
@@ -104,7 +106,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for Anthropic ASL-3."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "capability"

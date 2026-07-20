@@ -6,7 +6,7 @@
     "zhHans": "AlphaFold 开发者获诺贝尔化学奖，首个因 AI 驱动的科学发现获奖的诺贝尔"
   },
   "searchSummary": {
-    "en": "AlphaFold developers won the 2024 Nobel Prize in Chemistry \u2014 the first Nobel awarded for AI-driven scientific discovery. How AI transformed biology and earned science\u2019s highest honor.",
+    "en": "AlphaFold developers won the 2024 Nobel Prize in Chemistry — the first Nobel awarded for AI-driven scientific discovery. How AI transformed biology and earned science’s highest honor.",
     "zhHans": "AlphaFold 开发者获 2024 年诺贝尔化学奖——首个因 AI 驱动的科学发现而颁发的诺贝尔奖。AI 如何改变了生物学、赢得了科学的最高荣誉。"
   },
   "summary": {
@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 8,
+  "impactIndex": 7,
   "consensusLevel": "broad",
   "controversy": false,
   "impacts": [
@@ -84,6 +84,20 @@
       "sourceIds": [
         "nobel-chemistry-2024"
       ]
+    },
+    {
+      "id": "alphafold-nobel-2024-impact-claim",
+      "text": {
+        "en": "First Nobel Prize awarded for AI-driven scientific discovery. Legitimized AI as a fundamental tool of scientific research at the highest global recognition level. Triggered a wave of investment and interest in AI-for-science applications across biology, chemistry, and materials science.",
+        "zhHans": "首次因 AI 驱动的科学发现授予诺贝尔奖。以最高全球认可级别肯定了 AI 作为科学研究的基本工具。在生物学、化学和材料科学领域引发了一波对 AI 驱动科学应用的投资和兴趣。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "nobel-chemistry-2024",
+        "deepmind-alphafold-nobel"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -103,7 +117,6 @@
     },
     {
       "sourceId": "wikipedia-nobel-prize-chemistry-2024",
-      "supports": [],
       "quote": "The Nobel Prize in Chemistry 2024 was awarded to Hassabis, Jumper, Baker."
     }
   ],
@@ -124,7 +137,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for AlphaFold Nobel Prize."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "society",

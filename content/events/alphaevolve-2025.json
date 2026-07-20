@@ -1,0 +1,130 @@
+{
+  "id": "alphaevolve-2025",
+  "slug": "alphaevolve-2025",
+  "title": {
+    "en": "Google DeepMind introduces AlphaEvolve for algorithm discovery",
+    "zhHans": "Google DeepMind 发布用于算法发现的 AlphaEvolve"
+  },
+  "summary": {
+    "en": "Google DeepMind introduced AlphaEvolve, a Gemini-powered coding agent that combines program generation, automated evaluation, and evolutionary search to optimize algorithms.",
+    "zhHans": "Google DeepMind 发布 AlphaEvolve：一个由 Gemini 驱动、结合程序生成、自动评估与进化搜索来优化算法的编程智能体。"
+  },
+  "narrative": {
+    "en": "AlphaEvolve turned algorithm discovery into an iterative generate-evaluate-improve loop and reported results in mathematics and Google infrastructure. At launch, however, the system had not been released to outside researchers, so reproducibility and generality remained open questions.",
+    "zhHans": "AlphaEvolve 把算法发现变成“生成—评估—改进”的迭代闭环，并报告了数学与 Google 基础设施中的成果。但发布时系统尚未向外部研究者开放，可复现性和普适性仍待验证。"
+  },
+  "date": "2025-05-14",
+  "datePrecision": "day",
+  "categories": [
+    "capability"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 6,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "AlphaEvolve demonstrated an automated loop that generated and evaluated algorithmic candidates, reporting improvements in mathematical constructions and production computing tasks.",
+        "zhHans": "AlphaEvolve 展示了自动生成并评估算法候选方案的闭环，并报告了数学构造与生产计算任务上的改进。"
+      },
+      "affectedGroups": [
+        "computer scientists",
+        "mathematicians",
+        "systems engineers",
+        "AI researchers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-alphaevolve-2025",
+        "nature-alphaevolve-2025"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "The system framed AI-assisted discovery as a repeatable optimization workflow rather than a single generated answer.",
+        "zhHans": "该系统把 AI 辅助发现表述为可重复的优化工作流，而不是一次性的生成答案。"
+      },
+      "affectedGroups": [
+        "research organizations",
+        "software teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "google-alphaevolve-2025",
+        "nature-alphaevolve-2025"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "alphaevolve-launch",
+      "text": {
+        "en": "Google DeepMind announced AlphaEvolve on May 14, 2025 as a Gemini-powered agent for algorithm discovery and optimization.",
+        "zhHans": "Google DeepMind 于 2025 年 5 月 14 日发布 AlphaEvolve，将其定位为由 Gemini 驱动的算法发现与优化智能体。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-alphaevolve-2025",
+        "nature-alphaevolve-2025"
+      ]
+    },
+    {
+      "id": "alphaevolve-external-validation-limit",
+      "text": {
+        "en": "At launch, AlphaEvolve had not been made available to researchers outside Google DeepMind, limiting independent validation.",
+        "zhHans": "发布时 AlphaEvolve 尚未向 Google DeepMind 之外的研究者开放，限制了独立验证。"
+      },
+      "claimType": "limitation",
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "nature-alphaevolve-2025"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "google-alphaevolve-2025",
+      "supports": [
+        "alphaevolve-launch"
+      ]
+    },
+    {
+      "sourceId": "nature-alphaevolve-2025",
+      "supports": [
+        "alphaevolve-launch",
+        "alphaevolve-external-validation-limit"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "alphafold-2020",
+    "gemini-deep-think-imo-gold-2025"
+  ],
+  "editorial": {
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20",
+    "reviewedAt": "2026-07-20",
+    "publishedAt": "2026-07-20",
+    "curator": "EpochArc editorial",
+    "reviewer": "EpochArc editorial",
+    "changeLog": [
+      {
+        "date": "2026-07-20",
+        "changeType": "created",
+        "summary": "Added after the v2.3 audit found a published direction pointing to a missing event."
+      }
+    ],
+    "reviewProvenance": "v2.3"
+  }
+}

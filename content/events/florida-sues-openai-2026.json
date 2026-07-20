@@ -6,7 +6,7 @@
     "zhHans": "佛罗里达起诉 OpenAI 和 Sam Altman，美国首次州级诉讼针对 AI 公司安全"
   },
   "searchSummary": {
-    "en": "Florida sued OpenAI and Sam Altman in 2026 \u2014 the first US state-level lawsuit against an AI company over safety. How legal accountability for AI harm reached a new frontier.",
+    "en": "Florida sued OpenAI and Sam Altman in 2026 — the first US state-level lawsuit against an AI company over safety. How legal accountability for AI harm reached a new frontier.",
     "zhHans": "佛罗里达 2026 年起诉 OpenAI 和 Sam Altman——美国首次州级诉讼针对 AI 公司的安全问题。AI 损害的法律责任如何达到了新前沿。"
   },
   "summary": {
@@ -97,6 +97,20 @@
         "nbc-florida-openai",
         "npr-florida-openai"
       ]
+    },
+    {
+      "id": "florida-sues-openai-2026-impact-claim",
+      "text": {
+        "en": "First US state government lawsuit against an AI company over safety. Alleged OpenAI misled users about safety, failed to warn about risks, and marketed ChatGPT as safe for children. Sought injunctive relief, civil penalties, and disgorgement of profits. Triggered investigations by other state AGs.",
+        "zhHans": "美国州政府首次就安全问题起诉 AI 公司。指控 OpenAI 在安全方面误导用户，未能警告风险，并将 ChatGPT 宣传为对儿童安全。寻求禁令救济、民事罚款和追缴利润。触发了其他州总检察长的调查。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "nbc-florida-openai",
+        "npr-florida-openai"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -116,12 +130,10 @@
     },
     {
       "sourceId": "myfloridalegal-sues-openai",
-      "supports": [],
       "quote": "Attorney General files first-in-the-nation lawsuit against OpenAI."
     },
     {
       "sourceId": "politico-florida-openai-2026",
-      "supports": [],
       "quote": "Florida sues OpenAI and Sam Altman over AI risks."
     }
   ],
@@ -141,7 +153,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for Florida sues OpenAI."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "governance",

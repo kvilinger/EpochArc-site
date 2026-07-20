@@ -23,7 +23,7 @@
     "safety"
   ],
   "significance": 1,
-  "impactIndex": 5,
+  "impactIndex": 6,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -75,7 +75,7 @@
     {
       "dimension": "paradigm_shift",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "Mainstream use of AI voice cloning for deceased celebrities normalizes posthumous digital resurrection, raising fundamental questions about consent, identity rights, and the boundary between tribute and exploitation.",
         "zhHans": "主流平台使用 AI 语音克隆还原已故名人，使死后数字复活正常化，引发了关于同意、身份权利以及致敬与剥削之间界限的根本性问题。"
@@ -95,7 +95,7 @@
     {
       "dimension": "risk_creation",
       "direction": "negative",
-      "severity": 1,
+      "severity": -1,
       "description": {
         "en": "The controversy reinforces public distrust of AI-generated content and could accelerate calls for regulation of AI voice cloning without explicit consent.",
         "zhHans": "争议加剧了公众对 AI 生成内容的不信任，可能加速对未经明确同意进行 AI 语音克隆的监管呼声。"
@@ -148,6 +148,12 @@
         "changeType": "created",
         "summary": "Initial event entry."
       }
-    ]
-  }
+    ],
+    "reviewedAt": "2026-07-08",
+    "reviewer": "gang",
+    "publishedAt": "2026-07-08",
+    "reviewProvenance": "legacy_pre_v23"
+  },
+  "slug": "netflix-gene-wilder-ai-2026",
+  "status": "published"
 }

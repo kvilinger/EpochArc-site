@@ -6,7 +6,7 @@
     "zhHans": "加州签署 SB 53，美国首部要求 AI 安全透明度和吹哨人保护的州级法律"
   },
   "searchSummary": {
-    "en": "California SB 53 (2025) \u2014 the first US state law requiring AI safety transparency and whistleblower protections. How California led US AI regulation at the state level.",
+    "en": "California SB 53 (2025) — the first US state law requiring AI safety transparency and whistleblower protections. How California led US AI regulation at the state level.",
     "zhHans": "加州 SB 53（2025 年）——美国第一部要求 AI 安全透明度和举报人保护的州级法律。加州如何在州层面引领了美国 AI 监管。"
   },
   "summary": {
@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 6,
   "consensusLevel": "debated",
   "controversy": true,
   "impacts": [
@@ -64,7 +64,10 @@
       ],
       "timeframe": "medium",
       "evidenceGrade": "B",
-      "sourceIds": []
+      "sourceIds": [
+        "gov-ca-sb53",
+        "techcrunch-sb53"
+      ]
     }
   ],
   "claims": [
@@ -92,6 +95,20 @@
         "gov-ca-sb53",
         "techcrunch-sb53"
       ]
+    },
+    {
+      "id": "california-sb53-2025-impact-claim",
+      "text": {
+        "en": "First US state-level AI safety legislation with enforceable requirements. Filled federal regulatory vacuum. Established template for other states. Required standardized safety frameworks, incident reporting, and whistleblower protections for frontier AI developers.",
+        "zhHans": "美国第一部具有可执行要求的州级 AI 安全立法。填补了联邦监管真空。为其他州建立了模板。要求前沿 AI 开发者制定标准化安全框架、事件报告和吹哨人保护。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "gov-ca-sb53",
+        "techcrunch-sb53"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -127,7 +144,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for California SB 53."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "governance"

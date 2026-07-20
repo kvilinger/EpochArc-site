@@ -2,20 +2,20 @@
   "id": "kimi-k3-2026",
   "slug": "kimi-k3-2026",
   "title": {
-    "en": "Moonshot AI releases Kimi K3 — the largest open-source model ever at 2.8 trillion parameters",
-    "zhHans": "Moonshot AI 发布 Kimi K3——史上最大开源模型，2.8 万亿参数"
+    "en": "Moonshot AI announces Kimi K3, a 2.8-trillion-parameter open-weight model",
+    "zhHans": "Moonshot AI 发布 Kimi K3——2.8 万亿参数开放权重模型"
   },
   "searchSummary": {
-    "en": "Kimi K3 (Jul 2026) — Moonshot AI's 2.8-trillion-parameter open-source MoE model with 1M-token context, native vision, and Kimi Delta Attention architecture. The largest open-source model ever released, rivaling top US frontier systems.",
-    "zhHans": "Kimi K3（2026 年 7 月）——Moonshot AI 的 2.8 万亿参数开源 MoE 模型，100 万 token 上下文，原生视觉，Kimi Delta Attention 架构。史上最大开源模型，与顶尖美国前沿系统竞争。"
+    "en": "Kimi K3 (Jul 2026) — Moonshot AI's 2.8-trillion-parameter MoE model with a 1M-token context window, native vision, and Kimi Delta Attention. Service access began at launch; full open weights were scheduled for July 27.",
+    "zhHans": "Kimi K3（2026 年 7 月）——Moonshot AI 的 2.8 万亿参数 MoE 模型，具备 100 万 token 上下文、原生视觉和 Kimi Delta Attention。发布时已开放服务访问，完整开放权重计划于 7 月 27 日提供。"
   },
   "summary": {
-    "en": "On July 16, 2026, Moonshot AI released Kimi K3, a 2.8-trillion-parameter open-source Mixture-of-Experts model — the largest open-source model ever released. The model features a 1-million-token context window, native vision capabilities, and uses Kimi Delta Attention with Attention Residuals, activating 16 of 896 experts per token. It was launched on Kimi Code and the Kimi app. VentureBeat described it as 'rivaling top U.S. systems' on frontier AI benchmarks. The release continues the trend of Chinese AI labs releasing increasingly large open-weight models, intensifying the open-vs-closed competitive dynamic.",
-    "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布了 Kimi K3，一个 2.8 万亿参数的开源混合专家（MoE）模型——有史以来发布的最大开源模型。该模型具有 100 万 token 的上下文窗口、原生视觉能力，并使用 Kimi Delta Attention 和 Attention Residuals 架构，每个 token 激活 896 个专家中的 16 个。它已在 Kimi Code 和 Kimi 应用上发布。VentureBeat 称其在基准测试上与顶尖美国系统竞争。此次发布延续了中国 AI 实验室发布越来越大开源权重模型的趋势，加剧了开源与闭源的竞争态势。"
+    "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model. It has a 1-million-token context window, native vision, Kimi Delta Attention, and Attention Residuals, activating 16 of 896 experts per token. Service access launched through Kimi products, while full open weights were scheduled for July 27 and therefore were not yet independently inspectable at the event date. Early benchmark comparisons were provider-reported and should be treated as emerging evidence.",
+    "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 Kimi K3，一款 2.8 万亿参数的混合专家（MoE）模型。它具备 100 万 token 上下文、原生视觉、Kimi Delta Attention 和 Attention Residuals，每个 token 激活 896 个专家中的 16 个。Kimi 产品已开放服务访问，但完整开放权重计划于 7 月 27 日提供，因此在事件发生时尚不能独立检查。早期基准比较由提供方报告，应视为仍在形成中的证据。"
   },
   "narrative": {
-    "en": "Moonshot AI, a Beijing-based AI company, had established itself as a major player in the Chinese AI ecosystem with the Kimi series of models. Kimi K3 represented a significant leap: at 2.8 trillion parameters, it was the largest open-source model ever released, surpassing DeepSeek V4 (1.6T) by a wide margin. The architecture used Kimi Delta Attention and Attention Residuals — innovations designed to handle the computational challenges of a 2.8T MoE with 896 experts. Only 16 experts were activated per token, keeping inference costs manageable despite the massive total parameter count. The 1-million-token context window and native vision processing put K3 in direct competition with GPT-5.6, Claude Sonnet 5, and Gemini on multimodal tasks. The release was notable not just for its scale but for its timing and strategic context. It came one day after Thinking Machines Lab's Inkling launch and in the same week as the AI price war — a period of maximum competitive intensity in frontier AI. For the open-weight ecosystem, K3's release demonstrated that the ceiling for open-source model scale had not yet been reached. For the US-China AI competition, it reinforced the pattern of Chinese labs responding to export controls with architectural innovation and scale. VentureBeat explicitly framed the release as part of the intensifying rivalry between Chinese and US AI systems.",
-    "zhHans": "Moonshot AI 是一家总部位于北京的 AI 公司，此前已通过 Kimi 系列模型在中国 AI 生态系统中建立了重要地位。Kimi K3 代表了显著的飞跃：2.8 万亿参数使其成为有史以来发布的最大开源模型，大幅超越 DeepSeek V4（1.6T）。该架构使用 Kimi Delta Attention 和 Attention Residuals——旨在应对拥有 896 个专家的 2.8T MoE 计算挑战的创新设计。每个 token 仅激活 16 个专家，使得尽管总参数量巨大，推理成本仍然可控。100 万 token 上下文窗口和原生视觉处理使 K3 在多模态任务上与 GPT-5.6、Claude Sonnet 5 和 Gemini 直接竞争。此次发布不仅因其规模而引人注目，还因其时机和战略背景。它恰逢 Thinking Machines Lab 的 Inkling 发布次日，并在 AI 价格战同一周——这是一个前沿 AI 竞争强度达到顶峰的时刻。对开源权重生态系统而言，K3 的发布表明开源模型规模的极限尚未达到。对中美 AI 竞争而言，它强化了中国实验室以架构创新和规模应对出口管制的模式。VentureBeat 明确将此次发布描述为中美 AI 系统之间日益激烈竞争的一部分。"
+    "en": "Moonshot AI had established itself in China's AI ecosystem through the Kimi model family. Kimi K3 is unusually large at 2.8 trillion total parameters, using Kimi Delta Attention and Attention Residuals in a sparse MoE with 896 experts, 16 active per token. Moonshot reported a 1-million-token context window and native vision. These specifications make K3 a notable open-weight announcement, but total parameter count does not by itself establish model quality, inference efficiency, or frontier parity. At launch, the model was accessible through Kimi products and APIs; independent inspection of the promised full weights had to wait for their scheduled July 27 availability. The event therefore records the announcement and access milestone, while treating performance and ecosystem effects as emerging rather than settled.",
+    "zhHans": "Moonshot AI 此前已通过 Kimi 模型系列在中国 AI 生态中建立重要地位。Kimi K3 的总参数量达到 2.8 万亿，采用 Kimi Delta Attention 和 Attention Residuals；其稀疏 MoE 含 896 个专家，每个 token 激活 16 个。Moonshot 报告其上下文窗口为 100 万 token，并具备原生视觉能力。这些规格使 K3 成为值得记录的开放权重模型公告，但总参数量本身不能证明模型质量、推理效率或已达到前沿同等水平。发布时，模型已可通过 Kimi 产品和 API 使用；要独立检查其承诺的完整权重，仍需等待计划中的 7 月 27 日开放。因此，本条目记录公告与访问节点，并将性能和生态影响标为仍在形成，而非既定结论。"
   },
   "date": "2026-07-16",
   "datePrecision": "day",
@@ -25,36 +25,53 @@
   },
   "status": "published",
   "significance": 1,
-  "impactIndex": 5,
-  "consensusLevel": "broad",
+  "impactIndex": 4,
+  "consensusLevel": "emerging",
   "controversy": false,
-  "categories": ["capability", "commerce"],
+  "categories": [
+    "capability",
+    "commerce"
+  ],
   "impacts": [
     {
       "dimension": "paradigm_shift",
       "severity": 1,
       "direction": "positive",
       "description": {
-        "en": "At 2.8 trillion parameters, Kimi K3 is the largest open-source model ever released, demonstrating that the scale ceiling for open-weight models continues to rise and that Chinese labs can produce competitive frontier models despite US export controls.",
-        "zhHans": "以 2.8 万亿参数，Kimi K3 是有史以来发布的最大开源模型，表明开源权重模型的规模上限仍在上升，以及中国实验室在美国出口管制下仍能生产具竞争力的前沿模型。"
+        "en": "Kimi K3's 2.8-trillion-parameter announcement raises the scale ceiling claimed for open-weight models, but competitive quality and deployability still require independent testing after the full weights become available.",
+        "zhHans": "Kimi K3 的 2.8 万亿参数公告提高了开放权重模型所宣称的规模上限，但其竞争力和可部署性仍需在完整权重开放后接受独立测试。"
       },
-      "affectedGroups": ["AI researchers", "open-source community", "AI developers"],
+      "affectedGroups": [
+        "AI researchers",
+        "open-source community",
+        "AI developers"
+      ],
       "timeframe": "medium",
       "evidenceGrade": "A",
-      "sourceIds": ["venturebeat-kimi-k3-2026", "marktechpost-kimi-k3-2026"]
+      "sourceIds": [
+        "kimi-k3-official-2026",
+        "venturebeat-kimi-k3-2026",
+        "marktechpost-kimi-k3-2026"
+      ]
     },
     {
       "dimension": "economic_disruption",
       "severity": 1,
       "direction": "positive",
       "description": {
-        "en": "Kimi K3's open-source release continues the downward pressure on AI pricing, offering a no-cost alternative to proprietary APIs for organizations capable of self-hosting.",
-        "zhHans": "Kimi K3 的开源发布继续对 AI 定价施加下行压力，为有能力自托管的组织提供了专有 API 的免费替代方案。"
+        "en": "If the promised full weights are released and practically deployable, Kimi K3 could add pricing pressure and a self-hosting alternative; that effect was not yet observable at announcement time.",
+        "zhHans": "如果承诺的完整权重按计划开放且具备实际部署条件，Kimi K3 可能增加价格压力并提供自托管选择；在公告时点，这一影响尚未可观察。"
       },
-      "affectedGroups": ["enterprises", "startups", "developers"],
+      "affectedGroups": [
+        "enterprises",
+        "startups",
+        "developers"
+      ],
       "timeframe": "medium",
-      "evidenceGrade": "B",
-      "sourceIds": ["venturebeat-kimi-k3-2026"]
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "venturebeat-kimi-k3-2026"
+      ]
     }
   ],
   "claims": [
@@ -62,37 +79,54 @@
       "id": "kimi-k3-release-2026",
       "claimType": "fact",
       "text": {
-        "en": "Moonshot AI released Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter open-source MoE model with 1M-token context and native vision.",
-        "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数开源 MoE 模型，100 万 token 上下文，原生视觉能力。"
+        "en": "Moonshot AI announced Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter MoE model with a 1M-token context window and native vision; full weights were scheduled for July 27.",
+        "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数 MoE 模型，具备 100 万 token 上下文和原生视觉；完整权重计划于 7 月 27 日提供。"
       },
       "evidenceGrade": "A",
-      "sourceIds": ["venturebeat-kimi-k3-2026", "marktechpost-kimi-k3-2026"]
+      "sourceIds": [
+        "kimi-k3-official-2026",
+        "venturebeat-kimi-k3-2026",
+        "marktechpost-kimi-k3-2026"
+      ]
     },
     {
       "id": "kimi-k3-largest-open-source-2026",
       "claimType": "fact",
       "text": {
-        "en": "Kimi K3 is the largest open-source model ever released at 2.8 trillion parameters.",
-        "zhHans": "Kimi K3 是有史以来发布的最大开源模型，拥有 2.8 万亿参数。"
+        "en": "Moonshot describes Kimi K3 as a 2.8-trillion-parameter open-weight model, while independent inspection of the full weights was pending their scheduled July 27 release.",
+        "zhHans": "Moonshot 将 Kimi K3 描述为 2.8 万亿参数的开放权重模型；在计划于 7 月 27 日发布完整权重前，独立检查仍待进行。"
       },
-      "evidenceGrade": "B",
-      "sourceIds": ["venturebeat-kimi-k3-2026"]
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "kimi-k3-official-2026",
+        "venturebeat-kimi-k3-2026"
+      ]
     }
   ],
   "sources": [
     {
+      "sourceId": "kimi-k3-official-2026",
+      "supports": [
+        "kimi-k3-release-2026",
+        "kimi-k3-largest-open-source-2026"
+      ]
+    },
+    {
       "sourceId": "venturebeat-kimi-k3-2026",
-      "supports": ["kimi-k3-release-2026"],
+      "supports": [
+        "kimi-k3-release-2026"
+      ],
       "quote": "Moonshot AI released Kimi K3, a 2.8 trillion-parameter open-source AI model from China that rivals top U.S. systems."
     },
     {
       "sourceId": "marktechpost-kimi-k3-2026",
-      "supports": ["kimi-k3-release-2026"],
+      "supports": [
+        "kimi-k3-release-2026"
+      ],
       "quote": "Moonshot AI just released Kimi K3. It is a 2.8-trillion-parameter model with native vision and a 1-million-token context window."
     },
     {
       "sourceId": "kie-ai-kimi-k3-2026",
-      "supports": [],
       "quote": "Kimi K3 is Moonshot AI's next-gen model — a ~2.8T MoE with a 1M-token context window."
     }
   ],
@@ -101,11 +135,13 @@
     "glm-52-open-source-2026",
     "deepseek-r1-2025"
   ],
-  "relatedForecasts": ["open-vs-closed"],
+  "relatedForecasts": [
+    "open-vs-closed"
+  ],
   "editorial": {
     "createdAt": "2026-07-16",
-    "updatedAt": "2026-07-16",
-    "reviewedAt": "2026-07-16",
+    "updatedAt": "2026-07-20",
+    "reviewedAt": "2026-07-20",
     "publishedAt": "2026-07-16",
     "curator": "gang",
     "changeLog": [
@@ -113,7 +149,14 @@
         "date": "2026-07-16",
         "changeType": "created",
         "summary": "Initial entry for Kimi K3 release."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Distinguished launch access from the scheduled full-weight release and softened unverified performance claims."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "v2.3"
   }
 }

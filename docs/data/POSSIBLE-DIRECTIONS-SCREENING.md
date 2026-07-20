@@ -1,7 +1,7 @@
 # Possible Directions 筛选与评估体系
 
-**版本**：v2.0  
-**更新日期**：2026-06-25  
+**版本**：v2.1
+**更新日期**：2026-07-20
 **适用范围**：首页 `Possible Directions / 可能方向` 模块的候选发现、公开发布、持续复核和方法页披露。
 
 关联文档：
@@ -58,11 +58,11 @@ EpochArc 不自行发明公开的“达成条件”。
 
 如果没有来自以下任一来源的公开共识基础，方向默认保持 `monitor_only`：
 
-- 正式标准或治理框架  
+- 正式标准或治理框架
   例如 NIST、ISO/IEC、监管机构、法院或行业标准组织。
-- 公认评测与方法学  
+- 公认评测与方法学
   例如长期沿用的 benchmark 口径、公开指数、独立审计框架。
-- 稳定的市场/行业共识  
+- 稳定的市场/行业共识
   例如多个独立机构、研究者和主流行业报告对“什么算落地”已有近似一致表述。
 
 没有这些基础时，页面只展示：
@@ -155,6 +155,8 @@ EpochArc 不自行发明公开的“达成条件”。
 - `hold`：方向有意思，但事件链或反向信号不够完整。
 - `reject`：方向过宽、过虚、已成事实、或证据太弱。
 
+每次决定必须写入 `data/possible_directions_screening_log.json`，至少包含 `id`、`decision`、双语理由、reviewer、reviewedAt 和本轮 `runId`。发布数据中的 `editorial.screeningRunId` 必须回指该轮记录。
+
 ---
 
 ## 5. 公开方向的准入门槛
@@ -241,11 +243,11 @@ signal 是：
 
 只有当至少满足以下一类时，方向才允许进入 `consensus_gated`：
 
-1. **Regulatory / standard basis**  
+1. **Regulatory / standard basis**
    存在监管、标准、正式框架或公开规则。
-2. **Benchmark / methodology basis**  
+2. **Benchmark / methodology basis**
    存在相对稳定、被行业引用的公开评测口径。
-3. **Market consensus basis**  
+3. **Market consensus basis**
    多个独立来源对“什么算落地”已形成相对稳定的一致表达。
 
 如果启用 `consensus_gated`，也必须在数据中写清：
@@ -310,6 +312,7 @@ signal 是：
 - 是否改变了方向表述
 - 是否出现了外部共识基础
 - 是否仍应保持 `monitor_only`
+- 复核人、复核时间和下次到期时间
 
 ---
 

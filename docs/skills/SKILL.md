@@ -21,8 +21,10 @@
 | Hacker News | ✅ 可用 | Firebase API（公开） |
 | Brave Search → Reddit（代理） | ✅ 可用 | `node search.js -n 10 "reddit.com AI trending"` |
 | Brave Search → X/Twitter（代理） | ✅ 可用 | `node search.js -n 10 "x.com AI breakthrough"` |
-| Gmail — Import AI | ✅ 已连接，无内容 | `gws gmail users messages list`（需 gws CLI） |
-| Gmail — The Batch | ✅ 已连接，未订阅 | 同上 |
+| Gmail — Import AI | ✅ 可用 | `python3 scripts/check_mail.py import-ai`（IMAP + App Password） |
+| Gmail — The Batch | ✅ 可用 | `python3 scripts/check_mail.py the-batch`（IMAP + App Password） |
+
+Gmail 凭据从 macOS 钥匙串服务 `epocharc-gmail-app-password` 读取，不写入仓库。App Password 不受 OAuth 测试应用 7 天令牌限制，但在账号密码修改、手动撤销或管理员策略变化后可能失效。每轮先运行 `python3 scripts/check_mail.py test`；失败必须记录为通道不可用，不得计入覆盖完成。年度或批次回溯使用 `--limit N --max-chars 0`，避免只读取最新一期或因正文截断漏掉候选。
 
 详见 [WORKFLOW.md](../workflow/WORKFLOW.md) 信源矩阵。
 
@@ -47,7 +49,7 @@
 
 阈值：0-4 不收录 | 5-7 候选池 | 8-10 直接草稿。
 
-**记录方式**：事件候选可写入本地候选日志（例如 `data/event_screening_log.json`，不要求公开）；首页方向的公开运行记录维护在 `data/possible_directions_screening_log.json`。通过审核后回填 `eventId` 与正式事件关联，形成可追溯链条。
+**记录方式**：事件候选统一写入 `data/screening_log.json`；决定值只允许 `skip`、`pool`、`draft`。首页方向的公开运行记录维护在 `data/possible_directions_screening_log.json`。通过审核后回填 `eventId`、`reviewedAt` 与 `reviewer`，形成可追溯链条。
 
 ### 发现后检查：6 分类维度覆盖
 
@@ -110,7 +112,8 @@
 1. `content/events/` 下提交 JSON
 2. 更新 `data/sources.json`（如有新来源）
 3. 运行 `python3 scripts/build_events.py`，校验并生成 `data/events.json`
-4. 刷新页面验证渲染
+4. 运行 `python3 scripts/validate_all.py` 和 `npm run build`
+5. 刷新页面验证渲染
 
 ---
 
@@ -122,12 +125,12 @@
 | **日期规则** | 时间轴上的日期 = "大量普通人可感知到这件事的时刻"。渐变事件取引爆点（OpenClaw 取 HN 发布日而非代码首次提交日），概念流行取造词日，持续进行的事件取代表性里程碑日 |
 | **6 分类** | `capability` 能力突破 / `product` 产品工具 / `commerce` 商业产业 / `governance` 治理监管 / `safety` 安全伦理 / `society` 社会文化。次分类通过 30% 信息丢失测试准入 |
 | `significance` | L1-L3，独立于 impactIndex |
-| `impactIndex` | 0-10，公式见 [DATA-MODEL.md](../data/DATA-MODEL.md) |
+| `impactIndex` | 0-10，使用 v2.3 可复算公式；同维度只计最大绝对严重度 |
 | `consensusLevel` | broad / debated / emerging |
 | `controversy` | boolean，有则必须配 claims[limitation] |
 | `claims` | 每条必须包含唯一 `id`、双语 `text`、`claimType`、`evidenceGrade` 和非空 `sourceIds`；不得使用旧字段别名 |
 | `sources` | 只存 sourceId，不存完整 URL（查 data/sources.json） |
-| `editorial` | 必须包含 `createdAt`、`updatedAt`；审核日期使用 `reviewedAt`，不使用旧字段 `lastReviewed` |
+| `editorial` | 必须包含 `createdAt`、`updatedAt`；published 还必须有 `reviewedAt`、`reviewer`、`publishedAt` |
 | `relatedEvents` | 源文件可只登记一侧；构建输出自动补齐双向关系，并拒绝未知 ID、自引用和重复 ID |
 | `LocalizedText` | 必须同时有 `en` 和 `zhHans` |
 
@@ -159,9 +162,9 @@
 
 ```
 project-root/
-├── workflow/WORKFLOW.md ← 完整流程（本 skill 的上游）
-├── data/DATA-MODEL.md   ← 数据模型和评分体系
-├── SKILL.md             ← 当前文件（流程摘要）
+├── docs/workflow/WORKFLOW.md ← 完整流程（本 skill 的上游）
+├── docs/data/DATA-MODEL.md   ← 数据模型和评分体系
+├── docs/skills/SKILL.md      ← 当前文件（流程摘要）
 ├── content/events/      ← 源事件 JSON（每文件一个事件）
 ├── data/
 │   ├── events.json      ← 合并后的公开数据（build 产物）
@@ -170,6 +173,7 @@ project-root/
 │   ├── possible_directions_screening_log.json ← 方向筛选运行记录
 │   └── labels.json      ← 枚举标签映射
 ├── scripts/
+│   ├── validate_all.py  ← 统一发布门禁
 │   └── build_events.py  ← 合并 content/events/*.json
 └── index.html           ← 前端（从 data/*.json 加载）
 ```

@@ -1,7 +1,7 @@
 # EpochArc 专题叙事标准
 
-**版本**：v0.1
-**更新日期**：2026-06-30
+**版本**：v0.2
+**更新日期**：2026-07-20
 **适用范围**：专题叙事（Arcs）的内容结构、叙事标准、模板与编辑规范。
 
 ---
@@ -124,6 +124,8 @@ AI 如何改变了普通人生活、工作、社会结构。
 - 覆盖分类标签（从锚点事件中汇总）
 - 作者/策展人
 
+`content/arcs/*.json` 是 Arc 的唯一编辑源。`data/arcs.json` 必须由 `scripts/build_arcs.py` 自动生成，不得手工维护第二份清单。
+
 ---
 
 ## 4. 叙事声音标准
@@ -231,10 +233,14 @@ HTML 结构必须包含：
 
 ```
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <title>... · EpochArc</title>
   <meta name="description" content="..." />
+  <link rel="canonical" href="https://epoch-arc.com/arcs/{slug}/" />
+  <link rel="alternate" hreflang="en" href="https://epoch-arc.com/arcs/{slug}/" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://epoch-arc.com/zh-hans/arcs/{slug}/" />
+  <link rel="alternate" hreflang="x-default" href="https://epoch-arc.com/arcs/{slug}/" />
   <meta property="og:title" content="..." />
   <meta property="og:description" content="..." />
   <meta property="og:type" content="article" />
@@ -310,8 +316,8 @@ HTML 结构必须包含：
 ### 页面
 
 - [ ] 所有资源路径正确（`../../src/` 可用）
-- [ ] `data/arcs.json` 中已注册该 arc
-- [ ] 运行 `python3 scripts/build_arcs.py` 后，`/arcs` 列表页已生成对应卡片
+- [ ] 运行 `python3 scripts/validate_all.py` 后无 Arc 错误
+- [ ] 运行 `python3 scripts/build_arcs.py` 后，`data/arcs.json` 与 `/arcs` 列表页均已生成
 
 ---
 
@@ -358,3 +364,4 @@ Arc 的 Key Insight 可以与事件的 `significance` 或 `impactIndex` 不同�
 | 版本 | 日期 | 变更 |
 | --- | --- | --- |
 | v0.1 | 2026-06-30 | 初始版本 |
+| v0.2 | 2026-07-20 | 明确唯一编辑源，并把章节、锚点、双语和关联检查纳入统一门禁 |

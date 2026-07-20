@@ -23,7 +23,7 @@
     "commerce"
   ],
   "significance": 2,
-  "impactIndex": 8,
+  "impactIndex": 6,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -78,6 +78,21 @@
       ],
       "id": "claude-fable-ban-lift-2026-claim-4",
       "evidenceGrade": "B"
+    },
+    {
+      "id": "claude-fable-ban-lift-2026-impact-claim",
+      "text": {
+        "en": "First reversal of a US AI export ban establishes a pattern of regulatory volatility, creating uncertainty for enterprises building on US AI platforms and undermining the credibility of export controls as a policy tool.",
+        "zhHans": "美国首次逆转 AI 出口禁令，建立了监管波动的模式，给基于美国 AI 平台构建的企业带来了不确定性，并削弱了出口管制作为政策工具的可信度。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "cnbc-fable-ban-lift-2026",
+        "wired-fable-ban-lift-2026",
+        "forbes-fable-ban-lift-2026"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "relatedEvents": [
@@ -88,7 +103,7 @@
     {
       "dimension": "paradigm_shift",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "First reversal of a US AI export ban establishes a pattern of regulatory volatility, creating uncertainty for enterprises building on US AI platforms and undermining the credibility of export controls as a policy tool.",
         "zhHans": "美国首次逆转 AI 出口禁令，建立了监管波动的模式，给基于美国 AI 平台构建的企业带来了不确定性，并削弱了出口管制作为政策工具的可信度。"
@@ -172,6 +187,12 @@
         "changeType": "created",
         "summary": "Initial event entry."
       }
-    ]
-  }
+    ],
+    "reviewedAt": "2026-07-08",
+    "reviewer": "gang",
+    "publishedAt": "2026-07-08",
+    "reviewProvenance": "legacy_pre_v23"
+  },
+  "slug": "claude-fable-ban-lift-2026",
+  "status": "published"
 }

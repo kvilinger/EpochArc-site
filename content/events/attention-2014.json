@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 10,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": false,
   "categories": [
@@ -50,7 +50,8 @@
       "sourceIds": [
         "arxiv-1409.0473",
         "wikipedia-attention-mechanism"
-      ]
+      ],
+      "evidenceGrade": "A"
     },
     {
       "dimension": "capability_leap",
@@ -68,7 +69,8 @@
       "timeframe": "medium",
       "sourceIds": [
         "arxiv-1409.0473"
-      ]
+      ],
+      "evidenceGrade": "B"
     },
     {
       "dimension": "access_democratization",
@@ -85,7 +87,8 @@
       "timeframe": "long",
       "sourceIds": [
         "wikipedia-attention-mechanism"
-      ]
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "claims": [
@@ -101,6 +104,20 @@
         "arxiv-1409.0473",
         "wikipedia-attention-mechanism"
       ]
+    },
+    {
+      "id": "attention-2014-impact-claim",
+      "text": {
+        "en": "Attention is the core innovation behind Transformer and all subsequent large language models.",
+        "zhHans": "注意力机制是 Transformer 及所有后续大语言模型的核心创新。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "arxiv-1409.0473",
+        "wikipedia-attention-mechanism"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -139,6 +156,8 @@
     "curatorNote": {
       "en": "Added during 2026 historical gap fill. Attention mechanism is arguably the single most important architectural innovation of the deep learning era.",
       "zhHans": "2026 年历史空白补全时添加。注意力机制可以说是深度学习时代最重要的架构创新。"
-    }
+    },
+    "publishedAt": "2026-06-29",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

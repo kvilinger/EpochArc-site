@@ -23,7 +23,7 @@
     "capability"
   ],
   "significance": 2,
-  "impactIndex": 8,
+  "impactIndex": 7,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -93,6 +93,21 @@
       ],
       "id": "gpt-5-6-limited-release-2026-claim-5",
       "evidenceGrade": "B"
+    },
+    {
+      "id": "gpt-5-6-limited-release-2026-impact-claim",
+      "text": {
+        "en": "GPT-5.6 is the first model released under the June 2 Executive Order framework, establishing a new norm: frontier AI model releases are subject to government review and approval before public access. This represents a fundamental shift from industry self-governance to government oversight.",
+        "zhHans": "GPT-5.6 是首个在6月2日行政令框架下发布的模型，建立了一个新常态：前沿AI模型的发布在公开访问前需接受政府审查和批准。这代表了从行业自我监管向政府监管的根本转变。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "axios-gpt56-trump-2026",
+        "cnn-openai-gpt56-restrict-2026",
+        "nytimes-trump-eo-ai-2026"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "relatedEvents": [
@@ -103,7 +118,7 @@
     {
       "dimension": "paradigm_shift",
       "direction": "negative",
-      "severity": 3,
+      "severity": -3,
       "description": {
         "en": "GPT-5.6 is the first model released under the June 2 Executive Order framework, establishing a new norm: frontier AI model releases are subject to government review and approval before public access. This represents a fundamental shift from industry self-governance to government oversight.",
         "zhHans": "GPT-5.6 是首个在6月2日行政令框架下发布的模型，建立了一个新常态：前沿AI模型的发布在公开访问前需接受政府审查和批准。这代表了从行业自我监管向政府监管的根本转变。"
@@ -143,7 +158,7 @@
     {
       "dimension": "risk_creation",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "The restricted release pattern (government approval gate for frontier models) creates regulatory uncertainty for the AI industry and could accelerate the shift toward non-US AI ecosystems if US models face persistent access limitations.",
         "zhHans": "受限发布模式（前沿模型须经政府批准）为AI行业带来了监管不确定性，如果美国模型持续面临访问限制，可能加速向非美国AI生态系统的转移。"
@@ -234,6 +249,12 @@
         "changeType": "created",
         "summary": "Initial event entry."
       }
-    ]
-  }
+    ],
+    "reviewedAt": "2026-07-08",
+    "reviewer": "gang",
+    "publishedAt": "2026-07-08",
+    "reviewProvenance": "legacy_pre_v23"
+  },
+  "slug": "gpt-5-6-limited-release-2026",
+  "status": "published"
 }

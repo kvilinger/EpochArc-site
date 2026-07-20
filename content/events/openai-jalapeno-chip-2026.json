@@ -23,7 +23,7 @@
     "capability"
   ],
   "significance": 1,
-  "impactIndex": 7,
+  "impactIndex": 6,
   "controversy": false,
   "consensusLevel": "broad",
   "claims": [
@@ -77,7 +77,7 @@
     {
       "dimension": "economic_disruption",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "OpenAI joining the custom AI chip race signals intensifying competition for Nvidia's dominant GPU market position. Increased disaggregation of the AI hardware supply chain.",
         "zhHans": "OpenAI 加入自研 AI 芯片竞赛，预示着 Nvidia 主导的 GPU 市场地位面临更激烈竞争。AI 硬件供应链的分散化趋势加剧。"
@@ -124,6 +124,12 @@
         "changeType": "created",
         "summary": "Initial event entry."
       }
-    ]
-  }
+    ],
+    "reviewedAt": "2026-06-30",
+    "reviewer": "gang",
+    "publishedAt": "2026-06-30",
+    "reviewProvenance": "legacy_pre_v23"
+  },
+  "slug": "openai-jalapeno-chip-2026",
+  "status": "published"
 }

@@ -6,7 +6,7 @@
     "zhHans": "前沿 AI 模型价格一周内暴跌 5-10 倍——OpenAI、Meta、xAI 相继推出低价模型展开竞争"
   },
   "searchSummary": {
-    "en": "AI Model Price War (Jul 2026) \u2014 Within a single week, xAI's Grok 4.5 at $2/$6, Meta's Muse Spark 1.1 at $1.25/$4.25, and OpenAI's GPT-5.6 Luna drove frontier output token pricing from $25-50 down to $4-6 per million tokens. A 5-10x collapse in AI inference costs that reshaped industry economics.",
+    "en": "AI Model Price War (Jul 2026) — Within a single week, xAI's Grok 4.5 at $2/$6, Meta's Muse Spark 1.1 at $1.25/$4.25, and OpenAI's GPT-5.6 Luna drove frontier output token pricing from $25-50 down to $4-6 per million tokens. A 5-10x collapse in AI inference costs that reshaped industry economics.",
     "zhHans": "AI 模型价格战（2026 年 7 月）——一周之内，xAI 的 Grok 4.5（$2/$6）、Meta 的 Muse Spark 1.1（$1.25/$4.25）以及 OpenAI 的 GPT-5.6 Luna 将前沿模型输出 token 价格从 $25-50 压低至 $4-6。AI 推理成本 5-10 倍暴跌，重塑行业经济结构。"
   },
   "summary": {
@@ -28,7 +28,10 @@
   "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": false,
-  "categories": ["commerce", "capability"],
+  "categories": [
+    "commerce",
+    "capability"
+  ],
   "impacts": [
     {
       "dimension": "economic_disruption",
@@ -38,10 +41,19 @@
         "en": "Frontier model output token prices collapsed from $25-50 to $4-6 per million tokens — a 5-10x reduction in one week. This structural shift dramatically lowered the cost barrier for AI application development and enterprise adoption.",
         "zhHans": "前沿模型输出 token 价格从每百万个 $25-50 暴跌至 $4-6——一周内下降 5-10 倍。这一结构性转变大幅降低了 AI 应用开发和部署的成本门槛。"
       },
-      "affectedGroups": ["AI developers", "startups", "enterprises", "API customers"],
+      "affectedGroups": [
+        "AI developers",
+        "startups",
+        "enterprises",
+        "API customers"
+      ],
       "timeframe": "long",
       "evidenceGrade": "A",
-      "sourceIds": ["latimes-ai-price-war-2026", "forbes-cheaper-tokens-2026", "kersai-ai-breakthroughs-july-2026"]
+      "sourceIds": [
+        "latimes-ai-price-war-2026",
+        "forbes-cheaper-tokens-2026",
+        "kersai-ai-breakthroughs-july-2026"
+      ]
     },
     {
       "dimension": "access_democratization",
@@ -51,10 +63,17 @@
         "en": "Meta's first paid API at $1.25/$4.25 and Grok 4.5 at $2/$6 made frontier-class AI accessible to a broader developer base, including those who had been priced out by $25-50/M output legacy flagships.",
         "zhHans": "Meta 首个付费 API（$1.25/$4.25）和 Grok 4.5（$2/$6）使前沿级 AI 对更广泛的开发者群体变得可及，包括那些曾被 $25-50/M 输出的传统旗舰定价排除在外的人。"
       },
-      "affectedGroups": ["independent developers", "startups", "global south"],
+      "affectedGroups": [
+        "independent developers",
+        "startups",
+        "global south"
+      ],
       "timeframe": "medium",
       "evidenceGrade": "A",
-      "sourceIds": ["the-decoder-muse-spark-pricing-2026", "biggo-half-price-ai-2026"]
+      "sourceIds": [
+        "the-decoder-muse-spark-pricing-2026",
+        "biggo-half-price-ai-2026"
+      ]
     },
     {
       "dimension": "risk_creation",
@@ -64,10 +83,16 @@
         "en": "Sustained low pricing may pressure AI labs to cut safety infrastructure and alignment research, as margins shrink. The commoditization of frontier AI could also accelerate misuse by lowering the cost of running unaligned or malicious models.",
         "zhHans": "持续的低价可能迫使 AI 实验室在利润收缩时削减安全基础设施和对齐研究。前沿 AI 的商品化也可能因降低运行未对齐或恶意模型的成本而加速滥用。"
       },
-      "affectedGroups": ["AI safety community", "general public"],
+      "affectedGroups": [
+        "AI safety community",
+        "general public"
+      ],
       "timeframe": "long",
       "evidenceGrade": "B",
-      "sourceIds": ["forbes-cheaper-tokens-2026", "kersai-ai-breakthroughs-july-2026"]
+      "sourceIds": [
+        "forbes-cheaper-tokens-2026",
+        "kersai-ai-breakthroughs-july-2026"
+      ]
     }
   ],
   "claims": [
@@ -79,7 +104,10 @@
         "zhHans": "xAI 于 2026 年 7 月 7-9 日发布 Grok 4.5，定价每百万输入 token $2，每百万输出 token $6。"
       },
       "evidenceGrade": "A",
-      "sourceIds": ["cloudmagazin-price-shift-2026", "biggo-half-price-ai-2026"]
+      "sourceIds": [
+        "cloudmagazin-price-shift-2026",
+        "biggo-half-price-ai-2026"
+      ]
     },
     {
       "id": "muse-spark-1.1-pricing-2026",
@@ -89,7 +117,10 @@
         "zhHans": "Meta 于 2026 年 7 月 9 日开放首个付费 API Muse Spark 1.1，定价每百万输入 token $1.25，每百万输出 token $4.25。"
       },
       "evidenceGrade": "A",
-      "sourceIds": ["the-decoder-muse-spark-pricing-2026", "biggo-half-price-ai-2026"]
+      "sourceIds": [
+        "the-decoder-muse-spark-pricing-2026",
+        "biggo-half-price-ai-2026"
+      ]
     },
     {
       "id": "price-war-structural-impact-2026",
@@ -99,38 +130,54 @@
         "zhHans": "三家主要实验室在一周内同时竞争性定价的综合效应标志着 AI 经济的结构性转变，输出 token 价格从 $25-50 降至 $4-6 区间。"
       },
       "evidenceGrade": "A",
-      "sourceIds": ["latimes-ai-price-war-2026", "kersai-ai-breakthroughs-july-2026"]
+      "sourceIds": [
+        "latimes-ai-price-war-2026",
+        "kersai-ai-breakthroughs-july-2026"
+      ]
     }
   ],
   "sources": [
     {
       "sourceId": "latimes-ai-price-war-2026",
-      "supports": ["price-war-structural-impact-2026"],
+      "supports": [
+        "price-war-structural-impact-2026"
+      ],
       "quote": "OpenAI said its most advanced offering, GPT-5.6, is designed to complete more work while using significantly fewer tokens."
     },
     {
       "sourceId": "forbes-cheaper-tokens-2026",
-      "supports": ["price-war-structural-impact-2026"],
+      "supports": [
+        "price-war-structural-impact-2026"
+      ],
       "quote": "Cheaper AI Tokens Do Not Guarantee Cheaper Enterprise Agents."
     },
     {
       "sourceId": "the-decoder-muse-spark-pricing-2026",
-      "supports": ["muse-spark-1.1-pricing-2026"],
+      "supports": [
+        "muse-spark-1.1-pricing-2026"
+      ],
       "quote": "The developer API is priced at $4.25 per million output tokens."
     },
     {
       "sourceId": "biggo-half-price-ai-2026",
-      "supports": ["groq-4.5-pricing-2026", "muse-spark-1.1-pricing-2026"],
+      "supports": [
+        "groq-4.5-pricing-2026",
+        "muse-spark-1.1-pricing-2026"
+      ],
       "quote": "Elon Musk's xAI unveiling Grok 4.5 with usage fees up to 76% cheaper than competitors."
     },
     {
       "sourceId": "cloudmagazin-price-shift-2026",
-      "supports": ["groq-4.5-pricing-2026"],
+      "supports": [
+        "groq-4.5-pricing-2026"
+      ],
       "quote": "Grok 4.5, GPT-5.6 and Muse Spark 1.1 shift options for cloud and dev."
     },
     {
       "sourceId": "kersai-ai-breakthroughs-july-2026",
-      "supports": ["price-war-structural-impact-2026"],
+      "supports": [
+        "price-war-structural-impact-2026"
+      ],
       "quote": "Driving output token costs down to the $4 to $6 range, compared to $25 to $50 for legacy flagships."
     }
   ],
@@ -139,7 +186,9 @@
     "gpt-5-6-broad-launch-2026",
     "claude-sonnet-5-launch-2026"
   ],
-  "relatedForecasts": ["autonomous-enterprise-workflows"],
+  "relatedForecasts": [
+    "autonomous-enterprise-workflows"
+  ],
   "editorial": {
     "createdAt": "2026-07-16",
     "updatedAt": "2026-07-16",
@@ -152,6 +201,8 @@
         "changeType": "created",
         "summary": "Initial entry for AI model price war week."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

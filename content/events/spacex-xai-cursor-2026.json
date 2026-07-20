@@ -22,7 +22,7 @@
     "commerce"
   ],
   "significance": 1,
-  "impactIndex": 8,
+  "impactIndex": 6,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -85,7 +85,7 @@
     {
       "dimension": "economic_disruption",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "The $60B Cursor acquisition — the largest AI startup acquisition in history — and the $1.25T xAI merger fundamentally reshaped the competitive landscape, concentrating AI talent, models, and tools under a single entity with aerospace-scale resources.",
         "zhHans": "600 亿美元的 Cursor 收购——历史上最大规模的 AI 初创公司收购——以及 1.25 万亿美元的 xAI 合并从根本上重塑了竞争格局，将 AI 人才、模型和工具集中于一个拥有航天级资源的实体之下。"
@@ -106,7 +106,7 @@
     {
       "dimension": "paradigm_shift",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "The deals signaled the convergence of traditionally separate sectors — aerospace, AI models, and developer tools — into integrated technology stacks controlled by single entities, setting a precedent for future industry structure.",
         "zhHans": "这些交易标志着传统上独立的行业——航空航天、AI 模型和开发者工具——正融合为由单一实体控制的一体化技术堆栈，为未来的产业结构开创了先例。"
@@ -134,6 +134,12 @@
         "changeType": "created",
         "summary": "Initial event entry."
       }
-    ]
-  }
+    ],
+    "reviewedAt": "2026-06-30",
+    "reviewer": "gang",
+    "publishedAt": "2026-06-30",
+    "reviewProvenance": "legacy_pre_v23"
+  },
+  "slug": "spacex-xai-cursor-2026",
+  "status": "published"
 }

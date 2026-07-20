@@ -23,7 +23,7 @@
     "commerce"
   ],
   "significance": 1,
-  "impactIndex": 8,
+  "impactIndex": 5,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -82,7 +82,7 @@
     {
       "dimension": "economic_disruption",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "The largest documented model extraction attempt to date, providing empirical evidence for AI export control debates and likely accelerating regulatory scrutiny of cross-border AI access.",
         "zhHans": "迄今规模最大的有记录模型盗窃企图，为 AI 出口管制辩论提供了实证依据，可能加速对跨境 AI 访问的监管审查。"
@@ -102,7 +102,7 @@
     {
       "dimension": "economic_disruption",
       "direction": "negative",
-      "severity": 1,
+      "severity": -1,
       "description": {
         "en": "The accusation escalates US-China tech tensions and could lead to more aggressive access restrictions, affecting global AI development and collaboration.",
         "zhHans": "这一指控加剧了美中科技紧张局势，可能导致更严格的访问限制，影响全球 AI 开发和合作。"
@@ -128,6 +128,12 @@
         "changeType": "created",
         "summary": "Initial event entry."
       }
-    ]
-  }
+    ],
+    "reviewedAt": "2026-06-30",
+    "reviewer": "gang",
+    "publishedAt": "2026-06-30",
+    "reviewProvenance": "legacy_pre_v23"
+  },
+  "slug": "anthropic-alibaba-extraction-2026",
+  "status": "published"
 }

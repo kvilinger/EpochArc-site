@@ -1,0 +1,117 @@
+{
+  "id": "gemini-robotics-2025",
+  "slug": "gemini-robotics-2025",
+  "title": {
+    "en": "Google DeepMind launches Gemini Robotics for physical-world control",
+    "zhHans": "Google DeepMind 发布面向物理世界控制的 Gemini Robotics"
+  },
+  "summary": {
+    "en": "Google DeepMind introduced Gemini Robotics and Gemini Robotics-ER, extending Gemini 2.0 with vision-language-action control and embodied spatial reasoning for robots.",
+    "zhHans": "Google DeepMind 发布 Gemini Robotics 与 Gemini Robotics-ER，把 Gemini 2.0 扩展到机器人的视觉—语言—动作控制与具身空间推理。"
+  },
+  "narrative": {
+    "en": "Gemini Robotics connected a frontier multimodal model family to direct robot control. The launch was an important research-platform milestone, but the evidence at release consisted mainly of model reports and demonstrations rather than sustained customer deployment.",
+    "zhHans": "Gemini Robotics 把前沿多模态模型家族连接到了机器人直接控制。它是重要的研究平台节点，但发布时的证据主要仍是模型报告和演示，而不是持续的客户部署。"
+  },
+  "date": "2025-03-12",
+  "datePrecision": "day",
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 6,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "The model family added physical actions and embodied spatial reasoning to a general-purpose multimodal foundation, demonstrating broader task and environment generalization in controlled evaluations.",
+        "zhHans": "该模型家族把物理动作与具身空间推理加入通用多模态基础模型，并在受控评测中展示了更广的任务与环境泛化能力。"
+      },
+      "affectedGroups": [
+        "robotics researchers",
+        "robot developers",
+        "automation companies"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-gemini-robotics-2025",
+        "techcrunch-gemini-robotics-2025"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "The release made robotics a first-class extension of a frontier multimodal model family rather than a separate specialist stack.",
+        "zhHans": "这次发布让机器人能力成为前沿多模态模型家族的一等扩展，而不再只是独立的专用技术栈。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "robotics industry"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "google-gemini-robotics-2025",
+        "techcrunch-gemini-robotics-2025"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gemini-robotics-launch",
+      "text": {
+        "en": "Google DeepMind launched Gemini Robotics and Gemini Robotics-ER on March 12, 2025.",
+        "zhHans": "Google DeepMind 于 2025 年 3 月 12 日发布 Gemini Robotics 与 Gemini Robotics-ER。"
+      },
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-gemini-robotics-2025",
+        "techcrunch-gemini-robotics-2025"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "google-gemini-robotics-2025",
+      "supports": [
+        "gemini-robotics-launch"
+      ]
+    },
+    {
+      "sourceId": "techcrunch-gemini-robotics-2025",
+      "supports": [
+        "gemini-robotics-launch"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "gemini-2-agents-2024",
+    "figure-bmw-humanoid-2025"
+  ],
+  "editorial": {
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20",
+    "reviewedAt": "2026-07-20",
+    "publishedAt": "2026-07-20",
+    "curator": "EpochArc editorial",
+    "reviewer": "EpochArc editorial",
+    "changeLog": [
+      {
+        "date": "2026-07-20",
+        "changeType": "created",
+        "summary": "Added after the v2.3 audit found a published direction pointing to a missing event."
+      }
+    ],
+    "reviewProvenance": "v2.3"
+  }
+}

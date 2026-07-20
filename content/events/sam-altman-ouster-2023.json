@@ -6,7 +6,7 @@
     "zhHans": "Sam Altman 四天内被解职又重新聘用——AI 时代最具代表性的公司治理危机"
   },
   "searchSummary": {
-    "en": "Sam Altman fired and rehired in 4 days (November 2023) \u2014 the defining corporate drama of the AI era. How a boardroom battle nearly collapsed OpenAI and changed AI governance.",
+    "en": "Sam Altman fired and rehired in 4 days (November 2023) — the defining corporate drama of the AI era. How a boardroom battle nearly collapsed OpenAI and changed AI governance.",
     "zhHans": "Sam Altman 在 4 天内被解雇又复职（2023 年 11 月）——AI 时代最具标志性的公司戏剧。一场董事会斗争如何差点让 OpenAI 崩溃，并改变了 AI 治理格局。"
   },
   "summary": {
@@ -29,7 +29,7 @@
   ],
   "status": "published",
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": true,
   "impacts": [
@@ -78,6 +78,19 @@
       "sourceIds": [
         "abc-altman-ouster-timeline"
       ]
+    },
+    {
+      "id": "sam-altman-ouster-2023-impact-claim",
+      "text": {
+        "en": "Revealed fundamental governance problems at the world's most important AI company. Exposed tension between non-profit safety mission and for-profit operations. Led to eventual PBC restructuring in 2025. Demonstrated employee power > board power at critical AI companies.",
+        "zhHans": "揭示了全球最重要 AI 公司的根本治理问题。暴露了非营利安全使命与营利运营之间的张力。最终导致了 2025 年 PBC 重组。证明了关键 AI 公司中员工权力大于董事会权力。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "abc-altman-ouster-timeline"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -90,7 +103,6 @@
     },
     {
       "sourceId": "openai-altman-statement-2023",
-      "supports": [],
       "quote": "OpenAI announced leadership transition on November 17, 2023."
     }
   ],
@@ -110,6 +122,8 @@
         "changeType": "created",
         "summary": "Added Sam Altman ouster/crisis — defining AI corporate governance crisis."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

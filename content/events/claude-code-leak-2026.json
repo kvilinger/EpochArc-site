@@ -29,7 +29,7 @@
   ],
   "status": "published",
   "significance": 1,
-  "impactIndex": 5,
+  "impactIndex": 4,
   "consensusLevel": "broad",
   "controversy": true,
   "impacts": [
@@ -78,12 +78,10 @@
     },
     {
       "sourceId": "cnbc-claude-code-leak",
-      "supports": [],
       "quote": "Anthropic confirms Claude Code source code inadvertently released due to human error."
     },
     {
       "sourceId": "zscaler-claude-code-leak",
-      "supports": [],
       "quote": "Threat actors weaponizing Claude Code leak with trojanized packages distributing Vidar and GhostSocks."
     }
   ],
@@ -104,6 +102,8 @@
         "changeType": "created",
         "summary": "Added Claude Code source leak — biggest AI source code leak, revealed agent architectures, triggered supply chain attack."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

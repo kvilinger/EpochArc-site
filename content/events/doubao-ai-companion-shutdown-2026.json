@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": false,
   "categories": [
@@ -51,7 +51,8 @@
       "sourceIds": [
         "techtimes-doubao-shutdown-2026",
         "thenextweb-china-ai-companion-2026"
-      ]
+      ],
+      "evidenceGrade": "B"
     },
     {
       "dimension": "paradigm_shift",
@@ -69,7 +70,8 @@
       "timeframe": "medium",
       "sourceIds": [
         "thenextweb-china-ai-companion-2026"
-      ]
+      ],
+      "evidenceGrade": "C"
     },
     {
       "dimension": "access_democratization",
@@ -86,7 +88,8 @@
       "timeframe": "short",
       "sourceIds": [
         "techtimes-doubao-shutdown-2026"
-      ]
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "claims": [
@@ -126,6 +129,20 @@
         "thenextweb-china-ai-companion-2026"
       ],
       "evidenceGrade": "B"
+    },
+    {
+      "id": "doubao-ai-companion-shutdown-2026-impact-claim",
+      "text": {
+        "en": "Doubao (345M users) and Qwen forced to shut down core AI companion features. Significant impact on user base, revenue models, and the broader Chinese AI companion industry estimated at tens of billions of RMB.",
+        "zhHans": "豆包（3.45 亿用户）和通义千问被迫关闭核心 AI 伴侣功能。对用户群、收入模式和估计达数百亿人民币的更广泛中国 AI 伴侣行业产生重大影响。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "techtimes-doubao-shutdown-2026",
+        "thenextweb-china-ai-companion-2026"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -149,6 +166,10 @@
   "editorial": {
     "createdAt": "2026-07-08",
     "updatedAt": "2026-07-08",
-    "curator": "gang"
+    "curator": "gang",
+    "reviewedAt": "2026-07-08",
+    "reviewer": "gang",
+    "publishedAt": "2026-07-08",
+    "reviewProvenance": "legacy_pre_v23"
   }
 }

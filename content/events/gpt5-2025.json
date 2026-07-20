@@ -6,7 +6,7 @@
     "zhHans": "OpenAI 发布 GPT-5，统一推理、多模态和任务执行能力"
   },
   "searchSummary": {
-    "en": "GPT-5 (2025) unified reasoning, multimodality, and task execution in a single model. How OpenAI\u2019s latest flagship integrated thinking, seeing, and doing into one AI system.",
+    "en": "GPT-5 (2025) unified reasoning, multimodality, and task execution in a single model. How OpenAI’s latest flagship integrated thinking, seeing, and doing into one AI system.",
     "zhHans": "GPT-5（2025 年）将推理、多模态和任务执行能力统一在单一模型中。OpenAI 的最新旗舰如何将思考、观察和行动整合到一个 AI 系统中。"
   },
   "summary": {
@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 6,
   "consensusLevel": "broad",
   "controversy": true,
   "impacts": [
@@ -111,6 +111,19 @@
       "sourceIds": [
         "wikipedia-gpt5"
       ]
+    },
+    {
+      "id": "gpt5-2025-impact-claim",
+      "text": {
+        "en": "First model to unify advanced reasoning, native multimodality, and autonomous task execution in a single system. PhD-level on GPQA Diamond. Set new records on coding and reasoning benchmarks. Eliminated need for model switching.",
+        "zhHans": "第一个将高级推理、原生多模态和自主任务执行统一到单一系统中的模型。在 GPQA Diamond 上达到博士级。在编程和推理基准上刷新了纪录。消除了模型切换的需要。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "wikipedia-gpt5"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "sources": [
@@ -123,7 +136,6 @@
     },
     {
       "sourceId": "openai-gpt5-announcement-2025",
-      "supports": [],
       "quote": "OpenAI released GPT-5 on August 7, 2025."
     }
   ],
@@ -146,7 +158,9 @@
         "changeType": "created",
         "summary": "Initial v2 entry for GPT-5."
       }
-    ]
+    ],
+    "reviewer": "gang",
+    "reviewProvenance": "legacy_pre_v23"
   },
   "categories": [
     "capability"

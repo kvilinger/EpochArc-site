@@ -11,6 +11,7 @@ LIST_TEMPLATE_FILE = os.path.join(ROOT_DIR, 'templates', 'arcs_list_template.htm
 DETAIL_TEMPLATE_FILE = os.path.join(ROOT_DIR, 'templates', 'arc_template.html')
 ARCS_OUTPUT_DIR = os.path.join(ROOT_DIR, 'arcs')
 ARCS_LIST_OUTPUT = os.path.join(ROOT_DIR, 'arcs.html')
+ARCS_DATA_OUTPUT = os.path.join(ROOT_DIR, 'data', 'arcs.json')
 DIST_DIR = os.path.join(ROOT_DIR, 'dist')
 
 # ─────────────────── 1. 加载数据 ───────────────────
@@ -134,6 +135,31 @@ def get_arc_significance(arc):
         if ev:
             max_sig = min(max_sig, ev.get('significance', 3))
     return max_sig
+
+def build_arc_manifest(arc):
+    """Create the public Arc index from the canonical content/arcs source."""
+    anchor_ids = collect_all_anchor_events(arc)
+    date_start, date_end = get_date_range(anchor_ids)
+    editorial = arc.get('editorial', {})
+    return {
+        'id': arc['id'],
+        'slug': arc['id'],
+        'title': arc['title'],
+        'subtitle': arc['subtitle'],
+        'categories': get_arc_categories(arc),
+        'chapters': len(arc.get('chapters', [])),
+        'eventCount': len(anchor_ids),
+        'dateRange': {'start': date_start, 'end': date_end},
+        'status': arc.get('status', 'draft'),
+        'curator': editorial.get('curator', ''),
+        'createdAt': editorial.get('createdAt', ''),
+        'updatedAt': editorial.get('updatedAt', ''),
+    }
+
+with open(ARCS_DATA_OUTPUT, 'w', encoding='utf-8') as fh:
+    json.dump([build_arc_manifest(arc) for arc in arcs], fh, ensure_ascii=False, indent=2)
+    fh.write('\n')
+print(f"✅ Generated Arc manifest: {ARCS_DATA_OUTPUT}")
 
 # ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT REMOVE OR BYPASS THIS FUNCTION!
 # Ensure all dynamic variables injected into attributes (like data-zh/data-en) are HTML-escaped.
@@ -285,7 +311,7 @@ else:
                     <span class="event-date">{ev_date}</span>
                     <span class="event-name" data-zh="{html_escape(ev_title_zh)}" data-en="{html_escape(ev_title_en)}">{html_escape(ev_title_en)}</span>
                   </a>
-                ''')
+                '''.rstrip())
             events_html = '\n'.join(event_cards)
 
             # Chapters block (对齐 arcs.css 的 .arc-chapter-header 等类名，移除第N章前缀改为直观的前置数字)
@@ -301,7 +327,7 @@ else:
                   {events_html}
                 </div>
               </section>
-            ''')
+            '''.rstrip())
         chapters_html = '\n'.join(chapter_blocks)
 
         # ── Related Arcs HTML ──

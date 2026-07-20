@@ -4,10 +4,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && python3 scripts/build_events.py && python3 scripts/build_arcs.py && python3 scripts/build_feed.py",
+    "validate": "python3 scripts/validate_all.py",
+    "build": "python3 scripts/validate_all.py && python3 scripts/build_events.py && node scripts/build_og_images.mjs && python3 scripts/build_directions.py && python3 scripts/build_arcs.py && python3 scripts/build_feed.py && vite build && python3 scripts/build_localized_pages.py",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sharp": "^0.34.3",
     "vite": "^5.2.0",
     "vite-plugin-static-copy": "^1.0.0"
   }

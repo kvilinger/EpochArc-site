@@ -22,7 +22,7 @@
     "capability"
   ],
   "significance": 2,
-  "impactIndex": 9,
+  "impactIndex": 7,
   "controversy": false,
   "consensusLevel": "broad",
   "claims": [
@@ -64,6 +64,20 @@
       ],
       "id": "glm-52-open-source-2026-claim-3",
       "evidenceGrade": "B"
+    },
+    {
+      "id": "glm-52-open-source-2026-impact-claim",
+      "text": {
+        "en": "GLM-5.2 demonstrated that open-source models can match frontier closed-source performance (GPT-5.5) on coding and agentic tasks, at a fraction of the cost. A milestone in the open-source catch-up narrative.",
+        "zhHans": "GLM-5.2 证明开源模型可以在编码和智能体任务上匹配前沿闭源性能（GPT-5.5），而成本仅为其零头。这是开源追赶叙事中的一个里程碑。"
+      },
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "interconnects-glm52-2026",
+        "businessinsider-glm52-2026"
+      ],
+      "notes": "Migrated from the first structured impact in the v2.3 contract update."
     }
   ],
   "relatedEvents": [
@@ -131,7 +145,7 @@
     {
       "dimension": "paradigm_shift",
       "direction": "negative",
-      "severity": 2,
+      "severity": -2,
       "description": {
         "en": "The release directly challenged the effectiveness of US AI export controls, demonstrating that restrictive policies on closed models accelerate open-source alternatives rather than containing capability diffusion.",
         "zhHans": "此次发布直接质疑了美国 AI 出口管制的有效性，表明对闭源模型的限制性政策反而加速了开源替代方案的发展，而非遏制了能力扩散。"
@@ -159,6 +173,12 @@
         "changeType": "created",
         "summary": "Initial event entry."
       }
-    ]
-  }
+    ],
+    "reviewedAt": "2026-06-30",
+    "reviewer": "gang",
+    "publishedAt": "2026-06-30",
+    "reviewProvenance": "legacy_pre_v23"
+  },
+  "slug": "glm-52-open-source-2026",
+  "status": "published"
 }

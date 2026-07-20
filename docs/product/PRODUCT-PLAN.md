@@ -1,6 +1,6 @@
 # EpochArc 产品与上线规划
 
-**更新日期**：2026-06-25  
+**更新日期**：2026-07-20
 **定位**：AI development roadmap, evidence index, and possible directions site.
 
 ---
@@ -94,9 +94,9 @@ EpochArc 不是新闻站、论文库或深度研究机构。第一版的核心�
 
 ---
 
-## 5. 建议目录演进
+## 5. 当前目录与权威来源
 
-当前第一版可以直接维护 `data/`，后续高频更新时再拆成 `content/` + 构建脚本。
+项目已经进入结构化内容生产阶段。编辑源与构建产物必须分离：
 
 ```txt
 data/
@@ -110,28 +110,30 @@ data/
 
 content/
   events/
-  forecasts/
-  candidates/
+  arcs/
 
 scripts/
-  validate-data.mjs
-  build-data.mjs
-  collect-candidates.mjs
+  validate_all.py
+  validate_forecasts.py
+  build_events.py
+  build_arcs.py
 
-functions/
-  api/
-    vote.ts
-    feedback.ts
 ```
+
+- `content/events/*.json` 与 `content/arcs/*.json` 是编辑源。
+- `data/events.json` 是事件构建产物，不得手工编辑。
+- `data/sources.json`、`data/forecasts.json`、筛选日志目前仍是受版本控制的编辑源。
+- `data/arcs.json` 由 `content/arcs/*.json` 自动生成，只作为前端清单，不得手工登记。
+- 结构和流程变更必须在同一个提交中同步更新规范、验证器、数据迁移和测试结果。
 
 ---
 
 ## 6. 更新流程
 
 1. 自动或手动收集候选信号。
-2. 写入 `content/candidates/` 或 D1 `candidate_signals` 表。
-3. 人工筛选后生成 `content/events/*.json` 或 `content/forecasts/*.json`。
-4. 运行数据校验：
+2. 写入 `data/screening_log.json`；同一候选 ID 只保留一条当前记录，历史变化写入记录内的 review history。
+3. 人工筛选后生成 `content/events/*.json`，方向数据维护在 `data/forecasts.json`。
+4. 运行 `python3 scripts/validate_all.py`：
    - 必填字段。
    - 来源 URL 不为空。
    - L2/L3 来源数量达标。
@@ -139,7 +141,7 @@ functions/
    - Editorial 至少包含 `createdAt` 与 `updatedAt`。
    - Possible Directions 必须具备事件锚点、observed signals、counterSignal 与共识状态。
    - 多语言字段完整性。
-5. 构建生成 `data/events.json`、`data/forecasts.json`、`data/sources.json`。
+5. 构建生成 `data/events.json`、`data/arcs.json` 和静态页面。
 6. Cloudflare Pages 自动部署。
 7. 每月检查断链和更新来源访问日期。
 
@@ -164,21 +166,22 @@ Possible Directions 的完整数据来源、采纳标准、事件联动、读者
 
 ## 8. 阶段路线
 
-### Phase 1：上线前数据补强
+### 已完成：结构化内容生产
 
-- 维护 v2 结构的 `data/events.json`、`data/forecasts.json` 和 `data/sources.json`。
-- 补齐所有空 URL 来源。
-- 给 Impact Score 增加 tooltip 或方法页解释。
-- 将 Possible Directions 卡补上事件化信号、反向约束和来源链路。
-- 方法页公开 v2 简版规则。
+- `content/events/` 与 `content/arcs/` 已投入使用。
+- 事件与 Arc 已由构建脚本生成公开数据和页面。
+- Possible Directions 已采用事件化信号与 `monitor_only` 规则。
+- 主要可索引页面已声明 Atom 自动发现，事件页使用独立的 1200 × 630 PNG 分享图。
+- 英文页面使用默认路径，简体中文页面生成到 `/zh-hans/`；两种语言均有自指 canonical、双向 hreflang 和 sitemap 条目。
 
-### Phase 2：结构化内容生产
+### 当前阶段：发布门禁与历史数据清理
 
-- 新增 `content/events/` 和 `content/forecasts/`。
-- 新增 schema 和校验脚本。
-- 通过构建脚本从 `content/` 生成公开 `data/` 文件。
+- 统一数据校验入口并接入 `npm run build`。
+- 清理旧来源字段、筛选日志枚举和缺失的编辑元数据。
+- 修复方向与 Arc 的悬空引用。
+- 建立持续的链接与事实复核报告。
 
-### Phase 3：动态能力
+### 后续阶段：动态能力
 
 - Pages Functions + D1 投票。
 - Feedback / submit candidate 表单。
@@ -225,8 +228,8 @@ Possible Directions 的完整数据来源、采纳标准、事件联动、读者
 ### 导航
 
 - 页眉在首页和方法页保持一致：品牌 logo + `EpochArc` + 语言选择 + 深浅色切换。
-- 多语言第一版只保留 `EN` 和 `中文`。
-- 页脚只保留 `Methodology` 链接。
+- 多语言第一版只保留 `EN` 和 `中文`，语言切换必须在默认英文 URL 与 `/zh-hans/` 中文 URL 之间跳转。
+- 页脚保留 RSS 与 `Methodology` 链接。
 
 ---
 
@@ -238,5 +241,5 @@ Possible Directions 的完整数据来源、采纳标准、事件联动、读者
 4. 方法页公开来源分级、信号规则、`monitor_only` 逻辑和限制说明。
 5. 数据校验脚本能在部署前阻断明显错误。
 6. 投票如上线，必须有隐私说明和反刷策略。
-7. 配置生产域名、`sitemap.xml`、canonical / `og:url`。
+7. 确认构建生成双语 `sitemap.xml`，并抽查两种语言页面的 canonical、hreflang 与 `og:url`。
 8. 部署后做 Lighthouse、移动端截图、链接校验和来源链接检查。

@@ -4,7 +4,7 @@
 Generates an Atom/RSS feed of all events, sorted by date descending.
 Call from npm build or standalone.
 """
-import json, os, datetime
+import json, os, datetime, shutil
 from html import escape
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,6 +30,7 @@ def build_feed():
     entries = []
     for e in sorted_events:
         eid = e['id']
+        slug = e.get('slug', eid)
         title_en = e.get('title', {}).get('en', eid)
         summary_en = e.get('searchSummary', {}).get('en', e.get('summary', {}).get('en', ''))
         # Truncate summary to 500 chars for feed
@@ -46,7 +47,7 @@ def build_feed():
     <published>{pub_date_iso}</published>
     <updated>{pub_date_iso}</updated>
     <title type="html">{escape(title_en)}</title>
-    <link href="{SITE_URL}/events/{eid}/" rel="alternate" type="text/html" />
+    <link href="{SITE_URL}/events/{slug}/" rel="alternate" type="text/html" />
     <summary type="html">{escape(summary_en)}</summary>
     {cat_tags}
   </entry>''')
@@ -71,7 +72,11 @@ def build_feed():
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         f.write(feed)
 
-    print(f"✅ RSS feed generated: {OUTPUT_PATH} ({len(feed)/1024:.1f} KB, {len(sorted_events)} entries)")
+    dist_dir = os.path.join(ROOT_DIR, 'dist')
+    if os.path.exists(dist_dir):
+        shutil.copy2(OUTPUT_PATH, os.path.join(dist_dir, 'rss.xml'))
+
+    print(f"✅ Atom feed generated and synced: {OUTPUT_PATH} ({len(feed)/1024:.1f} KB, {len(sorted_events)} entries)")
 
 if __name__ == '__main__':
     build_feed()

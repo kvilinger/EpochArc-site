@@ -1,7 +1,7 @@
 # EpochArc 数据模型规范
 
-**版本**:v2.2
-**更新日期**:2026-06-25
+**版本**：v2.3
+**更新日期**：2026-07-20
 **适用范围**：AI 历史时间轴内容的结构、类型定义、来源标准、评分规则和数据校验。
 
 关联文档：
@@ -110,6 +110,24 @@ export type EventCategory =
   | 'society';     // 社会文化
 ```
 
+#### 状态转换与发布门槛
+
+事件状态只允许按以下路径变化：
+
+```text
+candidate → draft → reviewed → published → archived
+                ↘───────────────↗
+```
+
+- `candidate`、`draft`、`reviewed` 不得进入公开构建输出。
+- `reviewed` 必须填写 `editorial.reviewedAt`、`editorial.reviewer` 和 `editorial.reviewProvenance`。
+- `published` 必须填写 `editorial.reviewedAt`、`editorial.reviewer`、`editorial.reviewProvenance` 和 `editorial.publishedAt`。
+- `archived` 保留源文件和变更记录，但默认不进入时间轴；引用它的方向或 Arc 必须先解除引用或明确迁移目标。
+- 任何逆向状态变化都必须增加 `changeLog`，并使用 `correction` 或 `archived` 说明原因。
+- 当前为单人策展时，`curator` 与 `reviewer` 可以是同一人，但两个责任字段仍必须显式填写。
+
+`slug` 是公开 URL 的唯一标识，必须全局唯一且符合 `^[a-z0-9]+(?:[.-][a-z0-9]+)*$`。构建器不得静默用 `id` 替代缺失的 `slug`。
+
 #### 语言要求
 
 `LocalizedText` 中 `en` 和 `zhHans` 均为必填。其他语言可选。
@@ -204,7 +222,7 @@ export type EvidenceGrade = 'A' | 'B' | 'C' | 'D';
 export interface ImpactAssessment {
   dimension: ImpactDimension;
   severity: ImpactSeverity;
-  direction: 'positive' | 'negative' | 'mixed' | 'neutral';
+  direction: 'positive' | 'negative' | 'neutral';
   description: LocalizedText;
   affectedGroups: string[];
   timeframe: ImpactTimeframe;
@@ -226,6 +244,14 @@ export type ImpactTimeframe = 'immediate' | 'short' | 'medium' | 'long';
 
 如果同一事件既带来正面又带来负面影响，拆成两个 impact，不要写成一个模糊的 0 分。
 
+`severity` 是带符号值，`direction` 只用于前端显示，二者必须一致：
+
+- `positive` → `severity` 必须为 `+1..+3`
+- `negative` → `severity` 必须为 `-1..-3`
+- `neutral` → `severity` 必须为 `0`
+
+不再允许 `mixed`。正负影响必须拆开记录，避免同一条记录同时承担相反语义。
+
 ---
 
 ### 2.5 来源
@@ -243,7 +269,7 @@ export interface Source {
   publisher?: string;
   authors?: string[];
   publishedAt?: string;
-  accessedAt: string;
+  accessedAt?: string;
   language?: string;
   doi?: string;
   arxivId?: string;
@@ -264,10 +290,21 @@ export type SourceIndependence =
 
 export interface SourceRef {
   sourceId: string;
-  supports: string[];
+  supports?: string[];                 // 可选的编辑提示；证据绑定以 claim/impact 的 sourceIds 为准
   quote?: string;
 }
 ```
+
+`publishedAt` 表示来源自身的发布日期，`accessedAt` 表示编辑最后一次实际打开并核对该链接的日期，两者不得混用。新建或更新来源时 `accessedAt` 必填；历史来源缺失时校验器报 warning，完成真实链接检查后才能补写，禁止用迁移日期伪装成访问日期。
+
+`independence` 的判定对象是“相对于事件中的核心主张是否独立”，而不是网站类型：
+
+- 当事公司、作者、监管发布主体：`primary_actor`
+- 与核心主张无直接利益关系的媒体、研究机构或复核方：`independent`
+- 社区帖子与热度聚合：`community_signal`
+- 暂时无法判断：`unknown`，不得计入独立来源门槛
+
+“2 个独立来源”按出版机构/控制主体去重，而不是按 URL 数量计数；同一媒体、同一公司集团或同一份稿件的转载只能算 1 个来源。校验器优先使用 `publisher`，缺失时以 URL 域名作为保守去重键。
 
 ---
 
@@ -293,6 +330,7 @@ export interface AIForecast {
   rationale: ForecastRationale;
   signals: ForecastSignal[];
   consensusBasis: ForecastConsensusBasis;
+  resolution?: ForecastResolution;
   sources: SourceRef[];
   relatedEvents: string[];
   selection?: ForecastSelectionSummary; // 1.0 可只存在前端 localStorage
@@ -306,6 +344,12 @@ export type ForecastType =
 export type ForecastStatus =
   | 'active' | 'resolved_true' | 'resolved_false'
   | 'partially_resolved' | 'superseded' | 'retracted';
+
+export interface ForecastWindow {
+  start: string;                       // YYYY
+  end: string;                         // YYYY，且不得早于 start
+  precision: 'year';
+}
 
 export interface ForecastConfidence {
   level: 'low' | 'medium' | 'high';
@@ -354,7 +398,23 @@ export interface ForecastSelectionSummary {
   storedAt: 'localStorage' | 'd1' | 'account';
   updatedAt: string;
 }
+
+export interface ForecastResolution {
+  resolvedAt: string;
+  outcome: 'true' | 'false' | 'partial';
+  criterion: LocalizedText;            // 采用的外部公开口径
+  summary: LocalizedText;
+  sourceIds: string[];
+  reviewer: string;
+}
 ```
+
+方向生命周期约束：
+
+- `monitor_only` 只能使用 `active`、`superseded` 或 `retracted`，不得使用任何 `resolved_*` 状态。
+- `consensus_gated` 必须使用非 `none` 的 `basisType`，并给出可追溯的外部来源。
+- 任何 `resolved_*` 状态都必须包含 `resolution`；`resolution.outcome` 必须与状态一致。
+- `superseded` 必须在编辑记录中说明替代方向 ID；`retracted` 必须说明撤回原因。
 
 1.0 公开 JSON 不发布全站投票聚合；如果未来引入 Reader Pulse 后端统计，建议放在独立接口或 D1 表，而不是写回静态方向数据。
 
@@ -383,6 +443,7 @@ export interface EditorialMetadata {
   lastSourceCheckAt?: string;
   curator?: string;
   reviewer?: string;
+  reviewProvenance?: 'legacy_pre_v23' | 'v2.3';
   curatorNote?: LocalizedText;
   changeLog?: ChangeLogEntry[];
 }
@@ -397,7 +458,7 @@ export interface ChangeLogEntry {
 }
 ```
 
-`createdAt` 与 `updatedAt` 是每个正式事件的必填字段。`lastReviewed` 是旧字段，必须迁移为 `reviewedAt`；`reviewer` 仍是合法的可选字段。`curatorNote` 用于保留双语策展说明，不替代时间和责任人字段。
+`createdAt` 与 `updatedAt` 是每个正式事件的必填字段。`lastReviewed` 是旧字段，必须迁移为 `reviewedAt`。`reviewProvenance = legacy_pre_v23` 表示该条目只完成了旧数据迁移，不能冒充按当前规范完成的事实复核；经过当前规范复核后才可改为 `v2.3`，并同步更新 `updatedAt`、`reviewedAt` 与 `changeLog`。`curatorNote` 用于保留双语策展说明，不替代时间和责任人字段。
 
 ---
 
@@ -412,12 +473,14 @@ export interface ChangeLogEntry {
 | 3 | 专家分析与社区整理：研究者博客、专业通讯、会议演讲 | 背景解释、趋势线索、候选发现 |
 | 4 | 社区热度信号：社交媒体、HN、Reddit、论坛 | 仅用于发现，不可独立支撑结论 |
 
+类型与层级必须相容：论文、官方公告、模型卡、代码/法规/司法原文和直接技术报告才有资格标为 Tier 1；新闻报道最高为 Tier 2；普通分析和百科默认 Tier 3。经过学术编辑的参考工具可在 `notes` 中说明理由后标 Tier 2；Wikipedia 不得作为 Tier 2 的默认替代品。社区内容只能标 Tier 4。
+
 ### 3.2 最低来源要求
 
 | 内容类型 | 发布最低要求 |
 | --- | --- |
 | L1 事件 | 1 个 Tier 1，或 2 个相互独立的 Tier 2 |
-| L2 事件 | 1 个 Tier 1 + 1 个独立 Tier 2/3 |
+| L2 事件 | 1 个 Tier 1 + 1 个独立 Tier 2/3；若不存在可获得的一手材料，可用 2 个相互独立的 Tier 2，并在编辑记录中说明 |
 | L3 事件 | 1 个 Tier 1 + 2 个独立 Tier 2；若有争议须收录反方来源 |
 | 影响评估 | 每个核心影响至少 1 个可追溯来源 |
 | Possible Direction | 至少 2 条 observed signals + 1 条明确 counterSignal |
@@ -469,18 +532,29 @@ significance（L1-L3）和 impactIndex（0-10）是两套独立的评价体系�
 
 ### 4.4 影响分：`impactIndex`
 
-推荐公式：
+正式计算规则：
 
 ```
 impactIndex =
-  dimensionScore      ← 所有影响维度 |severity| 之和 / 3，上限 4
-  + evidenceBonus     ← 取最低 evidenceGrade：A=+1.5, B=+1, C=+0.5, D=-1
+  dimensionScore      ← 每个影响维度只取最大的 |severity|，再求和 / 3，上限 4
+  + evidenceBonus     ← 取所有 impact 中最弱的 evidenceGrade：A=+1.5, B=+1, C=+0.5；D 不得发布
   + durabilityBonus   ← 取最高 timeframe：long=+1.5, medium=+1, short=+0.5, immediate=0
-  + scopeBonus        ← 受影响群体数：≥4类+2, 3类+1.5, 2类+1, 1类+0.5
-  + controversyAdj    ← 高争议但证据不足 -0.5；争议构成重大公共影响时不扣分
+  + scopeBonus        ← 去空格、转小写、去重后的受影响群体数：≥4类+2, 3类+1.5, 2类+1, 1类+0.5
+  + controversyAdj    ← controversy=true 且任一核心 claim 为 C 级时 -0.5，否则 0
 ```
 
-最后四舍五入到 0-10。
+先将原始分截断到 0-10，再按 `floor(score + 0.5)` 四舍五入为整数。重复添加同一维度或同义 affected group 不得提高分数。
+
+#### EvidenceGrade 判定
+
+| 等级 | 可发布含义 |
+| --- | --- |
+| A | 有直接一手证据，并有独立复核；或有多份相互独立的高质量直接证据 |
+| B | 有可靠的一手证据但独立复核有限；或有至少 2 个相互独立的 Tier 2 |
+| C | 只有单一可靠二手来源，结论仍需补强；不得支撑 L3 核心判断 |
+| D | 未核实线索、社区传闻或营销主张；仅限候选池，不得出现在 `published` 内容中 |
+
+EvidenceGrade 评价的是具体 claim/impact 的证据链，不等于单个来源的 Tier。
 
 ### 4.5 共识度
 
@@ -502,7 +576,7 @@ impactIndex =
 
 ## 5. 数据质量校验
 
-事件数据通过 `python3 scripts/build_events.py` 校验，Possible Directions 通过 `python3 scripts/validate_forecasts.py` 校验；完整发布构建使用 `npm run build`。事件校验至少检查：
+所有公开数据先通过 `python3 scripts/validate_all.py` 统一校验；`npm run build` 必须先执行该门禁。`build_events.py` 和 `build_arcs.py` 只负责生成，不是完整发布门禁。校验至少检查：
 
 - JSON 可解析。
 - ID 唯一。

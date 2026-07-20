@@ -28,6 +28,18 @@ export default defineConfig({
           dest: 'data'
         },
         {
+          src: 'events/**/*',
+          dest: 'events'
+        },
+        {
+          src: 'arcs/**/*',
+          dest: 'arcs'
+        },
+        {
+          src: 'directions/**/*',
+          dest: 'directions'
+        },
+        {
           src: 'assets/*',
           dest: 'assets'
         },
@@ -45,6 +57,18 @@ export default defineConfig({
         },
         {
           src: 'sitemap.xml',
+          dest: '.'
+        },
+        {
+          src: 'arcs.html',
+          dest: '.'
+        },
+        {
+          src: 'directions.html',
+          dest: '.'
+        },
+        {
+          src: 'rss.xml',
           dest: '.'
         },
         {

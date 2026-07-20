@@ -416,7 +416,9 @@
     }
     .predict-expanded-toolbar {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
       padding: 0;
       padding-top: 8px;
       border-top: 1px solid color-mix(in oklch, var(--fg) 8%, var(--border));
@@ -425,6 +427,19 @@
       backdrop-filter: none;
       position: static;
       z-index: auto;
+    }
+    .forecast-full-link {
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .forecast-full-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
     .predict-collapse-button {
       width: auto;
