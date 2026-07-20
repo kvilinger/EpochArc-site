@@ -699,6 +699,22 @@
       border-color: var(--fg);
       box-shadow: 0 0 0 2px var(--fg-soft);
     }
+    .filter-field.is-active .filter-label,
+    .filter-select.is-active {
+      color: var(--accent);
+    }
+    .filter-select.is-active {
+      border-color: var(--accent);
+      background-color: color-mix(in oklch, var(--accent) 6%, var(--btn-inactive-bg));
+    }
+    .filter-select.is-active:hover {
+      border-color: var(--accent);
+      background-color: color-mix(in oklch, var(--accent) 9%, var(--surface-hover));
+    }
+    .filter-select.is-active:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px color-mix(in oklch, var(--accent) 18%, transparent);
+    }
     
     /* 重置按钮外层容器 - 常驻固定大小 */
     .filter-reset-field {
