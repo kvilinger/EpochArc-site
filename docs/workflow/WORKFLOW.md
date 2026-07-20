@@ -1,7 +1,7 @@
 # EpochArc 信息收集工作流
 
-**版本**：v2.1  
-**更新日期**：2026-06-25
+**版本**：v2.3  
+**更新日期**：2026-07-20
 
 > ⚠️ **核心原则：所有工作严格按照流程、体系和标准执行。**
 > 任何关于是否收录、如何分类、打什么分的决定，必须依据本文档定义的流程（发现→初筛→确认→发布）、DATA-MODEL.md 定义的评分和数据类型、STYLE-GUIDE.md 定义的文案规范。
@@ -21,17 +21,17 @@
 **发现层**回答"有什么值得关注的事发生了"。  
 **确认层**回答"这件事的准确事实、可验证影响和可信来源是什么"。
 
-Brave Search 只做确认层的深挖，不做发现层的扫描——否则会漏掉论文、社区信号和未报道的突破。
+Brave Search 有两个明确角色：只用于 Reddit/X/通用新闻的代理发现，以及候选进入确认层后的深挖。它不得替代 HF、HN、周刊或分类定向扫描。
 
 > ⚠️ **通道状态速查**：Gmail 已连接，Reddit 通过 Brave Search 代理可用，X/Twitter 同。详见下方信源矩阵。
 
 ---
 
-## 一、发现层：7 个信源并行扫描
+## 一、发现层：核心通道 + 条件通道
 
 ### 目标
 
-每周自动拉取所有信源，输出一个候选事件列表。每条候选包含：信源地址、简短理由、初步日期。
+每周拉取所有可用核心信源，输出一个候选事件列表。每条候选包含：唯一 `candidateId`、信源地址、发现时间、简短理由、初步日期和原始查询。不可用通道必须在批次记录中标记，不得计入已完成覆盖。
 
 ### 信源矩阵
 
@@ -39,13 +39,13 @@ Brave Search 只做确认层的深挖，不做发现层的扫描——否则会�
 |---|------|---------|---------|------|--------|
 | 1 | **Hugging Face Daily Papers** | 社区筛选的研究热点 | `GET https://huggingface.co/api/daily_papers?limit=20` | ✅ 可用 | 无需操作。自动替代 arXiv + Papers with Code |
 | 2 | **Hacker News** | 科技社区注意力信号 | Firebase API (公开) | ✅ 可用 | 无需操作 |
-| 3 | **Gmail — Import AI 周刊** | 高质量人工策展 AI 新闻 | `gws gmail users messages list --params '{"userId": "me", "q": "from:importai@substack.com"}'` | ✅ 已连接，无内容 | Import AI 订阅刚创建，尚无正式内容。等周报进来即可 |
-| 4 | **Gmail — The Batch** | 行业向 AI 周报 | `gws gmail users messages list --params '{"userId": "me", "q": "from:thebatch@deeplearning.ai"}'` | ✅ 已连接，未订阅 | 如果你订阅了 The Batch，邮件自动进入 Gmail，我就能读 |
+| 3 | **Gmail — Import AI 周刊** | 高质量人工策展 AI 新闻 | `python3 scripts/check_mail.py import-ai` | ✅ 可用 | App Password 方式，永不过期 |
+| 4 | **Gmail — The Batch** | 行业向 AI 周报 | `python3 scripts/check_mail.py the-batch` | ✅ 可用 | App Password 方式，永不过期 |
 | 5 | **Brave Search → Reddit** | AI 社区热议话题（代理） | Brave Search API: `reddit.com MachineLearning trending {keywords}` | ✅ 可用（代理） | 无需操作。Reddit 原生 API 被封锁，用 Brave Search 搜索 `reddit.com` 替代 <br>`node search.js -n 10 "reddit.com trending AI June 2026"` |
 | 6 | **Brave Search → X/Twitter** | 科技社区注意力信号（代理） | Brave Search API: `x.com OR twitter.com AI {keywords}` | ✅ 可用（代理） | 无需操作。Twitter 原生 API 需付费，用 Brave Search 搜索 `x.com` 替代 <br>`node search.js -n 10 "x.com AI breakthrough June 2026"` |
 | 7 | **Brave Search → 通用 AI 新闻** | 发现层兜底 | Brave Search 通用搜索 | ✅ 可用 | 当其他通道全都无结果时，用 AI 新闻搜索兜底 |
 
-> **当前实际可用通道**: 6 个通道可用（HF Daily Papers + HN + Gmail/Import AI + Gmail/The Batch + Brave→Reddit + Brave→X）。
+> **核心通道**：HF Daily Papers、HN、Brave→Reddit、Brave→X。Gmail 通道只有在本轮实际读到内容时才算完成；通用 Brave 新闻是分类补漏与故障兜底，不计作常驻并行通道。
 > Brave Search 既做发现层（代理 Reddit/X），也做确认层（四层漏斗），但它不替代 HF 和 HN 的原始 API。
 > ⚠️ arXiv / Papers with Code / Reddit 原生 API 均已放弃，分别由 HF Daily Papers / Brave Search 替代。
 
@@ -82,13 +82,9 @@ if re.search(r'AI|LLM|GPT|Claude|Gemini|DeepSeek|Anthropic|OpenAI|agent|transfor
 "
 done
 
-# 3) Gmail — Import AI（需先授权 gws）
-gws gmail users messages list --params '{"userId": "me", "q": "from:importai@substack.com", "maxResults": 5}' --format json | python3 -c "
-import sys, json
-d = json.load(sys.stdin)
-for m in d.get('messages', []):
-    print(m['id'])
-"
+# 3) Gmail — Import AI（App Password 方式，永不过期）
+python3 scripts/check_mail.py import-ai  # 最新一期全文
+python3 scripts/check_mail.py import-ai --list  # 仅标题
 
 # 4) Brave Search → Reddit（发现层代理）
 export BRAVE_API_KEY="YOUR_KEY"
@@ -114,9 +110,9 @@ cd /path/to/brave-search-skill && node search.js -n 10 "x.com AI breakthrough Ju
 | `safety` — 安全伦理 | 安全事故、伦理争议、吹哨人、深度伪造 | Import AI, 专业媒体, 安全社区 | 在技术信源中几乎不存在 |
 | `society` — 社会文化 | 文化现象、就业危机（社会面）、公众认知时刻 | 主流媒体, HN/Reddit 热帖, Import AI | 在技术信源中几乎不存在；需要主动找 |
 
-**检查方法**：候选列表出来后，按 6 个分类染色，高亮空白类别。对空白类别，在确认层执行定向 Brave 搜索补漏（见第 5 层）。
+**检查方法**：候选列表出来后，按 6 个分类染色，高亮空白类别。对空白类别执行定向 Brave 搜索补漏（见第 5 层）。分类覆盖是“已执行搜索”的覆盖，不是“每类必须收录事件”的配额；不得为了填满分类而降低准入标准。
 
-**频率**：每次收敛事件的批次（而非单事件）执行一次。
+**频率**：每个有明确起止日期的批次执行一次。批次记录必须包含 `windowStart`、`windowEnd`、通道状态、查询、失败原因和重试结果。
 
 ---
 
@@ -154,7 +150,7 @@ brave search "事件名称 parameters model architecture paper" -n 5 --content
 
 **产出** → 填充 `AIEvent`:
 
-> 初筛评分（五维×0-2）写入本地候选日志（例如 `data/event_screening_log.json`）。确认层完成后，该 entry 的 `eventId` 回填为正式事件 ID，形成"候选→审核→发布"的可追溯链条。
+> 初筛评分（五维×0-2）统一写入 `data/screening_log.json`。合法决定值只有 `skip`、`pool`、`draft`。确认层完成后回填 `eventId`、`reviewed`、`reviewedAt` 和 `reviewer`，形成“候选→审核→发布”的可追溯链条。
 
 | 搜索到的信息 | v2 字段 |
 |-------------|---------|
@@ -222,7 +218,7 @@ brave search "事件名称 copyright lawsuit safety concern ethical issue" -n 5 
 | 安全/伦理风险 | `impacts[].dimension = risk_creation` |
 | 争议导致共识度低 | `consensusLevel = debated` |
 
-### 第 5 层：按分类定向深挖 + 社区热点信号
+### 第 5 层：按分类定向补漏 + 社区热点信号
 
 在批次收集中，对自查发现的空白分类执行定向搜索。这层搜索**不以单事件为起点**，而是以类别为起点，目的是发现之前被遗漏的事件。
 
@@ -298,19 +294,17 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 
 | 属性 | 内容 |
 |:--|:--|
-| API 方式 | `gws` CLI（Google Workspace CLI） |
-| 前置要求 | 已安装 `gws` + OAuth 授权，可读写 Gmail |
-| 搜索命令 | `gws gmail users messages list --params '{"userId": "me", "q": "from:importai@substack.com", "maxResults": 5}' --format json` |
-| 获取正文 | 用 `gws gmail users messages get` 解析邮件正文，提取新闻标题 > 来源 |
-| 当前状态 | Import AI 刚订阅，尚无正式周报内容。等待中 |
+| 前置要求 | App Password（已存入 macOS 钥匙串 `epocharc-gmail-app-password`） |
+| 搜索命令 | `python3 scripts/check_mail.py import-ai`（全文）或 `--list`（仅标题） |
+| 当前状态 | ✅ 可用。Import AI 已有 4 期邮件，最新：#464 (Jul 6) |
 
 ### 渠道 4：Gmail — The Batch
 
 | 属性 | 内容 |
 |:--|:--|
-| API 方式 | 同上（`gws` CLI） |
-| 搜索命令 | `gws gmail users messages list --params '{"userId": "me", "q": "from:thebatch@deeplearning.ai", "maxResults": 5}' --format json` |
-| 当前状态 | 未订阅此邮件。如需订阅，请到 deeplearning.ai 注册 |
+| API 方式 | IMAP + App Password |
+| 搜索命令 | `python3 scripts/check_mail.py the-batch`（全文）或 `--list`（仅标题） |
+| 当前状态 | ✅ 可用。已有 4 期邮件，最新：(Jul 16, 2026) |
 
 ### 渠道 5：Brave Search → Reddit（代理）
 
@@ -376,8 +370,8 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 
 ### 分类覆盖检查
 
-- [ ] 当前批次覆盖了至少 **5 个以上不同分类**（capability/product/commerce/governance/safety/society）
-- [ ] 如果某个分类完全空白，确认是该期间确实没有该类别的重要事件（而非遗漏搜索）
+- [ ] 当前批次对 6 个分类都执行过覆盖检查；空白分类记录了补漏查询或不执行的理由
+- [ ] 分类空白不自动产生收录配额，所有候选仍使用同一准入门槛
 - [ ] `categories[0]` 主分类选择准确：选择“最能解释为什么被收录”的分类；可选次分类必须通过 30% 信息丢失测试
 
 ### 来源检查
@@ -392,6 +386,7 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 - [ ] `significance` L1-L3 与同类事件一致
 - [ ] `impactIndex` 在 0-10 之间，与同类事件的 relative magnitude 一致
 - [ ] `severity` 做了拆分（正负影响分别写，不写成模糊的 0）
+- [ ] `direction` 与带符号的 `severity` 一致；不使用 `mixed`
 - [ ] `controversy = true` 的事件有 `claimType = limitation` 的反方主张
 - [ ] `consensusLevel` 选择合理（broad / debated / emerging）
 
@@ -400,6 +395,7 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 - [ ] 每条 claim 包含唯一 `id`、双语 `text`、合法 `claimType`、`evidenceGrade` 和非空 `sourceIds`
 - [ ] Claim 不使用旧字段 `statement`、`type`、`confidence`、`sources`
 - [ ] 每个事件包含 `editorial.createdAt` 和 `editorial.updatedAt`，审核日期使用 `reviewedAt`
+- [ ] `published` 事件包含唯一 `slug`、`reviewer`、`reviewedAt` 和 `publishedAt`
 - [ ] `relatedEvents` 只引用已发布事件，不包含自身或重复 ID；反向关系由构建脚本自动补齐
 
 ### 语言检查
@@ -424,7 +420,7 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 7. 人工审核 → 提交到 `content/events/`
 8. 运行 `python3 scripts/build_events.py` → 校验并生成 `data/events.json`
 9. 前端自动渲染
-10. **整理审核报告**：将本次发现的候选事件整理为摘要格式（事件名称、日期、分类、评分、来源摘要、确认层关键发现），发送给用户审核。**不执行 git push**，只做 `npm run build` 本地验证
+10. **整理审核报告**：将本次发现的候选事件整理为摘要格式（事件名称、日期、分类、评分、来源摘要、确认层关键发现），发送给用户审核。**不执行 git push**，先运行 `python3 scripts/validate_all.py` 和 `npm run build` 本地验证
 11. **用户确认后**：执行 `git add -A && git commit` 和 `git push origin main` → Cloudflare Pages 自动部署
 
 ### 第二版（可选）：Scheduled Worker
@@ -471,7 +467,7 @@ X API 现在需要付费订阅（$100+/月）才能读写。用 Brave Search 搜
 | 环节 | 耗时 |
 |------|------|
 | 脚本拉取 HF + HN + Brave→Reddit/X | 自动 |
-| 浏览 Gmail（Import AI / The Batch） | 5 分钟 |
+| 浏览 Gmail（仅在订阅且有内容时） | 0-5 分钟 |
 | agent 对候选执行 Brave Search + 生成 JSON | 自动（每次 1-3 分钟） |
 | 人工审核 | 10-20 分钟 |
 | 构建 + 部署 | 自动 |
@@ -480,5 +476,5 @@ X API 现在需要付费订阅（$100+/月）才能读写。用 Brave Search 搜
 
 ---
 
-*此文档与 [DATA-MODEL.md](../data/DATA-MODEL.md) v2.0 配套使用。
+*此文档与 [DATA-MODEL.md](../data/DATA-MODEL.md) v2.3 配套使用。
 [DATA-MODEL.md](../data/DATA-MODEL.md) 定义"存什么"，本文档定义"怎么找到要存的内容"。*
