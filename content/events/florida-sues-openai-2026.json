@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 6,
+  "impactIndex": 5,
   "consensusLevel": "debated",
   "controversy": true,
   "impacts": [
@@ -45,7 +45,7 @@
         "state regulators"
       ],
       "timeframe": "long",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "nbc-florida-openai",
         "npr-florida-openai"
@@ -66,7 +66,7 @@
         "consumers"
       ],
       "timeframe": "long",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "nbc-florida-openai"
       ]
@@ -80,7 +80,7 @@
         "zhHans": "佛罗里达州总检察长于 2026 年 6 月 1 日对 OpenAI 和 Sam Altman 提起诉讼——美国首次州级诉讼针对 AI 公司安全，指控其将利润置于安全之上的行为。"
       },
       "claimType": "fact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "nbc-florida-openai"
       ]
@@ -105,7 +105,7 @@
         "zhHans": "美国州政府首次就安全问题起诉 AI 公司。指控 OpenAI 在安全方面误导用户，未能警告风险，并将 ChatGPT 宣传为对儿童安全。寻求禁令救济、民事罚款和追缴利润。触发了其他州总检察长的调查。"
       },
       "claimType": "impact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "nbc-florida-openai",
         "npr-florida-openai"
@@ -130,11 +130,17 @@
     },
     {
       "sourceId": "myfloridalegal-sues-openai",
-      "quote": "Attorney General files first-in-the-nation lawsuit against OpenAI."
+      "quote": "Attorney General files first-in-the-nation lawsuit against OpenAI.",
+      "supports": [
+        "florida-sues-openai-2026"
+      ]
     },
     {
       "sourceId": "politico-florida-openai-2026",
-      "quote": "Florida sues OpenAI and Sam Altman over AI risks."
+      "quote": "Florida sues OpenAI and Sam Altman over AI risks.",
+      "supports": [
+        "florida-sues-openai-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -143,7 +149,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -152,6 +158,16 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for Florida sues OpenAI."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 4 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, claims[2] A->B, impacts[0] A->B, impacts[1] A->C); impactIndex 6->5."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
       }
     ],
     "reviewer": "gang",

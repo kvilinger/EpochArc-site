@@ -76,14 +76,17 @@
     },
     {
       "sourceId": "wikipedia-siri",
-      "quote": "Siri was introduced on iPhone 4S in October 2011."
+      "quote": "Siri was introduced on iPhone 4S in October 2011.",
+      "supports": [
+        "siri-2011"
+      ]
     }
   ],
   "relatedEvents": [],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -92,6 +95,11 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added Siri — first mainstream conversational AI assistant."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

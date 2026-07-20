@@ -58,19 +58,35 @@
   "sources": [
     {
       "sourceId": "openai-jalapeno-announce-2026",
-      "relevance": "Official announcement"
+      "relevance": "Official announcement",
+      "supports": [
+        "openai-jalapeno-chip-2026-claim-1",
+        "openai-jalapeno-chip-2026"
+      ]
     },
     {
       "sourceId": "techcrunch-openai-chip-2026",
-      "relevance": "Tech media coverage of the chip announcement"
+      "relevance": "Tech media coverage of the chip announcement",
+      "supports": [
+        "openai-jalapeno-chip-2026-claim-1",
+        "openai-jalapeno-chip-2026"
+      ]
     },
     {
       "sourceId": "cnbc-openai-chip-2026",
-      "relevance": "Business coverage with industry context"
+      "relevance": "Business coverage with industry context",
+      "supports": [
+        "openai-jalapeno-chip-2026-claim-2",
+        "openai-jalapeno-chip-2026"
+      ]
     },
     {
       "sourceId": "cnn-openai-chip-2026",
-      "relevance": "Mainstream news coverage"
+      "relevance": "Mainstream news coverage",
+      "supports": [
+        "openai-jalapeno-chip-2026-claim-2",
+        "openai-jalapeno-chip-2026"
+      ]
     }
   ],
   "impacts": [
@@ -116,13 +132,18 @@
   ],
   "editorial": {
     "createdAt": "2026-06-26",
-    "updatedAt": "2026-06-30",
+    "updatedAt": "2026-07-20",
     "curator": "gang",
     "changeLog": [
       {
         "date": "2026-06-26",
         "changeType": "created",
         "summary": "Initial event entry."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 4 source reference(s)."
       }
     ],
     "reviewedAt": "2026-06-30",

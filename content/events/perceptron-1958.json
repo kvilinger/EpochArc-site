@@ -133,11 +133,17 @@
     },
     {
       "sourceId": "rosenblatt-perceptron-1958",
-      "quote": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain."
+      "quote": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain.",
+      "supports": [
+        "perceptron-1958"
+      ]
     },
     {
       "sourceId": "wikipedia-perceptron",
-      "quote": "The perceptron was invented in 1958 by Frank Rosenblatt."
+      "quote": "The perceptron was invented in 1958 by Frank Rosenblatt.",
+      "supports": [
+        "perceptron-1958"
+      ]
     }
   ],
   "relatedEvents": [
@@ -147,7 +153,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -156,6 +162,11 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for Rosenblatt's Perceptron."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
       }
     ],
     "reviewer": "gang",

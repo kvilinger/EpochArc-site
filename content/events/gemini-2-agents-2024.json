@@ -96,7 +96,10 @@
     },
     {
       "sourceId": "forbes-gemini-mariner-2024",
-      "quote": "Google Launches Mariner, A New AI Agent Based On Updated Gemini 2.0."
+      "quote": "Google Launches Mariner, A New AI Agent Based On Updated Gemini 2.0.",
+      "supports": [
+        "gemini-2-agents-2024"
+      ]
     }
   ],
   "relatedEvents": [
@@ -106,7 +109,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -115,6 +118,11 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added Gemini 2.0 + Project Mariner — Google's agent ecosystem launch."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

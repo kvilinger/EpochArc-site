@@ -117,7 +117,10 @@
     },
     {
       "sourceId": "wikipedia-nobel-prize-chemistry-2024",
-      "quote": "The Nobel Prize in Chemistry 2024 was awarded to Hassabis, Jumper, Baker."
+      "quote": "The Nobel Prize in Chemistry 2024 was awarded to Hassabis, Jumper, Baker.",
+      "supports": [
+        "alphafold-nobel-2024"
+      ]
     }
   ],
   "relatedEvents": [
@@ -127,7 +130,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -136,6 +139,11 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for AlphaFold Nobel Prize."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

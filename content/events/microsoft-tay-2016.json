@@ -78,7 +78,10 @@
     },
     {
       "sourceId": "guardian-tay-chatbot-2016",
-      "quote": "Microsoft deeply sorry for racist and sexist tweets by AI chatbot."
+      "quote": "Microsoft deeply sorry for racist and sexist tweets by AI chatbot.",
+      "supports": [
+        "microsoft-tay-2016"
+      ]
     }
   ],
   "relatedEvents": [
@@ -87,7 +90,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -96,6 +99,11 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added Microsoft Tay — first viral AI safety meltdown, learning from human input gone wrong."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

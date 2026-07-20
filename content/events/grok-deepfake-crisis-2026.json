@@ -88,7 +88,10 @@
     },
     {
       "sourceId": "wikipedia-grok-deepfake",
-      "quote": "Grok sexual deepfake scandal."
+      "quote": "Grok sexual deepfake scandal.",
+      "supports": [
+        "grok-deepfake-crisis-2026"
+      ]
     }
   ],
   "relatedEvents": [],
@@ -109,6 +112,11 @@
         "date": "2026-07-20",
         "changeType": "correction",
         "summary": "Replaced same-domain Wikipedia support with Ofcom and AP sources and corrected the investigation timeline and country-block claims."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

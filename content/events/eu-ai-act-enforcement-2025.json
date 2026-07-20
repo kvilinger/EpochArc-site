@@ -119,7 +119,10 @@
     },
     {
       "sourceId": "reuters-eu-ai-act-delay-2025",
-      "quote": "EU to delay high-risk AI rules until 2027."
+      "quote": "EU to delay high-risk AI rules until 2027.",
+      "supports": [
+        "eu-ai-act-enforcement-2025"
+      ]
     }
   ],
   "relatedEvents": [
@@ -128,7 +131,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -137,6 +140,11 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for EU AI Act enforcement."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

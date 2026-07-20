@@ -76,7 +76,10 @@
     },
     {
       "sourceId": "github-autogpt",
-      "quote": "An experimental open-source attempt to make GPT-4 fully autonomous."
+      "quote": "An experimental open-source attempt to make GPT-4 fully autonomous.",
+      "supports": [
+        "auto-gpt-2023"
+      ]
     }
   ],
   "relatedEvents": [
@@ -88,7 +91,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -97,6 +100,11 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added Auto-GPT — first viral autonomous AI agent, agent concept prototype."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

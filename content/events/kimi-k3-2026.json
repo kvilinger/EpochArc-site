@@ -127,7 +127,10 @@
     },
     {
       "sourceId": "kie-ai-kimi-k3-2026",
-      "quote": "Kimi K3 is Moonshot AI's next-gen model — a ~2.8T MoE with a 1M-token context window."
+      "quote": "Kimi K3 is Moonshot AI's next-gen model — a ~2.8T MoE with a 1M-token context window.",
+      "supports": [
+        "kimi-k3-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -154,6 +157,11 @@
         "date": "2026-07-20",
         "changeType": "correction",
         "summary": "Distinguished launch access from the scheduled full-weight release and softened unverified performance claims."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

@@ -23,7 +23,7 @@
     "capability"
   ],
   "significance": 1,
-  "impactIndex": 5,
+  "impactIndex": 4,
   "controversy": false,
   "consensusLevel": "broad",
   "claims": [
@@ -83,7 +83,7 @@
         "startups",
         "small businesses"
       ],
-      "evidenceGrade": "B",
+      "evidenceGrade": "C",
       "sourceIds": [
         "techcrunch-sonnet-5-2026"
       ]
@@ -101,7 +101,7 @@
         "AI developers",
         "Claude users"
       ],
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "anthropic-claude-sonnet-5-announce-2026",
         "macrumors-sonnet-5-2026"
@@ -112,34 +112,64 @@
   "sources": [
     {
       "sourceId": "anthropic-claude-sonnet-5-announce-2026",
-      "relevance": "Official Anthropic blog post announcing Claude Sonnet 5"
+      "relevance": "Official Anthropic blog post announcing Claude Sonnet 5",
+      "supports": [
+        "claude-sonnet-5-launch-2026-claim-1",
+        "claude-sonnet-5-launch-2026-claim-2",
+        "claude-sonnet-5-launch-2026-claim-3",
+        "claude-sonnet-5-launch-2026"
+      ]
     },
     {
       "sourceId": "techcrunch-sonnet-5-2026",
-      "relevance": "TechCrunch: Anthropic launches Claude Sonnet 5 as cheaper way to run agents"
+      "relevance": "TechCrunch: Anthropic launches Claude Sonnet 5 as cheaper way to run agents",
+      "supports": [
+        "claude-sonnet-5-launch-2026-claim-1",
+        "claude-sonnet-5-launch-2026-claim-3",
+        "claude-sonnet-5-launch-2026"
+      ]
     },
     {
       "sourceId": "9to5mac-sonnet-5-2026",
-      "relevance": "9to5Mac coverage with pricing details"
+      "relevance": "9to5Mac coverage with pricing details",
+      "supports": [
+        "claude-sonnet-5-launch-2026-claim-2"
+      ]
     },
     {
       "sourceId": "macrumors-sonnet-5-2026",
-      "relevance": "MacRumors: Sonnet 5 narrows gap between Sonnet and Opus"
+      "relevance": "MacRumors: Sonnet 5 narrows gap between Sonnet and Opus",
+      "supports": [
+        "claude-sonnet-5-launch-2026"
+      ]
     },
     {
       "sourceId": "mashable-sonnet-5-2026",
-      "relevance": "Mashable: Anthropic finally officially launches Claude Sonnet 5"
+      "relevance": "Mashable: Anthropic finally officially launches Claude Sonnet 5",
+      "supports": [
+        "claude-sonnet-5-launch-2026"
+      ]
     }
   ],
   "editorial": {
     "createdAt": "2026-07-08",
-    "updatedAt": "2026-07-08",
+    "updatedAt": "2026-07-20",
     "curator": "gang",
     "changeLog": [
       {
         "date": "2026-07-08",
         "changeType": "created",
         "summary": "Initial event entry."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (impacts[0] B->C, impacts[1] A->B); impactIndex 5->4."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 5 source reference(s)."
       }
     ],
     "reviewedAt": "2026-07-08",

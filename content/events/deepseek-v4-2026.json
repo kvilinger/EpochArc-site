@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 1,
-  "impactIndex": 6,
+  "impactIndex": 5,
   "consensusLevel": "broad",
   "controversy": false,
   "impacts": [
@@ -44,7 +44,7 @@
         "AI companies"
       ],
       "timeframe": "medium",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "deepseek-v4-morphllm"
       ]
@@ -63,7 +63,7 @@
         "global south"
       ],
       "timeframe": "medium",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "deepseek-v4-morphllm"
       ]
@@ -77,7 +77,7 @@
         "zhHans": "DeepSeek 于 2026 年 4 月 24 日发布 V4——一个开源权重（MIT）模型家族，V4-Pro 拥有 1.6T 参数，V4-Flash 拥有 284B 参数，定价每百万输出 token 仅 0.87 美元。"
       },
       "claimType": "fact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "deepseek-v4-morphllm"
       ]
@@ -93,11 +93,17 @@
     },
     {
       "sourceId": "huggingface-deepseek-v4",
-      "quote": "DeepSeek-V4-Pro on Hugging Face."
+      "quote": "DeepSeek-V4-Pro on Hugging Face.",
+      "supports": [
+        "deepseek-v4-2026"
+      ]
     },
     {
       "sourceId": "deepseek-v4-api-docs",
-      "quote": "DeepSeek V4 Preview Release announcement."
+      "quote": "DeepSeek V4 Preview Release announcement.",
+      "supports": [
+        "deepseek-v4-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -106,7 +112,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -115,6 +121,16 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for DeepSeek V4."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 3 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, impacts[0] A->C, impacts[1] A->C); impactIndex 6->5."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
       }
     ],
     "reviewer": "gang",

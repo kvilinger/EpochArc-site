@@ -148,7 +148,10 @@
     },
     {
       "sourceId": "axios-thinking-machines-inkling",
-      "quote": "Mira Murati's Thinking Machines on Wednesday released Inkling, betting enterprises want AI they can customize."
+      "quote": "Mira Murati's Thinking Machines on Wednesday released Inkling, betting enterprises want AI they can customize.",
+      "supports": [
+        "thinking-machines-inkling-2026"
+      ]
     },
     {
       "sourceId": "fortune-thinking-machines-inkling",
@@ -183,6 +186,11 @@
         "date": "2026-07-20",
         "changeType": "correction",
         "summary": "Separated video pretraining data from supported input modalities and removed an unresolved parameter placeholder."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

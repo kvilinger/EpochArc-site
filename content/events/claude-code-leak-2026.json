@@ -29,7 +29,7 @@
   ],
   "status": "published",
   "significance": 1,
-  "impactIndex": 4,
+  "impactIndex": 3,
   "consensusLevel": "broad",
   "controversy": true,
   "impacts": [
@@ -48,7 +48,7 @@
         "security teams"
       ],
       "timeframe": "short",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "thehackernews-claude-code-leak"
       ]
@@ -62,7 +62,7 @@
         "zhHans": "Anthropic 于 2026 年 3 月 31 日通过 npm 源映射泄露了 512,000 行 Claude Code 源码，暴露了专有智能体功能并引发了供应链攻击。"
       },
       "claimType": "fact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "thehackernews-claude-code-leak"
       ]
@@ -78,11 +78,17 @@
     },
     {
       "sourceId": "cnbc-claude-code-leak",
-      "quote": "Anthropic confirms Claude Code source code inadvertently released due to human error."
+      "quote": "Anthropic confirms Claude Code source code inadvertently released due to human error.",
+      "supports": [
+        "claude-code-leak-2026"
+      ]
     },
     {
       "sourceId": "zscaler-claude-code-leak",
-      "quote": "Threat actors weaponizing Claude Code leak with trojanized packages distributing Vidar and GhostSocks."
+      "quote": "Threat actors weaponizing Claude Code leak with trojanized packages distributing Vidar and GhostSocks.",
+      "supports": [
+        "claude-code-leak-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -92,7 +98,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -101,6 +107,16 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added Claude Code source leak — biggest AI source code leak, revealed agent architectures, triggered supply chain attack."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, impacts[0] A->C); impactIndex 4->3."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
       }
     ],
     "reviewer": "gang",

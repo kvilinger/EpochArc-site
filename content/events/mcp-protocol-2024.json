@@ -97,7 +97,10 @@
     },
     {
       "sourceId": "wikipedia-mcp",
-      "quote": "MCP was announced by Anthropic in November 2024 as an open standard."
+      "quote": "MCP was announced by Anthropic in November 2024 as an open standard.",
+      "supports": [
+        "mcp-protocol-2024"
+      ]
     }
   ],
   "relatedEvents": [
@@ -107,7 +110,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -116,6 +119,11 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added MCP — open standard for AI-tool integration, industry standard."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

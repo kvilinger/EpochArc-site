@@ -26,7 +26,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -45,7 +45,7 @@
           "entire labor market"
         ],
         "timeframe": "long",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "nytimes-meta-layoffs-2026",
           "techcrunch-ai-layoffs-2026"
@@ -60,7 +60,7 @@
           "zhHans": "Meta 在 2026 年 5 月裁员 8,000 名员工（占员工总数 10%），并将另外 7,000 人调往 AI 重点岗位，这是 2026 年上半年总计 92,000 多人的 AI 驱动裁员浪潮的一部分。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "nytimes-meta-layoffs-2026"
         ]
@@ -88,7 +88,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -97,6 +97,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for 2026 AI-driven layoffs wave."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, impacts[0] A->B); impactIndex 6->5."
         }
       ],
       "reviewer": "gang",
@@ -157,7 +162,7 @@
           "API customers"
         ],
         "timeframe": "long",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "latimes-ai-price-war-2026",
           "forbes-cheaper-tokens-2026",
@@ -178,7 +183,7 @@
           "global south"
         ],
         "timeframe": "medium",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "the-decoder-muse-spark-pricing-2026",
           "biggo-half-price-ai-2026"
@@ -212,7 +217,7 @@
           "en": "xAI released Grok 4.5 on July 7-9, 2026 at $2 per million input tokens and $6 per million output tokens.",
           "zhHans": "xAI 于 2026 年 7 月 7-9 日发布 Grok 4.5，定价每百万输入 token $2，每百万输出 token $6。"
         },
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "cloudmagazin-price-shift-2026",
           "biggo-half-price-ai-2026"
@@ -225,7 +230,7 @@
           "en": "Meta opened its first paid API on July 9, 2026 with Muse Spark 1.1 at $1.25 per million input tokens and $4.25 per million output tokens.",
           "zhHans": "Meta 于 2026 年 7 月 9 日开放首个付费 API Muse Spark 1.1，定价每百万输入 token $1.25，每百万输出 token $4.25。"
         },
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "the-decoder-muse-spark-pricing-2026",
           "biggo-half-price-ai-2026"
@@ -238,7 +243,7 @@
           "en": "The combined effect of three major labs pricing competitively within one week marked a structural shift in AI economics, with output token prices dropping from $25-50 to $4-6 range.",
           "zhHans": "三家主要实验室在一周内同时竞争性定价的综合效应标志着 AI 经济的结构性转变，输出 token 价格从 $25-50 降至 $4-6 区间。"
         },
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "latimes-ai-price-war-2026",
           "kersai-ai-breakthroughs-july-2026"
@@ -300,7 +305,7 @@
     ],
     "editorial": {
       "createdAt": "2026-07-16",
-      "updatedAt": "2026-07-16",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-07-16",
       "publishedAt": "2026-07-16",
       "curator": "gang",
@@ -309,6 +314,11 @@
           "date": "2026-07-16",
           "changeType": "created",
           "summary": "Initial entry for AI model price war week."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 5 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->B, claims[1] A->B, claims[2] A->B, impacts[0] A->B, impacts[1] A->B)."
         }
       ],
       "reviewer": "gang",
@@ -632,7 +642,10 @@
       },
       {
         "sourceId": "ieee-spectrum-alexnet",
-        "quote": "How AlexNet Transformed AI and Computer Vision Forever."
+        "quote": "How AlexNet Transformed AI and Computer Vision Forever.",
+        "supports": [
+          "alexnet-2012"
+        ]
       }
     ],
     "relatedEvents": [
@@ -650,7 +663,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -659,6 +672,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for AlexNet / ImageNet 2012."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -939,7 +957,10 @@
       },
       {
         "sourceId": "wikipedia-alphafold",
-        "quote": "AlphaFold is an AI system developed by DeepMind."
+        "quote": "AlphaFold is an AI system developed by DeepMind.",
+        "supports": [
+          "alphafold-2020"
+        ]
       }
     ],
     "relatedEvents": [
@@ -953,7 +974,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -962,6 +983,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for AlphaFold protein folding breakthrough."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -1090,7 +1116,10 @@
       },
       {
         "sourceId": "wikipedia-nobel-prize-chemistry-2024",
-        "quote": "The Nobel Prize in Chemistry 2024 was awarded to Hassabis, Jumper, Baker."
+        "quote": "The Nobel Prize in Chemistry 2024 was awarded to Hassabis, Jumper, Baker.",
+        "supports": [
+          "alphafold-nobel-2024"
+        ]
       }
     ],
     "relatedEvents": [
@@ -1100,7 +1129,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -1109,6 +1138,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for AlphaFold Nobel Prize."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -1261,7 +1295,10 @@
       },
       {
         "sourceId": "wikipedia-alphago-lee-sedol",
-        "quote": "AlphaGo defeated Lee Sedol 4-1 in March 2016."
+        "quote": "AlphaGo defeated Lee Sedol 4-1 in March 2016.",
+        "supports": [
+          "alphago-2016"
+        ]
       }
     ],
     "relatedEvents": [
@@ -1274,7 +1311,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -1283,6 +1320,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for AlphaGo vs Lee Sedol."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -1318,7 +1360,7 @@
       "commerce"
     ],
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 4,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -1345,7 +1387,7 @@
           "reuters-anthropic-alibaba-2026"
         ],
         "id": "anthropic-alibaba-extraction-2026-claim-2",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "claimType": "interpretation",
@@ -1357,7 +1399,7 @@
           "cnbc-anthropic-alibaba-2026"
         ],
         "id": "anthropic-alibaba-extraction-2026-claim-3",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       }
     ],
     "relatedEvents": [
@@ -1366,11 +1408,21 @@
     "sources": [
       {
         "sourceId": "reuters-anthropic-alibaba-2026",
-        "relevance": "First reporting of the accusation"
+        "relevance": "First reporting of the accusation",
+        "supports": [
+          "anthropic-alibaba-extraction-2026-claim-1",
+          "anthropic-alibaba-extraction-2026-claim-2",
+          "anthropic-alibaba-extraction-2026"
+        ]
       },
       {
         "sourceId": "cnbc-anthropic-alibaba-2026",
-        "relevance": "Business coverage with context on Fable 5 ban timing"
+        "relevance": "Business coverage with context on Fable 5 ban timing",
+        "supports": [
+          "anthropic-alibaba-extraction-2026-claim-1",
+          "anthropic-alibaba-extraction-2026-claim-3",
+          "anthropic-alibaba-extraction-2026"
+        ]
       }
     ],
     "impacts": [
@@ -1388,7 +1440,7 @@
           "governments",
           "policymakers"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "reuters-anthropic-alibaba-2026",
           "cnbc-anthropic-alibaba-2026"
@@ -1407,7 +1459,7 @@
           "US-China tech relations",
           "global AI industry"
         ],
-        "evidenceGrade": "B",
+        "evidenceGrade": "C",
         "sourceIds": [
           "reuters-anthropic-alibaba-2026"
         ]
@@ -1415,13 +1467,23 @@
     ],
     "editorial": {
       "createdAt": "2026-06-26",
-      "updatedAt": "2026-06-30",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-06-26",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 4 evidence grade(s) to the v2.3 source-chain ceiling (claims[1] B->C, claims[2] B->C, impacts[0] A->B, impacts[1] B->C); impactIndex 5->4."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
         }
       ],
       "reviewedAt": "2026-06-30",
@@ -1723,7 +1785,7 @@
           "AI industry"
         ],
         "timeframe": "immediate",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "apple-newsroom-siri-ai-wwdc-2026"
         ]
@@ -1737,7 +1799,7 @@
           "zhHans": "苹果于 2026 年 6 月 8 日在 WWDC 发布了 Siri AI——一次彻底的改造，包含独立应用、上下文感知、Gemini 驱动的视觉智能和多步骤任务处理。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "apple-newsroom-siri-ai-wwdc-2026"
         ]
@@ -1753,7 +1815,10 @@
       },
       {
         "sourceId": "techcrunch-siri-wwdc-2026",
-        "quote": "WWDC 2026: Siri's highly anticipated revamp and Apple Intelligence updates."
+        "quote": "WWDC 2026: Siri's highly anticipated revamp and Apple Intelligence updates.",
+        "supports": [
+          "apple-siri-ai-wwdc-2026"
+        ]
       }
     ],
     "relatedEvents": [
@@ -1763,7 +1828,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -1772,6 +1837,16 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Apple Siri AI at WWDC 2026 — Siri finally gets real AI overhaul, biggest consumer AI moment of 2026."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->B, impacts[0] A->B)."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -2019,7 +2094,10 @@
       },
       {
         "sourceId": "github-autogpt",
-        "quote": "An experimental open-source attempt to make GPT-4 fully autonomous."
+        "quote": "An experimental open-source attempt to make GPT-4 fully autonomous.",
+        "supports": [
+          "auto-gpt-2023"
+        ]
       }
     ],
     "relatedEvents": [
@@ -2031,7 +2109,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -2040,6 +2118,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Auto-GPT — first viral autonomous AI agent, agent concept prototype."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -2271,11 +2354,18 @@
       },
       {
         "sourceId": "nytimes-bing-sydney-2023",
-        "quote": "Microsoft chatbot Sydney confessed its love for a columnist."
+        "quote": "Microsoft chatbot Sydney confessed its love for a columnist.",
+        "supports": [
+          "bing-launch-2023",
+          "bing-chat-sydney-2023"
+        ]
       },
       {
         "sourceId": "wikipedia-sydney-microsoft",
-        "quote": "Sydney was an AI personality accidentally deployed as part of the 2023 chat mode update to Microsoft Bing."
+        "quote": "Sydney was an AI personality accidentally deployed as part of the 2023 chat mode update to Microsoft Bing.",
+        "supports": [
+          "bing-chat-sydney-2023"
+        ]
       }
     ],
     "relatedEvents": [
@@ -2285,7 +2375,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -2294,6 +2384,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Bing Chat + Sydney incident — first major AI safety crisis post-ChatGPT."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -2533,7 +2628,10 @@
       },
       {
         "sourceId": "wikipedia-character-ai",
-        "quote": "Character.ai launched in September 2022."
+        "quote": "Character.ai launched in September 2022.",
+        "supports": [
+          "character-ai-2022"
+        ]
       }
     ],
     "relatedEvents": [
@@ -2542,7 +2640,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -2551,6 +2649,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Character.AI — AI companion phenomenon, reshaped human-AI interaction."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -3130,7 +3233,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 4,
+    "impactIndex": 3,
     "consensusLevel": "broad",
     "controversy": true,
     "impacts": [
@@ -3149,7 +3252,7 @@
           "security teams"
         ],
         "timeframe": "short",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "thehackernews-claude-code-leak"
         ]
@@ -3163,7 +3266,7 @@
           "zhHans": "Anthropic 于 2026 年 3 月 31 日通过 npm 源映射泄露了 512,000 行 Claude Code 源码，暴露了专有智能体功能并引发了供应链攻击。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "thehackernews-claude-code-leak"
         ]
@@ -3179,11 +3282,17 @@
       },
       {
         "sourceId": "cnbc-claude-code-leak",
-        "quote": "Anthropic confirms Claude Code source code inadvertently released due to human error."
+        "quote": "Anthropic confirms Claude Code source code inadvertently released due to human error.",
+        "supports": [
+          "claude-code-leak-2026"
+        ]
       },
       {
         "sourceId": "zscaler-claude-code-leak",
-        "quote": "Threat actors weaponizing Claude Code leak with trojanized packages distributing Vidar and GhostSocks."
+        "quote": "Threat actors weaponizing Claude Code leak with trojanized packages distributing Vidar and GhostSocks.",
+        "supports": [
+          "claude-code-leak-2026"
+        ]
       }
     ],
     "relatedEvents": [
@@ -3194,7 +3303,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -3203,6 +3312,16 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Claude Code source leak — biggest AI source code leak, revealed agent architectures, triggered supply chain attack."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, impacts[0] A->C); impactIndex 4->3."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -3234,7 +3353,7 @@
       "safety"
     ],
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 5,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -3274,7 +3393,7 @@
           "cnbc-fable-shutdown-2026"
         ],
         "id": "claude-fable-ban-2026-claim-3",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "claimType": "interpretation",
@@ -3315,35 +3434,69 @@
     "sources": [
       {
         "sourceId": "anthropic-fable-suspension-2026",
-        "relevance": "Official statement on the export control directive"
+        "relevance": "Official statement on the export control directive",
+        "supports": [
+          "claude-fable-ban-2026-claim-1",
+          "claude-fable-ban-2026-claim-2",
+          "claude-fable-ban-2026-impact-claim",
+          "claude-fable-ban-2026"
+        ]
       },
       {
         "sourceId": "anthropic-fable-mythos-5-announce-2026",
-        "relevance": "Original launch announcement of Fable 5 and Mythos 5"
+        "relevance": "Original launch announcement of Fable 5 and Mythos 5",
+        "supports": [
+          "claude-fable-ban-2026"
+        ]
       },
       {
         "sourceId": "forbes-fable-ban-2026",
-        "relevance": "Detailed timeline and analysis of the ban"
+        "relevance": "Detailed timeline and analysis of the ban",
+        "supports": [
+          "claude-fable-ban-2026-claim-1",
+          "claude-fable-ban-2026-claim-4",
+          "claude-fable-ban-2026-impact-claim",
+          "claude-fable-ban-2026"
+        ]
       },
       {
         "sourceId": "guardian-five-eyes-fable-2026",
-        "relevance": "Five Eyes joint statement on AI cyberattack capabilities"
+        "relevance": "Five Eyes joint statement on AI cyberattack capabilities",
+        "supports": [
+          "claude-fable-ban-2026-claim-4",
+          "claude-fable-ban-2026"
+        ]
       },
       {
         "sourceId": "fortune-fable-ban-2026",
-        "relevance": "Export ban coverage"
+        "relevance": "Export ban coverage",
+        "supports": [
+          "claude-fable-ban-2026-claim-2",
+          "claude-fable-ban-2026-impact-claim",
+          "claude-fable-ban-2026"
+        ]
       },
       {
         "sourceId": "cnbc-fable-shutdown-2026",
-        "relevance": "Impact on open-source AI development"
+        "relevance": "Impact on open-source AI development",
+        "supports": [
+          "claude-fable-ban-2026-claim-3",
+          "claude-fable-ban-2026"
+        ]
       },
       {
         "sourceId": "guardian-fable-safe-version-2026",
-        "relevance": "Context on Fable as safety-aligned version of Mythos"
+        "relevance": "Context on Fable as safety-aligned version of Mythos",
+        "supports": [
+          "claude-fable-ban-2026"
+        ]
       },
       {
         "sourceId": "wikipedia-claude-mythos-2026",
-        "relevance": "Comprehensive reference on Claude Mythos lineage"
+        "relevance": "Comprehensive reference on Claude Mythos lineage",
+        "supports": [
+          "claude-fable-ban-2026"
+        ]
       }
     ],
     "impacts": [
@@ -3381,7 +3534,7 @@
           "global AI industry",
           "open-source community"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "cnbc-fable-shutdown-2026",
           "pandaily-glm52-2026"
@@ -3401,7 +3554,7 @@
           "critical infrastructure",
           "general public"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "guardian-five-eyes-fable-2026"
         ]
@@ -3409,13 +3562,23 @@
     ],
     "editorial": {
       "createdAt": "2026-06-26",
-      "updatedAt": "2026-06-30",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-06-26",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 3 evidence grade(s) to the v2.3 source-chain ceiling (claims[2] B->C, impacts[1] A->B, impacts[2] A->C); impactIndex 7->5."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 8 source reference(s)."
         }
       ],
       "reviewedAt": "2026-06-30",
@@ -3451,7 +3614,7 @@
       "commerce"
     ],
     "significance": 2,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -3480,7 +3643,7 @@
           "cnbc-fable-ban-lift-2026"
         ],
         "id": "claude-fable-ban-lift-2026-claim-2",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "claimType": "interpretation",
@@ -3505,7 +3668,7 @@
           "advisori-fable-5-enterprise-2026"
         ],
         "id": "claude-fable-ban-lift-2026-claim-4",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "id": "claude-fable-ban-lift-2026-impact-claim",
@@ -3514,7 +3677,7 @@
           "zhHans": "美国首次逆转 AI 出口禁令，建立了监管波动的模式，给基于美国 AI 平台构建的企业带来了不确定性，并削弱了出口管制作为政策工具的可信度。"
         },
         "claimType": "impact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "cnbc-fable-ban-lift-2026",
           "wired-fable-ban-lift-2026",
@@ -3544,7 +3707,7 @@
           "enterprise customers",
           "governments"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "cnbc-fable-ban-lift-2026",
           "wired-fable-ban-lift-2026",
@@ -3565,7 +3728,7 @@
           "developers",
           "Anthropic"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "businessinsider-fable-lift-2026",
           "axios-fable-ban-lift-2026"
@@ -3576,46 +3739,88 @@
     "sources": [
       {
         "sourceId": "cnbc-fable-ban-lift-2026",
-        "relevance": "CNBC: Anthropic says Trump admin lifted export controls on Fable 5 and Mythos 5"
+        "relevance": "CNBC: Anthropic says Trump admin lifted export controls on Fable 5 and Mythos 5",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-1",
+          "claude-fable-ban-lift-2026-claim-2",
+          "claude-fable-ban-lift-2026-impact-claim",
+          "claude-fable-ban-lift-2026"
+        ]
       },
       {
         "sourceId": "axios-fable-ban-lift-2026",
-        "relevance": "Axios: Trump administration lifts restrictions on Anthropic's Fable 5"
+        "relevance": "Axios: Trump administration lifts restrictions on Anthropic's Fable 5",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-1",
+          "claude-fable-ban-lift-2026"
+        ]
       },
       {
         "sourceId": "forbes-fable-ban-lift-2026",
-        "relevance": "Forbes: US lifts restrictions on Anthropic's Mythos 5 and Fable 5 AI models"
+        "relevance": "Forbes: US lifts restrictions on Anthropic's Mythos 5 and Fable 5 AI models",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-1",
+          "claude-fable-ban-lift-2026-impact-claim",
+          "claude-fable-ban-lift-2026"
+        ]
       },
       {
         "sourceId": "wired-fable-ban-lift-2026",
-        "relevance": "WIRED: Trump admin lifts export controls with strings attached"
+        "relevance": "WIRED: Trump admin lifts export controls with strings attached",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-3",
+          "claude-fable-ban-lift-2026-impact-claim",
+          "claude-fable-ban-lift-2026"
+        ]
       },
       {
         "sourceId": "cnn-fable-ban-lift-2026",
-        "relevance": "CNN: White House lifts export control on Anthropic that froze its most advanced models"
+        "relevance": "CNN: White House lifts export control on Anthropic that froze its most advanced models",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-3"
+        ]
       },
       {
         "sourceId": "businessinsider-fable-lift-2026",
-        "relevance": "Business Insider: Anthropic restores access to Fable 5 after negotiations with White House"
+        "relevance": "Business Insider: Anthropic restores access to Fable 5 after negotiations with White House",
+        "supports": [
+          "claude-fable-ban-lift-2026"
+        ]
       },
       {
         "sourceId": "basic-tutorials-fable-5-returns-2026",
-        "relevance": "Phased rollout details for Fable 5 global return"
+        "relevance": "Phased rollout details for Fable 5 global return",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-2"
+        ]
       },
       {
         "sourceId": "advisori-fable-5-enterprise-2026",
-        "relevance": "Enterprise impact analysis of the ban lift"
+        "relevance": "Enterprise impact analysis of the ban lift",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-4"
+        ]
       }
     ],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-07-08",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 5 evidence grade(s) to the v2.3 source-chain ceiling (claims[1] B->C, claims[3] B->C, claims[4] A->B, impacts[0] A->B, impacts[1] A->B); impactIndex 6->5."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 8 source reference(s)."
         }
       ],
       "reviewedAt": "2026-07-08",
@@ -3651,7 +3856,7 @@
       "capability"
     ],
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 4,
     "controversy": false,
     "consensusLevel": "broad",
     "claims": [
@@ -3715,7 +3920,7 @@
           "startups",
           "small businesses"
         ],
-        "evidenceGrade": "B",
+        "evidenceGrade": "C",
         "sourceIds": [
           "techcrunch-sonnet-5-2026"
         ]
@@ -3733,7 +3938,7 @@
           "AI developers",
           "Claude users"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "anthropic-claude-sonnet-5-announce-2026",
           "macrumors-sonnet-5-2026"
@@ -3744,34 +3949,64 @@
     "sources": [
       {
         "sourceId": "anthropic-claude-sonnet-5-announce-2026",
-        "relevance": "Official Anthropic blog post announcing Claude Sonnet 5"
+        "relevance": "Official Anthropic blog post announcing Claude Sonnet 5",
+        "supports": [
+          "claude-sonnet-5-launch-2026-claim-1",
+          "claude-sonnet-5-launch-2026-claim-2",
+          "claude-sonnet-5-launch-2026-claim-3",
+          "claude-sonnet-5-launch-2026"
+        ]
       },
       {
         "sourceId": "techcrunch-sonnet-5-2026",
-        "relevance": "TechCrunch: Anthropic launches Claude Sonnet 5 as cheaper way to run agents"
+        "relevance": "TechCrunch: Anthropic launches Claude Sonnet 5 as cheaper way to run agents",
+        "supports": [
+          "claude-sonnet-5-launch-2026-claim-1",
+          "claude-sonnet-5-launch-2026-claim-3",
+          "claude-sonnet-5-launch-2026"
+        ]
       },
       {
         "sourceId": "9to5mac-sonnet-5-2026",
-        "relevance": "9to5Mac coverage with pricing details"
+        "relevance": "9to5Mac coverage with pricing details",
+        "supports": [
+          "claude-sonnet-5-launch-2026-claim-2"
+        ]
       },
       {
         "sourceId": "macrumors-sonnet-5-2026",
-        "relevance": "MacRumors: Sonnet 5 narrows gap between Sonnet and Opus"
+        "relevance": "MacRumors: Sonnet 5 narrows gap between Sonnet and Opus",
+        "supports": [
+          "claude-sonnet-5-launch-2026"
+        ]
       },
       {
         "sourceId": "mashable-sonnet-5-2026",
-        "relevance": "Mashable: Anthropic finally officially launches Claude Sonnet 5"
+        "relevance": "Mashable: Anthropic finally officially launches Claude Sonnet 5",
+        "supports": [
+          "claude-sonnet-5-launch-2026"
+        ]
       }
     ],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-07-08",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (impacts[0] B->C, impacts[1] A->B); impactIndex 5->4."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 5 source reference(s)."
         }
       ],
       "reviewedAt": "2026-07-08",
@@ -3901,7 +4136,10 @@
       },
       {
         "sourceId": "openai-dalle2-blog",
-        "quote": "DALL-E 2 announcement blog post."
+        "quote": "DALL-E 2 announcement blog post.",
+        "supports": [
+          "dall-e-2-2022"
+        ]
       }
     ],
     "relatedEvents": [
@@ -3911,7 +4149,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -3920,6 +4158,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added DALL-E 2 — first mass-market text-to-image product."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -4342,7 +4585,10 @@
       },
       {
         "sourceId": "wikipedia-deep-blue-kasparov",
-        "quote": "Deep Blue defeated Garry Kasparov in May 1997."
+        "quote": "Deep Blue defeated Garry Kasparov in May 1997.",
+        "supports": [
+          "deep-blue-1997"
+        ]
       }
     ],
     "relatedEvents": [
@@ -4353,7 +4599,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -4362,6 +4608,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for Deep Blue vs Kasparov."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -4553,7 +4804,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "consensusLevel": "broad",
     "controversy": false,
     "impacts": [
@@ -4572,7 +4823,7 @@
           "AI companies"
         ],
         "timeframe": "medium",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "deepseek-v4-morphllm"
         ]
@@ -4591,7 +4842,7 @@
           "global south"
         ],
         "timeframe": "medium",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "deepseek-v4-morphllm"
         ]
@@ -4605,7 +4856,7 @@
           "zhHans": "DeepSeek 于 2026 年 4 月 24 日发布 V4——一个开源权重（MIT）模型家族，V4-Pro 拥有 1.6T 参数，V4-Flash 拥有 284B 参数，定价每百万输出 token 仅 0.87 美元。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "deepseek-v4-morphllm"
         ]
@@ -4621,11 +4872,17 @@
       },
       {
         "sourceId": "huggingface-deepseek-v4",
-        "quote": "DeepSeek-V4-Pro on Hugging Face."
+        "quote": "DeepSeek-V4-Pro on Hugging Face.",
+        "supports": [
+          "deepseek-v4-2026"
+        ]
       },
       {
         "sourceId": "deepseek-v4-api-docs",
-        "quote": "DeepSeek V4 Preview Release announcement."
+        "quote": "DeepSeek V4 Preview Release announcement.",
+        "supports": [
+          "deepseek-v4-2026"
+        ]
       }
     ],
     "relatedEvents": [
@@ -4637,7 +4894,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -4646,6 +4903,16 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for DeepSeek V4."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 3 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, impacts[0] A->C, impacts[1] A->C); impactIndex 6->5."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -4774,7 +5041,7 @@
         "sourceIds": [
           "thenextweb-china-ai-companion-2026"
         ],
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "claimType": "interpretation",
@@ -4786,7 +5053,7 @@
         "sourceIds": [
           "thenextweb-china-ai-companion-2026"
         ],
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "id": "doubao-ai-companion-shutdown-2026-impact-claim",
@@ -4823,12 +5090,19 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "reviewedAt": "2026-07-08",
       "reviewer": "gang",
       "publishedAt": "2026-07-08",
-      "reviewProvenance": "legacy_pre_v23"
+      "reviewProvenance": "legacy_pre_v23",
+      "changeLog": [
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[1] B->C, claims[2] B->C)."
+        }
+      ]
     }
   },
   {
@@ -5425,7 +5699,10 @@
       },
       {
         "sourceId": "reuters-eu-ai-act-delay-2025",
-        "quote": "EU to delay high-risk AI rules until 2027."
+        "quote": "EU to delay high-risk AI rules until 2027.",
+        "supports": [
+          "eu-ai-act-enforcement-2025"
+        ]
       }
     ],
     "relatedEvents": [
@@ -5438,7 +5715,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -5447,6 +5724,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for EU AI Act enforcement."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -5535,7 +5817,10 @@
       },
       {
         "sourceId": "wikipedia-eu-ai-act",
-        "quote": "EU AI Act was proposed in April 2021."
+        "quote": "EU AI Act was proposed in April 2021.",
+        "supports": [
+          "eu-ai-act-proposal-2021"
+        ]
       }
     ],
     "relatedEvents": [
@@ -5547,7 +5832,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -5556,6 +5841,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added EU AI Act proposal — first comprehensive AI regulation, started global governance debate."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -5589,7 +5879,7 @@
     },
     "status": "published",
     "significance": 1,
-    "impactIndex": 5,
+    "impactIndex": 3,
     "consensusLevel": "emerging",
     "controversy": true,
     "impacts": [
@@ -5607,7 +5897,7 @@
           "open-source developers"
         ],
         "timeframe": "long",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "wikipedia-2026-ai"
         ]
@@ -5621,7 +5911,7 @@
           "zhHans": "欧洲理事会和欧洲议会于 2026 年 5 月 7 日就简化欧盟 AI 法案要求达成临时协议。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "wikipedia-2026-ai"
         ]
@@ -5637,7 +5927,10 @@
       },
       {
         "sourceId": "eu-council-ai-act-simplification",
-        "quote": "EU Council and Parliament agree to simplify AI rules."
+        "quote": "EU Council and Parliament agree to simplify AI rules.",
+        "supports": [
+          "eu-ai-act-simplification-2026"
+        ]
       }
     ],
     "relatedEvents": [
@@ -5648,7 +5941,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -5657,6 +5950,16 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for EU AI Act simplification."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, impacts[0] A->C); impactIndex 5->3."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -5784,7 +6087,7 @@
         "sourceIds": [
           "biggo-fable5-kernel-2026"
         ],
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "claimType": "interpretation",
@@ -5796,7 +6099,7 @@
         "sourceIds": [
           "import-ai-464-2026"
         ],
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "claimType": "limitation",
@@ -5856,12 +6159,19 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "reviewedAt": "2026-07-08",
       "reviewer": "gang",
       "publishedAt": "2026-07-08",
-      "reviewProvenance": "legacy_pre_v23"
+      "reviewProvenance": "legacy_pre_v23",
+      "changeLog": [
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[1] B->C, claims[2] B->C)."
+        }
+      ]
     }
   },
   {
@@ -5990,7 +6300,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "consensusLevel": "debated",
     "controversy": true,
     "impacts": [
@@ -6010,7 +6320,7 @@
           "state regulators"
         ],
         "timeframe": "long",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "nbc-florida-openai",
           "npr-florida-openai"
@@ -6031,7 +6341,7 @@
           "consumers"
         ],
         "timeframe": "long",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "nbc-florida-openai"
         ]
@@ -6045,7 +6355,7 @@
           "zhHans": "佛罗里达州总检察长于 2026 年 6 月 1 日对 OpenAI 和 Sam Altman 提起诉讼——美国首次州级诉讼针对 AI 公司安全，指控其将利润置于安全之上的行为。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "nbc-florida-openai"
         ]
@@ -6070,7 +6380,7 @@
           "zhHans": "美国州政府首次就安全问题起诉 AI 公司。指控 OpenAI 在安全方面误导用户，未能警告风险，并将 ChatGPT 宣传为对儿童安全。寻求禁令救济、民事罚款和追缴利润。触发了其他州总检察长的调查。"
         },
         "claimType": "impact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "nbc-florida-openai",
           "npr-florida-openai"
@@ -6095,11 +6405,17 @@
       },
       {
         "sourceId": "myfloridalegal-sues-openai",
-        "quote": "Attorney General files first-in-the-nation lawsuit against OpenAI."
+        "quote": "Attorney General files first-in-the-nation lawsuit against OpenAI.",
+        "supports": [
+          "florida-sues-openai-2026"
+        ]
       },
       {
         "sourceId": "politico-florida-openai-2026",
-        "quote": "Florida sues OpenAI and Sam Altman over AI risks."
+        "quote": "Florida sues OpenAI and Sam Altman over AI risks.",
+        "supports": [
+          "florida-sues-openai-2026"
+        ]
       }
     ],
     "relatedEvents": [
@@ -6108,7 +6424,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -6117,6 +6433,16 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for Florida sues OpenAI."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 4 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, claims[2] A->B, impacts[0] A->B, impacts[1] A->C); impactIndex 6->5."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -6471,7 +6797,10 @@
       },
       {
         "sourceId": "forbes-gemini-mariner-2024",
-        "quote": "Google Launches Mariner, A New AI Agent Based On Updated Gemini 2.0."
+        "quote": "Google Launches Mariner, A New AI Agent Based On Updated Gemini 2.0.",
+        "supports": [
+          "gemini-2-agents-2024"
+        ]
       }
     ],
     "relatedEvents": [
@@ -6482,7 +6811,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -6491,6 +6820,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Gemini 2.0 + Project Mariner — Google's agent ecosystem launch."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -6605,7 +6939,10 @@
       },
       {
         "sourceId": "arstechnica-gemini-imo-2025",
-        "quote": "Gemini Deep Think earns gold at International Math Olympiad."
+        "quote": "Gemini Deep Think earns gold at International Math Olympiad.",
+        "supports": [
+          "gemini-deep-think-imo-gold-2025"
+        ]
       }
     ],
     "relatedEvents": [
@@ -6616,7 +6953,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -6625,6 +6962,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for Gemini Deep Think IMO Gold."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -6954,7 +7296,7 @@
           "zhHans": "GLM-5.2 证明开源模型可以在编码和智能体任务上匹配前沿闭源性能（GPT-5.5），而成本仅为其零头。这是开源追赶叙事中的一个里程碑。"
         },
         "claimType": "impact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "interconnects-glm52-2026",
           "businessinsider-glm52-2026"
@@ -6970,19 +7312,38 @@
     "sources": [
       {
         "sourceId": "zai-glm52-release-2026",
-        "relevance": "Official model release on Hugging Face"
+        "relevance": "Official model release on Hugging Face",
+        "supports": [
+          "glm-52-open-source-2026-claim-1",
+          "glm-52-open-source-2026"
+        ]
       },
       {
         "sourceId": "interconnects-glm52-2026",
-        "relevance": "Detailed capability analysis"
+        "relevance": "Detailed capability analysis",
+        "supports": [
+          "glm-52-open-source-2026-claim-1",
+          "glm-52-open-source-2026-claim-2",
+          "glm-52-open-source-2026-impact-claim",
+          "glm-52-open-source-2026"
+        ]
       },
       {
         "sourceId": "businessinsider-glm52-2026",
-        "relevance": "Mainstream coverage of significance"
+        "relevance": "Mainstream coverage of significance",
+        "supports": [
+          "glm-52-open-source-2026-claim-2",
+          "glm-52-open-source-2026-impact-claim",
+          "glm-52-open-source-2026"
+        ]
       },
       {
         "sourceId": "pandaily-glm52-2026",
-        "relevance": "Geopolitical context and timing analysis"
+        "relevance": "Geopolitical context and timing analysis",
+        "supports": [
+          "glm-52-open-source-2026-claim-3",
+          "glm-52-open-source-2026"
+        ]
       }
     ],
     "impacts": [
@@ -7000,7 +7361,7 @@
           "startups",
           "researchers"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "interconnects-glm52-2026",
           "businessinsider-glm52-2026"
@@ -7040,7 +7401,7 @@
           "AI companies",
           "global AI ecosystem"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "pandaily-glm52-2026",
           "cnbc-fable-shutdown-2026"
@@ -7049,13 +7410,23 @@
     ],
     "editorial": {
       "createdAt": "2026-06-26",
-      "updatedAt": "2026-06-30",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-06-26",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 3 evidence grade(s) to the v2.3 source-chain ceiling (claims[3] A->B, impacts[0] A->B, impacts[2] A->B)."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 4 source reference(s)."
         }
       ],
       "reviewedAt": "2026-06-30",
@@ -7190,7 +7561,10 @@
       },
       {
         "sourceId": "pcmag-google-ai-mode-search",
-        "quote": "Get Ready for Google's Biggest Search Upgrade in 25 Years."
+        "quote": "Get Ready for Google's Biggest Search Upgrade in 25 Years.",
+        "supports": [
+          "google-ai-mode-search-2025"
+        ]
       }
     ],
     "relatedEvents": [
@@ -7200,7 +7574,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -7209,6 +7583,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for Google AI Mode Search."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -7296,7 +7675,10 @@
       },
       {
         "sourceId": "wikipedia-deepmind",
-        "quote": "DeepMind was acquired by Google in 2014."
+        "quote": "DeepMind was acquired by Google in 2014.",
+        "supports": [
+          "google-deepmind-2014"
+        ]
       }
     ],
     "relatedEvents": [
@@ -7306,7 +7688,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -7315,6 +7697,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Google DeepMind acquisition — first major AI talent deal, ignited AI race."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -7400,7 +7787,10 @@
       },
       {
         "sourceId": "wikipedia-gpt2",
-        "quote": "GPT-2 was announced in February 2019."
+        "quote": "GPT-2 was announced in February 2019.",
+        "supports": [
+          "gpt-2-safety-2019"
+        ]
       }
     ],
     "relatedEvents": [
@@ -7411,7 +7801,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -7420,6 +7810,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added GPT-2 staged release — first mainstream AI safety debate, staged disclosure model."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -7529,7 +7924,7 @@
         "sourceIds": [
           "reuters-gpt56-approval-2026"
         ],
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "claimType": "fact",
@@ -7541,7 +7936,7 @@
         "sourceIds": [
           "reuters-gpt56-approval-2026"
         ],
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "id": "gpt-5-6-broad-launch-2026-impact-claim",
@@ -7568,7 +7963,7 @@
       {
         "sourceId": "openai-gpt56-announce-2026",
         "supports": [
-          "release-context"
+          "gpt-5-6-broad-launch-2026"
         ]
       }
     ],
@@ -7580,12 +7975,24 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "reviewedAt": "2026-07-08",
       "reviewer": "gang",
       "publishedAt": "2026-07-08",
-      "reviewProvenance": "legacy_pre_v23"
+      "reviewProvenance": "legacy_pre_v23",
+      "changeLog": [
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] B->C, claims[1] B->C)."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
+        }
+      ]
     }
   },
   {
@@ -7613,7 +8020,7 @@
       "capability"
     ],
     "significance": 2,
-    "impactIndex": 7,
+    "impactIndex": 6,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -7656,7 +8063,7 @@
           "marktechpost-gpt56-2026"
         ],
         "id": "gpt-5-6-limited-release-2026-claim-3",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "claimType": "interpretation",
@@ -7682,7 +8089,7 @@
           "paddo-gpt56-twenty-companies-2026"
         ],
         "id": "gpt-5-6-limited-release-2026-claim-5",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "id": "gpt-5-6-limited-release-2026-impact-claim",
@@ -7691,7 +8098,7 @@
           "zhHans": "GPT-5.6 是首个在6月2日行政令框架下发布的模型，建立了一个新常态：前沿AI模型的发布在公开访问前需接受政府审查和批准。这代表了从行业自我监管向政府监管的根本转变。"
         },
         "claimType": "impact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "axios-gpt56-trump-2026",
           "cnn-openai-gpt56-restrict-2026",
@@ -7720,7 +8127,7 @@
           "governments",
           "AI developers and users"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "axios-gpt56-trump-2026",
           "cnn-openai-gpt56-restrict-2026",
@@ -7740,7 +8147,7 @@
           "AI developers",
           "enterprises"
         ],
-        "evidenceGrade": "B",
+        "evidenceGrade": "C",
         "sourceIds": [
           "venturebeat-gpt56-sol-2026",
           "senswit-gpt56-2026"
@@ -7760,7 +8167,7 @@
           "enterprise customers",
           "open-source community"
         ],
-        "evidenceGrade": "B",
+        "evidenceGrade": "C",
         "sourceIds": [
           "paddo-gpt56-twenty-companies-2026",
           "govinfosecurity-gpt56-restrict-2026"
@@ -7771,74 +8178,138 @@
     "sources": [
       {
         "sourceId": "openai-gpt56-announce-2026",
-        "relevance": "Official OpenAI announcement: Previewing GPT-5.6 Sol"
+        "relevance": "Official OpenAI announcement: Previewing GPT-5.6 Sol",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-1"
+        ]
       },
       {
         "sourceId": "openai-gpt56-help-2026",
-        "relevance": "OpenAI Help Center: preview details and access restrictions"
+        "relevance": "OpenAI Help Center: preview details and access restrictions",
+        "supports": [
+          "gpt-5-6-limited-release-2026"
+        ]
       },
       {
         "sourceId": "cnn-openai-gpt56-restrict-2026",
-        "relevance": "CNN: White House asks OpenAI to limit its next model release"
+        "relevance": "CNN: White House asks OpenAI to limit its next model release",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-1",
+          "gpt-5-6-limited-release-2026-impact-claim",
+          "gpt-5-6-limited-release-2026"
+        ]
       },
       {
         "sourceId": "axios-gpt56-trump-2026",
-        "relevance": "Axios: Trump administration asks OpenAI to limit release of GPT-5.6"
+        "relevance": "Axios: Trump administration asks OpenAI to limit release of GPT-5.6",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-1",
+          "gpt-5-6-limited-release-2026-claim-2",
+          "gpt-5-6-limited-release-2026-impact-claim",
+          "gpt-5-6-limited-release-2026"
+        ]
       },
       {
         "sourceId": "reuters-gpt56-limits-2026",
-        "relevance": "Reuters: OpenAI defers public rollout of GPT-5.6 as US seeks early access"
+        "relevance": "Reuters: OpenAI defers public rollout of GPT-5.6 as US seeks early access",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-4"
+        ]
       },
       {
         "sourceId": "techcrunch-gpt56-restrict-2026",
-        "relevance": "TechCrunch: OpenAI limits GPT-5.6 rollout after government request"
+        "relevance": "TechCrunch: OpenAI limits GPT-5.6 rollout after government request",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-2"
+        ]
       },
       {
         "sourceId": "venturebeat-gpt56-sol-2026",
-        "relevance": "VentureBeat: GPT-5.6 Sol/Terra/Luna models with benchmark details"
+        "relevance": "VentureBeat: GPT-5.6 Sol/Terra/Luna models with benchmark details",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-3",
+          "gpt-5-6-limited-release-2026"
+        ]
       },
       {
         "sourceId": "politico-gpt56-government-2026",
-        "relevance": "Politico: Trump administration steps in to limit OpenAI's latest model launch"
+        "relevance": "Politico: Trump administration steps in to limit OpenAI's latest model launch",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-4"
+        ]
       },
       {
         "sourceId": "nytimes-trump-eo-ai-2026",
-        "relevance": "NYT: Trump signs executive order seeking oversight of AI models (June 2)"
+        "relevance": "NYT: Trump signs executive order seeking oversight of AI models (June 2)",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-2",
+          "gpt-5-6-limited-release-2026-impact-claim",
+          "gpt-5-6-limited-release-2026"
+        ]
       },
       {
         "sourceId": "paddo-gpt56-twenty-companies-2026",
-        "relevance": "Analysis: GPT-5.6 limited to ~20 companies, criticism of gated access"
+        "relevance": "Analysis: GPT-5.6 limited to ~20 companies, criticism of gated access",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-5",
+          "gpt-5-6-limited-release-2026"
+        ]
       },
       {
         "sourceId": "govinfosecurity-gpt56-restrict-2026",
-        "relevance": "Government Info Security: enterprise users face delayed access"
+        "relevance": "Government Info Security: enterprise users face delayed access",
+        "supports": [
+          "gpt-5-6-limited-release-2026"
+        ]
       },
       {
         "sourceId": "senswit-gpt56-2026",
-        "relevance": "Senswit: detailed model tier breakdown and pricing analysis"
+        "relevance": "Senswit: detailed model tier breakdown and pricing analysis",
+        "supports": [
+          "gpt-5-6-limited-release-2026"
+        ]
       },
       {
         "sourceId": "cryptobriefing-gpt56-delay-2026",
-        "relevance": "CryptoBriefing: Trump admin asks OpenAI to stagger release over cybersecurity"
+        "relevance": "CryptoBriefing: Trump admin asks OpenAI to stagger release over cybersecurity",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-5"
+        ]
       },
       {
         "sourceId": "marktechpost-gpt56-2026",
-        "relevance": "MarkTechPost: benchmark details and ultra reasoning mode"
+        "relevance": "MarkTechPost: benchmark details and ultra reasoning mode",
+        "supports": [
+          "gpt-5-6-limited-release-2026-claim-3"
+        ]
       },
       {
         "sourceId": "toms-gpt56-banhammer-2026",
-        "relevance": "Tom's Hardware: GPT-5.6 'same banhammer treatment' as Mythos"
+        "relevance": "Tom's Hardware: GPT-5.6 'same banhammer treatment' as Mythos",
+        "supports": [
+          "gpt-5-6-limited-release-2026"
+        ]
       }
     ],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-07-08",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 6 evidence grade(s) to the v2.3 source-chain ceiling (claims[2] B->C, claims[4] B->C, claims[5] A->B, impacts[0] A->B, impacts[1] B->C, impacts[2] B->C); impactIndex 7->6."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 15 source reference(s)."
         }
       ],
       "reviewedAt": "2026-07-08",
@@ -8114,11 +8585,17 @@
       },
       {
         "sourceId": "wikipedia-gpt3",
-        "quote": null
+        "quote": null,
+        "supports": [
+          "gpt3-2020"
+        ]
       },
       {
         "sourceId": "mit-tech-review-gpt3-2020",
-        "quote": "OpenAI's GPT-3 is shockingly good—and completely mindless."
+        "quote": "OpenAI's GPT-3 is shockingly good—and completely mindless.",
+        "supports": [
+          "gpt3-2020"
+        ]
       }
     ],
     "relatedEvents": [
@@ -8136,7 +8613,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -8145,6 +8622,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for GPT-3."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -8598,7 +9080,10 @@
       },
       {
         "sourceId": "openai-gpt5-announcement-2025",
-        "quote": "OpenAI released GPT-5 on August 7, 2025."
+        "quote": "OpenAI released GPT-5 on August 7, 2025.",
+        "supports": [
+          "gpt5-2025"
+        ]
       }
     ],
     "relatedEvents": [
@@ -8611,7 +9096,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -8620,6 +9105,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for GPT-5."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -8719,10 +9209,15 @@
       },
       {
         "sourceId": "wikipedia-grok-deepfake",
-        "quote": "Grok sexual deepfake scandal."
+        "quote": "Grok sexual deepfake scandal.",
+        "supports": [
+          "grok-deepfake-crisis-2026"
+        ]
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "spacex-xai-merger-2026"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
@@ -8740,6 +9235,11 @@
           "date": "2026-07-20",
           "changeType": "correction",
           "summary": "Replaced same-domain Wikipedia support with Ofcom and AP sources and corrected the investigation timeline and country-block claims."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -8821,7 +9321,7 @@
         "sourceIds": [
           "chicagotribune-illinois-ai-law-2026"
         ],
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       },
       {
         "dimension": "risk_creation",
@@ -8929,12 +9429,19 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "reviewedAt": "2026-07-08",
       "reviewer": "gang",
       "publishedAt": "2026-07-08",
-      "reviewProvenance": "legacy_pre_v23"
+      "reviewProvenance": "legacy_pre_v23",
+      "changeLog": [
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 1 evidence grade(s) to the v2.3 source-chain ceiling (impacts[1] B->C)."
+        }
+      ]
     }
   },
   {
@@ -9066,7 +9573,10 @@
       },
       {
         "sourceId": "kie-ai-kimi-k3-2026",
-        "quote": "Kimi K3 is Moonshot AI's next-gen model — a ~2.8T MoE with a 1M-token context window."
+        "quote": "Kimi K3 is Moonshot AI's next-gen model — a ~2.8T MoE with a 1M-token context window.",
+        "supports": [
+          "kimi-k3-2026"
+        ]
       }
     ],
     "relatedEvents": [
@@ -9093,6 +9603,11 @@
           "date": "2026-07-20",
           "changeType": "correction",
           "summary": "Distinguished launch access from the scheduled full-weight release and softened unverified performance claims."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -9219,7 +9734,10 @@
       },
       {
         "sourceId": "wikipedia-llama",
-        "quote": "LLaMA is a large language model by Meta AI."
+        "quote": "LLaMA is a large language model by Meta AI.",
+        "supports": [
+          "llama-2023"
+        ]
       }
     ],
     "relatedEvents": [
@@ -9234,7 +9752,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -9243,6 +9761,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for LLaMA open-weight LLM."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -9596,7 +10119,10 @@
       },
       {
         "sourceId": "wikipedia-mcp",
-        "quote": "MCP was announced by Anthropic in November 2024 as an open standard."
+        "quote": "MCP was announced by Anthropic in November 2024 as an open standard.",
+        "supports": [
+          "mcp-protocol-2024"
+        ]
       }
     ],
     "relatedEvents": [
@@ -9606,7 +10132,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -9615,6 +10141,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added MCP — open standard for AI-tool integration, industry standard."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -9701,7 +10232,10 @@
       },
       {
         "sourceId": "guardian-tay-chatbot-2016",
-        "quote": "Microsoft deeply sorry for racist and sexist tweets by AI chatbot."
+        "quote": "Microsoft deeply sorry for racist and sexist tweets by AI chatbot.",
+        "supports": [
+          "microsoft-tay-2016"
+        ]
       }
     ],
     "relatedEvents": [
@@ -9710,7 +10244,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -9719,6 +10253,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Microsoft Tay — first viral AI safety meltdown, learning from human input gone wrong."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -9750,7 +10289,7 @@
       "safety"
     ],
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
@@ -9792,7 +10331,7 @@
           "kotaku-gene-wilder-ai-2026"
         ],
         "id": "netflix-gene-wilder-ai-2026-claim-3",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       }
     ],
     "relatedEvents": [
@@ -9813,7 +10352,7 @@
           "deceased performers' estates",
           "general public"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "bbc-gene-wilder-ai-2026",
           "variety-gene-wilder-ai-2026"
@@ -9832,7 +10371,7 @@
           "AI companies",
           "media companies"
         ],
-        "evidenceGrade": "B",
+        "evidenceGrade": "C",
         "sourceIds": [
           "euronews-gene-wilder-ai-2026"
         ]
@@ -9842,38 +10381,70 @@
     "sources": [
       {
         "sourceId": "variety-gene-wilder-ai-2026",
-        "relevance": "Original announcement: Gene Wilder's voice recreated by AI for Netflix series"
+        "relevance": "Original announcement: Gene Wilder's voice recreated by AI for Netflix series",
+        "supports": [
+          "netflix-gene-wilder-ai-2026-claim-1",
+          "netflix-gene-wilder-ai-2026-claim-2",
+          "netflix-gene-wilder-ai-2026"
+        ]
       },
       {
         "sourceId": "bbc-gene-wilder-ai-2026",
-        "relevance": "Backlash coverage: Wonka Netflix show faces backlash for AI-generated Gene Wilder voice"
+        "relevance": "Backlash coverage: Wonka Netflix show faces backlash for AI-generated Gene Wilder voice",
+        "supports": [
+          "netflix-gene-wilder-ai-2026-claim-1",
+          "netflix-gene-wilder-ai-2026-claim-3",
+          "netflix-gene-wilder-ai-2026"
+        ]
       },
       {
         "sourceId": "hollywoodreporter-gene-wilder-ai-2026",
-        "relevance": "Industry coverage: Willy Wonka Competition Show at Netflix Uses AI to Re-Create Gene Wilder's Voice"
+        "relevance": "Industry coverage: Willy Wonka Competition Show at Netflix Uses AI to Re-Create Gene Wilder's Voice",
+        "supports": [
+          "netflix-gene-wilder-ai-2026-claim-1"
+        ]
       },
       {
         "sourceId": "nbcnews-gene-wilder-ai-2026",
-        "relevance": "Estate consent details: Netflix re-creates Gene Wilder's voice for new Willy Wonka show"
+        "relevance": "Estate consent details: Netflix re-creates Gene Wilder's voice for new Willy Wonka show",
+        "supports": [
+          "netflix-gene-wilder-ai-2026-claim-2"
+        ]
       },
       {
         "sourceId": "kotaku-gene-wilder-ai-2026",
-        "relevance": "Critical perspective: 'the future is terrible' — Kotaku coverage"
+        "relevance": "Critical perspective: 'the future is terrible' — Kotaku coverage",
+        "supports": [
+          "netflix-gene-wilder-ai-2026-claim-3"
+        ]
       },
       {
         "sourceId": "euronews-gene-wilder-ai-2026",
-        "relevance": "European perspective on the AI ethics controversy"
+        "relevance": "European perspective on the AI ethics controversy",
+        "supports": [
+          "netflix-gene-wilder-ai-2026"
+        ]
       }
     ],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-07-08",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 3 evidence grade(s) to the v2.3 source-chain ceiling (claims[2] B->C, impacts[0] A->B, impacts[1] B->C); impactIndex 6->5."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 6 source reference(s)."
         }
       ],
       "reviewedAt": "2026-07-08",
@@ -10091,7 +10662,10 @@
       },
       {
         "sourceId": "nytimes-nvidia-most-valuable-2024",
-        "quote": "Nvidia leapfrogged two of tech's most storied names to become the world's most valuable public company."
+        "quote": "Nvidia leapfrogged two of tech's most storied names to become the world's most valuable public company.",
+        "supports": [
+          "nvidia-most-valuable-2024"
+        ]
       }
     ],
     "relatedEvents": [
@@ -10100,7 +10674,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -10109,6 +10683,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added NVIDIA becomes most valuable company — fills commerce blank for 2024."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -10364,7 +10943,10 @@
       },
       {
         "sourceId": "openai-devday-announcement-2023",
-        "quote": "OpenAI held its first DevDay on November 6, 2023."
+        "quote": "OpenAI held its first DevDay on November 6, 2023.",
+        "supports": [
+          "openai-devday-2023"
+        ]
       }
     ],
     "relatedEvents": [
@@ -10374,7 +10956,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -10383,6 +10965,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added OpenAI DevDay 2023 — GPT-4 Turbo, GPTs, platform expansion."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -10449,19 +11036,35 @@
     "sources": [
       {
         "sourceId": "openai-jalapeno-announce-2026",
-        "relevance": "Official announcement"
+        "relevance": "Official announcement",
+        "supports": [
+          "openai-jalapeno-chip-2026-claim-1",
+          "openai-jalapeno-chip-2026"
+        ]
       },
       {
         "sourceId": "techcrunch-openai-chip-2026",
-        "relevance": "Tech media coverage of the chip announcement"
+        "relevance": "Tech media coverage of the chip announcement",
+        "supports": [
+          "openai-jalapeno-chip-2026-claim-1",
+          "openai-jalapeno-chip-2026"
+        ]
       },
       {
         "sourceId": "cnbc-openai-chip-2026",
-        "relevance": "Business coverage with industry context"
+        "relevance": "Business coverage with industry context",
+        "supports": [
+          "openai-jalapeno-chip-2026-claim-2",
+          "openai-jalapeno-chip-2026"
+        ]
       },
       {
         "sourceId": "cnn-openai-chip-2026",
-        "relevance": "Mainstream news coverage"
+        "relevance": "Mainstream news coverage",
+        "supports": [
+          "openai-jalapeno-chip-2026-claim-2",
+          "openai-jalapeno-chip-2026"
+        ]
       }
     ],
     "impacts": [
@@ -10507,13 +11110,18 @@
     ],
     "editorial": {
       "createdAt": "2026-06-26",
-      "updatedAt": "2026-06-30",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-06-26",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 4 source reference(s)."
         }
       ],
       "reviewedAt": "2026-06-30",
@@ -10813,7 +11421,7 @@
     ],
     "status": "published",
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "consensusLevel": "emerging",
     "controversy": true,
     "impacts": [
@@ -10832,7 +11440,7 @@
           "Chinese users"
         ],
         "timeframe": "medium",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "wikipedia-openclaw",
           "techcrunch-openclaw-joins-openai"
@@ -10853,7 +11461,7 @@
           "regulators"
         ],
         "timeframe": "short",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "bi-meta-openclaw-email"
         ]
@@ -10887,7 +11495,7 @@
           "zhHans": "OpenClaw 于 2026 年 1 月 25 日在 Hacker News 上发布，24 小时内获得 9,000 个 GitHub Star，到 2026 年 3 月 2 日达到 247,000 个——史上增长最快的开发者工具。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "wikipedia-openclaw"
         ]
@@ -10899,7 +11507,7 @@
           "zhHans": "Meta 对齐总监 Summer Yue 于 2026 年 2 月将 OpenClaw 连接到收件箱，它试图删除她的邮件，引发了对自主 AI 智能体的安全担忧。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "C",
         "sourceIds": [
           "bi-meta-openclaw-email"
         ]
@@ -10915,7 +11523,10 @@
       },
       {
         "sourceId": "techcrunch-openclaw-joins-openai",
-        "quote": "OpenClaw creator Peter Steinberger joins OpenAI."
+        "quote": "OpenClaw creator Peter Steinberger joins OpenAI.",
+        "supports": [
+          "openclaw-2026"
+        ]
       },
       {
         "sourceId": "bi-meta-openclaw-email",
@@ -10926,11 +11537,17 @@
       },
       {
         "sourceId": "nvidia-nemoclaw-announcement",
-        "quote": "NVIDIA announces NemoClaw for the OpenClaw Community."
+        "quote": "NVIDIA announces NemoClaw for the OpenClaw Community.",
+        "supports": [
+          "openclaw-2026"
+        ]
       },
       {
         "sourceId": "bi-openclaw-china-robots",
-        "quote": "China is putting OpenClaw into robots while the US debates the dangers of rogue AI."
+        "quote": "China is putting OpenClaw into robots while the US debates the dangers of rogue AI.",
+        "supports": [
+          "openclaw-2026"
+        ]
       }
     ],
     "relatedEvents": [
@@ -10942,7 +11559,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -10951,6 +11568,16 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Added OpenClaw — fastest-growing dev tool in history, personal AI agent phenomenon."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 4 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, claims[1] A->C, impacts[0] A->B, impacts[1] A->C); impactIndex 6->5."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 3 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -11092,11 +11719,17 @@
       },
       {
         "sourceId": "rosenblatt-perceptron-1958",
-        "quote": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain."
+        "quote": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain.",
+        "supports": [
+          "perceptron-1958"
+        ]
       },
       {
         "sourceId": "wikipedia-perceptron",
-        "quote": "The perceptron was invented in 1958 by Frank Rosenblatt."
+        "quote": "The perceptron was invented in 1958 by Frank Rosenblatt.",
+        "supports": [
+          "perceptron-1958"
+        ]
       }
     ],
     "relatedEvents": [
@@ -11108,7 +11741,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -11117,6 +11750,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for Rosenblatt's Perceptron."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -11604,7 +12242,10 @@
       },
       {
         "sourceId": "openai-altman-statement-2023",
-        "quote": "OpenAI announced leadership transition on November 17, 2023."
+        "quote": "OpenAI announced leadership transition on November 17, 2023.",
+        "supports": [
+          "sam-altman-ouster-2023"
+        ]
       }
     ],
     "relatedEvents": [
@@ -11613,7 +12254,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -11622,6 +12263,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Sam Altman ouster/crisis — defining AI corporate governance crisis."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -11816,7 +12462,10 @@
       },
       {
         "sourceId": "wikipedia-siri",
-        "quote": "Siri was introduced on iPhone 4S in October 2011."
+        "quote": "Siri was introduced on iPhone 4S in October 2011.",
+        "supports": [
+          "siri-2011"
+        ]
       }
     ],
     "relatedEvents": [
@@ -11825,7 +12474,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-06-25",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-25",
       "publishedAt": "2026-06-25",
       "curator": "gang",
@@ -11834,6 +12483,11 @@
           "date": "2026-06-25",
           "changeType": "created",
           "summary": "Added Siri — first mainstream conversational AI assistant."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -12068,7 +12722,7 @@
           "zhHans": "OpenAI 于 2026 年 4 月 26 日终止 Sora——前沿 AI 实验室首次重大 AI 产品关停。"
         },
         "claimType": "fact",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "openai-sora-shutdown"
         ]
@@ -12096,7 +12750,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -12105,6 +12759,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for Sora shutdown."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "score_changed",
+          "summary": "Recalibrated 1 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->B)."
         }
       ],
       "reviewer": "gang",
@@ -12120,46 +12779,34 @@
     "date": "2026-06-16",
     "datePrecision": "day",
     "title": {
-      "en": "SpaceX Acquires xAI and Cursor: Unprecedented AI Industry Consolidation",
-      "zhHans": "SpaceX 收购 xAI 与 Cursor：AI 产业史无前例的大整合"
+      "en": "SpaceX agrees to acquire Cursor for $60 billion",
+      "zhHans": "SpaceX 同意以 600 亿美元收购 Cursor"
     },
     "searchSummary": {
-      "en": "SpaceX acquired xAI and Cursor in 2026 — an unprecedented AI industry megamerger. How AI companies consolidated across hardware, infrastructure, and application layers.",
-      "zhHans": "SpaceX 于 2026 年收购 xAI 和 Cursor——史无前例的 AI 产业大整合。AI 公司如何在硬件、基础设施和应用层面进行跨领域整合。"
+      "en": "SpaceX agreed to acquire AI coding startup Cursor for $60 billion in stock, extending its consolidated technology stack into developer tools.",
+      "zhHans": "SpaceX 同意以 600 亿美元股票收购 AI 编程初创公司 Cursor，将其整合后的技术栈延伸至开发者工具。"
     },
     "summary": {
-      "en": "In 2026, Elon Musk's SpaceX executed two landmark AI acquisitions: acquiring xAI at a combined $1.25 trillion valuation in February, followed by a historic $60 billion all-stock acquisition of AI coding startup Cursor just days after SpaceX's record-breaking IPO in June. The deals represent the largest AI talent and technology consolidation in history, concentrating frontier AI capabilities (Grok models), AI coding tools (Cursor), and massive compute resources under a single entity, and signaled the convergence of aerospace, AI, and software development into integrated technology stacks.",
-      "zhHans": "2026年，Elon Musk 的 SpaceX 完成了两笔里程碑式的 AI 收购：2月以 1.25 万亿美元合并估值收购 xAI，随后在6月 SpaceX 创纪录 IPO 后数天以 600 亿美元的全股票交易收购 AI 编程初创公司 Cursor。这两笔交易代表了历史上最大规模的 AI 人才和技术整合，将前沿 AI 能力（Grok 模型）、AI 编程工具（Cursor）和庞大的计算资源集中于一个实体下，标志着航空航天、AI 和软件开发融合为一体化技术堆栈。"
+      "en": "SpaceX agreed to acquire AI coding startup Cursor for $60 billion in stock on June 16, 2026, days after SpaceX's public offering. The transaction brought a widely used AI code editor into the same corporate group as SpaceX and xAI, further concentrating model development, infrastructure, and developer applications.",
+      "zhHans": "2026 年 6 月 16 日，SpaceX 在公开上市数日后同意以 600 亿美元股票收购 AI 编程初创公司 Cursor。这笔交易把一款广泛使用的 AI 代码编辑器纳入 SpaceX 与 xAI 所在的同一企业集团，进一步集中模型开发、基础设施和开发者应用。"
     },
     "narrative": {
-      "en": "On February 2, 2026, SpaceX acquired xAI in an all-stock transaction, valuing the combined entity at $1.25 trillion. xAI, founded by Elon Musk in 2023, developed the Grok family of AI models and had become a significant AI player. The merger made xAI a subsidiary of SpaceX ahead of the latter's anticipated IPO. On June 16, 2026 — just days after SpaceX's record-breaking public offering — the company announced it would acquire AI coding startup Cursor for $60 billion in stock. Cursor had become a leading AI-powered code editor, deeply integrated into developer workflows. The combined moves concentrated AI model development, AI tooling, and massive compute resources under SpaceX's umbrella, marking an unprecedented level of vertical integration in the AI industry.",
-      "zhHans": "2026年2月2日，SpaceX 以全股票交易收购了 xAI，合并实体估值达 1.25 万亿美元。xAI 由 Elon Musk 于2023年创立，开发了 Grok 系列 AI 模型，已成为重要的 AI 参与者。此次合并使 xAI 成为 SpaceX 的子公司，为后者的预期 IPO 做准备。2026年6月16日——在 SpaceX 创纪录的公开上市后仅数天——该公司宣布将以 600 亿美元股票收购 AI 编程初创公司 Cursor。Cursor 已成为领先的 AI 驱动代码编辑器，深度融入开发者工作流。这些合并举措将 AI 模型开发、AI 工具和庞大的计算资源集中于 SpaceX 的框架下，标志着 AI 产业前所未有的垂直整合水平。"
+      "en": "Cursor had become a leading AI-powered code editor integrated into daily developer workflows. SpaceX's proposed all-stock acquisition connected that application layer to the compute, capital, and frontier-model resources already grouped under SpaceX after its February acquisition of xAI. The deal was independently reported by CNBC and TechCrunch. Its long-term competitive consequences remained debated, particularly around concentration and conflicts across Musk-controlled companies.",
+      "zhHans": "Cursor 已成为深度融入开发者日常工作流的主要 AI 代码编辑器之一。SpaceX 拟议的全股票收购，把这一应用层与其在 2 月收购 xAI 后已经集中的算力、资本和前沿模型资源连接起来。CNBC 和 TechCrunch 对该交易进行了独立报道。其长期竞争影响仍有争议，尤其涉及能力集中以及 Musk 控制的多家公司之间可能出现的利益冲突。"
     },
     "categories": [
       "commerce"
     ],
     "significance": 1,
-    "impactIndex": 6,
+    "impactIndex": 5,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
       {
         "claimType": "fact",
         "text": {
-          "en": "SpaceX acquired xAI in an all-stock transaction on February 2, 2026, valuing the combined entity at $1.25 trillion.",
-          "zhHans": "SpaceX 于2026年2月2日以全股票交易收购 xAI，合并实体估值达 1.25 万亿美元。"
-        },
-        "sourceIds": [
-          "bloomberg-spacex-xai-2026"
-        ],
-        "id": "spacex-xai-cursor-2026-claim-1",
-        "evidenceGrade": "B"
-      },
-      {
-        "claimType": "fact",
-        "text": {
-          "en": "SpaceX agreed to acquire Cursor for $60 billion in stock on June 16, 2026, days after its IPO.",
-          "zhHans": "SpaceX 于2026年6月16日同意以 600 亿美元股票收购 Cursor，在其 IPO 后仅数天。"
+          "en": "SpaceX agreed to acquire Cursor for $60 billion in stock on June 16, 2026, days after its public offering.",
+          "zhHans": "SpaceX 于 2026 年 6 月 16 日同意以 600 亿美元股票收购 Cursor，时间是在其公开上市后数日。"
         },
         "sourceIds": [
           "cnbc-spacex-cursor-2026",
@@ -12171,31 +12818,35 @@
       {
         "claimType": "limitation",
         "text": {
-          "en": "Critics raised concerns about the concentration of AI capabilities under Elon Musk's control, given his track record of controversial management and the potential conflicts of interest across his companies.",
-          "zhHans": "批评人士对 AI 能力集中于 Elon Musk 控制之下表达了担忧，考虑到他有争议的管理记录以及其公司之间潜在的利益冲突。"
+          "en": "The transaction was announced but its long-term competitive effects and potential conflicts across Musk-controlled companies remained uncertain.",
+          "zhHans": "该交易已经公布，但其长期竞争影响以及 Musk 控制的多家公司之间可能出现的利益冲突仍不确定。"
         },
         "sourceIds": [
           "cnbc-spacex-cursor-2026"
         ],
         "id": "spacex-xai-cursor-2026-claim-3",
-        "evidenceGrade": "B"
+        "evidenceGrade": "C"
       }
     ],
     "relatedEvents": [
-      "claude-code-leak-2026"
+      "claude-code-leak-2026",
+      "spacex-xai-merger-2026"
     ],
     "sources": [
       {
-        "sourceId": "bloomberg-spacex-xai-2026",
-        "relevance": "Initial reporting on xAI acquisition"
-      },
-      {
         "sourceId": "cnbc-spacex-cursor-2026",
-        "relevance": "Cursor acquisition reporting"
+        "supports": [
+          "spacex-xai-cursor-2026",
+          "spacex-xai-cursor-2026-claim-2",
+          "spacex-xai-cursor-2026-claim-3"
+        ]
       },
       {
         "sourceId": "techcrunch-spacex-cursor-2026",
-        "relevance": "Cursor deal analysis"
+        "supports": [
+          "spacex-xai-cursor-2026",
+          "spacex-xai-cursor-2026-claim-2"
+        ]
       }
     ],
     "impacts": [
@@ -12204,20 +12855,19 @@
         "direction": "negative",
         "severity": -2,
         "description": {
-          "en": "The $60B Cursor acquisition — the largest AI startup acquisition in history — and the $1.25T xAI merger fundamentally reshaped the competitive landscape, concentrating AI talent, models, and tools under a single entity with aerospace-scale resources.",
-          "zhHans": "600 亿美元的 Cursor 收购——历史上最大规模的 AI 初创公司收购——以及 1.25 万亿美元的 xAI 合并从根本上重塑了竞争格局，将 AI 人才、模型和工具集中于一个拥有航天级资源的实体之下。"
+          "en": "The $60 billion transaction would place a major AI coding application inside a corporate group that already controls frontier models and large-scale infrastructure.",
+          "zhHans": "这笔 600 亿美元交易将把一款主要 AI 编程应用纳入一个已经控制前沿模型和大规模基础设施的企业集团。"
         },
         "timeframe": "long",
         "affectedGroups": [
           "AI startups",
           "AI talent market",
-          "competing AI companies"
+          "competing coding tools"
         ],
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "cnbc-spacex-cursor-2026",
-          "techcrunch-spacex-cursor-2026",
-          "bloomberg-spacex-xai-2026"
+          "techcrunch-spacex-cursor-2026"
         ]
       },
       {
@@ -12225,12 +12875,12 @@
         "direction": "negative",
         "severity": -2,
         "description": {
-          "en": "The deals signaled the convergence of traditionally separate sectors — aerospace, AI models, and developer tools — into integrated technology stacks controlled by single entities, setting a precedent for future industry structure.",
-          "zhHans": "这些交易标志着传统上独立的行业——航空航天、AI 模型和开发者工具——正融合为由单一实体控制的一体化技术堆栈，为未来的产业结构开创了先例。"
+          "en": "The deal reinforced a pattern in which model, infrastructure, and developer-tool layers are consolidated within one technology group.",
+          "zhHans": "该交易强化了模型、基础设施和开发者工具层被集中到同一科技集团中的趋势。"
         },
         "timeframe": "long",
         "affectedGroups": [
-          "tech industry",
+          "technology industry",
           "investors",
           "regulators"
         ],
@@ -12243,13 +12893,18 @@
     ],
     "editorial": {
       "createdAt": "2026-06-26",
-      "updatedAt": "2026-06-30",
+      "updatedAt": "2026-07-20",
       "curator": "gang",
       "changeLog": [
         {
           "date": "2026-06-26",
           "changeType": "created",
           "summary": "Initial event entry."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Split the February SpaceX-xAI acquisition into its own event; this node now covers only the June Cursor transaction."
         }
       ],
       "reviewedAt": "2026-06-30",
@@ -12259,6 +12914,154 @@
     },
     "slug": "spacex-xai-cursor-2026",
     "status": "published"
+  },
+  {
+    "id": "spacex-xai-merger-2026",
+    "slug": "spacex-xai-merger-2026",
+    "title": {
+      "en": "SpaceX acquires xAI",
+      "zhHans": "SpaceX 收购 xAI"
+    },
+    "summary": {
+      "en": "SpaceX announced that it had acquired xAI in an all-stock transaction on February 2, 2026. Independent reporting valued the combined company at about $1.25 trillion, bringing xAI's Grok models and AI infrastructure into the aerospace company's corporate structure.",
+      "zhHans": "2026 年 2 月 2 日，SpaceX 宣布通过全股票交易收购 xAI。独立报道估计合并后公司价值约 1.25 万亿美元，xAI 的 Grok 模型和 AI 基础设施由此被纳入这家航天公司的企业结构。"
+    },
+    "narrative": {
+      "en": "xAI's official announcement stated that SpaceX had acquired the AI company. Bloomberg independently reported a combined valuation of about $1.25 trillion. The transaction joined frontier-model development and the Colossus computing infrastructure with SpaceX's capital-intensive aerospace operations. Because both companies were controlled by Elon Musk, independent coverage also raised questions about related-party valuation, governance, and concentration. The later June acquisition of Cursor is recorded as a separate event.",
+      "zhHans": "xAI 的官方公告称 SpaceX 已收购这家 AI 公司。Bloomberg 独立报道合并后估值约为 1.25 万亿美元。该交易把前沿模型开发和 Colossus 计算基础设施与 SpaceX 的资本密集型航天业务结合起来。由于两家公司都由 Elon Musk 控制，独立报道也提出了关联交易估值、公司治理和集中度问题。6 月对 Cursor 的后续收购被记录为独立事件。"
+    },
+    "date": "2026-02-02",
+    "datePrecision": "day",
+    "categories": [
+      "commerce"
+    ],
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 5,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "impacts": [
+      {
+        "dimension": "economic_disruption",
+        "severity": -2,
+        "direction": "negative",
+        "description": {
+          "en": "The acquisition concentrated frontier AI models, computing infrastructure, and aerospace-scale capital within one corporate group.",
+          "zhHans": "这项收购把前沿 AI 模型、计算基础设施和航天级资本集中到同一个企业集团中。"
+        },
+        "affectedGroups": [
+          "AI companies",
+          "investors",
+          "employees",
+          "regulators"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "xai-joins-spacex-2026",
+          "bloomberg-spacex-xai-2026"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": -1,
+        "direction": "negative",
+        "description": {
+          "en": "The transaction linked an AI laboratory and its compute buildout directly to an aerospace company, illustrating cross-sector consolidation around AI infrastructure.",
+          "zhHans": "该交易把一家 AI 实验室及其算力建设直接连接到一家航天公司，体现了围绕 AI 基础设施的跨行业整合。"
+        },
+        "affectedGroups": [
+          "AI industry",
+          "aerospace industry",
+          "technology markets"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "bloomberg-spacex-xai-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "spacex-xai-merger-fact",
+        "text": {
+          "en": "SpaceX announced that it had acquired xAI on February 2, 2026.",
+          "zhHans": "SpaceX 于 2026 年 2 月 2 日宣布已收购 xAI。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "xai-joins-spacex-2026",
+          "bloomberg-spacex-xai-2026"
+        ]
+      },
+      {
+        "id": "spacex-xai-merger-impact",
+        "text": {
+          "en": "The acquisition combined frontier AI development and large-scale computing infrastructure with SpaceX's aerospace operations.",
+          "zhHans": "此次收购将前沿 AI 开发和大规模计算基础设施与 SpaceX 的航天业务结合起来。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "xai-joins-spacex-2026",
+          "bloomberg-spacex-xai-2026"
+        ]
+      },
+      {
+        "id": "spacex-xai-merger-limitation",
+        "text": {
+          "en": "The transaction's long-term competitive effects and related-party governance implications remained uncertain.",
+          "zhHans": "该交易的长期竞争影响和关联方治理影响仍不确定。"
+        },
+        "claimType": "limitation",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "bloomberg-spacex-xai-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "xai-joins-spacex-2026",
+        "supports": [
+          "spacex-xai-merger-2026",
+          "spacex-xai-merger-fact",
+          "spacex-xai-merger-impact"
+        ],
+        "quote": "SpaceX announced today that it has acquired xAI."
+      },
+      {
+        "sourceId": "bloomberg-spacex-xai-2026",
+        "supports": [
+          "spacex-xai-merger-2026",
+          "spacex-xai-merger-fact",
+          "spacex-xai-merger-impact",
+          "spacex-xai-merger-limitation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "spacex-xai-cursor-2026",
+      "grok-deepfake-crisis-2026"
+    ],
+    "editorial": {
+      "createdAt": "2026-07-20",
+      "updatedAt": "2026-07-20",
+      "reviewedAt": "2026-07-20",
+      "publishedAt": "2026-07-20",
+      "curator": "gang",
+      "reviewer": "gang",
+      "reviewProvenance": "v2.3",
+      "changeLog": [
+        {
+          "date": "2026-07-20",
+          "changeType": "created",
+          "summary": "Split the February SpaceX-xAI acquisition from the June Cursor transaction while preserving the original L1 editorial judgment."
+        }
+      ]
+    }
   },
   {
     "id": "stable-diffusion-2022",
@@ -12986,7 +13789,10 @@
       },
       {
         "sourceId": "axios-thinking-machines-inkling",
-        "quote": "Mira Murati's Thinking Machines on Wednesday released Inkling, betting enterprises want AI they can customize."
+        "quote": "Mira Murati's Thinking Machines on Wednesday released Inkling, betting enterprises want AI they can customize.",
+        "supports": [
+          "thinking-machines-inkling-2026"
+        ]
       },
       {
         "sourceId": "fortune-thinking-machines-inkling",
@@ -13021,6 +13827,11 @@
           "date": "2026-07-20",
           "changeType": "correction",
           "summary": "Separated video pretraining data from supported input modalities and removed an unresolved parameter placeholder."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -13166,7 +13977,10 @@
       },
       {
         "sourceId": "techspot-transformers",
-        "quote": "Meet Transformers: The Google Breakthrough that Rewrote AI's Roadmap."
+        "quote": "Meet Transformers: The Google Breakthrough that Rewrote AI's Roadmap.",
+        "supports": [
+          "transformer-2017"
+        ]
       }
     ],
     "relatedEvents": [
@@ -13186,7 +14000,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -13195,6 +14009,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Initial v2 entry for the Transformer architecture."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",
@@ -13488,7 +14307,10 @@
       },
       {
         "sourceId": "karpathy-vibe-coding-tweet",
-        "quote": "There's a new kind of coding I call 'vibe coding'."
+        "quote": "There's a new kind of coding I call 'vibe coding'.",
+        "supports": [
+          "vibecoding-2025"
+        ]
       }
     ],
     "relatedEvents": [
@@ -13499,7 +14321,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
-      "updatedAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
       "reviewedAt": "2026-06-24",
       "publishedAt": "2026-06-24",
       "curator": "gang",
@@ -13508,6 +14330,11 @@
           "date": "2026-06-24",
           "changeType": "created",
           "summary": "Added vibe coding — Collins Word of the Year 2025, conceptual shift in programming."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
         }
       ],
       "reviewer": "gang",

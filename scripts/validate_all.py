@@ -479,8 +479,17 @@ def validate_events(source_map: dict):
             else:
                 referenced_sources.append(source_map[source_id])
             supports = source_ref.get("supports")
-            if supports is not None and (not isinstance(supports, list) or not supports):
-                errors.append(f"{sp}: supports must be a non-empty array when provided")
+            if (
+                not isinstance(supports, list)
+                or not supports
+                or not all(non_empty_string(value) for value in supports)
+            ):
+                errors.append(f"{sp}: supports must be a non-empty array of strings")
+            else:
+                valid_support_targets = {event_id, *claim_ids}
+                for support in supports:
+                    if support not in valid_support_targets:
+                        errors.append(f"{sp}: unknown supports target '{support}'")
         if len({ref.get("sourceId") for ref in source_refs if isinstance(ref, dict)}) != len(source_refs):
             errors.append(f"{prefix}: sources contains duplicate sourceId values")
 
@@ -745,6 +754,108 @@ def validate_forecasts(event_map: dict, source_map: dict):
 def validate_screening_logs(event_map: dict, forecast_ids: set[str]):
     screening = load_json(SCREENING_FILE)
     if isinstance(screening, dict):
+        runs = screening.get("runs")
+        if not isinstance(runs, list) or not runs:
+            errors.append("data/screening_log.json: runs must be a non-empty array")
+            runs = []
+        run_ids = [run.get("runId") for run in runs if isinstance(run, dict)]
+        for run_id in duplicate_values(run_ids):
+            errors.append(f"screening_log: duplicate runId '{run_id}'")
+        known_run_ids = {run_id for run_id in run_ids if non_empty_string(run_id)}
+        channel_statuses = {"completed", "completed_after_retry", "partial", "unavailable"}
+        expected_categories = CATEGORIES
+        for index, run in enumerate(runs):
+            prefix = f"screening_log.runs[{index}]"
+            require_fields(
+                run,
+                [
+                    "runId",
+                    "runDate",
+                    "windowStart",
+                    "windowEnd",
+                    "scope",
+                    "channels",
+                    "categoryCoverage",
+                ],
+                prefix,
+            )
+            if not isinstance(run, dict):
+                continue
+            if not non_empty_string(run.get("runId")):
+                errors.append(f"{prefix}.runId: must be a non-empty string")
+            for field in ("runDate", "windowStart", "windowEnd"):
+                if not valid_iso_date(run.get(field)):
+                    errors.append(f"{prefix}.{field}: must be YYYY-MM-DD")
+            if valid_iso_date(run.get("windowStart")) and valid_iso_date(run.get("windowEnd")):
+                if date.fromisoformat(run["windowEnd"]) < date.fromisoformat(run["windowStart"]):
+                    errors.append(f"{prefix}: windowEnd cannot be earlier than windowStart")
+            if not non_empty_string(run.get("scope")):
+                errors.append(f"{prefix}.scope: must be a non-empty string")
+
+            channels = run.get("channels")
+            if not isinstance(channels, list) or not channels:
+                errors.append(f"{prefix}.channels: must be a non-empty array")
+                channels = []
+            channel_ids = [channel.get("id") for channel in channels if isinstance(channel, dict)]
+            for channel_id in duplicate_values(channel_ids):
+                errors.append(f"{prefix}.channels: duplicate id '{channel_id}'")
+            for channel_index, channel in enumerate(channels):
+                cp = f"{prefix}.channels[{channel_index}]"
+                require_fields(
+                    channel,
+                    ["id", "status", "queries", "resultSummary", "failureReason", "retryResult"],
+                    cp,
+                )
+                if not isinstance(channel, dict):
+                    continue
+                if not non_empty_string(channel.get("id")):
+                    errors.append(f"{cp}.id: must be a non-empty string")
+                status = channel.get("status")
+                if status not in channel_statuses:
+                    errors.append(f"{cp}.status: invalid value '{status}'")
+                queries = channel.get("queries")
+                if (
+                    not isinstance(queries, list)
+                    or not queries
+                    or not all(non_empty_string(query) for query in queries)
+                ):
+                    errors.append(f"{cp}.queries: must contain non-empty strings")
+                if not non_empty_string(channel.get("resultSummary")):
+                    errors.append(f"{cp}.resultSummary: must be a non-empty string")
+                if status in {"completed_after_retry", "partial", "unavailable"}:
+                    if not non_empty_string(channel.get("failureReason")):
+                        errors.append(f"{cp}: status '{status}' requires failureReason")
+                if status in {"completed_after_retry", "partial"} and not non_empty_string(
+                    channel.get("retryResult")
+                ):
+                    errors.append(f"{cp}: status '{status}' requires retryResult")
+
+            coverage = run.get("categoryCoverage")
+            if not isinstance(coverage, list):
+                errors.append(f"{prefix}.categoryCoverage: must be an array")
+                coverage = []
+            covered = {item.get("category") for item in coverage if isinstance(item, dict)}
+            if covered != expected_categories:
+                errors.append(
+                    f"{prefix}.categoryCoverage: must cover exactly {sorted(expected_categories)}"
+                )
+            for coverage_index, item in enumerate(coverage):
+                cp = f"{prefix}.categoryCoverage[{coverage_index}]"
+                require_fields(item, ["category", "queries", "status"], cp)
+                if not isinstance(item, dict):
+                    continue
+                if item.get("category") not in CATEGORIES:
+                    errors.append(f"{cp}.category: invalid value '{item.get('category')}'")
+                queries = item.get("queries")
+                if (
+                    not isinstance(queries, list)
+                    or not queries
+                    or not all(non_empty_string(query) for query in queries)
+                ):
+                    errors.append(f"{cp}.queries: must contain non-empty strings")
+                if item.get("status") != "completed":
+                    errors.append(f"{cp}.status: must be 'completed'")
+
         entries = screening.get("entries")
         if not isinstance(entries, list):
             errors.append("data/screening_log.json: entries must be an array")
@@ -753,14 +864,51 @@ def validate_screening_logs(event_map: dict, forecast_ids: set[str]):
         for candidate_id in duplicate_values(ids):
             errors.append(f"screening_log: duplicate candidateId '{candidate_id}'")
         score_fields = ("verifiability", "novelty", "spillover", "durability", "sourceQuality")
+        confirmation_layers = {"fact", "impact", "analysis", "controversy"}
         missing_run_id_count = 0
         for index, entry in enumerate(entries):
             prefix = f"screening_log.entries[{index}]"
             require_fields(entry, ["candidateId", "source", "screenedAt", "scores", "total", "decision"], prefix)
             if not isinstance(entry, dict):
                 continue
-            if not non_empty_string(entry.get("runId")):
+            run_id = entry.get("runId")
+            if not non_empty_string(run_id):
                 missing_run_id_count += 1
+            elif run_id not in known_run_ids:
+                errors.append(f"{prefix}: unknown runId '{run_id}'")
+            else:
+                confirmation = entry.get("confirmation")
+                require_fields(
+                    confirmation,
+                    ["completedAt", "status", "queries", "layers"],
+                    f"{prefix}.confirmation",
+                )
+                if isinstance(confirmation, dict):
+                    if not valid_iso_date(confirmation.get("completedAt")):
+                        errors.append(f"{prefix}.confirmation.completedAt: must be YYYY-MM-DD")
+                    queries = confirmation.get("queries")
+                    layers = confirmation.get("layers")
+                    if not isinstance(queries, dict) or set(queries) != confirmation_layers:
+                        errors.append(f"{prefix}.confirmation.queries: must contain all four layers")
+                    elif not all(non_empty_string(query) for query in queries.values()):
+                        errors.append(f"{prefix}.confirmation.queries: values must be non-empty")
+                    if not isinstance(layers, dict) or set(layers) != confirmation_layers:
+                        errors.append(f"{prefix}.confirmation.layers: must contain all four layers")
+                    else:
+                        for layer_name, layer in layers.items():
+                            lp = f"{prefix}.confirmation.layers.{layer_name}"
+                            require_fields(layer, ["finding", "sourceUrls"], lp)
+                            if not isinstance(layer, dict):
+                                continue
+                            if not non_empty_string(layer.get("finding")):
+                                errors.append(f"{lp}.finding: must be a non-empty string")
+                            source_urls = layer.get("sourceUrls")
+                            if (
+                                not isinstance(source_urls, list)
+                                or not source_urls
+                                or not all(non_empty_string(url) for url in source_urls)
+                            ):
+                                errors.append(f"{lp}.sourceUrls: must contain non-empty strings")
             scores = entry.get("scores")
             require_fields(scores, score_fields, f"{prefix}.scores")
             if isinstance(scores, dict):

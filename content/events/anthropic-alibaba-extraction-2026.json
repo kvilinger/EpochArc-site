@@ -23,7 +23,7 @@
     "commerce"
   ],
   "significance": 1,
-  "impactIndex": 5,
+  "impactIndex": 4,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -50,7 +50,7 @@
         "reuters-anthropic-alibaba-2026"
       ],
       "id": "anthropic-alibaba-extraction-2026-claim-2",
-      "evidenceGrade": "B"
+      "evidenceGrade": "C"
     },
     {
       "claimType": "interpretation",
@@ -62,7 +62,7 @@
         "cnbc-anthropic-alibaba-2026"
       ],
       "id": "anthropic-alibaba-extraction-2026-claim-3",
-      "evidenceGrade": "B"
+      "evidenceGrade": "C"
     }
   ],
   "relatedEvents": [
@@ -71,11 +71,21 @@
   "sources": [
     {
       "sourceId": "reuters-anthropic-alibaba-2026",
-      "relevance": "First reporting of the accusation"
+      "relevance": "First reporting of the accusation",
+      "supports": [
+        "anthropic-alibaba-extraction-2026-claim-1",
+        "anthropic-alibaba-extraction-2026-claim-2",
+        "anthropic-alibaba-extraction-2026"
+      ]
     },
     {
       "sourceId": "cnbc-anthropic-alibaba-2026",
-      "relevance": "Business coverage with context on Fable 5 ban timing"
+      "relevance": "Business coverage with context on Fable 5 ban timing",
+      "supports": [
+        "anthropic-alibaba-extraction-2026-claim-1",
+        "anthropic-alibaba-extraction-2026-claim-3",
+        "anthropic-alibaba-extraction-2026"
+      ]
     }
   ],
   "impacts": [
@@ -93,7 +103,7 @@
         "governments",
         "policymakers"
       ],
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "reuters-anthropic-alibaba-2026",
         "cnbc-anthropic-alibaba-2026"
@@ -112,7 +122,7 @@
         "US-China tech relations",
         "global AI industry"
       ],
-      "evidenceGrade": "B",
+      "evidenceGrade": "C",
       "sourceIds": [
         "reuters-anthropic-alibaba-2026"
       ]
@@ -120,13 +130,23 @@
   ],
   "editorial": {
     "createdAt": "2026-06-26",
-    "updatedAt": "2026-06-30",
+    "updatedAt": "2026-07-20",
     "curator": "gang",
     "changeLog": [
       {
         "date": "2026-06-26",
         "changeType": "created",
         "summary": "Initial event entry."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 4 evidence grade(s) to the v2.3 source-chain ceiling (claims[1] B->C, claims[2] B->C, impacts[0] A->B, impacts[1] B->C); impactIndex 5->4."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
       }
     ],
     "reviewedAt": "2026-06-30",

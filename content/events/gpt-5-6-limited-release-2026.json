@@ -23,7 +23,7 @@
     "capability"
   ],
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 6,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -66,7 +66,7 @@
         "marktechpost-gpt56-2026"
       ],
       "id": "gpt-5-6-limited-release-2026-claim-3",
-      "evidenceGrade": "B"
+      "evidenceGrade": "C"
     },
     {
       "claimType": "interpretation",
@@ -92,7 +92,7 @@
         "paddo-gpt56-twenty-companies-2026"
       ],
       "id": "gpt-5-6-limited-release-2026-claim-5",
-      "evidenceGrade": "B"
+      "evidenceGrade": "C"
     },
     {
       "id": "gpt-5-6-limited-release-2026-impact-claim",
@@ -101,7 +101,7 @@
         "zhHans": "GPT-5.6 是首个在6月2日行政令框架下发布的模型，建立了一个新常态：前沿AI模型的发布在公开访问前需接受政府审查和批准。这代表了从行业自我监管向政府监管的根本转变。"
       },
       "claimType": "impact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "axios-gpt56-trump-2026",
         "cnn-openai-gpt56-restrict-2026",
@@ -129,7 +129,7 @@
         "governments",
         "AI developers and users"
       ],
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "axios-gpt56-trump-2026",
         "cnn-openai-gpt56-restrict-2026",
@@ -149,7 +149,7 @@
         "AI developers",
         "enterprises"
       ],
-      "evidenceGrade": "B",
+      "evidenceGrade": "C",
       "sourceIds": [
         "venturebeat-gpt56-sol-2026",
         "senswit-gpt56-2026"
@@ -169,7 +169,7 @@
         "enterprise customers",
         "open-source community"
       ],
-      "evidenceGrade": "B",
+      "evidenceGrade": "C",
       "sourceIds": [
         "paddo-gpt56-twenty-companies-2026",
         "govinfosecurity-gpt56-restrict-2026"
@@ -180,74 +180,138 @@
   "sources": [
     {
       "sourceId": "openai-gpt56-announce-2026",
-      "relevance": "Official OpenAI announcement: Previewing GPT-5.6 Sol"
+      "relevance": "Official OpenAI announcement: Previewing GPT-5.6 Sol",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-1"
+      ]
     },
     {
       "sourceId": "openai-gpt56-help-2026",
-      "relevance": "OpenAI Help Center: preview details and access restrictions"
+      "relevance": "OpenAI Help Center: preview details and access restrictions",
+      "supports": [
+        "gpt-5-6-limited-release-2026"
+      ]
     },
     {
       "sourceId": "cnn-openai-gpt56-restrict-2026",
-      "relevance": "CNN: White House asks OpenAI to limit its next model release"
+      "relevance": "CNN: White House asks OpenAI to limit its next model release",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-1",
+        "gpt-5-6-limited-release-2026-impact-claim",
+        "gpt-5-6-limited-release-2026"
+      ]
     },
     {
       "sourceId": "axios-gpt56-trump-2026",
-      "relevance": "Axios: Trump administration asks OpenAI to limit release of GPT-5.6"
+      "relevance": "Axios: Trump administration asks OpenAI to limit release of GPT-5.6",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-1",
+        "gpt-5-6-limited-release-2026-claim-2",
+        "gpt-5-6-limited-release-2026-impact-claim",
+        "gpt-5-6-limited-release-2026"
+      ]
     },
     {
       "sourceId": "reuters-gpt56-limits-2026",
-      "relevance": "Reuters: OpenAI defers public rollout of GPT-5.6 as US seeks early access"
+      "relevance": "Reuters: OpenAI defers public rollout of GPT-5.6 as US seeks early access",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-4"
+      ]
     },
     {
       "sourceId": "techcrunch-gpt56-restrict-2026",
-      "relevance": "TechCrunch: OpenAI limits GPT-5.6 rollout after government request"
+      "relevance": "TechCrunch: OpenAI limits GPT-5.6 rollout after government request",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-2"
+      ]
     },
     {
       "sourceId": "venturebeat-gpt56-sol-2026",
-      "relevance": "VentureBeat: GPT-5.6 Sol/Terra/Luna models with benchmark details"
+      "relevance": "VentureBeat: GPT-5.6 Sol/Terra/Luna models with benchmark details",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-3",
+        "gpt-5-6-limited-release-2026"
+      ]
     },
     {
       "sourceId": "politico-gpt56-government-2026",
-      "relevance": "Politico: Trump administration steps in to limit OpenAI's latest model launch"
+      "relevance": "Politico: Trump administration steps in to limit OpenAI's latest model launch",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-4"
+      ]
     },
     {
       "sourceId": "nytimes-trump-eo-ai-2026",
-      "relevance": "NYT: Trump signs executive order seeking oversight of AI models (June 2)"
+      "relevance": "NYT: Trump signs executive order seeking oversight of AI models (June 2)",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-2",
+        "gpt-5-6-limited-release-2026-impact-claim",
+        "gpt-5-6-limited-release-2026"
+      ]
     },
     {
       "sourceId": "paddo-gpt56-twenty-companies-2026",
-      "relevance": "Analysis: GPT-5.6 limited to ~20 companies, criticism of gated access"
+      "relevance": "Analysis: GPT-5.6 limited to ~20 companies, criticism of gated access",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-5",
+        "gpt-5-6-limited-release-2026"
+      ]
     },
     {
       "sourceId": "govinfosecurity-gpt56-restrict-2026",
-      "relevance": "Government Info Security: enterprise users face delayed access"
+      "relevance": "Government Info Security: enterprise users face delayed access",
+      "supports": [
+        "gpt-5-6-limited-release-2026"
+      ]
     },
     {
       "sourceId": "senswit-gpt56-2026",
-      "relevance": "Senswit: detailed model tier breakdown and pricing analysis"
+      "relevance": "Senswit: detailed model tier breakdown and pricing analysis",
+      "supports": [
+        "gpt-5-6-limited-release-2026"
+      ]
     },
     {
       "sourceId": "cryptobriefing-gpt56-delay-2026",
-      "relevance": "CryptoBriefing: Trump admin asks OpenAI to stagger release over cybersecurity"
+      "relevance": "CryptoBriefing: Trump admin asks OpenAI to stagger release over cybersecurity",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-5"
+      ]
     },
     {
       "sourceId": "marktechpost-gpt56-2026",
-      "relevance": "MarkTechPost: benchmark details and ultra reasoning mode"
+      "relevance": "MarkTechPost: benchmark details and ultra reasoning mode",
+      "supports": [
+        "gpt-5-6-limited-release-2026-claim-3"
+      ]
     },
     {
       "sourceId": "toms-gpt56-banhammer-2026",
-      "relevance": "Tom's Hardware: GPT-5.6 'same banhammer treatment' as Mythos"
+      "relevance": "Tom's Hardware: GPT-5.6 'same banhammer treatment' as Mythos",
+      "supports": [
+        "gpt-5-6-limited-release-2026"
+      ]
     }
   ],
   "editorial": {
     "createdAt": "2026-07-08",
-    "updatedAt": "2026-07-08",
+    "updatedAt": "2026-07-20",
     "curator": "gang",
     "changeLog": [
       {
         "date": "2026-07-08",
         "changeType": "created",
         "summary": "Initial event entry."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 6 evidence grade(s) to the v2.3 source-chain ceiling (claims[2] B->C, claims[4] B->C, claims[5] A->B, impacts[0] A->B, impacts[1] B->C, impacts[2] B->C); impactIndex 7->6."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 15 source reference(s)."
       }
     ],
     "reviewedAt": "2026-07-08",

@@ -77,7 +77,10 @@
     },
     {
       "sourceId": "openai-devday-announcement-2023",
-      "quote": "OpenAI held its first DevDay on November 6, 2023."
+      "quote": "OpenAI held its first DevDay on November 6, 2023.",
+      "supports": [
+        "openai-devday-2023"
+      ]
     }
   ],
   "relatedEvents": [
@@ -87,7 +90,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -96,6 +99,11 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added OpenAI DevDay 2023 — GPT-4 Turbo, GPTs, platform expansion."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

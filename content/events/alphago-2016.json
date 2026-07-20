@@ -140,7 +140,10 @@
     },
     {
       "sourceId": "wikipedia-alphago-lee-sedol",
-      "quote": "AlphaGo defeated Lee Sedol 4-1 in March 2016."
+      "quote": "AlphaGo defeated Lee Sedol 4-1 in March 2016.",
+      "supports": [
+        "alphago-2016"
+      ]
     }
   ],
   "relatedEvents": [
@@ -151,7 +154,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -160,6 +163,11 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for AlphaGo vs Lee Sedol."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

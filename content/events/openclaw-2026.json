@@ -29,7 +29,7 @@
   ],
   "status": "published",
   "significance": 1,
-  "impactIndex": 6,
+  "impactIndex": 5,
   "consensusLevel": "emerging",
   "controversy": true,
   "impacts": [
@@ -48,7 +48,7 @@
         "Chinese users"
       ],
       "timeframe": "medium",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "wikipedia-openclaw",
         "techcrunch-openclaw-joins-openai"
@@ -69,7 +69,7 @@
         "regulators"
       ],
       "timeframe": "short",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "bi-meta-openclaw-email"
       ]
@@ -103,7 +103,7 @@
         "zhHans": "OpenClaw 于 2026 年 1 月 25 日在 Hacker News 上发布，24 小时内获得 9,000 个 GitHub Star，到 2026 年 3 月 2 日达到 247,000 个——史上增长最快的开发者工具。"
       },
       "claimType": "fact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "wikipedia-openclaw"
       ]
@@ -115,7 +115,7 @@
         "zhHans": "Meta 对齐总监 Summer Yue 于 2026 年 2 月将 OpenClaw 连接到收件箱，它试图删除她的邮件，引发了对自主 AI 智能体的安全担忧。"
       },
       "claimType": "fact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "bi-meta-openclaw-email"
       ]
@@ -131,7 +131,10 @@
     },
     {
       "sourceId": "techcrunch-openclaw-joins-openai",
-      "quote": "OpenClaw creator Peter Steinberger joins OpenAI."
+      "quote": "OpenClaw creator Peter Steinberger joins OpenAI.",
+      "supports": [
+        "openclaw-2026"
+      ]
     },
     {
       "sourceId": "bi-meta-openclaw-email",
@@ -142,11 +145,17 @@
     },
     {
       "sourceId": "nvidia-nemoclaw-announcement",
-      "quote": "NVIDIA announces NemoClaw for the OpenClaw Community."
+      "quote": "NVIDIA announces NemoClaw for the OpenClaw Community.",
+      "supports": [
+        "openclaw-2026"
+      ]
     },
     {
       "sourceId": "bi-openclaw-china-robots",
-      "quote": "China is putting OpenClaw into robots while the US debates the dangers of rogue AI."
+      "quote": "China is putting OpenClaw into robots while the US debates the dangers of rogue AI.",
+      "supports": [
+        "openclaw-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -155,7 +164,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -164,6 +173,16 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Added OpenClaw — fastest-growing dev tool in history, personal AI agent phenomenon."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 4 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, claims[1] A->C, impacts[0] A->B, impacts[1] A->C); impactIndex 6->5."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 3 source reference(s)."
       }
     ],
     "reviewer": "gang",

@@ -23,7 +23,7 @@
     "safety"
   ],
   "significance": 2,
-  "impactIndex": 7,
+  "impactIndex": 5,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -63,7 +63,7 @@
         "cnbc-fable-shutdown-2026"
       ],
       "id": "claude-fable-ban-2026-claim-3",
-      "evidenceGrade": "B"
+      "evidenceGrade": "C"
     },
     {
       "claimType": "interpretation",
@@ -100,35 +100,69 @@
   "sources": [
     {
       "sourceId": "anthropic-fable-suspension-2026",
-      "relevance": "Official statement on the export control directive"
+      "relevance": "Official statement on the export control directive",
+      "supports": [
+        "claude-fable-ban-2026-claim-1",
+        "claude-fable-ban-2026-claim-2",
+        "claude-fable-ban-2026-impact-claim",
+        "claude-fable-ban-2026"
+      ]
     },
     {
       "sourceId": "anthropic-fable-mythos-5-announce-2026",
-      "relevance": "Original launch announcement of Fable 5 and Mythos 5"
+      "relevance": "Original launch announcement of Fable 5 and Mythos 5",
+      "supports": [
+        "claude-fable-ban-2026"
+      ]
     },
     {
       "sourceId": "forbes-fable-ban-2026",
-      "relevance": "Detailed timeline and analysis of the ban"
+      "relevance": "Detailed timeline and analysis of the ban",
+      "supports": [
+        "claude-fable-ban-2026-claim-1",
+        "claude-fable-ban-2026-claim-4",
+        "claude-fable-ban-2026-impact-claim",
+        "claude-fable-ban-2026"
+      ]
     },
     {
       "sourceId": "guardian-five-eyes-fable-2026",
-      "relevance": "Five Eyes joint statement on AI cyberattack capabilities"
+      "relevance": "Five Eyes joint statement on AI cyberattack capabilities",
+      "supports": [
+        "claude-fable-ban-2026-claim-4",
+        "claude-fable-ban-2026"
+      ]
     },
     {
       "sourceId": "fortune-fable-ban-2026",
-      "relevance": "Export ban coverage"
+      "relevance": "Export ban coverage",
+      "supports": [
+        "claude-fable-ban-2026-claim-2",
+        "claude-fable-ban-2026-impact-claim",
+        "claude-fable-ban-2026"
+      ]
     },
     {
       "sourceId": "cnbc-fable-shutdown-2026",
-      "relevance": "Impact on open-source AI development"
+      "relevance": "Impact on open-source AI development",
+      "supports": [
+        "claude-fable-ban-2026-claim-3",
+        "claude-fable-ban-2026"
+      ]
     },
     {
       "sourceId": "guardian-fable-safe-version-2026",
-      "relevance": "Context on Fable as safety-aligned version of Mythos"
+      "relevance": "Context on Fable as safety-aligned version of Mythos",
+      "supports": [
+        "claude-fable-ban-2026"
+      ]
     },
     {
       "sourceId": "wikipedia-claude-mythos-2026",
-      "relevance": "Comprehensive reference on Claude Mythos lineage"
+      "relevance": "Comprehensive reference on Claude Mythos lineage",
+      "supports": [
+        "claude-fable-ban-2026"
+      ]
     }
   ],
   "impacts": [
@@ -166,7 +200,7 @@
         "global AI industry",
         "open-source community"
       ],
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "cnbc-fable-shutdown-2026",
         "pandaily-glm52-2026"
@@ -186,7 +220,7 @@
         "critical infrastructure",
         "general public"
       ],
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "guardian-five-eyes-fable-2026"
       ]
@@ -194,13 +228,23 @@
   ],
   "editorial": {
     "createdAt": "2026-06-26",
-    "updatedAt": "2026-06-30",
+    "updatedAt": "2026-07-20",
     "curator": "gang",
     "changeLog": [
       {
         "date": "2026-06-26",
         "changeType": "created",
         "summary": "Initial event entry."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 3 evidence grade(s) to the v2.3 source-chain ceiling (claims[2] B->C, impacts[1] A->B, impacts[2] A->C); impactIndex 7->5."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 8 source reference(s)."
       }
     ],
     "reviewedAt": "2026-06-30",

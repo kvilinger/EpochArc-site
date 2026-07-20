@@ -23,7 +23,7 @@
     "safety"
   ],
   "significance": 1,
-  "impactIndex": 6,
+  "impactIndex": 5,
   "controversy": true,
   "consensusLevel": "debated",
   "claims": [
@@ -65,7 +65,7 @@
         "kotaku-gene-wilder-ai-2026"
       ],
       "id": "netflix-gene-wilder-ai-2026-claim-3",
-      "evidenceGrade": "B"
+      "evidenceGrade": "C"
     }
   ],
   "relatedEvents": [
@@ -86,7 +86,7 @@
         "deceased performers' estates",
         "general public"
       ],
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "bbc-gene-wilder-ai-2026",
         "variety-gene-wilder-ai-2026"
@@ -105,7 +105,7 @@
         "AI companies",
         "media companies"
       ],
-      "evidenceGrade": "B",
+      "evidenceGrade": "C",
       "sourceIds": [
         "euronews-gene-wilder-ai-2026"
       ]
@@ -115,38 +115,70 @@
   "sources": [
     {
       "sourceId": "variety-gene-wilder-ai-2026",
-      "relevance": "Original announcement: Gene Wilder's voice recreated by AI for Netflix series"
+      "relevance": "Original announcement: Gene Wilder's voice recreated by AI for Netflix series",
+      "supports": [
+        "netflix-gene-wilder-ai-2026-claim-1",
+        "netflix-gene-wilder-ai-2026-claim-2",
+        "netflix-gene-wilder-ai-2026"
+      ]
     },
     {
       "sourceId": "bbc-gene-wilder-ai-2026",
-      "relevance": "Backlash coverage: Wonka Netflix show faces backlash for AI-generated Gene Wilder voice"
+      "relevance": "Backlash coverage: Wonka Netflix show faces backlash for AI-generated Gene Wilder voice",
+      "supports": [
+        "netflix-gene-wilder-ai-2026-claim-1",
+        "netflix-gene-wilder-ai-2026-claim-3",
+        "netflix-gene-wilder-ai-2026"
+      ]
     },
     {
       "sourceId": "hollywoodreporter-gene-wilder-ai-2026",
-      "relevance": "Industry coverage: Willy Wonka Competition Show at Netflix Uses AI to Re-Create Gene Wilder's Voice"
+      "relevance": "Industry coverage: Willy Wonka Competition Show at Netflix Uses AI to Re-Create Gene Wilder's Voice",
+      "supports": [
+        "netflix-gene-wilder-ai-2026-claim-1"
+      ]
     },
     {
       "sourceId": "nbcnews-gene-wilder-ai-2026",
-      "relevance": "Estate consent details: Netflix re-creates Gene Wilder's voice for new Willy Wonka show"
+      "relevance": "Estate consent details: Netflix re-creates Gene Wilder's voice for new Willy Wonka show",
+      "supports": [
+        "netflix-gene-wilder-ai-2026-claim-2"
+      ]
     },
     {
       "sourceId": "kotaku-gene-wilder-ai-2026",
-      "relevance": "Critical perspective: 'the future is terrible' — Kotaku coverage"
+      "relevance": "Critical perspective: 'the future is terrible' — Kotaku coverage",
+      "supports": [
+        "netflix-gene-wilder-ai-2026-claim-3"
+      ]
     },
     {
       "sourceId": "euronews-gene-wilder-ai-2026",
-      "relevance": "European perspective on the AI ethics controversy"
+      "relevance": "European perspective on the AI ethics controversy",
+      "supports": [
+        "netflix-gene-wilder-ai-2026"
+      ]
     }
   ],
   "editorial": {
     "createdAt": "2026-07-08",
-    "updatedAt": "2026-07-08",
+    "updatedAt": "2026-07-20",
     "curator": "gang",
     "changeLog": [
       {
         "date": "2026-07-08",
         "changeType": "created",
         "summary": "Initial event entry."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 3 evidence grade(s) to the v2.3 source-chain ceiling (claims[2] B->C, impacts[0] A->B, impacts[1] B->C); impactIndex 6->5."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 6 source reference(s)."
       }
     ],
     "reviewedAt": "2026-07-08",

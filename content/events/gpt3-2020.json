@@ -137,11 +137,17 @@
     },
     {
       "sourceId": "wikipedia-gpt3",
-      "quote": null
+      "quote": null,
+      "supports": [
+        "gpt3-2020"
+      ]
     },
     {
       "sourceId": "mit-tech-review-gpt3-2020",
-      "quote": "OpenAI's GPT-3 is shockingly good—and completely mindless."
+      "quote": "OpenAI's GPT-3 is shockingly good—and completely mindless.",
+      "supports": [
+        "gpt3-2020"
+      ]
     }
   ],
   "relatedEvents": [
@@ -152,7 +158,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -161,6 +167,11 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for GPT-3."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
       }
     ],
     "reviewer": "gang",

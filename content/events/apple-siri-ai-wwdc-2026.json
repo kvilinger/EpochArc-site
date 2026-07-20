@@ -47,7 +47,7 @@
         "AI industry"
       ],
       "timeframe": "immediate",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "apple-newsroom-siri-ai-wwdc-2026"
       ]
@@ -61,7 +61,7 @@
         "zhHans": "苹果于 2026 年 6 月 8 日在 WWDC 发布了 Siri AI——一次彻底的改造，包含独立应用、上下文感知、Gemini 驱动的视觉智能和多步骤任务处理。"
       },
       "claimType": "fact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "apple-newsroom-siri-ai-wwdc-2026"
       ]
@@ -77,7 +77,10 @@
     },
     {
       "sourceId": "techcrunch-siri-wwdc-2026",
-      "quote": "WWDC 2026: Siri's highly anticipated revamp and Apple Intelligence updates."
+      "quote": "WWDC 2026: Siri's highly anticipated revamp and Apple Intelligence updates.",
+      "supports": [
+        "apple-siri-ai-wwdc-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -87,7 +90,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -96,6 +99,16 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added Apple Siri AI at WWDC 2026 — Siri finally gets real AI overhaul, biggest consumer AI moment of 2026."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->B, impacts[0] A->B)."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

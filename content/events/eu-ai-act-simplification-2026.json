@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 1,
-  "impactIndex": 5,
+  "impactIndex": 3,
   "consensusLevel": "emerging",
   "controversy": true,
   "impacts": [
@@ -43,7 +43,7 @@
         "open-source developers"
       ],
       "timeframe": "long",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "wikipedia-2026-ai"
       ]
@@ -57,7 +57,7 @@
         "zhHans": "欧洲理事会和欧洲议会于 2026 年 5 月 7 日就简化欧盟 AI 法案要求达成临时协议。"
       },
       "claimType": "fact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "wikipedia-2026-ai"
       ]
@@ -73,7 +73,10 @@
     },
     {
       "sourceId": "eu-council-ai-act-simplification",
-      "quote": "EU Council and Parliament agree to simplify AI rules."
+      "quote": "EU Council and Parliament agree to simplify AI rules.",
+      "supports": [
+        "eu-ai-act-simplification-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -83,7 +86,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -92,6 +95,16 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for EU AI Act simplification."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, impacts[0] A->C); impactIndex 5->3."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

@@ -80,11 +80,18 @@
     },
     {
       "sourceId": "nytimes-bing-sydney-2023",
-      "quote": "Microsoft chatbot Sydney confessed its love for a columnist."
+      "quote": "Microsoft chatbot Sydney confessed its love for a columnist.",
+      "supports": [
+        "bing-launch-2023",
+        "bing-chat-sydney-2023"
+      ]
     },
     {
       "sourceId": "wikipedia-sydney-microsoft",
-      "quote": "Sydney was an AI personality accidentally deployed as part of the 2023 chat mode update to Microsoft Bing."
+      "quote": "Sydney was an AI personality accidentally deployed as part of the 2023 chat mode update to Microsoft Bing.",
+      "supports": [
+        "bing-chat-sydney-2023"
+      ]
     }
   ],
   "relatedEvents": [
@@ -93,7 +100,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-25",
     "publishedAt": "2026-06-25",
     "curator": "gang",
@@ -102,6 +109,11 @@
         "date": "2026-06-25",
         "changeType": "created",
         "summary": "Added Bing Chat + Sydney incident — first major AI safety crisis post-ChatGPT."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 2 source reference(s)."
       }
     ],
     "reviewer": "gang",

@@ -137,7 +137,10 @@
     },
     {
       "sourceId": "wikipedia-deep-blue-kasparov",
-      "quote": "Deep Blue defeated Garry Kasparov in May 1997."
+      "quote": "Deep Blue defeated Garry Kasparov in May 1997.",
+      "supports": [
+        "deep-blue-1997"
+      ]
     }
   ],
   "relatedEvents": [
@@ -147,7 +150,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -156,6 +159,11 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for Deep Blue vs Kasparov."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

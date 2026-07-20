@@ -139,7 +139,10 @@
     },
     {
       "sourceId": "wikipedia-alphafold",
-      "quote": "AlphaFold is an AI system developed by DeepMind."
+      "quote": "AlphaFold is an AI system developed by DeepMind.",
+      "supports": [
+        "alphafold-2020"
+      ]
     }
   ],
   "relatedEvents": [
@@ -149,7 +152,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -158,6 +161,11 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for AlphaFold protein folding breakthrough."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "correction",
+        "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
       }
     ],
     "reviewer": "gang",

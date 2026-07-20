@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 1,
-  "impactIndex": 6,
+  "impactIndex": 5,
   "consensusLevel": "broad",
   "controversy": true,
   "impacts": [
@@ -44,7 +44,7 @@
         "entire labor market"
       ],
       "timeframe": "long",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "nytimes-meta-layoffs-2026",
         "techcrunch-ai-layoffs-2026"
@@ -59,7 +59,7 @@
         "zhHans": "Meta 在 2026 年 5 月裁员 8,000 名员工（占员工总数 10%），并将另外 7,000 人调往 AI 重点岗位，这是 2026 年上半年总计 92,000 多人的 AI 驱动裁员浪潮的一部分。"
       },
       "claimType": "fact",
-      "evidenceGrade": "A",
+      "evidenceGrade": "C",
       "sourceIds": [
         "nytimes-meta-layoffs-2026"
       ]
@@ -85,7 +85,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-07-20",
     "reviewedAt": "2026-06-24",
     "publishedAt": "2026-06-24",
     "curator": "gang",
@@ -94,6 +94,11 @@
         "date": "2026-06-24",
         "changeType": "created",
         "summary": "Initial v2 entry for 2026 AI-driven layoffs wave."
+      },
+      {
+        "date": "2026-07-20",
+        "changeType": "score_changed",
+        "summary": "Recalibrated 2 evidence grade(s) to the v2.3 source-chain ceiling (claims[0] A->C, impacts[0] A->B); impactIndex 6->5."
       }
     ],
     "reviewer": "gang",
