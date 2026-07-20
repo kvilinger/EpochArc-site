@@ -1117,7 +1117,7 @@ const LANGUAGES = {
                       <h3>${copy.title}</h3>
                       <p class="summary">${copy.summary}</p>
                       <div class="timeline-card-action">
-                        <a class="source-title-link card-view-link" href="/events/${e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                        <a class="source-title-link card-view-link" href="/events/${e.slug || e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
@@ -1150,7 +1150,7 @@ const LANGUAGES = {
                       <h3>${copy.title}</h3>
                       <p class="summary">${copy.summary}</p>
                       <div class="timeline-card-action">
-                        <a class="source-title-link card-view-link" href="/events/${e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                        <a class="source-title-link card-view-link" href="/events/${e.slug || e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
@@ -1182,7 +1182,7 @@ const LANGUAGES = {
                     <div class="card-content">
                       <h3>${copy.title}</h3>
                       <div class="timeline-card-action">
-                        <a class="source-title-link card-view-link" href="/events/${e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                        <a class="source-title-link card-view-link" href="/events/${e.slug || e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
@@ -1259,7 +1259,7 @@ const LANGUAGES = {
                 <p style="color: var(--muted); font-size: 14px; margin-bottom: 16px;">
                   ${isChineseContent() ? '加载详情中…' : 'Loading details…'}
                 </p>
-                <a href="/events/${e.id}/" class="source-title-link" style="font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 4px;" onclick="event.stopPropagation()">
+                <a href="/events/${e.slug || e.id}/" class="source-title-link" style="font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 4px;" onclick="event.stopPropagation()">
                   <span>${isChineseContent() ? '直接查看完整事件页面 →' : 'View full event page →'}</span>
                 </a>
               </div>
@@ -1559,7 +1559,7 @@ const LANGUAGES = {
             </div>
             ${relatedSectionHTML}
             <div style="display: flex; align-items: center; justify-content: space-between; gap: var(--gap-md); margin-top: var(--gap-lg); border-top: 1px solid color-mix(in oklch, var(--border) 82%, transparent); padding-top: 12px; padding-bottom: 2px;">
-              <a class="source-title-link" href="/events/${e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+              <a class="source-title-link" href="/events/${e.slug || e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                 <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               </a>

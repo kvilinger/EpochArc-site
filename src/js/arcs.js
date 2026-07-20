@@ -20,9 +20,9 @@ document.addEventListener('click', function(e) {
 
   if (anchor) {
     e.preventDefault();
-    const id = anchor.getAttribute('data-event-id');
-    if (id) {
-      window.navigateToEvent(id);
+    const slug = anchor.getAttribute('data-event-slug') || anchor.getAttribute('data-event-id');
+    if (slug) {
+      window.navigateToEvent(slug);
     }
   }
 

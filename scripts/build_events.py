@@ -424,7 +424,7 @@ if os.path.exists(TEMPLATE_FILE):
                 p_summary_zh = html_escape(p['summary']['zhHans'])
                 p_summary_en = html_escape(p['summary']['en'])
                 cards.append(f'''
-                  <div class="related-card" onclick="navigateToEvent('{p['id']}')">
+                  <div class="related-card" onclick="navigateToEvent('{p.get('slug', p['id'])}')">
                     <div class="related-card-meta">
                       <span>{p['date']}</span>
                       <span class="sig-badge">L{p['significance']}</span>
@@ -456,7 +456,7 @@ if os.path.exists(TEMPLATE_FILE):
                 s_summary_zh = html_escape(s['summary']['zhHans'])
                 s_summary_en = html_escape(s['summary']['en'])
                 cards.append(f'''
-                  <div class="related-card" onclick="navigateToEvent('{s['id']}')">
+                  <div class="related-card" onclick="navigateToEvent('{s.get('slug', s['id'])}')">
                     <div class="related-card-meta">
                       <span>{s['date']}</span>
                       <span class="sig-badge">L{s['significance']}</span>
@@ -534,7 +534,7 @@ if os.path.exists(TEMPLATE_FILE):
                     ''')
                     
                     nodes_markup.append(f'''
-                      <g class="svg-node" onclick="navigateToEvent('{p['id']}')" onmouseenter="highlightLink('link-{p['id']}-{eid}', true); showEventTooltip(event, '{p['id']}')" onmouseleave="highlightLink('link-{p['id']}-{eid}', false); hideEventTooltip()">
+                      <g class="svg-node" onclick="navigateToEvent('{p.get('slug', p['id'])}')" onmouseenter="highlightLink('link-{p['id']}-{eid}', true); showEventTooltip(event, '{p['id']}')" onmouseleave="highlightLink('link-{p['id']}-{eid}', false); hideEventTooltip()">
                         <rect class="svg-node-rect" x="{precursor_x - 85}" y="{node_y - 22}" width="170" height="44" />
                         <text class="svg-node-title" x="{precursor_x}" y="{node_y - 2}" text-anchor="middle" data-zh="{p_title_zh}" data-en="{p_title_en}">{p_title_en}</text>
                         <text class="svg-node-date" x="{precursor_x}" y="{node_y + 12}" text-anchor="middle">{p['date']} · L{p['significance']}</text>
@@ -562,7 +562,7 @@ if os.path.exists(TEMPLATE_FILE):
                     ''')
                     
                     nodes_markup.append(f'''
-                      <g class="svg-node" onclick="navigateToEvent('{s['id']}')" onmouseenter="highlightLink('link-{eid}-{s['id']}', true); showEventTooltip(event, '{s['id']}')" onmouseleave="highlightLink('link-{eid}-{s['id']}', false); hideEventTooltip()">
+                      <g class="svg-node" onclick="navigateToEvent('{s.get('slug', s['id'])}')" onmouseenter="highlightLink('link-{eid}-{s['id']}', true); showEventTooltip(event, '{s['id']}')" onmouseleave="highlightLink('link-{eid}-{s['id']}', false); hideEventTooltip()">
                         <rect class="svg-node-rect" x="{successor_x - 85}" y="{node_y - 22}" width="170" height="44" />
                         <text class="svg-node-title" x="{successor_x}" y="{node_y - 2}" text-anchor="middle" data-zh="{s_title_zh}" data-en="{s_title_en}">{s_title_en}</text>
                         <text class="svg-node-date" x="{successor_x}" y="{node_y + 12}" text-anchor="middle">{s['date']} · L{s['significance']}</text>
@@ -678,7 +678,7 @@ if os.path.exists(DIST_DIR):
     print(f"✅ Synced static events to {DIST_DIR}/events/")
 
 # ─────────────────── Fallback 数据裁剪与回填 ───────────────────
-FALLBACK_KEEP_KEYS = {'id', 'title', 'date', 'datePrecision', 'summary',
+FALLBACK_KEEP_KEYS = {'id', 'slug', 'title', 'date', 'datePrecision', 'summary',
                       'categories', 'significance', 'impactIndex'}
 
 def trim_for_fallback(events):
@@ -787,3 +787,43 @@ def generate_sitemap(events):
     print("✅ Generated sitemap.xml with physical routes successfully")
 
 generate_sitemap(events)
+
+# ─────────────────── 旧事件 ID URL → canonical slug ───────────────────
+REDIRECTS_FILE = os.path.join(ROOT_DIR, '_redirects')
+REDIRECTS_START = '# BEGIN GENERATED EVENT ID REDIRECTS'
+REDIRECTS_END = '# END GENERATED EVENT ID REDIRECTS'
+
+def generate_event_id_redirects(events):
+    """Keep legacy ID-based event URLs working while canonical pages use slugs."""
+    existing = ''
+    if os.path.exists(REDIRECTS_FILE):
+        with open(REDIRECTS_FILE, 'r', encoding='utf-8') as fh:
+            existing = fh.read()
+
+    generated_block_pattern = re.compile(
+        rf'\n?{re.escape(REDIRECTS_START)}.*?{re.escape(REDIRECTS_END)}\n?',
+        flags=re.DOTALL,
+    )
+    base = generated_block_pattern.sub('\n', existing).rstrip()
+    rules = []
+    for event in sorted(events, key=lambda item: item['id']):
+        event_id = event['id']
+        slug = event.get('slug', event_id)
+        if slug == event_id:
+            continue
+        for prefix in ('', '/zh-hans'):
+            source = f'{prefix}/events/{event_id}'
+            target = f'{prefix}/events/{slug}/'
+            rules.extend([
+                f'{source} {target} 301',
+                f'{source}/ {target} 301',
+                f'{source}/index.html {target} 301',
+            ])
+
+    generated = '\n'.join([REDIRECTS_START, *rules, REDIRECTS_END])
+    content = f'{base}\n\n{generated}\n'
+    with open(REDIRECTS_FILE, 'w', encoding='utf-8') as fh:
+        fh.write(content)
+    print(f"✅ Generated {len(rules)} legacy event redirect rule(s)")
+
+generate_event_id_redirects(events)
