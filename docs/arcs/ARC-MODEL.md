@@ -248,7 +248,7 @@ HTML 结构必须包含：
 
   <main class="arc-detail-container">
     <!-- Back Link -->
-    <a href="../../arcs.html" class="back-link">...</a>
+    <a href="/arcs" class="back-link">...</a>
 
     <!-- Hero -->
     <div class="arc-hero">...</div>
@@ -311,7 +311,7 @@ HTML 结构必须包含：
 
 - [ ] 所有资源路径正确（`../../src/` 可用）
 - [ ] `data/arcs.json` 中已注册该 arc
-- [ ] `arcs.html` 中已添加卡片
+- [ ] 运行 `python3 scripts/build_arcs.py` 后，`/arcs` 列表页已生成对应卡片
 
 ---
 

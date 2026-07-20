@@ -36,7 +36,9 @@
       "sourceIds": [
         "reuters-anthropic-alibaba-2026",
         "cnbc-anthropic-alibaba-2026"
-      ]
+      ],
+      "id": "anthropic-alibaba-extraction-2026-claim-1",
+      "evidenceGrade": "B"
     },
     {
       "claimType": "limitation",
@@ -46,7 +48,9 @@
       },
       "sourceIds": [
         "reuters-anthropic-alibaba-2026"
-      ]
+      ],
+      "id": "anthropic-alibaba-extraction-2026-claim-2",
+      "evidenceGrade": "B"
     },
     {
       "claimType": "interpretation",
@@ -56,7 +60,9 @@
       },
       "sourceIds": [
         "cnbc-anthropic-alibaba-2026"
-      ]
+      ],
+      "id": "anthropic-alibaba-extraction-2026-claim-3",
+      "evidenceGrade": "B"
     }
   ],
   "relatedEvents": [
@@ -111,5 +117,17 @@
         "reuters-anthropic-alibaba-2026"
       ]
     }
-  ]
+  ],
+  "editorial": {
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "curator": "gang",
+    "changeLog": [
+      {
+        "date": "2026-06-26",
+        "changeType": "created",
+        "summary": "Initial event entry."
+      }
+    ]
+  }
 }

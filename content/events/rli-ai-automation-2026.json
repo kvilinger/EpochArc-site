@@ -41,9 +41,17 @@
         "en": "RLI trajectory (2.5% → 16.1% in 8 months) suggests economically significant labor automation is accelerating. If trend continues, significant impact on online freelance market and broader knowledge work within 1-3 years.",
         "zhHans": "RLI 轨迹（8 个月内 2.5% → 16.1%）表明经济显著的自劳动力自动化正在加速。如果趋势持续，1-3 年内将对在线自由职业市场和更广泛的知识工作产生重大影响。"
       },
-      "affectedGroups": ["online freelancers", "knowledge workers", "employers", "policymakers"],
+      "affectedGroups": [
+        "online freelancers",
+        "knowledge workers",
+        "employers",
+        "policymakers"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["cais-rli-report-2026", "import-ai-464-2026"]
+      "sourceIds": [
+        "cais-rli-report-2026",
+        "import-ai-464-2026"
+      ]
     },
     {
       "dimension": "paradigm_shift",
@@ -53,9 +61,16 @@
         "en": "Provides the first concrete, repeatable measurement of AI's growing economic capability. Shifts the AI-and-employment debate from theoretical speculation to data-driven assessment.",
         "zhHans": "提供了首个可重复的、对 AI 不断增长的经济能力的具体测量。将 AI 与就业的辩论从理论推测转向数据驱动的评估。"
       },
-      "affectedGroups": ["economists", "policymakers", "AI researchers", "general public"],
+      "affectedGroups": [
+        "economists",
+        "policymakers",
+        "AI researchers",
+        "general public"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["cais-rli-report-2026"]
+      "sourceIds": [
+        "cais-rli-report-2026"
+      ]
     },
     {
       "dimension": "capability_leap",
@@ -65,9 +80,15 @@
         "en": "Demonstrates that AI systems can now complete complex, multi-step, domain-specific freelance projects end-to-end. The capability extends well beyond text generation to encompass specialized professional work.",
         "zhHans": "展示了 AI 系统现在可以端到端完成复杂的、多步骤的、特定领域的自由职业项目。该能力远远超出文本生成，涵盖了专业化的专业工作。"
       },
-      "affectedGroups": ["AI developers", "professional services", "creative industries"],
+      "affectedGroups": [
+        "AI developers",
+        "professional services",
+        "creative industries"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["cais-rli-report-2026"]
+      "sourceIds": [
+        "cais-rli-report-2026"
+      ]
     }
   ],
   "claims": [
@@ -76,43 +97,71 @@
       "text": {
         "en": "AI systems' success rate on the Remote Labor Index rose from 2.5% (October 2025) to 16.1% (July 2026), according to CAIS and Scale Labs.",
         "zhHans": "据 CAIS 和 Scale Labs 数据，AI 系统在远程劳动指数上的成功率从 2.5%（2025年10月）升至 16.1%（2026年7月）。"
-      }
+      },
+      "id": "rli-ai-automation-2026-claim-1",
+      "sourceIds": [
+        "cais-rli-report-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "fact",
       "text": {
         "en": "Fable 5 achieved 16.1%, Claude Opus 4.8 achieved 8.3%, and GPT-5.5 achieved 6.3% on the RLI benchmark.",
         "zhHans": "Fable 5 在 RLI 基准上达到 16.1%，Claude Opus 4.8 达到 8.3%，GPT-5.5 达到 6.3%。"
-      }
+      },
+      "id": "rli-ai-automation-2026-claim-2",
+      "sourceIds": [
+        "cais-rli-report-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "interpretation",
       "text": {
         "en": "The frontier has more than quadrupled in under eight months, representing a concrete signal of rapidly advancing economically capable AI agents.",
         "zhHans": "前沿能力在不到八个月内增长了四倍多，代表着经济能力不断增强的 AI 智能体快速进步的具体信号。"
-      }
+      },
+      "id": "rli-ai-automation-2026-claim-3",
+      "sourceIds": [
+        "cais-rli-report-2026",
+        "import-ai-464-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "limitation",
       "text": {
-        "en": "Critics argue that 16.1% remains low and many tasks require specialized human judgment that AI systems may not achieve for years, if ever. The test also does not account for new task creation that often accompanies automation.",
-        "zhHans": "批评者认为 16.1% 仍然很低，许多任务需要人类专业判断，AI 系统可能多年甚至永远无法达到。该测试也未考虑通常伴随自动化而来的新任务创造。"
-      }
+        "en": "A 16.1% success rate means the tested systems still failed most benchmark tasks. The result measures a selected set of remote-labor tasks and does not establish economy-wide job automation.",
+        "zhHans": "16.1% 的成功率意味着受测系统仍未完成大多数基准任务。该结果衡量的是一组选定的远程劳动任务，不能据此认定全经济范围的工作自动化已经实现。"
+      },
+      "id": "rli-ai-automation-2026-claim-4",
+      "sourceIds": [
+        "cais-rli-report-2026"
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "sources": [
     {
       "sourceId": "cais-rli-report-2026",
-      "supports": ["rli-ai-automation-2026"],
+      "supports": [
+        "rli-ai-automation-2026"
+      ],
       "quote": "Remote Labor Index update: 2.5% to 16.1%, frontier more than quadrupled in under eight months."
     },
     {
       "sourceId": "import-ai-464-2026",
-      "supports": ["rli-ai-automation-2026"],
+      "supports": [
+        "rli-ai-automation-2026"
+      ],
       "quote": "A significant increase in digital labor automation detected."
     }
   ],
-  "relatedEvents": ["ai-layoffs-wave-2026", "vibecoding-2025"],
+  "relatedEvents": [
+    "ai-layoffs-wave-2026",
+    "vibecoding-2025"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-07-08",

@@ -179,7 +179,7 @@ else:
             cat_badges += f'<span class="category-badge {c}" data-zh="{html_escape(cat_zh)}" data-en="{html_escape(cat_en)}">{html_escape(cat_en)}</span>\n'
 
         card_items.append(f'''
-          <a class="arc-card" href="arcs/{aid}/index.html">
+          <a class="arc-card" href="/arcs/{aid}/">
             <h3 class="arc-card-title" data-zh="{html_escape(title_zh)}" data-en="{html_escape(title_en)}">{html_escape(title_en)}</h3>
             <p class="arc-card-subtitle" data-zh="{html_escape(subtitle_zh)}" data-en="{html_escape(subtitle_en)}">{html_escape(subtitle_en)}</p>
             <div class="arc-card-meta">
@@ -279,8 +279,8 @@ else:
                 event_cards.append(f'''
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT change 'arc-anchor-event' class name or its children structure. -->
                   <!-- It must strictly match CSS styling rules in arcs.css. -->
-                  <!-- Make sure to link to events/{ev_id}/index.html detail pages directly. -->
-                  <a class="arc-anchor-event" data-event-id="{ev_id}" href="../../events/{ev_id}/index.html">
+                  <!-- Link directly to the canonical event directory URL. -->
+                  <a class="arc-anchor-event" data-event-id="{ev_id}" href="/events/{ev_id}/">
                     <span class="sig-dot l{ev_sig}"></span>
                     <span class="event-date">{ev_date}</span>
                     <span class="event-name" data-zh="{html_escape(ev_title_zh)}" data-en="{html_escape(ev_title_en)}">{html_escape(ev_title_en)}</span>
@@ -319,7 +319,7 @@ else:
                 ra_subtitle_en = ra['subtitle']['en']
                 ra_subtitle_zh = ra['subtitle']['zhHans']
                 related_cards.append(f'''
-                  <a class="related-arc-card" href="../{ra_id}/index.html">
+                  <a class="related-arc-card" href="/arcs/{ra_id}/">
                     <h4 class="related-arc-title" data-zh="{html_escape(ra_title_zh)}" data-en="{html_escape(ra_title_en)}">{html_escape(ra_title_en)}</h4>
                     <p class="related-arc-subtitle" data-zh="{html_escape(ra_subtitle_zh)}" data-en="{html_escape(ra_subtitle_en)}">{html_escape(ra_subtitle_en)}</p>
                   </a>
@@ -422,11 +422,14 @@ def append_arcs_to_sitemap(arcs):
     with open(sitemap_path, 'r', encoding='utf-8') as fh:
         content = fh.read()
 
+    # Normalize the legacy list URL when this script is run independently.
+    content = content.replace('https://epoch-arc.com/arcs.html', 'https://epoch-arc.com/arcs')
+
     # 构建要插入的 URL 条目
     new_urls = []
     # 列表页
-    list_url = f'  <url><loc>https://epoch-arc.com/arcs.html</loc><lastmod>{today}</lastmod></url>'
-    if 'epoch-arc.com/arcs.html' not in content:
+    list_url = f'  <url><loc>https://epoch-arc.com/arcs</loc><lastmod>{today}</lastmod></url>'
+    if '<loc>https://epoch-arc.com/arcs</loc>' not in content:
         new_urls.append(list_url)
 
     for a in arcs:

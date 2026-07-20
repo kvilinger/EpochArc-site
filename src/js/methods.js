@@ -123,7 +123,7 @@ document.addEventListener('click', function(e) {
       const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
       window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
     } else {
-      window.location.href = '/arcs.html';
+      window.location.href = '/arcs';
     }
   }
 });

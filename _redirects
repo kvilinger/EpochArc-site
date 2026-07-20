@@ -1,5 +1,5 @@
-# www → root redirect
-https://www.epoch-arc.com/* https://epoch-arc.com/:splat 301
+# Host-level www → apex redirects must be configured with a Cloudflare
+# Single Redirect. Pages _redirects rules only match paths.
 
 # Canonical
 /index.html / 301

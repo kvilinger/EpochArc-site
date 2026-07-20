@@ -41,9 +41,16 @@
         "en": "First full test of the U.S. government's voluntary frontier AI pre-release framework. Sets precedent for how future advanced model releases will be handled — a lighter-touch alternative to EU-style mandatory compliance.",
         "zhHans": "美国政府自愿前沿 AI 预发布框架的首次全面测试。为未来高级模型发布的处理方式设立了先例——一种比欧盟式强制合规更轻量的替代方案。"
       },
-      "affectedGroups": ["AI developers", "government regulators", "AI safety researchers", "enterprise users"],
+      "affectedGroups": [
+        "AI developers",
+        "government regulators",
+        "AI safety researchers",
+        "enterprise users"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["reuters-gpt56-approval-2026"]
+      "sourceIds": [
+        "reuters-gpt56-approval-2026"
+      ]
     },
     {
       "dimension": "access_democratization",
@@ -53,9 +60,15 @@
         "en": "GPT-5.6 Sol, Terra, and Luna become available to the general public and developers, ending a two-week period where only ~20 government-vetted partners had access.",
         "zhHans": "GPT-5.6 Sol、Terra 和 Luna 向公众和开发者开放，结束了仅约 20 个政府审核合作伙伴拥有访问权限的两周限制期。"
       },
-      "affectedGroups": ["developers", "ChatGPT users", "API customers"],
+      "affectedGroups": [
+        "developers",
+        "ChatGPT users",
+        "API customers"
+      ],
       "timeframe": "short",
-      "sourceIds": ["reuters-gpt56-approval-2026"]
+      "sourceIds": [
+        "reuters-gpt56-approval-2026"
+      ]
     },
     {
       "dimension": "risk_creation",
@@ -65,9 +78,13 @@
         "en": "Concerns remain about the voluntary nature of the framework — critics argue that without mandatory compliance requirements, dangerous capabilities could still be released prematurely if companies choose not to participate.",
         "zhHans": "对该框架的自愿性质仍有担忧——批评者认为，如果没有强制合规要求，若公司选择不参与，危险能力仍可能被过早释放。"
       },
-      "affectedGroups": ["general public"],
+      "affectedGroups": [
+        "general public"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["reuters-gpt56-approval-2026"]
+      "sourceIds": [
+        "reuters-gpt56-approval-2026"
+      ]
     }
   ],
   "claims": [
@@ -76,24 +93,38 @@
       "text": {
         "en": "The U.S. Department of Commerce approved broad launch of OpenAI's GPT-5.6 on July 8, 2026, after testing by the Center for AI Standards and Innovation.",
         "zhHans": "美国商务部于2026年7月8日批准 OpenAI 广泛发布 GPT-5.6，此前 AI 标准与创新中心进行了测试。"
-      }
+      },
+      "id": "gpt-5-6-broad-launch-2026-claim-1",
+      "sourceIds": [
+        "reuters-gpt56-approval-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "fact",
       "text": {
         "en": "The model was initially restricted on June 26 at the U.S. government's request, limiting access to ~20 government-approved partners.",
         "zhHans": "该模型于6月26日应美国政府要求受限，仅限约20个政府批准的合作伙伴访问。"
-      }
+      },
+      "id": "gpt-5-6-broad-launch-2026-claim-2",
+      "sourceIds": [
+        "reuters-gpt56-approval-2026"
+      ],
+      "evidenceGrade": "B"
     }
   ],
   "sources": [
     {
       "sourceId": "reuters-gpt56-approval-2026",
-      "supports": ["gpt-5-6-broad-launch-2026"],
+      "supports": [
+        "gpt-5-6-broad-launch-2026"
+      ],
       "quote": "The U.S. Department of Commerce has approved a broad launch of OpenAI's advanced GPT-5.6 model following additional government testing."
     }
   ],
-  "relatedEvents": ["gpt-5-6-limited-release-2026"],
+  "relatedEvents": [
+    "gpt-5-6-limited-release-2026"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-07-08",

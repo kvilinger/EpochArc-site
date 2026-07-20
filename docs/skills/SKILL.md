@@ -109,7 +109,7 @@
 
 1. `content/events/` 下提交 JSON
 2. 更新 `data/sources.json`（如有新来源）
-3. 运行 `scripts/build_events.py` 生成 `data/events.json`
+3. 运行 `python3 scripts/build_events.py`，校验并生成 `data/events.json`
 4. 刷新页面验证渲染
 
 ---
@@ -125,8 +125,10 @@
 | `impactIndex` | 0-10，公式见 [DATA-MODEL.md](../data/DATA-MODEL.md) |
 | `consensusLevel` | broad / debated / emerging |
 | `controversy` | boolean，有则必须配 claims[limitation] |
+| `claims` | 每条必须包含唯一 `id`、双语 `text`、`claimType`、`evidenceGrade` 和非空 `sourceIds`；不得使用旧字段别名 |
 | `sources` | 只存 sourceId，不存完整 URL（查 data/sources.json） |
-| `relatedEvents` | 双向引用，脚本会校验 |
+| `editorial` | 必须包含 `createdAt`、`updatedAt`；审核日期使用 `reviewedAt`，不使用旧字段 `lastReviewed` |
+| `relatedEvents` | 源文件可只登记一侧；构建输出自动补齐双向关系，并拒绝未知 ID、自引用和重复 ID |
 | `LocalizedText` | 必须同时有 `en` 和 `zhHans` |
 
 完整类型定义见 [DATA-MODEL.md](../data/DATA-MODEL.md) `## 2. 核心类型定义`。
@@ -135,7 +137,7 @@
 
 ## 标签系统
 
-展示标签统一从 `data/labels.json` 加载，前端 HTML 不硬编码任何映射。分类 `category` 枚举值的语义轴见 labels.json，目前有 6 个分类。
+展示标签统一从 `data/labels.json` 加载，前端 HTML 不硬编码任何映射。`categories[]` 的枚举值语义见 labels.json，目前有 6 个分类。
 
 具体定义和判定标准见 [DATA-MODEL.md](../data/DATA-MODEL.md) `## 2.2`。
 

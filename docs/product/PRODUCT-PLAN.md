@@ -135,6 +135,8 @@ functions/
    - 必填字段。
    - 来源 URL 不为空。
    - L2/L3 来源数量达标。
+   - Claims 字段、证据等级和来源绑定完整。
+   - Editorial 至少包含 `createdAt` 与 `updatedAt`。
    - Possible Directions 必须具备事件锚点、observed signals、counterSignal 与共识状态。
    - 多语言字段完整性。
 5. 构建生成 `data/events.json`、`data/forecasts.json`、`data/sources.json`。

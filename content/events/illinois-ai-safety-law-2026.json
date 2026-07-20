@@ -41,9 +41,17 @@
         "en": "First US state to mandate independent third-party AI safety audits. Sets a template for other states and potentially federal regulation. Creates a compliance infrastructure (auditor qualification standards, reporting mechanisms) that other jurisdictions can adopt.",
         "zhHans": "首个要求独立第三方 AI 安全审计的美国州。为其他州和潜在的联邦监管设立了模板。创建了其他司法管辖区可以采用的合规基础设施（审计师资格标准、报告机制）。"
       },
-      "affectedGroups": ["AI developers", "state regulators", "AI safety auditors", "general public"],
+      "affectedGroups": [
+        "AI developers",
+        "state regulators",
+        "AI safety auditors",
+        "general public"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["chicagotribune-illinois-ai-law-2026", "gov-pritzker-ai-law-announcement-2026"]
+      "sourceIds": [
+        "chicagotribune-illinois-ai-law-2026",
+        "gov-pritzker-ai-law-announcement-2026"
+      ]
     },
     {
       "dimension": "economic_disruption",
@@ -53,9 +61,13 @@
         "en": "Compliance costs for covered companies: independent audits, safety incident reporting systems, and potential fines. Estimated impact on R&D expenditure for frontier labs.",
         "zhHans": "受覆盖公司的合规成本：独立审计、安全事故报告系统以及可能的罚款。对前沿实验室研发支出的预估影响。"
       },
-      "affectedGroups": ["AI developers"],
+      "affectedGroups": [
+        "AI developers"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["chicagotribune-illinois-ai-law-2026"]
+      "sourceIds": [
+        "chicagotribune-illinois-ai-law-2026"
+      ]
     },
     {
       "dimension": "risk_creation",
@@ -65,9 +77,14 @@
         "en": "Whistleblower protections and incident reporting requirements may surface safety issues that would otherwise remain hidden, improving overall industry safety posture.",
         "zhHans": "举报人保护和事故报告要求可能暴露原本会被隐藏的安全问题，改善整体行业安全态势。"
       },
-      "affectedGroups": ["general public", "AI safety researchers"],
+      "affectedGroups": [
+        "general public",
+        "AI safety researchers"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["gov-pritzker-ai-law-announcement-2026"]
+      "sourceIds": [
+        "gov-pritzker-ai-law-announcement-2026"
+      ]
     }
   ],
   "claims": [
@@ -76,41 +93,70 @@
       "text": {
         "en": "Illinois Governor JB Pritzker signed the AI Safety Measures Act (SB 315) on July 6, 2026, requiring independent third-party safety audits for AI developers with >$500M annual revenue.",
         "zhHans": "伊利诺伊州长 JB Pritzker 于2026年7月6日签署了 AI 安全措施法案（SB 315），要求年收入超过 5 亿美元的 AI 开发者进行独立第三方安全审计。"
-      }
+      },
+      "id": "illinois-ai-safety-law-2026-claim-1",
+      "sourceIds": [
+        "gov-pritzker-ai-law-announcement-2026",
+        "chicagotribune-illinois-ai-law-2026",
+        "capitolnews-illinois-ai-law-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "fact",
       "text": {
         "en": "The law requires covered companies to report critical safety incidents to the state within 72 hours and establishes fines of up to $1M (first violation) and $3M (subsequent).",
         "zhHans": "该法律要求受覆盖公司在 72 小时内向州政府报告严重安全事故，并设定最高 100 万美元（首次违规）和 300 万美元（后续违规）的罚款。"
-      }
+      },
+      "id": "illinois-ai-safety-law-2026-claim-2",
+      "sourceIds": [
+        "chicagotribune-illinois-ai-law-2026",
+        "capitolnews-illinois-ai-law-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "interpretation",
       "text": {
         "en": "The law represents the most prescriptive state-level AI regulation in the US, filling a void left by federal inaction.",
         "zhHans": "该法律代表了美国最精细的州级 AI 监管，填补了联邦不作为留下的空白。"
-      }
+      },
+      "id": "illinois-ai-safety-law-2026-claim-3",
+      "sourceIds": [
+        "chicagotribune-illinois-ai-law-2026",
+        "capitolnews-illinois-ai-law-2026"
+      ],
+      "evidenceGrade": "B"
     }
   ],
   "sources": [
     {
       "sourceId": "chicagotribune-illinois-ai-law-2026",
-      "supports": ["illinois-ai-safety-law-2026"],
+      "supports": [
+        "illinois-ai-safety-law-2026"
+      ],
       "quote": "Illinois will be the first state to require independent audits of large artificial intelligence developers' safety practices."
     },
     {
       "sourceId": "gov-pritzker-ai-law-announcement-2026",
-      "supports": ["illinois-ai-safety-law-2026"],
+      "supports": [
+        "illinois-ai-safety-law-2026"
+      ],
       "quote": "Illinois becomes the first state in the nation to require regular independent third-party safety audits."
     },
     {
       "sourceId": "capitolnews-illinois-ai-law-2026",
-      "supports": ["illinois-ai-safety-law-2026"],
+      "supports": [
+        "illinois-ai-safety-law-2026"
+      ],
       "quote": "Pritzker signs landmark AI regulation bill that aims to mitigate risks."
     }
   ],
-  "relatedEvents": ["eu-ai-act-2024", "eu-ai-act-enforcement-2025", "eu-ai-act-proposal-2021"],
+  "relatedEvents": [
+    "eu-ai-act-2024",
+    "eu-ai-act-enforcement-2025",
+    "eu-ai-act-proposal-2021"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-07-08",

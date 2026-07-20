@@ -87,26 +87,26 @@
   "claims": [
     {
       "id": "resnet-imagenet-first",
-      "statement": {
+      "text": {
         "en": "ResNet won 1st place in ILSVRC 2015 classification with 3.57% top-5 error.",
         "zhHans": "ResNet 以 3.57% top-5 错误率赢得 ILSVRC 2015 图像分类第一名。"
       },
-      "type": "fact",
-      "confidence": "confirmed",
-      "sources": [
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
         "arxiv-1512.03385",
         "wikipedia-resnet"
       ]
     },
     {
       "id": "resnet-152-layer",
-      "statement": {
+      "text": {
         "en": "ResNet-152 is 8× deeper than VGG nets while having lower computational complexity.",
         "zhHans": "ResNet-152 比 VGG 深 8 倍，但计算复杂度更低。"
       },
-      "type": "fact",
-      "confidence": "confirmed",
-      "sources": [
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
         "arxiv-1512.03385"
       ]
     }
@@ -135,11 +135,21 @@
     "ai-native-discovery-pipelines"
   ],
   "editorial": {
+    "createdAt": "2026-06-29",
+    "updatedAt": "2026-06-29",
+    "reviewedAt": "2026-06-29",
+    "curator": "editorial-agent",
+    "reviewer": "editorial-agent",
+    "changeLog": [
+      {
+        "date": "2026-06-29",
+        "changeType": "created",
+        "summary": "Added during the 2026 historical gap-fill review."
+      }
+    ],
     "curatorNote": {
       "en": "Added during 2026 historical gap fill. ResNet is foundational to the deep learning era.",
       "zhHans": "2026 年历史空白补全时添加。ResNet 是深度学习时代的基础性工作。"
-    },
-    "lastReviewed": "2026-06-29",
-    "reviewer": "editorial-agent"
+    }
   }
 }

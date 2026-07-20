@@ -99,6 +99,15 @@ const LANGUAGES = {
       };
     }
 
+    function eventIdFromLocation() {
+      const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+      return hashParams.get('event') || new URLSearchParams(window.location.search).get('event');
+    }
+
+    function eventStateUrl(id) {
+      return `${window.location.pathname}#event=${encodeURIComponent(id)}`;
+    }
+
     /* ─── State Management ──────────────────────────────────────────── */
     const READER_PULSE_API = '/api/reader-pulse';
     const SELECTED_FORECAST_STORAGE_KEY = 'ea-selected-forecast-v1';
@@ -538,7 +547,7 @@ const LANGUAGES = {
         <div class="status-panel">
           <strong>${title}</strong>
           <span>${body}</span>
-          ${linkText ? `<div style="margin-top: 8px;"><a class="status-link" href="methods.html">${linkText}</a></div>` : ''}
+          ${linkText ? `<div style="margin-top: 8px;"><a class="status-link" href="/methods">${linkText}</a></div>` : ''}
         </div>
       `;
     }
@@ -1085,7 +1094,7 @@ const LANGUAGES = {
                       <h3>${copy.title}</h3>
                       <p class="summary">${copy.summary}</p>
                       <div class="timeline-card-action">
-                        <a class="source-title-link card-view-link" href="events/${e.id}/index.html" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                        <a class="source-title-link card-view-link" href="/events/${e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
@@ -1118,7 +1127,7 @@ const LANGUAGES = {
                       <h3>${copy.title}</h3>
                       <p class="summary">${copy.summary}</p>
                       <div class="timeline-card-action">
-                        <a class="source-title-link card-view-link" href="events/${e.id}/index.html" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                        <a class="source-title-link card-view-link" href="/events/${e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
@@ -1150,7 +1159,7 @@ const LANGUAGES = {
                     <div class="card-content">
                       <h3>${copy.title}</h3>
                       <div class="timeline-card-action">
-                        <a class="source-title-link card-view-link" href="events/${e.id}/index.html" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+                        <a class="source-title-link card-view-link" href="/events/${e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
@@ -1227,7 +1236,7 @@ const LANGUAGES = {
                 <p style="color: var(--muted); font-size: 14px; margin-bottom: 16px;">
                   ${isChineseContent() ? '加载详情中…' : 'Loading details…'}
                 </p>
-                <a href="events/${e.id}/index.html" class="source-title-link" style="font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 4px;" onclick="event.stopPropagation()">
+                <a href="/events/${e.id}/" class="source-title-link" style="font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 4px;" onclick="event.stopPropagation()">
                   <span>${isChineseContent() ? '直接查看完整事件页面 →' : 'View full event page →'}</span>
                 </a>
               </div>
@@ -1527,7 +1536,7 @@ const LANGUAGES = {
             </div>
             ${relatedSectionHTML}
             <div style="display: flex; align-items: center; justify-content: space-between; gap: var(--gap-md); margin-top: var(--gap-lg); border-top: 1px solid color-mix(in oklch, var(--border) 82%, transparent); padding-top: 12px; padding-bottom: 2px;">
-              <a class="source-title-link" href="events/${e.id}/index.html" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
+              <a class="source-title-link" href="/events/${e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                 <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(-0.5px);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               </a>
@@ -1560,7 +1569,7 @@ const LANGUAGES = {
         }
       }, 120);
 
-      history.pushState(null, '', `?event=${id}`);
+      history.pushState(null, '', eventStateUrl(id));
     };
 
     window.highlightLink = function(linkId, doHighlight) {
@@ -1634,7 +1643,7 @@ const LANGUAGES = {
       renderTimelineWithTransition();
       
       if (shouldPushState) {
-        history.pushState(null, '', `?event=${e.id}`);
+        history.pushState(null, '', eventStateUrl(e.id));
       }
     };
 
@@ -1652,7 +1661,7 @@ const LANGUAGES = {
       renderTimelineWithTransition();
 
       if (shouldPushState) {
-        history.pushState(null, '', state.openEventIds.has(id) ? `?event=${e.id}` : window.location.pathname);
+        history.pushState(null, '', state.openEventIds.has(id) ? eventStateUrl(e.id) : window.location.pathname);
       }
     };
 
@@ -1710,8 +1719,7 @@ const LANGUAGES = {
 
     /* ─── Browser Back-button (History) Integration ─────────────────── */
     window.addEventListener('popstate', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const eventId = urlParams.get('event');
+      const eventId = eventIdFromLocation();
       state.openEventIds.clear();
       if (eventId) state.openEventIds.add(eventId);
       renderTimelineWithTransition();
@@ -1820,9 +1828,13 @@ const LANGUAGES = {
 
     /* ─── Initialization ────────────────────────────────────────────── */
     async function init() {
-      // Check query param for initial page load
-      const urlParams = new URLSearchParams(window.location.search);
-      const eventId = urlParams.get('event');
+      // Prefer fragment-based UI state so event deep links do not create
+      // separate crawlable query URLs. Keep legacy ?event= links working.
+      const eventId = eventIdFromLocation();
+      const legacyEventId = new URLSearchParams(window.location.search).get('event');
+      if (legacyEventId) {
+        history.replaceState(null, '', eventStateUrl(legacyEventId));
+      }
       const readerPulseLoaded = await loadReaderPulseStateFromApi();
       if (!readerPulseLoaded) {
         syncLocalReaderPulseState(state.selectedForecastId);
@@ -1870,21 +1882,21 @@ const LANGUAGES = {
             const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
             window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
           } else {
-            window.location.href = '/arcs.html';
+            window.location.href = '/arcs';
           }
         }
 
         if (detailLink) {
           const href = detailLink.getAttribute('href');
-          if (href && href.startsWith('events/')) {
+          const eventMatch = href?.match(/^\/?events\/([^/]+)\/?$/);
+          if (eventMatch) {
             e.preventDefault();
-            const parts = href.split('/');
-            const id = parts[1];
+            const id = eventMatch[1];
             if (id) {
               if (window.location.protocol === 'file:') {
                 window.location.href = `events/${id}/index.html`;
               } else {
-                window.location.href = `/events/${id}/index.html`;
+                window.location.href = `/events/${id}/`;
               }
             }
           }

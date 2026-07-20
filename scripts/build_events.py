@@ -14,6 +14,7 @@ def html_escape(text):
 EVENTS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'content', 'events')
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'events.json')
 LABELS_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'labels.json')
+SOURCES_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'sources.json')
 
 events = []
 for f in sorted(glob.glob(os.path.join(EVENTS_DIR, '*.json'))):
@@ -23,11 +24,20 @@ for f in sorted(glob.glob(os.path.join(EVENTS_DIR, '*.json'))):
 # Load labels for validation
 with open(LABELS_FILE) as fh:
     labels = json.load(fh)
+with open(SOURCES_FILE) as fh:
+    source_records = json.load(fh)
 VALID_CATEGORIES = set(labels['category'].keys())
 VALID_DIMENSIONS = set(labels['impactDimension'].keys())
 VALID_TIMEFRAMES = set(labels['timeframe'].keys())
 VALID_CONSENSUS = set(labels['consensus'].keys())
 VALID_DIRECTIONS = {'positive', 'negative', 'mixed', 'neutral'}
+VALID_CLAIM_TYPES = {'fact', 'impact', 'limitation', 'interpretation'}
+VALID_EVIDENCE_GRADES = {'A', 'B', 'C', 'D'}
+VALID_CHANGE_TYPES = {
+    'created', 'source_added', 'score_changed', 'translation_changed',
+    'forecast_resolved', 'correction', 'archived'
+}
+VALID_SOURCE_IDS = {source['id'] for source in source_records}
 
 errors = []
 warnings = []
@@ -42,7 +52,7 @@ for e in events:
     eid = e['id']
     
     # 2. Required fields
-    for field in ['id','date','datePrecision','title','summary','narrative','categories','significance','impactIndex','impacts','sources']:
+    for field in ['id','date','datePrecision','title','summary','narrative','categories','significance','impactIndex','impacts','claims','sources','editorial']:
         if field not in e:
             errors.append(f"{eid}: missing required field '{field}'")
     
@@ -103,6 +113,8 @@ for e in events:
         for i, src in enumerate(sources):
             if not isinstance(src, dict) or 'sourceId' not in src:
                 errors.append(f"{eid}.sources[{i}]: missing sourceId")
+            elif src['sourceId'] not in VALID_SOURCE_IDS:
+                errors.append(f"{eid}.sources[{i}]: unknown sourceId '{src['sourceId']}'")
     
     # 9. LocalizedText for title, summary, narrative
     for field in ['title','summary','narrative']:
@@ -114,16 +126,116 @@ for e in events:
                 if lang not in val or not val[lang]:
                     errors.append(f"{eid}.{field}: missing '{lang}' translation")
 
-# 10. RelatedEvents bidirectional check (warning only)
-for e in events:
-    for rel_id in e.get('relatedEvents', []):
-        if rel_id not in ids:
-            pass  # future events may not exist yet
-        else:
-            rel_event = next(ev for ev in events if ev['id'] == rel_id)
-            if e['id'] not in rel_event.get('relatedEvents', []):
-                if e['id'].split('-')[-1] > rel_id.split('-')[-1]:  # only warn for newer referencing older
-                    warnings.append(f"{e['id']} → {rel_id} (no back-reference)")
+    # 10. Claims
+    claims = e.get('claims', [])
+    if not isinstance(claims, list) or not claims:
+        errors.append(f"{eid}: claims must be a non-empty array")
+    else:
+        claim_ids = set()
+        for i, claim in enumerate(claims):
+            if not isinstance(claim, dict):
+                errors.append(f"{eid}.claims[{i}]: must be an object")
+                continue
+            for field in ['id', 'text', 'claimType', 'evidenceGrade', 'sourceIds']:
+                if field not in claim:
+                    errors.append(f"{eid}.claims[{i}]: missing required field '{field}'")
+            claim_id = claim.get('id')
+            if not isinstance(claim_id, str) or not claim_id.strip():
+                errors.append(f"{eid}.claims[{i}].id: must be a non-empty string")
+            elif claim_id in claim_ids:
+                errors.append(f"{eid}: duplicate claim ID '{claim_id}'")
+            else:
+                claim_ids.add(claim_id)
+            claim_text = claim.get('text')
+            if not isinstance(claim_text, dict):
+                errors.append(f"{eid}.claims[{i}].text: must contain localized text")
+            else:
+                for lang in ['en', 'zhHans']:
+                    if not isinstance(claim_text.get(lang), str) or not claim_text[lang].strip():
+                        errors.append(f"{eid}.claims[{i}].text: missing '{lang}' translation")
+            if claim.get('claimType') not in VALID_CLAIM_TYPES:
+                errors.append(
+                    f"{eid}.claims[{i}]: unknown claimType '{claim.get('claimType')}'. "
+                    f"Valid: {sorted(VALID_CLAIM_TYPES)}"
+                )
+            if claim.get('evidenceGrade') not in VALID_EVIDENCE_GRADES:
+                errors.append(
+                    f"{eid}.claims[{i}]: invalid evidenceGrade '{claim.get('evidenceGrade')}'. "
+                    f"Valid: {sorted(VALID_EVIDENCE_GRADES)}"
+                )
+            source_ids = claim.get('sourceIds')
+            if not isinstance(source_ids, list):
+                errors.append(f"{eid}.claims[{i}].sourceIds: must be an array")
+            elif any(not isinstance(source_id, str) or not source_id.strip() for source_id in source_ids):
+                errors.append(f"{eid}.claims[{i}].sourceIds: entries must be non-empty strings")
+            elif not source_ids:
+                errors.append(f"{eid}.claims[{i}].sourceIds: must contain at least one source")
+            else:
+                for source_id in source_ids:
+                    if source_id not in VALID_SOURCE_IDS:
+                        errors.append(
+                            f"{eid}.claims[{i}].sourceIds: unknown sourceId '{source_id}'"
+                        )
+
+    # 11. Editorial metadata
+    editorial = e.get('editorial')
+    if not isinstance(editorial, dict):
+        errors.append(f"{eid}: editorial must be an object")
+    else:
+        for field in ['createdAt', 'updatedAt']:
+            if not isinstance(editorial.get(field), str) or not editorial[field].strip():
+                errors.append(f"{eid}.editorial: missing or empty '{field}'")
+        for field in ['reviewedAt', 'publishedAt', 'lastSourceCheckAt', 'curator', 'reviewer']:
+            if field in editorial and (
+                not isinstance(editorial[field], str) or not editorial[field].strip()
+            ):
+                errors.append(f"{eid}.editorial.{field}: must be a non-empty string")
+        curator_note = editorial.get('curatorNote')
+        if curator_note is not None:
+            if not isinstance(curator_note, dict):
+                errors.append(f"{eid}.editorial.curatorNote: must contain localized text")
+            else:
+                for lang in ['en', 'zhHans']:
+                    if not isinstance(curator_note.get(lang), str) or not curator_note[lang].strip():
+                        errors.append(f"{eid}.editorial.curatorNote: missing '{lang}' translation")
+        change_log = editorial.get('changeLog')
+        if change_log is not None:
+            if not isinstance(change_log, list):
+                errors.append(f"{eid}.editorial.changeLog: must be an array")
+            else:
+                for i, entry in enumerate(change_log):
+                    if not isinstance(entry, dict):
+                        errors.append(f"{eid}.editorial.changeLog[{i}]: must be an object")
+                        continue
+                    for field in ['date', 'changeType', 'summary']:
+                        if not isinstance(entry.get(field), str) or not entry[field].strip():
+                            errors.append(
+                                f"{eid}.editorial.changeLog[{i}]: missing or empty '{field}'"
+                            )
+                    if entry.get('changeType') not in VALID_CHANGE_TYPES:
+                        errors.append(
+                            f"{eid}.editorial.changeLog[{i}]: invalid changeType "
+                            f"'{entry.get('changeType')}'"
+                        )
+
+    # 12. Related events: source files may declare one side; targets must be valid.
+    related_events = e.get('relatedEvents', [])
+    if not isinstance(related_events, list):
+        errors.append(f"{eid}.relatedEvents: must be an array")
+    else:
+        seen_related = set()
+        for i, rel_id in enumerate(related_events):
+            if not isinstance(rel_id, str) or not rel_id.strip():
+                errors.append(f"{eid}.relatedEvents[{i}]: must be a non-empty string")
+                continue
+            if rel_id == eid:
+                errors.append(f"{eid}.relatedEvents[{i}]: must not reference itself")
+            if rel_id in seen_related:
+                errors.append(f"{eid}.relatedEvents: duplicate event ID '{rel_id}'")
+            else:
+                seen_related.add(rel_id)
+            if rel_id not in ids:
+                errors.append(f"{eid}.relatedEvents[{i}]: unknown event ID '{rel_id}'")
 
 # Report
 if warnings:
@@ -136,10 +248,26 @@ if errors:
     print(f"\nBuild FAILED: {len(errors)} error(s), {len(warnings)} warning(s)")
     sys.exit(1)
 
+# relatedEvents is logically undirected. Keep source files concise, but publish a
+# symmetric graph so every consumer sees the same neighbors without reverse scans.
+events_by_id_for_relations = {e['id']: e for e in events}
+normalized_relation_count = 0
+for e in events:
+    e['relatedEvents'] = list(e.get('relatedEvents', []))
+for e in events:
+    for rel_id in list(e['relatedEvents']):
+        reverse_relations = events_by_id_for_relations[rel_id]['relatedEvents']
+        if e['id'] not in reverse_relations:
+            reverse_relations.append(e['id'])
+            normalized_relation_count += 1
+
 with open(OUTPUT_FILE, 'w') as fh:
     json.dump(events, fh, ensure_ascii=False, indent=2)
 
-print(f"✅ Built {OUTPUT_FILE} with {len(events)} events ({len(warnings)} warnings)")
+print(
+    f"✅ Built {OUTPUT_FILE} with {len(events)} events "
+    f"({normalized_relation_count} reverse relations normalized, {len(warnings)} warnings)"
+)
 
 # ─────────────────── SSG 详情页静态生成 ───────────────────
 import shutil
@@ -149,8 +277,6 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEMPLATE_FILE = os.path.join(ROOT_DIR, 'templates', 'detail_template.html')
 EVENTS_OUTPUT_DIR = os.path.join(ROOT_DIR, 'events')
-SOURCES_FILE = os.path.join(ROOT_DIR, 'data', 'sources.json')
-
 # 确保 events 临时输出目录存在并清空
 if os.path.exists(EVENTS_OUTPUT_DIR):
     shutil.rmtree(EVENTS_OUTPUT_DIR)
@@ -638,7 +764,7 @@ def generate_sitemap(events):
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
         f'  <url><loc>https://epoch-arc.com/</loc><lastmod>{today}</lastmod></url>',
-        f'  <url><loc>https://epoch-arc.com/methods.html</loc><lastmod>{today}</lastmod></url>'
+        f'  <url><loc>https://epoch-arc.com/methods</loc><lastmod>{today}</lastmod></url>'
     ]
     
     for e in events:
@@ -659,5 +785,3 @@ def generate_sitemap(events):
     print("✅ Generated sitemap.xml with physical routes successfully")
 
 generate_sitemap(events)
-
-

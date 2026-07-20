@@ -41,9 +41,16 @@
         "en": "Fable 5's 18.71x speedup on KernelBench-Mega represents a step-change in AI kernel optimization ability. The single-kernel-launch approach is a novel technique that human engineers had not discovered. Historical progression: Opus 4 (~3x, May 2025) → Mythos Preview (~52x training-code, Apr 2026) → Fable 5 (18.71x inference kernel, Jul 2026).",
         "zhHans": "Fable 5 在 KernelBench-Mega 上的 18.71 倍加速代表了 AI 内核优化能力的阶跃变化。单次内核启动方法是人类工程师未曾发现的新技术。历史进展：Opus 4（约 3 倍，2025年5月）→ Mythos Preview（约 52 倍训练代码，2026年4月）→ Fable 5（18.71 倍推理内核，2026年7月）。"
       },
-      "affectedGroups": ["AI researchers", "GPU programmers", "hardware engineers"],
+      "affectedGroups": [
+        "AI researchers",
+        "GPU programmers",
+        "hardware engineers"
+      ],
       "timeframe": "long",
-      "sourceIds": ["kernelbench-mega-fable5-2026", "import-ai-464-2026"]
+      "sourceIds": [
+        "kernelbench-mega-fable5-2026",
+        "import-ai-464-2026"
+      ]
     },
     {
       "dimension": "paradigm_shift",
@@ -53,9 +60,15 @@
         "en": "Jack Clark declared this the start of a 'recursive self-improvement' (RSI) loop. If AI systems can autonomously improve the computational infrastructure they run on, the rate of AI progress could decouple from human-driven R&D.",
         "zhHans": "Jack Clark 宣布这是'递归自改进'循环的开始。如果 AI 系统能够自主改进它们运行的计算基础设施，AI 进步的速度可能脱离人类驱动的研发。"
       },
-      "affectedGroups": ["AI researchers", "policymakers", "AI safety community"],
+      "affectedGroups": [
+        "AI researchers",
+        "policymakers",
+        "AI safety community"
+      ],
       "timeframe": "long",
-      "sourceIds": ["import-ai-464-2026"]
+      "sourceIds": [
+        "import-ai-464-2026"
+      ]
     },
     {
       "dimension": "risk_creation",
@@ -65,9 +78,15 @@
         "en": "The RSI implication is a safety concern: if AI systems can autonomously improve their own capabilities at an accelerating rate, the window for human oversight and intervention may shrink. Previous capability jumps (e.g., 3x to 52x in one year) suggest the trend is accelerating.",
         "zhHans": "RSI 的含义是一个安全担忧：如果 AI 系统能够以加速的方式自主提升自己的能力，人类监督和干预的窗口可能会缩小。此前的能力跃升（如一年内从 3 倍到 52 倍）表明这一趋势正在加速。"
       },
-      "affectedGroups": ["general public", "policymakers", "AI safety researchers"],
+      "affectedGroups": [
+        "general public",
+        "policymakers",
+        "AI safety researchers"
+      ],
       "timeframe": "medium",
-      "sourceIds": ["import-ai-464-2026"]
+      "sourceIds": [
+        "import-ai-464-2026"
+      ]
     }
   ],
   "claims": [
@@ -76,48 +95,79 @@
       "text": {
         "en": "Fable 5 achieved 18.71x speedup on KernelBench-Mega's Kimi-Linear W4A16 task, using exactly one CUDA kernel launch per decoded token.",
         "zhHans": "Fable 5 在 KernelBench-Mega 的 Kimi-Linear W4A16 任务上实现了 18.71 倍加速，每个解码令牌仅使用一次 CUDA 内核启动。"
-      }
+      },
+      "id": "fable-5-kernelbench-2026-claim-1",
+      "sourceIds": [
+        "kernelbench-mega-fable5-2026",
+        "biggo-fable5-kernel-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "fact",
       "text": {
         "en": "The model spent 2.5 hours autonomously developing the kernel, with 64% of time spent on silent analysis before writing code.",
         "zhHans": "该模型自主花费 2.5 小时开发内核，其中 64% 的时间用于编写代码前的静默分析。"
-      }
+      },
+      "id": "fable-5-kernelbench-2026-claim-2",
+      "sourceIds": [
+        "biggo-fable5-kernel-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "interpretation",
       "text": {
         "en": "Jack Clark (Anthropic co-founder, Import AI editor) stated this marks the beginning of a recursive self-improvement loop for AI R&D.",
         "zhHans": "Jack Clark（Anthropic 联合创始人、Import AI 主编）表示这标志着 AI 研发递归自改进循环的开始。"
-      }
+      },
+      "id": "fable-5-kernelbench-2026-claim-3",
+      "sourceIds": [
+        "import-ai-464-2026"
+      ],
+      "evidenceGrade": "B"
     },
     {
       "claimType": "limitation",
       "text": {
-        "en": "Some researchers caution that KernelBench is a narrow benchmark and RSI claims are premature. A single task success does not generalize to autonomous full-stack AI research.",
-        "zhHans": "一些研究者谨慎指出 KernelBench 是一个狭窄的基准，RSI 的说法为时过早。单一任务的成功不能推广到自主的全栈 AI 研究。"
-      }
+        "en": "KernelBench is a narrow code-optimization benchmark. Success on one task does not by itself demonstrate autonomous full-stack AI research.",
+        "zhHans": "KernelBench 是一个范围较窄的代码优化基准。单项任务成功本身并不能证明 AI 已具备自主完成全栈研究的能力。"
+      },
+      "id": "fable-5-kernelbench-2026-claim-4",
+      "sourceIds": [
+        "kernelbench-mega-fable5-2026"
+      ],
+      "evidenceGrade": "C"
     }
   ],
   "sources": [
     {
       "sourceId": "kernelbench-mega-fable5-2026",
-      "supports": ["fable-5-kernelbench-2026"],
+      "supports": [
+        "fable-5-kernelbench-2026"
+      ],
       "quote": "Fable 5 achieved 18.71x speedup — the first true megakernel in KernelBench-Mega history."
     },
     {
       "sourceId": "import-ai-464-2026",
-      "supports": ["fable-5-kernelbench-2026"],
+      "supports": [
+        "fable-5-kernelbench-2026"
+      ],
       "quote": "The start of a recursive self-improvement loop."
     },
     {
       "sourceId": "biggo-fable5-kernel-2026",
-      "supports": ["fable-5-kernelbench-2026"],
+      "supports": [
+        "fable-5-kernelbench-2026"
+      ],
       "quote": "Fable 5 wrote the first-ever CUDA super-kernel in 2.5 hours."
     }
   ],
-  "relatedEvents": ["claude-sonnet-5-launch-2026", "claude-fable-ban-2026", "claude-fable-ban-lift-2026"],
+  "relatedEvents": [
+    "claude-sonnet-5-launch-2026",
+    "claude-fable-ban-2026",
+    "claude-fable-ban-lift-2026"
+  ],
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-07-08",

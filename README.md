@@ -46,7 +46,7 @@ EpochArc-site/
 ## 数据校验
 
 ```
-python3 scripts/build_events.py  # 合并 + 基本校验
+python3 scripts/build_events.py  # 合并 + 完整校验 + relatedEvents 双向规范化
 python3 scripts/validate_forecasts.py  # Possible Directions 数据校验
 ```
 

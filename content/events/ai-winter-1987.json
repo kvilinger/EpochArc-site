@@ -6,7 +6,7 @@
     "zhHans": "第二次 AI 寒冬——专家系统市场崩溃"
   },
   "searchSummary": {
-    "en": "The Second AI Winter (1987) \u2014 the expert systems market collapsed after a decade of hype. Learn what caused the crash, how it reshaped AI research, and the lessons for today.",
+    "en": "The Second AI Winter (1987) — the expert systems market collapsed after a decade of hype. Learn what caused the crash, how it reshaped AI research, and the lessons for today.",
     "zhHans": "第二次 AI 寒冬（1987）——专家系统市场在十年炒作后崩溃。了解这场崩溃的原因、它如何重塑了 AI 研究，以及对今天的警示。"
   },
   "summary": {
@@ -91,13 +91,13 @@
   "claims": [
     {
       "id": "ai-winter-start",
-      "statement": {
+      "text": {
         "en": "The second AI winter is widely dated to 1987-1993, triggered by the collapse of the expert systems market.",
         "zhHans": "第二次 AI 寒冬通常被认为发生在 1987-1993 年，由专家系统市场崩溃触发。"
       },
-      "type": "fact",
-      "confidence": "confirmed",
-      "sources": [
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
         "wikipedia-ai-winter",
         "reuters-ai-boom-bust-2018"
       ]
@@ -123,11 +123,21 @@
   ],
   "relatedForecasts": [],
   "editorial": {
+    "createdAt": "2026-06-29",
+    "updatedAt": "2026-06-29",
+    "reviewedAt": "2026-06-29",
+    "curator": "editorial-agent",
+    "reviewer": "editorial-agent",
+    "changeLog": [
+      {
+        "date": "2026-06-29",
+        "changeType": "created",
+        "summary": "Added during the 2026 historical gap-fill review."
+      }
+    ],
     "curatorNote": {
       "en": "Added during 2026 historical gap fill. AI winter provides crucial context for understanding AI's boom-and-bust cycles.",
       "zhHans": "2026 年历史空白补全时添加。AI 寒冬提供了理解 AI 繁荣-衰退周期的重要背景。"
-    },
-    "lastReviewed": "2026-06-29",
-    "reviewer": "editorial-agent"
+    }
   }
 }

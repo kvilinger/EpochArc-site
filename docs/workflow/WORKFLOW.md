@@ -202,7 +202,7 @@ brave search "事件名称 MIT Technology Review Ars Technica Nature Science" -n
 |-------------|------|
 | 独立分析文章 | 提升 `impacts[].evidenceGrade` (C → B → A) |
 | 行业报告 | 作为 Tier 2 来源 |
-| 专家评论 | 填充 `claims[].interpretation` |
+| 专家评论 | 填充 `claims[].claimType = interpretation` |
 
 ### 第 4 层：争议与批评
 
@@ -376,9 +376,9 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 
 ### 分类覆盖检查
 
-- [ ] 当前批次覆盖了至少 **5 个以上不同分类**（model/capability/research/product/open_source/regulation/safety/social）
+- [ ] 当前批次覆盖了至少 **5 个以上不同分类**（capability/product/commerce/governance/safety/society）
 - [ ] 如果某个分类完全空白，确认是该期间确实没有该类别的重要事件（而非遗漏搜索）
-- [ ] `category` 选择准确：选择"最能解释为什么被收录"的那个，而不是最容易的那个
+- [ ] `categories[0]` 主分类选择准确：选择“最能解释为什么被收录”的分类；可选次分类必须通过 30% 信息丢失测试
 
 ### 来源检查
 
@@ -394,6 +394,13 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 - [ ] `severity` 做了拆分（正负影响分别写，不写成模糊的 0）
 - [ ] `controversy = true` 的事件有 `claimType = limitation` 的反方主张
 - [ ] `consensusLevel` 选择合理（broad / debated / emerging）
+
+### 数据结构检查
+
+- [ ] 每条 claim 包含唯一 `id`、双语 `text`、合法 `claimType`、`evidenceGrade` 和非空 `sourceIds`
+- [ ] Claim 不使用旧字段 `statement`、`type`、`confidence`、`sources`
+- [ ] 每个事件包含 `editorial.createdAt` 和 `editorial.updatedAt`，审核日期使用 `reviewedAt`
+- [ ] `relatedEvents` 只引用已发布事件，不包含自身或重复 ID；反向关系由构建脚本自动补齐
 
 ### 语言检查
 
@@ -415,7 +422,7 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 5. 对空白类别，agent 执行**第 5 层定向搜索** → 补充遗漏候选
 6. 对每个候选，agent 执行四层 Brave Search → 生成 JSON 草稿
 7. 人工审核 → 提交到 `content/events/`
-8. 运行 `npm run build:data` → 生成 `data/events.json`
+8. 运行 `python3 scripts/build_events.py` → 校验并生成 `data/events.json`
 9. 前端自动渲染
 10. **整理审核报告**：将本次发现的候选事件整理为摘要格式（事件名称、日期、分类、评分、来源摘要、确认层关键发现），发送给用户审核。**不执行 git push**，只做 `npm run build` 本地验证
 11. **用户确认后**：执行 `git add -A && git commit` 和 `git push origin main` → Cloudflare Pages 自动部署

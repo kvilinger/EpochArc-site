@@ -90,26 +90,28 @@
   "claims": [
     {
       "id": "tensorflow-open-source-date",
-      "statement": {
+      "text": {
         "en": "TensorFlow was released as open source on November 9, 2015 under Apache 2.0 license.",
         "zhHans": "TensorFlow 于 2015 年 11 月 9 日以 Apache 2.0 协议开源发布。"
       },
-      "type": "fact",
-      "confidence": "confirmed",
-      "sources": [
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
         "tensorflow-2015-blog",
         "wikipedia-tensorflow"
       ]
     },
     {
       "id": "tensorflow-github-stars",
-      "statement": {
+      "text": {
         "en": "TensorFlow gained over 11,000 GitHub stars in its first week after launch.",
         "zhHans": "TensorFlow 上线第一周获得超过 11,000 个 GitHub Star。"
       },
-      "type": "fact",
-      "confidence": "confirmed",
-      "sources": []
+      "claimType": "fact",
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "wikipedia-tensorflow"
+      ]
     }
   ],
   "sources": [
@@ -133,11 +135,21 @@
   ],
   "relatedForecasts": [],
   "editorial": {
+    "createdAt": "2026-06-29",
+    "updatedAt": "2026-06-29",
+    "reviewedAt": "2026-06-29",
+    "curator": "editorial-agent",
+    "reviewer": "editorial-agent",
+    "changeLog": [
+      {
+        "date": "2026-06-29",
+        "changeType": "created",
+        "summary": "Added during the 2026 historical gap-fill review."
+      }
+    ],
     "curatorNote": {
       "en": "Added during 2026 historical gap fill. TensorFlow marks the democratization of deep learning tools.",
       "zhHans": "2026 年历史空白补全时添加。TensorFlow 标志着深度学习工具的民主化。"
-    },
-    "lastReviewed": "2026-06-29",
-    "reviewer": "editorial-agent"
+    }
   }
 }

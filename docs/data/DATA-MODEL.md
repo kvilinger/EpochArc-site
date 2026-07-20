@@ -114,11 +114,15 @@ export type EventCategory =
 
 `LocalizedText` 中 `en` 和 `zhHans` 均为必填。其他语言可选。
 
+#### 关联事件
+
+`relatedEvents` 表示无方向的事件关联。编辑源文件可以只在一侧登记；`scripts/build_events.py` 会在生成 `data/events.json` 时自动补齐反向关系。目标 ID 必须已存在，且不允许自引用或重复 ID。
+
 #### 文件组织
 
 ```
 content/events/*.json      ← 编辑源文件
-  ↓ npm run build:data
+  ↓ python3 scripts/build_events.py
 data/events.json           ← 构建输出
 data/sources.json          ← 来源独立表
 ```
@@ -188,6 +192,8 @@ export type EvidenceGrade = 'A' | 'B' | 'C' | 'D';
 
 - 每个 L2/L3 事件至少 2 条 claim：一条事实 + 一条影响。
 - `controversy = true` 且 L2 以上，必须有一条 `claimType = limitation`。
+- 每条 claim 必须有唯一非空 `id`、完整中英文 `text`、合法的 `claimType` 和 `evidenceGrade`，并通过非空 `sourceIds` 直接绑定证据。
+- 不接受旧别名 `statement`、`type`、`confidence`、`sources`；`assessment` 也不是合法的 `claimType`。
 - D 级证据只用于候选池，不作为正式事件核心依据。
 
 ---
@@ -377,6 +383,7 @@ export interface EditorialMetadata {
   lastSourceCheckAt?: string;
   curator?: string;
   reviewer?: string;
+  curatorNote?: LocalizedText;
   changeLog?: ChangeLogEntry[];
 }
 
@@ -389,6 +396,8 @@ export interface ChangeLogEntry {
   summary: string;
 }
 ```
+
+`createdAt` 与 `updatedAt` 是每个正式事件的必填字段。`lastReviewed` 是旧字段，必须迁移为 `reviewedAt`；`reviewer` 仍是合法的可选字段。`curatorNote` 用于保留双语策展说明，不替代时间和责任人字段。
 
 ---
 
@@ -493,7 +502,7 @@ impactIndex =
 
 ## 5. 数据质量校验
 
-上线前 `npm run validate:data` 至少检查：
+事件数据通过 `python3 scripts/build_events.py` 校验，Possible Directions 通过 `python3 scripts/validate_forecasts.py` 校验；完整发布构建使用 `npm run build`。事件校验至少检查：
 
 - JSON 可解析。
 - ID 唯一。
@@ -503,11 +512,14 @@ impactIndex =
 - `impactIndex` 在 0-10。
 - `severity` 在 -3 到 +3。
 - 枚举字段只允许规定值。
+- 每条 claim 的 `id`、`text`、`claimType`、`evidenceGrade`、`sourceIds` 完整且合法。
+- Claim 引用的 `sourceIds` 必须存在于 `data/sources.json`，且数组不能为空。
+- 每个事件都有 `editorial.createdAt` 和 `editorial.updatedAt`；可选的 `changeLog` 条目结构合法。
 - 每条方向至少有 2 条 `signals`。
 - 每条 `signals` 至少有 1 个 `eventIds` 和 1 个 `sourceIds`。
 - `signals[].eventIds` 必须存在于 `events.json`。
 - `consensusBasis.resolutionMode = monitor_only` 时不得填写私设公开裁定标准。
-- `relatedEvents` 双向一致性检查。
+- `relatedEvents` 的目标存在性、自引用和重复检查；构建输出自动双向规范化。
 
 覆盖 `events.json`、`forecasts.json` 和 `sources.json` 三类数据。
 

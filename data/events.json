@@ -82,7 +82,9 @@
         "quote": "The running list: major tech layoffs in 2026 where employers cited AI."
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "rli-ai-automation-2026"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
@@ -229,7 +231,7 @@
       },
       {
         "id": "price-war-structural-impact-2026",
-        "claimType": "assessment",
+        "claimType": "impact",
         "text": {
           "en": "The combined effect of three major labs pricing competitively within one week marked a structural shift in AI economics, with output token prices dropping from $25-50 to $4-6 range.",
           "zhHans": "三家主要实验室在一周内同时竞争性定价的综合效应标志着 AI 经济的结构性转变，输出 token 价格从 $25-50 降至 $4-6 区间。"
@@ -402,13 +404,13 @@
     "claims": [
       {
         "id": "ai-winter-start",
-        "statement": {
+        "text": {
           "en": "The second AI winter is widely dated to 1987-1993, triggered by the collapse of the expert systems market.",
           "zhHans": "第二次 AI 寒冬通常被认为发生在 1987-1993 年，由专家系统市场崩溃触发。"
         },
-        "type": "fact",
-        "confidence": "confirmed",
-        "sources": [
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
           "wikipedia-ai-winter",
           "reuters-ai-boom-bust-2018"
         ]
@@ -434,12 +436,22 @@
     ],
     "relatedForecasts": [],
     "editorial": {
+      "createdAt": "2026-06-29",
+      "updatedAt": "2026-06-29",
+      "reviewedAt": "2026-06-29",
+      "curator": "editorial-agent",
+      "reviewer": "editorial-agent",
+      "changeLog": [
+        {
+          "date": "2026-06-29",
+          "changeType": "created",
+          "summary": "Added during the 2026 historical gap-fill review."
+        }
+      ],
       "curatorNote": {
         "en": "Added during 2026 historical gap fill. AI winter provides crucial context for understanding AI's boom-and-bust cycles.",
         "zhHans": "2026 年历史空白补全时添加。AI 寒冬提供了理解 AI 繁荣-衰退周期的重要背景。"
-      },
-      "lastReviewed": "2026-06-29",
-      "reviewer": "editorial-agent"
+      }
     }
   },
   {
@@ -604,7 +616,14 @@
     "relatedEvents": [
       "perceptron-1958",
       "transformer-2017",
-      "gpt3-2020"
+      "gpt3-2020",
+      "alphafold-2020",
+      "alphago-2016",
+      "dqn-atari-2013",
+      "gan-2014",
+      "resnet-2015",
+      "tensorflow-2015",
+      "watson-jeopardy-2011"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -772,7 +791,10 @@
     ],
     "relatedEvents": [
       "gpt3-2020",
-      "alexnet-2012"
+      "alexnet-2012",
+      "alphafold-nobel-2024",
+      "gemini-deep-think-imo-gold-2025",
+      "google-deepmind-2014"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -1075,7 +1097,9 @@
     "relatedEvents": [
       "deep-blue-1997",
       "alexnet-2012",
-      "transformer-2017"
+      "transformer-2017",
+      "dqn-atari-2013",
+      "google-deepmind-2014"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -1135,7 +1159,9 @@
         "sourceIds": [
           "reuters-anthropic-alibaba-2026",
           "cnbc-anthropic-alibaba-2026"
-        ]
+        ],
+        "id": "anthropic-alibaba-extraction-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "limitation",
@@ -1145,7 +1171,9 @@
         },
         "sourceIds": [
           "reuters-anthropic-alibaba-2026"
-        ]
+        ],
+        "id": "anthropic-alibaba-extraction-2026-claim-2",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
@@ -1155,7 +1183,9 @@
         },
         "sourceIds": [
           "cnbc-anthropic-alibaba-2026"
-        ]
+        ],
+        "id": "anthropic-alibaba-extraction-2026-claim-3",
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
@@ -1210,7 +1240,19 @@
           "reuters-anthropic-alibaba-2026"
         ]
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-06-26",
+      "updatedAt": "2026-06-30",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-06-26",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "anthropic-asl3-2025",
@@ -1426,7 +1468,8 @@
     ],
     "relatedEvents": [
       "gpt4o-2024",
-      "sora-2024"
+      "sora-2024",
+      "apple-siri-ai-wwdc-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -1643,13 +1686,13 @@
     "claims": [
       {
         "id": "attention-first-proposal",
-        "statement": {
+        "text": {
           "en": "Bahdanau et al. proposed the first attention mechanism for neural machine translation in September 2014.",
           "zhHans": "Bahdanau 等人于 2014 年 9 月首次提出用于神经机器翻译的注意力机制。"
         },
-        "type": "fact",
-        "confidence": "confirmed",
-        "sources": [
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
           "arxiv-1409.0473",
           "wikipedia-attention-mechanism"
         ]
@@ -1676,12 +1719,22 @@
     ],
     "relatedForecasts": [],
     "editorial": {
+      "createdAt": "2026-06-29",
+      "updatedAt": "2026-06-29",
+      "reviewedAt": "2026-06-29",
+      "curator": "editorial-agent",
+      "reviewer": "editorial-agent",
+      "changeLog": [
+        {
+          "date": "2026-06-29",
+          "changeType": "created",
+          "summary": "Added during the 2026 historical gap-fill review."
+        }
+      ],
       "curatorNote": {
         "en": "Added during 2026 historical gap fill. Attention mechanism is arguably the single most important architectural innovation of the deep learning era.",
         "zhHans": "2026 年历史空白补全时添加。注意力机制可以说是深度学习时代最重要的架构创新。"
-      },
-      "lastReviewed": "2026-06-29",
-      "reviewer": "editorial-agent"
+      }
     }
   },
   {
@@ -1907,7 +1960,8 @@
     ],
     "relatedEvents": [
       "transformer-2017",
-      "gpt3-2020"
+      "gpt3-2020",
+      "attention-2014"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -2020,7 +2074,8 @@
       }
     ],
     "relatedEvents": [
-      "chatgpt-2022"
+      "chatgpt-2022",
+      "microsoft-tay-2016"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -2464,7 +2519,18 @@
       "gpt3-2020",
       "transformer-2017",
       "sora-2024",
-      "eliza-1966"
+      "eliza-1966",
+      "bing-chat-sydney-2023",
+      "character-ai-2022",
+      "eu-ai-act-2024",
+      "github-copilot-2022",
+      "gpt4-2023",
+      "gpt4o-2024",
+      "gpt5-2025",
+      "llama-2023",
+      "openai-devday-2023",
+      "stable-diffusion-2022",
+      "vibecoding-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -2589,7 +2655,8 @@
     ],
     "relatedEvents": [
       "gpt4o-2024",
-      "llama-2023"
+      "llama-2023",
+      "gemini-2-agents-2024"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -2875,7 +2942,8 @@
     ],
     "relatedEvents": [
       "claude-code-launch-2025",
-      "openclaw-2026"
+      "openclaw-2026",
+      "spacex-xai-cursor-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -2931,7 +2999,9 @@
         "sourceIds": [
           "anthropic-fable-suspension-2026",
           "forbes-fable-ban-2026"
-        ]
+        ],
+        "id": "claude-fable-ban-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -2942,7 +3012,9 @@
         "sourceIds": [
           "anthropic-fable-suspension-2026",
           "fortune-fable-ban-2026"
-        ]
+        ],
+        "id": "claude-fable-ban-2026-claim-2",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "limitation",
@@ -2952,7 +3024,9 @@
         },
         "sourceIds": [
           "cnbc-fable-shutdown-2026"
-        ]
+        ],
+        "id": "claude-fable-ban-2026-claim-3",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
@@ -2963,11 +3037,17 @@
         "sourceIds": [
           "guardian-five-eyes-fable-2026",
           "forbes-fable-ban-2026"
-        ]
+        ],
+        "id": "claude-fable-ban-2026-claim-4",
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
-      "glm-52-open-source-2026"
+      "glm-52-open-source-2026",
+      "anthropic-alibaba-extraction-2026",
+      "claude-fable-ban-lift-2026",
+      "fable-5-kernelbench-2026",
+      "gpt-5-6-limited-release-2026"
     ],
     "sources": [
       {
@@ -3063,7 +3143,19 @@
           "guardian-five-eyes-fable-2026"
         ]
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-06-26",
+      "updatedAt": "2026-06-30",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-06-26",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "claude-fable-ban-lift-2026",
@@ -3104,7 +3196,9 @@
           "cnbc-fable-ban-lift-2026",
           "axios-fable-ban-lift-2026",
           "forbes-fable-ban-lift-2026"
-        ]
+        ],
+        "id": "claude-fable-ban-lift-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -3115,7 +3209,9 @@
         "sourceIds": [
           "basic-tutorials-fable-5-returns-2026",
           "cnbc-fable-ban-lift-2026"
-        ]
+        ],
+        "id": "claude-fable-ban-lift-2026-claim-2",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
@@ -3126,7 +3222,9 @@
         "sourceIds": [
           "wired-fable-ban-lift-2026",
           "cnn-fable-ban-lift-2026"
-        ]
+        ],
+        "id": "claude-fable-ban-lift-2026-claim-3",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "limitation",
@@ -3136,12 +3234,16 @@
         },
         "sourceIds": [
           "advisori-fable-5-enterprise-2026"
-        ]
+        ],
+        "id": "claude-fable-ban-lift-2026-claim-4",
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
       "claude-fable-ban-2026",
-      "glm-52-open-source-2026"
+      "glm-52-open-source-2026",
+      "fable-5-kernelbench-2026",
+      "gpt-5-6-limited-release-2026"
     ],
     "impacts": [
       {
@@ -3220,7 +3322,19 @@
         "sourceId": "advisori-fable-5-enterprise-2026",
         "relevance": "Enterprise impact analysis of the ban lift"
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-07-08",
+      "updatedAt": "2026-07-08",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-07-08",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "claude-sonnet-5-launch-2026",
@@ -3260,7 +3374,9 @@
         "sourceIds": [
           "anthropic-claude-sonnet-5-announce-2026",
           "techcrunch-sonnet-5-2026"
-        ]
+        ],
+        "id": "claude-sonnet-5-launch-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -3271,7 +3387,9 @@
         "sourceIds": [
           "anthropic-claude-sonnet-5-announce-2026",
           "9to5mac-sonnet-5-2026"
-        ]
+        ],
+        "id": "claude-sonnet-5-launch-2026-claim-2",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -3282,10 +3400,16 @@
         "sourceIds": [
           "techcrunch-sonnet-5-2026",
           "anthropic-claude-sonnet-5-announce-2026"
-        ]
+        ],
+        "id": "claude-sonnet-5-launch-2026-claim-3",
+        "evidenceGrade": "B"
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "ai-model-price-war-2026",
+      "fable-5-kernelbench-2026",
+      "thinking-machines-inkling-2026"
+    ],
     "impacts": [
       {
         "dimension": "access_democratization",
@@ -3348,7 +3472,19 @@
         "sourceId": "mashable-sonnet-5-2026",
         "relevance": "Mashable: Anthropic finally officially launches Claude Sonnet 5"
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-07-08",
+      "updatedAt": "2026-07-08",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-07-08",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "dall-e-2-2022",
@@ -3595,7 +3731,10 @@
     ],
     "relatedEvents": [
       "stable-diffusion-2022",
-      "gpt3-2020"
+      "gpt3-2020",
+      "dall-e-2-2022",
+      "eu-ai-act-2024",
+      "gpt-image-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -3740,7 +3879,9 @@
     ],
     "relatedEvents": [
       "turing-test-1950",
-      "perceptron-1958"
+      "perceptron-1958",
+      "ai-winter-1987",
+      "eliza-1966"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -3906,7 +4047,8 @@
     ],
     "relatedEvents": [
       "perceptron-1958",
-      "alphago-2016"
+      "alphago-2016",
+      "watson-jeopardy-2011"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -4041,7 +4183,10 @@
     ],
     "relatedEvents": [
       "o1-2024",
-      "llama-3.1-405b-2024"
+      "llama-3.1-405b-2024",
+      "deepseek-v4-2026",
+      "kimi-k3-2026",
+      "nvidia-4-trillion-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -4168,7 +4313,10 @@
       }
     ],
     "relatedEvents": [
-      "deepseek-r1-2025"
+      "deepseek-r1-2025",
+      "ai-model-price-war-2026",
+      "kimi-k3-2026",
+      "thinking-machines-inkling-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -4287,21 +4435,37 @@
         "text": {
           "en": "ByteDance's Doubao (345M+ users) disabled its agent functionality on July 15, 2026, and Alibaba's Qwen disabled humanlike agents on July 10, due to new Chinese regulations targeting sustained emotional interaction AI services.",
           "zhHans": "字节跳动的豆包（3.45 亿+用户）于 2026 年 7 月 15 日下线其智能体功能，阿里巴巴的通义千问于 7 月 10 日禁用人形智能体，原因是针对持续性情感交互 AI 服务的新中国法规。"
-        }
+        },
+        "id": "doubao-ai-companion-shutdown-2026-claim-1",
+        "sourceIds": [
+          "techtimes-doubao-shutdown-2026",
+          "thenextweb-china-ai-companion-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
         "text": {
           "en": "Workplace and productivity AI agents are exempt from the regulation. Users can view their data in read-only mode until October 15, 2026.",
           "zhHans": "工作场所和生产力 AI 智能体不受该法规限制。用户可在 2026 年 10 月 15 日前以只读模式查看其数据。"
-        }
+        },
+        "id": "doubao-ai-companion-shutdown-2026-claim-2",
+        "sourceIds": [
+          "thenextweb-china-ai-companion-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
         "text": {
           "en": "The regulation represents a major government intervention in the AI companion market, reflecting Beijing's willingness to restrict socially risky AI applications regardless of their adoption scale.",
           "zhHans": "该规定代表了政府对 AI 伴侣市场的重大干预，反映了北京限制具有社会风险的 AI 应用的意愿，无论其普及规模如何。"
-        }
+        },
+        "id": "doubao-ai-companion-shutdown-2026-claim-3",
+        "sourceIds": [
+          "thenextweb-china-ai-companion-2026"
+        ],
+        "evidenceGrade": "B"
       }
     ],
     "sources": [
@@ -4432,7 +4596,8 @@
     ],
     "relatedEvents": [
       "alexnet-2012",
-      "alphago-2016"
+      "alphago-2016",
+      "resnet-2015"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -4601,7 +4766,8 @@
     "relatedEvents": [
       "turing-test-1950",
       "dartmouth-1956",
-      "chatgpt-2022"
+      "chatgpt-2022",
+      "perceptron-1958"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -4751,7 +4917,11 @@
     "relatedEvents": [
       "dall-e-2021",
       "chatgpt-2022",
-      "gpt4-2023"
+      "gpt4-2023",
+      "eu-ai-act-enforcement-2025",
+      "eu-ai-act-proposal-2021",
+      "eu-ai-act-simplification-2026",
+      "illinois-ai-safety-law-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -4882,7 +5052,11 @@
       }
     ],
     "relatedEvents": [
-      "eu-ai-act-2024"
+      "eu-ai-act-2024",
+      "california-sb53-2025",
+      "eu-ai-act-proposal-2021",
+      "eu-ai-act-simplification-2026",
+      "illinois-ai-safety-law-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -4989,7 +5163,8 @@
     "relatedEvents": [
       "eu-ai-act-2024",
       "eu-ai-act-enforcement-2025",
-      "eu-ai-act-simplification-2026"
+      "eu-ai-act-simplification-2026",
+      "illinois-ai-safety-law-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -5088,7 +5263,8 @@
     ],
     "relatedEvents": [
       "eu-ai-act-2024",
-      "eu-ai-act-enforcement-2025"
+      "eu-ai-act-enforcement-2025",
+      "eu-ai-act-proposal-2021"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -5206,28 +5382,49 @@
         "text": {
           "en": "Fable 5 achieved 18.71x speedup on KernelBench-Mega's Kimi-Linear W4A16 task, using exactly one CUDA kernel launch per decoded token.",
           "zhHans": "Fable 5 在 KernelBench-Mega 的 Kimi-Linear W4A16 任务上实现了 18.71 倍加速，每个解码令牌仅使用一次 CUDA 内核启动。"
-        }
+        },
+        "id": "fable-5-kernelbench-2026-claim-1",
+        "sourceIds": [
+          "kernelbench-mega-fable5-2026",
+          "biggo-fable5-kernel-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
         "text": {
           "en": "The model spent 2.5 hours autonomously developing the kernel, with 64% of time spent on silent analysis before writing code.",
           "zhHans": "该模型自主花费 2.5 小时开发内核，其中 64% 的时间用于编写代码前的静默分析。"
-        }
+        },
+        "id": "fable-5-kernelbench-2026-claim-2",
+        "sourceIds": [
+          "biggo-fable5-kernel-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
         "text": {
           "en": "Jack Clark (Anthropic co-founder, Import AI editor) stated this marks the beginning of a recursive self-improvement loop for AI R&D.",
           "zhHans": "Jack Clark（Anthropic 联合创始人、Import AI 主编）表示这标志着 AI 研发递归自改进循环的开始。"
-        }
+        },
+        "id": "fable-5-kernelbench-2026-claim-3",
+        "sourceIds": [
+          "import-ai-464-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "limitation",
         "text": {
-          "en": "Some researchers caution that KernelBench is a narrow benchmark and RSI claims are premature. A single task success does not generalize to autonomous full-stack AI research.",
-          "zhHans": "一些研究者谨慎指出 KernelBench 是一个狭窄的基准，RSI 的说法为时过早。单一任务的成功不能推广到自主的全栈 AI 研究。"
-        }
+          "en": "KernelBench is a narrow code-optimization benchmark. Success on one task does not by itself demonstrate autonomous full-stack AI research.",
+          "zhHans": "KernelBench 是一个范围较窄的代码优化基准。单项任务成功本身并不能证明 AI 已具备自主完成全栈研究的能力。"
+        },
+        "id": "fable-5-kernelbench-2026-claim-4",
+        "sourceIds": [
+          "kernelbench-mega-fable5-2026"
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "sources": [
@@ -5614,7 +5811,8 @@
     ],
     "relatedEvents": [
       "alexnet-2012",
-      "transformer-2017"
+      "transformer-2017",
+      "stable-diffusion-2022"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -6098,7 +6296,9 @@
     ],
     "relatedEvents": [
       "chatgpt-2022",
-      "gpt3-2020"
+      "gpt3-2020",
+      "llama-2023",
+      "vibecoding-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -6157,7 +6357,9 @@
         "sourceIds": [
           "zai-glm52-release-2026",
           "interconnects-glm52-2026"
-        ]
+        ],
+        "id": "glm-52-open-source-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -6168,7 +6370,9 @@
         "sourceIds": [
           "interconnects-glm52-2026",
           "businessinsider-glm52-2026"
-        ]
+        ],
+        "id": "glm-52-open-source-2026-claim-2",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
@@ -6179,11 +6383,15 @@
         "sourceIds": [
           "pandaily-glm52-2026",
           "cnbc-fable-shutdown-2026"
-        ]
+        ],
+        "id": "glm-52-open-source-2026-claim-3",
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
-      "claude-fable-ban-2026"
+      "claude-fable-ban-2026",
+      "claude-fable-ban-lift-2026",
+      "kimi-k3-2026"
     ],
     "sources": [
       {
@@ -6264,7 +6472,19 @@
           "cnbc-fable-shutdown-2026"
         ]
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-06-26",
+      "updatedAt": "2026-06-30",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-06-26",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "google-ai-mode-search-2025",
@@ -6588,7 +6808,8 @@
     ],
     "relatedEvents": [
       "gpt3-2020",
-      "gpt4-2023"
+      "gpt4-2023",
+      "attention-2014"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -6701,14 +6922,24 @@
         "text": {
           "en": "The U.S. Department of Commerce approved broad launch of OpenAI's GPT-5.6 on July 8, 2026, after testing by the Center for AI Standards and Innovation.",
           "zhHans": "美国商务部于2026年7月8日批准 OpenAI 广泛发布 GPT-5.6，此前 AI 标准与创新中心进行了测试。"
-        }
+        },
+        "id": "gpt-5-6-broad-launch-2026-claim-1",
+        "sourceIds": [
+          "reuters-gpt56-approval-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
         "text": {
           "en": "The model was initially restricted on June 26 at the U.S. government's request, limiting access to ~20 government-approved partners.",
           "zhHans": "该模型于6月26日应美国政府要求受限，仅限约20个政府批准的合作伙伴访问。"
-        }
+        },
+        "id": "gpt-5-6-broad-launch-2026-claim-2",
+        "sourceIds": [
+          "reuters-gpt56-approval-2026"
+        ],
+        "evidenceGrade": "B"
       }
     ],
     "sources": [
@@ -6721,7 +6952,9 @@
       }
     ],
     "relatedEvents": [
-      "gpt-5-6-limited-release-2026"
+      "gpt-5-6-limited-release-2026",
+      "ai-model-price-war-2026",
+      "thinking-machines-inkling-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -6769,7 +7002,9 @@
           "openai-gpt56-announce-2026",
           "cnn-openai-gpt56-restrict-2026",
           "axios-gpt56-trump-2026"
-        ]
+        ],
+        "id": "gpt-5-6-limited-release-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -6781,7 +7016,9 @@
           "nytimes-trump-eo-ai-2026",
           "axios-gpt56-trump-2026",
           "techcrunch-gpt56-restrict-2026"
-        ]
+        ],
+        "id": "gpt-5-6-limited-release-2026-claim-2",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -6792,7 +7029,9 @@
         "sourceIds": [
           "venturebeat-gpt56-sol-2026",
           "marktechpost-gpt56-2026"
-        ]
+        ],
+        "id": "gpt-5-6-limited-release-2026-claim-3",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
@@ -6803,7 +7042,9 @@
         "sourceIds": [
           "reuters-gpt56-limits-2026",
           "politico-gpt56-government-2026"
-        ]
+        ],
+        "id": "gpt-5-6-limited-release-2026-claim-4",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "limitation",
@@ -6814,12 +7055,15 @@
         "sourceIds": [
           "cryptobriefing-gpt56-delay-2026",
           "paddo-gpt56-twenty-companies-2026"
-        ]
+        ],
+        "id": "gpt-5-6-limited-release-2026-claim-5",
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
       "claude-fable-ban-2026",
-      "claude-fable-ban-lift-2026"
+      "claude-fable-ban-lift-2026",
+      "gpt-5-6-broad-launch-2026"
     ],
     "impacts": [
       {
@@ -6945,7 +7189,19 @@
         "sourceId": "toms-gpt56-banhammer-2026",
         "relevance": "Tom's Hardware: GPT-5.6 'same banhammer treatment' as Mythos"
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-07-08",
+      "updatedAt": "2026-07-08",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-07-08",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "gpt-image-2025",
@@ -7222,7 +7478,14 @@
     "relatedEvents": [
       "transformer-2017",
       "chatgpt-2022",
-      "alexnet-2012"
+      "alexnet-2012",
+      "alphafold-2020",
+      "bert-2018",
+      "dall-e-2021",
+      "github-copilot-2022",
+      "gpt-2-safety-2019",
+      "gpt4-2023",
+      "llama-2023"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -7382,7 +7645,15 @@
     "relatedEvents": [
       "gpt3-2020",
       "chatgpt-2022",
-      "llama-2023"
+      "llama-2023",
+      "auto-gpt-2023",
+      "eu-ai-act-2024",
+      "gemini-1.5-pro-2024",
+      "gpt-2-safety-2019",
+      "gpt4o-2024",
+      "gpt5-2025",
+      "llama-3.1-405b-2024",
+      "o1-2024"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -7508,7 +7779,15 @@
     "relatedEvents": [
       "chatgpt-2022",
       "gpt4-2023",
-      "sora-2024"
+      "sora-2024",
+      "apple-intelligence-2024",
+      "claude-3-5-sonnet-2024",
+      "gemini-1.5-pro-2024",
+      "google-ai-mode-search-2025",
+      "gpt5-2025",
+      "o1-2024",
+      "openai-operator-2025",
+      "scarlett-johansson-openai-2024"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -7662,7 +7941,8 @@
       "gpt4-2023",
       "gpt4o-2024",
       "o1-2024",
-      "chatgpt-2022"
+      "chatgpt-2022",
+      "google-ai-mode-search-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -7879,21 +8159,40 @@
         "text": {
           "en": "Illinois Governor JB Pritzker signed the AI Safety Measures Act (SB 315) on July 6, 2026, requiring independent third-party safety audits for AI developers with >$500M annual revenue.",
           "zhHans": "伊利诺伊州长 JB Pritzker 于2026年7月6日签署了 AI 安全措施法案（SB 315），要求年收入超过 5 亿美元的 AI 开发者进行独立第三方安全审计。"
-        }
+        },
+        "id": "illinois-ai-safety-law-2026-claim-1",
+        "sourceIds": [
+          "gov-pritzker-ai-law-announcement-2026",
+          "chicagotribune-illinois-ai-law-2026",
+          "capitolnews-illinois-ai-law-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
         "text": {
           "en": "The law requires covered companies to report critical safety incidents to the state within 72 hours and establishes fines of up to $1M (first violation) and $3M (subsequent).",
           "zhHans": "该法律要求受覆盖公司在 72 小时内向州政府报告严重安全事故，并设定最高 100 万美元（首次违规）和 300 万美元（后续违规）的罚款。"
-        }
+        },
+        "id": "illinois-ai-safety-law-2026-claim-2",
+        "sourceIds": [
+          "chicagotribune-illinois-ai-law-2026",
+          "capitolnews-illinois-ai-law-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
         "text": {
           "en": "The law represents the most prescriptive state-level AI regulation in the US, filling a void left by federal inaction.",
           "zhHans": "该法律代表了美国最精细的州级 AI 监管，填补了联邦不作为留下的空白。"
-        }
+        },
+        "id": "illinois-ai-safety-law-2026-claim-3",
+        "sourceIds": [
+          "chicagotribune-illinois-ai-law-2026",
+          "capitolnews-illinois-ai-law-2026"
+        ],
+        "evidenceGrade": "B"
       }
     ],
     "sources": [
@@ -8022,7 +8321,7 @@
       },
       {
         "id": "kimi-k3-largest-open-source-2026",
-        "claimType": "assessment",
+        "claimType": "fact",
         "text": {
           "en": "Kimi K3 is the largest open-source model ever released at 2.8 trillion parameters.",
           "zhHans": "Kimi K3 是有史以来发布的最大开源模型，拥有 2.8 万亿参数。"
@@ -8204,7 +8503,11 @@
     "relatedEvents": [
       "gpt3-2020",
       "chatgpt-2022",
-      "github-copilot-2022"
+      "github-copilot-2022",
+      "claude-3-5-sonnet-2024",
+      "gpt4-2023",
+      "llama-3.1-405b-2024",
+      "llama-4-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -8333,7 +8636,8 @@
     "relatedEvents": [
       "llama-2023",
       "gpt4-2023",
-      "deepseek-r1-2025"
+      "deepseek-r1-2025",
+      "llama-4-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -8716,7 +9020,9 @@
           "variety-gene-wilder-ai-2026",
           "bbc-gene-wilder-ai-2026",
           "hollywoodreporter-gene-wilder-ai-2026"
-        ]
+        ],
+        "id": "netflix-gene-wilder-ai-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -8727,7 +9033,9 @@
         "sourceIds": [
           "nbcnews-gene-wilder-ai-2026",
           "variety-gene-wilder-ai-2026"
-        ]
+        ],
+        "id": "netflix-gene-wilder-ai-2026-claim-2",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "limitation",
@@ -8738,7 +9046,9 @@
         "sourceIds": [
           "bbc-gene-wilder-ai-2026",
           "kotaku-gene-wilder-ai-2026"
-        ]
+        ],
+        "id": "netflix-gene-wilder-ai-2026-claim-3",
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
@@ -8810,7 +9120,19 @@
         "sourceId": "euronews-gene-wilder-ai-2026",
         "relevance": "European perspective on the AI ethics controversy"
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-07-08",
+      "updatedAt": "2026-07-08",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-07-08",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "nvidia-4-trillion-2025",
@@ -8896,7 +9218,8 @@
       }
     ],
     "relatedEvents": [
-      "deepseek-r1-2025"
+      "deepseek-r1-2025",
+      "nvidia-most-valuable-2024"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -9181,7 +9504,12 @@
     "relatedEvents": [
       "gpt4-2023",
       "gpt4o-2024",
-      "transformer-2017"
+      "transformer-2017",
+      "deepseek-r1-2025",
+      "gemini-2-agents-2024",
+      "gemini-deep-think-imo-gold-2025",
+      "gpt5-2025",
+      "openai-operator-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -9343,7 +9671,9 @@
         "sourceIds": [
           "openai-jalapeno-announce-2026",
           "techcrunch-openai-chip-2026"
-        ]
+        ],
+        "id": "openai-jalapeno-chip-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -9354,7 +9684,9 @@
         "sourceIds": [
           "cnbc-openai-chip-2026",
           "cnn-openai-chip-2026"
-        ]
+        ],
+        "id": "openai-jalapeno-chip-2026-claim-2",
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [],
@@ -9416,7 +9748,19 @@
           "openai-jalapeno-announce-2026"
         ]
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-06-26",
+      "updatedAt": "2026-06-30",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-06-26",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "openai-operator-2025",
@@ -9520,7 +9864,10 @@
     ],
     "relatedEvents": [
       "gpt4o-2024",
-      "o1-2024"
+      "o1-2024",
+      "auto-gpt-2023",
+      "claude-code-launch-2025",
+      "mcp-protocol-2024"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -9641,7 +9988,11 @@
         "quote": "OpenAI completes restructure, solidifying Microsoft as a major shareholder."
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "florida-sues-openai-2026",
+      "openai-devday-2023",
+      "sam-altman-ouster-2023"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
@@ -9817,7 +10168,10 @@
       }
     ],
     "relatedEvents": [
-      "mcp-protocol-2024"
+      "mcp-protocol-2024",
+      "auto-gpt-2023",
+      "claude-code-launch-2025",
+      "claude-code-leak-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -9981,7 +10335,9 @@
     ],
     "relatedEvents": [
       "dartmouth-1956",
-      "eliza-1966"
+      "eliza-1966",
+      "alexnet-2012",
+      "deep-blue-1997"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -10091,26 +10447,26 @@
     "claims": [
       {
         "id": "resnet-imagenet-first",
-        "statement": {
+        "text": {
           "en": "ResNet won 1st place in ILSVRC 2015 classification with 3.57% top-5 error.",
           "zhHans": "ResNet 以 3.57% top-5 错误率赢得 ILSVRC 2015 图像分类第一名。"
         },
-        "type": "fact",
-        "confidence": "confirmed",
-        "sources": [
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
           "arxiv-1512.03385",
           "wikipedia-resnet"
         ]
       },
       {
         "id": "resnet-152-layer",
-        "statement": {
+        "text": {
           "en": "ResNet-152 is 8× deeper than VGG nets while having lower computational complexity.",
           "zhHans": "ResNet-152 比 VGG 深 8 倍，但计算复杂度更低。"
         },
-        "type": "fact",
-        "confidence": "confirmed",
-        "sources": [
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
           "arxiv-1512.03385"
         ]
       }
@@ -10133,18 +10489,29 @@
     "relatedEvents": [
       "alexnet-2012",
       "transformer-2017",
-      "dqn-atari-2013"
+      "dqn-atari-2013",
+      "tensorflow-2015"
     ],
     "relatedForecasts": [
       "ai-native-discovery-pipelines"
     ],
     "editorial": {
+      "createdAt": "2026-06-29",
+      "updatedAt": "2026-06-29",
+      "reviewedAt": "2026-06-29",
+      "curator": "editorial-agent",
+      "reviewer": "editorial-agent",
+      "changeLog": [
+        {
+          "date": "2026-06-29",
+          "changeType": "created",
+          "summary": "Added during the 2026 historical gap-fill review."
+        }
+      ],
       "curatorNote": {
         "en": "Added during 2026 historical gap fill. ResNet is foundational to the deep learning era.",
         "zhHans": "2026 年历史空白补全时添加。ResNet 是深度学习时代的基础性工作。"
-      },
-      "lastReviewed": "2026-06-29",
-      "reviewer": "editorial-agent"
+      }
     }
   },
   {
@@ -10246,28 +10613,49 @@
         "text": {
           "en": "AI systems' success rate on the Remote Labor Index rose from 2.5% (October 2025) to 16.1% (July 2026), according to CAIS and Scale Labs.",
           "zhHans": "据 CAIS 和 Scale Labs 数据，AI 系统在远程劳动指数上的成功率从 2.5%（2025年10月）升至 16.1%（2026年7月）。"
-        }
+        },
+        "id": "rli-ai-automation-2026-claim-1",
+        "sourceIds": [
+          "cais-rli-report-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
         "text": {
           "en": "Fable 5 achieved 16.1%, Claude Opus 4.8 achieved 8.3%, and GPT-5.5 achieved 6.3% on the RLI benchmark.",
           "zhHans": "Fable 5 在 RLI 基准上达到 16.1%，Claude Opus 4.8 达到 8.3%，GPT-5.5 达到 6.3%。"
-        }
+        },
+        "id": "rli-ai-automation-2026-claim-2",
+        "sourceIds": [
+          "cais-rli-report-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "interpretation",
         "text": {
           "en": "The frontier has more than quadrupled in under eight months, representing a concrete signal of rapidly advancing economically capable AI agents.",
           "zhHans": "前沿能力在不到八个月内增长了四倍多，代表着经济能力不断增强的 AI 智能体快速进步的具体信号。"
-        }
+        },
+        "id": "rli-ai-automation-2026-claim-3",
+        "sourceIds": [
+          "cais-rli-report-2026",
+          "import-ai-464-2026"
+        ],
+        "evidenceGrade": "B"
       },
       {
         "claimType": "limitation",
         "text": {
-          "en": "Critics argue that 16.1% remains low and many tasks require specialized human judgment that AI systems may not achieve for years, if ever. The test also does not account for new task creation that often accompanies automation.",
-          "zhHans": "批评者认为 16.1% 仍然很低，许多任务需要人类专业判断，AI 系统可能多年甚至永远无法达到。该测试也未考虑通常伴随自动化而来的新任务创造。"
-        }
+          "en": "A 16.1% success rate means the tested systems still failed most benchmark tasks. The result measures a selected set of remote-labor tasks and does not establish economy-wide job automation.",
+          "zhHans": "16.1% 的成功率意味着受测系统仍未完成大多数基准任务。该结果衡量的是一组选定的远程劳动任务，不能据此认定全经济范围的工作自动化已经实现。"
+        },
+        "id": "rli-ai-automation-2026-claim-4",
+        "sourceIds": [
+          "cais-rli-report-2026"
+        ],
+        "evidenceGrade": "C"
       }
     ],
     "sources": [
@@ -10497,7 +10885,8 @@
       }
     ],
     "relatedEvents": [
-      "gpt4o-2024"
+      "gpt4o-2024",
+      "netflix-gene-wilder-ai-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -10601,7 +10990,9 @@
         "quote": "Siri was introduced on iPhone 4S in October 2011."
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "apple-siri-ai-wwdc-2026"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-25",
@@ -10758,7 +11149,11 @@
     ],
     "relatedEvents": [
       "chatgpt-2022",
-      "transformer-2017"
+      "transformer-2017",
+      "apple-intelligence-2024",
+      "gpt4o-2024",
+      "sora-shutdown-2026",
+      "stable-diffusion-2022"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -10921,7 +11316,9 @@
         },
         "sourceIds": [
           "bloomberg-spacex-xai-2026"
-        ]
+        ],
+        "id": "spacex-xai-cursor-2026-claim-1",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "fact",
@@ -10932,7 +11329,9 @@
         "sourceIds": [
           "cnbc-spacex-cursor-2026",
           "techcrunch-spacex-cursor-2026"
-        ]
+        ],
+        "id": "spacex-xai-cursor-2026-claim-2",
+        "evidenceGrade": "B"
       },
       {
         "claimType": "limitation",
@@ -10942,7 +11341,9 @@
         },
         "sourceIds": [
           "cnbc-spacex-cursor-2026"
-        ]
+        ],
+        "id": "spacex-xai-cursor-2026-claim-3",
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
@@ -11004,7 +11405,19 @@
           "cnbc-spacex-cursor-2026"
         ]
       }
-    ]
+    ],
+    "editorial": {
+      "createdAt": "2026-06-26",
+      "updatedAt": "2026-06-30",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-06-26",
+          "changeType": "created",
+          "summary": "Initial event entry."
+        }
+      ]
+    }
   },
   {
     "id": "stable-diffusion-2022",
@@ -11148,7 +11561,10 @@
     "relatedEvents": [
       "sora-2024",
       "chatgpt-2022",
-      "gan-2014"
+      "gan-2014",
+      "dall-e-2-2022",
+      "dall-e-2021",
+      "gpt-image-2025"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -11254,7 +11670,9 @@
         "quote": "Police report officially rules OpenAI whistleblower Suchir Balaji's death a suicide."
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "california-sb53-2025"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-06-24",
@@ -11489,26 +11907,28 @@
     "claims": [
       {
         "id": "tensorflow-open-source-date",
-        "statement": {
+        "text": {
           "en": "TensorFlow was released as open source on November 9, 2015 under Apache 2.0 license.",
           "zhHans": "TensorFlow 于 2015 年 11 月 9 日以 Apache 2.0 协议开源发布。"
         },
-        "type": "fact",
-        "confidence": "confirmed",
-        "sources": [
+        "claimType": "fact",
+        "evidenceGrade": "B",
+        "sourceIds": [
           "tensorflow-2015-blog",
           "wikipedia-tensorflow"
         ]
       },
       {
         "id": "tensorflow-github-stars",
-        "statement": {
+        "text": {
           "en": "TensorFlow gained over 11,000 GitHub stars in its first week after launch.",
           "zhHans": "TensorFlow 上线第一周获得超过 11,000 个 GitHub Star。"
         },
-        "type": "fact",
-        "confidence": "confirmed",
-        "sources": []
+        "claimType": "fact",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "wikipedia-tensorflow"
+        ]
       }
     ],
     "sources": [
@@ -11532,12 +11952,22 @@
     ],
     "relatedForecasts": [],
     "editorial": {
+      "createdAt": "2026-06-29",
+      "updatedAt": "2026-06-29",
+      "reviewedAt": "2026-06-29",
+      "curator": "editorial-agent",
+      "reviewer": "editorial-agent",
+      "changeLog": [
+        {
+          "date": "2026-06-29",
+          "changeType": "created",
+          "summary": "Added during the 2026 historical gap-fill review."
+        }
+      ],
       "curatorNote": {
         "en": "Added during 2026 historical gap fill. TensorFlow marks the democratization of deep learning tools.",
         "zhHans": "2026 年历史空白补全时添加。TensorFlow 标志着深度学习工具的民主化。"
-      },
-      "lastReviewed": "2026-06-29",
-      "reviewer": "editorial-agent"
+      }
     }
   },
   {
@@ -11857,7 +12287,16 @@
     "relatedEvents": [
       "alexnet-2012",
       "gpt3-2020",
-      "chatgpt-2022"
+      "chatgpt-2022",
+      "alphafold-nobel-2024",
+      "alphago-2016",
+      "attention-2014",
+      "bert-2018",
+      "gan-2014",
+      "o1-2024",
+      "resnet-2015",
+      "sora-2024",
+      "tensorflow-2015"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -12056,7 +12495,8 @@
     ],
     "relatedEvents": [
       "dartmouth-1956",
-      "eliza-1966"
+      "eliza-1966",
+      "ai-winter-1987"
     ],
     "relatedForecasts": [
       "agi-2027-2029"
@@ -12165,7 +12605,8 @@
     ],
     "relatedEvents": [
       "chatgpt-2022",
-      "github-copilot-2022"
+      "github-copilot-2022",
+      "rli-ai-automation-2026"
     ],
     "relatedForecasts": [],
     "editorial": {

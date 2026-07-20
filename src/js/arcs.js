@@ -4,7 +4,7 @@ window.navigateToEvent = function(id) {
   if (window.location.protocol === 'file:') {
     window.location.href = `../../events/${id}/index.html`;
   } else {
-    window.location.href = `/events/${id}/index.html`;
+    window.location.href = `/events/${id}/`;
   }
 };
 
@@ -38,7 +38,7 @@ document.addEventListener('click', function(e) {
       const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
       window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
     } else {
-      window.location.href = '/arcs.html';
+      window.location.href = '/arcs';
     }
   }
 });
