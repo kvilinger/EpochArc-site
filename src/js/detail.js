@@ -37,7 +37,8 @@ function updateLocale() {
     const enText = el.getAttribute('data-en');
     if (zhText && enText) {
       if (el.children.length === 0) {
-        el.innerText = isZh ? zhText : enText;
+        // SVG <text> 元素必须用 textContent，innerText 在 SVG 命名空间下不生效
+        el.textContent = isZh ? zhText : enText;
       } else {
         // 如果有子节点，可以通过选择性深层文本节点遍历来实现更完美的递归翻译，这里由于都是简单节点，先这样处理
       }
@@ -83,7 +84,7 @@ window.navigateToEvent = function(id) {
   if (window.location.protocol === 'file:') {
     window.location.href = `../${id}/index.html`;
   } else {
-    window.location.href = `/events/${id}/index.html`;
+    window.location.href = `/events/${id}/`;
   }
 };
 
@@ -172,7 +173,7 @@ document.addEventListener('click', function(e) {
       const isSubDir = window.location.pathname.includes('/events/') || window.location.pathname.includes('/arcs/');
       window.location.href = isSubDir ? '../../arcs.html' : 'arcs.html';
     } else {
-      window.location.href = '/arcs.html';
+      window.location.href = '/arcs';
     }
   }
 });
