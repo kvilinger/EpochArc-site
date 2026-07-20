@@ -6,16 +6,6 @@
   padding-bottom: 88px;
 }
 
-.directions-nav-link.is-active {
-  color: var(--accent);
-  border-color: color-mix(in oklch, var(--accent) 55%, var(--border));
-}
-
-.language-picker-label {
-  font: 700 11px/1 var(--font-mono);
-  color: var(--muted);
-}
-
 .directions-index-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
@@ -296,7 +286,6 @@
   .direction-source-list a { grid-column: 2; }
   .topnav-actions { gap: 6px; }
   .topnav-actions .control-btn { padding-inline: 9px; }
-  .language-picker-label { display: none; }
 }
 
 @media (max-width: 500px) {
