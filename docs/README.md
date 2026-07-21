@@ -27,7 +27,11 @@
   Future Signals / Possible Directions 的产品定位、达成裁定、投票逻辑和首页展示规则。
 
 - [STYLE-GUIDE.md](product/STYLE-GUIDE.md)
-  文案风格、语气、中英表达和争议内容写法。
+  文案风格、语气、中英表达和争议内容写法（原则层）。
+
+- [LANGUAGE-STANDARDS.md](product/LANGUAGE-STANDARDS.md)
+  可操作的语言规范：句法模板、AI 味检测清单、模块级差异、中英文句式对比。
+  内容生产时优先查阅此文件。
 
 - [LAUNCH-CHECKLIST.md](product/LAUNCH-CHECKLIST.md)
   Cloudflare Pages 上线前检查项。
