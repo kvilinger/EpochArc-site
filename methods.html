@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Methodology for EpochArc: how the site curates AI milestones, evidence, impact assessments, possible directions, and source standards." />
   <meta name="twitter:image" content="https://epoch-arc.com/og-image.svg" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="./src/css/methods.css?v=2.4.0">
+  <link rel="stylesheet" href="./src/css/methods.css?v=2.5.0">
 </head>
 <body data-theme="light">
   <header class="topnav">
@@ -57,19 +57,25 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1 data-zh="方法与来源" data-en="Methodology & Sources">Methodology & Sources</h1>
-      <p class="lead" data-zh="EpochArc 将人工智能发展史中的重大事件整理为可复核的事实、来源证据、影响评估与可能方向。本页面说明本站的收录准则、重要度评级模型、争议共识处理方式，以及可能方向的公开监测规则。" data-en="EpochArc structures the history of artificial intelligence into verifiable facts, source evidence, impact assessments, and possible directions. This page explains our editorial criteria, significance model, controversy handling, and the public monitoring rules behind Possible Directions.">
+  <main class="site-page container methods-page">
+    <a href="/" class="page-back">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+      <span data-zh="返回时间轴" data-en="Back to Timeline">返回时间轴</span>
+    </a>
+    <header class="page-header methods-hero">
+      <p class="page-kicker" data-zh="编辑规范" data-en="Editorial standard">编辑规范</p>
+      <h1 class="page-title" data-zh="方法与来源" data-en="Methodology & Sources">Methodology & Sources</h1>
+      <p class="page-lead" data-zh="EpochArc 将人工智能发展史中的重大事件整理为可复核的事实、来源证据、影响评估与可能方向。本页面说明本站的收录准则、重要度评级模型、争议共识处理方式，以及可能方向的公开监测规则。" data-en="EpochArc structures the history of artificial intelligence into verifiable facts, source evidence, impact assessments, and possible directions. This page explains our editorial criteria, significance model, controversy handling, and the public monitoring rules behind Possible Directions.">
         EpochArc structures the history of artificial intelligence into verifiable facts, source evidence, impact assessments, and possible directions. This page explains our editorial criteria, significance model, controversy handling, and the public monitoring rules behind Possible Directions.
       </p>
-      <div class="meta-row">
+      <div class="page-meta-row">
         <span data-zh="更新日期 2026-06-25" data-en="Updated 2026-06-25">Updated 2026-06-25</span>
       </div>
-    </section>
+    </header>
 
-    <div class="grid">
-      <section class="panel">
+    <div class="page-layout methods-layout">
+      <div class="page-main methods-content">
+      <section class="panel" id="editorial-scope">
         <h2 data-zh="收录范围与原则" data-en="Editorial Scope & Curation Principles">Editorial Scope & Curation Principles</h2>
         <p data-zh="EpochArc 既非学术文献库，亦非实时新闻流。收录的每一个历史里程碑节点均须明确回答三个核心问题：具体事实为何、来源证据链是否完备、以及该事件如何在长期维度上重塑了人工智能的发展脉络。" data-en="EpochArc is neither an academic bibliography database nor a real-time news feed. Each curated milestone must rigorously substantiate three dimensions: the verifiable event details, the completeness of the primary evidence chain, and the mechanism by which it reshapes the long-term trajectory of AI development.">
           EpochArc is neither an academic bibliography database nor a real-time news feed. Each curated milestone must rigorously substantiate three dimensions: the verifiable event details, the completeness of the primary evidence chain, and the mechanism by which it reshapes the long-term trajectory of AI development.
@@ -79,7 +85,7 @@
         </p>
       </section>
 
-      <section class="panel">
+      <section class="panel" id="significance">
         <h2 data-zh="重要度分级与评定标准" data-en="Significance Levels & Curation Criteria">Significance Levels & Curation Criteria</h2>
         <div class="definition-list">
           <div class="definition">
@@ -100,7 +106,7 @@
         </p>
       </section>
 
-      <section class="panel">
+      <section class="panel" id="source-standards">
         <h2 data-zh="来源分级与证据标准" data-en="Source Hierarchy & Evidence Standards">Source Hierarchy & Evidence Standards</h2>
         <div class="definition-list">
           <div class="definition">
@@ -118,7 +124,7 @@
         </div>
       </section>
 
-      <section class="panel">
+      <section class="panel" id="impact-consensus">
         <h2 data-zh="影响指数评分与共识分类" data-en="Impact Scoring & Consensus Taxonomy">Impact Scoring & Consensus Taxonomy</h2>
         <p data-zh="影响指数（Impact Score）与 L1-L3 历史重要度相互独立。它综合影响维度的严重性、证据强度、持续性和受影响范围；同一影响维度只计算绝对值最大的严重度，避免重复条目抬高分数。该指标是可复算的展示性启发，不替代一手证据。" data-en="The Impact Score (scaled 0-10) is independent from the L1-L3 significance level. It combines dimensional severity, evidentiary strength, durability, and affected scope; only the largest absolute severity in each dimension is counted to prevent duplicate entries from inflating the score. It is a reproducible display heuristic and does not supersede primary evidence.">
           The Impact Score (scaled 0-10) is independent from the L1-L3 significance level. It combines dimensional severity, evidentiary strength, durability, and affected scope; only the largest absolute severity in each dimension is counted to prevent duplicate entries from inflating the score. It is a reproducible display heuristic and does not supersede primary evidence.
@@ -141,12 +147,31 @@
         </p>
       </section>
 
-      <section class="panel">
+      <section class="panel" id="limitations">
         <h2 data-zh="局限性声明" data-en="Limitations Statement">Limitations Statement</h2>
         <p data-zh="EpochArc 系出于结构化策展目的设立的独立项目，不应被视为权威的学术引文数据库、投资建议参考，或监管合规结论。所有条目内容及评分均将根据最新的权威事实证据和一手来源变动进行动态修订。" data-en="EpochArc is a structures-based curation initiative; it does not constitute an exhaustive academic reference library, investment advice, or formal regulatory findings. All entries are subject to continuous refinement and revision as new empirical evidence emerges.">
           EpochArc is a structures-based curation initiative; it does not constitute an exhaustive academic reference library, investment advice, or formal regulatory findings. All entries are subject to continuous refinement and revision as new empirical evidence emerges.
         </p>
       </section>
+      </div>
+
+      <aside class="page-rail methods-sidebar" aria-label="Methodology sections">
+        <nav class="rail-card methods-nav">
+          <h2 class="rail-card-title" data-zh="本页目录" data-en="On this page">本页目录</h2>
+          <div class="rail-link-list">
+            <a href="#editorial-scope" data-zh="收录范围与原则" data-en="Scope and principles">收录范围与原则</a>
+            <a href="#significance" data-zh="重要度分级" data-en="Significance levels">重要度分级</a>
+            <a href="#source-standards" data-zh="来源与证据" data-en="Sources and evidence">来源与证据</a>
+            <a href="#impact-consensus" data-zh="影响与共识" data-en="Impact and consensus">影响与共识</a>
+            <a href="#possible-directions" data-zh="可能方向" data-en="Possible Directions">可能方向</a>
+            <a href="#limitations" data-zh="局限性" data-en="Limitations">局限性</a>
+          </div>
+        </nav>
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="统一定义" data-en="One shared definition">统一定义</h2>
+          <p class="methods-rail-note" data-zh="页脚中的“方法与来源”与方向页的评审说明都指向本页；这里是全站唯一的规则定义。" data-en="Footer methodology links and direction review notes both point here. This is the site's single source of truth for editorial rules.">页脚中的“方法与来源”与方向页的评审说明都指向本页；这里是全站唯一的规则定义。</p>
+        </section>
+      </aside>
     </div>
   </main>
 

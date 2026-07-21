@@ -248,6 +248,10 @@ else:
         conclusion_en = a['conclusion']['en']
         conclusion_zh = a['conclusion']['zhHans']
         cover_theme = a.get('coverTheme', 'default')
+        all_anchor_events = collect_all_anchor_events(a)
+        date_start, date_end = get_date_range(all_anchor_events)
+        date_range = f"{date_start} — {date_end}" if date_start and date_end else '—'
+        updated_at = a.get('editorial', {}).get('updatedAt', '—')
 
         # 中文大写数字映射
         ZH_NUMS = {1: '一', 2: '二', 3: '三', 4: '四', 5: '五', 6: '六', 7: '七', 8: '八', 9: '九', 10: '十'}
@@ -416,6 +420,10 @@ else:
         page_html = page_html.replace('{{CONCLUSION_ZH}}', html_escape(conclusion_zh))
         page_html = page_html.replace('{{RELATED_ARCS_HTML}}', related_arcs_html)
         page_html = page_html.replace('{{COVER_THEME}}', cover_theme)
+        page_html = page_html.replace('{{CHAPTER_COUNT}}', str(len(a.get('chapters', []))))
+        page_html = page_html.replace('{{EVENT_COUNT}}', str(len(all_anchor_events)))
+        page_html = page_html.replace('{{DATE_RANGE}}', html_escape(date_range))
+        page_html = page_html.replace('{{UPDATED_AT}}', html_escape(updated_at))
         page_html = page_html.replace('{{SCHEMA_JSON_LD}}', schema_json_ld)
         page_html = page_html.replace('{{TOC_HTML}}', toc_html)
 

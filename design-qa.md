@@ -1,39 +1,59 @@
-# Directions redesign QA
+# EpochArc site-wide design system QA
 
-## Reference and build
+## Comparison target
 
-- Reference: `/Users/gang/.codex/generated_images/019f7d19-4d55-7e92-9f9a-ba53ae1b131f/exec-ca5ad859-e741-45a2-a708-2890ad6b7b4f.png`
-- Implemented route: `http://127.0.0.1:4176/zh-hans/directions/`
-- Desktop viewport: 1440 × 1024, light theme, Chinese locale
-- Implementation screenshot: `/tmp/epocharc-directions-qa/directions-desktop-pass2.png`
-- Side-by-side comparison: `/tmp/epocharc-directions-qa/directions-desktop-comparison-pass2.png`
-- Mobile screenshots: `/tmp/epocharc-directions-qa/directions-mobile-top.png` and `/tmp/epocharc-directions-qa/directions-mobile-footer.png`
+- Source visual truth:
+  - `/Users/gang/.codex/generated_images/019f7d19-4d55-7e92-9f9a-ba53ae1b131f/exec-2f3f2657-360f-432c-9342-8889285434ea.png` (selected editorial structure)
+  - `/Users/gang/.codex/generated_images/019f7d19-4d55-7e92-9f9a-ba53ae1b131f/exec-33fea254-ba46-4921-9fff-2884e86daaaf.png` (selected right-side information rail)
+- Representative implementation: `http://127.0.0.1:4173/arcs/ai-agents/`
+- Implementation screenshot: `/tmp/epocharc-design-qa-arc.png`
+- Full-view comparison evidence: `/tmp/epocharc-design-qa-comparison.png`
+- Focused header/navigation/summary/rail comparison: `/tmp/epocharc-design-qa-focused-comparison.png`
+- Desktop viewport: 1440 × 1024, light theme, Chinese locale.
+- Mobile viewport: 390 × 844, light theme, Chinese locale.
 
-## Written overrides applied
+## Pages checked
 
-- Removed review cadence from the index ledger.
-- Replaced “查看证据” with “查看详情”.
-- Defined “查看方向评审规则” as an anchored section of Methodology & Sources.
-- Defined RSS / Atom as the machine-readable feed and Methodology & Sources as the human-readable methodology page.
+- Arc detail: `/tmp/epocharc-design-qa-arc.png`
+- Directions index: `/tmp/epocharc-design-qa-directions-list.png`
+- Direction detail: `/tmp/epocharc-design-qa-direction-detail.png`
+- Event detail: `/tmp/epocharc-design-qa-event-detail.png`
+- Methodology: `/tmp/epocharc-design-qa-methods.png`
+- Mobile arc: `/tmp/epocharc-design-qa-arc-mobile.png`
+- Mobile direction detail: `/tmp/epocharc-design-qa-direction-detail-mobile.png`
+- Mobile event after overflow and top-nav fixes: `/tmp/epocharc-design-qa-event-mobile-topnav-fixed.png`
+
+## Findings
+
+- No remaining P0, P1, or P2 mismatch was found.
+- Fonts and typography: system sans and mono metadata remain consistent with the source direction; titles, body copy, and rail labels preserve a clear editorial hierarchy without clipping.
+- Spacing and layout rhythm: every non-home page uses the 960px shell, left-aligned page header, unified return capsule, and the same 220px detail rail. List pages use the same outer grid without forcing a detail rail.
+- Colors and visual tokens: existing near-white background, black text, cool gray borders, and electric-blue active state are reused in light and dark themes; no new gradients or heavy shadows were introduced.
+- Image and asset fidelity: the existing EpochArc logo is retained. The design target does not require additional imagery, illustration, or generated assets.
+- Copy and content: page-specific content remains intact. Methodology is explicitly presented as the single shared definition for footer and direction-review links.
+- Icons: existing logo, language, theme, and return icon language is consistent across tested pages.
+- Responsiveness: the information rail moves before long-form content below 820px, all tested 390px pages fit the viewport, and the chapter capsules remain horizontally scrollable.
 
 ## Comparison history
 
-1. Pass 1: the content was about 128 px taller than the reference at 1440 × 1024, leaving the footer below the fold. Severity: P2 layout/fidelity.
-2. Fix: reduced index-only top/bottom padding, hero gaps, ledger row padding, and method-note spacing without changing type scale or information hierarchy.
-3. Pass 2: all four rows, the methodology note, and the shared footer fit in the reference viewport. No P1 or P2 mismatches remain.
+1. Initial mobile event-detail pass found a P2 horizontal overflow: long source URLs expanded the source list from 375px to 402px.
+2. Fix: added `overflow-wrap: anywhere` and `word-break: break-word` to `.source-meta` in `src/css/detail.css`.
+3. Post-fix evidence: the event detail reports `scrollWidth: 375` and `clientWidth: 375`; source metadata no longer overflows.
+4. Initial mobile header pass showed cramped two-line navigation labels.
+5. Fix: below 560px the wordmark text hides while the source logo remains, and navigation controls use compact, non-wrapping labels.
+6. Post-fix evidence: `/tmp/epocharc-design-qa-event-mobile-topnav-fixed.png` shows the shared header fitting cleanly at 390 × 844.
 
-The full-view comparison includes every changed region, including the footer, so a separate focused-region comparison was not necessary.
+## Functional checks
 
-## Functional and responsive checks
+- Language selector switched the event page from Chinese to English and updated `document.documentElement.lang` to `en`.
+- Theme control switched `body[data-theme]` from `light` to `dark` and was restored afterward.
+- Arc chapter links, detail back links, event/source links, and methodology anchors remain semantic links.
+- Active top-level navigation uses `aria-current="page"`.
+- No browser console errors or warnings were present on the final tested state.
+- Production build and content validation passed for 94 events, 272 sources, 4 directions, and 6 arcs. Existing data-quality warnings remain non-blocking and unrelated to this visual change.
 
-- 390 × 844 mobile viewport: no horizontal overflow; rows collapse into labeled metrics and preserve readable spacing.
-- The mobile footer stacks cleanly and exposes both destinations.
-- “查看方向评审规则” navigates to `/zh-hans/methods/#possible-directions`, where the matching heading exists.
-- Four “查看详情” links are rendered; the first was exercised and loaded `/zh-hans/directions/ai-software-teams/` with the expected heading.
-- RSS / Atom and Methodology & Sources links resolve to distinct destinations.
-- No browser console errors were present on the tested Directions index, methodology section, or direction detail flow.
-- Focus-visible treatments remain available for row links and footer links; semantic headings and links are preserved.
+## Follow-up polish
 
-## Final result
+- P3: the direction index remains a ledger rather than adopting a sidebar; this is intentional because it is a collection page, not a single-record detail page.
 
-Passed. The implementation follows the selected editorial-ledger direction, honors the requested copy and information-architecture overrides, remains consistent with EpochArc’s existing navigation and tokens, and is responsive without critical or major visual defects.
+final result: passed

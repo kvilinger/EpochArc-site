@@ -202,85 +202,105 @@ def build_related_events(forecast, events_by_id):
 
 def build_detail_content(forecast, events_by_id, sources_by_id):
     type_en, type_zh = pair_for(TYPE_LABELS, forecast.get('forecastType'))
-    cadence_en, cadence_zh = pair_for(CADENCE_LABELS, forecast.get('reviewCadence'))
     confidence = forecast.get('confidence', {})
     confidence_en, confidence_zh = pair_for(CONFIDENCE_LABELS, confidence.get('level'))
     signals = forecast.get('signals', [])
+    observed_count = sum(signal.get('status') == 'observed' for signal in signals)
+    source_ids = {
+        source_ref.get('sourceId')
+        for source_ref in forecast.get('sources', [])
+        if source_ref.get('sourceId')
+    }
+    for signal in signals:
+        source_ids.update(source_id for source_id in signal.get('sourceIds', []) if source_id)
+    source_ids.update(source_id for source_id in forecast.get('consensusBasis', {}).get('sourceIds', []) if source_id)
     signal_html = ''.join(build_signal(signal, index, events_by_id, sources_by_id) for index, signal in enumerate(signals, start=1))
     rationale = forecast.get('rationale', {})
     consensus = forecast.get('consensusBasis', {})
     open_questions = ''.join(localized_element('li', question) for question in rationale.get('openQuestions', []))
 
     return f'''
-    <article>
-      <header class="direction-hero">
-        <div>
-          <div class="direction-status-line">
-            <span data-zh="观察中" data-en="Monitoring">Monitoring</span>
-            <span data-zh="{html(type_zh)}" data-en="{html(type_en)}">{html(type_en)}</span>
+    <header class="page-header direction-hero">
+      <div class="direction-status-line">
+        <span data-zh="观察中" data-en="Monitoring">Monitoring</span>
+        <span data-zh="{html(type_zh)}" data-en="{html(type_en)}">{html(type_en)}</span>
+      </div>
+      {localized_element('h1', forecast.get('title', {}), 'page-title')}
+      {localized_element('p', forecast.get('thesis', {}), 'page-lead direction-thesis')}
+    </header>
+
+    <div class="page-layout direction-detail-layout">
+      <article class="page-main direction-main">
+        <section class="direction-narrative-grid">
+          <div class="direction-prose-block">
+            <span class="direction-section-label" data-zh="当前基线" data-en="Current baseline">Current baseline</span>
+            <h2 data-zh="已经成立的部分" data-en="What is already true">What is already true</h2>
+            {localized_element('p', rationale.get('currentBaseline', {}))}
           </div>
-          {localized_element('h1', forecast.get('title', {}))}
-          {localized_element('p', forecast.get('thesis', {}), 'direction-thesis')}
-        </div>
-        <dl class="direction-meta">
-          <div><dt data-zh="预计窗口" data-en="Expected window">Expected window</dt><dd>{html(expected_window(forecast))}</dd></div>
-          <div><dt data-zh="信心 / 证据" data-en="Confidence / evidence">Confidence / evidence</dt><dd data-zh="{html(confidence_zh)} / {html(confidence.get('evidenceGrade', ''))} 级" data-en="{html(confidence_en)} / Grade {html(confidence.get('evidenceGrade', ''))}">{html(confidence_en)} / Grade {html(confidence.get('evidenceGrade', ''))}</dd></div>
-          <div><dt data-zh="上次复核" data-en="Last reviewed">Last reviewed</dt><dd>{html(forecast.get('lastReviewedAt', ''))}</dd></div>
-          <div><dt data-zh="复核节奏" data-en="Review cadence">Review cadence</dt><dd data-zh="{html(cadence_zh)}" data-en="{html(cadence_en)}">{html(cadence_en)}</dd></div>
-        </dl>
-      </header>
+          <div class="direction-prose-block">
+            <span class="direction-section-label" data-zh="核心判断" data-en="Core judgment">Core judgment</span>
+            <h2 data-zh="为何值得持续观察" data-en="Why this direction matters">Why this direction matters</h2>
+            {localized_element('p', rationale.get('whyThisDirection', {}))}
+          </div>
+        </section>
 
-      <section class="direction-narrative-grid">
-        <div class="direction-prose-block">
-          <span class="direction-section-label" data-zh="当前基线" data-en="Current baseline">Current baseline</span>
-          <h2 data-zh="已经成立的部分" data-en="What is already true">What is already true</h2>
-          {localized_element('p', rationale.get('currentBaseline', {}))}
-        </div>
-        <div class="direction-prose-block">
-          <span class="direction-section-label" data-zh="核心判断" data-en="Core judgment">Core judgment</span>
-          <h2 data-zh="为何值得持续观察" data-en="Why this direction matters">Why this direction matters</h2>
-          {localized_element('p', rationale.get('whyThisDirection', {}))}
-        </div>
-      </section>
+        <section class="direction-evidence">
+          <header class="direction-evidence-head">
+            <span class="direction-section-label" data-zh="证据轨迹" data-en="Evidence trail">Evidence trail</span>
+            <h2 data-zh="已观察信号" data-en="Observed signals">Observed signals</h2>
+            <p data-zh="每个信号都连接到站内历史事件和公开来源，后续评审会继续增加、修订或降级这些信号。" data-en="Each signal links back to historical events and public sources. Later reviews may add, revise, or downgrade it.">Each signal links back to historical events and public sources. Later reviews may add, revise, or downgrade it.</p>
+          </header>
+          <ol class="signal-track">{signal_html}</ol>
+        </section>
 
-      <section class="direction-evidence">
-        <header class="direction-evidence-head">
-          <span class="direction-section-label" data-zh="证据轨迹" data-en="Evidence trail">Evidence trail</span>
-          <h2 data-zh="已观察信号" data-en="Observed signals">Observed signals</h2>
-          <p data-zh="每个信号都连接到站内历史事件和公开来源，后续评审会继续增加、修订或降级这些信号。" data-en="Each signal links back to historical events and public sources. Later reviews may add, revise, or downgrade it.">Each signal links back to historical events and public sources. Later reviews may add, revise, or downgrade it.</p>
-        </header>
-        <ol class="signal-track">{signal_html}</ol>
-      </section>
+        <section class="direction-review-grid">
+          <div class="direction-counter">
+            <span class="direction-section-label" data-zh="反向条件" data-en="Counter-signal">Counter-signal</span>
+            <h2 data-zh="什么会削弱这个方向" data-en="What would weaken this direction">What would weaken this direction</h2>
+            {localized_element('p', rationale.get('counterSignal', {}))}
+          </div>
+          <div class="direction-consensus">
+            <span class="direction-consensus-badge">{html(consensus.get('resolutionMode', 'monitor_only').replace('_', ' '))}</span>
+            <span class="direction-section-label" data-zh="共识基础" data-en="Consensus basis">Consensus basis</span>
+            <h2 data-zh="为什么只做持续监测" data-en="Why this remains monitored">Why this remains monitored</h2>
+            {localized_element('p', consensus.get('summary', {}))}
+          </div>
+        </section>
 
-      <section class="direction-review-grid">
-        <div class="direction-counter">
-          <span class="direction-section-label" data-zh="反向条件" data-en="Counter-signal">Counter-signal</span>
-          <h2 data-zh="什么会削弱这个方向" data-en="What would weaken this direction">What would weaken this direction</h2>
-          {localized_element('p', rationale.get('counterSignal', {}))}
-        </div>
-        <div class="direction-consensus">
-          <span class="direction-consensus-badge">{html(consensus.get('resolutionMode', 'monitor_only').replace('_', ' '))}</span>
-          <span class="direction-section-label" data-zh="共识基础" data-en="Consensus basis">Consensus basis</span>
-          <h2 data-zh="为什么只做持续监测" data-en="Why this remains monitored">Why this remains monitored</h2>
-          {localized_element('p', consensus.get('summary', {}))}
-        </div>
-      </section>
+        <section class="direction-questions">
+          <span class="direction-section-label" data-zh="待复核问题" data-en="Questions to review">Questions to review</span>
+          <h2 data-zh="开放问题" data-en="Open questions">Open questions</h2>
+          <ol class="direction-question-list">{open_questions}</ol>
+        </section>
 
-      <section class="direction-questions">
-        <span class="direction-section-label" data-zh="下一轮复核" data-en="Next review">Next review</span>
-        <h2 data-zh="开放问题" data-en="Open questions">Open questions</h2>
-        <ol class="direction-question-list">{open_questions}</ol>
-      </section>
+        <section class="direction-references">
+          <span class="direction-section-label" data-zh="上下文" data-en="Context">Context</span>
+          <h2 data-zh="相关事件" data-en="Related events">Related events</h2>
+          <div class="direction-related-events">{build_related_events(forecast, events_by_id)}</div>
+          <span class="direction-section-label" data-zh="证据目录" data-en="Evidence registry">Evidence registry</span>
+          <h2 data-zh="公开来源" data-en="Public sources">Public sources</h2>
+          <ul class="direction-source-list">{build_source_registry(forecast, sources_by_id)}</ul>
+        </section>
+      </article>
 
-      <section class="direction-references">
-        <span class="direction-section-label" data-zh="上下文" data-en="Context">Context</span>
-        <h2 data-zh="相关事件" data-en="Related events">Related events</h2>
-        <div class="direction-related-events">{build_related_events(forecast, events_by_id)}</div>
-        <span class="direction-section-label" data-zh="证据目录" data-en="Evidence registry">Evidence registry</span>
-        <h2 data-zh="公开来源" data-en="Public sources">Public sources</h2>
-        <ul class="direction-source-list">{build_source_registry(forecast, sources_by_id)}</ul>
-      </section>
-    </article>'''
+      <aside class="page-rail direction-sidebar" aria-label="Direction overview">
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="方向概览" data-en="Direction overview">方向概览</h2>
+          <dl class="rail-facts direction-meta">
+            <div><dt data-zh="预计窗口" data-en="Expected window">Expected window</dt><dd>{html(expected_window(forecast))}</dd></div>
+            <div><dt data-zh="信心 / 证据" data-en="Confidence / evidence">Confidence / evidence</dt><dd data-zh="{html(confidence_zh)} / {html(confidence.get('evidenceGrade', ''))} 级" data-en="{html(confidence_en)} / Grade {html(confidence.get('evidenceGrade', ''))}">{html(confidence_en)} / Grade {html(confidence.get('evidenceGrade', ''))}</dd></div>
+            <div><dt data-zh="已观察信号" data-en="Observed signals">Observed signals</dt><dd>{observed_count}</dd></div>
+            <div><dt data-zh="公开来源" data-en="Public sources">Public sources</dt><dd>{len(source_ids)}</dd></div>
+            <div><dt data-zh="上次复核" data-en="Last reviewed">Last reviewed</dt><dd>{html(forecast.get('lastReviewedAt', ''))}</dd></div>
+          </dl>
+        </section>
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="评审说明" data-en="Review note">评审说明</h2>
+          <p class="direction-rail-note" data-zh="方向只表示持续监测，不代表确定性预测。判断依据统一记录在方法与来源页。" data-en="Directions are monitored, not treated as certain predictions. The shared evaluation rules live on Methodology & Sources.">方向只表示持续监测，不代表确定性预测。判断依据统一记录在方法与来源页。</p>
+          <a class="direction-inline-link" href="/methods/#possible-directions" data-zh="查看方法与来源 →" data-en="Read methodology and sources →">查看方法与来源 →</a>
+        </section>
+      </aside>
+    </div>'''
 
 
 def schema_for(forecast):

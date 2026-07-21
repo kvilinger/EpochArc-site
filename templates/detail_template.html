@@ -30,7 +30,7 @@
   
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
   
-  <link rel="stylesheet" href="../../src/css/detail.css?v=2.4.0" />
+  <link rel="stylesheet" href="../../src/css/detail.css?v=2.5.0" />
   {{SCHEMA_JSON_LD}}
 </head>
 <body data-theme="light">
@@ -69,23 +69,21 @@
   </header>
 
   <!-- Breadcrumbs & Event Details -->
-  <main class="detail-page-container">
-    <a href="/#event={{ID}}" class="back-link">
+  <main class="site-page detail-page-container">
+    <a href="/#event={{ID}}" class="page-back back-link">
       <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
       </svg>
       <span data-zh="返回时间轴" data-en="Back to Timeline">返回时间轴</span>
     </a>
 
-    <article class="event-detail-card">
-      <header class="event-header">
-        <div class="event-date">{{DATE}}</div>
-        <h1 class="event-title" data-zh="{{TITLE_ZH}}" data-en="{{TITLE_EN}}">{{TITLE_EN}}</h1>
-        <div class="event-meta-row">
-          <span class="category-badge {{PRIMARY_CAT}}">{{PRIMARY_CAT_NAME}}</span>
-          {{SECONDARY_CAT_HTML}}
-        </div>
-      </header>
+    <header class="page-header event-header">
+      <p class="page-kicker" data-zh="信息节点" data-en="Event record">信息节点</p>
+      <h1 class="page-title event-title" data-zh="{{TITLE_ZH}}" data-en="{{TITLE_EN}}">{{TITLE_EN}}</h1>
+    </header>
+
+    <div class="page-layout event-detail-layout">
+      <article class="page-main event-detail-card">
 
       <!-- Event Summary & Narrative -->
       <section class="detail-block">
@@ -103,25 +101,7 @@
 
       <!-- Consensus & Sources -->
       <section class="detail-block">
-        <h3 data-zh="共识度与来源" data-en="Consensus &amp; Sources">共识度与来源</h3>
-        <div class="evidence-summary">
-          <div class="evidence-item">
-            <span class="label" data-zh="重要度" data-en="Significance">重要度</span>
-            <span class="val">L{{SIGNIFICANCE}}</span>
-          </div>
-          <div class="evidence-item">
-            <span class="label" data-zh="分类" data-en="Category">分类</span>
-            <span class="val">{{CATEGORIES}}</span>
-          </div>
-          <div class="evidence-item">
-            <span class="label" data-zh="共识度" data-en="Consensus">共识度</span>
-            <span class="val">{{CONSENSUS}}</span>
-          </div>
-          <div class="evidence-item">
-            <span class="label" data-zh="影响指数" data-en="Impact Index">影响指数</span>
-            <span class="val">{{IMPACT_INDEX}}/10</span>
-          </div>
-        </div>
+        <h3 data-zh="证据与来源" data-en="Evidence &amp; Sources">证据与来源</h3>
         <ul class="source-list">
           {{SOURCES}}
         </ul>
@@ -130,7 +110,30 @@
       <!-- Related Events Visualization Section -->
       {{RELATED}}
 
-    </article>
+      </article>
+
+      <aside class="page-rail event-detail-sidebar" aria-label="Event overview">
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="节点概览" data-en="Event overview">节点概览</h2>
+          <div class="event-meta-row">
+            <span class="category-badge {{PRIMARY_CAT}}">{{PRIMARY_CAT_NAME}}</span>
+            {{SECONDARY_CAT_HTML}}
+          </div>
+          <dl class="rail-facts">
+            <div><dt data-zh="日期" data-en="Date">日期</dt><dd>{{DATE}}</dd></div>
+            <div><dt data-zh="重要度" data-en="Significance">重要度</dt><dd>L{{SIGNIFICANCE}}</dd></div>
+            <div><dt data-zh="分类" data-en="Category">分类</dt><dd>{{CATEGORIES}}</dd></div>
+            <div><dt data-zh="共识度" data-en="Consensus">共识度</dt><dd>{{CONSENSUS}}</dd></div>
+            <div><dt data-zh="影响指数" data-en="Impact index">影响指数</dt><dd>{{IMPACT_INDEX}} / 10</dd></div>
+          </dl>
+        </section>
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="评估说明" data-en="Assessment note">评估说明</h2>
+          <p class="event-rail-note" data-zh="评分用于提供结构化线索，不替代一手来源。完整标准统一记录在方法与来源页。" data-en="Scores provide structured context and do not replace primary sources. The shared standard lives on Methodology & Sources.">评分用于提供结构化线索，不替代一手来源。完整标准统一记录在方法与来源页。</p>
+          <a class="event-rail-link" href="/methods" data-zh="查看方法与来源 →" data-en="Read methodology and sources →">查看方法与来源 →</a>
+        </section>
+      </aside>
+    </div>
   </main>
 
   <footer class="pagefoot">

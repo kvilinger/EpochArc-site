@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs" />
 
   <link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="src/css/arcs.css?v=2.4.0" />
+  <link rel="stylesheet" href="src/css/arcs.css?v=2.5.0" />
 </head>
 <body data-theme="light">
 
@@ -31,7 +31,7 @@
         <span>EpochArc</span>
       </a>
       <div class="topnav-actions">
-        <a href="/arcs" class="control-btn nav-arcs-btn" style="color: var(--accent); border-color: var(--accent);">
+        <a href="/arcs" class="control-btn nav-arcs-btn" aria-current="page">
           <span data-zh="专题" data-en="Arcs">专题</span>
         </a>
         <a href="/directions" class="control-btn nav-directions-btn">
@@ -56,11 +56,16 @@
     </div>
   </header>
 
-  <main class="arcs-page-container">
-    <div class="arcs-page-header">
-      <h1 data-zh="专题叙事" data-en="Narrative Arcs">专题叙事</h1>
-      <p data-zh="将散落的 AI 里程碑串联为可阅读的叙事线" data-en="Threading scattered AI milestones into readable narrative arcs">将散落的 AI 里程碑串联为可阅读的叙事线</p>
-    </div>
+  <main class="site-page arcs-page-container">
+    <a href="/" class="page-back">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+      <span data-zh="返回时间轴" data-en="Back to Timeline">返回时间轴</span>
+    </a>
+    <header class="page-header arcs-page-header">
+      <p class="page-kicker" data-zh="长期叙事线" data-en="Long-form narratives">长期叙事线</p>
+      <h1 class="page-title" data-zh="专题叙事" data-en="Narrative Arcs">专题叙事</h1>
+      <p class="page-lead" data-zh="将散落的 AI 里程碑串联为可阅读的叙事线" data-en="Threading scattered AI milestones into readable narrative arcs">将散落的 AI 里程碑串联为可阅读的叙事线</p>
+    </header>
 
     <div class="arcs-grid">
       
@@ -73,8 +78,8 @@
             </div>
             <div class="arc-card-tags">
               <span class="category-badge product" data-zh="产品工具" data-en="Products &amp; Tools">Products &amp; Tools</span>
-<span class="category-badge capability" data-zh="能力突破" data-en="Capability Breakthrough">Capability Breakthrough</span>
 <span class="category-badge society" data-zh="社会文化" data-en="Society &amp; Culture">Society &amp; Culture</span>
+<span class="category-badge capability" data-zh="能力突破" data-en="Capability Breakthrough">Capability Breakthrough</span>
 
             </div>
           </a>
@@ -89,7 +94,7 @@
             </div>
             <div class="arc-card-tags">
               <span class="category-badge safety" data-zh="安全伦理" data-en="Safety &amp; Ethics">Safety &amp; Ethics</span>
-<span class="category-badge product" data-zh="产品工具" data-en="Products &amp; Tools">Products &amp; Tools</span>
+<span class="category-badge governance" data-zh="治理监管" data-en="Governance &amp; Regulation">Governance &amp; Regulation</span>
 <span class="category-badge society" data-zh="社会文化" data-en="Society &amp; Culture">Society &amp; Culture</span>
 
             </div>

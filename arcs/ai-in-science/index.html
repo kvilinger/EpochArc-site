@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs/ai-in-science/" />
 
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.4.0" />
+  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.5.0" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,7 +56,7 @@
         <span>EpochArc</span>
       </a>
       <div class="topnav-actions">
-        <a href="/arcs" class="control-btn nav-arcs-btn">
+        <a href="/arcs" class="control-btn nav-arcs-btn" aria-current="page">
           <span data-zh="专题" data-en="Arcs">专题</span>
         </a>
         <a href="/directions" class="control-btn nav-directions-btn">
@@ -81,34 +81,37 @@
     </div>
   </header>
 
-  <main class="arc-detail-container">
-    <a href="/arcs" class="back-link">
+  <main class="site-page arc-detail-container">
+    <a href="/arcs" class="page-back back-link">
       <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
       </svg>
       <span data-zh="返回专题列表" data-en="Back to Arcs">返回专题列表</span>
     </a>
 
-    <div class="arc-hero">
-      <h1 data-zh="AI 的科学征程：从游戏到诺贝尔奖" data-en="AI in Science: From Games to Nobel Prizes">AI in Science: From Games to Nobel Prizes</h1>
-      <p class="arc-subtitle" data-zh="追踪 AI 从游戏算法到诺贝尔奖级科学发现的完整路径" data-en="Tracing AI&#39;s path from game-playing algorithms to Nobel Prize-winning scientific discoveries">Tracing AI&#39;s path from game-playing algorithms to Nobel Prize-winning scientific discoveries</p>
-    </div>
+    <header class="page-header arc-hero">
+      <p class="page-kicker" data-zh="专题叙事" data-en="Narrative Arc">专题叙事</p>
+      <h1 class="page-title" data-zh="AI 的科学征程：从游戏到诺贝尔奖" data-en="AI in Science: From Games to Nobel Prizes">AI in Science: From Games to Nobel Prizes</h1>
+      <p class="page-lead arc-subtitle" data-zh="追踪 AI 从游戏算法到诺贝尔奖级科学发现的完整路径" data-en="Tracing AI&#39;s path from game-playing algorithms to Nobel Prize-winning scientific discoveries">Tracing AI&#39;s path from game-playing algorithms to Nobel Prize-winning scientific discoveries</p>
+    </header>
 
-    <!-- Table of Contents -->
-    <div class="arc-toc">
+    <div class="page-layout arc-detail-grid">
+      <article class="page-main arc-main">
+        <!-- Table of Contents -->
+        <div class="arc-toc">
 <a href="#chapter-games-begin" data-zh="一、游戏时代" data-en="01. The Games Begin">01. The Games Begin</a>
 <a href="#chapter-the-go-moment" data-zh="二、改变一切的棋局" data-en="02. The Moment That Changed Everything">02. The Moment That Changed Everything</a>
 <a href="#chapter-from-game-to-science" data-zh="三、从游戏到科学" data-en="03. From Game to Science">03. From Game to Science</a>
 <a href="#chapter-recognition-and-frontiers" data-zh="四、认可与新前沿" data-en="04. Recognition and New Frontiers">04. Recognition and New Frontiers</a>
 </div>
 
-    <!-- Abstract -->
-    <div class="arc-abstract">
-      <p data-zh="1997 年，IBM 的 Deep Blue 在国际象棋上击败了 Garry Kasparov。世界称之为噱头。2024 年，AI 研究人员获得了诺贝尔化学奖。在这两个里程碑之间，AI 从一个会玩游戏的奇观，转变成了科学发现的基本工具 — 解决了生物学中长达 50 年的重大挑战、在国际数学奥林匹克竞赛中获得金牌、并重塑了科学本身的实践方式。本专题追溯这一转变，并提出一个论点：真正的 AI 革命不在聊天机器人或图像生成器中 — 而在科学理解的加速中。" data-en="In 1997, IBM&#39;s Deep Blue beat Garry Kasparov at chess. The world called it a stunt. In 2024, AI researchers won the Nobel Prize in Chemistry. Between these two milestones, AI transformed from a curiosity that could play games into an essential instrument of scientific discovery — solving a 50-year grand challenge in biology, winning a gold medal at the International Mathematical Olympiad, and reshaping how science itself is done. This arc traces that transformation, and argues that the real AI revolution is not in chatbots or image generators — it is in the acceleration of scientific understanding.">In 1997, IBM&#39;s Deep Blue beat Garry Kasparov at chess. The world called it a stunt. In 2024, AI researchers won the Nobel Prize in Chemistry. Between these two milestones, AI transformed from a curiosity that could play games into an essential instrument of scientific discovery — solving a 50-year grand challenge in biology, winning a gold medal at the International Mathematical Olympiad, and reshaping how science itself is done. This arc traces that transformation, and argues that the real AI revolution is not in chatbots or image generators — it is in the acceleration of scientific understanding.</p>
-    </div>
+        <!-- Abstract -->
+        <div class="arc-abstract">
+          <p data-zh="1997 年，IBM 的 Deep Blue 在国际象棋上击败了 Garry Kasparov。世界称之为噱头。2024 年，AI 研究人员获得了诺贝尔化学奖。在这两个里程碑之间，AI 从一个会玩游戏的奇观，转变成了科学发现的基本工具 — 解决了生物学中长达 50 年的重大挑战、在国际数学奥林匹克竞赛中获得金牌、并重塑了科学本身的实践方式。本专题追溯这一转变，并提出一个论点：真正的 AI 革命不在聊天机器人或图像生成器中 — 而在科学理解的加速中。" data-en="In 1997, IBM&#39;s Deep Blue beat Garry Kasparov at chess. The world called it a stunt. In 2024, AI researchers won the Nobel Prize in Chemistry. Between these two milestones, AI transformed from a curiosity that could play games into an essential instrument of scientific discovery — solving a 50-year grand challenge in biology, winning a gold medal at the International Mathematical Olympiad, and reshaping how science itself is done. This arc traces that transformation, and argues that the real AI revolution is not in chatbots or image generators — it is in the acceleration of scientific understanding.">In 1997, IBM&#39;s Deep Blue beat Garry Kasparov at chess. The world called it a stunt. In 2024, AI researchers won the Nobel Prize in Chemistry. Between these two milestones, AI transformed from a curiosity that could play games into an essential instrument of scientific discovery — solving a 50-year grand challenge in biology, winning a gold medal at the International Mathematical Olympiad, and reshaping how science itself is done. This arc traces that transformation, and argues that the real AI revolution is not in chatbots or image generators — it is in the acceleration of scientific understanding.</p>
+        </div>
 
-    <!-- Chapters -->
-    
+        <!-- Chapters -->
+
               <section class="arc-chapter" id="chapter-games-begin">
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
@@ -245,10 +248,10 @@
                 </div>
               </section>
 
-    <!-- Conclusion -->
-    <div class="arc-conclusion">
-      <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
-      <p class="arc-conclusion-text" data-zh="AI 在科学中的故事，不是机器取代科学家的故事。而是关于科学发现的面貌发生了根本性扩展。Deep Blue 搜索。AlphaGo 直觉。AlphaFold 发现。Gemini 以金牌水平推理。每一步都扩展了机器能为人类知识做出的贡献的边界。
+        <!-- Conclusion -->
+        <div class="arc-conclusion">
+          <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
+          <p class="arc-conclusion-text" data-zh="AI 在科学中的故事，不是机器取代科学家的故事。而是关于科学发现的面貌发生了根本性扩展。Deep Blue 搜索。AlphaGo 直觉。AlphaFold 发现。Gemini 以金牌水平推理。每一步都扩展了机器能为人类知识做出的贡献的边界。
 
 诺贝尔奖是科学界承认 AI 已经跨越了一个门槛的时刻 — 从实验室奇观到基本工具。IMO 金牌证明了通用 AI 可以在严谨推理上匹配最优秀的人类头脑。游戏从来不是终点。它们是 AI 发展能力的训练场，这些能力后来被应用于科学。
 
@@ -261,10 +264,10 @@ But the deeper implication is harder to digest: if AI can discover protein struc
 The Nobel Prize was the moment the scientific establishment acknowledged that AI had crossed a threshold — from laboratory curiosity to essential instrument. The IMO gold proved that general-purpose AI could match the best human minds at rigorous reasoning. The games were never the destination. They were the training ground where AI developed the abilities it would later apply to science.
 
 But the deeper implication is harder to digest: if AI can discover protein structures and solve olympiad-level mathematics, what else can it discover that humans cannot? The most important scientific breakthroughs enabled by AI may not be ones that humans could have arrived at on their own. They may be things that only a machine could see. That prospect — not the Nobel Prize, not the IMO gold — is the real frontier.</p>
-    </div>
+        </div>
 
-    <!-- Related Arcs -->
-    
+        <!-- Related Arcs -->
+
                   <section class="related-arcs-section">
                     <h3 data-zh="相关叙事弧" data-en="Related Arcs">Related Arcs</h3>
                     <div class="related-arcs-grid">
@@ -277,6 +280,24 @@ But the deeper implication is harder to digest: if AI can discover protein struc
                     </div>
                   </section>
                 
+      </article>
+
+      <aside class="page-rail arc-sidebar" aria-label="Arc overview">
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="专题概览" data-en="Arc overview">专题概览</h2>
+          <dl class="rail-facts">
+            <div><dt data-zh="章节" data-en="Chapters">章节</dt><dd data-zh="4 章" data-en="4 chapters">4 chapters</dd></div>
+            <div><dt data-zh="锚点事件" data-en="Anchor events">锚点事件</dt><dd data-zh="8 个事件" data-en="8 events">8 events</dd></div>
+            <div><dt data-zh="时间跨度" data-en="Timeline">时间跨度</dt><dd>1997-05-11 — 2025-07</dd></div>
+            <div><dt data-zh="最后更新" data-en="Last updated">最后更新</dt><dd>2026-06-30</dd></div>
+          </dl>
+        </section>
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="阅读提示" data-en="Reading note">阅读提示</h2>
+          <p class="arc-rail-note" data-zh="章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The blue capsule marks your position, and event nodes open the full record.">章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。</p>
+        </section>
+      </aside>
+    </div>
   </main>
 
   <footer class="pagefoot">

@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs/the-new-programmers/" />
 
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.4.0" />
+  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.5.0" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,7 +56,7 @@
         <span>EpochArc</span>
       </a>
       <div class="topnav-actions">
-        <a href="/arcs" class="control-btn nav-arcs-btn">
+        <a href="/arcs" class="control-btn nav-arcs-btn" aria-current="page">
           <span data-zh="专题" data-en="Arcs">专题</span>
         </a>
         <a href="/directions" class="control-btn nav-directions-btn">
@@ -81,34 +81,37 @@
     </div>
   </header>
 
-  <main class="arc-detail-container">
-    <a href="/arcs" class="back-link">
+  <main class="site-page arc-detail-container">
+    <a href="/arcs" class="page-back back-link">
       <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
       </svg>
       <span data-zh="返回专题列表" data-en="Back to Arcs">返回专题列表</span>
     </a>
 
-    <div class="arc-hero">
-      <h1 data-zh="新程序员：AI 如何改变了软件开发" data-en="The New Programmers: How AI Changed Software Development">The New Programmers: How AI Changed Software Development</h1>
-      <p class="arc-subtitle" data-zh="AI 助手和编程智能体如何改变了软件开发这件事本身" data-en="How AI assistants and coding agents transformed the practice of software development">How AI assistants and coding agents transformed the practice of software development</p>
-    </div>
+    <header class="page-header arc-hero">
+      <p class="page-kicker" data-zh="专题叙事" data-en="Narrative Arc">专题叙事</p>
+      <h1 class="page-title" data-zh="新程序员：AI 如何改变了软件开发" data-en="The New Programmers: How AI Changed Software Development">The New Programmers: How AI Changed Software Development</h1>
+      <p class="page-lead arc-subtitle" data-zh="AI 助手和编程智能体如何改变了软件开发这件事本身" data-en="How AI assistants and coding agents transformed the practice of software development">How AI assistants and coding agents transformed the practice of software development</p>
+    </header>
 
-    <!-- Table of Contents -->
-    <div class="arc-toc">
+    <div class="page-layout arc-detail-grid">
+      <article class="page-main arc-main">
+        <!-- Table of Contents -->
+        <div class="arc-toc">
 <a href="#chapter-pair-programmer" data-zh="一、结对编程员来了" data-en="01. The Pair Programmer Arrives">01. The Pair Programmer Arrives</a>
 <a href="#chapter-from-assistant-to-agent" data-zh="二、从助手到智能体" data-en="02. From Assistant to Agent">02. From Assistant to Agent</a>
 <a href="#chapter-the-agent-coworker" data-zh="三、智能体同事" data-en="03. The Agent Coworker">03. The Agent Coworker</a>
 <a href="#chapter-the-new-reality" data-zh="四、新的现实" data-en="04. The New Reality">04. The New Reality</a>
 </div>
 
-    <!-- Abstract -->
-    <div class="arc-abstract">
-      <p data-zh="2022 年，GitHub Copilot 将 AI 结对编程带到了每个 IDE 中。四年后，&#39;氛围编程&#39;进入了开发者词汇表 — 让 AI 写代码而人类几乎不阅读代码的实践。在两者之间，AI 编程助手变成了智能体、智能体变成了值得信赖的同事、而&#39;编程&#39;本身的定义开始转变。本专题不关乎技术 — 而是关于 AI 如何改变了当一名程序员意味着什么，经验丰富的开发者如何重新定义他们与代码的关系，以及新一代如何通过描述他们想要的东西而不是逐行编写来学习编程。" data-en="In 2022, GitHub Copilot brought AI pair programming to every IDE. Four years later, &#39;vibe coding&#39; had entered the developer vocabulary — the practice of letting AI write code while the human barely reads it. In between, AI coding assistants became agents, agents became trusted coworkers, and the very definition of &#39;programming&#39; began to shift. This arc is not about technology — it is about how AI changed what it means to be a programmer, how experienced developers redefined their relationship with code, and how a new generation learned to program by describing what they wanted rather than writing it line by line.">In 2022, GitHub Copilot brought AI pair programming to every IDE. Four years later, &#39;vibe coding&#39; had entered the developer vocabulary — the practice of letting AI write code while the human barely reads it. In between, AI coding assistants became agents, agents became trusted coworkers, and the very definition of &#39;programming&#39; began to shift. This arc is not about technology — it is about how AI changed what it means to be a programmer, how experienced developers redefined their relationship with code, and how a new generation learned to program by describing what they wanted rather than writing it line by line.</p>
-    </div>
+        <!-- Abstract -->
+        <div class="arc-abstract">
+          <p data-zh="2022 年，GitHub Copilot 将 AI 结对编程带到了每个 IDE 中。四年后，&#39;氛围编程&#39;进入了开发者词汇表 — 让 AI 写代码而人类几乎不阅读代码的实践。在两者之间，AI 编程助手变成了智能体、智能体变成了值得信赖的同事、而&#39;编程&#39;本身的定义开始转变。本专题不关乎技术 — 而是关于 AI 如何改变了当一名程序员意味着什么，经验丰富的开发者如何重新定义他们与代码的关系，以及新一代如何通过描述他们想要的东西而不是逐行编写来学习编程。" data-en="In 2022, GitHub Copilot brought AI pair programming to every IDE. Four years later, &#39;vibe coding&#39; had entered the developer vocabulary — the practice of letting AI write code while the human barely reads it. In between, AI coding assistants became agents, agents became trusted coworkers, and the very definition of &#39;programming&#39; began to shift. This arc is not about technology — it is about how AI changed what it means to be a programmer, how experienced developers redefined their relationship with code, and how a new generation learned to program by describing what they wanted rather than writing it line by line.">In 2022, GitHub Copilot brought AI pair programming to every IDE. Four years later, &#39;vibe coding&#39; had entered the developer vocabulary — the practice of letting AI write code while the human barely reads it. In between, AI coding assistants became agents, agents became trusted coworkers, and the very definition of &#39;programming&#39; began to shift. This arc is not about technology — it is about how AI changed what it means to be a programmer, how experienced developers redefined their relationship with code, and how a new generation learned to program by describing what they wanted rather than writing it line by line.</p>
+        </div>
 
-    <!-- Chapters -->
-    
+        <!-- Chapters -->
+
               <section class="arc-chapter" id="chapter-pair-programmer">
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
@@ -245,20 +248,20 @@
                 </div>
               </section>
 
-    <!-- Conclusion -->
-    <div class="arc-conclusion">
-      <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
-      <p class="arc-conclusion-text" data-zh="四年时间将编程从一门手艺转变为了一种伙伴关系。2022 年，问题是&#39;AI 能帮我写代码吗？&#39;到 2026 年，问题是&#39;我需要知道 AI 不知道的什么？&#39;答案不是语法或语言 — 而是分解问题、验证解决方案和在系统层面思考的能力。新程序员不是打字更快的人，而是思考更清晰的人。编程没有被自动化 — 它被解绑了。打字由 AI 处理。思考 — 架构、边缘情况、权衡、理解构建什么以及为什么 — 仍然是程序员的工作。而这一转变，比任何特定技术都更重要，才是 AI 如何改变软件开发的真正故事。
+        <!-- Conclusion -->
+        <div class="arc-conclusion">
+          <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
+          <p class="arc-conclusion-text" data-zh="四年时间将编程从一门手艺转变为了一种伙伴关系。2022 年，问题是&#39;AI 能帮我写代码吗？&#39;到 2026 年，问题是&#39;我需要知道 AI 不知道的什么？&#39;答案不是语法或语言 — 而是分解问题、验证解决方案和在系统层面思考的能力。新程序员不是打字更快的人，而是思考更清晰的人。编程没有被自动化 — 它被解绑了。打字由 AI 处理。思考 — 架构、边缘情况、权衡、理解构建什么以及为什么 — 仍然是程序员的工作。而这一转变，比任何特定技术都更重要，才是 AI 如何改变软件开发的真正故事。
 
 到 2026 年中，这一转变达到了一个临界点。在许多组织中，手写代码已降至总代码量的 10% 以下。中文社区的 V2EX 上出现了题为《从 2026 年后开始，就没手写过代码了，全部 ai 写，我也知道我的职业要完了》的帖子。36氪的深度报道记录了程序员被公司要求全部使用 AI 写代码、Token 用量被纳入绩效考核的现状。各公司纷纷用 AI 编程来驱动降本增效，程序员们陷入了&#39;越提效越累&#39;的悖论——编码速度是快了，但需求对齐、代码审查和系统维护的负担依然在，被压缩掉的只是开发者原本用于思考和休息的时间。与此同时，Business Insider 发出了警告：&#39;vibe coding 泡沫&#39;正在催生一波脆弱的、不可维护的产品——产品有人建，没人修。故事的下一个篇章已经开始浮现：问题不再是 AI 能否写代码，而是谁能维护 AI 写出来的东西。" data-en="Four years transformed programming from a craft into a partnership. In 2022, the question was &#39;can AI help me write code?&#39; By 2026, the question was &#39;what do I need to know that AI doesn’t?&#39; The answer is not syntax or languages — it is the ability to decompose problems, verify solutions, and think at the system level. The new programmer is not the one who types faster, but the one who thinks clearer. Programming has not been automated — it has been unbundled. The typing is handled by AI. The thinking — the architecture, the edge cases, the tradeoffs, the understanding of what to build and why — remains the programmer&#39;s job. And that shift, more than any specific technology, is the real story of how AI changed software development.
 
 By mid-2026, the transformation had reached a tipping point. Hand-written code had fallen below 10% of total code produced in many organizations. Developers on Chinese social media were posting threads titled &#39;I haven’t written a line of code by hand since 2026, and I know my career is over.&#39; 36kr documented programmers whose companies required them to use AI for everything, tracking token consumption as a performance metric. But alongside the productivity gains came a warning: Business Insider reported that the &#39;vibe coding bubble&#39; was producing a wave of fragile, unmaintainable products built by people who could not support them beyond launch. The next phase of the story was already taking shape — not about whether AI can write code, but about who can maintain what AI builds.">Four years transformed programming from a craft into a partnership. In 2022, the question was &#39;can AI help me write code?&#39; By 2026, the question was &#39;what do I need to know that AI doesn’t?&#39; The answer is not syntax or languages — it is the ability to decompose problems, verify solutions, and think at the system level. The new programmer is not the one who types faster, but the one who thinks clearer. Programming has not been automated — it has been unbundled. The typing is handled by AI. The thinking — the architecture, the edge cases, the tradeoffs, the understanding of what to build and why — remains the programmer&#39;s job. And that shift, more than any specific technology, is the real story of how AI changed software development.
 
 By mid-2026, the transformation had reached a tipping point. Hand-written code had fallen below 10% of total code produced in many organizations. Developers on Chinese social media were posting threads titled &#39;I haven’t written a line of code by hand since 2026, and I know my career is over.&#39; 36kr documented programmers whose companies required them to use AI for everything, tracking token consumption as a performance metric. But alongside the productivity gains came a warning: Business Insider reported that the &#39;vibe coding bubble&#39; was producing a wave of fragile, unmaintainable products built by people who could not support them beyond launch. The next phase of the story was already taking shape — not about whether AI can write code, but about who can maintain what AI builds.</p>
-    </div>
+        </div>
 
-    <!-- Related Arcs -->
-    
+        <!-- Related Arcs -->
+
                   <section class="related-arcs-section">
                     <h3 data-zh="相关叙事弧" data-en="Related Arcs">Related Arcs</h3>
                     <div class="related-arcs-grid">
@@ -276,6 +279,24 @@ By mid-2026, the transformation had reached a tipping point. Hand-written code h
                     </div>
                   </section>
                 
+      </article>
+
+      <aside class="page-rail arc-sidebar" aria-label="Arc overview">
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="专题概览" data-en="Arc overview">专题概览</h2>
+          <dl class="rail-facts">
+            <div><dt data-zh="章节" data-en="Chapters">章节</dt><dd data-zh="4 章" data-en="4 chapters">4 chapters</dd></div>
+            <div><dt data-zh="锚点事件" data-en="Anchor events">锚点事件</dt><dd data-zh="8 个事件" data-en="8 events">8 events</dd></div>
+            <div><dt data-zh="时间跨度" data-en="Timeline">时间跨度</dt><dd>2020-06-11 — 2026-07-06</dd></div>
+            <div><dt data-zh="最后更新" data-en="Last updated">最后更新</dt><dd>2026-06-30</dd></div>
+          </dl>
+        </section>
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="阅读提示" data-en="Reading note">阅读提示</h2>
+          <p class="arc-rail-note" data-zh="章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The blue capsule marks your position, and event nodes open the full record.">章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。</p>
+        </section>
+      </aside>
+    </div>
   </main>
 
   <footer class="pagefoot">

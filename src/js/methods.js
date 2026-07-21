@@ -83,9 +83,9 @@ if (themeToggle) {
   });
 }
 
-// 侧边栏高亮逻辑
-const sections = document.querySelectorAll('.content-section');
-const navLi = document.querySelectorAll('.sidenav li');
+// 统一方法页侧栏高亮逻辑
+const sections = document.querySelectorAll('.panel[id]');
+const navLinks = document.querySelectorAll('.methods-nav a');
 
 window.addEventListener('scroll', () => {
   let current = '';
@@ -97,12 +97,8 @@ window.addEventListener('scroll', () => {
     }
   });
 
-  navLi.forEach(li => {
-    li.classList.remove('active');
-    const a = li.querySelector('a');
-    if (a && a.getAttribute('href') === `#${current}`) {
-      li.classList.add('active');
-    }
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
   });
 });
 

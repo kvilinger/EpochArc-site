@@ -20,6 +20,9 @@
 
 ## Product
 
+- [DESIGN-SYSTEM.md](product/DESIGN-SYSTEM.md)
+  全站布局、标题、返回导航、右侧信息栏、胶囊组件、页脚和响应式规则。
+
 - [PRODUCT-PLAN.md](product/PRODUCT-PLAN.md)
   产品定位、技术架构、阶段路线和上线策略。
 

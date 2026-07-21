@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs/ai-safety/" />
 
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.4.0" />
+  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.5.0" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,7 +56,7 @@
         <span>EpochArc</span>
       </a>
       <div class="topnav-actions">
-        <a href="/arcs" class="control-btn nav-arcs-btn">
+        <a href="/arcs" class="control-btn nav-arcs-btn" aria-current="page">
           <span data-zh="专题" data-en="Arcs">专题</span>
         </a>
         <a href="/directions" class="control-btn nav-directions-btn">
@@ -81,34 +81,37 @@
     </div>
   </header>
 
-  <main class="arc-detail-container">
-    <a href="/arcs" class="back-link">
+  <main class="site-page arc-detail-container">
+    <a href="/arcs" class="page-back back-link">
       <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
       </svg>
       <span data-zh="返回专题列表" data-en="Back to Arcs">返回专题列表</span>
     </a>
 
-    <div class="arc-hero">
-      <h1 data-zh="AI 安全：从翻车聊天机器人到前沿安全框架" data-en="AI Safety: From Tay to ASL-3">AI Safety: From Tay to ASL-3</h1>
-      <p class="arc-subtitle" data-zh="从 Twitter 聊天机器人到政府出口禁令，十年 AI 安全事件的全景记录" data-en="A decade of incidents from a Twitter chatbot to government export bans on frontier models">A decade of incidents from a Twitter chatbot to government export bans on frontier models</p>
-    </div>
+    <header class="page-header arc-hero">
+      <p class="page-kicker" data-zh="专题叙事" data-en="Narrative Arc">专题叙事</p>
+      <h1 class="page-title" data-zh="AI 安全：从翻车聊天机器人到前沿安全框架" data-en="AI Safety: From Tay to ASL-3">AI Safety: From Tay to ASL-3</h1>
+      <p class="page-lead arc-subtitle" data-zh="从 Twitter 聊天机器人到政府出口禁令，十年 AI 安全事件的全景记录" data-en="A decade of incidents from a Twitter chatbot to government export bans on frontier models">A decade of incidents from a Twitter chatbot to government export bans on frontier models</p>
+    </header>
 
-    <!-- Table of Contents -->
-    <div class="arc-toc">
+    <div class="page-layout arc-detail-grid">
+      <article class="page-main arc-main">
+        <!-- Table of Contents -->
+        <div class="arc-toc">
 <a href="#chapter-first-warnings" data-zh="一、最初的警告" data-en="01. The First Warnings">01. The First Warnings</a>
 <a href="#chapter-mainstream-friction" data-zh="二、AI 遇上法律体系" data-en="02. AI Meets the Legal System">02. AI Meets the Legal System</a>
 <a href="#chapter-human-cost" data-zh="三、人的代价与安全框架" data-en="03. The Human Cost and the Framework">03. The Human Cost and the Framework</a>
 <a href="#chapter-the-crackdown" data-zh="四、全面收紧" data-en="04. The Crackdown">04. The Crackdown</a>
 </div>
 
-    <!-- Abstract -->
-    <div class="arc-abstract">
-      <p data-zh="2016 年，一个 Twitter 聊天机器人在 16 小时内变得种族主义，世界耸了耸肩。到 2026 年，美国政府开始禁止 AI 模型出口，各州因安全问题起诉 AI 公司。本专题追溯 AI 安全如何从一个边缘学术关注演变为涉及吹哨人、诉讼、出口管制和生死攸关风险的头版话题。这不是一个稳步进展的故事——而是一个行业在摸索、失败、仍在试图弄清如何在不让世界崩溃的前提下构建强大技术的故事。" data-en="In 2016, a Twitter chatbot became racist in 16 hours and the world shrugged. By 2026, the US government was banning AI model exports and states were suing AI companies over safety failures. This arc traces how AI safety transformed from a niche academic concern to a front-page issue involving whistleblowers, lawsuits, export controls, and life-or-death stakes. It is not a story of steady progress — it is a story of an industry learning, failing, and still trying to figure out how to build powerful technology without breaking the world.">In 2016, a Twitter chatbot became racist in 16 hours and the world shrugged. By 2026, the US government was banning AI model exports and states were suing AI companies over safety failures. This arc traces how AI safety transformed from a niche academic concern to a front-page issue involving whistleblowers, lawsuits, export controls, and life-or-death stakes. It is not a story of steady progress — it is a story of an industry learning, failing, and still trying to figure out how to build powerful technology without breaking the world.</p>
-    </div>
+        <!-- Abstract -->
+        <div class="arc-abstract">
+          <p data-zh="2016 年，一个 Twitter 聊天机器人在 16 小时内变得种族主义，世界耸了耸肩。到 2026 年，美国政府开始禁止 AI 模型出口，各州因安全问题起诉 AI 公司。本专题追溯 AI 安全如何从一个边缘学术关注演变为涉及吹哨人、诉讼、出口管制和生死攸关风险的头版话题。这不是一个稳步进展的故事——而是一个行业在摸索、失败、仍在试图弄清如何在不让世界崩溃的前提下构建强大技术的故事。" data-en="In 2016, a Twitter chatbot became racist in 16 hours and the world shrugged. By 2026, the US government was banning AI model exports and states were suing AI companies over safety failures. This arc traces how AI safety transformed from a niche academic concern to a front-page issue involving whistleblowers, lawsuits, export controls, and life-or-death stakes. It is not a story of steady progress — it is a story of an industry learning, failing, and still trying to figure out how to build powerful technology without breaking the world.">In 2016, a Twitter chatbot became racist in 16 hours and the world shrugged. By 2026, the US government was banning AI model exports and states were suing AI companies over safety failures. This arc traces how AI safety transformed from a niche academic concern to a front-page issue involving whistleblowers, lawsuits, export controls, and life-or-death stakes. It is not a story of steady progress — it is a story of an industry learning, failing, and still trying to figure out how to build powerful technology without breaking the world.</p>
+        </div>
 
-    <!-- Chapters -->
-    
+        <!-- Chapters -->
+
               <section class="arc-chapter" id="chapter-first-warnings">
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
@@ -263,20 +266,20 @@
                 </div>
               </section>
 
-    <!-- Conclusion -->
-    <div class="arc-conclusion">
-      <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
-      <p class="arc-conclusion-text" data-zh="十年的 AI 安全事件描绘了一条清晰的弧线：每次危机都触发一个回应 — 内容过滤器、分阶段发布、分层框架、政府禁令 — 但回应从未完全解决潜在的结构性张力。同样的动态在每个规模上重复：快速构建、出问题、事后修复。Tay 教会我们 AI 从非过滤数据中学习。GPT-2 教会我们谨慎是有争议的。Suchir Balaji 教会我们发声是有代价的。ASL-3 向我们展示了框架是可能的。而 2026 年的全面收紧证明了，当行业不作为时，政府会行动。
+        <!-- Conclusion -->
+        <div class="arc-conclusion">
+          <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
+          <p class="arc-conclusion-text" data-zh="十年的 AI 安全事件描绘了一条清晰的弧线：每次危机都触发一个回应 — 内容过滤器、分阶段发布、分层框架、政府禁令 — 但回应从未完全解决潜在的结构性张力。同样的动态在每个规模上重复：快速构建、出问题、事后修复。Tay 教会我们 AI 从非过滤数据中学习。GPT-2 教会我们谨慎是有争议的。Suchir Balaji 教会我们发声是有代价的。ASL-3 向我们展示了框架是可能的。而 2026 年的全面收紧证明了，当行业不作为时，政府会行动。
 
 根本问题仍然没有答案：一个建立在速度和竞争压力之上的行业，能否将安全内化为一等约束？过去十年的模式表明答案可能是否定的 — 安全永远是事后想法，直到外部力量迫使其成为要求。如果这是真的，那么安全问题就不是技术问题，而是治理问题。而这是一个更难解决的问题。" data-en="Ten years of AI safety incidents trace a clear arc: each crisis triggers a response — content filters, staged release, tiered frameworks, government bans — but the response never fully addresses the underlying structural tension. The same dynamic repeats at every scale: build fast, break something, fix it after the fact. Tay taught us that AI learns from unfiltered data. GPT-2 taught us that precaution is controversial. Suchir Balaji taught us that speaking up has a cost. ASL-3 showed us that frameworks are possible. And the 2026 crackdown proved that governments will act when the industry does not.
 
 The underlying question remains unresolved: can an industry built on speed and competitive pressure ever internalize safety as a first-class constraint? The pattern of the past decade suggests the answer may be no — that safety will always be an afterthought until an external force makes it a requirement. If that is true, then the safety problem is not a technical problem. It is a governance problem. And that is a much harder one to solve.">Ten years of AI safety incidents trace a clear arc: each crisis triggers a response — content filters, staged release, tiered frameworks, government bans — but the response never fully addresses the underlying structural tension. The same dynamic repeats at every scale: build fast, break something, fix it after the fact. Tay taught us that AI learns from unfiltered data. GPT-2 taught us that precaution is controversial. Suchir Balaji taught us that speaking up has a cost. ASL-3 showed us that frameworks are possible. And the 2026 crackdown proved that governments will act when the industry does not.
 
 The underlying question remains unresolved: can an industry built on speed and competitive pressure ever internalize safety as a first-class constraint? The pattern of the past decade suggests the answer may be no — that safety will always be an afterthought until an external force makes it a requirement. If that is true, then the safety problem is not a technical problem. It is a governance problem. And that is a much harder one to solve.</p>
-    </div>
+        </div>
 
-    <!-- Related Arcs -->
-    
+        <!-- Related Arcs -->
+
                   <section class="related-arcs-section">
                     <h3 data-zh="相关叙事弧" data-en="Related Arcs">Related Arcs</h3>
                     <div class="related-arcs-grid">
@@ -289,6 +292,24 @@ The underlying question remains unresolved: can an industry built on speed and c
                     </div>
                   </section>
                 
+      </article>
+
+      <aside class="page-rail arc-sidebar" aria-label="Arc overview">
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="专题概览" data-en="Arc overview">专题概览</h2>
+          <dl class="rail-facts">
+            <div><dt data-zh="章节" data-en="Chapters">章节</dt><dd data-zh="4 章" data-en="4 chapters">4 chapters</dd></div>
+            <div><dt data-zh="锚点事件" data-en="Anchor events">锚点事件</dt><dd data-zh="10 个事件" data-en="10 events">10 events</dd></div>
+            <div><dt data-zh="时间跨度" data-en="Timeline">时间跨度</dt><dd>2016-03-23 — 2026-06-12</dd></div>
+            <div><dt data-zh="最后更新" data-en="Last updated">最后更新</dt><dd>2026-06-30</dd></div>
+          </dl>
+        </section>
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="阅读提示" data-en="Reading note">阅读提示</h2>
+          <p class="arc-rail-note" data-zh="章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The blue capsule marks your position, and event nodes open the full record.">章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。</p>
+        </section>
+      </aside>
+    </div>
   </main>
 
   <footer class="pagefoot">

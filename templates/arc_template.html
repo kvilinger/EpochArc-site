@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs/{{SLUG}}/" />
 
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.4.0" />
+  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.5.0" />
   {{SCHEMA_JSON_LD}}
 </head>
 <body data-theme="light">
@@ -32,7 +32,7 @@
         <span>EpochArc</span>
       </a>
       <div class="topnav-actions">
-        <a href="/arcs" class="control-btn nav-arcs-btn">
+        <a href="/arcs" class="control-btn nav-arcs-btn" aria-current="page">
           <span data-zh="专题" data-en="Arcs">专题</span>
         </a>
         <a href="/directions" class="control-btn nav-directions-btn">
@@ -57,38 +57,59 @@
     </div>
   </header>
 
-  <main class="arc-detail-container">
-    <a href="/arcs" class="back-link">
+  <main class="site-page arc-detail-container">
+    <a href="/arcs" class="page-back back-link">
       <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
       </svg>
       <span data-zh="返回专题列表" data-en="Back to Arcs">返回专题列表</span>
     </a>
 
-    <div class="arc-hero">
-      <h1 data-zh="{{TITLE_ZH}}" data-en="{{TITLE_EN}}">{{TITLE_EN}}</h1>
-      <p class="arc-subtitle" data-zh="{{SUBTITLE_ZH}}" data-en="{{SUBTITLE_EN}}">{{SUBTITLE_EN}}</p>
+    <header class="page-header arc-hero">
+      <p class="page-kicker" data-zh="专题叙事" data-en="Narrative Arc">专题叙事</p>
+      <h1 class="page-title" data-zh="{{TITLE_ZH}}" data-en="{{TITLE_EN}}">{{TITLE_EN}}</h1>
+      <p class="page-lead arc-subtitle" data-zh="{{SUBTITLE_ZH}}" data-en="{{SUBTITLE_EN}}">{{SUBTITLE_EN}}</p>
+    </header>
+
+    <div class="page-layout arc-detail-grid">
+      <article class="page-main arc-main">
+        <!-- Table of Contents -->
+        {{TOC_HTML}}
+
+        <!-- Abstract -->
+        <div class="arc-abstract">
+          <p data-zh="{{ABSTRACT_ZH}}" data-en="{{ABSTRACT_EN}}">{{ABSTRACT_EN}}</p>
+        </div>
+
+        <!-- Chapters -->
+{{CHAPTERS_HTML}}
+
+        <!-- Conclusion -->
+        <div class="arc-conclusion">
+          <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
+          <p class="arc-conclusion-text" data-zh="{{CONCLUSION_ZH}}" data-en="{{CONCLUSION_EN}}">{{CONCLUSION_EN}}</p>
+        </div>
+
+        <!-- Related Arcs -->
+{{RELATED_ARCS_HTML}}
+      </article>
+
+      <aside class="page-rail arc-sidebar" aria-label="Arc overview">
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="专题概览" data-en="Arc overview">专题概览</h2>
+          <dl class="rail-facts">
+            <div><dt data-zh="章节" data-en="Chapters">章节</dt><dd data-zh="{{CHAPTER_COUNT}} 章" data-en="{{CHAPTER_COUNT}} chapters">{{CHAPTER_COUNT}} chapters</dd></div>
+            <div><dt data-zh="锚点事件" data-en="Anchor events">锚点事件</dt><dd data-zh="{{EVENT_COUNT}} 个事件" data-en="{{EVENT_COUNT}} events">{{EVENT_COUNT}} events</dd></div>
+            <div><dt data-zh="时间跨度" data-en="Timeline">时间跨度</dt><dd>{{DATE_RANGE}}</dd></div>
+            <div><dt data-zh="最后更新" data-en="Last updated">最后更新</dt><dd>{{UPDATED_AT}}</dd></div>
+          </dl>
+        </section>
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="阅读提示" data-en="Reading note">阅读提示</h2>
+          <p class="arc-rail-note" data-zh="章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The blue capsule marks your position, and event nodes open the full record.">章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。</p>
+        </section>
+      </aside>
     </div>
-
-    <!-- Table of Contents -->
-    {{TOC_HTML}}
-
-    <!-- Abstract -->
-    <div class="arc-abstract">
-      <p data-zh="{{ABSTRACT_ZH}}" data-en="{{ABSTRACT_EN}}">{{ABSTRACT_EN}}</p>
-    </div>
-
-    <!-- Chapters -->
-    {{CHAPTERS_HTML}}
-
-    <!-- Conclusion -->
-    <div class="arc-conclusion">
-      <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
-      <p class="arc-conclusion-text" data-zh="{{CONCLUSION_ZH}}" data-en="{{CONCLUSION_EN}}">{{CONCLUSION_EN}}</p>
-    </div>
-
-    <!-- Related Arcs -->
-    {{RELATED_ARCS_HTML}}
   </main>
 
   <footer class="pagefoot">

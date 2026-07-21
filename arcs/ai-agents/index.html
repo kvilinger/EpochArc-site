@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs/ai-agents/" />
 
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.4.0" />
+  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.5.0" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,7 +56,7 @@
         <span>EpochArc</span>
       </a>
       <div class="topnav-actions">
-        <a href="/arcs" class="control-btn nav-arcs-btn">
+        <a href="/arcs" class="control-btn nav-arcs-btn" aria-current="page">
           <span data-zh="专题" data-en="Arcs">专题</span>
         </a>
         <a href="/directions" class="control-btn nav-directions-btn">
@@ -81,34 +81,37 @@
     </div>
   </header>
 
-  <main class="arc-detail-container">
-    <a href="/arcs" class="back-link">
+  <main class="site-page arc-detail-container">
+    <a href="/arcs" class="page-back back-link">
       <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
       </svg>
       <span data-zh="返回专题列表" data-en="Back to Arcs">返回专题列表</span>
     </a>
 
-    <div class="arc-hero">
-      <h1 data-zh="AI 智能体：从聊天到行动" data-en="AI Agents: From Chat to Action">AI Agents: From Chat to Action</h1>
-      <p class="arc-subtitle" data-zh="自主 AI 智能体从一个开源实验演变为消费级产品品类的全过程" data-en="The evolution of autonomous AI agents from an open-source experiment to a consumer product category">The evolution of autonomous AI agents from an open-source experiment to a consumer product category</p>
-    </div>
+    <header class="page-header arc-hero">
+      <p class="page-kicker" data-zh="专题叙事" data-en="Narrative Arc">专题叙事</p>
+      <h1 class="page-title" data-zh="AI 智能体：从聊天到行动" data-en="AI Agents: From Chat to Action">AI Agents: From Chat to Action</h1>
+      <p class="page-lead arc-subtitle" data-zh="自主 AI 智能体从一个开源实验演变为消费级产品品类的全过程" data-en="The evolution of autonomous AI agents from an open-source experiment to a consumer product category">The evolution of autonomous AI agents from an open-source experiment to a consumer product category</p>
+    </header>
 
-    <!-- Table of Contents -->
-    <div class="arc-toc">
+    <div class="page-layout arc-detail-grid">
+      <article class="page-main arc-main">
+        <!-- Table of Contents -->
+        <div class="arc-toc">
 <a href="#chapter-the-prototype" data-zh="一、原型：Auto-GPT" data-en="01. The Prototype: Auto-GPT">01. The Prototype: Auto-GPT</a>
 <a href="#chapter-the-plumbing" data-zh="二、管道：智能体的基础设施" data-en="02. The Plumbing: Infrastructure for Agents">02. The Plumbing: Infrastructure for Agents</a>
 <a href="#chapter-first-working-agents" data-zh="三、第一批真正好用的智能体" data-en="03. The First Agents That Work">03. The First Agents That Work</a>
 <a href="#chapter-from-code-to-culture" data-zh="四、从代码走向文化" data-en="04. From Code to Culture">04. From Code to Culture</a>
 </div>
 
-    <!-- Abstract -->
-    <div class="arc-abstract">
-      <p data-zh="2023 年 3 月，一个独立开发者发布了一个名为 Auto-GPT 的开源实验 — 一个可以自主设定目标并追求目标的 AI。它有 bug、成本高昂、而且经常没用。三年后，数百万人使用 AI 智能体 — Claude Code、OpenAI Operator、OpenClaw — 来编写生产代码、浏览网页和管理日常任务。本专题追溯了从原型到基础设施再到产品的旅程：一个拼凑出来的演示如何揭示了一种渴望，整个行业争先恐后地去满足它，以及 AI 如何从对话式跨越到自主式。" data-en="In March 2023, a solo developer released an open-source experiment called Auto-GPT — an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents — Claude Code, OpenAI Operator, OpenClaw — to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.">In March 2023, a solo developer released an open-source experiment called Auto-GPT — an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents — Claude Code, OpenAI Operator, OpenClaw — to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.</p>
-    </div>
+        <!-- Abstract -->
+        <div class="arc-abstract">
+          <p data-zh="2023 年 3 月，一个独立开发者发布了一个名为 Auto-GPT 的开源实验 — 一个可以自主设定目标并追求目标的 AI。它有 bug、成本高昂、而且经常没用。三年后，数百万人使用 AI 智能体 — Claude Code、OpenAI Operator、OpenClaw — 来编写生产代码、浏览网页和管理日常任务。本专题追溯了从原型到基础设施再到产品的旅程：一个拼凑出来的演示如何揭示了一种渴望，整个行业争先恐后地去满足它，以及 AI 如何从对话式跨越到自主式。" data-en="In March 2023, a solo developer released an open-source experiment called Auto-GPT — an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents — Claude Code, OpenAI Operator, OpenClaw — to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.">In March 2023, a solo developer released an open-source experiment called Auto-GPT — an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents — Claude Code, OpenAI Operator, OpenClaw — to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.</p>
+        </div>
 
-    <!-- Chapters -->
-    
+        <!-- Chapters -->
+
               <section class="arc-chapter" id="chapter-the-prototype">
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
@@ -245,10 +248,10 @@
                 </div>
               </section>
 
-    <!-- Conclusion -->
-    <div class="arc-conclusion">
-      <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
-      <p class="arc-conclusion-text" data-zh="智能体转型的速度令人叹为观止。2023 年 3 月，&#39;AI 智能体&#39;的概念还是一个充满 bug 的开源实验。到 2026 年 1 月，数百万人每天都在工作和个人任务中使用智能体。基础设施 — MCP、视觉浏览模型、终端智能体 — 是在实时建造的，以回应 Auto-GPT 所揭示的需求。
+        <!-- Conclusion -->
+        <div class="arc-conclusion">
+          <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
+          <p class="arc-conclusion-text" data-zh="智能体转型的速度令人叹为观止。2023 年 3 月，&#39;AI 智能体&#39;的概念还是一个充满 bug 的开源实验。到 2026 年 1 月，数百万人每天都在工作和个人任务中使用智能体。基础设施 — MCP、视觉浏览模型、终端智能体 — 是在实时建造的，以回应 Auto-GPT 所揭示的需求。
 
 从聊天到行动的转变，也许是自 ChatGPT 以来 AI 领域最重要的产品转型。它改变了人与 AI 之间的基本关系：从询问到委托。这不只是便利性的提升 — 它改变了谁可以使用 AI 以及用来做什么。聊天机器人需要表达能力；智能体需要信任。一个障碍是认知层面的，另一个是情感层面的。智能体行业真正的挑战不是构建更强大的模型，而是赢得委托所需的信任。
 
@@ -261,10 +264,10 @@ The question that remains is not whether agents will become ubiquitous — that 
 The shift from chat to action is perhaps the most consequential product transition in AI since ChatGPT itself. It changes the fundamental relationship between humans and AI: from asking to delegating. This is not just a convenience improvement — it changes who can use AI and for what. Chatbots require articulacy; agents require trust. One barrier is cognitive, the other is emotional. The agent industry&#39;s real challenge is not building more capable models, but earning the trust that delegation requires.
 
 The question that remains is not whether agents will become ubiquitous — that trajectory is set. The question is what happens when agents start delegating to other agents, and humans become spectators in the loops they once controlled.</p>
-    </div>
+        </div>
 
-    <!-- Related Arcs -->
-    
+        <!-- Related Arcs -->
+
                   <section class="related-arcs-section">
                     <h3 data-zh="相关叙事弧" data-en="Related Arcs">Related Arcs</h3>
                     <div class="related-arcs-grid">
@@ -277,6 +280,24 @@ The question that remains is not whether agents will become ubiquitous — that 
                     </div>
                   </section>
                 
+      </article>
+
+      <aside class="page-rail arc-sidebar" aria-label="Arc overview">
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="专题概览" data-en="Arc overview">专题概览</h2>
+          <dl class="rail-facts">
+            <div><dt data-zh="章节" data-en="Chapters">章节</dt><dd data-zh="4 章" data-en="4 chapters">4 chapters</dd></div>
+            <div><dt data-zh="锚点事件" data-en="Anchor events">锚点事件</dt><dd data-zh="8 个事件" data-en="8 events">8 events</dd></div>
+            <div><dt data-zh="时间跨度" data-en="Timeline">时间跨度</dt><dd>2023-03-30 — 2026-01-25</dd></div>
+            <div><dt data-zh="最后更新" data-en="Last updated">最后更新</dt><dd>2026-06-30</dd></div>
+          </dl>
+        </section>
+        <section class="rail-card">
+          <h2 class="rail-card-title" data-zh="阅读提示" data-en="Reading note">阅读提示</h2>
+          <p class="arc-rail-note" data-zh="章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The blue capsule marks your position, and event nodes open the full record.">章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。</p>
+        </section>
+      </aside>
+    </div>
   </main>
 
   <footer class="pagefoot">
