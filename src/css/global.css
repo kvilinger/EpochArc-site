@@ -124,6 +124,44 @@
     .row { display: flex; align-items: center; gap: var(--gap-md); }
     .row-between { display: flex; align-items: center; justify-content: space-between; gap: var(--gap-md); }
 
+    /* ─── Shared footer ─────────────────────────────────────────────── */
+    .pagefoot {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: var(--fs-meta);
+      transition: border-color var(--transition-smooth);
+    }
+    .pagefoot .container { width: 100%; }
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .footer-links a {
+      color: var(--accent);
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .footer-links a:focus-visible {
+      outline: 2px solid var(--highlight);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+    @media (max-width: 680px) {
+      .pagefoot { padding-block: var(--gap-md); }
+      .pagefoot .row-between { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .footer-links { justify-content: flex-start; }
+    }
+
     /* ─── Topbar Navigation ──────────────────────────────────────────── */
     .topnav {
       position: sticky;

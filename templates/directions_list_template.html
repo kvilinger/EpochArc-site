@@ -53,27 +53,33 @@
 
   <main class="directions-page container">
     <header class="directions-index-hero">
-      <div>
-        <p class="directions-kicker" data-zh="持续复核的研究方向" data-en="Research directions under review">持续复核的研究方向</p>
-        <h1 data-zh="可能方向" data-en="Possible Directions">可能方向</h1>
-      </div>
-      <p class="directions-index-lead" data-zh="这些不是确定性预测，而是由已发布事件、可观察信号和公开来源支持的长期方向。每条方向都会按固定节奏重新评审。" data-en="These are not certainty claims. They are long-range directions supported by published events, observable signals, and public sources, each reviewed on a stated cadence.">这些不是确定性预测，而是由已发布事件、可观察信号和公开来源支持的长期方向。每条方向都会按固定节奏重新评审。</p>
+      <p class="directions-kicker" data-zh="持续监测的研究方向" data-en="Research directions under monitoring">持续监测的研究方向</p>
+      <h1 data-zh="可能方向" data-en="Possible Directions">可能方向</h1>
+      <p class="directions-index-lead" data-zh="这些不是确定性预测，而是由已发布事件、可观察信号和公开来源支持的长期方向，并随着新证据持续更新。" data-en="These are not certainty claims. They are long-range directions supported by published events, observable signals, and public sources, updated as new evidence emerges.">These are not certainty claims. They are long-range directions supported by published events, observable signals, and public sources, updated as new evidence emerges.</p>
+      <p class="directions-index-meta" data-zh="4 条监测方向 · 更新于 2026-07-21" data-en="4 monitored directions · Updated 2026-07-21">4 monitored directions · Updated 2026-07-21</p>
     </header>
 
     <section class="directions-ledger" aria-label="Possible directions">
+      <div class="directions-ledger-head" aria-hidden="true">
+        <span data-zh="方向与论点" data-en="Direction and thesis">Direction and thesis</span>
+        <span data-zh="预期窗口" data-en="Expected window">Expected window</span>
+        <span data-zh="已观察信号" data-en="Observed signals">Observed signals</span>
+        <span data-zh="证据强度" data-en="Evidence strength">Evidence strength</span>
+        <span data-zh="操作" data-en="Action">Action</span>
+      </div>
       {{DIRECTION_ROWS}}
     </section>
 
     <aside class="directions-method-note">
-      <p data-zh="方向页公开展示支持证据、反向信号与开放问题，不设置本站私有的完成线。" data-en="Direction pages expose supporting evidence, counter-signals, and open questions without inventing a private finish line.">方向页公开展示支持证据、反向信号与开放问题，不设置本站私有的完成线。</p>
-      <a href="/methods" data-zh="查看评审方法" data-en="Read the review method">查看评审方法</a>
+      <p data-zh="本页展示持续监测的方向；评审标准、证据层级与来源规则统一收录在「方法与来源」页。" data-en="This page presents directions under continued monitoring. Review standards, evidence levels, and source rules are documented on Methodology &amp; Sources.">本页展示持续监测的方向；评审标准、证据层级与来源规则统一收录在「方法与来源」页。</p>
+      <a href="/methods/#possible-directions" data-zh="查看方向评审规则 →" data-en="Read the direction review rules →">查看方向评审规则 →</a>
     </aside>
   </main>
 
   <footer class="pagefoot">
     <div class="container row-between">
       <span>© 2026 EpochArc · Curated by an independent maker</span>
-      <nav class="footer-links" aria-label="Footer"><a href="/rss.xml">RSS</a><a href="/methods"><span data-zh="方法与来源" data-en="Methodology">方法与来源</span></a></nav>
+      <nav class="footer-links" aria-label="Footer"><a href="/rss.xml"><span data-zh="RSS / Atom 订阅" data-en="RSS / Atom Feed">RSS / Atom Feed</span></a><a href="/methods"><span data-zh="方法与来源" data-en="Methodology &amp; Sources">Methodology &amp; Sources</span></a></nav>
     </div>
   </footer>
   <script type="module" src="src/js/directions.js"></script>

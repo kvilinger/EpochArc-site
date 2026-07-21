@@ -1812,43 +1812,6 @@
       text-underline-offset: 3px;
     }
 
-    /* ─── Footer ────────────────────────────────────────────────────── */
-    .pagefoot {
-      height: 64px;
-      display: flex;
-      align-items: center;
-      border-top: 1px solid var(--border);
-      margin-top: 0;
-      color: var(--muted);
-      font-size: var(--fs-meta);
-      transition: border-color var(--transition-smooth);
-    }
-    .footer-links {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-    .footer-links a {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-    @media (max-width: 680px) {
-      .pagefoot {
-        height: auto;
-        padding-block: var(--gap-md);
-      }
-      .pagefoot .row-between {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-      }
-      .footer-links {
-        justify-content: flex-start;
-      }
-    }
-
     /* Global Tooltip Styling */
     .global-tooltip {
       position: absolute;

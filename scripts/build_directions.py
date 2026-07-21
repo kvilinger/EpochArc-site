@@ -74,6 +74,12 @@ CONFIDENCE_LABELS = {
     'high': ('High', '高'),
 }
 
+EVIDENCE_STRENGTH_LABELS = {
+    'low': ('Developing', '形成中'),
+    'medium': ('Moderate', '中等'),
+    'high': ('Strong', '较强'),
+}
+
 
 def pair_for(mapping, key):
     return mapping.get(key, (str(key).replace('_', ' ').title(), str(key)))
@@ -99,30 +105,29 @@ def build_list_rows(forecasts):
         type_en, type_zh = pair_for(TYPE_LABELS, forecast.get('forecastType'))
         signals = forecast.get('signals', [])
         observed_count = sum(signal.get('status') == 'observed' for signal in signals)
-        cadence_en, cadence_zh = pair_for(CADENCE_LABELS, forecast.get('reviewCadence'))
+        confidence = forecast.get('confidence', {})
+        confidence_en, confidence_zh = pair_for(EVIDENCE_STRENGTH_LABELS, confidence.get('level'))
+        evidence_grade = clean(confidence.get('evidenceGrade', ''))
         row = f'''
       <a class="direction-row-card" href="/directions/{slug}/">
-        <div>
+        <div class="direction-row-main">
           <span class="direction-row-type" data-zh="{html(type_zh)}" data-en="{html(type_en)}">{html(type_en)}</span>
           {localized_element('h2', forecast.get('title', {}))}
           {localized_element('p', forecast.get('thesis', {}), 'direction-row-thesis')}
         </div>
-        <div class="direction-row-side">
-          <div class="direction-row-metrics">
-            <div class="direction-row-metric">
-              {label_pair('Window', '时间窗口')}
-              <strong>{html(expected_window(forecast))}</strong>
-            </div>
-            <div class="direction-row-metric">
-              {label_pair('Signals', '信号')}
-              <strong>{observed_count}</strong>
-            </div>
-          </div>
-          <div>
-            <span class="direction-row-type" data-zh="{html(cadence_zh)}复核" data-en="Reviewed {html(cadence_en.lower())}">{html('Reviewed ' + cadence_en.lower())}</span>
-            <div class="direction-row-cta" data-zh="查看完整证据 →" data-en="Read the evidence →">Read the evidence →</div>
-          </div>
+        <div class="direction-row-metric">
+          <span class="direction-row-mobile-label" data-zh="预期窗口" data-en="Expected window">Expected window</span>
+          <strong>{html(expected_window(forecast))}</strong>
         </div>
+        <div class="direction-row-metric">
+          <span class="direction-row-mobile-label" data-zh="已观察信号" data-en="Observed signals">Observed signals</span>
+          <strong>{observed_count}</strong>
+        </div>
+        <div class="direction-row-metric direction-row-evidence">
+          <span class="direction-row-mobile-label" data-zh="证据强度" data-en="Evidence strength">Evidence strength</span>
+          <strong data-zh="{html(evidence_grade)} 级 · {html(confidence_zh)}" data-en="Grade {html(evidence_grade)} · {html(confidence_en)}">Grade {html(evidence_grade)} · {html(confidence_en)}</strong>
+        </div>
+        <div class="direction-row-cta" data-zh="查看详情 →" data-en="View details →">View details →</div>
       </a>'''
         rows.append(row)
     return ''.join(rows)
