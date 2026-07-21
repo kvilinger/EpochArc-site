@@ -169,9 +169,12 @@ const LANGUAGES = {
 
 
     async function loadJson(url) {
-      const response = await fetch(url, { cache: 'no-store' });
+      const requestUrl = window.location.protocol === 'file:'
+        ? url
+        : `/${url.replace(/^\/+/, '')}`;
+      const response = await fetch(requestUrl, { cache: 'no-store' });
       if (!response.ok) {
-        throw new Error(`${url}: ${response.status}`);
+        throw new Error(`${requestUrl}: ${response.status}`);
       }
       return response.json();
     }
@@ -378,10 +381,12 @@ const LANGUAGES = {
 
     let fullEventDataLoaded = false;
     let fullEventDataPromise = null;
+    let fullEventDataError = false;
 
     async function ensureFullEventData() {
       if (fullEventDataLoaded) return Promise.resolve();
       if (!fullEventDataPromise) {
+        fullEventDataError = false;
         fullEventDataPromise = loadJson('data/events.json').then(data => {
           const summaryMap = new Map(aiEvents.map(e => [e.id, e]));
           data.forEach(full => {
@@ -394,6 +399,8 @@ const LANGUAGES = {
           renderTimeline();
         }).catch(err => {
           fullEventDataPromise = null;
+          fullEventDataError = true;
+          renderTimeline();
           throw err;
         });
       }
@@ -1252,12 +1259,15 @@ const LANGUAGES = {
       
       const isPartial = !e.narrative && !e.impacts;
       if (isPartial) {
+        const detailStatus = fullEventDataError
+          ? (isChineseContent() ? '详情加载失败，请重试或打开完整事件页面。' : 'Details failed to load. Retry or open the full event page.')
+          : (isChineseContent() ? '加载详情中…' : 'Loading details…');
         return `
           <div class="timeline-details" id="${detailsId}" onclick="event.stopPropagation()" onkeydown="event.stopPropagation()">
             <div class="timeline-details-inner">
               <div class="detail-section" style="text-align: center; padding: var(--gap-lg) 0;">
                 <p style="color: var(--muted); font-size: 14px; margin-bottom: 16px;">
-                  ${isChineseContent() ? '加载详情中…' : 'Loading details…'}
+                  ${detailStatus}
                 </p>
                 <a href="/events/${e.slug || e.id}/" class="source-title-link" style="font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 4px;" onclick="event.stopPropagation()">
                   <span>${isChineseContent() ? '直接查看完整事件页面 →' : 'View full event page →'}</span>
