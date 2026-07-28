@@ -585,8 +585,8 @@ if os.path.exists(TEMPLATE_FILE):
         related_section_html = ''
         if related_events_list:
             related_section_html = f'''
-              <section class="detail-block related-section">
-                <h3 data-zh="关联事件" data-en="Related Events">关联事件</h3>
+              <section class="detail-block related-section" id="event-related" data-toc-section>
+                <h2 data-zh="关联事件" data-en="Related Events">关联事件</h2>
                 {precursors_html}
                 {successors_html}
                 {topology_html}

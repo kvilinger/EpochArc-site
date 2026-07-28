@@ -1,3 +1,5 @@
+import { setupPageToc } from './page-toc.js';
+
 function sitePath(path) {
   return typeof window.localizedSitePath === 'function' ? window.localizedSitePath(path) : path;
 }
@@ -183,3 +185,4 @@ document.addEventListener('click', function(e) {
 });
 
 updateTheme();
+setupPageToc();

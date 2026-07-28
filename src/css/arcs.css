@@ -1,5 +1,5 @@
-@import "./global.css?v=2.5.2";
-@import "./main.css?v=2.5.2";
+@import "./global.css?v=2.6.2";
+@import "./main.css?v=2.6.2";
 
 /* Arc index */
 .arcs-page-container,
@@ -35,7 +35,7 @@
   margin: 0 0 8px;
   color: var(--fg);
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.35;
 }
 
@@ -66,7 +66,7 @@
 
 /* Arc detail */
 .arc-hero {
-  margin-bottom: 36px;
+  margin-bottom: 48px;
   padding: 0;
   border: 0;
   text-align: left;
@@ -74,55 +74,15 @@
 
 .arc-detail-grid { margin-top: 0; }
 
-.arc-toc {
-  position: sticky;
-  top: 76px;
-  z-index: 12;
-  display: flex;
-  gap: 8px;
-  margin: 0 0 24px;
-  padding: 8px;
-  overflow-x: auto;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  background: color-mix(in oklch, var(--bg) 92%, transparent);
-  backdrop-filter: blur(12px);
-  scrollbar-width: none;
-}
-
-.arc-toc::-webkit-scrollbar { display: none; }
-
-.arc-toc a {
-  flex: 0 0 auto;
-  padding: 7px 10px;
-  border: 1px solid transparent;
-  border-radius: var(--radius-pill);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 650;
-  line-height: 1.25;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: color .2s ease, border-color .2s ease, background-color .2s ease;
-}
-
-.arc-toc a:hover,
-.arc-toc a.active {
-  color: var(--accent);
-  border-color: color-mix(in oklch, var(--accent) 58%, var(--border));
-  background: var(--accent-soft);
-}
-
 .arc-abstract {
-  margin: 0 0 40px;
-  padding: 18px 20px;
+  margin: 0 0 48px;
+  padding: 20px 24px;
   border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
   border-radius: var(--radius-lg);
   background: var(--surface);
   color: var(--fg);
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: var(--type-body);
+  line-height: 1.7;
 }
 
 .arc-chapter {
@@ -138,39 +98,40 @@
 
 .arc-chapter-title {
   color: var(--fg);
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1.3;
+  font-size: var(--type-section);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -.018em;
 }
 
 .arc-chapter-narrative {
   margin-bottom: 18px;
   color: var(--fg);
-  font-size: 15.5px;
-  line-height: 1.82;
+  font-size: var(--type-body);
+  line-height: 1.7;
 }
 
 .arc-key-insight {
   margin-bottom: 18px;
   padding: 14px 16px;
-  border-left: 3px solid var(--accent);
-  border-radius: 0 var(--radius) var(--radius) 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   background: var(--accent-soft);
 }
 
 .arc-key-insight-label {
   margin-bottom: 5px;
   color: var(--accent);
-  font: 700 10px/1.4 var(--font-mono);
-  letter-spacing: .07em;
+  font: 700 var(--type-overline)/1.4 var(--font-mono);
+  letter-spacing: .055em;
   text-transform: uppercase;
 }
 
 .arc-key-insight p {
   color: var(--fg);
-  font-size: 14px;
-  font-weight: 650;
-  line-height: 1.6;
+  font-size: var(--type-support);
+  font-weight: 600;
+  line-height: 1.65;
 }
 
 .arc-anchor-events {
@@ -187,7 +148,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   background: var(--surface);
-  font-size: 12px;
+  font-size: var(--type-meta);
   text-decoration: none;
   transition: color .2s ease, border-color .2s ease, background-color .2s ease;
 }
@@ -200,7 +161,7 @@
 
 .arc-anchor-event .event-date {
   color: var(--muted);
-  font: 600 10px/1.4 var(--font-mono);
+  font: 600 var(--type-overline)/1.4 var(--font-mono);
 }
 
 .arc-anchor-event .event-name { color: currentColor; font-weight: 650; }
@@ -218,16 +179,18 @@
 .arc-conclusion h3,
 .related-arcs-section > h3 {
   margin-bottom: 12px;
-  color: var(--muted);
-  font: 700 11px/1.4 var(--font-mono);
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  color: var(--fg);
+  font-family: var(--font-display);
+  font-size: var(--type-section);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -.018em;
 }
 
 .arc-conclusion-text {
   color: var(--fg);
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: var(--type-body);
+  line-height: 1.7;
 }
 
 .related-arcs-section {
@@ -248,10 +211,20 @@
 }
 
 .related-arc-card:hover { border-color: var(--accent); background: var(--accent-soft); }
-.related-arc-title { margin: 0 0 5px; color: var(--fg); font-size: 15px; }
-.related-arc-subtitle { color: var(--muted); font-size: 13px; line-height: 1.55; }
+.related-arc-title {
+  margin: 0 0 5px;
+  color: var(--fg);
+  font-size: var(--type-item);
+  font-weight: 700;
+  line-height: 1.45;
+}
+.related-arc-subtitle {
+  color: var(--muted);
+  font-size: var(--type-support);
+  line-height: 1.65;
+}
 
-.arc-rail-note { color: var(--muted); font-size: 12px; line-height: 1.65; }
+.arc-rail-note { color: var(--muted); font-size: var(--type-meta); line-height: 1.65; }
 
 @media (max-width: 700px) {
   .arcs-grid { grid-template-columns: 1fr; }

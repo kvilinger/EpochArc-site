@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs/{{SLUG}}/" />
 
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.5.2" />
+  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.6.2" />
   {{SCHEMA_JSON_LD}}
 </head>
 <body data-theme="light">
@@ -73,11 +73,8 @@
 
     <div class="page-layout arc-detail-grid">
       <article class="page-main arc-main">
-        <!-- Table of Contents -->
-        {{TOC_HTML}}
-
         <!-- Abstract -->
-        <div class="arc-abstract">
+        <div class="arc-abstract" id="arc-summary" data-toc-section>
           <p data-zh="{{ABSTRACT_ZH}}" data-en="{{ABSTRACT_EN}}">{{ABSTRACT_EN}}</p>
         </div>
 
@@ -85,7 +82,7 @@
 {{CHAPTERS_HTML}}
 
         <!-- Conclusion -->
-        <div class="arc-conclusion">
+        <div class="arc-conclusion" id="arc-conclusion" data-toc-section>
           <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
           <p class="arc-conclusion-text" data-zh="{{CONCLUSION_ZH}}" data-en="{{CONCLUSION_EN}}">{{CONCLUSION_EN}}</p>
         </div>
@@ -104,9 +101,15 @@
             <div><dt data-zh="最后更新" data-en="Last updated">最后更新</dt><dd>{{UPDATED_AT}}</dd></div>
           </dl>
         </section>
+        <section class="rail-card rail-toc-card">
+          <h2 class="rail-card-title" data-zh="本页目录" data-en="On this page">本页目录</h2>
+          <nav class="rail-link-list" data-page-toc aria-label="On this page">
+            {{TOC_HTML}}
+          </nav>
+        </section>
         <section class="rail-card">
           <h2 class="rail-card-title" data-zh="阅读提示" data-en="Reading note">阅读提示</h2>
-          <p class="arc-rail-note" data-zh="章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The blue capsule marks your position, and event nodes open the full record.">章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。</p>
+          <p class="arc-rail-note" data-zh="章节按历史进程组织；右侧目录显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The right-hand directory marks your reading position, and event nodes open the full record.">章节按历史进程组织；右侧目录显示当前阅读位置，事件节点可继续进入完整资料页。</p>
         </section>
       </aside>
     </div>

@@ -1,3 +1,5 @@
+import { setupPageToc } from './page-toc.js';
+
 /* ─── Arc Pages: Language, Theme, Navigation ─── */
 
 function sitePath(path) {
@@ -111,29 +113,5 @@ document.addEventListener('click', function(e) {
     });
   }
 
-  // TOC scroll spy (detail page only)
-  const tocLinks = document.querySelectorAll('.arc-toc a');
-  if (tocLinks.length > 0) {
-    const chapters = [];
-    tocLinks.forEach(link => {
-      const id = link.getAttribute('href')?.replace('#', '');
-      if (id) {
-        const el = document.getElementById(id);
-        if (el) chapters.push({ link, el });
-      }
-    });
-
-    function updateActiveToc() {
-      let current = null;
-      for (const ch of chapters) {
-        const rect = ch.el.getBoundingClientRect();
-        if (rect.top <= 160) current = ch;
-      }
-      tocLinks.forEach(l => l.classList.remove('active'));
-      if (current) current.link.classList.add('active');
-    }
-
-    window.addEventListener('scroll', updateActiveToc, { passive: true });
-    updateActiveToc();
-  }
+  setupPageToc();
 })();

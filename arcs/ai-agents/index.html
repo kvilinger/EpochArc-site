@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs/ai-agents/" />
 
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.5.2" />
+  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.6.2" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -97,22 +97,14 @@
 
     <div class="page-layout arc-detail-grid">
       <article class="page-main arc-main">
-        <!-- Table of Contents -->
-        <div class="arc-toc">
-<a href="#chapter-the-prototype" data-zh="一、原型：Auto-GPT" data-en="01. The Prototype: Auto-GPT">01. The Prototype: Auto-GPT</a>
-<a href="#chapter-the-plumbing" data-zh="二、管道：智能体的基础设施" data-en="02. The Plumbing: Infrastructure for Agents">02. The Plumbing: Infrastructure for Agents</a>
-<a href="#chapter-first-working-agents" data-zh="三、第一批真正好用的智能体" data-en="03. The First Agents That Work">03. The First Agents That Work</a>
-<a href="#chapter-from-code-to-culture" data-zh="四、从代码走向文化" data-en="04. From Code to Culture">04. From Code to Culture</a>
-</div>
-
         <!-- Abstract -->
-        <div class="arc-abstract">
+        <div class="arc-abstract" id="arc-summary" data-toc-section>
           <p data-zh="2023 年 3 月，一个独立开发者发布了一个名为 Auto-GPT 的开源实验 — 一个可以自主设定目标并追求目标的 AI。它有 bug、成本高昂、而且经常没用。三年后，数百万人使用 AI 智能体 — Claude Code、OpenAI Operator、OpenClaw — 来编写生产代码、浏览网页和管理日常任务。本专题追溯了从原型到基础设施再到产品的旅程：一个拼凑出来的演示如何揭示了一种渴望，整个行业争先恐后地去满足它，以及 AI 如何从对话式跨越到自主式。" data-en="In March 2023, a solo developer released an open-source experiment called Auto-GPT — an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents — Claude Code, OpenAI Operator, OpenClaw — to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.">In March 2023, a solo developer released an open-source experiment called Auto-GPT — an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents — Claude Code, OpenAI Operator, OpenClaw — to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.</p>
         </div>
 
         <!-- Chapters -->
 
-              <section class="arc-chapter" id="chapter-the-prototype">
+              <section class="arc-chapter" id="chapter-the-prototype" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="一、原型：Auto-GPT" data-en="01. The Prototype: Auto-GPT">01. The Prototype: Auto-GPT</h2>
@@ -146,7 +138,7 @@
                 </div>
               </section>
 
-              <section class="arc-chapter" id="chapter-the-plumbing">
+              <section class="arc-chapter" id="chapter-the-plumbing" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="二、管道：智能体的基础设施" data-en="02. The Plumbing: Infrastructure for Agents">02. The Plumbing: Infrastructure for Agents</h2>
@@ -180,7 +172,7 @@
                 </div>
               </section>
 
-              <section class="arc-chapter" id="chapter-first-working-agents">
+              <section class="arc-chapter" id="chapter-first-working-agents" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="三、第一批真正好用的智能体" data-en="03. The First Agents That Work">03. The First Agents That Work</h2>
@@ -214,7 +206,7 @@
                 </div>
               </section>
 
-              <section class="arc-chapter" id="chapter-from-code-to-culture">
+              <section class="arc-chapter" id="chapter-from-code-to-culture" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="四、从代码走向文化" data-en="04. From Code to Culture">04. From Code to Culture</h2>
@@ -249,7 +241,7 @@
               </section>
 
         <!-- Conclusion -->
-        <div class="arc-conclusion">
+        <div class="arc-conclusion" id="arc-conclusion" data-toc-section>
           <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
           <p class="arc-conclusion-text" data-zh="智能体转型的速度令人叹为观止。2023 年 3 月，&#39;AI 智能体&#39;的概念还是一个充满 bug 的开源实验。到 2026 年 1 月，数百万人每天都在工作和个人任务中使用智能体。基础设施 — MCP、视觉浏览模型、终端智能体 — 是在实时建造的，以回应 Auto-GPT 所揭示的需求。
 
@@ -268,7 +260,7 @@ The question that remains is not whether agents will become ubiquitous — that 
 
         <!-- Related Arcs -->
 
-                  <section class="related-arcs-section">
+                  <section class="related-arcs-section" id="related-arcs" data-toc-section>
                     <h3 data-zh="相关叙事弧" data-en="Related Arcs">Related Arcs</h3>
                     <div class="related-arcs-grid">
                       
@@ -292,9 +284,21 @@ The question that remains is not whether agents will become ubiquitous — that 
             <div><dt data-zh="最后更新" data-en="Last updated">最后更新</dt><dd>2026-06-30</dd></div>
           </dl>
         </section>
+        <section class="rail-card rail-toc-card">
+          <h2 class="rail-card-title" data-zh="本页目录" data-en="On this page">本页目录</h2>
+          <nav class="rail-link-list" data-page-toc aria-label="On this page">
+            <a href="#arc-summary" data-zh="专题摘要" data-en="Arc summary">Arc summary</a>
+<a href="#chapter-the-prototype" data-zh="一、原型：Auto-GPT" data-en="01. The Prototype: Auto-GPT">01. The Prototype: Auto-GPT</a>
+<a href="#chapter-the-plumbing" data-zh="二、管道：智能体的基础设施" data-en="02. The Plumbing: Infrastructure for Agents">02. The Plumbing: Infrastructure for Agents</a>
+<a href="#chapter-first-working-agents" data-zh="三、第一批真正好用的智能体" data-en="03. The First Agents That Work">03. The First Agents That Work</a>
+<a href="#chapter-from-code-to-culture" data-zh="四、从代码走向文化" data-en="04. From Code to Culture">04. From Code to Culture</a>
+<a href="#arc-conclusion" data-zh="结语" data-en="Conclusion">Conclusion</a>
+<a href="#related-arcs" data-zh="相关专题" data-en="Related arcs">Related arcs</a>
+          </nav>
+        </section>
         <section class="rail-card">
           <h2 class="rail-card-title" data-zh="阅读提示" data-en="Reading note">阅读提示</h2>
-          <p class="arc-rail-note" data-zh="章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The blue capsule marks your position, and event nodes open the full record.">章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。</p>
+          <p class="arc-rail-note" data-zh="章节按历史进程组织；右侧目录显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The right-hand directory marks your reading position, and event nodes open the full record.">章节按历史进程组织；右侧目录显示当前阅读位置，事件节点可继续进入完整资料页。</p>
         </section>
       </aside>
     </div>

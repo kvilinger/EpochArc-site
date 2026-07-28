@@ -38,6 +38,16 @@
       --fs-body: 15px;
       --fs-meta: 13px;
 
+      /* Semantic typography roles for non-home pages */
+      --type-page: clamp(36px, 4.2vw, 44px);
+      --type-lead: 17px;
+      --type-section: 20px;
+      --type-item: 16px;
+      --type-body: 15px;
+      --type-support: 14px;
+      --type-meta: 12px;
+      --type-overline: 11px;
+
       /* Spacing */
       --gap-xs: 8px;
       --gap-sm: 12px;
@@ -46,7 +56,6 @@
       --gap-xl: 56px;
       --container: 960px; /* Locked to EpochArc content width */
       --gutter: 24px;
-      --reading-measure: 660px;
       --rail-width: 220px;
       --page-grid-gap: 36px;
       --rail-breakout-width: calc(var(--container) + var(--page-grid-gap) + var(--rail-width) - var(--gutter));
@@ -170,29 +179,28 @@
       flex: 0 0 auto;
     }
     .page-header {
-      max-width: var(--reading-measure);
-      margin: 0 0 36px;
+      margin: 0 0 48px;
       text-align: left;
     }
     .page-kicker {
       margin: 0 0 10px;
       color: var(--accent);
-      font: 700 11px/1.4 var(--font-mono);
-      letter-spacing: .07em;
+      font: 700 var(--type-overline)/1.4 var(--font-mono);
+      letter-spacing: .055em;
       text-transform: uppercase;
     }
     .page-title {
       font-family: var(--font-display);
-      font-size: clamp(32px, 5vw, 48px);
+      font-size: var(--type-page);
       font-weight: 800;
       line-height: 1.08;
       letter-spacing: -.04em;
+      text-wrap: pretty;
     }
     .page-lead {
-      max-width: var(--reading-measure);
       margin: 14px 0 0;
       color: var(--muted);
-      font-size: 17px;
+      font-size: var(--type-lead);
       line-height: 1.65;
     }
     .page-meta-row {
@@ -202,7 +210,7 @@
       flex-wrap: wrap;
       margin-top: 18px;
       color: var(--muted);
-      font: 600 12px/1.5 var(--font-mono);
+      font: 600 var(--type-meta)/1.5 var(--font-mono);
     }
     .page-chip {
       display: inline-flex;
@@ -244,8 +252,8 @@
     .rail-card-title {
       margin: 0 0 12px;
       color: var(--muted);
-      font: 700 11px/1.4 var(--font-mono);
-      letter-spacing: .06em;
+      font: 700 var(--type-overline)/1.4 var(--font-mono);
+      letter-spacing: .055em;
       text-transform: uppercase;
     }
     .rail-facts {
@@ -281,18 +289,22 @@
     }
     .rail-link-list a {
       display: block;
-      padding: 7px 8px;
+      padding: 7px 8px 7px 10px;
+      border-left: 2px solid transparent;
       border-radius: var(--radius);
       color: var(--muted);
-      font-size: 12px;
+      font-size: var(--type-meta);
       line-height: 1.4;
       text-decoration: none;
     }
     .rail-link-list a:hover,
-    .rail-link-list a.active {
+    .rail-link-list a.active,
+    .rail-link-list a[aria-current="location"] {
       color: var(--accent);
+      border-left-color: var(--accent);
       background: var(--accent-soft);
     }
+    [data-toc-section] { scroll-margin-top: 96px; }
 
     @media (min-width: 1440px) {
       .site-page.page-with-rail {
@@ -301,6 +313,14 @@
         margin-right: 0;
         margin-left: calc((100vw - var(--container)) / 2);
         padding-right: 0;
+      }
+      .page-with-rail > .page-header {
+        width: calc(100% - var(--page-grid-gap) - var(--rail-width));
+      }
+      .page-rail {
+        max-height: calc(100vh - 108px);
+        overflow-y: auto;
+        scrollbar-width: thin;
       }
     }
     @media (max-width: 1439px) {
@@ -312,6 +332,7 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         margin-top: 12px;
       }
+      .rail-toc-card { display: none; }
       .page-header { max-width: none; }
     }
     @media (max-width: 560px) {

@@ -259,7 +259,9 @@ else:
         # ── 生成 TOC HTML ──
         # ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT use 'Chapter N' or '第N章' prefix for chapters.
         # Use Chinese numbers '一、' and English numbers '01.' pre-fixed directly to the title to align layout.
-        toc_items = []
+        toc_items = [
+            '<a href="#arc-summary" data-zh="专题摘要" data-en="Arc summary">Arc summary</a>'
+        ]
         for ci, ch in enumerate(a['chapters']):
             ch_num = ci + 1
             ch_title_en = ch['title']['en']
@@ -270,7 +272,9 @@ else:
                 f'data-en="{ch_num:02d}. {html_escape(ch_title_en)}">'
                 f'{ch_num:02d}. {html_escape(ch_title_en)}</a>'
             )
-        toc_html = '<div class="arc-toc">\n' + '\n'.join(toc_items) + '\n</div>' if toc_items else ''
+        toc_items.append('<a href="#arc-conclusion" data-zh="结语" data-en="Conclusion">Conclusion</a>')
+        toc_items.append('<a href="#related-arcs" data-zh="相关专题" data-en="Related arcs">Related arcs</a>')
+        toc_html = '\n'.join(toc_items)
 
         # ── 生成 Chapters HTML ──
         chapter_blocks = []
@@ -321,7 +325,7 @@ else:
 
             # Chapters block (对齐 arcs.css 的 .arc-chapter-header 等类名，移除第N章前缀改为直观的前置数字)
             chapter_blocks.append(f'''
-              <section class="arc-chapter" id="chapter-{ch_id}">
+              <section class="arc-chapter" id="chapter-{ch_id}" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="{zh_num}、{html_escape(ch_title_zh)}" data-en="{ch_num:02d}. {html_escape(ch_title_en)}">{ch_num:02d}. {html_escape(ch_title_en)}</h2>
@@ -357,7 +361,7 @@ else:
                 ''')
             if related_cards:
                 related_arcs_html = f'''
-                  <section class="related-arcs-section">
+                  <section class="related-arcs-section" id="related-arcs" data-toc-section>
                     <h3 data-zh="相关叙事弧" data-en="Related Arcs">Related Arcs</h3>
                     <div class="related-arcs-grid">
                       {''.join(related_cards)}

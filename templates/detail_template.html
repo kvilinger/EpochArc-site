@@ -30,7 +30,7 @@
   
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
   
-  <link rel="stylesheet" href="../../src/css/detail.css?v=2.5.3" />
+  <link rel="stylesheet" href="../../src/css/detail.css?v=2.6.2" />
   {{SCHEMA_JSON_LD}}
 </head>
 <body data-theme="light">
@@ -70,7 +70,7 @@
 
   <!-- Breadcrumbs & Event Details -->
   <main class="site-page page-with-rail detail-page-container">
-    <a href="/#event={{ID}}" class="page-back back-link">
+    <a href="/#return={{ID}}" class="page-back back-link">
       <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
       </svg>
@@ -86,22 +86,22 @@
       <article class="page-main event-detail-card">
 
       <!-- Event Summary & Narrative -->
-      <section class="detail-block">
-        <h3 data-zh="事件摘要" data-en="Event Summary">事件摘要</h3>
+      <section class="detail-block" id="event-summary" data-toc-section>
+        <h2 data-zh="事件摘要" data-en="Event Summary">事件摘要</h2>
         <p class="summary-text" data-zh="{{DESC_ZH}}" data-en="{{DESC_EN}}">{{DESC_EN}}</p>
       </section>
 
       <!-- Impact Assessment -->
-      <section class="detail-block">
-        <h3 data-zh="影响评估" data-en="Impact Assessment">影响评估</h3>
+      <section class="detail-block" id="event-impact" data-toc-section>
+        <h2 data-zh="影响评估" data-en="Impact Assessment">影响评估</h2>
         <ul class="impact-list">
           {{IMPACTS}}
         </ul>
       </section>
 
       <!-- Consensus & Sources -->
-      <section class="detail-block">
-        <h3 data-zh="共识度与来源" data-en="Consensus &amp; Sources">共识度与来源</h3>
+      <section class="detail-block" id="event-evidence" data-toc-section>
+        <h2 data-zh="共识度与来源" data-en="Consensus &amp; Sources">共识度与来源</h2>
         <div class="evidence-summary event-evidence-summary">
           <div class="evidence-item">
             <span class="label" data-zh="重要度" data-en="Significance">重要度</span>
@@ -144,6 +144,15 @@
             <div><dt data-zh="共识度" data-en="Consensus">共识度</dt><dd>{{CONSENSUS}}</dd></div>
             <div><dt data-zh="影响指数" data-en="Impact index">影响指数</dt><dd>{{IMPACT_INDEX}} / 10</dd></div>
           </dl>
+        </section>
+        <section class="rail-card rail-toc-card">
+          <h2 class="rail-card-title" data-zh="本页目录" data-en="On this page">本页目录</h2>
+          <nav class="rail-link-list" data-page-toc aria-label="On this page">
+            <a href="#event-summary" data-zh="事件摘要" data-en="Event summary">事件摘要</a>
+            <a href="#event-impact" data-zh="影响评估" data-en="Impact assessment">影响评估</a>
+            <a href="#event-evidence" data-zh="共识度与来源" data-en="Consensus &amp; sources">共识度与来源</a>
+            <a href="#event-related" data-zh="关联事件" data-en="Related events">关联事件</a>
+          </nav>
         </section>
         <section class="rail-card">
           <h2 class="rail-card-title" data-zh="评估说明" data-en="Assessment note">评估说明</h2>

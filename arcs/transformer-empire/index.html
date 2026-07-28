@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://epoch-arc.com/arcs/transformer-empire/" />
 
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.5.2" />
+  <link rel="stylesheet" href="../../src/css/arcs.css?v=2.6.2" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -97,22 +97,14 @@
 
     <div class="page-layout arc-detail-grid">
       <article class="page-main arc-main">
-        <!-- Table of Contents -->
-        <div class="arc-toc">
-<a href="#chapter-origins" data-zh="一、起源与顺序计算瓶颈" data-en="01. Origins &amp; RNN Bottleneck">01. Origins &amp; RNN Bottleneck</a>
-<a href="#chapter-understanding-emerges" data-zh="二、双向表征与规模法则" data-en="02. Encoder-Decoder Divergence &amp; Scaling Laws">02. Encoder-Decoder Divergence &amp; Scaling Laws</a>
-<a href="#chapter-chatgpt-moment" data-zh="三、ChatGPT 时刻与混合专家模型" data-en="03. The ChatGPT Moment &amp; MoE Scaling">03. The ChatGPT Moment &amp; MoE Scaling</a>
-<a href="#chapter-scaling-frontier" data-zh="四、原生多模态与推理时计算" data-en="04. Native Multimodality &amp; Inference-Time Compute">04. Native Multimodality &amp; Inference-Time Compute</a>
-</div>
-
         <!-- Abstract -->
-        <div class="arc-abstract">
+        <div class="arc-abstract" id="arc-summary" data-toc-section>
           <p data-zh="2017 年，Google 研究人员用可并行的自注意力机制取代了传统的顺序循环神经网络（RNN）。在接下来的七年中，这一设计从翻译任务一路扩展到万亿参数的大型模型，推动了以 NVIDIA 为代表的硬件供应商市值突破 3 万亿美元。本专题记录了将 Transformer 从一篇学术论文演变为现代计算核心基础设施的关键技术指标与量化演进。" data-en="In 2017, Google researchers replaced sequential RNNs with a parallelizable self-attention architecture. Over the next seven years, this design scaled from translation tasks to trillion-parameter models, driving the valuation of hardware providers like NVIDIA past $3 trillion. This arc documents the technical milestones and empirical scaling metrics that transformed the Transformer from an academic paper into the primary infrastructure of modern compute.">In 2017, Google researchers replaced sequential RNNs with a parallelizable self-attention architecture. Over the next seven years, this design scaled from translation tasks to trillion-parameter models, driving the valuation of hardware providers like NVIDIA past $3 trillion. This arc documents the technical milestones and empirical scaling metrics that transformed the Transformer from an academic paper into the primary infrastructure of modern compute.</p>
         </div>
 
         <!-- Chapters -->
 
-              <section class="arc-chapter" id="chapter-origins">
+              <section class="arc-chapter" id="chapter-origins" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="一、起源与顺序计算瓶颈" data-en="01. Origins &amp; RNN Bottleneck">01. Origins &amp; RNN Bottleneck</h2>
@@ -146,7 +138,7 @@
                 </div>
               </section>
 
-              <section class="arc-chapter" id="chapter-understanding-emerges">
+              <section class="arc-chapter" id="chapter-understanding-emerges" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="二、双向表征与规模法则" data-en="02. Encoder-Decoder Divergence &amp; Scaling Laws">02. Encoder-Decoder Divergence &amp; Scaling Laws</h2>
@@ -180,7 +172,7 @@
                 </div>
               </section>
 
-              <section class="arc-chapter" id="chapter-chatgpt-moment">
+              <section class="arc-chapter" id="chapter-chatgpt-moment" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="三、ChatGPT 时刻与混合专家模型" data-en="03. The ChatGPT Moment &amp; MoE Scaling">03. The ChatGPT Moment &amp; MoE Scaling</h2>
@@ -214,7 +206,7 @@
                 </div>
               </section>
 
-              <section class="arc-chapter" id="chapter-scaling-frontier">
+              <section class="arc-chapter" id="chapter-scaling-frontier" data-toc-section>
                 <div class="arc-chapter-header">
                   <!-- ⚠️ WARNING FOR OTHER AI AGENTS: Keep Chinese numbers '一、' and English numbers '01.' prefixes directly inside heading attributes. -->
                   <h2 class="arc-chapter-title" data-zh="四、原生多模态与推理时计算" data-en="04. Native Multimodality &amp; Inference-Time Compute">04. Native Multimodality &amp; Inference-Time Compute</h2>
@@ -258,7 +250,7 @@
               </section>
 
         <!-- Conclusion -->
-        <div class="arc-conclusion">
+        <div class="arc-conclusion" id="arc-conclusion" data-toc-section>
           <h3 data-zh="结语" data-en="Conclusion">Conclusion</h3>
           <p class="arc-conclusion-text" data-zh="Transformer 的 scaling 故事不只是技术成就，它更是 2020 年代最核心的经济叙事。不到十年，一个架构洞察重塑了整个计算栈：从 2017 年的论文到 NVIDIA 三万亿市值，从机器翻译到支撑新一代软件的基础设施。证据很清楚：极端的规模加上基础结构先验，可以产生连创造者自己都没有预料到的能力。
 
@@ -289,9 +281,21 @@ The deeper question — the one this timeline cannot answer — is whether the T
             <div><dt data-zh="最后更新" data-en="Last updated">最后更新</dt><dd>2026-06-29</dd></div>
           </dl>
         </section>
+        <section class="rail-card rail-toc-card">
+          <h2 class="rail-card-title" data-zh="本页目录" data-en="On this page">本页目录</h2>
+          <nav class="rail-link-list" data-page-toc aria-label="On this page">
+            <a href="#arc-summary" data-zh="专题摘要" data-en="Arc summary">Arc summary</a>
+<a href="#chapter-origins" data-zh="一、起源与顺序计算瓶颈" data-en="01. Origins &amp; RNN Bottleneck">01. Origins &amp; RNN Bottleneck</a>
+<a href="#chapter-understanding-emerges" data-zh="二、双向表征与规模法则" data-en="02. Encoder-Decoder Divergence &amp; Scaling Laws">02. Encoder-Decoder Divergence &amp; Scaling Laws</a>
+<a href="#chapter-chatgpt-moment" data-zh="三、ChatGPT 时刻与混合专家模型" data-en="03. The ChatGPT Moment &amp; MoE Scaling">03. The ChatGPT Moment &amp; MoE Scaling</a>
+<a href="#chapter-scaling-frontier" data-zh="四、原生多模态与推理时计算" data-en="04. Native Multimodality &amp; Inference-Time Compute">04. Native Multimodality &amp; Inference-Time Compute</a>
+<a href="#arc-conclusion" data-zh="结语" data-en="Conclusion">Conclusion</a>
+<a href="#related-arcs" data-zh="相关专题" data-en="Related arcs">Related arcs</a>
+          </nav>
+        </section>
         <section class="rail-card">
           <h2 class="rail-card-title" data-zh="阅读提示" data-en="Reading note">阅读提示</h2>
-          <p class="arc-rail-note" data-zh="章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The blue capsule marks your position, and event nodes open the full record.">章节按历史进程组织；蓝色胶囊显示当前阅读位置，事件节点可继续进入完整资料页。</p>
+          <p class="arc-rail-note" data-zh="章节按历史进程组织；右侧目录显示当前阅读位置，事件节点可继续进入完整资料页。" data-en="Chapters follow the historical sequence. The right-hand directory marks your reading position, and event nodes open the full record.">章节按历史进程组织；右侧目录显示当前阅读位置，事件节点可继续进入完整资料页。</p>
         </section>
       </aside>
     </div>

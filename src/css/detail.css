@@ -1,16 +1,15 @@
-@import "./global.css?v=2.5.3";
-@import "./main.css?v=2.5.3";
+@import "./global.css?v=2.6.2";
+@import "./main.css?v=2.6.2";
 
 .detail-page-container { max-width: var(--container); }
 
 .event-header {
-  margin-bottom: 36px;
+  margin-bottom: 48px;
   padding: 0;
   border: 0;
 }
 
 .event-title {
-  max-width: var(--reading-measure);
   color: var(--fg);
 }
 
@@ -21,43 +20,35 @@
   padding: 20px;
   flex-direction: column;
   gap: 0;
-  border: 1px solid color-mix(in oklch, var(--accent) 36%, var(--border));
+  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  background:
-    linear-gradient(90deg, color-mix(in oklch, var(--accent) 7%, transparent), transparent 34%),
-    var(--surface);
+  background: var(--surface);
   box-shadow: none;
 }
 
-.event-detail-card::before {
-  content: '';
-  position: absolute;
-  inset: 14px auto 14px 0;
-  width: 3px;
-  border-radius: var(--radius-pill);
-  background: var(--accent);
-}
-
 .detail-block {
-  padding: var(--gap-md) 0;
+  padding: 32px 0;
   border-top: 1px solid var(--border);
 }
 
 .detail-block:first-child { padding-top: 0; border-top: 0; }
 
-.detail-block h3 {
-  margin: 0 0 var(--gap-sm);
+.detail-block h2 {
+  margin: 0 0 12px;
   padding: 0;
   border: 0;
-  color: var(--muted);
-  font: 400 12px/1.4 var(--font-mono);
-  letter-spacing: .01em;
+  color: var(--fg);
+  font-family: var(--font-display);
+  font-size: var(--type-section);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -.018em;
 }
 
 .summary-text {
   color: var(--fg);
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: var(--type-body);
+  line-height: 1.7;
 }
 
 .impact-list,
@@ -72,6 +63,45 @@
 
 .event-evidence-summary { margin-bottom: var(--gap-sm); }
 
+.event-detail-card .impact-item {
+  padding: 20px 0;
+}
+
+.event-detail-card .impact-name {
+  font-size: var(--type-item);
+  line-height: 1.45;
+}
+
+.event-detail-card .impact-description {
+  font-size: var(--type-support);
+  line-height: 1.65;
+}
+
+.event-detail-card .impact-score {
+  font-size: var(--type-meta);
+  line-height: 1.5;
+}
+
+.event-detail-card .source-card {
+  padding: 20px 0;
+}
+
+.event-detail-card .source-title {
+  font-size: var(--type-item);
+  line-height: 1.45;
+}
+
+.event-detail-card .source-meta,
+.event-detail-card .source-status {
+  font-size: var(--type-meta);
+  line-height: 1.5;
+}
+
+.event-detail-card .source-quote {
+  font-size: var(--type-support);
+  line-height: 1.65;
+}
+
 .event-meta-row {
   display: flex;
   gap: 6px;
@@ -84,13 +114,13 @@
 .event-rail-note {
   margin-bottom: 12px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--type-meta);
   line-height: 1.65;
 }
 
 .event-rail-link {
   color: var(--accent);
-  font-size: 12px;
+  font-size: var(--type-meta);
   font-weight: 700;
   text-decoration: none;
 }

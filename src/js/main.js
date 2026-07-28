@@ -113,6 +113,95 @@ const LANGUAGES = {
       return `${window.location.pathname}#event=${encodeURIComponent(id)}`;
     }
 
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    function rememberTimelineReturnPosition(eventId) {
+      const item = document.getElementById(`item-${eventId}`);
+      const itemTop = item?.getBoundingClientRect().top ?? 120;
+      const anchorTop = Math.min(Math.max(itemTop, 96), window.innerHeight * 0.65);
+      const nextState = {
+        ...(history.state || {}),
+        timelineReturn: { eventId, anchorTop }
+      };
+      history.replaceState(
+        nextState,
+        '',
+        `${window.location.pathname}#return=${encodeURIComponent(eventId)}`
+      );
+      return nextState.timelineReturn;
+    }
+
+    function timelineReturnPositionFromLocation() {
+      const returnEventId = new URLSearchParams(window.location.hash.replace(/^#/, '')).get('return');
+      const saved = history.state?.timelineReturn;
+      const eventId = returnEventId || saved?.eventId;
+      if (!eventId) return null;
+      return {
+        eventId,
+        anchorTop: saved?.eventId === eventId ? saved.anchorTop : 120
+      };
+    }
+
+    let timelineReturnWatchId = null;
+
+    function watchForTimelineReturn() {
+      if (timelineReturnWatchId) {
+        window.clearInterval(timelineReturnWatchId);
+      }
+      timelineReturnWatchId = window.setInterval(() => {
+        if (!timelineReturnPositionFromLocation() || state.dataStatus !== 'ready') return;
+        restoreTimelineReturnAfterRender();
+        window.clearInterval(timelineReturnWatchId);
+        timelineReturnWatchId = null;
+      }, 120);
+    }
+
+    function prepareTimelineForDetailNavigation(eventId) {
+      timelineReturnRestored = false;
+      const snapshot = rememberTimelineReturnPosition(eventId);
+      state.openEventIds.delete(eventId);
+      renderTimeline();
+      const item = document.getElementById(`item-${eventId}`);
+      if (item) {
+        const itemTop = window.scrollY + item.getBoundingClientRect().top;
+        const targetY = Math.max(0, itemTop - Number(snapshot.anchorTop || 120));
+        window.scrollTo({ top: targetY, behavior: 'auto' });
+      }
+      watchForTimelineReturn();
+    }
+
+    let timelineReturnRestored = false;
+
+    function alignTimelineReturnPosition(snapshot) {
+      const item = document.getElementById(`item-${snapshot.eventId}`);
+      if (!item) return false;
+      const itemTop = window.scrollY + item.getBoundingClientRect().top;
+      const targetY = Math.max(0, itemTop - Number(snapshot.anchorTop || 120));
+      window.scrollTo({ top: targetY, behavior: 'auto' });
+      return true;
+    }
+
+    function restoreTimelineReturnAfterRender() {
+      const snapshot = timelineReturnPositionFromLocation();
+      if (!snapshot || timelineReturnRestored || state.dataStatus !== 'ready') return;
+      timelineReturnRestored = true;
+      state.openEventIds.clear();
+      renderTimeline();
+
+      alignTimelineReturnPosition(snapshot);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => alignTimelineReturnPosition(snapshot));
+      });
+      window.setTimeout(() => alignTimelineReturnPosition(snapshot), 80);
+      window.setTimeout(() => {
+        alignTimelineReturnPosition(snapshot);
+        history.replaceState(null, '', window.location.pathname);
+        toggleBackToTop();
+      }, 240);
+    }
+
     /* ─── State Management ──────────────────────────────────────────── */
     const READER_PULSE_API = '/api/reader-pulse';
     const SELECTED_FORECAST_STORAGE_KEY = 'ea-selected-forecast-v1';
@@ -1752,6 +1841,10 @@ const LANGUAGES = {
 
     /* ─── Browser Back-button (History) Integration ─────────────────── */
     window.addEventListener('popstate', () => {
+      if (timelineReturnPositionFromLocation()) {
+        restoreTimelineReturnAfterRender();
+        return;
+      }
       const eventId = eventIdFromLocation();
       state.openEventIds.clear();
       if (eventId) state.openEventIds.add(eventId);
@@ -1877,6 +1970,10 @@ const LANGUAGES = {
       updateLocale();
       updateTheme();
       await loadSiteData();
+
+      if (!eventId) {
+        restoreTimelineReturnAfterRender();
+      }
       
       // 此时数据已完全加载并完成初次渲染，页面高度已撑开，可以准确执行初始滚动判定
       toggleBackToTop();
@@ -1921,7 +2018,7 @@ const LANGUAGES = {
 
         if (detailLink) {
           const href = detailLink.getAttribute('href');
-          const eventMatch = href?.match(/^\/?events\/([^/]+)\/?$/);
+          const eventMatch = href?.match(/^\/?(?:zh-hans\/)?events\/([^/]+)\/?$/);
           if (eventMatch) {
             e.preventDefault();
             const id = eventMatch[1];
@@ -1929,13 +2026,25 @@ const LANGUAGES = {
               if (window.location.protocol === 'file:') {
                 window.location.href = `events/${id}/index.html`;
               } else {
-                window.location.href = sitePath(`/events/${id}/`);
+                prepareTimelineForDetailNavigation(id);
+                window.setTimeout(() => {
+                  window.location.href = sitePath(`/events/${id}/`);
+                }, 0);
               }
             }
           }
         }
-      });
+      }, true);
     }
+
+    window.addEventListener('pageshow', () => {
+      restoreTimelineReturnAfterRender();
+    });
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+        restoreTimelineReturnAfterRender();
+      }
+    });
 
     init();
 

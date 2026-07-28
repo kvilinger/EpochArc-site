@@ -1432,8 +1432,8 @@
     .source-quote {
       margin-top: 8px;
       padding: 8px 10px;
-      border-left: 2px solid var(--accent);
-      background: color-mix(in oklch, var(--accent) 5%, transparent);
+      border-left: 2px solid var(--border);
+      background: color-mix(in oklch, var(--fg) 3%, transparent);
       color: var(--fg);
       font-size: 13px;
       line-height: 1.55;
@@ -1530,8 +1530,8 @@
       margin-top: var(--gap-sm);
       padding: var(--gap-md);
       background: var(--bg);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 var(--radius) var(--radius) 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       transition: background var(--transition-smooth);
     }
     .commentary-label {
