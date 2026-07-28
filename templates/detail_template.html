@@ -30,7 +30,7 @@
   
   <link rel="icon" href="../../assets/logo-icon.svg" type="image/svg+xml" />
   
-  <link rel="stylesheet" href="../../src/css/detail.css?v=2.5.1" />
+  <link rel="stylesheet" href="../../src/css/detail.css?v=2.5.3" />
   {{SCHEMA_JSON_LD}}
 </head>
 <body data-theme="light">
@@ -69,7 +69,7 @@
   </header>
 
   <!-- Breadcrumbs & Event Details -->
-  <main class="site-page detail-page-container">
+  <main class="site-page page-with-rail detail-page-container">
     <a href="/#event={{ID}}" class="page-back back-link">
       <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
@@ -101,7 +101,25 @@
 
       <!-- Consensus & Sources -->
       <section class="detail-block">
-        <h3 data-zh="证据与来源" data-en="Evidence &amp; Sources">证据与来源</h3>
+        <h3 data-zh="共识度与来源" data-en="Consensus &amp; Sources">共识度与来源</h3>
+        <div class="evidence-summary event-evidence-summary">
+          <div class="evidence-item">
+            <span class="label" data-zh="重要度" data-en="Significance">重要度</span>
+            <span class="val">L{{SIGNIFICANCE}}</span>
+          </div>
+          <div class="evidence-item">
+            <span class="label" data-zh="分类" data-en="Category">分类</span>
+            <span class="val">{{CATEGORIES}}</span>
+          </div>
+          <div class="evidence-item">
+            <span class="label" data-zh="共识度" data-en="Consensus">共识度</span>
+            <span class="val">{{CONSENSUS}}</span>
+          </div>
+          <div class="evidence-item">
+            <span class="label" data-zh="影响指数" data-en="Impact Index">影响指数</span>
+            <span class="val">{{IMPACT_INDEX}}/10</span>
+          </div>
+        </div>
         <ul class="source-list">
           {{SOURCES}}
         </ul>

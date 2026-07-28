@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
 """
 Gmail IMAP 邮件检查脚本（用于 Weekly Sweep 发现层）。
-使用 App Password（永不过期），替代 gws OAuth。
+使用存储在 macOS 钥匙串中的 App Password，替代依赖短期测试令牌的 gws OAuth。
 
 用法：
   python3 scripts/check_mail.py import-ai         # 最新 Import AI 邮件正文
   python3 scripts/check_mail.py the-batch          # 最新 The Batch 邮件正文
-  python3 scripts/check_mail.py import-ai --list   # 仅列出标题
-  python3 scripts/check_mail.py the-batch --list   # 仅列出标题
+  python3 scripts/check_mail.py import-ai --list   # 仅列出最新一期标题
+  python3 scripts/check_mail.py the-batch --list   # 仅列出最新一期标题
+  python3 scripts/check_mail.py import-ai --limit 4 --max-chars 0  # 最近 4 期完整正文
   python3 scripts/check_mail.py test               # 测试连接
 """
 
-import imaplib, email, json, sys, subprocess, os, argparse
+import argparse
+import email
+from email.header import decode_header
+import imaplib
+import subprocess
+import sys
 
 EMAIL = "wolfggdtc@gmail.com"
 
@@ -32,7 +38,7 @@ def get_password():
 def decode_mime_header(val):
     """解码 MIME 编码的邮件头"""
     if val is None: return ""
-    parts = email.header.decode_header(val)
+    parts = decode_header(val)
     return " ".join(
         p.decode(c if c else 'utf-8', errors='replace') if isinstance(p, bytes) else p
         for p, c in parts
@@ -62,8 +68,8 @@ def get_body(msg):
             return payload.decode(charset, errors='replace')
     return "[no body found]"
 
-def fetch_latest(source, list_only=False):
-    """获取最新邮件"""
+def fetch_messages(source, list_only=False, limit=1, max_chars=15000):
+    """按时间倒序获取指定数量的最新邮件。"""
     PASSWORD = get_password()
     
     if source == 'import-ai':
@@ -87,30 +93,30 @@ def fetch_latest(source, list_only=False):
         return
     
     all_ids = ids[0].split()
-    newest_id = all_ids[-1]
-    
-    status, data = mail.fetch(newest_id, '(BODY.PEEK[])')
-    if status != 'OK':
-        print(f"Failed to fetch {label} email.", file=sys.stderr)
-        mail.logout()
-        return
-    
-    msg = email.message_from_bytes(data[0][1])
-    subject = decode_mime_header(msg['Subject'])
-    date = msg['Date']
-    
-    print(f"=== {label} ===")
-    print(f"Date: {date}")
-    print(f"Subject: {subject}")
-    print()
-    
-    if not list_only:
-        body = get_body(msg)
-        # 截断到 15000 字符（防止输出过长）
-        if len(body) > 15000:
-            body = body[:15000] + "\n\n[... truncated ...]"
-        print(body)
-    
+    selected_ids = reversed(all_ids[-limit:])
+
+    for message_id in selected_ids:
+        status, data = mail.fetch(message_id, '(BODY.PEEK[])')
+        if status != 'OK' or not data or not isinstance(data[0], tuple):
+            print(f"Failed to fetch {label} email {message_id.decode()}.", file=sys.stderr)
+            continue
+
+        msg = email.message_from_bytes(data[0][1])
+        subject = decode_mime_header(msg['Subject'])
+        date = msg['Date']
+
+        print(f"=== {label} ===")
+        print(f"Date: {date}")
+        print(f"Subject: {subject}")
+        print()
+
+        if not list_only:
+            body = get_body(msg)
+            if max_chars > 0 and len(body) > max_chars:
+                body = body[:max_chars] + "\n\n[... truncated ...]"
+            print(body)
+        print()
+
     mail.logout()
 
 def test_connection():
@@ -138,9 +144,26 @@ if __name__ == '__main__':
     parser.add_argument('source', nargs='?', default='test',
                         choices=['import-ai', 'the-batch', 'test'])
     parser.add_argument('--list', action='store_true', help='仅列出标题不显示正文')
+    parser.add_argument('--limit', type=int, default=1, help='读取最近 N 封邮件（默认：1）')
+    parser.add_argument(
+        '--max-chars',
+        type=int,
+        default=15000,
+        help='每封正文最大字符数；0 表示不截断（默认：15000）',
+    )
     args = parser.parse_args()
-    
+
+    if args.limit < 1:
+        parser.error('--limit must be at least 1')
+    if args.max_chars < 0:
+        parser.error('--max-chars cannot be negative')
+
     if args.source == 'test':
         test_connection()
     else:
-        fetch_latest(args.source, list_only=args.list)
+        fetch_messages(
+            args.source,
+            list_only=args.list,
+            limit=args.limit,
+            max_chars=args.max_chars,
+        )

@@ -1,5 +1,5 @@
-@import "./global.css?v=2.5.1";
-@import "./main.css?v=2.5.1";
+@import "./global.css?v=2.5.2";
+@import "./main.css?v=2.5.2";
 
 /* Arc index */
 .arcs-page-container,
@@ -253,17 +253,12 @@
 
 .arc-rail-note { color: var(--muted); font-size: 12px; line-height: 1.65; }
 
-@media (max-width: 820px) {
-  .arc-sidebar { grid-row: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
 @media (max-width: 700px) {
   .arcs-grid { grid-template-columns: 1fr; }
   .arc-card { min-height: 0; }
 }
 
 @media (max-width: 560px) {
-  .arc-sidebar { grid-template-columns: 1fr; }
   .arc-anchor-events { flex-direction: column; }
   .arc-anchor-event { border-radius: var(--radius); }
 }

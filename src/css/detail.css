@@ -1,5 +1,5 @@
-@import "./global.css?v=2.5.1";
-@import "./main.css?v=2.5.1";
+@import "./global.css?v=2.5.3";
+@import "./main.css?v=2.5.3";
 
 .detail-page-container { max-width: var(--container); }
 
@@ -15,38 +15,49 @@
 }
 
 .event-detail-card {
+  position: relative;
   display: flex;
   min-width: 0;
-  padding: 0;
+  padding: 20px;
   flex-direction: column;
   gap: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
+  border: 1px solid color-mix(in oklch, var(--accent) 36%, var(--border));
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(90deg, color-mix(in oklch, var(--accent) 7%, transparent), transparent 34%),
+    var(--surface);
   box-shadow: none;
 }
 
+.event-detail-card::before {
+  content: '';
+  position: absolute;
+  inset: 14px auto 14px 0;
+  width: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+}
+
 .detail-block {
-  padding: 32px 0;
+  padding: var(--gap-md) 0;
   border-top: 1px solid var(--border);
 }
 
 .detail-block:first-child { padding-top: 0; border-top: 0; }
 
 .detail-block h3 {
-  margin: 0 0 14px;
+  margin: 0 0 var(--gap-sm);
   padding: 0;
   border: 0;
   color: var(--muted);
-  font: 700 11px/1.4 var(--font-mono);
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  font: 400 12px/1.4 var(--font-mono);
+  letter-spacing: .01em;
 }
 
 .summary-text {
   color: var(--fg);
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .impact-list,
@@ -57,13 +68,9 @@
   word-break: break-word;
 }
 
-.impact-item,
-.source-card {
-  border-color: var(--border);
-  background: var(--surface);
-}
+.source-title { overflow-wrap: anywhere; }
 
-.source-card { border-radius: var(--radius-lg); }
+.event-evidence-summary { margin-bottom: var(--gap-sm); }
 
 .event-meta-row {
   display: flex;
@@ -93,11 +100,6 @@
 .related-topology-container,
 .related-row { border-radius: var(--radius-lg); }
 
-@media (max-width: 820px) {
-  .event-detail-sidebar { grid-row: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
 @media (max-width: 560px) {
-  .event-detail-sidebar { grid-template-columns: 1fr; }
-  .detail-block { padding: 26px 0; }
+  .event-detail-card { padding: 16px; }
 }

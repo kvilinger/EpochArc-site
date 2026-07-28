@@ -49,6 +49,7 @@
       --reading-measure: 660px;
       --rail-width: 220px;
       --page-grid-gap: 36px;
+      --rail-breakout-width: calc(var(--container) + var(--page-grid-gap) + var(--rail-width) - var(--gutter));
 
       /* Radius */
       --radius: 8px;
@@ -293,16 +294,31 @@
       background: var(--accent-soft);
     }
 
-    @media (max-width: 820px) {
+    @media (min-width: 1440px) {
+      .site-page.page-with-rail {
+        width: var(--rail-breakout-width);
+        max-width: none;
+        margin-right: 0;
+        margin-left: calc((100vw - var(--container)) / 2);
+        padding-right: 0;
+      }
+    }
+    @media (max-width: 1439px) {
       :root { --page-grid-gap: 28px; }
       .page-layout { grid-template-columns: 1fr; }
-      .page-rail { position: static; grid-row: auto; }
+      .page-rail {
+        position: static;
+        grid-row: auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 12px;
+      }
       .page-header { max-width: none; }
     }
     @media (max-width: 560px) {
       .site-page { padding-top: 28px; padding-bottom: 64px; }
       .page-title { font-size: clamp(30px, 10vw, 40px); }
       .page-lead { font-size: 16px; }
+      .page-rail { grid-template-columns: 1fr; }
     }
 
     /* ─── Shared footer ─────────────────────────────────────────────── */

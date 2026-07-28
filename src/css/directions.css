@@ -1,4 +1,4 @@
-@import url('./global.css?v=2.5.1');
+@import url('./global.css?v=2.5.2');
 
 .directions-page,
 .direction-detail { max-width: var(--container); }
@@ -223,10 +223,6 @@
 .direction-meta dd { margin: 0; }
 .direction-rail-note { margin-bottom: 12px; color: var(--muted); font-size: 12px; line-height: 1.65; }
 
-@media (max-width: 820px) {
-  .direction-sidebar { grid-row: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
 @media (max-width: 760px) {
   .directions-ledger-head { display: none; }
   .direction-row-card { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 10px; padding: 24px 0; }
@@ -237,7 +233,6 @@
 }
 
 @media (max-width: 560px) {
-  .direction-sidebar { grid-template-columns: 1fr; }
   .direction-row-card { grid-template-columns: 1fr 1fr; }
   .direction-row-evidence { grid-column: 1 / -1; }
   .direction-source-list li { grid-template-columns: 22px minmax(0, 1fr); }
