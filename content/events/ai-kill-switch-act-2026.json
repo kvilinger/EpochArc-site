@@ -1,0 +1,151 @@
+{
+  "id": "ai-kill-switch-act-2026",
+  "slug": "ai-kill-switch-act",
+  "title": {
+    "en": "US representatives introduce the AI Kill Switch Act",
+    "zhHans": "美国众议员提出《AI 紧急停机法案》"
+  },
+  "searchSummary": {
+    "en": "Representatives Ted Lieu and Nathaniel Moran introduced a bill that would require covered AI developers to maintain the ability to throttle, suspend, or shut down covered systems. The bill has not been enacted.",
+    "zhHans": "Ted Lieu 与 Nathaniel Moran 两位众议员提出法案，要求受规制的 AI 开发者保留限速、暂停或关闭相关系统的能力。该法案尚未获通过。"
+  },
+  "summary": {
+    "en": "Representatives Ted Lieu and Nathaniel Moran introduced a bill that would require covered AI developers to maintain the ability to throttle, suspend, or shut down covered systems. The bill has not been enacted.",
+    "zhHans": "Ted Lieu 与 Nathaniel Moran 两位众议员提出法案，要求受规制的 AI 开发者保留限速、暂停或关闭相关系统的能力。该法案尚未获通过。"
+  },
+  "narrative": {
+    "en": "The proposal gives the Department of Homeland Security a graduated response role in specified loss-of-control scenarios and adds incident-reporting and record-retention duties. Its practical effect depends on congressional action and on how agencies would define catastrophic harm and enforce technical shutdown requirements.",
+    "zhHans": "该提案赋予国土安全部在特定失控情形下分级响应的职责，并新增事故报告和记录保存义务。其实际影响取决于国会是否通过法案，以及主管机构如何界定灾难性危害并执行技术停机要求。"
+  },
+  "date": "2026-07-23",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-07-23",
+    "zhHans": "2026年07月23日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 3,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "categories": [
+    "governance"
+  ],
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "The proposal places technical shutdown capability and incident records at the center of a federal frontier-AI policy debate.",
+        "zhHans": "该提案将技术停机能力与事故记录置于联邦前沿 AI 政策讨论的核心。"
+      },
+      "affectedGroups": [
+        "frontier AI developers",
+        "federal regulators",
+        "AI safety researchers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "lieu-ai-kill-switch-bill-2026",
+        "washington-times-ai-kill-switch-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "ai-kill-switch-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Representatives Ted Lieu and Nathaniel Moran introduced the AI Kill Switch Act on July 23, 2026.",
+        "zhHans": "Ted Lieu 与 Nathaniel Moran 两位众议员于 2026 年 7 月 23 日提出《AI 紧急停机法案》。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "lieu-ai-kill-switch-release-2026",
+        "lieu-ai-kill-switch-bill-2026",
+        "washington-times-ai-kill-switch-2026"
+      ]
+    },
+    {
+      "id": "ai-kill-switch-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "The bill would require covered developers to maintain a throttle, suspension, or shutdown capability and report covered incidents.",
+        "zhHans": "该法案将要求受规制开发者保留限速、暂停或关闭能力，并报告受规制事故。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "lieu-ai-kill-switch-bill-2026"
+      ]
+    },
+    {
+      "id": "ai-kill-switch-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "The bill is proposed rather than enacted, and critics question the scope of emergency shutdown authority.",
+        "zhHans": "该法案仍处于提案阶段，批评者质疑紧急停机权力的范围。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "reason-ai-kill-switch-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "lieu-ai-kill-switch-release-2026",
+      "supports": [
+        "ai-kill-switch-fact"
+      ]
+    },
+    {
+      "sourceId": "lieu-ai-kill-switch-bill-2026",
+      "supports": [
+        "ai-kill-switch-fact",
+        "ai-kill-switch-impact"
+      ]
+    },
+    {
+      "sourceId": "washington-times-ai-kill-switch-2026",
+      "supports": [
+        "ai-kill-switch-fact"
+      ]
+    },
+    {
+      "sourceId": "reason-ai-kill-switch-2026",
+      "supports": [
+        "ai-kill-switch-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-07-28",
+    "updatedAt": "2026-07-28",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "changeLog": [
+      {
+        "date": "2026-07-28",
+        "changeType": "created",
+        "summary": "Generated as a v2.3 draft after four-layer confirmation; requires editorial review before publication."
+      },
+      {
+        "date": "2026-07-28",
+        "changeType": "score_changed",
+        "summary": "Adjusted evidence grades and impactIndex to the v2.3 source-chain ceiling and impact formula."
+      },
+      {
+        "date": "2026-07-28",
+        "changeType": "source_added",
+        "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+      }
+    ],
+    "reviewer": "gang",
+    "reviewedAt": "2026-07-28",
+    "publishedAt": "2026-07-28"
+  }
+}

@@ -10,12 +10,12 @@
     "zhHans": "Kimi K3（2026 年 7 月）——Moonshot AI 的 2.8 万亿参数 MoE 模型，具备 100 万 token 上下文、原生视觉和 Kimi Delta Attention。发布时已开放服务访问，完整开放权重计划于 7 月 27 日提供。"
   },
   "summary": {
-    "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model. It has a 1-million-token context window, native vision, Kimi Delta Attention, and Attention Residuals, activating 16 of 896 experts per token. Service access launched through Kimi products, while full open weights were scheduled for July 27 and therefore were not yet independently inspectable at the event date. Early benchmark comparisons were provider-reported and should be treated as emerging evidence.",
-    "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 Kimi K3，一款 2.8 万亿参数的混合专家（MoE）模型。它具备 100 万 token 上下文、原生视觉、Kimi Delta Attention 和 Attention Residuals，每个 token 激活 896 个专家中的 16 个。Kimi 产品已开放服务访问，但完整开放权重计划于 7 月 27 日提供，因此在事件发生时尚不能独立检查。早期基准比较由提供方报告，应视为仍在形成中的证据。"
+    "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model. Service access launched through Kimi products, while full open weights were scheduled for July 27. On July 24, UK AISI and US CAISI published a preliminary cyber assessment that found Kimi K3 ahead of GLM-5.2 on one exploit benchmark but below leading frontier cyber models.",
+    "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 2.8 万亿参数的混合专家模型 Kimi K3。Kimi 产品在发布时开放服务访问，完整开放权重计划于 7 月 27 日提供。7 月 24 日，英国 AISI 与美国 CAISI 发布初步网络安全评估：Kimi K3 在一项漏洞利用基准上超过 GLM-5.2，但仍低于领先的前沿网络模型。"
   },
   "narrative": {
-    "en": "Moonshot AI had established itself in China's AI ecosystem through the Kimi model family. Kimi K3 is unusually large at 2.8 trillion total parameters, using Kimi Delta Attention and Attention Residuals in a sparse MoE with 896 experts, 16 active per token. Moonshot reported a 1-million-token context window and native vision. These specifications make K3 a notable open-weight announcement, but total parameter count does not by itself establish model quality, inference efficiency, or frontier parity. At launch, the model was accessible through Kimi products and APIs; independent inspection of the promised full weights had to wait for their scheduled July 27 availability. The event therefore records the announcement and access milestone, while treating performance and ecosystem effects as emerging rather than settled.",
-    "zhHans": "Moonshot AI 此前已通过 Kimi 模型系列在中国 AI 生态中建立重要地位。Kimi K3 的总参数量达到 2.8 万亿，采用 Kimi Delta Attention 和 Attention Residuals；其稀疏 MoE 含 896 个专家，每个 token 激活 16 个。Moonshot 报告其上下文窗口为 100 万 token，并具备原生视觉能力。这些规格使 K3 成为值得记录的开放权重模型公告，但总参数量本身不能证明模型质量、推理效率或已达到前沿同等水平。发布时，模型已可通过 Kimi 产品和 API 使用；要独立检查其承诺的完整权重，仍需等待计划中的 7 月 27 日开放。因此，本条目记录公告与访问节点，并将性能和生态影响标为仍在形成，而非既定结论。"
+    "en": "Moonshot AI announced Kimi K3 with a 1-million-token context window, native vision, and a sparse MoE architecture. The launch established an access milestone, while early performance comparisons remained provider-reported. The later UK AISI and US CAISI assessment added a separate safety data point. It reported a 32% score for Kimi K3 on ExploitBench, compared with 24% for GLM-5.2, and no arbitrary-code-execution result across 41 evaluated samples. The agencies described the assessment as preliminary and based on a selective set of tests. The result does not establish a general cyber-capability ranking, but it provides public evidence about one risk-relevant capability area after launch.",
+    "zhHans": "Moonshot AI 发布 Kimi K3 时公布了 100 万 token 上下文、原生视觉和稀疏 MoE 架构。该发布建立了访问节点，但早期性能比较仍主要来自提供方。随后英国 AISI 与美国 CAISI 的评估补充了一项独立的安全数据点：Kimi K3 在 ExploitBench 上获得 32%，GLM-5.2 为 24%；在 41 个评估样本中没有实现任意代码执行。两家机构将其描述为基于有限测试集的初步评估。该结果不能建立通用网络能力排名，但为发布后的一个风险相关能力领域提供了公开证据。"
   },
   "date": "2026-07-16",
   "datePrecision": "day",
@@ -25,9 +25,9 @@
   },
   "status": "published",
   "significance": 1,
-  "impactIndex": 4,
+  "impactIndex": 5,
   "consensusLevel": "emerging",
-  "controversy": false,
+  "controversy": true,
   "categories": [
     "capability",
     "commerce"
@@ -72,6 +72,26 @@
       "sourceIds": [
         "venturebeat-kimi-k3-2026"
       ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "The assessment found that Kimi K3 safeguards did not prevent attempted offensive cyber work in the tested setting, while the model’s measured capability remained below the leading frontier systems in that evaluation.",
+        "zhHans": "评估发现，在测试环境中，Kimi K3 的安全措施未能阻止其尝试进攻性网络工作；但该模型在这一评估中的能力仍低于领先的前沿系统。"
+      },
+      "affectedGroups": [
+        "AI security teams",
+        "open-weight model users",
+        "AI regulators"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "nist-kimi-k3-cyber-assessment-2026",
+        "aisi-kimi-k3-cyber-assessment-2026"
+      ]
     }
   ],
   "claims": [
@@ -100,6 +120,32 @@
       "sourceIds": [
         "kimi-k3-official-2026",
         "venturebeat-kimi-k3-2026"
+      ]
+    },
+    {
+      "id": "kimi-k3-cyber-assessment-2026",
+      "claimType": "fact",
+      "text": {
+        "en": "UK AISI and US CAISI reported that Kimi K3 scored 32% on ExploitBench, compared with 24% for GLM-5.2.",
+        "zhHans": "英国 AISI 与美国 CAISI 报告称，Kimi K3 在 ExploitBench 上获得 32%，GLM-5.2 为 24%。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "nist-kimi-k3-cyber-assessment-2026",
+        "aisi-kimi-k3-cyber-assessment-2026"
+      ]
+    },
+    {
+      "id": "kimi-k3-cyber-assessment-limitation-2026",
+      "claimType": "limitation",
+      "text": {
+        "en": "The agencies described the Kimi K3 cyber assessment as preliminary and based on a selective set of tests.",
+        "zhHans": "两家机构将 Kimi K3 网络安全评估描述为初步结果，并说明其基于有限测试集。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "nist-kimi-k3-cyber-assessment-2026",
+        "aisi-kimi-k3-cyber-assessment-2026"
       ]
     }
   ],
@@ -131,6 +177,20 @@
       "supports": [
         "kimi-k3-2026"
       ]
+    },
+    {
+      "sourceId": "nist-kimi-k3-cyber-assessment-2026",
+      "supports": [
+        "kimi-k3-cyber-assessment-2026",
+        "kimi-k3-cyber-assessment-limitation-2026"
+      ]
+    },
+    {
+      "sourceId": "aisi-kimi-k3-cyber-assessment-2026",
+      "supports": [
+        "kimi-k3-cyber-assessment-2026",
+        "kimi-k3-cyber-assessment-limitation-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -143,8 +203,8 @@
   ],
   "editorial": {
     "createdAt": "2026-07-16",
-    "updatedAt": "2026-07-20",
-    "reviewedAt": "2026-07-20",
+    "updatedAt": "2026-07-28",
+    "reviewedAt": "2026-07-28",
     "publishedAt": "2026-07-16",
     "curator": "gang",
     "changeLog": [
@@ -162,6 +222,11 @@
         "date": "2026-07-20",
         "changeType": "correction",
         "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
+      },
+      {
+        "date": "2026-07-28",
+        "changeType": "source_added",
+        "summary": "Added the July 24 UK AISI/US CAISI preliminary cyber assessment and its methodology limitation."
       }
     ],
     "reviewer": "gang",

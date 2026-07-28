@@ -1,0 +1,142 @@
+{
+  "id": "claude-opus-5-2026",
+  "slug": "claude-opus-5",
+  "title": {
+    "en": "Anthropic releases Claude Opus 5",
+    "zhHans": "Anthropic 发布 Claude Opus 5"
+  },
+  "searchSummary": {
+    "en": "Anthropic released Claude Opus 5 on July 24, 2026, and made it the default model for Claude Max. The company introduced effort settings that let customers trade token use for task performance.",
+    "zhHans": "Anthropic 于 2026 年 7 月 24 日发布 Claude Opus 5，并将其设为 Claude Max 的默认模型。该公司引入了 effort 设置，供用户在 token 消耗与任务表现之间取舍。"
+  },
+  "summary": {
+    "en": "Anthropic released Claude Opus 5 on July 24, 2026, and made it the default model for Claude Max. The company introduced effort settings that let customers trade token use for task performance.",
+    "zhHans": "Anthropic 于 2026 年 7 月 24 日发布 Claude Opus 5，并将其设为 Claude Max 的默认模型。该公司引入了 effort 设置，供用户在 token 消耗与任务表现之间取舍。"
+  },
+  "narrative": {
+    "en": "Anthropic reported that Opus 5 approached Claude Fable 5 performance at lower cost on several evaluations. Fortune described the release as a response to enterprise concerns about AI spending. The reported evaluation results were released by Anthropic and require continued independent comparison.",
+    "zhHans": "Anthropic 报告称，Opus 5 在多项评估中以更低成本接近 Claude Fable 5 的表现。Fortune 将此次发布描述为对企业 AI 支出担忧的回应。相关评估结果由 Anthropic 发布，仍需持续的独立比较。"
+  },
+  "date": "2026-07-24",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-07-24",
+    "zhHans": "2026年07月24日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 4,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Anthropic reported improved coding, knowledge-work, and automation performance at the Opus price tier.",
+        "zhHans": "Anthropic 报告称，Opus 价格档的编程、知识工作和自动化表现有所提升。"
+      },
+      "affectedGroups": [
+        "developers",
+        "enterprise users",
+        "AI-product teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-claude-opus-5-2026",
+        "fortune-claude-opus-5-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claude-opus-5-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Anthropic released Claude Opus 5 on July 24, 2026 and made it the default model for Claude Max.",
+        "zhHans": "Anthropic 于 2026 年 7 月 24 日发布 Claude Opus 5，并将其设为 Claude Max 的默认模型。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "anthropic-claude-opus-5-2026",
+        "fortune-claude-opus-5-2026"
+      ]
+    },
+    {
+      "id": "claude-opus-5-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Anthropic introduced effort settings intended to trade token use for capability and cost.",
+        "zhHans": "Anthropic 引入 effort 设置，旨在让用户在 token 消耗、能力和成本之间取舍。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-claude-opus-5-2026"
+      ]
+    },
+    {
+      "id": "claude-opus-5-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Most launch benchmark claims came from Anthropic and should not be treated as independent consensus.",
+        "zhHans": "多数发布时的基准主张来自 Anthropic，不应视为独立共识。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-claude-opus-5-2026",
+        "fortune-claude-opus-5-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "anthropic-claude-opus-5-2026",
+      "supports": [
+        "claude-opus-5-fact",
+        "claude-opus-5-impact",
+        "claude-opus-5-limitation"
+      ]
+    },
+    {
+      "sourceId": "fortune-claude-opus-5-2026",
+      "supports": [
+        "claude-opus-5-fact",
+        "claude-opus-5-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-07-28",
+    "updatedAt": "2026-07-28",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "changeLog": [
+      {
+        "date": "2026-07-28",
+        "changeType": "created",
+        "summary": "Generated as a v2.3 draft after four-layer confirmation; requires editorial review before publication."
+      },
+      {
+        "date": "2026-07-28",
+        "changeType": "score_changed",
+        "summary": "Adjusted evidence grades and impactIndex to the v2.3 source-chain ceiling and impact formula."
+      },
+      {
+        "date": "2026-07-28",
+        "changeType": "source_added",
+        "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+      }
+    ],
+    "reviewer": "gang",
+    "reviewedAt": "2026-07-28",
+    "publishedAt": "2026-07-28"
+  }
+}

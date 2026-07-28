@@ -1,0 +1,145 @@
+{
+  "id": "mirrorcode-benchmark-2026",
+  "slug": "mirrorcode-benchmark",
+  "title": {
+    "en": "Epoch AI and METR publish MirrorCode results for long-horizon coding tasks",
+    "zhHans": "Epoch AI 与 METR 发布 MirrorCode 长程编程任务结果"
+  },
+  "searchSummary": {
+    "en": "Epoch AI and METR published MirrorCode results on long-horizon coding tasks that require models to reimplement programs without source-code or web access. One Claude Opus 4.7 run completed a 16,000-line target in 14 hours at a reported $251 inference cost.",
+    "zhHans": "Epoch AI 与 METR 发布了 MirrorCode 长程编程任务结果。该基准要求模型在没有源代码和网络访问的条件下重建程序。一轮 Claude Opus 4.7 运行以报告的 251 美元推理成本，在 14 小时内完成了一个约 1.6 万行的目标程序。"
+  },
+  "summary": {
+    "en": "Epoch AI and METR published MirrorCode results on long-horizon coding tasks that require models to reimplement programs without source-code or web access. One Claude Opus 4.7 run completed a 16,000-line target in 14 hours at a reported $251 inference cost.",
+    "zhHans": "Epoch AI 与 METR 发布了 MirrorCode 长程编程任务结果。该基准要求模型在没有源代码和网络访问的条件下重建程序。一轮 Claude Opus 4.7 运行以报告的 251 美元推理成本，在 14 小时内完成了一个约 1.6 万行的目标程序。"
+  },
+  "narrative": {
+    "en": "MirrorCode uses end-to-end tests over 25 target programs. The results show that models can complete some substantial reimplementation tasks under the benchmark’s conditions. Epoch also reports a 56% headline score for Opus 4.7 and warns that target programs may have appeared in training data.",
+    "zhHans": "MirrorCode 对 25 个目标程序进行端到端测试。结果显示，模型能在该基准条件下完成部分规模较大的重建任务。Epoch 同时报告 Opus 4.7 的总体得分为 56%，并提醒目标程序可能出现在训练数据中。"
+  },
+  "date": "2026-07-27",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-07-27",
+    "zhHans": "2026年07月27日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 4,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "categories": [
+    "capability"
+  ],
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "MirrorCode provides evidence that current models can complete some long-horizon program-reimplementation tasks under controlled conditions.",
+        "zhHans": "MirrorCode 提供证据表明，现有模型能在受控条件下完成部分长程程序重建任务。"
+      },
+      "affectedGroups": [
+        "software engineers",
+        "AI-agent researchers",
+        "developer-tool builders"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "epoch-mirrorcode-2026",
+        "metr-mirrorcode-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "mirrorcode-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "MirrorCode evaluates end-to-end program reimplementation without source-code or web access across 25 target programs.",
+        "zhHans": "MirrorCode 在 25 个目标程序上评估端到端程序重建，模型无法访问源代码或网络。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "epoch-mirrorcode-2026",
+        "metr-mirrorcode-2026"
+      ]
+    },
+    {
+      "id": "mirrorcode-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Epoch reported that one Claude Opus 4.7 run reimplemented a 16,000-line target in 14 hours at a $251 inference cost.",
+        "zhHans": "Epoch 报告称，一轮 Claude Opus 4.7 运行以 251 美元推理成本，在 14 小时内重建了一个约 1.6 万行的目标程序。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "epoch-mirrorcode-2026"
+      ]
+    },
+    {
+      "id": "mirrorcode-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Epoch reports that pretraining exposure to open-source targets may inflate benchmark performance.",
+        "zhHans": "Epoch 报告称，模型可能在预训练中接触过开源目标程序，这可能抬高基准表现。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "epoch-mirrorcode-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "epoch-mirrorcode-2026",
+      "supports": [
+        "mirrorcode-fact",
+        "mirrorcode-impact",
+        "mirrorcode-limitation"
+      ]
+    },
+    {
+      "sourceId": "metr-mirrorcode-2026",
+      "supports": [
+        "mirrorcode-fact"
+      ]
+    },
+    {
+      "sourceId": "import-ai-466-mirrorcode-2026",
+      "supports": [
+        "mirrorcode-impact"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-07-28",
+    "updatedAt": "2026-07-28",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "changeLog": [
+      {
+        "date": "2026-07-28",
+        "changeType": "created",
+        "summary": "Generated as a v2.3 draft after four-layer confirmation; requires editorial review before publication."
+      },
+      {
+        "date": "2026-07-28",
+        "changeType": "score_changed",
+        "summary": "Adjusted evidence grades and impactIndex to the v2.3 source-chain ceiling and impact formula."
+      },
+      {
+        "date": "2026-07-28",
+        "changeType": "source_added",
+        "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+      }
+    ],
+    "reviewer": "gang",
+    "reviewedAt": "2026-07-28",
+    "publishedAt": "2026-07-28"
+  }
+}
