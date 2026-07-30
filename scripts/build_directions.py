@@ -350,11 +350,6 @@ def build_detail_content(forecast, events_by_id, sources_by_id):
             <a href="#direction-sources" data-zh="公开来源" data-en="Public sources">Public sources</a>
           </nav>
         </section>
-        <section class="rail-card">
-          <h2 class="rail-card-title" data-zh="评审说明" data-en="Review note">评审说明</h2>
-          <p class="direction-rail-note" data-zh="方向只表示持续监测，不代表确定性预测。判断依据统一记录在方法与来源页。" data-en="Directions are monitored, not treated as certain predictions. The shared evaluation rules live on Methodology & Sources.">方向只表示持续监测，不代表确定性预测。判断依据统一记录在方法与来源页。</p>
-          <a class="direction-inline-link" href="/methods/#possible-directions" data-zh="查看方法与来源 →" data-en="Read methodology and sources →">查看方法与来源 →</a>
-        </section>
       </aside>
     </div>'''
 

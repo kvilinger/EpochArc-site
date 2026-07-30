@@ -317,11 +317,6 @@
       .page-with-rail > .page-header {
         width: calc(100% - var(--page-grid-gap) - var(--rail-width));
       }
-      .page-rail {
-        max-height: calc(100vh - 108px);
-        overflow-y: auto;
-        scrollbar-width: thin;
-      }
     }
     @media (max-width: 1439px) {
       :root { --page-grid-gap: 28px; }
