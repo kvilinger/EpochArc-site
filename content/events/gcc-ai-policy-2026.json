@@ -1,0 +1,163 @@
+{
+  "id": "gcc-ai-policy-2026",
+  "slug": "gcc-ai-policy",
+  "title": {
+    "en": "GCC adopts a policy limiting LLM-generated code in legally significant contributions",
+    "zhHans": "GCC 通过政策限制在具有法律意义的贡献中使用 LLM 生成代码"
+  },
+  "searchSummary": {
+    "en": "The GNU Compiler Collection says it will decline legally significant contributions containing or derived from LLM-generated content, while allowing limited uses such as marked insignificant contributions and test cases.",
+    "zhHans": "GNU Compiler Collection 表示将拒绝包含或源自 LLM 生成内容的具有法律意义的贡献，同时允许标记的非重大贡献和部分测试用例等有限使用。"
+  },
+  "summary": {
+    "en": "On July 29, 2026, GCC published an AI contribution policy that declines legally significant contributions containing or derived from LLM-generated content. The policy still permits some legally insignificant contributions, LLM-generated test cases and AI-assisted research or review when generated output is not submitted as project code.",
+    "zhHans": "2026 年 7 月 29 日，GCC 发布 AI 贡献政策，拒绝包含或源自 LLM 生成内容的具有法律意义的贡献。该政策仍允许部分非重大贡献、LLM 生成的测试用例，以及在生成内容不直接提交为项目代码时进行 AI 辅助研究或审查。"
+  },
+  "narrative": {
+    "en": "GCC's policy is a project-level response to copyright provenance, maintainership and responsibility questions around AI-assisted programming. It defines a boundary around legally significant contributions rather than banning every use of an LLM: maintainers may accept clearly marked legally insignificant contributions and legally significant test cases, while research, analysis, bug discovery, patch review and debugging remain allowed when their output is not included in the contribution. Every contribution must still be submitted by a human who understands it, and an LLM may not provide the project's Signed-off-by certification. LWN reports that the steering committee accepted the working group's recommendation and that the policy is expected to evolve, with a review planned for early 2027.",
+    "zhHans": "GCC 的政策回应了 AI 辅助编程带来的版权来源、维护责任和贡献者责任问题。它围绕具有法律意义的贡献划定边界，并没有禁止所有 LLM 使用：维护者可以接受明确标记的非重大贡献和具有法律意义的测试用例；当生成内容不被纳入贡献时，研究、分析、漏洞发现、补丁审查和调试仍然允许。每项贡献仍必须由理解其内容的人类提交，LLM 不能提供项目的 Signed-off-by 认证。LWN 报道称，指导委员会接受了工作组建议，政策预计会继续演化，并计划在 2027 年初复查。"
+  },
+  "date": "2026-07-29",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Jul 29, 2026",
+    "zhHans": "2026年7月29日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "categories": [
+    "product"
+  ],
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "A major open-source project turns AI provenance and human responsibility into explicit contribution rules rather than leaving them to informal norms.",
+        "zhHans": "一个重要开源项目将 AI 内容来源和人类责任转化为明确的贡献规则，而不是继续依赖非正式规范。"
+      },
+      "affectedGroups": [
+        "open-source maintainers",
+        "software contributors",
+        "legal teams",
+        "project governance bodies"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "gcc-ai-policy-2026",
+        "lwn-gcc-ai-policy-2026"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "Strict provenance rules may raise participation and review costs for contributors while leaving difficult questions about derived content and detection unresolved.",
+        "zhHans": "严格的来源规则可能提高贡献者的参与和审查成本，同时留下衍生内容和检测方式等难题。"
+      },
+      "affectedGroups": [
+        "prospective contributors",
+        "maintainers",
+        "small open-source projects"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "gcc-ai-policy-2026",
+        "lwn-gcc-ai-policy-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gcc-ai-policy-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "GCC's July 29, 2026 policy declines legally significant contributions that include or derive from LLM-generated content, while allowing specified exceptions.",
+        "zhHans": "GCC 于 2026 年 7 月 29 日发布的政策拒绝包含或源自 LLM 生成内容的具有法律意义的贡献，同时规定了明确例外。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "gcc-ai-policy-2026",
+        "lwn-gcc-ai-policy-2026"
+      ]
+    },
+    {
+      "id": "gcc-ai-policy-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "The policy makes human authorship, understanding and sign-off explicit requirements for contributions to a major open-source compiler project.",
+        "zhHans": "该政策把人类作者身份、对代码的理解和人工签署明确为向重要开源编译器项目贡献代码的要求。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "gcc-ai-policy-2026",
+        "lwn-gcc-ai-policy-2026"
+      ]
+    },
+    {
+      "id": "gcc-ai-policy-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "The policy is not a blanket ban on AI use: it contains exceptions for legally insignificant contributions and test cases and permits research, review and debugging when generated output is not included in the contribution.",
+        "zhHans": "该政策不是全面禁止 AI 使用：它为非重大贡献和测试用例设置例外，并允许在生成内容不纳入贡献时进行研究、审查和调试。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "gcc-ai-policy-2026",
+        "lwn-gcc-ai-policy-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "gcc-ai-policy-2026",
+      "supports": [
+        "gcc-ai-policy-2026",
+        "gcc-ai-policy-fact",
+        "gcc-ai-policy-impact",
+        "gcc-ai-policy-limitation"
+      ]
+    },
+    {
+      "sourceId": "lwn-gcc-ai-policy-2026",
+      "supports": [
+        "gcc-ai-policy-fact",
+        "gcc-ai-policy-impact",
+        "gcc-ai-policy-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "mirrorcode-benchmark-2026",
+    "openclaw-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-07-30",
+    "updatedAt": "2026-07-30",
+    "curator": "gang",
+    "reviewer": "gang",
+    "reviewedAt": "2026-07-30",
+    "reviewProvenance": "v2.3",
+    "publishedAt": "2026-07-30",
+    "changeLog": [
+      {
+        "date": "2026-07-30",
+        "changeType": "created",
+        "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+      },
+      {
+        "date": "2026-07-30",
+        "changeType": "source_added",
+        "summary": "Added GCC's policy and independent LWN coverage; retained the explicit exceptions."
+      }
+    ]
+  }
+}

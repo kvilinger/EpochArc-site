@@ -1,0 +1,212 @@
+{
+  "id": "anthropic-mythos-cryptanalysis-2026",
+  "slug": "anthropic-mythos-cryptanalysis",
+  "title": {
+    "en": "Claude Mythos improves attacks on a post-quantum candidate and reduced-round AES",
+    "zhHans": "Claude Mythos 改进了对后量子候选方案和降轮 AES 的攻击"
+  },
+  "searchSummary": {
+    "en": "Anthropic reports that Claude Mythos helped improve a key-recovery attack against the non-deployed HAWK post-quantum signature candidate and an attack on seven-round AES-128.",
+    "zhHans": "Anthropic 报告称，Claude Mythos 协助改进了针对尚未部署的后量子签名候选 HAWK 的密钥恢复攻击，以及针对七轮 AES-128 的攻击。"
+  },
+  "summary": {
+    "en": "Anthropic published cryptanalysis results on July 28, 2026, describing an improved attack against HAWK and an improved attack against a reduced-round AES variant. The HAWK result is relevant to a candidate considered in post-quantum standardization; the AES result targets seven of ten rounds and does not break full AES.",
+    "zhHans": "Anthropic 于 2026 年 7 月 28 日发布密码分析结果，介绍了对 HAWK 的改进攻击，以及对降轮 AES 变体的改进攻击。HAWK 结果涉及正在后量子标准化过程中考虑的候选方案；AES 结果只针对十轮中的七轮，并未破解完整 AES。"
+  },
+  "narrative": {
+    "en": "Using Claude Mythos Preview in an agentic research harness, Anthropic describes two main results. The first improves a key-recovery attack on HAWK, a proposed post-quantum signature scheme that had survived earlier expert review but was not deployed or standardized. Anthropic says the attack roughly halves the effective security level for the affected parameter set, while remaining exponential. The second result improves a meet-in-the-middle attack on seven-round AES-128 by 200–800 times under a chosen-plaintext research model. Independent cryptography analysis considers the HAWK result meaningful for the candidate's standardization prospects, but describes the AES result as incremental and impractical against production AES. The most durable signal is the model's ability to synthesize and extend existing cryptanalysis, together with the continuing need for human verification.",
+    "zhHans": "Anthropic 使用 Claude Mythos Preview 和智能体研究工具链介绍了两个主要结果。第一项改进了针对 HAWK 的密钥恢复攻击。HAWK 是一个后量子签名方案，曾通过此前的专家评审，但尚未部署或标准化。Anthropic 称，该攻击使受影响参数集的有效安全强度大致减半，但仍然是指数时间攻击。第二项在选择明文研究模型下，将针对七轮 AES-128 的中间相遇攻击速度提高了 200–800 倍。独立密码学分析认为 HAWK 结果会影响该候选方案的标准化前景，但将 AES 结果描述为对生产 AES 不实用的增量改进。更持久的信号是，模型能够综合并扩展既有密码分析方法，同时人类验证仍然不可或缺。"
+  },
+  "date": "2026-07-28",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Jul 28, 2026",
+    "zhHans": "2026年7月28日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 6,
+  "consensusLevel": "debated",
+  "controversy": true,
+  "categories": [
+    "capability",
+    "safety"
+  ],
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "The results show a frontier model extending published cryptanalysis into executable research workflows on difficult mathematical objects.",
+        "zhHans": "这些结果显示，前沿模型能够把既有密码分析推进到针对复杂数学对象的可执行研究流程中。"
+      },
+      "affectedGroups": [
+        "cryptographers",
+        "AI researchers",
+        "post-quantum standards bodies",
+        "security engineers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "anthropic-cryptanalysis-2026",
+        "anthropic-hawk-key-recovery-2026",
+        "cryptography-engineering-anthropic-2026"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Cryptanalysis becomes a concrete example of AI-assisted research where model-generated hypotheses can extend expert literature, but must still be checked by specialists.",
+        "zhHans": "密码分析成为 AI 辅助研究的具体案例：模型生成的假设可以扩展专家文献，但仍必须由专业人员核验。"
+      },
+      "affectedGroups": [
+        "academic researchers",
+        "security standards organizations",
+        "AI safety teams",
+        "software maintainers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-cryptanalysis-2026",
+        "cryptography-engineering-anthropic-2026"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "More capable automated cryptanalysis could increase pressure on the review and migration pipeline if future findings affect deployed systems.",
+        "zhHans": "如果未来的发现影响已部署系统，更强的自动化密码分析可能会加大审查和迁移流程的压力。"
+      },
+      "affectedGroups": [
+        "cryptographic users",
+        "standards bodies",
+        "software maintainers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-cryptanalysis-2026",
+        "cryptography-engineering-anthropic-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "anthropic-mythos-cryptanalysis-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Anthropic reported an improved attack on the proposed HAWK signature scheme and an improved attack on a seven-round AES-128 variant using Claude Mythos Preview.",
+        "zhHans": "Anthropic 报告称，Claude Mythos Preview 改进了针对 HAWK 签名方案和七轮 AES-128 变体的攻击。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-cryptanalysis-2026",
+        "anthropic-hawk-key-recovery-2026",
+        "anthropic-aes-mobius-bridge-2026"
+      ]
+    },
+    {
+      "id": "anthropic-mythos-cryptanalysis-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "The HAWK result may affect the candidate's post-quantum standardization prospects, while the broader capability signal is AI-assisted extension of cryptanalysis research.",
+        "zhHans": "HAWK 结果可能影响该候选方案的后量子标准化前景，更广泛的能力信号则是 AI 能够协助扩展密码分析研究。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-cryptanalysis-2026",
+        "cryptography-engineering-anthropic-2026"
+      ]
+    },
+    {
+      "id": "anthropic-mythos-cryptanalysis-interpretation",
+      "claimType": "interpretation",
+      "text": {
+        "en": "Independent analysis treats HAWK as the more consequential result and the AES result as a smaller technical increment rather than a practical break.",
+        "zhHans": "独立分析认为 HAWK 是影响更大的结果，而 AES 结果是较小的技术增量，不是实用意义上的破解。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-cryptanalysis-2026",
+        "cryptography-engineering-anthropic-2026"
+      ]
+    },
+    {
+      "id": "anthropic-mythos-cryptanalysis-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "HAWK is not deployed, the attack remains exponential and was demonstrated on a challenge instance; the AES result targets seven rounds and requires an impractical chosen-plaintext setting, so neither result breaks production cryptography.",
+        "zhHans": "HAWK 尚未部署，攻击仍是指数时间并在挑战实例上演示；AES 结果只针对七轮并要求不现实的选择明文条件，因此两项结果都没有破解生产环境密码系统。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "anthropic-cryptanalysis-2026",
+        "cryptography-engineering-anthropic-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "anthropic-cryptanalysis-2026",
+      "supports": [
+        "anthropic-mythos-cryptanalysis-2026",
+        "anthropic-mythos-cryptanalysis-fact",
+        "anthropic-mythos-cryptanalysis-impact",
+        "anthropic-mythos-cryptanalysis-limitation"
+      ]
+    },
+    {
+      "sourceId": "anthropic-hawk-key-recovery-2026",
+      "supports": [
+        "anthropic-mythos-cryptanalysis-fact"
+      ]
+    },
+    {
+      "sourceId": "anthropic-aes-mobius-bridge-2026",
+      "supports": [
+        "anthropic-mythos-cryptanalysis-fact"
+      ]
+    },
+    {
+      "sourceId": "cryptography-engineering-anthropic-2026",
+      "supports": [
+        "anthropic-mythos-cryptanalysis-impact",
+        "anthropic-mythos-cryptanalysis-interpretation",
+        "anthropic-mythos-cryptanalysis-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "claude-opus-5-2026",
+    "claude-fable-ban-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-07-30",
+    "updatedAt": "2026-07-30",
+    "curator": "gang",
+    "reviewer": "gang",
+    "reviewedAt": "2026-07-30",
+    "reviewProvenance": "v2.3",
+    "publishedAt": "2026-07-30",
+    "changeLog": [
+      {
+        "date": "2026-07-30",
+        "changeType": "created",
+        "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+      },
+      {
+        "date": "2026-07-30",
+        "changeType": "source_added",
+        "summary": "Added Anthropic technical papers and independent cryptography analysis with explicit production-impact limitations."
+      }
+    ]
+  }
+}

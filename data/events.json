@@ -121,7 +121,10 @@
         ]
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "open-secure-ai-alliance-2026",
+      "pacing-the-frontier-2026"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-28",
@@ -1760,6 +1763,218 @@
     "categories": [
       "capability"
     ]
+  },
+  {
+    "id": "anthropic-mythos-cryptanalysis-2026",
+    "slug": "anthropic-mythos-cryptanalysis",
+    "title": {
+      "en": "Claude Mythos improves attacks on a post-quantum candidate and reduced-round AES",
+      "zhHans": "Claude Mythos 改进了对后量子候选方案和降轮 AES 的攻击"
+    },
+    "searchSummary": {
+      "en": "Anthropic reports that Claude Mythos helped improve a key-recovery attack against the non-deployed HAWK post-quantum signature candidate and an attack on seven-round AES-128.",
+      "zhHans": "Anthropic 报告称，Claude Mythos 协助改进了针对尚未部署的后量子签名候选 HAWK 的密钥恢复攻击，以及针对七轮 AES-128 的攻击。"
+    },
+    "summary": {
+      "en": "Anthropic published cryptanalysis results on July 28, 2026, describing an improved attack against HAWK and an improved attack against a reduced-round AES variant. The HAWK result is relevant to a candidate considered in post-quantum standardization; the AES result targets seven of ten rounds and does not break full AES.",
+      "zhHans": "Anthropic 于 2026 年 7 月 28 日发布密码分析结果，介绍了对 HAWK 的改进攻击，以及对降轮 AES 变体的改进攻击。HAWK 结果涉及正在后量子标准化过程中考虑的候选方案；AES 结果只针对十轮中的七轮，并未破解完整 AES。"
+    },
+    "narrative": {
+      "en": "Using Claude Mythos Preview in an agentic research harness, Anthropic describes two main results. The first improves a key-recovery attack on HAWK, a proposed post-quantum signature scheme that had survived earlier expert review but was not deployed or standardized. Anthropic says the attack roughly halves the effective security level for the affected parameter set, while remaining exponential. The second result improves a meet-in-the-middle attack on seven-round AES-128 by 200–800 times under a chosen-plaintext research model. Independent cryptography analysis considers the HAWK result meaningful for the candidate's standardization prospects, but describes the AES result as incremental and impractical against production AES. The most durable signal is the model's ability to synthesize and extend existing cryptanalysis, together with the continuing need for human verification.",
+      "zhHans": "Anthropic 使用 Claude Mythos Preview 和智能体研究工具链介绍了两个主要结果。第一项改进了针对 HAWK 的密钥恢复攻击。HAWK 是一个后量子签名方案，曾通过此前的专家评审，但尚未部署或标准化。Anthropic 称，该攻击使受影响参数集的有效安全强度大致减半，但仍然是指数时间攻击。第二项在选择明文研究模型下，将针对七轮 AES-128 的中间相遇攻击速度提高了 200–800 倍。独立密码学分析认为 HAWK 结果会影响该候选方案的标准化前景，但将 AES 结果描述为对生产 AES 不实用的增量改进。更持久的信号是，模型能够综合并扩展既有密码分析方法，同时人类验证仍然不可或缺。"
+    },
+    "date": "2026-07-28",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "Jul 28, 2026",
+      "zhHans": "2026年7月28日"
+    },
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 6,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "categories": [
+      "capability",
+      "safety"
+    ],
+    "impacts": [
+      {
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The results show a frontier model extending published cryptanalysis into executable research workflows on difficult mathematical objects.",
+          "zhHans": "这些结果显示，前沿模型能够把既有密码分析推进到针对复杂数学对象的可执行研究流程中。"
+        },
+        "affectedGroups": [
+          "cryptographers",
+          "AI researchers",
+          "post-quantum standards bodies",
+          "security engineers"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "anthropic-cryptanalysis-2026",
+          "anthropic-hawk-key-recovery-2026",
+          "cryptography-engineering-anthropic-2026"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Cryptanalysis becomes a concrete example of AI-assisted research where model-generated hypotheses can extend expert literature, but must still be checked by specialists.",
+          "zhHans": "密码分析成为 AI 辅助研究的具体案例：模型生成的假设可以扩展专家文献，但仍必须由专业人员核验。"
+        },
+        "affectedGroups": [
+          "academic researchers",
+          "security standards organizations",
+          "AI safety teams",
+          "software maintainers"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-cryptanalysis-2026",
+          "cryptography-engineering-anthropic-2026"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": -1,
+        "direction": "negative",
+        "description": {
+          "en": "More capable automated cryptanalysis could increase pressure on the review and migration pipeline if future findings affect deployed systems.",
+          "zhHans": "如果未来的发现影响已部署系统，更强的自动化密码分析可能会加大审查和迁移流程的压力。"
+        },
+        "affectedGroups": [
+          "cryptographic users",
+          "standards bodies",
+          "software maintainers"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-cryptanalysis-2026",
+          "cryptography-engineering-anthropic-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "anthropic-mythos-cryptanalysis-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "Anthropic reported an improved attack on the proposed HAWK signature scheme and an improved attack on a seven-round AES-128 variant using Claude Mythos Preview.",
+          "zhHans": "Anthropic 报告称，Claude Mythos Preview 改进了针对 HAWK 签名方案和七轮 AES-128 变体的攻击。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-cryptanalysis-2026",
+          "anthropic-hawk-key-recovery-2026",
+          "anthropic-aes-mobius-bridge-2026"
+        ]
+      },
+      {
+        "id": "anthropic-mythos-cryptanalysis-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "The HAWK result may affect the candidate's post-quantum standardization prospects, while the broader capability signal is AI-assisted extension of cryptanalysis research.",
+          "zhHans": "HAWK 结果可能影响该候选方案的后量子标准化前景，更广泛的能力信号则是 AI 能够协助扩展密码分析研究。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-cryptanalysis-2026",
+          "cryptography-engineering-anthropic-2026"
+        ]
+      },
+      {
+        "id": "anthropic-mythos-cryptanalysis-interpretation",
+        "claimType": "interpretation",
+        "text": {
+          "en": "Independent analysis treats HAWK as the more consequential result and the AES result as a smaller technical increment rather than a practical break.",
+          "zhHans": "独立分析认为 HAWK 是影响更大的结果，而 AES 结果是较小的技术增量，不是实用意义上的破解。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-cryptanalysis-2026",
+          "cryptography-engineering-anthropic-2026"
+        ]
+      },
+      {
+        "id": "anthropic-mythos-cryptanalysis-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "HAWK is not deployed, the attack remains exponential and was demonstrated on a challenge instance; the AES result targets seven rounds and requires an impractical chosen-plaintext setting, so neither result breaks production cryptography.",
+          "zhHans": "HAWK 尚未部署，攻击仍是指数时间并在挑战实例上演示；AES 结果只针对七轮并要求不现实的选择明文条件，因此两项结果都没有破解生产环境密码系统。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "anthropic-cryptanalysis-2026",
+          "cryptography-engineering-anthropic-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "anthropic-cryptanalysis-2026",
+        "supports": [
+          "anthropic-mythos-cryptanalysis-2026",
+          "anthropic-mythos-cryptanalysis-fact",
+          "anthropic-mythos-cryptanalysis-impact",
+          "anthropic-mythos-cryptanalysis-limitation"
+        ]
+      },
+      {
+        "sourceId": "anthropic-hawk-key-recovery-2026",
+        "supports": [
+          "anthropic-mythos-cryptanalysis-fact"
+        ]
+      },
+      {
+        "sourceId": "anthropic-aes-mobius-bridge-2026",
+        "supports": [
+          "anthropic-mythos-cryptanalysis-fact"
+        ]
+      },
+      {
+        "sourceId": "cryptography-engineering-anthropic-2026",
+        "supports": [
+          "anthropic-mythos-cryptanalysis-impact",
+          "anthropic-mythos-cryptanalysis-interpretation",
+          "anthropic-mythos-cryptanalysis-limitation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "claude-opus-5-2026",
+      "claude-fable-ban-2026"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-07-30",
+      "updatedAt": "2026-07-30",
+      "curator": "gang",
+      "reviewer": "gang",
+      "reviewedAt": "2026-07-30",
+      "reviewProvenance": "v2.3",
+      "publishedAt": "2026-07-30",
+      "changeLog": [
+        {
+          "date": "2026-07-30",
+          "changeType": "created",
+          "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+        },
+        {
+          "date": "2026-07-30",
+          "changeType": "source_added",
+          "summary": "Added Anthropic technical papers and independent cryptography analysis with explicit production-impact limitations."
+        }
+      ]
+    }
   },
   {
     "id": "apple-intelligence-2024",
@@ -3891,6 +4106,7 @@
     "relatedEvents": [
       "glm-52-open-source-2026",
       "anthropic-alibaba-extraction-2026",
+      "anthropic-mythos-cryptanalysis-2026",
       "claude-fable-ban-lift-2026",
       "fable-5-kernelbench-2026",
       "gpt-5-6-limited-release-2026"
@@ -4408,7 +4624,10 @@
         ]
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "anthropic-mythos-cryptanalysis-2026",
+      "project-fetch-phase-two-2026"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-28",
@@ -5359,7 +5578,8 @@
       "llama-3.1-405b-2024",
       "deepseek-v4-2026",
       "kimi-k3-2026",
-      "nvidia-4-trillion-2025"
+      "nvidia-4-trillion-2025",
+      "openai-academic-researchers-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -6910,7 +7130,8 @@
       }
     ],
     "relatedEvents": [
-      "gemini-robotics-2025"
+      "gemini-robotics-2025",
+      "project-fetch-phase-two-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -7079,7 +7300,8 @@
       }
     ],
     "relatedEvents": [
-      "openai-pbc-restructure-2025"
+      "openai-pbc-restructure-2025",
+      "xai-minnesota-nudification-lawsuit-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -7240,6 +7462,169 @@
     "categories": [
       "capability"
     ]
+  },
+  {
+    "id": "gcc-ai-policy-2026",
+    "slug": "gcc-ai-policy",
+    "title": {
+      "en": "GCC adopts a policy limiting LLM-generated code in legally significant contributions",
+      "zhHans": "GCC 通过政策限制在具有法律意义的贡献中使用 LLM 生成代码"
+    },
+    "searchSummary": {
+      "en": "The GNU Compiler Collection says it will decline legally significant contributions containing or derived from LLM-generated content, while allowing limited uses such as marked insignificant contributions and test cases.",
+      "zhHans": "GNU Compiler Collection 表示将拒绝包含或源自 LLM 生成内容的具有法律意义的贡献，同时允许标记的非重大贡献和部分测试用例等有限使用。"
+    },
+    "summary": {
+      "en": "On July 29, 2026, GCC published an AI contribution policy that declines legally significant contributions containing or derived from LLM-generated content. The policy still permits some legally insignificant contributions, LLM-generated test cases and AI-assisted research or review when generated output is not submitted as project code.",
+      "zhHans": "2026 年 7 月 29 日，GCC 发布 AI 贡献政策，拒绝包含或源自 LLM 生成内容的具有法律意义的贡献。该政策仍允许部分非重大贡献、LLM 生成的测试用例，以及在生成内容不直接提交为项目代码时进行 AI 辅助研究或审查。"
+    },
+    "narrative": {
+      "en": "GCC's policy is a project-level response to copyright provenance, maintainership and responsibility questions around AI-assisted programming. It defines a boundary around legally significant contributions rather than banning every use of an LLM: maintainers may accept clearly marked legally insignificant contributions and legally significant test cases, while research, analysis, bug discovery, patch review and debugging remain allowed when their output is not included in the contribution. Every contribution must still be submitted by a human who understands it, and an LLM may not provide the project's Signed-off-by certification. LWN reports that the steering committee accepted the working group's recommendation and that the policy is expected to evolve, with a review planned for early 2027.",
+      "zhHans": "GCC 的政策回应了 AI 辅助编程带来的版权来源、维护责任和贡献者责任问题。它围绕具有法律意义的贡献划定边界，并没有禁止所有 LLM 使用：维护者可以接受明确标记的非重大贡献和具有法律意义的测试用例；当生成内容不被纳入贡献时，研究、分析、漏洞发现、补丁审查和调试仍然允许。每项贡献仍必须由理解其内容的人类提交，LLM 不能提供项目的 Signed-off-by 认证。LWN 报道称，指导委员会接受了工作组建议，政策预计会继续演化，并计划在 2027 年初复查。"
+    },
+    "date": "2026-07-29",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "Jul 29, 2026",
+      "zhHans": "2026年7月29日"
+    },
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 5,
+    "consensusLevel": "emerging",
+    "controversy": true,
+    "categories": [
+      "product"
+    ],
+    "impacts": [
+      {
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "A major open-source project turns AI provenance and human responsibility into explicit contribution rules rather than leaving them to informal norms.",
+          "zhHans": "一个重要开源项目将 AI 内容来源和人类责任转化为明确的贡献规则，而不是继续依赖非正式规范。"
+        },
+        "affectedGroups": [
+          "open-source maintainers",
+          "software contributors",
+          "legal teams",
+          "project governance bodies"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "gcc-ai-policy-2026",
+          "lwn-gcc-ai-policy-2026"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": -1,
+        "direction": "negative",
+        "description": {
+          "en": "Strict provenance rules may raise participation and review costs for contributors while leaving difficult questions about derived content and detection unresolved.",
+          "zhHans": "严格的来源规则可能提高贡献者的参与和审查成本，同时留下衍生内容和检测方式等难题。"
+        },
+        "affectedGroups": [
+          "prospective contributors",
+          "maintainers",
+          "small open-source projects"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "gcc-ai-policy-2026",
+          "lwn-gcc-ai-policy-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "gcc-ai-policy-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "GCC's July 29, 2026 policy declines legally significant contributions that include or derive from LLM-generated content, while allowing specified exceptions.",
+          "zhHans": "GCC 于 2026 年 7 月 29 日发布的政策拒绝包含或源自 LLM 生成内容的具有法律意义的贡献，同时规定了明确例外。"
+        },
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "gcc-ai-policy-2026",
+          "lwn-gcc-ai-policy-2026"
+        ]
+      },
+      {
+        "id": "gcc-ai-policy-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "The policy makes human authorship, understanding and sign-off explicit requirements for contributions to a major open-source compiler project.",
+          "zhHans": "该政策把人类作者身份、对代码的理解和人工签署明确为向重要开源编译器项目贡献代码的要求。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "gcc-ai-policy-2026",
+          "lwn-gcc-ai-policy-2026"
+        ]
+      },
+      {
+        "id": "gcc-ai-policy-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "The policy is not a blanket ban on AI use: it contains exceptions for legally insignificant contributions and test cases and permits research, review and debugging when generated output is not included in the contribution.",
+          "zhHans": "该政策不是全面禁止 AI 使用：它为非重大贡献和测试用例设置例外，并允许在生成内容不纳入贡献时进行研究、审查和调试。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "gcc-ai-policy-2026",
+          "lwn-gcc-ai-policy-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "gcc-ai-policy-2026",
+        "supports": [
+          "gcc-ai-policy-2026",
+          "gcc-ai-policy-fact",
+          "gcc-ai-policy-impact",
+          "gcc-ai-policy-limitation"
+        ]
+      },
+      {
+        "sourceId": "lwn-gcc-ai-policy-2026",
+        "supports": [
+          "gcc-ai-policy-fact",
+          "gcc-ai-policy-impact",
+          "gcc-ai-policy-limitation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "mirrorcode-benchmark-2026",
+      "openclaw-2026"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-07-30",
+      "updatedAt": "2026-07-30",
+      "curator": "gang",
+      "reviewer": "gang",
+      "reviewedAt": "2026-07-30",
+      "reviewProvenance": "v2.3",
+      "publishedAt": "2026-07-30",
+      "changeLog": [
+        {
+          "date": "2026-07-30",
+          "changeType": "created",
+          "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+        },
+        {
+          "date": "2026-07-30",
+          "changeType": "source_added",
+          "summary": "Added GCC's policy and independent LWN coverage; retained the explicit exceptions."
+        }
+      ]
+    }
   },
   {
     "id": "gemini-1.5-pro-2024",
@@ -7734,7 +8119,8 @@
     ],
     "relatedEvents": [
       "gemini-2-agents-2024",
-      "figure-bmw-humanoid-2025"
+      "figure-bmw-humanoid-2025",
+      "project-fetch-phase-two-2026"
     ],
     "editorial": {
       "createdAt": "2026-07-20",
@@ -9876,7 +10262,8 @@
       }
     ],
     "relatedEvents": [
-      "spacex-xai-merger-2026"
+      "spacex-xai-merger-2026",
+      "xai-minnesota-nudification-lawsuit-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -10084,7 +10471,8 @@
     "relatedEvents": [
       "eu-ai-act-2024",
       "eu-ai-act-enforcement-2025",
-      "eu-ai-act-proposal-2021"
+      "eu-ai-act-proposal-2021",
+      "xai-minnesota-nudification-lawsuit-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -11105,7 +11493,11 @@
         ]
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "gcc-ai-policy-2026",
+      "openai-academic-researchers-2026",
+      "project-fetch-phase-two-2026"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-28",
@@ -11735,6 +12127,407 @@
     ]
   },
   {
+    "id": "open-secure-ai-alliance-2026",
+    "slug": "open-secure-ai-alliance",
+    "title": {
+      "en": "Industry leaders launch the Open Secure AI Alliance for open cyber-defense tooling",
+      "zhHans": "行业领导者成立 Open Secure AI Alliance，推动开放式 AI 网络防御工具"
+    },
+    "searchSummary": {
+      "en": "NVIDIA and a broad group of technology and security organizations announce an alliance to build and share open models, harnesses and tools for AI-era cybersecurity.",
+      "zhHans": "NVIDIA 与一批科技和安全组织宣布成立联盟，建设并共享面向 AI 时代网络安全的开放模型、工具链和工具。"
+    },
+    "summary": {
+      "en": "On July 27, 2026, NVIDIA announced the Open Secure AI Alliance, a coalition of technology, cybersecurity and open-source organizations focused on shared defensive infrastructure for AI agents and software. The announcement includes NVIDIA's NOOA harness project and a list of inaugural partners, but it does not yet establish an independent standard or measurable security outcome.",
+      "zhHans": "2026 年 7 月 27 日，NVIDIA 宣布成立 Open Secure AI Alliance，这是一个由科技、网络安全和开源组织组成的联盟，目标是为 AI 智能体和软件建设共享防御基础设施。公告包括 NVIDIA 的 NOOA 工具链项目和首批合作伙伴名单，但尚未形成独立标准或可量化的安全成果。"
+    },
+    "narrative": {
+      "en": "The alliance builds on open-source security efforts and responds directly to the July Hugging Face incident, in which Hugging Face used an open-weight model on its own infrastructure to analyze more than 17,000 actions after proprietary systems were unavailable for the forensic work. NVIDIA says the alliance will develop an open defense stack covering agent identity, isolation, model formats, multi-model scanning, secure coding and evaluation. It also frames openness as a defensive advantage because organizations can inspect, adapt and run tools locally. The event is a coalition launch and a commitment to shared infrastructure, not evidence that those tools have already improved real-world security or that the alliance has a public governance charter.",
+      "zhHans": "该联盟建立在开源安全工作的基础上，并直接回应 7 月 Hugging Face 事件：在专有系统无法承担取证工作的情况下，Hugging Face 在自己的基础设施上运行开放权重模型，分析了超过 17,000 条行动记录。NVIDIA 表示，联盟将建设开放防御栈，涵盖智能体身份、隔离、模型格式、多模型扫描、安全编码和评测。联盟还将开放性描述为防御优势，因为组织可以检查、调整并在本地运行工具。这一事件是联盟成立和共享基础设施承诺，而不是这些工具已经改善现实安全的证据，也不代表联盟已经拥有公开治理章程。"
+    },
+    "date": "2026-07-27",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "Jul 27, 2026",
+      "zhHans": "2026年7月27日"
+    },
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 5,
+    "consensusLevel": "emerging",
+    "controversy": true,
+    "categories": [
+      "safety",
+      "product"
+    ],
+    "impacts": [
+      {
+        "dimension": "access_democratization",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "An open alliance could give more defenders the ability to inspect, adapt and run advanced security tooling on their own infrastructure.",
+          "zhHans": "开放联盟可能让更多防御者能够在自己的基础设施上检查、调整和运行先进安全工具。"
+        },
+        "affectedGroups": [
+          "security defenders",
+          "open-source maintainers",
+          "cloud providers",
+          "enterprise security teams",
+          "public-sector security teams"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-open-secure-ai-alliance-2026",
+          "foreign-affairs-forum-open-secure-alliance-2026"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": -1,
+        "direction": "negative",
+        "description": {
+          "en": "More accessible frontier defensive tooling can also be repurposed or misused, making safeguards, evaluation and access controls part of the alliance's unresolved work.",
+          "zhHans": "更容易获得的前沿防御工具也可能被改作他用或滥用，因此安全措施、评测和访问控制仍是联盟尚未解决的工作。"
+        },
+        "affectedGroups": [
+          "AI users",
+          "software maintainers",
+          "security teams"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-open-secure-ai-alliance-2026",
+          "foreign-affairs-forum-open-secure-alliance-2026"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "The announcement treats open models and agent harnesses as shared defensive infrastructure rather than only as distribution choices.",
+          "zhHans": "公告将开放模型和智能体工具链视为共享防御基础设施，而不只是模型分发方式。"
+        },
+        "affectedGroups": [
+          "AI labs",
+          "open-source foundations",
+          "policymakers",
+          "security researchers"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-open-secure-ai-alliance-2026",
+          "foreign-affairs-forum-open-secure-alliance-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "open-secure-ai-alliance-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "NVIDIA announced the Open Secure AI Alliance on July 27, 2026, with a broad set of inaugural partners and a mission to develop open technologies for AI safety and cybersecurity.",
+          "zhHans": "NVIDIA 于 2026 年 7 月 27 日宣布成立 Open Secure AI Alliance，并列出一批首批合作伙伴，目标是开发面向 AI 安全和网络安全的开放技术。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-open-secure-ai-alliance-2026",
+          "crowdstrike-open-secure-ai-alliance-2026"
+        ]
+      },
+      {
+        "id": "open-secure-ai-alliance-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "The alliance commits to an open defense stack spanning agent identity, isolation, model formats, scanning, secure coding and evaluation, but the announcement does not demonstrate deployed outcomes.",
+          "zhHans": "联盟承诺建设涵盖智能体身份、隔离、模型格式、扫描、安全编码和评测的开放防御栈，但公告没有证明这些工具已经产生部署成果。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-open-secure-ai-alliance-2026",
+          "foreign-affairs-forum-open-secure-alliance-2026"
+        ]
+      },
+      {
+        "id": "open-secure-ai-alliance-interpretation",
+        "claimType": "interpretation",
+        "text": {
+          "en": "The coalition frames local control and inspectability as security advantages when defenders need to adapt tools to their own infrastructure and data.",
+          "zhHans": "该联盟将本地控制和可检查性描述为安全优势，尤其适用于防御者需要根据自身基础设施和数据调整工具的场景。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nvidia-open-secure-ai-alliance-2026",
+          "foreign-affairs-forum-open-secure-alliance-2026"
+        ]
+      },
+      {
+        "id": "open-secure-ai-alliance-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "The alliance launch is primarily first-party and partner framing; it provides no public governance charter, independent evaluation or evidence that open tooling has already improved security outcomes.",
+          "zhHans": "联盟成立目前主要由发起方和合作伙伴叙述，尚无公开治理章程、独立评测或证据表明开放工具已经改善安全结果。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "nvidia-open-secure-ai-alliance-2026",
+          "foreign-affairs-forum-open-secure-alliance-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nvidia-open-secure-ai-alliance-2026",
+        "supports": [
+          "open-secure-ai-alliance-2026",
+          "open-secure-ai-alliance-fact",
+          "open-secure-ai-alliance-impact",
+          "open-secure-ai-alliance-interpretation",
+          "open-secure-ai-alliance-limitation"
+        ]
+      },
+      {
+        "sourceId": "crowdstrike-open-secure-ai-alliance-2026",
+        "supports": [
+          "open-secure-ai-alliance-fact"
+        ]
+      },
+      {
+        "sourceId": "foreign-affairs-forum-open-secure-alliance-2026",
+        "supports": [
+          "open-secure-ai-alliance-impact",
+          "open-secure-ai-alliance-interpretation",
+          "open-secure-ai-alliance-limitation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "openai-hf-breach-2026",
+      "ai-kill-switch-act-2026",
+      "openclaw-2026"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-07-30",
+      "updatedAt": "2026-07-30",
+      "curator": "gang",
+      "reviewer": "gang",
+      "reviewedAt": "2026-07-30",
+      "reviewProvenance": "v2.3",
+      "publishedAt": "2026-07-30",
+      "changeLog": [
+        {
+          "date": "2026-07-30",
+          "changeType": "created",
+          "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+        },
+        {
+          "date": "2026-07-30",
+          "changeType": "source_added",
+          "summary": "Added NVIDIA, partner and independent coverage; kept the announcement-versus-outcome limitation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "openai-academic-researchers-2026",
+    "slug": "chatgpt-academic-researchers",
+    "title": {
+      "en": "OpenAI offers selected academic researchers free access to frontier models",
+      "zhHans": "OpenAI 向部分学术研究者免费提供前沿模型访问权"
+    },
+    "searchSummary": {
+      "en": "OpenAI announces a program starting with 10,000 researchers and planned to expand toward 100,000 through 2027, with free access to frontier models, Codex and research tools at selected institutions.",
+      "zhHans": "OpenAI 宣布一项从 10,000 名研究者开始、计划到 2027 年扩大至 100,000 人的项目，为符合条件的机构提供前沿模型、Codex 和研究工具的免费访问。"
+    },
+    "summary": {
+      "en": "OpenAI announced ChatGPT for Academic Researchers in late July 2026, offering selected researchers at qualifying institutions free access to frontier models and tools. The program starts with 10,000 researchers and plans to expand toward 100,000 through 2027; those figures are a program plan, not an independently audited enrollment count.",
+      "zhHans": "OpenAI 于 2026 年 7 月下旬宣布 ChatGPT for Academic Researchers，为符合条件机构的部分研究者免费提供前沿模型和工具。项目从 10,000 名研究者开始，计划在 2027 年前扩大至 100,000 人；这些数字是项目计划，不是经过独立审计的实际注册人数。"
+    },
+    "narrative": {
+      "en": "The program extends OpenAI's distribution strategy beyond companies and national laboratories to selected academic institutions. Participants can use ChatGPT, ChatGPT Work and Codex, including GPT-5.6 models, higher usage limits, deep research, connectors and life-science skills. OpenAI says workspaces provide business-grade privacy and that data is not used for training by default. It also places the program inside a stated commitment of more than $250 million through 2027 for external scientific research. The event matters as a product-access milestone because it attempts to make frontier systems part of ordinary academic workflows, but access remains institution-gated, the expansion is prospective and the productivity examples are primarily OpenAI's own reporting.",
+      "zhHans": "该项目把 OpenAI 的分发策略从企业和国家实验室扩展到部分学术机构。参与者可以使用 ChatGPT、ChatGPT Work 和 Codex，包括 GPT-5.6 系列、更高使用额度、深度研究、连接器和生命科学技能。OpenAI 表示工作区提供企业级隐私保护，数据默认不用于训练。该项目也被纳入 OpenAI 所称的截至 2027 年支持外部科学研究的超过 2.5 亿美元承诺。这个事件作为产品访问节点具有意义，因为它试图让前沿系统进入普通学术工作流；但访问仍受机构资格限制，扩大规模属于未来计划，生产力案例也主要来自 OpenAI 自身报告。"
+    },
+    "date": "2026-07-29",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "Jul 29, 2026",
+      "zhHans": "2026年7月29日"
+    },
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 4,
+    "consensusLevel": "emerging",
+    "controversy": true,
+    "categories": [
+      "product"
+    ],
+    "impacts": [
+      {
+        "dimension": "access_democratization",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The program lowers the price barrier for selected academic researchers who otherwise might not have access to frontier models and research tools.",
+          "zhHans": "该项目降低了部分学术研究者使用前沿模型和研究工具的价格门槛。"
+        },
+        "affectedGroups": [
+          "academic researchers",
+          "universities",
+          "scientific labs",
+          "research assistants"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-academic-researchers-2026",
+          "releasebot-openai-academic-researchers-2026"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Frontier model access is being packaged as a research-institution service with tools, connectors, training and workflow support rather than as an isolated chatbot subscription.",
+          "zhHans": "前沿模型访问被包装为带有工具、连接器、培训和工作流支持的研究机构服务，而不再只是独立的聊天机器人订阅。"
+        },
+        "affectedGroups": [
+          "scientists",
+          "research funders",
+          "university IT teams",
+          "AI product teams"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-academic-researchers-2026"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": -1,
+        "direction": "negative",
+        "description": {
+          "en": "Institution-gated access can deepen dependence on one provider's models, privacy controls and eligibility decisions while research workflows become more platform-specific.",
+          "zhHans": "当研究工作流变得更加依赖单一平台时，机构准入、隐私控制和供应商决策可能加深对单一提供商模型的依赖。"
+        },
+        "affectedGroups": [
+          "universities",
+          "researchers",
+          "research participants"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "openai-academic-researchers-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "openai-academic-researchers-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "OpenAI says ChatGPT for Academic Researchers will start with 10,000 researchers and expand toward 100,000 through 2027 at selected academic institutions.",
+          "zhHans": "OpenAI 表示，ChatGPT for Academic Researchers 将从 10,000 名研究者开始，并在 2027 年前扩大到约 100,000 人，参与机构为符合条件的学术机构。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-academic-researchers-2026",
+          "releasebot-openai-academic-researchers-2026"
+        ]
+      },
+      {
+        "id": "openai-academic-researchers-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "The program makes frontier models, Codex and research-specific tools available in a structured academic workspace with higher usage limits and institution verification.",
+          "zhHans": "该项目通过机构验证的学术工作区，提供前沿模型、Codex 和研究工具，并配有更高使用额度。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-academic-researchers-2026"
+        ]
+      },
+      {
+        "id": "openai-academic-researchers-interpretation",
+        "claimType": "interpretation",
+        "text": {
+          "en": "The program treats frontier AI access as research infrastructure and distribution, potentially moving model use from individual experimentation into institution-supported workflows.",
+          "zhHans": "该项目把前沿 AI 访问视为研究基础设施和分发渠道，可能把模型使用从个人试验推进到机构支持的工作流。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-academic-researchers-2026"
+        ]
+      },
+      {
+        "id": "openai-academic-researchers-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "The 100,000 figure is a prospective target, access is restricted to selected institutions and researchers, and independent evidence of enrollment or productivity gains is not yet available.",
+          "zhHans": "100,000 是未来目标，访问权限仅向部分机构和研究者开放，目前没有独立证据证明实际注册规模或生产力收益。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "openai-academic-researchers-2026",
+          "releasebot-openai-academic-researchers-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "openai-academic-researchers-2026",
+        "supports": [
+          "openai-academic-researchers-2026",
+          "openai-academic-researchers-fact",
+          "openai-academic-researchers-impact",
+          "openai-academic-researchers-interpretation",
+          "openai-academic-researchers-limitation"
+        ]
+      },
+      {
+        "sourceId": "releasebot-openai-academic-researchers-2026",
+        "supports": [
+          "openai-academic-researchers-fact",
+          "openai-academic-researchers-limitation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "mirrorcode-benchmark-2026",
+      "rli-ai-automation-2026",
+      "deepseek-r1-2025"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-07-30",
+      "updatedAt": "2026-07-30",
+      "curator": "gang",
+      "reviewer": "gang",
+      "reviewedAt": "2026-07-30",
+      "reviewProvenance": "v2.3",
+      "publishedAt": "2026-07-30",
+      "changeLog": [
+        {
+          "date": "2026-07-30",
+          "changeType": "created",
+          "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+        },
+        {
+          "date": "2026-07-30",
+          "changeType": "source_added",
+          "summary": "Added OpenAI's program announcement and secondary launch coverage; separated planned scale from observed enrollment."
+        }
+      ]
+    }
+  },
+  {
     "id": "openai-devday-2023",
     "slug": "openai-devday-2023",
     "title": {
@@ -11969,7 +12762,10 @@
         ]
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "open-secure-ai-alliance-2026",
+      "pacing-the-frontier-2026"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-28",
@@ -12576,7 +13372,9 @@
       "mcp-protocol-2024",
       "auto-gpt-2023",
       "claude-code-launch-2025",
-      "claude-code-leak-2026"
+      "claude-code-leak-2026",
+      "gcc-ai-policy-2026",
+      "open-secure-ai-alliance-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -12604,6 +13402,192 @@
       ],
       "reviewer": "gang",
       "reviewProvenance": "legacy_pre_v23"
+    }
+  },
+  {
+    "id": "pacing-the-frontier-2026",
+    "slug": "pacing-the-frontier",
+    "title": {
+      "en": "More than 1,293 frontier-AI employees call for tools to pace future AI development",
+      "zhHans": "超过 1,293 名前沿 AI 员工呼吁建立未来调节 AI 发展速度的工具"
+    },
+    "searchSummary": {
+      "en": "A cross-company employee statement asks the US government to support international technical and governance tools that could deliberately pace frontier AI development if future risks require it.",
+      "zhHans": "一份跨公司的员工声明呼吁美国政府支持国际技术和治理工具，以便在未来风险需要时有能力调节前沿 AI 的发展速度。"
+    },
+    "summary": {
+      "en": "On July 28, 2026, employees from frontier AI companies published Pacing the Frontier, a statement asking the US government to support an international effort to build tools for deliberately pacing automated AI development. The statement represents a coordination signal, not a current pause or binding company policy.",
+      "zhHans": "2026 年 7 月 28 日，来自前沿 AI 公司的员工发布《调节前沿发展》声明，呼吁美国政府支持国际努力，建立能够在必要时调节自动化 AI 发展的工具。这是协调意愿的信号，不是当前暂停开发，也不是具有约束力的公司政策。"
+    },
+    "narrative": {
+      "en": "Frontier AI employees are caught in a coordination problem: each company may want the option to slow development if capabilities begin to outpace safety and governance, but no company wants to slow unilaterally while competitors continue. Pacing the Frontier asks the US government to help develop verifiable technical and governance mechanisms for that future option. The page’s live count reached 1,293 employees, including senior figures from OpenAI, Anthropic, Google and Meta. That breadth makes the statement notable, but the document does not specify a trigger, enforcement mechanism, international agreement or timetable. It also says signatories speak in a personal capacity, so the statement should not be treated as a formal position of every named employer.",
+      "zhHans": "前沿 AI 员工面临一个协调难题：如果能力进展开始超过安全与治理能力，各家公司可能都希望保留放慢发展的选项，但在竞争者继续推进时，没有一家公司愿意单方面放慢。《调节前沿发展》呼吁美国政府帮助建立可验证的技术和治理机制，为未来保留这一选项。该页面的实时签署人数已达到 1,293 人，其中包括 OpenAI、Anthropic、Google 和 Meta 的高层人士。这种跨公司范围使声明具有事件意义，但文件没有规定触发条件、执行机制、国际协议或时间表。页面还说明签署者以个人身份发言，因此不能将其视为所有签署者雇主的正式立场。"
+    },
+    "date": "2026-07-28",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "Jul 28, 2026",
+      "zhHans": "2026年7月28日"
+    },
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 5,
+    "consensusLevel": "emerging",
+    "controversy": true,
+    "categories": [
+      "governance",
+      "safety"
+    ],
+    "impacts": [
+      {
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The statement makes cross-company coordination around optional future pacing mechanisms a visible governance issue rather than a private safety discussion.",
+          "zhHans": "这份声明使跨公司协调未来调节机制成为公开的治理议题，而不再只是实验室内部的安全讨论。"
+        },
+        "affectedGroups": [
+          "frontier AI employees",
+          "AI labs",
+          "policymakers",
+          "AI safety researchers",
+          "the public"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "pacing-frontier-statement-2026",
+          "fortune-pacing-frontier-2026"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": -2,
+        "direction": "negative",
+        "description": {
+          "en": "The statement identifies a coordination and oversight gap: competitive pressure may make it difficult for any single lab to slow down even if risks increase.",
+          "zhHans": "声明指出了协调和监督缺口：即使风险上升，竞争压力也可能使任何单一实验室都难以自行放慢速度。"
+        },
+        "affectedGroups": [
+          "AI labs",
+          "governments",
+          "AI safety researchers",
+          "the public"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "pacing-frontier-statement-2026",
+          "fortune-pacing-frontier-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "pacing-frontier-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "Pacing the Frontier was published on July 28, 2026 and asks the US government to support an international effort to develop tools for deliberately pacing frontier automated AI development.",
+          "zhHans": "《调节前沿发展》于 2026 年 7 月 28 日发布，呼吁美国政府支持国际努力，建立能够调节前沿自动化 AI 发展的工具。"
+        },
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "pacing-frontier-statement-2026",
+          "fortune-pacing-frontier-2026"
+        ]
+      },
+      {
+        "id": "pacing-frontier-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "The statement is an observable cross-lab coordination signal, but it does not establish a current pause, an international agreement or a binding company policy.",
+          "zhHans": "这份声明是可观察到的跨实验室协调信号，但没有建立当前暂停、国际协议或具有约束力的公司政策。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "pacing-frontier-statement-2026",
+          "fortune-pacing-frontier-2026"
+        ]
+      },
+      {
+        "id": "pacing-frontier-interpretation",
+        "claimType": "interpretation",
+        "text": {
+          "en": "The unusual breadth of signatories suggests that some frontier-lab employees see unilateral restraint as unstable under competitive pressure.",
+          "zhHans": "签署者的跨公司范围表明，一些前沿实验室员工认为，在竞争压力下单方面克制并不稳定。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fortune-pacing-frontier-2026",
+          "nyt-meta-ai-pacing-2026"
+        ]
+      },
+      {
+        "id": "pacing-frontier-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "Signatories comment in a personal capacity, and the statement does not define the trigger, scope, verification method or enforcement mechanism of a future pacing arrangement.",
+          "zhHans": "签署者以个人身份发表评论，声明没有定义未来调节安排的触发条件、范围、验证方法或执行机制。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "pacing-frontier-statement-2026",
+          "fortune-pacing-frontier-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "pacing-frontier-statement-2026",
+        "supports": [
+          "pacing-the-frontier-2026",
+          "pacing-frontier-fact",
+          "pacing-frontier-impact",
+          "pacing-frontier-limitation"
+        ]
+      },
+      {
+        "sourceId": "fortune-pacing-frontier-2026",
+        "supports": [
+          "pacing-frontier-fact",
+          "pacing-frontier-impact",
+          "pacing-frontier-interpretation",
+          "pacing-frontier-limitation"
+        ]
+      },
+      {
+        "sourceId": "nyt-meta-ai-pacing-2026",
+        "supports": [
+          "pacing-frontier-interpretation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "ai-kill-switch-act-2026",
+      "openai-hf-breach-2026"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-07-30",
+      "updatedAt": "2026-07-30",
+      "curator": "gang",
+      "reviewer": "gang",
+      "reviewedAt": "2026-07-30",
+      "reviewProvenance": "v2.3",
+      "publishedAt": "2026-07-30",
+      "changeLog": [
+        {
+          "date": "2026-07-30",
+          "changeType": "created",
+          "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+        },
+        {
+          "date": "2026-07-30",
+          "changeType": "source_added",
+          "summary": "Added first-party statement and independent coverage; retained personal-capacity and mechanism limitations."
+        }
+      ]
     }
   },
   {
@@ -12785,6 +13769,201 @@
     "categories": [
       "capability"
     ]
+  },
+  {
+    "id": "project-fetch-phase-two-2026",
+    "slug": "project-fetch-phase-two",
+    "title": {
+      "en": "Project Fetch Phase Two shows a large speed gain on selected robot-programming tasks",
+      "zhHans": "Project Fetch 第二阶段显示 AI 在部分机器人编程任务上获得显著速度优势"
+    },
+    "searchSummary": {
+      "en": "Anthropic reports that Claude Opus 4.7 completed selected robotic-dog programming and sensing tasks much faster than human teams, while still failing the final beach-ball retrieval task.",
+      "zhHans": "Anthropic 报告称，Claude Opus 4.7 在选定的机器狗编程和传感任务上远快于人类团队，但仍未完成最终的取球任务。"
+    },
+    "summary": {
+      "en": "Anthropic's June 18, 2026 Phase Two update reports that Claude Opus 4.7, operating without human assistance, was about 20 times faster than the fastest human team across tasks completed by participants. The experiment measures a selected software-mediated subset of robot operation, not general autonomous robotics.",
+      "zhHans": "Anthropic 于 2026 年 6 月 18 日发布的第二阶段更新称，Claude Opus 4.7 在无人类协助下完成参与者已完成的任务时，比最快的人类团队快约 20 倍。该实验衡量的是由软件中介的部分机器人操作任务，不是通用自主机器人能力。"
+    },
+    "narrative": {
+      "en": "Project Fetch revisited an earlier experiment in which non-robotics experts used a quadruped robot to connect sensors, write controllers and retrieve a beach ball. In Phase Two, Anthropic ran Claude Opus 4.7 through three trials on the remaining programmatic tasks using a Claude Code-like harness. Opus 4.7 connected to video and lidar, wrote control and detection code, and completed the tasks it could perform in minutes rather than the human teams' hours. The comparison is striking but narrow: the model was not evaluated on the time needed to operate the physical controller or on low-level actuation-policy design. It also struggled with the closed-loop precision needed to move the beach ball back to its starting position. The result is therefore best read as a transfer of software-agent capability into a physical tool workflow, not as a solved robotics problem.",
+      "zhHans": "Project Fetch 回访了早期实验：没有机器人专业背景的 Anthropic 员工使用四足机器人连接传感器、编写控制器并取回沙滩球。第二阶段中，Anthropic 使用类似 Claude Code 的工具链，让 Claude Opus 4.7 对剩余的程序化任务进行三次试验。Opus 4.7 连接视频和激光雷达，编写控制与检测代码，并在几分钟内完成其能够完成的任务，而人类团队需要数小时。这个比较结果很显著，但范围较窄：实验没有衡量研究人员操作实体控制器的时间，也没有测试低层执行策略设计。模型还难以完成把沙滩球精确移回起点所需的闭环控制。因此，这一事件更适合被理解为软件智能体能力向物理工具工作流的迁移，而不是机器人问题已经解决。"
+    },
+    "date": "2026-06-18",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "Jun 18, 2026",
+      "zhHans": "2026年6月18日"
+    },
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 5,
+    "consensusLevel": "emerging",
+    "controversy": true,
+    "categories": [
+      "capability"
+    ],
+    "impacts": [
+      {
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "A general coding agent completed selected robot-sensing and control-programming tasks far faster than the human teams in the comparison.",
+          "zhHans": "通用编码智能体在选定的机器人传感和控制编程任务上，远快于比较中的人类团队。"
+        },
+        "affectedGroups": [
+          "robotics researchers",
+          "AI-agent developers",
+          "robot operators",
+          "non-expert robot users"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "anthropic-project-fetch-phase-two-2026",
+          "import-ai-466-fetch-2026"
+        ]
+      },
+      {
+        "dimension": "access_democratization",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "The result suggests that capable coding agents may lower the programming barrier for people who need to use off-the-shelf robots but are not robotics specialists.",
+          "zhHans": "结果表明，能力更强的编码智能体可能降低非机器人专业人员使用现成机器人的编程门槛。"
+        },
+        "affectedGroups": [
+          "non-expert robot users",
+          "small robotics teams",
+          "robotics educators"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-project-fetch-phase-two-2026",
+          "import-ai-466-fetch-2026"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": -1,
+        "direction": "negative",
+        "description": {
+          "en": "As language models gain access to physical tools, failures in perception, planning or control can create physical-safety risks even when the software task appears successful.",
+          "zhHans": "随着语言模型获得物理工具访问权，即使软件任务看似成功，感知、规划或控制失败也可能带来实体安全风险。"
+        },
+        "affectedGroups": [
+          "robot users",
+          "physical-safety teams",
+          "robot manufacturers"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-project-fetch-phase-two-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "project-fetch-phase-two-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "Anthropic's Phase Two experiment reports that Claude Opus 4.7 completed the selected programmatic tasks without human assistance and was about 20 times faster than the fastest human team on the completed-task comparison.",
+          "zhHans": "Anthropic 第二阶段实验称，Claude Opus 4.7 在没有人类协助的情况下完成了选定的程序化任务，在已完成任务的比较中约为最快人类团队的 20 倍速度。"
+        },
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "anthropic-project-fetch-phase-two-2026",
+          "import-ai-466-fetch-2026"
+        ]
+      },
+      {
+        "id": "project-fetch-phase-two-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "Project Fetch is evidence that improvements in general coding agents can transfer to physical-tool workflows and reduce part of the robotics programming bottleneck.",
+          "zhHans": "Project Fetch 表明，通用编码智能体的改进可以迁移到物理工具工作流，并降低部分机器人编程瓶颈。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-project-fetch-phase-two-2026",
+          "import-ai-466-fetch-2026"
+        ]
+      },
+      {
+        "id": "project-fetch-phase-two-interpretation",
+        "claimType": "interpretation",
+        "text": {
+          "en": "The result is more informative about software-mediated robot use than about general physical intelligence, because the experiment isolates a narrow set of tasks and interfaces.",
+          "zhHans": "由于实验隔离了较窄的任务和接口，这一结果更能说明软件中介的机器人使用能力，而不是通用物理智能。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-project-fetch-phase-two-2026"
+        ]
+      },
+      {
+        "id": "project-fetch-phase-two-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "Opus 4.7 still struggled to move the beach ball back to its starting position, and the experiment did not test low-level actuation-policy development or full autonomous deployment.",
+          "zhHans": "Opus 4.7 仍难以把沙滩球移回起点，实验也没有测试低层执行策略设计或完整自主部署。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "anthropic-project-fetch-phase-two-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "anthropic-project-fetch-phase-two-2026",
+        "supports": [
+          "project-fetch-phase-two-2026",
+          "project-fetch-phase-two-fact",
+          "project-fetch-phase-two-impact",
+          "project-fetch-phase-two-interpretation",
+          "project-fetch-phase-two-limitation"
+        ]
+      },
+      {
+        "sourceId": "import-ai-466-fetch-2026",
+        "supports": [
+          "project-fetch-phase-two-fact",
+          "project-fetch-phase-two-impact"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "claude-opus-5-2026",
+      "gemini-robotics-2025",
+      "figure-bmw-humanoid-2025",
+      "mirrorcode-benchmark-2026"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-07-30",
+      "updatedAt": "2026-07-30",
+      "curator": "gang",
+      "reviewer": "gang",
+      "reviewedAt": "2026-07-30",
+      "reviewProvenance": "v2.3",
+      "publishedAt": "2026-07-30",
+      "changeLog": [
+        {
+          "date": "2026-07-30",
+          "changeType": "created",
+          "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+        },
+        {
+          "date": "2026-07-30",
+          "changeType": "source_added",
+          "summary": "Added Anthropic's Phase Two report and Import AI 466; retained the selected-task and beach-ball limitations."
+        }
+      ]
+    }
   },
   {
     "id": "resnet-2015",
@@ -13139,7 +14318,8 @@
     ],
     "relatedEvents": [
       "ai-layoffs-wave-2026",
-      "vibecoding-2025"
+      "vibecoding-2025",
+      "openai-academic-researchers-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -15502,5 +16682,187 @@
       "capability",
       "society"
     ]
+  },
+  {
+    "id": "xai-minnesota-nudification-lawsuit-2026",
+    "slug": "xai-minnesota-nudification-lawsuit",
+    "title": {
+      "en": "xAI challenges Minnesota's AI nudification law in federal court",
+      "zhHans": "xAI 在联邦法院挑战明尼苏达州 AI 裸化法"
+    },
+    "searchSummary": {
+      "en": "xAI files a federal lawsuit challenging Minnesota HF 1606, a law that imposes obligations and penalties on services used to create AI-generated intimate-part images.",
+      "zhHans": "xAI 提起联邦诉讼，挑战明尼苏达州 HF 1606；该法对被用于生成 AI 裸化图像的服务设定义务和处罚。"
+    },
+    "summary": {
+      "en": "xAI filed a federal lawsuit on July 27, 2026, challenging Minnesota HF 1606 before its August 1 effective date. The official bill text prohibits covered services from enabling or performing AI nudification and provides civil remedies and penalties; xAI alleges that the law is an overbroad, content-based restriction. The filing is a legal milestone, not a court ruling.",
+      "zhHans": "xAI 于 2026 年 7 月 27 日提起联邦诉讼，在明尼苏达州 HF 1606 于 8 月 1 日生效前提出挑战。官方法案文本禁止相关服务允许或执行 AI 裸化，并规定民事救济和处罚；xAI 则主张该法构成过宽的内容限制。这是法律程序节点，不是法院裁决。"
+    },
+    "narrative": {
+      "en": "Minnesota House File 1606 prohibits an owner or operator of a website, application, software or other service from allowing users to access, download or use the service to nudify an image or video, or from performing the act on a user's behalf. The text includes a technical-skill exemption, a private civil action and a civil penalty of up to $500,000 for each unlawful access, download or use. xAI's complaint challenges the law under the First and Fourteenth Amendments and argues that liability can attach without intent, knowledge or bad faith. The case places platform design, content moderation and state regulation of synthetic intimate imagery in the same legal dispute. Its outcome and the effect on Grok Imagine remain unresolved.",
+      "zhHans": "明尼苏达州众议院第 1606 号法案禁止网站、应用、软件或其他服务的所有者或运营者允许用户访问、下载或使用服务来裸化图像或视频，也禁止服务代用户执行该行为。法案包含技术技能例外、私人民事诉讼权，以及每次违法访问、下载或使用最高 500,000 美元的民事处罚。xAI 的诉状依据第一和第十四修正案挑战该法，并主张即使没有意图、知情或恶意也可能承担责任。该案把平台设计、内容审核以及州政府对合成私密图像的监管放进同一场法律争议中。案件结果和对 Grok Imagine 的影响仍未确定。"
+    },
+    "date": "2026-07-27",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "Jul 27, 2026",
+      "zhHans": "2026年7月27日"
+    },
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 5,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "categories": [
+      "governance",
+      "safety"
+    ],
+    "impacts": [
+      {
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "The case tests whether state law can impose direct platform obligations for synthetic intimate imagery and how those obligations interact with constitutional protections.",
+          "zhHans": "该案检验州法能否为合成私密图像直接规定平台义务，以及这些义务如何与宪法保护发生关系。"
+        },
+        "affectedGroups": [
+          "AI platform providers",
+          "state lawmakers",
+          "courts",
+          "content creators",
+          "people depicted in images"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "minnesota-hf1606-official-2026",
+          "xai-minnesota-lawsuit-2026"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": -1,
+        "direction": "negative",
+        "description": {
+          "en": "The dispute exposes platforms to potentially large liability while the law's definitions, exemptions and enforcement boundaries are tested in court.",
+          "zhHans": "争议使平台面临潜在的高额责任，同时法案的定义、例外和执行边界将由法院检验。"
+        },
+        "affectedGroups": [
+          "AI platform providers",
+          "image-generation users",
+          "people depicted in images",
+          "platform safety teams"
+        ],
+        "timeframe": "immediate",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "minnesota-hf1606-official-2026",
+          "xai-minnesota-lawsuit-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "xai-minnesota-lawsuit-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "xAI filed a federal lawsuit on July 27, 2026 challenging Minnesota HF 1606, which is scheduled to take effect on August 1, 2026.",
+          "zhHans": "xAI 于 2026 年 7 月 27 日提起联邦诉讼，挑战计划于 2026 年 8 月 1 日生效的明尼苏达州 HF 1606。"
+        },
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "minnesota-hf1606-official-2026",
+          "xai-minnesota-lawsuit-2026"
+        ]
+      },
+      {
+        "id": "xai-minnesota-lawsuit-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "The filing creates a legal test for platform liability, synthetic intimate imagery regulation and the boundary between state safety rules and constitutional protections.",
+          "zhHans": "该诉讼为平台责任、合成私密图像监管，以及州安全规则与宪法保护之间的边界创造了法律检验。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "minnesota-hf1606-official-2026",
+          "xai-minnesota-lawsuit-2026"
+        ]
+      },
+      {
+        "id": "xai-minnesota-lawsuit-interpretation",
+        "claimType": "interpretation",
+        "text": {
+          "en": "Because the statute is scheduled to take effect before the dispute is resolved, the case may become an early test of whether platforms change product access or moderation for particular states under legal pressure.",
+          "zhHans": "由于法案计划在争议解决前生效，该案可能成为平台是否会在法律压力下针对特定州改变产品访问或审核方式的早期检验。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "minnesota-hf1606-official-2026",
+          "xai-minnesota-lawsuit-2026"
+        ]
+      },
+      {
+        "id": "xai-minnesota-lawsuit-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "The constitutional objections are allegations in xAI's complaint, not findings by the court; the statute also contains a technical-skill exemption that affects how its scope should be described.",
+          "zhHans": "宪法方面的异议是 xAI 诉状中的主张，而不是法院认定；法案还包含技术技能例外，这会影响对其适用范围的表述。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "minnesota-hf1606-official-2026",
+          "xai-minnesota-lawsuit-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "minnesota-hf1606-official-2026",
+        "supports": [
+          "xai-minnesota-nudification-lawsuit-2026",
+          "xai-minnesota-lawsuit-fact",
+          "xai-minnesota-lawsuit-impact",
+          "xai-minnesota-lawsuit-interpretation",
+          "xai-minnesota-lawsuit-limitation"
+        ]
+      },
+      {
+        "sourceId": "xai-minnesota-lawsuit-2026",
+        "supports": [
+          "xai-minnesota-lawsuit-fact",
+          "xai-minnesota-lawsuit-impact",
+          "xai-minnesota-lawsuit-interpretation",
+          "xai-minnesota-lawsuit-limitation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "grok-deepfake-crisis-2026",
+      "florida-sues-openai-2026",
+      "illinois-ai-safety-law-2026"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-07-30",
+      "updatedAt": "2026-07-30",
+      "curator": "gang",
+      "reviewer": "gang",
+      "reviewedAt": "2026-07-30",
+      "reviewProvenance": "v2.3",
+      "publishedAt": "2026-07-30",
+      "changeLog": [
+        {
+          "date": "2026-07-30",
+          "changeType": "created",
+          "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+        },
+        {
+          "date": "2026-07-30",
+          "changeType": "source_added",
+          "summary": "Added official HF 1606 text and independent lawsuit coverage; separated allegations from established facts."
+        }
+      ]
+    }
   }
 ]

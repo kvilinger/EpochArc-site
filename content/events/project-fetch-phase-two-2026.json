@@ -1,0 +1,195 @@
+{
+  "id": "project-fetch-phase-two-2026",
+  "slug": "project-fetch-phase-two",
+  "title": {
+    "en": "Project Fetch Phase Two shows a large speed gain on selected robot-programming tasks",
+    "zhHans": "Project Fetch 第二阶段显示 AI 在部分机器人编程任务上获得显著速度优势"
+  },
+  "searchSummary": {
+    "en": "Anthropic reports that Claude Opus 4.7 completed selected robotic-dog programming and sensing tasks much faster than human teams, while still failing the final beach-ball retrieval task.",
+    "zhHans": "Anthropic 报告称，Claude Opus 4.7 在选定的机器狗编程和传感任务上远快于人类团队，但仍未完成最终的取球任务。"
+  },
+  "summary": {
+    "en": "Anthropic's June 18, 2026 Phase Two update reports that Claude Opus 4.7, operating without human assistance, was about 20 times faster than the fastest human team across tasks completed by participants. The experiment measures a selected software-mediated subset of robot operation, not general autonomous robotics.",
+    "zhHans": "Anthropic 于 2026 年 6 月 18 日发布的第二阶段更新称，Claude Opus 4.7 在无人类协助下完成参与者已完成的任务时，比最快的人类团队快约 20 倍。该实验衡量的是由软件中介的部分机器人操作任务，不是通用自主机器人能力。"
+  },
+  "narrative": {
+    "en": "Project Fetch revisited an earlier experiment in which non-robotics experts used a quadruped robot to connect sensors, write controllers and retrieve a beach ball. In Phase Two, Anthropic ran Claude Opus 4.7 through three trials on the remaining programmatic tasks using a Claude Code-like harness. Opus 4.7 connected to video and lidar, wrote control and detection code, and completed the tasks it could perform in minutes rather than the human teams' hours. The comparison is striking but narrow: the model was not evaluated on the time needed to operate the physical controller or on low-level actuation-policy design. It also struggled with the closed-loop precision needed to move the beach ball back to its starting position. The result is therefore best read as a transfer of software-agent capability into a physical tool workflow, not as a solved robotics problem.",
+    "zhHans": "Project Fetch 回访了早期实验：没有机器人专业背景的 Anthropic 员工使用四足机器人连接传感器、编写控制器并取回沙滩球。第二阶段中，Anthropic 使用类似 Claude Code 的工具链，让 Claude Opus 4.7 对剩余的程序化任务进行三次试验。Opus 4.7 连接视频和激光雷达，编写控制与检测代码，并在几分钟内完成其能够完成的任务，而人类团队需要数小时。这个比较结果很显著，但范围较窄：实验没有衡量研究人员操作实体控制器的时间，也没有测试低层执行策略设计。模型还难以完成把沙滩球精确移回起点所需的闭环控制。因此，这一事件更适合被理解为软件智能体能力向物理工具工作流的迁移，而不是机器人问题已经解决。"
+  },
+  "date": "2026-06-18",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Jun 18, 2026",
+    "zhHans": "2026年6月18日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "categories": [
+    "capability"
+  ],
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "A general coding agent completed selected robot-sensing and control-programming tasks far faster than the human teams in the comparison.",
+        "zhHans": "通用编码智能体在选定的机器人传感和控制编程任务上，远快于比较中的人类团队。"
+      },
+      "affectedGroups": [
+        "robotics researchers",
+        "AI-agent developers",
+        "robot operators",
+        "non-expert robot users"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "anthropic-project-fetch-phase-two-2026",
+        "import-ai-466-fetch-2026"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "The result suggests that capable coding agents may lower the programming barrier for people who need to use off-the-shelf robots but are not robotics specialists.",
+        "zhHans": "结果表明，能力更强的编码智能体可能降低非机器人专业人员使用现成机器人的编程门槛。"
+      },
+      "affectedGroups": [
+        "non-expert robot users",
+        "small robotics teams",
+        "robotics educators"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-project-fetch-phase-two-2026",
+        "import-ai-466-fetch-2026"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "As language models gain access to physical tools, failures in perception, planning or control can create physical-safety risks even when the software task appears successful.",
+        "zhHans": "随着语言模型获得物理工具访问权，即使软件任务看似成功，感知、规划或控制失败也可能带来实体安全风险。"
+      },
+      "affectedGroups": [
+        "robot users",
+        "physical-safety teams",
+        "robot manufacturers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-project-fetch-phase-two-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "project-fetch-phase-two-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Anthropic's Phase Two experiment reports that Claude Opus 4.7 completed the selected programmatic tasks without human assistance and was about 20 times faster than the fastest human team on the completed-task comparison.",
+        "zhHans": "Anthropic 第二阶段实验称，Claude Opus 4.7 在没有人类协助的情况下完成了选定的程序化任务，在已完成任务的比较中约为最快人类团队的 20 倍速度。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "anthropic-project-fetch-phase-two-2026",
+        "import-ai-466-fetch-2026"
+      ]
+    },
+    {
+      "id": "project-fetch-phase-two-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Project Fetch is evidence that improvements in general coding agents can transfer to physical-tool workflows and reduce part of the robotics programming bottleneck.",
+        "zhHans": "Project Fetch 表明，通用编码智能体的改进可以迁移到物理工具工作流，并降低部分机器人编程瓶颈。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-project-fetch-phase-two-2026",
+        "import-ai-466-fetch-2026"
+      ]
+    },
+    {
+      "id": "project-fetch-phase-two-interpretation",
+      "claimType": "interpretation",
+      "text": {
+        "en": "The result is more informative about software-mediated robot use than about general physical intelligence, because the experiment isolates a narrow set of tasks and interfaces.",
+        "zhHans": "由于实验隔离了较窄的任务和接口，这一结果更能说明软件中介的机器人使用能力，而不是通用物理智能。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-project-fetch-phase-two-2026"
+      ]
+    },
+    {
+      "id": "project-fetch-phase-two-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Opus 4.7 still struggled to move the beach ball back to its starting position, and the experiment did not test low-level actuation-policy development or full autonomous deployment.",
+        "zhHans": "Opus 4.7 仍难以把沙滩球移回起点，实验也没有测试低层执行策略设计或完整自主部署。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-project-fetch-phase-two-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "anthropic-project-fetch-phase-two-2026",
+      "supports": [
+        "project-fetch-phase-two-2026",
+        "project-fetch-phase-two-fact",
+        "project-fetch-phase-two-impact",
+        "project-fetch-phase-two-interpretation",
+        "project-fetch-phase-two-limitation"
+      ]
+    },
+    {
+      "sourceId": "import-ai-466-fetch-2026",
+      "supports": [
+        "project-fetch-phase-two-fact",
+        "project-fetch-phase-two-impact"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "claude-opus-5-2026",
+    "gemini-robotics-2025",
+    "figure-bmw-humanoid-2025",
+    "mirrorcode-benchmark-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-07-30",
+    "updatedAt": "2026-07-30",
+    "curator": "gang",
+    "reviewer": "gang",
+    "reviewedAt": "2026-07-30",
+    "reviewProvenance": "v2.3",
+    "publishedAt": "2026-07-30",
+    "changeLog": [
+      {
+        "date": "2026-07-30",
+        "changeType": "created",
+        "summary": "Created from the draft-gate-2026-07-30-confirmation four-layer confirmation batch."
+      },
+      {
+        "date": "2026-07-30",
+        "changeType": "source_added",
+        "summary": "Added Anthropic's Phase Two report and Import AI 466; retained the selected-task and beach-ball limitations."
+      }
+    ]
+  }
+}

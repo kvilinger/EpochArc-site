@@ -3129,6 +3129,503 @@
       "eventId": "china-ai-companion-rules-2026",
       "reviewedAt": "2026-07-28",
       "reviewer": "gang"
+    },
+    {
+      "eventName": "Pacing the Frontier employee statement",
+      "eventDate": "2026-07-28",
+      "categories": ["governance", "safety"],
+      "source": "Pacing the Frontier statement + Fortune independent report",
+      "screenedAt": "2026-07-30",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "通过初筛并进入确认层；这是跨公司员工联署和治理协调诉求，不是现时暂停 AI 开发，也不等同于各公司正式政策。官网当前快照为 1,293 名签署者，早期报道数字是历史快照。",
+      "reviewed": true,
+      "confirmation": {
+        "completedAt": "2026-07-30",
+        "status": "completed",
+        "queries": {
+          "fact": "Pacing the Frontier statement date signatories employee count July 28 2026",
+          "impact": "Pacing the Frontier international AI pacing governance coordination impact",
+          "analysis": "Pacing the Frontier independent analysis Fortune New York Times July 2026",
+          "controversy": "Pacing the Frontier pause versus optionality personal capacity limitations"
+        },
+        "layers": {
+          "fact": {
+            "finding": "The statement page is dated July 2026, currently lists 1,293 employees, and asks the US government to support an international effort to develop tools for deliberately pacing frontier automated AI development. Fortune reports publication on July 28 and identifies senior OpenAI, Anthropic, Google and Meta signatories.",
+            "sourceUrls": [
+              "https://www.pacingthefrontier.com/",
+              "https://fortune.com/2026/07/29/anthropic-deepmind-openai-meta-washington-ai-slowdown-plan/"
+            ]
+          },
+          "impact": {
+            "finding": "The observable milestone is cross-lab coordination around optional future governance capacity, not a current reduction in model development or a binding international mechanism.",
+            "sourceUrls": [
+              "https://www.pacingthefrontier.com/",
+              "https://fortune.com/2026/07/29/anthropic-deepmind-openai-meta-washington-ai-slowdown-plan/"
+            ]
+          },
+          "analysis": {
+            "finding": "Independent coverage treats the cross-company signatory set as unusual because the labs remain commercial competitors; it also links the request to concerns about automated AI research and recent safety incidents.",
+            "sourceUrls": [
+              "https://fortune.com/2026/07/29/anthropic-deepmind-openai-meta-washington-ai-slowdown-plan/",
+              "https://www.nytimes.com/2026/07/28/technology/mark-zuckerberg-meta-ai.html"
+            ]
+          },
+          "controversy": {
+            "finding": "The page says comments are made personally and do not necessarily represent company views, and the statement leaves the form, trigger and scope of any pacing mechanism unspecified.",
+            "sourceUrls": [
+              "https://www.pacingthefrontier.com/",
+              "https://fortune.com/2026/07/29/anthropic-deepmind-openai-meta-washington-ai-slowdown-plan/"
+            ]
+          }
+        }
+      },
+      "candidateId": "pacing-the-frontier-2026",
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "eventId": "pacing-the-frontier-2026",
+      "reviewedAt": "2026-07-30",
+      "reviewer": "gang"
+    },
+    {
+      "eventName": "Claude Mythos cryptanalysis results",
+      "eventDate": "2026-07-28",
+      "categories": ["capability", "safety"],
+      "source": "Anthropic research post + Cryptography Engineering independent analysis",
+      "screenedAt": "2026-07-30",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "通过初筛并进入确认层；文案必须区分 HAWK 候选方案、降轮 AES 和完整生产密码系统，不能写成 AI 破解 AES。",
+      "reviewed": true,
+      "confirmation": {
+        "completedAt": "2026-07-30",
+        "status": "completed",
+        "queries": {
+          "fact": "Anthropic Claude Mythos cryptanalysis HAWK reduced-round AES July 2026",
+          "impact": "AI cryptanalysis HAWK post-quantum cryptography standards impact",
+          "analysis": "Anthropic cryptanalysis results independent cryptography expert analysis",
+          "controversy": "Anthropic AES attack limitation HAWK not deployed practical impact"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Anthropic reports a Mythos-assisted improved attack on the non-deployed HAWK candidate and an improved attack on a seven-round AES-128 variant; it says neither result changes current production systems.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+              "https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/"
+            ]
+          },
+          "impact": {
+            "finding": "The HAWK result could affect the candidate's viability in post-quantum standardization, while the broader signal is that frontier models can extend existing cryptanalysis workflows with substantial human validation.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+              "https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/"
+            ]
+          },
+          "analysis": {
+            "finding": "The independent cryptography analysis considers HAWK meaningful because it is a relatively advanced candidate, but characterizes the AES result as a smaller incremental improvement rather than a practical break.",
+            "sourceUrls": [
+              "https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/"
+            ]
+          },
+          "controversy": {
+            "finding": "The HAWK demonstration uses a challenge instance and the attack remains exponential; the AES result targets seven rounds and requires an impractical chosen-plaintext setting. The independent reviewer also emphasizes that apparent model-generated results still require expert validation.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+              "https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/"
+            ]
+          }
+        }
+      },
+      "candidateId": "anthropic-mythos-cryptanalysis-2026",
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "eventId": "anthropic-mythos-cryptanalysis-2026",
+      "reviewedAt": "2026-07-30",
+      "reviewer": "gang"
+    },
+    {
+      "eventName": "Project Fetch: Phase Two",
+      "eventDate": "2026-06-18",
+      "categories": ["capability"],
+      "source": "Anthropic Project Fetch Phase Two + Import AI 466",
+      "screenedAt": "2026-07-30",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "通过初筛并进入确认层；这是机器人控制能力的回补事件，必须与 Claude Plays Robotics 分开，并准确保留最终取球失败和实验子任务范围。",
+      "reviewed": true,
+      "confirmation": {
+        "completedAt": "2026-07-30",
+        "status": "completed",
+        "queries": {
+          "fact": "Anthropic Project Fetch Phase Two Opus 4.7 robot dog June 18 2026",
+          "impact": "Project Fetch Phase Two AI robotics capability transfer impact",
+          "analysis": "Project Fetch Phase Two independent Import AI analysis",
+          "controversy": "Project Fetch Phase Two beach ball failure robotics limitation"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Anthropic's Phase Two page is updated June 18, 2026 and reports Opus 4.7 operating without human assistance on the completed subset of robodog tasks; the page reports about 20 times the fastest human team's speed across tasks completed by participants.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/project-fetch-phase-two",
+              "https://importai.substack.com/p/import-ai-466-the-bitter-lesson-for"
+            ]
+          },
+          "impact": {
+            "finding": "The result is evidence that general coding-agent improvements can transfer to physical-tool workflows, reducing the programming bottleneck for non-expert robot users; it is not evidence of general autonomous robotics.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/project-fetch-phase-two",
+              "https://importai.substack.com/p/import-ai-466-the-bitter-lesson-for"
+            ]
+          },
+          "analysis": {
+            "finding": "The experiment compares elapsed time on a subset of tasks and shows a large software-mediated speed advantage, while the physical control problem remains uneven and task-dependent.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/project-fetch-phase-two",
+              "https://importai.substack.com/p/import-ai-466-the-bitter-lesson-for"
+            ]
+          },
+          "controversy": {
+            "finding": "Claude struggled to precisely move the beach ball back to its starting position, and the experiment did not test low-level actuation-policy development or a full autonomous deployment setting.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/project-fetch-phase-two"
+            ]
+          }
+        }
+      },
+      "candidateId": "project-fetch-phase-two-2026",
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "eventId": "project-fetch-phase-two-2026",
+      "reviewedAt": "2026-07-30",
+      "reviewer": "gang"
+    },
+    {
+      "eventName": "Open Secure AI Alliance launch",
+      "eventDate": "2026-07-27",
+      "categories": ["safety", "product"],
+      "source": "NVIDIA announcement + participating security-company announcement",
+      "screenedAt": "2026-07-30",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "通过初筛并进入确认层；当前可确认的是联盟成立及开放防御工具方向，尚不能写成已经形成标准、治理机构或可验证安全成果。",
+      "reviewed": true,
+      "confirmation": {
+        "completedAt": "2026-07-30",
+        "status": "completed",
+        "queries": {
+          "fact": "NVIDIA Open Secure AI Alliance launch July 27 2026 founding partners mission",
+          "impact": "Open Secure AI Alliance open cybersecurity tools AI defense stack impact",
+          "analysis": "Open Secure AI Alliance independent coverage partner announcements",
+          "controversy": "Open Secure AI Alliance open models cyber misuse safeguards limitations"
+        },
+        "layers": {
+          "fact": {
+            "finding": "NVIDIA published the alliance announcement on July 27, 2026. It names a broad set of inaugural partners and describes work on open models, harnesses, identity, isolation, scanning and secure coding workflows; NVIDIA also links its NOOA project.",
+            "sourceUrls": [
+              "https://blogs.nvidia.com/blog/open-secure-ai-alliance/",
+              "https://www.crowdstrike.com/en-us/blog/crowdstrike-joins-the-open-secure-ai-alliance/"
+            ]
+          },
+          "impact": {
+            "finding": "The immediate event is an industry coalition and open-tooling commitment prompted partly by the Hugging Face incident; its potential spillover is stronger defender access and less dependence on one closed provider, not a demonstrated security improvement yet.",
+            "sourceUrls": [
+              "https://blogs.nvidia.com/blog/open-secure-ai-alliance/",
+              "https://www.crowdstrike.com/en-us/blog/crowdstrike-joins-the-open-secure-ai-alliance/"
+            ]
+          },
+          "analysis": {
+            "finding": "The announcement frames the alliance as a shared open defense stack and a policy argument for treating open models and harnesses as defensive assets; the current evidence is primarily first-party and partner framing.",
+            "sourceUrls": [
+              "https://blogs.nvidia.com/blog/open-secure-ai-alliance/",
+              "https://www.redhat.com/en/blog/strengthening-open-source-defense-layer-red-hat-joins-nvidias-open-secure-ai-alliance"
+            ]
+          },
+          "controversy": {
+            "finding": "NVIDIA acknowledges that open models can be misused and argues for safeguards, evaluation and rapid remediation. The announcement does not provide independent measurements, a public charter or a delivery timetable.",
+            "sourceUrls": [
+              "https://blogs.nvidia.com/blog/open-secure-ai-alliance/"
+            ]
+          }
+        }
+      },
+      "candidateId": "open-secure-ai-alliance-2026",
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "eventId": "open-secure-ai-alliance-2026",
+      "reviewedAt": "2026-07-30",
+      "reviewer": "gang"
+    },
+    {
+      "eventName": "GCC AI contribution policy",
+      "eventDate": "2026-07-29",
+      "categories": ["product"],
+      "source": "GCC official AI policy + LWN independent report",
+      "screenedAt": "2026-07-30",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "通过初筛并进入确认层；事件核心是开源项目对 LLM 生成代码贡献的治理边界，不是政府监管，也不是对所有 AI 辅助开发的全面禁止。",
+      "reviewed": true,
+      "confirmation": {
+        "completedAt": "2026-07-30",
+        "status": "completed",
+        "queries": {
+          "fact": "GCC AI policy legally significant LLM generated contributions July 29 2026",
+          "impact": "GCC AI contribution policy open source maintenance copyright impact",
+          "analysis": "GCC steering committee AI policy independent LWN analysis",
+          "controversy": "GCC AI policy exceptions research test cases legally insignificant contributions"
+        },
+        "layers": {
+          "fact": {
+            "finding": "GCC's official policy page was published July 29, 2026. It declines legally significant contributions containing or derived from LLM-generated content, permits some legally insignificant contributions and test cases, and requires human submission and sign-off.",
+            "sourceUrls": [
+              "https://gcc.gnu.org/ai-policy.html",
+              "https://lwn.net/Articles/1086041/"
+            ]
+          },
+          "impact": {
+            "finding": "The policy creates a concrete project-level rule for provenance, responsibility and maintainership around AI-assisted open-source contributions, while leaving research, analysis, bug reporting and debugging outside the prohibition when their output is not submitted verbatim.",
+            "sourceUrls": [
+              "https://gcc.gnu.org/ai-policy.html",
+              "https://lwn.net/Articles/1086041/"
+            ]
+          },
+          "analysis": {
+            "finding": "LWN reports the policy as accepted by the GCC steering committee and notes that the project expects it to evolve and be reviewed at the start of 2027; the exact threshold is tied to GNU's legally significant contribution guidance.",
+            "sourceUrls": [
+              "https://lwn.net/Articles/1086041/",
+              "https://gcc.gnu.org/ai-policy.html"
+            ]
+          },
+          "controversy": {
+            "finding": "The policy has explicit exceptions and leaves interpretation questions around derived content, detection and enforcement; it does not prohibit all AI use by contributors.",
+            "sourceUrls": [
+              "https://gcc.gnu.org/ai-policy.html",
+              "https://lwn.net/Articles/1086041/"
+            ]
+          }
+        }
+      },
+      "candidateId": "gcc-ai-policy-2026",
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "eventId": "gcc-ai-policy-2026",
+      "reviewedAt": "2026-07-30",
+      "reviewer": "gang"
+    },
+    {
+      "eventName": "ChatGPT for Academic Researchers",
+      "eventDate": "2026-07-29",
+      "categories": ["product"],
+      "source": "OpenAI official announcement + secondary release listing",
+      "screenedAt": "2026-07-30",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "通过初筛并进入确认层；OpenAI 一手页面确认项目内容，但页面未显示可核对的发布日期，7 月 29 日日期来自本轮发现层报道，需在事件草稿中保留日期来源说明。",
+      "reviewed": true,
+      "confirmation": {
+        "completedAt": "2026-07-30",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI ChatGPT for Academic Researchers 100000 10000 July 29 2026 official",
+          "impact": "ChatGPT for Academic Researchers free frontier AI access scientific research impact",
+          "analysis": "OpenAI academic researchers program independent coverage 2026",
+          "controversy": "ChatGPT for Academic Researchers selected institutions privacy access limitations"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI's official page says the program will provide selected academic researchers free access, starting with 10,000 researchers and expanding toward 100,000 through 2027, with access to frontier models, Codex, tools and institution-verified workspaces.",
+            "sourceUrls": [
+              "https://openai.com/index/chatgpt-for-academic-researchers/",
+              "https://releasebot.io/updates/openai"
+            ]
+          },
+          "impact": {
+            "finding": "The program lowers access barriers for selected research institutions and embeds frontier models in scientific workflows, while its reach remains gated by institutional eligibility, application and OpenAI's platform.",
+            "sourceUrls": [
+              "https://openai.com/index/chatgpt-for-academic-researchers/"
+            ]
+          },
+          "analysis": {
+            "finding": "The official announcement frames the program as part of a more than $250 million commitment through 2027 and describes tools spanning literature review, coding, genomic analysis, protein modeling and research communication; independent enrollment or usage outcomes are not yet available.",
+            "sourceUrls": [
+              "https://openai.com/index/chatgpt-for-academic-researchers/",
+              "https://releasebot.io/updates/openai"
+            ]
+          },
+          "controversy": {
+            "finding": "The scale and scientific-productivity claims are prospective and primarily company-reported; access is limited to selected institutions and the official page does not establish independent evidence that the planned 100,000-user expansion has occurred.",
+            "sourceUrls": [
+              "https://openai.com/index/chatgpt-for-academic-researchers/",
+              "https://releasebot.io/updates/openai"
+            ]
+          }
+        }
+      },
+      "candidateId": "openai-academic-researchers-2026",
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "eventId": "openai-academic-researchers-2026",
+      "reviewedAt": "2026-07-30",
+      "reviewer": "gang"
+    },
+    {
+      "eventName": "xAI lawsuit over Minnesota HF 1606 nudification law",
+      "eventDate": "2026-07-27",
+      "categories": ["governance", "safety"],
+      "source": "Minnesota HF 1606 official text + independent lawsuit report",
+      "screenedAt": "2026-07-30",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "通过初筛并进入确认层；这是诉讼提交这一法律里程碑，不是法院裁决。与 Grok 深度伪造危机事件有关联但不是重复事件。",
+      "reviewed": true,
+      "confirmation": {
+        "completedAt": "2026-07-30",
+        "status": "completed",
+        "queries": {
+          "fact": "xAI Minnesota HF 1606 lawsuit July 27 2026 official complaint nudification",
+          "impact": "Minnesota HF 1606 AI platform liability deepfake law impact",
+          "analysis": "xAI lawsuit Minnesota anti nudification law First Amendment analysis",
+          "controversy": "HF 1606 strict liability exemptions technical skill court challenge limitations"
+        },
+        "layers": {
+          "fact": {
+            "finding": "An independent report says xAI filed the federal lawsuit on July 27, 2026. The official Minnesota bill text prohibits covered services from enabling or performing nudification, provides civil remedies and a civil penalty up to $500,000 for each unlawful access, download or use, and sets an August 1 effective date.",
+            "sourceUrls": [
+              "https://www.revisor.mn.gov/bills/94/2025/0/HF/1606/versions/2/",
+              "https://www.am1100theflag.com/news/elon-musks-xai-sues-minnesota-attorney-general-over-ai-deepfake-law/"
+            ]
+          },
+          "impact": {
+            "finding": "The filing tests how far a state can impose platform obligations for user-generated synthetic intimate imagery and whether those obligations conflict with constitutional protections; the practical effect on Grok remains a question for the court and implementation date.",
+            "sourceUrls": [
+              "https://www.revisor.mn.gov/bills/94/2025/0/HF/1606/versions/2/",
+              "https://www.am1100theflag.com/news/elon-musks-xai-sues-minnesota-attorney-general-over-ai-deepfake-law/"
+            ]
+          },
+          "analysis": {
+            "finding": "The reported complaint characterizes HF 1606 as overbroad and content-based, while the bill text includes an exemption where the service requires a user's technical skill; the scope and enforceability of those provisions remain unresolved.",
+            "sourceUrls": [
+              "https://www.am1100theflag.com/news/elon-musks-xai-sues-minnesota-attorney-general-over-ai-deepfake-law/",
+              "https://www.revisor.mn.gov/bills/94/2025/0/HF/1606/versions/2/"
+            ]
+          },
+          "controversy": {
+            "finding": "The lawsuit's constitutional allegations are xAI's claims, not established facts. The statute's definitions, strict-liability framing and technical-skill exemption can materially affect how the case is understood.",
+            "sourceUrls": [
+              "https://www.am1100theflag.com/news/elon-musks-xai-sues-minnesota-attorney-general-over-ai-deepfake-law/",
+              "https://www.revisor.mn.gov/bills/94/2025/0/HF/1606/versions/2/"
+            ]
+          }
+        }
+      },
+      "candidateId": "xai-minnesota-nudification-lawsuit-2026",
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "eventId": "xai-minnesota-nudification-lawsuit-2026",
+      "reviewedAt": "2026-07-30",
+      "reviewer": "gang"
+    },
+    {
+      "eventName": "Reported FTC AI output-steering policy statement",
+      "eventDate": "2026-07-29",
+      "categories": ["governance", "safety"],
+      "source": "TechTimes secondary report; FTC site search did not expose the alleged primary statement",
+      "screenedAt": "2026-07-30",
+      "scores": {
+        "verifiability": 1,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 6,
+      "decision": "pool",
+      "notes": "确认尝试完成但未达到 draft 门槛：目前只有二手报道，FTC 官方搜索页没有返回对应政策声明或可核对的 docket 文档。不得写成 FTC 已发布政策。",
+      "reviewed": false,
+      "confirmation": {
+        "completedAt": "2026-07-30",
+        "status": "completed",
+        "queries": {
+          "fact": "FTC undisclosed AI output steering policy statement July 2026 docket FTC-2026-0859",
+          "impact": "FTC AI output steering consumer deception enforcement impact",
+          "analysis": "FTC output steering policy independent analysis comment deadline",
+          "controversy": "FTC AI output steering policy nonbinding primary document limitation"
+        },
+        "layers": {
+          "fact": {
+            "finding": "TechTimes reports an FTC policy statement about undisclosed AI output steering and cites a comment deadline, but the FTC search page inspected during confirmation did not surface the alleged statement or a matching primary document.",
+            "sourceUrls": [
+              "https://www.techtimes.com/articles/322064/20260729/ftc-undisclosed-ai-output-steering-consumer-deception-comment-deadline-friday.htm",
+              "https://www.ftc.gov/search?search_api_fulltext=AI%20output%20steering"
+            ]
+          },
+          "impact": {
+            "finding": "If the reported statement is authentic, it could affect how undisclosed steering is evaluated under consumer-deception principles; that conditional impact is not sufficient for a draft event.",
+            "sourceUrls": [
+              "https://www.techtimes.com/articles/322064/20260729/ftc-undisclosed-ai-output-steering-consumer-deception-comment-deadline-friday.htm"
+            ]
+          },
+          "analysis": {
+            "finding": "The available report itself says the statement is non-binding and would operate through future enforcement rather than an immediate private right; without the primary text, scope and legal basis cannot be independently checked.",
+            "sourceUrls": [
+              "https://www.techtimes.com/articles/322064/20260729/ftc-undisclosed-ai-output-steering-consumer-deception-comment-deadline-friday.htm",
+              "https://www.ftc.gov/search?search_api_fulltext=AI%20output%20steering"
+            ]
+          },
+          "controversy": {
+            "finding": "The central unresolved issue is source authenticity and scope: the secondary report may be describing a docket or proposal that is not indexed under the searched phrase, so no formal event should be created until the FTC or Regulations.gov record is found.",
+            "sourceUrls": [
+              "https://www.techtimes.com/articles/322064/20260729/ftc-undisclosed-ai-output-steering-consumer-deception-comment-deadline-friday.htm",
+              "https://www.ftc.gov/search?search_api_fulltext=AI%20output%20steering"
+            ]
+          }
+        }
+      },
+      "candidateId": "ftc-ai-output-steering-2026",
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "eventId": null
     }
   ],
   "_runSchema": {
@@ -3506,6 +4003,135 @@
           "resultSummary": "Completed six-category retrospective discovery. FARS was retained because its primary arXiv paper was directly located; no other result met the initial threshold.",
           "failureReason": null,
           "retryResult": null
+        }
+      ]
+    },
+    {
+      "runId": "draft-gate-2026-07-30-confirmation",
+      "runDate": "2026-07-30",
+      "windowStart": "2026-07-28",
+      "windowEnd": "2026-07-30",
+      "scope": "Targeted v2.3 draft gate and four-layer confirmation for the July 28 overlap and July 29-30 sweep. No event JSON or publication performed.",
+      "channels": [
+        {
+          "id": "hugging-face-daily-papers",
+          "status": "completed",
+          "queries": ["GET https://huggingface.co/api/daily_papers?limit=20"],
+          "resultSummary": "20 papers returned; no additional candidate passed the targeted draft gate.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "hacker-news",
+          "status": "completed_after_retry",
+          "queries": ["GET topstories.json; fetch first 30 item records; retry AI-keyword filter"],
+          "resultSummary": "Retry returned 11 AI-related stories; cryptanalysis, GCC policy and existing Hugging Face coverage were useful confirmation signals.",
+          "failureReason": "Initial HN output was empty and required a retry.",
+          "retryResult": "Retry succeeded; raw output saved at /tmp/epocharc-sweep-20260729-30-hn-retry.txt.",
+          "extra": "The initial failed output is not counted as complete coverage without the successful retry."
+        },
+        {
+          "id": "gmail-import-ai",
+          "status": "completed",
+          "queries": ["python3 scripts/check_mail.py import-ai --max-chars 8000"],
+          "resultSummary": "Import AI 466 was inspected; Project Fetch details and robotics limitations were used in confirmation.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "gmail-the-batch",
+          "status": "completed",
+          "queries": ["python3 scripts/check_mail.py the-batch --max-chars 8000"],
+          "resultSummary": "The Batch was inspected for supporting context; no independent confirmation changed the draft gate.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "reddit-opencli",
+          "status": "completed",
+          "queries": ["opencli reddit search 'Anthropic cryptanalysis Fetch AI robotics' -f yaml"],
+          "resultSummary": "OpenCLI returned older community discussions and no current-window event-level source strong enough to change the decisions.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "brave-x-proxy",
+          "status": "completed",
+          "queries": ["site:x.com AI news breakthrough development July 2026"],
+          "resultSummary": "Proxy results supplied discovery context but no additional independent source that changed the draft gate.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "twitter-opencli",
+          "status": "unavailable",
+          "queries": ["opencli twitter search 'Pacing the Frontier AI' -f yaml"],
+          "resultSummary": "OpenCLI could not query X because the browser session has no ct0 cookie.",
+          "failureReason": "AUTH_REQUIRED: not logged into x.com.",
+          "retryResult": "No retry; Chrome login is required."
+        },
+        {
+          "id": "exa-search",
+          "status": "unavailable",
+          "queries": ["mcporter call exa.web_search_exa for targeted candidate confirmation"],
+          "resultSummary": "No Exa results were used because the free MCP endpoint returned HTTP 429.",
+          "failureReason": "You've hit Exa's free MCP rate limit.",
+          "retryResult": "No retry mechanism available; direct first-party pages and saved discovery results were used instead."
+        },
+        {
+          "id": "brave-category-and-confirmation",
+          "status": "completed",
+          "queries": [
+            "AI capability breakthrough benchmark research July 29 2026",
+            "AI product launch tool deployment robotics July 29 2026",
+            "AI company investment acquisition restructuring July 29 2026",
+            "AI regulation law enforcement lawsuit July 29 2026",
+            "AI safety incident cybersecurity ethics July 29 2026",
+            "AI society labor culture public impact July 29 2026"
+          ],
+          "resultSummary": "All six category queries and targeted candidate searches were completed in the sweep; raw output is retained under /tmp/epocharc-sweep-20260729-30-*.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "jina-reader",
+          "status": "completed",
+          "queries": ["Read official and independent candidate pages through https://r.jina.ai/<url>"],
+          "resultSummary": "Official and independent pages for seven draft candidates plus the FTC follow-up were fetched and reviewed; confirmation notes preserve the source URLs.",
+          "failureReason": null,
+          "retryResult": null
+        }
+      ],
+      "categoryCoverage": [
+        {
+          "category": "capability",
+          "queries": ["AI capability breakthrough benchmark research July 29 2026"],
+          "status": "completed"
+        },
+        {
+          "category": "product",
+          "queries": ["AI product launch tool deployment robotics July 29 2026"],
+          "status": "completed"
+        },
+        {
+          "category": "commerce",
+          "queries": ["AI company investment acquisition restructuring July 29 2026"],
+          "status": "completed"
+        },
+        {
+          "category": "governance",
+          "queries": ["AI regulation law enforcement lawsuit July 29 2026"],
+          "status": "completed"
+        },
+        {
+          "category": "safety",
+          "queries": ["AI safety incident cybersecurity ethics July 29 2026"],
+          "status": "completed"
+        },
+        {
+          "category": "society",
+          "queries": ["AI society labor culture public impact July 29 2026"],
+          "status": "completed"
         }
       ]
     }
