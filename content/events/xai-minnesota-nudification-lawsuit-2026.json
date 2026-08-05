@@ -10,12 +10,12 @@
     "zhHans": "xAI 提起联邦诉讼，挑战明尼苏达州 HF 1606；该法对被用于生成 AI 裸化图像的服务设定义务和处罚。"
   },
   "summary": {
-    "en": "xAI filed a federal lawsuit on July 27, 2026, challenging Minnesota HF 1606 before its August 1 effective date. The official bill text prohibits covered services from enabling or performing AI nudification and provides civil remedies and penalties; xAI alleges that the law is an overbroad, content-based restriction. The filing is a legal milestone, not a court ruling.",
-    "zhHans": "xAI 于 2026 年 7 月 27 日提起联邦诉讼，在明尼苏达州 HF 1606 于 8 月 1 日生效前提出挑战。官方法案文本禁止相关服务允许或执行 AI 裸化，并规定民事救济和处罚；xAI 则主张该法构成过宽的内容限制。这是法律程序节点，不是法院裁决。"
+    "en": "xAI filed a federal lawsuit on July 27, 2026, challenging Minnesota HF 1606 before its August 1 effective date. The official bill text prohibits covered services from enabling or performing AI nudification and provides civil remedies and penalties; xAI alleges that the law is an overbroad, content-based restriction. The filing is a legal milestone, not a court ruling. On July 31, the court declined emergency interim relief and set a later preliminary-injunction hearing without deciding the merits.",
+    "zhHans": "xAI 于 2026 年 7 月 27 日提起联邦诉讼，在明尼苏达州 HF 1606 于 8 月 1 日生效前提出挑战。官方法案文本禁止相关服务允许或执行 AI 裸化，并规定民事救济和处罚；xAI 则主张该法构成过宽的内容限制。这是法律程序节点，不是法院裁决。7 月 31 日，法院拒绝了紧急临时救济，并在未裁决实体问题的情况下安排后续预先禁令听证。"
   },
   "narrative": {
-    "en": "Minnesota House File 1606 prohibits an owner or operator of a website, application, software or other service from allowing users to access, download or use the service to nudify an image or video, or from performing the act on a user's behalf. The text includes a technical-skill exemption, a private civil action and a civil penalty of up to $500,000 for each unlawful access, download or use. xAI's complaint challenges the law under the First and Fourteenth Amendments and argues that liability can attach without intent, knowledge or bad faith. The case places platform design, content moderation and state regulation of synthetic intimate imagery in the same legal dispute. Its outcome and the effect on Grok Imagine remain unresolved.",
-    "zhHans": "明尼苏达州众议院第 1606 号法案禁止网站、应用、软件或其他服务的所有者或运营者允许用户访问、下载或使用服务来裸化图像或视频，也禁止服务代用户执行该行为。法案包含技术技能例外、私人民事诉讼权，以及每次违法访问、下载或使用最高 500,000 美元的民事处罚。xAI 的诉状依据第一和第十四修正案挑战该法，并主张即使没有意图、知情或恶意也可能承担责任。该案把平台设计、内容审核以及州政府对合成私密图像的监管放进同一场法律争议中。案件结果和对 Grok Imagine 的影响仍未确定。"
+    "en": "Minnesota House File 1606 prohibits an owner or operator of a website, application, software or other service from allowing users to access, download or use the service to nudify an image or video, or from performing the act on a user's behalf. The text includes a technical-skill exemption, a private civil action and a civil penalty of up to $500,000 for each unlawful access, download or use. xAI's complaint challenges the law under the First and Fourteenth Amendments and argues that liability can attach without intent, knowledge or bad faith. The case places platform design, content moderation and state regulation of synthetic intimate imagery in the same legal dispute. Its outcome and the effect on Grok Imagine remain unresolved. On July 31, the court denied the request for a temporary restraining order before the law took effect, citing the timing of the motion, and set an August 19 preliminary-injunction hearing. That order left the merits unresolved.",
+    "zhHans": "明尼苏达州众议院第 1606 号法案禁止网站、应用、软件或其他服务的所有者或运营者允许用户访问、下载或使用服务来裸化图像或视频，也禁止服务代用户执行该行为。法案包含技术技能例外、私人民事诉讼权，以及每次违法访问、下载或使用最高 500,000 美元的民事处罚。xAI 的诉状依据第一和第十四修正案挑战该法，并主张即使没有意图、知情或恶意也可能承担责任。该案把平台设计、内容审核以及州政府对合成私密图像的监管放进同一场法律争议中。案件结果和对 Grok Imagine 的影响仍未确定。7 月 31 日，法院以动议提出时机为由驳回了法律生效前的临时禁令请求，并将预先禁令听证定在 8 月 19 日；实体问题仍未解决。"
   },
   "date": "2026-07-27",
   "datePrecision": "day",
@@ -129,6 +129,19 @@
         "minnesota-hf1606-official-2026",
         "xai-minnesota-lawsuit-2026"
       ]
+    },
+    {
+      "id": "xai-minnesota-tro-denial-2026",
+      "claimType": "fact",
+      "text": {
+        "en": "On July 31, 2026, the federal court denied xAI’s request for a temporary restraining order before the law took effect and set an August 19 hearing on the preliminary-injunction motion; the order did not decide the merits of the challenge.",
+        "zhHans": "2026 年 7 月 31 日，联邦法院驳回了 xAI 在法律生效前申请临时禁令的请求，并将预先禁令动议的听证排定在 8 月 19 日；该命令没有裁决挑战的实体问题。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "xai-minnesota-tro-order-2026",
+        "nbc-xai-minnesota-tro-2026"
+      ]
     }
   ],
   "sources": [
@@ -150,6 +163,19 @@
         "xai-minnesota-lawsuit-interpretation",
         "xai-minnesota-lawsuit-limitation"
       ]
+    },
+    {
+      "sourceId": "xai-minnesota-tro-order-2026",
+      "supports": [
+        "xai-minnesota-nudification-lawsuit-2026",
+        "xai-minnesota-tro-denial-2026"
+      ]
+    },
+    {
+      "sourceId": "nbc-xai-minnesota-tro-2026",
+      "supports": [
+        "xai-minnesota-tro-denial-2026"
+      ]
     }
   ],
   "relatedEvents": [
@@ -160,10 +186,10 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-07-30",
-    "updatedAt": "2026-07-30",
+    "updatedAt": "2026-08-05",
     "curator": "gang",
     "reviewer": "gang",
-    "reviewedAt": "2026-07-30",
+    "reviewedAt": "2026-08-05",
     "reviewProvenance": "v2.3",
     "publishedAt": "2026-07-30",
     "changeLog": [
@@ -176,7 +202,13 @@
         "date": "2026-07-30",
         "changeType": "source_added",
         "summary": "Added official HF 1606 text and independent lawsuit coverage; separated allegations from established facts."
+      },
+      {
+        "date": "2026-08-05",
+        "changeType": "source_added",
+        "summary": "Added the July 31 court order denying emergency interim relief and setting the preliminary-injunction hearing."
       }
-    ]
+    ],
+    "lastSourceCheckAt": "2026-08-05"
   }
 }

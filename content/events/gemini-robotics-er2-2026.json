@@ -1,0 +1,174 @@
+{
+  "id": "gemini-robotics-er2-2026",
+  "slug": "gemini-robotics-er2",
+  "title": {
+    "en": "Google launches Gemini Robotics ER 2 in public preview",
+    "zhHans": "Google 以公开预览形式发布 Gemini Robotics ER 2"
+  },
+  "searchSummary": {
+    "en": "Google made Gemini Robotics ER 2, a high-level embodied-reasoning model for robots, available in public preview through its API and AI Studio.",
+    "zhHans": "Google 通过 API 和 AI Studio 公开预览 Gemini Robotics ER 2，这是一款面向机器人的高层具身推理模型。"
+  },
+  "summary": {
+    "en": "Google released Gemini Robotics ER 2 in public preview through the Gemini API and AI Studio. The model processes multimodal inputs for high-level physical reasoning, task planning and tool orchestration, while lower-level systems remain responsible for motor execution.",
+    "zhHans": "Google 通过 Gemini API 和 AI Studio 以公开预览形式发布 Gemini Robotics ER 2。该模型处理多模态输入，用于高层物理推理、任务规划和工具编排；底层系统仍负责运动执行。"
+  },
+  "narrative": {
+    "en": "ER 2 extends Google’s Gemini Robotics line with video progress understanding, multi-step tool use and multi-robot orchestration. The public-preview release is a meaningful access change for robotics developers, but it is not a general robot-control system or evidence of scaled deployment. Google’s own model card limits the model’s intended use and warns against safety-critical applications. The relevant signal is a more accessible reasoning layer on top of existing embodiment and control stacks, not the replacement of those stacks.",
+    "zhHans": "ER 2 为 Google 的 Gemini Robotics 产品线增加了视频进度理解、多步骤工具使用和多机器人编排能力。公开预览的发布对机器人开发者而言是有意义的访问变化，但它不是通用机器人控制系统，也不能证明已经实现规模化部署。Google 自己的模型卡限制了其预期用途，并警告不要用于安全关键应用。更准确的信号是：现有具身和控制栈之上出现了更易获得的推理层，而不是这些底层栈被替代。"
+  },
+  "date": "2026-07-30",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Jul 30, 2026",
+    "zhHans": "2026年7月30日"
+  },
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 4,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "categories": [
+    "product",
+    "capability"
+  ],
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "The release exposes a high-level model that combines spatial, temporal and physical reasoning with video understanding and tool orchestration for robotics workflows.",
+        "zhHans": "该发布提供了一个将空间、时间和物理推理与视频理解、工具编排结合起来的高层模型，可用于机器人工作流。"
+      },
+      "affectedGroups": [
+        "robotics developers",
+        "robotics researchers",
+        "automation integrators"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "google-gemini-robotics-er2-launch-2026",
+        "google-gemini-robotics-er2-model-card-2026",
+        "ars-gemini-robotics-er2-2026"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "API and AI Studio access lower the barrier to testing a high-level robotics reasoning layer for teams that already operate compatible hardware or software interfaces.",
+        "zhHans": "对于已经运营兼容硬件或软件接口的团队，API 和 AI Studio 的访问降低了试用高层机器人推理层的门槛。"
+      },
+      "affectedGroups": [
+        "robotics developers",
+        "automation integrators"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "google-gemini-robotics-er2-launch-2026",
+        "google-gemini-robotics-er2-model-card-2026",
+        "ars-gemini-robotics-er2-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gemini-robotics-er2-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Google released Gemini Robotics ER 2 in public preview through the Gemini API and Google AI Studio as a high-level embodied-reasoning model that delegates motor execution to lower-level controllers or tools.",
+        "zhHans": "Google 通过 Gemini API 和 Google AI Studio 以公开预览形式发布 Gemini Robotics ER 2；它是一种高层具身推理模型，将运动执行委托给更低层的控制器或工具。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "google-gemini-robotics-er2-launch-2026",
+        "google-gemini-robotics-er2-model-card-2026",
+        "ars-gemini-robotics-er2-2026"
+      ]
+    },
+    {
+      "id": "gemini-robotics-er2-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Public API availability makes a high-level robotics planning, video-understanding and tool-orchestration layer available to developers with existing robot hardware or integrations.",
+        "zhHans": "公开 API 的可用性让已有机器人硬件或集成能力的开发者可以使用高层机器人规划、视频理解和工具编排能力。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "google-gemini-robotics-er2-launch-2026",
+        "google-gemini-robotics-er2-model-card-2026",
+        "ars-gemini-robotics-er2-2026"
+      ]
+    },
+    {
+      "id": "gemini-robotics-er2-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "ER 2 remains a preview and the model card instructs users not to use the Robotics Models for safety-critical applications or without discretion in production, commercial or public environments.",
+        "zhHans": "ER 2 仍处于预览阶段，模型卡要求用户不要将机器人模型用于安全关键场景，也不要在生产、商业或公共环境中不加审慎地使用。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "google-gemini-robotics-er2-model-card-2026",
+        "ars-gemini-robotics-er2-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "google-gemini-robotics-er2-launch-2026",
+      "supports": [
+        "gemini-robotics-er2-2026",
+        "gemini-robotics-er2-fact",
+        "gemini-robotics-er2-impact"
+      ]
+    },
+    {
+      "sourceId": "google-gemini-robotics-er2-model-card-2026",
+      "supports": [
+        "gemini-robotics-er2-2026",
+        "gemini-robotics-er2-fact",
+        "gemini-robotics-er2-impact",
+        "gemini-robotics-er2-limitation"
+      ]
+    },
+    {
+      "sourceId": "ars-gemini-robotics-er2-2026",
+      "supports": [
+        "gemini-robotics-er2-fact",
+        "gemini-robotics-er2-impact",
+        "gemini-robotics-er2-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "gemini-robotics-2025",
+    "project-fetch-phase-two-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-08-05",
+    "updatedAt": "2026-08-05",
+    "reviewedAt": "2026-08-05",
+    "reviewer": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-08-05",
+    "curator": "gang",
+    "curatorNote": {
+      "en": "Editorial review completed and publication approved.",
+      "zhHans": "编辑审核完成，已批准发布。"
+    },
+    "changeLog": [
+      {
+        "date": "2026-08-05",
+        "changeType": "created",
+        "summary": "Created as an unpublished draft from arc-update-sweep-2026-08-05 confirmation."
+      }
+    ],
+    "publishedAt": "2026-08-05"
+  }
+}

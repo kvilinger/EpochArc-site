@@ -10,12 +10,12 @@
     "zhHans": "Anthropic 报告称，Claude Mythos 协助改进了针对尚未部署的后量子签名候选 HAWK 的密钥恢复攻击，以及针对七轮 AES-128 的攻击。"
   },
   "summary": {
-    "en": "Anthropic published cryptanalysis results on July 28, 2026, describing an improved attack against HAWK and an improved attack against a reduced-round AES variant. The HAWK result is relevant to a candidate considered in post-quantum standardization; the AES result targets seven of ten rounds and does not break full AES.",
-    "zhHans": "Anthropic 于 2026 年 7 月 28 日发布密码分析结果，介绍了对 HAWK 的改进攻击，以及对降轮 AES 变体的改进攻击。HAWK 结果涉及正在后量子标准化过程中考虑的候选方案；AES 结果只针对十轮中的七轮，并未破解完整 AES。"
+    "en": "Anthropic published cryptanalysis results on July 28, 2026, describing an improved attack against HAWK and an improved attack against a reduced-round AES variant. The HAWK result is relevant to a candidate considered in post-quantum standardization; the AES result targets seven of ten rounds and does not break full AES. After the disclosure, HAWK’s submission team withdrew the candidate from NIST’s additional digital-signatures process.",
+    "zhHans": "Anthropic 于 2026 年 7 月 28 日发布密码分析结果，介绍了对 HAWK 的改进攻击，以及对降轮 AES 变体的改进攻击。HAWK 结果涉及正在后量子标准化过程中考虑的候选方案；AES 结果只针对十轮中的七轮，并未破解完整 AES。披露后，HAWK 提交团队将该候选方案退出 NIST 的补充数字签名流程。"
   },
   "narrative": {
-    "en": "Using Claude Mythos Preview in an agentic research harness, Anthropic describes two main results. The first improves a key-recovery attack on HAWK, a proposed post-quantum signature scheme that had survived earlier expert review but was not deployed or standardized. Anthropic says the attack roughly halves the effective security level for the affected parameter set, while remaining exponential. The second result improves a meet-in-the-middle attack on seven-round AES-128 by 200–800 times under a chosen-plaintext research model. Independent cryptography analysis considers the HAWK result meaningful for the candidate's standardization prospects, but describes the AES result as incremental and impractical against production AES. The most durable signal is the model's ability to synthesize and extend existing cryptanalysis, together with the continuing need for human verification.",
-    "zhHans": "Anthropic 使用 Claude Mythos Preview 和智能体研究工具链介绍了两个主要结果。第一项改进了针对 HAWK 的密钥恢复攻击。HAWK 是一个后量子签名方案，曾通过此前的专家评审，但尚未部署或标准化。Anthropic 称，该攻击使受影响参数集的有效安全强度大致减半，但仍然是指数时间攻击。第二项在选择明文研究模型下，将针对七轮 AES-128 的中间相遇攻击速度提高了 200–800 倍。独立密码学分析认为 HAWK 结果会影响该候选方案的标准化前景，但将 AES 结果描述为对生产 AES 不实用的增量改进。更持久的信号是，模型能够综合并扩展既有密码分析方法，同时人类验证仍然不可或缺。"
+    "en": "Using Claude Mythos Preview in an agentic research harness, Anthropic describes two main results. The first improves a key-recovery attack on HAWK, a proposed post-quantum signature scheme that had survived earlier expert review but was not deployed or standardized. Anthropic says the attack roughly halves the effective security level for the affected parameter set, while remaining exponential. The second result improves a meet-in-the-middle attack on seven-round AES-128 by 200–800 times under a chosen-plaintext research model. Independent cryptography analysis considers the HAWK result meaningful for the candidate's standardization prospects, but describes the AES result as incremental and impractical against production AES. The most durable signal is the model's ability to synthesize and extend existing cryptanalysis, together with the continuing need for human verification. After publication, the HAWK team confirmed that straightforward mitigation would make the candidate uncompetitive and withdrew it from NIST’s additional-signatures process; this did not change the event’s production-cryptography limitation.",
+    "zhHans": "Anthropic 使用 Claude Mythos Preview 和智能体研究工具链介绍了两个主要结果。第一项改进了针对 HAWK 的密钥恢复攻击。HAWK 是一个后量子签名方案，曾通过此前的专家评审，但尚未部署或标准化。Anthropic 称，该攻击使受影响参数集的有效安全强度大致减半，但仍然是指数时间攻击。第二项在选择明文研究模型下，将针对七轮 AES-128 的中间相遇攻击速度提高了 200–800 倍。独立密码学分析认为 HAWK 结果会影响该候选方案的标准化前景，但将 AES 结果描述为对生产 AES 不实用的增量改进。更持久的信号是，模型能够综合并扩展既有密码分析方法，同时人类验证仍然不可或缺。发布后，HAWK 团队确认直接缓解会使候选方案失去竞争力，并将其退出 NIST 的补充签名流程；这并未改变该事件不影响生产密码系统的限制。"
   },
   "date": "2026-07-28",
   "datePrecision": "day",
@@ -150,6 +150,20 @@
         "anthropic-cryptanalysis-2026",
         "cryptography-engineering-anthropic-2026"
       ]
+    },
+    {
+      "id": "anthropic-mythos-hawk-withdrawal",
+      "claimType": "fact",
+      "text": {
+        "en": "After Anthropic’s disclosure, the HAWK submission team withdrew HAWK from NIST’s additional digital-signatures standardization process; NIST updated its Round 3 candidate page accordingly.",
+        "zhHans": "在 Anthropic 披露结果后，HAWK 提交团队已将 HAWK 退出 NIST 的补充数字签名标准化流程；NIST 也相应更新了第三轮候选页面。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "nist-hawk-withdrawal-2026",
+        "nist-pqc-forum-hawk-withdrawal-2026",
+        "ars-mythos-hawk-withdrawal-2026"
+      ]
     }
   ],
   "sources": [
@@ -181,6 +195,25 @@
         "anthropic-mythos-cryptanalysis-interpretation",
         "anthropic-mythos-cryptanalysis-limitation"
       ]
+    },
+    {
+      "sourceId": "nist-hawk-withdrawal-2026",
+      "supports": [
+        "anthropic-mythos-cryptanalysis-2026",
+        "anthropic-mythos-hawk-withdrawal"
+      ]
+    },
+    {
+      "sourceId": "nist-pqc-forum-hawk-withdrawal-2026",
+      "supports": [
+        "anthropic-mythos-hawk-withdrawal"
+      ]
+    },
+    {
+      "sourceId": "ars-mythos-hawk-withdrawal-2026",
+      "supports": [
+        "anthropic-mythos-hawk-withdrawal"
+      ]
     }
   ],
   "relatedEvents": [
@@ -190,10 +223,10 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-07-30",
-    "updatedAt": "2026-07-30",
+    "updatedAt": "2026-08-05",
     "curator": "gang",
     "reviewer": "gang",
-    "reviewedAt": "2026-07-30",
+    "reviewedAt": "2026-08-05",
     "reviewProvenance": "v2.3",
     "publishedAt": "2026-07-30",
     "changeLog": [
@@ -206,7 +239,13 @@
         "date": "2026-07-30",
         "changeType": "source_added",
         "summary": "Added Anthropic technical papers and independent cryptography analysis with explicit production-impact limitations."
+      },
+      {
+        "date": "2026-08-05",
+        "changeType": "source_added",
+        "summary": "Added NIST and HAWK-team confirmation that HAWK was withdrawn from the additional-signatures process."
       }
-    ]
+    ],
+    "lastSourceCheckAt": "2026-08-05"
   }
 }

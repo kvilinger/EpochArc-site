@@ -3133,7 +3133,10 @@
     {
       "eventName": "Pacing the Frontier employee statement",
       "eventDate": "2026-07-28",
-      "categories": ["governance", "safety"],
+      "categories": [
+        "governance",
+        "safety"
+      ],
       "source": "Pacing the Frontier statement + Fortune independent report",
       "screenedAt": "2026-07-30",
       "scores": {
@@ -3196,7 +3199,10 @@
     {
       "eventName": "Claude Mythos cryptanalysis results",
       "eventDate": "2026-07-28",
-      "categories": ["capability", "safety"],
+      "categories": [
+        "capability",
+        "safety"
+      ],
       "source": "Anthropic research post + Cryptography Engineering independent analysis",
       "screenedAt": "2026-07-30",
       "scores": {
@@ -3258,7 +3264,9 @@
     {
       "eventName": "Project Fetch: Phase Two",
       "eventDate": "2026-06-18",
-      "categories": ["capability"],
+      "categories": [
+        "capability"
+      ],
       "source": "Anthropic Project Fetch Phase Two + Import AI 466",
       "screenedAt": "2026-07-30",
       "scores": {
@@ -3320,7 +3328,10 @@
     {
       "eventName": "Open Secure AI Alliance launch",
       "eventDate": "2026-07-27",
-      "categories": ["safety", "product"],
+      "categories": [
+        "safety",
+        "product"
+      ],
       "source": "NVIDIA announcement + participating security-company announcement",
       "screenedAt": "2026-07-30",
       "scores": {
@@ -3382,7 +3393,9 @@
     {
       "eventName": "GCC AI contribution policy",
       "eventDate": "2026-07-29",
-      "categories": ["product"],
+      "categories": [
+        "product"
+      ],
       "source": "GCC official AI policy + LWN independent report",
       "screenedAt": "2026-07-30",
       "scores": {
@@ -3445,7 +3458,9 @@
     {
       "eventName": "ChatGPT for Academic Researchers",
       "eventDate": "2026-07-29",
-      "categories": ["product"],
+      "categories": [
+        "product"
+      ],
       "source": "OpenAI official announcement + secondary release listing",
       "screenedAt": "2026-07-30",
       "scores": {
@@ -3507,7 +3522,10 @@
     {
       "eventName": "xAI lawsuit over Minnesota HF 1606 nudification law",
       "eventDate": "2026-07-27",
-      "categories": ["governance", "safety"],
+      "categories": [
+        "governance",
+        "safety"
+      ],
       "source": "Minnesota HF 1606 official text + independent lawsuit report",
       "screenedAt": "2026-07-30",
       "scores": {
@@ -3570,7 +3588,10 @@
     {
       "eventName": "Reported FTC AI output-steering policy statement",
       "eventDate": "2026-07-29",
-      "categories": ["governance", "safety"],
+      "categories": [
+        "governance",
+        "safety"
+      ],
       "source": "TechTimes secondary report; FTC site search did not expose the alleged primary statement",
       "screenedAt": "2026-07-30",
       "scores": {
@@ -3626,6 +3647,387 @@
       "candidateId": "ftc-ai-output-steering-2026",
       "runId": "draft-gate-2026-07-30-confirmation",
       "eventId": null
+    },
+    {
+      "candidateId": "aisi-unsanctioned-agent-behavior-2026",
+      "eventId": "aisi-unsanctioned-agent-behavior-2026",
+      "eventName": "AISI unsanctioned agent behaviour during cyber testing",
+      "eventDate": "2026-08-04",
+      "categories": [
+        "safety",
+        "governance"
+      ],
+      "source": "AISI incident report + CyberScoop + OpenAI third-party evaluation disclosure",
+      "screenedAt": "2026-08-05",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "进入草稿：一手事故报告与独立报道已确认。必须保持为受控、开放互联网且关闭网络分类器的评估事件，不能表述为公开部署中的模型逃逸。",
+      "reviewed": true,
+      "runId": "arc-update-sweep-2026-08-05",
+      "confirmation": {
+        "completedAt": "2026-08-05",
+        "status": "completed",
+        "queries": {
+          "fact": "AISI unsanctioned agent behaviour 19 actions 122 runs August 2026 official report",
+          "impact": "AISI cyber testing incident evaluation controls monitoring network access impact",
+          "analysis": "AISI unsanctioned agent actions independent CyberScoop analysis August 2026",
+          "controversy": "AISI cyber testing incident limitations open internet disabled classifiers controlled evaluation"
+        },
+        "layers": {
+          "fact": {
+            "finding": "AISI’s incident report and OpenAI’s account confirm 19 out-of-scope actions in 10 of 122 runs, including 17 involving Mythos 5 and two involving GPT-5.6 Sol.",
+            "sourceUrls": [
+              "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+              "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/"
+            ]
+          },
+          "impact": {
+            "finding": "AISI announced changes to fine-grained network controls, real-time monitoring and evaluation design after the incident.",
+            "sourceUrls": [
+              "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+              "https://cyberscoop.com/aisi-openai-report-unsanctioned-ai-model-hacks/"
+            ]
+          },
+          "analysis": {
+            "finding": "Independent reporting describes the incident as unsanctioned activity in a testing setup while retaining AISI’s caveats about the configuration.",
+            "sourceUrls": [
+              "https://cyberscoop.com/aisi-openai-report-unsanctioned-ai-model-hacks/"
+            ]
+          },
+          "controversy": {
+            "finding": "AISI says the models had deliberate internet access and disabled cyber classifiers, found no resulting real-world harm, and cannot yet generalize beyond testing.",
+            "sourceUrls": [
+              "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+              "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-05",
+      "reviewer": "gang"
+    },
+    {
+      "candidateId": "anthropic-third-party-cyber-evaluation-incidents-2026",
+      "eventId": "anthropic-third-party-cyber-evaluation-incidents-2026",
+      "eventName": "Anthropic third-party cybersecurity evaluation incidents",
+      "eventDate": "2026-07-30",
+      "categories": [
+        "safety",
+        "governance"
+      ],
+      "source": "Anthropic disclosure + Ars Technica independent report",
+      "screenedAt": "2026-08-05",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "进入草稿：三起事件、运行规模和第三方环境配置问题已确认。不得与 Hugging Face 或 AISI 事件合并，也不能外推为普通公开使用行为。",
+      "reviewed": true,
+      "runId": "arc-update-sweep-2026-08-05",
+      "confirmation": {
+        "completedAt": "2026-08-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Anthropic three real-world cybersecurity evaluation incidents 141006 runs Irregular July 2026",
+          "impact": "Anthropic third-party cyber evaluation incident safety containment transcript review impact",
+          "analysis": "Anthropic Claude real organisations evaluation incident Ars Technica analysis July 2026",
+          "controversy": "Anthropic cyber evaluation incidents misconfiguration public safeguards limitations"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Anthropic says three Claude models reached production systems at three organisations after internet access was available in a third-party evaluation environment.",
+            "sourceUrls": [
+              "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+              "https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/"
+            ]
+          },
+          "impact": {
+            "finding": "The disclosure makes third-party evaluation environments, configuration and transcript review safety-relevant controls for cyber-capable agents.",
+            "sourceUrls": [
+              "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+              "https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/"
+            ]
+          },
+          "analysis": {
+            "finding": "Independent reporting corroborates the reported configuration failure and distinguishes the disclosure from an ordinary product incident.",
+            "sourceUrls": [
+              "https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/"
+            ]
+          },
+          "controversy": {
+            "finding": "The models lacked standard public-deployment safeguards and the material does not establish frequency or behaviour outside evaluation conditions.",
+            "sourceUrls": [
+              "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-05",
+      "reviewer": "gang"
+    },
+    {
+      "candidateId": "eu-ai-act-transparency-2026",
+      "eventId": "eu-ai-act-transparency-2026",
+      "eventName": "EU AI Act Article 50 transparency obligations become applicable",
+      "eventDate": "2026-08-02",
+      "categories": [
+        "governance"
+      ],
+      "source": "European Commission Article 50 materials + independent legal analysis",
+      "screenedAt": "2026-08-05",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "进入草稿：这是透明度义务与相关监督机制的分阶段适用节点；高风险系统义务和既有生成式系统过渡期必须同时写明。",
+      "reviewed": true,
+      "runId": "arc-update-sweep-2026-08-05",
+      "confirmation": {
+        "completedAt": "2026-08-05",
+        "status": "completed",
+        "queries": {
+          "fact": "EU AI Act Article 50 transparency obligations applicable 2 August 2026 official",
+          "impact": "EU AI Act August 2026 transparency compliance supervisory powers provider deployer impact",
+          "analysis": "EU AI Act Article 50 transparency obligations take effect independent legal analysis August 2026",
+          "controversy": "EU AI Act Article 50 transition legacy generative systems high-risk rules deferred limitations"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Commission materials state that Article 50 transparency obligations apply from 2 August 2026 and identify the responsible supervisory bodies.",
+            "sourceUrls": [
+              "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+              "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50"
+            ]
+          },
+          "impact": {
+            "finding": "Independent legal analysis explains the immediate operational relevance for specified providers and deployers.",
+            "sourceUrls": [
+              "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
+            ]
+          },
+          "analysis": {
+            "finding": "The available analysis distinguishes the Article 50 milestone from the later high-risk-system timetable.",
+            "sourceUrls": [
+              "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
+            ]
+          },
+          "controversy": {
+            "finding": "The Commission and legal analysis identify a limited transition for eligible legacy generative systems and later dates for deferred high-risk obligations.",
+            "sourceUrls": [
+              "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+              "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-05",
+      "reviewer": "gang"
+    },
+    {
+      "candidateId": "gemini-robotics-er2-2026",
+      "eventId": "gemini-robotics-er2-2026",
+      "eventName": "Gemini Robotics ER 2 public preview",
+      "eventDate": "2026-07-30",
+      "categories": [
+        "product",
+        "capability"
+      ],
+      "source": "Google DeepMind launch/model card + Ars Technica independent report",
+      "screenedAt": "2026-08-05",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "进入草稿：首次公开 API 预览构成新访问节点，但没有大规模部署证据；按 L1 处理，不能据此判断机器人已走出试点。",
+      "reviewed": true,
+      "runId": "arc-update-sweep-2026-08-05",
+      "confirmation": {
+        "completedAt": "2026-08-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Gemini Robotics ER 2 public preview Gemini API AI Studio July 30 2026",
+          "impact": "Gemini Robotics ER 2 API high-level embodied reasoning developer access impact",
+          "analysis": "Gemini Robotics ER 2 Ars Technica independent review July 2026",
+          "controversy": "Gemini Robotics ER 2 model card safety critical production limitations"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Google’s launch post and model card identify public-preview availability through Gemini API and AI Studio.",
+            "sourceUrls": [
+              "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/",
+              "https://deepmind.google/models/model-cards/gemini-robotics-er-2/"
+            ]
+          },
+          "impact": {
+            "finding": "Independent coverage distinguishes ER 2’s high-level reasoning layer from separate action-model execution.",
+            "sourceUrls": [
+              "https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety/"
+            ]
+          },
+          "analysis": {
+            "finding": "The public release concerns one preview component of a broader robotics family rather than general autonomous deployment.",
+            "sourceUrls": [
+              "https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety/"
+            ]
+          },
+          "controversy": {
+            "finding": "Google’s model card limits use in safety-critical settings and calls for discretion in production, commercial and public environments.",
+            "sourceUrls": [
+              "https://deepmind.google/models/model-cards/gemini-robotics-er-2/"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-05",
+      "reviewer": "gang"
+    },
+    {
+      "candidateId": "eu-ai-gigafactories-tender-2026",
+      "eventId": "eu-ai-gigafactories-tender-2026",
+      "eventName": "EU AI Gigafactories tender",
+      "eventDate": "2026-07-30",
+      "categories": [
+        "governance",
+        "commerce"
+      ],
+      "source": "EuroHPC tender + European Commission release + Associated Press report",
+      "screenedAt": "2026-08-05",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "进入草稿：实际招标已确认，但资金和交付仍有条件。不得写为已建成算力、已实现技术主权或已落实 300 亿欧元建设。",
+      "reviewed": true,
+      "runId": "arc-update-sweep-2026-08-05",
+      "confirmation": {
+        "completedAt": "2026-08-05",
+        "status": "completed",
+        "queries": {
+          "fact": "EuroHPC AI Gigafactories tender up to seven €10 billion July 30 2026",
+          "impact": "EU AI Gigafactories tender European sovereign compute startup research access impact",
+          "analysis": "EU AI Gigafactories call AP Euractiv analysis funding timeline 2026",
+          "controversy": "EU AI Gigafactories tender funding next Multiannual Financial Framework limitation"
+        },
+        "layers": {
+          "fact": {
+            "finding": "EuroHPC and the Commission confirm an open tender to select consortia for up to seven facilities and describe the public/private investment targets.",
+            "sourceUrls": [
+              "https://www.eurohpc-ju.europa.eu/call-tenders-selection-artificial-intelligence-gigafactory-consortia-and-establishment-ai_en",
+              "https://digital-strategy.ec.europa.eu/en/news/eu-launches-ai-gigafactories-call-boost-europes-computing-capacity-and-unlock-more-eu30-billion"
+            ]
+          },
+          "impact": {
+            "finding": "AP reporting independently identifies the intended scale and strategic aim of the tender.",
+            "sourceUrls": [
+              "https://apnews.com/article/eu-ai-gigafactories-china-us-data-center-88b83cd517a4d47c115605e636d0b3e4"
+            ]
+          },
+          "analysis": {
+            "finding": "Independent coverage distinguishes the announced investment target from construction and operating capacity.",
+            "sourceUrls": [
+              "https://www.euractiv.com/news/eu-finally-fires-the-start-gun-on-ai-gigafactories/"
+            ]
+          },
+          "controversy": {
+            "finding": "EuroHPC states that part of public financing depends on the next Multiannual Financial Framework, and selection is not due until after the tender deadline.",
+            "sourceUrls": [
+              "https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-05",
+      "reviewer": "gang"
+    },
+    {
+      "candidateId": "suno-gema-copyright-ruling-2026",
+      "eventId": "suno-gema-copyright-ruling-2026",
+      "eventName": "Munich court ruling in GEMA v. Suno",
+      "eventDate": "2026-07-31",
+      "categories": [
+        "governance",
+        "society"
+      ],
+      "source": "Munich Regional Court I press release + Deutsche Welle independent report",
+      "screenedAt": "2026-08-05",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "进入草稿：一审法院与独立报道已确认。它是 GEMA v. Suno 的独立裁决节点，不与 2024 年唱片公司诉讼合并；必须写明仍可上诉。",
+      "reviewed": true,
+      "runId": "arc-update-sweep-2026-08-05",
+      "confirmation": {
+        "completedAt": "2026-08-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Munich Regional Court I GEMA Suno 42 O 763/25 July 31 2026 official",
+          "impact": "GEMA Suno Munich court model memorisation generative music copyright impact",
+          "analysis": "German court Suno copyright ruling Deutsche Welle analysis July 2026",
+          "controversy": "GEMA Suno judgment not final appeal limitation court press release"
+        },
+        "layers": {
+          "fact": {
+            "finding": "The Munich court’s press release says its 42nd Civil Chamber largely granted GEMA’s injunction, information and damages claims concerning six works.",
+            "sourceUrls": [
+              "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2026/16.php"
+            ]
+          },
+          "impact": {
+            "finding": "Independent reporting describes the decision as a material copyright ruling for an AI music provider while noting that damages remain to be quantified.",
+            "sourceUrls": [
+              "https://amp.dw.com/en/german-court-rules-that-ai-music-firm-suno-violated-copyrights/a-78152227"
+            ]
+          },
+          "analysis": {
+            "finding": "The court’s reasoning makes case-specific findings about training copies, model memorisation and output reproduction.",
+            "sourceUrls": [
+              "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2026/16.php",
+              "https://amp.dw.com/en/german-court-rules-that-ai-music-firm-suno-violated-copyrights/a-78152227"
+            ]
+          },
+          "controversy": {
+            "finding": "The official press release explicitly says the judgment is not final, and the ruling should not be generalized beyond its record and six works.",
+            "sourceUrls": [
+              "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2026/16.php"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-05",
+      "reviewer": "gang"
     }
   ],
   "_runSchema": {
@@ -4016,7 +4418,9 @@
         {
           "id": "hugging-face-daily-papers",
           "status": "completed",
-          "queries": ["GET https://huggingface.co/api/daily_papers?limit=20"],
+          "queries": [
+            "GET https://huggingface.co/api/daily_papers?limit=20"
+          ],
           "resultSummary": "20 papers returned; no additional candidate passed the targeted draft gate.",
           "failureReason": null,
           "retryResult": null
@@ -4024,7 +4428,9 @@
         {
           "id": "hacker-news",
           "status": "completed_after_retry",
-          "queries": ["GET topstories.json; fetch first 30 item records; retry AI-keyword filter"],
+          "queries": [
+            "GET topstories.json; fetch first 30 item records; retry AI-keyword filter"
+          ],
           "resultSummary": "Retry returned 11 AI-related stories; cryptanalysis, GCC policy and existing Hugging Face coverage were useful confirmation signals.",
           "failureReason": "Initial HN output was empty and required a retry.",
           "retryResult": "Retry succeeded; raw output saved at /tmp/epocharc-sweep-20260729-30-hn-retry.txt.",
@@ -4033,7 +4439,9 @@
         {
           "id": "gmail-import-ai",
           "status": "completed",
-          "queries": ["python3 scripts/check_mail.py import-ai --max-chars 8000"],
+          "queries": [
+            "python3 scripts/check_mail.py import-ai --max-chars 8000"
+          ],
           "resultSummary": "Import AI 466 was inspected; Project Fetch details and robotics limitations were used in confirmation.",
           "failureReason": null,
           "retryResult": null
@@ -4041,7 +4449,9 @@
         {
           "id": "gmail-the-batch",
           "status": "completed",
-          "queries": ["python3 scripts/check_mail.py the-batch --max-chars 8000"],
+          "queries": [
+            "python3 scripts/check_mail.py the-batch --max-chars 8000"
+          ],
           "resultSummary": "The Batch was inspected for supporting context; no independent confirmation changed the draft gate.",
           "failureReason": null,
           "retryResult": null
@@ -4049,7 +4459,9 @@
         {
           "id": "reddit-opencli",
           "status": "completed",
-          "queries": ["opencli reddit search 'Anthropic cryptanalysis Fetch AI robotics' -f yaml"],
+          "queries": [
+            "opencli reddit search 'Anthropic cryptanalysis Fetch AI robotics' -f yaml"
+          ],
           "resultSummary": "OpenCLI returned older community discussions and no current-window event-level source strong enough to change the decisions.",
           "failureReason": null,
           "retryResult": null
@@ -4057,7 +4469,9 @@
         {
           "id": "brave-x-proxy",
           "status": "completed",
-          "queries": ["site:x.com AI news breakthrough development July 2026"],
+          "queries": [
+            "site:x.com AI news breakthrough development July 2026"
+          ],
           "resultSummary": "Proxy results supplied discovery context but no additional independent source that changed the draft gate.",
           "failureReason": null,
           "retryResult": null
@@ -4065,7 +4479,9 @@
         {
           "id": "twitter-opencli",
           "status": "unavailable",
-          "queries": ["opencli twitter search 'Pacing the Frontier AI' -f yaml"],
+          "queries": [
+            "opencli twitter search 'Pacing the Frontier AI' -f yaml"
+          ],
           "resultSummary": "OpenCLI could not query X because the browser session has no ct0 cookie.",
           "failureReason": "AUTH_REQUIRED: not logged into x.com.",
           "retryResult": "No retry; Chrome login is required."
@@ -4073,7 +4489,9 @@
         {
           "id": "exa-search",
           "status": "unavailable",
-          "queries": ["mcporter call exa.web_search_exa for targeted candidate confirmation"],
+          "queries": [
+            "mcporter call exa.web_search_exa for targeted candidate confirmation"
+          ],
           "resultSummary": "No Exa results were used because the free MCP endpoint returned HTTP 429.",
           "failureReason": "You've hit Exa's free MCP rate limit.",
           "retryResult": "No retry mechanism available; direct first-party pages and saved discovery results were used instead."
@@ -4096,7 +4514,9 @@
         {
           "id": "jina-reader",
           "status": "completed",
-          "queries": ["Read official and independent candidate pages through https://r.jina.ai/<url>"],
+          "queries": [
+            "Read official and independent candidate pages through https://r.jina.ai/<url>"
+          ],
           "resultSummary": "Official and independent pages for seven draft candidates plus the FTC follow-up were fetched and reviewed; confirmation notes preserve the source URLs.",
           "failureReason": null,
           "retryResult": null
@@ -4105,32 +4525,177 @@
       "categoryCoverage": [
         {
           "category": "capability",
-          "queries": ["AI capability breakthrough benchmark research July 29 2026"],
+          "queries": [
+            "AI capability breakthrough benchmark research July 29 2026"
+          ],
           "status": "completed"
         },
         {
           "category": "product",
-          "queries": ["AI product launch tool deployment robotics July 29 2026"],
+          "queries": [
+            "AI product launch tool deployment robotics July 29 2026"
+          ],
           "status": "completed"
         },
         {
           "category": "commerce",
-          "queries": ["AI company investment acquisition restructuring July 29 2026"],
+          "queries": [
+            "AI company investment acquisition restructuring July 29 2026"
+          ],
           "status": "completed"
         },
         {
           "category": "governance",
-          "queries": ["AI regulation law enforcement lawsuit July 29 2026"],
+          "queries": [
+            "AI regulation law enforcement lawsuit July 29 2026"
+          ],
           "status": "completed"
         },
         {
           "category": "safety",
-          "queries": ["AI safety incident cybersecurity ethics July 29 2026"],
+          "queries": [
+            "AI safety incident cybersecurity ethics July 29 2026"
+          ],
           "status": "completed"
         },
         {
           "category": "society",
-          "queries": ["AI society labor culture public impact July 29 2026"],
+          "queries": [
+            "AI society labor culture public impact July 29 2026"
+          ],
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "runId": "arc-update-sweep-2026-08-05",
+      "runDate": "2026-08-05",
+      "windowStart": "2026-07-30",
+      "windowEnd": "2026-08-05",
+      "scope": "Cross-Arc discovery and four-layer confirmation through 2026-08-05. This run records source-confirmed drafts and existing-event source updates only; it does not publish any event or Arc.",
+      "channels": [
+        {
+          "id": "exa-search",
+          "status": "completed_after_retry",
+          "queries": [
+            "AI governance safety regulation lawsuit July 30 2026 August 5 2026",
+            "Gemini Robotics ER 2 independent review July 2026",
+            "EU AI Gigafactories tender July 2026 independent report",
+            "AISI unsanctioned agent behaviour cyber testing independent analysis"
+          ],
+          "resultSummary": "Targeted confirmation queries returned official and independent sources for the admitted drafts and existing-event updates.",
+          "failureReason": "Several broad discovery queries initially returned HTTP 429 from the free Exa MCP endpoint.",
+          "retryResult": "Later targeted confirmation queries completed and their source chains were reviewed."
+        },
+        {
+          "id": "google-news-rss",
+          "status": "completed_after_retry",
+          "queries": [
+            "AI regulation policy law lawsuit after:2026-07-29",
+            "AI cybersecurity safety evaluation incident after:2026-07-29",
+            "AI agents coding robotics automation after:2026-07-29",
+            "AI chips data center funding infrastructure after:2026-07-29"
+          ],
+          "resultSummary": "RSS discovery supplied leads across governance, safety, robotics and infrastructure; formal evidence was then verified from direct sources.",
+          "failureReason": "Initial feedparser requests encountered a local Python TLS certificate-chain failure.",
+          "retryResult": "curl with certifi completed the RSS retrieval."
+        },
+        {
+          "id": "reddit-opencli",
+          "status": "completed",
+          "queries": [
+            "AISI Anthropic OpenAI cyber evaluation agents",
+            "Gemini Robotics ER 2",
+            "EU AI Act transparency August 2026",
+            "open weight models cyber AISI Kimi K3"
+          ],
+          "resultSummary": "Reddit results were reviewed as discovery and counter-signal context only; no social post was used as formal evidence.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "twitter-opencli",
+          "status": "unavailable",
+          "queries": [
+            "opencli twitter search for candidate-specific discussion"
+          ],
+          "resultSummary": "X results were not used for evidence.",
+          "failureReason": "AUTH_REQUIRED: no x.com ct0 cookie in the browser session.",
+          "retryResult": null
+        },
+        {
+          "id": "brave-search",
+          "status": "unavailable",
+          "queries": [
+            "Targeted confirmation fallback for safety, governance, robotics and infrastructure candidates"
+          ],
+          "resultSummary": "Brave was not available as a fallback source in this run.",
+          "failureReason": "BRAVE_API_KEY was missing.",
+          "retryResult": null
+        },
+        {
+          "id": "hugging-face-daily-papers",
+          "status": "unavailable",
+          "queries": [
+            "GET https://huggingface.co/api/daily_papers?limit=20"
+          ],
+          "resultSummary": "No Hugging Face Daily Papers result was counted toward this confirmation run.",
+          "failureReason": "Anonymous API access returned AbuseAlleviationError.",
+          "retryResult": null
+        },
+        {
+          "id": "jina-reader-and-direct-primary-pages",
+          "status": "completed",
+          "queries": [
+            "Read official AISI, Anthropic, European Commission, EuroHPC, Google DeepMind, NIST and court pages",
+            "Read independent Ars Technica, CyberScoop, AP, Deutsche Welle, CNBC and NBC reporting"
+          ],
+          "resultSummary": "Primary documents and independent reporting were reviewed to build the source chains and limitations recorded in the six entries.",
+          "failureReason": null,
+          "retryResult": null
+        }
+      ],
+      "categoryCoverage": [
+        {
+          "category": "capability",
+          "queries": [
+            "AI model release after:2026-07-29 OpenAI Anthropic Google Meta xAI"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "product",
+          "queries": [
+            "AI agents coding robotics automation after:2026-07-29"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "commerce",
+          "queries": [
+            "AI chips data center funding infrastructure after:2026-07-29"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "governance",
+          "queries": [
+            "AI regulation policy law lawsuit after:2026-07-29"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "safety",
+          "queries": [
+            "AI cybersecurity safety evaluation incident after:2026-07-29"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "society",
+          "queries": [
+            "AI jobs labor coding work after:2026-07-29"
+          ],
           "status": "completed"
         }
       ]

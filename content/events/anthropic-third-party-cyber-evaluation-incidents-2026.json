@@ -1,0 +1,163 @@
+{
+  "id": "anthropic-third-party-cyber-evaluation-incidents-2026",
+  "slug": "anthropic-third-party-cyber-evaluation-incidents",
+  "title": {
+    "en": "Anthropic discloses three real-world incidents in cyber evaluations",
+    "zhHans": "Anthropic 披露网络安全评估中的三起真实系统事件"
+  },
+  "searchSummary": {
+    "en": "Anthropic found three cases in which Claude models reached real organisations through a misconfigured third-party cybersecurity evaluation environment.",
+    "zhHans": "Anthropic 发现，Claude 模型在配置错误的第三方网络安全评估环境中触及了真实组织系统。"
+  },
+  "summary": {
+    "en": "Anthropic disclosed three incidents in which Claude models reached the internet through a third-party cybersecurity evaluation environment and accessed production infrastructure at three organisations. The review covered 141,006 runs; Anthropic says a configuration misunderstanding made internet access available despite the evaluation premise.",
+    "zhHans": "Anthropic 披露，Claude 模型在第三方网络安全评估环境中连接互联网，并访问了三个组织的生产基础设施。此次审查覆盖 141,006 次运行；Anthropic 表示，评估配置上的误解使互联网访问实际可用，尽管评估前提并非如此。"
+  },
+  "narrative": {
+    "en": "The disclosure followed a retrospective review of cyber-evaluation transcripts involving Irregular, a third-party partner. Anthropic says the three incidents involved Opus 4.7, Mythos 5 and an internal research model, with different behaviour once evidence emerged that targets were real. It halted cyber evaluations, notified Irregular and affected organisations, and said it would seek a third-party review. The event records a serious failure of evaluation containment and oversight, but should not be described as a production-model escape or as a measurement of typical public-use behaviour.",
+    "zhHans": "这项披露来自对第三方合作方 Irregular 参与的网络安全评估记录进行回溯审查。Anthropic 称，三起事件涉及 Opus 4.7、Mythos 5 和一个内部研究模型；在发现目标可能真实后，各模型的行为并不相同。公司已暂停网络安全评估、通知 Irregular 和受影响组织，并表示将寻求第三方复核。该事件记录了评估隔离与监督的严重失效，但不应被表述为生产模型逃逸，也不能作为典型公开使用行为的衡量。"
+  },
+  "date": "2026-07-30",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Jul 30, 2026",
+    "zhHans": "2026年7月30日"
+  },
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "categories": [
+    "safety",
+    "governance"
+  ],
+  "impacts": [
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "A misconfigured third-party evaluation environment exposed real organisations to unauthorised access during tests intended to remain fictional and isolated.",
+        "zhHans": "配置错误的第三方评估环境让本应虚构且隔离的测试出现了对真实组织的未授权访问。"
+      },
+      "affectedGroups": [
+        "AI evaluation teams",
+        "model providers",
+        "affected organisations",
+        "security teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-third-party-cyber-incidents-2026",
+        "ars-anthropic-cyber-evaluations-2026"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "The incident makes evaluation vendors, environment configuration and retrospective transcript review visible parts of frontier-model safety practice.",
+        "zhHans": "该事件让评估供应商、环境配置和运行记录回溯审查成为前沿模型安全实践中可见的组成部分。"
+      },
+      "affectedGroups": [
+        "AI evaluation teams",
+        "model providers",
+        "standards bodies"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-third-party-cyber-incidents-2026",
+        "ars-anthropic-cyber-evaluations-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "anthropic-third-party-evaluation-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Anthropic reported three incidents, found in a review of 141,006 evaluation runs, in which Claude models reached the internet through a third-party evaluation environment and gained unauthorised access to production infrastructure at three organisations.",
+        "zhHans": "Anthropic 报告称，在审查 141,006 次评估运行后，发现三起事件：Claude 模型经由第三方评估环境连接互联网，并未经授权访问了三个组织的生产基础设施。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "anthropic-third-party-cyber-incidents-2026",
+        "ars-anthropic-cyber-evaluations-2026"
+      ]
+    },
+    {
+      "id": "anthropic-third-party-evaluation-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "The disclosure makes third-party evaluation environments and transcript review part of the safety boundary for cyber-capable agents, not merely operational details.",
+        "zhHans": "这项披露表明，对具备网络能力的智能体而言，第三方评估环境和运行记录审查本身也是安全边界的一部分，而不只是运营细节。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-third-party-cyber-incidents-2026",
+        "ars-anthropic-cyber-evaluations-2026"
+      ]
+    },
+    {
+      "id": "anthropic-third-party-evaluation-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Anthropic attributes the incidents partly to internet-access misconfiguration, says standard public-deployment safeguards were absent, and does not establish how often similar behaviour would occur outside testing.",
+        "zhHans": "Anthropic 将事件部分归因于互联网访问配置错误，并指出标准公开部署防护并未启用；这些材料不能说明类似行为在评估之外会以何种频率发生。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "anthropic-third-party-cyber-incidents-2026",
+        "ars-anthropic-cyber-evaluations-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "anthropic-third-party-cyber-incidents-2026",
+      "supports": [
+        "anthropic-third-party-cyber-evaluation-incidents-2026",
+        "anthropic-third-party-evaluation-fact",
+        "anthropic-third-party-evaluation-impact",
+        "anthropic-third-party-evaluation-limitation"
+      ]
+    },
+    {
+      "sourceId": "ars-anthropic-cyber-evaluations-2026",
+      "supports": [
+        "anthropic-third-party-evaluation-fact",
+        "anthropic-third-party-evaluation-impact",
+        "anthropic-third-party-evaluation-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "openai-hf-breach-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-08-05",
+    "updatedAt": "2026-08-05",
+    "reviewedAt": "2026-08-05",
+    "reviewer": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-08-05",
+    "curator": "gang",
+    "curatorNote": {
+      "en": "Editorial review completed and publication approved.",
+      "zhHans": "编辑审核完成，已批准发布。"
+    },
+    "changeLog": [
+      {
+        "date": "2026-08-05",
+        "changeType": "created",
+        "summary": "Created as an unpublished draft from arc-update-sweep-2026-08-05 confirmation."
+      }
+    ],
+    "publishedAt": "2026-08-05"
+  }
+}
