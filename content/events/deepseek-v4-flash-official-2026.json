@@ -1,0 +1,130 @@
+{
+  "id": "deepseek-v4-flash-official-2026",
+  "slug": "deepseek-v4-flash-official-2026",
+  "title": {
+    "en": "DeepSeek Promotes V4-Flash to Official Public Beta API with Updated Post-Training",
+    "zhHans": "DeepSeek 将 V4-Flash 升格为官方 API 公测版并更新后训练权重"
+  },
+  "searchSummary": {
+    "en": "DeepSeek moved DeepSeek-V4-Flash-0731 from preview to an official public beta API, retaining its 284B MoE architecture with updated post-training.",
+    "zhHans": "DeepSeek 将 DeepSeek-V4-Flash-0731 从预览版移至官方 API 公测版，保持 2840 亿参数 MoE 架构并更新后训练权重。"
+  },
+  "summary": {
+    "en": "On July 31, 2026, DeepSeek promoted DeepSeek-V4-Flash-0731 from preview to an official public beta API, retaining its 284B parameter MoE architecture while improving post-trained agent capabilities and cost efficiency.",
+    "zhHans": "2026 年 7 月 31 日，DeepSeek 将 DeepSeek-V4-Flash-0731 从预览版升格为官方 API 公测版，保持其 2840 亿参数的 MoE 架构不变，同时提升了后训练智能体能力与性价比。"
+  },
+  "narrative": {
+    "en": "DeepSeek released an updated official API public beta checkpoint named DeepSeek-V4-Flash-0731. The model retains its 284 billion total parameter Mixture-of-Experts architecture (13 billion active parameters per token) while integrating a fresh round of fine-tuning that improves tool-use, terminal coding, and long-horizon reasoning. Available via DeepSeek's official API at $0.14 per million input tokens, the release also added native support for OpenAI's Responses API format and local Codex execution.",
+    "zhHans": "DeepSeek 发布了名为 DeepSeek-V4-Flash-0731 的更新版官方 API 公测检查点。该模型保持其 2840 亿总参数（每 token 激活 130 亿参数）的混合专家（MoE）架构不变，同时融入了新一轮微调，提升了工具调用、终端编程及长程推理能力。该模型通过 DeepSeek 官方 API 提供，定价每百万输入 token $0.14，并新增了对 OpenAI Responses API 格式与本地 Codex 执行的原生支持。"
+  },
+  "date": "2026-07-31",
+  "datePrecision": "day",
+  "displayDate": "2026-07-31",
+  "status": "published",
+  "significance": 2,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Provides high-throughput open-weight MoE model API at ultra-low inference costs.",
+        "zhHans": "以极低推理成本提供高吞吐开源 MoE 模型 API。"
+      },
+      "affectedGroups": [
+        "developers",
+        "AI developers",
+        "open-source community"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "deepseek-api-changelog-2026",
+        "huggingface-deepseek-v4-flash-0731"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "deepseek-v4-flash-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "DeepSeek transitioned DeepSeek-V4-Flash-0731 from preview to an official public beta API on July 31, 2026, featuring 284B total parameters and 13B active parameters at $0.14 per M input tokens.",
+        "zhHans": "DeepSeek 于 2026 年 7 月 31 日将 DeepSeek-V4-Flash-0731 从预览版升级为官方 API 公测版，拥有 2840 亿总参数与 130 亿激活参数，定价每百万输入 token $0.14。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "deepseek-api-changelog-2026",
+        "huggingface-deepseek-v4-flash-0731",
+        "technode-deepseek-v4-flash-2026"
+      ]
+    },
+    {
+      "id": "deepseek-v4-flash-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Provides an open-weight lightweight MoE checkpoint achieving high intelligence scores on low inference cost constraints.",
+        "zhHans": "提供了一款开源轻量 MoE 模型检查点，在极低推理成本约束下取得了较高的智能测评成绩。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "technode-deepseek-v4-flash-2026"
+      ]
+    },
+    {
+      "id": "deepseek-v4-flash-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "The update was limited to the V4-Flash model checkpoint; V4-Pro and web application models remained unchanged until mid-August.",
+        "zhHans": "本次更新仅限于 V4-Flash 模型检查点；V4-Pro 与网页端在 8 月中旬前维持原有版本。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "deepseek-api-changelog-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "deepseek-api-changelog-2026",
+      "supports": [
+        "deepseek-v4-flash-official-2026",
+        "deepseek-v4-flash-fact-1",
+        "deepseek-v4-flash-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "huggingface-deepseek-v4-flash-0731",
+      "supports": [
+        "deepseek-v4-flash-fact-1"
+      ]
+    },
+    {
+      "sourceId": "technode-deepseek-v4-flash-2026",
+      "supports": [
+        "deepseek-v4-flash-fact-1",
+        "deepseek-v4-flash-impact-1"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [
+    "ai-software-teams"
+  ],
+  "editorial": {
+    "createdAt": "2026-07-31",
+    "updatedAt": "2026-08-10",
+    "reviewProvenance": "v2.3",
+    "reviewedAt": "2026-08-10",
+    "reviewer": "gang",
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: API status formalization and post-training checkpoint update.",
+    "publishedAt": "2026-08-10"
+  },
+  "categories": [
+    "product",
+    "capability"
+  ],
+  "impactIndex": 4
+}

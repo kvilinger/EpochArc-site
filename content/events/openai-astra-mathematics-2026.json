@@ -1,0 +1,145 @@
+{
+  "id": "openai-astra-mathematics-2026",
+  "slug": "openai-astra-mathematics-2026",
+  "title": {
+    "en": "OpenAI Announces Ten Mathematics Breakthroughs Solved by Internal Astra Model",
+    "zhHans": "OpenAI 宣布内部 Astra 模型攻克 10 项数学与理论计算机科学难题"
+  },
+  "searchSummary": {
+    "en": "OpenAI announced that an unreleased internal version of Astra solved 10 open math problems, including three Erdős conjectures, releasing Lean formal certificates.",
+    "zhHans": "OpenAI 宣布未发布的内部 Astra 模型攻克 10 项公开数学难题（含 3 项 Erdős 猜想），并发布 Lean 形式化验证证书。"
+  },
+  "summary": {
+    "en": "On August 1, 2026, OpenAI announced that an unreleased internal version of its Astra model solved or made substantial progress on 10 long-standing problems in mathematics and theoretical computer science, including three Erdős conjectures. OpenAI released Lean formal certificates and model reasoning narrations for each proof.",
+    "zhHans": "2026 年 8 月 1 日，OpenAI 宣布其未发布的内部 Astra 模型攻克或推进了 10 项长期未决的数学与理论计算机科学难题（包含 3 项 Erdős 猜想）。OpenAI 同步发布了 Lean 形式化验证证书与模型的推导叙述。"
+  },
+  "narrative": {
+    "en": "Following its May 2026 disproof of the Erdős unit distance conjecture, OpenAI announced ten additional advances in pure mathematics and theoretical computer science produced by an unreleased internal version of its Astra model. The results span high-dimensional geometry, group theory, quantum complexity, and extremal combinatorics, resolving Erdős problems 146, 180, and 183. For each proof, OpenAI published Lean formal certificates and model reasoning logs on GitHub. Human researchers assisted in preparing manuscripts and checking formalizations.",
+    "zhHans": "继 2026 年 5 月反驳 Erdős 单位距离猜想后，OpenAI 于 8 月 1 日宣布其未发布的内部 Astra 模型在纯数学与理论计算机科学领域取得了 10 项新进展。成果涵盖高维几何、群论、量子复杂性及极值组合学，攻克了 Erdős 第 146、180 和 183 号猜想。OpenAI 在 GitHub 上发布了所有 10 项证明的 Lean 形式化验证证书与模型思考推导叙述。人类研究员参与了论文整理与形式化核对。"
+  },
+  "date": "2026-08-01",
+  "datePrecision": "day",
+  "displayDate": "2026-08-01",
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Demonstrates machine generation of formally verified mathematical proofs for human-curated open conjectures.",
+        "zhHans": "展示了机器针对人类策展的公开数学猜想自主生成可形式化验证证明的能力。"
+      },
+      "affectedGroups": [
+        "mathematicians",
+        "computer scientists",
+        "AI researchers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-astra-math-2026",
+        "quanta-erdos-ai-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "openai-astra-math-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "On August 1, 2026, OpenAI announced that an internal unreleased version of Astra solved or substantially advanced 10 open problems in mathematics and theoretical computer science, including 3 Erdős conjectures.",
+        "zhHans": "2026年8月1日，OpenAI 宣布其未发布的内部 Astra 模型攻克或推进了 10 项长期未决的数学与理论计算机科学难题（包含 3 项 Erdős 猜想）。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-astra-math-2026",
+        "quanta-erdos-ai-2026"
+      ]
+    },
+    {
+      "id": "openai-astra-math-fact-2",
+      "claimType": "fact",
+      "text": {
+        "en": "OpenAI published Lean formal certificates and model reasoning narrations for all 10 proofs in an open code repository.",
+        "zhHans": "OpenAI 在开源代码仓中发布了所有 10 项证明的 Lean 形式化验证证书与模型思考推导叙述。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-astra-math-2026",
+        "github-openai-ten-proofs"
+      ]
+    },
+    {
+      "id": "openai-astra-math-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Demonstrates machine generation of formally verified mathematical proofs for human-curated open conjectures, raising benchmark standards for AI in pure mathematics.",
+        "zhHans": "展示了机器针对人类策展的公开数学猜想自主生成可形式化验证证明的能力，树立了 AI 参与纯数学研究的新标杆。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "quanta-erdos-ai-2026"
+      ]
+    },
+    {
+      "id": "openai-astra-math-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "The Astra model remains unreleased to the public, and human researchers assisted in preparing manuscripts and formalization; long-term mathematical significance remains subject to peer evaluation.",
+        "zhHans": "Astra 模型本身尚未向公众开放，且人类研究员参与了论文整理与形式化核对；成果的长期数学价值仍有待数学界同行评审。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-astra-math-2026",
+        "quanta-erdos-ai-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "openai-astra-math-2026",
+      "supports": [
+        "openai-astra-mathematics-2026",
+        "openai-astra-math-fact-1",
+        "openai-astra-math-fact-2",
+        "openai-astra-math-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "quanta-erdos-ai-2026",
+      "supports": [
+        "openai-astra-math-fact-1",
+        "openai-astra-math-impact-1",
+        "openai-astra-math-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "github-openai-ten-proofs",
+      "supports": [
+        "openai-astra-math-fact-2"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [
+    "ai-native-discovery-pipelines"
+  ],
+  "editorial": {
+    "createdAt": "2026-08-10",
+    "updatedAt": "2026-08-10",
+    "reviewProvenance": "v2.3",
+    "reviewedAt": "2026-08-10",
+    "reviewer": "gang",
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: unreleased model mathematics breakthroughs with Lean certificates.",
+    "publishedAt": "2026-08-10"
+  },
+  "categories": [
+    "capability",
+    "society"
+  ],
+  "impactIndex": 5
+}

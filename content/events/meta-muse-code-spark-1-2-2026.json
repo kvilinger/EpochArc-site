@@ -1,0 +1,123 @@
+{
+  "id": "meta-muse-code-spark-1-2-2026",
+  "slug": "meta-muse-code-spark-1-2-2026",
+  "title": {
+    "en": "Meta Launches Muse Code Terminal Agent Beta and Releases Muse Spark 1.2",
+    "zhHans": "Meta 发布 Muse Code 终端编程智能体公测版并推出 Muse Spark 1.2"
+  },
+  "searchSummary": {
+    "en": "Meta released Muse Code beta, a terminal coding agent featuring persistent background agents and replay-exact runtime design, powered by Muse Spark 1.2.",
+    "zhHans": "Meta 发布 Muse Code 终端编程智能体 beta 版，具备持久后台智能体与可重放运行时，由 Muse Spark 1.2 驱动。"
+  },
+  "summary": {
+    "en": "On August 5, 2026, Meta launched Muse Code beta, a terminal coding agent featuring persistent background agents and replay-exact runtime design, powered by its new Muse Spark 1.2 model with global paid API availability.",
+    "zhHans": "2026 年 8 月 5 日，Meta 发布 Muse Code 终端编程智能体 beta 版，具备持久化后台智能体与可精确重放的运行时设计，由新发布的 Muse Spark 1.2 模型驱动并开放全球付费 API。"
+  },
+  "narrative": {
+    "en": "Meta released Muse Code beta for macOS and Linux terminals, entering the developer harness ecosystem to compete with Claude Code and OpenAI Codex. Muse Code utilizes persistent background agents that remain active across sessions to carry out subtasks asynchronously, paired with an append-only event log that enables restart-safe replay after crashes. The agent is powered by Muse Spark 1.2, Meta's new commercial model offered via API at $1.25 per million input tokens and $4.25 per million output tokens.",
+    "zhHans": "Meta 发布了针对 macOS 和 Linux 终端的 Muse Code beta 版，正式进入开发者 Harness 生态，与 Claude Code 及 OpenAI Codex 展开竞争。Muse Code 采用在会话间保持活跃的持久化后台智能体异步执行子任务，配合仅追加的事件日志，实现了崩溃后可安全重启与精确重放的运行时。该智能体由 Muse Spark 1.2 驱动，该模型作为 Meta 的最新商业 API 开放，定价为每百万输入/输出 token $1.25/$4.25。"
+  },
+  "date": "2026-08-05",
+  "datePrecision": "day",
+  "displayDate": "2026-08-05",
+  "status": "published",
+  "significance": 2,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "economic_disruption",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Meta enters terminal agent infrastructure directly competing with Claude Code and Codex.",
+        "zhHans": "Meta 正式进入终端智能体基础设施，与 Claude Code 和 Codex 展开直接竞争。"
+      },
+      "affectedGroups": [
+        "software engineers",
+        "AI tool providers",
+        "developers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "meta-muse-code-launch-2026",
+        "reuters-meta-muse-code-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "meta-muse-code-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "On August 5, 2026, Meta launched Muse Code beta for macOS and Linux terminals, powered by Muse Spark 1.2 with API pricing at $1.25/$4.25 per million input/output tokens.",
+        "zhHans": "2026年8月5日，Meta 发布了针对 macOS 与 Linux 终端的 Muse Code beta 版，由 Muse Spark 1.2 驱动，API 定价为每百万输入/输出 token $1.25/$4.25。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "meta-muse-code-launch-2026",
+        "reuters-meta-muse-code-2026"
+      ]
+    },
+    {
+      "id": "meta-muse-code-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Marks Meta's direct entry into local terminal AI coding harness competition alongside Claude Code and OpenAI Codex.",
+        "zhHans": "标志着 Meta 正式进入本地终端 AI 编程 Harness 领域，与 Claude Code 和 OpenAI Codex 展开直接竞争。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "reuters-meta-muse-code-2026"
+      ]
+    },
+    {
+      "id": "meta-muse-code-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "Muse Code is currently a beta product, and user retention or enterprise repository benchmarks have not been independently validated.",
+        "zhHans": "Muse Code 目前为 beta 产品，其用户留存率与大型企业仓库的独立性能测评尚待验证。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "meta-muse-code-launch-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "meta-muse-code-launch-2026",
+      "supports": [
+        "meta-muse-code-spark-1-2-2026",
+        "meta-muse-code-fact-1",
+        "meta-muse-code-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "reuters-meta-muse-code-2026",
+      "supports": [
+        "meta-muse-code-fact-1",
+        "meta-muse-code-impact-1"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [
+    "ai-software-teams"
+  ],
+  "editorial": {
+    "createdAt": "2026-08-10",
+    "updatedAt": "2026-08-10",
+    "reviewProvenance": "v2.3",
+    "reviewedAt": "2026-08-10",
+    "reviewer": "gang",
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: beta tool release and API commercial availability.",
+    "publishedAt": "2026-08-10"
+  },
+  "categories": [
+    "product",
+    "capability"
+  ],
+  "impactIndex": 4
+}

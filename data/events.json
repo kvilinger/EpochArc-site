@@ -6154,6 +6154,136 @@
     ]
   },
   {
+    "id": "deepseek-v4-flash-official-2026",
+    "slug": "deepseek-v4-flash-official-2026",
+    "title": {
+      "en": "DeepSeek Promotes V4-Flash to Official Public Beta API with Updated Post-Training",
+      "zhHans": "DeepSeek 将 V4-Flash 升格为官方 API 公测版并更新后训练权重"
+    },
+    "searchSummary": {
+      "en": "DeepSeek moved DeepSeek-V4-Flash-0731 from preview to an official public beta API, retaining its 284B MoE architecture with updated post-training.",
+      "zhHans": "DeepSeek 将 DeepSeek-V4-Flash-0731 从预览版移至官方 API 公测版，保持 2840 亿参数 MoE 架构并更新后训练权重。"
+    },
+    "summary": {
+      "en": "On July 31, 2026, DeepSeek promoted DeepSeek-V4-Flash-0731 from preview to an official public beta API, retaining its 284B parameter MoE architecture while improving post-trained agent capabilities and cost efficiency.",
+      "zhHans": "2026 年 7 月 31 日，DeepSeek 将 DeepSeek-V4-Flash-0731 从预览版升格为官方 API 公测版，保持其 2840 亿参数的 MoE 架构不变，同时提升了后训练智能体能力与性价比。"
+    },
+    "narrative": {
+      "en": "DeepSeek released an updated official API public beta checkpoint named DeepSeek-V4-Flash-0731. The model retains its 284 billion total parameter Mixture-of-Experts architecture (13 billion active parameters per token) while integrating a fresh round of fine-tuning that improves tool-use, terminal coding, and long-horizon reasoning. Available via DeepSeek's official API at $0.14 per million input tokens, the release also added native support for OpenAI's Responses API format and local Codex execution.",
+      "zhHans": "DeepSeek 发布了名为 DeepSeek-V4-Flash-0731 的更新版官方 API 公测检查点。该模型保持其 2840 亿总参数（每 token 激活 130 亿参数）的混合专家（MoE）架构不变，同时融入了新一轮微调，提升了工具调用、终端编程及长程推理能力。该模型通过 DeepSeek 官方 API 提供，定价每百万输入 token $0.14，并新增了对 OpenAI Responses API 格式与本地 Codex 执行的原生支持。"
+    },
+    "date": "2026-07-31",
+    "datePrecision": "day",
+    "displayDate": "2026-07-31",
+    "status": "published",
+    "significance": 2,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "access_democratization",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Provides high-throughput open-weight MoE model API at ultra-low inference costs.",
+          "zhHans": "以极低推理成本提供高吞吐开源 MoE 模型 API。"
+        },
+        "affectedGroups": [
+          "developers",
+          "AI developers",
+          "open-source community"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "deepseek-api-changelog-2026",
+          "huggingface-deepseek-v4-flash-0731"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "deepseek-v4-flash-fact-1",
+        "claimType": "fact",
+        "text": {
+          "en": "DeepSeek transitioned DeepSeek-V4-Flash-0731 from preview to an official public beta API on July 31, 2026, featuring 284B total parameters and 13B active parameters at $0.14 per M input tokens.",
+          "zhHans": "DeepSeek 于 2026 年 7 月 31 日将 DeepSeek-V4-Flash-0731 从预览版升级为官方 API 公测版，拥有 2840 亿总参数与 130 亿激活参数，定价每百万输入 token $0.14。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "deepseek-api-changelog-2026",
+          "huggingface-deepseek-v4-flash-0731",
+          "technode-deepseek-v4-flash-2026"
+        ]
+      },
+      {
+        "id": "deepseek-v4-flash-impact-1",
+        "claimType": "impact",
+        "text": {
+          "en": "Provides an open-weight lightweight MoE checkpoint achieving high intelligence scores on low inference cost constraints.",
+          "zhHans": "提供了一款开源轻量 MoE 模型检查点，在极低推理成本约束下取得了较高的智能测评成绩。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "technode-deepseek-v4-flash-2026"
+        ]
+      },
+      {
+        "id": "deepseek-v4-flash-limitation-1",
+        "claimType": "limitation",
+        "text": {
+          "en": "The update was limited to the V4-Flash model checkpoint; V4-Pro and web application models remained unchanged until mid-August.",
+          "zhHans": "本次更新仅限于 V4-Flash 模型检查点；V4-Pro 与网页端在 8 月中旬前维持原有版本。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "deepseek-api-changelog-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "deepseek-api-changelog-2026",
+        "supports": [
+          "deepseek-v4-flash-official-2026",
+          "deepseek-v4-flash-fact-1",
+          "deepseek-v4-flash-limitation-1"
+        ]
+      },
+      {
+        "sourceId": "huggingface-deepseek-v4-flash-0731",
+        "supports": [
+          "deepseek-v4-flash-fact-1"
+        ]
+      },
+      {
+        "sourceId": "technode-deepseek-v4-flash-2026",
+        "supports": [
+          "deepseek-v4-flash-fact-1",
+          "deepseek-v4-flash-impact-1"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [
+      "ai-software-teams"
+    ],
+    "editorial": {
+      "createdAt": "2026-07-31",
+      "updatedAt": "2026-08-10",
+      "reviewProvenance": "v2.3",
+      "reviewedAt": "2026-08-10",
+      "reviewer": "gang",
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: API status formalization and post-training checkpoint update.",
+      "publishedAt": "2026-08-10"
+    },
+    "categories": [
+      "product",
+      "capability"
+    ],
+    "impactIndex": 4
+  },
+  {
     "id": "doubao-ai-companion-shutdown-2026",
     "slug": "doubao-ai-companion-shutdown-2026",
     "date": "2026-07-10",
@@ -9944,6 +10074,18 @@
           "reuters-gpt56-approval-2026"
         ],
         "notes": "Migrated from the first structured impact in the v2.3 contract update."
+      },
+      {
+        "id": "gpt-5-6-chatgpt-sol-luna-update-2026",
+        "claimType": "fact",
+        "text": {
+          "en": "On August 6, 2026, OpenAI updated GPT-5.6 Sol in ChatGPT for factual reliability and expanded GPT-5.6 Luna as the default model for Free users with unlimited text chats.",
+          "zhHans": "2026年8月6日，OpenAI 更新了 ChatGPT 中的 GPT-5.6 Sol 以提高事实可靠性，并将 GPT-5.6 Luna 设为免费用户的默认模型（支持无限文本对话）。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-sol-chatgpt-2026"
+        ]
       }
     ],
     "sources": [
@@ -9956,6 +10098,12 @@
       },
       {
         "sourceId": "openai-gpt56-announce-2026",
+        "supports": [
+          "gpt-5-6-broad-launch-2026"
+        ]
+      },
+      {
+        "sourceId": "openai-sol-chatgpt-2026",
         "supports": [
           "gpt-5-6-broad-launch-2026"
         ]
@@ -12214,6 +12362,129 @@
     }
   },
   {
+    "id": "meta-muse-code-spark-1-2-2026",
+    "slug": "meta-muse-code-spark-1-2-2026",
+    "title": {
+      "en": "Meta Launches Muse Code Terminal Agent Beta and Releases Muse Spark 1.2",
+      "zhHans": "Meta 发布 Muse Code 终端编程智能体公测版并推出 Muse Spark 1.2"
+    },
+    "searchSummary": {
+      "en": "Meta released Muse Code beta, a terminal coding agent featuring persistent background agents and replay-exact runtime design, powered by Muse Spark 1.2.",
+      "zhHans": "Meta 发布 Muse Code 终端编程智能体 beta 版，具备持久后台智能体与可重放运行时，由 Muse Spark 1.2 驱动。"
+    },
+    "summary": {
+      "en": "On August 5, 2026, Meta launched Muse Code beta, a terminal coding agent featuring persistent background agents and replay-exact runtime design, powered by its new Muse Spark 1.2 model with global paid API availability.",
+      "zhHans": "2026 年 8 月 5 日，Meta 发布 Muse Code 终端编程智能体 beta 版，具备持久化后台智能体与可精确重放的运行时设计，由新发布的 Muse Spark 1.2 模型驱动并开放全球付费 API。"
+    },
+    "narrative": {
+      "en": "Meta released Muse Code beta for macOS and Linux terminals, entering the developer harness ecosystem to compete with Claude Code and OpenAI Codex. Muse Code utilizes persistent background agents that remain active across sessions to carry out subtasks asynchronously, paired with an append-only event log that enables restart-safe replay after crashes. The agent is powered by Muse Spark 1.2, Meta's new commercial model offered via API at $1.25 per million input tokens and $4.25 per million output tokens.",
+      "zhHans": "Meta 发布了针对 macOS 和 Linux 终端的 Muse Code beta 版，正式进入开发者 Harness 生态，与 Claude Code 及 OpenAI Codex 展开竞争。Muse Code 采用在会话间保持活跃的持久化后台智能体异步执行子任务，配合仅追加的事件日志，实现了崩溃后可安全重启与精确重放的运行时。该智能体由 Muse Spark 1.2 驱动，该模型作为 Meta 的最新商业 API 开放，定价为每百万输入/输出 token $1.25/$4.25。"
+    },
+    "date": "2026-08-05",
+    "datePrecision": "day",
+    "displayDate": "2026-08-05",
+    "status": "published",
+    "significance": 2,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "economic_disruption",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Meta enters terminal agent infrastructure directly competing with Claude Code and Codex.",
+          "zhHans": "Meta 正式进入终端智能体基础设施，与 Claude Code 和 Codex 展开直接竞争。"
+        },
+        "affectedGroups": [
+          "software engineers",
+          "AI tool providers",
+          "developers"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "meta-muse-code-launch-2026",
+          "reuters-meta-muse-code-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "meta-muse-code-fact-1",
+        "claimType": "fact",
+        "text": {
+          "en": "On August 5, 2026, Meta launched Muse Code beta for macOS and Linux terminals, powered by Muse Spark 1.2 with API pricing at $1.25/$4.25 per million input/output tokens.",
+          "zhHans": "2026年8月5日，Meta 发布了针对 macOS 与 Linux 终端的 Muse Code beta 版，由 Muse Spark 1.2 驱动，API 定价为每百万输入/输出 token $1.25/$4.25。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "meta-muse-code-launch-2026",
+          "reuters-meta-muse-code-2026"
+        ]
+      },
+      {
+        "id": "meta-muse-code-impact-1",
+        "claimType": "impact",
+        "text": {
+          "en": "Marks Meta's direct entry into local terminal AI coding harness competition alongside Claude Code and OpenAI Codex.",
+          "zhHans": "标志着 Meta 正式进入本地终端 AI 编程 Harness 领域，与 Claude Code 和 OpenAI Codex 展开直接竞争。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "reuters-meta-muse-code-2026"
+        ]
+      },
+      {
+        "id": "meta-muse-code-limitation-1",
+        "claimType": "limitation",
+        "text": {
+          "en": "Muse Code is currently a beta product, and user retention or enterprise repository benchmarks have not been independently validated.",
+          "zhHans": "Muse Code 目前为 beta 产品，其用户留存率与大型企业仓库的独立性能测评尚待验证。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "meta-muse-code-launch-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "meta-muse-code-launch-2026",
+        "supports": [
+          "meta-muse-code-spark-1-2-2026",
+          "meta-muse-code-fact-1",
+          "meta-muse-code-limitation-1"
+        ]
+      },
+      {
+        "sourceId": "reuters-meta-muse-code-2026",
+        "supports": [
+          "meta-muse-code-fact-1",
+          "meta-muse-code-impact-1"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [
+      "ai-software-teams"
+    ],
+    "editorial": {
+      "createdAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "reviewProvenance": "v2.3",
+      "reviewedAt": "2026-08-10",
+      "reviewer": "gang",
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: beta tool release and API commercial availability.",
+      "publishedAt": "2026-08-10"
+    },
+    "categories": [
+      "product",
+      "capability"
+    ],
+    "impactIndex": 4
+  },
+  {
     "id": "microsoft-tay-2016",
     "slug": "microsoft-tay-chatbot",
     "title": {
@@ -13075,6 +13346,137 @@
     ]
   },
   {
+    "id": "ooredoo-zankore-ai-platform-2026",
+    "slug": "ooredoo-zankore-ai-platform-2026",
+    "title": {
+      "en": "Ooredoo Commits $800M Stake in $1GW Zankore AI Infrastructure Project",
+      "zhHans": "Ooredoo 承诺 8 亿美元持股 Zankore 1GW AI 智算基础设施项目"
+    },
+    "searchSummary": {
+      "en": "Ooredoo Group committed $800 million for a 49% founding stake in Zankore, targeting 1 GW total NVIDIA AI compute capacity across Southeast Asia.",
+      "zhHans": "Ooredoo 集团出资 8 亿美元持股 49% 成立 Zankore，旨在东南亚建设 1 GW NVIDIA AI 智算总容量。"
+    },
+    "summary": {
+      "en": "On August 6, 2026, Ooredoo Group announced a 49% founding stake and $800 million commitment in Zankore, a joint venture aiming to deploy 1 GW of NVIDIA AI compute infrastructure across Indonesia and Southeast Asia.",
+      "zhHans": "2026 年 8 月 6 日，Ooredoo 集团宣布出资 8 亿美元持有 Zankore 49% 创办股权。该合资公司计划在印尼及东南亚建设 1 GW NVIDIA AI 智算基础设施。"
+    },
+    "narrative": {
+      "en": "Qatari telecommunications operator Ooredoo Group announced an approximately $800 million investment to secure a 49% founding stake in Zankore, a multi-party AI compute initiative alongside Indosat Ooredoo Hutchison, Nokia, and NVIDIA. The project aims to build an Indonesia-first AI cloud platform targeting 1 gigawatt of total NVIDIA DSX capacity, with an initial 200 megawatt phase scheduled for operational rollout in the first half of 2027.",
+      "zhHans": "卡塔尔电信运营商 Ooredoo 集团宣布投资约 8 亿美元，取得 Zankore 公司 49% 的创办股权。该项目由 Indosat Ooredoo Hutchison、诺基亚及 NVIDIA 联合发起，旨在建立首个针对印尼与东南亚的 AI 云平台，远期规划 1 吉瓦 NVIDIA DSX 智算容量，首期 200 兆瓦预计于 2027 年上半年投入运营。"
+    },
+    "date": "2026-08-06",
+    "datePrecision": "day",
+    "displayDate": "2026-08-06",
+    "status": "published",
+    "significance": 2,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "economic_disruption",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Multi-hundred-million-dollar commitment to build gigawatt-scale AI compute infrastructure in Southeast Asia.",
+          "zhHans": "几亿美元级别的承诺，旨在东南亚建设吉瓦级 AI 智算基础设施。"
+        },
+        "affectedGroups": [
+          "telecom operators",
+          "cloud providers",
+          "regional enterprises"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "zawya-ooredoo-zankore-2026",
+          "fortune-ooredoo-zankore-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "ooredoo-zankore-fact-1",
+        "claimType": "fact",
+        "text": {
+          "en": "On August 6, 2026, Ooredoo Group announced an $800 million commitment for a 49% founding stake in Zankore to target 1 GW total NVIDIA AI compute capacity in Southeast Asia.",
+          "zhHans": "2026年8月6日，Ooredoo 集团宣布出资 8 亿美元持股 49% 成立 Zankore，旨在在东南亚建设 1 GW NVIDIA AI 智算总容量。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "zawya-ooredoo-zankore-2026",
+          "fortune-ooredoo-zankore-2026"
+        ]
+      },
+      {
+        "id": "ooredoo-zankore-impact-1",
+        "claimType": "impact",
+        "text": {
+          "en": "Represents one of the largest telecom-backed sovereign compute commitments in Southeast Asia.",
+          "zhHans": "代表了东南亚地区由电信巨头支持的规模最大的主权 AI 智算基础设施投资承诺之一。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "fortune-ooredoo-zankore-2026"
+        ]
+      },
+      {
+        "id": "ooredoo-zankore-limitation-1",
+        "claimType": "limitation",
+        "text": {
+          "en": "The investment represents a multi-year project target with initial 200 MW capacity planned for H1 2027 rather than currently active server capacity.",
+          "zhHans": "该投资代表多年期基础设施规划，首期 200 MW 算力计划于 2027 年上半年上线，而非目前已在运行的算力。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "zawya-ooredoo-zankore-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "ooredoo-official-zankore-2026",
+        "supports": [
+          "ooredoo-zankore-ai-platform-2026",
+          "ooredoo-zankore-fact-1",
+          "ooredoo-zankore-limitation-1"
+        ]
+      },
+      {
+        "sourceId": "zawya-ooredoo-zankore-2026",
+        "supports": [
+          "ooredoo-zankore-ai-platform-2026",
+          "ooredoo-zankore-fact-1",
+          "ooredoo-zankore-limitation-1"
+        ]
+      },
+      {
+        "sourceId": "fortune-ooredoo-zankore-2026",
+        "supports": [
+          "ooredoo-zankore-fact-1",
+          "ooredoo-zankore-impact-1"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [
+      "autonomous-enterprise-workflows"
+    ],
+    "editorial": {
+      "createdAt": "2026-08-06",
+      "updatedAt": "2026-08-10",
+      "reviewProvenance": "v2.3",
+      "reviewedAt": "2026-08-10",
+      "reviewer": "gang",
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: investment commitment and multi-year infrastructure roadmap.",
+      "publishedAt": "2026-08-10"
+    },
+    "categories": [
+      "commerce",
+      "governance"
+    ],
+    "impactIndex": 4
+  },
+  {
     "id": "open-secure-ai-alliance-2026",
     "slug": "open-secure-ai-alliance",
     "title": {
@@ -13474,6 +13876,151 @@
         }
       ]
     }
+  },
+  {
+    "id": "openai-astra-mathematics-2026",
+    "slug": "openai-astra-mathematics-2026",
+    "title": {
+      "en": "OpenAI Announces Ten Mathematics Breakthroughs Solved by Internal Astra Model",
+      "zhHans": "OpenAI 宣布内部 Astra 模型攻克 10 项数学与理论计算机科学难题"
+    },
+    "searchSummary": {
+      "en": "OpenAI announced that an unreleased internal version of Astra solved 10 open math problems, including three Erdős conjectures, releasing Lean formal certificates.",
+      "zhHans": "OpenAI 宣布未发布的内部 Astra 模型攻克 10 项公开数学难题（含 3 项 Erdős 猜想），并发布 Lean 形式化验证证书。"
+    },
+    "summary": {
+      "en": "On August 1, 2026, OpenAI announced that an unreleased internal version of its Astra model solved or made substantial progress on 10 long-standing problems in mathematics and theoretical computer science, including three Erdős conjectures. OpenAI released Lean formal certificates and model reasoning narrations for each proof.",
+      "zhHans": "2026 年 8 月 1 日，OpenAI 宣布其未发布的内部 Astra 模型攻克或推进了 10 项长期未决的数学与理论计算机科学难题（包含 3 项 Erdős 猜想）。OpenAI 同步发布了 Lean 形式化验证证书与模型的推导叙述。"
+    },
+    "narrative": {
+      "en": "Following its May 2026 disproof of the Erdős unit distance conjecture, OpenAI announced ten additional advances in pure mathematics and theoretical computer science produced by an unreleased internal version of its Astra model. The results span high-dimensional geometry, group theory, quantum complexity, and extremal combinatorics, resolving Erdős problems 146, 180, and 183. For each proof, OpenAI published Lean formal certificates and model reasoning logs on GitHub. Human researchers assisted in preparing manuscripts and checking formalizations.",
+      "zhHans": "继 2026 年 5 月反驳 Erdős 单位距离猜想后，OpenAI 于 8 月 1 日宣布其未发布的内部 Astra 模型在纯数学与理论计算机科学领域取得了 10 项新进展。成果涵盖高维几何、群论、量子复杂性及极值组合学，攻克了 Erdős 第 146、180 和 183 号猜想。OpenAI 在 GitHub 上发布了所有 10 项证明的 Lean 形式化验证证书与模型思考推导叙述。人类研究员参与了论文整理与形式化核对。"
+    },
+    "date": "2026-08-01",
+    "datePrecision": "day",
+    "displayDate": "2026-08-01",
+    "status": "published",
+    "significance": 1,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "capability_leap",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Demonstrates machine generation of formally verified mathematical proofs for human-curated open conjectures.",
+          "zhHans": "展示了机器针对人类策展的公开数学猜想自主生成可形式化验证证明的能力。"
+        },
+        "affectedGroups": [
+          "mathematicians",
+          "computer scientists",
+          "AI researchers"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-astra-math-2026",
+          "quanta-erdos-ai-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "openai-astra-math-fact-1",
+        "claimType": "fact",
+        "text": {
+          "en": "On August 1, 2026, OpenAI announced that an internal unreleased version of Astra solved or substantially advanced 10 open problems in mathematics and theoretical computer science, including 3 Erdős conjectures.",
+          "zhHans": "2026年8月1日，OpenAI 宣布其未发布的内部 Astra 模型攻克或推进了 10 项长期未决的数学与理论计算机科学难题（包含 3 项 Erdős 猜想）。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-astra-math-2026",
+          "quanta-erdos-ai-2026"
+        ]
+      },
+      {
+        "id": "openai-astra-math-fact-2",
+        "claimType": "fact",
+        "text": {
+          "en": "OpenAI published Lean formal certificates and model reasoning narrations for all 10 proofs in an open code repository.",
+          "zhHans": "OpenAI 在开源代码仓中发布了所有 10 项证明的 Lean 形式化验证证书与模型思考推导叙述。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-astra-math-2026",
+          "github-openai-ten-proofs"
+        ]
+      },
+      {
+        "id": "openai-astra-math-impact-1",
+        "claimType": "impact",
+        "text": {
+          "en": "Demonstrates machine generation of formally verified mathematical proofs for human-curated open conjectures, raising benchmark standards for AI in pure mathematics.",
+          "zhHans": "展示了机器针对人类策展的公开数学猜想自主生成可形式化验证证明的能力，树立了 AI 参与纯数学研究的新标杆。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "quanta-erdos-ai-2026"
+        ]
+      },
+      {
+        "id": "openai-astra-math-limitation-1",
+        "claimType": "limitation",
+        "text": {
+          "en": "The Astra model remains unreleased to the public, and human researchers assisted in preparing manuscripts and formalization; long-term mathematical significance remains subject to peer evaluation.",
+          "zhHans": "Astra 模型本身尚未向公众开放，且人类研究员参与了论文整理与形式化核对；成果的长期数学价值仍有待数学界同行评审。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "openai-astra-math-2026",
+          "quanta-erdos-ai-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "openai-astra-math-2026",
+        "supports": [
+          "openai-astra-mathematics-2026",
+          "openai-astra-math-fact-1",
+          "openai-astra-math-fact-2",
+          "openai-astra-math-limitation-1"
+        ]
+      },
+      {
+        "sourceId": "quanta-erdos-ai-2026",
+        "supports": [
+          "openai-astra-math-fact-1",
+          "openai-astra-math-impact-1",
+          "openai-astra-math-limitation-1"
+        ]
+      },
+      {
+        "sourceId": "github-openai-ten-proofs",
+        "supports": [
+          "openai-astra-math-fact-2"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [
+      "ai-native-discovery-pipelines"
+    ],
+    "editorial": {
+      "createdAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "reviewProvenance": "v2.3",
+      "reviewedAt": "2026-08-10",
+      "reviewer": "gang",
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: unreleased model mathematics breakthroughs with Lean certificates.",
+      "publishedAt": "2026-08-10"
+    },
+    "categories": [
+      "capability",
+      "society"
+    ],
+    "impactIndex": 5
   },
   {
     "id": "openai-devday-2023",
@@ -14719,6 +15266,132 @@
     "categories": [
       "capability"
     ]
+  },
+  {
+    "id": "perplexity-amazon-agent-cfaa-appeal-2026",
+    "slug": "perplexity-amazon-agent-cfaa-appeal-2026",
+    "title": {
+      "en": "Ninth Circuit Vacates Preliminary Injunction Against Perplexity's AI Agent in Amazon Suit",
+      "zhHans": "美国第九巡回上诉法院撤销亚马逊诉 Perplexity AI 智能体初步禁令"
+    },
+    "searchSummary": {
+      "en": "The Ninth Circuit vacated a preliminary injunction against Perplexity's browser agent, holding that CFAA access is performed by the directing user rather than the AI software tool.",
+      "zhHans": "第九巡回上诉法院撤销亚马逊针对 Perplexity 的初步禁令，裁定在 CFAA 框架下电脑“访问”主体是发出指令的用户而非 AI 智能体工具。"
+    },
+    "summary": {
+      "en": "On August 4, 2026, the US Court of Appeals for the Ninth Circuit vacated a preliminary injunction against Perplexity's browser agent in Amazon's lawsuit, ruling that under CFAA and CDAFA, access is performed by the directing user rather than the software tool.",
+      "zhHans": "2026 年 8 月 4 日，美国第九巡回上诉法院撤销了亚马逊诉 Perplexity 浏览器智能体案中的初步禁令，裁定在 CFAA 和 CDAFA 法律框架下，电脑“访问”行为的主体是发出指令的用户而非软件工具本身。"
+    },
+    "narrative": {
+      "en": "Amazon sued Perplexity over its 'Assistant' browser tool, alleging unauthorised access to user accounts in violation of federal CFAA and California CDAFA statutes. On August 4, 2026, a Ninth Circuit panel vacated the district court's preliminary injunction, holding that computer 'access' under CFAA contemplates entry by a person, and because communications pass through the user's computer at the user's direction, it was the user who accessed Amazon's servers. The court explicitly noted that contract, terms of service, and tort theories remain open for further litigation.",
+      "zhHans": "亚马逊此前起诉 Perplexity 的“Assistant”浏览器工具，指控其未经授权访问用户账户违反了联邦 CFAA 和加州 CDAFA 法律。2026 年 8 月 4 日，第九巡回上诉法院合议庭撤销了下级法院的初步禁令，认定 CFAA 框架下的电脑“访问”主体为人，且由于通信在用户指令下通过用户电脑路由，真正的访问者是用户本身。法院同时明确指出，合同违约、服务条款（ToS）及侵权指控仍可在后续诉讼中继续审理。"
+    },
+    "date": "2026-08-04",
+    "datePrecision": "day",
+    "displayDate": "2026-08-04",
+    "status": "published",
+    "significance": 1,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "paradigm_shift",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Establishes legal precedent limiting federal anti-hacking statutory liability for user-tasked browser agents.",
+          "zhHans": "建立了限制用户指令下浏览器智能体承担联邦反黑客法律责任的司法先例。"
+        },
+        "affectedGroups": [
+          "AI developers",
+          "website operators",
+          "courts",
+          "consumers"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "ninth-circuit-amazon-perplexity-2026",
+          "cooley-ninth-circuit-agent-cfaa-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "perplexity-amazon-cfaa-fact-1",
+        "claimType": "fact",
+        "text": {
+          "en": "On August 4, 2026, a Ninth Circuit panel vacated Amazon's preliminary injunction against Perplexity, holding that CFAA 'access' is performed by the directing end-user rather than the software agent.",
+          "zhHans": "2026年8月4日，第九巡回上诉法院撤销了亚马逊针对 Perplexity 的初步禁令，裁定 CFAA 框架下的电脑“访问”行为主体是发出指令的终端用户而非软件智能体。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "ninth-circuit-amazon-perplexity-2026",
+          "cooley-ninth-circuit-agent-cfaa-2026"
+        ]
+      },
+      {
+        "id": "perplexity-amazon-cfaa-impact-1",
+        "claimType": "impact",
+        "text": {
+          "en": "Provides an appellate precedent protecting AI agent developers from federal anti-hacking claims when actions are routed strictly through an authenticated end user's device.",
+          "zhHans": "为 AI 开发者在智能体完全代表已认证终端用户且通过用户设备操作时抵抗联邦反黑客法律指控提供了上诉法院先例。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "cooley-ninth-circuit-agent-cfaa-2026"
+        ]
+      },
+      {
+        "id": "perplexity-amazon-cfaa-limitation-1",
+        "claimType": "limitation",
+        "text": {
+          "en": "The panel's decision addresses only CFAA and CDAFA statutory theories and explicitly leaves breach of terms of service, contract, and tort claims open for further litigation.",
+          "zhHans": "该裁决仅针对 CFAA 与 CDAFA 法律条款，明确保留了服务条款（ToS）违约、合同与侵权等其他实体诉讼路径。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "ninth-circuit-amazon-perplexity-2026",
+          "cooley-ninth-circuit-agent-cfaa-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "ninth-circuit-amazon-perplexity-2026",
+        "supports": [
+          "perplexity-amazon-agent-cfaa-appeal-2026",
+          "perplexity-amazon-cfaa-fact-1",
+          "perplexity-amazon-cfaa-limitation-1"
+        ]
+      },
+      {
+        "sourceId": "cooley-ninth-circuit-agent-cfaa-2026",
+        "supports": [
+          "perplexity-amazon-cfaa-fact-1",
+          "perplexity-amazon-cfaa-impact-1",
+          "perplexity-amazon-cfaa-limitation-1"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [
+      "autonomous-enterprise-workflows"
+    ],
+    "editorial": {
+      "createdAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "reviewProvenance": "v2.3",
+      "reviewedAt": "2026-08-10",
+      "reviewer": "gang",
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: preliminary injunction vacatur under CFAA/CDAFA access theories.",
+      "publishedAt": "2026-08-10"
+    },
+    "categories": [
+      "governance",
+      "product"
+    ],
+    "impactIndex": 5
   },
   {
     "id": "project-fetch-phase-two-2026",

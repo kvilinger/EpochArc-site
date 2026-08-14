@@ -127,6 +127,18 @@
         "reuters-gpt56-approval-2026"
       ],
       "notes": "Migrated from the first structured impact in the v2.3 contract update."
+    },
+    {
+      "id": "gpt-5-6-chatgpt-sol-luna-update-2026",
+      "claimType": "fact",
+      "text": {
+        "en": "On August 6, 2026, OpenAI updated GPT-5.6 Sol in ChatGPT for factual reliability and expanded GPT-5.6 Luna as the default model for Free users with unlimited text chats.",
+        "zhHans": "2026年8月6日，OpenAI 更新了 ChatGPT 中的 GPT-5.6 Sol 以提高事实可靠性，并将 GPT-5.6 Luna 设为免费用户的默认模型（支持无限文本对话）。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "openai-sol-chatgpt-2026"
+      ]
     }
   ],
   "sources": [
@@ -139,6 +151,12 @@
     },
     {
       "sourceId": "openai-gpt56-announce-2026",
+      "supports": [
+        "gpt-5-6-broad-launch-2026"
+      ]
+    },
+    {
+      "sourceId": "openai-sol-chatgpt-2026",
       "supports": [
         "gpt-5-6-broad-launch-2026"
       ]

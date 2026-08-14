@@ -1,0 +1,126 @@
+{
+  "id": "perplexity-amazon-agent-cfaa-appeal-2026",
+  "slug": "perplexity-amazon-agent-cfaa-appeal-2026",
+  "title": {
+    "en": "Ninth Circuit Vacates Preliminary Injunction Against Perplexity's AI Agent in Amazon Suit",
+    "zhHans": "美国第九巡回上诉法院撤销亚马逊诉 Perplexity AI 智能体初步禁令"
+  },
+  "searchSummary": {
+    "en": "The Ninth Circuit vacated a preliminary injunction against Perplexity's browser agent, holding that CFAA access is performed by the directing user rather than the AI software tool.",
+    "zhHans": "第九巡回上诉法院撤销亚马逊针对 Perplexity 的初步禁令，裁定在 CFAA 框架下电脑“访问”主体是发出指令的用户而非 AI 智能体工具。"
+  },
+  "summary": {
+    "en": "On August 4, 2026, the US Court of Appeals for the Ninth Circuit vacated a preliminary injunction against Perplexity's browser agent in Amazon's lawsuit, ruling that under CFAA and CDAFA, access is performed by the directing user rather than the software tool.",
+    "zhHans": "2026 年 8 月 4 日，美国第九巡回上诉法院撤销了亚马逊诉 Perplexity 浏览器智能体案中的初步禁令，裁定在 CFAA 和 CDAFA 法律框架下，电脑“访问”行为的主体是发出指令的用户而非软件工具本身。"
+  },
+  "narrative": {
+    "en": "Amazon sued Perplexity over its 'Assistant' browser tool, alleging unauthorised access to user accounts in violation of federal CFAA and California CDAFA statutes. On August 4, 2026, a Ninth Circuit panel vacated the district court's preliminary injunction, holding that computer 'access' under CFAA contemplates entry by a person, and because communications pass through the user's computer at the user's direction, it was the user who accessed Amazon's servers. The court explicitly noted that contract, terms of service, and tort theories remain open for further litigation.",
+    "zhHans": "亚马逊此前起诉 Perplexity 的“Assistant”浏览器工具，指控其未经授权访问用户账户违反了联邦 CFAA 和加州 CDAFA 法律。2026 年 8 月 4 日，第九巡回上诉法院合议庭撤销了下级法院的初步禁令，认定 CFAA 框架下的电脑“访问”主体为人，且由于通信在用户指令下通过用户电脑路由，真正的访问者是用户本身。法院同时明确指出，合同违约、服务条款（ToS）及侵权指控仍可在后续诉讼中继续审理。"
+  },
+  "date": "2026-08-04",
+  "datePrecision": "day",
+  "displayDate": "2026-08-04",
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Establishes legal precedent limiting federal anti-hacking statutory liability for user-tasked browser agents.",
+        "zhHans": "建立了限制用户指令下浏览器智能体承担联邦反黑客法律责任的司法先例。"
+      },
+      "affectedGroups": [
+        "AI developers",
+        "website operators",
+        "courts",
+        "consumers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ninth-circuit-amazon-perplexity-2026",
+        "cooley-ninth-circuit-agent-cfaa-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "perplexity-amazon-cfaa-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "On August 4, 2026, a Ninth Circuit panel vacated Amazon's preliminary injunction against Perplexity, holding that CFAA 'access' is performed by the directing end-user rather than the software agent.",
+        "zhHans": "2026年8月4日，第九巡回上诉法院撤销了亚马逊针对 Perplexity 的初步禁令，裁定 CFAA 框架下的电脑“访问”行为主体是发出指令的终端用户而非软件智能体。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ninth-circuit-amazon-perplexity-2026",
+        "cooley-ninth-circuit-agent-cfaa-2026"
+      ]
+    },
+    {
+      "id": "perplexity-amazon-cfaa-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Provides an appellate precedent protecting AI agent developers from federal anti-hacking claims when actions are routed strictly through an authenticated end user's device.",
+        "zhHans": "为 AI 开发者在智能体完全代表已认证终端用户且通过用户设备操作时抵抗联邦反黑客法律指控提供了上诉法院先例。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "cooley-ninth-circuit-agent-cfaa-2026"
+      ]
+    },
+    {
+      "id": "perplexity-amazon-cfaa-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "The panel's decision addresses only CFAA and CDAFA statutory theories and explicitly leaves breach of terms of service, contract, and tort claims open for further litigation.",
+        "zhHans": "该裁决仅针对 CFAA 与 CDAFA 法律条款，明确保留了服务条款（ToS）违约、合同与侵权等其他实体诉讼路径。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ninth-circuit-amazon-perplexity-2026",
+        "cooley-ninth-circuit-agent-cfaa-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "ninth-circuit-amazon-perplexity-2026",
+      "supports": [
+        "perplexity-amazon-agent-cfaa-appeal-2026",
+        "perplexity-amazon-cfaa-fact-1",
+        "perplexity-amazon-cfaa-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "cooley-ninth-circuit-agent-cfaa-2026",
+      "supports": [
+        "perplexity-amazon-cfaa-fact-1",
+        "perplexity-amazon-cfaa-impact-1",
+        "perplexity-amazon-cfaa-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [
+    "autonomous-enterprise-workflows"
+  ],
+  "editorial": {
+    "createdAt": "2026-08-10",
+    "updatedAt": "2026-08-10",
+    "reviewProvenance": "v2.3",
+    "reviewedAt": "2026-08-10",
+    "reviewer": "gang",
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: preliminary injunction vacatur under CFAA/CDAFA access theories.",
+    "publishedAt": "2026-08-10"
+  },
+  "categories": [
+    "governance",
+    "product"
+  ],
+  "impactIndex": 5
+}
