@@ -141,6 +141,7 @@ export const EVENT_ROUTES = Object.freeze({
   "meta-muse-code-spark-1-2-2026": "meta-muse-code-spark-1-2-2026",
   "microsoft-tay-2016": "microsoft-tay-chatbot",
   "microsoft-tay-chatbot": "microsoft-tay-chatbot",
+  "minimax-h3-video-model-2026": "minimax-h3-video-model-2026",
   "mirrorcode-benchmark": "mirrorcode-benchmark",
   "mirrorcode-benchmark-2026": "mirrorcode-benchmark",
   "model-context-protocol": "model-context-protocol",

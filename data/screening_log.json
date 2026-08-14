@@ -4338,6 +4338,68 @@
       },
       "reviewedAt": "2026-08-10",
       "reviewer": "gang"
+    },
+    {
+      "candidateId": "minimax-h3-video-model-2026",
+      "eventId": "minimax-h3-video-model-2026",
+      "eventName": "MiniMax Releases H3 33B Open Video Model with Audio-Visual Joint Architecture",
+      "eventDate": "2026-08-13",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "MiniMax official release + The Batch 315",
+      "screenedAt": "2026-08-14",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "MiniMax 推出 33B 音视频联合建模模型 H3 并开放权重，附带美英欧韩地域限制许可；Artificial Analysis 编辑榜单第一。",
+      "reviewed": true,
+      "runId": "update-sweep-2026-08-10",
+      "confirmation": {
+        "completedAt": "2026-08-14",
+        "status": "completed",
+        "queries": {
+          "fact": "MiniMax H3 video model release 33B audio visual weights August 13 2026",
+          "impact": "MiniMax H3 Artificial Analysis video benchmark open weights impact",
+          "analysis": "The Batch MiniMax H3 state-of-the-art video model minimally open analysis",
+          "controversy": "MiniMax H3 license excluded territories distillation restriction"
+        },
+        "layers": {
+          "fact": {
+            "finding": "MiniMax released H3 with 33B parameters integrating text, video, and audio encoders in one model.",
+            "sourceUrls": [
+              "https://huggingface.co/MiniMaxAI"
+            ]
+          },
+          "impact": {
+            "finding": "H3 ranked first on Artificial Analysis video editing leaderboard, offering top-tier video synthesis at low token cost.",
+            "sourceUrls": [
+              "https://info.deeplearning.ai/the-batch/issue-315"
+            ]
+          },
+          "analysis": {
+            "finding": "The release demonstrated native joint audio-visual modeling while retaining Context-IR prompt engine as proprietary.",
+            "sourceUrls": [
+              "https://info.deeplearning.ai/the-batch/issue-315"
+            ]
+          },
+          "controversy": {
+            "finding": "The license requires users in the US, UK, EU, and South Korea to apply for permission and prohibits distillation.",
+            "sourceUrls": [
+              "https://huggingface.co/MiniMaxAI"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-14",
+      "reviewer": "gang"
     }
   ],
   "_runSchema": {

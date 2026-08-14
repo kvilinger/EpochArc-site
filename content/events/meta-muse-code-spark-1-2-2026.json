@@ -83,6 +83,19 @@
       "sourceIds": [
         "meta-muse-code-launch-2026"
       ]
+    },
+    {
+      "id": "meta-muse-contributor-tier-2026",
+      "claimType": "fact",
+      "text": {
+        "en": "Meta introduced a 90%+ discounted Contributor Tier for Muse Spark 1.2 ($0.10/$0.20 per million input/output tokens) allowing user prompt and interaction logs to be used for training coding models.",
+        "zhHans": "Meta 为 Muse Spark 1.2 推出了降幅超 90% 的“贡献者套餐”（每百万输入/输出 token 定价 $0.10/$0.20），允许将其提示词与交互日志用于训练编程模型。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "the-batch-meta-contributor-tier-2026",
+        "meta-muse-code-launch-2026"
+      ]
     }
   ],
   "sources": [
@@ -100,6 +113,13 @@
         "meta-muse-code-fact-1",
         "meta-muse-code-impact-1"
       ]
+    },
+    {
+      "sourceId": "the-batch-meta-contributor-tier-2026",
+      "supports": [
+        "meta-muse-code-spark-1-2-2026",
+        "meta-muse-contributor-tier-2026"
+      ]
     }
   ],
   "relatedEvents": [],
@@ -108,7 +128,7 @@
   ],
   "editorial": {
     "createdAt": "2026-08-10",
-    "updatedAt": "2026-08-10",
+    "updatedAt": "2026-08-14",
     "reviewProvenance": "v2.3",
     "reviewedAt": "2026-08-10",
     "reviewer": "gang",

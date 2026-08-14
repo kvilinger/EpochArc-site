@@ -1,0 +1,138 @@
+{
+  "id": "minimax-h3-video-model-2026",
+  "slug": "minimax-h3-video-model-2026",
+  "title": {
+    "en": "MiniMax Releases H3 33B Open Video Model with Audio-Visual Joint Architecture",
+    "zhHans": "MiniMax 发布 330 亿参数 H3 视频生成模型，引入音视频联合架构与特定地域许可"
+  },
+  "searchSummary": {
+    "en": "MiniMax released H3, a 33B parameter video model featuring unified audio-visual modeling, with open weights under a geographically restricted license.",
+    "zhHans": "MiniMax 发布 330 亿参数音视频联合建模视频模型 H3，开放权重并附带特定地域限制许可。"
+  },
+  "summary": {
+    "en": "On August 13, 2026, MiniMax released H3, a 33-billion parameter transformer video generation model featuring native audio-visual co-encoding. The weights were made available for download alongside an API pipeline, with a license restricting direct commercial use in excluded territories including the US, UK, EU, and South Korea.",
+    "zhHans": "2026 年 8 月 13 日，MiniMax 发布了拥有 330 亿参数的 Transformer 视频生成模型 H3，具备原生音视频联合编码能力。该模型开放了权重下载并提供 API 服务，其开源许可证对美、英、欧、韩等排除地域设置了单独申请许可的合规限制。"
+  },
+  "narrative": {
+    "en": "MiniMax launched H3, a 33-billion parameter multi-modal video generation system composed of an audio-visual base model, a contextual reasoning prompt engine (Context-IR), and a 2K resolution upscaler. By modeling voice, music, and sound effects inside a single encoder alongside video frames, H3 achieved top placement on independent video editing and generation benchmarks. The weights release introduced notable compliance terms, barring model distillation and requiring users in designated excluded territories (including the US, EU, UK, and South Korea) to submit formal license applications.",
+    "zhHans": "MiniMax 正式推出 330 亿参数的多模态视频生成系统 H3，由音视频基础模型、上下文推理提示词引擎（Context-IR）和 2K 分辨率放大器组成。通过在单一编码器中将语音、音乐、音效与视频帧联合建模，H3 在独立视频编辑与生成评测中位列前茅。该模型的权重发布引入了特殊的合规条款，包括禁止模型蒸馏，并要求美、英、欧盟及韩国等指定排除地域的用户单独提交许可申请。"
+  },
+  "date": "2026-08-13",
+  "datePrecision": "day",
+  "displayDate": "2026-08-13",
+  "status": "published",
+  "significance": 2,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Provides state-of-the-art open-weight video generation with native audio synthesis at low inference costs.",
+        "zhHans": "以较低推理成本提供了具备原生音频合成能力的顶尖开源权重视频生成模型。"
+      },
+      "affectedGroups": [
+        "video creators",
+        "AI developers",
+        "multimedia producers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "minimax-h3-release-2026",
+        "the-batch-minimax-h3-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "minimax-h3-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "MiniMax released H3 on August 13, 2026, a 33-billion parameter transformer model that natively encodes video, speech, music, and sound effects in a single pipeline.",
+        "zhHans": "MiniMax 于 2026 年 8 月 13 日发布了 330 亿参数的 Transformer 模型 H3，在统一流水线中原生编码视频、语音、音乐及音效。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "minimax-h3-release-2026",
+        "the-batch-minimax-h3-2026"
+      ]
+    },
+    {
+      "id": "minimax-h3-fact-2",
+      "claimType": "fact",
+      "text": {
+        "en": "The H3 weights license prohibits distillation and designates the US, UK, EU, and South Korea as excluded territories requiring formal application for use.",
+        "zhHans": "H3 权重许可证禁止模型蒸馏，并将美、英、欧、韩列为排除地域，使用需单独提交正式申请。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "minimax-h3-release-2026",
+        "the-batch-minimax-h3-2026"
+      ]
+    },
+    {
+      "id": "minimax-h3-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Ranked first on Artificial Analysis video editing benchmarks, demonstrating competitive 2K video generation quality comparable to proprietary commercial models.",
+        "zhHans": "在 Artificial Analysis 视频编辑评测中位列第一，展现出可比肩专有商业模型的 2K 视频生成质量。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "the-batch-minimax-h3-2026"
+      ]
+    },
+    {
+      "id": "minimax-h3-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "Context-IR and 2K regeneration modules remain proprietary, and territorial license restrictions limit unconditional global deployment.",
+        "zhHans": "Context-IR 与 2K 放大模块仍属专有，且地域许可限制约束了无条件的全球自由部署。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "minimax-h3-release-2026",
+        "the-batch-minimax-h3-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "minimax-h3-release-2026",
+      "supports": [
+        "minimax-h3-video-model-2026",
+        "minimax-h3-fact-1",
+        "minimax-h3-fact-2",
+        "minimax-h3-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "the-batch-minimax-h3-2026",
+      "supports": [
+        "minimax-h3-fact-1",
+        "minimax-h3-fact-2",
+        "minimax-h3-impact-1",
+        "minimax-h3-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-08-14",
+    "updatedAt": "2026-08-14",
+    "reviewedAt": "2026-08-14",
+    "publishedAt": "2026-08-14",
+    "reviewer": "gang",
+    "reviewProvenance": "v2.3",
+    "reviewNotes": "Published after The Batch newsletter analysis and weights release confirmation."
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "impactIndex": 4
+}
