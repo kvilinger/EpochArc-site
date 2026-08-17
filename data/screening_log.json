@@ -4400,6 +4400,129 @@
       },
       "reviewedAt": "2026-08-14",
       "reviewer": "gang"
+    },
+    {
+      "candidateId": "deepseek-v4-pro-ga-2026",
+      "eventId": "deepseek-v4-pro-ga-2026",
+      "eventName": "DeepSeek Rolls Out General Availability Release of Flagship DeepSeek-V4-Pro",
+      "eventDate": "2026-08-13",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "DeepSeek official changelog",
+      "screenedAt": "2026-08-16",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "DeepSeek-V4-Pro GA 正式版全渠道上线，智能体基准大幅提升；限定为旗舰 GA 节点。",
+      "reviewed": true,
+      "runId": "update-sweep-2026-08-16",
+      "confirmation": {
+        "completedAt": "2026-08-16",
+        "status": "completed",
+        "queries": {
+          "fact": "DeepSeek-V4-Pro GA release App Web API August 13 2026 changelog",
+          "impact": "DeepSeek V4 Pro GA HLE Terminal Bench agent benchmarks impact",
+          "analysis": "DeepSeek V4 Pro GA agent capability enhancement analysis",
+          "controversy": "DeepSeek V4 Pro vendor evaluation vs enterprise production validation"
+        },
+        "layers": {
+          "fact": {
+            "finding": "DeepSeek rolled out DeepSeek-V4-Pro GA on App, Web, and API with HLE 60.0 (tools) and Terminal Bench 87.9.",
+            "sourceUrls": [
+              "https://api-docs.deepseek.com/updates/"
+            ]
+          },
+          "impact": {
+            "finding": "Delivers an accessible frontier open model for production-grade agent pipelines.",
+            "sourceUrls": [
+              "https://api-docs.deepseek.com/updates/"
+            ]
+          },
+          "analysis": {
+            "finding": "The GA release incorporates targeted post-training optimizations for autonomous workflows.",
+            "sourceUrls": [
+              "https://api-docs.deepseek.com/updates/"
+            ]
+          },
+          "controversy": {
+            "finding": "Official benchmark figures require long-term external replication.",
+            "sourceUrls": [
+              "https://api-docs.deepseek.com/updates/"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-16",
+      "reviewer": "gang"
+    },
+    {
+      "candidateId": "nvidia-openai-datacenter-financing-2026",
+      "eventId": "nvidia-openai-datacenter-financing-2026",
+      "eventName": "Nvidia Adjusts Debt Guarantee Scale for OpenAI's Multi-Gigawatt Data Center Expansion",
+      "eventDate": "2026-08-14",
+      "categories": [
+        "commerce"
+      ],
+      "source": "Reuters + WSJ report",
+      "screenedAt": "2026-08-16",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "NVIDIA 调整为 OpenAI 智算中心扩张提供债务担保的规模；限定为初步担保结构调整，非供应合作终止。",
+      "reviewed": true,
+      "runId": "update-sweep-2026-08-16",
+      "confirmation": {
+        "completedAt": "2026-08-16",
+        "status": "completed",
+        "queries": {
+          "fact": "Nvidia scales back OpenAI data center guarantee WSJ Reuters August 14 2026",
+          "impact": "Nvidia OpenAI vendor financing data center debt structure impact",
+          "analysis": "Reuters analysis Nvidia OpenAI compute infrastructure financing",
+          "controversy": "Preliminary financing guarantee scale-back vs hardware supply relationships"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Nvidia scaled back preliminary debt guarantee commitments for OpenAI's data center expansion.",
+            "sourceUrls": [
+              "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/"
+            ]
+          },
+          "impact": {
+            "finding": "Reflects increased financial discipline and risk assessment in frontier AI infrastructure debt structures.",
+            "sourceUrls": [
+              "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/"
+            ]
+          },
+          "analysis": {
+            "finding": "Hardware providers balance aggressive expansion against balance-sheet concentration risk.",
+            "sourceUrls": [
+              "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/"
+            ]
+          },
+          "controversy": {
+            "finding": "The adjustment concerns debt guarantee structures and does not alter underlying chip supply.",
+            "sourceUrls": [
+              "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-16",
+      "reviewer": "gang"
     }
   ],
   "_runSchema": {
@@ -5170,6 +5293,89 @@
           "category": "society",
           "queries": [
             "AI labor culture social impact August 2026"
+          ],
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "runId": "update-sweep-2026-08-16",
+      "runDate": "2026-08-16",
+      "windowStart": "2026-08-10",
+      "windowEnd": "2026-08-16",
+      "scope": "Discovery and confirmation sweep for mid-August 2026 AI milestones.",
+      "channels": [
+        {
+          "id": "hugging-face-daily-papers",
+          "status": "completed",
+          "queries": [
+            "GET https://huggingface.co/api/daily_papers?limit=20"
+          ],
+          "resultSummary": "20 papers inspected.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "hacker-news",
+          "status": "completed",
+          "queries": [
+            "GET topstories.json; fetch 35 items; filter AI keywords"
+          ],
+          "resultSummary": "8 AI keyword stories surfaced.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "deepseek-api-changelog",
+          "status": "completed",
+          "queries": [
+            "GET https://api-docs.deepseek.com/updates/"
+          ],
+          "resultSummary": "DeepSeek-V4-Pro GA release confirmed.",
+          "failureReason": null,
+          "retryResult": null
+        }
+      ],
+      "categoryCoverage": [
+        {
+          "category": "capability",
+          "queries": [
+            "DeepSeek-V4-Pro GA release August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "product",
+          "queries": [
+            "AI agent benchmark scores August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "commerce",
+          "queries": [
+            "Nvidia OpenAI data center financing August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "governance",
+          "queries": [
+            "AI regulation and disclosures August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "safety",
+          "queries": [
+            "AI security evaluations August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "society",
+          "queries": [
+            "AI labor and infrastructure August 2026"
           ],
           "status": "completed"
         }
