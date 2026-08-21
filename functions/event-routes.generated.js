@@ -167,6 +167,7 @@ export const EVENT_ROUTES = Object.freeze({
   "openai-operator-2025": "openai-operator",
   "openai-pbc-restructure": "openai-pbc-restructure",
   "openai-pbc-restructure-2025": "openai-pbc-restructure",
+  "openai-strategic-futures-governance-2026": "openai-strategic-futures-governance-2026",
   "openclaw-2026": "openclaw-explosion",
   "openclaw-explosion": "openclaw-explosion",
   "pacing-the-frontier": "pacing-the-frontier",

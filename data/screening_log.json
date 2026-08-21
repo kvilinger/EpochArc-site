@@ -4523,6 +4523,68 @@
       },
       "reviewedAt": "2026-08-16",
       "reviewer": "gang"
+    },
+    {
+      "candidateId": "openai-strategic-futures-governance-2026",
+      "eventId": "openai-strategic-futures-governance-2026",
+      "eventName": "OpenAI Launches Strategic Futures Team and Releases Superintelligence Governance Manifesto",
+      "eventDate": "2026-08-19",
+      "categories": [
+        "governance",
+        "society"
+      ],
+      "source": "OpenAI official blog + Semafor",
+      "screenedAt": "2026-08-19",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "OpenAI 启动 Strategic Futures 倡议并发布治理宣言，将权力过度集中列为核心长期风险；提出有限可见性等 6 项原则。",
+      "reviewed": true,
+      "runId": "update-sweep-2026-08-19",
+      "confirmation": {
+        "completedAt": "2026-08-19",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI introducing AI Futures Strategic Futures team manifesto August 19 2026",
+          "impact": "OpenAI Strategic Futures power concentration institutional governance impact",
+          "analysis": "Semafor OpenAI Strategic Futures superintelligence governance analysis",
+          "controversy": "Corporate governance manifesto vs binding regulatory framework limitation"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI established Strategic Futures and published AI Futures defining power concentration as primary risk.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-ai-futures/"
+            ]
+          },
+          "impact": {
+            "finding": "Expands discourse to political economy and institutional checks on machine intelligence.",
+            "sourceUrls": [
+              "https://www.semafor.com/article/2026/08/19/openai-strategic-futures-power-concentration"
+            ]
+          },
+          "analysis": {
+            "finding": "The framework proposes bounded legibility while protecting privacy and anonymous usage.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-ai-futures/"
+            ]
+          },
+          "controversy": {
+            "finding": "The manifesto represents corporate policy positions rather than enacted statutory law.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-ai-futures/"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-19",
+      "reviewer": "gang"
     }
   ],
   "_runSchema": {
@@ -5376,6 +5438,79 @@
           "category": "society",
           "queries": [
             "AI labor and infrastructure August 2026"
+          ],
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "runId": "update-sweep-2026-08-19",
+      "runDate": "2026-08-19",
+      "windowStart": "2026-08-14",
+      "windowEnd": "2026-08-19",
+      "scope": "Late August 2026 discovery sweep covering OpenAI Strategic Futures launch.",
+      "channels": [
+        {
+          "id": "hacker-news",
+          "status": "completed",
+          "queries": [
+            "GET topstories.json; filter AI keywords"
+          ],
+          "resultSummary": "Surfaced OpenAI AI Futures release.",
+          "failureReason": null,
+          "retryResult": null
+        },
+        {
+          "id": "openai-official-blog",
+          "status": "completed",
+          "queries": [
+            "GET https://openai.com/index/introducing-ai-futures/"
+          ],
+          "resultSummary": "Read full text of OpenAI Strategic Futures launch post.",
+          "failureReason": null,
+          "retryResult": null
+        }
+      ],
+      "categoryCoverage": [
+        {
+          "category": "capability",
+          "queries": [
+            "AI capability models August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "product",
+          "queries": [
+            "AI product tools August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "commerce",
+          "queries": [
+            "AI investment August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "governance",
+          "queries": [
+            "OpenAI AI Futures Strategic Futures governance August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "safety",
+          "queries": [
+            "AI concentration of power risks August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "society",
+          "queries": [
+            "AI democracy and labor institutions August 2026"
           ],
           "status": "completed"
         }
