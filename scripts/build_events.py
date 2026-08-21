@@ -54,7 +54,7 @@ for e in events:
     eid = e['id']
     
     # 2. Required fields
-    for field in ['id','date','datePrecision','title','summary','narrative','categories','significance','impactIndex','impacts','claims','sources','editorial']:
+    for field in ['id','date','datePrecision','title','searchSummary','summary','narrative','categories','significance','impactIndex','impacts','claims','sources','editorial']:
         if field not in e:
             errors.append(f"{eid}: missing required field '{field}'")
     
@@ -118,8 +118,8 @@ for e in events:
             elif src['sourceId'] not in VALID_SOURCE_IDS:
                 errors.append(f"{eid}.sources[{i}]: unknown sourceId '{src['sourceId']}'")
     
-    # 9. LocalizedText for title, summary, narrative
-    for field in ['title','summary','narrative']:
+    # 9. LocalizedText for title, searchSummary, summary, narrative
+    for field in ['title','searchSummary','summary','narrative']:
         val = e.get(field)
         if not isinstance(val, dict):
             errors.append(f"{eid}: '{field}' must be dict with 'en' and 'zhHans' keys")
@@ -300,12 +300,13 @@ if os.path.exists(TEMPLATE_FILE):
         eid = e['id']
         copy_title_en = e['title']['en']
         copy_title_zh = e['title']['zhHans']
-        if 'searchSummary' in e and 'en' in e['searchSummary'] and e['searchSummary']['en']:
-            copy_desc_en = e['searchSummary']['en']
-        else:
-            raw_summary = e.get('summary', {}).get('en', '')
-            copy_desc_en = (raw_summary[:147] + '...') if len(raw_summary) > 150 else raw_summary
-        copy_desc_zh = e['summary']['zhHans']
+        copy_summary_en = e['summary']['en']
+        copy_summary_zh = e['summary']['zhHans']
+        copy_narrative_en = e['narrative']['en']
+        copy_narrative_zh = e['narrative']['zhHans']
+        copy_lead_en = e.get('searchSummary', {}).get('en') or copy_summary_en
+        copy_lead_zh = e.get('searchSummary', {}).get('zhHans') or copy_summary_zh
+        seo_desc_en = copy_lead_en
         
         # 1. 渲染 Impacts HTML
         impact_items = []
@@ -340,6 +341,11 @@ if os.path.exists(TEMPLATE_FILE):
             
         # 2. 渲染 Sources HTML
         source_items = []
+        source_index_by_id = {
+            source_ref.get('sourceId'): index + 1
+            for index, source_ref in enumerate(e.get('sources', []))
+            if source_ref.get('sourceId')
+        }
         for s_idx, source_ref in enumerate(e.get('sources', [])):
             src_id = source_ref.get('sourceId')
             src = sources_by_id.get(src_id, {'id': src_id, 'title': src_id, 'type': 'unknown', 'url': ''})
@@ -364,7 +370,7 @@ if os.path.exists(TEMPLATE_FILE):
             meta_zh = html_escape(f'原文可访问: {src.get("url")}' if src.get("url") else '待补原文链接')
             
             source_items.append(f'''
-              <li class="source-card">
+              <li class="source-card" id="source-{html_escape(src_id)}">
                 <span class="source-index">{s_idx + 1}</span>
                 <div class="source-body">
                   <div class="source-row">
@@ -383,8 +389,50 @@ if os.path.exists(TEMPLATE_FILE):
             
         impacts_html = '\n'.join(impact_items)
         sources_html = '\n'.join(source_items)
+
+        # 3. 渲染带证据绑定的关键结论
+        claim_type_labels = {
+            'fact': {'en': 'Fact', 'zhHans': '事实'},
+            'impact': {'en': 'Impact', 'zhHans': '影响'},
+            'limitation': {'en': 'Limitation', 'zhHans': '局限'},
+            'interpretation': {'en': 'Interpretation', 'zhHans': '解读'},
+        }
+        claim_items = []
+        for claim in e.get('claims', []):
+            claim_type = claim.get('claimType', 'fact')
+            claim_label = claim_type_labels.get(claim_type, claim_type_labels['fact'])
+            source_links = []
+            for source_id in claim.get('sourceIds', []):
+                source = sources_by_id.get(source_id, {})
+                source_title = html_escape(source.get('title', source_id))
+                source_number = source_index_by_id.get(source_id)
+                if source_number:
+                    source_links.append(
+                        f'<a href="#source-{html_escape(source_id)}" title="{source_title}">[{source_number}]</a>'
+                    )
+                elif source.get('url'):
+                    source_links.append(
+                        f'<a href="{html_escape(source.get("url"))}" target="_blank" rel="noopener noreferrer" title="{source_title}">[↗]</a>'
+                    )
+                else:
+                    source_links.append(f'<span title="{source_title}">[—]</span>')
+
+            claim_items.append(f'''
+              <li class="claim-card claim-{claim_type}">
+                <div class="claim-head">
+                  <span class="claim-type" data-zh="{html_escape(claim_label['zhHans'])}" data-en="{html_escape(claim_label['en'])}">{html_escape(claim_label['en'])}</span>
+                  <span class="claim-grade">Grade {html_escape(claim.get('evidenceGrade', ''))}</span>
+                </div>
+                <p class="claim-text" data-zh="{html_escape(claim.get('text', {}).get('zhHans', ''))}" data-en="{html_escape(claim.get('text', {}).get('en', ''))}">{html_escape(claim.get('text', {}).get('en', ''))}</p>
+                <div class="claim-sources">
+                  <span data-zh="来源" data-en="Sources">Sources</span>
+                  {''.join(source_links)}
+                </div>
+              </li>
+            ''')
+        claims_html = '\n'.join(claim_items)
             
-        # 3. 计算关联关系
+        # 4. 计算关联关系
         related_ids = set(e.get('relatedEvents', []))
         for other_e in events:
             if eid in other_e.get('relatedEvents', []):
@@ -593,7 +641,7 @@ if os.path.exists(TEMPLATE_FILE):
               </section>
             '''
             
-        # 4. 生成多语言分类和共识字符串
+        # 5. 生成多语言分类和共识字符串
         primary_cat = e['categories'][0]
         primary_cat_name_en = labels['category'].get(primary_cat, {}).get('en', primary_cat)
         primary_cat_name_zh = labels['category'].get(primary_cat, {}).get('zhHans', primary_cat)
@@ -612,12 +660,13 @@ if os.path.exists(TEMPLATE_FILE):
         con_en = labels['consensus'].get(con, {}).get('en', con)
         con_zh = labels['consensus'].get(con, {}).get('zhHans', con)
         
-        # 5. 替换占位符并写出物理文件
+        # 6. 替换占位符并写出物理文件
         schema_data = {
             "@context": "https://schema.org",
             "@type": "NewsArticle",
             "headline": copy_title_en,
-            "description": copy_desc_en,
+            "description": seo_desc_en,
+            "articleBody": f"{copy_summary_en}\n\n{copy_narrative_en}",
             "datePublished": e['date'],
             "dateModified": e.get('editorial', {}).get('updatedAt', e['date']),
             "image": f"https://epoch-arc.com/assets/og/events/{e['slug']}.png",
@@ -641,18 +690,23 @@ if os.path.exists(TEMPLATE_FILE):
 
         page_html = template_content
         page_html = page_html.replace('{{SCHEMA_JSON_LD}}', schema_json_ld)
-        page_html = page_html.replace('{{SEO_TITLE}}', copy_title_en)
-        page_html = page_html.replace('{{SEO_DESC}}', copy_desc_en)
+        page_html = page_html.replace('{{SEO_TITLE}}', html_escape(copy_title_en))
+        page_html = page_html.replace('{{SEO_DESC}}', html_escape(seo_desc_en))
         page_html = page_html.replace('{{SLUG}}', e['slug'])
         page_html = page_html.replace('{{ID}}', eid)
         page_html = page_html.replace('{{DATE}}', e['date'])
-        page_html = page_html.replace('{{TITLE_ZH}}', copy_title_zh)
-        page_html = page_html.replace('{{TITLE_EN}}', copy_title_en)
+        page_html = page_html.replace('{{TITLE_ZH}}', html_escape(copy_title_zh))
+        page_html = page_html.replace('{{TITLE_EN}}', html_escape(copy_title_en))
         page_html = page_html.replace('{{PRIMARY_CAT}}', primary_cat)
         page_html = page_html.replace('{{PRIMARY_CAT_NAME}}', primary_cat_name_en)
         page_html = page_html.replace('{{SECONDARY_CAT_HTML}}', secondary_cat_html)
-        page_html = page_html.replace('{{DESC_ZH}}', copy_desc_zh)
-        page_html = page_html.replace('{{DESC_EN}}', copy_desc_en)
+        page_html = page_html.replace('{{LEAD_ZH}}', html_escape(copy_lead_zh))
+        page_html = page_html.replace('{{LEAD_EN}}', html_escape(copy_lead_en))
+        page_html = page_html.replace('{{SUMMARY_ZH}}', html_escape(copy_summary_zh))
+        page_html = page_html.replace('{{SUMMARY_EN}}', html_escape(copy_summary_en))
+        page_html = page_html.replace('{{NARRATIVE_ZH}}', html_escape(copy_narrative_zh))
+        page_html = page_html.replace('{{NARRATIVE_EN}}', html_escape(copy_narrative_en))
+        page_html = page_html.replace('{{CLAIMS}}', claims_html)
         page_html = page_html.replace('{{IMPACTS}}', impacts_html)
         page_html = page_html.replace('{{SIGNIFICANCE}}', str(e['significance']))
         page_html = page_html.replace('{{CATEGORIES}}', f'<span data-zh="{cats_zh}" data-en="{cats_en}">{cats_en}</span>')
@@ -678,7 +732,7 @@ if os.path.exists(DIST_DIR):
     print(f"✅ Synced static events to {DIST_DIR}/events/")
 
 # ─────────────────── Fallback 数据裁剪与回填 ───────────────────
-FALLBACK_KEEP_KEYS = {'id', 'slug', 'title', 'date', 'datePrecision', 'summary',
+FALLBACK_KEEP_KEYS = {'id', 'slug', 'title', 'date', 'datePrecision', 'searchSummary', 'summary',
                       'categories', 'significance', 'impactIndex'}
 
 def trim_for_fallback(events):

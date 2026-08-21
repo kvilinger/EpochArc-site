@@ -167,7 +167,9 @@ brave search "事件名称 parameters model architecture paper" -n 5 --content
 |-------------|---------|
 | 准确日期 | `date`, `datePrecision` |
 | 发布主体 | `claims[fact]` |
+| 一句话核心导语 | `searchSummary` |
 | 发生了什么 | `summary`、`claims[fact]` |
+| 背景、机制与事实边界 | `narrative` |
 | 原始公告/论文 URL | `sources` (Tier 1) |
 
 ### 第 2 层：影响分析
@@ -365,7 +367,7 @@ brave search "AI new architecture training paradigm paper breakthrough {year}" -
 **输入**：四层搜索的原始内容（标题、摘要、来源 URL）
 
 **Agent 做的事**：
-1. 从搜索内容中提取事实信息，填入 `title`、`summary`、`date`
+1. 从搜索内容中提取事实信息，填入 `title`、`searchSummary`、`summary`、`narrative` 和 `date`；四个文本字段职责按数据模型执行，不得以导语替代完整摘要
 2. 识别影响类型，生成 `ImpactAssessment[]`，初步评估 `severity` 和 `direction`
 3. 将来源分类（primary/official/news/analysis），填入 `sources.json` 结构，事件里只存 `SourceRef`
 4. 识别反方观点，决定 `controversy` 和 `claims[].claimType = limitation`

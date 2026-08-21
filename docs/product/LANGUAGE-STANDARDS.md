@@ -233,7 +233,10 @@ The relevant question is whether embodied AI is entering real operating environm
 
 - 严格事实驱动
 - 中文使用"于...发布"、"就...达成"等明确时间标记
-- `narrative` 段落可包含判断性语言，但必须与事实句分开
+- `searchSummary` 是标题下的核心导语：用 1-2 句概括事件，不承担完整摘要职责
+- `summary` 是完整事件摘要：交代时间、主体、动作、直接结果和必要的事实边界
+- `narrative` 是背景与脉络：可包含有证据支持的判断性语言，但必须与事实句分开
+- 详情页按 `searchSummary` → `summary` → `narrative` → `claims` / `impacts` / `sources` 逐层展开，不得用短导语替代完整摘要
 - 影响评估使用结构化 `ImpactAssessment[]`，不在自由文本中重复
 
 ### 5.2 方向页面

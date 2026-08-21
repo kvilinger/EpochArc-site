@@ -301,6 +301,7 @@ def validate_events(source_map: dict):
         "id",
         "slug",
         "title",
+        "searchSummary",
         "summary",
         "narrative",
         "date",
@@ -328,7 +329,7 @@ def validate_events(source_map: dict):
         slug = event.get("slug")
         if not non_empty_string(slug) or not SLUG_RE.fullmatch(slug):
             errors.append(f"{prefix}: invalid slug '{slug}'")
-        for field in ("title", "summary", "narrative"):
+        for field in ("title", "searchSummary", "summary", "narrative"):
             if not localized(event.get(field)):
                 errors.append(f"{prefix}.{field}: must contain non-empty en and zhHans")
 

@@ -1,7 +1,7 @@
 # EpochArc 数据模型规范
 
 **版本**：v2.3
-**更新日期**：2026-07-20
+**更新日期**：2026-08-19
 **适用范围**：AI 历史时间轴内容的结构、类型定义、来源标准、评分规则和数据校验。
 
 关联文档：
@@ -52,8 +52,9 @@ export interface AIEvent {
   slug: string;
 
   title: LocalizedText;
+  searchSummary: LocalizedText;
   summary: LocalizedText;
-  narrative?: LocalizedText;
+  narrative: LocalizedText;
 
   date: string;                       // YYYY-MM-DD / YYYY-MM / YYYY
   datePrecision: DatePrecision;
@@ -131,6 +132,27 @@ candidate → draft → reviewed → published → archived
 #### 语言要求
 
 `LocalizedText` 中 `en` 和 `zhHans` 均为必填。其他语言可选。
+
+#### 内容字段职责与公开呈现
+
+`title`、`searchSummary`、`summary` 和 `narrative` 承担不同的信息职责，不得互相替代：
+
+| 字段 | 职责 | 写作要求 |
+| --- | --- | --- |
+| `title` | 事件名称 | 准确标识主体与动作，不在标题中加入未经来源支持的评价 |
+| `searchSummary` | 核心导语 | 用 1-2 句概括事件最重要的事实或意义；供标题下副标题、搜索结果描述和社交分享描述使用 |
+| `summary` | 完整事件摘要 | 交代时间、主体、动作、直接结果和必要的事实边界；不能因已有 `searchSummary` 而省略 |
+| `narrative` | 背景与脉络 | 说明前因后果、机制、历史位置和限制；不得把推测写成已经发生的事实 |
+
+公开页面遵循“语义一致、逐层增量、详情页最完整”的原则：
+
+| 呈现场景 | `searchSummary` | `summary` | `narrative` | `claims` / `impacts` / `sources` |
+| --- | --- | --- | --- | --- |
+| 时间轴收起态 | 标题下导语 | 不展示 | 不展示 | 仅显示指标 |
+| 时间轴展开态 | 保留在卡片头部 | 完整展示 | 完整展示 | 展示影响与来源概览 |
+| 独立详情页 | 标题下导语 | 完整展示 | 完整展示 | 完整展示并保留证据绑定 |
+
+`searchSummary` 不能代替详情页的“事件摘要”。SEO 元数据可以使用 `searchSummary`，但正文中的“事件摘要”必须始终来自 `summary`。所有已发布事件必须提供完整中英文 `searchSummary`；兼容旧数据的渲染回退顺序为 `searchSummary[lang] ?? summary[lang]`，回退只用于防止页面空白，不替代数据补齐。
 
 #### 关联事件
 
@@ -586,6 +608,7 @@ EvidenceGrade 评价的是具体 claim/impact 的证据链，不等于单个来�
 - `impactIndex` 在 0-10。
 - `severity` 在 -3 到 +3。
 - 枚举字段只允许规定值。
+- 每个事件的 `searchSummary`、`summary` 和 `narrative` 都包含非空的 `en` 与 `zhHans`，且公开渲染不得用 `searchSummary` 替代 `summary`。
 - 每条 claim 的 `id`、`text`、`claimType`、`evidenceGrade`、`sourceIds` 完整且合法。
 - Claim 引用的 `sourceIds` 必须存在于 `data/sources.json`，且数组不能为空。
 - 每个事件都有 `editorial.createdAt` 和 `editorial.updatedAt`；可选的 `changeLog` 条目结构合法。

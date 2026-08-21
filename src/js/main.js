@@ -96,6 +96,7 @@ const LANGUAGES = {
     function localizedRecord(record) {
       return {
         title: localizedText(record?.title),
+        lead: localizedText(record?.searchSummary || record?.summary || record?.thesis),
         summary: localizedText(record?.summary || record?.thesis),
         desc: localizedText(record?.description || record?.thesis || record?.summary),
         category: localizedText(record?.categoryLabel),
@@ -1211,7 +1212,7 @@ const LANGUAGES = {
                     </div>
                     <div class="card-content">
                       <h3>${copy.title}</h3>
-                      <p class="summary">${copy.summary}</p>
+                      <p class="summary event-lead">${copy.lead}</p>
                       <div class="timeline-card-action">
                         <a class="source-title-link card-view-link" href="/events/${e.slug || e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
@@ -1244,7 +1245,7 @@ const LANGUAGES = {
                     </div>
                     <div class="card-content">
                       <h3>${copy.title}</h3>
-                      <p class="summary">${copy.summary}</p>
+                      <p class="summary event-lead">${copy.lead}</p>
                       <div class="timeline-card-action">
                         <a class="source-title-link card-view-link" href="/events/${e.slug || e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
@@ -1277,6 +1278,7 @@ const LANGUAGES = {
                     </div>
                     <div class="card-content">
                       <h3>${copy.title}</h3>
+                      <p class="summary event-lead">${copy.lead}</p>
                       <div class="timeline-card-action">
                         <a class="source-title-link card-view-link" href="/events/${e.slug || e.id}/" style="font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; color: var(--accent);" onclick="event.stopPropagation()">
                           <span>${isChineseContent() ? '在页面内查看' : 'View in Page'}</span>
@@ -1608,6 +1610,10 @@ const LANGUAGES = {
           <div class="timeline-details-inner">
             <div class="detail-section">
               <span class="detail-title">${isChineseContent() ? '事件摘要' : 'Event Summary'}</span>
+              <p class="commentary-text">${copy.summary}</p>
+            </div>
+            <div class="detail-section">
+              <span class="detail-title">${isChineseContent() ? '背景与脉络' : 'Context & Narrative'}</span>
               <p class="commentary-text">${copy.description}</p>
             </div>
             <div class="detail-section">
