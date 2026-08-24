@@ -6,23 +6,26 @@
     "zhHans": "阿里巴巴以 Apache 2.0 协议开源 Qwen3.8-27B 稠密多模态模型"
   },
   "searchSummary": {
-    "en": "Alibaba open-sourced Qwen3.8-27B under Apache 2.0, featuring 27.78B dense weights, native 256K context, and major gains in agentic coding and computer control.",
-    "zhHans": "阿里巴巴开源 Qwen3.8-27B（Apache 2.0 协议），具备 27.78B 稠密参数、原生 256K 上下文以及在 Agent 编程和计算机控制上的显著提升。"
+    "en": "Alibaba released Qwen3.8-27B under Apache 2.0 with 27.78B dense parameters, native 256K context, and major vendor-reported agentic coding gains.",
+    "zhHans": "阿里巴巴以 Apache 2.0 协议开源 Qwen3.8-27B，具备 27.78B 稠密参数、原生 256K 上下文及官方自测的显著 Agent 编程提升。"
   },
   "summary": {
-    "en": "On August 14, 2026, Alibaba's Qwen team released Qwen3.8-27B under the Apache 2.0 license. The 27.78-billion-parameter dense multimodal model features a native 262,144-token context window and reported substantial benchmark gains in terminal-based coding, GUI computer use, and visual reasoning.",
-    "zhHans": "2026 年 8 月 14 日，阿里巴巴通义千问团队在 Apache 2.0 协议下开源发布 Qwen3.8-27B。该模型包含 277.8 亿（27.78B）稠密多模态参数，具备原生 262,144（256K）token 上下文窗口，并在终端编程、GUI 计算机操作与视觉推理基准上报告了大幅性能提升。"
+    "en": "On August 14, 2026, Alibaba released Qwen3.8-27B under Apache 2.0. The 27.78-billion-parameter dense multimodal model features a native 262,144-token context window and reported benchmark gains in terminal coding and GUI use. On August 24, Hugging Face listed over 2.35 million downloads for the repository.",
+    "zhHans": "2026 年 8 月 14 日，阿里巴巴通义千问团队在 Apache 2.0 协议下开源发布 Qwen3.8-27B。该模型包含 277.8 亿稠密多模态参数，具备原生 262,144 token 上下文窗口，官方报告了终端编程与 GUI 操作的基准提升。截至 8 月 24 日，Hugging Face 仓库显示下载量已超过 235 万次。"
   },
   "narrative": {
-    "en": "Alibaba published weights and configuration files for Qwen3.8-27B on Hugging Face and ModelScope, targeting high-end workstations and private developer deployments. Unlike sparse mixture-of-experts architectures, the 27.78B dense design fits into 24GB GPUs when quantized to 4 bits at moderate context. Official benchmarks showed OSWorld-Verified rising from 63.9 to 84.3 and Terminal-Bench 2.1 reaching 73.0. Independent reviewers noted that unquantized BF16 execution and full 256K context windows still require substantial enterprise hardware, and all initial launch figures reflect vendor evaluations pending third-party reproduction.",
-    "zhHans": "阿里巴巴在 Hugging Face 与 ModelScope 上发布了 Qwen3.8-27B 的完整权重与配置文件，主要面向高端工作站与开发者本地私有化部署。与稀疏 MoE 架构不同，该 27.78B 稠密模型经 4-bit 量化后可在中等上下文下适配 24GB 显存显卡。官方模型卡显示，其 OSWorld-Verified 评测从 63.9 跃升至 84.3，Terminal-Bench 2.1 达到 73.0。独立评测指出，未量化的 BF16 推理与完整的 256K 长上下文仍需企业级算力支撑，发布初期的各项跑分仍待第三方独立机构进一步复现验证。"
+    "en": "Alibaba published weights and configuration files for Qwen3.8-27B on Hugging Face and ModelScope, targeting workstations and private developer deployments. The 27.78B dense design fits into 24GB GPUs when quantized to 4 bits at moderate context. Official benchmarks showed OSWorld-Verified rising from 63.9 to 84.3 and Terminal-Bench 2.1 reaching 73.0. Technical review noted that BF16 execution and full 256K context require enterprise hardware, and initial figures reflect vendor evaluations pending third-party reproduction.",
+    "zhHans": "阿里巴巴在 Hugging Face 与 ModelScope 上发布了 Qwen3.8-27B 的完整权重与配置文件，面向工作站与开发者本地私有化部署。该 27.78B 稠密模型经 4-bit 量化后可在中等上下文下适配 24GB 显存。官方模型卡显示其 OSWorld-Verified 评测由 63.9 升至 84.3，Terminal-Bench 2.1 达 73.0。技术评测指出未量化的 BF16 推理与完整 256K 上下文仍需企业级算力，初始跑分仍待第三方复现。"
   },
   "date": "2026-08-14",
   "datePrecision": "day",
-  "displayDate": "2026-08-14",
+  "displayDate": {
+    "en": "Aug 14, 2026",
+    "zhHans": "2026年8月14日"
+  },
   "status": "published",
   "significance": 2,
-  "consensusLevel": "broad",
+  "consensusLevel": "emerging",
   "controversy": false,
   "impacts": [
     {
@@ -30,8 +33,8 @@
       "severity": 2,
       "direction": "positive",
       "description": {
-        "en": "Delivers frontier-class OS-level computer use and agentic coding capabilities in a dense 27.78B parameter budget.",
-        "zhHans": "在 27.78B 稠密参数规模下实现了前沿级的系统级计算机操作与智能体编程能力。"
+        "en": "Provides frontier-competitive OS-level computer use and agentic coding capabilities in a dense 27.78B parameter budget.",
+        "zhHans": "在 27.78B 稠密参数规模下提供了具有前沿竞争力的系统级计算机操作与智能体编程能力。"
       },
       "affectedGroups": [
         "developers",
@@ -40,7 +43,7 @@
         "enterprise software teams"
       ],
       "timeframe": "long",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "alibaba-qwen38-27b-model-card-2026",
         "kingy-qwen38-27b-review-2026"
@@ -51,8 +54,8 @@
       "severity": 2,
       "direction": "positive",
       "description": {
-        "en": "Permits commercial, unmetered local deployment of multimodal agentic workflows under an Apache 2.0 license.",
-        "zhHans": "允许在 Apache 2.0 协议下对多模态 Agent 工作流进行无限制的商用本地部署。"
+        "en": "Permits commercial, unmetered local deployment under Apache 2.0, with over 2.35M downloads recorded on Hugging Face.",
+        "zhHans": "允许在 Apache 2.0 协议下进行无限制的商用本地部署，Hugging Face 上已记录超 235 万次下载。"
       },
       "affectedGroups": [
         "startups",
@@ -60,10 +63,10 @@
         "private enterprise operators"
       ],
       "timeframe": "medium",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "alibaba-qwen38-27b-model-card-2026",
-        "kingy-qwen38-27b-review-2026"
+        "huggingface-qwen38-27b-stats-2026"
       ]
     }
   ],
@@ -75,7 +78,7 @@
         "en": "On August 14, 2026, Alibaba released Qwen3.8-27B under Apache 2.0 with 27.78B dense parameters and native 256K context.",
         "zhHans": "2026 年 8 月 14 日，阿里巴巴在 Apache 2.0 协议下开源 Qwen3.8-27B，具备 27.78B 稠密参数与原生 256K 上下文。"
       },
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "alibaba-qwen38-27b-model-card-2026",
         "kingy-qwen38-27b-review-2026"
@@ -85,13 +88,13 @@
       "id": "qwen38-27b-impact-1",
       "claimType": "impact",
       "text": {
-        "en": "Significantly advances workstation-deployable multimodal agentic capabilities, scoring 84.3 on OSWorld-Verified in official evaluations.",
-        "zhHans": "显著提升了工作站级多模态 Agent 能力，官方评测中 OSWorld-Verified 达到 84.3 分。"
+        "en": "Alibaba reported 84.3 on OSWorld-Verified and 73.0 on Terminal-Bench 2.1; Hugging Face recorded 2.35M+ downloads within ten days.",
+        "zhHans": "官方报告 OSWorld-Verified 达到 84.3 分、Terminal-Bench 2.1 达到 73.0 分；Hugging Face 在 10 天内记录了超 235 万次下载。"
       },
       "evidenceGrade": "B",
       "sourceIds": [
         "alibaba-qwen38-27b-model-card-2026",
-        "kingy-qwen38-27b-review-2026"
+        "huggingface-qwen38-27b-stats-2026"
       ]
     },
     {
@@ -111,6 +114,7 @@
     {
       "sourceId": "alibaba-qwen38-27b-model-card-2026",
       "supports": [
+        "qwen-3-8-27b-open-weights-2026",
         "qwen38-27b-fact-1",
         "qwen38-27b-impact-1"
       ]
@@ -119,8 +123,13 @@
       "sourceId": "kingy-qwen38-27b-review-2026",
       "supports": [
         "qwen38-27b-fact-1",
-        "qwen38-27b-impact-1",
         "qwen38-27b-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "huggingface-qwen38-27b-stats-2026",
+      "supports": [
+        "qwen38-27b-impact-1"
       ]
     }
   ],
@@ -133,12 +142,20 @@
   ],
   "editorial": {
     "createdAt": "2026-08-20",
-    "updatedAt": "2026-08-20",
-    "reviewedAt": "2026-08-20",
+    "updatedAt": "2026-08-24",
+    "reviewedAt": "2026-08-24",
     "publishedAt": "2026-08-20",
     "reviewer": "gang",
     "reviewProvenance": "v2.3",
-    "reviewNotes": "Published after official Apache 2.0 weights release on Hugging Face and independent hardware review."
+    "reviewNotes": "Published after official Apache 2.0 weights release on Hugging Face and independent hardware review. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+    "lastSourceCheckAt": "2026-08-24",
+    "changeLog": [
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Added Hugging Face repository download verification, calibrated claim/impact evidence grades to B/C, and changed consensusLevel to emerging."
+      }
+    ]
   },
   "categories": [
     "capability",

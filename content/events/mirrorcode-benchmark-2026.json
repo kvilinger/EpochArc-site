@@ -6,8 +6,8 @@
     "zhHans": "Epoch AI 与 METR 发布 MirrorCode 长程编程任务结果"
   },
   "searchSummary": {
-    "en": "Epoch AI and METR published MirrorCode results on long-horizon coding tasks that require models to reimplement programs without source-code or web access. One Claude Opus 4.7 run completed a 16,000-line target in 14 hours at a reported $251 inference cost.",
-    "zhHans": "Epoch AI 与 METR 发布了 MirrorCode 长程编程任务结果。该基准要求模型在没有源代码和网络访问的条件下重建程序。一轮 Claude Opus 4.7 运行以报告的 251 美元推理成本，在 14 小时内完成了一个约 1.6 万行的目标程序。"
+    "en": "Epoch AI and METR released MirrorCode, evaluating LLMs on end-to-end software reimplementation without source code access.",
+    "zhHans": "Epoch AI 与 METR 联合发布 MirrorCode 基准，评测大模型在无源代码条件下端到端重构大型软件工程的能力。"
   },
   "summary": {
     "en": "Epoch AI and METR published MirrorCode results on long-horizon coding tasks that require models to reimplement programs without source-code or web access. One Claude Opus 4.7 run completed a 16,000-line target in 14 hours at a reported $251 inference cost.",
@@ -120,7 +120,7 @@
   ],
   "editorial": {
     "createdAt": "2026-07-28",
-    "updatedAt": "2026-07-28",
+    "updatedAt": "2026-08-24",
     "curator": "gang",
     "reviewProvenance": "v2.3",
     "changeLog": [
@@ -138,10 +138,17 @@
         "date": "2026-07-28",
         "changeType": "source_added",
         "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+      },
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Differentiated searchSummary lead from full summary to align with data model specifications."
       }
     ],
     "reviewer": "gang",
-    "reviewedAt": "2026-07-28",
-    "publishedAt": "2026-07-28"
+    "reviewedAt": "2026-08-24",
+    "publishedAt": "2026-07-28",
+    "lastSourceCheckAt": "2026-08-24",
+    "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
   }
 }

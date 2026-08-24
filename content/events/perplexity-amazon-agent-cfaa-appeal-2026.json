@@ -19,11 +19,14 @@
   },
   "date": "2026-08-04",
   "datePrecision": "day",
-  "displayDate": "2026-08-04",
+  "displayDate": {
+    "en": "Aug 4, 2026",
+    "zhHans": "2026年8月4日"
+  },
   "status": "published",
   "significance": 1,
-  "consensusLevel": "broad",
-  "controversy": false,
+  "consensusLevel": "debated",
+  "controversy": true,
   "impacts": [
     {
       "dimension": "paradigm_shift",
@@ -111,12 +114,20 @@
   ],
   "editorial": {
     "createdAt": "2026-08-10",
-    "updatedAt": "2026-08-10",
+    "updatedAt": "2026-08-24",
     "reviewProvenance": "v2.3",
-    "reviewedAt": "2026-08-10",
+    "reviewedAt": "2026-08-24",
     "reviewer": "gang",
-    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: preliminary injunction vacatur under CFAA/CDAFA access theories.",
-    "publishedAt": "2026-08-10"
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: preliminary injunction vacatur under CFAA/CDAFA access theories. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+    "publishedAt": "2026-08-10",
+    "lastSourceCheckAt": "2026-08-24",
+    "changeLog": [
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Marked controversy=true and consensus=debated reflecting ongoing state/contract/ToS litigation."
+      }
+    ]
   },
   "categories": [
     "governance",

@@ -6,16 +6,16 @@
     "zhHans": "Moonshot AI 发布 Kimi K3——2.8 万亿参数开放权重模型"
   },
   "searchSummary": {
-    "en": "Kimi K3 (Jul 2026) — Moonshot AI's 2.8-trillion-parameter MoE model with a 1M-token context window, native vision, and Kimi Delta Attention. Service access began at launch; full open weights were scheduled for July 27.",
-    "zhHans": "Kimi K3（2026 年 7 月）——Moonshot AI 的 2.8 万亿参数 MoE 模型，具备 100 万 token 上下文、原生视觉和 Kimi Delta Attention。发布时已开放服务访问，完整开放权重计划于 7 月 27 日提供。"
+    "en": "Moonshot AI announced Kimi K3, a 2.8T MoE open-weight model with 1M context, officially releasing the weights and technical report on July 27.",
+    "zhHans": "Moonshot AI 发布 2.8 万亿参数 MoE 开放权重模型 Kimi K3，支持 1M 上下文，并于 7 月 27 日正式开放权重与技术报告。"
   },
   "summary": {
-    "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model. Service access launched through Kimi products, while full open weights were scheduled for July 27. On July 24, UK AISI and US CAISI published a preliminary cyber assessment that found Kimi K3 ahead of GLM-5.2 on one exploit benchmark but below leading frontier cyber models.",
-    "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 2.8 万亿参数的混合专家模型 Kimi K3。Kimi 产品在发布时开放服务访问，完整开放权重计划于 7 月 27 日提供。7 月 24 日，英国 AISI 与美国 CAISI 发布初步网络安全评估：Kimi K3 在一项漏洞利用基准上超过 GLM-5.2，但仍低于领先的前沿网络模型。"
+    "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model with native vision and a 1-million-token context window. On July 27, Moonshot released the full weights, technical report, and infrastructure repositories under the Kimi K3 License. On July 24, UK AISI and US CAISI published a preliminary cyber assessment showing a 32% ExploitBench score.",
+    "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 2.8 万亿参数混合专家模型 Kimi K3，具备原生视觉与 100 万 token 上下文。7 月 27 日，Moonshot 正式在 Kimi K3 许可下开放完整权重、技术报告及训练 Infra 开源项目。7 月 24 日，英国 AISI 与美国 CAISI 发布初步网络安全评估，其 ExploitBench 得分为 32%。"
   },
   "narrative": {
-    "en": "Moonshot AI announced Kimi K3 with a 1-million-token context window, native vision, and a sparse MoE architecture. The launch established an access milestone, while early performance comparisons remained provider-reported. The later UK AISI and US CAISI assessment added a separate safety data point. It reported a 32% score for Kimi K3 on ExploitBench, compared with 24% for GLM-5.2, and no arbitrary-code-execution result across 41 evaluated samples. The agencies described the assessment as preliminary and based on a selective set of tests. The result does not establish a general cyber-capability ranking, but it provides public evidence about one risk-relevant capability area after launch.",
-    "zhHans": "Moonshot AI 发布 Kimi K3 时公布了 100 万 token 上下文、原生视觉和稀疏 MoE 架构。该发布建立了访问节点，但早期性能比较仍主要来自提供方。随后英国 AISI 与美国 CAISI 的评估补充了一项独立的安全数据点：Kimi K3 在 ExploitBench 上获得 32%，GLM-5.2 为 24%；在 41 个评估样本中没有实现任意代码执行。两家机构将其描述为基于有限测试集的初步评估。该结果不能建立通用网络能力排名，但为发布后的一个风险相关能力领域提供了公开证据。"
+    "en": "Moonshot AI launched Kimi K3 across its web and developer products on July 16 and delivered its full open-weights release on July 27 alongside its technical report and the MoonEP and AgentEnv infrastructure frameworks. The model uses Kimi Delta Attention (KDA) and Attention Residuals (AttnRes) to achieve a 2.5x scaling efficiency boost over Kimi K2. A joint preliminary cyber evaluation by UK AISI and US CAISI found Kimi K3 scored 32% on ExploitBench without achieving arbitrary code execution in evaluated samples.",
+    "zhHans": "Moonshot AI 于 7 月 16 日在其网页与开发者平台上线 Kimi K3，并于 7 月 27 日正式开源完整权重、技术报告以及 MoonEP 与 AgentEnv 基础设施框架。该模型采用 KDA 与注意力残差架构，相较 Kimi K2 实现了 2.5 倍的扩展效率提升。英国 AISI 与美国 CAISI 的联合初步网络评估显示，Kimi K3 在 ExploitBench 上取得 32% 得分，在所测样本中未出现任意代码执行。"
   },
   "date": "2026-07-16",
   "datePrecision": "day",
@@ -99,8 +99,8 @@
       "id": "kimi-k3-release-2026",
       "claimType": "fact",
       "text": {
-        "en": "Moonshot AI announced Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter MoE model with a 1M-token context window and native vision; full weights were scheduled for July 27.",
-        "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数 MoE 模型，具备 100 万 token 上下文和原生视觉；完整权重计划于 7 月 27 日提供。"
+        "en": "Moonshot AI announced Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter MoE model with a 1M-token context window, releasing weights on July 27.",
+        "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数 MoE 模型，具备 100 万 token 上下文，并于 7 月 27 日开放权重。"
       },
       "evidenceGrade": "A",
       "sourceIds": [
@@ -113,11 +113,12 @@
       "id": "kimi-k3-largest-open-source-2026",
       "claimType": "fact",
       "text": {
-        "en": "Moonshot describes Kimi K3 as a 2.8-trillion-parameter open-weight model, while independent inspection of the full weights was pending their scheduled July 27 release.",
-        "zhHans": "Moonshot 将 Kimi K3 描述为 2.8 万亿参数的开放权重模型；在计划于 7 月 27 日发布完整权重前，独立检查仍待进行。"
+        "en": "Moonshot released the full Kimi K3 weights, technical report, MoonEP, and AgentEnv repositories on July 27, 2026 under the Kimi K3 License.",
+        "zhHans": "Moonshot AI 于 2026 年 7 月 27 日在 Kimi K3 许可证下正式开源 Kimi K3 权重、技术报告、MoonEP 与 AgentEnv 仓库。"
       },
       "evidenceGrade": "A",
       "sourceIds": [
+        "kimi-k3-open-day-2026",
         "kimi-k3-official-2026",
         "venturebeat-kimi-k3-2026"
       ]
@@ -153,7 +154,14 @@
     {
       "sourceId": "kimi-k3-official-2026",
       "supports": [
+        "kimi-k3-2026",
         "kimi-k3-release-2026",
+        "kimi-k3-largest-open-source-2026"
+      ]
+    },
+    {
+      "sourceId": "kimi-k3-open-day-2026",
+      "supports": [
         "kimi-k3-largest-open-source-2026"
       ]
     },
@@ -161,19 +169,16 @@
       "sourceId": "venturebeat-kimi-k3-2026",
       "supports": [
         "kimi-k3-release-2026"
-      ],
-      "quote": "Moonshot AI released Kimi K3, a 2.8 trillion-parameter open-source AI model from China that rivals top U.S. systems."
+      ]
     },
     {
       "sourceId": "marktechpost-kimi-k3-2026",
       "supports": [
         "kimi-k3-release-2026"
-      ],
-      "quote": "Moonshot AI just released Kimi K3. It is a 2.8-trillion-parameter model with native vision and a 1-million-token context window."
+      ]
     },
     {
       "sourceId": "kie-ai-kimi-k3-2026",
-      "quote": "Kimi K3 is Moonshot AI's next-gen model — a ~2.8T MoE with a 1M-token context window.",
       "supports": [
         "kimi-k3-2026"
       ]
@@ -203,8 +208,8 @@
   ],
   "editorial": {
     "createdAt": "2026-07-16",
-    "updatedAt": "2026-07-28",
-    "reviewedAt": "2026-07-28",
+    "updatedAt": "2026-08-24",
+    "reviewedAt": "2026-08-24",
     "publishedAt": "2026-07-16",
     "curator": "gang",
     "changeLog": [
@@ -227,9 +232,16 @@
         "date": "2026-07-28",
         "changeType": "source_added",
         "summary": "Added the July 24 UK AISI/US CAISI preliminary cyber assessment and its methodology limitation."
+      },
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Updated full weights status from scheduled to completed on July 27, added official Moonshot Open Day source, and verified all accessedAt metadata."
       }
     ],
     "reviewer": "gang",
-    "reviewProvenance": "v2.3"
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-08-24",
+    "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
   }
 }

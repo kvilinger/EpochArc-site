@@ -19,10 +19,13 @@
   },
   "date": "2026-08-05",
   "datePrecision": "day",
-  "displayDate": "2026-08-05",
+  "displayDate": {
+    "en": "Aug 5, 2026",
+    "zhHans": "2026年8月5日"
+  },
   "status": "published",
-  "significance": 2,
-  "consensusLevel": "broad",
+  "significance": 1,
+  "consensusLevel": "emerging",
   "controversy": false,
   "impacts": [
     {
@@ -88,12 +91,11 @@
       "id": "meta-muse-contributor-tier-2026",
       "claimType": "fact",
       "text": {
-        "en": "Meta introduced a 90%+ discounted Contributor Tier for Muse Spark 1.2 ($0.10/$0.20 per million input/output tokens) allowing user prompt and interaction logs to be used for training coding models.",
-        "zhHans": "Meta 为 Muse Spark 1.2 推出了降幅超 90% 的“贡献者套餐”（每百万输入/输出 token 定价 $0.10/$0.20），允许将其提示词与交互日志用于训练编程模型。"
+        "en": "Meta introduced a rate-limited Contributor Tier for Muse Spark 1.2 permitting prompts and completions to be used to improve Meta models.",
+        "zhHans": "Meta 为 Muse Spark 1.2 推出了基于 5 小时滑动窗口限速的“贡献者套餐”，允许将提示词与输出用于训练与改进 Meta 模型。"
       },
       "evidenceGrade": "B",
       "sourceIds": [
-        "the-batch-meta-contributor-tier-2026",
         "meta-muse-code-launch-2026"
       ]
     }
@@ -104,7 +106,8 @@
       "supports": [
         "meta-muse-code-spark-1-2-2026",
         "meta-muse-code-fact-1",
-        "meta-muse-code-limitation-1"
+        "meta-muse-code-limitation-1",
+        "meta-muse-contributor-tier-2026"
       ]
     },
     {
@@ -112,13 +115,6 @@
       "supports": [
         "meta-muse-code-fact-1",
         "meta-muse-code-impact-1"
-      ]
-    },
-    {
-      "sourceId": "the-batch-meta-contributor-tier-2026",
-      "supports": [
-        "meta-muse-code-spark-1-2-2026",
-        "meta-muse-contributor-tier-2026"
       ]
     }
   ],
@@ -128,12 +124,20 @@
   ],
   "editorial": {
     "createdAt": "2026-08-10",
-    "updatedAt": "2026-08-14",
+    "updatedAt": "2026-08-24",
     "reviewProvenance": "v2.3",
-    "reviewedAt": "2026-08-10",
+    "reviewedAt": "2026-08-24",
     "reviewer": "gang",
-    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: beta tool release and API commercial availability.",
-    "publishedAt": "2026-08-10"
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: beta tool release and API commercial availability. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+    "publishedAt": "2026-08-10",
+    "lastSourceCheckAt": "2026-08-24",
+    "changeLog": [
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Removed 404 The Batch source, re-reviewed after August 14 contributor tier edit, calibrated significance from L2 to L1, and changed consensus to emerging."
+      }
+    ]
   },
   "categories": [
     "product",

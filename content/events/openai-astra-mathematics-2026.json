@@ -2,8 +2,8 @@
   "id": "openai-astra-mathematics-2026",
   "slug": "openai-astra-mathematics-2026",
   "title": {
-    "en": "OpenAI Announces Ten Mathematics Breakthroughs Solved by Internal Astra Model",
-    "zhHans": "OpenAI 宣布内部 Astra 模型攻克 10 项数学与理论计算机科学难题"
+    "en": "OpenAI Reports Ten Mathematics Breakthroughs Solved or Advanced by Internal Astra Model",
+    "zhHans": "OpenAI 报告内部 Astra 模型攻克或显著推进 10 项数学与理论计算机科学难题"
   },
   "searchSummary": {
     "en": "OpenAI announced that an unreleased internal version of Astra solved 10 open math problems, including three Erdős conjectures, releasing Lean formal certificates.",
@@ -19,10 +19,13 @@
   },
   "date": "2026-08-01",
   "datePrecision": "day",
-  "displayDate": "2026-08-01",
+  "displayDate": {
+    "en": "Aug 1, 2026",
+    "zhHans": "2026年8月1日"
+  },
   "status": "published",
   "significance": 1,
-  "consensusLevel": "broad",
+  "consensusLevel": "emerging",
   "controversy": false,
   "impacts": [
     {
@@ -130,16 +133,23 @@
   ],
   "editorial": {
     "createdAt": "2026-08-10",
-    "updatedAt": "2026-08-10",
+    "updatedAt": "2026-08-24",
     "reviewProvenance": "v2.3",
-    "reviewedAt": "2026-08-10",
+    "reviewedAt": "2026-08-24",
     "reviewer": "gang",
-    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: unreleased model mathematics breakthroughs with Lean certificates.",
-    "publishedAt": "2026-08-10"
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: unreleased model mathematics breakthroughs with Lean certificates. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+    "publishedAt": "2026-08-10",
+    "lastSourceCheckAt": "2026-08-24",
+    "changeLog": [
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Refined title to match solved-or-advanced factual boundary, removed secondary society category, and calibrated consensus to emerging."
+      }
+    ]
   },
   "categories": [
-    "capability",
-    "society"
+    "capability"
   ],
   "impactIndex": 5
 }

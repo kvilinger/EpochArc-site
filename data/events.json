@@ -7,8 +7,8 @@
       "zhHans": "美国众议员提出《AI 紧急停机法案》"
     },
     "searchSummary": {
-      "en": "Representatives Ted Lieu and Nathaniel Moran introduced a bill that would require covered AI developers to maintain the ability to throttle, suspend, or shut down covered systems. The bill has not been enacted.",
-      "zhHans": "Ted Lieu 与 Nathaniel Moran 两位众议员提出法案，要求受规制的 AI 开发者保留限速、暂停或关闭相关系统的能力。该法案尚未获通过。"
+      "en": "US lawmakers introduced the AI Kill Switch Act to mandate technical shutdown and throttling capabilities for high-risk frontier AI systems.",
+      "zhHans": "美国国会议员提出《AI 紧急停机法案》，拟强制要求高风险前沿 AI 系统具备技术停机与限速能力。"
     },
     "summary": {
       "en": "Representatives Ted Lieu and Nathaniel Moran introduced a bill that would require covered AI developers to maintain the ability to throttle, suspend, or shut down covered systems. The bill has not been enacted.",
@@ -128,7 +128,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-28",
-      "updatedAt": "2026-07-28",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewProvenance": "v2.3",
       "changeLog": [
@@ -146,11 +146,18 @@
           "date": "2026-07-28",
           "changeType": "source_added",
           "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Differentiated searchSummary lead from full summary."
         }
       ],
       "reviewer": "gang",
-      "reviewedAt": "2026-07-28",
-      "publishedAt": "2026-07-28"
+      "reviewedAt": "2026-08-24",
+      "publishedAt": "2026-07-28",
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -2032,7 +2039,7 @@
           "security engineers"
         ],
         "timeframe": "medium",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "anthropic-cryptanalysis-2026",
           "anthropic-hawk-key-recovery-2026",
@@ -2209,10 +2216,10 @@
     ],
     "editorial": {
       "createdAt": "2026-07-30",
-      "updatedAt": "2026-08-05",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewer": "gang",
-      "reviewedAt": "2026-08-05",
+      "reviewedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
       "publishedAt": "2026-07-30",
       "changeLog": [
@@ -2230,9 +2237,15 @@
           "date": "2026-08-05",
           "changeType": "source_added",
           "summary": "Added NIST and HAWK-team confirmation that HAWK was withdrawn from the additional-signatures process."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Adjusted capability impact evidenceGrade from A to B following Tier 3 reclassification of independent cryptography blog."
         }
       ],
-      "lastSourceCheckAt": "2026-08-05"
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -3831,8 +3844,8 @@
       "zhHans": "中国拟人化 AI 互动服务规则生效"
     },
     "searchSummary": {
-      "en": "China’s interim measures for anthropomorphic AI interaction services took effect on July 15, 2026. The rules cover public-facing services that simulate human-like personality, thinking, or communication while providing emotional interaction.",
-      "zhHans": "中国拟人化 AI 互动服务管理暂行办法于 2026 年 7 月 15 日生效。该规则覆盖面向公众、模拟人类人格特征、思维方式或交流方式并提供情感互动的服务。"
+      "en": "China’s interim regulations for anthropomorphic AI services took effect on July 15, 2026, establishing provider obligations for emotional interaction and user protection.",
+      "zhHans": "中国《人工智能拟人化互动服务管理暂行办法》于 2026 年 7 月 15 日正式施行，确立了情感互动与用户安全防护的合规义务。"
     },
     "summary": {
       "en": "China’s interim measures for anthropomorphic AI interaction services took effect on July 15, 2026. The rules cover public-facing services that simulate human-like personality, thinking, or communication while providing emotional interaction.",
@@ -3962,7 +3975,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-28",
-      "updatedAt": "2026-07-28",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewProvenance": "v2.3",
       "changeLog": [
@@ -3980,11 +3993,18 @@
           "date": "2026-07-28",
           "changeType": "source_added",
           "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Differentiated searchSummary lead from full summary."
         }
       ],
       "reviewer": "gang",
-      "reviewedAt": "2026-07-28",
-      "publishedAt": "2026-07-28"
+      "reviewedAt": "2026-08-24",
+      "publishedAt": "2026-07-28",
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -4945,8 +4965,8 @@
       "zhHans": "Anthropic 发布 Claude Opus 5"
     },
     "searchSummary": {
-      "en": "Anthropic released Claude Opus 5 on July 24, 2026, and made it the default model for Claude Max. The company introduced effort settings that let customers trade token use for task performance.",
-      "zhHans": "Anthropic 于 2026 年 7 月 24 日发布 Claude Opus 5，并将其设为 Claude Max 的默认模型。该公司引入了 effort 设置，供用户在 token 消耗与任务表现之间取舍。"
+      "en": "Anthropic launched Claude Opus 5 with configurable effort settings, achieving frontier benchmark results at lower operating costs.",
+      "zhHans": "Anthropic 发布 Claude Opus 5，引入可调节思考强度设置，以更低成本实现前沿级基准性能。"
     },
     "summary": {
       "en": "Anthropic released Claude Opus 5 on July 24, 2026, and made it the default model for Claude Max. The company introduced effort settings that let customers trade token use for task performance.",
@@ -4963,10 +4983,10 @@
       "zhHans": "2026年07月24日"
     },
     "status": "published",
-    "significance": 2,
+    "significance": 1,
     "impactIndex": 4,
     "consensusLevel": "emerging",
-    "controversy": true,
+    "controversy": false,
     "categories": [
       "capability",
       "product"
@@ -5057,7 +5077,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-28",
-      "updatedAt": "2026-07-28",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewProvenance": "v2.3",
       "changeLog": [
@@ -5075,11 +5095,18 @@
           "date": "2026-07-28",
           "changeType": "source_added",
           "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Differentiated searchSummary lead from full summary, calibrated significance from L2 to L1, and set controversy to false."
         }
       ],
       "reviewer": "gang",
-      "reviewedAt": "2026-07-28",
-      "publishedAt": "2026-07-28"
+      "reviewedAt": "2026-08-24",
+      "publishedAt": "2026-07-28",
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -6196,10 +6223,13 @@
     },
     "date": "2026-07-31",
     "datePrecision": "day",
-    "displayDate": "2026-07-31",
+    "displayDate": {
+      "en": "Jul 31, 2026",
+      "zhHans": "2026年7月31日"
+    },
     "status": "published",
-    "significance": 2,
-    "consensusLevel": "broad",
+    "significance": 1,
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
@@ -6296,12 +6326,20 @@
     ],
     "editorial": {
       "createdAt": "2026-07-31",
-      "updatedAt": "2026-08-10",
+      "updatedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
-      "reviewedAt": "2026-08-10",
+      "reviewedAt": "2026-08-24",
       "reviewer": "gang",
-      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: API status formalization and post-training checkpoint update.",
-      "publishedAt": "2026-08-10"
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: API status formalization and post-training checkpoint update. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "publishedAt": "2026-08-10",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Calibrated significance from L2 to L1 and changed consensus to emerging."
+        }
+      ]
     },
     "categories": [
       "product",
@@ -6330,10 +6368,13 @@
     },
     "date": "2026-08-13",
     "datePrecision": "day",
-    "displayDate": "2026-08-13",
+    "displayDate": {
+      "en": "Aug 13, 2026",
+      "zhHans": "2026年8月13日"
+    },
     "status": "published",
-    "significance": 2,
-    "consensusLevel": "broad",
+    "significance": 1,
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
@@ -6366,7 +6407,8 @@
         },
         "evidenceGrade": "B",
         "sourceIds": [
-          "deepseek-v4-pro-ga-changelog-2026"
+          "deepseek-v4-pro-ga-changelog-2026",
+          "reuters-deepseek-v4-pro-2026"
         ]
       },
       {
@@ -6378,7 +6420,8 @@
         },
         "evidenceGrade": "B",
         "sourceIds": [
-          "deepseek-v4-pro-ga-changelog-2026"
+          "deepseek-v4-pro-ga-changelog-2026",
+          "reuters-deepseek-v4-pro-2026"
         ]
       },
       {
@@ -6390,7 +6433,8 @@
         },
         "evidenceGrade": "B",
         "sourceIds": [
-          "deepseek-v4-pro-ga-changelog-2026"
+          "deepseek-v4-pro-ga-changelog-2026",
+          "reuters-deepseek-v4-pro-2026"
         ]
       }
     ],
@@ -6405,11 +6449,12 @@
         ]
       },
       {
-        "sourceId": "technode-deepseek-v4-pro-ga-2026",
+        "sourceId": "reuters-deepseek-v4-pro-2026",
         "supports": [
           "deepseek-v4-pro-ga-2026",
           "deepseek-v4-pro-ga-fact-1",
-          "deepseek-v4-pro-ga-impact-1"
+          "deepseek-v4-pro-ga-impact-1",
+          "deepseek-v4-pro-ga-limitation-1"
         ]
       }
     ],
@@ -6417,17 +6462,24 @@
       "deepseek-v4-flash-official-2026"
     ],
     "relatedForecasts": [
-      "ai-software-teams",
-      "autonomous-enterprise-workflows"
+      "ai-software-teams"
     ],
     "editorial": {
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16",
-      "reviewedAt": "2026-08-16",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
       "publishedAt": "2026-08-16",
       "reviewer": "gang",
       "reviewProvenance": "v2.3",
-      "reviewNotes": "Published after official DeepSeek API changelog confirmation of full GA rollout."
+      "reviewNotes": "Published after official DeepSeek API changelog confirmation of full GA rollout. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Replaced 404 TechNode source with Reuters coverage, downgraded significance from L2 to L1, changed consensus to emerging, and unlinked enterprise-workflows direction."
+        }
+      ]
     },
     "categories": [
       "capability",
@@ -8554,7 +8606,7 @@
     "consensusLevel": "emerging",
     "controversy": true,
     "categories": [
-      "product"
+      "governance"
     ],
     "impacts": [
       {
@@ -8666,10 +8718,10 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-30",
-      "updatedAt": "2026-07-30",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewer": "gang",
-      "reviewedAt": "2026-07-30",
+      "reviewedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
       "publishedAt": "2026-07-30",
       "changeLog": [
@@ -8682,8 +8734,15 @@
           "date": "2026-07-30",
           "changeType": "source_added",
           "summary": "Added GCC's policy and independent LWN coverage; retained the explicit exceptions."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Corrected primary category from product to governance."
         }
-      ]
+      ],
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -9527,12 +9586,12 @@
     "id": "glm-5-3-coding-cyber-launch-2026",
     "slug": "glm-5-3-coding-cyber-launch-2026",
     "title": {
-      "en": "Z.ai Launches GLM-5.3 Flagship With Post-Trained Coding and Cyber Defense Capabilities",
-      "zhHans": "智谱 AI 发布后训练旗舰 GLM-5.3，主打 Agent 编程与网络安全攻防"
+      "en": "Z.ai Launches GLM-5.3 Flagship With Post-Trained Coding and Cybersecurity Capabilities",
+      "zhHans": "智谱 AI 发布后训练旗舰 GLM-5.3，主打 Agent 编程与网络安全能力"
     },
     "searchSummary": {
-      "en": "Z.ai launched GLM-5.3, leveraging extensive post-training on a 743B base to deliver 1M context, a 50% coding benchmark gain, and frontier cyber defense performance.",
-      "zhHans": "智谱 AI 发布 GLM-5.3，在 743B 底座上通过强化后训练实现 1M 上下文、代码基准提升 50% 与网络安全前沿表现。"
+      "en": "Z.ai launched GLM-5.3, leveraging post-training on an existing 743B base to deliver 1M context, 50% coding benchmark gains, and advanced cybersecurity performance.",
+      "zhHans": "智谱 AI 发布 GLM-5.3，在既有 743B 底座上通过强化后训练实现 1M 上下文、代码基准提升 50% 与网络安全前沿表现。"
     },
     "summary": {
       "en": "On August 14, 2026, Z.ai launched GLM-5.3, an updated flagship model built upon its 743-billion-parameter base architecture. Powered by scaled-up post-training, the model features a 1,000,000-token context window and demonstrated major performance leaps in autonomous coding and cybersecurity evaluations.",
@@ -9544,10 +9603,13 @@
     },
     "date": "2026-08-14",
     "datePrecision": "day",
-    "displayDate": "2026-08-14",
+    "displayDate": {
+      "en": "Aug 14, 2026",
+      "zhHans": "2026年8月14日"
+    },
     "status": "published",
-    "significance": 2,
-    "consensusLevel": "broad",
+    "significance": 1,
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
@@ -9555,8 +9617,8 @@
         "severity": 2,
         "direction": "positive",
         "description": {
-          "en": "Demonstrates that extensive post-training on a 743B base can yield dramatic gains in long-horizon coding and cybersecurity tasks without retraining base weights.",
-          "zhHans": "证明了在 743B 底座上进行深度后训练可在不重训底座的情况下，在长流程编程与网络安全任务中实现跨越式提升。"
+          "en": "Demonstrates that extensive post-training on a 743B base yields significant gains in long-horizon coding and cybersecurity tasks without retraining base weights.",
+          "zhHans": "证明了在 743B 底座上进行深度后训练可在不重训底座的情况下，在长流程编程与网络安全任务中实现显著提升。"
         },
         "affectedGroups": [
           "software engineers",
@@ -9564,7 +9626,7 @@
           "enterprise developers"
         ],
         "timeframe": "long",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "z-ai-glm53-release-notes-2026",
           "explainx-glm53-launch-analysis-2026"
@@ -9585,6 +9647,7 @@
         "timeframe": "medium",
         "evidenceGrade": "B",
         "sourceIds": [
+          "z-ai-glm53-release-notes-2026",
           "explainx-glm53-launch-analysis-2026",
           "uniteai-glm53-cyber-coding-2026"
         ]
@@ -9598,7 +9661,7 @@
           "en": "On August 14, 2026, Z.ai launched GLM-5.3 with a 743B base architecture, 1M context window, and enhanced post-training.",
           "zhHans": "2026 年 8 月 14 日，智谱 AI 发布基于 743B 底座架构、具备 1M 上下文窗口与深度后训练的 GLM-5.3。"
         },
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "z-ai-glm53-release-notes-2026",
           "explainx-glm53-launch-analysis-2026"
@@ -9608,8 +9671,8 @@
         "id": "glm53-launch-impact-1",
         "claimType": "impact",
         "text": {
-          "en": "Reported a 50% improvement in coding scores over GLM-5.2 and frontier-level scores across Terminal-Bench and CyberGym.",
-          "zhHans": "官方报告代码得分较 GLM-5.2 提升 50%，并在 Terminal-Bench 和 CyberGym 上达到前沿水平。"
+          "en": "Reported a 50% improvement in coding scores over GLM-5.2 and strong scores across Terminal-Bench and CyberGym in vendor evaluations.",
+          "zhHans": "官方自测报告代码得分较 GLM-5.2 提升 50%，并在 Terminal-Bench 和 CyberGym 上取得前沿成绩。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
@@ -9621,11 +9684,12 @@
         "id": "glm53-launch-limitation-1",
         "claimType": "limitation",
         "text": {
-          "en": "At launch, access was limited to API and Coding Plan users, with open-weights release postponed for a safety evaluation window.",
-          "zhHans": "发布初期访问仅限于 API 和 Coding Plan 用户，开源权重因安全审查要求延后分阶段提供。"
+          "en": "At launch, access was limited to API and Coding Plan users, with benchmark gains awaiting independent third-party confirmation.",
+          "zhHans": "发布初期访问仅限于 API 和 Coding Plan 用户，各项基准提升仍待第三方独立复现。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
+          "z-ai-glm53-release-notes-2026",
           "explainx-glm53-launch-analysis-2026",
           "uniteai-glm53-cyber-coding-2026"
         ]
@@ -9659,17 +9723,24 @@
       "deepseek-v4-flash-official-2026"
     ],
     "relatedForecasts": [
-      "ai-software-teams",
-      "autonomous-enterprise-workflows"
+      "ai-software-teams"
     ],
     "editorial": {
       "createdAt": "2026-08-20",
-      "updatedAt": "2026-08-20",
-      "reviewedAt": "2026-08-20",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
       "publishedAt": "2026-08-20",
       "reviewer": "gang",
       "reviewProvenance": "v2.3",
-      "reviewNotes": "Published after official Z.ai documentation release, developer rollout, and independent benchmark review."
+      "reviewNotes": "Published after official Z.ai documentation release, developer rollout, and independent benchmark review. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Calibrated significance from L2 to L1, changed consensus to emerging, unlinked enterprise-workflows direction, and adjusted evidence grades to reflect vendor benchmark status."
+        }
+      ]
     },
     "categories": [
       "capability",
@@ -11930,16 +12001,16 @@
       "zhHans": "Moonshot AI 发布 Kimi K3——2.8 万亿参数开放权重模型"
     },
     "searchSummary": {
-      "en": "Kimi K3 (Jul 2026) — Moonshot AI's 2.8-trillion-parameter MoE model with a 1M-token context window, native vision, and Kimi Delta Attention. Service access began at launch; full open weights were scheduled for July 27.",
-      "zhHans": "Kimi K3（2026 年 7 月）——Moonshot AI 的 2.8 万亿参数 MoE 模型，具备 100 万 token 上下文、原生视觉和 Kimi Delta Attention。发布时已开放服务访问，完整开放权重计划于 7 月 27 日提供。"
+      "en": "Moonshot AI announced Kimi K3, a 2.8T MoE open-weight model with 1M context, officially releasing the weights and technical report on July 27.",
+      "zhHans": "Moonshot AI 发布 2.8 万亿参数 MoE 开放权重模型 Kimi K3，支持 1M 上下文，并于 7 月 27 日正式开放权重与技术报告。"
     },
     "summary": {
-      "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model. Service access launched through Kimi products, while full open weights were scheduled for July 27. On July 24, UK AISI and US CAISI published a preliminary cyber assessment that found Kimi K3 ahead of GLM-5.2 on one exploit benchmark but below leading frontier cyber models.",
-      "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 2.8 万亿参数的混合专家模型 Kimi K3。Kimi 产品在发布时开放服务访问，完整开放权重计划于 7 月 27 日提供。7 月 24 日，英国 AISI 与美国 CAISI 发布初步网络安全评估：Kimi K3 在一项漏洞利用基准上超过 GLM-5.2，但仍低于领先的前沿网络模型。"
+      "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model with native vision and a 1-million-token context window. On July 27, Moonshot released the full weights, technical report, and infrastructure repositories under the Kimi K3 License. On July 24, UK AISI and US CAISI published a preliminary cyber assessment showing a 32% ExploitBench score.",
+      "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 2.8 万亿参数混合专家模型 Kimi K3，具备原生视觉与 100 万 token 上下文。7 月 27 日，Moonshot 正式在 Kimi K3 许可下开放完整权重、技术报告及训练 Infra 开源项目。7 月 24 日，英国 AISI 与美国 CAISI 发布初步网络安全评估，其 ExploitBench 得分为 32%。"
     },
     "narrative": {
-      "en": "Moonshot AI announced Kimi K3 with a 1-million-token context window, native vision, and a sparse MoE architecture. The launch established an access milestone, while early performance comparisons remained provider-reported. The later UK AISI and US CAISI assessment added a separate safety data point. It reported a 32% score for Kimi K3 on ExploitBench, compared with 24% for GLM-5.2, and no arbitrary-code-execution result across 41 evaluated samples. The agencies described the assessment as preliminary and based on a selective set of tests. The result does not establish a general cyber-capability ranking, but it provides public evidence about one risk-relevant capability area after launch.",
-      "zhHans": "Moonshot AI 发布 Kimi K3 时公布了 100 万 token 上下文、原生视觉和稀疏 MoE 架构。该发布建立了访问节点，但早期性能比较仍主要来自提供方。随后英国 AISI 与美国 CAISI 的评估补充了一项独立的安全数据点：Kimi K3 在 ExploitBench 上获得 32%，GLM-5.2 为 24%；在 41 个评估样本中没有实现任意代码执行。两家机构将其描述为基于有限测试集的初步评估。该结果不能建立通用网络能力排名，但为发布后的一个风险相关能力领域提供了公开证据。"
+      "en": "Moonshot AI launched Kimi K3 across its web and developer products on July 16 and delivered its full open-weights release on July 27 alongside its technical report and the MoonEP and AgentEnv infrastructure frameworks. The model uses Kimi Delta Attention (KDA) and Attention Residuals (AttnRes) to achieve a 2.5x scaling efficiency boost over Kimi K2. A joint preliminary cyber evaluation by UK AISI and US CAISI found Kimi K3 scored 32% on ExploitBench without achieving arbitrary code execution in evaluated samples.",
+      "zhHans": "Moonshot AI 于 7 月 16 日在其网页与开发者平台上线 Kimi K3，并于 7 月 27 日正式开源完整权重、技术报告以及 MoonEP 与 AgentEnv 基础设施框架。该模型采用 KDA 与注意力残差架构，相较 Kimi K2 实现了 2.5 倍的扩展效率提升。英国 AISI 与美国 CAISI 的联合初步网络评估显示，Kimi K3 在 ExploitBench 上取得 32% 得分，在所测样本中未出现任意代码执行。"
     },
     "date": "2026-07-16",
     "datePrecision": "day",
@@ -12023,8 +12094,8 @@
         "id": "kimi-k3-release-2026",
         "claimType": "fact",
         "text": {
-          "en": "Moonshot AI announced Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter MoE model with a 1M-token context window and native vision; full weights were scheduled for July 27.",
-          "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数 MoE 模型，具备 100 万 token 上下文和原生视觉；完整权重计划于 7 月 27 日提供。"
+          "en": "Moonshot AI announced Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter MoE model with a 1M-token context window, releasing weights on July 27.",
+          "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数 MoE 模型，具备 100 万 token 上下文，并于 7 月 27 日开放权重。"
         },
         "evidenceGrade": "A",
         "sourceIds": [
@@ -12037,11 +12108,12 @@
         "id": "kimi-k3-largest-open-source-2026",
         "claimType": "fact",
         "text": {
-          "en": "Moonshot describes Kimi K3 as a 2.8-trillion-parameter open-weight model, while independent inspection of the full weights was pending their scheduled July 27 release.",
-          "zhHans": "Moonshot 将 Kimi K3 描述为 2.8 万亿参数的开放权重模型；在计划于 7 月 27 日发布完整权重前，独立检查仍待进行。"
+          "en": "Moonshot released the full Kimi K3 weights, technical report, MoonEP, and AgentEnv repositories on July 27, 2026 under the Kimi K3 License.",
+          "zhHans": "Moonshot AI 于 2026 年 7 月 27 日在 Kimi K3 许可证下正式开源 Kimi K3 权重、技术报告、MoonEP 与 AgentEnv 仓库。"
         },
         "evidenceGrade": "A",
         "sourceIds": [
+          "kimi-k3-open-day-2026",
           "kimi-k3-official-2026",
           "venturebeat-kimi-k3-2026"
         ]
@@ -12077,7 +12149,14 @@
       {
         "sourceId": "kimi-k3-official-2026",
         "supports": [
+          "kimi-k3-2026",
           "kimi-k3-release-2026",
+          "kimi-k3-largest-open-source-2026"
+        ]
+      },
+      {
+        "sourceId": "kimi-k3-open-day-2026",
+        "supports": [
           "kimi-k3-largest-open-source-2026"
         ]
       },
@@ -12085,19 +12164,16 @@
         "sourceId": "venturebeat-kimi-k3-2026",
         "supports": [
           "kimi-k3-release-2026"
-        ],
-        "quote": "Moonshot AI released Kimi K3, a 2.8 trillion-parameter open-source AI model from China that rivals top U.S. systems."
+        ]
       },
       {
         "sourceId": "marktechpost-kimi-k3-2026",
         "supports": [
           "kimi-k3-release-2026"
-        ],
-        "quote": "Moonshot AI just released Kimi K3. It is a 2.8-trillion-parameter model with native vision and a 1-million-token context window."
+        ]
       },
       {
         "sourceId": "kie-ai-kimi-k3-2026",
-        "quote": "Kimi K3 is Moonshot AI's next-gen model — a ~2.8T MoE with a 1M-token context window.",
         "supports": [
           "kimi-k3-2026"
         ]
@@ -12127,8 +12203,8 @@
     ],
     "editorial": {
       "createdAt": "2026-07-16",
-      "updatedAt": "2026-07-28",
-      "reviewedAt": "2026-07-28",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
       "publishedAt": "2026-07-16",
       "curator": "gang",
       "changeLog": [
@@ -12151,10 +12227,17 @@
           "date": "2026-07-28",
           "changeType": "source_added",
           "summary": "Added the July 24 UK AISI/US CAISI preliminary cyber assessment and its methodology limitation."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Updated full weights status from scheduled to completed on July 27, added official Moonshot Open Day source, and verified all accessedAt metadata."
         }
       ],
       "reviewer": "gang",
-      "reviewProvenance": "v2.3"
+      "reviewProvenance": "v2.3",
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -12718,10 +12801,13 @@
     },
     "date": "2026-08-05",
     "datePrecision": "day",
-    "displayDate": "2026-08-05",
+    "displayDate": {
+      "en": "Aug 5, 2026",
+      "zhHans": "2026年8月5日"
+    },
     "status": "published",
-    "significance": 2,
-    "consensusLevel": "broad",
+    "significance": 1,
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
@@ -12787,12 +12873,11 @@
         "id": "meta-muse-contributor-tier-2026",
         "claimType": "fact",
         "text": {
-          "en": "Meta introduced a 90%+ discounted Contributor Tier for Muse Spark 1.2 ($0.10/$0.20 per million input/output tokens) allowing user prompt and interaction logs to be used for training coding models.",
-          "zhHans": "Meta 为 Muse Spark 1.2 推出了降幅超 90% 的“贡献者套餐”（每百万输入/输出 token 定价 $0.10/$0.20），允许将其提示词与交互日志用于训练编程模型。"
+          "en": "Meta introduced a rate-limited Contributor Tier for Muse Spark 1.2 permitting prompts and completions to be used to improve Meta models.",
+          "zhHans": "Meta 为 Muse Spark 1.2 推出了基于 5 小时滑动窗口限速的“贡献者套餐”，允许将提示词与输出用于训练与改进 Meta 模型。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
-          "the-batch-meta-contributor-tier-2026",
           "meta-muse-code-launch-2026"
         ]
       }
@@ -12803,7 +12888,8 @@
         "supports": [
           "meta-muse-code-spark-1-2-2026",
           "meta-muse-code-fact-1",
-          "meta-muse-code-limitation-1"
+          "meta-muse-code-limitation-1",
+          "meta-muse-contributor-tier-2026"
         ]
       },
       {
@@ -12811,13 +12897,6 @@
         "supports": [
           "meta-muse-code-fact-1",
           "meta-muse-code-impact-1"
-        ]
-      },
-      {
-        "sourceId": "the-batch-meta-contributor-tier-2026",
-        "supports": [
-          "meta-muse-code-spark-1-2-2026",
-          "meta-muse-contributor-tier-2026"
         ]
       }
     ],
@@ -12829,12 +12908,20 @@
     ],
     "editorial": {
       "createdAt": "2026-08-10",
-      "updatedAt": "2026-08-14",
+      "updatedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
-      "reviewedAt": "2026-08-10",
+      "reviewedAt": "2026-08-24",
       "reviewer": "gang",
-      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: beta tool release and API commercial availability.",
-      "publishedAt": "2026-08-10"
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: beta tool release and API commercial availability. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "publishedAt": "2026-08-10",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Removed 404 The Batch source, re-reviewed after August 14 contributor tier edit, calibrated significance from L2 to L1, and changed consensus to emerging."
+        }
+      ]
     },
     "categories": [
       "product",
@@ -12958,27 +13045,30 @@
     "id": "minimax-h3-video-model-2026",
     "slug": "minimax-h3-video-model-2026",
     "title": {
-      "en": "MiniMax Releases H3 33B Open Video Model with Audio-Visual Joint Architecture",
-      "zhHans": "MiniMax 发布 330 亿参数 H3 视频生成模型，引入音视频联合架构与特定地域许可"
+      "en": "MiniMax Releases H3 33B Video Model and Publishes Base Weights",
+      "zhHans": "MiniMax 发布 330 亿参数 H3 视频生成模型并开放基础权重"
     },
     "searchSummary": {
-      "en": "MiniMax released H3, a 33B parameter video model featuring unified audio-visual modeling, with open weights under a geographically restricted license.",
-      "zhHans": "MiniMax 发布 330 亿参数音视频联合建模视频模型 H3，开放权重并附带特定地域限制许可。"
+      "en": "MiniMax released H3, a 33B parameter video model featuring unified audio-visual modeling, publishing open weights under a geographically restricted community license.",
+      "zhHans": "MiniMax 发布 330 亿参数音视频联合建模视频模型 H3，并在附带特定地域限制的社区许可下开放基础权重。"
     },
     "summary": {
-      "en": "On August 13, 2026, MiniMax released H3, a 33-billion parameter transformer video generation model featuring native audio-visual co-encoding. The weights were made available for download alongside an API pipeline, with a license restricting direct commercial use in excluded territories including the US, UK, EU, and South Korea.",
-      "zhHans": "2026 年 8 月 13 日，MiniMax 发布了拥有 330 亿参数的 Transformer 视频生成模型 H3，具备原生音视频联合编码能力。该模型开放了权重下载并提供 API 服务，其开源许可证对美、英、欧、韩等排除地域设置了单独申请许可的合规限制。"
+      "en": "On August 3, 2026, MiniMax published weights for H3-Base on Hugging Face under the MiniMax H3 Community License (dated August 2), following an initial July 31 API launch. The 33-billion parameter transformer model features native audio-visual co-encoding, with its community license restricting direct use in the US, UK, EU, and South Korea.",
+      "zhHans": "在 7 月 31 日上线 API 后，MiniMax 于 2026 年 8 月 3 日在 Hugging Face 上正式开放 H3-Base 权重（社区许可证签署日期为 8 月 2 日）。该 330 亿参数 Transformer 模型具备原生音视频联合编码能力，其社区许可证限制在美、英、欧、韩等排除地域直接使用。"
     },
     "narrative": {
-      "en": "MiniMax launched H3, a 33-billion parameter multi-modal video generation system composed of an audio-visual base model, a contextual reasoning prompt engine (Context-IR), and a 2K resolution upscaler. By modeling voice, music, and sound effects inside a single encoder alongside video frames, H3 achieved top placement on independent video editing and generation benchmarks. The weights release introduced notable compliance terms, barring model distillation and requiring users in designated excluded territories (including the US, EU, UK, and South Korea) to submit formal license applications.",
-      "zhHans": "MiniMax 正式推出 330 亿参数的多模态视频生成系统 H3，由音视频基础模型、上下文推理提示词引擎（Context-IR）和 2K 分辨率放大器组成。通过在单一编码器中将语音、音乐、音效与视频帧联合建模，H3 在独立视频编辑与生成评测中位列前茅。该模型的权重发布引入了特殊的合规条款，包括禁止模型蒸馏，并要求美、英、欧盟及韩国等指定排除地域的用户单独提交许可申请。"
+      "en": "MiniMax launched H3, a 33-billion parameter multi-modal video generation system composed of an audio-visual base model, a contextual reasoning prompt engine (Context-IR), and a 2K resolution upscaler. By modeling voice, music, and sound effects inside a single encoder alongside video frames, H3 achieved top placement on independent video editing and generation benchmarks. The August 3 weights release on Hugging Face made H3-Base downloadable under a community license barring distillation and requiring formal authorization for deployment within excluded territories (US, EU, UK, South Korea).",
+      "zhHans": "MiniMax 推出 330 亿参数的多模态视频生成系统 H3，由音视频基础模型、上下文推理提示词引擎（Context-IR）和 2K 分辨率放大器组成。通过在单一编码器中将语音、音乐、音效与视频帧联合建模，H3 在独立视频编辑与生成评测中位列前茅。8 月 3 日在 Hugging Face 开放的 H3-Base 权重遵循社区许可协议，禁止模型蒸馏并要求在美、英、欧、韩等指定排除地域使用时单独申请许可。"
     },
-    "date": "2026-08-13",
+    "date": "2026-08-03",
     "datePrecision": "day",
-    "displayDate": "2026-08-13",
+    "displayDate": {
+      "en": "Aug 3, 2026",
+      "zhHans": "2026年8月3日"
+    },
     "status": "published",
     "significance": 2,
-    "consensusLevel": "broad",
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
@@ -12986,8 +13076,8 @@
         "severity": 1,
         "direction": "positive",
         "description": {
-          "en": "Provides state-of-the-art open-weight video generation with native audio synthesis at low inference costs.",
-          "zhHans": "以较低推理成本提供了具备原生音频合成能力的顶尖开源权重视频生成模型。"
+          "en": "Provides state-of-the-art open-weight video generation with native audio synthesis at low inference costs under a restricted community license.",
+          "zhHans": "在受限社区许可下以较低推理成本提供了具备原生音频合成能力的高质量开源权重视频生成模型。"
         },
         "affectedGroups": [
           "video creators",
@@ -12998,7 +13088,7 @@
         "evidenceGrade": "B",
         "sourceIds": [
           "minimax-h3-release-2026",
-          "the-batch-minimax-h3-2026"
+          "runpod-minimax-h3-2026"
         ]
       }
     ],
@@ -13007,13 +13097,13 @@
         "id": "minimax-h3-fact-1",
         "claimType": "fact",
         "text": {
-          "en": "MiniMax released H3 on August 13, 2026, a 33-billion parameter transformer model that natively encodes video, speech, music, and sound effects in a single pipeline.",
-          "zhHans": "MiniMax 于 2026 年 8 月 13 日发布了 330 亿参数的 Transformer 模型 H3，在统一流水线中原生编码视频、语音、音乐及音效。"
+          "en": "MiniMax published H3-Base weights on Hugging Face on August 3, 2026, under a Community License dated August 2, 2026.",
+          "zhHans": "MiniMax 于 2026 年 8 月 3 日在 Hugging Face 上开放 H3-Base 权重，其社区许可证标注日期为 2026 年 8 月 2 日。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
           "minimax-h3-release-2026",
-          "the-batch-minimax-h3-2026"
+          "runpod-minimax-h3-2026"
         ]
       },
       {
@@ -13026,7 +13116,7 @@
         "evidenceGrade": "B",
         "sourceIds": [
           "minimax-h3-release-2026",
-          "the-batch-minimax-h3-2026"
+          "runpod-minimax-h3-2026"
         ]
       },
       {
@@ -13036,9 +13126,10 @@
           "en": "Ranked first on Artificial Analysis video editing benchmarks, demonstrating competitive 2K video generation quality comparable to proprietary commercial models.",
           "zhHans": "在 Artificial Analysis 视频编辑评测中位列第一，展现出可比肩专有商业模型的 2K 视频生成质量。"
         },
-        "evidenceGrade": "C",
+        "evidenceGrade": "B",
         "sourceIds": [
-          "the-batch-minimax-h3-2026"
+          "minimax-h3-launch-2026",
+          "runpod-minimax-h3-2026"
         ]
       },
       {
@@ -13051,7 +13142,7 @@
         "evidenceGrade": "B",
         "sourceIds": [
           "minimax-h3-release-2026",
-          "the-batch-minimax-h3-2026"
+          "runpod-minimax-h3-2026"
         ]
       }
     ],
@@ -13066,7 +13157,13 @@
         ]
       },
       {
-        "sourceId": "the-batch-minimax-h3-2026",
+        "sourceId": "minimax-h3-launch-2026",
+        "supports": [
+          "minimax-h3-impact-1"
+        ]
+      },
+      {
+        "sourceId": "runpod-minimax-h3-2026",
         "supports": [
           "minimax-h3-fact-1",
           "minimax-h3-fact-2",
@@ -13079,12 +13176,20 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-08-14",
-      "updatedAt": "2026-08-14",
-      "reviewedAt": "2026-08-14",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
       "publishedAt": "2026-08-14",
       "reviewer": "gang",
       "reviewProvenance": "v2.3",
-      "reviewNotes": "Published after The Batch newsletter analysis and weights release confirmation."
+      "reviewNotes": "Published after The Batch newsletter analysis and weights release confirmation. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Corrected event date from August 13 placeholder to August 3 (weights release date; license dated August 2), updated sources to repository URL and Runpod independent coverage, removing 404 The Batch source."
+        }
+      ]
     },
     "categories": [
       "capability",
@@ -13100,8 +13205,8 @@
       "zhHans": "Epoch AI 与 METR 发布 MirrorCode 长程编程任务结果"
     },
     "searchSummary": {
-      "en": "Epoch AI and METR published MirrorCode results on long-horizon coding tasks that require models to reimplement programs without source-code or web access. One Claude Opus 4.7 run completed a 16,000-line target in 14 hours at a reported $251 inference cost.",
-      "zhHans": "Epoch AI 与 METR 发布了 MirrorCode 长程编程任务结果。该基准要求模型在没有源代码和网络访问的条件下重建程序。一轮 Claude Opus 4.7 运行以报告的 251 美元推理成本，在 14 小时内完成了一个约 1.6 万行的目标程序。"
+      "en": "Epoch AI and METR released MirrorCode, evaluating LLMs on end-to-end software reimplementation without source code access.",
+      "zhHans": "Epoch AI 与 METR 联合发布 MirrorCode 基准，评测大模型在无源代码条件下端到端重构大型软件工程的能力。"
     },
     "summary": {
       "en": "Epoch AI and METR published MirrorCode results on long-horizon coding tasks that require models to reimplement programs without source-code or web access. One Claude Opus 4.7 run completed a 16,000-line target in 14 hours at a reported $251 inference cost.",
@@ -13218,7 +13323,7 @@
     ],
     "editorial": {
       "createdAt": "2026-07-28",
-      "updatedAt": "2026-07-28",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewProvenance": "v2.3",
       "changeLog": [
@@ -13236,11 +13341,18 @@
           "date": "2026-07-28",
           "changeType": "source_added",
           "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Differentiated searchSummary lead from full summary to align with data model specifications."
         }
       ],
       "reviewer": "gang",
-      "reviewedAt": "2026-07-28",
-      "publishedAt": "2026-07-28"
+      "reviewedAt": "2026-08-24",
+      "publishedAt": "2026-07-28",
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -13677,47 +13789,52 @@
     "id": "nvidia-openai-datacenter-financing-2026",
     "slug": "nvidia-openai-datacenter-financing-2026",
     "title": {
-      "en": "Nvidia Adjusts Debt Guarantee Scale for OpenAI's Multi-Gigawatt Data Center Expansion",
-      "zhHans": "NVIDIA 调整为 OpenAI 吉瓦级智算中心扩张提供债务担保的规模"
+      "en": "NVIDIA Enters $105B Credit Support Agreement for OpenAI Ohio PORTS-Pike Campus",
+      "zhHans": "NVIDIA 就 OpenAI 俄亥俄 PORTS-Pike 智算中心达成最高 1050 亿美元信用担保协议"
     },
     "searchSummary": {
-      "en": "Reports indicated Nvidia scaled back preliminary debt guarantee commitments for OpenAI's multi-gigawatt data center expansion.",
-      "zhHans": "报道指出 NVIDIA 缩减了为 OpenAI 超大规模智算中心扩张提供初步债务担保的规模。"
+      "en": "NVIDIA entered an agreement capping residual value guarantees at $105 billion for OpenAI’s initial 4.25-GW data center deployment in Ohio.",
+      "zhHans": "NVIDIA 签署协议，为 OpenAI 在俄亥俄州首期 4.25GW 智算中心部署提供累计上限 1050 亿美元的剩余价值担保。"
     },
     "summary": {
-      "en": "On August 14, 2026, media reports disclosed that Nvidia scaled back preliminary commitments to guarantee tens of billions of dollars in debt financing for OpenAI's planned multi-gigawatt data center buildouts, reflecting tighter risk management across frontier AI capital expenditure.",
-      "zhHans": "2026 年 8 月 14 日，媒体披露 NVIDIA 缩减了为 OpenAI 规划中的多吉瓦级智算中心建设项目提供数百亿美元债务融资担保的初步承诺，反映出前沿 AI 资本支出领域更严格的风险控制导向。"
+      "en": "On August 17, 2026, NVIDIA disclosed in an SEC filing that it entered into residual value guaranties with SB Energy capping aggregate payment obligations at $105 billion to support the initial 4.25-GW IT load phase of the PORTS-Pike Technology Campus in Ohio, where OpenAI will be the tenant. Reports on August 14 had noted preliminary guarantee discussions had been downsized from earlier $250 billion estimates.",
+      "zhHans": "2026 年 8 月 17 日，NVIDIA 在 SEC 文件中披露已与 SB Energy 达成剩余价值担保协议，将其在俄亥俄州 PORTS-Pike 园区首期约 4.25GW IT 负载建设中的累计担保付款上限设定为 1050 亿美元，OpenAI 为承租方。此前 8 月 14 日的媒体报道显示，初步担保规模已从早先讨论的 2500 亿美元缩减。"
     },
     "narrative": {
-      "en": "As OpenAI pursued unprecedented capital expenditure to secure multi-gigawatt compute capacity, Nvidia reportedly scaled back preliminary arrangements that would have had the chipmaker guarantee substantial portions of third-party debt for upcoming data center facilities. The adjustment reflects broader scrutiny of vendor financing structures in the AI sector, as hardware providers balance aggressive capacity expansion against balance-sheet concentration risk without altering underlying chip supply relationships.",
-      "zhHans": "随着 OpenAI 寻求通过前所未有的资本支出锁定多吉瓦级算力容量，据报道 NVIDIA 缩减了原定为后续数据中心设施提供大额第三方债务担保的初步方案。该调整反映出 AI 行业对供应商融资（Vendor Financing）结构的审慎再评估，硬件提供商在推动算力扩张的同时，更加注重资产负债表的集中度风险控制，而两家公司底层的芯片供应合作关系依然持续。"
+      "en": "NVIDIA filed a Form 8-K disclosing that it entered multiple residual value guaranties with SB Energy to secure land, power, and shell capacity at the PORTS-Pike Technology Campus in Pike County, Ohio. An OpenAI affiliate will be the tenant utilizing 4.25 gigawatts of IT load exclusively hosting NVIDIA DSX platforms, with commercial service expected to begin in 2028. NVIDIA’s payment obligation is capped at $105 billion and triggered only upon OpenAI insolvency or lease default, after which NVIDIA can relet, assume, or terminate leases. NVIDIA holds an option for an additional 3.75 GW. The contractual cap resolved weeks of market debate regarding circular financing and unconstrained vendor exposure.",
+      "zhHans": "NVIDIA 向 SEC 提交 8-K 文件，披露已与 SB Energy 签署多项剩余价值担保协议，以锁定俄亥俄州派克县 PORTS-Pike 园区的土地、电力与建筑外壳容量。OpenAI 关联公司将作为租户使用 4.25GW IT 负载并独家部署 NVIDIA DSX 平台，预计于 2028 年起分阶段投运。NVIDIA 的累计付款义务上限为 1050 亿美元，仅在 OpenAI 破产或租约违约时触发，NVIDIA 可选择转租、承接或终止租约。NVIDIA 另享有额外 3.75GW 容量的担保期权。这一确定性合同上限平息了市场此前对循环融资与无上限供应商风险的担忧。"
     },
-    "date": "2026-08-14",
+    "date": "2026-08-17",
     "datePrecision": "day",
-    "displayDate": "2026-08-14",
+    "displayDate": {
+      "en": "Aug 17, 2026",
+      "zhHans": "2026年8月17日"
+    },
     "status": "published",
     "significance": 2,
-    "consensusLevel": "broad",
-    "controversy": false,
+    "consensusLevel": "debated",
+    "controversy": true,
     "impacts": [
       {
         "dimension": "economic_disruption",
-        "severity": 1,
+        "severity": 2,
         "direction": "positive",
         "description": {
-          "en": "Signals disciplined financial restructuring of mega-scale AI data center financing models.",
-          "zhHans": "标志着超大规模 AI 智算中心融资模式转向更为审慎与规范的财务结构。"
+          "en": "Establishes a legally binding $105B credit-support framework for multi-gigawatt sovereign AI infrastructure, structuring risk between chip suppliers, developers, and model labs.",
+          "zhHans": "为多吉瓦级 AI 智算基础设施确立了具有法律约束力的 1050 亿美元信用担保框架，明确了芯片供应商、开发商与模型实验室之间的风险分担机制。"
         },
         "affectedGroups": [
           "hyperscalers",
           "AI cloud providers",
-          "data center investors"
+          "data center investors",
+          "NVIDIA shareholders"
         ],
         "timeframe": "long",
-        "evidenceGrade": "B",
+        "evidenceGrade": "A",
         "sourceIds": [
-          "reuters-nvidia-openai-financing-2026",
-          "wsj-nvidia-openai-datacenter-2026"
+          "sec-nvidia-ports-pike-8k-2026",
+          "nvidia-ports-pike-guarantee-2026",
+          "cnbc-nvidia-ports-pike-financing-2026"
         ]
       }
     ],
@@ -13726,45 +13843,47 @@
         "id": "nvidia-openai-financing-fact-1",
         "claimType": "fact",
         "text": {
-          "en": "On August 14, 2026, Reuters reported that Nvidia scaled back preliminary debt guarantee commitments for OpenAI's upcoming multi-gigawatt data center expansion.",
-          "zhHans": "路透社于 2026 年 8 月 14 日报道，NVIDIA 缩减了为 OpenAI 即将建设的多吉瓦级智算中心扩张提供债务担保的初步承诺。"
+          "en": "On August 17, 2026, NVIDIA disclosed in Form 8-K that its aggregate payment obligations under residual value guaranties for the initial 4.25-GW PORTS-Pike phase are cumulatively capped at $105 billion.",
+          "zhHans": "2026 年 8 月 17 日，NVIDIA 在 8-K 文件中披露，其在 PORTS-Pike 园区首期 4.25GW 剩余价值担保下的累计付款义务上限为 1050 亿美元。"
         },
-        "evidenceGrade": "B",
+        "evidenceGrade": "A",
         "sourceIds": [
-          "reuters-nvidia-openai-financing-2026",
-          "wsj-nvidia-openai-datacenter-2026"
+          "sec-nvidia-ports-pike-8k-2026",
+          "cnbc-nvidia-ports-pike-financing-2026"
         ]
       },
       {
         "id": "nvidia-openai-financing-impact-1",
         "claimType": "impact",
         "text": {
-          "en": "Reflects increased financial discipline and risk assessment in frontier AI infrastructure debt structures.",
-          "zhHans": "反映出前沿 AI 基础设施债务结构中更强的财务纪律与风险控制评估。"
+          "en": "The formal agreement replaced earlier reported $250B backstop discussions with a capped $105B contingent guarantee structure.",
+          "zhHans": "正式协议以 1050 亿美元有上限的或有担保结构取代了此前媒体报道的 2500 亿美元兜底讨论。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
-          "reuters-nvidia-openai-financing-2026",
-          "wsj-nvidia-openai-datacenter-2026"
+          "sec-nvidia-ports-pike-8k-2026",
+          "cnbc-nvidia-ports-pike-financing-2026",
+          "reuters-nvidia-openai-financing-2026"
         ]
       },
       {
         "id": "nvidia-openai-financing-limitation-1",
         "claimType": "limitation",
         "text": {
-          "en": "The adjustment concerns preliminary financing guarantee structures and does not affect core hardware supply agreements.",
-          "zhHans": "该调整仅涉及初步融资担保结构，不影响核心硬件供货协议。"
+          "en": "Payment obligations are conditional upon lessor ready-for-service milestones expected beginning in 2028, and optional 3.75-GW capacity remains discretionary.",
+          "zhHans": "付款义务以出租方预计自 2028 年起满足的可投运里程碑为前提，且额外的 3.75GW 扩容支持属于可自由裁量的期权。"
         },
-        "evidenceGrade": "B",
+        "evidenceGrade": "A",
         "sourceIds": [
-          "reuters-nvidia-openai-financing-2026",
-          "wsj-nvidia-openai-datacenter-2026"
+          "sec-nvidia-ports-pike-8k-2026",
+          "nvidia-ports-pike-guarantee-2026",
+          "cnbc-nvidia-ports-pike-financing-2026"
         ]
       }
     ],
     "sources": [
       {
-        "sourceId": "reuters-nvidia-openai-financing-2026",
+        "sourceId": "sec-nvidia-ports-pike-8k-2026",
         "supports": [
           "nvidia-openai-datacenter-financing-2026",
           "nvidia-openai-financing-fact-1",
@@ -13773,31 +13892,55 @@
         ]
       },
       {
-        "sourceId": "wsj-nvidia-openai-datacenter-2026",
+        "sourceId": "nvidia-ports-pike-guarantee-2026",
         "supports": [
           "nvidia-openai-datacenter-financing-2026",
           "nvidia-openai-financing-fact-1",
           "nvidia-openai-financing-limitation-1"
         ]
+      },
+      {
+        "sourceId": "cnbc-nvidia-ports-pike-financing-2026",
+        "supports": [
+          "nvidia-openai-financing-impact-1"
+        ]
+      },
+      {
+        "sourceId": "reuters-nvidia-openai-financing-2026",
+        "supports": [
+          "nvidia-openai-financing-impact-1"
+        ]
+      },
+      {
+        "sourceId": "wsj-nvidia-openai-datacenter-2026",
+        "supports": [
+          "nvidia-openai-financing-impact-1"
+        ]
       }
     ],
     "relatedEvents": [],
-    "relatedForecasts": [
-      "autonomous-enterprise-workflows"
-    ],
+    "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16",
-      "reviewedAt": "2026-08-16",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
       "publishedAt": "2026-08-16",
       "reviewer": "gang",
       "reviewProvenance": "v2.3",
-      "reviewNotes": "Published after Tier-1 news report corroboration of infrastructure financing adjustments."
+      "reviewNotes": "Published after Tier-1 news report corroboration of infrastructure financing adjustments. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Updated event date from preliminary leak to August 17 official Form 8-K SEC filing and press release, added SEC/CNBC sources, marked controversy=true, calibrated consensus to debated, and unlinked enterprise workflow direction."
+        }
+      ]
     },
     "categories": [
       "commerce"
     ],
-    "impactIndex": 4
+    "impactIndex": 6
   },
   {
     "id": "o1-2024",
@@ -13990,10 +14133,13 @@
     },
     "date": "2026-08-06",
     "datePrecision": "day",
-    "displayDate": "2026-08-06",
+    "displayDate": {
+      "en": "Aug 6, 2026",
+      "zhHans": "2026年8月6日"
+    },
     "status": "published",
-    "significance": 2,
-    "consensusLevel": "broad",
+    "significance": 1,
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
@@ -14082,21 +14228,26 @@
       }
     ],
     "relatedEvents": [],
-    "relatedForecasts": [
-      "autonomous-enterprise-workflows"
-    ],
+    "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-08-06",
-      "updatedAt": "2026-08-10",
+      "updatedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
-      "reviewedAt": "2026-08-10",
+      "reviewedAt": "2026-08-24",
       "reviewer": "gang",
-      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: investment commitment and multi-year infrastructure roadmap.",
-      "publishedAt": "2026-08-10"
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: investment commitment and multi-year infrastructure roadmap. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "publishedAt": "2026-08-10",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Fixed official Ooredoo source URL, removed secondary governance category, unlinked autonomous-enterprise-workflows, and calibrated significance from L2 to L1."
+        }
+      ]
     },
     "categories": [
-      "commerce",
-      "governance"
+      "commerce"
     ],
     "impactIndex": 4
   },
@@ -14126,13 +14277,13 @@
       "zhHans": "2026年7月27日"
     },
     "status": "published",
-    "significance": 2,
+    "significance": 1,
     "impactIndex": 5,
     "consensusLevel": "emerging",
     "controversy": true,
     "categories": [
       "safety",
-      "product"
+      "governance"
     ],
     "impacts": [
       {
@@ -14287,10 +14438,10 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-30",
-      "updatedAt": "2026-07-30",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewer": "gang",
-      "reviewedAt": "2026-07-30",
+      "reviewedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
       "publishedAt": "2026-07-30",
       "changeLog": [
@@ -14303,8 +14454,15 @@
           "date": "2026-07-30",
           "changeType": "source_added",
           "summary": "Added NVIDIA, partner and independent coverage; kept the announcement-versus-outcome limitation."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Reclassified secondary category from product to governance and calibrated significance from L2 to L1 reflecting coalition announcement stage."
         }
-      ]
+      ],
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -14505,8 +14663,8 @@
     "id": "openai-astra-mathematics-2026",
     "slug": "openai-astra-mathematics-2026",
     "title": {
-      "en": "OpenAI Announces Ten Mathematics Breakthroughs Solved by Internal Astra Model",
-      "zhHans": "OpenAI 宣布内部 Astra 模型攻克 10 项数学与理论计算机科学难题"
+      "en": "OpenAI Reports Ten Mathematics Breakthroughs Solved or Advanced by Internal Astra Model",
+      "zhHans": "OpenAI 报告内部 Astra 模型攻克或显著推进 10 项数学与理论计算机科学难题"
     },
     "searchSummary": {
       "en": "OpenAI announced that an unreleased internal version of Astra solved 10 open math problems, including three Erdős conjectures, releasing Lean formal certificates.",
@@ -14522,10 +14680,13 @@
     },
     "date": "2026-08-01",
     "datePrecision": "day",
-    "displayDate": "2026-08-01",
+    "displayDate": {
+      "en": "Aug 1, 2026",
+      "zhHans": "2026年8月1日"
+    },
     "status": "published",
     "significance": 1,
-    "consensusLevel": "broad",
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
@@ -14633,16 +14794,23 @@
     ],
     "editorial": {
       "createdAt": "2026-08-10",
-      "updatedAt": "2026-08-10",
+      "updatedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
-      "reviewedAt": "2026-08-10",
+      "reviewedAt": "2026-08-24",
       "reviewer": "gang",
-      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: unreleased model mathematics breakthroughs with Lean certificates.",
-      "publishedAt": "2026-08-10"
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: unreleased model mathematics breakthroughs with Lean certificates. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "publishedAt": "2026-08-10",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Refined title to match solved-or-advanced factual boundary, removed secondary society category, and calibrated consensus to emerging."
+        }
+      ]
     },
     "categories": [
-      "capability",
-      "society"
+      "capability"
     ],
     "impactIndex": 5
   },
@@ -14766,8 +14934,8 @@
       "zhHans": "OpenAI 模型在安全评估中访问 Hugging Face 系统"
     },
     "searchSummary": {
-      "en": "OpenAI and Hugging Face disclosed that models used in a July 2026 security evaluation escaped their test environment and accessed Hugging Face systems. The organizations changed evaluation protections and monitoring after the incident.",
-      "zhHans": "OpenAI 与 Hugging Face 披露，参与 2026 年 7 月安全评估的模型逃离测试环境并访问了 Hugging Face 系统。两家机构随后调整了评估保护措施和监控机制。"
+      "en": "OpenAI revealed that internal cyber evaluation models exploited a zero-day vulnerability to access Hugging Face production systems.",
+      "zhHans": "OpenAI 披露其内部网络安全评测模型利用零日漏洞意外渗透并访问了 Hugging Face 生产系统。"
     },
     "summary": {
       "en": "OpenAI and Hugging Face disclosed that models used in a July 2026 security evaluation escaped their test environment and accessed Hugging Face systems. The organizations changed evaluation protections and monitoring after the incident.",
@@ -14891,7 +15059,7 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-28",
-      "updatedAt": "2026-07-28",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewProvenance": "v2.3",
       "changeLog": [
@@ -14909,11 +15077,18 @@
           "date": "2026-07-28",
           "changeType": "source_added",
           "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Differentiated searchSummary lead from full summary."
         }
       ],
       "reviewer": "gang",
-      "reviewedAt": "2026-07-28",
-      "publishedAt": "2026-07-28"
+      "reviewedAt": "2026-08-24",
+      "publishedAt": "2026-07-28",
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -15336,48 +15511,49 @@
     "id": "openai-strategic-futures-governance-2026",
     "slug": "openai-strategic-futures-governance-2026",
     "title": {
-      "en": "OpenAI Launches Strategic Futures Team and Releases Superintelligence Governance Manifesto",
-      "zhHans": "OpenAI 设立“战略未来”团队并发布超级智能治理创刊宣言"
+      "en": "OpenAI Launches AI Futures Blog for Strategic Futures Team",
+      "zhHans": "OpenAI 推出 Strategic Futures 团队的《AI Futures》博客"
     },
     "searchSummary": {
-      "en": "OpenAI launched AI Futures, framing concentration of power as the primary long-term AI risk and outlining six institutional governance principles.",
-      "zhHans": "OpenAI 推出《AI Futures》，将权力过度集中界定为超级智能核心长期风险，并提出六项制度治理原则。"
+      "en": "OpenAI launched AI Futures on August 20, 2026, framing concentration of power as a key AI risk and outlining six nonbinding principles.",
+      "zhHans": "OpenAI 于 2026 年 8 月 20 日推出《AI Futures》，将权力集中列为关键 AI 风险，并提出六项非约束性原则。"
     },
     "summary": {
-      "en": "On August 19, 2026, OpenAI launched its Strategic Futures initiative with an inaugural manifesto framing concentration of power—and the potential automation of state force and revenue—as the defining long-term risk of transformative AI, proposing six institutional principles including bounded legibility and individual agency protection.",
-      "zhHans": "2026 年 8 月 19 日，OpenAI 正式启动“战略未来”（Strategic Futures）倡议并发布创刊宣言，将权力过度集中以及国家暴力与税收机器的自动化列为变革性 AI 的首要长期风险，提出了包括“有限可见性”与保护个人自主权在内的六项制度治理原则。"
+      "en": "On August 20, 2026, OpenAI launched AI Futures, the blog of its new Strategic Futures team. Its inaugural essay frames concentration of power as a central long-term risk of transformative AI and proposes six nonbinding institutional principles, including bounded legibility and individual agency.",
+      "zhHans": "2026 年 8 月 20 日，OpenAI 推出新设立的 Strategic Futures 团队博客《AI Futures》。创刊文章将权力过度集中列为变革性 AI 的核心长期风险，并提出包括“有限可见性”与个体自主权在内的六项非约束性制度原则。"
     },
     "narrative": {
-      "en": "OpenAI established a dedicated Strategic Futures research group and launched the AI Futures publication to address how free societies must restructure around transformative machine intelligence. Drawing on historical constitutional theory and citing recent multi-agent breakout incidents, the manifesto argues that automating state coercion, bureaucracy, and economic value generation could fundamentally disempower human citizens. To counter unchecked centralization, OpenAI outlined six guiding principles: preserving individual human autonomy, establishing personal misuse liability, scoping collective interventions narrowly, empowering individuals over monopolies, maintaining the primacy of human institutions, and instituting 'bounded legibility' to trace high-stakes autonomous actions while strictly protecting privacy and anonymous use.",
-      "zhHans": "OpenAI 设立了专门的“战略未来”研究团队并推出《AI Futures》专刊，旨在探讨自由社会应如何应对变革性机器智能的兴起。宣言借鉴宪政权力制衡理论，并直接援引近期智能体越权协同事件，指出国家强制力、官僚体系与经济价值生成的自动化可能从根本上削弱公民个人的主体地位。为应对不受约束的权力集中，OpenAI 提出了六项指导原则：保护个人使用 AI 的独立自主权、确立滥用责任制、将集体干预范围限制在最狭义区间、通过法律赋能个体抵抗寡头垄断、维持人类制度在世界事务中的主导地位，以及建立“有限可见性”（Bounded Legibility）机制以追溯高风险行动，同时严格捍卫隐私与匿名使用权。"
+      "en": "OpenAI established the Strategic Futures team and the AI Futures publication to examine constitutional and political-economy questions around transformative machine intelligence. The essay outlines six guiding principles: preserving individual autonomy, personal misuse liability, narrow collective intervention, empowering individuals against monopolies, human institutional primacy, and bounded legibility for high-stakes actions with privacy protections. The publication represents a corporate research proposal rather than binding legislation or an international agreement.",
+      "zhHans": "OpenAI 设立 Strategic Futures 团队与《AI Futures》专刊，旨在探讨围绕变革性机器智能的宪政与政治经济学问题。文章提出六项指导原则：保护个体自主权、个人滥用责任制、限制集体干预范围、通过法律赋能个体抵抗寡头垄断、维持人类制度主导地位，以及在高风险行动中实施有限可见性并保护隐私。该专刊代表企业内部研究提案，不构成法定约束力立法或国际协议。"
     },
-    "date": "2026-08-19",
+    "date": "2026-08-20",
     "datePrecision": "day",
-    "displayDate": "2026-08-19",
+    "displayDate": {
+      "en": "Aug 20, 2026",
+      "zhHans": "2026年8月20日"
+    },
     "status": "published",
-    "significance": 2,
-    "consensusLevel": "broad",
+    "significance": 1,
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
         "dimension": "paradigm_shift",
-        "severity": 2,
+        "severity": 1,
         "direction": "positive",
         "description": {
-          "en": "Elevates power concentration and state automation to primary structural governance concerns in frontier AI strategy.",
-          "zhHans": "在前沿 AI 战略中将权力集中与国家机器自动化提升为核心结构性治理议题。"
+          "en": "Introduces a frontier lab proposal on power concentration and institutional governance into public AI policy debate.",
+          "zhHans": "将前沿实验室关于权力集中与制度治理的提案引入公开 AI 政策讨论。"
         },
         "affectedGroups": [
           "policymakers",
           "AI labs",
-          "civil society",
-          "citizens"
+          "civil society"
         ],
-        "timeframe": "long",
+        "timeframe": "medium",
         "evidenceGrade": "B",
         "sourceIds": [
-          "openai-ai-futures-launch-2026",
-          "semafor-openai-futures-governance-2026"
+          "openai-ai-futures-launch-2026"
         ]
       }
     ],
@@ -15386,21 +15562,20 @@
         "id": "openai-strategic-futures-fact-1",
         "claimType": "fact",
         "text": {
-          "en": "On August 19, 2026, OpenAI launched the Strategic Futures initiative and published an inaugural manifesto identifying concentration of power as the largest long-term AI risk.",
-          "zhHans": "2026 年 8 月 19 日，OpenAI 启动 Strategic Futures 倡议并发表创刊宣言，将权力过度集中界定为最大的长期 AI 风险。"
+          "en": "On August 20, 2026, OpenAI launched the Strategic Futures initiative and published an inaugural manifesto identifying concentration of power as a long-term AI risk.",
+          "zhHans": "2026 年 8 月 20 日，OpenAI 启动 Strategic Futures 倡议并发表创刊文章，将权力过度集中列为长期 AI 风险。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
-          "openai-ai-futures-launch-2026",
-          "semafor-openai-futures-governance-2026"
+          "openai-ai-futures-launch-2026"
         ]
       },
       {
         "id": "openai-strategic-futures-fact-2",
         "claimType": "fact",
         "text": {
-          "en": "The manifesto proposed six governance principles including bounded legibility, preservation of individual human agency, and protection of anonymous AI use.",
-          "zhHans": "该宣言提出了包括有限可见性、保护人类个体自主权以及保障匿名 AI 使用权在内的六项治理原则。"
+          "en": "The manifesto proposed six governance principles including bounded legibility, preservation of individual agency, and protection of anonymous AI use.",
+          "zhHans": "文章提出了包括有限可见性、保护人类个体自主权以及保障匿名 AI 使用权在内的六项治理原则。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
@@ -15411,12 +15586,12 @@
         "id": "openai-strategic-futures-impact-1",
         "claimType": "impact",
         "text": {
-          "en": "Marks a strategic shift in frontier lab discourse from narrow technical alignment toward institutional political economy and constitutional safeguards.",
-          "zhHans": "标志着前沿实验室的讨论重心从狭义的技术对齐扩展至制度政治经济学与宪政级安全制衡。"
+          "en": "The publication creates a public venue for OpenAI’s institutional governance proposals without establishing binding policy.",
+          "zhHans": "该专刊为 OpenAI 的制度治理建议建立了公开讨论渠道，但尚未形成具有约束力的政策。"
         },
-        "evidenceGrade": "C",
+        "evidenceGrade": "B",
         "sourceIds": [
-          "semafor-openai-futures-governance-2026"
+          "openai-ai-futures-launch-2026"
         ]
       },
       {
@@ -15428,8 +15603,7 @@
         },
         "evidenceGrade": "B",
         "sourceIds": [
-          "openai-ai-futures-launch-2026",
-          "semafor-openai-futures-governance-2026"
+          "openai-ai-futures-launch-2026"
         ]
       }
     ],
@@ -15440,13 +15614,6 @@
           "openai-strategic-futures-governance-2026",
           "openai-strategic-futures-fact-1",
           "openai-strategic-futures-fact-2",
-          "openai-strategic-futures-limitation-1"
-        ]
-      },
-      {
-        "sourceId": "semafor-openai-futures-governance-2026",
-        "supports": [
-          "openai-strategic-futures-fact-1",
           "openai-strategic-futures-impact-1",
           "openai-strategic-futures-limitation-1"
         ]
@@ -15455,23 +15622,28 @@
     "relatedEvents": [
       "openai-hf-breach-2026"
     ],
-    "relatedForecasts": [
-      "autonomous-enterprise-workflows"
-    ],
+    "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-08-19",
-      "updatedAt": "2026-08-19",
-      "reviewedAt": "2026-08-19",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
       "publishedAt": "2026-08-19",
       "reviewer": "gang",
       "reviewProvenance": "v2.3",
-      "reviewNotes": "Published after official OpenAI AI Futures blog launch and independent media analysis."
+      "reviewNotes": "Published after official OpenAI AI Futures blog launch and independent media analysis. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Corrected official date to August 20, replaced 404 Semafor source with first-party post, removed enterprise workflow direction link, and calibrated significance from L2 to L1."
+        }
+      ]
     },
     "categories": [
-      "governance",
-      "society"
+      "governance"
     ],
-    "impactIndex": 5
+    "impactIndex": 4
   },
   {
     "id": "openclaw-2026",
@@ -15673,8 +15845,8 @@
     "id": "pacing-the-frontier-2026",
     "slug": "pacing-the-frontier",
     "title": {
-      "en": "More than 1,293 frontier-AI employees call for tools to pace future AI development",
-      "zhHans": "超过 1,293 名前沿 AI 员工呼吁建立未来调节 AI 发展速度的工具"
+      "en": "Frontier-AI Employees Call for Verifiable Technical and Governance Tools to Pace Development",
+      "zhHans": "前沿 AI 员工发表联合声明，呼吁建立调节 AI 发展速度的技术与治理机制"
     },
     "searchSummary": {
       "en": "A cross-company employee statement asks the US government to support international technical and governance tools that could deliberately pace frontier AI development if future risks require it.",
@@ -15685,8 +15857,8 @@
       "zhHans": "2026 年 7 月 28 日，来自前沿 AI 公司的员工发布《调节前沿发展》声明，呼吁美国政府支持国际努力，建立能够在必要时调节自动化 AI 发展的工具。这是协调意愿的信号，不是当前暂停开发，也不是具有约束力的公司政策。"
     },
     "narrative": {
-      "en": "Frontier AI employees are caught in a coordination problem: each company may want the option to slow development if capabilities begin to outpace safety and governance, but no company wants to slow unilaterally while competitors continue. Pacing the Frontier asks the US government to help develop verifiable technical and governance mechanisms for that future option. The page’s live count reached 1,293 employees, including senior figures from OpenAI, Anthropic, Google and Meta. That breadth makes the statement notable, but the document does not specify a trigger, enforcement mechanism, international agreement or timetable. It also says signatories speak in a personal capacity, so the statement should not be treated as a formal position of every named employer.",
-      "zhHans": "前沿 AI 员工面临一个协调难题：如果能力进展开始超过安全与治理能力，各家公司可能都希望保留放慢发展的选项，但在竞争者继续推进时，没有一家公司愿意单方面放慢。《调节前沿发展》呼吁美国政府帮助建立可验证的技术和治理机制，为未来保留这一选项。该页面的实时签署人数已达到 1,293 人，其中包括 OpenAI、Anthropic、Google 和 Meta 的高层人士。这种跨公司范围使声明具有事件意义，但文件没有规定触发条件、执行机制、国际协议或时间表。页面还说明签署者以个人身份发言，因此不能将其视为所有签署者雇主的正式立场。"
+      "en": "Frontier AI employees face a coordination dilemma: labs may desire the option to deliberately pace automated AI development if risks surge, but cannot easily pause unilaterally in competitive markets. The statement asks the US government to support international efforts to build verifiable technical and governance mechanisms. The signatory count surpassed 1,300 across major labs, but the declaration carries no legal mandate or timetable and was signed in individual capacities.",
+      "zhHans": "前沿 AI 员工面临协调困境：如果能力进展超过安全与治理能力，各实验室可能希望保留放慢发展的选项，但在竞争压力下难以单方面暂停。声明呼吁美国政府支持建立可验证的技术与治理机制。签署人数在主要实验室中已超 1,300 人，但声明不具法律约束力或具体时间表，且签署者均以个人身份参与。"
     },
     "date": "2026-07-28",
     "datePrecision": "day",
@@ -15696,7 +15868,7 @@
     },
     "status": "published",
     "significance": 2,
-    "impactIndex": 5,
+    "impactIndex": 4,
     "consensusLevel": "emerging",
     "controversy": true,
     "categories": [
@@ -15716,27 +15888,6 @@
           "frontier AI employees",
           "AI labs",
           "policymakers",
-          "AI safety researchers",
-          "the public"
-        ],
-        "timeframe": "medium",
-        "evidenceGrade": "B",
-        "sourceIds": [
-          "pacing-frontier-statement-2026",
-          "fortune-pacing-frontier-2026"
-        ]
-      },
-      {
-        "dimension": "risk_creation",
-        "severity": -2,
-        "direction": "negative",
-        "description": {
-          "en": "The statement identifies a coordination and oversight gap: competitive pressure may make it difficult for any single lab to slow down even if risks increase.",
-          "zhHans": "声明指出了协调和监督缺口：即使风险上升，竞争压力也可能使任何单一实验室都难以自行放慢速度。"
-        },
-        "affectedGroups": [
-          "AI labs",
-          "governments",
           "AI safety researchers",
           "the public"
         ],
@@ -15835,10 +15986,10 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-30",
-      "updatedAt": "2026-07-30",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewer": "gang",
-      "reviewedAt": "2026-07-30",
+      "reviewedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
       "publishedAt": "2026-07-30",
       "changeLog": [
@@ -15851,8 +16002,15 @@
           "date": "2026-07-30",
           "changeType": "source_added",
           "summary": "Added first-party statement and independent coverage; retained personal-capacity and mechanism limitations."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Removed volatile live signatory count from title, removed subjective risk_creation score, and recorded updated statement snapshot."
         }
-      ]
+      ],
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -16056,11 +16214,14 @@
     },
     "date": "2026-08-04",
     "datePrecision": "day",
-    "displayDate": "2026-08-04",
+    "displayDate": {
+      "en": "Aug 4, 2026",
+      "zhHans": "2026年8月4日"
+    },
     "status": "published",
     "significance": 1,
-    "consensusLevel": "broad",
-    "controversy": false,
+    "consensusLevel": "debated",
+    "controversy": true,
     "impacts": [
       {
         "dimension": "paradigm_shift",
@@ -16148,12 +16309,20 @@
     ],
     "editorial": {
       "createdAt": "2026-08-10",
-      "updatedAt": "2026-08-10",
+      "updatedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
-      "reviewedAt": "2026-08-10",
+      "reviewedAt": "2026-08-24",
       "reviewer": "gang",
-      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: preliminary injunction vacatur under CFAA/CDAFA access theories.",
-      "publishedAt": "2026-08-10"
+      "reviewNotes": "Draft created after confirmation sweep. Fact boundary: preliminary injunction vacatur under CFAA/CDAFA access theories. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "publishedAt": "2026-08-10",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Marked controversy=true and consensus=debated reflecting ongoing state/contract/ToS litigation."
+        }
+      ]
     },
     "categories": [
       "governance",
@@ -16365,23 +16534,26 @@
       "zhHans": "阿里巴巴以 Apache 2.0 协议开源 Qwen3.8-27B 稠密多模态模型"
     },
     "searchSummary": {
-      "en": "Alibaba open-sourced Qwen3.8-27B under Apache 2.0, featuring 27.78B dense weights, native 256K context, and major gains in agentic coding and computer control.",
-      "zhHans": "阿里巴巴开源 Qwen3.8-27B（Apache 2.0 协议），具备 27.78B 稠密参数、原生 256K 上下文以及在 Agent 编程和计算机控制上的显著提升。"
+      "en": "Alibaba released Qwen3.8-27B under Apache 2.0 with 27.78B dense parameters, native 256K context, and major vendor-reported agentic coding gains.",
+      "zhHans": "阿里巴巴以 Apache 2.0 协议开源 Qwen3.8-27B，具备 27.78B 稠密参数、原生 256K 上下文及官方自测的显著 Agent 编程提升。"
     },
     "summary": {
-      "en": "On August 14, 2026, Alibaba's Qwen team released Qwen3.8-27B under the Apache 2.0 license. The 27.78-billion-parameter dense multimodal model features a native 262,144-token context window and reported substantial benchmark gains in terminal-based coding, GUI computer use, and visual reasoning.",
-      "zhHans": "2026 年 8 月 14 日，阿里巴巴通义千问团队在 Apache 2.0 协议下开源发布 Qwen3.8-27B。该模型包含 277.8 亿（27.78B）稠密多模态参数，具备原生 262,144（256K）token 上下文窗口，并在终端编程、GUI 计算机操作与视觉推理基准上报告了大幅性能提升。"
+      "en": "On August 14, 2026, Alibaba released Qwen3.8-27B under Apache 2.0. The 27.78-billion-parameter dense multimodal model features a native 262,144-token context window and reported benchmark gains in terminal coding and GUI use. On August 24, Hugging Face listed over 2.35 million downloads for the repository.",
+      "zhHans": "2026 年 8 月 14 日，阿里巴巴通义千问团队在 Apache 2.0 协议下开源发布 Qwen3.8-27B。该模型包含 277.8 亿稠密多模态参数，具备原生 262,144 token 上下文窗口，官方报告了终端编程与 GUI 操作的基准提升。截至 8 月 24 日，Hugging Face 仓库显示下载量已超过 235 万次。"
     },
     "narrative": {
-      "en": "Alibaba published weights and configuration files for Qwen3.8-27B on Hugging Face and ModelScope, targeting high-end workstations and private developer deployments. Unlike sparse mixture-of-experts architectures, the 27.78B dense design fits into 24GB GPUs when quantized to 4 bits at moderate context. Official benchmarks showed OSWorld-Verified rising from 63.9 to 84.3 and Terminal-Bench 2.1 reaching 73.0. Independent reviewers noted that unquantized BF16 execution and full 256K context windows still require substantial enterprise hardware, and all initial launch figures reflect vendor evaluations pending third-party reproduction.",
-      "zhHans": "阿里巴巴在 Hugging Face 与 ModelScope 上发布了 Qwen3.8-27B 的完整权重与配置文件，主要面向高端工作站与开发者本地私有化部署。与稀疏 MoE 架构不同，该 27.78B 稠密模型经 4-bit 量化后可在中等上下文下适配 24GB 显存显卡。官方模型卡显示，其 OSWorld-Verified 评测从 63.9 跃升至 84.3，Terminal-Bench 2.1 达到 73.0。独立评测指出，未量化的 BF16 推理与完整的 256K 长上下文仍需企业级算力支撑，发布初期的各项跑分仍待第三方独立机构进一步复现验证。"
+      "en": "Alibaba published weights and configuration files for Qwen3.8-27B on Hugging Face and ModelScope, targeting workstations and private developer deployments. The 27.78B dense design fits into 24GB GPUs when quantized to 4 bits at moderate context. Official benchmarks showed OSWorld-Verified rising from 63.9 to 84.3 and Terminal-Bench 2.1 reaching 73.0. Technical review noted that BF16 execution and full 256K context require enterprise hardware, and initial figures reflect vendor evaluations pending third-party reproduction.",
+      "zhHans": "阿里巴巴在 Hugging Face 与 ModelScope 上发布了 Qwen3.8-27B 的完整权重与配置文件，面向工作站与开发者本地私有化部署。该 27.78B 稠密模型经 4-bit 量化后可在中等上下文下适配 24GB 显存。官方模型卡显示其 OSWorld-Verified 评测由 63.9 升至 84.3，Terminal-Bench 2.1 达 73.0。技术评测指出未量化的 BF16 推理与完整 256K 上下文仍需企业级算力，初始跑分仍待第三方复现。"
     },
     "date": "2026-08-14",
     "datePrecision": "day",
-    "displayDate": "2026-08-14",
+    "displayDate": {
+      "en": "Aug 14, 2026",
+      "zhHans": "2026年8月14日"
+    },
     "status": "published",
     "significance": 2,
-    "consensusLevel": "broad",
+    "consensusLevel": "emerging",
     "controversy": false,
     "impacts": [
       {
@@ -16389,8 +16561,8 @@
         "severity": 2,
         "direction": "positive",
         "description": {
-          "en": "Delivers frontier-class OS-level computer use and agentic coding capabilities in a dense 27.78B parameter budget.",
-          "zhHans": "在 27.78B 稠密参数规模下实现了前沿级的系统级计算机操作与智能体编程能力。"
+          "en": "Provides frontier-competitive OS-level computer use and agentic coding capabilities in a dense 27.78B parameter budget.",
+          "zhHans": "在 27.78B 稠密参数规模下提供了具有前沿竞争力的系统级计算机操作与智能体编程能力。"
         },
         "affectedGroups": [
           "developers",
@@ -16399,7 +16571,7 @@
           "enterprise software teams"
         ],
         "timeframe": "long",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "alibaba-qwen38-27b-model-card-2026",
           "kingy-qwen38-27b-review-2026"
@@ -16410,8 +16582,8 @@
         "severity": 2,
         "direction": "positive",
         "description": {
-          "en": "Permits commercial, unmetered local deployment of multimodal agentic workflows under an Apache 2.0 license.",
-          "zhHans": "允许在 Apache 2.0 协议下对多模态 Agent 工作流进行无限制的商用本地部署。"
+          "en": "Permits commercial, unmetered local deployment under Apache 2.0, with over 2.35M downloads recorded on Hugging Face.",
+          "zhHans": "允许在 Apache 2.0 协议下进行无限制的商用本地部署，Hugging Face 上已记录超 235 万次下载。"
         },
         "affectedGroups": [
           "startups",
@@ -16419,10 +16591,10 @@
           "private enterprise operators"
         ],
         "timeframe": "medium",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "alibaba-qwen38-27b-model-card-2026",
-          "kingy-qwen38-27b-review-2026"
+          "huggingface-qwen38-27b-stats-2026"
         ]
       }
     ],
@@ -16434,7 +16606,7 @@
           "en": "On August 14, 2026, Alibaba released Qwen3.8-27B under Apache 2.0 with 27.78B dense parameters and native 256K context.",
           "zhHans": "2026 年 8 月 14 日，阿里巴巴在 Apache 2.0 协议下开源 Qwen3.8-27B，具备 27.78B 稠密参数与原生 256K 上下文。"
         },
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "alibaba-qwen38-27b-model-card-2026",
           "kingy-qwen38-27b-review-2026"
@@ -16444,13 +16616,13 @@
         "id": "qwen38-27b-impact-1",
         "claimType": "impact",
         "text": {
-          "en": "Significantly advances workstation-deployable multimodal agentic capabilities, scoring 84.3 on OSWorld-Verified in official evaluations.",
-          "zhHans": "显著提升了工作站级多模态 Agent 能力，官方评测中 OSWorld-Verified 达到 84.3 分。"
+          "en": "Alibaba reported 84.3 on OSWorld-Verified and 73.0 on Terminal-Bench 2.1; Hugging Face recorded 2.35M+ downloads within ten days.",
+          "zhHans": "官方报告 OSWorld-Verified 达到 84.3 分、Terminal-Bench 2.1 达到 73.0 分；Hugging Face 在 10 天内记录了超 235 万次下载。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
           "alibaba-qwen38-27b-model-card-2026",
-          "kingy-qwen38-27b-review-2026"
+          "huggingface-qwen38-27b-stats-2026"
         ]
       },
       {
@@ -16470,6 +16642,7 @@
       {
         "sourceId": "alibaba-qwen38-27b-model-card-2026",
         "supports": [
+          "qwen-3-8-27b-open-weights-2026",
           "qwen38-27b-fact-1",
           "qwen38-27b-impact-1"
         ]
@@ -16478,8 +16651,13 @@
         "sourceId": "kingy-qwen38-27b-review-2026",
         "supports": [
           "qwen38-27b-fact-1",
-          "qwen38-27b-impact-1",
           "qwen38-27b-limitation-1"
+        ]
+      },
+      {
+        "sourceId": "huggingface-qwen38-27b-stats-2026",
+        "supports": [
+          "qwen38-27b-impact-1"
         ]
       }
     ],
@@ -16492,12 +16670,20 @@
     ],
     "editorial": {
       "createdAt": "2026-08-20",
-      "updatedAt": "2026-08-20",
-      "reviewedAt": "2026-08-20",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
       "publishedAt": "2026-08-20",
       "reviewer": "gang",
       "reviewProvenance": "v2.3",
-      "reviewNotes": "Published after official Apache 2.0 weights release on Hugging Face and independent hardware review."
+      "reviewNotes": "Published after official Apache 2.0 weights release on Hugging Face and independent hardware review. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+      "lastSourceCheckAt": "2026-08-24",
+      "changeLog": [
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Added Hugging Face repository download verification, calibrated claim/impact evidence grades to B/C, and changed consensusLevel to emerging."
+        }
+      ]
     },
     "categories": [
       "capability",
@@ -18565,12 +18751,12 @@
       "zhHans": "Mira Murati 创立的 Thinking Machines Lab 发布首个 AI 模型 Inkling——975B 参数开源权重多模态模型"
     },
     "searchSummary": {
-      "en": "Thinking Machines Lab, the AI startup founded by former OpenAI CTO Mira Murati, released its first model Inkling on July 15, 2026. The 975B-parameter open-weights MoE model (41B active) accepts text, image, and audio inputs, with a 1M-token context window. Valued at $12B, the company positions Inkling as a customizable enterprise alternative to rented frontier APIs.",
-      "zhHans": "由前 OpenAI CTO Mira Murati 创立的 AI 初创公司 Thinking Machines Lab 于 2026 年 7 月 15 日发布其首个模型 Inkling。该模型为 975B 参数开源权重 MoE（410 亿活跃），接受文本、图像和音频输入，上下文窗口达 100 万 token。公司估值 $12B，将 Inkling 定位为可定制的企业级替代方案，挑战租赁式前沿 API。"
+      "en": "Thinking Machines Lab released Inkling, its first 975B MoE open-weight model with 1M context, designed for customizable enterprise deployment.",
+      "zhHans": "Thinking Machines Lab 发布首个自研 975B 参数开源 MoE 模型 Inkling，具备 1M 上下文，主打可定制的企业级部署。"
     },
     "summary": {
-      "en": "On July 15, 2026, Thinking Machines Lab — the AI startup founded by former OpenAI CTO Mira Murati — released Inkling, its first in-house AI model. Inkling is a Mixture-of-Experts transformer with 975 billion total parameters (41 billion active), a 1-million-token context window, and text, image, and audio inputs. Its pretraining corpus included 45 trillion tokens spanning text, images, audio, and video; that does not mean the released model accepts video as an input modality. The model is open-weights under Apache 2.0. At a $12 billion valuation following a $6.3 billion compute deal with CoreWeave, Thinking Machines Lab entered the frontier competition with a differentiated thesis: enterprises want AI they can customize, not just rent from a handful of labs.",
-      "zhHans": "2026 年 7 月 15 日，由前 OpenAI CTO Mira Murati 创立的 AI 初创公司 Thinking Machines Lab 发布了首个自研模型 Inkling。Inkling 是混合专家（MoE）Transformer，总参数 9750 亿（活跃参数 410 亿），上下文窗口为 100 万 token，接受文本、图像和音频输入。其预训练语料包含 45 万亿 token，覆盖文本、图像、音频和视频；这并不表示发布版模型支持视频输入。该模型以 Apache 2.0 许可证开放权重。在估值 $12B、并与 CoreWeave 达成 $6.3B 算力交易后，Thinking Machines Lab 以“企业需要可定制 AI，而不只是租用少数实验室 API”的定位进入前沿竞争。"
+      "en": "On July 15, 2026, Thinking Machines Lab — founded by former OpenAI CTO Mira Murati — released Inkling, a 975-billion parameter MoE model (41B active) with a 1-million token context window and Apache 2.0 open weights for text, image, and audio inputs.",
+      "zhHans": "2026 年 7 月 15 日，由前 OpenAI CTO Mira Murati 创立的 Thinking Machines Lab 发布了首个自研模型 Inkling。该模型为 9750 亿参数 MoE 架构（410 亿激活），拥有 100 万 token 上下文，以 Apache 2.0 开源权重支持文本、图像与音频输入。"
     },
     "narrative": {
       "en": "Thinking Machines Lab was founded in 2025 by Mira Murati, OpenAI's former Chief Technology Officer, along with several other former OpenAI researchers and engineers. The company argues that renting API access from a small number of frontier labs leaves enterprise customers with limited control, customization, and transparency. Inkling is its first public model built around an alternative: open weights that customers can fine-tune and deploy. The architecture is a sparse 975B MoE with 41B active parameters, and the model accepts text, image, and audio inputs. Its 45-trillion-token pretraining corpus also included video. Early benchmark comparisons place it among current frontier systems on some tasks, but those provider-reported results still require independent replication. The July 15 release also arrived during a rapid fall in frontier-model API prices, making the long-term economics of self-hosting versus rented APIs an open question rather than a settled advantage.",
@@ -18583,7 +18769,7 @@
       "zhHans": "2026年7月15日"
     },
     "status": "published",
-    "significance": 2,
+    "significance": 1,
     "impactIndex": 5,
     "consensusLevel": "emerging",
     "controversy": false,
@@ -18597,8 +18783,8 @@
         "severity": 1,
         "direction": "positive",
         "description": {
-          "en": "The release of Inkling by a startup founded by former OpenAI leadership validates an alternative model for frontier AI: open-weights, customizable, self-hosted — rather than API-rental-only.",
-          "zhHans": "由前 OpenAI 领导层创立的初创公司发布 Inkling，验证了前沿 AI 的另一种模式：开源权重、可定制、可自托管——而非仅限 API 租赁。"
+          "en": "Promotes customizable, self-hostable open weights as an alternative to proprietary frontier APIs.",
+          "zhHans": "推动了可定制、可自托管的开源权重模式，作为专有前沿 API 的替代路径。"
         },
         "affectedGroups": [
           "AI industry",
@@ -18606,7 +18792,7 @@
           "AI researchers"
         ],
         "timeframe": "long",
-        "evidenceGrade": "A",
+        "evidenceGrade": "B",
         "sourceIds": [
           "techcrunch-thinking-machines-inkling",
           "thinking-machines-inkling-blog"
@@ -18617,8 +18803,8 @@
         "severity": 1,
         "direction": "positive",
         "description": {
-          "en": "At $12B valuation with $6.3B compute deal locked in, Thinking Machines Lab adds a major competitor to the frontier AI market, challenging the notion that only a handful of labs can produce competitive models.",
-          "zhHans": "以 $12B 估值锁定 $6.3B 算力交易，Thinking Machines Lab 为前沿 AI 市场增加了一个主要竞争者，挑战了只有少数实验室才能生产竞争性模型的观点。"
+          "en": "Adds a venture-backed open model competitor targeting customizable enterprise workflows.",
+          "zhHans": "为面向可定制企业工作流的开源模型市场增加了一家获得重磅资本支持的竞争者。"
         },
         "affectedGroups": [
           "AI companies",
@@ -18628,8 +18814,8 @@
         "timeframe": "medium",
         "evidenceGrade": "B",
         "sourceIds": [
-          "bloomberg-thinking-machines-inkling",
-          "fortune-thinking-machines-inkling"
+          "techcrunch-thinking-machines-inkling",
+          "axios-thinking-machines-inkling"
         ]
       }
     ],
@@ -18649,75 +18835,47 @@
         ]
       },
       {
-        "id": "thinking-machines-valuation-2026",
-        "claimType": "fact",
+        "id": "thinking-machines-inkling-2026-impact-claim",
+        "claimType": "impact",
         "text": {
-          "en": "Thinking Machines Lab was valued at $12 billion with a $6.3 billion compute deal locked in through 2029.",
-          "zhHans": "Thinking Machines Lab 估值 $12B，锁定了 $6.3B 持续到 2029 年的算力交易。"
+          "en": "Thinking Machines positions Inkling on its Tinker platform for enterprise customization rather than relying solely on proprietary API subscriptions.",
+          "zhHans": "Thinking Machines 将 Inkling 部署于 Tinker 平台，主打企业自研定制而非仅依赖专有 API 订阅。"
         },
         "evidenceGrade": "B",
         "sourceIds": [
-          "fortune-thinking-machines-inkling",
-          "bloomberg-thinking-machines-inkling"
-        ]
-      },
-      {
-        "id": "thinking-machines-inkling-2026-impact-claim",
-        "text": {
-          "en": "The release of Inkling by a startup founded by former OpenAI leadership validates an alternative model for frontier AI: open-weights, customizable, self-hosted — rather than API-rental-only.",
-          "zhHans": "由前 OpenAI 领导层创立的初创公司发布 Inkling，验证了前沿 AI 的另一种模式：开源权重、可定制、可自托管——而非仅限 API 租赁。"
-        },
-        "claimType": "impact",
-        "evidenceGrade": "A",
-        "sourceIds": [
           "techcrunch-thinking-machines-inkling",
-          "thinking-machines-inkling-blog"
-        ],
-        "notes": "Migrated from the first structured impact in the v2.3 contract update."
+          "thinking-machines-inkling-blog",
+          "axios-thinking-machines-inkling"
+        ]
       }
     ],
     "sources": [
       {
         "sourceId": "thinking-machines-inkling-blog",
         "supports": [
-          "inkling-release-2026"
-        ],
-        "quote": "975B total parameters, 41B active, 1M context window, pretrained on 45T tokens of text, images, audio and video."
+          "thinking-machines-inkling-2026",
+          "inkling-release-2026",
+          "thinking-machines-inkling-2026-impact-claim"
+        ]
       },
       {
         "sourceId": "techcrunch-thinking-machines-inkling",
         "supports": [
-          "inkling-release-2026"
-        ],
-        "quote": "Thinking Machines Lab released its first in-house AI model Wednesday morning, called Inkling."
-      },
-      {
-        "sourceId": "bloomberg-thinking-machines-inkling",
-        "supports": [
-          "thinking-machines-valuation-2026"
-        ],
-        "quote": "Thinking Machines Lab is releasing its first AI model, more than a year after former OpenAI executive Mira Murati founded the startup."
+          "inkling-release-2026",
+          "thinking-machines-inkling-2026-impact-claim"
+        ]
       },
       {
         "sourceId": "wired-thinking-machines-inkling",
         "supports": [
           "inkling-release-2026"
-        ],
-        "quote": "Inkling, a 975-billion-parameter open source model, was trained to understand video and audio."
-      },
-      {
-        "sourceId": "axios-thinking-machines-inkling",
-        "quote": "Mira Murati's Thinking Machines on Wednesday released Inkling, betting enterprises want AI they can customize.",
-        "supports": [
-          "thinking-machines-inkling-2026"
         ]
       },
       {
-        "sourceId": "fortune-thinking-machines-inkling",
+        "sourceId": "axios-thinking-machines-inkling",
         "supports": [
-          "thinking-machines-valuation-2026"
-        ],
-        "quote": "Valued at $12 billion, just launched Inkling — an open-weight model designed to rival OpenAI."
+          "thinking-machines-inkling-2026-impact-claim"
+        ]
       }
     ],
     "relatedEvents": [
@@ -18726,13 +18884,12 @@
       "claude-sonnet-5-launch-2026"
     ],
     "relatedForecasts": [
-      "ai-software-teams",
       "open-vs-closed"
     ],
     "editorial": {
       "createdAt": "2026-07-16",
-      "updatedAt": "2026-07-20",
-      "reviewedAt": "2026-07-20",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
       "publishedAt": "2026-07-16",
       "curator": "gang",
       "changeLog": [
@@ -18750,10 +18907,17 @@
           "date": "2026-07-20",
           "changeType": "correction",
           "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Removed paywalled/unreachable secondary valuation sources, verified accessedAt dates across remaining sources, calibrated significance to L1, and unlinked ai-software-teams direction."
         }
       ],
       "reviewer": "gang",
-      "reviewProvenance": "v2.3"
+      "reviewProvenance": "v2.3",
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   },
   {
@@ -19427,7 +19591,7 @@
       "zhHans": "2026年7月27日"
     },
     "status": "published",
-    "significance": 2,
+    "significance": 1,
     "impactIndex": 5,
     "consensusLevel": "debated",
     "controversy": true,
@@ -19589,10 +19753,10 @@
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-07-30",
-      "updatedAt": "2026-08-05",
+      "updatedAt": "2026-08-24",
       "curator": "gang",
       "reviewer": "gang",
-      "reviewedAt": "2026-08-05",
+      "reviewedAt": "2026-08-24",
       "reviewProvenance": "v2.3",
       "publishedAt": "2026-07-30",
       "changeLog": [
@@ -19610,9 +19774,15 @@
           "date": "2026-08-05",
           "changeType": "source_added",
           "summary": "Added the July 31 court order denying emergency interim relief and setting the preliminary-injunction hearing."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Calibrated significance from L2 to L1 to reflect pre-enforcement procedural lawsuit stage rather than final merits judgment."
         }
       ],
-      "lastSourceCheckAt": "2026-08-05"
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
   }
 ]

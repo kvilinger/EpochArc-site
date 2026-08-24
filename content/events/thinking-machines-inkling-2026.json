@@ -6,12 +6,12 @@
     "zhHans": "Mira Murati 创立的 Thinking Machines Lab 发布首个 AI 模型 Inkling——975B 参数开源权重多模态模型"
   },
   "searchSummary": {
-    "en": "Thinking Machines Lab, the AI startup founded by former OpenAI CTO Mira Murati, released its first model Inkling on July 15, 2026. The 975B-parameter open-weights MoE model (41B active) accepts text, image, and audio inputs, with a 1M-token context window. Valued at $12B, the company positions Inkling as a customizable enterprise alternative to rented frontier APIs.",
-    "zhHans": "由前 OpenAI CTO Mira Murati 创立的 AI 初创公司 Thinking Machines Lab 于 2026 年 7 月 15 日发布其首个模型 Inkling。该模型为 975B 参数开源权重 MoE（410 亿活跃），接受文本、图像和音频输入，上下文窗口达 100 万 token。公司估值 $12B，将 Inkling 定位为可定制的企业级替代方案，挑战租赁式前沿 API。"
+    "en": "Thinking Machines Lab released Inkling, its first 975B MoE open-weight model with 1M context, designed for customizable enterprise deployment.",
+    "zhHans": "Thinking Machines Lab 发布首个自研 975B 参数开源 MoE 模型 Inkling，具备 1M 上下文，主打可定制的企业级部署。"
   },
   "summary": {
-    "en": "On July 15, 2026, Thinking Machines Lab — the AI startup founded by former OpenAI CTO Mira Murati — released Inkling, its first in-house AI model. Inkling is a Mixture-of-Experts transformer with 975 billion total parameters (41 billion active), a 1-million-token context window, and text, image, and audio inputs. Its pretraining corpus included 45 trillion tokens spanning text, images, audio, and video; that does not mean the released model accepts video as an input modality. The model is open-weights under Apache 2.0. At a $12 billion valuation following a $6.3 billion compute deal with CoreWeave, Thinking Machines Lab entered the frontier competition with a differentiated thesis: enterprises want AI they can customize, not just rent from a handful of labs.",
-    "zhHans": "2026 年 7 月 15 日，由前 OpenAI CTO Mira Murati 创立的 AI 初创公司 Thinking Machines Lab 发布了首个自研模型 Inkling。Inkling 是混合专家（MoE）Transformer，总参数 9750 亿（活跃参数 410 亿），上下文窗口为 100 万 token，接受文本、图像和音频输入。其预训练语料包含 45 万亿 token，覆盖文本、图像、音频和视频；这并不表示发布版模型支持视频输入。该模型以 Apache 2.0 许可证开放权重。在估值 $12B、并与 CoreWeave 达成 $6.3B 算力交易后，Thinking Machines Lab 以“企业需要可定制 AI，而不只是租用少数实验室 API”的定位进入前沿竞争。"
+    "en": "On July 15, 2026, Thinking Machines Lab — founded by former OpenAI CTO Mira Murati — released Inkling, a 975-billion parameter MoE model (41B active) with a 1-million token context window and Apache 2.0 open weights for text, image, and audio inputs.",
+    "zhHans": "2026 年 7 月 15 日，由前 OpenAI CTO Mira Murati 创立的 Thinking Machines Lab 发布了首个自研模型 Inkling。该模型为 9750 亿参数 MoE 架构（410 亿激活），拥有 100 万 token 上下文，以 Apache 2.0 开源权重支持文本、图像与音频输入。"
   },
   "narrative": {
     "en": "Thinking Machines Lab was founded in 2025 by Mira Murati, OpenAI's former Chief Technology Officer, along with several other former OpenAI researchers and engineers. The company argues that renting API access from a small number of frontier labs leaves enterprise customers with limited control, customization, and transparency. Inkling is its first public model built around an alternative: open weights that customers can fine-tune and deploy. The architecture is a sparse 975B MoE with 41B active parameters, and the model accepts text, image, and audio inputs. Its 45-trillion-token pretraining corpus also included video. Early benchmark comparisons place it among current frontier systems on some tasks, but those provider-reported results still require independent replication. The July 15 release also arrived during a rapid fall in frontier-model API prices, making the long-term economics of self-hosting versus rented APIs an open question rather than a settled advantage.",
@@ -24,7 +24,7 @@
     "zhHans": "2026年7月15日"
   },
   "status": "published",
-  "significance": 2,
+  "significance": 1,
   "impactIndex": 5,
   "consensusLevel": "emerging",
   "controversy": false,
@@ -38,8 +38,8 @@
       "severity": 1,
       "direction": "positive",
       "description": {
-        "en": "The release of Inkling by a startup founded by former OpenAI leadership validates an alternative model for frontier AI: open-weights, customizable, self-hosted — rather than API-rental-only.",
-        "zhHans": "由前 OpenAI 领导层创立的初创公司发布 Inkling，验证了前沿 AI 的另一种模式：开源权重、可定制、可自托管——而非仅限 API 租赁。"
+        "en": "Promotes customizable, self-hostable open weights as an alternative to proprietary frontier APIs.",
+        "zhHans": "推动了可定制、可自托管的开源权重模式，作为专有前沿 API 的替代路径。"
       },
       "affectedGroups": [
         "AI industry",
@@ -47,7 +47,7 @@
         "AI researchers"
       ],
       "timeframe": "long",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "techcrunch-thinking-machines-inkling",
         "thinking-machines-inkling-blog"
@@ -58,8 +58,8 @@
       "severity": 1,
       "direction": "positive",
       "description": {
-        "en": "At $12B valuation with $6.3B compute deal locked in, Thinking Machines Lab adds a major competitor to the frontier AI market, challenging the notion that only a handful of labs can produce competitive models.",
-        "zhHans": "以 $12B 估值锁定 $6.3B 算力交易，Thinking Machines Lab 为前沿 AI 市场增加了一个主要竞争者，挑战了只有少数实验室才能生产竞争性模型的观点。"
+        "en": "Adds a venture-backed open model competitor targeting customizable enterprise workflows.",
+        "zhHans": "为面向可定制企业工作流的开源模型市场增加了一家获得重磅资本支持的竞争者。"
       },
       "affectedGroups": [
         "AI companies",
@@ -69,8 +69,8 @@
       "timeframe": "medium",
       "evidenceGrade": "B",
       "sourceIds": [
-        "bloomberg-thinking-machines-inkling",
-        "fortune-thinking-machines-inkling"
+        "techcrunch-thinking-machines-inkling",
+        "axios-thinking-machines-inkling"
       ]
     }
   ],
@@ -90,75 +90,47 @@
       ]
     },
     {
-      "id": "thinking-machines-valuation-2026",
-      "claimType": "fact",
+      "id": "thinking-machines-inkling-2026-impact-claim",
+      "claimType": "impact",
       "text": {
-        "en": "Thinking Machines Lab was valued at $12 billion with a $6.3 billion compute deal locked in through 2029.",
-        "zhHans": "Thinking Machines Lab 估值 $12B，锁定了 $6.3B 持续到 2029 年的算力交易。"
+        "en": "Thinking Machines positions Inkling on its Tinker platform for enterprise customization rather than relying solely on proprietary API subscriptions.",
+        "zhHans": "Thinking Machines 将 Inkling 部署于 Tinker 平台，主打企业自研定制而非仅依赖专有 API 订阅。"
       },
       "evidenceGrade": "B",
       "sourceIds": [
-        "fortune-thinking-machines-inkling",
-        "bloomberg-thinking-machines-inkling"
-      ]
-    },
-    {
-      "id": "thinking-machines-inkling-2026-impact-claim",
-      "text": {
-        "en": "The release of Inkling by a startup founded by former OpenAI leadership validates an alternative model for frontier AI: open-weights, customizable, self-hosted — rather than API-rental-only.",
-        "zhHans": "由前 OpenAI 领导层创立的初创公司发布 Inkling，验证了前沿 AI 的另一种模式：开源权重、可定制、可自托管——而非仅限 API 租赁。"
-      },
-      "claimType": "impact",
-      "evidenceGrade": "A",
-      "sourceIds": [
         "techcrunch-thinking-machines-inkling",
-        "thinking-machines-inkling-blog"
-      ],
-      "notes": "Migrated from the first structured impact in the v2.3 contract update."
+        "thinking-machines-inkling-blog",
+        "axios-thinking-machines-inkling"
+      ]
     }
   ],
   "sources": [
     {
       "sourceId": "thinking-machines-inkling-blog",
       "supports": [
-        "inkling-release-2026"
-      ],
-      "quote": "975B total parameters, 41B active, 1M context window, pretrained on 45T tokens of text, images, audio and video."
+        "thinking-machines-inkling-2026",
+        "inkling-release-2026",
+        "thinking-machines-inkling-2026-impact-claim"
+      ]
     },
     {
       "sourceId": "techcrunch-thinking-machines-inkling",
       "supports": [
-        "inkling-release-2026"
-      ],
-      "quote": "Thinking Machines Lab released its first in-house AI model Wednesday morning, called Inkling."
-    },
-    {
-      "sourceId": "bloomberg-thinking-machines-inkling",
-      "supports": [
-        "thinking-machines-valuation-2026"
-      ],
-      "quote": "Thinking Machines Lab is releasing its first AI model, more than a year after former OpenAI executive Mira Murati founded the startup."
+        "inkling-release-2026",
+        "thinking-machines-inkling-2026-impact-claim"
+      ]
     },
     {
       "sourceId": "wired-thinking-machines-inkling",
       "supports": [
         "inkling-release-2026"
-      ],
-      "quote": "Inkling, a 975-billion-parameter open source model, was trained to understand video and audio."
-    },
-    {
-      "sourceId": "axios-thinking-machines-inkling",
-      "quote": "Mira Murati's Thinking Machines on Wednesday released Inkling, betting enterprises want AI they can customize.",
-      "supports": [
-        "thinking-machines-inkling-2026"
       ]
     },
     {
-      "sourceId": "fortune-thinking-machines-inkling",
+      "sourceId": "axios-thinking-machines-inkling",
       "supports": [
-        "thinking-machines-valuation-2026"
-      ],
-      "quote": "Valued at $12 billion, just launched Inkling — an open-weight model designed to rival OpenAI."
+        "thinking-machines-inkling-2026-impact-claim"
+      ]
     }
   ],
   "relatedEvents": [
@@ -167,13 +139,12 @@
     "claude-sonnet-5-launch-2026"
   ],
   "relatedForecasts": [
-    "ai-software-teams",
     "open-vs-closed"
   ],
   "editorial": {
     "createdAt": "2026-07-16",
-    "updatedAt": "2026-07-20",
-    "reviewedAt": "2026-07-20",
+    "updatedAt": "2026-08-24",
+    "reviewedAt": "2026-08-24",
     "publishedAt": "2026-07-16",
     "curator": "gang",
     "changeLog": [
@@ -191,9 +162,16 @@
         "date": "2026-07-20",
         "changeType": "correction",
         "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
+      },
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Removed paywalled/unreachable secondary valuation sources, verified accessedAt dates across remaining sources, calibrated significance to L1, and unlinked ai-software-teams direction."
       }
     ],
     "reviewer": "gang",
-    "reviewProvenance": "v2.3"
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-08-24",
+    "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
   }
 }

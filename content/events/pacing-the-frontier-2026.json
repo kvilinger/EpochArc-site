@@ -2,8 +2,8 @@
   "id": "pacing-the-frontier-2026",
   "slug": "pacing-the-frontier",
   "title": {
-    "en": "More than 1,293 frontier-AI employees call for tools to pace future AI development",
-    "zhHans": "超过 1,293 名前沿 AI 员工呼吁建立未来调节 AI 发展速度的工具"
+    "en": "Frontier-AI Employees Call for Verifiable Technical and Governance Tools to Pace Development",
+    "zhHans": "前沿 AI 员工发表联合声明，呼吁建立调节 AI 发展速度的技术与治理机制"
   },
   "searchSummary": {
     "en": "A cross-company employee statement asks the US government to support international technical and governance tools that could deliberately pace frontier AI development if future risks require it.",
@@ -14,8 +14,8 @@
     "zhHans": "2026 年 7 月 28 日，来自前沿 AI 公司的员工发布《调节前沿发展》声明，呼吁美国政府支持国际努力，建立能够在必要时调节自动化 AI 发展的工具。这是协调意愿的信号，不是当前暂停开发，也不是具有约束力的公司政策。"
   },
   "narrative": {
-    "en": "Frontier AI employees are caught in a coordination problem: each company may want the option to slow development if capabilities begin to outpace safety and governance, but no company wants to slow unilaterally while competitors continue. Pacing the Frontier asks the US government to help develop verifiable technical and governance mechanisms for that future option. The page’s live count reached 1,293 employees, including senior figures from OpenAI, Anthropic, Google and Meta. That breadth makes the statement notable, but the document does not specify a trigger, enforcement mechanism, international agreement or timetable. It also says signatories speak in a personal capacity, so the statement should not be treated as a formal position of every named employer.",
-    "zhHans": "前沿 AI 员工面临一个协调难题：如果能力进展开始超过安全与治理能力，各家公司可能都希望保留放慢发展的选项，但在竞争者继续推进时，没有一家公司愿意单方面放慢。《调节前沿发展》呼吁美国政府帮助建立可验证的技术和治理机制，为未来保留这一选项。该页面的实时签署人数已达到 1,293 人，其中包括 OpenAI、Anthropic、Google 和 Meta 的高层人士。这种跨公司范围使声明具有事件意义，但文件没有规定触发条件、执行机制、国际协议或时间表。页面还说明签署者以个人身份发言，因此不能将其视为所有签署者雇主的正式立场。"
+    "en": "Frontier AI employees face a coordination dilemma: labs may desire the option to deliberately pace automated AI development if risks surge, but cannot easily pause unilaterally in competitive markets. The statement asks the US government to support international efforts to build verifiable technical and governance mechanisms. The signatory count surpassed 1,300 across major labs, but the declaration carries no legal mandate or timetable and was signed in individual capacities.",
+    "zhHans": "前沿 AI 员工面临协调困境：如果能力进展超过安全与治理能力，各实验室可能希望保留放慢发展的选项，但在竞争压力下难以单方面暂停。声明呼吁美国政府支持建立可验证的技术与治理机制。签署人数在主要实验室中已超 1,300 人，但声明不具法律约束力或具体时间表，且签署者均以个人身份参与。"
   },
   "date": "2026-07-28",
   "datePrecision": "day",
@@ -25,7 +25,7 @@
   },
   "status": "published",
   "significance": 2,
-  "impactIndex": 5,
+  "impactIndex": 4,
   "consensusLevel": "emerging",
   "controversy": true,
   "categories": [
@@ -45,27 +45,6 @@
         "frontier AI employees",
         "AI labs",
         "policymakers",
-        "AI safety researchers",
-        "the public"
-      ],
-      "timeframe": "medium",
-      "evidenceGrade": "B",
-      "sourceIds": [
-        "pacing-frontier-statement-2026",
-        "fortune-pacing-frontier-2026"
-      ]
-    },
-    {
-      "dimension": "risk_creation",
-      "severity": -2,
-      "direction": "negative",
-      "description": {
-        "en": "The statement identifies a coordination and oversight gap: competitive pressure may make it difficult for any single lab to slow down even if risks increase.",
-        "zhHans": "声明指出了协调和监督缺口：即使风险上升，竞争压力也可能使任何单一实验室都难以自行放慢速度。"
-      },
-      "affectedGroups": [
-        "AI labs",
-        "governments",
         "AI safety researchers",
         "the public"
       ],
@@ -164,10 +143,10 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-07-30",
-    "updatedAt": "2026-07-30",
+    "updatedAt": "2026-08-24",
     "curator": "gang",
     "reviewer": "gang",
-    "reviewedAt": "2026-07-30",
+    "reviewedAt": "2026-08-24",
     "reviewProvenance": "v2.3",
     "publishedAt": "2026-07-30",
     "changeLog": [
@@ -180,7 +159,14 @@
         "date": "2026-07-30",
         "changeType": "source_added",
         "summary": "Added first-party statement and independent coverage; retained personal-capacity and mechanism limitations."
+      },
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Removed volatile live signatory count from title, removed subjective risk_creation score, and recorded updated statement snapshot."
       }
-    ]
+    ],
+    "lastSourceCheckAt": "2026-08-24",
+    "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
   }
 }

@@ -48,7 +48,7 @@
         "security engineers"
       ],
       "timeframe": "medium",
-      "evidenceGrade": "A",
+      "evidenceGrade": "B",
       "sourceIds": [
         "anthropic-cryptanalysis-2026",
         "anthropic-hawk-key-recovery-2026",
@@ -225,10 +225,10 @@
   ],
   "editorial": {
     "createdAt": "2026-07-30",
-    "updatedAt": "2026-08-05",
+    "updatedAt": "2026-08-24",
     "curator": "gang",
     "reviewer": "gang",
-    "reviewedAt": "2026-08-05",
+    "reviewedAt": "2026-08-24",
     "reviewProvenance": "v2.3",
     "publishedAt": "2026-07-30",
     "changeLog": [
@@ -246,8 +246,14 @@
         "date": "2026-08-05",
         "changeType": "source_added",
         "summary": "Added NIST and HAWK-team confirmation that HAWK was withdrawn from the additional-signatures process."
+      },
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Adjusted capability impact evidenceGrade from A to B following Tier 3 reclassification of independent cryptography blog."
       }
     ],
-    "lastSourceCheckAt": "2026-08-05"
+    "lastSourceCheckAt": "2026-08-24",
+    "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
   }
 }

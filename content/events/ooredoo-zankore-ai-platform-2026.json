@@ -19,10 +19,13 @@
   },
   "date": "2026-08-06",
   "datePrecision": "day",
-  "displayDate": "2026-08-06",
+  "displayDate": {
+    "en": "Aug 6, 2026",
+    "zhHans": "2026年8月6日"
+  },
   "status": "published",
-  "significance": 2,
-  "consensusLevel": "broad",
+  "significance": 1,
+  "consensusLevel": "emerging",
   "controversy": false,
   "impacts": [
     {
@@ -111,21 +114,26 @@
     }
   ],
   "relatedEvents": [],
-  "relatedForecasts": [
-    "autonomous-enterprise-workflows"
-  ],
+  "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-08-06",
-    "updatedAt": "2026-08-10",
+    "updatedAt": "2026-08-24",
     "reviewProvenance": "v2.3",
-    "reviewedAt": "2026-08-10",
+    "reviewedAt": "2026-08-24",
     "reviewer": "gang",
-    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: investment commitment and multi-year infrastructure roadmap.",
-    "publishedAt": "2026-08-10"
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: investment commitment and multi-year infrastructure roadmap. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+    "publishedAt": "2026-08-10",
+    "lastSourceCheckAt": "2026-08-24",
+    "changeLog": [
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Fixed official Ooredoo source URL, removed secondary governance category, unlinked autonomous-enterprise-workflows, and calibrated significance from L2 to L1."
+      }
+    ]
   },
   "categories": [
-    "commerce",
-    "governance"
+    "commerce"
   ],
   "impactIndex": 4
 }

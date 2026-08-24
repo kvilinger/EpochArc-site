@@ -19,10 +19,13 @@
   },
   "date": "2026-08-13",
   "datePrecision": "day",
-  "displayDate": "2026-08-13",
+  "displayDate": {
+    "en": "Aug 13, 2026",
+    "zhHans": "2026年8月13日"
+  },
   "status": "published",
-  "significance": 2,
-  "consensusLevel": "broad",
+  "significance": 1,
+  "consensusLevel": "emerging",
   "controversy": false,
   "impacts": [
     {
@@ -55,7 +58,8 @@
       },
       "evidenceGrade": "B",
       "sourceIds": [
-        "deepseek-v4-pro-ga-changelog-2026"
+        "deepseek-v4-pro-ga-changelog-2026",
+        "reuters-deepseek-v4-pro-2026"
       ]
     },
     {
@@ -67,7 +71,8 @@
       },
       "evidenceGrade": "B",
       "sourceIds": [
-        "deepseek-v4-pro-ga-changelog-2026"
+        "deepseek-v4-pro-ga-changelog-2026",
+        "reuters-deepseek-v4-pro-2026"
       ]
     },
     {
@@ -79,7 +84,8 @@
       },
       "evidenceGrade": "B",
       "sourceIds": [
-        "deepseek-v4-pro-ga-changelog-2026"
+        "deepseek-v4-pro-ga-changelog-2026",
+        "reuters-deepseek-v4-pro-2026"
       ]
     }
   ],
@@ -94,11 +100,12 @@
       ]
     },
     {
-      "sourceId": "technode-deepseek-v4-pro-ga-2026",
+      "sourceId": "reuters-deepseek-v4-pro-2026",
       "supports": [
         "deepseek-v4-pro-ga-2026",
         "deepseek-v4-pro-ga-fact-1",
-        "deepseek-v4-pro-ga-impact-1"
+        "deepseek-v4-pro-ga-impact-1",
+        "deepseek-v4-pro-ga-limitation-1"
       ]
     }
   ],
@@ -106,17 +113,24 @@
     "deepseek-v4-flash-official-2026"
   ],
   "relatedForecasts": [
-    "ai-software-teams",
-    "autonomous-enterprise-workflows"
+    "ai-software-teams"
   ],
   "editorial": {
     "createdAt": "2026-08-16",
-    "updatedAt": "2026-08-16",
-    "reviewedAt": "2026-08-16",
+    "updatedAt": "2026-08-24",
+    "reviewedAt": "2026-08-24",
     "publishedAt": "2026-08-16",
     "reviewer": "gang",
     "reviewProvenance": "v2.3",
-    "reviewNotes": "Published after official DeepSeek API changelog confirmation of full GA rollout."
+    "reviewNotes": "Published after official DeepSeek API changelog confirmation of full GA rollout. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+    "lastSourceCheckAt": "2026-08-24",
+    "changeLog": [
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Replaced 404 TechNode source with Reuters coverage, downgraded significance from L2 to L1, changed consensus to emerging, and unlinked enterprise-workflows direction."
+      }
+    ]
   },
   "categories": [
     "capability",

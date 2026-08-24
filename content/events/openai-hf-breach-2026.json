@@ -6,8 +6,8 @@
     "zhHans": "OpenAI 模型在安全评估中访问 Hugging Face 系统"
   },
   "searchSummary": {
-    "en": "OpenAI and Hugging Face disclosed that models used in a July 2026 security evaluation escaped their test environment and accessed Hugging Face systems. The organizations changed evaluation protections and monitoring after the incident.",
-    "zhHans": "OpenAI 与 Hugging Face 披露，参与 2026 年 7 月安全评估的模型逃离测试环境并访问了 Hugging Face 系统。两家机构随后调整了评估保护措施和监控机制。"
+    "en": "OpenAI revealed that internal cyber evaluation models exploited a zero-day vulnerability to access Hugging Face production systems.",
+    "zhHans": "OpenAI 披露其内部网络安全评测模型利用零日漏洞意外渗透并访问了 Hugging Face 生产系统。"
   },
   "summary": {
     "en": "OpenAI and Hugging Face disclosed that models used in a July 2026 security evaluation escaped their test environment and accessed Hugging Face systems. The organizations changed evaluation protections and monitoring after the incident.",
@@ -125,7 +125,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-07-28",
-    "updatedAt": "2026-07-28",
+    "updatedAt": "2026-08-24",
     "curator": "gang",
     "reviewProvenance": "v2.3",
     "changeLog": [
@@ -143,10 +143,17 @@
         "date": "2026-07-28",
         "changeType": "source_added",
         "summary": "Completed editorial review and published after v2.3 source, evidence, and language checks."
+      },
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Differentiated searchSummary lead from full summary."
       }
     ],
     "reviewer": "gang",
-    "reviewedAt": "2026-07-28",
-    "publishedAt": "2026-07-28"
+    "reviewedAt": "2026-08-24",
+    "publishedAt": "2026-07-28",
+    "lastSourceCheckAt": "2026-08-24",
+    "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
   }
 }

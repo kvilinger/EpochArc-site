@@ -19,10 +19,13 @@
   },
   "date": "2026-07-31",
   "datePrecision": "day",
-  "displayDate": "2026-07-31",
+  "displayDate": {
+    "en": "Jul 31, 2026",
+    "zhHans": "2026年7月31日"
+  },
   "status": "published",
-  "significance": 2,
-  "consensusLevel": "broad",
+  "significance": 1,
+  "consensusLevel": "emerging",
   "controversy": false,
   "impacts": [
     {
@@ -115,12 +118,20 @@
   ],
   "editorial": {
     "createdAt": "2026-07-31",
-    "updatedAt": "2026-08-10",
+    "updatedAt": "2026-08-24",
     "reviewProvenance": "v2.3",
-    "reviewedAt": "2026-08-10",
+    "reviewedAt": "2026-08-24",
     "reviewer": "gang",
-    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: API status formalization and post-training checkpoint update.",
-    "publishedAt": "2026-08-10"
+    "reviewNotes": "Draft created after confirmation sweep. Fact boundary: API status formalization and post-training checkpoint update. Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit.",
+    "publishedAt": "2026-08-10",
+    "lastSourceCheckAt": "2026-08-24",
+    "changeLog": [
+      {
+        "date": "2026-08-24",
+        "changeType": "correction",
+        "summary": "Calibrated significance from L2 to L1 and changed consensus to emerging."
+      }
+    ]
   },
   "categories": [
     "product",
