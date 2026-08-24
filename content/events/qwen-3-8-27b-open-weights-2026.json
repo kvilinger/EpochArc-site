@@ -1,0 +1,148 @@
+{
+  "id": "qwen-3-8-27b-open-weights-2026",
+  "slug": "qwen-3-8-27b-open-weights-2026",
+  "title": {
+    "en": "Alibaba Releases Qwen3.8-27B Dense Multimodal Model Under Apache 2.0",
+    "zhHans": "阿里巴巴以 Apache 2.0 协议开源 Qwen3.8-27B 稠密多模态模型"
+  },
+  "searchSummary": {
+    "en": "Alibaba open-sourced Qwen3.8-27B under Apache 2.0, featuring 27.78B dense weights, native 256K context, and major gains in agentic coding and computer control.",
+    "zhHans": "阿里巴巴开源 Qwen3.8-27B（Apache 2.0 协议），具备 27.78B 稠密参数、原生 256K 上下文以及在 Agent 编程和计算机控制上的显著提升。"
+  },
+  "summary": {
+    "en": "On August 14, 2026, Alibaba's Qwen team released Qwen3.8-27B under the Apache 2.0 license. The 27.78-billion-parameter dense multimodal model features a native 262,144-token context window and reported substantial benchmark gains in terminal-based coding, GUI computer use, and visual reasoning.",
+    "zhHans": "2026 年 8 月 14 日，阿里巴巴通义千问团队在 Apache 2.0 协议下开源发布 Qwen3.8-27B。该模型包含 277.8 亿（27.78B）稠密多模态参数，具备原生 262,144（256K）token 上下文窗口，并在终端编程、GUI 计算机操作与视觉推理基准上报告了大幅性能提升。"
+  },
+  "narrative": {
+    "en": "Alibaba published weights and configuration files for Qwen3.8-27B on Hugging Face and ModelScope, targeting high-end workstations and private developer deployments. Unlike sparse mixture-of-experts architectures, the 27.78B dense design fits into 24GB GPUs when quantized to 4 bits at moderate context. Official benchmarks showed OSWorld-Verified rising from 63.9 to 84.3 and Terminal-Bench 2.1 reaching 73.0. Independent reviewers noted that unquantized BF16 execution and full 256K context windows still require substantial enterprise hardware, and all initial launch figures reflect vendor evaluations pending third-party reproduction.",
+    "zhHans": "阿里巴巴在 Hugging Face 与 ModelScope 上发布了 Qwen3.8-27B 的完整权重与配置文件，主要面向高端工作站与开发者本地私有化部署。与稀疏 MoE 架构不同，该 27.78B 稠密模型经 4-bit 量化后可在中等上下文下适配 24GB 显存显卡。官方模型卡显示，其 OSWorld-Verified 评测从 63.9 跃升至 84.3，Terminal-Bench 2.1 达到 73.0。独立评测指出，未量化的 BF16 推理与完整的 256K 长上下文仍需企业级算力支撑，发布初期的各项跑分仍待第三方独立机构进一步复现验证。"
+  },
+  "date": "2026-08-14",
+  "datePrecision": "day",
+  "displayDate": "2026-08-14",
+  "status": "published",
+  "significance": 2,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Delivers frontier-class OS-level computer use and agentic coding capabilities in a dense 27.78B parameter budget.",
+        "zhHans": "在 27.78B 稠密参数规模下实现了前沿级的系统级计算机操作与智能体编程能力。"
+      },
+      "affectedGroups": [
+        "developers",
+        "open source community",
+        "AI researchers",
+        "enterprise software teams"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "alibaba-qwen38-27b-model-card-2026",
+        "kingy-qwen38-27b-review-2026"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Permits commercial, unmetered local deployment of multimodal agentic workflows under an Apache 2.0 license.",
+        "zhHans": "允许在 Apache 2.0 协议下对多模态 Agent 工作流进行无限制的商用本地部署。"
+      },
+      "affectedGroups": [
+        "startups",
+        "developers",
+        "private enterprise operators"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "alibaba-qwen38-27b-model-card-2026",
+        "kingy-qwen38-27b-review-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "qwen38-27b-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "On August 14, 2026, Alibaba released Qwen3.8-27B under Apache 2.0 with 27.78B dense parameters and native 256K context.",
+        "zhHans": "2026 年 8 月 14 日，阿里巴巴在 Apache 2.0 协议下开源 Qwen3.8-27B，具备 27.78B 稠密参数与原生 256K 上下文。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "alibaba-qwen38-27b-model-card-2026",
+        "kingy-qwen38-27b-review-2026"
+      ]
+    },
+    {
+      "id": "qwen38-27b-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Significantly advances workstation-deployable multimodal agentic capabilities, scoring 84.3 on OSWorld-Verified in official evaluations.",
+        "zhHans": "显著提升了工作站级多模态 Agent 能力，官方评测中 OSWorld-Verified 达到 84.3 分。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "alibaba-qwen38-27b-model-card-2026",
+        "kingy-qwen38-27b-review-2026"
+      ]
+    },
+    {
+      "id": "qwen38-27b-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "All initial benchmark numbers stem from vendor-reported evaluations, and full unquantized context requires substantial GPU memory beyond single consumer cards.",
+        "zhHans": "发布初期各项基准跑分均来自官方自测，且未量化的全长上下文推理所需的显存仍大幅超出单张消费级显卡配置。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "kingy-qwen38-27b-review-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "alibaba-qwen38-27b-model-card-2026",
+      "supports": [
+        "qwen38-27b-fact-1",
+        "qwen38-27b-impact-1"
+      ]
+    },
+    {
+      "sourceId": "kingy-qwen38-27b-review-2026",
+      "supports": [
+        "qwen38-27b-fact-1",
+        "qwen38-27b-impact-1",
+        "qwen38-27b-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "deepseek-v4-flash-official-2026",
+    "meta-muse-code-spark-1-2-2026"
+  ],
+  "relatedForecasts": [
+    "ai-software-teams"
+  ],
+  "editorial": {
+    "createdAt": "2026-08-20",
+    "updatedAt": "2026-08-20",
+    "reviewedAt": "2026-08-20",
+    "publishedAt": "2026-08-20",
+    "reviewer": "gang",
+    "reviewProvenance": "v2.3",
+    "reviewNotes": "Published after official Apache 2.0 weights release on Hugging Face and independent hardware review."
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "impactIndex": 6
+}

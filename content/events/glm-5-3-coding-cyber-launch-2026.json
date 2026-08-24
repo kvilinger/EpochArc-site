@@ -1,0 +1,154 @@
+{
+  "id": "glm-5-3-coding-cyber-launch-2026",
+  "slug": "glm-5-3-coding-cyber-launch-2026",
+  "title": {
+    "en": "Z.ai Launches GLM-5.3 Flagship With Post-Trained Coding and Cyber Defense Capabilities",
+    "zhHans": "智谱 AI 发布后训练旗舰 GLM-5.3，主打 Agent 编程与网络安全攻防"
+  },
+  "searchSummary": {
+    "en": "Z.ai launched GLM-5.3, leveraging extensive post-training on a 743B base to deliver 1M context, a 50% coding benchmark gain, and frontier cyber defense performance.",
+    "zhHans": "智谱 AI 发布 GLM-5.3，在 743B 底座上通过强化后训练实现 1M 上下文、代码基准提升 50% 与网络安全前沿表现。"
+  },
+  "summary": {
+    "en": "On August 14, 2026, Z.ai launched GLM-5.3, an updated flagship model built upon its 743-billion-parameter base architecture. Powered by scaled-up post-training, the model features a 1,000,000-token context window and demonstrated major performance leaps in autonomous coding and cybersecurity evaluations.",
+    "zhHans": "2026 年 8 月 14 日，智谱 AI（Z.ai）正式发布旗舰模型 GLM-5.3。该模型基于其 7430 亿（743B）参数底座架构，通过大规模强化后训练实现能力突破，支持 100 万（1M）token 上下文窗口，并在自主编程与网络安全攻防评测中展现了显著提升。"
+  },
+  "narrative": {
+    "en": "Z.ai rolled out GLM-5.3 to its GLM Coding Plan and API developer tiers on August 14, 2026. Rather than retraining a larger base model, the company retained the 743B parameter architecture of GLM-5.2 and derived its capability gains entirely from extended reinforcement learning and specialized post-training recipes. On internal and public benchmarks, Z.ai reported a 50% coding score improvement over GLM-5.2 on Z.ai Code Bench, 28.3% on Terminal-Bench 3.0, and 84.5% on CyberGym. The model was initially made available via hosted cloud endpoints, with open-weights releases scheduled to follow a two-week safety and export review period.",
+    "zhHans": "2026 年 8 月 14 日，智谱 AI 向其 GLM Coding Plan 与 API 开发者全面上线了 GLM-5.3。智谱并未重新训练更大规模的基础底座，而是保持了 GLM-5.2 的 743B 参数架构，所有能力提升均来自于扩展的强化学习与专业化后训练方案。官方自测与公开基准显示，GLM-5.3 在 Z.ai Code Bench 上的代码评分较 GLM-5.2 提升了 50%，Terminal-Bench 3.0 达到 28.3%，CyberGym 网络安全攻防达到 84.5%。该模型发布时先通过云端 API 交付，开源权重计划在完成两周的安全审查后分阶段提供。"
+  },
+  "date": "2026-08-14",
+  "datePrecision": "day",
+  "displayDate": "2026-08-14",
+  "status": "published",
+  "significance": 2,
+  "consensusLevel": "broad",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Demonstrates that extensive post-training on a 743B base can yield dramatic gains in long-horizon coding and cybersecurity tasks without retraining base weights.",
+        "zhHans": "证明了在 743B 底座上进行深度后训练可在不重训底座的情况下，在长流程编程与网络安全任务中实现跨越式提升。"
+      },
+      "affectedGroups": [
+        "software engineers",
+        "cybersecurity teams",
+        "enterprise developers"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "z-ai-glm53-release-notes-2026",
+        "explainx-glm53-launch-analysis-2026"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Increases competition in high-performance developer subscription tiers and cloud coding agent APIs.",
+        "zhHans": "加剧了高性能开发者订阅计划与云端编程智能体 API 市场的商业竞争。"
+      },
+      "affectedGroups": [
+        "cloud AI providers",
+        "developer tooling companies"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "explainx-glm53-launch-analysis-2026",
+        "uniteai-glm53-cyber-coding-2026"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "glm53-launch-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "On August 14, 2026, Z.ai launched GLM-5.3 with a 743B base architecture, 1M context window, and enhanced post-training.",
+        "zhHans": "2026 年 8 月 14 日，智谱 AI 发布基于 743B 底座架构、具备 1M 上下文窗口与深度后训练的 GLM-5.3。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "z-ai-glm53-release-notes-2026",
+        "explainx-glm53-launch-analysis-2026"
+      ]
+    },
+    {
+      "id": "glm53-launch-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Reported a 50% improvement in coding scores over GLM-5.2 and frontier-level scores across Terminal-Bench and CyberGym.",
+        "zhHans": "官方报告代码得分较 GLM-5.2 提升 50%，并在 Terminal-Bench 和 CyberGym 上达到前沿水平。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "z-ai-glm53-release-notes-2026",
+        "explainx-glm53-launch-analysis-2026"
+      ]
+    },
+    {
+      "id": "glm53-launch-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "At launch, access was limited to API and Coding Plan users, with open-weights release postponed for a safety evaluation window.",
+        "zhHans": "发布初期访问仅限于 API 和 Coding Plan 用户，开源权重因安全审查要求延后分阶段提供。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "explainx-glm53-launch-analysis-2026",
+        "uniteai-glm53-cyber-coding-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "z-ai-glm53-release-notes-2026",
+      "supports": [
+        "glm53-launch-fact-1",
+        "glm53-launch-impact-1"
+      ]
+    },
+    {
+      "sourceId": "explainx-glm53-launch-analysis-2026",
+      "supports": [
+        "glm53-launch-fact-1",
+        "glm53-launch-impact-1",
+        "glm53-launch-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "uniteai-glm53-cyber-coding-2026",
+      "supports": [
+        "glm53-launch-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "glm-52-open-source-2026",
+    "deepseek-v4-flash-official-2026"
+  ],
+  "relatedForecasts": [
+    "ai-software-teams",
+    "autonomous-enterprise-workflows"
+  ],
+  "editorial": {
+    "createdAt": "2026-08-20",
+    "updatedAt": "2026-08-20",
+    "reviewedAt": "2026-08-20",
+    "publishedAt": "2026-08-20",
+    "reviewer": "gang",
+    "reviewProvenance": "v2.3",
+    "reviewNotes": "Published after official Z.ai documentation release, developer rollout, and independent benchmark review."
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "impactIndex": 6
+}

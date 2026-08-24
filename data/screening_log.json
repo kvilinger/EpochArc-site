@@ -4585,6 +4585,130 @@
       },
       "reviewedAt": "2026-08-19",
       "reviewer": "gang"
+    },
+    {
+      "candidateId": "qwen-3-8-27b-open-weights-2026",
+      "eventId": "qwen-3-8-27b-open-weights-2026",
+      "eventName": "Alibaba Releases Qwen3.8-27B Dense Multimodal Model Under Apache 2.0",
+      "eventDate": "2026-08-14",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Alibaba Model Card + Kingy.ai review",
+      "screenedAt": "2026-08-20",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "阿里巴巴开源 Qwen3.8-27B（Apache 2.0），27.78B 稠密参数支持 256K 上下文与计算机控制提升。",
+      "reviewed": true,
+      "runId": "update-sweep-2026-08-20",
+      "confirmation": {
+        "completedAt": "2026-08-20",
+        "status": "completed",
+        "queries": {
+          "fact": "Qwen3.8-27B Apache 2.0 release date Hugging Face ModelScope",
+          "impact": "Qwen3.8-27B OSWorld Verified Terminal Bench local workstation impact",
+          "analysis": "Kingy.ai Qwen3.8-27B memory requirements 24GB quant review",
+          "controversy": "Vendor benchmark reproduction limitation"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Alibaba released Qwen3.8-27B with 27.78B dense parameters and 256K native context on August 14, 2026.",
+            "sourceUrls": [
+              "https://huggingface.co/Qwen/Qwen3.8-27B"
+            ]
+          },
+          "impact": {
+            "finding": "Enables local unmetered deployment of advanced coding and GUI automation workflows under Apache 2.0.",
+            "sourceUrls": [
+              "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/"
+            ]
+          },
+          "analysis": {
+            "finding": "4-bit quantization allows workstation deployment on 24GB GPUs at moderate context.",
+            "sourceUrls": [
+              "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/"
+            ]
+          },
+          "controversy": {
+            "finding": "Benchmark numbers remain vendor-reported pending independent reproduction.",
+            "sourceUrls": [
+              "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-20",
+      "reviewer": "gang"
+    },
+    {
+      "candidateId": "glm-5-3-coding-cyber-launch-2026",
+      "eventId": "glm-5-3-coding-cyber-launch-2026",
+      "eventName": "Z.ai Launches GLM-5.3 Flagship With Post-Trained Coding and Cyber Defense Capabilities",
+      "eventDate": "2026-08-14",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Z.ai release notes + ExplainX + Unite.AI",
+      "screenedAt": "2026-08-20",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "智谱 AI 发布基于 743B 底座与强化后训练的 GLM-5.3，支持 1M 上下文，主打 Agent 编程与 CyberGym 攻防。",
+      "reviewed": true,
+      "runId": "update-sweep-2026-08-20",
+      "confirmation": {
+        "completedAt": "2026-08-20",
+        "status": "completed",
+        "queries": {
+          "fact": "GLM-5.3 release date 743B post-training 1M context Z.ai",
+          "impact": "GLM-5.3 Z.ai Code Bench 50 percent gain Terminal-Bench CyberGym impact",
+          "analysis": "ExplainX GLM-5.3 post-training vs retraining architecture analysis",
+          "controversy": "Staged open weights safety review delay limitation"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Z.ai launched GLM-5.3 on August 14, 2026, using extensive post-training on a 743B base.",
+            "sourceUrls": [
+              "https://docs.z.ai/release-notes/new-released"
+            ]
+          },
+          "impact": {
+            "finding": "Delivers 1M context and large benchmark leaps in coding and cybersecurity.",
+            "sourceUrls": [
+              "https://www.explainx.ai/blog/glm-5-3-launch-cyber-defense-benchmarks-august-2026"
+            ]
+          },
+          "analysis": {
+            "finding": "Capabilities derived from alignment and reinforcement learning without expanding base parameter count.",
+            "sourceUrls": [
+              "https://www.unite.ai/z-ai-launches-glm-5-3-with-frontier-coding-and-a-cyber-capability-that-outgrew-its-training/"
+            ]
+          },
+          "controversy": {
+            "finding": "Initial release is hosted-only; open weights are staged behind safety reviews.",
+            "sourceUrls": [
+              "https://www.explainx.ai/blog/glm-5-3-launch-cyber-defense-benchmarks-august-2026"
+            ]
+          }
+        }
+      },
+      "reviewedAt": "2026-08-20",
+      "reviewer": "gang"
     }
   ],
   "_runSchema": {
@@ -5511,6 +5635,72 @@
           "category": "society",
           "queries": [
             "AI democracy and labor institutions August 2026"
+          ],
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "runId": "update-sweep-2026-08-20",
+      "runDate": "2026-08-20",
+      "windowStart": "2026-08-14",
+      "windowEnd": "2026-08-20",
+      "scope": "Late August 2026 sweep covering Qwen3.8-27B open weights and GLM-5.3 post-training launch.",
+      "channels": [
+        {
+          "id": "brave-search-frontier-models",
+          "status": "completed",
+          "queries": [
+            "Qwen3.8-27B release August 2026",
+            "GLM-5.3 Z.ai release August 2026"
+          ],
+          "resultSummary": "Surfaced official releases of Alibaba Qwen3.8-27B and Z.ai GLM-5.3.",
+          "failureReason": null,
+          "retryResult": null
+        }
+      ],
+      "categoryCoverage": [
+        {
+          "category": "capability",
+          "queries": [
+            "Qwen 3.8 27B dense model benchmarks August 2026",
+            "GLM-5.3 743B post-training August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "product",
+          "queries": [
+            "Qwen 3.8 Apache 2.0 Hugging Face",
+            "GLM Coding Plan API rollout August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "commerce",
+          "queries": [
+            "Z.ai developer pricing August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "governance",
+          "queries": [
+            "AI open weights export and safety review August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "safety",
+          "queries": [
+            "GLM-5.3 CyberGym security evaluation August 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "society",
+          "queries": [
+            "Local workstation developer adoption August 2026"
           ],
           "status": "completed"
         }
