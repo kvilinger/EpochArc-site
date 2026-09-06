@@ -1,0 +1,189 @@
+{
+  "id": "openai-gpt-6-astra-2026",
+  "slug": "openai-gpt-6-astra-2026",
+  "title": {
+    "en": "OpenAI Introduces GPT-6 Astra With Phased Rollout and Cyber Safeguards",
+    "zhHans": "OpenAI 推出 GPT-6 Astra，实行分期上线与网络安全护栏"
+  },
+  "searchSummary": {
+    "en": "OpenAI introduced GPT-6 Astra on September 3, 2026. OpenAI reported high benchmark results and said its cyber capabilities met the Critical threshold in OpenAI's own Preparedness Framework.",
+    "zhHans": "OpenAI 于 2026 年 9 月 3 日推出 GPT-6 Astra。OpenAI 报告了较高的基准结果，并称其网络能力达到 OpenAI 自身 Preparedness Framework 的 Critical 阈值。"
+  },
+  "summary": {
+    "en": "OpenAI introduced GPT-6 Astra on September 3, 2026 and began with a limited organizational rollout before planned wider access. OpenAI reported 97.6% on FrontierMath Tier 4, 99.9% on ARC-AGI-3, and 100% on ExploitBench. OpenAI says Astra meets the Critical cybersecurity threshold under its Preparedness Framework and has restricted advanced offensive cyber tasks while deploying monitoring and other safeguards.",
+    "zhHans": "OpenAI 于 2026 年 9 月 3 日推出 GPT-6 Astra，先向有限组织上线，随后计划扩大访问。OpenAI 报告其在 FrontierMath Tier 4、ARC-AGI-3 与 ExploitBench 上分别为 97.6%、99.9% 与 100%。OpenAI 称 Astra 达到其 Preparedness Framework 下的 Critical 网络安全阈值，并限制高级进攻性网络任务，同时部署监控及其他护栏。"
+  },
+  "narrative": {
+    "en": "The release materials attribute the benchmark results, critical-threshold designation, and alignment results to OpenAI's evaluations. OpenAI says an impossible-task evaluation informed by the Hugging Face incident found a 0% out-of-scope rate for Astra compared with 48% for an unguarded GPT-5.6 Sol setup. It also reports that Astra's written reasoning is harder to monitor on some tests. NBC independently confirmed the launch and heightened security measures, but does not independently validate OpenAI's benchmark or risk evaluations. The L2 assessment is provisional and should be revisited as external evidence emerges.",
+    "zhHans": "发布材料将基准结果、Critical 阈值指定及对齐结果归因于 OpenAI 的评估。OpenAI 称，一项受 Hugging Face 事件启发的不可能任务评估中，Astra 的越权率为 0%，而无生产护栏的 GPT-5.6 Sol 设置为 48%。它还报告，Astra 在部分测试中更难通过书面推理进行监控。NBC 独立确认了发布与加强的安全措施，但未独立验证 OpenAI 的基准或风险评估。L2 判断为暂定结论，应在外部证据出现后复审。"
+  },
+  "date": "2026-09-03",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Sep 3, 2026",
+    "zhHans": "2026年9月3日"
+  },
+  "categories": [
+    "capability",
+    "safety"
+  ],
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "OpenAI reports major gains in mathematics, abstract reasoning, computer use, and cybersecurity evaluations; independent replication is pending.",
+        "zhHans": "OpenAI 报告其在数学、抽象推理、计算机操作和网络安全评估中有显著提升；独立复现仍待进行。"
+      },
+      "affectedGroups": [
+        "researchers",
+        "mathematicians",
+        "developers",
+        "knowledge workers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-openai-astra",
+        "sweep-20260904-openai-astra-path",
+        "sweep-20260904-openai-astra-nbc"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "OpenAI's Critical-tier designation and reported monitoring trade-off indicate elevated dual-use and oversight concerns within OpenAI's own evaluation framework.",
+        "zhHans": "OpenAI 的 Critical 级指定及其报告的可监控性权衡，表明在 OpenAI 自身评估框架内存在更高的双重用途与监督风险。"
+      },
+      "affectedGroups": [
+        "AI safety community",
+        "cybersecurity defenders",
+        "regulators",
+        "general public"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-openai-astra-path",
+        "sweep-20260904-openai-astra-safety",
+        "sweep-20260904-openai-astra-nbc"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gpt6-astra-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "OpenAI introduced GPT-6 Astra on September 3, 2026 with a phased rollout and safeguards that OpenAI classifies as Critical-tier for cybersecurity.",
+        "zhHans": "OpenAI 于 2026 年 9 月 3 日推出 GPT-6 Astra，实行分期上线，并采用 OpenAI 归类为网络安全 Critical 级的护栏。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-openai-astra",
+        "sweep-20260904-openai-astra-path",
+        "sweep-20260904-openai-astra-nbc"
+      ]
+    },
+    {
+      "id": "gpt6-astra-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "OpenAI reported high scores on several difficult benchmarks and improved task-boundary adherence in its own impossible-task evaluations.",
+        "zhHans": "OpenAI 报告其在多项高难基准中得分较高，并在其自身的不可能任务评估中表现出更好的任务边界遵循。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-openai-astra",
+        "sweep-20260904-openai-astra-path"
+      ]
+    },
+    {
+      "id": "gpt6-astra-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "Access was limited at launch, advanced offensive cyber tasks remain restricted, and OpenAI reports lower written-reasoning monitorability on some tests.",
+        "zhHans": "发布时访问有限，高级进攻性网络任务仍受限，且 OpenAI 报告其在部分测试中书面推理可监控性下降。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-openai-astra",
+        "sweep-20260904-openai-astra-safety",
+        "sweep-20260904-openai-astra-nbc"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260904-openai-astra",
+      "supports": [
+        "openai-gpt-6-astra-2026",
+        "gpt6-astra-fact-1",
+        "gpt6-astra-impact-1",
+        "gpt6-astra-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-openai-astra-path",
+      "supports": [
+        "openai-gpt-6-astra-2026",
+        "gpt6-astra-fact-1",
+        "gpt6-astra-impact-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-openai-astra-nbc",
+      "supports": [
+        "openai-gpt-6-astra-2026",
+        "gpt6-astra-fact-1",
+        "gpt6-astra-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-openai-astra-safety",
+      "supports": [
+        "openai-gpt-6-astra-2026",
+        "gpt6-astra-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "openai-strategic-futures-governance-2026",
+    "gpt-5-6-broad-launch-2026"
+  ],
+  "relatedForecasts": [
+    "ai-software-teams",
+    "autonomous-enterprise-workflows"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-04",
+    "updatedAt": "2026-09-05",
+    "reviewedAt": "2026-09-05",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-05",
+    "reviewNotes": "Reviewed as a provisional L2; all benchmark, Critical-threshold, and monitoring statements are attributed to OpenAI.",
+    "changeLog": [
+      {
+        "date": "2026-09-04",
+        "changeType": "created",
+        "summary": "Added OpenAI GPT-6 Astra debut with restricted deployment."
+      },
+      {
+        "date": "2026-09-05",
+        "changeType": "correction",
+        "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+      }
+    ],
+    "publishedAt": "2026-09-06"
+  }
+}

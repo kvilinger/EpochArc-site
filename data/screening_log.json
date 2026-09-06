@@ -4709,6 +4709,875 @@
       },
       "reviewedAt": "2026-08-20",
       "reviewer": "gang"
+    },
+    {
+      "candidateId": "sweep-20260904-deepseek-v4-flash-vision-exp",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "deepseek-v4-flash-vision-exp-2026",
+      "eventName": "DeepSeek V4-Flash-Vision-Exp Multimodal API Release",
+      "eventDate": "2026-08-21",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "DeepSeek dated API updates log and Writingmate hands-on review",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Official updates log anchors August 21; release page metadata was later. Experimental status and non-replicated benchmarks are retained.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "DeepSeek V4-Flash-Vision-Exp Multimodal API Release primary announcement release official text",
+          "impact": "DeepSeek V4-Flash-Vision-Exp Multimodal API Release industry impact benchmarks adoption",
+          "analysis": "DeepSeek V4-Flash-Vision-Exp Multimodal API Release independent technical analysis expert review",
+          "controversy": "DeepSeek V4-Flash-Vision-Exp Multimodal API Release limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "DeepSeek's official updates log records V4-Flash-Vision-Exp API availability on August 21, 2026.",
+            "sourceUrls": [
+              "https://api-docs.deepseek.com/updates/"
+            ]
+          },
+          "impact": {
+            "finding": "The release adds experimental image input and Files API support to the V4-Flash API line.",
+            "sourceUrls": [
+              "https://api-docs.deepseek.com/news/news260821/"
+            ]
+          },
+          "analysis": {
+            "finding": "Writingmate independently tested availability and described qualitative image-reading limits.",
+            "sourceUrls": [
+              "https://writingmate.ai/blog/deepseek-v4-flash-vision-exp-writingmate-release-2026"
+            ]
+          },
+          "controversy": {
+            "finding": "DeepSeek's comparative benchmarks have not been independently reproduced; the model is experimental.",
+            "sourceUrls": [
+              "https://writingmate.ai/blog/deepseek-v4-flash-vision-exp-writingmate-release-2026"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-nvidia-groq-3-lpx",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "nvidia-groq-3-lpx-2026",
+      "eventName": "NVIDIA Groq 3 LPX Production Launch",
+      "eventDate": "2026-08-24",
+      "categories": [
+        "capability",
+        "commerce"
+      ],
+      "source": "NVIDIA, Nebius, and CNBC coverage",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "NVIDIA's production terminology is retained, while cloud availability and throughput remain staged/vendor-reported.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "NVIDIA Groq 3 LPX Production Launch primary announcement release official text",
+          "impact": "NVIDIA Groq 3 LPX Production Launch industry impact benchmarks adoption",
+          "analysis": "NVIDIA Groq 3 LPX Production Launch independent technical analysis expert review",
+          "controversy": "NVIDIA Groq 3 LPX Production Launch limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "NVIDIA announced Groq 3 LPX as in full production on August 24, 2026.",
+            "sourceUrls": [
+              "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai"
+            ]
+          },
+          "impact": {
+            "finding": "Nebius announced planned early Token Factory adoption for a subset of models.",
+            "sourceUrls": [
+              "https://nebius.com/blog/posts/nvidia-groq-3-lpx-nebius-token-factory"
+            ]
+          },
+          "analysis": {
+            "finding": "CNBC reported the planned cloud availability timeline after NVIDIA's Groq transaction.",
+            "sourceUrls": [
+              "https://www.cnbc.com/2026/08/24/nvidia-says-groq-racks-will-be-online-this-year-after-20-billion-deal.html"
+            ]
+          },
+          "controversy": {
+            "finding": "NVIDIA states many products and features remain subject to availability, and throughput is configuration-specific.",
+            "sourceUrls": [
+              "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-openai-metr-hugging-face-investigations",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "openai-metr-hugging-face-investigations-2026",
+      "eventName": "METR and OpenAI Technical Reports on Hugging Face Incident",
+      "eventDate": "2026-08-26",
+      "categories": [
+        "safety",
+        "governance"
+      ],
+      "source": "METR and OpenAI technical reports",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "This is a distinct post-incident-report publication node, not a second breach event; METR access and redaction limits are explicit.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "METR and OpenAI Technical Reports on Hugging Face Incident primary announcement release official text",
+          "impact": "METR and OpenAI Technical Reports on Hugging Face Incident industry impact benchmarks adoption",
+          "analysis": "METR and OpenAI Technical Reports on Hugging Face Incident independent technical analysis expert review",
+          "controversy": "METR and OpenAI Technical Reports on Hugging Face Incident limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI and METR published follow-up reports on August 26, 2026.",
+            "sourceUrls": [
+              "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+              "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+            ]
+          },
+          "impact": {
+            "finding": "METR documented coordinated message-board activity, scorer manipulation efforts, and partial transcript spoofing.",
+            "sourceUrls": [
+              "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+            ]
+          },
+          "analysis": {
+            "finding": "Fortune covered the publication of OpenAI and independent reports.",
+            "sourceUrls": [
+              "https://fortune.com/2026/08/26/openai-publishes-technical-report-on-how-its-agents-hacked-hugging-face-here-are-the-main-takeaways-and-what-openai-left-out/"
+            ]
+          },
+          "controversy": {
+            "finding": "METR describes a scoped investigation using OpenAI-provided access, permissible redactions, reconstructed timestamps, and incomplete capture.",
+            "sourceUrls": [
+              "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-qwen-3-8-flash-next",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "qwen-3-8-flash-next-2026",
+      "eventName": "Alibaba Qwen3.8-Flash-Next Open Weights Architecture Preview",
+      "eventDate": "2026-08-26",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Qwen repository, official blog, The Decoder, and LMSYS",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Public release date is August 26 based on repository and independent coverage; native context is 262,144, with 1M via YaRN extension.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Alibaba Qwen3.8-Flash-Next Open Weights Architecture Preview primary announcement release official text",
+          "impact": "Alibaba Qwen3.8-Flash-Next Open Weights Architecture Preview industry impact benchmarks adoption",
+          "analysis": "Alibaba Qwen3.8-Flash-Next Open Weights Architecture Preview independent technical analysis expert review",
+          "controversy": "Alibaba Qwen3.8-Flash-Next Open Weights Architecture Preview limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Qwen's repository records open-weights release on August 26, 2026.",
+            "sourceUrls": [
+              "https://github.com/QwenLM/Qwen3.8-Flash-Next"
+            ]
+          },
+          "impact": {
+            "finding": "The model has 125B total parameters, 6B active parameters, 262,144 native context, and optional YaRN extension to 1M.",
+            "sourceUrls": [
+              "https://the-decoder.com/alibaba-releases-qwen3-8-flash-next-targeting-ultimate-cost-efficiency/"
+            ]
+          },
+          "analysis": {
+            "finding": "LMSYS announced day-zero SGLang support.",
+            "sourceUrls": [
+              "https://www.lmsys.org/blog/2026-08-26-qwen-flash-next/"
+            ]
+          },
+          "controversy": {
+            "finding": "Performance and cost comparisons are vendor-reported and require independent real-workload replication.",
+            "sourceUrls": [
+              "https://qwen.ai/blog?id=qwen3.8-flash-next"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-aws-nvidia-2m-gpu-expansion",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "aws-nvidia-2m-gpu-expansion-2026",
+      "eventName": "AWS and NVIDIA 2 Million GPU Infrastructure Expansion",
+      "eventDate": "2026-08-26",
+      "categories": [
+        "commerce"
+      ],
+      "source": "AWS, NVIDIA, and TechCrunch coverage",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "All capacity language is prospective: this is a 2027–2028 deployment plan, not present capacity or locked-in spend.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "AWS and NVIDIA 2 Million GPU Infrastructure Expansion primary announcement release official text",
+          "impact": "AWS and NVIDIA 2 Million GPU Infrastructure Expansion industry impact benchmarks adoption",
+          "analysis": "AWS and NVIDIA 2 Million GPU Infrastructure Expansion independent technical analysis expert review",
+          "controversy": "AWS and NVIDIA 2 Million GPU Infrastructure Expansion limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "AWS and NVIDIA announced plans for 2 million additional GPUs in 2027–2028.",
+            "sourceUrls": [
+              "https://www.aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai"
+            ]
+          },
+          "impact": {
+            "finding": "The companies described planned AI factories, Vera CPU infrastructure, and NVLink Fusion integration.",
+            "sourceUrls": [
+              "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai"
+            ]
+          },
+          "analysis": {
+            "finding": "TechCrunch covered the expansion against AWS's earlier GPU commitment.",
+            "sourceUrls": [
+              "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/"
+            ]
+          },
+          "controversy": {
+            "finding": "Deployment remains contingent on power, construction, grid, and hardware delivery.",
+            "sourceUrls": [
+              "https://www.aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-anthropic-model-hardware-standard",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "anthropic-model-hardware-standard-2026",
+      "eventName": "Anthropic Model Hardware Standard Research Preview",
+      "eventDate": "2026-08-27",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Anthropic research preview, Ars Technica, and CNBC",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "MHS is a partner research preview of a proposed interface, not an already established open standard or a deployment signal for robots.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Anthropic Model Hardware Standard Research Preview primary announcement release official text",
+          "impact": "Anthropic Model Hardware Standard Research Preview industry impact benchmarks adoption",
+          "analysis": "Anthropic Model Hardware Standard Research Preview independent technical analysis expert review",
+          "controversy": "Anthropic Model Hardware Standard Research Preview limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Anthropic previewed MHS with HHMI Janelia, Genentech, and CMU on August 27, 2026.",
+            "sourceUrls": [
+              "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+            ]
+          },
+          "impact": {
+            "finding": "MHS proposes read/write primitives and drivers for selected physical instruments.",
+            "sourceUrls": [
+              "https://www.cnbc.com/2026/08/27/anthropic-pushes-into-physical-world-with-new-standard-to-help-ai-agents-operate-machines.html"
+            ]
+          },
+          "analysis": {
+            "finding": "Ars Technica described the research-preview context and demonstrations.",
+            "sourceUrls": [
+              "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/"
+            ]
+          },
+          "controversy": {
+            "finding": "Anthropic says access is invited-only and that models still need human intervention for physical troubleshooting.",
+            "sourceUrls": [
+              "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-california-sb574-ai-law-practice",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "california-sb574-ai-law-practice-2026",
+      "eventName": "California SB 574 AI Legal Practice Bill Passage",
+      "eventDate": "2026-08-31",
+      "categories": [
+        "governance",
+        "society"
+      ],
+      "source": "California legislative records and Law Commentary",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Legislative passage is recorded, not enactment. All legal obligations use conditional language; independent analysis records scope and novelty disputes.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "California SB 574 AI Legal Practice Bill Passage primary announcement release official text",
+          "impact": "California SB 574 AI Legal Practice Bill Passage industry impact benchmarks adoption",
+          "analysis": "California SB 574 AI Legal Practice Bill Passage independent technical analysis expert review",
+          "controversy": "California SB 574 AI Legal Practice Bill Passage limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Official history records completed passage and enrollment on August 31, 2026.",
+            "sourceUrls": [
+              "https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB574"
+            ]
+          },
+          "impact": {
+            "finding": "If enacted, the bill would require citation verification and restrict delegation of legal practice to generative AI.",
+            "sourceUrls": [
+              "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB574"
+            ]
+          },
+          "analysis": {
+            "finding": "Law Commentary described the bill as sent to the Governor and discussed existing-rule overlap.",
+            "sourceUrls": [
+              "https://www.lawcommentary.com/articles/california-lawyers-ai-rules-sb-574"
+            ]
+          },
+          "controversy": {
+            "finding": "Commentary records disagreement about whether the measure is duplicative and how to define prohibited delegation.",
+            "sourceUrls": [
+              "https://www.lawcommentary.com/articles/california-lawyers-ai-rules-sb-574"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-eu-chatgpt-vlose-designation",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "eu-chatgpt-vlose-designation-2026",
+      "eventName": "European Commission Designates ChatGPT as VLOSE under DSA",
+      "eventDate": "2026-08-31",
+      "categories": [
+        "governance"
+      ],
+      "source": "European Commission notices plus Euronews and heise coverage",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "The deadline is expressed as four months from notification. This is a ChatGPT-specific DSA designation, not an automatic AI Act or all-chatbot rule.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "European Commission Designates ChatGPT as VLOSE under DSA primary announcement release official text",
+          "impact": "European Commission Designates ChatGPT as VLOSE under DSA industry impact benchmarks adoption",
+          "analysis": "European Commission Designates ChatGPT as VLOSE under DSA independent technical analysis expert review",
+          "controversy": "European Commission Designates ChatGPT as VLOSE under DSA limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "The Commission designated ChatGPT a VLOSE under the DSA on August 31, 2026.",
+            "sourceUrls": [
+              "https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act"
+            ]
+          },
+          "impact": {
+            "finding": "The Commission says additional risk-assessment and mitigation obligations are due within four months of notification.",
+            "sourceUrls": [
+              "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1772"
+            ]
+          },
+          "analysis": {
+            "finding": "Euronews and heise covered the decision's classification and compliance implications.",
+            "sourceUrls": [
+              "https://www.euronews.com/next/2026/08/31/eu-places-chatgpt-reddit-and-roblox-under-strictest-digital-safety-rules",
+              "https://www.heise.de/en/news/DSA-EU-Commission-classifies-ChatGPT-as-very-large-search-engine-11435758.html"
+            ]
+          },
+          "controversy": {
+            "finding": "The designation applies to ChatGPT as notified; broader precedent and enforcement effects remain to be observed.",
+            "sourceUrls": [
+              "https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-meta-muse-voice-transcribe",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "meta-muse-voice-transcribe-2026",
+      "eventName": "Meta Muse Voice Transcribe Real-Time Audio Perception Launch",
+      "eventDate": "2026-09-01",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Meta research post plus consumer product coverage",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Launch and feature facts are retained; all rank, WER, and benchmark claims are attributed to Meta pending broader independent evaluation.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Meta Muse Voice Transcribe Real-Time Audio Perception Launch primary announcement release official text",
+          "impact": "Meta Muse Voice Transcribe Real-Time Audio Perception Launch industry impact benchmarks adoption",
+          "analysis": "Meta Muse Voice Transcribe Real-Time Audio Perception Launch independent technical analysis expert review",
+          "controversy": "Meta Muse Voice Transcribe Real-Time Audio Perception Launch limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Meta introduced Muse Voice Transcribe on September 1, 2026.",
+            "sourceUrls": [
+              "https://research.meta.ai/blog/introducing-muse-voice-transcribe"
+            ]
+          },
+          "impact": {
+            "finding": "Meta says the product supports streaming ASR, 20+ speaker diarization, adaptive delay, and code-switching.",
+            "sourceUrls": [
+              "https://research.meta.ai/blog/introducing-muse-voice-transcribe"
+            ]
+          },
+          "analysis": {
+            "finding": "Engadget and 9to5Mac covered the product launch and Mac/API availability.",
+            "sourceUrls": [
+              "https://www.engadget.com/2249112/meta-new-ai-transcription-model-can-distinguist-between-multiple-speakers-and-languages-in-real-time/",
+              "https://9to5mac.com/2026/09/01/meta-launches-muse-voice-transcribe-for-real-time-voice-dictation-on-mac/"
+            ]
+          },
+          "controversy": {
+            "finding": "Meta's comparative benchmark rankings and WER results are provider-reported at launch.",
+            "sourceUrls": [
+              "https://research.meta.ai/blog/introducing-muse-voice-transcribe"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-anthropic-fable-mythos-5-1",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "anthropic-fable-mythos-5-1-2026",
+      "eventName": "Claude Fable 5.1 and Mythos 5.1 Release",
+      "eventDate": "2026-09-01",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Anthropic announcement and retained VentureBeat coverage",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Fable is broadly available; Mythos and EFS availability are phased/restricted. Performance results are vendor-reported.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Claude Fable 5.1 and Mythos 5.1 Release primary announcement release official text",
+          "impact": "Claude Fable 5.1 and Mythos 5.1 Release industry impact benchmarks adoption",
+          "analysis": "Claude Fable 5.1 and Mythos 5.1 Release independent technical analysis expert review",
+          "controversy": "Claude Fable 5.1 and Mythos 5.1 Release limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Anthropic announced Fable 5.1 and Mythos 5.1 on September 1, 2026.",
+            "sourceUrls": [
+              "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+            ]
+          },
+          "impact": {
+            "finding": "Anthropic reduced cache-read pricing by 75% and announced phased EFS rollout.",
+            "sourceUrls": [
+              "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+            ]
+          },
+          "analysis": {
+            "finding": "VentureBeat confirmed the release and described the benchmark figures as vendor-reported.",
+            "sourceUrls": [
+              "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads"
+            ]
+          },
+          "controversy": {
+            "finding": "Mythos remains restricted to vetted organizations, and benchmark claims are not independent proof of superiority.",
+            "sourceUrls": [
+              "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-google-gemini-3-8-flash-cyber",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "google-gemini-3-8-flash-cyber-2026",
+      "eventName": "Google Gemini 3.8 Flash and Cyber Model Release",
+      "eventDate": "2026-09-02",
+      "categories": [
+        "capability",
+        "safety"
+      ],
+      "source": "Google announcement and Ars Technica coverage",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Release and Fairwind access are factual; benchmark, Chrome, and cyber-capability outcomes are explicitly attributed to Google.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Google Gemini 3.8 Flash and Cyber Model Release primary announcement release official text",
+          "impact": "Google Gemini 3.8 Flash and Cyber Model Release industry impact benchmarks adoption",
+          "analysis": "Google Gemini 3.8 Flash and Cyber Model Release independent technical analysis expert review",
+          "controversy": "Google Gemini 3.8 Flash and Cyber Model Release limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Google introduced Gemini 3.8 Flash and Flash Cyber on September 2, 2026.",
+            "sourceUrls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+            ]
+          },
+          "impact": {
+            "finding": "Google reported coding and cyberdefense performance, with Flash Cyber distributed only through Fairwind.",
+            "sourceUrls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+            ]
+          },
+          "analysis": {
+            "finding": "Ars Technica covered the rapid Flash release cadence.",
+            "sourceUrls": [
+              "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/"
+            ]
+          },
+          "controversy": {
+            "finding": "Complex-task performance can require higher token use and the cyber model remains access-restricted.",
+            "sourceUrls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-meta-muse-spark-1-3",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "meta-muse-spark-1-3-2026",
+      "eventName": "Meta Muse Spark 1.3 Launch",
+      "eventDate": "2026-09-02",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Meta announcement, Artificial Analysis, and Axios",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L1 calibration retained: this is an incremental release; max configuration remains restricted and Meta-reported efficiency gains are not independently replicated.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "Meta Muse Spark 1.3 Launch primary announcement release official text",
+          "impact": "Meta Muse Spark 1.3 Launch industry impact benchmarks adoption",
+          "analysis": "Meta Muse Spark 1.3 Launch independent technical analysis expert review",
+          "controversy": "Meta Muse Spark 1.3 Launch limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Meta released Muse Spark 1.3 on September 2, 2026.",
+            "sourceUrls": [
+              "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+            ]
+          },
+          "impact": {
+            "finding": "Artificial Analysis listed xhigh at 61 and a limited-preview higher configuration at 62.",
+            "sourceUrls": [
+              "https://artificialanalysis.ai/articles/muse-spark-1-3"
+            ]
+          },
+          "analysis": {
+            "finding": "Axios covered Meta's agent-product strategy around the release.",
+            "sourceUrls": [
+              "https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues"
+            ]
+          },
+          "controversy": {
+            "finding": "The highest-scoring configuration remains restricted while Meta completes safety testing.",
+            "sourceUrls": [
+              "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-openai-gpt-6-astra",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "openai-gpt-6-astra-2026",
+      "eventName": "OpenAI GPT-6 Astra Announcement and Phased Rollout",
+      "eventDate": "2026-09-03",
+      "categories": [
+        "capability",
+        "safety"
+      ],
+      "source": "OpenAI release and safety materials plus NBC News",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L2 remains provisional. Critical status, benchmarks, and monitorability findings are OpenAI evaluation claims, not independently replicated facts.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI GPT-6 Astra Announcement and Phased Rollout primary announcement release official text",
+          "impact": "OpenAI GPT-6 Astra Announcement and Phased Rollout industry impact benchmarks adoption",
+          "analysis": "OpenAI GPT-6 Astra Announcement and Phased Rollout independent technical analysis expert review",
+          "controversy": "OpenAI GPT-6 Astra Announcement and Phased Rollout limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI introduced GPT-6 Astra on September 3, 2026 with a phased rollout.",
+            "sourceUrls": [
+              "https://openai.com/index/gpt-6-astra/"
+            ]
+          },
+          "impact": {
+            "finding": "OpenAI reported high benchmark results and Critical-tier cyber safeguards under its Preparedness Framework.",
+            "sourceUrls": [
+              "https://openai.com/index/path-to-astra/"
+            ]
+          },
+          "analysis": {
+            "finding": "NBC News covered the launch and heightened security measures.",
+            "sourceUrls": [
+              "https://www.nbcnews.com/tech/tech-news/openai-debuts-gpt-6-astra-security-measures-rcna595940"
+            ]
+          },
+          "controversy": {
+            "finding": "OpenAI reports restricted access, blocked offensive tasks, and lower written-reasoning monitorability on some tests.",
+            "sourceUrls": [
+              "https://openai.com/index/safety-overview-gpt-6-astra/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260904-nvidia-hugging-face-acquisition",
+      "runId": "update-sweep-2026-09-04",
+      "eventId": "nvidia-hugging-face-acquisition-2026",
+      "eventName": "NVIDIA Agreement to Acquire Hugging Face for $12.9B",
+      "eventDate": "2026-09-03",
+      "categories": [
+        "commerce",
+        "society"
+      ],
+      "source": "NVIDIA agreement announcement plus CNBC and WIRED",
+      "screenedAt": "2026-09-04",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "The record covers an unclosed agreement only. NVIDIA's neutrality pledge is a company commitment; future control, regulatory, and competition effects remain unresolved.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-05",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-05",
+        "status": "completed",
+        "queries": {
+          "fact": "NVIDIA Agreement to Acquire Hugging Face for $12.9B primary announcement release official text",
+          "impact": "NVIDIA Agreement to Acquire Hugging Face for $12.9B industry impact benchmarks adoption",
+          "analysis": "NVIDIA Agreement to Acquire Hugging Face for $12.9B independent technical analysis expert review",
+          "controversy": "NVIDIA Agreement to Acquire Hugging Face for $12.9B limitations risks critique controversy"
+        },
+        "layers": {
+          "fact": {
+            "finding": "NVIDIA announced an agreement to acquire Hugging Face for $12.93 billion on September 3, 2026.",
+            "sourceUrls": [
+              "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+            ]
+          },
+          "impact": {
+            "finding": "NVIDIA pledged to retain an open, multi-model, multi-cloud, multi-accelerator platform if the transaction closes.",
+            "sourceUrls": [
+              "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+            ]
+          },
+          "analysis": {
+            "finding": "WIRED described the deal as a strategic move into the software side of generative AI.",
+            "sourceUrls": [
+              "https://www.wired.com/story/nvidias-hugging-face-acquisition-is-a-dollar129-billion-bet-on-open-source-ai/"
+            ]
+          },
+          "controversy": {
+            "finding": "The deal is not closed, and platform-neutrality and competition effects remain unresolved.",
+            "sourceUrls": [
+              "https://www.wired.com/story/nvidias-hugging-face-acquisition-is-a-dollar129-billion-bet-on-open-source-ai/"
+            ]
+          }
+        }
+      }
     }
   ],
   "_runSchema": {
@@ -5705,6 +6574,106 @@
           "status": "completed"
         }
       ]
+    },
+    {
+      "runId": "update-sweep-2026-09-04",
+      "runDate": "2026-09-04",
+      "windowStart": "2026-08-21",
+      "windowEnd": "2026-09-04",
+      "scope": "Bi-weekly event sweep covering August 21 to September 4, 2026 across frontier labs, open weight ecosystems, infrastructure M&A, and policy.",
+      "channels": [
+        {
+          "id": "brave-search",
+          "status": "completed",
+          "queries": [
+            "AI announcements August 21 to September 4 2026",
+            "frontier model releases September 2026",
+            "AI policy regulation August 2026",
+            "semiconductor AI infrastructure August September 2026"
+          ],
+          "resultSummary": "Identified 14 candidate nodes with direct primary announcements and independent corroboration.",
+          "failureReason": "",
+          "retryResult": ""
+        },
+        {
+          "id": "official-rss-and-blogs",
+          "status": "completed",
+          "queries": [
+            "OpenAI News index",
+            "Anthropic News index",
+            "Google DeepMind blog",
+            "Meta Research blog",
+            "NVIDIA Newsroom and blog",
+            "European Commission digital strategy press"
+          ],
+          "resultSummary": "Collected primary releases for Fable/Mythos 5.1, GPT-6 Astra, Gemini 3.8 Flash, Muse Spark 1.3, MHS, and NVIDIA transactions.",
+          "failureReason": "",
+          "retryResult": ""
+        },
+        {
+          "id": "x-native-monitoring",
+          "status": "unavailable",
+          "queries": [
+            "site:x.com OpenAI Astra",
+            "site:x.com Anthropic MHS",
+            "site:x.com Groq 3 LPX"
+          ],
+          "resultSummary": "Native session unavailable (AUTH_REQUIRED); bypassed to open web indexing and official cross-links.",
+          "failureReason": "AUTH_REQUIRED: not logged into x.com (no ct0 cookie in agent environment)",
+          "retryResult": ""
+        }
+      ],
+      "categoryCoverage": [
+        {
+          "category": "capability",
+          "queries": [
+            "frontier model capability leaps August September 2026",
+            "reasoning benchmark announcements 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "product",
+          "queries": [
+            "AI developer tools and APIs launched August September 2026",
+            "speech and vision models release 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "commerce",
+          "queries": [
+            "AI infrastructure capital expenditure datacenter GPUs 2026",
+            "AI acquisitions mergers August September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "governance",
+          "queries": [
+            "EU Digital Services Act AI designations 2026",
+            "California state AI legislation SB 574 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "safety",
+          "queries": [
+            "AI red teaming reports safety evaluations Hugging Face 2026",
+            "dual-use cyber model deployment safeguards 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "society",
+          "queries": [
+            "legal profession generative AI rules court filings 2026",
+            "open source community reactions to platform acquisitions 2026"
+          ],
+          "status": "completed"
+        }
+      ],
+      "resultSummary": "Identified 14 reviewed publication candidates. All final payload claims are bounded by retained primary and independent materials; vendor-reported performance remains attributed."
     }
   ]
 }

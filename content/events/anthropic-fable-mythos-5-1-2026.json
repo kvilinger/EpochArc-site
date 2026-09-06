@@ -1,0 +1,166 @@
+{
+  "id": "anthropic-fable-mythos-5-1-2026",
+  "slug": "anthropic-fable-mythos-5-1-2026",
+  "title": {
+    "en": "Anthropic Releases Claude Fable 5.1 and Restricted-Access Claude Mythos 5.1",
+    "zhHans": "Anthropic 发布 Claude Fable 5.1 与受限访问的 Claude Mythos 5.1"
+  },
+  "searchSummary": {
+    "en": "Anthropic released Claude Fable 5.1 on September 1, 2026 with 75% cheaper cache reads, while Claude Mythos 5.1 remained restricted to vetted cyberdefense and life-sciences access programs.",
+    "zhHans": "Anthropic 于 2026 年 9 月 1 日发布 Claude Fable 5.1，并将缓存读取价格下调 75%；Claude Mythos 5.1 则仍限于通过审核的网络防御与生命科学访问计划。"
+  },
+  "summary": {
+    "en": "Anthropic announced Claude Fable 5.1 and Claude Mythos 5.1 on September 1, 2026. Fable 5.1 is available through Anthropic's API and named cloud platforms; Anthropic says Mythos 5.1 is available to a set of vetted U.S. organizations, with broader access programs expanding in phases. Anthropic reduced cache-read pricing to $0.25 per million tokens and announced Enterprise Frontier Safeguards, which are also rolling out in phases.",
+    "zhHans": "Anthropic 于 2026 年 9 月 1 日宣布 Claude Fable 5.1 与 Claude Mythos 5.1。Fable 5.1 可通过 Anthropic API 及指定云平台使用；Anthropic 称 Mythos 5.1 已向一批经审核的美国组织开放，较广泛的访问计划将分阶段扩展。Anthropic 将缓存读取价格降至每百万 token 0.25 美元，并宣布 Enterprise Frontier Safeguards，该机制同样在分阶段推出。"
+  },
+  "narrative": {
+    "en": "Anthropic says Fable and Mythos share underlying weights but use different safeguard configurations. Its launch materials report benchmark and scientific-task results, and VentureBeat independently describes those benchmark figures as vendor-reported rather than proof of superiority. The event records the release, the cache-read price change, and the restricted-access structure; it does not treat claimed scientific or security performance as independently replicated.",
+    "zhHans": "Anthropic 称 Fable 与 Mythos 共享底层权重，但采用不同的安全护栏配置。其发布材料报告了基准与科学任务结果，VentureBeat 则独立指出这些基准数字属于厂商报告，而非优越性的证明。该事件记录发布、缓存读取价格变化及受限访问结构，不将所称的科研或安全性能视为已被独立复现。"
+  },
+  "date": "2026-09-01",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Sep 1, 2026",
+    "zhHans": "2026年9月1日"
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Introduces a new broadly available model configuration and a more restricted configuration for selected high-risk professional uses.",
+        "zhHans": "引入一款广泛可用的新模型配置，以及面向部分高风险专业用途的更受限配置。"
+      },
+      "affectedGroups": [
+        "software engineers",
+        "computational biologists",
+        "enterprise developers"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-anthropic-51",
+        "sweep-20260904-anthropic-51-venturebeat"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Anthropic's 75% cache-read price reduction may lower costs for workloads that reuse long context, subject to usage mix and phased product availability.",
+        "zhHans": "Anthropic 将缓存读取价格下调 75%，对复用长上下文的工作负载可能降低成本，但取决于使用结构与分阶段产品可用性。"
+      },
+      "affectedGroups": [
+        "enterprise customers",
+        "agent platform startups",
+        "developers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-anthropic-51",
+        "sweep-20260904-anthropic-51-venturebeat"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "fable-51-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "Anthropic announced Fable 5.1 and Mythos 5.1 on September 1, 2026 and reduced Fable cache-read pricing by 75% to $0.25 per million tokens.",
+        "zhHans": "Anthropic 于 2026 年 9 月 1 日宣布 Fable 5.1 与 Mythos 5.1，并将 Fable 缓存读取价格下调 75% 至每百万 token 0.25 美元。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-anthropic-51",
+        "sweep-20260904-anthropic-51-venturebeat"
+      ]
+    },
+    {
+      "id": "fable-51-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Anthropic reported benchmark and scientific-task results for the models; independent coverage characterizes those performance figures as vendor-reported.",
+        "zhHans": "Anthropic 报告了两款模型的基准与科学任务结果；独立报道将这些性能数字定性为厂商报告。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-anthropic-51",
+        "sweep-20260904-anthropic-51-venturebeat"
+      ]
+    },
+    {
+      "id": "fable-51-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "Mythos 5.1 remains restricted to vetted organizations and access programs are expanding in phases; EFS support is also rolling out rather than universally available at launch.",
+        "zhHans": "Mythos 5.1 仍限于经审核组织，访问计划正分阶段扩展；EFS 支持也是逐步推出，并非发布时普遍可用。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-anthropic-51"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260904-anthropic-51",
+      "supports": [
+        "anthropic-fable-mythos-5-1-2026",
+        "fable-51-fact-1",
+        "fable-51-impact-1",
+        "fable-51-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-anthropic-51-venturebeat",
+      "supports": [
+        "anthropic-fable-mythos-5-1-2026",
+        "fable-51-fact-1",
+        "fable-51-impact-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "claude-opus-5-2026"
+  ],
+  "relatedForecasts": [
+    "ai-software-teams",
+    "autonomous-enterprise-workflows"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-04",
+    "updatedAt": "2026-09-05",
+    "reviewedAt": "2026-09-05",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-05",
+    "reviewNotes": "Replaced inaccessible system-card and Hindu citations with retained VentureBeat coverage; Mythos and EFS availability are explicitly phased/restricted.",
+    "changeLog": [
+      {
+        "date": "2026-09-04",
+        "changeType": "created",
+        "summary": "Added Claude Fable 5.1 and Mythos 5.1 release."
+      },
+      {
+        "date": "2026-09-05",
+        "changeType": "correction",
+        "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+      }
+    ],
+    "publishedAt": "2026-09-06"
+  }
+}

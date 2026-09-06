@@ -1,0 +1,176 @@
+{
+  "id": "aws-nvidia-2m-gpu-expansion-2026",
+  "slug": "aws-nvidia-2m-gpu-expansion-2026",
+  "title": {
+    "en": "AWS and NVIDIA Announce 2 Million GPU Infrastructure Expansion for 2027–2028",
+    "zhHans": "AWS 与 NVIDIA 宣布将在 2027–2028 年增署 200 万张 GPU 基础设施"
+  },
+  "searchSummary": {
+    "en": "AWS and NVIDIA announced plans on August 26, 2026 to deploy 2 million additional NVIDIA GPUs across AWS infrastructure in 2027–2028.",
+    "zhHans": "AWS 与 NVIDIA 于 2026 年 8 月 26 日宣布，计划在 2027–2028 年间于 AWS 基础设施中部署额外 200 万张 NVIDIA GPU。"
+  },
+  "summary": {
+    "en": "AWS and NVIDIA announced a multi-year infrastructure plan that includes 2 million additional NVIDIA GPUs in 2027–2028, Vera CPU infrastructure, and planned U.S. government AI factories with 100,000 GPUs. The announcement is a future deployment plan, not present online capacity or completed capital expenditure.",
+    "zhHans": "AWS 与 NVIDIA 宣布了一项多年基础设施计划，包括在 2027–2028 年间新增 200 万张 NVIDIA GPU、引入 Vera CPU 基础设施，以及为美国政府规划配备 10 万张 GPU 的 AI 工厂。该公告是一项未来部署计划，并非当前在线算力或已完成的资本支出。"
+  },
+  "narrative": {
+    "en": "Amazon says the plan expands an earlier 1-million-GPU announcement and is intended to support workloads including agentic AI, scientific discovery, enterprise automation, and physical AI. AWS also describes current integrations between Trainium, NVIDIA networking, and other infrastructure. The event records the announced plan and its stated architecture; execution remains contingent on hardware delivery, power, data-center construction, and grid timelines.",
+    "zhHans": "亚马逊称该计划扩大了此前的 100 万 GPU 公告，目标是支持智能体 AI、科学发现、企业自动化和具身 AI 等工作负载。AWS 也介绍了 Trainium、NVIDIA 网络及其他基础设施之间的现有集成。该事件记录已公告的计划及其所述架构；实际执行仍取决于硬件交付、电力、数据中心建设与电网时间表。"
+  },
+  "date": "2026-08-26",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Aug 26, 2026",
+    "zhHans": "2026年8月26日"
+  },
+  "categories": [
+    "commerce"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "economic_disruption",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Signals a planned expansion of hyperscale AI infrastructure procurement through 2028 rather than completed spending or capacity.",
+        "zhHans": "表明超大规模 AI 基础设施采购计划将延伸至 2028 年，而非已完成的支出或算力。"
+      },
+      "affectedGroups": [
+        "hyperscalers",
+        "semiconductor manufacturers",
+        "enterprise AI buyers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-aws-nvidia-amazon",
+        "sweep-20260904-aws-nvidia-official",
+        "sweep-20260904-aws-nvidia-techcrunch"
+      ]
+    },
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Could increase future capacity for agentic and physical-AI workloads if the announced deployments are delivered.",
+        "zhHans": "若公告中的部署得以兑现，可能增加未来面向智能体与具身 AI 工作负载的算力供给。"
+      },
+      "affectedGroups": [
+        "AI researchers",
+        "robotics labs",
+        "government customers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-aws-nvidia-amazon",
+        "sweep-20260904-aws-nvidia-official"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "aws-gpu-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "AWS and NVIDIA announced plans on August 26, 2026 to deploy 2 million additional GPUs in 2027–2028 and to build planned U.S. government AI factories including 100,000 GPUs.",
+        "zhHans": "AWS 与 NVIDIA 于 2026 年 8 月 26 日宣布，计划在 2027–2028 年部署额外 200 万张 GPU，并规划建设包含 10 万张 GPU 的美国政府 AI 工厂。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-aws-nvidia-amazon",
+        "sweep-20260904-aws-nvidia-official",
+        "sweep-20260904-aws-nvidia-techcrunch"
+      ]
+    },
+    {
+      "id": "aws-gpu-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "The announcement describes intended integration of NVIDIA platforms with AWS infrastructure and custom silicon through NVLink Fusion.",
+        "zhHans": "该公告描述了拟通过 NVLink Fusion 将 NVIDIA 平台与 AWS 基础设施及自研芯片整合的计划。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-aws-nvidia-amazon",
+        "sweep-20260904-aws-nvidia-official"
+      ]
+    },
+    {
+      "id": "aws-gpu-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "The figures are a planned multi-year expansion, not currently online capacity, and depend on power, grid, construction, and hardware delivery.",
+        "zhHans": "这些数字属于多年部署计划，而不是当前在线算力，并取决于电力、电网、建设及硬件交付。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-aws-nvidia-amazon",
+        "sweep-20260904-aws-nvidia-techcrunch"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260904-aws-nvidia-amazon",
+      "supports": [
+        "aws-nvidia-2m-gpu-expansion-2026",
+        "aws-gpu-fact-1",
+        "aws-gpu-impact-1",
+        "aws-gpu-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-aws-nvidia-official",
+      "supports": [
+        "aws-nvidia-2m-gpu-expansion-2026",
+        "aws-gpu-fact-1",
+        "aws-gpu-impact-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-aws-nvidia-techcrunch",
+      "supports": [
+        "aws-nvidia-2m-gpu-expansion-2026",
+        "aws-gpu-fact-1",
+        "aws-gpu-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "nvidia-openai-datacenter-financing-2026",
+    "nvidia-groq-3-lpx-2026"
+  ],
+  "relatedForecasts": [
+    "autonomous-enterprise-workflows"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-04",
+    "updatedAt": "2026-09-05",
+    "reviewedAt": "2026-09-05",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-05",
+    "reviewNotes": "Reviewed as an announced infrastructure plan; removed the unsupported direct link to the robots-leave-the-pilot-zone direction.",
+    "changeLog": [
+      {
+        "date": "2026-09-04",
+        "changeType": "created",
+        "summary": "Added AWS and NVIDIA 2M GPU infrastructure expansion plan."
+      },
+      {
+        "date": "2026-09-05",
+        "changeType": "correction",
+        "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+      }
+    ],
+    "publishedAt": "2026-09-06"
+  },
+  "impactIndex": 5
+}

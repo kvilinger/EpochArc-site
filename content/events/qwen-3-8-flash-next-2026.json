@@ -1,0 +1,181 @@
+{
+  "id": "qwen-3-8-flash-next-2026",
+  "slug": "qwen-3-8-flash-next-2026",
+  "title": {
+    "en": "Alibaba Releases Qwen3.8-Flash-Next with Hybrid GDN-QSA Architecture",
+    "zhHans": "阿里巴巴开源 Qwen3.8-Flash-Next，采用 GDN+QSA 混合稀疏注意力架构"
+  },
+  "searchSummary": {
+    "en": "Alibaba released Qwen3.8-Flash-Next open weights on August 26, 2026, previewing Qwen4 architecture with 125B total parameters, 6B active parameters, and a 262,144-token native context window extendable to 1M with YaRN.",
+    "zhHans": "阿里巴巴于 2026 年 8 月 26 日开源 Qwen3.8-Flash-Next，预览 Qwen4 架构：总参数 125B、激活参数 6B、原生上下文 262,144 token，并可借助 YaRN 扩展至 100 万 token。"
+  },
+  "summary": {
+    "en": "Qwen's repository records the August 26, 2026 release of Qwen3.8-Flash-Next weights. The multimodal MoE model combines Gated DeltaNet, Qwen Sparse Attention, Gated Residual streams, and N-gram embeddings. It has a native 262,144-token context window; one million tokens is an extension configuration, not its native window. Qwen's blog metadata is dated August 3, while the repository and independent coverage identify the later public release.",
+    "zhHans": "Qwen 的仓库记录 Qwen3.8-Flash-Next 权重于 2026 年 8 月 26 日发布。该多模态 MoE 模型结合了 Gated DeltaNet、Qwen Sparse Attention、门控残差流及 N-gram 嵌入。其原生上下文窗口为 262,144 token；100 万 token 属于扩展配置，并非原生窗口。Qwen 博文元数据标为 8 月 3 日，而仓库及独立报道均指向较晚的公开发布时间。"
+  },
+  "narrative": {
+    "en": "The release is an architectural preview for Qwen4 rather than a completed Qwen4 family launch. Qwen reports lower training cost and strong coding and office-task results relative to named comparison models. The Decoder reports the same figures as Qwen-published benchmarks and notes that benchmark scores can differ from real-world performance. EpochArc therefore treats the architecture, weights, and release date as facts, while keeping performance and cost conclusions attributed to Qwen.",
+    "zhHans": "该发布是面向 Qwen4 的架构预览，而非完整 Qwen4 系列的正式上市。Qwen 报告了更低的训练成本，以及相对于指定比较模型的编程和办公任务成绩。《The Decoder》将这些数字明确为 Qwen 公布的基准，并指出基准分数可能不同于真实世界表现。因此，EpochArc 将架构、权重和发布日期作为事实，而把性能与成本结论归属于 Qwen。"
+  },
+  "date": "2026-08-26",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Aug 26, 2026",
+    "zhHans": "2026年8月26日"
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Publishes an open-weights architectural preview combining sparse-attention and recurrent components for long-context and agentic experimentation.",
+        "zhHans": "发布结合稀疏注意力与循环组件的开源权重架构预览，可用于长上下文与智能体实验。"
+      },
+      "affectedGroups": [
+        "developers",
+        "open-source community",
+        "AI researchers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-qwen-flash-repository",
+        "sweep-20260904-qwen-flash-decoder"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Makes weights and an integration path publicly available for developers evaluating a 6B-active-parameter model.",
+        "zhHans": "使开发者可公开获得权重与集成路径，以评估一款每 token 激活 6B 参数的模型。"
+      },
+      "affectedGroups": [
+        "enterprise users",
+        "startups",
+        "cloud developers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-qwen-flash-repository",
+        "sweep-20260904-qwen-flash-lmsys"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "qwen-flash-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "Qwen released Qwen3.8-Flash-Next open weights on August 26, 2026 with 125B total parameters, 6B active parameters, a 262,144-token native window, and optional YaRN extension to 1M tokens.",
+        "zhHans": "Qwen 于 2026 年 8 月 26 日发布 Qwen3.8-Flash-Next 开源权重：总参数 125B、激活参数 6B、原生窗口 262,144 token，并可选用 YaRN 扩展至 100 万 token。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-qwen-flash-repository",
+        "sweep-20260904-qwen-flash-decoder"
+      ]
+    },
+    {
+      "id": "qwen-flash-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Qwen reported lower training and inference costs and released integration materials; LMSYS announced day-zero SGLang support.",
+        "zhHans": "Qwen 报告了更低的训练与推理成本并发布集成材料；LMSYS 宣布 SGLang 在发布当日提供支持。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-qwen-flash-repository",
+        "sweep-20260904-qwen-flash-lmsys"
+      ]
+    },
+    {
+      "id": "qwen-flash-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "Published comparative benchmarks and cost claims remain Qwen-reported and require independent, cross-harness validation on real workloads.",
+        "zhHans": "公开的对比基准与成本主张仍由 Qwen 报告，需要在真实工作负载上进行独立、跨框架验证。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-qwen-flash-blog",
+        "sweep-20260904-qwen-flash-decoder"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260904-qwen-flash-repository",
+      "supports": [
+        "qwen-3-8-flash-next-2026",
+        "qwen-flash-fact-1",
+        "qwen-flash-impact-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-qwen-flash-decoder",
+      "supports": [
+        "qwen-3-8-flash-next-2026",
+        "qwen-flash-fact-1",
+        "qwen-flash-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-qwen-flash-lmsys",
+      "supports": [
+        "qwen-3-8-flash-next-2026",
+        "qwen-flash-impact-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-qwen-flash-blog",
+      "supports": [
+        "qwen-3-8-flash-next-2026",
+        "qwen-flash-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "qwen-3-8-27b-open-weights-2026",
+    "deepseek-v4-flash-official-2026"
+  ],
+  "relatedForecasts": [
+    "ai-software-teams",
+    "autonomous-enterprise-workflows"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-04",
+    "updatedAt": "2026-09-05",
+    "reviewedAt": "2026-09-05",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-05",
+    "reviewNotes": "Corrected native context from 1M to 262,144 tokens; YaRN extension and August 26 public-release evidence are explicit.",
+    "changeLog": [
+      {
+        "date": "2026-09-04",
+        "changeType": "created",
+        "summary": "Added Qwen3.8-Flash-Next open weights model release."
+      },
+      {
+        "date": "2026-09-05",
+        "changeType": "correction",
+        "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+      }
+    ],
+    "publishedAt": "2026-09-06"
+  }
+}

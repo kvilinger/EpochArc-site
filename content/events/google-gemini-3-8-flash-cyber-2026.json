@@ -1,0 +1,160 @@
+{
+  "id": "google-gemini-3-8-flash-cyber-2026",
+  "slug": "google-gemini-3-8-flash-cyber-2026",
+  "title": {
+    "en": "Google Releases Gemini 3.8 Flash and Specialized 3.8 Flash Cyber Model",
+    "zhHans": "Google 推出 Gemini 3.8 Flash 及面向网络防御专用的 3.8 Flash Cyber"
+  },
+  "searchSummary": {
+    "en": "Google introduced Gemini 3.8 Flash and restricted-access Gemini 3.8 Flash Cyber on September 2, 2026. Google reported software-engineering gains and cyberdefense benchmarks for the two variants.",
+    "zhHans": "Google 于 2026 年 9 月 2 日推出 Gemini 3.8 Flash 与受限访问的 Gemini 3.8 Flash Cyber。Google 报告了两款变体的软件工程提升与网络防御基准结果。"
+  },
+  "summary": {
+    "en": "Google introduced Gemini 3.8 Flash and Gemini 3.8 Flash Cyber on September 2, 2026. The standard model is available through Google products and APIs at introductory pricing; the Cyber model is restricted to trusted defenders through the Fairwind Program. Google reported coding, vulnerability-discovery, patching, and Chrome security results, which are not independent replications of the vendor's full evaluation program.",
+    "zhHans": "Google 于 2026 年 9 月 2 日推出 Gemini 3.8 Flash 与 Gemini 3.8 Flash Cyber。标准模型通过 Google 产品和 API 以介绍价提供；Cyber 模型则经 Fairwind Program 限于受信防御者。Google 报告了编程、漏洞发现、补丁和 Chrome 安全结果，但这些并非对厂商完整评测计划的独立复现。"
+  },
+  "narrative": {
+    "en": "Google says 3.8 Flash improves long-horizon software engineering and that its higher effort settings can consume more tokens. For Flash Cyber, Google reports a 47.2% pass@1 on CWE-Bench and internal Chrome outcomes, while saying the model is distributed only to trusted defenders because of more permissive cyber mitigations. EpochArc records the release and access model as facts and labels all performance and operational results as Google's reports.",
+    "zhHans": "Google 称 3.8 Flash 改善了长程软件工程能力，且较高 effort 设置可能消耗更多 token。对于 Flash Cyber，Google 报告其在 CWE-Bench 上的 pass@1 为 47.2%，并报告内部 Chrome 结果；由于采用更宽松的网络安全缓解措施，该模型只向受信防御者提供。EpochArc 将发布与访问模式作为事实，并将所有性能与运营结果标注为 Google 的报告。"
+  },
+  "date": "2026-09-02",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Sep 2, 2026",
+    "zhHans": "2026年9月2日"
+  },
+  "categories": [
+    "capability",
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Adds a low-cost general model and a gated cyberdefense variant with Google-reported software and patching performance.",
+        "zhHans": "增加一款低成本通用模型及一款受限网络防御变体，相关软件工程与补丁性能由 Google 报告。"
+      },
+      "affectedGroups": [
+        "software developers",
+        "cybersecurity defenders",
+        "enterprise teams"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-gemini38-google",
+        "sweep-20260904-gemini38-ars"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "The Cyber variant's more permissive safeguards create dual-use concerns that Google addresses through trusted-defender distribution.",
+        "zhHans": "Cyber 变体较宽松的护栏带来双重用途风险，Google 通过仅向受信防御者分发来应对。"
+      },
+      "affectedGroups": [
+        "critical infrastructure operators",
+        "security community"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-gemini38-google"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gemini-38-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "Google introduced Gemini 3.8 Flash and Gemini 3.8 Flash Cyber on September 2, 2026; the latter is restricted through the Fairwind Program.",
+        "zhHans": "Google 于 2026 年 9 月 2 日推出 Gemini 3.8 Flash 与 Gemini 3.8 Flash Cyber；后者通过 Fairwind Program 受限提供。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-gemini38-google",
+        "sweep-20260904-gemini38-ars"
+      ]
+    },
+    {
+      "id": "gemini-38-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Google reported strong software-engineering scores, a 47.2% CWE-Bench pass@1 for Flash Cyber, and internal Chrome patching results.",
+        "zhHans": "Google 报告了较强的软件工程成绩、Flash Cyber 在 CWE-Bench 上 47.2% 的 pass@1，以及内部 Chrome 补丁结果。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-gemini38-google"
+      ]
+    },
+    {
+      "id": "gemini-38-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "Google says complex-task performance can require higher token use, while Flash Cyber remains limited to trusted defenders rather than broad public access.",
+        "zhHans": "Google 表示复杂任务的表现可能需要更高 token 消耗，而 Flash Cyber 仍限于受信防御者，并未广泛公开。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-gemini38-google"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260904-gemini38-google",
+      "supports": [
+        "google-gemini-3-8-flash-cyber-2026",
+        "gemini-38-fact-1",
+        "gemini-38-impact-1",
+        "gemini-38-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-gemini38-ars",
+      "supports": [
+        "google-gemini-3-8-flash-cyber-2026",
+        "gemini-38-fact-1"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [
+    "ai-software-teams",
+    "autonomous-enterprise-workflows"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-04",
+    "updatedAt": "2026-09-05",
+    "reviewedAt": "2026-09-05",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-05",
+    "reviewNotes": "Reviewed to separate the announced access model from Google-reported benchmark and Chrome-security outcomes.",
+    "changeLog": [
+      {
+        "date": "2026-09-04",
+        "changeType": "created",
+        "summary": "Added Gemini 3.8 Flash and Cyber model releases."
+      },
+      {
+        "date": "2026-09-05",
+        "changeType": "correction",
+        "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+      }
+    ],
+    "publishedAt": "2026-09-06"
+  }
+}

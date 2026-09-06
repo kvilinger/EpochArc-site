@@ -1,0 +1,176 @@
+{
+  "id": "anthropic-model-hardware-standard-2026",
+  "slug": "anthropic-model-hardware-standard-2026",
+  "title": {
+    "en": "Anthropic Previews the Model Hardware Standard for Physical-Device Research",
+    "zhHans": "Anthropic 预览面向物理设备研究的模型硬件标准（MHS）"
+  },
+  "searchSummary": {
+    "en": "Anthropic previewed the Model Hardware Standard on August 27, 2026, proposing a shared interface for AI agents to operate selected laboratory and physical devices in a partner research program.",
+    "zhHans": "Anthropic 于 2026 年 8 月 27 日预览模型硬件标准（MHS），在合作伙伴研究计划中提出供 AI 智能体操作部分实验室与物理设备的共享接口。"
+  },
+  "summary": {
+    "en": "Anthropic announced a research preview of the Model Hardware Standard (MHS), developed with partners including HHMI Janelia, Genentech, and CMU. MHS proposes drivers and basic read/write primitives to connect AI systems with laboratory instruments and other devices. Access is limited to invited research partners; Anthropic says it intends eventual open-source release, not that an open standard is already established.",
+    "zhHans": "Anthropic 宣布模型硬件标准（MHS）研究预览，合作方包括 HHMI Janelia、Genentech 与 CMU。MHS 提出驱动层及基础读写原语，用于连接 AI 系统与实验室仪器等设备。访问仅限受邀研究伙伴；Anthropic 表示计划最终开源，而非一个已经确立的开放标准。"
+  },
+  "narrative": {
+    "en": "MHS extends the interface idea behind MCP into physical equipment. Anthropic describes partner demonstrations such as multi-instrument experiments and says the specification is model-agnostic. It also says models still struggle with physical troubleshooting, such as handling bubbles in fluids. Claims about integration speed are early Anthropic-reported examples, not independently established performance across laboratories or manufacturers.",
+    "zhHans": "MHS 将 MCP 背后的接口理念延伸至物理设备。Anthropic 描述了多仪器实验等合作伙伴演示，并称该规范不绑定特定模型。它也承认模型仍难以处理诸如液体气泡等物理故障。关于集成速度的说法是 Anthropic 早期报告的案例，而不是已经在各实验室或制造商中独立确立的性能。"
+  },
+  "date": "2026-08-27",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Aug 27, 2026",
+    "zhHans": "2026年8月27日"
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Tests a proposed shared driver interface for AI systems and physical instruments in a constrained research preview.",
+        "zhHans": "在受限研究预览中测试 AI 系统与物理仪器之间拟议的共享驱动接口。"
+      },
+      "affectedGroups": [
+        "life scientists",
+        "robotics researchers",
+        "hardware manufacturers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-mhs-anthropic",
+        "sweep-20260904-mhs-cnbc",
+        "sweep-20260904-mhs-arstechnica"
+      ]
+    },
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Anthropic reports early partner examples of faster device integration, which remain to be validated beyond the preview program.",
+        "zhHans": "Anthropic 报告了合作伙伴中更快设备集成的早期案例，仍需在预览计划之外得到验证。"
+      },
+      "affectedGroups": [
+        "biotech labs",
+        "materials science teams",
+        "automation engineers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-mhs-anthropic",
+        "sweep-20260904-mhs-arstechnica"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "mhs-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "Anthropic previewed MHS on August 27, 2026 with partners including HHMI Janelia, Genentech, and CMU.",
+        "zhHans": "Anthropic 于 2026 年 8 月 27 日预览 MHS，合作方包括 HHMI Janelia、Genentech 与 CMU。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-mhs-anthropic",
+        "sweep-20260904-mhs-cnbc",
+        "sweep-20260904-mhs-arstechnica"
+      ]
+    },
+    {
+      "id": "mhs-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "MHS proposes standardized device drivers and read/write primitives for orchestrating selected physical equipment through AI systems.",
+        "zhHans": "MHS 提出标准化设备驱动与读写原语，用于通过 AI 系统协调部分物理设备。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-mhs-anthropic",
+        "sweep-20260904-mhs-cnbc"
+      ]
+    },
+    {
+      "id": "mhs-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "MHS is an invited research preview, not a generally available open-source standard, and Anthropic describes remaining need for human physical troubleshooting.",
+        "zhHans": "MHS 是受邀研究预览，而非普遍可用的开源标准；Anthropic 也描述了仍需要人工处理物理故障的情形。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-mhs-anthropic",
+        "sweep-20260904-mhs-arstechnica"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260904-mhs-anthropic",
+      "supports": [
+        "anthropic-model-hardware-standard-2026",
+        "mhs-fact-1",
+        "mhs-impact-1",
+        "mhs-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-mhs-cnbc",
+      "supports": [
+        "anthropic-model-hardware-standard-2026",
+        "mhs-fact-1",
+        "mhs-impact-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-mhs-arstechnica",
+      "supports": [
+        "anthropic-model-hardware-standard-2026",
+        "mhs-fact-1",
+        "mhs-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "gemini-robotics-er2-2026"
+  ],
+  "relatedForecasts": [
+    "ai-native-discovery-pipelines"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-04",
+    "updatedAt": "2026-09-05",
+    "reviewedAt": "2026-09-05",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-05",
+    "reviewNotes": "Reviewed as a proposed-interface research preview; removed the unsupported robots-leave-the-pilot-zone direction link.",
+    "changeLog": [
+      {
+        "date": "2026-09-04",
+        "changeType": "created",
+        "summary": "Added Anthropic Model Hardware Standard research preview."
+      },
+      {
+        "date": "2026-09-05",
+        "changeType": "correction",
+        "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+      }
+    ],
+    "publishedAt": "2026-09-06"
+  },
+  "impactIndex": 5
+}

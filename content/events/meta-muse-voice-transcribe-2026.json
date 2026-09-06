@@ -1,0 +1,152 @@
+{
+  "id": "meta-muse-voice-transcribe-2026",
+  "slug": "meta-muse-voice-transcribe-2026",
+  "title": {
+    "en": "Meta Releases Muse Voice Transcribe for Real-Time Multilingual Perception",
+    "zhHans": "Meta 发布实时多语言音频感知模型 Muse Voice Transcribe"
+  },
+  "searchSummary": {
+    "en": "Meta introduced Muse Voice Transcribe on September 1, 2026, with real-time streaming speech recognition, diarization for 20+ speakers, and multilingual code-switching support.",
+    "zhHans": "Meta 于 2026 年 9 月 1 日推出 Muse Voice Transcribe，提供实时流式语音识别、20 人以上说话人分离及多语言语码混合支持。"
+  },
+  "summary": {
+    "en": "Meta introduced Muse Voice Transcribe, the first real-time audio perception model from its Muse family, on September 1, 2026. Meta says it supports streaming ASR, endpointing, diarization for more than 20 speakers, and arbitrary code-switching. It is trained on more than 70 languages, with 25 extensively validated for the initial release. Meta's reported benchmark rankings and error rates remain provider-reported at launch.",
+    "zhHans": "Meta 于 2026 年 9 月 1 日推出 Muse 系列首个实时音频感知模型 Muse Voice Transcribe。Meta 称其支持流式 ASR、终点检测、20 人以上说话人分离及任意语码混合。该模型训练覆盖 70 多种语言，初始发布时其中 25 种经过充分验证。Meta 报告的基准排名与错误率在发布时仍主要属于厂商自报。"
+  },
+  "narrative": {
+    "en": "The model processes audio in 80-millisecond chunks and uses an adaptive-delay policy that Meta says was trained with reinforcement learning. Meta says the model ranks first in streaming speech-to-text and public diarization benchmarks, including a 3.1% final-transcription WER result. Independent product coverage confirms the announcement and availability context, but it does not independently reproduce the benchmark suite or validate performance across accents and deployment conditions.",
+    "zhHans": "该模型以 80 毫秒音频块处理输入，并使用 Meta 称经强化学习训练的自适应延迟策略。Meta 称该模型在流式语音转写和公开说话人分离基准中排名第一，包括 3.1% 的最终转写词错误率结果。独立产品报道确认了公告与可用性背景，但未独立复现完整基准套件，也未验证其在不同口音和部署条件下的表现。"
+  },
+  "date": "2026-09-01",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Sep 1, 2026",
+    "zhHans": "2026年9月1日"
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 3,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Adds a released real-time transcription product with multi-speaker diarization and code-switching support.",
+        "zhHans": "增加了一款已发布的实时转写产品，支持多说话人分离与语码混合。"
+      },
+      "affectedGroups": [
+        "desktop users",
+        "voice agent developers",
+        "multilingual communicators"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-meta-transcribe",
+        "sweep-20260904-meta-transcribe-engadget",
+        "sweep-20260904-meta-transcribe-9to5mac"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "meta-transcribe-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "Meta introduced Muse Voice Transcribe on September 1, 2026 with streaming ASR, endpointing, and diarization for more than 20 speakers.",
+        "zhHans": "Meta 于 2026 年 9 月 1 日推出 Muse Voice Transcribe，提供流式 ASR、终点检测及 20 人以上说话人分离。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-meta-transcribe",
+        "sweep-20260904-meta-transcribe-engadget",
+        "sweep-20260904-meta-transcribe-9to5mac"
+      ]
+    },
+    {
+      "id": "meta-transcribe-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "Meta describes reinforcement-learning-based adaptive delay as its mechanism for balancing transcription accuracy and latency.",
+        "zhHans": "Meta 将基于强化学习的自适应延迟描述为其平衡转写准确率与延迟的机制。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-meta-transcribe"
+      ]
+    },
+    {
+      "id": "meta-transcribe-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "The reported rankings and error rates are provider-reported at launch and need broader third-party evaluation across accents, noise, and deployment settings.",
+        "zhHans": "发布时报告的排名与错误率主要来自厂商，需要在口音、噪声和部署环境上接受更广泛的第三方评估。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-meta-transcribe",
+        "sweep-20260904-meta-transcribe-engadget"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260904-meta-transcribe",
+      "supports": [
+        "meta-muse-voice-transcribe-2026",
+        "meta-transcribe-fact-1",
+        "meta-transcribe-impact-1",
+        "meta-transcribe-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-meta-transcribe-engadget",
+      "supports": [
+        "meta-muse-voice-transcribe-2026",
+        "meta-transcribe-fact-1",
+        "meta-transcribe-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-meta-transcribe-9to5mac",
+      "supports": [
+        "meta-muse-voice-transcribe-2026",
+        "meta-transcribe-fact-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "meta-muse-code-spark-1-2-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-04",
+    "updatedAt": "2026-09-05",
+    "reviewedAt": "2026-09-05",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-05",
+    "reviewNotes": "Reviewed to attribute all performance rankings and WER figures to Meta rather than treating launch coverage as replication.",
+    "changeLog": [
+      {
+        "date": "2026-09-04",
+        "changeType": "created",
+        "summary": "Added Meta Muse Voice Transcribe launch."
+      },
+      {
+        "date": "2026-09-05",
+        "changeType": "correction",
+        "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+      }
+    ],
+    "publishedAt": "2026-09-06"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "id": "nvidia-groq-3-lpx-2026",
+  "slug": "nvidia-groq-3-lpx-2026",
+  "title": {
+    "en": "NVIDIA Announces Groq 3 LPX Production Milestone for Agentic AI Inference",
+    "zhHans": "NVIDIA 宣布 Groq 3 LPX 达到面向智能体 AI 推理的生产里程碑"
+  },
+  "searchSummary": {
+    "en": "NVIDIA announced that Groq 3 LPX entered full production on August 24, 2026; Nebius separately announced planned early cloud adoption for its Token Factory.",
+    "zhHans": "NVIDIA 于 2026 年 8 月 24 日宣布 Groq 3 LPX 进入全面生产；Nebius 则另行宣布计划在其 Token Factory 中率先采用。"
+  },
+  "summary": {
+    "en": "NVIDIA described Groq 3 LPX as in full production at Hot Chips on August 24, 2026. Nebius announced that it would be the first AI cloud to adopt the platform, initially for a subset of models on Token Factory. The announcements establish a production and integration milestone, not proof of broad cloud availability or uniform throughput in customer workloads.",
+    "zhHans": "NVIDIA 于 2026 年 8 月 24 日在 Hot Chips 上将 Groq 3 LPX 描述为已进入全面生产。Nebius 宣布将成为首家采用该平台的 AI 云服务商，初期仅在 Token Factory 中支持部分模型。这些公告确认的是生产与集成里程碑，而非广泛云端可用性或客户工作负载中一致吞吐量的证明。"
+  },
+  "narrative": {
+    "en": "NVIDIA and Nebius frame the LPX design around low-latency token generation for multi-step agents. NVIDIA cited a 3,400-output-token-per-second result on a specific Gemma 4 31B setup, while Nebius cited the same benchmark and described a planned integration path. NVIDIA's release also states that many products and features remain subject to availability, so EpochArc treats performance and rollout effects as vendor-reported and prospective.",
+    "zhHans": "NVIDIA 与 Nebius 将 LPX 设计定位为服务多步智能体的低延迟 token 生成。NVIDIA 援引特定 Gemma 4 31B 配置下每秒 3,400 个输出 token 的结果，Nebius 也引用该基准并描述了计划中的集成路径。NVIDIA 的公告同时说明多项产品与功能仍取决于可用性，因此 EpochArc 将性能与落地效果限定为厂商报告和前瞻性表述。"
+  },
+  "date": "2026-08-24",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Aug 24, 2026",
+    "zhHans": "2026年8月24日"
+  },
+  "categories": [
+    "capability",
+    "commerce"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Creates a production milestone for specialized low-latency inference hardware intended for multi-step agent workloads.",
+        "zhHans": "为面向多步智能体工作负载的专用低延迟推理硬件形成生产里程碑。"
+      },
+      "affectedGroups": [
+        "AI cloud operators",
+        "agentic system developers",
+        "enterprise users"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-nvidia-groq-official",
+        "sweep-20260904-nebius-groq-official"
+      ]
+    },
+    {
+      "dimension": "economic_disruption",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Nebius's announced integration indicates early commercial interest in specialized rack-scale inference, subject to delivery and adoption.",
+        "zhHans": "Nebius 宣布的集成计划显示市场对专用机架级推理的早期商业兴趣，但仍取决于交付与采用。"
+      },
+      "affectedGroups": [
+        "semiconductor industry",
+        "cloud providers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-nebius-groq-official",
+        "sweep-20260904-nvidia-groq-cnbc"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "nvidia-groq-fact-1",
+      "claimType": "fact",
+      "text": {
+        "en": "NVIDIA announced Groq 3 LPX as in full production on August 24, 2026, and Nebius announced it as the first adopting AI cloud.",
+        "zhHans": "NVIDIA 于 2026 年 8 月 24 日宣布 Groq 3 LPX 已进入全面生产，Nebius 宣布成为首家采用该平台的 AI 云服务商。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-nvidia-groq-official",
+        "sweep-20260904-nebius-groq-official",
+        "sweep-20260904-nvidia-groq-cnbc"
+      ]
+    },
+    {
+      "id": "nvidia-groq-impact-1",
+      "claimType": "impact",
+      "text": {
+        "en": "NVIDIA reported up to 3,400 output tokens per second on a specified Gemma 4 31B benchmark configuration, aimed at latency-sensitive agent workflows.",
+        "zhHans": "NVIDIA 报告称，在指定的 Gemma 4 31B 基准配置上最高达到每秒 3,400 个输出 token，目标是低延迟智能体工作流。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-nvidia-groq-official",
+        "sweep-20260904-nebius-groq-official"
+      ]
+    },
+    {
+      "id": "nvidia-groq-limitation-1",
+      "claimType": "limitation",
+      "text": {
+        "en": "Throughput depends on the tested model and rack configuration, while cloud rollout and features remain subject to availability and partner delivery.",
+        "zhHans": "吞吐量取决于测试模型与机架配置，云端落地及相关功能仍受可用性与合作伙伴交付进度影响。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260904-nvidia-groq-official",
+        "sweep-20260904-nvidia-groq-cnbc"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260904-nvidia-groq-official",
+      "supports": [
+        "nvidia-groq-3-lpx-2026",
+        "nvidia-groq-fact-1",
+        "nvidia-groq-impact-1",
+        "nvidia-groq-limitation-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-nebius-groq-official",
+      "supports": [
+        "nvidia-groq-3-lpx-2026",
+        "nvidia-groq-fact-1",
+        "nvidia-groq-impact-1"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260904-nvidia-groq-cnbc",
+      "supports": [
+        "nvidia-groq-3-lpx-2026",
+        "nvidia-groq-fact-1",
+        "nvidia-groq-limitation-1"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "spacex-xai-merger-2026",
+    "aws-nvidia-2m-gpu-expansion-2026"
+  ],
+  "relatedForecasts": [
+    "autonomous-enterprise-workflows"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-04",
+    "updatedAt": "2026-09-05",
+    "reviewedAt": "2026-09-05",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-05",
+    "reviewNotes": "Reviewed to separate NVIDIA's production announcement from staged cloud availability and vendor-reported performance.",
+    "changeLog": [
+      {
+        "date": "2026-09-04",
+        "changeType": "created",
+        "summary": "Added NVIDIA Groq 3 LPX production launch."
+      },
+      {
+        "date": "2026-09-05",
+        "changeType": "correction",
+        "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+      }
+    ],
+    "publishedAt": "2026-09-06"
+  }
+}
