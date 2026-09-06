@@ -113,16 +113,29 @@ def get_date_range(anchor_event_ids):
     return dates[0], dates[-1]
 
 def get_arc_categories(arc):
-    """从 arc 的 categories 字段获取分类，若无则从 anchor events 推导"""
+    """从 arc 的 categories 字段获取分类，若无则从有序 anchor events 推导。"""
     if 'categories' in arc and arc['categories']:
         return arc['categories']
-    cats = {}
-    for eid in collect_all_anchor_events(arc):
-        ev = events_by_id.get(eid)
-        if ev:
-            for c in ev.get('categories', []):
-                cats[c] = cats.get(c, 0) + 1
-    return sorted(cats, key=lambda c: -cats[c])[:3]
+
+    # Do not iterate collect_all_anchor_events() here: it is a set, so equal
+    # category counts previously produced hash-seed-dependent badge order (and
+    # could change which tied category made the top three). Chapter and anchor
+    # order are editorially stable, so use first appearance as the tie-breaker.
+    counts = {}
+    first_seen = {}
+    for chapter in arc.get('chapters', []):
+        for eid in chapter.get('anchorEvents', []):
+            ev = events_by_id.get(eid)
+            if not ev:
+                continue
+            for category in ev.get('categories', []):
+                if category not in first_seen:
+                    first_seen[category] = len(first_seen)
+                counts[category] = counts.get(category, 0) + 1
+    return [
+        category
+        for category in sorted(counts, key=lambda category: (-counts[category], first_seen[category]))[:3]
+    ]
 
 def get_arc_significance(arc):
     """获取 arc 的 significance 值"""
