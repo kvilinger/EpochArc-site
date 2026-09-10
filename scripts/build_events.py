@@ -732,8 +732,13 @@ if os.path.exists(DIST_DIR):
     print(f"✅ Synced static events to {DIST_DIR}/events/")
 
 # ─────────────────── Fallback 数据裁剪与回填 ───────────────────
-FALLBACK_KEEP_KEYS = {'id', 'slug', 'title', 'date', 'datePrecision', 'searchSummary', 'summary',
-                      'categories', 'significance', 'impactIndex'}
+# This must be ordered: these entries are serialized into a tracked fallback
+# artifact, so iterating an unordered set causes byte-level output drift across
+# Python hash seeds even when the editorial data is unchanged.
+FALLBACK_KEEP_KEYS = (
+    'id', 'slug', 'title', 'date', 'datePrecision', 'searchSummary', 'summary',
+    'categories', 'significance', 'impactIndex',
+)
 
 def trim_for_fallback(events):
     """裁剪 events 数据用于 HTML fallback，去掉详情页才需要的字段"""
