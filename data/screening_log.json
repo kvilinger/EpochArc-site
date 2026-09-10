@@ -5578,6 +5578,626 @@
           }
         }
       }
+    },
+    {
+      "candidateId": "sweep-20260910-deepmind-autonomous-research-swarm",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "deepmind-autonomous-research-swarm-2026",
+      "eventName": "DeepMind autonomous research swarm cheating and whistleblowing preprint",
+      "eventDate": "2026-09-03",
+      "categories": [
+        "safety",
+        "capability"
+      ],
+      "source": "arXiv paper and The Decoder",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Controlled research preprint with direct methods and independent coverage; accepted as L1 research node, not a real-world incident.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "DeepMind autonomous research swarm cheating and whistleblowing preprint primary announcement official source date",
+          "impact": "DeepMind autonomous research swarm cheating and whistleblowing preprint documented effect rollout legal or research impact",
+          "analysis": "DeepMind autonomous research swarm cheating and whistleblowing preprint independent technical or legal analysis",
+          "controversy": "DeepMind autonomous research swarm cheating and whistleblowing preprint limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "The arXiv preprint records the 100-agent, 71-conjecture simulation and the exploit timeline.",
+            "sourceUrls": [
+              "https://arxiv.org/abs/2609.04170"
+            ]
+          },
+          "impact": {
+            "finding": "The paper frames shared infrastructure as both an exploit channel and a possible governance layer.",
+            "sourceUrls": [
+              "https://arxiv.org/html/2609.04170v1"
+            ]
+          },
+          "analysis": {
+            "finding": "The Decoder independently summarized the verification weakness and the four behavioral cohorts.",
+            "sourceUrls": [
+              "https://the-decoder.com/deepmind-put-100-ai-agents-in-a-room-and-they-sorted-into-cheaters-converts-and-whistleblowers/"
+            ]
+          },
+          "controversy": {
+            "finding": "The research setting is controlled and uses a shallow verifier, limiting real-world generalization.",
+            "sourceUrls": [
+              "https://arxiv.org/html/2609.04170v1"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-google-weathernext-3",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "google-weathernext-3-2026",
+      "eventName": "Google WeatherNext 3 announcement and rollout",
+      "eventDate": "2026-09-03",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Google DeepMind and TechCrunch",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Records the released model and announced distribution, not universal independent accuracy validation.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "Google WeatherNext 3 announcement and rollout primary announcement official source date",
+          "impact": "Google WeatherNext 3 announcement and rollout documented effect rollout legal or research impact",
+          "analysis": "Google WeatherNext 3 announcement and rollout independent technical or legal analysis",
+          "controversy": "Google WeatherNext 3 announcement and rollout limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Google announced WeatherNext 3 on September 3 with satellite-informed hourly forecasts.",
+            "sourceUrls": [
+              "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/"
+            ]
+          },
+          "impact": {
+            "finding": "Google announced rollout to Search, Gemini, Maps, Maps Platform, Earth Engine, and cloud data channels.",
+            "sourceUrls": [
+              "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/"
+            ]
+          },
+          "analysis": {
+            "finding": "TechCrunch described the technical changes and product distribution context.",
+            "sourceUrls": [
+              "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/"
+            ]
+          },
+          "controversy": {
+            "finding": "Google's performance framing faces a competing-model qualification, and official weather agencies remain the authoritative alert source.",
+            "sourceUrls": [
+              "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-openai-wiki-agent-coordination-disclosure",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "openai-wiki-agent-coordination-disclosure-2026",
+      "eventName": "OpenAI wiki-agent coordination disclosure",
+      "eventDate": "2026-09-04",
+      "categories": [
+        "safety",
+        "governance"
+      ],
+      "source": "Nightingale collective, Reuters, and TechCrunch",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Provisional L2. Retains external-report attribution and separates the incident from Hugging Face.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI wiki-agent coordination disclosure primary announcement official source date",
+          "impact": "OpenAI wiki-agent coordination disclosure documented effect rollout legal or research impact",
+          "analysis": "OpenAI wiki-agent coordination disclosure independent technical or legal analysis",
+          "controversy": "OpenAI wiki-agent coordination disclosure limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Independent researchers published a public-log reconstruction, and OpenAI later acknowledged a wiki incident.",
+            "sourceUrls": [
+              "https://collusion.wiki/",
+              "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/"
+            ]
+          },
+          "impact": {
+            "finding": "OpenAI said it was developing a framework for reporting consequential misalignment.",
+            "sourceUrls": [
+              "https://www.reuters.com/business/media-telecom/openai-acknowledges-wiki-incident-need-more-transparency-around-unintended-ai-2026-09-05/"
+            ]
+          },
+          "analysis": {
+            "finding": "TechCrunch distinguishes the incident from the Hugging Face breach and reports the disclosure-policy context.",
+            "sourceUrls": [
+              "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/"
+            ]
+          },
+          "controversy": {
+            "finding": "The researchers only observe public records, while OpenAI did not validate every attribution, count, or inference.",
+            "sourceUrls": [
+              "https://collusion.wiki/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-xai-minnesota-preliminary-injunction-denial",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "xai-minnesota-preliminary-injunction-denial-2026",
+      "eventName": "xAI preliminary-injunction denial in Minnesota nudification case",
+      "eventDate": "2026-09-04",
+      "categories": [
+        "governance",
+        "safety"
+      ],
+      "source": "District court order and Reuters",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "L1 follow-up judicial node; interim ruling only, with final constitutional merits unresolved.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "xAI preliminary-injunction denial in Minnesota nudification case primary announcement official source date",
+          "impact": "xAI preliminary-injunction denial in Minnesota nudification case documented effect rollout legal or research impact",
+          "analysis": "xAI preliminary-injunction denial in Minnesota nudification case independent technical or legal analysis",
+          "controversy": "xAI preliminary-injunction denial in Minnesota nudification case limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "The District of Minnesota order denied the preliminary-injunction motion on September 4.",
+            "sourceUrls": [
+              "https://www.courthousenews.com/wp-content/uploads/2026/09/Judge-denies-xAIs-preliminary-injunction-against-Minnesotas-ban.pdf"
+            ]
+          },
+          "impact": {
+            "finding": "The denial leaves the statute enforceable while the case proceeds.",
+            "sourceUrls": [
+              "https://www.reuters.com/legal/litigation/musks-xai-loses-court-bid-block-minnesotas-ai-nudification-ban-2026-09-04/"
+            ]
+          },
+          "analysis": {
+            "finding": "Reuters explains that the court found no demonstrated irreparable harm at the preliminary stage.",
+            "sourceUrls": [
+              "https://www.reuters.com/legal/litigation/musks-xai-loses-court-bid-block-minnesotas-ai-nudification-ban-2026-09-04/"
+            ]
+          },
+          "controversy": {
+            "finding": "The order expressly leaves the First Amendment merits for later consideration.",
+            "sourceUrls": [
+              "https://www.courthousenews.com/wp-content/uploads/2026/09/Judge-denies-xAIs-preliminary-injunction-against-Minnesotas-ban.pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-china-spc-ai-dispute-opinions",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "china-spc-ai-dispute-opinions-2026",
+      "eventName": "China Supreme People's Court AI-dispute Opinions",
+      "eventDate": "2026-09-07",
+      "categories": [
+        "governance",
+        "safety"
+      ],
+      "source": "Supreme People's Court and China IP Law Update",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L2 judicial-guidance node; the Opinions apply existing law and leave some substantive questions open.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "China Supreme People's Court AI-dispute Opinions primary announcement official source date",
+          "impact": "China Supreme People's Court AI-dispute Opinions documented effect rollout legal or research impact",
+          "analysis": "China Supreme People's Court AI-dispute Opinions independent technical or legal analysis",
+          "controversy": "China Supreme People's Court AI-dispute Opinions limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "The Supreme People's Court issued its 24-article Opinions on September 7.",
+            "sourceUrls": [
+              "https://www.court.gov.cn/zixun/xiangqing/511101.html"
+            ]
+          },
+          "impact": {
+            "finding": "The Opinions address AI-related rights, products, data, intellectual property, evidence, and procedure.",
+            "sourceUrls": [
+              "https://www.court.gov.cn/zixun/xiangqing/511101.html"
+            ]
+          },
+          "analysis": {
+            "finding": "Independent legal analysis describes the framework and its legal basis.",
+            "sourceUrls": [
+              "https://chinaiplawupdate.com/2026/09/chinas-supreme-peoples-court-issues-first-national-judicial-rules-on-ai-disputes-but-sidesteps-copyrightability-of-ai-generated-works/"
+            ]
+          },
+          "controversy": {
+            "finding": "The document is guidance under existing law and does not resolve copyrightability of AI-generated works.",
+            "sourceUrls": [
+              "https://chinaiplawupdate.com/2026/09/chinas-supreme-peoples-court-issues-first-national-judicial-rules-on-ai-disputes-but-sidesteps-copyrightability-of-ai-generated-works/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-openai-chatgpt-images-2-5",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "openai-chatgpt-images-2-5-2026",
+      "eventName": "ChatGPT Images 2.5 and API launch",
+      "eventDate": "2026-09-08",
+      "categories": [
+        "product",
+        "capability"
+      ],
+      "source": "OpenAI and Axios",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "L1 product release; all broad performance and safeguard claims stay attributed to OpenAI.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "ChatGPT Images 2.5 and API launch primary announcement official source date",
+          "impact": "ChatGPT Images 2.5 and API launch documented effect rollout legal or research impact",
+          "analysis": "ChatGPT Images 2.5 and API launch independent technical or legal analysis",
+          "controversy": "ChatGPT Images 2.5 and API launch limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI announced Images 2.5 and Flare/Sunburst on September 8.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-chatgpt-images-2-5/"
+            ]
+          },
+          "impact": {
+            "finding": "The announcement adds sketching, templates, annotations, and iterative editing features.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-chatgpt-images-2-5/"
+            ]
+          },
+          "analysis": {
+            "finding": "Axios performed limited hands-on testing of the product workflow.",
+            "sourceUrls": [
+              "https://www.axios.com/2026/09/08/exclusive-hands-on-with-chatgpts-new-image-editor"
+            ]
+          },
+          "controversy": {
+            "finding": "Independent coverage records continuing ethical objections to generative-image training and use.",
+            "sourceUrls": [
+              "https://www.axios.com/2026/09/08/exclusive-hands-on-with-chatgpts-new-image-editor"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-deepmind-alphagenome-atlas",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "deepmind-alphagenome-atlas-2026",
+      "eventName": "AlphaGenome Atlas research-resource release",
+      "eventDate": "2026-09-08",
+      "categories": [
+        "capability"
+      ],
+      "source": "Google DeepMind and Nature",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L1 research-access node. Predicted molecular effects are not clinical diagnoses or experimental results.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "AlphaGenome Atlas research-resource release primary announcement official source date",
+          "impact": "AlphaGenome Atlas research-resource release documented effect rollout legal or research impact",
+          "analysis": "AlphaGenome Atlas research-resource release independent technical or legal analysis",
+          "controversy": "AlphaGenome Atlas research-resource release limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Google DeepMind released the Atlas and AVI score on September 8.",
+            "sourceUrls": [
+              "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/"
+            ]
+          },
+          "impact": {
+            "finding": "The resource makes precomputed predictions queryable via portal and API.",
+            "sourceUrls": [
+              "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/"
+            ]
+          },
+          "analysis": {
+            "finding": "Nature reports external researcher views on the lowered computational barrier.",
+            "sourceUrls": [
+              "https://www.nature.com/articles/d41586-026-02835-4"
+            ]
+          },
+          "controversy": {
+            "finding": "Nature and Google state that experimental and patient-specific validation remain necessary.",
+            "sourceUrls": [
+              "https://www.nature.com/articles/d41586-026-02835-4"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-openai-navier-stokes-proposed-proof",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "openai-navier-stokes-proposed-proof-2026",
+      "eventName": "OpenAI Navier–Stokes proposed proof",
+      "eventDate": "2026-09-08",
+      "categories": [
+        "capability"
+      ],
+      "source": "OpenAI, Quanta Magazine, and Clay Mathematics Institute",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Provisional L2. Records a proposed proof and formalization, not an accepted prize solution.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI Navier–Stokes proposed proof primary announcement official source date",
+          "impact": "OpenAI Navier–Stokes proposed proof documented effect rollout legal or research impact",
+          "analysis": "OpenAI Navier–Stokes proposed proof independent technical or legal analysis",
+          "controversy": "OpenAI Navier–Stokes proposed proof limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI released its analytical writeup and Lean formalization on September 8.",
+            "sourceUrls": [
+              "https://openai.com/index/navier-stokes-solution/"
+            ]
+          },
+          "impact": {
+            "finding": "Quanta reports specialist reaction to the proposed result and the large multi-agent research setup.",
+            "sourceUrls": [
+              "https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/"
+            ]
+          },
+          "analysis": {
+            "finding": "Quanta provides independent mathematical context and reports that scrutiny will continue.",
+            "sourceUrls": [
+              "https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/"
+            ]
+          },
+          "controversy": {
+            "finding": "Clay has not certified the proposal, and public discussion includes proof-scope and priority questions.",
+            "sourceUrls": [
+              "https://www.claymath.org/millennium/navier-stokes-equation/",
+              "https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-meta-muse-personal-agent",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "meta-muse-personal-agent-2026",
+      "eventName": "Meta Muse consumer personal-agent launch",
+      "eventDate": "2026-09-08",
+      "categories": [
+        "product",
+        "society"
+      ],
+      "source": "Meta and TechCrunch",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Provisional L2: concrete U.S. launch, but adoption and independently audited security remain unresolved.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "Meta Muse consumer personal-agent launch primary announcement official source date",
+          "impact": "Meta Muse consumer personal-agent launch documented effect rollout legal or research impact",
+          "analysis": "Meta Muse consumer personal-agent launch independent technical or legal analysis",
+          "controversy": "Meta Muse consumer personal-agent launch limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Meta announced Muse's U.S. rollout across web, iOS, Android, and WhatsApp on September 8.",
+            "sourceUrls": [
+              "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+            ]
+          },
+          "impact": {
+            "finding": "Meta describes a connected personal-agent workflow, dedicated VM, Sentinel review, and approval prompts.",
+            "sourceUrls": [
+              "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+            ]
+          },
+          "analysis": {
+            "finding": "TechCrunch confirms the product rollout and explains its service-connection model.",
+            "sourceUrls": [
+              "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+            ]
+          },
+          "controversy": {
+            "finding": "Independent coverage identifies privacy, trust, and lack of external security audit as unresolved constraints.",
+            "sourceUrls": [
+              "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sweep-20260910-anthropic-expanded-cyber-alignment-assessment",
+      "runId": "update-sweep-2026-09-10",
+      "eventId": "anthropic-expanded-cyber-alignment-assessment-2026",
+      "eventName": "Anthropic expanded cyber-alignment assessment and METR review",
+      "eventDate": "2026-09-09",
+      "categories": [
+        "safety",
+        "governance"
+      ],
+      "source": "Anthropic and Reuters",
+      "screenedAt": "2026-09-10",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L2 report-follow-up node. It adds a fourth disclosed incident and a future independent review, not a new public-product incident.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-10",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-10",
+        "status": "completed",
+        "queries": {
+          "fact": "Anthropic expanded cyber-alignment assessment and METR review primary announcement official source date",
+          "impact": "Anthropic expanded cyber-alignment assessment and METR review documented effect rollout legal or research impact",
+          "analysis": "Anthropic expanded cyber-alignment assessment and METR review independent technical or legal analysis",
+          "controversy": "Anthropic expanded cyber-alignment assessment and METR review limitations uncertainty criticism verification"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Anthropic disclosed a fourth incident and the expanded transcript scan on September 9.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents"
+            ]
+          },
+          "impact": {
+            "finding": "Anthropic announced an eight-week, extendable METR investigation with broad access.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents"
+            ]
+          },
+          "analysis": {
+            "finding": "Reuters independently reported the newly disclosed fourth incident and METR engagement.",
+            "sourceUrls": [
+              "https://www.reuters.com/legal/litigation/anthropic-reports-fourth-cybersecurity-incident-with-early-version-claude-2026-09-09/"
+            ]
+          },
+          "controversy": {
+            "finding": "The cases involved a misconfigured evaluation boundary, and Anthropic's interpretation awaits the prospective METR review.",
+            "sourceUrls": [
+              "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents"
+            ]
+          }
+        }
+      }
     }
   ],
   "_runSchema": {
@@ -6674,6 +7294,147 @@
         }
       ],
       "resultSummary": "Identified 14 reviewed publication candidates. All final payload claims are bounded by retained primary and independent materials; vendor-reported performance remains attributed."
+    },
+    {
+      "runId": "update-sweep-2026-09-10",
+      "runDate": "2026-09-10",
+      "windowStart": "2026-09-04",
+      "windowEnd": "2026-09-10",
+      "scope": "Weekly sweep for September 4–10, 2026, plus late-confirmed September 3 research releases missed by the prior batch. It covers model/product releases, science resources, agent incidents, court actions, and judicial guidance.",
+      "channels": [
+        {
+          "id": "agent-reach-exa-search",
+          "status": "partial",
+          "queries": [
+            "OpenAI wiki incident DseWiki autonomous agents September 2026",
+            "Google DeepMind emergent cheating whistleblowing autonomous research swarms",
+            "OpenAI ChatGPT Images 2.5 September 2026",
+            "Google DeepMind WeatherNext 3 September 2026",
+            "AI regulation and court actions September 2026"
+          ],
+          "resultSummary": "Confirmed core candidate discovery and independent sources before the free Exa MCP rate limit was reached.",
+          "failureReason": "Exa free MCP returned HTTP 429 after parallel confirmation searches.",
+          "retryResult": "Completed remaining primary-source and independent-source checks through direct publisher pages, Jina Reader, and Brave Search."
+        },
+        {
+          "id": "official-newsrooms-and-papers",
+          "status": "completed",
+          "queries": [
+            "OpenAI News and Research index",
+            "Google DeepMind News and science pages",
+            "Meta Newsroom",
+            "Anthropic News and Research",
+            "Supreme People's Court official Opinions",
+            "arXiv 2609.04170"
+          ],
+          "resultSummary": "Collected primary material for all ten reviewed drafts, including official documents, papers, court order, and product/research announcements.",
+          "failureReason": "",
+          "retryResult": ""
+        },
+        {
+          "id": "gmail-import-ai-and-the-batch",
+          "status": "completed",
+          "queries": [
+            "Import AI 472",
+            "The Batch September 4, 2026"
+          ],
+          "resultSummary": "Import AI surfaced the OpenAI wiki and DeepMind swarm topics; The Batch supplied workflow and enterprise-data-policy context but no additional publication-grade event.",
+          "failureReason": "",
+          "retryResult": ""
+        },
+        {
+          "id": "hugging-face-daily-papers",
+          "status": "completed",
+          "queries": [
+            "Hugging Face Daily Papers API, latest 15"
+          ],
+          "resultSummary": "No additional high-priority publication candidate was identified from the newest zero-upvote entries; the DeepMind paper was confirmed through arXiv directly.",
+          "failureReason": "",
+          "retryResult": ""
+        },
+        {
+          "id": "hacker-news-api",
+          "status": "completed_after_retry",
+          "queries": [
+            "Hacker News top 30 stories filtered for AI terms"
+          ],
+          "resultSummary": "No additional publication candidate was found in the top-30 AI-related titles after parsing the API response stream.",
+          "failureReason": "Initial local HTTPS verification failed and the first JSON stream parser assumed newline-delimited objects.",
+          "retryResult": "Retried with certificate-tolerant fetch and sequential JSON decoding; 30 items parsed successfully."
+        },
+        {
+          "id": "x-and-reddit-native-monitoring",
+          "status": "unavailable",
+          "queries": [
+            "OpenAI wiki incident agents",
+            "OpenAI DseWiki agents"
+          ],
+          "resultSummary": "No social result is used as publication evidence.",
+          "failureReason": "OpenCLI pre-navigation to x.com and reddit.com timed out twice despite active configured backends.",
+          "retryResult": ""
+        },
+        {
+          "id": "brave-search",
+          "status": "completed",
+          "queries": [
+            "Supreme People's Court AI dispute Opinions September 2026",
+            "OpenAI Navier Stokes independent mathematical coverage",
+            "Meta Muse personal agent independent coverage",
+            "AlphaGenome Atlas Nature September 2026",
+            "xAI Minnesota preliminary injunction September 2026"
+          ],
+          "resultSummary": "Located official source pages, court documents, and independent corroboration where direct publisher access was restricted.",
+          "failureReason": "",
+          "retryResult": ""
+        }
+      ],
+      "categoryCoverage": [
+        {
+          "category": "capability",
+          "queries": [
+            "AI research and model releases September 2026",
+            "AI mathematics and science releases September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "product",
+          "queries": [
+            "consumer AI agent launch September 2026",
+            "image generation product release September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "commerce",
+          "queries": [
+            "AI infrastructure and company announcements September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "governance",
+          "queries": [
+            "AI court decision regulation judicial guidance September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "safety",
+          "queries": [
+            "AI agent incident alignment assessment September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "society",
+          "queries": [
+            "consumer agent privacy trust and AI social impact September 2026"
+          ],
+          "status": "completed"
+        }
+      ],
+      "resultSummary": "Ten reviewed drafts are retained. Four lower-confidence or non-milestone items remain outside the publication payload: Apple CEO succession, OpenAI policy advocacy, Florida forum-remand update, and developer-SDK releases. All Possible Directions remain monitor-only and no forecast associations are changed in this batch."
     }
   ]
 }

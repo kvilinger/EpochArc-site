@@ -1,0 +1,156 @@
+{
+  "id": "google-weathernext-3-2026",
+  "slug": "google-weathernext-3",
+  "title": {
+    "en": "Google introduces WeatherNext 3 with hourly satellite-informed forecasts",
+    "zhHans": "Google 推出结合卫星实时数据、按小时更新的 WeatherNext 3"
+  },
+  "searchSummary": {
+    "en": "Google DeepMind and Google Research introduced WeatherNext 3, a global AI weather model with hourly refreshes, high-resolution outputs, and planned integration across Google weather surfaces.",
+    "zhHans": "Google DeepMind 与 Google Research 推出 WeatherNext 3：一款按小时更新、输出更高分辨率预报，并计划接入多项 Google 天气服务的全球 AI 气象模型。"
+  },
+  "summary": {
+    "en": "Google DeepMind and Google Research announced WeatherNext 3 on September 3. The model ingests live geostationary satellite observations, refreshes forecasts hourly, and produces outputs at multiple resolutions. Google says it began powering weather experiences in Search, the Gemini app, Maps, the Maps Platform Weather API, Earth Engine, and cloud data services. The event records the announced model and rollout; comparative accuracy figures remain Google-reported, although independent coverage confirms the product and distribution context.",
+    "zhHans": "Google DeepMind 与 Google Research 于 9 月 3 日发布 WeatherNext 3。该模型接收实时地球静止卫星观测数据，按小时刷新预报，并输出多种分辨率的结果。Google 称其已开始为 Search、Gemini 应用、Maps、Maps Platform Weather API、Earth Engine 与云数据服务提供天气能力。本事件记录模型与已宣布的接入；比较准确率数字仍主要来自 Google，尽管独立报道确认了产品与分发背景。"
+  },
+  "narrative": {
+    "en": "WeatherNext 3 is designed to reduce the spatial and update-frequency limits of prior AI weather models. Google reports 5-kilometer predictions for some surface variables, 10-kilometer gridded surface outputs, and 25-kilometer atmospheric outputs, as well as renewable-energy variables. TechCrunch reports that the model was visible in Brightband's Operational WeatherBench comparisons, while also noting a competing developer's challenge to Google's novelty framing around raw observations. Google warns that WeatherNext remains an experimental forecasting system and should not replace national meteorological warnings or local official forecasts.",
+    "zhHans": "WeatherNext 3 旨在降低此前 AI 气象模型在空间分辨率和更新频率上的限制。Google 报告称，部分地表变量可达到 5 公里预测、网格地表输出为 10 公里、大气输出为 25 公里，并加入可再生能源相关变量。TechCrunch 报道该模型出现在 Brightband 的 Operational WeatherBench 比较中，同时记录了竞争方对 Google“直接使用原始观测”新颖性说法的异议。Google 也警告，WeatherNext 仍是实验性预报系统，不能取代国家气象机构预警或本地官方预报。"
+  },
+  "date": "2026-09-03",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-03",
+    "zhHans": "2026年09月03日"
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Combines live satellite inputs, hourly refreshes, and higher-resolution global outputs in a deployed AI weather model.",
+        "zhHans": "在已部署的 AI 气象模型中结合实时卫星输入、按小时刷新与更高分辨率的全球输出。"
+      },
+      "affectedGroups": [
+        "weather researchers",
+        "meteorological services",
+        "energy operators",
+        "Google product users"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-weathernext-google",
+        "sweep-20260910-weathernext-techcrunch"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Places an AI-weather output layer in consumer products, developer services, and cloud-accessible data channels, subject to the announced rollout.",
+        "zhHans": "在已宣布的接入范围内，将 AI 气象输出层置于消费产品、开发者服务和云端可访问数据渠道中。"
+      },
+      "affectedGroups": [
+        "weather researchers",
+        "meteorological services",
+        "energy operators",
+        "Google product users"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-weathernext-google",
+        "sweep-20260910-weathernext-techcrunch"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "weathernext3-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Google DeepMind and Google Research announced WeatherNext 3 on September 3, 2026, describing hourly forecasts informed by live geostationary satellite observations.",
+        "zhHans": "Google DeepMind 与 Google Research 于 2026 年 9 月 3 日发布 WeatherNext 3，并描述其按小时生成、由实时地球静止卫星观测数据驱动的预报。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-weathernext-google",
+        "sweep-20260910-weathernext-techcrunch"
+      ]
+    },
+    {
+      "id": "weathernext3-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Google says the model began powering weather experiences in Search, Gemini, Maps, Google Maps Platform, Earth Engine, and cloud data services.",
+        "zhHans": "Google 称该模型开始为 Search、Gemini、Maps、Google Maps Platform、Earth Engine 及云数据服务提供天气能力。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-weathernext-google",
+        "sweep-20260910-weathernext-techcrunch"
+      ]
+    },
+    {
+      "id": "weathernext3-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Google's accuracy comparisons are not a universal independent validation, and the company says WeatherNext must not be used as a sole source of official weather or safety guidance.",
+        "zhHans": "Google 的准确率比较并非普遍的独立验证；公司也表示，WeatherNext 不能作为官方天气或安全指导的唯一来源。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-weathernext-google",
+        "sweep-20260910-weathernext-techcrunch"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260910-weathernext-google",
+      "supports": [
+        "google-weathernext-3-2026"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260910-weathernext-techcrunch",
+      "supports": [
+        "google-weathernext-3-2026"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "alphaevolve-2025"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-10",
+    "updatedAt": "2026-09-10",
+    "reviewedAt": "2026-09-10",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-10",
+    "reviewNotes": "L1. Records an announced research-to-product rollout, while attributing all performance comparisons and preserving the official-weather limitation.",
+    "changeLog": [
+      {
+        "date": "2026-09-10",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-10 confirmation sweep."
+      }
+    ],
+    "publishedAt": "2026-09-10"
+  }
+}

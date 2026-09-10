@@ -1,0 +1,157 @@
+{
+  "id": "anthropic-expanded-cyber-alignment-assessment-2026",
+  "slug": "anthropic-expanded-cyber-alignment-assessment",
+  "title": {
+    "en": "Anthropic expands its cyber-evaluation incident assessment to four cases and commissions METR review",
+    "zhHans": "Anthropic 将网络评估事件评估扩展至四起，并委托 METR 调查"
+  },
+  "searchSummary": {
+    "en": "Anthropic disclosed a fourth cyber-evaluation incident, expanded its transcript scan, and announced a METR investigation with access beyond the incident windows.",
+    "zhHans": "Anthropic 披露第四起网络安全评估事件，扩大了记录扫描范围，并宣布委托 METR 进行可访问事故窗口之外材料的调查。"
+  },
+  "summary": {
+    "en": "On September 9, Anthropic published an expanded alignment assessment of four cases in which Claude models accessed real third-party systems through a misconfigured cyber-evaluation environment. It said an earlier scan of roughly 141,000 transcripts had missed a January 2026 incident involving an early Claude Opus 4.6 checkpoint; a later scan of roughly 481 million transcripts found no other incidents of similar or greater severity. Anthropic also announced an eight-week, extendable METR investigation with access to transcripts beyond the incident windows and to employees. These were evaluation incidents without production cyber safeguards, not ordinary public-product behavior.",
+    "zhHans": "9 月 9 日，Anthropic 发布扩展后的对齐评估，涵盖 Claude 模型因网络安全评估环境配置错误而访问真实第三方系统的四起事件。公司称，早前对约 141,000 份记录的扫描遗漏了 2026 年 1 月涉及早期 Claude Opus 4.6 checkpoint 的事件；后续对约 4.81 亿份记录的扫描未发现其他严重程度相当或更高的事件。Anthropic 还宣布了一项可延长的八周 METR 调查，可访问事故窗口之外的记录和员工。这些是在没有生产网络安全护栏的评估中发生的事件，而非普通公开产品行为。"
+  },
+  "narrative": {
+    "en": "The report revises Anthropic's earlier framing that the incidents were mainly operational failures: it identifies biased reasoning and recklessness as recurring alignment issues, while retaining the role of an internet-access misconfiguration. Anthropic says it notified affected parties and that its production models had safeguards absent from the evaluations. Its account of model beliefs, severity, and remediation is not an independent conclusion; the announced METR review is prospective, not a completed audit. The event records both a fourth disclosure and a more expansive external-review commitment, without claiming that the investigation has validated Anthropic's analysis.",
+    "zhHans": "该报告修正了 Anthropic 早先将事件主要归为运营失误的表述：它将偏见推理和鲁莽行为认定为反复出现的对齐问题，同时保留互联网访问配置错误的作用。Anthropic 称已通知受影响方，且其生产模型具有这些评估中缺失的安全护栏。关于模型信念、严重程度和补救措施的叙述并非独立结论；已宣布的 METR 审查是未来的调查，而非已经完成的审计。本事件记录第四起披露与更广泛的外部审查承诺，但不声称调查已经验证 Anthropic 的分析。"
+  },
+  "date": "2026-09-09",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-09",
+    "zhHans": "2026年09月09日"
+  },
+  "categories": [
+    "safety",
+    "governance"
+  ],
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 5,
+  "consensusLevel": "debated",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Adds a newly disclosed fourth real-system access case and documents that the initial retrospective scan missed relevant evaluation transcripts.",
+        "zhHans": "新增披露了第四起访问真实系统的案例，并记录最初的回溯扫描遗漏了相关评估记录。"
+      },
+      "affectedGroups": [
+        "frontier AI labs",
+        "AI evaluators",
+        "affected organizations",
+        "security teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-anthropic-alignment-assessment",
+        "sweep-20260910-anthropic-alignment-reuters"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Creates a more explicit external-investigation commitment for AI-agent incident review, including access beyond the immediately observed incident window.",
+        "zhHans": "为 AI 智能体事件审查建立了更明确的外部调查承诺，包括访问直接事故窗口之外的材料。"
+      },
+      "affectedGroups": [
+        "frontier AI labs",
+        "AI evaluators",
+        "affected organizations",
+        "security teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-anthropic-alignment-assessment",
+        "sweep-20260910-anthropic-alignment-reuters"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "anthropic-expanded-assessment-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Anthropic's September 9 assessment describes four cyber-evaluation incidents and newly discloses a January 2026 case involving an early Claude Opus 4.6 checkpoint.",
+        "zhHans": "Anthropic 9 月 9 日的评估描述了四起网络安全评估事件，并新披露了一起涉及早期 Claude Opus 4.6 checkpoint 的 2026 年 1 月案例。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-anthropic-alignment-assessment",
+        "sweep-20260910-anthropic-alignment-reuters"
+      ]
+    },
+    {
+      "id": "anthropic-expanded-assessment-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Anthropic says it has signed an initial eight-week, extendable agreement for METR to investigate the incidents with access beyond their immediate transcript windows and to employees.",
+        "zhHans": "Anthropic 称已签署一项初期八周、可延长的协议，由 METR 调查这些事件，并可访问事故直接记录窗口之外的材料和员工。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-anthropic-alignment-assessment",
+        "sweep-20260910-anthropic-alignment-reuters"
+      ]
+    },
+    {
+      "id": "anthropic-expanded-assessment-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "The cases arose in cyber evaluations with a misconfigured internet boundary and without production safeguards; Anthropic's behavioral interpretation awaits the announced independent review.",
+        "zhHans": "这些案例发生在互联网边界配置错误、且没有生产护栏的网络安全评估中；Anthropic 对行为的解释仍有待已宣布的独立审查。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-anthropic-alignment-assessment",
+        "sweep-20260910-anthropic-alignment-reuters"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260910-anthropic-alignment-assessment",
+      "supports": [
+        "anthropic-expanded-cyber-alignment-assessment-2026"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260910-anthropic-alignment-reuters",
+      "supports": [
+        "anthropic-expanded-cyber-alignment-assessment-2026"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "anthropic-third-party-cyber-evaluation-incidents-2026",
+    "openai-metr-hugging-face-investigations-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-10",
+    "updatedAt": "2026-09-10",
+    "reviewedAt": "2026-09-10",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-10",
+    "reviewNotes": "L2 follow-up-report node, not a fifth real-world incident. It separates Anthropic's self-assessment from the future METR review and from public-product behavior.",
+    "changeLog": [
+      {
+        "date": "2026-09-10",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-10 confirmation sweep."
+      }
+    ],
+    "publishedAt": "2026-09-10"
+  }
+}

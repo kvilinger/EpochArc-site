@@ -1,0 +1,156 @@
+{
+  "id": "deepmind-alphagenome-atlas-2026",
+  "slug": "deepmind-alphagenome-atlas",
+  "title": {
+    "en": "Google DeepMind releases AlphaGenome Atlas for predicted effects of nine billion DNA variants",
+    "zhHans": "Google DeepMind 发布预测 90 亿 DNA 变异效应的 AlphaGenome Atlas"
+  },
+  "searchSummary": {
+    "en": "Google DeepMind released AlphaGenome Atlas, a public research resource with precomputed predicted molecular effects for roughly nine billion possible single-letter changes in the human genome.",
+    "zhHans": "Google DeepMind 发布 AlphaGenome Atlas：一个面向研究的公开资源，为人类基因组中约 90 亿种可能的单字母变化预先计算分子效应预测。"
+  },
+  "summary": {
+    "en": "Google DeepMind released AlphaGenome Atlas on September 8, a roughly one-petabyte resource that precomputes AlphaGenome predictions for nine billion possible single-nucleotide variants and provides an AlphaGenome Variant Impact score. The company made a portal and API available for research use. Nature reports that the resource lowers the computational barrier to examining coding and non-coding variants and includes early collaborator examples. The Atlas contains model predictions, not experimentally established effects or clinical diagnoses.",
+    "zhHans": "Google DeepMind 于 9 月 8 日发布 AlphaGenome Atlas：这是一项约 1 PB 的资源，为 90 亿种可能的单核苷酸变异预先计算 AlphaGenome 预测，并提供 AlphaGenome Variant Impact 评分。公司为研究用途开放了门户和 API。Nature 报道称，该资源降低了研究编码与非编码变异的计算门槛，并包含早期合作方案例。Atlas 中的是模型预测，而非实验已经确定的效应或临床诊断。"
+  },
+  "narrative": {
+    "en": "AlphaGenome Atlas extends an existing variant-effect model by making results queryable instead of requiring researchers to run inference variant by variant. Nature reports external researchers' view that the resource can be useful for exploring genetic mechanisms and rare disease, while stressing that it cannot replace experiments or individual clinical assessment. Google likewise says the resource is not validated or approved for clinical use. The event is therefore a research-access and hypothesis-prioritization release, not evidence that the model can diagnose disease or establish causality on its own.",
+    "zhHans": "AlphaGenome Atlas 在既有变异效应模型基础上，将结果变为可查询资源，而无需研究者逐个变异运行推理。Nature 报道外部研究者认为它可用于探索遗传机制和罕见病，但强调不能取代实验或个体临床评估。Google 同样表示该资源未经临床验证或批准。因此，这一事件是研究访问与假设优先排序资源的发布，而非模型能够自行诊断疾病或确立因果关系的证据。"
+  },
+  "date": "2026-09-08",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-08",
+    "zhHans": "2026年09月08日"
+  },
+  "categories": [
+    "capability"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 6,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Makes genome-wide predicted molecular-effect data queryable across coding and non-coding single-nucleotide variants.",
+        "zhHans": "使覆盖编码与非编码单核苷酸变异的全基因组预测分子效应数据可被查询。"
+      },
+      "affectedGroups": [
+        "genomics researchers",
+        "rare-disease researchers",
+        "computational biologists",
+        "research institutions"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-alphagenome-atlas-google",
+        "sweep-20260910-alphagenome-atlas-nature"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Reduces the need to run a large model for each candidate variant by releasing a research portal and API with precomputed predictions.",
+        "zhHans": "通过发布带有预计算预测的研究门户和 API，减少了为每个候选变异运行大型模型的需求。"
+      },
+      "affectedGroups": [
+        "genomics researchers",
+        "rare-disease researchers",
+        "computational biologists",
+        "research institutions"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-alphagenome-atlas-google",
+        "sweep-20260910-alphagenome-atlas-nature"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "alphagenome-atlas-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Google DeepMind released AlphaGenome Atlas on September 8 with precomputed predictions for roughly nine billion possible single-letter human-DNA variants and an impact-ranking score.",
+        "zhHans": "Google DeepMind 于 9 月 8 日发布 AlphaGenome Atlas，其中包含约 90 亿种可能的人类 DNA 单字母变异的预计算预测和影响排序评分。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-alphagenome-atlas-google",
+        "sweep-20260910-alphagenome-atlas-nature"
+      ]
+    },
+    {
+      "id": "alphagenome-atlas-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "The released portal and API turn model outputs into a resource that researchers can query without computing each candidate variant from scratch.",
+        "zhHans": "已发布的门户和 API 将模型输出转化为可查询资源，研究者不必从头计算每个候选变异。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-alphagenome-atlas-google",
+        "sweep-20260910-alphagenome-atlas-nature"
+      ]
+    },
+    {
+      "id": "alphagenome-atlas-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Atlas entries are predicted molecular effects, not clinical determinations; Google and independent researchers say laboratory validation and patient-specific assessment remain necessary.",
+        "zhHans": "Atlas 条目是预测的分子效应，而非临床判定；Google 与独立研究者均表示，实验验证和针对患者的评估仍然必要。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-alphagenome-atlas-google",
+        "sweep-20260910-alphagenome-atlas-nature"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260910-alphagenome-atlas-google",
+      "supports": [
+        "deepmind-alphagenome-atlas-2026"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260910-alphagenome-atlas-nature",
+      "supports": [
+        "deepmind-alphagenome-atlas-2026"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "alphafold-2020",
+    "alphaevolve-2025"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-10",
+    "updatedAt": "2026-09-10",
+    "reviewedAt": "2026-09-10",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-10",
+    "reviewNotes": "L1. Records a public research resource and its access model, not a clinical validation or a claimed diagnosis capability.",
+    "changeLog": [
+      {
+        "date": "2026-09-10",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-10 confirmation sweep."
+      }
+    ],
+    "publishedAt": "2026-09-10"
+  }
+}

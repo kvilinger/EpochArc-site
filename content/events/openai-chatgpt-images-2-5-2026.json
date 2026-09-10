@@ -1,0 +1,156 @@
+{
+  "id": "openai-chatgpt-images-2-5-2026",
+  "slug": "openai-chatgpt-images-2-5",
+  "title": {
+    "en": "OpenAI launches ChatGPT Images 2.5 and two GPT-Image API models",
+    "zhHans": "OpenAI 推出 ChatGPT Images 2.5 与两款 GPT-Image API 模型"
+  },
+  "searchSummary": {
+    "en": "OpenAI launched ChatGPT Images 2.5, adding sketching, templates, targeted editing, and new Flare and Sunburst API models for image generation and editing.",
+    "zhHans": "OpenAI 推出 ChatGPT Images 2.5，加入草图、模板和定向编辑功能，并提供新的 Flare 与 Sunburst 图像生成和编辑 API 模型。"
+  },
+  "summary": {
+    "en": "OpenAI launched ChatGPT Images 2.5 on September 8 for ChatGPT, ChatGPT Work, and Codex users, and announced GPT-Image-2.5 Flare and GPT-Image-2.5 Sunburst for the API. The release adds sketch-based generation, templates, image comments, and more targeted multi-turn editing. OpenAI says the models improve reference-subject preservation and lower latency by up to 50% relative to Images 2.0; Axios' early testing observed stronger editing controls but does not independently establish the company's broad performance claims.",
+    "zhHans": "OpenAI 于 9 月 8 日为 ChatGPT、ChatGPT Work 与 Codex 用户推出 ChatGPT Images 2.5，并为 API 发布 GPT-Image-2.5 Flare 和 GPT-Image-2.5 Sunburst。更新加入基于草图的生成、模板、图像评论及更有针对性的多轮编辑。OpenAI 称新模型改善了参考主体保留能力，并将相对 Images 2.0 的延迟最多降低 50%；Axios 的早期测试观察到更强的编辑控制，但不能独立证明公司广泛的性能主张。"
+  },
+  "narrative": {
+    "en": "The product release shifts emphasis from one-shot image generation toward iterative editing and reference fidelity. OpenAI says it continues to use prompt and image checks, C2PA metadata, and invisible watermarking; these are provider descriptions rather than independent safety audits. Axios' hands-on report found the new controls useful in limited tasks and also notes continuing ethical objections to generative-image training and use. The event records a released consumer and developer product update, not independent proof of image quality, copyright status, or safety effectiveness.",
+    "zhHans": "这次产品更新将重点从一次性图像生成转向迭代编辑与参考主体保真。OpenAI 称其继续使用提示词和图像检查、C2PA 元数据及不可见水印；这些属于厂商描述，而非独立安全审计。Axios 的上手报道认为新控制功能在有限任务中有用，同时指出生成式图像训练与使用仍存在伦理异议。本事件记录的是已发布的消费者和开发者产品更新，而不是对图像质量、版权状态或安全有效性的独立证明。"
+  },
+  "date": "2026-09-08",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-08",
+    "zhHans": "2026年09月08日"
+  },
+  "categories": [
+    "product",
+    "capability"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 4,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Adds public image-generation and editing features designed for more precise, iterative changes and reference-subject preservation.",
+        "zhHans": "增加了旨在实现更精确迭代修改与参考主体保留的公开图像生成和编辑功能。"
+      },
+      "affectedGroups": [
+        "ChatGPT users",
+        "creative professionals",
+        "developers",
+        "marketing teams"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-images25",
+        "sweep-20260910-openai-images25-axios"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Makes the announced workflow available through ChatGPT surfaces and two API model variants rather than only specialist imaging tools.",
+        "zhHans": "通过 ChatGPT 产品界面和两种 API 模型变体提供所宣布的工作流，而不只限于专业图像工具。"
+      },
+      "affectedGroups": [
+        "ChatGPT users",
+        "creative professionals",
+        "developers",
+        "marketing teams"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-images25",
+        "sweep-20260910-openai-images25-axios"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "images25-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "OpenAI launched ChatGPT Images 2.5 on September 8 and introduced GPT-Image-2.5 Flare and Sunburst for API use.",
+        "zhHans": "OpenAI 于 9 月 8 日推出 ChatGPT Images 2.5，并为 API 使用推出 GPT-Image-2.5 Flare 和 Sunburst。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-images25",
+        "sweep-20260910-openai-images25-axios"
+      ]
+    },
+    {
+      "id": "images25-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "The release adds sketching, templates, annotations, and targeted multi-turn image editing to the announced product workflow.",
+        "zhHans": "该更新在已宣布的产品工作流中加入草图、模板、标注与定向多轮图像编辑。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-images25",
+        "sweep-20260910-openai-images25-axios"
+      ]
+    },
+    {
+      "id": "images25-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "OpenAI's latency, quality, and safety claims are provider-reported, while independent coverage notes continuing ethical concerns around generative-image training and use.",
+        "zhHans": "OpenAI 的延迟、质量和安全主张来自厂商；独立报道同时指出生成式图像训练与使用仍有持续的伦理担忧。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-images25",
+        "sweep-20260910-openai-images25-axios"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260910-openai-images25",
+      "supports": [
+        "openai-chatgpt-images-2-5-2026"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260910-openai-images25-axios",
+      "supports": [
+        "openai-chatgpt-images-2-5-2026"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "gpt-image-2025"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-10",
+    "updatedAt": "2026-09-10",
+    "reviewedAt": "2026-09-10",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-10",
+    "reviewNotes": "L1. Product release only. Vendor claims about latency, quality, and safeguards remain attributed; no claim of independently settled copyright or safety performance.",
+    "changeLog": [
+      {
+        "date": "2026-09-10",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-10 confirmation sweep."
+      }
+    ],
+    "publishedAt": "2026-09-10"
+  }
+}

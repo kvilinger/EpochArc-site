@@ -1,0 +1,162 @@
+{
+  "id": "openai-navier-stokes-proposed-proof-2026",
+  "slug": "openai-navier-stokes-proposed-proof",
+  "title": {
+    "en": "OpenAI releases a proposed Navier–Stokes proof produced by a multi-agent system",
+    "zhHans": "OpenAI 发布由多智能体系统产生的 Navier–Stokes 拟议证明"
+  },
+  "searchSummary": {
+    "en": "OpenAI released an analytical proof and Lean formalization that it says establishes a finite-time singularity for a smooth forced three-dimensional Navier–Stokes flow; external mathematical scrutiny remains ongoing.",
+    "zhHans": "OpenAI 发布了一份分析证明和 Lean 形式化，称其证明平滑受迫三维 Navier–Stokes 流可在有限时间内出现奇点；外部数学审查仍在进行。"
+  },
+  "summary": {
+    "en": "On September 8, OpenAI released a proposed analytical proof and Lean formalization produced by an internal multi-agent system. OpenAI says the result establishes a finite-time singularity for an initially smooth, forced three-dimensional Navier–Stokes flow with finite energy, satisfying statements C and D in the Clay formulation. Quanta Magazine reports that formal checking and expert reactions make the release significant, but also says the mathematical significance and priority questions need further scrutiny. This is a proposed proof and public evidence package, not a settled or prize-certified result.",
+    "zhHans": "9 月 8 日，OpenAI 发布了一份由内部多智能体系统产生的拟议分析证明及 Lean 形式化。OpenAI 称，该结果证明一个初始平滑、受外力作用且能量有限的三维 Navier–Stokes 流可在有限时间内出现奇点，并满足 Clay 表述中的 C 与 D 命题。Quanta Magazine 报道称，形式化检查和专家反应使这次发布具有重要性，但数学意义及优先权问题仍需进一步审查。这是一份拟议证明与公开证据包，而非已尘埃落定或已获奖项认证的结果。"
+  },
+  "narrative": {
+    "en": "OpenAI says approximately 10,000 concurrent agents using an unreleased internal model reached the result after about 88 hours, followed by GPT-6 Astra's Lean formalization. The company says it does not intend to claim the Millennium Prize. Quanta notes that Lean checking establishes the stated formal theorem only once mathematicians establish that the formal statement matches the intended problem and that the analytic setup is sound. Concurrent work and questions about research priority have also become public; OpenAI denies accessing specific user data but says it cannot rule out that de-identified product data improved its models. The record should describe the result as proposed pending independent mathematical review, not announce that the Millennium problem is finally solved.",
+    "zhHans": "OpenAI 称，约 10,000 个并发智能体使用一款未发布的内部模型，在约 88 小时后得到该结果，随后由 GPT-6 Astra 进行 Lean 形式化。公司表示无意申请 Millennium Prize。Quanta 指出，Lean 检查只有在数学家确认形式化命题对应预期问题、且分析设置可靠后，才能确立所声明的形式定理。并行研究和优先权问题也已公开；OpenAI 否认访问特定用户数据，但表示不能排除去标识化产品数据曾帮助改进模型。记录应将该结果表述为等待独立数学审查的拟议证明，而非宣布 Millennium 问题已最终解决。"
+  },
+  "date": "2026-09-08",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-08",
+    "zhHans": "2026年09月08日"
+  },
+  "categories": [
+    "capability"
+  ],
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 6,
+  "consensusLevel": "debated",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Publishes a large-scale agentic research attempt with an analytical writeup and a machine-checked formalization for external mathematical inspection.",
+        "zhHans": "发布了一次大规模智能体研究尝试，包含分析性论文与可供外部数学审查的机器检查形式化证明。"
+      },
+      "affectedGroups": [
+        "mathematicians",
+        "AI research labs",
+        "formal-methods researchers",
+        "scientific institutions"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-navier",
+        "sweep-20260910-openai-navier-quanta"
+      ]
+    },
+    {
+      "dimension": "paradigm_shift",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Makes multi-agent search, formal proof tooling, research credit, and external review salient parts of a high-profile AI-assisted mathematics release.",
+        "zhHans": "使多智能体搜索、形式化证明工具、研究署名和外部审查成为一次高关注度 AI 辅助数学发布中的显著议题。"
+      },
+      "affectedGroups": [
+        "mathematicians",
+        "AI research labs",
+        "formal-methods researchers",
+        "scientific institutions"
+      ],
+      "timeframe": "long",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-navier",
+        "sweep-20260910-openai-navier-quanta"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "openai-navier-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "OpenAI released an analytical writeup and Lean formalization that it says establishes a finite-time singularity for a smooth forced three-dimensional Navier–Stokes flow.",
+        "zhHans": "OpenAI 发布了一份分析性论文和 Lean 形式化，称其证明平滑受迫三维 Navier–Stokes 流会在有限时间内出现奇点。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-navier",
+        "sweep-20260910-openai-navier-quanta"
+      ]
+    },
+    {
+      "id": "openai-navier-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "OpenAI says an internal system used on the order of 10,000 concurrent agents and a subsequent Lean formalization; the release has prompted specialist discussion of AI-assisted mathematical research and verification.",
+        "zhHans": "OpenAI 称其内部系统使用了约 10,000 个并发智能体，随后进行了 Lean 形式化；这次发布引发了对 AI 辅助数学研究与验证的专业讨论。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-openai-navier",
+        "sweep-20260910-openai-navier-quanta"
+      ]
+    },
+    {
+      "id": "openai-navier-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "The result has not been certified by the Clay Mathematics Institute or settled by independent peer review, and public discussion includes unresolved questions about mathematical scope and research priority.",
+        "zhHans": "该结果尚未获 Clay Mathematics Institute 认证，也尚未通过独立同行评审而尘埃落定；公开讨论仍包含数学适用范围和研究优先权的未解问题。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-clay-navier",
+        "sweep-20260910-openai-navier-quanta"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260910-openai-navier",
+      "supports": [
+        "openai-navier-stokes-proposed-proof-2026"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260910-openai-navier-quanta",
+      "supports": [
+        "openai-navier-stokes-proposed-proof-2026"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260910-clay-navier",
+      "supports": [
+        "openai-navier-stokes-proposed-proof-2026"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "openai-astra-mathematics-2026",
+    "alphaevolve-2025"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-10",
+    "updatedAt": "2026-09-10",
+    "reviewedAt": "2026-09-10",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-10",
+    "reviewNotes": "Provisional L2. The event records a public proposed proof and formalization, not an accepted Millennium Prize solution. Source wording intentionally avoids saying the problem is settled.",
+    "changeLog": [
+      {
+        "date": "2026-09-10",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-10 confirmation sweep."
+      }
+    ],
+    "publishedAt": "2026-09-10"
+  }
+}

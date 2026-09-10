@@ -1,0 +1,157 @@
+{
+  "id": "meta-muse-personal-agent-2026",
+  "slug": "meta-muse-personal-agent",
+  "title": {
+    "en": "Meta launches Muse, a U.S. consumer personal AI agent",
+    "zhHans": "Meta 在美国推出消费者个人 AI 智能体 Muse"
+  },
+  "searchSummary": {
+    "en": "Meta launched Muse, a U.S.-only personal agent that can connect to user-selected services, work across browser and app tasks, and request approval for sensitive actions.",
+    "zhHans": "Meta 推出仅限美国的个人智能体 Muse，可连接用户选择的服务，跨浏览器与应用执行任务，并在敏感操作前请求批准。"
+  },
+  "summary": {
+    "en": "Meta launched Muse on September 8 as a U.S. consumer personal agent for web, iOS, Android, and WhatsApp. Meta says the agent, powered by Muse Spark, can work on tasks such as email, travel, forms, and purchases, and can continue work after the user leaves the app. Meta describes a dedicated Muse Secure VM and a separate Sentinel agent intended to gate internet actions and request approval for sensitive steps. Independent coverage confirms the initial U.S. product rollout and identifies trust, privacy, and adoption as unresolved questions.",
+    "zhHans": "Meta 于 9 月 8 日将 Muse 作为美国消费者个人智能体推出，覆盖网页、iOS、Android 和 WhatsApp。Meta 称，该智能体由 Muse Spark 驱动，可处理邮件、旅行、表单和购买等任务，并能在用户离开应用后继续工作。Meta 描述了专用 Muse Secure VM 与独立 Sentinel 智能体，旨在审核互联网操作，并在敏感步骤前请求批准。独立报道确认了初始美国产品发布，并将信任、隐私和采用情况列为未解问题。"
+  },
+  "narrative": {
+    "en": "Muse represents a move from Meta's earlier assistant features toward a separate consumer agent that can retain context, use connected services, and initiate actions. Its initial scope is limited to the United States, and Meta's claimed privacy and security properties have not been independently audited in the reviewed sources. TechCrunch notes that the product asks users to connect high-sensitivity services such as email, calendars, payments, health, shopping, and browser-accessed accounts. The event should therefore distinguish an announced, opt-in product architecture from evidence of reliable autonomy, secure implementation, or broad consumer adoption.",
+    "zhHans": "Muse 代表 Meta 从此前的助手功能转向一个独立的消费者智能体：它可保留上下文、使用已连接服务并发起操作。其初始范围限于美国，且所审查来源尚未对 Meta 声称的隐私与安全特性进行独立审计。TechCrunch 指出，该产品要求用户连接邮件、日历、支付、健康、购物和通过浏览器访问的账户等高敏感服务。因此，事件应区分已宣布的、选择加入的产品架构，与可靠自主性、安全实现或广泛消费者采用的证据。"
+  },
+  "date": "2026-09-08",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-08",
+    "zhHans": "2026年09月08日"
+  },
+  "categories": [
+    "product",
+    "society"
+  ],
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Introduces a consumer-facing agent designed to act across selected everyday services rather than only answer prompts, subject to its U.S. rollout and access controls.",
+        "zhHans": "在美国发布范围和访问控制的前提下，引入一款面向消费者、旨在跨已选择日常服务执行操作而不只是回答提示词的智能体。"
+      },
+      "affectedGroups": [
+        "consumer users",
+        "service providers",
+        "payment platforms",
+        "privacy and security teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-meta-muse",
+        "sweep-20260910-meta-muse-techcrunch"
+      ]
+    },
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "Expands the privacy, authorization, and reliability stakes of consumer agents by asking users to connect sensitive accounts and allow delegated actions.",
+        "zhHans": "通过要求用户连接敏感账户并允许委托操作，扩大了消费者智能体在隐私、授权和可靠性方面的风险边界。"
+      },
+      "affectedGroups": [
+        "consumer users",
+        "service providers",
+        "payment platforms",
+        "privacy and security teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-meta-muse",
+        "sweep-20260910-meta-muse-techcrunch"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "meta-muse-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Meta launched Muse on September 8, 2026 for users in the United States across the web, iOS, Android, and WhatsApp.",
+        "zhHans": "Meta 于 2026 年 9 月 8 日在美国面向网页、iOS、Android 和 WhatsApp 用户推出 Muse。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-meta-muse",
+        "sweep-20260910-meta-muse-techcrunch"
+      ]
+    },
+    {
+      "id": "meta-muse-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Meta says Muse can work across user-selected connected services and uses a dedicated VM plus a separate Sentinel agent for approval and action gating.",
+        "zhHans": "Meta 称 Muse 可跨用户选择连接的服务工作，并使用专用 VM 和独立 Sentinel 智能体进行批准与操作审核。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-meta-muse",
+        "sweep-20260910-meta-muse-techcrunch"
+      ]
+    },
+    {
+      "id": "meta-muse-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "The rollout is initially U.S.-only, and Meta's security and privacy architecture has not been independently audited in the reviewed materials; consumer trust and sustained use remain unproven.",
+        "zhHans": "该发布初期仅限美国，且所审查材料尚未对 Meta 的安全与隐私架构进行独立审计；消费者信任和持续使用仍未得到证明。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260910-meta-muse",
+        "sweep-20260910-meta-muse-techcrunch"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260910-meta-muse",
+      "supports": [
+        "meta-muse-personal-agent-2026"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260910-meta-muse-techcrunch",
+      "supports": [
+        "meta-muse-personal-agent-2026"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "meta-muse-spark-1-3-2026",
+    "openai-operator-2025"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-10",
+    "updatedAt": "2026-09-10",
+    "reviewedAt": "2026-09-10",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-10",
+    "reviewNotes": "Provisional L2. Records a concrete U.S. consumer-agent launch, not demonstrated adoption or independently audited safety/security performance.",
+    "changeLog": [
+      {
+        "date": "2026-09-10",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-10 confirmation sweep."
+      }
+    ],
+    "publishedAt": "2026-09-10"
+  }
+}
