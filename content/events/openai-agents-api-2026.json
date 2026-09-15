@@ -1,0 +1,164 @@
+{
+  "id": "openai-agents-api-2026",
+  "slug": "openai-agents-api-2026",
+  "title": {
+    "en": "OpenAI releases the Agents API in public beta",
+    "zhHans": "OpenAI 以公开测试版发布 Agents API"
+  },
+  "searchSummary": {
+    "en": "OpenAI released the Agents API in public beta, exposing the Codex harness with hosted, self-hosted, and partner sandbox options for long-running agents.",
+    "zhHans": "OpenAI 以公开测试版发布 Agents API，提供基于 Codex harness 的托管、自托管和合作伙伴 sandbox 选项，以运行长时任务智能体。"
+  },
+  "summary": {
+    "en": "On September 10, OpenAI released the Agents API in public beta to all developers. The API exposes the harness behind Codex and supports OpenAI-hosted, self-hosted, and partner sandboxes, with context compaction, tool search, programmatic tool calling, MCP, and parallel subagents. OpenAI says there is no additional Agents API fee, while model, tool, and sandbox usage is billed separately at applicable rates.",
+    "zhHans": "9 月 10 日，OpenAI 向所有开发者公开测试版发布 Agents API。该 API 开放 Codex 背后的 harness，支持 OpenAI 托管、自托管和合作伙伴 sandbox，并内置上下文压缩、工具搜索、程序化工具调用、MCP 和并行子智能体。OpenAI 称 Agents API 本身不收取额外费用，但模型、工具和 sandbox 使用按适用费率另行计费。"
+  },
+  "narrative": {
+    "en": "The release moves several pieces of an agent runtime behind a managed API boundary. Developers select the model, tools, and environment while OpenAI maintains the harness and versioned improvements. The independent review notes that the beta documentation still carries operational constraints, including U.S.-only Agents API data residency, separate sandbox charges, default network and subagent settings, and data-control boundaries. OpenAI's phrase 'production-ready agent' describes the product's positioning; it does not establish reliability or adoption across customers.",
+    "zhHans": "这次发布将智能体运行时的多个组件置于托管 API 边界之后。开发者选择模型、工具和环境，OpenAI 负责维护 harness 及其版本化改进。独立评测指出，测试版文档仍包含运营限制，包括 Agents API 仅支持美国数据驻留、sandbox 单独计费、网络和子智能体的默认设置以及数据控制边界。OpenAI 所说的“production-ready agent”是产品定位，不代表已证明跨客户的可靠性或采用程度。"
+  },
+  "date": "2026-09-10",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-10",
+    "zhHans": "2026年9月10日"
+  },
+  "categories": [
+    "product",
+    "capability"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Provides a public API for long-running sessions that combine context management, tools, environments, and parallel subagents behind a managed harness.",
+        "zhHans": "提供公开 API，使长时会话可以在托管 harness 中结合上下文管理、工具、环境和并行子智能体。"
+      },
+      "affectedGroups": [
+        "developers",
+        "AI application builders",
+        "enterprise teams",
+        "AI infrastructure providers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-openai-agents-official",
+        "sweep-20260915-openai-agents-marktechpost"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Lowers the integration work required to test agent workflows by exposing OpenAI's Codex-oriented runtime and multiple sandbox choices through a single public-beta interface.",
+        "zhHans": "通过单一公开测试版接口开放面向 Codex 的运行时和多种 sandbox 选择，降低了测试智能体工作流所需的集成工作。"
+      },
+      "affectedGroups": [
+        "developers",
+        "AI application builders",
+        "enterprise teams",
+        "AI infrastructure providers"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-openai-agents-official",
+        "sweep-20260915-openai-agents-marktechpost"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "openai-agents-api-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "OpenAI released the Agents API to all developers in public beta on September 10, exposing the harness and infrastructure behind Codex.",
+        "zhHans": "OpenAI 于 9 月 10 日向所有开发者以公开测试版发布 Agents API，开放 Codex 背后的 harness 和基础设施。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-openai-agents-official",
+        "sweep-20260915-openai-agents-marktechpost"
+      ]
+    },
+    {
+      "id": "openai-agents-api-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "The API supports OpenAI-hosted, self-hosted, and partner sandboxes, plus context compaction, tool search, programmatic tool calling, MCP, and parallel subagents.",
+        "zhHans": "该 API 支持 OpenAI 托管、自托管和合作伙伴 sandbox，并提供上下文压缩、工具搜索、程序化工具调用、MCP 和并行子智能体。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-openai-agents-official",
+        "sweep-20260915-openai-agents-marktechpost"
+      ]
+    },
+    {
+      "id": "openai-agents-api-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "The release remains a public beta; residency, sandbox billing, network defaults, subagent limits, and data controls are implementation constraints rather than settled production guarantees.",
+        "zhHans": "该发布仍是公开测试版；数据驻留、sandbox 计费、网络默认设置、子智能体限制和数据控制都是实现层约束，而不是已经确定的生产保证。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-openai-agents-official",
+        "sweep-20260915-openai-agents-marktechpost"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260915-openai-agents-official",
+      "supports": [
+        "openai-agents-api-2026",
+        "openai-agents-api-fact",
+        "openai-agents-api-impact",
+        "openai-agents-api-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-openai-agents-marktechpost",
+      "supports": [
+        "openai-agents-api-2026",
+        "openai-agents-api-fact",
+        "openai-agents-api-impact",
+        "openai-agents-api-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "openai-gpt-6-astra-2026",
+    "openai-wiki-agent-coordination-disclosure-2026",
+    "deepmind-autonomous-research-swarm-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "reviewedAt": "2026-09-15",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-15",
+    "reviewNotes": "L1 public-beta runtime release. Beta limits and independent technical caveats remain visible; provider customer outcomes are not generalized.",
+    "changeLog": [
+      {
+        "date": "2026-09-15",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-15 confirmation layer."
+      }
+    ],
+    "publishedAt": "2026-09-15"
+  }
+}

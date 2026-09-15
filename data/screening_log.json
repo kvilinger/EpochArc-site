@@ -6198,6 +6198,900 @@
           }
         }
       }
+    },
+    {
+      "candidateId": "anthropic-threat-report-20260910",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "anthropic-threat-intelligence-report-2026",
+      "eventName": "Anthropic September threat report",
+      "eventDate": "2026-09-10",
+      "categories": [
+        "safety",
+        "governance"
+      ],
+      "source": "Anthropic and The Guardian",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L2 report node; operational details, attribution, and disruption claims remain Anthropic's account rather than an external audit.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "Anthropic September threat report primary source date release filing",
+          "impact": "Anthropic September threat report documented product infrastructure safety or market impact",
+          "analysis": "Anthropic September threat report independent coverage benchmark or technical analysis",
+          "controversy": "Anthropic September threat report limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Anthropic published the September threat-intelligence report and described seven harm areas.",
+            "sourceUrls": [
+              "https://www.anthropic.com/threat-intelligence-report-september-2026"
+            ]
+          },
+          "impact": {
+            "finding": "The report covers cyber operations, influence, surveillance, scams and fraud, biological misuse, weapons, and illicit distillation.",
+            "sourceUrls": [
+              "https://www.anthropic.com/threat-intelligence-report-september-2026"
+            ]
+          },
+          "analysis": {
+            "finding": "The Guardian independently confirms the publication and broad misuse themes.",
+            "sourceUrls": [
+              "https://www.theguardian.com/technology/2026/sep/10/anthropic-report-details-ai-misuse"
+            ]
+          },
+          "controversy": {
+            "finding": "The report is a company disclosure and does not independently establish prevalence or every attribution.",
+            "sourceUrls": [
+              "https://www.anthropic.com/threat-intelligence-report-september-2026",
+              "https://www.theguardian.com/technology/2026/sep/10/anthropic-report-details-ai-misuse"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "openai-rubygems-gemstuffer-20260911",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "openai-rubygems-gemstuffer-2026",
+      "eventName": "OpenAI agents and RubyGems GemStuffer campaign",
+      "eventDate": "2026-09-11",
+      "categories": [
+        "safety",
+        "governance"
+      ],
+      "source": "Nightingale Collective, RubyGems, and The Guardian",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L2 safety/governance node; researcher attribution and attempted credential theft are bounded by RubyGems' uncertainty and negative finding.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI agents and RubyGems GemStuffer campaign primary source date release filing",
+          "impact": "OpenAI agents and RubyGems GemStuffer campaign documented product infrastructure safety or market impact",
+          "analysis": "OpenAI agents and RubyGems GemStuffer campaign independent coverage benchmark or technical analysis",
+          "controversy": "OpenAI agents and RubyGems GemStuffer campaign limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Nightingale published a reconstruction of the May campaign; RubyGems confirmed the defensive response but not AI authorship.",
+            "sourceUrls": [
+              "https://rubyhack.ai/",
+              "https://blog.rubygems.org/2026/09/11/update-may-spam-publishing-campaign.html"
+            ]
+          },
+          "impact": {
+            "finding": "RubyGems paused registrations, blocked accounts, and yanked more than 500 malicious packages.",
+            "sourceUrls": [
+              "https://blog.rubygems.org/2026/09/11/update-may-spam-publishing-campaign.html"
+            ]
+          },
+          "analysis": {
+            "finding": "The Guardian reports the researcher's attribution, package activity, and OpenAI's response.",
+            "sourceUrls": [
+              "https://www.theguardian.com/technology/2026/sep/11/openai-agents-rubygems-malicious-packages"
+            ]
+          },
+          "controversy": {
+            "finding": "RubyGems says it cannot determine whether AI agents created or published the packages and found no evidence the key attempts succeeded.",
+            "sourceUrls": [
+              "https://blog.rubygems.org/2026/09/11/update-may-spam-publishing-campaign.html",
+              "https://rubyhack.ai/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "deepseek-v41-flash-20260910",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "deepseek-v4-1-flash-2026",
+      "eventName": "DeepSeek V4.1-Flash",
+      "eventDate": "2026-09-10",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "DeepSeek, Vals, and Artificial Analysis",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L1 model release; official and independent benchmark settings remain separate, and the V4 Pro continuation correction follows the official API changelog.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "DeepSeek V4.1-Flash primary source date release filing",
+          "impact": "DeepSeek V4.1-Flash documented product infrastructure safety or market impact",
+          "analysis": "DeepSeek V4.1-Flash independent coverage benchmark or technical analysis",
+          "controversy": "DeepSeek V4.1-Flash limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "DeepSeek released V4.1-Flash with a 552B backbone, native multimodal input, and a 1M-token context window.",
+            "sourceUrls": [
+              "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+              "https://api-docs.deepseek.com/updates/"
+            ]
+          },
+          "impact": {
+            "finding": "The API changelog records legacy Flash routing and Vals reports separate independent benchmark measurements.",
+            "sourceUrls": [
+              "https://api-docs.deepseek.com/updates/",
+              "https://www.vals.ai/models/deepseek_deepseek-v4.1-flash"
+            ]
+          },
+          "analysis": {
+            "finding": "Vals and Artificial Analysis provide independent evaluation context with harness-specific methods.",
+            "sourceUrls": [
+              "https://www.vals.ai/models/deepseek_deepseek-v4.1-flash",
+              "https://artificialanalysis.ai/models/deepseek-v4-1-flash"
+            ]
+          },
+          "controversy": {
+            "finding": "The benchmark results do not establish a universal ranking across all tasks, and the model-card capture carries a date discrepancy.",
+            "sourceUrls": [
+              "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+              "https://www.vals.ai/models/deepseek_deepseek-v4.1-flash"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "openai-financial-services-20260910",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "openai-financial-services-2026",
+      "eventName": "OpenAI ChatGPT for Financial Services",
+      "eventDate": "2026-09-10",
+      "categories": [
+        "product",
+        "commerce"
+      ],
+      "source": "OpenAI and CNBC",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "L1 enterprise product; design partners and provider-reported evaluations are not broad adoption or independent performance evidence.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI ChatGPT for Financial Services primary source date release filing",
+          "impact": "OpenAI ChatGPT for Financial Services documented product infrastructure safety or market impact",
+          "analysis": "OpenAI ChatGPT for Financial Services independent coverage benchmark or technical analysis",
+          "controversy": "OpenAI ChatGPT for Financial Services limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI introduced a tailored ChatGPT Work experience with Morgan Stanley and Evercore as design partners.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-chatgpt-financial-services/"
+            ]
+          },
+          "impact": {
+            "finding": "The product combines GPT-6 Astra, built-in financial data, citations, access controls, and firm templates.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-chatgpt-financial-services/"
+            ]
+          },
+          "analysis": {
+            "finding": "CNBC reports the initial investment-banking and equity-research focus and the limited disclosed customer list.",
+            "sourceUrls": [
+              "https://www.cnbc.com/2026/09/10/openai-chatgpt-for-financial-services-targets-work-of-junior-bankers.html"
+            ]
+          },
+          "controversy": {
+            "finding": "The announcement does not establish broad deployment or replacement of junior banking roles.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-chatgpt-financial-services/",
+              "https://www.cnbc.com/2026/09/10/openai-chatgpt-for-financial-services-targets-work-of-junior-bankers.html"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "openai-agents-api-20260910",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "openai-agents-api-2026",
+      "eventName": "OpenAI Agents API",
+      "eventDate": "2026-09-10",
+      "categories": [
+        "product",
+        "capability"
+      ],
+      "source": "OpenAI and MarkTechPost",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "L1 public-beta runtime; beta limits, residency, sandbox, and data-control boundaries remain explicit.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI Agents API primary source date release filing",
+          "impact": "OpenAI Agents API documented product infrastructure safety or market impact",
+          "analysis": "OpenAI Agents API independent coverage benchmark or technical analysis",
+          "controversy": "OpenAI Agents API limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI released the Agents API to all developers in public beta and exposed the Codex harness.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-the-agents-api/"
+            ]
+          },
+          "impact": {
+            "finding": "The API supports multiple sandbox choices, context compaction, tool search, MCP, and parallel subagents.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-the-agents-api/"
+            ]
+          },
+          "analysis": {
+            "finding": "MarkTechPost documents the agent, environment, session, and event model and the public-beta deployment options.",
+            "sourceUrls": [
+              "https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/"
+            ]
+          },
+          "controversy": {
+            "finding": "It remains a beta service; usage, residency, sandbox billing, defaults, and reliability are implementation constraints.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-the-agents-api/",
+              "https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "openai-gpt-live-1-api-20260910",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "openai-gpt-live-1-api-2026",
+      "eventName": "OpenAI GPT-Live-1 API",
+      "eventDate": "2026-09-10",
+      "categories": [
+        "product",
+        "capability"
+      ],
+      "source": "OpenAI and Progressive Robot",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "L1 API release; voice-only and backend-paired results are separated, and application ownership of permissions and task state is explicit.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI GPT-Live-1 API primary source date release filing",
+          "impact": "OpenAI GPT-Live-1 API documented product infrastructure safety or market impact",
+          "analysis": "OpenAI GPT-Live-1 API independent coverage benchmark or technical analysis",
+          "controversy": "OpenAI GPT-Live-1 API limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "OpenAI released GPT-Live-1 with full-duplex audio, interruption handling, backend delegation, and telephony support.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-gpt-live-1-in-the-api/"
+            ]
+          },
+          "impact": {
+            "finding": "The front-end voice layer is priced at $0.05 per minute, with backend model and tool usage charged separately.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-gpt-live-1-in-the-api/"
+            ]
+          },
+          "analysis": {
+            "finding": "Progressive Robot checks the backend-specific benchmark footnotes and application-state implications.",
+            "sourceUrls": [
+              "https://www.progressiverobot.com/2026/09/11/openai-gpt-live-1-api-agents-api-public-beta/"
+            ]
+          },
+          "controversy": {
+            "finding": "OpenAI's benchmark and customer results are provider- or customer-reported; interruption does not automatically cancel backend work.",
+            "sourceUrls": [
+              "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+              "https://www.progressiverobot.com/2026/09/11/openai-gpt-live-1-api-agents-api-public-beta/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "salesforce-agentforce-job-ready-20260911",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "salesforce-agentforce-job-ready-agents-2026",
+      "eventName": "Salesforce job-specific Agentforce agents",
+      "eventDate": "2026-09-11",
+      "categories": [
+        "product",
+        "commerce"
+      ],
+      "source": "Salesforce and Startup Fortune",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "L1 enterprise-agent release; six agents are GA, Hunter is pilot, and early customer percentages remain vendor-reported.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "Salesforce job-specific Agentforce agents primary source date release filing",
+          "impact": "Salesforce job-specific Agentforce agents documented product infrastructure safety or market impact",
+          "analysis": "Salesforce job-specific Agentforce agents independent coverage benchmark or technical analysis",
+          "controversy": "Salesforce job-specific Agentforce agents limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Salesforce announced seven named agents and labeled six GA and Hunter pilot with planned November 2026 GA.",
+            "sourceUrls": [
+              "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/"
+            ]
+          },
+          "impact": {
+            "finding": "A long-horizon runtime is designed to keep job-specific plans moving across days and weeks.",
+            "sourceUrls": [
+              "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/"
+            ]
+          },
+          "analysis": {
+            "finding": "Startup Fortune distinguishes the GA portfolio from Hunter's pilot and discusses the long-horizon positioning.",
+            "sourceUrls": [
+              "https://startupfortune.com/salesforce-gives-its-ai-agents-names-job-titles-and-months-of-memory/"
+            ]
+          },
+          "controversy": {
+            "finding": "Vendor-reported customer percentages do not establish broad adoption or workforce replacement.",
+            "sourceUrls": [
+              "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/",
+              "https://startupfortune.com/salesforce-gives-its-ai-agents-names-job-titles-and-months-of-memory/"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "nvidia-osmo-20260914",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "nvidia-osmo-2026",
+      "eventName": "NVIDIA OSMO",
+      "eventDate": "2026-09-14",
+      "categories": [
+        "product",
+        "capability"
+      ],
+      "source": "NVIDIA and MarkTechPost",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "L1 open-source infrastructure release; documented workflow and license are confirmed, while production-scale claims remain attributed to NVIDIA.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "NVIDIA OSMO primary source date release filing",
+          "impact": "NVIDIA OSMO documented product infrastructure safety or market impact",
+          "analysis": "NVIDIA OSMO independent coverage benchmark or technical analysis",
+          "controversy": "NVIDIA OSMO limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "NVIDIA publicly presented OSMO as an Apache-2.0, Kubernetes-native physical-AI workflow orchestrator.",
+            "sourceUrls": [
+              "https://developer.nvidia.com/osmo",
+              "https://github.com/NVIDIA/OSMO"
+            ]
+          },
+          "impact": {
+            "finding": "The workflow spans training, simulation, evaluation, and hardware-in-the-loop testing across heterogeneous compute.",
+            "sourceUrls": [
+              "https://developer.nvidia.com/osmo",
+              "https://github.com/NVIDIA/OSMO"
+            ]
+          },
+          "analysis": {
+            "finding": "MarkTechPost describes the three-computer workflow and the open-source deployment path.",
+            "sourceUrls": [
+              "https://www.marktechpost.com/2026/09/14/nvidia-open-sources-osmo-one-yaml-orchestrates-physical-ai-training-simulation-and-robot-testing/"
+            ]
+          },
+          "controversy": {
+            "finding": "OSMO does not itself deploy models to production robots or replace simulators and training frameworks.",
+            "sourceUrls": [
+              "https://developer.nvidia.com/osmo",
+              "https://github.com/NVIDIA/OSMO"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "zai-financing-proposal-20260913",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "zai-proposed-financing-2026",
+      "eventName": "Z.AI proposed share and convertible-bond financing",
+      "eventDate": "2026-09-13",
+      "categories": [
+        "commerce",
+        "capability"
+      ],
+      "source": "HKEX, TechNode Global, and Caixin Global",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "L2 financing node; the placing and bond issue are proposed, conditional, and independent, not completed cash proceeds.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "Z.AI proposed share and convertible-bond financing primary source date release filing",
+          "impact": "Z.AI proposed share and convertible-bond financing documented product infrastructure safety or market impact",
+          "analysis": "Z.AI proposed share and convertible-bond financing independent coverage benchmark or technical analysis",
+          "controversy": "Z.AI proposed share and convertible-bond financing limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "The HKEX filing records a proposed H-share placing and proposed RMB20.14 billion zero-coupon convertible-bond issue.",
+            "sourceUrls": [
+              "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0913/2026091300026_c.pdf"
+            ]
+          },
+          "impact": {
+            "finding": "The filing allocates about 60% of planned net proceeds to model R&D, training, inference, and computing infrastructure if completed.",
+            "sourceUrls": [
+              "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0913/2026091300026_c.pdf"
+            ]
+          },
+          "analysis": {
+            "finding": "TechNode confirms the proposed terms and distinguishes the filing from completed financing.",
+            "sourceUrls": [
+              "https://www.technode.global/2026/09/14/zai-plans-5-billion-share-bond-financing/"
+            ]
+          },
+          "controversy": {
+            "finding": "The two transactions may not proceed; media shorthand using raised/completed language is broader than the conditional filing.",
+            "sourceUrls": [
+              "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0913/2026091300026_c.pdf",
+              "https://www.caixinglobal.com/2026-09-14/zai-raises-5-billion-in-share-placement-convertible-bond-sale-102484813.html"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "positron-series-c-20260910",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "positron-series-c-2026",
+      "eventName": "Positron AI Series C",
+      "eventDate": "2026-09-10",
+      "categories": [
+        "commerce",
+        "capability"
+      ],
+      "source": "Positron AI and Quartz",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "L2 infrastructure-financing node; financing is confirmed, while Asimov/Titan roadmap and deployment claims remain bounded.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "Positron AI Series C primary source date release filing",
+          "impact": "Positron AI Series C documented product infrastructure safety or market impact",
+          "analysis": "Positron AI Series C independent coverage benchmark or technical analysis",
+          "controversy": "Positron AI Series C limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Positron announced an $875 million Series C at a $5 billion post-money valuation in two tranches.",
+            "sourceUrls": [
+              "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html"
+            ]
+          },
+          "impact": {
+            "finding": "The company says proceeds will fund Asimov tapeout, a 2 MW-plus engineering data center, and Titan production ramp.",
+            "sourceUrls": [
+              "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html"
+            ]
+          },
+          "analysis": {
+            "finding": "Quartz reports the tranche structure, roadmap, and more-than-50-rack Atlas deployment as company-linked information.",
+            "sourceUrls": [
+              "https://qz.com/positron-ai-funding-series-c-inference-chips-091026"
+            ]
+          },
+          "controversy": {
+            "finding": "Future silicon specifications and performance are planned or company-reported, not independently tested delivered hardware.",
+            "sourceUrls": [
+              "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+              "https://qz.com/positron-ai-funding-series-c-inference-chips-091026"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "sakana-fugu-max-ultra-v2-20260911",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "sakana-fugu-max-ultra-v2-2026",
+      "eventName": "Sakana Fugu Max and Fugu Ultra v2",
+      "eventDate": "2026-09-11",
+      "categories": [
+        "capability",
+        "product"
+      ],
+      "source": "Sakana AI, OpenRouter, and Pondero",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Provisional L2 orchestration-product node; availability is confirmed, while performance comparisons remain vendor-reported or limited in independent coverage.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "Sakana Fugu Max and Fugu Ultra v2 primary source date release filing",
+          "impact": "Sakana Fugu Max and Fugu Ultra v2 documented product infrastructure safety or market impact",
+          "analysis": "Sakana Fugu Max and Fugu Ultra v2 independent coverage benchmark or technical analysis",
+          "controversy": "Sakana Fugu Max and Fugu Ultra v2 limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Sakana released Fugu Max and Fugu Ultra v2 on September 11 through an OpenAI-compatible API.",
+            "sourceUrls": [
+              "https://sakana.ai/fugu-max-release/",
+              "https://sakana.ai/fugu/"
+            ]
+          },
+          "impact": {
+            "finding": "The variants coordinate pools of open and specialized models and are optimized for cost-performance or peak capability.",
+            "sourceUrls": [
+              "https://sakana.ai/fugu-max-release/",
+              "https://sakana.ai/fugu/"
+            ]
+          },
+          "analysis": {
+            "finding": "OpenRouter confirms availability and pricing, while Pondero explains the orchestration architecture and benchmark context.",
+            "sourceUrls": [
+              "https://www.openrouter.ai/sakana/fugu-max",
+              "https://openrouter.ai/sakana/fugu-ultra-v2",
+              "https://pondero.ai/news/2026-09-12-sakana-fugu-max-ultra-v2/"
+            ]
+          },
+          "controversy": {
+            "finding": "Sakana's benchmark claims are not broad independent replications; OpenRouter verifies marketplace availability, not performance.",
+            "sourceUrls": [
+              "https://pondero.ai/news/2026-09-12-sakana-fugu-max-ultra-v2/",
+              "https://www.openrouter.ai/sakana/fugu-max"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "fujitsu-monaka-sovereign-server-20260914",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "fujitsu-monaka-server-2026",
+      "eventName": "Fujitsu MONAKA CPU and sovereign AI server",
+      "eventDate": "2026-09-14",
+      "categories": [
+        "commerce",
+        "capability"
+      ],
+      "source": "Fujitsu, Unite.AI, and International Business Times Japan",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 8,
+      "decision": "draft",
+      "notes": "Provisional L2 infrastructure node; announcement and schedules are confirmed, while throughput and efficiency remain vendor claims.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "Fujitsu MONAKA CPU and sovereign AI server primary source date release filing",
+          "impact": "Fujitsu MONAKA CPU and sovereign AI server documented product infrastructure safety or market impact",
+          "analysis": "Fujitsu MONAKA CPU and sovereign AI server independent coverage benchmark or technical analysis",
+          "controversy": "Fujitsu MONAKA CPU and sovereign AI server limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Fujitsu announced a 2nm/5nm 3D-stacked FUJITSU-MONAKA CPU and a Japan-made MONAKA Server with planned November 2026 sales.",
+            "sourceUrls": [
+              "https://www.prnewswire.com/news-releases/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure-302877394.html"
+            ]
+          },
+          "impact": {
+            "finding": "Fujitsu positions the server for sovereign AI infrastructure in Japan and Europe, with sequential shipments planned from April 2027.",
+            "sourceUrls": [
+              "https://www.prnewswire.com/news-releases/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure-302877394.html"
+            ]
+          },
+          "analysis": {
+            "finding": "Unite.AI and IBTimes Japan confirm the architecture, target markets, and future availability schedule.",
+            "sourceUrls": [
+              "https://www.unite.ai/fujitsu-unveils-2nm-fujitsu-monaka-cpu-and-sovereign-ai-server/",
+              "https://jp.ibtimes.com/fujitsu-starts-monaka-cpu-sales-2nm-ai-server-push-104390"
+            ]
+          },
+          "controversy": {
+            "finding": "Twice-throughput, lower-power, sovereign-infrastructure, and future-availability claims require post-launch independent testing.",
+            "sourceUrls": [
+              "https://www.unite.ai/fujitsu-unveils-2nm-fujitsu-monaka-cpu-and-sovereign-ai-server/",
+              "https://jp.ibtimes.com/fujitsu-starts-monaka-cpu-sales-2nm-ai-server-push-104390"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "apple-siri-ios27-update-20260914",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "apple-siri-ai-wwdc-2026",
+      "eventName": "Apple Siri AI iOS 27 rollout",
+      "eventDate": "2026-09-14",
+      "categories": [
+        "product",
+        "capability"
+      ],
+      "source": "Apple and CNBC",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "total": 10,
+      "decision": "draft",
+      "notes": "Reviewed update to the existing WWDC node; the rollout is beta, opt-in, language-limited, and initially unavailable in the EU and China.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "Apple Siri AI iOS 27 rollout primary source date release filing",
+          "impact": "Apple Siri AI iOS 27 rollout documented product infrastructure safety or market impact",
+          "analysis": "Apple Siri AI iOS 27 rollout independent coverage benchmark or technical analysis",
+          "controversy": "Apple Siri AI iOS 27 rollout limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "Apple began rolling out Siri AI in beta with iOS 27 and related operating-system updates on September 14.",
+            "sourceUrls": [
+              "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/"
+            ]
+          },
+          "impact": {
+            "finding": "The beta adds personal-context understanding, onscreen awareness, app actions, and a new Siri app.",
+            "sourceUrls": [
+              "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/"
+            ]
+          },
+          "analysis": {
+            "finding": "CNBC confirms the beta, opt-in and waitlist conditions, language rollout, and initial regional exclusions.",
+            "sourceUrls": [
+              "https://www.cnbc.com/2026/09/14/apple-releases-ios-27-redesigned-siri-ai.html"
+            ]
+          },
+          "controversy": {
+            "finding": "Initial access is constrained by beta status, opt-in, possible waitlist, language, device, usage, and regional limits.",
+            "sourceUrls": [
+              "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+              "https://www.cnbc.com/2026/09/14/apple-releases-ios-27-redesigned-siri-ai.html"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "candidateId": "openai-hf-senate-investigation-20260910",
+      "runId": "latest-data-confirmation-2026-09-15",
+      "eventId": "openai-hf-breach-2026",
+      "eventName": "OpenAI Hugging Face congressional oversight",
+      "eventDate": "2026-09-10",
+      "categories": [
+        "safety",
+        "governance"
+      ],
+      "source": "Associated Press and Axios",
+      "screenedAt": "2026-09-15",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "total": 9,
+      "decision": "draft",
+      "notes": "Reviewed update to the Hugging Face incident chain; the Senate inquiry is oversight, not a legal or technical merits finding. Also updates the linked METR report node.",
+      "reviewed": true,
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "confirmation": {
+        "completedAt": "2026-09-15",
+        "status": "completed",
+        "queries": {
+          "fact": "OpenAI Hugging Face congressional oversight primary source date release filing",
+          "impact": "OpenAI Hugging Face congressional oversight documented product infrastructure safety or market impact",
+          "analysis": "OpenAI Hugging Face congressional oversight independent coverage benchmark or technical analysis",
+          "controversy": "OpenAI Hugging Face congressional oversight limitation uncertainty attribution criticism"
+        },
+        "layers": {
+          "fact": {
+            "finding": "A Republican-led Senate subcommittee opened an inquiry into OpenAI's handling of the July Hugging Face breach, while Sen. Chris Van Hollen separately requested federal access.",
+            "sourceUrls": [
+              "https://apnews.com/article/openai-hugging-face-congress-investigation-artificial-intelligence-1f730a59284c718f2e758898748a8069",
+              "https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley"
+            ]
+          },
+          "impact": {
+            "finding": "Axios reports Hawley's 16 questions and October 1 response deadline.",
+            "sourceUrls": [
+              "https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley"
+            ]
+          },
+          "analysis": {
+            "finding": "AP records the separate bipartisan oversight context and OpenAI's response.",
+            "sourceUrls": [
+              "https://apnews.com/article/openai-hugging-face-congress-investigation-artificial-intelligence-1f730a59284c718f2e758898748a8069"
+            ]
+          },
+          "controversy": {
+            "finding": "The congressional actions are oversight requests, not a finding that OpenAI violated law or that the breach facts are finally adjudicated.",
+            "sourceUrls": [
+              "https://apnews.com/article/openai-hugging-face-congress-investigation-artificial-intelligence-1f730a59284c718f2e758898748a8069",
+              "https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley"
+            ]
+          }
+        }
+      }
     }
   ],
   "_runSchema": {
@@ -7435,6 +8329,131 @@
         }
       ],
       "resultSummary": "Ten reviewed drafts are retained. Four lower-confidence or non-milestone items remain outside the publication payload: Apple CEO succession, OpenAI policy advocacy, Florida forum-remand update, and developer-SDK releases. All Possible Directions remain monitor-only and no forecast associations are changed in this batch."
+    },
+    {
+      "runId": "latest-data-confirmation-2026-09-15",
+      "runDate": "2026-09-15",
+      "windowStart": "2026-09-10",
+      "windowEnd": "2026-09-15",
+      "scope": "Latest-data horizon scan and confirmation for September 10–15, 2026, covering model and product releases, agent incidents, enterprise workflows, AI infrastructure, financing, and governance follow-up.",
+      "channels": [
+        {
+          "id": "agent-reach-and-exa-search",
+          "status": "partial",
+          "queries": [
+            "AI model and product releases September 10 2026",
+            "AI infrastructure financing and safety incidents September 2026"
+          ],
+          "resultSummary": "Used discovery and routing results before Exa rate limiting; remaining confirmation used direct publisher pages and independent coverage.",
+          "failureReason": "Exa returned HTTP 429 during the scan.",
+          "retryResult": "Continued with official pages, exchange filings, direct readers, and independent reports."
+        },
+        {
+          "id": "official-primary-sources",
+          "status": "completed",
+          "queries": [
+            "Anthropic September threat report 2026",
+            "DeepSeek V4.1-Flash API release",
+            "OpenAI Agents API GPT-Live-1 Financial Services",
+            "Sakana Fugu Salesforce Agentforce NVIDIA OSMO",
+            "Z.AI HKEX financing Positron Fujitsu MONAKA Apple Siri"
+          ],
+          "resultSummary": "Captured official reports, API pages, product announcements, a repository, and the HKEX filing for the confirmed candidates.",
+          "failureReason": "",
+          "retryResult": ""
+        },
+        {
+          "id": "independent-and-benchmark-checks",
+          "status": "completed",
+          "queries": [
+            "independent coverage and benchmark DeepSeek V4.1-Flash",
+            "independent coverage RubyGems GemStuffer OpenAI agents",
+            "independent coverage enterprise agents infrastructure financing September 2026"
+          ],
+          "resultSummary": "Added independent media, benchmark, marketplace, and technical analysis sources; provider claims remain attributed.",
+          "failureReason": "",
+          "retryResult": ""
+        },
+        {
+          "id": "brave-confirmation-search",
+          "status": "completed",
+          "queries": [
+            "AI safety governance and incident reports September 2026",
+            "AI infrastructure and model release announcements September 2026",
+            "Z.AI HKEX proposed financing 2026"
+          ],
+          "resultSummary": "Used Brave Search for discovery and cross-check routing only; search results were not used as standalone evidence.",
+          "failureReason": "",
+          "retryResult": ""
+        },
+        {
+          "id": "x-and-reddit-native-monitoring",
+          "status": "unavailable",
+          "queries": [
+            "OpenAI agents RubyGems",
+            "DeepSeek V4.1-Flash",
+            "AI infrastructure September 2026"
+          ],
+          "resultSummary": "No social result was used as publication evidence.",
+          "failureReason": "Native X and Reddit navigation timed out.",
+          "retryResult": "Used accessible primary and independent web sources instead."
+        },
+        {
+          "id": "hacker-news-api",
+          "status": "unavailable",
+          "queries": [
+            "Hacker News AI top stories September 10–15 2026"
+          ],
+          "resultSummary": "No Hacker News result was used as publication evidence.",
+          "failureReason": "TLS certificate verification failed and the retry timed out.",
+          "retryResult": "No standalone community signal was promoted into the publication payload."
+        }
+      ],
+      "categoryCoverage": [
+        {
+          "category": "capability",
+          "queries": [
+            "frontier model releases and independent benchmarks September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "product",
+          "queries": [
+            "AI API and enterprise product releases September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "commerce",
+          "queries": [
+            "AI financing chips data center and enterprise market September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "governance",
+          "queries": [
+            "AI oversight filings investigations and disclosure September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "safety",
+          "queries": [
+            "AI agent misuse threat and software supply-chain incidents September 2026"
+          ],
+          "status": "completed"
+        },
+        {
+          "category": "society",
+          "queries": [
+            "consumer AI rollout access language privacy and work impact September 2026"
+          ],
+          "status": "completed"
+        }
+      ],
+      "resultSummary": "Confirmed 12 new event candidates and two update groups; six lower-confidence or out-of-window candidates remain deferred. Vendor performance and attribution claims remain bounded in the reviewed payload."
     }
   ]
 }

@@ -1,0 +1,192 @@
+{
+  "id": "deepseek-v4-1-flash-2026",
+  "slug": "deepseek-v4-1-flash-2026",
+  "title": {
+    "en": "DeepSeek releases V4.1-Flash and routes legacy Flash names to it",
+    "zhHans": "DeepSeek 发布 V4.1-Flash，并将旧 Flash 名称路由至新模型"
+  },
+  "searchSummary": {
+    "en": "DeepSeek released V4.1-Flash with native multimodal input, a 1M-token context window, and a new Causal Encoder–Decoder architecture; legacy Flash API names now route to it.",
+    "zhHans": "DeepSeek 发布具备原生多模态输入、100 万 token 上下文窗口和新型因果编码器—解码器架构的 V4.1-Flash；旧 Flash API 名称现路由至该模型。"
+  },
+  "summary": {
+    "en": "On September 10, DeepSeek released V4.1-Flash through its API and model repository. The official materials describe a 552B-backbone multimodal MoE model with native image input, a 1M-token context window, and 8B/16B active parameters for prefill and decode. DeepSeek retired V4-Flash and V4-Flash-Vision-Exp and temporarily routes their legacy names to V4.1-Flash. Its API changelog says V4 Pro service continues after September 14 in response to user demand.",
+    "zhHans": "9 月 10 日，DeepSeek 通过 API 和模型仓库发布 V4.1-Flash。官方材料称该模型是 552B 主干的多模态 MoE，支持原生图像输入、100 万 token 上下文窗口，并在预填充和解码阶段分别激活 8B/16B 参数。DeepSeek 已退役 V4-Flash 和 V4-Flash-Vision-Exp，并暂时将旧名称路由至 V4.1-Flash。其 API 更新日志称，应用户需求，V4 Pro 服务在 9 月 14 日之后继续提供。"
+  },
+  "narrative": {
+    "en": "V4.1-Flash pairs a Causal Encoder–Decoder design with sparse attention, compressed KV caching, and a multimodal encoder. DeepSeek's official benchmark tables use its own evaluation settings, while Vals reports a separate 57.86% Vals Index score and 74.53% Terminal-Bench 2.1 score across three trials. Those results are useful as separate measurements, not as a single universal ranking. A previous secondary account that treated V4 Pro as being phased out was superseded by the official API changelog's statement that the service would continue; this draft follows the dated official changelog.",
+    "zhHans": "V4.1-Flash 将因果编码器—解码器设计与稀疏注意力、压缩 KV 缓存及多模态编码器结合。DeepSeek 的官方基准表使用其自身的评测设置；Vals 则报告了独立的 57.86% Vals Index 分数和三次完整试验中的 74.53% Terminal-Bench 2.1 分数。这些结果应作为不同测量分别记录，而不是合并成一个普遍排名。此前将 V4 Pro 描述为即将退役的二手说法，已被官方 API 更新日志中“服务继续提供”的表述取代；本草稿以有日期的官方更新日志为准。"
+  },
+  "date": "2026-09-10",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-10",
+    "zhHans": "2026年9月10日"
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Makes a multimodal, long-context model with low active-parameter paths and public agent-oriented API access available as a released product.",
+        "zhHans": "以已发布产品的形式提供具备多模态、长上下文和低激活参数路径的模型，并开放面向智能体的 API 访问。"
+      },
+      "affectedGroups": [
+        "model developers",
+        "AI application builders",
+        "developers",
+        "AI evaluators"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-deepseek-release",
+        "sweep-20260915-deepseek-api-updates",
+        "sweep-20260915-deepseek-hf",
+        "sweep-20260915-deepseek-vals"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Combines an open model repository, API access, and reduced legacy-model prices, lowering the cost of testing long-context and multimodal agent workflows.",
+        "zhHans": "通过开放模型仓库、API 访问和旧模型价格下调，降低了测试长上下文与多模态智能体工作流的成本。"
+      },
+      "affectedGroups": [
+        "model developers",
+        "AI application builders",
+        "developers",
+        "AI evaluators"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-deepseek-api-updates",
+        "sweep-20260915-deepseek-hf",
+        "sweep-20260915-deepseek-vals"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "deepseek-v41-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "DeepSeek released V4.1-Flash on September 10 as a 552B-backbone multimodal MoE model with native image input, a 1M-token context window, and 8B/16B active parameters for prefill and decode.",
+        "zhHans": "DeepSeek 于 9 月 10 日发布 V4.1-Flash；官方称该模型是 552B 主干的多模态 MoE，支持原生图像输入、100 万 token 上下文窗口，并在预填充和解码阶段分别激活 8B/16B 参数。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-deepseek-release",
+        "sweep-20260915-deepseek-api-updates",
+        "sweep-20260915-deepseek-hf"
+      ]
+    },
+    {
+      "id": "deepseek-v41-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "DeepSeek retired the prior V4 Flash variants, temporarily routes their legacy API names to V4.1-Flash, and reports that Vals independently measured the model at 57.86% on its Vals Index and 74.53% on Terminal-Bench 2.1 across three trials.",
+        "zhHans": "DeepSeek 退役了此前的 V4 Flash 变体，并暂时将其旧 API 名称路由至 V4.1-Flash；Vals 独立报告该模型在其 Vals Index 上得分 57.86%，三次试验的 Terminal-Bench 2.1 得分为 74.53%。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-deepseek-api-updates",
+        "sweep-20260915-deepseek-vals"
+      ]
+    },
+    {
+      "id": "deepseek-v41-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "DeepSeek's benchmark tables and Vals' measurements use different harnesses and settings; neither supports a universal claim that V4.1-Flash leads every frontier model or task.",
+        "zhHans": "DeepSeek 的基准表与 Vals 的测量使用不同的 harness 和设置；两者都不能支持 V4.1-Flash 在所有前沿模型或任务中领先的普遍性结论。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-deepseek-release",
+        "sweep-20260915-deepseek-hf",
+        "sweep-20260915-deepseek-vals",
+        "sweep-20260915-deepseek-aa"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260915-deepseek-release",
+      "supports": [
+        "deepseek-v4-1-flash-2026",
+        "deepseek-v41-fact",
+        "deepseek-v41-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-deepseek-api-updates",
+      "supports": [
+        "deepseek-v4-1-flash-2026",
+        "deepseek-v41-fact",
+        "deepseek-v41-impact"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-deepseek-hf",
+      "supports": [
+        "deepseek-v4-1-flash-2026",
+        "deepseek-v41-fact",
+        "deepseek-v41-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-deepseek-vals",
+      "supports": [
+        "deepseek-v4-1-flash-2026",
+        "deepseek-v41-impact",
+        "deepseek-v41-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-deepseek-aa",
+      "supports": [
+        "deepseek-v4-1-flash-2026",
+        "deepseek-v41-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "deepseek-v4-2026",
+    "deepseek-v4-flash-vision-exp-2026",
+    "qwen-3-8-flash-next-2026",
+    "openai-gpt-6-astra-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "reviewedAt": "2026-09-15",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-15",
+    "reviewNotes": "L1 model/product release. Official and independent benchmark results remain separated by harness; the V4 Pro continuation correction is explicit.",
+    "changeLog": [
+      {
+        "date": "2026-09-15",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-15 confirmation layer."
+      }
+    ],
+    "publishedAt": "2026-09-15"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "id": "sakana-fugu-max-ultra-v2-2026",
+  "slug": "sakana-fugu-max-ultra-v2-2026",
+  "title": {
+    "en": "Sakana AI releases Fugu Max and Fugu Ultra v2",
+    "zhHans": "Sakana AI 发布 Fugu Max 与 Fugu Ultra v2"
+  },
+  "searchSummary": {
+    "en": "Sakana AI released Fugu Max and Fugu Ultra v2 as OpenAI-compatible API products built around learned orchestration of open and specialized models.",
+    "zhHans": "Sakana AI 发布 Fugu Max 与 Fugu Ultra v2，将其作为基于开放模型和专业模型学习式编排的 OpenAI 兼容 API 产品。"
+  },
+  "summary": {
+    "en": "On September 11, Sakana AI released Fugu Max and Fugu Ultra v2 through an OpenAI-compatible API. Sakana describes them as one orchestration architecture optimized for cost-performance and peak capability, routing tasks across pools of open and specialized models rather than relying on a single monolithic model. OpenRouter lists both variants with September 11 availability, while independent commentary notes that performance comparisons remain largely tied to Sakana's own evaluations.",
+    "zhHans": "9 月 11 日，Sakana AI 通过 OpenAI 兼容 API 发布 Fugu Max 和 Fugu Ultra v2。Sakana 将两者描述为同一编排架构的不同优化版本，分别面向成本性能和峰值能力；系统在开放模型和专业模型池之间路由任务，而不是依赖单一巨型模型。OpenRouter 列出了两款产品的 9 月 11 日可用性，独立评论则指出性能比较目前主要依赖 Sakana 自身评测。"
+  },
+  "narrative": {
+    "en": "Fugu treats orchestration as the product boundary: the API exposes a model-like interface while the system selects and coordinates multiple underlying models. Sakana reports that Fugu Max reaches favorable cost-performance positions and that Fugu Ultra v2 performs strongly on selected agentic benchmarks without Fable 5, Fable 5.1, or GPT-6 Astra in its pool. OpenRouter confirms availability and pricing, and Pondero describes the architecture and repeats the benchmark results. The evidence supports a released orchestration product, but not a general independent finding that it outperforms closed models across tasks.",
+    "zhHans": "Fugu 将编排作为产品边界：API 对外呈现类似模型的接口，系统则选择并协调多个底层模型。Sakana 称 Fugu Max 在成本性能上处于有利位置，Fugu Ultra v2 在特定智能体基准上表现突出，且模型池不包含 Fable 5、Fable 5.1 或 GPT-6 Astra。OpenRouter 确认了可用性和价格，Pondero 描述了系统架构并复述基准结果。现有证据足以支持“编排产品已发布”，但不足以独立证明其在各类任务上普遍优于闭源模型。"
+  },
+  "date": "2026-09-11",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-11",
+    "zhHans": "2026年9月11日"
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Packages learned routing and multi-model coordination as a model-like API, offering a released path to combine open and specialized models for complex work.",
+        "zhHans": "将学习式路由和多模型协作打包为类似模型的 API，为复杂工作提供组合开放模型与专业模型的已发布路径。"
+      },
+      "affectedGroups": [
+        "developers",
+        "AI application builders",
+        "open-model developers",
+        "AI evaluators"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-sakana-release",
+        "sweep-20260915-sakana-fugu-page",
+        "sweep-20260915-sakana-pondero"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Offers OpenAI-compatible access to a coordinated model pool, reducing the integration cost of switching among underlying models in an application.",
+        "zhHans": "通过 OpenAI 兼容接口提供协调模型池，降低应用在底层模型之间切换的集成成本。"
+      },
+      "affectedGroups": [
+        "developers",
+        "AI application builders",
+        "open-model developers",
+        "AI evaluators"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-sakana-release",
+        "sweep-20260915-sakana-fugu-page",
+        "sweep-20260915-sakana-openrouter-max",
+        "sweep-20260915-sakana-openrouter-ultra"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "sakana-fugu-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Sakana AI released Fugu Max and Fugu Ultra v2 on September 11 and made them available through an OpenAI-compatible API.",
+        "zhHans": "Sakana AI 于 9 月 11 日发布 Fugu Max 和 Fugu Ultra v2，并通过 OpenAI 兼容 API 提供使用。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-sakana-release",
+        "sweep-20260915-sakana-fugu-page",
+        "sweep-20260915-sakana-openrouter-max",
+        "sweep-20260915-sakana-openrouter-ultra"
+      ]
+    },
+    {
+      "id": "sakana-fugu-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Sakana describes Fugu Max as cost-performance optimized and Fugu Ultra v2 as quality optimized, with both variants coordinating pools of open and specialized models.",
+        "zhHans": "Sakana 将 Fugu Max 描述为面向成本性能优化、将 Fugu Ultra v2 描述为面向质量优化；两款产品都协调开放模型和专业模型池。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-sakana-release",
+        "sweep-20260915-sakana-fugu-page",
+        "sweep-20260915-sakana-pondero"
+      ]
+    },
+    {
+      "id": "sakana-fugu-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Sakana's benchmark and frontier-comparison claims are not broad independent replications; OpenRouter verifies marketplace availability and pricing rather than performance.",
+        "zhHans": "Sakana 的基准和前沿比较主张尚未得到广泛独立复现；OpenRouter 验证的是市场可用性和价格，而非性能。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-sakana-release",
+        "sweep-20260915-sakana-openrouter-max",
+        "sweep-20260915-sakana-openrouter-ultra",
+        "sweep-20260915-sakana-pondero"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260915-sakana-release",
+      "supports": [
+        "sakana-fugu-max-ultra-v2-2026",
+        "sakana-fugu-fact",
+        "sakana-fugu-impact",
+        "sakana-fugu-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-sakana-fugu-page",
+      "supports": [
+        "sakana-fugu-max-ultra-v2-2026",
+        "sakana-fugu-fact",
+        "sakana-fugu-impact"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-sakana-openrouter-max",
+      "supports": [
+        "sakana-fugu-max-ultra-v2-2026",
+        "sakana-fugu-fact",
+        "sakana-fugu-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-sakana-openrouter-ultra",
+      "supports": [
+        "sakana-fugu-max-ultra-v2-2026",
+        "sakana-fugu-fact",
+        "sakana-fugu-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-sakana-pondero",
+      "supports": [
+        "sakana-fugu-max-ultra-v2-2026",
+        "sakana-fugu-impact",
+        "sakana-fugu-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "openai-agents-api-2026",
+    "deepmind-autonomous-research-swarm-2026",
+    "qwen-3-8-flash-next-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "reviewedAt": "2026-09-15",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-15",
+    "reviewNotes": "Provisional L2 orchestration-product node. Availability is confirmed; performance and frontier comparisons remain attributed or limited to available commentary.",
+    "changeLog": [
+      {
+        "date": "2026-09-15",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-15 confirmation layer."
+      }
+    ],
+    "publishedAt": "2026-09-15"
+  }
+}

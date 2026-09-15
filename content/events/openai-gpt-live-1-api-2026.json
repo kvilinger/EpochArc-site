@@ -1,0 +1,163 @@
+{
+  "id": "openai-gpt-live-1-api-2026",
+  "slug": "openai-gpt-live-1-api-2026",
+  "title": {
+    "en": "OpenAI releases GPT-Live-1 in the API",
+    "zhHans": "OpenAI 将 GPT-Live-1 发布至 API"
+  },
+  "searchSummary": {
+    "en": "OpenAI released GPT-Live-1 in the API with full-duplex audio, interruption handling, backend delegation, telephony support, and a $0.05-per-minute voice-layer price.",
+    "zhHans": "OpenAI 将 GPT-Live-1 发布至 API，提供全双工音频、中断处理、后端委托、电话支持和每分钟 0.05 美元的语音层价格。"
+  },
+  "summary": {
+    "en": "On September 10, OpenAI released GPT-Live-1 in the API. The voice model can listen and speak at the same time, handle interruptions, delegate deeper reasoning and tools to backend models, and support telephony workflows. OpenAI lists the front-end voice layer at $0.05 per minute; backend model and tool usage is separate.",
+    "zhHans": "9 月 10 日，OpenAI 将 GPT-Live-1 发布至 API。该语音模型可以同时听取和说话、处理打断，并将更深层的推理和工具调用委托给后端模型，还支持电话工作流。OpenAI 将前端语音层定价为每分钟 0.05 美元；后端模型和工具使用另行计费。"
+  },
+  "narrative": {
+    "en": "GPT-Live-1 simplifies the voice layer by processing incoming and outgoing audio in one model, while leaving deeper reasoning, permissions, and application actions to a backend. The independent technical review finds that the strongest Tau results pair GPT-Live-1 with GPT-6 Astra, so those are system-level results rather than voice-only comparisons. It also notes that an interruption does not automatically cancel backend work and that the application owns task revisions, confirmations, permissions, and durable state. The launch is a released API capability, not proof of general voice-agent reliability.",
+    "zhHans": "GPT-Live-1 通过单一模型处理输入和输出音频，简化语音层；更深层的推理、权限和应用操作仍由后端负责。独立技术评测指出，Tau 测试中最强的结果来自 GPT-Live-1 与 GPT-6 Astra 的组合，因此这些是系统级结果，而非仅语音模型的比较。评测还指出，用户打断不会自动取消后端工作，应用仍负责任务版本、确认、权限和持久状态。本事件记录已发布的 API 能力，不代表语音智能体的普遍可靠性已得到证明。"
+  },
+  "date": "2026-09-10",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-10",
+    "zhHans": "2026年9月10日"
+  },
+  "categories": [
+    "product",
+    "capability"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 4,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Makes a full-duplex voice layer with interruption handling and delegated reasoning available for developer-built voice workflows.",
+        "zhHans": "为开发者构建的语音工作流提供具备全双工交互、中断处理和推理委托能力的语音层。"
+      },
+      "affectedGroups": [
+        "developers",
+        "voice application builders",
+        "customer-support teams",
+        "callers"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-gptlive-official",
+        "sweep-20260915-gptlive-progressiverobot"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Adds a public API and telephony path for building voice agents without requiring developers to assemble separate speech-recognition, language, and speech-synthesis stages.",
+        "zhHans": "提供公开 API 和电话接入路径，使开发者无需分别拼装语音识别、语言模型和语音合成阶段即可构建语音智能体。"
+      },
+      "affectedGroups": [
+        "developers",
+        "voice application builders",
+        "customer-support teams",
+        "callers"
+      ],
+      "timeframe": "short",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-gptlive-official",
+        "sweep-20260915-gptlive-progressiverobot"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gpt-live-api-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "OpenAI released GPT-Live-1 in the API on September 10 with simultaneous listening and speaking, interruption handling, backend delegation, and telephony support.",
+        "zhHans": "OpenAI 于 9 月 10 日将 GPT-Live-1 发布至 API，提供同时听说、中断处理、后端委托和电话支持。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-gptlive-official",
+        "sweep-20260915-gptlive-progressiverobot"
+      ]
+    },
+    {
+      "id": "gpt-live-api-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "OpenAI lists the front-end voice layer at $0.05 per minute, while the independent review records separate backend and tool charges and identifies system-level benchmark configurations.",
+        "zhHans": "OpenAI 将前端语音层定价为每分钟 0.05 美元；独立评测记录了单独的后端和工具费用，并区分了系统级基准测试配置。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-gptlive-official",
+        "sweep-20260915-gptlive-progressiverobot"
+      ]
+    },
+    {
+      "id": "gpt-live-api-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "OpenAI's benchmark and customer results are provider- or customer-reported; delegated backend work, permissions, and task cancellation remain application responsibilities.",
+        "zhHans": "OpenAI 的基准和客户结果来自厂商或客户报告；后端委托工作、权限和任务取消仍由应用负责。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-gptlive-official",
+        "sweep-20260915-gptlive-progressiverobot"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260915-gptlive-official",
+      "supports": [
+        "openai-gpt-live-1-api-2026",
+        "gpt-live-api-fact",
+        "gpt-live-api-impact",
+        "gpt-live-api-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-gptlive-progressiverobot",
+      "supports": [
+        "openai-gpt-live-1-api-2026",
+        "gpt-live-api-fact",
+        "gpt-live-api-impact",
+        "gpt-live-api-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "openai-gpt-6-astra-2026",
+    "openai-agents-api-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "reviewedAt": "2026-09-15",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-15",
+    "reviewNotes": "L1 API release. Voice-layer and backend results are separated; pricing, interruption, and application-state boundaries are explicit.",
+    "changeLog": [
+      {
+        "date": "2026-09-15",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-15 confirmation layer."
+      }
+    ],
+    "publishedAt": "2026-09-15"
+  }
+}

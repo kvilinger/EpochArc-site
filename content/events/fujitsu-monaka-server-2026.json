@@ -1,0 +1,177 @@
+{
+  "id": "fujitsu-monaka-server-2026",
+  "slug": "fujitsu-monaka-server-2026",
+  "title": {
+    "en": "Fujitsu announces FUJITSU-MONAKA and a sovereign AI server",
+    "zhHans": "Fujitsu 宣布 FUJITSU-MONAKA 与主权 AI 服务器"
+  },
+  "searchSummary": {
+    "en": "Fujitsu announced a Japan-designed 2nm 3D-stacked FUJITSU-MONAKA CPU and a Japan-made MONAKA Server, with sales planned from November 2026 and shipments to Japan and Europe planned from April 2027.",
+    "zhHans": "Fujitsu 宣布日本设计的 2nm 3D 堆叠 FUJITSU-MONAKA CPU 和日本制造的 MONAKA Server，计划于 2026 年 11 月开始销售，并计划自 2027 年 4 月起向日本和欧洲出货。"
+  },
+  "summary": {
+    "en": "On September 14, Fujitsu announced the FUJITSU-MONAKA CPU and Fujitsu MONAKA Server for what it calls sovereign AI infrastructure. The company describes a 2nm core paired with 5nm cache and I/O components in a 3D-stacked design, with a maximum frequency of 3.8GHz and memory transfer speed of 8800MT/s. CPU and server sales are planned from November 2026; Fujitsu says server shipments to Japan and Europe will begin sequentially from April 2027.",
+    "zhHans": "9 月 14 日，Fujitsu 宣布 FUJITSU-MONAKA CPU 和 Fujitsu MONAKA Server，并将其定位为主权 AI 基础设施。公司称产品采用 2nm 核心与 5nm 缓存和 I/O 组件的 3D 堆叠设计，最高频率 3.8GHz，内存传输速度 8800MT/s。CPU 和服务器计划于 2026 年 11 月开始销售；Fujitsu 称服务器将自 2027 年 4 月起陆续向日本和欧洲出货。"
+  },
+  "narrative": {
+    "en": "Fujitsu positions MONAKA around domestic design and manufacturing, air-cooled deployment, resource pooling, and supply-chain traceability for organizations that want local control over data and infrastructure. The company says the CPU provides twice the AI-inference throughput of other CPUs and that selected server designs can reduce cooling power; independent coverage repeats those figures as Fujitsu claims. The official direct page was blocked by a Vercel checkpoint during capture, so the company release is preserved through PR Newswire and cross-checked with independent reports. Sales and shipments are future dates, not evidence of deployed performance.",
+    "zhHans": "Fujitsu 将 MONAKA 定位于本土设计与制造、风冷部署、资源池化及供应链可追溯，面向希望在本地控制数据和基础设施的组织。公司称该 CPU 的 AI 推理吞吐量是其他 CPU 的两倍，部分服务器设计可降低冷却功耗；独立报道将这些数字作为 Fujitsu 的主张转述。采集期间 Fujitsu 官方直达页面被 Vercel 安全检查拦截，因此保留了 PR Newswire 上的公司发布，并与独立报道交叉核对。销售和出货日期均在未来，不能作为已部署性能的证据。"
+  },
+  "date": "2026-09-14",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-14",
+    "zhHans": "2026年9月14日"
+  },
+  "categories": [
+    "commerce",
+    "capability"
+  ],
+  "status": "published",
+  "significance": 2,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "impacts": [
+    {
+      "dimension": "economic_disruption",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Adds a Japan-made CPU/server route to the sovereign-AI infrastructure market, targeting data-center, enterprise, academic, HPC, and defense use cases.",
+        "zhHans": "为主权 AI 基础设施市场增加日本制造的 CPU 和服务器路径，面向数据中心、企业、学术、高性能计算和国防场景。"
+      },
+      "affectedGroups": [
+        "data-center operators",
+        "enterprise IT teams",
+        "public institutions",
+        "AI hardware suppliers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-fujitsu-prnewswire",
+        "sweep-20260915-fujitsu-unite",
+        "sweep-20260915-fujitsu-ibtimes"
+      ]
+    },
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Proposes a CPU-centered inference option for sites with power, cooling, or supply-chain constraints, although throughput and efficiency remain unverified company claims.",
+        "zhHans": "为受电力、冷却或供应链限制的场所提出以 CPU 为中心的推理选项，但吞吐量和效率仍是未经独立验证的公司主张。"
+      },
+      "affectedGroups": [
+        "data-center operators",
+        "enterprise IT teams",
+        "public institutions",
+        "AI hardware suppliers"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-fujitsu-prnewswire",
+        "sweep-20260915-fujitsu-unite",
+        "sweep-20260915-fujitsu-ibtimes"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "fujitsu-monaka-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Fujitsu announced FUJITSU-MONAKA and the Fujitsu MONAKA Server on September 14, describing a 2nm/5nm 3D-stacked design and planned November 2026 sales.",
+        "zhHans": "Fujitsu 于 9 月 14 日宣布 FUJITSU-MONAKA 和 Fujitsu MONAKA Server，介绍了 2nm/5nm 3D 堆叠设计，并计划于 2026 年 11 月销售。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-fujitsu-prnewswire",
+        "sweep-20260915-fujitsu-unite",
+        "sweep-20260915-fujitsu-ibtimes"
+      ]
+    },
+    {
+      "id": "fujitsu-monaka-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "The company positions the server for sovereign AI infrastructure in Japan and Europe and says shipments to those markets will begin sequentially from April 2027.",
+        "zhHans": "公司将该服务器定位为日本和欧洲的主权 AI 基础设施，并称这些市场将自 2027 年 4 月起陆续开始出货。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-fujitsu-prnewswire",
+        "sweep-20260915-fujitsu-unite",
+        "sweep-20260915-fujitsu-ibtimes"
+      ]
+    },
+    {
+      "id": "fujitsu-monaka-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "The twice-throughput, lower-power, sovereign-infrastructure, and future-availability claims are Fujitsu's claims or plans and require post-launch independent testing.",
+        "zhHans": "两倍吞吐量、低功耗、主权基础设施和未来可用性等说法均为 Fujitsu 的主张或计划，需要上市后的独立测试。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-fujitsu-prnewswire",
+        "sweep-20260915-fujitsu-unite",
+        "sweep-20260915-fujitsu-ibtimes"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260915-fujitsu-prnewswire",
+      "supports": [
+        "fujitsu-monaka-server-2026",
+        "fujitsu-monaka-fact",
+        "fujitsu-monaka-impact",
+        "fujitsu-monaka-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-fujitsu-unite",
+      "supports": [
+        "fujitsu-monaka-server-2026",
+        "fujitsu-monaka-fact",
+        "fujitsu-monaka-impact",
+        "fujitsu-monaka-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-fujitsu-ibtimes",
+      "supports": [
+        "fujitsu-monaka-server-2026",
+        "fujitsu-monaka-fact",
+        "fujitsu-monaka-impact",
+        "fujitsu-monaka-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "aws-nvidia-2m-gpu-expansion-2026",
+    "nvidia-openai-datacenter-financing-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "reviewedAt": "2026-09-15",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-15",
+    "reviewNotes": "Provisional L2 sovereign-infrastructure node. Announcement and scheduled dates are confirmed; performance and future shipments remain attributed or prospective.",
+    "changeLog": [
+      {
+        "date": "2026-09-15",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-15 confirmation layer."
+      }
+    ],
+    "publishedAt": "2026-09-15"
+  }
+}

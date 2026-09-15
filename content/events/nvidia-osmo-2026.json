@@ -1,0 +1,176 @@
+{
+  "id": "nvidia-osmo-2026",
+  "slug": "nvidia-osmo-2026",
+  "title": {
+    "en": "NVIDIA open-sources OSMO for physical-AI workflow orchestration",
+    "zhHans": "NVIDIA 开源用于物理 AI 工作流编排的 OSMO"
+  },
+  "searchSummary": {
+    "en": "NVIDIA presented OSMO as an Apache-2.0, Kubernetes-native orchestrator that runs physical-AI workflows across training clusters, simulation, and hardware-in-the-loop environments from YAML.",
+    "zhHans": "NVIDIA 发布 OSMO，将其定位为 Apache-2.0 许可、Kubernetes 原生的物理 AI 编排器，可用 YAML 跨训练集群、仿真和硬件在环环境运行工作流。"
+  },
+  "summary": {
+    "en": "On September 14, NVIDIA publicly presented OSMO as an open-source physical-AI workflow orchestrator. Its developer page and repository describe YAML-defined workflows across training, simulation, evaluation, and hardware-in-the-loop tasks on heterogeneous Kubernetes clusters and edge devices. The repository uses an Apache-2.0 license. NVIDIA's FAQ says OSMO orchestrates these components but does not itself deploy models to production robots.",
+    "zhHans": "9 月 14 日，NVIDIA 公开发布 OSMO，将其定位为开源物理 AI 工作流编排器。开发者页面和代码仓库描述了在异构 Kubernetes 集群及边缘设备上，用 YAML 定义跨训练、仿真、评估和硬件在环任务的工作流。该仓库采用 Apache-2.0 许可证。NVIDIA FAQ 说明，OSMO 负责编排这些组件，但本身不将模型部署到生产机器人。"
+  },
+  "narrative": {
+    "en": "OSMO addresses the handoffs among data-center training, workstation simulation, and edge or hardware-in-the-loop testing. The official materials describe dataset lineage, dependency management, resource scheduling, agent-aware CLI context, and cloud or on-premises deployment. The GitHub repository documents local and cloud deployment paths and the Apache-2.0 license. NVIDIA's production-scale and GPU-hours language remains a company claim, while the open-source release and documented workflow scope are directly observable. OSMO is an orchestrator, not a replacement for simulators, training frameworks, or robot deployment runtimes.",
+    "zhHans": "OSMO 处理数据中心训练、工作站仿真以及边缘或硬件在环测试之间的衔接。官方材料描述了数据集溯源、依赖管理、资源调度、面向智能体的 CLI 上下文以及云端或本地部署。GitHub 仓库记录了本地和云部署路径，并标明 Apache-2.0 许可证。NVIDIA 关于生产规模和 GPU 小时数的表述仍是公司主张；开源发布和文档化工作流范围则可直接核验。OSMO 是编排器，不是仿真器、训练框架或机器人部署运行时的替代品。"
+  },
+  "date": "2026-09-14",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-09-14",
+    "zhHans": "2026年9月14日"
+  },
+  "categories": [
+    "product",
+    "capability"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 5,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "capability_leap",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Provides a single documented workflow layer for moving physical-AI jobs across training, simulation, evaluation, and hardware-in-the-loop environments.",
+        "zhHans": "提供单一且有文档支持的工作流层，将物理 AI 任务连接到训练、仿真、评估和硬件在环环境。"
+      },
+      "affectedGroups": [
+        "robotics developers",
+        "AI infrastructure teams",
+        "simulation teams",
+        "edge-device teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-osmo-developer",
+        "sweep-20260915-osmo-github",
+        "sweep-20260915-osmo-marktechpost"
+      ]
+    },
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Uses YAML workflows, local quickstarts, and portable Kubernetes backends to reduce the infrastructure-specific scripting required for physical-AI experimentation.",
+        "zhHans": "通过 YAML 工作流、本地快速入门和可移植的 Kubernetes 后端，减少物理 AI 实验所需的基础设施专用脚本。"
+      },
+      "affectedGroups": [
+        "robotics developers",
+        "AI infrastructure teams",
+        "simulation teams",
+        "edge-device teams"
+      ],
+      "timeframe": "medium",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-osmo-developer",
+        "sweep-20260915-osmo-github",
+        "sweep-20260915-osmo-marktechpost"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "nvidia-osmo-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "NVIDIA released OSMO as an open-source, Kubernetes-native physical-AI workflow orchestrator with an Apache-2.0 repository license.",
+        "zhHans": "NVIDIA 发布 OSMO，将其作为开源、Kubernetes 原生的物理 AI 工作流编排器；代码仓库采用 Apache-2.0 许可证。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-osmo-developer",
+        "sweep-20260915-osmo-github",
+        "sweep-20260915-osmo-marktechpost"
+      ]
+    },
+    {
+      "id": "nvidia-osmo-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "OSMO's documented workflows span data generation, training, simulation, evaluation, and hardware-in-the-loop testing across heterogeneous compute.",
+        "zhHans": "OSMO 的文档化工作流覆盖异构计算环境中的数据生成、训练、仿真、评估和硬件在环测试。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260915-osmo-developer",
+        "sweep-20260915-osmo-github",
+        "sweep-20260915-osmo-marktechpost"
+      ]
+    },
+    {
+      "id": "nvidia-osmo-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "OSMO orchestrates existing tools and prepares artifacts; NVIDIA says it does not itself deploy models to production robots or replace simulators and training frameworks.",
+        "zhHans": "OSMO 编排现有工具并准备产物；NVIDIA 说明它本身不会将模型部署到生产机器人，也不替代仿真器和训练框架。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260915-osmo-developer",
+        "sweep-20260915-osmo-github"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260915-osmo-developer",
+      "supports": [
+        "nvidia-osmo-2026",
+        "nvidia-osmo-fact",
+        "nvidia-osmo-impact",
+        "nvidia-osmo-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-osmo-github",
+      "supports": [
+        "nvidia-osmo-2026",
+        "nvidia-osmo-fact",
+        "nvidia-osmo-impact",
+        "nvidia-osmo-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260915-osmo-marktechpost",
+      "supports": [
+        "nvidia-osmo-2026",
+        "nvidia-osmo-fact",
+        "nvidia-osmo-impact"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "gemini-robotics-2025",
+    "gemini-robotics-er2-2026",
+    "aws-nvidia-2m-gpu-expansion-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "reviewedAt": "2026-09-15",
+    "reviewer": "gang",
+    "curator": "gang",
+    "reviewProvenance": "v2.3",
+    "lastSourceCheckAt": "2026-09-15",
+    "reviewNotes": "L1 open-source infrastructure release. The workflow and license are directly documented; production-scale claims remain attributed to NVIDIA.",
+    "changeLog": [
+      {
+        "date": "2026-09-15",
+        "changeType": "created",
+        "summary": "Created as a reviewed, unpublished draft after the 2026-09-15 confirmation layer."
+      }
+    ],
+    "publishedAt": "2026-09-15"
+  }
+}
