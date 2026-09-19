@@ -6,7 +6,9 @@
     "dev": "vite",
     "validate": "python3 scripts/validate_all.py",
     "test:seo": "node --test tests/seo-routing.test.mjs",
-    "build": "python3 scripts/validate_all.py && python3 scripts/build_events.py && node scripts/build_og_images.mjs && python3 scripts/build_directions.py && python3 scripts/build_arcs.py && python3 scripts/build_feed.py && vite build && python3 scripts/validate_build_assets.py && python3 scripts/build_localized_pages.py",
+    "test:editorial": "python3 -B -m unittest discover -s tests -p 'test_editorial*.py' -v",
+    "test": "npm run test:editorial && npm run test:seo",
+    "build": "npm run test:editorial && python3 scripts/validate_all.py && python3 scripts/build_events.py && node scripts/build_og_images.mjs && python3 scripts/build_directions.py && python3 scripts/build_arcs.py && python3 scripts/build_feed.py && vite build && python3 scripts/validate_build_assets.py && python3 scripts/build_localized_pages.py",
     "preview": "vite preview"
   },
   "devDependencies": {

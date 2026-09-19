@@ -1,7 +1,9 @@
 # Possible Directions 筛选与评估体系
 
-**版本**：v2.1
-**更新日期**：2026-07-20
+**版本**：v2.4
+**更新日期**：2026-09-18
+
+权威边界见 [EDITORIAL-STANDARD](../workflow/EDITORIAL-STANDARD.md) DIR-01；新记录结构见 [REVIEW-CONTRACT](REVIEW-CONTRACT.md)。本模块不把内部事件评级阈值当作公开方向实现标准。
 **适用范围**：首页 `Possible Directions / 可能方向` 模块的候选发现、公开发布、持续复核和方法页披露。
 
 关联文档：
@@ -155,7 +157,7 @@ EpochArc 不自行发明公开的“达成条件”。
 - `hold`：方向有意思，但事件链或反向信号不够完整。
 - `reject`：方向过宽、过虚、已成事实、或证据太弱。
 
-每次决定必须写入 `data/possible_directions_screening_log.json`，至少包含 `id`、`decision`、双语理由、reviewer、reviewedAt 和本轮 `runId`。发布数据中的 `editorial.screeningRunId` 必须回指该轮记录。
+v2.4 新决定写入 `governance/runs/{runId}.json` 的 directionDecisions，至少包含 id/decision/reason；review 中记录实际操作者、共识搜索和反向证据。公开数据 editorial.screeningRunId 和 review.runId 必须回指同一批次与匹配 publish 决定。旧 data/possible_directions_screening_log.json 冻结保留，不覆盖历史记录。
 
 ---
 
@@ -167,7 +169,7 @@ EpochArc 不自行发明公开的“达成条件”。
 | --- | --- |
 | 事件锚点 | 至少关联 2 条已发布的时间轴事件 |
 | 现实信号 | 至少有 2 条 `observed signals`，且每条信号都绑定 `eventIds` 与 `sourceIds` |
-| 来源质量 | 总体至少覆盖 2 个独立来源，且不能全来自同一家公司 |
+| 来源质量 | 至少 2 个独立信息起源和 2 个控制主体，有主张级摘录；转载同一公告不算独立 |
 | 方向清晰 | 普通读者能理解“这些事件共同指向什么变化” |
 | 尚未成为常态 | 不能是已经普遍成立的现状总结 |
 | 反向约束 | 至少写出 1 条重要限制或未解问题 |
@@ -256,9 +258,9 @@ signal 是：
 - 哪些公开来源支持这一点；
 - 本站只是采用该口径，不是自行发明口径。
 
-### 7.3 本轮结论
+### 7.3 历史结论（2026-07-20，非每轮自动结论）
 
-本轮 4 条首页方向都应保持 `monitor_only`。
+当时 4 条首页方向保持 `monitor_only`；后续复核需重新记录实际依据。
 
 原因不是方向不重要，而是：
 

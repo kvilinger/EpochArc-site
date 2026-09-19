@@ -1,0 +1,1383 @@
+{
+  "version": "2.4.0",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "scope": "16 published snapshots plus explicitly synthetic counterfactuals; no draft packages; not source re-verification or model benchmarking",
+  "cases": [
+    {
+      "id": "fujitsu-monaka-server-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/fujitsu-monaka-server-2026.json",
+      "snapshotDigest": "02a70a3b1f8df510a3d6c31c43d805d9874e136824af075c5cd99eadf26cab93",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-CAPABILITY",
+        "L2-COMMERCE"
+      ],
+      "boundary": "计划销售/出货不等于部署；公司性能主张不等于复现。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "sakana-fugu-max-ultra-v2-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/sakana-fugu-max-ultra-v2-2026.json",
+      "snapshotDigest": "ba7de5d8bb85fcb33d6dfcc6a2cb8044ae296bd96dc90d29fa4c8f59c471bb3f",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-CAPABILITY",
+        "L2-PRODUCT"
+      ],
+      "boundary": "API 可用可支持发布事实，不能替代独立性能复测或生产采用。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "positron-series-c-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/positron-series-c-2026.json",
+      "snapshotDigest": "503bb13bf0edf76bc7043d93925d0f584120d2f16197ab1ad584a4f0e21be426",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-COMMERCE"
+      ],
+      "boundary": "融资额和公司自述机架部署不足以单独证明外部结构变化。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "zai-proposed-financing-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/zai-proposed-financing-2026.json",
+      "snapshotDigest": "d927e09673af9823434b669c92586cff72d42f53161a00c690494b8c3cf25ebd",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-COMMERCE"
+      ],
+      "boundary": "条件交易须保持 proposed；不把资金用途计划计为已发生影响。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "anthropic-threat-intelligence-report-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/anthropic-threat-intelligence-report-2026.json",
+      "snapshotDigest": "6529fc939fc407e739d3fc43f2502f49c23a7f41279a4d24e6a0921ababe16a9",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-SAFETY",
+        "L2-SAFETY-PRACTICE"
+      ],
+      "boundary": "当事方报告不自动等于独立调查；实践路径也需要真实外部采用。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "kimi-k3-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/kimi-k3-2026.json",
+      "snapshotDigest": "833b5d8126cb8221b6799b0d5873c09fb34512e07647ce05f77305a1b2ab1080",
+      "currentLevelContextOnly": 1,
+      "relevantRules": [
+        "L2-CAPABILITY",
+        "L2-PRODUCT-ACCESS"
+      ],
+      "boundary": "公告、权重实际开放与第三方测评是不同阶段和验证对象。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "transformer-2017",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/transformer-2017.json",
+      "snapshotDigest": "729972ad7529c3b09c7e0f2ddaa29de8c60ec3b624046055f478de7e914760cc",
+      "currentLevelContextOnly": 3,
+      "relevantRules": [
+        "L2-METHOD",
+        "L2-PRODUCT"
+      ],
+      "boundary": "方法路径不能局限于产品发布；引用总量不替代无关联实际后续采用。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "turing-test-1950",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/turing-test-1950.json",
+      "snapshotDigest": "5845156e4a8ca7c4abc7a1dc7f5648c18d8af99e148125c05180ee5d399320c9",
+      "currentLevelContextOnly": 3,
+      "relevantRules": [
+        "L2-METHOD",
+        "L2-SOCIETY"
+      ],
+      "boundary": "基础框架不必有现代产品指标；需后续实际使用与跨领域持续影响证据。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "chatgpt-2022",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/chatgpt-2022.json",
+      "snapshotDigest": "b63e2186ffcab947acb83b4ac57ccd036d1e7c86e189112a21789c0d3cf65169",
+      "currentLevelContextOnly": 3,
+      "relevantRules": [
+        "L2-PRODUCT-SCALE",
+        "L2-SOCIETY"
+      ],
+      "boundary": "用户口径和时间窗须独立核对；原有 L3 不直接充当标准答案。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "eu-ai-act-2024",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/eu-ai-act-2024.json",
+      "snapshotDigest": "9affa9a6ce4ab81a9ad9188e7693c7de4ab99f1e54ba7397979e92df72c57aba",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-GOVERNANCE"
+      ],
+      "boundary": "议会通过、正式立法与生效不混写；独立法律解释不能只用百科替代。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "alphago-2016",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/alphago-2016.json",
+      "snapshotDigest": "b15d24af758c3b25bb9fa9395a32b1d8dd89e4a3a46ea96025c221999c5af588",
+      "currentLevelContextOnly": 3,
+      "relevantRules": [
+        "L2-CAPABILITY",
+        "L2-SOCIETY"
+      ],
+      "boundary": "公开对局结果与社会持续行为分开；独立裁判/复测不是必须重训模型。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "mcp-protocol-2024",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/mcp-protocol-2024.json",
+      "snapshotDigest": "cbe02071c62f4042be23af6fb1b04fb91cf23553e634d38284c0a1378720558f",
+      "currentLevelContextOnly": 1,
+      "relevantRules": [
+        "L2-PRODUCT",
+        "L2-METHOD"
+      ],
+      "boundary": "协议发布和真实多组织使用分别核实，不能因旧等级是 L1 就忽略后续变化。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "openai-rubygems-gemstuffer-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/openai-rubygems-gemstuffer-2026.json",
+      "snapshotDigest": "c0cd74a9118dbcf90cac0b1f75ec44e6e72be970f1680cf64b1750564884a27c",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-SAFETY"
+      ],
+      "boundary": "补救动作、是否成功窃取、攻击者归因分开；未定归因不能当成确定事实。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "openai-hf-breach-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/openai-hf-breach-2026.json",
+      "snapshotDigest": "1e9242955ab076e0a6082157c4ffba82fe2042c1d679791b4bdc7af2e9f55e3b",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-SAFETY",
+        "L2-GOVERNANCE"
+      ],
+      "boundary": "事故与后续程序动作分开，议会索取资料不等于违法认定。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "openai-metr-hugging-face-investigations-2026",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/openai-metr-hugging-face-investigations-2026.json",
+      "snapshotDigest": "d2211cb9966bbac313f23361e393d2b44729d29ce1027f699b45d1338814e840",
+      "currentLevelContextOnly": 2,
+      "relevantRules": [
+        "L2-SAFETY",
+        "L2-GOVERNANCE"
+      ],
+      "boundary": "复盘报告不等于第二次事故；与原事故节点共享的后续信息要做身份去重。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "vibecoding-2025",
+      "kind": "published_snapshot",
+      "snapshot": "governance/calibration/snapshots/vibecoding-2025.json",
+      "snapshotDigest": "4707bfa9475ade2e5b2724da7fadc07d5de1b2e15fbf0cd7a8b94df099bb67cc",
+      "currentLevelContextOnly": 1,
+      "relevantRules": [
+        "L2-SOCIETY",
+        "L2-PRODUCT"
+      ],
+      "boundary": "词语流行/词典收录不等于测得持续编程行为变化。",
+      "missingForFinalRating": "本包仅冻结仓库既有摘要/主张及来源登记，未重新打开网页，缺 v2.4 摘录、独立起源和观察期复核；不能直接重评公开级别。",
+      "expected": {
+        "decision": "review_required",
+        "significance": null
+      }
+    },
+    {
+      "id": "synthetic-L2-CAPABILITY-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-CAPABILITY",
+            "values": {
+              "previously_infeasible_task": true,
+              "comparable_baseline": true,
+              "independent_replication": true
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-CAPABILITY-previously_infeasible_task-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-CAPABILITY",
+            "values": {
+              "previously_infeasible_task": null,
+              "comparable_baseline": true,
+              "independent_replication": true
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-CAPABILITY-comparable_baseline-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-CAPABILITY",
+            "values": {
+              "previously_infeasible_task": true,
+              "comparable_baseline": null,
+              "independent_replication": true
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-CAPABILITY-independent_replication-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-CAPABILITY",
+            "values": {
+              "previously_infeasible_task": true,
+              "comparable_baseline": true,
+              "independent_replication": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-METHOD-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": true,
+              "independent_follow_on_works": 2
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-METHOD-new_method_or_framework-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": null,
+              "independent_follow_on_works": 2
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-METHOD-independent_follow_on_works-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": true,
+              "independent_follow_on_works": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-METHOD-independent_follow_on_works-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": true,
+              "independent_follow_on_works": 1
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "阈值下沿测试。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-ACCESS-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT-ACCESS",
+            "values": {
+              "material_access_change": true,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-ACCESS-material_access_change-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT-ACCESS",
+            "values": {
+              "material_access_change": null,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-ACCESS-unaffiliated_production_organizations-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT-ACCESS",
+            "values": {
+              "material_access_change": true,
+              "unaffiliated_production_organizations": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-ACCESS-unaffiliated_production_organizations-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT-ACCESS",
+            "values": {
+              "material_access_change": true,
+              "unaffiliated_production_organizations": 1
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "阈值下沿测试。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": true,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-new_workflow-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": null,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-unaffiliated_production_organizations-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": true,
+              "unaffiliated_production_organizations": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-unaffiliated_production_organizations-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": true,
+              "unaffiliated_production_organizations": 1
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "阈值下沿测试。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-SCALE-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT-SCALE",
+            "values": {
+              "new_workflow": true,
+              "verified_active_users": 1000000
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-SCALE-new_workflow-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT-SCALE",
+            "values": {
+              "new_workflow": null,
+              "verified_active_users": 1000000
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-SCALE-verified_active_users-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT-SCALE",
+            "values": {
+              "new_workflow": true,
+              "verified_active_users": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-PRODUCT-SCALE-verified_active_users-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-PRODUCT-SCALE",
+            "values": {
+              "new_workflow": true,
+              "verified_active_users": 999999
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "阈值下沿测试。"
+    },
+    {
+      "id": "synthetic-L2-COMMERCE-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-COMMERCE",
+            "values": {
+              "structural_change_executed": true,
+              "external_actors_affected": 2
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-COMMERCE-structural_change_executed-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-COMMERCE",
+            "values": {
+              "structural_change_executed": null,
+              "external_actors_affected": 2
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-COMMERCE-external_actors_affected-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-COMMERCE",
+            "values": {
+              "structural_change_executed": true,
+              "external_actors_affected": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-COMMERCE-external_actors_affected-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-COMMERCE",
+            "values": {
+              "structural_change_executed": true,
+              "external_actors_affected": 1
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "阈值下沿测试。"
+    },
+    {
+      "id": "synthetic-L2-GOVERNANCE-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-GOVERNANCE",
+            "values": {
+              "binding_or_precedential_action": true,
+              "applies_beyond_named_parties": true,
+              "independent_legal_analysis": true
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-GOVERNANCE-binding_or_precedential_action-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-GOVERNANCE",
+            "values": {
+              "binding_or_precedential_action": null,
+              "applies_beyond_named_parties": true,
+              "independent_legal_analysis": true
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-GOVERNANCE-applies_beyond_named_parties-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-GOVERNANCE",
+            "values": {
+              "binding_or_precedential_action": true,
+              "applies_beyond_named_parties": null,
+              "independent_legal_analysis": true
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-GOVERNANCE-independent_legal_analysis-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-GOVERNANCE",
+            "values": {
+              "binding_or_precedential_action": true,
+              "applies_beyond_named_parties": true,
+              "independent_legal_analysis": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SAFETY-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SAFETY",
+            "values": {
+              "documented_incident": true,
+              "external_remedial_action": true,
+              "independent_investigation": true
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-SAFETY-documented_incident-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SAFETY",
+            "values": {
+              "documented_incident": null,
+              "external_remedial_action": true,
+              "independent_investigation": true
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SAFETY-external_remedial_action-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SAFETY",
+            "values": {
+              "documented_incident": true,
+              "external_remedial_action": null,
+              "independent_investigation": true
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SAFETY-independent_investigation-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SAFETY",
+            "values": {
+              "documented_incident": true,
+              "external_remedial_action": true,
+              "independent_investigation": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SAFETY-PRACTICE-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SAFETY-PRACTICE",
+            "values": {
+              "new_safety_practice": true,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-SAFETY-PRACTICE-new_safety_practice-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SAFETY-PRACTICE",
+            "values": {
+              "new_safety_practice": null,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SAFETY-PRACTICE-unaffiliated_production_organizations-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SAFETY-PRACTICE",
+            "values": {
+              "new_safety_practice": true,
+              "unaffiliated_production_organizations": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SAFETY-PRACTICE-unaffiliated_production_organizations-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SAFETY-PRACTICE",
+            "values": {
+              "new_safety_practice": true,
+              "unaffiliated_production_organizations": 1
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "阈值下沿测试。"
+    },
+    {
+      "id": "synthetic-L2-SOCIETY-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SOCIETY",
+            "values": {
+              "measured_behavior_change": true,
+              "independent_populations": 2,
+              "observed_days": 90
+            }
+          }
+        ],
+        "identityDecision": "new"
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      },
+      "boundary": "仅构造已核实事实向量，测试门槛；不声称任何真实事件具备这些证据。"
+    },
+    {
+      "id": "synthetic-L2-SOCIETY-measured_behavior_change-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SOCIETY",
+            "values": {
+              "measured_behavior_change": null,
+              "independent_populations": 2,
+              "observed_days": 90
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SOCIETY-independent_populations-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SOCIETY",
+            "values": {
+              "measured_behavior_change": true,
+              "independent_populations": null,
+              "observed_days": 90
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SOCIETY-independent_populations-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SOCIETY",
+            "values": {
+              "measured_behavior_change": true,
+              "independent_populations": 1,
+              "observed_days": 90
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "阈值下沿测试。"
+    },
+    {
+      "id": "synthetic-L2-SOCIETY-observed_days-unknown",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SOCIETY",
+            "values": {
+              "measured_behavior_change": true,
+              "independent_populations": 2,
+              "observed_days": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "新候选事实成立但此路径有未知条件：最高可支持 L1；不用于自动降级既有节点。"
+    },
+    {
+      "id": "synthetic-L2-SOCIETY-observed_days-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "routes": [
+          {
+            "ruleId": "L2-SOCIETY",
+            "values": {
+              "measured_behavior_change": true,
+              "independent_populations": 2,
+              "observed_days": 89
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 1
+      },
+      "boundary": "阈值下沿测试。"
+    },
+    {
+      "id": "synthetic-L3-met",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "coreGradesAtLeastB": true,
+        "hasPrimary": true,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": true,
+              "independent_follow_on_works": 2
+            }
+          },
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": true,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ],
+        "observedDays": 365,
+        "independentOrigins": 3,
+        "independentPublishers": 3
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 3
+      }
+    },
+    {
+      "id": "synthetic-L3-observedDays-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "coreGradesAtLeastB": true,
+        "hasPrimary": true,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": true,
+              "independent_follow_on_works": 2
+            }
+          },
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": true,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ],
+        "observedDays": 364,
+        "independentOrigins": 3,
+        "independentPublishers": 3
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      }
+    },
+    {
+      "id": "synthetic-L3-independentOrigins-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "coreGradesAtLeastB": true,
+        "hasPrimary": true,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": true,
+              "independent_follow_on_works": 2
+            }
+          },
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": true,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ],
+        "observedDays": 365,
+        "independentOrigins": 2,
+        "independentPublishers": 3
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      }
+    },
+    {
+      "id": "synthetic-L3-independentPublishers-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "coreGradesAtLeastB": true,
+        "hasPrimary": true,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": true,
+              "independent_follow_on_works": 2
+            }
+          },
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": true,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ],
+        "observedDays": 365,
+        "independentOrigins": 3,
+        "independentPublishers": 2
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      }
+    },
+    {
+      "id": "synthetic-L3-hasPrimary-below",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "coreGradesAtLeastB": true,
+        "hasPrimary": false,
+        "routes": [
+          {
+            "ruleId": "L2-METHOD",
+            "values": {
+              "new_method_or_framework": true,
+              "independent_follow_on_works": 2
+            }
+          },
+          {
+            "ruleId": "L2-PRODUCT",
+            "values": {
+              "new_workflow": true,
+              "unaffiliated_production_organizations": 2
+            }
+          }
+        ],
+        "observedDays": 365,
+        "independentOrigins": 3,
+        "independentPublishers": 3
+      },
+      "expected": {
+        "decision": "new",
+        "significance": 2
+      }
+    },
+    {
+      "id": "synthetic-unverified-core",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": false,
+        "routes": []
+      },
+      "expected": {
+        "decision": "hold",
+        "significance": null
+      }
+    },
+    {
+      "id": "synthetic-identity-update",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "identityDecision": "update",
+        "routes": []
+      },
+      "expected": {
+        "decision": "update",
+        "significance": 1
+      }
+    },
+    {
+      "id": "synthetic-identity-merge",
+      "kind": "synthetic_counterfactual",
+      "inputs": {
+        "coreFactVerified": true,
+        "identityDecision": "merge",
+        "routes": []
+      },
+      "expected": {
+        "decision": "merge",
+        "significance": 1
+      }
+    }
+  ]
+}

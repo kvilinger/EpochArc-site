@@ -1,7 +1,9 @@
 # EpochArc 数据模型规范
 
-**版本**：v2.3
-**更新日期**：2026-08-19
+**版本**：v2.4（已接受）
+**更新日期**：2026-09-18
+
+编辑规则权威：[EDITORIAL-STANDARD](../workflow/EDITORIAL-STANDARD.md)；参数唯一来源：[policy.json](../../governance/policy.json)。本文件定义公开字段，不重复维护评级准入规则。新增审计字段见 [REVIEW-CONTRACT](REVIEW-CONTRACT.md)。
 **适用范围**：AI 历史时间轴内容的结构、类型定义、来源标准、评分规则和数据校验。
 
 关联文档：
@@ -37,7 +39,7 @@
 ### 1.3 宁缺毋滥
 
 - 只有社交媒体热度、无原始来源的内容，不发布为正式节点。
-- 单一公司营销说法，只能作为候选。
+- 单一公司营销说法不能证明客观性能；公告可以直接证明“公司宣布了什么”，是否发布仍按核心事实与阶段规则评估。
 - 对未来的判断必须写成预测，不作为事实。
 
 ---
@@ -125,7 +127,7 @@ candidate → draft → reviewed → published → archived
 - `published` 必须填写 `editorial.reviewedAt`、`editorial.reviewer`、`editorial.reviewProvenance` 和 `editorial.publishedAt`。
 - `archived` 保留源文件和变更记录，但默认不进入时间轴；引用它的方向或 Arc 必须先解除引用或明确迁移目标。
 - 任何逆向状态变化都必须增加 `changeLog`，并使用 `correction` 或 `archived` 说明原因。
-- 当前为单人策展时，`curator` 与 `reviewer` 可以是同一人，但两个责任字段仍必须显式填写。
+- `curator/reviewer` 记录实际操作者，不自动表示人类。v2.4 L2/L3 需要独立会话或真实人工复核；发布另需精确版本的人工批准。新草稿不要求编造复核记录。
 
 `slug` 是公开 URL 的唯一标识，必须全局唯一且符合 `^[a-z0-9]+(?:[.-][a-z0-9]+)*$`。构建器不得静默用 `id` 替代缺失的 `slug`。
 
@@ -186,7 +188,7 @@ data/sources.json          ← 来源独立表
 
 #### 多分类规则
 
-最多 2 个分类。加第二分类的条件：删除这个分类维度会丢失 ≥ 30% 的事件故事信息。
+最多 2 个分类。按 EDITORIAL-STANDARD 的 CLASS-01/02：主分类按核心动作，次分类须绑定一个独立成句、有来源且确实增加实际变化信息的 claim；不再使用不可测的 30% 标准。
 
 **判定启发：**
 
@@ -202,14 +204,7 @@ data/sources.json          ← 来源独立表
 
 #### 日期选择规则
 
-时间轴上的日期是**"大量普通人可感知到这件事的时刻"**：
-
-| 事件形态 | 日期取什么 |
-| --- | --- |
-| 单日事件 | 发生日 |
-| 渐变 + 引爆 | 引爆点（新闻量/GitHub stars/社交讨论爆发的时刻） |
-| 无明确引爆点 | 最早的大规模公开报道日 |
-| 仍在进行中 | 有代表性的里程碑日 |
+按 IDENT-02：取节点所述动作发生日；只知披露日就明确写为披露节点；保留来源支持的 day/month/year 精度。公告、预览、实际可用、部署、立法通过和生效不可混写。不以热度峰值替代动作日期。
 
 ---
 
@@ -231,7 +226,7 @@ export type EvidenceGrade = 'A' | 'B' | 'C' | 'D';
 使用原则：
 
 - 每个 L2/L3 事件至少 2 条 claim：一条事实 + 一条影响。
-- `controversy = true` 且 L2 以上，必须有一条 `claimType = limitation`。
+- v2.4 所有等级的 `controversy = true` 都必须有一条 `claimType = limitation` 及对应证据。
 - 每条 claim 必须有唯一非空 `id`、完整中英文 `text`、合法的 `claimType` 和 `evidenceGrade`，并通过非空 `sourceIds` 直接绑定证据。
 - 不接受旧别名 `statement`、`type`、`confidence`、`sources`；`assessment` 也不是合法的 `claimType`。
 - D 级证据只用于候选池，不作为正式事件核心依据。
@@ -246,7 +241,7 @@ export interface ImpactAssessment {
   severity: ImpactSeverity;
   direction: 'positive' | 'negative' | 'neutral';
   description: LocalizedText;
-  affectedGroups: string[];
+  affectedGroups: string[];            // v2.4 只允许 policy.audiences 中的角色 ID
   timeframe: ImpactTimeframe;
   evidenceGrade: EvidenceGrade;
   sourceIds: string[];
@@ -274,6 +269,8 @@ export type ImpactTimeframe = 'immediate' | 'short' | 'medium' | 'long';
 
 不再允许 `mixed`。正负影响必须拆开记录，避免同一条记录同时承担相反语义。
 
+v2.4 每条影响在 review.impactBasis 中记录观察期、证据和基线/结果；不计算尚未发生的预期。无可核实影响的 L1 可以 impacts=[]、impactIndex=0，不要捏造影响来满足数组要求。
+
 ---
 
 ### 2.5 来源
@@ -289,6 +286,8 @@ export interface Source {
   url: string;
   archiveUrl?: string;
   publisher?: string;
+  publisherId?: string;              // v2.4 新建/修改必填：控制主体 ID
+  originId?: string;                 // v2.4 新建/修改必填：主要信息起源
   authors?: string[];
   publishedAt?: string;
   accessedAt?: string;
@@ -312,7 +311,7 @@ export type SourceIndependence =
 
 export interface SourceRef {
   sourceId: string;
-  supports?: string[];                 // 可选的编辑提示；证据绑定以 claim/impact 的 sourceIds 为准
+  supports: string[];                  // 非空：事件 ID 或 claim ID；具体证据仍以 claim/impact.sourceIds 为准
   quote?: string;
 }
 ```
@@ -326,7 +325,7 @@ export interface SourceRef {
 - 社区帖子与热度聚合：`community_signal`
 - 暂时无法判断：`unknown`，不得计入独立来源门槛
 
-“2 个独立来源”按出版机构/控制主体去重，而不是按 URL 数量计数；同一媒体、同一公司集团或同一份稿件的转载只能算 1 个来源。校验器优先使用 `publisher`，缺失时以 URL 域名作为保守去重键。
+v2.4 同时按 publisherId 与摘录级 originId 区分控制主体和信息起源；同一稿件转载不能算独立验证。关系与验证范围写在 review.evidence 每条摘录上。旧 publisher/域名去重只适用于冻结历史记录，不是新证据的独立性判据。
 
 ---
 
@@ -465,7 +464,9 @@ export interface EditorialMetadata {
   lastSourceCheckAt?: string;
   curator?: string;
   reviewer?: string;
-  reviewProvenance?: 'legacy_pre_v23' | 'v2.3';
+  reviewProvenance?: 'legacy_pre_v23' | 'v2.3' | 'v2.4';
+  reviewRecord?: string;              // v2.4 审核后必填，governance/reviews 下的相对路径
+  screeningRunId?: string;            // 方向必填，回指真实批次
   curatorNote?: LocalizedText;
   changeLog?: ChangeLogEntry[];
 }
@@ -480,7 +481,7 @@ export interface ChangeLogEntry {
 }
 ```
 
-`createdAt` 与 `updatedAt` 是每个正式事件的必填字段。`lastReviewed` 是旧字段，必须迁移为 `reviewedAt`。`reviewProvenance = legacy_pre_v23` 表示该条目只完成了旧数据迁移，不能冒充按当前规范完成的事实复核；经过当前规范复核后才可改为 `v2.3`，并同步更新 `updatedAt`、`reviewedAt` 与 `changeLog`。`curatorNote` 用于保留双语策展说明，不替代时间和责任人字段。
+`createdAt/updatedAt` 是正式事件必填；`lastReviewed` 是旧别名。v2.4 已审核/发布记录必须有 curator/reviewer/changeLog/lastSourceCheckAt/reviewRecord 等，完整约束见 REVIEW-CONTRACT。历史标记只代表旧记录，不能供新建或修改内容选择；只有内容与依赖指纹均未改变才获历史豁免。publishedAt 不随更新重置。curatorNote 不替代责任与时间字段。
 
 ---
 
@@ -495,15 +496,15 @@ export interface ChangeLogEntry {
 | 3 | 专家分析与社区整理：研究者博客、专业通讯、会议演讲 | 背景解释、趋势线索、候选发现 |
 | 4 | 社区热度信号：社交媒体、HN、Reddit、论坛 | 仅用于发现，不可独立支撑结论 |
 
-类型与层级必须相容：论文、官方公告、模型卡、代码/法规/司法原文和直接技术报告才有资格标为 Tier 1；新闻报道最高为 Tier 2；普通分析和百科默认 Tier 3。经过学术编辑的参考工具可在 `notes` 中说明理由后标 Tier 2；Wikipedia 不得作为 Tier 2 的默认替代品。社区内容只能标 Tier 4。
+类型与层级必须相容：论文、官方公告、模型卡、代码/法规/司法原文和直接技术报告才有资格标为 Tier 1；新闻报道最高为 Tier 2；普通分析和百科默认 Tier 3。v2.4 百科不得以独立 Tier 2 代替主张核实；引用其原始文献时另建真实来源记录。社区内容只能标 Tier 4。
 
 ### 3.2 最低来源要求
 
 | 内容类型 | 发布最低要求 |
 | --- | --- |
 | L1 事件 | 1 个 Tier 1，或 2 个相互独立的 Tier 2 |
-| L2 事件 | 1 个 Tier 1 + 1 个独立 Tier 2/3；若不存在可获得的一手材料，可用 2 个相互独立的 Tier 2，并在编辑记录中说明 |
-| L3 事件 | 1 个 Tier 1 + 2 个独立 Tier 2；若有争议须收录反方来源 |
+| L2 事件 | 核心事实 ≥B，并满足至少一个 SIG-02 路径的独立验证；无一手资料时两个独立 Tier 2 加缺失理由，不能豁免路径条件 |
+| L3 事件 | 原始材料、SIG-03 的跨类别/持续性/独立起源门槛；有争议须收录反方来源 |
 | 影响评估 | 每个核心影响至少 1 个可追溯来源 |
 | Possible Direction | 至少 2 条 observed signals + 1 条明确 counterSignal |
 
@@ -522,13 +523,11 @@ significance（L1-L3）和 impactIndex（0-10）是两套独立的评价体系�
 
 | 等级 | 名称 | 判定标准 |
 | --- | --- | --- |
-| L1 | Important | 对长期脉络有记录价值；影响范围有限；通常不单独改变行业方向 |
-| L2 | Key | 推动研究范式、产品采用、商业模式、政策讨论或公众认知中的至少一项 |
-| L3 | Turning Point | 改变主流技术路线、公众认知、资本配置、监管议程或社会行为；跨领域且可持续 |
+| L1 | Important | 核心事实成立、有记录价值，但尚未证明满足更高路径 |
+| L2 | Key | 满足 EDITORIAL-STANDARD SIG-02 中至少一个类别变化路径 |
+| L3 | Turning Point | 满足 SIG-03 的跨类别、实证持续性与独立来源条件 |
 
-- L3 不应过多。
-- 古早理论事件可以是 L3，但需证明长期引用和范式影响。
-- 新事件默认不给 L3，确认外溢后再升级。
+完整条件、未知处理、对照和升级边界只维护于总表与 policy.json。不设等级比例配额，不能仅按事件年龄升级。
 
 ### 4.2 影响维度
 
@@ -544,13 +543,12 @@ significance（L1-L3）和 impactIndex（0-10）是两套独立的评价体系�
 
 | 分值 | 含义 |
 | --- | --- |
-| +3 | 极强正向：跨领域、长期、可重复观察 |
-| +2 | 明确正向：对一个或多个群体产生实质改变 |
-| +1 | 有限正向：方向清楚但范围有限 |
-| 0 | 中性或正负高度混合无法拆分 |
-| -1 | 有限负向：风险存在但范围有限 |
-| -2 | 明确负向：已造成可观察损害或高概率结构性风险 |
-| -3 | 极强负向：跨领域、长期、难以逆转 |
+| ±3 | 满足 ±2，并达到 IMP-02 的受众/实证持续期门槛 |
+| ±2 | 有来源支持的基线→结果实质变化 |
+| ±1 | 已观察到方向性后果，但未达实质变化门槛 |
+| 0 | 实测中性；不是正负相抵，也不是未知 |
+
+符号表示受影响群体的获益/损害，不表示事件好坏；潜在后果不入指数。完整判定见 IMP-01/02。
 
 ### 4.4 影响分：`impactIndex`
 
@@ -561,11 +559,11 @@ impactIndex =
   dimensionScore      ← 每个影响维度只取最大的 |severity|，再求和 / 3，上限 4
   + evidenceBonus     ← 取所有 impact 中最弱的 evidenceGrade：A=+1.5, B=+1, C=+0.5；D 不得发布
   + durabilityBonus   ← 取最高 timeframe：long=+1.5, medium=+1, short=+0.5, immediate=0
-  + scopeBonus        ← 去空格、转小写、去重后的受影响群体数：≥4类+2, 3类+1.5, 2类+1, 1类+0.5
+  + scopeBonus        ← 受影响群体数：≥4类+2, 3类+1.5, 2类+1, 1类+0.5；v2.4 仅使用 policy 受众 ID
   + controversyAdj    ← controversy=true 且任一核心 claim 为 C 级时 -0.5，否则 0
 ```
 
-先将原始分截断到 0-10，再按 `floor(score + 0.5)` 四舍五入为整数。重复添加同一维度或同义 affected group 不得提高分数。
+先将原始分截断到 0-10，再按 `floor(score + 0.5)` 四舍五入为整数。重复添加同一维度或同义 affected group 不得提高分数。现公式各项上限总和为 9，不能为了使用满 0–10 手动加分。v2.4 无观察影响的 L1 返回 0；旧评分不自动重算。
 
 #### EvidenceGrade 判定
 
@@ -582,17 +580,13 @@ EvidenceGrade 评价的是具体 claim/impact 的证据链，不等于单个来�
 
 | 值 | 定义 |
 | --- | --- |
-| broad | 事实和主要影响解释已被广泛接受 |
+| broad | 主要影响有至少两组独立支持且无未解决的实质反证，见 CONS-01 |
 | debated | 事实成立，但影响规模、归因或长期后果有明显分歧 |
 | emerging | 早期趋势判断，证据正在积累 |
 
 ### 4.6 争议标记
 
-`controversy = true` 的条件：
-
-- 有权威反方来源。
-- 存在法律、伦理、安全或版权争议。
-- 社会影响、风险或归因争议很大。
+按 CONS-01：存在具体且有证据的争议，附 limitation claim；主题涉及安全或法律不自动等于 controversy，证据不足也不自动等于存在争议。
 
 ---
 
@@ -611,7 +605,7 @@ EvidenceGrade 评价的是具体 claim/impact 的证据链，不等于单个来�
 - 每个事件的 `searchSummary`、`summary` 和 `narrative` 都包含非空的 `en` 与 `zhHans`，且公开渲染不得用 `searchSummary` 替代 `summary`。
 - 每条 claim 的 `id`、`text`、`claimType`、`evidenceGrade`、`sourceIds` 完整且合法。
 - Claim 引用的 `sourceIds` 必须存在于 `data/sources.json`，且数组不能为空。
-- 每个事件都有 `editorial.createdAt` 和 `editorial.updatedAt`；可选的 `changeLog` 条目结构合法。
+- 每个事件都有 createdAt/updatedAt；v2.4 审核后还需完整审核与批准契约，changeLog 非空。
 - 每条方向至少有 2 条 `signals`。
 - 每条 `signals` 至少有 1 个 `eventIds` 和 1 个 `sourceIds`。
 - `signals[].eventIds` 必须存在于 `events.json`。
@@ -622,67 +616,6 @@ EvidenceGrade 评价的是具体 claim/impact 的证据链，不等于单个来�
 
 ---
 
-## 6. 附录：v2 事件完整示例（ChatGPT）
+## 6. 可执行契约样例
 
-```json
-{
-  "id": "chatgpt-2022",
-  "slug": "chatgpt-launch",
-  "title": {
-    "en": "OpenAI launches ChatGPT",
-    "zhHans": "OpenAI 发布 ChatGPT"
-  },
-  "summary": {
-    "en": "OpenAI released ChatGPT, a conversational AI product based on GPT-3.5, free to the public. It reached 1 million users in 5 days and 100 million in 2 months.",
-    "zhHans": "OpenAI 发布基于 GPT-3.5 的对话式 AI 产品 ChatGPT，首次对公众免费开放。5 天注册用户破百万，两个月达到 1 亿用户。"
-  },
-  "narrative": {
-    "en": "ChatGPT was not the first large language model, but it was the first to package the technology into a zero-friction consumer product...",
-    "zhHans": "ChatGPT 不是第一个大语言模型，但它是第一个将这项技术包装成零门槛消费品的产品..."
-  },
-  "date": "2022-11-30",
-  "datePrecision": "day",
-  "displayDate": { "en": "November 30, 2022", "zhHans": "2022年11月30日" },
-  "categories": ["product", "society"],
-  "status": "published",
-  "significance": 3,
-  "impactIndex": 9,
-  "consensusLevel": "broad",
-  "controversy": false,
-  "impacts": [
-    {
-      "dimension": "capability_leap",
-      "severity": 3,
-      "direction": "positive",
-      "description": { "en": "...", "zhHans": "..." },
-      "affectedGroups": ["general public", "educators", "content creators"],
-      "timeframe": "immediate",
-      "evidenceGrade": "A",
-      "sourceIds": ["openai-chatgpt-blog-2022", "reuters-chatgpt-users-2023"]
-    }
-  ],
-  "claims": [
-    {
-      "id": "chatgpt-launch-fact",
-      "text": { "en": "OpenAI released ChatGPT on November 30, 2022.", "zhHans": "..." },
-      "claimType": "fact",
-      "evidenceGrade": "A",
-      "sourceIds": ["openai-chatgpt-blog-2022"]
-    }
-  ],
-  "sources": [
-    { "sourceId": "openai-chatgpt-blog-2022", "supports": ["chatgpt-launch-fact"], "quote": "..." }
-  ],
-  "relatedEvents": ["gpt3-2020", "gpt4-2023"],
-  "editorial": {
-    "createdAt": "2026-06-20",
-    "updatedAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
-    "publishedAt": "2026-06-24",
-    "curator": "gang",
-    "changeLog": [
-      { "date": "2026-06-24", "changeType": "score_changed", "summary": "Adjusted impactIndex from 8 to 9 after evidence review." }
-    ]
-  }
-}
-```
+旧版带省略号的 ChatGPT 示意已移除，避免被误复制为合格数据。完整合成事件、来源、run、review、approval 及错误变体见 [`tests/test_editorial_policy.py`](../../tests/test_editorial_policy.py)。样例仅在临时目录运行，不是真实事实或人工批准。生产字段遵循 [REVIEW-CONTRACT](REVIEW-CONTRACT.md)。

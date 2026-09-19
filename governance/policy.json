@@ -1,0 +1,193 @@
+{
+  "version": "2.4",
+  "status": "accepted_for_production",
+  "revision": "2.4.0",
+  "rulesDocument": "docs/workflow/EDITORIAL-STANDARD.md",
+  "rulesDigest": "c6ff09d6067ff5347bdbfdaae6bd96a50728dedf7e0d621777045caf963508b7",
+  "calibrationStatus": "offline_boundary_calibrated_not_cross_model_certified",
+  "coreChannels": [
+    "hf-papers",
+    "hacker-news",
+    "reddit-search",
+    "x-search",
+    "import-ai",
+    "the-batch"
+  ],
+  "categories": [
+    "capability",
+    "product",
+    "commerce",
+    "governance",
+    "safety",
+    "society"
+  ],
+  "channelStatuses": [
+    "complete",
+    "partial",
+    "unavailable",
+    "not_applicable"
+  ],
+  "screeningFields": [
+    "verifiability",
+    "novelty",
+    "spillover",
+    "durability",
+    "sourceQuality"
+  ],
+  "audiences": [
+    "researchers",
+    "developers",
+    "businesses",
+    "workers",
+    "consumers",
+    "public_institutions",
+    "educators_students",
+    "creators_rightsholders",
+    "infrastructure_operators",
+    "vulnerable_groups"
+  ],
+  "eventStages": [
+    "proposed",
+    "announced",
+    "preview",
+    "available",
+    "deployed",
+    "enacted",
+    "effective",
+    "judgment",
+    "incident",
+    "disclosed",
+    "completed",
+    "withdrawn"
+  ],
+  "l2Rules": {
+    "L2-CAPABILITY": {
+      "category": "capability",
+      "criteria": {
+        "previously_infeasible_task": true,
+        "comparable_baseline": true,
+        "independent_replication": true
+      },
+      "independentVerification": [
+        "independent_replication"
+      ]
+    },
+    "L2-METHOD": {
+      "category": "capability",
+      "criteria": {
+        "new_method_or_framework": true,
+        "independent_follow_on_works": 2
+      },
+      "independentVerification": [
+        "independent_follow_on_works"
+      ]
+    },
+    "L2-PRODUCT-ACCESS": {
+      "category": "product",
+      "criteria": {
+        "material_access_change": true,
+        "unaffiliated_production_organizations": 2
+      },
+      "independentVerification": [
+        "unaffiliated_production_organizations"
+      ]
+    },
+    "L2-PRODUCT": {
+      "category": "product",
+      "criteria": {
+        "new_workflow": true,
+        "unaffiliated_production_organizations": 2
+      },
+      "independentVerification": [
+        "unaffiliated_production_organizations"
+      ]
+    },
+    "L2-PRODUCT-SCALE": {
+      "category": "product",
+      "criteria": {
+        "new_workflow": true,
+        "verified_active_users": 1000000
+      },
+      "independentVerification": [
+        "verified_active_users"
+      ]
+    },
+    "L2-COMMERCE": {
+      "category": "commerce",
+      "criteria": {
+        "structural_change_executed": true,
+        "external_actors_affected": 2
+      },
+      "independentVerification": [
+        "external_actors_affected"
+      ]
+    },
+    "L2-GOVERNANCE": {
+      "category": "governance",
+      "criteria": {
+        "binding_or_precedential_action": true,
+        "applies_beyond_named_parties": true,
+        "independent_legal_analysis": true
+      },
+      "independentVerification": [
+        "independent_legal_analysis"
+      ]
+    },
+    "L2-SAFETY": {
+      "category": "safety",
+      "criteria": {
+        "documented_incident": true,
+        "external_remedial_action": true,
+        "independent_investigation": true
+      },
+      "independentVerification": [
+        "independent_investigation"
+      ]
+    },
+    "L2-SAFETY-PRACTICE": {
+      "category": "safety",
+      "criteria": {
+        "new_safety_practice": true,
+        "unaffiliated_production_organizations": 2
+      },
+      "independentVerification": [
+        "unaffiliated_production_organizations"
+      ]
+    },
+    "L2-SOCIETY": {
+      "category": "society",
+      "criteria": {
+        "measured_behavior_change": true,
+        "independent_populations": 2,
+        "observed_days": 90
+      },
+      "independentVerification": [
+        "measured_behavior_change",
+        "independent_populations"
+      ]
+    }
+  },
+  "l3": {
+    "minimumCategories": 2,
+    "minimumObservedDays": 365,
+    "minimumIndependentOrigins": 3
+  },
+  "timeframeDays": {
+    "immediate": 0,
+    "short": 30,
+    "medium": 180,
+    "long": 365
+  },
+  "severity3": {
+    "minimumAudiences": 2,
+    "minimumObservedDays": 180
+  },
+  "impactFormula": "v2.3-preserved",
+  "benchmarkTargets": {
+    "decisionAgreement": 0.9,
+    "significanceAgreement": 0.9,
+    "impactWithinOne": 0.95,
+    "hardRuleViolations": 0
+  },
+  "notes": "Thresholds are versioned editorial policy, not empirical laws. Existing published scores are not silently recalculated. Model agreement is measured on frozen evidence, not promised."
+}

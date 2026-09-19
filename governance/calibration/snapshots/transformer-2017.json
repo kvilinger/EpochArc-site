@@ -1,0 +1,215 @@
+{
+  "type": "published_canonical_snapshot_not_reverified",
+  "event": {
+    "id": "transformer-2017",
+    "slug": "transformer",
+    "title": {
+      "en": "\"Attention Is All You Need\" — the Transformer architecture is born",
+      "zhHans": "《Attention Is All You Need》——Transformer 架构诞生"
+    },
+    "searchSummary": {
+      "en": "Attention Is All You Need: the 2017 paper that introduced the Transformer. Cited 250K+ times, it founded GPT, BERT, AlphaFold, and all modern AI.",
+      "zhHans": "《Attention Is All You Need》：2017 年论文将 Transformer 架构带入了世界。被引 25 万次，GPT、BERT、AlphaFold 乃至所有现代 AI 都源于它。完整时间线。"
+    },
+    "summary": {
+      "en": "Eight Google researchers published 'Attention Is All You Need' at NeurIPS 2017, introducing the Transformer architecture. By dispensing with recurrence and convolution entirely and relying solely on self-attention mechanisms, the Transformer achieved state-of-the-art translation results while training significantly faster. The paper has been cited over 250,000 times, and the Transformer became the foundation of every major AI system since—from GPT and BERT to AlphaFold and modern speech models.",
+      "zhHans": "八位 Google 研究者在 NeurIPS 2017 上发表了《Attention Is All You Need》，引入了 Transformer 架构。通过完全摒弃循环和卷积、仅依赖自注意力机制，Transformer 在实现最先进翻译结果的同时大幅加快了训练速度。这篇论文已被引用超过 25 万次，Transformer 成为此后每一个主要 AI 系统的基础——从 GPT 和 BERT 到 AlphaFold 再到现代语音模型。"
+    },
+    "narrative": {
+      "en": "Before Transformer, the dominant approach to sequence processing was recurrent neural networks (RNNs, LSTMs) or convolutional models. Both had fundamental limitations: RNNs processed tokens sequentially, making parallelization impossible; CNNs had limited context windows. The Transformer solved both problems with a single mechanism: self-attention. Every token in a sequence could attend to every other token simultaneously, enabling parallel training across entire sequences. The key architectural components—scaled dot-product attention, multi-head attention, positional encoding, and layer normalization—have proven remarkably durable. The paper's title itself became legendary for its audacity. Seven years later, 'Attention Is All You Need' stands as one of the most-cited papers of the 21st century. All eight authors have since left Google to found or join prominent AI companies: Ashish Vaswani and Niki Parmar (Essential AI), Noam Shazeer (Character.AI), Jakob Uszkoreit (Inceptive), Llion Jones (Sakana AI), Aidan Gomez (Cohere), Lukasz Kaiser (OpenAI), and Illia Polosukhin (NEAR Protocol). The Transformer's architectural innovations enabled the scaling laws that GPT-3, PaLM, and Claude exploited. Its attention patterns proved so general that they were adapted for vision (Vision Transformer, 2020), protein folding (AlphaFold's Evoformer), reinforcement learning (Decision Transformer), and multimodal models (Flamingo, GPT-4). The architecture was a gift that kept giving—each new domain that adopted it found unexpected gains.",
+      "zhHans": "在 Transformer 之前，处理序列的主导方法是循环神经网络（RNN、LSTM）或卷积模型。两者都有根本性局限：RNN 按顺序处理标记，无法并行化；CNN 的上下文窗口有限。Transformer 用单一机制解决了这两个问题：自注意力。序列中的每个标记可以同时关注每一个其他标记，实现了跨整个序列的并行训练。其关键架构组件——缩放点积注意力、多头注意力、位置编码和层归一化——已被证明具有非凡的持久性。论文的标题本身就因其大胆而成为传奇。七年之后，《Attention Is All You Need》是 21 世纪被引用最多的论文之一。所有八位作者此后都离开 Google 创立或加入了知名的 AI 公司：Ashish Vaswani 和 Niki Parmar（Essential AI）、Noam Shazeer（Character.AI）、Jakob Uszkoreit（Inceptive）、Llion Jones（Sakana AI）、Aidan Gomez（Cohere）、Lukasz Kaiser（OpenAI）和 Illia Polosukhin（NEAR Protocol）。Transformer 的架构创新使 GPT-3、PaLM 和 Claude 利用的缩放定律成为可能。其注意力模式被证明如此通用，以至于被适配到计算机视觉（Vision Transformer, 2020）、蛋白质折叠（AlphaFold 的 Evoformer）、强化学习（Decision Transformer）和多模态模型（Flamingo、GPT-4）。这个架构是一个持续给予的礼物——每个采用它的新领域都发现了意想不到的增益。"
+    },
+    "date": "2017-12",
+    "datePrecision": "month",
+    "displayDate": {
+      "en": "December 2017",
+      "zhHans": "2017年12月"
+    },
+    "status": "published",
+    "significance": 3,
+    "impactIndex": 8,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "capability_leap",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Replaced RNNs and CNNs as the dominant sequence-processing architecture across NLP, vision, speech, and biology. The self-attention mechanism proved so general and scalable that it became the universal compute substrate for modern AI—every major AI system since 2018 (BERT, GPT series, Claude, Gemini, AlphaFold) uses Transformers at its core.",
+          "zhHans": "替代了 RNN 和 CNN 成为 NLP、视觉、语音和生物学中主导的序列处理架构。自注意力机制被证明如此通用和可扩展，以至于成为现代 AI 的通用计算基板——2018 年以来每个主要 AI 系统（BERT、GPT 系列、Claude、Gemini、AlphaFold）都以 Transformer 为核心。"
+        },
+        "affectedGroups": [
+          "all AI researchers",
+          "NLP researchers",
+          "computer vision researchers",
+          "computational biologists"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "vaswani-transformer-2017",
+          "wikipedia-transformer"
+        ]
+      },
+      {
+        "dimension": "economic_disruption",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Enabled the scaling laws that led to GPT-3, ChatGPT, and all subsequent large language models. The authors collectively founded or joined companies now worth tens of billions (Cohere, Character.AI, Essential AI). The architecture's parallelizability made GPU/TPU training efficient at unprecedented scale, directly shaping the modern AI hardware market.",
+          "zhHans": "使导致了 GPT-3、ChatGPT 和所有后续大语言模型的缩放定律成为可能。作者们集体创立或加入了现在估值数百亿美元的公司（Cohere、Character.AI、Essential AI）。该架构的并行性使 GPU/TPU 训练在前所未有的规模上保持高效，直接塑造了现代 AI 硬件市场。"
+        },
+        "affectedGroups": [
+          "tech industry",
+          "investors",
+          "hardware manufacturers",
+          "startups"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "vaswani-transformer-2017",
+          "wikipedia-transformer"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "'Attention Is All You Need' became a scientific meme. Its audacious title captured a truth that proved deeper than the authors knew: attention was sufficient not just for translation, but for vision, protein folding, reasoning, and generation. The paper marks the clearest 'before and after' line in modern AI research methodology.",
+          "zhHans": "《Attention Is All You Need》成为一个科学 meme。它大胆的标题捕捉到了一个比作者们所知的更深刻的真理：注意力不仅对翻译足够，对视觉、蛋白质折叠、推理和生成也足够。这篇论文标志着现代 AI 研究方法论中最清晰的\"之前和之后\"的分界线。"
+        },
+        "affectedGroups": [
+          "entire AI field",
+          "researchers",
+          "engineers"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "vaswani-transformer-2017",
+          "wikipedia-transformer"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "transformer-published-2017",
+        "text": {
+          "en": "Vaswani et al. published 'Attention Is All You Need' at NeurIPS 2017, introducing the Transformer architecture based solely on self-attention mechanisms.",
+          "zhHans": "Vaswani 等人在 NeurIPS 2017 上发表了《Attention Is All You Need》，引入了完全基于自注意力机制的 Transformer 架构。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "vaswani-transformer-2017"
+        ]
+      },
+      {
+        "id": "transformer-universal-impact",
+        "text": {
+          "en": "The Transformer architecture became the foundation of every major AI system after 2018, including GPT, BERT, AlphaFold, and Vision Transformer. As of 2026, the paper has been cited over 250,000 times, making it one of the most-cited papers of the 21st century.",
+          "zhHans": "Transformer 架构成为 2018 年后每一个主要 AI 系统的基础，包括 GPT、BERT、AlphaFold 和 Vision Transformer。截至 2026 年，这篇论文已被引用超过 25 万次，成为 21 世纪被引用最多的论文之一。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "vaswani-transformer-2017",
+          "wikipedia-transformer"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "vaswani-transformer-2017",
+        "supports": [
+          "transformer-published-2017",
+          "transformer-universal-impact"
+        ],
+        "quote": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely."
+      },
+      {
+        "sourceId": "wikipedia-transformer",
+        "supports": [
+          "transformer-universal-impact"
+        ],
+        "quote": "As of 2026, the paper has been cited more than 250,000 times, placing it among the top ten most-cited papers of the 21st century."
+      },
+      {
+        "sourceId": "techspot-transformers",
+        "quote": "Meet Transformers: The Google Breakthrough that Rewrote AI's Roadmap.",
+        "supports": [
+          "transformer-2017"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "alexnet-2012",
+      "gpt3-2020",
+      "chatgpt-2022"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-06-24",
+          "changeType": "created",
+          "summary": "Initial v2 entry for the Transformer architecture."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
+        }
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "categories": [
+      "capability"
+    ]
+  },
+  "sources": {
+    "vaswani-transformer-2017": {
+      "id": "vaswani-transformer-2017",
+      "type": "primary",
+      "tier": 1,
+      "title": "Vaswani, A. et al. (2017) 'Attention Is All You Need.' NeurIPS 2017.",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "publishedAt": "2017-06-12",
+      "accessedAt": "2026-06-24",
+      "language": "en",
+      "independence": "primary_actor",
+      "notes": "Original Transformer paper. One of the most-cited papers of the 21st century."
+    },
+    "wikipedia-transformer": {
+      "id": "wikipedia-transformer",
+      "type": "encyclopedia",
+      "tier": 2,
+      "title": "\"Attention Is All You Need\" — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Attention_Is_All_You_Need",
+      "accessedAt": "2026-06-24",
+      "language": "en",
+      "independence": "independent",
+      "notes": "Comprehensive article on the Transformer paper, its authors, and its impact."
+    },
+    "techspot-transformers": {
+      "id": "techspot-transformers",
+      "type": "news",
+      "tier": 2,
+      "title": "Meet Transformers: The Google Breakthrough that Rewrote AI's Roadmap — TechSpot",
+      "url": "https://www.techspot.com/article/2933-meet-transformers-ai/",
+      "publishedAt": "2024-12-24",
+      "accessedAt": "2026-06-25",
+      "language": "en",
+      "independence": "independent"
+    }
+  }
+}

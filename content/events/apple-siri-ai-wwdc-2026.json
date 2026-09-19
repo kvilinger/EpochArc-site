@@ -144,7 +144,7 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-09-15",
+    "updatedAt": "2026-09-18",
     "reviewedAt": "2026-09-15",
     "curator": "gang",
     "changeLog": [
@@ -167,12 +167,17 @@
         "date": "2026-09-15",
         "changeType": "correction",
         "summary": "Updated the WWDC Siri node with the September 14 beta rollout and corrected unsupported broad-adoption and device-coverage language."
+      },
+      {
+        "date": "2026-09-18",
+        "changeType": "correction",
+        "summary": "Restored the earliest recorded publishedAt from Git cc3f0b06e203ced9cb4be059b65beb47ece37a7c (2026-06-25). Metadata correction only; no new factual or rating review."
       }
     ],
     "reviewer": "gang",
     "reviewProvenance": "v2.3",
     "lastSourceCheckAt": "2026-09-15",
     "reviewNotes": "Reviewed update to the existing WWDC node. The September change is a beta rollout with explicit opt-in, language, device, and regional limits; it is not a duplicate event.",
-    "publishedAt": "2026-09-15"
+    "publishedAt": "2026-06-25"
   }
 }

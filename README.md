@@ -44,20 +44,25 @@ EpochArc-site/
 
 ## 数据更新流程
 
-1. 运行 [docs/workflow/WORKFLOW.md](docs/workflow/WORKFLOW.md) 中的多源发现 → 筛选候选 → 写入 `data/screening_log.json`
-2. 通过候选的事件写 `content/events/{event-id}.json`（参考 [docs/data/DATA-MODEL.md](docs/data/DATA-MODEL.md) 附录示例）
-3. 来源加入 `data/sources.json`
-4. 运行 `python3 scripts/validate_all.py`，再由构建脚本生成 `data/events.json`
-5. Possible Directions 的公开筛选结果维护在 `data/possible_directions_screening_log.json`
-6. 前端自动读取（`fetch` 加载）
+v2.4 规则入口：[EDITORIAL-STANDARD](docs/workflow/EDITORIAL-STANDARD.md)，执行步骤：[WORKFLOW](docs/workflow/WORKFLOW.md)。
 
-当前迁移债务与内容复核结果见 [docs/data/CONTENT-AUDIT-2026-07-20.md](docs/data/CONTENT-AUDIT-2026-07-20.md)。`Validation PASSED` 表示结构契约通过，不等同于所有旧事件已完成 v2.3 事实复核；应同时检查 `reviewProvenance` 和校验警告。
+1. 定范围与证据截止日 → 多源发现 → 去重/初筛；新批次写 `governance/runs/`，data 下旧筛选日志冻结。
+2. 逐主张确认 → 依据变化路径提出分类、等级与影响 → 独立复核；记录于 `governance/reviews/`。
+3. 编辑事件/Arc/来源/方向源文件；不手改生成输出。
+4. 精确版本经真实人工批准后运行统一校验、测试、构建；获明确发布授权才推送。
+5. 方向关联真实 run 的 directionDecisions 与共识搜索；默认 monitor_only。
+
+字段与证据契约见 [REVIEW-CONTRACT](docs/data/REVIEW-CONTRACT.md)，冻结校准材料见 [CALIBRATION](docs/workflow/CALIBRATION.md)。
+
+当前迁移债务与内容复核结果见 [docs/data/CONTENT-AUDIT-2026-07-20.md](docs/data/CONTENT-AUDIT-2026-07-20.md)。`Validation PASSED` 表示契约通过，不等同于所有旧事件已完成事实复核。v2.4 使用精确历史指纹保留未变旧记录，改变后的内容不能通过历史标记绕过门禁；应同时检查审计、reviewProvenance 和警告。
 
 ## 数据校验
 
 ```
-python3 scripts/build_events.py  # 合并 + 完整校验 + relatedEvents 双向规范化
-python3 scripts/validate_all.py  # 事件、来源、方向、筛选日志、Arc 的统一发布门禁
+npm run test:editorial           # 编辑契约正反例 + 冻结校准重放
+python3 scripts/validate_all.py  # 统一门禁；通过不等于事实审核通过
+python3 scripts/calibrate_editorial.py # 离线规则重放，不是跨模型实测
+python3 scripts/build_events.py # 生成数据/页面及双向关系；不代替统一门禁
 ```
 
 ## 技术栈

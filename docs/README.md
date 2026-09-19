@@ -2,6 +2,16 @@
 
 这里按职责归类，避免产品、数据模型和运营流程混在一起。
 
+## v2.4 权威入口
+
+- [EDITORIAL-STANDARD.md](workflow/EDITORIAL-STANDARD.md)：唯一规则总表、优先级与阶段边界。
+- [REVIEW-CONTRACT.md](data/REVIEW-CONTRACT.md)：证据、审核、审批和历史豁免契约。
+- [CALIBRATION.md](workflow/CALIBRATION.md)：已上线案例、反事实边界与跨模型验收协议。
+- [VALIDATION-COVERAGE.md](workflow/VALIDATION-COVERAGE.md)：机器门禁与人工判断的覆盖边界。
+- [V24-IMPLEMENTATION-REPORT.md](workflow/V24-IMPLEMENTATION-REPORT.md)：本轮实现、测试结果及未执行事项。
+
+v2.4 已被接受为生产规则；这不等于全量旧数据已完成 v2.4 事实复核。
+
 ## Data
 
 - [DATA-MODEL.md](data/DATA-MODEL.md)
@@ -34,7 +44,7 @@
 
 - [LANGUAGE-STANDARDS.md](product/LANGUAGE-STANDARDS.md)
   可操作的语言规范：句法模板、AI 味检测清单、模块级差异、中英文句式对比。
-  内容生产时优先查阅此文件。
+  用于语言细则；事实与证据规则优先查阅 EDITORIAL-STANDARD。
 
 - [LAUNCH-CHECKLIST.md](product/LAUNCH-CHECKLIST.md)
   Cloudflare Pages 上线前检查项。

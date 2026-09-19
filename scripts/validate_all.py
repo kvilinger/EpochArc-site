@@ -13,6 +13,8 @@ from collections import Counter
 from datetime import date
 from urllib.parse import urlparse
 
+from editorial_policy import validate_policy
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EVENT_GLOB = os.path.join(ROOT, "content", "events", "*.json")
@@ -224,6 +226,8 @@ def validate_sources():
 
 def calculate_impact_index(event: dict) -> int | None:
     impacts = event.get("impacts")
+    if impacts == [] and event.get("editorial", {}).get("reviewProvenance") == "v2.4":
+        return 0
     if not isinstance(impacts, list) or not impacts:
         return None
     if any(impact.get("evidenceGrade") not in EVIDENCE_GRADES for impact in impacts):
@@ -278,7 +282,7 @@ def maximum_supported_evidence_grade(source_ids, source_map: dict) -> str:
         return "A"
     if has_tier1 or independent_tier2 >= 2:
         return "B"
-    return "C"
+    return "C" if any(s.get("tier") in {2, 3} for s in linked) else "D"
 
 
 def validate_events(source_map: dict):
@@ -339,6 +343,8 @@ def validate_events(source_map: dict):
             errors.append(f"{prefix}: invalid datePrecision '{precision}'")
         elif not non_empty_string(event_date) or not DATE_PATTERNS[precision].fullmatch(event_date):
             errors.append(f"{prefix}: date '{event_date}' does not match precision '{precision}'")
+        elif precision == "day" and not valid_iso_date(event_date):
+            errors.append(f"{prefix}: invalid calendar date '{event_date}'")
 
         categories = event.get("categories")
         if not isinstance(categories, list) or not 1 <= len(categories) <= 2:
@@ -353,7 +359,7 @@ def validate_events(source_map: dict):
         status = event.get("status")
         if status not in CONTENT_STATUSES:
             errors.append(f"{prefix}: invalid status '{status}'")
-        if event.get("significance") not in {1, 2, 3}:
+        if type(event.get("significance")) is not int or event.get("significance") not in {1, 2, 3}:
             errors.append(f"{prefix}: significance must be 1, 2, or 3")
         if event.get("consensusLevel") not in CONSENSUS_LEVELS:
             errors.append(f"{prefix}: invalid consensusLevel '{event.get('consensusLevel')}'")
@@ -361,8 +367,8 @@ def validate_events(source_map: dict):
             errors.append(f"{prefix}: controversy must be boolean")
 
         impacts = event.get("impacts")
-        if not isinstance(impacts, list) or not impacts:
-            errors.append(f"{prefix}: impacts must be a non-empty array")
+        if not isinstance(impacts, list) or (not impacts and not (event.get("editorial", {}).get("reviewProvenance") == "v2.4" and event.get("significance") == 1)):
+            errors.append(f"{prefix}: impacts must be non-empty except v2.4 L1 with no observed impact")
             impacts = []
         for index, impact in enumerate(impacts):
             ip = f"{prefix}.impacts[{index}]"
@@ -385,7 +391,7 @@ def validate_events(source_map: dict):
             if impact.get("dimension") not in IMPACT_DIMENSIONS:
                 errors.append(f"{ip}: invalid dimension '{impact.get('dimension')}'")
             severity = impact.get("severity")
-            if not isinstance(severity, int) or severity < -3 or severity > 3:
+            if type(severity) is not int or severity < -3 or severity > 3:
                 errors.append(f"{ip}: severity must be an integer from -3 to 3")
             direction = impact.get("direction")
             if direction not in DIRECTIONS:
@@ -494,7 +500,8 @@ def validate_events(source_map: dict):
         if len({ref.get("sourceId") for ref in source_refs if isinstance(ref, dict)}) != len(source_refs):
             errors.append(f"{prefix}: sources contains duplicate sourceId values")
 
-        if status == "published":
+        if status == "published" and event.get("editorial", {}).get("reviewProvenance") != "v2.4":
+            # v2.4 uses claim-local provenance and milestone-specific verification.
             tier1 = sum(source.get("tier") == 1 for source in referenced_sources)
             independent_tier2 = len(
                 {
@@ -538,6 +545,8 @@ def validate_events(source_map: dict):
                     errors.append(f"{prefix}: relatedEvents cannot reference itself")
                 elif related_id not in event_map:
                     errors.append(f"{prefix}: unknown related event '{related_id}'")
+                elif status == "published" and event_map[related_id].get("status") != "published":
+                    errors.append(f"{prefix}: published event references unpublished '{related_id}'")
 
         editorial = event.get("editorial")
         require_fields(editorial, ["createdAt", "updatedAt"], f"{prefix}.editorial")
@@ -550,7 +559,7 @@ def validate_events(source_map: dict):
                     if not non_empty_string(editorial.get(field)):
                         errors.append(f"{prefix}.editorial: status '{status}' requires '{field}'")
                 provenance = editorial.get("reviewProvenance")
-                if provenance not in {"legacy_pre_v23", "v2.3"}:
+                if provenance not in {"legacy_pre_v23", "v2.3", "v2.4"}:
                     errors.append(
                         f"{prefix}.editorial: invalid reviewProvenance '{provenance}'"
                     )
@@ -562,11 +571,13 @@ def validate_events(source_map: dict):
                         f"{prefix}: evidenceGrade exceeds its source chain: "
                         + ", ".join(overstated_evidence)
                     )
-                else:
+                elif editorial.get("reviewProvenance") != "v2.4":
                     legacy_evidence_debt_count += len(overstated_evidence)
             if status == "published" and not non_empty_string(editorial.get("publishedAt")):
                 errors.append(f"{prefix}.editorial: published status requires 'publishedAt'")
 
+        if type(event.get("impactIndex")) is not int or not 0 <= event["impactIndex"] <= 10:
+            errors.append(f"{prefix}: impactIndex must be an integer from 0 to 10")
         expected_impact_index = calculate_impact_index(event)
         if expected_impact_index is not None and event.get("impactIndex") != expected_impact_index:
             errors.append(
@@ -640,6 +651,10 @@ def validate_forecasts(event_map: dict, source_map: dict):
                 errors.append(f"{prefix}.expectedWindow: start must not be later than end")
             if window.get("precision") != "year":
                 errors.append(f"{prefix}.expectedWindow: precision must be 'year'")
+
+        confidence = forecast.get("confidence")
+        if not isinstance(confidence, dict) or confidence.get("level") not in {"low", "medium", "high"} or confidence.get("evidenceGrade") not in {"A", "B", "C"}:
+            errors.append(f"{prefix}: confidence requires low/medium/high and public evidence grade A/B/C")
 
         rationale = forecast.get("rationale")
         require_fields(rationale, ["currentBaseline", "whyThisDirection", "counterSignal", "openQuestions"], f"{prefix}.rationale")
@@ -718,6 +733,10 @@ def validate_forecasts(event_map: dict, source_map: dict):
                 errors.append(f"{prefix}: monitor_only cannot use resolved status '{status}'")
             if mode == "consensus_gated" and basis_type == "none":
                 errors.append(f"{prefix}: consensus_gated requires an external basisType")
+            if mode == "consensus_gated" and not consensus.get("sourceIds"):
+                errors.append(f"{prefix}: consensus_gated requires external sources")
+            if mode == "monitor_only" and any(key in forecast for key in ("achievedWhen", "notAchievedWhen", "minimumDuration")):
+                errors.append(f"{prefix}: monitor_only cannot publish private resolution thresholds")
             if not localized(consensus.get("summary")):
                 errors.append(f"{prefix}.consensusBasis.summary: must contain en and zhHans")
             for source_id in consensus.get("sourceIds", []):
@@ -967,10 +986,13 @@ def validate_arcs(event_map: dict):
     arc_ids = {arc.get("id") for arc in arcs}
     if len(arc_ids) != len(arcs):
         errors.append("arcs: duplicate or missing arc id")
+    arc_map = {arc.get("id"): arc for arc in arcs}
     for arc in arcs:
         arc_id = arc.get("id") or "<missing>"
         prefix = f"arc:{arc_id}"
         require_fields(arc, ["id", "title", "subtitle", "abstract", "chapters", "conclusion", "status", "editorial"], prefix)
+        if arc.get("status") not in CONTENT_STATUSES:
+            errors.append(f"{prefix}: invalid status")
         for field in ("title", "subtitle", "abstract", "conclusion"):
             if not localized(arc.get(field)):
                 errors.append(f"{prefix}.{field}: must contain en and zhHans")
@@ -1009,9 +1031,17 @@ def validate_arcs(event_map: dict):
         years = [int(event_map[event_id]["date"][:4]) for event_id in unique_anchor_ids if event_id in event_map]
         if years and max(years) - min(years) < 3:
             errors.append(f"{prefix}: anchor events must span at least 3 years")
-        for related_arc in arc.get("relatedArcs", []):
+        related_arcs = arc.get("relatedArcs", [])
+        if not isinstance(related_arcs, list):
+            errors.append(f"{prefix}: relatedArcs must be an array")
+            related_arcs = []
+        if len(set(related_arcs)) != len(related_arcs):
+            errors.append(f"{prefix}: duplicate related arc")
+        for related_arc in related_arcs:
             if related_arc == arc_id or related_arc not in arc_ids:
                 errors.append(f"{prefix}: invalid related arc '{related_arc}'")
+            elif arc.get("status") == "published" and arc_map[related_arc].get("status") != "published":
+                errors.append(f"{prefix}: published arc references unpublished arc '{related_arc}'")
     return arcs
 
 
@@ -1021,6 +1051,14 @@ def main():
     forecasts = validate_forecasts(event_map, source_map)
     validate_screening_logs(event_map, {forecast.get("id") for forecast in forecasts})
     arcs = validate_arcs(event_map)
+    # Run after structural checks so the policy validator receives well-formed records.
+    if not errors:
+        try:
+            policy_errors, policy_warnings = validate_policy(ROOT, event_map, source_map, forecasts, arcs)
+            errors.extend(policy_errors)
+            warnings.extend(policy_warnings)
+        except (OSError, ValueError, KeyError, TypeError, AttributeError) as exc:
+            errors.append(f"v2.4 governance contract invalid: {exc}")
 
     for warning in warnings:
         print(f"WARN {warning}")

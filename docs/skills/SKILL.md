@@ -1,183 +1,51 @@
-# EpochArc 数据管护工作流 Skill
+# EpochArc 编辑执行入口 v2.4
 
-**状态**：跟随项目源文件，非独立文档。源文件变更时本 skill 应同步更新。
+本文件是导航，不定义第二套规则。
 
-**源文件**（规范来源，以这些为准）：
-- [WORKFLOW.md](../workflow/WORKFLOW.md) — 发现→初筛→确认→发布全流程
-- [DATA-MODEL.md](../data/DATA-MODEL.md) — 数据结构、评分系统、验证规则
-- `data/labels.json` — 所有枚举字段的展示标签（中英）
+## 必读顺序
 
----
+1. [EDITORIAL-STANDARD](../workflow/EDITORIAL-STANDARD.md)：规则、边界、未知处理和权限。
+2. [WORKFLOW](../workflow/WORKFLOW.md)：阶段执行步骤。
+3. [DATA-MODEL](../data/DATA-MODEL.md) 与 [REVIEW-CONTRACT](../data/REVIEW-CONTRACT.md)：公开字段与私有证据/批准结构。
+4. [CALIBRATION](../workflow/CALIBRATION.md)：冻结案例、提示词和一致性测量。
+5. 对应模块的语言、Arc 或方向规范；它们不能覆盖证据与批准门槛。
 
-## 核心流程（四阶段）
+## 执行检查
 
-### 一、发现层 → 候选池
+- 先对齐范围、是否允许写源数据、是否允许发布；检查工作区。
+- Discover → Screen → Confirm → Edit → Review → 人工批准 → Publish，不能跳过。
+- 新批次写 governance/runs；旧 data 下筛选日志冻结。
+- full 记录全部核心渠道和六类覆盖；快照不是日期窗覆盖，故障/缺口如实记录。
+- 初筛总分只决定核实优先级；评级从变化路径及证据决定。
+- 未知写 null，不捏造数值、来源访问、人工批准、模型评审或反方意见。
+- 分类按动作；日期按真实动作阶段；可用、采用、融资完成、监管生效分别核实。
+- 影响指数只用已观察后果、固定受众 ID、可复算观察期。
+- 中英文共用事实台账，允许自然表达差异，不允许新增或强化事实。
+- 已发布数据不因新规则自动降级。精确旧指纹仅允许历史债务继续存在，不供新改动绕过。
 
-扫描可用信源：
-
-| 通道 | 状态 | 采集方式 |
-|:--|:--:|:--|
-| Hugging Face Daily Papers | ✅ 可用 | `curl https://huggingface.co/api/daily_papers?limit=20` |
-| Hacker News | ✅ 可用 | Firebase API（公开） |
-| Brave Search → Reddit（代理） | ✅ 可用 | `node search.js -n 10 "reddit.com AI trending"` |
-| Brave Search → X/Twitter（代理） | ✅ 可用 | `node search.js -n 10 "x.com AI breakthrough"` |
-| Gmail — Import AI | ✅ 可用 | `python3 scripts/check_mail.py import-ai`（IMAP + App Password） |
-| Gmail — The Batch | ✅ 可用 | `python3 scripts/check_mail.py the-batch`（IMAP + App Password） |
-
-Gmail 凭据从 macOS 钥匙串服务 `epocharc-gmail-app-password` 读取，不写入仓库。App Password 不受 OAuth 测试应用 7 天令牌限制，但在账号密码修改、手动撤销或管理员策略变化后可能失效。每轮先运行 `python3 scripts/check_mail.py test`；失败必须记录为通道不可用，不得计入覆盖完成。年度或批次回溯使用 `--limit N --max-chars 0`，避免只读取最新一期或因正文截断漏掉候选。
-
-详见 [WORKFLOW.md](../workflow/WORKFLOW.md) 信源矩阵。
-
-在年度/批次 sweep 中补充以下**社区热点信号**（解决产品工具/社会文化类遗漏）：
-
-| 信号类型 | 搜索方法 | 发现目标 |
-|:--|:--|:--|
-| GitHub 增速最快仓库 | `"fastest growing open source AI project {year}"` | 开源工具爆火 |
-| 社区爆火 AI 工具 | `"viral AI tool agent {year} GitHub trending"` / `"Hacker News top AI posts {year}"` | 草根产品爆发 |
-| AI 概念流行 | `"AI buzzword new term coined {year}"` / `"AI concept went viral mainstream {year}"` | 概念/文化时刻 |
-| 商业/资本信号 | `"AI company valuation IPO restructuring {year}"` / `"AI market cap milestone trillion {year}"` | 产业格局变动 |
-
-每一个信号用 5 维 × 0-2 分快速初筛：
-
-| 维度 | 0 分 | 1 分 | 2 分 |
-|------|------|------|------|
-| 可验证性 | 无原始来源 | 有二级来源 | 原始来源（论文/公告/代码） |
-| 新颖性 | 重复旧事 | 小幅增量 | 明确新节点 |
-| 外溢影响 | 只在圈内 | 影响单一群体 | 跨研究/产业/政策/公众 |
-| 持续性 | 短期热度 | 可能持续 | 已有后续采用或制度化 |
-| 来源质量 | 社区流言 | 可靠二级报道 | 原始来源 + 独立确认 |
-
-阈值：0-4 不收录 | 5-7 候选池 | 8-10 直接草稿。
-
-**记录方式**：事件候选统一写入 `data/screening_log.json`；决定值只允许 `skip`、`pool`、`draft`。首页方向的公开运行记录维护在 `data/possible_directions_screening_log.json`。通过审核后回填 `eventId`、`reviewedAt` 与 `reviewer`，形成可追溯链条。
-
-### 发现后检查：6 分类维度覆盖
-
-候选列表出来后，按 6 个分类染色，确保无空白：
-
-- `capability` 能力突破 / `product` 产品工具 / `commerce` 商业产业
-- `governance` 治理监管 / `safety` 安全伦理 / `society` 社会文化
-
-如某分类完全空白，在确认层执行定向 Brave 搜索补漏。
-
-### 二、确认层 → Brave Search 四层漏斗 + 分类定向深挖
-
-每个候选执行 4 轮搜索，每轮产出映射到数据模型的不同字段：
-
-| 层 | 搜什么 | 产出字段 |
-|----|--------|---------|
-| 1️⃣ 事实确认 | 准确时间、主体、参数、原始公告 | `date`, `summary`, `sources` (Tier 1) |
-| 2️⃣ 影响分析 | 可观测后果、就业/产业变化 | `ImpactAssessment[]`, `severity`, `affectedGroups` |
-| 3️⃣ 行业报告 | 独立第三方权威分析 | `evidenceGrade` 升级 (C→B→A) |
-| 4️⃣ 争议批评 | 反方观点、安全伦理风险 | `controversy`, `consensusLevel`, `claims[limitation]` |
-
-**第 5 层 — 按分类定向深挖 + 社区热点信号**：批次收集中若发现某分类空白，执行分类级 Brave 搜索。同时补充社区热点搜索如下：
+## 入口命令
 
 ```bash
-# 产品工具类 — 社区爆火信号
-"fastest growing open source AI project {year}"
-"viral AI tool agent {year} GitHub trending"
-"Hacker News top AI posts {year} breakthrough"
-
-# 社会文化类 — 概念流行信号
-"AI buzzword new term coined {year}"
-"AI concept went viral mainstream {year}"
-"AI cultural phenomenon meme trend {year}"
-
-# 商业产业类 — 公司/资本信号
-"AI company valuation IPO restructuring acquisition {year}"
-"AI market cap milestone trillion valuation {year}"
+npm run test:editorial
+python3 scripts/validate_all.py
+python3 scripts/audit_editorial.py
+npm run build
+npm run test:seo
 ```
 
-### 三、AI 草稿生成
+测试只说明契约行为，不代替事实审核。构建后检查生成 diff 和页面；无明确授权不得 commit/push。只暂存本次相关文件。
 
-确认层搜索结果 → agent 生成完整 v2 JSON（`content/events/*.json`）：
+## 编辑源
 
-- 提取事实信息 → `title`, `summary`, `date`, `datePrecision`
-- 识别影响 → `ImpactAssessment[]`, `severity`, `direction`
-- 分类来源 → `sources[*].sourceId` 引用 `data/sources.json`
-- 识别争议 → `controversy`, `claims[claimType = limitation]`
-- 中英双语 → `LocalizedText` 的 `en` 和 `zhHans`
-- 计算 `impactIndex`（见 [DATA-MODEL.md](../data/DATA-MODEL.md) 公式）
+- 事件：content/events/*.json
+- Arc：content/arcs/*.json
+- 来源：data/sources.json
+- 方向：data/forecasts.json
+- 标签：data/labels.json
+- 参数：governance/policy.json
 
-**AI 不做**（留给人工）：
-- `significance` (L1/L2/L3) — 最重要的编辑判断
-- 微调 `severity` — AI 评分可能有偏差
-- 最终发布决定
+不得手工修改 data/events.json、data/arcs.json 或生成页面。不要把 governance/evidence、review、approval 复制到公开静态目录。
 
-### 四、人工审核 → 提交
+## 历史回溯
 
-审核清单在 [WORKFLOW.md](../workflow/WORKFLOW.md)「五、人工审核清单」。通过后：
-
-1. `content/events/` 下提交 JSON
-2. 更新 `data/sources.json`（如有新来源）
-3. 运行 `python3 scripts/build_events.py`，校验并生成 `data/events.json`
-4. 运行 `python3 scripts/validate_all.py` 和 `npm run build`
-5. 刷新页面验证渲染
-
----
-
-## 数据模型要点
-
-| 概念 | 说明 |
-|------|------|
-| `categories` | 字符串数组，1-2 个，第一个为主分类。多分类用 30% 信息丢失测试决定 |
-| **日期规则** | 时间轴上的日期 = "大量普通人可感知到这件事的时刻"。渐变事件取引爆点（OpenClaw 取 HN 发布日而非代码首次提交日），概念流行取造词日，持续进行的事件取代表性里程碑日 |
-| **6 分类** | `capability` 能力突破 / `product` 产品工具 / `commerce` 商业产业 / `governance` 治理监管 / `safety` 安全伦理 / `society` 社会文化。次分类通过 30% 信息丢失测试准入 |
-| `significance` | L1-L3，独立于 impactIndex |
-| `impactIndex` | 0-10，使用 v2.3 可复算公式；同维度只计最大绝对严重度 |
-| `consensusLevel` | broad / debated / emerging |
-| `controversy` | boolean，有则必须配 claims[limitation] |
-| `claims` | 每条必须包含唯一 `id`、双语 `text`、`claimType`、`evidenceGrade` 和非空 `sourceIds`；不得使用旧字段别名 |
-| `sources` | 只存 sourceId，不存完整 URL（查 data/sources.json） |
-| `editorial` | 必须包含 `createdAt`、`updatedAt`；published 还必须有 `reviewedAt`、`reviewer`、`publishedAt` |
-| `relatedEvents` | 源文件可只登记一侧；构建输出自动补齐双向关系，并拒绝未知 ID、自引用和重复 ID |
-| `LocalizedText` | 必须同时有 `en` 和 `zhHans` |
-
-完整类型定义见 [DATA-MODEL.md](../data/DATA-MODEL.md) `## 2. 核心类型定义`。
-
----
-
-## 标签系统
-
-展示标签统一从 `data/labels.json` 加载，前端 HTML 不硬编码任何映射。`categories[]` 的枚举值语义见 labels.json，目前有 6 个分类。
-
-具体定义和判定标准见 [DATA-MODEL.md](../data/DATA-MODEL.md) `## 2.2`。
-
----
-
-## 历史事件回溯（非发现层流程）
-
-对于 1950 → 至今的已发生事件，不是走 7 信源扫描，而是：
-
-1. **划定范围** — 公认的学科里程碑
-2. **里程碑密度** — 年代越近事件越密
-3. **概念骨架** — 最少节点讲出一条连续故事线
-
-选择标准：这个事件是否第一次引入了后代沿用至今的概念/范式/方法。
-
----
-
-## 文件结构
-
-```
-project-root/
-├── docs/workflow/WORKFLOW.md ← 完整流程（本 skill 的上游）
-├── docs/data/DATA-MODEL.md   ← 数据模型和评分体系
-├── docs/skills/SKILL.md      ← 当前文件（流程摘要）
-├── content/events/      ← 源事件 JSON（每文件一个事件）
-├── data/
-│   ├── events.json      ← 合并后的公开数据（build 产物）
-│   ├── sources.json     ← 来源库
-│   ├── forecasts.json   ← Possible Directions 数据
-│   ├── possible_directions_screening_log.json ← 方向筛选运行记录
-│   └── labels.json      ← 枚举标签映射
-├── scripts/
-│   ├── validate_all.py  ← 统一发布门禁
-│   └── build_events.py  ← 合并 content/events/*.json
-└── index.html           ← 前端（从 data/*.json 加载）
-```
-
----
-
-**本 skill 不替代 [WORKFLOW.md](../workflow/WORKFLOW.md) 和 [DATA-MODEL.md](../data/DATA-MODEL.md)。当流程或模型变更时，先更新那两个文件，再同步本 skill。**
+使用 backfill 批次并说明范围，不强行伪造历史社交渠道覆盖。仍需事实/影响/分析/反方确认和同样的评级标准。后来的真实证据可用于回顾评级，但必须注明截止日，不冒充当时已知。

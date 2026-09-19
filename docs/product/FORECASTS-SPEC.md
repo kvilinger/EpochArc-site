@@ -1,6 +1,7 @@
 # Possible Directions 产品规范
 
-**更新日期**：2026-07-20
+**更新日期**：2026-09-18
+**规则边界**：本文件定义展示，不覆盖 [EDITORIAL-STANDARD](../workflow/EDITORIAL-STANDARD.md) 的 DIR-01、审批与证据规则。新审核记录按 [REVIEW-CONTRACT](../data/REVIEW-CONTRACT.md)。
 **模块定位**：把时间轴中已经出现的现实信号组织成值得持续观察的方向，而不是对未来下判决。
 
 关联文档：

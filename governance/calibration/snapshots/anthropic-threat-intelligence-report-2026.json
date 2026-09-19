@@ -1,0 +1,193 @@
+{
+  "type": "published_canonical_snapshot_not_reverified",
+  "event": {
+    "id": "anthropic-threat-intelligence-report-2026",
+    "slug": "anthropic-threat-intelligence-report-2026",
+    "title": {
+      "en": "Anthropic publishes a September threat report on AI misuse",
+      "zhHans": "Anthropic 发布 9 月 AI 滥用威胁报告"
+    },
+    "searchSummary": {
+      "en": "Anthropic's September report describes misuse attempts across cyber operations, influence, surveillance, fraud, biological misuse, weapons, and illicit model distillation.",
+      "zhHans": "Anthropic 的 9 月报告描述了网络行动、影响行动、监控、欺诈、生物滥用、武器和模型非法蒸馏等领域的 AI 滥用尝试。"
+    },
+    "summary": {
+      "en": "On September 10, Anthropic published a threat-intelligence report covering activity it says it disrupted between December 2025 and August 2026. The report groups the cases into seven harm areas and says the activity involved Claude Haiku, Sonnet, and Opus; it says Fable and Mythos were not involved except in one illicit-distillation case.",
+      "zhHans": "9 月 10 日，Anthropic 发布威胁情报报告，涵盖公司称其在 2025 年 12 月至 2026 年 8 月间阻断的活动。报告将案例归入七类危害，并称相关活动涉及 Claude Haiku、Sonnet 和 Opus；报告称 Fable 和 Mythos 未参与这些案例，但有一起非法蒸馏案例例外。"
+    },
+    "narrative": {
+      "en": "Anthropic describes autonomous espionage, vulnerability research, influence operations, surveillance, scams, biological research, weapons development, and illicit distillation in the report. It presents these cases as evidence that AI access is becoming part of the operational stack for both criminal and state-linked actors. The operational details, disruption claims, and model-risk interpretation are Anthropic's account rather than an external audit. The event records a public threat disclosure and its stated safeguards and mitigations; it does not establish prevalence or independently verify every attribution.",
+      "zhHans": "报告描述了自主间谍活动、漏洞研究、影响行动、监控、诈骗、生物研究、武器开发和非法蒸馏。Anthropic 将这些案例作为 AI 访问逐渐成为犯罪及国家关联行为者作业链一部分的证据。行动细节、阻断结果和模型风险解释均来自 Anthropic，而非外部审计。本事件记录一项公开威胁披露及公司所述的防护和缓解措施，但不代表这些活动的发生率，也未独立核实每一项归因。"
+    },
+    "date": "2026-09-10",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-09-10",
+      "zhHans": "2026年9月10日"
+    },
+    "categories": [
+      "safety",
+      "governance"
+    ],
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 5,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "impacts": [
+      {
+        "dimension": "risk_creation",
+        "severity": -2,
+        "direction": "negative",
+        "description": {
+          "en": "Documents a wider set of attempted AI-enabled harms and describes persistent agent workflows that can operate across cyber, influence, surveillance, and fraud tasks.",
+          "zhHans": "记录了更广泛的 AI 辅助危害尝试，并描述了可在网络行动、影响行动、监控和欺诈任务之间持续运行的智能体工作流。"
+        },
+        "affectedGroups": [
+          "frontier AI labs",
+          "security teams",
+          "public institutions",
+          "affected organizations"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "sweep-20260915-anthropic-report-official",
+          "sweep-20260915-anthropic-report-guardian"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Places model-access controls, abuse monitoring, and incident disclosure inside the operational security discussion for general-purpose AI providers.",
+          "zhHans": "将模型访问控制、滥用监测和事件披露纳入通用 AI 提供商的运营安全讨论。"
+        },
+        "affectedGroups": [
+          "frontier AI labs",
+          "security teams",
+          "public institutions",
+          "affected organizations"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "sweep-20260915-anthropic-report-official",
+          "sweep-20260915-anthropic-report-guardian"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "anthropic-threat-report-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "Anthropic published its September 2026 threat-intelligence report on September 10, covering seven harm areas and activity it says was disrupted between December 2025 and August 2026.",
+          "zhHans": "Anthropic 于 9 月 10 日发布 2026 年 9 月威胁情报报告，覆盖七类危害以及公司称在 2025 年 12 月至 2026 年 8 月间阻断的活动。"
+        },
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "sweep-20260915-anthropic-report-official",
+          "sweep-20260915-anthropic-report-guardian"
+        ]
+      },
+      {
+        "id": "anthropic-threat-report-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "The report says Claude was used in cyber operations, influence, surveillance, scams and fraud, biological misuse, conventional weapons work, and illicit model distillation.",
+          "zhHans": "报告称，Claude 被用于网络行动、影响行动、监控、诈骗与欺诈、生物滥用、常规武器工作以及非法模型蒸馏。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "sweep-20260915-anthropic-report-official",
+          "sweep-20260915-anthropic-report-guardian"
+        ]
+      },
+      {
+        "id": "anthropic-threat-report-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "The report is Anthropic's own disclosure rather than an external audit; its case details, attribution, and disruption claims should remain attributed to the company.",
+          "zhHans": "该报告是 Anthropic 自身的披露，而非外部审计；案例细节、归因和阻断主张都应保留为公司说法。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "sweep-20260915-anthropic-report-official",
+          "sweep-20260915-anthropic-report-guardian"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "sweep-20260915-anthropic-report-official",
+        "supports": [
+          "anthropic-threat-intelligence-report-2026",
+          "anthropic-threat-report-fact",
+          "anthropic-threat-report-impact",
+          "anthropic-threat-report-limitation"
+        ]
+      },
+      {
+        "sourceId": "sweep-20260915-anthropic-report-guardian",
+        "supports": [
+          "anthropic-threat-intelligence-report-2026",
+          "anthropic-threat-report-fact",
+          "anthropic-threat-report-impact",
+          "anthropic-threat-report-limitation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "anthropic-expanded-cyber-alignment-assessment-2026",
+      "anthropic-third-party-cyber-evaluation-incidents-2026",
+      "openai-hf-breach-2026"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-09-15",
+      "updatedAt": "2026-09-15",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "curator": "gang",
+      "reviewProvenance": "v2.3",
+      "lastSourceCheckAt": "2026-09-15",
+      "reviewNotes": "L2 safety-report node. Anthropic's threat cases, attribution, and disruption claims remain explicitly attributed; this is not an external audit or prevalence estimate.",
+      "changeLog": [
+        {
+          "date": "2026-09-15",
+          "changeType": "created",
+          "summary": "Created as a reviewed, unpublished draft after the 2026-09-15 confirmation layer."
+        }
+      ],
+      "publishedAt": "2026-09-15"
+    }
+  },
+  "sources": {
+    "sweep-20260915-anthropic-report-official": {
+      "id": "sweep-20260915-anthropic-report-official",
+      "type": "report",
+      "tier": 1,
+      "title": "Countering misuse of AI: September 2026",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "publisher": "Anthropic",
+      "publishedAt": "2026-09-10",
+      "accessedAt": "2026-09-15",
+      "independence": "primary_actor",
+      "notes": "Anthropic's own threat-intelligence report; operational findings and disruption claims remain company-reported."
+    },
+    "sweep-20260915-anthropic-report-guardian": {
+      "id": "sweep-20260915-anthropic-report-guardian",
+      "type": "news",
+      "tier": 2,
+      "title": "Anthropic details bad actors' efforts to misuse its AI for bioweapons",
+      "url": "https://www.theguardian.com/technology/2026/sep/10/anthropic-report-details-ai-misuse",
+      "publisher": "The Guardian",
+      "publishedAt": "2026-09-10",
+      "accessedAt": "2026-09-15",
+      "independence": "independent",
+      "notes": "Independent coverage confirms the report's publication and broad categories, not every underlying case."
+    }
+  }
+}

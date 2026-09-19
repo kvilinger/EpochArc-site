@@ -1,0 +1,220 @@
+{
+  "type": "published_canonical_snapshot_not_reverified",
+  "event": {
+    "id": "alphago-2016",
+    "slug": "alphago",
+    "title": {
+      "en": "AlphaGo defeats Lee Sedol, a milestone once believed decades away",
+      "zhHans": "AlphaGo 击败李世石，完成了曾被预测还需数十年才能实现的突破"
+    },
+    "searchSummary": {
+      "en": "AlphaGo vs Lee Sedol: DeepMind’s AI defeated a Go world champion years before experts predicted. The 200 million viewer match that changed AI perception.",
+      "zhHans": "AlphaGo 与李世石：DeepMind 的 AI 比专家预测提早几十年击败了围棋世界冠军。2 亿人观看的对决，改变了世界对 AI 的认知。"
+    },
+    "summary": {
+      "en": "DeepMind's AlphaGo defeated 18-time world Go champion Lee Sedol 4–1 in a five-game match held in Seoul, South Korea, from March 9–15, 2016. The match was watched by over 200 million people worldwide, mostly in East Asia. Lee Sedol's sole victory in Game 4 became legendary—his 'God's Touch' move 78 forced a rare AlphaGo miscalculation. But the overall result was decisive: Go, long considered the grand challenge of AI due to its astronomical search space, had fallen decades earlier than most experts predicted.",
+      "zhHans": "DeepMind 的 AlphaGo 于 2016 年 3 月 9 日至 15 日在韩国首尔举行的五局比赛中以 4–1 击败了 18 次世界围棋冠军李世石。全球超过 2 亿人观看了这场比赛，其中大部分在东亚。李世石在第四局中的唯一胜利成为传奇——他的\"神之一手\"第 78 手迫使 AlphaGo 出现了罕见的误算。但总体结果是决定性的：围棋，这一因其天文般巨大的搜索空间而长期被视为 AI 重大挑战的游戏，比大多数专家预测的提早了几十年被攻克。"
+    },
+    "narrative": {
+      "en": "The Go community was stunned. Just two years earlier, at a 2014 AAAI panel, most AI researchers estimated that a computer would need another decade to beat a top Go professional. The search space of Go (~10¹⁷⁰ possible positions) is larger than the number of atoms in the observable universe. Brute-force approaches like Deep Blue's were impossible. AlphaGo's breakthrough was combining two deep neural networks (a policy network to select moves and a value network to evaluate positions) with Monte Carlo Tree Search. The system was trained first on 30 million human expert moves, then through millions of games of self-play reinforcement learning. The match was held at the Four Seasons Hotel in Seoul and broadcast live with commentary by 9-dan professionals. Over 200 million viewers watched across China, Korea, and Japan. Game 1: AlphaGo wins—Lee Sedol visibly shaken. Game 2: AlphaGo makes Move 37, a 'shoulder hit' on the fifth line that commentators initially thought was a mistake. It turned out to be a creative, winning move that 9-dan Fan Hui called 'not a human move.' Game 3: AlphaGo wins decisively—the match is decided. Game 4: Lee Sedol's legendary comeback. After 77 moves, he placed a wedge move (Move 78) so unexpected that AlphaGo's evaluation broke, leading to a series of blunders. The human won. Game 5: AlphaGo recovered and won. Lee Sedol, visibly emotional, apologized: 'I failed. I feel sorry that the match is over.' Demis Hassabis called it 'the pinnacle of a decade of work.' The impact in East Asia was seismic. The South Korean government announced a $860 million AI research fund within days. China's State Council released its 'Next Generation AI Development Plan' the following year. A new generation of students in China and Korea decided to pursue AI. The match was later the subject of the award-winning documentary 'AlphaGo' (2017). DeepMind published the full technical details in Nature (January 2016 for the Fan Hui match, with Lee Sedol analysis in a subsequent Nature news feature). The AlphaGo lineage evolved into AlphaGo Zero (trained purely through self-play), AlphaZero (generalized to chess and shogi), and MuZero (learned the rules of the game from scratch).",
+      "zhHans": "围棋界震惊了。仅在两年前的 2014 年 AAAI 小组讨论中，大多数 AI 研究人员估计计算机还需要十年才能击败顶级围棋专业选手。围棋的搜索空间（约 10¹⁷⁰ 种可能位置）比可观测宇宙中的原子数量还多。像深蓝那样的蛮力方法是不可能的。AlphaGo 的突破在于将两个深度神经网络（选择着法的策略网络和评估局面的价值网络）与蒙特卡洛树搜索结合。系统首先在 3000 万人类专家棋谱上训练，然后通过数百万局自我对弈强化学习。比赛在首尔四季酒店举行，由 9 段职业棋手现场解说。中国、韩国和日本有超过 2 亿观众观看。第 1 局：AlphaGo 获胜——李世石明显震惊。第 2 局：AlphaGo 下了第 37 手，一个五路的\"肩冲\"，解说员最初认为是错误。结果这是一个创造性的制胜着法，9 段樊麾称其\"不是人类的着法\"。第 3 局：AlphaGo 决定性获胜——胜负已定。第 4 局：李世石的传奇逆转。77 手后，他下了一手楔入——第 78 手——如此出人意料，以至于 AlphaGo 的评估崩溃，导致了一系列错误。人类赢了。第 5 局：AlphaGo 恢复状态并获胜。李世石明显情绪激动，道歉说：\"我失败了。对不起比赛结束了。\"Demis Hassabis 称这是\"十年工作的顶峰\"。在东亚的影响是地震级别的。韩国政府在数日内宣布了 8.6 亿美元的 AI 研究基金。中国国务院次年发布了《新一代人工智能发展规划》。中韩一整代学生决定投身 AI。这场对决后来成为获奖纪录片《AlphaGo》（2017）的主题。DeepMind 在《自然》上发表了完整技术细节（2016 年 1 月对战樊麾，李世石的分析在随后的《自然》新闻特写中）。AlphaGo 谱系演化为 AlphaGo Zero（纯粹通过自我对弈训练）、AlphaZero（泛化至国际象棋和将棋）以及 MuZero（从零开始学习游戏规则）。"
+    },
+    "date": "2016-03-15",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "March 15, 2016",
+      "zhHans": "2016年3月15日"
+    },
+    "status": "published",
+    "significance": 3,
+    "impactIndex": 8,
+    "consensusLevel": "broad",
+    "controversy": false,
+    "impacts": [
+      {
+        "dimension": "capability_leap",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "Proved that deep reinforcement learning combined with Monte Carlo Tree Search could master a domain with an astronomically large search space—something previously believed to require human intuition. AlphaGo's creative Move 37 in Game 2 demonstrated emergent strategic reasoning that even professional players found novel.",
+          "zhHans": "证明了深度强化学习结合蒙特卡洛树搜索可以掌握搜索空间天文般巨大的领域——此前这被认为需要人类直觉。AlphaGo 在第 2 局的创造性第 37 手展示了连职业棋手都感到新颖的涌现式战略推理能力。"
+        },
+        "affectedGroups": [
+          "AI researchers",
+          "Go community",
+          "game theorists",
+          "reinforcement learning researchers"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "silver-alphago-2016",
+          "nature-go-files-2016"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 3,
+        "direction": "positive",
+        "description": {
+          "en": "In East Asia especially, AlphaGo became a cultural watershed. Over 200 million viewers watched the match. The event fundamentally rewired public imagination about AI's capabilities—'AI can beat us at our most beautiful game' registered differently than 'AI can play chess.' Triggered a generational shift in career choices toward AI in China and Korea.",
+          "zhHans": "尤其在东亚，AlphaGo 成为一个文化分水岭。超过 2 亿人观看了这场比赛。这一事件从根本上重塑了公众对 AI 能力的想象——\"AI 能在我们最优美的棋类上击败我们\"与\"AI 会下国际象棋\"的感受截然不同。在中国和韩国触发了一整代人向 AI 领域的职业选择转向。"
+        },
+        "affectedGroups": [
+          "general public (East Asia)",
+          "students",
+          "educators",
+          "policymakers"
+        ],
+        "timeframe": "long",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "silver-alphago-2016",
+          "nature-go-files-2016"
+        ]
+      },
+      {
+        "dimension": "economic_disruption",
+        "severity": 2,
+        "direction": "positive",
+        "description": {
+          "en": "Sparked national-level AI investment commitments. South Korea announced $860M AI fund within days. China's State Council released the 'Next Generation AI Development Plan' within a year, committing to AI world leadership by 2030. Google's acquisition of DeepMind for £400M in 2014 was retrospectively validated as one of the most strategically important tech acquisitions.",
+          "zhHans": "引发了国家级 AI 投资承诺。韩国在数日内宣布了 8.6 亿美元 AI 基金。中国国务院在一年内发布了《新一代人工智能发展规划》，承诺到 2030 年实现 AI 全球领先地位。Google 2014 年以 4 亿英镑收购 DeepMind 被回顾性验证为最具战略意义的技术收购之一。"
+        },
+        "affectedGroups": [
+          "governments",
+          "investors",
+          "tech industry",
+          "Google/DeepMind"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "silver-alphago-2016",
+          "nature-go-files-2016"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "alphago-defeats-lee-sedol",
+        "text": {
+          "en": "AlphaGo defeated Lee Sedol 4–1 in a five-game match in Seoul, March 9–15, 2016. Lee Sedol's single victory came in Game 4 via Move 78 ('God's Touch').",
+          "zhHans": "AlphaGo 于 2016 年 3 月 9 日至 15 日在首尔的五局比赛中以 4–1 击败李世石。李世石的唯一胜利来自第 4 局通过第 78 手（\"神之一手\"）。"
+        },
+        "claimType": "fact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "silver-alphago-2016",
+          "nature-go-files-2016"
+        ]
+      },
+      {
+        "id": "alphago-cultural-impact",
+        "text": {
+          "en": "The AlphaGo match was watched by over 200 million people globally and triggered national AI investment strategies in multiple East Asian countries, marking a turning point in public perception and government AI policy worldwide.",
+          "zhHans": "AlphaGo 比赛被全球超过 2 亿人观看，并触发了多个东亚国家的国家 AI 投资战略，标志着全球公众认知和政府 AI 政策的转折点。"
+        },
+        "claimType": "impact",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "silver-alphago-2016",
+          "nature-go-files-2016"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "silver-alphago-2016",
+        "supports": [
+          "alphago-defeats-lee-sedol",
+          "alphago-cultural-impact"
+        ],
+        "quote": "A computer Go program based on deep neural networks defeats a human professional player to achieve one of the grand challenges of artificial intelligence."
+      },
+      {
+        "sourceId": "nature-go-files-2016",
+        "supports": [
+          "alphago-defeats-lee-sedol",
+          "alphago-cultural-impact"
+        ],
+        "quote": "AI computer wraps up 4-1 victory against human champion."
+      },
+      {
+        "sourceId": "wikipedia-alphago-lee-sedol",
+        "quote": "AlphaGo defeated Lee Sedol 4-1 in March 2016.",
+        "supports": [
+          "alphago-2016"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "deep-blue-1997",
+      "alexnet-2012",
+      "transformer-2017"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-06-24",
+      "updatedAt": "2026-07-20",
+      "reviewedAt": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-06-24",
+          "changeType": "created",
+          "summary": "Initial v2 entry for AlphaGo vs Lee Sedol."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
+        }
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "legacy_pre_v23"
+    },
+    "categories": [
+      "capability",
+      "society"
+    ]
+  },
+  "sources": {
+    "silver-alphago-2016": {
+      "id": "silver-alphago-2016",
+      "type": "primary",
+      "tier": 1,
+      "title": "Silver, D. et al. (2016) 'Mastering the game of Go with deep neural networks and tree search.' Nature, 529, 484-489.",
+      "url": "https://www.nature.com/articles/nature16961",
+      "publishedAt": "2016-01-28",
+      "accessedAt": "2026-06-24",
+      "language": "en",
+      "doi": "10.1038/nature16961",
+      "independence": "primary_actor",
+      "notes": "Original Nature paper describing AlphaGo's architecture and victory over Fan Hui."
+    },
+    "nature-go-files-2016": {
+      "id": "nature-go-files-2016",
+      "type": "news",
+      "tier": 2,
+      "title": "Chouard, T. (2016) 'The Go Files: AI computer wraps up 4-1 victory against human champion.' Nature News.",
+      "url": "https://www.nature.com/articles/nature.2016.19575",
+      "publishedAt": "2016-03-15",
+      "accessedAt": "2026-06-24",
+      "language": "en",
+      "independence": "independent",
+      "notes": "Nature's on-the-ground coverage of the AlphaGo-Lee Sedol match."
+    },
+    "wikipedia-alphago-lee-sedol": {
+      "id": "wikipedia-alphago-lee-sedol",
+      "type": "encyclopedia",
+      "tier": 2,
+      "title": "AlphaGo versus Lee Sedol — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+      "accessedAt": "2026-06-25",
+      "language": "en",
+      "independence": "independent"
+    }
+  }
+}

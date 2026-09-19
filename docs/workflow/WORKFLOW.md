@@ -1,497 +1,92 @@
-# EpochArc 信息收集工作流
+# EpochArc 编辑执行流程 v2.4
 
-**版本**：v2.3  
-**更新日期**：2026-07-20
+规则权威：[EDITORIAL-STANDARD](EDITORIAL-STANDARD.md)。参数：[policy.json](../../governance/policy.json)。本文只描述执行方法，不另设评分标准。
 
-> ⚠️ **核心原则：所有工作严格按照流程、体系和标准执行。**
-> 任何关于是否收录、如何分类、打什么分的决定，必须依据本文档定义的流程（发现→初筛→确认→发布）、DATA-MODEL.md 定义的评分和数据类型、STYLE-GUIDE.md 定义的文案规范。
-> 不凭感觉做编辑判断，不跳过验证步骤，不让直觉替代数据。如有冲突，以文档为准。
+## 1. 开始前
 
----
+1. 确认范围：完整扫查 full、定向复核 targeted、历史回溯 backfill；明确是否允许写 canonical、是否允许发布。
+2. 检查工作区，记录 Git 完整 SHA、UTC 日期窗、证据截止日、操作者、模型和提示词版本。
+3. 新 run 写 `governance/runs/{runId}.json`。旧 `data/screening_log.json`、`data/possible_directions_screening_log.json` 是冻结的历史日志，不追加新格式。
+4. `content/events`、`content/arcs`、`data/sources.json`、`data/forecasts.json` 是编辑源；不要手改生成页面或生成清单。
 
-## 核心原则
+## 2. Discover：发现
 
-### 发现与确认分离
+full 必须记录全部核心通道及六类覆盖。状态以本轮结果为准，文档中不再写永久“可用/停刊”。
 
-```
-发现层 ──────────────→ 候选池 ──────────────→ 确认层 ──────────────→ 发布
-多信源自动扫描          初筛 + AI 草稿        Brave Search 深挖       人工审核上线
-```
+| 通道 ID | 采集入口 | 日期窗注意事项 |
+|---|---|---|
+| hf-papers | `https://huggingface.co/api/daily_papers?limit=20` | 仅为当前快照；回溯需按日/分页或辅助搜索，缺失指标写 unknown |
+| hacker-news | Firebase topstories + item API | top 30 不代表整周；用有日期范围的历史检索补充并记录局限 |
+| reddit-search | Brave 或平台可用后端 | 保存查询/日期过滤、URL 和结果；索引不等于完整平台覆盖 |
+| x-search | 同上 | 不从标题推断互动量，不保证实时索引 |
+| import-ai | `python3 scripts/check_mail.py import-ai --limit N --max-chars 0` | N 覆盖所需期数，确认正文未截断 |
+| the-batch | `python3 scripts/check_mail.py the-batch --limit N --max-chars 0` | 同上 |
 
-**发现层**回答"有什么值得关注的事发生了"。  
-**确认层**回答"这件事的准确事实、可验证影响和可信来源是什么"。
+Gmail 使用 IMAP + macOS Keychain `epocharc-gmail-app-password`；先用 `python3 scripts/check_mail.py test` 检查连接。凭据不入库，失效如实记录。不得为了让通道“成功”改写返回结果。
 
-Brave Search 有两个明确角色：只用于 Reddit/X/通用新闻的代理发现，以及候选进入确认层后的深挖。它不得替代 HF、HN、周刊或分类定向扫描。
+对 capability/product/commerce/governance/safety/society 逐一检查，必要时定向搜索补漏。分类没有结果是允许的，不分配收录配额。通用搜索补充，而不是伪装已完成其他通道。
 
-> ⚠️ **通道状态速查**：Gmail 已连接，Reddit 通过 Brave Search 代理可用，X/Twitter 同。详见下方信源矩阵。
+保存最小必要原始响应到 `governance/evidence/`，注明实际请求时间、查询、结果数、sha256。去除凭据和不必要个人信息；涉及受限内容，只保留合法可留存的摘录及存档定位。
 
----
+## 3. Screen：去重和初筛
 
-## 一、发现层：核心通道 + 条件通道
+- 为实际评估过的候选分配唯一 candidateId；保存发现 URL、五维评分与逐维理由。
+- 使用 SCREEN-02 得出核实优先级，不由初筛决定 L 等级。
+- 检索相同主体/动作/阶段的旧事件，列入 identity.comparedEventIds。
+- 记录最终工作决定 skip / hold / new / update / merge。pool 是优先级，不是事件状态；confirm 也不等于 reviewed。
+- 提前处理低优先级候选须说明理由；保留 skip/hold，不能只存最终胜出者。
 
-### 目标
+## 4. Confirm：四层事实搜索
 
-每周拉取所有可用核心信源，输出一个候选事件列表。每条候选包含：唯一 `candidateId`、信源地址、发现时间、简短理由、初步日期和原始查询。不可用通道必须在批次记录中标记，不得计入已完成覆盖。
+| 层 | 要回答 | 允许结果 |
+|---|---|---|
+| fact | 谁在何时做了什么？处于什么阶段？ | found / not_found / blocked |
+| impact | 哪些后果已经发生？ | 同上；未找到不等于“没有影响” |
+| analysis | 有什么独立验证、分析及可比基线？ | 同上；报道不自动升 A |
+| controversy | 有无反证、争议、复测失败或范围限制？ | 同上；未找到不能证明不存在 |
 
-### 信源矩阵
+每层保存 query/finding/evidenceIds。found 必须有证据引用。每条摘录同时绑定公开 claim 与来源，材料缺失则停在 hold，不填假 accessedAt。不同 URL 先去重到 publisherId/originId，再判断独立性。
 
-| # | 信源 | 覆盖类型 | 采集方式 | 状态 | 操作说明 |
-|---|------|---------|---------|------|--------|
-| 1 | **Hugging Face Daily Papers** | 社区筛选的研究热点 | `GET https://huggingface.co/api/daily_papers?limit=20` | ✅ 可用 | 无需操作。自动替代 arXiv + Papers with Code |
-| 2 | **Hacker News** | 科技社区注意力信号 | Firebase API (公开) | ✅ 可用 | 无需操作 |
-| 3 | **Gmail — Import AI 周刊** | 高质量人工策展 AI 新闻 | `python3 scripts/check_mail.py import-ai` | ✅ 可用 | Gmail IMAP + macOS 钥匙串中的 App Password；不依赖 7 天 OAuth 测试令牌 |
-| 4 | **Gmail — The Batch** | 行业向 AI 周报 | `python3 scripts/check_mail.py the-batch` | ✅ 可用 | 同上 |
-| 5 | **Brave Search → Reddit** | AI 社区热议话题（代理） | Brave Search API: `reddit.com MachineLearning trending {keywords}` | ✅ 可用（代理） | 无需操作。Reddit 原生 API 被封锁，用 Brave Search 搜索 `reddit.com` 替代 <br>`node search.js -n 10 "reddit.com trending AI June 2026"` |
-| 6 | **Brave Search → X/Twitter** | 科技社区注意力信号（代理） | Brave Search API: `x.com OR twitter.com AI {keywords}` | ✅ 可用（代理） | 无需操作。Twitter 原生 API 需付费，用 Brave Search 搜索 `x.com` 替代 <br>`node search.js -n 10 "x.com AI breakthrough June 2026"` |
-| 7 | **Brave Search → 通用 AI 新闻** | 发现层兜底 | Brave Search 通用搜索 | ✅ 可用 | 当其他通道全都无结果时，用 AI 新闻搜索兜底 |
+## 5. Edit：基于冻结证据形成判断
 
-> **核心通道**：HF Daily Papers、HN、Brave→Reddit、Brave→X。Gmail 通道只有在本轮实际读到内容时才算完成；通用 Brave 新闻是分类补漏与故障兜底，不计作常驻并行通道。
-> Brave Search 既做发现层（代理 Reddit/X），也做确认层（四层漏斗），但它不替代 HF 和 HN 的原始 API。
-> ⚠️ arXiv / Papers with Code / Reddit 原生 API 均已放弃，分别由 HF Daily Papers / Brave Search 替代。
+依次完成身份/日期 → 分类 → claim 证据链 → 相关 L2 路径 → L3 条件 → observed impacts → 共识/争议 → 双语。
 
-### 为什么选这些通道
+- 用 `null + 缺什么证据` 表达未知，不能用 false 偷换成反证。
+- 填最接近的至少两个已发布对照案例；比较证据结构，不抄旧分数。
+- 已上线事件缺证据时，只提出复核缺口；未经复核和批准不降级。
+- AI 可以提出等级、severity 和文案建议；人工负责最终接受。禁止把“AI 不做评分”作为省略评级依据的理由。
+- review 结构和批准绑定见 [REVIEW-CONTRACT](../data/REVIEW-CONTRACT.md)。
 
-- **HF Daily Papers**：arXiv 的精华版，社区已筛过一遍，专注"值得读的论文"。替代 arXiv 和 Papers with Code
-- **HN + Brave→Reddit + Brave→X**：三类社区注意力风向标。很多重要事件在媒体报道前先在这里发酵
-- **Import AI + The Batch**：人工策展的安全网——防止自动化漏掉政策/社会/文化层面的重要事件
-- **通用 Brave Search**：兜底——当其他通道全无结果时，直接搜索 AI 新闻
+## 6. Review：先复核再批准
 
-### 采集脚本（全部通道）
+L2/L3 需要独立模型会话或真实人工复核；同模型不同会话可以做独立复核，但不能叫跨模型实验。记录生产/评审 sessionId、实际模型、评审方法、限制和双语事实一致检查。
 
-```bash
-# 1) Hugging Face Daily Papers（替代 arXiv + Papers with Code）
-curl -s "https://huggingface.co/api/daily_papers?limit=20" | python3 -c "
-import sys, json
-data = json.load(sys.stdin)
-for item in data:
-    p = item['paper']
-    print(f\"{p['publishedAt'][:10]} | ★{item.get('upvotes',0):>3} | {p['title'][:80]}\")
-"
+复核原文是否支持结论、来源是否真正独立、观察期是否实际测得、组织计数是否无关联。这些不是文件哈希能证明的。分歧先定位证据，再处理规则解释；无法解决的停在 reviewed 之前。
 
-# 2) Hacker News 顶部故事（过滤 AI 关键词）
-IDS=\\$(curl -s "https://hacker-news.firebaseio.com/v0/topstories.json" | python3 -c "import sys,json; ids=json.load(sys.stdin); print(' '.join(str(i) for i in ids[:30]))")
-for id in \$IDS; do
-  curl -s "https://hacker-news.firebaseio.com/v0/item/\$id.json" | python3 -c "
-import sys, json, re
-i = json.load(sys.stdin)
-title = i.get('title','')
-url = i.get('url','')
-score = i.get('score',0)
-if re.search(r'AI|LLM|GPT|Claude|Gemini|DeepSeek|Anthropic|OpenAI|agent|transformer|neural|machine learning|language model', title, re.I):
-    print(f'[{score}] {title[:80]} | {url}')
-"
-done
+审批文件位于 `governance/approvals/{subjectDigest}.json`。只在收到明确确认后记录 actorType=human、确认消息引用及精确 subject/review/policy digest；代码不得自动生成批准。
 
-# 3) Gmail — Import AI / The Batch（IMAP + App Password）
-python3 scripts/check_mail.py test               # 检查 IMAP 登录和邮件数量
-python3 scripts/check_mail.py import-ai          # Import AI 最新一期正文（默认最多 15,000 字符）
-python3 scripts/check_mail.py import-ai --list   # Import AI 最新一期标题
-python3 scripts/check_mail.py the-batch          # The Batch 最新一期正文（默认最多 15,000 字符）
-python3 scripts/check_mail.py the-batch --list   # The Batch 最新一期标题
-
-# 年度/批次回溯：读取最近 4 期且不截断；N 按实际回溯范围调整
-python3 scripts/check_mail.py import-ai --limit 4 --max-chars 0
-python3 scripts/check_mail.py the-batch --limit 4 --max-chars 0
-
-# App Password 存在 macOS 钥匙串中，不写入项目文件。
-# 它不受 OAuth 测试应用 7 天令牌限制，但修改 Google 账号密码、
-# 手动撤销 App Password 或管理员策略变化时仍会失效。
-
-# 4) Brave Search → Reddit（发现层代理）
-export BRAVE_API_KEY="YOUR_KEY"
-cd /path/to/brave-search-skill && node search.js -n 10 "reddit.com AI trending June 2026"
-
-# 5) Brave Search → X/Twitter（发现层代理）
-export BRAVE_API_KEY="YOUR_KEY"
-cd /path/to/brave-search-skill && node search.js -n 10 "x.com AI breakthrough June 2026"
-```
-
----
-
-### 1A. 发现后检查：6 分类维度覆盖自查
-
-发现层输出的候选事件往往集中在 **能力突破** 和 **产品工具** 两个类别。以下 6 个分类必须在每次收集中逐一自查，确保无空白。
-
-| 分类 | 定义 | 倾向出现的信源 | 典型遗漏信号 |
-|------|------|-------------|-------------|
-| `capability` — 能力突破 | 前沿模型发布、首次达到超人类水平、新范式改变技术路线 | arXiv, HF, Reddit, 行业报告 | —（最容易发现） |
-| `product` — 产品工具 | AI 变成普通人能用的产品/工具，包括开源项目 | HN, GitHub trending, PH, 科技媒体 | 开源小团队爆火易漏；被模型发布信息淹没 |
-| `commerce` — 商业产业 | 公司治理、估值市值、行业格局、关键人事、AI 裁员 | 财经媒体, 公司公告, 科技媒体 | 与技术新闻不同频 |
-| `governance` — 治理监管 | 法律、监管、法院判例、行政命令 | 新闻, 法律媒体, Import AI | 早期信源不覆盖 |
-| `safety` — 安全伦理 | 安全事故、伦理争议、吹哨人、深度伪造 | Import AI, 专业媒体, 安全社区 | 在技术信源中几乎不存在 |
-| `society` — 社会文化 | 文化现象、就业危机（社会面）、公众认知时刻 | 主流媒体, HN/Reddit 热帖, Import AI | 在技术信源中几乎不存在；需要主动找 |
-
-**检查方法**：候选列表出来后，按 6 个分类染色，高亮空白类别。对空白类别执行定向 Brave 搜索补漏（见第 5 层）。分类覆盖是“已执行搜索”的覆盖，不是“每类必须收录事件”的配额；不得为了填满分类而降低准入标准。
-
-**频率**：每个有明确起止日期的批次执行一次。批次记录必须包含 `windowStart`、`windowEnd`、通道状态、查询、失败原因和重试结果。
-
----
-
-## 二、候选初筛
-
-从发现层输出的原始信号到候选池，用 0-2 分快速给 5 个维度打分：
-
-| 维度 | 0 分 | 1 分 | 2 分 |
-|------|------|------|------|
-| 可验证性 | 无原始来源 | 有二级来源 | 有原始来源（论文/公告/代码） |
-| 新颖性 | 重复旧事 | 小幅增量 | 明确新节点 |
-| 外溢影响 | 只在小圈层讨论 | 影响单一群体 | 跨研究/产业/政策/公众 |
-| 持续性 | 短期热度 | 可能持续 | 已有后续采用或制度影响 |
-| 来源质量 | 社区流言 | 可靠二级来源 | 原始来源 + 独立确认 |
-
-阈值：
-- **0-4 分**：不收录，保留观察
-- **5-7 分**：进入候选池
-- **8-10 分**：进入草稿，立即启动确认层
-
----
-
-## 三、确认层：Brave Search 四层漏斗
-
-针对每个候选池中的事件，执行四层搜索。每层产出映射到 v2 数据模型的不同字段。
-
-### 第 1 层：事实确认
-
-**目标**：锁定准确的时间、主体、参数。
+## 7. 本地验收与发布
 
 ```bash
-brave search "事件名称 launch date release announcement 2024" -n 5 --content
-brave search "事件名称 parameters model architecture paper" -n 5 --content
+npm run test:editorial
+python3 scripts/validate_all.py
+npm run build
+npm run test:seo
 ```
 
-**产出** → 填充 `AIEvent`:
+此外检查中英文页面渲染、来源链接、日期/等级展示和重要交互。结构通过不是事实审核通过，也不是视觉检查通过。
 
-> 初筛评分（五维×0-2）统一写入 `data/screening_log.json`。每条记录必须携带 `runId`，并能回指包含时间窗、通道状态、查询、失败原因和重试结果的批次记录。合法决定值只有 `skip`、`pool`、`draft`。确认层完成后回填 `eventId`、`reviewed`、`reviewedAt` 和 `reviewer`，形成“候选→审核→发布”的可追溯链条。历史条目缺少 `runId` 时只能标记为迁移债务，不得虚构批次信息。
+本地 build 会改写部分受跟踪的生成文件：先保存工作区清单，只恢复确由本轮构建产生且不打算提交的输出，不覆盖用户改动。
 
-| 搜索到的信息 | v2 字段 |
-|-------------|---------|
-| 准确日期 | `date`, `datePrecision` |
-| 发布主体 | `claims[fact]` |
-| 一句话核心导语 | `searchSummary` |
-| 发生了什么 | `summary`、`claims[fact]` |
-| 背景、机制与事实边界 | `narrative` |
-| 原始公告/论文 URL | `sources` (Tier 1) |
+获得明确发布授权后，只暂存本次批准涉及的路径，核对 diff，再 commit/push。不要使用无差别 `git add -A`。部署后检查 HTTP 状态、canonical/语言链接、页面样式及预期数据。
 
-### 第 2 层：影响分析
+## 8. Arc 与方向
 
-**目标**：找到这个事件产生的可观测影响。
+- Arc 以公开事件为事实锚点，额外解释有证据/反例；按 [ARC-MODEL](../arcs/ARC-MODEL.md) 写作。
+- 方向从事件和 observed signals 聚合；新 run 另存 directionDecisions，关联 screeningRunId，执行共识搜索。
+- 改变引用事件或来源会使依赖复核失效；应明确检查受影响 Arc/方向，不复制旧审批。
+- 定期/触发式复核记录新信息和保留意见；没有实际复核，不更新 reviewedAt/lastSourceCheckAt。
 
-```bash
-brave search "事件名称 impact effect consequence one year later" -n 10 --content
-brave search "事件名称 economic disruption job market changed how" -n 5 --content
-brave search "事件名称 adoption users enterprise deployment" -n 5 --content
-```
+## 9. 不允许的捷径
 
-**产出** → 填充 `ImpactAssessment[]`:
-
-| 搜索到的信息 | v2 字段 |
-|-------------|---------|
-| 改变了什么能力 | `impacts[].dimension = capability_leap` |
-| 就业/产业变化 | `impacts[].dimension = economic_disruption` |
-| 使用门槛变化 | `impacts[].dimension = access_democratization` |
-| 新增风险 | `impacts[].dimension = risk_creation` |
-| 社会认知变化 | `impacts[].dimension = paradigm_shift` |
-| 每个影响的严重度 | `impacts[].severity` (-3 ~ +3) |
-| 受影响的群体 | `impacts[].affectedGroups` |
-| 影响的时间尺度 | `impacts[].timeframe` |
-| 支持影响的来源 | `impacts[].sourceIds` |
-
-### 第 3 层：行业分析报告
-
-**目标**：找到独立第三方的权威分析，提高证据等级。
-
-```bash
-brave search "事件名称 analysis report review Stanford AI Index McKinsey" -n 5 --content
-brave search "事件名称 MIT Technology Review Ars Technica Nature Science" -n 5 --content
-```
-
-**产出** → 提升证据等级：
-
-| 搜索到的信息 | 用途 |
-|-------------|------|
-| 独立分析文章 | 提升 `impacts[].evidenceGrade` (C → B → A) |
-| 行业报告 | 作为 Tier 2 来源 |
-| 专家评论 | 填充 `claims[].claimType = interpretation` |
-
-### 第 4 层：争议与批评
-
-**目标**：找到反方观点，评估是否标记争议。
-
-```bash
-brave search "事件名称 criticism controversy limitation risk danger" -n 5 --content
-brave search "事件名称 copyright lawsuit safety concern ethical issue" -n 5 --content
-```
-
-**产出** → 填充：
-
-| 搜索到的信息 | v2 字段 |
-|-------------|---------|
-| 存在权威反方来源 | `controversy = true` |
-| 具体反方观点 | `claims[].claimType = limitation` |
-| 安全/伦理风险 | `impacts[].dimension = risk_creation` |
-| 争议导致共识度低 | `consensusLevel = debated` |
-
-### 第 5 层：按分类定向补漏 + 社区热点信号
-
-在批次收集中，对自查发现的空白分类执行定向搜索。这层搜索**不以单事件为起点**，而是以类别为起点，目的是发现之前被遗漏的事件。
-
-#### 社区热点信号（补充发现层）
-
-对于 `product` 和 `society` 分类，传统技术信源（arXiv、论文）容易遗漏。在年度 sweep 中额外搜索：
-
-```bash
-# 产品工具类 — 社区爆火信号
-brave search "fastest growing open source AI project {year}" -n 10 --content
-brave search "viral AI tool agent {year} GitHub trending" -n 10 --content
-brave search "Hacker News top AI posts {year} breakthrough" -n 5 --content
-
-# 社会文化类 — 概念流行信号
-brave search "AI buzzword new term coined {year}" -n 10 --content
-brave search "AI concept went viral mainstream {year}" -n 5 --content
-brave search "AI cultural phenomenon meme trend {year}" -n 5 --content
-
-# 商业产业类 — 公司/资本信号
-brave search "AI company valuation IPO restructuring acquisition {year}" -n 10 --content
-brave search "AI layoff裁员 company announced {year} citing automation" -n 10 --content
-brave search "AI market cap milestone trillion valuation {year}" -n 5 --content
-```
-
-#### 分类定向搜索
-
-```bash
-# 治理监管类
-brave search "AI regulation law bill passed {year}" -n 10 --content
-brave search "EU AI Act enforcement implementation {year}" -n 5 --content
-brave search "AI lawsuit filed court ruling {year}" -n 10 --content
-
-# 安全伦理类
-brave search "AI safety incident whistleblower accident {year}" -n 10 --content
-brave search "AI deepfake nonconsensual ban block controversy {year}" -n 10 --content
-brave search "AI ethics controversy lawsuit copyright {year}" -n 10 --content
-
-# 能力突破类
-brave search "AI first time human expert level benchmark milestone {year}" -n 10 --content
-brave search "AI IMO gold mathematics science Nobel {year}" -n 5 --content
-brave search "AI new architecture training paradigm paper breakthrough {year}" -n 10 --content
-```
-
-**产出**：从搜索结果中识别新候选事件，加入候选池，重新回到第 1-4 层的标准确认流程。
-
----
-
-## 八、各渠道搜索方法与执行要求
-
-### 渠道 1：Hugging Face Daily Papers
-
-| 属性 | 内容 |
-|:--|:--|
-| API 地址 | `https://huggingface.co/api/daily_papers?limit=20` |
-| 频率 | 每次扫查前执行 1 次 |
-| 搜索方法 | curl + python 解析（见上方采集脚本） |
-| 输出 | 每篇论文的发布时间、★评分、标题 |
-| 结果判断 | ★ ≥ 50 或标题含突破性关键词 → 进入候选 |
-| 替代 | 替代 arXiv API（被 rate limit）和 Papers with Code（403） |
-
-### 渠道 2：Hacker News
-
-| 属性 | 内容 |
-|:--|:--|
-| API 地址 | `https://hacker-news.firebaseio.com/v0/topstories.json` + `item/{id}.json` |
-| 频率 | 每次扫查前执行 1 次 |
-| 搜索方法 | 取 top 30 → 逐个获取标题/URL → 过滤 AI 关键词 |
-| 输出 | 每个匹配故事的[得分] 标题 | URL |
-| AI 关键词 | AI、LLM、GPT、Claude、Gemini、DeepSeek、Anthropic、OpenAI、agent、transformer、neural、machine learning、language model |
-| 结果判断 | score ≥ 50 且标题显式提及 AI 事件 → 进入候选 |
-
-### 渠道 3：Gmail — Import AI 周刊
-
-| 属性 | 内容 |
-|:--|:--|
-| 连接方式 | Gmail IMAP over SSL（`imap.gmail.com:993`） |
-| 前置要求 | Google 账号已启用两步验证并创建 App Password；密码存入 macOS 钥匙串服务 `epocharc-gmail-app-password`，不得写入仓库 |
-| 连接检查 | `python3 scripts/check_mail.py test` |
-| 搜索命令 | 日常：`python3 scripts/check_mail.py import-ai`（最新一期，默认最多 15,000 字符）；回溯：`python3 scripts/check_mail.py import-ai --limit N --max-chars 0` |
-| 当前状态 | ✅ 可用；每轮以脚本实际返回结果为准 |
-
-### 渠道 4：Gmail — The Batch
-
-| 属性 | 内容 |
-|:--|:--|
-| 连接方式 | 同上 |
-| 搜索命令 | 日常：`python3 scripts/check_mail.py the-batch`（最新一期，默认最多 15,000 字符）；回溯：`python3 scripts/check_mail.py the-batch --limit N --max-chars 0` |
-| 当前状态 | ✅ 可用；每轮以脚本实际返回结果为准 |
-
-> App Password 是长期凭据，不受 OAuth 测试应用 7 天令牌限制；但它并非不可撤销。修改 Google 账号密码、手动撤销 App Password 或组织管理员策略变化后，需要重新创建并更新钥匙串。任何登录或查询失败都必须记录在批次通道状态中，不得把静态文档中的“可用”当作本轮已完成覆盖。
-
-### 渠道 5：Brave Search → Reddit（代理）
-
-| 属性 | 内容 |
-|:--|:--|
-| 工具 | `search.js`（Brave Search API） |
-| 前置要求 | `BRAVE_API_KEY` 环境变量 |
-| 搜索方法 | 不用 `site:` 前缀，用自然语言 + `reddit.com` 关键词 |
-| 示例查询 | `node search.js -n 10 "reddit.com AI trending June 2026"` |
-| 补充查询 | `node search.js -n 10 "reddit.com r/MachineLearning breakthrough June 2026"` |
-| 输出 | Reddit 讨论帖标题、URL、摘要 |
-| 结果判断 | 帖子热度高（从标题推断）且内容指向未收录事件 → 进入候选 |
-| 替代 | 替代 Reddit 原生 API（被封锁，需 OAuth token） |
-
-### 渠道 6：Brave Search → X/Twitter（代理）
-
-| 属性 | 内容 |
-|:--|:--|
-| 工具 | `search.js`（Brave Search API） |
-| 前置要求 | `BRAVE_API_KEY` 环境变量 |
-| 搜索方法 | 搜索 `x.com` 或 `twitter.com` 内容 |
-| 示例查询 | `node search.js -n 10 "x.com AI breakthrough June 2026"` |
-| 分类查询 | `node search.js -n 10 "x.com AI regulation lawsuit regulation 2026"` |
-| 输出 | X/Twitter 帖子链接、摘要 |
-| 结果判断 | 转发量高或来自权威账号 → 进入候选 |
-| 注意 | Brave Search 对 X 的索引可能延迟 1-2 天，不适用于实时追踪 |
-
-### 渠道 7：Brave Search → 通用 AI 新闻（兜底）
-
-| 属性 | 内容 |
-|:--|:--|
-| 工具 | `search.js`（Brave Search API） |
-| 搜索方法 | 直接搜索 AI 相关关键词，无平台限制 |
-| 示例查询 | `node search.js -n 10 "AI news June 2026"` |
-| 用途 | 当所有其他通道都无结果时兜底扫描 |
-
----
-
-## 四、AI 辅助生成 JSON 草稿
-
-确认层搜索完成后，将搜索结果交给 agent 生成完整的 v2 JSON。
-
-**输入**：四层搜索的原始内容（标题、摘要、来源 URL）
-
-**Agent 做的事**：
-1. 从搜索内容中提取事实信息，填入 `title`、`searchSummary`、`summary`、`narrative` 和 `date`；四个文本字段职责按数据模型执行，不得以导语替代完整摘要
-2. 识别影响类型，生成 `ImpactAssessment[]`，初步评估 `severity` 和 `direction`
-3. 将来源分类（primary/official/news/analysis），填入 `sources.json` 结构，事件里只存 `SourceRef`
-4. 识别反方观点，决定 `controversy` 和 `claims[].claimType = limitation`
-5. 翻译中英双语（`LocalizedText` 的 `en` 和 `zhHans`）
-6. 计算 `impactIndex`（基于 dimensionScore + evidenceBonus + durabilityBonus + scopeBonus + controversyAdj）
-
-**Agent 不做的**（留给人工）：
-- 确定 `significance` (L1/L2/L3) —— 这是最重要的编辑判断
-- 微调 `severity` —— agent 的评估可能有偏差
-- 最终决定是否发布
-
----
-
-## 五、人工审核清单
-
-审核者收到 JSON 草稿后，逐项检查：
-
-### 分类覆盖检查
-
-- [ ] 当前批次对 6 个分类都执行过覆盖检查；空白分类记录了补漏查询或不执行的理由
-- [ ] 分类空白不自动产生收录配额，所有候选仍使用同一准入门槛
-- [ ] `categories[0]` 主分类选择准确：选择“最能解释为什么被收录”的分类；可选次分类必须通过 30% 信息丢失测试
-
-### 来源检查
-
-- [ ] 每个 L1 事件至少 1 个 Tier 1 来源（或 2 个独立 Tier 2）
-- [ ] 每个 L2 事件至少 1 个 Tier 1 + 1 个独立 Tier 2/3
-- [ ] 每个 L3 事件至少 1 个 Tier 1 + 2 个独立 Tier 2
-- [ ] 所有来源 URL 可访问（非 404）
-
-### 评分检查
-
-- [ ] `significance` L1-L3 与同类事件一致
-- [ ] `impactIndex` 在 0-10 之间，与同类事件的 relative magnitude 一致
-- [ ] `severity` 做了拆分（正负影响分别写，不写成模糊的 0）
-- [ ] `direction` 与带符号的 `severity` 一致；不使用 `mixed`
-- [ ] `controversy = true` 的事件有 `claimType = limitation` 的反方主张
-- [ ] `consensusLevel` 选择合理（broad / debated / emerging）
-
-### 数据结构检查
-
-- [ ] 每条 claim 包含唯一 `id`、双语 `text`、合法 `claimType`、`evidenceGrade` 和非空 `sourceIds`
-- [ ] Claim 不使用旧字段 `statement`、`type`、`confidence`、`sources`
-- [ ] 每个事件包含 `editorial.createdAt` 和 `editorial.updatedAt`，审核日期使用 `reviewedAt`
-- [ ] `published` 事件包含唯一 `slug`、`reviewer`、`reviewedAt` 和 `publishedAt`
-- [ ] `relatedEvents` 只引用已发布事件，不包含自身或重复 ID；反向关系由构建脚本自动补齐
-
-### 语言检查
-
-- [ ] `en` 文案适合公开传播
-- [ ] `zhHans` 文案已翻译完成
-
----
-
-## 六、自动化方案
-
-### 第一版：手动触发 + agent 执行
-
-适合个人策展，每周一次：
-
-1. 运行脚本拉取 HF Daily Papers + Hacker News → 输出候选列表
-2. 执行 Brave Search → Reddit + X/Twitter 代理搜索 → 补充社区信号
-3. （可选）Gmail 拉取 Import AI + The Batch → 补充人工策展内容
-4. **分类覆盖自查**：按 6 个分类染色候选列表，标记空白类别
-5. 对空白类别，agent 执行**第 5 层定向搜索** → 补充遗漏候选
-6. 对每个候选，agent 执行四层 Brave Search → 生成 JSON 草稿
-7. 人工审核 → 提交到 `content/events/`
-8. 运行 `python3 scripts/build_events.py` → 校验并生成 `data/events.json`
-9. 前端自动渲染
-10. **整理审核报告**：将本次发现的候选事件整理为摘要格式（事件名称、日期、分类、评分、来源摘要、确认层关键发现），发送给用户审核。**不执行 git push**，先运行 `python3 scripts/validate_all.py` 和 `npm run build` 本地验证
-11. **用户确认后**：执行 `git add -A && git commit` 和 `git push origin main` → Cloudflare Pages 自动部署
-
-### 第二版（可选）：Scheduled Worker
-
-如果需要更频繁的更新（如每天），可将步骤 1-3 部署为 Cloudflare Scheduled Worker：
-
-```
-Scheduled Worker (每天)
-  → 拉取 5 个 API 信源
-  → 初筛高分候选
-  → 写入候选池（D1 或 content/candidates/）
-  → 人工在后台界面筛选和确认
-```
-
----
-
-## 七、常见问题
-
-### Q: 为什么不用 Google News / Bing API 等更多搜索引擎？
-
-Brave Search 对历史事件和学术内容的索引质量足够好。多个搜索引擎不会显著提升覆盖率，只会增加重复结果和噪音。关键在于用对搜索场景——Brave 做深挖，API 信源做发现。
-
-### Q: arXiv / Papers with Code / Reddit 原生 API 为什么不用了？
-
-- **arXiv**：被 rate limit，无法稳定调用。用 HF Daily Papers 替代，后者每天精选 arXiv 论文
-- **Papers with Code**：同被 rate limit。HF 的效果更好（社区投票 + 热度)
-- **Reddit 原生 API**：全面封锁未认证请求。用 Brave Search 搜索 `reddit.com` 替代
-
-### Q: X/Twitter 有原生 API 吗？
-
-X API 现在需要付费订阅（$100+/月）才能读写。用 Brave Search 搜索 `x.com` 或 `twitter.com` 作为替代。虽然不如原生 API 实时，但用于发现大型事件已经足够。
-
-### Q: 发现层会不会漏掉重要的公司发布（如 OpenAI、Google）？
-
-公司官方发布通常：
-1. 会在 X/Twitter 上引爆 → HN/Reddit 马上跟上
-2. 会被主流科技媒体报道 → Brave Search 能搜到
-3. 会在 Import AI / The Batch 周报中被总结
-
-三层保险。如果某个发布连这三层都完全没覆盖，那大概率不符合收录标准（"影响跨出 AI 圈"）。
-
-### Q: 整个流程每周需要多少时间？
-
-| 环节 | 耗时 |
-|------|------|
-| 脚本拉取 HF + HN + Brave→Reddit/X | 自动 |
-| 浏览 Gmail（仅在订阅且有内容时） | 0-5 分钟 |
-| agent 对候选执行 Brave Search + 生成 JSON | 自动（每次 1-3 分钟） |
-| 人工审核 | 10-20 分钟 |
-| 构建 + 部署 | 自动 |
-
-**合计**：每周 15-25 分钟人工时间。
-
----
-
-*此文档与 [DATA-MODEL.md](../data/DATA-MODEL.md) v2.3 配套使用。
-[DATA-MODEL.md](../data/DATA-MODEL.md) 定义"存什么"，本文档定义"怎么找到要存的内容"。*
+没有发现渠道≠没有事件；初筛高分≠L2；厂商跑分≠独立复现；融资大≠结构变化；年头久≠持续观察；校验通过≠事实正确；负责人姓名≠负责人批准；新规则≠自动重评级历史数据。

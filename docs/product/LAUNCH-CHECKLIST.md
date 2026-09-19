@@ -1,11 +1,11 @@
-# Launch Checklist
+# 发布检查清单 v2.4
 
-1. Replace placeholder or missing source URLs in `data/sources.json` with DOI links, paper pages, official announcements, model cards, regulator pages, or authoritative reporting URLs.
-2. Apply the data rules in [DATA-MODEL.md](../data/DATA-MODEL.md): every L2/L3 event needs enough independent sources, and every L3 event should include at least one primary source plus independent confirmation.
-3. Every public Possible Direction must include at least two observed signals, and every signal must link to both published `eventIds` and supporting `sourceIds`.
-4. Run `python3 scripts/validate_all.py`, then `npm run build`. The build command runs the same validation gate before generating any public artifact; do not deploy when validation reports an error. Warnings are tracked editorial debt, not a clean bill of factual health: review `reviewProvenance` and the latest content audit before release.
-5. Publish a concise public methodology page that explains inclusion criteria, source tiers, L1-L3 levels, Impact Score, consensus labels, Possible Direction signal rules, and why most directions remain `monitor_only`.
-6. Verify that the build produced English pages on the default paths and Simplified Chinese pages under `/zh-hans/`. Each pair must have a self-referencing canonical, reciprocal `en` / `zh-Hans` hreflang links, `x-default` pointing to English, matching `og:url`, and two corresponding entries in `sitemap.xml`.
-7. If collecting votes, feedback, analytics, submissions, or contact messages, add privacy copy and store only the minimum needed data.
-8. Follow [PRODUCT-PLAN.md](PRODUCT-PLAN.md): keep editorial content file-based for v1; use Cloudflare Pages for the site, Pages Functions + D1 for voting, and a separate Scheduled Worker only for candidate collection.
-9. Run a final pass on Lighthouse, mobile screenshots, link validation, and source-link checks after deployment.
+1. 依据 [EDITORIAL-STANDARD](../workflow/EDITORIAL-STANDARD.md) 和 [REVIEW-CONTRACT](../data/REVIEW-CONTRACT.md) 核对阶段、来源、评级路径、证据截止日与真实人工批准。新内容不能借历史标记绕过检查。
+2. 公开事件引用只指向 published；Arc 的锚点和 relatedArcs 同样如此。方向至少两个 observed signals，均绑定公开事件与逐主张来源；screeningRunId 回指真实批次。
+3. 运行 `npm run test:editorial`、`python3 scripts/validate_all.py`、`npm run build`、`npm run test:seo`。错误阻止发布；警告表示历史债务，不是事实健康证明。
+4. 检查构建没有把 governance 下证据、审核、审批或校准文件复制到 dist；来源/响应中不含密钥和不必要个人信息。
+5. 政策正式生效时，同步公开 Methods 对纳入条件、来源等级、L1–L3、影响分、共识与方向边界的说明；不能声称全部历史数据已按新规则复核。
+6. 检查默认英文页面与 `/zh-hans/` 中文页面、自指 canonical、相互 hreflang、英文 x-default、og:url 与 sitemap 配对。
+7. 本地检查双语文本、样式、移动端和关键交互。来源 URL 返回 200 不等于内容支持结论；结构测试也不能替代视觉检查。
+8. 收集 Reader Pulse/反馈/分析数据时，检查隐私说明，只保留必要真实数据，不制造互动。
+9. 核对 git diff；仅提交本次明确批准的路径。获得独立的发布授权后才 commit/push，部署后检查页面、路由、样式与预期版本。

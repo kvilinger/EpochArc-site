@@ -1,0 +1,337 @@
+{
+  "type": "published_canonical_snapshot_not_reverified",
+  "event": {
+    "id": "kimi-k3-2026",
+    "slug": "kimi-k3-2026",
+    "title": {
+      "en": "Moonshot AI announces Kimi K3, a 2.8-trillion-parameter open-weight model",
+      "zhHans": "Moonshot AI 发布 Kimi K3——2.8 万亿参数开放权重模型"
+    },
+    "searchSummary": {
+      "en": "Moonshot AI announced Kimi K3, a 2.8T MoE open-weight model with 1M context, officially releasing the weights and technical report on July 27.",
+      "zhHans": "Moonshot AI 发布 2.8 万亿参数 MoE 开放权重模型 Kimi K3，支持 1M 上下文，并于 7 月 27 日正式开放权重与技术报告。"
+    },
+    "summary": {
+      "en": "On July 16, 2026, Moonshot AI announced Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model with native vision and a 1-million-token context window. On July 27, Moonshot released the full weights, technical report, and infrastructure repositories under the Kimi K3 License. On July 24, UK AISI and US CAISI published a preliminary cyber assessment showing a 32% ExploitBench score.",
+      "zhHans": "2026 年 7 月 16 日，Moonshot AI 发布 2.8 万亿参数混合专家模型 Kimi K3，具备原生视觉与 100 万 token 上下文。7 月 27 日，Moonshot 正式在 Kimi K3 许可下开放完整权重、技术报告及训练 Infra 开源项目。7 月 24 日，英国 AISI 与美国 CAISI 发布初步网络安全评估，其 ExploitBench 得分为 32%。"
+    },
+    "narrative": {
+      "en": "Moonshot AI launched Kimi K3 across its web and developer products on July 16 and delivered its full open-weights release on July 27 alongside its technical report and the MoonEP and AgentEnv infrastructure frameworks. The model uses Kimi Delta Attention (KDA) and Attention Residuals (AttnRes) to achieve a 2.5x scaling efficiency boost over Kimi K2. A joint preliminary cyber evaluation by UK AISI and US CAISI found Kimi K3 scored 32% on ExploitBench without achieving arbitrary code execution in evaluated samples.",
+      "zhHans": "Moonshot AI 于 7 月 16 日在其网页与开发者平台上线 Kimi K3，并于 7 月 27 日正式开源完整权重、技术报告以及 MoonEP 与 AgentEnv 基础设施框架。该模型采用 KDA 与注意力残差架构，相较 Kimi K2 实现了 2.5 倍的扩展效率提升。英国 AISI 与美国 CAISI 的联合初步网络评估显示，Kimi K3 在 ExploitBench 上取得 32% 得分，在所测样本中未出现任意代码执行。"
+    },
+    "date": "2026-07-16",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "July 16, 2026",
+      "zhHans": "2026年7月16日"
+    },
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 5,
+    "consensusLevel": "emerging",
+    "controversy": true,
+    "categories": [
+      "capability",
+      "commerce"
+    ],
+    "impacts": [
+      {
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "Kimi K3's 2.8-trillion-parameter announcement raises the scale ceiling claimed for open-weight models, but competitive quality and deployability still require independent testing after the full weights become available.",
+          "zhHans": "Kimi K3 的 2.8 万亿参数公告提高了开放权重模型所宣称的规模上限，但其竞争力和可部署性仍需在完整权重开放后接受独立测试。"
+        },
+        "affectedGroups": [
+          "AI researchers",
+          "open-source community",
+          "AI developers"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "kimi-k3-official-2026",
+          "venturebeat-kimi-k3-2026",
+          "marktechpost-kimi-k3-2026"
+        ]
+      },
+      {
+        "dimension": "economic_disruption",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "If the promised full weights are released and practically deployable, Kimi K3 could add pricing pressure and a self-hosting alternative; that effect was not yet observable at announcement time.",
+          "zhHans": "如果承诺的完整权重按计划开放且具备实际部署条件，Kimi K3 可能增加价格压力并提供自托管选择；在公告时点，这一影响尚未可观察。"
+        },
+        "affectedGroups": [
+          "enterprises",
+          "startups",
+          "developers"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "venturebeat-kimi-k3-2026"
+        ]
+      },
+      {
+        "dimension": "risk_creation",
+        "severity": -1,
+        "direction": "negative",
+        "description": {
+          "en": "The assessment found that Kimi K3 safeguards did not prevent attempted offensive cyber work in the tested setting, while the model’s measured capability remained below the leading frontier systems in that evaluation.",
+          "zhHans": "评估发现，在测试环境中，Kimi K3 的安全措施未能阻止其尝试进攻性网络工作；但该模型在这一评估中的能力仍低于领先的前沿系统。"
+        },
+        "affectedGroups": [
+          "AI security teams",
+          "open-weight model users",
+          "AI regulators"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nist-kimi-k3-cyber-assessment-2026",
+          "aisi-kimi-k3-cyber-assessment-2026"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "kimi-k3-release-2026",
+        "claimType": "fact",
+        "text": {
+          "en": "Moonshot AI announced Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter MoE model with a 1M-token context window, releasing weights on July 27.",
+          "zhHans": "Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3——2.8 万亿参数 MoE 模型，具备 100 万 token 上下文，并于 7 月 27 日开放权重。"
+        },
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "kimi-k3-official-2026",
+          "venturebeat-kimi-k3-2026",
+          "marktechpost-kimi-k3-2026"
+        ]
+      },
+      {
+        "id": "kimi-k3-largest-open-source-2026",
+        "claimType": "fact",
+        "text": {
+          "en": "Moonshot released the full Kimi K3 weights, technical report, MoonEP, and AgentEnv repositories on July 27, 2026 under the Kimi K3 License.",
+          "zhHans": "Moonshot AI 于 2026 年 7 月 27 日在 Kimi K3 许可证下正式开源 Kimi K3 权重、技术报告、MoonEP 与 AgentEnv 仓库。"
+        },
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "kimi-k3-open-day-2026",
+          "kimi-k3-official-2026",
+          "venturebeat-kimi-k3-2026"
+        ]
+      },
+      {
+        "id": "kimi-k3-cyber-assessment-2026",
+        "claimType": "fact",
+        "text": {
+          "en": "UK AISI and US CAISI reported that Kimi K3 scored 32% on ExploitBench, compared with 24% for GLM-5.2.",
+          "zhHans": "英国 AISI 与美国 CAISI 报告称，Kimi K3 在 ExploitBench 上获得 32%，GLM-5.2 为 24%。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nist-kimi-k3-cyber-assessment-2026",
+          "aisi-kimi-k3-cyber-assessment-2026"
+        ]
+      },
+      {
+        "id": "kimi-k3-cyber-assessment-limitation-2026",
+        "claimType": "limitation",
+        "text": {
+          "en": "The agencies described the Kimi K3 cyber assessment as preliminary and based on a selective set of tests.",
+          "zhHans": "两家机构将 Kimi K3 网络安全评估描述为初步结果，并说明其基于有限测试集。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nist-kimi-k3-cyber-assessment-2026",
+          "aisi-kimi-k3-cyber-assessment-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "kimi-k3-official-2026",
+        "supports": [
+          "kimi-k3-2026",
+          "kimi-k3-release-2026",
+          "kimi-k3-largest-open-source-2026"
+        ]
+      },
+      {
+        "sourceId": "kimi-k3-open-day-2026",
+        "supports": [
+          "kimi-k3-largest-open-source-2026"
+        ]
+      },
+      {
+        "sourceId": "venturebeat-kimi-k3-2026",
+        "supports": [
+          "kimi-k3-release-2026"
+        ]
+      },
+      {
+        "sourceId": "marktechpost-kimi-k3-2026",
+        "supports": [
+          "kimi-k3-release-2026"
+        ]
+      },
+      {
+        "sourceId": "kie-ai-kimi-k3-2026",
+        "supports": [
+          "kimi-k3-2026"
+        ]
+      },
+      {
+        "sourceId": "nist-kimi-k3-cyber-assessment-2026",
+        "supports": [
+          "kimi-k3-cyber-assessment-2026",
+          "kimi-k3-cyber-assessment-limitation-2026"
+        ]
+      },
+      {
+        "sourceId": "aisi-kimi-k3-cyber-assessment-2026",
+        "supports": [
+          "kimi-k3-cyber-assessment-2026",
+          "kimi-k3-cyber-assessment-limitation-2026"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "deepseek-v4-2026",
+      "glm-52-open-source-2026",
+      "deepseek-r1-2025"
+    ],
+    "relatedForecasts": [
+      "open-vs-closed"
+    ],
+    "editorial": {
+      "createdAt": "2026-07-16",
+      "updatedAt": "2026-08-24",
+      "reviewedAt": "2026-08-24",
+      "publishedAt": "2026-07-16",
+      "curator": "gang",
+      "changeLog": [
+        {
+          "date": "2026-07-16",
+          "changeType": "created",
+          "summary": "Initial entry for Kimi K3 release."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Distinguished launch access from the scheduled full-weight release and softened unverified performance claims."
+        },
+        {
+          "date": "2026-07-20",
+          "changeType": "correction",
+          "summary": "Added or normalized explicit SourceRef.supports mappings for 1 source reference(s)."
+        },
+        {
+          "date": "2026-07-28",
+          "changeType": "source_added",
+          "summary": "Added the July 24 UK AISI/US CAISI preliminary cyber assessment and its methodology limitation."
+        },
+        {
+          "date": "2026-08-24",
+          "changeType": "correction",
+          "summary": "Updated full weights status from scheduled to completed on July 27, added official Moonshot Open Day source, and verified all accessedAt metadata."
+        }
+      ],
+      "reviewer": "gang",
+      "reviewProvenance": "v2.3",
+      "lastSourceCheckAt": "2026-08-24",
+      "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
+    }
+  },
+  "sources": {
+    "kimi-k3-official-2026": {
+      "id": "kimi-k3-official-2026",
+      "type": "official",
+      "tier": 1,
+      "title": "Kimi K3 Tech Blog: Open Frontier Intelligence",
+      "url": "https://www.kimi.com/blog/kimi-k3",
+      "publisher": "Moonshot AI",
+      "description": "Official Kimi K3 launch and architecture details",
+      "publishedAt": "2026-07-16",
+      "accessedAt": "2026-07-20",
+      "independence": "primary_actor"
+    },
+    "kimi-k3-open-day-2026": {
+      "id": "kimi-k3-open-day-2026",
+      "type": "official",
+      "tier": 1,
+      "title": "Kimi K3 Open Day: Model Weights, Technical Report and Infrastructure Released",
+      "url": "https://www.kimi.com/news/kimi-k3-open-source",
+      "publisher": "Moonshot AI",
+      "publishedAt": "2026-07-27",
+      "accessedAt": "2026-08-24",
+      "language": "zhHans",
+      "independence": "primary_actor",
+      "notes": "Official Moonshot AI announcement on July 27 releasing Kimi K3 weights, technical report, MoonEP, and AgentEnv."
+    },
+    "venturebeat-kimi-k3-2026": {
+      "id": "venturebeat-kimi-k3-2026",
+      "type": "news",
+      "tier": 2,
+      "title": "China's Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top U.S. systems",
+      "url": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems",
+      "publisher": "VentureBeat",
+      "description": "Kimi K3: 2.8 trillion parameter open-source model",
+      "publishedAt": "2026-07-16",
+      "independence": "independent",
+      "accessedAt": "2026-08-24"
+    },
+    "marktechpost-kimi-k3-2026": {
+      "id": "marktechpost-kimi-k3-2026",
+      "type": "news",
+      "tier": 2,
+      "title": "Moonshot AI Releases Kimi K3: A 2.8 Trillion Parameter Open MoE Model",
+      "url": "https://www.marktechpost.com/2026/07/16/moonshot-ai-releases-kimi-k3-a-2-8-trillion-parameter-open-moe-model-with-kimi-delta-attention-and-1m-context/",
+      "publisher": "MarkTechPost",
+      "description": "Kimi K3 architecture and benchmark details",
+      "publishedAt": "2026-07-16",
+      "independence": "independent",
+      "accessedAt": "2026-08-24"
+    },
+    "kie-ai-kimi-k3-2026": {
+      "id": "kie-ai-kimi-k3-2026",
+      "type": "analysis",
+      "tier": 3,
+      "title": "What Is Kimi K3? Moonshot's 2.8T, 1M-Context Flagship",
+      "url": "https://kie.ai/blog/what-is-kimi-k3",
+      "publisher": "KIE AI",
+      "description": "Analysis of Kimi K3's architecture and positioning",
+      "publishedAt": "2026-07-14",
+      "independence": "independent",
+      "accessedAt": "2026-08-24"
+    },
+    "nist-kimi-k3-cyber-assessment-2026": {
+      "id": "nist-kimi-k3-cyber-assessment-2026",
+      "type": "official",
+      "tier": 1,
+      "title": "UK AISI / CAISI Preliminary Assessment of Kimi K3's Cyber Capabilities",
+      "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
+      "publisher": "National Institute of Standards and Technology",
+      "accessedAt": "2026-07-28",
+      "language": "en",
+      "independence": "primary_actor",
+      "publishedAt": "2026-07-24"
+    },
+    "aisi-kimi-k3-cyber-assessment-2026": {
+      "id": "aisi-kimi-k3-cyber-assessment-2026",
+      "type": "official",
+      "tier": 1,
+      "title": "UK AISI / CAISI Preliminary Assessment of Kimi K3's Cyber Capabilities",
+      "url": "https://www.aisi.gov.uk/blog/preliminary-assessment-of-kimi-k3s-cyber-capabilities",
+      "publisher": "UK AI Security Institute",
+      "accessedAt": "2026-07-28",
+      "language": "en",
+      "independence": "primary_actor",
+      "publishedAt": "2026-07-24"
+    }
+  }
+}

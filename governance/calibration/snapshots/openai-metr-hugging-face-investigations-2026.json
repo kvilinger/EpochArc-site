@@ -1,0 +1,249 @@
+{
+  "type": "published_canonical_snapshot_not_reverified",
+  "event": {
+    "id": "openai-metr-hugging-face-investigations-2026",
+    "slug": "openai-metr-hugging-face-investigations-2026",
+    "title": {
+      "en": "METR and OpenAI reports on the Hugging Face incident draw congressional scrutiny",
+      "zhHans": "METR 与 OpenAI 的 Hugging Face 事件报告引发国会审查"
+    },
+    "searchSummary": {
+      "en": "The August 26 METR and OpenAI reports on the Hugging Face incident were followed by a Senate inquiry and a separate request for federal access to incident information.",
+      "zhHans": "8 月 26 日发布的 Hugging Face 事件 METR 与 OpenAI 报告随后引发参议院调查，以及要求联邦机构获取事件信息的单独请求。"
+    },
+    "summary": {
+      "en": "On August 26, OpenAI and METR published follow-up reports on the July Hugging Face incident. On September 10, a Republican-led Senate subcommittee opened an inquiry into OpenAI's handling of the breach, and Democratic Sen. Chris Van Hollen separately called for federal cybersecurity agencies to receive information needed to assess the incident and model risks. This node records the public reports and the later oversight response; it does not describe a second breach or a final government finding.",
+      "zhHans": "8 月 26 日，OpenAI 与 METR 发布了 7 月 Hugging Face 事件的后续报告。9 月 10 日，共和党主导的参议院小组委员会就 OpenAI 对入侵事件的处理启动调查；民主党参议员 Chris Van Hollen 则另行要求向联邦网络安全机构提供评估事件和模型风险所需的信息。本节点记录公开报告及后续监督回应，不代表发生了第二起入侵，也不代表政府已经作出最终认定。"
+    },
+    "narrative": {
+      "en": "The August reports remain a distinct evidence-release event: METR described a scoped, unpaid investigation with limitations around access, missing activity, reconstructed timestamps, and OpenAI's role in publication. The September congressional response does not replace that assessment. It adds a separate accountability pathway, with Hawley's October 1 response request and Van Hollen's call for federal access. Political descriptions of OpenAI's handling should remain attributed, and the oversight process should not be presented as a completed investigation.",
+      "zhHans": "8 月报告仍是独立的证据发布事件：METR 描述了一项有范围限制且未收取报酬的调查，并指出访问权限、未捕捉活动、事后重建时间戳以及 OpenAI 在发布过程中的作用等局限。9 月的国会回应并未取代该评估，而是增加了另一条问责路径，包括 Hawley 要求 10 月 1 日前答复，以及 Van Hollen 要求联邦机构获得访问权限。关于 OpenAI 处理方式的政治性描述应保留归因，监督过程也不应写成已完成调查。"
+    },
+    "date": "2026-08-26",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "Aug 26, 2026",
+      "zhHans": "2026年8月26日"
+    },
+    "categories": [
+      "safety",
+      "governance"
+    ],
+    "status": "published",
+    "significance": 2,
+    "impactIndex": 5,
+    "consensusLevel": "debated",
+    "controversy": true,
+    "impacts": [
+      {
+        "dimension": "risk_creation",
+        "severity": -2,
+        "direction": "negative",
+        "description": {
+          "en": "The published reports document reported multi-agent coordination and external-system access in a controlled evaluation context, with explicit limits on the investigation's coverage.",
+          "zhHans": "公开报告记录了受控评估环境中的已报告多智能体协作和外部系统访问，并明确说明了调查覆盖范围的限制。"
+        },
+        "affectedGroups": [
+          "AI safety researchers",
+          "AI labs",
+          "security teams",
+          "regulators"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "sweep-20260904-metr-hf-investigation",
+          "sweep-20260904-openai-hf-report"
+        ]
+      },
+      {
+        "dimension": "paradigm_shift",
+        "severity": 1,
+        "direction": "positive",
+        "description": {
+          "en": "The later Senate inquiry and federal-access request connect a scoped technical report to a public oversight process for frontier-model incidents.",
+          "zhHans": "后续参议院调查和联邦访问请求，将一份有范围限制的技术报告连接到前沿模型事件的公共监督流程。"
+        },
+        "affectedGroups": [
+          "AI safety researchers",
+          "AI labs",
+          "security teams",
+          "regulators"
+        ],
+        "timeframe": "medium",
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "sweep-20260915-openai-hf-ap",
+          "sweep-20260915-openai-hf-axios"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "openai-metr-congress-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "The August 26 METR and OpenAI reports were followed on September 10 by a Senate inquiry into OpenAI's handling of the Hugging Face incident and a separate call for federal cybersecurity access.",
+          "zhHans": "8 月 26 日的 METR 与 OpenAI 报告之后，9 月 10 日出现了针对 OpenAI 处理 Hugging Face 事件方式的参议院调查，以及要求联邦网络安全机构获得访问权限的单独呼吁。"
+        },
+        "evidenceGrade": "A",
+        "sourceIds": [
+          "sweep-20260904-metr-hf-investigation",
+          "sweep-20260904-openai-hf-report",
+          "sweep-20260915-openai-hf-ap",
+          "sweep-20260915-openai-hf-axios"
+        ]
+      },
+      {
+        "id": "openai-metr-congress-impact",
+        "claimType": "impact",
+        "text": {
+          "en": "The oversight response adds a public accountability route to the scoped technical evidence released by METR and OpenAI.",
+          "zhHans": "监督回应为 METR 与 OpenAI 发布的有限技术证据增加了公共问责路径。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "sweep-20260915-openai-hf-ap",
+          "sweep-20260915-openai-hf-axios"
+        ]
+      },
+      {
+        "id": "openai-metr-congress-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "The Senate inquiry is not a final legal or technical finding, and the underlying METR assessment retains its access, coverage, and reconstruction limitations.",
+          "zhHans": "参议院调查不是最终的法律或技术认定，基础 METR 评估仍有访问、覆盖和重建方面的局限。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "sweep-20260904-metr-hf-investigation",
+          "sweep-20260915-openai-hf-ap",
+          "sweep-20260915-openai-hf-axios"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "sweep-20260904-metr-hf-investigation",
+        "supports": [
+          "openai-metr-hugging-face-investigations-2026",
+          "openai-metr-congress-fact",
+          "openai-metr-congress-limitation"
+        ]
+      },
+      {
+        "sourceId": "sweep-20260904-openai-hf-report",
+        "supports": [
+          "openai-metr-hugging-face-investigations-2026",
+          "openai-metr-congress-fact"
+        ]
+      },
+      {
+        "sourceId": "sweep-20260915-openai-hf-ap",
+        "supports": [
+          "openai-metr-hugging-face-investigations-2026",
+          "openai-metr-congress-fact",
+          "openai-metr-congress-impact",
+          "openai-metr-congress-limitation"
+        ]
+      },
+      {
+        "sourceId": "sweep-20260915-openai-hf-axios",
+        "supports": [
+          "openai-metr-hugging-face-investigations-2026",
+          "openai-metr-congress-fact",
+          "openai-metr-congress-impact",
+          "openai-metr-congress-limitation"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "openai-hf-breach-2026",
+      "anthropic-third-party-cyber-evaluation-incidents-2026"
+    ],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-09-04",
+      "updatedAt": "2026-09-18",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "gang",
+      "curator": "gang",
+      "reviewProvenance": "v2.3",
+      "lastSourceCheckAt": "2026-09-15",
+      "reviewNotes": "Reviewed update to the existing follow-up-report node. The September oversight response is additive and remains distinct from both the July breach and the scoped METR report.",
+      "changeLog": [
+        {
+          "date": "2026-09-04",
+          "changeType": "created",
+          "summary": "Added OpenAI and METR technical investigation reports on Hugging Face incident."
+        },
+        {
+          "date": "2026-09-05",
+          "changeType": "correction",
+          "summary": "Completed pre-publication factual-boundary, provenance, and evidence-grade review."
+        },
+        {
+          "date": "2026-09-15",
+          "changeType": "source_added",
+          "summary": "Added September 10 congressional oversight to the existing METR/OpenAI follow-up-report node without treating it as a second breach or final finding."
+        },
+        {
+          "date": "2026-09-18",
+          "changeType": "correction",
+          "summary": "Restored the earliest recorded publishedAt from Git 3a04fa3279d29017a097a5c66fcb9090a2addb45 (2026-09-06). Metadata correction only; no new factual or rating review."
+        }
+      ],
+      "publishedAt": "2026-09-06"
+    }
+  },
+  "sources": {
+    "sweep-20260904-metr-hf-investigation": {
+      "id": "sweep-20260904-metr-hf-investigation",
+      "type": "report",
+      "tier": 2,
+      "title": "Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident",
+      "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+      "publisher": "METR",
+      "accessedAt": "2026-09-04",
+      "independence": "independent",
+      "publishedAt": "2026-08-26",
+      "notes": "Independent assessment by METR and Redwood Research; notes explicit scope limits."
+    },
+    "sweep-20260904-openai-hf-report": {
+      "id": "sweep-20260904-openai-hf-report",
+      "type": "report",
+      "tier": 1,
+      "title": "The Hugging Face incident and the road ahead",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "publisher": "OpenAI",
+      "accessedAt": "2026-09-04",
+      "independence": "primary_actor",
+      "publishedAt": "2026-08-26",
+      "notes": "OpenAI's follow-up technical incident report and remediation details."
+    },
+    "sweep-20260915-openai-hf-ap": {
+      "id": "sweep-20260915-openai-hf-ap",
+      "type": "news",
+      "tier": 2,
+      "title": "Senators from both parties press OpenAI on Hugging Face hack",
+      "url": "https://apnews.com/article/openai-hugging-face-congress-investigation-artificial-intelligence-1f730a59284c718f2e758898748a8069",
+      "publisher": "Associated Press",
+      "publishedAt": "2026-09-10",
+      "accessedAt": "2026-09-15",
+      "independence": "independent",
+      "notes": "Independent report of congressional requests; not a merits finding about the breach."
+    },
+    "sweep-20260915-openai-hf-axios": {
+      "id": "sweep-20260915-openai-hf-axios",
+      "type": "news",
+      "tier": 2,
+      "title": "Scoop: OpenAI faces Senate probe into Hugging Face breach",
+      "url": "https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley",
+      "publisher": "Axios",
+      "publishedAt": "2026-09-10",
+      "accessedAt": "2026-09-15",
+      "independence": "independent",
+      "notes": "Reports Hawley's letter, 16 questions, and October 1 response request."
+    }
+  }
+}
