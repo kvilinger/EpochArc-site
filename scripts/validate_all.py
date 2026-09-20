@@ -226,7 +226,10 @@ def validate_sources():
 
 def calculate_impact_index(event: dict) -> int | None:
     impacts = event.get("impacts")
-    if impacts == [] and event.get("editorial", {}).get("reviewProvenance") == "v2.4":
+    if impacts == [] and event.get("significance") == 1 and (
+        event.get("status") in {"candidate", "draft"}
+        or event.get("editorial", {}).get("reviewProvenance") == "v2.4"
+    ):
         return 0
     if not isinstance(impacts, list) or not impacts:
         return None
@@ -367,8 +370,12 @@ def validate_events(source_map: dict):
             errors.append(f"{prefix}: controversy must be boolean")
 
         impacts = event.get("impacts")
-        if not isinstance(impacts, list) or (not impacts and not (event.get("editorial", {}).get("reviewProvenance") == "v2.4" and event.get("significance") == 1)):
-            errors.append(f"{prefix}: impacts must be non-empty except v2.4 L1 with no observed impact")
+        empty_l1_allowed = event.get("significance") == 1 and (
+            status in {"candidate", "draft"}
+            or event.get("editorial", {}).get("reviewProvenance") == "v2.4"
+        )
+        if not isinstance(impacts, list) or (not impacts and not empty_l1_allowed):
+            errors.append(f"{prefix}: impacts may be empty only for an unreviewed L1 candidate/draft or v2.4 L1 with no observed impact")
             impacts = []
         for index, impact in enumerate(impacts):
             ip = f"{prefix}.impacts[{index}]"

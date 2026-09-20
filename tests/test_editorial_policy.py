@@ -101,6 +101,28 @@ class Contracts(unittest.TestCase):
         self.assertEqual([], core.errors)
         self.assertEqual([], self.policy_errors())
 
+    def test_unreviewed_l1_draft_can_have_no_observed_impact(self):
+        draft = copy.deepcopy(self.record)
+        draft.update(status='draft', significance=1, impacts=[], impactIndex=0)
+        for field in ['reviewedAt', 'reviewer', 'reviewProvenance', 'reviewRecord', 'lastSourceCheckAt', 'publishedAt']:
+            draft['editorial'].pop(field, None)
+        save(self.root, 'content/events/test-event.json', draft)
+        core.errors.clear(); core.warnings.clear()
+        with patch.object(core, 'EVENT_GLOB', str(self.root / 'content/events/*.json')):
+            core.validate_events(self.sources)
+        self.assertEqual([], core.errors)
+        self.assertEqual(0, core.calculate_impact_index(draft))
+
+    def test_published_legacy_l1_cannot_silently_drop_impacts(self):
+        record = copy.deepcopy(self.record)
+        record.update(significance=1, impacts=[], impactIndex=0)
+        record['editorial']['reviewProvenance'] = 'legacy_pre_v23'
+        save(self.root, 'content/events/test-event.json', record)
+        core.errors.clear(); core.warnings.clear()
+        with patch.object(core, 'EVENT_GLOB', str(self.root / 'content/events/*.json')):
+            core.validate_events(self.sources)
+        self.assertTrue(any('impacts may be empty' in e for e in core.errors))
+
     def test_valid_l1_no_observed_impact(self):
         self.record['significance'] = 1
         self.record['impacts'] = []
