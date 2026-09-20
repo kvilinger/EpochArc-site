@@ -1,0 +1,534 @@
+{
+  "policyVersion": "2.4",
+  "runId": "v24-draft-reassessment-2026-09-20",
+  "kind": "targeted",
+  "scopeReason": "Reassess the ten selected 2026-09-18 legacy drafts; this is not a new full discovery sweep.",
+  "windowStart": "2026-09-15",
+  "windowEnd": "2026-09-18",
+  "evidenceCutoff": "2026-09-20",
+  "timezone": "UTC",
+  "baselineCommit": "566477b1b5b7683d8ff36c3d8de615a62d12cdc9",
+  "operator": "pi-agent-session-019ef334-fec0-7c29-8975-af450f95c460",
+  "model": "openai-codex/gpt-5.6-sol",
+  "promptVersion": "v24-draft-reassessment-1",
+  "channels": [
+    {
+      "id": "legacy-package-review",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "All 18 candidates and package manifests were inventoried within the selected package scope.",
+      "attempts": [
+        {
+          "query": "Read and inventory the complete 2026-09-18 legacy confirmation package",
+          "executedAt": "2026-09-20T00:20:00Z",
+          "artifact": "governance/evidence/input/confirmation_report.json",
+          "sha256": "c617d6478886b9038dc3bfa1d2c3e6f80badfe527428357caa817e574790db1a",
+          "resultCount": 18
+        }
+      ]
+    },
+    {
+      "id": "brave-supplemental-search",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Eight targeted boundary queries; not a complete discovery-window crawl.",
+      "reason": "Agent Reach Exa backend was unavailable; targeted Brave fallback does not establish exhaustive coverage.",
+      "retryResult": "Brave returned results for all eight targeted queries; missing full-window coverage remains explicit.",
+      "attempts": [
+        {
+          "query": "Targeted supplemental query brave-0",
+          "executedAt": "2026-09-20T00:40:00Z",
+          "artifact": "governance/evidence/search/brave-0.txt",
+          "sha256": "eb8514a0da4e16069b4e398fd82f08bece5cfda9d92b4d47b52095c2a781d0c6",
+          "resultCount": 8
+        },
+        {
+          "query": "Targeted supplemental query brave-1",
+          "executedAt": "2026-09-20T00:40:00Z",
+          "artifact": "governance/evidence/search/brave-1.txt",
+          "sha256": "9469f1a041591b72d22ac75372e340d443c80eae98dea56c83256c9b578eab7f",
+          "resultCount": 8
+        },
+        {
+          "query": "Targeted supplemental query brave-2",
+          "executedAt": "2026-09-20T00:40:00Z",
+          "artifact": "governance/evidence/search/brave-2.txt",
+          "sha256": "681d9756fdbca71c806672af25101a9178ec31a1eb466b25c14f2d09cc7a6d2d",
+          "resultCount": 8
+        },
+        {
+          "query": "Targeted supplemental query brave-3",
+          "executedAt": "2026-09-20T00:40:00Z",
+          "artifact": "governance/evidence/search/brave-3.txt",
+          "sha256": "e1f527c4c98762c7005fbeae99c6dcb777347c0ce6a24736d37144d5db2268b8",
+          "resultCount": 8
+        },
+        {
+          "query": "Targeted supplemental query brave-4",
+          "executedAt": "2026-09-20T00:40:00Z",
+          "artifact": "governance/evidence/search/brave-4.txt",
+          "sha256": "638e66a04f91617d5407a06f779b5163c9b4d1979793c0f6f7ac06f7540f9b05",
+          "resultCount": 8
+        },
+        {
+          "query": "Targeted supplemental query brave-5",
+          "executedAt": "2026-09-20T00:40:00Z",
+          "artifact": "governance/evidence/search/brave-5.txt",
+          "sha256": "cbd7b7ce54f51d1850e38a5a19f3308352e88dced1c1fa4115d42a41ed1be3b9",
+          "resultCount": 8
+        },
+        {
+          "query": "Targeted supplemental query brave-6",
+          "executedAt": "2026-09-20T00:40:00Z",
+          "artifact": "governance/evidence/search/brave-6.txt",
+          "sha256": "2bd9b3c15f12034e8ef402bb0d36b66042e6160513db280d5bd7383bc888adfd",
+          "resultCount": 8
+        },
+        {
+          "query": "Targeted supplemental query brave-7",
+          "executedAt": "2026-09-20T00:40:00Z",
+          "artifact": "governance/evidence/search/brave-7.txt",
+          "sha256": "f5eec7524ba9d168e363dd44bc88ad399b4b57c939cf95fee310ed37167682ef",
+          "resultCount": 8
+        }
+      ]
+    },
+    {
+      "id": "github-public-api",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Repository metadata was retrieved for all three date-sensitive repositories in scope.",
+      "attempts": [
+        {
+          "query": "GitHub public repository metadata atria-asi-Atria-Dawn-Preview-repo",
+          "executedAt": "2026-09-20T00:50:00Z",
+          "artifact": "governance/evidence/direct/atria-asi-Atria-Dawn-Preview-repo.json",
+          "sha256": "bb5884be8fcc2ffaf98cc78797c3efbffac1261e604fdefe75d6b476fecafc39",
+          "resultCount": 1
+        },
+        {
+          "query": "GitHub public repository metadata inclusionAI-LLaDA-UI-repo",
+          "executedAt": "2026-09-20T00:50:00Z",
+          "artifact": "governance/evidence/direct/inclusionAI-LLaDA-UI-repo.json",
+          "sha256": "2895d97aa8a3034071cdd0f8668fff40918ff013d2c1f198e70a32bbf06667bd",
+          "resultCount": 1
+        },
+        {
+          "query": "GitHub public repository metadata shengshu-ai-Vidu-S-repo",
+          "executedAt": "2026-09-20T00:50:00Z",
+          "artifact": "governance/evidence/direct/shengshu-ai-Vidu-S-repo.json",
+          "sha256": "f19b3193d2a704122e718aa15907ad253e05d30463b07d51728927ee17f69b37",
+          "resultCount": 1
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "Capability claims were checked only for selected drafts, not discovered exhaustively."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Product availability and beta/pilot stages were checked for selected drafts."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Selected financing claims were checked; no full market scan was performed."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "The selected appellate ruling and legal scope were checked."
+    },
+    {
+      "category": "safety",
+      "status": "not_applicable",
+      "finding": "No selected draft was primarily a safety event."
+    },
+    {
+      "category": "society",
+      "status": "not_applicable",
+      "finding": "No selected draft retained society as its primary action category."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "v24-ninth-circuit-github-copilot-dmca-2026",
+      "eventId": "ninth-circuit-github-copilot-dmca-2026",
+      "discoveryUrls": [
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/09/16/24-7700.pdf",
+        "https://www.gibsondunn.com/ninth-circuit-clarifies-limits-of-dmca-liability-for-ai-generated-code/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 10,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "A published federal appellate opinion establishes a precedential statutory interpretation, and Gibson Dunn provides separate legal analysis of its scope.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Reassess core fact from retained direct evidence",
+          "finding": "Core event fact located in retained evidence.",
+          "evidenceIds": [
+            "ca9-opinion-fact",
+            "ca9-analysis-fact"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Find consequences observed by the evidence cutoff",
+          "finding": "Observed impact bounded in draft.",
+          "evidenceIds": [
+            "ca9-opinion-impact",
+            "ca9-analysis-impact"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and detect same-origin reporting",
+          "finding": "Available analysis classified by claim-local relationship and verification scope.",
+          "evidenceIds": [
+            "ca9-analysis-fact",
+            "ca9-analysis-impact",
+            "ca9-analysis-limitation"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Find limitations, counterevidence, and unresolved claims",
+          "finding": "Material limitation recorded without treating uncertainty alone as controversy.",
+          "evidenceIds": [
+            "ca9-opinion-limitation",
+            "ca9-analysis-limitation"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "v24-crusoe-series-f-2026",
+      "eventId": "crusoe-series-f-2026",
+      "discoveryUrls": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding",
+        "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "The financing fact is verified, but financing size and planned use do not by themselves establish an executed market-structure change affecting two outside actors.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Reassess core fact from retained direct evidence",
+          "finding": "Core event fact located in retained evidence.",
+          "evidenceIds": [
+            "crusoe-release-fact",
+            "crusoe-report-fact"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find consequences observed by the evidence cutoff",
+          "finding": "No publishable observed consequence retained; prospective effects removed.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and detect same-origin reporting",
+          "finding": "Available analysis classified by claim-local relationship and verification scope.",
+          "evidenceIds": [
+            "crusoe-report-fact",
+            "crusoe-report-limitation"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Find limitations, counterevidence, and unresolved claims",
+          "finding": "Material limitation recorded without treating uncertainty alone as controversy.",
+          "evidenceIds": [
+            "crusoe-release-limitation",
+            "crusoe-report-limitation"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "v24-huawei-ascend-960-superpod-2026",
+      "eventId": "huawei-ascend-960-superpod-2026",
+      "discoveryUrls": [
+        "https://insideai.news/news/ai-hardware-infrastructure/huawei-ascend-960-superpod/12133/",
+        "https://www.businesstimes.com.sg/companies-markets/huawei-accelerates-launch-new-ai-chip-take-nvidia"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "The package verifies an announcement, not independent performance or deployment; OceanStor M900 has been removed from this candidate and requires separate screening if pursued."
+    },
+    {
+      "candidateId": "v24-anthropic-claude-code-projects-2026",
+      "eventId": "anthropic-claude-code-projects-2026",
+      "discoveryUrls": [
+        "https://claude.com/blog/projects-redesigned",
+        "https://venturebeat.com/orchestration/anthropic-launches-claude-code-projects-an-always-on-conversation-that-remembers-and-delegates-your-long-running-dev-work"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "A new workflow is documented, but two unaffiliated production deployments are not."
+    },
+    {
+      "candidateId": "v24-shanghai-ailab-atria-dawn-744b-2026",
+      "eventId": "shanghai-ailab-atria-dawn-744b-2026",
+      "discoveryUrls": [
+        "https://github.com/atria-asi/Atria-Dawn-Preview",
+        "https://genaidaily.com/shanghai-ai-lab-unveils-atria-dawn-as-open-source-744b-agentic-model/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "The access change is observed, but production adoption by two unaffiliated organizations is not."
+    },
+    {
+      "candidateId": "v24-mozilla-mistral-firefox-partnership-2026",
+      "eventId": "mozilla-mistral-firefox-partnership-2026",
+      "discoveryUrls": [
+        "https://mistral.ai/news/mistral-x-mozilla/",
+        "https://blog.mozilla.org/en/firefox/mozilla-mistral-partnership/",
+        "https://runtimewire.com/article/mistral-firefox-smart-window-mozilla-small-4"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Beta availability is verified; the package does not establish two unaffiliated production adopters or one million independently verified active users."
+    },
+    {
+      "candidateId": "v24-salesforce-nvidia-koa-reasoning-2026",
+      "eventId": "salesforce-nvidia-koa-reasoning-2026",
+      "discoveryUrls": [
+        "https://www.salesforce.com/in/news/stories/koa-reasoning-model/",
+        "https://www.toolbit.ai/blog/salesforce-koa-crm-reasoning-model-explained"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Named pilots justify confirmation work but do not satisfy the production-use threshold.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Reassess core fact from retained direct evidence",
+          "finding": "Core event fact located in retained evidence.",
+          "evidenceIds": [
+            "koa-release-fact",
+            "koa-analysis-fact"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Find consequences observed by the evidence cutoff",
+          "finding": "Observed impact bounded in draft.",
+          "evidenceIds": [
+            "koa-release-impact",
+            "koa-analysis-impact"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and detect same-origin reporting",
+          "finding": "Available analysis classified by claim-local relationship and verification scope.",
+          "evidenceIds": [
+            "koa-analysis-fact",
+            "koa-analysis-impact",
+            "koa-analysis-limitation"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Find limitations, counterevidence, and unresolved claims",
+          "finding": "Material limitation recorded without treating uncertainty alone as controversy.",
+          "evidenceIds": [
+            "koa-release-limitation",
+            "koa-analysis-limitation"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "v24-arcee-ai-series-b-unicorn-2026",
+      "eventId": "arcee-ai-series-b-unicorn-2026",
+      "discoveryUrls": [
+        "https://www.globenewswire.com/news-release/2026/09/16/3363293/0/en/arcee-ai-reaches-1b-valuation-with-series-b-funding-to-advance-frontier-open-weight-ai.html",
+        "https://fortune.com/2026/09/16/arcee-ai-trained-four-models-for-20-million-now-its-worth-1-billion/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "The financing is verified, but it does not by itself demonstrate an executed structural change affecting two outside actors."
+    },
+    {
+      "candidateId": "v24-shengshu-vidu-s2-2026",
+      "eventId": "shengshu-vidu-s2-2026",
+      "discoveryUrls": [
+        "https://www.prnewswire.com/news-releases/shengshu-technology-unveils-vidu-s2-bringing-real-time-interaction-and-editing-to-ai-video-302879976.html",
+        "https://github.com/shengshu-ai/Vidu-S"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "A vendor baseline is present, but no independent replication establishes a previously infeasible task."
+    },
+    {
+      "candidateId": "v24-inclusionai-llada-ui-diffusion-2026",
+      "eventId": "inclusionai-llada-ui-diffusion-2026",
+      "discoveryUrls": [
+        "https://huggingface.co/inclusionAI/LLaDA-UI",
+        "https://musthave.ai/llada-ui-diffusion-gui-agent-model/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "At least one direct, locatable source is retained.",
+        "novelty": "Scored against the distinct action/stage represented by this candidate.",
+        "spillover": "Counts only evidenced affected roles, not hypothetical use cases.",
+        "durability": "Counts observed follow-up or institutionalization; future plans score zero.",
+        "sourceQuality": "Distinguishes primary material, independent reporting, and same-origin republication."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "The method is documented, but the package contains no two unaffiliated follow-on works and no independent reproduction."
+    }
+  ]
+}

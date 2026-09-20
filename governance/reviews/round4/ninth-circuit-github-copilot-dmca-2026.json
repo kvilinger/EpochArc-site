@@ -1,0 +1,202 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "ninth-circuit-github-copilot-dmca-2026",
+  "inputSubjectDigest": "8fcbfbbc5913fb0235650b3c7e48a6c1be00bcdb671684ebfce397ecf688688c",
+  "subjectDigest": "30e940a5e1bcbe094fd7c534e25a7484d1a4c9acc0a2aac7cfef312c63fe86f6",
+  "inputsDigest": "299d790b6461ee594d6bd50de83b4faf273cda4903e3e19508778fbcf57b72e6",
+  "evidenceCutoff": "2026-09-20",
+  "preparedBy": "pi-agent-session-019ef334-fec0-7c29-8975-af450f95c460",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "antigravity-independent-reviewer",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019ef334-fec0-7c29-8975-af450f95c460",
+  "reviewerSessionId": "01a0bda0-0b6c-7725-bd7b-2c2edd5d3a77",
+  "runId": "v24-draft-reassessment-2026-09-20",
+  "candidateId": "v24-ninth-circuit-github-copilot-dmca-2026",
+  "runDigest": "6c370966627586f47df0deee753cf379cdcda2f8cbe7ff4e563bb5614b1e794b",
+  "reviewDecision": "pass",
+  "limitations": [
+    "Review performed in an independent session; does not constitute or replace human editorial approval.",
+    "District court breach of open-source license claims remain active and unresolved by this appeal.",
+    "The appellate panel specifically addressed output theory under DMCA §1202(b) and did not decide training-input or traditional copyright infringement theories.",
+    "Targeted reassessment batch does not certify comprehensive full-web discovery coverage."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese versions consistently describe the DMCA Section 1202(b) output-theory dismissal, the procedural posture, and the clear distinction separating the narrow holding from unresolved training-input and contract theories."
+  },
+  "coreFactClaimIds": [
+    "ca9-copilot-fact"
+  ],
+  "identity": {
+    "seriesId": "github-copilot-litigation",
+    "action": "Ninth Circuit affirms dismissal of DMCA §1202(b) output-theory claims in Doe v. GitHub",
+    "stage": "judgment",
+    "dateBasis": "Official court opinion publication date",
+    "deduplicationReason": "Federal appellate precedent on DMCA statutory damages; distinct from initial district court filings and non-DMCA claims.",
+    "comparedEventIds": [
+      "github-copilot-2022",
+      "suno-udio-lawsuit-2024"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "The central action is a published federal circuit court opinion resolving statutory liability questions under federal copyright law."
+  },
+  "significance": {
+    "rationale": "A published federal circuit court opinion establishes binding legal precedent within the circuit and nationally relevant statutory interpretation for generative AI outputs, supported by independent legal analysis from Gibson Dunn.",
+    "whyNotHigher": "Does not meet L3 persistence requirements (>365 days of observed impact) across multiple domains.",
+    "whyNotLower": "Fully satisfies L2-GOVERNANCE criteria: binding appellate decision, applies to generative AI outputs generally, with independent outside legal analysis.",
+    "comparisonEventIds": [
+      "github-copilot-2022",
+      "suno-udio-lawsuit-2024"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": true,
+            "rationale": "The opinion was ordered published by the Ninth Circuit, establishing binding precedent across the federal judicial circuit.",
+            "evidenceIds": [
+              "ca9-opinion-fact"
+            ]
+          },
+          "applies_beyond_named_parties": {
+            "value": true,
+            "rationale": "The statutory interpretation governs DMCA liability for AI-generated code and content outputs generally, affecting rightsholders and AI developers beyond the immediate parties.",
+            "evidenceIds": [
+              "ca9-analysis-impact"
+            ]
+          },
+          "independent_legal_analysis": {
+            "value": true,
+            "rationale": "Gibson Dunn published an independent client alert analyzing the scope and defense implications of the ruling.",
+            "evidenceIds": [
+              "ca9-analysis-fact",
+              "ca9-analysis-impact"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "risk_creation",
+      "observation": "observed",
+      "evidenceIds": [
+        "ca9-opinion-impact",
+        "ca9-analysis-impact"
+      ],
+      "observedSince": "2026-09-16",
+      "observedUntil": "2026-09-20",
+      "baseline": "Plaintiffs asserted statutory damages under DMCA §1202(b) for generated outputs lacking CMI.",
+      "outcome": "The appellate ruling forecloses and narrows the pleaded output theory of CMI removal for newly generated works under DMCA §1202(b), while leaving training-stage and licensing claims unresolved.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The opinion was issued on September 16, 2026; downstream effects on pending district court litigation and other circuits remain active."
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "Ongoing debate between rightsholders and developers regarding whether training-stage ingestion violates the DMCA, an issue expressly left undecided by the panel.",
+    "evidenceIds": [
+      "ca9-opinion-limitation",
+      "ca9-analysis-limitation"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "ca9-opinion-fact",
+      "sourceId": "sweep-20260918-ca9-opinion",
+      "claimId": "ca9-copilot-fact",
+      "artifact": "governance/evidence/direct/ca9-24-7700.txt",
+      "sha256": "1981bbddf646c5c884c1a17b6291ee6d196405e57c07243dc1b156af984e935d",
+      "quote": "The panel nonetheless held that plaintiffs did not state a",
+      "locator": "Court staff summary, pages 3–4",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "doe-github-opinion-24-7700",
+      "accessedAt": "2026-09-18",
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/09/16/24-7700.pdf"
+    },
+    {
+      "id": "ca9-analysis-fact",
+      "sourceId": "v24-20260920-gibson-dunn-ca9",
+      "claimId": "ca9-copilot-fact",
+      "artifact": "governance/evidence/direct/gibson-dunn-ca9.md",
+      "sha256": "207049c1ae554108651267f05f7ab94d17f06793045cc14ad266143523c56225",
+      "quote": "On September 16, 2026, the Ninth Circuit upheld the dismissal of software programmers’ claims against GitHub, Microsoft, and OpenAI under the Digital Millennium Copyright Act",
+      "locator": "Opening legal analysis",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "originId": "gibson-dunn-doe-github-analysis",
+      "accessedAt": "2026-09-20",
+      "url": "https://www.gibsondunn.com/ninth-circuit-clarifies-limits-of-dmca-liability-for-ai-generated-code/"
+    },
+    {
+      "id": "ca9-opinion-impact",
+      "sourceId": "sweep-20260918-ca9-opinion",
+      "claimId": "ca9-copilot-impact",
+      "artifact": "governance/evidence/direct/ca9-24-7700.txt",
+      "sha256": "1981bbddf646c5c884c1a17b6291ee6d196405e57c07243dc1b156af984e935d",
+      "quote": "The panel declined to consider, as forfeited, plaintiffs’",
+      "locator": "Court staff summary, page 4",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "doe-github-opinion-24-7700",
+      "accessedAt": "2026-09-18",
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/09/16/24-7700.pdf"
+    },
+    {
+      "id": "ca9-analysis-impact",
+      "sourceId": "v24-20260920-gibson-dunn-ca9",
+      "claimId": "ca9-copilot-impact",
+      "artifact": "governance/evidence/direct/gibson-dunn-ca9.md",
+      "sha256": "207049c1ae554108651267f05f7ab94d17f06793045cc14ad266143523c56225",
+      "quote": "_Doe_ provides an important defense to claims that an AI tool violates the DMCA merely because it generates material resembling a plaintiff’s work without identifying the original author or including the accompanying copyright notices and licensing terms.",
+      "locator": "What It Means",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "originId": "gibson-dunn-doe-github-analysis",
+      "accessedAt": "2026-09-20",
+      "url": "https://www.gibsondunn.com/ninth-circuit-clarifies-limits-of-dmca-liability-for-ai-generated-code/"
+    },
+    {
+      "id": "ca9-opinion-limitation",
+      "sourceId": "sweep-20260918-ca9-opinion",
+      "claimId": "ca9-copilot-limitation",
+      "artifact": "governance/evidence/direct/ca9-24-7700.txt",
+      "sha256": "1981bbddf646c5c884c1a17b6291ee6d196405e57c07243dc1b156af984e935d",
+      "quote": "The panel declined to consider, as forfeited, plaintiffs’",
+      "locator": "Court staff summary, page 4",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "doe-github-opinion-24-7700",
+      "accessedAt": "2026-09-18",
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/09/16/24-7700.pdf"
+    },
+    {
+      "id": "ca9-analysis-limitation",
+      "sourceId": "v24-20260920-gibson-dunn-ca9",
+      "claimId": "ca9-copilot-limitation",
+      "artifact": "governance/evidence/direct/gibson-dunn-ca9.md",
+      "sha256": "207049c1ae554108651267f05f7ab94d17f06793045cc14ad266143523c56225",
+      "quote": "The court declined to consider that training-stage theory because the plaintiffs had not corrected the district court’s express understanding that their case did not challenge training.",
+      "locator": "The Court Did Not Decide Whether Removing CMI Before AI Training Violates the DMCA",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "originId": "gibson-dunn-doe-github-analysis",
+      "accessedAt": "2026-09-20",
+      "url": "https://www.gibsondunn.com/ninth-circuit-clarifies-limits-of-dmca-liability-for-ai-generated-code/"
+    }
+  ],
+  "priorReviewedSubjectDigest": "639b2247c97fe6ee77a071ae5adc203c51fccdc8109d53e457e0ed608d6bfd92"
+}

@@ -1,0 +1,146 @@
+{
+  "id": "salesforce-nvidia-koa-reasoning-2026",
+  "slug": "salesforce-nvidia-koa-reasoning-2026",
+  "status": "published",
+  "date": "2026-09-15",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": false,
+  "consensusLevel": "emerging",
+  "categories": [
+    "product"
+  ],
+  "title": {
+    "en": "Salesforce and NVIDIA announce Koa, a CRM reasoning model built on Nemotron",
+    "zhHans": "Salesforce 与英伟达联合发布基于 Nemotron 的 CRM 推理模型 Koa"
+  },
+  "searchSummary": {
+    "en": "On September 15, 2026, Salesforce announced Koa, a CRM reasoning model post-trained from NVIDIA Nemotron 3 Super on synthetic CRM scenarios. Salesforce said Koa was in internal use and available to six named pilot customers; general availability was expected in winter 2026. Pilot participation is not treated as production adoption.",
+    "zhHans": "2026 年 9 月 15 日，Salesforce 宣布 Koa，这是一款基于 NVIDIA Nemotron 3 Super、使用合成 CRM 场景进行后训练的 CRM 推理模型。Salesforce 表示 Koa 已在内部使用，并向六家具名客户提供试点；全面开放预计在 2026 年冬季。客户试点不按生产采用处理。"
+  },
+  "summary": {
+    "en": "On September 15, 2026, Salesforce announced Koa, a CRM reasoning model post-trained from NVIDIA Nemotron 3 Super on synthetic CRM scenarios. Salesforce said Koa was in internal use and available to six named pilot customers; general availability was expected in winter 2026. Pilot participation is not treated as production adoption.",
+    "zhHans": "2026 年 9 月 15 日，Salesforce 宣布 Koa，这是一款基于 NVIDIA Nemotron 3 Super、使用合成 CRM 场景进行后训练的 CRM 推理模型。Salesforce 表示 Koa 已在内部使用，并向六家具名客户提供试点；全面开放预计在 2026 年冬季。客户试点不按生产采用处理。"
+  },
+  "narrative": {
+    "en": "Salesforce post-trained NVIDIA Nemotron 3 Super on synthetic CRM scenarios and runs Koa within its own infrastructure. The company reports internal use and six named customer pilots. Its CRM benchmark and performance statements remain vendor-led, and general availability was still planned. Separate Missionforce statements about post-trained NVIDIA models are not treated as Koa deployment evidence.",
+    "zhHans": "Salesforce 使用合成 CRM 场景对 NVIDIA Nemotron 3 Super 进行后训练，并在自有基础设施内运行 Koa。公司报告了内部使用和六家具名客户试点。CRM 基准和性能数据仍由厂商主导，全面开放尚处于计划阶段。有关 Missionforce 采用后训练 NVIDIA 模型的单独表述，不作为 Koa 部署证据。"
+  },
+  "claims": [
+    {
+      "id": "koa-reasoning-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260918-salesforce-koa-official",
+        "sweep-20260918-toolbit-koa"
+      ],
+      "text": {
+        "en": "Salesforce announced Koa and made it available to six named pilot customers in Agentforce, with general availability expected later.",
+        "zhHans": "Salesforce 宣布 Koa，并通过 Agentforce 向六家具名客户提供试点，全面开放时间仍在之后。"
+      }
+    },
+    {
+      "id": "koa-reasoning-impact",
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260918-salesforce-koa-official",
+        "sweep-20260918-toolbit-koa"
+      ],
+      "text": {
+        "en": "Six unaffiliated customers gained immediate pilot access to Koa for CRM workflow testing.",
+        "zhHans": "六家无关联客户即时获得 Koa 的 CRM 工作流试点资格。"
+      }
+    },
+    {
+      "id": "koa-reasoning-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260918-salesforce-koa-official",
+        "sweep-20260918-toolbit-koa"
+      ],
+      "text": {
+        "en": "Customer pilots do not establish production deployment, and the reported benchmark was not independently run.",
+        "zhHans": "客户试点不能证明生产部署，相关基准也不是独立运行的评测。"
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Six named businesses gained pilot access to the model in Agentforce.",
+        "zhHans": "六家具名企业获得了通过 Agentforce 试用该模型的资格。"
+      },
+      "affectedGroups": [
+        "businesses"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260918-salesforce-koa-official",
+        "sweep-20260918-toolbit-koa"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260918-salesforce-koa-official",
+      "supports": [
+        "koa-reasoning-fact",
+        "koa-reasoning-impact",
+        "koa-reasoning-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260918-toolbit-koa",
+      "supports": [
+        "koa-reasoning-fact",
+        "koa-reasoning-impact",
+        "koa-reasoning-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "salesforce-agentforce-job-ready-agents-2026",
+    "nvidia-osmo-2026"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-18",
+    "updatedAt": "2026-09-20",
+    "curator": "pi-agent-session-019ef334-fec0-7c29-8975-af450f95c460",
+    "changeLog": [
+      {
+        "date": "2026-09-18",
+        "changeType": "created",
+        "summary": "Created as a reviewed draft following the 2026-09-15 to 2026-09-18 confirmation sweep."
+      },
+      {
+        "date": "2026-09-20",
+        "changeType": "correction",
+        "summary": "Reworked as an unapproved v2.4 candidate/draft; independent review and human approval remain pending."
+      },
+      {
+        "date": "2026-09-20",
+        "changeType": "correction",
+        "summary": "Completed Round 3 independent review; verified semantic restraint, currency preservation, and L1/L2 criteria under v2.4 contracts."
+      }
+    ],
+    "reviewer": "antigravity-independent-reviewer",
+    "reviewedAt": "2026-09-20",
+    "lastSourceCheckAt": "2026-09-18",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/round4/salesforce-nvidia-koa-reasoning-2026.json",
+    "publishedAt": "2026-09-20"
+  },
+  "displayDate": {
+    "en": "September 15, 2026",
+    "zhHans": "2026年9月15日"
+  },
+  "relatedForecasts": [],
+  "impactIndex": 2
+}

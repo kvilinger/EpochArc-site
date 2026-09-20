@@ -1,0 +1,145 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "crusoe-series-f-2026",
+  "inputSubjectDigest": "2849af9a939080d663a8202e6032871e437e37c092848f58542aed1a8a48dcc4",
+  "subjectDigest": "c9883ceacf876279c32a131c405273f30b274132cd3c9a9e6a45618d00e372c9",
+  "inputsDigest": "0645f82595625a09d24cd6863a1c4613f67f777016dbbcc2bf6682a7410072be",
+  "evidenceCutoff": "2026-09-20",
+  "preparedBy": "pi-agent-session-019ef334-fec0-7c29-8975-af450f95c460",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "antigravity-independent-reviewer",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019ef334-fec0-7c29-8975-af450f95c460",
+  "reviewerSessionId": "01a0bda0-0b6c-7725-bd7b-2c2edd5d3a77",
+  "runId": "v24-draft-reassessment-2026-09-20",
+  "candidateId": "v24-crusoe-series-f-2026",
+  "runDigest": "6c370966627586f47df0deee753cf379cdcda2f8cbe7ff4e563bb5614b1e794b",
+  "reviewDecision": "pass",
+  "limitations": [
+    "Review performed in an independent session; does not constitute or replace human editorial approval.",
+    "Financing transaction is an initial closing; subsequent tranche completions are not evaluated.",
+    "Capital expenditure, planned data center construction, and company-reported multi-year contracted values are forward-looking and excluded from impact scoring.",
+    "Targeted reassessment batch does not certify comprehensive full-web discovery coverage."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese versions consistently describe the $3.9 billion initial Series F closing, the $30.9 billion post-money valuation, the co-lead investors (Atreides, Mubadala, Valor), and maintain exact currency symbols ($3.9B, $30.9B / 39 亿美元, 309 亿美元)."
+  },
+  "coreFactClaimIds": [
+    "crusoe-funding-fact"
+  ],
+  "identity": {
+    "seriesId": "crusoe-capitalization",
+    "action": "Crusoe closes initial $3.9 billion Series F at $30.9 billion valuation",
+    "stage": "completed",
+    "dateBasis": "Official company press release date",
+    "deduplicationReason": "Discrete equity capitalization milestone; legally and commercially distinct from prior debt/equity rounds.",
+    "comparedEventIds": [
+      "positron-series-c-2026",
+      "zai-proposed-financing-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "Corporate equity financing round and company valuation change of an AI compute infrastructure operator."
+  },
+  "significance": {
+    "rationale": "Financing round and equity valuation are verified, but private equity financing does not establish an executed restructuring of market supply, demand, or trading rules affecting outside entities under L2-COMMERCE.",
+    "whyNotHigher": "Under SIG-01 and SIG-02, financing amount, valuation scale, and planned capital expenditure do not constitute executed market-structure change; hence criteria remain null.",
+    "whyNotLower": "Large-scale equity round initial closing is verified by primary company release and independent financial media.",
+    "comparisonEventIds": [
+      "positron-series-c-2026",
+      "zai-proposed-financing-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": null,
+            "rationale": "Equity financing has completed initial closing, but industry-wide market rules or trading structures have not been executed.",
+            "evidenceIds": []
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "Data center and energy capacity additions are future plans; verified operational impact on two external actors is not observed.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Initial closing recently announced; planned capital deployment and operational expansions remain forward-looking."
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual disagreement regarding the initial closing terms, co-leads, or valuation.",
+    "evidenceIds": []
+  },
+  "evidence": [
+    {
+      "id": "crusoe-release-fact",
+      "sourceId": "sweep-20260918-crusoe-funding-official",
+      "claimId": "crusoe-funding-fact",
+      "artifact": "governance/evidence/direct/crusoe-funding-official.md",
+      "sha256": "3aca23bdb8028239d1e573d87c34c63a82fafd67b3950f575047195ea0047189",
+      "quote": "Crusoe, the industry’s first vertically-integrated AI infrastructure provider, today announced the initial closing of its anticipated $3.9 billion Series F funding round, at a $30.9 billion post-money valuation.",
+      "locator": "Opening announcement",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "crusoe-series-f-release",
+      "accessedAt": "2026-09-18",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"
+    },
+    {
+      "id": "crusoe-report-fact",
+      "sourceId": "sweep-20260918-crusoe-techcrunch",
+      "claimId": "crusoe-funding-fact",
+      "artifact": "governance/evidence/direct/crusoe-funding-techcrunch.md",
+      "sha256": "245062c4edba6661fd89885c71ff5403ed1fea0e5939b8ee958926f9dd6031f5",
+      "quote": "Data center developer Crusoe said Thursday it raised $3.9 billion in a Series F round that pushes its valuation to $30.9 billion.",
+      "locator": "Opening paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "crusoe-series-f-release",
+      "accessedAt": "2026-09-18",
+      "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"
+    },
+    {
+      "id": "crusoe-release-limitation",
+      "sourceId": "sweep-20260918-crusoe-funding-official",
+      "claimId": "crusoe-funding-limitation",
+      "artifact": "governance/evidence/direct/crusoe-funding-official.md",
+      "sha256": "3aca23bdb8028239d1e573d87c34c63a82fafd67b3950f575047195ea0047189",
+      "quote": "the additional capital will help Crusoe scale its existing programs and support the build out of its own AI factories",
+      "locator": "Use-of-proceeds statement",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "crusoe-series-f-release",
+      "accessedAt": "2026-09-18",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"
+    },
+    {
+      "id": "crusoe-report-limitation",
+      "sourceId": "sweep-20260918-crusoe-techcrunch",
+      "claimId": "crusoe-funding-limitation",
+      "artifact": "governance/evidence/direct/crusoe-funding-techcrunch.md",
+      "sha256": "245062c4edba6661fd89885c71ff5403ed1fea0e5939b8ee958926f9dd6031f5",
+      "quote": "The eight-year-old company’s fresh capital infusion will help finance existing data center projects",
+      "locator": "Use-of-proceeds paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "crusoe-series-f-release",
+      "accessedAt": "2026-09-18",
+      "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"
+    }
+  ],
+  "priorReviewedSubjectDigest": "d272604788730e4272947393dffb211bfe072bc747c7008de583e46d63a54fc2"
+}

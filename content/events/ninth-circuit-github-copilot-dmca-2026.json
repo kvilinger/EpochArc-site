@@ -1,0 +1,146 @@
+{
+  "id": "ninth-circuit-github-copilot-dmca-2026",
+  "slug": "ninth-circuit-github-copilot-dmca-2026",
+  "status": "published",
+  "date": "2026-09-16",
+  "datePrecision": "day",
+  "significance": 2,
+  "controversy": true,
+  "consensusLevel": "emerging",
+  "categories": [
+    "governance"
+  ],
+  "title": {
+    "en": "Ninth Circuit affirms dismissal of DMCA Section 1202(b) claims in GitHub Copilot case",
+    "zhHans": "美国第九巡回上诉法院维持 GitHub Copilot 案 DMCA 第 1202(b) 条索赔的驳回裁定"
+  },
+  "searchSummary": {
+    "en": "On September 16, 2026, the U.S. Court of Appeals for the Ninth Circuit published Doe v. GitHub and affirmed dismissal of the plaintiffs’ DMCA §1202(b) output-theory claims. The court held that the pleaded Copilot and Codex process created new works that never contained the disputed copyright management information rather than removing that information from an existing copy.",
+    "zhHans": "2026 年 9 月 16 日，美国第九巡回上诉法院公布 Doe v. GitHub 判决，维持对原告依据 DMCA 第 1202(b) 条提出的输出理论索赔的驳回。法院认为，起诉状所述 Copilot 与 Codex 流程生成的是从未包含相关版权管理信息的新作品，而不是从既有副本中删除该信息。"
+  },
+  "summary": {
+    "en": "On September 16, 2026, the U.S. Court of Appeals for the Ninth Circuit published Doe v. GitHub and affirmed dismissal of the plaintiffs’ DMCA §1202(b) output-theory claims. The court held that the pleaded Copilot and Codex process created new works that never contained the disputed copyright management information rather than removing that information from an existing copy.",
+    "zhHans": "2026 年 9 月 16 日，美国第九巡回上诉法院公布 Doe v. GitHub 判决，维持对原告依据 DMCA 第 1202(b) 条提出的输出理论索赔的驳回。法院认为，起诉状所述 Copilot 与 Codex 流程生成的是从未包含相关版权管理信息的新作品，而不是从既有副本中删除该信息。"
+  },
+  "narrative": {
+    "en": "The opinion addresses the plaintiffs’ output theory under DMCA §1202(b). It distinguishes generating a new work without copyright management information from removing that information from an existing copy. The panel did not decide the forfeited training-input theory, traditional infringement questions, or the remaining open-source license claims. The broader effect outside this statutory theory remains under observation.",
+    "zhHans": "该判决处理的是原告依据 DMCA 第 1202(b) 条提出的输出理论，并区分了生成不含版权管理信息的新作品与从既有副本中删除该信息。合议庭没有裁定已被放弃的训练输入理论、传统版权侵权问题或仍在审理的开源许可证索赔。该法定理论以外的更广泛影响仍待观察。"
+  },
+  "claims": [
+    {
+      "id": "ca9-copilot-fact",
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260918-ca9-opinion",
+        "v24-20260920-gibson-dunn-ca9"
+      ],
+      "text": {
+        "en": "The Ninth Circuit affirmed dismissal of the pleaded DMCA §1202(b) output-theory claims because the alleged generated works never contained the disputed copyright management information.",
+        "zhHans": "第九巡回上诉法院维持对 DMCA 第 1202(b) 条输出理论索赔的驳回，理由是起诉状所述生成作品从未包含相关版权管理信息。"
+      }
+    },
+    {
+      "id": "ca9-copilot-impact",
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260918-ca9-opinion",
+        "v24-20260920-gibson-dunn-ca9"
+      ],
+      "text": {
+        "en": "The published appellate opinion limits one route for alleging DMCA liability when an AI output lacks attribution, while leaving training-input and traditional infringement theories unresolved.",
+        "zhHans": "该公开上诉判决限制了以 AI 输出缺少署名为由主张 DMCA 责任的一条路径，但没有裁定训练输入理论及传统版权侵权理论。"
+      }
+    },
+    {
+      "id": "ca9-copilot-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260918-ca9-opinion",
+        "v24-20260920-gibson-dunn-ca9"
+      ],
+      "text": {
+        "en": "The court did not decide whether removing copyright management information before AI training violates the DMCA.",
+        "zhHans": "法院没有裁定在 AI 训练前删除版权管理信息是否违反 DMCA。"
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "risk_creation",
+      "severity": -1,
+      "direction": "negative",
+      "description": {
+        "en": "The ruling immediately narrows one statutory CMI theory available to creators and rightsholders in AI-output litigation.",
+        "zhHans": "该判决即时收窄了创作者和权利人在 AI 输出诉讼中可采用的一项版权管理信息法定理论。"
+      },
+      "affectedGroups": [
+        "creators_rightsholders"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20260918-ca9-opinion",
+        "v24-20260920-gibson-dunn-ca9"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "sweep-20260918-ca9-opinion",
+      "supports": [
+        "ca9-copilot-fact",
+        "ca9-copilot-impact",
+        "ca9-copilot-limitation"
+      ]
+    },
+    {
+      "sourceId": "v24-20260920-gibson-dunn-ca9",
+      "supports": [
+        "ca9-copilot-fact",
+        "ca9-copilot-impact",
+        "ca9-copilot-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "github-copilot-2022",
+    "suno-udio-lawsuit-2024"
+  ],
+  "editorial": {
+    "createdAt": "2026-09-18",
+    "updatedAt": "2026-09-20",
+    "curator": "pi-agent-session-019ef334-fec0-7c29-8975-af450f95c460",
+    "changeLog": [
+      {
+        "date": "2026-09-18",
+        "changeType": "created",
+        "summary": "Created as a reviewed draft following the 2026-09-15 to 2026-09-18 confirmation sweep."
+      },
+      {
+        "date": "2026-09-20",
+        "changeType": "correction",
+        "summary": "Reworked as an unapproved v2.4 candidate/draft; independent review and human approval remain pending."
+      },
+      {
+        "date": "2026-09-20",
+        "changeType": "correction",
+        "summary": "Completed Round 3 independent review; verified semantic restraint, currency preservation, and L1/L2 criteria under v2.4 contracts."
+      }
+    ],
+    "reviewer": "antigravity-independent-reviewer",
+    "reviewedAt": "2026-09-20",
+    "lastSourceCheckAt": "2026-09-20",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/round4/ninth-circuit-github-copilot-dmca-2026.json",
+    "publishedAt": "2026-09-20"
+  },
+  "displayDate": {
+    "en": "September 16, 2026",
+    "zhHans": "2026年9月16日"
+  },
+  "relatedForecasts": [],
+  "impactIndex": 2
+}

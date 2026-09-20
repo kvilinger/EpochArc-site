@@ -1,0 +1,187 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "salesforce-nvidia-koa-reasoning-2026",
+  "inputSubjectDigest": "c6bb9013d27d08b3e3a648c4c8db2bb3abfdc341398ab4eeb7430bce2f8d13b6",
+  "subjectDigest": "af1d69a01527ea7fa15661ecccd7c50e8db036965cbbbb746f5fb347ba428468",
+  "inputsDigest": "9d57b8dd2956181cc3af337b1dc97e6a504540f6041ca1ceb040e92df2b596d0",
+  "evidenceCutoff": "2026-09-20",
+  "preparedBy": "pi-agent-session-019ef334-fec0-7c29-8975-af450f95c460",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "antigravity-independent-reviewer",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019ef334-fec0-7c29-8975-af450f95c460",
+  "reviewerSessionId": "01a0bda0-0b6c-7725-bd7b-2c2edd5d3a77",
+  "runId": "v24-draft-reassessment-2026-09-20",
+  "candidateId": "v24-salesforce-nvidia-koa-reasoning-2026",
+  "runDigest": "6c370966627586f47df0deee753cf379cdcda2f8cbe7ff4e563bb5614b1e794b",
+  "reviewDecision": "pass",
+  "limitations": [
+    "Review performed in an independent session; does not constitute or replace human editorial approval.",
+    "Customer access is restricted to six named pilot customers; broader general availability is planned for winter 2026.",
+    "Benchmark claims are vendor-reported and not independently reproduced; separate Missionforce statements are excluded.",
+    "Targeted reassessment batch does not certify comprehensive full-web discovery coverage."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese versions consistently describe Koa post-training on Nemotron 3 Super, internal deployment, the six named pilot customers, and the exclusion of customer pilots from production adoption."
+  },
+  "coreFactClaimIds": [
+    "koa-reasoning-fact"
+  ],
+  "identity": {
+    "seriesId": "salesforce-agentforce-models",
+    "action": "Salesforce and NVIDIA announce Koa CRM reasoning model with pilot access",
+    "stage": "preview",
+    "dateBasis": "Official product announcement date",
+    "deduplicationReason": "Discrete specialized reasoning model release within Agentforce; distinct from prior foundation model partnerships and general CRM updates.",
+    "comparedEventIds": [
+      "salesforce-agentforce-job-ready-agents-2026",
+      "nvidia-osmo-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Product release and pilot availability of a domain-specific CRM reasoning foundation model."
+  },
+  "significance": {
+    "rationale": "Koa demonstrates specialized multi-step CRM reasoning workflows and is active in customer pilots, but under SIG-02 customer pilots and partnership announcements do not satisfy the threshold of production adoption by two unaffiliated organizations.",
+    "whyNotHigher": "Under SIG-02, pilots, design partnerships, and trial programs do not count as production adoption; therefore L2-PRODUCT criteria are not satisfied.",
+    "whyNotLower": "Verified announcement and working preview with six named enterprise pilot participants and internal use.",
+    "comparisonEventIds": [
+      "salesforce-agentforce-job-ready-agents-2026",
+      "nvidia-osmo-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "The announcement and reporting describe model availability and customer pilots, but do not provide documented before-and-after workflow change evidence.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "The six named commercial users are participating in early pilots; verified production deployments by two unaffiliated organizations have not occurred.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "koa-release-impact",
+        "koa-analysis-impact"
+      ],
+      "observedSince": "2026-09-15",
+      "observedUntil": "2026-09-20",
+      "baseline": "Enterprise CRM customers could not access dedicated domain-fine-tuned reasoning models inside Agentforce.",
+      "outcome": "Six named enterprise customers gained functional pilot access to evaluate Koa on internal CRM tasks.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Model is in initial pilot preview with general commercial availability scheduled for winter 2026."
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented controversy regarding model technical specifications or pilot availability.",
+    "evidenceIds": []
+  },
+  "evidence": [
+    {
+      "id": "koa-release-fact",
+      "sourceId": "sweep-20260918-salesforce-koa-official",
+      "claimId": "koa-reasoning-fact",
+      "artifact": "governance/evidence/direct/salesforce-koa-official.md",
+      "sha256": "746f26044b58066be8b281cd7512c1b7208aa9d24a9b4bbb855cce692d14197d",
+      "quote": "**Koa:** Available to select pilot customers now in Agentforce; general availability expected winter 2026 in U.S. regions.",
+      "locator": "Availability",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "salesforce-koa-release",
+      "accessedAt": "2026-09-18",
+      "url": "https://www.salesforce.com/in/news/stories/koa-reasoning-model/"
+    },
+    {
+      "id": "koa-analysis-fact",
+      "sourceId": "sweep-20260918-toolbit-koa",
+      "claimId": "koa-reasoning-fact",
+      "artifact": "governance/evidence/direct/toolbit-koa.md",
+      "sha256": "49d86753ea1d9d7570023e94c835efb0b3ee0f5aee25f5c2616eee7fda05f72c",
+      "quote": "Right now: pilots with 1-800Accountant, Baxter Credit Union, Engine, Formula 1, UChicago Medicine, and Xero.",
+      "locator": "Current availability",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "toolbit-koa-analysis",
+      "accessedAt": "2026-09-18",
+      "url": "https://www.toolbit.ai/blog/salesforce-koa-crm-reasoning-model-explained"
+    },
+    {
+      "id": "koa-release-impact",
+      "sourceId": "sweep-20260918-salesforce-koa-official",
+      "claimId": "koa-reasoning-impact",
+      "artifact": "governance/evidence/direct/salesforce-koa-official.md",
+      "sha256": "746f26044b58066be8b281cd7512c1b7208aa9d24a9b4bbb855cce692d14197d",
+      "quote": "Koa is already in use inside Salesforce, including an agent in Slack that helps employees find information and complete everyday tasks in Slack, and is now moving into customer pilots",
+      "locator": "Internal use and customer pilots",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "salesforce-koa-release",
+      "accessedAt": "2026-09-18",
+      "url": "https://www.salesforce.com/in/news/stories/koa-reasoning-model/"
+    },
+    {
+      "id": "koa-analysis-impact",
+      "sourceId": "sweep-20260918-toolbit-koa",
+      "claimId": "koa-reasoning-impact",
+      "artifact": "governance/evidence/direct/toolbit-koa.md",
+      "sha256": "49d86753ea1d9d7570023e94c835efb0b3ee0f5aee25f5c2616eee7fda05f72c",
+      "quote": "Pilots are live with 1-800Accountant, Baxter Credit Union, Engine, Formula 1, UChicago Medicine, and Xero; general availability is expected in winter 2026 (US).",
+      "locator": "Summary bullets",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "toolbit-koa-analysis",
+      "accessedAt": "2026-09-18",
+      "url": "https://www.toolbit.ai/blog/salesforce-koa-crm-reasoning-model-explained"
+    },
+    {
+      "id": "koa-release-limitation",
+      "sourceId": "sweep-20260918-salesforce-koa-official",
+      "claimId": "koa-reasoning-limitation",
+      "artifact": "governance/evidence/direct/salesforce-koa-official.md",
+      "sha256": "746f26044b58066be8b281cd7512c1b7208aa9d24a9b4bbb855cce692d14197d",
+      "quote": "**Koa:** Available to select pilot customers now in Agentforce; general availability expected winter 2026 in U.S. regions.",
+      "locator": "Availability",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "salesforce-koa-release",
+      "accessedAt": "2026-09-18",
+      "url": "https://www.salesforce.com/in/news/stories/koa-reasoning-model/"
+    },
+    {
+      "id": "koa-analysis-limitation",
+      "sourceId": "sweep-20260918-toolbit-koa",
+      "claimId": "koa-reasoning-limitation",
+      "artifact": "governance/evidence/direct/toolbit-koa.md",
+      "sha256": "49d86753ea1d9d7570023e94c835efb0b3ee0f5aee25f5c2616eee7fda05f72c",
+      "quote": "It is not a third-party evaluation, so its results should be treated as vendor-reported.",
+      "locator": "CRM Bench independence",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "toolbit-koa-analysis",
+      "accessedAt": "2026-09-18",
+      "url": "https://www.toolbit.ai/blog/salesforce-koa-crm-reasoning-model-explained"
+    }
+  ],
+  "priorReviewedSubjectDigest": "378a6d6cac53e7084c9bc082459759a069e536715bf76d137778ce89f966ba4e"
+}
