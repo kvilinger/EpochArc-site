@@ -1,0 +1,156 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "holo4-computer-use-models-2026",
+  "subjectDigest": "dead0f31df7c1912464794621800d01cbf0766300ccc23cc5c16199c906e7549",
+  "inputsDigest": "e3e202f87e65b9d36f515eb63bd2262166f0f08573f52d62ed76922cd2d890e0",
+  "evidenceCutoff": "2026-09-29",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only for the retained L1 classification.",
+    "Benchmark results are vendor-run and not treated as independent replication.",
+    "No production adoption was established."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Model sizes, release date, licenses, availability, and benchmark caveats align across English and Chinese."
+  },
+  "evidence": [
+    {
+      "id": "holo4-fact-1",
+      "sourceId": "final-20260929-holo4-official",
+      "claimId": "holo4-fact",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "originId": "holo4-release",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts.",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/holo4-finalize/direct/holo4-direct.html",
+      "sha256": "baa491ec50665bca9476ed3312d61ec470bb92f6e82d7abbd51599c21f40333f"
+    },
+    {
+      "id": "holo4-fact-2",
+      "sourceId": "final-20260929-holo4-opentools",
+      "claimId": "holo4-fact",
+      "url": "https://opentools.ai/news/holo4-27b-35b-license-benchmark-guide",
+      "originId": "opentools-holo4-analysis",
+      "accessedAt": "2026-09-29",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "H Company released Holo4 on September 28 as a family of vision‑language models",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/holo4-finalize/direct/holo4-opentools.md",
+      "sha256": "2e15e4530085dbda62487f8e75c6999b20a733ba4f6a29bb84f6fae5fd3c5439"
+    },
+    {
+      "id": "holo4-lim-1",
+      "sourceId": "final-20260929-holo4-official",
+      "claimId": "holo4-limitation",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "originId": "holo4-release",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Releases, harnesses and task subsets differ.",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/holo4-finalize/direct/holo4-direct.html",
+      "sha256": "baa491ec50665bca9476ed3312d61ec470bb92f6e82d7abbd51599c21f40333f"
+    },
+    {
+      "id": "holo4-lim-2",
+      "sourceId": "final-20260929-holo4-opentools",
+      "claimId": "holo4-limitation",
+      "url": "https://opentools.ai/news/holo4-27b-35b-license-benchmark-guide",
+      "originId": "opentools-holo4-analysis",
+      "accessedAt": "2026-09-29",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "permits reuse only for non‑commercial purposes under the licence’s conditions",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/holo4-finalize/direct/holo4-opentools.md",
+      "sha256": "2e15e4530085dbda62487f8e75c6999b20a733ba4f6a29bb84f6fae5fd3c5439"
+    },
+    {
+      "id": "holo4-lim-3",
+      "sourceId": "final-20260929-holo4-windowsforum",
+      "claimId": "holo4-limitation",
+      "url": "https://windowsforum.com/news/holo4-computer-use-ai-run-gui-agents-locally-on-windows-benchmarks-and-license-limits.446345/",
+      "originId": "windowsforum-holo4-analysis",
+      "accessedAt": "2026-09-29",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "The Holo4-27B model card lists **CC BY-NC 4.0**, a noncommercial license",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/holo4-finalize/direct/holo4-windowsforum.md",
+      "sha256": "bf2a7350d2d35df0e3360f2a5fefa84234613469fd1684de1b8662d628460c17"
+    }
+  ],
+  "runId": "latest-data-holo4-finalize-2026-09-29",
+  "candidateId": "holo4-finalize-candidate",
+  "runDigest": "b72c7e7524ebba8adfcc3235e99f6a50199c0fa2e8b4173d8875c4d5846b7ce5",
+  "coreFactClaimIds": [
+    "holo4-fact"
+  ],
+  "identity": {
+    "seriesId": "holo-computer-use",
+    "action": "release Holo4 model family",
+    "stage": "available",
+    "dateBasis": "Official launch page and independent dated analysis",
+    "deduplicationReason": "New generation and availability stage distinct from prior Holo releases.",
+    "comparedEventIds": [
+      "openai-operator-2025"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The core action is release and availability of downloadable and hosted models."
+  },
+  "significance": {
+    "rationale": "Verified model availability and license differentiation, without L2 production adoption.",
+    "whyNotHigher": "No two unaffiliated production deployments or independently replicated new workflow were established.",
+    "whyNotLower": "A distinct computer-use model family and weights were made available.",
+    "comparisonEventIds": [
+      "openai-operator-2025",
+      "mcp-protocol-2024"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "Downloadable checkpoints with explicit licenses became available.",
+            "evidenceIds": [
+              "holo4-fact-1",
+              "holo4-lim-2"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No qualifying production adoption count was found.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Recent release with vendor-run evaluations and no observed production adoption.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No factual dispute retained; license and benchmark limitations are explicit.",
+    "evidenceIds": []
+  },
+  "priorReviewedSubjectDigest": "f47999eceb5964f9641089e1bffe420947cb79eb1ef07333193a701955b04297"
+}

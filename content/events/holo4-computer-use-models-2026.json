@@ -1,0 +1,114 @@
+{
+  "id": "holo4-computer-use-models-2026",
+  "slug": "holo4-computer-use-models-2026",
+  "status": "published",
+  "date": "2026-09-28",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 28, 2026",
+    "zhHans": "2026年9月28日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "title": {
+    "en": "H Company releases Holo4 computer-use model family",
+    "zhHans": "H Company 发布 Holo4 计算机操作模型系列"
+  },
+  "searchSummary": {
+    "en": "H Company released Holo4-27B and Holo4-35B-A3B for computer-use tasks across graphical interfaces, code, MCP, and APIs, with different licenses for the two checkpoints.",
+    "zhHans": "H Company 发布面向图形界面、代码、MCP 与 API 操作的 Holo4-27B 和 Holo4-35B-A3B，两款检查点采用不同许可证。"
+  },
+  "summary": {
+    "en": "On September 28, 2026, H Company released the Holo4 computer-use model family. The release includes a dense 27B model under CC BY-NC 4.0 and a 35B-A3B mixture-of-experts model under Apache 2.0, with hosted API access and downloadable weight variants.",
+    "zhHans": "2026 年 9 月 28 日，H Company 发布 Holo4 计算机操作模型系列。其中包括采用 CC BY-NC 4.0 的 27B 稠密模型，以及采用 Apache 2.0 的 35B-A3B 混合专家模型，并提供托管 API 与多种可下载权重版本。"
+  },
+  "narrative": {
+    "en": "Holo4 is designed to move between screenshots, code execution, MCP tools, and APIs within the same agent workflow. H Company released evaluation trajectories that improve auditability, but the benchmark results remain vendor-run and do not establish independent task replication or production adoption. The license split also means “open weight” does not imply the same commercial rights across the family.",
+    "zhHans": "Holo4 被设计为在同一智能体工作流中切换屏幕操作、代码执行、MCP 工具与 API。H Company 公开了评测轨迹，提高了可审计性，但跑分仍由厂商执行，不能证明独立任务复现或生产采用。许可证差异也意味着“开放权重”并不代表系列内各模型拥有相同商业权利。"
+  },
+  "claims": [
+    {
+      "id": "holo4-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "final-20260929-holo4-official",
+        "final-20260929-holo4-opentools"
+      ],
+      "text": {
+        "en": "H Company released Holo4-27B and Holo4-35B-A3B as downloadable computer-use models on September 28, 2026.",
+        "zhHans": "H Company 于 2026 年 9 月 28 日发布可下载的计算机操作模型 Holo4-27B 与 Holo4-35B-A3B。"
+      }
+    },
+    {
+      "id": "holo4-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "final-20260929-holo4-official",
+        "final-20260929-holo4-opentools",
+        "final-20260929-holo4-windowsforum"
+      ],
+      "text": {
+        "en": "Holo4-27B uses a non-commercial CC BY-NC 4.0 license while Holo4-35B-A3B uses Apache 2.0; benchmark results remain vendor-run.",
+        "zhHans": "Holo4-27B 采用非商业 CC BY-NC 4.0 许可证，Holo4-35B-A3B 采用 Apache 2.0；相关跑分仍由厂商执行。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "final-20260929-holo4-official",
+      "supports": [
+        "holo4-fact",
+        "holo4-limitation"
+      ]
+    },
+    {
+      "sourceId": "final-20260929-holo4-opentools",
+      "supports": [
+        "holo4-fact",
+        "holo4-limitation"
+      ]
+    },
+    {
+      "sourceId": "final-20260929-holo4-windowsforum",
+      "supports": [
+        "holo4-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "openai-operator-2025",
+    "mcp-protocol-2024"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "reviewedAt": "2026-09-29",
+    "lastSourceCheckAt": "2026-09-29",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/holo4-finalize/holo4-computer-use-models-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-09-29",
+        "changeType": "created",
+        "summary": "Created and self-reviewed as an L1 event after resolving model IDs, release date, and license boundaries."
+      },
+      {
+        "date": "2026-09-29",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-09-29 record."
+      }
+    ],
+    "publishedAt": "2026-09-29"
+  }
+}

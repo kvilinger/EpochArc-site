@@ -1,0 +1,105 @@
+{
+  "id": "nvidia-open-agent-safety-platform-2026",
+  "slug": "nvidia-open-agent-safety-platform-2026",
+  "status": "published",
+  "date": "2026-09-28",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 28, 2026",
+    "zhHans": "2026年9月28日"
+  },
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "categories": [
+    "safety"
+  ],
+  "title": {
+    "en": "NVIDIA launches Open Agent Safety Platform",
+    "zhHans": "NVIDIA 发布 Open Agent Safety Platform"
+  },
+  "searchSummary": {
+    "en": "NVIDIA launched Open Agent Safety Platform, combining the OpenShell secure runtime with the Sentry reference design for out-of-band monitoring and containment of AI agents.",
+    "zhHans": "NVIDIA 发布 Open Agent Safety Platform，将 OpenShell 安全运行时与 Sentry 带外监控和隔离参考设计组合，用于约束 AI 智能体。"
+  },
+  "summary": {
+    "en": "NVIDIA launched Open Agent Safety Platform, combining the OpenShell secure runtime with the Sentry reference design for out-of-band monitoring and containment of AI agents.",
+    "zhHans": "NVIDIA 发布 Open Agent Safety Platform，将 OpenShell 安全运行时与 Sentry 带外监控和隔离参考设计组合，用于约束 AI 智能体。"
+  },
+  "narrative": {
+    "en": "The release packages software and hardware-layer controls around agent execution. NVIDIA lists more than 100 participating organizations, but the evidence cutoff does not independently establish production deployment by two unaffiliated organizations, so the event remains L1 with no observed impact score.",
+    "zhHans": "该发布将软件层和硬件层控制组合到智能体执行环境周围。NVIDIA 列出了超过 100 家参与机构，但截至证据截止日，尚无独立材料证明至少两家无关联组织已进行生产部署，因此条目维持 L1 且不计观察影响分。"
+  },
+  "claims": [
+    {
+      "id": "nvidia-agent-safety-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260929-nvidia-agent-safety-official",
+        "sweep-20260929-nvidia-agent-safety-cnbc"
+      ],
+      "text": {
+        "en": "NVIDIA launched Open Agent Safety Platform with OpenShell runtime controls and the Sentry reference design.",
+        "zhHans": "NVIDIA 发布 Open Agent Safety Platform，其中包括 OpenShell 运行时控制与 Sentry 参考设计。"
+      }
+    },
+    {
+      "id": "nvidia-agent-safety-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260929-nvidia-agent-safety-official"
+      ],
+      "text": {
+        "en": "The announced partner list does not by itself verify two unaffiliated production deployments by the evidence cutoff.",
+        "zhHans": "公告中的合作方名单本身不能证明截至证据截止日已有两家无关联组织完成生产部署。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20260929-nvidia-agent-safety-official",
+      "supports": [
+        "nvidia-agent-safety-fact",
+        "nvidia-agent-safety-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260929-nvidia-agent-safety-cnbc",
+      "supports": [
+        "nvidia-agent-safety-fact"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "open-secure-ai-alliance-2026",
+    "openai-hf-breach-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-09-29",
+        "changeType": "created",
+        "summary": "Created from the 2026-09-18 to 2026-09-29 full discovery and confirmation sweep."
+      },
+      {
+        "date": "2026-09-29",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-09-29 record."
+      }
+    ],
+    "reviewedAt": "2026-09-29",
+    "lastSourceCheckAt": "2026-09-29",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/sweep-20260929/nvidia-open-agent-safety-platform-2026.json",
+    "publishedAt": "2026-09-29"
+  }
+}

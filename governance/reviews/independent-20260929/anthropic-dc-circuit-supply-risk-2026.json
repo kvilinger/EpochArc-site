@@ -1,0 +1,200 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "anthropic-dc-circuit-supply-risk-2026",
+  "subjectDigest": "5944206b8946384dbc6ad3658a02e5b9f3b3d9a3eec23fa28275c3315d4d2222",
+  "inputsDigest": "bf817c4f5c269a28218aa151acaba3efce55007042fd6e1a8a62fd2c4cfde69e",
+  "evidenceCutoff": "2026-09-29",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "antigravity-independent-reviewer",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a0bd05-7e4c-7725-bd7b-2c2334646224",
+  "runId": "latest-data-followup-2026-09-29",
+  "candidateId": "followup-anthropic-dc-circuit",
+  "runDigest": "c95706af2e68304522f156afc47f1ec3549d278d1eaaa9db8c0870c3b9d4b879",
+  "reviewDecision": "pass",
+  "limitations": [
+    "Review performed in an independent session; does not constitute or replace human editorial approval.",
+    "The ruling interprets 41 U.S.C. § 4713 procurement authority and does not establish general civil liability for AI alignment.",
+    "Follow-up targeted sweep does not certify exhaustive discovery coverage across non-core channels."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese versions consistently identify the D.C. Circuit appellate decision, the statutory basis in 41 U.S.C. § 4713, and the scope of model-level usage restriction assessment."
+  },
+  "coreFactClaimIds": [
+    "anthropic-dc-fact"
+  ],
+  "identity": {
+    "seriesId": "claude-pentagon-supply-chain",
+    "action": "D.C. Circuit upholds Pentagon exclusion of Anthropic as a supply-chain risk",
+    "stage": "judgment",
+    "dateBasis": "Official appellate court opinion date",
+    "deduplicationReason": "Federal appellate decision on statutory procurement authority under Section 4713; legally distinct from district court litigation and prior temporary bans.",
+    "comparedEventIds": [
+      "claude-fable-ban-2026",
+      "claude-fable-ban-lift-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "The central action is a published federal circuit court opinion resolving statutory procurement authority over AI models."
+  },
+  "significance": {
+    "rationale": "A published federal circuit court opinion establishes precedential statutory interpretation of 41 U.S.C. § 4713, ruling that model-level usage restrictions and alignment controls can constitute supply-chain risks in national security procurement.",
+    "whyNotHigher": "Does not meet L3 persistence requirements (>365 days of observed impact) across multiple domains.",
+    "whyNotLower": "Fully satisfies L2-GOVERNANCE criteria: binding federal circuit precedent, applies to generative AI defense procurement beyond immediate parties, with independent legal analysis.",
+    "comparisonEventIds": [
+      "claude-fable-ban-2026",
+      "claude-fable-ban-lift-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": true,
+            "rationale": "The D.C. Circuit issued a published precedential opinion resolving Petitions for Review Nos. 26-1049 and 26-1162.",
+            "evidenceIds": [
+              "followup-anthropic-dc-circuit-fact"
+            ]
+          },
+          "applies_beyond_named_parties": {
+            "value": true,
+            "rationale": "The statutory interpretation governs federal procurement officials evaluation of AI model-level controls across all defense and national-security AI vendors under Section 4713.",
+            "evidenceIds": [
+              "followup-anthropic-dc-circuit-impact",
+              "followup-anthropic-dc-circuit-analysis"
+            ]
+          },
+          "independent_legal_analysis": {
+            "value": true,
+            "rationale": "Wired provided independent legal analysis comparing the D.C. Circuit ruling with California district court precedent and detailing its scope.",
+            "evidenceIds": [
+              "followup-anthropic-dc-circuit-analysis"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "paradigm_shift",
+      "observation": "observed",
+      "evidenceIds": [
+        "followup-anthropic-dc-circuit-impact",
+        "followup-anthropic-dc-circuit-analysis"
+      ],
+      "observedSince": "2026-09-25",
+      "observedUntil": "2026-09-29",
+      "baseline": "AI vendors claimed model-level safety guardrails could not be classified as supply chain risks in federal procurement.",
+      "outcome": "The D.C. Circuit established that non-malicious model controls that deny government-authorized functions qualify as supply chain risks under Section 4713.",
+      "materialChange": true
+    }
+  ],
+  "consensus": {
+    "level": "debated",
+    "reason": "The ruling conflicts in principle with a narrower statutory interpretation by a California federal district court, creating active debate among legal and national security experts."
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "Substantive controversy exists regarding whether model-level ethical restrictions should be treated as security risks, with Anthropic arguing overreach while the government asserted broad procurement discretion.",
+    "evidenceIds": [
+      "followup-anthropic-dc-circuit-controversy",
+      "followup-anthropic-dc-circuit-limitation-wired"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "followup-anthropic-dc-circuit-fact",
+      "sourceId": "followup-20260929-anthropic-dc-opinion",
+      "claimId": "anthropic-dc-fact",
+      "url": "https://media.cadc.uscourts.gov/opinions/docs/2026/09/26-1049-2194984.pdf",
+      "originId": "dc-circuit-anthropic-opinion",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "On Petitions for Review of an Agency Action of the Department of War",
+      "locator": "Title header, page 1",
+      "artifact": "governance/evidence/followup-20260929/direct/anthropic-dc-circuit-opinion.md",
+      "sha256": "865f6a903cb93054ec8311fa369b7dd53f17d2c5513304a0f7721f15a27842b1"
+    },
+    {
+      "id": "followup-anthropic-dc-circuit-fact-cnbc",
+      "sourceId": "followup-20260929-anthropic-dc-cnbc",
+      "claimId": "anthropic-dc-fact",
+      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+      "originId": "cnbc-anthropic-court-reporting",
+      "accessedAt": "2026-09-29",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "A federal appeals court panel in Washington, D.C., on Friday upheld the Pentagon’s [blacklisting of Anthropic]",
+      "locator": "Opening paragraph",
+      "artifact": "governance/evidence/followup-20260929/direct/anthropic-dc-circuit-cnbc.md",
+      "sha256": "eec8b342312bd0e235ef885aaa3b9098d2ae974e39e00616e99b6c72e6b18e15"
+    },
+    {
+      "id": "followup-anthropic-dc-circuit-impact",
+      "sourceId": "followup-20260929-anthropic-dc-opinion",
+      "claimId": "anthropic-dc-impact",
+      "url": "https://media.cadc.uscourts.gov/opinions/docs/2026/09/26-1049-2194984.pdf",
+      "originId": "dc-circuit-anthropic-opinion",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "if those contractual and technical safeguards prevent the Department from deploying the covered article in a manner that",
+      "locator": "Section III analysis of covered article controls",
+      "artifact": "governance/evidence/followup-20260929/direct/anthropic-dc-circuit-opinion.md",
+      "sha256": "865f6a903cb93054ec8311fa369b7dd53f17d2c5513304a0f7721f15a27842b1"
+    },
+    {
+      "id": "followup-anthropic-dc-circuit-analysis",
+      "sourceId": "followup-20260929-anthropic-dc-wired",
+      "claimId": "anthropic-dc-impact",
+      "url": "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/",
+      "originId": "wired-anthropic-court-analysis",
+      "accessedAt": "2026-09-29",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Earlier this year, the Pentagon sanctioned Anthropic under a pair of separate supply-chain laws to remove the company’s Claude AI models from the military and other parts of the federal government",
+      "locator": "Paragraph 2",
+      "artifact": "governance/evidence/followup-20260929/direct/anthropic-dc-circuit-wired.md",
+      "sha256": "e8c56639b837e4e1b05623901857eee644abf36e5eb922e84f51167ce2a2d7f4"
+    },
+    {
+      "id": "followup-anthropic-dc-circuit-controversy",
+      "sourceId": "followup-20260929-anthropic-dc-opinion",
+      "claimId": "anthropic-dc-limitation",
+      "url": "https://media.cadc.uscourts.gov/opinions/docs/2026/09/26-1049-2194984.pdf",
+      "originId": "dc-circuit-anthropic-opinion",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Section 4713 imposes no criminal liability, a context in which we would strive to narrow the statute or impose a mens rea",
+      "locator": "Statutory scope discussion",
+      "artifact": "governance/evidence/followup-20260929/direct/anthropic-dc-circuit-opinion.md",
+      "sha256": "865f6a903cb93054ec8311fa369b7dd53f17d2c5513304a0f7721f15a27842b1"
+    },
+    {
+      "id": "followup-anthropic-dc-circuit-limitation-wired",
+      "sourceId": "followup-20260929-anthropic-dc-wired",
+      "claimId": "anthropic-dc-limitation",
+      "url": "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/",
+      "originId": "wired-anthropic-court-analysis",
+      "accessedAt": "2026-09-29",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "The laws designating Anthropic had to be challenged in separate courts. A federal judge in San Francisco [tossed out one of the supply-chain risk labels]",
+      "locator": "Paragraph 3 on judicial division",
+      "artifact": "governance/evidence/followup-20260929/direct/anthropic-dc-circuit-wired.md",
+      "sha256": "e8c56639b837e4e1b05623901857eee644abf36e5eb922e84f51167ce2a2d7f4"
+    }
+  ],
+  "priorReviewedSubjectDigest": "9d74ff71d3ccb30487c5f8e118da8e59a0232b28b6389b0e58082d950de8e26d"
+}

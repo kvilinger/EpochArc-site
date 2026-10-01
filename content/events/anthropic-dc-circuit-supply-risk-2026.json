@@ -1,0 +1,152 @@
+{
+  "id": "anthropic-dc-circuit-supply-risk-2026",
+  "slug": "anthropic-dc-circuit-supply-risk-2026",
+  "status": "published",
+  "date": "2026-09-25",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 25, 2026",
+    "zhHans": "2026年9月25日"
+  },
+  "categories": [
+    "governance"
+  ],
+  "significance": 2,
+  "consensusLevel": "debated",
+  "controversy": true,
+  "title": {
+    "en": "D.C. Circuit upholds Pentagon exclusion of Anthropic as a supply-chain risk",
+    "zhHans": "美国哥伦比亚特区巡回上诉法院维持五角大楼将 Anthropic 列为供应链风险的决定"
+  },
+  "searchSummary": {
+    "en": "The D.C. Circuit upheld the Pentagon’s exclusion of Anthropic under the federal Supply Chain Security Act, accepting that model-level usage restrictions can qualify as a supply-chain risk even without malicious intent.",
+    "zhHans": "美国哥伦比亚特区巡回上诉法院维持五角大楼依据联邦《供应链安全法》排除 Anthropic 的决定，并认可模型层使用限制即使不具有恶意，也可能构成供应链风险。"
+  },
+  "summary": {
+    "en": "On September 25, 2026, the D.C. Circuit rejected Anthropic’s challenge to the Department of War’s exclusion of Claude from its supply chain under 41 U.S.C. § 4713. The court held that Anthropic’s ability to encode usage restrictions through model training could fall within the statute’s broad definition of supply-chain risk.",
+    "zhHans": "2026 年 9 月 25 日，美国哥伦比亚特区巡回上诉法院驳回 Anthropic 对战争部依据 41 U.S.C. § 4713 将 Claude 排除出供应链的挑战。法院认定，Anthropic 通过模型训练设置使用限制的能力可以落入该法对供应链风险的宽泛定义。"
+  },
+  "narrative": {
+    "en": "The ruling gives federal procurement officials broad deference when assessing whether an AI vendor’s model-level controls could interfere with authorized national-security uses. The opinion distinguishes the broader Section 4713 definition from a narrower statute applied by a California district court. The ruling establishes an appellate procurement precedent on model-level controls that extends beyond the named parties.",
+    "zhHans": "该裁决在评估 AI 供应商的模型层控制是否可能妨碍经授权的国家安全用途时，给予联邦采购官员较大裁量。判决区分了第 4713 条的宽泛定义与加州联邦地区法院适用的较窄法规。该裁决确立了关于模型层控制的上诉法院采购先例，其适用范围超出具名当事人。"
+  },
+  "claims": [
+    {
+      "id": "anthropic-dc-fact",
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "followup-20260929-anthropic-dc-opinion",
+        "followup-20260929-anthropic-dc-cnbc"
+      ],
+      "text": {
+        "en": "The D.C. Circuit upheld the Department’s exclusion of Anthropic under 41 U.S.C. § 4713.",
+        "zhHans": "美国哥伦比亚特区巡回上诉法院维持战争部依据 41 U.S.C. § 4713 排除 Anthropic 的决定。"
+      }
+    },
+    {
+      "id": "anthropic-dc-impact",
+      "claimType": "impact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "followup-20260929-anthropic-dc-opinion",
+        "followup-20260929-anthropic-dc-wired"
+      ],
+      "text": {
+        "en": "The opinion interprets the statute to cover non-malicious model design or operation choices that may deny government-authorized functions.",
+        "zhHans": "该判决将法规解释为可涵盖并非出于恶意、但可能拒绝政府授权功能的模型设计或运行选择。"
+      }
+    },
+    {
+      "id": "anthropic-dc-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "followup-20260929-anthropic-dc-opinion",
+        "followup-20260929-anthropic-dc-wired"
+      ],
+      "text": {
+        "en": "The ruling concerns federal national-security procurement under Section 4713 and does not create general civil or criminal liability for AI safety policies.",
+        "zhHans": "该裁决针对第 4713 条下的联邦国家安全采购，并未为 AI 安全政策创设一般民事或刑事责任。"
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "paradigm_shift",
+      "severity": 2,
+      "direction": "positive",
+      "description": {
+        "en": "Creates an appellate procurement precedent allowing model-level usage restrictions to be assessed as supply-chain risks.",
+        "zhHans": "形成上诉法院层面的采购先例，允许将模型层使用限制评估为供应链风险。"
+      },
+      "affectedGroups": [
+        "businesses",
+        "public_institutions"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "followup-20260929-anthropic-dc-opinion",
+        "followup-20260929-anthropic-dc-wired"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "followup-20260929-anthropic-dc-opinion",
+      "supports": [
+        "anthropic-dc-fact",
+        "anthropic-dc-impact",
+        "anthropic-dc-limitation"
+      ]
+    },
+    {
+      "sourceId": "followup-20260929-anthropic-dc-cnbc",
+      "supports": [
+        "anthropic-dc-fact"
+      ]
+    },
+    {
+      "sourceId": "followup-20260929-anthropic-dc-wired",
+      "supports": [
+        "anthropic-dc-impact",
+        "anthropic-dc-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "claude-fable-ban-2026",
+    "claude-fable-ban-lift-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-09-29",
+        "changeType": "created",
+        "summary": "Created as an L2 draft pending mandatory independent review under v2.4."
+      },
+      {
+        "date": "2026-09-29",
+        "changeType": "correction",
+        "summary": "Completed v2.4 independent review; confirmed L2-GOVERNANCE milestone route and narrative alignment."
+      },
+      {
+        "date": "2026-09-29",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-09-29 record."
+      }
+    ],
+    "reviewer": "antigravity-independent-reviewer",
+    "reviewedAt": "2026-09-29",
+    "lastSourceCheckAt": "2026-09-29",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/independent-20260929/anthropic-dc-circuit-supply-risk-2026.json",
+    "publishedAt": "2026-09-29"
+  },
+  "impactIndex": 3
+}

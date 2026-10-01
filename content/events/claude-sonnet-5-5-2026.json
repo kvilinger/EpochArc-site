@@ -1,0 +1,105 @@
+{
+  "id": "claude-sonnet-5-5-2026",
+  "slug": "claude-sonnet-5-5-2026",
+  "status": "published",
+  "date": "2026-09-28",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 28, 2026",
+    "zhHans": "2026年9月28日"
+  },
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "categories": [
+    "product"
+  ],
+  "title": {
+    "en": "Anthropic releases Claude Sonnet 5.5",
+    "zhHans": "Anthropic 发布 Claude Sonnet 5.5"
+  },
+  "searchSummary": {
+    "en": "Anthropic released Claude Sonnet 5.5 as an available mid-tier model at the same listed token prices as Sonnet 5, while reporting faster generation and lower cost per task.",
+    "zhHans": "Anthropic 发布可用的中端模型 Claude Sonnet 5.5，标价与 Sonnet 5 相同，并称其生成速度更快、单项任务成本更低。"
+  },
+  "summary": {
+    "en": "Anthropic released Claude Sonnet 5.5 as an available mid-tier model at the same listed token prices as Sonnet 5, while reporting faster generation and lower cost per task.",
+    "zhHans": "Anthropic 发布可用的中端模型 Claude Sonnet 5.5，标价与 Sonnet 5 相同，并称其生成速度更快、单项任务成本更低。"
+  },
+  "narrative": {
+    "en": "The release is a product-generation update rather than evidence of an independently replicated capability breakthrough. Anthropic reports large gains on its selected evaluations, but the evidence cutoff does not establish broad production adoption or independent reproduction of those benchmark claims.",
+    "zhHans": "这次发布属于产品代际更新，并不能单独证明出现了经独立复现的能力突破。Anthropic 披露了其选定评测上的明显提升，但截至证据截止日，尚无材料证明广泛生产采用或对相关跑分的独立复现。"
+  },
+  "claims": [
+    {
+      "id": "sonnet55-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260929-anthropic-sonnet55-official",
+        "sweep-20260929-anthropic-sonnet55-techcrunch"
+      ],
+      "text": {
+        "en": "Anthropic released Claude Sonnet 5.5 on September 28, 2026.",
+        "zhHans": "Anthropic 于 2026 年 9 月 28 日发布 Claude Sonnet 5.5。"
+      }
+    },
+    {
+      "id": "sonnet55-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260929-anthropic-sonnet55-official"
+      ],
+      "text": {
+        "en": "Speed, cost-per-task, and benchmark improvements are vendor-reported and were not independently replicated by the evidence cutoff.",
+        "zhHans": "速度、单项任务成本和跑分提升均来自厂商披露，截至证据截止日尚未得到独立复现。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20260929-anthropic-sonnet55-official",
+      "supports": [
+        "sonnet55-fact",
+        "sonnet55-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260929-anthropic-sonnet55-techcrunch",
+      "supports": [
+        "sonnet55-fact"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "claude-sonnet-5-launch-2026",
+    "claude-opus-5-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-09-29",
+        "changeType": "created",
+        "summary": "Created from the 2026-09-18 to 2026-09-29 full discovery and confirmation sweep."
+      },
+      {
+        "date": "2026-09-29",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-09-29 record."
+      }
+    ],
+    "reviewedAt": "2026-09-29",
+    "lastSourceCheckAt": "2026-09-29",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/sweep-20260929/claude-sonnet-5-5-2026.json",
+    "publishedAt": "2026-09-29"
+  }
+}

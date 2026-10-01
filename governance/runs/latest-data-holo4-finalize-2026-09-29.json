@@ -1,0 +1,125 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-holo4-finalize-2026-09-29",
+  "kind": "targeted",
+  "scopeReason": "Resolve the Holo4 hold from the 2026-09-29 full sweep.",
+  "windowStart": "2026-09-24",
+  "windowEnd": "2026-09-29",
+  "evidenceCutoff": "2026-09-29",
+  "timezone": "UTC",
+  "baselineCommit": "56cea02de569f1e225ed219f4a79764264ac7af2",
+  "operator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "promptVersion": "holo4-finalize-v24-1",
+  "channels": [
+    {
+      "id": "huggingface-api-and-direct-web",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Retrieved H Company Holo4 search metadata, launch page, and two independent analyses.",
+      "attempts": [
+        {
+          "query": "H Company Holo4 model family, dates, licenses and independent limitations",
+          "executedAt": "2026-09-29T10:45:00Z",
+          "artifact": "governance/evidence/holo4-finalize/direct/holo4-hf-search.json",
+          "sha256": "0d9c1808eb086840425b9288dace19bcaf354d4d0212de58d4c9485572acffa8",
+          "resultCount": 8
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "not_applicable",
+      "finding": "Targeted Holo4 product verification only."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Targeted Holo4 product verification only."
+    },
+    {
+      "category": "commerce",
+      "status": "not_applicable",
+      "finding": "Targeted Holo4 product verification only."
+    },
+    {
+      "category": "governance",
+      "status": "not_applicable",
+      "finding": "Targeted Holo4 product verification only."
+    },
+    {
+      "category": "safety",
+      "status": "not_applicable",
+      "finding": "Targeted Holo4 product verification only."
+    },
+    {
+      "category": "society",
+      "status": "not_applicable",
+      "finding": "Targeted Holo4 product verification only."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "holo4-finalize-candidate",
+      "eventId": "holo4-computer-use-models-2026",
+      "discoveryUrls": [
+        "https://huggingface.co/blog/Hcompany/holo4",
+        "https://opentools.ai/news/holo4-27b-35b-license-benchmark-guide",
+        "https://windowsforum.com/news/holo4-computer-use-ai-run-gui-agents-locally-on-windows-benchmarks-and-license-limits.446345/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Targeted Holo4 verification using official model metadata and independent license analysis.",
+        "novelty": "Targeted Holo4 verification using official model metadata and independent license analysis.",
+        "spillover": "Targeted Holo4 verification using official model metadata and independent license analysis.",
+        "durability": "Targeted Holo4 verification using official model metadata and independent license analysis.",
+        "sourceQuality": "Targeted Holo4 verification using official model metadata and independent license analysis."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "Resolved an existing hold because direct model metadata and licensing boundaries became available.",
+      "decision": "new",
+      "reason": "Release and access facts are confirmed; observed production adoption is not.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm model IDs, release and availability",
+          "finding": "Two official checkpoints and downloadable variants confirmed.",
+          "evidenceIds": [
+            "holo4-fact-1",
+            "holo4-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed production impact",
+          "finding": "No qualifying observed impact found.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent license and benchmark analysis",
+          "finding": "Independent analysis confirms license split and benchmark limitations.",
+          "evidenceIds": [
+            "holo4-lim-2",
+            "holo4-lim-3"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find factual disputes",
+          "finding": "No separate dispute; limitations are recorded.",
+          "evidenceIds": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-followup-2026-09-29",
+  "kind": "targeted",
+  "scopeReason": "Resolve held candidates and published-event updates from the 2026-09-29 full sweep.",
+  "windowStart": "2026-09-18",
+  "windowEnd": "2026-09-29",
+  "evidenceCutoff": "2026-09-29",
+  "timezone": "UTC",
+  "baselineCommit": "56cea02de569f1e225ed219f4a79764264ac7af2",
+  "operator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "promptVersion": "latest-data-followup-v24-1",
+  "channels": [
+    {
+      "id": "targeted-primary-and-independent",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Targeted retrieval for seven held or update candidates.",
+      "reason": "Not a new full-window discovery crawl.",
+      "retryResult": "Used direct court, state filing, GitHub, Hugging Face API, and independent reporting where available.",
+      "attempts": [
+        {
+          "query": "Resolve held/update candidates",
+          "executedAt": "2026-09-29T10:30:00Z",
+          "artifact": "governance/evidence/followup-20260929/direct/anthropic-dc-circuit-opinion.md",
+          "sha256": "865f6a903cb93054ec8311fa369b7dd53f17d2c5513304a0f7721f15a27842b1",
+          "resultCount": 7
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "not_applicable",
+      "finding": "Targeted follow-up focused on governance and safety updates."
+    },
+    {
+      "category": "product",
+      "status": "not_applicable",
+      "finding": "Targeted follow-up focused on governance and safety updates."
+    },
+    {
+      "category": "commerce",
+      "status": "not_applicable",
+      "finding": "Targeted follow-up focused on governance and safety updates."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "Targeted follow-up focused on governance and safety updates."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Targeted follow-up focused on governance and safety updates."
+    },
+    {
+      "category": "society",
+      "status": "not_applicable",
+      "finding": "Targeted follow-up focused on governance and safety updates."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "followup-anthropic-dc-circuit",
+      "eventId": "anthropic-dc-circuit-supply-risk-2026",
+      "discoveryUrls": [
+        "https://media.cadc.uscourts.gov/opinions/docs/2026/09/26-1049-2194984.pdf",
+        "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+        "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable material retained.",
+        "novelty": "Distinct stage or substantive update after canonical deduplication.",
+        "spillover": "Counts only evidenced affected roles.",
+        "durability": "Counts observed legal action or remediation.",
+        "sourceQuality": "Primary material plus independent coverage retained."
+      },
+      "total": 10,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Primary material and independent reporting confirm a distinct action or substantive update.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Follow-up fact confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-anthropic-dc-circuit-fact"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Follow-up impact confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-anthropic-dc-circuit-impact"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Follow-up analysis confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-anthropic-dc-circuit-analysis"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Follow-up controversy confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-anthropic-dc-circuit-controversy"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "followup-florida-injunction",
+      "eventId": "florida-sues-openai-2026",
+      "discoveryUrls": [
+        "https://www.myfloridalegal.com/sites/default/files/plaintiffs_motion_for_temporary_injunction.pdf",
+        "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier",
+        "https://www.politico.com/news/2026/09/28/florida-injunction-openai-development-01095061"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable material retained.",
+        "novelty": "Distinct stage or substantive update after canonical deduplication.",
+        "spillover": "Counts only evidenced affected roles.",
+        "durability": "Counts observed legal action or remediation.",
+        "sourceQuality": "Primary material plus independent coverage retained."
+      },
+      "total": 10,
+      "priority": "confirm",
+      "decision": "update",
+      "reason": "Primary material and independent reporting confirm a distinct action or substantive update.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Follow-up fact confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-florida-injunction-fact"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Follow-up impact confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-florida-injunction-impact"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Follow-up analysis confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-florida-injunction-analysis"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Follow-up controversy confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-florida-injunction-controversy"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "followup-meta-muse-vulnerability",
+      "eventId": "meta-muse-personal-agent-2026",
+      "discoveryUrls": [
+        "https://github.com/pwardle/not-a-mused",
+        "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
+        "https://www.infoq.com/news/2026/09/meta-muse-zeroday/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable material retained.",
+        "novelty": "Distinct stage or substantive update after canonical deduplication.",
+        "spillover": "Counts only evidenced affected roles.",
+        "durability": "Counts observed legal action or remediation.",
+        "sourceQuality": "Primary material plus independent coverage retained."
+      },
+      "total": 10,
+      "priority": "confirm",
+      "decision": "update",
+      "reason": "Primary material and independent reporting confirm a distinct action or substantive update.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Follow-up fact confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-meta-muse-vulnerability-fact"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Follow-up impact confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-meta-muse-vulnerability-impact"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Follow-up analysis confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-meta-muse-vulnerability-analysis"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Follow-up controversy confirmation",
+          "finding": "Evidence retained for follow-up review.",
+          "evidenceIds": [
+            "followup-meta-muse-vulnerability-controversy"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "followup-internlumina",
+      "discoveryUrls": [
+        "https://huggingface.co/internlm/InternLumina-U2"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable material retained.",
+        "novelty": "Distinct stage or substantive update after canonical deduplication.",
+        "spillover": "Counts only evidenced affected roles.",
+        "durability": "Counts observed legal action or remediation.",
+        "sourceQuality": "Primary material plus independent coverage retained."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "Repository creation on September 1 confirms the release predates this window."
+    },
+    {
+      "candidateId": "followup-fluidstack",
+      "discoveryUrls": [
+        "https://www.forbes.com/sites/iainmartin/2026/09/03/a-tiny-startup-helping-google-take-on-nvidia-is-now-worth-18-billion/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable material retained.",
+        "novelty": "Distinct stage or substantive update after canonical deduplication.",
+        "spillover": "Counts only evidenced affected roles.",
+        "durability": "Counts observed legal action or remediation.",
+        "sourceQuality": "Primary material plus independent coverage retained."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "Financing action predates this window."
+    },
+    {
+      "candidateId": "followup-holo4",
+      "discoveryUrls": [
+        "https://huggingface.co/blog/Hcompany/holo4"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable material retained.",
+        "novelty": "Distinct stage or substantive update after canonical deduplication.",
+        "spillover": "Counts only evidenced affected roles.",
+        "durability": "Counts observed legal action or remediation.",
+        "sourceQuality": "Primary material plus independent coverage retained."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Hugging Face access was blocked and the attempted model ID was invalid; confirmation remains incomplete."
+    },
+    {
+      "candidateId": "followup-anthropic-sec",
+      "discoveryUrls": [
+        "https://www.anthropic.com/news/confidential-draft-s1-sec"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable material retained.",
+        "novelty": "Distinct stage or substantive update after canonical deduplication.",
+        "spillover": "Counts only evidenced affected roles.",
+        "durability": "Counts observed legal action or remediation.",
+        "sourceQuality": "Primary material plus independent coverage retained."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Exact public SEC prospectus was not located."
+    }
+  ]
+}

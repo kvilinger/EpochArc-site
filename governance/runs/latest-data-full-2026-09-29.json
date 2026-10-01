@@ -1,0 +1,719 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-full-2026-09-29",
+  "kind": "full",
+  "windowStart": "2026-09-18",
+  "windowEnd": "2026-09-29",
+  "evidenceCutoff": "2026-09-29",
+  "timezone": "UTC",
+  "baselineCommit": "56cea02de569f1e225ed219f4a79764264ac7af2",
+  "operator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "promptVersion": "latest-data-full-v24-20260929-1",
+  "channels": [
+    {
+      "id": "hf-papers",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Hugging Face daily papers snapshot; current API is not a complete historical crawl.",
+      "attempts": [
+        {
+          "query": "Hugging Face daily papers snapshot; current API is not a complete historical crawl.",
+          "executedAt": "2026-09-29T10:15:00Z",
+          "artifact": "governance/evidence/sweep-20260929/search/hf-daily-papers.json",
+          "sha256": "dc71c53a911583325d52392fdfab739474b036bc94b3d433ab250088f093fb4c",
+          "resultCount": 100
+        }
+      ],
+      "reason": "Bounded snapshot or query does not guarantee exhaustive recall.",
+      "retryResult": "Supplemented with targeted Brave and direct-source retrieval."
+    },
+    {
+      "id": "hacker-news",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "HN Algolia date-range query for AI stories, capped at 100 results.",
+      "attempts": [
+        {
+          "query": "HN Algolia date-range query for AI stories, capped at 100 results.",
+          "executedAt": "2026-09-29T10:15:00Z",
+          "artifact": "governance/evidence/sweep-20260929/search/hacker-news.json",
+          "sha256": "f6260b3a17dc8aae8e9fd2ca7004bb3b388e1c3f43fe471f71906c2230413f15",
+          "resultCount": 100
+        }
+      ],
+      "reason": "Bounded snapshot or query does not guarantee exhaustive recall.",
+      "retryResult": "Supplemented with targeted Brave and direct-source retrieval."
+    },
+    {
+      "id": "reddit-search",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Reddit OpenCLI search for AI model releases in September 2026.",
+      "attempts": [
+        {
+          "query": "Reddit OpenCLI search for AI model releases in September 2026.",
+          "executedAt": "2026-09-29T10:15:00Z",
+          "artifact": "governance/evidence/sweep-20260929/search/reddit.yaml",
+          "sha256": "a173b89a6dfd2c083677eb4bce121ab2792ff12dd62a3448428fa1b139313d2c",
+          "resultCount": 20
+        }
+      ],
+      "reason": "Bounded snapshot or query does not guarantee exhaustive recall.",
+      "retryResult": "Supplemented with targeted Brave and direct-source retrieval."
+    },
+    {
+      "id": "x-search",
+      "status": "unavailable",
+      "windowCovered": false,
+      "coverageNote": "OpenCLI X search attempt.",
+      "attempts": [
+        {
+          "query": "OpenCLI X search attempt.",
+          "executedAt": "2026-09-29T10:15:00Z",
+          "artifact": "governance/evidence/sweep-20260929/search/twitter.yaml",
+          "sha256": "69ff02e5b153289a4e39c00a73d6687af6c8ebb58c740d778e918606b8de0349",
+          "resultCount": 0
+        }
+      ],
+      "reason": "AUTH_REQUIRED: no x.com ct0 cookie in the browser session.",
+      "retryResult": "No authenticated retry available; targeted web search used only as fallback discovery."
+    },
+    {
+      "id": "import-ai",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Import AI mailbox retrieval with five full messages, covering issues dated September 21 and 28.",
+      "attempts": [
+        {
+          "query": "Import AI mailbox retrieval with five full messages, covering issues dated September 21 and 28.",
+          "executedAt": "2026-09-29T10:15:00Z",
+          "artifact": "governance/evidence/sweep-20260929/search/import-ai.txt",
+          "sha256": "298272566f286453e23ee44ff604869988376073148589a8f10102b1a83f37ce",
+          "resultCount": 5
+        }
+      ]
+    },
+    {
+      "id": "the-batch",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "The Batch mailbox retrieval with five full messages, including the September 24 issue.",
+      "attempts": [
+        {
+          "query": "The Batch mailbox retrieval with five full messages, including the September 24 issue.",
+          "executedAt": "2026-09-29T10:15:00Z",
+          "artifact": "governance/evidence/sweep-20260929/search/the-batch.txt",
+          "sha256": "05c5aff55b22e36c9b2a95e204119355caabb999ed703aca717a071c57a8d48d",
+          "resultCount": 5
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "Category checked through search, newsletters, and direct-source follow-up; Exa rate limiting and X authentication prevent exhaustive recall claims."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Category checked through search, newsletters, and direct-source follow-up; Exa rate limiting and X authentication prevent exhaustive recall claims."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Category checked through search, newsletters, and direct-source follow-up; Exa rate limiting and X authentication prevent exhaustive recall claims."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "Category checked through search, newsletters, and direct-source follow-up; Exa rate limiting and X authentication prevent exhaustive recall claims."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Category checked through search, newsletters, and direct-source follow-up; Exa rate limiting and X authentication prevent exhaustive recall claims."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "Category checked through search, newsletters, and direct-source follow-up; Exa rate limiting and X authentication prevent exhaustive recall claims."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "sweep29-claude-sonnet-5-5-2026",
+      "eventId": "claude-sonnet-5-5-2026",
+      "discoveryUrls": [
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core fact confirmed; significance and observed impact remain bounded by v2.4.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core action and date confirmed.",
+          "evidenceIds": [
+            "sonnet55-fact-1",
+            "sonnet55-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream consequences by cutoff",
+          "finding": "No publishable observed impact retained for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and comparable baseline",
+          "finding": "Independent reporting retained; vendor performance claims remain bounded.",
+          "evidenceIds": [
+            "sonnet55-fact-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find counterevidence, dispute, and limitations",
+          "finding": "No separate documented factual dispute found; limitations remain recorded.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "sweep29-amd-world-labs-acquisition-2026",
+      "eventId": "amd-world-labs-acquisition-2026",
+      "discoveryUrls": [
+        "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+        "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core fact confirmed; significance and observed impact remain bounded by v2.4.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core action and date confirmed.",
+          "evidenceIds": [
+            "amd-worldlabs-fact-1",
+            "amd-worldlabs-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream consequences by cutoff",
+          "finding": "No publishable observed impact retained for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and comparable baseline",
+          "finding": "Independent reporting retained; vendor performance claims remain bounded.",
+          "evidenceIds": [
+            "amd-worldlabs-fact-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find counterevidence, dispute, and limitations",
+          "finding": "No separate documented factual dispute found; limitations remain recorded.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "sweep29-openai-australia-medicare-agent-incident-2026",
+      "eventId": "openai-australia-medicare-agent-incident-2026",
+      "discoveryUrls": [
+        "https://openai.com/index/how-we-will-do-better-for-australia/",
+        "https://www.abc.net.au/news/2026-09-29/openai-apologises-medicare-shelves-chatgpt-astra-launch/107207156",
+        "https://www.bbc.com/news/articles/cm5y5nynl75ko"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 10,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core fact confirmed; significance and observed impact remain bounded by v2.4.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core action and date confirmed.",
+          "evidenceIds": [
+            "openai-australia-fact-evidence",
+            "openai-astra-withdrawal-evidence"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream consequences by cutoff",
+          "finding": "No publishable observed impact retained for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and comparable baseline",
+          "finding": "Independent reporting retained; vendor performance claims remain bounded.",
+          "evidenceIds": [
+            "openai-australia-fact-analysis"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Find counterevidence, dispute, and limitations",
+          "finding": "Material limitation recorded.",
+          "evidenceIds": [
+            "openai-australia-limitation-evidence"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "sweep29-nvidia-open-agent-safety-platform-2026",
+      "eventId": "nvidia-open-agent-safety-platform-2026",
+      "discoveryUrls": [
+        "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+        "https://www.cnbc.com/2026/09/28/nvidia-releases.html"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core fact confirmed; significance and observed impact remain bounded by v2.4.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core action and date confirmed.",
+          "evidenceIds": [
+            "nvidia-agent-safety-fact-1",
+            "nvidia-agent-safety-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream consequences by cutoff",
+          "finding": "No publishable observed impact retained for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and comparable baseline",
+          "finding": "Independent reporting retained; vendor performance claims remain bounded.",
+          "evidenceIds": [
+            "nvidia-agent-safety-fact-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find counterevidence, dispute, and limitations",
+          "finding": "No separate documented factual dispute found; limitations remain recorded.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "sweep29-zai-zcode-workspace-upload-incident-2026",
+      "eventId": "zai-zcode-workspace-upload-incident-2026",
+      "discoveryUrls": [
+        "https://www.csoonline.com/article/4225037/z-ai-disables-coding-assistant-feature-after-flaw-exposed-enterprise-code-upload-risk-2.html",
+        "https://www.thenews.com.pk/latest/1417148-chinese-ai-firm-zai-disables-coding-assistant-features-after-security-backlash",
+        "https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 2,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 10,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core fact confirmed; significance and observed impact remain bounded by v2.4.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core action and date confirmed.",
+          "evidenceIds": [
+            "zcode-incident-fact-evidence"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream consequences by cutoff",
+          "finding": "No publishable observed impact retained for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and comparable baseline",
+          "finding": "Independent reporting retained; vendor performance claims remain bounded.",
+          "evidenceIds": [
+            "zcode-incident-fact-analysis"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Find counterevidence, dispute, and limitations",
+          "finding": "Material limitation recorded.",
+          "evidenceIds": [
+            "zcode-limitation-evidence"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "sweep29-samsung-helix-investment-2026",
+      "eventId": "samsung-helix-investment-2026",
+      "discoveryUrls": [
+        "https://news.samsung.com/global/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+        "https://technode.global/2026/09/29/samsung-invests-1b-in-kkrs-ai-infrastructure-firm-helix-joining-nvidia-vistra/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core fact confirmed; significance and observed impact remain bounded by v2.4.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core action and date confirmed.",
+          "evidenceIds": [
+            "samsung-helix-fact-1",
+            "samsung-helix-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream consequences by cutoff",
+          "finding": "No publishable observed impact retained for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and comparable baseline",
+          "finding": "Independent reporting retained; vendor performance claims remain bounded.",
+          "evidenceIds": [
+            "samsung-helix-fact-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find counterevidence, dispute, and limitations",
+          "finding": "No separate documented factual dispute found; limitations remain recorded.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "sweep29-gemini-3-8-flash-tts-2026",
+      "eventId": "gemini-3-8-flash-tts-2026",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+        "https://www.marktechpost.com/2026/09/23/google-releases-gemini-3-8-flash-tts-and-flash-lite-tts-with-prompt-based-voice-design/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core fact confirmed; significance and observed impact remain bounded by v2.4.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core action and date confirmed.",
+          "evidenceIds": [
+            "gemini-tts-fact-1",
+            "gemini-tts-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream consequences by cutoff",
+          "finding": "No publishable observed impact retained for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and comparable baseline",
+          "finding": "Independent reporting retained; vendor performance claims remain bounded.",
+          "evidenceIds": [
+            "gemini-tts-fact-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find counterevidence, dispute, and limitations",
+          "finding": "No separate documented factual dispute found; limitations remain recorded.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "florida-openai-temporary-injunction-2026",
+      "discoveryUrls": [
+        "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Temporary-injunction motion is an update to florida-sues-openai-2026; primary PDF retrieval was blocked and changing a published record needs independent review."
+    },
+    {
+      "candidateId": "meta-muse-agent-vulnerability-2026",
+      "discoveryUrls": [
+        "https://www.privacyguides.org/news/2026/09/22/metas-muse-ai-assistant-vulnerable-to-hijacking-via-undocumented-setting/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Likely update to meta-muse-personal-agent-2026; original technical disclosure and company response are not both directly retained."
+    },
+    {
+      "candidateId": "anthropic-ipo-founder-llc-2026",
+      "discoveryUrls": [
+        "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Public prospectus reporting found, but the exact SEC filing and governance text were not reliably located."
+    },
+    {
+      "candidateId": "holo4-computer-use-model-2026",
+      "discoveryUrls": [
+        "https://huggingface.co/blog/Hcompany/holo4"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Primary release found; independent verification and release-date provenance remain insufficient."
+    },
+    {
+      "candidateId": "internlumina-u2-2026",
+      "discoveryUrls": [
+        "https://huggingface.co/internlm/InternLumina-U2"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Repository age suggests the action may predate the scan window."
+    },
+    {
+      "candidateId": "fluidstack-series-round-2026",
+      "discoveryUrls": [
+        "https://dealroom.co/news/157101-fluidstack-raises-1-5b-led-by-jane-street-valuation-quadruples-to-18b-in/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Coverage dates conflict with the apparent financing action date."
+    },
+    {
+      "candidateId": "anthropic-dc-circuit-supply-risk-2026",
+      "discoveryUrls": [
+        "https://www.politico.com/news/2026/09/25/anthropic-national-security-risk-pentagon-ruling-01093285"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Direct or independently locatable evidence retained.",
+        "novelty": "Distinct action or stage after deduplication against canonical events.",
+        "spillover": "Counts only audiences named or directly implicated by retained evidence.",
+        "durability": "Counts observed follow-up or remediation, not expected future effects.",
+        "sourceQuality": "Separates primary records, independent reporting, and common-origin republication."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Independent legal coverage found, but the appellate opinion was not directly retained in this pass."
+    }
+  ]
+}

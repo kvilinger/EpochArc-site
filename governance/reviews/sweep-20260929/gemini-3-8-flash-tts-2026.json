@@ -1,0 +1,125 @@
+{
+  "policyVersion": "2.4",
+  "kind": "event",
+  "subjectId": "gemini-3-8-flash-tts-2026",
+  "evidenceCutoff": "2026-09-29",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only because the retained significance is L1.",
+    "Discovery coverage is partial because Exa rate limits and X authentication prevented exhaustive recall.",
+    "Structural validation cannot prove semantic completeness or future impact."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Simplified Chinese versions were checked for actor, action, date, stage, numbers, conditions, and uncertainty strength."
+  },
+  "evidence": [
+    {
+      "id": "gemini-tts-fact-1",
+      "sourceId": "sweep-20260929-google-gemini-tts-official",
+      "claimId": "gemini-tts-fact",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "originId": "google-gemini38-tts-release",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we’re introducing two new text-to-speech models to the Gemini family",
+      "locator": "Opening announcement",
+      "artifact": "governance/evidence/sweep-20260929/direct/google-gemini-tts-official.md",
+      "sha256": "1221a42d2e6eb7effa36fadfe9c236c867e9bc8c8f67e86e50c15db4fb7af580"
+    },
+    {
+      "id": "gemini-tts-fact-2",
+      "sourceId": "sweep-20260929-google-gemini-tts-marktechpost",
+      "claimId": "gemini-tts-fact",
+      "url": "https://www.marktechpost.com/2026/09/23/google-releases-gemini-3-8-flash-tts-and-flash-lite-tts-with-prompt-based-voice-design/",
+      "originId": "google-gemini38-tts-release",
+      "accessedAt": "2026-09-29",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Google has released [Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS",
+      "locator": "Opening paragraph",
+      "artifact": "governance/evidence/sweep-20260929/direct/google-gemini-tts-marktechpost.md",
+      "sha256": "8b468c190cb02ad8a0601bf07a1f447f509914871cc82c7ae4cec7b2d51a6acc"
+    },
+    {
+      "id": "gemini-tts-limitation-1",
+      "sourceId": "sweep-20260929-google-gemini-tts-official",
+      "claimId": "gemini-tts-limitation",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "originId": "google-gemini38-tts-release",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Gemini 3.8 Flash TTS delivers leading voice customization capabilities",
+      "locator": "Vendor benchmark section",
+      "artifact": "governance/evidence/sweep-20260929/direct/google-gemini-tts-official.md",
+      "sha256": "1221a42d2e6eb7effa36fadfe9c236c867e9bc8c8f67e86e50c15db4fb7af580"
+    }
+  ],
+  "runId": "latest-data-full-2026-09-29",
+  "candidateId": "sweep29-gemini-3-8-flash-tts-2026",
+  "coreFactClaimIds": [
+    "gemini-tts-fact"
+  ],
+  "identity": {
+    "seriesId": "gemini-3-8-flash-tts",
+    "action": "Google releases Gemini 3.8 Flash TTS and Flash-Lite TTS",
+    "stage": "available",
+    "dateBasis": "Retained primary or dated independent source",
+    "deduplicationReason": "Distinct action/stage from compared canonical events.",
+    "comparedEventIds": [
+      "meta-muse-voice-transcribe-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Primary category follows the core action under CLASS-01."
+  },
+  "significance": {
+    "rationale": "Core fact is confirmed, but no v2.4 L2 route is fully established.",
+    "whyNotHigher": "Required independent adoption, executed structural effects, or observed external deployment is not established.",
+    "whyNotLower": "The event is a verified and historically relevant release, transaction, or safety-practice announcement.",
+    "comparisonEventIds": [
+      "meta-muse-voice-transcribe-2026",
+      "openai-gpt-live-1-api-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "No qualifying independent production adoption, executed structural change, or observed safety-practice deployment was established by the evidence cutoff.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No qualifying independent production adoption, executed structural change, or observed safety-practice deployment was established by the evidence cutoff.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The action is recent and downstream effects remain unobserved.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate factual dispute was retained; limitations concern evidence scope and future outcomes.",
+    "evidenceIds": []
+  },
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "subjectDigest": "6cf4bb8b20a52553824e7add6ccdbb90c05b857c5a4f8d4b5a8cc449e56b6741",
+  "inputsDigest": "8b0f681b1a4b7023fb746f8f5ccf354856f0f65c171114ef884425a3dc28bfd6",
+  "runDigest": "ccddbc1a96645cbd9d8b7d39d2387aae5b1dbc13e962207aa39fe41686902a92",
+  "priorReviewedSubjectDigest": "c0fd05f842b1e2b86d8ea1e0641e99ba0ffae68ddbd359128813837444606ca0"
+}

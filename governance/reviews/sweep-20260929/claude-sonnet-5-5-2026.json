@@ -1,0 +1,125 @@
+{
+  "policyVersion": "2.4",
+  "kind": "event",
+  "subjectId": "claude-sonnet-5-5-2026",
+  "evidenceCutoff": "2026-09-29",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only because the retained significance is L1.",
+    "Discovery coverage is partial because Exa rate limits and X authentication prevented exhaustive recall.",
+    "Structural validation cannot prove semantic completeness or future impact."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Simplified Chinese versions were checked for actor, action, date, stage, numbers, conditions, and uncertainty strength."
+  },
+  "evidence": [
+    {
+      "id": "sonnet55-fact-1",
+      "sourceId": "sweep-20260929-anthropic-sonnet55-official",
+      "claimId": "sonnet55-fact",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "originId": "anthropic-sonnet55-release",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Introducing Claude Sonnet 5.5, the second model in the Claude 5.5 family.",
+      "locator": "Opening paragraph",
+      "artifact": "governance/evidence/sweep-20260929/direct/anthropic-claude-sonnet-55-official.md",
+      "sha256": "d1f581871d28125e9246309e4077355867288e4649029b53542f6539bdc2df18"
+    },
+    {
+      "id": "sonnet55-fact-2",
+      "sourceId": "sweep-20260929-anthropic-sonnet55-techcrunch",
+      "claimId": "sonnet55-fact",
+      "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
+      "originId": "anthropic-sonnet55-release",
+      "accessedAt": "2026-09-29",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "the company’s mid-tier model, which it says will work much faster",
+      "locator": "Opening paragraph",
+      "artifact": "governance/evidence/sweep-20260929/direct/anthropic-claude-sonnet-55-techcrunch.md",
+      "sha256": "764656dcdf3e4487112a6b16ee68a36923a57679b219abe84e13dca5e673af94"
+    },
+    {
+      "id": "sonnet55-limitation-1",
+      "sourceId": "sweep-20260929-anthropic-sonnet55-official",
+      "claimId": "sonnet55-limitation",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "originId": "anthropic-sonnet55-release",
+      "accessedAt": "2026-09-29",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "benchmark scores capture only one facet of a model’s capabilities",
+      "locator": "Benchmark limitation",
+      "artifact": "governance/evidence/sweep-20260929/direct/anthropic-claude-sonnet-55-official.md",
+      "sha256": "d1f581871d28125e9246309e4077355867288e4649029b53542f6539bdc2df18"
+    }
+  ],
+  "runId": "latest-data-full-2026-09-29",
+  "candidateId": "sweep29-claude-sonnet-5-5-2026",
+  "coreFactClaimIds": [
+    "sonnet55-fact"
+  ],
+  "identity": {
+    "seriesId": "claude-sonnet-5-5",
+    "action": "Anthropic releases Claude Sonnet 5.5",
+    "stage": "available",
+    "dateBasis": "Retained primary or dated independent source",
+    "deduplicationReason": "Distinct action/stage from compared canonical events.",
+    "comparedEventIds": [
+      "claude-sonnet-5-launch-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Primary category follows the core action under CLASS-01."
+  },
+  "significance": {
+    "rationale": "Core fact is confirmed, but no v2.4 L2 route is fully established.",
+    "whyNotHigher": "Required independent adoption, executed structural effects, or observed external deployment is not established.",
+    "whyNotLower": "The event is a verified and historically relevant release, transaction, or safety-practice announcement.",
+    "comparisonEventIds": [
+      "claude-sonnet-5-launch-2026",
+      "claude-opus-5-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "No qualifying independent production adoption, executed structural change, or observed safety-practice deployment was established by the evidence cutoff.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No qualifying independent production adoption, executed structural change, or observed safety-practice deployment was established by the evidence cutoff.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The action is recent and downstream effects remain unobserved.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate factual dispute was retained; limitations concern evidence scope and future outcomes.",
+    "evidenceIds": []
+  },
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "subjectDigest": "962393581e64ab26d84f2e999005febfd9271e5ae436145c083146c0a33a0e00",
+  "inputsDigest": "f66853b7576ca218b48580a444e9258f1d4be262acddbd9e44e993787326b4b9",
+  "runDigest": "ccddbc1a96645cbd9d8b7d39d2387aae5b1dbc13e962207aa39fe41686902a92",
+  "priorReviewedSubjectDigest": "4b0f31df426c7358c8c5a886a230a526735339b78757d2a6261af97157e8dbbd"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "gemini-3-8-flash-tts-2026",
+  "slug": "gemini-3-8-flash-tts-2026",
+  "status": "published",
+  "date": "2026-09-23",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 23, 2026",
+    "zhHans": "2026年9月23日"
+  },
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "categories": [
+    "product"
+  ],
+  "title": {
+    "en": "Google releases Gemini 3.8 Flash TTS and Flash-Lite TTS",
+    "zhHans": "Google 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS"
+  },
+  "searchSummary": {
+    "en": "Google released Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS through Google AI Studio and the Gemini API, adding prompt-based voice design and line-by-line performance controls across more than 100 languages and dialects.",
+    "zhHans": "Google 通过 Google AI Studio 与 Gemini API 发布 Gemini 3.8 Flash TTS 和 Gemini 3.8 Flash-Lite TTS，支持提示词驱动的声音设计、逐句表演控制以及 100 多种语言和方言。"
+  },
+  "summary": {
+    "en": "Google released Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS through Google AI Studio and the Gemini API, adding prompt-based voice design and line-by-line performance controls across more than 100 languages and dialects.",
+    "zhHans": "Google 通过 Google AI Studio 与 Gemini API 发布 Gemini 3.8 Flash TTS 和 Gemini 3.8 Flash-Lite TTS，支持提示词驱动的声音设计、逐句表演控制以及 100 多种语言和方言。"
+  },
+  "narrative": {
+    "en": "The release expands Google’s speech-generation product line with separate creative and high-volume variants. Vendor and third-party launch coverage confirm availability, but production adoption and independent quality replication were not established by the evidence cutoff.",
+    "zhHans": "该发布通过创意型与高吞吐型两个版本扩展了 Google 的语音生成产品线。厂商材料与第三方发布报道确认了可用性，但截至证据截止日，尚未证明生产采用或对质量结果的独立复现。"
+  },
+  "claims": [
+    {
+      "id": "gemini-tts-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260929-google-gemini-tts-official",
+        "sweep-20260929-google-gemini-tts-marktechpost"
+      ],
+      "text": {
+        "en": "Google released Gemini 3.8 Flash TTS and Flash-Lite TTS through Google AI Studio and the Gemini API.",
+        "zhHans": "Google 通过 Google AI Studio 与 Gemini API 发布 Gemini 3.8 Flash TTS 和 Flash-Lite TTS。"
+      }
+    },
+    {
+      "id": "gemini-tts-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260929-google-gemini-tts-official"
+      ],
+      "text": {
+        "en": "Benchmark leadership and quality improvements are vendor-reported, and independent production adoption was not established by the evidence cutoff.",
+        "zhHans": "榜单领先和质量提升来自厂商披露，截至证据截止日尚未证明独立生产采用。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20260929-google-gemini-tts-official",
+      "supports": [
+        "gemini-tts-fact",
+        "gemini-tts-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260929-google-gemini-tts-marktechpost",
+      "supports": [
+        "gemini-tts-fact"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "meta-muse-voice-transcribe-2026",
+    "openai-gpt-live-1-api-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-09-29",
+        "changeType": "created",
+        "summary": "Created from the 2026-09-18 to 2026-09-29 full discovery and confirmation sweep."
+      },
+      {
+        "date": "2026-09-29",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-09-29 record."
+      }
+    ],
+    "reviewedAt": "2026-09-29",
+    "lastSourceCheckAt": "2026-09-29",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/sweep-20260929/gemini-3-8-flash-tts-2026.json",
+    "publishedAt": "2026-09-29"
+  }
+}
