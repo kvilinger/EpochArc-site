@@ -1,0 +1,107 @@
+{
+  "id": "cloudflare-clef-decision-models-2026",
+  "slug": "cloudflare-clef-decision-models-2026",
+  "status": "published",
+  "date": "2026-10-01",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "October 1, 2026",
+    "zhHans": "2026年10月1日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "debated",
+  "controversy": false,
+  "title": {
+    "en": "Cloudflare releases Clef open decision models",
+    "zhHans": "Cloudflare 发布 Clef 开放决策模型"
+  },
+  "searchSummary": {
+    "en": "Cloudflare released Clef and Clef-flash on Workers AI and Hugging Face under Apache 2.0 for structured classification and agent-routing decisions.",
+    "zhHans": "Cloudflare 在 Workers AI 与 Hugging Face 上发布 Clef 和 Clef-flash，采用 Apache 2.0，用于结构化分类与智能体路由决策。"
+  },
+  "summary": {
+    "en": "Cloudflare released Clef and Clef-flash on Workers AI and Hugging Face under Apache 2.0 for structured classification and agent-routing decisions.",
+    "zhHans": "Cloudflare 在 Workers AI 与 Hugging Face 上发布 Clef 和 Clef-flash，采用 Apache 2.0，用于结构化分类与智能体路由决策。"
+  },
+  "narrative": {
+    "en": "Clef changes access to locally runnable decision models and adds image input, but the launch benchmarks were run by Cloudflare and drew methodological criticism. Production adoption by unaffiliated organizations was not established.",
+    "zhHans": "Clef 提供了可本地运行的决策模型并加入图像输入，但发布跑分由 Cloudflare 自行执行，且其方法受到质疑。尚未证明无关联组织的生产采用。"
+  },
+  "claims": [
+    {
+      "id": "clef-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261008-clef-official",
+        "sweep-20261008-clef-gigazine"
+      ],
+      "text": {
+        "en": "Cloudflare released Clef and Clef-flash as Apache-2.0 models on Workers AI and Hugging Face.",
+        "zhHans": "Cloudflare 在 Workers AI 与 Hugging Face 上以 Apache 2.0 发布 Clef 与 Clef-flash。"
+      }
+    },
+    {
+      "id": "clef-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261008-clef-official",
+        "sweep-20261008-clef-gigazine"
+      ],
+      "text": {
+        "en": "Cloudflare’s benchmark results are not independent replication and the benchmark methodology was disputed.",
+        "zhHans": "Cloudflare 的跑分不属于独立复现，且相关评测方法受到质疑。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20261008-clef-official",
+      "supports": [
+        "clef-fact",
+        "clef-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20261008-clef-gigazine",
+      "supports": [
+        "clef-fact",
+        "clef-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "mcp-protocol-2024",
+    "holo4-computer-use-models-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "reviewedAt": "2026-10-08",
+    "lastSourceCheckAt": "2026-10-08",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/2026-10-08/cloudflare-clef-decision-models-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-10-08",
+        "changeType": "created",
+        "summary": "Created and self-reviewed as L1 from latest-data-full-2026-10-08."
+      },
+      {
+        "date": "2026-10-08",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-10-08 record."
+      }
+    ],
+    "publishedAt": "2026-10-08"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "liquid-d1-edge-decision-models-2026",
+  "slug": "liquid-d1-edge-decision-models-2026",
+  "status": "published",
+  "date": "2026-10-07",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "October 7, 2026",
+    "zhHans": "2026年10月7日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "title": {
+    "en": "Liquid AI releases open d1 edge decision models",
+    "zhHans": "Liquid AI 发布开放式 d1 边缘决策模型"
+  },
+  "searchSummary": {
+    "en": "Liquid AI released d1-3B and experimental d1-omni-600M as downloadable decision models for text, vision, and audio-oriented edge workflows.",
+    "zhHans": "Liquid AI 发布可下载的 d1-3B 与实验性 d1-omni-600M，面向文本、视觉及音频边缘决策工作流。"
+  },
+  "summary": {
+    "en": "Liquid AI released d1-3B and experimental d1-omni-600M as downloadable decision models for text, vision, and audio-oriented edge workflows.",
+    "zhHans": "Liquid AI 发布可下载的 d1-3B 与实验性 d1-omni-600M，面向文本、视觉及音频边缘决策工作流。"
+  },
+  "narrative": {
+    "en": "The release makes compact decision checkpoints available for local evaluation. Liquid’s latency and quality comparisons remain vendor-run, multimodal benchmarks are incomplete, and the model cards use Liquid’s own license rather than a standard permissive license.",
+    "zhHans": "该发布使紧凑型决策检查点可供本地评估。Liquid 的延迟与质量比较仍由厂商执行，多模态评测尚不完整，模型卡采用 Liquid 自有许可证而非标准宽松许可证。"
+  },
+  "claims": [
+    {
+      "id": "liquid-d1-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261008-liquid-d1-official",
+        "sweep-20261008-liquid-d1-runtimewire"
+      ],
+      "text": {
+        "en": "Liquid AI released d1-3B and d1-omni-600M as downloadable decision models on October 7, 2026.",
+        "zhHans": "Liquid AI 于 2026 年 10 月 7 日发布可下载的 d1-3B 与 d1-omni-600M 决策模型。"
+      }
+    },
+    {
+      "id": "liquid-d1-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261008-liquid-d1-official",
+        "sweep-20261008-liquid-d1-runtimewire"
+      ],
+      "text": {
+        "en": "The multimodal evidence is incomplete, reported performance is not independently replicated, and the weights use Liquid’s LFM license.",
+        "zhHans": "多模态证据尚不完整，性能未得到独立复现，权重采用 Liquid 的 LFM 许可证。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20261008-liquid-d1-official",
+      "supports": [
+        "liquid-d1-fact",
+        "liquid-d1-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20261008-liquid-d1-runtimewire",
+      "supports": [
+        "liquid-d1-fact",
+        "liquid-d1-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "holo4-computer-use-models-2026",
+    "mcp-protocol-2024"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "reviewedAt": "2026-10-08",
+    "lastSourceCheckAt": "2026-10-08",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/2026-10-08/liquid-d1-edge-decision-models-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-10-08",
+        "changeType": "created",
+        "summary": "Created and self-reviewed as L1 from latest-data-full-2026-10-08."
+      },
+      {
+        "date": "2026-10-08",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-10-08 record."
+      }
+    ],
+    "publishedAt": "2026-10-08"
+  }
+}

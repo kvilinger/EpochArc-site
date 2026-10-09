@@ -1,0 +1,150 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "white-house-super-intelligence-order-accord-2026",
+  "evidenceCutoff": "2026-10-08",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only for the retained L1 classification.",
+    "Discovery coverage is partial because X authentication and Brave retrieval were unavailable.",
+    "Vendor benchmarks are not treated as independent capability replication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese actor, action, date, stage, numeric claims and limitations align."
+  },
+  "evidence": [
+    {
+      "id": "whitehouse-si-fact-1",
+      "sourceId": "sweep-20261008-whitehouse-order",
+      "claimId": "whitehouse-si-fact",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+      "originId": "eo-14434",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "agencies) shall use ‘‘Super Intelligence’’ and ‘‘SI’’",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/whitehouse-superintelligence-order.md",
+      "sha256": "6ab7d70930636edecbbcd7a939e0b823d07964cc4acaef87817cf113708c1953"
+    },
+    {
+      "id": "whitehouse-si-fact-2",
+      "sourceId": "sweep-20261008-whitehouse-nextgov",
+      "claimId": "whitehouse-si-fact",
+      "url": "https://www.nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325/",
+      "originId": "nextgov-superintelligence-reporting",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "instructing agencies to refer to artificial intelligence as “super intelligence”",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/whitehouse-superintelligence-nextgov.md",
+      "sha256": "a4e27e100e9dd0943452aa2ff20e4dcc11c134f7bd64324c4bfdf189f1395274"
+    },
+    {
+      "id": "whitehouse-si-limitation-1",
+      "sourceId": "sweep-20261008-whitehouse-order",
+      "claimId": "whitehouse-si-limitation",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+      "originId": "eo-14434",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Nothing in this section requires the alteration of previously issued regulations",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/whitehouse-superintelligence-order.md",
+      "sha256": "6ab7d70930636edecbbcd7a939e0b823d07964cc4acaef87817cf113708c1953"
+    },
+    {
+      "id": "whitehouse-si-limitation-2",
+      "sourceId": "sweep-20261008-whitehouse-nextgov",
+      "claimId": "whitehouse-si-limitation",
+      "url": "https://www.nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325/",
+      "originId": "nextgov-superintelligence-reporting",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "leaders of major technology companies signed an accord on frontier model safety",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/whitehouse-superintelligence-nextgov.md",
+      "sha256": "a4e27e100e9dd0943452aa2ff20e4dcc11c134f7bd64324c4bfdf189f1395274"
+    }
+  ],
+  "runId": "latest-data-full-2026-10-08",
+  "candidateId": "oct8-white-house-super-intelligence-order-accord-2026",
+  "coreFactClaimIds": [
+    "whitehouse-si-fact"
+  ],
+  "identity": {
+    "seriesId": "white-house-super-intelligence-order-accord",
+    "action": "White House orders federal AI rebranding and announces a voluntary frontier-safety accord",
+    "stage": "announced",
+    "dateBasis": "Retained primary and dated independent source",
+    "deduplicationReason": "Distinct action or stage from canonical comparison events.",
+    "comparedEventIds": [
+      "eu-ai-act-2024"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "Category follows the core action."
+  },
+  "significance": {
+    "rationale": "Core fact is verified, but no full v2.4 L2 route is established.",
+    "whyNotHigher": "At least one mandatory L2 criterion remains unknown.",
+    "whyNotLower": "The action is a verified release, method demonstration, or government directive.",
+    "comparisonEventIds": [
+      "eu-ai-act-2024",
+      "open-secure-ai-alliance-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": true,
+            "rationale": "The executive order directs executive-branch agencies.",
+            "evidenceIds": [
+              "whitehouse-si-fact-1",
+              "whitehouse-si-fact-2"
+            ]
+          },
+          "applies_beyond_named_parties": {
+            "value": true,
+            "rationale": "The executive order directs executive-branch agencies.",
+            "evidenceIds": [
+              "whitehouse-si-fact-1",
+              "whitehouse-si-fact-2"
+            ]
+          },
+          "independent_legal_analysis": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "debated",
+    "reason": "Recent action with limited observed downstream evidence.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate factual dispute retained; limitations are explicit.",
+    "evidenceIds": []
+  },
+  "subjectDigest": "1eddc20a0dd60b5de9ce6d2cc24a37d4e23588c7ee8c12637847797aa128a991",
+  "inputsDigest": "07d73b91b4989c329ecb16397bec59cec84fd50c608f3155bc7d6c9c34ae440e",
+  "runDigest": "99f570cd453e5e6e954b67a24c686d96dc139170468fdab34ab7b7f7b9f95d95",
+  "priorReviewedSubjectDigest": "05e9b8ca0ee208fa5ea35b238e5d4cf8f0418dc596469b3952032274fd83adb4"
+}

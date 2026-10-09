@@ -1,0 +1,107 @@
+{
+  "id": "microsoft-mai-transcribe-2-streaming-2026",
+  "slug": "microsoft-mai-transcribe-2-streaming-2026",
+  "status": "published",
+  "date": "2026-10-01",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "October 1, 2026",
+    "zhHans": "2026年10月1日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "title": {
+    "en": "Microsoft releases MAI-Transcribe-2-Streaming and two MAI voice models",
+    "zhHans": "微软发布 MAI-Transcribe-2-Streaming 与两款 MAI 语音模型"
+  },
+  "searchSummary": {
+    "en": "Microsoft released MAI-Transcribe-2-Streaming for incremental real-time transcription in 60 languages alongside MAI-Voice-2.1 and MAI-Voice-2.1-Flash.",
+    "zhHans": "微软发布 MAI-Transcribe-2-Streaming，支持 60 种语言的增量实时转录，并同时推出 MAI-Voice-2.1 与 MAI-Voice-2.1-Flash。"
+  },
+  "summary": {
+    "en": "Microsoft released MAI-Transcribe-2-Streaming for incremental real-time transcription in 60 languages alongside MAI-Voice-2.1 and MAI-Voice-2.1-Flash.",
+    "zhHans": "微软发布 MAI-Transcribe-2-Streaming，支持 60 种语言的增量实时转录，并同时推出 MAI-Voice-2.1 与 MAI-Voice-2.1-Flash。"
+  },
+  "narrative": {
+    "en": "The release adds an explicitly streaming transcription workflow to Microsoft’s in-house model lineup. Reported ranking and latency figures remain tied to vendor or launch-time measurements, and no qualifying external production adoption was established.",
+    "zhHans": "该发布为微软自研模型系列增加了明确的流式转录工作流。排名和延迟数据仍来自厂商或发布期测量，尚未证明符合门槛的外部生产采用。"
+  },
+  "claims": [
+    {
+      "id": "ms-stt-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261008-ms-stt-official",
+        "sweep-20261008-ms-stt-runtimewire"
+      ],
+      "text": {
+        "en": "Microsoft released MAI-Transcribe-2-Streaming with continuous language detection across 60 languages.",
+        "zhHans": "微软发布 MAI-Transcribe-2-Streaming，支持 60 种语言的连续自动语言检测。"
+      }
+    },
+    {
+      "id": "ms-stt-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261008-ms-stt-official",
+        "sweep-20261008-ms-stt-runtimewire"
+      ],
+      "text": {
+        "en": "Latency and ranking claims do not guarantee deployed end-to-end voice-agent performance.",
+        "zhHans": "延迟与排名主张不能保证实际部署中语音智能体的端到端性能。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20261008-ms-stt-official",
+      "supports": [
+        "ms-stt-fact",
+        "ms-stt-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20261008-ms-stt-runtimewire",
+      "supports": [
+        "ms-stt-fact",
+        "ms-stt-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "meta-muse-voice-transcribe-2026",
+    "gemini-3-8-flash-tts-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "reviewedAt": "2026-10-08",
+    "lastSourceCheckAt": "2026-10-08",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/2026-10-08/microsoft-mai-transcribe-2-streaming-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-10-08",
+        "changeType": "created",
+        "summary": "Created and self-reviewed as L1 from latest-data-full-2026-10-08."
+      },
+      {
+        "date": "2026-10-08",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-10-08 record."
+      }
+    ],
+    "publishedAt": "2026-10-08"
+  }
+}

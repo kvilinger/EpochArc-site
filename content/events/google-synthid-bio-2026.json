@@ -1,0 +1,107 @@
+{
+  "id": "google-synthid-bio-2026",
+  "slug": "google-synthid-bio-2026",
+  "status": "published",
+  "date": "2026-09-30",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 30, 2026",
+    "zhHans": "2026年9月30日"
+  },
+  "categories": [
+    "capability"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "debated",
+  "controversy": false,
+  "title": {
+    "en": "Google DeepMind introduces SynthID Bio for watermarking AI-designed proteins",
+    "zhHans": "Google DeepMind 推出用于标记 AI 设计蛋白质的 SynthID Bio"
+  },
+  "searchSummary": {
+    "en": "Google DeepMind introduced SynthID Bio, a proof-of-concept family of methods that embeds detectable signatures in AI-designed protein sequences and structures while preserving tested biological function.",
+    "zhHans": "Google DeepMind 推出 SynthID Bio 概念验证方法系列，在 AI 设计的蛋白质序列与结构中嵌入可检测标记，同时在实验中保持其生物功能。"
+  },
+  "summary": {
+    "en": "Google DeepMind introduced SynthID Bio, a proof-of-concept family of methods that embeds detectable signatures in AI-designed protein sequences and structures while preserving tested biological function.",
+    "zhHans": "Google DeepMind 推出 SynthID Bio 概念验证方法系列，在 AI 设计的蛋白质序列与结构中嵌入可检测标记，同时在实验中保持其生物功能。"
+  },
+  "narrative": {
+    "en": "Wet-lab tests support the narrow proof of concept, and Nature independently reported the results. The watermark can be removed or obscured through redesign, and no independent follow-on adoption by synthesis providers was established.",
+    "zhHans": "湿实验支持这一有限的概念验证，Nature 也进行了独立报道。但水印可能通过重新设计被移除或掩盖，且尚未证明 DNA 合成机构的独立后续采用。"
+  },
+  "claims": [
+    {
+      "id": "synthid-bio-fact",
+      "claimType": "fact",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20261008-synthid-bio-official",
+        "sweep-20261008-synthid-bio-nature"
+      ],
+      "text": {
+        "en": "Google DeepMind demonstrated biologically functional watermarked protein binders with SynthID Bio.",
+        "zhHans": "Google DeepMind 通过 SynthID Bio 展示了保持生物功能的带水印蛋白质结合物。"
+      }
+    },
+    {
+      "id": "synthid-bio-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "sweep-20261008-synthid-bio-official",
+        "sweep-20261008-synthid-bio-nature"
+      ],
+      "text": {
+        "en": "The watermark can be scrubbed or obscured through redesign and remains a proof of concept without established external adoption.",
+        "zhHans": "水印可通过重新设计被清除或掩盖，目前仍是尚未建立外部采用的概念验证。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20261008-synthid-bio-official",
+      "supports": [
+        "synthid-bio-fact",
+        "synthid-bio-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20261008-synthid-bio-nature",
+      "supports": [
+        "synthid-bio-fact",
+        "synthid-bio-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "alphafold-2020",
+    "alphafold-nobel-2024"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "reviewedAt": "2026-10-08",
+    "lastSourceCheckAt": "2026-10-08",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/2026-10-08/google-synthid-bio-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-10-08",
+        "changeType": "created",
+        "summary": "Created and self-reviewed as L1 from latest-data-full-2026-10-08."
+      },
+      {
+        "date": "2026-10-08",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-10-08 record."
+      }
+    ],
+    "publishedAt": "2026-10-08"
+  }
+}

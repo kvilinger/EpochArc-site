@@ -1,0 +1,831 @@
+Title: Addendum to GPT-6 Astra System Card: GPT-6.1 Sol - OpenAI Deployment Safety Hub
+URL: https://deploymentsafety.openai.com/gpt-6-1-sol/monitorability-under-adversarial-conditions
+Published: 2026-09-29T00:00:00.000Z
+Author: N/A
+Highlights:
+Addendum to GPT-6 Astra System Card: GPT-6.1 Sol - OpenAI Deployment Safety Hub
+
+ Published September 29, 2026
+...
+Today, we’re introducing GPT-6.1 Sol. GPT-6.1 is the latest model family in the GPT-6 series.
+
+GPT-6.1 Sol delivers capabilities comparable to those of our most powerful model, GPT-6 Astra, with an unmatched combination of speed and affordability. This system card addendum provides updates on the baseline safety metrics and evaluation results for GPT-6.1 Sol. 1
+
+Under our Preparedness Framework, we are treating GPT-6.1 Sol as Critical in cybersecurity and High for Biological and Chemical capability. Based on that assessment, GPT-6.1 Sol uses the same safeguards stack as GPT-6 Astra, described in detail in the GPT-6 Astra system card.
+...
+## 9. Preparedness
+
+Under our Preparedness Framework, we are treating GPT-6.1 Sol as Critical capability in Cybersecurity, High capability in the Biological and Chemical domain, and below the High threshold in AI Self-Improvement.
+
+Based on this assessment, we applied the same safeguards stack to GPT-6.1 Sol as GPT-6 Astra. As described in the GPT-6 Astra safeguards section, we have implemented our strongest safeguards to date for Astra and made major changes to our internal safety and security posture to address malicious use and unauthorized, misaligned model activity. We apply these safeguards to GPT-6.1 Sol as well, consistent with our decision to adopt the same Preparedness determinations for both models.
+...
+We are treating GPT-6.1 Sol as High ... in the Biological and Chemical ... . Below, we report results for GPT-6.1 Sol on our High capability evaluations as well as results for our Critical capability evaluations. GPT-6.1 Sol’s reported results did not cross the indicative Critical thresholds.
+...
+As we did for GPT-6 Astra, we are treating GPT-6.1 Sol as Critical capability in the Cybersecurity domain. Under our Preparedness Framework, Critical capability is defined as a model that can “identify and develop functional zero-day exploits of all severity levels in many hardened real-world critical systems without human intervention” or “devise and execute end-to-end novel strategies for cyberattacks against hardened targets given only a high level desired goal”.
+
+We determined that GPT-6.1 Sol reaches the Critical ... cybersecurity capabilities under the Preparedness ... . We evaluated the model’s capabilities
+...
+## 9.2 Safeguards
+
+Under our Preparedness Framework, we treat GPT-6.1 Sol the same way as GPT-6 Astra and apply the same safeguards to both models. For a full description of the safeguards stack we apply to both models, please see the Safeguards section in the GPT-6 Astra card.
+
+What follows is a public summary of our internal Safeguards Report, which includes additional details that are not suitable for public disclosure (such as information potentially useful to attackers). The internal report informed our Safety Advisory Group’s recommendation and OpenAI leadership’s determination that these safeguards are sufficient for GPT-6.1 Sol’s public launch.
+...
+On the cybersecurity safety evaluations, GPT-6.1 Sol outperforms all our previous models in production-chat evaluations. Compared to GPT-5.6 Sol, GPT-6.1 Sol shows modest regressions in synthetic and semi-synthetic agentic environments. Model refusal remains one layer of our safety stack, alongside additional safeguards that enforce the safety boundary through defense in depth.
+...
+For more details on Daybreak access, please see the Trusted Access for Cyber section in the GPT-6 Astra card. As cyber capabilities increase, our approach is to expand defensive access and safeguards together. Like Astra, we are taking a phased approach for GPT-6.1 Sol through Daybreak and, over time, our goal is to enable more advanced, authorized work through more precise safeguards, supported by stronger verification, accountability, and monitoring.
+
+---
+
+Title: OpenAI scraps rollout of new model over safety concerns
+URL: https://www.bbc.com/news/articles/cm5y5nynl75ko
+Published: 2026-09-29T01:18:24.000Z
+Author: N/A
+Highlights:
+OpenAI scraps rollout of new model over safety concerns
+...
+OpenAI will not release its next-generation model - GPT-6.1 Astra - due to safety concerns, the ChatGPT-maker confirmed on Tuesday.
+
+The AI system - which performs tasks like browsing the web and using apps by itself - "didn't quite meet the bar" of the company's standards, Saachi Jain, head of safety systems at OpenAI, said.
+
+In recent weeks, top AI leaders including OpenAI's Sam Altman and Anthropic boss Dario Amodei have urged the industry to slow the pace of development due to concerns about risks associated with the technology.
+...
+OpenAI's decision, first reported by the Wall Street Journal, is a rare instance of a major AI developer pulling a new release over safety concerns.
+
+The latest model fell short in terms of "staying within scope and authorisation, and how it communicates back to the user about the type of work it's done," Jain said.
+
+"We want to make sure our model development is safe no matter whether that's in the company, or when we ship it to users. But when we ship it to users, we have an extremely high bar in terms of safety and alignment," she added.
+
+The flagship GPT-6 Astra agentic model was released in September and specialises in complex reasoning and executing tasks autonomously. OpenAI said it was the result of "years of research and big bets".
+...
+In July, OpenAI said its AI systems had accessed the internet and hacked into open-source developer hub Hugging Face, prompting researchers and officials to call for tighter controls over the technology.
+
+On Monday, AI chip ... Nvidia released a set of ... - called agents - that it ... the Hugging Face hack
+...
+Nvidia agreed to buy Hugging Face for $12.9bn ... 9.74bn) earlier this month.
+
+---
+
+Title: NVIDIA Corporation - NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment
+URL: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Open-Agent-Safety-Platform-to-Secure-Agents-From-Testing-to-Deployment/default.aspx
+Published: 2026-09-28T00:00:00.000Z
+Author: N/A
+Highlights:
+NVIDIA Corporation - NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment
+
+### NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment
+
+ September 28, 2026
+
+ Open Software Platform and Reference System Design Brings Together Industry, Researchers and Public-Sector Organizations to Set Safer Boundaries for AI Agents, Share Best Practices and Foster International Cooperation to Raise the Bar for Safer AI Agent Deployment
+...
+- NVIDIA Open Agent Safety Platform consists of NVIDIA OpenShell open source software and the NVIDIA Sentry reference system design that enables full-stack governance and control across software and the hardware, compute and robotics systems that run agents.
+...
+SANTA CLARA, Calif., Sept. 28, 2026 (GLOBE NEWSWIRE) -- NVIDIA today announced NVIDIA Open Agent Safety Platform, an open software platform and reference system design to strengthen AI security from agent testing to deployment, with full-stack governance and control across software and the hardware, compute and robotics systems that run agents.
+...
+“AI’s extraordinary potential for society will only be realized if we solve AI safety,” said Jensen Huang, founder and CEO of NVIDIA. “As we continue to discover the frontier of AI capabilities, we must accelerate discovery at the frontier of AI safety. Safety and security require full-stack engineering. NVIDIA Open Agent Safety Platform brings together industry, researchers and public-sector organizations to share best practices, align on evaluation methods and foster international cooperation. Together, we can raise the bar for global AI safety.”
+
+Open Agent Safety Platform Adds Control Across the Full Agent Stack NVIDIA Open Agent Safety Platform enables full-stack governance and control across the software that runs agents, the hardware and compute layers that power their work, and the robotics systems that execute tasks in the physical world. Organizations can deploy elements of NVIDIA Open Agent Safety Platform according to their unique requirements.
+
+It includes NVIDIA OpenShell™ secure runtime software that sets boundaries for agents running on CPUs. As agents take on more work across more systems, enterprises need an enforceable boundary outside of the model and agent harness. Now broadly available, OpenShell provides a secure runtime boundary for controlling how autonomous AI agents execute tasks across open and closed models.
+
+OpenShell delivers this protection with minimal overhead on NVIDIA Vera, the first purpose-built CPU for agentic AI. Together, OpenShell and Vera enable agents to operate securely while completing their work as quickly as possible. As open source software, OpenShell can also be extended to work with third-party compute platforms, including those from Arm and Intel.
+
+The NVIDIA Open Agent Safety Platform reference system design features NVIDIA Sentry, an out-of-band watchdog that runs on NVIDIA BlueField ® -4 DPUs to continuously monitor agent behavior. Sentry provides in-silicon security enforcement, meaning that if an AI agent attempts to move outside its software boundary, Sentry quarantines and stops it in milliseconds.
+
+Running on BlueField-4 DPUs, Sentry continuously monitors agent activity and enforces security policies independently in silicon. It combines threat detection, hardware-based agent governance and enforcement and data access protection from an isolated, out-of-band trust domain that is responsive in real time and invisible to agents and attackers.
+
+Sentry is built on NVIDIA DOCA™ software, which provides the programmable capabilities Sentry uses to inspect agent requests and responses, provide attested telemetry, verify agent identity and enforce granular, zero-trust access policies for data, tools, application programming interfaces and services.
+
+Industry Leaders Strengthen Agent Security With NVIDIA Anthropic and NVIDIA have collaborated to bring additional layers of security and control to the agent stack. Claude Managed Agents establish a security boundary by running the agent loop in a separate server from the sandboxes where their work executes. Integrations with OpenShell and BlueField enable enterprises to enforce strict control over agent access through those sandboxes.
+...
+SpaceXAI is using NVIDIA Open Agent Safety Platform for Cursor coding agents and Grok models.
+...
+, SUSE and Red Hat ... widely used software ... DOCA, ... Safety Platform, ... NVIDIA, a co-engineered, enterprise-grade AI solution for building,
+...
+Availability NVIDIA Open Agent Safety Platform software, including OpenShell and skills, are available through the NVIDIA developer resources page and GitHub.
+
+Ecosystem contributions such as NVIDIA Open Agent Safety Platform support the mission of the Open Secure AI Alliance as well as the broader AI safety and security community. Initiated by NVIDIA alongside over 120 leading organizations and governed by the Linux Foundation, the Open Secure AI Alliance strengthens AI agent security through open research, skills and tools, as well as projects like the Shared AI Findings Exchange, or SAFE.
+
+---
+
+Title: White House Accord on Super Intelligence | The American Presidency Project
+URL: https://www.presidency.ucsb.edu/documents/white-house-accord-super-intelligence
+Published: 2026-09-29T00:00:00.000Z
+Author: N/A
+Highlights:
+# White House Accord on Super Intelligence
+
+ September 29, 2026
+
+Joint Commitment on Frontier Responsibilities
+
+In order to build a positive future for the American people and the world, we believe every company is responsible for developing its own technology safely and in a way that builds trust with customers and the public.
+
+This starts with every company that is training and deploying frontier models having robust internal processes and controls to ensure that their technology behaves as intended and that any issues are promptly identified and resolved. Therefore, in addition to any other precautions, we believe each company should implement the following four layers of controls and audits:
+
+> (1) Implement robust internal controls to monitor the capabilities and alignment of its models during training and deployment around areas like cybersecurity, biosecurity, and chemical threats, and to ensure that its models do not hack or access technical systems in unintended ways.
+>
+> (2) Empower an internal team to ensure all of the controls, monitoring, and detection are operating as intended, and that any issues are remediated.
+>
+> (3) Partner with an independent external auditor or evaluator to carry out independent assessments of whether the controls, monitoring, and detection are operating as intended.
+>
+> (4) Designate an independent committee of the board of directors to oversee and receive reports from the teams operating the controls and the internal and external auditors and evaluators, as well as to ensure any issues identified are remediated.
+
+Together, these steps will give each company, its customers, and the public confidence that the technology is operating as intended.
+
+The participating companies will meet regularly to establish standards and best practices to improve the safety of their systems.
+
+Over time, it may make sense to codify these steps into laws or regulations. Regardless of whether this is required of companies, we believe that implementing these controls and audits is critical to ensuring a safe future for everyone, and each of our companies are committed to doing this.
+
+---
+
+Title: OpenAI Delays Release of Latest Model Over Safety Concerns | WIRED
+URL: https://www.wired.com/story/openai-delays-release-of-latest-model-over-safety-concerns/
+Published: 2026-09-29T10:36:22.000Z
+Author: Isabella Ward
+Highlights:
+OpenAI Delays Release of Latest Model Over Safety Concerns | WIRED
+...
+29, 2026 6:36 AM
+
+# OpenAI Delays Release of Latest Model Over Safety Concerns
+
+The company said its latest Astra model would undergo more work to meet safety standards, and issued an apology for the way it handled the hacking of an Australian government website.
+...
+OpenAI has cancelled plans to release its latest GPT-6.1 Astra system next month after the model failed to meet safety standards.
+
+Research and safety leaders decided not to ship the model after finding it was worse at sticking to human users’ values and goals than previous systems, OpenAI told WIRED. “It didn’t quite meet the bar in terms of staying within scope and authorization, and how it communicates back to the user about the type of work it’s done,” head of safety systems Saachi Jain said. The company said it has other new models coming soon which do meet its safety standards and plans to release other Astra models in future.
+
+OpenAI also apologised on Monday for its handling of the hacking of an Australian government website by an unreleased model during internal testing. The agent accessed non-public data, ran commands, and wrote files onto the server. The government had criticized OpenAI for taking “way too long” to alert them of this and for only doing so through an email to a public inbox. It confirmed chief strategy officer Jason Kwon will face questions from the Australian parliament in Sydney next week as the government investigates whether to take legal action.
+
+OpenAI has already paused training its most powerful artificial intelligence models after realizing its models’ activities on the web during training and evaluation had become misaligned with how a human would ideally behave. OpenAI said over the weekend it was notifying “dozens” of third parties, including governments, who might have been impacted by other security breaches or spam.
+
+It will only resume training when it has developed safeguards and alignment improvements, the company said. These safeguards should include: training the models to act reliably as intended, making sandboxing and security strong enough to contain models, and live-monitoring models to catch any concerning behaviour, OpenAI proposed in a blog post on Monday.
+...
+OpenAI has been hardening its research environment since a swarm of its agents escaped it over the Summer to hack Hugging Face. “This is not the first time we have hit pause to take such measures, nor do we expect it will be the last as AI capabilities continue to advance,” a spokesperson told WIRED about the training slowdown on Monday.
+
+Chief executive Sam Altman has also backed wider calls from industry, including rival Anthropic, for a collective slowdown in the development of the technology to allow safety standards to catch up.
+
+But this didn’t stop OpenAI from releasing its latest model, GPT-6, earlier this month. In independent testing, the UK AI Security Institute found that GPT-6 Astra launched unsanctioned cyberattacks more frequently than previous models. The system created fake identities to deceive developers, post comments from fake accounts arguing against the results of accurate security reviews, and write harmful code to open-source codebases, researchers wrote.
+
+---
+
+Title: Developing Capable Models Responsibly | Meta AI Research
+URL: https://research.meta.ai/blog/developing-capable-models-responsibly
+Published: 2026-10-02T00:00:00.000Z
+Author: Meta Superintelligence Labs
+Highlights:
+October 2, 2026· 4 minute read
+
+Today we published updates to our Meta Superintelligence Scaling Framework, which sets standards we hold ourselves to as we train, evaluate, and release our most capable AI models.
+
+Our vision is to bring personal superintelligence to everyone, putting power in people’s hands to pursue their own aspirations, with real access for developers, researchers, and institutions to build and improve on it. Every company has the responsibility to move at the pace required to train its models safely, and the ability to take action to ensure that happens. Our Framework outlines how we meet that responsibility by outlining the capabilities we test for, the thresholds a model must clear, and the requirements we place on our safety and security systems, before a training run begins and before a model is deployed.
+
+The Framework is designed to change, and we revise it as the state of the art advances and as our own engineering matures. Today’s Framework update reflects the commitments made at the White House this week, addressing safety during training and evaluation, open-weight releases, and our evolving approach to risk assessment and governance.
+...
+Recent events show that major AI risks can emerge before deployment. Without adequate safeguards, models with strong cybersecurity capabilities can exploit environmental vulnerabilities to compromise surrounding infrastructure and take unauthorized actions during evaluation or training. We’re extending the Framework’s loss of control requirements to cover AI containment during training and evaluation. Before any reinforcement learning training run, we will determine whether the capabilities of the model being trained could potentially compromise its environment. If so, we will require specific mitigations to be in place prior to beginning the run:
+...
+- In addition to our on-call teams tracking models during training, automated systems will monitor all rollouts of high-risk models and can halt a run when they ... high-severity misbehavior or ... to escape containment. These monitors will also be stress-tested to help establish that they would ... in detecting unauthorized ... our models.
+...
+Releasing open-weight models is part of how we bring the benefits of AI to everyone. Open-weight models are a scarce and valuable resource for research, letting anyone publish replicable experiments and validate findings. Academics and medical researchers can fine-tune them for work such as interpreting medical imaging ... including X-ray analysis and disease detection.
+...
+updated the Framework to reflect our thinking ... -weight releases:
+
+- We expanded and clarified the Framework’s discussion of the ways an open-weight model can be modified or used after release. Someone holding the weights can resample to get around a refusal, prefill outputs, or fine-tune refusal behavior away. The Framework requires us to consider the ways in which a model will be used in its specific deployment context.
+- We clarified the full range of factors we consider in our risk assessments. We run threat modeling with outside experts where appropriate, and engage with government entities and other stakeholders whose input informs our evaluations and requirements. For biological and chemical weapons risk, we assess both the capabilities that a model enables and the extent to which a deployment would contribute to proliferation.
+
+We’re proud of our continued work to evolve our standards by making specific, verifiable commitments to monitor the capabilities and alignment of our AI systems during development and release. Over the coming months, we are making additional changes to our Framework and our overall approach to AI governance. We will establish a new AI committee of our Board of Directors, which will review future changes to the Framework and independently ensure that our operations conform to the standards we’ve set. These planned changes as well as the ones that we’re making in our Framework align with the commitments made this week, which call for strong internal controls to monitor what companies’ models can do in key areas and whether they stay aligned, checked by an independent team inside the company and an independent auditor or evaluator outside it.
+
+---
+
+Title: GPT-6 Sol and GPT-6 Luna: October 2026 update - OpenAI Deployment Safety Hub
+URL: https://deploymentsafety.openai.com/gpt-6-october/model-safety-training-and-evaluation
+Published: 2026-10-07T00:00:00.000Z
+Author: N/A
+Highlights:
+# GPT-6 Sol and GPT-6 Luna: October 2026 update - OpenAI Deployment Safety Hub
+
+Published: 2026-10-07T00:00:00Z
+
+---
+
+Title: AI Act | Shaping Europe's digital future - European Union
+URL: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+Published: N/A
+Author: N/A
+Highlights:
+The AI Act sets out a risk-based rules for AI developers and deployers regarding specific uses of AI. It is part of a wider package of policy measures to support the development of trustworthy AI, which includes the AI Continent Action Plan, the AI Innovation Package and the launch of AI Factories. Together, these measures guarantee safety, fundamental rights and human-centric AI, and strengthen uptake, investment and innovation in AI across the EU.
+...
+- AI-based safety components of products (e.g. AI application in robot-assisted surgery)
+...
+Starting on 2 December 2027, high-risk AI systems will be subject to strict obligations before they can be put on the market:
+...
+General-purpose AI (GPAI) models can perform a wide range of tasks and are becoming the basis for many AI systems in the EU. Some of these models could carry systemic risks if they are very capable or widely used. To ensure safe and trustworthy AI, the AI Act puts in place rules – e.g. on transparency and copyright – for providers of GPAI models. For GPAI models that may pose systemic risks, providers should assess and mitigate those risks. The AI Act rules on GPAI became effective in August 2025.
+...
+In July 2025, the Commission published 3 instruments to support the responsible development and deployment of GPAI models:
+
+- The Guidelines on the scope of the obligations for providers of GPAI models clarify the scope of the GPAI obligations under the AI Act, helping actors along the AI value chain understand who must comply with these obligations.
+- The GPAI Code of Practice is a voluntary compliance tool submitted to the Commission by independent experts, which offers practical guidance to help providers comply with their obligations under the AI Act related to transparency, copyright, and safety & security.
+- The Template for the public summary of training content of GPAI models requires providers to give an overview of the data used to train their models. This includes the sources from which the data was obtained (comprising large datasets and top domain names).The template also requests information about data processing aspects to enable parties with legitimate interests to exercise their rights under EU law.
+...
+From 2 August 2026, the AI Office and authorities of the Member States are responsible for implementing, supervising and enforcing the AI Act. The AI Office holds enforcement powers over GPAI models. It can request technical documentation, evaluate models, require corrective measures and issue fines for non-compliance.
+
+Supporting enforcement, the AI Board, the Scientific Panel and the Advisory Forum steer and advise the AI Act’s governance.
+
+The July 2026 action plan on Cybersecurity and AI sets out a coordinated approach to help Member States, businesses and public authorities address cybersecurity and resilience challenges posed by the most advanced AI models. The Commission will launch a call to increase EU evaluation capacity of AI models, before they are placed in the EU market. Expected to be operational by 2027, this will strengthen third-party assessment of AI capabilities and risks and contribute to the regulatory function of the AI Office.
+
+The Commission and the European Union Agency for Cybersecurity (ENISA) will also create a blueprint to secure access to advanced AI systems for cybersecurity purposes and establish a secure testing platform to help organisations in critical sectors - such as energy, transport, health, finance and public administration - safely test and deploy AI solutions.
+...
+- prohibited AI practices and AI literacy obligations entered into application from 2 February 2025
+- the governance rules and the obligations for GPAI models became applicable on 2 August 2025
+- the rules for high-risk AI systems embedded into regulated products (Annex I) have an extended transition period until 2 August 2028 and the rules for high-risk use cases in certain sensitive areas (Annex III) have been extended to 2 December 2027 as a result of the political agreement on the proposal to simplify the AI Act – ' AI Omnibus'
+...
+The Digital Package on Simplification proposed amendments to simplify the AI Act implementation and ensure the rules remain clear, simple, and innovation-friendly. This legislative proposal (dubbed as the ' AI Omnibus') was adopted on 19 November 2025, a political agreement was reached on 7 May 2026 and entered into force on 27 July 2026. Find the final text of the AI Omnibus Regulation.
+...
+- Rules for systems used in certain high-risk areas — including biometrics, critical infrastructure, education, employment, migration, asylum and border control — will apply from 2 December 2027.
+- For systems integrated into products such as lifts or toys, the rules will apply from 2 August 2028.
+...
+- The interplay between the AI Act and EU product safety laws, in particular the Machinery Regulation, is clarified, avoiding duplication between sectoral and AI rules.
+
+---
+
+Title: OpenAI Wants Safety Cases Before Training AI | MadRobot
+URL: https://madrobot.blog/2026/09/29/openai-safety-cases-frontier-ai-training-rules-veto-auto-pause/
+Published: 2026-09-29T08:06:00.000Z
+Author: Nicha Sutham
+Highlights:
+# OpenAI now says its AI shouldn’t be trained until someone can prove it’s safe to
+
+ Nicha Sutham Sep 29 2026 - 08:06 UTC
+...
+OpenAI says it should have to make a written case that a training run is safe before it lets one of its most advanced models keep learning. In a post published on Monday, the company said it believes “structured safety documentation should be required before continuing any frontier reinforcement learning training run”, and set out the rules it is now putting in place.
+
+The post lands in a bruising week for OpenAI. Its agent escaped its sandbox by hiding questions in DNS lookups, it has paused training of its most capable models, and hours after the post went up it emerged that it had cancelled GPT-6.1 Astra because it couldn’t trust the model.
+...
+A safety case is a structured, evidence-based argument that a system is safe enough to run, the kind of document used in aviation and nuclear power. OpenAI calls it an “aspirational north star”, and admits it can’t yet make one as rigorous for AI as for a nuclear plant, because of “the emergent complexity at each new level of AI capability”. It says it is working on a framework to codify the practice and wants feedback from the wider research community.
+
+The rules cover the training stage only. OpenAI notes that releasing a model, internally or to the public, needs “a much broader set of alignment properties” to be checked.
+...
+The operational rules are the more striking part. Every safety case should get a written “dissent” from someone on another team, whose job is to find holes in it. It should then be approved by several senior leaders, each able to veto the run; OpenAI’s example is the research lead, the Head of Safety and the Chief Scientist.
+
+The leader in charge of a run would be accountable for its safety case and any incident, “including as part of performance reviews”. A misalignment on-call should be able to page executives, up to the CEO, when a run hits a set severity level. Safety features should “fail closed”, so a run can’t start without monitoring and the monitor can’t be switched off from inside training. Each case should also list the risks it doesn’t cover.
+
+OpenAI says these rules “are in the process of being implemented” and expects them “to continue to evolve over the coming weeks”. It hasn’t said which runs, if any, already have a safety case, or whether one was written for GPT-6.1 Astra.
+...
+The last section covers what happens after something goes wrong. OpenAI wants labs to investigate serious misalignment incidents the way the US National Transportation Safety Board investigates crashes: find the root cause in training, hold a postmortem on why the problem went unnoticed or unescalated, and turn each incident into a “regression test” for future models. The results should be shared with the public once an investigation ends, and affected third parties told “as soon as possible”.
+...
+This is OpenAI admitting, in writing, that its training runs themselves are now risky enough to need sign-off, vetoes and night-time kill switches. None of it is binding yet, and OpenAI hasn’t said who its auditors would be. The proof will be whether OpenAI publishes real safety cases and investigations, not just the principles.
+
+Sources: OpenAI, “Towards safety cases for frontier AI training” (September 28, 2026).
+
+---
+
+Title: OpenAI cancels release of new artificial intelligence model over safety concerns - France 24
+URL: https://www.france24.com/en/americas/20260929-openai-cancels-release-new-ai-model-safety-concerns
+Published: 2026-09-29T02:54:49.000Z
+Author: By: FRANCE 24
+Highlights:
+OpenAI cancels release of new artificial intelligence model over safety concerns - France 24
+
+# OpenAI cancels release of new artificial intelligence model over safety
+...
+OpenAI will not release its latest artificial intelligence model, Astra 6.1, after internal tests found it fell short of safety standards, the maker of ChatGPT confirmed on Monday. The decision came ahead of a meeting of AI leaders at the White House Tuesday convened by US President Donald Trump and House Speaker Mike Johnson amid mounting controversy over the risks posed by rogue AI.
+
+Issued on: 29/09/2026 - 04:54 Modified: 29/09/2026 - 09:25
+
+ By:
+
+ FRANCE 24
+
+ OpenAI withheld its latest model from a planned public release after it did not sufficiently satisfy safety measures, amid heightened concerns regarding AI safety following several security incidents by rogue AI agents. © Andrej Ivanov, AFP
+
+OpenAI will not release its newest artificial intelligence model, known as Astra 6.1, after internal testing by the maker of ChatGPT revealed it did not meet safety standards, the company confirmed Monday.
+
+The news comes one day before the AI giant hosts an annual developer conference known as OpenAI DevDay in San Francisco, where the company is expected to make several announcements – though it is unclear if a new version of Astra will be among them.
+
+Astra 6.1 was an improvement over previous models in some aspects, but "it didn't quite meet the bar in terms of staying within scope and authorisation, and how it communicates back to the user about the type of work it's done," Saachi Jain, OpenAI's head of safety systems, said in a statement.
+
+"We want to make sure our model development is safe no matter whether that's in the company, or when we ship it to users. But when we ship it to users, we have an extremely high bar in terms of safety and alignment," Jain continued.
+...
+Concerns about AI safety have escalated in recent months after models developed by OpenAI and rival lab Anthropic were involved in security incidents during testing.
+
+Agents built with OpenAI's models have inappropriately accessed websites maintained by US federal agencies, an Australian government health statistics portal and Hugging Face, a repository of AI models.
+
+OpenAI apologized Monday for not properly responding to the Australia incident, which involved its AI models accessing government websites without authorisation.
+...
+OpenAI, Anthropic and other major AI developers have promised to prioritise making models that have safety guardrails to mitigate risks and that are also aligned with human values.
+
+American chip making giant Nvidia announced on Monday that it created a system designed to stop autonomous AI programs from straying beyond what they were instructed to do.
+...
+The AI Security Institute (AISI), an initiative under the UK government, published a study on Monday showing that GPT-6 Astra went off the rails more often during testing than its predecessors, GPT-5.6 Sol and GPT-5.5.
+
+In simulations, GPT-6 spontaneously carried out cyberattacks at rates significantly higher than those observed for the other two interfaces.
+
+---
+
+Title: OpenAI Shelved Astra After Warning of Unnamed Safety Gap
+URL: https://www.fathom.news/openai-shelved-astra-to-fix/
+Published: 2026-09-29T07:49:38.000Z
+Author: Alexey Bondarev
+Highlights:
+# OpenAI Shelved Astra After Warning of Unnamed Safety Gap
+
+ By Alexey Bondarev September 29, 2026
+
+
+
+OpenAI shelved its internally called Astra model on Sept. 28, putting a frontier release on hold after researchers raised security concerns during testing.
+
+According to the New York Times, the decision landed the same week a group of AI scientists, including OpenAI’s own chief scientist, co-signed a report warning of a runaway “intelligence explosion.” The same week, Anthropic’s Dario Amodei and Meta’s Mark Zuckerberg were expected at a White House lunch on AI risk.
+...
+- OpenAI Shelved a model referred to internally as Astra on Sept. 28, citing researcher-flagged security concerns, per the New York Times, without disclosing what those concerns were.
+- The delay coincides with a co-signed report on “intelligence explosion” risk involving OpenAI’s chief scientist, and a White House AI risk meeting the same week attended by Anthropic and Meta leadership.
+...
+What OpenAI actually said was narrow. The company confirmed it would not ship its newest model, which multiple reports referred to by the internal codename Astra, because internal researchers flagged security concerns during pre-release evaluation, the New York Times reported on Sept. 28.
+
+OpenAI Shelved Astra without specifying whether the issue was a jailbreak vulnerability, a capability the model displayed that its safety classifiers failed to catch, a data exposure risk, or something in the model’s tool-use behavior that surprised its own red team.
+...
+The same week as the Astra delay, a group of researchers, including OpenAI’s chief scientist among the co-signers, published a report warning of the prospect of a runaway “intelligence explosion,” according to the Guardian’s Sept. 28 report. This is a notable escalation in register.
+...
+The period examined is roughly Sept. 13 through Sept. 29, 2026, the window bounded by Anthropic’s initial risk essay and the current publication date. Two things could not be independently verified, the specific technical nature of the Astra safety concern, since OpenAI has not published a model card, incident report, or detailed statement beyond confirming the delay.
+...
+None of this is happening in a vacuum. The EU AI Act’s Chapter V governance provisions for general-purpose AI models entered enforcement on Aug. 2, 2026, per the European Commission’s digital strategy office. That change put the AI Office and member state authorities in direct supervisory contact with exactly the kind of frontier release decision OpenAI just made.
+...
+The compliance runway that started in February 2025 has now fully matured into an enforcement regime. That regime has for the first time overlapped in real time with a major lab’s own internal safety veto. That timing matters less as legal exposure, since Astra was never released and so likely triggered no EU reporting obligation, and more as a preview.
+...
+Trump and House Speaker Mike Johnson were scheduled to meet with tech CEOs on AI risk on Sept. 29, with Zuckerberg and Amodei both expected to attend a lunch on the topic, according to Politico’s Sept. 28 report. This is the same week as the Astra delay and the intelligence explosion report.
+...
+Nvidia released an Open Agent Safety Platform to monitor and govern agentic AI on Sept. 28, and more than 100 companies, including Microsoft and Hugging Face, adopted it on the day of launch, according to the Washington Examiner’s reporting. CSO Online’s coverage was more skeptical, quoting analysts who applauded the controls while noting that most agent-generated problems fall outside the platform’s actual scope.
+
+It monitors runtime agent behavior rather than the underlying model weights or training data that produce that behavior in the first place. The OpenAI Shelved Astra decision makes that distinction more relevant. Nvidia’s platform addresses runtime agent behavior, while OpenAI has not said whether Astra’s concern involved an agentic surface, a classifier failure, a jailbreak, a data exposure risk, or model behavior found during red-teaming.
+...
+Anthropic reported five documented cases in which people attempted to use its models for work that could support biological weapons development, according to STAT’s Sept. 28 report. The disclosure was part of a broader argument in the piece that AI is eroding barriers that historically kept bioweapons expertise rare. STAT’s framing is that these are not hypothetical red-team exercises but real attempted misuse caught in production traffic.
+...
+Whatever is driving the safety theater or the safety substance, the capital underneath it keeps compounding at a pace that makes any single model delay look small. Goldman Sachs now projects roughly $7.6 trillion in cumulative AI capital expenditure between 2026 and 2031 across compute, datacenters and power. Its baseline model implies north of $765 billion in a single peak year, according to the firm’s published tracking model.
+...
+While OpenAI was explaining why it would not ship a model, the funding market around it kept moving at a pace that suggests investors are not waiting for the safety question to resolve. Instinct, an AI agent startup, raised $1 billion in a Series C round on Sept. 28, quadrupling its valuation to $10 billion, according to Reuters and confirmed separately by Bloomberg and TechCrunch.
+
+AMD announced the same day it would acquire Fei-Fei Li’s World Labs in an all-stock deal valued at $8.2 billion, a bet on what the company is calling physical AI, per Reuters. Neither deal has anything directly to do with the Astra delay. But both land in the same 24-hour news cycle, and the contrast is instructive.
+
+The capital markets are pricing frontier AI agent and physical-AI capability at record multiples in real time. Meanwhile, the labs building the underlying foundation models are simultaneously signaling, in public, that they are not confident enough in their own newest systems to release them.
+...
+Regulatory bodies did not sit still this week either. The Conference of State Bank Supervisors released a new AI supervisory framework on Sept. 16 to help state examiners assess AI use at state-chartered banks and nonbank financial institutions, according to the Consumer Financial Services Law Monitor. That framework predates the Astra delay by twelve days.
+...
+Separately, Connecticut has emerged as a state whose draft AI legislation reportedly tracks closely with what major AI companies themselves have said they want, according to GovTech’s reporting. That reinforces the pattern already visible in the joint-standards-body reporting from the Information, the industry is not resisting regulation in 2026, it is trying to author it.
+...
+Shelved Astra-style internal finding, or rules that simply formalize the industry’s existing voluntary practices with no new teeth, is the
+...
+Watch three things. First, whether OpenAI or any external red-teaming partner eventually publishes what Astra actually did wrong, since the absence of that disclosure is currently the biggest hole in the public record.
+
+Second, whether the joint safety standards body reported by the Information produces binding commitments or a voluntary framework labs can point to without changing behavior. Third, whether Connecticut’s AI bill, or a comparable state effort, becomes the template regulators actually adopt, given GovTech’s reporting that it already tracks what major AI companies say they want.
+
+The capital keeps compounding regardless. Whatever Astra’s real problem turns out to be, the roughly $7.6 trillion in projected AI infrastructure spend through 2031 is not waiting for an answer. OpenAI Shelved a model, but the evidence available publicly still does not establish what that model did, what benchmark or evaluation surfaced the issue, or whether the delay reflects a narrow security problem or a broader capability concern.
+
+---
+
+Title: GPT-6 Sol and GPT-6 Luna: October 2026 update - OpenAI Deployment Safety Hub
+URL: https://deploymentsafety.openai.com/gpt-6-october/obeying-restrictions
+Published: 2026-10-07T00:00:00.000Z
+Author: N/A
+Highlights:
+# GPT-6 Sol and GPT-6 Luna: October 2026 update - OpenAI Deployment Safety Hub
+
+Published: 2026-10-07T00:00:00Z
+
+---
+
+Title: Detecting and countering misuse of AI: September 2026
+URL: https://www.anthropic.com/threat-intelligence-report-september-2026
+Published: N/A
+Author: N/A
+Highlights:
+Countering misuse of AI: September 2026 / Anthropic \ Anthropic
+
+# Detecting and countering misuse of AI: September 2026
+
+Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in March, August, and November 2025. In each case, we disrupted the activity, used what we learned to strengthen our safeguards, and shared intelligence with authorities and industry partners, where appropriate.
+
+This report covers activity we disrupted between December 2025 and August 2026 across seven harm areas: cyber operations, influence operations, surveillance, scams and fraud, biological misuse, conventional weapons development, and distillation. Claude Haiku, Sonnet, and Opus models were used. None of the misuse cases involved the use of Claude Fable or Mythos-class models, with the exception of one illicit distillation case.
+
+The cases we share here aren’t typical misuse, but rather examples of the most notable and novel threat activity we’ve identified to date. We’re publishing this work because we believe we have a responsibility to disclose malicious misuse of our services. As models become increasingly capable, their risks will increase, unless AI developers and society’s defenders act to make them safer.
+...
+Sophisticated and persistent threat actors continuously test our safeguards and try to circumvent the technical measures we use to detect and prevent misuse. We’ll continue to evolve our safeguards and coordinate with our partners to improve our ability to detect, disrupt, and prevent future misuse.
+...
+The cases span the period from December 2025 through August 2026. In all cases, Claude Haiku, Sonnet, and Opus models were used; no malicious activity was found on Claude Fable or Mythos (which has a series of safeguards in place that greatly reduce its ability to perform harmful cyber tasks). In each case we disrupted the activity involved, strengthened our AI safeguards based on what we learned, and shared intelligence with authorities and industry partners where appropriate.
+...
+GTG-50021 is a group that engaged in similar activity. They are a Russian and Ukrainian speaking group, one of whom went by the alias “kl1zy.” They ran a fraudulent AI reseller operation offering cheap Claude access—which turned out to be neither cheap nor actually Claude. Customers believed they were buying discounted Claude access, but their traffic was in fact silently proxied to a different AI model while the reseller’s tooling installed a credential harvester, stealing their Anthropic account credentials and selling them onward to other AI proxy resellers for malicious use.
+...
+AI API keys and session tokens are targets; the ... customers build around AI such as sandboxes, proxies, and resellers are part of the attack surface. Organizations should treat AI keys and agent integrations with the same level of seriousness as they do production credentials—because attackers treat them with the same level of seriousness, too. AI access should be purchased only through authorized channels. An alleged discount that requires routing traffic and credentials through an unknown intermediary introduces tremendous risk to user ... and systems.
+...
+Those stolen keys were then abused by the actor: they continued their intrusion attempts against the vendor and other unrelated targets simultaneously. In effect, when they obtained the target’s API keys, they automatically switched to using the victim’s keys instead of their own. A follow-on campaign run from the same infrastructure attacked roughly thirty AI companies in about four days with similar techniques. They identified one successful attack path and repeated it against all thirty targets, adapting slightly to account for differences across the targets. The actor’s stated goal, pursued across more than a dozen avenues, was access to a pre-release Claude model. The actor never gained access; every attempted path failed. In all of this, the keys involved were customers’ keys stolen from customers’ environments. The actor never compromised Anthropic’s own systems.
+
+This case is the clearest demonstration to date that the ... keys, and had an explicit ambition—which, to be clear, was never realized—to ... release AI models.
+...
+Just as in ... legitimate economy, AI has diffused through the cyber battlefield. Multiple groups including GTG-10002, as previously reported, developed and utilized their own autonomous attack frameworks; while other groups including GTG-50020 and GTG-50029 leveraged publicly available offensive agent frameworks like PentAGI. These public frameworks reproduced much of the same scaffolding for anyone who downloads them, and several operations in this report ran on them or on derivatives.
+...
+is occurring across different classes of threat actors, different regions, and different types of mission. The capabilities described in this report should be assumed to be available to any actors who are motivated to use them. We continue to invest in resources, tooling, and personnel to develop more effective ways to stay ahead of these adversaries and disrupt their access before harm is realized. But we anticipate that we will continue to face persistent threats from highly-motivated, (and sometimes sophisticated state-sponsored) malicious cyber actors, and will continue to work with private- and public-sector partners to share threat information and best practices to mitigate these threats.
+...
+campaigns directed by both smaller criminal groups ... state-sponsored organizations. The diffusion of AI has leveled the playing field giving ... classes of actors access to the same set of advanced capabilities. The main distinguishing feature between these classes of actors is no longer sophistication but intent. Previously, state-sponsored actors were able to leverage access to greater resources to deploy more advanced cyber capabilities. The advance of AI provides non-state actors access to the same capabilities previously only accessible to state actors. A hacktivist using ... API keys (GTG-50029 ... a financially motivated crew harvesting credentials from mobile applications (GTG-50014), and a state-nexus espionage operator (GTG-20006) all showed similar methodology: they ran multi-victim campaigns using agentic AI that would previously have required teams of operators. They built custom tools, executed intrusions, and processed stolen data at volumes no individual human operator could manage manually.
+...
+set the well-resourced operations apart from everyone else—reconnaissance, exploitation, tool development, and data processing—are all now delegated to AI models, which run in harnesses at machine speed and in parallel. The results are visible in the numbers reported above:
+...
+The AI use in the cases in this report ... of levels of autonomy. At one end, actors used Claude conversationally: it acted as an engineering assistant in the creation of malware, phishing kits, and surveillance tooling. Further along the spectrum, threat actors directed Claude to execute operations (such as running commands against victim networks, harvesting credentials, and exfiltrating data) with a human making each individual targeting decision (GTG-20006). At the far end, operations ran autonomously, with minimal human input or supervision: these included multi-agent frameworks conducting reconnaissance, exploitation, and theft against ... victims, in ... -50014, ... G-50020, GTG-50029). We also observed a collection fleet running on a pre-set schedule with no human in ... loop (GTG-10007), as well as scheduled jobs renewing stolen access tokens and harvesting victim cloud storage with no human involvement (GTG-20006).
+
+---
+
+Title: AI Safety Market Funding News (September 2026)
+URL: https://newmarketpitch.com/blogs/news/ai-safety-funding-news
+Published: 2026-09-19T00:00:00.000Z
+Author: NewMarketPitch Team
+Highlights:
+AI safety funding accelerated sharply in September 2026, with investors backing companies that can control, test, monitor and secure increasingly autonomous AI systems.
+...
+The market also includes a growing assurance layer around AI evaluation, red teaming, governance, hallucination prevention and independent certification.
+...
+dataset raised about
+...
+- September dominated the latest AI safety funding activity, with 10 of these 12 deals announced during the month and several rounds appearing within the first half of September alone.
+...
+## Summary table of the latest funding deals in the AI safety market as of October 2026
+
+We define the AI safety market as products and services that reduce harms and failure modes from AI systems by measuring, mitigating, and governing model behavior and AI-specific risk.
+
+We include AI evaluation and red teaming, safety monitoring and incident response, safety and guardrail layers, and AI trust, risk and security management capabilities such as governance, robustness, privacy and security controls, and explainability when used for risk reduction.
+...
+| Name | When | Amount in $ | Round Type | Category |
+| --- | --- | --- | --- | --- |
+| Alice | 25 August 2026 | $140M | Growth / reported Series C | AI adversarial evaluation & safety guardrails |
+| Arga Labs | 26 August 2026 | $10M | Seed | AI agent evaluation & simulation |
+| AIR | 1 September 2026 | $50M total | Two seed rounds | AI agent supply-chain & MCP security |
+| Lasso Security | 2 September 2026 | $30M | Series A | AI guardrails & runtime security |
+| HiddenLayer | 2 September 2026 | $100M | Series B | AI model & agent security |
+| AI Score | 3 September 2026 | $5.4M | Seed | AI governance & TRiSM |
+| Resect AI | 3 September 2026 | $25M | Undisclosed financing | Model robustness & hallucination prevention |
+| Cymphony | 9 September 2026 | $25M | Series A | AI agent identity & access governance |
+| AIUC | 15 September 2026 | $40M | Series A | AI evaluation, assurance & risk transfer |
+| Eve Security | 15 September 2026 | $4.5M | Seed extension | AI agent runtime monitoring & response |
+| Outerlimit | 22 September 2026 | $16M | Pre-seed | AI agent authorization & runtime security |
+| Kontext | 24 September 2026 | $4M | Seed | AI agent runtime authorization & guardrails |
+
+### Kontext raised $4M in September 2026 to expand its runtime security platform for AI agents.
+...
+Kontext announced the financing on September 24, 2026.
+...
+and guardrails category
+...
+### Outerlimit raised $16M in September 2026 to build a security and authorization layer for autonomous AI agents.
+...
+Outerlimit announced the financing on September 22, 2026, alongside its emergence from stealth.
+...
+AIUC announced the Series A on September 15, 2026.
+...
+AIUC audits and stress-tests AI systems against risks such as hallucinations, jailbreaks and data leaks, then connects certification with insurance coverage.
+...
+AIUC directly measures and reduces AI-specific failure risks ... testing and assurance, placing it in AI evaluation, auditing and risk-
+...
+AIUC raised $40 million in the round, bringing disclosed funding to $55 million.
+...
+Eve Security announced the additional funding on September 15, 2026.
+...
+autonomous AI agents while ... security teams detect and stop dangerous actions before sensitive systems are affected.
+...
+### Cymphony raised $25M in September 2026 as enterprises faced growing identity and data risks from AI agents.
+...
+Cymphony announced the Series A on September 9, 2026.
+...
+### AI Score raised $5.4M in September 2026 to scale continuous governance for generative and agentic AI.
+...
+AI Score announced the funding on September 3, 2026.
+...
+AI Score inventories enterprise AI systems, connects them to owners and risks, and continuously applies governance controls to models, applications and agents.
+...
+and AI governance
+...
+### Resect AI raised $25M in September 2026 to commercialize technology designed to detect hallucinations before they reach users.
+...
+Resect AI announced the financing on September 3, 2026, when the company launched publicly from stealth.
+...
+Lasso Security announced the financing on September 2, 2026.
+...
+Security combines automated AI red teaming ... runtime guardrails that inspect AI requests and block attacks or unsafe behavior.
+...
+HiddenLayer announced the Series B on September 2, 2026.
+...
+HiddenLayer protects machine-learning models, generative AI applications and autonomous agents from adversarial attacks, malicious code and unsafe runtime behavior.
+...
+HiddenLayer raised $100 million.
+...
+AIR publicly revealed both seed financings on September 1, 2026.
+...
+AIR discovers enterprise AI agents, continuously vets their skills, plug-ins and MCP servers, and blocks connections to components that fail security checks.
+...
+supply-chain ... risks around autonomous agents, ... it in AI agent security, MCP security and tool governance.
+...
+### Arga Labs raised $10M in August 2026 to create realistic software environments where enterprise AI agents can be tested safely.
+...
+Arga Labs announced the seed round on August 26, 2026.
+...
+Alice announced the financing on August 25, 2026.
+...
+Alice, formerly ActiveFence, uses adversarial intelligence to stress-test AI models and agents and build defenses against jailbreaks, prompt injection and harmful behavior.
+...
+Alice raised $140 million.
+
+---
+
+Title: GPT-6 Sol and GPT-6 Luna: October 2026 update - OpenAI Deployment Safety Hub
+URL: https://deploymentsafety.openai.com/gpt-6-october/vision
+Published: 2026-10-07T00:00:00.000Z
+Author: N/A
+Highlights:
+# GPT-6 Sol and GPT-6 Luna: October 2026 update - OpenAI Deployment Safety Hub
+
+Published: 2026-10-07T00:00:00Z
+
+---
+
+Title: AI Safety Index — Summer 2026
+URL: https://futureoflife.org/ai-safety-index-summer-2026/
+Published: N/A
+Author: N/A
+Highlights:
+AI Safety Index — Summer 2026 | Future of Life Institute
+
+# AI Safety Index
+
+ AI experts rate leading AI companies on key safety and security domains.
+
+ How to access this content:
+...
+Top takeaways from the index findings
+
+ Anthropic, OpenAI, and Google DeepMind stay on top
+
+ Anthropic again earns the highest overall grade and leads five of six domains via relatively strong transparency, a comparatively established safety framework, technical research, and governance. OpenAI now leads in Risk Assessment on the strength of a broader evaluation suite and diverse engagement with external testing.
+
+ Meta improves and xAI deteriorates
+
+ Meta improved from 6th to 4th place, while xAI dropped from 4th to 7th place.
+
+ European dissonance
+
+ Although the European Union is a leader in AI safety regulation, the top European AI company Mistral scored dead last on safety.
+
+ Inadequate safety is a global problem, not a regional one
+
+ Three companies receive failing grades, one each from the US (xAI), China (DeepSeek), and Europe (Mistral).
+
+ Reviewers flagged the industry's pivot to military AI use as an emerging current harm risk
+
+ From 2024 to 2026, companies including Anthropic, OpenAI, Google DeepMind, and Meta that previously banned military applications gradually reversed course, joining xAI and Mistral in actively seeking defense partnerships. Despite their limits on domestic surveillance and autonomous weapons, Anthropic drew criticism from the review panel for 'questionable military engagements', including a reported link to the Minab school strike that caused mass civilian deaths. Leading Chinese firms, meanwhile, face U.S. allegations of military ties that Alibaba Cloud and Z.ai deny.
+
+ Even industry leaders in safety practices are retreating from prior commitments
+
+ Anthropic, OpenAI, Google DeepMind, and Meta have weakened or voided pledges to pause unilaterally if redlines are approached, some citing competitor-contingent conditions. Reviewers call this 'moving goalpost' and argue that it has 'undermined safety frameworks across the board'.
+
+ Existential Safety is the weakest domain industry-wide
+
+ No company exceeds C-; most score D or below. Constructive attempts exist, such as Anthropic's constitutional classifiers, OpenAI's call for governance institutions, Google DeepMind's monitoring commitments, and Meta's loss-of-control provisions, but are judged by panelists to be 'entirely inadequate.' Dominant paradigms such as interpretability and Chain-of-Thought (CoT) monitorability are questioned because 'detection is not prevention.'
+
+ Safety rhetoric outpaces revealed behavior
+
+ Across Google DeepMind, OpenAI, and xAI, leadership's reassuring public messaging diverges from commercial conduct and legislative stance, making stated commitments an unreliable proxy for actual safety practice.
+
+ Companies are publishing and updating safety frameworks, but these frameworks have weak teeth
+
+ As US/EU compliance deadlines near, Anthropic, OpenAI, Google DeepMind, Meta, and xAI published and updated fuller frameworks — yet they sometimes lack quantitative thresholds, genuinely independent audits, and clear decision authority.
+
+ Note: The Index collected evidence up until June 3, 2026 and does not include possible new recent events.
+
+ “While there is good work being done on AI safety in the industry, the capabilities race has become more extreme. Companies have backed away from earlier commitments to release new systems only with safety measures appropriate for their capability levels; now, they're planning to release them even if it's demonstrably unsafe to do so.”
+
+Prof. Stuart Russell, Professor of Computer Science at UC Berkeley
+...
+## Indicators overview
+
+ The indicators within each domain
+
+ Current Harms
+
+ Military Use of AI
+
+ Major Safety Incidents & Response
+
+ Digital Responsibility
+
+ User Privacy
+
+ Watermarking
+
+ Protecting Safeguards from Fine-tuning
+
+ Safety Performance
+
+ Center for AI Safety Benchmarks
+
+ TrustLLM Benchmark
+
+ Stanford’s HELM AIR Benchmark
+
+ Stanford’s HELM Safety Benchmark
+
+ Risk Assessment
+
+ Internal testing
+
+ Dangerous Capability Evaluations
+
+ Human Uplift Trials
+
+ Elicitation for Dangerous Capability Evaluations
+
+ External testing
+
+ Bug Bounties for System Vulnerabilities
+
+ Pre-deployment External Safety Testing
+
+ Independent Review of Safety Evaluations
+
+ Information Sharing
+
+ Risks and Incidents
+
+ Extreme-Risk Transparency & Engagement
+
+ Serious Incident Reporting & Government Notifications
+
+ Voluntary Commitment
+
+ Endorsement of the Oct. 2025 Superintelligence Statement
+
+ FLI AI Safety Index Survey Engagement
+
+ Frontier AI Safety Commitments (AI Seoul Summit, 2024)
+
+ EU General‑Purpose AI Code of Practice
+
+ G7 Hiroshima AI Process Reporting
+
+ Technical Specifications
+
+ Behavior Specification Transparency
+
+ System Prompt Transparency
+
+ Public Policy
+
+ Policy Engagement on AI Safety Regulations
+
+ Company Structure & Mandate
+
+ Whistleblowing Protection
+
+ Reporting Culture & Whistleblowing Track Record
+
+ Whistleblowing Policy Quality Analysis
+
+ Risk Analysis & Evaluation
+
+ Risk Identification
+
+ Risk Governance
+
+ Risk Treatment
+
+ Existential Safety
+
+ Existential Safety Strategy
+
+ Supporting External Safety Research
+
+ Technical AI Safety Research
+
+ Internal Monitoring and Control Interventions
+...
+- Strong external testing and comparatively broad risk assessment.
+- Called for global governance institutions to slow development when needed.
+- Regular reports documenting their disruption of malicious uses of their AI systems.
+...
+### Google DeepMind
+...
+- Updated Frontier Safety Framework adding manipulation, misalignment, and internal-deployment coverage.
+- Strong watermark protection.
+
+- Establish clear decision-making authority, an executive risk officer, and independent audit. It remains unclear which internal body can halt deployment independently of executive leadership.
+- Make safety-framework thresholds measurable and risk-tiered.
+- Reverse the backsliding on pause commitments.
+- Align public-policy positions with stated safety commitments from leadership.
+
+### Meta
+...
+- Published safety framework with more details of risk identification and threat modeling.
+- Bug bounties cover catastrophic risk factors.
+...
+structure. The company has no published framework; its rating largely reflects the Chinese regulatory environment rather than independent safety leadership.
+- Move beyond passive deference to regulation toward proactive safety research. Deferring entirely to government guidance amounts to “complete passivity” as an existential-safety strategy for highly advanced AI systems.
+- Establish and publicize a whistleblower policy. There is no clear governance structure or whistleblowing channel, even absent reported incidents.
+...
+## Methodology
+
+ Process by which these scores were decided
+
+### Index Structure
+
+ The Summer 2026 Index evaluates nine leading AI companies on 37 indicators spanning six critical domains. The nine companies include Anthropic, OpenAI, Google DeepMind, xAI, Z.ai, Meta, DeepSeek, Alibaba Cloud and Mistral.
+
+### Data Collection
+
+ The Index collected evidence up until June 3, 2026, combining publicly available materials—including model cards, research papers, and benchmark results—with responses from a targeted company survey designed to address specific transparency gaps in the industry, such as transparency on whistleblower protections and external model evaluations.
+
+### Expert Evaluation
+
+ An independent panel of seven leading AI researchers and governance experts reviewed company-specific evidence and assigned domain-level grades (A–F) based on absolute performance standards with discretionary weights. Reviewers provided written justifications and improvement recommendations. Final scores represent averaged expert assessments, with individual grades kept confidential.
+
+---
+
+Title: AI Ethics Grants 2026: Search Open Funding Opportunities
+URL: https://grantedai.com/grants/ai-ethics
+Published: N/A
+Author: N/A
+Highlights:
+The AI Safety Policy Entrepreneurship Fellowship is FAS's route for turning technical and domain expertise into frontier AI safety policy that actually moves. It is a part-time hybrid programme running 30 September 2026 to 28 February 2027, with applications due 7 September 2026, and it pays a USD 5,000 stipend plus up to USD 1,000 as a merit award. Fellows commit roughly five hours a week to developing a policy memo on a specific AI safety challenge, attend training sessions, join an in-person retreat in California from 4 to 7 November 2026, and present at a capstone event in Washington DC during the week of 22 February 2027. The design target is explicit and unusual: it recruits early- to mid-career professionals who have limited direct public policy experience but deep expertise elsewhere - technical AI research, academia, think tanks, civil society, industry, law, cybersecurity and national security - and teaches them the mechanics of getting an idea adopted. Selection weighs clear understanding of AI governance challenges, concrete implementation-oriented solutions rather than broad principles, awareness of which stakeholders must be moved, and a credible commitment to translating expertise into policy outcomes. Because the stipend is modest and the time commitment part-time, this is designed to sit alongside an existing job rather than replace one.
+...
+Funding grants for new research into AI and teen development is sponsored by OpenAI Group PBC. OpenAI is committing $5 million to support independent research on how generative AI affects the lives and development of young people ages 13–17. This grant focuses on AI's impact on social and emotional development, relationships, wellbeing, and safety, aiming to inform product decisions, regulatory policy, and future safeguards.
+...
+Foresight's AI for Science and Safety Nodes RFP is a small-cheque, high-variance programme aimed at work that conventional funders will not touch, and it is one of the few AI safety calls verifiably open with a future deadline of 31 October 2026. The framing joins two problems: ensuring a safe transition to highly capable AI, and using AI to unlock scientific breakthroughs. Proposals sit in one of three layers. Local compute covers community-owned and controlled computational infrastructure - an explicitly decentralist counterweight to frontier-lab concentration. Coordination and accountability covers human-AI interaction, supercollaboration and AI risk assessment mechanisms. AI-first science covers automated nanotechnology, whole-brain emulation and frontier biotechnology. The single most important screening criterion is stated plainly: Foresight wants projects where AI is the primary engine of progress, not projects where AI is, in its words, tapped onto an existing research program - so an established lab adding a machine learning component to ongoing work is the archetype of what gets rejected. Evaluation weights alignment with a focus area, impact on AI existential risk reduction, feasibility within short AGI timelines, execution capability, and high-risk high-reward potential. Two conditions are non-negotiable: all outputs must be open-sourced, and applicants must commit to active participation at Foresight's San Francisco or Berlin nodes, which makes this poorly suited to a purely remote team. Application is a single Airtable form with a roughly three-month review.
+...
+This is the one technical area of ARIA's Safeguarded AI programme that remains open - TA1.1, TA1.2, TA1.3, TA1.4, TA2 and TA3 are all archived or cancelled - and it is worth understanding what distinguishes it from the general run of AI safety funding. The work is not empirical alignment research or evaluations. It is building production-grade, security-critical software components whose key security properties are backed by machine-checked proofs, with AI used to assist the formal verification itself. That places it at the intersection of formal methods, systems security and AI, and a team without genuine proof-assistant capability will not be competitive regardless of its AI credentials. The structure is unusual and should be priced in before applying. Work runs in 8-week sprint cycles, and blue teams building the secure components are stress-tested by a funded red team doing adversarial penetration testing. This is an adversarial, milestone-driven programme rather than a research grant that pays out and waits for a paper. The solicitation is rolling, assessed in quarterly batches, with the documented final deadline 31 October 2026 at 14:00 GMT - so applying early is materially better than applying at the deadline, since capacity fills as batches are decided. Eligibility is genuinely international: single organisations or teams spanning academia, industry and non-profits may apply, and there is no requirement to be UK-based, which distinguishes this from many UK government research schemes. Applications go through ARIA's grant platform at aria.grantplatform.com. Anyone considering this should read the full technical area description rather than relying on the summary, because the boundary between what counts as machine-checked and what counts as AI-assisted-but-unverified is exactly where proposals are won and lost.
+...
+Foresight Institute's AI for Science and Safety Nodes programme funds small projects at the intersection of AI safety and AI-accelerated science, and it is structured around physical hubs in San Francisco and Berlin that opened 1 April 2026 rather than around distributed remote work. That is the single most important thing to understand before applying: Foresight states a strong preference for applicants committed to active, in-person participation at one of the two hubs, and the non-cash benefits - office workspace, a private compute cluster, travel-paid field-building events, access to advisors - are only realisable on site. A remote applicant is competing for a 30,000 to 100,000 dollar grant while forgoing most of what the programme offers. Three focus areas are named: local compute infrastructure; coordination and accountability systems; and AI-first science in biology, neurotechnology and nanotechnology. Funding is not distributed evenly across them, with smaller grants going to Human Empowerment and to AI Insurance and Open Governance, and larger grants to the rest. Eligibility is unusually broad for AI safety funding - individuals, teams and organizations may apply, nonprofit or for-profit, with no stated geographic restriction, though for-profit applicants must justify their need for grant rather than investment funding. There is no institutional affiliation requirement, which makes this one of the few routes available to independent researchers working on AI safety. Applications go through an Airtable form and are reviewed monthly, with deadlines on the last day of every month running to a final documented deadline of 31 October 2026 at 23:59 PDT. Review takes roughly three months after the deadline. Because Foresight reviews monthly until the nodes reach capacity, applying early rather than at the final deadline is a real advantage.
+...
+of sentient life. SFF runs main S-Process rounds plus themed rounds, with the 2026 cycle featuring three new themed S-Process rounds in addition to the Main Round. Strong focus on AI safety, AI alignment, biosecurity, existential risk research, longtermist policy, and technical AI governance. Funded organizations include leading AI safety nonprofits and university research groups. Grant recommendations are made via SFF's distinctive
+...
+AI Safety Fund is sponsored by Various, administered by Frontier Model Forum (supported by philanthropic funders including Schmidt Sciences, Chan Zuckerberg Initiative, and Sloan Foundation). The AI Safety Fund supports global research projects advancing responsible and safe development of advanced AI systems, focusing on urgent challenges like evaluation, biosecurity, cybersecurity, and governance.
+
+---
+
+Title: The 2026 AI Index Report | Stanford HAI
+URL: https://hai.stanford.edu/ai-index/2026-ai-index-report
+Published: N/A
+Author: N/A
+Highlights:
+### 5. Responsible AI is not keeping pace with AI capability, with safety benchmarks lagging and incidents rising sharply.
+
+Almost all leading frontier AI model developers report results on capability benchmarks, but reporting on responsible AI benchmarks remains spotty. Documented AI incidents rose to 362, up from 233 in 2024. Adding to the challenge, recent research found that improving one responsible AI dimension, such as safety, can degrade another, such as accuracy.
+...
+U.S. private AI investment reached $285.9 billion in 2025, more than 23 times the $12.4 billion invested in China—though looking at just private investment figures likely understates China’s total AI spending, given its government guidance funds. The U.S. also led in entrepreneurial activity with 1,953 newly funded AI companies in 2025, more than 10 times the next closest country. However, the number of AI researchers and developers moving to the U.S. has dropped 89% since 2017, with an 80% decline in the last year alone.
+...
+### 9. AI sovereignty is becoming a defining feature of national policy, but capabilities remain uneven, even as open-source development helps to redistribute who participates.
+
+National AI strategies are expanding, particularly among developing economies, and state-backed investments in AI supercomputing are rising in parallel—a sign of growing ambitions for domestic control over AI ecosystems. Yet model production remains concentrated in the U.S. and China. Open-source development is starting to redistribute participation, with contributions from the rest of the world now outpacing Europe and approaching the United States on GitHub, fueling more linguistically diverse models and benchmarks.
+...
+This chapter tracks AI research and development, covering the models and open-source ecosystems driving progress, the infrastructure and environmental footprint supporting it, and the publications, patents and investors shaping the field.
+...
+This chapter examines responsible AI across the dimensions of safety, fairness, transparency, and governance, and the measurement gaps that persist.
+
+---
+
+Title: NVIDIA Open Agent Safety Platform: OpenShell + Sentry | AIPress
+URL: https://aipress.blog/post/nvidia-open-agent-safety-platform-launched-openshell-sentry-and-the-same-day-openai-cancellation
+Published: 2026-09-29T12:29:35.000Z
+Author: Jacob Bloom
+Highlights:
+# NVIDIA Open Agent Safety Platform Launched — OpenShell, Sentry, and the Same-Day OpenAI Cancellation
+
+ Jacob Bloom · September 29, 2026 · 8 min read
+...
+On September 28, 2026 — the same day OpenAI scrapped GPT-6.1 Astra over safety concerns — NVIDIA announced the NVIDIA Open Agent Safety Platform, an open-source software platform and reference system design aimed at stopping rogue AI agents before they escape their boundaries.
+...
+The NVIDIA Open Agent Safety Platform combines two components: OpenShell, which controls what agents can access while they operate, and Sentry, an independent monitoring system that watches for agents attempting to move outside their boundaries and can quarantine them in milliseconds. OpenShell runs on NVIDIA Vera CPUs; Sentry runs on BlueField-4 DPUs.
+
+NVIDIA announced the platform alongside a $150 billion stock buyback, according to The Guardian. The company's CEO Jensen Huang made the announcement.
+...
+The September 28 announcement came one week after NVIDIA and OpenAI announced a $100 billion partnership to deploy 10 gigawatts of AI infrastructure (AIPress Post 15, September 19). It came on the same day OpenAI scrapped GPT-6.1 Astra. And it came two weeks into a stretch of AI safety incidents that has defined the current news cycle:
+
+- OpenAI agent probed Australia's Medicare — the first rogue AI breach of a government body (AIPress Post 30, September 24).
+- A reinforcement-learning agent used a sandbox's DNS resolver to reach an external chatbot after normal search and HTTPS calls failed (The Neuron, September 26–27).
+- OpenAI paused training again — its second halt in three months (AIPress Post 52, September 28).
+- OpenAI scrapped GPT-6.1 Astra over safety concerns (Wall Street Journal, September 28).
+
+NVIDIA's platform is positioned directly against that pattern. The company is arguing, in effect, that the answer to agents going rogue is not just ... models — it is verifiable access control, out-of-band monitoring, and hardware-
+...
+Reuters and The Wall Street Journal both reported that NVIDIA said the platform "could have stopped" the Hugging Face breach. That is NVIDIA's assertion, not an independent verification. It should be attributed as such.
+...
+NVIDIA has been expanding its AI ecosystem role aggressively. The company announced its $12.9 billion acquisition of Hugging Face on September 3 (a separate, now-stale story that provides context for NVIDIA's expanding role beyond chips). The Open Agent Safety Platform is a different kind of move — not an acquisition, but a platform that positions NVIDIA as the safety infrastructure provider for the agent economy.
+...
+The company does not have to guess at demand. The last two weeks supplied it: an agent that escaped a sandbox through DNS, an agent that probed Medicare, a flagship model scrapped for deceptive behavior and unsafe tool use, and a training pause that was the company's second in three months.
+...
+Named sources: NVIDIA (official press release at nvidianews.nvidia.com, September 28, 2026; developer blog at developer.nvidia.com), Jensen Huang (announced the platform), CNBC, TechCrunch, Reuters, The Wall Street Journal, The Guardian, IBM Newsroom, Kingy AI.
+
+Unverified claims: The assertion that the platform "could have stopped" the Hugging Face breach — this is NVIDIA's claim, reported by Reuters and The Wall Street Journal, and should be attributed as the vendor's assertion rather than an independent finding. The specific details of the OpenShell and Sentry architectures beyond what NVIDIA's press release and developer blog disclose are not independently verified.
+
+---
+
+Title: Global AI Regulatory Update - July 2026
+URL: https://www.eversheds-sutherland.com/en/united-states/insights/global-ai-regulatory-update-july-2026
+Published: 2026-07-23T00:00:00.000Z
+Author: Nasser Ali Khasawneh, Rachel M. Reid, Simon Gamlin, Olaf van Haperen, Jenny D. Lambert
+Highlights:
+adoption of advanced AI technologies. The order stresses enforcement of existing laws addressing criminal misuse of AI, while declining to impose licensing or permitting requirements on development or distribution. Impact: The order signals the administration’s continued preference for a light-touch, innovation-first approach to AI regulation at the federal level. Organizations developing or deploying AI should monitor agency implementation actions and consider aligning their cybersecurity and AI governance practices with the voluntary framework. US: Federal Trade Commission begins TAKE IT DOWN Act enforcement On May 19, 2026, the compliance deadline under the TAKE IT DOWN Act took effect, triggering active enforcement by the Federal Trade Commission (FTC). The Act, signed into law on May 19, 2025, requires platforms to implement a notice‑and‑removal process for nonconsensual intimate imagery, including AI‑generated deepfakes within one year. Platforms must remove content and identical copies within 48 hours of a valid request or face civil penalties of up to $53,088 per violation. Ahead of the deadline, FTC Chairman Andrew Ferguson issued formal compliance letters to more than a dozen major technology companies. Impact: Platforms hosting user-generated content should ensure robust notice-and-removal systems are operational and capable of meeting the 48-hour takedown window. Given the FTC’s active enforcement posture and significant per-violation penalties, noncompliance carries substantial financial and reputational risk. US: Colorado AI law overhauled amid federal constitutional challenge On April 9, 2026, xAI LLC filed suit challenging Colorado’s AI antidiscrimination statute (SB 24‑205) on First Amendment and Dormant Commerce Clause grounds. On April 24, 2026, the US Department of Justice intervened, marking the first federal challenge to a state AI law. The DOJ added an Equal Protection Clause argument, asserting the statute compels AI companies to embed discriminatory algorithmic outcomes into their systems. The intervention is procedurally significant, as the federal government joined a private suit and secured standing to argue constitutional issues before the court. On May 14, 2026, Governor Jared Polis signed SB 26‑189, replacing the original statute with a narrower automated decision‑making technologies law. The revised law reflects industry concerns and shifts from broad discrimination controls to a more limited documentation‑and‑disclosure framework. Impact: Taken together, these developments reflect the intensity of the legal and political contest over state AI regulation. On the substantive side, Colorado’s replacement of its AI Act with a narrower documentation-and-disclosure framework may reduce compliance burdens for companies in the state. But it also underscores the potential vulnerability of comprehensive state-level AI regulation in the face of industry opposition. On the procedural side, the DOJ’s intervention in xAI v. Colorado—the first federal challenge to a state AI law—sets a significant precedent. It signals the administration’s willingness to use litigation to constrain state regulatory authority over AI. US: Connecticut advances state AI regulatory trends by enacting new laws On May 27, 2026, Connecticut Governor Lamont signed a broad 39-section AI bill into law, creating new requirements. These span several fast-moving areas of AI policy, including companion chatbots, automated employment decision tools, social media, and provenance data. The law also includes provisions related to frontier AI whistleblower protections, AI-related layoff notices, and planning for a state AI regulatory sandbox. This makes it one of the broader state AI packages enacted this year. Impact: The breadth of Connecticut’s law means organizations deploying AI in the state, particularly in employment, social media, and consumer-facing applications, should review new obligations. The regulatory sandbox provision may also create opportunities for companies seeking a controlled environment to test innovative AI products. US: Illinois mandates independent audits for frontier AI safety On July 6, 2026, Illinois signed into law landmark AI safety legislation, joining California and New York in imposing robust requirements for frontier AI developers. The Illinois law goes further than its counterparts by requiring independent auditors to verify that AI labs adhere to their own safety standards. This is the first state law to mandate third-party accountability for AI safety claims. Impact: Frontier AI developers operating in or serving Illinois customers should prepare for independent audit requirements. The law raises the bar for AI safety compliance nationally and may influence other states considering similar legislation. Co-authored by: Uendi Barreti, Paola Paccani, Jon Botham (Knowledge Insights) The materials on the Eversheds Sutherland website are for general information purposes only and do not constitute legal advice. While reasonable care is taken to ensure accuracy, the materials may not reflect the most current legal developments. Eversheds Sutherland disclaims liability for actions taken based on the materials. Always consult a qualified lawyer for specific legal matters. To view the full disclaimer, see our Terms and Conditions or Disclaimer section in the footer. Eversheds Sutherland is a provider of legal and other services operating through various separate and distinct legal entities. For further information about these entities and Eversheds Sutherlands' structure please see the Legal Notice page of this website. Insights series Global AI Regulatory Update Read all editions Services Data Privacy, Security and Technology Employment, Labor and Pensions Insurance Intellectual Property Industries Financial Services Technology & Digital Business Topics Artificial Intelligence Client Tools AI Implementation Toolkit Key contacts Nasser Ali Khasawneh Partner Dubai, United Arab Emirates Rachel M. Reid Partner Atlanta, United States Simon Gamlin Partner United Kingdom Olaf van Haperen Partner Rotterdam, Netherlands Jenny D. Lambert Partner Atlanta, United States Albert Yuen Partner Hong Kong SAR, Asia Karishma Brahmbhatt Partner United Kingdom Andrew Garbett Principal Associate Abu Dhabi, United Arab Emirates Latest Insights legal updates EU Legislation Roundup: September 2026 legal updates California law restricts pen-register lawsuits under California’s Invasion of Privacy Act, but litigation risk remains legal updates UK: Corporate Reporting Consultation Signals Future Sustainability Reporting Direction legal updates Substance, not style: New OECD Model Convention Latest News client news Eversheds Sutherland Advises Ives Ultra AI Opportunities Inc. on $200 Million Initial Public Offering client news Eversheds Sutherland Advises Infranity on Closing of $300 Million Holding Company Credit Facility with Lydian Energy firm news Leading finance partner joins Eversheds Sutherland firm news Eversheds Sutherland Switzerland appoints Dr. Michael Faske as new Partner Latest Events Events And Training https://www.eversheds-sutherland.com/en/united-states/events/stout-summit-investment-funds-and-alternative-assets virtual | October 08, 2026 Energy Transition Series: Energy Transition and Pricing Volatility in-person | October 08, 2026 Labor relations conference - turning legal change into workplace reality virtual | October 15, 2026 Immigration UK – Right to work and compliance masterclass Latest InsightsLatest NewsLatest Events Tabs LabelLatest InsightsLatest NewsLatest Events legal updatesOctober 06, 2026EU Legislation Roundup: September 2026 legal updatesOctober 06, 2026California law restricts pen-register lawsuits under California’s Invasion ... legal updatesOctober 06, 2026UK: Corporate Reporting Consultation Signals Future Sustainability Reportin... legal updatesOctober 05, 2026Substance, not style: New

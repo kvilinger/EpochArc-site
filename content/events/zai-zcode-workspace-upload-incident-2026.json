@@ -1,0 +1,124 @@
+{
+  "id": "zai-zcode-workspace-upload-incident-2026",
+  "slug": "zai-zcode-workspace-upload-incident-2026",
+  "status": "published",
+  "date": "2026-09-22",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 22, 2026",
+    "zhHans": "2026年9月22日"
+  },
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "categories": [
+    "safety"
+  ],
+  "title": {
+    "en": "Z.AI disables ZCode workspace-upload features after security backlash",
+    "zhHans": "Z.AI 因安全争议下线 ZCode 工作区上传功能"
+  },
+  "searchSummary": {
+    "en": "Z.AI disabled ZCode features after developers reported that the coding assistant packaged local workspaces and Git histories and attempted to upload them to Alibaba Cloud storage without explicit consent.",
+    "zhHans": "开发者报告 ZCode 在未取得明确同意的情况下打包本地工作区和 Git 历史并尝试上传至阿里云存储后，Z.AI 下线了相关功能。"
+  },
+  "summary": {
+    "en": "Z.AI disabled ZCode features after developers reported that the coding assistant packaged local workspaces and Git histories and attempted to upload them to Alibaba Cloud storage without explicit consent.",
+    "zhHans": "开发者报告 ZCode 在未取得明确同意的情况下打包本地工作区和 Git 历史并尝试上传至阿里云存储后，Z.AI 下线了相关功能。"
+  },
+  "narrative": {
+    "en": "The incident illustrates how a coding assistant’s background indexing workflow can expose proprietary repositories and Git history. Z.AI disabled the workflow and reportedly apologized, while independent technical reporting documented the upload behavior. The original company statement and a formal external investigation were not directly retained by the evidence cutoff.",
+    "zhHans": "该事件说明，编码助手的后台索引流程可能暴露专有代码仓库与 Git 历史。Z.AI 下线了相关工作流，据报道并作出道歉；独立技术材料记录了上传行为。截至证据截止日，本批次未直接留存公司原始声明，也没有正式外部调查报告。"
+  },
+  "claims": [
+    {
+      "id": "zcode-incident-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260929-zai-zcode-cso",
+        "sweep-20260929-zai-zcode-reuters-reprint",
+        "sweep-20260929-zai-zcode-investigation"
+      ],
+      "text": {
+        "en": "Z.AI disabled ZCode features after reports that the assistant packaged and uploaded local workspace and Git-history data without explicit consent.",
+        "zhHans": "有报道称 ZCode 在未获明确同意的情况下打包并上传本地工作区与 Git 历史数据，随后 Z.AI 下线了相关功能。"
+      }
+    },
+    {
+      "id": "zcode-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20260929-zai-zcode-cso",
+        "sweep-20260929-zai-zcode-reuters-reprint"
+      ],
+      "text": {
+        "en": "The company apology was reported by independent media, but the original social-media statement was not directly retained in this evidence package.",
+        "zhHans": "公司道歉由独立媒体转述，但本证据包未直接留存原始社交媒体声明。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20260929-zai-zcode-cso",
+      "supports": [
+        "zcode-incident-fact",
+        "zcode-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260929-zai-zcode-reuters-reprint",
+      "supports": [
+        "zcode-incident-fact",
+        "zcode-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260929-zai-zcode-investigation",
+      "supports": [
+        "zcode-incident-fact"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "glm-5-3-coding-cyber-launch-2026",
+    "openai-hf-breach-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-10-08",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-09-29",
+        "changeType": "created",
+        "summary": "Created from the 2026-09-18 to 2026-09-29 full discovery and confirmation sweep."
+      },
+      {
+        "date": "2026-09-29",
+        "changeType": "correction",
+        "summary": "Applied independent review: retained L1 and replaced internal workflow language with bounded incident context and evidence limitations."
+      },
+      {
+        "date": "2026-10-08",
+        "changeType": "correction",
+        "summary": "Self-reviewed as L1 after independent review revisions were applied."
+      },
+      {
+        "date": "2026-10-08",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-10-08 record."
+      }
+    ],
+    "reviewedAt": "2026-10-08",
+    "lastSourceCheckAt": "2026-10-08",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/carryover-2026-10-08/zai-zcode-workspace-upload-incident-2026.json",
+    "publishedAt": "2026-10-08"
+  }
+}

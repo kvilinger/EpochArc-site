@@ -1,0 +1,142 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "cloudflare-clef-decision-models-2026",
+  "evidenceCutoff": "2026-10-08",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only for the retained L1 classification.",
+    "Discovery coverage is partial because X authentication and Brave retrieval were unavailable.",
+    "Vendor benchmarks are not treated as independent capability replication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese actor, action, date, stage, numeric claims and limitations align."
+  },
+  "evidence": [
+    {
+      "id": "clef-fact-1",
+      "sourceId": "sweep-20261008-clef-official",
+      "claimId": "clef-fact",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "originId": "cloudflare-clef-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we’re releasing two Cloudflare-trained decision models, Clef and Clef-flash",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/cloudflare-clef-official.md",
+      "sha256": "bf06349763b57d473c90a01609bdf633e37543340cbe58e44a19915754e678a0"
+    },
+    {
+      "id": "clef-fact-2",
+      "sourceId": "sweep-20261008-clef-gigazine",
+      "claimId": "clef-fact",
+      "url": "https://gigazine.net/gsc_news/en/20261005-clef-cloudflare-decision-model/",
+      "originId": "cloudflare-clef-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Cloudflare has released its decision-making model 'Clef' as an open model",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/cloudflare-clef-gigazine.md",
+      "sha256": "3a37cc079178a78ec7878aef39c46bcfc9e1c82a26e6af7299de41dcb095abb2"
+    },
+    {
+      "id": "clef-limitation-1",
+      "sourceId": "sweep-20261008-clef-official",
+      "claimId": "clef-limitation",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "originId": "cloudflare-clef-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Across the 43 eval benchmarks that we ran",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/cloudflare-clef-official.md",
+      "sha256": "bf06349763b57d473c90a01609bdf633e37543340cbe58e44a19915754e678a0"
+    },
+    {
+      "id": "clef-limitation-2",
+      "sourceId": "sweep-20261008-clef-gigazine",
+      "claimId": "clef-limitation",
+      "url": "https://gigazine.net/gsc_news/en/20261005-clef-cloudflare-decision-model/",
+      "originId": "cloudflare-clef-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "context",
+      "quote": "the creator of Jev is skeptical of the benchmark itself",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/cloudflare-clef-gigazine.md",
+      "sha256": "3a37cc079178a78ec7878aef39c46bcfc9e1c82a26e6af7299de41dcb095abb2"
+    }
+  ],
+  "runId": "latest-data-full-2026-10-08",
+  "candidateId": "oct8-cloudflare-clef-decision-models-2026",
+  "coreFactClaimIds": [
+    "clef-fact"
+  ],
+  "identity": {
+    "seriesId": "cloudflare-clef-decision-models",
+    "action": "Cloudflare releases Clef open decision models",
+    "stage": "available",
+    "dateBasis": "Retained primary and dated independent source",
+    "deduplicationReason": "Distinct action or stage from canonical comparison events.",
+    "comparedEventIds": [
+      "mcp-protocol-2024"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Category follows the core action."
+  },
+  "significance": {
+    "rationale": "Core fact is verified, but no full v2.4 L2 route is established.",
+    "whyNotHigher": "At least one mandatory L2 criterion remains unknown.",
+    "whyNotLower": "The action is a verified release, method demonstration, or government directive.",
+    "comparisonEventIds": [
+      "mcp-protocol-2024",
+      "holo4-computer-use-models-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "Downloadable model weights became available.",
+            "evidenceIds": [
+              "clef-fact-1",
+              "clef-fact-2"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "debated",
+    "reason": "Recent action with limited observed downstream evidence.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate factual dispute retained; limitations are explicit.",
+    "evidenceIds": []
+  },
+  "subjectDigest": "445296d941d4843708dce821494c5d197b43f5085e475102b0c2289e045babfc",
+  "inputsDigest": "0539defe9976ca28f56734b7b24e36145c25519dc26715f9c8a386ff264eab03",
+  "runDigest": "99f570cd453e5e6e954b67a24c686d96dc139170468fdab34ab7b7f7b9f95d95",
+  "priorReviewedSubjectDigest": "ea01c831095ce3bd3fcb055d43a3d3b6e0c1de179415e228501a4144da73f4c5"
+}

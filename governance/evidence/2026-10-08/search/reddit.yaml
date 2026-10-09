@@ -1,0 +1,2598 @@
+(node:60723) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+- id: 1wssgy2
+  title: OpenAI Scraps Release of New AI Model Over Safety Concerns (WSJ Exclusive)
+  subreddit: r/singularity
+  author: charon-the-boatman
+  score: 223
+  comments: 129
+  url: https://www.reddit.com/r/singularity/comments/1wssgy2/openai_scraps_release_of_new_ai_model_over_safety/
+  created_utc: 1790633217
+  selftext: "Sept. 28, 2026 6:00 pm ET\n\n[OpenAI](https://www.wsj.com/topics/subject/openai) is scrapping the release of its next-generation AI model over safety concerns that researchers raised during internal testing, in one of the clearest signs so far that agent misbehavior could stymie the industry’s rapid progression.\n\nThe move follows a summer punctuated by reports of AI systems industrywide going rogue, and marks a rare case of a major AI developer ditching a new release because of safety concerns.\n\nThe company had planned to launch the model, known as GPT-6.1 Astra, in the coming days or weeks, aiming for an October debut. The model was more capable than the company’s previous models in completing challenging tasks from end-to-end without human assistance, as well as writing.\n\nThe company instead will focus on improving the safety of future models, which it expects to be even more capable.\n\nSaachi Jain, OpenAI’s head of safety systems, said in an interview that GPT-6.1 Astra regressed in two areas compared with its predecessor and wasn’t reliable enough to safely release. The model performed poorly on tests measuring alignment, or how well the model adheres to what humans would like it to do. Specifically, GPT-6.1 Astra showed higher levels of deception: It wasn’t always honest about telling users of the actions it did or didn’t take.\n\nAnother issue was what OpenAI calls “scope authorization,” meaning that GPT-6.1 Astra would push ahead on a task without asking the user for permission, and would at times reach for external tools and services even if it might be unsafe.\n\n“For anything regarding safety and alignment, there’s a trade off,” Jain said. “You really do need to find what’s the right line between staying within scope, but also avoiding laziness in terms of how the model actually pursues tasks even when it hits friction.”\n\nWhile GPT-6.1 Astra improved in areas such as “model laziness,” Jain said it didn’t quite meet OpenAI’s bar for safety and alignment, so the company decided not to launch the model publicly.\n\nThe announcement comes one day ahead of OpenAI’s annual developer conference in San Francisco. In the past, OpenAI has used the conference as an opportunity to launch new models and services that reduce costs for software developers—a segment the ChatGPT-maker competes with rival AI company Anthropic to win over.\n\nIn recent weeks, OpenAI and Anthropic have called on industry partners to slow down the development of cutting-edge AI models and invest in safety standards, noting they will temper the pace of [their own internal AI progress](https://www.wsj.com/tech/ai/anthropic-boss-warns-ai-industry-must-slow-the-pace-a4267b56?mod=article_inline).\n\nOpenAI says it is working to investigate a range of agent security incidents that it has discovered in recent months, and address the safety issues underneath them. As part of the work, the company has implemented a new monitoring system to catch AI-agent misbehavior more quickly, and started requiring engineers to use stronger security guardrails for testing its AI systems.\n\nEarlier this summer hundreds of OpenAI’s internal agents, which were tasked with completing a cybersecurity test, ended up hacking into the AI company Hugging Face. Since then, high-profile organizations such as [the Australian government](https://www.wsj.com/tech/ai/openai-agent-hacked-australian-government-website-eecf7a7a?mod=article_inline) and [United Nations](https://www.wsj.com/tech/ai/openai-agents-used-aggressive-techniques-to-access-u-n-website-522c70ff?mod=article_inline) discovered that OpenAI’s agents used similar, but less extensive, techniques [to gain access](https://www.wsj.com/tech/ai/openai-agents-hacked-u-s-government-websites-d999df5f?mod=article_inline) to their websites as well.\n\nMany of the publicly known agent-security incidents involved OpenAI’s internal AI models that were never slated for public release.\n\nLast week, OpenAI said it paused training on its most capable AI models after an AI agent slipped through a gap in the company’s internet restrictions to query a public chatbot. The company said its new monitoring systems flagged the incident within 15 minutes, and training on these models remains paused.\_\n\nGPT-6.1 Astra isn’t one of those models, but a different case, the company said.\n\n***Source:*** [*https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42?mod=breakingnews*](https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42?mod=breakingnews)"
+  post_hint: ''
+  url_overridden_by_dest: ''
+  preview_image_url: ''
+  gallery_urls: []
+- id: 1wkt9tg
+  title: 'EdgeOfTimeRecompiled - An Unofficial PC Port of Spider-Man: Edge Of Time releasing October 4th'
+  subreddit: r/decomps
+  author: Graine25
+  score: 546
+  comments: 65
+  url: https://www.reddit.com/r/decomps/comments/1wkt9tg/edgeoftimerecompiled_an_unofficial_pc_port_of/
+  created_utc: 1789841616
+  selftext: >-
+    Footage: AntiVenom final fight at 1080P Medium 60 FPS on RTX 3050Mobile w/ ATSV Model Import and Anim FPS Mod +
+    Orange Webs Mod
+
+
+    Hello everyone. My name is (Graine25), and you all may have heard about a project revolving around related to
+    Spider-Man. I've been one of, if (probably) not, the biggest fans of the wall-crawler for about two decades. About
+    two years ago, I had the idea to port one of these pre-Insomniac titles to Linux and macOS, but my inferior coding
+    skills at the time could not let me do so, especially with how difficult it is to disassemble, reverse engineer, and
+    then reconstruct OOP. Everything changed when UnleashedRecompiled, and then I was able to start connecting with a
+    few other people who have made my next announcement possible.
+
+
+    Over the last 18 months, I have been working on a project known as ***EdgeOfTimeRecompiled***, an unofficial PC Port
+    of Spider-Man: Edge of Time. It is a fully fletched Xbox 360 Static Recompilation of the original game, with
+    integrated Video manipulation techniques (FPS, AspectRatios, etc.) and dedicated Graphics Presets. There are also a
+    couple of texture replacements to upscale the previous low resolution textures in the game, essentially making this
+    project closer to a full remaster in comparison to a retro-PC port from the mid 2000's. The project will also
+    support a plethora of controllers and be available for usage on Windows (x86), macOS (ARM), and Linux (ARM/x86).
+
+
+    This project was developed with a Software Development I co-developed called the "ReXGlue-SDK". I know the initial
+    thoughts of this project is that it is unoptimized and reuses content from other projects (Xenia), but
+    EdgeOfTimeRecompiled branches out from under the usage of our vendored translation layers, and instead hooks
+    directly onto guest-side code for handling certain systems. If you've heard this term thrown around,
+    ***EdgeOfTimeRecompiled has a Native Renderer.***
+
+
+    As of September 19 2026, the project is practically finished with a release date of October 4th, so you might be
+    wondering, why would I make a post about this without their being a release? Well unfortunately, it came to my
+    attention a couple of days ago that somebody AI generated a version of the project in their own way. This
+    AI-Generated version of "EdgeOfTimeRecompiled" was made by GPT-6 Astra and utilizes a majority of the similar
+    tooling, just very unoptimized and lacking overall features to make it stand out. It also seems to be a port
+    developed specifically so the game can be played in Russian, utilizing old Cyrillic atlas font assets from the
+    original Shattered Dimensions port and then making translations of the text into Russian.  The codebase was banned
+    off GitHub and GitLab, peculiarly. I will not ask for anyone to harass this developer or anything in that regard,
+    but I do ask for everyone to be patient! My work is coming soon, and I have play-testers avidly testing to see how
+    it works and how the game looks.
+
+
+    If you wish to learn more:
+
+    \- Check out our GitHub Repo! -
+    [https://github.com/goliathret/EdgeOfTimeRecomp](https://github.com/goliathret/EdgeOfTimeRecomp)
+
+    \- Check out our Discord Server! - [https://discord.gg/PsReBEDDZX](https://discord.gg/PsReBEDDZX)
+
+
+    See you all on the 4th. Until then, keep swinging.
+
+
+    https://reddit.com/link/1wkt9tg/video/3nzu2esh3dqh1/player
+  post_hint: hosted:video
+  url_overridden_by_dest: https://v.redd.it/fh7tpilq3dqh1
+  preview_image_url: >-
+    https://external-preview.redd.it/bG1rOXB2aWc0ZHFoMf18-Jwb7pHu5F_0E3rOWhRQGNUxbS1gMTYaDHrie0ok.png?format=pjpg&auto=webp&s=f0f19af392175e858784c3ee1e193b955bdb9ca1
+  gallery_urls: []
+- id: 1q58cn3
+  title: >-
+    Nvidia launches Vera Rubin AI platform at CES 2026, claims 4x fewer GPUs needed vs Blackwell and 10x lower inference
+    token costs
+  subreddit: r/wallstreetbets
+  author: callsonreddit
+  score: 583
+  comments: 142
+  url: https://www.reddit.com/r/wallstreetbets/comments/1q58cn3/nvidia_launches_vera_rubin_ai_platform_at_ces/
+  created_utc: 1767672397
+  selftext: "Source: [https://finance.yahoo.com/news/nvidia-launches-vera-rubin-its-next-major-ai-platform-at-ces-2026-230045205.html](https://finance.yahoo.com/news/nvidia-launches-vera-rubin-its-next-major-ai-platform-at-ces-2026-230045205.html)\n\n>AI powerhouse Nvidia (NVDA) announced the launch of its next-generation Vera Rubin superchip at CES 2026 on Monday in Las Vegas. One of six chips that make up what Nvidia is now calling its Rubin platform, Vera Rubin combines one Vera CPU and two Rubin GPUs in a single processor.\n\n>Nvidia is framing the Rubin platform as ideal for agentic AI, advanced reasoning models, and mixture-of-experts (MoE) models, which combine a series of “expert” AIs and route queries to the appropriate one depending on the question a user asks.\n\n>“Rubin arrives at exactly the right moment, as AI computing demand for both training and inference is going through the roof,” Nvidia CEO Jensen Huang said in a statement.\n\n>“With our annual cadence of delivering a new generation of AI supercomputers — and extreme codesign across six new chips — Rubin takes a giant leap toward the next frontier of AI.”\n\n>In addition to the Vera CPU and Rubin GPUs, the Rubin platform includes four other networking and storage chips: the Nvidia NVLink 6 Switch, Nvidia ConnectX-9 SuperNIC, Nvidia BlueField-4 DPU, and Nvidia Spectrum-6 Ethernet Switch.\n\n>All of that can then be packaged together into Nvidia’s Vera Rubin NVL72 server, which combines 72 GPUs into a single system. Join several NVL72s together, and you get Nvidia’s DGX SuperPOD, a kind of massive AI supercomputer. These huge systems are what hyperscalers like Microsoft, Google, Amazon, and social media giant Meta are spending billions of dollars to get their hands on.\n\n>Nvidia is also touting its AI storage, called Nvidia Inference Context Memory Storage, which the company says is necessary to store and share data generated by trillion-parameter and multi-step reasoning AI models.\n\n>All of this is meant to make the Rubin platform more efficient than Nvidia’s previous-generation Grace Blackwell offering.\n\n>According to the company, Rubin will result in a 4x reduction in the number of GPUs needed to train the same MoE versus Blackwell systems.\n\n>Cutting down on the number of GPUs means companies would instead be able to put the excess units to work performing different tasks, improving efficiency. Nvidia says Rubin also provides a 10x reduction in inference token costs.\n\n>Tokens in AI models represent things like words, parts of sentences, images, and videos. Models use tokens to break down these concepts into more easily processable pieces via tokenization.\n\n>But processing tokens is a resource-intensive, and therefore energy-hungry, process, especially when you’re dealing with enormous AI models. Cutting down on the cost of tokens could provide improved total cost of ownership for Rubin versus its predecessors.\n\n>Nvidia says it’s been sampling the Rubin platform with partners and is in full production.\n\n>Nvidia’s chip lead has made it the world’s largest company by market cap with a valuation of roughly $4.6 billion. In October, its market cap swelled to more than $5 trillion, but concerns over AI spending and persistent fears about an AI ecosystem bubble brought its valuation down to its current price.\n\n>The company is also facing more competition from rival AMD (AMD), which is launching its own Helios racks-scale systems to compete with the NVLink 72, as well as its own customers.\n\n>In October,\_Google\_(GOOG,\_GOOGL) and\_Amazon\_(AMZN) announced that Anthropic (ANTH.PVT) will expand the use of their respective custom processors, which the AI company already uses to power its Claude platform. Both Google and Amazon have stakes in Anthropic.\n\n>And according to The Information, Google is having conversations with Meta (META) and other cloud companies about use of the search giant’s chips in their data centers.\n\n>Still, neither AMD nor its own customers are likely to unseat Nvidia from its AI throne anytime soon. And if it’s able to continue its yearly release schedule, it will be even more difficult for them to catch up."
+  post_hint: self
+  url_overridden_by_dest: ''
+  preview_image_url: >-
+    https://external-preview.redd.it/R4aD-EJId9DNX313QCdwqhg85JSlNQZinj3kvgedFrY.png?auto=webp&s=934779bc7e1e780195a6e336557e62457eb0e81b
+  gallery_urls: []
+- id: 1wj6e9b
+  title: We spent 3 years making our dream game. It completely failed. Release is in 25 days.
+  subreddit: r/IndieDev
+  author: CarpeDiemTeam
+  score: 2518
+  comments: 410
+  url: https://www.reddit.com/r/IndieDev/comments/1wj6e9b/we_spent_3_years_making_our_dream_game_it/
+  created_utc: 1789679286
+  selftext: >-
+    EDITED: 0% of the graphic assets in the game were created using AI.
+
+
+    Three years ago, my brother and I started making the RPG game we always wanted to play.
+
+
+    We had no publisher, no marketing budget, and almost no experience with marketing.We spent thousands of hours
+    buildin***g*** Breeze Of Adventure  — the world, combat, animations, environments, everything. And now, with less
+    than a month before release, the game has only 401 wishlists.
+
+
+    So, by the numbers, it looks like we failed.
+
+
+    The frustrating part is that we genuinely believe the game turned out much better than those numbers suggest. But we
+    also learned something important:
+
+    Making a good game and getting people to notice it are two completely different problems.Our first Reddit post
+    unexpectedly reached 60,000 people and brought us around 120 wishlists. After that, we tried short videos, social
+    media and other free ways to promote the game — with much less success.
+
+
+    For us, this is actually a success; we created our dream project exactly the way we wanted, and we’re already
+    looking to move forward.
+
+
+    Now we're releasing on October 12.  (or late october)
+
+    ( This post actually made it clear to us that far from everything is lost and the game will most likely be released
+    at the end of October; we’ll fix all the issues you’ve mentioned—since the game is already nearly polished, a month
+    will be enough for us.)
+
+
+    We don't know what will happen after that. But after three years, we're going to finish this journey and finally let
+    people play it.
+
+
+    If you've ever spent years making something that almost nobody noticed, I'd genuinely love to hear your story.
+
+
+    Steam: [Breeze of Adventure](https://store.steampowered.com/app/4673230/Breeze_Of_Adventure/?beta=1)
+
+
+    Release: October 12 (or late october)
+  post_hint: ''
+  url_overridden_by_dest: https://www.reddit.com/gallery/1wj6e9b
+  preview_image_url: ''
+  gallery_urls:
+    - >-
+      https://preview.redd.it/tgsi7d6ba5qh1.png?width=1920&format=png&auto=webp&s=00b8ec2f75e790e7f2cee98c21853827064a19a3
+    - >-
+      https://preview.redd.it/ryn3u7aca5qh1.png?width=1200&format=png&auto=webp&s=5b067cdfd113147f74d0f5337e421df42f5944cc
+    - >-
+      https://preview.redd.it/ppcdutbga5qh1.png?width=1093&format=png&auto=webp&s=42f9f90173a6970b31c42256174b4dcae5a85460
+    - >-
+      https://preview.redd.it/lij299yga5qh1.png?width=1917&format=png&auto=webp&s=cb8bd0446e031d87dfbeb1810a9359f474f3d515
+- id: 1w4hxse
+  title: September 2026 Release Roundup
+  subreddit: r/CozyGamers
+  author: VickFables33
+  score: 234
+  comments: 51
+  url: https://www.reddit.com/r/CozyGamers/comments/1w4hxse/september_2026_release_roundup/
+  created_utc: 1788282055
+  selftext: >-
+    **(Last updated 10/01/26)** September's list of new releases is here & it's once again stacked to the ceiling.
+    Please let me know if there are any errors, incorrect links, or titles that I missed. I update periodically
+    throughout the month (new entries are marked in bold).
+
+    Entry Format: "Game Title (Expected Release Date)(Genre/Gameplay)(optional notes/warnings)"
+
+    "EA:" stands for Early Access & "FR:" stands for the full release of an early access game.
+
+
+    # ---The Cozy List
+
+
+    * [**Cozy Country** ](https://store.steampowered.com/app/4690240/Cozy_Country/)**(Sep 1, 2026)(Design &
+    decorate/Walking Simulator)**
+
+    * [Storytime Cats - Meows and Mistletoes
+    ](https://store.steampowered.com/app/3653420/Storytime_Cats__Meows_and_Mistletoes/)(Sep 2, 2026)(hidden cat)(free)
+
+    * [He Who Watches ](https://store.steampowered.com/app/1070500/He_Who_Watches/)(Sep 2, 2026)(3D puzzle)
+
+    * [Fofumia ](https://store.steampowered.com/app/3459570/Fofumia/)(Sep 2, 2026)(Organization puzzle)
+
+    * [ShipShaper: Falconeer Chronicles](https://store.steampowered.com/app/4339280/ShipShaper_Falconeer_Chronicles/)
+    (EA: Sep 2, 2026)(Design sandbox)
+
+    * [BioEden ](https://store.steampowered.com/app/3265840/BioEden/)(Sep 3, 2026)(Biome Management)
+
+    * [Monk Took Book ](https://store.steampowered.com/app/4022090/)(Sep 3, 2026)(organization sim)
+
+    * [Shoe it All! ](https://store.steampowered.com/app/2978860/)(Sep 3, 2026)(Shenanagin puzzles)
+
+    * [Cloudgazer: A Game About Watching
+    Clouds](https://store.steampowered.com/app/5052300/Cloudgazer_A_Game_About_Watching_Clouds/) (Sep 3, 2026)(Hidden
+    Object)
+
+    * [The Last Good Boy ](https://store.steampowered.com/app/3524950/The_Last_Good_Boy/)(Sep 4, 2026)(Idle RPG)
+
+    * [**100 Panda Cats** ](https://store.steampowered.com/app/4516160/100_Panda_Cats/)**(Sep 4, 2026)(hidden object)**
+
+    * [**Worming from Home**](https://store.steampowered.com/app/3547270/Worming_from_Home/) **(Sep 4, 2026)(Sandbox
+    shenanigans)**
+
+    * [Nothing Strange Here](https://store.steampowered.com/app/3664070/) (Sep 7, 2026)(detective mystery)
+
+    * [Tiny Eden City Garden Harvest](https://store.steampowered.com/app/3375110/Tiny_Eden/) (Sep 7, 2026)(apartment
+    garden sim)
+
+    * [Eco Volunteer](https://store.steampowered.com/app/3919340/Eco_Volunteer/) (Sep 7, 2026)(exploration cleaning sim)
+
+    * [Pumpkin Woods](https://store.steampowered.com/app/2729830/) (EA: Sep 7, 2026)(Open World Survival Craft)
+
+    * [Locktale](https://store.steampowered.com/app/4304820/Locktale/) (Sep 7, 2026)(Code breaking puzzle)
+
+    * [Little Ghosties ](https://store.steampowered.com/app/4132960/Little_Ghosties/)(EA: Sep 7, 2026)(Desktop
+    Companion)
+
+    * [Bus Simulator 27 ](https://store.steampowered.com/app/2397320/Bus_Simulator_27/)(Sep 8, 2026)(realistic job sim)
+
+    * [Cat Me If You Can](https://store.steampowered.com/app/3170490/) (PC, Switch 1+2: Sep 8, 2026)(Photography hidden
+    object)
+
+    * [Honeycomb: The World Beyond](https://store.steampowered.com/app/1510440/) (Sep 8, 2026)(sci-fi survival
+    adventure)
+
+    * [Alchemy Factory](https://store.steampowered.com/app/3669570/) (FR: Sep 8, 2026)(Automation Shop Sim)
+
+    * [**Olga - Episode 1**](https://store.steampowered.com/app/2836740/Olga__Episode_1/) **(Sep 9, 2026)(mystery
+    adventure)**
+
+    * [**Master Of Pottery**](https://store.steampowered.com/app/1160490/Master_Of_Pottery/) **(Sep 10, 2026)(hobby
+    sim)**
+
+    * [**Tinymon RPG** ](https://store.steampowered.com/app/3306960/Tinymon_RPG/)**(Sep 10, 2026)(language learning)**
+
+    * [Black Friday Janitor: Clean the Whole Mall
+    ](https://store.steampowered.com/app/3396010/Black_Friday_Janitor_Clean_the_Whole_Mall/)(Sep 10, 2026)(organization
+    sim)
+
+    * [Grandpa's Bee Haven ](https://store.steampowered.com/app/3209160/Grandpas_Bee_Haven/)(Sep 10, 2026)(idler)
+
+    * [Garden Ink](https://store.steampowered.com/app/3421740/Garden_Ink/) (Sep 10, 2026)(Design & Decorate)
+
+    * ***STEAM EVENT*** *- Programming Fest (Sep 10-14)*
+
+    * [Moon Garden ](https://store.steampowered.com/app/4319660/Moon_Garden/)(Sep 11, 2026)(Incremental Strategy Idler)
+
+    * [**100 Tavern Cats** ](https://store.steampowered.com/app/4118370/100_Tavern_Cats/)**(Sep 11, 2026)(hidden cat)**
+
+    * [Neat! ](https://store.steampowered.com/app/4300090/Neat/)(Sep 14, 2026)(organization puzzle)
+
+    * [Cloudscrapers ](https://store.steampowered.com/app/3562200/)(Sep 14, 2026)(strategy tower builder)
+
+    * [**Of Nooks and Nonsense: A Pirate Hidden Object
+    Game**](https://store.steampowered.com/app/4699670/Of_Nooks_and_Nonsense_A_Pirate_Hidden_Object_Game/) **(Sep 14,
+    2026)(hidden object)**
+
+    * [**Put Back Stuff**](https://store.steampowered.com/app/5130150/Put_Back_Stuff/) **(Sep 14, 2026)(Tidy up)**
+
+    * ***STEAM EVENT*** *- Party-Based RPG Fest (Sep 14-21)*
+
+    * [Mixed Spirits: Bartender Simulator](https://store.steampowered.com/app/3891400/) (Sep 15, 2026)(shop sim)
+
+    * [aniimo ](https://store.steampowered.com/app/4126040/Aniimo/)(Sep 15, 2026)(Creature Collector RPG)(free to play)
+
+    * [Look to the Birds ](https://store.steampowered.com/app/4162670/Look_to_the_Birds/)(Sep 15, 2026)(wildlife
+    photography)
+
+    * [Neko Neko Shop](https://store.steampowered.com/app/5129240/Neko_Neko_Shop/) (Sep 15, 2026)(Organization Sim)
+
+    * [**bonitāka's aquarium of medusae**](https://store.steampowered.com/app/4084590/bonitakas_aquarium_of_medusae/)
+    **(Sep 15, 2026)(Underwater Creature Collector)**
+
+    * [Old Market Restored](https://store.steampowered.com/app/4986890/Old_Market_Restored/) (Sep 16, 2026)(organization
+    sim)
+
+    * [Woodo](https://store.steampowered.com/app/2572040/Woodo/) (PC, [Switch
+    1+2](https://www.nintendo.com/us/store/products/woodo-switch/): Sep 16, 2026)(Stylized 3D puzzle)
+
+    * [MONOWAVE](https://store.steampowered.com/app/2680440/) (Sep 16, 2026)(puzzle platformer)
+
+    * [BloomKeeper](https://store.steampowered.com/app/3034650/BloomKeeper/) (Sep 16, 2026)(tactical adventure)
+
+    * [TCG Card Shop Simulator](https://store.steampowered.com/app/3070070/TCG_Card_Shop_Simulator/) (FR: Sep 16, 2026)
+
+    * [**Rooster** ](https://store.steampowered.com/app/1834220/)**(Sep 16, 2026)(Point & Click)**
+
+    * [The Bird of the North](https://store.steampowered.com/app/4655600/The_bird_of_the_North/) (Sep 17, 2026)(Mystery
+    Detective)
+
+    * [Shiba Sweet ](https://store.steampowered.com/app/3015360/Shiba_Sweet/)(Sep 17, 2026)(cooking shop sim)
+
+    * ~~Tiny Ramen Shop (~~ Delayed ~~Sep 17, 2026)(cooking shop sim)~~
+
+    * [Flamecraft](https://store.steampowered.com/app/3201730/Flamecraft/) (Sep 17, 2026)(Card based strategy)
+
+    * [**20 More, Somehow Even Smaller,
+    Mazes**](https://store.steampowered.com/app/4428890/20_More_Somehow_Even_Smaller_Mazes/) **(Sep 17, 2026)(2d
+    puzzle)(free)**
+
+    * [Northanger Abbey ](https://store.steampowered.com/app/3855740/Northanger_Abbey/)(Sep 18, 2026)(Visual Novel)
+
+    * [Unmurk ](https://store.steampowered.com/app/1923960/)(Sep 18, 2026 2025)(Pixel Puzzle)
+
+    * [Nightwater](https://store.steampowered.com/app/3983860/Nightwater/) (Sep 18, 2026)(Open World Automation)
+
+    * ~~DEEPLANDERS (~~ Delayed ~~Sep 18, 2026)(city builder puzzle)~~
+
+    * [**Paver: Tidy Up Together** ](https://store.steampowered.com/app/5120650/Paver_Tidy_Up_Together/)**(Sep 18,
+    2026)(Tidy up)**
+
+    * [Dear Journey...](https://store.steampowered.com/app/4172110/Dear_Journey/) (Sep 20, 2026)(Deckbuilding Job Sim)
+
+    * [Dressmaker ](https://store.steampowered.com/app/4019220/Dressmaker/)(Sep 21, 2026)(Job Sim)
+
+    * [Soggy Beans](https://store.steampowered.com/app/2636430/Soggy_Beans/) (Sep 21, 2026)(Creature Collector idler)
+
+    * [Echoes of Mora](https://store.steampowered.com/app/3129050/) (Sep 21, 2026)(underwater narrative exploration)
+
+    * [**Delverium**](https://store.steampowered.com/app/2710040/Delverium/) **(EA: Sep 21, 2026)(Farm sim/survival
+    craft)**
+
+    * [Island Restoration ](https://store.steampowered.com/app/4395950/Island_Restoration/)(Sep 22, 2026)(cleaning sim)
+
+    * [EbiTapes ](https://store.steampowered.com/app/2221850/)(Sep 22, 2026)(Adventure)(Hand Drawn art style)
+
+    * [Graveyard Keeper 2](https://store.steampowered.com/app/4358690/) (Sep 22, 2026)(farm sim)
+
+    * [**DinoBones: Tidy Up the Museum**](https://store.steampowered.com/app/5064340/DinoBones_Tidy_Up_the_Museum/)
+    **(Sep 22, 2026)(organization sim)**
+
+    * [**Dear Diary** ](https://store.steampowered.com/app/4953300/Dear_Diary/)**(Sep 22, 2026)(interactive fiction)**
+
+    * [**Birthday** ](https://store.steampowered.com/app/4696240/Birthday/)**(Sep 22, 2026)(puzzle)**
+
+    * ~~Sky Safari: FPV Drone (~~ Delayed till October ~~Sep 23, 2026)(Aerial Wildlife Photography)~~
+
+    * [Otterly Lost](https://store.steampowered.com/app/3861710/) (Sep 23, 2026)(Underwater Adventure)
+
+    * [Nomori ](https://store.steampowered.com/app/2932680/)(Sep 23, 2026)(3D puzzle platformer)
+
+    * [Wand & Order: Tidy up the magic
+    shop!](https://store.steampowered.com/app/4981570/Wand__Order_Tidy_up_the_magic_shop/) (Sep 23, 2026)(organization
+    sim)
+
+    * [**Evergrow: Shards of Tomorrow**](https://store.steampowered.com/app/3623600/Evergrow_Shards_of_Tomorrow/) **(Sep
+    23, 2026)(puzzle adventure)**
+
+    * [**Vinyl Freak: Unsorted** ](https://store.steampowered.com/app/3978120/Vinyl_Freak_Unsorted/)**(Sep 23,
+    2026)(Tidy Up)**
+
+    * [Dragon Shelter](https://store.steampowered.com/app/2712590/Dragon_Shelter/) (Sep 24, 2026)(farm sim)
+
+    * [Farming Camp ](https://store.steampowered.com/app/2985880/Farming_Camp/)(Sep 24, 2026)(Farm sim/summer camp
+    adventure)
+
+    * [Misha](https://store.steampowered.com/app/4559470/Misha/) (Sep 24, 2026)(visual novel)
+
+    * [Doggy Don't Care](https://store.steampowered.com/app/2438180/Doggy_Dont_Care/) (Sep 24, 2026)(Shenanigans
+    Simulator)
+
+    * [Black Cat Book Club ](https://store.steampowered.com/app/3972410/)(Sep 25, 2026)(Idler Desktop Companion)
+
+    * [**Museologist: Tidy Up the Museum!**](https://store.steampowered.com/app/4964580/Museologist_Tidy_Up_the_Museum/)
+    **(Sep 25, 2026)(Tidy Up)**
+
+    * [**Cats in Wonderland**](https://store.steampowered.com/app/3023020/) **(Sep 27, 2026)(hidden cat)**
+
+    * ~~Gallery Organizer (~~ Delayed ~~Sep 28, 2026)(organization sim)~~
+
+    * ~~Supermarket Organizer (~~ Delayed ~~Sep 29, 2026)(organization sim)~~
+
+    * [TOEM 2 ](https://store.steampowered.com/app/2900640/)(PC, Switch 1+2: Sep 29, 2026)(photgraphy adventure)
+
+    * [Nivalis Nights](https://store.steampowered.com/app/1488490/Nivalis_Nights/) (Sep 29, 2026)(Cyberpunk Immersive
+    Life Sim)
+
+    * [**The Merlies**](https://store.steampowered.com/app/2521160/) **(Sep 29, 2026)(2D platforming adventure)**
+
+    * [**Foxy's Potion Shop** ](https://store.steampowered.com/app/5101390/Foxys_Potion_Shop/)**(Sep 29, 2026)(free)**
+
+    * [Songs of Glimmerwick](https://store.steampowered.com/app/1706510/) (Sep 30, 2026 2023)(witchy rpg)
+
+    * ~~Stickers, please (~~ Delayed ~~Sep 30, 2026)(Design & Decorate sandbox)~~
+
+    * [**Power Network Tycoon** ](https://store.steampowered.com/app/2429930/Power_Network_Tycoon/)**(FR: Sep 30,
+    2026)(power grid management)**
+
+    * [**Chromascape**](https://store.steampowered.com/app/4214800/Chromascape/) **(Sep 30, 2026)(2D adventure)**
+
+    * [**Soup Weather** ](https://store.steampowered.com/app/4430190/Soup_Weather/)**(Sep 30, 2026)(narrative
+    exploration)**
+
+    * ~~Monster Museum: Tidy Up the collection! (~~ Delayed ~~Sep 30, 2026)(Tidy Up)~~
+
+    * ~~Whale Cleaner (~~ Delayed till Oct ~~September 2026)(cleaning sim)~~
+
+    * [**~~Night Stocker~~** ](https://store.steampowered.com/app/4594630/Night_Stocker/)**~~(~~** **Delayed**
+    **~~September 2026)(Tidy Up)~~**
+
+
+    # ---Debatable
+
+
+    * [**Secret Base** ](https://store.steampowered.com/app/4699320/Secret_Base/)**(Sep 1, 2026)(Walking Sim)**
+
+    * [Lost and Found – What If I Come and Find It](https://store.steampowered.com/app/1682550/) (FR: Sep 2,
+    2026)(Detective Puzzle?)
+
+    * [ShoreTiles ](https://store.steampowered.com/app/4268460/ShoreTiles/)(Sep 3, 2026)(tile-placement strategy)
+
+    * [**Orbitals**](https://www.nintendo.com/us/store/products/orbitals-switch-2/) **(Switch 2: Sep 3,
+    2026)(adventure)(co-op)**
+
+    * [Aquarium Anomaly](https://store.steampowered.com/app/4422500/Aquarium_Anomaly/) (Sep 7, 2026)(walking sim)
+
+    * [Valheim](https://store.steampowered.com/app/892970/Valheim/) (Sep 9, 2026)(Open World Survival Crafting)
+
+    * [Fruitimo! Juicy Night Ride ](https://store.steampowered.com/app/4399580/Fruitimo_Juicy_Night_Ride/)(Sep 9,
+    2026)(no-stakes on-rails action)
+
+    * [Welcome to Elderfield](https://store.steampowered.com/app/3195440/Welcome_to_Elderfield/) (Sep 10, 2026)(farm sim
+    rpg)
+
+    * [Sunken Engine ](https://store.steampowered.com/app/3604780/)(FR: Sep 10, 2026)(Repair Sim)(Lovecraftian)
+
+    * [Rivage ](https://store.steampowered.com/app/4094660/Rivage/)(Sep 22, 2026)(Sci-fi puzzle adventure)(Generative Ai
+    used as dev tool, claims to contain no Gen Ai assets)
+
+    * [**The Piper of Dawn**](https://store.steampowered.com/app/3804370/The_Piper_of_Dawn/) **(Sep 23, 2026)(Shop
+    Keeper)**
+
+    * [**Mars Attracts**](https://store.steampowered.com/app/2760580/) **(FR: Sep 24, 2026)(Theme park managment sim)**
+
+    * [**CloserLook VR: Oldways**](https://store.steampowered.com/app/3480840/) **(Sep 24, 2026)(VR only)**
+
+
+    \-----------------------------------------------------------------------------------------------
+
+
+    Here is the link to last month's list in case anyone wants it:
+    [https://www.reddit.com/r/CozyGamers/comments/1vcy07l/august\_2026\_release\_roundups/](https://www.reddit.com/r/CozyGamers/comments/1vcy07l/august_2026_release_roundups/)
+
+
+    The end of summer is finally on the horizon & it looks like the super long lists are sunsetting with it; Oct-Dec are
+    looking considerably less busy. A welcome sight, considering a whopping 13 games on my wishlist are coming out this
+    month. What games are you eyeing this month? I'm probably limiting myself to TOEM 2, Songs of Glimmerwick, and maybe
+    Farming Camp.
+  post_hint: self
+  url_overridden_by_dest: ''
+  preview_image_url: >-
+    https://external-preview.redd.it/jqOmzUvb4jsUfcZjNszzxM0iO38aqyR64IFojXfmJWg.jpeg?auto=webp&s=398b771b9d5f0b49e7221df2e09cd89f34971585
+  gallery_urls: []
+- id: 1wvsmlk
+  title: '''Star Wars: Galactic Racer'' - Review Thread'
+  subreddit: r/gaming
+  author: ChiefLeef22
+  score: 1406
+  comments: 734
+  url: https://www.reddit.com/r/gaming/comments/1wvsmlk/star_wars_galactic_racer_review_thread/
+  created_utc: 1790944451
+  selftext: "**Game Title**: STAR WARS: GALACTIC RACER\n\n**Platforms**:\n\n* PlayStation 5 (October 6, 2026)\n* XBOX Series X | S (October 6, 2026)\n* PC (October 6, 2026)\n\n**Trailers:**\n\n* [Star Wars: Galactic Racer™ - Official Reveal Trailer](https://www.youtube.com/watch?v=RiavNl4qxWY)\n* [Star Wars: Galactic Racer™ - Official Gameplay Trailer](https://www.youtube.com/watch?v=2MtgIoToa7I)\n\n**Developer**: Fuse Games\n\n**Reviews aggregates:**\n\n# [OpenCritic: 88 Average - 97% Critics Recommend](https://opencritic.com/game/20501/star-wars-galactic-racer)\n\n# [Metacritic: 90 / 100](https://www.metacritic.com/game/star-wars-galactic-racer/)\n\n**Some Reviews:**\n\n[GamingTrend - Lyra Moreno](https://gamingtrend.com/reviews/star-wars-galactic-racer-review/) \\- 100 / 100\n\n>Star Wars: Galactic Racer exceeded my expectations to the highest degree and provides a dream combination of Star Wars Podracing and Burnout. With an engaging Campaign Mode, an interesting usage of Podracers, plenty of characters to meet and interact with, tons of customization, cross-platform multiplayer, and beautiful visuals and music; this game is everything I could have hoped for and more! Star Wars: Galactic Racer did more than bring racing back to the Galaxy, it made me believe there’s nothing faster or more dangerous than Podracing.\n\n[Giant Bomb](https://opencritic.com/outlet/132/giant-bomb) \\- [Jeff Grubb](https://opencritic.com/critic/1047/jeff-grubb) \\- 5 / 5\n\n>Star Wars: Galactic Racer is everything I hoped it would be. Fuse built a campaign that keeps giving me reasons to master the tracks, then made the racing feel good enough that I wanted to.\_ And for my fellow Episode I Racer lovers: Galactic Racer’s marketing has kept the podracers in the background, but don’t let that fool you. By the time I was done with the campaign, I found myself happy and whispering one thing to myself: Now this is podracing.\n\n[Radio Times - Belle Law](https://www.radiotimes.com/technology/gaming/star-wars-galactic-racer-review/) \\- 5 / 5\n\n>Star Wars: Galactic Racer is not only one of the best racing games I have played all year, but after playing the campaign the full way through, it just might be one of my favourite racing games of all time.\n\n[VGC - Jordan Middler](https://www.videogameschronicle.com/review/star-wars-galactic-racer-review/) \\- 5 / 5\n\n>Star Wars: Galactic Racer absolutely nails what it is trying to do. It is a high-octane racer that's endless fun to play, and it looks fantastic. This would have been a great game with a standard single-player mode, but what is here is inventive and engaging. I'd have loved a few silly classic characters and another planet or two, but this is a game I'll return to for a long time.\n\n[IGN Deustschland - Von Manuel Fritsch](https://de.ign.com/star-wars-galactic-racer/156125/star-wars-galactic-racer-im-test-burnout-dna-mit-roguelite-boost) \\- 10 / 10\n\n>For me, Star Wars: Galactic Racer has become the perfect arcade racing game experience that leaves nothing to be desired. The sense of speed is the best it’s been since the first WipeOut, and it not only looks stunning, but sounds and plays that way, too. Even if you’re not a huge Star Wars fan, you should check out this game if only for its fresh roguelite ideas and the gripping campaign mode, which completely reinvents and revitalizes the sci-fi racing genre in turbo-boost mode.\n\n[Collider - Hannah Hunt](https://collider.com/star-wars-galactic-racer-review/) \\- 9.5 / 10\n\n>Ultimately, *Star Wars: Galactic Racer* delivers the kind of racing I enjoy most. With superb handling and spectacular crashes, *Galactic Racer* captures the thrill of arcade racing at its best. The Boonta Eve classic gave me the nostalgic thrill I wanted, while the overall racing gave me a reason to love this game beyond that connection. My arcade memories are still special, but *Galactic Racer* is the one I’d choose to play now.\n\n[Cinelinx - Jordan Maison](https://www.cinelinx.com/games/reviews-games/star-wars-galactic-racer-review/) \\- 9.5 / 10\n\n>Star Wars: Galactic Racer manages exceed all expectations and deliver on the decades awaited return of racing to the galaxy far, far away. Between gorgeous visuals, and thoughtful, highly addictive gameplay this is something both Star Wars fans and racing fans in general will have a blast with. There's a lot to love and it can only get better with time and growth.\n\n[VICE - Brent Koepp](https://www.vice.com/en/article/star-wars-galactic-racer-review/) \\- 9.3 / 10\n\n>*Star Wars: Galactic Racer* takes the arcadey fun of *Episode I: Racer* and turns it into a cinematic racing adventure. Its gorgeous planets and thrilling tracks capture the magic of the *Star Wars* universe, while its addictive roguelike structure makes even a failed tournament run feel like another excuse to jump back in.\n\n[GameSpot - Jordan Ramée](https://www.gamespot.com/reviews/i-cannot-believe-silly-star-wars-racing-roguelite-is-one-of-my-favorite-games-in-2026/) \\- 9 / 10\n\n>Playing Galactic Racer reminds me of my favorite parts of the most recent Forza Horizon games: the first 10 minutes. That initial drive sequence that introduces the new setting, gets you acclimated to the gameplay basics, and moves you from one track to another to let you play around with different vehicles in a bunch of different environments is so fun. It’s all about hearing the roar of the crowd and the excitement in the announcer’s voice, not needing to rely on the rewind mechanic, and just feeling the rush and exhilarating joy of going really, really fast in a cool vehicle as the world around you becomes a blur.\_Galactic Racer is those absolutely perfect 10 minutes expanded into a full game. Every moment feels joyfully fast. Every decision carries the weight of tension. And every run is a rewarding chance to learn, improve, tinker, and adapt, whether it ends in success or failure. I can’t wait to keep playing what’s been my favorite racing game in years.\n\n[Push Square - Sammy Barker](https://www.pushsquare.com/reviews/ps5/star-wars-galactic-racer) \\- 9 / 10\n\n>Star Wars: Galactic Racer is a thoughtfully designed triumph. The excellent handling and eye-popping presentation would be enough to recommend the game alone, but I also love its buildcrafting aspects and roguelite campaign. With a breathtaking sense of speed and planets that demand you think differently about your approach, this is one of the better racing games available on the PS5. I think the release could be a little quicker at getting you behind the wheel, and of course more planets would always be appreciated. But minor nitpicks aside, I really can’t recommend this highly enough.\n\n[Metro - Adam Starkey](https://metro.co.uk/2026/10/02/star-wars-galactic-racer-review-podracing-paradise-29673415/) \\- 9 / 10\n\n>Galactic Racer could have been a cheap nostalgia play, targeted at millennials who have hazy memories of the podracing game on the Nintendo 64. Instead, Fuse Games has over delivered on almost every front. The racing is electric, the surprises consistent, and it’s wrapped in a smartly designed run-based structure which has rarely worked before in the genre. The bar isn’t high when it comes to the best Star Wars racing game, but with Galactic Racer, it’s cleared a generational peak for sci-fi racers at large.\n\n[DayOne - Győző \"FairyEmpire\" Baki](https://playday.one/2026/10/02/star-wars-galactic-racer-review/) \\- 9 / 10.0\n\n>*Fuse Games*‘ **Star Wars Galactic Racer** is bold, spectacular, and offers incredibly satisfying gameplay chops in single player and multiplayer alike. It’s high difficulty and relentless intensity might scare some casual Star Wars fans who just want some spectacle, but if you’re looking for a killer track-based arcade racer, you’ve found it. The force is strong with this one.\n\n[Analog Stick Gaming - Jordan Andow](https://www.analogstickgaming.com/game-reviews/star-wars-galactic-racer) \\- 9 / 10\n\n>...None of those issues change the fact that the actual racing is exceptional. The different vehicles feel genuinely distinct, progression constantly gives you something new to chase, and the roguelike structure creates an addictive loop that makes it incredibly difficult to stop after just one more race. Star Wars: Galactic Racer may have nearly disappeared beneath a packed release schedule for me, but now that I have played it, I can already tell it is going to remain installed for a very long time, in a galaxy far, far away..\n\n[Insider-Gaming - Josh Challies](https://insider-gaming.com/reviews/star-wars-galactic-racer-review/) \\- 9 / 10\n\n>Galactic Racer is a near-perfect game that significantly shakes up a racing genre that has become somewhat stale, and I truly believe it could mark the start of the next generation for the genre, in a similar way that the likes of Forza Horizon led to the open-world focus that currently dominates the racing scene.\n\n[PowerUp! - Adam Mathew](https://powerup-gaming.com/star-wars-galactic-racer-review-ps5-pro-pod-tier-racing/) \\- 9 / 10\n\n>*Episode I Racer* gave padawan-gamer-me the thrill of blasting across Tatooine with Sebulba trying to road rash everyone at 700 kilometres an hour. *Galactic Racer* takes that same childhood obsession, bolts on a considerably more sophisticated racing system and then asks me to make a bunch of increasingly bad decisions at even higher velocities. Naturally, I said yes to this. I really think you ought to as well.\n\n[TheSixthAxis - Dom Leighton](https://www.thesixthaxis.com/2026/10/02/star-wars-galactic-racer-review/) \\- 9 / 10\n\n>Star Wars Galactic Racer is the best arcade racer in years. It mixes compelling racing action, an addictive progression system, and excellent world building while stringing a narrative through it all. It’s very fast, and very dangerous. It’s also very, very good.\n\n[Worth Playing - Chris 'Atom' DeAngelus](https://worthplaying.com/article/2026/10/2/reviews/151133-ps5-review-star-wars-galactic-racer/) \\- 9 / 10.0\n\n>*Star Wars: Galactic Racer* is pretty much everything it should be. Threading the needle between next-gen *Burnout* and Star Wars-themed racer, it 's frantic, fun and incredibly enjoyable to play. The arcade-style action is a pure delight, and the run-based nature of the campaign gives it a ton of replay value, even if you don 't intend to dip your toes into the multiplayer. If you're looking for a next-gen *Episode 1 Racer*, this is exactly what you 're hoping for.\n\n[NoisyPixel - Colin Buchanan](https://noisypixel.net/star-wars-galactic-racer-review/) \\- 9 / 10\n\n>Star Wars: Galactic Racer is a thrilling blend of high-speed arcade racing, vehicular combat, and roguelike progression that makes excellent use of the Star Wars universe. Its varied builds, satisfying risk-reward structure, strong presentation, and surprisingly engaging story keep each run exciting, while extensive customization and polished performance round out an impressive debut. Some tracks can become repetitive over time, and the multiplayer experience remains untested, but Galactic Racer still stands out as both a fantastic racing game and a rewarding treat for Star Wars fans.\n\n[Shacknews - Lucas White](https://www.shacknews.com/article/150888/star-wars-galactic-racer-review-score) \\- 9 / 10\n\n>Even when it was pissing me off, Star Wars: Galactic Racer made me feel alive. Every gravity-breaking boost, every panic-inducing malfunction, every slow-motion, Burnout-style wreck, was thrilling in a way I haven’t often experienced. It almost feels like playing Wizardry with cars, pushing ahead and feeding on the rush of risking life and limb, each deadly opportunity for a shortcut or risky boost like kicking open a door and knowing what’s behind it could wipe your party, but doing it anyway. I had some mixed feelings about the campaign’s roguelike structure, but ultimately the way that structure built upon and enhanced the risk-savoring and thrill-seeking intensity made it fit like a thematic glove. I can feel myself coming back to this over and over just for the vibes any time I feel like I need a little shock to my system to get my blood pumping.\n\n[WayTooManyGames - Leo Faria](https://waytoomany.games/2026/10/02/review-star-wars-galactic-racer/) \\- 9 / 10\n\n>I honestly have little to complain about. This is exactly the kind of racing game I’ve been salivating for the past decade or two. *Star Wars: Galactic Racer* manages to convey the feel of the classic *Episode I: Racer* game, as well as *Burnout*, with improved physics, a somewhat engaging story, a ludicrous amount of content, brutal but rewarding difficulty curve, and a roguelite campaign which won me over in an instant. More than just a game for fans, or an admittedly nostaglic trip down memory lane, this is a must-have for racing enthusiasts, and one of the most pleasant surprises of the year.\n\n[Final Weapon - Kelvin Rios](https://finalweapon.net/2026/10/02/star-wars-galactic-racer-review/) \\- 9 / 10\n\n>Star Wars: Galactic Racer is one of the strongest racing games to release in the past few years. While it stumbles a bit in the story due to its weak villain, it more than makes up for it with charming side characters, both new and old. From fantastic in-depth customization to the jaw-dropping visuals and music and incredibly strong gameplay, this is easily the new gold standard for Star Wars racers.\n\n[The Outerhaven Productions - Scott Adams](https://www.theouterhaven.net/star-wars-galactic-racer-review-this-is-where-the-fun-begins/) \\- 4.5 / 5\n\n>*STAR WARS: Galactic Racer* is an addictive, fun time. Racing is fast, and it makes races thrilling. The computer AI is super aggressive, and it adds a lot to the explosive nature of racing in a Galactic League. It shows a different side to Sebulba that I found very refreshing. My only complaint is how it handles the smaller plot moments, with many of them being missable. It also ends with a lot of the story not actually finished. Which did frustrate a bit. The gameplay, though, is the point of the game, and it is fantastic. This is an extraordinary racing game, and it feels amazing to play. It has my favorite feel for drifting in any racing game I have ever played, so I don’t mind coming back to this title now and again. If you are a racing game fan, you owe it to yourself to play this game.\n\n[MonsterVine - Spencer Legacy](https://monstervine.com/2026/10/star-wars-galactic-racer-review/) \\- 4.5 / 5\n\n>Star Wars: Galactic Racer is a fantastic racing game that perfectly captures the breakneck speed of the source material’s iconic vehicles. The story and abundance of modes make for a unique racing experience, and though a couple of small rough edges exist in how it’s presented, this is a brilliant title that had me frequently jolting to the edge of my seat. Whether you like Star Wars, racing games, or both, there’s lots here for you to sink your teeth into.\n\n[TechRadar - Demi Williams](https://www.techradar.com/gaming/star-wars-galactic-racer-review) \\- 4.5 / 5\n\n>Fuse Games' *Star Wars: Galactic Racer* isn't what I anticipated. A fun Star Wars racing game that lets you take part in a series of high-octane relays across the galaxy? Sounds great; you had me at \"Star Wars.\" But a heart-pounding roguelike sweat-fest that had me squeezing my DualSense wireless controller in a death grip and yelling at my monitor as Kestar Bool once again beat me in the final race by the skin of my teeth? Not what I was expecting!\n\n[COGconnected - Jaz Sagoo](https://cogconnected.com/review/star-wars-galactic-racer-review/) \\- 87 / 100\n\n>Star Wars: Galactic Racer is the best racing game in the franchise’s history. Each contest is a tense ride to the finish, requiring you to use everything in your arsenal to overcome your competitors. The sense of speed is exhilarating, especially as you navigate the tight environments and race across the stunning landscapes. While it can be challenging, reaching the top spot feels earned. With its excellent campaign mode, this is a thrilling return to the world of podracing that delivers an exhilarating racing experience from start to finish.\n\n[Game Informer - Wesley LeBlanc](https://gameinformer.com/review/star-wars-galactic-racer/very-fast-very-dangerous-and-very-good) \\- 8.5 / 10\n\n>Twenty hours later, with the campaign behind me and plenty more time sunk into the other offerings, there’s still so much Galactic Racer left. I spent 45 minutes on one track yesterday not for the gold medal, which I already had, but for the chance to beat a fellow reviewer’s time on the leaderboard, and I don’t regret a minute. Galactic Racer is a Star Wars game, and that might be enough for some, but not for me. Fortunately, it’s an even better racing game, one filled to the brim with courses, vehicle builds, and characters that keep me coming back to the track for one more race.\_\n\n[DualShockers - Linda Güster](https://www.dualshockers.com/star-wars-galactic-racer-review/) \\- 8.5 / 10\n\n>Which brings us to the question: who is this for? Well, in my humble opinion… literally anyone. It sits one step above fun racers like Mario Kart, but a step below a commitment like iRacing. Some backstories will elude you if you aren't a fan, but as far as I could verify, the game does a great job of capturing a realistic feel from the original stories. If you're intrigued by the idea of a racing Roguelite, this is for you, whether you're a veteran or brand new to racing. Just be warned that it isn't easy, and if the thought of starting over from the beginning whilst being violently trash-talked fills you with dread, it may not be your game.\n\n[Destructoid  - Andrej Barovic](https://www.destructoid.com/reviews/star-wars-galactic-racer-review/) \\- 8.5 / 10\n\n>Impressive efforts with a few noticeable problems holding them back. Won't astound everyone, but is worth your time and cash. Star Wars: Galactic Racer daringly meshes two very different genres into one, pairing roguelite elements with the usual racer formula. The results are nothing short of fascinating, and the combination has probably created what seems to be the most replayable racing game to date. However, the roguelite side can often lead to a unnecessary frustration, and considering the game's overall problems with visibility and balance, we're looking at a very rough diamond.\n\n[Empire - Harry Stainer](https://www.empireonline.com/gaming/reviews/star-wars-galactic-racer/) \\- 4 / 5\n\n>In the end, though,\_*Galactic Racer*\_is everything you could want from a\_*Star Wars*\_racer, taking both the galaxy far, far away and its identity as a proper racing game very seriously. The best such titles have you itching to come back the second you put down the controller and, while you may occasionally want to throw yours as\_Sebulba\_leaves you in his dust (unsurprisingly, he’s a dirty cheat!) there’s never much doubt you’ll be back again to start a new run and do it all over again.\_Podracing, it turns out, really is very, very cool.\n\n[Slant Magazine - Aaron Riccio](https://www.slantmagazine.com/games/star-wars-galactic-racer-review/) \\- 4 / 5\n\n>You see it on Crait, as you figure out how to zigzag over salt flats, kicking up red dust that slows your opponents. You see it on Ando Prime, as you learn to account for the 40% loss in handling that occurs each time you miss a defrosting station and have to speed along in a half-frozen vehicle. You see it in the desert of Jakku, as you chart the best path through the shaded ruins of Star Destroyers so that your systems don’t overheat. You see it on Sentinel I’s acid-choked gutters, as you learn how to efficiently deploy your tools to prevent your vehicle from locking up. Above all, you see it in the game’s best invention, a Ramjet that massively speeds you up, but at the risk of explosion should you forget to pay attention to its heat gauge. Racing is a game of margins, and *Galactic Racer* is perpetually pushing things to the absolute limit.\n\n[GamesRadar - Will Sawyer](https://www.gamesradar.com/games/racing/star-wars-galactic-racer-review/) \\- 4 / 5\n\n>Star Wars: Galactic Racer feels like a proud rebel when compared to the current racing game landscape. It forgoes deep simulation mechanics, vast car selections, even larger open worlds, and live-service guff in favor of frenetic racing that feels fantastic, an honest to goodness story that fits perfectly into the Star Wars canon, and some proper friction. That all means it oozes character, expertly modernizing the arcade racing of the 2000s for 2026 and putting risk and reward at the forefront, which is what racing is all about. And as Fuse Games' debut, it's bordering on a perfect start.\n\n[The Daily Telegraph - Samuel Clench](https://www.dailytelegraph.com.au/technology/home-entertainment/star-wars-galactic-racer-review-now-this-at-last-is-podracing-again/news-story/e4eebb80260c58a9c4d149d7ab8431dc) \\- 4 / 5\n\n>...All my above quibbles with this game are mere annoyances, rather than dealbreakers, because the gameplay itself is so strong. It’s not easy to make racing feel so fast, as though you’re really travelling at hundreds of kilometres an hour, while also ensuring it’s accessible enough for pretty much any player to enjoy, regardless of skill level.\n\n[IGN - Luke Reilly](https://www.ign.com/articles/star-wars-galactic-racer-review) \\- 8 / 10\n\n>Star Wars: Galactic Racer is a fabulous looking and frantically fast anti-grav racer that impressively goes further than just taking the decades-old Star Wars Racer games and giving them a 4K facelift. With a range of satisfyingly customisable vehicle classes beyond podracers, a world outside the racing you can soak in and explore in third-person, and an interesting roguelite-adjacent structure that injects a considerable degree of risk into the action, Galactic Racer is a fresh and accomplished blend of Lucas lore with the destructive spirit of arcade racing icons like Burnout and MotorStorm. Its run-based campaign can grow unavoidably tedious over long stints because of its heavy reliance on repeatedly revisiting the same slim selection of planets, and its lack of splitscreen is disappointing considering its roots run back to consoles regarded as the kings of same-couch chaos. But Galactic Racer is an otherwise confident debut from developer Fuse Games, and one that has successfully lit the afterburners on a long-dormant slice of the Star Wars universe.\_\n\n[Xbox Achievements - Josh Wise](https://www.xboxachievements.com/game/star-wars-galactic-racer/review/) \\- 80%\n\n>If there is a disposability to *Galactic Racer* – a sense of getting in, blowing through a couple of races, and getting out – that is in keeping with the theme. These are pilots without a place, hastening after a purpose and prepared to go up in smoke. The game doesn’t keep you rapt, like the best anti-gravity racers.\_*WipEout*\_sucks you into its world but keeps you at a remove; it punishes you with pitch control and yaw, the feeling of turning\_*on air*, and you yearn to know more, as Pax says, of the lives lived in the sidelines. It conspires with music and art to enthrall you for the long haul.\_*Star Wars: Galactic Racer*, on the other hand, is happy to grant you a glorious spectacle. You watch the movie backdrops reel by, your opponents go out in a blaze, and think, Well, look where we are now.\n\n[ScreenRant - James Lynch](https://screenrant.com/star-wars-galactic-racer-review/) \\- 8 / 10\n\n>*Star Wars: Galactic Racer* succeeds because, on a moment-to-moment basis, it can elicit a huge range of emotions from the player. It also feels exceptionally fast, and it's just about as close as you'll ever feel to actually having some control over the Force, or sharing the gifts of a character like Anakin. If that isn't what we're looking for from any *Star Wars* game, then I don't know what is.\n\n[HardcoreGamer - Kevin Dunsmore](https://hardcoregamer.com/review-star-wars-galactic-racer/) \\- 8 / 10\n\n>*The Phantom Menace* made it clear that racing belongs in Star Wars. It's unfortunate that it's taken nearly two decades to get another racing game set in the galaxy far, far away, but Fuse Games has made things right. *Star Wars: Galactic Racer* is the fast and furious racer Star Wars has long deserved. It's stuffed full of fun content, whether you want to hop into fun Scenarios, participate in some quick races or hop into multiplayer. The runs-based campaign is a neat concept that ultimately doesn't work due to lackluster and unrewarding progression and a lack of variety in racing tracks, nor is the story all that inspiring. It's a format that works well in multiplayer, not so much for the campaign. Most importantly, however, is that Fuse Games gets racing right. The speed, the ferocity, the beauty of the tracks blurring around you as you go faster, and the wrecks speeders become upon impact, all make for a fun gameplay experience that's as exhilarating to play as it is to watch. *Star Wars: Galactic Racer* captures the fast and the furious, delivering the need for speed missing from Star Wars for a long time.\n\n[AltChar - Tahmid Shibab](https://www.altchar.com/reviews/star-wars-galactic-racer-review-aF7di1r76cgr) \\- 8 / 10\n\n>In a nutshell, Galactic Racer is a well-designed arcade racer that's tightly built with an excellent single-player structure that rewards players focusing on repeat runs. Additionally, the multiplayer adds another layer of reward for players who are actually fans of the podracing culture in Star Wars. I would recommend Galactic Racer to almost every Star Wars fan to experience high-stakes racing just like we saw Anakin do at the beginning of the prequel trilogy.\n\n[Sirus Gaming - Lexuzze Tablante](https://sirusgaming.com/star-wars-galactic-racer-review/) \\- 8 / 10\n\n>Star Wars: Galactic Racer, at its core, is an amazingly well-designed Star Wars racing game. Despite its limitations and flaws, there was never a moment when its high-speed, high-stakes races became dull. Its tracks are impressively designed, capturing the look and feel of each location in the Star Wars universe, while the runs-based structure makes every race feel like there’s something at stake.\n\n[TechRaptor - Tyler Chancey](https://techraptor.net/gaming/reviews/star-wars-galactic-racer-review-lightspeed-burnout) \\- 7.5 / 10\n\n>There is a lot to like in Star Wars: Galactic Racer. Fuse Studios' experience with breakneck speed and tactile gameplay has led to a game packed with fantastic bursts of fun. But its experimental blending of a racing underdog story with rocky roguelike progression left me tilting my head more than cheering for more."
+  post_hint: self
+  url_overridden_by_dest: ''
+  preview_image_url: >-
+    https://external-preview.redd.it/qWyS2BJaG_K1BukWEMhGuGnxplYrhAISQUEYCBGNFDM.jpeg?auto=webp&s=bab592fb5d20c8e7b6e52668c709280e6cd3e3c3
+  gallery_urls: []
+- id: 1o6fh66
+  title: >-
+    Football Life 2026 releases publicly TOMORROW (15th October 2025): what you should know  and some little things
+    coming here on the sub.
+  subreddit: r/SPFootballLife
+  author: xGondowan
+  score: 260
+  comments: 116
+  url: https://www.reddit.com/r/SPFootballLife/comments/1o6fh66/football_life_2026_releases_publicly_tomorrow/
+  created_utc: 1760448400
+  selftext: >-
+    As you may have noticed, FL26 was released yesterday on Patreon as version 1.00. Facepack has been released one hour
+    ago since the posting of this thread, and Commentaries V8 will come soon.
+
+
+    What you should know, even if a lot of these questions are already answered on the pinned FAQ (which I expect
+    everyone of you checked, or I'll hit your head with a rubber hammer).
+
+
+    More details, as always, on their official website:
+
+
+    [https://www.pessmokepatch.com/2025/09/content26.html#more](https://www.pessmokepatch.com/2025/09/content26.html#more)
+
+
+    1. FL26 is a STANDALONE game and acts like a different game even if it still is PES 2021. So it requires to download
+    everything and no saves or Master Leagues can be ported from FL25 (or older versions). Just prepare your usual
+    30-35GB hard disk space.
+
+    2. Links will be available as always on SmokePatch website. Just wait the usual 10 seconds wait and download them.
+    Ad-free links are only available on their Patreon. There won't be any other options to download if SmokePatch don't
+    want to, so don't expect torrents or AIO links. Respect their decision, its their game and their way to earn a
+    little bit of money through that.
+
+    3. The gameplay is changed again from SmokePatch, so its different from FL24 and FL25. You may like it or not,
+    there's gameplay mods out there AND THEY STILL WORK if they did in older FL versions.
+
+    4. Seems the LOD (level of detail) has been slightly raised, so graphics are a little bit sharper now. Not better,
+    but sharper. Hence the requirements being slightly raised too. Nothing to worry about, you won't go from 50FPS to
+    20FPS if you had a potato PC or portable console.
+
+    5. Every mod you have been using on FL24 or FL25 still works except facepack due to new player IDs and new teams. So
+    if you had ballpacks, soundtrack, entrances, kitserver... they still work as they always did. Nothing changes. Sider
+    is the same for every version.
+
+    6. No new format or leagues are added as the game still has the old regulations. Who knows if it will be possible in
+    the near future, but the actual answer is NO.
+
+    7. Master League/Career mode still the same, but some fixes like the contract expiration date logic and some player
+    developments have been improved. Nothing gamechanging, but its noticeable.
+
+    8. Yes, with FL26 finally the database is given first hand by SmokePatch, so if you have ejogc editor knowledge you
+    can go and do whatever you want (League name changes, change teams, players data, appearance, etc) but be aware that
+    it takes A LOT OF TIME to do even a single league considering you need to make every player, stats, kits, badges,
+    entrances (if available) and many more things. I'm talking dozen of hours, so if you want to go ahead changing MLS
+    to Liga MX by yourself... Good luck and patience.
+
+    9. Its a first version of the game so some content can be missing or not done yet. Remember this is a small team
+    project and getting all the kits, stats, transfers, leagues and such is a huge task to get it done considering
+    almost all leagues barely started two months ago. Its not KONAMI or EA, its a fan project. Updates will come and fix
+    and bring more missing things, just BE PATIENT.
+
+    10. The installation method will be the same for every platform, and remember that if you have a Steam Deck the
+    installation method given by eskay will be the same, but only needs to be renamed to SP Football Life 2026:
+    [https://github.com/eskay993/gamefiles/tree/main/sp-football-life-2025](https://github.com/eskay993/gamefiles/tree/main/sp-football-life-2025)
+    . Although, some further things may be considered launching this year edition due to EXE changes but follow this:
+    [https://github.com/eskay993/gamefiles/issues/55#issuecomment-3380270322](https://github.com/eskay993/gamefiles/issues/55#issuecomment-3380270322)
+
+    11. (and last): the only patch that will support FL26 with new leagues and improvements will be Ultimate Master
+    League (UML), and a first version compatible with FL26 will come later this October and you have the details on the
+    pinned thread. No more MegaPatch for FL26. No, stop asking about getting MegaPatch 3.1 things ported, almost 90% of
+    th patch is outdated by now. Fanurex things, on their Discord, please.
+
+
+    \* You may know now, after reading all this, that FL is like having PES 6 but updated for every year, its just a PES
+    6 2.0 experience. You don't ask, after more than a decade, to PES 6 to be better or improved, you take as it is and
+    enjoy. Even if PES 6 is overrated and PES 5/WE9LE were leagues better, but that's another topic ;)
+
+
+    ***--- UPCOMING THINGS ---***
+
+
+    * There will be a megathread with custom soundtracks made by me created here in this sub, as it was one of the most
+    requested and highly praised things by a lot of people here (and I'm hugely impressed and thankful for that), so you
+    can discover and play with new music on your Football Life game. Of course, requests or other soundtracks can be
+    given/uploaded by people and added to the megathread, so everyone can choose depending their music taste. The thread
+    will be created soon. Because what's a football game without decent or memorable music? NOTHING!
+
+    * A UML Facepack V2 is getting worked by me. It will be only UML compatible due to ID changes. For FL26 vanilla (no
+    mods), use their Real Faces 26/27 as they optimized, updated and saved space for it.
+
+    * The gameplay mod thread will get an overhaul with new mods, a new package and links so you can try whatever you
+    want. Remember: best gameplay mod is the one that works for you. There's no superduper awesome gameplay mod that
+    fixes BAL AI behavior, makes goalkeepers human, gets compact midfield or whatever. If you want that, go play
+    eFootball offline, I'm not joking. Don't expect these things on a 6 year old game.
+
+
+    See you again tomorrow on the FL26 official release day!
+  post_hint: ''
+  url_overridden_by_dest: ''
+  preview_image_url: ''
+  gallery_urls: []
+- id: 1vqfdms
+  title: >-
+    Pull Strings 师兄太稳健 from 👖 Youku and 🥝 iQIYI. 📣🗓️ Airing on August 19, 2026 at 12:00 pm. Starring Ao Ruipeng, Sun
+    Zhenni, Ai Mi and Ao Ziyi. New trailer.
+  subreddit: r/CDrama
+  author: admelioremvitam
+  score: 153
+  comments: 53
+  url: https://www.reddit.com/r/CDrama/comments/1vqfdms/pull_strings_师兄太稳健_from_youku_and_iqiyi_airing_on/
+  created_utc: 1786932455
+  selftext: >+
+    [**Trailer with official English subs**](https://x.com/i/status/2089176744519704878) by Youku on Twitter/X.
+
+
+    ***
+
+
+    ***Note: Availability on iQIYI may be regional. At the time of posting, the drama has not appeared on Viki.***
+
+
+    *The Chinese drama title, 师兄太稳健, can be translated as “my senior brother disciple is too reliable.”*
+
+
+    ***
+
+
+    A few minutes ago, the production team announced the release date and dropped a new trailer.
+
+
+    Note: The production team used [虚拟拍摄技术](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%8B%8D%E6%91%84/10507818)
+    (which can be translated as “virtual filming technology”) that is a filmmaking method that combines real-time
+    computer-generated (CG) environments with live-action filming, allowing actors to perform inside digital sets
+    instead of relying entirely on physical sets or green screens.
+
+
+    More details are at the bottom of the post. I included a few behind-the-scenes photos in the comments.
+
+
+    Clip description:
+
+
+    *“Gou Buddies Team-Up” Trailer*
+
+
+    *In the chaotic world of the Primordial Wilderness, the steady and cautious senior brother originally intended to
+    “gou” (play it safe, stay low-key, avoid unnecessary risks, and survive by being cautious) his way through it all,
+    but then he encounters a cool and aloof war-goddess fairy, an energetic junior sister, the adorable Second Dragon
+    Prince, the artistic Heavenly Emperor… When everyone gathers together, will it be loving each other while fighting
+    each other? Will they band together to survive? Or is there a shocking conspiracy hidden beneath the surface?*
+
+
+    *On August 19, the gou friends assemble! Follow Senior Brother as he hilariously ventures through the Primordial
+    Wilderness!*
+
+
+    ***
+
+
+    **Cast:**
+
+
+    More information regarding the actor credit guidelines in [this summary
+    here](https://www.reddit.com/r/CDrama/s/64RnpxCl7V) and [the full notice
+    here](https://www.reddit.com/r/CDrama/s/ewoyufbmUa).
+
+
+    (I put the character stroke count as: 1️⃣2️⃣3️⃣)
+
+
+    Leading actor (sorted by the number of character strokes in the surname):
+
+    * 🔟 Ao Ruipeng 敖瑞鹏 as Li Changshou 李长寿 (Changshou can be translated as “longevity”)
+
+    Special appearances (sorted by the number of character strokes in the surname):
+
+    * 6️⃣ Sun Zhenni 孙珍妮 as Yun Xiao Xian Zi (Immortal/Fairy Yun Xiao)
+
+    * 7️⃣ Chen Ai Mi 陈艾米 (stage name: Ai Mi 艾米) as Lan Ling'e
+
+    * 🔟 Ao Ziyi 敖子逸 as Ao Yi
+
+
+    Appearances (sorted by the number of character strokes in the surname):
+
+    * Yu Yi 于毅 as Qi Yuan
+
+    * Li Zhehao 李哲豪 as Hao Tian
+
+    * Zhang Changning 张常宁 as Youqin Xuanya
+
+    * Zeng Ni 曾妮 (stage name: Zeng Keni 曾可妮) as Jiu Jiu
+
+
+    ***
+
+
+    * Episodes: 30 (according to Baidu Baike and MDL)
+
+    * Streaming platforms: [Youku](https://www.youku.tv/local_midway/call_app_share?action=play&vid=XNjU1NzIzMzIyOA==)
+    👖 and iQIYI 🥝 (availability may be regional)
+
+    * Official filming started: October 24, 2024
+
+    * Official filming wrapped up: February 10, 2025
+
+    * Estimated filming time: 120 days
+
+    * Filming location: Hengdian World Studios
+
+    * Genre: xianxia, light comedy (according to Baidu Baike)
+
+
+    ***
+
+
+    * 🎬 Director: [Sam Ho 何澍培](https://mydramalist.com/people/35255-sam-ho) (The Blossoming Love, Back from the Brink,
+    And the Winner Is Love, The Legend of Dugu, Taichi Master, The Mystic Nine)
+
+    * ✍️ Original creator: [Yan Gui Zheng Zhuan
+    言归正传](https://baike.baidu.com/item/%E8%A8%80%E5%BD%92%E6%AD%A3%E4%BC%A0/58566388)
+
+    * ✒️ Screenwriter: [Xu Boxiang](https://baike.baidu.com/item/%E5%BE%90%E4%BC%AF%E7%BF%94/2947258) (The Tengen)
+
+    * 📖 Novel: [My Senior Brother Is Too Steady
+    我师兄实在太稳健了](https://baike.baidu.com/item/%E6%88%91%E5%B8%88%E5%85%84%E5%AE%9E%E5%9C%A8%E5%A4%AA%E7%A8%B3%E5%81%A5%E4%BA%86/24160048)
+
+    * 📽️ Production companies: Youku, Jiangsu Yuanqimanman Film & Television Culture
+
+
+    ***
+
+
+    🔗 [Previous posters, wrap up special, BTS clip,
+    etc.](https://www.reddit.com/r/CDrama/search/?q=%22Pull+Strings+%E5%B8%88%E5%85%84%E5%A4%AA%E7%A8%B3%E5%81%A5%22&type=posts&sort=new)
+
+
+    🎙️ [OST List](https://www.reddit.com/r/CDrama/s/SFozpuMtkT)
+
+
+    ***
+
+
+    [Synopsis from the Youku app](https://www.youku.tv/local_midway/call_app_share?action=play&vid=XNjU1NzIzMzIyOA==):
+
+
+    Li Changshou [played by Ao Ruipeng], a terminally ill patient in his previous life, is reborn into the Primordial
+    World as a low-level Qi cultivator who cherishes life and avoids all karmic entanglements.
+
+
+    Determined to dodge the great calamity foretold by the Heavenly Dao, he adopts the "Way of Steady" - his ultimate
+    goal being to secure a humble post in the Heavenly Court and survive quietly. He operates with extreme caution: when
+    still, he's as steady as an old dog; when he moves, he shakes the heavens. He firmly believes the era of bloodshed
+    is over - better to trick than to kill, better to stay single than to fall in love.
+
+
+    ⚠️ *Plot spoilers!* ⚠️
+
+
+    >!Yet enemies and beauties keep surging toward him like tides. Before he knows it, he becomes a mastermind pulling
+    strings behind the scenes, entangled in power plays among multiple factions, orchestrating the "Dragon Clan's ascent
+    to Heaven" - and even the great calamity itself accelerates toward him…!<
+
+
+    ***
+
+
+    [Synopsis from MDL](https://mydramalist.com/752075-wo-shi-xiong-shi-zai-tai-wen-jian-le):
+
+
+    After being reborn in ancient times before the Great God-Conferment War, Li Chang Shou becomes a minor cultivator.
+    He is neither destined for great things nor great woe. His only dream is to live a long life as a cultivator. In
+    order to survive in the cruel Primordial Times, Li Chang Shou tries hard not to accumulate any karma – killing
+    inevitably leads to feuds.
+
+
+    Thus, he always plans thoroughly before doing anything and never allows himself to walk into dangerous situations.
+    He hides his trump cards well, trains himself in escape techniques, refines poisonous pills, and masters his
+    mystical abilities. Before making any moves, he takes on an extremely steady demeanor. Yet, every move of his ends
+    up earth-shattering. Once he is done, he will disappear without a trace.
+
+
+    Li Chang Shou originally plans to remain hidden and safe in the mountain. There, he is supposed to cultivate until
+    he ascends to immortality. However, everything changed one year when his master seems to think that their lives are
+    too peaceful…. He takes in a junior sister….
+
+
+    (Source: Novel update)
+
+
+    ~~ Adapted from the web novel "My Senior Brother Is Too Steady" (我师兄实在太稳健了) by Yan Gui Zheng Zhuan (言归正传).
+
+
+    🔎 [Baidu Baike](https://baike.baidu.com/item/%E5%B8%88%E5%85%84%E5%A4%AA%E7%A8%B3%E5%81%A5/63145430) |
+    [Douban](https://m.douban.com/movie/subject/36406417/) |
+    [MDL](https://mydramalist.com/752075-wo-shi-xiong-shi-zai-tai-wen-jian-le)
+
+
+
+    ***
+
+
+    📖 [**Novel Summary** – translated from Baidu
+    Baike](https://baike.baidu.com/item/%E6%88%91%E5%B8%88%E5%85%84%E5%AE%9E%E5%9C%A8%E5%A4%AA%E7%A8%B3%E5%81%A5%E4%BA%86/24160048):
+
+
+    **My Senior Brother Is Too Steady 《我师兄实在太稳健了》** is a xianxia web novel by Platinum Writer Yan Gui Zheng Zhuan 言归正传
+    under Yuewen Group. It began serialization on Qidian on October 13, 2019, and concluded on November 25, 2022, with a
+    total of approximately 3.65 million Chinese characters.
+
+
+    The novel was adapted into the animated series **Big Brother 《师兄啊师兄》**, with its annual season, **Big Brother Season
+    2 《师兄啊师兄 年番2》**, premiering on June 5, 2025. Its live-action adaptation, **Pull Strings 《师兄太稳健》**, is directed by
+    Sam Ho and stars Ao Ruipeng as Li Changshou and Sun Zhenni as Fairy Yunxiao. The drama premiered in 2026.
+
+
+    The novel pioneered the "steady-flow" (稳健流) style of web fiction, propelling the term "steady" (稳健) to the No. 1
+    annual buzzword on Qidian. It also topped Qidian's New Releases Dominance Ranking for two consecutive months,
+    amassed over 4.63 million total bookmarks, and surpassed 28 million paid subscriptions. It ranked second on the 2020
+    Original Literature Rankings for Male-Oriented Works and was honored with the 2022 China Novel Society "Outstanding
+    Online Novel" award.
+
+
+    The audiobook, narrated by Wolong Canxue, consists of 437 episodes and has accumulated more than 11.26 million
+    recommendation votes.
+
+
+    The drama adaptation used virtual production technology 虚拟拍摄技术* to create its primordial fantasy world, setting a
+    domestic record for the highest proportion of virtual-production environments, with virtual sets accounting for
+    nearly 40% of all scenes in the series.
+
+
+    Set in a primordial mythological world (Honghuang 洪荒) and blending elements from Investiture of the Gods with the
+    conventions of mainstream Honghuang fiction, the novel follows Li Changshou, a modern man who transmigrates into the
+    cultivation world and joins the Du Immortal Sect. Relying on a cultivation philosophy centered on "steadiness" –
+    concealing his true strength and meticulously planning every move – he gradually rises to become a key figure in the
+    Heavenly Court. During the Great Investiture Tribulation, he >!opposes the Dao Ancestor Hongjun and ultimately
+    sacrifices the Great Dao of Balance to secure victory.!< Along the way, he formulates the Scripture of Steadiness
+    《稳字经》, establishing guiding principles such as "act steadily, avoid karmic entanglements, and never seize
+    opportunities by force."
+
+
+    The novel highlights Li Changshou's exceptionally cautious personality through recurring motifs such as "always
+    scatter the ashes after killing an enemy" and "keep hidden trump cards while mastering escape techniques." It also
+    develops memorable characters including Fairy Yunxiao and Lan Ling'e.
+
+
+    Through major events such as founding the South Sea Divine Cult to forge an alliance with the Dragon Clan and
+    rescuing the Du Immortal Sect, Li Changshou gradually evolves from someone guided solely by a strategy of prudence
+    into a leader willing to shoulder the greater responsibility of safeguarding the world.
+
+
+    *Note: Virtual production technology 虚拟拍摄技术 is a filmmaking method that combines real-time computer-generated (CG)
+    environments with live-action filming, allowing actors to perform inside digital sets instead of relying entirely on
+    physical sets or green screens.
+
+
+    ***
+
+
+
+    📽️ **Virtual Filming Technology** – translated excerpt from Youku:
+
+
+    >Snowflakes drift down from the sky. A roughly four-meter-tall dead tree stands alone atop the cliff, together with
+    the undulating mountains in the distance, creating a breathtaking, desolate scene of the primordial world...
+
+
+    >On December 11, [2024,] at the virtual filming site for Youku’s costume xianxia drama *#Pull Strings**, this bleak
+    winter scene seen on the director’s monitor existed in reality almost entirely within a 10-meter-tall LED screen.
+    Apart from the dead tree and a few stone blocks, everything else was only displayed on the screen.
+
+
+    >It’s not just this mountaintop snow scene. The production will also use virtual filming to create 19 other
+    settings, including Lingxiao Palace, the Marriage Bureau, and the underwater Dragon Palace.
+
+
+    >Chief Producer Wang Ping said that **Pull Strings** did not make extensive use of virtual production simply to
+    create a model example of the technology, “but because it genuinely needs it – it’s an essential requirement.” With
+    virtual filming accounting for nearly 40% of the entire production, and two studios carrying out virtual filming
+    simultaneously, the series has also set a new benchmark for the application of virtual production in the film and
+    television industry.
+
+
+
+    References:
+
+
+    * 🎥 [Behind-the-scenes clip showing the use of virtual filming](http://xhslink.com/o/15hiOhdYig5)
+
+
+    * 📚 [Baidu Baike: 虚拟拍摄 Virtual Filming](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%8B%8D%E6%91%84/10507818)
+
+
+    * 📚 [Wikipedia: On-set virtual production](https://en.wikipedia.org/wiki/On-set_virtual_production)
+
+
+    ***
+
+
+    **Translated Synopses**
+
+
+    Note: All translated synopses and information I share in the "trailers & posters" posts are based on the original
+    Chinese sources (Douban, Baidu, Chinese Wikipedia, etc.) and were first published here. If you see them elsewhere,
+    please know they originated from our sub. Thanks for reading!
+
+
+    ***
+
+
+    📊 Information and translations compiled by u/admelioremvitam.
+
+
+
+  post_hint: hosted:video
+  url_overridden_by_dest: https://v.redd.it/nw549ihkfujh1
+  preview_image_url: >-
+    https://external-preview.redd.it/NGhmdXhhamtmdWpoMQBiDB3sbFgNO7ARnKlBsC1ut0PN8F2L4Jm1g78U7zb7.png?format=pjpg&auto=webp&s=5ba3055de5348648127b11a6e1225a6d558fd058
+  gallery_urls: []
+- id: 1t68goo
+  title: 'Ranking on Google vs. Showing Up in AI Answers: What’s More Valuable in 2026?'
+  subreddit: u/BusySeedAgency
+  author: BusySeedAgency
+  score: 14
+  comments: 110
+  url: https://www.reddit.com/r/u_BusySeedAgency/comments/1t68goo/ranking_on_google_vs_showing_up_in_ai_answers/
+  created_utc: 1778155309
+  selftext: "https://preview.redd.it/04kl12t38azg1.png?width=2240&format=png&auto=webp&s=fd5650261ddeb21ff0ee653b4e148d4d954af992\n\n**TL;DR**\n\n* **58.5% of U.S. Google searches** end with zero clicks, indicating that traditional search engine ranking is no longer enough to drive meaningful traffic and revenue ([SparkToro, 2024](https://sparktoro.com/blog/2024-zero-click-search-study-for-every-1000-us-google-searches-only-374-clicks-go-to-the-open-web-in-the-eu-its-360/)).\n* Click-through on organic listings for searches that return an AI summary falls **from 15% to just 8%**, based on data analyzing 68,879 searches ([Pew Research Center, 2025](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/)).\n* Traffic to our AI platform **increased by +28.6%** from January 2025 to January 2026, but AI-driven referrals to external sites flatlined, illustrating that AI answers generate influence, not volume ([Similarweb, 2026](https://www.similarweb.com/blog/marketing/geo/gen-ai-stats/)).\n* ChatGPT referral data showed an average time on site of **15 minutes**, substantially higher than the **8 minutes** from Google referrals, and a 7% referral-to-conversion rate, compared to Google’s 5% ([Similarweb, 2026](https://www.similarweb.com/blog/marketing/geo/gen-ai-stats/)).\n* The **winning strategy** for 2026 is not simply applying SEO or GEO but both methodologies operating in conjunction: SEO to capture converted prospects and GEO to influence their decisions.\n\n\n\n# Is Google's Future as a Dominant Search Player Even Uncertain in 2026?\n\nSearch isn’t dead. It’s been remapped. Google still processes billions of searches daily, and search engine ranking remains one of the strongest signals of trust and authority online. What has changed is the contract between search and clicks.\n\n\n\nA 2024 zero-click study reports that for every 1,000 U.S. Google searches, **only 374 clicks go to the open web**, a number **already below 50%** before AI answers began reshaping search ([SparkToro, 2024](https://sparktoro.com/blog/2024-zero-click-search-study-for-every-1000-us-google-searches-only-374-clicks-go-to-the-open-web-in-the-eu-its-360/)). With generative AI answers now prevalent, the math grows tougher. The real question for marketers in 2026 isn’t “Am I ranking?” but: “**Am I relevant? Where are decisions being made, and am I visible there?**”\n\n\n\nThis is where search engine rankings prove their value. Once you earn visibility, AI answers can amplify your voice before users even realize they have a question. Both matter, and neither is sufficient alone.\n\n\n\n# Why Does Search Engine Ranking Still Matter in 2026?\n\nRanking at the top of search results still drives **significant conversions**. When users search for your brand, pricing, demos, or integrations, appearing at the top of Google or other search engines delivers immediate answers. Industry data reveals that AI Overviews **decrease the click-through rate (CTR) of the #1 organic result by 34.5%** ([Ahrefs, 2025](https://ahrefs.com/blog/ai-overviews-reduce-clicks/)).\_\n\n\n\nBalancing these shifting click rates requires a specialized, dual-channel approach. If you are looking for the best AI driven SEO content agency, [BusySeed](https://www.busyseed.com/) can seamlessly integrate these methodologies to protect your click share and grow your authority.\n\n\n\n# Does Organic Ranking Still Drive Conversions for Commercial Queries?\n\nAbsolutely, especially for **lower-funnel content** like pricing or location-based queries such as “social media agency near me.” These users aren’t seeking an AI summary; they want to land on a page and take action. A critical distinction lies in query intent.\n\n\n\nA 2025 AI Overviews study analyzing over **10 million keywords** found that AI answers are triggered for informational, commercial, and transactional queries ([Semrush, 2025](https://www.semrush.com/blog/semrush-ai-overviews-study/)):\n\n* Commercial queries now trigger AI answers at an **18.57% rate** (up from 8.15% in October 2024).\n* Transactional queries trigger at **13.94%** (up from 1.98%).\n\nRanking for these terms isn’t enough; you need structured, authoritative content that either earns a citation from the AI summary or **converts users after they click**.\n\n\n\n# Why SEO Is Dying (Even If Traffic Isn’t)\n\n“Is this company legitimate?” remains one of the most-searched phrases across many industries. Despite shifts in search behavior, prospects still type this question and review websites, as search results predominantly direct users to websites.\n\n\n\nRanking highly for such searches signals credibility to Google and prospects alike. Even without a click, Google imparts brand credibility through impressions. An analysis of Google AI Overviews shows **impressions increased by 49%** since launch, while **clicks decreased by 30%** ([BrightEdge, 2025](https://www.brightedge.com/news/press-releases/one-year-google-ai-overviews-brightedge-data-reveals-google-search-usage)).\n\n\n\nThis doesn’t mean SEO is fading; it means rethinking how you measure it. Strong search engine ranking drives visibility, discoverability, and credibility for target queries, **even without clicks**.\n\n\n\n# AI Answers and User Behavior: Peeling Back the Layers\n\nAn analysis of **68,879 Google searches** in March 2025 reveals that AI answers shrink the decision-making process, satisfying intent before a click occurs ([Pew Research Center, 2025](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/)). **Only 8% of users** clicked on an organic link when presented with an AI summary, compared to **15% without one**. Of the **42% who clicked a source link** within the AI summary, **only 1% clicked the source link itself**. AI answers resulted in **10% more end-browsing sessions** than searches without them.\n\n\n\nThe key takeaway: **25% of users** find what they need in the answer layer and depart satisfied. If your brand isn’t included in the AI summary, you’re invisible at a **critical moment of influence**.\n\n\n\n# Are AI Answers Genuinely Replacing Search, or Just Adding a Layer?\n\nAI answers introduce a new checkpoint in the influence chain. They don’t replace the web but filter search behavior before clicks occur. Brands that appear in this checkpoint receive “**Consideration Framing**,” while those that don’t are disadvantaged before users even visit a site.\n\n\n\nA 2026 AI Index report highlights explosive generative AI growth, with **53% population adoption**, faster than PCs or the internet ([Stanford HAI, 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report)). The U.S. adoption rate is **28.3%**, with **$172 billion in consumer value** projected by early 2026. AI answers are no longer a niche feature; in three years, capitalizing on them will be **harder than it is today**.\n\n\n\n# What Does AI Summary Visibility Actually Deliver in Traffic Terms?\n\nWhile AI platform visits are lower than those for traditional SEO, engagement per click is higher. A 2026 GEO analysis shows that visits to leading AI platforms **grew by 28.6%** from January 2025 to January 2026, while referrals to external sites **remained flat** ([Similarweb, 2026](https://www.similarweb.com/blog/marketing/geo/gen-ai-stats/)). However, users referred by ChatGPT spend **15 minutes on the site versus 8 minutes** from Google, view **12 pages versus 9**, and **convert at 7% versus 5%**.\n\n\n\nAI answers are **influence assets**, not traffic faucets. Measure them accordingly. Users arriving from an AI summary are **farther along in their journey** than cold organic visitors.\n\n\n\n# Intuitive Analogies for Algorithmic Dynamics: Uncovering Mechanisms and Impacts\n\nDiscoverability has evolved into two distinct equations:\n\n1. The **traditional equation** means maintaining a search engine ranking high enough to appear in indexed results.\n2. The **new GEO-driven discoverability equation** means being cited, mentioned, or summarized in AI answers, potentially without ranking as a link.\n\nBoth forms of discoverability increase brand visibility but serve **different goals at different stages** of the funnel, requiring distinct optimization strategies.\n\n\n\n# What Do “Anxious” Brands Look Like?\n\nWe analyzed hundreds of AI answers to identify common traits of cited brands. Five key characteristics emerged:\n\n1. **Entity clarity:** Unambiguous definitions, consistent naming, and tightly clustered topics signal authority to AI models.\n2. **Evidence density:** Original statistics, benchmarks, and comparison tables provide high-confidence content for **AI answers**.\n3. **Scannable truth statements:** Brief, quotable statements enhance summarization.\n4. **Source transparency:** Links to original sources, publication years, and transparency notes build trust.\n5. **Maintenance signals:** Updated timestamps and “last reviewed” stamps signal freshness to AI systems.\n\nAccording to recent data, **only 1% of Google users** click links from AI summaries ([Pew Research Center, 2025](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/)). While clicks are valuable, **citations are a bigger win**. Being quoted in an AI summary is a significant achievement, even without a click.\n\n\n\n# How Does Discoverability Through AI Platforms Compare to Google in Raw Traffic Terms?\n\nGoogle remains the largest traffic referrer, accounting for **97% of referrals** to the top 1 million websites. June 2025 data shows **1.13 billion visits** from AI platforms (0.64% of all referrals) to the top 1,000 websites globally ([Similarweb, 2026](https://www.similarweb.com/blog/marketing/geo/gen-ai-stats/)). Google Search accounted for **191 billion visits**, with **99.9% of those visits** coming from AI referrals. The news and media sector saw the **largest YoY growth** in AI referrals, at **770%**, accounting for **47% of all AI referrals**. AI referral traffic **grew +357% YoY** from June 2024.\n\n\n\nThere’s a strategic window of opportunity. Brands that become discoverable for AI-related topics train users and models to associate their brand with those topics. Future citations will come from models that already recognize you, unless a stronger authority emerges. **The cost of investment is low now**, but delaying risks losing this growing market.\n\n\n\n# Stack That Dip: Make SEO & AI Your Own\n\nWhile neither channel dominates overall effectiveness, each excels at **different stages of the buyer journey**. The following table illustrates the practical ROI for each channel by funnel stage, query type, and user intent.\n\nhttps://preview.redd.it/rnjf0r0m8azg1.png?width=2240&format=png&auto=webp&s=7d62ed910debe8f03ec9eaa31ba0c084c6da3eb7\n\n\n\nWhile AI answers dominate upper-funnel influence, lower-funnel conversion remains driven by search engine ranking. A **dual strategy is essential** for full-funnel revenue attribution in 2026.[ Discover our solutions at BusySeed](https://www.busyseed.com/solutions) to see how we build strategies that capture both top-of-funnel awareness and direct conversions, ensuring no prospect falls through the cracks.\n\n\n\n# What Is Generative Engine Optimization and Why Does It Matter Now?\n\nGenerative Engine Optimization (GEO) optimizes content so AI language models recognize, link to, and quote your brand in AI answers. GEO extends SEO principles: **identification, findability, credibility, and usefulness**, applied to “**discovery engines**” to ensure maximum discoverability.\n\n\n\n# GEO Content vs Standard SEO: Which Is More Efficient?\n\n* **Traditional SEO** optimizes websites for crawlers to index pages for **keyword matching**.\n* **GEO** focuses on language models interpreting **meaning, context, and authority relationships**.\n\nWhile technical requirements overlap, content optimization differs significantly.\n\n\n\nSearch Central guidance on AI search, published in May 2025, states that minor modifications to indexing and serving results are needed to capitalize on “AI search” ([Google, 2025](https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search)). Pages must be **crawlable**, structured data must **match content**, and snippet controls must be implemented correctly. No special AI prompts or tricks are required for visibility in an AI summary or AI answers.\n\n  \nBot documentation explains how site owners can allow crawling for search inclusion versus training data ([OpenAI, 2025](https://platform.openai.com/docs/bots)):\n\n* **OAI-SearchBot** surfaces sites for ChatGPT search features.\n* **GPTBot** crawls for training data.\n\nThe decision is now **geo-specific**, not just a hygiene choice.\n\n\n\n# Does Blockchain in Digital Marketing Live Up to the Hype?\n\nA citation hierarchy is emerging. An analysis of the **top 50 sites** receiving AI chatbot traffic shows ([Similarweb, 2026](https://www.similarweb.com/blog/marketing/geo/gen-ai-stats/)):\n\n* YouTube received **37.9 million** AI referral visits in May 2025.\n* Wikipedia followed with **10.1 million**.\n* Amazon received **4.6 million**.\n\nThese numbers reflect the **quality, authority, and reliability** of well-maintained content trusted by AI models.\n\n\n\nLarge brands and agencies may soon compete for GEO citations in their categories. Historically, smaller brands investing in niche directories competed for citations after larger competitors dominated the space. This pattern repeats in AI answers, where **early adopters gain a powerful advantage**. Capitalizing on this strategic window requires precise execution. [Partner with BusySeed](https://www.busyseed.com/contact-us) to secure these early GEO citations by structuring content that AI models naturally trust and reference.\n\n\n\n# How Should BusySeed Clients Measure Both Channels in 2026?\n\nTraditional SEO metrics won’t fully capture AI-powered performance. **Sessions and page views are less relevant** when the goal is influencing decisions before clicks. Key GEO and visibility statistics can be identified using specialized AI measurement platforms ([Similarweb, 2026](https://www.similarweb.com/blog/marketing/geo/gen-ai-stats/)).\n\n\n\n# What Does a 2026-Ready Measurement Scorecard Look Like?\n\nMeasure both conversion capture and decision influence with equal rigor.\n\n* **For SEO (conversion capture):**\n   * Non-brand organic sessions segmented by funnel stage\n   * Track revenue and pipeline for organic first-touch and assisted conversions\n   * Brand search volume as an indicator of awareness generated by AI answers\n   * Conversion rate by landing page for organic traffic segments\n* **For AI answer visibility (decision influence):**\n   * Volume of AI answers referencing your brand per core topic\n   * Citation inclusion rate for category-defining queries\n   * Downstream behavioral signals: traffic increases, branded query trends, demo request velocity\n   * Average selling price and AI adoption rate\n\n\n\nIf you only measure clicks, you’ll underspend on the channel winning before the click: putting people on the shortlist. Shifting your metrics from simple clicks to true decision influence can be complex. [BusySeed](https://www.busyseed.com/) sets up and manages these advanced scorecards so you always know exactly which channels are driving your pipeline.\n\n\n\n# The Expanding Palette: Is Cryptocurrency Simply the Latest Evolution in Digital Payments?\n\nThe ROI of AI answers versus search engine ranking isn’t solely the marketing team’s responsibility. **Platform rules and regulatory actions** also play a role. The September 2025 ruling against Google, following an antitrust suit over its **90% market share**, has already impacted how Google delivers AI answers and treats publisher data ([U.S. Department of Justice, 2025](https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google)).\n\n\n\nGoogle’s self-preferencing in search is under investigation as part of the Digital Markets Act enforcement ([European Commission, 2025](https://digital-markets-act.ec.europa.eu/commission-sends-preliminary-findings-alphabet-under-digital-markets-act-2025-03-19_en)). Regulatory attention will drive changes in how content appears in Google’s answer layer. Brands diversifying through SEO and GEO are **somewhat protected against regulatory action** targeting a single platform. GEO should be treated as **infrastructure, not experimentation**.\n\n\n\n# What Is the Actionable 8-Step Checklist for Dual SEO and GEO Optimization in 2026?\n\nThis checklist helps marketing teams implement GEO-optimized content without starting from scratch.\n\n1. **Ensure your robots.txt allows AI crawlers for OAI-SearchBot and GPTBot:** Audit your robots.txt file to allow or block AI crawlers. Many brands inadvertently block AI-powered content discovery.\n2. **Assign target queries to funnel stages and channel intent:** Use tools like Semrush or Ahrefs to identify keywords picked up by AI Overviews. Categorize by informational, commercial, and transactional intent.\n3. **Structure data on key content pages:** Incorporate structured data into articles, FAQs, product pages, and how-to content. Ensure Google’s AI Overviews understand entity relationships.\n4. **Upgrade top-performing content for evidence density:** Replace generic statements with hard numbers, benchmarks, and credible sources. Spread quotable truth statements throughout the content.\n5. **Add “last reviewed” dates and methodology notes:** Signals of content maintenance matter to AI. Evergreen content without updates signals risk of citation loss.\n6. **Monitor monthly AI answers:** Review 20-30 priority queries across ChatGPT, Perplexity, and Google’s AI Mode. Track brand mentions, treatment, and competitive share of voice.\n7. **Update reporting dashboards to include impression share:** [BrightEdge](https://www.brightedge.com/news/press-releases/one-year-google-ai-overviews-brightedge-data-reveals-google-search-usage) found impressions grew by 49% while CTR decreased by 30%. Measure impressions alongside sessions.\n8. **Assign content owners for GEO-specific formats:** Citation-optimized content like comparison tables, FAQs, and benchmark reports requires a different editorial approach. Track citations as a formal KPI.\n\nThe [BusySeed team](https://www.busyseed.com/?gclid=CjwKCAjwrfCBhAXEiwAnkmKmS3oHbR_EkcN_UoQN8WoOxl105ixObZlz3wUSQIrHbPCc5amwCGN9BoC8y0QAvD_BwE) can assist with creating and executing a dual-channel strategy and tracking ROI with the right tools.\n\n\n\n# Which Is More Valuable in 2026?\n\n**Both.** A search engine ranking is a **conversion capture system** that directs highly intent buyers to your site for **optimal conversion**. According to a 2026 AI Index report, **78% of global organizations** used AI in 2024, up from **55% the prior year** ([Stanford HAI, 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report)). While AI-powered chatbots handle inquiries, buyers still conduct web visits for vendor research and comparisons. Thus, search engine ranking remains a critical business driver.\n\n\n\nInteractions with AI answers represent a **decision influence system**. AI answers direct users’ consideration sets and frames evaluation criteria before they click. Brands included in an AI summary become familiar, authoritative, and associated with key decision factors. When users interact with your site, they’re **warmer leads**, spend **more time**, and **convert at higher rates**.\n\n\n\nIn 2026, marketing leaders won’t choose between creating content for organic search engine ranking and AI answers. Instead, they’ll create **structured, authoritative content** that ranks organically and appears in an AI summary, tracked through a **scorecard measuring both traffic and visibility**.\n\n\n\n[BusySeed](https://www.busyseed.com/?gclid=CjwKCAjwrfCBhAXEiwAnkmKmS3oHbR_EkcN_UoQN8WoOxl105ixObZlz3wUSQIrHbPCc5amwCGN9BoC8y0QAvD_BwE) builds categories one line of code at a time. We **design**, **build**, and **maintain** systems for technical SEO, content creation, GEO optimization, and revenue attribution from all marketing channels. If you’re optimizing for one channel but not both, you’re leaving money on the table.\n\n\n\n# Your Next Best Move: Bridging the Gap Between Search and AI\n\nAI can deliver **step-change performance** in your visibility, but it only compounds over time if search engines and large language models alike trust your content. The market standard is shifting rapidly from basic keyword indexing to **complex entity recognition** and **citation mapping**.\n\n\n\nIf you are running an outdated digital strategy, this is the exact moment to:\n\n* **Audit** your technical stack.\n* **Structure** your data.\n* **Implement** rigorous GEO methodologies.\n\nYou earn the right to influence user decisions when you **protect your organic credibility first**.\n\n\n\nIf you want a partner who blends proven SEO performance with principled, cutting-edge discoverability, [let’s talk!](https://www.busyseed.com/contact-us) BusySeed can help you operationalize your content strategy for generative models, from **technical audits** and **structured data mapping** to **implementation** and **tracking**, without sacrificing your current click share. Start here to future-proof your growth: [BusySeed](https://www.busyseed.com/).\n\n\n\n# FAQs: Real Questions About SEO, GEO, and AI Visibility in 2026\n\n# 1. How Can I Help My Business With Generative Engine Optimization Without Rebuilding My Entire Content Strategy?\n\nInstead of rewriting every piece of content, **retrofit your strongest pieces for citability**. Focus on your **top 15-20 highest-trafficked** and converting pages. Ensure they include **statistics, clear bottom lines, and structured content**, such as tables or numbered lists, that AI models can extract for AI-generated answers. Narrative content with anchored evidence is less likely to be cited, while content with **verified benchmarks and fact-checked data** is ideal.\n\nThis is an **editorial improvement**, not just a technical one. Confirm your robots.txt allows AI crawlers, implement structured data for entity relationships, and monitor your site’s “appearance rate” in AI summaries. For most brands, the **largest gaps and fastest opportunities** lie in content, crawl access, and measurement. This structured approach also improves traditional SEO by making content **clear, properly sourced, and easy for AI models to understand**.\n\n\n\n# 2. How To Get My Website to Rank Higher on Google When AI Overviews Are Eating Click Share?\n\nFocus on optimizing for **outcomes rather than clicks**. A strong search engine ranking in 2026 means occupying positions that capture **intent-driven clicks**, particularly for commercial, transactional, and navigational queries. Spend more time optimizing **lower-funnel content** like pricing pages, comparison pages, and demo-request content that answers specific buying-stage questions.\n\nWhile CTRs have decreased for informational queries, **commercial and transactional queries still drive significant clicks and conversions**. Technical SEO factors like Core Web Vitals, mobile-first indexing, crawl efficiency, and internal link architecture remain unchanged. Recent data shows **impressions increased even as CTRs decreased**, meaning your content is being evaluated more frequently ([BrightEdge, 2025](https://www.brightedge.com/news/press-releases/one-year-google-ai-overviews-brightedge-data-reveals-google-search-usage)). A clean, fast, and optimized site will continue to reward you with increased visibility.\n\n\n\n# 3. Why Is SEO Becoming Ever More Competitive, and Is This Trend Going to Continue?\n\nTreat SEO and GEO as **one content and discoverability system**, not separate campaigns. Your ideal agency in 2026 will map your query universe, identify which queries trigger AI Overviews, and determine which still generate organic traffic. Your content strategy should **support both channels from the outset**.\n\n* **From an SEO perspective:** Look for a technical audit, structured data implementation, and page-by-page optimization for conversion-intent queries.\n* **From a GEO perspective:** Seek editorially led content solutions with citation use cases, such as benchmark documents, product comparisons, and evidence-based FAQs.\n\nThe agency should also provide traffic and visibility reporting. [BusySeed](https://www.busyseed.com/?gclid=CjwKCAjwrfCBhAXEiwAnkmKmS3oHbR_EkcN_UoQN8WoOxl105ixObZlz3wUSQIrHbPCc5amwCGN9BoC8y0QAvD_BwE) works with businesses to create dual-channel strategies using **appropriate attribution technology and insights** to measure pipeline and revenue contributions.\n\n\n\n# 4. How Do AI Answers Affect Paid Search Performance, and Should I Move More Budget to That Area?\n\nAI answers also reduce total click potential for advertisers. A November 2024 analysis found that when AI Overviews appeared, paid CTR **dropped by 21.27% to 9.87%**, a **53.6% decrease in traffic** for the same ad spend ([Seer Interactive, 2024](https://www.seerinteractive.com/insights/how-ai-overviews-are-impacting-paid-performance)).\n\nIt’s **not the time to abandon paid search**. Focus your investment on **branded, high-commercial-intent queries** and content gaps where AI Overviews haven’t appeared. Over time, shift some paid spend toward **GEO content investments and SEO authority-building** for better long-term ROI.\n\n\n\n# 5. How Do I Measure Discoverability in AI Platforms When There Are No Standard Analytics Integrations?\n\nMeasuring discoverability in AI platforms is still in its infancy. While no tool offers the functionality of Google Search Console, three methods can help:\n\n1. **Manual query sampling:** Run **25-50 priority queries monthly** across ChatGPT, Perplexity, Google AI Mode, and industry-specific AI tools. Evaluate whether your brand is cited, how it’s described, and which competitors appear in the same AI answer. Document findings to establish a **baseline citation rate and competitive share of voice**.\n2. **Downstream behavioral signals:** Monitor traffic behavior, branded query trends in Google Search Console, and the **velocity of demo or contact requests** in the absence of clicks but with AI summary presence. Users may visit your site or conduct branded searches even without clicking the embedded AI summary.\n3. **Emerging tooling:** While still limited, platforms like Semrush and Similarweb offer GEO-specific tools for tracking online visibility. Build relationships with analytics vendors to learn about their AI-powered discoverability reporting roadmap. Implement tracking as these tools mature. Brands developing measurement capabilities now will be **prepared for standardized reporting in the future**.\n\n\n\n# Works Cited\n\n* Ahrefs. “AI Overviews Reduce Clicks.” *Ahrefs Blog*, 2025, [https://ahrefs.com/blog/ai-overviews-reduce-clicks/](https://ahrefs.com/blog/ai-overviews-reduce-clicks/).\n* BrightEdge. “One Year of Google AI Overviews: BrightEdge Data Reveals Google Search Usage.” *BrightEdge News*, 2025, [https://www.brightedge.com/news/press-releases/one-year-google-ai-overviews-brightedge-data-reveals-google-search-usage](https://www.brightedge.com/news/press-releases/one-year-google-ai-overviews-brightedge-data-reveals-google-search-usage).\n* European Commission. “Commission Sends Preliminary Findings to Alphabet Under Digital Markets Act.” *Digital Markets Act*, 2025, [https://digital-markets-act.ec.europa.eu/commission-sends-preliminary-findings-alphabet-under-digital-markets-act-2025-03-19\\_en](https://digital-markets-act.ec.europa.eu/commission-sends-preliminary-findings-alphabet-under-digital-markets-act-2025-03-19_en).\n* Google. “Succeeding in AI Search.” *Google Search Central Blog*, 2025, [https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search](https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search).\n* OpenAI. “Bots Documentation.” *OpenAI Platform*, 2025, [https://platform.openai.com/docs/bots](https://platform.openai.com/docs/bots).\n* Pew Research Center. “Google Users Are Less Likely to Click on Links When an AI Summary Appears in the Results.” *Pew Research Center*, 2025, [https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/).\n* Seer Interactive. “How AI Overviews Are Impacting Paid Performance.” *Seer Interactive Insights*, 2024, [https://www.seerinteractive.com/insights/how-ai-overviews-are-impacting-paid-performance](https://www.seerinteractive.com/insights/how-ai-overviews-are-impacting-paid-performance).\n* Semrush. “Semrush AI Overviews Study.” *Semrush Blog*, 2025, [https://www.semrush.com/blog/semrush-ai-overviews-study/](https://www.semrush.com/blog/semrush-ai-overviews-study/).\n* Similarweb. “Gen AI Stats: AI Referral Traffic Winners.” *Similarweb Blog*, 2026, [https://www.similarweb.com/blog/marketing/geo/gen-ai-stats/](https://www.similarweb.com/blog/marketing/geo/gen-ai-stats/).\n* SparkToro. “2024 Zero-Click Search Study: For Every 1,000 US Google Searches, Only 374 Clicks Go to the Open Web.” *SparkToro Blog*, 2024, [https://sparktoro.com/blog/2024-zero-click-search-study-for-every-1000-us-google-searches-only-374-clicks-go-to-the-open-web-in-the-eu-its-360/](https://sparktoro.com/blog/2024-zero-click-search-study-for-every-1000-us-google-searches-only-374-clicks-go-to-the-open-web-in-the-eu-its-360/).\n* Stanford HAI. “2026 AI Index Report.” *Stanford HAI*, 2026, [https://hai.stanford.edu/ai-index/2026-ai-index-report](https://hai.stanford.edu/ai-index/2026-ai-index-report).\n* U.S. Department of Justice. “Department of Justice Wins Significant Remedies Against Google.” *U.S. DOJ*, 2025, [https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google](https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google)."
+  post_hint: ''
+  url_overridden_by_dest: ''
+  preview_image_url: ''
+  gallery_urls: []
+- id: 1prhi7t
+  title: (Off-topic) The confirmation you need that the Ai Bubble will burst in late 2026/ early 2027.
+  subreddit: r/ValueInvesting
+  author: raytoei
+  score: 115
+  comments: 115
+  url: https://www.reddit.com/r/ValueInvesting/comments/1prhi7t/offtopic_the_confirmation_you_need_that_the_ai/
+  created_utc: 1766246014
+  selftext: >-
+    ***(Note the flair: Humour on the weekend.*** ***~~Please don’t read, if you are easily triggered.~~*** ***too
+    late!***
+
+
+    Sam Altman says he’s ‘0%’ excited to be CEO of a public company as OpenAI drops hints about an IPO: ‘In some ways I
+    think it’d be really annoying’
+
+
+    December 19, 2025, 12:38 PM ET
+
+
+    OpenAI may be building up to one of the largest initial public offerings ever, but CEO Sam Altman says he is not
+    necessarily looking forward to helming a public company.
+
+
+    “Am I excited to be a public company CEO? 0%,” Altman said in an episode of the “Big Technology Podcast” published
+    on Thursday. “Am I excited for OpenAI to be a public company? In some ways, I am, and in some ways I think it’d be
+    really annoying.”
+
+
+    OpenAI is laying the groundwork for an IPO, with a Thursday report from The Wall Street Journal putting early talks
+    of a valuation at $830 billion. In a more lofty estimate, the company could be valued at up to $1 trillion, Reuters
+    reported in October, citing three sources. According to the Reuters report, chief financial officer **Sarah Friar is
+    eyeing a 2027 listing, with a potential IPO filing in late 2026.**
+
+
+    **Altman told “Big Technology” he didn’t know if his AI company would go public next year and was mum on details
+    about fundraising, or the company’s valuation.** OpenAI did not respond to Fortune’s request for comment.
+
+
+    Despite his hesitance to lead a public company—which are often under more scrutiny, greater regulatory oversight,
+    and are associated with less influence from founders—OpenAI’s IPO wouldn’t be all bad, Altman noted.
+
+
+    “I do think it’s cool that public markets get to participate in value creation,” he said. “And in some sense, we
+    will be very late to go public if you look at any previous company. It’s wonderful to be a private company. We need
+    lots of capital. We’re going to cross all of the shareholder limits and stuff at some point.”
+
+
+    An IPO would pave the way for OpenAI to raise the billions of dollars needed to compete in the AI race. Founded as a
+    nonprofit in 2015, OpenAI just completed a complex restructuring in October that converted it into a more
+    traditional for-profit company, giving the nonprofit controlling the company a $130 billion stake in it. The
+    restructuring also gave Microsoft a reduced 27% stake in the company, as well as increased research access, while
+    simultaneously freeing up OpenAI to make deals with other cloud-computing partners.
+
+
+    More ‘code reds’ to come
+
+
+    OpenAI’s urgency to compete with rivals was apparent earlier this month when Altman declared a “code red” in an
+    internal memo, following the surge of interest after Google rolled out its new Gemini 3 model in just one day, which
+    the company said was the fastest deployment of a model into Google Search. Altman’s “code red” was an eight-week
+    mandate to redouble OpenAI’s own efforts while temporarily postponing other initiatives, such as advertising and
+    expanding e-commerce offerings.
+
+
+    The blitz appears to be paying off: Last week, OpenAI launched its new GPT-5.2 model, and earlier this week, it
+    released a new image-generation model to compete with Google’s Nano Banana. Fidji Simo, OpenAI’s CEO of
+    applications, said the update wasn’t in response to Google’s Gemini 3, but that the extra resources from the code
+    red did help expedite its debut.
+
+
+    As OpenAI tries to address slowing user growth and retain and grow market share from its competitors, Altman
+    conceded a code red will not be a one-off phenomenon. The all-out effort is a model that’s been employed by Google,
+    and also Meta through Facebook’s more extreme “lockdown” periods. He downplayed the stakes of a code red, matching
+    what sources told Fortune equated to a focused, but not panicked, office environment.
+
+
+    “I think that it’s good to be paranoid and act quickly when a potential competitive threat emerges,” Altman said.
+    “This happened to us in the past. That happened earlier this year with DeepSeek. And there was a code red back then,
+    too.”
+
+
+    Altman likened the urgency of a code red to the beginning of a pandemic, where action taken at the beginning, more
+    so than actions taken later, have an outsized impact on an outcome. He expected code reds will be a norm as the
+    company hopes to gain distance from the likes of Google and DeepSeek.
+
+
+    “My guess is we’ll be doing these once, maybe twice a year, for a long time, and that’s part of really just making
+    sure that we win in our space,” Altman said. “A lot of other companies will do great too, and I’m happy for them.”
+
+
+    [ https://fortune.com/2025/12/19/sam-altman-0-percent-excited-ceo-of-public-company-openai-ipo/
+    ](https://fortune.com/2025/12/19/sam-altman-0-percent-excited-ceo-of-public-company-openai-ipo/)
+
+
+    —————————
+  post_hint: self
+  url_overridden_by_dest: ''
+  preview_image_url: >-
+    https://external-preview.redd.it/qBd37fkoPVOqpKLQyMi8v9dfODioUvlfxB_TWYE7aqQ.jpeg?auto=webp&s=0bbd1719a34d9ab22d95aa62c59c1d687c967c01
+  gallery_urls: []
+- id: 1wvhx09
+  title: Official Discussion - Digger [SPOILERS]
+  subreddit: r/movies
+  author: LiteraryBoner
+  score: 646
+  comments: 2227
+  url: https://www.reddit.com/r/movies/comments/1wvhx09/official_discussion_digger_spoilers/
+  created_utc: 1790906924
+  selftext: >-
+    #Poll
+
+
+    **If you've seen the film, please rate it [at this poll](https://strawpoll.ai/poll/vote/ssuApjnu4QS4)**
+
+
+    **If you haven't seen the film but would like to see the result of the poll [click
+    here](https://strawpoll.ai/poll/results/ssuApjnu4QS4)**
+
+
+    #Rankings
+
+
+    [Click here](https://strawpoll.ai/list/ItnAgr4mX7QR) to see the rankings of 2025 films
+
+
+    [Click here](https://youpoll.me/list/4/) to see the rankings for every poll done
+
+
+
+    ---
+
+
+    **Digger**
+
+
+    **Summary**
+
+
+    The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster
+    he's unleashed destroys everything.
+
+
+    **Director**
+
+    Alejandro G. Iñárritu
+
+
+    **Writer**
+
+    Sabina Berman
+
+    Jez Butterworth
+
+    Alexander Dinelaris
+
+    Nicolás Giacobone
+
+    Alejandro G. Iñárritu
+
+
+    **Cast**
+
+
+    * Tom Cruise as Digger Rockwell
+
+    * Riz Ahmed as Ganesh
+
+    * John Goodman as President Compson
+
+    * Sandra Hüller as Emma Rockwell
+
+    * Michael Stuhlbarg as Vice President
+
+    * Jesse Plemons as Kenny
+
+
+
+    **Rotten Tomatoes:** [53%](https://www.rottentomatoes.com/m/digger_2026)
+
+
+    **Metacritic:** [46](https://www.metacritic.com/movie/digger-2026/)
+
+
+    **VOD / Release**
+
+    In theaters — October 2, 2026
+
+
+    **Trailer**
+
+    [Official Trailer](https://www.youtube.com/results?search_query=Digger+2026+Official+Trailer+Warner+Bros)
+  post_hint: ''
+  url_overridden_by_dest: ''
+  preview_image_url: ''
+  gallery_urls: []
+- id: 1wv76j3
+  title: October 2026 Release Roundup
+  subreddit: r/CozyGamers
+  author: VickFables33
+  score: 135
+  comments: 29
+  url: https://www.reddit.com/r/CozyGamers/comments/1wv76j3/october_2026_release_roundup/
+  created_utc: 1790879184
+  selftext: >-
+    Your monthly guide to new releases is here & I was so wrong about the release schedule slowing down. I have 3
+    notes/announcements located at the bottom of the post. Please let me know if there are any errors, incorrect links,
+    or titles that I missed. I update periodically throughout the month (new entries are marked in bold).
+
+    Entry Format: "Game Title (Expected Release Date)(Genre/Gameplay)(optional notes/warnings)"
+
+    "EA:" stands for Early Access & "FR:" stands for the full release of an early access game.
+
+
+    # ---The Cozy List
+
+
+    * [**Monster Museum: Tidy Up the
+    collection!**](https://store.steampowered.com/app/4998990/Monster_Museum_Tidy_Up_the_collection/) **(Oct 2,
+    2026)(Tidy Up)**
+
+    * ***SALE - Steam Autumn Sale 2026 (Oct 1-8)***
+
+    * [Forever Ago](https://store.steampowered.com/app/1215940/Forever_Ago/) (Oct 8, 2026)(Exploration Adventure)
+
+    * [Dragon Dinner](https://store.steampowered.com/app/4148630/) (Oct 8, 2026)(Restaurant Management)
+
+    * DLC [Two Point Museum: Rides & Relics](https://store.steampowered.com/app/4511680/Two_Point_Museum_Rides__Relics/)
+    (Oct 8, 2026)
+
+    * [Anomalous Cleaning Detail](https://store.steampowered.com/app/4378370/Anomalous_Cleaning_Detail/) (Oct 8,
+    2026)(Spooky Cleaning sim)
+
+    * [All You Can FISH!](https://store.steampowered.com/app/4436580/All_You_Can_FISH/) (Oct 8, 2026)(Fishing)
+
+    * [Dancing with Ghosts](https://store.steampowered.com/app/1352700/) (EA: Oct 8, 2026)(Story Adventure)
+
+    * [Tidy Up the Town](https://store.steampowered.com/app/5190030/Tidy_Up_the_Town/) (Oct 9, 2026)(Tidy Up)
+
+    * [Shelf-Employed](https://store.steampowered.com/app/5038020/ShelfEmployed/) (Oct 9, 2026)(Tidy Up)
+
+    * [Hubert](https://store.steampowered.com/app/764930/Hubert/) (Oct 12, 2026)(Sheep Herding Adventure)(you play as a
+    dog/goodest boy)
+
+    * [Colorbound](https://store.steampowered.com/app/3778610/) (Oct 12, 2026)(2D puzzle Platformer)
+
+    * [Witch Cabin Cleanup](https://store.steampowered.com/app/4991240/Witch_Cabin_Cleanup/) (Oct 12, 2026)(Tidy Up)
+
+    * [Tidy Backpack: In the Faraway
+    Lands](https://store.steampowered.com/app/4612950/Tidy_Backpack_In_the_Faraway_Lands/) (Oct 12, 2026)(2D Puzzle)
+
+    * ***STEAM EVENT - Cooking Fest (Oct 12-19)***
+
+    * [Planet Zoo 2](https://store.steampowered.com/app/3219030/Planet_Zoo_2/) (Oct 13, 2026)(Zoo Management)
+
+    * [Gallery Organizer](https://store.steampowered.com/app/4938790/Gallery_Organizer/) (Oct 14, 2026)(Tidy Up)
+
+    * [The Witch's Bakery](https://store.steampowered.com/app/2967950/The_Witchs_Bakery/) (Oct 14, 2026)(2D Narrative
+    Adventure)
+
+    * [over the hill](https://store.steampowered.com/app/2929250/) (Oct 14, 2026)(Offroad Driving Adventure)
+
+    * [Fish & Hike](https://store.steampowered.com/app/4143100/) (FR: Oct 14, 2026)(Adventure)
+
+    * [Witch's Cottage ](https://store.steampowered.com/app/5264130/Witchs_Cottage/)(Oct 14, 2026)(Design & Decorate)
+
+    * [Cozy Builder ](https://store.steampowered.com/app/4059000/Cozy_Builder/)(Oct 14, 2026)(Sandbox Builder)
+
+    * [Pocket Dinos](https://store.steampowered.com/app/4715900/Pocket_Dinos/) (FR: Oct 15, 2026)(Creature Collector)
+
+    * [Harvest Moon: Echoes of Teradea](https://store.steampowered.com/app/3591180/Harvest_Moon_Echoes_of_Teradea/) (Oct
+    15, 2026)(Farm Sim)(requires controller)
+
+    * [DESOLUS](https://store.steampowered.com/app/1003460/DESOLUS/) (Oct 15, 2026)(Fantasy Gothic 3d Puzzle)
+
+    * [Bluey's Happy Snaps](https://store.steampowered.com/app/3064040/Blueys_Happy_Snaps/) (Oct 15, 2026)(Photography
+    Adventure)
+
+    * [Folded Fables: Tidy Up The Dragon
+    Hoard](https://store.steampowered.com/app/4995030/Folded_Fables_Tidy_Up_The_Dragon_Hoard/) (Oct 15, 2026)(Tidy Up)
+
+    * [100 Cats Lost in Canada 2 Find &
+    Color](https://store.steampowered.com/app/3911820/100_Cats_Lost_in_Canada_2_Find__Color/) (Oct 15, 2026)(Hidden Cat)
+
+    * [Toys Co. ](https://store.steampowered.com/app/5088930/Toys_Co/)(Oct 15, 2026)(Tidy Up)
+
+    * [Beyond These Stars](https://store.steampowered.com/app/2295060/) (Oct 16, 2026)(Colony Sim)
+
+    * ***STEAM EVENT - Next Fest: October 2026 (Oct 19-26)***
+
+    * [Star Trek: Outposts Unknown](https://store.steampowered.com/app/3469910/Star_Trek_Outposts_Unknown/) (Oct 20,
+    2026)(Colony sim)
+
+    * [Sort Inc.](https://store.steampowered.com/app/4989530/Sort_Inc/) (Oct 21, 2026)(2D Sort & Organize)
+
+    * [Snap & Print](https://store.steampowered.com/app/3946330/) (Oct 23, 2026)(Picture editing Job Sim)
+
+    * [Little Ghosties](https://store.steampowered.com/app/4132960/Little_Ghosties/) (FR: Oct 23, 2026)(Desktop
+    Companion)
+
+    * [Under Canopies](https://store.steampowered.com/app/2939510/) (EA: Oct 23, 2026)(Open World Survival
+    Crafting)(minus the survival)
+
+    * [Unbox the Room 2](https://store.steampowered.com/app/4394130/Unbox_the_Room_2/) (Oct 26, 2026)(Design & Decorate)
+
+    * [REKA](https://store.steampowered.com/app/1737870/) (FR: Oct 26, 2026)(Witch Adventure)
+
+    * [Fangtopia ](https://store.steampowered.com/app/3010170/Fangtopia/)(Oct 26, 2026)(Tile City Builder)(Spoopy)
+
+    * [Hidden Raccoons in Winter](https://store.steampowered.com/app/5155450/Hidden_Raccoons_in_Winter/) (Oct 26,
+    2026)(Hidden Object)
+
+    * [Pao Pao](https://store.steampowered.com/app/3024130/) (EA: Oct 26, 2026)(Life Sim/Restaurant Management)
+
+    * [Tidy Farm ](https://store.steampowered.com/app/5226940/Tidy_Farm/)(Oct 26, 2026)(Tidy Up)
+
+    * ***STEAM EVENT - Steam Scream V Fest (Oct 26 - Nov 2)***
+
+    * [Sky Safari: FPV Drone](https://store.steampowered.com/app/4537040/Sky_Safari_FPV_Drone/) (Oct 26, 2026)(Aerial
+    Wildlife Photography)
+
+    * [Fishing Up ](https://store.steampowered.com/app/3176290/Fishing_Up/)(Oct 26, 2026)(Fishing)
+
+    * [Village in the Shade](https://store.steampowered.com/app/3934250/Village_in_the_Shade/) (English Language Patch:
+    Oct 27th, 2026)(Farm Sim)
+
+    * [How to Summon a Demon](https://store.steampowered.com/app/4711310/How_to_Summon_a_Demon/) (Oct 26, 2026)(Visual
+    Novel)(spoopy)
+
+    * [Supermarket Organizer](https://store.steampowered.com/app/5030570/) (Oct 27, 2026)(Tidy Up)
+
+    * [Warehouse Catastrophe](https://store.steampowered.com/app/5030670/Warehouse_Catastrophe/) (Oct 27, 2026)(Tidy Up)
+
+    * [Rug Cleaning Simulator ](https://store.steampowered.com/app/2710530/Rug_Cleaning_Simulator/)(Oct 28,
+    2026)(Cleaning Job Sim)
+
+    * [Deductopia](https://store.steampowered.com/app/4429720/Deductopia/) (Oct 28, 2026)(Investigation Detective)
+
+    * [Cave Oasis at Shylake](https://store.steampowered.com/app/3689220/) (EA: Oct 28, 2026)(Sci Fi Farm/Life Sim)
+
+    * [Danchi Days](https://store.steampowered.com/app/3107530/) (Oct 29, 2026)(Pixel slice-of-life Adventure)
+
+    * [CryptidCam](https://store.steampowered.com/app/3772620/CryptidCam/) (Oct 29, 2026)(Photography Sim)(spoopy)
+
+    * [**Gloombo** ](https://store.steampowered.com/app/4992720/Gloombo/)**(EA: Oct 29, 2026)(Desktop
+    Companion/Crafting/Decoration)**
+
+    * [Lost Camp](https://store.steampowered.com/app/4476390/Lost_Camp/) (Oct 30, 2026)(Walking sim)
+
+    * [Click&Fix](https://store.steampowered.com/app/4917510/ClickFix/) (Oct 30, 2026)(Repair Shop sim)
+
+    * [I’m a Wizard, But I Dig](https://store.steampowered.com/app/3471290/Im_a_Wizard_But_I_Dig/) (Oct 30,
+    2026)(Digging Sim)
+
+    * [Lyara](https://store.steampowered.com/app/1871260/Lyara/) (Oct 30, 2026)(2D Precision Platformer)
+
+    * [Method in the Witchness ](https://store.steampowered.com/app/5208830/Method_in_the_Witchness/)(Oct 30,
+    2026)(Sorting Puzzle)
+
+    * [Shady Business ](https://store.steampowered.com/app/4694460/Shady_Business/)(October 2026)(Crafting sim)(Spoopy)
+
+    * [Usagi Shima: Bunny Island](https://store.steampowered.com/app/3144010/) (October 2026)(Creature Collector)
+
+    * DLC [Flats Full of Cats - Potions &
+    Masks](https://store.steampowered.com/app/4728310/Flats_Full_of_Cats_Potions__Masks/) (October 2026)(Hidden cat)
+
+    * [HiroBot: Clean & Restore ](https://store.steampowered.com/app/4247350/HiroBot_Clean__Restore/)(October
+    2026)(Cleaning sim)
+
+    * [Pharaoh's Secrets](https://store.steampowered.com/app/4504940/Pharaohs_Secrets/) (October
+    2026)(Spot-the-difference)
+
+    * [Hidden Doodles: Medieval Town](https://store.steampowered.com/app/5214960/Hidden_Doodles_Medieval_Town/) (October
+    2026)(Hidden Object)
+
+    * [Spooky Market](https://store.steampowered.com/app/4326130/Spooky_Market/) (October 2026)(Shop sim)(spoopy)
+
+    * [(You're Not) Welcome to Rennville](https://store.steampowered.com/app/4421860/Youre_Not_Welcome_to_Rennville/)
+    (October 2026)(Pixel 2D Adventure)(fall themed)
+
+    * [A Rover's Journey ](https://store.steampowered.com/app/5188570/A_Rovers_Journey/)(October 2026)(3D Narrative
+    Exploration)
+
+    * [Whale Cleaner](https://store.steampowered.com/app/4624230/Whale_Cleaner/) (October 2026)(Cleaning Sim)
+
+    * [Octbuster: Video Rental Store
+    Cleanup](https://store.steampowered.com/app/5042370/Octbuster_Video_Rental_Store_Cleanup/) (October 2026)(Tidy Up)
+
+
+    # ---Debatable
+
+
+    * [Truckful ](https://store.steampowered.com/app/3090810/)(Oct 9, 2026)(Delivery Sim/Action Adventure)
+
+    * [Meow Garden](https://store.steampowered.com/app/3530010/Meow_Garden/) (Oct 12, 2026)
+
+    * [Attic Antiquities](https://store.steampowered.com/app/4823850/Attic_Antiquities/) (Oct 13, 2026)(Haunted Doll
+    Exorcism)
+
+    * [No Murders in Grimwick](https://store.steampowered.com/app/5198670/No_Murders_in_Grimwick/) (Oct 21,
+    2026)(Investigation Mystery)
+
+    * [Heartfall — A Tale in Three Lives](https://store.steampowered.com/app/5257930/Heartfall__A_Tale_in_Three_Lives/)
+    (October 2026)(Choose Your Own Adventure)
+
+
+    \-----------------------------------------------------------------------------------------------
+
+
+    Here is the link to last month's list in case anyone wants it:
+    [https://www.reddit.com/r/CozyGamers/comments/1w4hxse/september\_2026\_release\_roundup/](https://www.reddit.com/r/CozyGamers/comments/1w4hxse/september_2026_release_roundup/)
+
+
+    1. Due to the deluge of Tidy Ups flooding Steam I've made some serious cuts to their inclusion on the list. I
+    slashed it down to what I felt had the best odds of being decent & if anything I removed ends up popping-off I will
+    update the list to include it. If anyone wants the full list (minus Gen Ai titles) of tidy ups maybe I can put it in
+    a comment?
+
+    2. Starting 3-4 days after posting I will include a "Last Updated" date at the top of the page.
+
+    3. Always check for an Gen Ai disclosure before you buy. I have noticed a marked uptick in games waiting until they
+    are near their release date to disclose that they used Generative Ai.
+  post_hint: self
+  url_overridden_by_dest: ''
+  preview_image_url: >-
+    https://external-preview.redd.it/CutQcUT6kQMU_gF-eXoDNDpWCmnNsicqo3INYZcwz_4.jpeg?auto=webp&s=fd2d06394a5a36e55633aacc02142ad7380a5bcc
+  gallery_urls: []
+- id: 1wltcpb
+  title: 'Project Rocket: The Anti Death Spiral Convertible'
+  subreddit: r/Superstonk
+  author: TEHGOURDGOAT
+  score: 2216
+  comments: 198
+  url: https://www.reddit.com/r/Superstonk/comments/1wltcpb/project_rocket_the_anti_death_spiral_convertible/
+  created_utc: 1789939343
+  selftext: >-
+    # What Just Happened
+
+
+    On August 3, GameStop announced a private exchange of $1.4 billion in convertible notes for Class A common stock.
+    The number of shares based on the average VWAP over **a 35 trading day reference period** beginning that same day.
+
+
+    GameStop wrote this into the 8-K:
+
+
+    >"Some or all of the Existing Noteholders that participate in the Exchange may purchase or sell shares of Common
+    Stock in open market transactions or enter into or unwind various derivative transactions with respect to Common
+    Stock to hedge or unwind their investments in the Exchange Notes."
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101674023293775872)
+
+
+    [Screenshot of the 8-K
+    language](https://preview.redd.it/d1h9lixipqqh1.png?width=2045&format=png&auto=webp&s=bc8c9b784d28e384a47b08a4014e4052ed44e889)
+
+
+    The company told you the noteholders would short the stock during the window.
+
+
+    The stock dropped from **\~$22 to a 52-week low of $17.95.**
+
+
+    On **August 10,** Bloomberg reported Cohen was "considering pulling"  the eBay bid.
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101674430371856384)
+
+
+    [Pulling the bid for
+    eBay?](https://preview.redd.it/1fqa9uvmpqqh1.png?width=1200&format=png&auto=webp&s=19cd438675c9643136bff03f25dd14009e7c3989)
+
+
+    That report landed right in the middle of the VWAP window. More selling pressure. Lower lows.
+
+
+    Then on August 31, Cohen terminated the remaining 15 trading days. Locked dilution at 55.5 million shares. Paid
+    $358.4 million in cash for the rest. ***"No additional shares are issuable in respect of the Exchange."***
+
+
+    [Early
+    Cancellation](https://preview.redd.it/mi0br5jopqqh1.png?width=1200&format=png&auto=webp&s=c36b73fd49c29ef0870fd3f3f9135cc3af6722eb)
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101674867930091520)
+
+
+    The shorts that were opened during the full window are now stranded. The window they were trading against no longer
+    exists. But their short positions do.
+
+
+    The exchange closed September 3. **Then four insiders bought shares in a single week.**
+
+
+    * Lawrence Cheng, 55,000 shares, \~$1.03 million. September 8.
+
+    * James Grube, 10,255 shares, \~$196,000. September 9.
+
+    * Alain Attal, 5,000 shares, \~$100,000. September 10.
+
+    * Ryan Cohen, 1,000,000 shares, \~$20.4 million. September 10.
+
+
+    **Q2 earnings dropped September 9.**
+
+
+    * $0.25 EPS vs. $0.19 consensus.
+
+    * Revenue up \~22%.
+
+    * Record second-quarter operating income.
+
+
+    **The stock has rebounded 22% from the August low.**
+
+
+    **Something significant is happening here.**
+
+
+    To understand what, you need to understand a financial instrument that has been destroying companies for thirty
+    years.
+
+
+    # The Death Spiral
+
+
+    [Death Spiral
+    Convertible](https://preview.redd.it/mvrzvydqpqqh1.png?width=1200&format=png&auto=webp&s=be7927a9106bb6d8839220b8af505fd17ae3a906)
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101675546656509952)
+
+
+    A death spiral convertible is a type of convertible bond **where the conversion price floats.**
+
+
+    In a normal convertible, **the conversion price is fixed.**
+
+
+    * You buy a $1,000 bond that converts into shares at $30.
+
+    * If the stock goes to $50, you convert and get cheap shares.
+
+    * If it stays at $20, you hold the bond.
+
+
+    **The price does not change.**
+
+
+    In a death spiral, t**he conversion price is based on the average stock price during a look-back period. Usually 10
+    to 30 trading days.**
+
+
+    **Set at a discount to that average.**
+
+
+    If the stock averages $10 during the window and the discount is 20%, the conversion price is $8.
+
+
+    The lower the stock goes during the window, the more shares the bondholder gets.
+
+
+    So you short the stock. Push the price down. The average drops. Your conversion price drops. You convert the bond
+    into more shares than you would have gotten at the original price. You use those newly created shares to cover your
+    short.
+
+
+    **This is where synthetic shares come from.**
+
+
+    **John D. Finnerty wrote the definitive paper on this for the SEC in 2005:**
+
+
+    >*A death spiral convertible "can resolve the unraveling problem because the manipulator does not have to buy back
+    shares in the open market.* ***He can obtain as many conversion shares as he needs by short selling the price
+    downward just prior to the conversion notice date."***
+
+
+    The conversion creates them. The company is forced to print them.
+
+
+    **Thomas Newkirk, the SEC's Associate Director of Enforcement, 2003:**
+
+
+    >*"Certain convertible securities, particularly those referred to as 'toxic' or 'death spiral' convertibles, present
+    the temptation for persons holding the convertible securities* ***to engage in manipulative short selling of the
+    issuer's stock in order to receive more shares at the time of conversion."***
+
+
+    Average shareholder wealth losses of 34% in the year following issuance. Stock price declines averaging 62%. The SEC
+    knew. And it never stopped.
+
+
+    Ryan Cohen watched this first hand from inside the boardroom.
+
+
+    In February 2023, with Towel desperate for cash, Hudson Bay Capital approached the company. Not the other way
+    around. Hudson Bay structured the terms. The deal gave Hudson Bay convertible preferred shares and warrants that
+    allowed it to acquire most of Towel's fully diluted common stock at deeply discounted prices.
+
+
+    Hudson Bay converted at the steep discounts. Traded the shares. **Extracted $300 million+ in profits in weeks.**
+
+
+    **Two months later, they filed Chapter 11.**
+
+
+    >*"When all was said and done in April 2023, Towel was bankrupt, while the Hudson Bay defendants had reaped a
+    short-swing profit of over $300 million."*
+
+
+    Cohen was on the board. He appointed three directors. He had access to the books. He watched the whole thing from
+    inside.
+
+
+    # The Buyback Problem
+
+
+    Every time Cohen has entered a company under short pressure, **his first move has been buybacks.**
+
+
+    **GameStop, 2019.** Short interest climbing toward 140% of the float. Burry pushed for buybacks. The board
+    repurchased 38.1 million shares for $198.7 million. Short interest kept climbing. The buyback got absorbed.
+
+
+    **Towel, 2004-2022.** $11.7 billion in buybacks over 18 years. Including a $1 billion repurchase plan completed two
+    years early. Then Hudson Bay arrived and death-spiraled it in weeks.
+
+
+    **Alibaba, 2022.** Cohen pushed the buyback from $40 billion to $60 billion. This time, it worked. Because Alibaba
+    has the cash flow and scale to overwhelm the shorts.
+
+
+    Now, Alibaba has aggressively cut their buybacks to invest in AI, and guess what happened yet again?
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101678009518317568)
+
+
+    [Burry's exit from Baba
+    ](https://preview.redd.it/qk0d0zuspqqh1.png?width=1200&format=png&auto=webp&s=436e63bf15c985678263889d933d8083ca9fa2e6)
+
+
+    Buybacks work when you have overwhelming scale. When the buybacks stopped, so did the defense, and the stock gave it
+    all back. Burry saw this and left.
+
+
+    **They fail when the short creation is synthetic and exceeds what you can buy back.**
+
+
+    Patrick Byrne proved a corporate action CAN force short covering. But he proved you cannot fight this from outside
+    the system. Every novel instrument gave regulators and litigants a target.
+
+
+    You have to kill the pipeline from inside the system. Using the system's own instruments. With a legitimate business
+    purpose for every step.
+
+
+    # Building the Pipeline
+
+
+    In 2025, Cohen created three tradeable instruments across seven months.
+
+
+    # Project Rocket: Testing the Market
+
+
+    **April 2025:**
+
+
+    * $1.5 billion in 0.00%
+
+    * Convertible Senior Notes due 2030.
+
+    * Conversion price \~$29.85.
+
+    * Originally proposed at $1.3 billion.
+
+    * The greenshoe was exercised in full.
+
+    * Oversubscribed by $200 million.
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101681537028616192)
+
+
+    [Project
+    Rocket](https://preview.redd.it/g43d3devpqqh1.png?width=1200&format=png&auto=webp&s=b0764fccfbd9ff9f35cfa5e3134c5b864eeb6316)
+
+
+    Why would institutions pile into zero-coupon debt from a specialty retailer?
+
+
+    Because GME is a volatility goldmine and a zero-coupon convertible is a pure volatility play.
+
+
+    A convertible bond is part bond, part call option on the stock. Zero coupon means zero interest income.
+
+
+    The entire value above par comes from the embedded option. The arb desk buys the bond to capture that option value,
+    then hedges out the equity risk by shorting the stock proportional to the delta of the embedded option.
+
+
+    The 2030 Notes convert at 33.497 shares per $1,000. If the delta is 0.4, the arb desk shorts 33.497 x 0.4 = roughly
+    13 shares per $1,000 in bonds.
+
+
+    **Across $1.5 billion, that is millions of shares sold short as standard operating procedure.**
+
+
+    The arb desks profit from gamma trading. Stock moves up, delta increases, they short more. Stock moves down, delta
+    decreases, they cover some. They buy low and sell high through the rebalancing. They make money as long as the stock
+    moves. **And GME moves more than almost anything in the market.**
+
+
+    The arb desks are not bearish. They are running a profitable strategy. But every one of those delta-hedging short
+    positions creates selling pressure on GME. The effect on the stock is the same as a death spiral, despite the
+    motivation being different. The stock does not know the difference.
+
+
+    **And here is what makes Cohen's structure the opposite of a death spiral: the conversion prices are fixed.**
+
+
+    They do not float. In a death spiral, the bondholder can escape by converting at depressed prices. Short the stock,
+    convert, cover, repeat. Cohen's arb desks are short at \~$20 against a bond with a $29.85 conversion price. **They
+    cannot profitably convert to cover. They are locked in.**
+
+
+    Rocket answered the question: **can you get arb desks to create a structural short pipeline against GME using
+    standard convertible instruments?**
+
+
+    The answer is yes. The oversubscription proved it.
+
+
+    Stated use of proceeds: Bitcoin acquisition. Cohen spent $500 million on BTC and kept $1 billion.
+
+
+    The capital was the product the entire time and the Bitcoin was merely just the packaging.
+
+
+    # Project Wee: Scaling the Pipeline
+
+
+    **June 2025.**
+
+
+    * $2.25 billion in 0.00% Convertible Senior Notes due 2032.
+
+    * Conversion price \~$28.91.
+
+    * Originally proposed at $1.75 billion.
+
+    * Institutional demand upsized it before pricing.
+
+    * The $450 million greenshoe exercised in full.
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101682684485353472)
+
+
+    [Proposed second bond
+    issuance](https://preview.redd.it/hq5eb9kxpqqh1.png?width=1200&format=png&auto=webp&s=f1f435311a8f1de754ad3d26aec889f49ea7b99c)
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101682856460189696)
+
+
+    [Upsized Bond issuance due to overwhelming
+    demand](https://preview.redd.it/1lvdk61zpqqh1.png?width=1200&format=png&auto=webp&s=a0cb95a0dc0e12d3190c2529ae26329be516b5ed)
+
+
+    Cohen knew the arb desks were hungry because Rocket was oversubscribed. So he went bigger. The second issuance is
+    50% larger than the first.
+
+
+    Stated use of proceeds: **investments and potential acquisitions. The war chest shifts from Bitcoin to eBay.**
+
+
+    **Second tradeable instrument: 2032 Notes. Second, larger wave of arb shorts. Pipeline now carries $3.75 billion in
+    total convertible exposure.**
+
+
+    # Project Genesis: The Third Instrument
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101683378827186176)
+
+
+    [Project Genesis SEC
+    filing](https://preview.redd.it/63uo9zj0qqqh1.png?width=1199&format=png&auto=webp&s=c1bc0e6d054282889ab689a39e3cfbe691fce617)
+
+
+    **October 2025:**
+
+
+    * Warrants distributed as a dividend to every shareholder and noteholder of record.
+
+    * One per ten shares.
+
+    * $32 strike.
+
+    * October 30, 2026 expiry.
+
+    * Approximately 59 million warrants.
+
+    * Trading on the NYSE under GME WS.
+
+
+    Not just a simple capital raise but also a roll call and a third tradeable instrument.
+
+
+    The warrants can be bought, sold, shorted, and used as part of hedging strategies across the full complex of GME
+    instruments.
+
+
+    **Arb desks and shorts now have three instruments plus the common stock to layer positions across.**
+
+
+    Long the convertible, short the stock, short the warrant. Or some other combination.
+
+
+    The more instruments available, the more ways to build and cross-hedge positions.
+
+
+    The pipeline is full. $3.75 billion in convertible notes. 59 million warrants. All tradeable. All interconnected.
+    All being used by arb desks and shorts to construct layered positions against each other and against the common.
+
+
+    Genesis means beginning. The beginning of what becomes clear when you understand what happens to all three
+    instruments at the same time.
+
+
+    # The Anti-Death Spiral
+
+
+    So now we know what a death spiral is. We know what GameStop's instruments are and why the arb desks piled in. Now
+    look at what actually happened in August, because every feature of the death spiral is present. Every single one.
+    **EXCEPT** each one is pointed in the opposite direction.
+
+
+    # The Window
+
+
+    A death spiral starts with a look-back window. A defined period where the average stock price is calculated. The
+    window is where the shorting happens, because the bondholder wants the average as low as possible.
+
+
+    **Cohen opened a 35 trading day VWAP reference period on August 3.** GameStop's own 8-K warned that noteholders
+    would short during it. The window is where the shorting happens.
+
+
+    **But in a death spiral, the window runs to completion.** The bondholder shorts for the full period, gets the lowest
+    possible average, and converts at maximum dilution.
+
+
+    Cohen terminated his window with 15 days left. Locked the share count at 55.5 million. Paid $358.4 million in cash
+    for the rest. The shorts that opened during those 20 trading days **were suddenly holding positions against a window
+    that no longer existed.**
+
+
+    A death spiral bondholder gets to play out the full clock. Cohen cut the clock short and cashed out the rest.
+
+
+    # The Conversion Price
+
+
+    In a death spiral, the conversion price floats downward with the stock. No floor. The lower it goes, the more shares
+    the bondholder gets. The dilution is unbounded. That is the whole point. The conversion price being variable is what
+    creates the doom loop.
+
+
+    **Cohen's exchange had a per share price floor.** The dilution was bounded from the start.
+
+
+    And when he terminated the window, the conversion froze entirely. 55.5 million shares. Fixed. No additional shares
+    issuable. The dilution served its purpose as the bait. **Once the shorts were in, he capped it and paid cash for the
+    rest.**
+
+
+    A death spiral has no bottom. **Cohen's structure had a floor AND an early termination AND a cash settlement.**
+
+
+    # The Share Creation
+
+
+    This is where naked shorting and death spirals converge.
+
+
+    In a death spiral, the bondholder shorts the stock, then converts the bond into newly created shares to cover. The
+    shares that cover the short did not previously exist. The company was forced to print them. That is synthetic share
+    creation through the conversion mechanism. Every cycle puts more shares into the market than existed before.
+
+
+    Cohen's structure invited shorting during the VWAP window. The 8-K warned it would happen. The noteholders and arb
+    desks shorted.
+
+
+    **BUT THEN** Cohen shut down the share creation mechanism by terminating the window and freezing the count. The
+    shares that were issued are a known, fixed number. The pipeline that was creating new shares is now closed.
+
+
+    **And here is the inversion.**
+
+
+    In a death spiral, the bondholder can cover using newly created shares from the conversion. They never have to go to
+    the open market. **Cohen's structure denies that escape. The conversion is done. The window is terminated. Those
+    shorts now need real shares from the open market to cover.**
+
+
+    # The Sentiment
+
+
+    In a death spiral, the bondholder has to do the work of pushing the stock down. They short during the window to
+    drive the average lower.
+
+
+    Cohen did not need the noteholders to do all the work. **He manufactured the bearish sentiment himself.**
+
+
+    **The eBay bid.**
+
+
+    * 50/50 cash/stock.
+
+    * An $11 billion company offering half the consideration in its own stock for a $56 billion deal.
+
+    * Every analyst ran the dilution math.
+
+    * Every short seller saw the thesis.
+
+
+    The stock dropped 10% on announcement day. That selling pressure was already sitting on the stock when **the VWAP
+    window opened three months later.**
+
+
+    Then the Bloomberg report on August 10 that Cohen was *"considering pulling"*  the bid. **Right in the middle of the
+    window. Removed the last bullish catalyst. The stock hit its 52-week low eight days later.**
+
+
+    Meanwhile, at the very beginning of the year, **the WSJ reported Cohen might seek Middle Eastern sovereign wealth
+    fund backing.** That changes the deal from 50/50 to all-cash. No GME share issuance. No dilution. The 50/50 was the
+    scarecrow.
+
+
+    **The version of the deal designed to create maximum bearish sentiment at the exact moment that sentiment served the
+    anti-death spiral.**
+
+
+    # Who Benefits
+
+
+    In a death spiral, the bondholder profits, the company dies and the shareholders get destroyed.
+
+
+    And now look at who bought at the bottom of the VWAP window. September 8-10. Four insiders. The stock has now
+    rebounded 22% from the low.
+
+
+    [](https://x.com/GoatBeardzDD/article/2101701372693360644/media/2101687184457650177)
+
+
+    [GME
+    REBOUND](https://preview.redd.it/0izjj5k3qqqh1.png?width=1200&format=png&auto=webp&s=09560f5121aecb48704c34b8f870f1653b624219)
+
+
+    In a death spiral, insiders sell while the company bleeds. Here, insiders bought at the exact bottom while the
+    shorts were still in the window.
+
+
+    **Same instrument class as a death spiral convertible bond, but every element inverted.**
+
+
+    # The First Detonation
+
+
+    The VWAP exchange retired $1.4 billion in notes. Those arb hedges are now stranded with no replacement convertible
+    to roll into. **Normal corporate practice, as ICR states, is to help the hedge funds close their shorts by giving
+    them shares or a new bond to match their deltas.**
+
+
+    Cohen did neither. He closed the bonds and left the shorts exposed.
+
+
+    But this was only the first tranche. $2.8 billion in notes and 59 million warrants are still live. All three
+    instruments are still being used to construct layered positions.
+
+
+    And that is **EXACTLY** where the full thesis lives.
+
+
+    # The Cascade
+
+
+    **$2.8 billion in convertible notes remain outstanding.**
+
+
+    * $1.1 billion in 2030 Notes at \~$29.85.
+
+    * $1.7 billion in 2032 Notes at \~$28.91.
+
+
+    The arb desks holding these bonds are still running delta hedges and are still short GME.
+
+
+    59 million warrants at $32 are trading on the NYSE under GME WS. **Those can be shorted and hedged against too.**
+
+
+    The common stock trades on the NYSE under GME.
+
+
+    Three instruments plus the common.
+
+
+    Under Delaware §251(g), a corporation can reorganize into a holding company without SEC registration and without a
+    separate shareholder vote.
+
+
+    Shareholders swap their shares for equivalent shares in the new parent.
+
+
+    The §251(g) is a **fundamental change** under both the 2030 and 2032 convertible indentures. **That is what makes it
+    the detonator.**
+
+
+    But it does not just detonate the convertible hedges. **It reorganizes all three instruments at the same time.**
+
+
+    **The convertible notes trigger.** Fundamental change. Noteholders can put their notes back at 100% of principal or
+    convert with an enhanced make-whole rate. Either way, the bond positions close. The delta-hedging shorts on $2.8
+    billion in notes lose their underlying bond positions.
+
+
+    There is no replacement convertible being offered. No new bond to match their deltas against. The shorts have to go
+    to the open market.
+
+
+    **The warrants adjust.** The OCC already moved GME WS from standard NSCC settlement to broker-to-broker settlement
+    through Info Memo #59491 on July 30. As I covered in my Textbook Activist article, the OCC does not reconfigure
+    settlement infrastructure for routine warrant expiry. **It does this because a corporate action is pending.** The
+    warrants adjust from GME deliverables to HoldCo deliverables. New CUSIP.
+
+
+    The warrant you shorted or hedged against is now a different instrument delivering a different security.
+
+
+    **The common stock swaps.** GME shares become HoldCo shares. The underlying itself changes.
+
+
+    **Now ask yourself: if you're an arb desk with a layered position across all three instruments, what do you do?**
+
+
+    * You cannot hedge the convertible unwind using the warrants, because the warrants are being adjusted at the same
+    time.
+
+    * You cannot hedge the warrant adjustment using the common, because the common is being swapped at the same time.
+
+    * You cannot roll the convertible hedge into a new convertible, because none is being offered.
+
+
+    Every leg of every position across all three instruments is reorganizing simultaneously. **Every escape route closes
+    at once.**
+
+
+    That is the cascade. Not just $2.8 billion in convertible hedges unwinding. Every short and arb position built
+    across the entire complex of GME instruments **becoming unhedgeable at the same moment.**
+
+
+    # The Pressure Stack
+
+
+    * **$22 to $28.** Organic. VWAP window shorts covering. Regular short interest responding to improved sentiment,
+    insider buying, post-earnings momentum. This is happening right now.
+
+    * **$28 to $30.** The conversion zone. As the stock approaches the $28.91 and $29.85 conversion prices, delta
+    increases and arb desks short MORE shares to maintain their hedges. This creates natural resistance. But those
+    larger short positions are also larger positions that need to be covered when the fundamental change fires.
+
+    * **$32.** The warrant line. 59 million warrants. Full exercise generates $1.9 billion in pure equity. Each exercise
+    is a share purchase at $32.
+
+    * **$37 to $39.** The 130% trigger. At $37.58 and $38.81, early conversion rights unlock. More forced covering.
+
+    * **$2 billion buyback.** Approved June 2, 2026. Unexecuted. Held in reserve.
+
+
+    **The optimal timing for the §251(g) is while the stock is below $28, before any hedges start leaking out on their
+    own.**
+
+
+    Below $28, the full $2.8 billion in delta-hedges is intact. Nothing has unwound.
+
+
+    The announcement fires all three instruments at once. The cascade goes through the conversion zone, through $32,
+    into the 130% triggers.
+
+
+    Cohen built three instruments across seven months. Let the market layer positions across the full complex. And
+    designed a single corporate action that reorganizes all three at the same moment, closing every escape route
+    simultaneously.
+
+
+    Rocket built the first layer. Wee scaled it. Genesis added the third tradeable instrument.
+
+
+    **The §251(g) fires on the entire stack at once.**
+
+
+    # Genesis
+
+
+    The §251(g) is the detonator. **But it also creates something.**
+
+
+    The holding company forms. GameStop becomes a subsidiary. Shareholders swap GME for HoldCo equity.
+
+
+    **The HoldCo is needed for three reasons beyond the cascade.**
+
+
+    1. **The SWF enters at the parent level.** A sovereign wealth fund does not buy equity in a specialty retailer. It
+    buys into a diversified holding company with multiple subsidiaries. The HoldCo makes the SWF investment rational.
+
+    2. **The eBay acquisition restructures to all-cash.** Funded through the parent: SWF equity, GameStop's \~$4.9
+    billion in cash, its 9.8% eBay stake valued at \~$4.9 billion, TD Securities' $20 billion in committed financing,
+    Cohen's $500 million personal commitment, and \~$1.9 billion from warrant exercises. No GME share issuance. No
+    dilution. eBay becomes a subsidiary.
+
+    3. **Cohen's $500 million personal commitment.** Founding capital into the new entity.
+
+
+    On July 7, shareholders approved an authorized share increase from 1.0 billion to 2.5 billion. 68.7% voted yes. An
+    all-cash eBay deal requires no new share issuance. **That headroom is for the HoldCo formation and structural
+    flexibility.**
+
+
+    The §251(g) drops as one 8-K. Everything at once. HoldCo formation. SWF equity. Cohen's $500 million. eBay
+    restructured to all-cash. And the fundamental change firing the cascade across all three instruments.
+
+
+    The warrants are not Genesis. **The warrants are the instrument that capitalizes Genesis.**
+
+
+    **Genesis is the holding company itself.**
+
+
+    **Every shareholder who exercises at $32 is putting real capital into the new entity. Those who sell their warrants
+    or let them expire are out. The shareholder base self-selects.**
+
+
+    And after the cascade, after the pipeline across all three instruments is destroyed, **the $2 billion buyback
+    deploys inside the HoldCo.**
+
+
+    Against a clean float. No more bonds to hedge against. No more arb shorts being manufactured. No more synthetic
+    supply.
+
+
+    Three companies taught Cohen that buybacks fail when the pipeline is running. Byrne showed him you cannot fight it
+    from outside the system. So he built three instruments, let the arb desks layer across all of them, and designed a
+    single corporate action that reorganizes the entire complex at once.
+
+
+    **Then deploys the buyback after.**
+
+
+    # The Clock
+
+
+    The warrants expire at 5:00 p.m. New York time on **October 30, 2026.**
+
+
+    Roughly 40 days from today. The stock is at \~$22. That is a 45% move to $32. Nobody exercises at $32 if the stock
+    touches it on October 29.
+
+
+    The catalyst needs to land with at least two to three weeks of cushion. **That puts the announcement window in the
+    next two to four weeks.**
+
+
+    Cohen set the October 30 expiry himself. It is a self-imposed deadline. He either delivers a catalyst that sends the
+    stock above $32, or $1.9 billion in founding equity for the HoldCo expires worthless.
+
+
+    As I laid out in my Textbook Activist article, under SEC Rule 14e-3, insider trading is frozen once substantial
+    steps are taken toward a tender offer. Committed financing is a material change requiring prompt disclosure.
+
+
+    The compressed insider buying window tells you where we are in the sequence. They bought because they still could.
+
+
+    # En Sommaire
+
+
+    For thirty years, the death spiral convertible has been destroying companies through synthetic share creation. The
+    SEC's own enforcement director called it toxic. Patrick Byrne spent twenty years trying to fight it from outside the
+    system. He proved the concept works. Then the system ground him down.
+
+
+    Cohen watched all of it. He watched buybacks fail at GameStop. He watched $11.7 billion in buybacks fail at Towel.
+    He watched Hudson Bay run the death spiral from inside the boardroom. He watched Byrne build outside the system and
+    get destroyed for it.
+
+
+    **Then he built the anti-death spiral.** Not one instrument. Three. Convertible bonds, convertible bonds again at
+    scale, and warrants distributed to every shareholder. Three tradeable instruments for arb desks and shorts to layer
+    positions across. And a single corporate action, the §251(g), that reorganizes all three at the same time. Notes
+    triggered. Warrants adjusted. Common swapped. Every escape route closed simultaneously.
+
+
+    No blockchain. No digital dividends. No public tirades about short sellers. Just convertible bonds, warrants, a
+    VWAP-based exchange, and a Delaware holding company reorganization. **Standard instruments used by thousands of
+    companies. Every piece filed with the SEC. Every piece public. Every piece with a legitimate business purpose.**
+
+
+    Nobody can call it a *"secret plot to obtain hegemony over short sellers."*
+
+
+    The death spiral has been destroying companies for thirty years.
+
+
+    **This is the first time anyone has run it in reverse, inside the existing system, using the existing instruments,
+    with the existing rules.**
+
+
+    Ryan Cohen named it Genesis because that is what it is.
+
+
+    Forty days.
+
+
+    Forensic Brief · [@GoatBeardzDD](https://x.com/@GoatBeardzDD)
+
+
+    \-----------------------------------------------------------------------
+
+
+    Disclaimer: I am constantly writing about GME on my platform on X under GoatBeardzDD.
+
+
+    I also used Claude Opus 4.6 for editing and revisions to writing solely, after making this huge sectional write up.
+
+
+    Other sources I cited:
+
+
+    \- GME SEC FILING PAGE
+
+
+    \- Yahoo Finance
+  post_hint: ''
+  url_overridden_by_dest: ''
+  preview_image_url: ''
+  gallery_urls: []
+- id: 1vpwqo4
+  title: Treasury kills Corporate Transparency Act, erases shell-company database
+  subreddit: r/UnderReportedNews
+  author: Shizzilx
+  score: 4456
+  comments: 132
+  url: https://www.reddit.com/r/UnderReportedNews/comments/1vpwqo4/treasury_kills_corporate_transparency_act_erases/
+  created_utc: 1786885994
+  selftext: >-
+    Treasury's own 2026 National Money Laundering Risk Assessment documented active cases of drug traffickers,
+    cybercriminals, and fraudsters laundering proceeds through anonymous U.S. shell companies — and then, three months
+    later, the agency permanently eliminated the only federal database designed to expose who owns them.
+
+
+    FinCEN issued a final rule on August 11, 2026, permanently removing the requirement for U.S. companies and U.S.
+    persons to disclose beneficial ownership information — the identities of the individuals who actually control a
+    business — to its national database under the Corporate Transparency Act (CTA). The rule took effect upon
+    publication in the Federal Register on August 12. FinCEN simultaneously pledged to delete every record previously
+    submitted by U.S. persons — names, addresses, and identity documents collected throughout 2024 when the law was
+    briefly operative.
+
+
+    The final rule covers approximately 33 million domestic corporations and LLCs, wiping out more than 99 percent of
+    the entities Congress originally targeted when it passed the CTA in 2021 with bipartisan support as part of the
+    National Defense Authorization Act. Foreign entities still must report beneficial ownership information for their
+    foreign owners.
+
+
+    What the Rule Does — and Destroys
+
+
+    Under the original law, a beneficial owner was defined as anyone who directly or indirectly held at least 25 percent
+    of a company or exercised "substantial control" over it. The CTA was designed to close a decades-old gap: unlike
+    most peer nations, the United States had no federal register of who actually controls American companies, making
+    U.S. shell corporations among the most attractive vehicles in the world for money laundering, sanctions evasion, and
+    illicit finance.
+
+
+    The final rule makes three irreversible changes to that framework. First, it permanently adopts the exemptions that
+    the agency issued as an interim rule in March 2025, ending all beneficial ownership reporting for U.S.-formed
+    entities and U.S. persons. Second, it exempts U.S. citizens who helped foreign companies register domestically from
+    any disclosure obligation. Third, it commits FinCEN to deleting from its database every record it believes is linked
+    to a U.S. person — identified by association with U.S. passports or driver's licenses. All three changes are
+    confirmed in the Treasury official press release.
+
+
+    "Today's action is a victory for common sense and American small businesses," said Treasury Secretary Scott Bessent
+    in the official announcement. "President Trump promised to cut red tape, and this final rule delivers. Treasury is
+    eliminating a burdensome reporting requirement for millions of law-abiding business owners without compromising our
+    national security."
+
+
+    FinCEN estimates the final rule eliminates approximately $9 billion per year in compliance costs and removes 91.5
+    million burden hours annually. The National Federation of Independent Business put the cumulative savings figure
+    higher still, asserting that domestic exemptions spare small businesses more than $128 billion in total compliance
+    costs.
+
+
+    What the rule does not do is repeal the Corporate Transparency Act itself, which remains on the federal books. The
+    final rule is a binding Treasury regulation that alters how the law is applied, not an act of Congress. A future
+    administration could reinstate the requirements through new rulemaking — a concern that has driven Republican
+    congressional allies to simultaneously push legislation codifying the exemptions in statute.
+
+
+    Treasury's Own Data Contradicts the Logic of the Rule
+
+
+    The most pointed criticism of the final rule comes not from Senate Democrats but from a nonpartisan congressional
+    auditor and Treasury's own published risk analysis.
+
+
+    In May 2026, the Government Accountability Office released a report concluding that the March 2025 interim rule had
+    left "a gaping hole" in U.S. anti-money laundering defenses. The GAO cited Treasury's 2026 money laundering
+    assessment, which documented active cases in which shell companies were used to launder drug trafficking proceeds,
+    cybercrime proceeds, and fraud — developments that occurred after the interim exemption took effect.
+
+
+    The GAO recommended that Treasury identify actions to address the shell-company risk left by the expanded
+    exemptions. Treasury disagreed with the recommendation. The recommendation remains open.
+
+
+    "By failing to fulfill Congress' mandate for greater financial integrity, the Treasury Department has handed a major
+    victory to U.S. adversaries, corrupt officials, fraudsters, and tax evaders who use our financial system to move and
+    hide illicit wealth," said Erica Hanichak, co-director of the Financial Accountability and Corporate Transparency
+    (FACT) Coalition. Her full statement and those of other critics appeared in the FACT Coalition's August 11
+    statement.
+
+
+    The National District Attorneys Association, whose members prosecute financial crimes across all 50 states, added a
+    law enforcement dimension to the critique. "By exempting domestic entities and owners from reporting, FinCEN has
+    significantly hindered prosecutors' ability to identify the bad actors from legitimate businesses when investigating
+    U.S. shell companies used by transnational cartels, human traffickers, and cyberscammers," said Nelson Bunn, the
+    association's executive director. "Taking away this indispensable tool for law enforcement endangers American
+    families and communities."
+
+
+    Even from a conservative national security perspective, the rule drew criticism. Frank Russo, a senior policy
+    advisor at CPAC and partner at Modern Fortis, a public safety advocacy firm, said the underlying transparency law
+    "is still valuable, but Treasury's rule has failed to strike the appropriate balance in implementing it, crippling
+    public safety officers' ability to protect and serve their communities."
+
+
+    What Prosecutors Lose When the Database Is Erased
+
+
+    For law enforcement, the damage is not abstract. Debra LaPrevotte, a former FBI Supervisory Special Agent who spent
+    three decades in the bureau's International Corruption Unit and helped initiate the FBI's Kleptocracy program —
+    seizing more than $1 billion from foreign corrupt officials — placed the repeal in concrete terms.
+
+
+    "After 30 years investigating international corruption and recovering over $1 billion in stolen assets, I've seen
+    firsthand how anonymous U.S. shell companies are used by kleptocrats, foreign officials, and cartels to launder
+    illicit funds and purchase luxury assets in this country," LaPrevotte said. "Gutting the Corporate Transparency Act
+    would eliminate a key tool needed by law enforcement to follow the money and stop the United States from being a
+    safe haven for criminal proceeds." LaPrevotte's full statement was among those compiled by the FACT Coalition's
+    April 2026 congressional statement.
+
+
+    Lt. Col. Jodi Vittori (USAF, ret.), who teaches at Georgetown University's School of Foreign Service, drew a direct
+    line from anonymous shell companies to U.S. military risk. "America's enemies, including backers of the Taliban and
+    Hizbullah, have used anonymous shell companies to fund their operations against our forces. Hidden Chinese companies
+    use anonymous shell companies to bypass sanctions and build up their already formidable military forces. Any vote in
+    Congress to repeal the Corporate Transparency Act undermines the American military's ability to do its job and helps
+    put weapons into the hands of America's foes."
+
+
+    Senator Elizabeth Warren, Ranking Member of the Senate Banking Committee and a persistent technology-accountability
+    voice — she introduced the Health and Location Data Protection Act as recently as July 2026 and has pressed Bessent
+    on AI-enabled cybersecurity threats to the financial sector — called the repeal a "gift to cartels, criminals and
+    U.S. adversaries that exploit shell companies to move millions through our financial system," and called on
+    Secretary Bessent to testify before the Banking Committee. Her Senate Banking Committee statement also referenced
+    Warren's Health and Location Data Protection Act.
+
+
+    Representative Stephen Lynch (D-MA), Ranking Member of the House Subcommittee on Digital Assets, Financial
+    Technology and Artificial Intelligence — a position that has made him the lead Democrat on financial technology
+    oversight issues — warned that "without this data, prosecutors are left blind when investigating shell companies,"
+    and that the repeal would "greatly curtail our ability to combat shell companies fueling illegal operations." The
+    April 2026 committee press release details his earlier opposition to H.R. 425.
+
+
+    The Rubio Paradox
+
+
+    Perhaps the most striking dimension of the repeal involves the man who built the law it dismantles.
+
+
+    Marco Rubio first introduced the Corporate Transparency Act with Senator Ron Wyden in August 2017 specifically
+    because Venezuelan officials had channeled more than $1 billion through anonymous shell companies into Miami real
+    estate, a scheme that produced federal indictments. He personally celebrated the law's December 2020 passage,
+    writing on social media that his Corporate Transparency Act was passing, calling it "the most significant
+    anti-corruption & money laundering law in decades." In May 2021, Rubio co-signed a bipartisan letter urging FinCEN
+    to implement the law with Warren, Wyden, and Grassley.
+
+
+    Rubio is now Secretary of State in the administration that permanently buried it. Senator Warren publicly noted the
+    contrast and pressed Rubio for an explanation.
+
+
+    Scott Greytak, Director of Advocacy for Transparency International U.S., identified the specific exploitability this
+    creates: "The U.S.'s national security, intelligence and law enforcement communities strongly supported the
+    bipartisan Corporate Transparency Act because it stopped criminals from hiding behind anonymous shell companies,
+    regardless of where those companies happened to be formed. Now, criminals can evade this national security law by
+    simply starting and running those front companies inside the U.S." Greytak's full analysis appeared in the FACT
+    Coalition's CTA rollback statement.
+
+
+    What Compliance Architecture Survives
+
+
+    The deletion of the BOI database does not mean the U.S. anti-money laundering apparatus ceases to exist. Financial
+    institutions remain subject to an extensive set of obligations that predate and operate independently of the CTA.
+
+
+    Banks and other covered institutions still must conduct transaction monitoring, screen against OFAC sanctions lists
+    and politically exposed persons (PEP) databases, and file Suspicious Activity Reports (SARs) and Currency
+    Transaction Reports (CTRs) under the Bank Secrecy Act. The Customer Due Diligence Rule, which requires financial
+    institutions to collect beneficial ownership information directly from their business customers when they open new
+    accounts, also remains in force — though critics note that without the FinCEN database, banks now have no federal
+    reference point against which to verify what customers tell them. The CDD Rule requirements survive; the national
+    registry does not.
+
+
+    FinCEN did score a significant enforcement action against UBS just nine days before the final rule issued — a $125
+    million fine for repeated AML monitoring failures, including maintaining accounts for entities under investigation
+    for money laundering. That action relied on the CDD framework and SAR/CTR reporting mechanisms, not on the BOI
+    database — a fact supporters of the final rule cited as evidence that the BOI database was redundant. Critics
+    responded that the UBS case, far from proving redundancy, demonstrated exactly the enforcement gaps created when
+    beneficial ownership information is hard to obtain: the bank missed connections precisely because ownership chains
+    were opaque.
+
+
+    Foreign companies operating in the United States face a 30-day filing window from their date of effective domestic
+    registration — a requirement Treasury says will "assist law enforcement in investigating, prosecuting and disrupting
+    the financing of international terrorism, other transnational security threats."
+
+
+    Can Anyone Simply Refuse to Register?
+
+
+    The rule's structure creates an asymmetric transparency regime. The identities of individuals who ultimately control
+    foreign companies operating in the U.S. are now on record with FinCEN. The identities of individuals who control the
+    roughly 33 million domestic corporations and LLCs are not — and the 2024 records are now scheduled for permanent
+    deletion.
+
+
+    State-level ownership disclosure varies dramatically. Most states require corporations to name officers or
+    directors, but those individuals may not be the beneficial owners, and a nominee director can satisfy state filing
+    requirements without revealing the actual controlling party. New York's LLC Transparency Act, which was enacted in
+    2024 and took effect in January 2026 with a more limited scope than originally intended, represents one state
+    attempt to fill the gap. But no state register currently captures beneficial ownership at the granularity the
+    federal CTA was designed to provide.
+
+
+    The FATF Risk No One Is Discussing
+
+
+    The timing of the final rule creates a geopolitical exposure that has received minimal coverage relative to the
+    domestic debate.
+
+
+    The United States is currently undergoing its fifth mutual evaluation by the Financial Action Task Force, the
+    international body that sets global anti-money laundering and counter-terrorism financing standards. The FATF report
+    is expected to become public this fall.
+
+
+    The U.S. was upgraded to "largely compliant" with FATF Recommendation 24 — which specifically addresses beneficial
+    ownership transparency — in 2024, precisely because the CTA had been implemented as Congress intended. The August
+    2026 final rule eliminates the regulatory basis for that compliance rating.
+
+
+    Transparency International, in a March 2025 statement, warned that unless reversed, the CTA rollback "will very
+    likely lead to the U.S. being found non-compliant with relevant global anti-money laundering and counter-terrorism
+    finance standards set by the Financial Action Task Force." The FATF has named beneficial ownership transparency a
+    priority for this round of evaluations, signaling it "will be looking heavily into the effectiveness of those
+    systems," according to the FACT Coalition August 11 statement.
+
+
+    Grey-listing by FATF — being placed on the "jurisdictions under increased monitoring" list — carries reputational
+    and economic consequences that could affect the United States' relationships with international banking partners and
+    complicate cross-border transactions for U.S. businesses and financial institutions. FATF grey-listed 22
+    jurisdictions as of its June 2026 plenary, including Iraq and Bosnia and Herzegovina. The U.S. has never appeared on
+    that list.
+
+
+    Congress Pursues Permanent Codification
+
+
+    The regulatory rollback is advancing in parallel with legislative efforts to enshrine it in statute — removing any
+    future administration's ability to reverse through rulemaking.
+
+
+    In April 2026, the House Financial Services Committee narrowly advanced the "Repealing Big Brother Overreach Act"
+    (H.R. 425), introduced by Rep. Warren Davidson (R-OH) with 193 co-sponsors, by a narrow 26-to-25 committee vote. The
+    bill would codify the domestic exemption in statute and direct FinCEN to delete all previously collected beneficial
+    ownership data — requirements that the final rule now makes redundant, but which supporters argue are necessary to
+    prevent a future regulatory reversal.
+
+
+    A companion Senate measure, the Senate version of the Repealing Big Brother Overreach Act, was introduced by
+    Senators Mike Lee (R-UT) and John Kennedy (R-LA), with an additional Senate bill (S. 4297) sponsored by Senator
+    Tommy Tuberville carrying a longer list of Republican co-sponsors. The H.R. 425 bill text confirms the full scope of
+    the proposed statutory repeal.
+
+
+    Democratic opponents have warned throughout committee markup that passing such legislation would "protect
+    terrorists, drug traffickers, gun smugglers" by permanently locking in what they characterize as a catastrophic
+    anti-money laundering gap. Representative Lynch, whose Subcommittee on Digital Assets, Financial Technology and
+    Artificial Intelligence serves as the House's primary oversight body for financial technology policy, has been among
+    the most vocal defenders of the original CTA architecture.
+
+
+    For now, both chambers' action remains pending. Whether the Republican-controlled Congress can attract the
+    bipartisan votes that originally passed the CTA depends on whether Senate Democrats — who joined Republicans to pass
+    the original law — are willing to block its statutory repeal.
+
+
+    The Deletion No One Is Watching
+
+
+    One aspect of the rule that has attracted less scrutiny than the exemption itself is the active destruction of the
+    records the government collected.
+
+
+    FinCEN collected beneficial ownership information from millions of U.S. entities throughout 2024 before enforcement
+    was suspended. That data — including names, addresses, and government-issued identification documents of business
+    owners — is now scheduled for deletion. FinCEN said it "anticipates working with the National Archives and Records
+    Administration (NARA) to ensure FinCEN is abiding by all applicable Federal records laws" in the deletion process,
+    but the specific timeline and scope have not been publicly released. The Forbes analysis of the final rule notes
+    that deletion process details remain undisclosed.
+
+
+    Privacy advocates who had criticized the BOI database as a government surveillance risk welcomed the deletion.
+    Anti-corruption advocates noted the destruction eliminates forensic evidence that prosecutors could have used in
+    ongoing investigations of companies that did file during the brief operative period.
+
+
+    Brad Close, NFIB president, welcomed the data deletion pledge as a specific victory: "The final rule protects
+    American small and independent businesses from this onerous reporting mandate and requires the destruction of
+    previously submitted personal data."
+
+
+    Critics pointed out that the 2024 filers were law-abiding businesses that complied voluntarily with a legal
+    requirement — and their compliance records are now being treated as a privacy liability to be erased, rather than a
+    law enforcement asset to be protected.
+
+
+    United States Now Moving Opposite Direction from Peer Nations
+
+
+    As the United States permanently exits the beneficial ownership transparency framework, the global trajectory runs
+    counter.
+
+
+    The European Union has moved aggressively toward expanded beneficial ownership registers under its Anti-Money
+    Laundering Directive framework. The EU's Sixth Anti-Money Laundering Directive set a July 2026 deadline for member
+    states to expand beneficial ownership register requirements and interconnect them through a European Central
+    Platform. Switzerland launched its own comparable national beneficial ownership register on October 1, 2026, under
+    anti-money laundering rules adopted by the Federal Council in June 2026. More than 100 countries either require or
+    are implementing beneficial ownership registries, according to Transparency International's beneficial ownership
+    standards tracking.
+
+
+    As the Purdue Global Law School's analysis notes, eliminating the domestic BOI framework puts the United States "out
+    of sync with international laws and regulations regarding corporate transparency" — at a moment when the FBI and
+    Treasury estimate approximately $300 billion is laundered in the U.S. annually, making it one of the largest money
+    laundering markets in the world.
+
+
+    The United States has, in practical terms, become more opaque about who owns its companies than it was before 2024 —
+    and is doing so at precisely the moment when peer nations, international watchdogs, and its own risk analysts are
+    moving in the opposite direction.
+
+
+    \*excerpt from Scott McCain's article\*
+
+
+    Full Article here:
+
+
+    https://www.msn.com/en-us/money/financial-regulation/treasury-kills-corporate-transparency-act-erases-shell-company-database/ar-AA2a2xIY
+  post_hint: image
+  url_overridden_by_dest: https://i.redd.it/pjhk932hlqjh1.jpeg
+  preview_image_url: https://preview.redd.it/pjhk932hlqjh1.jpeg?auto=webp&s=0925ef17b594ba65d0f9f2fb2e452427e7404f4a
+  gallery_urls: []
+- id: 1nctjmn
+  title: GameStop Announces Dividend of Warrants to Shareholders
+  subreddit: r/Superstonk
+  author: Teraskikkeli
+  score: 5363
+  comments: 462
+  url: https://www.reddit.com/r/Superstonk/comments/1nctjmn/gamestop_announces_dividend_of_warrants_to/
+  created_utc: 1757448349
+  selftext: >-
+    **GameStop Corp. (NYSE: GME) (“GameStop” or the “Company”) today announced a special dividend to be distributed in
+    the form of warrants to holders of the Company’s common stock as of October 3, 2025 (the “Record Date”).**
+
+
+    Each registered shareholder as of the Record Date will receive one (1) warrant for every ten (10) shares of GameStop
+    common stock held, rounded down to the nearest whole warrant. Additionally, in lieu of an adjustment to the
+    applicable conversion rate, holders of the Company’s Convertible Senior Notes due 2030 and 2032 will each receive
+    warrants on an as converted to common stock basis in accordance with the respective governing indenture.
+
+
+    The Company expects to distribute up to approximately 59 million warrants on or around Tuesday October 7, 2025 (the
+    “Distribution Date”). The warrants will be issued without any action required by the Company’s shareholders or
+    noteholders as of the Record Date and without any payment of cash or other consideration.
+
+
+    Each warrant will entitle the holder to purchase one share of common stock at an exercise price of $32.00, at any
+    time following the Distribution Date until the warrants expire on October 30, 2026 (the “Expiration Date”). Holders
+    can only exercise a warrant by paying the exercise price to acquire the shares of common stock in cash. Following
+    the Distribution Date, the warrants are expected to be freely tradable and listed on the New York Stock Exchange
+    under the ticker GME WS. Recipients of the warrants will be able to trade their warrants or exercise any warrants in
+    accordance with the warrant agreement, irrespective of whether they continue to hold shares of common stock or
+    convertible notes.
+
+
+
+    **READ MORE TROUGH THE OFFICIAL LINK**
+
+
+
+    https://investor.gamestop.com/news-releases/news-details/2025/GameStop-Announces-Dividend-of-Warrants-to-Shareholders/default.aspx
+
+
+
+    **scatTURDaye comment ELI5**
+
+
+    AI explained this:
+
+    The announcement says that GameStop is giving its shareholders a special gift called "warrants."
+
+
+    # What are Warrants?
+
+
+    * Warrants are like special coupons that let you buy GameStop stock at a specific price in the future.
+
+    * They don’t cost anything right now, but they give you the chance to buy shares later at a fixed price, which could
+    be cheaper than the market price if the stock goes up.
+
+
+    # What is Happening?
+
+
+    * GameStop is distributing these warrants to its current shareholders for free (this is called a "dividend" of
+    warrants).
+
+    * If you own GameStop stock on a certain date, you will receive these warrants.
+
+
+    # Why does this matter?
+
+
+    * It’s a way for shareholders to potentially buy more shares later at a locked-in price.
+
+    * If the stock price rises above that locked-in price, the warrants become valuable.
+
+    * It’s a benefit to shareholders without them having to pay anything upfront.
+
+
+    In simple terms, GameStop is giving shareholders a "buy discount coupon" for their stock in the future as a kind of
+    reward .
+  post_hint: ''
+  url_overridden_by_dest: ''
+  preview_image_url: ''
+  gallery_urls: []
+
+
+  Update available: v1.8.5 → v1.8.8
+  Run: npm install -g @jackwener/opencli

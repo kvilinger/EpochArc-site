@@ -1,0 +1,139 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "microsoft-mai-transcribe-2-streaming-2026",
+  "evidenceCutoff": "2026-10-08",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only for the retained L1 classification.",
+    "Discovery coverage is partial because X authentication and Brave retrieval were unavailable.",
+    "Vendor benchmarks are not treated as independent capability replication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese actor, action, date, stage, numeric claims and limitations align."
+  },
+  "evidence": [
+    {
+      "id": "ms-stt-fact-1",
+      "sourceId": "sweep-20261008-ms-stt-official",
+      "claimId": "ms-stt-fact",
+      "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+      "originId": "microsoft-mai-streaming-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "MAI-Transcribe-2-Streaming delivers low-latency, real-time transcripts in 60 languages",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/microsoft-streaming-transcription-official.md",
+      "sha256": "c9a58e7c1ecdd1d0f63fc74e376a1391abae86ee3a435dc1562773a6aca030ce"
+    },
+    {
+      "id": "ms-stt-fact-2",
+      "sourceId": "sweep-20261008-ms-stt-runtimewire",
+      "claimId": "ms-stt-fact",
+      "url": "https://runtimewire.com/article/microsoft-mai-streaming-transcription-voice-models",
+      "originId": "microsoft-mai-streaming-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Microsoft added streaming transcription and two text-to-speech models",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/microsoft-streaming-transcription-runtimewire.md",
+      "sha256": "dec35a7b7d82e7f3f4dc3aaaa5a63d79db8d640e3ea8d0ece685bb38427e0b30"
+    },
+    {
+      "id": "ms-stt-limitation-1",
+      "sourceId": "sweep-20261008-ms-stt-official",
+      "claimId": "ms-stt-limitation",
+      "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+      "originId": "microsoft-mai-streaming-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "debuts at no. 1 on Artificial Analysis",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/microsoft-streaming-transcription-official.md",
+      "sha256": "c9a58e7c1ecdd1d0f63fc74e376a1391abae86ee3a435dc1562773a6aca030ce"
+    },
+    {
+      "id": "ms-stt-limitation-2",
+      "sourceId": "sweep-20261008-ms-stt-runtimewire",
+      "claimId": "ms-stt-limitation",
+      "url": "https://runtimewire.com/article/microsoft-mai-streaming-transcription-voice-models",
+      "originId": "microsoft-mai-streaming-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "not a guarantee of end-to-end response time for a deployed voice agent",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/microsoft-streaming-transcription-runtimewire.md",
+      "sha256": "dec35a7b7d82e7f3f4dc3aaaa5a63d79db8d640e3ea8d0ece685bb38427e0b30"
+    }
+  ],
+  "runId": "latest-data-full-2026-10-08",
+  "candidateId": "oct8-microsoft-mai-transcribe-2-streaming-2026",
+  "coreFactClaimIds": [
+    "ms-stt-fact"
+  ],
+  "identity": {
+    "seriesId": "microsoft-mai-transcribe-2-streaming",
+    "action": "Microsoft releases MAI-Transcribe-2-Streaming and two MAI voice models",
+    "stage": "available",
+    "dateBasis": "Retained primary and dated independent source",
+    "deduplicationReason": "Distinct action or stage from canonical comparison events.",
+    "comparedEventIds": [
+      "meta-muse-voice-transcribe-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Category follows the core action."
+  },
+  "significance": {
+    "rationale": "Core fact is verified, but no full v2.4 L2 route is established.",
+    "whyNotHigher": "At least one mandatory L2 criterion remains unknown.",
+    "whyNotLower": "The action is a verified release, method demonstration, or government directive.",
+    "comparisonEventIds": [
+      "meta-muse-voice-transcribe-2026",
+      "gemini-3-8-flash-tts-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Recent action with limited observed downstream evidence.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate factual dispute retained; limitations are explicit.",
+    "evidenceIds": []
+  },
+  "subjectDigest": "a534699f3d8b8ca92b58717e877b59ab6deaed49ea5e4e182902fed90157f37c",
+  "inputsDigest": "827d5624125b7f0a73603e51e2d1e2f515ba4e1ad60d2a2ab419c77c49ade733",
+  "runDigest": "99f570cd453e5e6e954b67a24c686d96dc139170468fdab34ab7b7f7b9f95d95",
+  "priorReviewedSubjectDigest": "e65d188cef47ddcb4c0d2514e96377418307104d415f72937b4c3655a1eb0e06"
+}

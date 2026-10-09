@@ -1,0 +1,158 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "zai-zcode-workspace-upload-incident-2026",
+  "evidenceCutoff": "2026-10-08",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only for the retained L1 classification.",
+    "Discovery coverage is partial because X authentication and Brave retrieval were unavailable.",
+    "Vendor benchmarks are not treated as independent capability replication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese actor, action, date, stage, numeric claims and limitations align."
+  },
+  "evidence": [
+    {
+      "id": "zcode-incident-fact-1",
+      "sourceId": "sweep-20260929-zai-zcode-cso",
+      "claimId": "zcode-incident-fact",
+      "url": "https://www.csoonline.com/article/4225037/z-ai-disables-coding-assistant-feature-after-flaw-exposed-enterprise-code-upload-risk-2.html",
+      "originId": "cso-zcode-investigation",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "ZCode silently packages your entire workspace",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/zai-zcode-cso.md",
+      "sha256": "6790fc46db4a172c7bc249bed0fbdc5356c800ea5ea70583c73cdeae94ed7da6"
+    },
+    {
+      "id": "zcode-incident-fact-2",
+      "sourceId": "sweep-20260929-zai-zcode-reuters-reprint",
+      "claimId": "zcode-incident-fact",
+      "url": "https://www.thenews.com.pk/latest/1417148-chinese-ai-firm-zai-disables-coding-assistant-features-after-security-backlash",
+      "originId": "reuters-zcode-reporting",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "disabled certain features of its ZCode coding assistant",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/zai-zcode-reuters-reprint.md",
+      "sha256": "f19d63b3787dac2a6a263f3249e952b6e7b276fd005816d2b021fb8a9e2b5736"
+    },
+    {
+      "id": "zcode-incident-fact-3",
+      "sourceId": "sweep-20260929-zai-zcode-investigation",
+      "claimId": "zcode-incident-fact",
+      "url": "https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/",
+      "originId": "ferstar-zcode-investigation",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "uploads it directly to Aliyun OSS",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/zai-zcode-investigation.md",
+      "sha256": "d02979e79583ab5877d087fc9a2432b611bc3c3229ab3aa19fb38019b076fbb7"
+    },
+    {
+      "id": "zcode-limitation-1",
+      "sourceId": "sweep-20260929-zai-zcode-cso",
+      "claimId": "zcode-limitation",
+      "url": "https://www.csoonline.com/article/4225037/z-ai-disables-coding-assistant-feature-after-flaw-exposed-enterprise-code-upload-risk-2.html",
+      "originId": "cso-zcode-investigation",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "The company apologised",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/zai-zcode-cso.md",
+      "sha256": "6790fc46db4a172c7bc249bed0fbdc5356c800ea5ea70583c73cdeae94ed7da6"
+    },
+    {
+      "id": "zcode-limitation-2",
+      "sourceId": "sweep-20260929-zai-zcode-reuters-reprint",
+      "claimId": "zcode-limitation",
+      "url": "https://www.thenews.com.pk/latest/1417148-chinese-ai-firm-zai-disables-coding-assistant-features-after-security-backlash",
+      "originId": "reuters-zcode-reporting",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "issued a formal apology",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/zai-zcode-reuters-reprint.md",
+      "sha256": "f19d63b3787dac2a6a263f3249e952b6e7b276fd005816d2b021fb8a9e2b5736"
+    }
+  ],
+  "runId": "latest-data-carryover-2026-10-08",
+  "candidateId": "carry-zai-zcode-workspace-upload-incident-2026",
+  "coreFactClaimIds": [
+    "zcode-incident-fact"
+  ],
+  "identity": {
+    "seriesId": "zai-zcode-workspace-upload-incident",
+    "action": "Z.AI disables ZCode workspace-upload features after security backlash",
+    "stage": "announced",
+    "dateBasis": "Retained primary and dated independent source",
+    "deduplicationReason": "Distinct action or stage from canonical comparison events.",
+    "comparedEventIds": [
+      "glm-5-3-coding-cyber-launch-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Category follows the core action."
+  },
+  "significance": {
+    "rationale": "Core fact is verified, but no full v2.4 L2 route is established.",
+    "whyNotHigher": "At least one mandatory L2 criterion remains unknown.",
+    "whyNotLower": "The action is a verified release, method demonstration, or government directive.",
+    "comparisonEventIds": [
+      "glm-5-3-coding-cyber-launch-2026",
+      "openai-hf-breach-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY",
+        "criteria": {
+          "documented_incident": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          },
+          "external_remedial_action": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          },
+          "independent_investigation": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Recent action with limited observed downstream evidence.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate factual dispute retained; limitations are explicit.",
+    "evidenceIds": []
+  },
+  "subjectDigest": "698deb146eda2404814d7ea7f89c8c26ab189d06206ef057be3e06fcaa1cc980",
+  "inputsDigest": "47138a965780ffe2f0d2417d742a0c2e86f61987f5491b643a03eba3549c7e83",
+  "runDigest": "00e64a0e225a32b859624dc10b48a2192dbdd845c4ec4b2867efda1ccb3dd3f9",
+  "priorReviewedSubjectDigest": "6abc6be80fb4ede9f72eb7c191fced000070a99b4fde8613f2fe3b7de6b16f40"
+}

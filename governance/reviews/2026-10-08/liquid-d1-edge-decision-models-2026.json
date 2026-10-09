@@ -1,0 +1,142 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "liquid-d1-edge-decision-models-2026",
+  "evidenceCutoff": "2026-10-08",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only for the retained L1 classification.",
+    "Discovery coverage is partial because X authentication and Brave retrieval were unavailable.",
+    "Vendor benchmarks are not treated as independent capability replication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese actor, action, date, stage, numeric claims and limitations align."
+  },
+  "evidence": [
+    {
+      "id": "liquid-d1-fact-1",
+      "sourceId": "sweep-20261008-liquid-d1-official",
+      "claimId": "liquid-d1-fact",
+      "url": "https://www.liquid.ai/blog/d1-open",
+      "originId": "liquid-d1-open-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we release **d1-3B**and**d1-omni-600M",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/liquid-d1-official.md",
+      "sha256": "a0bc2ba06be880f8608b1f159c24ae2eac4e66079f071fceec2046a64f107afc"
+    },
+    {
+      "id": "liquid-d1-fact-2",
+      "sourceId": "sweep-20261008-liquid-d1-runtimewire",
+      "claimId": "liquid-d1-fact",
+      "url": "https://runtimewire.com/article/liquid-ai-open-d1-decision-models-edge",
+      "originId": "liquid-d1-open-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Liquid AI released d1-3B for text and images",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/liquid-d1-runtimewire.md",
+      "sha256": "7a4f50854be86c651267a5cd62fc2efd456249f9a7ed35977055060f81f0cfee"
+    },
+    {
+      "id": "liquid-d1-limitation-1",
+      "sourceId": "sweep-20261008-liquid-d1-official",
+      "claimId": "liquid-d1-limitation",
+      "url": "https://www.liquid.ai/blog/d1-open",
+      "originId": "liquid-d1-open-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Dedicated audio decision benchmarks are currently an open problem.",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/liquid-d1-official.md",
+      "sha256": "a0bc2ba06be880f8608b1f159c24ae2eac4e66079f071fceec2046a64f107afc"
+    },
+    {
+      "id": "liquid-d1-limitation-2",
+      "sourceId": "sweep-20261008-liquid-d1-runtimewire",
+      "claimId": "liquid-d1-limitation",
+      "url": "https://runtimewire.com/article/liquid-ai-open-d1-decision-models-edge",
+      "originId": "liquid-d1-open-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "does not state a license",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/liquid-d1-runtimewire.md",
+      "sha256": "7a4f50854be86c651267a5cd62fc2efd456249f9a7ed35977055060f81f0cfee"
+    }
+  ],
+  "runId": "latest-data-full-2026-10-08",
+  "candidateId": "oct8-liquid-d1-edge-decision-models-2026",
+  "coreFactClaimIds": [
+    "liquid-d1-fact"
+  ],
+  "identity": {
+    "seriesId": "liquid-d1-edge-decision-models",
+    "action": "Liquid AI releases open d1 edge decision models",
+    "stage": "available",
+    "dateBasis": "Retained primary and dated independent source",
+    "deduplicationReason": "Distinct action or stage from canonical comparison events.",
+    "comparedEventIds": [
+      "holo4-computer-use-models-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Category follows the core action."
+  },
+  "significance": {
+    "rationale": "Core fact is verified, but no full v2.4 L2 route is established.",
+    "whyNotHigher": "At least one mandatory L2 criterion remains unknown.",
+    "whyNotLower": "The action is a verified release, method demonstration, or government directive.",
+    "comparisonEventIds": [
+      "holo4-computer-use-models-2026",
+      "mcp-protocol-2024"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "Downloadable model weights became available.",
+            "evidenceIds": [
+              "liquid-d1-fact-1",
+              "liquid-d1-fact-2"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Recent action with limited observed downstream evidence.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate factual dispute retained; limitations are explicit.",
+    "evidenceIds": []
+  },
+  "subjectDigest": "4da7b1911bf86d5dd6df5684a3856425a6c680bb8a5b1d7ec6e79788f7db7d29",
+  "inputsDigest": "bf48a47713d38552446b0247a8a5fa40f2e692516eabed6feed8f20aed7831d6",
+  "runDigest": "99f570cd453e5e6e954b67a24c686d96dc139170468fdab34ab7b7f7b9f95d95",
+  "priorReviewedSubjectDigest": "5ec1c61bb14270ebb50e2da4f2d8226e08cf35556ceb96924f39fc48e6cc1167"
+}

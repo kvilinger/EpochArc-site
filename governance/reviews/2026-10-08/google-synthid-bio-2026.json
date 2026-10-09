@@ -1,0 +1,142 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-synthid-bio-2026",
+  "evidenceCutoff": "2026-10-08",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Single-session self-review is permitted only for the retained L1 classification.",
+    "Discovery coverage is partial because X authentication and Brave retrieval were unavailable.",
+    "Vendor benchmarks are not treated as independent capability replication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "English and Chinese actor, action, date, stage, numeric claims and limitations align."
+  },
+  "evidence": [
+    {
+      "id": "synthid-bio-fact-1",
+      "sourceId": "sweep-20261008-synthid-bio-official",
+      "claimId": "synthid-bio-fact",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "originId": "deepmind-synthid-bio-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "successfully creating the first-ever watermarked and biologically functional protein binders",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/google-synthid-bio-official.md",
+      "sha256": "cec57dd4d672ff20ed53a114c2a63d9552d0922c4a67b85db4cb81866c27035a"
+    },
+    {
+      "id": "synthid-bio-fact-2",
+      "sourceId": "sweep-20261008-synthid-bio-nature",
+      "claimId": "synthid-bio-fact",
+      "url": "https://www.nature.com/articles/d41586-026-03033-y",
+      "originId": "nature-synthid-bio-reporting",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "were able to bind to a range targets",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/google-synthid-bio-nature.md",
+      "sha256": "3ba6f730b8e713230cf2ffebe84fd6b01e7eac0fa6045f14b02a47114afb80cd"
+    },
+    {
+      "id": "synthid-bio-limitation-1",
+      "sourceId": "sweep-20261008-synthid-bio-official",
+      "claimId": "synthid-bio-limitation",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "originId": "deepmind-synthid-bio-release",
+      "accessedAt": "2026-10-08",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "no single biosecurity intervention is a silver bullet",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/google-synthid-bio-official.md",
+      "sha256": "cec57dd4d672ff20ed53a114c2a63d9552d0922c4a67b85db4cb81866c27035a"
+    },
+    {
+      "id": "synthid-bio-limitation-2",
+      "sourceId": "sweep-20261008-synthid-bio-nature",
+      "claimId": "synthid-bio-limitation",
+      "url": "https://www.nature.com/articles/d41586-026-03033-y",
+      "originId": "nature-synthid-bio-reporting",
+      "accessedAt": "2026-10-08",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "can be scrubbed away",
+      "locator": "Retained launch or analysis text",
+      "artifact": "governance/evidence/2026-10-08/direct/google-synthid-bio-nature.md",
+      "sha256": "3ba6f730b8e713230cf2ffebe84fd6b01e7eac0fa6045f14b02a47114afb80cd"
+    }
+  ],
+  "runId": "latest-data-full-2026-10-08",
+  "candidateId": "oct8-google-synthid-bio-2026",
+  "coreFactClaimIds": [
+    "synthid-bio-fact"
+  ],
+  "identity": {
+    "seriesId": "google-synthid-bio",
+    "action": "Google DeepMind introduces SynthID Bio for watermarking AI-designed proteins",
+    "stage": "announced",
+    "dateBasis": "Retained primary and dated independent source",
+    "deduplicationReason": "Distinct action or stage from canonical comparison events.",
+    "comparedEventIds": [
+      "alphafold-2020"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "capability",
+    "reason": "Category follows the core action."
+  },
+  "significance": {
+    "rationale": "Core fact is verified, but no full v2.4 L2 route is established.",
+    "whyNotHigher": "At least one mandatory L2 criterion remains unknown.",
+    "whyNotLower": "The action is a verified release, method demonstration, or government directive.",
+    "comparisonEventIds": [
+      "alphafold-2020",
+      "alphafold-nobel-2024"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-METHOD",
+        "criteria": {
+          "new_method_or_framework": {
+            "value": true,
+            "rationale": "A documented protein watermarking method with wet-lab validation was introduced.",
+            "evidenceIds": [
+              "synthid-bio-fact-1",
+              "synthid-bio-fact-2"
+            ]
+          },
+          "independent_follow_on_works": {
+            "value": null,
+            "rationale": "Required external adoption, replication, legal analysis, or follow-on work was not established.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "debated",
+    "reason": "Recent action with limited observed downstream evidence.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate factual dispute retained; limitations are explicit.",
+    "evidenceIds": []
+  },
+  "subjectDigest": "ded9cfc55c1b0f2d55b2cfebcda4f994d056f1b64c22c8cdf393dcea50b397ff",
+  "inputsDigest": "dda210ea678a3c9ad17098fdeada412fac5e4500675048dff7e664b930586375",
+  "runDigest": "99f570cd453e5e6e954b67a24c686d96dc139170468fdab34ab7b7f7b9f95d95",
+  "priorReviewedSubjectDigest": "903231bad96b484c489eaddf6cee506627cd5ca5efc4818a06e411060715f367"
+}

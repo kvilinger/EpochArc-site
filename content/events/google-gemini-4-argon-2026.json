@@ -1,0 +1,107 @@
+{
+  "id": "google-gemini-4-argon-2026",
+  "slug": "google-gemini-4-argon-2026",
+  "status": "published",
+  "date": "2026-09-30",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "September 30, 2026",
+    "zhHans": "2026年9月30日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "title": {
+    "en": "Google announces Gemini 4 Argon in a phased trusted-access rollout",
+    "zhHans": "Google 宣布 Gemini 4 Argon，并通过可信访问计划分阶段开放"
+  },
+  "searchSummary": {
+    "en": "Google announced Gemini 4 Argon and began a phased rollout to trusted cyber defenders through the Fairwind Program before broader developer and consumer availability.",
+    "zhHans": "Google 宣布 Gemini 4 Argon，并先通过 Fairwind Program 向可信网络防御人员分阶段开放，再计划扩大至开发者与消费者。"
+  },
+  "summary": {
+    "en": "Google announced Gemini 4 Argon and began a phased rollout to trusted cyber defenders through the Fairwind Program before broader developer and consumer availability.",
+    "zhHans": "Google 宣布 Gemini 4 Argon，并先通过 Fairwind Program 向可信网络防御人员分阶段开放，再计划扩大至开发者与消费者。"
+  },
+  "narrative": {
+    "en": "Argon is a limited-access frontier-model launch rather than general availability. Independent reporting confirms the announcement and early benchmark comparisons, but broad production use and the company’s internal productivity claims were not independently established.",
+    "zhHans": "Argon 属于有限访问的前沿模型发布，而非全面可用。独立报道确认了公告和早期跑分比较，但广泛生产使用及公司披露的内部生产力提升尚未得到独立证明。"
+  },
+  "claims": [
+    {
+      "id": "gemini4-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261008-gemini4-official",
+        "sweep-20261008-gemini4-engadget"
+      ],
+      "text": {
+        "en": "Google announced Gemini 4 Argon with initial access through the Fairwind Program.",
+        "zhHans": "Google 宣布 Gemini 4 Argon，首批通过 Fairwind Program 提供访问。"
+      }
+    },
+    {
+      "id": "gemini4-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261008-gemini4-official",
+        "sweep-20261008-gemini4-engadget"
+      ],
+      "text": {
+        "en": "Access remained phased and restricted; vendor benchmark and internal-use claims were not independently verified.",
+        "zhHans": "访问仍处于分阶段受限状态；厂商跑分与内部使用成效未得到独立验证。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20261008-gemini4-official",
+      "supports": [
+        "gemini4-fact",
+        "gemini4-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20261008-gemini4-engadget",
+      "supports": [
+        "gemini4-fact",
+        "gemini4-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "google-gemini-3-8-flash-cyber-2026",
+    "gemini-robotics-er2-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "reviewedAt": "2026-10-08",
+    "lastSourceCheckAt": "2026-10-08",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewer": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/2026-10-08/google-gemini-4-argon-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-10-08",
+        "changeType": "created",
+        "summary": "Created and self-reviewed as L1 from latest-data-full-2026-10-08."
+      },
+      {
+        "date": "2026-10-08",
+        "changeType": "correction",
+        "summary": "Changed status from reviewed to published after explicit human approval of the exact 2026-10-08 record."
+      }
+    ],
+    "publishedAt": "2026-10-08"
+  }
+}

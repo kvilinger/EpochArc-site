@@ -1,0 +1,309 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-carryover-2026-10-08",
+  "kind": "targeted",
+  "scopeReason": "Complete two revised L1 carryover drafts and prepare two published-event update proposals.",
+  "windowStart": "2026-09-21",
+  "windowEnd": "2026-10-08",
+  "evidenceCutoff": "2026-10-08",
+  "timezone": "UTC",
+  "baselineCommit": "1e2e455a720f33674264a64e047680188ed4934e",
+  "operator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "promptVersion": "carryover-v24-20261008-1",
+  "channels": [
+    {
+      "id": "frozen-prior-evidence",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Reused retained evidence from the independently reviewed 2026-09-29 package.",
+      "attempts": [
+        {
+          "query": "Recheck carryover events and update proposals",
+          "executedAt": "2026-10-08T01:58:00Z",
+          "artifact": "governance/evidence/carryover-2026-10-08/direct/openai-australia-official.md",
+          "sha256": "f6f38ffd394e68bd576892a8a9c6066a0c79f42d11d5e5686ff76e5d8de58ef7",
+          "resultCount": 4
+        },
+        {
+          "query": "Direct GitHub retrieval of pwardle/not-a-mused PoC README and repository metadata",
+          "executedAt": "2026-10-08T02:05:00Z",
+          "artifact": "governance/evidence/carryover-2026-10-08/direct/meta-muse-not-a-mused-readme.md",
+          "sha256": "2def47469eed207f6ec5c4e324bd787f301de0f60529c6dc6d0eb8e6815de9de",
+          "resultCount": 1
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "not_applicable",
+      "finding": "Targeted carryover review only."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Targeted carryover review only."
+    },
+    {
+      "category": "commerce",
+      "status": "not_applicable",
+      "finding": "Targeted carryover review only."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "Targeted carryover review only."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Targeted carryover review only."
+    },
+    {
+      "category": "society",
+      "status": "not_applicable",
+      "finding": "Targeted carryover review only."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "carry-openai-australia-medicare-agent-incident-2026",
+      "eventId": "openai-australia-medicare-agent-incident-2026",
+      "discoveryUrls": [
+        "https://openai.com/index/how-we-will-do-better-for-australia/",
+        "https://www.abc.net.au/news/2026-09-29/openai-apologises-medicare-shelves-chatgpt-astra-launch/107207156",
+        "https://www.bbc.com/news/articles/cm5y5nynl75ko"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "novelty": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "spillover": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "durability": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "sourceQuality": "Carryover candidate confirmed from the previous frozen evidence package."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Independent review revisions applied; retained at L1 because the L2-SAFETY route is incomplete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Carryover fact verification",
+          "finding": "Incident fact retained.",
+          "evidenceIds": [
+            "openai-australia-fact-1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Carryover observed impact",
+          "finding": "No qualifying observed impact for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Carryover independent analysis",
+          "finding": "Independent reporting retained.",
+          "evidenceIds": [
+            "openai-astra-withdrawal-1"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Carryover limitations",
+          "finding": "Limitation claim retained.",
+          "evidenceIds": [
+            "openai-astra-withdrawal-1"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "carry-zai-zcode-workspace-upload-incident-2026",
+      "eventId": "zai-zcode-workspace-upload-incident-2026",
+      "discoveryUrls": [
+        "https://www.csoonline.com/article/4225037/z-ai-disables-coding-assistant-feature-after-flaw-exposed-enterprise-code-upload-risk-2.html",
+        "https://www.thenews.com.pk/latest/1417148-chinese-ai-firm-zai-disables-coding-assistant-features-after-security-backlash",
+        "https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "novelty": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "spillover": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "durability": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "sourceQuality": "Carryover candidate confirmed from the previous frozen evidence package."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Independent review revisions applied; retained at L1 because the L2-SAFETY route is incomplete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Carryover fact verification",
+          "finding": "Incident fact retained.",
+          "evidenceIds": [
+            "zcode-incident-fact-1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Carryover observed impact",
+          "finding": "No qualifying observed impact for scoring.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Carryover independent analysis",
+          "finding": "Independent reporting retained.",
+          "evidenceIds": [
+            "zcode-limitation-1"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Carryover limitations",
+          "finding": "Limitation claim retained.",
+          "evidenceIds": [
+            "zcode-limitation-1"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "carry-florida-update",
+      "eventId": "florida-sues-openai-2026",
+      "discoveryUrls": [
+        "https://www.myfloridalegal.com/sites/default/files/plaintiffs_motion_for_temporary_injunction.pdf",
+        "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier",
+        "https://www.politico.com/news/2026/09/28/florida-injunction-openai-development-01095061"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "novelty": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "spillover": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "durability": "Carryover candidate confirmed from the previous frozen evidence package.",
+        "sourceQuality": "Carryover candidate confirmed from the previous frozen evidence package."
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "hold",
+      "reason": "Cross-model review confirms this is an update, but legacy-event v2.4 migration is required before canonical modification.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Update fact",
+          "finding": "Update evidence retained.",
+          "evidenceIds": [
+            "carry-florida-update-fact"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Update impact",
+          "finding": "Update evidence retained.",
+          "evidenceIds": [
+            "carry-florida-update-impact"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Update analysis",
+          "finding": "Update evidence retained.",
+          "evidenceIds": [
+            "carry-florida-update-analysis"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Update controversy",
+          "finding": "Update evidence retained.",
+          "evidenceIds": [
+            "carry-florida-update-controversy"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "carry-meta-muse-vulnerability-new",
+      "eventId": "meta-muse-macos-vulnerability-2026",
+      "discoveryUrls": [
+        "https://github.com/pwardle/not-a-mused",
+        "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
+        "https://www.infoq.com/news/2026/09/meta-muse-zeroday/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Cross-model review and retained primary/secondary evidence support the stated conservative score.",
+        "novelty": "Cross-model review and retained primary/secondary evidence support the stated conservative score.",
+        "spillover": "Cross-model review and retained primary/secondary evidence support the stated conservative score.",
+        "durability": "Cross-model review and retained primary/secondary evidence support the stated conservative score.",
+        "sourceQuality": "Cross-model review and retained primary/secondary evidence support the stated conservative score."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Cross-model review found a distinct security disclosure/incident stage and directed creation of a separate L1 safety event.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Verify PoC author, date and local attack precondition",
+          "finding": "Public GitHub PoC and independent reporting document the disclosure.",
+          "evidenceIds": [
+            "meta-poc-fact",
+            "meta-infoq-hotfix"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed exploitation at scale",
+          "finding": "No mass exploitation or qualifying observed impact was retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent technical reporting and remediation scope",
+          "finding": "Independent reporting repeats the PoC and marks remediation as unverified.",
+          "evidenceIds": [
+            "meta-infoq-hotfix"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find evidence of a substantive attribution or scale dispute",
+          "finding": "No documented factual dispute retained; limitations are explicit.",
+          "evidenceIds": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-full-2026-10-08",
+  "kind": "full",
+  "windowStart": "2026-09-29",
+  "windowEnd": "2026-10-08",
+  "evidenceCutoff": "2026-10-08",
+  "timezone": "UTC",
+  "baselineCommit": "1e2e455a720f33674264a64e047680188ed4934e",
+  "operator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "promptVersion": "latest-data-full-v24-20261008-1",
+  "channels": [
+    {
+      "id": "hf-papers",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Hugging Face daily-papers snapshot.",
+      "attempts": [
+        {
+          "query": "Hugging Face daily-papers snapshot.",
+          "executedAt": "2026-10-08T01:55:00Z",
+          "artifact": "governance/evidence/2026-10-08/search/hf-daily-papers.json",
+          "sha256": "1bc109f4fcfca35460fbe8ac6212742068831f5741b3102e8481f5bffd4a26fa",
+          "resultCount": 100
+        }
+      ],
+      "reason": "Bounded snapshot or query does not guarantee exhaustive recall.",
+      "retryResult": "Supplemented with targeted Exa and direct-source retrieval."
+    },
+    {
+      "id": "hacker-news",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "HN Algolia AI date-range query capped at 100.",
+      "attempts": [
+        {
+          "query": "HN Algolia AI date-range query capped at 100.",
+          "executedAt": "2026-10-08T01:55:00Z",
+          "artifact": "governance/evidence/2026-10-08/search/hacker-news.json",
+          "sha256": "9f0fe559993d775a94a86a9fe9aef6da1dd2e2616a570358ae53d83a5fd4472d",
+          "resultCount": 100
+        }
+      ],
+      "reason": "Bounded snapshot or query does not guarantee exhaustive recall.",
+      "retryResult": "Supplemented with targeted Exa and direct-source retrieval."
+    },
+    {
+      "id": "reddit-search",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Reddit OpenCLI search for AI releases.",
+      "attempts": [
+        {
+          "query": "Reddit OpenCLI search for AI releases.",
+          "executedAt": "2026-10-08T01:55:00Z",
+          "artifact": "governance/evidence/2026-10-08/search/reddit.yaml",
+          "sha256": "363cab72b2a1b42b4a3f99c35ab6ee1cea2068eb17b13820de9ddc87337413c4",
+          "resultCount": 20
+        }
+      ],
+      "reason": "Bounded snapshot or query does not guarantee exhaustive recall.",
+      "retryResult": "Supplemented with targeted Exa and direct-source retrieval."
+    },
+    {
+      "id": "x-search",
+      "status": "unavailable",
+      "windowCovered": false,
+      "coverageNote": "OpenCLI X search attempt.",
+      "attempts": [
+        {
+          "query": "OpenCLI X search attempt.",
+          "executedAt": "2026-10-08T01:55:00Z",
+          "artifact": "governance/evidence/2026-10-08/search/twitter.yaml",
+          "sha256": "598b9d37997f508bf92255ea5cb7358632e7b75604b71ae24ea2ea3ede62f748",
+          "resultCount": 0
+        }
+      ],
+      "reason": "AUTH_REQUIRED: x.com login cookie unavailable.",
+      "retryResult": "No authenticated retry; discovery supplemented with Exa."
+    },
+    {
+      "id": "import-ai",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Five full Import AI messages including October 5 issue.",
+      "attempts": [
+        {
+          "query": "Five full Import AI messages including October 5 issue.",
+          "executedAt": "2026-10-08T01:55:00Z",
+          "artifact": "governance/evidence/2026-10-08/search/import-ai.txt",
+          "sha256": "de57f69e05449bca65d1462f75aa44ca509c5bdaad3f022e1bb2ca6e8be86113",
+          "resultCount": 5
+        }
+      ]
+    },
+    {
+      "id": "the-batch",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Five full The Batch messages including October 1 issue.",
+      "attempts": [
+        {
+          "query": "Five full The Batch messages including October 1 issue.",
+          "executedAt": "2026-10-08T01:55:00Z",
+          "artifact": "governance/evidence/2026-10-08/search/the-batch.txt",
+          "sha256": "51459f82140d059532abd6cada24437739d01fb74007d8218428f8fa072f2373",
+          "resultCount": 5
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "Category scanned through core channels, Exa and direct follow-up; X and Brave gaps prevent exhaustive claims."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Category scanned through core channels, Exa and direct follow-up; X and Brave gaps prevent exhaustive claims."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Category scanned through core channels, Exa and direct follow-up; X and Brave gaps prevent exhaustive claims."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "Category scanned through core channels, Exa and direct follow-up; X and Brave gaps prevent exhaustive claims."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Category scanned through core channels, Exa and direct follow-up; X and Brave gaps prevent exhaustive claims."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "Category scanned through core channels, Exa and direct follow-up; X and Brave gaps prevent exhaustive claims."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "oct8-openai-gpt-6-1-sol-2026",
+      "eventId": "openai-gpt-6-1-sol-2026",
+      "discoveryUrls": [
+        "https://deploymentsafety.openai.com/gpt-6-1-sol/monitorability-under-adversarial-conditions",
+        "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "novelty": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "spillover": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "durability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "sourceQuality": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal release or government action was fully confirmed despite limited observed durability.",
+      "decision": "new",
+      "reason": "Core action confirmed; retained as L1 because no L2 route is complete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core fact confirmed.",
+          "evidenceIds": [
+            "gpt61-fact-1",
+            "gpt61-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream impact",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and limitations",
+          "finding": "Independent coverage retained.",
+          "evidenceIds": [
+            "gpt61-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find substantive factual dispute",
+          "finding": "Limitations recorded without a separate controversy flag.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct8-google-gemini-4-argon-2026",
+      "eventId": "google-gemini-4-argon-2026",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "https://www.engadget.com/2274263/google-gemini-4-model-argon/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "novelty": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "spillover": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "durability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "sourceQuality": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal release or government action was fully confirmed despite limited observed durability.",
+      "decision": "new",
+      "reason": "Core action confirmed; retained as L1 because no L2 route is complete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core fact confirmed.",
+          "evidenceIds": [
+            "gemini4-fact-1",
+            "gemini4-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream impact",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and limitations",
+          "finding": "Independent coverage retained.",
+          "evidenceIds": [
+            "gemini4-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find substantive factual dispute",
+          "finding": "Limitations recorded without a separate controversy flag.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct8-microsoft-mai-transcribe-2-streaming-2026",
+      "eventId": "microsoft-mai-transcribe-2-streaming-2026",
+      "discoveryUrls": [
+        "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+        "https://runtimewire.com/article/microsoft-mai-streaming-transcription-voice-models"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "novelty": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "spillover": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "durability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "sourceQuality": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal release or government action was fully confirmed despite limited observed durability.",
+      "decision": "new",
+      "reason": "Core action confirmed; retained as L1 because no L2 route is complete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core fact confirmed.",
+          "evidenceIds": [
+            "ms-stt-fact-1",
+            "ms-stt-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream impact",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and limitations",
+          "finding": "Independent coverage retained.",
+          "evidenceIds": [
+            "ms-stt-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find substantive factual dispute",
+          "finding": "Limitations recorded without a separate controversy flag.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct8-cloudflare-clef-decision-models-2026",
+      "eventId": "cloudflare-clef-decision-models-2026",
+      "discoveryUrls": [
+        "https://blog.cloudflare.com/clef-decision-models/",
+        "https://gigazine.net/gsc_news/en/20261005-clef-cloudflare-decision-model/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "novelty": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "spillover": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "durability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "sourceQuality": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal release or government action was fully confirmed despite limited observed durability.",
+      "decision": "new",
+      "reason": "Core action confirmed; retained as L1 because no L2 route is complete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core fact confirmed.",
+          "evidenceIds": [
+            "clef-fact-1",
+            "clef-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream impact",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and limitations",
+          "finding": "Independent coverage retained.",
+          "evidenceIds": [
+            "clef-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find substantive factual dispute",
+          "finding": "Limitations recorded without a separate controversy flag.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct8-liquid-d1-edge-decision-models-2026",
+      "eventId": "liquid-d1-edge-decision-models-2026",
+      "discoveryUrls": [
+        "https://www.liquid.ai/blog/d1-open",
+        "https://runtimewire.com/article/liquid-ai-open-d1-decision-models-edge"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "novelty": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "spillover": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "durability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "sourceQuality": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal release or government action was fully confirmed despite limited observed durability.",
+      "decision": "new",
+      "reason": "Core action confirmed; retained as L1 because no L2 route is complete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core fact confirmed.",
+          "evidenceIds": [
+            "liquid-d1-fact-1",
+            "liquid-d1-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream impact",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and limitations",
+          "finding": "Independent coverage retained.",
+          "evidenceIds": [
+            "liquid-d1-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find substantive factual dispute",
+          "finding": "Limitations recorded without a separate controversy flag.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct8-google-synthid-bio-2026",
+      "eventId": "google-synthid-bio-2026",
+      "discoveryUrls": [
+        "https://deepmind.google/blog/introducing-synthid-bio/",
+        "https://www.nature.com/articles/d41586-026-03033-y"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "novelty": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "spillover": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "durability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "sourceQuality": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal release or government action was fully confirmed despite limited observed durability.",
+      "decision": "new",
+      "reason": "Core action confirmed; retained as L1 because no L2 route is complete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core fact confirmed.",
+          "evidenceIds": [
+            "synthid-bio-fact-1",
+            "synthid-bio-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream impact",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and limitations",
+          "finding": "Independent coverage retained.",
+          "evidenceIds": [
+            "synthid-bio-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find substantive factual dispute",
+          "finding": "Limitations recorded without a separate controversy flag.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct8-white-house-super-intelligence-order-accord-2026",
+      "eventId": "white-house-super-intelligence-order-accord-2026",
+      "discoveryUrls": [
+        "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+        "https://www.nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "novelty": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "spillover": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "durability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "sourceQuality": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal release or government action was fully confirmed despite limited observed durability.",
+      "decision": "new",
+      "reason": "Core action confirmed; retained as L1 because no L2 route is complete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm actor, action, stage and date",
+          "finding": "Core fact confirmed.",
+          "evidenceIds": [
+            "whitehouse-si-fact-1",
+            "whitehouse-si-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream impact",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent analysis and limitations",
+          "finding": "Independent coverage retained.",
+          "evidenceIds": [
+            "whitehouse-si-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find substantive factual dispute",
+          "finding": "Limitations recorded without a separate controversy flag.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct8-reflection-beam",
+      "discoveryUrls": [
+        "https://reflection.ai/blog/introducing-beam"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "novelty": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "spillover": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "durability": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only.",
+        "sourceQuality": "Scored from retained direct evidence, independent reporting, deduplication, and observed follow-up only."
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Beam is a preview with weights and technical artifacts promised later; open-weight availability has not occurred."
+    }
+  ]
+}
