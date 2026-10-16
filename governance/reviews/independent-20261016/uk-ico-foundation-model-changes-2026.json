@@ -1,0 +1,155 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "uk-ico-foundation-model-changes-2026",
+  "inputSubjectDigest": null,
+  "subjectDigest": "9984776fe0e3e099cfe28b2fd75030a955db77183a49c4e6f13dfdb3116c48ce",
+  "inputsDigest": "d71ccc6841ebd0c9f72242fdfdbc484d74cdefebf51e92e6d75e69a75959e64a",
+  "evidenceCutoff": "2026-10-16",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "gemini-3.8-independent-session-01a14512-39ee-72b3-aafa-671e1f33b5f0",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a14512-39ee-72b3-aafa-671e1f33b5f0",
+  "reviewArtifact": "review/gemini-3.8-full-evidence.jsonl",
+  "reviewExtract": "review/gemini-3.8-full-evidence-extract.json",
+  "runId": "latest-data-full-2026-10-16",
+  "candidateId": "oct16-uk-ico-foundation-model-changes-2026",
+  "runDigest": "cbaad88cd4c3461180014f0f2ec8113a03ccba963c62162cc4835f9230d60c3c",
+  "reviewDecision": "pass_after_revision",
+  "limitations": [
+    "Gemini reviewed complete locally captured evidence as of 2026-10-16; it did not independently browse or re-access live pages.",
+    "This independent-model review does not constitute human editorial approval or publication authorization.",
+    "Full discovery has declared channel gaps, including unavailable X search; the review validates selected records rather than exhaustive recall."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini’s full-evidence review found English and Chinese titles, summaries, narratives, and claim conditions aligned for the reviewed facts; the OpenAI event preserves allegation status and all four retain stated limitations."
+  },
+  "coreFactClaimIds": [
+    "ico-foundation-fact"
+  ],
+  "identity": {
+    "seriesId": "uk-ico-foundation-model-supervision",
+    "action": "UK ICO reports developer data-protection changes or commitments after supervision",
+    "stage": "disclosed",
+    "dateBasis": "ICO media-centre publication date",
+    "deduplicationReason": "A distinct UK regulator supervisory report about named foundation-model developers, not an EU AI Act milestone.",
+    "comparedEventIds": [
+      "eu-ai-act-transparency-2026",
+      "eu-ai-act-enforcement-2025"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "The core action is publication of a statutory data-protection regulator’s supervisory findings."
+  },
+  "significance": {
+    "rationale": "The ICO’s report documents a regulatory supervisory action and developer commitments, but does not establish a binding general rule or verified implementation.",
+    "whyNotHigher": "The report and commitments are neither a binding/precedential action beyond named parties nor independent legal analysis of such an action.",
+    "whyNotLower": "The UK statutory regulator directly published the report and its declared changes or commitments.",
+    "comparisonEventIds": [
+      "eu-ai-act-transparency-2026",
+      "eu-ai-act-enforcement-2025"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": false,
+            "rationale": "The source describes commitments, monitoring, and a call for evidence rather than a binding adjudication, penalty, statute, or precedent.",
+            "evidenceIds": [
+              "ico-foundation-limitation-1"
+            ]
+          },
+          "applies_beyond_named_parties": {
+            "value": false,
+            "rationale": "The report’s supervision concerns ten named foundation-model developers.",
+            "evidenceIds": [
+              "ico-foundation-fact-1"
+            ]
+          },
+          "independent_legal_analysis": {
+            "value": null,
+            "rationale": "No retained source is independent legal/doctrinal analysis of a binding action.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The report records an early regulatory supervision outcome; implementation remains under monitoring.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No retained source documents a factual dispute over the report’s issuance or stated content.",
+    "evidenceIds": []
+  },
+  "evidence": [
+    {
+      "id": "ico-foundation-fact-1",
+      "sourceId": "sweep-20261016-ico-official",
+      "claimId": "ico-foundation-fact",
+      "artifact": "governance/evidence/2026-10-16/direct/uk-ico-ai-developers-official.md",
+      "sha256": "b122804f4d80c1faadf18d3552e2d1fe54d7c914f85bb4d755e808c2ae29c1e8",
+      "quote": "Following scrutiny from us, ten of the biggest foundation model developers operating in the UK - Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI and Stability AI - have made, or committed to make, data protection changes.",
+      "locator": "Body, paragraph beginning “Following scrutiny from us”",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "uk-ico-foundation-model-supervision",
+      "accessedAt": "2026-10-16",
+      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/"
+    },
+    {
+      "id": "ico-foundation-fact-2",
+      "sourceId": "sweep-20261016-ico-tnw",
+      "claimId": "ico-foundation-fact",
+      "artifact": "governance/evidence/2026-10-16/direct/uk-ico-ai-developers-tnw.md",
+      "sha256": "53fd851e8bb0946f2051bc6f22d22dab22ccab8330ad364d49df7a048fa3f8b4",
+      "quote": "Ten of the biggest AI developers have made, or committed to make, changes to how they handle personal data. The UK’s Information Commissioner’s Office (ICO) secured the changes after two years of scrutiny.",
+      "locator": "Body, opening paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "uk-ico-foundation-model-supervision",
+      "accessedAt": "2026-10-16",
+      "url": "https://thenextweb.com/news/ico-ai-developers-data-protection-changes-ai-agents"
+    },
+    {
+      "id": "ico-foundation-limitation-1",
+      "sourceId": "sweep-20261016-ico-official",
+      "claimId": "ico-foundation-limitation",
+      "artifact": "governance/evidence/2026-10-16/direct/uk-ico-ai-developers-official.md",
+      "sha256": "b122804f4d80c1faadf18d3552e2d1fe54d7c914f85bb4d755e808c2ae29c1e8",
+      "quote": "We are monitoring developers' progress against their commitments.",
+      "locator": "Body, safeguards and monitoring paragraph",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "uk-ico-foundation-model-supervision",
+      "accessedAt": "2026-10-16",
+      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/"
+    },
+    {
+      "id": "ico-foundation-limitation-2",
+      "sourceId": "sweep-20261016-ico-tnw",
+      "claimId": "ico-foundation-limitation",
+      "artifact": "governance/evidence/2026-10-16/direct/uk-ico-ai-developers-tnw.md",
+      "sha256": "53fd851e8bb0946f2051bc6f22d22dab22ccab8330ad364d49df7a048fa3f8b4",
+      "quote": "The ICO says it is monitoring whether the companies deliver.",
+      "locator": "Body, second paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "uk-ico-foundation-model-supervision",
+      "accessedAt": "2026-10-16",
+      "url": "https://thenextweb.com/news/ico-ai-developers-data-protection-changes-ai-agents"
+    }
+  ]
+}

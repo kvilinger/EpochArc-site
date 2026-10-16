@@ -1,0 +1,239 @@
+Title: 阶跃星辰
+URL: https://www.stepfun.com/step-5-preview
+Published: N/A
+Author: 阶跃星辰
+Highlights:
+## Step 5 Preview overview
+...
+Today, we're introducing Step 5 Preview, our new flagship model for agentic work. It delivers frontier-level performance across software engineering and professional knowledge work, with particular strength in finance. Built on a sparse Mixture-of-Experts architecture, Step 5 Preview has 600B total parameters, with 27B active per token, and supports a 1M-token context window and vision input.
+
+Step 5 Preview is available today through our products and API. The model will be released with open weights on October 15.
+
+---
+
+Title: Step 5 Preview - StepFun 开放平台文档中心
+URL: https://platform.stepfun.com/docs/zh/guides/models/step-5-preview
+Published: N/A
+Author: N/A
+Highlights:
+Step 5 Preview - StepFun 开放平台文档中心
+
+# Step 5 Preview
+
+Step 5 Preview 是 StepFun 面向真实任务的新一代旗舰基模，重点覆盖编程与专业知识工作。模型原生支持文本、图片和视频输入，提供 1M tokens 上下文窗口，适合需要处理大量信息、调用工具，并持续推进到交付结果的任务。
+...
+| 规格 | Step 5 Preview |
+| --- | --- |
+| 模型 ID | `step-5-preview` |
+| 上下文窗口 | 1M tokens |
+| 输入类型 | 文本、图片、视频 |
+| 输出类型 | 文本 |
+| 最大输入 | 1M tokens |
+| 最大输出 | 64k tokens |
+...
+1. 在 StepFun 开放平台创建 API Key。
+2. 打开快速开始，选择 Step 5 Preview，再切换文本对话、图片理解或视频理解示例。
+3. 使用 cURL 或 Python 发送请求，并从 `choices[0].message.content` 读取结果。
+4. 上线前根据 API 参考补齐超时、重试、错误处理和密钥管理。
+
+---
+
+Title: 阶跃星辰
+URL: https://www.stepfun.com/news/step-5-preview
+Published: 2026-09-20T00:00:00.000Z
+Author: N/A
+Highlights:
+2026年9月20日
+
+# 阶跃发布旗舰模型 Step 5 Preview：向前一步，智能效率的新一代“帕累托前沿”
+...
+阶跃新一代旗舰模型 Step 5 Preview，为此而来！
+
+这是一款面向真实世界 Agentic 任务的旗舰基座模型。我们认为，随着 Agent 从“回答问题”走向“完成任务”，日常工作主力模型的标准也在发生变化：不再只是单项能力足够强，而是要在能力、成本、效率和场景覆盖之间实现更好平衡。Step 5 Preview 正是围绕这种平衡而设计。
+...
+今天起，Step 5 Preview 全量开放，我们由衷希望它能成为你在 Agent 任务中的日常主力模型。此外，Step 5 Preview 依旧是一款开源模型，我们将在10 月 15 日释放模型权重，欢迎大家持续关注。
+
+---
+
+Title: Step 5 Preview API 缓存价格调整公告 - StepFun 开放平台文档中心
+URL: https://platform.stepfun.com/docs/zh/announcements/step-5-preview-price-adjustment
+Published: N/A
+Author: N/A
+Highlights:
+Step 5 Preview API 缓存价格调整公告 - StepFun 开放平台文档中心
+
+# Step 5 Preview API 缓存价格调整公告
+
+自北京时间 2026 年 10 月 14 日 00:30 起，开放平台调整 Step 5 Preview 按量付费 API 的缓存命中输入价格。Step Plan 接入地址下的缓存命中输入价格不在本次调整范围内。
+...
+| 计费项 | 调整前 | 调整后标准价格 |
+| --- | --- | --- |
+| 缓存命中输入 | 0.35 元／百万 tokens | 0.70 元／百万 tokens |
+| 缓存未命中输入 | 7 元／百万 tokens | 保持不变 |
+| 输出 | 20 元／百万 tokens | 保持不变 |
+
+北京时间 2026 年 10 月 14 日 00:30 前，已通过按量付费 API 调用过 Step 5 Preview 的用户，后续调用继续按原缓存命中输入价格 0.35 元／百万 tokens 计费，不受本次调价影响。
+
+---
+
+Title: 阶跃星辰开放平台
+URL: https://platform.stepfun.com/blog/inside-step-5-preview
+Published: 2026-10-15T00:00:00.000Z
+Author: N/A
+Highlights:
+阶跃星辰开放平台
+
+Oct 15, 2026
+
+# Inside Step 5 Preview: Architecture and Training for Agentic Work
+...
+Step 5 Preview was designed with these constraints in mind. Architecturally, it follows a narrow-but-deep design with 92 transformer blocks. It interleaves Gated Sliding Window Attention with sparse full-attention layers, with Sparse GQA used in the full-attention path to support efficient long-context training and inference. Scaling this design also surfaced stability issues in deep training, leading us to revisit numerical precision and gradient handling.
+
+---
+
+Title: N/A
+URL: https://platform.stepfun.com/docs/zh/guides/pricing/details
+Published: N/A
+Author: N/A
+Highlights:
+Step 5 Preview 的缓存命中输入价格自北京时间 2026 年 10 月 14 日 00:30 起由 0.35 元／百万 tokens 调整为 0.70 元／百万 tokens。在该时间之前已通过按量付费 API 调用过 Step 5 Preview 的用户，继续适用 0.35 元／百万 tokens。详见价格调整公告。
+...
+| Model ID | 输入价格（缓存未命中） | 输入价格（缓存命中） | 输出价格 |
+| --- | --- | --- | --- |
+| `step-5-preview` | 7 | 0.70 | 20 |
+| `step-3.7-flash` | 1.35 | 0.27 | 8.1 |
+| `step-3.5-flash` | 0.7 | 0.14 | 2.1 |
+| `step-3.5-flash-2603` | 0.7 | 0.14 | 2.1 |
+| `step-1o-turbo-vision` | 2.5 | 0.5 | 8 |
+
+---
+
+Title: Step Plan 套餐调整公告 - StepFun 开放平台文档中心
+URL: https://platform.stepfun.com/docs/zh/announcements/step-plan-usage-adjustment
+Published: N/A
+Author: N/A
+Highlights:
+自北京时间 2026 年 10 月 15 日 00:00 起，Step Plan 中的 Step 5 Preview 将实行分时段 Credit 扣减。调整生效前已付费且订阅仍有效的用户，可保留原套餐权益。
+
+Step 5 Preview Credit 扣减规则调整
+
+| 时段 | 时间（北京时间） | Credit 扣减标准 |
+| --- | --- | --- |
+| 高峰时段 | 周一至周五 09:00–12:00、14:00–18:00 | 按原标准的 2 倍扣减 |
+| 低谷时段 | 上述高峰时段以外的全部时间 | 按原标准扣减 |
+
+通过免费赠送、活动免费领取或全额使用代金券购买、兑换获得的订阅，如在调整生效前未付费购买 Step Plan，自生效时起调用 Step 5 Preview 将适用上述规则。套餐档位、Credit 额度与完整计费规则见套餐与计费。
+...
+北京时间 2026 年 10 月 15 日 00:00 前已实际付费购买 Step Plan，且在调整生效时订阅仍有效的用户，保留原套餐价格、额度、月限额及对应的扣减规则，不受本次分时段扣减调整影响。实际付费包括微信、支付宝直接付款，实际充值余额支付，以及实际充值余额与代金券混合支付。仅有按量付费 API 充值或消费记录，或仅通过免费赠送、活动免费领取、全额代金券获得订阅，均不符合上述条件。符合上述条件的用户在续订或升级套餐时，原套餐权益按以下规则延续：
+
+---
+
+Title: 阶跃星辰
+URL: https://www.stepfun.com/news
+Published: 2026-09-15T00:00:00.000Z
+Author: N/A
+Highlights:
+### 阶跃发布旗舰模型 Step 5 Preview：向前一步，智能效率的新一代“帕累托前沿”
+
+帕累托前沿，描述的是多个目标之间所能达到的最佳平衡：在这条边界上，想进一步改善一个维度，通常就必须牺牲另一个。对 AI 模型而言，能力、效率与成本之间也存在这样的取舍。推进帕累托前沿，并不是让取舍消失，而是通过新的模型设…
+
+---
+
+Title: 阶跃星辰开放平台
+URL: https://platform.stepfun.com/cookbook/step-5-tool-calling
+Published: N/A
+Author: N/A
+Highlights:
+# Step 5 Preview 工具调用：从函数定义到结果回传
+...
+2026.09.29 发布
+...
+中英文版本介绍相同的模型能力和主要流程；示例输入、提示词、输出字段和校验细节可能不同，请以所读版本的代码为准。配套 Python 脚本与 Notebook 对应中文版。
+...
+Step 5 Preview 接收消息并生成回复，也可以在回复中提出工具调用请求。应用把可用函数描述放入 tools，模型返回函数名与参数，应用执行后再把结果传回，模型据此继续处理。模型概览 · 工具调用机制
+...
+- Python 3.10 或以上版本、一个终端和任意代码 ... 。
+- Step ... 平台账号，已创建 API Key ... 可以调用 step-
+...
+。真实调用
+...
+## 3. ... 一次完整工具调用
+...
+描述。收到 ... id 把结果 ... 。没有新的 ... 读取最终回答
+...
+参数组：模型选择工具与客户端预算。 tool_choice="auto" 让模型根据输入决定是否调用工具。 max_rounds、 max_tool_calls 是本地循环限制，分别限制模型请求轮数与实际执行次数，不会作为模型参数发送。它们可以按项目的时延和成本要求独立调整。
+...
+OPTIONS = {"tool_choice": "auto", "max
+...
+def run_loop(task, call_api, model="step-5-preview", max_rounds=5,
+
+ tool ... choice="auto", max_tool_calls=8):
+
+ messages ... [
+
+ {"role": "system", "content": "需要算术运算时使用 calculate 工具，不能声称执行未调用的工具。工具失败时如实说明。最终回答仅输出 JSON 对象，包含 answer 和 explanation；answer 是数值、问候字符串或无法完成时的 null。"},
+
+ {"role": "user", "content": task["text"]},
+
+ trace, calls = [], []
+
+ for round_no in range(1, max_rounds + 1):
+
+ payload = {"model": model, "messages": messages, "tools": [TOOL],
+
+ "tool_choice": tool_choice, "reasoning_effort": "low",
+
+ "max_tokens": 4096, "stream": False}
+
+ data, elapsed = call_api(payload)
+
+ choice = data["choices"][0]
+
+ message = choice["message"]
+
+ requested = message.get("tool_calls") or []
+
+ return finish_tool_result(task, choice, calls, trace)
+
+ if choice.get("finish_reason") not in ("tool_calls", "stop"):
+
+ raise RuntimeError("工具调用响应未完整结束")
+
+ if len(requested) > 4 or len(calls) + len(requested) > max_tool_calls:
+
+ raise RuntimeError("本次请求超过工具调用预算")
+
+ assistant = {k: message[k] for k in ("role", "content", "tool_calls", "reasoning_content") if k in message}
+
+ assistant["role"] = "assistant"
+
+ if not item.get("id") or not isinstance(item.get("function"), dict):
+
+ raise ValueError("工具调用缺少标识或函数参数")
+
+ function = item["function"]
+
+ result = execute(function.get("name"), function.get("arguments"))
+
+ calls.append({"id": item["id"], "name": function.get("name"),
+
+ "arguments": function.get("arguments"), "result": result})
+
+ messages.append({"role": "tool", "tool_call_id": item["id"],
+
+ "content": json.dumps(result, ensure_ascii=False)})
+
+ raise RuntimeError("达到模型请求轮数上限")
+
+每次模型选择工具后，程序先追加原助手消息，再追加带有匹配 tool_call_id 的结果。这个顺序使下一轮请求能够理解工具结果对应哪个调用。网络异常会向调用入口抛出，由业务层决定如何处理。
+
+---
+
+Title: N/A
+URL: https://platform.stepfun.com/docs/zh/guides/models/vision
+Published: N/A
+Author: N/A
+Highlights:
+Step 5 Preview
+
+推荐优先使用。面向真实任务的新一代旗舰基模，原生支持文本、图片和视频输入，提供 1M tokens 上下文，支持三档推理强度（low/medium/high）。适合图表分析、截图问答、视频总结和跨文档多模态任务。详见 Step 5 Preview。

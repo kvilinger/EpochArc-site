@@ -1,0 +1,158 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "eight-state-openai-safety-lawsuits-2026",
+  "inputSubjectDigest": null,
+  "subjectDigest": "edbe8f40537dec84d65557c2aeb5d3feaa7fcee3a84c036a9c1fc3e3f6255071",
+  "inputsDigest": "8c2ce28f4be0e77da2e7e9c3893605e8e8d75f2ec62c1048d4034ccc11912ebd",
+  "evidenceCutoff": "2026-10-16",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "gemini-3.8-independent-session-01a14512-39ee-72b3-aafa-671e1f33b5f0",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a14512-39ee-72b3-aafa-671e1f33b5f0",
+  "reviewArtifact": "review/gemini-3.8-full-evidence.jsonl",
+  "reviewExtract": "review/gemini-3.8-full-evidence-extract.json",
+  "runId": "latest-data-full-2026-10-16",
+  "candidateId": "oct16-eight-state-openai-safety-lawsuits-2026",
+  "runDigest": "cbaad88cd4c3461180014f0f2ec8113a03ccba963c62162cc4835f9230d60c3c",
+  "reviewDecision": "pass",
+  "limitations": [
+    "Gemini reviewed complete locally captured evidence as of 2026-10-16; it did not independently browse or re-access live pages.",
+    "This independent-model review does not constitute human editorial approval or publication authorization.",
+    "Full discovery has declared channel gaps, including unavailable X search; the review validates selected records rather than exhaustive recall."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini’s full-evidence review found English and Chinese titles, summaries, narratives, and claim conditions aligned for the reviewed facts; the OpenAI event preserves allegation status and all four retain stated limitations."
+  },
+  "coreFactClaimIds": [
+    "eight-state-openai-fact"
+  ],
+  "identity": {
+    "seriesId": "state-ag-openai-consumer-protection",
+    "action": "Eight state attorneys general file coordinated consumer-protection complaints against OpenAI",
+    "stage": "disclosed",
+    "dateBasis": "Nebraska court e-filing date, corroborated by legal reporting",
+    "deduplicationReason": "A coordinated eight-state filing is a distinct litigation action from Florida’s earlier single-state action.",
+    "comparedEventIds": [
+      "florida-sues-openai-2026",
+      "openai-australia-medicare-agent-incident-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "The core action is state law-enforcement litigation under consumer-protection law."
+  },
+  "significance": {
+    "rationale": "Eight state attorneys general filed coordinated complaints, but a complaint is an unadjudicated procedural action rather than a binding legal rule or remedy.",
+    "whyNotHigher": "No judgment, injunction, settlement, or precedent is documented; the retained legal overview is document aggregation rather than substantive legal analysis.",
+    "whyNotLower": "The Nebraska complaint provides direct court-filing evidence and Just Security identifies the coordinated multi-state action.",
+    "comparisonEventIds": [
+      "florida-sues-openai-2026",
+      "openai-australia-medicare-agent-incident-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": false,
+            "rationale": "The retained complaint seeks relief and contains allegations; it is not a judgment or precedent.",
+            "evidenceIds": [
+              "eight-state-openai-limitation-1"
+            ]
+          },
+          "applies_beyond_named_parties": {
+            "value": false,
+            "rationale": "The complaints seek relief against named OpenAI defendants in their respective state courts.",
+            "evidenceIds": [
+              "eight-state-openai-limitation-1"
+            ]
+          },
+          "independent_legal_analysis": {
+            "value": null,
+            "rationale": "The retained Just Security item aggregates and describes filings but does not supply substantive legal analysis of a binding rule.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The action is newly filed litigation with no adjudicated outcome.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "The state complaints assert contested consumer-protection allegations against OpenAI.",
+    "evidenceIds": [
+      "eight-state-openai-limitation-1",
+      "eight-state-openai-limitation-2"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "eight-state-openai-fact-1",
+      "sourceId": "sweep-20261016-openai-states-nebraska",
+      "claimId": "eight-state-openai-fact",
+      "artifact": "governance/evidence/2026-10-16/direct/openai-eight-states-nebraska-complaint.md",
+      "sha256": "3b2fa0e50a73a6bb7c932446b9e52ef53995d8f701dc08fbb500f355b674f8bb",
+      "quote": "Filed in Buffalo District Court *** EFILED *** Case Number: D09CI260000488 Transaction ID: 0025725461 Filing Date: 10/14/2026 09:51:28 AM CDT",
+      "locator": "Page 1 e-filing header",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "nebraska-openai-complaint",
+      "accessedAt": "2026-10-16",
+      "url": "https://www.justsecurity.org/wp-content/uploads/2026/10/Nebraska.pdf"
+    },
+    {
+      "id": "eight-state-openai-fact-2",
+      "sourceId": "sweep-20261016-openai-states-justsecurity",
+      "claimId": "eight-state-openai-fact",
+      "artifact": "governance/evidence/2026-10-16/direct/openai-eight-states-justsecurity.md",
+      "sha256": "bc2447bbdeeaf583c3e48fc0104a21e6f193f911475895e85e141115500c743d",
+      "quote": "filed coordinated lawsuits against OpenAI in their own state courts on Oct. 14.",
+      "locator": "Opening paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "justsecurity-eight-state-openai-filings",
+      "accessedAt": "2026-10-16",
+      "url": "https://www.justsecurity.org/160981/eight-states-sue-openai-chatgpt-safety/"
+    },
+    {
+      "id": "eight-state-openai-limitation-1",
+      "sourceId": "sweep-20261016-openai-states-nebraska",
+      "claimId": "eight-state-openai-limitation",
+      "artifact": "governance/evidence/2026-10-16/direct/openai-eight-states-nebraska-complaint.md",
+      "sha256": "3b2fa0e50a73a6bb7c932446b9e52ef53995d8f701dc08fbb500f355b674f8bb",
+      "quote": "To remedy and put an end to Defendants ’ wrongdoing, the State hereby seeks civil penalties and injunctive relief against Defendants under the Consumer Protection Act",
+      "locator": "Paragraph 11",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "nebraska-openai-complaint",
+      "accessedAt": "2026-10-16",
+      "url": "https://www.justsecurity.org/wp-content/uploads/2026/10/Nebraska.pdf"
+    },
+    {
+      "id": "eight-state-openai-limitation-2",
+      "sourceId": "sweep-20261016-openai-states-justsecurity",
+      "claimId": "eight-state-openai-limitation",
+      "artifact": "governance/evidence/2026-10-16/direct/openai-eight-states-justsecurity.md",
+      "sha256": "bc2447bbdeeaf583c3e48fc0104a21e6f193f911475895e85e141115500c743d",
+      "quote": "The suits bring claims under state consumer protection laws, alleging that OpenAI marketed ChatGPT as safe while concealing its risks.",
+      "locator": "Opening paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "justsecurity-eight-state-openai-filings",
+      "accessedAt": "2026-10-16",
+      "url": "https://www.justsecurity.org/160981/eight-states-sue-openai-chatgpt-safety/"
+    }
+  ]
+}

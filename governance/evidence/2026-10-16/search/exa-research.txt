@@ -1,0 +1,484 @@
+Title: Brain theory-based AI enables robot to learn multiple caregiving tasks | News | Science Japan
+URL: https://sj.jst.go.jp/news/202610/n1008-01k.html
+Published: 2026-10-08T00:00:00.000Z
+Author: Asia, Pacific Research Center (APRC
+Highlights:
+Brain theory-based AI enables robot to learn multiple caregiving tasks | News | Science Japan
+
+# Brain theory-based AI enables robot to learn multiple caregiving tasks
+
+2026.10.08
+
+A research group including Specially Appointed Research Unit Leader Hayato Idei and Unit Leader Yuichi Yamashita at the Department of Information Medicine, National Institute of Neuroscience, National Center of Neurology and Psychiatry (NCNP), alongside Junior Researcher Tamon Miyake and Professor Tetsuya Ogata of Waseda University, has implemented an AI model based on brain theory in a multi-degree-of-freedom humanoid robot. The researchers demonstrated that a humanoid robot can learn multiple caregiving tasks while integrating high-dimensional visuo-proprioceptive sensory information. The findings were published in Science Advances.
+...
+The researchers therefore developed a new predictive processing-based AI model, Scalable PV-RNN, and implemented it in the multi-degree-of-freedom humanoid robot AIREC to evaluate whether the theory could support high-dimensional multitask intelligence. The AI directly integrates approximately 30,000 dimensions of visual and proprioceptive information and learns while predicting future sensory inputs.
+...
+In the experiments, the researchers used data obtained by teleoperating AIREC and trained the robot on two fundamentally different caregiving tasks: repositioning a mannequin care recipient and body wiping.
+
+The results confirmed that the proposed AI model can simultaneously learn and predict these different caregiving tasks. Unlike conventional approaches that require separate AI systems for each task, the findings suggest that a single brain-inspired AI system could adapt to a variety of different tasks.
+...
+not explicitly designed into the system but emerged naturally through learning ... a computational principle for
+...
+Journal Information Publication: Science Advances Title: Predictive processing as a scalable computational principle for embodied multitask intelligence DOI: 10.1126/sciadv.aed7511
+
+---
+
+Title: HKUST Develops Embodied Robotic Arm “EmArm” with Human-Like Touch Sensing | HKUST
+URL: https://hkust.edu.hk/news/hkust-develops-embodied-robotic-arm-emarm-human-touch-sensing
+Published: 2026-10-16T03:00:47.000Z
+Author: N/A
+Highlights:
+HKUST Develops Embodied Robotic Arm “EmArm” with Human-Like Touch Sensing | HKUST
+
+# HKUST Develops Embodied Robotic Arm “EmArm” with Human-Like Touch Sensing
+
+Simulating Human Tactile Perception to Advance Embodied AI
+
+2026-10-16
+...
+Inspired by the human body’s “bone-muscle-skin” structure, the research team embedded a large-area soft optical tactile skin within EmArm’s rigid mechanical skeleton, integrating high-load operation with soft tactile sensing. The system combines proprioceptive and tactile information through a perception-action loop to support adaptive robotic manipulation.
+...
+A research team at The Hong Kong University of Science and Technology (HKUST) has developed an Embodied Sensorimotor Robotic Arm (EmArm) capable of whole-arm tactile sensing and adaptive manipulation. By embedding a soft optical tactile skin directly into a robotic skeleton and integrating it with a real-time decision-making algorithm, EmArm can perceive and analyze contact information across its upper and lower arms, enabling human-like tactile perception and adaptive object manipulation. The system can also distinguish between different touch interactions, such as tickling and patting, respond in real time, and avoid obstacles through tactile feedback, opening new possibilities for the development of embodied intelligent robots.
+
+The study was led by Prof. SHEN Yajing, Professor of the Department of Electronic and Computer Engineering (ECE) and Associate Director of Cheng Kar-Shun Robotics Institute, and his team at the Mevita Robotics Lab. Other authors of the paper include postdoctoral researchers Dr. TANG Yifeng (first author), Dr. LI Gen, and Dr. REN Hao; doctoral students YIN Tianci, LING Zhengrong, ZHAO Haoxiang, and ZHANG Ruijia; and lab graduates Prof. ZHANG Tieshan (Shenzhen University) and Prof. YANG Liu (Nankai University, Tianjin). The findings were published in Nature Sensors under the title “ Embodied sensorimotor integration for whole-arm tactile sensing and adaptive robotic manipulation”.
+...
+Inspired by the human body’s “bone-muscle-skin” structure, the team deeply embedded a large-area soft optical tactile skin inside EmArm’s rigid mechanical skeleton, integrating high-load operation with soft tactile sensing. More than 71,000 square millimeters of soft tactile skin covers the upper and lower arms, while internal sub-millimeter-scale cameras analyze the distribution of forces applied to the robotic arm. EmArm achieves a spatial resolution of 0.085 millimeters, comparable to that of human fingertip skin. Its two-point discrimination threshold can be as low as 18.2 millimeters, outperforming the typical 30-to-50-millimeter range of human arm skin and enabling finer differentiation of contact spacing. The optical sensing approach also avoids the complex wiring required by electronic skin and is inherently resistant to electromagnetic, light, temperature, humidity, and acoustic interference. Experiments showed that EmArm maintained a sensing fidelity of up to 97.9% under five types of environmental interference. 
+
+More importantly, the embedded tactile skin had no material impact on the robotic arm’s high-load operation. Experiments showed that EmArm achieved repeat positioning accuracy comparable to that of conventional robotic arms. The system could also withstand pressure loads exceeding 15 kg and torsional loads of 7.35 Nm. EmArm therefore integrates whole-arm tactile sensing with high-precision actuation in a unified embodied sensorimotor architecture.
+...
+To transform EmArm from a sensor to an intelligent agent, the team further proposed a perception-action loop. The framework combines joint-angle data (proprioception) with tactile information (exteroception) in real time, and extracts features including contact location, area, force, and the number of contact points to support autonomous decision-making. Subsequently, the sensing data are fed directly into the robotic arm’s motion-control system. For example, when EmArm holds a basketball positioned away from its center of gravity, the system compares real-time tactile features with a pre-learned policy, generates joint-angle commands in real time, and continuously adjusts the forces applied by the upper and lower arms to maintain balance. 
+
+The research team demonstrated EmArm’s application potential across three typical scenarios. In human-robot interaction scenarios, EmArm can identify five touch behaviors, namely stroking, pinching, poking, tickling, and hitting. It interprets the interactions in real time and provides emotional feedback expressions corresponding to happiness, sadness, curiosity, shyness, or anger, achieving a recognition accuracy of up to 99.8%. In manipulation task scenarios, when a basketball is placed off-center on the arm, EmArm autonomously adjusts its posture through whole-arm tactile feedback and force control to stabilize the object. In a more challenging trajectory replanning experiment, when visually undetectable dynamic obstacles, such as a human hand, enter the motion path, EmArm can immediately detect them through touch, execute an emergency stop, determine whether the obstacle was temporary or permanent, and autonomously replan its path to bypass it. The results demonstrate that EmArm can maintain safe and flexible autonomous operation even when vision is occluded. 
+
+EmArm represents a significant technological advance in sensor technology and marks a broader shift in robotic design, from “externally attached perception” to “intrinsic intelligence”, and from “vision supremacy” to “multimodal fusion”. The research team notes that the EmArm system could be further extended to robotic legs, torsos, and other body parts, enabling safer and more adaptive interaction by humanoid robots in home services, industrial settings, medical assistance, and other application scenarios. The system could also help advance embodied AI, in which AI systems with physical bodies perceive, interact with, and learn from the real world.
+
+---
+
+Title: Walking Robotic Hand Uses AI to Learn New Tricks - IEEE Spectrum
+URL: https://spectrum.ieee.org/walking-robotic-hand
+Published: 2026-10-08T12:00:02.000Z
+Author: Edd Gent
+Highlights:
+Walking Robotic Hand Uses AI to Learn New Tricks - IEEE Spectrum
+
+# This Disembodied Hand Is All the Robot You Need 
+
+Multipurpose body parts could lead to more-flexible robot designs
+
+Edd Gent
+
+08 Oct 2026
+...
+With a little bit of modification and training, an off-the-shelf robot hand can be an entire mobile robot.
+
+ Source images: Amirhossein Kazemipour, Hehui Zheng, and Robert Katzschmann
+
+A hand attached to the end of an arm is a given for most humans, but what if robots didn’t have to play by the same rules as we do? Researchers from ETH Zurich have turned an off-the-shelf robotic hand into a completely self-contained robot that walks on its fingertips while using those same fingers to manipulate its environment.
+
+Besides making the perfect Halloween accessory for anyone planning to dress up as a member of the Addams Family—who were famously accompanied by a disembodied walking hand called Thing—this robotic hand could make it possible to operate controls and handle objects in places a traditional robot arm can’t reach, the researchers say.
+
+ Soft Robotics Lab, ETH Zurich/YouTube 
+
+Amirhossein Kazemipour, a Ph.D. candidate in the Soft Robotics Lab at ETH Zurich who led the project, believes this hand could prove useful in contexts like fiddly maintenance tasks in industrial settings, or in search and rescue, where a robot could detach its hand to explore confined spaces too tight for the rest of its body. More broadly, he says, the work is a step toward a new approach to robotics in which body parts are not confined to a single role.
+...
+This is not the first attempt to get a robot hand to walk, but previous work has typically relied on specially designed hands. The ETH team instead decided to use off-the-shelf hardware from Wuji Technology, augmented with an 80-gram backpack containing a battery, an inertial measurement unit (IMU), and a Raspberry Pi Zero. Kazemipour says they decided to go with a commercial robot hand because they didn’t want to compromise on the hand’s manipulation capabilities. This introduced significant challenges, he adds, because a hand’s shape is optimized for grasping rather than crawling.
+...
+To teach the hand to walk, the researchers trained a model in simulation using reinforcement learning—an approach in which models learn skills through many rounds of trial and error, receiving rewards for getting closer to the desired behavior along with penalties when they diverge from it. But Kazemipour says the unusual geometry of a hand meant they couldn’t just reuse methods used to train other kinds of legged robots. Standard quadrupeds or bipeds tend to be symmetrical on their left and right sides, which simplifies walking and balance, he says. Hands, in contrast, are not at all symmetrical, with fingers of different lengths and an opposable thumb.
+
+In addition to rewards for moving at the right speed and in the right direction and penalties for things like wobbling or jerky movement, the team introduced a novel way to keep the hand in a crawling stance during the simulated training. To account for unequal digit length, they gave each finger its own target position relative to the palm, based on where it naturally sits when in the crawling posture. They then penalized the fingers for straying too far from that reference point, creating what they describe as “virtual springs” that pull the fingers back to the crawling stance. Crucially, the penalties for fingers moving forward and backward are significantly less than those for moving side to side, so taking steps in that way costs the hand very little compared with the rewards it receives for moving.
+
+The team also trained separate models for skills like righting the hand when it falls over, pressing keys on a keyboard, and pushing objects to a target. All four models fit on the onboard computer, says Kazemipour, and the controller can switch between them as necessary. In real-world tests, the hand crawled across 14 different surfaces including smooth floors, metal grates, grass, and gravel. Other experiments confirmed that it could make both right and left turns, and hit an average speed of 9 centimeters per second. The hand was able to right itself in 21 of 25 trials. When given a video feed from an overhead camera, it even managed to autonomously push a 41-gram cube to targets up to 40 cm away 15 times in a row.
+
+“What interests me most about this work is that the same fingers can move the hand, support its weight, and interact with its surroundings,” says Masahiko Inami, a professor at the University of Tokyo whose group has developed hand-shaped walking robots. He agrees that a mobile hand could be useful for reaching confined spaces and operating controls that an entire arm could not easily access, though he says practical deployment would require onboard perception and more robust navigation. Hideki Shimobayashi, a Ph.D. student in Inami’s lab, also points out that walking puts very different loads on a hand compared to grasping, so durability may be a challenge.
+
+However, Matei Ciocarlie, an associate professor of mechanical engineering at Columbia University, says it’s a “cool result” that suggests robot hands don’t have to be restricted to the same capabilities as their human counterparts. “One can imagine an entirely new class of mobile manipulators that are simultaneously dexterous, able to traverse complex terrain, and able to manipulate payloads comparable in size to themselves,” he says.
+
+Kazemipour sees his work as part of a longer-term vision for robots made up of parts that are not tied to a single job or even a single body plan, something he calls “autonomous modular embodiments.” “Robotic body parts should not be permanently assigned to a single function,” he says. “They can dynamically transition between roles, between being components of one embodiment system and autonomous agents, according to the task.”
+...
+The same fingers serving as legs, supports, and manipulators raises an interesting reliability question: how would the controller recognize that a finger is slipping or becoming overloaded before the hand falls?
+
+Could an uncertainty-aware monitoring layer use joint and motion signals to trigger a safer posture or recovery behavior, especially during transitions from crawling to pressing a key or pushing an object? What experiments would distinguish early warning of failure from simply detecting a fall after it happens?
+
+---
+
+Title: Robotics arXiv Digest — 2026-10-08
+URL: https://www.visionforrobotics.com/robotics-digest/digest_2026-10-08.html
+Published: 2026-10-08T00:00:00.000Z
+Author: Ruixiang Wang, Yongyi Su, Wenlve Zhou, Bo Yue, Hengyan Liu
+Highlights:
+Robotics arXiv Digest — 2026-10-08
+
+# 🤖 Robotics arXiv Digest
+
+Thursday, October 8, 2026
+
+## 🔭 Research Landscape
+
+Today's 30 papers are dominated by a single question: what should a robot predict about the future? Seven papers build world-action models (WAMs) and, read together, they reject the default of predicting future video. UNITAS (#3) argues for metric 3D scene flow because pixel distances are not physical distances (49% lower displacement error than PointWorld, 99.8% on LIBERO); MiniWAM (#10) shows that compact inverse-dynamics-shaped targets with 65× fewer tokens outperform native DINOv3 or video-VAE futures and train 8× faster; PlanWAM (#13) applies the same idea to driving, letting the planning loss shape the future latent (93.8 PDMS on NAVSIM); LiteNWM (#16) gets a 128× speedup by scoring candidate trajectories in latent space; and Spatial Language Modeling (#2) goes furthest, predicting explicit contour tokens. DreamTrue (#21) is the exception that proves the rule: it stays in video, but needs counterfactual post-training and a learned defect reward to cut physically implausible outcomes from 48% to 6%. The emerging consensus is that a world model's future should be shaped by what control needs, not by what a video generator happens to produce.
+
+The second theme is human data at scale, bridged by a shared latent space instead of kinematic retargeting. VioLA (#8) trains a humanoid generalist on 140M frames, 93% of them human, by predicting body and hand motion latents that a pretrained controller executes. It reaches 100% zero-shot locomotion success where GR00T N1.7 manages 16.7%. Being-M0.7 (#14) puts the bridge earlier, in a visual-motion prior learned from 10k hours of mixed human video and motion. Generative Neural Retargeting (#22) replaces per-demo MPC with flow-matching sampling, using 8.5% of the samples and doubling success. TACROSS (#24) does the same for touch, aligning a $11 glove with robot sensors at the contact-event level. Dex-One2Many (#7) and YOCO (#28) round this out: one abstracts a single human video into scene-graph constraints, and the other removes per-user glove bias. Across these papers, cheap human data plus a learned translation layer is replacing expensive teleoperation.
+
+A third, more contrarian thread asks how much a frozen foundation model can do with better scaffolding. ARC (#26) improves π 0.5 's real-robot success by 82 points using only auto-labeled, action-grounded reasoning traces. SpatialHarness (#9) lifts a frozen GPT-6 Astra from 0% to 100% on Tower of Hanoi by rendering virtual camera views from a digital twin, and Rendering-Free Lookahead (#20) learns that same 'where to look' judgement offline. SuperNav (#4) builds an agent harness around an un-fine-tuned MLLM for navigation. The sharpest challenge is Embodied Turing Machines (#15): it removes the model from the loop entirely, uses coding agents to grow a code-only policy library (70% on 42 bimanual tasks), and proposes that library as a data engine for VLAs. RoboAware (#29) sits in between, learning only when to hand control to code and when to an end-to-end policy. On the classical side, the controlled benchmark in #5 offers a useful rule of thumb that applies to this debate too: hand-built structure wins when dynamics are predictable, and learning wins when they are stochastic.
+...
+### UNITAS: A 3D-Native World Action Model for Embodied Manipulation
+...
+9% lower displacement errors than PointWorld, and state-of-the-art manipulation success, including 99.8% on LIBERO and an average of 85% across real-world tasks. The code is available at https://github.com/DexForce/UNITAS.
+
+### MiniWAM: Learning Compact Future Targets for Efficient World-Action Modeling
+...
+World modeling has emerged as an effective co-training objective for robot policies, giving rise to World Action Models (WAMs) that jointly predict actions and future states. However, most WAMs predict future states in the native representation space of pretrained visual backbones, resulting in high-dimensional targets with substantial training cost. We introduce MiniWAM, which instead predicts compact future representations learned from privileged current-future transitions. To construct these targets, we propose Predictive Representations via Inverse Spatiotemporal Modeling (PRISM), which combines inverse-dynamics supervision with feature reconstruction to emphasize control-relevant transition information while preserving useful future-state information. With the learned PRISM encoder frozen, MiniWAM is trained to jointly predict the resulting targets and robot actions from current observations. With 65$\times$ fewer native future feature tokens, MiniWAM consistently outperforms native future-feature prediction with both DINOv3 and WAN2.1 VAE features, while achieving up to an 8$\times$ speedup in world-action training. At 0.25B parameters, MiniWAM is already competitive with substantially larger WAMs on LIBERO, LIBERO-Plus, and RoboTwin 2.0 simulation benchmarks. Representation analyses further show that PRISM contributes behavioral structure beyond feature reconstruction alone. These results demonstrate that effective world-action modeling does not require predicting native visual futures, and that compact predictive representations provide a strong and substantially more efficient target for policy learning. The project page is available at: https://j1dan.github.io/MiniWAM.
+...
+### PlanWAM: Planning-Shaped Future Representations for End-to-End Autonomous Driving
+...
+World models in end-to-end autonomous driving predict future scene evolution to provide foresight for trajectory planning. Existing methods mainly study how to predict the future and how to use it, but less often ask which future representation is actually most useful for planning. To this end, we propose PlanWAM, a Planning-Shaped World Action Model. The key idea is to let the planning task shape the future-state representation, so that it retains the information most useful for planning. A latent world model then predicts this planning-shaped future latent representation from historical observations and uses it for planning, enabling foresighted planning. Specifically, we first use a Temporal Register Pyramid to compress multi-frame historical information in a recency-aware manner, learning a compact history representation oriented toward future reasoning and planning. We then introduce a privileged future posterior branch that observes ground-truth future frames, and shape its future latent representation with trajectory-planning objectives to obtain a planning-shaped future latent representation. Hindsight-to-Foresight Distillation trains a prior branch that depends only on history to predict this future latent representation. The predicted future latent representation serves as planning context and guides trajectory generation and selection. PlanWAM achieves 93.8 PDMS / 90.9 EPDMS on NAVSIM-v1/v2 navtest and reaches 38.7 HD-Score on closed-loop HUGSIM in a zero-shot setting, demonstrating leading planning performance across both open-loop and closed-loop evaluations. Extensive experiments further demonstrate that planning-shaped future representations provide an effective and deployable form of foresight for world-action models.
+...
+### DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training
+...
+### LiteNWM: Efficient Latent World Models for Onboard Visual Navigation in the Wild
+...
+### ARC: A Reasoning Recipe for Robot Foundation Models
+...
+### Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement
+...
+### RoboAware: Learning to Coordinate Embodied Skills from Counterfactual Outcomes
+...
+### Rewiring Semantics, Dynamics, and Control: A Simple yet Effective Action-Centric Tri-Stream Transformer
+...
+### VioLA: Learning Generalist Humanoid Control Policies from Human Data
+...
+### SuperNav: An Agentic Navigation System for Any Task in Any Scene
+
+---
+
+Title: Meta FAIR Ships 8B RoboJEPA With Multi-Embodiment Scaling Laws | AI Weekly
+URL: https://aiweekly.co/alerts/meta-fair-ships-8b-robojepa-with-multi-embodiment-scaling-laws
+Published: 2026-10-08T21:45:07.000Z
+Author: Alexis Dufresne
+Highlights:
+Meta FAIR Ships 8B RoboJEPA With Multi-Embodiment Scaling Laws | AI Weekly
+
+# Meta FAIR Ships 8B RoboJEPA With Multi-Embodiment Scaling Laws 
+
+ By Alexis Dufresne · Published October 8, 2026 at 21:45 UTC · Updated October 8, 2026 at 22:30 UTC
+...
+- Meta FAIR's RoboJEPA trains on 15,022 hours of robot video across 23 datasets and 12 embodiments, scaling from 22M to 8B parameters.
+- Imagination error follows a second-order power law L(C) = E + A·C^(α - γ ln C) that extrapolates fits made on 22M–2B models to held-out 4B–8B runs.
+- Capabilities emerge at compute thresholds: end-effector reaching near 10^20 FLOPs, obstacle avoidance near 10^21, fine object dynamics near 10^22.
+
+Meta's FAIR lab trained a robot world model on 15,022 hours of video across 23 manipulation datasets and 12 embodiments, scaled a Joint Embedding Predictive Architecture up to 8B parameters, and open-sourced the checkpoints together with the training and robot-deployment code. The paper, led by Artem Zholus with joint last authors Jeannette Bohg, Nicolas Ballas and Mahmoud Assran, calls this "the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date."
+
+The core claim is a fitted curve. The authors write that "RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit." The form is L(C) = E + A·C^(α − γ ln C). On the DROID holdout the fit lands with an extrapolation error of 0.6×10⁻³, against 2.0×10⁻³ for a first-order power law — fits made on 22M-to-2B models project onto held-out 4B and 8B runs. The irreducible-error term E comes in at 0.218 on DROID and 0.1709 on RoboCasa, numbers the authors read as near-saturation with the current data budget.
+
+Capabilities land at specific compute thresholds. End-effector 3D reaching emerges around 10^20 FLOPs, obstacle avoidance around 10^21, and fine object dynamics such as pushing around 10^22; long-horizon non-greedy planning sits above 10^22, which is the 2B-to-8B band. The paper also reports that "downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation."
+...
+github.com ... /robo_
+...
+Meta is importing the LLM scaling-law playbook into robotics with a public 8B checkpoint; teams funding real-robot stacks now have a compute-to-capability curve to budget against, with the catch that the irreducible-error estimate already hints at saturation on today's data.
+
+ Originally reported by huggingface.co
+
+---
+
+Title: Physical AI Radar · 2026-10-16 | Physical AI Radar
+URL: https://noteflowai.github.io/physical-ai-radar/radar/daily/2026-10-16.en.html
+Published: N/A
+Author: N/A
+Highlights:
+Physical AI Radar · 2026-10-16 | Physical AI Radar
+
+# Physical AI Radar · 2026-10-16
+
+> A daily radar on the Physical AI frontier: eight lanes, trilingual digests, traceable evidence.
+
+### 1. Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System
+
+- Lane: Systems & orchestration (long-horizon / multi-policy) ｜ Evidence: `[R]` ｜ Source: arXiv 2610.19600 ｜ `2026-10-14`
+- Key numbers: `80%` (“pretrained subtask VLA achieves 80% success rate on”) · `19%` (“manipulation tasks but only 19% when these skills”) · `47%` (“success from 19% to 47%”) · `49%` (“the finalized system reaching 49% on held-out episode”)
+- Signals: `quantitative results` · `closed-loop success reported` · `open code or weights`
+- Why it matters: Preprint, not yet peer-reviewed; the text gives no real-robot results. Watch whether it holds up over long tasks without human resets.
+
+> Recent vision-language-action (VLA) models have shown strong performance on local robot manipulation, yet their success does not readily translate to long-horizon mobile manipulation.
+
+### 2. DexStitch: Learning and Composing Dexterous Skills from Human Videos via Contact-Aware Robotic Inpainting
+
+- Lane: Data engine (collection / curation / scaling) ｜ Evidence: `[R]` ｜ Source: arXiv 2610.17789 ｜ `2026-10-13`
+- Key numbers: `92.4%` (“with manual annotations on 92.4% of ... ”) · `80.0%` (“DexStitch achieves 80.0% single-skill success and”) · `77.5%` (“80.0% single-skill success and 77.5% sequence success”)
+...
+### 3. Complementary Future Token Pruning for World Action Models
+...
+closed-loop) ... 0.19957
+...
+: `35%` ... At a 35% ... `1.27x` (“achieves average speedups of 1.19-1.27x while improving task”) · `50%` (“At a 50% pruning ratio”) · `1.33x` (“it achieves 1.29-1.33x average speedups on”)
+...
+### 4. Refine Actions If Needed: Adaptive Action Chunk Refinement for Robot Manipulation
+
+- Lane: Simulation & evaluation (sim2real / closed-loop) ｜ Evidence: `[R]` ｜ Source: arXiv 2610.19765 ｜ `2026-10-
+...
+- Key numbers: `66.6%` (“our policy achieves 66.6% success”) · `55.0%` (“success increases from 55.0% with Action Chunking”) · `72.5%` (“with Transformers (ACT) to 72.5%”) · `26.6%` (“fixed-refinement success level with 26.6% fewer refiner evaluations”)
+...
+### 5. 3D Lane Detection with Odometry for High-Speed Vehicle Racing
+...
+### 6. Agility chooses Nyobolt for ultra-fast charging for Digit 5 humanoid
+...
+### 8. 昆仑万维诞生世界上第一款消费级显卡视频大模型游戏，同步开源
+...
+——Matrix-
+...
+### 1. PL-CBF: finite-horizon safety at runtime via parallel fallback rollouts
+...
+### 2. NVIDIA Cosmos 3: physical reasoning, world generation and action generation in one open model
+...
+### 3. π*0.6 / Recap: a VLA that learns from experience via advantage-conditioned policies
+...
+### 5. XPENG commissions its humanoid production lines; IRON walks ... the line autonomously
+...
+### 6. RoboHarness: memory-driven orchestration of heterogeneous robot policies
+
+- Lane: Systems & orchestration (long-horizon / multi-policy) ｜ Evidence: `[R]` ｜ Source: arXiv 2607.18060 (Huawei Noah’s Ark Lab) ｜ `2026`
+- Key numbers: `VLA + RL + TAMP as agentic skills` · `capability-aware routing` · `Memory Bridge for policy handoff without retraining`
+- Why it matters: Long-horizon systems are an orchestrator plus a policy pool; the operated object becomes a set of declarable capability boundaries rather than one model.
+...
+, last
+
+---
+
+Title: October: Mini brain organoids ‘reading’ Braille marks step towards biohybrid computin | News and features | University of Bristol
+URL: https://www.bristol.ac.uk/news/2026/october/mini-brain-organoids-reading-braille-marks-step-towards-biohybrid-computin.html
+Published: 2026-10-16T00:00:00.000Z
+Author: N/A
+Highlights:
+October: Mini brain organoids ‘reading’ Braille marks step towards biohybrid computin | News and features | University of Bristol
+
+# Mini brain organoids ‘reading’ Braille marks key step towards biohybrid computing
+
+Press release issued: 16 October 2026
+
+Tiny, lab-grown models of the human brain could help pave the way for more energy-efficient biohybrid computers, after researchers from the University of Bristol have shown they can transmit signals that correspond to Braille letters.
+
+In the study, published in Frontiers in Artificial Intelligence today [16 October], the brain organoids received signals from a sensor detecting tactile patterns associated with different Braille letters. Each letter produced a distinct pattern of brain activity that a computer decoder could identify.
+
+While signals from individual organoids were correctly decoded 61% of the time, combining three organoids increased accuracy to 83%. The team of three was also better at distinguishing the signals from artificial noise than the decoder working directly on the obscured signals, without the organoids’ involvement.
+...
+The biohybrid systems tested by the research team use brain organoids placed on multielectrode arrays and contained in a system that keeps the organoids alive and monitors their responses. These organoids are less than a millimeter across and lack several structures that a human brain has, but contain about 10,000 neurons, as well as supporting cells. The multielectrode arrays allow them to receive electrical signals. 
+
+First, the researchers applied a sensor that records tactile data to the 26 letters of the Braille alphabet. Then they converted this data to electrical stimulation patterns and presented the organoids with the different patterns to see if they would produce neural activity that could tell the scientists what stimulus they’d received. 
+
+The organoids’ patterns of neural activity were classified using a simple machine learning algorithm, a support vector machine, that could sort the patterns and detect whether given signals corresponded to specific letters. A single organoid consistently produced a signal that could be accurately decoded as a letter about 61% of the time. However, three organoids working together produced a recognisable signal about 83% of the time. 
+
+Dr Benjamin Ward-Cherrier, Senior Lecturer in Bristol’s School of Engineering Mathematics and Technology and the paper’s senior author, added: “After processing by the organoids, the tactile data still contains enough information to classify Braille letters with good accuracy. Combining outputs from several organoids also showed an improvement in performance.”
+...
+To test robustness, the research team applied different noise filters to the Braille letter signals. They also used the same support vector machine to compare decoding from the organoid responses with direct decoding of the deliberately obscured signals. The machine decoding directly, without the organoids’ involvement, turned out to be easier to fool than decoding from the organoid responses — it was less able to identify the letter signals among the artificial noise.
+...
+The researchers stress that these experiments don’t show if organoids can learn over time, they just show that the organoids received and responded to the Braille signals.
+
+Tianyi Liu said: “We showed that tactile information could be encoded, processed through the organoids, and decoded, but we did not demonstrate learning or long-term changes in the organoids. 
+
+“We also tested one tactile task using a fixed encoding scheme and a relatively simple measure of neural activity. The next step is definitely to move beyond Braille. We are interested in things such as textures, edges, and different kinds of touch, and eventually in closed-loop tasks where the organoid receives feedback from what it does. That would allow us to start asking whether the organoid can actually adapt through experience.” 
+
+Paper 
+
+‘ Encoding tactile stimuli for Braille recognition with organoids’ by Tianyi Liu, Hemma Philamore and Benjamin Ward-Cherrier in Frontiers in Artificial Intelligence [open access]
+
+---
+
+Title: Robots Read Pushes and Obstacles in the Shape of Their Own Prediction
+URL: https://bioengineer.org/robots-read-pushes-and-obstacles-in-the-shape-of-their-own-prediction-errors/
+Published: 2026-10-16T00:08:15.000Z
+Author: N/A
+Highlights:
+# Robots Read Pushes and Obstacles in the Shape of Their Own Prediction
+
+Published: 2026-10-16T00:08:15Z
+
+---
+
+Title: Robots Learn to Imagine the Future Before Acting: New Diffusion Policy
+URL: https://scienmag.com/robots-learn-to-imagine-the-future-before-acting-new-diffusion-policy-gives-dual-arm-machines-predictive-foresight/
+Published: 2026-10-16T07:27:46.000Z
+Author: Denise Maddox
+Highlights:
+# Robots Learn to Imagine the Future Before Acting: New Diffusion Policy
+...
+Published: 2026-10 ... 16T07:27:46Z
+
+---
+
+Title: AI breakthroughs in robotics won't change your life any ...
+URL: https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/
+Published: 2026-10-08T09:00:00.000Z
+Author: Jamie Condliffe
+Highlights:
+AI breakthroughs in robotics won't change your life any time soon | MIT Technology Review
+
+# AI breakthroughs in robotics won’t change your life any time soon
+
+Advances in AI offer tantalizing glimpses of a future in which robots navigate the world the way humans do. The question is whether the same techniques that fueled AI’s recent progress will be enough to get there, or if an entirely new path is required.
+
+Sasha Papercut
+
+by 
+
+- Jamie Condliffe archive page
+
+October 8, 2026
+
+The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the way we live.
+...
+A decade or so ago, a series of breakthroughs led to a generative AI revolution that turned the long-imagined possibility of artificial intelligence into reality. Roboticists—though they disagree on exactly when this will happen—believe that an equally transformative revolution is possible in robotics, one that will endow machines with physical intuition and fluidity that has long been out of reach. As progress in robotics inches forward, the question is whether the same methods and tools that fueled advances in AI are enough to get there, or if an entirely new path is required.
+...
+The leading contender for “something else” is the so-called world model—a form of AI trained less on text than on a combination of video, three-dimensional scans, and sensor data and built to predict the outcomes of actions in the real world. The aim is to build models that possess an internal representation of reality precise enough to capture how the physical world actually operates—how objects move, collide, fall, and deform. If roboticists could train machines in simulations faithful enough to real-world physics, development would become faster, cheaper, and safer, reducing the need for real-world testing. Even more transformative, robots equipped with world models could reason about their surroundings rather than merely reacting to them, helping them anticipate the consequences of an action before taking it.
+...
+Companies like Nvidia and Google are working on the technology, and investor cash is pouring into high-profile startups. World Labs, cofounded by the Stanford AI researcher Fei-Fei Li, raised $1 billion in funding in February and was acquired by AMD at the end of September for $8.2 billion. AMI Labs, cofounded by LeCun (formerly Meta’s chief AI scientist), also raised $1 billion in March. Yet by their own admission, it is still early days. Late last year Li described the field as “nascent,” adding that “foundational approaches are still being established.” In a June Substack she described daunting challenges. For now, world models are a promising area of research rather than an immediate route to general-purpose robotics, but we are beginning to see glimmers of what they could achieve.
+
+One such glimpse came with a small but potentially significant leap forward that took place in a San Francisco robotics lab last April.
+...
+In the heart of San Francisco’s Mission District, the startup Physical Intelligence—or PI (as in π), as it likes to be known—is focused on developing a universal brain that could, theoretically, turn any robot into a generalist. Using an everything-including-the-kitchen sink approach to training AI models for robots, the company recently observed a hint of what a robotic brain equipped with a world model could be capable of. 
+
+In 2024, PI published details of its first generalist robotics system, called π0, a VLA it claimed was the “most capable and dexterous generalist robot policy to date.” The model was initially trained on a 10,000-hour proprietary collection of human demonstrations gathered through teleoperation as well as several open-source robot datasets. A version released in spring 2025, π0.5, was trained on a wider variety of datasets, including labeled images from the web, lending it more versatility. A fall 2025 update, π0.6, added reinforcement learning to the model. 
+
+Each update yielded important improvements to the model’s performance, increasing its menu of abilities from slowly folding laundry to putting things away in new environments to completing tasks like folding boxes with a higher success rate. Then, in April 2026, π0.7 seemed to catapult PI into new territory. This version makes use of a less powerful world model that generates images of steps necessary to perform a task. As the robot undertakes the job, this “lightweight” model feeds it snapshots of what to do next.
+...
+The company claims that the model exhibits the first signs of compositional generalization, a term for AI systems’ ability to perform skills they’ve never been exposed to by recombining ones learned in their training data. One test involved asking a model to “load a sweet potato into the air fryer”—a task it had never previously encountered. In a demonstration video, the machine futzes around a little, makes a few false starts, and eventually manages a reasonable effort, though it doesn’t finish the task completely.
+...
+, a professor at the University of California, Berkeley, and a cofounder of PI, is excited by the potential: “It’s actually the first time that we’ve convincingly seen that kind of compositional generalization, where we can basically ask the model to do tasks that we did not specifically collect data for and train it to do, and it’ll
+...
+The success led the team to wonder how the model was able to achieve such a feat. After some digging, they found snippets of relevant labeled teleoperation data lurking in the training material, including two examples of a human controller using the robot to push an air fryer basket into the fryer. Those shreds of data might have been enough to enable π0.7 to almost air-fry a sweet potato.
+
+For now, it remains unclear just how impressive π0.7’s abilities to generalize are. Still, given how fleeting the model’s exposure to air fryers had been, it offers a glimpse into how far cutting-edge research can currently take robots.
+...
+For now, fully autonomous motion planning so that a robot knows where it should go—especially in new, chaotic environments like a construction site or a unfamiliar home—remains a largely unsolved challenge. A bigger challenge still—albeit one that is often related—lies in getting robots to tackle larger, more ambiguous jobs that include multiple tasks and require decisions about how and in what order they’re done. This would be the difference between a robot that can put a plate into a microwave and one that can successfully respond to the prompt “Make dinner” by exploring the refrigerator, chopping ingredients, and firing up the stove. Google DeepMind’s best attempts at something like this—which involved asking its robot to survey a kitchen and pack all the ingredients for a mushroom risotto into a basket—have so far resulted in failure.
+...
+While humanoids are starting to venture onto the factory floor, making the jump to households will be even more difficult. Right now, should you so desire, you can preorder the 1X Neo home robot, expected to be ready for delivery sometime later this year. Yours for $20,000, it promises to take on “the boring and mundane tasks around the house”—putting away dishes, answering the door, tidying the living room—“so you can focus on what matters to you.” The idea is for this five-foot-six-inch robot to one day perform all those tasks autonomously, but for now a remote human operator is needed for it to do most things. (Yes, a person would need permission to peer into your home through the robot’s cameras.) Asked how long it will be until fully autonomous robots are ready for domestic work, Hurst said, “If I had to pick a number, I’d say it’s 10 years before robots are … actually doing useful things in people’s homes.”
+
+---
+
+Title: Outplaying elite table tennis players with an autonomous robot
+URL: https://ideas.repec.org/a/nat/nature/v652y2026i8111d10.1038_s41586-026-10338-5.html
+Published: 2026-02-02T06:28:26.000Z
+Author: Peter Dürr, Mireille El Gheche, Guilherme Jorge Maeda, Nobuhiko Mukai, Naoya Takahashi
+Highlights:
+Outplaying elite table tennis players with an autonomous robot
+...
+## Abstract
+
+ Artificial intelligence (AI) systems now challenge or surpass human experts in many computer games1,2. Physical and real-time sports such as table tennis, however, remain a major open challenge because of their requirements for fast, precise and adversarial interactions near obstacles and at the edge of human reaction time3. Here we present Ace, to our knowledge the first real-world autonomous system competitive with elite human table tennis players. Ace addresses the challenges of physical real-time interaction through a new, high-speed perception system using event-based vision sensors4, and a new control system based on model-free reinforcement learning, as well as state-of-the-art high-speed robot hardware. Evaluated in matches against elite and professional players under official competition rules, Ace achieved several victories and demonstrated consistent returns of high-speed, high-spin shots. These results highlight the potential of physical AI agents to perform complex, real-time interactive tasks, suggesting broader applications in domains requiring fast, precise human–robot interaction.
+...
+Citation
+
+ Peter Dürr & Mireille El Gheche & Guilherme Jorge Maeda & Nobuhiko Mukai & Naoya Takahashi & Stefan Heusser & Hamdi Sahloul & Yamen Saraiji & Pavel Adodin & Yin Bi & Sam Blakeman & Christian Conti & D, 2026. " Outplaying elite table tennis players with an autonomous robot," Nature, Nature, vol. 652(8111), pages 886-891, April. Handle: RePEc:nat:nature:v:652:y:2026:i:8111:d:10.1038_s41586-026-10338-5 DOI: 10.1038/s41586-026-10338-5
+
+---
+
+Title: Research News - Six-Legged Robot Learns to Walk from a Stick Insect | Tohoku University
+URL: https://www.tohoku.ac.jp/en/press/%20six_legged_robot_learns_to_walk_from_insect.html
+Published: N/A
+Author: N/A
+Highlights:
+Research News - Six-Legged Robot Learns to Walk from a Stick Insect | Tohoku University
+
+## Six-Legged Robot Learns to Walk from a Stick Insect
+
+- 2026-08-27
+...
+An international team of researchers led by Tohoku University in Japan and the Vidyasirimedhi Institute of Science and Technology (VISTEC) in Thailand trained AI on the walking cycle of a stick insect to find the best strategy for walking on different surfaces. This was then successfully implemented in a six-legged robot that learned to walk in just an hour. In addition, the robot was able to navigate uneven terrain and adapt to a missing limb. At treacherous disaster sites where wheeled robots are unable to enter, these adaptive six-legged robots could be genuine life-savers.
+...
+Stick insects, named for their uncanny resemblance to a small stick, are a classic model for walking research. The team used an open data source covering just three or four steps of the insect. From that data, an AI worked out two things at the same time. First, what the insect seems to be aiming for when it walks (called the "reward"). Second, how the legs should move to achieve it.
+...
+The robot learned to walk three times faster than with a standard reward. Giving the robot specific instructions about how to move each leg is a slow design process that has to be redone for every new robot. In contrast, this approach removes that step by giving the robot an animal teacher to learn from. The robot learns two categories: one part holds what is true for any body. The other part holds information that belongs to one particular machine. This split allows for the result to be moved to other robots. This means each new machine doesn't have to start from zero, which could lead to cheaper and faster production.
+...
+remarkable that a ... steps from a single stick insect were enough to ... machine five times its size,"
+...
+The study investigated an inverse reinforcement learning method where AI isn't explicitly told how to walk - it learns from trying to understand the goal of an ideal example. In the current study, it is a stick insect, but other animals with high dexterity could also serve as models. The researchers note that adding memory so the robot can learn and build experience over time will be their next step towards developing highly mobile robots who may one day aid in disaster response efforts.
+...
+> Publication Details:
+> : Title: From Insect Behavior to Transferable Robot Locomotion: Inferring Embodied Locomotor Principles from Limited Data via Adversarial Inverse Reinforcement Learning
+> 
+> Authors: Yuchen Wang, Chuthong Thirawat, Mitsuhiro Hayashibe, Poramate Manoonpong, Dai Owaki
+> 
+> Journal: Bioinspiration & Biomimetics (IOP Publishing)
+> 
+> DOI: 10.1088/1748-3190/ae901f
+
+---
+
+Title: RoCo Challenge Winners Drive Assembly Breakthrough | AI News Detail | Blockchain.News
+URL: https://blockchain.news/ainews/roco-challenge-winners-drive-assembly-breakthrough
+Published: 2026-10-02T22:07:00.000Z
+Author: Berkeley AI Research
+Highlights:
+According to Berkeley AI Research on X, BAIR HIC won two tracks at IROS2026 RoCo Challenge, showcasing bimanual, tactile-aware assembly advances.
+...
+The Berkeley AI Research team achieved first place in two tracks of the Robotic Collaborative Assembly Challenge at IROS2026 held in Pittsburgh according to Berkeley AI Research. This victory highlights advancements in humanoid robotics for industrial tasks such as board and brick assembly using bimanual and tactile aware systems with 55 teams registered from over eight countries.
+...
+- Simulation based training enabled precise transfer to real world collaborative assembly scenarios improving accuracy in complex bimanual operations.
+- Integration of tactile sensing with humanoid platforms opens new paths for automation in manufacturing sectors seeking flexible production lines.
+- Cross institutional collaboration between BAIR Center for Humanoid Intelligence and MSC Lab at UC Berkeley accelerates practical deployment of advanced robotic intelligence.
+...
+The RoCo Challenge focused on industrial board and brick assembly tasks requiring robust coordination between robotic arms and tactile feedback mechanisms. Teams tackled onsite hackathon elements combined with pre developed simulation models to achieve superior performance. The winning approach from the Berkeley team leveraged recent work at the Center for Humanoid Intelligence emphasizing sim to real transfer techniques that address common gaps in robotic learning.
+...
+Bimanual setups allow robots to handle intricate assembly steps mimicking human dexterity while tactile sensors provide real time force feedback essential for delicate operations. This combination reduces errors in high precision environments like electronics manufacturing and automotive component assembly.
+...
+Predictions indicate widespread ... 030 transforming ... environments. This shift will drive demand for AI talent and ... new business models ... a service offerings. Ethical best ... emphasize transparent development processes and ... design to address societal impacts
+...
+It is a competition at IROS2026 involving industrial assembly tasks with bimanual and tactile robotics drawing participants from multiple countries.
+...
+Simulation allowed the team to refine algorithms before real world testing leading to first place finishes in two tracks.
+...
+Manufacturing sectors including automotive and electronics assembly can leverage the technology for improved efficiency and precision.
+
+---
+
+Title: Peter Stone: Outplaying Elite Table Tennis Players with an Autonomous Robot
+URL: https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-peter_nature_2026.html
+Published: N/A
+Author: N/A
+Highlights:
+Peter Stone: Outplaying Elite Table Tennis Players with an Autonomous Robot
+
+## Outplaying Elite Table Tennis Players with an Autonomous Robot
+
+Outplaying Elite Table Tennis Players with an Autonomous Robot. Peter Duerr, Mireille El Gheche, Guilherme Jorge Maeda, Nobuhiko Mukai, Naoya Takahashi, Stefan Heusser, Hamdi Sahloul, Yamen Saraiji, Pavel Adodin, Yin Bi, Sam Blakeman, Christian Conti, Dunai Fuentes Hitos, Yunpu Hu, Farshad Khadivar, Raphaela Kreiser, Luz Martinez, Fabian Schilling, Ricardo Tapiador Morales, Guillem Torrente, Mario Ynocente Castro, Lison Abecassis, Alberto Giammarino, Yu-Ting Huang, Yannik Nagel, Andrea Scotti, Alexander Sigrist, Tiago Silva, Etienne Walther, Jengyan Wong, Bilan Yang, Asude Aydin, Divij Grover, Apurv Saha, Valentina Cavinato, Takekazu Kakinuma, Taishi Kunori, Valentin Monferrato, Stefan Richter, Stefanos Charalambous, Simon Guist, MadsAlber Kuhlmann-Jorgensen, Lorenzo Miele, Agis Politis, Mattia Scardecchia, Hiroaki Kitano, Peter R. Wurman, Peter Stone, and Michael Spranger. Nature, 652:886–91, 2026. The official paper from Nature The supplementary material A video about the project The project website
+...
+Artificial intelligence (AI) systems now challenge or surpass human experts in many computer games. Physical and real-time sports such as table tennis, however, remain a major open challenge because of their requirements for fast, precise and adversarial interactions near obstacles and at the edge of human reaction time. Here we present Ace, to our knowledge the first real-world autonomous system competitive with elite human table tennis players. Ace addresses the challenges of physical real-time interaction through a new, high-speed perception system using event-based vision sensors, and a new control system based on model-free reinforcement learning, as well as state-of-the-art high-speed robot hardware. Evaluated in matches against elite and professional players under official competition rules, Ace achieved several victories and demonstrated consistent returns of high-speed, high-spin shots. These results highlight the potential of physical AI agents to perform complex, real-time interactive tasks, suggesting broader applications in domains requiring fast, precise human-robot interaction.
+...
+```
+@Article{peter_nature_2026,
+  author   = {Peter Duerr and Mireille El Gheche and Guilherme Jorge Maeda and Nobuhiko Mukai and Naoya Takahashi and Stefan Heusser and Hamdi Sahloul and Yamen Saraiji and Pavel Adodin and Yin Bi and Sam Blakeman and Christian Conti and Dunai Fuentes Hitos and Yunpu Hu and Farshad Khadivar and Raphaela Kreiser and Luz Martinez and Fabian Schilling and Ricardo Tapiador Morales and Guillem Torrente and Mario Ynocente Castro and Lison Abecassis and Alberto Giammarino and Yu-Ting Huang and Yannik Nagel and Andrea Scotti and Alexander Sigrist and Tiago Silva and Etienne Walther and Jengyan Wong and Bilan Yang and Asude Aydin and Divij Grover and Apurv Saha and Valentina Cavinato and Takekazu Kakinuma and Taishi Kunori and Valentin Monferrato and Stefan Richter and Stefanos Charalambous and Simon Guist and MadsAlber Kuhlmann-Jorgensen and Lorenzo Miele and Agis Politis and Mattia Scardecchia and Hiroaki Kitano and Peter R. Wurman and Peter Stone and Michael Spranger},
+  title    = {Outplaying Elite Table Tennis Players with an Autonomous Robot},
+  journal = {Nature},
+  year     = {2026},
+  volume="652",
+  pages="886--91",
+  abstract = {Artificial intelligence (AI) systems now challenge or surpass human experts in many computer games. Physical and real-time sports such as table tennis, however, remain a major open challenge because of their requirements for fast, precise and adversarial interactions near obstacles and at the edge of human reaction time. Here we present Ace, to our knowledge the first real-world autonomous system competitive with elite human table tennis players. Ace addresses the challenges of physical real-time interaction through a new, high-speed perception system using event-based vision sensors, and a new control system based on model-free reinforcement learning, as well as state-of-the-art high-speed robot hardware. Evaluated in matches against elite and professional players under official competition rules, Ace achieved several victories and demonstrated consistent returns of high-speed, high-spin shots. These results highlight the potential of physical AI agents to perform complex, real-time interactive tasks, suggesting broader applications in domains requiring fast, precise human-robot interaction.},
+  wwwnote={<a href="https://www.nature.com/articles/s41586-026-10338-5">The official paper from Nature</a><br>
+      <a href="https://sonyresearch.github.io/ace_public/">The supplementary material</a></br>
+      <a href="https://www.youtube.com/watch?v=FrGq8ltb-_E">A video about the project</a><br>
+      <a href="https://ai.sony/blog/inside-project-ace-discover-the-robot-athlete-that-competes-with-professional-table-tennis-players">The project website</a>
+  },
+}
+
+---
+
+Title: Autonomous robotic operation controlled by wave-based neuromorphic hardware | Nature Communications
+URL: https://www.nature.com/articles/s41467-026-77661-3.pdf
+Published: 2026-09-10T00:00:00.000Z
+Author: N/A
+Highlights:
+Autonomous robotic operation controlled by wave-based neuromorphic hardware | Nature Communications
+...
+Autonomous robotic operation controlled by wave-based neuromorphic hardware
+...
+* Article
+* Open access
+* Published: 10 September 2026
+# Autonomous robotic operation controlled by wave-based neuromorphic hardware
+...
+Equipping robots with a physical, brain-inspired computing unit is a key step towards achieving true autonomy in intelligent machines; however, the practical realization of such neuromorphic hardware remains a major challenge. Because both software- and hardware-based spiking neural network approaches demand substantial training and energy consumption, an architecturally simple neuromorphic platform is required to enable scalable and energy-efficient robotics. Here, we experimentally demonstrate robotic control driven by a neuromorphic hardware based on physical wave interactions. Using a water-based experimental system that provides direct visual access to wave-network dynamics, we establish a wave-based reservoir computing framework that achieves near-perfect accuracy in robotic vehicle obstacle recognition, followed by real-time autonomous motion with obstacle avoidance controlled entirely by this wave-based hardware. Through micromagnetic simulations, we extend this concept to electrically excited spin waves in a magnetic nanodevice operating at gigahertz frequencies, outlining an approach toward solid-state robotic chips based on wave computing. These results position wave-based computation as a scalable and energy-efficient alternative to conventional digital neuromorphic architectures for next-generation intelligent machines.
+...
+Zohar, J., Pinna, D., van der Laan, G. *et al.* Autonomous robotic operation controlled by wave-based neuromorphic hardware.
+*Nat Commun* (2026). https://doi.org/10.1038/s41467-026-77661-3
+...
+* Received: 20 February 2026
+* Accepted: 25 August 2026
+* Published: 10 September 2026
+* DOI: https://doi.org/10.1038/s41467-026-77661-3

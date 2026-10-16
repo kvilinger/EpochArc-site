@@ -1,0 +1,146 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "datadog-scout-sre-model-2026",
+  "inputSubjectDigest": null,
+  "subjectDigest": "7397baa76813f53228e551338172f1be67a6da90db31aae7578684d3971b9ade",
+  "inputsDigest": "b0d1a245e2bea87f8079fbd0a4eeba8e4a76c61fe764eb52cfeb14cb38246a18",
+  "evidenceCutoff": "2026-10-16",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "gemini-3.8-independent-session-01a14512-39ee-72b3-aafa-671e1f33b5f0",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a14512-39ee-72b3-aafa-671e1f33b5f0",
+  "reviewArtifact": "review/gemini-3.8-full-evidence.jsonl",
+  "reviewExtract": "review/gemini-3.8-full-evidence-extract.json",
+  "runId": "latest-data-full-2026-10-16",
+  "candidateId": "oct16-datadog-scout-sre-model-2026",
+  "runDigest": "cbaad88cd4c3461180014f0f2ec8113a03ccba963c62162cc4835f9230d60c3c",
+  "reviewDecision": "pass",
+  "limitations": [
+    "Gemini reviewed complete locally captured evidence as of 2026-10-16; it did not independently browse or re-access live pages.",
+    "This independent-model review does not constitute human editorial approval or publication authorization.",
+    "Full discovery has declared channel gaps, including unavailable X search; the review validates selected records rather than exhaustive recall."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini’s full-evidence review found English and Chinese titles, summaries, narratives, and claim conditions aligned for the reviewed facts; the OpenAI event preserves allegation status and all four retain stated limitations."
+  },
+  "coreFactClaimIds": [
+    "scout-fact"
+  ],
+  "identity": {
+    "seriesId": "datadog-bits-scout",
+    "action": "Datadog introduces Scout 1.0 in closed preview for Bits Investigation",
+    "stage": "preview",
+    "dateBasis": "Datadog blog publication date",
+    "deduplicationReason": "A specialized SRE model and closed-preview product stage distinct from other domain-specific model launches.",
+    "comparedEventIds": [
+      "salesforce-nvidia-koa-reasoning-2026",
+      "holo4-computer-use-models-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The core action is a vendor introducing a specialized model that powers a product workflow in closed preview."
+  },
+  "significance": {
+    "rationale": "Scout is a specialized closed-preview product; retained materials do not establish independently measured, unaffiliated production adoption.",
+    "whyNotHigher": "The retained source identifies a closed preview and vendor-reported performance/cost results, not a verified new workflow at two unaffiliated production organizations.",
+    "whyNotLower": "Datadog directly announced the model’s role in Bits Investigation and documented its limited preview use.",
+    "comparisonEventIds": [
+      "salesforce-nvidia-koa-reasoning-2026",
+      "holo4-computer-use-models-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "Retained sources establish a model feature in an existing incident-investigation context but do not independently establish a materially new adopted workflow.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "A small customer preview group is reported, but the retained evidence does not identify and verify two unaffiliated production organizations.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The product remains in a small closed preview and its stated performance is vendor-reported.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No retained source documents a concrete factual dispute about the announcement.",
+    "evidenceIds": []
+  },
+  "evidence": [
+    {
+      "id": "scout-fact-1",
+      "sourceId": "sweep-20261016-datadog-scout-official",
+      "claimId": "scout-fact",
+      "artifact": "governance/evidence/2026-10-16/direct/datadog-scout-official.md",
+      "sha256": "59fba3cc5f1ce34f31aa81c61522f780658d111f4b03003a5ed3171660adb01e",
+      "quote": "Today, we’re introducing Scout 1.0, Datadog’s first AI model specialized for investigating production issues. Scout powers [Bits Investigation](https://www.datadoghq.com/product/ai/bits-investigation/), our AI SRE.",
+      "locator": "Body, opening announcement",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "datadog-scout-release",
+      "accessedAt": "2026-10-16",
+      "url": "https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/"
+    },
+    {
+      "id": "scout-fact-2",
+      "sourceId": "sweep-20261016-datadog-scout-itwire",
+      "claimId": "scout-fact",
+      "artifact": "governance/evidence/2026-10-16/direct/datadog-scout-itwire.md",
+      "sha256": "fd6b3e22bbbfc0a615069d249ca27a8a4ef2f57c0c3485b6427290e5fb5b50d5",
+      "quote": "Datadog has introduced Scout 1.0, its first AI model specialised for investigating production issues. Scout powers Bits Investigation, Datadog’s AI site reliability engineer (SRE).",
+      "locator": "Opening paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "datadog-scout-release",
+      "accessedAt": "2026-10-16",
+      "url": "https://itwire.com/business-it-news/data/introducing-scout-1-0-a-new-sre-model-powering-bits-ai-with-frontier-performance-at-a-fraction-of-the-cost"
+    },
+    {
+      "id": "scout-limitation-1",
+      "sourceId": "sweep-20261016-datadog-scout-official",
+      "claimId": "scout-limitation",
+      "artifact": "governance/evidence/2026-10-16/direct/datadog-scout-official.md",
+      "sha256": "59fba3cc5f1ce34f31aa81c61522f780658d111f4b03003a5ed3171660adb01e",
+      "quote": "Datadog engineering teams and a small group of customers in a closed preview are already using Scout to investigate production alerts.",
+      "locator": "Body, summary bullet",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "datadog-scout-release",
+      "accessedAt": "2026-10-16",
+      "url": "https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/"
+    },
+    {
+      "id": "scout-limitation-2",
+      "sourceId": "sweep-20261016-datadog-scout-itwire",
+      "claimId": "scout-limitation",
+      "artifact": "governance/evidence/2026-10-16/direct/datadog-scout-itwire.md",
+      "sha256": "fd6b3e22bbbfc0a615069d249ca27a8a4ef2f57c0c3485b6427290e5fb5b50d5",
+      "quote": "Datadog engineering teams and a small group of customers in a closed preview are already using Scout to investigate production alerts.",
+      "locator": "Summary bullet",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "datadog-scout-release",
+      "accessedAt": "2026-10-16",
+      "url": "https://itwire.com/business-it-news/data/introducing-scout-1-0-a-new-sre-model-powering-bits-ai-with-frontier-performance-at-a-fraction-of-the-cost"
+    }
+  ]
+}

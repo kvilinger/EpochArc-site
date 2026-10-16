@@ -1,0 +1,149 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "stepfun-step-5-preview-open-weights-2026",
+  "inputSubjectDigest": null,
+  "subjectDigest": "7716a30daf71f24f80280707565f06e3b7aaa3d30b1129d9c65bc5e2b0cb2768",
+  "inputsDigest": "6e5974fca5664454bb3e521018296ede565279fc6059610205b097b3426438d6",
+  "evidenceCutoff": "2026-10-16",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "reviewedBy": "gemini-3.8-independent-session-01a14512-39ee-72b3-aafa-671e1f33b5f0",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a14512-39ee-72b3-aafa-671e1f33b5f0",
+  "reviewArtifact": "review/gemini-3.8-full-evidence.jsonl",
+  "reviewExtract": "review/gemini-3.8-full-evidence-extract.json",
+  "runId": "latest-data-full-2026-10-16",
+  "candidateId": "oct16-stepfun-step-5-preview-open-weights-2026",
+  "runDigest": "cbaad88cd4c3461180014f0f2ec8113a03ccba963c62162cc4835f9230d60c3c",
+  "reviewDecision": "pass",
+  "limitations": [
+    "Gemini reviewed complete locally captured evidence as of 2026-10-16; it did not independently browse or re-access live pages.",
+    "This independent-model review does not constitute human editorial approval or publication authorization.",
+    "Full discovery has declared channel gaps, including unavailable X search; the review validates selected records rather than exhaustive recall."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini’s full-evidence review found English and Chinese titles, summaries, narratives, and claim conditions aligned for the reviewed facts; the OpenAI event preserves allegation status and all four retain stated limitations."
+  },
+  "coreFactClaimIds": [
+    "step5-weights-fact"
+  ],
+  "identity": {
+    "seriesId": "stepfun-step-models",
+    "action": "StepFun makes Step 5 Preview weights available under StepFun Model License 1.0",
+    "stage": "available",
+    "dateBasis": "Hugging Face repository materials and contemporaneous dated reporting",
+    "deduplicationReason": "A distinct StepFun model-weights availability event, not the earlier releases of other open-weight models.",
+    "comparedEventIds": [
+      "qwen-3-8-27b-open-weights-2026",
+      "holo4-computer-use-models-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The core action is availability of model weights and their terms of use."
+  },
+  "significance": {
+    "rationale": "Weights became available under a conditioned model license, but no retained evidence establishes two unaffiliated production organizations using them.",
+    "whyNotHigher": "The availability change alone does not meet L2-PRODUCT-ACCESS without documented unaffiliated production adoption.",
+    "whyNotLower": "The hosted model repository directly identifies weights and license terms, and contemporaneous reporting describes their opening.",
+    "comparisonEventIds": [
+      "qwen-3-8-27b-open-weights-2026",
+      "holo4-computer-use-models-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "The model repository explicitly licenses the model’s weights, and reporting states weights were opened and placed on Hugging Face and ModelScope.",
+            "evidenceIds": [
+              "step5-weights-fact-1",
+              "step5-weights-fact-2"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No retained source identifies and verifies two unaffiliated organizations using the weights in production.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The release is recent and the retained evidence does not establish independent production adoption.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No retained source documents a concrete factual dispute over the weight availability or stated license conditions.",
+    "evidenceIds": []
+  },
+  "evidence": [
+    {
+      "id": "step5-weights-fact-1",
+      "sourceId": "sweep-20261016-step5-hf",
+      "claimId": "step5-weights-fact",
+      "artifact": "governance/evidence/2026-10-16/direct/step5-openweights-hf-readme.md",
+      "sha256": "58e6b5768025c646002c5dddce5fb09ef4ccf795de2ec3424a0ca9219b163747",
+      "quote": "This model, including its weights, parameters, configuration, tokenizer, model-specific code, and documentation, is licensed under the StepFun Model License 1.0.",
+      "locator": "License section",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "stepfun-step5-weights",
+      "accessedAt": "2026-10-16",
+      "url": "https://huggingface.co/stepfun-ai/Step-5-Preview"
+    },
+    {
+      "id": "step5-weights-fact-2",
+      "sourceId": "sweep-20261016-step5-jrj",
+      "claimId": "step5-weights-fact",
+      "artifact": "governance/evidence/2026-10-16/direct/step5-openweights-independent.md",
+      "sha256": "a95ab06c58b74c409ea3f8a5428703f440a1974f08e150e35bdd39bdfb6003ed",
+      "quote": "10月15日，登上OpenRouter Token全球使用量周榜第二的国产大模型Step 5 Preview开源，阶跃星辰正式开放其权重。",
+      "locator": "Body, opening paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "jrj-step5-weights-report",
+      "accessedAt": "2026-10-16",
+      "url": "https://finance.jrj.com.cn/2026/10/16140358744435.shtml"
+    },
+    {
+      "id": "step5-weights-limitation-1",
+      "sourceId": "sweep-20261016-step5-hf",
+      "claimId": "step5-weights-limitation",
+      "artifact": "governance/evidence/2026-10-16/direct/step5-openweights-hf-readme.md",
+      "sha256": "58e6b5768025c646002c5dddce5fb09ef4ccf795de2ec3424a0ca9219b163747",
+      "quote": "The StepFun Model License 1.0 is an Apache-2.0-Style license, with additional attribution and commercial-license conditions specific to model use, modification and distribution.",
+      "locator": "License section",
+      "relationship": "primary",
+      "verification": "direct",
+      "originId": "stepfun-step5-weights",
+      "accessedAt": "2026-10-16",
+      "url": "https://huggingface.co/stepfun-ai/Step-5-Preview"
+    },
+    {
+      "id": "step5-weights-limitation-2",
+      "sourceId": "sweep-20261016-step5-jrj",
+      "claimId": "step5-weights-limitation",
+      "artifact": "governance/evidence/2026-10-16/direct/step5-openweights-independent.md",
+      "sha256": "a95ab06c58b74c409ea3f8a5428703f440a1974f08e150e35bdd39bdfb6003ed",
+      "quote": "在Artificial Analysis的Intelligence Index榜单中，Step 5 Preview取得44分，位居全球开源模型前三。",
+      "locator": "Body, benchmark paragraph",
+      "relationship": "independent",
+      "verification": "reported",
+      "originId": "jrj-step5-weights-report",
+      "accessedAt": "2026-10-16",
+      "url": "https://finance.jrj.com.cn/2026/10/16140358744435.shtml"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+Title: Ling
+URL: https://developer.ant-ling.com/en/docs/models/ling/
+Published: N/A
+Author: N/A
+Highlights:
+- Ling-3.1-flash: Context window up to 1M; the official service currently exposes a 256K context window.
+- Ling-3.0-flash: Native 256K context window, extendable up to 1M.
+- Ling-2.6-1T: Supports up to 1M context window natively; the official API currently exposes a 256K context window.
+- Long-range information retrieval without noticeable degradation: the model reliably retrieves information regardless of whether it appears at the beginning, middle, or end of the context.
+...
+| Model | Positioning | Context | Parameters | Activated Parameters |
+| --- | --- | --- | --- | --- |
+| Ling-3.1-flash | New-generation hybrid reasoning model, purpose-built for everyday office work, long-horizon software development, and complex Agent tasks | 256K | 560B | 25B |
+| Ling-3.0-flash-VL | Native multimodal hybrid reasoning model supporting image, text, and video input with visual feedback closed-loop, ideal for multimodal understanding and generation tasks | 256K | 124B | 5.5B |
+...
+- Need a model as a ... work, long ... , or complex ... ? Choose Ling-3.1 ... 60B total ... rates across multi- ... , backed by strong world
+...
+### Ling-3.1-flash
+
+Ling-3.1-flash is a hybrid reasoning model in the Ling series, optimized for long-horizon real-world tasks and agent / Agent scenarios. The model has around 560B total parameters, activating about 25B parameters per token; the context window caps at 1M, with the official service currently exposing a 256K context window.
+...
+extended from Ling-3. ... Mixture of Experts) architecture. It features ... 4B total parameters with ... B activated per ... , natively supports image, ... input, with a ... window. The model is now open ... sourced on Hugging Face and ModelScope
+...
+| 20 ... | Ling 2.5 Series | Achieved high-throughput decoding optimization, long context understanding capability reached industry-leading levels, initial Agent interaction and tool calling foundation |
+...
+logical reasoning to ... execution, significantly improved ... completion per unit compute), opening
+...
+| 2026.07 | Ling 3.0 Series | Transitioned from migration-based hybrid linear architecture to native hybrid linear design, improving the conversion efficiency of model capacity and computation with lower expert activation ratios, and introduced KDA (Kimi Delta Attention) to enhance memory update and information retention in long sequences |
+| 2026.10 | Ling 3.1 Series | Further optimized long-horizon tasks, long-cycle engineering, and agent execution capabilities on top of 3.0. |
+
+---
+
+Title: Ling
+URL: https://developer.ant-ling.com/zh-CN/docs/models/ling/
+Published: N/A
+Author: N/A
+Highlights:
+- Ling-3.1-flash：模型上下文上限 1M，当前官方服务开放 256K 上下文。
+- Ling-3.0-flash：原生支持 256K 上下文窗口，最高支持 1M 上下文窗口。
+- Ling-2.6-1T：最长支持 1M 上下文窗口；官方 API 当前开放 256K 上下文。
+- 长程信息召回无明显衰减：无论目标信息位于上下文头部、中部还是尾部，模型均可稳定检索。
+...
+| 模型 | 定位 | 上下文 | 参数 | 激活参数 |
+| --- | --- | --- | --- | --- |
+| Ling-3.1-flash | 新一代混合推理模型，专为日常办公、长周期软件研发与复杂 Agent 任务设计 | 256K | 560B | 25B |
+| Ling-3.0-flash-VL | 原生多模态混合推理模型，支持图像、文本与视频输入，引入视觉反馈闭环，适合多模态理解与生成场景 | 256K | 124B | 5.5B |
+| Ling-3.0-flash | 高性价比的混合推理模型，激活参数 5.1B，高 TPS 可支撑高频任务，最高推理速度可达 1000 tokens/s，高速、稳定、成本低 | 256K | 124B | 5.1B |
+| Ling-3.0-tiny | 轻量级混合推理模型，激活参数仅 1.3B，支持端侧部署与本地离线运行，低时延、低成本，兼顾实时交互与工具调用 | — | 7.9B | 1.3B |
+| Ling-2.6-1T | 旗舰大模型，支持 1M 上下文长度，打通从逻辑思考到任务落地的全链路 | 1M | 1T | 63B |
+...
+### Ling-3.1-flash
+
+Ling-3.1-flash 是 Ling 系列面向长流程真实任务与智能体 / Agent 场景优化的混合推理模型。模型总参数约 560B，每个 Token 激活约 25B 参数；模型上下文窗口上限为 1M，当前官方服务开放 256K 上下文。
+...
+| 时间 | 版本 | 关键技术突破 |
+| --- | --- | --- |
+| 2025.03 | Ling 1.0 系列 | 验证 MoE 大语言模型在非高端异构算力平台（非 A100/H100）上的工程可行性，完成国产算力适配 |
+| 2025.10 | Ling 2.0 系列 | 首次突破万亿参数规模，引入 FP8 端到端训练，显著提升训练效率并实现跨领域泛化能力 |
+| 2026.02 | Ling 2.5 系列 | 实现高吞吐解码优化，长上下文理解能力达到业界领先水平，初步构建 Agent 交互与工具调用基础能力 |
+| 2026.04 | Ling 2.6 系列 | 打通逻辑推理至任务执行的完整推理链路，大幅提升”智效比”（单位计算成本下的任务完成能力），开启高性价比可规模化 Agent 时代 |
+| 2026.07 | Ling 3.0 系列 | 从迁移式混合线性架构走向原生混合线性设计，以更低的专家激活比例提升模型容量与计算的转化效率，并引入 KDA（Kimi Delta Attention），增强长序列中的记忆更新与信息保留能力。 |
+| 2026.10 | Ling 3.1 系列 | 在 3.0 基础上进一步优化长流程任务、长周期工程与智能体执行能力。 |
+...
+Last updated on October 16, 2026
+
+---
+
+Title: Ling 3.1 Flash - API Pricing & Benchmarks
+URL: https://openrouter.ai/inclusionai/ling-3.1-flash
+Published: N/A
+Author: N/A
+Highlights:
+# inclusionAI: Ling 3.1 Flash
+
+Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.
+...
+Oct 2, 2026
+...
+Use `inclusionai/ling-3.1-flash` with the OpenRouter API:
+...
+### What is Ling 3.1 Flash?
+
+Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.
+...
+costs $0 ... 075/
+...
+Ling 3 ... 1 Flash has a 26 ... ,144 token context ... . It supports ... to 26 ... ,144 completion tokens.
+...
+### Which providers
+...
+Ling 3.1 Flash is served by 2 providers on OpenRouter: NovitaAI and DeepInfra. Requests are routed to the best available provider, with automatic failover to the others, and you can pin or exclude providers with provider routing.
+
+### When was Ling 3.1 Flash released?
+
+Ling 3.1 Flash was released on October 2, 2026.
+
+---
+
+Title: API Overview
+URL: https://developer.ant-ling.com/en/docs/api-reference/
+Published: N/A
+Author: N/A
+Highlights:
+We recommend using Ling-3.1-flash, Ling-3.0-flash-VL, Ling-3.0-flash, Ling-3.0-tiny, Ling-2.6-1T, Ring-2.6-1T, Ling-2.6-flash, and AntAngelMed to perform conversation tasks, reasoning, and supports tool calls based on context.
+...
+| Model Name | Context Window | Description |
+| --- | --- | --- |
+| Ling-3.1-flash | 256K | New-generation hybrid reasoning model for long-horizon tasks, everyday office work, and complex Agent workflows. |
+| Ling-3.0-flash | 256K | New-generation cost-effective model for Agent workflows — low cost, fast response, and stable tool calling. |
+| Ling-2.6-1T | 256K | Delivers the full chain from logical reasoning to task execution with minimal compute overhead (1/4 token cost). |
+| Ling-2.6-flash | 256K | Excels at code completion and problem fixing, fast document processing, and lightweight Agent interaction scenarios. |
+| Ring-2
+
+---
+
+Title: Ant Ling
+URL: https://www.ant-ling.com/en
+Published: N/A
+Author: N/A
+Highlights:
+# Ling-3.1-flash Is Now Live
+
+Ling-3.1-flash Open API is on limited-time offer — try it now
+...
+Ling-3.1-flash Flagship Ling-3.0-flash Fast
+
+---
+
+Title: 蚂蚁百灵大模型
+URL: https://www.ant-ling.com/zh/
+Published: N/A
+Author: N/A
+Highlights:
+Ling-3.1-flash 全新发布 · 开启 Agent 工作流的效率时代
+
+# Ling-3.1-flash 正式上线
+
+Ling-3.1-flash Open API 限时优惠中，快来体验吧
+...
+Ling-3.1-flash旗舰版 Ling-3.0-flash快速版
+
+---
+
+Title: Pricing
+URL: https://developer.ant-ling.com/en/docs/models/price
+Published: N/A
+Author: N/A
+Highlights:
+This page provides detailed pricing information for Ling’s models. Billing is pay-as-you-go based on token consumption, with no minimum spend.
+...
+1. Ling-3.1-flash currently has a limited-time 75% discount. Original prices will gradually resume after the promotional period ends — please keep an eye on your account balance.
+2. Ling-3.0-flash-VL and Ling-3.0-flash currently have a limited-time 72% discount. Original prices will gradually resume after the promotional period ends — please keep an eye on your account balance.
+3. During the promotional period, the same models on OpenRouter and ZenMux are also discounted — refer to each platform’s official pricing for specific discounts. Original prices resume after the promotion ends.
+...
+| Model | Use Case | Input (per 1M tokens) | Output (per 1M tokens) | Cache Read (per 1M tokens) |
+| --- | --- | --- | --- | --- |
+| Ling-3.1-flash | New long-horizon | ¥2.00 ¥0.50 | ¥6.00 ¥1.50 | ¥0.40 ¥0.10 |
+| Ling-3.0-flash-VL | Native multimodal | ¥0.50 ¥0.14 | ¥1.50 ¥0.42 | ¥0.10 ¥0.028 |
+| Ling-3.0-flash | Latest high-speed | ¥0.50 ¥0.14 | ¥1.50 ¥0.42 | ¥0.10 ¥0.028 |
+| Ling-2.6-1T | Flagship | ¥4.50 | ¥18.00 | ¥0.90 |
+| Ling-2.6-flash | Cost-effective | ¥0.60 | ¥1.80 | ¥0.12 |
+| Ring-2.6-1T | Flagship reasoning | ¥4.50 | ¥18.00 | ¥0.90 |
+...
+| Model | Input (per 1M tokens) | Output (per 1M tokens) | Cache Read (per 1M tokens) |
+| --- | --- | --- | --- |
+| Ling-3.1-flash | $0.30 $0.075 | $0.90 $0.225 | $0.06 $0.015 |
+| Ling-3.0-flash-VL | $0.075 $0.021 | $0.22 $0.062 | $0.015 $0.0042 |
+| Ling-3.0-flash | $0.06 $0.0168 | $0.18 $0.0504 | $0.012 $0.0034 |
+| Ling-2.6-1T | $0.30 | $2.50 | $0.06 |
+| Ling-2.6-flash | $0.10 | $0.30 | $0.02 |
+| Ring-2.6-1T | $0.30 | $2.50 | $0.06 |
+
+> Please refer to the official OpenRouter pricing for actual prices: https://openrouter.ai/inclusionai
+...
+| Model | Input (per 1M tokens) | Output (per 1M tokens) | Cache Read (per 1M tokens) |
+| --- | --- | --- | --- |
+| Ling-3.1-flash | $0.30 $0.075 | $0.90 $0.225 | $0.06 $0.015 |
+| Ling-3.0-flash-VL | $0.075 $0.021 | $0.22 $0.062 | $0.015 $0.0042 |
+| Ling-3.0-flash | $0.06 $0.0168 | $0.18 $0.0504 | $0.012 $0.0034 |
+| Ling-2.6-1T | $0.30 | $2.50 | $0.06 |
+| Ling-2.6-flash | $0.10 | $0.30 | $0.02 |
+| Ring-2.6-1T | $0.30 | $2.50 | $0.06 |
+
+---
+
+Title: Ling-3.1-flash — price, specs and scores · AI Index
+URL: https://ai.gotry.io/models/ling-3-1-flash
+Published: N/A
+Author: N/A
+Highlights:
+Ling-3.1-flash — price, specs and scores · AI Index
+
+# Ling-3.1-flash
+...
+1 offering · prices as listed
+
+ Ant Ling API (opens in a new tab) China · CNY `Ling-3.1-flash`
+...
+Prices from Ant Ling: model pricing (opens in a new tab) (checked Oct 16, 2026)
+...
+ling-flash
+...
+1. Oct 16, 2026 Cache read price cut 20%¥0.125 → ¥0.10 / 1M tokens · Ant Ling API, China
+2. Oct 15, 2026 Cache read price raised Free → ¥0.125 / 1M tokens · Ant Ling API, China
+3. Oct 15, 2026 Output price raised Free → ¥1.50 / 1M tokens · Ant Ling API, China
+4. Oct 15, 2026 Input price raised Free → ¥0.50 / 1M tokens · Ant Ling API, China
+5. Oct 9, 2026 New language model
+...
+- Ant Ling: model pricing (opens in a new tab) developer.ant-ling.com · checked Oct 16, 2026
+- ... opens in a new tab) developer.ant-ling.com · checked Oct 16, 2026
+- models.dev: inclusionai/ling-3.1-flash (community data, MIT) (opens in a new tab) github.com · checked Oct 9, 2026
+- inclusionAI/Ling-3.1-flash model card (opens in a new tab) huggingface.co · checked Oct 15, 2026
+- inclusionAI/Ling-3.1-flash model card (opens in a new tab) huggingface.co · checked Oct 16, 2026
+- inclusionAI/Ling-3.1-flash config.json (opens in a new tab) huggingface.co · checked Oct 16, 2026
+- inclusionAI/Ling-3.1-flash files (opens in a new tab) huggingface.co · checked Oct 16, 2026
+- inclusionAI/Ling-3.1-flash README.md (opens in a new tab) huggingface.co · checked Oct 16, 2026
+
+---
+
+Title: Ling-3.1-flash 退出免费期通知
+URL: https://maas.antdigital.com/dt-maas-docs/updates/ling-3-1-flash-free-ending
+Published: N/A
+Author: N/A
+Highlights:
+Ling-3.1-flash 退出免费期通知
+...
+发布时间：2026 年 10 月 10 日 影响产品：DTMaaS 生效时间：北京时间 2026 年 10 月 14 日 10:00
+...
+`ling-3.1-flash` 将于北京时间 2026 年 10 月 14 日 10:00 结束免费期，并正式开始按量计费。生效时间前产生的模型调用仍按免费期规则处理，生效时间后发起的调用将根据实际用量计费。
+...
+开始计费 ... 付费费用。请
+
+---
+
+Title: inclusionAI/ling-cookbook
+URL: https://github.com/inclusionAI/ling-cookbook
+Published: N/A
+Author: N/A
+Highlights:
+- **Official Website**: ant-ling.com
+- **Hugging Face**: inclusionAI
+- **ModelScope**: inclusionAI
+- **GitHub**: inclusionAI/ling-cookbook
+- **Discord**: Ling Community
+- **X (Twitter)**: @AntLingAGI
+...
+#### Ling-3.0-flash
+
+ 
+ English | 简体中文 
+ 
+
+| Model | Device | Framework | Quant | Info |
+| :--- | :--- | :--- | :--- | :--- |
+| Ling-3.0-flash | Single NVIDIA DGX Spark | SGLang | MXFP4 (Speed Optimized) | Recipe: SGLang MXFP4 Humming Deployment Guide |
+| Ling-3.0-flash | Single NVIDIA DGX Spark | SGLang | MXFP4 | Recipe: SGLang MXFP4 Deployment Guide |
+| Ling-3.0-flash | Single NVIDIA DGX Spark | SGLang | INT4 | Recipe: SGLang INT4 Deployment Guide |
+| Ling-3.0-flash | Single NVIDIA DGX Spark | vLLM | FP4 | Recipe: vLLM FP4 Deployment Guide |
+| Ling-3.0-flash | Single NVIDIA DGX Spark | vLLM | INT4 | Recipe: vLLM INT4 Deployment Guide |
+| Ling-3.0-flash | Single NVIDIA DGX Spark | llama.cpp | GGUF (Q6_K / Q4_K) | Recipe: llama.cpp GGUF Deployment Guide |
+
+#### Ling-3.0-flash-VL
+
+ 
+ English | 简体中文 
+ 
+
+| Model | Device | Framework | Quant | Info |
+| :--- | :--- | :--- | :--- | :--- |
+| Ling-3.0-flash-VL | Single NVIDIA DGX Spark | SGLang | INT4 | Recipe: SGLang INT4 Deployment Guide |
+| Ling-3.0-flash-VL | Single NVIDIA DGX Spark | vLLM | INT4 | Recipe: vLLM INT4 Deployment Guide |
+| Ling-3.0-flash-VL | Single NVIDIA DGX Spark | llama.cpp | GGUF (Q4_K_M) | Recipe: llama.cpp GGUF Deployment Guide |
+
+#### Ling-3.0-flash-Fin
+
+ 
+ English | 简体中文 
+ 
+
+| Model | Device | Framework | Quant | Info |
+| :--- | :--- | :--- | :--- | :--- |
+| Ling-3.0-flash-Fin | Single NVIDIA DGX Spark | SGLang | MXFP4 (Speed Optimized) | Recipe: SGLang MXFP4 Humming Optimization Deployment Guide |
+| Ling-3.0-flash-Fin | Single NVIDIA DGX Spark | SGLang | MXFP4 | Recipe: SGLang MXFP4 Deployment Guide |
+| Ling-3.0-flash-Fin | Single NVIDIA DGX Spark | vLLM | FP4 | Recipe: vLLM FP4 Deployment Guide |
+| Ling-3.0-flash-Fin | Single NVIDIA DGX Spark | llama.cpp | GGUF (Q4_K_M) | Recipe: llama.cpp GGUF Deployment Guide |

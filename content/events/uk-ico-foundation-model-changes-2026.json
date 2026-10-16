@@ -1,0 +1,107 @@
+{
+  "id": "uk-ico-foundation-model-changes-2026",
+  "slug": "uk-ico-foundation-model-changes-2026",
+  "status": "published",
+  "date": "2026-10-08",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "October 8, 2026",
+    "zhHans": "2026年10月8日"
+  },
+  "categories": [
+    "governance"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "title": {
+    "en": "UK ICO reports data-protection changes by ten foundation-model developers",
+    "zhHans": "英国 ICO 报告十家基础模型开发商的数据保护整改"
+  },
+  "searchSummary": {
+    "en": "The UK Information Commissioner’s Office reported that ten foundation-model developers had made, or committed to make, data-protection changes after two years of regulatory supervision.",
+    "zhHans": "英国信息专员办公室报告称，经过两年监管监督，十家基础模型开发商已作出或承诺作出数据保护整改。"
+  },
+  "summary": {
+    "en": "The UK Information Commissioner’s Office reported that ten foundation-model developers had made, or committed to make, data-protection changes after two years of regulatory supervision.",
+    "zhHans": "英国信息专员办公室报告称，经过两年监管监督，十家基础模型开发商已作出或承诺作出数据保护整改。"
+  },
+  "narrative": {
+    "en": "The ICO listed clearer transparency information, stronger mechanisms for data-subject rights, and tougher safeguards assessments, while stating it will monitor progress. The announcement records regulatory supervision and commitments; it does not establish that every commitment has been implemented or that agentic-AI risks have been resolved.",
+    "zhHans": "ICO 列举了更清晰的透明度信息、更强的数据主体权利机制和更严格的保障评估，并表示将监测进展。该公告记录的是监管监督和承诺，不能证明每项承诺都已落实，也不能证明智能体 AI 风险已经解决。"
+  },
+  "claims": [
+    {
+      "id": "ico-foundation-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261016-ico-official",
+        "sweep-20261016-ico-tnw"
+      ],
+      "text": {
+        "en": "The ICO reported that ten foundation-model developers had made, or committed to make, data-protection changes following its supervision.",
+        "zhHans": "ICO 报告称，十家基础模型开发商在其监管监督后已作出或承诺作出数据保护整改。"
+      }
+    },
+    {
+      "id": "ico-foundation-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261016-ico-official",
+        "sweep-20261016-ico-tnw"
+      ],
+      "text": {
+        "en": "The ICO is monitoring progress, so the announcement does not establish that every developer commitment has been implemented.",
+        "zhHans": "ICO 正在监测进展，因此该公告不能证明每家开发商的每项承诺均已落实。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20261016-ico-official",
+      "supports": [
+        "ico-foundation-fact",
+        "ico-foundation-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20261016-ico-tnw",
+      "supports": [
+        "ico-foundation-fact",
+        "ico-foundation-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "eu-ai-act-transparency-2026",
+    "eu-ai-act-enforcement-2025"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-16",
+    "updatedAt": "2026-10-16",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-10-16",
+        "changeType": "created",
+        "summary": "Created as a draft from the 2026-10-08 to 2026-10-16 full discovery sweep."
+      },
+      {
+        "date": "2026-10-16",
+        "changeType": "score_changed",
+        "summary": "Gemini 3.8 independent full-evidence review completed; L1 and zero observed impact retained. Claim evidence grades were downgraded from A to B because retained sources share one origin."
+      }
+    ],
+    "reviewedAt": "2026-10-16",
+    "lastSourceCheckAt": "2026-10-16",
+    "reviewer": "gemini-3.8-independent-session-01a14512-39ee-72b3-aafa-671e1f33b5f0",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/independent-20261016/uk-ico-foundation-model-changes-2026.json",
+    "publishedAt": "2026-10-16"
+  }
+}

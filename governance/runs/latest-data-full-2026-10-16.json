@@ -1,0 +1,475 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-full-2026-10-16",
+  "kind": "full",
+  "windowStart": "2026-10-08",
+  "windowEnd": "2026-10-16",
+  "evidenceCutoff": "2026-10-16",
+  "timezone": "UTC",
+  "baselineCommit": "cd429a0ac9029ba6e4bc2940a0eda56cb702c2b9",
+  "operator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-5.6-sol",
+  "promptVersion": "latest-data-full-v24-20261016-1",
+  "channels": [
+    {
+      "id": "hf-papers",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Hugging Face daily-paper snapshot.",
+      "attempts": [
+        {
+          "query": "Hugging Face daily-paper snapshot.",
+          "executedAt": "2026-10-16T12:17:00Z",
+          "artifact": "governance/evidence/2026-10-16/search/hf-daily-papers.json",
+          "sha256": "97dc82fd4cda3632f7a9b7eeccd3d7da3cfd48d1cf77c45d6a0c66fa57e46436",
+          "resultCount": 100
+        }
+      ],
+      "reason": "Bounded snapshot/query does not establish exhaustive recall.",
+      "retryResult": "Supplemented with direct-source confirmation."
+    },
+    {
+      "id": "hacker-news",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "HN date-range query capped at 100.",
+      "attempts": [
+        {
+          "query": "HN date-range query capped at 100.",
+          "executedAt": "2026-10-16T12:17:00Z",
+          "artifact": "governance/evidence/2026-10-16/search/hacker-news.json",
+          "sha256": "9daf6909b80b29ee1dd29225bb4648eceed78ea5658c01abe556fec7e9d2f176",
+          "resultCount": 100
+        }
+      ],
+      "reason": "Bounded snapshot/query does not establish exhaustive recall.",
+      "retryResult": "Supplemented with direct-source confirmation."
+    },
+    {
+      "id": "reddit-search",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Reddit OpenCLI search.",
+      "attempts": [
+        {
+          "query": "Reddit OpenCLI search.",
+          "executedAt": "2026-10-16T12:17:00Z",
+          "artifact": "governance/evidence/2026-10-16/search/reddit.yaml",
+          "sha256": "e3b2f5141d65590f96f32356767b8332c971433136ca84b820001457ccce8f2c",
+          "resultCount": 0
+        }
+      ],
+      "reason": "Reddit search returned no usable AI-release results.",
+      "retryResult": "Used web and newsletter discovery."
+    },
+    {
+      "id": "x-search",
+      "status": "unavailable",
+      "windowCovered": false,
+      "coverageNote": "OpenCLI X search.",
+      "attempts": [
+        {
+          "query": "OpenCLI X search.",
+          "executedAt": "2026-10-16T12:17:00Z",
+          "artifact": "governance/evidence/2026-10-16/search/twitter.yaml",
+          "sha256": "49239ad92dfc1adee0f1bd6b360bb70cf9fedf82b03e082bd1e8f7182568315d",
+          "resultCount": 0
+        }
+      ],
+      "reason": "Browser command timed out before navigation.",
+      "retryResult": "No stable X retry; web search used for discovery only."
+    },
+    {
+      "id": "import-ai",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Five Import AI messages including Oct. 12.",
+      "attempts": [
+        {
+          "query": "Five Import AI messages including Oct. 12.",
+          "executedAt": "2026-10-16T12:17:00Z",
+          "artifact": "governance/evidence/2026-10-16/search/import-ai.txt",
+          "sha256": "bdb57cbe296a65ca4e18c5696cdd4ed81b857d85671c1ad74684665caca7d42f",
+          "resultCount": 5
+        }
+      ]
+    },
+    {
+      "id": "the-batch",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Five The Batch messages including Oct. 15.",
+      "attempts": [
+        {
+          "query": "Five The Batch messages including Oct. 15.",
+          "executedAt": "2026-10-16T12:17:00Z",
+          "artifact": "governance/evidence/2026-10-16/search/the-batch.txt",
+          "sha256": "45cbf165572099ed5174cec63cb016003b4f011ffc8d12b0706bdebfdbd18726",
+          "resultCount": 5
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "Full scan attempted; X failed and discovery coverage is bounded by snapshots and queries."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Full scan attempted; X failed and discovery coverage is bounded by snapshots and queries."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Full scan attempted; X failed and discovery coverage is bounded by snapshots and queries."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "Full scan attempted; X failed and discovery coverage is bounded by snapshots and queries."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Full scan attempted; X failed and discovery coverage is bounded by snapshots and queries."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "Full scan attempted; X failed and discovery coverage is bounded by snapshots and queries."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "oct16-uk-ico-foundation-model-changes-2026",
+      "eventId": "uk-ico-foundation-model-changes-2026",
+      "discoveryUrls": [
+        "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/",
+        "https://thenextweb.com/news/ico-ai-developers-data-protection-changes-ai-agents"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Conservative candidate score from retained direct and independent materials.",
+        "novelty": "Conservative candidate score from retained direct and independent materials.",
+        "spillover": "Conservative candidate score from retained direct and independent materials.",
+        "durability": "Conservative candidate score from retained direct and independent materials.",
+        "sourceQuality": "Conservative candidate score from retained direct and independent materials."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal confirmed event drafted pending requested Gemini cross-model review.",
+      "decision": "new",
+      "reason": "Core fact confirmed; L2 path remains incomplete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm identity, stage and date",
+          "finding": "Core fact confirmed by retained materials.",
+          "evidenceIds": [
+            "ico-foundation-fact-1",
+            "ico-foundation-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream effects",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and limitations",
+          "finding": "Independent reporting retained.",
+          "evidenceIds": [
+            "ico-foundation-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find limitation or dispute",
+          "finding": "No separate documented factual dispute retained.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct16-eight-state-openai-safety-lawsuits-2026",
+      "eventId": "eight-state-openai-safety-lawsuits-2026",
+      "discoveryUrls": [
+        "https://www.justsecurity.org/wp-content/uploads/2026/10/Nebraska.pdf",
+        "https://www.justsecurity.org/160981/eight-states-sue-openai-chatgpt-safety/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Conservative candidate score from retained direct and independent materials.",
+        "novelty": "Conservative candidate score from retained direct and independent materials.",
+        "spillover": "Conservative candidate score from retained direct and independent materials.",
+        "durability": "Conservative candidate score from retained direct and independent materials.",
+        "sourceQuality": "Conservative candidate score from retained direct and independent materials."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal confirmed event drafted pending requested Gemini cross-model review.",
+      "decision": "new",
+      "reason": "Core fact confirmed; L2 path remains incomplete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm identity, stage and date",
+          "finding": "Core fact confirmed by retained materials.",
+          "evidenceIds": [
+            "eight-state-openai-fact-1",
+            "eight-state-openai-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream effects",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and limitations",
+          "finding": "Independent reporting retained.",
+          "evidenceIds": [
+            "eight-state-openai-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Find limitation or dispute",
+          "finding": "Legal allegations remain unresolved.",
+          "evidenceIds": [
+            "eight-state-openai-limitation-1"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "oct16-datadog-scout-sre-model-2026",
+      "eventId": "datadog-scout-sre-model-2026",
+      "discoveryUrls": [
+        "https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/",
+        "https://itwire.com/business-it-news/data/introducing-scout-1-0-a-new-sre-model-powering-bits-ai-with-frontier-performance-at-a-fraction-of-the-cost"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Conservative candidate score from retained direct and independent materials.",
+        "novelty": "Conservative candidate score from retained direct and independent materials.",
+        "spillover": "Conservative candidate score from retained direct and independent materials.",
+        "durability": "Conservative candidate score from retained direct and independent materials.",
+        "sourceQuality": "Conservative candidate score from retained direct and independent materials."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal confirmed event drafted pending requested Gemini cross-model review.",
+      "decision": "new",
+      "reason": "Core fact confirmed; L2 path remains incomplete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm identity, stage and date",
+          "finding": "Core fact confirmed by retained materials.",
+          "evidenceIds": [
+            "scout-fact-1",
+            "scout-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream effects",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Find independent coverage and limitations",
+          "finding": "A secondary republication was retained but shares the Datadog release origin and is not treated as independent verification.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find limitation or dispute",
+          "finding": "No separate documented factual dispute retained.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct16-stepfun-step-5-preview-open-weights-2026",
+      "eventId": "stepfun-step-5-preview-open-weights-2026",
+      "discoveryUrls": [
+        "https://huggingface.co/stepfun-ai/Step-5-Preview",
+        "https://finance.jrj.com.cn/2026/10/16140358744435.shtml"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Conservative candidate score from retained direct and independent materials.",
+        "novelty": "Conservative candidate score from retained direct and independent materials.",
+        "spillover": "Conservative candidate score from retained direct and independent materials.",
+        "durability": "Conservative candidate score from retained direct and independent materials.",
+        "sourceQuality": "Conservative candidate score from retained direct and independent materials."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "High-signal confirmed event drafted pending requested Gemini cross-model review.",
+      "decision": "new",
+      "reason": "Core fact confirmed; L2 path remains incomplete.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Confirm identity, stage and date",
+          "finding": "Core fact confirmed by retained materials.",
+          "evidenceIds": [
+            "step5-weights-fact-1",
+            "step5-weights-fact-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Find observed downstream effects",
+          "finding": "No qualifying observed impact retained.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent coverage and limitations",
+          "finding": "Independent reporting retained.",
+          "evidenceIds": [
+            "step5-weights-limitation-2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Find limitation or dispute",
+          "finding": "No separate documented factual dispute retained.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct16-haiku55-backfill",
+      "discoveryUrls": [
+        "https://www.anthropic.com/claude-haiku-5-5"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Conservative candidate score from retained direct and independent materials.",
+        "novelty": "Conservative candidate score from retained direct and independent materials.",
+        "spillover": "Conservative candidate score from retained direct and independent materials.",
+        "durability": "Conservative candidate score from retained direct and independent materials.",
+        "sourceQuality": "Conservative candidate score from retained direct and independent materials."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Released Oct. 7, before the full-scan window; hold for separately labeled backfill."
+    },
+    {
+      "candidateId": "oct16-mistral-large4-backfill",
+      "discoveryUrls": [
+        "https://mistral.ai/news/mistral-large-4/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Conservative candidate score from retained direct and independent materials.",
+        "novelty": "Conservative candidate score from retained direct and independent materials.",
+        "spillover": "Conservative candidate score from retained direct and independent materials.",
+        "durability": "Conservative candidate score from retained direct and independent materials.",
+        "sourceQuality": "Conservative candidate score from retained direct and independent materials."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Preview launched Oct. 6, before the full-scan window; hold for separately labeled backfill."
+    },
+    {
+      "candidateId": "oct16-timestral-skip",
+      "discoveryUrls": [
+        "https://mistral.ai/news/timestral/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Conservative candidate score from retained direct and independent materials.",
+        "novelty": "Conservative candidate score from retained direct and independent materials.",
+        "spillover": "Conservative candidate score from retained direct and independent materials.",
+        "durability": "Conservative candidate score from retained direct and independent materials.",
+        "sourceQuality": "Conservative candidate score from retained direct and independent materials."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "Official page states July 15 release, outside this scan window."
+    },
+    {
+      "candidateId": "oct16-ling31-hold",
+      "discoveryUrls": [
+        "https://developer.ant-ling.com/en/docs/models/ling/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Conservative candidate score from retained direct and independent materials.",
+        "novelty": "Conservative candidate score from retained direct and independent materials.",
+        "spillover": "Conservative candidate score from retained direct and independent materials.",
+        "durability": "Conservative candidate score from retained direct and independent materials.",
+        "sourceQuality": "Conservative candidate score from retained direct and independent materials."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Official documentation confirms availability but does not establish a release date in this window."
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+Title: Timestral: Mistral's time-series foundation models | Mistral
+URL: https://mistral.ai/news/timestral/
+Published: 2026-10-15T15:08:31.000Z
+Author: N/A
+Highlights:
+# Timestral: Mistral's time-series foundation models | Mistral
+
+Published: 2026-10-15T15:08:31Z
+...
+# Introducing Timestral
+October 15, 2026
+...
+Timestral, Mistral’s first family of time-series foundation models, delivers state-of-the-art probabilistic, multivariate forecasts with just 209M parameters, outperforming larger models on key benchmarks while supporting past and future covariates. Available in four sizes (5M to 209M parameters), it balances accuracy and efficiency, running efficiently on CPUs and excelling in zero-shot forecasting for diverse domains. The model combines synthetic pre-training, covariate-aware attention, and long-context learning, with fine-tuning options for domain adaptation via Mistral Forge.
+Today, we’re releasing Timestral, our first family of time-series foundation models. Our largest model, at just 209M parameters, ranks first on all three of the field's main public benchmarks, GIFT-Eval, TIME, and fev-bench, outperforming the previous state of the art with only two-thirds of the model parameters.
+...
+Timestral has been optimised as a family of four models: 5M, 28M, 123M and 209M parameters. The larger models improve forecast performance, while the smaller ones are faster and cheaper. All four share the same architecture and training recipe. Every size sits on the Pareto front of accuracy versus model size: for each model size, no public model forecasts better.
+...
+## What’s
+...
+We have published a GitHub repository so you can run Timestral on your own data. A technical report with the full results will follow. For more specialised forecasting problems, or to collaborate on research, please reach out to us.
+|Timestral||
+|Type|Time-series foundation model (TSFM)|
+|Parameters|5M, 28M, 123M and 209M|
+|Context length|32,768 time steps|
+|Output|Probabilistic forecasts, 21 quantiles|
+|Inputs|Multivariate targets, past-only and known-future covariates|
+|Deployment|On-prem, VPC or air-gapped|
+|Licence|Modified MIT|
+Mistral's time-series foundation models. State-of-the-art probabilistic forecasts, 5M–209M params, runs on CPU.
+
+---
+
+Title: mistralai/timestral
+URL: https://github.com/mistralai/timestral
+Published: N/A
+Author: N/A
+Highlights:
+## README
+
+ 
+ 
+ 
+
+# Timestral
+
+ 
+ Blog post ·
+ Hugging Face collection ·
+ License 
+ 
+
+Timestral is a family of time series foundation models for multivariate probabilistic forecasting, with support for past-only and known-future covariates.
+This repository provides standalone inference for Timestral models. It needs only PyTorch, NumPy, `safetensors` and `huggingface_hub`, and runs on CPU or GPU.
+
+> **License:** the code in this repository is licensed under Apache 2.0. The Timestral model weights are released separately on the Hugging Face Hub under a Modified MIT license. See License.
+...
+The weights are on the Hugging Face Hub, in the Mistral AI organization:
+
+| model | Hub repo | weights (fp32) |
+|---|---|---|
+| Timestral-5M | `mistralai/Timestral-5M` | 21 MB |
+| Timestral-28M | `mistralai/Timestral-28M` | 111 MB |
+| Timestral-123M | `mistralai/Timestral-123M` | 490 MB |
+| Timestral-209M | `mistralai/Timestral-209M` | 837 MB |
+...
+The Timestral model weights are not covered by the Apache License 2.0. They are distributed
+separately on the Hugging Face Hub under a Modified MIT license, available in each model repository
+(Timestral-5M,
+Timestral-28M,
+Timestral-123M,
+Timestral-209M).
+
+---
+
+Title: Legal Center
+URL: https://legal.mistral.ai/ai-governance/models/timestral/
+Published: N/A
+Author: N/A
+Highlights:
+# Timestral 
+
+Includes Timestral and subsequent versions.
+...
+and retirement status for all ... in this family.
+
+| Model | Type | Classification | Release Date | Retirement Date | Status |
+| --- | --- | --- | --- | --- | --- |
+| Timestral | base | specialized model | October 15, 2026 | N/A | Active |
+
+---
+
+Title: Latest news | Mistral
+URL: https://mistral.ai/news/
+Published: 2026-05-05T14:36:32.000Z
+Author: N/A
+Highlights:
+## Introducing Mistral Large 4
+
+October 6, 2026
+...
+## Introducing Timestral
+
+State-of-the-art probabilistic forecasts with just 209M parameters, outperforming larger models on CPU.
+
+October 15, 2026
+
+---
+
+Title: Mistral releases Timestral forecasting models
+URL: https://bytefwd.com/mistral-timestral-forecasting-models/
+Published: 2026-10-15T16:47:59.000Z
+Author: Maya Chen
+Highlights:
+Mistral releases Timestral forecasting models
+
+# Mistral releases Timestral models for numerical forecasting
+
+- Maya Chen
+- October 15, 2026
+- AI Model Releases, Models
+- 6 mins
+
+Mistral released Timestral on October 15, a family of numerical forecasting models with 5 million to 209 million parameters. The models predict how related measurements change over time, with uncertainty estimates and support for additional information about past and future conditions.
+...
+The official Hugging Face collection contains four checkpoints. Their exact repository identifiers are listed below.
+
+- mistralai/Timestral-5M
+- mistralai/Timestral-28M
+- mistralai/Timestral-123M
+- mistralai/Timestral-209M
+...
+Timestral is separate from Mistral’s newly announced physics partnership with CERN, which concerns a planned model trained on simulated particle collisions. The projects should be assessed against their own evidence.
+...
+a controlled comparison ... to inspect and evaluate ... an operational role depends on the ... makes in that setting
+
+---
+
+Title: Timestral — Mistral's first open models for… | AI/TLDR
+URL: https://ai-tldr.dev/releases/mistral-timestral/
+Published: 2026-10-15T12:00:00.000Z
+Author: Mistral AI
+Highlights:
+Mistral AI · 2026-10-15 · major
+
+# Timestral — Mistral's first open models for time-series forecasting
+
+Timestral is Mistral AI's first family of time-series foundation models, in 5M, 28M, 123M and 209M sizes. The models give zero-shot probabilistic forecasts, and Mistral says the 209M model ranks first on GIFT-Eval, TIME and fev-bench.
+...
+Timestral is a family of four time-series foundation models from Mistral AI, released on 15 October 2026. The models forecast future values of one or many related series, such as sales or sensor readings, without training on your data first. Each forecast is a spread of 21 quantiles, not just one line.
+...
+: Mistral AI publishes the Timestral inference code on GitHub under Apache 2.0 and the model weights on Hugging Face under a Modified MIT license. All four checkpoints, from Timestral-5M (21 MB) to Timestral-209M (837 MB), can be downloaded and run on your own servers, including air-gapped setups.
+
+---
+
+Title: Changelog | Mistral Docs
+URL: https://docs.mistral.ai/resources/changelogs
+Published: N/A
+Author: N/A
+Highlights:
+## October 6
+
+- Mistral Large 4 (`mistral-large-4`) is now available in Public Preview. For details, see the Mistral Large 4 model card. MODEL RELEASED
+
+- Mistral Large 4 is an open-weight, general-purpose multimodal model with a Mixture-of-Experts architecture and a 1M context window.
+- Open weights are coming soon.
+- Launch pricing: 50% off for 2 weeks.
+...
+## October 9
+
+- We released Ministral 3B (`ministral-3b-2410`) and Ministral 8B (`ministral-8b-2410`). MODEL RELEASED
+
+---
+
+Title: Timestral 1.0 — Mistral Time-Series Forecasting Models | AI/TLDR
+URL: https://ai-tldr.dev/models/timestral-1-0/
+Published: N/A
+Author: N/A
+Highlights:
+Mistral's first time-series foundation models, released October 15, 2026 — four open-weight sizes from 5M to 209M parameters for zero-shot probabilistic forecasting on a CPU.
+
+Timestral Open weights Public preview in Mistral's docs (model id timestral-1-0); open weights on Hugging Face
+...
+15 Oct 2026
+...
+Timestral 1.0 is Mistral AI's first family of time-series foundation models, announced on October 15, 2026. It comes in four sizes — 5M, 28M, 123M and 209M parameters — that share one architecture and training recipe, and it forecasts the future values of one series or of several related series zero-shot, without training on your data first. Every forecast is probabilistic: the model returns 21 quantiles from 0.01 to 0.99 rather than a single line.
+...
+| Released | 2026-10-15 |
+| --- | --- |
+| License | Modified MIT (weights) · Apache-2.0 (inference code) |
+| Weights | Open weights |
+| Parameters | 5M · 28M · 123M · 209M |
+| Context | 32,768 time steps |
+| Max output | 1,024 steps per forward pass (longer horizons block by block) |
+| Architecture | Patch-based transformer with temporal and variate attention (209M: 24 layers, embedding dimension 768, 32-step patches) and a 21-quantile output head |
+| Modalities | Time series |
+| Status | Public preview in Mistral's docs (model id timestral-1-0); open weights on Hugging Face |
+...
+| Provider | Model ID |
+| --- | --- |
+| Hugging Face (open weights) ↗ | `mistralai/Timestral-209M` |
+| Mistral docs ↗ | `timestral-1-0` |
+...
+Timestral is Mistral AI's family of time-series foundation models, released on October 15, 2026 in 5M, 28M, 123M and 209M sizes. The models give zero-shot probabilistic forecasts — 21 quantiles per step — for univariate or multivariate series, with optional past-only and known-future covariates.
+
+---
+
+Title: Mistral Release Notes - October 2026 Latest Updates
+    - Releasebot
+URL: https://releasebot.io/updates/mistral
+Published: N/A
+Author: N/A
+Highlights:
+## Introducing Timestral 
+
+Mistral releases Timestral, its first family of time-series foundation models, with four sizes for probabilistic, multivariate forecasting and support for past-only and known-future covariates. The models lead public benchmarks, run on standard CPUs, and are available to try through a published GitHub repository. 
+
+Today, we’re releasing Timestral, our first family of time-series foundation models. Our largest model, at just 209M parameters, ranks first on all three of the field's main public benchmarks, GIFT-Eval, TIME, and fev-bench, outperforming the previous state of the art with only two-thirds of the model parameters.
+...
+ral delivers probabilistic, multivariate ... and supports past- ... future covariates. Our family of ... sits on the Pareto front of ... accuracy versus model size, delivering leading performance at each ... . Results have been submitted to the GIFT-Eval and ... leaderboards.
+...
+Timestral has been optimised as a family of four models: 5M, 28M, 123M and 209M parameters. The larger models improve forecast performance, while the smaller ones are faster and cheaper. All four share the same architecture and training recipe. Every size sits on the Pareto front of accuracy versus model size: for each model size, no public model forecasts better.
+...
+We have published a GitHub repository so you can run Timestral on your own data. A technical report with the full results will follow. For more specialised forecasting problems, or to collaborate on research, please reach out to us.
+
+### Timestral
+
+- Type: Time-series foundation model (TSFM)
+- Parameters: 5M, 28M, 123M and 209M
+- Context length: 32,768 time steps
+- Output: Probabilistic forecasts, 21 quantiles
+- Inputs: Multivariate targets, past-only and known-future covariates
+- Deployment: On-prem, VPC or air-gapped
+- Licence: Modified MIT
+...
+## October 5 
+
+Mistral launches Mistral Large 4 in Public Preview with open-weight multimodal support and a 1M context window. 
+
+Mistral Large 4 (mistral-large-4) is now available in Public Preview. For details, see the Mistral Large 4 model card.
+
+### MODEL RELEASED
+
+- Mistral Large 4 is an open-weight, general-purpose multimodal model with a Mixture-of-Experts architecture and a 1M context window.
+- Open weights are coming soon.
+- Launch pricing: 50% off for 2 weeks.
+
+---
+
+Title: Mistral releases Timestral model for time-series reasoning and acquires New Material research team — Agentic Ready
+URL: https://www.getreadyforagents.com/news/mistral-timestral-time-series-model/
+Published: 2026-10-15T19:05:44.000Z
+Author: N/A
+Highlights:
+Mistral releases Timestral model for time-series reasoning and acquires New Material research team — Agentic Ready
+
+Builders 16 October 2026
+
+# Mistral releases Timestral model for time-series reasoning and acquires New Material research team
+
+According to Mistral's announcement and GitHub repository, the company released Timestral, a model targeting time-series and temporal reasoning workloads. Simultaneously, Mistral acquired New Material (newmaterial.ai), a research team, signaling organizational expansion in time-series AI capabilities.

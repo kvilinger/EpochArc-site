@@ -1,0 +1,3 @@
+# Captured discovery and source artifacts are byte-preserved evidence. Do not flag
+# their source-system whitespace as a code-style defect during git diff --check.
+governance/evidence/** whitespace=-trailing-space,-blank-at-eof

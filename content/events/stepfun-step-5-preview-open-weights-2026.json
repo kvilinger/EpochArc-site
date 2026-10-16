@@ -1,0 +1,107 @@
+{
+  "id": "stepfun-step-5-preview-open-weights-2026",
+  "slug": "stepfun-step-5-preview-open-weights-2026",
+  "status": "published",
+  "date": "2026-10-15",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "October 15, 2026",
+    "zhHans": "2026年10月15日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "title": {
+    "en": "StepFun opens Step 5 Preview weights under its model license",
+    "zhHans": "阶跃星辰依据其模型许可证开放 Step 5 Preview 权重"
+  },
+  "searchSummary": {
+    "en": "StepFun made Step 5 Preview weights available through Hugging Face under the StepFun Model License 1.0; contemporaneous reporting dated the weight opening to October 15.",
+    "zhHans": "阶跃星辰通过 Hugging Face 依据 StepFun Model License 1.0 提供 Step 5 Preview 权重；同期报道将权重开放日期记为 10 月 15 日。"
+  },
+  "summary": {
+    "en": "StepFun made Step 5 Preview weights available through Hugging Face under the StepFun Model License 1.0; contemporaneous reporting dated the weight opening to October 15.",
+    "zhHans": "阶跃星辰通过 Hugging Face 依据 StepFun Model License 1.0 提供 Step 5 Preview 权重；同期报道将权重开放日期记为 10 月 15 日。"
+  },
+  "narrative": {
+    "en": "The model card supports self-hosted serving and offline generation, but the license includes model-specific attribution and commercial-use conditions. Model performance claims remain vendor-reported and adoption is not yet established.",
+    "zhHans": "模型卡支持自托管服务和离线生成，但许可证含有模型特定的署名和商业使用条件。模型性能主张仍来自厂商披露，采用情况尚未得到证明。"
+  },
+  "claims": [
+    {
+      "id": "step5-weights-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261016-step5-hf",
+        "sweep-20261016-step5-jrj"
+      ],
+      "text": {
+        "en": "StepFun made Step 5 Preview weights available on Hugging Face under the StepFun Model License 1.0.",
+        "zhHans": "阶跃星辰在 Hugging Face 上依据 StepFun Model License 1.0 提供 Step 5 Preview 权重。"
+      }
+    },
+    {
+      "id": "step5-weights-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261016-step5-hf",
+        "sweep-20261016-step5-jrj"
+      ],
+      "text": {
+        "en": "The model license includes attribution and commercial-use conditions, and vendor performance claims have not been independently replicated.",
+        "zhHans": "该模型许可证含有署名和商业使用条件，厂商性能主张尚未得到独立复现。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20261016-step5-hf",
+      "supports": [
+        "step5-weights-fact",
+        "step5-weights-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20261016-step5-jrj",
+      "supports": [
+        "step5-weights-fact",
+        "step5-weights-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "qwen-3-8-27b-open-weights-2026",
+    "holo4-computer-use-models-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-16",
+    "updatedAt": "2026-10-16",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-10-16",
+        "changeType": "created",
+        "summary": "Created as a draft from the 2026-10-08 to 2026-10-16 full discovery sweep."
+      },
+      {
+        "date": "2026-10-16",
+        "changeType": "source_added",
+        "summary": "Gemini 3.8 independent full-evidence review completed; L1 and zero observed impact retained."
+      }
+    ],
+    "reviewedAt": "2026-10-16",
+    "lastSourceCheckAt": "2026-10-16",
+    "reviewer": "gemini-3.8-independent-session-01a14512-39ee-72b3-aafa-671e1f33b5f0",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/independent-20261016/stepfun-step-5-preview-open-weights-2026.json",
+    "publishedAt": "2026-10-16"
+  }
+}

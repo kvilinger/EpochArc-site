@@ -1,0 +1,107 @@
+{
+  "id": "datadog-scout-sre-model-2026",
+  "slug": "datadog-scout-sre-model-2026",
+  "status": "published",
+  "date": "2026-10-15",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "October 15, 2026",
+    "zhHans": "2026年10月15日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "title": {
+    "en": "Datadog introduces Scout 1.0 for production-incident investigation",
+    "zhHans": "Datadog 推出用于生产事故调查的 Scout 1.0"
+  },
+  "searchSummary": {
+    "en": "Datadog introduced Scout 1.0, a specialized model powering Bits Investigation for production-alert investigation; Datadog teams and a small customer group are using it in closed preview.",
+    "zhHans": "Datadog 推出 Scout 1.0，这是一款为生产告警调查提供 Bits Investigation 支持的专用模型；Datadog 团队和一小组客户正在封闭预览中使用它。"
+  },
+  "summary": {
+    "en": "Datadog introduced Scout 1.0, a specialized model powering Bits Investigation for production-alert investigation; Datadog teams and a small customer group are using it in closed preview.",
+    "zhHans": "Datadog 推出 Scout 1.0，这是一款为生产告警调查提供 Bits Investigation 支持的专用模型；Datadog 团队和一小组客户正在封闭预览中使用它。"
+  },
+  "narrative": {
+    "en": "Scout is a closed-preview, domain-specific product rather than an independently measured change in SRE practice. Its performance and cost comparisons are vendor-reported, and general availability remains pending.",
+    "zhHans": "Scout 是处于封闭预览阶段的领域专用产品，而非经独立测量的 SRE 工作实践变化。其性能与成本比较来自厂商披露，正式普遍可用仍待后续。"
+  },
+  "claims": [
+    {
+      "id": "scout-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261016-datadog-scout-official",
+        "sweep-20261016-datadog-scout-itwire"
+      ],
+      "text": {
+        "en": "Datadog introduced Scout 1.0 to power Bits Investigation for production-issue investigation.",
+        "zhHans": "Datadog 推出 Scout 1.0，为生产问题调查提供 Bits Investigation 支持。"
+      }
+    },
+    {
+      "id": "scout-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "sweep-20261016-datadog-scout-official",
+        "sweep-20261016-datadog-scout-itwire"
+      ],
+      "text": {
+        "en": "Scout was in closed preview and its performance and cost comparisons were reported by Datadog.",
+        "zhHans": "Scout 仍处于封闭预览，其性能和成本比较由 Datadog 报告。"
+      }
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "sweep-20261016-datadog-scout-official",
+      "supports": [
+        "scout-fact",
+        "scout-limitation"
+      ]
+    },
+    {
+      "sourceId": "sweep-20261016-datadog-scout-itwire",
+      "supports": [
+        "scout-fact",
+        "scout-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "salesforce-nvidia-koa-reasoning-2026",
+    "holo4-computer-use-models-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-16",
+    "updatedAt": "2026-10-16",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-10-16",
+        "changeType": "created",
+        "summary": "Created as a draft from the 2026-10-08 to 2026-10-16 full discovery sweep."
+      },
+      {
+        "date": "2026-10-16",
+        "changeType": "source_added",
+        "summary": "Gemini 3.8 independent full-evidence review completed; L1 and zero observed impact retained."
+      }
+    ],
+    "reviewedAt": "2026-10-16",
+    "lastSourceCheckAt": "2026-10-16",
+    "reviewer": "gemini-3.8-independent-session-01a14512-39ee-72b3-aafa-671e1f33b5f0",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/independent-20261016/datadog-scout-sre-model-2026.json",
+    "publishedAt": "2026-10-16"
+  }
+}
