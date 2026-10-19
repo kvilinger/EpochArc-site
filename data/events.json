@@ -5939,95 +5939,80 @@
     "date": "2026-06-12",
     "datePrecision": "day",
     "title": {
-      "en": "US Government Orders Export Ban on Anthropic's Fable 5 and Mythos 5 AI Models",
-      "zhHans": "美国政府首次以出口管制封禁 AI 模型：Anthropic Fable 5 和 Mythos 5 被要求全球下线"
+      "en": "US directs Anthropic to restrict Fable 5 and Mythos 5 access",
+      "zhHans": "美国要求 Anthropic 限制 Fable 5 与 Mythos 5 的访问"
     },
     "searchSummary": {
-      "en": "US government banned Anthropic’s Fable 5 and Mythos 5 models globally in 2026 — the first export control action against AI models. How safety concerns triggered unprecedented regulation.",
-      "zhHans": "美国政府 2026 年首次以出口管制要求 Anthropic 的 Fable 5 和 Mythos 5 全球下线——针对 AI 模型的首次出口管制行动。安全担忧如何触发了前所未有的监管手段。"
+      "en": "A June 12 export-control directive to Anthropic led it to suspend access to both models for all users. The directive’s broader legal effect remains disputed.",
+      "zhHans": "6 月 12 日针对 Anthropic 的出口管制指令使其暂停所有用户对两款模型的访问。该指令更广泛的法律效力仍有争议。"
     },
     "summary": {
-      "en": "On June 12, 2026, the US Commerce Department issued an export control directive ordering Anthropic to suspend all access to its most advanced AI models, Claude Fable 5 and Mythos 5, by any foreign national worldwide. Anthropic, citing inability to differentiate between US and foreign users, disabled the models for all users. The action — just three days after Fable 5's public launch — marks the first time the US government has used export control authorities to ban an AI model, classifying it as a national security concern. The Five Eyes cybersecurity alliance subsequently issued a joint statement warning that AI models capable of devastating cyberattacks are months away.",
-      "zhHans": "2026年6月12日，美国商务部发布出口管制指令，要求 Anthropic 暂停其最先进 AI 模型 Claude Fable 5 和 Mythos 5 对任何外国国民的访问。Anthropic 表示无法区分美国用户和外国用户，因此将这两个模型对所有用户禁用。此举——距 Fable 5 公开发布仅三天——标志着美国政府首次动用出口管制权力封禁一个 AI 模型，将其定性为国家安全问题。五眼联盟随后发表联合声明，警告能够发动毁灭性网络攻击的 AI 模型距离现实仅剩数月。"
+      "en": "On June 12, 2026, Anthropic said it received a US Commerce Department directive requiring restrictions on foreign nationals’ access to Claude Fable 5 and Mythos 5. Unable to verify users’ nationality in real time, Anthropic suspended access for all users. The company reported receiving the directive at 5:21 p.m. ET; this was not a timestamp for the completion of the shutdown. Later legal analysis described a company-specific licensing letter and disputed the legal basis for treating remote model access as an export. No reviewed source establishes that this action caused Z.ai to release GLM-5.2 weights.",
+      "zhHans": "2026 年 6 月 12 日，Anthropic 表示收到美国商务部指令，要求限制外国国民访问 Claude Fable 5 与 Mythos 5。由于无法实时核验用户国籍，Anthropic 暂停了所有用户的访问。公司称美东时间下午 5:21 收到指令；这不是停用完成的时间戳。后续法律分析将该指令描述为针对特定公司的许可要求函，并对将远程模型访问视为出口的法律依据提出质疑。已核阅来源不能证明该措施促使 Z.ai 发布 GLM-5.2 权重。"
     },
     "narrative": {
-      "en": "Anthropic revealed its Mythos-class models in April 2026 with a 'Preview' release restricted to partner institutions, citing exceptional cybersecurity capabilities. On June 9, 2026, the company publicly launched Claude Fable 5 (a safety-aligned version) and Mythos 5 (the full capability model) via Project Glasswing. Three days later, on June 12, the US Commerce Department's Bureau of Industry and Security issued a legally binding directive ordering Anthropic to suspend access by any foreign national. The order cited national security authorities and treated the models as a 'munition' under export control law. Anthropic complied at 5:21 p.m. ET, disabling both models globally. The incident triggered a Five Eyes joint statement and sparked intense debate about AI export controls, open-source alternatives, and the balance between innovation and security.",
-      "zhHans": "Anthropic 于2026年4月以'预览版'形式透露了其 Mythos 级模型，仅限合作机构访问，原因是对其异常强大的网络安全能力有所顾虑。2026年6月9日，该公司通过 Project Glasswing 公开推出了 Claude Fable 5（安全对齐版本）和 Mythos 5（完整能力版本）。三天后的6月12日，美国商务部工业与安全局发布具有法律约束力的指令，要求 Anthropic 暂停任何外国国民的访问权限。该指令引用国家安全权力，将这两个模型视为出口管制法下的'军需品'。Anthropic 于美国东部时间下午5:21执行了指令，全球范围内禁用了这两个模型。此事引发五眼联盟联合声明，并就 AI 出口管制、开源替代方案以及创新与安全的平衡展开了激烈辩论。"
+      "en": "Anthropic launched Fable 5 for broader access and Mythos 5 for selected partners on June 9. On June 12 it stated that it had received a Commerce Department export-control directive at 5:21 p.m. ET, and that it was removing access to both models for all users because it could not reliably distinguish foreign nationals in real time. Its later account says access had been suspended. The Department’s letter itself is not in this evidence packet. Mayer Brown described the June 12 action as a company-specific “is informed” licensing letter under the Export Administration Regulations. Legal commentary questioned whether remotely querying a hosted model amounts to exporting the model; no generally applicable restriction on other developers was established in the material reviewed. Fable 5 first-party access was reported restored on July 1. The GLM-5.2 weight repository has a June 16 file snapshot, but proximity alone cannot establish that the directive caused that release.",
+      "zhHans": "Anthropic 于 6 月 9 日向较广泛用户推出 Fable 5，并向选定合作方提供 Mythos 5。6 月 12 日，公司称于美东时间下午 5:21 收到商务部出口管制指令；由于无法可靠地实时区分外国国民，正向所有用户移除两款模型的访问权限。其后续说明称访问已暂停。本证据包没有指令原件。Mayer Brown 将 6 月 12 日的措施描述为依《出口管理条例》发出的、针对特定公司的“知会”许可要求函。法律评论质疑远程调用托管模型是否构成模型出口；所查材料未证明该措施对其他开发商确立了普遍适用的限制。据公司后续公告，Fable 5 第一方访问于 7 月 1 日恢复。GLM-5.2 权重仓库有 6 月 16 日的文件快照，但时间接近不能证明这项指令促成了其发布。"
     },
     "categories": [
-      "governance",
-      "safety"
+      "governance"
     ],
-    "significance": 2,
-    "impactIndex": 5,
+    "significance": 1,
+    "impactIndex": 3,
     "controversy": true,
     "consensusLevel": "debated",
     "claims": [
       {
-        "claimType": "fact",
-        "text": {
-          "en": "US Commerce Department issued a legally binding export control directive to Anthropic on June 12, 2026, ordering suspension of Fable 5 and Mythos 5 access by foreign nationals.",
-          "zhHans": "美国商务部于2026年6月12日向 Anthropic 发布具有法律约束力的出口管制指令，要求暂停外国国民对 Fable 5 和 Mythos 5 的访问。"
-        },
-        "sourceIds": [
-          "anthropic-fable-suspension-2026",
-          "forbes-fable-ban-2026"
-        ],
         "id": "claude-fable-ban-2026-claim-1",
-        "evidenceGrade": "B"
-      },
-      {
         "claimType": "fact",
         "text": {
-          "en": "Anthropic disabled both models for all users at 5:21 p.m. ET on June 12, citing inability to differentiate US vs foreign users.",
-          "zhHans": "Anthropic 于美国东部时间6月12日下午5:21对所有用户禁用了这两个模型，理由是无法区分美国用户和外国用户。"
+          "en": "Anthropic said it received a Commerce Department export-control directive on June 12 requiring restricted foreign-national access to Fable 5 and Mythos 5.",
+          "zhHans": "Anthropic 称 6 月 12 日收到商务部出口管制指令，要求限制外国国民访问 Fable 5 和 Mythos 5。"
         },
         "sourceIds": [
           "anthropic-fable-suspension-2026",
-          "fortune-fable-ban-2026"
+          "fable-v24-mayer-20261019"
         ],
-        "id": "claude-fable-ban-2026-claim-2",
         "evidenceGrade": "B"
       },
       {
+        "id": "claude-fable-ban-2026-claim-2",
+        "claimType": "fact",
+        "text": {
+          "en": "Anthropic reported receiving the directive at 5:21 p.m. ET; it subsequently suspended access to both models for all users because it could not verify nationality in real time. The exact time suspension finished is not established.",
+          "zhHans": "Anthropic 称于美东时间下午 5:21 收到指令；因无法实时核验国籍，随后暂停所有用户访问两款模型。停用完成的确切时间尚未证实。"
+        },
+        "sourceIds": [
+          "anthropic-fable-suspension-2026",
+          "fable-v24-anthropic-redeploy-20261019"
+        ],
+        "evidenceGrade": "B"
+      },
+      {
+        "id": "claude-fable-ban-2026-claim-3",
         "claimType": "limitation",
         "text": {
-          "en": "Critics argued the ban was overbroad and counterproductive: by restricting access to US companies' models, it accelerated the shift toward open-source alternatives (like GLM-5.2) that have no restrictions at all.",
-          "zhHans": "批评者认为禁令范围过宽且适得其反：限制美国公司模型的可及性，反而加速了向完全无限制的开源替代方案（如 GLM-5.2）的转变。"
+          "en": "The licensing letter was directed at Anthropic; legal commentary disputes whether hosted-model access qualifies as an export and does not establish a general restriction on other developers.",
+          "zhHans": "许可要求函针对 Anthropic；法律评论质疑托管模型访问是否构成出口，且未证实该措施普遍约束其他开发商。"
         },
         "sourceIds": [
-          "cnbc-fable-shutdown-2026"
+          "fable-v24-mayer-20261019",
+          "fable-v24-harvard-20261019"
         ],
-        "id": "claude-fable-ban-2026-claim-3",
-        "evidenceGrade": "C"
-      },
-      {
-        "claimType": "interpretation",
-        "text": {
-          "en": "Security researchers noted that treating advanced AI models as 'munitions' under export control law is a historic turning point, comparable to the regulation of cryptography in the 1990s.",
-          "zhHans": "安全研究人员指出，将先进 AI 模型视为出口管制法下的'军需品'是一个历史性转折点，堪比1990年代对密码学的监管。"
-        },
-        "sourceIds": [
-          "guardian-five-eyes-fable-2026",
-          "forbes-fable-ban-2026"
-        ],
-        "id": "claude-fable-ban-2026-claim-4",
         "evidenceGrade": "B"
       },
       {
         "id": "claude-fable-ban-2026-impact-claim",
-        "text": {
-          "en": "First-ever US export ban on a general-purpose AI model, establishing a precedent for treating frontier AI as a national security asset akin to munitions.",
-          "zhHans": "美国首次对通用 AI 模型实施出口禁令，为将前沿 AI 视为类似军需品的国家安全资产开创了先例。"
-        },
         "claimType": "impact",
-        "evidenceGrade": "A",
+        "text": {
+          "en": "Anthropic suspended access to Fable 5 and Mythos 5 for its users after the June 12 directive; its July 1 update confirmed first-party access to Fable 5 had been restored. This records a service-access interruption, not a lasting industry-wide precedent.",
+          "zhHans": "6 月 12 日指令后，Anthropic 暂停用户访问 Fable 5 和 Mythos 5；其 7 月 1 日更新确认 Fable 5 第一方访问已恢复。这记录的是服务访问中断，而非已经确立的长期行业先例。"
+        },
         "sourceIds": [
-          "anthropic-fable-suspension-2026",
-          "forbes-fable-ban-2026",
-          "fortune-fable-ban-2026"
+          "fable-v24-anthropic-redeploy-20261019",
+          "fable-v24-harvard-20261019"
         ],
-        "notes": "Migrated from the first structured impact in the v2.3 contract update."
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
@@ -6042,136 +6027,62 @@
     "sources": [
       {
         "sourceId": "anthropic-fable-suspension-2026",
-        "relevance": "Official statement on the export control directive",
+        "relevance": "Targeted 2026-10-19 correction of documented access/restriction, legal scope or observed first-party restoration",
         "supports": [
           "claude-fable-ban-2026-claim-1",
-          "claude-fable-ban-2026-claim-2",
-          "claude-fable-ban-2026-impact-claim",
-          "claude-fable-ban-2026"
+          "claude-fable-ban-2026-claim-2"
         ]
       },
       {
-        "sourceId": "anthropic-fable-mythos-5-announce-2026",
-        "relevance": "Original launch announcement of Fable 5 and Mythos 5",
-        "supports": [
-          "claude-fable-ban-2026"
-        ]
-      },
-      {
-        "sourceId": "forbes-fable-ban-2026",
-        "relevance": "Detailed timeline and analysis of the ban",
-        "supports": [
-          "claude-fable-ban-2026-claim-1",
-          "claude-fable-ban-2026-claim-4",
-          "claude-fable-ban-2026-impact-claim",
-          "claude-fable-ban-2026"
-        ]
-      },
-      {
-        "sourceId": "guardian-five-eyes-fable-2026",
-        "relevance": "Five Eyes joint statement on AI cyberattack capabilities",
-        "supports": [
-          "claude-fable-ban-2026-claim-4",
-          "claude-fable-ban-2026"
-        ]
-      },
-      {
-        "sourceId": "fortune-fable-ban-2026",
-        "relevance": "Export ban coverage",
+        "sourceId": "fable-v24-anthropic-redeploy-20261019",
+        "relevance": "Targeted 2026-10-19 correction of documented access/restriction, legal scope or observed first-party restoration",
         "supports": [
           "claude-fable-ban-2026-claim-2",
-          "claude-fable-ban-2026-impact-claim",
-          "claude-fable-ban-2026"
+          "claude-fable-ban-2026-impact-claim"
         ]
       },
       {
-        "sourceId": "cnbc-fable-shutdown-2026",
-        "relevance": "Impact on open-source AI development",
+        "sourceId": "fable-v24-harvard-20261019",
+        "relevance": "Targeted 2026-10-19 correction of documented access/restriction, legal scope or observed first-party restoration",
         "supports": [
           "claude-fable-ban-2026-claim-3",
-          "claude-fable-ban-2026"
+          "claude-fable-ban-2026-impact-claim"
         ]
       },
       {
-        "sourceId": "guardian-fable-safe-version-2026",
-        "relevance": "Context on Fable as safety-aligned version of Mythos",
+        "sourceId": "fable-v24-mayer-20261019",
+        "relevance": "Targeted 2026-10-19 correction of documented access/restriction, legal scope or observed first-party restoration",
         "supports": [
-          "claude-fable-ban-2026"
-        ]
-      },
-      {
-        "sourceId": "wikipedia-claude-mythos-2026",
-        "relevance": "Comprehensive reference on Claude Mythos lineage",
-        "supports": [
-          "claude-fable-ban-2026"
+          "claude-fable-ban-2026-claim-1",
+          "claude-fable-ban-2026-claim-3"
         ]
       }
     ],
     "impacts": [
       {
-        "dimension": "paradigm_shift",
-        "direction": "negative",
-        "severity": -3,
-        "description": {
-          "en": "First-ever US export ban on a general-purpose AI model, establishing a precedent for treating frontier AI as a national security asset akin to munitions.",
-          "zhHans": "美国首次对通用 AI 模型实施出口禁令，为将前沿 AI 视为类似军需品的国家安全资产开创了先例。"
-        },
-        "timeframe": "long",
-        "affectedGroups": [
-          "AI companies",
-          "governments",
-          "researchers"
-        ],
-        "evidenceGrade": "A",
-        "sourceIds": [
-          "anthropic-fable-suspension-2026",
-          "forbes-fable-ban-2026",
-          "fortune-fable-ban-2026"
-        ]
-      },
-      {
-        "dimension": "paradigm_shift",
+        "dimension": "access_democratization",
         "direction": "negative",
         "severity": -2,
         "description": {
-          "en": "The ban reshaped the global AI landscape: US export controls pushed Chinese companies to accelerate open-source development (GLM-5.2 released days later under MIT license as direct response).",
-          "zhHans": "禁令重塑了全球 AI 格局：美国的出口管制促使中国公司加速开源开发（GLM-5.2 数天后以 MIT 许可发布，作为直接回应）。"
+          "en": "Anthropic suspended access to Fable 5 and Mythos 5 for its users after the June 12 directive; its July 1 update confirmed first-party access to Fable 5 had been restored. This records a service-access interruption, not a lasting industry-wide precedent.",
+          "zhHans": "6 月 12 日指令后，Anthropic 暂停用户访问 Fable 5 和 Mythos 5；其 7 月 1 日更新确认 Fable 5 第一方访问已恢复。这记录的是服务访问中断，而非已经确立的长期行业先例。"
         },
-        "timeframe": "medium",
         "affectedGroups": [
-          "global AI industry",
-          "open-source community"
+          "developers",
+          "businesses"
         ],
+        "timeframe": "immediate",
         "evidenceGrade": "B",
         "sourceIds": [
-          "cnbc-fable-shutdown-2026",
-          "pandaily-glm52-2026"
-        ]
-      },
-      {
-        "dimension": "risk_creation",
-        "direction": "negative",
-        "severity": -2,
-        "description": {
-          "en": "Five Eyes joint statement warned that AI models capable of devastating cyberattacks on governments and businesses are months away, elevating AI risk discourse to national security level.",
-          "zhHans": "五眼联盟联合声明警告，能够对政府和企业发动毁灭性网络攻击的 AI 模型距离现实仅剩数月，将 AI 风险讨论提升到国家安全层面。"
-        },
-        "timeframe": "short",
-        "affectedGroups": [
-          "governments",
-          "critical infrastructure",
-          "general public"
-        ],
-        "evidenceGrade": "C",
-        "sourceIds": [
-          "guardian-five-eyes-fable-2026"
+          "fable-v24-anthropic-redeploy-20261019",
+          "fable-v24-harvard-20261019"
         ]
       }
     ],
     "editorial": {
       "createdAt": "2026-06-26",
-      "updatedAt": "2026-07-20",
-      "curator": "gang",
+      "updatedAt": "2026-10-19",
+      "curator": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
       "changeLog": [
         {
           "date": "2026-06-26",
@@ -6187,12 +6098,19 @@
           "date": "2026-07-20",
           "changeType": "correction",
           "summary": "Added or normalized explicit SourceRef.supports mappings for 8 source reference(s)."
+        },
+        {
+          "date": "2026-10-19",
+          "changeType": "correction",
+          "summary": "Targeted bilingual correction: bound company-specific directive/lift, precise receipt and first-party restoration dates; remove GLM causation/24h and unobserved long-term impacts. Reassessed L2 governance route against October 19 legal evidence; no human approval."
         }
       ],
-      "reviewedAt": "2026-06-30",
-      "reviewer": "gang",
+      "reviewedAt": "2026-10-19",
+      "reviewer": "gemini-3.8-flash-high:01a15471-505c-7036-85ed-5f1213ee03ad",
       "publishedAt": "2026-06-30",
-      "reviewProvenance": "legacy_pre_v23"
+      "reviewProvenance": "v2.4",
+      "lastSourceCheckAt": "2026-10-19",
+      "reviewRecord": "governance/reviews/fable-correction-20261019/claude-fable-ban-2026.json"
     },
     "slug": "claude-fable-ban-2026",
     "status": "published"
@@ -6202,219 +6120,137 @@
     "date": "2026-06-30",
     "datePrecision": "day",
     "title": {
-      "en": "US Lifts Export Ban on Anthropic's Fable 5 and Mythos 5 After 18 Days",
-      "zhHans": "美国解除对 Anthropic Fable 5 和 Mythos 5 的出口禁令，历时 18 天"
+      "en": "US lifts Fable 5 and Mythos 5 export restrictions; Fable first-party access resumes July 1",
+      "zhHans": "美国解除 Fable 5 与 Mythos 5 出口限制；Fable 第一方访问于 7 月 1 日恢复"
     },
     "searchSummary": {
-      "en": "The US government lifted export controls on Anthropic’s Fable 5 and Mythos 5 on June 30, 2026, ending an 18-day global access ban. The first reversal of an AI export control order.",
-      "zhHans": "美国政府于2026年6月30日解除对 Anthropic Fable 5 和 Mythos 5 的出口管制，结束了为期18天的全球访问禁令。这是首次逆转对 AI 模型的出口管制令。"
+      "en": "Restrictions on Anthropic’s two models were lifted June 30, 2026. The July 1 update confirms Fable 5 first-party access; Mythos 5 remained limited to a set of approved US organizations.",
+      "zhHans": "针对 Anthropic 两款模型的限制于 2026 年 6 月 30 日解除。7 月 1 日更新确认 Fable 5 第一方访问恢复；Mythos 5 仍限于一组获批的美国机构。"
     },
     "summary": {
-      "en": "On June 30, 2026, the US Department of Commerce lifted export controls on Anthropic's Claude Fable 5 and Mythos 5 models, ending an 18-day global access ban that had begun on June 12. Anthropic announced that Fable 5 would return to global users on the Claude platform starting July 1, with a phased rollout including up to 50% of weekly usage limits through July 7. The reversal followed behind-the-scenes negotiations between Anthropic and the Trump administration. Critics noted that the ban had already accelerated the shift toward open-source AI alternatives, with Chinese lab Z.ai releasing GLM-5.2 under MIT license within 24 hours of the original ban.",
-      "zhHans": "2026年6月30日，美国商务部解除了对 Anthropic 的 Claude Fable 5 和 Mythos 5 模型的出口管制，结束了始于6月12日、为期18天的全球访问禁令。Anthropic 宣布 Fable 5 将于7月1日起在 Claude 平台上恢复对全球用户的访问，采取分阶段推出方式，至7月7日前每周使用限额的50%可用。这一逆转发生在 Anthropic 与特朗普政府进行幕后谈判之后。批评者指出，该禁令已经加速了向开源 AI 替代方案的转变——中国实验室 Z.ai 在原始禁令发布后24小时内就发布了 MIT 许可的 GLM-5.2。"
+      "en": "On June 30, 2026, Anthropic announced that US export controls on Claude Fable 5 and Mythos 5 had been lifted, 18 days after the June 12 directive. Its July 1 update confirmed the return of Fable 5 access on first-party services and said Mythos 5 access had been restored for a set of US organizations following earlier approval. For specified Fable plans, up to 50% of weekly usage limits applied through July 7. Anthropic said it would re-enable third-party cloud access as quickly as possible; that notice did not confirm completion.",
+      "zhHans": "2026 年 6 月 30 日，Anthropic 宣布美国解除针对 Claude Fable 5 与 Mythos 5 的出口管制，距 6 月 12 日的指令为 18 天。公司于 7 月 1 日更新确认 Fable 5 在第一方服务恢复访问，并称在此前获批后，Mythos 5 已向一组美国机构恢复访问。对于指定的 Fable 套餐，至 7 月 7 日最多占每周使用限额的 50%。Anthropic 表示将尽快恢复第三方云平台访问；该公告并未确认这一步已完成。"
     },
     "narrative": {
-      "en": "On June 30, 2026, the US Department of Commerce lifted export controls on Anthropic's Claude Fable 5 and Mythos 5, ending the most dramatic standoff between an AI company and the US government to date. The export ban had been imposed on June 12, just three days after Fable 5's public launch, citing national security concerns under export control law. Anthropic had responded by disabling both models for all users worldwide. The 18-day ban triggered intense debate about AI export controls, with critics arguing it was overbroad and counterproductive. In a notable twist, the ban's removal was announced on the same day Anthropic launched Claude Sonnet 5 as its new default model. Anthropic confirmed a phased restoration: Fable 5 would return globally on July 1 on the Claude platform, with cloud platform availability following in phases. The model would count toward up to 50% of weekly usage limits through July 7 for Pro, Max, Team, and selected enterprise plans. The lifting of the ban was seen as a concession by the Trump administration amid pressure from the AI industry and enterprise customers who had lost access to Anthropic's most advanced models. However, WIRED reported that the lifting came with 'strings attached,' though the specific conditions were not disclosed. The rapid policy reversal — from ban to unban in 18 days — underscored the ad hoc nature of AI export control policymaking and raised questions about long-term regulatory stability.",
-      "zhHans": "2026年6月30日，美国商务部解除了对 Anthropic 的 Claude Fable 5 和 Mythos 5 的出口管制，结束了迄今为止 AI 公司与美国政府之间最戏剧性的对峙。出口禁令于6月12日实施，距 Fable 5 公开发布仅三天，引用出口管制法下的国家安全关切。Anthropic 的回应是对全球所有用户禁用这两个模型。长达18天的禁令引发了关于 AI 出口管制的激烈辩论，批评者认为禁令范围过宽且适得其反。一个值得关注的转折是：禁令解除的公告与 Anthropic 发布 Claude Sonnet 5 作为新默认模型发生在同一天。Anthropic 确认了分阶段恢复：Fable 5 将于7月1日在 Claude 平台上全球恢复，云平台可用性将分阶段跟进。至7月7日前，该模型将计入 Pro、Max、Team 和特定企业用户每周使用限额的50%。此次禁令解除被视为特朗普政府在 AI 行业和失去 Anthropic 最先进模型访问权的企业客户压力下做出的让步。然而，WIRED 报道称解除禁令带有'附加条件'，具体条件未被披露。从禁令到解禁仅18天的快速政策逆转，凸显了 AI 出口管制政策制定的临时性，并引发了对长期监管稳定性的质疑。"
+      "en": "Anthropic stated on June 30 that Commerce had lifted the export-control restrictions affecting Fable 5 and Mythos 5. The administrative change was distinct from service restoration. Anthropic’s July 1 update confirmed Fable 5 first-party access, initially under phased limits; it separately described Mythos 5 access restored to a set of approved US organizations after June 26 government approval, not a general global Mythos launch. For Pro, Max, Team and select Enterprise Fable plans, up to 50% of weekly usage limits applied through July 7. AWS, Google Cloud and Microsoft Foundry access was to be re-enabled as quickly as possible; the update did not establish when that work finished. The first-party restoration was observable, but this single reversal does not prove lasting changes in general export rules, customer trust, or production migration.",
+      "zhHans": "Anthropic 于 6 月 30 日表示，商务部已解除影响 Fable 5 和 Mythos 5 的出口管制。行政限制解除与服务恢复是两回事。公司于 7 月 1 日更新确认 Fable 5 在第一方服务分阶段恢复；它另行说明，Mythos 5 在政府 6 月 26 日批准后，已向一组获批美国机构恢复访问，而非面向全球普遍推出。对于 Pro、Max、Team 和指定企业 Fable 套餐，至 7 月 7 日最多占每周使用限额的 50%。AWS、Google Cloud 与 Microsoft Foundry 访问将尽快恢复；该更新未证明相关工作何时完成。第一方访问恢复是已观察到的变化，但这一次逆转不能证明普遍出口规则、客户信任或生产工作负载迁移已发生持久变化。"
     },
     "categories": [
-      "governance",
-      "commerce"
+      "governance"
     ],
-    "significance": 2,
-    "impactIndex": 5,
-    "controversy": true,
-    "consensusLevel": "debated",
+    "significance": 1,
+    "impactIndex": 3,
+    "controversy": false,
+    "consensusLevel": "emerging",
     "claims": [
       {
-        "claimType": "fact",
-        "text": {
-          "en": "The Department of Commerce lifted export controls on Fable 5 and Mythos 5 on June 30, 2026, ending an 18-day ban.",
-          "zhHans": "美国商务部于2026年6月30日解除了对 Fable 5 和 Mythos 5 的出口管制，结束了为期18天的禁令。"
-        },
-        "sourceIds": [
-          "cnbc-fable-ban-lift-2026",
-          "axios-fable-ban-lift-2026",
-          "forbes-fable-ban-lift-2026"
-        ],
         "id": "claude-fable-ban-lift-2026-claim-1",
-        "evidenceGrade": "B"
-      },
-      {
         "claimType": "fact",
         "text": {
-          "en": "Fable 5 access was restored globally on July 1 with phased limits through July 7.",
-          "zhHans": "Fable 5 于7月1日恢复全球访问，至7月7日实行分阶段限额。"
+          "en": "Anthropic said Commerce lifted the Fable 5 and Mythos 5 export controls on June 30, 2026, 18 days after the June 12 directive.",
+          "zhHans": "Anthropic 称商务部于 2026 年 6 月 30 日解除针对 Fable 5 和 Mythos 5 的出口管制，距 6 月 12 日指令为 18 天。"
         },
         "sourceIds": [
-          "basic-tutorials-fable-5-returns-2026",
-          "cnbc-fable-ban-lift-2026"
+          "fable-v24-anthropic-redeploy-20261019",
+          "cnbc-fable-ban-lift-2026",
+          "axios-fable-ban-lift-2026"
         ],
-        "id": "claude-fable-ban-lift-2026-claim-2",
-        "evidenceGrade": "C"
-      },
-      {
-        "claimType": "interpretation",
-        "text": {
-          "en": "The rapid policy reversal (ban to unban in 18 days) revealed the ad hoc nature of AI export control policymaking and the government's lack of a coherent framework for regulating frontier AI models.",
-          "zhHans": "快速的政策逆转（18天内从禁令到解禁）揭示了 AI 出口管制政策制定的临时性，以及政府在监管前沿 AI 模型方面缺乏连贯框架。"
-        },
-        "sourceIds": [
-          "wired-fable-ban-lift-2026",
-          "cnn-fable-ban-lift-2026"
-        ],
-        "id": "claude-fable-ban-lift-2026-claim-3",
         "evidenceGrade": "B"
       },
       {
+        "id": "claude-fable-ban-lift-2026-claim-2",
+        "claimType": "fact",
+        "text": {
+          "en": "A July 1 update confirmed Fable 5 access on Anthropic’s first-party services under phased limits; it separately described Mythos 5 access for a set of government-approved US organizations, without confirming completed third-party cloud restoration.",
+          "zhHans": "Anthropic 于 7 月 1 日的更新确认 Fable 5 在第一方服务按阶段限额恢复；更新另行说明 Mythos 5 向一组经政府批准的美国机构恢复访问，但未确认第三方云平台已完成恢复。"
+        },
+        "sourceIds": [
+          "fable-v24-anthropic-redeploy-20261019"
+        ],
+        "evidenceGrade": "B"
+      },
+      {
+        "id": "claude-fable-ban-lift-2026-limitation",
         "claimType": "limitation",
         "text": {
-          "en": "Critics argued that even with the ban lifted, the uncertainty created by the 18-day disruption damaged enterprise trust in US AI platforms and accelerated customer evaluation of non-US alternatives.",
-          "zhHans": "批评者认为，即使禁令解除，18天的中断所带来的不确定性损害了企业对美国 AI 平台的信任，并加速了客户对非美国替代方案的评估。"
+          "en": "The June 30 lifting and July 1 first-party Fable restoration do not show long-term customer trust loss, a general legal precedent, or completed third-party cloud access. Legal analysis of the earlier June 12 directive is not a review of the lifting itself.",
+          "zhHans": "6 月 30 日的解除限制与 7 月 1 日的 Fable 第一方访问恢复，不能证明客户信任长期受损、已确立普遍法律先例，或第三方云平台已恢复。针对 6 月 12 日早前指令的法律分析，不能当作对解禁措施本身的审查。"
         },
         "sourceIds": [
-          "advisori-fable-5-enterprise-2026"
+          "fable-v24-anthropic-redeploy-20261019"
         ],
-        "id": "claude-fable-ban-lift-2026-claim-4",
-        "evidenceGrade": "C"
+        "evidenceGrade": "B"
       },
       {
         "id": "claude-fable-ban-lift-2026-impact-claim",
-        "text": {
-          "en": "First reversal of a US AI export ban establishes a pattern of regulatory volatility, creating uncertainty for enterprises building on US AI platforms and undermining the credibility of export controls as a policy tool.",
-          "zhHans": "美国首次逆转 AI 出口禁令，建立了监管波动的模式，给基于美国 AI 平台构建的企业带来了不确定性，并削弱了出口管制作为政策工具的可信度。"
-        },
         "claimType": "impact",
-        "evidenceGrade": "B",
+        "text": {
+          "en": "Anthropic’s July 1 update reports Fable 5 access restored to users of its first-party services after the June 12 suspension; it does not measure external cloud restoration or broader market effects.",
+          "zhHans": "Anthropic 的 7 月 1 日更新称，6 月 12 日停用后 Fable 5 在第一方服务恢复用户访问；这不衡量外部云平台的恢复或更广泛的市场影响。"
+        },
         "sourceIds": [
-          "cnbc-fable-ban-lift-2026",
-          "wired-fable-ban-lift-2026",
-          "forbes-fable-ban-lift-2026"
+          "fable-v24-anthropic-redeploy-20261019"
         ],
-        "notes": "Migrated from the first structured impact in the v2.3 contract update."
+        "evidenceGrade": "B"
       }
     ],
     "relatedEvents": [
       "claude-fable-ban-2026",
-      "glm-52-open-source-2026",
       "anthropic-dc-circuit-supply-risk-2026",
       "fable-5-kernelbench-2026",
       "gpt-5-6-limited-release-2026"
     ],
     "impacts": [
       {
-        "dimension": "paradigm_shift",
-        "direction": "negative",
-        "severity": -2,
-        "description": {
-          "en": "First reversal of a US AI export ban establishes a pattern of regulatory volatility, creating uncertainty for enterprises building on US AI platforms and undermining the credibility of export controls as a policy tool.",
-          "zhHans": "美国首次逆转 AI 出口禁令，建立了监管波动的模式，给基于美国 AI 平台构建的企业带来了不确定性，并削弱了出口管制作为政策工具的可信度。"
-        },
-        "timeframe": "long",
-        "affectedGroups": [
-          "AI companies",
-          "enterprise customers",
-          "governments"
-        ],
-        "evidenceGrade": "B",
-        "sourceIds": [
-          "cnbc-fable-ban-lift-2026",
-          "wired-fable-ban-lift-2026",
-          "forbes-fable-ban-lift-2026"
-        ]
-      },
-      {
-        "dimension": "economic_disruption",
+        "dimension": "access_democratization",
         "direction": "positive",
-        "severity": 1,
+        "severity": 2,
         "description": {
-          "en": "Ban lift restored access for enterprise customers and developers who depend on Fable 5 and Mythos 5 for production workloads.",
-          "zhHans": "禁令解除恢复了依赖 Fable 5 和 Mythos 5 进行生产工作的企业客户和开发者的访问权。"
+          "en": "Anthropic’s July 1 update reports Fable 5 access restored to users of its first-party services after the June 12 suspension; it does not measure external cloud restoration or broader market effects.",
+          "zhHans": "Anthropic 的 7 月 1 日更新称，6 月 12 日停用后 Fable 5 在第一方服务恢复用户访问；这不衡量外部云平台的恢复或更广泛的市场影响。"
         },
-        "timeframe": "immediate",
         "affectedGroups": [
-          "enterprise customers",
           "developers",
-          "Anthropic"
+          "businesses"
         ],
+        "timeframe": "immediate",
         "evidenceGrade": "B",
         "sourceIds": [
-          "businessinsider-fable-lift-2026",
-          "axios-fable-ban-lift-2026"
+          "fable-v24-anthropic-redeploy-20261019"
         ]
       }
     ],
-    "direction": "mixed",
+    "direction": "positive",
     "sources": [
       {
+        "sourceId": "axios-fable-ban-lift-2026",
+        "relevance": "Targeted 2026-10-19 correction of documented access/restriction, legal scope or observed first-party restoration",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-1"
+        ]
+      },
+      {
         "sourceId": "cnbc-fable-ban-lift-2026",
-        "relevance": "CNBC: Anthropic says Trump admin lifted export controls on Fable 5 and Mythos 5",
+        "relevance": "Targeted 2026-10-19 correction of documented access/restriction, legal scope or observed first-party restoration",
+        "supports": [
+          "claude-fable-ban-lift-2026-claim-1"
+        ]
+      },
+      {
+        "sourceId": "fable-v24-anthropic-redeploy-20261019",
+        "relevance": "Targeted 2026-10-19 correction of documented access/restriction, legal scope or observed first-party restoration",
         "supports": [
           "claude-fable-ban-lift-2026-claim-1",
           "claude-fable-ban-lift-2026-claim-2",
-          "claude-fable-ban-lift-2026-impact-claim",
-          "claude-fable-ban-lift-2026"
-        ]
-      },
-      {
-        "sourceId": "axios-fable-ban-lift-2026",
-        "relevance": "Axios: Trump administration lifts restrictions on Anthropic's Fable 5",
-        "supports": [
-          "claude-fable-ban-lift-2026-claim-1",
-          "claude-fable-ban-lift-2026"
-        ]
-      },
-      {
-        "sourceId": "forbes-fable-ban-lift-2026",
-        "relevance": "Forbes: US lifts restrictions on Anthropic's Mythos 5 and Fable 5 AI models",
-        "supports": [
-          "claude-fable-ban-lift-2026-claim-1",
-          "claude-fable-ban-lift-2026-impact-claim",
-          "claude-fable-ban-lift-2026"
-        ]
-      },
-      {
-        "sourceId": "wired-fable-ban-lift-2026",
-        "relevance": "WIRED: Trump admin lifts export controls with strings attached",
-        "supports": [
-          "claude-fable-ban-lift-2026-claim-3",
-          "claude-fable-ban-lift-2026-impact-claim",
-          "claude-fable-ban-lift-2026"
-        ]
-      },
-      {
-        "sourceId": "cnn-fable-ban-lift-2026",
-        "relevance": "CNN: White House lifts export control on Anthropic that froze its most advanced models",
-        "supports": [
-          "claude-fable-ban-lift-2026-claim-3"
-        ]
-      },
-      {
-        "sourceId": "businessinsider-fable-lift-2026",
-        "relevance": "Business Insider: Anthropic restores access to Fable 5 after negotiations with White House",
-        "supports": [
-          "claude-fable-ban-lift-2026"
-        ]
-      },
-      {
-        "sourceId": "basic-tutorials-fable-5-returns-2026",
-        "relevance": "Phased rollout details for Fable 5 global return",
-        "supports": [
-          "claude-fable-ban-lift-2026-claim-2"
-        ]
-      },
-      {
-        "sourceId": "advisori-fable-5-enterprise-2026",
-        "relevance": "Enterprise impact analysis of the ban lift",
-        "supports": [
-          "claude-fable-ban-lift-2026-claim-4"
+          "claude-fable-ban-lift-2026-limitation",
+          "claude-fable-ban-lift-2026-impact-claim"
         ]
       }
     ],
     "editorial": {
       "createdAt": "2026-07-08",
-      "updatedAt": "2026-07-20",
-      "curator": "gang",
+      "updatedAt": "2026-10-19",
+      "curator": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
       "changeLog": [
         {
           "date": "2026-07-08",
@@ -6430,12 +6266,19 @@
           "date": "2026-07-20",
           "changeType": "correction",
           "summary": "Added or normalized explicit SourceRef.supports mappings for 8 source reference(s)."
+        },
+        {
+          "date": "2026-10-19",
+          "changeType": "correction",
+          "summary": "Targeted bilingual correction: bound company-specific directive/lift, precise receipt and first-party restoration dates; remove GLM causation/24h and unobserved long-term impacts. Reassessed L2 governance route against October 19 legal evidence; no human approval."
         }
       ],
-      "reviewedAt": "2026-07-08",
-      "reviewer": "gang",
+      "reviewedAt": "2026-10-19",
+      "reviewer": "gemini-3.8-flash-high:01a15471-505c-7036-85ed-5f1213ee03ad",
       "publishedAt": "2026-07-08",
-      "reviewProvenance": "legacy_pre_v23"
+      "reviewProvenance": "v2.4",
+      "lastSourceCheckAt": "2026-10-19",
+      "reviewRecord": "governance/reviews/fable-correction-20261019/claude-fable-ban-lift-2026.json"
     },
     "slug": "claude-fable-ban-lift-2026",
     "status": "published"
@@ -12934,195 +12777,111 @@
   },
   {
     "id": "glm-52-open-source-2026",
-    "date": "2026-06-13",
+    "date": "2026-06-16",
     "datePrecision": "day",
     "title": {
-      "en": "GLM-5.2 Open Source: Chinese AI Model Matches Frontier Closed-Source Performance",
-      "zhHans": "GLM-5.2 开源发布：中国 AI 模型追上闭源前沿水平"
+      "en": "Z.ai makes GLM-5.2 weights available under MIT license",
+      "zhHans": "Z.ai 以 MIT 许可开放 GLM-5.2 模型权重"
     },
     "searchSummary": {
-      "en": "GLM-5.2 open-sourced in 2026 — a Chinese AI model that caught up to proprietary frontier levels. How China’s open-source AI ecosystem reached parity with Western labs.",
-      "zhHans": "GLM-5.2 于 2026 年开源发布——中国 AI 模型追上了闭源前沿水平。中国的开源 AI 生态如何达到与西方实验室同等的水平。"
+      "en": "GLM-5.2 model weights appeared on Hugging Face in June 2026 under MIT terms; availability does not establish independently verified performance parity or production adoption.",
+      "zhHans": "GLM-5.2 模型权重于 2026 年 6 月以 MIT 许可在 Hugging Face 上提供；权重可用不等于性能追平已经独立核实，也不等于生产环境广泛采用。"
     },
     "summary": {
-      "en": "On June 13, 2026, Z.ai (formerly Zhipu AI) open-sourced GLM-5.2, a 744-billion-parameter Mixture-of-Experts model under the MIT license with a 1-million-token context window. The model achieved frontier-level coding and agentic performance — competitive with GPT-5.5 at roughly one-sixth the inference cost — marking a milestone where open-source AI meaningfully caught up to proprietary frontier models. The release was widely seen as a direct response to the US export ban on Anthropic's Fable 5, demonstrating that restrictive policies accelerate, rather than prevent, global AI capability diffusion.",
-      "zhHans": "2026年6月13日，Z.ai（原智谱 AI）以 MIT 许可协议开源了 GLM-5.2，一个 7440 亿参数的混合专家模型，拥有 100 万 token 的上下文窗口。该模型在前沿编码和智能体任务上达到了可与 GPT-5.5 竞争的水平，推理成本仅为其六分之一——标志着开源 AI 在实质上追赶上了闭源前沿模型。此次发布被广泛视为对美国封禁 Anthropic Fable 5 的直接回应，表明限制性政策加速而非阻止了全球 AI 能力的扩散。"
+      "en": "Z.ai’s GLM-5.2 was introduced in June 2026. Its current Hugging Face repository shows a June 16 creation time and makes model weights available under MIT terms. Contemporary independent analysis distinguishes an earlier rollout from the June 16 publication of the weights. The company reports benchmark and cost comparisons, but the retained materials do not establish generalized independent parity with closed frontier models, production adoption, or that the Fable 5 export directive caused this release.",
+      "zhHans": "Z.ai 于 2026 年 6 月推出 GLM-5.2。其现存 Hugging Face 仓库记录显示创建于 6 月 16 日，并依据 MIT 条款提供模型权重。同期独立分析区分了此前的初始推出和 6 月 16 日的权重公开。厂商披露了基准测试及成本比较，但现有材料不足以证明该模型已在整体性能上经独立核实追平专有前沿模型、已被生产环境广泛采用，或 Fable 5 出口指令促成了这次发布。"
     },
     "narrative": {
-      "en": "Z.ai (formerly Zhipu AI), a Beijing-based AI company, released GLM-5.2 under the MIT open-source license on June 13, 2026. The 744B-parameter MoE model featured a 1-million-token context window, IndexShare architecture innovations, and strong performance on coding benchmarks (FrontierSWE, PostTrainBench) where it matched or exceeded GPT-5.5 in long-horizon agentic tasks at significantly lower cost. The release was intentionally timed days after the US government's export ban on Anthropic's Fable 5, with Z.ai explicitly framing it as an example of how open development can fill gaps created by restrictive policies. The model was made available on Hugging Face under MIT license with no usage restrictions, making it one of the most capable freely-available AI models in the world.",
-      "zhHans": "Z.ai（原智谱 AI），一家总部位于北京的 AI 公司，于2026年6月13日以 MIT 开源许可发布了 GLM-5.2。这个 7440 亿参数的 MoE 模型拥有 100 万 token 上下文窗口、IndexShare 架构创新，在编程基准测试（FrontierSWE、PostTrainBench）上表现强劲，在长周期智能体任务中与 GPT-5.5 相当或更优，而成本显著更低。发布时机有意选在美国政府对 Anthropic Fable 5 实施出口禁令数天之后，Z.ai 明确将其定位为开放性开发如何填补限制性政策所造成空白的例证。该模型以 MIT 许可发布在 Hugging Face 上，无任何使用限制，成为全球最强大的免费可用 AI 模型之一。"
+      "en": "GLM-5.2 became available as downloadable weights from Z.ai. The Hugging Face model repository is recorded as created on June 16, 2026; an independent June 22 analysis distinguishes an initial rollout days earlier from the weight and accompanying blog release on June 16. The repository describes an MIT license and a one-million-token context window. Benchmarks on the model card are company-reported; this record does not convert selected task results into an independently verified general performance ranking or an observed industry-wide effect. The nearby US directive concerning Fable 5 is a separate event. Chronological proximity does not prove it caused Z.ai’s publication decision.",
+      "zhHans": "GLM-5.2 随后以可下载权重的形式由 Z.ai 提供。Hugging Face 模型仓库记录的创建时间为 2026 年 6 月 16 日；一篇 6 月 22 日的独立分析区分了几天前的初始推出和 6 月 16 日的权重及配套文章发布。仓库介绍了 MIT 许可证和 100 万 token 上下文窗口。模型卡上的基准测试结果由厂商披露；本条记录不将选定任务的成绩等同于经独立验证的总体性能排名或已观察到的全行业影响。同期美国针对 Fable 5 的指令属于另一事件；时间接近不能证明该指令促成了 Z.ai 的发布决定。"
     },
     "categories": [
-      "capability"
+      "product"
     ],
-    "significance": 2,
-    "impactIndex": 7,
+    "significance": 1,
+    "impactIndex": 0,
     "controversy": false,
-    "consensusLevel": "broad",
+    "consensusLevel": "emerging",
     "claims": [
       {
+        "id": "glm-52-open-source-2026-claim-1",
         "claimType": "fact",
         "text": {
-          "en": "GLM-5.2 is a 744B-parameter Mixture-of-Experts model released under MIT license with 1M token context window on June 13, 2026.",
-          "zhHans": "GLM-5.2 是一个 7440 亿参数的混合专家模型，于2026年6月13日以 MIT 许可发布，拥有 100 万 token 上下文窗口。"
+          "en": "The GLM-5.2 Hugging Face repository was created on June 16, 2026 and offered weights under MIT terms; the earlier rollout was a different access stage.",
+          "zhHans": "GLM-5.2 的 Hugging Face 仓库创建于 2026 年 6 月 16 日，并以 MIT 条款提供权重；此前的初始推出属于不同的可用阶段。"
+        },
+        "sourceIds": [
+          "zai-glm52-release-2026",
+          "glm52-hf-api-20261017",
+          "glm52-hf-commits-20261017",
+          "glm52-hf-tree-20261017",
+          "interconnects-glm52-2026"
+        ],
+        "evidenceGrade": "B"
+      },
+      {
+        "id": "glm-52-open-source-2026-limitation",
+        "claimType": "limitation",
+        "text": {
+          "en": "Vendor-run benchmarks and temporal proximity to US export controls do not by themselves verify general model parity, broad deployment, or policy causation.",
+          "zhHans": "厂商自行披露的基准测试和与美国出口措施的时间接近，本身不足以证明总体性能追平、广泛部署或政策因果关系。"
         },
         "sourceIds": [
           "zai-glm52-release-2026",
           "interconnects-glm52-2026"
         ],
-        "id": "glm-52-open-source-2026-claim-1",
         "evidenceGrade": "B"
-      },
-      {
-        "claimType": "fact",
-        "text": {
-          "en": "The model achieved frontier-level performance on coding benchmarks (FrontierSWE, PostTrainBench) competitive with GPT-5.5 at roughly 1/6 the cost.",
-          "zhHans": "该模型在编码基准测试（FrontierSWE、PostTrainBench）上达到与 GPT-5.5 竞争的前沿水平，成本约为其六分之一。"
-        },
-        "sourceIds": [
-          "interconnects-glm52-2026",
-          "businessinsider-glm52-2026"
-        ],
-        "id": "glm-52-open-source-2026-claim-2",
-        "evidenceGrade": "B"
-      },
-      {
-        "claimType": "interpretation",
-        "text": {
-          "en": "Analysts viewed the release as a direct geopolitical response to the US Fable 5 ban, demonstrating that export controls on closed models accelerate open-source alternatives.",
-          "zhHans": "分析人士认为此次发布是对美国 Fable 5 禁令的直接地缘政治回应，表明对闭源模型的出口管制反而加速了开源替代方案的发展。"
-        },
-        "sourceIds": [
-          "pandaily-glm52-2026",
-          "cnbc-fable-shutdown-2026"
-        ],
-        "id": "glm-52-open-source-2026-claim-3",
-        "evidenceGrade": "B"
-      },
-      {
-        "id": "glm-52-open-source-2026-impact-claim",
-        "text": {
-          "en": "GLM-5.2 demonstrated that open-source models can match frontier closed-source performance (GPT-5.5) on coding and agentic tasks, at a fraction of the cost. A milestone in the open-source catch-up narrative.",
-          "zhHans": "GLM-5.2 证明开源模型可以在编码和智能体任务上匹配前沿闭源性能（GPT-5.5），而成本仅为其零头。这是开源追赶叙事中的一个里程碑。"
-        },
-        "claimType": "impact",
-        "evidenceGrade": "B",
-        "sourceIds": [
-          "interconnects-glm52-2026",
-          "businessinsider-glm52-2026"
-        ],
-        "notes": "Migrated from the first structured impact in the v2.3 contract update."
       }
     ],
     "relatedEvents": [
       "claude-fable-ban-2026",
-      "claude-fable-ban-lift-2026",
       "glm-5-3-coding-cyber-launch-2026",
       "kimi-k3-2026"
     ],
     "sources": [
       {
         "sourceId": "zai-glm52-release-2026",
-        "relevance": "Official model release on Hugging Face",
+        "relevance": "Official release and license",
         "supports": [
           "glm-52-open-source-2026-claim-1",
-          "glm-52-open-source-2026"
+          "glm-52-open-source-2026-limitation"
+        ]
+      },
+      {
+        "sourceId": "glm52-hf-api-20261017",
+        "relevance": "Primary repository timestamp and model file metadata",
+        "supports": [
+          "glm-52-open-source-2026-claim-1"
+        ]
+      },
+      {
+        "sourceId": "glm52-hf-commits-20261017",
+        "relevance": "Primary repository timestamp and model file metadata",
+        "supports": [
+          "glm-52-open-source-2026-claim-1"
+        ]
+      },
+      {
+        "sourceId": "glm52-hf-tree-20261017",
+        "relevance": "Primary repository timestamp and model file metadata",
+        "supports": [
+          "glm-52-open-source-2026-claim-1"
         ]
       },
       {
         "sourceId": "interconnects-glm52-2026",
-        "relevance": "Detailed capability analysis",
+        "relevance": "Independent June 22 chronology",
         "supports": [
           "glm-52-open-source-2026-claim-1",
-          "glm-52-open-source-2026-claim-2",
-          "glm-52-open-source-2026-impact-claim",
-          "glm-52-open-source-2026"
-        ]
-      },
-      {
-        "sourceId": "businessinsider-glm52-2026",
-        "relevance": "Mainstream coverage of significance",
-        "supports": [
-          "glm-52-open-source-2026-claim-2",
-          "glm-52-open-source-2026-impact-claim",
-          "glm-52-open-source-2026"
-        ]
-      },
-      {
-        "sourceId": "pandaily-glm52-2026",
-        "relevance": "Geopolitical context and timing analysis",
-        "supports": [
-          "glm-52-open-source-2026-claim-3",
-          "glm-52-open-source-2026"
+          "glm-52-open-source-2026-limitation"
         ]
       }
     ],
-    "impacts": [
-      {
-        "dimension": "capability_leap",
-        "direction": "positive",
-        "severity": 3,
-        "description": {
-          "en": "GLM-5.2 demonstrated that open-source models can match frontier closed-source performance (GPT-5.5) on coding and agentic tasks, at a fraction of the cost. A milestone in the open-source catch-up narrative.",
-          "zhHans": "GLM-5.2 证明开源模型可以在编码和智能体任务上匹配前沿闭源性能（GPT-5.5），而成本仅为其零头。这是开源追赶叙事中的一个里程碑。"
-        },
-        "timeframe": "medium",
-        "affectedGroups": [
-          "AI developers",
-          "startups",
-          "researchers"
-        ],
-        "evidenceGrade": "B",
-        "sourceIds": [
-          "interconnects-glm52-2026",
-          "businessinsider-glm52-2026"
-        ]
-      },
-      {
-        "dimension": "access_democratization",
-        "direction": "positive",
-        "severity": 2,
-        "description": {
-          "en": "MIT license and full weight release meant any organization worldwide could run, fine-tune, and deploy GLM-5.2 without restrictions, directly challenging the US export control regime.",
-          "zhHans": "MIT 许可和完整权重发布意味着全球任何组织都可以不受限制地运行、微调和部署 GLM-5.2，直接挑战了美国的出口管制体系。"
-        },
-        "timeframe": "long",
-        "affectedGroups": [
-          "global developers",
-          "non-US organizations",
-          "open-source community"
-        ],
-        "evidenceGrade": "A",
-        "sourceIds": [
-          "pandaily-glm52-2026",
-          "zai-glm52-release-2026"
-        ]
-      },
-      {
-        "dimension": "paradigm_shift",
-        "direction": "negative",
-        "severity": -2,
-        "description": {
-          "en": "The release directly challenged the effectiveness of US AI export controls, demonstrating that restrictive policies on closed models accelerate open-source alternatives rather than containing capability diffusion.",
-          "zhHans": "此次发布直接质疑了美国 AI 出口管制的有效性，表明对闭源模型的限制性政策反而加速了开源替代方案的发展，而非遏制了能力扩散。"
-        },
-        "timeframe": "medium",
-        "affectedGroups": [
-          "policymakers",
-          "AI companies",
-          "global AI ecosystem"
-        ],
-        "evidenceGrade": "B",
-        "sourceIds": [
-          "pandaily-glm52-2026",
-          "cnbc-fable-shutdown-2026"
-        ]
-      }
-    ],
+    "impacts": [],
     "editorial": {
       "createdAt": "2026-06-26",
-      "updatedAt": "2026-07-20",
-      "curator": "gang",
+      "updatedAt": "2026-10-17",
+      "curator": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
       "changeLog": [
         {
           "date": "2026-06-26",
@@ -13138,12 +12897,19 @@
           "date": "2026-07-20",
           "changeType": "correction",
           "summary": "Added or normalized explicit SourceRef.supports mappings for 4 source reference(s)."
+        },
+        {
+          "date": "2026-10-17",
+          "changeType": "correction",
+          "summary": "DRAFT ONLY: align weight availability with June 16 repository file history; retract unsupported parity, cost, policy causation and observed impact claims; reclassify as product/L1. Separate historical Source URL migration requires approval."
         }
       ],
-      "reviewedAt": "2026-06-30",
-      "reviewer": "gang",
+      "reviewedAt": "2026-10-17",
+      "reviewer": "gemini-3.8-flash-high:01a14869-b04a-73e2-8beb-85c7997f0a16",
       "publishedAt": "2026-06-30",
-      "reviewProvenance": "legacy_pre_v23"
+      "reviewProvenance": "v2.4",
+      "lastSourceCheckAt": "2026-10-17",
+      "reviewRecord": "governance/reviews/glm52-correction-20261017/glm-52-open-source-2026.json"
     },
     "slug": "glm-52-open-source-2026",
     "status": "published"

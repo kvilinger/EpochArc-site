@@ -1,0 +1,130 @@
+{
+  "policyVersion": "2.4",
+  "runId": "targeted-claude-fable-ban-2026-correction-20261019",
+  "kind": "targeted",
+  "windowStart": "2026-06-12",
+  "windowEnd": "2026-06-12",
+  "evidenceCutoff": "2026-10-19",
+  "timezone": "UTC",
+  "baselineCommit": "d558bde98416edf85cd95cb63905dea65d070010",
+  "operator": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "promptVersion": "fable-correction-20261019-v1",
+  "scopeReason": "Correct an existing published, legacy-L2 named-directive or lifting event and its observed access impact; not full June discovery or a general policy survey.",
+  "channels": [
+    {
+      "id": "web",
+      "status": "partial",
+      "coverageNote": "Selected direct company and legal analysis/report URLs reread on 2026-10-19, no systematic whole-window search.",
+      "reason": "Retrospective exact-event fact correction only; several historical paywalled articles failed Jina retrieval and were not treated as reviewed.",
+      "retryResult": "After failed URLs, selected accessible independent legal analysis and named company/press texts fetched; inaccessible originals remain blocked.",
+      "attempts": [
+        {
+          "query": "Targeted retrospective reading: anthropic-fable-suspension-2026; not an exhaustive June news query",
+          "executedAt": "2026-10-19T13:14:54.570364+00:00",
+          "artifact": "governance/evidence/fable-correction-20261019/anthropic-fable-suspension-2026.md",
+          "sha256": "29abb73d8fe573a3b993edb62d08503f7ff7bc12e227a48b49238a96c0e308bd",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted retrospective reading: anthropic-fable-redeploy; not an exhaustive June news query",
+          "executedAt": "2026-10-19T13:16:58.500644+00:00",
+          "artifact": "governance/evidence/fable-correction-20261019/anthropic-fable-redeploy.md",
+          "sha256": "d5087766a7ba18b791345d97783bfd630f59f346d5210496f4f8211c5d24d4e6",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted retrospective reading: legal/mayerbrown-fable; not an exhaustive June news query",
+          "executedAt": "2026-10-19T13:21:04.822468+00:00",
+          "artifact": "governance/evidence/fable-correction-20261019/legal/mayerbrown-fable.md",
+          "sha256": "4e074ade2239d2b7ed10a22936c5995846cd34648dcf5a8ca6f34401df282ce4",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted retrospective reading: legal/harvard-access-export; not an exhaustive June news query",
+          "executedAt": "2026-10-19T13:21:02.668967+00:00",
+          "artifact": "governance/evidence/fable-correction-20261019/legal/harvard-access-export.md",
+          "sha256": "3ec6c71ab17a207ff8837403eed328d025e014bde7b53654a23ded9b5d6ce6cd",
+          "resultCount": 1
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "Only named Anthropic directive/lift correction assessed, not whole governance category or every regulator action."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "claude-fable-ban-2026-published-correction",
+      "discoveryUrls": [
+        "https://www.anthropic.com/news/fable-mythos-access",
+        "https://www.anthropic.com/news/redeploying-fable-5",
+        "https://harvardlawreview.org/blog/2026/06/is-access-to-fable-an-export/",
+        "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Primary company statement and dated official redeployment account retained.",
+        "novelty": "Correct an existing published node instead of a new act.",
+        "spillover": "Access affects first-party developers and enterprise clients in company statement; no general regulatory scope assumed.",
+        "durability": "Interruption or recovery was dated and subsequently tracked, but long-run downstream effects unverified.",
+        "sourceQuality": "Company account plus separate professional legal analysis or media reporting for the core chronology."
+      },
+      "total": 7,
+      "priority": "pool",
+      "priorityOverrideReason": "Material bilingual errors in a published L2 governance event require correction despite new-event screening priority.",
+      "decision": "update",
+      "eventId": "claude-fable-ban-2026",
+      "reason": "Remove false timing/causation and unobserved long-term impacts; assess exact access-stage, legal reach and observed restoration with new dates.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Primary company account and legal/news chronology for this specifically named directive or rescission?",
+          "finding": "June 12 named Anthropic IIL or June 30 lifting and July 1 dated company update as appropriate; old causal/24h claims explicitly excluded.",
+          "evidenceIds": [
+            "claude-fable-ban-2026-evidence-1",
+            "claude-fable-ban-2026-evidence-2"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Was first-party access suspended or restored with dated before/after evidence, separate from speculative market effects?",
+          "finding": "Company June 30/July 1 updated account and dated June26 legal note support access change; affected business/developer roles follow first-party developer and Team/Enterprise offerings, not measured per-customer losses.",
+          "evidenceIds": [
+            "claude-fable-ban-2026-evidence-7",
+            "claude-fable-ban-2026-evidence-8",
+            "claude-fable-ban-2026-evidence-9"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Independent legal analysis of June 12 IIL and whether it applies beyond Anthropic; separately of June30 removal?",
+          "finding": "June 12 IIL analyzed by Mayer Brown and Harvard Law Review; both describe company-specific process and novel, disputed remote-access theory.",
+          "evidenceIds": [
+            "claude-fable-ban-2026-evidence-5",
+            "claude-fable-ban-2026-evidence-6"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Documented dispute over legal theory or material lift impact?",
+          "finding": "Two independent legal commentaries dispute whether remote AI model access is an export.",
+          "evidenceIds": [
+            "claude-fable-ban-2026-evidence-5",
+            "claude-fable-ban-2026-evidence-6"
+          ]
+        }
+      }
+    }
+  ]
+}

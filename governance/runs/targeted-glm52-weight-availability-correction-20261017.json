@@ -1,0 +1,134 @@
+{
+  "policyVersion": "2.4",
+  "runId": "targeted-glm52-weight-availability-correction-20261017",
+  "kind": "targeted",
+  "windowStart": "2026-06-13",
+  "windowEnd": "2026-06-16",
+  "evidenceCutoff": "2026-10-17",
+  "timezone": "UTC",
+  "baselineCommit": "d558bde98416edf85cd95cb63905dea65d070010",
+  "operator": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "promptVersion": "glm52-correction-targeted-20261017-v1",
+  "scopeReason": "Correct an existing published GLM-5.2 event’s misleading weight-release date and legacy source URL, claims and ratings; not full June discovery.",
+  "channels": [
+    {
+      "id": "web",
+      "status": "partial",
+      "coverageNote": "Targeted HF model repository API/commit/tree and Nathan Lambert June 22 analysis; no exhaustive June 13–16 page/window survey.",
+      "reason": "Retrospective exact-source correction, not a full discovery sweep.",
+      "retryResult": "Read five direct archived snapshots; did not attempt exhaustive historic search.",
+      "attempts": [
+        {
+          "query": "Targeted read of https://huggingface.co/api/models/zai-org/GLM-5.2 (not a general web discovery search)",
+          "executedAt": "2026-10-17T02:46:42.081501+00:00",
+          "artifact": "governance/evidence/glm52-correction-20261017/glm52-hf-api.md",
+          "sha256": "92a5e4a7f7ac0e99f6660d49c87dfe2cbc31589ad7e649cf1e255df12343f132",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted read of https://huggingface.co/api/models/zai-org/GLM-5.2/commits/main?limit=100 (not a general web discovery search)",
+          "executedAt": "2026-10-17T05:47:32.313704+00:00",
+          "artifact": "governance/evidence/glm52-correction-20261017/glm52-hf-commits.md",
+          "sha256": "1cb84bed0137bd55f64b825fe92348ec0afba73a7bc43b50ea25a68e9e088b4f",
+          "resultCount": 15
+        },
+        {
+          "query": "Targeted read of https://huggingface.co/api/models/zai-org/GLM-5.2/tree/96b232d1230335092655c05f04af4d9d9abe61cb?recursive=false (not a general web discovery search)",
+          "executedAt": "2026-10-17T05:47:51.603927+00:00",
+          "artifact": "governance/evidence/glm52-correction-20261017/glm52-hf-tree-20260616.md",
+          "sha256": "90b271e43ea96cab567e6eecd6587e95a1e86da76e0fdf5b634b30550b48d426",
+          "resultCount": 289
+        },
+        {
+          "query": "Targeted read of https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open (not a general web discovery search)",
+          "executedAt": "2026-10-17T02:38:27.133104+00:00",
+          "artifact": "governance/evidence/glm52-correction-20261017/interconnects-glm52.md",
+          "sha256": "7b8a6f8ec7a7e2357519ac65fcf095e948a071f783af9da1a5d2262d69d638d8",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted read of https://huggingface.co/zai-org/GLM-5.2 (not a general web discovery search)",
+          "executedAt": "2026-10-17T02:15:37.626520+00:00",
+          "artifact": "governance/evidence/glm52-correction-20261017/glm52-corrected.md",
+          "sha256": "1f736591febfad952a16b9358870a569ce07adc1cf800abce31e515d419b666b",
+          "resultCount": 1
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Only GLM-5.2 access-stage correction checked; no category-wide survey."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "glm52-published-weight-release-correction",
+      "discoveryUrls": [
+        "https://huggingface.co/zai-org/GLM-5.2",
+        "https://huggingface.co/api/models/zai-org/GLM-5.2",
+        "https://huggingface.co/api/models/zai-org/GLM-5.2/commits/main?limit=100",
+        "https://huggingface.co/api/models/zai-org/GLM-5.2/tree/96b232d1230335092655c05f04af4d9d9abe61cb?recursive=false",
+        "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Original dated HF repository commit and full file tree retrievable.",
+        "novelty": "Correction changes stage/date of existing node; no new entity.",
+        "spillover": "A published open-vs-closed Arc anchors to this event.",
+        "durability": "No independent measured production deployment demonstrated by retained source set.",
+        "sourceQuality": "Primary repository timestamps and independent June 22 reported chronology."
+      },
+      "total": 6,
+      "priority": "pool",
+      "priorityOverrideReason": "A material factual error in an existing published event must be evaluated even if it scores below new-event confirmation priority.",
+      "decision": "update",
+      "reason": "Correct stage-specific date, linked Source URL/date and inflated capability/impact claims; same published node retained.",
+      "eventId": "glm-52-open-source-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Did the dated repository hold MIT model weights on 2026-06-16?",
+          "finding": "June 16 repository created, uploads at 08:17–08:18 UTC; snapshot contains 282 safetensors files and model index; June 22 independent chronology distinguishes initial rollout. Model card states MIT. This confirms availability at a dated commit, not successful downstream downloads.",
+          "evidenceIds": [
+            "glm52-fact-vendor",
+            "glm52-fact-api",
+            "glm52-fact-commits",
+            "glm52-fact-tree",
+            "glm52-fact-independent"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independent documentation of measured production adoption or measurable downstream costs caused by this release?",
+          "finding": "No observed independently attributed deployment/adoption or baseline-versus-outcome impact in this bounded source set; other reports may exist and were not exhaustively searched.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Independent commentary distinguishing API rollout, published weights, selective model performance and export-policy claims?",
+          "finding": "June 22 Nathan Lambert article explicitly distinguishes rollout from open weight publication; author offers commentary and experience, not a controlled GPT-5.5 parity/cost replication or policy-causation proof.",
+          "evidenceIds": [
+            "glm52-fact-independent",
+            "glm52-limit-independent"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Evidence of independently confirmed concrete dispute about GLM-5.2 weight availability itself?",
+          "finding": "No confirmed dispute about the existence of June 16 weight repository in reviewed sources. Disagreement about benchmark comparisons is not recorded as a resolved controversy.",
+          "evidenceIds": []
+        }
+      }
+    }
+  ]
+}

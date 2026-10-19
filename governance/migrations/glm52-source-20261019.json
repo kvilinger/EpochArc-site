@@ -1,0 +1,51 @@
+{
+  "policyVersion": "2.4",
+  "ruleId": "GOV-03",
+  "decision": "option_A_same_source_id",
+  "status": "human_selected_and_exact_subjects_approved",
+  "actorType": "human",
+  "actor": "gang",
+  "decidedAt": "2026-10-19",
+  "confirmationRef": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723:user-message-id:9b13c831:2026-10-19T14:51:22.299Z:option-A",
+  "releaseConfirmationRef": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723:user-message-id:8aba931f:2026-10-19T14:51:49.403Z:bundle/governance_decision_request_20261019.md",
+  "baselineCommit": "d558bde98416edf85cd95cb63905dea65d070010",
+  "sourceId": "zai-glm52-release-2026",
+  "oldSource": {
+    "id": "zai-glm52-release-2026",
+    "type": "primary",
+    "tier": 1,
+    "title": "GLM-5.2 on Hugging Face - Z.ai (Zhipu AI)",
+    "url": "https://huggingface.co/zai/GLM-5.2",
+    "publishedAt": "2026-06-13",
+    "accessedAt": "2026-06-25",
+    "language": "en",
+    "independence": "primary_actor"
+  },
+  "newSource": {
+    "id": "zai-glm52-release-2026",
+    "type": "primary",
+    "tier": 1,
+    "title": "GLM-5.2 on Hugging Face - Z.ai (Zhipu AI)",
+    "url": "https://huggingface.co/zai-org/GLM-5.2",
+    "publishedAt": "2026-06-16",
+    "accessedAt": "2026-10-17",
+    "language": "en",
+    "independence": "primary_actor",
+    "publisherId": "zai",
+    "originId": "zai-glm52-weights-2026",
+    "notes": "Correction proposal in shadow: older URL returned a 404 via Jina; repository commit dated 2026-06-16 shows model files, not the earlier API rollout. Requires separate migration decision and approval."
+  },
+  "eventId": "glm-52-open-source-2026",
+  "oldEventDate": "2026-06-13",
+  "newEventDate": "2026-06-16",
+  "firstPublishedAtPreserved": "2026-06-30",
+  "linkedArcs": [
+    "open-vs-closed"
+  ],
+  "notes": [
+    "The old URL was observed to return a 404 page through Jina Reader; an origin HTTP status was not independently verified.",
+    "The June 16 HF repository/API/commit-tree captures share one underlying repository origin; separate commentary supports chronology, not independent performance or production uptake.",
+    "No silent deletion: preserve old Source object and date in this migration audit and Git history. Do not regenerate governance/legacy-baseline.json.",
+    "The selected option A and the five exact-version approvals are two distinct messages within a recorded Pi session. The Pi session file stays outside the repository and is not copied here."
+  ]
+}

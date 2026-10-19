@@ -1,0 +1,219 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "glm-52-open-source-2026",
+  "subjectDigest": "934c39e3e60f5645289b666b57531b2e116c480a8064d10efcaa07e42294612b",
+  "inputsDigest": "5cdf436f20f240d0fa6105fa27f8495830053defd1c2226534bf20fc93e16167",
+  "evidenceCutoff": "2026-10-17",
+  "preparedBy": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "reviewedBy": "gemini-3.8-flash-high:01a14869-b04a-73e2-8beb-85c7997f0a16",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a14869-b04a-73e2-8beb-85c7997f0a16",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewerArtifact": "governance/evidence/glm52-correction-20261017/gemini-glm52-targeted-v24.jsonl",
+  "reviewerArtifactSha256": "38c634278d1b98d78f20f81992508dc888459c2304d59e8e8a10fd910f29edee",
+  "limitations": [
+    "Independent Gemini reviewed a 26KB selected packet with quoted located evidence and computed file-count summary, not all 91KB of the raw HF tree, not the weights binary, and not every original website byte. Producer checked exact quote bytes against retained full extracted responses.",
+    "HF model API, commit list, tree and Z.ai model card refer to a shared Z.ai repository origin; they are not several independent benchmarks. The Nathan Lambert June 22 article separately reports the chronology but its performance impressions are not a controlled replication.",
+    "Retrospective targeted web reads did not perform exhaustive June 13–16 discovery; absent measured external deployment in this packet does not prove none exists. No impact is counted without observed baseline and outcome.",
+    "Historical published Source URL and event date migration require separate GOV-03 decision; the original editorial.publishedAt remains 2026-06-30. Four inbound relatedEvents and the open-vs-closed Arc require dependency inspection; linked historic records are not recertified here.",
+    "The reviewer preliminarily said a human name must replace AI reviewer metadata and suggested Arc recomputation only after event human approval. The contract allows identified AI reviewer sessions, and dependency review may occur in a shadow before approval; neither mistake is adopted.",
+    "No human exact-version approval was given; shadow contract pass does not permit applying or publishing this correction."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Producer compared both languages for date, MIT weight availability, attributed benchmark and cost limits, explicit non-causation and zero observed impact. Gemini session reviewed the exact draft bilingual record and accepted it for shadow review only."
+  },
+  "evidence": [
+    {
+      "id": "glm52-fact-vendor",
+      "sourceId": "zai-glm52-release-2026",
+      "claimId": "glm-52-open-source-2026-claim-1",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "originId": "zai-glm52-weights-2026",
+      "accessedAt": "2026-10-17",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "**Pure Open**: An MIT open-source license — no regional limits,",
+      "locator": "Jina Reader retained text glm52-corrected.md, line 24, character offset 1785; metadata snapshot != proof of downloads",
+      "artifact": "governance/evidence/glm52-correction-20261017/glm52-corrected.md",
+      "sha256": "1f736591febfad952a16b9358870a569ce07adc1cf800abce31e515d419b666b"
+    },
+    {
+      "id": "glm52-fact-api",
+      "sourceId": "glm52-hf-api-20261017",
+      "claimId": "glm-52-open-source-2026-claim-1",
+      "url": "https://huggingface.co/api/models/zai-org/GLM-5.2",
+      "originId": "zai-glm52-repository-history",
+      "accessedAt": "2026-10-17",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "zai-org-GLM-5.2\"],\"createdAt\":\"2026-06-16T07:39:20.000Z\",\"safetensors\":{\"param",
+      "locator": "Jina Reader retained text glm52-hf-api.md, line 6, character offset 23606; metadata snapshot != proof of downloads",
+      "artifact": "governance/evidence/glm52-correction-20261017/glm52-hf-api.md",
+      "sha256": "92a5e4a7f7ac0e99f6660d49c87dfe2cbc31589ad7e649cf1e255df12343f132"
+    },
+    {
+      "id": "glm52-fact-commits",
+      "sourceId": "glm52-hf-commits-20261017",
+      "claimId": "glm-52-open-source-2026-claim-1",
+      "url": "https://huggingface.co/api/models/zai-org/GLM-5.2/commits/main?limit=100",
+      "originId": "zai-glm52-repository-history",
+      "accessedAt": "2026-10-17",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "LrVGusqFj1.png\"}],\"date\":\"2026-06-16T08:18:05.000Z\"},{\"id\":\"f3ce794044188",
+      "locator": "Jina Reader retained text glm52-hf-commits.md, line 6, character offset 2911; metadata snapshot != proof of downloads",
+      "artifact": "governance/evidence/glm52-correction-20261017/glm52-hf-commits.md",
+      "sha256": "1cb84bed0137bd55f64b825fe92348ec0afba73a7bc43b50ea25a68e9e088b4f"
+    },
+    {
+      "id": "glm52-fact-tree",
+      "sourceId": "glm52-hf-tree-20261017",
+      "claimId": "glm-52-open-source-2026-claim-1",
+      "url": "https://huggingface.co/api/models/zai-org/GLM-5.2/tree/96b232d1230335092655c05f04af4d9d9abe61cb?recursive=false",
+      "originId": "zai-glm52-repository-history",
+      "accessedAt": "2026-10-17",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "5f347479e68e0cab\",\"path\":\"model-00282-of-00282.safetensors\"},{\"type\":\"file\",\"oid\"",
+      "locator": "Jina Reader retained text glm52-hf-tree-20260616.md, line 6, character offset 90479; metadata snapshot != proof of downloads",
+      "artifact": "governance/evidence/glm52-correction-20261017/glm52-hf-tree-20260616.md",
+      "sha256": "90b271e43ea96cab567e6eecd6587e95a1e86da76e0fdf5b634b30550b48d426"
+    },
+    {
+      "id": "glm52-fact-independent",
+      "sourceId": "interconnects-glm52-2026",
+      "claimId": "glm-52-open-source-2026-claim-1",
+      "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+      "originId": "natolambert-glm52-20260622-analysis",
+      "accessedAt": "2026-10-17",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "al, MIT-licensed [model weights](https://huggingface.co/zai-org/GLM-5.2) and [release blog](https://z.ai/blog/glm-5.2) dropped three days after the initial rollout, on June 16th. One could ramble man",
+      "locator": "Jina Reader retained text interconnects-glm52.md, line 17, character offset 2568; metadata snapshot != proof of downloads",
+      "artifact": "governance/evidence/glm52-correction-20261017/interconnects-glm52.md",
+      "sha256": "7b8a6f8ec7a7e2357519ac65fcf095e948a071f783af9da1a5d2262d69d638d8"
+    },
+    {
+      "id": "glm52-limit-vendor",
+      "sourceId": "zai-glm52-release-2026",
+      "claimId": "glm-52-open-source-2026-limitation",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "originId": "zai-glm52-weights-2026",
+      "accessedAt": "2026-10-17",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "hmark) Benchmark\n\n| Benchmark | GLM-5.2 | GLM-5.1 | Qwen3.7-Max | MiniMax",
+      "locator": "Jina Reader retained text glm52-corrected.md, line 30, character offset 2135; metadata snapshot != proof of downloads",
+      "artifact": "governance/evidence/glm52-correction-20261017/glm52-corrected.md",
+      "sha256": "1f736591febfad952a16b9358870a569ce07adc1cf800abce31e515d419b666b"
+    },
+    {
+      "id": "glm52-limit-independent",
+      "sourceId": "interconnects-glm52-2026",
+      "claimId": "glm-52-open-source-2026-limitation",
+      "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+      "originId": "natolambert-glm52-20260622-analysis",
+      "accessedAt": "2026-10-17",
+      "relationship": "independent",
+      "verification": "context",
+      "quote": "till reeling from the shocking [export restriction, and effective banning](https://www.interconn",
+      "locator": "Jina Reader retained text interconnects-glm52.md, line 11, character offset 790; metadata snapshot != proof of downloads",
+      "artifact": "governance/evidence/glm52-correction-20261017/interconnects-glm52.md",
+      "sha256": "7b8a6f8ec7a7e2357519ac65fcf095e948a071f783af9da1a5d2262d69d638d8"
+    }
+  ],
+  "runId": "targeted-glm52-weight-availability-correction-20261017",
+  "candidateId": "glm52-published-weight-release-correction",
+  "runDigest": "4cef33118bf0099f128cd8407b86becf4a8ed08b496cef356c034055470293a1",
+  "coreFactClaimIds": [
+    "glm-52-open-source-2026-claim-1"
+  ],
+  "identity": {
+    "seriesId": "glm-5.2",
+    "action": "downloadable MIT weights available",
+    "stage": "available",
+    "dateBasis": "HF model repository created 2026-06-16 07:39:20 UTC, same-day upload commit at 08:18:05 UTC with a snapshot listing 282 safetensors shards and index; independent June 22 chronology says weight release June 16, initial rollout June 13.",
+    "deduplicationReason": "Same GLM-5.2 weight-release event already public under this stable ID; correct the existing node rather than creating a duplicate event. Existing external URL remains; editorial.publishedAt preserved.",
+    "comparedEventIds": [
+      "claude-fable-ban-2026",
+      "qwen-3-8-27b-open-weights-2026",
+      "stepfun-step-5-preview-open-weights-2026"
+    ],
+    "decision": "update"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Core stage is availability/licensing of downloadable model weights, not independently demonstrated previously infeasible capability; no separate distinct secondary claim."
+  },
+  "significance": {
+    "rationale": "Dated open weight access is a verified product-availability node. No verified independent production adoption or general capability leap from the bounded evidence packet; L1 is an evidence ceiling, not evidence of no future effect.",
+    "whyNotHigher": "L2-PRODUCT-ACCESS requires two unaffiliated production organizations actually adopting; unknown. L2-CAPABILITY path cannot be satisfied by vendor-selected scores or uncontrolled commentary. Zero observed impacts are recorded, not forecast as effects.",
+    "whyNotLower": "The weight files, license and distinct release stage are directly located at a dated repository revision and independently reported; the event remains a publishable factual node, pending approval.",
+    "comparisonEventIds": [
+      "qwen-3-8-27b-open-weights-2026",
+      "stepfun-step-5-preview-open-weights-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "MIT license and dated tree at the June 16 revision substantiate a change from API rollout to downloadable weight files; not proof of adoption.",
+            "evidenceIds": [
+              "glm52-fact-vendor",
+              "glm52-fact-commits",
+              "glm52-fact-tree",
+              "glm52-fact-independent"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "The bounded June-to-October source set does not measure the number of unrelated organizations using these weights in production; zero is not asserted.",
+            "evidenceIds": []
+          }
+        }
+      },
+      {
+        "ruleId": "L2-CAPABILITY",
+        "criteria": {
+          "previously_infeasible_task": {
+            "value": null,
+            "rationale": "No previously impossible task and reproducible test conditions established.",
+            "evidenceIds": []
+          },
+          "comparable_baseline": {
+            "value": null,
+            "rationale": "Vendor benchmark tables and a personal qualitative test do not verify an equivalent-condition baseline for a new task.",
+            "evidenceIds": []
+          },
+          "independent_replication": {
+            "value": null,
+            "rationale": "No independent controlled replication of an asserted previously infeasible task supplied.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Weight availability is directly verifiable, but principal measured impacts remain unestablished.",
+    "evidenceIds": [
+      "glm52-fact-commits",
+      "glm52-fact-tree",
+      "glm52-fact-independent"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented concrete controversy over existence of the repository snapshot; benchmark interpretation uncertainty is stated as a limitation, not counted as a separate adjudicated dispute.",
+    "evidenceIds": []
+  }
+}

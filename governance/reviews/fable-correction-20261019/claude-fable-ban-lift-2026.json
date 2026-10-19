@@ -1,0 +1,227 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "claude-fable-ban-lift-2026",
+  "subjectDigest": "2200502a9ff00f5651544ef2c3376bb541abed414e0c2f8d4facd5aa7c8f8509",
+  "inputsDigest": "406cd764d6290f2319491f5249ab845980d608d2d51fd311a19bb437c6fd3dc3",
+  "evidenceCutoff": "2026-10-19",
+  "preparedBy": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "reviewedBy": "gemini-3.8-flash-high:01a15471-505c-7036-85ed-5f1213ee03ad",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a15471-505c-7036-85ed-5f1213ee03ad",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewerArtifact": "governance/evidence/fable-correction-20261019/gemini-fable-revised-final.jsonl",
+  "reviewerArtifactSha256": "88d09d72445bf867c119755fa023695dbad59dfe9ca74df6ae25622b1b544563",
+  "limitations": [
+    "Gemini independently reviewed exact bilingual event text, targeted run, located quotes and source metadata in a selective packet, not complete bytes of every website nor the original unpublished Commerce IIL/rescission letters. Producer checked all cited excerpts against retained extracted files.",
+    "Mayer Brown and Harvard Law Review are two independent legal analyses of the named June12 IIL. Neither establishes that the June30 lifting was independently analyzed as a general precedent; CNBC and Axios reporting of Anthropic’s announcement share that underlying actor origin.",
+    "The June30 company page includes a July1 update; the later status is used at the true October19 evidence cutoff, not backdated to June30. 5:21pm June12 is letter receipt, not proven exact completed service-shutdown timestamp.",
+    "A company-specific IIL is not necessarily a rule legally binding unrelated model developers. This is an editorial application of the L2-GOVERNANCE route subject to continued legal disagreement; downstream customers affected are not proof of cross-provider legal reach.",
+    "Actual production losses, users affected, AWS/Google/Microsoft cloud restoration, long-run sector trust and a causal GLM-5.2 acceleration were not established; no such effects enter impactIndex.",
+    "No human approval has been obtained. Any changed anchor event invalidates Arc dependency digests and requires new Arc review; this reviewer did not sign off on Arc publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Producer checked date, received-versus-disabled, June30 versus July1, Fable first-party versus limited Mythos organization, 50%/July7, and negated causality across EN/zhHans. Exact revised drafts were independently assessed by Gemini session 01a15471-505c-7036-85ed-5f1213ee03ad."
+  },
+  "evidence": [
+    {
+      "id": "claude-fable-ban-lift-2026-evidence-1",
+      "sourceId": "fable-v24-anthropic-redeploy-20261019",
+      "claimId": "claude-fable-ban-lift-2026-claim-1",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "originId": "anthropic-june30-july1-fable-redeployment",
+      "accessedAt": "2026-10-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "for all users.\n\n**As of today, June 30, the export controls on Fable 5 and Mythos 5 [have been lifted](https://x.com/howardlu",
+      "locator": "Jina Reader anthropic-fable-redeploy.md line 17; character offset 655 in UTF-8 extracted text; partial rendering does not prove full website",
+      "artifact": "governance/evidence/fable-correction-20261019/anthropic-fable-redeploy.md",
+      "sha256": "d5087766a7ba18b791345d97783bfd630f59f346d5210496f4f8211c5d24d4e6"
+    },
+    {
+      "id": "claude-fable-ban-lift-2026-evidence-2",
+      "sourceId": "cnbc-fable-ban-lift-2026",
+      "claimId": "claude-fable-ban-lift-2026-claim-1",
+      "url": "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html",
+      "originId": "anthropic-june30-controls-lifted-announcement",
+      "accessedAt": "2026-10-19",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "d on Tuesday that the U.S. Department of Commerce has lifted [export controls](https://www.cnbc.com/2026/06/12/anthropic",
+      "locator": "Jina Reader cnbc-fable-ban-lift-2026.md line 12; character offset 652 in UTF-8 extracted text; partial rendering does not prove full website",
+      "artifact": "governance/evidence/fable-correction-20261019/cnbc-fable-ban-lift-2026.md",
+      "sha256": "58fd60546d7a7a63c99afb8368b82613dc1c769ad069eeca186882aafa1e07be"
+    },
+    {
+      "id": "claude-fable-ban-lift-2026-evidence-3",
+      "sourceId": "axios-fable-ban-lift-2026",
+      "claimId": "claude-fable-ban-lift-2026-claim-1",
+      "url": "https://www.axios.com/2026/06/30/trump-anthropic-ai-model-fable-restrictions",
+      "originId": "anthropic-june30-controls-lifted-announcement",
+      "accessedAt": "2026-10-19",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "icy/donald-trump) administration lifted export controls on Anthropic's Claude Fable 5 AI model Tuesday evening, with access returning to",
+      "locator": "Jina Reader axios-fable-ban-lift-2026.md line 8; character offset 288 in UTF-8 extracted text; partial rendering does not prove full website",
+      "artifact": "governance/evidence/fable-correction-20261019/axios-fable-ban-lift-2026.md",
+      "sha256": "9ca9bd3ad65f5f088be33af08c0025e46f5d8a8efb0c0ee2549ff42fbb1e6da7"
+    },
+    {
+      "id": "claude-fable-ban-lift-2026-evidence-4",
+      "sourceId": "fable-v24-anthropic-redeploy-20261019",
+      "claimId": "claude-fable-ban-lift-2026-claim-2",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "originId": "anthropic-june30-july1-fable-redeployment",
+      "accessedAt": "2026-10-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "hos 5 redeployed\n\nJul 1, 2026 \nAccess to Claude Fable 5 and Mythos 5 is now restored. \n\nOn Friday, June 12, the US government a",
+      "locator": "Jina Reader anthropic-fable-redeploy.md line 12; character offset 204 in UTF-8 extracted text; partial rendering does not prove full website",
+      "artifact": "governance/evidence/fable-correction-20261019/anthropic-fable-redeploy.md",
+      "sha256": "d5087766a7ba18b791345d97783bfd630f59f346d5210496f4f8211c5d24d4e6"
+    },
+    {
+      "id": "claude-fable-ban-lift-2026-evidence-5",
+      "sourceId": "fable-v24-anthropic-redeploy-20261019",
+      "claimId": "claude-fable-ban-lift-2026-claim-2",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "originId": "anthropic-june30-july1-fable-redeployment",
+      "accessedAt": "2026-10-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "id-claude-plans). We will re-enable access on AWS, Google Cloud, and Microsoft Foundry as quickly as possible.\n\nWe have also restored access to Mythos 5",
+      "locator": "Jina Reader anthropic-fable-redeploy.md line 19; character offset 1288 in UTF-8 extracted text; partial rendering does not prove full website",
+      "artifact": "governance/evidence/fable-correction-20261019/anthropic-fable-redeploy.md",
+      "sha256": "d5087766a7ba18b791345d97783bfd630f59f346d5210496f4f8211c5d24d4e6"
+    },
+    {
+      "id": "claude-fable-ban-lift-2026-evidence-6",
+      "sourceId": "fable-v24-anthropic-redeploy-20261019",
+      "claimId": "claude-fable-ban-lift-2026-limitation",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "originId": "anthropic-june30-july1-fable-redeployment",
+      "accessedAt": "2026-10-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "id-claude-plans). We will re-enable access on AWS, Google Cloud, and Microsoft Foundry as quickly as possible.\n\nWe have also restored access to Mythos 5",
+      "locator": "Jina Reader anthropic-fable-redeploy.md line 19; character offset 1288 in UTF-8 extracted text; partial rendering does not prove full website",
+      "artifact": "governance/evidence/fable-correction-20261019/anthropic-fable-redeploy.md",
+      "sha256": "d5087766a7ba18b791345d97783bfd630f59f346d5210496f4f8211c5d24d4e6"
+    },
+    {
+      "id": "claude-fable-ban-lift-2026-evidence-8",
+      "sourceId": "fable-v24-anthropic-redeploy-20261019",
+      "claimId": "claude-fable-ban-lift-2026-impact-claim",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "originId": "anthropic-june30-july1-fable-redeployment",
+      "accessedAt": "2026-10-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "yed\n\nJul 1, 2026 \nAccess to Claude Fable 5 and Mythos 5 is now restored. \n\nOn Friday, June 12, the US government a",
+      "locator": "Jina Reader anthropic-fable-redeploy.md line 13; character offset 217 in UTF-8 extracted text; partial rendering does not prove full website",
+      "artifact": "governance/evidence/fable-correction-20261019/anthropic-fable-redeploy.md",
+      "sha256": "d5087766a7ba18b791345d97783bfd630f59f346d5210496f4f8211c5d24d4e6"
+    },
+    {
+      "id": "claude-fable-ban-lift-2026-evidence-mythos-limited",
+      "sourceId": "fable-v24-anthropic-redeploy-20261019",
+      "claimId": "claude-fable-ban-lift-2026-claim-2",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "originId": "anthropic-june30-july1-fable-redeployment",
+      "accessedAt": "2026-10-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We have also restored access to Mythos 5 for a set of US organizations, following the US government’s approval on [June 26](https://x.com/AnthropicA",
+      "locator": "Jina Reader anthropic-fable-redeploy.md line 21; character offset 1382; July 1 updated page, not original June 30 text",
+      "artifact": "governance/evidence/fable-correction-20261019/anthropic-fable-redeploy.md",
+      "sha256": "d5087766a7ba18b791345d97783bfd630f59f346d5210496f4f8211c5d24d4e6"
+    }
+  ],
+  "runId": "targeted-claude-fable-ban-lift-2026-correction-20261019",
+  "candidateId": "claude-fable-ban-lift-2026-published-correction",
+  "runDigest": "5ffae2071add9170ec0de731ad0f549d3361db436e6d049c249af1b924d7bd74",
+  "coreFactClaimIds": [
+    "claude-fable-ban-lift-2026-claim-1"
+  ],
+  "identity": {
+    "seriesId": "anthropic-fable-mythos-export-controls",
+    "action": "Commerce export restrictions on the two named Anthropic models lifted",
+    "stage": "withdrawn",
+    "dateBasis": "June12 company access statement for the named directive; June30 redeployment statement for named lifting, plus July1 updated access status as follow-up evidence. Node date remains original action date.",
+    "deduplicationReason": "Existing published node, same action and stage; correction not a new URL/event. Preserve original editorial.publishedAt and original slug.",
+    "comparedEventIds": [
+      "claude-fable-ban-2026",
+      "eu-ai-act-transparency-2026"
+    ],
+    "decision": "update"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "The node identity is the company-specific government restriction or its lifting. Broad sector safety/business change is unobserved, so no separate secondary category claim."
+  },
+  "significance": {
+    "rationale": "The dated named administrative access event and actual user-facing interruption/restoration are established; the general-application requirement of the governance milestone is not established for the one-company directive/lift. L1 correction is justified by affirmative scope analyses for June12 and named rescission for June30, not lack of discovery alone.",
+    "whyNotHigher": "Named removal and dated first-party restoration do not prove a general industry-wide rule or durable multi-case precedent. L2-GOVERNANCE requires all three conditions; this route is not satisfied. Legacy L2 scores are not grandfathered after substantive rewrite.",
+    "whyNotLower": "Named directive/lifting plus actual access-state change are directly documented and merit a historical node.",
+    "comparisonEventIds": [
+      "claude-fable-ban-2026",
+      "eu-ai-act-transparency-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": true,
+            "rationale": "Anthropic states Commerce lifted the named Fable and Mythos restrictions June30, restoring a changed administrative access status; original rescission letter not in packet.",
+            "evidenceIds": [
+              "claude-fable-ban-lift-2026-evidence-1",
+              "claude-fable-ban-lift-2026-evidence-2",
+              "claude-fable-ban-lift-2026-evidence-3"
+            ]
+          },
+          "applies_beyond_named_parties": {
+            "value": null,
+            "rationale": "The named Fable/Mythos lifting was announced; no retained legal instrument establishes a general lifting rule binding other model providers, and absence in this packet is not proof none existed.",
+            "evidenceIds": []
+          },
+          "independent_legal_analysis": {
+            "value": null,
+            "rationale": "Legal commentary retained concerns June12 named IIL and June26 exceptions, not independent legal analysis of the June30 rescission.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "claude-fable-ban-lift-2026-evidence-8"
+      ],
+      "observedSince": "2026-07-01",
+      "observedUntil": "2026-07-01",
+      "baseline": "First-party Fable access had been suspended since the June12 directive and was not yet confirmed restored in the June30 announcement.",
+      "outcome": "The July1 update says Fable first-party access returned under phased limits; external cloud completion not demonstrated; Mythos access confined to an approved set of US organizations.",
+      "materialChange": true
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "First-party access fact is recorded, but later market/regulatory consequences remain unestablished.",
+    "evidenceIds": [
+      "claude-fable-ban-lift-2026-evidence-8"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No concrete separate dispute over whether the June30 named controls were lifted in scoped sources; uncertainty of legal precedent is a limitation, not a new litigated fact.",
+    "evidenceIds": []
+  }
+}
