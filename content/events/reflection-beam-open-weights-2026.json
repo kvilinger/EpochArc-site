@@ -1,0 +1,119 @@
+{
+  "id": "reflection-beam-open-weights-2026",
+  "slug": "reflection-beam-open-weights-2026",
+  "title": {
+    "en": "Reflection announces Beam model weights",
+    "zhHans": "Reflection 宣布提供 Beam 模型权重"
+  },
+  "searchSummary": {
+    "en": "Reflection announced Beam weights on October 16; its Hugging Face repository currently lists weight files without a manual access gate and identifies an Apache-2.0 license.",
+    "zhHans": "Reflection 于 10 月 16 日宣布提供 Beam 权重；其 Hugging Face 仓库目前列出权重文件，未设置人工访问门槛，并标注 Apache-2.0 许可证。"
+  },
+  "summary": {
+    "en": "Reflection announced Beam weights on October 16; its Hugging Face repository currently lists weight files without a manual access gate and identifies an Apache-2.0 license.",
+    "zhHans": "Reflection 于 10 月 16 日宣布提供 Beam 权重；其 Hugging Face 仓库目前列出权重文件，未设置人工访问门槛，并标注 Apache-2.0 许可证。"
+  },
+  "narrative": {
+    "en": "Reflection describes Beam as a 501-billion-parameter mixture-of-experts model with 23 billion active parameters. Its October 16 announcement says the weights were released, and the host now lists model files. A model-card availability commit was made that morning, but this does not establish the exact time that every weight file first became downloadable. Partner lists and performance figures are not independently validated here.",
+    "zhHans": "Reflection 将 Beam 描述为总参数 5010 亿、激活参数 230 亿的混合专家模型。其 10 月 16 日公告称已发布权重，托管仓库目前也列出模型文件。当日上午有一条关于模型可用的模型卡提交，但它不能证明全部权重文件首次可下载的确切时间。本轮尚未独立验证合作伙伴名单或性能数据。"
+  },
+  "date": "2026-10-16",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-10-16",
+    "zhHans": "2026年10月16日"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [],
+  "claims": [
+    {
+      "id": "beam-open-fact",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "text": {
+        "en": "Reflection announced Beam weights on October 16, 2026, and the Hugging Face host now lists weight files without a manual gate.",
+        "zhHans": "Reflection 于 2026 年 10 月 16 日宣布提供 Beam 权重；Hugging Face 托管仓库目前列出权重文件，且未设置人工访问门槛。"
+      },
+      "sourceIds": [
+        "followup-20261020-beam-release",
+        "followup-20261020-beam-host-api"
+      ]
+    },
+    {
+      "id": "beam-open-limitation",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "text": {
+        "en": "The dated model-card availability commit does not establish the exact first-download time of the weights or independent production adoption.",
+        "zhHans": "带日期的模型卡可用性提交不能证明权重首次可下载的确切时间，也不能证明独立的生产采用。"
+      },
+      "sourceIds": [
+        "followup-20261020-beam-release",
+        "followup-20261020-beam-host-api",
+        "followup-20261020-beam-commits"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "followup-20261020-beam-release",
+      "supports": [
+        "beam-open-fact",
+        "beam-open-limitation"
+      ]
+    },
+    {
+      "sourceId": "followup-20261020-beam-host-api",
+      "supports": [
+        "beam-open-fact",
+        "beam-open-limitation"
+      ]
+    },
+    {
+      "sourceId": "followup-20261020-beam-commits",
+      "supports": [
+        "beam-open-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "stepfun-step-5-preview-open-weights-2026",
+    "glm-52-open-source-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-21",
+    "curator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-10-20",
+        "changeType": "created",
+        "summary": "Staged from 2026-10-20 targeted run, awaiting independent v2.4 review and exact-version approval."
+      },
+      {
+        "date": "2026-10-20",
+        "changeType": "correction",
+        "summary": "Provisional shadow-review record prepared after actual independent Gemini feedback; exact reviewed-record digest still requires Gemini rebind; no canonical publication."
+      },
+      {
+        "date": "2026-10-21",
+        "changeType": "correction",
+        "summary": "Adjusted an unpublished publication candidate to the actual UTC publication day; no October20 public publication occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-21",
+    "lastSourceCheckAt": "2026-10-20",
+    "reviewer": "gemini:44676ae8-0b60-4f7b-976a-ac1312ab9b3d",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/independent-20261020/reflection-beam-open-weights-2026.json",
+    "publishedAt": "2026-10-21"
+  }
+}

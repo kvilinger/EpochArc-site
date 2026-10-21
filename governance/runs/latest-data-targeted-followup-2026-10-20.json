@@ -1,0 +1,328 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-targeted-followup-2026-10-20",
+  "kind": "targeted",
+  "scopeReason": "Date-bounded confirmation of six retained hold candidates after full followup; only Meta/Beam availability and DeepSeek revision selected for work-area drafts/update plan. Not a second exhaustive sweep.",
+  "windowStart": "2026-10-15",
+  "windowEnd": "2026-10-20",
+  "evidenceCutoff": "2026-10-20",
+  "timezone": "UTC",
+  "baselineCommit": "7915c413475a974e2fdbac3c836714a4784794c8",
+  "operator": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "promptVersion": "oct20-bounded-selected-followup-v24-v1",
+  "channels": [
+    {
+      "id": "direct-source-check",
+      "status": "partial",
+      "coverageNote": "Meta, Reflection, DeepSeek original pages plus host API and dated commit; no comprehensive search recall.",
+      "reason": "FTC original instruments and China annexes unavailable; Exa targeted calls failed; only selected accessible claims checked.",
+      "retryResult": "Used retained October20 direct reads and API metadata; no fabrication of missing original documents.",
+      "attempts": [
+        {
+          "query": "Targeted source read: https://research.meta.ai/blog/muse-spark-open",
+          "executedAt": "2026-10-20T07:25:01.125067+00:00",
+          "artifact": "governance/evidence/2026-10-20/direct/meta-muse.md",
+          "sha256": "a023cda99f57b527bfc69700629909ee30f0b42371d233a5124081277f101434",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted source read: https://huggingface.co/api/models/meta-models/Muse-Spark-Open-816B-A42B",
+          "executedAt": "2026-10-20T07:33:17.054439+00:00",
+          "artifact": "governance/evidence/2026-10-20/direct/meta-hf-api.json",
+          "sha256": "cda79e0a7f127fc447c03118a910d297f22092b951e4e6426f87e02531de9e0c",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted source read: https://reflection.ai/blog/beam-is-available",
+          "executedAt": "2026-10-20T07:26:20.090657+00:00",
+          "artifact": "governance/evidence/2026-10-20/direct/reflection-beam.md",
+          "sha256": "416c4ff2a2f3708ef46f0e43ca3153a08bd3fff3c8c60700d7bca0539ad23d93",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted source read: https://huggingface.co/api/models/reflection/Beam-1.0-501B-A23B",
+          "executedAt": "2026-10-20T07:33:22.755715+00:00",
+          "artifact": "governance/evidence/2026-10-20/direct/beam-hf-api.json",
+          "sha256": "8e39b2f319715d69e85932073a85e283105296e378f13c24101b69b166ab07b2",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted source read: https://huggingface.co/api/models/reflection/Beam-1.0-501B-A23B/commits/main?limit=40",
+          "executedAt": "2026-10-20T07:37:19.078273+00:00",
+          "artifact": "governance/evidence/2026-10-20/direct/beam-commits.json",
+          "sha256": "6623f67f4d3c159b28155e9ffceac4e4064a4041a302b5544dd4eb3a18c97d70",
+          "resultCount": 1
+        },
+        {
+          "query": "Targeted source read: https://api-docs.deepseek.com/updates/",
+          "executedAt": "2026-10-20T07:36:32.218107+00:00",
+          "artifact": "governance/evidence/2026-10-20/direct/deepseek-updates.md",
+          "sha256": "b9958f5a3041712701c55b56c4eb1a061f21b22a97373a5bd75ef4a518a8bd76",
+          "resultCount": 1
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Two new model-weight releases and one dated upgrade assessed; platform listings do not establish adoption or benchmark performance."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "FTC and China candidates retained on hold; no item-level legal conclusion."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "oct20-backfill-meta-muse-spark-open-20261015",
+      "eventId": "meta-muse-spark-open-2026",
+      "discoveryUrls": [
+        "https://research.meta.ai/blog/muse-spark-open",
+        "https://huggingface.co/collections/meta-models/muse-spark-open"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Meta announcement and HF collection contain located claims and weight repository links.",
+        "novelty": "Distinct October15 weight-availability stage, not identical to earlier Muse agent/code nodes.",
+        "spillover": "Access may matter to developers; no measured independent downstream adoption counted.",
+        "durability": "Meta lists hosted integrations, but sustained usage is unmeasured.",
+        "sourceQuality": "Meta primary plus independently operated HF host verifies listing, not performance."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Meta 10/15 open-weight action distinct from prior Muse 1.3/code/agent stages; host gate/license limits claim.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Date/actor/action and repository/endpoint stage?",
+          "finding": "Direct provider release/update plus host metadata only where independently observed.",
+          "evidenceIds": [
+            "meta-release",
+            "meta-gate"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independent observed adoption, workflow, cost or harm beyond availability?",
+          "finding": "No located independently measured downstream impact; avoid double-counting availability as impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "What limits licensing, provenance or change scope?",
+          "finding": "Primary restrictions and metadata establish narrow scope; independent performance/legal analysis not found.",
+          "evidenceIds": [
+            "meta-license",
+            "meta-gate"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Any sourced public factual dispute about this action?",
+          "finding": "No documented public dispute retained; limitations are not automatically controversy.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct20-reflection-beam-weights-20261016",
+      "eventId": "reflection-beam-open-weights-2026",
+      "discoveryUrls": [
+        "https://reflection.ai/blog/beam-is-available",
+        "https://huggingface.co/reflection/Beam-1.0-501B-A23B"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct October16 Reflection announcement and repository listing.",
+        "novelty": "Model weights availability is a distinct action from earlier previews.",
+        "spillover": "Developers can download weights; broader production uptake not confirmed.",
+        "durability": "Hosted beta and weights exist; adoption duration unknown.",
+        "sourceQuality": "Vendor + host verify release fact but not claimed frontier performance."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Reflection 10/16 announced weight availability; repository creation Oct7 does not itself date public release.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Date/actor/action and repository/endpoint stage?",
+          "finding": "Direct provider release/update plus host metadata only where independently observed.",
+          "evidenceIds": [
+            "beam-release",
+            "beam-host"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independent observed adoption, workflow, cost or harm beyond availability?",
+          "finding": "No located independently measured downstream impact; avoid double-counting availability as impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "What limits licensing, provenance or change scope?",
+          "finding": "Primary restrictions and metadata establish narrow scope; independent performance/legal analysis not found.",
+          "evidenceIds": [
+            "beam-license",
+            "beam-card-commit"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Any sourced public factual dispute about this action?",
+          "finding": "No documented public dispute retained; limitations are not automatically controversy.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "oct20-deepseek-v41-flash-1017-duplicate",
+      "eventId": "deepseek-v4-1-flash-2026",
+      "discoveryUrls": [
+        "https://api-docs.deepseek.com/updates/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Official dated API change log directly verifies upgrade.",
+        "novelty": "Version/alias update to the existing September release, not an independent original launch.",
+        "spillover": "Web, app and API are named surfaces, not measured customer outcomes.",
+        "durability": "Provider reports route changed but no third-party duration measurement.",
+        "sourceQuality": "One direct vendor origin; no independent corroboration of performance."
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "update",
+      "reason": "Official 10/17 revision of published 9/10 V4.1-Flash event; one existing ID, no duplicate initial release.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Date/actor/action and repository/endpoint stage?",
+          "finding": "Direct provider release/update plus host metadata only where independently observed.",
+          "evidenceIds": [
+            "deep-update"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independent observed adoption, workflow, cost or harm beyond availability?",
+          "finding": "No located independently measured downstream impact; avoid double-counting availability as impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "What limits licensing, provenance or change scope?",
+          "finding": "Primary restrictions and metadata establish narrow scope; independent performance/legal analysis not found.",
+          "evidenceIds": [
+            "deep-pricing"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Any sourced public factual dispute about this action?",
+          "finding": "No documented public dispute retained; limitations are not automatically controversy.",
+          "evidenceIds": []
+        }
+      },
+      "priorityOverrideReason": "Official 2026-10-17 version/alias change on web, app and API merits bounded correction of an existing published record despite pool triage; publication remains subject to full independent v2.4 review and human approval."
+    },
+    {
+      "candidateId": "oct20-backfill-ftc-investigative-demands-20261015",
+      "discoveryUrls": [
+        "https://www.cbsnews.com/news/ftc-subpoenas-anthropic-openai-consumer-protection/",
+        "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "CBS quotes FTC spokesperson but underlying demands are not retained.",
+        "novelty": "Formal document demands are a new procedural stage versus prior reported inquiry.",
+        "spillover": "Two named firms, no finding or demonstrated sector-wide legal consequence.",
+        "durability": "Ongoing investigation, no final adjudication or measured outcomes.",
+        "sourceQuality": "CBS and Axios report action; exact scope partly shares original Axios reporting."
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "CBS quotes an FTC spokesperson but original demands absent; reported dispatch Wednesday Oct14 vs disclosure Oct15; no finding of violation."
+    },
+    {
+      "candidateId": "oct20-china-tech-export-draft-registration-20261016",
+      "discoveryUrls": [
+        "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_61446ab4beee4f63973d4d0ab3097648.html"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Official MOFCOM announcement directly located and read on Oct20.",
+        "novelty": "October16 consultation and immediately effective temporary pre-export registration are different stages; do not call proposed list enacted.",
+        "spillover": "Potentially affects exporters of scoped technology, but downstream behavior not yet measured.",
+        "durability": "Temporary registration while revisions pending; permanence unknown.",
+        "sourceQuality": "Primary announcement and independent secondary discovery; no original attachment reviewed yet."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "hold",
+      "reason": "Oct16 official proposed list vs effective temporary registration; two original WPS annexes returned 403. Item-level scope and independent legal analysis blocked."
+    },
+    {
+      "candidateId": "oct20-minimax-m31-flash-20261019",
+      "discoveryUrls": [
+        "https://www.minimax.io/blog/minimax-m31f",
+        "https://vercel.com/changelog/minimax-m3-1-flash-now-available-on-ai-gateway-for-free"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Direct launch post and third-party gateway listing.",
+        "novelty": "Oct19 API model rollout distinct from earlier MiniMax models.",
+        "spillover": "Developer users can access API; external uptake not measured.",
+        "durability": "No sustained use or completed weights release confirmed.",
+        "sourceQuality": "Vendor primary plus platform confirmation of listing; benchmark claims remain vendor-only."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Vercel calls it open-weight, whereas provider explicitly promises weights later; retain API launch only pending weight-stage clarification."
+    }
+  ],
+  "parentDiscoveryRunId": "latest-data-full-followup-2026-10-20"
+}

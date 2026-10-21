@@ -1,0 +1,182 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "meta-muse-spark-open-2026",
+  "subjectDigest": "4756818e8a833d5cb6415c35980c9fb308528cf02cf01f34062b8e23a2fa1d66",
+  "inputsDigest": "65d62b19b80fee4856468d5000dbc2603dbba1ea0ff84049309601bef65884f1",
+  "evidenceCutoff": "2026-10-20",
+  "preparedBy": "pi-agent-session-019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "reviewedBy": "gemini:0d18f189-b8c4-4a4e-b458-45fa36a2a73f",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "adca7aa9-d249-46c8-aa5a-1360eb35f824",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "limitations": [
+    "Provider-authored cards are not independent performance validation; HF API verifies only platform fields at October20 capture.",
+    "Availability is not measured downstream adoption; no impact counted.",
+    "Offline contract validation checks structure and quotes, not factual truth or authenticated human approval.",
+    "Gemini read extracted HF API fields and located quote contexts, not the complete raw HF API payload; host state was separately checked against retained local bytes.",
+    "No human approval or production verification has occurred.",
+    "Gemini accepted this exact October21 published-state subject digest in genuine session adca7aa9-d249-46c8-aa5a-1360eb35f824; this is not human approval or live production verification."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Producer compared both languages line by line for date, parameter units, gate, license qualifiers and negatives; Gemini independently examined draft prose. Exact reviewed-record rebind still pending."
+  },
+  "evidence": [
+    {
+      "id": "meta-release",
+      "sourceId": "followup-20261020-meta-release",
+      "claimId": "meta-open-fact",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "originId": "meta-muse-spark-open-release",
+      "accessedAt": "2026-10-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we’re releasing the weights for Muse Spark Open",
+      "locator": "Opening: announcement",
+      "artifact": "governance/evidence/2026-10-20/direct/meta-muse.md",
+      "sha256": "a023cda99f57b527bfc69700629909ee30f0b42371d233a5124081277f101434"
+    },
+    {
+      "id": "meta-host-card",
+      "sourceId": "followup-20261020-meta-host",
+      "claimId": "meta-open-fact",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "originId": "meta-muse-spark-open-release",
+      "accessedAt": "2026-10-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Please be sure to provide your full legal name",
+      "locator": "Model repository access form",
+      "artifact": "governance/evidence/2026-10-20/direct/meta-hf-card.md",
+      "sha256": "d013581e5e1c24415e6407a63da77a27e1618d85f3b17520817b932230c17bca"
+    },
+    {
+      "id": "meta-gate",
+      "sourceId": "followup-20261020-meta-host-api",
+      "claimId": "meta-open-fact",
+      "url": "https://huggingface.co/api/models/meta-models/Muse-Spark-Open-816B-A42B",
+      "originId": "hf-meta-muse-host-observation",
+      "accessedAt": "2026-10-20",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "\"gated\":\"manual\"",
+      "locator": "API: gated field, current state",
+      "artifact": "governance/evidence/2026-10-20/direct/meta-hf-api.json",
+      "sha256": "cda79e0a7f127fc447c03118a910d297f22092b951e4e6426f87e02531de9e0c"
+    },
+    {
+      "id": "meta-blog-license",
+      "sourceId": "followup-20261020-meta-release",
+      "claimId": "meta-open-limitation",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "originId": "meta-muse-spark-open-release",
+      "accessedAt": "2026-10-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Muse Model License with limited commercial terms",
+      "locator": "License section",
+      "artifact": "governance/evidence/2026-10-20/direct/meta-muse.md",
+      "sha256": "a023cda99f57b527bfc69700629909ee30f0b42371d233a5124081277f101434"
+    },
+    {
+      "id": "meta-license",
+      "sourceId": "followup-20261020-meta-host",
+      "claimId": "meta-open-limitation",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "originId": "meta-muse-spark-open-release",
+      "accessedAt": "2026-10-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "aggregate gross revenue of the Licensee and its affiliates exceeds twenty (20) million US dollars",
+      "locator": "License §3, Model as a Service conditional scope",
+      "artifact": "governance/evidence/2026-10-20/direct/meta-hf-card.md",
+      "sha256": "d013581e5e1c24415e6407a63da77a27e1618d85f3b17520817b932230c17bca"
+    }
+  ],
+  "runId": "latest-data-targeted-followup-2026-10-20",
+  "candidateId": "oct20-backfill-meta-muse-spark-open-20261015",
+  "runDigest": "ab535a22aab89affa4666617bc73ad4eca5f3ed8924f12ff46492ae43e98ec06",
+  "coreFactClaimIds": [
+    "meta-open-fact"
+  ],
+  "identity": {
+    "seriesId": "meta-muse-spark",
+    "action": "weight availability",
+    "stage": "available",
+    "dateBasis": "Provider dated release statement for stated day; host current listing does not date the first downloadable file.",
+    "deduplicationReason": "Conditional weight access stage distinct from earlier Muse releases; Meta manual gate and special license narrow reach.",
+    "comparedEventIds": [
+      "meta-muse-spark-1-3-2026",
+      "meta-muse-code-spark-1-2-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Core action makes model weights available under stated access conditions; no independently demonstrated capability leap."
+  },
+  "significance": {
+    "rationale": "Dated model-weight release with host listing is a bounded L1 access event. Conditional weight access stage distinct from earlier Muse releases; Meta manual gate and special license narrow reach.",
+    "whyNotHigher": "No verified production adoption from two unrelated organizations, so L2-PRODUCT-ACCESS path is incomplete.",
+    "whyNotLower": "A located Tier-1 announcement plus host metadata substantiate a distinct availability action; this is not a title-only rumor.",
+    "comparisonEventIds": [
+      "stepfun-step-5-preview-open-weights-2026",
+      "glm-52-open-source-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "Observed release/listing changes availability, subject to license and gate; not alone enough for L2.",
+            "evidenceIds": [
+              "meta-release",
+              "meta-gate"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No verified count of unrelated organizations using model in production; partner distribution listings do not establish use.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Release fact is bounded; actual use and impact remain unmeasured, no broad consensus of impact."
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "Access/license limitations do not alone constitute a sourced public factual dispute."
+  },
+  "reviewProvenanceCaveat": "October21 final published-state subject digest accepted for shadow review by actual Gemini session adca7aa9-d249-46c8-aa5a-1360eb35f824; awaiting exact human approval.",
+  "reviewerSessionHistory": [
+    {
+      "sessionId": "d94e0b56-1ee4-4f3a-9f37-3be58fa840ed",
+      "role": "previous_reviewed_state_exact_acceptance",
+      "actualSession": true
+    },
+    {
+      "sessionId": "c1c1e455-ade5-4062-8ee2-0dd75fa9d9c8",
+      "role": "published_state_exact_acceptance",
+      "actualSession": true,
+      "sessionFile": "review/sessions/2026-10-21T01-20-45-784Z_c1c1e455-ade5-4062-8ee2-0dd75fa9d9c8.jsonl",
+      "sessionSha256": "3c591e22f9fcc6df99d9b0dae12d8753f398a4c27f05c25da61e9b3bdd9f04a1"
+    },
+    {
+      "sessionId": "adca7aa9-d249-46c8-aa5a-1360eb35f824",
+      "role": "oct21_final_published_state_exact_acceptance",
+      "actualSession": true,
+      "sessionFile": "review/sessions/2026-10-21T01-23-20-793Z_adca7aa9-d249-46c8-aa5a-1360eb35f824.jsonl",
+      "sessionSha256": "45ae09e8c12b5d5a67dc34a54fe1b3b55827a477fc572f8f9e421d004b67cd4d"
+    }
+  ]
+}
