@@ -1,0 +1,158 @@
+{
+  "id": "cloudflare-glm53-kv-cache-exposure-2026",
+  "slug": "cloudflare-glm53-kv-cache-exposure-2026",
+  "title": {
+    "en": "Cloudflare GLM-5.3 Workers AI cache exposure begins",
+    "zhHans": "Cloudflare GLM-5.3 Workers AI 开始发生跨请求缓存内容暴露"
+  },
+  "searchSummary": {
+    "en": "Cloudflare says GLM-5.3 Workers AI began returning other customers’ request content on August 27; it disclosed the incident on October 26 after restoring service on September 9.",
+    "zhHans": "Cloudflare 称 GLM-5.3 Workers AI 从 8 月 27 日起出现跨客户请求内容暴露；公司于 9 月 9 日恢复服务，并在 10 月 26 日公开披露。"
+  },
+  "summary": {
+    "en": "According to Cloudflare’s October 26 disclosure, a cache-isolation bug exposed content across requests on its GLM-5.3 Workers AI deployment from August 27 through September 9. Cloudflare reports 155 affected responses and says it restored the model on September 9 after remediation.",
+    "zhHans": "据 Cloudflare 10 月 26 日披露，其 GLM-5.3 Workers AI 部署的缓存隔离故障在 8 月 27 日至 9 月 9 日期间造成跨请求内容暴露。公司报告有 155 条响应受影响，并表示采取修复措施后于 9 月 9 日恢复模型服务。"
+  },
+  "narrative": {
+    "en": "Cloudflare says requests longer than its available prefill cache capacity could enter a disaggregated serving path after rejection and read cache pages from other sessions. SGLang’s coordinated report documents upstream fixes but explicitly defers Cloudflare customer-impact numbers to Cloudflare. The incident began on August 27; the provider reported it publicly on October 26, weeks after restoring service. Cloudflare says it found no evidence of deliberate exploitation; the independent researcher’s own report was not available in this evidence packet. No independent customer-count audit, wider provider exposure or downstream financial loss is established.",
+    "zhHans": "Cloudflare 称，当请求长度超过预填充缓存容量时，本应被拒的请求仍可能进入分离式推理流程并读取其他会话的缓存页。SGLang 的协同披露记载了上游修复，但明确将客户影响数据归于 Cloudflare 自身调查。故障始于 8 月 27 日；公司在恢复服务数周后的 10 月 26 日才公开披露。Cloudflare 称未发现蓄意利用的证据，本轮证据包也未取得独立研究员自己的报告；尚不能断言受影响客户数量经过独立审计、其他服务商受影响或出现下游经济损失。"
+  },
+  "date": "2026-08-27",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "Aug 27, 2026",
+    "zhHans": "2026年8月27日"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 3,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "impacts": [
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Cloudflare reports actual cross-request content exposure in 155 long-prompt responses on one hosted model during the August–September incident.",
+        "zhHans": "Cloudflare 报告称，8 至 9 月间其托管的一款模型有 155 条长提示词响应实际暴露了跨客户请求内容。"
+      },
+      "affectedGroups": [
+        "developers",
+        "infrastructure_operators"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "oct28-cloudflare-glm53-disclosure"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "cf-cache-disclosure",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "text": {
+        "en": "On October 26, Cloudflare disclosed that its GLM-5.3 Workers AI deployment had exposed content across requests between August 27 and September 9, 2026.",
+        "zhHans": "Cloudflare 于 10 月 26 日披露，其 GLM-5.3 Workers AI 部署在 2026 年 8 月 27 日至 9 月 9 日期间发生跨请求内容暴露。"
+      },
+      "sourceIds": [
+        "oct28-cloudflare-glm53-disclosure",
+        "oct28-sglang-cache-isolation-disclosure"
+      ]
+    },
+    {
+      "id": "cf-cache-exposure",
+      "claimType": "impact",
+      "evidenceGrade": "B",
+      "text": {
+        "en": "Cloudflare reports that 155 long-prompt responses contained content from other customers’ earlier requests; the count has not been independently audited in the sources reviewed.",
+        "zhHans": "Cloudflare 报告称，155 条长提示词请求的响应包含其他客户先前请求的内容；本轮所读来源尚未独立审计这一数量。"
+      },
+      "sourceIds": [
+        "oct28-cloudflare-glm53-disclosure"
+      ]
+    },
+    {
+      "id": "cf-cache-mechanism",
+      "claimType": "fact",
+      "evidenceGrade": "B",
+      "text": {
+        "en": "SGLang’s coordinated report describes an upstream fix for rejected requests entering a disaggregated handoff; Cloudflare says the affected model was restored on September 9.",
+        "zhHans": "SGLang 的协同披露说明了阻止被拒请求进入分离式处理流程的上游修复；Cloudflare 表示受影响模型已于 9 月 9 日恢复服务。"
+      },
+      "sourceIds": [
+        "oct28-cloudflare-glm53-disclosure",
+        "oct28-sglang-cache-isolation-disclosure"
+      ]
+    },
+    {
+      "id": "cf-cache-limit",
+      "claimType": "limitation",
+      "evidenceGrade": "B",
+      "text": {
+        "en": "SGLang defers customer-impact figures to Cloudflare; Cloudflare says it found no evidence of deliberate exploitation, which does not establish that exploitation was impossible.",
+        "zhHans": "SGLang 将客户影响数据归于 Cloudflare 的调查；Cloudflare 称未发现蓄意利用的证据，但这不等于证明利用不可能发生。"
+      },
+      "sourceIds": [
+        "oct28-cloudflare-glm53-disclosure",
+        "oct28-sglang-cache-isolation-disclosure"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "oct28-cloudflare-glm53-disclosure",
+      "supports": [
+        "cf-cache-disclosure",
+        "cf-cache-exposure",
+        "cf-cache-mechanism",
+        "cf-cache-limit"
+      ]
+    },
+    {
+      "sourceId": "oct28-sglang-cache-isolation-disclosure",
+      "supports": [
+        "cf-cache-disclosure",
+        "cf-cache-mechanism",
+        "cf-cache-limit"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "glm-5-3-coding-cyber-launch-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-10-28",
+    "updatedAt": "2026-10-28",
+    "lastSourceCheckAt": "2026-10-28",
+    "curator": "pi-agent-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "changeLog": [
+      {
+        "date": "2026-10-28",
+        "changeType": "created",
+        "summary": "Unpublished retrospective incident draft: action began 2026-08-27, originally disclosed 2026-10-26, evidence actually read 2026-10-28. Old disclosure-date draft failed the formal impact observation chronology check; not a historical review or backdated first publication."
+      },
+      {
+        "date": "2026-10-28",
+        "changeType": "correction",
+        "summary": "Provisional reviewed-state subject prepared after genuine Gemini draft session 01a181d7-2a8d-75ed-b307-f0104ac647de; exact reviewed-state digest still awaits independent rebind and is not approved for publication."
+      },
+      {
+        "date": "2026-10-28",
+        "changeType": "correction",
+        "summary": "Isolated proposed initial publication on actual UTC day 2026-10-28 only; not yet human approved or publicly published. If publishing on another UTC day, revise and re-review."
+      }
+    ],
+    "reviewedAt": "2026-10-28",
+    "reviewer": "gemini:01a181d7-2a8d-75ed-b307-f0104ac647de",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/independent-20261028/cloudflare-glm53-kv-cache-exposure-2026.json",
+    "publishedAt": "2026-10-28"
+  }
+}

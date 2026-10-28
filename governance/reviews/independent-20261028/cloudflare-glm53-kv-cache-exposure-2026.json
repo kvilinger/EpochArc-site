@@ -1,0 +1,249 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "cloudflare-glm53-kv-cache-exposure-2026",
+  "subjectDigest": "b089885f7c6c9dd4edede47e3eb84adb7c5505613e28d3c33ae8d2c2956399c8",
+  "inputsDigest": "b1b70490816ba9c0e0f5436b237c1aca8da8c80f935bf42a005220298cf41ffd",
+  "evidenceCutoff": "2026-10-28",
+  "preparedBy": "pi-agent-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a181d7-2a8d-75ed-b307-f0104ac647de",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a181ec-f684-7773-9ed6-93d33330d2f6",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "limitations": [
+    "Cloudflare 155-response telemetry is self-reported; coordinated SGLang does not independently audit customer impact.",
+    "This event is dated to Aug27 actual incident start, using material publicly disclosed Oct26 and actually read Oct28; no historical editorial review or first-publication date is claimed.",
+    "Independent researcher report was not retained; L2-SAFETY independent investigation is unknown.",
+    "Full validator checks structure, not semantic factual truth or human approval.",
+    "Human approval and actual production publication have NOT occurred.",
+    "Gemini exact published-state shadow acceptance was returned in session 01a181ec-f684-7773-9ed6-93d33330d2f6; this is not human approval or production deployment.",
+    "Two prior automatic assistant attempts in this same session ended with stopReason=error and no review text; the final assistant attempt returned a complete successful verdict."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Producer checked Aug27/Sep9/Oct26 chronology, 155 as Cloudflare report, no independent audit, no evidence vs impossibility and both languages; Gemini accepted exact prior draft, not this exact reviewed status."
+  },
+  "evidence": [
+    {
+      "id": "cf-publication",
+      "sourceId": "oct28-cloudflare-glm53-disclosure",
+      "claimId": "cf-cache-disclosure",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "originId": "cloudflare-glm53-incident-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Original publication metadata: 2026-10-26T22:01:23.889Z",
+      "locator": "Extract header from Cloudflare original article metadata",
+      "artifact": "governance/evidence/2026-10-28/direct/cf-source-extract.md",
+      "sha256": "2e6428c5c638d657437ec792b40713c5527872c8d1f98216a375159bd1261914"
+    },
+    {
+      "id": "cf-period",
+      "sourceId": "oct28-cloudflare-glm53-disclosure",
+      "claimId": "cf-cache-disclosure",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "originId": "cloudflare-glm53-incident-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Between August 27 and September 9",
+      "locator": "Opening incident scope section",
+      "artifact": "governance/evidence/2026-10-28/direct/cf-source-extract.md",
+      "sha256": "2e6428c5c638d657437ec792b40713c5527872c8d1f98216a375159bd1261914"
+    },
+    {
+      "id": "sglang-joint",
+      "sourceId": "oct28-sglang-cache-isolation-disclosure",
+      "claimId": "cf-cache-disclosure",
+      "url": "https://www.lmsys.org/blog/2026-10-26-cf-security",
+      "originId": "sglang-cache-isolation-disclosure",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "On September 9, 2026, Cloudflare notified us of cross-request KV cache exposure",
+      "locator": "SGLang opening acknowledgement of incident, not customer count",
+      "artifact": "governance/evidence/2026-10-28/direct/sglang-source-extract.md",
+      "sha256": "a7d20b9aba4d60ca0ebac1bdb6c02f2e3f95f6e10e7ca2a58c41bba6ed5423e7"
+    },
+    {
+      "id": "cf-impact",
+      "sourceId": "oct28-cloudflare-glm53-disclosure",
+      "claimId": "cf-cache-exposure",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "originId": "cloudflare-glm53-incident-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "In total, 155 responses were affected",
+      "locator": "Cloudflare original impact paragraph; self-reported count",
+      "artifact": "governance/evidence/2026-10-28/direct/cf-source-extract.md",
+      "sha256": "2e6428c5c638d657437ec792b40713c5527872c8d1f98216a375159bd1261914"
+    },
+    {
+      "id": "cf-restoration",
+      "sourceId": "oct28-cloudflare-glm53-disclosure",
+      "claimId": "cf-cache-mechanism",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "originId": "cloudflare-glm53-incident-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "we restored the model on September 9",
+      "locator": "Cloudflare original opening restoration statement",
+      "artifact": "governance/evidence/2026-10-28/direct/cf-source-extract.md",
+      "sha256": "2e6428c5c638d657437ec792b40713c5527872c8d1f98216a375159bd1261914"
+    },
+    {
+      "id": "sglang-mechanism",
+      "sourceId": "oct28-sglang-cache-isolation-disclosure",
+      "claimId": "cf-cache-mechanism",
+      "url": "https://www.lmsys.org/blog/2026-10-26-cf-security",
+      "originId": "sglang-cache-isolation-disclosure",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Follow-up change #38935 stops intake-rejected requests earlier, before they enter the disaggregated handoff",
+      "locator": "SGLang immediate remediation and upstream fix",
+      "artifact": "governance/evidence/2026-10-28/direct/sglang-source-extract.md",
+      "sha256": "a7d20b9aba4d60ca0ebac1bdb6c02f2e3f95f6e10e7ca2a58c41bba6ed5423e7"
+    },
+    {
+      "id": "cf-no-evidence",
+      "sourceId": "oct28-cloudflare-glm53-disclosure",
+      "claimId": "cf-cache-limit",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "originId": "cloudflare-glm53-incident-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We found no evidence of deliberate exploitation",
+      "locator": "Cloudflare incident impact paragraph; not proof of impossibility",
+      "artifact": "governance/evidence/2026-10-28/direct/cf-source-extract.md",
+      "sha256": "2e6428c5c638d657437ec792b40713c5527872c8d1f98216a375159bd1261914"
+    },
+    {
+      "id": "sglang-limitation",
+      "sourceId": "oct28-sglang-cache-isolation-disclosure",
+      "claimId": "cf-cache-limit",
+      "url": "https://www.lmsys.org/blog/2026-10-26-cf-security",
+      "originId": "sglang-cache-isolation-disclosure",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Cloudflare’s report covers its production incident and customer impact",
+      "locator": "SGLang coordinated disclosure; impact defers to Cloudflare",
+      "artifact": "governance/evidence/2026-10-28/direct/sglang-source-extract.md",
+      "sha256": "a7d20b9aba4d60ca0ebac1bdb6c02f2e3f95f6e10e7ca2a58c41bba6ed5423e7"
+    }
+  ],
+  "runId": "latest-data-targeted-cloudflare-incident-backfill-2026-10-28",
+  "candidateId": "oct28-cloudflare-glm53-kv-incident-backfill",
+  "runDigest": "e70daa74e04f518797d38c8bb1647d15ead6ae05ee15174b791825e97397b16a",
+  "coreFactClaimIds": [
+    "cf-cache-disclosure",
+    "cf-cache-mechanism"
+  ],
+  "identity": {
+    "seriesId": "cloudflare-glm53-cache-isolation",
+    "action": "cross-request cache exposure starts",
+    "stage": "incident",
+    "dateBasis": "Cloudflare Oct26 public report says issue began on Aug27; evidence actually read Oct28; first publishedAt not set.",
+    "deduplicationReason": "One GLM-5.3 production incident distinct from Aug14 model launch; Oct26 public disclosure is part of same incident record, not a second incident.",
+    "comparedEventIds": [
+      "glm-5-3-coding-cyber-launch-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Cross-request content exposure and containment failure on a hosted model are a safety/security incident, not a new capability or product launch."
+  },
+  "significance": {
+    "rationale": "A dated production cross-tenant cache exposure incident is a documented L1 event; no L2 independent investigation retained.",
+    "whyNotHigher": "The researcher original report was not obtained and coordinated SGLang refers the customer count to Cloudflare; the independent investigation criterion is unknown.",
+    "whyNotLower": "Original provider and upstream coordinated reports identify a real incident window and upstream fix; distinct from speculation or a model benchmark.",
+    "comparisonEventIds": [
+      "anthropic-third-party-cyber-evaluation-incidents-2026",
+      "openai-hf-breach-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY",
+        "criteria": {
+          "documented_incident": {
+            "value": true,
+            "rationale": "Cloudflare directly documents exposure in 155 responses by its own telemetry, provider-reported only.",
+            "evidenceIds": [
+              "cf-impact",
+              "cf-period"
+            ]
+          },
+          "external_remedial_action": {
+            "value": true,
+            "rationale": "Upstream SGLang directly describes an intake-rejected handoff correction; it collaborated with Cloudflare and did not audit customers.",
+            "evidenceIds": [
+              "sglang-mechanism"
+            ]
+          },
+          "independent_investigation": {
+            "value": null,
+            "rationale": "Researcher report not in packet; coordinated upstream fix is not an independent impact investigation.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "risk_creation",
+      "observation": "observed",
+      "evidenceIds": [
+        "cf-impact",
+        "cf-period",
+        "cf-restoration"
+      ],
+      "observedSince": "2026-08-27",
+      "observedUntil": "2026-09-09",
+      "baseline": "Host serves one customer’s long request without returning another customer’s content.",
+      "outcome": "Cloudflare reports 155 responses returned other customers’ request content across isolation boundary, then restored service.",
+      "materialChange": true
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Disclosure/technical cause reported; provider-reported affected-response count lacks independent audit or measured downstream consequences."
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "An unavailable independent researcher report and lack of verified exploitation are limits, not a documented contrary factual position."
+  },
+  "reviewProvenanceCaveat": "Exact published-state subject accepted for shadow review in actual session 01a181ec-f684-7773-9ed6-93d33330d2f6; waiting for human exact-digest approval. Initial attempts failed, followed by complete successful response.",
+  "reviewerSessionHistory": [
+    {
+      "role": "draft_state_review",
+      "sessionId": "01a181d7-2a8d-75ed-b307-f0104ac647de",
+      "actualSession": true
+    },
+    {
+      "role": "reviewed_state_exact_review",
+      "sessionId": "01a181da-6f15-7230-aaca-bba7d6f5acee",
+      "actualSession": true,
+      "sessionFile": "review/sessions/2026-10-28T09-32-18-361Z_01a181da-6f15-7230-aaca-bba7d6f5acee.jsonl",
+      "sessionSha256": "7d61cc84402d3236fbfb59a1d4b4717ff4d2c5a569a385ae9e11ad5e2f5b8105"
+    },
+    {
+      "role": "published_state_exact_acceptance",
+      "sessionId": "01a181ec-f684-7773-9ed6-93d33330d2f6",
+      "actualSession": true,
+      "sessionFile": "review/sessions/2026-10-28T09-52-32-901Z_01a181ec-f684-7773-9ed6-93d33330d2f6.jsonl",
+      "sessionSha256": "96f5fd9cd86440b560a8b60e2a475df7de41a73d21aecacf8511e0888a97fed9",
+      "successfulFinalResponseOnly": true,
+      "priorErrorResponses": 2
+    }
+  ]
+}

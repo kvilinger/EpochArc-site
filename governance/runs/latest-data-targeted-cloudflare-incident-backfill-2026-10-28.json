@@ -1,0 +1,126 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-targeted-cloudflare-incident-backfill-2026-10-28",
+  "kind": "backfill",
+  "scopeReason": "Retrospectively document the Aug27 cache-isolation incident actually disclosed Oct26, with Oct28 read evidence; prior Oct26 disclosure-node draft cannot carry pre-disclosure observed impact under v2.4 review contract.",
+  "windowStart": "2026-10-21",
+  "windowEnd": "2026-10-28",
+  "evidenceCutoff": "2026-10-28",
+  "timezone": "UTC",
+  "baselineCommit": "6795a4de1f239aff7b0e628e33b1d8658cbec119",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "promptVersion": "20261028-cloudflare-retrospective-incident-draft-v2",
+  "channels": [
+    {
+      "id": "direct-primary-and-coordinated",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Two directly opened actor-authored disclosures; Cloudflare report and coordinated SGLang technical post, not independent impact audit.",
+      "reason": "Researcher original report not yet public; no independently verified customer count.",
+      "retryResult": "SGLang original read October28 following Gemini discovery critique; no gated/private bypass.",
+      "attempts": [
+        {
+          "query": "Extract actual direct read: https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+          "executedAt": "2026-10-28T08:54:11.912136+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/cf-source-extract.md",
+          "sha256": "2e6428c5c638d657437ec792b40713c5527872c8d1f98216a375159bd1261914",
+          "resultCount": 1
+        },
+        {
+          "query": "Extract actual direct read: https://www.lmsys.org/blog/2026-10-26-cf-security",
+          "executedAt": "2026-10-28T09:10:38.722344+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/sglang-source-extract.md",
+          "sha256": "a7d20b9aba4d60ca0ebac1bdb6c02f2e3f95f6e10e7ca2a58c41bba6ed5423e7",
+          "resultCount": 1
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Provider-described historic exposure and remediation; researcher independent report unavailable."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "oct28-cloudflare-glm53-kv-incident-backfill",
+      "discoveryUrls": [
+        "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Cloudflare original incident write-up directly read.",
+        "novelty": "Oct26 disclosure of cross-request exposure distinct from August GLM launch.",
+        "spillover": "Impacted Cloudflare Workers AI users only; no sector-wide effect measured.",
+        "durability": "Cloudflare reports September remediation and October public disclosure.",
+        "sourceQuality": "Independent write-ups mostly repeat Cloudflare; researcher/origin not separately read."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "new",
+      "reason": "Historical Aug27–Sep9 cross-request exposure disclosed Oct26; count self-reported, no independent researcher report yet. Current event date is start, not the editor read or disclosure date.",
+      "identity": {
+        "seriesId": "cloudflare-glm53-cache-isolation",
+        "action": "cross-request cache exposure begins",
+        "stage": "incident",
+        "dateBasis": "Cloudflare October26 report directly states issue starting August27; source read October28; publishedAt will only reflect actual future publication.",
+        "comparedEventIds": [
+          "glm-5-3-coding-cyber-launch-2026"
+        ],
+        "decision": "new",
+        "deduplicationReason": "A dated production incident in one Cloudflare deployment is distinct from Z.ai GLM model launch and from a later Oct26 disclosure-only node. One incident record, not duplicate published nodes."
+      },
+      "eventId": "cloudflare-glm53-kv-cache-exposure-2026",
+      "priorityOverrideReason": "Observed cross-request content exposure in a provider production deployment merits bounded L1 factual confirmation despite pool priority; release still needs exact independent event review and human approval.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "What did Cloudflare disclose, which model/period and how many responses were reported?",
+          "finding": "Cloudflare disclosed on Oct26 that a GLM-5.3 Workers AI request-isolation bug between Aug27 and Sep9 affected 155 responses according to its own investigation; SGLang separately coauthored the technical correction. The response count is self-reported.",
+          "evidenceIds": [
+            "cf-publication",
+            "cf-impact",
+            "sglang-joint"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "What security consequence actually occurred, not merely possible risk or exploitation?",
+          "finding": "Cloudflare reports affected responses could contain content from other customers’ earlier requests; 155 responses affected, all long prompts. This is self-reported exposure, not measured downstream exploitation or financial loss.",
+          "evidenceIds": [
+            "cf-impact"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "What operational limit and remediation can an upstream actor directly confirm?",
+          "finding": "SGLang described how rejected long requests could still enter disaggregated handoff and identified upstream request-isolation patches; it defers Cloudflare customer numbers to Cloudflare.",
+          "evidenceIds": [
+            "sglang-mechanism",
+            "sglang-limitation"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Was deliberate exploitation or broader deployments independently established, or was a contradictory audit located?",
+          "finding": "Cloudflare reports no evidence of deliberate exploitation; this does not prove absence. No independent affected-customer count or researcher report obtained by Oct28.",
+          "evidenceIds": []
+        }
+      },
+      "discoveryContext": "Retrospective historical incident discovered via Oct26 public disclosure, read Oct28; not known to editor on Aug27."
+    }
+  ],
+  "parentDiscoveryRunId": "latest-data-full-2026-10-28-r2",
+  "parentDiscoveryRunDigest": "2c8eef56d1b8700464b1c971d324d3e4f58fbc0baea1c974c456ae0763946502",
+  "parentTargetedRunId": "latest-data-targeted-cloudflare-disclosure-2026-10-28",
+  "parentTargetedRunDigest": "e2b6673ef4c623b5f39aecbbb1cd027f72148f8941b6a395e9ce0ddb5c1844a9"
+}

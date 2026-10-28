@@ -71,6 +71,7 @@ export const EVENT_ROUTES = Object.freeze({
   "claude-sonnet-5-5-2026": "claude-sonnet-5-5-2026",
   "claude-sonnet-5-launch-2026": "claude-sonnet-5-launch-2026",
   "cloudflare-clef-decision-models-2026": "cloudflare-clef-decision-models-2026",
+  "cloudflare-glm53-kv-cache-exposure-2026": "cloudflare-glm53-kv-cache-exposure-2026",
   "crusoe-series-f-2026": "crusoe-series-f-2026",
   "dall-e": "dall-e",
   "dall-e-2": "dall-e-2",

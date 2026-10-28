@@ -1,0 +1,12 @@
+{
+  "requestedAtUTC": "2026-10-28T08:54:11.912136+00:00",
+  "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+  "curlExit": 0,
+  "httpStatus": "200",
+  "metadata": "CURL_STATUS:200;TYPE:text/html;FINAL:https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+  "error": "",
+  "sha256": "4ffd23c26abd9c7bbbc484e377ae1b7055019e63e6aa397ac22901b7792c6037",
+  "bytes": 308522,
+  "textPreview": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang | Cloudflare Blog Skip to content Security Workers AI October 26, 2026 Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang Kevin Flansburg and Michelle Chen 16 minute read COPY URL On September 8, 2026, we were alerted by a security researcher, Gadi Evron from Knostic , to a tenant isolation issue affecting the GLM-5.3 Workers AI model ( @cf/zai-org/glm-5.3 ) starting on August 27, 2026. We have remediated the issue, and we restored the model on September 9. We have confirmed that no other model hosted on Workers AI was affected. Between August 27 and September 9, a small number of customers using the GLM 5.3 Workers AI model received responses that contained data from other customers' requests made to the same model shortly before theirs. In total, 155 responses were affected, all to prompts longer than 681,280 tokens. After excluding our own testing and the researcher's, the requests we identified are consistent in timing and volume with ordi",
+  "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang | Cloudflare Blog"
+}

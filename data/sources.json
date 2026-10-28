@@ -6886,5 +6886,33 @@
     "publishedAt": "2026-10-17",
     "accessedAt": "2026-10-20",
     "independence": "primary_actor"
+  },
+  {
+    "id": "oct28-cloudflare-glm53-disclosure",
+    "type": "official",
+    "tier": 1,
+    "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+    "publisher": "Cloudflare",
+    "publisherId": "cloudflare",
+    "originId": "cloudflare-glm53-incident-report",
+    "publishedAt": "2026-10-26",
+    "accessedAt": "2026-10-28",
+    "independence": "primary_actor",
+    "notes": "Original account of its own production incident; affected-response count is self-reported, not independently audited."
+  },
+  {
+    "id": "oct28-sglang-cache-isolation-disclosure",
+    "type": "official",
+    "tier": 1,
+    "title": "SGLang security update: improving request isolation",
+    "url": "https://www.lmsys.org/blog/2026-10-26-cf-security",
+    "publisher": "SGLang Team",
+    "publisherId": "sglang",
+    "originId": "sglang-cache-isolation-disclosure",
+    "publishedAt": "2026-10-26",
+    "accessedAt": "2026-10-28",
+    "independence": "primary_actor",
+    "notes": "Coordinated technical remediation account; refers customer-impact measurements to Cloudflare."
   }
 ]

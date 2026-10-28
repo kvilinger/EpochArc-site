@@ -1,0 +1,1087 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-full-2026-10-28-r2",
+  "kind": "full",
+  "windowStart": "2026-10-21",
+  "windowEnd": "2026-10-28",
+  "evidenceCutoff": "2026-10-28",
+  "timezone": "UTC",
+  "baselineCommit": "6795a4de1f239aff7b0e628e33b1d8658cbec119",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "promptVersion": "20261028-discovery-r2-after-independent-feedback-v1",
+  "channels": [
+    {
+      "id": "hf-papers",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Eight dated daily ranked snapshots, including two zero-list weekend responses; 315 items in returned lists; dates refer to daily listing, not necessarily paper publication.",
+      "reason": "HF daily_papers is ranked/selected, not exhaustive research recall.",
+      "retryResult": "October21 first SSL failure retried successfully; all eight dated requests returned 200.",
+      "attempts": [
+        {
+          "query": "Hugging Face ranked daily_papers date=2026-10-21&limit=100 (not complete archive)",
+          "executedAt": "2026-10-28T08:50:32.466541+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hf-2026-10-21.json",
+          "sha256": "d2b1fd5b64bfa5d367b3cccdb0a7b2ebbf51634fe8edd5ac5cfad08bd9fdd8b7",
+          "resultCount": 64
+        },
+        {
+          "query": "Hugging Face ranked daily_papers date=2026-10-22&limit=100 (not complete archive)",
+          "executedAt": "2026-10-28T08:49:37.465564+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hf-2026-10-22.json",
+          "sha256": "d776bfdcded5624a4d8bec4940675a86ac4385445dff95395c87d9f8cb546b14",
+          "resultCount": 58
+        },
+        {
+          "query": "Hugging Face ranked daily_papers date=2026-10-23&limit=100 (not complete archive)",
+          "executedAt": "2026-10-28T08:49:38.204441+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hf-2026-10-23.json",
+          "sha256": "a805e3633fc111a2008597d3a43270f2f4d97d6d0e9f9309bfa538040d7f2f07",
+          "resultCount": 49
+        },
+        {
+          "query": "Hugging Face ranked daily_papers date=2026-10-24&limit=100 (not complete archive)",
+          "executedAt": "2026-10-28T08:49:38.559338+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hf-2026-10-24.json",
+          "sha256": "cbf753161505f1de18947f9ee0b55c818260b19148b0e99b076621288de28e65",
+          "resultCount": 0
+        },
+        {
+          "query": "Hugging Face ranked daily_papers date=2026-10-25&limit=100 (not complete archive)",
+          "executedAt": "2026-10-28T08:49:38.966380+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hf-2026-10-25.json",
+          "sha256": "9189359978f9f76917b93ae270fe2ef647377bcde83d639f58ecff9c677b5cde",
+          "resultCount": 0
+        },
+        {
+          "query": "Hugging Face ranked daily_papers date=2026-10-26&limit=100 (not complete archive)",
+          "executedAt": "2026-10-28T08:49:39.717259+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hf-2026-10-26.json",
+          "sha256": "843641c88b7efa7a1190e19e8825278f26871404ce41d046a0db1928df07f5b9",
+          "resultCount": 45
+        },
+        {
+          "query": "Hugging Face ranked daily_papers date=2026-10-27&limit=100 (not complete archive)",
+          "executedAt": "2026-10-28T08:49:40.874713+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hf-2026-10-27.json",
+          "sha256": "2c72a9e94c90ada6db353b0152a5d0a1998fbf3d0a47e7f0efdab7b98fe2a840",
+          "resultCount": 63
+        },
+        {
+          "query": "Hugging Face ranked daily_papers date=2026-10-28&limit=100 (not complete archive)",
+          "executedAt": "2026-10-28T08:49:45.085781+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hf-2026-10-28.json",
+          "sha256": "21a0bf9edcd58800e0ba7dc038487780133588d105c876638419316975ce6d11",
+          "resultCount": 36
+        }
+      ]
+    },
+    {
+      "id": "hacker-news",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "AI title/text keyword, 1,412 indexed hits captured across two four-day Algolia date partitions, plus an initial 1,000-result capped window query.",
+      "reason": "Keyword index is not all HN submissions; score/points are discovery signals, not evidence of actual adoption.",
+      "retryResult": "Partitioned 1,412-hit query after API returned zero beyond page9; 802+610 records obtained.",
+      "attempts": [
+        {
+          "query": "Algolia HN AI keyword original window page=0 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:49:46.663839+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-0.json",
+          "sha256": "78d175c11b820b2203b75443787dfe089d01e10de5e7d8d9495d63d6ed7df801",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=1 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:49:48.506875+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-1.json",
+          "sha256": "19d7f2d0435d0204a94a33ee3a29c91ecc1becc9de57f6b5c85824175cfd3fcd",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=2 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:49:50.319970+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-2.json",
+          "sha256": "9ffc63da2103c84c80428abb0f76365859ae6ba1d21fb6b0d91a4a2b028c6f64",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=3 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:49:52.738891+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-3.json",
+          "sha256": "6abb6a8017adfd6fed71890abc972a6ef045c2066bfe66b8d5bc31fd065f6150",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=4 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:49:55.094006+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-4.json",
+          "sha256": "de3ec82d63d62ed7c1b4eb52173855cedf25840606c28331d96c3aed7a135303",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=5 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:49:56.187853+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-5.json",
+          "sha256": "15c7b13926c637116fe74e8ab840f8732eda6156d8fb426670c84e9beda6d638",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=6 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:33.398843+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-6.json",
+          "sha256": "bb2fe0003028cc91d12ab9e94a80e00abc54773853028427e49513c81ca4726e",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=7 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:36.835385+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-7.json",
+          "sha256": "317449762882d1ccc875afc8e08f01b77cec7c5f32c231042dee602afa44e753",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=8 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:37.689335+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-8.json",
+          "sha256": "871160cbfe4f8a866c6e348bcd7472ef7e003e51f08fd52e197a596542908683",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=9 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:43.213077+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-9.json",
+          "sha256": "c09cc6c2eed5f6a9fd06a6d031c2948ec894933bf5a0f16dde8ee4cbc62da559",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=10 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:43.769623+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-10.json",
+          "sha256": "81321a3ffbda046cc8381a4cd984d891d80013dd8ea6df2f7b0121cc8b660c0b",
+          "resultCount": 0
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=11 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:44.237505+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-11.json",
+          "sha256": "f8b80cd71e4628dae588dc341464ed0018cd92bc82f584b340d6033032ae3470",
+          "resultCount": 0
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=12 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:45.253819+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-12.json",
+          "sha256": "32ef700886886c7132079bf7a19a8a5b9002581679f36489a891627548792bb8",
+          "resultCount": 0
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=13 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:45.874219+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-13.json",
+          "sha256": "e649ed4620941406e366d899327b358f44fba1a2f782b7377e8626c1c6650709",
+          "resultCount": 0
+        },
+        {
+          "query": "Algolia HN AI keyword original window page=14 (single query capped at 1,000)",
+          "executedAt": "2026-10-28T08:50:46.373206+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-page-14.json",
+          "sha256": "a45c9db31beb3f1cc5685e27556008521798116a7b0fa2be55f1503dac34536a",
+          "resultCount": 0
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=0",
+          "executedAt": "2026-10-28T08:51:17.079753+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-0.json",
+          "sha256": "cbac93ae88ae1dc521f1a42961728d264fe9ea958b387e3d7fc2c55e0a096499",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=1",
+          "executedAt": "2026-10-28T08:51:18.006971+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-1.json",
+          "sha256": "6939bd369fc52715f99b738484a60a465d86990a9440586b9732d57a70d77379",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=2",
+          "executedAt": "2026-10-28T08:51:19.400533+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-2.json",
+          "sha256": "5145ec4faa05cd133a270c502261389fd94d604e89b4d388a9b3beec2245dc6e",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=3",
+          "executedAt": "2026-10-28T08:51:22.722140+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-3.json",
+          "sha256": "b8ab388e1a5b2effa26ecd517fd583c31e83a1e00a19f3195a5ff4614cd181f3",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=4",
+          "executedAt": "2026-10-28T08:51:23.480002+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-4.json",
+          "sha256": "3e2f599517205661c2709ef5dfa4b44861bd15cf68a852cc2c8d892936175eb7",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=5",
+          "executedAt": "2026-10-28T08:51:24.495454+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-5.json",
+          "sha256": "67e52ab0bb5be690971e9da95bc7f2f0b6fd6f5bf2b64592ad952ff92612dfb5",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=6",
+          "executedAt": "2026-10-28T08:51:25.296481+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-6.json",
+          "sha256": "b9f0417541bfb23d20e520d546884403ef129b0b789b9e77662ac123f5473d46",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=7",
+          "executedAt": "2026-10-28T08:51:26.174604+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-7.json",
+          "sha256": "07c9901cd3f3c11c3ab41af2ea0fc4a14bfcadf409bd3bff747bbd67e6ad319c",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword early date partition page=8",
+          "executedAt": "2026-10-28T08:51:26.677007+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-early-page-8.json",
+          "sha256": "e0e725538b4eda509ad5ab2377a2833b582b549222fa7071a96fa2b758e1f72f",
+          "resultCount": 2
+        },
+        {
+          "query": "Algolia HN AI keyword late date partition page=0",
+          "executedAt": "2026-10-28T08:51:27.486686+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-late-page-0.json",
+          "sha256": "fda95754601791953e3115b480f7f181a2db0ae3e8d6a828f53ce8ee496c8ddd",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword late date partition page=1",
+          "executedAt": "2026-10-28T08:51:28.519395+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-late-page-1.json",
+          "sha256": "dc37afe3f32a51e5c17f827e0726ed2021aa396d18b120ac705fd43f47731101",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword late date partition page=2",
+          "executedAt": "2026-10-28T08:51:29.297219+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-late-page-2.json",
+          "sha256": "779ff7460d7d0f8ac9a1d1253a6bf22a662e54e4bca2cf16dc31d35c4b17319a",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword late date partition page=3",
+          "executedAt": "2026-10-28T08:51:30.128487+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-late-page-3.json",
+          "sha256": "ac71b5804297f562cedce5231b9b45d64b3f3c60bef077f1c22f2949f1db91de",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword late date partition page=4",
+          "executedAt": "2026-10-28T08:51:31.809195+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-late-page-4.json",
+          "sha256": "3b8cca3759fe9a8c6c071bac83583214b60dffc1687a484889c5272f0925be2e",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword late date partition page=5",
+          "executedAt": "2026-10-28T08:51:35.630601+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-late-page-5.json",
+          "sha256": "15c643c7d45ca7e3017abb01b9cbe0f7c6f0975650e13c9ba0cd0488b88d66cf",
+          "resultCount": 100
+        },
+        {
+          "query": "Algolia HN AI keyword late date partition page=6",
+          "executedAt": "2026-10-28T08:51:36.279953+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/hn-ai-late-page-6.json",
+          "sha256": "f23206fb0ef9b177961a0d56ffe8d6acfd594841104b610d5212c9554aef9630",
+          "resultCount": 10
+        }
+      ]
+    },
+    {
+      "id": "reddit-search",
+      "status": "unavailable",
+      "windowCovered": false,
+      "coverageNote": "Brave site-scoped query returned zero; platform query timed out without any content.",
+      "reason": "No accessible Reddit post body in this run; zero web-index results do not mean no relevant posts.",
+      "retryResult": "Public search request returned 0, single platform query reached 75s timeout; no login or further bypass attempted.",
+      "attempts": [
+        {
+          "query": "Public indexed Reddit site query for window",
+          "executedAt": "2026-10-28T08:49:13.709873+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-reddit-public.json",
+          "sha256": "0553f7e0739ccc7528db1a7e83cd92d85d04f8bf6d063205b5eccedba8bde4b6",
+          "resultCount": 0
+        },
+        {
+          "query": "Platform Reddit search; process timeout at 75 seconds",
+          "executedAt": "2026-10-28T08:52:47.728521+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/reddit-platform.json",
+          "sha256": "ad2e7811c6db9f696d551270fc54c14d0ec72762aeba5a866a6feb8232aade49",
+          "resultCount": 0
+        }
+      ]
+    },
+    {
+      "id": "x-search",
+      "status": "unavailable",
+      "windowCovered": false,
+      "coverageNote": "Web index returned 10 X-linked snippets, but platform search returned UPSTREAM_BROKEN; no X content body checked.",
+      "reason": "An X search index snippet is not authenticated/platform coverage or validated engagement.",
+      "retryResult": "Platform query failed locating extension due TLS certificate error; did not log in, reinstall or repeatedly retry.",
+      "attempts": [
+        {
+          "query": "Public web index site:x.com window query",
+          "executedAt": "2026-10-28T08:49:16.164931+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-x-public.json",
+          "sha256": "fbf2c32fe0bc8d526b98f0d5f910388a02a52fb48166bee3f0702aa975e454c3",
+          "resultCount": 10
+        },
+        {
+          "query": "Platform X search backend failed",
+          "executedAt": "2026-10-28T08:51:20.750637+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/twitter-platform.json",
+          "sha256": "63a934d217a13eaafb07bed6299f6be96ae179e1235e11d9259dd8bc03aa00a5",
+          "resultCount": 0
+        }
+      ]
+    },
+    {
+      "id": "import-ai",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Read-only IMAP INBOX sender/date headers October21–28: one issue (Oct26); newest full body read in-memory, sanitized topic lines only retained.",
+      "attempts": [
+        {
+          "query": "INBOX FROM importai@substack.com SINCE 21-Oct BEFORE 29-Oct, headers only",
+          "executedAt": "2026-10-28T08:48:53.441403+00:00",
+          "artifact": "governance/evidence/2026-10-28/mail/headers.json",
+          "sha256": "e5ac2a9c4f117fc3806715906dbc4858323716d70539e7dd30361b7779624e23",
+          "resultCount": 1
+        },
+        {
+          "query": "Newest Import AI issue body read in memory, sanitized discovery lines retained",
+          "executedAt": "2026-10-28T08:55:18.971443+00:00",
+          "artifact": "governance/evidence/2026-10-28/mail/sanitized-newsletter-summary.json",
+          "sha256": "bfb22d6315c155f7b30aa8030968b8f094de27ad17e99ceaa8eb8ec3c7928a9f",
+          "resultCount": 1
+        }
+      ]
+    },
+    {
+      "id": "the-batch",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Read-only IMAP INBOX sender/date headers October21–28: one issue (Oct22 UTC23); newest full body read in-memory, sanitized topic lines only retained.",
+      "attempts": [
+        {
+          "query": "INBOX FROM thebatch@deeplearning.ai SINCE 21-Oct BEFORE 29-Oct, headers only",
+          "executedAt": "2026-10-28T08:48:53.441403+00:00",
+          "artifact": "governance/evidence/2026-10-28/mail/headers.json",
+          "sha256": "e5ac2a9c4f117fc3806715906dbc4858323716d70539e7dd30361b7779624e23",
+          "resultCount": 1
+        },
+        {
+          "query": "Newest The Batch issue body read in memory, sanitized discovery lines retained",
+          "executedAt": "2026-10-28T08:55:18.971443+00:00",
+          "artifact": "governance/evidence/2026-10-28/mail/sanitized-newsletter-summary.json",
+          "sha256": "bfb22d6315c155f7b30aa8030968b8f094de27ad17e99ceaa8eb8ec3c7928a9f",
+          "resultCount": 1
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "19 Brave date-filtered category/targeted searches plus 17 bounded direct GET attempts; excerpts are discovery until source claim-level checked. Coordinated SGLang original read after first Gemini response; revised run only.",
+      "reason": "Search ranking/date may refer to reindexing or retrospective articles; several direct sources returned 403 or size-limit failures.",
+      "retryResult": "MiniMax repository and license, Kimi, Cloudflare and Cohere direct reads succeeded; Liquid page remained >4MB; Axios/Hill/OpenAI pages returned 403.",
+      "attempts": [
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=models; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:48:53.294249+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-models.json",
+          "sha256": "bb5dc60510c35a7bcd9617c0e2d3f18bdaa8568da265ac898adab386ba1cda7f",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=product; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:48:55.753561+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-product.json",
+          "sha256": "0aac5b583ccee32e8bdb938e2e62182aaa3d0b3bc7375f49fdf7c34b856d5587",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=capability; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:48:58.238142+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-capability.json",
+          "sha256": "ac1f9754dfbe9687dad9a692a6c43160637474cba247d2afa11ef773efa8368d",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=commerce; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:01.406348+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-commerce.json",
+          "sha256": "94c99277aa19a96affd6f05cde21b640003719007092d6bec59c958525fdf3d1",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=governance; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:04.222226+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-governance.json",
+          "sha256": "d7995533763de2989a614c15276b57bf491ad5b5a17623e89ca0dc74e0b061ad",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=safety; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:06.997957+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-safety.json",
+          "sha256": "0c7f95027d858b38c045da036b8d836441e8087189e4e3d20b26930a2bd136e5",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=society; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:09.556298+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-society.json",
+          "sha256": "ecd918053875351e4e433ace3a715335bc9d777e67368649a649fcc7e8307731",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=china; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:11.885817+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-china.json",
+          "sha256": "018ea2034036554351a80f56193a4a8301abdca33103cb3188c5d684e0f4917e",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=reddit-public; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:13.709873+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-reddit-public.json",
+          "sha256": "0553f7e0739ccc7528db1a7e83cd92d85d04f8bf6d063205b5eccedba8bde4b6",
+          "resultCount": 0
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=x-public; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:16.164931+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-x-public.json",
+          "sha256": "fbf2c32fe0bc8d526b98f0d5f910388a02a52fb48166bee3f0702aa975e454c3",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=deepseek-followup; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:18.746974+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-deepseek-followup.json",
+          "sha256": "b9b117fd1d4a0517a57978433727fb899e6609a4bce76ef452068fe5b0235795",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=minimax-followup; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:21.077092+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-minimax-followup.json",
+          "sha256": "4f0684f603fc900fb7513f92e2f07fa41ddcb0708d3185e8bd234586ef3fecd4",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=ftc-followup; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:49:23.632123+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-ftc-followup.json",
+          "sha256": "c334fcf5a3003070c8f8263288ec08e1ca28bb87468639074037768891a79f70",
+          "resultCount": 10
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=minimax-primary; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:55:57.323669+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-minimax-primary.json",
+          "sha256": "03beeeab695f4918b3ddf818bbc1cd1b5feefa00d719393aee161dd06459c674",
+          "resultCount": 1
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=kimi-dating; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:56:00.174946+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-kimi-dating.json",
+          "sha256": "e788f7747375da505fd481af50f5b4100b63f0ec4906ff489b0d7c552f6338ca",
+          "resultCount": 8
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=cloudflare-independence; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:56:02.681800+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-cloudflare-independence.json",
+          "sha256": "507732bcf73d9a00b391c55a8a056fba23d3f5fde4dc53c970742c1ab9798177",
+          "resultCount": 8
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=ftc-official; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:56:04.608035+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-ftc-official.json",
+          "sha256": "721ab5fbbf181a5e27e21c03d086b60ef26fc26158a9b14ee3b63866bb915dba",
+          "resultCount": 1
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=reflection-nvidia; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:56:06.898355+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-reflection-nvidia.json",
+          "sha256": "5ac4e72aecd0d49e9b3481528b07c0393829ee3ae2bbb69738753f90dd3d1d7b",
+          "resultCount": 8
+        },
+        {
+          "query": "Brave date-bounded search 2026-10-21..28 category=cohere-response; indexed results, not full platform coverage",
+          "executedAt": "2026-10-28T08:56:11.045572+00:00",
+          "artifact": "governance/evidence/2026-10-28/search/web-cohere-response.json",
+          "sha256": "9a771a4f62458a8f348c8773620eede455c22cd8eba522c1b9b874a4a0a4fecf",
+          "resultCount": 0
+        },
+        {
+          "query": "Direct GET minimax-hf-api; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:05.963464+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/minimax-hf-api.meta.json",
+          "sha256": "945c4ccfe17bcdbdf7feebdf91868d333ad80e30691e83a0a73454f1d1201a8e",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET minimax-hf-tree; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:06.374967+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/minimax-hf-tree.meta.json",
+          "sha256": "5a0350a738ab36633d78ac64812bb17d7a82e2db95a0e05ce09bfd5ad48191eb",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET minimax-official; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:09.356217+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/minimax-official.meta.json",
+          "sha256": "b38bf97b7f79877f5bf59ec80d3fc655a16f7022be4e85588ca42670f277059c",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET kimi-k31-official; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:11.420871+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/kimi-k31-official.meta.json",
+          "sha256": "716d737ca167ed6fc1db236e36cf21e3e36542e4c7554495298299b5dedffdd5",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET cloudflare-glm-incident; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:11.912136+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/cloudflare-glm-incident.meta.json",
+          "sha256": "7d0abd68be2383f4cbe5171ad1ed9e73b387a339709afe9d71880118bded6263",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET cohere-behavior; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:13.172692+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/cohere-behavior.meta.json",
+          "sha256": "4b35db4adb8dcbfdfc619b5eaef87189bd2b0d958de9876ce710ab68ae88dbd0",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET mistral-large-4; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:14.187951+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/mistral-large-4.meta.json",
+          "sha256": "fc7e9062ef94ba3e9d4e65efd76068bb01d39590bb0e2f1b0aec4d64907687e0",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET liquid-lfm3; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:14.819852+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/liquid-lfm3.meta.json",
+          "sha256": "ba0b0e0cf94446013710eff9aee051f4de31b876ec486dbb40850a497a8a3499",
+          "resultCount": 0
+        },
+        {
+          "query": "Direct GET liquid-lfm3-expanded; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:57:33.825832+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/liquid-lfm3-expanded.meta.json",
+          "sha256": "6116b244719a6c24e8c6b573eb024dbcf0cc404c1a6f22e39b20b95a1e4efe3c",
+          "resultCount": 0
+        },
+        {
+          "query": "Direct GET ftc-thehill; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:16.729269+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/ftc-thehill.meta.json",
+          "sha256": "8927ad8a6c7820f70c9facb586db5cc15cf993563fbb4e91a4357b9a04f38fb3",
+          "resultCount": 0
+        },
+        {
+          "query": "Direct GET ftc-axios; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:17.297853+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/ftc-axios.meta.json",
+          "sha256": "25cc2ee9db343a21eef01588365e0b69f1efa7102d7ed34a55d74e2eaeaf8019",
+          "resultCount": 0
+        },
+        {
+          "query": "Direct GET openai-biology; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:17.641589+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/openai-biology.meta.json",
+          "sha256": "985f52b3170bcd541d635312481399b516ad912ae92d458cdac4302ae3aab72a",
+          "resultCount": 0
+        },
+        {
+          "query": "Direct GET brown-labor; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:18.567627+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/brown-labor.meta.json",
+          "sha256": "79068501c1dad330f004b4309be6861b5f7bd8e26475110bfbe1b0dffb9b1121",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET nvidia-openshell-github; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:54:19.052696+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/nvidia-openshell-github.meta.json",
+          "sha256": "87007935009275fed3068352c26066c29b6e2f7add6cc8cb048243871e0149b4",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET minimax-license; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:55:35.288329+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/minimax-license.meta.json",
+          "sha256": "3b47dcd3b97e8e34b8e4e75b68e30a0fe1d964d73b3186f96150fcd7bf6e1879",
+          "resultCount": 1
+        },
+        {
+          "query": "Direct GET minimax-readme; inspect metadata and retained response; failure is not read evidence",
+          "executedAt": "2026-10-28T08:55:35.782356+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/minimax-readme.meta.json",
+          "sha256": "4900910d02446f03d87d3cdaa5faae54fdef1bb31ab1d21f9c5c069db847f189",
+          "resultCount": 1
+        },
+        {
+          "query": "HF MiniMax model repository commit API, not proof of public first-download time",
+          "executedAt": "2026-10-28T08:55:34.870251+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/minimax-commits.json",
+          "sha256": "9e803a722c4da48afca61b3535641deed49d58e907c1299397c2c18592248d68",
+          "resultCount": 2
+        },
+        {
+          "query": "Read coordinated SGLang team Oct26 technical disclosure; not independent verification of Cloudflare customer count",
+          "executedAt": "2026-10-28T09:10:38.722344+00:00",
+          "artifact": "governance/evidence/2026-10-28/direct/sglang-coordinated.html",
+          "sha256": "799849e1bfa99e5b48d6dca6dd69435e067b4cbb95cd33d6879464d0e00c8c4b",
+          "resultCount": 1
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "HF dated ranked paper snapshots and Kimi/MiniMax claims; no independent benchmark replication in this stage."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Kimi hosted rollout and MiniMax hosted-versus-weight stages; no observed external production adoption."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Brave infrastructure hits include speculative funding/chip purchases; no transaction execution verified."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "FTC reported executive testimony sought; original instruments unavailable, no adjudication claimed."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Cloudflare original disclosed historic exposure and remediation; Cohere competitive allegation lacks independent replication. SGLang’s original coordinated Oct26 disclosure and upstream fix are now separately retained; broader installed-base impact not established."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "Brown feature and labor/economic commentary, no measured new behavior meeting event threshold."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "oct28-cloudflare-glm53-kv-disclosure",
+      "discoveryUrls": [
+        "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Cloudflare original incident write-up directly read.",
+        "novelty": "Oct26 disclosure of cross-request exposure distinct from August GLM launch.",
+        "spillover": "Impacted Cloudflare Workers AI users only; no sector-wide effect measured.",
+        "durability": "Cloudflare reports September remediation and October public disclosure.",
+        "sourceQuality": "Independent write-ups mostly repeat Cloudflare; researcher/origin not separately read."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Disclosure dated Oct26; described exposure Aug27–Sep9 and 155 responses. Do not date the underlying incident Oct26, call disclosure/incident separately, assume malicious exploitation, or claim independent reproduction.",
+      "identity": {
+        "comparedEventIds": [
+          "glm-5-3-coding-cyber-launch-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "oct28-minimax-m31-flash-weight-stage",
+      "discoveryUrls": [
+        "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+        "https://www.minimax.io/blog/minimax-m31f"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Current HF file tree and license directly read.",
+        "novelty": "Weight files are a distinct stage from Oct19 API rollout, whose original said weights later.",
+        "spillover": "Developer access exists; production uptake unknown.",
+        "durability": "Repository remains available Oct28; no long-term use observed.",
+        "sourceQuality": "Provider card plus separately operated HF host verifies files, not performance."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "hold",
+      "reason": "First visible repository content commit is Oct23; repo creation Oct17 and commit are not proof of first public download. Need exact public-availability date and license limits before a dated new node.",
+      "identity": {
+        "comparedEventIds": [
+          "minimax-h3-video-model-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "oct28-kimi-k31-pro-hosted-launch",
+      "discoveryUrls": [
+        "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "https://siliconangle.com/2026/10/23/moonshot-ai-launches-new-flagship-kim-k3-1-pro-model-with-3t-parameters/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Moonshot official product page directly read.",
+        "novelty": "K3.1 Pro hosted rollout distinct from earlier K3 release.",
+        "spillover": "Product/API availability has an identified developer audience; usage unknown.",
+        "durability": "Multiple announced surfaces; sustained use not measured.",
+        "sourceQuality": "Independent article reports launch, not independently verified benchmarks."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Provider page says full weights will be released by Nov4, so do NOT describe October hosted rollout as already released open weights. Verify exact launch date/channel before drafting.",
+      "identity": {
+        "comparedEventIds": [
+          "kimi-k3-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "oct28-ftc-anthropic-executive-testimony",
+      "discoveryUrls": [
+        "https://www.axios.com/2026/10/26/ftc-ai-safety-probe-anthropic-openai",
+        "https://thehill.com/policy/technology/6173134-ftc-demands-anthropic-ai-testimony/"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "Direct Axios and The Hill GETs returned HTTP403; no readable source text or official demand captured.",
+        "novelty": "A reported testimony stage may be distinct, but underlying action text and date remain unverified.",
+        "spillover": "Named company, not a demonstrated industry-wide obligation.",
+        "durability": "No official timeline, demand or outcome read.",
+        "sourceQuality": "Search headings for blocked articles are discovery only, not read original or verified independent report."
+      },
+      "total": 2,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Manual follow-up despite low priority: potentially distinct FTC procedural stage but no readable article or original CID; obtain lawful public material, not bypass a 403.",
+      "identity": {
+        "comparedEventIds": []
+      }
+    },
+    {
+      "candidateId": "oct28-cohere-qwen38-security-allegation",
+      "discoveryUrls": [
+        "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Cohere own test-account narrative directly read.",
+        "novelty": "New disclosure/claim of attempted outbound request, not another model launch.",
+        "spillover": "Potential concern for local model operators, but no independently established user impact.",
+        "durability": "No independent replication/duration observed.",
+        "sourceQuality": "Direct original Cohere account is a primary record of Cohere’s own test claim, though commercially interested; no independent replication of alleged real-world effect."
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Frame strictly as Cohere allegation pending test logs, counter-evidence and Alibaba response. Do not assert a real user-data leak or intentional exfiltration. SQ1 recognizes original actor account only, not independent proof of exfiltration or user harm.",
+      "identity": {
+        "comparedEventIds": [
+          "qwen-3-8-27b-open-weights-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "oct28-reflection-nvidia-partnership-report",
+      "discoveryUrls": [
+        "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-and-reflection-make-open-models-enterprise-ready/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Newsletter and PYMNTS discovery, no provider partnership agreement retained.",
+        "novelty": "Potential partnership stage distinct from Oct16 Beam weight release.",
+        "spillover": "Named enterprise technology partners, not verified customer uptake.",
+        "durability": "Joint distribution plans reported; implementation unknown.",
+        "sourceQuality": "One third-party report plus newsletter may share release origin."
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Confirm actor, announced date, binding scope and whether this is merely a Beam availability update; do not turn partnership plans into production deployment.",
+      "identity": {
+        "comparedEventIds": [
+          "reflection-beam-open-weights-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "oct28-brown-data-labor-map",
+      "discoveryUrls": [
+        "https://www.brown.edu/news/2026-10-26/ai-data-workers"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "University directly described an interactive student project.",
+        "novelty": "A mapping/reporting tool is incremental evidence, not a demonstrated new societal behavior.",
+        "spillover": "Identifiable data-worker audience; no measured change in conditions shown.",
+        "durability": "No observed adoption/lasting change.",
+        "sourceQuality": "Brown source is primary university report; no second independent behavioral measurement."
+      },
+      "total": 5,
+      "priority": "pool",
+      "decision": "skip",
+      "reason": "A research/media feature alone does not establish society L2 or a dated structural milestone.",
+      "identity": {
+        "comparedEventIds": []
+      }
+    },
+    {
+      "candidateId": "oct28-mistral-large4-old-page-resurfaced",
+      "discoveryUrls": [
+        "https://mistral.ai/news/mistral-large-4/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 0,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Original Mistral page directly read.",
+        "novelty": "Page dated Oct6, outside current Oct21–28 window; HN post Oct21 is not a new launch.",
+        "spillover": "No newly measured external consequence in the page.",
+        "durability": "No dated new stage verified.",
+        "sourceQuality": "Provider statement only; promised weights are not weight release."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "Do not redate the Oct6 preview to Oct21 or infer end-of-month promised weights have shipped.",
+      "identity": {
+        "comparedEventIds": []
+      }
+    },
+    {
+      "candidateId": "oct28-nvidia-openshell-old-node",
+      "discoveryUrls": [
+        "https://github.com/NVIDIA/OpenShell"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 0,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Public GitHub repository metadata directly read.",
+        "novelty": "OpenShell release already covered by Sep28 published platform node.",
+        "spillover": "No new audience measured in this window.",
+        "durability": "Repository updated but this alone is not a distinct release.",
+        "sourceQuality": "Host metadata verifies repository, not fresh deployment."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "Duplicate earlier published NVIDIA Open Agent Safety Platform node; not another Oct22 product launch.",
+      "identity": {
+        "comparedEventIds": [
+          "nvidia-open-agent-safety-platform-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "oct28-deepseek-1017-retrospective-chatter",
+      "discoveryUrls": [
+        "https://api-docs.deepseek.com/updates/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 0,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "October17 official changelog previously read, not newly verified here.",
+        "novelty": "1017 predates Oct21; previous work-area update plan still on hold.",
+        "spillover": "No new independent downstream consequences in this sweep.",
+        "durability": "No distinct Oct21–28 action identified.",
+        "sourceQuality": "Fresh aggregator articles repackage existing origin."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "Carryover follow-up remains a separate unresolved v2.4 full-record re-review; no new event or approval.",
+      "identity": {
+        "comparedEventIds": [
+          "deepseek-v4-1-flash-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "oct28-liquid-lfm3-size-limited",
+      "discoveryUrls": [
+        "https://www.liquid.ai/blog/lfm3"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "HN indexed provider URL; direct original fetch exceeded local 4MB safety cap.",
+        "novelty": "Possible LFM3 model launch; original action/date not confirmed.",
+        "spillover": "Potential developer audience only, no verified usage.",
+        "durability": "No observation beyond search snippet.",
+        "sourceQuality": "No retained readable primary article, no independent test."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Find a legally retained bounded original excerpt and exact release stage; do not fill claims from HN headline. Deliberate hold despite skip screening priority: network/size access failure creates a follow-up task, not a fact-free publication claim.",
+      "identity": {
+        "comparedEventIds": []
+      }
+    },
+    {
+      "candidateId": "oct28-openai-biology-article-blocked",
+      "discoveryUrls": [
+        "https://openai.com/index/scaling-ai-research-for-complex-biological-data/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "HN links primary OpenAI page, direct GET returned 403.",
+        "novelty": "Possible new study or use case, stage unknown.",
+        "spillover": "Research audience suggested by title only.",
+        "durability": "No verified adoption or published result retained.",
+        "sourceQuality": "No original text or independent analysis read."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Do not infer scientific result from title; obtain paper or accessible original and independent verification. Deliberate hold despite skip screening priority: network/size access failure creates a follow-up task, not a fact-free publication claim.",
+      "identity": {
+        "comparedEventIds": []
+      }
+    },
+    {
+      "candidateId": "oct28-sglang-disaggregated-kv-isolation-fix",
+      "discoveryUrls": [
+        "https://www.lmsys.org/blog/2026-10-26-cf-security",
+        "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "SGLang authored original technical disclosure directly read.",
+        "novelty": "Upstream request-isolation patch is a distinct software action but part of the same coordinated Cloudflare incident.",
+        "spillover": "SGLang operator audience identified; no cross-operator exploit count.",
+        "durability": "Published upstream changes, adoption version and deployment duration not measured.",
+        "sourceQuality": "SGLang and Cloudflare collaborated; cannot count them as independent validation of customer count."
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Direct SGLang post dated Oct26 describes upstream request rejection/caching patches after Cloudflare deployment issue; determine whether software-stage node deserves separate identity or is best an incident claim/update. No CVE asserted; no independent installed-base impact claimed.",
+      "identity": {
+        "comparedEventIds": [
+          "glm-5-3-coding-cyber-launch-2026"
+        ],
+        "relatedCandidateId": "oct28-cloudflare-glm53-kv-disclosure"
+      }
+    }
+  ],
+  "limitations": [
+    "Discovery-only, not claim-level four-layer confirmation, independent review, human approval or publication. All candidates held/skipped.",
+    "HF ranked dates are not all papers; HN keyword date-partition retrieval is not all HN. Reddit had zero public indexed hits and a platform timeout; X platform backend failed while public index had snippets.",
+    "Brave freshness/age is index metadata, not original action date. No candidate event date inferred from result age, repository createdAt or a later README update.",
+    "Source host (HF) verifies current repo files but not first public download, model performance, independent adoption or license interpretation.",
+    "IMAP results cover INBOX exact sender/date and issue bodies read in memory; they do not prove messages in other labels or credentials for a separate OAuth route.",
+    "All source reads here occurred on October28; no newly read evidence has been backdated to original October21–27 days.",
+    "Revision r2 adds actual Oct28 SGLang read and conservative FTC/source-scoring adjustments; previous run and Gemini input remain immutable. SCREEN-02 priority is not final candidate decision; low-priority hold is explicitly permitted when a retrieval failure warrants follow-up."
+  ],
+  "supersedesRunId": "latest-data-full-2026-10-28",
+  "supersedesRunDigest": "85d5ff84c2654e0bbb4581db06f099a535f334725d6beb2e038807304941df73",
+  "revisedAtUTC": "2026-10-28T09:11:57.024687+00:00"
+}

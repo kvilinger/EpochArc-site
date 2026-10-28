@@ -1,0 +1,59 @@
+{
+  "executedAt": "2026-10-28T08:56:02.681800+00:00",
+  "url": "https://api.search.brave.com/res/v1/web/search?q=Knostic+Cloudflare+GLM-5.3+cross-request+cache+exposure+155+September+October+2026&count=8&freshness=2026-10-21to2026-10-28",
+  "httpStatus": "200",
+  "curlExit": 0,
+  "ok": true,
+  "results": [
+    {
+      "title": "Cloudflare Says GLM-5.3 Bug Leaked 155 Responses Across Tenant Sessions – Unite.AI",
+      "url": "https://www.unite.ai/cloudflare-says-glm-5-3-bug-leaked-155-responses-across-tenant-sessions/",
+      "age": "1 day ago",
+      "description": "<strong>Cloudflare on October 26, 2026 published an incident report disclosing a cross-request KV cache exposure in the GLM-5.3 model on its Workers AI platform, under which 155 responses to very long prompts contained data from other customers’ sessions. Security researcher Gadi Evron of Knostic reported the tenant-isolation issue to Cloudflare on September 8, 2026</strong> ..."
+    },
+    {
+      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang | Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "age": "1 day ago",
+      "description": "On September 8, 2026, we were alerted by a security researcher, Gadi Evron from Knostic, to <strong>a tenant isolation issue affecting the GLM-5.3 Workers AI model (@cf/zai-org/glm-5.3) starting on August 27, 2026</strong>."
+    },
+    {
+      "title": "Cloudflare discloses a fixed GLM-5.3 cache exposure affecting 155 responses | OpenTools",
+      "url": "https://opentools.ai/news/cloudflare-glm53-workers-ai-kv-cache-exposure-155-responses-fixed-disclosure",
+      "age": "14 hours ago",
+      "description": "The report was published October 26, but <strong>the exposure window was August 27 through September 9, 2026</strong>. Cloudflare says it remediated the issue and restored the model on September 9."
+    },
+    {
+      "title": "Cloudflare Says KV Cache Bug Leaked 155 GLM-5.3 Responses | AI Weekly",
+      "url": "https://aiweekly.co/alerts/cloudflare-says-kv-cache-bug-leaked-155-glm-53-responses",
+      "age": "1 day ago",
+      "description": "Cloudflare disclosed that <strong>155 responses from GLM-5.3 on Workers AI contained data from earlier users&#x27; prompts between August 27 and September 9, 2026</strong>. The model advertised a 1,048,576-token context window but the prefill GPU KV cache pool only held 681,280 tokens, exposing an SGLang disaggregation ..."
+    },
+    {
+      "title": "Cloudflare's GLM-5.3 leaked other users' prompts through its KV cache. I rebuilt the bug in 30 lines. - DEV Community",
+      "url": "https://dev.to/frankchu/cloudflares-glm-53-leaked-other-users-prompts-through-its-kv-cache-i-rebuilt-the-bug-in-30-2j3g",
+      "age": "1 day ago",
+      "description": "The simulation is my own, scaled down from the incident&#x27;s published page mechanics; the incident figures (<strong>681,280 / 1,048,576 tokens, 155 responses, ~2.04M-token fixed pool</strong>) are Cloudflare&#x27;s."
+    },
+    {
+      "title": "Theddari",
+      "url": "https://theddari.com/en/learn/cloudflare-glm-5-3-kv-cache-exposure-checklist",
+      "age": "1 day ago",
+      "description": "On October 26, 2026, Cloudflare disclosed exactly that for its Workers AI GLM-5.3 model (@cf/zai-org/glm-5.3): <strong>between August 27 and September 9, 2026, 155 responses contained data from other customers&#x27; requests</strong>."
+    },
+    {
+      "title": "Cloudflare GLM-5.3 Leak: 155 Responses Exposed [2026]",
+      "url": "https://tech-insider.org/cloudflare-glm-5-3-workers-ai-kv-cache-leak-155-responses-2026/",
+      "age": "18 hours ago",
+      "description": "Cloudflare pulled the model, fixed it, and restored GLM 5.3 on September 9, 2026. That makes the exposure window <strong>roughly two weeks</strong>, a point DEV Community coverage leads with in its headline."
+    },
+    {
+      "title": "Cloudflare GLM-5.3 KV cache bug leaked other customers' data in 155 Workers AI responses",
+      "url": "https://www.datastudios.org/post/cloudflare-workers-ai-glm-5-3-kv-cache-exposure-155-responses-sglang",
+      "age": "1 day ago",
+      "description": "Cloudflare has published a detailed post-incident report explaining how GLM-5.3, the Z.ai coding model it serves on Workers AI, <strong>returned fragments of other customers&#x27; requests inside 155 responses between August 27 and September 9, 2026</strong>."
+    }
+  ],
+  "resultCount": 8,
+  "query": "Knostic Cloudflare GLM-5.3 cross-request cache exposure 155 September October 2026"
+}
