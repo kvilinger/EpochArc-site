@@ -1,0 +1,543 @@
+Kimi K3.1 Pro and Kimi K3.1 Pro Highspeed are available now in AI Gateway - Vercel
+
+Skip to content
+
+Copy Wordmark
+Copy Logo
+
+Download Brand Assets
+Brand Guidelines
+
+Products
+
+Agent Stack
+
+AI SDK
+
+AI Gateway
+
+Sandbox
+
+Passport
+
+Connect
+
+eve
+
+Core Platform
+
+Security
+
+Content Delivery
+
+Fluid Compute
+
+Observability
+
+Workflows
+
+CI/CD
+
+Tools
+
+Next.js
+
+Vercel Agent
+
+Vercel Plugin
+
+Open Source
+
+Domains
+↗
+
+v0
+↗
+
+Resources
+
+Learn
+
+Docs
+
+About
+
+Blog
+
+Changelog
+
+Knowledge Base
+
+Build
+
+AI Apps
+
+Web Apps
+
+Marketing Sites
+
+Platforms
+
+Commerce
+
+Explore
+
+Customers
+
+Marketplace
+
+Partner Finder
+
+AWS
+
+Community
+↗
+
+Enterprise
+Pricing
+
+Get a Demo
+Log In
+Sign Up
+
+Ask AI
+Dashboard
+
+Products
+
+Agent Stack
+
+AI SDK
+
+AI Gateway
+
+Sandbox
+
+Passport
+
+Connect
+
+eve
+
+Core Platform
+
+Security
+
+Content Delivery
+
+Fluid Compute
+
+Observability
+
+Workflows
+
+CI/CD
+
+Tools
+
+Next.js
+
+Vercel Agent
+
+Vercel Plugin
+
+Open Source
+
+Domains
+↗
+
+v0
+↗
+
+Resources
+
+Learn
+
+Docs
+
+About
+
+Blog
+
+Changelog
+
+Knowledge Base
+
+Build
+
+AI Apps
+
+Web Apps
+
+Marketing Sites
+
+Platforms
+
+Commerce
+
+Explore
+
+Customers
+
+Marketplace
+
+Partner Finder
+
+AWS
+
+Community
+↗
+
+Enterprise
+
+Pricing
+
+Get a Demo
+
+Log In
+Sign Up
+
+Kimi K3.1 Pro and Kimi K3.1 Pro Highspeed are available now in AI Gateway
+
+Zachary Chen
+,
+Jerilyn Zheng
+
+Blog
+Changelog
+
+23 Oct 2026
+
+2
+min
+read
+
+Copy
+
+Kimi K3.1 Pro
+from
+Moonshot AI
+is now available on
+AI Gateway
+, along with
+Kimi K3.1 Pro Highspeed
+, a faster version for interactive use.
+
+K3.1 Pro is the first model in Moonshot's K3.1 series. It builds on
+Kimi K3
+with improvements in coding, 3D modeling, financial analysis, and agentic tasks, and keeps the 1M-token context window and image input.
+
+For coding, K3.1 Pro handles work ranging from small fixes in an existing codebase to building a full project, including long agent runs with many steps. It builds front-end pages and interactive scenes with stronger typography and animation than earlier Kimi models. In finance, it can carry a task from start to finish, such as building a linked financial model with adjustable assumptions and scenarios, or writing research grounded in source documents. K3.1 Pro makes fewer factual errors than earlier Kimi models on difficult prompts.
+
+Moonshot AI plans to release the model weights by November 4: support for more providers will follow.
+
+Call either model through the
+AI SDK
+, the
+Chat Completions
+,
+Responses
+, and
+Anthropic Messages
+APIs, or a
+coding agent
+connected to AI Gateway. For Highspeed, use
+moonshotai/kimi-k3.1-pro-highspeed
+in place of the model name below.
+
+Use
+moonshotai/kimi-k3.1-pro
+as the model name:
+
+API
+
+API
+Claude Code
+Codex
+fx
+Chat Completions
+
+API
+API
+Claude Code
+Claude Code
+Codex
+Codex
+fx
+fx
+Chat Completions
+Chat Completions
+
+1
+
+import
+{
+streamText
+}
+from
+'ai'
+;
+
+2
+
+3
+
+const
+result
+=
+streamText
+(
+{
+
+4
+
+model
+:
+'moonshotai/kimi-k3.1-pro'
+,
+
+5
+
+prompt
+:
+'Write a Blender script that models a parametric bookshelf.'
+,
+
+6
+
+}
+)
+;
+
+Copy for agent
+View model details
+↗
+
+To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup:
+
+npx vercel ai-gateway setup
+
+Then select
+moonshotai/kimi-k3.1-pro
+or
+moonshotai/kimi-k3.1-pro-highspeed
+in the agent. See the
+coding agents guide
+for details.
+
+Try Kimi K3.1 Pro in the
+model playground
+.
+
+AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in
+custom reporting
+,
+Zero Data Retention support
+,
+budgets for API keys
+,
+routing rules
+, and more.
+
+AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on
+Bring Your Own Key
+(BYOK) requests.
+
+You can view
+all language models
+available on AI Gateway.
+
+Agent Stack
+
+AI SDK
+
+AI Gateway
+
+Sandbox
+
+Workflows
+
+Connect
+New
+
+Passport
+New
+
+eve
+New
+
+Core Platform
+
+CI/CD
+
+Content Delivery
+
+Fluid Compute
+
+Observability
+
+Security
+
+Platform Security
+
+WAF
+
+Bot Management
+
+BotID
+
+Tools
+
+Vercel Drop
+
+Vercel Agent
+
+Vercel Plugin
+
+Agent Skills
+
+Domains
+
+v0
+
+Frameworks
+
+eve
+New
+
+Next.js
+
+Nuxt
+
+SvelteKit
+
+Nitro
+
+Turborepo
+
+Tanstack Start
+
+FastAPI
+
+All frameworks
+
+SDKs
+
+Vercel SDK
+
+Workflow SDK
+
+Flags SDK
+
+Chat SDK
+
+Queues SDK
+
+Streamdown
+
+Build
+
+AI Apps
+
+Web Apps
+
+Marketing Sites
+
+Platforms
+
+Commerce
+
+Platform Engineers
+
+Design Engineers
+
+Learn
+
+Docs
+
+Blog
+
+Changelog
+
+Knowledge Base
+
+Academy
+
+Articles
+
+Community
+
+Is Agentic
+
+Explore
+
+Customers
+
+Marketplace
+
+Templates
+
+Partner Finder
+
+Vercel + AWS
+
+Company
+
+About
+
+Careers
+
+Press
+
+Events
+
+Startups
+
+Shipped on Vercel
+
+Open Source Program
+
+Enterprise
+
+Pricing
+
+Help
+
+Legal & Trust
+
+Privacy Policy
+
+Terms of Service
+
+Cookie Policy
+
+DPA
+
+Acceptable Use Policy
+
+Legal (all documents)
+
+Trust Center
+
+Status
+
+Cookie Preferences
+
+Social
+
+GitHub
+
+X
+
+LinkedIn
+
+YouTube
+
+Instagram
+
+Loading status…
+
+Select a display theme:
+system
+light
+dark

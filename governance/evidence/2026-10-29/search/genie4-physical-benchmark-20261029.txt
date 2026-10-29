@@ -1,0 +1,223 @@
+QUERY: Genie 4 physical accuracy benchmark external evaluation 2026 Google world model What-If World benchmark
+RUN_AT_UTC: 2026-10-29T00:45:06Z
+
+--- Result 1 ---
+Title: Google Genie 4: Specs, Benchmarks, Videos and Access
+Link: https://kingy.ai/blog/google-genie-4-guide-specs-benchmarks-videos/
+Age: 1 day ago
+Snippet: Separate Gemini benchmarks do not evaluate the complete simulation; Google has not supplied a full architecture. Google DeepMind launch · A separate example pairs Gemini 4 Argon with Genie 4 to simulate Apptronik’s Apollo playing checkers, passing steps as text captions. This does not establish physical-robot performance or sim-to-real transfer.
+Content:
+Google DeepMind announced Genie 4 on October 27, 2026, with a preview for trusted testers and plans to bring it to Google AI Ultra subscribers through Project Genie and to early API and Google AI Studio partners. Those wider routes are **coming soon**; an Ultra subscription alone does not establish access today. Google has not announced a general rollout date in the launch materials. [Google announcement](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/)
+
+For interactive prototyping and AI-agent research, the difficult question is consistency: does an environment respond sensibly when someone acts on it, and do the consequences persist? A convincing clip cannot answer that on its own.
+
+The public evidence does not answer that question with a benchmark score yet. Google has shown selected demonstrations and described limitations, but the materials reviewed for this guide do not disclose numerical Genie 4 benchmark results, a frame rate, resolution, parameter count or API price. Kingy.ai has not tested Genie 4 hands-on.
+
+Jump to: [Specs](#genie-4-specifications-what-google-has-and-has-not-disclosed) · [Example videos](#watch-googles-genie-4-examples) · [Genie generations](#how-genie-4-compares-with-earlier-genie-models) · [Benchmarks and evals](#genie-4-benchmarks-what-is-available) · [Get access](#how-to-get-access-to-genie-4) · [Why it matters](#why-this-matters-for-creators-and-researchers)
+
+## What Genie 4 is and how it works
+
+Genie 4 is a world-simulation model. Project Genie is a Google product through which people can explore generated worlds. The names are related, but a product’s session limit, interface or subscription terms should not automatically be treated as a specification for every version of the underlying model.
+
+A conventional video generator produces a sequence to watch. An interactive world model must also respond to an input during the sequence. If a viewer turns left, moves toward a door or asks for a change, the next visible state needs to reflect both that action and what has already happened. A plausible response to one action is useful; preserving the consequences across a longer sequence is the harder test.
+
+A conventional game engine normally starts from explicitly authored objects, rules and assets. Genie generates the experience, so a beautiful scene does not by itself establish that there is a reusable mesh, a persistent object database or a deterministic physics simulation underneath it. Google has not documented a Genie 4 game-engine export or a public save-state interface in the materials reviewed. Treat the output as a generated interactive experience unless the eventual product documentation establishes something more specific.
+
+Google describes keyboard-and-mouse controls, text steering and a few minutes of interaction, with details and objects liable to drift. This is a product-page description, not a hard cap or uptime guarantee. [Google DeepMind model page](https://deepmind.google/models/genie/)
+
+### Audio and scene changes
+
+Google says Genie 4 generates ambient sound, music and responsive dialogue alongside its environments, with text edits available during exploration. [Google announcement](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/)
+
+Those features give a creator more to examine than the image alone. When a door closes, does the sound occur at the right moment? If a character moves away, does the voice appear to move with them? When a user changes the setting, does the sound suit the new setting without disrupting the action? The answers require interactive tests across many sessions, not just a strong soundtrack in one recording. Google has not established a microphone-input interface in the materials reviewed here.
+
+### Where Gemini fits
+
+Google assigns grounding to Gemini Omni. Gemini 3.8 Flash observes frames, plans steps and checks progress. Separate Gemini benchmarks do not evaluate the complete simulation; Google has not supplied a full architecture. [Google DeepMind launch](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)
+
+A separate example pairs **Gemini 4 Argon** with Genie 4 to simulate Apptronik’s Apollo playing checkers, passing steps as text captions. This does not establish physical-robot performance or sim-to-real transfer.
+
+Google claims improved realism in physics and human movement, including aerodynamics and collisions, but supplies demonstrations rather than numerical accuracy results. [Google DeepMind launch](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)
+
+## Genie 4 specifications: what Google has and has not disclosed
+
+The following table reflects the launch and product materials reviewed on October 27, 2026. “Not disclosed” means we did not find a value in those materials, not that Google has no internal measurement.
+
+ 
+| Specification | Genie 4 information available in reviewed sources |
+
+--- Result 2 ---
+Title: Google DeepMind Opens Genie 4 World Model Research Preview - Techstrong.ai
+Link: https://techstrong.ai/articles/google-deepmind-opens-genie-4-world-model-research-preview/
+Age: 1 day ago
+Snippet: Techstrong’s report cited the What-If World benchmark, which tested nine video generation models on their ability to simulate how changes in physical conditions affect outcomes. <strong>None scored higher than 52%</strong>. Google’s Genie models were not ...
+Content:
+[Skip to content](#content)
+
+* [Latest](#)
+ * [Articles](https://techstrong.ai/category/articles/)
+ * [Features](https://techstrong.ai/category/features/)
+ * [News](https://techstrong.ai/category/news/)
+ * [Videos](https://techstrong.ai/category/videos/)
+* [Webinars](#)
+ * [Upcoming](https://techstronglearning.com/#upcoming)
+ * [On-Demand](https://techstronglearning.com/topics/#cat-ai)
+* [Related Sites](#)
+ * [DevOps.com](https://devops.com/)
+ * [Security Boulevard](https://securityboulevard.com/)
+ * [Cloud Native Now](https://cloudnativenow.com/)
+ * [Digital CxO](https://digitalcxo.com/)
+ * [DevOps Dozen](https://devopsdozen.com/)
+ * [DevOps TV](https://www.youtube.com/channel/UC-zcE077X98oTEDPwKkDQxQ)
+ * [Platform Engineering](https://platformengineering.com/)
+ * [Techstrong TV](https://techstrong.tv/)
+ * [Techstrong TV Podcast](https://www.techstrongpodcasts.com/)
+ * [Techstrong TV Twitch](https://www.twitch.tv/techstrongtv)
+ * [Techstrong Group](https://techstronggroup.com/)
+* [About](https://techstrong.ai/about/)
+* [Media Kit](https://techstronggroup.com/assets/techstrong-media-kit.pdf)
+
+* [AI Infrastructure](https://techstrong.ai/category/ai-infrastructure/)
+* [Agentic AI](https://techstrong.ai/category/agentic-ai/)
+* [AI Careers](https://techstrong.ai/category/ai-careers/)
+* [AI Security](https://techstrong.ai/category/ai-security/)
+* [AI Governance](https://techstrong.ai/category/ai-governance/)
+* [Data Engineering](https://techstrong.ai/category/data-engineering/)
+* [Data Science](https://techstrong.ai/category/data-science/)
+* [More](#)
+ * [Aerospace](https://techstrong.ai/category/aerospace/)
+ * [Agentic AI](https://techstrong.ai/category/agentic-ai/)
+ * [AIOps](https://techstrong.ai/category/aiops/)
+ * [Education](https://techstrong.ai/category/education/)
+ * [Energy](https://techstrong.ai/category/energy/)
+ * [Environmental](https://techstrong.ai/category/environmental/)
+ * [Financial Services](https://techstrong.ai/category/financial-services/)
+ * [Generative AI](https://techstrong.ai/category/generative-ai/)
+ * [Government](https://techstrong.ai/category/government/)
+ * [Health Care](https://techstrong.ai/category/healthcare/)
+ * [Machine/Deep Learning](https://techstrong.ai/category/machine-deep-learning/)
+ * [Media/Entertainment](https://techstrong.ai/category/media-entertainment/)
+ * [Professional Services](https://techstrong.ai/category/professional-services/)
+ * [Prompt Engineering](https://techstrong.ai/category/prompt-engineering/)
+ * [Retail](https://techstrong.ai/category/retail/)
+ * [Telecommunications](https://techstrong.ai/category/telecommunications/)
+ * [Transportation/Travel](https://techstrong.ai/category/transportation-travel/)
+
+[Home](https://techstrong.ai/) » [Articles](https://techstrong.ai/category/articles/) » Google DeepMind Opens Genie 4 World Model Research Preview
+
+TL;DR — Key Takeaways
+
+* Google DeepMind released Genie 4 in a limited research preview, adding native audio and more flexible live editing to its AI world model.
+* Genie 4 integrates Gemini reasoning models to help coordinate complex simulations, including experimental scenarios involving humanoid robots.
+* Google plans wider access through Project Genie and developer tools.
+
+Google DeepMind has released Genie 4 as a limited research preview, adding native audio, more flexible live scene editing and closer Gemini integration to the latest version of its AI world model.
+
+World models are AI models designed to predict how an environment changes over time, including how objects and surroundings respond to actions. With Genie 4, users can explore these simulated environments using keyboard controls and modify them as they run. They can ask the model to alter the weather, shift the camera or introduce characters and objects without restarting the simulation. Google says Genie 4 also produces ambient sounds, music and responsive dialogue, along with more realistic movement and physical interactions.
+
+Genie 4 can run interactive simulations for up to about two minutes, according to reporting from Google’s launch briefing. However, Google cautions that visual details and object consistency can deteriorate over time, limiting the model’s usefulness for applications that require sustained, accurate simulation.
+
+## Gemini Takes a Larger Role in World Simulations
+
+Google is also using Gemini models to help coordinate more complex events within the simulations. The company [says](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) Gemini Omni, its multimodal generation and editing model, helps ground scenes in real-world appearance and behavior, while Gemini 3.8 Flash, a model optimized for fast reasoning, monitors incoming frames, breaks goals into steps and adjusts plans as events unfold.
+
+In a separate robotics experiment, Google paired Genie 4 with Gemini 4 Argon, its advanced multimodal reasoning model, to simulate Apptronik’s Apollo humanoid robot playing checkers. Argon broke the task in
+
+--- Result 3 ---
+Title: Google DeepMind Previews Genie 4 World Model - Dataconomy
+Link: https://dataconomy.com/2026/10/28/google-deepmind-previews-genie-4-world-model/
+Age: 14 hours ago
+Snippet: Rivas stressed that Genie 4 remains at an early stage and its eventual end-to-end product experience is unclear. The team acknowledged that details and objects can drift during longer simulations, audio accuracy remains unresolved and text within generated worlds may not be legible. ... See the best AI models, ranked by intelligence, benchmark results, speed and token price.
+Content:
+Google DeepMind released Genie 4 in research preview on Tuesday, introducing a world model that generates interactive environments with real-time audio and lets users change scenes mid-simulation.
+
+Trusted testers have immediate access. In the coming weeks, Genie 4 will reach Google AI Ultra subscribers through Project Genie, which generates interactive worlds from text or image prompts, and early-access partners of the Gemini API and Google AI Studio.
+
+Genie 4 produces music, ambient sounds and interactive dialogue. Users can type prompts during simulations to change weather or camera angles and add people or objects.
+
+### Stay Ahead of the Curve!
+
+Don't miss out on the latest insights, trends, and analysis in the world of data, technology, and startups. Subscribe to our newsletter and get exclusive content delivered straight to your inbox.
+
+The model can maintain a consistent scene for up to two minutes, twice the limit of Genie 3, released in research preview a little over a year ago. It offers more photorealistic visuals, improved physics and more humanlike characters.
+
+Google’s Gemini AI model is more closely integrated with Genie 4, planning steps and checking frames while Genie creates visuals. In a Gemini Robotics research experiment, a Gemini 4 Argon model broke tasks into steps that Genie 4 simulated in real time, demonstrating a possible approach to testing robot scenarios before real-world execution.
+
+Google research director Tejas Kulkarni said during a briefing that future hybrid world models could combine Gemini’s code and text generation with Genie’s real-time simulation of reality at different levels of abstraction.
+
+Proposed commercial applications include gaming, robotics and interactive learning. One speculative learning example involves entering a painting of a historical event and talking with its subjects about the scene.
+
+Google’s trusted testers have identified film prototyping as another potential use. DeepMind engineer Diego Rivas said during a press briefing that real-time capabilities were particularly useful for maintaining creative flow during ideation and storyboarding.
+
+Google also offers Veo, which generates high-definition video clips with synchronized audio from text, image or video prompts and has been gaining popularity among filmmakers.
+
+Rivas said users could eventually turn Genie 4 prototypes into creative assets through Gemini Omni, a multimodal large language model that generates video from images, audio and text. Those capabilities remain some way off, he said.
+
+The release follows Runway’s launch a couple of months earlier of GWM Worlds 2, its second world model, which is playable, responds dynamically to user inputs and generates audio.
+
+Fei-Fei Li’s World Labs is being acquired by AMD, while Amazon is in talks to buy Decart. Rivian acquired Third Dimension to bring simulation capabilities in-house for self-driving testing.
+
+Rivas stressed that Genie 4 remains at an early stage and its eventual end-to-end product experience is unclear. The team acknowledged that details and objects can drift during longer simulations, audio accuracy remains unresolved and text within generated worlds may not be legible.
+
+* * *
+
+**[Featured image credit](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)**
+
+--- Result 4 ---
+Title: Genie 4 vs Genie 3: What Changed in Google’s Interactive World Models? - DEV Community
+Link: https://dev.to/jamilxt/genie-4-vs-genie-3-what-changed-in-googles-interactive-world-models-53m5
+Age: 12 hours ago
+Snippet: DeepMind announced Genie 4 on October 27, 2026, describing four directions of progress: <strong>richer real-time steering, more realistic physical and human motion, native audio, and more complex events coordinated with Gemini models</strong>.
+Content:
+A generated world is easy to mistake for a game. The harder question is whether it behaves like one: can you move through it, change it, hear it, and rely on it to stay coherent long enough to test an idea?
+
+Google DeepMind’s October 27 announcement of Genie 4 makes that question newly relevant. The system adds native audio, more natural movement, and a Gemini model that helps keep events coherent. But the announcement is a research preview, not a generally available game engine or robotics simulator. Genie 3 already generated interactive environments in real time. So the practical comparison is not “old demo versus finished product.” It is: which capabilities are new, which limits remain, and what kind of experiment each generation can support?
+
+**Disclosure:** This comparison is based on Google DeepMind’s public announcements and documentation. Genie 4 access is limited, so this is not a hands-on review or a report of independent benchmark results.
+
+## The short answer
+
+Choose **Genie 3** as the clearer reference point for text-prompted, navigable worlds: DeepMind documented real-time interaction at 24 frames per second, 720p resolution, and consistency for a few minutes. Choose **Genie 4** as the more ambitious research preview when the experiment depends on sound, real-time text steering, more lifelike people, or multi-step events guided by a Gemini model.
+
+Neither is currently a dependable substitute for a conventional simulation engine. Both remain research-stage systems, and DeepMind lists limitations across the generations, including action-space constraints, multi-agent interactions, text rendering, spatial accuracy, and session duration. Genie 4’s current page also says visual details and object permanence can drift, and real-time audio accuracy remains active work.
+
+## What Genie 3 already did
+
+Genie 3, announced on August 5, 2025, was DeepMind’s first world model that allowed real-time interaction. A text description could create an environment that a person could navigate at 24 frames per second and 720p, with consistency maintained for a few minutes, according to the [Genie 3 announcement](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/).
+
+That combination matters. A video generator produces a sequence to watch. A world model attempts to produce the next part of an environment in response to actions. Genie 3’s announcement described steering with navigation inputs and using text to introduce or alter world events, such as changing weather or adding objects and characters. DeepMind also showed experiments in which its SIMA agent pursued goals in generated environments.
+
+Those are meaningful capabilities, but the public description is careful about what they do not establish. The model’s directly available action space was limited. It did not perfectly reproduce real-world locations, reliably render arbitrary readable text, or support hours-long sessions. Interactions among multiple independent agents remained a research challenge. A visually plausible scene is not proof that every object follows dependable physics.
+
+## What Genie 4 adds
+
+DeepMind announced Genie 4 on October 27, 2026, describing four directions of progress: richer real-time steering, more realistic physical and human motion, native audio, and more complex events coordinated with Gemini models. These are company-reported capabilities demonstrated in selected examples, not results from an independently reproduced benchmark.
+
+**Native audio.** Genie 4 generates environmental sounds and dialogue along with the world. In the announcement, DeepMind says the accompanying sounds in its examples were produced directly by Genie 4. That makes the output more complete for an interactive prototype than a silent scene, but it does not mean the sound is always accurate or synchronized. The model page identifies real-time audio accuracy as an ongoing research area.
+
+**Text steering while exploring.** DeepMind says users can modify a simulation in natural language while navigating it, for example by changing the weather, moving the camera, or adding a person or object. The system adapts the prompt to the surrounding scene. The announcement describes keyboard navigation and camera control alongside text prompts; it does not say every object is governed by a stable, editable 3D scene graph.
+
+**More expressive motion.** The company highlights improved realism in physics and human actions, including collisions, aerodynamics, and more natural character movement. Those examples are useful signals of direction, but a polished clip cannot tell you how often the model preserves physical constraints across repeated trials. If a test depends on exact collision outcomes or repeatable trajectories, the public material does not establish that Genie 4 is ready to replace a physics engine.
+
+**Gemini models in the loop.** DeepMind says Gemini Omni anchors simulations in real-world appearance and behavior, while other Gemini models provide 
+
+--- Result 5 ---
+Title: DeepMind unveils Genie 4 world model promising more realistic physics and humans - Ars Technica
+Link: https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/
+Age: 1 day ago
+Snippet: <strong>When you prompt a world into existence in Genie 4, it leverages Gemini 3.8 Flash as a guiding agent to break down goals and evaluate each output frame</strong>. This helps keep the simulation on track, letting you move through varying environments without ...
+Content:
+Last year, Google DeepMind sent gaming stocks tumbling with the reveal of its [Genie 3 world model](https://arstechnica.com/ai/2025/08/deepmind-reveals-genie-3-world-model-that-creates-real-time-interactive-simulations/). Since then, world models have become a [major focus](https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models/) of AI labs around the world, but Google isn’t resting on its laurels. Researchers have been hard at work on an updated model that improves on Genie 3 in almost every way. And if you pay Google enough money, you might actually get to use Genie 4 before too long.
+
+It’s easy to look at the output of Genie 4 and see a video game, which is why Genie 3 caused so much consternation in the gaming industry. DeepMind doesn’t think about it that way, though. [According to Google](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation), world models are a key element in the march toward artificial general intelligence (AGI). A world model creates a virtual world, but it doesn’t require pre-rendering environments or programming interactive elements. You simply tell the model what you want, and it generates the experience frame by frame in real time as you explore it.
+
+DeepMind says this technology could create infinite training environments for physical robots or unlock new avenues of rapid prototyping for creative fields. Of course, that requires the model to accurately simulate what you want. Genie 4 has several improvements that make its simulations more useful, and that’s thanks in part to Google’s updated Gemini models.
+
+DeepMind says Genie 4 is better at simulating physics.
+
+DeepMind says Genie 4 is better at simulating physics.
+
+When you prompt a world into existence in Genie 4, it leverages Gemini 3.8 Flash as a guiding agent to break down goals and evaluate each output frame. This helps keep the simulation on track, letting you move through varying environments without losing the original context. However, DeepMind notes that Genie 4 worlds still only remain consistent for a couple of minutes before they forget how things started.
+
+Like Genie 3, the new version supports changing the parameters midstream. You can change the weather, add elements, or move the camera, and Gemini will help steer the simulation with each update. This is similar to the way reasoning models generate additional internal prompts to zero in on the right output tokens.
+

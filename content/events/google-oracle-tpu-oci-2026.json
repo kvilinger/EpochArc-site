@@ -1,0 +1,123 @@
+{
+  "id": "google-oracle-tpu-oci-2026",
+  "slug": "google-oracle-tpu-oci-2026",
+  "date": "2026-10-27",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Google and Oracle plan TPU capacity on OCI from 2027",
+    "zhHans": "Google 与 Oracle 计划自 2027 年起在 OCI 提供 TPU 算力"
+  },
+  "searchSummary": {
+    "en": "The companies announced TPU availability on Oracle Cloud Infrastructure, planned to begin in calendar 2027 with a multiyear ramp.",
+    "zhHans": "两家公司宣布计划在 Oracle Cloud Infrastructure 提供 TPU，预计于 2027 日历年启动并分多年扩容。"
+  },
+  "summary": {
+    "en": "Google and Oracle announced the partnership at Oracle AI World on October 27: Google TPU capacity is planned for Oracle Cloud Infrastructure starting in calendar 2027, with a multiyear ramp. The companies have not announced a specific launch date, initial capacity, configurations or pricing. This is a future infrastructure plan, not evidence that OCI TPU capacity is already live or that customers have adopted it.",
+    "zhHans": "Google 与 Oracle 于 10 月 27 日在 Oracle AI World 宣布合作：计划自 2027 日历年起在 Oracle Cloud Infrastructure 提供 Google TPU 算力，并分多年扩容。两家公司尚未公布具体启动日、初始容量、配置或价格。这是一项未来基础设施计划，并非 OCI 已上线 TPU 算力或客户已采用的证据。"
+  },
+  "narrative": {
+    "en": "The event is the October 27 announcement of a future infrastructure arrangement. The Oracle and Google releases share one joint-announcement origin and are not independent corroborations of execution. Network World independently reports the planned start and missing commercial details. The record does not claim that capacity has been deployed or that workload economics have changed.",
+    "zhHans": "事件是 10 月 27 日对未来基础设施安排的宣布。Oracle 与 Google 的稿件源于同一联合公告，不能算作执行情况的独立佐证。Network World 独立报道了计划启动时间及尚未公布的商业细节。本记录不声称算力已部署或工作负载成本已经变化。"
+  },
+  "claims": [
+    {
+      "id": "google-oracle-plan",
+      "claimType": "fact",
+      "text": {
+        "en": "Google and Oracle announced on October 27, 2026 a plan to make Google TPU capacity available through OCI starting in calendar year 2027, with a multiyear ramp.",
+        "zhHans": "Google 与 Oracle 于 2026 年 10 月 27 日宣布计划自 2027 日历年起通过 OCI 提供 Google TPU 算力，并分多年扩容。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-google-cloud-oracle-tpu",
+        "fup26-oracle-google-tpu",
+        "fup26-networkworld-oracle-tpu"
+      ]
+    },
+    {
+      "id": "google-oracle-not-deployed",
+      "claimType": "limitation",
+      "text": {
+        "en": "The plan is not an already deployed OCI service: as of the announcement, no exact launch date, initial capacity, configuration or pricing had been disclosed.",
+        "zhHans": "该计划并不表示 OCI 服务已经部署：截至公告时，具体启动日、初始容量、配置或价格均未披露。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-oracle-google-tpu",
+        "fup26-networkworld-oracle-tpu"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "aws-nvidia-2m-gpu-expansion-2026",
+    "ooredoo-zankore-ai-platform-2026"
+  ],
+  "displayDate": {
+    "en": "2026-10-27",
+    "zhHans": "2026年10月27日"
+  },
+  "categories": [
+    "commerce"
+  ],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "relatedForecasts": [],
+  "sources": [
+    {
+      "sourceId": "fup26-google-cloud-oracle-tpu",
+      "supports": [
+        "google-oracle-tpu-oci-2026",
+        "google-oracle-plan"
+      ]
+    },
+    {
+      "sourceId": "fup26-oracle-google-tpu",
+      "supports": [
+        "google-oracle-tpu-oci-2026",
+        "google-oracle-plan",
+        "google-oracle-not-deployed"
+      ]
+    },
+    {
+      "sourceId": "fup26-networkworld-oracle-tpu",
+      "supports": [
+        "google-oracle-tpu-oci-2026",
+        "google-oracle-plan",
+        "google-oracle-not-deployed"
+      ]
+    }
+  ],
+  "editorial": {
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "lastSourceCheckAt": "2026-10-28",
+    "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-10-29",
+        "changeType": "created",
+        "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-29",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+    "reviewRecord": "governance/reviews/independent-20261029/google-oracle-tpu-oci-2026.json",
+    "publishedAt": "2026-10-29"
+  }
+}

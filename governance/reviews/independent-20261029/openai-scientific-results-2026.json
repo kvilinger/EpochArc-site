@@ -1,0 +1,255 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "openai-scientific-results-2026",
+  "inputSubjectDigest": "f1c51d88bdb3ea002269ebfb5ca77ebd5cadae51b53a733827db7c5e1a329693",
+  "subjectDigest": "384f9f9f83eb268af04853c818e902dbc98d08b50361311347c65c5e46e1994c",
+  "inputsDigest": "9a0659eeaccdc00055b0aba60fbbfe3a54f97140ccc8d23e69bab6d8fe648bbb",
+  "evidenceCutoff": "2026-10-29",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-luna",
+  "reviewedBy": "gemini:01a18582-ac20-73be-80b3-d51a07f89e82",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a18582-ac20-73be-80b3-d51a07f89e82",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-targeted-confirmation-2026-10-29",
+  "candidateId": "freshness-20261028-openai-science-results",
+  "runDigest": "e02a51f899cf76ba190e67022c2352cf3716dd63f5c53fdb3bd893b5fbc8e831",
+  "coreFactClaimIds": [
+    "openai-science-announcement"
+  ],
+  "identity": {
+    "seriesId": "openai-internal-model-science-results",
+    "action": "announce three model-attributed research results and a collaboration process",
+    "stage": "announced",
+    "dateBasis": "The October 26 announcement date is explicit in the retained Progressive Robot report; other reporting corroborates the announcement, not output creation dates or proof validity",
+    "deduplicationReason": "A new dated release and review-process milestone, not the earlier October 6 bulk-mathematics release or an independent validation event.",
+    "comparedEventIds": [
+      "openai-academic-researchers-2026",
+      "alphaevolve-2025"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "capability",
+    "reason": "The dated announce three model-attributed research results and a collaboration process is a capability event; scope does not include verified downstream effects."
+  },
+  "significance": {
+    "rationale": "An evidenced dated announced milestone qualifies for L1; the evidence does not establish executed independent downstream effects.",
+    "whyNotHigher": "L2-CAPABILITY is not satisfied: no supported record of the requisite independent downstream milestone or adoption/replication.",
+    "whyNotLower": "The primary event fact is supported by quoted sources and separated from vendor outcome claims; the candidate is not merely a search result.",
+    "comparisonEventIds": [
+      "openai-academic-researchers-2026",
+      "alphaevolve-2025"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-CAPABILITY",
+        "criteria": {
+          "previously_infeasible_task": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded announced event, not the independently established previously_infeasible_task milestone required for L2-CAPABILITY. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "comparable_baseline": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded announced event, not the independently established comparable_baseline milestone required for L2-CAPABILITY. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "independent_replication": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded announced event, not the independently established independent_replication milestone required for L2-CAPABILITY. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The reviewed announcement/access event is recent; no measured, independently reproduced impact or broad consensus is established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "AGMAI disputed the designated-shepherd process and requested release of physics outputs; this is AGMAI’s view, not proof the results are wrong or a general consensus.",
+    "evidenceIds": [
+      "openai-scientific-results-2026-openai-science-limits-agmai-7",
+      "openai-scientific-results-2026-openai-science-limits-agmai-8",
+      "openai-scientific-results-2026-openai-science-limits-agmai-9"
+    ]
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini compared the full English and Simplified Chinese title, summary, narrative and claim text; date, stage, scope and limitations agree. Producer separately checked both languages; this is not a human bilingual sign-off."
+  },
+  "limitations": [
+    "Read-only Gemini review of full retained artifacts in the named Pi session; not an independent live-web reproduction, not human approval, and not publication authorization.",
+    "Search captures are bounded multi-result extractions; they are not direct page fetches or full channel coverage. Direct OpenAI announcement returned HTTP 403; no bypass.",
+    "PublishedAt is omitted for sources without an independently established source-publication date; event date is not substituted for source date.",
+    "Gemini full-review text includes extraneous/overbroad language (e.g. five independent reporting outlets for the OpenAI event); the retained package supports three named news publishers, an interested company repository, and AGMAI’s own statement. Those reviewer embellishments are not adopted as fact.",
+    "A previous review of the pre-fix run is superseded; only the named session accepting the current run digest is cited here.",
+    "Raw independent review: review/gemini3.8-full-r2-1-2-raw.md; SHA-256 4f752ceb26a4cb3cfef00fac5f9aeb2382888a7fc2a10e6f112f34774686ce72.",
+    "This published-state wrapper is a provisional proposal; Gemini accepted the unchanged factual draft, not an executed release. The publication date is planned, not historical, until release completes."
+  ],
+  "evidence": [
+    {
+      "id": "openai-scientific-results-2026-openai-science-announcement-verge-1",
+      "sourceId": "fup26-verge-openai-science",
+      "claimId": "openai-science-announcement",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+      "originId": "theverge-openai-science-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "OpenAI is back with [three more “major” discoveries in math, computer science, and physics]",
+      "locator": "The Verge article, opening paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/openai-science-results-20261026.txt",
+      "sha256": "adf3f7dea4382da472383bc54112252391bea6dae34f6f77199fc905f760f288"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-announcement-verge-2",
+      "sourceId": "fup26-verge-openai-science",
+      "claimId": "openai-science-announcement",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+      "originId": "theverge-openai-science-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "What’s different this time is the choice to have external experts that OpenAI describes as “shepherds” guiding the results in computer science and physics",
+      "locator": "The Verge article, paragraph on external researchers",
+      "artifact": "governance/evidence/2026-10-28/search/openai-science-results-20261026.txt",
+      "sha256": "adf3f7dea4382da472383bc54112252391bea6dae34f6f77199fc905f760f288"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-announcement-progressiverobot-3",
+      "sourceId": "fup26-progressiverobot-openai",
+      "claimId": "openai-science-announcement",
+      "url": "https://www.progressiverobot.com/2026/10/27/openai-discoveries-mathematics-computer-science-physics/",
+      "originId": "progressiverobot-openai-science-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "OpenAI discoveries in three separate fields were announced on Monday 26 October 2026",
+      "locator": "Progressive Robot report, opening paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/openai-science-results-20261026.txt",
+      "sha256": "adf3f7dea4382da472383bc54112252391bea6dae34f6f77199fc905f760f288"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-announcement-github-4",
+      "sourceId": "fup26-openai-math-repo",
+      "claimId": "openai-science-announcement",
+      "url": "https://github.com/openai/math",
+      "originId": "openai-math-repository-readme",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "This repository contains mathematical manuscripts and supporting proof artifacts produced by an unnamed internal OpenAI model.",
+      "locator": "OpenAI math repository README",
+      "artifact": "governance/evidence/2026-10-28/direct/openai-science-github.txt",
+      "sha256": "bb1cdc482038974c3ae86c09ef5a0f93bba080456f3a5fd80824bcd7cbc5966b"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-announcement-sciam-5",
+      "sourceId": "fup26-sciam-openai-science",
+      "claimId": "openai-science-announcement",
+      "url": "https://www.scientificamerican.com/article/dueling-proofs-from-openai-and-anthropic-astound-scientists/",
+      "originId": "sciam-openai-scientific-claims",
+      "accessedAt": "2026-10-29",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Yesterday the company [dropped](https://openai.com/index/building-scientific-understanding-with-academic-communities/) three massive proofs that touched on math, physics and computer science",
+      "locator": "Scientific American article, opening section",
+      "artifact": "governance/evidence/2026-10-29/search/scientificamerican-openai-criticism-20261029.txt",
+      "sha256": "05569f0421dc6a2ce7fbe1ce17a4f514eeb1cbb2cf6f0c5e39d818faf30874e4"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-limits-github-6",
+      "sourceId": "fup26-openai-math-repo",
+      "claimId": "openai-science-limits",
+      "url": "https://github.com/openai/math",
+      "originId": "openai-math-repository-readme",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "In our view, these manuscripts are best understood as a form of raw research data, rather than polished academic papers.",
+      "locator": "OpenAI math repository README",
+      "artifact": "governance/evidence/2026-10-28/direct/openai-science-github.txt",
+      "sha256": "bb1cdc482038974c3ae86c09ef5a0f93bba080456f3a5fd80824bcd7cbc5966b"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-limits-agmai-7",
+      "sourceId": "fup26-agmai-statements",
+      "claimId": "openai-science-limits",
+      "url": "https://agmai.org/",
+      "originId": "agmai-openai-release-statements-20261025-26",
+      "accessedAt": "2026-10-29",
+      "relationship": "independent",
+      "verification": "direct",
+      "quote": "we recommend that AI companies do not adopt this practice for future releases",
+      "locator": "AGMAI statement dated October 25, 2026, designated mathematicians section",
+      "artifact": "governance/evidence/2026-10-29/search/agmai-shepherd-critique-20261029.txt",
+      "sha256": "f85aa1dbc5d372bbd3e2a9d432ddd6aec2b17600d4c09aa2521adb6c7f2af290"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-limits-agmai-8",
+      "sourceId": "fup26-agmai-statements",
+      "claimId": "openai-science-limits",
+      "url": "https://agmai.org/",
+      "originId": "agmai-openai-release-statements-20261025-26",
+      "accessedAt": "2026-10-29",
+      "relationship": "independent",
+      "verification": "direct",
+      "quote": "We call on OpenAI to make public without delay the natural-language and Lean outputs behind its announced existence proofs",
+      "locator": "AGMAI statement dated October 26, 2026",
+      "artifact": "governance/evidence/2026-10-29/search/agmai-shepherd-critique-20261029.txt",
+      "sha256": "f85aa1dbc5d372bbd3e2a9d432ddd6aec2b17600d4c09aa2521adb6c7f2af290"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-limits-agmai-9",
+      "sourceId": "fup26-agmai-statements",
+      "claimId": "openai-science-limits",
+      "url": "https://agmai.org/",
+      "originId": "agmai-openai-release-statements-20261025-26",
+      "accessedAt": "2026-10-29",
+      "relationship": "independent",
+      "verification": "direct",
+      "quote": "We do not speak on behalf of the entire mathematical community",
+      "locator": "AGMAI October 6 statement linked from its October 25–26 statement index",
+      "artifact": "governance/evidence/2026-10-29/search/agmai-shepherd-critique-20261029.txt",
+      "sha256": "f85aa1dbc5d372bbd3e2a9d432ddd6aec2b17600d4c09aa2521adb6c7f2af290"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-limits-verge-10",
+      "sourceId": "fup26-verge-openai-science",
+      "claimId": "openai-science-limits",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+      "originId": "theverge-openai-science-report",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "The physics information has not been released in full",
+      "locator": "The Verge article, physics disclosure paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/openai-science-results-20261026.txt",
+      "sha256": "adf3f7dea4382da472383bc54112252391bea6dae34f6f77199fc905f760f288"
+    },
+    {
+      "id": "openai-scientific-results-2026-openai-science-limits-sciam-11",
+      "sourceId": "fup26-sciam-openai-science",
+      "claimId": "openai-science-limits",
+      "url": "https://www.scientificamerican.com/article/dueling-proofs-from-openai-and-anthropic-astound-scientists/",
+      "originId": "sciam-openai-scientific-claims",
+      "accessedAt": "2026-10-29",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Among the work of such experts, a paper relating to the “million-dollar” Yang-Mills problem (one of seven Millennium Prize Problems set by the Clay Mathematics Institute in 2000) has still not been made public.",
+      "locator": "Scientific American article, discussion of the unreleased Yang–Mills paper",
+      "artifact": "governance/evidence/2026-10-29/search/scientificamerican-openai-criticism-20261029.txt",
+      "sha256": "05569f0421dc6a2ce7fbe1ce17a4f514eeb1cbb2cf6f0c5e39d818faf30874e4"
+    }
+  ]
+}

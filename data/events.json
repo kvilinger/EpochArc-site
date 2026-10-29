@@ -1167,7 +1167,8 @@
       "gemini-deep-think-imo-gold-2025",
       "deepmind-alphagenome-atlas-2026",
       "google-weathernext-3-2026",
-      "openai-navier-stokes-proposed-proof-2026"
+      "openai-navier-stokes-proposed-proof-2026",
+      "openai-scientific-results-2026"
     ],
     "editorial": {
       "createdAt": "2026-07-20",
@@ -4225,6 +4226,7 @@
       "nvidia-openai-datacenter-financing-2026",
       "nvidia-groq-3-lpx-2026",
       "fujitsu-monaka-server-2026",
+      "google-oracle-tpu-oci-2026",
       "nvidia-osmo-2026",
       "positron-series-c-2026",
       "samsung-helix-investment-2026"
@@ -5932,6 +5934,119 @@
       ],
       "reviewer": "gang",
       "reviewProvenance": "legacy_pre_v23"
+    }
+  },
+  {
+    "id": "claude-duet-research-preview-2026",
+    "slug": "claude-duet-research-preview-2026",
+    "date": "2026-10-21",
+    "datePrecision": "day",
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Anthropic opens Claude Duet research preview for US subscribers",
+      "zhHans": "Anthropic 面向美国订阅用户开放 Claude Duet 研究预览"
+    },
+    "searchSummary": {
+      "en": "Claude Duet entered a waitlisted US research preview for Pro and Max subscribers on October 21.",
+      "zhHans": "Claude Duet 于 10 月 21 日面向美国 Pro 和 Max 订阅用户启动候补制研究预览。"
+    },
+    "summary": {
+      "en": "Anthropic opened Claude Duet as a waitlisted research preview on October 21 for US Claude Pro and Max subscribers, through iOS, Android and claude.ai. The product announcement describes a proactive agent that monitors connected apps and asks before acting. Anthropic also warns that the early version can misread threads or urgency. This is a limited preview, not evidence of broad uptake or reliable autonomous performance.",
+      "zhHans": "Anthropic 于 10 月 21 日面向美国 Claude Pro 和 Max 订阅用户开放 Claude Duet 候补制研究预览，入口包括 iOS、Android 和 claude.ai。官方将其描述为可查看已连接应用并在操作前征求确认的主动式智能体；同时提醒，早期版本可能误读对话或紧急程度。这是有限范围的预览，不代表广泛采用或自主执行能力已获验证。"
+    },
+    "narrative": {
+      "en": "The dated node is the opening of a waitlisted product preview. Anthropic's product and safety descriptions remain company statements; reviewed material does not establish measured adoption, reliability, or independent security validation. The event should not be conflated with Meta Muse or OpenAI's separate agent products.",
+      "zhHans": "本节点记录的是候补制产品预览开放。Anthropic 对产品功能与安全措施的描述仍属公司陈述；本轮材料没有证明实际采用规模、可靠性或独立安全验证。该事件不应与 Meta Muse 或 OpenAI 的其他智能体产品合并。"
+    },
+    "claims": [
+      {
+        "id": "claude-duet-fact",
+        "claimType": "fact",
+        "text": {
+          "en": "Anthropic opened Claude Duet as a waitlisted research preview on October 21, 2026, initially for US Pro and Max subscribers on iOS, Android and claude.ai.",
+          "zhHans": "Anthropic 于 2026 年 10 月 21 日面向美国 Pro 和 Max 用户启动 Claude Duet 候补制研究预览，入口包括 iOS、Android 和 claude.ai。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-anthropic-claude-duet",
+          "fup26-unite-claude-duet"
+        ]
+      },
+      {
+        "id": "claude-duet-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "Anthropic describes Duet as an early preview and warns that it may misread a thread or miscalibrate urgency; this evidence does not establish reliable autonomous performance.",
+          "zhHans": "Anthropic 将 Duet 描述为早期预览，并提醒它可能误读对话或紧急程度；现有证据不能证明其自主执行表现可靠。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-anthropic-claude-duet"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "meta-muse-personal-agent-2026",
+      "salesforce-agentforce-job-ready-agents-2026"
+    ],
+    "displayDate": {
+      "en": "2026-10-21",
+      "zhHans": "2026年10月21日"
+    },
+    "categories": [
+      "product"
+    ],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "relatedForecasts": [],
+    "sources": [
+      {
+        "sourceId": "fup26-anthropic-claude-duet",
+        "supports": [
+          "claude-duet-research-preview-2026",
+          "claude-duet-fact",
+          "claude-duet-limits"
+        ]
+      },
+      {
+        "sourceId": "fup26-unite-claude-duet",
+        "supports": [
+          "claude-duet-research-preview-2026",
+          "claude-duet-fact"
+        ]
+      }
+    ],
+    "editorial": {
+      "createdAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "lastSourceCheckAt": "2026-10-28",
+      "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-10-29",
+          "changeType": "created",
+          "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+        }
+      ],
+      "reviewedAt": "2026-10-29",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a18581-0869-73f6-b377-3b5c673fb781",
+      "reviewRecord": "governance/reviews/independent-20261029/claude-duet-research-preview-2026.json",
+      "publishedAt": "2026-10-29"
     }
   },
   {
@@ -8596,6 +8711,7 @@
       "ai-model-price-war-2026",
       "deepseek-v4-1-flash-2026",
       "kimi-k3-2026",
+      "kimi-k31-pro-hosted-api-2026",
       "thinking-machines-inkling-2026"
     ],
     "relatedForecasts": [],
@@ -12427,6 +12543,7 @@
       "figure-bmw-humanoid-2025",
       "amd-world-labs-acquisition-2026",
       "gemini-robotics-er2-2026",
+      "genie-4-world-simulation-2026",
       "nvidia-osmo-2026",
       "project-fetch-phase-two-2026"
     ],
@@ -12606,6 +12723,7 @@
       "gemini-robotics-2025",
       "project-fetch-phase-two-2026",
       "anthropic-model-hardware-standard-2026",
+      "genie-4-world-simulation-2026",
       "google-gemini-4-argon-2026",
       "nvidia-osmo-2026"
     ],
@@ -12632,6 +12750,121 @@
         }
       ],
       "publishedAt": "2026-08-05"
+    }
+  },
+  {
+    "id": "genie-4-world-simulation-2026",
+    "slug": "genie-4-world-simulation-2026",
+    "date": "2026-10-27",
+    "datePrecision": "day",
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Google DeepMind announces Genie 4 world-model research preview",
+      "zhHans": "Google DeepMind 宣布 Genie 4 世界模型研究预览"
+    },
+    "searchSummary": {
+      "en": "Genie 4 adds real-time interactive world simulation features and begins as a trusted-tester research preview.",
+      "zhHans": "Genie 4 增加实时交互式世界模拟功能，首先面向受邀测试者开放研究预览。"
+    },
+    "summary": {
+      "en": "Google DeepMind announced Genie 4 on October 27 as a new world model, with a research preview for trusted testers. The company says the system can generate interactive environments with audio and accept scene changes during a simulation. DeepMind describes the model as early and experimental; the announcement's staged rollout is not a general release, and the reviewed sources do not independently establish physical accuracy or downstream adoption.",
+      "zhHans": "Google DeepMind 于 10 月 27 日宣布新世界模型 Genie 4，并先向受邀测试者开放研究预览。公司称，该系统可生成带音频的交互环境，并在模拟过程中接受场景修改。DeepMind 将模型称为早期实验性系统；分阶段预览并非全面开放，所审查来源也未独立证明其物理准确性或下游采用情况。"
+    },
+    "narrative": {
+      "en": "The node records the dated announcement and preview stage. Realism, physics and performance descriptions are attributed to Google; the reviewed evidence contains no external reproduction of the model's physical accuracy. Google's own launch notes identify consistency drift and unresolved audio or in-world text issues. Planned access for subscribers and API partners is future rollout, not already universal availability.",
+      "zhHans": "本节点记录有日期依据的公告与预览阶段。逼真度、物理表现和性能描述均归于 Google；所审查证据中没有模型物理准确性的外部复现。Google 自己的发布材料也指出一致性漂移以及音频或场景文字仍未解决的问题。订阅用户和 API 合作方的后续开放属于未来 rollout，并非当前全面可用。"
+    },
+    "claims": [
+      {
+        "id": "genie4-preview-announcement",
+        "claimType": "fact",
+        "text": {
+          "en": "Google DeepMind announced Genie 4 on October 27, 2026 and began a research preview for trusted testers.",
+          "zhHans": "Google DeepMind 于 2026 年 10 月 27 日宣布 Genie 4，并开始向受邀测试者提供研究预览。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-google-genie4",
+          "fup26-techcrunch-genie4"
+        ]
+      },
+      {
+        "id": "genie4-preview-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "DeepMind describes Genie 4 as early and experimental, and the rollout remains staged; launch materials also acknowledge that details and object consistency can drift over time.",
+          "zhHans": "DeepMind 将 Genie 4 描述为早期实验性系统，开放范围仍分阶段；发布材料也承认细节与物体一致性可能随时间漂移。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-google-genie4",
+          "fup26-techcrunch-genie4"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "gemini-robotics-er2-2026",
+      "gemini-robotics-2025"
+    ],
+    "displayDate": {
+      "en": "2026-10-27",
+      "zhHans": "2026年10月27日"
+    },
+    "categories": [
+      "capability"
+    ],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "relatedForecasts": [],
+    "sources": [
+      {
+        "sourceId": "fup26-google-genie4",
+        "supports": [
+          "genie-4-world-simulation-2026",
+          "genie4-preview-announcement",
+          "genie4-preview-limits"
+        ]
+      },
+      {
+        "sourceId": "fup26-techcrunch-genie4",
+        "supports": [
+          "genie-4-world-simulation-2026",
+          "genie4-preview-announcement",
+          "genie4-preview-limits"
+        ]
+      }
+    ],
+    "editorial": {
+      "createdAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "lastSourceCheckAt": "2026-10-28",
+      "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-10-29",
+          "changeType": "created",
+          "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+        }
+      ],
+      "reviewedAt": "2026-10-29",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+      "reviewRecord": "governance/reviews/independent-20261029/genie-4-world-simulation-2026.json",
+      "publishedAt": "2026-10-29"
     }
   },
   {
@@ -12996,6 +13229,7 @@
       "claude-fable-ban-2026",
       "glm-5-3-coding-cyber-launch-2026",
       "kimi-k3-2026",
+      "minimax-m31-flash-weights-2026",
       "reflection-beam-open-weights-2026"
     ],
     "sources": [
@@ -13615,6 +13849,129 @@
     }
   },
   {
+    "id": "google-oracle-tpu-oci-2026",
+    "slug": "google-oracle-tpu-oci-2026",
+    "date": "2026-10-27",
+    "datePrecision": "day",
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Google and Oracle plan TPU capacity on OCI from 2027",
+      "zhHans": "Google 与 Oracle 计划自 2027 年起在 OCI 提供 TPU 算力"
+    },
+    "searchSummary": {
+      "en": "The companies announced TPU availability on Oracle Cloud Infrastructure, planned to begin in calendar 2027 with a multiyear ramp.",
+      "zhHans": "两家公司宣布计划在 Oracle Cloud Infrastructure 提供 TPU，预计于 2027 日历年启动并分多年扩容。"
+    },
+    "summary": {
+      "en": "Google and Oracle announced the partnership at Oracle AI World on October 27: Google TPU capacity is planned for Oracle Cloud Infrastructure starting in calendar 2027, with a multiyear ramp. The companies have not announced a specific launch date, initial capacity, configurations or pricing. This is a future infrastructure plan, not evidence that OCI TPU capacity is already live or that customers have adopted it.",
+      "zhHans": "Google 与 Oracle 于 10 月 27 日在 Oracle AI World 宣布合作：计划自 2027 日历年起在 Oracle Cloud Infrastructure 提供 Google TPU 算力，并分多年扩容。两家公司尚未公布具体启动日、初始容量、配置或价格。这是一项未来基础设施计划，并非 OCI 已上线 TPU 算力或客户已采用的证据。"
+    },
+    "narrative": {
+      "en": "The event is the October 27 announcement of a future infrastructure arrangement. The Oracle and Google releases share one joint-announcement origin and are not independent corroborations of execution. Network World independently reports the planned start and missing commercial details. The record does not claim that capacity has been deployed or that workload economics have changed.",
+      "zhHans": "事件是 10 月 27 日对未来基础设施安排的宣布。Oracle 与 Google 的稿件源于同一联合公告，不能算作执行情况的独立佐证。Network World 独立报道了计划启动时间及尚未公布的商业细节。本记录不声称算力已部署或工作负载成本已经变化。"
+    },
+    "claims": [
+      {
+        "id": "google-oracle-plan",
+        "claimType": "fact",
+        "text": {
+          "en": "Google and Oracle announced on October 27, 2026 a plan to make Google TPU capacity available through OCI starting in calendar year 2027, with a multiyear ramp.",
+          "zhHans": "Google 与 Oracle 于 2026 年 10 月 27 日宣布计划自 2027 日历年起通过 OCI 提供 Google TPU 算力，并分多年扩容。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-google-cloud-oracle-tpu",
+          "fup26-oracle-google-tpu",
+          "fup26-networkworld-oracle-tpu"
+        ]
+      },
+      {
+        "id": "google-oracle-not-deployed",
+        "claimType": "limitation",
+        "text": {
+          "en": "The plan is not an already deployed OCI service: as of the announcement, no exact launch date, initial capacity, configuration or pricing had been disclosed.",
+          "zhHans": "该计划并不表示 OCI 服务已经部署：截至公告时，具体启动日、初始容量、配置或价格均未披露。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-oracle-google-tpu",
+          "fup26-networkworld-oracle-tpu"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "aws-nvidia-2m-gpu-expansion-2026",
+      "ooredoo-zankore-ai-platform-2026"
+    ],
+    "displayDate": {
+      "en": "2026-10-27",
+      "zhHans": "2026年10月27日"
+    },
+    "categories": [
+      "commerce"
+    ],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "relatedForecasts": [],
+    "sources": [
+      {
+        "sourceId": "fup26-google-cloud-oracle-tpu",
+        "supports": [
+          "google-oracle-tpu-oci-2026",
+          "google-oracle-plan"
+        ]
+      },
+      {
+        "sourceId": "fup26-oracle-google-tpu",
+        "supports": [
+          "google-oracle-tpu-oci-2026",
+          "google-oracle-plan",
+          "google-oracle-not-deployed"
+        ]
+      },
+      {
+        "sourceId": "fup26-networkworld-oracle-tpu",
+        "supports": [
+          "google-oracle-tpu-oci-2026",
+          "google-oracle-plan",
+          "google-oracle-not-deployed"
+        ]
+      }
+    ],
+    "editorial": {
+      "createdAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "lastSourceCheckAt": "2026-10-28",
+      "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-10-29",
+          "changeType": "created",
+          "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+        }
+      ],
+      "reviewedAt": "2026-10-29",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+      "reviewRecord": "governance/reviews/independent-20261029/google-oracle-tpu-oci-2026.json",
+      "publishedAt": "2026-10-29"
+    }
+  },
+  {
     "id": "google-synthid-bio-2026",
     "slug": "google-synthid-bio-2026",
     "status": "published",
@@ -14157,6 +14514,7 @@
     "relatedEvents": [
       "gpt-5-6-limited-release-2026",
       "ai-model-price-war-2026",
+      "microsoft-mai-image-27-preview-2026",
       "openai-gpt-6-astra-2026",
       "thinking-machines-inkling-2026"
     ],
@@ -15959,7 +16317,8 @@
     "relatedEvents": [
       "deepseek-v4-2026",
       "glm-52-open-source-2026",
-      "deepseek-r1-2025"
+      "deepseek-r1-2025",
+      "kimi-k31-pro-hosted-api-2026"
     ],
     "relatedForecasts": [
       "open-vs-closed"
@@ -16001,6 +16360,127 @@
       "reviewProvenance": "v2.3",
       "lastSourceCheckAt": "2026-08-24",
       "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
+    }
+  },
+  {
+    "id": "kimi-k31-pro-hosted-api-2026",
+    "slug": "kimi-k31-pro-hosted-api",
+    "date": "2026-10-23",
+    "datePrecision": "day",
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Vercel adds Kimi K3.1 Pro to AI Gateway",
+      "zhHans": "Vercel 将 Kimi K3.1 Pro 接入 AI Gateway"
+    },
+    "searchSummary": {
+      "en": "Vercel listed Kimi K3.1 Pro and Highspeed in AI Gateway on October 23; full weights were still planned for November 4.",
+      "zhHans": "Vercel 于 10 月 23 日将 Kimi K3.1 Pro 与 Highspeed 列入 AI Gateway；完整权重仍计划于 11 月 4 日发布。"
+    },
+    "summary": {
+      "en": "Vercel's October 23 changelog listed Kimi K3.1 Pro and K3.1 Pro Highspeed as available through AI Gateway; Simon Willison separately reported using the Moonshot API that day. Moonshot's official page says full weights are planned by November 4 and carries visible October 24 metadata. This node records Vercel's gateway availability, not a definitively dated Moonshot-wide launch or an October open-weight release.",
+      "zhHans": "Vercel 于 10 月 23 日的更新日志中列出可通过 AI Gateway 使用的 Kimi K3.1 Pro 与 K3.1 Pro Highspeed；Simon Willison 也在同日记录了 Moonshot API 的使用情况。Moonshot 官方页面称完整权重计划于 11 月 4 日前发布，页面可见元数据日期为 10 月 24 日。本节点记录 Vercel 网关的可用性，不将其说成日期已完全确定的 Moonshot 全平台发布，也不称 10 月已开放权重。"
+    },
+    "narrative": {
+      "en": "The date is tied to Vercel's own changelog, not to a resolved date for Moonshot's original announcement. The Moonshot page metadata points to October 24, while Vercel and Simon Willison date their independent access records to October 23. The product/API stage is distinct from the planned November 4 weight release. No benchmark claim or actual usage scale is inferred.",
+      "zhHans": "日期依据 Vercel 自己的更新日志，Moonshot 原始公告日期仍未完全厘清。Moonshot 页面元数据指向 10 月 24 日，而 Vercel 与 Simon Willison 的访问记录日期为 10 月 23 日。产品/API 可用阶段与计划于 11 月 4 日开放权重是不同事项。本稿不推断跑分结论或实际使用规模。"
+    },
+    "claims": [
+      {
+        "id": "kimi-k31-vercel-availability",
+        "claimType": "fact",
+        "text": {
+          "en": "Vercel's October 23, 2026 changelog made Kimi K3.1 Pro and K3.1 Pro Highspeed available in AI Gateway; an independent practitioner also reported Moonshot API access that day.",
+          "zhHans": "Vercel 于 2026 年 10 月 23 日的更新日志宣布 Kimi K3.1 Pro 与 K3.1 Pro Highspeed 可在 AI Gateway 使用；一位独立开发者也在当日记录了 Moonshot API 的访问。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-vercel-kimi",
+          "fup26-simon-kimi"
+        ]
+      },
+      {
+        "id": "kimi-k31-weight-plan",
+        "claimType": "limitation",
+        "text": {
+          "en": "Moonshot's official page says full weights are planned by November 4, 2026; the October gateway listing is not an open-weight release, and the official page's visible metadata points to October 24 rather than resolving the October 23/24 announcement-date difference.",
+          "zhHans": "Moonshot 官方页面称完整权重计划于 2026 年 11 月 4 日前发布；10 月的网关上架不是开放权重发布，且官方页面可见元数据指向 10 月 24 日，尚不能消除 10 月 23/24 日的公告日期差异。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-kimi-moonshot",
+          "fup26-vercel-kimi"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "kimi-k3-2026",
+      "deepseek-v4-2026"
+    ],
+    "displayDate": {
+      "en": "2026-10-23",
+      "zhHans": "2026年10月23日"
+    },
+    "categories": [
+      "product"
+    ],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "relatedForecasts": [],
+    "sources": [
+      {
+        "sourceId": "fup26-vercel-kimi",
+        "supports": [
+          "kimi-k31-pro-hosted-api-2026",
+          "kimi-k31-vercel-availability",
+          "kimi-k31-weight-plan"
+        ]
+      },
+      {
+        "sourceId": "fup26-simon-kimi",
+        "supports": [
+          "kimi-k31-pro-hosted-api-2026",
+          "kimi-k31-vercel-availability"
+        ]
+      },
+      {
+        "sourceId": "fup26-kimi-moonshot",
+        "supports": [
+          "kimi-k31-pro-hosted-api-2026",
+          "kimi-k31-weight-plan"
+        ]
+      }
+    ],
+    "editorial": {
+      "createdAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "lastSourceCheckAt": "2026-10-28",
+      "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-10-29",
+          "changeType": "created",
+          "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+        }
+      ],
+      "reviewedAt": "2026-10-29",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a18582-ac20-73be-80b3-d51a07f89e82",
+      "reviewRecord": "governance/reviews/independent-20261029/kimi-k31-pro-hosted-api-2026.json",
+      "publishedAt": "2026-10-29"
     }
   },
   {
@@ -17078,7 +17558,9 @@
     "relatedEvents": [
       "meta-muse-spark-1-3-2026",
       "openai-operator-2025",
-      "meta-muse-macos-vulnerability-2026"
+      "claude-duet-research-preview-2026",
+      "meta-muse-macos-vulnerability-2026",
+      "nvidia-meta-muse-collaboration-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -17363,7 +17845,8 @@
     ],
     "relatedEvents": [
       "meta-muse-spark-1-3-2026",
-      "meta-muse-code-spark-1-2-2026"
+      "meta-muse-code-spark-1-2-2026",
+      "nvidia-meta-muse-collaboration-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -17547,6 +18030,120 @@
         }
       ],
       "publishedAt": "2026-09-06"
+    }
+  },
+  {
+    "id": "microsoft-mai-image-27-preview-2026",
+    "slug": "microsoft-mai-image-27-preview-2026",
+    "date": "2026-10-27",
+    "datePrecision": "day",
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Microsoft introduces MAI Image 2.7 editing preview",
+      "zhHans": "Microsoft 推出 MAI Image 2.7 图像编辑预览"
+    },
+    "searchSummary": {
+      "en": "Microsoft announced MAI Image 2.7 as an image-editing preview on October 27; it is distinct from the 2.6 GA announcement.",
+      "zhHans": "Microsoft 于 10 月 27 日宣布 MAI Image 2.7 图像编辑预览；这与 2.6 的 GA 公告是不同版本与阶段。"
+    },
+    "summary": {
+      "en": "Microsoft announced MAI Image 2.7 on October 27 as an image-editing model in preview. A third-party analysis reports no public API, Foundry deployment or price at launch and notes that text-to-image generation was not included. Microsoft also updated separate MAI Image 2.6 and 2.6-Flash general-availability material; that GA status must not be transferred to 2.7. The reported leaderboard position is not treated here as an independent reproduction.",
+      "zhHans": "Microsoft 于 10 月 27 日宣布图像编辑模型 MAI Image 2.7 进入预览。第三方分析称发布时没有公开 API、Foundry 部署或价格，且不含文生图功能。Microsoft 同时更新了 MAI Image 2.6 与 2.6-Flash 的正式可用材料；该 GA 状态不能套用到 2.7。本稿不将其榜单位置视为独立复现结果。"
+    },
+    "narrative": {
+      "en": "The node is limited to the 2.7 editing preview. The access limitations are attributed to an independent third-party analysis; the official Microsoft post itself says only that the model launches in preview. Microsoft-reported leaderboard placements and use-case comparisons are not presented as independently reproduced results. The nearby 2.6/2.6-Flash GA update is a separate version and stage.",
+      "zhHans": "本节点仅记录 2.7 图像编辑预览。可用范围限制归于独立第三方分析；Microsoft 官方稿本身只说明模型以预览形式推出。本稿不把 Microsoft 报告的榜单名次和用例比较说成独立复现结果。同期的 2.6/2.6-Flash GA 更新属于不同版本和阶段。"
+    },
+    "claims": [
+      {
+        "id": "mai27-preview-announcement",
+        "claimType": "fact",
+        "text": {
+          "en": "Microsoft announced MAI Image 2.7 on October 27, 2026 as an image-editing model in preview.",
+          "zhHans": "Microsoft 于 2026 年 10 月 27 日宣布 MAI Image 2.7 图像编辑模型进入预览。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-microsoft-mai27",
+          "fup26-orcarouter-mai27"
+        ]
+      },
+      {
+        "id": "mai27-preview-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "A third-party analysis reports no public API, Foundry deployment or published price at launch and says text-to-image was not included; this does not establish that such access can never be added.",
+          "zhHans": "第三方分析称发布时没有公开 API、Foundry 部署或价格，且不含文生图功能；这不代表未来不会增加这些能力或入口。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-orcarouter-mai27",
+          "fup26-microsoft-mai27"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "gpt-5-6-broad-launch-2026"
+    ],
+    "displayDate": {
+      "en": "2026-10-27",
+      "zhHans": "2026年10月27日"
+    },
+    "categories": [
+      "product"
+    ],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "relatedForecasts": [],
+    "sources": [
+      {
+        "sourceId": "fup26-microsoft-mai27",
+        "supports": [
+          "microsoft-mai-image-27-preview-2026",
+          "mai27-preview-announcement",
+          "mai27-preview-limits"
+        ]
+      },
+      {
+        "sourceId": "fup26-orcarouter-mai27",
+        "supports": [
+          "microsoft-mai-image-27-preview-2026",
+          "mai27-preview-announcement",
+          "mai27-preview-limits"
+        ]
+      }
+    ],
+    "editorial": {
+      "createdAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "lastSourceCheckAt": "2026-10-28",
+      "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-10-29",
+          "changeType": "created",
+          "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+        }
+      ],
+      "reviewedAt": "2026-10-29",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+      "reviewRecord": "governance/reviews/independent-20261029/microsoft-mai-image-27-preview-2026.json",
+      "publishedAt": "2026-10-29"
     }
   },
   {
@@ -17923,6 +18520,133 @@
       "product"
     ],
     "impactIndex": 4
+  },
+  {
+    "id": "minimax-m31-flash-weights-2026",
+    "slug": "minimax-m31-flash-weights",
+    "date": "2026-10-23",
+    "datePrecision": "day",
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "MiniMax publishes M3.1 Flash weights under a community license",
+      "zhHans": "MiniMax 按社区许可公开 M3.1 Flash 权重"
+    },
+    "searchSummary": {
+      "en": "MiniMax said M3.1 Flash weights were public on October 23, after the October 19 hosted rollout.",
+      "zhHans": "MiniMax 称 M3.1 Flash 权重于 10 月 23 日公开；此前托管服务于 10 月 19 日上线。"
+    },
+    "summary": {
+      "en": "MiniMax's research page dates the hosted API rollout to October 19. The official X post, originally dated October 19 and edited on October 23, displayed the statement that M3.1 Flash weights were public; the first full-content Hugging Face repository commit is timestamped 03:37:20 UTC that day. These are separate service and weight-availability stages, and the first public-download time is not established. The repository uses a Community License: commercial users must display attribution, and annual revenue above US$20 million requires prior written authorization. Vendor benchmark and download claims are not independent evidence of performance or adoption.",
+      "zhHans": "MiniMax 研究页将托管 API 上线日期标为 10 月 19 日。官方 X 帖子原始日期为 10 月 19 日，10 月 23 日编辑后显示 M3.1 Flash 权重已公开；Hugging Face 仓库首个完整内容提交的时间戳为当日 03:37:20 UTC。这是两个不同阶段：托管服务上线与权重可用状态。公众首次可下载的时间尚未确定。仓库采用社区许可：商业用户须展示署名，年收入超过 2,000 万美元者须事先取得书面授权。厂商跑分和下载数据不能独立证明模型表现或实际采用。"
+    },
+    "narrative": {
+      "en": "The event date is the October 23 edit timestamp on MiniMax's official X post, which then displayed the statement that weights were public; the post itself was originally dated October 19, the same day as the hosted API rollout. Hugging Face records the first full-content repository commit at 03:37:20 UTC on October 23. Neither capture establishes the first moment public downloads began. The license is not unrestricted commercial open use. No independent performance replication or measured external adoption is asserted.",
+      "zhHans": "事件日期依据 MiniMax 官方 X 帖子的 10 月 23 日编辑时间戳；该版本显示权重已公开。该帖原始日期为 10 月 19 日，与托管 API 上线同日。Hugging Face 记录的首个完整内容仓库提交时间为 10 月 23 日 03:37:20 UTC。两份记录均不能确定公众首次可下载的时刻。该许可并非不受限制的商业开放使用。本稿不宣称已有独立性能复现或可测量的外部采用。"
+    },
+    "claims": [
+      {
+        "id": "minimax-m31-weights",
+        "claimType": "fact",
+        "text": {
+          "en": "MiniMax's official X post, originally dated October 19 and edited at 1:06 AM on October 23, 2026, displayed the statement that M3.1 Flash weights were public; the hosted API rollout was dated October 19, and Hugging Face records the first full-content repository commit at 03:37:20 UTC on October 23. The first public-download time is not established.",
+          "zhHans": "MiniMax 官方 X 帖子原始日期为 2026 年 10 月 19 日，并于 10 月 23 日凌晨 1:06 编辑；编辑后的内容称 M3.1 Flash 权重已公开。托管 API 上线日期为 10 月 19 日，Hugging Face 记录的首个完整内容仓库提交时间为 10 月 23 日 03:37:20 UTC。公众首次可下载的时间尚未确定。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-minimax-m31-x",
+          "fup26-minimax-m31-hf",
+          "fup26-minimax-m31-blog"
+        ]
+      },
+      {
+        "id": "minimax-m31-license-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "The MiniMax Community License is not unrestricted commercial permission: commercial use requires prominent attribution, prior written authorization above US$20 million in annual revenue, and a notice below that threshold.",
+          "zhHans": "MiniMax 社区许可并未给予不受限制的商业使用权：商业使用须显著署名；年收入超过 2,000 万美元须事先取得书面授权，低于该门槛也须发送通知。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-minimax-m31-license"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "glm-52-open-source-2026",
+      "reflection-beam-open-weights-2026"
+    ],
+    "displayDate": {
+      "en": "2026-10-23",
+      "zhHans": "2026年10月23日"
+    },
+    "categories": [
+      "product"
+    ],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "relatedForecasts": [],
+    "sources": [
+      {
+        "sourceId": "fup26-minimax-m31-x",
+        "supports": [
+          "minimax-m31-flash-weights-2026",
+          "minimax-m31-weights"
+        ]
+      },
+      {
+        "sourceId": "fup26-minimax-m31-hf",
+        "supports": [
+          "minimax-m31-flash-weights-2026",
+          "minimax-m31-weights"
+        ]
+      },
+      {
+        "sourceId": "fup26-minimax-m31-blog",
+        "supports": [
+          "minimax-m31-flash-weights-2026",
+          "minimax-m31-weights"
+        ]
+      },
+      {
+        "sourceId": "fup26-minimax-m31-license",
+        "supports": [
+          "minimax-m31-flash-weights-2026",
+          "minimax-m31-license-limits"
+        ]
+      }
+    ],
+    "editorial": {
+      "createdAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "lastSourceCheckAt": "2026-10-28",
+      "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-10-29",
+          "changeType": "created",
+          "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+        }
+      ],
+      "reviewedAt": "2026-10-29",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a18581-0869-73f6-b377-3b5c673fb781",
+      "reviewRecord": "governance/reviews/independent-20261029/minimax-m31-flash-weights-2026.json",
+      "publishedAt": "2026-10-29"
+    }
   },
   {
     "id": "mirrorcode-benchmark-2026",
@@ -18881,6 +19605,121 @@
     }
   },
   {
+    "id": "nvidia-meta-muse-collaboration-2026",
+    "slug": "nvidia-meta-muse-collaboration-2026",
+    "date": "2026-10-27",
+    "datePrecision": "day",
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "NVIDIA and Meta expand Muse collaboration alongside proposed $3 billion investment",
+      "zhHans": "NVIDIA 与 Meta 扩大 Muse 合作并宣布拟议 30 亿美元投资"
+    },
+    "searchSummary": {
+      "en": "NVIDIA and Meta announced expanded work on Muse; NVIDIA said it would invest $3 billion in Meta's equity offering, subject to closing.",
+      "zhHans": "NVIDIA 与 Meta 宣布扩大 Muse 合作；NVIDIA 称将参与 Meta 股权发行并投资 30 亿美元，交易仍待交割。"
+    },
+    "summary": {
+      "en": "On October 27, NVIDIA and Meta announced expanded collaboration on Muse and the Muse family of models. NVIDIA also said it would invest $3 billion in Meta's equity offering. IBTimes describes the investment as proposed and subject to closing conditions. Reuters endpoints returned 401/403 in this review and are not treated as read sources. The announcement includes intended infrastructure and workflow collaboration; it does not establish that the equity transaction has closed or that a new production deployment has been completed.",
+      "zhHans": "10 月 27 日，NVIDIA 与 Meta 宣布扩大在 Muse 及 Muse 模型系列上的合作。NVIDIA 还称将向 Meta 的股权发行投资 30 亿美元。IBTimes 将该投资描述为拟议交易，仍受交割条件约束。本轮读取 Reuters 页面返回 401/403，故不将其计作已读取来源。公告还涉及基础设施和工作流协作意向，但不能证明股权交易已经完成或新的生产部署已经落实。"
+    },
+    "narrative": {
+      "en": "This is an announced partnership expansion and planned equity investment. The official source's claims about downloads, benchmark performance and future infrastructure are not independently verified in this record. IBTimes is the only independent report used here on the proposed investment status; Reuters endpoints returned 401/403 and were not treated as read sources. Do not describe the investment as closed or the collaboration as a production rollout.",
+      "zhHans": "本节点记录已宣布的合作扩大和拟议股权投资。官方对下载量、榜单表现和未来基础设施的说法未在本记录中得到独立验证。IBTimes 是本稿用于说明拟议投资状态的唯一独立报道；Reuters 页面返回 401/403，未被视为已读取来源。不得将投资说成已交割，也不得将合作说成生产部署。"
+    },
+    "claims": [
+      {
+        "id": "nvidia-meta-partnership",
+        "claimType": "fact",
+        "text": {
+          "en": "NVIDIA and Meta announced on October 27, 2026 that they would expand collaboration on Muse and the Muse family of models.",
+          "zhHans": "NVIDIA 与 Meta 于 2026 年 10 月 27 日宣布扩大在 Muse 及其模型系列上的合作。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-nvidia-muse-meta",
+          "fup26-ibtimes-nvidia-meta"
+        ]
+      },
+      {
+        "id": "nvidia-meta-planned-not-closed",
+        "claimType": "limitation",
+        "text": {
+          "en": "NVIDIA announced a proposed $3 billion investment in Meta's equity offering; IBTimes reports that completion remains subject to closing conditions, and the announcement is not evidence of a completed transaction or production deployment.",
+          "zhHans": "NVIDIA 宣布拟向 Meta 股权发行投资 30 亿美元；IBTimes 报道称交易仍受交割条件约束，该公告不能证明交易已完成或已实现生产部署。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-nvidia-muse-meta",
+          "fup26-ibtimes-nvidia-meta"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "meta-muse-personal-agent-2026",
+      "meta-muse-spark-open-2026"
+    ],
+    "displayDate": {
+      "en": "2026-10-27",
+      "zhHans": "2026年10月27日"
+    },
+    "categories": [
+      "commerce"
+    ],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "relatedForecasts": [],
+    "sources": [
+      {
+        "sourceId": "fup26-nvidia-muse-meta",
+        "supports": [
+          "nvidia-meta-muse-collaboration-2026",
+          "nvidia-meta-partnership",
+          "nvidia-meta-planned-not-closed"
+        ]
+      },
+      {
+        "sourceId": "fup26-ibtimes-nvidia-meta",
+        "supports": [
+          "nvidia-meta-muse-collaboration-2026",
+          "nvidia-meta-partnership",
+          "nvidia-meta-planned-not-closed"
+        ]
+      }
+    ],
+    "editorial": {
+      "createdAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "lastSourceCheckAt": "2026-10-28",
+      "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-10-29",
+          "changeType": "created",
+          "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+        }
+      ],
+      "reviewedAt": "2026-10-29",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+      "reviewRecord": "governance/reviews/independent-20261029/nvidia-meta-muse-collaboration-2026.json",
+      "publishedAt": "2026-10-29"
+    }
+  },
+  {
     "id": "nvidia-most-valuable-2024",
     "slug": "nvidia-most-valuable-company",
     "title": {
@@ -19739,7 +20578,9 @@
         ]
       }
     ],
-    "relatedEvents": [],
+    "relatedEvents": [
+      "google-oracle-tpu-oci-2026"
+    ],
     "relatedForecasts": [],
     "editorial": {
       "createdAt": "2026-08-06",
@@ -20148,7 +20989,8 @@
     "relatedEvents": [
       "mirrorcode-benchmark-2026",
       "rli-ai-automation-2026",
-      "deepseek-r1-2025"
+      "deepseek-r1-2025",
+      "openai-scientific-results-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -22704,6 +23546,147 @@
     }
   },
   {
+    "id": "openai-scientific-results-2026",
+    "slug": "openai-scientific-results-2026",
+    "date": "2026-10-26",
+    "datePrecision": "day",
+    "significance": 1,
+    "controversy": true,
+    "title": {
+      "en": "OpenAI announces three AI-research results and an academic review approach",
+      "zhHans": "OpenAI 宣布三项 AI 研究结果并提出学术协作方式"
+    },
+    "searchSummary": {
+      "en": "OpenAI announced three model-generated results in mathematics, computer science and physics; their correctness remains under expert review.",
+      "zhHans": "OpenAI 宣布模型生成的数学、计算机科学与物理研究结果；其正确性仍待专家审查。"
+    },
+    "summary": {
+      "en": "On October 26, OpenAI announced three results it attributed to an internal model in mathematics, computer science and physics, along with collaborations with academic researchers. Independent reports say two write-ups and Lean proofs were public while the physics materials were not fully released. OpenAI's math repository describes manuscripts as raw research data; AGMAI criticized the designated-shepherd approach and separately called for release of the physics outputs. This records the announcement and process dispute, not verified scientific discoveries.",
+      "zhHans": "10 月 26 日，OpenAI 宣布其内部模型在数学、计算机科学和物理领域产生三项结果，并提出与学术研究者合作的方式。独立报道指出，其中两项的文本与 Lean 证明已公开，物理材料尚未完整发布。OpenAI 数学仓库将相关手稿称为原始研究数据；AGMAI 批评指定“引导者”的做法，并另行要求公开物理输出。本节点记录公告与流程争议，不代表科学结果已获验证。"
+    },
+    "narrative": {
+      "en": "The event date is the public announcement date, not the dates when individual model outputs were produced. The available evidence supports what OpenAI announced and which artifacts it disclosed, not the correctness of its mathematical or physical claims. AGMAI's statements are attributed to that group and should not be presented as a consensus of mathematicians. OpenAI's announcement page returned HTTP 403 in the direct-fetch attempt; the announcement facts are therefore supported by retained independent reports and the public repository, not by a retained direct copy of that page.",
+      "zhHans": "事件日期是公开公告日，而不是各项模型输出产生的日期。现有证据支持 OpenAI 宣布了什么、公开了哪些材料，不支持其数学或物理主张已经正确。AGMAI 的意见仅归于该组织，不应表述为数学界共识。直连 OpenAI 公告页返回 HTTP 403；因此公告事实依据留存的独立报道与公开仓库，而非该页面的直接留存件。"
+    },
+    "claims": [
+      {
+        "id": "openai-science-announcement",
+        "claimType": "fact",
+        "text": {
+          "en": "Independent reports date OpenAI's October 26, 2026 announcement of three results attributed to an internal model across mathematics, computer science and physics. The company described an academic collaboration process; the physics materials had not been released in full in the reviewed reports.",
+          "zhHans": "独立报道将 OpenAI 宣布三项内部模型研究结果的日期定为 2026 年 10 月 26 日，涉及数学、计算机科学和物理。公司还介绍了学术协作流程；所审查报道指出，物理材料当时尚未完整公开。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-verge-openai-science",
+          "fup26-progressiverobot-openai",
+          "fup26-sciam-openai-science",
+          "fup26-openai-math-repo"
+        ]
+      },
+      {
+        "id": "openai-science-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "The announcement is not independent confirmation that the results are correct: OpenAI's repository calls its manuscripts raw research data, AGMAI objected to designated mathematicians steering releases and requested the physics outputs, and AGMAI explicitly says it does not speak for the whole mathematical community.",
+          "zhHans": "该公告不能独立证明研究结果正确：OpenAI 仓库将其手稿称为原始研究数据；AGMAI 反对由指定数学家主导发布并要求公开物理输出，同时明确表示其不代表整个数学界。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "fup26-openai-math-repo",
+          "fup26-agmai-statements",
+          "fup26-verge-openai-science",
+          "fup26-sciam-openai-science"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "openai-academic-researchers-2026",
+      "alphaevolve-2025"
+    ],
+    "displayDate": {
+      "en": "2026-10-26",
+      "zhHans": "2026年10月26日"
+    },
+    "categories": [
+      "capability"
+    ],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "relatedForecasts": [],
+    "sources": [
+      {
+        "sourceId": "fup26-verge-openai-science",
+        "supports": [
+          "openai-scientific-results-2026",
+          "openai-science-announcement",
+          "openai-science-limits"
+        ]
+      },
+      {
+        "sourceId": "fup26-progressiverobot-openai",
+        "supports": [
+          "openai-scientific-results-2026",
+          "openai-science-announcement"
+        ]
+      },
+      {
+        "sourceId": "fup26-sciam-openai-science",
+        "supports": [
+          "openai-scientific-results-2026",
+          "openai-science-announcement",
+          "openai-science-limits"
+        ]
+      },
+      {
+        "sourceId": "fup26-openai-math-repo",
+        "supports": [
+          "openai-scientific-results-2026",
+          "openai-science-announcement",
+          "openai-science-limits"
+        ]
+      },
+      {
+        "sourceId": "fup26-agmai-statements",
+        "supports": [
+          "openai-scientific-results-2026",
+          "openai-science-limits"
+        ]
+      }
+    ],
+    "editorial": {
+      "createdAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "lastSourceCheckAt": "2026-10-29",
+      "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-10-29",
+          "changeType": "created",
+          "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+        },
+        {
+          "date": "2026-10-29",
+          "changeType": "correction",
+          "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+        }
+      ],
+      "reviewedAt": "2026-10-29",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a18582-ac20-73be-80b3-d51a07f89e82",
+      "reviewRecord": "governance/reviews/independent-20261029/openai-scientific-results-2026.json",
+      "publishedAt": "2026-10-29"
+    }
+  },
+  {
     "id": "openai-strategic-futures-governance-2026",
     "slug": "openai-strategic-futures-governance-2026",
     "title": {
@@ -24492,7 +25475,8 @@
     ],
     "relatedEvents": [
       "stepfun-step-5-preview-open-weights-2026",
-      "glm-52-open-source-2026"
+      "glm-52-open-source-2026",
+      "minimax-m31-flash-weights-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -25237,6 +26221,7 @@
     "relatedEvents": [
       "openai-agents-api-2026",
       "openai-financial-services-2026",
+      "claude-duet-research-preview-2026",
       "salesforce-nvidia-koa-reasoning-2026"
     ],
     "relatedForecasts": [],

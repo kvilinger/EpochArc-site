@@ -1,0 +1,115 @@
+{
+  "id": "nvidia-meta-muse-collaboration-2026",
+  "slug": "nvidia-meta-muse-collaboration-2026",
+  "date": "2026-10-27",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "NVIDIA and Meta expand Muse collaboration alongside proposed $3 billion investment",
+    "zhHans": "NVIDIA 与 Meta 扩大 Muse 合作并宣布拟议 30 亿美元投资"
+  },
+  "searchSummary": {
+    "en": "NVIDIA and Meta announced expanded work on Muse; NVIDIA said it would invest $3 billion in Meta's equity offering, subject to closing.",
+    "zhHans": "NVIDIA 与 Meta 宣布扩大 Muse 合作；NVIDIA 称将参与 Meta 股权发行并投资 30 亿美元，交易仍待交割。"
+  },
+  "summary": {
+    "en": "On October 27, NVIDIA and Meta announced expanded collaboration on Muse and the Muse family of models. NVIDIA also said it would invest $3 billion in Meta's equity offering. IBTimes describes the investment as proposed and subject to closing conditions. Reuters endpoints returned 401/403 in this review and are not treated as read sources. The announcement includes intended infrastructure and workflow collaboration; it does not establish that the equity transaction has closed or that a new production deployment has been completed.",
+    "zhHans": "10 月 27 日，NVIDIA 与 Meta 宣布扩大在 Muse 及 Muse 模型系列上的合作。NVIDIA 还称将向 Meta 的股权发行投资 30 亿美元。IBTimes 将该投资描述为拟议交易，仍受交割条件约束。本轮读取 Reuters 页面返回 401/403，故不将其计作已读取来源。公告还涉及基础设施和工作流协作意向，但不能证明股权交易已经完成或新的生产部署已经落实。"
+  },
+  "narrative": {
+    "en": "This is an announced partnership expansion and planned equity investment. The official source's claims about downloads, benchmark performance and future infrastructure are not independently verified in this record. IBTimes is the only independent report used here on the proposed investment status; Reuters endpoints returned 401/403 and were not treated as read sources. Do not describe the investment as closed or the collaboration as a production rollout.",
+    "zhHans": "本节点记录已宣布的合作扩大和拟议股权投资。官方对下载量、榜单表现和未来基础设施的说法未在本记录中得到独立验证。IBTimes 是本稿用于说明拟议投资状态的唯一独立报道；Reuters 页面返回 401/403，未被视为已读取来源。不得将投资说成已交割，也不得将合作说成生产部署。"
+  },
+  "claims": [
+    {
+      "id": "nvidia-meta-partnership",
+      "claimType": "fact",
+      "text": {
+        "en": "NVIDIA and Meta announced on October 27, 2026 that they would expand collaboration on Muse and the Muse family of models.",
+        "zhHans": "NVIDIA 与 Meta 于 2026 年 10 月 27 日宣布扩大在 Muse 及其模型系列上的合作。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-nvidia-muse-meta",
+        "fup26-ibtimes-nvidia-meta"
+      ]
+    },
+    {
+      "id": "nvidia-meta-planned-not-closed",
+      "claimType": "limitation",
+      "text": {
+        "en": "NVIDIA announced a proposed $3 billion investment in Meta's equity offering; IBTimes reports that completion remains subject to closing conditions, and the announcement is not evidence of a completed transaction or production deployment.",
+        "zhHans": "NVIDIA 宣布拟向 Meta 股权发行投资 30 亿美元；IBTimes 报道称交易仍受交割条件约束，该公告不能证明交易已完成或已实现生产部署。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-nvidia-muse-meta",
+        "fup26-ibtimes-nvidia-meta"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "meta-muse-personal-agent-2026",
+    "meta-muse-spark-open-2026"
+  ],
+  "displayDate": {
+    "en": "2026-10-27",
+    "zhHans": "2026年10月27日"
+  },
+  "categories": [
+    "commerce"
+  ],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "relatedForecasts": [],
+  "sources": [
+    {
+      "sourceId": "fup26-nvidia-muse-meta",
+      "supports": [
+        "nvidia-meta-muse-collaboration-2026",
+        "nvidia-meta-partnership",
+        "nvidia-meta-planned-not-closed"
+      ]
+    },
+    {
+      "sourceId": "fup26-ibtimes-nvidia-meta",
+      "supports": [
+        "nvidia-meta-muse-collaboration-2026",
+        "nvidia-meta-partnership",
+        "nvidia-meta-planned-not-closed"
+      ]
+    }
+  ],
+  "editorial": {
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "lastSourceCheckAt": "2026-10-28",
+    "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-10-29",
+        "changeType": "created",
+        "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-29",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+    "reviewRecord": "governance/reviews/independent-20261029/nvidia-meta-muse-collaboration-2026.json",
+    "publishedAt": "2026-10-29"
+  }
+}

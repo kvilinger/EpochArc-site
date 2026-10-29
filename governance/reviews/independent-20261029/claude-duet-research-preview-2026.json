@@ -1,0 +1,134 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "claude-duet-research-preview-2026",
+  "inputSubjectDigest": "c7f67babd62e917f1349a4abf0f2c97b2bb76c1e0778dd2e9504cd68c9604fe8",
+  "subjectDigest": "7144a87109e50d2678be2318f53fbcd420ec9c0263365bb4be0ba573e330cb94",
+  "inputsDigest": "15762f62cd9cd10727ed8f0d4aac6eb4137971d2b811e5e26aab26426d26a36a",
+  "evidenceCutoff": "2026-10-29",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-luna",
+  "reviewedBy": "gemini:01a18581-0869-73f6-b377-3b5c673fb781",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a18581-0869-73f6-b377-3b5c673fb781",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-targeted-confirmation-2026-10-29",
+  "candidateId": "freshness-20261028-claude-duet-preview",
+  "runDigest": "e02a51f899cf76ba190e67022c2352cf3716dd63f5c53fdb3bd893b5fbc8e831",
+  "coreFactClaimIds": [
+    "claude-duet-fact"
+  ],
+  "identity": {
+    "seriesId": "claude-agent-products",
+    "action": "open Claude Duet research preview",
+    "stage": "preview",
+    "dateBasis": "Anthropic's dated October 21 page and same-day independent report",
+    "deduplicationReason": "Distinct product preview/access stage; not an update to another company's agent launch.",
+    "comparedEventIds": [
+      "meta-muse-personal-agent-2026",
+      "salesforce-agentforce-job-ready-agents-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The dated open Claude Duet research preview is a product event; scope does not include verified downstream effects."
+  },
+  "significance": {
+    "rationale": "An evidenced dated preview milestone qualifies for L1; the evidence does not establish executed independent downstream effects.",
+    "whyNotHigher": "L2-PRODUCT is not satisfied: no supported record of the requisite independent downstream milestone or adoption/replication.",
+    "whyNotLower": "The primary event fact is supported by quoted sources and separated from vendor outcome claims; the candidate is not merely a search result.",
+    "comparisonEventIds": [
+      "meta-muse-personal-agent-2026",
+      "salesforce-agentforce-job-ready-agents-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded preview event, not the independently established new_workflow milestone required for L2-PRODUCT. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded preview event, not the independently established unaffiliated_production_organizations milestone required for L2-PRODUCT. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The reviewed announcement/access event is recent; no measured, independently reproduced impact or broad consensus is established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No distinct material dispute was established in the bounded reviewed material; absence in a bounded search is not proof none exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini compared the full English and Simplified Chinese title, summary, narrative and claim text; date, stage, scope and limitations agree. Producer separately checked both languages; this is not a human bilingual sign-off."
+  },
+  "limitations": [
+    "Read-only Gemini review of full retained artifacts in the named Pi session; not an independent live-web reproduction, not human approval, and not publication authorization.",
+    "Search captures are bounded multi-result extractions; they are not direct page fetches or full channel coverage. Direct OpenAI announcement returned HTTP 403; no bypass.",
+    "PublishedAt is omitted for sources without an independently established source-publication date; event date is not substituted for source date.",
+    "Gemini full-review text includes extraneous/overbroad language (e.g. five independent reporting outlets for the OpenAI event); the retained package supports three named news publishers, an interested company repository, and AGMAI’s own statement. Those reviewer embellishments are not adopted as fact.",
+    "A previous review of the pre-fix run is superseded; only the named session accepting the current run digest is cited here.",
+    "Raw independent review: review/gemini3.8-full-r2-1-1-raw.md; SHA-256 53f6a9b243f796565ef90b7f57a3dbf72ec90d5c8a2e7899bcc4c7937756e8d8.",
+    "This published-state wrapper is a provisional proposal; Gemini accepted the unchanged factual draft, not an executed release. The publication date is planned, not historical, until release completes."
+  ],
+  "evidence": [
+    {
+      "id": "claude-duet-research-preview-2026-claude-duet-fact-anthropic-1",
+      "sourceId": "fup26-anthropic-claude-duet",
+      "claimId": "claude-duet-fact",
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "originId": "anthropic-claude-duet-announcement",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "A research preview is available by waitlist today, starting with US Pro and Max subscribers.",
+      "locator": "Official article heading and dated introduction",
+      "artifact": "governance/evidence/2026-10-28/direct/claude-duet-official-browser.txt",
+      "sha256": "1f7843be16b003577c9d2e608b5f5720417040f6c7c4c33828351c53f58ee974"
+    },
+    {
+      "id": "claude-duet-research-preview-2026-claude-duet-fact-unite-2",
+      "sourceId": "fup26-unite-claude-duet",
+      "claimId": "claude-duet-fact",
+      "url": "https://www.unite.ai/anthropic-opens-claude-duet-research-preview-to-us-pro-and-max-users/",
+      "originId": "uniteai-claude-duet-preview-report-20261021",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Anthropic on October 21, 2026 opened a research preview of [Claude Duet](https://claude.com/resources/articles/claude-duet), an app the company said turns Claude into a proactive agent that surfaces items needing attention, completes requested tasks, keeps working when users step away, and checks before acting on their behalf. Access runs through a waitlist, starting with Pro and Max users in the US.",
+      "locator": "Unite.AI full-content report, opening paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/anthropic-duet-20261021.txt",
+      "sha256": "a38eab9c79797f92cd73b1dc163855b9372ce3d68686d52846b982f263f040a7"
+    },
+    {
+      "id": "claude-duet-research-preview-2026-claude-duet-limits-anthropic-3",
+      "sourceId": "fup26-anthropic-claude-duet",
+      "claimId": "claude-duet-limits",
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "originId": "anthropic-claude-duet-announcement",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "This is an early version of Claude Duet, and it still might misread a thread or miscalibrate what’s urgent.",
+      "locator": "Official article, preview limitations section",
+      "artifact": "governance/evidence/2026-10-28/direct/claude-duet-official-browser.txt",
+      "sha256": "1f7843be16b003577c9d2e608b5f5720417040f6c7c4c33828351c53f58ee974"
+    }
+  ]
+}

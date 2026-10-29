@@ -1,0 +1,121 @@
+{
+  "id": "kimi-k31-pro-hosted-api-2026",
+  "slug": "kimi-k31-pro-hosted-api",
+  "date": "2026-10-23",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Vercel adds Kimi K3.1 Pro to AI Gateway",
+    "zhHans": "Vercel 将 Kimi K3.1 Pro 接入 AI Gateway"
+  },
+  "searchSummary": {
+    "en": "Vercel listed Kimi K3.1 Pro and Highspeed in AI Gateway on October 23; full weights were still planned for November 4.",
+    "zhHans": "Vercel 于 10 月 23 日将 Kimi K3.1 Pro 与 Highspeed 列入 AI Gateway；完整权重仍计划于 11 月 4 日发布。"
+  },
+  "summary": {
+    "en": "Vercel's October 23 changelog listed Kimi K3.1 Pro and K3.1 Pro Highspeed as available through AI Gateway; Simon Willison separately reported using the Moonshot API that day. Moonshot's official page says full weights are planned by November 4 and carries visible October 24 metadata. This node records Vercel's gateway availability, not a definitively dated Moonshot-wide launch or an October open-weight release.",
+    "zhHans": "Vercel 于 10 月 23 日的更新日志中列出可通过 AI Gateway 使用的 Kimi K3.1 Pro 与 K3.1 Pro Highspeed；Simon Willison 也在同日记录了 Moonshot API 的使用情况。Moonshot 官方页面称完整权重计划于 11 月 4 日前发布，页面可见元数据日期为 10 月 24 日。本节点记录 Vercel 网关的可用性，不将其说成日期已完全确定的 Moonshot 全平台发布，也不称 10 月已开放权重。"
+  },
+  "narrative": {
+    "en": "The date is tied to Vercel's own changelog, not to a resolved date for Moonshot's original announcement. The Moonshot page metadata points to October 24, while Vercel and Simon Willison date their independent access records to October 23. The product/API stage is distinct from the planned November 4 weight release. No benchmark claim or actual usage scale is inferred.",
+    "zhHans": "日期依据 Vercel 自己的更新日志，Moonshot 原始公告日期仍未完全厘清。Moonshot 页面元数据指向 10 月 24 日，而 Vercel 与 Simon Willison 的访问记录日期为 10 月 23 日。产品/API 可用阶段与计划于 11 月 4 日开放权重是不同事项。本稿不推断跑分结论或实际使用规模。"
+  },
+  "claims": [
+    {
+      "id": "kimi-k31-vercel-availability",
+      "claimType": "fact",
+      "text": {
+        "en": "Vercel's October 23, 2026 changelog made Kimi K3.1 Pro and K3.1 Pro Highspeed available in AI Gateway; an independent practitioner also reported Moonshot API access that day.",
+        "zhHans": "Vercel 于 2026 年 10 月 23 日的更新日志宣布 Kimi K3.1 Pro 与 K3.1 Pro Highspeed 可在 AI Gateway 使用；一位独立开发者也在当日记录了 Moonshot API 的访问。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-vercel-kimi",
+        "fup26-simon-kimi"
+      ]
+    },
+    {
+      "id": "kimi-k31-weight-plan",
+      "claimType": "limitation",
+      "text": {
+        "en": "Moonshot's official page says full weights are planned by November 4, 2026; the October gateway listing is not an open-weight release, and the official page's visible metadata points to October 24 rather than resolving the October 23/24 announcement-date difference.",
+        "zhHans": "Moonshot 官方页面称完整权重计划于 2026 年 11 月 4 日前发布；10 月的网关上架不是开放权重发布，且官方页面可见元数据指向 10 月 24 日，尚不能消除 10 月 23/24 日的公告日期差异。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-kimi-moonshot",
+        "fup26-vercel-kimi"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "kimi-k3-2026",
+    "deepseek-v4-2026"
+  ],
+  "displayDate": {
+    "en": "2026-10-23",
+    "zhHans": "2026年10月23日"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "relatedForecasts": [],
+  "sources": [
+    {
+      "sourceId": "fup26-vercel-kimi",
+      "supports": [
+        "kimi-k31-pro-hosted-api-2026",
+        "kimi-k31-vercel-availability",
+        "kimi-k31-weight-plan"
+      ]
+    },
+    {
+      "sourceId": "fup26-simon-kimi",
+      "supports": [
+        "kimi-k31-pro-hosted-api-2026",
+        "kimi-k31-vercel-availability"
+      ]
+    },
+    {
+      "sourceId": "fup26-kimi-moonshot",
+      "supports": [
+        "kimi-k31-pro-hosted-api-2026",
+        "kimi-k31-weight-plan"
+      ]
+    }
+  ],
+  "editorial": {
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "lastSourceCheckAt": "2026-10-28",
+    "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-10-29",
+        "changeType": "created",
+        "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-29",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a18582-ac20-73be-80b3-d51a07f89e82",
+    "reviewRecord": "governance/reviews/independent-20261029/kimi-k31-pro-hosted-api-2026.json",
+    "publishedAt": "2026-10-29"
+  }
+}

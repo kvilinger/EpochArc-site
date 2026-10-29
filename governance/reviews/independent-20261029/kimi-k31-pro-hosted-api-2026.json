@@ -1,0 +1,148 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "kimi-k31-pro-hosted-api-2026",
+  "inputSubjectDigest": "1c6a01ac96d348074407d1b17ccf88ac0aba82bad203f8108c8fa5fd48ea4a02",
+  "subjectDigest": "20d9526b144d9bdfb6771770d709a38423b1d092de058c719d5047cf0ab6de03",
+  "inputsDigest": "4618a16b4fdb9c250c296e8174a42376c10bbc1ba2cecd2354bb4eb7eafb24a7",
+  "evidenceCutoff": "2026-10-29",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-luna",
+  "reviewedBy": "gemini:01a18582-ac20-73be-80b3-d51a07f89e82",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a18582-ac20-73be-80b3-d51a07f89e82",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-targeted-confirmation-2026-10-29",
+  "candidateId": "oct28-kimi-k31-pro-hosted-launch",
+  "runDigest": "e02a51f899cf76ba190e67022c2352cf3716dd63f5c53fdb3bd893b5fbc8e831",
+  "coreFactClaimIds": [
+    "kimi-k31-vercel-availability"
+  ],
+  "identity": {
+    "seriesId": "kimi-k31-pro",
+    "action": "make K3.1 Pro available through Vercel AI Gateway",
+    "stage": "available",
+    "dateBasis": "Vercel changelog date October 23, corroborated by an independent same-day Moonshot API observation; not Moonshot's disputed page date",
+    "deduplicationReason": "A dated third-party gateway availability node, distinct from the earlier Kimi K3 event and from the planned weight release.",
+    "comparedEventIds": [
+      "kimi-k3-2026",
+      "deepseek-v4-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The dated make K3.1 Pro available through Vercel AI Gateway is a product event; scope does not include verified downstream effects."
+  },
+  "significance": {
+    "rationale": "An evidenced dated available milestone qualifies for L1; the evidence does not establish executed independent downstream effects.",
+    "whyNotHigher": "L2-PRODUCT-ACCESS is not satisfied: no supported record of the requisite independent downstream milestone or adoption/replication.",
+    "whyNotLower": "The primary event fact is supported by quoted sources and separated from vendor outcome claims; the candidate is not merely a search result.",
+    "comparisonEventIds": [
+      "kimi-k3-2026",
+      "deepseek-v4-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded available event, not the independently established material_access_change milestone required for L2-PRODUCT-ACCESS. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded available event, not the independently established unaffiliated_production_organizations milestone required for L2-PRODUCT-ACCESS. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The reviewed announcement/access event is recent; no measured, independently reproduced impact or broad consensus is established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No distinct material dispute was established in the bounded reviewed material; absence in a bounded search is not proof none exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini compared the full English and Simplified Chinese title, summary, narrative and claim text; date, stage, scope and limitations agree. Producer separately checked both languages; this is not a human bilingual sign-off."
+  },
+  "limitations": [
+    "Read-only Gemini review of full retained artifacts in the named Pi session; not an independent live-web reproduction, not human approval, and not publication authorization.",
+    "Search captures are bounded multi-result extractions; they are not direct page fetches or full channel coverage. Direct OpenAI announcement returned HTTP 403; no bypass.",
+    "PublishedAt is omitted for sources without an independently established source-publication date; event date is not substituted for source date.",
+    "Gemini full-review text includes extraneous/overbroad language (e.g. five independent reporting outlets for the OpenAI event); the retained package supports three named news publishers, an interested company repository, and AGMAI’s own statement. Those reviewer embellishments are not adopted as fact.",
+    "A previous review of the pre-fix run is superseded; only the named session accepting the current run digest is cited here.",
+    "Raw independent review: review/gemini3.8-full-r2-1-2-raw.md; SHA-256 4f752ceb26a4cb3cfef00fac5f9aeb2382888a7fc2a10e6f112f34774686ce72.",
+    "This published-state wrapper is a provisional proposal; Gemini accepted the unchanged factual draft, not an executed release. The publication date is planned, not historical, until release completes."
+  ],
+  "evidence": [
+    {
+      "id": "kimi-k31-pro-hosted-api-2026-kimi-k31-vercel-availability-vercel-1",
+      "sourceId": "fup26-vercel-kimi",
+      "claimId": "kimi-k31-vercel-availability",
+      "url": "https://vercel.com/changelog/kimi-k3-1-pro-and-kimi-k3-1-pro-highspeed-are-available-now-in-ai-gateway",
+      "originId": "vercel-kimi-k31-gateway-changelog",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Kimi K3.1 Pro and Kimi K3.1 Pro Highspeed are available now in AI Gateway",
+      "locator": "Vercel changelog title and October 23, 2026 date",
+      "artifact": "governance/evidence/2026-10-28/direct/kimi-vercel-changelog.txt",
+      "sha256": "cc3e9841355e63ec6721f2930104a4bf03640226556969e63e5d3b82ab74748c"
+    },
+    {
+      "id": "kimi-k31-pro-hosted-api-2026-kimi-k31-vercel-availability-simon-2",
+      "sourceId": "fup26-simon-kimi",
+      "claimId": "kimi-k31-vercel-availability",
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "originId": "simon-willison-kimi-k31-api-observation-20261023",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "direct",
+      "quote": "Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights",
+      "locator": "Simon Willison, October 23, 2026 link post",
+      "artifact": "governance/evidence/2026-10-28/direct/kimi-simonwillison.txt",
+      "sha256": "ad071bde3a2d70fe3bd932f693368353155924f79b865609722087f6b4768da3"
+    },
+    {
+      "id": "kimi-k31-pro-hosted-api-2026-kimi-k31-weight-plan-moonshot-3",
+      "sourceId": "fup26-kimi-moonshot",
+      "claimId": "kimi-k31-weight-plan",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "originId": "moonshot-kimi-k31-official-page",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Full model weights will be released by Nov 4, 2026.",
+      "locator": "Moonshot official K3.1 Pro page, release-stage section",
+      "artifact": "governance/evidence/2026-10-28/direct/kimi-k31-blog.txt",
+      "sha256": "ab52cd692e14842519c34db22e88bc60df83584f2d2b8849b4b29226c223f6d4"
+    },
+    {
+      "id": "kimi-k31-pro-hosted-api-2026-kimi-k31-weight-plan-vercel-4",
+      "sourceId": "fup26-vercel-kimi",
+      "claimId": "kimi-k31-weight-plan",
+      "url": "https://vercel.com/changelog/kimi-k3-1-pro-and-kimi-k3-1-pro-highspeed-are-available-now-in-ai-gateway",
+      "originId": "vercel-kimi-k31-gateway-changelog",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Moonshot AI plans to release the model weights by November 4: support for more providers will follow.",
+      "locator": "Vercel changelog, rollout limitation paragraph",
+      "artifact": "governance/evidence/2026-10-28/direct/kimi-vercel-changelog.txt",
+      "sha256": "cc3e9841355e63ec6721f2930104a4bf03640226556969e63e5d3b82ab74748c"
+    }
+  ]
+}

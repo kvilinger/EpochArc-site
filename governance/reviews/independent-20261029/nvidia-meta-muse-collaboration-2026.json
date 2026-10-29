@@ -1,0 +1,148 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "nvidia-meta-muse-collaboration-2026",
+  "inputSubjectDigest": "32eb81bd7c612a3ca99bdfc8303b72687eb169e3f1566b4529e7056b582e8f39",
+  "subjectDigest": "d0de9e730c9218471d35381c633b6b4c916db52e0df122c674ca876c7f8ecf85",
+  "inputsDigest": "4f260bc5625e693c8d8c7e7a7e0859bbe266c3a07fe67582d5aca7670dcf4da7",
+  "evidenceCutoff": "2026-10-29",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-luna",
+  "reviewedBy": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-targeted-confirmation-2026-10-29",
+  "candidateId": "freshness-20261028-nvidia-meta-muse",
+  "runDigest": "e02a51f899cf76ba190e67022c2352cf3716dd63f5c53fdb3bd893b5fbc8e831",
+  "coreFactClaimIds": [
+    "nvidia-meta-partnership"
+  ],
+  "identity": {
+    "seriesId": "nvidia-meta-muse-partnership",
+    "action": "announce expanded Muse collaboration and proposed equity investment",
+    "stage": "announced",
+    "dateBasis": "NVIDIA newsroom announcement and IBTimes report dated October 27, 2026",
+    "deduplicationReason": "New partnership/investment announcement distinct from Meta's earlier Muse product launch; the transaction and deployment are not marked completed.",
+    "comparedEventIds": [
+      "crusoe-series-f-2026",
+      "nvidia-openai-datacenter-financing-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "The dated announce expanded Muse collaboration and proposed equity investment is a commerce event; scope does not include verified downstream effects."
+  },
+  "significance": {
+    "rationale": "An evidenced dated announced milestone qualifies for L1; the evidence does not establish executed independent downstream effects.",
+    "whyNotHigher": "L2-COMMERCE is not satisfied: no supported record of the requisite independent downstream milestone or adoption/replication.",
+    "whyNotLower": "The primary event fact is supported by quoted sources and separated from vendor outcome claims; the candidate is not merely a search result.",
+    "comparisonEventIds": [
+      "crusoe-series-f-2026",
+      "nvidia-openai-datacenter-financing-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded announced event, not the independently established structural_change_executed milestone required for L2-COMMERCE. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded announced event, not the independently established external_actors_affected milestone required for L2-COMMERCE. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The reviewed announcement/access event is recent; no measured, independently reproduced impact or broad consensus is established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No distinct material dispute was established in the bounded reviewed material; absence in a bounded search is not proof none exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini compared the full English and Simplified Chinese title, summary, narrative and claim text; date, stage, scope and limitations agree. Producer separately checked both languages; this is not a human bilingual sign-off."
+  },
+  "limitations": [
+    "Read-only Gemini review of full retained artifacts in the named Pi session; not an independent live-web reproduction, not human approval, and not publication authorization.",
+    "Search captures are bounded multi-result extractions; they are not direct page fetches or full channel coverage. Direct OpenAI announcement returned HTTP 403; no bypass.",
+    "PublishedAt is omitted for sources without an independently established source-publication date; event date is not substituted for source date.",
+    "Gemini full-review text includes extraneous/overbroad language (e.g. five independent reporting outlets for the OpenAI event); the retained package supports three named news publishers, an interested company repository, and AGMAI’s own statement. Those reviewer embellishments are not adopted as fact.",
+    "A previous review of the pre-fix run is superseded; only the named session accepting the current run digest is cited here.",
+    "Raw independent review: review/gemini3.8-full-r2-2-raw.md; SHA-256 dad4040805d0c05f0270d33965a1cb4b05b3b31564f4f83f19e2df93c774205a.",
+    "This published-state wrapper is a provisional proposal; Gemini accepted the unchanged factual draft, not an executed release. The publication date is planned, not historical, until release completes."
+  ],
+  "evidence": [
+    {
+      "id": "nvidia-meta-muse-collaboration-2026-nvidia-meta-partnership-nvidia-1",
+      "sourceId": "fup26-nvidia-muse-meta",
+      "claimId": "nvidia-meta-partnership",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+      "originId": "nvidia-meta-muse-investment-announcement-20261027",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "NVIDIA and Meta today announced they will partner to expand their work on Muse and the Muse family of models",
+      "locator": "NVIDIA Newsroom announcement, opening paragraph; non-breaking spaces retained",
+      "artifact": "governance/evidence/2026-10-28/search/nvidia-meta-20261027.txt",
+      "sha256": "9a7dafc11566018ab08a86d02795b075db9acb0ac9da1625c75f6523140d108d"
+    },
+    {
+      "id": "nvidia-meta-muse-collaboration-2026-nvidia-meta-partnership-ibtimes-2",
+      "sourceId": "fup26-ibtimes-nvidia-meta",
+      "claimId": "nvidia-meta-partnership",
+      "url": "https://www.ibtimes.co.uk/nvidia-invests-meta-muse-ai-partnership-1828174",
+      "originId": "ibtimes-nvidia-meta-investment-20261027",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "The agreement covers Muse and its family of models, according to Nvidia's announcement on 27 October 2026.",
+      "locator": "IBTimes UK report, partnership and date paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/nvidia-meta-20261027.txt",
+      "sha256": "9a7dafc11566018ab08a86d02795b075db9acb0ac9da1625c75f6523140d108d"
+    },
+    {
+      "id": "nvidia-meta-muse-collaboration-2026-nvidia-meta-planned-not-closed-nvidia-3",
+      "sourceId": "fup26-nvidia-muse-meta",
+      "claimId": "nvidia-meta-planned-not-closed",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+      "originId": "nvidia-meta-muse-investment-announcement-20261027",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "NVIDIA will invest $3 billion in Meta’s equity offering.",
+      "locator": "NVIDIA Newsroom announcement, investment paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/nvidia-meta-20261027.txt",
+      "sha256": "9a7dafc11566018ab08a86d02795b075db9acb0ac9da1625c75f6523140d108d"
+    },
+    {
+      "id": "nvidia-meta-muse-collaboration-2026-nvidia-meta-planned-not-closed-ibtimes-4",
+      "sourceId": "fup26-ibtimes-nvidia-meta",
+      "claimId": "nvidia-meta-planned-not-closed",
+      "url": "https://www.ibtimes.co.uk/nvidia-invests-meta-muse-ai-partnership-1828174",
+      "originId": "ibtimes-nvidia-meta-investment-20261027",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Completion remains subject to applicable closing conditions.",
+      "locator": "IBTimes UK report, investment terms paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/nvidia-meta-20261027.txt",
+      "sha256": "9a7dafc11566018ab08a86d02795b075db9acb0ac9da1625c75f6523140d108d"
+    }
+  ]
+}

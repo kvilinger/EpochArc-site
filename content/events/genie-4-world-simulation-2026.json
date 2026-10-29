@@ -1,0 +1,115 @@
+{
+  "id": "genie-4-world-simulation-2026",
+  "slug": "genie-4-world-simulation-2026",
+  "date": "2026-10-27",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Google DeepMind announces Genie 4 world-model research preview",
+    "zhHans": "Google DeepMind 宣布 Genie 4 世界模型研究预览"
+  },
+  "searchSummary": {
+    "en": "Genie 4 adds real-time interactive world simulation features and begins as a trusted-tester research preview.",
+    "zhHans": "Genie 4 增加实时交互式世界模拟功能，首先面向受邀测试者开放研究预览。"
+  },
+  "summary": {
+    "en": "Google DeepMind announced Genie 4 on October 27 as a new world model, with a research preview for trusted testers. The company says the system can generate interactive environments with audio and accept scene changes during a simulation. DeepMind describes the model as early and experimental; the announcement's staged rollout is not a general release, and the reviewed sources do not independently establish physical accuracy or downstream adoption.",
+    "zhHans": "Google DeepMind 于 10 月 27 日宣布新世界模型 Genie 4，并先向受邀测试者开放研究预览。公司称，该系统可生成带音频的交互环境，并在模拟过程中接受场景修改。DeepMind 将模型称为早期实验性系统；分阶段预览并非全面开放，所审查来源也未独立证明其物理准确性或下游采用情况。"
+  },
+  "narrative": {
+    "en": "The node records the dated announcement and preview stage. Realism, physics and performance descriptions are attributed to Google; the reviewed evidence contains no external reproduction of the model's physical accuracy. Google's own launch notes identify consistency drift and unresolved audio or in-world text issues. Planned access for subscribers and API partners is future rollout, not already universal availability.",
+    "zhHans": "本节点记录有日期依据的公告与预览阶段。逼真度、物理表现和性能描述均归于 Google；所审查证据中没有模型物理准确性的外部复现。Google 自己的发布材料也指出一致性漂移以及音频或场景文字仍未解决的问题。订阅用户和 API 合作方的后续开放属于未来 rollout，并非当前全面可用。"
+  },
+  "claims": [
+    {
+      "id": "genie4-preview-announcement",
+      "claimType": "fact",
+      "text": {
+        "en": "Google DeepMind announced Genie 4 on October 27, 2026 and began a research preview for trusted testers.",
+        "zhHans": "Google DeepMind 于 2026 年 10 月 27 日宣布 Genie 4，并开始向受邀测试者提供研究预览。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-google-genie4",
+        "fup26-techcrunch-genie4"
+      ]
+    },
+    {
+      "id": "genie4-preview-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "DeepMind describes Genie 4 as early and experimental, and the rollout remains staged; launch materials also acknowledge that details and object consistency can drift over time.",
+        "zhHans": "DeepMind 将 Genie 4 描述为早期实验性系统，开放范围仍分阶段；发布材料也承认细节与物体一致性可能随时间漂移。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-google-genie4",
+        "fup26-techcrunch-genie4"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "gemini-robotics-er2-2026",
+    "gemini-robotics-2025"
+  ],
+  "displayDate": {
+    "en": "2026-10-27",
+    "zhHans": "2026年10月27日"
+  },
+  "categories": [
+    "capability"
+  ],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "relatedForecasts": [],
+  "sources": [
+    {
+      "sourceId": "fup26-google-genie4",
+      "supports": [
+        "genie-4-world-simulation-2026",
+        "genie4-preview-announcement",
+        "genie4-preview-limits"
+      ]
+    },
+    {
+      "sourceId": "fup26-techcrunch-genie4",
+      "supports": [
+        "genie-4-world-simulation-2026",
+        "genie4-preview-announcement",
+        "genie4-preview-limits"
+      ]
+    }
+  ],
+  "editorial": {
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "lastSourceCheckAt": "2026-10-28",
+    "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-10-29",
+        "changeType": "created",
+        "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-29",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+    "reviewRecord": "governance/reviews/independent-20261029/genie-4-world-simulation-2026.json",
+    "publishedAt": "2026-10-29"
+  }
+}

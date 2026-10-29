@@ -1,0 +1,148 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "microsoft-mai-image-27-preview-2026",
+  "inputSubjectDigest": "5e8deb7e2542cbc362d0437802021fb377394944c19ef9db878c6e62c0004bff",
+  "subjectDigest": "eb0d3951a914ae8d753b134cff6077f8fd19d11660201714ff9c335d3e9914d7",
+  "inputsDigest": "7ce34eac19d2d57464f6537a370971d67e82dca27b071147bf2e579d3000d5d5",
+  "evidenceCutoff": "2026-10-29",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-luna",
+  "reviewedBy": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-targeted-confirmation-2026-10-29",
+  "candidateId": "freshness-20261028-microsoft-mai27-preview",
+  "runDigest": "e02a51f899cf76ba190e67022c2352cf3716dd63f5c53fdb3bd893b5fbc8e831",
+  "coreFactClaimIds": [
+    "mai27-preview-announcement"
+  ],
+  "identity": {
+    "seriesId": "microsoft-mai-image-models",
+    "action": "announce MAI Image 2.7 image-editing preview",
+    "stage": "preview",
+    "dateBasis": "Microsoft AI page dated October 27, 2026, corroborated by independent reporting",
+    "deduplicationReason": "Distinct 2.7 preview stage; not the separate MAI Image 2.6/2.6-Flash GA update.",
+    "comparedEventIds": [
+      "gpt-5-6-broad-launch-2026",
+      "meta-muse-spark-open-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The dated announce MAI Image 2.7 image-editing preview is a product event; scope does not include verified downstream effects."
+  },
+  "significance": {
+    "rationale": "An evidenced dated preview milestone qualifies for L1; the evidence does not establish executed independent downstream effects.",
+    "whyNotHigher": "L2-PRODUCT is not satisfied: no supported record of the requisite independent downstream milestone or adoption/replication.",
+    "whyNotLower": "The primary event fact is supported by quoted sources and separated from vendor outcome claims; the candidate is not merely a search result.",
+    "comparisonEventIds": [
+      "gpt-5-6-broad-launch-2026",
+      "meta-muse-spark-open-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded preview event, not the independently established new_workflow milestone required for L2-PRODUCT. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded preview event, not the independently established unaffiliated_production_organizations milestone required for L2-PRODUCT. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The reviewed announcement/access event is recent; no measured, independently reproduced impact or broad consensus is established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No distinct material dispute was established in the bounded reviewed material; absence in a bounded search is not proof none exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini compared the full English and Simplified Chinese title, summary, narrative and claim text; date, stage, scope and limitations agree. Producer separately checked both languages; this is not a human bilingual sign-off."
+  },
+  "limitations": [
+    "Read-only Gemini review of full retained artifacts in the named Pi session; not an independent live-web reproduction, not human approval, and not publication authorization.",
+    "Search captures are bounded multi-result extractions; they are not direct page fetches or full channel coverage. Direct OpenAI announcement returned HTTP 403; no bypass.",
+    "PublishedAt is omitted for sources without an independently established source-publication date; event date is not substituted for source date.",
+    "Gemini full-review text includes extraneous/overbroad language (e.g. five independent reporting outlets for the OpenAI event); the retained package supports three named news publishers, an interested company repository, and AGMAI’s own statement. Those reviewer embellishments are not adopted as fact.",
+    "A previous review of the pre-fix run is superseded; only the named session accepting the current run digest is cited here.",
+    "Raw independent review: review/gemini3.8-full-r2-2-raw.md; SHA-256 dad4040805d0c05f0270d33965a1cb4b05b3b31564f4f83f19e2df93c774205a.",
+    "This published-state wrapper is a provisional proposal; Gemini accepted the unchanged factual draft, not an executed release. The publication date is planned, not historical, until release completes."
+  ],
+  "evidence": [
+    {
+      "id": "microsoft-mai-image-27-preview-2026-mai27-preview-announcement-microsoft-1",
+      "sourceId": "fup26-microsoft-mai27",
+      "claimId": "mai27-preview-announcement",
+      "url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+      "originId": "microsoft-mai-image-27-announcement",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "MAI Image 2.7, our latest image editing model, launches with even stronger control for edits that are hardest to get right. It launches in preview",
+      "locator": "Microsoft AI announcement, opening paragraph",
+      "artifact": "governance/evidence/2026-10-28/direct/mai27-official-browser.txt",
+      "sha256": "b97e7740e020115c5a312b72448f177e6ff0239297b7dd4284ce72645f43015a"
+    },
+    {
+      "id": "microsoft-mai-image-27-preview-2026-mai27-preview-announcement-orca-2",
+      "sourceId": "fup26-orcarouter-mai27",
+      "claimId": "mai27-preview-announcement",
+      "url": "https://www.orcarouter.ai/blog/mai-image-2-7-preview-takes-no-2-on-aa-image-editing",
+      "originId": "orcarouter-mai-image-27-analysis",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "On October 27, 2026, Microsoft released **MAI-Image-2.7-Preview**",
+      "locator": "ORCA Router independent analysis, opening paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/microsoft-mai-image-20261027.txt",
+      "sha256": "f30e82700aedf65edce3c9c18da2a6018024391741dce57f97167dd71b08ca6d"
+    },
+    {
+      "id": "microsoft-mai-image-27-preview-2026-mai27-preview-limits-orca-3",
+      "sourceId": "fup26-orcarouter-mai27",
+      "claimId": "mai27-preview-limits",
+      "url": "https://www.orcarouter.ai/blog/mai-image-2-7-preview-takes-no-2-on-aa-image-editing",
+      "originId": "orcarouter-mai-image-27-analysis",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "no published price, and no text-to-image mode.",
+      "locator": "ORCA Router analysis, scope/access paragraph",
+      "artifact": "governance/evidence/2026-10-28/search/microsoft-mai-image-20261027.txt",
+      "sha256": "f30e82700aedf65edce3c9c18da2a6018024391741dce57f97167dd71b08ca6d"
+    },
+    {
+      "id": "microsoft-mai-image-27-preview-2026-mai27-preview-limits-microsoft-4",
+      "sourceId": "fup26-microsoft-mai27",
+      "claimId": "mai27-preview-limits",
+      "url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+      "originId": "microsoft-mai-image-27-announcement",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "It launches in preview",
+      "locator": "Microsoft AI announcement, opening paragraph",
+      "artifact": "governance/evidence/2026-10-28/direct/mai27-official-browser.txt",
+      "sha256": "b97e7740e020115c5a312b72448f177e6ff0239297b7dd4284ce72645f43015a"
+    }
+  ]
+}

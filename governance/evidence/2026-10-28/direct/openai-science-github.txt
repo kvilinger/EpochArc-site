@@ -1,0 +1,531 @@
+GitHub - openai/math · GitHub
+
+Skip to content
+
+Navigation Menu
+
+Sign in
+
+Appearance settings
+
+Platform
+
+AI CODE CREATION
+
+GitHub Copilot
+Write better code with AI
+
+GitHub Copilot app
+Direct agents from issue to merge
+
+MCP Registry
+Integrate external tools
+
+DEVELOPER WORKFLOWS
+
+Actions
+Automate any workflow
+
+Codespaces
+Instant dev environments
+
+Issues
+Plan and track work
+
+Code Review
+Manage code changes
+
+Code Quality
+Enforce quality at merge
+
+APPLICATION SECURITY
+
+GitHub Advanced Security
+Find and fix vulnerabilities
+
+Code security
+Secure your code as you build
+
+Secret protection
+Stop leaks before they start
+
+EXPLORE
+
+Why GitHub
+
+Documentation
+
+Blog
+
+Changelog
+
+Marketplace
+
+View all features
+
+Solutions
+
+BY COMPANY SIZE
+
+Enterprises
+
+Small and medium teams
+
+Startups
+
+Nonprofits
+
+BY USE CASE
+
+App Modernization
+
+DevSecOps
+
+DevOps
+
+CI/CD
+
+View all use cases
+
+BY INDUSTRY
+
+Healthcare
+
+Financial services
+
+Manufacturing
+
+Government
+
+See all industries
+
+View all solutions
+
+Resources
+
+EXPLORE BY TOPIC
+
+AI
+
+Software Development
+
+DevOps
+
+Security
+
+View all topics
+
+EXPLORE BY TYPE
+
+Customer stories
+
+Events & webinars
+
+Ebooks & reports
+
+Business insights
+
+GitHub Skills
+
+SUPPORT & SERVICES
+
+Documentation
+
+Customer support
+
+Community forum
+
+Trust center
+
+Partners
+
+View all resources
+
+Open Source
+
+COMMUNITY
+
+GitHub Sponsors
+Fund open source developers
+
+PROGRAMS
+
+Security Lab
+
+Maintainer Community
+
+GitHub Stars
+
+Archive Program
+
+REPOSITORIES
+
+Topics
+
+Trending
+
+Collections
+
+Enterprise
+
+ENTERPRISE SOLUTIONS
+
+Enterprise platform
+AI-powered developer platform
+
+AVAILABLE ADD-ONS
+
+GitHub Advanced Security
+Enterprise-grade security features
+
+Copilot for Business
+Enterprise-grade AI features
+
+Premium Support
+Enterprise-grade 24/7 support
+
+Pricing
+
+Search
+/
+
+Sign in
+
+Sign up
+
+Appearance settings
+
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+
+{{ message }}
+
+openai
+
+math
+
+Repository navigation
+
+Code
+
+Pull requests
+
+Only collaborators can create PRs
+
+Actions
+
+Security and quality
+
+Insights
+
+More
+items
+
+math
+
+Public
+
+Notifications
+You must be signed in to change notification settings
+
+Fork
+1.9k
+(
+1.9k
+)
+
+Star
+16.1k
+(
+16.1k
+)
+You must be signed in to star a repository
+
+About
+
+No description, website, or topics provided.
+
+Resources
+
+Readme
+
+Apache-2.0 license
+
+Activity
+
+Custom properties
+
+Stars
+
+16.1k
+stars
+
+Watchers
+
+380
+watching
+
+Forks
+
+1.9k
+forks
+
+Report repository
+
+main
+
+Branches
+Tags
+
+Go to file
+
+Code
+
+Open more actions menu
+
+Latest commit
+
+History
+
+7 Commits
+
+7 Commits
+
+Folders and files
+
+Name
+
+Name
+
+Last commit message
+
+Last commit date
+
+.github/
+workflows
+
+.github/
+workflows
+
+lean
+
+lean
+
+preprints
+
+preprints
+
+reasoning_traces
+
+reasoning_traces
+
+CONTENTS.md
+
+CONTENTS.md
+
+LICENSE
+
+LICENSE
+
+README.md
+
+README.md
+
+history.md
+
+history.md
+
+overview.pdf
+
+overview.pdf
+
+overview.tex
+
+overview.tex
+
+View all files
+
+Repository files navigation
+
+README
+
+Apache-2.0 license
+
+More
+items
+
+Readme
+
+This repository contains mathematical manuscripts and supporting proof artifacts produced by an unnamed internal OpenAI model.
+
+As part of model development, we evaluate our models on open research problems. We expanded these evaluations after performance on our existing mathematical evaluations saturated. Some outputs build upon earlier results produced by the models.
+
+This collection includes results at different stages of verification. Not all have accompanying Lean formalizations. We will continue to update this repository with Lean formalizations as we obtain them.
+
+Some of the unformalized results could have issues. We will endeavor to fix any such issues quickly.
+We are also exploring community-hosted repositories for these materials.
+
+In our view, these manuscripts are best understood as a form of raw research data, rather than polished academic papers. We defer to the math community completely on matters of credit, precedence, and concurrent work.
+
+Navigating the collection
+
+The current catalogue contains 721 manuscripts organized into 373 families. A family groups related papers, which may include a principal result, companion arguments, consequences, or alternative proofs. Each family is classified by mathematical discipline.
+
+Start with the
+overview
+for descriptions of the families.
+
+Use the
+manuscript map
+to find individual papers and their supporting materials.
+
+The
+preprints/
+directory contains PDFs, source files, and manuscript-specific citation and build instructions.
+
+The
+Lean library
+and
+formalization catalogue
+describe the available formal proofs, their associated papers, and verification configurations. See the
+Comparator instructions
+for additional checking instructions. The repository has ~42% top-line results formalized.
+
+Updates to the repo are described in the
+history
+.
+
+Reasoning summaries
+
+We are also releasing abridged summaries of the model's reasoning, covering the following results:
+
+Family
+
+Subject
+
+007
+
+Ordinary two-point correlations of multiplicative functions
+
+017
+
+The irrationality exponent of π
+
+087
+
+Symmetric and general Mahler conjectures
+
+102
+
+Ordinary NP-hardness at the basic semidefinite threshold
+
+159
+
+Quasipolynomial bounds for arithmetic progressions
+
+197
+
+Kaplansky's direct-finiteness conjecture in characteristic two
+
+221
+
+The Mézard–Parisi formula for diluted spin glasses
+
+271
+
+Spontaneous magnetization in the quantum Heisenberg ferromagnet
+
+287
+
+Isomorphism of free group factors
+
+362
+
+The three-dimensional relativistic Vlasov–Maxwell system
+
+How the results were produced
+
+The vast majority of results were obtained with the same procedure using an unreleased internal OpenAI model. On average, each result used three hours of ChatGPT Pro thinking compute with that model. Over the course of the evaluation, the model was posed approximately 4,000 problems. Aggregating the output into result families and manuscripts and requiring an appropriate level of significance led to the catalog outlined above.
+
+Exceptions to this fixed procedure include work on a zero-free region for the Riemann zeta function and proof of the Hodge Conjecture for CM abelian varieties. Additionally, the writeup for the Re(s) > 11/12 zero-free region for the Riemann zeta function was human edited for readability.
+
+Versions and citations
+
+We will preserve the public release history of this collection. Corrections and revisions will be recorded as new versions, with previously released versions remaining accessible.
+
+To cite the individual manuscript, use the BibTeX block in its directory.
+
+About
+
+No description, website, or topics provided.
+
+Resources
+
+Readme
+
+Apache-2.0 license
+
+Activity
+
+Custom properties
+
+Stars
+
+16.1k
+stars
+
+Watchers
+
+380
+watching
+
+Forks
+
+1.9k
+forks
+
+Report repository
+
+Releases
+
+Packages
+
+Used by
+
+Contributors
+
+Languages
+
+Footer
+
+© 2026 GitHub, Inc.
+
+Footer navigation
+
+Terms
+
+Privacy
+
+Security
+
+Status
+
+Community
+
+Docs
+
+Contact
+
+Manage cookies
+
+Do not share my personal information
+
+You can’t perform that action at this time.

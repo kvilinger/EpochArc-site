@@ -1,0 +1,310 @@
+--- Result 1 ---
+Title: Google and Oracle are partnering to bring Google TPUs to Oracle Cloud Infrastructure | Google Cloud Blog
+Link: https://cloud.google.com/blog/products/infrastructure/bringing-google-tpus-to-oracle-cloud-infrastructure
+Age: 11 hours ago
+Snippet: <strong>Google and Oracle are partnering to bring Google TPUs to Oracle Cloud Infrastructure</strong>, making OCI the first hyperscaler outside Google to offer TPUs.
+Content:
+As AI workloads scale across every industry, organizations need compute options that optimize throughput, latency, and unit economics across the AI lifecycle. To meet this demand, Oracle and Google Cloud are partnering to bring Google Tensor Processing Units (TPUs) to Oracle Cloud Infrastructure (OCI), making OCI the first hyperscaler outside Google to offer TPUs. Together, we will deploy TPU capacity on OCI starting in the calendar year 2027.
+
+## TPUs: Co-designed from silicon to software
+
+Google built its first TPU more than ten years ago on a clear product thesis: co-designing custom silicon alongside optical networking, power delivery, liquid cooling, and compiler software yields gains in performance per watt and total cost of ownership that isolated components cannot match.
+
+TPU v1 delivered 30x the throughput per watt of contemporary processors. Today, TPUs train and serve Gemini across Google's billion-user products, and the eighth-generation TPUs deliver up to 12.6 PFLOPS of native FP4 compute per chip, over 100x TPU v1's 92 TFLOPS at up to 2x the performance per watt of the previous generation. However, raw FLOPS alone do not determine customer economics across training and inference. For training, the governing metric is goodput; the percentage of time a cluster spends doing productive computation. For inference, the governing metrics are latency and cost per token. TPUs address both through system-level co-design.
+
+By pairing on-die Inter-Chip Interconnect (ICI) routing with Optical Circuit Switching (OCS), the control plane detects hardware or link degradations and dynamically routes optical paths around faults in real time without job restarts, sustaining over 97% goodput across thousands of chips  on large-scale training runs and high availability for production serving. Increased on-chip SRAM, more HBM capacity, and a new low-diameter interconnect topology that cuts network hops by more than 50% allow the latest generation TPUs to deliver up to 80% better performance per dollar for low-latency serving. 
+
+This hardware efficiency translates into product velocity when developers can adopt it without friction. Our [recent announcements at the PyTorch Conference](https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus) reinforce our commitment to making the Google TPU software ecosystem an open, developer-friendly environment for the PyTorch community. Notably, TorchTPU, our native PyTorch stack for Google TPUs, is now available as open source on GitHub. You can now train, serve, and deploy models on TPUs using the tools you already rely on, including vLLM, SGLang, llm-d, TorchTitan, Ray, TorchRec, Hugging Face, LiteRT.  
+
+This portability lets teams assign each workload to the accelerator that delivers the lowest cost per token or fastest time to train, without rewriting model code. And with today’s announcement, they will soon be able to assign those workloads to TPUs on Google Cloud or Oracle infrastructure. 
+
+## Expanding the AI infrastructure ecosystem with OCI
+
+Even as TPU adoption on Google Cloud grows, the global demand for AI compute exceeds any single cloud provider's footprint.Bringing TPUs to OCI gives customers four distinct benefits:
+
+* **Data centers engineered for AI density:** Google's TPU systems are designed for direct liquid cooling at rack scale, and OCI's next-generation data centers are built for exactly that profile. Oracle delivers flexible, durable capacity that can shift between frontier model training and production inference as customer demand changes. Pairing TPU efficiency with Oracle’s innovative power and cooling approaches, helps bring energy-efficient AI-compute capacity online rapidly, and at global scale.
+ 
+* **Secure, high-performance networking with Oracle Acceleron:** While TPUs move chip-to-chip traffic over ICI and OCS, Oracle Acceleron provides the networking foundation that connects TPU capacity to the rest of OCI. Acceleron’s  SmartNIC with hardware-level tenant isolation, High Performance Fabric, and Zero Trust Packet Routing moves data between Oracle databases, storage, and TPU clusters with high throughput and low latency, without taxing host compute and without weakening security boundaries.
+ 
+* **Proximity to enterprise data:** Oracle databases are often the system-of-record for enterprise organizations. Offering TPUs directly within OCI lets organizations run fine-tuning and inference next to their existing enterprise data without costly cross-cloud transfers.
+ 
+* **Multi-architecture choice:** Providing TPUs alongside GPUs inside OCI gives teams the flexibility to assign each AI workload stage to the optimal accelerator for cost and performance.
+ 
+
+By bringing Google TPUs to Oracle Cloud Infrastructure, Google Cloud and Oracle are opening up over a decade of purpose-built AI systems engineering to a broader ecosystem of builders. When customers have more choices of purpose-built compute acros
+
+--- Result 2 ---
+Title: Oracle Brings Google TPUs to Oracle Cloud Infrastructure
+Link: https://www.oracle.com/news/announcement/ai-world-oracle-brings-google-tpus-to-oracle-cloud-infrastructure-2026-10-27/
+Age: 19 hours ago
+Snippet: Oracle and Google today announced that Google’s Tensor Processing Units (TPUs) will be available through Oracle Cloud Infrastructure (OCI), marking the first time Google TPUs will be offered on a hyperscale cloud platform outside Google.
+Content:
+Oracle AI World, LAS VEGAS—Oct 27, 2026
+
+Oracle and Google today announced that Google’s Tensor Processing Units (TPUs) will be available through [Oracle Cloud Infrastructure](https://www.oracle.com/cloud/) (OCI), marking the first time Google TPUs will be offered on a hyperscale cloud platform outside Google. By bringing Google’s purpose-built TPUs to OCI’s AI compute portfolio, customers gain the flexibility to match their most demanding workloads with infrastructure designed for near-linear scalability and highly optimized economics.
+
+“Different AI workloads have different compute needs,” said Mahesh Thiagarajan, president, Oracle Cloud Infrastructure, Oracle. “Bringing Google TPUs to OCI gives customers access to multiple leading AI compute architectures in one cloud. That choice gives them the flexibility to choose the right infrastructure for the performance, throughput, and economics of each AI workload.”
+
+Google TPUs are custom accelerators co-designed with open software to power the entire AI lifecycle—from frontier training and large-scale inference to the multi-step reasoning data demands of agentic AI. OCI will provide the power, cooling, and datacenter networking to deploy Google TPUs at scale within its infrastructure.
+
+“The next generation of AI will require a diverse range of compute,” said Amin Vahdat, senior vice president and chief technologist, AI & Infrastructure, Google. “TPUs give customers a powerful, purpose-built option for demanding training and inference workloads. Bringing Google TPUs to OCI will give more organizations access to this technology and greater flexibility in how they build and run their most complex AI applications.”
+
+## More AI Compute Options for Every Workload
+
+As models grow and production inference demands increase, the performance and economics of every training run and inference request become increasingly important. Google’s TPU architecture is designed to maximize AI processing from each watt of electricity, with fast access to model data and rapid communication between chips.
+
+Google TPUs can support large-model training and post-training, including dense and mixture-of-experts models (MoE), as well as production inference for reasoning, agentic, and long-context applications. Customers will be able to choose Google TPUs within OCI, optimized for their workloads, performance requirements, and cost objectives.
+
+Drawing on more than a decade of custom AI silicon development, Google’s TPU portfolio delivers purpose-built compute optimized for massive machine learning workloads. Google’s eighth-generation TPU introduces two purpose-built architectures: TPU 8t for training and TPU 8i for inference. TPU 8t cuts frontier model development cycles from months to weeks, delivering nearly 3x the compute performance per pod over the previous generation, while TPU 8i is designed to handle the iterative work of many specialized agents.
+
+Google TPUs on OCI will be available in calendar year 2027, ramping over a multi-year period to meet customer needs.
+
+## Additional Resources
+
+* Learn more about [Oracle Cloud Infrastructure](https://www.oracle.com/cloud/)
+* Learn more about [Oracle AI infrastructure](https://www.oracle.com/artificial-intelligence/?source=:ad:pas:go:awr:a_nas:l5:RC_GOOG260728P00057C00134:MainAd&gad_source=1&gad_campaignid=24316285125&gbraid=0AAAAADtVWWz0Q5bTUILb5ze4s2Cabw-Qg&gclid=CjwKCAjwrbfWBhAeEiwAc2e6PqT90XymL8EP3lqKVQ6t7mbIy1dUUM9KhA_eh1F71kFMCg2lbXGcchoC7uQQAvD_BwE)
+* Learn more about [Google Cloud TPUs](https://cloud.google.com/tpu)
+
+## About Google Cloud
+
+Google Cloud offers a powerful, optimized AI stack—including AI infrastructure, leading models like Gemini, data management capabilities, multicloud security solutions, developer tools and platform, as well as agents and applications—that enables organizations to transform their business for the Agentic Era. Customers in more than 200 countries and territories turn to Google Cloud as their trusted technology partner.
+
+## About Oracle AI World
+
+Oracle AI World is where customers and partners discover the latest product and technology innovations, see how AI is being applied across industries, and connect with experts and peers. Attendees will gain practical tips and insights to drive immediate impact within their organizations and explore how Oracle is helping unlock the full potential of AI. Join the event to see new capabilities in action and hear from thought leaders and industry movers. Register now at [oracle.com/ai-world](https://www.oracle.com/ai-world) or follow the news and conversation at [oracle.com/news](https://www.oracle.com/news) and [linkedin.com/company/oracle](http://linkedin.com/company/oracle).
+
+## About Oracle
+
+Oracle offers integrated suites of applications plus secure, autonomous infrastructure in the Oracle Cloud. For more information about Oracle (NYSE: ORCL), please visit us at [www.oracle.com](https://www.oracle.com/).
+
+## Trademarks
+
+Oracle, Java, MySQL and NetSuite a
+
+--- Result 3 ---
+Title: Oracle adds Google TPUs to OCI to expand enterprise AI compute options | Network World
+Link: https://www.networkworld.com/article/4241566/oracle-adds-google-tpus-to-oci-to-expand-enterprise-ai-compute-options.html
+Age: 35 minutes ago
+Snippet: Oracle has entered into a partnership with Google to bring the latter’s Tensor Processing Units (TPUs) to Oracle Cloud Infrastructure (OCI), giving its enterprise customers an alternative to GPUs for training and inference workloads without running their workloads on Google’s own cloud platform.
+Content:
+Oracle has entered into a partnership with Google to bring the latter’s Tensor Processing Units (TPUs) to Oracle Cloud Infrastructure (OCI), giving its enterprise customers an alternative to GPUs for training and inference workloads without running their workloads on Google’s own cloud platform.
+
+The deal, which was announced at Oracle AI World in Las Vegas on Tuesday, marks the first time [Google TPUs](https://www.networkworld.com/article/4093957/what-are-tpus-your-guide-to-tensor-processing-units-and-ai-acceleration.html) will be available through another hyperscaler, the companies said in a joint statement.
+
+As part of the agreement, Oracle will provide the data center infrastructure needed to deploy the TPUs, including power, cooling, and networking, they added.
+
+The addition of TPUs will expand Oracle customers’ compute portfolio as they look for alternatives to [GPUs](https://www.networkworld.com/article/3966130/what-are-gpus-inside-the-processing-power-behind-ai.html) to manage the rising costs and infrastructure demands of training large AI models and running inference at scale, said [Stephanie Walter](https://www.linkedin.com/in/slwalter), practice leader of AI stack at HyperFrame Research.
+
+Inference workloads specifically, Walter added, could benefit as they account for the largest amount of compute consumption in an enterprise: “Inference is a daily challenge. Every time an employee uses an AI assistant or an agent calls a model, it consumes compute.”
+
+Primarily because purpose-built accelerators, such as TPUs, can offer different performance and efficiency benefits depending on the model architecture, workload, and software stack, in contrast to GPUs, which are designed to handle a broader range of computing tasks, Walter further added.
+
+However, access to the chips alone will not determine the economics of a deployment.
+
+“An enterprise may have models, tools, and skills built around a different accelerator. Before switching, it needs to know what runs on TPUs, what needs to change, and how much effort it takes to maintain. A lower infrastructure price is not much of a bargain if the development and operational costs outweigh the savings,” Walter said.
+
+Typically, Google’s TPUs are intended for machine learning workloads, including large-model training, post-training, and inference. The chips can also support reasoning-intensive and long-context applications, including those built around AI agents that make multiple model calls to complete a task.
+
+Google has spent more than a decade developing its custom AI silicon. Its [eighth-generation TPU portfolio](https://www.networkworld.com/article/4162004/google-bets-on-workload-specific-tpus-with-8t-and-8i-launch.html/) includes two architectures: TPU 8t, designed for training, and TPU 8i, designed for inference.
+
+TPU 8t, according to the hyperscaler, can deliver nearly three times the compute performance per pod of its predecessor and can reduce frontier-model development cycles from months to weeks. TPU 8i, on the other hand, is designed to handle the iterative workloads generated by multiple specialized AI agents, it added.
+
+However, the companies have not disclosed pricing, specific OCI configurations, or the initial capacity that will be available when the accelerators become available. Those details are likely to help enterprises assess whether the additional accelerator option can deliver meaningful cost or performance improvements for their workloads.
+
+For now, the only detail available is that Oracle plans to make the chips available in calendar 2027, with capacity ramping up over multiple years. Even a specific launch date has not been shared.
+
+--- Result 4 ---
+Title: Oracle offers Google TPUs in its cloud for the first time
+Link: https://cryptobriefing.com/oracle-cloud-google-tpus-first-time/
+Age: 17 hours ago
+Snippet: The two companies said Google’s ... cloud provider outside Google to offer the chips. <strong>The partnership was unveiled on October 27, 2026, at Oracle AI World in Las Vegas</strong>....
+Content:
+Oracle Cloud Infrastructure will begin offering Google's Tensor Processing Units in 2027, the first major cloud outside Google to do so
+
+## Oracle Corporation (ORCL) price
+
+[Full chart and stats](https://cryptobriefing.com/markets/oracle/)
+
+Loading chart…
+
+Market cap
+
+$394.7B (shares as of 2026-09-07)
+
+P/E (trailing)
+
+20.5 (EPS to 2026-08-31)
+
+Annual revenue
+
+$67.4B USD (FY ended 2026-05-31) [10-K](https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/)
+
+Annual revenue growth
+
++17.3% (FY ended 2026-05-31 vs FY ended 2025-05-31) [10-K](https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/)
+
+Annual net income
+
+17,087,000,000 USD (FY ended 2026-05-31, attributable to the company) [10-K](https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/)
+
+Annual operating margin
+
+30.6% (FY ended 2026-05-31)
+
+Forward P/E
+
+Unavailable: no dated forecast source
+
+Gloria daily close for session Oct 27, 2026. Market cap and trailing P/E use this close with the SEC share total and trailing diluted earnings, each dated next to its figure. Annual revenue, revenue growth, net income and margin show their own fiscal period and link the 10-K. Current context may postdate this article.
+
+## Oracle Corporation and its peers
+
+| Company | Price | Market cap | P/E (trailing) | Forward P/E | Annual revenue (USD) | Annual revenue growth | Annual net income (USD) | Operating margin |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ![](https://cryptobriefing.com/wp-content/uploads/cb-asset-logos/oracle.png?v=ee63bf0fec) [Oracle Corporation](https://cryptobriefing.com/markets/oracle/) ORCL · Price dated Oct 27, 2026 · tokenized ORCLx | $131 | $394.7B | 20.5 | Unavailable | $67.4BFY ended 2026-05-31 · [10-K](https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/) | +17.3%FY ended 2026-05-31 vs 2025-05-31 · [10-K](https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/) | 17,087,000,000FY ended 2026-05-31, attributable to the company · [10-K](https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/) | 30.6%FY ended 2026-05-31 |
+| ![](https://cryptobriefing.com/wp-content/uploads/cb-asset-logos/palantir.png?v=eb3e43dde0) [Palantir Technologies Inc.](https://cryptobriefing.com/markets/palantir/) PLTR · Price dated Oct 27, 2026 · tokenized PLTRx | $199 | $477.5B | 169.9 | Unavailable | $4.5BFY ended 2025-12-31 · [10-K](https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/) | +56.2%FY ended 2025-12-31 vs 2024-12-31 · [10-K](https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/) | 1,625,033,000FY ended 2025-12-31, attributable to the company · [10-K](https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/) | 31.6%FY ended 2025-12-31 |
+| ![](https://cryptobriefing.com/wp-content/uploads/cb-asset-logos/crowdstrike.png?v=1c67755a25) [CrowdStrike Holdings Inc.](https://cryptobriefing.com/markets/crowdstrike/) CRWD · Price dated Oct 27, 2026 · tokenized CRWDx | $268 | $274.4B | Not meaningfulLoss, diluted EPS −0.45 
+to 2026-07-31 · [SEC filing](https://www.sec.gov/Archives/edgar/data/1535527/000153552726000031/) | Unavailable | $4.8BFY ended 2026-01-31 · [10-K](https://www.sec.gov/Archives/edgar/data/1535527/000153552726000010/) | +21.7%FY ended 2026-01-31 vs 2025-01-31 · [10-K](https://www.sec.gov/Archives/edgar/data/1535527/000153552726000010/) | −162,502,000FY ended 2026-01-31, attributable to the company · [10-K](https://www.sec.gov/Archives/edgar/data/1535527/000153552726000010/) | −6.1%FY ended 2026-01-31 |
+| ![](https://cryptobriefing.com/wp-content/uploads/cb-asset-logos/shopify.png?v=4eee06758b) [Shopify Inc.](https://cryptobriefing.com/markets/shopify/) SHOP · Price dated Oct 27, 2026 | $166 | Unavailable | 112.0 | Unavailable | $11.6BFY ended 2025-12-31 · [10-K](https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/) | +30.1%FY ended 2025-12-31 vs 2024-12-31 · [10-K](https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/) | 1,231,000,000FY ended 2025-12-31, attributable to the company · [10-K](https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/) | 12.7%FY ended 2025-12-31 |
+
+Missing figures stay unavailable. Forward P/E requires a dated source. Annual revenue, revenue growth, net income and margin come from each company's own 10-K, in US dollars, and each row shows that fiscal year. Revenue growth compares the fiscal year with the prior year stated in the same 10-K. Net income is the full year amount attributable to the company, or available to common stockholders where the filing states only that, or consolidated net income. Each row names its basis. Trailing P/E reads "Not meaningful" when the dated trailing diluted EPS is a loss or zero. An operating margin appears only when the filing states both the operating income and the revenue for the same year.
+
+Sources: SEC filings, Gloria daily closes and CoinGecko. Oldest record refresh: Oct 27, 2026, 7:31 PM EDT. Refresh is not a pri
+
+--- Result 5 ---
+Title: Google to sell TPU AI chips on Oracle Cloud
+Link: https://www.digitaltoday.co.kr/en/view/120257/google-to-sell-tpu-ai-chips-on-oracle-cloud
+Age: 14 hours ago
+Snippet: It is the first time Google has offered TPUs on a cloud platform outside its own. <strong>Oracle plans to introduce TPUs to its public cloud service, Oracle Cloud Infrastructure (OCI), by 2027</strong>, the report said.
+Content:
+![](https://cdn.digitaltoday.co.kr/news/photo/202610/710420_657975_2454.jpg)
+
+Google Cloud. \[Photo: Shutterstock\]
+
+Google and Oracle have announced a partnership to provide Google’s TPU AI chips to Oracle Cloud customers, The Information reported on Oct. 27.
+
+It is the first time Google has offered TPUs on a cloud platform outside its own.
+
+Oracle plans to introduce TPUs to its public cloud service, Oracle Cloud Infrastructure (OCI), by 2027, the report said.
+
+Google developed TPUs more than 10 years ago and has recently accelerated efforts to expand the TPU ecosystem. It began selling TPUs to outside companies, including neo-cloud firms, from this year.
+
+Amin Vahdat (아민 바닷), senior vice president and chief technology officer for Google AI infrastructure, said providing TPUs on Oracle Cloud would let more organisations use them. He said it would also make it more flexible to build and run the most complex AI applications.
+
+The Information said more cases are emerging of Google working with companies that compete with it in the cloud market, such as Oracle, to expand TPU adoption.
+
+Google last week decided to offer OpenAI models that compete with its Gemini to Google Cloud customers.
+
+--- Result 6 ---
+Title: Oracle and Google to offer TPUs on OCI starting in 2027
+Link: https://www.streetinsider.com/Corporate+News/Oracle+and+Google+to+offer+TPUs+on+OCI+starting+in+2027/27239439.html
+Age: 18 hours ago
+Snippet: Oracle (NYSE: ORCL) and Google announced that <strong>Google&#x27;s Tensor Processing Units (TPUs) will be made available through Oracle Cloud Infrastructure (OCI),</strong> according to a press release issued at the Oracle AI World event in Las Vegas on Oct. 27, 2026.
+Content:
+(HTTP 403)
+
+--- Result 7 ---
+Title: Oracle adds Google TPU, broadens AI chip stack to rival Nvidia - CHOSUNBIZ
+Link: https://biz.chosun.com/en/en-it/2026/10/28/EYPVTAA4OJHILPN62TU367GENU/
+Age: 4 hours ago
+Snippet: <strong>Oracle will add chips from Google and a startup semiconductor company to its Nvidia-centric cloud AI infrastructure</strong>.
+Content:
+![Oracle logo. /Courtesy of Oracle](https://biz.chosun.com/resizer/v2/QPADSFXJRRCL3NNLBCFNM6AMM4.png?auth=2d7d86e3703e7c12deda6090efaf4796c278fe0ff389a1ba244f8a82dd97e8e3&width=616)
+
+Oracle logo. /Courtesy of Oracle
+
+Oracle will add chips from Google and a startup semiconductor company to its Nvidia-centric cloud AI infrastructure. The idea is to strengthen its market push by letting customers choose from a variety of AI processors within a single cloud.
+
+According to Bloomberg and Reuters, Oracle on the 27th (local time) unveiled plans to expand semiconductor supply for Oracle Cloud Infrastructure (OCI) at Oracle AI World in Las Vegas.
+
+Google's tensor processing unit (TPU) will be introduced next year, with supply increasing over several years. It is the first case of a major data center operator other than Google offering TPU services. Oracle will install TPUs in its own facilities and handle power, cooling, and networking.
+
+The two companies' collaboration began in databases. After they released a cloud partnership in Jun. 2024, they launched Oracle database services within Google Cloud in four regions across the United States and Europe in Sep. of the same year. Corporations use Oracle databases while using Google Cloud's services. This TPU introduction can be seen as the two companies' collaboration expanding from data management to AI compute infrastructure.
+
+The range of choices for AI inference chips will also widen. Cerebras equipment will be deployed starting in the first half of next year, and chips from SambaNova Systems will also be offered. Nvidia maintains an edge in the AI training market, but competition in inference is intensifying among custom chips and startups.
+
+It will also expand cooperation with Nvidia. Oracle plans to scale up the latest AI server already offered on OCI, "Vera Rubin NVL72," to the multi-gigawatt (GW) level. The contract amount was not disclosed.
+
+Securing funds for the massive investment is a challenge. Oracle did not explain how it will finance the chip additions. Earlier, saying customers' chip expense burdens are rising, it kept its fiscal 2027 capital spending plan at $90 billion to $95 billion. The share price fell 47% from its year-to-date high on Jun. 1 due to the burden of data center investment.
+
+※ This article has been translated by AI. Share your feedback
+
+here.
+
+--- Result 8 ---
+Title: Oracle will offer Google’s TPU AI chip via OCI - DCD
+Link: https://www.datacenterdynamics.com/en/news/oracle-will-offer-googles-tpu-ai-chip-via-oci/
+Age: 17 hours ago
+Snippet: Oracle and Google are partnering to enable Oracle to offer Google’s Tensor Processing Units (TPUs) from Oracle Cloud Infrastructure (OCI).
+Content:
+(Error: fetch failed)
+
+--- Result 9 ---
+Title: Oracle Brings Google TPUs to Oracle Cloud Infrastructure - CXO Digitalpulse
+Link: https://www.cxodigitalpulse.com/oracle-brings-google-tpus-to-oracle-cloud-infrastructure/
+Age: 5 hours ago
+Snippet: October 28, 2026 · 0 · 57 · ... · <strong>Oracle and Google today announced that Google’s Tensor Processing Units (TPUs) will be available through Oracle Cloud Infrastructure (OCI), marking the first time Google TPUs will be offered on a hyperscale cloud platform outside Google</strong>...
+Content:
+![](https://www.cxodigitalpulse.com/wp-content/uploads/2026/10/banner-91.webp)
+
+Oracle and Google today announced that Google’s Tensor Processing Units (TPUs) will be available through [Oracle Cloud Infrastructure](https://www.oracle.com/cloud/) (OCI), marking the first time Google TPUs will be offered on a hyperscale cloud platform outside Google. By bringing Google’s purpose-built TPUs to OCI’s AI compute portfolio, customers gain the flexibility to match their most demanding workloads with infrastructure designed for near-linear scalability and highly optimized economics.
+
+“Different AI workloads have different compute needs,” said Mahesh Thiagarajan, president, Oracle Cloud Infrastructure, Oracle. “Bringing Google TPUs to OCI gives customers access to multiple leading AI compute architectures in one cloud. That choice gives them the flexibility to choose the right infrastructure for the performance, throughput, and economics of each AI workload.”
+
+Google TPUs are custom accelerators co-designed with open software to power the entire AI lifecycle—from frontier training and large-scale inference to the multi-step reasoning data demands of agentic AI. OCI will provide the power, cooling, and datacenter networking to deploy Google TPUs at scale within its infrastructure.
+
+“The next generation of AI will require a diverse range of compute,” said Amin Vahdat, senior vice president and chief technologist, AI & Infrastructure, Google. “TPUs give customers a powerful, purpose-built option for demanding training and inference workloads. Bringing Google TPUs to OCI will give more organizations access to this technology and greater flexibility in how they build and run their most complex AI applications.”
+
+##### More AI Compute Options for Every Workload
+
+As models grow and production inference demands increase, the performance and economics of every training run and inference request become increasingly important. Google’s TPU architecture is designed to maximize AI processing from each watt of electricity, with fast access to model data and rapid communication between chips.
+
+Google TPUs can support large-model training and post-training, including dense and mixture-of-experts models (MoE), as well as production inference for reasoning, agentic, and long-context applications. Customers will be able to choose Google TPUs within OCI, optimized for their workloads, performance requirements, and cost objectives.
+
+Drawing on more than a decade of custom AI silicon development, Google’s TPU portfolio delivers purpose-built compute optimized for massive machine learning workloads. Google’s eighth-generation TPU introduces two purpose-built architectures: TPU 8t for training and TPU 8i for inference. TPU 8t cuts frontier model development cycles from months to weeks, delivering nearly 3x the compute performance per pod over the previous generation, while TPU 8i is designed to handle the iterative work of many specialized agents.
+
+Google TPUs on OCI will be available in calendar year 2027, ramping over a multi-year period to meet customer needs.
+
+\- Advertisement -
+
+**Disclaimer:** The above press release has been provided by Oracle. CXO Digital Pulse holds no responsibility for its content in any manner.
+
+Reproduction or Copying in part or whole is not permitted unless approved by author.
+
+--- Result 10 ---
+Title: Oracle Brings Google TPUs to Oracle Cloud Infrastructure
+Link: https://www.prnewswire.com/news-releases/oracle-brings-google-tpus-to-oracle-cloud-infrastructure-302920827.html
+Age: 18 hours ago
+Snippet: 27, 2026 /PRNewswire/ -- Oracle AI World -- Oracle and Google today announced that <strong>Google&#x27;s Tensor Processing Units (TPUs) will be available through Oracle Cloud Infrastructure (OCI),</strong> marking the first time Google TPUs will be offered on a ...
+Content:
+_OCI will be the first hyperscaler outside Google to offer Google TPUs_, /PRNewswire/ -- **Oracle AI World** \-- Oracle and Google today announced that Google's Tensor Processing Units (TPUs) will be available through [Oracle Cloud Infrastructure](https://edge.prnewswire.com/c/link/?t=0&l=en&o=4807215-3&h=1548064690&u=https%3A%2F%2Fwww.oracle.com%2Fcloud%2F&a=Oracle+Cloud+Infrastructure) (OCI), marking the first time Google TPUs will be offered on a hyperscale cloud platform outside Google. By bringing Google's purpose-built TPUs to OCI's AI compute portfolio, customers gain the flexibility to match their most demanding workloads with infrastructure designed for near-linear scalability and highly optimized economics.
+
+"Different AI workloads have different compute needs," said Mahesh Thiagarajan, president, Oracle Cloud Infrastructure, Oracle. "Bringing Google TPUs to OCI gives customers access to multiple leading AI compute architectures in one cloud. That choice gives them the flexibility to choose the right infrastructure for the performance, throughput, and economics of each AI workload."
+
+Google TPUs are custom accelerators co-designed with open software to power the entire AI lifecycle—from frontier training and large-scale inference to the multi-step reasoning data demands of agentic AI. OCI will provide the power, cooling, and datacenter networking to deploy Google TPUs at scale within its infrastructure.
+
+"The next generation of AI will require a diverse range of compute," said Amin Vahdat, senior vice president and chief technologist, AI & Infrastructure, Google. "TPUs give customers a powerful, purpose-built option for demanding training and inference workloads. Bringing Google TPUs to OCI will give more organizations access to this technology and greater flexibility in how they build and run their most complex AI applications."
+
+**More AI Compute Options for Every Workload 
+**As models grow and production inference demands increase, the performance and economics of every training run and inference request become increasingly important. Google's TPU architecture is designed to maximize AI processing from each watt of electricity, with fast access to model data and rapid communication between chips.
+
+Google TPUs can support large-model training and post-training, including dense and mixture-of-experts models (MoE), as well as production inference for reasoning, agentic, and long-context applications. Customers will be able to choose Google TPUs within OCI, optimized for their workloads, performance requirements, and cost objectives.
+
+Drawing on more than a decade of custom AI silicon development, Google's TPU portfolio delivers purpose-built compute optimized for massive machine learning workloads. Google's eighth-generation TPU introduces two purpose-built architectures: TPU 8t for training and TPU 8i for inference. TPU 8t cuts frontier model development cycles from months to weeks, delivering nearly 3x the compute performance per pod over the previous generation, while TPU 8i is designed to handle the iterative work of many specialized agents.
+
+Google TPUs on OCI will be available in calendar year 2027, ramping over a multi-year period to meet customer needs.
+
+**Additional Resources 
+**Learn more about [Oracle Cloud Infrastructure](https://edge.prnewswire.com/c/link/?t=0&l=en&o=4807215-3&h=1548064690&u=https%3A%2F%2Fwww.oracle.com%2Fcloud%2F&a=Oracle+Cloud+Infrastructure) 
+Learn more about [Oracle AI infrastructure](https://edge.prnewswire.com/c/link/?t=0&l=en&o=4807215-3&h=3270320025&u=https%3A%2F%2Fwww.oracle.com%2Fartificial-intelligence%2F%3Fsource%3D%3Aad%3Apas%3Ago%3Aawr%3Aa_nas%3Al5%3ARC_GOOG260728P00057C00134%3AMainAd%26gad_source%3D1%26gad_campaignid%3D24316285125%26gbraid%3D0AAAAADtVWWz0Q5bTUILb5ze4s2Cabw-Qg%26gclid%3DCjwKCAjwrbfWBhAeEiwAc2e6PqT90XymL8EP3lqKVQ6t7mbIy1dUUM9KhA_eh1F71kFMCg2lbXGcchoC7uQQAvD_BwE&a=Oracle+AI+infrastructure) 
+Learn more about [Google Cloud TPUs](https://edge.prnewswire.com/c/link/?t=0&l=en&o=4807215-3&h=2338832075&u=https%3A%2F%2Fcloud.google.com%2Ftpu&a=Google+Cloud+TPUs) 
+
+**About Oracle** 
+Oracle offers integrated suites of applications plus secure, autonomous infrastructure in the Oracle Cloud. For more information about Oracle (NYSE: [ORCL](#financial-modal)), please visit [oracle.com](https://edge.prnewswire.com/c/link/?t=0&l=en&o=4807215-3&h=2822963856&u=http%3A%2F%2Fwww.oracle.com%2F&a=oracle.com).
+
+**About Google Cloud 
+**Google Cloud offers a powerful, optimized AI stack—including AI infrastructure, leading models like Gemini, data management capabilities, multicloud security solutions, developer tools and platform, as well as agents and applications—that enables organizations to transform their business for the Agentic Era. Customers in more than 200 countries and territories turn to Google Cloud as their trusted technology partner.
+
+**About Oracle AI World** 
+Oracle AI World is where customers and partners discover the latest product and technolo
+

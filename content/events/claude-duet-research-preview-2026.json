@@ -1,0 +1,113 @@
+{
+  "id": "claude-duet-research-preview-2026",
+  "slug": "claude-duet-research-preview-2026",
+  "date": "2026-10-21",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Anthropic opens Claude Duet research preview for US subscribers",
+    "zhHans": "Anthropic 面向美国订阅用户开放 Claude Duet 研究预览"
+  },
+  "searchSummary": {
+    "en": "Claude Duet entered a waitlisted US research preview for Pro and Max subscribers on October 21.",
+    "zhHans": "Claude Duet 于 10 月 21 日面向美国 Pro 和 Max 订阅用户启动候补制研究预览。"
+  },
+  "summary": {
+    "en": "Anthropic opened Claude Duet as a waitlisted research preview on October 21 for US Claude Pro and Max subscribers, through iOS, Android and claude.ai. The product announcement describes a proactive agent that monitors connected apps and asks before acting. Anthropic also warns that the early version can misread threads or urgency. This is a limited preview, not evidence of broad uptake or reliable autonomous performance.",
+    "zhHans": "Anthropic 于 10 月 21 日面向美国 Claude Pro 和 Max 订阅用户开放 Claude Duet 候补制研究预览，入口包括 iOS、Android 和 claude.ai。官方将其描述为可查看已连接应用并在操作前征求确认的主动式智能体；同时提醒，早期版本可能误读对话或紧急程度。这是有限范围的预览，不代表广泛采用或自主执行能力已获验证。"
+  },
+  "narrative": {
+    "en": "The dated node is the opening of a waitlisted product preview. Anthropic's product and safety descriptions remain company statements; reviewed material does not establish measured adoption, reliability, or independent security validation. The event should not be conflated with Meta Muse or OpenAI's separate agent products.",
+    "zhHans": "本节点记录的是候补制产品预览开放。Anthropic 对产品功能与安全措施的描述仍属公司陈述；本轮材料没有证明实际采用规模、可靠性或独立安全验证。该事件不应与 Meta Muse 或 OpenAI 的其他智能体产品合并。"
+  },
+  "claims": [
+    {
+      "id": "claude-duet-fact",
+      "claimType": "fact",
+      "text": {
+        "en": "Anthropic opened Claude Duet as a waitlisted research preview on October 21, 2026, initially for US Pro and Max subscribers on iOS, Android and claude.ai.",
+        "zhHans": "Anthropic 于 2026 年 10 月 21 日面向美国 Pro 和 Max 用户启动 Claude Duet 候补制研究预览，入口包括 iOS、Android 和 claude.ai。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-anthropic-claude-duet",
+        "fup26-unite-claude-duet"
+      ]
+    },
+    {
+      "id": "claude-duet-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "Anthropic describes Duet as an early preview and warns that it may misread a thread or miscalibrate urgency; this evidence does not establish reliable autonomous performance.",
+        "zhHans": "Anthropic 将 Duet 描述为早期预览，并提醒它可能误读对话或紧急程度；现有证据不能证明其自主执行表现可靠。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-anthropic-claude-duet"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "meta-muse-personal-agent-2026",
+    "salesforce-agentforce-job-ready-agents-2026"
+  ],
+  "displayDate": {
+    "en": "2026-10-21",
+    "zhHans": "2026年10月21日"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "relatedForecasts": [],
+  "sources": [
+    {
+      "sourceId": "fup26-anthropic-claude-duet",
+      "supports": [
+        "claude-duet-research-preview-2026",
+        "claude-duet-fact",
+        "claude-duet-limits"
+      ]
+    },
+    {
+      "sourceId": "fup26-unite-claude-duet",
+      "supports": [
+        "claude-duet-research-preview-2026",
+        "claude-duet-fact"
+      ]
+    }
+  ],
+  "editorial": {
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "lastSourceCheckAt": "2026-10-28",
+    "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-10-29",
+        "changeType": "created",
+        "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-29",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a18581-0869-73f6-b377-3b5c673fb781",
+    "reviewRecord": "governance/reviews/independent-20261029/claude-duet-research-preview-2026.json",
+    "publishedAt": "2026-10-29"
+  }
+}

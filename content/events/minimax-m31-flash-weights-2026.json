@@ -1,0 +1,127 @@
+{
+  "id": "minimax-m31-flash-weights-2026",
+  "slug": "minimax-m31-flash-weights",
+  "date": "2026-10-23",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "MiniMax publishes M3.1 Flash weights under a community license",
+    "zhHans": "MiniMax 按社区许可公开 M3.1 Flash 权重"
+  },
+  "searchSummary": {
+    "en": "MiniMax said M3.1 Flash weights were public on October 23, after the October 19 hosted rollout.",
+    "zhHans": "MiniMax 称 M3.1 Flash 权重于 10 月 23 日公开；此前托管服务于 10 月 19 日上线。"
+  },
+  "summary": {
+    "en": "MiniMax's research page dates the hosted API rollout to October 19. The official X post, originally dated October 19 and edited on October 23, displayed the statement that M3.1 Flash weights were public; the first full-content Hugging Face repository commit is timestamped 03:37:20 UTC that day. These are separate service and weight-availability stages, and the first public-download time is not established. The repository uses a Community License: commercial users must display attribution, and annual revenue above US$20 million requires prior written authorization. Vendor benchmark and download claims are not independent evidence of performance or adoption.",
+    "zhHans": "MiniMax 研究页将托管 API 上线日期标为 10 月 19 日。官方 X 帖子原始日期为 10 月 19 日，10 月 23 日编辑后显示 M3.1 Flash 权重已公开；Hugging Face 仓库首个完整内容提交的时间戳为当日 03:37:20 UTC。这是两个不同阶段：托管服务上线与权重可用状态。公众首次可下载的时间尚未确定。仓库采用社区许可：商业用户须展示署名，年收入超过 2,000 万美元者须事先取得书面授权。厂商跑分和下载数据不能独立证明模型表现或实际采用。"
+  },
+  "narrative": {
+    "en": "The event date is the October 23 edit timestamp on MiniMax's official X post, which then displayed the statement that weights were public; the post itself was originally dated October 19, the same day as the hosted API rollout. Hugging Face records the first full-content repository commit at 03:37:20 UTC on October 23. Neither capture establishes the first moment public downloads began. The license is not unrestricted commercial open use. No independent performance replication or measured external adoption is asserted.",
+    "zhHans": "事件日期依据 MiniMax 官方 X 帖子的 10 月 23 日编辑时间戳；该版本显示权重已公开。该帖原始日期为 10 月 19 日，与托管 API 上线同日。Hugging Face 记录的首个完整内容仓库提交时间为 10 月 23 日 03:37:20 UTC。两份记录均不能确定公众首次可下载的时刻。该许可并非不受限制的商业开放使用。本稿不宣称已有独立性能复现或可测量的外部采用。"
+  },
+  "claims": [
+    {
+      "id": "minimax-m31-weights",
+      "claimType": "fact",
+      "text": {
+        "en": "MiniMax's official X post, originally dated October 19 and edited at 1:06 AM on October 23, 2026, displayed the statement that M3.1 Flash weights were public; the hosted API rollout was dated October 19, and Hugging Face records the first full-content repository commit at 03:37:20 UTC on October 23. The first public-download time is not established.",
+        "zhHans": "MiniMax 官方 X 帖子原始日期为 2026 年 10 月 19 日，并于 10 月 23 日凌晨 1:06 编辑；编辑后的内容称 M3.1 Flash 权重已公开。托管 API 上线日期为 10 月 19 日，Hugging Face 记录的首个完整内容仓库提交时间为 10 月 23 日 03:37:20 UTC。公众首次可下载的时间尚未确定。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-minimax-m31-x",
+        "fup26-minimax-m31-hf",
+        "fup26-minimax-m31-blog"
+      ]
+    },
+    {
+      "id": "minimax-m31-license-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "The MiniMax Community License is not unrestricted commercial permission: commercial use requires prominent attribution, prior written authorization above US$20 million in annual revenue, and a notice below that threshold.",
+        "zhHans": "MiniMax 社区许可并未给予不受限制的商业使用权：商业使用须显著署名；年收入超过 2,000 万美元须事先取得书面授权，低于该门槛也须发送通知。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-minimax-m31-license"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "glm-52-open-source-2026",
+    "reflection-beam-open-weights-2026"
+  ],
+  "displayDate": {
+    "en": "2026-10-23",
+    "zhHans": "2026年10月23日"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "relatedForecasts": [],
+  "sources": [
+    {
+      "sourceId": "fup26-minimax-m31-x",
+      "supports": [
+        "minimax-m31-flash-weights-2026",
+        "minimax-m31-weights"
+      ]
+    },
+    {
+      "sourceId": "fup26-minimax-m31-hf",
+      "supports": [
+        "minimax-m31-flash-weights-2026",
+        "minimax-m31-weights"
+      ]
+    },
+    {
+      "sourceId": "fup26-minimax-m31-blog",
+      "supports": [
+        "minimax-m31-flash-weights-2026",
+        "minimax-m31-weights"
+      ]
+    },
+    {
+      "sourceId": "fup26-minimax-m31-license",
+      "supports": [
+        "minimax-m31-flash-weights-2026",
+        "minimax-m31-license-limits"
+      ]
+    }
+  ],
+  "editorial": {
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "lastSourceCheckAt": "2026-10-28",
+    "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-10-29",
+        "changeType": "created",
+        "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-29",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a18581-0869-73f6-b377-3b5c673fb781",
+    "reviewRecord": "governance/reviews/independent-20261029/minimax-m31-flash-weights-2026.json",
+    "publishedAt": "2026-10-29"
+  }
+}

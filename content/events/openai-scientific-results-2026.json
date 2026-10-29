@@ -1,0 +1,141 @@
+{
+  "id": "openai-scientific-results-2026",
+  "slug": "openai-scientific-results-2026",
+  "date": "2026-10-26",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": true,
+  "title": {
+    "en": "OpenAI announces three AI-research results and an academic review approach",
+    "zhHans": "OpenAI 宣布三项 AI 研究结果并提出学术协作方式"
+  },
+  "searchSummary": {
+    "en": "OpenAI announced three model-generated results in mathematics, computer science and physics; their correctness remains under expert review.",
+    "zhHans": "OpenAI 宣布模型生成的数学、计算机科学与物理研究结果；其正确性仍待专家审查。"
+  },
+  "summary": {
+    "en": "On October 26, OpenAI announced three results it attributed to an internal model in mathematics, computer science and physics, along with collaborations with academic researchers. Independent reports say two write-ups and Lean proofs were public while the physics materials were not fully released. OpenAI's math repository describes manuscripts as raw research data; AGMAI criticized the designated-shepherd approach and separately called for release of the physics outputs. This records the announcement and process dispute, not verified scientific discoveries.",
+    "zhHans": "10 月 26 日，OpenAI 宣布其内部模型在数学、计算机科学和物理领域产生三项结果，并提出与学术研究者合作的方式。独立报道指出，其中两项的文本与 Lean 证明已公开，物理材料尚未完整发布。OpenAI 数学仓库将相关手稿称为原始研究数据；AGMAI 批评指定“引导者”的做法，并另行要求公开物理输出。本节点记录公告与流程争议，不代表科学结果已获验证。"
+  },
+  "narrative": {
+    "en": "The event date is the public announcement date, not the dates when individual model outputs were produced. The available evidence supports what OpenAI announced and which artifacts it disclosed, not the correctness of its mathematical or physical claims. AGMAI's statements are attributed to that group and should not be presented as a consensus of mathematicians. OpenAI's announcement page returned HTTP 403 in the direct-fetch attempt; the announcement facts are therefore supported by retained independent reports and the public repository, not by a retained direct copy of that page.",
+    "zhHans": "事件日期是公开公告日，而不是各项模型输出产生的日期。现有证据支持 OpenAI 宣布了什么、公开了哪些材料，不支持其数学或物理主张已经正确。AGMAI 的意见仅归于该组织，不应表述为数学界共识。直连 OpenAI 公告页返回 HTTP 403；因此公告事实依据留存的独立报道与公开仓库，而非该页面的直接留存件。"
+  },
+  "claims": [
+    {
+      "id": "openai-science-announcement",
+      "claimType": "fact",
+      "text": {
+        "en": "Independent reports date OpenAI's October 26, 2026 announcement of three results attributed to an internal model across mathematics, computer science and physics. The company described an academic collaboration process; the physics materials had not been released in full in the reviewed reports.",
+        "zhHans": "独立报道将 OpenAI 宣布三项内部模型研究结果的日期定为 2026 年 10 月 26 日，涉及数学、计算机科学和物理。公司还介绍了学术协作流程；所审查报道指出，物理材料当时尚未完整公开。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-verge-openai-science",
+        "fup26-progressiverobot-openai",
+        "fup26-sciam-openai-science",
+        "fup26-openai-math-repo"
+      ]
+    },
+    {
+      "id": "openai-science-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "The announcement is not independent confirmation that the results are correct: OpenAI's repository calls its manuscripts raw research data, AGMAI objected to designated mathematicians steering releases and requested the physics outputs, and AGMAI explicitly says it does not speak for the whole mathematical community.",
+        "zhHans": "该公告不能独立证明研究结果正确：OpenAI 仓库将其手稿称为原始研究数据；AGMAI 反对由指定数学家主导发布并要求公开物理输出，同时明确表示其不代表整个数学界。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-openai-math-repo",
+        "fup26-agmai-statements",
+        "fup26-verge-openai-science",
+        "fup26-sciam-openai-science"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "openai-academic-researchers-2026",
+    "alphaevolve-2025"
+  ],
+  "displayDate": {
+    "en": "2026-10-26",
+    "zhHans": "2026年10月26日"
+  },
+  "categories": [
+    "capability"
+  ],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "relatedForecasts": [],
+  "sources": [
+    {
+      "sourceId": "fup26-verge-openai-science",
+      "supports": [
+        "openai-scientific-results-2026",
+        "openai-science-announcement",
+        "openai-science-limits"
+      ]
+    },
+    {
+      "sourceId": "fup26-progressiverobot-openai",
+      "supports": [
+        "openai-scientific-results-2026",
+        "openai-science-announcement"
+      ]
+    },
+    {
+      "sourceId": "fup26-sciam-openai-science",
+      "supports": [
+        "openai-scientific-results-2026",
+        "openai-science-announcement",
+        "openai-science-limits"
+      ]
+    },
+    {
+      "sourceId": "fup26-openai-math-repo",
+      "supports": [
+        "openai-scientific-results-2026",
+        "openai-science-announcement",
+        "openai-science-limits"
+      ]
+    },
+    {
+      "sourceId": "fup26-agmai-statements",
+      "supports": [
+        "openai-scientific-results-2026",
+        "openai-science-limits"
+      ]
+    }
+  ],
+  "editorial": {
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "lastSourceCheckAt": "2026-10-29",
+    "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-10-29",
+        "changeType": "created",
+        "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-29",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a18582-ac20-73be-80b3-d51a07f89e82",
+    "reviewRecord": "governance/reviews/independent-20261029/openai-scientific-results-2026.json",
+    "publishedAt": "2026-10-29"
+  }
+}

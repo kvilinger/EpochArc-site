@@ -1,0 +1,153 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "genie-4-world-simulation-2026",
+  "inputSubjectDigest": "4e82df1cc2f90a9acef8dea6394dd2e3bfd270bef8ec4ae49318c656d3020c5a",
+  "subjectDigest": "1c9cb41b4d30f10c73c93f3ead374e330e4663cd7e01245086b469191552ef35",
+  "inputsDigest": "63c7bb39ff844e3accac37b39a0b5bae964d875030b8cc0cd2c53928d5c5b141",
+  "evidenceCutoff": "2026-10-29",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-luna",
+  "reviewedBy": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-targeted-confirmation-2026-10-29",
+  "candidateId": "freshness-20261028-genie4-preview",
+  "runDigest": "e02a51f899cf76ba190e67022c2352cf3716dd63f5c53fdb3bd893b5fbc8e831",
+  "coreFactClaimIds": [
+    "genie4-preview-announcement"
+  ],
+  "identity": {
+    "seriesId": "google-genie-world-models",
+    "action": "announce Genie 4 and open trusted-tester research preview",
+    "stage": "preview",
+    "dateBasis": "Google DeepMind page is dated October 27; TechCrunch same-day report corroborates announcement and preview",
+    "deduplicationReason": "A new research-preview stage for an interactive world model, not a general consumer or developer launch.",
+    "comparedEventIds": [
+      "gemini-robotics-er2-2026",
+      "gemini-robotics-2025"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "capability",
+    "reason": "The dated announce Genie 4 and open trusted-tester research preview is a capability event; scope does not include verified downstream effects."
+  },
+  "significance": {
+    "rationale": "An evidenced dated preview milestone qualifies for L1; the evidence does not establish executed independent downstream effects.",
+    "whyNotHigher": "L2-CAPABILITY is not satisfied: no supported record of the requisite independent downstream milestone or adoption/replication.",
+    "whyNotLower": "The primary event fact is supported by quoted sources and separated from vendor outcome claims; the candidate is not merely a search result.",
+    "comparisonEventIds": [
+      "gemini-robotics-er2-2026",
+      "gemini-robotics-2025"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-CAPABILITY",
+        "criteria": {
+          "previously_infeasible_task": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded preview event, not the independently established previously_infeasible_task milestone required for L2-CAPABILITY. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "comparable_baseline": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded preview event, not the independently established comparable_baseline milestone required for L2-CAPABILITY. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "independent_replication": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded preview event, not the independently established independent_replication milestone required for L2-CAPABILITY. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The reviewed announcement/access event is recent; no measured, independently reproduced impact or broad consensus is established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No distinct material dispute was established in the bounded reviewed material; absence in a bounded search is not proof none exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini compared the full English and Simplified Chinese title, summary, narrative and claim text; date, stage, scope and limitations agree. Producer separately checked both languages; this is not a human bilingual sign-off."
+  },
+  "limitations": [
+    "Read-only Gemini review of full retained artifacts in the named Pi session; not an independent live-web reproduction, not human approval, and not publication authorization.",
+    "Search captures are bounded multi-result extractions; they are not direct page fetches or full channel coverage. Direct OpenAI announcement returned HTTP 403; no bypass.",
+    "PublishedAt is omitted for sources without an independently established source-publication date; event date is not substituted for source date.",
+    "Gemini full-review text includes extraneous/overbroad language (e.g. five independent reporting outlets for the OpenAI event); the retained package supports three named news publishers, an interested company repository, and AGMAI’s own statement. Those reviewer embellishments are not adopted as fact.",
+    "A previous review of the pre-fix run is superseded; only the named session accepting the current run digest is cited here.",
+    "Raw independent review: review/gemini3.8-full-r2-2-raw.md; SHA-256 dad4040805d0c05f0270d33965a1cb4b05b3b31564f4f83f19e2df93c774205a.",
+    "This published-state wrapper is a provisional proposal; Gemini accepted the unchanged factual draft, not an executed release. The publication date is planned, not historical, until release completes."
+  ],
+  "evidence": [
+    {
+      "id": "genie-4-world-simulation-2026-genie4-preview-announcement-google-1",
+      "sourceId": "fup26-google-genie4",
+      "claimId": "genie4-preview-announcement",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "originId": "google-deepmind-genie4-announcement",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we are announcing Genie 4, our new world model",
+      "locator": "Google DeepMind article, opening paragraph; Brave full-content capture",
+      "artifact": "governance/evidence/2026-10-28/search/genie4-official-source.txt",
+      "sha256": "c32f275540bc92da42ad1c0622d89adda1ce5b39a56bc4ce80fd370d0ebe7792"
+    },
+    {
+      "id": "genie-4-world-simulation-2026-genie4-preview-announcement-techcrunch-2",
+      "sourceId": "fup26-techcrunch-genie4",
+      "claimId": "genie4-preview-announcement",
+      "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "originId": "techcrunch-genie4-report-20261027",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Google DeepMind released its newest world model, Genie 4, in research preview on Tuesday.",
+      "locator": "TechCrunch article, opening paragraph",
+      "artifact": "governance/evidence/2026-10-28/direct/genie4-techcrunch-browser.txt",
+      "sha256": "f9492365167687ce0b4ac927883323103881858a85a571ace757d43d064b941a"
+    },
+    {
+      "id": "genie-4-world-simulation-2026-genie4-preview-limits-google-3",
+      "sourceId": "fup26-google-genie4",
+      "claimId": "genie4-preview-limits",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "originId": "google-deepmind-genie4-announcement",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "it remains an early, experimental model",
+      "locator": "Google DeepMind article, learnings from trusted testers",
+      "artifact": "governance/evidence/2026-10-28/search/genie4-official-source.txt",
+      "sha256": "c32f275540bc92da42ad1c0622d89adda1ce5b39a56bc4ce80fd370d0ebe7792"
+    },
+    {
+      "id": "genie-4-world-simulation-2026-genie4-preview-limits-techcrunch-4",
+      "sourceId": "fup26-techcrunch-genie4",
+      "claimId": "genie4-preview-limits",
+      "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "originId": "techcrunch-genie4-report-20261027",
+      "accessedAt": "2026-10-28",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Details and objects can drift the longer a simulation runs, and they still haven’t quite figured out how to ensure the audio will be accurate and any in-world text will be legible.",
+      "locator": "TechCrunch report, limitations paragraph",
+      "artifact": "governance/evidence/2026-10-28/direct/genie4-techcrunch-browser.txt",
+      "sha256": "f9492365167687ce0b4ac927883323103881858a85a571ace757d43d064b941a"
+    }
+  ]
+}

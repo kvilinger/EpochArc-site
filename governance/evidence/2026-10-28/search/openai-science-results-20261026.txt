@@ -1,0 +1,388 @@
+--- Result 1 ---
+Title: OpenAI announces three big science discoveries and a new way to work with academics | The Verge
+Link: https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics
+Age: 1 day ago
+Snippet: OpenAI says its models have produced three new discoveries including <strong>proving the Exponential Time Hypothesis is false</strong>.
+Content:
+Less than a month after its [mass release of hundreds of manuscripts](https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos) that it said contained solutions to long-standing mathematics questions, OpenAI is back with [three more “major” discoveries in math, computer science, and physics](https://openai.com/index/building-scientific-understanding-with-academic-communities/). What’s different this time is the choice to have external experts that OpenAI describes as “shepherds” guiding the results in computer science and physics, while for the math problem it says that they advised it to release the AI output for researchers to work through their own explanations.
+
+> [**OpenAI results added to GitHub today:**](https://github.com/openai/math/blob/main/history.md)
+> 
+> Local smoothing for the Euclidean wave equation. The proof uses an auxiliary partial differential equation to establish Sogge’s local smoothing for waves in every spatial dimension at least two. It also yields the Kakeya maximal and dimension conjectures and Stein’s spherical restriction estimates throughout the interior of the conjectured range. We are releasing the model output directly, as we did in our October 6 release.
+> 
+> The Exponential Time Hypothesis is False. The paper gives a deterministic algorithm that exactly counts satisfying assignments of fixed-width CNF formulas in subexponential time and polynomial space. The case of 3-SAT refutes the Exponential Time Hypothesis. An independent working group of computer scientists led by Russell Impagliazzo, Ramamohan Paturi, and Ryan Williams will examine and explain the proof. At the group’s request, we are making the materials public immediately so others can examine them as well.
+
+This approach could have its own issues, the company admits, and the [AGMAI panel of math advisers](https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel) OpenAI put together [just said yesterday](https://agmai.org/#disadvantages-designating-mathematicians) that “we recommend that AI companies do not adopt” the practices of designating certain people to receive the output first, citing unequal access, borrowed reputation, and biased selection as a few of the issues. Instead, they recommended that in the future, AI labs release output on scholarly repositories, with Lean-formalized proofs, info on how the problems were chosen, funding for people working on understanding the results, and other information.
+
+The physics information has not been released in full, but is a “mathematically rigorous existence proof of certain interacting quantum field theories containing gauge fields and fermions in four dimensions, including Quantum Chromodynamics (QCD) and a unified completion of the Standard Model of particle physics.” According to OpenAI, “David Gross will lead a group including Michael Douglas, Arthur Jaffe, Igor Klebanov, and Nikita Nekrasov that will shepherd this work.”
+
+The computer science collaboration is said to prove that the [Exponential Time Hypothesis (ETH)](https://en.wikipedia.org/wiki/Exponential_time_hypothesis), which has been widely believed to be true, is actually false. OpenAI says verification of the result will be guided by a group of three experts that includes UC San Diego’s Russell Impagliazzo and Ramamohan Paturi, who were part of the group that originally proposed it [in 1999](https://ieeexplore.ieee.org/document/766282), as well as MIT professor [Ryan Williams](https://bsky.app/profile/rrwilliams.bsky.social/post/3myspd26qjk2c). The group decided to release the AI output write-up and Lean proof [on GitHub today](https://github.com/openai/math/blob/main/lean/docs/378.md).
+
+They also [released an open letter](https://docs.google.com/document/d/1adB0IhJgLzsmbfCgoLrtoJTjnlPf74UnyjMo35P5JHo/edit?tab=t.0) to the community asking for input on how to examine the claim, and about setting norms for dealing with AI-generated breakthroughs:
+
+> We would welcome discussion of three broader questions:
+> 
+> What expectations should govern early access to AI-generated results, disclosure of conflicts of interest, and the use of unpublished material for subsequent research?
+> 
+> How should credit recognize both new discoveries and the work of checking, fixing, simplifying, explaining, and extending them?
+> 
+> How can we support students and researchers as methods and research directions change, while preserving the understanding and judgment needed to question results and develop new ideas?
+
+There’s [similar documentation](https://github.com/openai/math/blob/main/lean/docs/079.md) for the math breakthrough, where its model “produced a proof of the local smoothing conjecture in every dimension and therefore also resolve the Kakeya conjecture and Stein’s restriction conjecture in all dimensions.” Just a few months ago, NYU professor Hong Wang was [awarded a prestigious Fields Medal](https://www.nyu.edu/about/news-publications/ne
+
+--- Result 2 ---
+Title: OpenAI Discoveries: Powerful Proofs in Math, CS and Physics
+Link: https://www.progressiverobot.com/2026/10/27/openai-discoveries-mathematics-computer-science-physics/
+Age: 1 day ago
+Snippet: OpenAI discoveries in three separate fields were announced on Monday 26 October 2026, and each one targets a problem that experts have worked on for decades. In mathematics, OpenAI says an internal model proved Sogge’s local smoothing conjecture in every dimension, which would also settle the Kakeya conjecture.
+Content:
+![OpenAI discoveries in three fields shown as a three-legged stool with a round seat and joined legs](https://www.progressiverobot.com/wp-content/smush-webp/2026/10/openai-discoveries-mathematics-computer-science-physics_a-three-legged-wooden-stool.jpg.webp "OpenAI Announces New Discoveries in Mathematics, Computer Science and Physics 6")
+
+## OpenAI Announces New Discoveries in Mathematics, Computer Science and Physics
+
+* October 27, 2026
+* [AI News](https://www.progressiverobot.com/ai-news/)
+
+OpenAI’s announcement, titled [Working with academic communities to build scientific understanding](https://openai.com/index/building-scientific-understanding-with-academic-communities/), opens plainly: “We are announcing three new discoveries in mathematics, computer science, and physics about harmonic analysis, complexity theory, and quantum field theory.”
+
+### The short version
+
+Each of the OpenAI discoveries comes from an unnamed internal model. OpenAI calls the outputs “a form of raw research data” rather than finished papers. For two of the three results, the model’s write-up and a machine-checked Lean proof are already public in the company’s GitHub repository. For the physics result, they are not. OpenAI has not said how the model was built or trained, including whether [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning) on proofs played a part.
+
+The table below sets out the three claims side by side.
+
+| Field | Claimed result | AI output date | Public material |
+| --- | --- | --- | --- |
+| Mathematics | Local smoothing in every dimension, implying Kakeya and restriction results | 18 October 2026 | Paper and Lean proof |
+| Computer science | The Exponential Time Hypothesis is false | 16 October 2026 | Paper and Lean proof |
+| Physics | Existence of four-dimensional QCD and pure Yang–Mills theory | 9 and 18 September 2026 | Withheld by the expert group |
+
+### Where the OpenAI discoveries sit in the wider release
+
+These results follow OpenAI’s 6 October release of 722 mathematics manuscripts, which we covered in [OpenAI Just Posted Hundreds More Results on Major Math Problems](https://www.progressiverobot.com/2026/10/07/openai-math-results-hundreds-more-major-problems/). The repository’s [history file](https://github.com/openai/math/blob/main/history.md) shows that three of those papers were withdrawn on 7 October after a sign error, leaving 719.
+
+The 26 October update adds two manuscripts, taking the catalogue to 721 manuscripts in 373 families. The same update also adds a Lean formalisation of an earlier result, the rational Hodge conjecture for CM abelian varieties, which the blog post itself does not mention.
+
+### Why this batch is different
+
+Earlier releases were document drops, which drew sharp criticism from mathematicians, as we reported in [OpenAI Keeps Bulldozing Mathematicians](https://www.progressiverobot.com/2026/09/28/math-community-openai-keeps-bulldozing-mathematicians/). This time OpenAI says its “release process continues to evolve in response to feedback from the associated academic communities.” The OpenAI discoveries of 26 October are the first to come with named outside experts attached before release.
+
+OpenAI says it “reached out to external experts and asked them to act as shepherds, organizing groups to understand the new results.” Each shepherd picked a different way to handle the material.
+
+### Mathematics: release the raw output
+
+For the local smoothing result, the expert advised OpenAI to “release the AI output, leaving researchers free to organize their own efforts to explain the result.” This copies the approach of the 6 October release, and it makes this the most open of the OpenAI discoveries. Anyone can download the paper and the Lean files today.
+
+### Computer science: an expert group, with everything public
+
+For the Exponential Time Hypothesis, OpenAI formed an external group of collaborators “while making the AI output publicly available for anyone to examine and build on.” The group asked for the raw data to go public immediately, and OpenAI agreed.
+
+### Physics: the expert group controls the release
+
+For the quantum field theory result, the group “decided to hold off on releasing the AI-produced artifacts and instead work on writing it up themselves.” So of the three OpenAI discoveries, this is the only one that outsiders cannot yet read.
+
+| Result | Shepherds | Release strategy |
+| --- | --- | --- |
+| Local smoothing | One unnamed expert, consulted | AI output released as it stands |
+| Exponential Time Hypothesis | Impagliazzo, Paturi, Williams | Group examines; all materials public at once |
+| QCD and Yang–Mills | Gross, Douglas, Jaffe, Klebanov, Nekrasov | Group writes it up; AI material held back |
+
+### The four principles behind the collaborations
+
+OpenAI lists four rules for the outside groups. **Transparency:** participants sign no nondisclosure agreements and can publish freely. **No academic credit:** OpenAI does not seek credit for disco
+
+--- Result 3 ---
+Title: OpenAI announces 3 science discoveries and academic collaboration - Time News
+Link: https://time.news/openai-announces-3-science-discoveries-and-academic-collaboration/
+Age: 1 day ago
+Snippet: OpenAI announced three major scientific discoveries in math, computer science, and physics on October 26, 2026, including <strong>resolving the Kakeya conjecture in all dimensions</strong> and…
+Content:
+OpenAI announced three major [scientific discoveries](https://openai.com/index/building-scientific-understanding-with-academic-communities/) in math, computer science, and physics on October 26, 2026, including resolving the Kakeya conjecture in all dimensions and disproving the Exponential Time Hypothesis (ETH), while collaborating with academic experts to validate results.
+
+## Mathematical Breakthroughs: From Conjectures to Proofs
+
+In computer science, OpenAI claims to have disproven the Exponential Time Hypothesis (ETH), a long-standing assumption about computational complexity. The AI’s natural language disproof of ETH was formalized in Lean on October 17, 2026, and released alongside a public GitHub repository. Syncai.news noted that the company added OpenAI results to GitHub, including Local smoothing for the Euclidean wave equation, which uses an auxiliary par… [Read the full story at The Verge](https://www.theverge.com/).
+
+## New Collaboration Model: Academic “Shepherds” and Open Review
+
+OpenAI adopted a novel approach by involving academic “shepherds” to oversee the interpretation of its findings. These experts, chosen for their expertise, will organize groups to understand and validate the results. For the [computer science and physics discoveries](https://www.hindustantimes.com/world-news/openai-announces-three-major-science-discoveries-in-math-computer-science-and-physics-101793057796185.html), the company recommended releasing raw AI outputs for independent review. Hindustantimes.com noted that the computer science research will be led by a group with UC San Diego’s Russell Impagliazzo and Ramamohan Paturi at the helm. In mathematics, researchers were advised to work through explanations themselves, reflecting a tailored strategy for each field.
+
+![From ai results to scientific understanding](https://images.ctfassets.net/kftzwdyauwt9/5HKwJOTURosg0IoKJA21s8/88eefd210a578266fca1a9d9454daadc/from-ai-results-to-scientific-understanding-social.png?w=1600&h=900&fit=fill "Photo: openai.com")
+
+Photo: openai.com
+
+The initiative aligns with OpenAI’s $5 million contribution to the Simons Foundation, aimed at supporting workshops and programs to help researchers build on AI-generated results.
+
+## Implications for AI-Driven Research
+
+The announcements highlight AI’s growing role in advancing scientific knowledge, particularly in fields where traditional methods face limitations. By engaging academics as “shepherds,” OpenAI aims to bridge the gap between AI-generated research and peer validation. However, questions remain about the long-term impact of AI on scientific collaboration, verification processes, and credit distribution. The company’s approach could set a precedent for future AI-driven discoveries, though its effectiveness will depend on the academic community’s engagement and feedback.
+
+--- Result 4 ---
+Title: OpenAI Claims 3 Science Proofs, Taps Shepherds [2026]
+Link: https://shattered.io/openai-three-science-discoveries-academic-shepherds-2026/
+Age: 1 day ago
+Snippet: The company published a post titled “<strong>Working with academic communities to build scientific understanding</strong>” on October 26, 2026, and The Verge reported it as three big science discoveries plus a new way to work with academics.
+Content:
+OpenAI says its models produced research-level results in three fields at once. The company published a post titled “Working with academic communities to build scientific understanding” on October 26, 2026, and [The Verge reported it](https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics) as three big science discoveries plus a new way to work with academics. The package covers mathematics, computer science, and physics.
+
+1. [What OpenAI Announced on October 26](#what-openai-announced-on-october-26)
+2. [The Mathematics Result: Local Smoothing and Kakeya](#the-mathematics-result-local-smoothing-and-kakeya)
+
+1. [What the Claim Says in Plain Terms](#what-the-claim-says-in-plain-terms)
+2. [Why Harmonic Analysts Will Read It Slowly](#why-harmonic-analysts-will-read-it-slowly)
+
+4. [The Computer-Science Result: Exponential Time Hypothesis Falls](#the-computer-science-result-exponential-time-hypothesis-falls)
+5. [The Physics Claim: Gauge Fields, Fermions, and QCD](#the-physics-claim-gauge-fields-fermions-and-qcd)
+6. [The “Shepherd” Model for Working With Academics](#the-shepherd-model-for-working-with-academics)
+7. [Credit, Independence, and Unpaid Labor](#credit-independence-and-unpaid-labor)
+8. [What Experts Have Said About AI Mathematics](#what-experts-have-said-about-ai-mathematics)
+9. [Verification Is the Real Bottleneck](#verification-is-the-real-bottleneck)
+10. [Market and Industry Impact](#market-and-industry-impact)
+11. [Competitive Comparison: Ways to Publish AI Science](#competitive-comparison-ways-to-publish-ai-science)
+12. [Historical Context: From Four Colors to Lean](#historical-context-from-four-colors-to-lean)
+13. [Five Predictions for the Next Phase](#five-predictions-for-the-next-phase)
+14. [FAQ: OpenAI’s Science Discoveries](#faq-openais-science-discoveries)
+
+1. [What did OpenAI announce on October 26, 2026?](#what-did-openai-announce-on-october-26-2026)
+2. [Did OpenAI really disprove the Exponential Time Hypothesis?](#did-openai-really-disprove-the-exponential-time-hypothesis)
+3. [What does the mathematics result claim?](#what-does-the-mathematics-result-claim)
+4. [Does the physics result solve the Yang-Mills mass gap problem?](#does-the-physics-result-solve-the-yang-mills-mass-gap-problem)
+5. [What is a shepherd in OpenAI’s model?](#what-is-a-shepherd-in-openais-model)
+6. [Are the academics paid, and does OpenAI claim credit?](#are-the-academics-paid-and-does-openai-claim-credit)
+7. [How should readers treat these results right now?](#how-should-readers-treat-these-results-right-now)
+
+Each of these OpenAI science discoveries is a large claim. In mathematics, the company points to a proof about wave equations that it says also settles the Kakeya maximal and dimension conjectures. In computer science, a paper titled “The Exponential Time Hypothesis is false” says a long-standing complexity assumption fails. In physics, OpenAI describes a rigorous existence proof for certain four-dimensional quantum field theories, including Quantum Chromodynamics (QCD).
+
+The caveat sits in the announcement itself. OpenAI describes an effort to help researchers verify, explain, and build on the results, which means broad acceptance has not happened yet. For background on how the company trains its frontier systems, see our report on [OpenAI training frontier AI offline](https://shattered.io/openai-frontier-training-no-internet-offline-world-2026/). This analysis walks through each claim, the new “shepherd” model, and what the release means for the industry.
+
+Google · Preferred Sources
+
+Don't miss new tech stories on Google
+
+Add Shattered once in the Google app and our stories show up in your news suggestions.
+
+[Add now](https://www.google.com/preferences/source?hl=en&q=https%3A%2F%2Fshattered.io%2F)
+
+## What OpenAI Announced on October 26
+
+The post does two jobs. It names three results, and it describes how OpenAI wants outside academics to handle them. Unite.AI summarized the announcement as [OpenAI saying its models produced three proofs](https://www.unite.ai/openai-says-its-models-produced-three-proofs-in-math-cs-and-physics/) across math, computer science, and physics. That framing is accurate, but the proofs arrive as manuscripts that still need human scrutiny.
+
+OpenAI’s own wording sets the tone. The company wrote that, in its view, “these manuscripts are best understood as a form of raw research data.” That sentence tells readers how to treat the papers. They are inputs for experts to test, not finished verdicts.
+
+The table below lines up the three results using only details from the announcement and the reporting on it. Where the sourced material says nothing, the cell says so.
+
+| Detail | Mathematics | Computer science | Physics |
+| --- | --- | --- | --- |
+| Result | Local smoothing for the Euclidean wave equation | The Exponential Time Hypothesis is false | Existence proof for certain interacting quantum field theories |
+| Core claim | Sogge’s local smoothing
+
+--- Result 5 ---
+Title: OpenAI announces three ‘major’ science discoveries in math, computer science and physics | World News
+Link: https://www.hindustantimes.com/world-news/openai-announces-three-major-science-discoveries-in-math-computer-science-and-physics-101793057796185.html
+Age: 1 day ago
+Snippet: OpenAI announced on Monday, October 26, that <strong>it has made three &quot;major&quot; discoveries in physics, mathematics and computer science</strong>.
+Content:
+[OpenAI](https://www.hindustantimes.com/topic/openai) announced on Monday, October 26, that it has made three "major" discoveries in physics, mathematics and computer science.
+
+![A keyboard is placed in front of a displayed OpenAI logo in this illustration taken February 21, 2023. (REUTERS)](https://www.hindustantimes.com/ht-img/img/2026/10/26/400x225/OPENAI-REVENUE--0_1793057767089_ozRu_1793057790955_Rxcp_c8e0795b-de97-4801-8ad5-c76a7d117e49_LoUM.JPG "A keyboard is placed in front of a displayed OpenAI logo in this illustration taken February 21, 2023. (REUTERS)")
+
+A keyboard is placed in front of a displayed OpenAI logo in this illustration taken February 21, 2023. (REUTERS)
+
+[OpenAI said](https://openai.com/index/building-scientific-understanding-with-academic-communities/) they have found the Exponential Time Hypothesis (ETH) in computer science, long believed to be true, is actually false. In mathematics, they claimed to have resolved the Kakeya conjecture and Stein’s restriction conjecture "in all dimensions."
+
+The discovery in Physics has not been fully disclosed but the announcement said that it is a "mathematically rigorous existence proof of certain interacting quantum field theories containing gauge fields and fermions in four dimensions, including Quantum Chromodynamics (QCD) and a unified completion of the Standard Model of particle physics.”
+
+## OpenAI takes a different approach
+
+The company faced criticism for bypassing academic peer review when it released hundreds of manuscripts with solutions to long-standing math problems last month. This time, the company followed a different approach by incorporating academics as "shepherds" to guide the findings.
+
+Also read: [OpenAI expands ChatGPT ads globally and sells GPT-6 Astra models through Google Cloud to enterprise customers](https://www.hindustantimes.com/world-news/us-news/openai-expands-chatgpt-ads-globally-and-sells-gpt-6-astra-models-through-google-cloud-to-enterprise-customers-101792606427495.html)
+
+"To convert this raw research data into scientific understanding, in this release we are experimenting with a new approach," the company said in the announcement. "We reached out to external experts and asked them to act as shepherds, organizing groups to understand the new results."
+
+According to the October 26 announcement, the group of experts they consulted on the discoveries recommended different ways of proceeding with the research. For the [computer science](https://www.hindustantimes.com/topic/computer-science) and [physics](https://www.hindustantimes.com/topic/physics) discoveries, they say they were advised to seek assistance from external experts. For the computer science discovery, the group recommended releasing the raw AI output for researchers to review.
+
+Also read: [OpenAI to sell its top models on Google Cloud's Model Garden in latest enterprise push](https://www.hindustantimes.com/world-news/openai-to-sell-its-top-models-on-google-clouds-model-garden-in-latest-enterprise-push-101792585041273.html)
+
+For the physics problem, "David Gross will lead a group including Michael Douglas, Arthur Jaffe, Igor Klebanov, and Nikita Nekrasov," OpenAI said.
+
+The computer science research will be led by a group with UC San Diego’s Russell Impagliazzo and Ramamohan Paturi at the helm, the company said.
+
+--- Result 6 ---
+Title: Andrew Curran on X: "OpenAI has announced to three new discoveries in mathematics, computer science, and physics: - Local smoothing and the Kakeya conjecture - The Exponential Time Hypothesis is false - Existence of quantum chromodynamics and completions of the Standard Model" / X
+Link: https://x.com/AndrewCurran_/status/2114836071028785289
+Age: 2 days ago
+Snippet: OpenAI has announced to three new discoveries in mathematics, computer science, and physics: - <strong>Local smoothing and the Kakeya conjecture</strong> - The Exponential Time Hypothesis is false - Existence of quantum chromodynamics and completions of the ...
+Content:
+[Andrew Curran](https://x.com/AndrewCurran_)
+
+[@AndrewCurran\_](https://x.com/AndrewCurran_)
+
+OpenAI has announced to three new discoveries in mathematics, computer science, and physics: - Local smoothing and the Kakeya conjecture - The Exponential Time Hypothesis is false - Existence of quantum chromodynamics and completions of the Standard Model
+
+![](https://pbs.twimg.com/media/HVloMu2aYAAYX5k?format=webp&name=large)
+
+[9:46 PM · Oct 26, 2026](https://x.com/AndrewCurran_/status/2114836071028785289)
+
+[
+
+1M
+
+Views
+
+](https://x.com/AndrewCurran_/status/2114836071028785289)
+
+--- Result 7 ---
+Title: OpenAI Says Its Models Produced Three Proofs in Math, CS, and Physics – Unite.AI
+Link: https://www.unite.ai/openai-says-its-models-produced-three-proofs-in-math-cs-and-physics/
+Age: 1 day ago
+Snippet: OpenAI said in an announcement on October 26, 2026, that its internal models produced three research results in mathematics, computer science, and physics, including <strong>a disproof of the Exponential Time Hypothesis</strong>, a longstanding conjecture in ...
+Content:
+OpenAI said in an [announcement](https://openai.com/index/building-scientific-understanding-with-academic-communities/) on October 26, 2026, that its internal models produced three research results in mathematics, computer science, and physics, including a disproof of the Exponential Time Hypothesis, a longstanding conjecture in computational complexity theory.
+
+In the company’s view, the AI-generated manuscripts amount to raw research data that must still be converted into scientific understanding, and it is experimenting with a new release approach toward that end. OpenAI asked external experts to act as shepherds, organizing groups to understand the new results, and said the shepherds advised three different release strategies: release the mathematics AI output directly, with researchers free to organize their own explanatory work; form an external group of collaborators for the computer science result while publishing the AI output for anyone to examine and build on; and form such a group for the physics result while deferring to it on the release of materials. The company said it does not yet know which of the three approaches will prove most useful and invited feedback on what works and what can be improved.
+
+According to the announcement, the collaborations will operate under four principles: transparency, with no nondisclosure agreements and participants free to discuss the work, share work in progress, and publish their conclusions; no academic credit, meaning OpenAI seeks none for discoveries produced by its internal models and that inviting a researcher to steward a collaboration does not imply that the researcher made the original discovery; recognition, under which each group receives credit for the understanding, writeups, and other materials it produces and helps ensure appropriate credit for the researchers, techniques, and ideas the work draws on; and independence, with participation voluntary and unpaid, members’ conclusions their own, and neither the members nor OpenAI speaking for the other. OpenAI said it will turn over materials and artifacts related to the results to the collaborations. The company acknowledged that the approaches involve tradeoffs — the choice of initial shepherds inevitably shapes who becomes involved first and creates an asymmetry of information — and said it welcomes feedback on how to broaden participation.
+
+## Local Smoothing and the Kakeya Conjecture
+
+In 1991, Sogge proposed the local smoothing conjecture, which concerns how waves behave as they become focused and holds that the most extreme focusing can only be short-lived, so that focusing at a typical time is far weaker than at the worst-case time. The announcement described the conjectured phenomenon as fundamental, with wide-ranging implications throughout mathematical analysis; the conjecture implies the Kakeya conjecture and Stein’s restriction conjecture. Guth, Wang, and Zhang proved the conjecture for two spatial dimensions in 2019, and Wang and Zahl settled the three-dimensional Kakeya conjecture in 2025.
+
+OpenAI said its models produced a proof of the local smoothing conjecture in every dimension, relying on an auxiliary partial differential equation of a novel kind, and in doing so also resolved the Kakeya conjecture and Stein’s restriction conjecture in all dimensions. The company obtained the AI output on October 18, 2026, formalized it in Lean the following day, and then contacted an expert to discuss forming a collaboration around the result. Following that expert’s recommendation, OpenAI published both an AI natural-language writeup produced by its models and a Lean proof in its public GitHub repository, the same strategy it used for its October 6, 2026 mathematics release.
+
+## Exponential Time Hypothesis Disproof
+
+The computer science result concerns the Exponential Time Hypothesis, a conjecture about the complexity of determining whether a Boolean formula can be satisfied that is closely tied to the P versus NP problem. The announcement described the hypothesis as widely believed and said it has been used in hundreds of papers to derive hardness results conditional on it across fields including graph theory, computational biology, databases, and computational geometry. OpenAI said its system proved the hypothesis false and that the result was subsequently verified in Lean. The AI produced its natural-language disproof on October 16, 2026, and the result was formalized in Lean on October 17, 2026.
+
+According to the [formalization’s documentation](https://github.com/openai/math/blob/main/lean/docs/378.md), hosted in OpenAI’s public math repository with a latest commit dated October 26, 2026, the Lean proof establishes that for fixed k of at least 2, a deterministic machine exactly counts the satisfying assignments of a canonically encoded k-CNF formula on n variables in subexponential time and polynomial space, with sharper time bounds for instances with m clauses given in the accompanying Octo
+
+--- Result 8 ---
+Title: OpenAI announces three AI research breakthroughs in computer science, physics, and mathematics. | KuCoin
+Link: https://www.kucoin.com/news/flash/openai-announces-three-ai-research-breakthroughs-in-computer-science-physics-and-math
+Age: 5 hours ago
+Snippet: On October 26, OpenAI unveiled three research findings generated by its internal models, covering <strong>computer science, physics, and mathematics</strong>.
+Content:
+_Author: [OpenAI](https://openai.com/zh-Hans-CN/index/building-scientific-understanding-with-academic-communities/)_
+
+_Compiled by: Jiahuan, ChainCatcher_
+
+On October 26, OpenAI unveiled three research findings generated by its internal models, covering computer science, physics, and mathematics.
+
+These results address fundamental questions that have been the subject of long-term research in related disciplines. OpenAI refers to the generated manuscripts as "raw research data" and invites the academic community to further validate, interpret, and conduct follow-up studies.
+
+### **Computer Science: Is ETH Overthrown?**
+
+OpenAI stated that its system demonstrated that the Exponential Time Hypothesis (ETH) is false, a result subsequently verified in Lean.
+
+Here, ETH refers to the Exponential Time Hypothesis in computer science, not Ethereum.
+
+ETH (Exponential Time Hypothesis) is a "pessimistic conjecture" in computer science: for a certain class of logical problems, no matter how algorithms are improved, the worst-case runtime will grow exponentially with problem size, with no true shortcuts.
+
+Thus, the overturning of ETH has reopened the question of how much faster these tasks can become, and may also point the way toward better algorithms. OpenAI also noted that substantial follow-up research is still needed to find such algorithms and translate theoretical advances into practical improvements.
+
+For readers in the crypto space, a more direct question is: Will this affect existing cryptographic systems? The security of many cryptographic schemes relies on the difficulty of solving certain specific computational problems. Professor Ryan Williams from MIT asked OpenAI to assess the potential impact. According to his account, OpenAI has conducted the assessment and is reasonably confident that this result does not imply existing cryptographic systems have been broken.
+
+### **Physics: Laying the Foundation for Quantum Field Theory**
+
+Physicists use quantum field theory to describe the world of particles with extremely accurate predictions, but its mathematical foundation is not rigorous.
+
+OpenAI stated that the model provides rigorous "existence" proofs for pure Yang–Mills theory, quantum chromodynamics (QCD—the theory describing the strong force between quarks and gluons), and a grand unified theory incorporating the Standard Model gauge fields. In simple terms, this means providing a mathematical foundation for theories that have been in use for decades.
+
+Currently, only the Yang–Mills portion has been verified in Lean; the QCD portion has not been mentioned in the announcement. The original AI-generated proof is not yet publicly available, as a group led by Nobel laureate David Gross is first studying it and will draft their own paper, so external parties cannot yet verify it.
+
+### **Mathematics: Wave focusing and the "needle placement" problem**
+
+OpenAI stated that its models have proven the local smoothness conjecture in all dimensions, thereby solving the Kakeya conjecture and the Stein restriction conjecture in all dimensions.
+
+The local smoothing conjecture, proposed by Sogge in 1991, studies the behavior of waves when they focus. A helpful analogy is water waves: several ripples moving toward the same point may momentarily combine to form a very high crest. However, how intense this instant is does not directly reflect the average behavior over the entire time period.
+
+The local smoothing conjecture requires precise mathematical estimates to describe the relationship between these instantaneous extreme behaviors and time averages. Due to its fundamental significance, proving it would also impact other mathematical problems, including the Kakeya conjecture and the Stein restriction conjecture.
+
+The Kakeya conjecture can be understood through the "needle placement" problem: imagine placing many needles of the same length and no thickness in space, such that there is at least one needle in every possible direction. These needles can be translated and overlap with each other. What is the smallest possible size of the set formed by these needles?
+
+The key to measuring "size" here is the mathematical concept of dimension. In three-dimensional space, the Kakeya conjecture holds that such a set must have full three-dimensional measure; in higher-dimensional spaces, it must similarly have the corresponding full dimension. Dimension is a distinct concept from volume, so it should not be simply understood as how many cubic meters these needles occupy.
+
+Previously, the two-dimensional local smoothness (2019) and the three-dimensional Kakeya conjecture (2025, by Wang and Zahl) had been proven separately. OpenAI’s newly announced result extends the proof of the local smoothness conjecture to all dimensions, thereby establishing the corresponding conjectures in all dimensions.
+
+Regarding the above achievements, OpenAI stated that it does not claim academic credit for discoveries made by its internal models; however, co
+
+--- Result 9 ---
+Title: OpenAI announces three ‘major’ scientific discoveries in math, computer science and physics | World News
+Link: https://www.hindustantimes.com/world-news/openai-announces-three-major-science-discoveries-in-math-computer-science-and-physics-101793057796185-amp.html
+Age: 1 day ago
+Snippet: OpenAI announced on Monday, October 26, that <strong>it has made three &quot;major&quot; discoveries in physics, mathematics and computer science</strong>.
+Content:
+[OpenAI](https://www.hindustantimes.com/topic/openai) announced on Monday, October 26, that it has made three "major" discoveries in physics, mathematics and computer science.
+
+[OpenAI said](https://openai.com/index/building-scientific-understanding-with-academic-communities/) they have found the Exponential Time Hypothesis (ETH) in computer science, long believed to be true, is actually false. In mathematics, they claimed to have resolved the Kakeya conjecture and Stein’s restriction conjecture "in all dimensions."
+
+The discovery in Physics has not been fully disclosed but the announcement said that it is a "mathematically rigorous existence proof of certain interacting quantum field theories containing gauge fields and fermions in four dimensions, including Quantum Chromodynamics (QCD) and a unified completion of the Standard Model of particle physics.”
+
+## OpenAI takes a different approach
+
+The company faced criticism for bypassing academic peer review when it released hundreds of manuscripts with solutions to long-standing math problems last month. This time, the company followed a different approach by incorporating academics as "shepherds" to guide the findings.
+
+Also read: [OpenAI expands ChatGPT ads globally and sells GPT-6 Astra models through Google Cloud to enterprise customers](https://www.hindustantimes.com/world-news/us-news/openai-expands-chatgpt-ads-globally-and-sells-gpt-6-astra-models-through-google-cloud-to-enterprise-customers-101792606427495.html)
+
+According to the October 26 announcement, the group of experts they consulted on the discoveries recommended different ways of proceeding with the research. For the [computer science](https://www.hindustantimes.com/topic/computer-science) and [physics](https://www.hindustantimes.com/topic/physics) discoveries, they say they were advised to seek assistance from external experts. For the computer science discovery, the group recommended releasing the raw AI output for researchers to review.
+
+Also read: [OpenAI to sell its top models on Google Cloud's Model Garden in latest enterprise push](https://www.hindustantimes.com/world-news/openai-to-sell-its-top-models-on-google-clouds-model-garden-in-latest-enterprise-push-101792585041273.html)
+
+For the physics problem, "David Gross will lead a group including Michael Douglas, Arthur Jaffe, Igor Klebanov, and Nikita Nekrasov," OpenAI said.
+
+The computer science research will be led by a group with UC San Diego’s Russell Impagliazzo and Ramamohan Paturi at the helm, the company said....Read MoreFollow the latest breaking news, major developments and agenda-setting stories from India and around the world with the newsdesk at Hindustan Times. Operating round the clock, the desk brings together experienced editors, reporters and correspondents to deliver fast, accurate and contextual reporting across subjects that influence public policy, governance, business, society and international affairs. The HT News Desk covers politics, elections, government policies, the economy, business and markets, science and technology, the environment, law and order, infrastructure, education, climate issues and geopolitics, while closely tracking developments across states, institutions and global capitals. The team also leads coverage of major breaking news events, policy announcements, court proceedings, natural disasters, public emergencies and significant international developments. Reports published by the newsdesk are based on information gathered from reporters on the ground, official statements, government agencies, court records, regulatory filings, recognised institutions and other authoritative sources. Stories undergo editorial scrutiny and verification processes to ensure accuracy, fairness and relevance, and are updated as events evolve and additional information becomes available. Whether covering a key political decision in New Delhi, an economic policy shift affecting millions, a landmark court ruling or a major global event, the HT News Desk aims to provide readers with reliable, fact-based journalism that delivers not only the latest developments but also the context and analysis needed to understand their wider implications. Read Less
+
+Get the latest World News, breaking headlines and global updates from the US, UK, Pakistan, Bangladesh, Russia and other countries. Follow major international events on Hindustan Times.
+
+Get the latest World News, breaking headlines and global updates from the US, UK, Pakistan, Bangladesh, Russia and other countries. Follow major international events on Hindustan Times.
+
+See Less
+
+SHARE THIS ARTICLE ON
+
+--- Result 10 ---
+Title: OpenAI announces three big science discoveries and a new way to work | Tech Bytes
+Link: https://techbytes.app/posts/openai-announces-three-big-science-discoveries-and-a-new-way/
+Age: 2 days ago
+Snippet: By Dillip Chowdary • Oct 27, 2026 • Source: The Verge · <strong>OpenAI posted three results it calls major discoveries in mathematics, computer science, and physics</strong>, less than a month after hundreds of manuscripts it said contained solutions to ...
+Content:
+Tech News
+
+On Oct. OpenAI announces three big science discoveries and a new way to work Why it matters for engineering teams What shipped and who is affected.
+
+By [Dillip Chowdary](https://techbytes.app/authors/dillip-chowdary/) • Oct 27, 2026 • Source: [The Verge](https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics)
+
+![OpenAI announces three big science discoveries and a new way to work](https://techbytes.app/assets/thumbnails/post-openai-announces-three-big-science-discoveries-and-a-new-way-og.png)
+
+OpenAI posted three results it calls major discoveries in mathematics, computer science, and physics, less than a month after hundreds of manuscripts it said contained solutions to long-standing mathematics questions. [The Verge's report](https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics) by senior editor Richard Lawler, who joined The Verge in 2021 after several years covering news at Engadget, ran at 11:34 PM UTC on Oct 26, 2026. OpenAI says shepherds will guide the computer science and physics results, and that researchers should explain the math model output themselves.
+
+Mathematicians on Kakeya and restriction, computer scientists who use the Exponential Time Hypothesis, and physicists in four-dimensional quantum field theory are the audience, along with readers tracking early access to an AI result. The report is part of All the drama around AI's takeover of mathematics. Math model output and a computer science Lean proof went on GitHub on Oct 26, 2026. The physics argument did not.
+
+## OpenAI three big science discoveries: the announcement
+
+Local smoothing for the Euclidean wave equation is the math posting. OpenAI says an auxiliary partial differential equation establishes Sogge's local smoothing for waves in every spatial dimension at least two and yields the Kakeya maximal and dimension conjectures and Stein's spherical restriction estimates throughout the interior of the conjectured range. Model output is being released directly, as on October 6. A second description says the model produced a proof of the local smoothing conjecture in every dimension and therefore also the Kakeya conjecture and Stein's restriction conjecture in all dimensions.
+
+The computer science paper is titled The Exponential Time Hypothesis is False. OpenAI says a deterministic algorithm exactly counts satisfying assignments of fixed-width CNF formulas in subexponential time and polynomial space, and that 3-SAT refutes that widely believed hypothesis. The physics result is not released in full. OpenAI calls it a mathematically rigorous existence proof of certain interacting quantum field theories with gauge fields and fermions in four dimensions, including Quantum Chromodynamics and a unified completion of the Standard Model.
+
+## What actually changed with OpenAI three big science discoveries
+
+![OpenAI announces three big science discoveries and a new way to work](https://techbytes.app/images/posts/openai-announces-three-big-science-discoveries-and-a-new-way-inline.jpg)
+
+Illustration · Pexels
+
+Mathematics follows the October 6 pattern of posting model output for researchers to explain. Computer science and physics use shepherds. UC San Diego's Russell Impagliazzo and Ramamohan Paturi, part of the group that proposed the Exponential Time Hypothesis in 1999, will check that result with MIT professor Ryan Williams. On Oct 26, 2026 they released the AI write-up and a Lean proof on GitHub. They asked OpenAI to make the files public immediately so others could inspect them with the group, not after a private first look.
+
+OpenAI admits this approach could have its own issues. The day before, the AGMAI panel of math advisers said "we recommend that AI companies do not adopt" giving certain people the output first, citing unequal access, borrowed reputation, and biased selection. It wants scholarly repositories, Lean-formalized proofs, information on how problems were chosen, funding for people working on understanding the results, and other information. David Gross will lead the physics group: Michael Douglas, Arthur Jaffe, Igor Klebanov, and Nikita Nekrasov.
+
+Tech Pulse Daily
+
+### Get tomorrow's pulse first
+
+Join engineers who read Tech Pulse before stand-up. Free, weekday mornings.
+
+## Who should care about OpenAI three big science discoveries
+
+A few months ago, NYU professor Hong Wang received a Fields Medal from the International Mathematical Union for the Kakeya conjecture in three dimensions. OpenAI's manuscript claims Sogge's local smoothing in every spatial dimension at least two, the Kakeya maximal and dimension conjectures, and Stein's spherical restriction estimates inside the conjectured range. It also says the model resolves the local smoothing conjecture in every dimension and the Kakeya and Stein restriction conjectures in all dimensions. Mathematicians are comparing that broader claim with Wang's three-dimensional result.
+
+Co
+

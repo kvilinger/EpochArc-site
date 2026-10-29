@@ -1,0 +1,114 @@
+{
+  "id": "microsoft-mai-image-27-preview-2026",
+  "slug": "microsoft-mai-image-27-preview-2026",
+  "date": "2026-10-27",
+  "datePrecision": "day",
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Microsoft introduces MAI Image 2.7 editing preview",
+    "zhHans": "Microsoft 推出 MAI Image 2.7 图像编辑预览"
+  },
+  "searchSummary": {
+    "en": "Microsoft announced MAI Image 2.7 as an image-editing preview on October 27; it is distinct from the 2.6 GA announcement.",
+    "zhHans": "Microsoft 于 10 月 27 日宣布 MAI Image 2.7 图像编辑预览；这与 2.6 的 GA 公告是不同版本与阶段。"
+  },
+  "summary": {
+    "en": "Microsoft announced MAI Image 2.7 on October 27 as an image-editing model in preview. A third-party analysis reports no public API, Foundry deployment or price at launch and notes that text-to-image generation was not included. Microsoft also updated separate MAI Image 2.6 and 2.6-Flash general-availability material; that GA status must not be transferred to 2.7. The reported leaderboard position is not treated here as an independent reproduction.",
+    "zhHans": "Microsoft 于 10 月 27 日宣布图像编辑模型 MAI Image 2.7 进入预览。第三方分析称发布时没有公开 API、Foundry 部署或价格，且不含文生图功能。Microsoft 同时更新了 MAI Image 2.6 与 2.6-Flash 的正式可用材料；该 GA 状态不能套用到 2.7。本稿不将其榜单位置视为独立复现结果。"
+  },
+  "narrative": {
+    "en": "The node is limited to the 2.7 editing preview. The access limitations are attributed to an independent third-party analysis; the official Microsoft post itself says only that the model launches in preview. Microsoft-reported leaderboard placements and use-case comparisons are not presented as independently reproduced results. The nearby 2.6/2.6-Flash GA update is a separate version and stage.",
+    "zhHans": "本节点仅记录 2.7 图像编辑预览。可用范围限制归于独立第三方分析；Microsoft 官方稿本身只说明模型以预览形式推出。本稿不把 Microsoft 报告的榜单名次和用例比较说成独立复现结果。同期的 2.6/2.6-Flash GA 更新属于不同版本和阶段。"
+  },
+  "claims": [
+    {
+      "id": "mai27-preview-announcement",
+      "claimType": "fact",
+      "text": {
+        "en": "Microsoft announced MAI Image 2.7 on October 27, 2026 as an image-editing model in preview.",
+        "zhHans": "Microsoft 于 2026 年 10 月 27 日宣布 MAI Image 2.7 图像编辑模型进入预览。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-microsoft-mai27",
+        "fup26-orcarouter-mai27"
+      ]
+    },
+    {
+      "id": "mai27-preview-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "A third-party analysis reports no public API, Foundry deployment or published price at launch and says text-to-image was not included; this does not establish that such access can never be added.",
+        "zhHans": "第三方分析称发布时没有公开 API、Foundry 部署或价格，且不含文生图功能；这不代表未来不会增加这些能力或入口。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "fup26-orcarouter-mai27",
+        "fup26-microsoft-mai27"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "gpt-5-6-broad-launch-2026"
+  ],
+  "displayDate": {
+    "en": "2026-10-27",
+    "zhHans": "2026年10月27日"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "relatedForecasts": [],
+  "sources": [
+    {
+      "sourceId": "fup26-microsoft-mai27",
+      "supports": [
+        "microsoft-mai-image-27-preview-2026",
+        "mai27-preview-announcement",
+        "mai27-preview-limits"
+      ]
+    },
+    {
+      "sourceId": "fup26-orcarouter-mai27",
+      "supports": [
+        "microsoft-mai-image-27-preview-2026",
+        "mai27-preview-announcement",
+        "mai27-preview-limits"
+      ]
+    }
+  ],
+  "editorial": {
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "lastSourceCheckAt": "2026-10-28",
+    "reviewNotes": "Provisional published-state target ONLY. Gemini accepted the factual draft; publishing, first publication date and exact-version human approval have NOT occurred. Refresh this target if the actual publication date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-10-29",
+        "changeType": "created",
+        "summary": "Prepared an unreviewed bilingual candidate draft in the isolated confirmation workspace."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Bound the unmodified factual draft to an independent Gemini 3.8 review and v2.4 provenance; not published."
+      },
+      {
+        "date": "2026-10-29",
+        "changeType": "correction",
+        "summary": "Staged proposed publication metadata for an exact human decision; no publication has occurred."
+      }
+    ],
+    "reviewedAt": "2026-10-29",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a1857f-0007-76c6-bd6d-3e8d653dfdaa",
+    "reviewRecord": "governance/reviews/independent-20261029/microsoft-mai-image-27-preview-2026.json",
+    "publishedAt": "2026-10-29"
+  }
+}

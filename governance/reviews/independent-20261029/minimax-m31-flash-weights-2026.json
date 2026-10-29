@@ -1,0 +1,176 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "minimax-m31-flash-weights-2026",
+  "inputSubjectDigest": "7abfca1471523eb3bc204ca0a0281af7e08c128f3ae3e69ad91d7c4eeb2890a8",
+  "subjectDigest": "a33affd57b16b9db231166e95f764072dc693d274f02de686f4fbfd8af2a7376",
+  "inputsDigest": "00a16a0eafb153c43dccc893d7b3e2cafb08e66f15f0e96939064378024d4aef",
+  "evidenceCutoff": "2026-10-29",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-luna",
+  "reviewedBy": "gemini:01a18581-0869-73f6-b377-3b5c673fb781",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a18581-0869-73f6-b377-3b5c673fb781",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-targeted-confirmation-2026-10-29",
+  "candidateId": "oct28-minimax-m31-flash-weight-stage",
+  "runDigest": "e02a51f899cf76ba190e67022c2352cf3716dd63f5c53fdb3bd893b5fbc8e831",
+  "coreFactClaimIds": [
+    "minimax-m31-weights"
+  ],
+  "identity": {
+    "seriesId": "minimax-m31-flash",
+    "action": "make model weights public",
+    "stage": "available",
+    "dateBasis": "MiniMax X post originally dated October 19 and last edited October 23; HF first full-content commit is corroborating evidence, not proof of first public download",
+    "deduplicationReason": "Distinct weight-availability stage after the October 19 hosted API rollout; do not combine the two dates or imply unrestricted commercial use.",
+    "comparedEventIds": [
+      "glm-52-open-source-2026",
+      "reflection-beam-open-weights-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The dated make model weights public is a product event; scope does not include verified downstream effects."
+  },
+  "significance": {
+    "rationale": "An evidenced dated available milestone qualifies for L1; the evidence does not establish executed independent downstream effects.",
+    "whyNotHigher": "L2-PRODUCT-ACCESS is not satisfied: no supported record of the requisite independent downstream milestone or adoption/replication.",
+    "whyNotLower": "The primary event fact is supported by quoted sources and separated from vendor outcome claims; the candidate is not merely a search result.",
+    "comparisonEventIds": [
+      "glm-52-open-source-2026",
+      "reflection-beam-open-weights-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded available event, not the independently established material_access_change milestone required for L2-PRODUCT-ACCESS. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "The reviewed evidence establishes the bounded available event, not the independently established unaffiliated_production_organizations milestone required for L2-PRODUCT-ACCESS. Unknown is not a claim of impossibility.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "The reviewed announcement/access event is recent; no measured, independently reproduced impact or broad consensus is established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No distinct material dispute was established in the bounded reviewed material; absence in a bounded search is not proof none exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Gemini compared the full English and Simplified Chinese title, summary, narrative and claim text; date, stage, scope and limitations agree. Producer separately checked both languages; this is not a human bilingual sign-off."
+  },
+  "limitations": [
+    "Read-only Gemini review of full retained artifacts in the named Pi session; not an independent live-web reproduction, not human approval, and not publication authorization.",
+    "Search captures are bounded multi-result extractions; they are not direct page fetches or full channel coverage. Direct OpenAI announcement returned HTTP 403; no bypass.",
+    "PublishedAt is omitted for sources without an independently established source-publication date; event date is not substituted for source date.",
+    "Gemini full-review text includes extraneous/overbroad language (e.g. five independent reporting outlets for the OpenAI event); the retained package supports three named news publishers, an interested company repository, and AGMAI’s own statement. Those reviewer embellishments are not adopted as fact.",
+    "A previous review of the pre-fix run is superseded; only the named session accepting the current run digest is cited here.",
+    "Raw independent review: review/gemini3.8-full-r2-1-1-raw.md; SHA-256 53f6a9b243f796565ef90b7f57a3dbf72ec90d5c8a2e7899bcc4c7937756e8d8.",
+    "This published-state wrapper is a provisional proposal; Gemini accepted the unchanged factual draft, not an executed release. The publication date is planned, not historical, until release completes."
+  ],
+  "evidence": [
+    {
+      "id": "minimax-m31-flash-weights-2026-minimax-m31-weights-x-1",
+      "sourceId": "fup26-minimax-m31-x",
+      "claimId": "minimax-m31-weights",
+      "url": "https://x.com/MiniMax_AI/status/2113436864904610008",
+      "originId": "minimax-m31-weights-x-post",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "MiniMax M3.1 Flash weights are now public.",
+      "locator": "Official X post text; post originally dated Oct 19 and last edited at 1:06 AM on Oct 23, 2026",
+      "artifact": "governance/evidence/2026-10-28/direct/minimax-official-x.txt",
+      "sha256": "6d6c0dce982611c854e3cf4d9bfbdcd5b06d4232a9718f631cec063fc54c9164"
+    },
+    {
+      "id": "minimax-m31-flash-weights-2026-minimax-m31-weights-hf-2",
+      "sourceId": "fup26-minimax-m31-hf",
+      "claimId": "minimax-m31-weights",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "originId": "minimax-m31-hf-repository",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "2026-10-23T03:37:20.000Z",
+      "locator": "Hugging Face main-branch commit API, first complete content commit",
+      "artifact": "governance/evidence/2026-10-28/direct/minimax-commits.json",
+      "sha256": "9e803a722c4da48afca61b3535641deed49d58e907c1299397c2c18592248d68"
+    },
+    {
+      "id": "minimax-m31-flash-weights-2026-minimax-m31-weights-blog-3",
+      "sourceId": "fup26-minimax-m31-blog",
+      "claimId": "minimax-m31-weights",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "originId": "minimax-m31-flash-rollout",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we officially roll out\nMiniMax M3.1 Flash",
+      "locator": "MiniMax official first rollout paragraph; article date is 2026-10-19",
+      "artifact": "governance/evidence/2026-10-28/direct/minimax-m31-blog.txt",
+      "sha256": "41ca29e7dfdc2545592db4b001fe5d75ccb27c38316dfdab30b14881a10912bb"
+    },
+    {
+      "id": "minimax-m31-flash-weights-2026-minimax-m31-license-limits-license-4",
+      "sourceId": "fup26-minimax-m31-license",
+      "claimId": "minimax-m31-license-limits",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE",
+      "originId": "minimax-m31-community-license",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "you\nshall\nprominently\ndisplay\n“\nBuilt\nwith MiniMax M3.\n1\n-Flash” on a related website",
+      "locator": "MiniMax Community License, commercial-use attribution condition; source extractor line breaks retained",
+      "artifact": "governance/evidence/2026-10-28/direct/minimax-hf-license.txt",
+      "sha256": "f36e4dc71fa364bed781cc2fe23c3e296ced409ec9dfd01693f6f7ac16934459"
+    },
+    {
+      "id": "minimax-m31-flash-weights-2026-minimax-m31-license-limits-license-5",
+      "sourceId": "fup26-minimax-m31-license",
+      "claimId": "minimax-m31-license-limits",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE",
+      "originId": "minimax-m31-community-license",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "you\nshall\nobtain a separate, prior written authorization from MiniMax",
+      "locator": "MiniMax Community License, annual-revenue threshold condition",
+      "artifact": "governance/evidence/2026-10-28/direct/minimax-hf-license.txt",
+      "sha256": "f36e4dc71fa364bed781cc2fe23c3e296ced409ec9dfd01693f6f7ac16934459"
+    },
+    {
+      "id": "minimax-m31-flash-weights-2026-minimax-m31-license-limits-license-6",
+      "sourceId": "fup26-minimax-m31-license",
+      "claimId": "minimax-m31-license-limits",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE",
+      "originId": "minimax-m31-community-license",
+      "accessedAt": "2026-10-28",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "otherwise, you only need to send a one-time notice to api@minimax.io",
+      "locator": "MiniMax Community License, notice condition below the revenue threshold",
+      "artifact": "governance/evidence/2026-10-28/direct/minimax-hf-license.txt",
+      "sha256": "f36e4dc71fa364bed781cc2fe23c3e296ced409ec9dfd01693f6f7ac16934459"
+    }
+  ]
+}

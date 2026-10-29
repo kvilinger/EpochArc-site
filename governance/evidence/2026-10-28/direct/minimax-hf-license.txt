@@ -1,0 +1,557 @@
+LICENSE · MiniMaxAI/MiniMax-M3.1-Flash at main
+
+Hugging Face
+
+Models
+
+Datasets
+
+Spaces
+
+Buckets
+
+Docs
+
+Enterprise
+
+Pricing
+
+Website
+
+Tasks
+
+HuggingChat
+
+Collections
+
+Languages
+
+Organizations
+
+Community
+
+Blog
+
+Posts
+
+Daily Papers
+
+Hardware
+
+Learn
+
+Discord
+
+Forum
+
+GitHub
+
+Solutions
+
+Team & Enterprise
+
+Hugging Face PRO
+
+Enterprise Support
+
+Inference Providers
+
+Inference Endpoints
+
+Storage Buckets
+
+Log In
+
+Sign Up
+
+MiniMaxAI
+
+/
+
+MiniMax-M3.1-Flash
+
+Like
+433
+
+Follow
+
+MiniMax
+11.6k
+
+Image-Text-to-Text
+
+Transformers
+
+Safetensors
+
+minimax_m3_vl
+
+multimodal
+
+Mixture of Experts
+
+agent
+
+coding
+
+video
+
+conversational
+
+custom_code
+
+Eval Results
+
+8-bit precision
+
+mxfp8
+
+arxiv:
+2606.13392
+
+License:
+minimax-community
+
+Model card
+Files
+Files and versions
+
+xet
+
+Community
+
+11
+
+Deploy
+
+Copy to bucket
+
+Use this model
+
+Instructions to use MiniMaxAI/MiniMax-M3.1-Flash with libraries, inference providers, notebooks, and local apps. Follow these links to get started.
+
+Libraries
+
+Transformers
+
+How to use MiniMaxAI/MiniMax-M3.1-Flash with Transformers:
+
+# Use a pipeline as a high-level helper
+from transformers import pipeline
+
+pipe = pipeline("image-text-to-text", model="MiniMaxAI/MiniMax-M3.1-Flash", trust_remote_code=True)
+messages = [
+ {
+ "role": "user",
+ "content": [
+ {"type": "image", "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/p-blog/candy.JPG"},
+ {"type": "text", "text": "What animal is on the candy?"}
+ ]
+ },
+]
+pipe(text=messages)
+# pip install -U transformers accelerate
+# Load model directly
+from transformers import AutoProcessor, AutoModelForMultimodalLM
+
+processor = AutoProcessor.from_pretrained("MiniMaxAI/MiniMax-M3.1-Flash", trust_remote_code=True)
+model = AutoModelForMultimodalLM.from_pretrained("MiniMaxAI/MiniMax-M3.1-Flash", trust_remote_code=True, device_map="auto")
+messages = [
+ {
+ "role": "user",
+ "content": [
+ {"type": "image", "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/p-blog/candy.JPG"},
+ {"type": "text", "text": "What animal is on the candy?"}
+ ]
+ },
+]
+inputs = processor.apply_chat_template(
+ messages,
+ add_generation_prompt=True,
+ tokenize=True,
+ return_dict=True,
+ return_tensors="pt",
+).to(model.device)
+
+outputs = model.generate(**inputs, max_new_tokens=256)
+print(processor.decode(outputs[0][inputs["input_ids"].shape[-1]:]))
+
+Inference
+
+Inference Providers
+
+HuggingChat
+
+Notebooks
+
+Google Colab
+
+Kaggle
+
+Local Apps
+Settings
+
+vLLM
+
+How to use MiniMaxAI/MiniMax-M3.1-Flash with vLLM:
+
+Install from pip and serve model
+# Install vLLM from pip:
+pip install vllm
+# Start the vLLM server:
+vllm serve "MiniMaxAI/MiniMax-M3.1-Flash"
+# Call the server using curl (OpenAI-compatible API):
+curl -X POST "http://localhost:8000/v1/chat/completions" \
+ -H "Content-Type: application/json" \
+ --data '{
+ "model": "MiniMaxAI/MiniMax-M3.1-Flash",
+ "messages": [
+ {
+ "role": "user",
+ "content": [
+ {
+ "type": "text",
+ "text": "Describe this image in one sentence."
+ },
+ {
+ "type": "image_url",
+ "image_url": {
+ "url": "https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg"
+ }
+ }
+ ]
+ }
+ ]
+ }'
+Use Docker
+docker model run hf.co/MiniMaxAI/MiniMax-M3.1-Flash
+
+SGLang
+
+How to use MiniMaxAI/MiniMax-M3.1-Flash with SGLang:
+
+Install from pip and serve model
+# Install SGLang from pip:
+pip install sglang
+# Start the SGLang server:
+python3 -m sglang.launch_server \
+ --model-path "MiniMaxAI/MiniMax-M3.1-Flash" \
+ --host 0.0.0.0 \
+ --port 30000
+# Call the server using curl (OpenAI-compatible API):
+curl -X POST "http://localhost:30000/v1/chat/completions" \
+ -H "Content-Type: application/json" \
+ --data '{
+ "model": "MiniMaxAI/MiniMax-M3.1-Flash",
+ "messages": [
+ {
+ "role": "user",
+ "content": [
+ {
+ "type": "text",
+ "text": "Describe this image in one sentence."
+ },
+ {
+ "type": "image_url",
+ "image_url": {
+ "url": "https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg"
+ }
+ }
+ ]
+ }
+ ]
+ }'
+Use Docker images
+docker run --gpus all \
+ --shm-size 32g \
+ -p 30000:30000 \
+ -v ~/.cache/huggingface:/root/.cache/huggingface \
+ --env "HF_TOKEN=<secret>" \
+ --ipc=host \
+ lmsysorg/sglang:latest \
+ python3 -m sglang.launch_server \
+ --model-path "MiniMaxAI/MiniMax-M3.1-Flash" \
+ --host 0.0.0.0 \
+ --port 30000
+# Call the server using curl (OpenAI-compatible API):
+curl -X POST "http://localhost:30000/v1/chat/completions" \
+ -H "Content-Type: application/json" \
+ --data '{
+ "model": "MiniMaxAI/MiniMax-M3.1-Flash",
+ "messages": [
+ {
+ "role": "user",
+ "content": [
+ {
+ "type": "text",
+ "text": "Describe this image in one sentence."
+ },
+ {
+ "type": "image_url",
+ "image_url": {
+ "url": "https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg"
+ }
+ }
+ ]
+ }
+ ]
+ }'
+
+Docker Model Runner
+
+How to use MiniMaxAI/MiniMax-M3.1-Flash with Docker Model Runner:
+
+docker model run hf.co/MiniMaxAI/MiniMax-M3.1-Flash
+
+main
+
+MiniMax-M3.1-Flash
+/
+LICENSE
+
+mmcase
+
+ryanlee-dev
+
+Xuebi
+
+rogeryoungh
+
+Init MiniMaxAI/MiniMax-M3.1-Flash
+
+54e4e69
+5 days ago
+
+Download
+
+Download LICENSE from MiniMaxAI/MiniMax-M3.1-Flash: direct link, hf CLI and curl.
+
+Browser
+
+Download file
+3.36 kB
+
+Copy download link
+https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/resolve/main/LICENSE
+
+Command line
+
+Copy hf CLI command
+hf download hf://MiniMaxAI/MiniMax-M3.1-Flash/LICENSE
+
+Copy curl command
+curl -L -o LICENSE https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/resolve/main/LICENSE
+
+Raw
+History
+Blame
+Contribute
+Delete
+
+Safe
+
+3.36 kB
+
+MINIMAX COMMUNITY LICENSE
+
+Copyright (c)
+2026
+MiniMax
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+and
+associated documentation files (the “Software”), to deal in the Software for non-commercial purposes, including without limitation the rights to use, copy, modify, merge, publish,
+distribute,
+sublicense,
+and/or
+provide copies of the Software,
+and
+to permit persons to whom the Software is furnished to do so,
+subject
+to the following conditions:
+
+1
+. The above copyright notice
+and
+this permission notice
+shall
+be
+included in all copies
+or
+substantial
+portions of the Software.
+
+2
+. If the Software (
+or
+any derivative works thereof) is used for any Commercial Use for your products
+or
+services:
+
+1
+. you
+shall
+prominently
+display
+“
+Built
+with MiniMax M3.
+1
+-Flash” on a related website, user interface,
+blogpost,
+about page
+or
+product documentation.
+
+2
+. you
+shall
+obtain a separate, prior written authorization from MiniMax
+by
+contacting api@minimax.io with the
+subject
+line “M3.
+1
+-Flash licensing - authorization request”, if such products
+and
+services generate more than
+20
+million US dollars (
+or
+equivalent in other currencies) in yearly revenue
+; otherwise, you only need to send a one-time notice to api@minimax.io with the subject “M3.1-Flash licensing — notice”.
+
+3
+. “Commercial Use” means any use of the Software
+or
+any derivative work thereof that is primarily intended for commercial advantage
+or
+monetary compensation, which includes, without limitation: (i) offering products
+or
+services to third parties for a fee, which utilize, incorporate,
+or
+rely on the Software
+or
+its derivatives, (ii) the commercial use of APIs provided
+by
+or
+for the Software
+or
+its derivatives, including to support
+or
+enable commercial products, services,
+or
+operations, whether in a
+cloud-based,
+hosted,
+or
+other similar environment,
+and
+(iii) the deployment
+or
+provision of the Software
+or
+its derivatives that have
+been
+subjected
+to post-training, fine-tuning,
+instruction-tuning,
+or
+any other form of modification, for any commercial purpose.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR
+IMPLIED, INCLUDING
+BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+AND
+NONINFRINGEMENT. IN NO EVENT
+SHALL
+THE AUTHORS
+OR
+COPYRIGHT HOLDERS
+BE
+LIABLE FOR ANY CLAIM, DAMAGES
+OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+OR
+OTHERWISE, ARISING FROM, OUT OF
+OR
+IN CONNECTION WITH THE SOFTWARE
+OR
+THE USE
+OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+Appendix:
+Prohibited Uses
+
+You agree you will not use,
+or
+allow others to use, the Software
+or
+any derivatives of the Software to:
+
+1
+. Generate
+or
+disseminate
+content prohibited
+by
+applicable laws
+or
+regulations.
+
+2
+. Assist with, engage in
+or
+otherwise support any military purpose.
+
+3
+. Exploit, harm,
+or
+attempt to exploit
+or
+harm minors.
+
+4
+. Generate
+or
+disseminate
+false
+or
+misleading information with the intent to
+cause
+harm.
+
+5
+. Promote
+discrimination,
+hate speech,
+or
+harmful
+behavior
+against individuals
+or
+groups
+based
+on race
+or
+ethnic
+origin,
+religion,
+disability,
+age, nationality
+and
+national
+origin,
+veteran status, sexual
+orientation,
+gender
+or
+gender identity, caste, immigration status,
+or
+any other characteristic that is associated with systemic
+discrimination
+or
+marginalization.

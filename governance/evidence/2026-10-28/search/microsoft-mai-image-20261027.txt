@@ -1,0 +1,244 @@
+--- Result 1 ---
+Title: Microsoft MAI Image 2.7 Preview: AI Image Editing Gains and Benchmark Limits
+Link: https://windowsforum.com/news/microsoft-mai-image-2-7-preview-ai-image-editing-gains-and-benchmark-limits.450215/
+Age: 7 hours ago
+Snippet: Microsoft AI’s MAI Image 2.7 enters preview: <strong>Smarter AI edits, sharper images, and a direct challenge to rivals Business Upturn</strong> · 2026-10-27T16:06:56.192000+00:00 · MAI Image 2.7 debuts above GPT Image 2.5 Flare on Artificial Analysis and ...
+Content:
+(HTTP 403)
+
+--- Result 2 ---
+Title: MAI-Image-2.7-Preview: Six Elo From No. 1, No API Yet
+Link: https://www.orcarouter.ai/blog/mai-image-2-7-preview-takes-no-2-on-aa-image-editing
+Age: 19 hours ago
+Snippet: 2 on the AA-Image-Editing v2.1 ... strange part. The strange part is everything Microsoft did not ship with it: <strong>no Microsoft Foundry deployment</strong>, no published price, and no text-to-image mode....
+Content:
+Six Elo is all that separates Microsoft's newest image editor from the best one [OpenAI](https://www.orcarouter.ai/models/openai/gpt-6-luna) sells. On October 27, 2026, Microsoft released **MAI-Image-2.7-Preview**, which debuts at No. 2 on the AA-Image-Editing v2.1 leaderboard with 1,193 points against 1,199 for [**GPT Image 2.5 Sunburst**](https://www.orcarouter.ai/models/gpt-image-2.5-sunburst) **(max)** — ahead of [GPT Image 2.5 Flare](https://www.orcarouter.ai/models/gpt-image-2.5-flare) (max) at 1,182, and 42 points clear of Microsoft's own **MAI-Image-2.6**. The score is not the strange part. The strange part is everything Microsoft did not ship with it: no Microsoft Foundry deployment, no published price, and no text-to-image mode.
+
+That combination makes "Preview" the most important word in the model name. Microsoft has a model that independent human voting places within noise of the category leader, and the only ways to touch it are MAI Playground, the Arena Edit board, and Artificial Analysis. For a company that put MAI-Image-2.6 into Foundry with a rate card six weeks earlier, shipping the successor as a playground demo is a deliberate sequencing choice — and it changes what the ranking actually means for anyone building something.
+
+## What the board says, precisely
+
+The numbers below are from Microsoft's launch post, which reproduces the Artificial Analysis AA-Image-Editing v2.1 board; the evaluation snapshot is dated October 22, 2026. Artificial Analysis is an independent evaluator, but the figures here reach us through Microsoft's chart, and we have not re-run the board ourselves. Treat the ordering as the signal and the exact gaps as provisional.
+
+• **GPT Image 2.5 Sunburst (max)** — 1,199 Elo, No. 1
+
+• **MAI-Image-2.7-Preview** — 1,193 Elo, No. 2
+
+• **GPT Image 2.5 Flare (max)** — 1,182 Elo, No. 3
+
+• **MAI-Image-2.6** — 1,151 Elo, tied with Krea 3 (Ultra) and Nano Banana 2.1
+
+• **MAI-Image-2.6-Flash** — 1,144 Elo
+
+• [**GPT Image 2**](https://www.orcarouter.ai/models/gpt-image-2) **(high)** — 1,136 Elo
+
+![Eight-row AA-Image-Editing v2.1 scoreboard: GPT Image 2.5 Sunburst (max) 1,199, MAI-Image-2.7-Preview 1,193, GPT Image 2.5 Flare (max) 1,182, then MAI-Image-2.6, Krea 3 (Ultra) and Nano Banana 2.1 tied at 1,151, MAI-Image-2.6-Flash 1,144 and GPT Image 2 (high) 1,136; the footer says the scores are per Artificial Analysis v2.1, evaluated October 22 2026 and reproduced in Microsoft's launch post.](https://cms.orcarouter.ai/api/media/file/2-2742.png)
+
+Two things about that list are easy to misread. First, 2.7 is not merely Microsoft's best editing model; it is the only non-OpenAI model within eleven points of the top, and it sits between OpenAI's two 2.5 variants. Second, MAI-Image-2.6 looks like it regressed. It did not. Artificial Analysis rebuilt the editing board as v2.1, and scores from the older board — where Microsoft's September post put 2.6 at No. 1 — cannot be subtracted from these. Within v2.1, 2.6 is a 1,151 model and 2.7 is a 1,193 model. That is the only comparison the numbers support.
+
+On Arena, the other independent board, Microsoft reports 2.7 at No. 3 on Arena Edit, which it says makes Microsoft AI the No. 2 lab on that board. Arena and Artificial Analysis use different vote pools and different scales, so the No. 2 and No. 3 are not a contradiction — and neither should be converted into the other.
+
+## Where the 42 points came from
+
+Microsoft's claim is specific: MAI-Image-2.7 improves on MAI-Image-2.6 across all 10 use cases and all 7 editing actions that Artificial Analysis evaluates. It says the model reaches the category frontier in enhancement and restoration, reasoning-based edits, scene and style, and text or symbol editing, with its widest margin in scene and style — 24 Elo ahead of the next-best model there.
+
+The category-rank movement is the more concrete version of the same claim. Reasoning-based edits went from No. 7 to No. 1, scene and style from No. 7 to No. 1, and text or symbol edits from No. 6 to No. 1. Those are large jumps for a single version step, and they line up with the use cases Microsoft names in its own examples: restyling or relighting a whole scene, changing text and symbols while keeping them integrated, and restoring existing assets.
+
+The caveat is structural. Category scores are cuts of the same preference data that produces the overall Elo, not seven additional independent experiments. If 2.7 wins overall, it will usually win most of the cuts. The informative part is the shape — a model that was mid-table on reasoning and text edits now leading them — not the individual rank deltas. And every capability statement in this section is Microsoft's characterization of an Artificial Analysis evaluation, which is a stronger form of evidence than a vendor benchmark but still not a controlled third-party reproduction of Microsoft's workflow claims.
+
+## A launch with the commercial half missing
+
+MAI-Image-2.7-Preview is available today in MAI Playground, 
+
+--- Result 3 ---
+Title: MAI-Image-2.7 vs MAI-Image-2.6: +42 Elo, No Generation
+Link: https://www.orcarouter.ai/blog/mai-image-2-7-preview-vs-mai-image-2-6-preview
+Age: 19 hours ago
+Snippet: MAI-Image-2.7-Preview is a clearly ... text at all. Microsoft shipped 2.7 on October 27, 2026 as an <strong>editing-only preview and put text-to-image on a &quot;coming soon&quot; list</strong>....
+Content:
+A 42-point Elo gain usually earns a migration. Here it earns a test. **MAI-Image-2.7-Preview** is a clearly better editor than **MAI-Image-2.6-Preview** — the gap is wide enough to change which edits you trust the model with — but it is not a drop-in replacement, because the newer model does not generate images from text at all. Microsoft shipped 2.7 on October 27, 2026 as an editing-only preview and put text-to-image on a "coming soon" list. Anyone with a pipeline that calls one model to both generate and edit is therefore looking at an upgrade that covers half their workload.
+
+That makes this comparison less about which number is larger and more about which model fits which job. The two models share a family, a research team and a scoring board. They do not share a feature set, an access path, or a price.
+
+## Same ruler, 42 points apart
+
+On Artificial Analysis's AA-Image-Editing v2.1 board, evaluated October 22, 2026, MAI-Image-2.7-Preview scores 1,193 Elo and sits second overall. MAI-Image-2.6-Preview scores 1,151 and sits in a three-way tie with Krea 3 (Ultra) and Nano Banana 2.1; its faster sibling, MAI-Image-2.6-Flash, scores 1,144. The 42-point gap between the two Microsoft models is the number Microsoft leads with, and on this board it is a clean, like-for-like comparison: same evaluation version, same voters, same snapshot.
+
+Two context notes keep that number honest. First, these figures come from Microsoft's launch post reproducing the Artificial Analysis board; the board is independent, the reproduction is not, and we have not re-run it. Second, do not compare either score to anything published before the v2.1 rebuild. Microsoft's September release put MAI-Image-2.6 at No. 1 on the editing board of that era, and it would be easy — and wrong — to read the current 1,151 as a regression. The board changed. Within v2.1, 2.6 is a 1,151 model.
+
+![Screenshot of the Artificial Analysis AA-Image-Editing v2.1 leaderboard: MAI-Image-2.7-Preview second at 1,193 Elo with 4,891 samples and 'No API available', followed by MAI-Image-2.6 at 1,151 with $38.9 per 1,000 images and MAI-Image-2.6-Flash at 1,144 with $19.5 per 1,000 images; GPT Image 2.5 Sunburst (max) leads at 1,199.](https://cms.orcarouter.ai/api/media/file/2-2743.png)
+
+## The three categories that flipped
+
+Microsoft says 2.7 improves on 2.6 across all 10 use cases and all 7 editing actions Artificial Analysis evaluates. The headline is the category ranking: reasoning-based edits moved from No. 7 to No. 1, scene and style from No. 7 to No. 1, and text or symbol edits from No. 6 to No. 1. Microsoft also claims the category frontier in enhancement and restoration, and says its widest lead is scene and style, 24 Elo ahead of the next-best model.
+
+For a 2.6 user, the rank flips are more informative than the overall gap. A model that was seventh at reasoning-based edits was, in practice, a model you did not trust with an instruction like "move the product to a marble counter and match the window light." A model that is first is one you can put in front of that job. The same applies to text and symbol replacement, which is the least forgiving edit in commercial imagery: a label that warps or a logo that changes weight is an instant reject, regardless of how good the rest of the frame looks.
+
+The usual caveat applies: category scores are cuts of the same preference data, not independent experiments. But the direction is consistent with the overall score, and it is consistent with the examples Microsoft chose to show — restyling and relighting whole scenes, changing text and symbols in place, restoring existing assets. Those are the edits where a generation-first model tends to struggle, and where an editing-first model can specialize.
+
+## The missing mode is the whole ballgame for some pipelines
+
+MAI-Image-2.6-Preview is a unified model: text-to-image and image-to-image edits through the same deployment, with multi-image reference editing, web grounding and model-chosen aspect ratios. MAI-Image-2.7-Preview does edits. Microsoft's post is explicit that generation is "coming soon," and the model's own launch examples are all transformations of an existing image.
+
+That single difference decides the comparison for a large class of users. If your workflow starts from a prompt — a campaign concept, a product visual, a blog hero — 2.7 has nothing to offer you today. If your workflow starts from an asset — a client's photo, a scan, a packaging mock — 2.7 is the better tool and 2.6's generation capability is irrelevant. The version number implies a superset. The product is a specialization.
+
+It also changes what "upgrade" means for a team. Moving from 2.6 to 2.7 is not a model swap; it is a split. Generation stays on 2.6, editing moves to 2.7, and the two paths now have different availability, different limits and, eventually, different prices. That is a more expensive architecture than one model behind one endpoint, and it is worth doing only if the editing gain is
+
+--- Result 4 ---
+Title: MAI-Image-2.7-Preview: No. 2 in Image Editing? Checked | explainx.ai Blog | explainx.ai
+Link: https://explainx.ai/blog/microsoft-mai-image-2-7-preview-image-editing-no-2-artificial-analysis-gpt-image-2-5-sunburst-claimed-vs-verified-2026
+Age: 1 day ago
+Snippet: MAI-Image-2.6 and 2.6-Flash (September 2026): a speed-and-cost tier; Microsoft&#x27;s post title for 2.6 says it launched at No. 2 on Arena. Covered in our 2.6 Flash post. MAI-Image-2.7-Preview (October 27, 2026): <strong>edit-only preview, claimed No.</strong>
+Content:
+[![](https://explainx.ai/logos/explainx-ai-logo/explainx-logo-light-mode.webp)![](https://explainx.ai/logos/explainx-ai-logo/explainx-logo-dark-mode.webp)explainx.ai](https://explainx.ai/)
+
+Upskill in AI — 16 free pathways, live workshops & bootcamps, and 50+ courses from practitioners. Plus the skills, tools, and MCP servers to practice on.
+
+--- Result 5 ---
+Title: MAI Image 2.7 debuts above GPT Image 2.5 Flare on Artificial Analysis and #3 on Arena | Microsoft AI
+Link: https://microsoft.ai/news/mai-image-2-7-debut/
+Age: 18 hours ago
+Snippet: October 27, 2026 · Models · LI · X · FB · MAI Image 2.7, our latest image editing model, <strong>launches with even stronger control for edits that are hardest to get right</strong>. It launches in preview at No.
+Content:
+Models
+
+October 27, 2026
+
+Models
+
+![Blurry, light-colored flowers against a blue sky.](https://microsoft.ai/wp-content/uploads/2026/10/cosmos_flowers_blue_sky.webp)
+
+MAI Image 2.7, our latest image editing model, launches with even stronger control for edits that are hardest to get right. It launches in preview at No. 3 on [Arena Edit](https://arena.ai/leaderboard/image/text-to-image), making Microsoft AI the No. 2 lab, and No. 2 on Artificial Analysis’s [image editing leaderboard](https://artificialanalysis.ai/?category=image#image-editing).
+
+Restyle or relight an entire scene, change text and symbols while keeping them integrated into the image, or restore and enhance existing assets. And make edits that require understanding how objects, lighting, and environments should work together.
+
+## **Advancing across editing use cases**
+
+Great image editing comes down to control over the details that matter. Like moving a product into a new setting. Shifting the lighting and mood. Reworking individual objects without losing the bigger picture.
+
+MAI-Image-2.7 improves on 2.6 across all 10 use cases and all 7 editing actions evaluated by Artificial Analysis. It reaches the category frontier in enhancement and restoration, reasoning-based edits, scene and style, and text or symbol editing. Its strongest lead is in scene and style, where it scores 24 Elo ahead of the next-best model.
+
+For creators, that means more freedom to restyle a scene, fine-tune an asset, or bring a complex creative brief to life. It’s another step toward making powerful image editing more practical for everyday creative work.
+
+## Related Stories
+
+--- Result 6 ---
+Title: Microsoft's MAI-Image-2.6 & MAI-Image-2.6-Flash Models Hit General Availability in Microsoft Foundry
+Link: https://windowsreport.com/microsofts-mai-image-2-6-mai-image-2-6-flash-models-hit-general-availability-in-microsoft-foundry/
+Age: 18 hours ago
+Snippet: Published on October 27, 2026 · Image credit: Microsoft · <strong>Microsoft has officially made MAI-Image-2.6 and MAI-Image-2.6-Flash generally available in Microsoft Foundry</strong>. The new models focus on precise editing, consistent visuals, and faster ...
+Content:
+(HTTP 403)
+
+--- Result 7 ---
+Title: MAI Image 2.6 launches at No. 2 on Arena ahead of Google, Meta and xAI | Microsoft AI
+Link: https://microsoft.ai/news/mai-image-2-6-launches-at-no-2-on-arena-ahead-of-google-meta-and-xai/
+Age: 19 hours ago
+Snippet: Updated as of October 27th, 2026 · <strong>MAI Image 2.6 and MAI Image 2.6 Flash are now generally available in Microsoft Foundry. Learn more about the launch here. Today, we’re announcing MAI Image 2.6 – ranked second on the Arena text-to-image leaderboard</strong>...
+Content:
+Models
+
+October 27, 2026
+
+Models
+
+Updated as of October 27th, 2026
+
+![A large number 2 with a hashtag, filled with small photos of nature, animals, and people, overlaid on faded text about rendering, imaging, modeling, and art.](https://microsoft.ai/wp-content/uploads/2026/08/No2_1_1.webp)
+
+Today, we’re announcing MAI Image 2.6 – ranked second on the [Arena text-to-image leaderboard.](https://arena.ai/leaderboard/text-to-image)
+
+It’s another significant climb for the MAI Image family, improving +79 Elo over MAI Image 2.5 overall, with gains across every Arena text-to-image category. Text rendering alone improves by +91 Elo.
+
+This result firmly establishes MAI Image ahead of leading models from Meta, Google and xAI.
+
+## **Another step up in quality**
+
+With every MAI Image release, we’re focused on moving the quality frontier forward.
+
+MAI Image 1 gave us the foundation. MAI Image 2 made a major jump in photorealism, text and creative range. MAI Image 2.5 pushed further into professional-grade imagery and editing.
+
+MAI Image 2.6 continues that climb with broad gains across different categories that we know our users care about most:
+
+* Stronger text rendering
+* Better portraits and 3D imagery
+* More polished commercial and photorealistic outputs, with stronger results across product, branding and cinematic use cases
+
+In the Arena evaluations, MAI Image 2.6 significantly improves on 2.5 in every measured category.
+
+And there’s more to 2.6 – from working across multiple references and richer grounding to greater control over reasoning, format and resolution. We’ll share more on that soon.
+
+## **More to come**
+
+MAI Image 2.6 is another step in building our hill-climbing machine for image generation: continuously improving quality, expanding capability, and turning those gains into models that are more useful for real creative work.
+
+**Try MAI Image 2.6 for text-to-image today on [**Arena.**](https://arena.ai/image/direct) **Coming later this week to MAI Playground, and rolling out soon across Microsoft Foundry and other products.****
+
+## Build the Future With Us
+
+We’re a lean, talent-dense team of explorers, researchers, and full-stack engineers. We move fast, sweat the details, and operate at frontier scale with a roadmap to build the world’s most powerful AI models. Most importantly, we’re united by the belief that doing this right is the only way to do it at all. If our mission resonates with you, we’d love to talk.
+
+[Explore all jobs](https://microsoft.ai/careers)
+
+## Related Stories
+
+--- Result 8 ---
+Title: Microsoft announces MAI Image 2.7 editing preview, with text-to-image still to come | OpenTools
+Link: https://opentools.ai/news/microsoft-mai-image-2-7-editing-preview-playground-link-text-to-image
+Age: 15 hours ago
+Snippet: Its October 27 post <strong>describes requests that change an existing asset: restyling or relighting a scene, changing text or symbols within an image, and restoring or enhancing material</strong>.
+Content:
+![Partwright 1.10 adds AI plan cards and a read-only planning fix for 3D modelling](https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/editorial-news-a0babd2e5ae4d942ef44ccdef190cf28fb1d2f43ad733f13ea70600252c754aa/Toolpage)
+
+Oct 27, 2026
+
+### Partwright 1.10 adds AI plan cards and a read-only planning fix for 3D modelling
+
+The browser CAD tool adds cards for answering questions and approving AI plans. Its developer also reports that plan mode no longer changes the model, while output validation remains a separate task.
+
+PartwrightAI modellingCAD
+
+![GPT-6.1 Terra reaches the API, with tool calling reserved for Responses](https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/editorial-news-6cac057a230ca999de14c792c4106ccf77a0baac1512e67e54171c5a0aa26c23/Toolpage)
+
+Oct 26, 2026
+
+### GPT-6.1 Terra reaches the API, with tool calling reserved for Responses
+
+OpenAI’s October 26 release accepts text and images and returns text. Its reference separates Responses tool access, reasoning settings, token limits and pricing modifiers.
+
+OpenAIGPT-6.1 TerraResponses API
+
+![China’s draft AI export controls cover agents and giant models — what the proposal does](https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/editorial-news-4c1dcc4466256d6663e002a39af632164972a7d5e71da23acec0b47d599b4e73/Toolpage)
+
+Oct 19, 2026
+
+### China’s draft AI export controls cover agents and giant models — what the proposal does
+
+China is consulting on export bans and restrictions spanning 40 technologies, including 23 AI entries. The draft could affect sensitive-data models, high-capability systems and agents, but it is not yet a final blanket ban.
+
+ChinaAI policyexport controls
+
+--- Result 9 ---
+Title: Microsoft Opens MAI Image 2.7 Editing Preview
+Link: https://techtrendsnewsupdate.substack.com/p/microsoft-opens-mai-image-27-editing
+Age: 7 hours ago
+Snippet: <strong>The model is aimed at changes that can disrupt an existing picture, including relighting a scene, moving objects, altering text and restoring assets</strong>. Microsoft says it can be tried through MAI Playground, Arena and Artificial Analysis.
+Content:
+(Error: The operation was aborted due to timeout)
+
+--- Result 10 ---
+Title: Superpowerdaily
+Link: https://superpowerdaily.com/posts/microsoft-moves-its-mai-image-models-out-of-preview-in-foundry-with-two-price-tiers
+Age: 14 hours ago
+Snippet: As of October 27, 2026, <strong>Microsoft Foundry users can access MAI-Image-2.6 and MAI-Image-2.6-Flash beyond preview</strong>, with a choice between polished, complex image work and lower-cost iteration.
+Content:
+[Superpower Daily](https://superpowerdaily.com/)
+
+The daily AI market read for people tracking models, products, startups, policy, tools, business, and culture.
+
+Join 350k readers
+
+Newsletter frequency
+
+DailyThe essential AI briefing every weekday morning.WeeklyThe Monday briefing, once a week.
+

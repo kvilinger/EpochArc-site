@@ -1,0 +1,777 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-targeted-confirmation-2026-10-29",
+  "kind": "targeted",
+  "windowStart": "2026-10-21",
+  "windowEnd": "2026-10-28",
+  "evidenceCutoff": "2026-10-29",
+  "timezone": "UTC",
+  "baselineCommit": "0c826e86d60992665b03bbdf5b93ab47b705f474",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "promptVersion": "20261029-confirmation-l1-v1",
+  "scopeReason": "Targeted four-layer confirmation for eight dated candidates in the 2026-10-21..28 freshness window, plus bounded counterevidence and realized-impact searches. This run does not replace the full run or claim complete channel coverage.",
+  "channels": [
+    {
+      "id": "targeted-web-confirmation",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Nineteen bounded Brave search outputs and retained source captures for eight selected candidates; platform Reddit/X, HN and HF archive coverage is not certified by this targeted run.",
+      "reason": "Search ranking/content extraction is discovery and source retrieval, not full platform coverage or exhaustive discovery; some official endpoints were blocked or failed TLS.",
+      "retryResult": "All 19 targeted searches were attempted and retained. The OpenAI announcement direct GET returned 403; DeepMind/Google Cloud/Oracle/NVIDIA direct requests or browser navigation failed or returned a placeholder. Available full-text extractions and accessible independent reports were used only within their stated limits; no bypass was attempted.",
+      "attempts": [
+        {
+          "query": "Claude Duet Anthropic research preview October 21 2026 limitations safety criticism independent use",
+          "executedAt": "2026-10-29T00:44:30Z",
+          "artifact": "governance/evidence/2026-10-29/search/claude-duet-counterevidence.txt",
+          "sha256": "631f56bb8907412940f27fbe7f0514cce724c6f9097749247dee13f03a0e76e2",
+          "resultCount": 5
+        },
+        {
+          "query": "MiniMax M3.1 Flash October 23 2026 public weights license independent evaluation benchmark assessment",
+          "executedAt": "2026-10-29T00:44:30Z",
+          "artifact": "governance/evidence/2026-10-29/search/minimax-m31-independence.txt",
+          "sha256": "37dc9ff55a7f8ab745b8f5bef2a82261ee7accd31257a88e5f7592f75136730e",
+          "resultCount": 5
+        },
+        {
+          "query": "Kimi K3.1 Pro October 23 October 24 2026 announcement date API hosted weights November 4 independent coverage",
+          "executedAt": "2026-10-29T00:44:30Z",
+          "artifact": "governance/evidence/2026-10-29/search/kimi-k31-date-independence.txt",
+          "sha256": "b7be6e03d8502ad6f587aea3b080f2676be512b9dbda698ab7486d18a21b16c6",
+          "resultCount": 5
+        },
+        {
+          "query": "OpenAI October 26 2026 scientific results raw research data AGMAI criticism independent mathematical verification",
+          "executedAt": "2026-10-29T00:44:30Z",
+          "artifact": "governance/evidence/2026-10-29/search/openai-science-criticism.txt",
+          "sha256": "8697030a0aabd4e961c593eeed11265db1c42ea139f056268edb59d318c4ee02",
+          "resultCount": 5
+        },
+        {
+          "query": "Google DeepMind Genie 4 October 27 2026 research preview limitations independent evaluation testing",
+          "executedAt": "2026-10-29T00:44:30Z",
+          "artifact": "governance/evidence/2026-10-29/search/genie4-independent-limits.txt",
+          "sha256": "a67f7ad60a9252e4ccc4ccc42ff7f864f5b5920b3f3b082bb196c012d950b4c3",
+          "resultCount": 5
+        },
+        {
+          "query": "Google Oracle Google TPU OCI October 27 2026 partnership 2027 deployment pricing capacity independent analysis",
+          "executedAt": "2026-10-29T00:44:30Z",
+          "artifact": "governance/evidence/2026-10-29/search/google-oracle-tpu-conditions.txt",
+          "sha256": "53a77b39b9bbfec9cbffab4de392a22f27975269c278524cdab3a33ead52884e",
+          "resultCount": 5
+        },
+        {
+          "query": "Microsoft MAI Image 2.7 October 27 2026 preview independent benchmark ranking API availability limitations",
+          "executedAt": "2026-10-29T00:44:30Z",
+          "artifact": "governance/evidence/2026-10-29/search/mai27-independent-limits.txt",
+          "sha256": "5567a1327c86e6c7abd718d2823b38f4e1e5a226a4cb248468592c8276d15436",
+          "resultCount": 5
+        },
+        {
+          "query": "Nvidia Meta 3 billion investment Muse collaboration October 27 2026 proposed offering closing conditions independent report",
+          "executedAt": "2026-10-29T00:44:30Z",
+          "artifact": "governance/evidence/2026-10-29/search/nvidia-meta-terms.txt",
+          "sha256": "3bd38d739e045cf9574b7782b80bc669df760ef2b5887fe1e0d2ab8f8663e875",
+          "resultCount": 5
+        },
+        {
+          "query": "Claude Duet measured adoption production deployments users October 2026 independent evidence",
+          "executedAt": "2026-10-29T00:46:37Z",
+          "artifact": "governance/evidence/2026-10-29/search/impact-claude-duet-20261029.txt",
+          "sha256": "e4528ef8fb0906a651c4d24ff80b297f9e11e7a7abba808b5e45a0498dc10e11",
+          "resultCount": 5
+        },
+        {
+          "query": "MiniMax M3.1 Flash production adoption deployment external users measured impact October 2026",
+          "executedAt": "2026-10-29T00:46:37Z",
+          "artifact": "governance/evidence/2026-10-29/search/impact-minimax-20261029.txt",
+          "sha256": "84dc743965acc2eb7f98e7e7c53e49993ab2e492bf8d06ecf24a6c316a5b5c34",
+          "resultCount": 5
+        },
+        {
+          "query": "Kimi K3.1 Pro API adoption production deployment users measured usage October 2026",
+          "executedAt": "2026-10-29T00:46:37Z",
+          "artifact": "governance/evidence/2026-10-29/search/impact-kimi-k31-20261029.txt",
+          "sha256": "6d8ec32d31b48847cfc53c21659506116d7d9bdd805920f34189baa4b777d3c0",
+          "resultCount": 5
+        },
+        {
+          "query": "OpenAI October 2026 scientific claims independent mathematical proof verification peer review expert replication",
+          "executedAt": "2026-10-29T00:46:37Z",
+          "artifact": "governance/evidence/2026-10-29/search/impact-openai-science-20261029.txt",
+          "sha256": "ed45ac783bca44ddc6cfaf6cd5bf637c9352cb8d75b5cd629a6e07518d026105",
+          "resultCount": 5
+        },
+        {
+          "query": "Genie 4 trusted testers rollout public access adoption outside Google October 2026 measured users production use",
+          "executedAt": "2026-10-29T00:46:37Z",
+          "artifact": "governance/evidence/2026-10-29/search/impact-genie4-20261029.txt",
+          "sha256": "d7f81f8e72caa3ddec4faeb53751866d65a62d21fe4854bc3016ec01312ff306",
+          "resultCount": 5
+        },
+        {
+          "query": "Google TPU Oracle OCI already deployed production capacity available 2026 current usage independent report",
+          "executedAt": "2026-10-29T00:46:37Z",
+          "artifact": "governance/evidence/2026-10-29/search/impact-google-oracle-tpu-20261029.txt",
+          "sha256": "62e6b5edd3300cf69a9845a839a8f7b5a04b4146be6fa17e1ac03f21e799c685",
+          "resultCount": 5
+        },
+        {
+          "query": "Microsoft MAI Image 2.7 API production deployment customers adoption users measured October 2026",
+          "executedAt": "2026-10-29T00:46:37Z",
+          "artifact": "governance/evidence/2026-10-29/search/impact-mai27-20261029.txt",
+          "sha256": "a5639fb140c5308c72fc2d5f52b6a4a547ad6092cef3834097a7785b72091184",
+          "resultCount": 5
+        },
+        {
+          "query": "Nvidia Meta Muse expanded partnership completed production deployment investment closed October 2026 evidence",
+          "executedAt": "2026-10-29T00:46:37Z",
+          "artifact": "governance/evidence/2026-10-29/search/impact-nvidia-meta-20261029.txt",
+          "sha256": "2eea8a03350597498ea0799d0c01e76e9d0672b60e29ac749fa93582c1d46aef",
+          "resultCount": 5
+        },
+        {
+          "query": "site:agmai.org October 25 2026 recommendations AI companies designate mathematicians shepherd OpenAI research results",
+          "executedAt": "2026-10-29T00:45:06Z",
+          "artifact": "governance/evidence/2026-10-29/search/agmai-shepherd-critique-20261029.txt",
+          "sha256": "f85aa1dbc5d372bbd3e2a9d432ddd6aec2b17600d4c09aa2521adb6c7f2af290",
+          "resultCount": 3
+        },
+        {
+          "query": "Scientific American OpenAI Anthropic AI proofs scientists AGMAI October 27 2026 critique verification access",
+          "executedAt": "2026-10-29T00:45:06Z",
+          "artifact": "governance/evidence/2026-10-29/search/scientificamerican-openai-criticism-20261029.txt",
+          "sha256": "05569f0421dc6a2ce7fbe1ce17a4f514eeb1cbb2cf6f0c5e39d818faf30874e4",
+          "resultCount": 4
+        },
+        {
+          "query": "Genie 4 physical accuracy benchmark external evaluation 2026 Google world model What-If World benchmark",
+          "executedAt": "2026-10-29T00:45:06Z",
+          "artifact": "governance/evidence/2026-10-29/search/genie4-physical-benchmark-20261029.txt",
+          "sha256": "adbe8715727271c090654123b8d9052a36b97ca0d24fa4db6da5894530a3102a",
+          "resultCount": 5
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "OpenAI and Genie 4 announcements checked; no independent proof or physical-accuracy replication established."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Claude Duet, MiniMax, Kimi and MAI preview/access stages checked; usage/adoption is unmeasured."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Google–Oracle plan and NVIDIA–Meta proposed investment checked; neither is represented as completed deployment/transaction."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "No separate governance candidate was confirmed by this targeted follow-up; prior FTC item remains held in the discovery run."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "No new safety incident was confirmed in this targeted follow-up; prior Cloudflare disclosure is already published and remains dated to the incident."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "No measured societal behavior change was established in this targeted follow-up."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "freshness-20261028-claude-duet-preview",
+      "eventId": "claude-duet-research-preview-2026",
+      "discoveryUrls": [
+        "https://claude.com/resources/articles/claude-duet",
+        "https://www.unite.ai/anthropic-opens-claude-duet-research-preview-to-us-pro-and-max-users/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Official dated product page and independent same-day reporting are retained.",
+        "novelty": "A distinct product preview/access stage, not a model benchmark claim.",
+        "spillover": "Professionals and small businesses are named audiences; no broader effect is measured.",
+        "durability": "Preview and waitlist continue, but no sustained adoption is observed.",
+        "sourceQuality": "Tier 1 primary announcement plus independent Tier 2 report on the core preview fact."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core event fact and date are sufficiently supported for an unreviewed L1 draft. No observed impact or L2 route is asserted; formal independent review and approval remain pending.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Read Anthropic's dated Claude Duet announcement and same-day independent report; determine event date, access and preview stage.",
+          "finding": "Anthropic opened Claude Duet as a waitlisted research preview on October 21, 2026, initially for US Pro and Max subscribers on iOS, Android and claude.ai.",
+          "evidenceIds": [
+            "claude-duet-research-preview-2026-claude-duet-fact-anthropic-1",
+            "claude-duet-research-preview-2026-claude-duet-fact-unite-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Claude Duet measured adoption production deployments users October 2026 independent evidence",
+          "finding": "The bounded query results did not establish measured external adoption, production deployment, user outcomes or another realized downstream effect. This is a search limit, not proof that no effect exists.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Read Anthropic's dated Claude Duet announcement and same-day independent report; determine event date, access and preview stage.",
+          "finding": "Independent launch coverage confirms the bounded preview; no independent reliability, safety or adoption measurement was established. Vendor safety descriptions remain attributed claims.",
+          "evidenceIds": [
+            "claude-duet-research-preview-2026-claude-duet-limits-anthropic-3"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Targeted search: Claude Duet Anthropic research preview October 21 2026 limitations safety criticism independent use.",
+          "finding": "No distinct material dispute surfaced in the bounded retained results reviewed for this candidate. This is not evidence that no controversy exists.",
+          "evidenceIds": []
+        }
+      },
+      "identity": {
+        "seriesId": "claude-agent-products",
+        "action": "open Claude Duet research preview",
+        "stage": "preview",
+        "dateBasis": "Anthropic's dated October 21 page and same-day independent report",
+        "deduplicationReason": "Distinct product preview/access stage; not an update to another company's agent launch.",
+        "comparedEventIds": [
+          "meta-muse-personal-agent-2026",
+          "salesforce-agentforce-job-ready-agents-2026"
+        ],
+        "decision": "new"
+      }
+    },
+    {
+      "candidateId": "oct28-minimax-m31-flash-weight-stage",
+      "eventId": "minimax-m31-flash-weights-2026",
+      "discoveryUrls": [
+        "https://x.com/MiniMax_AI/status/2113436864904610008",
+        "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+        "https://www.minimax.io/blog/minimax-m31f"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Official post, dated provider page, repository content and commit metadata are retained.",
+        "novelty": "Public weight availability is distinct from the October 19 hosted API rollout.",
+        "spillover": "Developer access is explicit; downstream users and production uptake are unknown.",
+        "durability": "The repository remains available in the reviewed snapshot; persistence/adoption is not measured.",
+        "sourceQuality": "Primary publisher materials corroborate the release, but they are not independent verification of the publisher's claims."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "new",
+      "reason": "Core event fact and date are sufficiently supported for an unreviewed L1 draft. No observed impact or L2 route is asserted; formal independent review and approval remain pending.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Read MiniMax's October 19 rollout page, the X post originally dated October 19 but edited to show weights-public wording on October 23, and the Hugging Face repository and commit history.",
+          "finding": "MiniMax's official X post, originally dated October 19 and edited at 1:06 AM on October 23, 2026, displayed the statement that M3.1 Flash weights were public; the hosted API rollout was dated October 19, and Hugging Face records the first full-content repository commit at 03:37:20 UTC on October 23. The first public-download time is not established.",
+          "evidenceIds": [
+            "minimax-m31-flash-weights-2026-minimax-m31-weights-x-1",
+            "minimax-m31-flash-weights-2026-minimax-m31-weights-hf-2",
+            "minimax-m31-flash-weights-2026-minimax-m31-weights-blog-3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "MiniMax M3.1 Flash production adoption deployment external users measured impact October 2026",
+          "finding": "The bounded query results did not establish measured external adoption, production deployment, user outcomes or another realized downstream effect. This is a search limit, not proof that no effect exists.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Read MiniMax's October 19 rollout page, the X post originally dated October 19 but edited to show weights-public wording on October 23, and the Hugging Face repository and commit history.",
+          "finding": "Repository contents and the official weight post support the availability stage. Performance claims are omitted; the returned Vals AI listing was not opened and is not used as verification. License constraints are directly read.",
+          "evidenceIds": [
+            "minimax-m31-flash-weights-2026-minimax-m31-license-limits-license-4",
+            "minimax-m31-flash-weights-2026-minimax-m31-license-limits-license-5",
+            "minimax-m31-flash-weights-2026-minimax-m31-license-limits-license-6"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Targeted search: MiniMax M3.1 Flash October 23 2026 public weights license independent evaluation benchmark assessment.",
+          "finding": "No distinct material dispute surfaced in the bounded retained results reviewed for this candidate. This is not evidence that no controversy exists.",
+          "evidenceIds": []
+        }
+      },
+      "identity": {
+        "seriesId": "minimax-m31-flash",
+        "action": "make model weights public",
+        "stage": "available",
+        "dateBasis": "MiniMax X post originally dated October 19 and last edited October 23; HF first full-content commit is corroborating evidence, not proof of first public download",
+        "deduplicationReason": "Distinct weight-availability stage after the October 19 hosted API rollout; do not combine the two dates or imply unrestricted commercial use.",
+        "comparedEventIds": [
+          "glm-52-open-source-2026",
+          "reflection-beam-open-weights-2026"
+        ],
+        "decision": "new"
+      },
+      "priorityOverrideReason": "This below-confirm pool candidate received targeted follow-up because the user requested continuation of the Oct 21–28 freshness update; selection is limited to a narrow, source-supported L1 node and is not publication permission."
+    },
+    {
+      "candidateId": "oct28-kimi-k31-pro-hosted-launch",
+      "eventId": "kimi-k31-pro-hosted-api-2026",
+      "discoveryUrls": [
+        "https://vercel.com/changelog/kimi-k3-1-pro-and-kimi-k3-1-pro-highspeed-are-available-now-in-ai-gateway",
+        "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Vercel's dated changelog and a same-day independent API observation are retained.",
+        "novelty": "A third-party gateway access point is a distinct but incremental channel for a new model.",
+        "spillover": "Developer access is demonstrated; adoption scale is unknown.",
+        "durability": "The gateway listing and future weight plan are documented, not sustained use.",
+        "sourceQuality": "Vercel primary listing plus independent practitioner observation for API availability."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "new",
+      "reason": "Core event fact and date are sufficiently supported for an unreviewed L1 draft. No observed impact or L2 route is asserted; formal independent review and approval remain pending.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Read Vercel's dated AI Gateway changelog, Simon Willison's same-day API observation and Moonshot's official K3.1 page.",
+          "finding": "Vercel's October 23, 2026 changelog made Kimi K3.1 Pro and K3.1 Pro Highspeed available in AI Gateway; an independent practitioner also reported Moonshot API access that day.",
+          "evidenceIds": [
+            "kimi-k31-pro-hosted-api-2026-kimi-k31-vercel-availability-vercel-1",
+            "kimi-k31-pro-hosted-api-2026-kimi-k31-vercel-availability-simon-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Kimi K3.1 Pro API adoption production deployment users measured usage October 2026",
+          "finding": "The bounded query results did not establish measured external adoption, production deployment, user outcomes or another realized downstream effect. This is a search limit, not proof that no effect exists.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Read Vercel's dated AI Gateway changelog, Simon Willison's same-day API observation and Moonshot's official K3.1 page.",
+          "finding": "The distinct Vercel gateway listing is dated October 23 and independently observed API access is also dated October 23. The Moonshot page's visible October 24 metadata leaves its own announcement date unresolved; planned weights are not an October release.",
+          "evidenceIds": [
+            "kimi-k31-pro-hosted-api-2026-kimi-k31-weight-plan-moonshot-3",
+            "kimi-k31-pro-hosted-api-2026-kimi-k31-weight-plan-vercel-4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Targeted search: Kimi K3.1 Pro October 23 October 24 2026 announcement date API hosted weights November 4 independent coverage.",
+          "finding": "No distinct material dispute surfaced in the bounded retained results reviewed for this candidate. This is not evidence that no controversy exists.",
+          "evidenceIds": []
+        }
+      },
+      "identity": {
+        "seriesId": "kimi-k31-pro",
+        "action": "make K3.1 Pro available through Vercel AI Gateway",
+        "stage": "available",
+        "dateBasis": "Vercel changelog date October 23, corroborated by an independent same-day Moonshot API observation; not Moonshot's disputed page date",
+        "deduplicationReason": "A dated third-party gateway availability node, distinct from the earlier Kimi K3 event and from the planned weight release.",
+        "comparedEventIds": [
+          "kimi-k3-2026",
+          "deepseek-v4-2026"
+        ],
+        "decision": "new"
+      },
+      "priorityOverrideReason": "This below-confirm pool candidate received targeted follow-up because the user requested continuation of the Oct 21–28 freshness update; selection is limited to a narrow, source-supported L1 node and is not publication permission."
+    },
+    {
+      "candidateId": "freshness-20261028-openai-science-results",
+      "eventId": "openai-scientific-results-2026",
+      "discoveryUrls": [
+        "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+        "https://www.progressiverobot.com/2026/10/27/openai-discoveries-mathematics-computer-science-physics/",
+        "https://www.scientificamerican.com/article/dueling-proofs-from-openai-and-anthropic-astound-scientists/",
+        "https://github.com/openai/math"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Two independent reports and the public OpenAI repository support the announcement/output-disclosure facts; the OpenAI announcement page itself was blocked.",
+        "novelty": "A dated set of model-attributed results plus a new academic collaboration process.",
+        "spillover": "Scientific communities are named, but no downstream field-level effect is measured.",
+        "durability": "External examination is ongoing; acceptance or follow-on use is not established.",
+        "sourceQuality": "Two independent Tier 2 reports plus primary repository material; no independent proof validation is claimed."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core event fact and date are sufficiently supported for an unreviewed L1 draft. No observed impact or L2 route is asserted; formal independent review and approval remain pending.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Use The Verge, Progressive Robot and Scientific American reports plus the public OpenAI math repository to establish only the announcement/disclosure facts; official OpenAI announcement fetch returned 403.",
+          "finding": "Independent reports date OpenAI's October 26, 2026 announcement of three results attributed to an internal model across mathematics, computer science and physics. The company described an academic collaboration process; the physics materials had not been released in full in the reviewed reports.",
+          "evidenceIds": [
+            "openai-scientific-results-2026-openai-science-announcement-verge-1",
+            "openai-scientific-results-2026-openai-science-announcement-verge-2",
+            "openai-scientific-results-2026-openai-science-announcement-progressiverobot-3",
+            "openai-scientific-results-2026-openai-science-announcement-github-4",
+            "openai-scientific-results-2026-openai-science-announcement-sciam-5"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "OpenAI October 2026 scientific claims independent mathematical proof verification peer review expert replication",
+          "finding": "The bounded query results did not establish measured external adoption, production deployment, user outcomes or another realized downstream effect. This is a search limit, not proof that no effect exists.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Use The Verge, Progressive Robot and Scientific American reports plus the public OpenAI math repository to establish only the announcement/disclosure facts; official OpenAI announcement fetch returned 403.",
+          "finding": "Two independent reports support that OpenAI announced the results. The public math repository calls its manuscripts raw research data; AGMAI's process critique is its own position. No proof correctness or field-wide consensus is verified.",
+          "evidenceIds": [
+            "openai-scientific-results-2026-openai-science-limits-github-6",
+            "openai-scientific-results-2026-openai-science-limits-agmai-7",
+            "openai-scientific-results-2026-openai-science-limits-agmai-8",
+            "openai-scientific-results-2026-openai-science-limits-agmai-9",
+            "openai-scientific-results-2026-openai-science-limits-verge-10",
+            "openai-scientific-results-2026-openai-science-limits-sciam-11"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Targeted search: OpenAI October 26 2026 scientific results raw research data AGMAI criticism independent mathematical verification; AGMAI first-party statement also read.",
+          "finding": "AGMAI publicly objected to designated mathematician shepherds and separately asked OpenAI to release the physics outputs. This is a specific group's process position, not a finding that the claimed results are false or a consensus of mathematicians.",
+          "evidenceIds": [
+            "openai-scientific-results-2026-openai-science-limits-agmai-7",
+            "openai-scientific-results-2026-openai-science-limits-agmai-8",
+            "openai-scientific-results-2026-openai-science-limits-agmai-9",
+            "openai-scientific-results-2026-openai-science-limits-verge-10"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "openai-internal-model-science-results",
+        "action": "announce three model-attributed research results and a collaboration process",
+        "stage": "announced",
+        "dateBasis": "The October 26 announcement date is explicit in the retained Progressive Robot report; other reporting corroborates the announcement, not output creation dates or proof validity",
+        "deduplicationReason": "A new dated release and review-process milestone, not the earlier October 6 bulk-mathematics release or an independent validation event.",
+        "comparedEventIds": [
+          "openai-academic-researchers-2026",
+          "alphaevolve-2025"
+        ],
+        "decision": "new"
+      }
+    },
+    {
+      "candidateId": "freshness-20261028-genie4-preview",
+      "eventId": "genie-4-world-simulation-2026",
+      "discoveryUrls": [
+        "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Official article text and independent TechCrunch launch coverage are retained.",
+        "novelty": "A new world-model research preview with a separate access stage.",
+        "spillover": "Potential uses are described, but only trusted-tester preview access is evidenced.",
+        "durability": "Rollout is planned in stages; no sustained external usage is measured.",
+        "sourceQuality": "Tier 1 official source text plus independent Tier 2 report."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core event fact and date are sufficiently supported for an unreviewed L1 draft. No observed impact or L2 route is asserted; formal independent review and approval remain pending.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Read Google DeepMind's retained full article content and TechCrunch's October 27 report; distinguish trusted-tester preview from general release.",
+          "finding": "Google DeepMind announced Genie 4 on October 27, 2026 and began a research preview for trusted testers.",
+          "evidenceIds": [
+            "genie-4-world-simulation-2026-genie4-preview-announcement-google-1",
+            "genie-4-world-simulation-2026-genie4-preview-announcement-techcrunch-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Genie 4 trusted testers rollout public access adoption outside Google October 2026 measured users production use",
+          "finding": "The bounded query results did not establish measured external adoption, production deployment, user outcomes or another realized downstream effect. This is a search limit, not proof that no effect exists.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Read Google DeepMind's retained full article content and TechCrunch's October 27 report; distinguish trusted-tester preview from general release.",
+          "finding": "TechCrunch independently reports the launch and preview limitations. The world-model performance claims remain company-described, and no outside physical-accuracy reproduction was established.",
+          "evidenceIds": [
+            "genie-4-world-simulation-2026-genie4-preview-limits-google-3",
+            "genie-4-world-simulation-2026-genie4-preview-limits-techcrunch-4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Targeted search: Google DeepMind Genie 4 October 27 2026 research preview limitations independent evaluation testing.",
+          "finding": "No distinct material dispute surfaced in the bounded retained results reviewed for this candidate. This is not evidence that no controversy exists.",
+          "evidenceIds": []
+        }
+      },
+      "identity": {
+        "seriesId": "google-genie-world-models",
+        "action": "announce Genie 4 and open trusted-tester research preview",
+        "stage": "preview",
+        "dateBasis": "Google DeepMind page is dated October 27; TechCrunch same-day report corroborates announcement and preview",
+        "deduplicationReason": "A new research-preview stage for an interactive world model, not a general consumer or developer launch.",
+        "comparedEventIds": [
+          "gemini-robotics-er2-2026",
+          "gemini-robotics-2025"
+        ],
+        "decision": "new"
+      }
+    },
+    {
+      "candidateId": "freshness-20261028-google-oracle-tpu-plan",
+      "eventId": "google-oracle-tpu-oci-2026",
+      "discoveryUrls": [
+        "https://cloud.google.com/blog/products/infrastructure/bringing-google-tpus-to-oracle-cloud-infrastructure",
+        "https://www.oracle.com/news/announcement/ai-world-oracle-brings-google-tpus-to-oracle-cloud-infrastructure-2026-10-27/",
+        "https://www.networkworld.com/article/4241566/oracle-adds-google-tpus-to-oci-to-expand-enterprise-ai-compute-options.html"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Joint parties' official announcements and independent Network World coverage are retained.",
+        "novelty": "A new cross-cloud TPU supply plan distinct from existing Google-only capacity.",
+        "spillover": "Enterprise customers are the intended audience; no current customer outcome is measured.",
+        "durability": "A 2027 start and multiyear ramp are planned, not yet observed.",
+        "sourceQuality": "Primary statements plus an independent Tier 2 report of the announcement and scope."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core event fact and date are sufficiently supported for an unreviewed L1 draft. No observed impact or L2 route is asserted; formal independent review and approval remain pending.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Read the joint Google/Oracle source text and Network World coverage; date the announcement separately from planned 2027 availability.",
+          "finding": "Google and Oracle announced on October 27, 2026 a plan to make Google TPU capacity available through OCI starting in calendar year 2027, with a multiyear ramp.",
+          "evidenceIds": [
+            "google-oracle-tpu-oci-2026-google-oracle-plan-googlecloud-1",
+            "google-oracle-tpu-oci-2026-google-oracle-plan-oracle-2",
+            "google-oracle-tpu-oci-2026-google-oracle-plan-networkworld-3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Google TPU Oracle OCI already deployed production capacity available 2026 current usage independent report",
+          "finding": "The bounded query results did not establish measured external adoption, production deployment, user outcomes or another realized downstream effect. This is a search limit, not proof that no effect exists.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Read the joint Google/Oracle source text and Network World coverage; date the announcement separately from planned 2027 availability.",
+          "finding": "The parties' posts share a joint-announcement origin; Network World independently reports the planned 2027 start and missing launch/commercial details. No current OCI deployment is established.",
+          "evidenceIds": [
+            "google-oracle-tpu-oci-2026-google-oracle-not-deployed-oracle-4",
+            "google-oracle-tpu-oci-2026-google-oracle-not-deployed-networkworld-5"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Targeted search: Google Oracle Google TPU OCI October 27 2026 partnership 2027 deployment pricing capacity independent analysis.",
+          "finding": "No distinct material dispute surfaced in the bounded retained results reviewed for this candidate. This is not evidence that no controversy exists.",
+          "evidenceIds": []
+        }
+      },
+      "identity": {
+        "seriesId": "google-tpu-cloud-distribution",
+        "action": "announce a planned OCI offer of Google TPUs",
+        "stage": "proposed",
+        "dateBasis": "Oracle AI World press-release dateline, October 27, 2026; independent report corroborates the event",
+        "deduplicationReason": "A new cross-cloud supply plan; do not describe it as current production deployment or customer adoption.",
+        "comparedEventIds": [
+          "aws-nvidia-2m-gpu-expansion-2026",
+          "ooredoo-zankore-ai-platform-2026"
+        ],
+        "decision": "new"
+      }
+    },
+    {
+      "candidateId": "freshness-20261028-microsoft-mai27-preview",
+      "eventId": "microsoft-mai-image-27-preview-2026",
+      "discoveryUrls": [
+        "https://microsoft.ai/news/mai-image-2-7-debut/",
+        "https://www.orcarouter.ai/blog/mai-image-2-7-preview-takes-no-2-on-aa-image-editing"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Microsoft's dated page and independent analysis are retained.",
+        "novelty": "A new 2.7 image-editing preview; separate from 2.6/2.6-Flash GA.",
+        "spillover": "Creators are an explicit audience, but public API and production use were not established.",
+        "durability": "The preview may continue; no adoption or production duration is measured.",
+        "sourceQuality": "Tier 1 official page and independent Tier 2 product analysis, without claiming benchmark reproduction."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core event fact and date are sufficiently supported for an unreviewed L1 draft. No observed impact or L2 route is asserted; formal independent review and approval remain pending.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Read Microsoft's October 27 page and ORCA Router analysis; distinguish 2.7 preview from 2.6/2.6-Flash GA.",
+          "finding": "Microsoft announced MAI Image 2.7 on October 27, 2026 as an image-editing model in preview.",
+          "evidenceIds": [
+            "microsoft-mai-image-27-preview-2026-mai27-preview-announcement-microsoft-1",
+            "microsoft-mai-image-27-preview-2026-mai27-preview-announcement-orca-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Microsoft MAI Image 2.7 API production deployment customers adoption users measured October 2026",
+          "finding": "The bounded query results did not establish measured external adoption, production deployment, user outcomes or another realized downstream effect. This is a search limit, not proof that no effect exists.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Read Microsoft's October 27 page and ORCA Router analysis; distinguish 2.7 preview from 2.6/2.6-Flash GA.",
+          "finding": "An independent product analysis describes the preview-only access path and caveats the company-reproduced leaderboard data. No independent benchmark rerun or production adoption is established.",
+          "evidenceIds": [
+            "microsoft-mai-image-27-preview-2026-mai27-preview-limits-orca-3",
+            "microsoft-mai-image-27-preview-2026-mai27-preview-limits-microsoft-4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Targeted search: Microsoft MAI Image 2.7 October 27 2026 preview independent benchmark ranking API availability limitations.",
+          "finding": "No distinct material dispute surfaced in the bounded retained results reviewed for this candidate. This is not evidence that no controversy exists.",
+          "evidenceIds": []
+        }
+      },
+      "identity": {
+        "seriesId": "microsoft-mai-image-models",
+        "action": "announce MAI Image 2.7 image-editing preview",
+        "stage": "preview",
+        "dateBasis": "Microsoft AI page dated October 27, 2026, corroborated by independent reporting",
+        "deduplicationReason": "Distinct 2.7 preview stage; not the separate MAI Image 2.6/2.6-Flash GA update.",
+        "comparedEventIds": [
+          "gpt-5-6-broad-launch-2026",
+          "meta-muse-spark-open-2026"
+        ],
+        "decision": "new"
+      }
+    },
+    {
+      "candidateId": "freshness-20261028-nvidia-meta-muse",
+      "eventId": "nvidia-meta-muse-collaboration-2026",
+      "discoveryUrls": [
+        "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+        "https://www.ibtimes.co.uk/nvidia-invests-meta-muse-ai-partnership-1828174"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "NVIDIA's official announcement and independent IBTimes reporting are retained; Reuters endpoints returned 401/403 and are not counted as read sources.",
+        "novelty": "A new announced partnership expansion and proposed equity investment.",
+        "spillover": "Infrastructure and model partners are directly involved; broader outcomes are unmeasured.",
+        "durability": "Collaboration is planned and the investment is subject to closing; no deployment persistence is observed.",
+        "sourceQuality": "Tier 1 official statement plus one independent Tier 2 report; not evidence of transaction closure."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Core event fact and date are sufficiently supported for an unreviewed L1 draft. No observed impact or L2 route is asserted; formal independent review and approval remain pending.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Read NVIDIA's October 27 announcement and IBTimes reporting; separate announced collaboration, proposed investment and completed deployment. Reuters endpoints returned 401/403 and were not used as read sources.",
+          "finding": "NVIDIA and Meta announced on October 27, 2026 that they would expand collaboration on Muse and the Muse family of models.",
+          "evidenceIds": [
+            "nvidia-meta-muse-collaboration-2026-nvidia-meta-partnership-nvidia-1",
+            "nvidia-meta-muse-collaboration-2026-nvidia-meta-partnership-ibtimes-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Nvidia Meta Muse expanded partnership completed production deployment investment closed October 2026 evidence",
+          "finding": "The bounded query results did not establish measured external adoption, production deployment, user outcomes or another realized downstream effect. This is a search limit, not proof that no effect exists.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Read NVIDIA's October 27 announcement and IBTimes reporting; separate announced collaboration, proposed investment and completed deployment. Reuters endpoints returned 401/403 and were not used as read sources.",
+          "finding": "IBTimes independently reports the expanded partnership and proposed investment. Reuters endpoints returned 401/403 and were not used as read sources. The investment is not described as closed, and the announcement does not establish a new production rollout.",
+          "evidenceIds": [
+            "nvidia-meta-muse-collaboration-2026-nvidia-meta-planned-not-closed-nvidia-3",
+            "nvidia-meta-muse-collaboration-2026-nvidia-meta-planned-not-closed-ibtimes-4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Targeted search: Nvidia Meta 3 billion investment Muse collaboration October 27 2026 proposed offering closing conditions independent report.",
+          "finding": "No distinct material dispute surfaced in the bounded retained results reviewed for this candidate. This is not evidence that no controversy exists.",
+          "evidenceIds": []
+        }
+      },
+      "identity": {
+        "seriesId": "nvidia-meta-muse-partnership",
+        "action": "announce expanded Muse collaboration and proposed equity investment",
+        "stage": "announced",
+        "dateBasis": "NVIDIA newsroom announcement and IBTimes report dated October 27, 2026",
+        "deduplicationReason": "New partnership/investment announcement distinct from Meta's earlier Muse product launch; the transaction and deployment are not marked completed.",
+        "comparedEventIds": [
+          "crusoe-series-f-2026",
+          "nvidia-openai-datacenter-financing-2026"
+        ],
+        "decision": "new"
+      }
+    }
+  ],
+  "provenanceNotes": [
+    "The full discovery run records model gpt-6-sol for pi-session:019f7eb3-bd32-7de0-b812-96efddac7723, while that session's current PI_MODEL is gpt-6-luna. This targeted run records the actual current environment gpt-6-luna; the prior record was not edited, and its model provenance discrepancy remains unresolved.",
+    "Evidence cutoff is 2026-10-29 because targeted confirmation searches were executed after 00:44 UTC on October 29; event-date window remains October 21–28."
+  ]
+}

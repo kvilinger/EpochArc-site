@@ -1,0 +1,60 @@
+--- Result 1 ---
+Title: Genie 4: A new generation of world simulation — Google DeepMind
+Link: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+Age: 2 hours ago
+Snippet: October 27, 2026 Models · <strong>Raia Hadsell, Diego Rivas and Hang Qi</strong> · Join the Genie 4 waitlist · Share · Your browser does not support the video tag. Today, we are announcing Genie 4, our new world model, which unlocks unprecedented realism ...
+Content:
+October 27, 2026 Models
+
+Raia Hadsell, Diego Rivas and Hang Qi
+
+Today, we are announcing Genie 4, our new world model, which unlocks unprecedented realism and improves real-time interactive simulation. Genie 4 is natively multimodal, enabling audio-like music, ambient noises, and interactive dialogue to be simultaneously generated with the world.
+
+The Genie 4 model incorporates and builds on capabilities from the Gemini family: Gemini Omni anchors the simulations in real-world appearance and behavior, while other Gemini models provide the complex reasoning needed to help maintain a simulation’s coherence and continuity.
+
+With this foundation, you can set an event in motion, and Genie 4 simulates what happens next: how the world responds, how it sounds, and how the people in it move, react, and speak.
+
+Understanding and simulating the world is a crucial aspect of building AGI. Genie 4 advances our ability to create safe, infinitely variable simulations that can help with everything from developing training environments for robots and agents to unlocking the creation of new interactive experiences.
+
+We have started rolling Genie 4 out as a research preview for trusted testers — gathering feedback before we release it to consumers and developers, starting with Google AI Ultra subscribers in Project Genie and early access partners of the Gemini API and Google AI Studio. Join the waitlist for Genie 4 in Project Genie [here](https://forms.gle/WQnSNEM3omF7Uruu7).
+
+Genie 4 delivers enhanced photorealism, fluid movement, and native audio. All accompanying sounds featured above are produced directly by Genie 4.
+
+## Genie 4 advances four key capabilities
+
+The following are recordings of real-time interactions from Genie 4, where users use standard keyboard controls for navigation and camera control, and text prompts to steer the scene as it evolves.
+
+### Shaping world simulation in real-time
+
+With Genie 4, you can use natural language to modify a simulation in real-time — like changing the weather, moving the camera, or introducing a new person or object — and Gemini will contextually adapt your prompt to match the surrounding scene. Between your inputs, Gemini also monitors and steers the scene to keep the world progressing cohesively.
+
+###### Turn on audio to hear Genie 4 worlds.
+
+### Pushing the frontier in realism for physics and human action
+
+Genie 4 introduces a new standard of realism to real-time interactive simulation. Built on an advanced physical understanding of the world, Genie 4 simulates real-world physics scenarios, such as aerodynamics, collisions, and more.
+
+The most dramatic leap is how Genie 4 simulates people, creating characters that move naturally, respond organically to their environments, and can be interactively steered in real-time.
+
+### Modeling how the world sounds
+
+Genie 4 is our first real-time world model to generate audio natively. Every world carries the ambient sound of its own setting, from wind in the trees to waves crashing at the beach.
+
+The true frontier, however, is human speech. Genie 4 introduces interactive dialogue that adapts on the fly. Characters converse and react to your inputs or events in the world, all in real-time.
+
+### Simulating complex events with Gemini models
+
+Bringing Gemini and Genie 4 together adds a new layer of reasoning to world simulation, allowing us to model complex, multi-step events and test how AI systems navigate different environments before bringing them to the real world.
+
+To achieve this in real-time, Gemini 3.8 Flash serves as a guiding agent in the loop: as Genie 4 generates a world in real-time, Gemini continuously observes the scene, breaks down goals into a sequence of steps, and reviews incoming frames to track the progress and verify that each step succeeded. As the world shifts or the user intervenes, Gemini adapts its plan in the moment, unlocking worlds with reliable causality, procedural behaviors, and multi-step reasoning.
+
+As part of exploring this capability, we have also been experimenting with Gemini 4 Argon and Genie 4 to bring our frontier research together with [Gemini Robotics](https://deepmind.google/models/gemini-robotics/).
+
+In the example below, Argon breaks down a user-instructed task into steps for Genie to render. These steps are interleaved as text captions to Genie 4 as the simulation is rendering. Because Genie 4 can be steered in real-time with text captions using Gemini, this now unlocks the path of adapting the simulation as it progresses towards the completion of that task. This capability becomes a path for simulating a breadth of scenarios in imagined worlds, using Gemini 4 Argon and Genie 4.
+
+Gemini 4 Argon and Genie 4 work together to simulate Apptronik's Apollo humanoid playing a game of checkers, breaking the task down into real-time steps.
+
+## Learnings from trusted testers
+
+While Genie 4 is a major research milestone, it remains an early, experimental model. To understand how interactive world models c
+
