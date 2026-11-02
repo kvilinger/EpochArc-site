@@ -4852,6 +4852,121 @@
     }
   },
   {
+    "id": "canada-cohere-equity-commitment-2026",
+    "slug": "canada-cohere-equity-commitment-2026",
+    "date": "2026-10-29",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-10-29",
+      "zhHans": "2026年10月29日"
+    },
+    "categories": [
+      "commerce"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Canada announces staged equity commitment of up to C$1.6 billion in Cohere",
+      "zhHans": "加拿大宣布对 Cohere 至多 16 亿加元的分期股权投资承诺"
+    },
+    "searchSummary": {
+      "en": "Canada announced a staged equity commitment of up to C$1.6 billion in Cohere on October 29, not a fully paid investment.",
+      "zhHans": "加拿大于 10 月 29 日宣布对 Cohere 至多 16 亿加元的分期股权投资承诺，并非款项已全部支付。"
+    },
+    "summary": {
+      "en": "Canada’s prime minister announced on October 29 a planned equity investment of up to C$1.6 billion in Cohere, to be made in stages with reporting against employment and infrastructure commitments. A Reuters report carried by CBC said the wider funding round had reached only an initial close and did not disclose the amount committed so far. The announced ceiling is not evidence that C$1.6 billion was transferred, the round closed in full, or promised jobs and computing capacity already exist.",
+      "zhHans": "加拿大总理于 10 月 29 日宣布，计划分期对 Cohere 进行至多 16 亿加元的股权投资，并按就业和基础设施承诺定期报告进展。CBC 刊载的路透社报道指出，更大范围的融资轮次当时仅完成初步交割，已承诺的具体金额未披露。公告上限不能证明 16 亿加元已经支付、整轮融资完成，或承诺的岗位和算力已经落地。"
+    },
+    "narrative": {
+      "en": "This node is a government financing commitment, not a completed ownership transfer. Government and company statements share an interested transaction origin; the syndicated Reuters report supplies independent reporting on the limited closing stage, not proof of the full planned amount.",
+      "zhHans": "本节点记录政府融资承诺，而非所有权变更已完成。政府和公司表态同属有交易利害关系的来源；转载的路透报道独立说明了有限的交割阶段，不能据此证明计划金额全部到账。"
+    },
+    "claims": [
+      {
+        "id": "cohere-pledge",
+        "claimType": "fact",
+        "text": {
+          "en": "On October 29 Canada announced a staged equity commitment of up to C$1.6 billion in Cohere.",
+          "zhHans": "10 月 29 日，加拿大宣布对 Cohere 分期投入至多 16 亿加元的股权投资承诺。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-canada",
+          "new26-cbc-cohere"
+        ]
+      },
+      {
+        "id": "cohere-conditions",
+        "claimType": "limitation",
+        "text": {
+          "en": "The government says payments will be staged; the wider round had reached only an initial close and the amount committed so far was not disclosed.",
+          "zhHans": "政府称款项将分期投入；更大范围融资轮次当时仅完成初步交割，已承诺金额未披露。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-canada",
+          "new26-cbc-cohere"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "crusoe-series-f-2026",
+      "nvidia-meta-muse-collaboration-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "lastSourceCheckAt": "2026-11-02",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-11-02",
+          "changeType": "created",
+          "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+        }
+      ],
+      "reviewedAt": "2026-11-02",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a19a58-b82f-73c9-ad96-f650bac3a402",
+      "reviewRecord": "governance/reviews/independent-20261102/canada-cohere-equity-commitment-2026.json",
+      "publishedAt": "2026-11-02"
+    },
+    "sources": [
+      {
+        "sourceId": "new26-canada",
+        "supports": [
+          "canada-cohere-equity-commitment-2026",
+          "cohere-pledge",
+          "cohere-conditions"
+        ]
+      },
+      {
+        "sourceId": "new26-cbc-cohere",
+        "supports": [
+          "canada-cohere-equity-commitment-2026",
+          "cohere-pledge",
+          "cohere-conditions"
+        ]
+      }
+    ]
+  },
+  {
     "id": "character-ai-2022",
     "slug": "character-ai-launch",
     "title": {
@@ -5988,7 +6103,8 @@
     ],
     "relatedEvents": [
       "meta-muse-personal-agent-2026",
-      "salesforce-agentforce-job-ready-agents-2026"
+      "salesforce-agentforce-job-ready-agents-2026",
+      "deepseek-dsh-superagent-prototype-2026"
     ],
     "displayDate": {
       "en": "2026-10-21",
@@ -7078,7 +7194,9 @@
       }
     ],
     "relatedEvents": [
-      "glm-5-3-coding-cyber-launch-2026"
+      "glm-5-3-coding-cyber-launch-2026",
+      "cursor-claude-code-extension-compromise-2026",
+      "epoch-ai-glm53-firefox-patch-gap-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -7186,6 +7304,7 @@
     "relatedEvents": [
       "positron-series-c-2026",
       "zai-proposed-financing-2026",
+      "canada-cohere-equity-commitment-2026",
       "samsung-helix-investment-2026"
     ],
     "editorial": {
@@ -7222,6 +7341,127 @@
     },
     "relatedForecasts": [],
     "impactIndex": 0
+  },
+  {
+    "id": "cursor-claude-code-extension-compromise-2026",
+    "slug": "cursor-claude-code-extension-compromise-2026",
+    "date": "2026-10-29",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-10-29",
+      "zhHans": "2026年10月29日"
+    },
+    "categories": [
+      "safety"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Cursor removes malicious Claude Code extension builds from its marketplace",
+      "zhHans": "Cursor 从扩展市场移除恶意 Claude Code 构建版本"
+    },
+    "searchSummary": {
+      "en": "Malicious versions of the Claude Code extension were available in Cursor’s marketplace for roughly 11 hours on October 29.",
+      "zhHans": "10 月 29 日，恶意 Claude Code 扩展版本在 Cursor 市场可获取约 11 小时。"
+    },
+    "summary": {
+      "en": "Cursor said modified Claude Code extension builds 2.1.312 and 2.1.313 were available through its marketplace for macOS and Windows from roughly 2:27 a.m. to 1:35 p.m. Pacific time on October 29. It removed the affected builds and shut down the marketplace during its response. StepSecurity separately analyzed malicious code added to a clean extension bundle. Cursor’s reported ceiling of 5,000 potentially affected users is not a count of compromised devices; credential theft or broader distribution is not established.",
+      "zhHans": "Cursor 称，10 月 29 日太平洋时间约凌晨 2:27 至下午 1:35，macOS 和 Windows 用户可从其扩展市场取得被修改的 Claude Code 扩展构建 2.1.312、2.1.313。公司随后移除相关版本，并在处置期间关闭市场。StepSecurity 独立分析了添加到正常扩展包中的恶意代码。Cursor 所称最多 5,000 名可能受影响用户不是已被入侵设备数量；现有证据也无法确定凭据已被窃取或其他发行渠道受影响。"
+    },
+    "narrative": {
+      "en": "The dated action is malicious marketplace distribution and removal, not a flaw in Claude’s model. The modified builds were not developed by Anthropic. Technical analysis identifies an attempted persistent SSH-access mechanism; actual success depends on host conditions and is not inferred for every downloader.",
+      "zhHans": "事件记录的是扩展市场的恶意版本分发与移除，不是 Claude 模型本身的缺陷。修改后的构建并非 Anthropic 开发。技术分析识别出尝试建立持久 SSH 访问的机制，但是否成功取决于主机条件，不能推断每位下载者都遭入侵。"
+    },
+    "claims": [
+      {
+        "id": "cursor-incident",
+        "claimType": "fact",
+        "text": {
+          "en": "On October 29, modified Claude Code extension builds were available in the Cursor marketplace for roughly 11 hours; Cursor removed them, and StepSecurity independently inspected the altered package.",
+          "zhHans": "10 月 29 日，被修改的 Claude Code 扩展构建在 Cursor 市场可获取约 11 小时；Cursor 随后移除，StepSecurity 独立检验了遭修改的扩展包。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-cursor",
+          "new26-stepsecurity"
+        ]
+      },
+      {
+        "id": "cursor-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "Cursor reported no evidence that the official distribution or other extension versions were affected; its at-most-5,000 user estimate does not establish a number of compromised machines.",
+          "zhHans": "Cursor 表示没有证据显示官方发行渠道或扩展的其他版本受影响；其“最多 5,000 名用户”的估计不能证明有多少设备实际遭入侵。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-cursor",
+          "new26-hns-cursor"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "cloudflare-glm53-kv-cache-exposure-2026",
+      "openai-hf-breach-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "lastSourceCheckAt": "2026-11-02",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-11-02",
+          "changeType": "created",
+          "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+        }
+      ],
+      "reviewedAt": "2026-11-02",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+      "reviewRecord": "governance/reviews/independent-20261102/cursor-claude-code-extension-compromise-2026.json",
+      "publishedAt": "2026-11-02"
+    },
+    "sources": [
+      {
+        "sourceId": "new26-cursor",
+        "supports": [
+          "cursor-claude-code-extension-compromise-2026",
+          "cursor-incident",
+          "cursor-limits"
+        ]
+      },
+      {
+        "sourceId": "new26-stepsecurity",
+        "supports": [
+          "cursor-claude-code-extension-compromise-2026",
+          "cursor-incident"
+        ]
+      },
+      {
+        "sourceId": "new26-hns-cursor",
+        "supports": [
+          "cursor-claude-code-extension-compromise-2026",
+          "cursor-limits"
+        ]
+      }
+    ]
   },
   {
     "id": "dall-e-2-2022",
@@ -8249,6 +8489,119 @@
       ],
       "publishedAt": "2026-09-10"
     }
+  },
+  {
+    "id": "deepseek-dsh-superagent-prototype-2026",
+    "slug": "deepseek-dsh-superagent-prototype-2026",
+    "date": "2026-10-31",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-10-31",
+      "zhHans": "2026年10月31日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "DeepSeek publishes dsh-superagent research prototype code",
+      "zhHans": "DeepSeek 公开 dsh-superagent 研究原型代码"
+    },
+    "searchSummary": {
+      "en": "DeepSeek’s public repository records October 31 creation and explicitly labels dsh-superagent research code, not a production product.",
+      "zhHans": "DeepSeek 的公开仓库记录 10 月 31 日创建，并明确将 dsh-superagent 标为研究代码而非生产产品。"
+    },
+    "summary": {
+      "en": "A repository under DeepSeek’s GitHub organization records creation on October 31 and makes dsh-superagent prototype code and an MIT license available. Its README describes an agent for a single GitHub repository, built around DeepSeek Harness, and explicitly says it is research code, not an official DeepSeek product or production-ready software. Repository creation does not establish the minute it first became publicly downloadable or adoption by others.",
+      "zhHans": "DeepSeek 的 GitHub 组织下，一个记录创建于 10 月 31 日的公开仓库提供 dsh-superagent 原型代码和 MIT 许可。README 将其描述为面向单一 GitHub 仓库、围绕 DeepSeek Harness 构建的智能体，并明确说明这是研究代码，并非 DeepSeek 正式产品或可投入生产的软件。仓库创建时间不能确定其首次供公众下载的时刻，也不能证明外部采用。"
+    },
+    "narrative": {
+      "en": "The event is code availability for an experimental tool, not a production agent deployment or independently measured autonomy gain. The repository’s own warning about differences from its internal version limits any attempt to infer internal operational performance.",
+      "zhHans": "事件记录实验工具代码可获取，不代表生产环境部署或自主能力已获独立量化验证。仓库还提醒公开版与内部版本不完全相同，因此不能据此推断内部运行表现。"
+    },
+    "claims": [
+      {
+        "id": "deepseek-code",
+        "claimType": "fact",
+        "text": {
+          "en": "The public deepseek-ai repository was created October 31, 2026, and contains a dsh-superagent research prototype for one GitHub repository.",
+          "zhHans": "deepseek-ai 的公开仓库创建于 2026 年 10 月 31 日，包含面向单一 GitHub 仓库的 dsh-superagent 研究原型。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-deepseek-api",
+          "new26-deepseek-readme"
+        ]
+      },
+      {
+        "id": "deepseek-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "The README says this is a reference-only research prototype, not an official or production-ready DeepSeek product.",
+          "zhHans": "README 称该代码仅供研究参考，既非 DeepSeek 正式产品，也未达到生产可用状态。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-deepseek-readme"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "reflection-beam-open-weights-2026",
+      "claude-duet-research-preview-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "lastSourceCheckAt": "2026-11-02",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-11-02",
+          "changeType": "created",
+          "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+        }
+      ],
+      "reviewedAt": "2026-11-02",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a19a58-b82f-73c9-ad96-f650bac3a402",
+      "reviewRecord": "governance/reviews/independent-20261102/deepseek-dsh-superagent-prototype-2026.json",
+      "publishedAt": "2026-11-02"
+    },
+    "sources": [
+      {
+        "sourceId": "new26-deepseek-api",
+        "supports": [
+          "deepseek-dsh-superagent-prototype-2026",
+          "deepseek-code"
+        ]
+      },
+      {
+        "sourceId": "new26-deepseek-readme",
+        "supports": [
+          "deepseek-dsh-superagent-prototype-2026",
+          "deepseek-code",
+          "deepseek-limits"
+        ]
+      }
+    ]
   },
   {
     "id": "deepseek-r1-2025",
@@ -9796,6 +10149,119 @@
     ]
   },
   {
+    "id": "epoch-ai-glm53-firefox-patch-gap-2026",
+    "slug": "epoch-ai-glm53-firefox-patch-gap-2026",
+    "date": "2026-10-29",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-10-29",
+      "zhHans": "2026年10月29日"
+    },
+    "categories": [
+      "capability"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Epoch AI reports GLM-5.3 patch-gap exploits in controlled Firefox tests",
+      "zhHans": "Epoch AI 报告 GLM-5.3 在受控测试中利用 Firefox 补丁空窗期"
+    },
+    "searchSummary": {
+      "en": "Epoch AI published a controlled GLM-5.3 Firefox exploit experiment on October 29; no real-world attacks were established.",
+      "zhHans": "Epoch AI 于 10 月 29 日公布 GLM-5.3 的 Firefox 受控利用实验；未证明真实世界攻击。"
+    },
+    "summary": {
+      "en": "Epoch AI reported on October 29 that, in its controlled setup, GLM-5.3 constructed working attack chains against six Firefox releases dated September 17–October 26 using pending security fixes and a separate, then-unpublished vulnerability. Mozilla separately described the patch-gap risk and defense work. Firefox 159.0 had patched the additional vulnerability on October 27. The test does not show wild exploitation, independent reproduction of all six results, or an equivalent Chrome exploit.",
+      "zhHans": "Epoch AI 于 10 月 29 日报告，在其受控环境中，GLM-5.3 利用尚未随正式版交付的安全修复线索，并结合当时未公开的另一处漏洞，针对 9 月 17 日至 10 月 26 日的六个 Firefox 版本构造了可运行的攻击链。Mozilla 另行描述了补丁空窗风险和防御工作。Firefox 159.0 已于 10 月 27 日修复后一处漏洞。该实验不能证明真实攻击、六项结果均获独立复现，或 Chrome 也可被同样攻破。"
+    },
+    "narrative": {
+      "en": "October 29 dates the public research disclosure, not the historical Firefox builds or October 27 fix. Mozilla’s statement is first-hand operator context but not a separate rerun of Epoch’s complete test harness. Potential harm is not recorded as an observed external impact.",
+      "zhHans": "10 月 29 日是研究公开日期，不是历史 Firefox 版本或 10 月 27 日修复的发生日。Mozilla 的声明属于浏览器运营方的一手背景，不等于独立重跑 Epoch 的全部实验。潜在危害不计作已观察到的外部影响。"
+    },
+    "claims": [
+      {
+        "id": "epoch-experiment",
+        "claimType": "fact",
+        "text": {
+          "en": "Epoch AI disclosed on October 29 a controlled GLM-5.3 patch-gap experiment against six prior Firefox releases; Mozilla acknowledged evidence of this threat mechanism without independently replicating every reported exploit.",
+          "zhHans": "Epoch AI 于 10 月 29 日公布针对六个旧版 Firefox 的 GLM-5.3 补丁空窗受控实验；Mozilla 承认已见该威胁机制的证据，但并未独立复现报告中的每项利用。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-epoch-ai",
+          "new26-mozilla"
+        ]
+      },
+      {
+        "id": "epoch-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "Epoch AI had not established whether the attacks would work on Firefox 159.0 and did not obtain an equivalent Chrome exploit with the same harness; the study does not demonstrate real-world victims.",
+          "zhHans": "Epoch AI 尚未确认攻击能否在 Firefox 159.0 上成功，用同一套实验工具也未取得等效的 Chrome 利用；该研究不证明存在真实受害者。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-epoch-ai"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "google-gemini-3-8-flash-cyber-2026",
+      "cloudflare-glm53-kv-cache-exposure-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "lastSourceCheckAt": "2026-11-02",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-11-02",
+          "changeType": "created",
+          "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+        }
+      ],
+      "reviewedAt": "2026-11-02",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+      "reviewRecord": "governance/reviews/independent-20261102/epoch-ai-glm53-firefox-patch-gap-2026.json",
+      "publishedAt": "2026-11-02"
+    },
+    "sources": [
+      {
+        "sourceId": "new26-epoch-ai",
+        "supports": [
+          "epoch-ai-glm53-firefox-patch-gap-2026",
+          "epoch-experiment",
+          "epoch-limits"
+        ]
+      },
+      {
+        "sourceId": "new26-mozilla",
+        "supports": [
+          "epoch-ai-glm53-firefox-patch-gap-2026",
+          "epoch-experiment"
+        ]
+      }
+    ]
+  },
+  {
     "id": "eu-ai-act-2024",
     "slug": "eu-ai-act",
     "title": {
@@ -10579,6 +11045,7 @@
       "eu-ai-act-simplification-2026",
       "california-sb574-ai-law-practice-2026",
       "eu-chatgpt-vlose-designation-2026",
+      "google-shared-ai-training-control-plan-2026",
       "uk-ico-foundation-model-changes-2026"
     ],
     "relatedForecasts": [],
@@ -12544,6 +13011,7 @@
       "amd-world-labs-acquisition-2026",
       "gemini-robotics-er2-2026",
       "genie-4-world-simulation-2026",
+      "google-suncatcher-orbital-tpu-demo-2026",
       "nvidia-osmo-2026",
       "project-fetch-phase-two-2026"
     ],
@@ -13711,6 +14179,7 @@
       }
     ],
     "relatedEvents": [
+      "epoch-ai-glm53-firefox-patch-gap-2026",
       "google-gemini-4-argon-2026"
     ],
     "relatedForecasts": [
@@ -13902,7 +14371,8 @@
     ],
     "relatedEvents": [
       "aws-nvidia-2m-gpu-expansion-2026",
-      "ooredoo-zankore-ai-platform-2026"
+      "ooredoo-zankore-ai-platform-2026",
+      "google-suncatcher-orbital-tpu-demo-2026"
     ],
     "displayDate": {
       "en": "2026-10-27",
@@ -13970,6 +14440,224 @@
       "reviewRecord": "governance/reviews/independent-20261029/google-oracle-tpu-oci-2026.json",
       "publishedAt": "2026-10-29"
     }
+  },
+  {
+    "id": "google-shared-ai-training-control-plan-2026",
+    "slug": "google-shared-ai-training-control-plan-2026",
+    "date": "2026-10-30",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-10-30",
+      "zhHans": "2026年10月30日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Google plans to support a shared robots.txt AI-training preference",
+      "zhHans": "谷歌计划支持通用 robots.txt AI 训练偏好信号"
+    },
+    "searchSummary": {
+      "en": "Google announced on October 30 that it plans to interpret a shared robots.txt training-preference token; the underlying Internet-Draft has no IETF endorsement.",
+      "zhHans": "谷歌于 10 月 30 日宣布计划识别通用 robots.txt 训练偏好标记；相关互联网草案尚未获 IETF 背书。"
+    },
+    "summary": {
+      "en": "On October 30, Google Search Central announced plans to support a shared robots.txt policy token that lets sites express AI-training preferences across participating providers. Google said it plans, subject to its described conditions, to interpret an opt-out as disallowing Google-Extended. A related individual Internet-Draft describes the mechanism but states explicitly that it is not endorsed by the IETF. These are an implementation plan and working draft, not proof that Google or other providers already enforce the preference.",
+      "zhHans": "谷歌搜索中心于 10 月 30 日宣布，计划支持一种通用 robots.txt 策略标记，使网站向参与的服务商表达 AI 训练偏好。谷歌称，在所述条件下，计划将退出训练的标记解释为禁止 Google-Extended。相关个人互联网草案描述了机制，同时明确表示尚未获得 IETF 背书。这分别是实施计划和工作草案，不能证明谷歌或其他服务商已经实际执行该偏好。"
+    },
+    "narrative": {
+      "en": "This is a platform control plan for publishers rather than a binding legal rule or adopted internet standard. The author of the IETF individual draft works at Anthropic; publication on an IETF domain does not itself certify multisector agreement. OpenAI’s related announcement returned HTTP 403 in this packet and is not used to assert its enforcement.",
+      "zhHans": "这是面向出版者的平台控制计划，并非有约束力的法律或已采纳的互联网标准。相关 IETF 个人草案作者来自 Anthropic；刊登在 IETF 域名本身不证明业界已达成共识。本轮访问 OpenAI 相关公告返回 HTTP 403，因此不据此宣称其已执行新规则。"
+    },
+    "claims": [
+      {
+        "id": "robots-plan",
+        "claimType": "fact",
+        "text": {
+          "en": "Google announced on October 30, 2026 that it plans to support a shared robots.txt AI-training preference token.",
+          "zhHans": "谷歌于 2026 年 10 月 30 日宣布，计划支持通用 robots.txt AI 训练偏好标记。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-google-robots"
+        ]
+      },
+      {
+        "id": "robots-draft",
+        "claimType": "limitation",
+        "text": {
+          "en": "Google describes intended interpretation of the opt-out under stated conditions; the related individual Internet-Draft is not endorsed by the IETF and no enforcement is established here.",
+          "zhHans": "谷歌描述了在限定条件下计划如何解释退出训练标记；相关个人互联网草案尚未获 IETF 背书，本轮也未证明该规则已被执行。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-google-robots",
+          "new26-ietf-draft"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "eu-ai-act-transparency-2026",
+      "openai-strategic-futures-governance-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "lastSourceCheckAt": "2026-11-02",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-11-02",
+          "changeType": "created",
+          "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+        }
+      ],
+      "reviewedAt": "2026-11-02",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a19a59-3c89-7555-a151-fbb021e59ecd",
+      "reviewRecord": "governance/reviews/independent-20261102/google-shared-ai-training-control-plan-2026.json",
+      "publishedAt": "2026-11-02"
+    },
+    "sources": [
+      {
+        "sourceId": "new26-google-robots",
+        "supports": [
+          "google-shared-ai-training-control-plan-2026",
+          "robots-plan",
+          "robots-draft"
+        ]
+      },
+      {
+        "sourceId": "new26-ietf-draft",
+        "supports": [
+          "google-shared-ai-training-control-plan-2026",
+          "robots-draft"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "google-suncatcher-orbital-tpu-demo-2026",
+    "slug": "google-suncatcher-orbital-tpu-demo-2026",
+    "date": "2026-10-30",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-10-30",
+      "zhHans": "2026年10月30日"
+    },
+    "categories": [
+      "capability"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Google reports an AI response from its orbital TPU prototype",
+      "zhHans": "Google 报告其在轨 TPU 原型生成了一条 AI 回复"
+    },
+    "searchSummary": {
+      "en": "On October 30, Google reported a test response from an onboard Gemma 4 model on its Project Suncatcher satellite.",
+      "zhHans": "谷歌于 10 月 30 日报告，Project Suncatcher 卫星上的 Gemma 4 模型在测试中生成了回复。"
+    },
+    "summary": {
+      "en": "Google reported on October 30 that its Project Suncatcher prototype satellite had sent back a response generated by an onboard Gemma 4 model running on a data-center-class TPU. The post says the team uplinked a prompt during a ground-station pass; it does not provide an exact test date. Google launched the satellite on October 1. This is a company-reported prototype milestone, not a functioning commercial space data center or independent validation of its performance.",
+      "zhHans": "谷歌于 10 月 30 日报告，其 Project Suncatcher 原型卫星上运行于数据中心级 TPU 的 Gemma 4 模型生成了回复并传回地面。文章称团队在地面站过境期间上行了提示词，但未给出测试的确切日期。卫星于 10 月 1 日发射。这是公司报告的原型里程碑，不是商业太空数据中心投入运营，也没有独立性能验证。"
+    },
+    "narrative": {
+      "en": "The event date is disclosure day because Google’s article says only “this week” for the test. The October 1 launch is a different action; broader orbital AI services remain a research goal.",
+      "zhHans": "事件以披露日记载，因为谷歌只将测试描述为“本周”。10 月 1 日发射是另一行动；更广泛的在轨 AI 服务仍属研究目标。"
+    },
+    "claims": [
+      {
+        "id": "orbit-disclosure",
+        "claimType": "fact",
+        "text": {
+          "en": "On October 30 Google reported receiving a response generated on its prototype satellite by Gemma 4 running on an onboard TPU; the exact response day was not specified.",
+          "zhHans": "谷歌于 10 月 30 日报告收到原型卫星上由板载 TPU 运行的 Gemma 4 生成的回复；实际测试日期未指明。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-google-orbit"
+        ]
+      },
+      {
+        "id": "orbit-limit",
+        "claimType": "limitation",
+        "text": {
+          "en": "The satellite launched on October 1; the later demonstration is a limited prototype test, not proof of a commercial orbital data center.",
+          "zhHans": "卫星于 10 月 1 日发射；之后的演示是有限的原型测试，不证明商业在轨数据中心已经建成。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-google-orbit"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "gemini-robotics-2025",
+      "google-oracle-tpu-oci-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "lastSourceCheckAt": "2026-11-02",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-11-02",
+          "changeType": "created",
+          "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+        }
+      ],
+      "reviewedAt": "2026-11-02",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a19a59-3c89-7555-a151-fbb021e59ecd",
+      "reviewRecord": "governance/reviews/independent-20261102/google-suncatcher-orbital-tpu-demo-2026.json",
+      "publishedAt": "2026-11-02"
+    },
+    "sources": [
+      {
+        "sourceId": "new26-google-orbit",
+        "supports": [
+          "google-suncatcher-orbital-tpu-demo-2026",
+          "orbit-disclosure",
+          "orbit-limit"
+        ]
+      }
+    ]
   },
   {
     "id": "google-synthid-bio-2026",
@@ -18574,7 +19262,8 @@
     ],
     "relatedEvents": [
       "glm-52-open-source-2026",
-      "reflection-beam-open-weights-2026"
+      "reflection-beam-open-weights-2026",
+      "mistral-large-4-open-weights-2026"
     ],
     "displayDate": {
       "en": "2026-10-23",
@@ -18805,6 +19494,141 @@
       "lastSourceCheckAt": "2026-08-24",
       "reviewNotes": "Reviewed 2026-08-24 after the latest-30 evidence, calibration, and language audit."
     }
+  },
+  {
+    "id": "mistral-large-4-open-weights-2026",
+    "slug": "mistral-large-4-open-weights-2026",
+    "date": "2026-10-29",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-10-29",
+      "zhHans": "2026年10月29日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Mistral releases Large 4 model weights after public preview",
+      "zhHans": "Mistral 在公开预览后发布 Large 4 模型权重"
+    },
+    "searchSummary": {
+      "en": "Mistral released Large 4 weights on October 29; the license requires a separate commercial agreement for some hosted services.",
+      "zhHans": "Mistral 于 10 月 29 日发布 Large 4 权重；部分托管服务商业使用须另行签约。"
+    },
+    "summary": {
+      "en": "Mistral released the weights of an updated Mistral Large 4 model on October 29, after its October 6 public preview. Hugging Face documented the hosted model files. The Mistral Ecosystem Open-Weight License permits many uses but requires a separate commercial license for businesses operating Model-as-a-Service. The available material does not establish the first public-download minute, independent benchmark superiority or measured deployment.",
+      "zhHans": "Mistral 于 10 月 29 日发布更新版 Mistral Large 4 的权重，此前该模型于 10 月 6 日进入公开预览。Hugging Face 记录了托管模型文件。Mistral Ecosystem Open-Weight 许可允许多种使用方式，但运营模型即服务业务的企业须另行取得商业许可。现有材料无法确定公众首次下载的具体时间，也不能证明跑分优势已被独立复现或模型已实际部署。"
+    },
+    "narrative": {
+      "en": "This node records the transition from a public preview to accessible weights, not a second first launch. The October 29 date comes from the host’s dated article and independent reporting; the repository existed earlier. Company benchmark claims and quoted partner plans are not treated as measured adoption.",
+      "zhHans": "本节点记录的是从公开预览转向权重可用，并非再次首次发布。10 月 29 日依据托管方文章和独立报道；仓库此前已存在。厂商跑分及合作方的计划表述不计作已测量的采用。"
+    },
+    "claims": [
+      {
+        "id": "ml4-weight",
+        "claimType": "fact",
+        "text": {
+          "en": "On October 29, 2026, Mistral published improved Large 4 model weights after the October 6 preview, with files documented on Hugging Face.",
+          "zhHans": "2026 年 10 月 29 日，Mistral 在 10 月 6 日预览之后发布更新版 Large 4 权重，Hugging Face 记录了模型文件。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-mistral-weights",
+          "new26-mistral-preview",
+          "new26-mistral-hf",
+          "new26-mistral-nextweb"
+        ]
+      },
+      {
+        "id": "ml4-license",
+        "claimType": "limitation",
+        "text": {
+          "en": "The repository license requires businesses operating Model-as-a-Service to obtain a separate Mistral commercial license before commercial use; this is not unrestricted MIT use.",
+          "zhHans": "仓库许可要求运营模型即服务业务的企业在商业使用前另行取得 Mistral 商业许可，不属于不受限制的 MIT 使用。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26-mistral-license"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "minimax-m31-flash-weights-2026",
+      "reflection-beam-open-weights-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "lastSourceCheckAt": "2026-11-02",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+      "changeLog": [
+        {
+          "date": "2026-11-02",
+          "changeType": "created",
+          "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+        },
+        {
+          "date": "2026-11-02",
+          "changeType": "correction",
+          "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+        }
+      ],
+      "reviewedAt": "2026-11-02",
+      "reviewProvenance": "v2.4",
+      "reviewer": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+      "reviewRecord": "governance/reviews/independent-20261102/mistral-large-4-open-weights-2026.json",
+      "publishedAt": "2026-11-02"
+    },
+    "sources": [
+      {
+        "sourceId": "new26-mistral-weights",
+        "supports": [
+          "mistral-large-4-open-weights-2026",
+          "ml4-weight"
+        ]
+      },
+      {
+        "sourceId": "new26-mistral-preview",
+        "supports": [
+          "mistral-large-4-open-weights-2026",
+          "ml4-weight"
+        ]
+      },
+      {
+        "sourceId": "new26-mistral-hf",
+        "supports": [
+          "mistral-large-4-open-weights-2026",
+          "ml4-weight"
+        ]
+      },
+      {
+        "sourceId": "new26-mistral-nextweb",
+        "supports": [
+          "mistral-large-4-open-weights-2026",
+          "ml4-weight"
+        ]
+      },
+      {
+        "sourceId": "new26-mistral-license",
+        "supports": [
+          "mistral-large-4-open-weights-2026",
+          "ml4-license"
+        ]
+      }
+    ]
   },
   {
     "id": "netflix-gene-wilder-ai-2026",
@@ -19657,7 +20481,8 @@
     ],
     "relatedEvents": [
       "meta-muse-personal-agent-2026",
-      "meta-muse-spark-open-2026"
+      "meta-muse-spark-open-2026",
+      "canada-cohere-equity-commitment-2026"
     ],
     "displayDate": {
       "en": "2026-10-27",
@@ -22534,6 +23359,7 @@
       "anthropic-third-party-cyber-evaluation-incidents-2026",
       "aisi-unsanctioned-agent-behavior-2026",
       "anthropic-threat-intelligence-report-2026",
+      "cursor-claude-code-extension-compromise-2026",
       "nvidia-open-agent-safety-platform-2026",
       "open-secure-ai-alliance-2026",
       "openai-australia-medicare-agent-incident-2026",
@@ -23800,6 +24626,7 @@
     ],
     "relatedEvents": [
       "openai-hf-breach-2026",
+      "google-shared-ai-training-control-plan-2026",
       "openai-gpt-6-astra-2026"
     ],
     "relatedForecasts": [],
@@ -25476,7 +26303,9 @@
     "relatedEvents": [
       "stepfun-step-5-preview-open-weights-2026",
       "glm-52-open-source-2026",
-      "minimax-m31-flash-weights-2026"
+      "deepseek-dsh-superagent-prototype-2026",
+      "minimax-m31-flash-weights-2026",
+      "mistral-large-4-open-weights-2026"
     ],
     "relatedForecasts": [],
     "editorial": {

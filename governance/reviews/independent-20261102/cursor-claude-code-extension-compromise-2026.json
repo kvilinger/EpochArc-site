@@ -1,0 +1,159 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "cursor-claude-code-extension-compromise-2026",
+  "inputSubjectDigest": "0d525aecf9c975bd662f69b9427ba41dd6e1a6e57e6d45275ac9306178394760",
+  "subjectDigest": "b914cffa6476460c7799ea9e89a0730e0f6ee791c55c00855be9eb3ac9daf0d3",
+  "inputsDigest": "23080a362b9ad32c75756bb5704f681136e27391a971daeba31d5404d2957162",
+  "evidenceCutoff": "2026-11-02",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a19a57-4466-7424-b92a-843f3854fc66",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-02",
+  "candidateId": "nov02-cursor-extension-compromise",
+  "runDigest": "63172da61973c847f39166202b507795cbfd7a86f6f0ddf77207745716982189",
+  "coreFactClaimIds": [
+    "cursor-incident"
+  ],
+  "identity": {
+    "seriesId": "cursor-extension-marketplace-compromise",
+    "action": "modified Claude Code extension distributed via marketplace",
+    "stage": "incident",
+    "dateBasis": "Cursor notice states 2:27am–1:35pm PT October 29; StepSecurity direct sample analysis October30",
+    "decision": "new",
+    "comparedEventIds": [
+      "cloudflare-glm53-kv-cache-exposure-2026",
+      "openai-hf-breach-2026"
+    ],
+    "deduplicationReason": "This exact date, actor, action and stage is absent from the published archive; the comparison IDs identify earlier or otherwise distinct stages, not a duplicate."
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "The dated action is modified Claude Code extension distributed via marketplace; the safety category follows the action, not a hoped-for downstream effect."
+  },
+  "significance": {
+    "rationale": "This is a dated, quoted incident event with core fact support; no independently supported L2 pathway or sustained cross-domain change is established.",
+    "whyNotHigher": "Documented incident and independent technical investigation are present, but independently verifiable actual external remedial action is missing; Cursor self-reports its hosting-provider takedown. L2-SAFETY is therefore not met.",
+    "whyNotLower": "The dated original event has direct evidence beyond a search result and is distinct from listed comparator stages.",
+    "comparisonEventIds": [
+      "cloudflare-glm53-kv-cache-exposure-2026",
+      "openai-hf-breach-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY",
+        "criteria": {
+          "documented_incident": {
+            "value": true,
+            "rationale": "Cursor documented malicious distribution; independent StepSecurity analyzed the package. This satisfies this criterion only, not external remediation.",
+            "evidenceIds": [
+              "cursor-claude-code-extension-compromise-2026-evidence-1",
+              "cursor-claude-code-extension-compromise-2026-evidence-2"
+            ]
+          },
+          "external_remedial_action": {
+            "value": null,
+            "rationale": "An outside actor taking actual remedial action is not independently documented; the hosting-provider takedown is Cursor self-report, and StepSecurity guidance/alerts are not a verified third-party cleanup.",
+            "evidenceIds": []
+          },
+          "independent_investigation": {
+            "value": true,
+            "rationale": "Cursor documented malicious distribution; independent StepSecurity analyzed the package. This satisfies this criterion only, not external remediation.",
+            "evidenceIds": [
+              "cursor-claude-code-extension-compromise-2026-evidence-1",
+              "cursor-claude-code-extension-compromise-2026-evidence-2"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "No measured and independently verified external effects warrant broad consensus.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate evidence-backed material dispute was established within the bounded search; this does not show no dispute exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent Gemini session checked the full English and Simplified Chinese factual draft for subject, date, numeric amount, stages, attribution, scope, negation and uncertainty; initial DeepSeek Chinese classifier was corrected and rechecked."
+  },
+  "limitations": [
+    "The run accounts for all required channels but remains partial/unavailable for Reddit, X, newsletters, HF and keyword HN; no exhaustive-window claim.",
+    "Only bounded original-source excerpts were supplied for long pages; quote hashes prove local artifact integrity, not remote truth or full semantic coverage.",
+    "OpenAI official announcements returned HTTP 403 and were not treated as read sources; no access restriction bypass.",
+    "Company demonstrations, funding commitments and partner claims are not independently verified performance, transaction completion or external adoption.",
+    "Initial Gemini review and revision notes are superseded by the final-run session bound here. This independent model review is not human release approval.",
+    "Final reviewer raw text: review/gemini3.8-compact-final-1-raw.md; SHA256 97a9b2c7f066bef3582af96bcea614a0aeabdc549309ee3819721853d8e75d52.",
+    "PublishedAt is a proposed UTC date, not a claim that this item has been published. Its exact wrapper is pending shadow review and fresh human approval."
+  ],
+  "evidence": [
+    {
+      "id": "cursor-claude-code-extension-compromise-2026-evidence-1",
+      "sourceId": "new26-cursor",
+      "claimId": "cursor-incident",
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "originId": "cursor-claude-code-extension-notice-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Between about 2:27am PT and 1:35pm PT today, a maliciously modified version of Anthropic’s Claude Code extension was made available in the Cursor VS Code Extension Marketplace.",
+      "locator": "What happened, Oct29 operator notice",
+      "artifact": "governance/evidence/2026-11-02/direct/cursor-notice.txt",
+      "sha256": "4e47cfb80a61ac311143291ec7ef5efce3b51dacc6b1b721a49f60bbb9945d9d"
+    },
+    {
+      "id": "cursor-claude-code-extension-compromise-2026-evidence-2",
+      "sourceId": "new26-stepsecurity",
+      "claimId": "cursor-incident",
+      "url": "https://www.stepsecurity.io/blog/claude-code-extension-trojanized",
+      "originId": "stepsecurity-claude-extension-independent-analysis-20261030",
+      "accessedAt": "2026-11-02",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "The tampering is a pure prepend.",
+      "locator": "Independent binary comparison",
+      "artifact": "governance/evidence/2026-11-02/direct/cursor-stepsecurity.txt",
+      "sha256": "ede15c3e843ec3a02863704581fdba6a8529d7f43359272af05a0379b1a4d3ae"
+    },
+    {
+      "id": "cursor-claude-code-extension-compromise-2026-evidence-3",
+      "sourceId": "new26-cursor",
+      "claimId": "cursor-limits",
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "originId": "cursor-claude-code-extension-notice-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We have no evidence that other versions of the extension or the official distribution are affected.",
+      "locator": "Operator scope limits",
+      "artifact": "governance/evidence/2026-11-02/direct/cursor-notice.txt",
+      "sha256": "4e47cfb80a61ac311143291ec7ef5efce3b51dacc6b1b721a49f60bbb9945d9d"
+    },
+    {
+      "id": "cursor-claude-code-extension-compromise-2026-evidence-4",
+      "sourceId": "new26-hns-cursor",
+      "claimId": "cursor-limits",
+      "url": "https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/",
+      "originId": "helpnetsecurity-cursor-extension-report-20261030",
+      "accessedAt": "2026-11-02",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "At most 5,000 users were affected",
+      "locator": "Independent report attributing maximum estimate to Cursor",
+      "artifact": "governance/evidence/2026-11-02/direct/cursor-hns.txt",
+      "sha256": "35636485adca4c609838a2f4aa2485c762295cd340fe338dba7353a9407e247a"
+    }
+  ]
+}

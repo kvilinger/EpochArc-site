@@ -1,0 +1,153 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "epoch-ai-glm53-firefox-patch-gap-2026",
+  "inputSubjectDigest": "152515f5a8e5fd65d7fc55b86f910fb713447f4e78d9d68a6d032ec395dfaf27",
+  "subjectDigest": "a613af4c531064d6c899c18571147cc79ea5ccf65c7b961f7867b3dc982af2e3",
+  "inputsDigest": "63dd9950d26084f91ba1654fdd7166c36cae680069ac58aa8426522db159a06f",
+  "evidenceCutoff": "2026-11-02",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a19a57-4466-7424-b92a-843f3854fc66",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-02",
+  "candidateId": "nov02-epoch-patchgap",
+  "runDigest": "63172da61973c847f39166202b507795cbfd7a86f6f0ddf77207745716982189",
+  "coreFactClaimIds": [
+    "epoch-experiment"
+  ],
+  "identity": {
+    "seriesId": "epoch-ai-openweight-patchgap-tests",
+    "action": "publish GLM-5.3 Firefox patch-gap experiment",
+    "stage": "disclosed",
+    "dateBasis": "Epoch AI Oct29 publication; test versions Sep17–Oct26; Mozilla patch Oct27",
+    "decision": "new",
+    "comparedEventIds": [
+      "google-gemini-3-8-flash-cyber-2026",
+      "cloudflare-glm53-kv-cache-exposure-2026"
+    ],
+    "deduplicationReason": "This exact date, actor, action and stage is absent from the published archive; the comparison IDs identify earlier or otherwise distinct stages, not a duplicate."
+  },
+  "classification": {
+    "primary": "capability",
+    "reason": "The dated action is publish GLM-5.3 Firefox patch-gap experiment; the capability category follows the action, not a hoped-for downstream effect."
+  },
+  "significance": {
+    "rationale": "This is a dated, quoted disclosed event with core fact support; no independently supported L2 pathway or sustained cross-domain change is established.",
+    "whyNotHigher": "The required independent action/replication or observed production-usage threshold is not established.",
+    "whyNotLower": "The dated original event has direct evidence beyond a search result and is distinct from listed comparator stages.",
+    "comparisonEventIds": [
+      "google-gemini-3-8-flash-cyber-2026",
+      "cloudflare-glm53-kv-cache-exposure-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-CAPABILITY",
+        "criteria": {
+          "previously_infeasible_task": {
+            "value": null,
+            "rationale": "No retained evidence establishes the previously_infeasible_task milestone for L2-CAPABILITY; null denotes unknown, not false.",
+            "evidenceIds": []
+          },
+          "comparable_baseline": {
+            "value": null,
+            "rationale": "No retained evidence establishes the comparable_baseline milestone for L2-CAPABILITY; null denotes unknown, not false.",
+            "evidenceIds": []
+          },
+          "independent_replication": {
+            "value": null,
+            "rationale": "No retained evidence establishes the independent_replication milestone for L2-CAPABILITY; null denotes unknown, not false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "No measured and independently verified external effects warrant broad consensus.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate evidence-backed material dispute was established within the bounded search; this does not show no dispute exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent Gemini session checked the full English and Simplified Chinese factual draft for subject, date, numeric amount, stages, attribution, scope, negation and uncertainty; initial DeepSeek Chinese classifier was corrected and rechecked."
+  },
+  "limitations": [
+    "The run accounts for all required channels but remains partial/unavailable for Reddit, X, newsletters, HF and keyword HN; no exhaustive-window claim.",
+    "Only bounded original-source excerpts were supplied for long pages; quote hashes prove local artifact integrity, not remote truth or full semantic coverage.",
+    "OpenAI official announcements returned HTTP 403 and were not treated as read sources; no access restriction bypass.",
+    "Company demonstrations, funding commitments and partner claims are not independently verified performance, transaction completion or external adoption.",
+    "Initial Gemini review and revision notes are superseded by the final-run session bound here. This independent model review is not human release approval.",
+    "Final reviewer raw text: review/gemini3.8-compact-final-1-raw.md; SHA256 97a9b2c7f066bef3582af96bcea614a0aeabdc549309ee3819721853d8e75d52.",
+    "PublishedAt is a proposed UTC date, not a claim that this item has been published. Its exact wrapper is pending shadow review and fresh human approval."
+  ],
+  "evidence": [
+    {
+      "id": "epoch-ai-glm53-firefox-patch-gap-2026-evidence-1",
+      "sourceId": "new26-epoch-ai",
+      "claimId": "epoch-experiment",
+      "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
+      "originId": "epochai-glm53-firefox-patchgap-experiment-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "GLM 5.3 successfully developed attacks against all six Firefox releases between September 17 and October 26",
+      "locator": "Epoch research results; controlled harness",
+      "artifact": "governance/evidence/2026-11-02/direct/epoch-patchgap.txt",
+      "sha256": "0431491a8fa4cc4c02c6f32f4f78b63a7095030d3ee26804346abed0d8646ad9"
+    },
+    {
+      "id": "epoch-ai-glm53-firefox-patch-gap-2026-evidence-2",
+      "sourceId": "new26-mozilla",
+      "claimId": "epoch-experiment",
+      "url": "https://blog.mozilla.org/en/firefox/privacy-security/defending-patch-gap/",
+      "originId": "mozilla-firefox-patchgap-defense-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "we’ve seen evidence that models like GLM 5.3 can exploit some of the fixes for bugs originally uncovered by more advanced models.",
+      "locator": "Mozilla operator response, not independently reproduced test",
+      "artifact": "governance/evidence/2026-11-02/direct/mozilla-patchgap.txt",
+      "sha256": "f373876c9c89e00ed11e8610f4b3e5c5b7b7fa9fb08abd237c1b23ba1736bf0c"
+    },
+    {
+      "id": "epoch-ai-glm53-firefox-patch-gap-2026-evidence-3",
+      "sourceId": "new26-epoch-ai",
+      "claimId": "epoch-limits",
+      "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
+      "originId": "epochai-glm53-firefox-patchgap-experiment-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We have not yet confirmed whether similar attacks can succeed on 159.0",
+      "locator": "Epoch results, patched version boundary",
+      "artifact": "governance/evidence/2026-11-02/direct/epoch-patchgap.txt",
+      "sha256": "0431491a8fa4cc4c02c6f32f4f78b63a7095030d3ee26804346abed0d8646ad9"
+    },
+    {
+      "id": "epoch-ai-glm53-firefox-patch-gap-2026-evidence-4",
+      "sourceId": "new26-epoch-ai",
+      "claimId": "epoch-limits",
+      "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
+      "originId": "epochai-glm53-firefox-patchgap-experiment-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "have not been able to create an equivalent exploit",
+      "locator": "Epoch Chrome negative test",
+      "artifact": "governance/evidence/2026-11-02/direct/epoch-patchgap.txt",
+      "sha256": "0431491a8fa4cc4c02c6f32f4f78b63a7095030d3ee26804346abed0d8646ad9"
+    }
+  ]
+}

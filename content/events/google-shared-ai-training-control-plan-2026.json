@@ -1,0 +1,113 @@
+{
+  "id": "google-shared-ai-training-control-plan-2026",
+  "slug": "google-shared-ai-training-control-plan-2026",
+  "date": "2026-10-30",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-10-30",
+    "zhHans": "2026年10月30日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Google plans to support a shared robots.txt AI-training preference",
+    "zhHans": "谷歌计划支持通用 robots.txt AI 训练偏好信号"
+  },
+  "searchSummary": {
+    "en": "Google announced on October 30 that it plans to interpret a shared robots.txt training-preference token; the underlying Internet-Draft has no IETF endorsement.",
+    "zhHans": "谷歌于 10 月 30 日宣布计划识别通用 robots.txt 训练偏好标记；相关互联网草案尚未获 IETF 背书。"
+  },
+  "summary": {
+    "en": "On October 30, Google Search Central announced plans to support a shared robots.txt policy token that lets sites express AI-training preferences across participating providers. Google said it plans, subject to its described conditions, to interpret an opt-out as disallowing Google-Extended. A related individual Internet-Draft describes the mechanism but states explicitly that it is not endorsed by the IETF. These are an implementation plan and working draft, not proof that Google or other providers already enforce the preference.",
+    "zhHans": "谷歌搜索中心于 10 月 30 日宣布，计划支持一种通用 robots.txt 策略标记，使网站向参与的服务商表达 AI 训练偏好。谷歌称，在所述条件下，计划将退出训练的标记解释为禁止 Google-Extended。相关个人互联网草案描述了机制，同时明确表示尚未获得 IETF 背书。这分别是实施计划和工作草案，不能证明谷歌或其他服务商已经实际执行该偏好。"
+  },
+  "narrative": {
+    "en": "This is a platform control plan for publishers rather than a binding legal rule or adopted internet standard. The author of the IETF individual draft works at Anthropic; publication on an IETF domain does not itself certify multisector agreement. OpenAI’s related announcement returned HTTP 403 in this packet and is not used to assert its enforcement.",
+    "zhHans": "这是面向出版者的平台控制计划，并非有约束力的法律或已采纳的互联网标准。相关 IETF 个人草案作者来自 Anthropic；刊登在 IETF 域名本身不证明业界已达成共识。本轮访问 OpenAI 相关公告返回 HTTP 403，因此不据此宣称其已执行新规则。"
+  },
+  "claims": [
+    {
+      "id": "robots-plan",
+      "claimType": "fact",
+      "text": {
+        "en": "Google announced on October 30, 2026 that it plans to support a shared robots.txt AI-training preference token.",
+        "zhHans": "谷歌于 2026 年 10 月 30 日宣布，计划支持通用 robots.txt AI 训练偏好标记。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-google-robots"
+      ]
+    },
+    {
+      "id": "robots-draft",
+      "claimType": "limitation",
+      "text": {
+        "en": "Google describes intended interpretation of the opt-out under stated conditions; the related individual Internet-Draft is not endorsed by the IETF and no enforcement is established here.",
+        "zhHans": "谷歌描述了在限定条件下计划如何解释退出训练标记；相关个人互联网草案尚未获 IETF 背书，本轮也未证明该规则已被执行。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-google-robots",
+        "new26-ietf-draft"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "eu-ai-act-transparency-2026",
+    "openai-strategic-futures-governance-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-02",
+    "updatedAt": "2026-11-02",
+    "lastSourceCheckAt": "2026-11-02",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-11-02",
+        "changeType": "created",
+        "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+      }
+    ],
+    "reviewedAt": "2026-11-02",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a19a59-3c89-7555-a151-fbb021e59ecd",
+    "reviewRecord": "governance/reviews/independent-20261102/google-shared-ai-training-control-plan-2026.json",
+    "publishedAt": "2026-11-02"
+  },
+  "sources": [
+    {
+      "sourceId": "new26-google-robots",
+      "supports": [
+        "google-shared-ai-training-control-plan-2026",
+        "robots-plan",
+        "robots-draft"
+      ]
+    },
+    {
+      "sourceId": "new26-ietf-draft",
+      "supports": [
+        "google-shared-ai-training-control-plan-2026",
+        "robots-draft"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "mistral-large-4-open-weights-2026",
+  "inputSubjectDigest": "aa41f5ccd60003706cded71ca0ed90196ed1d651c0822454434e443bf395cb27",
+  "subjectDigest": "8d09980b5042fb435a8e09e38b87aa2214fcd34e06d715c25a09f0ef41ce9510",
+  "inputsDigest": "62283b89d7c9418799475fae0d79bec968794b2ce3368fcafff8af0b35bb1521",
+  "evidenceCutoff": "2026-11-02",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a19a57-4466-7424-b92a-843f3854fc66",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-02",
+  "candidateId": "nov02-mistral-large4-weights",
+  "runDigest": "63172da61973c847f39166202b507795cbfd7a86f6f0ddf77207745716982189",
+  "coreFactClaimIds": [
+    "ml4-weight"
+  ],
+  "identity": {
+    "seriesId": "mistral-large-4",
+    "action": "publish improved Large 4 weights",
+    "stage": "available",
+    "dateBasis": "HF blog dates Oct 29; Mistral announces weight release; repository existed earlier but current lastModified is not first public download",
+    "decision": "new",
+    "comparedEventIds": [
+      "minimax-m31-flash-weights-2026",
+      "reflection-beam-open-weights-2026"
+    ],
+    "deduplicationReason": "This exact date, actor, action and stage is absent from the published archive; the comparison IDs identify earlier or otherwise distinct stages, not a duplicate."
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The dated action is publish improved Large 4 weights; the product category follows the action, not a hoped-for downstream effect."
+  },
+  "significance": {
+    "rationale": "This is a dated, quoted available event with core fact support; no independently supported L2 pathway or sustained cross-domain change is established.",
+    "whyNotHigher": "The required independent action/replication or observed production-usage threshold is not established.",
+    "whyNotLower": "The dated original event has direct evidence beyond a search result and is distinct from listed comparator stages.",
+    "comparisonEventIds": [
+      "minimax-m31-flash-weights-2026",
+      "reflection-beam-open-weights-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "Mistral published model weights and Hugging Face documented the hosted artifacts. This is access, not independent production adoption.",
+            "evidenceIds": [
+              "mistral-large-4-open-weights-2026-evidence-1",
+              "mistral-large-4-open-weights-2026-evidence-2",
+              "mistral-large-4-open-weights-2026-evidence-3",
+              "mistral-large-4-open-weights-2026-evidence-4",
+              "mistral-large-4-open-weights-2026-evidence-5",
+              "mistral-large-4-open-weights-2026-evidence-6"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No retained evidence establishes the unaffiliated_production_organizations milestone for L2-PRODUCT-ACCESS; null denotes unknown, not false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "No measured and independently verified external effects warrant broad consensus.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate evidence-backed material dispute was established within the bounded search; this does not show no dispute exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent Gemini session checked the full English and Simplified Chinese factual draft for subject, date, numeric amount, stages, attribution, scope, negation and uncertainty; initial DeepSeek Chinese classifier was corrected and rechecked."
+  },
+  "limitations": [
+    "The run accounts for all required channels but remains partial/unavailable for Reddit, X, newsletters, HF and keyword HN; no exhaustive-window claim.",
+    "Only bounded original-source excerpts were supplied for long pages; quote hashes prove local artifact integrity, not remote truth or full semantic coverage.",
+    "OpenAI official announcements returned HTTP 403 and were not treated as read sources; no access restriction bypass.",
+    "Company demonstrations, funding commitments and partner claims are not independently verified performance, transaction completion or external adoption.",
+    "Initial Gemini review and revision notes are superseded by the final-run session bound here. This independent model review is not human release approval.",
+    "Final reviewer raw text: review/gemini3.8-compact-final-1-raw.md; SHA256 97a9b2c7f066bef3582af96bcea614a0aeabdc549309ee3819721853d8e75d52.",
+    "PublishedAt is a proposed UTC date, not a claim that this item has been published. Its exact wrapper is pending shadow review and fresh human approval."
+  ],
+  "evidence": [
+    {
+      "id": "mistral-large-4-open-weights-2026-evidence-1",
+      "sourceId": "new26-mistral-weights",
+      "claimId": "ml4-weight",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "originId": "mistral-large4-weight-release-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we're releasing the weights of this improved Mistral Large 4.",
+      "locator": "Mistral announcement, release paragraph",
+      "artifact": "governance/evidence/2026-11-02/direct/mistral-weights.txt",
+      "sha256": "352f4cf495215f76d21b4b56887bbca180dd0ab2e8cf7903ecc2f200b5a9aade"
+    },
+    {
+      "id": "mistral-large-4-open-weights-2026-evidence-2",
+      "sourceId": "new26-mistral-preview",
+      "claimId": "ml4-weight",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "originId": "mistral-large4-public-preview-20261006",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "October 6, 2026",
+      "locator": "Original preview announcement dateline",
+      "artifact": "governance/evidence/2026-11-02/direct/mistral-preview.txt",
+      "sha256": "737c5611e8911ab61294855f00134b10892f4afdfc01ed16bc57c2facde3ff8d"
+    },
+    {
+      "id": "mistral-large-4-open-weights-2026-evidence-3",
+      "sourceId": "new26-mistral-preview",
+      "claimId": "ml4-weight",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "originId": "mistral-large4-public-preview-20261006",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we’re launching a\npublic preview",
+      "locator": "Original preview announcement scope",
+      "artifact": "governance/evidence/2026-11-02/direct/mistral-preview.txt",
+      "sha256": "737c5611e8911ab61294855f00134b10892f4afdfc01ed16bc57c2facde3ff8d"
+    },
+    {
+      "id": "mistral-large-4-open-weights-2026-evidence-4",
+      "sourceId": "new26-mistral-hf",
+      "claimId": "ml4-weight",
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "originId": "huggingface-large4-weight-hosting-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "independent",
+      "verification": "direct",
+      "quote": "October 29, 2026",
+      "locator": "HF publication date",
+      "artifact": "governance/evidence/2026-11-02/direct/mistral-hf-blog.txt",
+      "sha256": "f069712a59c029cc4c75fdad30b48500828504563bf16f8959a308dd1f6b686a"
+    },
+    {
+      "id": "mistral-large-4-open-weights-2026-evidence-5",
+      "sourceId": "new26-mistral-hf",
+      "claimId": "ml4-weight",
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "originId": "huggingface-large4-weight-hosting-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "independent",
+      "verification": "direct",
+      "quote": "mistralai/Mistral-Large-4-1T-A52B",
+      "locator": "HF host deployment/model listing",
+      "artifact": "governance/evidence/2026-11-02/direct/mistral-hf-blog.txt",
+      "sha256": "f069712a59c029cc4c75fdad30b48500828504563bf16f8959a308dd1f6b686a"
+    },
+    {
+      "id": "mistral-large-4-open-weights-2026-evidence-6",
+      "sourceId": "new26-mistral-nextweb",
+      "claimId": "ml4-weight",
+      "url": "https://thenextweb.com/news/mistral-large-4-open-weights-release",
+      "originId": "thenextweb-mistral-large4-report-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Mistral has released the weights of Mistral Large 4",
+      "locator": "independent report opening",
+      "artifact": "governance/evidence/2026-11-02/direct/mistral-nextweb.txt",
+      "sha256": "4877b1f516ff67b28328c011e116b9dd798ec865627a80ee644eaaafbd7ca2c0"
+    },
+    {
+      "id": "mistral-large-4-open-weights-2026-evidence-7",
+      "sourceId": "new26-mistral-license",
+      "claimId": "ml4-license",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/raw/main/LICENSE",
+      "originId": "mistral-large4-license-2026",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "If the Licensee or any of its affiliates operates a Model as a Service business, the Licensee must enter into a separate commercial license with Mistral",
+      "locator": "License section 2",
+      "artifact": "governance/evidence/2026-11-02/direct/mistral-license.txt",
+      "sha256": "4b33797a78a44d5421c1f8552a6a6dbcc6fb28075891aa1073e25cb163654fa8"
+    }
+  ]
+}

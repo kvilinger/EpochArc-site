@@ -1,0 +1,148 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "deepseek-dsh-superagent-prototype-2026",
+  "inputSubjectDigest": "390017da28dd54f25b376b449ac8ff8be9166800e3a50147568b8236f4bf9ae4",
+  "subjectDigest": "ef7a5c7de094300bd24fac7c91c6354cca67b5b0e8edcffa2680b43825fe2bb3",
+  "inputsDigest": "2539ed508d26d4846d9701610ae4bde58e15e71ff992357805868b6b02356518",
+  "evidenceCutoff": "2026-11-02",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a19a58-b82f-73c9-ad96-f650bac3a402",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a19a58-b82f-73c9-ad96-f650bac3a402",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-02",
+  "candidateId": "nov02-deepseek-superagent-prototype",
+  "runDigest": "63172da61973c847f39166202b507795cbfd7a86f6f0ddf77207745716982189",
+  "coreFactClaimIds": [
+    "deepseek-code"
+  ],
+  "identity": {
+    "seriesId": "deepseek-harness-superagent",
+    "action": "publish research prototype repository",
+    "stage": "available",
+    "dateBasis": "GitHub repo created 2026-10-31T09:32Z; no proof of first public download",
+    "decision": "new",
+    "comparedEventIds": [
+      "reflection-beam-open-weights-2026",
+      "claude-duet-research-preview-2026"
+    ],
+    "deduplicationReason": "This exact date, actor, action and stage is absent from the published archive; the comparison IDs identify earlier or otherwise distinct stages, not a duplicate."
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Public availability of experimental coding-tool source code is a product/access action even though the README rejects official or production-ready product status."
+  },
+  "significance": {
+    "rationale": "This is a dated, quoted available event with core fact support; no independently supported L2 pathway or sustained cross-domain change is established.",
+    "whyNotHigher": "The required independent action/replication or observed production-usage threshold is not established.",
+    "whyNotLower": "The dated original event has direct evidence beyond a search result and is distinct from listed comparator stages.",
+    "comparisonEventIds": [
+      "reflection-beam-open-weights-2026",
+      "claude-duet-research-preview-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "No retained evidence establishes the new_workflow milestone for L2-PRODUCT; null denotes unknown, not false.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No retained evidence establishes the unaffiliated_production_organizations milestone for L2-PRODUCT; null denotes unknown, not false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "No measured and independently verified external effects warrant broad consensus.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate evidence-backed material dispute was established within the bounded search; this does not show no dispute exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent Gemini session checked the full English and Simplified Chinese factual draft for subject, date, numeric amount, stages, attribution, scope, negation and uncertainty; initial DeepSeek Chinese classifier was corrected and rechecked."
+  },
+  "limitations": [
+    "The run accounts for all required channels but remains partial/unavailable for Reddit, X, newsletters, HF and keyword HN; no exhaustive-window claim.",
+    "Only bounded original-source excerpts were supplied for long pages; quote hashes prove local artifact integrity, not remote truth or full semantic coverage.",
+    "OpenAI official announcements returned HTTP 403 and were not treated as read sources; no access restriction bypass.",
+    "Company demonstrations, funding commitments and partner claims are not independently verified performance, transaction completion or external adoption.",
+    "Initial Gemini review and revision notes are superseded by the final-run session bound here. This independent model review is not human release approval.",
+    "Final reviewer raw text: review/gemini3.8-pair-final-3-raw.md; SHA256 9183aaa4a11f845b99d524e04b8af4c72ba0682b07152a479a5a42baf37f2611.",
+    "PublishedAt is a proposed UTC date, not a claim that this item has been published. Its exact wrapper is pending shadow review and fresh human approval."
+  ],
+  "evidence": [
+    {
+      "id": "deepseek-dsh-superagent-prototype-2026-evidence-1",
+      "sourceId": "new26-deepseek-api",
+      "claimId": "deepseek-code",
+      "url": "https://api.github.com/repos/deepseek-ai/dsh-superagent-prototype",
+      "originId": "deepseek-superagent-repo-20261031",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "\"created_at\": \"2026-10-31T09:32:46Z\"",
+      "locator": "GitHub repository metadata creation field",
+      "artifact": "governance/evidence/2026-11-02/direct/deepseek-github.txt",
+      "sha256": "8bbb91e3b955982ce972b19ecb4e05d9856d7baeb1e9ab50c2a5d73db357a84f"
+    },
+    {
+      "id": "deepseek-dsh-superagent-prototype-2026-evidence-2",
+      "sourceId": "new26-deepseek-readme",
+      "claimId": "deepseek-code",
+      "url": "https://raw.githubusercontent.com/deepseek-ai/dsh-superagent-prototype/main/README.md",
+      "originId": "deepseek-superagent-prototype-readme-20261031",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "dsh-superagent is a proactive coding agent for one GitHub repository",
+      "locator": "Project README first paragraph",
+      "artifact": "governance/evidence/2026-11-02/direct/deepseek-readme.txt",
+      "sha256": "737997cf5b7d4129f12ed5485ebbdd5e9d2ce3859a82ded6ac535d222327b713"
+    },
+    {
+      "id": "deepseek-dsh-superagent-prototype-2026-evidence-3",
+      "sourceId": "new26-deepseek-readme",
+      "claimId": "deepseek-limits",
+      "url": "https://raw.githubusercontent.com/deepseek-ai/dsh-superagent-prototype/main/README.md",
+      "originId": "deepseek-superagent-prototype-readme-20261031",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Research prototype for reference only, not an official DeepSeek product.",
+      "locator": "README disclaimer",
+      "artifact": "governance/evidence/2026-11-02/direct/deepseek-readme.txt",
+      "sha256": "737997cf5b7d4129f12ed5485ebbdd5e9d2ce3859a82ded6ac535d222327b713"
+    },
+    {
+      "id": "deepseek-dsh-superagent-prototype-2026-evidence-4",
+      "sourceId": "new26-deepseek-readme",
+      "claimId": "deepseek-limits",
+      "url": "https://raw.githubusercontent.com/deepseek-ai/dsh-superagent-prototype/main/README.md",
+      "originId": "deepseek-superagent-prototype-readme-20261031",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "not production-ready software",
+      "locator": "README disclaimer",
+      "artifact": "governance/evidence/2026-11-02/direct/deepseek-readme.txt",
+      "sha256": "737997cf5b7d4129f12ed5485ebbdd5e9d2ce3859a82ded6ac535d222327b713"
+    }
+  ]
+}

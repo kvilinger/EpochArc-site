@@ -1,0 +1,135 @@
+{
+  "id": "mistral-large-4-open-weights-2026",
+  "slug": "mistral-large-4-open-weights-2026",
+  "date": "2026-10-29",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-10-29",
+    "zhHans": "2026年10月29日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Mistral releases Large 4 model weights after public preview",
+    "zhHans": "Mistral 在公开预览后发布 Large 4 模型权重"
+  },
+  "searchSummary": {
+    "en": "Mistral released Large 4 weights on October 29; the license requires a separate commercial agreement for some hosted services.",
+    "zhHans": "Mistral 于 10 月 29 日发布 Large 4 权重；部分托管服务商业使用须另行签约。"
+  },
+  "summary": {
+    "en": "Mistral released the weights of an updated Mistral Large 4 model on October 29, after its October 6 public preview. Hugging Face documented the hosted model files. The Mistral Ecosystem Open-Weight License permits many uses but requires a separate commercial license for businesses operating Model-as-a-Service. The available material does not establish the first public-download minute, independent benchmark superiority or measured deployment.",
+    "zhHans": "Mistral 于 10 月 29 日发布更新版 Mistral Large 4 的权重，此前该模型于 10 月 6 日进入公开预览。Hugging Face 记录了托管模型文件。Mistral Ecosystem Open-Weight 许可允许多种使用方式，但运营模型即服务业务的企业须另行取得商业许可。现有材料无法确定公众首次下载的具体时间，也不能证明跑分优势已被独立复现或模型已实际部署。"
+  },
+  "narrative": {
+    "en": "This node records the transition from a public preview to accessible weights, not a second first launch. The October 29 date comes from the host’s dated article and independent reporting; the repository existed earlier. Company benchmark claims and quoted partner plans are not treated as measured adoption.",
+    "zhHans": "本节点记录的是从公开预览转向权重可用，并非再次首次发布。10 月 29 日依据托管方文章和独立报道；仓库此前已存在。厂商跑分及合作方的计划表述不计作已测量的采用。"
+  },
+  "claims": [
+    {
+      "id": "ml4-weight",
+      "claimType": "fact",
+      "text": {
+        "en": "On October 29, 2026, Mistral published improved Large 4 model weights after the October 6 preview, with files documented on Hugging Face.",
+        "zhHans": "2026 年 10 月 29 日，Mistral 在 10 月 6 日预览之后发布更新版 Large 4 权重，Hugging Face 记录了模型文件。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-mistral-weights",
+        "new26-mistral-preview",
+        "new26-mistral-hf",
+        "new26-mistral-nextweb"
+      ]
+    },
+    {
+      "id": "ml4-license",
+      "claimType": "limitation",
+      "text": {
+        "en": "The repository license requires businesses operating Model-as-a-Service to obtain a separate Mistral commercial license before commercial use; this is not unrestricted MIT use.",
+        "zhHans": "仓库许可要求运营模型即服务业务的企业在商业使用前另行取得 Mistral 商业许可，不属于不受限制的 MIT 使用。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-mistral-license"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "minimax-m31-flash-weights-2026",
+    "reflection-beam-open-weights-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-02",
+    "updatedAt": "2026-11-02",
+    "lastSourceCheckAt": "2026-11-02",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-11-02",
+        "changeType": "created",
+        "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+      }
+    ],
+    "reviewedAt": "2026-11-02",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+    "reviewRecord": "governance/reviews/independent-20261102/mistral-large-4-open-weights-2026.json",
+    "publishedAt": "2026-11-02"
+  },
+  "sources": [
+    {
+      "sourceId": "new26-mistral-weights",
+      "supports": [
+        "mistral-large-4-open-weights-2026",
+        "ml4-weight"
+      ]
+    },
+    {
+      "sourceId": "new26-mistral-preview",
+      "supports": [
+        "mistral-large-4-open-weights-2026",
+        "ml4-weight"
+      ]
+    },
+    {
+      "sourceId": "new26-mistral-hf",
+      "supports": [
+        "mistral-large-4-open-weights-2026",
+        "ml4-weight"
+      ]
+    },
+    {
+      "sourceId": "new26-mistral-nextweb",
+      "supports": [
+        "mistral-large-4-open-weights-2026",
+        "ml4-weight"
+      ]
+    },
+    {
+      "sourceId": "new26-mistral-license",
+      "supports": [
+        "mistral-large-4-open-weights-2026",
+        "ml4-license"
+      ]
+    }
+  ]
+}

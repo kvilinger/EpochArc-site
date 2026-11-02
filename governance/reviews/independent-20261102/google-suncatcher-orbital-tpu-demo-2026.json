@@ -1,0 +1,139 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-suncatcher-orbital-tpu-demo-2026",
+  "inputSubjectDigest": "e507f19176b142e7fd12627a9f5f78b0bdb5a6d9f775316bf792d3f19bb299a8",
+  "subjectDigest": "b2798d2cf16acee39d4f48cc9150540f887d2698370ccd47ca1535402e3912aa",
+  "inputsDigest": "9d7a81d7da45f26dcd290466c9e6b2c6dc07412de4571f73d06e8bc4ef4d31e4",
+  "evidenceCutoff": "2026-11-02",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a19a59-3c89-7555-a151-fbb021e59ecd",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a19a59-3c89-7555-a151-fbb021e59ecd",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-02",
+  "candidateId": "nov02-google-suncatcher-response",
+  "runDigest": "63172da61973c847f39166202b507795cbfd7a86f6f0ddf77207745716982189",
+  "coreFactClaimIds": [
+    "orbit-disclosure"
+  ],
+  "identity": {
+    "seriesId": "google-project-suncatcher",
+    "action": "report first generated response from orbital prototype",
+    "stage": "disclosed",
+    "dateBasis": "Oct30 Google post states test this week; exact response timestamp not given so node is dated disclosure",
+    "decision": "new",
+    "comparedEventIds": [
+      "gemini-robotics-2025",
+      "google-oracle-tpu-oci-2026"
+    ],
+    "deduplicationReason": "This exact date, actor, action and stage is absent from the published archive; the comparison IDs identify earlier or otherwise distinct stages, not a duplicate."
+  },
+  "classification": {
+    "primary": "capability",
+    "reason": "The dated action is report first generated response from orbital prototype; the capability category follows the action, not a hoped-for downstream effect."
+  },
+  "significance": {
+    "rationale": "This is a dated, quoted disclosed event with core fact support; no independently supported L2 pathway or sustained cross-domain change is established.",
+    "whyNotHigher": "The required independent action/replication or observed production-usage threshold is not established.",
+    "whyNotLower": "The dated original event has direct evidence beyond a search result and is distinct from listed comparator stages.",
+    "comparisonEventIds": [
+      "gemini-robotics-2025",
+      "google-oracle-tpu-oci-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-CAPABILITY",
+        "criteria": {
+          "previously_infeasible_task": {
+            "value": null,
+            "rationale": "No retained evidence establishes the previously_infeasible_task milestone for L2-CAPABILITY; null denotes unknown, not false.",
+            "evidenceIds": []
+          },
+          "comparable_baseline": {
+            "value": null,
+            "rationale": "No retained evidence establishes the comparable_baseline milestone for L2-CAPABILITY; null denotes unknown, not false.",
+            "evidenceIds": []
+          },
+          "independent_replication": {
+            "value": null,
+            "rationale": "No retained evidence establishes the independent_replication milestone for L2-CAPABILITY; null denotes unknown, not false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "No measured and independently verified external effects warrant broad consensus.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate evidence-backed material dispute was established within the bounded search; this does not show no dispute exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent Gemini session checked the full English and Simplified Chinese factual draft for subject, date, numeric amount, stages, attribution, scope, negation and uncertainty; initial DeepSeek Chinese classifier was corrected and rechecked."
+  },
+  "limitations": [
+    "The run accounts for all required channels but remains partial/unavailable for Reddit, X, newsletters, HF and keyword HN; no exhaustive-window claim.",
+    "Only bounded original-source excerpts were supplied for long pages; quote hashes prove local artifact integrity, not remote truth or full semantic coverage.",
+    "OpenAI official announcements returned HTTP 403 and were not treated as read sources; no access restriction bypass.",
+    "Company demonstrations, funding commitments and partner claims are not independently verified performance, transaction completion or external adoption.",
+    "Initial Gemini review and revision notes are superseded by the final-run session bound here. This independent model review is not human release approval.",
+    "Final reviewer raw text: review/gemini3.8-pair-final-4-raw.md; SHA256 b776f752e7ab3a05e6ef16abe247205b15ccd180f3d002e0386e8b7bfb2fffff.",
+    "PublishedAt is a proposed UTC date, not a claim that this item has been published. Its exact wrapper is pending shadow review and fresh human approval."
+  ],
+  "evidence": [
+    {
+      "id": "google-suncatcher-orbital-tpu-demo-2026-evidence-1",
+      "sourceId": "new26-google-orbit",
+      "claimId": "orbit-disclosure",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "originId": "google-suncatcher-20261030-demo-disclosure",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Oct 30, 2026",
+      "locator": "Google article dateline; actual response day unknown",
+      "artifact": "governance/evidence/2026-11-02/direct/google-suncatcher.txt",
+      "sha256": "84d264e4db6591aee9b1dc359b96764a8edd1b299e6041790ec8cad0aa0bc84a"
+    },
+    {
+      "id": "google-suncatcher-orbital-tpu-demo-2026-evidence-2",
+      "sourceId": "new26-google-orbit",
+      "claimId": "orbit-disclosure",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "originId": "google-suncatcher-20261030-demo-disclosure",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "During a ground-station pass, we uplinked our first prompt to our onboard Gemma 4 open model",
+      "locator": "Google article technical description",
+      "artifact": "governance/evidence/2026-11-02/direct/google-suncatcher.txt",
+      "sha256": "84d264e4db6591aee9b1dc359b96764a8edd1b299e6041790ec8cad0aa0bc84a"
+    },
+    {
+      "id": "google-suncatcher-orbital-tpu-demo-2026-evidence-3",
+      "sourceId": "new26-google-orbit",
+      "claimId": "orbit-limit",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "originId": "google-suncatcher-20261030-demo-disclosure",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "On October 1,\nwe launched our prototype satellite",
+      "locator": "Google article distinguishes earlier launch from late-October test",
+      "artifact": "governance/evidence/2026-11-02/direct/google-suncatcher.txt",
+      "sha256": "84d264e4db6591aee9b1dc359b96764a8edd1b299e6041790ec8cad0aa0bc84a"
+    }
+  ]
+}

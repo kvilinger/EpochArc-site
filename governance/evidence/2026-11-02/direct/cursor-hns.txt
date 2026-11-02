@@ -1,0 +1,192 @@
+Claude Code extension poisoned with persistent SSH backdoor - Help Net Security
+
+Help Net Security newsletters
+: Daily and weekly news, cybersecurity jobs, open source projects, breaking news –
+subscribe here!
+
+News
+
+Features
+
+CISO
+
+AI
+
+Videos
+
+Product showcase
+
+Industry news
+
+Reviews
+
+Whitepapers
+
+Events
+
+Newsletters
+
+Please turn on your JavaScript for this page to function normally.
+
+Sinisa Markovic
+, Managing Editor, Help Net Security
+
+October 30, 2026
+
+Share
+
+Claude Code extension poisoned with persistent SSH backdoor
+
+A tampered build of Anthropic’s Claude Code extension for VS Code-compatible editors planted an SSH backdoor on developers’ machines, researchers at macOS security firm Phorion have found.
+
+The company spotted the malicious package, version 2.1.313, on Open VSX, an open-source marketplace for VS Code extensions run by the Eclipse Foundation. VS Code’s default extension store is Microsoft’s Visual Studio Marketplace, where no malicious version has been reported. Its terms of use limit it to Microsoft’s own products, so editors built on the open-source VS Code codebase, including Cursor and Windsurf, can’t use it and rely on Open VSX instead.
+
+Planted keys and a hidden tunnel
+
+“The compromised extension.js file starts with an injected immediately invoked function expression (IIFE) prepended to the minified extension bundle. The rest of the bundle looks like the standard extension, with Claude Code and VS Code strings, normal activate and deactivate exports, and UI code,” Phorion CEO Calum Hall explained.
+
+“The injected prefix pulls in standard Node.js modules (child_process, fs, os, path, http, and crypto) and executes as soon as Node loads the file, before the extension’s normal activate callback even runs. The user doesn’t need to interact with the extension for the payload to fire,” he
+added
+.
+
+Once running, the code adds the attacker’s SSH key to the user’s authorized keys file, which would let the attacker log in as that user. It then opens an outbound SSH connection to the attacker’s server, creating a tunnel the operator can use to connect back to the victim’s machine. The tunnel keeps running after the editor is closed, and the malware retries the connection about every 60 seconds.
+
+To survive a reboot, the malware sets up persistence on each platform. On a Mac it installs a startup file with an Apple-style name, on Linux it adds a cron entry that runs at reboot, and on Windows it tries to create a scheduled task called SysMon and falls back to the Startup folder if that fails.
+
+Developer data sent to the operator
+
+The extension also reports back to the attacker’s server with the machine’s hostname, the username, operating system, home directory, working directory, Git email address and public IP address.
+
+It sends the names of up to 40 environment variables that look like keys, tokens, passwords or AWS and GCP credentials, too. The values stay on the machine, but Hall noted that the list gives the operator an inventory of which hosts hold cloud credentials or API tokens, and which ones to go after first.
+
+Faulty check limits damage on macOS
+
+The planted key only works if the machine’s SSH service is running, and on macOS the step that turns it on often never runs.
+
+Phorion traced the problem to a faulty check. The script asks the system whether Remote Login is off without administrator rights, gets an error message in return, and skips the step that would turn SSH on.
+
+Hall cautioned that the bug is no defence, since on a Mac with Remote Login already enabled, or one where the user turns it on later, the backdoor is ready to use.
+
+“The goal of this payload is long-term interactive access, and whilst the SSH backdoor bug minimises impact on macOS, the malware is still a significant threat that installs persistence and beacons host reconnaissance back to the operator,” Hall stressed.
+
+Up to 5,000 Cursor users affected
+
+In a security notice, Cursor said the malicious version was available in its VS Code extension marketplace for about 11 hours on October 29, 2026. At most 5,000 users were affected, and the company plans to contact them directly.
+
+“This malicious version of the extension was not developed by Anthropic,” the company stated, adding that it has no evidence other versions of the extension or the official distribution were affected.
+
+According to Cursor, turning on SSH requires admin rights the extension lacks on most Mac and Windows hosts, and on those machines the attacker could not have logged in through the tunnel. The company worked with the cloud provider hosting the attacker’s server to take it offline, which stopped both the tunnel and the data reports from working.
+
+After pulling the malicious version, Cursor shut down its VS Code marketplace as a precaution, audited access and found no other tampered extensions. It then rotated its keys and rebuilt the marketplace, which it reinstated “after confirming there is no further risk,” the company
+said
+on X. The incident does not affect other extensions downloaded from the Cursor marketplace, Grok Bot, Grok or the company’s other SpaceXSI products, it added.
+
+Cleanup goes beyond uninstalling
+
+Uninstalling the extension won’t remove the backdoor, Phorion warned. Cursor said removal alone may not be enough, because the payload drops standalone scripts that keep running.
+
+Anyone who installed or updated to version 2.1.313 should check their SSH authorized keys file for an entry labelled svc-telemetry. Cursor
+has
+published commands for the check and cleanup scripts for macOS and Windows, and both companies have shared indicators of compromise.
+
+Cursor also advises isolating affected machines, considering a rebuild, and rotating any credentials and sessions the machine could reach, using a trusted system to do it. It noted that the limited data collection does not rule out later credential access through the backdoor. To find out whether an operator logged in, Phorion suggests checking SSH logs for logins from localhost that used the svc-telemetry key.
+
+UPDATE (October 30, 2026, 08:03 a.m. ET):
+
+Ax Sharma, Head of Research at Manifold Security, disputes reports that the Open VSX version was also compromised.
+
+“In this case, there was no impersonation to spot. This was the official Claude Code extension in Cursor’s own marketplace, and one poisoned listing pushed an SSH backdoor to up to 5,000 users. Increasingly, it’s agents and automatic updates installing these things, not humans. Checking the publisher name doesn’t help when the publisher is real. What helps is watching behaviour: a coding extension planting SSH keys should be caught in seconds,” he said.
+
+More about
+
+AI
+
+Anthropic
+
+backdoor
+
+Claude Code
+
+cybercrime
+
+macOS
+
+supply chain attacks
+
+Share
+
+Featured
+news
+
+Binance hit by $6.3 billion theft in what could be the biggest crypto heist on record
+
+What exactly is ISOC? And what does it mean for you?
+
+Chinese hackers used VMware ESX zero-day; PHP2Shell and Fragnesia chained to root firewalls
+
+Download: The IT and security field guide to AI adoption
+
+Resources
+
+Download: The IT leader’s guide to AI code sprawl
+
+eBook: Identity-First Threat Intelligence
+
+Download: The Agentic Software Development Guide
+
+Don't
+miss
+
+Binance hit by $6.3 billion theft in what could be the biggest crypto heist on record
+
+Fake IT help desk callers got by on little more than names and email addresses
+
+What exactly is ISOC? And what does it mean for you?
+
+Chinese hackers used VMware ESX zero-day; PHP2Shell and Fragnesia chained to root firewalls
+
+Researchers broke the browsers built into VS Code, Cursor, Copilot, Codex and Claude Desktop
+
+Cybersecurity news
+
+HNS Daily
+
+Daily newsletter sent Monday-Friday
+
+HNS Newsletter
+
+Weekly newsletter sent on Mondays
+
+InSecure Newsletter
+
+Editor's choice newsletter sent twice a month
+
+Cybersecurity news alerts
+
+Periodical newsletter released for important security events and breaking news
+
+Cybersecurity jobs
+
+Weekly newsletter listing new cybersecurity job positions
+
+Open source
+
+Monthly newsletter focusing on open source cybersecurity tools
+
+Subscribe
+
+I have read and agree to the
+terms & conditions
+
+© Copyright 1998-2026 by
+Help Net Security
+
+Read our privacy policy
+|
+About us
+|
+Advertise
+
+Follow us
+
+×

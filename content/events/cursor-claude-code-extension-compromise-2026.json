@@ -1,0 +1,121 @@
+{
+  "id": "cursor-claude-code-extension-compromise-2026",
+  "slug": "cursor-claude-code-extension-compromise-2026",
+  "date": "2026-10-29",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-10-29",
+    "zhHans": "2026年10月29日"
+  },
+  "categories": [
+    "safety"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Cursor removes malicious Claude Code extension builds from its marketplace",
+    "zhHans": "Cursor 从扩展市场移除恶意 Claude Code 构建版本"
+  },
+  "searchSummary": {
+    "en": "Malicious versions of the Claude Code extension were available in Cursor’s marketplace for roughly 11 hours on October 29.",
+    "zhHans": "10 月 29 日，恶意 Claude Code 扩展版本在 Cursor 市场可获取约 11 小时。"
+  },
+  "summary": {
+    "en": "Cursor said modified Claude Code extension builds 2.1.312 and 2.1.313 were available through its marketplace for macOS and Windows from roughly 2:27 a.m. to 1:35 p.m. Pacific time on October 29. It removed the affected builds and shut down the marketplace during its response. StepSecurity separately analyzed malicious code added to a clean extension bundle. Cursor’s reported ceiling of 5,000 potentially affected users is not a count of compromised devices; credential theft or broader distribution is not established.",
+    "zhHans": "Cursor 称，10 月 29 日太平洋时间约凌晨 2:27 至下午 1:35，macOS 和 Windows 用户可从其扩展市场取得被修改的 Claude Code 扩展构建 2.1.312、2.1.313。公司随后移除相关版本，并在处置期间关闭市场。StepSecurity 独立分析了添加到正常扩展包中的恶意代码。Cursor 所称最多 5,000 名可能受影响用户不是已被入侵设备数量；现有证据也无法确定凭据已被窃取或其他发行渠道受影响。"
+  },
+  "narrative": {
+    "en": "The dated action is malicious marketplace distribution and removal, not a flaw in Claude’s model. The modified builds were not developed by Anthropic. Technical analysis identifies an attempted persistent SSH-access mechanism; actual success depends on host conditions and is not inferred for every downloader.",
+    "zhHans": "事件记录的是扩展市场的恶意版本分发与移除，不是 Claude 模型本身的缺陷。修改后的构建并非 Anthropic 开发。技术分析识别出尝试建立持久 SSH 访问的机制，但是否成功取决于主机条件，不能推断每位下载者都遭入侵。"
+  },
+  "claims": [
+    {
+      "id": "cursor-incident",
+      "claimType": "fact",
+      "text": {
+        "en": "On October 29, modified Claude Code extension builds were available in the Cursor marketplace for roughly 11 hours; Cursor removed them, and StepSecurity independently inspected the altered package.",
+        "zhHans": "10 月 29 日，被修改的 Claude Code 扩展构建在 Cursor 市场可获取约 11 小时；Cursor 随后移除，StepSecurity 独立检验了遭修改的扩展包。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-cursor",
+        "new26-stepsecurity"
+      ]
+    },
+    {
+      "id": "cursor-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "Cursor reported no evidence that the official distribution or other extension versions were affected; its at-most-5,000 user estimate does not establish a number of compromised machines.",
+        "zhHans": "Cursor 表示没有证据显示官方发行渠道或扩展的其他版本受影响；其“最多 5,000 名用户”的估计不能证明有多少设备实际遭入侵。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-cursor",
+        "new26-hns-cursor"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "cloudflare-glm53-kv-cache-exposure-2026",
+    "openai-hf-breach-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-02",
+    "updatedAt": "2026-11-02",
+    "lastSourceCheckAt": "2026-11-02",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-11-02",
+        "changeType": "created",
+        "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+      }
+    ],
+    "reviewedAt": "2026-11-02",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+    "reviewRecord": "governance/reviews/independent-20261102/cursor-claude-code-extension-compromise-2026.json",
+    "publishedAt": "2026-11-02"
+  },
+  "sources": [
+    {
+      "sourceId": "new26-cursor",
+      "supports": [
+        "cursor-claude-code-extension-compromise-2026",
+        "cursor-incident",
+        "cursor-limits"
+      ]
+    },
+    {
+      "sourceId": "new26-stepsecurity",
+      "supports": [
+        "cursor-claude-code-extension-compromise-2026",
+        "cursor-incident"
+      ]
+    },
+    {
+      "sourceId": "new26-hns-cursor",
+      "supports": [
+        "cursor-claude-code-extension-compromise-2026",
+        "cursor-limits"
+      ]
+    }
+  ]
+}

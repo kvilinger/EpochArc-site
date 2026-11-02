@@ -1,0 +1,113 @@
+{
+  "id": "epoch-ai-glm53-firefox-patch-gap-2026",
+  "slug": "epoch-ai-glm53-firefox-patch-gap-2026",
+  "date": "2026-10-29",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-10-29",
+    "zhHans": "2026年10月29日"
+  },
+  "categories": [
+    "capability"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Epoch AI reports GLM-5.3 patch-gap exploits in controlled Firefox tests",
+    "zhHans": "Epoch AI 报告 GLM-5.3 在受控测试中利用 Firefox 补丁空窗期"
+  },
+  "searchSummary": {
+    "en": "Epoch AI published a controlled GLM-5.3 Firefox exploit experiment on October 29; no real-world attacks were established.",
+    "zhHans": "Epoch AI 于 10 月 29 日公布 GLM-5.3 的 Firefox 受控利用实验；未证明真实世界攻击。"
+  },
+  "summary": {
+    "en": "Epoch AI reported on October 29 that, in its controlled setup, GLM-5.3 constructed working attack chains against six Firefox releases dated September 17–October 26 using pending security fixes and a separate, then-unpublished vulnerability. Mozilla separately described the patch-gap risk and defense work. Firefox 159.0 had patched the additional vulnerability on October 27. The test does not show wild exploitation, independent reproduction of all six results, or an equivalent Chrome exploit.",
+    "zhHans": "Epoch AI 于 10 月 29 日报告，在其受控环境中，GLM-5.3 利用尚未随正式版交付的安全修复线索，并结合当时未公开的另一处漏洞，针对 9 月 17 日至 10 月 26 日的六个 Firefox 版本构造了可运行的攻击链。Mozilla 另行描述了补丁空窗风险和防御工作。Firefox 159.0 已于 10 月 27 日修复后一处漏洞。该实验不能证明真实攻击、六项结果均获独立复现，或 Chrome 也可被同样攻破。"
+  },
+  "narrative": {
+    "en": "October 29 dates the public research disclosure, not the historical Firefox builds or October 27 fix. Mozilla’s statement is first-hand operator context but not a separate rerun of Epoch’s complete test harness. Potential harm is not recorded as an observed external impact.",
+    "zhHans": "10 月 29 日是研究公开日期，不是历史 Firefox 版本或 10 月 27 日修复的发生日。Mozilla 的声明属于浏览器运营方的一手背景，不等于独立重跑 Epoch 的全部实验。潜在危害不计作已观察到的外部影响。"
+  },
+  "claims": [
+    {
+      "id": "epoch-experiment",
+      "claimType": "fact",
+      "text": {
+        "en": "Epoch AI disclosed on October 29 a controlled GLM-5.3 patch-gap experiment against six prior Firefox releases; Mozilla acknowledged evidence of this threat mechanism without independently replicating every reported exploit.",
+        "zhHans": "Epoch AI 于 10 月 29 日公布针对六个旧版 Firefox 的 GLM-5.3 补丁空窗受控实验；Mozilla 承认已见该威胁机制的证据，但并未独立复现报告中的每项利用。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-epoch-ai",
+        "new26-mozilla"
+      ]
+    },
+    {
+      "id": "epoch-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "Epoch AI had not established whether the attacks would work on Firefox 159.0 and did not obtain an equivalent Chrome exploit with the same harness; the study does not demonstrate real-world victims.",
+        "zhHans": "Epoch AI 尚未确认攻击能否在 Firefox 159.0 上成功，用同一套实验工具也未取得等效的 Chrome 利用；该研究不证明存在真实受害者。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-epoch-ai"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "google-gemini-3-8-flash-cyber-2026",
+    "cloudflare-glm53-kv-cache-exposure-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-02",
+    "updatedAt": "2026-11-02",
+    "lastSourceCheckAt": "2026-11-02",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-11-02",
+        "changeType": "created",
+        "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+      }
+    ],
+    "reviewedAt": "2026-11-02",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a19a57-4466-7424-b92a-843f3854fc66",
+    "reviewRecord": "governance/reviews/independent-20261102/epoch-ai-glm53-firefox-patch-gap-2026.json",
+    "publishedAt": "2026-11-02"
+  },
+  "sources": [
+    {
+      "sourceId": "new26-epoch-ai",
+      "supports": [
+        "epoch-ai-glm53-firefox-patch-gap-2026",
+        "epoch-experiment",
+        "epoch-limits"
+      ]
+    },
+    {
+      "sourceId": "new26-mozilla",
+      "supports": [
+        "epoch-ai-glm53-firefox-patch-gap-2026",
+        "epoch-experiment"
+      ]
+    }
+  ]
+}

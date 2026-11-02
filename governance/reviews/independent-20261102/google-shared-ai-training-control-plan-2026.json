@@ -1,0 +1,148 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-shared-ai-training-control-plan-2026",
+  "inputSubjectDigest": "47bf133658709ee52116260a9462919cdf460e85a38a20e5baa978bd60e56a3b",
+  "subjectDigest": "2fb27709eeafd6bdb76297981ebe6ce802df8a709dfa9faf5ebce455b15aaf04",
+  "inputsDigest": "04cc704fce5a70355774641e12b5b2e2d3ea4a372225b7089c357cdee768ce48",
+  "evidenceCutoff": "2026-11-02",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a19a59-3c89-7555-a151-fbb021e59ecd",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a19a59-3c89-7555-a151-fbb021e59ecd",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-02",
+  "candidateId": "nov02-google-ai-training-control",
+  "runDigest": "63172da61973c847f39166202b507795cbfd7a86f6f0ddf77207745716982189",
+  "coreFactClaimIds": [
+    "robots-plan"
+  ],
+  "identity": {
+    "seriesId": "ai-training-robots-preference",
+    "action": "Google announces support plan for common training preference",
+    "stage": "announced",
+    "dateBasis": "Google Search Central post Friday Oct30; IETF individual draft dated Oct30",
+    "decision": "new",
+    "comparedEventIds": [
+      "eu-ai-act-transparency-2026",
+      "openai-strategic-futures-governance-2026"
+    ],
+    "deduplicationReason": "This exact date, actor, action and stage is absent from the published archive; the comparison IDs identify earlier or otherwise distinct stages, not a duplicate."
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "The dated action is Google announces support plan for common training preference; the product category follows the action, not a hoped-for downstream effect."
+  },
+  "significance": {
+    "rationale": "This is a dated, quoted announced event with core fact support; no independently supported L2 pathway or sustained cross-domain change is established.",
+    "whyNotHigher": "The required independent action/replication or observed production-usage threshold is not established.",
+    "whyNotLower": "The dated original event has direct evidence beyond a search result and is distinct from listed comparator stages.",
+    "comparisonEventIds": [
+      "eu-ai-act-transparency-2026",
+      "openai-strategic-futures-governance-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "No retained evidence establishes the new_workflow milestone for L2-PRODUCT; null denotes unknown, not false.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No retained evidence establishes the unaffiliated_production_organizations milestone for L2-PRODUCT; null denotes unknown, not false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "No measured and independently verified external effects warrant broad consensus.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate evidence-backed material dispute was established within the bounded search; this does not show no dispute exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent Gemini session checked the full English and Simplified Chinese factual draft for subject, date, numeric amount, stages, attribution, scope, negation and uncertainty; initial DeepSeek Chinese classifier was corrected and rechecked."
+  },
+  "limitations": [
+    "The run accounts for all required channels but remains partial/unavailable for Reddit, X, newsletters, HF and keyword HN; no exhaustive-window claim.",
+    "Only bounded original-source excerpts were supplied for long pages; quote hashes prove local artifact integrity, not remote truth or full semantic coverage.",
+    "OpenAI official announcements returned HTTP 403 and were not treated as read sources; no access restriction bypass.",
+    "Company demonstrations, funding commitments and partner claims are not independently verified performance, transaction completion or external adoption.",
+    "Initial Gemini review and revision notes are superseded by the final-run session bound here. This independent model review is not human release approval.",
+    "Final reviewer raw text: review/gemini3.8-pair-final-4-raw.md; SHA256 b776f752e7ab3a05e6ef16abe247205b15ccd180f3d002e0386e8b7bfb2fffff.",
+    "PublishedAt is a proposed UTC date, not a claim that this item has been published. Its exact wrapper is pending shadow review and fresh human approval."
+  ],
+  "evidence": [
+    {
+      "id": "google-shared-ai-training-control-plan-2026-evidence-1",
+      "sourceId": "new26-google-robots",
+      "claimId": "robots-plan",
+      "url": "https://developers.google.com/search/blog/2026/10/ai-training-control",
+      "originId": "google-ai-training-robots-control-plan-20261030",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Friday, October 30, 2026",
+      "locator": "Google Search Central dated blog",
+      "artifact": "governance/evidence/2026-11-02/direct/google-robots.txt",
+      "sha256": "3defd6888e05b075d98b3e1e211d6f0097cf302ef7bf9010b5a6df32280d0aeb"
+    },
+    {
+      "id": "google-shared-ai-training-control-plan-2026-evidence-2",
+      "sourceId": "new26-google-robots",
+      "claimId": "robots-plan",
+      "url": "https://developers.google.com/search/blog/2026/10/ai-training-control",
+      "originId": "google-ai-training-robots-control-plan-20261030",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we're announcing our plans to support",
+      "locator": "Google planned feature announcement, not deployed guarantee",
+      "artifact": "governance/evidence/2026-11-02/direct/google-robots.txt",
+      "sha256": "3defd6888e05b075d98b3e1e211d6f0097cf302ef7bf9010b5a6df32280d0aeb"
+    },
+    {
+      "id": "google-shared-ai-training-control-plan-2026-evidence-3",
+      "sourceId": "new26-google-robots",
+      "claimId": "robots-draft",
+      "url": "https://developers.google.com/search/blog/2026/10/ai-training-control",
+      "originId": "google-ai-training-robots-control-plan-20261030",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Google plans to interpret that as if the publisher",
+      "locator": "Google condition for interpreting shared policy token",
+      "artifact": "governance/evidence/2026-11-02/direct/google-robots.txt",
+      "sha256": "3defd6888e05b075d98b3e1e211d6f0097cf302ef7bf9010b5a6df32280d0aeb"
+    },
+    {
+      "id": "google-shared-ai-training-control-plan-2026-evidence-4",
+      "sourceId": "new26-ietf-draft",
+      "claimId": "robots-draft",
+      "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+      "originId": "kelley-ai-training-preference-internet-draft-20261030",
+      "accessedAt": "2026-11-02",
+      "relationship": "interested",
+      "verification": "direct",
+      "quote": "not endorsed by the IETF",
+      "locator": "Datatracker individual-draft status disclaimer",
+      "artifact": "governance/evidence/2026-11-02/direct/ietf-training-draft.txt",
+      "sha256": "141ac1dbd7ab57b12b1b9f75090a3f7e3bfb89757a985191d6cdf61794420d6f"
+    }
+  ]
+}

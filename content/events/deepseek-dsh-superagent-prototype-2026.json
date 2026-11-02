@@ -1,0 +1,113 @@
+{
+  "id": "deepseek-dsh-superagent-prototype-2026",
+  "slug": "deepseek-dsh-superagent-prototype-2026",
+  "date": "2026-10-31",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-10-31",
+    "zhHans": "2026年10月31日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "DeepSeek publishes dsh-superagent research prototype code",
+    "zhHans": "DeepSeek 公开 dsh-superagent 研究原型代码"
+  },
+  "searchSummary": {
+    "en": "DeepSeek’s public repository records October 31 creation and explicitly labels dsh-superagent research code, not a production product.",
+    "zhHans": "DeepSeek 的公开仓库记录 10 月 31 日创建，并明确将 dsh-superagent 标为研究代码而非生产产品。"
+  },
+  "summary": {
+    "en": "A repository under DeepSeek’s GitHub organization records creation on October 31 and makes dsh-superagent prototype code and an MIT license available. Its README describes an agent for a single GitHub repository, built around DeepSeek Harness, and explicitly says it is research code, not an official DeepSeek product or production-ready software. Repository creation does not establish the minute it first became publicly downloadable or adoption by others.",
+    "zhHans": "DeepSeek 的 GitHub 组织下，一个记录创建于 10 月 31 日的公开仓库提供 dsh-superagent 原型代码和 MIT 许可。README 将其描述为面向单一 GitHub 仓库、围绕 DeepSeek Harness 构建的智能体，并明确说明这是研究代码，并非 DeepSeek 正式产品或可投入生产的软件。仓库创建时间不能确定其首次供公众下载的时刻，也不能证明外部采用。"
+  },
+  "narrative": {
+    "en": "The event is code availability for an experimental tool, not a production agent deployment or independently measured autonomy gain. The repository’s own warning about differences from its internal version limits any attempt to infer internal operational performance.",
+    "zhHans": "事件记录实验工具代码可获取，不代表生产环境部署或自主能力已获独立量化验证。仓库还提醒公开版与内部版本不完全相同，因此不能据此推断内部运行表现。"
+  },
+  "claims": [
+    {
+      "id": "deepseek-code",
+      "claimType": "fact",
+      "text": {
+        "en": "The public deepseek-ai repository was created October 31, 2026, and contains a dsh-superagent research prototype for one GitHub repository.",
+        "zhHans": "deepseek-ai 的公开仓库创建于 2026 年 10 月 31 日，包含面向单一 GitHub 仓库的 dsh-superagent 研究原型。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-deepseek-api",
+        "new26-deepseek-readme"
+      ]
+    },
+    {
+      "id": "deepseek-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "The README says this is a reference-only research prototype, not an official or production-ready DeepSeek product.",
+        "zhHans": "README 称该代码仅供研究参考，既非 DeepSeek 正式产品，也未达到生产可用状态。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-deepseek-readme"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "reflection-beam-open-weights-2026",
+    "claude-duet-research-preview-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-02",
+    "updatedAt": "2026-11-02",
+    "lastSourceCheckAt": "2026-11-02",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-11-02",
+        "changeType": "created",
+        "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+      }
+    ],
+    "reviewedAt": "2026-11-02",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a19a58-b82f-73c9-ad96-f650bac3a402",
+    "reviewRecord": "governance/reviews/independent-20261102/deepseek-dsh-superagent-prototype-2026.json",
+    "publishedAt": "2026-11-02"
+  },
+  "sources": [
+    {
+      "sourceId": "new26-deepseek-api",
+      "supports": [
+        "deepseek-dsh-superagent-prototype-2026",
+        "deepseek-code"
+      ]
+    },
+    {
+      "sourceId": "new26-deepseek-readme",
+      "supports": [
+        "deepseek-dsh-superagent-prototype-2026",
+        "deepseek-code",
+        "deepseek-limits"
+      ]
+    }
+  ]
+}

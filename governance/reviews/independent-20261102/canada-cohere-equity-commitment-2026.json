@@ -1,0 +1,148 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "canada-cohere-equity-commitment-2026",
+  "inputSubjectDigest": "a9360feff029ef35eadddd91a3bba4c7ca126a33e9eb2900e9fbbcba74614551",
+  "subjectDigest": "e081c06c168ed541a113b6ffa7866af08c6a95c524cc29f63bcd1774433408e5",
+  "inputsDigest": "45f07a9ffc60780bd81c69f1ccd31ab676b6767d450a07bcaebd6425aa9fd05e",
+  "evidenceCutoff": "2026-11-02",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a19a58-b82f-73c9-ad96-f650bac3a402",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a19a58-b82f-73c9-ad96-f650bac3a402",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-02",
+  "candidateId": "nov02-canada-cohere-commitment",
+  "runDigest": "63172da61973c847f39166202b507795cbfd7a86f6f0ddf77207745716982189",
+  "coreFactClaimIds": [
+    "cohere-pledge"
+  ],
+  "identity": {
+    "seriesId": "canada-cohere-equity-funding",
+    "action": "announce staged public equity commitment",
+    "stage": "announced",
+    "dateBasis": "Prime Minister release Oct29 and CBC/Reuters same-day report; funded amount and closing unknown",
+    "decision": "new",
+    "comparedEventIds": [
+      "crusoe-series-f-2026",
+      "nvidia-meta-muse-collaboration-2026"
+    ],
+    "deduplicationReason": "This exact date, actor, action and stage is absent from the published archive; the comparison IDs identify earlier or otherwise distinct stages, not a duplicate."
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "The dated action is announce staged public equity commitment; the commerce category follows the action, not a hoped-for downstream effect."
+  },
+  "significance": {
+    "rationale": "This is a dated, quoted announced event with core fact support; no independently supported L2 pathway or sustained cross-domain change is established.",
+    "whyNotHigher": "Canada announced a staged commitment, not the executed structural change and independently affected external actors required for L2-COMMERCE.",
+    "whyNotLower": "The dated original event has direct evidence beyond a search result and is distinct from listed comparator stages.",
+    "comparisonEventIds": [
+      "crusoe-series-f-2026",
+      "nvidia-meta-muse-collaboration-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": null,
+            "rationale": "No retained evidence establishes the structural_change_executed milestone for L2-COMMERCE; null denotes unknown, not false.",
+            "evidenceIds": []
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "No retained evidence establishes the external_actors_affected milestone for L2-COMMERCE; null denotes unknown, not false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "No measured and independently verified external effects warrant broad consensus.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separate evidence-backed material dispute was established within the bounded search; this does not show no dispute exists.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent Gemini session checked the full English and Simplified Chinese factual draft for subject, date, numeric amount, stages, attribution, scope, negation and uncertainty; initial DeepSeek Chinese classifier was corrected and rechecked."
+  },
+  "limitations": [
+    "The run accounts for all required channels but remains partial/unavailable for Reddit, X, newsletters, HF and keyword HN; no exhaustive-window claim.",
+    "Only bounded original-source excerpts were supplied for long pages; quote hashes prove local artifact integrity, not remote truth or full semantic coverage.",
+    "OpenAI official announcements returned HTTP 403 and were not treated as read sources; no access restriction bypass.",
+    "Company demonstrations, funding commitments and partner claims are not independently verified performance, transaction completion or external adoption.",
+    "Initial Gemini review and revision notes are superseded by the final-run session bound here. This independent model review is not human release approval.",
+    "Final reviewer raw text: review/gemini3.8-pair-final-3-raw.md; SHA256 9183aaa4a11f845b99d524e04b8af4c72ba0682b07152a479a5a42baf37f2611.",
+    "PublishedAt is a proposed UTC date, not a claim that this item has been published. Its exact wrapper is pending shadow review and fresh human approval."
+  ],
+  "evidence": [
+    {
+      "id": "canada-cohere-equity-commitment-2026-evidence-1",
+      "sourceId": "new26-canada",
+      "claimId": "cohere-pledge",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai",
+      "originId": "canada-cohere-public-equity-commitment-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "making an equity investment of up to $1.6 billion in Cohere",
+      "locator": "Official October29 government announcement; NBSP retained from original",
+      "artifact": "governance/evidence/2026-11-02/direct/canada-cohere.txt",
+      "sha256": "84906d2e0a301ec5897c710fc11f629332a91dc41a76637148da7765fe746862"
+    },
+    {
+      "id": "canada-cohere-equity-commitment-2026-evidence-2",
+      "sourceId": "new26-cbc-cohere",
+      "claimId": "cohere-pledge",
+      "url": "https://www.cbc.ca/news/business/canada-cohere-ai-investment-9.7401367",
+      "originId": "reuters-canada-cohere-report-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "He said ‌Ottawa would invest up to $1.6 billion in Cohere.",
+      "locator": "Thomson Reuters report syndicated by CBC",
+      "artifact": "governance/evidence/2026-11-02/direct/canada-cbc.txt",
+      "sha256": "d1f90657ff4d8092cf54cfa8cb71aadd499ff6b633f7f572f9e0a0449c0afa0a"
+    },
+    {
+      "id": "canada-cohere-equity-commitment-2026-evidence-3",
+      "sourceId": "new26-canada",
+      "claimId": "cohere-conditions",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai",
+      "originId": "canada-cohere-public-equity-commitment-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "It will be made in stages, with regular reporting on progress",
+      "locator": "Government release, payment conditions",
+      "artifact": "governance/evidence/2026-11-02/direct/canada-cohere.txt",
+      "sha256": "84906d2e0a301ec5897c710fc11f629332a91dc41a76637148da7765fe746862"
+    },
+    {
+      "id": "canada-cohere-equity-commitment-2026-evidence-4",
+      "sourceId": "new26-cbc-cohere",
+      "claimId": "cohere-conditions",
+      "url": "https://www.cbc.ca/news/business/canada-cohere-ai-investment-9.7401367",
+      "originId": "reuters-canada-cohere-report-20261029",
+      "accessedAt": "2026-11-02",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Cohere has completed only an initial close of the round",
+      "locator": "CBC/Reuters report, wider round stage",
+      "artifact": "governance/evidence/2026-11-02/direct/canada-cbc.txt",
+      "sha256": "d1f90657ff4d8092cf54cfa8cb71aadd499ff6b633f7f572f9e0a0449c0afa0a"
+    }
+  ]
+}

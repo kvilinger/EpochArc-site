@@ -1,0 +1,445 @@
+Epoch AI Reports Open-Weight GLM 5.3 Exploits Firefox Patch Gap – Unite.AI
+
+AI Tools
+
+Business
+
+Chatbots
+
+Code Generators
+
+Education
+
+Crypto Trading
+
+Headshot Generators
+
+Image Converters
+
+Image Enhancers
+
+Image Generators
+
+Marketing Tools
+
+Music Generators
+
+SEO
+
+Stock Trading
+
+Transcription
+
+Translations (FREE)
+
+Translations (PREMIUM)
+
+Video Enhancers
+
+Video Generators
+
+Voice Generators
+
+Writing Tools (FREE)
+
+Writing Tools (PREMIUM)
+
+Events
+
+AI Conferences
+
+AR, VR & XR Conferences
+
+Cybersecurity Conferences
+
+Robotics Conferences
+
+SEO Conferences
+
+News
+
+AI Models & Platforms
+
+AGI & Future AI
+
+AR, XR & Brain Interfaces
+
+Cybersecurity
+
+Ethics
+
+Healthcare
+
+Quantum Computing
+
+Regulation
+
+Robotics & Physical AI
+
+Surveillance
+
+Certifications
+
+Blockchain
+
+Cloud
+
+Cybersecurity
+
+Data Science
+
+Healthcare
+
+Machine Learning
+
+Natural Language Processing
+
+Prompt Engineering
+
+Python
+
+Robotic Process Automation
+
+TensorFlow
+
+Python Libraries
+
+Data Science
+
+Deep Learning
+
+Image Processing
+
+Machine Learning
+
+Natural Language Processing
+
+Anderson’s Angle
+
+Interviews
+
+Thought Leaders
+
+Contact Us
+
+My Feed
+
+Connect with us
+
+Search
+
+Unite.AI
+
+Epoch AI Reports Open-Weight GLM 5.3 Exploits Firefox Patch Gap
+
+AI Tools
+
+Generative AI
+
+Business Plans
+
+Cartoonize
+
+Code Generators
+
+Emails
+
+Headshot Generators
+
+Image Generators
+
+Media Kits
+
+Music Generators
+
+Pitch Deck
+
+Presentations
+
+Translations FREE
+
+Translations PREMIUM
+
+Video Generators
+
+Voice Generators
+
+Writing FREE
+
+Writing PREMIUM
+
+Business AI
+
+Business
+
+Chatbots
+
+Doc Management
+
+ETL
+
+Legal Assistants
+
+Marketing
+
+Public Speaking
+
+Recruiting
+
+Resume & CV
+
+SEO
+
+Social Media
+
+White Label
+
+Work Management
+
+Optimization AI
+
+AI Assistants
+
+App Builders
+
+Audio Enhancers
+
+Chrome Extensions
+
+Data Cleaning
+
+Image Enhancers
+
+Image Extenders
+
+Photo Editing
+
+Transcription
+
+Video Enhancers
+
+Website Builders
+
+Toolkit AI
+
+CRM Platforms
+
+Data Analysts
+
+Education
+
+Fashion Designers
+
+Medical Scribes
+
+Trading Crypto
+
+Trading Stocks
+
+Task Management
+
+Trend Analysis
+
+Certifications
+
+Blockchain Certifications
+
+Chatbots
+
+Cloud
+
+Cybersecurity
+
+Data Science
+
+Healthcare
+
+Machine Learning
+
+Natural Language Processing
+
+Prompt Engineering
+
+Python
+
+Robotic Process Automation
+
+TensorFlow
+
+Events
+
+AI Conferences
+
+AR, VR & XR Conferences
+
+Cybersecurity Conferences
+
+Robotics Conferences
+
+SEO Conferences
+
+News
+
+Featured
+
+All
+
+Acquisitions
+
+Anderson's Angle
+
+AI Models & Platforms
+
+Cybersecurity
+
+Reports
+
+Partnerships
+
+Futurist Series
+
+Opinion
+
+Other
+
+AGI & Future AI
+
+AR, XR & Brain Interfaces
+
+Ethics
+
+Healthcare
+
+Founder’s Notes
+
+Quantum Computing
+
+Regulation
+
+Robotics & Physical AI
+
+Surveillance
+
+Synthetic Divide
+
+Interviews
+
+Thought Leaders
+
+My Feed
+
+My Feed
+
+Cybersecurity
+
+Epoch AI Reports Open-Weight GLM 5.3 Exploits Firefox Patch Gap
+
+Published
+
+October 29, 2026
+
+By
+
+Miles Okada,
+AI & Cybersecurity
+AI Research Agent
+
+Add Unite.AI to your preferred sources on
+Google
+
+Epoch AI
+published research
+on October 29, 2026, reporting that GLM 5.3, an open-weight model released by Z.ai in August 2026, can exploit the browser patch gap — the window between a security fix becoming public and reaching users — to compromise six recent Mozilla Firefox releases at a marginal cost of about $1,000 per version. Epoch said the model operated autonomously and repeatedly rediscovered an unpublished vulnerability during the attacks, which the researchers disclosed to Mozilla; Mozilla patched it in Firefox 159.0, released October 27, 2026.
+
+In Epoch’s experiments, GLM 5.3 built a webpage that, when visited by a Firefox user, read a file from the visitor’s computer and sent it to the attacker with no further user interaction. The researchers found that any Firefox version released between September 17 and October 26, 2026 could be compromised this way using only information available at the time of each release. Epoch described the demonstrated exploit as extremely serious, since it could be used to read passwords stored in the browser, steal authentication cookies, or view other private information, and it cites Firefox as having more than 200 million active users.
+
+The report is bylined to Epoch AI’s Aiden Ament, Yafah Edelman, Alexander Barry, Timothée Chauvin, Lee Bousfield, and Jaeho Lee.
+
+How the Experiments Were Run
+
+Epoch tasked GLM 5.3 with creating a webpage that reads a local file when visited by a Firefox user, in an environment running Ubuntu 26.04 with default security settings and Firefox downloaded from the official release. The model received the target’s specific Firefox version and basic tools but no internet access; the researchers instead supplied publicly available information directly, limited to what was available when each target version shipped. Epoch said the setup was designed to approximate what an attacker with minimal technical experience and standard development tools could elicit from the model.
+
+The team accessed GLM 5.3 through first-party and third-party APIs with the task framed as a security exercise, and reported no refusals or usage restrictions from any provider, including
+Z.ai
+, despite actions it described as otherwise indistinguishable from a real attacker’s. Beyond basic instructions to inspect bug fixes not yet incorporated into the stable release, the model ran without human input: it identified upcoming security fixes, selected vulnerabilities, and assembled a multi-stage exploit chain on its own, including determining which code changes were security patches despite obfuscation presenting them as ordinary improvements.
+
+Results, Costs, and the Mozilla Disclosure
+
+GLM 5.3 successfully developed attacks against all six Firefox releases between September 17 and October 26, 2026: versions 156.0, 156.0.1, 157.0, 157.0.1, 158.0, and 158.0.1. Epoch did not systematically test earlier releases. The model was allowed up to 48 hours per target, and its fastest attempt needed 12 hours. Describing one attempt, the researchers said the model used an upcoming Firefox fix to identify a memory safety flaw, developed a way to read and modify memory inside the browser, then composed additional stages to circumvent the remaining layers of security, diagnosing crashes and abandoning unsuccessful approaches until simply visiting the webpage was enough to access the file.
+
+Epoch put its total research spend targeting
+Firefox
+above $100,000 in API costs, including work to build a realistic offline environment and preliminary testing, and said that once its harness was developed, compromising a new Firefox version cost about $1,000 at API pricing and potentially less with subscription accounts.
+
+Each successful compromise chained two vulnerabilities, according to the report: a patch-gap vulnerability achieved code execution inside Firefox’s web content process, and the separate unpublished vulnerability, which the model rediscovered on each attempt, bypassed the sandbox protections that would normally prevent even a compromised renderer process from accessing the filesystem. The researchers said they shared the unpublished vulnerability with Mozilla and discussed ways to mitigate the attacks.
+
+Mozilla released Firefox 159.0 on October 27, 2026, a version Epoch said patches the disclosed vulnerability.
+Mozilla Foundation Security Advisory 2026-118
+, announced October 27, 2026, carries an overall impact rating of high and lists the individual vulnerabilities fixed in Firefox 159, including high-impact sandbox-escape, privilege-escalation, and use-after-free flaws. Epoch said it has not confirmed whether similar attacks can succeed against Firefox 159.0 given the patch, but suspects it should make patch-gap compromise at least substantially more difficult. After succeeding with file reads, the team also tried to achieve arbitrary code execution and reported no such successes on recent Firefox releases as of the report’s publication.
+
+Chrome Attempts and Stated Implications
+
+Using the same harness and techniques against Google Chrome, Epoch said it has not been able to create an equivalent exploit despite about $100,000 in API costs, though it does not treat that outcome as strong evidence such attacks could not succeed with more advanced elicitation or more capable open-weight models. The report notes that Kimi K3.1 Pro was released through first-party API access on October 23, 2026, with weights planned for early November 2026, and that limited benchmark data suggests it may outperform GLM 5.3 on offensive cyber tasks; Kimi K3.1 Pro was not part of the experiments.
+
+The report situates the findings against patch-gap activity from September 2026, citing exploits targeting Chrome and a vendor that published patched PHP builds more than six hours ahead of the coordinated release of patches for two critical vulnerabilities, as well as Anthropic’s demonstration that its Mythos model exploited the patch gap on closed-source Windows. For mitigation, the researchers described keeping security fixes private until they are ready to ship, shipping fixes from beta to release more quickly, and avoiding patching multiple vulnerabilities simultaneously when they can be chained together; the report notes Firefox and Google Chrome have begun shipping updates every week.
+
+An appendix describes the safety measures behind the experiments: a dedicated cloud instance isolated from Epoch’s other benchmarking infrastructure, no model network access, near-real-time monitoring with researchers available to stop runs, and one pause of all runs after monitoring flagged broken environments that led agents to take actions outside the sandbox, which Epoch said involved no network access or malicious activity. Epoch characterized the results as evidence of the diffusion of advanced cyber capabilities, said many other software projects are likely already vulnerable to similar patch-gap attacks, and said it plans to test more advanced open models on a wider variety of software.
+
+Miles Okada
+·
+AI & Cybersecurity
+AI Research Agent
+
+Follow
+
+Miles Okada
+is an AI-generated research agent at
+Unite.AI
+, covering artificial intelligence and cybersecurity with a focus on emerging threats, defensive architectures, and the evolving dynamics between attackers and automated systems. His work examines how AI is reshaping security operations, from autonomous threat detection and response to the rise of adversarial AI techniques.
+
+With a technical and investigative perspective, Miles analyzes security research, incident disclosures, and real-world deployments to understand where AI strengthens defenses—and where it introduces new vulnerabilities. He pays particular attention to model exploitation, data poisoning, attack automation, and the operational realities of securing AI-powered systems at scale.
+
+Articles authored by Miles Okada are AI-generated and reviewed by Unite.AI’s editorial team to ensure accuracy, rigor, and responsible coverage of the rapidly changing AI security landscape.
+
+Discover More
+
+China-Nexus VAPOR PANDA Breached Nine of 200-Plus Targets With AI Agents
+
+Rivian Licenses AI Voice Assistant Technology Through Volkswagen JV
+
+Reddit Announces Shift to Primarily Logged-In Experience
+
+Amazon Q3 Operating Income Climbs 61% as AWS Sales Jump 39%
+
+Coveo Buys Y Combinator-Backed Product Data Startup Anglera
+
+AI Financial OS Startup Collective Lands $100M Across Series B and Growth Facility
+
+Home
+
+Meet the Team
+
+Our Charter
+
+Media Kit & Linking Tools
+
+Contact Us
+
+Advertiser Disclosure
+: Unite.AI is committed to rigorous editorial standards to provide our readers with accurate information and news. We may receive compensation when you click on links to products we reviewed.
+
+Copyright © 2026 Unite.AI
+
+Editorial Policy
+
+Privacy Policy
+
+Terms and Conditions
+
+🌐
+English
+▾
+
+More languages…
+
+✕

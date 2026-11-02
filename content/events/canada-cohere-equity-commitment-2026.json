@@ -1,0 +1,115 @@
+{
+  "id": "canada-cohere-equity-commitment-2026",
+  "slug": "canada-cohere-equity-commitment-2026",
+  "date": "2026-10-29",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-10-29",
+    "zhHans": "2026年10月29日"
+  },
+  "categories": [
+    "commerce"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Canada announces staged equity commitment of up to C$1.6 billion in Cohere",
+    "zhHans": "加拿大宣布对 Cohere 至多 16 亿加元的分期股权投资承诺"
+  },
+  "searchSummary": {
+    "en": "Canada announced a staged equity commitment of up to C$1.6 billion in Cohere on October 29, not a fully paid investment.",
+    "zhHans": "加拿大于 10 月 29 日宣布对 Cohere 至多 16 亿加元的分期股权投资承诺，并非款项已全部支付。"
+  },
+  "summary": {
+    "en": "Canada’s prime minister announced on October 29 a planned equity investment of up to C$1.6 billion in Cohere, to be made in stages with reporting against employment and infrastructure commitments. A Reuters report carried by CBC said the wider funding round had reached only an initial close and did not disclose the amount committed so far. The announced ceiling is not evidence that C$1.6 billion was transferred, the round closed in full, or promised jobs and computing capacity already exist.",
+    "zhHans": "加拿大总理于 10 月 29 日宣布，计划分期对 Cohere 进行至多 16 亿加元的股权投资，并按就业和基础设施承诺定期报告进展。CBC 刊载的路透社报道指出，更大范围的融资轮次当时仅完成初步交割，已承诺的具体金额未披露。公告上限不能证明 16 亿加元已经支付、整轮融资完成，或承诺的岗位和算力已经落地。"
+  },
+  "narrative": {
+    "en": "This node is a government financing commitment, not a completed ownership transfer. Government and company statements share an interested transaction origin; the syndicated Reuters report supplies independent reporting on the limited closing stage, not proof of the full planned amount.",
+    "zhHans": "本节点记录政府融资承诺，而非所有权变更已完成。政府和公司表态同属有交易利害关系的来源；转载的路透报道独立说明了有限的交割阶段，不能据此证明计划金额全部到账。"
+  },
+  "claims": [
+    {
+      "id": "cohere-pledge",
+      "claimType": "fact",
+      "text": {
+        "en": "On October 29 Canada announced a staged equity commitment of up to C$1.6 billion in Cohere.",
+        "zhHans": "10 月 29 日，加拿大宣布对 Cohere 分期投入至多 16 亿加元的股权投资承诺。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-canada",
+        "new26-cbc-cohere"
+      ]
+    },
+    {
+      "id": "cohere-conditions",
+      "claimType": "limitation",
+      "text": {
+        "en": "The government says payments will be staged; the wider round had reached only an initial close and the amount committed so far was not disclosed.",
+        "zhHans": "政府称款项将分期投入；更大范围融资轮次当时仅完成初步交割，已承诺金额未披露。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26-canada",
+        "new26-cbc-cohere"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "crusoe-series-f-2026",
+    "nvidia-meta-muse-collaboration-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-02",
+    "updatedAt": "2026-11-02",
+    "lastSourceCheckAt": "2026-11-02",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Exact provisional published-state candidate. Independent Gemini factual review and binding completed; no human authorization, production write or publication occurred. Refresh metadata and request a NEW approval if date or content changes.",
+    "changeLog": [
+      {
+        "date": "2026-11-02",
+        "changeType": "created",
+        "summary": "Prepared bilingual candidate from bounded evidence; no published-state change."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Bound original factual draft to accepted independent Gemini review; not published."
+      },
+      {
+        "date": "2026-11-02",
+        "changeType": "correction",
+        "summary": "Provisional publication-wrapper metadata proposed solely for exact human decision; not published."
+      }
+    ],
+    "reviewedAt": "2026-11-02",
+    "reviewProvenance": "v2.4",
+    "reviewer": "gemini:01a19a58-b82f-73c9-ad96-f650bac3a402",
+    "reviewRecord": "governance/reviews/independent-20261102/canada-cohere-equity-commitment-2026.json",
+    "publishedAt": "2026-11-02"
+  },
+  "sources": [
+    {
+      "sourceId": "new26-canada",
+      "supports": [
+        "canada-cohere-equity-commitment-2026",
+        "cohere-pledge",
+        "cohere-conditions"
+      ]
+    },
+    {
+      "sourceId": "new26-cbc-cohere",
+      "supports": [
+        "canada-cohere-equity-commitment-2026",
+        "cohere-pledge",
+        "cohere-conditions"
+      ]
+    }
+  ]
+}
