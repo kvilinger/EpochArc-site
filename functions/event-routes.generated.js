@@ -217,6 +217,7 @@ export const EVENT_ROUTES = Object.freeze({
   "ninth-circuit-github-copilot-dmca-2026": "ninth-circuit-github-copilot-dmca-2026",
   "nvidia-4-trillion": "nvidia-4-trillion",
   "nvidia-4-trillion-2025": "nvidia-4-trillion",
+  "nvidia-board-independent-inquiry-2026": "nvidia-board-independent-inquiry-2026",
   "nvidia-groq-3-lpx-2026": "nvidia-groq-3-lpx-2026",
   "nvidia-hugging-face-acquisition-2026": "nvidia-hugging-face-acquisition-2026",
   "nvidia-meta-muse-collaboration-2026": "nvidia-meta-muse-collaboration-2026",

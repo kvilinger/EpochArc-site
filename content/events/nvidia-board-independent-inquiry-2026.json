@@ -1,0 +1,114 @@
+{
+  "id": "nvidia-board-independent-inquiry-2026",
+  "slug": "nvidia-board-independent-inquiry-2026",
+  "date": "2026-11-08",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-08",
+    "zhHans": "2026年11月8日"
+  },
+  "categories": [
+    "safety"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "NVIDIA board initiates independent inquiry after intelligence-target reporting",
+    "zhHans": "NVIDIA 董事会因情报目标相关报道启动独立调查"
+  },
+  "searchSummary": {
+    "en": "NVIDIA’s board said on November 8 it had initiated an independent inquiry; it said it had no reason to believe company secrets were compromised.",
+    "zhHans": "NVIDIA 董事会于 11 月 8 日称已启动独立调查；董事会表示没有理由认为公司机密已遭泄露。"
+  },
+  "summary": {
+    "en": "On November 8, NVIDIA’s board said it was initiating an independent inquiry in response to reporting that its CEO had been targeted by a foreign intelligence effort. A committee of independent directors with outside counsel would oversee it. The board explicitly said it had no reason to believe national security or NVIDIA secrets had been compromised. ABC News reported the board statement; this establishes the board’s procedural response, not the underlying allegation, a breach, or the eventual findings.",
+    "zhHans": "NVIDIA 董事会于 11 月 8 日称，针对其首席执行官曾成为外国情报活动目标的报道，已启动独立调查，由独立董事组成的委员会及外部律师监督。董事会明确表示，没有理由认为国家安全或 NVIDIA 机密遭到损害。ABC News 报道了董事会声明；现有证据只能支持董事会启动调查这一程序性行动，不能证明相关指控、泄密或最终调查结论。"
+  },
+  "narrative": {
+    "en": "The dated event is the board’s inquiry, not a verified security incident. No private individuals, personal allegations or untested intelligence claims are treated as established facts. A subsequent investigation result, if published, would be a different stage requiring fresh evidence.",
+    "zhHans": "本节点日期对应董事会启动调查，而不是已经证实的安全事件。个人隐私、未经核实的情报指控均不作为既定事实。若日后公布调查结果，那将是需要重新取得证据的另一阶段。"
+  },
+  "claims": [
+    {
+      "id": "inquiry",
+      "claimType": "fact",
+      "text": {
+        "en": "NVIDIA’s board announced an independent inquiry on November 8, to be overseen by independent directors and outside counsel.",
+        "zhHans": "NVIDIA 董事会于 11 月 8 日宣布启动独立调查，由独立董事和外部律师监督。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "followup-nvidia-board",
+        "followup-nvidia-abc"
+      ]
+    },
+    {
+      "id": "inquiry-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "The board said it had no reason to believe national security or company secrets were compromised; the allegation and any breach remain unverified.",
+        "zhHans": "董事会称没有理由认为国家安全或公司机密遭到损害；有关指控和是否泄密仍未得到证实。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "followup-nvidia-board",
+        "followup-nvidia-abc"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "nvidia-open-agent-safety-platform-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-09",
+    "updatedAt": "2026-11-09",
+    "lastSourceCheckAt": "2026-11-09",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "PROVISIONAL wrapper for an exact human publication decision. The November 8 investigation is a board procedure only; no confirmed breach or intelligence allegation. Not published until exact approval.",
+    "changeLog": [
+      {
+        "date": "2026-11-09",
+        "changeType": "created",
+        "summary": "Isolated November 7–9 targeted follow-up draft; production site unchanged."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Successful independent read-only review bound to one exact, unpublished board-inquiry record."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Proposed exact November 9 publication state, unapproved and unapplied."
+      }
+    ],
+    "reviewedAt": "2026-11-09",
+    "reviewer": "gemini-request:b5f91e8237ea",
+    "reviewRecord": "governance/reviews/independent-20261109/nvidia-board-independent-inquiry-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-09"
+  },
+  "sources": [
+    {
+      "sourceId": "followup-nvidia-board",
+      "supports": [
+        "nvidia-board-independent-inquiry-2026",
+        "inquiry",
+        "inquiry-limits"
+      ]
+    },
+    {
+      "sourceId": "followup-nvidia-abc",
+      "supports": [
+        "nvidia-board-independent-inquiry-2026",
+        "inquiry",
+        "inquiry-limits"
+      ]
+    }
+  ]
+}

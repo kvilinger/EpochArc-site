@@ -1,0 +1,749 @@
+{
+  "policyVersion": "2.4",
+  "runId": "targeted-nov07-09-followup-20261109-r2",
+  "kind": "targeted",
+  "scopeReason": "User reported that Nov7–9 had no dated published entries; audit that gap only, including Nov6 and earlier dates for deduplication, not a complete-site latest-data sweep.",
+  "windowStart": "2026-11-07",
+  "windowEnd": "2026-11-09",
+  "evidenceCutoff": "2026-11-09",
+  "timezone": "UTC",
+  "baselineCommit": "e6ea3e0b7e712ac16c72f3a05adc6de372fd6b42",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "promptVersion": "20261109-date-gap-targeted-post-independent-audit-r2",
+  "channels": [
+    {
+      "id": "web",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Brave first-page category, official-domain and targeted requests; direct curl original-source checks are separately hashed. November 9 covered only through actual capture time.",
+      "reason": "First-page results, index recrawl ages and blocked pages do not establish full recall.",
+      "retryResult": "One targeted Brave request failed TLS; AP original, Perplexity and OpenAI original pages returned HTTP403; accessible syndication and xAI/NVIDIA originals checked normally.",
+      "attempts": [
+        {
+          "query": "site:anthropic.com/news/ after:2026-11-06 before:2026-11-10 Anthropic",
+          "executedAt": "2026-11-09T01:39:50.749256+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/anthropic-nov9.json",
+          "sha256": "b4c3163afa5bc6b1c41f3b4965fa27708e12e55a77ef63878ebe818c7ba3f48b"
+        },
+        {
+          "query": "site:apnews.com/article/ \"center for AI safety\" \"White House\" November 8 2026 CAISSI",
+          "executedAt": "2026-11-09T01:45:26.928292+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/caissi-ap.json",
+          "sha256": "8eb45e92eeb590e395cffa0cb265617b3672f1228a72c035d98bebc03a1daf16"
+        },
+        {
+          "query": "site:nist.gov CAISSI November 8 2026 reporting White House force",
+          "executedAt": "2026-11-09T01:45:31.363065+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/caissi-government.json",
+          "sha256": "ec215997196fd5f7cac9b3aaccf967f5b2920baee83d386eade8158f98489726"
+        },
+        {
+          "query": "2026年11月7日 8日 9日 人工智能 安全 监管 事故 判决 官方",
+          "executedAt": "2026-11-09T01:39:56.759514+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/china-safety.json",
+          "sha256": "e6ae06b535d9493ec96062143c63197ef399439e1b3adfb86f612bb9577699a0"
+        },
+        {
+          "query": "November 7 8 9 2026 data center ballot final county election results certified Ballotpedia",
+          "executedAt": "2026-11-09T01:40:04.921313+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/data-center-cert.json",
+          "sha256": "b1eff570780cb7da3e436e43cc8c4df4a694f91bcfee45f5c71c2ff3d6221e9b"
+        },
+        {
+          "query": "\"OpenAI dots\" launched November 7 8 2026 firsthand test technical limitations",
+          "executedAt": "2026-11-09T01:42:01.988924+00:00",
+          "resultCount": 4,
+          "artifact": "governance/evidence/2026-11-09/search/dots-independent.json",
+          "sha256": "3d4bf5995f04b9a25f5f71bc1842f906eb67ac211c8d0e58bb0661cc97f8f59f"
+        },
+        {
+          "query": "site:openai.com OR site:help.openai.com \"dots\" agents launch November 7 8 2026 research preview",
+          "executedAt": "2026-11-09T01:41:59.682878+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/dots-official.json",
+          "sha256": "73b51649ec2cda5ad52921531016c827742553406d7d3625cb5a57ca5bd74a7b"
+        },
+        {
+          "query": "RoboColiseum FF OmniMind November 9 2026 independent benchmark public results",
+          "executedAt": "2026-11-09T01:50:30.652715+00:00",
+          "resultCount": 14,
+          "artifact": "governance/evidence/2026-11-09/search/faraday-independent.json",
+          "sha256": "0d6d55021a258ab713273eddc93388b60db08efdb057e715868e0fd0b53200f6"
+        },
+        {
+          "query": "Faraday Future OmniMind November 9 2026 Business Wire RoboColiseum official ranking",
+          "executedAt": "2026-11-09T01:50:27.924413+00:00",
+          "resultCount": 15,
+          "artifact": "governance/evidence/2026-11-09/search/faraday-official.json",
+          "sha256": "85e654a83b164860619d2a89707b441a06b54fe67e7aaf95cf95a320387b41dc"
+        },
+        {
+          "query": "\"Super Intelligence Force\" \"November\" \"2026\" executive order presidential announcement",
+          "executedAt": "2026-11-09T01:41:57.276329+00:00",
+          "resultCount": 14,
+          "artifact": "governance/evidence/2026-11-09/search/force-abc.json",
+          "sha256": "9d9a9ef58f54045a1f415707d8a14f18b3856e87fdad6ae8a2a7c065aec8932c"
+        },
+        {
+          "query": "site:whitehouse.gov/ \"Super Intelligence Force\" November 2026 official November 7 8",
+          "executedAt": "2026-11-09T01:41:55.316894+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/force-official.json",
+          "sha256": "1700e55d55e61240f98c8b9926424a22c6499874ddbd7abfe260c20be459a244"
+        },
+        {
+          "query": "site:blog.google/innovation-and-ai/ after:2026-11-06 before:2026-11-10 Google Gemini",
+          "executedAt": "2026-11-09T01:39:52.768936+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/google-nov9.json",
+          "sha256": "15b5a1a216cc43a46a3f41d51ede50dd8c08b819f00609fbd80cc5805f1ed681"
+        },
+        {
+          "query": "November 7 8 9 2026 AI regulation executive order court ruling agency final policy",
+          "executedAt": "2026-11-09T01:39:33.609138+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/governance.json",
+          "sha256": "0781ac23b9743b034a5b1fd3d780b1965c29a717d6bd72d5090b9803417dd7ca"
+        },
+        {
+          "query": "Grok API watermark by default November 9 2026 xAI official release",
+          "executedAt": "2026-11-09T01:41:00.690832+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/grok-watermark.json",
+          "sha256": "14f5664486375e99e4be52a1ae34e1c0d036c1c45ba8a0019ac1866add9e22a0"
+        },
+        {
+          "query": "\"watermark\" \"grok\" \"November 3\" \"November 7\" xAI announcement",
+          "executedAt": "2026-11-09T01:45:33.670090+00:00",
+          "resultCount": 11,
+          "artifact": "governance/evidence/2026-11-09/search/grok-xai-announcement.json",
+          "sha256": "f2ef45ca410e0503c5d52bdd07970da7b55222d003e5003a006ab30e83e2d762"
+        },
+        {
+          "query": "\"x-watermark\" \"grok\" site:docs.x.ai OR site:x.ai November 2026",
+          "executedAt": "2026-11-09T01:45:38.363685+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/grok-xai-docs.json",
+          "sha256": "87d671529d861dae8f92521279f64ee3f220657f23107f5625ff113bce9532a6"
+        },
+        {
+          "query": "\"Grok API\" \"watermark\" November 7 2026 official xAI",
+          "executedAt": "2026-11-09T01:45:42.827141+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/grok-xai-other.json",
+          "sha256": "a2a72d90035829386ac8d799e10e886e6ee56bb97b6127a6297b6444d2aee8f5"
+        },
+        {
+          "query": "site:huggingface.co/blog/ November 7 OR November 8 OR November 9 2026 model release",
+          "executedAt": "2026-11-09T01:39:54.745424+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/hf-nov7-9.json",
+          "sha256": "4e10a85f64995edf7e4f161039014d2448330bd42a8463dab706fa7d7f34d18c"
+        },
+        {
+          "query": "November 7 8 9 2026 AI data center chip investment financing acquisition confirmed",
+          "executedAt": "2026-11-09T01:39:30.893284+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/infra.json",
+          "sha256": "66bc32cb9591acfd5e155cbe5b70948ed6dc46377bbf6b622a3aa2abd8e4e3e3"
+        },
+        {
+          "query": "site:menlovc.com \"89%\" \"Chinese\" open models November 2026 report date",
+          "executedAt": "2026-11-09T01:42:13.205190+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/menlo-official.json",
+          "sha256": "fb8862e6f6ff9f8d1b74d592de378e22bd2855853aa2db2d42d41eafd81aca99"
+        },
+        {
+          "query": "Menlo Ventures 89 percent Chinese open model spending November 8 2026 original report",
+          "executedAt": "2026-11-09T01:41:11.577378+00:00",
+          "resultCount": 19,
+          "artifact": "governance/evidence/2026-11-09/search/menlo-open-models.json",
+          "sha256": "2cc41086931b003c09e0100adac9ae5fd46f65ccab853fc7993f405668331189"
+        },
+        {
+          "query": "\"89%\" \"Menlo Ventures\" \"2026\" \"Chinese\" original report",
+          "executedAt": "2026-11-09T01:45:48.243336+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/menlo-source.json",
+          "sha256": "9a2554600432728031c7b7a1453fefe66d211b2cc51d09f2566d10dc0b851854"
+        },
+        {
+          "query": "November 7 8 9 2026 Microsoft AI Frontiers John Langford shutdown Reuters official",
+          "executedAt": "2026-11-09T01:39:45.421342+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/microsoft-frontiers.json",
+          "sha256": "0b72ad0a4f7fce1e5ed0fc207df5624a45a63141d17a563adb84368c7edd48f4"
+        },
+        {
+          "query": "Mistral Le Chonk November 9 2026 weights model card official mistral.ai Hugging Face",
+          "executedAt": "2026-11-09T01:40:57.954942+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/mistral-chonk.json",
+          "sha256": "576f536cff15897353f9cf50e8bfb42b8578eb760895a25006a89e3839b259fa"
+        },
+        {
+          "query": "site:mistral.ai/news/ OR site:huggingface.co/mistralai/ \"Le Chonk\" weights November 2026",
+          "executedAt": "2026-11-09T01:42:11.196361+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/mistral-official.json",
+          "sha256": "961460f347cdecc5ab48cfe3c4e1752f616c3ddf5019f3fcf94dc62f5028e626"
+        },
+        {
+          "query": "2026年11月7日 8日 9日 大模型 权重 正式发布 开源 腾讯 阿里 百度 月之暗面 MiniMax 智谱",
+          "executedAt": "2026-11-09T01:39:22.964935+00:00",
+          "resultCount": 17,
+          "artifact": "governance/evidence/2026-11-09/search/models-cn.json",
+          "sha256": "498810a67975dda79d65329cfd2b098541296cb0cab27134ee3facfa07add914"
+        },
+        {
+          "query": "November 7 8 9 2026 new AI model launch open weights API Gemini Claude GPT Qwen DeepSeek Kimi",
+          "executedAt": "2026-11-09T01:39:20.464206+00:00",
+          "resultCount": 18,
+          "artifact": "governance/evidence/2026-11-09/search/models.json",
+          "sha256": "83596e2565dba854d9ca6e2ba6f36e93ce372a049645c1b84407168622fa24f9"
+        },
+        {
+          "query": "AI November 9 2026 announcement published official research product",
+          "executedAt": "2026-11-09T01:40:10.251028+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/monday-ai.json",
+          "sha256": "f2d2c051d4b4e2453fa267e97ee7ef65659f29815dbf39a58bb88d08faa5cc90"
+        },
+        {
+          "query": "site:reuters.com/technology/ 2026/11/09 artificial intelligence OR AI model",
+          "executedAt": "2026-11-09T01:40:00.160182+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/new-company.json",
+          "sha256": "2dc1c1d917daf619aaef2a48a5c0b9b269b219cc265fa83547fc2d281c056883"
+        },
+        {
+          "query": "site:nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors November 8 2026",
+          "executedAt": "2026-11-09T01:50:25.329528+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/nvidia-gov.json",
+          "sha256": "b40ea0c32889e7ca484595560f937aed8b30cf2f6cddc37d36001abbefb39733"
+        },
+        {
+          "query": "NVIDIA board independent investigation November 8 2026 Reuters AP statement secrets compromised",
+          "executedAt": "2026-11-09T01:50:21.835811+00:00",
+          "resultCount": 19,
+          "artifact": "governance/evidence/2026-11-09/search/nvidia-reuters.json",
+          "sha256": "779d2a840315fd0fd2a6925a9ed09085b1fe786fd88087081136db9ea113dc70"
+        },
+        {
+          "query": "NVIDIA board November 8 9 2026 investigation Reuters AP independent external verification official status",
+          "executedAt": "2026-11-09T01:39:41.335840+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/nvidia.json",
+          "sha256": "a1a8ee65086578e49e6d2e42677b46c1b1b70e6545bf5c579857bbd3e4309504"
+        },
+        {
+          "query": "site:openai.com/index/ OR site:anthropic.com/news/ OR site:blog.google/innovation-and-ai/ OR site:about.fb.com/news/ AI November 7 8 9 2026 official",
+          "executedAt": "2026-11-09T01:39:18.398517+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/official-labs.json",
+          "sha256": "0cc751e92cda2fb41462f22bfac13221e5c474520055244d17b8049fa66488c7"
+        },
+        {
+          "query": "OpenAI dots login captcha November 8 2026 official release agent",
+          "executedAt": "2026-11-09T01:41:05.798922+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/openai-dots.json",
+          "sha256": "67bd4d76951cd7b54be04de05c88e559e1c0fe9736c319e0d59a604e2c2c2738"
+        },
+        {
+          "query": "OpenAI $11 billion funding round November 7 2026 official filing Reuters closes",
+          "executedAt": "2026-11-09T01:41:08.434349+00:00",
+          "resultCount": 19,
+          "artifact": "governance/evidence/2026-11-09/search/openai-eleven-billion.json",
+          "sha256": "43eeaccdebc6ac11df270f65543b7e9191052546e1c19c1045cb6e9f9cc46069"
+        },
+        {
+          "query": "OpenAI Hacktron partnership November 7 8 9 2026 actual vulnerabilities independent reporting",
+          "executedAt": "2026-11-09T01:40:02.203334+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/openai-hacktron.json",
+          "sha256": "c4b6e65291beaf3e4211256bdcbad49e56c5f1293fc61a90bcad83d7598872e1"
+        },
+        {
+          "query": "site:openai.com/index/ after:2026-11-06 before:2026-11-10 OpenAI November 9 2026",
+          "executedAt": "2026-11-09T01:39:48.682430+00:00",
+          "resultCount": 2,
+          "artifact": "governance/evidence/2026-11-09/search/openai-nov9.json",
+          "sha256": "ca68127834cd5fff165b450068033d0bd3853ed5c54e7945f4492bf505a4d6a9"
+        },
+        {
+          "query": "site:perplexity.ai/hub/blog/ \"Teammates\" November 2026 research preview",
+          "executedAt": "2026-11-09T01:42:04.237962+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/perplexity-official.json",
+          "sha256": "e8708cfaacf3a91ab101da58bf80adaa8a76914c623ff3d37ddee71f6c564392"
+        },
+        {
+          "query": "\"Teammates\" site:perplexity.ai November 6 2026 Max agents",
+          "executedAt": "2026-11-09T01:45:45.667136+00:00",
+          "resultCount": 6,
+          "artifact": "governance/evidence/2026-11-09/search/perplexity-primary.json",
+          "sha256": "d40c01f8dbea2971acdae1f029815f5a1d5d8e5808391a6f9190920e4a834575"
+        },
+        {
+          "query": "Perplexity Teammates original announcement November 6 7 8 2026 available Max",
+          "executedAt": "2026-11-09T01:42:06.453936+00:00",
+          "resultCount": 17,
+          "artifact": "governance/evidence/2026-11-09/search/perplexity-report.json",
+          "sha256": "691ffc101761783d471f4cf3a5ef428e42ec4ab5e74ed14b0f8ab8e5023f7a32"
+        },
+        {
+          "query": "Perplexity Teammates November 7 2026 official launch product announcement",
+          "executedAt": "2026-11-09T01:41:03.234240+00:00",
+          "resultCount": 17,
+          "artifact": "governance/evidence/2026-11-09/search/perplexity-teammates.json",
+          "sha256": "5619948ccdc955d40a9872d53d5a76ab4caf8658d06370a1f67286e12dc22267"
+        },
+        {
+          "query": "November 7 8 9 2026 AI agent product launch Microsoft OpenAI Anthropic Meta Google NVIDIA",
+          "executedAt": "2026-11-09T01:39:28.397034+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/product.json",
+          "sha256": "d5aab91954fc7a3ff6e9084870305f7fcc8182f4ba890e869a72192f8d9e2eda"
+        },
+        {
+          "query": "November 8 2026 robotics AI official release research robot model",
+          "executedAt": "2026-11-09T01:41:14.164642+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/robots-nov8.json",
+          "sha256": "3b4020cd83a81745bc1d62bf30a488d6c7927cf1a379289ee222350236d67012"
+        },
+        {
+          "query": "November 7 8 9 2026 AI security incident independent investigation disclosure vulnerability",
+          "executedAt": "2026-11-09T01:39:36.163547+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/safety.json",
+          "sha256": "6e93a3068002a241ce300a99c01e5296cf0dfd72d084f373fcb3187c06b2e8f9"
+        },
+        {
+          "query": "November 7 8 9 2026 AI science discovery peer reviewed robot benchmark arxiv",
+          "executedAt": "2026-11-09T01:39:25.391423+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/science.json",
+          "sha256": "e196842672ff8063c341c13eab7906833304dabfa8471b2f7475f235ca1be808"
+        },
+        {
+          "query": "November 7 8 9 2026 AI education labor election community data center ballot",
+          "executedAt": "2026-11-09T01:39:38.770842+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/society.json",
+          "sha256": "eccc66ff81db0f053c1634311b5bf7d90547aea9edbd2e1681f82236dca51182"
+        },
+        {
+          "query": "President Trump Super Intelligence Force November 8 2026 executive order White House official announcement ABC",
+          "executedAt": "2026-11-09T01:40:55.456072+00:00",
+          "resultCount": 19,
+          "artifact": "governance/evidence/2026-11-09/search/super-intelligence-force.json",
+          "sha256": "2cac2bede1ada3615e1944d1021cb1775b7575eba168e031a1aaa3187fc00bd3"
+        },
+        {
+          "query": "AI November 8 2026 announcement published official product research",
+          "executedAt": "2026-11-09T01:40:07.686850+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/weekend-ai.json",
+          "sha256": "0eff2d54c4f358f89d89eb5b464a4c180bb0463d1221778c31c249160c15cf89"
+        },
+        {
+          "query": "site:x.ai/news/ OR site:docs.x.ai/ \"watermark\" text API November 7 2026",
+          "executedAt": "2026-11-09T01:42:09.121266+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/xai-official.json",
+          "sha256": "470b5ad1131a1a62029258dcd20d7ce11b29b30863de63e12b9e155004296c93"
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Nov7 xAI API documentation + same-day report; no first-hand API header test."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Nov8 NVIDIA board procedure; reported foreign targeting and secrets compromise remain unproven."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "AP Nov8 interview-based organizational reporting with no formal directive."
+    },
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "No independently benchmarked Nov7–9 capability breakthrough verified."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "OpenAI $11bn reports trace to Nov6; Nov9 Faraday press page blocked."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "Election-related Nov7–8 reporting repeats earlier Nov3 vote counts, not independent certified outcomes."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "followup-xai-grok-api-text-watermark-default-2026",
+      "discoveryUrls": [
+        "https://docs.x.ai/developers/advanced-api-usage/watermarking",
+        "https://byteiota.com/grok-api-text-watermark/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2. Direct xAI docs give seven-model API-only November 7 default; byteiota reports activation, not independently tested headers or detection reliability. Dimension: exact readable source and date.",
+        "novelty": "2/2. Direct xAI docs give seven-model API-only November 7 default; byteiota reports activation, not independently tested headers or detection reliability. Dimension: distinct observed action.",
+        "spillover": "1/2. Direct xAI docs give seven-model API-only November 7 default; byteiota reports activation, not independently tested headers or detection reliability. Dimension: plausible external relevance, not measured effect.",
+        "durability": "1/2. Direct xAI docs give seven-model API-only November 7 default; byteiota reports activation, not independently tested headers or detection reliability. Dimension: evidence of persistence beyond the date.",
+        "sourceQuality": "2/2. Direct xAI docs give seven-model API-only November 7 default; byteiota reports activation, not independently tested headers or detection reliability. Dimension: original author and origin independence."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "hold",
+      "reason": "Official xAI page last modified Oct31 says default starts Nov7 and a same-day report repeats activation. No independently captured live API x-watermark header, dated backend change log or verifiable first-live deployment. Recast as documented scheduled effective date; hold as Nov7 executed rollout.",
+      "priorityOverrideReason": "Held despite score: run-level independent model audit found a specific unresolved corroboration or effective-stage gap."
+    },
+    {
+      "candidateId": "followup-nvidia-board-independent-inquiry-2026",
+      "discoveryUrls": [
+        "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+        "https://abcnews.com/Technology/nvidia-announces-investigation-ceo-amid-foreign-intelligence-target/story?id=137959091"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2. November 8 NVIDIA board statement directly initiates independent inquiry; ABC reports the statement, not any confirmed espionage or compromise. Dimension: exact readable source and date.",
+        "novelty": "2/2. November 8 NVIDIA board statement directly initiates independent inquiry; ABC reports the statement, not any confirmed espionage or compromise. Dimension: distinct observed action.",
+        "spillover": "1/2. November 8 NVIDIA board statement directly initiates independent inquiry; ABC reports the statement, not any confirmed espionage or compromise. Dimension: plausible external relevance, not measured effect.",
+        "durability": "1/2. November 8 NVIDIA board statement directly initiates independent inquiry; ABC reports the statement, not any confirmed espionage or compromise. Dimension: evidence of persistence beyond the date.",
+        "sourceQuality": "2/2. November 8 NVIDIA board statement directly initiates independent inquiry; ABC reports the statement, not any confirmed espionage or compromise. Dimension: original author and origin independence."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "November 8 NVIDIA board statement directly initiates independent inquiry; ABC reports the statement, not any confirmed espionage or compromise.",
+      "eventId": "nvidia-board-independent-inquiry-2026",
+      "identity": {
+        "seriesId": "nvidia-nov8-board-inquiry",
+        "action": "initiate independent directors and outside-counsel inquiry",
+        "stage": "initiated-inquiry",
+        "dateBasis": "NVIDIA board statement Nov8; ABC report same date; inquiry is action, allegations unresolved",
+        "decision": "new",
+        "comparedEventIds": [
+          "nvidia-open-agent-safety-platform-2026",
+          "openai-metr-hugging-face-investigations-2026"
+        ]
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Direct original article/document and contemporaneous reporter, strict actor/date/phase",
+          "finding": "November 8 NVIDIA board statement directly initiates independent inquiry; ABC reports the statement, not any confirmed espionage or compromise.",
+          "evidenceIds": [
+            "nvidia-board-independent-inquiry-2026-quote-1",
+            "nvidia-board-independent-inquiry-2026-quote-2",
+            "nvidia-board-independent-inquiry-2026-quote-3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Measured downstream deployment, investigation outcome or institutional impact",
+          "finding": "No external outcome, independent API efficacy or formal policy outcome established.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Independent technical tests or legal audit of actual practices",
+          "finding": "Reporter coverage or first-hand AP interviews are bounded reporting, not a second external performance/legal audit.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "What does first-party or original reporter expressly limit or leave unverified?",
+          "finding": "Claim-local quoted limitations keep provider behavior, private allegation and official legal status separate.",
+          "evidenceIds": [
+            "nvidia-board-independent-inquiry-2026-quote-4",
+            "nvidia-board-independent-inquiry-2026-quote-5"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "followup-ap-caissi-white-house-informal-reporting-2026",
+      "discoveryUrls": [
+        "https://www.the-independent.com/news/donald-trump-white-house-san-francisco-openai-joe-biden-b3081153.html"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2. AP November 8 first-hand reporting cites two former officials, but an informal request is not a documented government transfer order; one AP origin. Dimension: exact readable source and date.",
+        "novelty": "2/2. AP November 8 first-hand reporting cites two former officials, but an informal request is not a documented government transfer order; one AP origin. Dimension: distinct observed action.",
+        "spillover": "1/2. AP November 8 first-hand reporting cites two former officials, but an informal request is not a documented government transfer order; one AP origin. Dimension: plausible external relevance, not measured effect.",
+        "durability": "0/2. AP November 8 first-hand reporting cites two former officials, but an informal request is not a documented government transfer order; one AP origin. Dimension: evidence of persistence beyond the date.",
+        "sourceQuality": "1/2. AP November 8 first-hand reporting cites two former officials, but an informal request is not a documented government transfer order; one AP origin. Dimension: original author and origin independence."
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Nov8 AP article is first-hand journalism via a syndication but one AP reporting origin; two anonymous former officials do not provide a public directive. No second independently originated investigation or formal CAISSI reporting instruction; do not present informal reorganization as confirmed.",
+      "priorityOverrideReason": "Held despite score: run-level independent model audit found a specific unresolved corroboration or effective-stage gap."
+    },
+    {
+      "candidateId": "followup-hold-perplexity-teammates",
+      "discoveryUrls": [
+        "https://tech.yahoo.com/ai/perplexity-ai/articles/help-perplexity-teammate-ai-agent-190821756.html"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2. Yahoo original reporter dates Teammates web availability November 6 at 19:08 UTC; November 7 summaries are later coverage. Perplexity official original returns 403. Outside Nov7–9 action window.",
+        "novelty": "1/2. Yahoo original reporter dates Teammates web availability November 6 at 19:08 UTC; November 7 summaries are later coverage. Perplexity official original returns 403. Outside Nov7–9 action window.",
+        "spillover": "1/2. Yahoo original reporter dates Teammates web availability November 6 at 19:08 UTC; November 7 summaries are later coverage. Perplexity official original returns 403. Outside Nov7–9 action window.",
+        "durability": "0/2. Yahoo original reporter dates Teammates web availability November 6 at 19:08 UTC; November 7 summaries are later coverage. Perplexity official original returns 403. Outside Nov7–9 action window.",
+        "sourceQuality": "0/2. Yahoo original reporter dates Teammates web availability November 6 at 19:08 UTC; November 7 summaries are later coverage. Perplexity official original returns 403. Outside Nov7–9 action window."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Yahoo original reporter dates Teammates web availability November 6 at 19:08 UTC; November 7 summaries are later coverage. Perplexity official original returns 403. Outside Nov7–9 action window."
+    },
+    {
+      "candidateId": "followup-hold-microsoft-frontiers",
+      "discoveryUrls": [
+        "https://hunch.net/?p=13764006"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2. John Langford first-hand account of prior restructuring was posted Nov6; Nov7 India Today recaps it, not a Nov7 corporate closure.",
+        "novelty": "1/2. John Langford first-hand account of prior restructuring was posted Nov6; Nov7 India Today recaps it, not a Nov7 corporate closure.",
+        "spillover": "1/2. John Langford first-hand account of prior restructuring was posted Nov6; Nov7 India Today recaps it, not a Nov7 corporate closure.",
+        "durability": "0/2. John Langford first-hand account of prior restructuring was posted Nov6; Nov7 India Today recaps it, not a Nov7 corporate closure.",
+        "sourceQuality": "0/2. John Langford first-hand account of prior restructuring was posted Nov6; Nov7 India Today recaps it, not a Nov7 corporate closure."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "John Langford first-hand account of prior restructuring was posted Nov6; Nov7 India Today recaps it, not a Nov7 corporate closure."
+    },
+    {
+      "candidateId": "followup-hold-super-intelligence-force",
+      "discoveryUrls": [
+        "https://abcnews.com/Politics/president-donald-trump-announces-creation-super-intelligence-force/story?id=136986122"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2. ABC search result resurfaced within 7–9 filter, but its article metadata says October 4. Nov8 AP independently reports White House confirmation; no readable current formal order for a new Nov8 launch.",
+        "novelty": "1/2. ABC search result resurfaced within 7–9 filter, but its article metadata says October 4. Nov8 AP independently reports White House confirmation; no readable current formal order for a new Nov8 launch.",
+        "spillover": "1/2. ABC search result resurfaced within 7–9 filter, but its article metadata says October 4. Nov8 AP independently reports White House confirmation; no readable current formal order for a new Nov8 launch.",
+        "durability": "0/2. ABC search result resurfaced within 7–9 filter, but its article metadata says October 4. Nov8 AP independently reports White House confirmation; no readable current formal order for a new Nov8 launch.",
+        "sourceQuality": "0/2. ABC search result resurfaced within 7–9 filter, but its article metadata says October 4. Nov8 AP independently reports White House confirmation; no readable current formal order for a new Nov8 launch."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "ABC search result resurfaced within 7–9 filter, but its article metadata says October 4. Nov8 AP independently reports White House confirmation; no readable current formal order for a new Nov8 launch."
+    },
+    {
+      "candidateId": "followup-hold-mistral-le-chonk",
+      "discoveryUrls": [
+        "https://mistral.ai/news/mistral-large-4/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2. Mistral Large 4 weights were already published Oct29; Nov9 summaries call them Le Chonk without a newly verified weight stage.",
+        "novelty": "1/2. Mistral Large 4 weights were already published Oct29; Nov9 summaries call them Le Chonk without a newly verified weight stage.",
+        "spillover": "1/2. Mistral Large 4 weights were already published Oct29; Nov9 summaries call them Le Chonk without a newly verified weight stage.",
+        "durability": "0/2. Mistral Large 4 weights were already published Oct29; Nov9 summaries call them Le Chonk without a newly verified weight stage.",
+        "sourceQuality": "0/2. Mistral Large 4 weights were already published Oct29; Nov9 summaries call them Le Chonk without a newly verified weight stage."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Mistral Large 4 weights were already published Oct29; Nov9 summaries call them Le Chonk without a newly verified weight stage."
+    },
+    {
+      "candidateId": "followup-hold-openai-dots",
+      "discoveryUrls": [
+        "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "0/2. OpenAI help-center pages return HTTP403. Search-index page age cannot establish first rollout date, access tier or a newly shipped November 8 stage.",
+        "novelty": "1/2. OpenAI help-center pages return HTTP403. Search-index page age cannot establish first rollout date, access tier or a newly shipped November 8 stage.",
+        "spillover": "1/2. OpenAI help-center pages return HTTP403. Search-index page age cannot establish first rollout date, access tier or a newly shipped November 8 stage.",
+        "durability": "0/2. OpenAI help-center pages return HTTP403. Search-index page age cannot establish first rollout date, access tier or a newly shipped November 8 stage.",
+        "sourceQuality": "0/2. OpenAI help-center pages return HTTP403. Search-index page age cannot establish first rollout date, access tier or a newly shipped November 8 stage."
+      },
+      "total": 2,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "OpenAI help-center pages return HTTP403. Search-index page age cannot establish first rollout date, access tier or a newly shipped November 8 stage."
+    },
+    {
+      "candidateId": "followup-hold-faraday-omnimind",
+      "discoveryUrls": [
+        "https://www.stocktitan.net/news/FFR/faraday-future-and-ffr-announce-ff-omni-mind-and-its-model-achieves-811dv117fvzi.html"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "0/2. Nov9 Business Wire relay seen in public index but direct press page returned HTTP403; claimed ranking not independently verified and availability not established.",
+        "novelty": "1/2. Nov9 Business Wire relay seen in public index but direct press page returned HTTP403; claimed ranking not independently verified and availability not established.",
+        "spillover": "1/2. Nov9 Business Wire relay seen in public index but direct press page returned HTTP403; claimed ranking not independently verified and availability not established.",
+        "durability": "0/2. Nov9 Business Wire relay seen in public index but direct press page returned HTTP403; claimed ranking not independently verified and availability not established.",
+        "sourceQuality": "0/2. Nov9 Business Wire relay seen in public index but direct press page returned HTTP403; claimed ranking not independently verified and availability not established."
+      },
+      "total": 2,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Nov9 Business Wire relay seen in public index but direct press page returned HTTP403; claimed ranking not independently verified and availability not established."
+    },
+    {
+      "candidateId": "followup-hold-menlo-report",
+      "discoveryUrls": [
+        "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2. Menlo original enterprise AI report indexed as Nov4; Nov8 Chinese reports recirculate same statistics, not new research release.",
+        "novelty": "1/2. Menlo original enterprise AI report indexed as Nov4; Nov8 Chinese reports recirculate same statistics, not new research release.",
+        "spillover": "1/2. Menlo original enterprise AI report indexed as Nov4; Nov8 Chinese reports recirculate same statistics, not new research release.",
+        "durability": "0/2. Menlo original enterprise AI report indexed as Nov4; Nov8 Chinese reports recirculate same statistics, not new research release.",
+        "sourceQuality": "0/2. Menlo original enterprise AI report indexed as Nov4; Nov8 Chinese reports recirculate same statistics, not new research release."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Menlo original enterprise AI report indexed as Nov4; Nov8 Chinese reports recirculate same statistics, not new research release."
+    },
+    {
+      "candidateId": "followup-hold-openai-11b",
+      "discoveryUrls": [
+        "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2. Bloomberg original report dated Nov6; follow-up November 7 articles are not separate financing completion. Original page also returns HTTP403.",
+        "novelty": "1/2. Bloomberg original report dated Nov6; follow-up November 7 articles are not separate financing completion. Original page also returns HTTP403.",
+        "spillover": "1/2. Bloomberg original report dated Nov6; follow-up November 7 articles are not separate financing completion. Original page also returns HTTP403.",
+        "durability": "0/2. Bloomberg original report dated Nov6; follow-up November 7 articles are not separate financing completion. Original page also returns HTTP403.",
+        "sourceQuality": "0/2. Bloomberg original report dated Nov6; follow-up November 7 articles are not separate financing completion. Original page also returns HTTP403."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Bloomberg original report dated Nov6; follow-up November 7 articles are not separate financing completion. Original page also returns HTTP403."
+    },
+    {
+      "candidateId": "followup-hold-qwen4-teaser",
+      "discoveryUrls": [
+        "https://www.bilibili.com/video/BV1Jo456yEGZ/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2. Nov7 Qwen4 public-index teaser lacks first-hand official checkpoint, API or release; not an executed model launch.",
+        "novelty": "1/2. Nov7 Qwen4 public-index teaser lacks first-hand official checkpoint, API or release; not an executed model launch.",
+        "spillover": "1/2. Nov7 Qwen4 public-index teaser lacks first-hand official checkpoint, API or release; not an executed model launch.",
+        "durability": "0/2. Nov7 Qwen4 public-index teaser lacks first-hand official checkpoint, API or release; not an executed model launch.",
+        "sourceQuality": "0/2. Nov7 Qwen4 public-index teaser lacks first-hand official checkpoint, API or release; not an executed model launch."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Nov7 Qwen4 public-index teaser lacks first-hand official checkpoint, API or release; not an executed model launch."
+    }
+  ],
+  "windowNote": "Some Nov7–9 indexed articles recount Oct29, Nov4 or Nov6 actions. Nov9 collection before end of UTC day. No inference from ranking age alone.",
+  "discoveryLimitations": [
+    "Targeted follow-up, not a full new-window discovery run: HF Nov9 daily endpoint previously HTTP400, HN keyword filter partial, newsletter INBOX partial; X public index and Reddit post bodies unavailable as documented in last full run.",
+    "New direct GET preserved HTTP403 and TLS failures without bypass; AP syndication is the original AP origin, not second independent corroboration.",
+    "NVIDIA investigation is not proof of intelligence infiltration or secrets loss; no personal allegations are reproduced.",
+    "No event is approved or published by this run.",
+    "Initial successful subject-level model verdicts accepted three bounded drafts, but a separate successful run-level model audit returned REVISE; AP source corroboration and xAI live effective-day verification were not resolved, so these are held.",
+    "One initial large model call timed out with no response and is not counted as a review."
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "nvidia-board-independent-inquiry-2026",
+  "inputSubjectDigest": "7f981916d5220dfcd19935e5e27dea7bc72614ee98aa300063c2dd30513a102d",
+  "subjectDigest": "902f84eb454eba4a7aa0eb0ad77942fc9053adcc444cf1ae0d84fcf35b62547a",
+  "inputsDigest": "a1dd39e882825a25db7fe79f01cb861db2c9eac0f79a522374f12b928c685118",
+  "evidenceCutoff": "2026-11-09",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini-request:b5f91e8237ea",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "pi-cli-ephemeral-request:b5f91e8237ea",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "targeted-nov07-09-followup-20261109-r2",
+  "candidateId": "followup-nvidia-board-independent-inquiry-2026",
+  "runDigest": "b13e610c2d7acb37bae324aafeb54a8510db769dc75b53875c3277849e12ac27",
+  "coreFactClaimIds": [
+    "inquiry"
+  ],
+  "identity": {
+    "seriesId": "nvidia-nov8-board-inquiry",
+    "action": "initiate independent directors and outside-counsel inquiry",
+    "stage": "announced",
+    "dateBasis": "NVIDIA board statement Nov8; ABC report same date; inquiry is action, allegations unresolved",
+    "decision": "new",
+    "comparedEventIds": [
+      "nvidia-open-agent-safety-platform-2026",
+      "openai-metr-hugging-face-investigations-2026"
+    ],
+    "deduplicationReason": "Nov8 independent-board procedural inquiry is distinct from prior model safety platform announcements and other organizations’ already published investigations; no allegation is treated as verified."
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Board publicly initiated an investigation after a security-related report; the procedural security response is the event, not an established intrusion."
+  },
+  "significance": {
+    "rationale": "B-grade directly documented board procedure on Nov8, L1; no incident finding or measurable external impact.",
+    "whyNotHigher": "Underlying intelligence allegation, breach, national-security impact, independent findings and any completed remediation are not established.",
+    "whyNotLower": "NVIDIA board dated original statement and contemporaneous ABC report directly support the limited independent-inquiry initiation, distinct from existing published nodes.",
+    "comparisonEventIds": [
+      "nvidia-open-agent-safety-platform-2026",
+      "openai-metr-hugging-face-investigations-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY",
+        "criteria": {
+          "documented_incident": {
+            "value": null,
+            "rationale": "No verified completed documented_incident evidence; a declared inquiry is not proof of an underlying incident or outcome.",
+            "evidenceIds": []
+          },
+          "external_remedial_action": {
+            "value": null,
+            "rationale": "No verified completed external_remedial_action evidence; a declared inquiry is not proof of an underlying incident or outcome.",
+            "evidenceIds": []
+          },
+          "independent_investigation": {
+            "value": null,
+            "rationale": "No verified completed independent_investigation evidence; a declared inquiry is not proof of an underlying incident or outcome.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "No confirmed incident, damage or investigation result supports measured impact or broad consensus.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "The board action itself is documented; underlying allegations are unresolved and not asserted as facts, not a claim that views are unanimous.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent model reviewed both languages and the specific distinction between opening an inquiry and a proven intelligence/breach finding."
+  },
+  "limitations": [
+    "Read-only model ACCEPT and full run PASS are not human approval. User expressed an intention to publish before this exact subject/review request existed; new precise confirmation is required.",
+    "NVIDIA stated it had no reason to believe national security or its secrets were compromised; ABC independently reported the board’s announcement but did not prove allegations or the eventual investigation result.",
+    "November 7–9 search was a targeted, incomplete follow-up; 11 held candidates include an xAI default date without independently captured response headers and an AP single-origin informal-reporting story.",
+    "Initial combined model request timed out and is not counted. Initial successful run audit returned REVISE; only successful single-subject ACCEPT and final updated run PASS are counted.",
+    "Exact subject input review/GEMINI_FOLLOWUP_SUBJECT_2.md SHA256 a9970c8c3d76bd2f7d5e837e891180eeacf4c5cd75098d6c2b524d283c908b31; successful subject response review/GEMINI_SUBJECT_2_RAW.md SHA256 fb00b5d940626f8dd9eec7c0b8c8f44d38094ff2f8441e83a604defde38d16c6; request ID b5f91e8237ea.",
+    "Final run audit input review/GEMINI_FINAL_AUDIT_INPUT.md SHA256 4403aa97e2e39d8699a0dcea53c2ccf9ba556cc2f7eea601163ce6c9c6637a69; response review/GEMINI_FINAL_AUDIT_RAW.md SHA256 ddcceb8f0452f28d343896ef0c80c6051f6a41820663328d35d39c20ab9cf46b; request ID 1324fc62099b.",
+    "Proposed publishedAt is not a claim of actual publication; a date- and digest-bound human decision is required."
+  ],
+  "evidence": [
+    {
+      "id": "nvidia-board-independent-inquiry-2026-quote-1",
+      "sourceId": "followup-nvidia-board",
+      "claimId": "inquiry",
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "originId": "nvidia-nov8-board-statement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "November 8, 2026",
+      "locator": "Statement from NVIDIA Board of Directors exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/nvidia-board.txt",
+      "sha256": "8433f529d468e8a1b073e0a59a57302d6a9cfcf86cf536447609499b6c7d4f88"
+    },
+    {
+      "id": "nvidia-board-independent-inquiry-2026-quote-2",
+      "sourceId": "followup-nvidia-board",
+      "claimId": "inquiry",
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "originId": "nvidia-nov8-board-statement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "The NVIDIA Board is initiating an independent investigation",
+      "locator": "Statement from NVIDIA Board of Directors exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/nvidia-board.txt",
+      "sha256": "8433f529d468e8a1b073e0a59a57302d6a9cfcf86cf536447609499b6c7d4f88"
+    },
+    {
+      "id": "nvidia-board-independent-inquiry-2026-quote-3",
+      "sourceId": "followup-nvidia-abc",
+      "claimId": "inquiry",
+      "url": "https://abcnews.com/Technology/nvidia-announces-investigation-ceo-amid-foreign-intelligence-target/story?id=137959091",
+      "originId": "abc-nov8-nvidia-board-report",
+      "accessedAt": "2026-11-09",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "\"The NVIDIA Board is initiating an independent investigation",
+      "locator": "NVIDIA announces investigation of CEO amid foreign intelligence target allegations exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/nvidia-abc.txt",
+      "sha256": "596e3211c49d6fd97125fdcacc5acad82ee1185e56cdfcdba9abb488aa383fbc"
+    },
+    {
+      "id": "nvidia-board-independent-inquiry-2026-quote-4",
+      "sourceId": "followup-nvidia-board",
+      "claimId": "inquiry-limits",
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "originId": "nvidia-nov8-board-statement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "the Board has no reason to believe that either national security or NVIDIA secrets were compromised",
+      "locator": "Statement from NVIDIA Board of Directors exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/nvidia-board.txt",
+      "sha256": "8433f529d468e8a1b073e0a59a57302d6a9cfcf86cf536447609499b6c7d4f88"
+    },
+    {
+      "id": "nvidia-board-independent-inquiry-2026-quote-5",
+      "sourceId": "followup-nvidia-abc",
+      "claimId": "inquiry-limits",
+      "url": "https://abcnews.com/Technology/nvidia-announces-investigation-ceo-amid-foreign-intelligence-target/story?id=137959091",
+      "originId": "abc-nov8-nvidia-board-report",
+      "accessedAt": "2026-11-09",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "no reason to believe that either national security or NVIDIA secrets were compromised",
+      "locator": "NVIDIA announces investigation of CEO amid foreign intelligence target allegations exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/nvidia-abc.txt",
+      "sha256": "596e3211c49d6fd97125fdcacc5acad82ee1185e56cdfcdba9abb488aa383fbc"
+    }
+  ]
+}
