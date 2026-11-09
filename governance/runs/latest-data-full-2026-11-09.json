@@ -1,0 +1,2506 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-full-2026-11-09",
+  "kind": "full",
+  "windowStart": "2026-11-02",
+  "windowEnd": "2026-11-09",
+  "evidenceCutoff": "2026-11-09",
+  "timezone": "UTC",
+  "baselineCommit": "93fa652169bfe54fa118ee3861266f9f579d987d",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "promptVersion": "20261109-full-consolidated-overlap-v1",
+  "channels": [
+    {
+      "id": "hf-papers",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Nine dated daily requests across overlapping Nov6; Nov7–8 empty weekend lists and Nov9 HTTP400 at partial-day capture.",
+      "attempts": [
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-02&limit=100",
+          "executedAt": "2026-11-06T11:55:14.624420+00:00",
+          "resultCount": 38,
+          "artifact": "governance/evidence/2026-11-06/search/hf-2026-11-02.json",
+          "sha256": "de3355d9bbb39f1cab1df83633df014b39892b4d6ce76ba71ed0823f1431f8a5"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-03&limit=100",
+          "executedAt": "2026-11-06T11:55:17.212347+00:00",
+          "resultCount": 45,
+          "artifact": "governance/evidence/2026-11-06/search/hf-2026-11-03.json",
+          "sha256": "ffbf6cf9ffbe1d6cc61f436c5a939492ebabd14015146622f5bf74759838a96d"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-04&limit=100",
+          "executedAt": "2026-11-06T11:55:18.219514+00:00",
+          "resultCount": 52,
+          "artifact": "governance/evidence/2026-11-06/search/hf-2026-11-04.json",
+          "sha256": "83dd2b6c79e5794666cea28ca5195e071744b894fc1793ca826112c099ef9568"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-05&limit=100",
+          "executedAt": "2026-11-06T11:55:19.438313+00:00",
+          "resultCount": 39,
+          "artifact": "governance/evidence/2026-11-06/search/hf-2026-11-05.json",
+          "sha256": "f8f066f52d8e24872892fbb09a215a435fb2ac2afb17bfa7ffd264fb60f6e089"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-06&limit=100",
+          "executedAt": "2026-11-06T11:55:21.077171+00:00",
+          "resultCount": 23,
+          "artifact": "governance/evidence/2026-11-06/search/hf-2026-11-06.json",
+          "sha256": "de8875deb913aacd8b170bfa96962b8e75992a6d074505333b90178a5e0f038b"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-06&limit=100",
+          "executedAt": "2026-11-09T00:45:56.158988+00:00",
+          "resultCount": 32,
+          "artifact": "governance/evidence/2026-11-09/search/hf-2026-11-06.json",
+          "sha256": "ac0b0ac19871ca4433f3ffae2602dc20614287602f271ccb32c021b39701d65b"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-07&limit=100",
+          "executedAt": "2026-11-09T00:45:58.486238+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/hf-2026-11-07.json",
+          "sha256": "d02c34a9c4d070c115b5b2fe273b8396cc7a10e9caad6a565f445016fabc966b"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-08&limit=100",
+          "executedAt": "2026-11-09T00:45:59.153116+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/hf-2026-11-08.json",
+          "sha256": "04ce0b215393328aeb0cccaac41f64aa90799dbd58696f0d8984ae0086a15b0c"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-09&limit=100",
+          "executedAt": "2026-11-09T00:45:59.799146+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/hf-2026-11-09.json",
+          "sha256": "62c0b0225c3da621a4e561d3cb1eb3b5865dad4040de0a185c787f47d9d09349"
+        }
+      ],
+      "reason": "Daily ranking does not cover all research or same-day later submissions.",
+      "retryResult": "Nov9 daily endpoint returned HTTP400; not counted as a zero-paper day. Others retained as ranked snapshots."
+    },
+    {
+      "id": "hacker-news",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Daily paginated Algolia AI-keyword stories Nov2–9, Nov6 overlaps; not a full HN feed.",
+      "attempts": [
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793577600%2Ccreated_at_i%3C1793664000&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-06T11:55:22.345094+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-02-page-0.json",
+          "sha256": "4f76acc1ee58a911b930cb95b5b4310d0b8686ab740c73c7d49d8221c7e350f5"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793577600%2Ccreated_at_i%3C1793664000&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-06T11:55:24.767660+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-02-page-1.json",
+          "sha256": "4b4a356341d8e27152e94014aec336c4fa7b4b5956e5417cc3871abea0bcc9df"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793577600%2Ccreated_at_i%3C1793664000&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-06T11:55:30.417347+00:00",
+          "resultCount": 8,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-02-page-2.json",
+          "sha256": "5c16b0adaff0fdf406f2f0a5b248f1ccbfcb4410234ead6730e2c80bdb3d0855"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793664000%2Ccreated_at_i%3C1793750400&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-06T11:55:31.551526+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-03-page-0.json",
+          "sha256": "af5f886191cc228ee45d876761cd5f159cd03be7ae2bb47ce6ae9129da320dd9"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793664000%2Ccreated_at_i%3C1793750400&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-06T11:55:32.947293+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-03-page-1.json",
+          "sha256": "ce74af232485619b60b005bfcd6fff82ba4cabb2034fada20b8799e93c1fdf2d"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793664000%2Ccreated_at_i%3C1793750400&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-06T11:55:34.447558+00:00",
+          "resultCount": 47,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-03-page-2.json",
+          "sha256": "70f090c8e32cc5b4d75eca60080741cb87c982821e9198961b53bfa4b25572fd"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793750400%2Ccreated_at_i%3C1793836800&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-06T11:55:36.166011+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-04-page-0.json",
+          "sha256": "71ad5f29c8949b87105752617c8681abd8a601d71e908da5bbd6446f928f2467"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793750400%2Ccreated_at_i%3C1793836800&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-06T11:55:37.522231+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-04-page-1.json",
+          "sha256": "6443459b7762eb84853b4ea4b403fbded5cf11d74ad0cd3f19972f74a1c3ec01"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793750400%2Ccreated_at_i%3C1793836800&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-06T11:55:38.990934+00:00",
+          "resultCount": 27,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-04-page-2.json",
+          "sha256": "3dd47b847b6f118e98329fa16e63f8b5a98ceaca36da5b41e8580250d20de540"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793836800%2Ccreated_at_i%3C1793923200&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-06T11:55:40.127826+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-05-page-0.json",
+          "sha256": "74393ffb6ed9c31cb0d79f6f5322f832cffd8407f2988b8ecf77ccb711c67d49"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793836800%2Ccreated_at_i%3C1793923200&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-06T11:55:41.837994+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-05-page-1.json",
+          "sha256": "a2918564a5cc4aa7c7f121eda7fa2ec4aab1852a9ff7af9dc29ed8ab58c85653"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793836800%2Ccreated_at_i%3C1793923200&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-06T11:55:44.341535+00:00",
+          "resultCount": 41,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-05-page-2.json",
+          "sha256": "c6b18c78baa1848e3b7f232613004598b37a6a4331199c6b5ea7ebcd62fc9561"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793923200%2Ccreated_at_i%3C1794009600&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-06T11:55:45.652454+00:00",
+          "resultCount": 75,
+          "artifact": "governance/evidence/2026-11-06/search/hn-ai-2026-11-06-page-0.json",
+          "sha256": "f4dc5ccf80eefbb24519aa0efb468e1de52d92b5334eadea8b266ddcb0fa8680"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793923200%2Ccreated_at_i%3C1794009600&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-09T00:46:00.432092+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-09/search/hn-ai-2026-11-06-page-0.json",
+          "sha256": "ed1b965cdf50c70fe78819db00d3254f1698229a24f2575175bac00c72d8548e"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793923200%2Ccreated_at_i%3C1794009600&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-09T00:46:01.756364+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-09/search/hn-ai-2026-11-06-page-1.json",
+          "sha256": "76cb4e9f744af4ce7a619e62847de7b60ef3c29d52c8cd8ebb7d6bd5b206f725"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1793923200%2Ccreated_at_i%3C1794009600&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-09T00:46:02.785532+00:00",
+          "resultCount": 11,
+          "artifact": "governance/evidence/2026-11-09/search/hn-ai-2026-11-06-page-2.json",
+          "sha256": "1a98b92a180589a46853131c7c662102a0eddf557148ffb945343dc509b1dce1"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794009600%2Ccreated_at_i%3C1794096000&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-09T00:46:03.983880+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-09/search/hn-ai-2026-11-07-page-0.json",
+          "sha256": "2ee48e573338c72a05307a181efdbd9f987b3f38b187e95f9fa96f6685423651"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794009600%2Ccreated_at_i%3C1794096000&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-09T00:46:05.724454+00:00",
+          "resultCount": 29,
+          "artifact": "governance/evidence/2026-11-09/search/hn-ai-2026-11-07-page-1.json",
+          "sha256": "cfed5551b11bf3afe3916c9284ac3f47ce0cf21585a3cf540e612953fb2cfe3a"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794096000%2Ccreated_at_i%3C1794182400&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-09T00:46:06.983090+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-09/search/hn-ai-2026-11-08-page-0.json",
+          "sha256": "39407be7f01a5610d9485a6939bdcc1a1f685930d8a5c2f0d0571ecc7def0ba7"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794096000%2Ccreated_at_i%3C1794182400&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-09T00:46:09.543244+00:00",
+          "resultCount": 16,
+          "artifact": "governance/evidence/2026-11-09/search/hn-ai-2026-11-08-page-1.json",
+          "sha256": "53eeeeb7a8f9c0f0c309099fda2162f7f70e4c47fb443b4932451aa03111b2fc"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794182400%2Ccreated_at_i%3C1794268800&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-09T00:46:10.508959+00:00",
+          "resultCount": 7,
+          "artifact": "governance/evidence/2026-11-09/search/hn-ai-2026-11-09-page-0.json",
+          "sha256": "84b8b766bbd012d7ac950bd370efca91694e2e6bfd144ab54efd96568a802c97"
+        }
+      ],
+      "reason": "Keyword filtering misses unmatched submissions; not an exhaustive HN feed.",
+      "retryResult": "All reported daily pages captured within 10-page cap; no platform-wide completeness claim."
+    },
+    {
+      "id": "reddit-search",
+      "status": "unavailable",
+      "windowCovered": false,
+      "coverageNote": "Brave Reddit site-index zero for Nov6–9, no readable Reddit post body or platform search. Zero search result is not zero posts.",
+      "attempts": [
+        {
+          "query": "site:reddit.com/r/LocalLLaMA/ OR site:reddit.com/r/MachineLearning/ AI November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:59.939508+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-reddit-public.json",
+          "sha256": "a54e096a97081ad57011ea15a885d7514055f5440e3eab635a44c544abfd612a"
+        },
+        {
+          "query": "site:reddit.com/r/LocalLLaMA/ OR site:reddit.com/r/MachineLearning/ AI November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:51.590866+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/web-reddit-public.json",
+          "sha256": "c7f01d2afc7af508064bf17b2444c7bd1c51d8828e35871b7f4e07eb7f176f54"
+        }
+      ],
+      "reason": "Zero results do not prove there are no Reddit posts.",
+      "retryResult": "No login per user plan B; authorized public index produced no usable body."
+    },
+    {
+      "id": "x-search",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Brave site:x.com partial public leads and one direct original-actor post from old window; not an authenticated platform search.",
+      "attempts": [
+        {
+          "query": "site:x.com/AnthropicAI/status/ after:2026-11-02 before:2026-11-07",
+          "executedAt": "2026-11-06T11:56:07.307752+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-anthropic.json",
+          "sha256": "793168fa73de8b355896abf83e41f83b2744b07651edfb86c013b97840877d78"
+        },
+        {
+          "query": "site:x.com/deepseek_ai/status/ after:2026-11-02 before:2026-11-07",
+          "executedAt": "2026-11-06T11:56:11.342610+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-deepseek.json",
+          "sha256": "5dd8d7695dffbeb33594e4b531da2d3b592690418ed3f26d9207ce491b87276d"
+        },
+        {
+          "query": "site:x.com/MistralAI/status/ after:2026-11-02 before:2026-11-07",
+          "executedAt": "2026-11-06T11:56:09.306890+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-mistral.json",
+          "sha256": "474e345c4d99954bea069cabb573ed5c42ec5c5a1a82f41441f308afa94b41cb"
+        },
+        {
+          "query": "site:x.com/OpenAI/status/ after:2026-11-02 before:2026-11-07",
+          "executedAt": "2026-11-06T11:56:04.967587+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-openai.json",
+          "sha256": "27d5f61ddedefceca72950d2629d143b6a31f02db15214c04e508786d02cf643"
+        },
+        {
+          "query": "site:x.com/ AI model release November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:56:02.032601+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-public.json",
+          "sha256": "073a6ddac934d87bcfff728fe10a4ce51c0844540b462050f75a067527a34cba"
+        },
+        {
+          "query": "site:x.com/OpenAI/status/ OR site:x.com/AnthropicAI/status/ after:2026-11-05 before:2026-11-10",
+          "executedAt": "2026-11-09T00:46:56.248039+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/web-x-official.json",
+          "sha256": "97f081828e7710b2a38469ef0fd5d98c384bf133479b704be6e8b369179724a3"
+        },
+        {
+          "query": "site:x.com/ AI model launch November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:53.847146+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-x-public.json",
+          "sha256": "712f57e43b597d06c8bc5ae1ce2ec39252396253fb9add5e08eb406de9dbc2b1"
+        }
+      ],
+      "reason": "No authenticated X platform search, and index snippets are not post bodies.",
+      "retryResult": "No login per plan B; indexed links are discovery leads only."
+    },
+    {
+      "id": "import-ai",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Two read-only INBOX searches Nov2–6 and Nov6–9; sanitized editorial excerpts only. The Batch had one overlap message, Import AI none in latter window.",
+      "attempts": [
+        {
+          "query": "IMAP readonly FROM import-ai SINCE 02-Nov BEFORE 07-Nov-2026",
+          "executedAt": "2026-11-06T11:55:14.623996+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-06/mail/sanitized-newsletters.json",
+          "sha256": "73096bcbc679ba4d8cc9024ec5585e0693300619c7e11cc6a1407291c7a9b00a"
+        },
+        {
+          "query": "IMAP readonly FROM import-ai SINCE 06-Nov BEFORE 10-Nov-2026",
+          "executedAt": "2026-11-09T00:45:56.158967+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/mail/sanitized-newsletters.json",
+          "sha256": "6fa4952778c6a12006d0b9e9dd56916a38d8f902ff62ec076371dd4d1cbb72a2"
+        }
+      ],
+      "reason": "Only inbox, not all folders or linked full articles.",
+      "retryResult": "Mailbox search succeeded; body URLs intentionally not archived."
+    },
+    {
+      "id": "the-batch",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Two read-only INBOX searches Nov2–6 and Nov6–9; sanitized editorial excerpts only. The Batch had one overlap message, Import AI none in latter window.",
+      "attempts": [
+        {
+          "query": "IMAP readonly FROM the-batch SINCE 02-Nov BEFORE 07-Nov-2026",
+          "executedAt": "2026-11-06T11:55:14.623996+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-06/mail/sanitized-newsletters.json",
+          "sha256": "73096bcbc679ba4d8cc9024ec5585e0693300619c7e11cc6a1407291c7a9b00a"
+        },
+        {
+          "query": "IMAP readonly FROM the-batch SINCE 06-Nov BEFORE 10-Nov-2026",
+          "executedAt": "2026-11-09T00:45:56.158967+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/mail/sanitized-newsletters.json",
+          "sha256": "6fa4952778c6a12006d0b9e9dd56916a38d8f902ff62ec076371dd4d1cbb72a2"
+        }
+      ],
+      "reason": "Only inbox, not all folders or linked full articles.",
+      "retryResult": "Mailbox search succeeded; body URLs intentionally not archived."
+    },
+    {
+      "id": "web",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Original Nov2–6 + Nov6–9 Brave category/targeted first-page queries (overlap Nov6); never exhaustive.",
+      "attempts": [
+        {
+          "query": "site:anthropic.com/news November 3 4 5 6 2026",
+          "executedAt": "2026-11-06T11:55:41.641876+00:00",
+          "resultCount": 3,
+          "artifact": "governance/evidence/2026-11-06/search/web-anthropic.json",
+          "sha256": "6b70a5cab2dfcf7ac49af47f4832bd80d525a40532fc0327ffa8a57977e7a3e5"
+        },
+        {
+          "query": "site:arxiv.org/abs/ AI November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:57.307283+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-06/search/web-arxiv.json",
+          "sha256": "73cf89962c87595af0886dc7bc2bd02ce6e20f84c9ca6b71a22ddcdec547e7c0"
+        },
+        {
+          "query": "new AI research benchmark robotics science November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:18.607712+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-06/search/web-capability.json",
+          "sha256": "f3ed07be11982527de52487e889d7cfb4ca1981a41ec3bc2a77928880867a774"
+        },
+        {
+          "query": "中国 人工智能 大模型 开源 产品 监管 2026年11月3日 4日 5日 6日",
+          "executedAt": "2026-11-06T11:55:36.701418+00:00",
+          "resultCount": 15,
+          "artifact": "governance/evidence/2026-11-06/search/web-china.json",
+          "sha256": "b21889e43ebd2f71a73c462cdd996f8b7df624459370c800fff871a8817e169c"
+        },
+        {
+          "query": "AI investment merger chips datacenter deal November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:24.487508+00:00",
+          "resultCount": 19,
+          "artifact": "governance/evidence/2026-11-06/search/web-commerce.json",
+          "sha256": "dfe78232874bd77031019d827dfe8b5af228073a94aa50d5bfd6e4b564cb20d8"
+        },
+        {
+          "query": "site:blog.google/innovation-and-ai/ November 3 4 5 6 2026",
+          "executedAt": "2026-11-06T11:55:44.135506+00:00",
+          "resultCount": 3,
+          "artifact": "governance/evidence/2026-11-06/search/web-google.json",
+          "sha256": "f3193ad12d9af3fb94ef09431be9fcd69e21199c69a4acee1cd2df0f526ad9be"
+        },
+        {
+          "query": "AI legislation court regulation enforcement November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:27.617460+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-06/search/web-governance.json",
+          "sha256": "2a27630a65394be2bd36e58bf88bead7f5d6b999064bbefcec83235437d063ee"
+        },
+        {
+          "query": "site:huggingface.co/blog/ November 3 4 5 6 2026 models",
+          "executedAt": "2026-11-06T11:55:54.855556+00:00",
+          "resultCount": 4,
+          "artifact": "governance/evidence/2026-11-06/search/web-huggingface.json",
+          "sha256": "491af709b4ddda01d7a022183bfaceb3a2f04eb1f513be19c0ce374de79399b4"
+        },
+        {
+          "query": "site:about.fb.com/news/ AI November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:48.110827+00:00",
+          "resultCount": 2,
+          "artifact": "governance/evidence/2026-11-06/search/web-meta.json",
+          "sha256": "581bb799979640a799f98303632e3d498c1769412968a5581411beab905db381"
+        },
+        {
+          "query": "site:blogs.microsoft.com/ai/ November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:46.200955+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-microsoft.json",
+          "sha256": "8d9546692caa2f8ea26ced1b5bc2f9aa266950896aa6f56d976be10a0d2a7006"
+        },
+        {
+          "query": "site:nvidianews.nvidia.com AI November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:50.565328+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-06/search/web-nvidia.json",
+          "sha256": "84cd7833fb3918f8aa9447367c6c3b51c7b37aa92eaa3d06c2011476f397c71e"
+        },
+        {
+          "query": "site:openai.com/index/ November 3 4 5 6 2026",
+          "executedAt": "2026-11-06T11:55:39.343167+00:00",
+          "resultCount": 9,
+          "artifact": "governance/evidence/2026-11-06/search/web-openai.json",
+          "sha256": "79db1d2bbcfee684f8dc845553a9150f9e764371c43f27ebd1daf1094229f2bb"
+        },
+        {
+          "query": "AI news model launch regulation research November 2 3 4 5 6 2026",
+          "executedAt": "2026-11-06T11:55:14.623685+00:00",
+          "resultCount": 19,
+          "artifact": "governance/evidence/2026-11-06/search/web-overview.json",
+          "sha256": "b11af0e2184ab484d47f3798d0db9778c0115fbd83459e29c25de8cd8d0704a2"
+        },
+        {
+          "query": "AI product model agent API release November 3 4 5 6 2026",
+          "executedAt": "2026-11-06T11:55:21.371212+00:00",
+          "resultCount": 19,
+          "artifact": "governance/evidence/2026-11-06/search/web-product.json",
+          "sha256": "1fe0b356e7d47b507263ae336d573d88627b542221dee2c9ea33d46e8892a6c1"
+        },
+        {
+          "query": "site:reddit.com/r/LocalLLaMA/ OR site:reddit.com/r/MachineLearning/ AI November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:59.939508+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-reddit-public.json",
+          "sha256": "a54e096a97081ad57011ea15a885d7514055f5440e3eab635a44c544abfd612a"
+        },
+        {
+          "query": "AI security incident model abuse safety evaluation November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:30.654537+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-06/search/web-safety.json",
+          "sha256": "79314cc339a33527db1f54c12ccb5b6831fb493ac97dd96daa79315dc27c9b0f"
+        },
+        {
+          "query": "AI jobs school labor society survey November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:55:33.959322+00:00",
+          "resultCount": 16,
+          "artifact": "governance/evidence/2026-11-06/search/web-society.json",
+          "sha256": "866a3f20d4860feed2aa30f3b44e9c24d80c23ae22f08690ad43f98ce8e5f67b"
+        },
+        {
+          "query": "site:x.com/AnthropicAI/status/ after:2026-11-02 before:2026-11-07",
+          "executedAt": "2026-11-06T11:56:07.307752+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-anthropic.json",
+          "sha256": "793168fa73de8b355896abf83e41f83b2744b07651edfb86c013b97840877d78"
+        },
+        {
+          "query": "site:x.com/deepseek_ai/status/ after:2026-11-02 before:2026-11-07",
+          "executedAt": "2026-11-06T11:56:11.342610+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-deepseek.json",
+          "sha256": "5dd8d7695dffbeb33594e4b531da2d3b592690418ed3f26d9207ce491b87276d"
+        },
+        {
+          "query": "site:x.com/MistralAI/status/ after:2026-11-02 before:2026-11-07",
+          "executedAt": "2026-11-06T11:56:09.306890+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-mistral.json",
+          "sha256": "474e345c4d99954bea069cabb573ed5c42ec5c5a1a82f41441f308afa94b41cb"
+        },
+        {
+          "query": "site:x.com/OpenAI/status/ after:2026-11-02 before:2026-11-07",
+          "executedAt": "2026-11-06T11:56:04.967587+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-openai.json",
+          "sha256": "27d5f61ddedefceca72950d2629d143b6a31f02db15214c04e508786d02cf643"
+        },
+        {
+          "query": "site:x.com/ AI model release November 3 4 5 2026",
+          "executedAt": "2026-11-06T11:56:02.032601+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-06/search/web-x-public.json",
+          "sha256": "073a6ddac934d87bcfff728fe10a4ce51c0844540b462050f75a067527a34cba"
+        },
+        {
+          "query": "Anthropic IPO announced November 2 2026 prospectus fundraising 900 billion commitment",
+          "executedAt": "2026-11-06T11:58:09.854630+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-anthropic-ipo.json",
+          "sha256": "bd8b607c8ce7ad0954a293d6b42a5d7ebc06eb229e6807a562501a6861430427"
+        },
+        {
+          "query": "site:mofcom.gov.cn 2026 11 人工智能 出口 管制 48 号 公告 2T",
+          "executedAt": "2026-11-06T11:57:44.344821+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-06/search/target-china-export.json",
+          "sha256": "7a3d818103865b498d524ffa64a8fc0ca09f02bcfa2cc74d1c1f45480ad08992"
+        },
+        {
+          "query": "GPT-6 Cyber November 5 2026 OpenAI Daybreak Red official api docs availability safety card",
+          "executedAt": "2026-11-06T12:01:33.645528+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-cyber-primary.json",
+          "sha256": "51a7ceeabdec8cc0dd97de8bbf742e03821c30e2610d3884402fbac85c185709"
+        },
+        {
+          "query": "\"Gemini Omni 1.2 Flash\" November 5 Google blog API availability",
+          "executedAt": "2026-11-06T11:57:28.135252+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-google-omni.json",
+          "sha256": "f579e8a410bfa0d18efe7b31c83a4a1f3f92a79ded05da7d552aae8a01249f0e"
+        },
+        {
+          "query": "Google search access schools reject AI November 3 AP 2026 actual policy",
+          "executedAt": "2026-11-06T11:57:46.450679+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-google-school.json",
+          "sha256": "6dd2e5b9569cb675706534b19d3b1cefbae768281eb620f5560d8800f08aa1e3"
+        },
+        {
+          "query": "Google Singapore university research partnership November 3 2026 independent",
+          "executedAt": "2026-11-06T11:58:01.473668+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-google-singapore.json",
+          "sha256": "7e67c200e0a71f83f9b91691b72f81562efc45a5a351a851ed20dc558a108ca9"
+        },
+        {
+          "query": "Tencent Hy4 November 4 full weights still preview API tokenhub OpenRouter independent",
+          "executedAt": "2026-11-06T12:01:18.306242+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-hy4-full.json",
+          "sha256": "80c61eb2af986dd941280a8b20d4b563dffa3b436aca2c51a868f86dcc8a9c53"
+        },
+        {
+          "query": "OpenAI Images 2.6 GIF reference image November 4 API available Flare Sunburst rollout",
+          "executedAt": "2026-11-06T12:01:27.361726+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-images-api.json",
+          "sha256": "12d9a0391427b59e793358ad37383f9e4eebab06ea91a901d4bd20c80d54aef6"
+        },
+        {
+          "query": "Inkling 2 Small November 6 2026 weights publicly available Tinker held external safety",
+          "executedAt": "2026-11-06T12:01:21.531565+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-inkling-weights.json",
+          "sha256": "db877a30546adfe7d5f68a051c76fadd7bdecef23f771fca87a982878412fd51"
+        },
+        {
+          "query": "site:kernel.sh/blog/public-notice-of-security-incident-nov-4-2026 AI incident",
+          "executedAt": "2026-11-06T11:57:55.346979+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-06/search/target-kernel-security.json",
+          "sha256": "688c3d8d712d27fc682f2775b08bdd68d095ee90beebd3e6914dac27c0ebba61"
+        },
+        {
+          "query": "Marvell Lumentum deal November 2026 closed regulatory approval shareholder vote November 6",
+          "executedAt": "2026-11-06T12:01:09.022550+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-marvell-closing.json",
+          "sha256": "1d3533fca6b9ed10ae7b50dc57619d5f191b10516d5ed4556cca9884e5d2e0b7"
+        },
+        {
+          "query": "Marvell Lumentum merger November 2 2026 11.5 115 official press release",
+          "executedAt": "2026-11-06T11:57:21.890003+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-marvell-lumentum.json",
+          "sha256": "4477171f90f2777aebfa811c056461921a30e0607bcc41a90dbdfd41de4a8354"
+        },
+        {
+          "query": "\"Give Your Muse a Voice\" Meta November 5 2026 avatar access",
+          "executedAt": "2026-11-06T11:57:32.076989+00:00",
+          "resultCount": 8,
+          "artifact": "governance/evidence/2026-11-06/search/target-meta-voice.json",
+          "sha256": "b5be5c0234f0ea27303a5b0b73aab838a51bd7851bdc06edad5be7895b80c54a"
+        },
+        {
+          "query": "METR Anthropic AI R&D acceleration assessment November 5 2026 independent",
+          "executedAt": "2026-11-06T11:57:41.697640+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-metr-anthropic.json",
+          "sha256": "4b31008f660d13bcc33571d3c6210c52443da2ecd8a50314a60d440041752093"
+        },
+        {
+          "query": "METR Anthropic R&D acceleration report November 5 redacted evidence criticism response",
+          "executedAt": "2026-11-06T12:01:24.372755+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-metr-counter.json",
+          "sha256": "d4268efbd408591957302b3dc9f96ed2fbc762d3193bdc65e8280d13e66a14b8"
+        },
+        {
+          "query": "Meta Muse voice expressive avatars November 5 US rollout test independent availability",
+          "executedAt": "2026-11-06T12:01:14.779008+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-muse-scope.json",
+          "sha256": "23d7aaa94498ee0352481741355508320ff14b5a336d8bfdf7e1d26a0c631ea9"
+        },
+        {
+          "query": "site:about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars availability",
+          "executedAt": "2026-11-06T11:58:04.138044+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-06/search/target-muse-source.json",
+          "sha256": "888e84c972b1d5a9fca2b6173c8ab3e76fc96c1ac1231992625a3a7d809f232e"
+        },
+        {
+          "query": "Gemini Omni 1.2 Flash independent tested API general availability November 5 2026 review limitations",
+          "executedAt": "2026-11-06T12:01:12.279110+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-omni-independent.json",
+          "sha256": "ce1429a2a8170857395be55064549a3c477c883bcc922eafd8dd0560d4bee321"
+        },
+        {
+          "query": "\"GPT-6 Cyber\" \"November 5\" OpenAI independent Reuters details availability",
+          "executedAt": "2026-11-06T11:57:12.182039+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-openai-cyber.json",
+          "sha256": "28fc7d3e88274561c8ac5874b19d1128c025c10ce85ea367299e226a40a05d92"
+        },
+        {
+          "query": "\"Images 2.6\" OpenAI November 4 availability GIF reference image",
+          "executedAt": "2026-11-06T11:57:15.651220+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-openai-images.json",
+          "sha256": "6dc77868ac4304a6ae865997298b648c8eebf4e289541e57a59df0e697e87087"
+        },
+        {
+          "query": "\"Accelerating engineering for the physical world\" OpenAI November 4 2026 independent",
+          "executedAt": "2026-11-06T11:57:58.364315+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-openai-physical.json",
+          "sha256": "f78e230e6442322e45b66e06d9fcdd349fddbcf0f8d43ef84eaebee56241cf7d"
+        },
+        {
+          "query": "\"GPT-5.6 Sol\" preview November 3 scope previously launched",
+          "executedAt": "2026-11-06T11:57:18.589568+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-openai-sol.json",
+          "sha256": "1079c8d620083abc5c60088a6b997267e3c818bce7518224924b1611abc9f40b"
+        },
+        {
+          "query": "Oracle November 2 2026 files sell 20 billion stock bonds AI primary SEC",
+          "executedAt": "2026-11-06T11:57:49.279882+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-oracle-funding.json",
+          "sha256": "e66ab0efd7f25be24e062928806861de29376c8a882c656e3d6b58b5c34012e1"
+        },
+        {
+          "query": "Qwen new open weight model November 3 4 5 2026 Alibaba primary",
+          "executedAt": "2026-11-06T11:58:06.815663+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-qwen-model.json",
+          "sha256": "7fc042011c4607a9464c3f44e7de8e51a486e54c324295cb66ea0a3d4d755b34"
+        },
+        {
+          "query": "November 3 2026 AI data center ballot measures voters official county results",
+          "executedAt": "2026-11-06T11:57:52.294164+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-society-votes.json",
+          "sha256": "9afa8b80b72b906af70e24e747dd6c69c2a6c502ce2fccfdf221a477ee801baf"
+        },
+        {
+          "query": "\"Hy4\" Tencent November 5 open source weights Hugging Face license",
+          "executedAt": "2026-11-06T11:57:35.527045+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-tencent-hy4.json",
+          "sha256": "ca18cecbc3d7b711d4fa297a9bf772a251c1be73835031045489e15ff61dcd03"
+        },
+        {
+          "query": "\"Inkling 2 Small\" Thinking Machines November 6 API weights",
+          "executedAt": "2026-11-06T11:57:38.576664+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-thinking-inkling.json",
+          "sha256": "c59f900cfe0c83d663fe4301f26ad9f9c1e037fc93cf79f21e4dcf4e8faf6aaa"
+        },
+        {
+          "query": "November 3 2026 data center ballot 41 40 results Ballotpedia county certified",
+          "executedAt": "2026-11-06T12:01:30.465169+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-06/search/target-vote-official.json",
+          "sha256": "12d7c23e7a8f5c3832a52cc4b85f694979fb82105a24d475883d601900bcf4b7"
+        },
+        {
+          "query": "2026 November 3 data center ballot measure certified county official 41 results November 7 8 9",
+          "executedAt": "2026-11-09T00:46:33.383803+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-ballot-status.json",
+          "sha256": "512d7b22d4f77800a40093c87461d94e97c9b981f5c74fb5fd460a98fe348e58"
+        },
+        {
+          "query": "AI scientific benchmark algorithm robotics breakthrough November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:00.184104+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-capability.json",
+          "sha256": "54d66e19d9b8bb0eff189dd3d6fc665169bb1f24674ad19c2588a5632bb300fb"
+        },
+        {
+          "query": "中国 人工智能 大模型 开源 安全 监管 2026年11月6日 7日 8日 9日",
+          "executedAt": "2026-11-09T00:46:17.856973+00:00",
+          "resultCount": 13,
+          "artifact": "governance/evidence/2026-11-09/search/web-china.json",
+          "sha256": "507d2a786016c6da514cfe7c98283024db8f993992aebbcedb88a3acf9aa94bb"
+        },
+        {
+          "query": "AI funding acquisition chip data center infrastructure November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:05.526419+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-commerce.json",
+          "sha256": "d613c8c2ee6a8fb3be36b6f0b2bbd64c5bd05612f548f808f06f1ab1fc2c393d"
+        },
+        {
+          "query": "AI regulation law court election policy November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:09.345390+00:00",
+          "resultCount": 14,
+          "artifact": "governance/evidence/2026-11-09/search/web-governance.json",
+          "sha256": "cb0be33bba833660db7fc8ed0f39ad3610ca1e4cc743d22bb0b6a803154d8cdc"
+        },
+        {
+          "query": "site:huggingface.co/blog/ November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:49.318657+00:00",
+          "resultCount": 7,
+          "artifact": "governance/evidence/2026-11-09/search/web-hf-blog.json",
+          "sha256": "68443237c927e1fccddb8a25553335d600c82b48b2301ea949246a6baa0fdb5f"
+        },
+        {
+          "query": "\"Hy4\" weights system card November 7 8 9 2026 site:huggingface.co OR site:tencent.com",
+          "executedAt": "2026-11-09T00:46:28.451155+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/web-hy4-status.json",
+          "sha256": "6ff38aa9d3d76e3240482dbe9a967224c37e7ba36fb4fd871d408cea4e0c6291"
+        },
+        {
+          "query": "\"Inkling 2 Small\" weights release November 7 8 9 2026 site:thinkingmachines.ai OR site:huggingface.co",
+          "executedAt": "2026-11-09T00:46:26.185278+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/web-inkling-status.json",
+          "sha256": "dee925575d62e6ad5e05b42edec2d85480cbe3dc5b3888eed494b4612f608537"
+        },
+        {
+          "query": "\"Marvell\" \"Lumentum\" November 9 2026 deal completed regulatory",
+          "executedAt": "2026-11-09T00:46:30.615986+00:00",
+          "resultCount": 18,
+          "artifact": "governance/evidence/2026-11-09/search/web-marvell-status.json",
+          "sha256": "ae76db99e1cbd3d3ec50d895ac360dbcc4ee61484d7c8701588895b4bf3ca3eb"
+        },
+        {
+          "query": "site:anthropic.com/news November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:38.484905+00:00",
+          "resultCount": 2,
+          "artifact": "governance/evidence/2026-11-09/search/web-official-anthropic.json",
+          "sha256": "cb61534836a429abe064096819dfd088bf97684b0d362edc457a45b090b4dcb7"
+        },
+        {
+          "query": "site:blog.google/innovation-and-ai/ November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:40.598905+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/web-official-google.json",
+          "sha256": "289f106124c3c4cee168e4da5976966b0a98e45937ecd2b3bd76d17ae0cee2a2"
+        },
+        {
+          "query": "site:about.fb.com/news/2026/11/ November 6 7 8 9 AI",
+          "executedAt": "2026-11-09T00:46:42.962919+00:00",
+          "resultCount": 3,
+          "artifact": "governance/evidence/2026-11-09/search/web-official-meta.json",
+          "sha256": "106647f8ba1dbaf094843ffaf32a6b1e4e307dca3c4902be5a9236f12749df55"
+        },
+        {
+          "query": "site:blogs.microsoft.com/ai/ November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:45.185077+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/web-official-microsoft.json",
+          "sha256": "72b381077554e7b6633d454964a413540320a817ce9a77485736907246140cf5"
+        },
+        {
+          "query": "site:nvidianews.nvidia.com November 6 7 8 9 2026 AI",
+          "executedAt": "2026-11-09T00:46:47.169690+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/web-official-nvidia.json",
+          "sha256": "81459f80f2190d2f4ef4356c53dab1633db0fd3f9cfa2c8201dfdea5102014ed"
+        },
+        {
+          "query": "site:openai.com/index/ November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:36.352187+00:00",
+          "resultCount": 3,
+          "artifact": "governance/evidence/2026-11-09/search/web-official-openai.json",
+          "sha256": "f4c02b75c76d799699d6570e31008d256369148450a9f14f19bef5ff85af6593"
+        },
+        {
+          "query": "\"Marvell\" \"Lumentum\" OR \"Muse\" OR \"Omni 1.2 Flash\" OR METR Anthropic November 7 8 9 2026 followup",
+          "executedAt": "2026-11-09T00:46:23.190781+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-original-eight-2.json",
+          "sha256": "ccc3e1692cea31ff0b0c11ed34b18a119545a466401351193578c9bef5b1727a"
+        },
+        {
+          "query": "\"Inkling 2 Small\" OR \"Hy4\" OR \"Images 2.6\" OR \"GPT-6 Cyber\" November 7 8 9 2026 update",
+          "executedAt": "2026-11-09T00:46:20.542822+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-original-eight.json",
+          "sha256": "ce04c179d3558ed415f2ddeff243d79bf7516c793b2e9af7f06b5394e249f426"
+        },
+        {
+          "query": "AI research model launch policy safety investment November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:45:56.158991+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-overview.json",
+          "sha256": "9da2c06c8ade23bf93c650a9976a66885ae08e214d3eb6f67de63470ba6e543b"
+        },
+        {
+          "query": "AI model API agent product launch open weights November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:02.724893+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-product.json",
+          "sha256": "03c70f0fa1a8ad1575c70b8b45bd23d71d7688b2a1cc505d318ea9ea49cb901b"
+        },
+        {
+          "query": "site:reddit.com/r/LocalLLaMA/ OR site:reddit.com/r/MachineLearning/ AI November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:51.590866+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/web-reddit-public.json",
+          "sha256": "c7f01d2afc7af508064bf17b2444c7bd1c51d8828e35871b7f4e07eb7f176f54"
+        },
+        {
+          "query": "AI incident vulnerability cybersecurity evaluation November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:12.373884+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-safety.json",
+          "sha256": "77ade9b6d21b5674d9ba83abb70ea17158bef457ea5e3ca55d96dc48ccc4b05d"
+        },
+        {
+          "query": "AI employment labor schools society ballot November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:15.141906+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-society.json",
+          "sha256": "ed95fe3360c29719f1269cd455ca2ba33342b73cb210be3de9a32d7399e08604"
+        },
+        {
+          "query": "site:x.com/OpenAI/status/ OR site:x.com/AnthropicAI/status/ after:2026-11-05 before:2026-11-10",
+          "executedAt": "2026-11-09T00:46:56.248039+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/web-x-official.json",
+          "sha256": "97f081828e7710b2a38469ef0fd5d98c384bf133479b704be6e8b369179724a3"
+        },
+        {
+          "query": "site:x.com/ AI model launch November 6 7 8 9 2026",
+          "executedAt": "2026-11-09T00:46:53.847146+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-09/search/web-x-public.json",
+          "sha256": "712f57e43b597d06c8bc5ae1ce2ec39252396253fb9add5e08eb406de9dbc2b1"
+        },
+        {
+          "query": "site:anthropic.com/news/2026/11/ OR site:anthropic.com/news/ November 7 8 9 2026 Anthropic",
+          "executedAt": "2026-11-09T00:48:11.449261+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/target-anthropic-new.json",
+          "sha256": "515b65b5eb704b6c7edf8286015bd7b25af01eb5c35f82a88ccd77554bf34ee7"
+        },
+        {
+          "query": "Baidu ERNIE 5.5 Flash Base weights November 6 2026 huggingface GitHub official",
+          "executedAt": "2026-11-09T00:47:54.869687+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-baidu-ernie.json",
+          "sha256": "430a659302090a09d1d8540a898430f1144a04f8f2783a61a09d8729aeb2609d"
+        },
+        {
+          "query": "百度 文心 ERNIE 5.5 Flash Base 开源 权重 2026年11月5日 官方 HuggingFace",
+          "executedAt": "2026-11-09T00:58:23.943335+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-baidu-official-release.json",
+          "sha256": "fd2d4a030f10e6cdb3b1b67e4c430e44489ac911c945f4476628d120dbc4812b"
+        },
+        {
+          "query": "2026 data center ballot November 3 40 41 county official election results Ohio Wells Maine Harwood North Dakota",
+          "executedAt": "2026-11-09T00:49:22.197824+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-ballot-county-results.json",
+          "sha256": "99b5817409cedb85a0e53feba4793b2bd9c9104ee7c2182464ea653fc837715f"
+        },
+        {
+          "query": "site:ballotpedia.org/Data_center-related_ballot_measures,_2026 official certified 40 41 2026",
+          "executedAt": "2026-11-09T00:47:46.427988+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-ballotpedia-cert.json",
+          "sha256": "a3fd9abd3d0c9c7f3d434d1340eef0df9dba370c689423be5dccf7c139c1502c"
+        },
+        {
+          "query": "site:news.ballotpedia.org/2026/11/06 data center 40 of 41 local measures results vote official ballotpedia",
+          "executedAt": "2026-11-09T00:47:44.069639+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-ballotpedia-final.json",
+          "sha256": "73cda081d32e45e83f47bbb01e69f51381eb2bf3cdba527cb9d2b838841a1ec8"
+        },
+        {
+          "query": "November 6 2026 White House AI biosecurity policy executive order national strategy official whitehouse.gov",
+          "executedAt": "2026-11-09T00:48:05.691479+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-bio-policy.json",
+          "sha256": "2c6daa5223887800516cc8ef39e2620a7e8ae6570d1293845c378f2ab04542c0"
+        },
+        {
+          "query": "site:huggingface.co/baidu/ERNIE-5.5-Flash-Base OR site:github.com/PaddlePaddle/ERNIE-5.5-Flash 2026",
+          "executedAt": "2026-11-09T00:54:05.763011+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-ernie-baidu-primary.json",
+          "sha256": "41b7453c7f1edb8cf8dede6ea48447fc03a780cc5a0dd89d9009de714f8d0423"
+        },
+        {
+          "query": "site:baidu.com OR site:ernie.baidu.com ERNIE 5.5 Flash Base weights November 5 2026",
+          "executedAt": "2026-11-09T00:49:01.768201+00:00",
+          "resultCount": 2,
+          "artifact": "governance/evidence/2026-11-09/search/target-ernie-official-blog.json",
+          "sha256": "32bd876ec73546223dad2c5c777e018c7f1fc1cff19bfeaaa8b938a4edc67729"
+        },
+        {
+          "query": "Microsoft AI Frontiers group ended John Langford November 7 2026 independent report",
+          "executedAt": "2026-11-09T00:58:31.200791+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-frontiers-independent.json",
+          "sha256": "c41e12f18a80d05eac0fac5da6ef8e7546e0ffe7ae60b7a88b3ced0f0476b921"
+        },
+        {
+          "query": "Google 17 billion Wyoming data center November 6 7 2026 official investment announcement",
+          "executedAt": "2026-11-09T00:48:02.997064+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-google-wyoming.json",
+          "sha256": "7c687e4c33c82316387164d60282e21b75e79bb9e89c3318b51f611229511164"
+        },
+        {
+          "query": "site:huggingface.co/blog/allenai/toyblocks release November 7 robotics benchmark research",
+          "executedAt": "2026-11-09T00:48:13.507853+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/target-hf-robot-toyblocks.json",
+          "sha256": "d6261de25c145ebb3d262c579ba51de16c0dc127b39d3b53a97073419571e345"
+        },
+        {
+          "query": "site:europapress.es Kimi K3.1 Pro pesos 4 noviembre 2026 Moonshot",
+          "executedAt": "2026-11-09T00:58:21.230842+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-kimi-europa.json",
+          "sha256": "092f79cfb18ceee8c343f2bd6c80952d9c7ec7e353d2b485cc77f44be02af5e8"
+        },
+        {
+          "query": "site:huggingface.co/moonshotai/Kimi-K3.1-Pro November 4 2026 license weights tree",
+          "executedAt": "2026-11-09T00:54:07.886172+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-kimi-hf-weights.json",
+          "sha256": "5d8e13a1c0d4c439ba3ee2602cae598afcb3629a62b700a3face53fecf07eec2"
+        },
+        {
+          "query": "Kimi K3.1 Pro weights November 7 2026 official Hugging Face Moonshot",
+          "executedAt": "2026-11-09T00:48:00.480149+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-kimi-k31-weights.json",
+          "sha256": "3540df888ddfc05ae56046512d6daa12f378c58f55db78b742e42068196a748e"
+        },
+        {
+          "query": "\"Design the Muse App, Just for You\" \"November 6\" reporter spaces",
+          "executedAt": "2026-11-09T00:58:26.385427+00:00",
+          "resultCount": 8,
+          "artifact": "governance/evidence/2026-11-09/search/target-meta-spaces-coverage.json",
+          "sha256": "2597c93eb8e4abd36991b6ab4a0f526e3e86312213157227184c11ebe859982e"
+        },
+        {
+          "query": "site:about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/ launch date access",
+          "executedAt": "2026-11-09T00:47:48.530563+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-meta-spaces.json",
+          "sha256": "a0b07b73aa5a061e79d310149362f815b379c274ec8a8cec8bdd6ee1a630fe95"
+        },
+        {
+          "query": "Meta Muse Spaces customize app November 6 7 2026 independent report",
+          "executedAt": "2026-11-09T00:49:09.896993+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-metaspace-independent.json",
+          "sha256": "5a63e0ed3df18c3b83c01d7697125a1307836a98bd95fc9e4fe94a8a9ece1954"
+        },
+        {
+          "query": "Nvidia Jensen Huang foreign interference independent investigation November 8 9 2026 board Reuters",
+          "executedAt": "2026-11-09T00:49:16.058407+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-nvidia-board-independent.json",
+          "sha256": "a0c135d63a5897a06783ce941f54046a7627ead0b2d8d414e0bbbb2051b2b8d1"
+        },
+        {
+          "query": "site:nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors November 9 2026 AI",
+          "executedAt": "2026-11-09T00:48:09.116042+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-09/search/target-nvidia-statement.json",
+          "sha256": "e3565149a6c4c8235b8bea3ba96f00a79bf204def545ad15de76ae42b1518b45"
+        },
+        {
+          "query": "site:openai.com/index/partnering-with-hacktron/ Nov 6 2026 details",
+          "executedAt": "2026-11-09T00:47:52.735918+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-openai-hacktron.json",
+          "sha256": "fb51ec8eb447f2fa455b39d5c85bf2c885310093fade59e7bb16e36d862cb32e"
+        },
+        {
+          "query": "site:openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/ publication date findings",
+          "executedAt": "2026-11-09T00:47:50.647828+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-09/search/target-openai-wetlab.json",
+          "sha256": "cb2deca009a046409b3e5ba4738bcdab870487177627c9ab0ec58d8c641db65d"
+        },
+        {
+          "query": "Qwen4 November 6 7 8 2026 public weights official Alibaba Hugging Face",
+          "executedAt": "2026-11-09T00:47:57.684001+00:00",
+          "resultCount": 10,
+          "artifact": "governance/evidence/2026-11-09/search/target-qwen4-weights.json",
+          "sha256": "68950f947f958850e51d35a174ba0ec0f75ed1066a0799bdc8ed4d22474675de"
+        },
+        {
+          "query": "site:blog.google/ 17 billion Wyoming data center November 5 2026 Google announcement Cheyenne",
+          "executedAt": "2026-11-09T00:54:03.684073+00:00",
+          "resultCount": 2,
+          "artifact": "governance/evidence/2026-11-09/search/target-wyoming-google-primary.json",
+          "sha256": "a9f337d3bf20d86f8d82fbcba03456dcace69bc6feca4c959d3911bf504c84d3"
+        }
+      ],
+      "reason": "Ranking, search snippets and first-page limits cannot certify complete web recall.",
+      "retryResult": "Targeted public-index follow-ups captured; 3 later Brave requests failed normal TLS and are not successful search. Publisher 403s remain blocked."
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "METR high-access assessment is still bounded by redactions; ToyBlocks dataset does not demonstrate robot performance."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Original eight rechecked; new Muse Spaces, Baidu and Kimi weights, ToyBlocks data have distinct artifacts/stages. No benchmark superiority inferred."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Marvell deal still pending; Google/Crusoe site acquisition reported, $17bn remains a long-term plan."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "Ballotpedia reported 40/41 local data-center vote outcomes, including non-binding measures; not all certifications verified."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "OpenAI restricted GPT-6 Cyber still documented; NVIDIA board announced investigation, not evidence secrets were taken."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "Local ballot tally reflects observed voting in tracked contests, not cancellation of 40 projects. No exhaustive labor/school coverage."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "nov06-marvell-lumentum",
+      "discoveryUrls": [
+        "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity",
+        "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-442723/d81187d425.htm"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (signed proposal, no consummation), not a future result.",
+        "novelty": "2/2: Distinct dated stage: signed proposal, no consummation; checked against published archive and planned stages.",
+        "spillover": "2/2: Multiple outside constituencies may be affected (chip and optical-interconnect firms, subject to closing), without claiming observed effects.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (signed proposal, no consummation).",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for signed proposal, no consummation; independent outcome unconfirmed."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Agreement Nov2, not acquisition close; $115bn implied enterprise value per issuer, pending approvals.",
+      "eventId": "marvell-lumentum-merger-agreement-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Original dated act, scope, distinct prior stage",
+          "finding": "The original actor or artifact directly establishes the dated stage; no later execution presumed.",
+          "evidenceIds": [
+            "marvell-lumentum-merger-agreement-2026-quote-1",
+            "marvell-lumentum-merger-agreement-2026-quote-2",
+            "marvell-lumentum-merger-agreement-2026-fresh-20261109"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independently measured external adoption, realized harm or completed deal",
+          "finding": "No independent measured downstream outcome is asserted for this event.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Find independent firsthand use, replication or substantive analysis beyond relaying vendor text",
+          "finding": "No independent reproduction or substantive external evaluation found; secondary announcements and host listings only support launch/availability, not performance.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check contrary facts, past preview and limitation boundaries",
+          "finding": "Stage, date, access and disclosure caveats in second claim constrain the draft.",
+          "evidenceIds": [
+            "marvell-lumentum-merger-agreement-2026-quote-3",
+            "marvell-lumentum-merger-agreement-2026-quote-4"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "marvell-lumentum-2026",
+        "action": "sign all-stock acquisition agreement",
+        "stage": "definitive-agreement",
+        "dateBasis": "issuer press release Nov2; expected 2028 closing, not actual",
+        "decision": "new",
+        "comparedEventIds": [
+          "crusoe-series-f-2026",
+          "google-oracle-tpu-oci-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "nov06-omni12",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (dated GA of Omni 1.2 Flash), not a future result.",
+        "novelty": "2/2: Distinct dated stage: dated GA of Omni 1.2 Flash; checked against published archive and planned stages.",
+        "spillover": "1/2: Potentially bounded audience (video-generation API developers); measured effect not provided.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (dated GA of Omni 1.2 Flash).",
+        "sourceQuality": "2/2: Direct actor or first-hand ballot source plus distinct external reporter/host for dated GA of Omni 1.2 Flash; neither validates untested effects."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Nov5 GA is new stage; Google Cloud Nov6 post not a second launch.",
+      "eventId": "google-gemini-omni-12-flash-ga-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Original dated act, scope, distinct prior stage",
+          "finding": "The original actor or artifact directly establishes the dated stage; no later execution presumed.",
+          "evidenceIds": [
+            "google-gemini-omni-12-flash-ga-2026-quote-1",
+            "google-gemini-omni-12-flash-ga-2026-quote-2",
+            "google-gemini-omni-12-flash-ga-2026-quote-3",
+            "google-gemini-omni-12-flash-ga-2026-quote-4",
+            "google-gemini-omni-12-flash-ga-2026-fresh-20261109"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independently measured external adoption, realized harm or completed deal",
+          "finding": "No independent measured downstream outcome is asserted for this event.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Find independent firsthand use, replication or substantive analysis beyond relaying vendor text",
+          "finding": "No independent reproduction or substantive external evaluation found; secondary announcements and host listings only support launch/availability, not performance.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check contrary facts, past preview and limitation boundaries",
+          "finding": "Stage, date, access and disclosure caveats in second claim constrain the draft.",
+          "evidenceIds": [
+            "google-gemini-omni-12-flash-ga-2026-quote-5"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "google-omni-12",
+        "action": "make video generation model generally available",
+        "stage": "GA",
+        "dateBasis": "Nov5 Google blog, Nov6 Google Cloud follow-up",
+        "decision": "new",
+        "comparedEventIds": [
+          "minimax-h3-video-model-2026",
+          "genie-4-world-simulation-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "nov06-muse-voice",
+      "discoveryUrls": [
+        "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+        "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (new consumer avatar/voice rollout, not the older speech model), not a future result.",
+        "novelty": "2/2: Distinct dated stage: new consumer avatar/voice rollout, not the older speech model; checked against published archive and planned stages.",
+        "spillover": "1/2: Potentially bounded audience (US consumer Muse app users); measured effect not provided.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (new consumer avatar/voice rollout, not the older speech model).",
+        "sourceQuality": "2/2: Direct actor or first-hand ballot source plus distinct external reporter/host for new consumer avatar/voice rollout, not the older speech model; neither validates untested effects."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Consumer Muse voice/avatars rollout distinct from earlier Muse Voice Transcribe model; firsthand iOS test.",
+      "eventId": "meta-muse-voice-avatar-rollout-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Original dated act, scope, distinct prior stage",
+          "finding": "The original actor or artifact directly establishes the dated stage; no later execution presumed.",
+          "evidenceIds": [
+            "meta-muse-voice-avatar-rollout-2026-quote-1",
+            "meta-muse-voice-avatar-rollout-2026-quote-2",
+            "meta-muse-voice-avatar-rollout-2026-quote-3",
+            "meta-muse-voice-avatar-rollout-2026-fresh-20261109"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independently measured external adoption, realized harm or completed deal",
+          "finding": "No independent measured downstream outcome is asserted for this event.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Find independent firsthand use, replication or substantive analysis beyond relaying vendor text",
+          "finding": "A Verge reporter independently tried and described Muse animation; a single trial does not measure general reliability.",
+          "evidenceIds": [
+            "meta-muse-voice-avatar-rollout-2026-quote-6"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check contrary facts, past preview and limitation boundaries",
+          "finding": "Stage, date, access and disclosure caveats in second claim constrain the draft.",
+          "evidenceIds": [
+            "meta-muse-voice-avatar-rollout-2026-quote-4",
+            "meta-muse-voice-avatar-rollout-2026-quote-5"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "meta-muse-agent",
+        "action": "roll out US consumer voice and animated avatar",
+        "stage": "regional-rollout",
+        "dateBasis": "Meta Nov5 release and Verge firsthand test Nov5",
+        "decision": "new",
+        "comparedEventIds": [
+          "meta-muse-voice-transcribe-2026",
+          "meta-muse-personal-agent-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "nov06-hy4",
+      "discoveryUrls": [
+        "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+        "https://openrouter.ai/tencent/hy4"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (full hosted model distinct from old preview weights), not a future result.",
+        "novelty": "2/2: Distinct dated stage: full hosted model distinct from old preview weights; checked against published archive and planned stages.",
+        "spillover": "1/2: Potentially bounded audience (hosted model developers); measured effect not provided.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (full hosted model distinct from old preview weights).",
+        "sourceQuality": "2/2: Direct actor or first-hand ballot source plus distinct external reporter/host for full hosted model distinct from old preview weights; neither validates untested effects."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Full Hy4 hosted access is new; older Hy4-preview repository does not prove Nov4 full weights.",
+      "eventId": "tencent-hy4-hosted-release-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Original dated act, scope, distinct prior stage",
+          "finding": "The original actor or artifact directly establishes the dated stage; no later execution presumed.",
+          "evidenceIds": [
+            "tencent-hy4-hosted-release-2026-quote-1",
+            "tencent-hy4-hosted-release-2026-quote-2",
+            "tencent-hy4-hosted-release-2026-quote-3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independently measured external adoption, realized harm or completed deal",
+          "finding": "No independent measured downstream outcome is asserted for this event.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Find independent firsthand use, replication or substantive analysis beyond relaying vendor text",
+          "finding": "No independent reproduction or substantive external evaluation found; secondary announcements and host listings only support launch/availability, not performance.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check contrary facts, past preview and limitation boundaries",
+          "finding": "Stage, date, access and disclosure caveats in second claim constrain the draft.",
+          "evidenceIds": [
+            "tencent-hy4-hosted-release-2026-quote-4",
+            "tencent-hy4-hosted-release-2026-quote-5",
+            "tencent-hy4-hosted-release-2026-fresh-20261109"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "tencent-hy4",
+        "action": "offer full Hy4 through hosted services",
+        "stage": "hosted-access",
+        "dateBasis": "Tencent announcement Nov4 and OpenRouter listing; full weights announced as future",
+        "decision": "new",
+        "comparedEventIds": [
+          "kimi-k31-pro-hosted-api-2026",
+          "mistral-large-4-open-weights-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "nov06-inkling",
+      "discoveryUrls": [
+        "https://thinkingmachines.ai/news/inkling-2-small/",
+        "https://www.unite.ai/thinking-machines-lab-launches-inkling-2-small-with-open-weights-pending/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (hosted access rather than future weights), not a future result.",
+        "novelty": "2/2: Distinct dated stage: hosted access rather than future weights; checked against published archive and planned stages.",
+        "spillover": "1/2: Potentially bounded audience (Tinker developers with hosted access); measured effect not provided.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (hosted access rather than future weights).",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for hosted access rather than future weights; independent outcome unconfirmed."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "new",
+      "reason": "Tinker access Nov5; full weights still awaiting testing.",
+      "eventId": "inkling-2-small-tinker-access-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Original dated act, scope, distinct prior stage",
+          "finding": "The original actor or artifact directly establishes the dated stage; no later execution presumed.",
+          "evidenceIds": [
+            "inkling-2-small-tinker-access-2026-quote-1",
+            "inkling-2-small-tinker-access-2026-quote-2",
+            "inkling-2-small-tinker-access-2026-quote-3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independently measured external adoption, realized harm or completed deal",
+          "finding": "No independent measured downstream outcome is asserted for this event.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Find independent firsthand use, replication or substantive analysis beyond relaying vendor text",
+          "finding": "No independent reproduction or substantive external evaluation found; secondary announcements and host listings only support launch/availability, not performance.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check contrary facts, past preview and limitation boundaries",
+          "finding": "Stage, date, access and disclosure caveats in second claim constrain the draft.",
+          "evidenceIds": [
+            "inkling-2-small-tinker-access-2026-quote-4",
+            "inkling-2-small-tinker-access-2026-quote-5",
+            "inkling-2-small-tinker-access-2026-fresh-20261109"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "thinking-inkling2-small",
+        "action": "open Tinker hosted access",
+        "stage": "hosted-access",
+        "dateBasis": "Thinking Machines Nov5, weights future",
+        "decision": "new",
+        "comparedEventIds": [
+          "thinking-machines-inkling-2026",
+          "mistral-large-4-open-weights-2026"
+        ]
+      },
+      "priorityOverrideReason": "Hosted playground directly available, while announced future weights are explicitly excluded."
+    },
+    {
+      "candidateId": "nov06-metr-rd",
+      "discoveryUrls": [
+        "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (newly published qualified independent-access assessment), not a future result.",
+        "novelty": "2/2: Distinct dated stage: newly published qualified independent-access assessment; checked against published archive and planned stages.",
+        "spillover": "1/2: Potentially bounded audience (model-risk and AI R&D assessors); measured effect not provided.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (newly published qualified independent-access assessment).",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for newly published qualified independent-access assessment; independent outcome unconfirmed."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "new",
+      "reason": "External evaluation disclosed Nov5 but many underlying inputs redacted and estimates uncertain.",
+      "eventId": "metr-anthropic-rd-acceleration-assessment-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Original dated act, scope, distinct prior stage",
+          "finding": "The original actor or artifact directly establishes the dated stage; no later execution presumed.",
+          "evidenceIds": [
+            "metr-anthropic-rd-acceleration-assessment-2026-quote-1",
+            "metr-anthropic-rd-acceleration-assessment-2026-quote-2",
+            "metr-anthropic-rd-acceleration-assessment-2026-quote-3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independently measured external adoption, realized harm or completed deal",
+          "finding": "No independent measured downstream outcome is asserted for this event.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Find independent firsthand use, replication or substantive analysis beyond relaying vendor text",
+          "finding": "No independent reproduction or substantive external evaluation found; secondary announcements and host listings only support launch/availability, not performance.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check contrary facts, past preview and limitation boundaries",
+          "finding": "Stage, date, access and disclosure caveats in second claim constrain the draft.",
+          "evidenceIds": [
+            "metr-anthropic-rd-acceleration-assessment-2026-quote-4",
+            "metr-anthropic-rd-acceleration-assessment-2026-quote-5",
+            "metr-anthropic-rd-acceleration-assessment-2026-fresh-20261109"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "metr-anthropic-rd-2026",
+        "action": "publish privileged-access R&D acceleration assessment",
+        "stage": "research-disclosure",
+        "dateBasis": "METR Nov5 publication; assessment Aug12–Oct29",
+        "decision": "new",
+        "comparedEventIds": [
+          "openai-metr-hugging-face-investigations-2026",
+          "anthropic-expanded-cyber-alignment-assessment-2026"
+        ]
+      },
+      "priorityOverrideReason": "Original external evaluator’s report is directly readable; claim stays a qualified L1 research disclosure, not replicated outcome."
+    },
+    {
+      "candidateId": "nov06-images26",
+      "discoveryUrls": [
+        "https://x.com/OpenAI/status/2118124944928432327",
+        "https://www.testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (dated official post for Images 2.6 and API routes), not a future result.",
+        "novelty": "2/2: Distinct dated stage: dated official post for Images 2.6 and API routes; checked against published archive and planned stages.",
+        "spillover": "1/2: Potentially bounded audience (ChatGPT, Codex and API image users); measured effect not provided.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (dated official post for Images 2.6 and API routes).",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for dated official post for Images 2.6 and API routes; independent outcome unconfirmed."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "new",
+      "reason": "Direct official X post verifies stated ChatGPT/Codex and API availability, not X station-wide search.",
+      "eventId": "openai-images-26-availability-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Original dated act, scope, distinct prior stage",
+          "finding": "The original actor or artifact directly establishes the dated stage; no later execution presumed.",
+          "evidenceIds": [
+            "openai-images-26-availability-2026-quote-1",
+            "openai-images-26-availability-2026-quote-2",
+            "openai-images-26-availability-2026-quote-3",
+            "openai-images-26-availability-2026-quote-4",
+            "openai-images-26-availability-2026-fresh-20261109"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independently measured external adoption, realized harm or completed deal",
+          "finding": "No independent measured downstream outcome is asserted for this event.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Find independent firsthand use, replication or substantive analysis beyond relaying vendor text",
+          "finding": "No independent reproduction or substantive external evaluation found; secondary announcements and host listings only support launch/availability, not performance.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check contrary facts, past preview and limitation boundaries",
+          "finding": "Stage, date, access and disclosure caveats in second claim constrain the draft.",
+          "evidenceIds": [
+            "openai-images-26-availability-2026-quote-5",
+            "openai-images-26-availability-2026-quote-6"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "openai-images26",
+        "action": "roll out Images 2.6 and two API image models",
+        "stage": "announced-availability",
+        "dateBasis": "Nov4 official X post; OpenAI full article 403",
+        "decision": "new",
+        "comparedEventIds": [
+          "openai-chatgpt-images-2-5-2026",
+          "gpt-image-2025"
+        ]
+      },
+      "priorityOverrideReason": "Official social account content itself is readable and attributable; first-hand external performance is not claimed."
+    },
+    {
+      "candidateId": "nov06-gpt6cyber",
+      "discoveryUrls": [
+        "https://deploymentsafety.openai.com/gpt-6-cyber",
+        "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+        "https://srnnews.com/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (restricted security-model launch, not general availability), not a future result.",
+        "novelty": "2/2: Distinct dated stage: restricted security-model launch, not general availability; checked against published archive and planned stages.",
+        "spillover": "2/2: Multiple outside constituencies may be affected (approved Daybreak Red security organizations), without claiming observed effects.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (restricted security-model launch, not general availability).",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for restricted security-model launch, not general availability; independent outcome unconfirmed."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Restricted Daybreak Red launch documented; OpenAI Critical designation is internal, not independent test.",
+      "eventId": "openai-gpt6-cyber-restricted-launch-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Original dated act, scope, distinct prior stage",
+          "finding": "The original actor or artifact directly establishes the dated stage; no later execution presumed.",
+          "evidenceIds": [
+            "openai-gpt6-cyber-restricted-launch-2026-quote-1",
+            "openai-gpt6-cyber-restricted-launch-2026-quote-2",
+            "openai-gpt6-cyber-restricted-launch-2026-quote-3",
+            "openai-gpt6-cyber-restricted-launch-2026-quote-4",
+            "openai-gpt6-cyber-restricted-launch-2026-fresh-20261109"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Independently measured external adoption, realized harm or completed deal",
+          "finding": "No independent measured downstream outcome is asserted for this event.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Find independent firsthand use, replication or substantive analysis beyond relaying vendor text",
+          "finding": "No independent reproduction or substantive external evaluation found; secondary announcements and host listings only support launch/availability, not performance.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check contrary facts, past preview and limitation boundaries",
+          "finding": "Stage, date, access and disclosure caveats in second claim constrain the draft.",
+          "evidenceIds": [
+            "openai-gpt6-cyber-restricted-launch-2026-quote-5"
+          ]
+        }
+      },
+      "identity": {
+        "seriesId": "openai-gpt6-cyber",
+        "action": "launch restricted model access",
+        "stage": "approved-customer-access",
+        "dateBasis": "Nov5 system card and Reuters dated Nov5",
+        "decision": "new",
+        "comparedEventIds": [
+          "google-gemini-3-8-flash-cyber-2026",
+          "openai-metr-hugging-face-investigations-2026"
+        ]
+      }
+    },
+    {
+      "candidateId": "nov06-votes-2026",
+      "discoveryUrls": [
+        "https://www.scientificamerican.com/article/2026-election-results-show-widespread-opposition-to-ai-data-centers/",
+        "https://news.ballotpedia.org/2026/11/03/voters-in-ten-states-will-vote-on-data-center-related-ballot-measures-november-3/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (41 local Nov3 ballot questions, but incomplete reported results), not a future result.",
+        "novelty": "2/2: Distinct dated stage: 41 local Nov3 ballot questions, but incomplete reported results; checked against published archive and planned stages.",
+        "spillover": "2/2: Multiple outside constituencies may be affected (voters and local data-center developers in 10 states), without claiming observed effects.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (41 local Nov3 ballot questions, but incomplete reported results).",
+        "sourceQuality": "2/2: Direct actor or first-hand ballot source plus distinct external reporter/host for 41 local Nov3 ballot questions, but incomplete reported results; neither validates untested effects."
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "hold",
+      "reason": "Ballotpedia lists 41 Nov3 votes; Scientific American says only one favorable with MOST results in Nov4, not final certified 40/41. Do not assert all outcomes. The separately discovered Nov6 Ballotpedia tally is now selected as a report-stage record, not 41 certified outcomes.",
+      "priorityOverrideReason": "Editorial hold despite confirm priority: no official certified result-by-measure ledger in packet; source says most results, not all."
+    },
+    {
+      "candidateId": "nov06-google-schools",
+      "discoveryUrls": [
+        "https://www.cnbc.com/2026/11/03/google-responds-to-outrage-over-removing-search-in-schools-that-ban-ai.html"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2: Only partial report or incomplete primary material on school policy change not established from blocked reports; execution not established.",
+        "novelty": "1/2: Possible new action but prior-stage separation remains unresolved: school policy change not established from blocked reports.",
+        "spillover": "2/2: Multiple outside constituencies may be affected (school administrators and students, if verified), without claiming observed effects.",
+        "durability": "0/2: Unexecuted, speculative or blocked stage (school policy change not established from blocked reports); no observed persistence.",
+        "sourceQuality": "0/2: Original actionable text unavailable or HTTP 403 for school policy change not established from blocked reports; search summaries not proof."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Two press pages HTTP403; missing first-hand official school deployment record and change timeline."
+    },
+    {
+      "candidateId": "nov06-oracle-stock",
+      "discoveryUrls": [
+        "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2: Only partial report or incomplete primary material on press summary without filing or realized sale; execution not established.",
+        "novelty": "1/2: Possible new action but prior-stage separation remains unresolved: press summary without filing or realized sale.",
+        "spillover": "1/2: Potentially bounded audience (capital markets and AI infrastructure, if filed); measured effect not provided.",
+        "durability": "1/2: A real signed agreement, limited rollout, dated product access or published report may persist, but longer-run use/completion is not measured (press summary without filing or realized sale).",
+        "sourceQuality": "0/2: Original actionable text unavailable or HTTP 403 for press summary without filing or realized sale; search summaries not proof."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Stock sale filing/actual proceeds not checked; CNBC capture 403."
+    },
+    {
+      "candidateId": "nov06-anthropic-ipo",
+      "discoveryUrls": [
+        "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-prepares-for-ipo"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "0/2: No directly readable primary action for rumor without prospectus.",
+        "novelty": "1/2: Possible new action but prior-stage separation remains unresolved: rumor without prospectus.",
+        "spillover": "2/2: Multiple outside constituencies may be affected (prospective investors, if an offering ever occurs), without claiming observed effects.",
+        "durability": "0/2: Unexecuted, speculative or blocked stage (rumor without prospectus); no observed persistence.",
+        "sourceQuality": "0/2: Original actionable text unavailable or HTTP 403 for rumor without prospectus; search summaries not proof."
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Search summaries are neither a filed prospectus nor public offering; no confirmable issued shares."
+    },
+    {
+      "candidateId": "nov06-marvell-future-closing",
+      "discoveryUrls": [
+        "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 0,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (a future stage of the same signed deal), not a future result.",
+        "novelty": "0/2: No new independent action: a future stage of the same signed deal is a proposed future stage, duplicate, or inaccessible source URL.",
+        "spillover": "1/2: Potentially bounded audience (transaction shareholders, if future closing occurs); measured effect not provided.",
+        "durability": "0/2: Unexecuted, speculative or blocked stage (a future stage of the same signed deal); no observed persistence.",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for a future stage of the same signed deal; independent outcome unconfirmed."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Track possible first-half-2028 closing as a future distinct stage; same agreement already selected and no 2026 close observed."
+    },
+    {
+      "candidateId": "nov06-hy4-full-weights",
+      "discoveryUrls": [
+        "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+        "https://huggingface.co/api/models/tencent/Hy4-preview"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 0,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (future full weights distinct from current hosted access), not a future result.",
+        "novelty": "0/2: No new independent action: future full weights distinct from current hosted access is a proposed future stage, duplicate, or inaccessible source URL.",
+        "spillover": "1/2: Potentially bounded audience (self-hosting model developers, when published); measured effect not provided.",
+        "durability": "0/2: Unexecuted, speculative or blocked stage (future full weights distinct from current hosted access); no observed persistence.",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for future full weights distinct from current hosted access; independent outcome unconfirmed."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Tencent promises future weights; older preview repository is not full release."
+    },
+    {
+      "candidateId": "nov06-inkling-full-weights",
+      "discoveryUrls": [
+        "https://thinkingmachines.ai/news/inkling-2-small/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 0,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (future gated weights distinct from Tinker access), not a future result.",
+        "novelty": "0/2: No new independent action: future gated weights distinct from Tinker access is a proposed future stage, duplicate, or inaccessible source URL.",
+        "spillover": "1/2: Potentially bounded audience (self-hosting Tinker developers, when published); measured effect not provided.",
+        "durability": "0/2: Unexecuted, speculative or blocked stage (future gated weights distinct from Tinker access); no observed persistence.",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for future gated weights distinct from Tinker access; independent outcome unconfirmed."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Tinker access selected separately; full weights are planned for after external tests."
+    },
+    {
+      "candidateId": "nov06-openai-main-articles",
+      "discoveryUrls": [
+        "https://openai.com/index/introducing-images-2-6/",
+        "https://openai.com/index/introducing-gpt-6-cyber/"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 0,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "0/2: No directly readable primary action for unread primary announcement URLs, not a separate event.",
+        "novelty": "0/2: No new independent action: unread primary announcement URLs, not a separate event is a proposed future stage, duplicate, or inaccessible source URL.",
+        "spillover": "1/2: Potentially bounded audience (readers of source announcements, not a separate rollout); measured effect not provided.",
+        "durability": "0/2: Unexecuted, speculative or blocked stage (unread primary announcement URLs, not a separate event); no observed persistence.",
+        "sourceQuality": "0/2: Original actionable text unavailable or HTTP 403 for unread primary announcement URLs, not a separate event; search summaries not proof."
+      },
+      "total": 1,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Direct official article pages returned 403; claims depend on accessible official post, safety card and API documentation, not unread pages."
+    },
+    {
+      "candidateId": "nov06-kernel-incident",
+      "discoveryUrls": [
+        "https://www.kernel.sh/blog/public-notice-of-security-incident-nov-4-2026"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "1/2: Only partial report or incomplete primary material on incident notice without independent impact confirmation; execution not established.",
+        "novelty": "1/2: Possible new action but prior-stage separation remains unresolved: incident notice without independent impact confirmation.",
+        "spillover": "1/2: Potentially bounded audience (kernel.sh customers, if impact established); measured effect not provided.",
+        "durability": "0/2: Unexecuted, speculative or blocked stage (incident notice without independent impact confirmation); no observed persistence.",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for incident notice without independent impact confirmation; independent outcome unconfirmed."
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Security incident impact and vendor remediation not cross-checked sufficiently for new node."
+    },
+    {
+      "candidateId": "nov06-singapore-science",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/technology/research/partnering-singapore-advance-scientific-discovery/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Original dated material establishes the present announcement or plan (research collaboration promise without outputs), not a future result.",
+        "novelty": "1/2: Possible new action but prior-stage separation remains unresolved: research collaboration promise without outputs.",
+        "spillover": "1/2: Potentially bounded audience (named research partners, pending results); measured effect not provided.",
+        "durability": "0/2: Unexecuted, speculative or blocked stage (research collaboration promise without outputs); no observed persistence.",
+        "sourceQuality": "1/2: Only one directly checked origin or interested-source release for research collaboration promise without outputs; independent outcome unconfirmed."
+      },
+      "total": 5,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Partnership announcement does not establish realized research outputs or independent use."
+    },
+    {
+      "candidateId": "nov09-ballot",
+      "discoveryUrls": [
+        "https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Ballotpedia first-hand aggregation dated Nov6 supersedes earlier partial results; not proof of certifications or 40 enacted laws. This dimension tests readable original artifacts and dates.",
+        "novelty": "2/2: Ballotpedia first-hand aggregation dated Nov6 supersedes earlier partial results; not proof of certifications or 40 enacted laws. This dimension tests distinct actor/action/stage vs existing archive.",
+        "spillover": "2/2: Ballotpedia first-hand aggregation dated Nov6 supersedes earlier partial results; not proof of certifications or 40 enacted laws. This dimension tests potential affected audiences, not realized uptake.",
+        "durability": "1/2: Ballotpedia first-hand aggregation dated Nov6 supersedes earlier partial results; not proof of certifications or 40 enacted laws. This dimension tests persistence actually seen rather than promised.",
+        "sourceQuality": "2/2: Ballotpedia first-hand aggregation dated Nov6 supersedes earlier partial results; not proof of certifications or 40 enacted laws. This dimension tests claim-local origin and reporter/host role."
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Ballotpedia first-hand aggregation dated Nov6 supersedes earlier partial results; not proof of certifications or 40 enacted laws.",
+      "eventId": "data-center-local-ballot-tally-2026",
+      "identity": {
+        "seriesId": "data-center-local-ballots-2026",
+        "action": "publish Nov3 result tally",
+        "stage": "report-disclosed",
+        "dateBasis": "Ballotpedia Nov6 report about Nov3 vote; official certifications not checked",
+        "decision": "new",
+        "comparedEventIds": [
+          "eu-ai-act-transparency-2026",
+          "florida-sues-openai-2026"
+        ]
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Dated original action + directly readable artifact",
+          "finding": "Ballotpedia first-hand aggregation dated Nov6 supersedes earlier partial results; not proof of certifications or 40 enacted laws.",
+          "evidenceIds": [
+            "data-center-local-ballot-tally-2026-quote-1",
+            "data-center-local-ballot-tally-2026-quote-2"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Downstream economic, technical or regulatory effect already independently measured",
+          "finding": "Fact-level reported votes, available files or site transfer do not establish wider downstream impact or 40 binding laws.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Independent replication of model quality, deployed use or certified result set",
+          "finding": "Reporter/host corroborates only its documented scope; no independent technical or whole-population verification is claimed.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check stage, license, future plans, uncertainty and negative evidence",
+          "finding": "Limitations and next-stage caveats retained; non-binding and disclosure date distinguished where applicable.",
+          "evidenceIds": [
+            "data-center-local-ballot-tally-2026-quote-3",
+            "data-center-local-ballot-tally-2026-quote-4"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "nov09-spaces",
+      "discoveryUrls": [
+        "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+        "https://ppc.land/metas-muse-gains-self-updating-tools-that-track-prices-and-instagram-saves/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Nov6 Muse custom Spaces feature distinct from Nov5 voice rollout; vendor usage and app-refresh claims not tested. This dimension tests readable original artifacts and dates.",
+        "novelty": "2/2: Nov6 Muse custom Spaces feature distinct from Nov5 voice rollout; vendor usage and app-refresh claims not tested. This dimension tests distinct actor/action/stage vs existing archive.",
+        "spillover": "1/2: Nov6 Muse custom Spaces feature distinct from Nov5 voice rollout; vendor usage and app-refresh claims not tested. This dimension tests potential affected audiences, not realized uptake.",
+        "durability": "1/2: Nov6 Muse custom Spaces feature distinct from Nov5 voice rollout; vendor usage and app-refresh claims not tested. This dimension tests persistence actually seen rather than promised.",
+        "sourceQuality": "2/2: Nov6 Muse custom Spaces feature distinct from Nov5 voice rollout; vendor usage and app-refresh claims not tested. This dimension tests claim-local origin and reporter/host role."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Nov6 Muse custom Spaces feature distinct from Nov5 voice rollout; vendor usage and app-refresh claims not tested.",
+      "eventId": "meta-muse-spaces-rollout-2026",
+      "identity": {
+        "seriesId": "meta-muse-agent",
+        "action": "introduce customizable Spaces",
+        "stage": "available",
+        "dateBasis": "Meta Nov6 post, secondary reporting; not independent user-scale test",
+        "decision": "new",
+        "comparedEventIds": [
+          "meta-muse-personal-agent-2026",
+          "meta-muse-spark-open-2026"
+        ]
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Dated original action + directly readable artifact",
+          "finding": "Nov6 Muse custom Spaces feature distinct from Nov5 voice rollout; vendor usage and app-refresh claims not tested.",
+          "evidenceIds": [
+            "meta-muse-spaces-rollout-2026-quote-1",
+            "meta-muse-spaces-rollout-2026-quote-2",
+            "meta-muse-spaces-rollout-2026-quote-3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Downstream economic, technical or regulatory effect already independently measured",
+          "finding": "Fact-level reported votes, available files or site transfer do not establish wider downstream impact or 40 binding laws.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Independent replication of model quality, deployed use or certified result set",
+          "finding": "Reporter/host corroborates only its documented scope; no independent technical or whole-population verification is claimed.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check stage, license, future plans, uncertainty and negative evidence",
+          "finding": "Limitations and next-stage caveats retained; non-binding and disclosure date distinguished where applicable.",
+          "evidenceIds": [
+            "meta-muse-spaces-rollout-2026-quote-4"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "nov09-wyoming",
+      "discoveryUrls": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Crusoe Nov6 reported site acquired by Google; Google Nov5 $17bn is long-term plan, not funds paid. This dimension tests readable original artifacts and dates.",
+        "novelty": "2/2: Crusoe Nov6 reported site acquired by Google; Google Nov5 $17bn is long-term plan, not funds paid. This dimension tests distinct actor/action/stage vs existing archive.",
+        "spillover": "2/2: Crusoe Nov6 reported site acquired by Google; Google Nov5 $17bn is long-term plan, not funds paid. This dimension tests potential affected audiences, not realized uptake.",
+        "durability": "1/2: Crusoe Nov6 reported site acquired by Google; Google Nov5 $17bn is long-term plan, not funds paid. This dimension tests persistence actually seen rather than promised.",
+        "sourceQuality": "1/2: Crusoe Nov6 reported site acquired by Google; Google Nov5 $17bn is long-term plan, not funds paid. This dimension tests claim-local origin and reporter/host role."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Crusoe Nov6 reported site acquired by Google; Google Nov5 $17bn is long-term plan, not funds paid.",
+      "eventId": "google-crusoe-wyoming-site-transfer-2026",
+      "identity": {
+        "seriesId": "google-crusoe-wyoming-campus",
+        "action": "disclose completed site acquisition",
+        "stage": "completed-site-transfer",
+        "dateBasis": "Crusoe Nov6 disclosure; Google plan Nov5; construction and payment not inferred",
+        "decision": "new",
+        "comparedEventIds": [
+          "crusoe-series-f-2026",
+          "google-oracle-tpu-oci-2026"
+        ]
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Dated original action + directly readable artifact",
+          "finding": "Crusoe Nov6 reported site acquired by Google; Google Nov5 $17bn is long-term plan, not funds paid.",
+          "evidenceIds": [
+            "google-crusoe-wyoming-site-transfer-2026-quote-1",
+            "google-crusoe-wyoming-site-transfer-2026-quote-2",
+            "google-crusoe-wyoming-site-transfer-2026-quote-3",
+            "google-crusoe-wyoming-site-transfer-2026-quote-4"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Downstream economic, technical or regulatory effect already independently measured",
+          "finding": "Fact-level reported votes, available files or site transfer do not establish wider downstream impact or 40 binding laws.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Independent replication of model quality, deployed use or certified result set",
+          "finding": "Reporter/host corroborates only its documented scope; no independent technical or whole-population verification is claimed.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check stage, license, future plans, uncertainty and negative evidence",
+          "finding": "Limitations and next-stage caveats retained; non-binding and disclosure date distinguished where applicable.",
+          "evidenceIds": [
+            "google-crusoe-wyoming-site-transfer-2026-quote-5",
+            "google-crusoe-wyoming-site-transfer-2026-quote-6"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "nov09-baidu",
+      "discoveryUrls": [
+        "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base/raw/main/README.md",
+        "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base/raw/main/LICENSE",
+        "https://huggingface.co/api/models/baidu/ERNIE-5.5-Flash-Base",
+        "https://tech.ifeng.com/c/8xo7uN22WhD"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Nov5 license and report, public weight files; repository created Oct21 does not establish first public download. License excludes territories and conditions commercialization. This dimension tests readable original artifacts and dates.",
+        "novelty": "2/2: Nov5 license and report, public weight files; repository created Oct21 does not establish first public download. License excludes territories and conditions commercialization. This dimension tests distinct actor/action/stage vs existing archive.",
+        "spillover": "1/2: Nov5 license and report, public weight files; repository created Oct21 does not establish first public download. License excludes territories and conditions commercialization. This dimension tests potential affected audiences, not realized uptake.",
+        "durability": "1/2: Nov5 license and report, public weight files; repository created Oct21 does not establish first public download. License excludes territories and conditions commercialization. This dimension tests persistence actually seen rather than promised.",
+        "sourceQuality": "2/2: Nov5 license and report, public weight files; repository created Oct21 does not establish first public download. License excludes territories and conditions commercialization. This dimension tests claim-local origin and reporter/host role."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Nov5 license and report, public weight files; repository created Oct21 does not establish first public download. License excludes territories and conditions commercialization.",
+      "eventId": "baidu-ernie-55-flash-base-weights-2026",
+      "identity": {
+        "seriesId": "baidu-ernie-55-flash-base",
+        "action": "disclose public base model weights",
+        "stage": "weight-available",
+        "dateBasis": "License dated Nov5 and contemporaneous IT之家 report; repo created Oct21; public minute unknown",
+        "decision": "new",
+        "comparedEventIds": [
+          "mistral-large-4-open-weights-2026",
+          "qwen-3-8-27b-open-weights-2026"
+        ]
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Dated original action + directly readable artifact",
+          "finding": "Nov5 license and report, public weight files; repository created Oct21 does not establish first public download. License excludes territories and conditions commercialization.",
+          "evidenceIds": [
+            "baidu-ernie-55-flash-base-weights-2026-quote-1",
+            "baidu-ernie-55-flash-base-weights-2026-quote-2",
+            "baidu-ernie-55-flash-base-weights-2026-quote-3",
+            "baidu-ernie-55-flash-base-weights-2026-quote-4",
+            "baidu-ernie-55-flash-base-weights-2026-quote-5"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Downstream economic, technical or regulatory effect already independently measured",
+          "finding": "Fact-level reported votes, available files or site transfer do not establish wider downstream impact or 40 binding laws.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Independent replication of model quality, deployed use or certified result set",
+          "finding": "Reporter/host corroborates only its documented scope; no independent technical or whole-population verification is claimed.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check stage, license, future plans, uncertainty and negative evidence",
+          "finding": "Limitations and next-stage caveats retained; non-binding and disclosure date distinguished where applicable.",
+          "evidenceIds": [
+            "baidu-ernie-55-flash-base-weights-2026-quote-6",
+            "baidu-ernie-55-flash-base-weights-2026-quote-7"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "nov09-toyblocks",
+      "discoveryUrls": [
+        "https://huggingface.co/blog/allenai/toyblocks",
+        "https://huggingface.co/api/datasets?author=allenai&search=ToyBlocks&limit=30",
+        "https://huggingface.co/datasets/allenai/toyblocks-data/raw/main/README.md"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Nov6 AllenAI disclosure of hosted dataset; Nov5 repository creation is not first public download. Author-reported scale is not independent performance. This dimension tests readable original artifacts and dates.",
+        "novelty": "2/2: Nov6 AllenAI disclosure of hosted dataset; Nov5 repository creation is not first public download. Author-reported scale is not independent performance. This dimension tests distinct actor/action/stage vs existing archive.",
+        "spillover": "1/2: Nov6 AllenAI disclosure of hosted dataset; Nov5 repository creation is not first public download. Author-reported scale is not independent performance. This dimension tests potential affected audiences, not realized uptake.",
+        "durability": "1/2: Nov6 AllenAI disclosure of hosted dataset; Nov5 repository creation is not first public download. Author-reported scale is not independent performance. This dimension tests persistence actually seen rather than promised.",
+        "sourceQuality": "1/2: Nov6 AllenAI disclosure of hosted dataset; Nov5 repository creation is not first public download. Author-reported scale is not independent performance. This dimension tests claim-local origin and reporter/host role."
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "new",
+      "reason": "Nov6 AllenAI disclosure of hosted dataset; Nov5 repository creation is not first public download. Author-reported scale is not independent performance.",
+      "eventId": "allenai-toyblocks-dataset-release-2026",
+      "identity": {
+        "seriesId": "allenai-toyblocks",
+        "action": "publish initial simulated robotics dataset",
+        "stage": "data-available",
+        "dateBasis": "AllenAI blog Nov6; HF public dataset listing; future RL training not yet delivered",
+        "decision": "new",
+        "comparedEventIds": [
+          "gemini-robotics-er2-2026",
+          "gemini-robotics-2025"
+        ]
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Dated original action + directly readable artifact",
+          "finding": "Nov6 AllenAI disclosure of hosted dataset; Nov5 repository creation is not first public download. Author-reported scale is not independent performance.",
+          "evidenceIds": [
+            "allenai-toyblocks-dataset-release-2026-quote-1",
+            "allenai-toyblocks-dataset-release-2026-quote-2",
+            "allenai-toyblocks-dataset-release-2026-quote-3",
+            "allenai-toyblocks-dataset-release-2026-quote-4",
+            "allenai-toyblocks-dataset-release-2026-quote-5"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Downstream economic, technical or regulatory effect already independently measured",
+          "finding": "Fact-level reported votes, available files or site transfer do not establish wider downstream impact or 40 binding laws.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Independent replication of model quality, deployed use or certified result set",
+          "finding": "Reporter/host corroborates only its documented scope; no independent technical or whole-population verification is claimed.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check stage, license, future plans, uncertainty and negative evidence",
+          "finding": "Limitations and next-stage caveats retained; non-binding and disclosure date distinguished where applicable.",
+          "evidenceIds": [
+            "allenai-toyblocks-dataset-release-2026-quote-6",
+            "allenai-toyblocks-dataset-release-2026-quote-7"
+          ]
+        }
+      },
+      "priorityOverrideReason": "A directly readable original artifact supports a bounded L1 record despite missing independently measured downstream adoption."
+    },
+    {
+      "candidateId": "nov09-kimi-weights",
+      "discoveryUrls": [
+        "https://www.europapress.es/portaltic/sector/noticia-moonshot-ai-publica-pesos-abiertos-kimi-k31-pro-roza-opus-55-supera-gpt-astra-codificacion-20261105175150.html",
+        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/raw/main/README.md",
+        "https://huggingface.co/api/models/moonshotai/Kimi-K3.1-Pro",
+        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/raw/main/LICENSE"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Europa Press Nov5 dates public weights to Wed Nov4; HF has 96 shards; Nov2 repo creation is not first public download; distinct from Oct23 hosted access. This dimension tests readable original artifacts and dates.",
+        "novelty": "2/2: Europa Press Nov5 dates public weights to Wed Nov4; HF has 96 shards; Nov2 repo creation is not first public download; distinct from Oct23 hosted access. This dimension tests distinct actor/action/stage vs existing archive.",
+        "spillover": "1/2: Europa Press Nov5 dates public weights to Wed Nov4; HF has 96 shards; Nov2 repo creation is not first public download; distinct from Oct23 hosted access. This dimension tests potential affected audiences, not realized uptake.",
+        "durability": "1/2: Europa Press Nov5 dates public weights to Wed Nov4; HF has 96 shards; Nov2 repo creation is not first public download; distinct from Oct23 hosted access. This dimension tests persistence actually seen rather than promised.",
+        "sourceQuality": "2/2: Europa Press Nov5 dates public weights to Wed Nov4; HF has 96 shards; Nov2 repo creation is not first public download; distinct from Oct23 hosted access. This dimension tests claim-local origin and reporter/host role."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Europa Press Nov5 dates public weights to Wed Nov4; HF has 96 shards; Nov2 repo creation is not first public download; distinct from Oct23 hosted access.",
+      "eventId": "kimi-k31-pro-open-weights-2026",
+      "identity": {
+        "seriesId": "kimi-k31-pro",
+        "action": "make full K3.1 Pro weights available",
+        "stage": "weight-available",
+        "dateBasis": "Nov4 according to Europa Press Nov5; HF files currently public, first-download minute unknown",
+        "decision": "new",
+        "comparedEventIds": [
+          "kimi-k31-pro-hosted-api-2026",
+          "kimi-k3-2026"
+        ]
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Dated original action + directly readable artifact",
+          "finding": "Europa Press Nov5 dates public weights to Wed Nov4; HF has 96 shards; Nov2 repo creation is not first public download; distinct from Oct23 hosted access.",
+          "evidenceIds": [
+            "kimi-k31-pro-open-weights-2026-quote-1",
+            "kimi-k31-pro-open-weights-2026-quote-2",
+            "kimi-k31-pro-open-weights-2026-quote-3",
+            "kimi-k31-pro-open-weights-2026-quote-4",
+            "kimi-k31-pro-open-weights-2026-quote-5"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Downstream economic, technical or regulatory effect already independently measured",
+          "finding": "Fact-level reported votes, available files or site transfer do not establish wider downstream impact or 40 binding laws.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Independent replication of model quality, deployed use or certified result set",
+          "finding": "Reporter/host corroborates only its documented scope; no independent technical or whole-population verification is claimed.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Check stage, license, future plans, uncertainty and negative evidence",
+          "finding": "Limitations and next-stage caveats retained; non-binding and disclosure date distinguished where applicable.",
+          "evidenceIds": [
+            "kimi-k31-pro-open-weights-2026-quote-6",
+            "kimi-k31-pro-open-weights-2026-quote-7"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "nov09-nvidia-board",
+      "discoveryUrls": [
+        "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Board initiated inquiry Nov8 into reported intelligence effort, but board says no reason to believe secrets compromised; no independently verified infiltration or AI capability impact. Do not print private allegations.; original readable?",
+        "novelty": "2/2: Board initiated inquiry Nov8 into reported intelligence effort, but board says no reason to believe secrets compromised; no independently verified infiltration or AI capability impact. Do not print private allegations.; new executed stage?",
+        "spillover": "1/2: Board initiated inquiry Nov8 into reported intelligence effort, but board says no reason to believe secrets compromised; no independently verified infiltration or AI capability impact. Do not print private allegations.; identifiable audience?",
+        "durability": "0/2: Board initiated inquiry Nov8 into reported intelligence effort, but board says no reason to believe secrets compromised; no independently verified infiltration or AI capability impact. Do not print private allegations.; observed persistence?",
+        "sourceQuality": "1/2: Board initiated inquiry Nov8 into reported intelligence effort, but board says no reason to believe secrets compromised; no independently verified infiltration or AI capability impact. Do not print private allegations.; independent origin?"
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Board initiated inquiry Nov8 into reported intelligence effort, but board says no reason to believe secrets compromised; no independently verified infiltration or AI capability impact. Do not print private allegations."
+    },
+    {
+      "candidateId": "nov09-microsoft-frontiers",
+      "discoveryUrls": [
+        "https://hunch.net/?p=13764006"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "2/2: Former group leader says AI Frontiers is over after September reorg; November blog is personal account, not verified current Microsoft-wide research closure.; original readable?",
+        "novelty": "2/2: Former group leader says AI Frontiers is over after September reorg; November blog is personal account, not verified current Microsoft-wide research closure.; new executed stage?",
+        "spillover": "1/2: Former group leader says AI Frontiers is over after September reorg; November blog is personal account, not verified current Microsoft-wide research closure.; identifiable audience?",
+        "durability": "0/2: Former group leader says AI Frontiers is over after September reorg; November blog is personal account, not verified current Microsoft-wide research closure.; observed persistence?",
+        "sourceQuality": "1/2: Former group leader says AI Frontiers is over after September reorg; November blog is personal account, not verified current Microsoft-wide research closure.; independent origin?"
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "Former group leader says AI Frontiers is over after September reorg; November blog is personal account, not verified current Microsoft-wide research closure."
+    },
+    {
+      "candidateId": "nov09-qwen4-teaser",
+      "discoveryUrls": [
+        "https://x.com/AGTPinsights/status/2118687517108994450"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2: Public X index indicates teaser only, no confirmed model checkpoint or API; no first-hand official post read.; original readable?",
+        "novelty": "1/2: Public X index indicates teaser only, no confirmed model checkpoint or API; no first-hand official post read.; new executed stage?",
+        "spillover": "1/2: Public X index indicates teaser only, no confirmed model checkpoint or API; no first-hand official post read.; identifiable audience?",
+        "durability": "0/2: Public X index indicates teaser only, no confirmed model checkpoint or API; no first-hand official post read.; observed persistence?",
+        "sourceQuality": "0/2: Public X index indicates teaser only, no confirmed model checkpoint or API; no first-hand official post read.; independent origin?"
+      },
+      "total": 3,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Public X index indicates teaser only, no confirmed model checkpoint or API; no first-hand official post read."
+    },
+    {
+      "candidateId": "nov09-whitehouse-bio",
+      "discoveryUrls": [
+        "https://dailycaller.com/2026/11/06/white-house-finalizes-ai-bioweapon-policy/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 1,
+        "spillover": 2,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "1/2: Newsroom report readable, underlying formal federal instrument and effective date not obtained; no enacted policy inference.; original readable?",
+        "novelty": "1/2: Newsroom report readable, underlying formal federal instrument and effective date not obtained; no enacted policy inference.; new executed stage?",
+        "spillover": "2/2: Newsroom report readable, underlying formal federal instrument and effective date not obtained; no enacted policy inference.; identifiable audience?",
+        "durability": "0/2: Newsroom report readable, underlying formal federal instrument and effective date not obtained; no enacted policy inference.; observed persistence?",
+        "sourceQuality": "0/2: Newsroom report readable, underlying formal federal instrument and effective date not obtained; no enacted policy inference.; independent origin?"
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "Newsroom report readable, underlying formal federal instrument and effective date not obtained; no enacted policy inference."
+    },
+    {
+      "candidateId": "nov09-openai-wetlab",
+      "discoveryUrls": [
+        "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "0/2: OpenAI original article returned HTTP403; no full study or reproducible protocol in packet.; original readable?",
+        "novelty": "1/2: OpenAI original article returned HTTP403; no full study or reproducible protocol in packet.; new executed stage?",
+        "spillover": "1/2: OpenAI original article returned HTTP403; no full study or reproducible protocol in packet.; identifiable audience?",
+        "durability": "0/2: OpenAI original article returned HTTP403; no full study or reproducible protocol in packet.; observed persistence?",
+        "sourceQuality": "0/2: OpenAI original article returned HTTP403; no full study or reproducible protocol in packet.; independent origin?"
+      },
+      "total": 2,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "OpenAI original article returned HTTP403; no full study or reproducible protocol in packet."
+    },
+    {
+      "candidateId": "nov09-openai-hacktron",
+      "discoveryUrls": [
+        "https://openai.com/index/partnering-with-hacktron/"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "0/2: OpenAI original article returned HTTP403; plan vs actual completed investigation not established.; original readable?",
+        "novelty": "1/2: OpenAI original article returned HTTP403; plan vs actual completed investigation not established.; new executed stage?",
+        "spillover": "1/2: OpenAI original article returned HTTP403; plan vs actual completed investigation not established.; identifiable audience?",
+        "durability": "0/2: OpenAI original article returned HTTP403; plan vs actual completed investigation not established.; observed persistence?",
+        "sourceQuality": "0/2: OpenAI original article returned HTTP403; plan vs actual completed investigation not established.; independent origin?"
+      },
+      "total": 2,
+      "priority": "skip",
+      "decision": "hold",
+      "reason": "OpenAI original article returned HTTP403; plan vs actual completed investigation not established."
+    }
+  ],
+  "windowNote": "Combines frozen Nov2–6 and new Nov6–9 collections; Nov6 overlap deduplicated by action. Nov9 partial through actual capture time. Search page age is not an event timestamp.",
+  "discoveryLimitations": [
+    "Public Reddit site index yielded no post body; platform search not completed.",
+    "Brave site:x.com yields partial public leads; reading a known OpenAI official status does not complete X search.",
+    "HF daily Nov9 returned HTTP400 before a list existed; weekend zero-ranked results do not mean zero papers.",
+    "IMAP INBOX only, two newsletter senders, sanitized excerpts; no full email linked content.",
+    "OpenAI announcement pages returned HTTP403; no TLS or access bypass. Three additional Brave requests returned TLS error and are not counted as successful.",
+    "The original Nov6 provisional publication request is stale; this consolidated run and any Nov9 proposal require new exact human approval."
+  ]
+}

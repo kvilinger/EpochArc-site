@@ -1,0 +1,410 @@
+---
+license: odc-by
+task_categories:
+- robotics
+tags:
+- LeRobot
+- toyblocks
+- robotics
+- manipulation
+- franka
+- simulation
+size_categories:
+- 100M<n<1B
+pretty_name: ToyBlocks dataset
+configs:
+- config_name: easy_train
+ data_files: Easy/Train/Easy_Train/data/*/*.parquet
+ default: true
+- config_name: easy_val
+ data_files: Easy/Val/Easy_Val_1k/data/*/*.parquet
+- config_name: easy_test
+ data_files: Easy/Test/Easy_Test_1k/data/*/*.parquet
+- config_name: medium_train
+ data_files: Medium/Train/Medium_Train/data/*/*.parquet
+- config_name: medium_val
+ data_files: Medium/Val/Medium_Val_1k/data/*/*.parquet
+- config_name: medium_test
+ data_files: Medium/Test/Medium_Test_1k/data/*/*.parquet
+- config_name: hard_train
+ data_files: Hard/Train/Hard_Train/data/*/*.parquet
+- config_name: hard_val
+ data_files: Hard/Val/Hard_Val_1k/data/*/*.parquet
+- config_name: hard_test
+ data_files: Hard/Test/Hard_Test_1k/data/*/*.parquet
+---
+
+<p align="center">
+ <img src="https://raw.githubusercontent.com/allenai/ToyBlocks/main/ToyBlocksLogo_latest.svg" alt="ToyBlocks" width="720">
+</p>
+
+# ToyBlocks dataset
+
+## Dataset Description
+
+- **Homepage:** https://allenai.github.io/ToyBlocks
+- **Repository:** https://github.com/allenai/ToyBlocks
+- **Paper:** https://allenai.org/blog/toyblocks
+- **Models:** [Molmo2-4B-tb](https://huggingface.co/allenai/Molmo2-4B-tb) (high level) and
+ [ManiFlow-TB](https://huggingface.co/allenai/maniflow-tb) (low level)
+- **Point of contact:** Naman Shah, namans@allenai.org
+
+## Dataset Summary
+
+### Summary
+
+The goal of ToyBlocks is to support a fully open release of a simulation framework for training and testing robot foundation models in a narrow domain. This solves a critical bottleneck in robot learning which is the cost of real-world data collection. ToyBlocks replaces teleoperation with automated task and demonstration generation.
+
+### Summary statistics
+
+| Set | Split | Variant | Folder | Episodes | Frames | Hours | Mean episode length (s) |
+|---|---|---|---|---|---|---|---|
+| RA | val | readable | `Easy/Test/Easy_Test_1k` | 1,000 | 815,921 | 9.1 | 32.6 |
+| RB | val | readable | `Easy/Val/Easy_Val_1k` | 1,000 | 811,069 | 9.0 | 32.4 |
+| RC | val | flip-unreadable | `Medium/Test/Medium_Test_1k` | 1,000 | 2,054,874 | 22.8 | 82.2 |
+| RD | val | flip-unreadable | `Medium/Val/Medium_Val_1k` | 1,000 | 2,019,152 | 22.4 | 80.8 |
+| RE | val | random orientation | `Hard/Test/Hard_Test_1k` | 1,000 | 2,109,942 | 23.4 | 84.4 |
+| RF | val | random orientation | `Hard/Val/Hard_Val_1k` | 1,000 | 2,264,893 | 25.2 | 90.6 |
+| **Validation total** | val | | | **6,000** | **10,075,851** | **112.0** | **67.2** |
+| RG | train | readable | `Easy/Train/Easy_Train` | 31,942 | 27,647,393 | 307.2 | 34.6 |
+| RH | train | flip-unreadable | `Medium/Train/Medium_Train` | 22,467 | 50,486,513 | 561.0 | 89.9 |
+| RI | train | random orientation | `Hard/Train/Hard_Train` | 23,087 | 55,466,668 | 616.3 | 96.1 |
+| **Training total** | train | | | **77,496** | **133,600,574** | **1,484.5** | **69.0** |
+| **All** | | | | **83,496** | **143,676,425** | **1,596.4** | **68.8** |
+
+- **Task and robot:** every episode stacks 3 blocks, on a simulated Franka FR3 with a Robotiq 2F-85 gripper, recorded at 25 fps in LeRobot v3 format.
+- **Episode length:** median 58.6 s, with p10 25.0 s and p90 128.1 s. Readable sets have a median of about 32–35 s; flip-unreadable and random-orientation sets run about 72–92 s.
+- **Problems:** there are 3,600 distinct PDDL problems: 600 in validation (100 per set) and 3,000 in training (1,000 per set), with none shared between splits. Each problem was attempted from up to 16 reset states in validation and 32 in training. Each validation set in this release is a selection of 1,000 successful episodes that covers all 100 of its problems.
+- **Success:** every episode is a successful demonstration, and each ends with a 27-frame done segment. Failed retry attempts were cut out. In the random-orientation sets, idle frames inside split rotations were also removed.
+- **High-level skill steps:** 481,207 in total.
+
+| Skill | Steps | Share | Episodes that use it |
+|---|---|---|---|
+| Pick-and-place, table→block | 142,545 | 29.6% | 97.0% |
+| Pick-and-place, block→table | 97,034 | 20.2% | 78.5% |
+| Pick-and-place, block→block | 26,782 | 5.6% | 28.5% |
+| Pick-and-place, table→table | 27,577 | 5.7% | 24.5% |
+| Flip (90° tip) | 151,406 | 31.5% | 57.0% |
+| In-place rotate | 30,623 | 6.4% | 23.2% |
+| Move to side | 5,238 | 1.1% | 5.3% |
+
+Readable sets have almost no flips or rotates. In flip-unreadable sets, flips are 42–43% of steps and appear in 98–99% of episodes. In random-orientation sets, flips are 36–37% and rotates 13–16% of steps.
+
+- **Plan length:** median 5 steps per episode, p90 10, range 1–18. By variant, the median is 3 for readable, 7 for flip-unreadable and 8 for random orientation.
+- **Scenes:** each scene has 4–10 blocks. Block sides are 3.1–5.0 cm, and the table height varies by ±4.8 cm. There are 8 scene profiles. Friction is fixed at 0.5. The training sets randomize the front camera per episode: position within about ±3 cm and focal length 367–422 px.
+- **Cameras:** a front camera and a wrist camera. RGB is 640×360 AV1, and depth is 640×360 lossless 12-bit HEVC in millimetres. The training sets add 224×224 RGB and packed 8-bit depth.
+- **State and action:**
+ - State: `observation.state` has 8 values (7 joints plus gripper). Joint velocity, acceleration and effort, end-effector pose, wrist wrench, and 6-DoF poses for every block are also recorded.
+ - Action: `action` has 9 values (7 joint targets, gripper, and a configuration flag), plus joint-space and Cartesian targets.
+ - Per-frame extras: camera poses and intrinsics, the PDDL goal, and the symbolic state.
+
+## Supported Tasks and Leaderboards
+
+### Supported tasks
+
+The dataset contains robot manipulation data for a tabletop single-arm FR3 manipulator. A model trained on this dataset can learn to manipulate semantic blocks on the table, including picking them up, stacking, unstacking, putting them on the table, flipping, and rotating them.
+
+### Tasks already used for
+
+Table top manipulation of semantic blocks including picking them up, stacking, unstacking, putting them back on the table, flipping, and rotating them.
+
+## Languages
+
+Robot manipulation data (joint states, images) and English.
+
+## Dataset Structure
+
+### Data instances
+
+```
+{
+ "episode_index": 0,
+ "frame_index": 542,
+ "timestamp": 21.68,
+ "index": 542,
+ "task_index": 2,
+ "observation.images.camera:front_camera": "<video frame, videos/observation.images.camera:front_camera/chunk-000/file-000.mp4 @ episode timestamp 21.68 s>",
+ "observation.images.camera:gripper_camera": "<video frame, videos/observation.images.camera:gripper_camera/...>",
+ "observation.depth.camera:front_camera": "<depth video frame>",
+ "observation.depth.camera:gripper_camera": "<depth video frame>",
+ "observation.state": [-0.4746, 0.3623, 0.4105, -2.2824, -0.2792, 2.5996, -1.4122, 0.557],
+ "observation.state.joint_position": [-0.4746, 0.3623, 0.4105, -2.2824, -0.2792, 2.5996, -1.4122],
+ "observation.state.gripper_position": 0.557,
+ "observation.state.ee_position": [0.5309, -0.0231, 0.2066, 3.1409, 0.0, -0.0059],
+ "observation.state.object_pose.block_purple": [0.5316, -0.0236, 0.0497, 0.7064, -0.0021, 0.0018, -0.7078],
+ "observation.state.cube_scale": 0.0331,
+ "observation.state.high_level_state": "(at robot block_purple)\n(clear block_4)\n(clear block_a)\n(clear block_gray)\n(clear block_i)\n(clear block_o)\n(clear block_purple)\n(clear block_t)\n(clear block_yellow)\n(on block_i block_2)\n(on block_t block_pink)\n(on_table block_2 workspace_table)\n(on_table block_4 workspace_table)\n(on_table block_a workspace_table)\n(on_table block_gray workspace_table)\n(on_table block_o workspace_table)\n(on_table block_pink workspace_table)\n(on_table block_purple workspace_table)\n(on_table block_yellow workspace_table)\n(ori_of block_o o4)\n(ori_of block_t o2)\n(ori_of block_i o10)\n...",
+ "action": [0.0125, 0.0179, -0.0113, 0.0074, -0.0168, 0.0195, 0.0205, 1.0, 1.0],
+ "action.joint_target": [-0.4621, 0.3802, 0.3992, -2.275, -0.2961, 2.6191, -1.3917],
+ "action.gripper_position": 1.0,
+ "action.ee_target": [0.5336, -0.0214, 0.2012, 0.0011, 1.0, -0.0055, 0.005],
+ "action.pd_mode": 1.0,
+ "action.high_level_action": "pnp_table_block",
+ "action.high_level_args": "[\"robot\", \"block_purple\", \"block_o\", \"workspace_table\", \"o2\", \"o2\"]",
+ "action.low_level_action": "place_delta_traj",
+ "pddl_goal": "(and (on_table block_o workspace_table) (on block_purple block_o) (on block_t block_purple) (clear block_t) (or (ori_of block_o o2) (ori_of block_o o4) (ori_of block_o o10) (ori_of block_o o12)) (ori_of block_t o2))",
+ "source_problem": "problem_declarative_10_20261029_174926_562737_4166",
+ "instance_id": 13,
+ "scene_id": "sim2real",
+ "robot_id": "fr3_robotiq_gripper_sysid",
+ "is_first": false,
+ "is_last": false
+}
+```
+
+Each record is one control step at 25 Hz: the robot’s observation at that moment and the command it was sent next.
+
+- **Episodes:** consecutive records with the same `episode_index` form one episode, ordered by `frame_index` and `timestamp`. An episode is one demonstration of one goal from one starting arrangement. `is_first` and `is_last` mark its ends.
+- **Goals:** the goal is the same on every frame of an episode (`pddl_goal`). Episodes that share a `source_problem` come from the same goal. `instance_id` tells their starting arrangements apart (0–15 in validation, 0–31 in training), and no goal–start pair is repeated.
+- **Plan steps:** within an episode, `action.high_level_action` and `action.high_level_args` give the plan step being executed, e.g. `pnp_table_block` moves a block from the table onto another block. `action.low_level_action` gives the motion phase within that step. Consecutive frames with the same high-level values form one step, so episodes can be split into skill segments. `task_index` points to the step’s text in `meta/tasks.parquet`.
+- **State and actions:** `observation.state.high_level_state` is the symbolic world state the planner used at that frame. Orientations like `o2` are indices into the block-orientation tables, which every frame also carries. `action` is the 7 arm joint deltas (`action.joint_target` minus the current joint positions), then the gripper command and a control-mode flag. Absolute joint and end-effector targets are also provided.
+- **Images:** camera images are stored as video files rather than in the table. Each record’s frame is the one at its timestamp in its episode’s video.
+- **Splits:** all nine datasets (three training, six validation) share this schema and differ only in which goals, blocks and starting orientations they contain. The `observation.state.object_pose.<block>` fields list the blocks of each set, and the training sets also carry the 224×224 videos.
+
+### Data fields
+
+Each record is one control step at 25 Hz. Types are given as dtype[shape]. Poses are [x, y, z, qw, qx, qy, qz] in metres, in the robot base frame. Joint values are in radians.
+
+INPUTS (observations)
+- `observation.images.camera:front_camera` (RGB video, 640×360): fixed front camera.
+- `observation.images.camera:gripper_camera` (RGB video, 640×360): wrist camera on the gripper.
+- `observation.depth.camera:front_camera`, `observation.depth.camera:gripper_camera` (depth video, 640×360, millimetres): depth images from the same two cameras.
+- `observation.images.camera:<camera>_224`, `observation.depth.camera:<camera>_rg8_55_224` (training sets only): the same cameras at 224×224, with depth packed into two 8-bit channels.
+- `observation.state` (float32[8]): 7 arm joint positions plus gripper opening.
+- `observation.state.joint_position`, `joint_velocity`, `joint_acceleration`, `joint_effort` (float32[7] each): arm joint state.
+- `observation.state.gripper_position` (float32[1]): gripper opening (0 = open).
+- `observation.state.ee_position` (float32[6]): gripper base pose as x, y, z, roll, pitch, yaw.
+- `observation.state.wrench` (float32[6]): force and torque at the end effector.
+- `observation.state.current_stiffness`, `current_damping`, `current_effort_limit`, `current_velocity_limit`, `current_torque` (float32[13] each): joint controller settings and torques for all robot joints.
+- `observation.state.object_pose.<block>` (float32[7]): pose of each block, plus `workspace_table`.
+- `observation.state.high_level_state` (string): symbolic world state (PDDL facts) the planner used at this step.
+- `pddl_goal` (string): task goal as a PDDL expression. Constant within an episode.
+
+OUTPUTS (actions)
+- `action` (float32[9]): default training target. 7 arm joint deltas from the current position, then the gripper command (0 = open, 1 = closed) and a control-mode flag.
+- `action.joint_target` (float32[7]): absolute arm joint targets.
+- `action.relative_joint_target` (float32[7]): joint targets relative to the current position.
+- `action.joint_position` (float32[7]): commanded joint positions.
+- `action.ee_target`, `action.relative_ee_target` (float32[7] each): end-effector target pose, absolute and relative to the current pose.
+- `action.ee_position` (float32[6]): commanded end-effector pose as x, y, z, roll, pitch, yaw.
+- `action.gripper_position` (float32[1]): gripper command.
+- `action.gripper_raw` (float32[1]): unbinarised gripper command.
+- `action.pd_mode` (float32[1]): joint controller gain setting used for this step.
+- `action.high_level_action` (string): plan step being executed, e.g. `pnp_table_block`. Output for high-level planners.
+- `action.high_level_args` (string): arguments of that step: robot, moved block, destination, source, orientations.
+- `action.low_level_action`, `action.low_level_args` (string): motion phase within the plan step.
+- `action.is_valid` (bool[1]): whether the action at this step is valid.
+- `goal.action`, `goal.action_secondary` (string): the step's action (pick, place, place on table, flip, rotate, done) and the current motion within it.
+- `goal.position`, `goal.position_target` (float32[2]): image point (pixels) of the step's target in the front camera; `goal.position_gripper`, `goal.position_target_gripper` (float32[2]) give the same in the gripper camera. NaN when not defined.
+
+METADATA
+- `episode_index`, `frame_index`, `index` (int64[1] each): episode id, step within the episode, and global row id.
+- `timestamp` (float32[1]): seconds since episode start.
+- `task_index` (int64[1]): index into `meta/tasks.parquet`, the plan-step text.
+- `is_first`, `is_last` (bool[1] each): first and last step of the episode.
+- `is_episode_successful` (bool[1]): episode success flag.
+- `error` (string): error message, empty when none.
+- `source_problem` (string): goal (PDDL problem) id. Episodes that share it share a goal.
+- `instance_id` (int64[1]): starting arrangement for that goal (0–15 in validation, 0–31 in training).
+- `observation.state.cube_scale` (float32[1]), `observation.state.scale_properties` (float32[3]): block size.
+- `observation.state.friction_properties` (float32[3]): block static friction, dynamic friction and restitution.
+- `observation.state.table_friction`, `observation.state.table_height_delta` (float32[1] each): table friction and height offset.
+- `observation.state.profile_id` (int64[1]): scene physics profile id.
+- `observation.camera_intrinsics.camera:<camera>` (float32[9]), `observation.camera_pose.camera:<camera>` (float32[7]): camera intrinsics and pose.
+- `robot.poses.<link>` (float32[7]): pose of each arm and gripper link.
+- `scene_id`, `robot_id` (string): scene preset (sim2real) and robot model (fr3_robotiq_gripper_sysid).
+- `glyph_map`, `block_variable_map` (string): block naming maps; may be empty.
+
+### Data splits
+
+The release contains three training sets and six validation sets. All nine are generated the same way and differ only in which blocks are used and how the blocks start.
+
+How the splits were made:
+- Blocks: letter blocks are divided into a training group and a held-out group. Training sets use only training blocks. Validation sets use either group.
+- Starting orientation: in "readable" sets every letter starts readable. In "flip-unreadable" sets each letter starts with its letter visible but needing one or more flips to become readable. In "random" sets blocks start in any orientation.
+- Goals and starts: each goal (a PDDL problem) is run from 16 (validation) or 32 (training) different starting arrangements, and no goal-start pair is repeated. Only successful episodes are kept, so a set can have fewer episodes than goals x starts.
+
+Training sets (training blocks only, 1,000 goals x 32 starts = 32,000 attempted episodes each):
+- RG, train-readable (`Easy/Train/Easy_Train`): 31,942 episodes, 1,710 GB.
+- RH, train-flip-unreadable (`Medium/Train/Medium_Train`): 22,467 episodes, 2,989 GB.
+- RI, train-random (`Hard/Train/Hard_Train`): 23,087 episodes, 3,206 GB.
+
+Validation sets (100 goals x 16 starts = 1,600 attempted episodes each; the release keeps 1,000 successful episodes of each, covering all 100 goals):
+- RA: held-out blocks, readable start (`Easy/Test/Easy_Test_1k`). 1,000 episodes, 79 GB.
+- RB: training blocks, readable start (`Easy/Val/Easy_Val_1k`). 1,000 episodes, 78 GB.
+- RC: held-out blocks, flip-unreadable start (`Medium/Test/Medium_Test_1k`). 1,000 episodes, 192 GB.
+- RD: training blocks, flip-unreadable start (`Medium/Val/Medium_Val_1k`). 1,000 episodes, 190 GB.
+- RE: held-out blocks, random start (`Hard/Test/Hard_Test_1k`). 1,000 episodes, 197 GB.
+- RF: training blocks, random start (`Hard/Val/Hard_Val_1k`). 1,000 episodes, 211 GB.
+
+RB, RD and RF match the conditions of the three training sets and measure in-distribution performance. RA, RC and RE use the same starting conditions with held-out blocks and measure generalisation to unseen blocks.
+
+### Repository layout and download
+
+The repository groups the sets by starting orientation: `Easy` is readable, `Medium` is flip-unreadable and `Hard` is random orientation. Under each, `Train/` holds the training set, `Val/` the validation set with training blocks and `Test/` the validation set with held-out blocks. Each set folder is a LeRobot v3 dataset: `meta/info.json` describes every feature, `data/` holds the per-frame parquet files and `videos/` the camera videos. A few extra files describe how the data was made:
+
+- `meta/provenance.json`: the generation runs and problems each set was merged from.
+- `meta/done_label*.json` (training sets): how the final frames of each successful episode were relabelled as the done step.
+- `meta/rotidlecut*.json` (`Hard_Train`): the idle frames cut from split rotations.
+- `run_splits.json` (validation sets): five evaluation runs of 200 episodes each. `smoke_indices.json` lists a smaller subset for quick checks, and `episode_selection.json` maps each released episode to its source episode.
+
+Download one set, for example RA:
+
+```bash
+hf download allenai/toyblocks-data --repo-type dataset --include "Easy/Test/**" --local-dir toyblocks-data
+```
+
+## Dataset Creation
+
+### Curation rationale
+
+These datasets were created to train and evaluate robot manipulation policies on a multi-step tabletop task: building a stack of three letter or colour blocks, with the letters facing the right way, using a Franka arm and a Robotiq gripper. The task combines grasping and placing, collision-free motion among clutter, and reorienting blocks so a letter becomes readable. Collecting real robot demonstrations at this scale is slow and costly. Simulation makes it possible to generate large, varied datasets with exact, repeatable starting states for evaluation.
+
+All episodes are generated in simulation (Isaac Lab) by a scripted planner. The planner breaks each goal into pick-and-place, flip and rotate steps and uses cuRobo for motion planning. Each task is a symbolic goal (a PDDL problem). The scene holds 4 to 10 blocks, and each goal has 16 (validation) or 32 (training) different starting arrangements. Every goal–start pair appears only once. Every frame records the step the planner was executing alongside the robot actions, so the data can train both low-level control policies and high-level planners that choose the next step.
+
+The release is organised around two factors that we wanted to measure separately:
+
+- Starting orientation: in the readable sets, every letter block starts readable, so the task is mainly pick-and-place. In the flip-unreadable sets, each letter starts with its letter visible but needing one or more flips to become readable. In the random sets, blocks start in any orientation and may need both flips and rotations.
+- Which blocks: letter blocks are split into a training group and a held-out group. All three training sets (22,000–32,000 episodes each, one per starting orientation) use only training blocks. The six validation sets (100 goals × 16 starts each) cover every combination of starting orientation and block group. Policies can therefore be tested on familiar blocks under the same conditions they trained on, and on held-out blocks they have never seen. This separates object generalisation from reorientation difficulty.
+
+The planner was tuned to keep a safe margin between the gripper and nearby blocks. This followed the finding that policies trained on earlier data often hit neighbouring blocks, and safe clearance was judged more important than matching earlier trajectory shapes. Episodes include RGB and depth video and are stored in the LeRobot format. Only successful demonstrations are kept.
+
+### Initial data collection
+
+No real-world data, web data or upstream datasets were used. Every episode is generated in simulation, and there were no search terms or external collection.
+
+The simulation is built from:
+- 3D models of letter blocks (alphabet and digit glyphs) and plain colour blocks.
+- A model of a Franka FR3 arm with a Robotiq 2F-85 gripper.
+- A tabletop scene with fixed front and wrist-mounted cameras.
+- NVIDIA Isaac Sim / Isaac Lab for physics and rendering, and NVIDIA cuRobo for motion planning.
+
+Generation steps:
+1. A task generator samples goals: stack three blocks in a given order, with letter blocks facing a readable way. Scenes contain 4 to 10 blocks, drawn from either the training or the held-out block group.
+2. For each goal, 16 (validation) or 32 (training) starting arrangements are sampled: block positions on the table, existing stacks, and starting orientations (readable, flip-unreadable or random, depending on the set). Block size, friction and table height are randomised within fixed ranges.
+3. A scripted planner breaks each goal into steps and executes them in simulation with cuRobo motion planning, recording observations and actions at 25 Hz.
+
+Filtering:
+- Episodes that do not reach the goal are discarded, so only successful episodes are kept.
+- Each goal-start pair is used once. Duplicates were checked and none remain.
+- No manual selection or editing of episodes was done.
+
+### Source data producers
+
+The data was created entirely by software. A scripted task-and-motion planner, running in the NVIDIA Isaac Sim / Isaac Lab simulator with NVIDIA cuRobo for motion planning, generated and executed every episode. No human demonstrations, teleoperation, annotation or crowdsourcing were involved, so no one was recruited or paid to produce data.
+
+The task generator, planner, simulation setup and recording pipeline were developed by the research team at the Allen Institute for AI (Ai2) as part of their regular research work. Data generation ran on Ai2's internal GPU compute cluster.
+
+### Missing data
+
+Not applicable.
+
+### Data preprocessing
+
+The data is recorded directly from the simulator. No cleaning or normalisation is applied to the stored values: joint angles, poses, forces and actions are saved in physical units (radians, metres, newtons) exactly as the simulator and planner produced them.
+
+Processing steps:
+- Recording: generation runs in parallel. Each worker writes its own LeRobot (v3) dataset, and these are merged into one dataset per split with consecutive episode and frame indices.
+- Success filtering: episodes are labelled as successful or failed when they finish. Only successful episodes are included in the release.
+- Duplicate check: the merged datasets were checked to confirm that no goal-start pair appears twice.
+- Validation selection: each released validation set holds 1,000 of its successful episodes, drawn from all 100 goals (`episode_selection.json`).
+- Video compression: camera images are stored as compressed video (AV1 for RGB, HEVC for depth) rather than as individual frames. This compression is lossy for RGB.
+- Gripper command: `action.gripper_raw` holds the planner's continuous gripper command. `action.gripper_position` is that command binarised at a threshold of 0.3 (open or closed).
+- Statistics: per-field summary statistics (mean, standard deviation, minimum, maximum, quantiles) are provided in `meta/stats.json` for users who want to normalise the data. They are not applied to the stored values.
+
+Raw data: the uncompressed camera frames are not kept; the compressed videos are the only copy. All non-image values are stored at full float32 precision, so nothing else is lost. Failed episodes are not part of the release.
+
+## Annotations
+
+### Annotation process
+
+No human annotation was done. Every label in the dataset is produced automatically by the generation software as each episode runs, so there were no annotators, guidelines or inter-annotator checks.
+
+The labels and where they come from:
+- Plan steps (`action.high_level_action`, `action.high_level_args`, `action.low_level_action`): recorded from the planner as it executes each step, so they describe exactly what the robot was commanded to do at each frame.
+- Symbolic state (`observation.state.high_level_state`): the planner's own list of facts about the world (which block is on which, block orientations, what the gripper holds) at each frame.
+- Goal (`pddl_goal`): the task specification the episode was generated from.
+- Success: at the end of each episode the simulator checks every condition of the goal against the actual block positions and orientations. Only episodes where all conditions hold are kept.
+
+How labels were checked: success is decided from the simulated world state, not from the planner's belief, so an episode the planner thought it finished but that did not reach the goal is discarded. During development, episodes were also replayed and inspected visually, and the merged datasets were checked automatically for duplicate goal-start pairs.
+
+### Who are the annotators?
+
+There are no human annotators. All labels (plan steps, symbolic state, goals and success) were generated automatically by the data-generation software: a scripted planner running in the NVIDIA Isaac Sim / Isaac Lab simulator. No machine-learning model was used to produce labels, and no annotation platform or crowdsourcing service was involved.
+
+## Personal and Sensitive Information
+
+None
+
+## Considerations for Using the Data
+
+### Social impact
+
+This dataset supports research on robots that carry out multi-step tasks from a goal description, such as arranging objects in a specified order and orientation.
+
+Possible benefits:
+- Large-scale, reproducible simulated data lowers the cost of robot learning research. Groups without access to physical robots or large demonstration budgets can train and compare policies.
+- Splitting blocks into seen and held-out groups, and providing evaluation sets with fixed starting states, supports careful measurement of how well policies generalise, rather than reporting only performance on training conditions.
+- Because the data includes symbolic plans and goal checks, it can help study how robots break tasks into steps, which matters for building systems whose behaviour can be inspected and predicted.
+
+Possible harms and limits:
+- The data is simulated and covers a narrow setting: one robot model, one table scene and toy blocks. Policies trained only on it should not be assumed to be safe or reliable on real robots or in other environments. Deploying such a policy on physical hardware without further testing could damage equipment or injure people nearby.
+- Simulated physics and rendering differ from the real world, so success rates measured on these datasets may overstate real-world performance.
+- Over the longer term, research on general-purpose robot manipulation contributes to automation that may affect some jobs. This dataset is a small, early-stage research resource and has no direct application on its own.
+
+The dataset contains no personal data and depicts no people, so it raises no privacy concerns.
+
+### Discussion of biases
+
+The dataset depicts no people, so demographic biases do not apply. The main biases are in which situations are covered and how the demonstrations behave. Policies trained on this data will inherit them.
+
+Survivorship bias from success filtering: only successful episodes are kept, and harder starts fail more often. In the validation sets, 97% of readable-start episodes succeeded, against 70-80% for flip-unreadable and random starts. The harder sets therefore under-represent the most difficult arrangements: those where flips were needed, blocks were crowded, or the planner failed. Success rates measured on these sets should be read with this in mind.
+
+A single planner's style: every demonstration comes from one scripted planner, so each task is solved in that planner's preferred way. For example, it tends to move a block to the table before stacking, where another planner might move it directly onto another block. Grasp angles follow a fixed rule: the first gripper rotation that leaves at least 3 cm clearance from neighbouring blocks. Motions are smooth, planned trajectories rather than human-like movements, and they include no recovery from mistakes, because failed episodes are removed.
+
+A narrow setting: one robot model, one table scene, fixed camera positions, and a fixed set of block designs and sizes. Block size, friction and table height vary only within fixed ranges. Behaviour learned here may not transfer to other robots, objects, lighting or real-world physics.
+
+What was done and checked:
+- The planner's safety margin around blocks was increased after earlier data led policies to hit neighbouring blocks. The share of grasps with less than 1 cm clearance fell from 11.3% to 1.8%.
+- Blocks are split into seen and held-out groups so that bias toward familiar objects can be measured, and each goal is paired with 16 (validation) or 32 (training) different starts.
+- All validation sets were checked for duplicate goal-start pairs; none remain.
+- The balance of individual letters, block positions or goal types across the splits has not been systematically analysed.
+
+### Other known limitations
+
+Coverage gaps:
+- One task family only: stacking three blocks with orientation goals. There are no other tasks (pushing, spelling, longer stacks) and no free-form language instructions beyond the PDDL goal.
+- One robot (Franka FR3 with Robotiq 2F-85), one table scene and fixed camera positions. Lighting, backgrounds and camera placement do not vary.
+- No failure or recovery behaviour: failed episodes are removed, so the data never shows the robot recovering from a dropped block, a missed grasp or a knocked-over stack.
+- Harder starting arrangements are under-represented in the flip-unreadable and random sets, because those episodes failed more often and were filtered out (70-80% kept, against 97% for readable starts).
+
+Simulation limits:
+- Physics, contact and rendering are simulated. Images are rendered without real camera noise, motion blur or lens effects, and contact behaviour (friction, block sliding, grasp slip) differs from the real world.
+- RGB video is lossy-compressed, so fine image detail is lost.
+
+Known artifacts in the data:
+- About a third of episodes (36.5%) begin with 1-4 frames whose plan-step label is "init", while the robot waits for its first step. Skip these frames, or map them to the first real step, when training step-conditioned policies.
+- The success label refers to the goal conditions at the end of the episode. An episode can still count as successful if a block not involved in the goal was nudged along the way.
+- Some metadata fields (`glyph_map`, `block_variable_map`) may be empty.
+
+### Dataset Card Safety Disclosure
+
+This dataset has not been subjected to safety benchmarking and is intended strictly for use within the parameters of the described research protocol.
+
+## Additional Information
+
+### Dataset curators and funding
+
+Ai2. Funded by FFST.
+
+### Dataset maintainers
+
+Ai2 robotics team. Through GitHub issues and PRs.
+
+### Fees and access/export restrictions
+
+No.
+
+### Licensing information
+
+This dataset is licensed under [ODC-BY 1.0](https://opendatacommons.org/licenses/by/1-0/). It is intended for research and educational use in accordance with Ai2's [Responsible Use Guidelines](https://allenai.org/responsible-use).

@@ -1,0 +1,153 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "meta-muse-spaces-rollout-2026",
+  "inputSubjectDigest": "c0ae23a1b38ee4cb0f2669224a8da847df24480582aa927f6f9520384e088102",
+  "subjectDigest": "c6b215cd624999dcacff018d853167e1c66ec547d73ca42364004625cdb0d518",
+  "inputsDigest": "74955bc6f300c60648e68b714ae831a3e426e1b9ccbfc5bb34ceac1c31d1d25f",
+  "evidenceCutoff": "2026-11-09",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini-request:1a5c0ef0f815",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "pi-cli-ephemeral-request:1a5c0ef0f815",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-09",
+  "candidateId": "nov09-spaces",
+  "runDigest": "71dc2104ea02076f6be17d41c98f291b7e13d4d19dfbd009b80317439bfc3ecf",
+  "coreFactClaimIds": [
+    "spaces"
+  ],
+  "identity": {
+    "seriesId": "meta-muse-agent",
+    "action": "introduce customizable Spaces",
+    "stage": "available",
+    "dateBasis": "Meta Nov6 post, secondary reporting; not independent user-scale test",
+    "decision": "new",
+    "comparedEventIds": [
+      "meta-muse-personal-agent-2026",
+      "meta-muse-spark-open-2026"
+    ],
+    "deduplicationReason": "Compared dated action, actor and accomplished stage against two published records; earlier hosted gateway, app voice rollout and future weight access are not equated with this release."
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Dated action introduce customizable Spaces at stage available justifies product without inferring projected outcomes."
+  },
+  "significance": {
+    "rationale": "B-graded dated disclosure or artifact supports a bounded L1; no complete L2 rule is established by quoted evidence.",
+    "whyNotHigher": "No independent external production-scale adoption, all-local-result certifications, replicable capability breakthrough or downstream structural effects establish an applicable higher threshold.",
+    "whyNotLower": "Dated action and actor are separately documented and compared against two already published records.",
+    "comparisonEventIds": [
+      "meta-muse-personal-agent-2026",
+      "meta-muse-spark-open-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": true,
+            "rationale": "A directly described access, workflow or completed land-transfer stage supports this single criterion, without satisfying independent scale requirements.",
+            "evidenceIds": [
+              "meta-muse-spaces-rollout-2026-quote-1",
+              "meta-muse-spaces-rollout-2026-quote-2",
+              "meta-muse-spaces-rollout-2026-quote-3"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No captured independently verifiable completion of unaffiliated_production_organizations; unknown, not asserted false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Downstream use, economic effect or consensus has not been independently established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separately evidenced dispute confirmed within bounded sources; this does not assert universal absence.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent model packet explicitly evaluated both English and Simplified Chinese, dates and caveats; unreviewed remote pages are not treated as accessed."
+  },
+  "limitations": [
+    "Search covers Nov2–9 through partial-day Nov9 and cannot establish exhaustive discovery; Reddit post bodies were absent, X public index only supplied leads, and HF Nov9 daily returned HTTP400.",
+    "Original-source excerpts and their local hashes establish quote provenance within this packet, not independent truth of vendor performance or first public download time.",
+    "For Ballotpedia this is a Nov6 reported vote tally, not individually certified results or 40 binding statutes; for Kimi Nov4 is the day attributed by a Nov5 report, not reconstructed download logs.",
+    "Some original OpenAI articles returned HTTP403; social first-party statement, system card and API listing are scoped to accessible text.",
+    "Gemini read-only assessment and its PASS run audit do not supply human approval or authorise publication.",
+    "Exact independent-review input: review/GEMINI_FROZEN_1.md SHA256 75395ef1c7b2b5c0063550d5d7a3db49bcb55cc86c0bf3cda7bae5015722a649; result: review/GEMINI_1_RAW.md SHA256 65355419671ea95f57d19f2dae93843c3b4b44f18d82c9a894379a78e9a3196f; successful request ID 1a5c0ef0f815.",
+    "Run audit input: review/GEMINI_RUN_AUDIT_INPUT.md SHA256 5fd2917bb9ef02aab0fa6d8dcf8c02145789b8d2a9fb93196786d191c7ace178; PASS raw: review/GEMINI_RUN_AUDIT_RAW.md SHA256 9f89c3bcb9995bdd68f6fffcd30f9f039cb9ca3521701079fd92c5c46789f984.",
+    "Proposed publishedAt is not actual release; exact human approval and deployment validation remain necessary."
+  ],
+  "evidence": [
+    {
+      "id": "meta-muse-spaces-rollout-2026-quote-1",
+      "sourceId": "nov09-meta-spaces",
+      "claimId": "spaces",
+      "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+      "originId": "meta-muse-spaces-announcement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "November 6, 2026",
+      "locator": "Design the Muse App, Just for You exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/meta-spaces.txt",
+      "sha256": "55de724d959abb24e7cdc5afa5bfdd3a69186394a29a32d8cb50e3b9da5f7b88"
+    },
+    {
+      "id": "meta-muse-spaces-rollout-2026-quote-2",
+      "sourceId": "nov09-meta-spaces",
+      "claimId": "spaces",
+      "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+      "originId": "meta-muse-spaces-announcement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Starting today, spaces are available everywhere Muse is available.",
+      "locator": "Design the Muse App, Just for You exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/meta-spaces.txt",
+      "sha256": "55de724d959abb24e7cdc5afa5bfdd3a69186394a29a32d8cb50e3b9da5f7b88"
+    },
+    {
+      "id": "meta-muse-spaces-rollout-2026-quote-3",
+      "sourceId": "nov09-meta-report",
+      "claimId": "spaces",
+      "url": "https://ppc.land/metas-muse-gains-self-updating-tools-that-track-prices-and-instagram-saves/",
+      "originId": "ppcland-muse-spaces-report",
+      "accessedAt": "2026-11-09",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Meta on November 6, 2026 added a feature called spaces to Muse",
+      "locator": "Meta Muse gains self-updating tools exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/meta-spaces-ppc.txt",
+      "sha256": "39a618a0ef8154ca7e4ed260dda81a55c6c6aca90a9c47e097a3b5e2a4d2c2ce"
+    },
+    {
+      "id": "meta-muse-spaces-rollout-2026-quote-4",
+      "sourceId": "nov09-meta-spaces",
+      "claimId": "spaces-limits",
+      "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+      "originId": "meta-muse-spaces-announcement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "exploring ways for you to share your spaces with others",
+      "locator": "Design the Muse App, Just for You exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/meta-spaces.txt",
+      "sha256": "55de724d959abb24e7cdc5afa5bfdd3a69186394a29a32d8cb50e3b9da5f7b88"
+    }
+  ]
+}

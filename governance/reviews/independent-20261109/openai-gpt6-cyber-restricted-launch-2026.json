@@ -1,0 +1,177 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "openai-gpt6-cyber-restricted-launch-2026",
+  "inputSubjectDigest": "34aceb83728d2eb9afd3bc2a90266543569308b0c7abe9ae8f040553ca6c6834",
+  "subjectDigest": "40f45ba1ac986100e1862445e44a7f86dc9051dd5ac8dbe86ad487f42fa1299b",
+  "inputsDigest": "bd5deb6adbe739cfa2ee84117a39b6537e81b07565d831442ef0ebe44c49454f",
+  "evidenceCutoff": "2026-11-09",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini-request:deb5ceecb764",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "pi-cli-ephemeral-request:deb5ceecb764",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-09",
+  "candidateId": "nov06-gpt6cyber",
+  "runDigest": "71dc2104ea02076f6be17d41c98f291b7e13d4d19dfbd009b80317439bfc3ecf",
+  "coreFactClaimIds": [
+    "restricted"
+  ],
+  "identity": {
+    "seriesId": "openai-gpt6-cyber",
+    "action": "launch restricted model access",
+    "stage": "available",
+    "dateBasis": "Nov5 system card and Reuters dated Nov5",
+    "decision": "new",
+    "comparedEventIds": [
+      "google-gemini-3-8-flash-cyber-2026",
+      "openai-metr-hugging-face-investigations-2026"
+    ],
+    "deduplicationReason": "Compared dated action, actor and accomplished stage against two published records; earlier hosted gateway, app voice rollout and future weight access are not equated with this release."
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Dated action launch restricted model access at stage available justifies safety without inferring projected outcomes."
+  },
+  "significance": {
+    "rationale": "B-graded dated disclosure or artifact supports a bounded L1; no complete L2 rule is established by quoted evidence.",
+    "whyNotHigher": "No independent external production-scale adoption, all-local-result certifications, replicable capability breakthrough or downstream structural effects establish an applicable higher threshold.",
+    "whyNotLower": "Dated action and actor are separately documented and compared against two already published records.",
+    "comparisonEventIds": [
+      "google-gemini-3-8-flash-cyber-2026",
+      "openai-metr-hugging-face-investigations-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY-PRACTICE",
+        "criteria": {
+          "new_safety_practice": {
+            "value": null,
+            "rationale": "No captured independently verifiable completion of new_safety_practice; unknown, not asserted false.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No captured independently verifiable completion of unaffiliated_production_organizations; unknown, not asserted false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Downstream use, economic effect or consensus has not been independently established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separately evidenced dispute confirmed within bounded sources; this does not assert universal absence.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent model packet explicitly evaluated both English and Simplified Chinese, dates and caveats; unreviewed remote pages are not treated as accessed."
+  },
+  "limitations": [
+    "Search covers Nov2–9 through partial-day Nov9 and cannot establish exhaustive discovery; Reddit post bodies were absent, X public index only supplied leads, and HF Nov9 daily returned HTTP400.",
+    "Original-source excerpts and their local hashes establish quote provenance within this packet, not independent truth of vendor performance or first public download time.",
+    "For Ballotpedia this is a Nov6 reported vote tally, not individually certified results or 40 binding statutes; for Kimi Nov4 is the day attributed by a Nov5 report, not reconstructed download logs.",
+    "Some original OpenAI articles returned HTTP403; social first-party statement, system card and API listing are scoped to accessible text.",
+    "Gemini read-only assessment and its PASS run audit do not supply human approval or authorise publication.",
+    "Exact independent-review input: review/GEMINI_FROZEN_4.md SHA256 09c9e01de9e5d3bb62b41508a657054f3fee37637a328a29b64fb9d79523d8bc; result: review/GEMINI_4_RAW.md SHA256 26fa1ecd17d0a40c39c043acce0449359e8f6e31ffff3f636bfed6e2dbfab73f; successful request ID deb5ceecb764.",
+    "Run audit input: review/GEMINI_RUN_AUDIT_INPUT.md SHA256 5fd2917bb9ef02aab0fa6d8dcf8c02145789b8d2a9fb93196786d191c7ace178; PASS raw: review/GEMINI_RUN_AUDIT_RAW.md SHA256 9f89c3bcb9995bdd68f6fffcd30f9f039cb9ca3521701079fd92c5c46789f984.",
+    "Proposed publishedAt is not actual release; exact human approval and deployment validation remain necessary."
+  ],
+  "evidence": [
+    {
+      "id": "openai-gpt6-cyber-restricted-launch-2026-quote-1",
+      "sourceId": "new26nov-cyber-card",
+      "claimId": "restricted",
+      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "originId": "openai-gpt6-cyber-system-card-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Published November 5, 2026",
+      "locator": "GPT-6 Cyber System Card exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/openai-cyber-safety.txt",
+      "sha256": "39e3111093cd98782a3db99b658fe8f14682340fffc39f7a1d9dd49df56f85c6"
+    },
+    {
+      "id": "openai-gpt6-cyber-restricted-launch-2026-quote-2",
+      "sourceId": "new26nov-cyber-card",
+      "claimId": "restricted",
+      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "originId": "openai-gpt6-cyber-system-card-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Access to GPT-6 Cyber is restricted through",
+      "locator": "GPT-6 Cyber System Card exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/openai-cyber-safety.txt",
+      "sha256": "39e3111093cd98782a3db99b658fe8f14682340fffc39f7a1d9dd49df56f85c6"
+    },
+    {
+      "id": "openai-gpt6-cyber-restricted-launch-2026-quote-3",
+      "sourceId": "new26nov-cyber-api",
+      "claimId": "restricted",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+      "originId": "openai-gpt6-cyber-api-listing-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Your organization needs Daybreak Red access and approval to use GPT-6-Cyber.",
+      "locator": "GPT-6-Cyber Model API documentation exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/openai-cyber-api.txt",
+      "sha256": "8ef0b99520bb86d7f35182f9be6efceab4e3b0c5607172e4286c966639707394"
+    },
+    {
+      "id": "openai-gpt6-cyber-restricted-launch-2026-quote-4",
+      "sourceId": "new26nov-cyber-reuters",
+      "claimId": "restricted",
+      "url": "https://srnnews.com/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating/",
+      "originId": "reuters-gpt6-cyber-report-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "available to select customers of Daybreak Red",
+      "locator": "OpenAI launches GPT-6 Cyber with Critical cybersecurity rating exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/openai-cyber-reuters.txt",
+      "sha256": "281761c20003fbc0b89b4ad2d19b4555b2990a7291e9fba6dc8bdd947ea23919"
+    },
+    {
+      "id": "openai-gpt6-cyber-restricted-launch-2026-quote-5",
+      "sourceId": "new26nov-cyber-card",
+      "claimId": "limits",
+      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "originId": "openai-gpt6-cyber-system-card-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "same\ncapability designations as GPT-6 Astra: Critical in Cybersecurity",
+      "locator": "GPT-6 Cyber System Card exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/openai-cyber-safety.txt",
+      "sha256": "39e3111093cd98782a3db99b658fe8f14682340fffc39f7a1d9dd49df56f85c6"
+    },
+    {
+      "id": "openai-gpt6-cyber-restricted-launch-2026-fresh-20261109",
+      "sourceId": "new26nov-cyber-card",
+      "claimId": "restricted",
+      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "originId": "openai-gpt6-cyber-system-card-20261105",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Access to GPT-6 Cyber is restricted through",
+      "locator": "Rechecked original page on 2026-11-09; this is source wording, not proof that no other updates exist.",
+      "artifact": "governance/evidence/2026-11-09/direct/cyber-old-card.txt",
+      "sha256": "a0557ba822c1ceb31c5cc62e41ca99539a93a196ed117882dcfdb5165803faf6"
+    }
+  ]
+}

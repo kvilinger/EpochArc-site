@@ -1,0 +1,218 @@
+November 4, 2026 Public Notice of Security Incident | Kernel Blog
+
+blog
+book demo
+
+nov 4, 2026
+
+News
+Catherine Jue
+copy link
+
+November 4, 2026 Public Notice of Security Incident
+
+We are writing to notify you of a data security incident that we detected on November 2, 2026. We value your trust and want to keep you informed.
+
+What happened
+
+On October 24, an unauthorized party used a compromised KERNEL API key to probe for access.
+
+On October 27, the same party used the compromised key to gain access to a staff login to our logging provider. The unauthorized party accessed and downloaded data from this logging provider. Data contained a small number of kernel API keys and app deployments’ third-party secrets.
+
+On November 3, 2026, the same party used a compromised credential for our hosting provider account to gain access to 4 GPU-enabled servers in our infrastructure. 3 of those servers ran KERNEL browser sessions and 1 server contained no customer data.
+
+From November 2 to November 4, KERNEL employed our security incident response plan to identify, contain, eradicate, and recover all affected systems.
+
+The breach impacted 0.28% of Kernel’s customers.
+
+What we have done
+
+We revoked the compromised credentials, removed the party's access to our logging provider, blocked the IP addresses involved, and took the affected servers offline. We’ve rotated all credentials those servers had access to and audited potential unauthorized access across all systems. We've notified the organizations whose data was exposed and provided guidance on remediation. See the timeline below for our incident response and other relevant key dates.
+
+Timeline of events (UTC)
+
+Oct 24
+
+21:18: attacker used leaked api key used to read data across internal profiles
+
+Oct 27
+
+18:01: attacker verified access to our logging provider
+
+Nov 2
+
+19:28: impacted customer escalation
+
+22:20: incident-1 declared with high severity
+
+22:30: api key found and revoked
+
+23:50: Incident severity escalated to critical. RCA established, initial scope established, identified all indicators of compromise, comms to affected customers drafted
+
+Nov 3
+
+02:00: containment ended for incident-1
+
+05:41: server-1 (development, no data) accessed by attacker, cryptominer started
+
+06:09: server-2 accessed by attacker
+
+06:38: and 07:17:57: server-3 and server-4 accessed by attacker, same cryptominer attempted to start
+
+06:48: same cryptominer attempted to start on server-3
+
+07:11: incident-2 declared with critical severity
+
+07:37: all API keys associated with hosting provider rotated
+
+07:46: servers-2/3/4 taken offline
+
+09:00: established incident-2 is the same actor as incident-1
+
+09:29: server-1 was taken offline
+
+11:27: server-1 cloned and stored for forensics in secure storage
+
+11:12: RCA established, identified all indicators of compromise
+
+14:00: containment starts
+
+22:50: containment ends, comms to affected customers drafted and sent
+
+What we know
+
+Our evidence suggests that the attacker(s) are financially motivated and this was a part of a larger cryptomining campaign. We believe they are leveraging AI-assisted pentesting platform ARTEX as a command center to automate and amplify the impact of their campaign.
+
+We have been sharing the known and confirmed threat intelligence from this incident with abuse teams at the hosting providers and our logging infra vendor. We plan to share more with threat intelligence communities. If you need, we are able to share the technical fingerprint of the attacker. Reach out to security@kernel.sh to request it.
+
+Next steps
+
+We are committed to the security of our customers and safeguarding the data they trust us with. In the wake of this incident, we are doing the following:
+
+Product Security
+
+Increasing adoption of
+scoped API keys
+across our customers
+
+Improving network control for usage of API keys
+
+Improving API key rotation mechanisms
+
+Detection and response
+
+Bolstering our Security Information and Event Management (SIEM) with detection and threat intelligence from this specific threat actor
+
+Investing in dynamic blocking rules to target emerging and fast-moving threat actors
+
+Protecting your browser sessions and the credentials inside them is central to the work we do for you. If you need more details, contact us at support@kernel.sh. You can also read more about our
+security
+and
+compliance
+postures.
+
+more blog posts
+
+view all
+
+Building for the Internet's trillionth user
+
+News
+
+trusted by regulated workflows, KERNEL is now ISO 27001 certified
+
+News
+
+Cloudflare & Kernel: Web Bot Auth for AI agents on the internet
+
+News
+
+legal
+
+It's too early for this
+— Pulitzer Prize–winning
+Terms
+, and a distinguished non-fiction read about
+Privacy
+.
+
+soc2
+hipaa
+
+follow
+
+Built in public on
+GitHub
+, debated on
+Discord
+, curated on
+LinkedIn
+, and occasionally broadcast on
+Twitter
+X
+.
+
+articles
+
+loading articles...
+
+articles
+
+loading articles...
+
+follow
+
+Built in public on
+GitHub
+, debated on
+Discord
+, curated on
+LinkedIn
+, and occasionally broadcast on
+Twitter
+X
+.
+
+legal
+
+It's too early for this
+— Pulitzer Prize–winning
+Terms
+, and a distinguished non-fiction read about
+Privacy
+.
+
+soc2
+hipaa
+
+platform
+
+browsers
+pricing
+startups
+status
+
+solutions
+
+e-commerce
+gtm
+healthcare
+qa
+
+developers
+
+ai library
+benchmarks
+changelog
+docs
+oss
+
+company
+
+blog
+brand
+careers
+customers
+security
+
+© 2026 kernel

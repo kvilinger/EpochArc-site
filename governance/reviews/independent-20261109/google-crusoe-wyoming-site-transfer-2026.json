@@ -1,0 +1,182 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-crusoe-wyoming-site-transfer-2026",
+  "inputSubjectDigest": "10de0ec90c1e032a5dbc48c88fe226caf4218d9d7990d81f88177758a93790d4",
+  "subjectDigest": "72400c56e4784d1276c76ddb86dab6d6fcea2d153a25062263e5471f5fa7b25f",
+  "inputsDigest": "351dd78076b10afcd8015a73b6d008bc3194821c2e7b9028e6b854bf3ce19787",
+  "evidenceCutoff": "2026-11-09",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini-request:1a5c0ef0f815",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "pi-cli-ephemeral-request:1a5c0ef0f815",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-09",
+  "candidateId": "nov09-wyoming",
+  "runDigest": "71dc2104ea02076f6be17d41c98f291b7e13d4d19dfbd009b80317439bfc3ecf",
+  "coreFactClaimIds": [
+    "site"
+  ],
+  "identity": {
+    "seriesId": "google-crusoe-wyoming-campus",
+    "action": "disclose completed site acquisition",
+    "stage": "completed",
+    "dateBasis": "Crusoe Nov6 disclosure; Google plan Nov5; construction and payment not inferred",
+    "decision": "new",
+    "comparedEventIds": [
+      "crusoe-series-f-2026",
+      "google-oracle-tpu-oci-2026"
+    ],
+    "deduplicationReason": "Compared dated action, actor and accomplished stage against two published records; earlier hosted gateway, app voice rollout and future weight access are not equated with this release."
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "Dated action disclose completed site acquisition at stage completed justifies commerce without inferring projected outcomes."
+  },
+  "significance": {
+    "rationale": "B-graded dated disclosure or artifact supports a bounded L1; no complete L2 rule is established by quoted evidence.",
+    "whyNotHigher": "No independent external production-scale adoption, all-local-result certifications, replicable capability breakthrough or downstream structural effects establish an applicable higher threshold.",
+    "whyNotLower": "Dated action and actor are separately documented and compared against two already published records.",
+    "comparisonEventIds": [
+      "crusoe-series-f-2026",
+      "google-oracle-tpu-oci-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": true,
+            "rationale": "A directly described access, workflow or completed land-transfer stage supports this single criterion, without satisfying independent scale requirements.",
+            "evidenceIds": [
+              "google-crusoe-wyoming-site-transfer-2026-quote-1",
+              "google-crusoe-wyoming-site-transfer-2026-quote-2",
+              "google-crusoe-wyoming-site-transfer-2026-quote-3",
+              "google-crusoe-wyoming-site-transfer-2026-quote-4"
+            ]
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "No captured independently verifiable completion of external_actors_affected; unknown, not asserted false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Downstream use, economic effect or consensus has not been independently established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separately evidenced dispute confirmed within bounded sources; this does not assert universal absence.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent model packet explicitly evaluated both English and Simplified Chinese, dates and caveats; unreviewed remote pages are not treated as accessed."
+  },
+  "limitations": [
+    "Search covers Nov2–9 through partial-day Nov9 and cannot establish exhaustive discovery; Reddit post bodies were absent, X public index only supplied leads, and HF Nov9 daily returned HTTP400.",
+    "Original-source excerpts and their local hashes establish quote provenance within this packet, not independent truth of vendor performance or first public download time.",
+    "For Ballotpedia this is a Nov6 reported vote tally, not individually certified results or 40 binding statutes; for Kimi Nov4 is the day attributed by a Nov5 report, not reconstructed download logs.",
+    "Some original OpenAI articles returned HTTP403; social first-party statement, system card and API listing are scoped to accessible text.",
+    "Gemini read-only assessment and its PASS run audit do not supply human approval or authorise publication.",
+    "Exact independent-review input: review/GEMINI_FROZEN_1.md SHA256 75395ef1c7b2b5c0063550d5d7a3db49bcb55cc86c0bf3cda7bae5015722a649; result: review/GEMINI_1_RAW.md SHA256 65355419671ea95f57d19f2dae93843c3b4b44f18d82c9a894379a78e9a3196f; successful request ID 1a5c0ef0f815.",
+    "Run audit input: review/GEMINI_RUN_AUDIT_INPUT.md SHA256 5fd2917bb9ef02aab0fa6d8dcf8c02145789b8d2a9fb93196786d191c7ace178; PASS raw: review/GEMINI_RUN_AUDIT_RAW.md SHA256 9f89c3bcb9995bdd68f6fffcd30f9f039cb9ca3521701079fd92c5c46789f984.",
+    "Proposed publishedAt is not actual release; exact human approval and deployment validation remain necessary."
+  ],
+  "evidence": [
+    {
+      "id": "google-crusoe-wyoming-site-transfer-2026-quote-1",
+      "sourceId": "nov09-wyoming-crusoe",
+      "claimId": "site",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "originId": "crusoe-wyoming-site-transfer",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "November 6, 2026",
+      "locator": "Crusoe Announces Wyoming Data Center Campus Update exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/crusoe-wyoming.txt",
+      "sha256": "7112f685aefba9605ea120a8fa16c5050b493ed8e37cd2158878a21788a08783"
+    },
+    {
+      "id": "google-crusoe-wyoming-site-transfer-2026-quote-2",
+      "sourceId": "nov09-wyoming-crusoe",
+      "claimId": "site",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "originId": "crusoe-wyoming-site-transfer",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "its site in southeast Wyoming has been acquired by Google.",
+      "locator": "Crusoe Announces Wyoming Data Center Campus Update exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/crusoe-wyoming.txt",
+      "sha256": "7112f685aefba9605ea120a8fa16c5050b493ed8e37cd2158878a21788a08783"
+    },
+    {
+      "id": "google-crusoe-wyoming-site-transfer-2026-quote-3",
+      "sourceId": "nov09-wyoming-google",
+      "claimId": "site",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "originId": "google-wyoming-data-center-announcement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Nov 05, 2026",
+      "locator": "Investing in Wyoming’s infrastructure, energy and workforce exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/google-wyoming-official.txt",
+      "sha256": "5a5c861c9b6c12c156ee7659348b63b885e4ef51a3141194df6382f988703419"
+    },
+    {
+      "id": "google-crusoe-wyoming-site-transfer-2026-quote-4",
+      "sourceId": "nov09-wyoming-google",
+      "claimId": "site",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "originId": "google-wyoming-data-center-announcement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "long-term, $17 billion investment",
+      "locator": "Investing in Wyoming’s infrastructure, energy and workforce exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/google-wyoming-official.txt",
+      "sha256": "5a5c861c9b6c12c156ee7659348b63b885e4ef51a3141194df6382f988703419"
+    },
+    {
+      "id": "google-crusoe-wyoming-site-transfer-2026-quote-5",
+      "sourceId": "nov09-wyoming-crusoe",
+      "claimId": "site-limits",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "originId": "crusoe-wyoming-site-transfer",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "set up the Wyoming project for construction and eventual operation",
+      "locator": "Crusoe Announces Wyoming Data Center Campus Update exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/crusoe-wyoming.txt",
+      "sha256": "7112f685aefba9605ea120a8fa16c5050b493ed8e37cd2158878a21788a08783"
+    },
+    {
+      "id": "google-crusoe-wyoming-site-transfer-2026-quote-6",
+      "sourceId": "nov09-wyoming-google",
+      "claimId": "site-limits",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "originId": "google-wyoming-data-center-announcement",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We expect this project to generate hundreds of millions of dollars",
+      "locator": "Investing in Wyoming’s infrastructure, energy and workforce exact passage",
+      "artifact": "governance/evidence/2026-11-09/direct/google-wyoming-official.txt",
+      "sha256": "5a5c861c9b6c12c156ee7659348b63b885e4ef51a3141194df6382f988703419"
+    }
+  ]
+}

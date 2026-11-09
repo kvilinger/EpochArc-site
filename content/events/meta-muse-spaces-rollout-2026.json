@@ -1,0 +1,112 @@
+{
+  "id": "meta-muse-spaces-rollout-2026",
+  "slug": "meta-muse-spaces-rollout-2026",
+  "date": "2026-11-06",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-06",
+    "zhHans": "2026年11月6日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Meta adds customizable spaces to the Muse app",
+    "zhHans": "Meta 为 Muse 应用增加可自定义的 Spaces"
+  },
+  "searchSummary": {
+    "en": "Meta said on November 6 that Muse users could create personalized spaces through descriptions; outside usage has not been measured.",
+    "zhHans": "Meta 于 11 月 6 日称 Muse 用户可通过描述创建个性化 Spaces；外部使用规模尚无测量。"
+  },
+  "summary": {
+    "en": "Meta announced Spaces in Muse on November 6: users can describe and rearrange personalized app experiences such as planners or trackers. Meta said Spaces were available wherever Muse itself was available. A separate report describes the launch but does not independently test background updating or adoption. This action is distinct from the November 5 voice and avatar rollout; shared workspaces and broader collaboration remain future exploration.",
+    "zhHans": "Meta 于 11 月 6 日宣布 Muse 应用的 Spaces 功能：用户可通过文字描述创建日程或追踪工具等个性化界面，并调整其位置。Meta 称该功能在 Muse 已提供服务的地区可用。另一篇报道描述了发布，但没有独立测试后台更新或采用规模。这与 11 月 5 日的语音和动态形象推送不同；共享空间与更广泛的协作仍属未来探索。"
+  },
+  "narrative": {
+    "en": "The dated action is a consumer customization feature, not a new foundation model, proof that every user has built a space or evidence that merchants already benefit from it. Vendor examples are possibilities, not measured outcomes.",
+    "zhHans": "事件是消费应用自定义功能的发布，不是新的基础模型，也不证明每位用户都已创建空间或商家已有实际收益。厂商举例属于可能用途，并非已测量的成效。"
+  },
+  "claims": [
+    {
+      "id": "spaces",
+      "claimType": "fact",
+      "text": {
+        "en": "Meta announced on November 6 that Spaces could be created and used wherever the Muse app was available.",
+        "zhHans": "Meta 于 11 月 6 日宣布，用户可创建 Spaces，服务范围限于 Muse 应用已开放的地区。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "nov09-meta-spaces",
+        "nov09-meta-report"
+      ]
+    },
+    {
+      "id": "spaces-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "Shared Spaces are only being explored; there is no independently measured uptake or verified background-update reliability here.",
+        "zhHans": "共享 Spaces 仍处探索阶段；本轮未取得独立测量的采用量或已验证的后台更新可靠性。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "nov09-meta-spaces"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "meta-muse-personal-agent-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-09",
+    "updatedAt": "2026-11-09",
+    "lastSourceCheckAt": "2026-11-09",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+    "changeLog": [
+      {
+        "date": "2026-11-09",
+        "changeType": "created",
+        "summary": "Created isolated bilingual candidate from Nov6–Nov9 incremental discovery."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Proposed precise publication state for human authorization only."
+      }
+    ],
+    "reviewedAt": "2026-11-09",
+    "reviewer": "gemini-request:1a5c0ef0f815",
+    "reviewRecord": "governance/reviews/independent-20261109/meta-muse-spaces-rollout-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-09"
+  },
+  "sources": [
+    {
+      "sourceId": "nov09-meta-spaces",
+      "supports": [
+        "meta-muse-spaces-rollout-2026",
+        "spaces",
+        "spaces-limits"
+      ]
+    },
+    {
+      "sourceId": "nov09-meta-report",
+      "supports": [
+        "meta-muse-spaces-rollout-2026",
+        "spaces"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+Hy4 - API Pricing & Benchmarks | OpenRouter
+
+Skip to content
+
+Alpha
+
+Search
+⌘
+K
+
+Dashboard
+
+Models
+Benchmarks
+Chat
+Chat
+Rankings
+Apps
+Ori
+Pricing
+Docs
+
+Models
+
+Rankings
+
+Ori
+
+Docs
+Chat
+Chat
+Pricing
+
+Sign Up
+
+Talk to sales
+Sign in
+Sign up
+
+Sign Up
+
+Footer
+
+© 2026 OpenRouter, Inc
+
+Product
+
+Chat
+
+Rankings
+
+Benchmarks
+
+Apps
+
+Discover
+
+Models
+
+Ori
+
+Collections
+
+Providers
+
+Tools
+
+Pricing
+
+Business
+
+Enterprise
+
+Labs
+
+Company
+
+About
+
+Blog
+
+Customers
+
+Careers
+
+Hiring
+
+Privacy
+
+Terms of Service
+
+Trust Center
+
+Support
+
+Works With OR
+
+Data
+
+Brand
+
+Developer
+
+Documentation
+
+API Reference
+
+Developer Platform
+
+Status
+
+AI Site Map
+
+Connect
+
+Discord
+
+GitHub
+
+LinkedIn
+
+X
+
+YouTube
+
+Sign Up
+
+Sign up
+
+Sign Up
+
+Tencent: Hy4
+
+tencent
+/
+hy4
+
+Model weights
+
+Compare
+API
+Try this model
+
+The official release of Hy4 delivers comprehensive and substantial improvements over Hy4 Preview, with particularly strong gains in agentic capabilities and performance across a wide range of long-horizon, real-world productivity tasks. It also introduces visual understanding for the first time.
+
+Modalities
+
+In / out price
+
+50%
+off
+
+$0.417 / $1.251
+per 1M
+
+Context
+
+1.0M
+
+Released
+
+Nov 4, 2026
+
+Tencent: Hy4
+
+Compare
+API
+Try this model
+
+Providers
+Pricing
+Performance
+Uptime
+Benchmarks
+Apps
+Activity
+FAQ
+Explore
+
+Providers
+
+Providers
+
+This model is hosted by one provider. OpenRouter forwards every request to it directly — no routing decisions to make.
+
+Pricing
+
+The average price customers actually pay for this model, next to the prices providers post. Caching and discounts mean the price actually paid is often well below the listed one.
+
+Performance
+
+Throughput is how fast the model writes (tokens per second — higher is better). Latency is total round-trip time (lower is better). TTFT is time-to-first-token — how long before you see anything appear (lower is better).
+
+Uptime
+
+Uptime is the percentage of the past 3 days that at least one provider was responding to requests. Availability is the percentage of time that inference was successfully served. OpenRouter continuously monitors and uses the next-best provider when one returns an error.
+
+Benchmarks
+
+Scores on standardized evaluations and this model’s own outputs on shared benchmark prompts. Higher percentages are better — and each rank shows where this model lands among the models evaluated on that source.
+
+Benchmark score summary for
+Tencent: Hy4
+(
+Artificial Analysis, Design Arena and Vals AI
+)
+Source
+Benchmark
+Score
+Artificial Analysis
+Tencent Hy4 Intelligence Index
+34.6
+Artificial Analysis
+Tencent Hy4 AA-Omniscience Accuracy
+50.0%
+Artificial Analysis
+Tencent Hy4 AA-Omniscience Non-Hallucination Rate
+10.9%
+Design Arena
+Hy4 Models Arena Website Elo
+1243
+Vals AI
+Hy4 EMB v1.1
+66.2%
+Vals AI
+Hy4 Finance Agent v2.1
+64.7%
+Vals AI
+Hy4 Vals Finance Index
+58.1%
+Vals AI
+Hy4 HLAB-Vals-1.1
+12.5%
+Vals AI
+Hy4 Vals Legal Index
+70.6%
+Vals AI
+Hy4 Legal Research Bench
+41.3%
+Vals AI
+Hy4 Tax Agent Bench
+34.4%
+Vals AI
+Hy4 Terminal-Bench 4.0
+39.4%
+Vals AI
+Hy4 Vals Index
+59.4%
+Vals AI
+Hy4 Vibe Code Bench v1.1
+81.0%
+
+Apps
+
+Public apps that send the most traffic to this model. Good signal for what real production workloads look like — and a hint at which use cases this model is best suited for.
+
+Activity
+
+Token volume and request traffic to this model over time.
+
+API
+
+Drop-in code to call this model. OpenRouter's API is OpenAI-compatible — most SDKs work by just swapping the base URL. The only thing that changes between models is the model slug below.
+
+Not currently available through EU in-region routing.
+In-region routing docs
+
+Explore more models
+
+AI Models with Vision: Multimodal LLMs for Image Understanding
+Collection
+AI Model Rankings
+Ranking
+
+Reasoning effort
+
+Latency / throughput
+
+P50
+P75
+P90
+P95
+P99
+
+Provider
+Input
+/M
+Output
+/M
+Cache read
+/M
+Latency
+Throughput
+Uptime
+
+Tencent Cloud
+
+50% off
+
+$0.834
+$0.417
+$2.501
+$1.251
+$0.042
+$0.021
+3.14
+s
+56
+tok/s
+
+100.00%
+
+Filters
+
+Provider
+Input / Output /M
+
+50% off
+Throughput
+Uptime
+
+Tencent Cloud
+
+Input
+$0.417
+/
+Output
+$1.251
+
+50% off
+
+Throughput
+56 tok/s
+Uptime
+100.00%
+
+Throughput
+
+56
+tok/s
+
+P50
+, best across providers
+
+Latency
+
+3.14
+s
+
+P50
+, best provider
+
+3D
+Location
+Filters
+
+All locations
+
+Reasoning effort
+All
+3 days
+
+Uptime (3d)
+The model was reachable. Request routed to a provider.
+
+99.99%
+
+Availability (3d)
+The model returned inference from any provider. Errors and empty responses count against it.
+
+99.89%
+
+Availability over the last 3 days
+
+Last 72 hours
+
+Availability 99.89%
+
+3 Days Ago
+2 Days Ago
+Yesterday
+Now
+
+Availability over the last 24 hours
+
+OpenRouter Availability
+
+99.86%
+
+When an error occurs in an upstream provider, we can recover by routing to another healthy provider, if your request filters allow it. You can access per-provider uptime data programmatically through the
+Endpoints API
+. Learn more about our
+load balancing and provider routing options
+.
+
+1
+.
+
+Claude Code
+
+Claude Code is Anthropic's agentic coding tool that reads your entire codebase, plans and executes changes across files, runs tests, and iterates on failures, all from natural language prompts.
+
+35.4B
+tokens
+
+2
+.
+
+Strix
+
+Open-source AI hackers that find and validate vulnerabilities in your code, APIs, and infrastructure, and open fix PRs.
+
+14.3B
+tokens
+
+3
+.
+
+Hermes Agent
+
+Hermes Agent is an open-source, self-improving AI agent by Nous Research that runs persistently with memory across sessions, and builds reusable skills from experience. It comes with 40+ built-in tools, including web search, browser automation, and vision, plus scheduled automations and subagents.
+
+5.06B
+tokens
+
+4
+.
+
+DeepSeek Harness
+
+new
+
+4.77B
+tokens
+
+5
+.
+
+pi
+
+There are many coding agents, but this one is yours.
+
+4.12B
+tokens
+
+Rest of OpenRouter
+
+2.01T
+
+Top 5 Apps
+
+31.7B
+
+Frequently asked questions
+
+What is Hy4?
+
+The official release of Hy4 delivers comprehensive and substantial improvements over Hy4 Preview, with particularly strong gains in agentic capabilities and performance across a wide range of long-horizon, real-world productivity tasks. It also introduces visual understanding for the first time.
+
+How much does Hy4 cost?
+
+Hy4 costs $0.417/M input tokens and $1.251/M output tokens, with separate rates for Cache Read at $0.021/M tokens.
+
+What is the context length of Hy4?
+
+Hy4 has a 1,048,576 token context window. It supports up to 65,536 completion tokens.
+
+Does Hy4 support tool calling and structured outputs?
+
+Yes. Hy4 accepts
+tools
+and
+tool_choice
+for function calling. It also supports structured outputs via a JSON schema in
+response_format
+.
+
+What inputs and outputs does Hy4 support?
+
+Hy4 accepts text and images as input and returns text.
+
+What other text models does Tencent have?
+
+Hy4 preview
+,
+Hy-MT2-1.8B
+,
+Hy-MT2-30B-A3B
+and 4 more are other text models from Tencent.
+
+When was Hy4 released?
+
+Hy4 was released on November 4, 2026.
+
+More models from
+tencent
+
+Hy Image 3.5 Preview
+
+Hy Image 3.5 Preview is a unified image generation and editing model from Tencent. It handles text-to-image, image-to-image, and multi-turn editing through one endpoint, taking up to 20 reference images per request and producing output up to 4K. Built on the 80B mixture-of-experts Hy Image 3.0 base, it is particularly strong at subject consistency across edits, prompt-faithful composition, and rendering Chinese and English text inside images.
+
+Image
+$1.60/M tokens
+
+Hy4 preview
+
+Tencent: Hy4 preview is a mixture-of-experts model from Tencent, with 49B active parameters out of 770B total. It is designed for coding agents, complex tool-use workflows, and productivity tasks that require planning, context continuity, and sustained multi-step execution.
+
+Text
+1.0M context
+$0.834 / $2.501
+
+Hy-MT2-1.8B
+
+Hy-MT2-1.8B is a compact 1.8B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation.
+
+Text
+8K context
+$0.044 / $0.177
+
+Hy-MT2-30B-A3B
+
+Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation. It uses 3B active parameters out of 30B total.
+
+Text
+8K context
+$0.074 / $0.295
+
+Hy-MT2-7B
+
+Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation.
+
+Text
+8K context
+$0.074 / $0.295
+
+Hy3
+
+Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent (21B active, 192 experts with top-8 routing) built for reasoning, agentic workflows, and real-world production use. It supports a configurable reasoning effort: a direct no-think mode by default, plus low and high chain-of-thought modes for complex math, coding, and multi-step problems. With a 256K context window, Hy3 targets long-horizon tasks, including improved coreference resolution, multi-turn constraint tracking, and stable tool-calling that generalizes across agent scaffoldings.
+
+Tencent positions it as a reliable, cost-effective option across coding, document processing, financial analysis, game development, and frontend design, with a strong emphasis on grounded, anti-hallucination behavior that answers when grounded and flags when evidence is missing rather than fabricating.
+
+Text
+262K context
+$0.132 / $0.528
+
+Hy3 preview
+
+Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to balance speed and depth depending on the task, while delivering strong code generation and reliable performance across multi-step, real-world workflows.
+
+Text
+262K context
+$0.18 / $0.60
+
+Hunyuan A13B Instruct
+
+Hunyuan-A13B is a 13B active parameter Mixture-of-Experts (MoE) language model developed by Tencent, with a total parameter count of 80B and support for reasoning via Chain-of-Thought. It offers competitive benchmark performance across mathematics, science, coding, and multi-turn reasoning tasks, while maintaining high inference efficiency via Grouped Query Attention (GQA) and quantization support (FP8, GPTQ, etc.).
+
+Text
+131K context
+$0.14 / $0.57
+
+Previous slide
+Next slide

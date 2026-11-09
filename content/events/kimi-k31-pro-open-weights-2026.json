@@ -1,0 +1,128 @@
+{
+  "id": "kimi-k31-pro-open-weights-2026",
+  "slug": "kimi-k31-pro-open-weights-2026",
+  "date": "2026-11-04",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-04",
+    "zhHans": "2026年11月4日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Moonshot makes Kimi K3.1 Pro weight files public",
+    "zhHans": "月之暗面公开 Kimi K3.1 Pro 权重文件"
+  },
+  "searchSummary": {
+    "en": "An independent November 5 report dates open-weight availability to November 4; public Hugging Face files confirm the later weight stage.",
+    "zhHans": "11 月 5 日的独立报道将权重可用日期指向 11 月 4 日；Hugging Face 公开文件确认了后续权重阶段。"
+  },
+  "summary": {
+    "en": "Europa Press reported on November 5 that Moonshot’s Kimi K3.1 Pro weights had become available on Hugging Face the preceding Wednesday, November 4. The public Moonshot repository now contains a model card, license and 96 weight shards. Repository creation on November 2 does not prove when the files first became publicly downloadable. The model-specific license requires an additional commercial agreement for Model-as-a-Service businesses above US$20 million in rolling annual revenue; company benchmark numbers are not independently reproduced here. This is distinct from Vercel’s October 23 hosted gateway access.",
+    "zhHans": "Europa Press 于 11 月 5 日报道，月之暗面的 Kimi K3.1 Pro 权重已在前一天（11 月 4 日，星期三）于 Hugging Face 可用。公开仓库现有模型卡、许可和 96 个权重分片。仓库于 11 月 2 日创建，不能证明文件从何时起可供公众下载。专用许可规定，过去连续 12 个月合计收入超过 2000 万美元的模型即服务企业须另签商业协议；本轮未独立复现厂商跑分。这与 Vercel 于 10 月 23 日提供托管网关访问是不同阶段。"
+  },
+  "narrative": {
+    "en": "November 4 is the date attributed by Europa Press, not independently reconstructed from first-download logs. Hugging Face corroborates present file availability. The license is not an unrestricted MIT grant for all commercial hosting; published weight shards are not proof of external deployment or benchmark leadership.",
+    "zhHans": "11 月 4 日依据 Europa Press 报道，而非通过首次下载日志独立还原。Hugging Face 证实当前文件可获取。该许可并非对所有商业托管一概适用的不受限 MIT 授权；权重分片存在也不能证明外部部署或跑分领先。"
+  },
+  "claims": [
+    {
+      "id": "kimi-weights",
+      "claimType": "fact",
+      "text": {
+        "en": "Europa Press dated the Kimi K3.1 Pro weight availability to November 4; public model files and license confirm a weight stage distinct from October hosted access.",
+        "zhHans": "Europa Press 将 Kimi K3.1 Pro 权重可用日期指向 11 月 4 日；公开模型文件与许可确认这是区别于 10 月托管访问的权重阶段。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "nov09-kimi-ep",
+        "nov09-kimi-card",
+        "nov09-kimi-api"
+      ]
+    },
+    {
+      "id": "kimi-license-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "The model-specific license requires certain Model-as-a-Service businesses with more than US$20 million of rolling annual revenue to obtain a separate commercial agreement; the first public download minute is unknown.",
+        "zhHans": "专用许可要求过去连续 12 个月收入超过 2000 万美元的部分模型即服务企业另签商业协议；首次公开下载的具体时间不明。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "nov09-kimi-license",
+        "nov09-kimi-api"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "kimi-k31-pro-hosted-api-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-09",
+    "updatedAt": "2026-11-09",
+    "lastSourceCheckAt": "2026-11-09",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+    "changeLog": [
+      {
+        "date": "2026-11-09",
+        "changeType": "created",
+        "summary": "Created isolated bilingual candidate from Nov6–Nov9 incremental discovery."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Proposed precise publication state for human authorization only."
+      }
+    ],
+    "reviewedAt": "2026-11-09",
+    "reviewer": "gemini-request:d840910051ec",
+    "reviewRecord": "governance/reviews/independent-20261109/kimi-k31-pro-open-weights-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-09"
+  },
+  "sources": [
+    {
+      "sourceId": "nov09-kimi-ep",
+      "supports": [
+        "kimi-k31-pro-open-weights-2026",
+        "kimi-weights"
+      ]
+    },
+    {
+      "sourceId": "nov09-kimi-card",
+      "supports": [
+        "kimi-k31-pro-open-weights-2026",
+        "kimi-weights"
+      ]
+    },
+    {
+      "sourceId": "nov09-kimi-api",
+      "supports": [
+        "kimi-k31-pro-open-weights-2026",
+        "kimi-weights",
+        "kimi-license-limits"
+      ]
+    },
+    {
+      "sourceId": "nov09-kimi-license",
+      "supports": [
+        "kimi-k31-pro-open-weights-2026",
+        "kimi-license-limits"
+      ]
+    }
+  ]
+}

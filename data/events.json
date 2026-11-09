@@ -1050,6 +1050,124 @@
     ]
   },
   {
+    "id": "allenai-toyblocks-dataset-release-2026",
+    "slug": "allenai-toyblocks-dataset-release-2026",
+    "date": "2026-11-06",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-06",
+      "zhHans": "2026年11月6日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "AllenAI publishes ToyBlocks robotics demonstration data",
+      "zhHans": "AllenAI 发布 ToyBlocks 机器人演示数据"
+    },
+    "searchSummary": {
+      "en": "AllenAI’s November 6 report describes an initial ToyBlocks dataset; Hugging Face lists the public dataset, not proof of external training outcomes.",
+      "zhHans": "AllenAI 于 11 月 6 日介绍首批 ToyBlocks 数据；Hugging Face 列出公开数据集，但这不证明外部训练成效。"
+    },
+    "summary": {
+      "en": "An AllenAI article dated November 6 describes the initial ToyBlocks simulated robotics dataset as 85,336 long-horizon demonstrations covering nearly 1,600 hours. A public Hugging Face dataset listing and card show available data artifacts and an ODC-BY license. These scale figures are author-reported, not independently audited. A larger second dataset and integrated reinforcement-learning training were presented as future work, not available in the initial package.",
+      "zhHans": "AllenAI 日期为 11 月 6 日的文章称，首批 ToyBlocks 模拟机器人数据包含 85,336 条长任务演示、接近 1,600 小时。Hugging Face 的公开数据集列表及说明卡显示数据文件可获取，并标注 ODC-BY 许可。规模数字由发布方提供，并未独立审计。更大规模的第二批数据和集成强化学习训练属于后续计划，不在首批交付范围内。"
+    },
+    "narrative": {
+      "en": "This is an accessible research-data release, not a claim that real-world robot skills improved or a second release already occurred. The repository was created November 5; the dated public article is November 6, and first public download is not known.",
+      "zhHans": "节点记录研究数据可获取，不声称真实机器人技能已提升或第二批数据已发布。仓库创建于 11 月 5 日，公开文章日期为 11 月 6 日，首次对外下载时间仍未知。"
+    },
+    "claims": [
+      {
+        "id": "toy-release",
+        "claimType": "fact",
+        "text": {
+          "en": "AllenAI published a November 6 ToyBlocks data-release account, and Hugging Face lists the public dataset; the stated 85,336 demonstrations are provider-reported.",
+          "zhHans": "AllenAI 于 11 月 6 日发表 ToyBlocks 数据发布说明，Hugging Face 列出公开数据集；85,336 条演示的数字来自发布方。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-toy-blog",
+          "nov09-toy-api",
+          "nov09-toy-card"
+        ]
+      },
+      {
+        "id": "toy-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "AllenAI described larger-scale data and integrated RL training as future additions; no independent performance gain is established by the current dataset.",
+          "zhHans": "AllenAI 将更大规模数据和集成强化学习训练列为未来补充；当前数据集不证明性能增益已获独立验证。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-toy-blog"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-09",
+          "changeType": "created",
+          "summary": "Created isolated bilingual candidate from Nov6–Nov9 incremental discovery."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:d840910051ec",
+      "reviewRecord": "governance/reviews/independent-20261109/allenai-toyblocks-dataset-release-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "nov09-toy-blog",
+        "supports": [
+          "allenai-toyblocks-dataset-release-2026",
+          "toy-release",
+          "toy-limits"
+        ]
+      },
+      {
+        "sourceId": "nov09-toy-api",
+        "supports": [
+          "allenai-toyblocks-dataset-release-2026",
+          "toy-release"
+        ]
+      },
+      {
+        "sourceId": "nov09-toy-card",
+        "supports": [
+          "allenai-toyblocks-dataset-release-2026",
+          "toy-release"
+        ]
+      }
+    ]
+  },
+  {
     "id": "alphaevolve-2025",
     "slug": "alphaevolve-2025",
     "title": {
@@ -4260,6 +4378,132 @@
     "impactIndex": 5
   },
   {
+    "id": "baidu-ernie-55-flash-base-weights-2026",
+    "slug": "baidu-ernie-55-flash-base-weights-2026",
+    "date": "2026-11-05",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-05",
+      "zhHans": "2026年11月5日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Baidu publishes ERNIE 5.5 Flash Base pretraining weights",
+      "zhHans": "百度发布文心 ERNIE 5.5 Flash Base 预训练权重"
+    },
+    "searchSummary": {
+      "en": "Baidu’s public repository contains pretrained weights, with a November 5 license date and territorial and commercial-use restrictions.",
+      "zhHans": "百度公开仓库含预训练权重，许可文件注明 11 月 5 日并附有地域与商业使用限制。"
+    },
+    "summary": {
+      "en": "Baidu’s ERNIE 5.5 Flash Base model card offers pretrained base-model weights and describes 280 billion total parameters and 14 billion active per token. Its model license is dated November 5, the same day a Chinese technology report described the release; the repository itself was created October 21, so its first public-download time is not established. The custom license excludes the EU, UK and South Korea from its territory and requires written authorization above US$50 million in related rolling annual revenue. This is not an unrestricted Apache or MIT release, and Baidu’s benchmark comparisons were not independently reproduced here.",
+      "zhHans": "百度的 ERNIE 5.5 Flash Base 模型卡提供预训练基座权重，列出总参数 2800 亿、每 token 激活 140 亿。其专用许可注明 11 月 5 日，中文科技报道也在同日记录发布；仓库创建于 10 月 21 日，不能据此推定首次公开下载时间。许可适用地域不包括欧盟、英国和韩国；相关产品或服务过去连续 12 个月收入超过 5000 万美元时，商业使用须取得书面授权。这不是不受限制的 Apache 或 MIT 发布，本轮也未独立复现百度的跑分比较。"
+    },
+    "narrative": {
+      "en": "November 5 is the license and report disclosure date rather than a proven first download. The model is a base checkpoint before mid- or post-training, not a chat model with demonstrated production uptake. Revenue thresholds apply to related products or services, not the company’s market valuation.",
+      "zhHans": "11 月 5 日是许可和报道的日期，不能证明首次下载发生在当天。这是中训练或后训练之前的基座检查点，不是已证实生产采用的聊天模型。收入门槛针对相关产品或服务，而非公司估值。"
+    },
+    "claims": [
+      {
+        "id": "baidu-weights",
+        "claimType": "fact",
+        "text": {
+          "en": "The publicly listed ERNIE 5.5 Flash Base repository includes weight files; its November 5 license and contemporaneous report date the disclosed release, not the first download.",
+          "zhHans": "公开的 ERNIE 5.5 Flash Base 仓库包含权重文件；11 月 5 日许可及同期报道对应发布披露，并非首次下载时间。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-baidu-card",
+          "nov09-baidu-license",
+          "nov09-baidu-api",
+          "nov09-baidu-ithome"
+        ]
+      },
+      {
+        "id": "baidu-license-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "The proprietary license excludes the EU, UK and South Korea from its territory and conditions above-threshold commercial use on separate written authorization.",
+          "zhHans": "专用许可的适用地域不含欧盟、英国和韩国；超出指定收入门槛的商业使用须另行取得书面授权。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-baidu-license"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-09",
+          "changeType": "created",
+          "summary": "Created isolated bilingual candidate from Nov6–Nov9 incremental discovery."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:d840910051ec",
+      "reviewRecord": "governance/reviews/independent-20261109/baidu-ernie-55-flash-base-weights-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "nov09-baidu-card",
+        "supports": [
+          "baidu-ernie-55-flash-base-weights-2026",
+          "baidu-weights"
+        ]
+      },
+      {
+        "sourceId": "nov09-baidu-license",
+        "supports": [
+          "baidu-ernie-55-flash-base-weights-2026",
+          "baidu-weights",
+          "baidu-license-limits"
+        ]
+      },
+      {
+        "sourceId": "nov09-baidu-api",
+        "supports": [
+          "baidu-ernie-55-flash-base-weights-2026",
+          "baidu-weights"
+        ]
+      },
+      {
+        "sourceId": "nov09-baidu-ithome",
+        "supports": [
+          "baidu-ernie-55-flash-base-weights-2026",
+          "baidu-weights"
+        ]
+      }
+    ]
+  },
+  {
     "id": "bert-2018",
     "slug": "bert",
     "title": {
@@ -7305,6 +7549,7 @@
       "positron-series-c-2026",
       "zai-proposed-financing-2026",
       "canada-cohere-equity-commitment-2026",
+      "google-crusoe-wyoming-site-transfer-2026",
       "samsung-helix-investment-2026"
     ],
     "editorial": {
@@ -7890,6 +8135,108 @@
     },
     "categories": [
       "capability"
+    ]
+  },
+  {
+    "id": "data-center-local-ballot-tally-2026",
+    "slug": "data-center-local-ballot-tally-2026",
+    "date": "2026-11-06",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-06",
+      "zhHans": "2026年11月6日"
+    },
+    "categories": [
+      "governance"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Ballotpedia reports 40 of 41 local data-center votes favored limits",
+      "zhHans": "Ballotpedia 报告：41 项地方数据中心投票中 40 项倾向限制开发"
+    },
+    "searchSummary": {
+      "en": "Ballotpedia’s November 6 tally says voters favored data-center limits in 40 of 41 November 3 local contests; certification is not established.",
+      "zhHans": "Ballotpedia 于 11 月 6 日统计，11 月 3 日 41 项地方投票中有 40 项倾向限制数据中心开发；尚不能据此认定结果已获认证。"
+    },
+    "summary": {
+      "en": "Ballotpedia reported on November 6 that voters favored limits in 40 of 41 local data-center ballot contests held November 3. Its breakdown counts 27 approvals of restrictive or oppositional measures and 13 rejections of pro-development measures; the lone exception was Harwood, North Dakota. Some votes were advisory rather than binding. This is a published results tally, not evidence that every jurisdiction had certified its final canvass or that every project was cancelled.",
+      "zhHans": "Ballotpedia 于 11 月 6 日报告，在 11 月 3 日举行的 41 项地方数据中心投票中，有 40 项的投票方向倾向限制开发。其分类为：27 项限制或反对开发的提案获通过，13 项支持开发的提案被否决；唯一例外是北达科他州 Harwood。部分投票仅具咨询性质。这是已公布的结果统计，不能证明每个辖区均完成最终认证，也不等于所有项目已经取消。"
+    },
+    "narrative": {
+      "en": "The node is dated November 6, the complete reported tally; election day was November 3. Results originate from Ballotpedia’s own aggregation, not 41 separately checked county certifications. “Favored limits” combines affirmative and negative votes, including non-binding questions, and must not be interpreted as 40 laws enacted.",
+      "zhHans": "节点以 11 月 6 日完整统计的披露日记录；投票发生于 11 月 3 日。结果来自 Ballotpedia 汇总，并非逐一核验了 41 份县级认证。“倾向限制”合并了赞成限制与反对放宽的不同投票，也包括非约束性问题，不能写成 40 部法律已经生效。"
+    },
+    "claims": [
+      {
+        "id": "tally",
+        "claimType": "fact",
+        "text": {
+          "en": "On November 6, Ballotpedia reported that 40 of 41 November 3 local data-center ballot results favored restrictions or opposition.",
+          "zhHans": "Ballotpedia 于 11 月 6 日报告，11 月 3 日 41 项地方数据中心投票中有 40 项的结果倾向限制或反对开发。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-ballot"
+        ]
+      },
+      {
+        "id": "tally-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "The count includes advisory votes; this packet does not establish certification of all 41 local results or enactment of 40 binding laws.",
+          "zhHans": "统计包含咨询性投票；本轮未证明全部 41 项地方结果已完成认证，也不代表 40 部约束性法规已生效。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-ballot"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-09",
+          "changeType": "created",
+          "summary": "Created isolated bilingual candidate from Nov6–Nov9 incremental discovery."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:1a5c0ef0f815",
+      "reviewRecord": "governance/reviews/independent-20261109/data-center-local-ballot-tally-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "nov09-ballot",
+        "supports": [
+          "data-center-local-ballot-tally-2026",
+          "tally",
+          "tally-limits"
+        ]
+      }
     ]
   },
   {
@@ -13937,6 +14284,120 @@
     ]
   },
   {
+    "id": "google-crusoe-wyoming-site-transfer-2026",
+    "slug": "google-crusoe-wyoming-site-transfer-2026",
+    "date": "2026-11-06",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-06",
+      "zhHans": "2026年11月6日"
+    },
+    "categories": [
+      "commerce"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Crusoe says Google acquired its Wyoming data-center site",
+      "zhHans": "Crusoe 称谷歌已收购其怀俄明州数据中心地块"
+    },
+    "searchSummary": {
+      "en": "Crusoe reported a completed Google site acquisition on November 6; Google’s separately announced $17 billion investment is a long-term plan.",
+      "zhHans": "Crusoe 于 11 月 6 日报告谷歌已收购该地块；谷歌另行宣布的 170 亿美元投资是长期计划。"
+    },
+    "summary": {
+      "en": "On November 6, Crusoe announced that Google had acquired its pre-developed Wyoming data-center site. Google’s November 5 article described a long-term $17 billion investment in its first Wyoming data center. The site transfer is a company-reported completed transaction; the full campus, funding and promised power, jobs and carbon-capture work are not established as completed. Both companies are transaction participants, not independent audits of project delivery.",
+      "zhHans": "Crusoe 于 11 月 6 日宣布，谷歌已收购其前期开发的怀俄明州数据中心地块。谷歌 11 月 5 日的文章将当地首座数据中心描述为 170 亿美元的长期投资计划。地块转让是交易方报告的已完成事项；园区建成、资金全部投入以及供电、就业和碳捕集等承诺尚未得到完成验证。两家公司的声明都来自交易参与方，不构成项目落地的独立审计。"
+    },
+    "narrative": {
+      "en": "This is the disclosure of a site transfer, not evidence that Google paid $17 billion or that commercial data-center service has begun. Google announced its investment plan one day earlier; Crusoe’s release is a distinct completed acquisition stage.",
+      "zhHans": "本节点记录地块转让的披露，不证明谷歌已支付 170 亿美元或数据中心已投入商业运营。谷歌一天前宣布投资计划，Crusoe 的公告记录的是不同的地块收购完成阶段。"
+    },
+    "claims": [
+      {
+        "id": "site",
+        "claimType": "fact",
+        "text": {
+          "en": "Crusoe reported on November 6 that Google had acquired its Wyoming site; Google had announced a long-term $17 billion investment plan on November 5.",
+          "zhHans": "Crusoe 于 11 月 6 日报告谷歌已收购其怀俄明州地块；谷歌于 11 月 5 日宣布长期 170 亿美元投资计划。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-wyoming-crusoe",
+          "nov09-wyoming-google"
+        ]
+      },
+      {
+        "id": "site-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "A completed site transfer does not establish that $17 billion was paid, a full data center opened or planned energy and jobs materialized.",
+          "zhHans": "地块转让完成不等于 170 亿美元已经支付、整座数据中心投入运营，或所规划的能源与就业效果已兑现。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-wyoming-crusoe",
+          "nov09-wyoming-google"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "crusoe-series-f-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-09",
+          "changeType": "created",
+          "summary": "Created isolated bilingual candidate from Nov6–Nov9 incremental discovery."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:1a5c0ef0f815",
+      "reviewRecord": "governance/reviews/independent-20261109/google-crusoe-wyoming-site-transfer-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "nov09-wyoming-crusoe",
+        "supports": [
+          "google-crusoe-wyoming-site-transfer-2026",
+          "site",
+          "site-limits"
+        ]
+      },
+      {
+        "sourceId": "nov09-wyoming-google",
+        "supports": [
+          "google-crusoe-wyoming-site-transfer-2026",
+          "site",
+          "site-limits"
+        ]
+      }
+    ]
+  },
+  {
     "id": "google-deepmind-2014",
     "slug": "google-acquires-deepmind",
     "title": {
@@ -14316,6 +14777,129 @@
       ],
       "publishedAt": "2026-10-08"
     }
+  },
+  {
+    "id": "google-gemini-omni-12-flash-ga-2026",
+    "slug": "google-gemini-omni-12-flash-ga-2026",
+    "date": "2026-11-05",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-05",
+      "zhHans": "2026年11月5日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Google makes Gemini Omni 1.2 Flash generally available",
+      "zhHans": "谷歌将 Gemini Omni 1.2 Flash 转为正式可用"
+    },
+    "searchSummary": {
+      "en": "Google announced general availability for Omni 1.2 Flash on November 5, with video generation and editing up to 15 seconds.",
+      "zhHans": "谷歌于 11 月 5 日宣布 Omni 1.2 Flash 正式可用，可生成和编辑最长 15 秒的视频。"
+    },
+    "summary": {
+      "en": "Google said Gemini Omni 1.2 Flash became generally available via the Gemini API and Google Cloud on November 5. The announced maximum video length is 15 seconds, compared with 10 seconds for Omni 1.1. A Google Cloud article dated November 6 repeats general availability. Neither company benchmarks nor promotional user examples establish independently measured quality or broad production adoption.",
+      "zhHans": "谷歌称，Gemini Omni 1.2 Flash 于 11 月 5 日通过 Gemini API 和 Google Cloud 正式可用。公告所列视频时长上限为 15 秒，Omni 1.1 为 10 秒。谷歌云于 11 月 6 日再刊文确认正式可用。厂商跑分和推广案例不能证明画质已获独立验证或大规模生产采用。"
+    },
+    "narrative": {
+      "en": "The November 5 launch date comes from the dated Google announcement; the November 6 cloud post is a subsequent confirmation, not a separate first launch. The 15-second limit is a product specification, not a measured external outcome.",
+      "zhHans": "11 月 5 日依据谷歌带日期的公告；11 月 6 日云平台文章是后续确认，并非另一次首次发布。15 秒是产品规格，不是外部使用成效。"
+    },
+    "claims": [
+      {
+        "id": "availability",
+        "claimType": "fact",
+        "text": {
+          "en": "Google announced general availability of Omni 1.2 Flash via Gemini API and Google Cloud on November 5.",
+          "zhHans": "谷歌于 11 月 5 日宣布 Omni 1.2 Flash 通过 Gemini API 和 Google Cloud 正式可用。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-omni",
+          "new26nov-omni-cloud",
+          "new26nov-omni-report"
+        ]
+      },
+      {
+        "id": "limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "The stated video-generation and editing length is up to 15 seconds; quality and adoption claims are not independently established here.",
+          "zhHans": "公告所列视频生成与编辑时长上限为 15 秒；本轮未独立验证画质或采用规模。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-omni"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-06",
+          "changeType": "created",
+          "summary": "Prepared a bounded bilingual candidate without canonical publication."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "source_added",
+          "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:fbb62d101736",
+      "reviewRecord": "governance/reviews/independent-20261109/google-gemini-omni-12-flash-ga-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "new26nov-omni",
+        "supports": [
+          "google-gemini-omni-12-flash-ga-2026",
+          "availability",
+          "limits"
+        ]
+      },
+      {
+        "sourceId": "new26nov-omni-cloud",
+        "supports": [
+          "google-gemini-omni-12-flash-ga-2026",
+          "availability"
+        ]
+      },
+      {
+        "sourceId": "new26nov-omni-report",
+        "supports": [
+          "google-gemini-omni-12-flash-ga-2026",
+          "availability"
+        ]
+      }
+    ]
   },
   {
     "id": "google-oracle-tpu-oci-2026",
@@ -16803,6 +17387,123 @@
     }
   },
   {
+    "id": "inkling-2-small-tinker-access-2026",
+    "slug": "inkling-2-small-tinker-access-2026",
+    "date": "2026-11-05",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-05",
+      "zhHans": "2026年11月5日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Thinking Machines opens Inkling 2 Small on Tinker, defers weights",
+      "zhHans": "Thinking Machines 在 Tinker 开放 Inkling 2 Small，暂缓发布权重"
+    },
+    "searchSummary": {
+      "en": "Inkling 2 Small became available in Tinker Playground on November 5; downloadable full weights remained contingent on testing.",
+      "zhHans": "Inkling 2 Small 于 11 月 5 日在 Tinker Playground 开放；完整权重下载仍待测试完成。"
+    },
+    "summary": {
+      "en": "Thinking Machines Lab announced Inkling 2 Small on November 5 and said users could try it in Tinker Playground and fine-tune or sample it on Tinker. It planned to release the full weights under Apache 2.0 the following week, after external safety testing and red-teaming. Checkpoints would be downloadable with that future weight release. Neither full weights nor results of external safety work were shown to be public at the cutoff.",
+      "zhHans": "Thinking Machines Lab 于 11 月 5 日宣布 Inkling 2 Small，并称用户可在 Tinker Playground 试用、在 Tinker 上微调或采样。公司计划在完成外部安全测试和红队评估后，于随后一周按 Apache 2.0 许可发布完整权重；检查点也要等到权重发布时才可下载。截至本轮截止时，没有证据表明完整权重或外部安全测试结果已公开。"
+    },
+    "narrative": {
+      "en": "This is hosted access to Inkling 2 Small, a distinct later model stage from the July original Inkling entry, not an open-weight launch of the new model. Internal demonstrations and benchmark charts belong to the developer; independent evaluation of generalized performance and adoption is not in this packet.",
+      "zhHans": "这次是 Inkling 2 Small 的托管访问，属于与 7 月原版 Inkling 条目不同的后续模型阶段，并非新模型的开放权重发布。内部演示与跑分图表出自开发方；本轮没有可支持泛化性能或采用规模的独立评估。"
+    },
+    "claims": [
+      {
+        "id": "access",
+        "claimType": "fact",
+        "text": {
+          "en": "Thinking Machines said Inkling 2 Small was available in Tinker Playground and for sampling and fine-tuning on Tinker on November 5.",
+          "zhHans": "Thinking Machines 称，Inkling 2 Small 于 11 月 5 日可在 Tinker Playground 使用，并可在 Tinker 上采样和微调。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-inkling",
+          "new26nov-inkling-report"
+        ]
+      },
+      {
+        "id": "weight-plan",
+        "claimType": "limitation",
+        "text": {
+          "en": "The lab planned to release full weights and downloadable checkpoints after external testing, not on the hosted-launch date.",
+          "zhHans": "实验室计划在外部测试后发布完整权重及可下载的检查点，而不是在托管服务上线日同时开放。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-inkling"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "thinking-machines-inkling-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-06",
+          "changeType": "created",
+          "summary": "Prepared a bounded bilingual candidate without canonical publication."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "source_added",
+          "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:deb5ceecb764",
+      "reviewRecord": "governance/reviews/independent-20261109/inkling-2-small-tinker-access-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "new26nov-inkling",
+        "supports": [
+          "inkling-2-small-tinker-access-2026",
+          "access",
+          "weight-plan"
+        ]
+      },
+      {
+        "sourceId": "new26nov-inkling-report",
+        "supports": [
+          "inkling-2-small-tinker-access-2026",
+          "access"
+        ]
+      }
+    ]
+  },
+  {
     "id": "kimi-k3-2026",
     "slug": "kimi-k3-2026",
     "title": {
@@ -17103,7 +17804,8 @@
     ],
     "relatedEvents": [
       "kimi-k3-2026",
-      "deepseek-v4-2026"
+      "deepseek-v4-2026",
+      "kimi-k31-pro-open-weights-2026"
     ],
     "displayDate": {
       "en": "2026-10-23",
@@ -17170,6 +17872,134 @@
       "reviewRecord": "governance/reviews/independent-20261029/kimi-k31-pro-hosted-api-2026.json",
       "publishedAt": "2026-10-29"
     }
+  },
+  {
+    "id": "kimi-k31-pro-open-weights-2026",
+    "slug": "kimi-k31-pro-open-weights-2026",
+    "date": "2026-11-04",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-04",
+      "zhHans": "2026年11月4日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Moonshot makes Kimi K3.1 Pro weight files public",
+      "zhHans": "月之暗面公开 Kimi K3.1 Pro 权重文件"
+    },
+    "searchSummary": {
+      "en": "An independent November 5 report dates open-weight availability to November 4; public Hugging Face files confirm the later weight stage.",
+      "zhHans": "11 月 5 日的独立报道将权重可用日期指向 11 月 4 日；Hugging Face 公开文件确认了后续权重阶段。"
+    },
+    "summary": {
+      "en": "Europa Press reported on November 5 that Moonshot’s Kimi K3.1 Pro weights had become available on Hugging Face the preceding Wednesday, November 4. The public Moonshot repository now contains a model card, license and 96 weight shards. Repository creation on November 2 does not prove when the files first became publicly downloadable. The model-specific license requires an additional commercial agreement for Model-as-a-Service businesses above US$20 million in rolling annual revenue; company benchmark numbers are not independently reproduced here. This is distinct from Vercel’s October 23 hosted gateway access.",
+      "zhHans": "Europa Press 于 11 月 5 日报道，月之暗面的 Kimi K3.1 Pro 权重已在前一天（11 月 4 日，星期三）于 Hugging Face 可用。公开仓库现有模型卡、许可和 96 个权重分片。仓库于 11 月 2 日创建，不能证明文件从何时起可供公众下载。专用许可规定，过去连续 12 个月合计收入超过 2000 万美元的模型即服务企业须另签商业协议；本轮未独立复现厂商跑分。这与 Vercel 于 10 月 23 日提供托管网关访问是不同阶段。"
+    },
+    "narrative": {
+      "en": "November 4 is the date attributed by Europa Press, not independently reconstructed from first-download logs. Hugging Face corroborates present file availability. The license is not an unrestricted MIT grant for all commercial hosting; published weight shards are not proof of external deployment or benchmark leadership.",
+      "zhHans": "11 月 4 日依据 Europa Press 报道，而非通过首次下载日志独立还原。Hugging Face 证实当前文件可获取。该许可并非对所有商业托管一概适用的不受限 MIT 授权；权重分片存在也不能证明外部部署或跑分领先。"
+    },
+    "claims": [
+      {
+        "id": "kimi-weights",
+        "claimType": "fact",
+        "text": {
+          "en": "Europa Press dated the Kimi K3.1 Pro weight availability to November 4; public model files and license confirm a weight stage distinct from October hosted access.",
+          "zhHans": "Europa Press 将 Kimi K3.1 Pro 权重可用日期指向 11 月 4 日；公开模型文件与许可确认这是区别于 10 月托管访问的权重阶段。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-kimi-ep",
+          "nov09-kimi-card",
+          "nov09-kimi-api"
+        ]
+      },
+      {
+        "id": "kimi-license-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "The model-specific license requires certain Model-as-a-Service businesses with more than US$20 million of rolling annual revenue to obtain a separate commercial agreement; the first public download minute is unknown.",
+          "zhHans": "专用许可要求过去连续 12 个月收入超过 2000 万美元的部分模型即服务企业另签商业协议；首次公开下载的具体时间不明。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-kimi-license",
+          "nov09-kimi-api"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "kimi-k31-pro-hosted-api-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-09",
+          "changeType": "created",
+          "summary": "Created isolated bilingual candidate from Nov6–Nov9 incremental discovery."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:d840910051ec",
+      "reviewRecord": "governance/reviews/independent-20261109/kimi-k31-pro-open-weights-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "nov09-kimi-ep",
+        "supports": [
+          "kimi-k31-pro-open-weights-2026",
+          "kimi-weights"
+        ]
+      },
+      {
+        "sourceId": "nov09-kimi-card",
+        "supports": [
+          "kimi-k31-pro-open-weights-2026",
+          "kimi-weights"
+        ]
+      },
+      {
+        "sourceId": "nov09-kimi-api",
+        "supports": [
+          "kimi-k31-pro-open-weights-2026",
+          "kimi-weights",
+          "kimi-license-limits"
+        ]
+      },
+      {
+        "sourceId": "nov09-kimi-license",
+        "supports": [
+          "kimi-k31-pro-open-weights-2026",
+          "kimi-license-limits"
+        ]
+      }
+    ]
   },
   {
     "id": "liquid-d1-edge-decision-models-2026",
@@ -17682,6 +18512,121 @@
     },
     "categories": [
       "capability"
+    ]
+  },
+  {
+    "id": "marvell-lumentum-merger-agreement-2026",
+    "slug": "marvell-lumentum-merger-agreement-2026",
+    "date": "2026-11-02",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-02",
+      "zhHans": "2026年11月2日"
+    },
+    "categories": [
+      "commerce"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Marvell and Lumentum sign an all-stock acquisition agreement",
+      "zhHans": "Marvell 与 Lumentum 签署全股票收购协议"
+    },
+    "searchSummary": {
+      "en": "Marvell agreed to acquire Lumentum in an all-stock deal with a stated $115 billion implied enterprise value; closing remains conditional.",
+      "zhHans": "Marvell 同意以全股票交易收购 Lumentum，公告所列隐含企业价值为 1150 亿美元；交易仍待交割。"
+    },
+    "summary": {
+      "en": "Marvell and Lumentum announced a definitive all-stock acquisition agreement on November 2. The companies stated an implied enterprise value of $115 billion for Lumentum. They expect to close in the first half of 2028, subject to shareholder and regulatory approvals. No completed transfer or realized integration is established.",
+      "zhHans": "Marvell 与 Lumentum 于 11 月 2 日宣布签署全股票收购的最终协议。两家公司称，Lumentum 的隐含企业价值为 1150 亿美元。交易预计于 2028 年上半年完成，仍须取得股东和监管批准。现有证据不证明所有权已经转移或业务已整合。"
+    },
+    "narrative": {
+      "en": "The agreement is the dated action, not a closed merger. The $115 billion figure is the announced enterprise value, not cash consideration paid or an independent valuation. The SEC-hosted copy shares the companies’ origin and is not independent corroboration of their projections.",
+      "zhHans": "本节点记录签约，而非并购完成。1150 亿美元是公告中的隐含企业价值，不是已经支付的现金或独立估值。提交给美国证监会的文件仍源于交易双方，不能当作对其预测的独立验证。"
+    },
+    "claims": [
+      {
+        "id": "deal",
+        "claimType": "fact",
+        "text": {
+          "en": "The companies announced a definitive all-stock agreement on November 2, valuing Lumentum at an implied $115 billion enterprise value.",
+          "zhHans": "两家公司于 11 月 2 日宣布最终全股票交易协议，所列 Lumentum 隐含企业价值为 1150 亿美元。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-marvell"
+        ]
+      },
+      {
+        "id": "conditions",
+        "claimType": "limitation",
+        "text": {
+          "en": "The planned first-half-2028 closing remains subject to shareholder and regulatory approval.",
+          "zhHans": "计划于 2028 年上半年交割，仍须取得股东和监管批准。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-marvell",
+          "new26nov-marvell-sec"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-06",
+          "changeType": "created",
+          "summary": "Prepared a bounded bilingual candidate without canonical publication."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "source_added",
+          "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:fbb62d101736",
+      "reviewRecord": "governance/reviews/independent-20261109/marvell-lumentum-merger-agreement-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "new26nov-marvell",
+        "supports": [
+          "marvell-lumentum-merger-agreement-2026",
+          "deal",
+          "conditions"
+        ]
+      },
+      {
+        "sourceId": "new26nov-marvell-sec",
+        "supports": [
+          "marvell-lumentum-merger-agreement-2026",
+          "conditions"
+        ]
+      }
     ]
   },
   {
@@ -18248,6 +19193,8 @@
       "openai-operator-2025",
       "claude-duet-research-preview-2026",
       "meta-muse-macos-vulnerability-2026",
+      "meta-muse-spaces-rollout-2026",
+      "meta-muse-voice-avatar-rollout-2026",
       "nvidia-meta-muse-collaboration-2026"
     ],
     "relatedForecasts": [],
@@ -18269,6 +19216,118 @@
       ],
       "publishedAt": "2026-09-10"
     }
+  },
+  {
+    "id": "meta-muse-spaces-rollout-2026",
+    "slug": "meta-muse-spaces-rollout-2026",
+    "date": "2026-11-06",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-06",
+      "zhHans": "2026年11月6日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Meta adds customizable spaces to the Muse app",
+      "zhHans": "Meta 为 Muse 应用增加可自定义的 Spaces"
+    },
+    "searchSummary": {
+      "en": "Meta said on November 6 that Muse users could create personalized spaces through descriptions; outside usage has not been measured.",
+      "zhHans": "Meta 于 11 月 6 日称 Muse 用户可通过描述创建个性化 Spaces；外部使用规模尚无测量。"
+    },
+    "summary": {
+      "en": "Meta announced Spaces in Muse on November 6: users can describe and rearrange personalized app experiences such as planners or trackers. Meta said Spaces were available wherever Muse itself was available. A separate report describes the launch but does not independently test background updating or adoption. This action is distinct from the November 5 voice and avatar rollout; shared workspaces and broader collaboration remain future exploration.",
+      "zhHans": "Meta 于 11 月 6 日宣布 Muse 应用的 Spaces 功能：用户可通过文字描述创建日程或追踪工具等个性化界面，并调整其位置。Meta 称该功能在 Muse 已提供服务的地区可用。另一篇报道描述了发布，但没有独立测试后台更新或采用规模。这与 11 月 5 日的语音和动态形象推送不同；共享空间与更广泛的协作仍属未来探索。"
+    },
+    "narrative": {
+      "en": "The dated action is a consumer customization feature, not a new foundation model, proof that every user has built a space or evidence that merchants already benefit from it. Vendor examples are possibilities, not measured outcomes.",
+      "zhHans": "事件是消费应用自定义功能的发布，不是新的基础模型，也不证明每位用户都已创建空间或商家已有实际收益。厂商举例属于可能用途，并非已测量的成效。"
+    },
+    "claims": [
+      {
+        "id": "spaces",
+        "claimType": "fact",
+        "text": {
+          "en": "Meta announced on November 6 that Spaces could be created and used wherever the Muse app was available.",
+          "zhHans": "Meta 于 11 月 6 日宣布，用户可创建 Spaces，服务范围限于 Muse 应用已开放的地区。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-meta-spaces",
+          "nov09-meta-report"
+        ]
+      },
+      {
+        "id": "spaces-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "Shared Spaces are only being explored; there is no independently measured uptake or verified background-update reliability here.",
+          "zhHans": "共享 Spaces 仍处探索阶段；本轮未取得独立测量的采用量或已验证的后台更新可靠性。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "nov09-meta-spaces"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "meta-muse-personal-agent-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-09",
+          "changeType": "created",
+          "summary": "Created isolated bilingual candidate from Nov6–Nov9 incremental discovery."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:1a5c0ef0f815",
+      "reviewRecord": "governance/reviews/independent-20261109/meta-muse-spaces-rollout-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "nov09-meta-spaces",
+        "supports": [
+          "meta-muse-spaces-rollout-2026",
+          "spaces",
+          "spaces-limits"
+        ]
+      },
+      {
+        "sourceId": "nov09-meta-report",
+        "supports": [
+          "meta-muse-spaces-rollout-2026",
+          "spaces"
+        ]
+      }
+    ]
   },
   {
     "id": "meta-muse-spark-1-3-2026",
@@ -18567,6 +19626,126 @@
     }
   },
   {
+    "id": "meta-muse-voice-avatar-rollout-2026",
+    "slug": "meta-muse-voice-avatar-rollout-2026",
+    "date": "2026-11-05",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-05",
+      "zhHans": "2026年11月5日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Meta rolls out voice conversations and avatars in Muse",
+      "zhHans": "Meta 在 Muse 中推出语音对话与动态形象"
+    },
+    "searchSummary": {
+      "en": "Meta began rolling out Muse voice and expressive avatars to US app users on November 5; a Verge reporter tried the iOS feature.",
+      "zhHans": "Meta 于 11 月 5 日开始向美国 Muse 用户推送语音及动态形象；The Verge 记者在 iOS 上进行了试用。"
+    },
+    "summary": {
+      "en": "Meta announced that real-time voice conversations and expressive avatars were rolling out in the Muse app in the US on November 5. A Verge reporter independently accessed and briefly tested the iOS feature, reporting occasional pauses. Support for AI glasses and Muse Charm was described as coming soon, not available then. The test does not measure population-wide usage or reliability.",
+      "zhHans": "Meta 于 11 月 5 日宣布，Muse 应用中的实时语音对话与动态形象开始在美国推送。The Verge 记者独立取得 iOS 端功能并进行了简短试用，称回答偶有停顿。面向 AI 眼镜和 Muse Charm 的支持被描述为即将推出，而非当时已经可用。短时试用不能衡量整体用户规模或可靠性。"
+    },
+    "narrative": {
+      "en": "This is a consumer app rollout rather than the earlier Muse Voice Transcribe speech-perception model release. The direct reporter trial verifies one instance of access but not coverage of all US accounts or real-world productivity impact.",
+      "zhHans": "本事件是消费应用功能推送，不是此前 Muse Voice Transcribe 语音感知模型的发布。记者亲自试用能确认一个账号取得功能，却不能证明所有美国账号都已覆盖或实际效率提升。"
+    },
+    "claims": [
+      {
+        "id": "rollout",
+        "claimType": "fact",
+        "text": {
+          "en": "Meta announced a US rollout of Muse app voice and expressive avatars, and a reporter accessed and tested the feature on iOS.",
+          "zhHans": "Meta 宣布在美国推送 Muse 应用的语音与动态形象；一位记者在 iOS 上取得功能并进行了测试。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-muse",
+          "new26nov-muse-test"
+        ]
+      },
+      {
+        "id": "limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "AI glasses and Muse Charm support were described as coming soon; a brief reporter test noted occasional pauses and does not prove broad adoption.",
+          "zhHans": "面向 AI 眼镜和 Muse Charm 的支持仍属即将推出；记者短时试用发现偶尔停顿，不能证明大规模采用。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-muse",
+          "new26nov-muse-test"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "meta-muse-personal-agent-2026",
+      "meta-muse-voice-transcribe-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-06",
+          "changeType": "created",
+          "summary": "Prepared a bounded bilingual candidate without canonical publication."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "source_added",
+          "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:fbb62d101736",
+      "reviewRecord": "governance/reviews/independent-20261109/meta-muse-voice-avatar-rollout-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "new26nov-muse",
+        "supports": [
+          "meta-muse-voice-avatar-rollout-2026",
+          "rollout",
+          "limits"
+        ]
+      },
+      {
+        "sourceId": "new26nov-muse-test",
+        "supports": [
+          "meta-muse-voice-avatar-rollout-2026",
+          "rollout",
+          "limits"
+        ]
+      }
+    ]
+  },
+  {
     "id": "meta-muse-voice-transcribe-2026",
     "slug": "meta-muse-voice-transcribe-2026",
     "title": {
@@ -18693,6 +19872,7 @@
     "relatedEvents": [
       "meta-muse-code-spark-1-2-2026",
       "gemini-3-8-flash-tts-2026",
+      "meta-muse-voice-avatar-rollout-2026",
       "microsoft-mai-transcribe-2-streaming-2026"
     ],
     "relatedForecasts": [],
@@ -18719,6 +19899,113 @@
       ],
       "publishedAt": "2026-09-06"
     }
+  },
+  {
+    "id": "metr-anthropic-rd-acceleration-assessment-2026",
+    "slug": "metr-anthropic-rd-acceleration-assessment-2026",
+    "date": "2026-11-05",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-05",
+      "zhHans": "2026年11月5日"
+    },
+    "categories": [
+      "capability"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "METR publishes a qualified assessment of Anthropic AI R&D acceleration",
+      "zhHans": "METR 发布对 Anthropic AI 研发加速情况的有限评估"
+    },
+    "searchSummary": {
+      "en": "METR estimated roughly twice the historical rate of progress on specified tasks, with high uncertainty and extensive Anthropic redactions.",
+      "zhHans": "METR 估计指定任务上的能力进展速率约为历史水平的两倍，但不确定性高，且 Anthropic 大幅删节证据。"
+    },
+    "summary": {
+      "en": "On November 5, METR published its high-access assessment of Anthropic AI R&D from August 12 to October 29. It estimated that progress on well-specified model tasks was around twice its March 2024–October 2025 rate, while a benchmark trend gave 1.9 times with a 95% interval of 1.5–2.8. METR said other causes may contribute and the true acceleration could be around 1.3 or 3 times. Anthropic redacted most evidence METR considered most informative, limiting public scrutiny; this is METR’s qualified assessment, not a fully reproducible result.",
+      "zhHans": "METR 于 11 月 5 日公布了针对 Anthropic 8 月 12 日至 10 月 29 日 AI 研发活动的高权限评估。它估计，指定任务上的模型能力进展速率约为 2024 年 3 月至 2025 年 10 月水平的两倍；一项基准指标估计为 1.9 倍，95% 区间为 1.5 至 2.8 倍。METR 指出其他因素可能参与作用，真实加速幅度也可能接近 1.3 倍或 3 倍。Anthropic 删节了 METR 认为最有信息量的大部分证据，限制了公众核查；这是有保留的评估，而非可完整复现的结论。"
+    },
+    "narrative": {
+      "en": "The event date is the public report, not the October assessment period. METR is an external evaluator with privileged access, but it is the originator of these estimates; press accounts repeating its numbers do not create a second independent measurement. Redactions and causal uncertainty preclude treating the estimate as established autonomous AI self-improvement.",
+      "zhHans": "事件日期为报告公开日，而非 10 月评估期。METR 是取得高权限资料的外部评估者，但它仍是这些估计的原始来源；媒体重复数字不构成第二次独立测量。删节与因果不确定性也使该估计不能被写成 AI 自主改进已经得到证实。"
+    },
+    "claims": [
+      {
+        "id": "estimate",
+        "claimType": "fact",
+        "text": {
+          "en": "METR published a qualified estimate on November 5 of roughly doubled progress rate on specified tasks, with a 1.9x benchmark trend and wide uncertainty.",
+          "zhHans": "METR 于 11 月 5 日发布有保留的估计：指定任务上的进展速率约翻倍，基准趋势约为 1.9 倍，不确定性较大。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-metr"
+        ]
+      },
+      {
+        "id": "limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "Anthropic redacted much of the evidence METR found most informative; the true rate and the contribution of AI to it remain uncertain.",
+          "zhHans": "Anthropic 删节了 METR 认为最有信息量的大量证据；实际速率及 AI 的贡献仍有不确定性。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-metr"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-06",
+          "changeType": "created",
+          "summary": "Prepared a bounded bilingual candidate without canonical publication."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "source_added",
+          "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:deb5ceecb764",
+      "reviewRecord": "governance/reviews/independent-20261109/metr-anthropic-rd-acceleration-assessment-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "new26nov-metr",
+        "supports": [
+          "metr-anthropic-rd-acceleration-assessment-2026",
+          "estimate",
+          "limits"
+        ]
+      }
+    ]
   },
   {
     "id": "microsoft-mai-image-27-preview-2026",
@@ -22435,7 +23722,8 @@
       }
     ],
     "relatedEvents": [
-      "gpt-image-2025"
+      "gpt-image-2025",
+      "openai-images-26-availability-2026"
     ],
     "relatedForecasts": [],
     "editorial": {
@@ -23199,6 +24487,129 @@
     }
   },
   {
+    "id": "openai-gpt6-cyber-restricted-launch-2026",
+    "slug": "openai-gpt6-cyber-restricted-launch-2026",
+    "date": "2026-11-05",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-05",
+      "zhHans": "2026年11月5日"
+    },
+    "categories": [
+      "safety"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "OpenAI limits GPT-6 Cyber access to approved security customers",
+      "zhHans": "OpenAI 将 GPT-6 Cyber 限定向获批安全客户开放"
+    },
+    "searchSummary": {
+      "en": "OpenAI published GPT-6 Cyber’s system card on November 5 and restricted access through its approved Daybreak Red program.",
+      "zhHans": "OpenAI 于 11 月 5 日发布 GPT-6 Cyber 系统卡，并通过须经批准的 Daybreak Red 项目限制访问。"
+    },
+    "summary": {
+      "en": "OpenAI’s system card dated November 5 describes GPT-6 Cyber as a specialized model for authorized security work, with access restricted through Daybreak Red. Its API documentation requires organization approval; Reuters reported initial access for a small set of vetted customers. OpenAI itself classified the model Critical for cybersecurity under its own framework. The full OpenAI announcement returned HTTP 403, and vendor-reported vulnerability totals or safety outcomes are not independently validated here.",
+      "zhHans": "OpenAI 日期为 11 月 5 日的系统卡将 GPT-6 Cyber 描述为面向授权安全工作的专用模型，访问限于 Daybreak Red。其 API 文档要求组织预先获批；路透社报道初期仅向少量经审核客户开放。OpenAI 按其自身框架将模型网络安全能力归为“Critical”。完整公告直接获取返回 HTTP 403；本轮未独立核实厂商所报漏洞数量或安全效果。"
+    },
+    "narrative": {
+      "en": "This node records restricted deployment and documentation, not universal API access, field exploitation, independently established safety or a novel incident. Reuters’ figures relay OpenAI and must not be counted as separate testing.",
+      "zhHans": "本节点记录的是受限部署及文档发布，并非 API 普遍开放、实际攻击、已独立证实安全性或发生新事件。路透社转述的数字仍源于 OpenAI，不能计作第二份测试。"
+    },
+    "claims": [
+      {
+        "id": "restricted",
+        "claimType": "fact",
+        "text": {
+          "en": "OpenAI’s November 5 system card and API listing restrict GPT-6 Cyber to approved Daybreak Red organizations; Reuters reported limited initial access.",
+          "zhHans": "OpenAI 11 月 5 日的系统卡和 API 页面将 GPT-6 Cyber 限定向获批 Daybreak Red 组织开放；路透社报道初期访问范围有限。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-cyber-card",
+          "new26nov-cyber-api",
+          "new26nov-cyber-reuters"
+        ]
+      },
+      {
+        "id": "limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "OpenAI internally rates the model Critical in cybersecurity; the rating is not an independent capability or safety verification.",
+          "zhHans": "OpenAI 内部将该模型的网络安全能力评级为“Critical”；这不是独立的能力或安全验证。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-cyber-card"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-06",
+          "changeType": "created",
+          "summary": "Prepared a bounded bilingual candidate without canonical publication."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "source_added",
+          "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:deb5ceecb764",
+      "reviewRecord": "governance/reviews/independent-20261109/openai-gpt6-cyber-restricted-launch-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "new26nov-cyber-card",
+        "supports": [
+          "openai-gpt6-cyber-restricted-launch-2026",
+          "restricted",
+          "limits"
+        ]
+      },
+      {
+        "sourceId": "new26nov-cyber-api",
+        "supports": [
+          "openai-gpt6-cyber-restricted-launch-2026",
+          "restricted"
+        ]
+      },
+      {
+        "sourceId": "new26nov-cyber-reuters",
+        "supports": [
+          "openai-gpt6-cyber-restricted-launch-2026",
+          "restricted"
+        ]
+      }
+    ]
+  },
+  {
     "id": "openai-hf-breach-2026",
     "slug": "openai-hugging-face-security-incident",
     "title": {
@@ -23413,6 +24824,123 @@
       "reviewNotes": "Reviewed update to the existing Hugging Face incident node. It adds congressional oversight without treating the inquiry as a merits finding or a duplicate breach.",
       "publishedAt": "2026-07-28"
     }
+  },
+  {
+    "id": "openai-images-26-availability-2026",
+    "slug": "openai-images-26-availability-2026",
+    "date": "2026-11-04",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-04",
+      "zhHans": "2026年11月4日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "OpenAI rolls out Images 2.6 and two API image models",
+      "zhHans": "OpenAI 推出 Images 2.6 与两款 API 图像模型"
+    },
+    "searchSummary": {
+      "en": "OpenAI said Images 2.6 reached ChatGPT and Codex on November 4, with Flare and Sunburst also available through its API.",
+      "zhHans": "OpenAI 称 Images 2.6 于 11 月 4 日进入 ChatGPT 和 Codex，Flare 与 Sunburst 同时可通过 API 使用。"
+    },
+    "summary": {
+      "en": "OpenAI’s dated public account says Images 2.6 was available on November 4 across ChatGPT and Codex tiers on web, desktop and mobile, and GPT-Image-2.6 Flare and Sunburst were available via API. Its posts described prompt- or image-to-GIF generation and reusable reference images. The full OpenAI article returned HTTP 403 in direct capture; detailed model performance or independent uptake are not inferred from the accessible posts or secondary summaries.",
+      "zhHans": "OpenAI 在带日期的公开账号中称，Images 2.6 于 11 月 4 日面向各订阅层级的 ChatGPT 和 Codex 网页、桌面及移动端提供使用，GPT-Image-2.6 Flare 和 Sunburst 同时开放 API。帖子还介绍了由提示词或图片生成 GIF，以及重复使用已保存参考图的功能。直接获取 OpenAI 完整文章返回 HTTP 403；不能凭可读帖子及二手摘要推断具体性能或外部采用。"
+    },
+    "narrative": {
+      "en": "The X page was read directly as OpenAI’s own statement, not as independent X search coverage. The announcement supplies a launch claim; no first-hand external trial or independent performance result is included.",
+      "zhHans": "直接读取的是 OpenAI 自己在 X 的声明，不等于已完成 X 站内检索。公告支持发布阶段的表述；本轮没有外部亲自试用或独立性能结果。"
+    },
+    "claims": [
+      {
+        "id": "release",
+        "claimType": "fact",
+        "text": {
+          "en": "OpenAI said Images 2.6 was available November 4 in ChatGPT and Codex and that Flare and Sunburst were available through the API.",
+          "zhHans": "OpenAI 称 Images 2.6 于 11 月 4 日在 ChatGPT 与 Codex 可用，Flare 与 Sunburst 也已开放 API。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-images",
+          "new26nov-images-report"
+        ]
+      },
+      {
+        "id": "scope",
+        "claimType": "limitation",
+        "text": {
+          "en": "OpenAI’s accessible posts describe GIF generation and reusable reference images; neither feature performance nor broad user uptake was independently verified here.",
+          "zhHans": "OpenAI 可读帖子介绍了 GIF 生成及参考图复用；本轮未独立验证功能效果或大规模采用。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-images"
+        ]
+      }
+    ],
+    "relatedEvents": [
+      "openai-chatgpt-images-2-5-2026"
+    ],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-06",
+          "changeType": "created",
+          "summary": "Prepared a bounded bilingual candidate without canonical publication."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "source_added",
+          "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:deb5ceecb764",
+      "reviewRecord": "governance/reviews/independent-20261109/openai-images-26-availability-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "new26nov-images",
+        "supports": [
+          "openai-images-26-availability-2026",
+          "release",
+          "scope"
+        ]
+      },
+      {
+        "sourceId": "new26nov-images-report",
+        "supports": [
+          "openai-images-26-availability-2026",
+          "release"
+        ]
+      }
+    ]
   },
   {
     "id": "openai-jalapeno-chip-2026",
@@ -28938,6 +30466,129 @@
     ]
   },
   {
+    "id": "tencent-hy4-hosted-release-2026",
+    "slug": "tencent-hy4-hosted-release-2026",
+    "date": "2026-11-04",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-04",
+      "zhHans": "2026年11月4日"
+    },
+    "categories": [
+      "product"
+    ],
+    "significance": 1,
+    "controversy": false,
+    "title": {
+      "en": "Tencent launches hosted Hy4 access while full weights remain pending",
+      "zhHans": "腾讯推出 Hy4 托管访问，完整权重仍待发布"
+    },
+    "searchSummary": {
+      "en": "Tencent announced hosted Hy4 availability on November 4, and OpenRouter listed a provider; full model weights were still planned.",
+      "zhHans": "腾讯于 11 月 4 日宣布 Hy4 可通过托管服务使用，OpenRouter 列出提供方；完整模型权重当时仍是发布计划。"
+    },
+    "summary": {
+      "en": "Tencent announced Hy4 access on November 4 via TokenHub and other products, while OpenRouter listed a hosted Hy4 provider. Tencent said it planned to publish the new model weights and system card in the coming days. The older public Hy4-preview repository was created in August and does not establish that the newly announced full Hy4 weights had been released. No independent performance gain is established here.",
+      "zhHans": "腾讯于 11 月 4 日宣布，可通过 TokenHub 等产品使用 Hy4；OpenRouter 也列出了托管 Hy4 的提供方。腾讯称计划在未来数日发布新模型权重和系统卡。公开的旧 Hy4-preview 仓库创建于 8 月，不能证明此次发布的正式版 Hy4 权重已经开放。本轮也未独立证实性能提升。"
+    },
+    "narrative": {
+      "en": "The new stage is hosted access to the full Hy4 release, not the older preview repository or a completed open-weight release. OpenRouter independently documents distribution, but its model description may reflect Tencent marketing and is not a benchmark replication.",
+      "zhHans": "新阶段是正式版 Hy4 的托管访问，不是旧预览版仓库，也不是完整权重已经开放。OpenRouter 独立记录了分发渠道，但其模型描述可能沿用腾讯宣传，不能当作独立跑分复现。"
+    },
+    "claims": [
+      {
+        "id": "hosted",
+        "claimType": "fact",
+        "text": {
+          "en": "Tencent announced hosted Hy4 access on November 4; OpenRouter separately listed a hosted provider.",
+          "zhHans": "腾讯于 11 月 4 日宣布 Hy4 的托管访问；OpenRouter 另行列出了托管提供方。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-hy4",
+          "new26nov-hy4-route"
+        ]
+      },
+      {
+        "id": "limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "Tencent described the new weights and system card as forthcoming; an August Hy4-preview repository does not verify their publication.",
+          "zhHans": "腾讯称新权重与系统卡将在未来发布；8 月创建的 Hy4-preview 仓库不能证明此次权重已经公开。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "new26nov-hy4",
+          "new26nov-hy4-preview"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "status": "published",
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "impacts": [],
+    "editorial": {
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
+      "lastSourceCheckAt": "2026-11-09",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+      "changeLog": [
+        {
+          "date": "2026-11-06",
+          "changeType": "created",
+          "summary": "Prepared a bounded bilingual candidate without canonical publication."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "source_added",
+          "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+        },
+        {
+          "date": "2026-11-09",
+          "changeType": "correction",
+          "summary": "Proposed precise publication state for human authorization only."
+        }
+      ],
+      "reviewedAt": "2026-11-09",
+      "reviewer": "gemini-request:fbb62d101736",
+      "reviewRecord": "governance/reviews/independent-20261109/tencent-hy4-hosted-release-2026.json",
+      "reviewProvenance": "v2.4",
+      "publishedAt": "2026-11-09"
+    },
+    "sources": [
+      {
+        "sourceId": "new26nov-hy4",
+        "supports": [
+          "tencent-hy4-hosted-release-2026",
+          "hosted",
+          "limits"
+        ]
+      },
+      {
+        "sourceId": "new26nov-hy4-route",
+        "supports": [
+          "tencent-hy4-hosted-release-2026",
+          "hosted"
+        ]
+      },
+      {
+        "sourceId": "new26nov-hy4-preview",
+        "supports": [
+          "tencent-hy4-hosted-release-2026",
+          "limits"
+        ]
+      }
+    ]
+  },
+  {
     "id": "tensorflow-2015",
     "slug": "tensorflow",
     "title": {
@@ -29249,7 +30900,8 @@
     "relatedEvents": [
       "deepseek-v4-2026",
       "gpt-5-6-broad-launch-2026",
-      "claude-sonnet-5-launch-2026"
+      "claude-sonnet-5-launch-2026",
+      "inkling-2-small-tinker-access-2026"
     ],
     "relatedForecasts": [
       "open-vs-closed"

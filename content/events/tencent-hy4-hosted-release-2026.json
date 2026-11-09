@@ -1,0 +1,123 @@
+{
+  "id": "tencent-hy4-hosted-release-2026",
+  "slug": "tencent-hy4-hosted-release-2026",
+  "date": "2026-11-04",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-04",
+    "zhHans": "2026年11月4日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Tencent launches hosted Hy4 access while full weights remain pending",
+    "zhHans": "腾讯推出 Hy4 托管访问，完整权重仍待发布"
+  },
+  "searchSummary": {
+    "en": "Tencent announced hosted Hy4 availability on November 4, and OpenRouter listed a provider; full model weights were still planned.",
+    "zhHans": "腾讯于 11 月 4 日宣布 Hy4 可通过托管服务使用，OpenRouter 列出提供方；完整模型权重当时仍是发布计划。"
+  },
+  "summary": {
+    "en": "Tencent announced Hy4 access on November 4 via TokenHub and other products, while OpenRouter listed a hosted Hy4 provider. Tencent said it planned to publish the new model weights and system card in the coming days. The older public Hy4-preview repository was created in August and does not establish that the newly announced full Hy4 weights had been released. No independent performance gain is established here.",
+    "zhHans": "腾讯于 11 月 4 日宣布，可通过 TokenHub 等产品使用 Hy4；OpenRouter 也列出了托管 Hy4 的提供方。腾讯称计划在未来数日发布新模型权重和系统卡。公开的旧 Hy4-preview 仓库创建于 8 月，不能证明此次发布的正式版 Hy4 权重已经开放。本轮也未独立证实性能提升。"
+  },
+  "narrative": {
+    "en": "The new stage is hosted access to the full Hy4 release, not the older preview repository or a completed open-weight release. OpenRouter independently documents distribution, but its model description may reflect Tencent marketing and is not a benchmark replication.",
+    "zhHans": "新阶段是正式版 Hy4 的托管访问，不是旧预览版仓库，也不是完整权重已经开放。OpenRouter 独立记录了分发渠道，但其模型描述可能沿用腾讯宣传，不能当作独立跑分复现。"
+  },
+  "claims": [
+    {
+      "id": "hosted",
+      "claimType": "fact",
+      "text": {
+        "en": "Tencent announced hosted Hy4 access on November 4; OpenRouter separately listed a hosted provider.",
+        "zhHans": "腾讯于 11 月 4 日宣布 Hy4 的托管访问；OpenRouter 另行列出了托管提供方。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26nov-hy4",
+        "new26nov-hy4-route"
+      ]
+    },
+    {
+      "id": "limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "Tencent described the new weights and system card as forthcoming; an August Hy4-preview repository does not verify their publication.",
+        "zhHans": "腾讯称新权重与系统卡将在未来发布；8 月创建的 Hy4-preview 仓库不能证明此次权重已经公开。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26nov-hy4",
+        "new26nov-hy4-preview"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-06",
+    "updatedAt": "2026-11-09",
+    "lastSourceCheckAt": "2026-11-09",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+    "changeLog": [
+      {
+        "date": "2026-11-06",
+        "changeType": "created",
+        "summary": "Prepared a bounded bilingual candidate without canonical publication."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "source_added",
+        "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Proposed precise publication state for human authorization only."
+      }
+    ],
+    "reviewedAt": "2026-11-09",
+    "reviewer": "gemini-request:fbb62d101736",
+    "reviewRecord": "governance/reviews/independent-20261109/tencent-hy4-hosted-release-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-09"
+  },
+  "sources": [
+    {
+      "sourceId": "new26nov-hy4",
+      "supports": [
+        "tencent-hy4-hosted-release-2026",
+        "hosted",
+        "limits"
+      ]
+    },
+    {
+      "sourceId": "new26nov-hy4-route",
+      "supports": [
+        "tencent-hy4-hosted-release-2026",
+        "hosted"
+      ]
+    },
+    {
+      "sourceId": "new26nov-hy4-preview",
+      "supports": [
+        "tencent-hy4-hosted-release-2026",
+        "limits"
+      ]
+    }
+  ]
+}

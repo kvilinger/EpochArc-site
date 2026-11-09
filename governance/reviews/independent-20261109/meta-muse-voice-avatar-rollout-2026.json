@@ -1,0 +1,197 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "meta-muse-voice-avatar-rollout-2026",
+  "inputSubjectDigest": "1099e0014f460bcfb048b641f0f9821464218fb2c5f92e14cf8c4b127b02b9ad",
+  "subjectDigest": "a684e1a139a1a305f4f6e1056146c188f2125e879576dfdcd9d2f78b30ecdcaf",
+  "inputsDigest": "92bbf68859933a07eb1315e631240fd5126fddf848e29e235e3807e744d89a7a",
+  "evidenceCutoff": "2026-11-09",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini-request:fbb62d101736",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "pi-cli-ephemeral-request:fbb62d101736",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-09",
+  "candidateId": "nov06-muse-voice",
+  "runDigest": "71dc2104ea02076f6be17d41c98f291b7e13d4d19dfbd009b80317439bfc3ecf",
+  "coreFactClaimIds": [
+    "rollout"
+  ],
+  "identity": {
+    "seriesId": "meta-muse-agent",
+    "action": "roll out US consumer voice and animated avatar",
+    "stage": "available",
+    "dateBasis": "Meta Nov5 release and Verge firsthand test Nov5",
+    "decision": "new",
+    "comparedEventIds": [
+      "meta-muse-voice-transcribe-2026",
+      "meta-muse-personal-agent-2026"
+    ],
+    "deduplicationReason": "Compared dated action, actor and accomplished stage against two published records; earlier hosted gateway, app voice rollout and future weight access are not equated with this release."
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Dated action roll out US consumer voice and animated avatar at stage available justifies product without inferring projected outcomes."
+  },
+  "significance": {
+    "rationale": "B-graded dated disclosure or artifact supports a bounded L1; no complete L2 rule is established by quoted evidence.",
+    "whyNotHigher": "No independent external production-scale adoption, all-local-result certifications, replicable capability breakthrough or downstream structural effects establish an applicable higher threshold.",
+    "whyNotLower": "Dated action and actor are separately documented and compared against two already published records.",
+    "comparisonEventIds": [
+      "meta-muse-voice-transcribe-2026",
+      "meta-muse-personal-agent-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": true,
+            "rationale": "A directly described access, workflow or completed land-transfer stage supports this single criterion, without satisfying independent scale requirements.",
+            "evidenceIds": [
+              "meta-muse-voice-avatar-rollout-2026-quote-1",
+              "meta-muse-voice-avatar-rollout-2026-quote-2",
+              "meta-muse-voice-avatar-rollout-2026-quote-3",
+              "meta-muse-voice-avatar-rollout-2026-quote-6",
+              "meta-muse-voice-avatar-rollout-2026-fresh-20261109"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No captured independently verifiable completion of unaffiliated_production_organizations; unknown, not asserted false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Downstream use, economic effect or consensus has not been independently established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separately evidenced dispute confirmed within bounded sources; this does not assert universal absence.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent model packet explicitly evaluated both English and Simplified Chinese, dates and caveats; unreviewed remote pages are not treated as accessed."
+  },
+  "limitations": [
+    "Search covers Nov2–9 through partial-day Nov9 and cannot establish exhaustive discovery; Reddit post bodies were absent, X public index only supplied leads, and HF Nov9 daily returned HTTP400.",
+    "Original-source excerpts and their local hashes establish quote provenance within this packet, not independent truth of vendor performance or first public download time.",
+    "For Ballotpedia this is a Nov6 reported vote tally, not individually certified results or 40 binding statutes; for Kimi Nov4 is the day attributed by a Nov5 report, not reconstructed download logs.",
+    "Some original OpenAI articles returned HTTP403; social first-party statement, system card and API listing are scoped to accessible text.",
+    "Gemini read-only assessment and its PASS run audit do not supply human approval or authorise publication.",
+    "Exact independent-review input: review/GEMINI_FROZEN_3.md SHA256 cfef87b907e3836ec33209a13db27448397491e50691452e7e57ff05a0f85bfa; result: review/GEMINI_3_RAW.md SHA256 8409d9a70cc88ad61b00665dffdafac783020539e6e85d9805fc43abba40232a; successful request ID fbb62d101736.",
+    "Run audit input: review/GEMINI_RUN_AUDIT_INPUT.md SHA256 5fd2917bb9ef02aab0fa6d8dcf8c02145789b8d2a9fb93196786d191c7ace178; PASS raw: review/GEMINI_RUN_AUDIT_RAW.md SHA256 9f89c3bcb9995bdd68f6fffcd30f9f039cb9ca3521701079fd92c5c46789f984.",
+    "Proposed publishedAt is not actual release; exact human approval and deployment validation remain necessary."
+  ],
+  "evidence": [
+    {
+      "id": "meta-muse-voice-avatar-rollout-2026-quote-1",
+      "sourceId": "new26nov-muse",
+      "claimId": "rollout",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+      "originId": "meta-muse-voice-rollout-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "November 5, 2026",
+      "locator": "Introducing voice and expressive avatars in Muse exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/meta-voice.txt",
+      "sha256": "36f06568905caf9da95639303a9f95682f0507437889a098052a3dc30b87a4dc"
+    },
+    {
+      "id": "meta-muse-voice-avatar-rollout-2026-quote-2",
+      "sourceId": "new26nov-muse",
+      "claimId": "rollout",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+      "originId": "meta-muse-voice-rollout-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Voice and expressive avatars are rolling out now in the Muse app in the US to start.",
+      "locator": "Introducing voice and expressive avatars in Muse exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/meta-voice.txt",
+      "sha256": "36f06568905caf9da95639303a9f95682f0507437889a098052a3dc30b87a4dc"
+    },
+    {
+      "id": "meta-muse-voice-avatar-rollout-2026-quote-3",
+      "sourceId": "new26nov-muse-test",
+      "claimId": "rollout",
+      "url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+      "originId": "verge-firsthand-muse-voice-test-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "The feature has been rolled out to me, and I gave it a spin on the iOS app",
+      "locator": "Muse has a voice mode now exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/muse-verge.txt",
+      "sha256": "27f4b92c3c1ee572dced0a3422249fe1e55e4bf6d4c072845af2090cbff499f6"
+    },
+    {
+      "id": "meta-muse-voice-avatar-rollout-2026-quote-4",
+      "sourceId": "new26nov-muse",
+      "claimId": "limits",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+      "originId": "meta-muse-voice-rollout-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Voice conversations with your Muse are coming soon to AI Glasses and Muse Charm.",
+      "locator": "Introducing voice and expressive avatars in Muse exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/meta-voice.txt",
+      "sha256": "36f06568905caf9da95639303a9f95682f0507437889a098052a3dc30b87a4dc"
+    },
+    {
+      "id": "meta-muse-voice-avatar-rollout-2026-quote-5",
+      "sourceId": "new26nov-muse-test",
+      "claimId": "limits",
+      "url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+      "originId": "verge-firsthand-muse-voice-test-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "In my brief tests, my Muse agent responds quickly over voice, though it occasionally pauses",
+      "locator": "Muse has a voice mode now exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/muse-verge.txt",
+      "sha256": "27f4b92c3c1ee572dced0a3422249fe1e55e4bf6d4c072845af2090cbff499f6"
+    },
+    {
+      "id": "meta-muse-voice-avatar-rollout-2026-quote-6",
+      "sourceId": "new26nov-muse-test",
+      "claimId": "rollout",
+      "url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+      "originId": "verge-firsthand-muse-voice-test-20261105",
+      "accessedAt": "2026-11-06",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "It also animates what it’s saying well, though for my particular avatar, it’s been a little uncanny.",
+      "locator": "Muse has a voice mode now exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/muse-verge.txt",
+      "sha256": "27f4b92c3c1ee572dced0a3422249fe1e55e4bf6d4c072845af2090cbff499f6"
+    },
+    {
+      "id": "meta-muse-voice-avatar-rollout-2026-fresh-20261109",
+      "sourceId": "new26nov-muse",
+      "claimId": "rollout",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+      "originId": "meta-muse-voice-rollout-20261105",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Voice and expressive avatars are rolling out now in the Muse app in the US to start.",
+      "locator": "Rechecked original page on 2026-11-09; this is source wording, not proof that no other updates exist.",
+      "artifact": "governance/evidence/2026-11-09/direct/meta-old-muse.txt",
+      "sha256": "a2f78b4a97303062b8de7f1cda3b7a9d039c55b3bb669c7d33996b77f0562dde"
+    }
+  ]
+}

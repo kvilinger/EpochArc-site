@@ -1,0 +1,117 @@
+{
+  "id": "inkling-2-small-tinker-access-2026",
+  "slug": "inkling-2-small-tinker-access-2026",
+  "date": "2026-11-05",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-05",
+    "zhHans": "2026年11月5日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Thinking Machines opens Inkling 2 Small on Tinker, defers weights",
+    "zhHans": "Thinking Machines 在 Tinker 开放 Inkling 2 Small，暂缓发布权重"
+  },
+  "searchSummary": {
+    "en": "Inkling 2 Small became available in Tinker Playground on November 5; downloadable full weights remained contingent on testing.",
+    "zhHans": "Inkling 2 Small 于 11 月 5 日在 Tinker Playground 开放；完整权重下载仍待测试完成。"
+  },
+  "summary": {
+    "en": "Thinking Machines Lab announced Inkling 2 Small on November 5 and said users could try it in Tinker Playground and fine-tune or sample it on Tinker. It planned to release the full weights under Apache 2.0 the following week, after external safety testing and red-teaming. Checkpoints would be downloadable with that future weight release. Neither full weights nor results of external safety work were shown to be public at the cutoff.",
+    "zhHans": "Thinking Machines Lab 于 11 月 5 日宣布 Inkling 2 Small，并称用户可在 Tinker Playground 试用、在 Tinker 上微调或采样。公司计划在完成外部安全测试和红队评估后，于随后一周按 Apache 2.0 许可发布完整权重；检查点也要等到权重发布时才可下载。截至本轮截止时，没有证据表明完整权重或外部安全测试结果已公开。"
+  },
+  "narrative": {
+    "en": "This is hosted access to Inkling 2 Small, a distinct later model stage from the July original Inkling entry, not an open-weight launch of the new model. Internal demonstrations and benchmark charts belong to the developer; independent evaluation of generalized performance and adoption is not in this packet.",
+    "zhHans": "这次是 Inkling 2 Small 的托管访问，属于与 7 月原版 Inkling 条目不同的后续模型阶段，并非新模型的开放权重发布。内部演示与跑分图表出自开发方；本轮没有可支持泛化性能或采用规模的独立评估。"
+  },
+  "claims": [
+    {
+      "id": "access",
+      "claimType": "fact",
+      "text": {
+        "en": "Thinking Machines said Inkling 2 Small was available in Tinker Playground and for sampling and fine-tuning on Tinker on November 5.",
+        "zhHans": "Thinking Machines 称，Inkling 2 Small 于 11 月 5 日可在 Tinker Playground 使用，并可在 Tinker 上采样和微调。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26nov-inkling",
+        "new26nov-inkling-report"
+      ]
+    },
+    {
+      "id": "weight-plan",
+      "claimType": "limitation",
+      "text": {
+        "en": "The lab planned to release full weights and downloadable checkpoints after external testing, not on the hosted-launch date.",
+        "zhHans": "实验室计划在外部测试后发布完整权重及可下载的检查点，而不是在托管服务上线日同时开放。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26nov-inkling"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "thinking-machines-inkling-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-06",
+    "updatedAt": "2026-11-09",
+    "lastSourceCheckAt": "2026-11-09",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+    "changeLog": [
+      {
+        "date": "2026-11-06",
+        "changeType": "created",
+        "summary": "Prepared a bounded bilingual candidate without canonical publication."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "source_added",
+        "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Proposed precise publication state for human authorization only."
+      }
+    ],
+    "reviewedAt": "2026-11-09",
+    "reviewer": "gemini-request:deb5ceecb764",
+    "reviewRecord": "governance/reviews/independent-20261109/inkling-2-small-tinker-access-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-09"
+  },
+  "sources": [
+    {
+      "sourceId": "new26nov-inkling",
+      "supports": [
+        "inkling-2-small-tinker-access-2026",
+        "access",
+        "weight-plan"
+      ]
+    },
+    {
+      "sourceId": "new26nov-inkling-report",
+      "supports": [
+        "inkling-2-small-tinker-access-2026",
+        "access"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "tencent-hy4-hosted-release-2026",
+  "inputSubjectDigest": "281c57844ff8c98cdc555595a6ceb31922ab6f3ae7d8bf0b4fe28395fd06b8a8",
+  "subjectDigest": "f88aec75352420bcdba3e03aa451301ecb142e9f848f922d59f0fad51eea898b",
+  "inputsDigest": "0d97a32c5a0ce16c40664e1d64288e8d9978eacf73a87f06204ca08ebdce70d9",
+  "evidenceCutoff": "2026-11-09",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini-request:fbb62d101736",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "pi-cli-ephemeral-request:fbb62d101736",
+  "reviewerModel": "google-antigravity/gemini-3.8-flash-high",
+  "reviewDecision": "pass",
+  "runId": "latest-data-full-2026-11-09",
+  "candidateId": "nov06-hy4",
+  "runDigest": "71dc2104ea02076f6be17d41c98f291b7e13d4d19dfbd009b80317439bfc3ecf",
+  "coreFactClaimIds": [
+    "hosted"
+  ],
+  "identity": {
+    "seriesId": "tencent-hy4",
+    "action": "offer full Hy4 through hosted services",
+    "stage": "available",
+    "dateBasis": "Tencent announcement Nov4 and OpenRouter listing; full weights announced as future",
+    "decision": "new",
+    "comparedEventIds": [
+      "kimi-k31-pro-hosted-api-2026",
+      "mistral-large-4-open-weights-2026"
+    ],
+    "deduplicationReason": "Compared dated action, actor and accomplished stage against two published records; earlier hosted gateway, app voice rollout and future weight access are not equated with this release."
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Dated action offer full Hy4 through hosted services at stage available justifies product without inferring projected outcomes."
+  },
+  "significance": {
+    "rationale": "B-graded dated disclosure or artifact supports a bounded L1; no complete L2 rule is established by quoted evidence.",
+    "whyNotHigher": "No independent external production-scale adoption, all-local-result certifications, replicable capability breakthrough or downstream structural effects establish an applicable higher threshold.",
+    "whyNotLower": "Dated action and actor are separately documented and compared against two already published records.",
+    "comparisonEventIds": [
+      "kimi-k31-pro-hosted-api-2026",
+      "mistral-large-4-open-weights-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "A directly described access, workflow or completed land-transfer stage supports this single criterion, without satisfying independent scale requirements.",
+            "evidenceIds": [
+              "tencent-hy4-hosted-release-2026-quote-1",
+              "tencent-hy4-hosted-release-2026-quote-2",
+              "tencent-hy4-hosted-release-2026-quote-3"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No captured independently verifiable completion of unaffiliated_production_organizations; unknown, not asserted false.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Downstream use, economic effect or consensus has not been independently established.",
+    "evidenceIds": []
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No separately evidenced dispute confirmed within bounded sources; this does not assert universal absence.",
+    "evidenceIds": []
+  },
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Independent model packet explicitly evaluated both English and Simplified Chinese, dates and caveats; unreviewed remote pages are not treated as accessed."
+  },
+  "limitations": [
+    "Search covers Nov2–9 through partial-day Nov9 and cannot establish exhaustive discovery; Reddit post bodies were absent, X public index only supplied leads, and HF Nov9 daily returned HTTP400.",
+    "Original-source excerpts and their local hashes establish quote provenance within this packet, not independent truth of vendor performance or first public download time.",
+    "For Ballotpedia this is a Nov6 reported vote tally, not individually certified results or 40 binding statutes; for Kimi Nov4 is the day attributed by a Nov5 report, not reconstructed download logs.",
+    "Some original OpenAI articles returned HTTP403; social first-party statement, system card and API listing are scoped to accessible text.",
+    "Gemini read-only assessment and its PASS run audit do not supply human approval or authorise publication.",
+    "Exact independent-review input: review/GEMINI_FROZEN_3.md SHA256 cfef87b907e3836ec33209a13db27448397491e50691452e7e57ff05a0f85bfa; result: review/GEMINI_3_RAW.md SHA256 8409d9a70cc88ad61b00665dffdafac783020539e6e85d9805fc43abba40232a; successful request ID fbb62d101736.",
+    "Run audit input: review/GEMINI_RUN_AUDIT_INPUT.md SHA256 5fd2917bb9ef02aab0fa6d8dcf8c02145789b8d2a9fb93196786d191c7ace178; PASS raw: review/GEMINI_RUN_AUDIT_RAW.md SHA256 9f89c3bcb9995bdd68f6fffcd30f9f039cb9ca3521701079fd92c5c46789f984.",
+    "Proposed publishedAt is not actual release; exact human approval and deployment validation remain necessary."
+  ],
+  "evidence": [
+    {
+      "id": "tencent-hy4-hosted-release-2026-quote-1",
+      "sourceId": "new26nov-hy4",
+      "claimId": "hosted",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "originId": "tencent-hy4-api-announcement-20261104",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "November 4, 2026",
+      "locator": "Tencent Launches Hy4 exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/tencent-hy4.txt",
+      "sha256": "78a432967dd38747247cd251fcca26dbac0c655cfe2d1e72a696827cbf2f7ea9"
+    },
+    {
+      "id": "tencent-hy4-hosted-release-2026-quote-2",
+      "sourceId": "new26nov-hy4",
+      "claimId": "hosted",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "originId": "tencent-hy4-api-announcement-20261104",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Hy4 is currently available across Tencent Cloud TokenHub",
+      "locator": "Tencent Launches Hy4 exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/tencent-hy4.txt",
+      "sha256": "78a432967dd38747247cd251fcca26dbac0c655cfe2d1e72a696827cbf2f7ea9"
+    },
+    {
+      "id": "tencent-hy4-hosted-release-2026-quote-3",
+      "sourceId": "new26nov-hy4-route",
+      "claimId": "hosted",
+      "url": "https://openrouter.ai/tencent/hy4",
+      "originId": "openrouter-hy4-provider-listing-20261104",
+      "accessedAt": "2026-11-06",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "This model is hosted by one provider.",
+      "locator": "Tencent: Hy4 — API provider listing exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/tencent-openrouter.txt",
+      "sha256": "57bbf370d641f8a49d5e3d6c31626d243421046aa9a252e19abf35d40a2cd0a3"
+    },
+    {
+      "id": "tencent-hy4-hosted-release-2026-quote-4",
+      "sourceId": "new26nov-hy4",
+      "claimId": "limits",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "originId": "tencent-hy4-api-announcement-20261104",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "plans to release model weights and system cards in the coming days",
+      "locator": "Tencent Launches Hy4 exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/tencent-hy4.txt",
+      "sha256": "78a432967dd38747247cd251fcca26dbac0c655cfe2d1e72a696827cbf2f7ea9"
+    },
+    {
+      "id": "tencent-hy4-hosted-release-2026-quote-5",
+      "sourceId": "new26nov-hy4-preview",
+      "claimId": "limits",
+      "url": "https://huggingface.co/api/models/tencent/Hy4-preview",
+      "originId": "tencent-hy4-preview-older-repository",
+      "accessedAt": "2026-11-06",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "\"createdAt\": \"2026-08-27T08:52:40.000Z\"",
+      "locator": "Tencent Hy4-preview Hugging Face metadata exact passage",
+      "artifact": "governance/evidence/2026-11-06/direct/tencent-hf-api.txt",
+      "sha256": "ae324d1df3d9653b20d06720b6744757a5540975162e3257ccc367a38d202f91"
+    },
+    {
+      "id": "tencent-hy4-hosted-release-2026-fresh-20261109",
+      "sourceId": "new26nov-hy4",
+      "claimId": "limits",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "originId": "tencent-hy4-api-announcement-20261104",
+      "accessedAt": "2026-11-09",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "plans to release model weights and system cards in the coming days",
+      "locator": "Rechecked original page on 2026-11-09; this is source wording, not proof that no other updates exist.",
+      "artifact": "governance/evidence/2026-11-09/direct/tencent-old-hy4.txt",
+      "sha256": "78a432967dd38747247cd251fcca26dbac0c655cfe2d1e72a696827cbf2f7ea9"
+    }
+  ]
+}

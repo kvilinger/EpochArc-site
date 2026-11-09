@@ -1,0 +1,287 @@
+Kimi K3.1 Pro open weights: release and terms | NeoTeo
+
+Home
+Devices
+Games
+
+Topics
+
+Technology
+
+Hardware
+Software
+AI
+Security
+Internet
+Networks
+Gadgets
+Systems
+
+Games
+
+PC
+Consoles
+Retro
+Emulation
+Industry
+Mods
+Steam
+
+Business
+
+Companies
+Startups
+Market
+Acquisitions
+Regulation
+Work
+Productivity
+
+Science
+
+Space
+Energy
+Ecology
+Robotics
+Biotech
+Physics
+Future
+
+Culture
+
+Film
+Series
+Geek
+History
+Curiosities
+Design
+Art
+
+Mobility
+
+Cars
+Electric
+Transport
+Concepts
+Drones
+
+Resources
+
+Tutorials
+Tools
+Downloads
+Recommendations
+Guides
+
+Search
+Contact
+
+EN
+
+ES
+FR
+DE
+IT
+PT
+NL
+PL
+
+Login
+Sign up
+
+NeoTeo
+
+Home
+Devices
+Games
+
+Search
+
+Contact
+
+Topics
+
+Login
+
+Sign up
+
+Kimi K3.1 Pro open weights: what the release means for developers
+
+The weights were reported available on November 4, 2026. Moonshot’s model card details serving engines and API handling, while the Terminal-Bench comparison draws on scores with mixed provenance.
+
+November 8, 2026
+
+Key points
+
+01
+
+Europa Press reported that Kimi K3.1 Pro weights became available on Hugging Face on November 4, 2026.
+
+02
+
+Moonshot lists vLLM, SGLang, and TokenSpeed for inference and requires complete assistant messages for multi-turn and tool-call requests.
+
+03
+
+Moonshot reports a 65.7% Terminal-Bench 4.0 score for Kimi K3.1 Pro; the peer scores in its comparison have mixed provenance.
+
+04
+
+The repository names a model-specific Kimi K3.1 Pro License, with additional terms summarized by Europa Press.
+
+In this article
+
+01
+What the model card says about local serving
+
+02
+How to read the Terminal-Bench comparison
+
+03
+The weights have a model-specific license
+
+Europa Press reported Kimi K3.1 Pro weights available on Hugging Face Nov. 4, 2026; model-card serving options, benchmark notes and license terms.
+
+Europa Press reported that Moonshot AI’s Kimi K3.1 Pro weights became available on Hugging Face on
+November 4, 2026
+. Moonshot had announced the model on October 23 and set November 4 as its release deadline. The downloadable weights open a path to running the model on infrastructure chosen by its users; Moonshot’s model card names serving engines and spells out an important requirement for multi-turn API calls.
+
+For a broader look at Chinese open-weight models, see
+NeoTeo’s earlier coverage
+. Kimi K3.1 Pro is a separate release.
+
+Treat downloading the weights and meeting the license terms as two separate deployment decisions.
+
+What the model card says about local serving
+
+Kimi K3.1 Pro uses a mixture-of-experts architecture, a design that activates selected groups of model parameters for each token. Moonshot’s model card lists
+2.8 trillion total parameters
+,
+104 billion activated parameters
+, 896 experts, 16 selected experts per token, and two shared experts. It also specifies a context length of
+1,048,576 tokens
+. The repository hosts the model card and files for the release.
+
+Moonshot recommends
+vLLM, SGLang, and TokenSpeed
+as inference engines and includes serving examples in its
+Hugging Face model card
+. Those names give developers a starting point for choosing software to serve the weights; they don’t determine a system’s hardware configuration.
+
+The card also gives a detail that matters when building an API integration. For multi-turn conversations and tool calls, the complete assistant message returned by the API must be passed back into the next request, including
+reasoning_content
+and
+tool_calls
+, rather than just the visible
+content
+. The
+reasoning_effort
+setting accepts
+low
+,
+high
+, or
+max
+; its default is
+max
+.
+
+How to read the Terminal-Bench comparison
+
+VitoMind’s matched-prompt coding builds
+
+Moonshot reports a
+65.7%
+score for Kimi K3.1 Pro on Terminal-Bench 4.0. Its published comparison lists 66.4% for Claude Opus 5.5 and 58.2% for GPT-6 Astra.
+
+Model
+
+Terminal-Bench 4.0 score reported by Moonshot AI
+
+Kimi K3.1 Pro
+
+65.7%
+
+Claude Opus 5.5
+
+66.4%
+
+GPT-6 Astra
+
+58.2%
+
+Moonshot says it evaluated Kimi K3.1 Pro with the Claude Code harness. The other scores are the maximum values reported in model blog posts or on the Terminal-Bench leaderboard, so the table brings together results with mixed provenance rather than one controlled, independent head-to-head. Moonshot’s model card says its results generally use maximum reasoning effort, temperature 1.0, and top-p 0.95 unless a benchmark’s notes specify otherwise. The company’s
+benchmark announcement
+gives the scores and evaluation context.
+
+A separate English-language video by VitoMind walks through builds from eight matched prompts. The creator shows one build per prompt, without retries or agents; the models used different reasoning settings and were tested on different dates.
+
+The weights have a model-specific license
+
+Hugging Face names the license
+Kimi K3.1 Pro License
+. Europa Press reports that it permits use, modification, fine-tuning, and redistribution subject to conditions. Its summary says an organization offering the model to third parties as a service and billing more than $20 million annually must sign a separate agreement with Moonshot. It also reports an interface attribution requirement for products with more than 100 million monthly users or more than $20 million in monthly revenue.
+
+Those conditions make the license name worth checking before building a service around the model. Downloadable weights provide a deployment option; the license still defines terms for use and redistribution.
+
+Other Languages
+
+Read this article in another available language.
+
+Deutsch
+Português
+Nederlands
+Polski
+Italiano
+Français
+Español
+
+NeoTeo
+
+Read next
+
+View all →
+
+Microsoft had not chosen which neoclouds to leave, CNBC reported
+
+CNBC reported on November 6, 2026, that Microsoft had not chosen which neoclouds to leave; Nscale and IREN changes invol…
+
+2 hours ago
+
+More than 100 protest planned AWS data centers in Huesca
+
+More than 100 people protested planned AWS data centers in Huesca on November 6, citing water, electricity and project i…
+
+2 hours ago
+
+What Vals’ DeepSeek cyber benchmark actually measured
+
+Vals’ CyberOffense benchmark gave DeepSeek 16.3/21 on Nova and 21/31 on Lighthouse, in isolated simulations with hidden-…
+
+2 hours ago
+
+Site footer
+
+Ecommerce news
+
+Online courses
+
+Finance & crypto
+
+Software & cybersecurity news
+
+Cinema lenses
+
+AI image & video generator
+
+SEO tools
+
+Social media management
+
+Copyright © 2005-2026 NeoTeo. All rights reserved.
+
+Google
+
+Follow NeoTeo on Google to see more of our stories
+
+Add as a preferred source on Google

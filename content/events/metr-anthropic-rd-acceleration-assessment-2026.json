@@ -1,0 +1,107 @@
+{
+  "id": "metr-anthropic-rd-acceleration-assessment-2026",
+  "slug": "metr-anthropic-rd-acceleration-assessment-2026",
+  "date": "2026-11-05",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-05",
+    "zhHans": "2026年11月5日"
+  },
+  "categories": [
+    "capability"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "METR publishes a qualified assessment of Anthropic AI R&D acceleration",
+    "zhHans": "METR 发布对 Anthropic AI 研发加速情况的有限评估"
+  },
+  "searchSummary": {
+    "en": "METR estimated roughly twice the historical rate of progress on specified tasks, with high uncertainty and extensive Anthropic redactions.",
+    "zhHans": "METR 估计指定任务上的能力进展速率约为历史水平的两倍，但不确定性高，且 Anthropic 大幅删节证据。"
+  },
+  "summary": {
+    "en": "On November 5, METR published its high-access assessment of Anthropic AI R&D from August 12 to October 29. It estimated that progress on well-specified model tasks was around twice its March 2024–October 2025 rate, while a benchmark trend gave 1.9 times with a 95% interval of 1.5–2.8. METR said other causes may contribute and the true acceleration could be around 1.3 or 3 times. Anthropic redacted most evidence METR considered most informative, limiting public scrutiny; this is METR’s qualified assessment, not a fully reproducible result.",
+    "zhHans": "METR 于 11 月 5 日公布了针对 Anthropic 8 月 12 日至 10 月 29 日 AI 研发活动的高权限评估。它估计，指定任务上的模型能力进展速率约为 2024 年 3 月至 2025 年 10 月水平的两倍；一项基准指标估计为 1.9 倍，95% 区间为 1.5 至 2.8 倍。METR 指出其他因素可能参与作用，真实加速幅度也可能接近 1.3 倍或 3 倍。Anthropic 删节了 METR 认为最有信息量的大部分证据，限制了公众核查；这是有保留的评估，而非可完整复现的结论。"
+  },
+  "narrative": {
+    "en": "The event date is the public report, not the October assessment period. METR is an external evaluator with privileged access, but it is the originator of these estimates; press accounts repeating its numbers do not create a second independent measurement. Redactions and causal uncertainty preclude treating the estimate as established autonomous AI self-improvement.",
+    "zhHans": "事件日期为报告公开日，而非 10 月评估期。METR 是取得高权限资料的外部评估者，但它仍是这些估计的原始来源；媒体重复数字不构成第二次独立测量。删节与因果不确定性也使该估计不能被写成 AI 自主改进已经得到证实。"
+  },
+  "claims": [
+    {
+      "id": "estimate",
+      "claimType": "fact",
+      "text": {
+        "en": "METR published a qualified estimate on November 5 of roughly doubled progress rate on specified tasks, with a 1.9x benchmark trend and wide uncertainty.",
+        "zhHans": "METR 于 11 月 5 日发布有保留的估计：指定任务上的进展速率约翻倍，基准趋势约为 1.9 倍，不确定性较大。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26nov-metr"
+      ]
+    },
+    {
+      "id": "limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "Anthropic redacted much of the evidence METR found most informative; the true rate and the contribution of AI to it remain uncertain.",
+        "zhHans": "Anthropic 删节了 METR 认为最有信息量的大量证据；实际速率及 AI 的贡献仍有不确定性。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26nov-metr"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-06",
+    "updatedAt": "2026-11-09",
+    "lastSourceCheckAt": "2026-11-09",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+    "changeLog": [
+      {
+        "date": "2026-11-06",
+        "changeType": "created",
+        "summary": "Prepared a bounded bilingual candidate without canonical publication."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "source_added",
+        "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Proposed precise publication state for human authorization only."
+      }
+    ],
+    "reviewedAt": "2026-11-09",
+    "reviewer": "gemini-request:deb5ceecb764",
+    "reviewRecord": "governance/reviews/independent-20261109/metr-anthropic-rd-acceleration-assessment-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-09"
+  },
+  "sources": [
+    {
+      "sourceId": "new26nov-metr",
+      "supports": [
+        "metr-anthropic-rd-acceleration-assessment-2026",
+        "estimate",
+        "limits"
+      ]
+    }
+  ]
+}

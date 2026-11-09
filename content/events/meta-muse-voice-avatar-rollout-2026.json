@@ -1,0 +1,120 @@
+{
+  "id": "meta-muse-voice-avatar-rollout-2026",
+  "slug": "meta-muse-voice-avatar-rollout-2026",
+  "date": "2026-11-05",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-05",
+    "zhHans": "2026年11月5日"
+  },
+  "categories": [
+    "product"
+  ],
+  "significance": 1,
+  "controversy": false,
+  "title": {
+    "en": "Meta rolls out voice conversations and avatars in Muse",
+    "zhHans": "Meta 在 Muse 中推出语音对话与动态形象"
+  },
+  "searchSummary": {
+    "en": "Meta began rolling out Muse voice and expressive avatars to US app users on November 5; a Verge reporter tried the iOS feature.",
+    "zhHans": "Meta 于 11 月 5 日开始向美国 Muse 用户推送语音及动态形象；The Verge 记者在 iOS 上进行了试用。"
+  },
+  "summary": {
+    "en": "Meta announced that real-time voice conversations and expressive avatars were rolling out in the Muse app in the US on November 5. A Verge reporter independently accessed and briefly tested the iOS feature, reporting occasional pauses. Support for AI glasses and Muse Charm was described as coming soon, not available then. The test does not measure population-wide usage or reliability.",
+    "zhHans": "Meta 于 11 月 5 日宣布，Muse 应用中的实时语音对话与动态形象开始在美国推送。The Verge 记者独立取得 iOS 端功能并进行了简短试用，称回答偶有停顿。面向 AI 眼镜和 Muse Charm 的支持被描述为即将推出，而非当时已经可用。短时试用不能衡量整体用户规模或可靠性。"
+  },
+  "narrative": {
+    "en": "This is a consumer app rollout rather than the earlier Muse Voice Transcribe speech-perception model release. The direct reporter trial verifies one instance of access but not coverage of all US accounts or real-world productivity impact.",
+    "zhHans": "本事件是消费应用功能推送，不是此前 Muse Voice Transcribe 语音感知模型的发布。记者亲自试用能确认一个账号取得功能，却不能证明所有美国账号都已覆盖或实际效率提升。"
+  },
+  "claims": [
+    {
+      "id": "rollout",
+      "claimType": "fact",
+      "text": {
+        "en": "Meta announced a US rollout of Muse app voice and expressive avatars, and a reporter accessed and tested the feature on iOS.",
+        "zhHans": "Meta 宣布在美国推送 Muse 应用的语音与动态形象；一位记者在 iOS 上取得功能并进行了测试。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26nov-muse",
+        "new26nov-muse-test"
+      ]
+    },
+    {
+      "id": "limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "AI glasses and Muse Charm support were described as coming soon; a brief reporter test noted occasional pauses and does not prove broad adoption.",
+        "zhHans": "面向 AI 眼镜和 Muse Charm 的支持仍属即将推出；记者短时试用发现偶尔停顿，不能证明大规模采用。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "new26nov-muse",
+        "new26nov-muse-test"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "meta-muse-personal-agent-2026",
+    "meta-muse-voice-transcribe-2026"
+  ],
+  "relatedForecasts": [],
+  "status": "published",
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "impacts": [],
+  "editorial": {
+    "createdAt": "2026-11-06",
+    "updatedAt": "2026-11-09",
+    "lastSourceCheckAt": "2026-11-09",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "PROVISIONAL exact publication wrapper only. Gemini review is not human approval; canonical site not modified. Date/run/subject/policy changes invalidate this request.",
+    "changeLog": [
+      {
+        "date": "2026-11-06",
+        "changeType": "created",
+        "summary": "Prepared a bounded bilingual candidate without canonical publication."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "source_added",
+        "summary": "Rechecked original dated source on Nov9; no released-state transition inferred from bounded absence."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Attached successful independent model verdict and run digest; staged as reviewed only, without modifying canonical site."
+      },
+      {
+        "date": "2026-11-09",
+        "changeType": "correction",
+        "summary": "Proposed precise publication state for human authorization only."
+      }
+    ],
+    "reviewedAt": "2026-11-09",
+    "reviewer": "gemini-request:fbb62d101736",
+    "reviewRecord": "governance/reviews/independent-20261109/meta-muse-voice-avatar-rollout-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-09"
+  },
+  "sources": [
+    {
+      "sourceId": "new26nov-muse",
+      "supports": [
+        "meta-muse-voice-avatar-rollout-2026",
+        "rollout",
+        "limits"
+      ]
+    },
+    {
+      "sourceId": "new26nov-muse-test",
+      "supports": [
+        "meta-muse-voice-avatar-rollout-2026",
+        "rollout",
+        "limits"
+      ]
+    }
+  ]
+}
