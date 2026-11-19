@@ -31552,6 +31552,138 @@
     }
   },
   {
+    "id": "united-airlines-ai-agent-restrictions-2026",
+    "slug": "united-airlines-ai-agent-restrictions-2026",
+    "date": "2026-11-11",
+    "datePrecision": "day",
+    "displayDate": {
+      "en": "2026-11-11",
+      "zhHans": "2026年11月11日"
+    },
+    "title": {
+      "en": "United announces steps to restrict unauthorized third-party AI agents",
+      "zhHans": "美联航宣布采取措施限制未经授权的第三方 AI 代理"
+    },
+    "searchSummary": {
+      "en": "United said it was restricting unauthorized personal AI agents across its digital channels and travel distribution, while the reach and effectiveness of enforcement remained unverified.",
+      "zhHans": "美联航表示正限制未经授权的个人 AI 代理使用其数字渠道及旅行分销渠道；限制的实际覆盖范围和执行效果尚未获核实。"
+    },
+    "summary": {
+      "en": "On November 11, United Airlines said it was taking steps to restrict unauthorized third-party personal AI agents, including updates to booking, ticketing and distribution policies. The company cited account security and possible regulatory risks; it did not provide a measured count of blocked agents or affected bookings.",
+      "zhHans": "11 月 11 日，美联航表示正采取措施限制未经授权的第三方个人 AI 代理，包括更新订票、出票及分销政策。公司将账户安全和潜在监管风险列为理由，但未提供被拦截代理或受影响订票的实测数量。"
+    },
+    "narrative": {
+      "en": "United’s newsroom statement describes both direct platform access and indirect access through agencies and aggregators. Its account-security and FAA/DOT concerns are the company’s rationale, not independently measured harm. Forbes interviewed other airlines about different agent-booking approaches; One Mile at a Time’s author questioned whether pricing and channel control could also matter. The latter is opinion, not proof of United’s motive. A direct read of United’s current Contract of Carriage failed, and none of the reviewed sources independently tests complete technical enforcement.",
+      "zhHans": "美联航的新闻室声明涵盖数字平台上的直接访问及通过旅行代理商和聚合商的间接访问。账户安全和 FAA/DOT 合规顾虑属于公司解释，不是经过独立测量的损害。Forbes 采访了采用不同代理订票做法的其他航空公司；One Mile at a Time 作者质疑价格和渠道控制是否也有影响。后者是评论意见，不能证明美联航的实际动机。直接读取美联航现行《运输合同》失败，所阅来源亦未独立测试技术限制是否全面执行。"
+    },
+    "categories": [
+      "product"
+    ],
+    "status": "published",
+    "significance": 1,
+    "impactIndex": 0,
+    "consensusLevel": "emerging",
+    "controversy": true,
+    "claims": [
+      {
+        "id": "united-airlines-ai-agent-restrictions-2026-core",
+        "claimType": "fact",
+        "text": {
+          "en": "United stated on November 11 that it was taking steps to restrict unauthorized third-party personal AI agents, including booking, ticketing and distribution-policy updates.",
+          "zhHans": "美联航于 11 月 11 日表示，正采取措施限制未经授权的第三方个人 AI 代理，包括更新订票、出票及分销政策。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "restart17-sup-united-mediaroom"
+        ],
+        "notes": "Direct first-party United press statement proves announcement only; do not infer technical effectiveness."
+      },
+      {
+        "id": "united-airlines-ai-agent-restrictions-2026-limits",
+        "claimType": "limitation",
+        "text": {
+          "en": "United cited account security and potential FAA/DOT compliance risks, but its statement provides no measured count of blocked agents or affected bookings and does not demonstrate full technical enforcement.",
+          "zhHans": "美联航提到账户安全及潜在的 FAA/DOT 合规风险，但其声明没有提供被拦截代理或受影响订票的实测数量，也不能证明技术限制已全面执行。"
+        },
+        "evidenceGrade": "B",
+        "sourceIds": [
+          "restart17-sup-united-mediaroom"
+        ],
+        "notes": "Bounded to absence of measurements in this company statement, not a universal assertion that no other data exists."
+      },
+      {
+        "id": "united-airlines-ai-agent-restrictions-2026-dispute",
+        "claimType": "limitation",
+        "text": {
+          "en": "A travel columnist speculated that pricing or channel control could also motivate the restriction; Forbes interviewed other airlines describing different approaches. Neither proves United’s actual motive or how effectively it blocks agents.",
+          "zhHans": "一位旅行专栏作者推测限制也可能与价格或渠道控制有关；Forbes 采访的其他航空公司则介绍了不同做法。这些材料既不能证明美联航的实际动机，也不能证明其拦截代理的效果。"
+        },
+        "evidenceGrade": "C",
+        "sourceIds": [
+          "restart19-united-omaat",
+          "restart19-united-forbes"
+        ],
+        "notes": "Independent editorial opinion and direct rival-airline interviews support existence of debate, not attribution or technical verification."
+      }
+    ],
+    "impacts": [],
+    "sources": [
+      {
+        "sourceId": "restart17-sup-united-mediaroom",
+        "supports": [
+          "united-airlines-ai-agent-restrictions-2026",
+          "united-airlines-ai-agent-restrictions-2026-core",
+          "united-airlines-ai-agent-restrictions-2026-limits"
+        ]
+      },
+      {
+        "sourceId": "restart19-united-forbes",
+        "supports": [
+          "united-airlines-ai-agent-restrictions-2026",
+          "united-airlines-ai-agent-restrictions-2026-dispute"
+        ]
+      },
+      {
+        "sourceId": "restart19-united-omaat",
+        "supports": [
+          "united-airlines-ai-agent-restrictions-2026",
+          "united-airlines-ai-agent-restrictions-2026-dispute"
+        ]
+      }
+    ],
+    "relatedEvents": [],
+    "relatedForecasts": [],
+    "editorial": {
+      "createdAt": "2026-11-17",
+      "updatedAt": "2026-11-19",
+      "lastSourceCheckAt": "2026-11-19",
+      "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+      "reviewNotes": "This bounded published-state candidate was prepared on 2026-11-19 before authorization: United’s newsroom documents announced steps, not measured technical enforcement. Direct current contract terms were not read. Authorization and actual deployment are recorded separately, never implied by this note.",
+      "changeLog": [
+        {
+          "date": "2026-11-17",
+          "changeType": "created",
+          "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+        },
+        {
+          "date": "2026-11-17",
+          "changeType": "correction",
+          "summary": "Narrowed event to United official statement and bound first-party newsroom source; remain an isolated draft."
+        },
+        {
+          "date": "2026-11-19",
+          "changeType": "correction",
+          "summary": "Broadened title, bound separate editorial opinion and rival-airline interviews to a qualified dispute limitation, and removed unsupported inference about enforcement."
+        }
+      ],
+      "reviewedAt": "2026-11-19",
+      "reviewer": "gemini:01a1f44c-fcf1-748a-b2d9-2dbc8689639e",
+      "reviewProvenance": "v2.4",
+      "reviewRecord": "governance/reviews/independent-20261119/united-airlines-ai-agent-restrictions-2026.json",
+      "publishedAt": "2026-11-19"
+    }
+  },
+  {
     "id": "vibecoding-2025",
     "slug": "vibecoding-coined",
     "title": {

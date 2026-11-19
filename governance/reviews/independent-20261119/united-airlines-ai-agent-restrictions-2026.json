@@ -1,0 +1,194 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "united-airlines-ai-agent-restrictions-2026",
+  "subjectDigest": "d5280e311a5d11e3777b63abc6bbd30258e4701a202e52ae4333570f797aac3d",
+  "inputsDigest": "c48b20ff4f3abf590bc4fc96789a253d417175d1bf8da24b5b4322ee592e4835",
+  "evidenceCutoff": "2026-11-19",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f44c-fcf1-748a-b2d9-2dbc8689639e",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f44c-fcf1-748a-b2d9-2dbc8689639e",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Earlier Hydrogen draft and first-packet findings are retained with exact hashes; an incomplete analysis citation was corrected in r2. These limited findings and the publisher’s announcement do not amount to technical enforcement verification or human approval.",
+    "United current Contract of Carriage direct request failed curl92; OMAAT quotes cannot substitute direct terms review.",
+    "Announcement does not establish complete technical enforcement, measured affected bookings, actual safety incidents or commercial motive.",
+    "Targeted four-query discovery is not exhaustive six-channel window coverage.",
+    "This published-state content was prepared before approval or deployment; a separate exact-digest approval artifact and release report must record subsequent authorization and production changes."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Compared English/zh core announcement, risk reason and conditional columnist speculation with original texts and Hydrogen r3 exact-text parity check; no guaranteed complete technical block."
+  },
+  "evidence": [
+    {
+      "id": "u-company-date",
+      "sourceId": "restart17-sup-united-mediaroom",
+      "claimId": "united-airlines-ai-agent-restrictions-2026-core",
+      "url": "https://united.mediaroom.com/news-releases?item=125496",
+      "originId": "united-ai-agent-restrictions-20261111",
+      "accessedAt": "2026-11-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "November 11, 2026",
+      "locator": "United newsroom masthead date",
+      "artifact": "governance/evidence/2026-11-19/direct/united-official.txt",
+      "sha256": "b82b23881ebccca1f2d79eacae64167312aed7a82b37fd6a03e97e385fe0619f"
+    },
+    {
+      "id": "u-company-steps",
+      "sourceId": "restart17-sup-united-mediaroom",
+      "claimId": "united-airlines-ai-agent-restrictions-2026-core",
+      "url": "https://united.mediaroom.com/news-releases?item=125496",
+      "originId": "united-ai-agent-restrictions-20261111",
+      "accessedAt": "2026-11-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "As a result, United is taking steps to restrict access - directly within our digital platforms and indirectly via travel agencies and aggregators - to prohibit use by unauthorized, third-party personal AI agents or assistants. This work includes updates to our booking, ticketing and distribution policies.",
+      "locator": "United newsroom As a result paragraph",
+      "artifact": "governance/evidence/2026-11-19/direct/united-official.txt",
+      "sha256": "b82b23881ebccca1f2d79eacae64167312aed7a82b37fd6a03e97e385fe0619f"
+    },
+    {
+      "id": "u-company-risk",
+      "sourceId": "restart17-sup-united-mediaroom",
+      "claimId": "united-airlines-ai-agent-restrictions-2026-limits",
+      "url": "https://united.mediaroom.com/news-releases?item=125496",
+      "originId": "united-ai-agent-restrictions-20261111",
+      "accessedAt": "2026-11-19",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "sharing account credentials with personal, third-party, AI assistants can expose sensitive information, and actions taken by these tools may result in unintended purchases, account changes, or use of MileagePlus miles. Plus, these automated AI actions have the potential to violate FAA and DOT regulations",
+      "locator": "United newsroom risk paragraph; not a verified harm count; complete article has no measured enforcement count",
+      "artifact": "governance/evidence/2026-11-19/direct/united-official.txt",
+      "sha256": "b82b23881ebccca1f2d79eacae64167312aed7a82b37fd6a03e97e385fe0619f"
+    },
+    {
+      "id": "u-omaat-counter",
+      "sourceId": "restart19-united-omaat",
+      "claimId": "united-airlines-ai-agent-restrictions-2026-dispute",
+      "url": "https://onemileatatime.com/news/united-airlines-bans-ai-agents-protect-customers/",
+      "originId": "omaat-united-ai-policy-commentary-20261111",
+      "accessedAt": "2026-11-19",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "I suspect United’s real motive here is that it doesn’t want AI automatically being able to track and reprice flights (and then issue vouchers for passengers), or being able to too closely compare overall value on different airlines.",
+      "locator": "OMAAT section What’s United’s real motive; clearly author speculation",
+      "artifact": "governance/evidence/2026-11-19/direct/united-omaat.txt",
+      "sha256": "381e2f56daaac5a17b5b96fa791b63a483c75161fb1941b3bb3a83a135ac0846"
+    },
+    {
+      "id": "u-forbes-analysis",
+      "sourceId": "restart19-united-forbes",
+      "claimId": "united-airlines-ai-agent-restrictions-2026-dispute",
+      "url": "https://www.forbes.com/sites/suzannerowankelleher/2026/11/12/united-airlines-blocks-ai-agents-booking-flights/",
+      "originId": "forbes-united-rivals-interviews-20261112",
+      "accessedAt": "2026-11-19",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "“United understandably wants to control the conversation with customers and is afraid it’ll be machine-to-machine talking rather than machine-to-person talking,” Gradek said.",
+      "locator": "Forbes Other US Airlines section, Gradek perspective on customer-conversation control; expert interpretation not demonstrated United intent",
+      "artifact": "governance/evidence/2026-11-19/direct/united-forbes.txt",
+      "sha256": "c8dba068499ee081795c7692e00c990bc7a3208603a794d3ce00fdcd979048d1"
+    },
+    {
+      "id": "u-forbes-rivals",
+      "sourceId": "restart19-united-forbes",
+      "claimId": "united-airlines-ai-agent-restrictions-2026-dispute",
+      "url": "https://www.forbes.com/sites/suzannerowankelleher/2026/11/12/united-airlines-blocks-ai-agents-booking-flights/",
+      "originId": "forbes-united-rivals-interviews-20261112",
+      "accessedAt": "2026-11-19",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Other major U.S. airlines—Delta, American, JetBlue—allow customers to book flights with agentic AI platforms but say the customer ultimately assumes any risk.",
+      "locator": "Forbes Key Facts; distinct competitor positions, not proof of United motive",
+      "artifact": "governance/evidence/2026-11-19/direct/united-forbes.txt",
+      "sha256": "c8dba068499ee081795c7692e00c990bc7a3208603a794d3ce00fdcd979048d1"
+    }
+  ],
+  "runId": "targeted-united-announcement-20261119-pilot",
+  "candidateId": "united-airlines-ai-agent-restrictions",
+  "runDigest": "f60c2fb8d13581436829977cbfde968108d23556b555b8bbc6a3869407f6fd47",
+  "coreFactClaimIds": [
+    "united-airlines-ai-agent-restrictions-2026-core"
+  ],
+  "identity": {
+    "seriesId": "united-ai-agent-access-restrictions",
+    "action": "announces steps to restrict unauthorized personal third-party AI agents",
+    "stage": "announced",
+    "dateBasis": "Dated Nov 11 newsroom statement; company says taking steps, not validated complete enforcement.",
+    "deduplicationReason": "No previously published United policy announcement on agent access; distinct from other providers’ agent launches and Perplexity/Amazon court appeal.",
+    "comparedEventIds": [
+      "meta-muse-personal-agent-2026",
+      "perplexity-amazon-agent-cfaa-appeal-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Private carrier platform access and booking distribution policy announcement, not binding government regulation or judicial action."
+  },
+  "significance": {
+    "rationale": "Concrete dated one-carrier policy announcement with B first-party evidence is an L1 access-policy event; actual usage impact unmeasured.",
+    "whyNotHigher": "No direct official contract text, verified technical restriction or two unaffiliated production organizations demonstrating material access change.",
+    "whyNotLower": "United newsroom confirms a distinct policy restriction program, including booking, ticketing and distribution; not merely a speculative report.",
+    "comparisonEventIds": [
+      "perplexity-amazon-agent-cfaa-appeal-2026",
+      "meta-muse-personal-agent-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "Announcement of taking steps and policies, but direct contract read and actual blocking test unavailable.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No two independently verified unaffiliated organizations demonstrate production access change. Rival-airline statements describe different policies, not adoption of United restriction.",
+            "evidenceIds": []
+          }
+        }
+      },
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "Restriction announcement does not demonstrate a new deployed workflow.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No observed production adoption by two independent organizations.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Company announced access changes; operational and safety/market effects unmeasured; competing airlines publicly describe different approaches.",
+    "evidenceIds": [
+      "u-company-steps",
+      "u-forbes-rivals"
+    ]
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "Opinion columnist challenges company security-only framing and breadth; competing airlines interviewed by Forbes take different approaches. Not proof of United commercial motives.",
+    "evidenceIds": [
+      "u-omaat-counter",
+      "u-forbes-rivals"
+    ]
+  },
+  "provenanceNote": "Earlier Hydrogen reviewed-state audit applied to a different subject digest. Independent published-state audit evidence, later approval and eventual deployment are recorded separately and must not be inferred from this review record alone."
+}

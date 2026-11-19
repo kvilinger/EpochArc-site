@@ -309,6 +309,7 @@ export const EVENT_ROUTES = Object.freeze({
   "turing-test": "turing-test",
   "turing-test-1950": "turing-test",
   "uk-ico-foundation-model-changes-2026": "uk-ico-foundation-model-changes-2026",
+  "united-airlines-ai-agent-restrictions-2026": "united-airlines-ai-agent-restrictions-2026",
   "vibecoding-2025": "vibecoding-coined",
   "vibecoding-coined": "vibecoding-coined",
   "watson-jeopardy": "watson-jeopardy",

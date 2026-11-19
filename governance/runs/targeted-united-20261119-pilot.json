@@ -1,0 +1,145 @@
+{
+  "policyVersion": "2.4",
+  "runId": "targeted-united-announcement-20261119-pilot",
+  "kind": "targeted",
+  "scopeReason": "Single-event gate pilot for November 11 United newsroom announcement; not a full sweep and not publication authority.",
+  "windowStart": "2026-11-11",
+  "windowEnd": "2026-11-19",
+  "evidenceCutoff": "2026-11-19",
+  "timezone": "UTC",
+  "baselineCommit": "ece27cb91bd36cbb765cd0e6df1242a9fe92e7fc",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "promptVersion": "20261119-targeted-united-actual-queries-v1",
+  "channels": [
+    {
+      "id": "brave-web",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Four topic-specific searches, each first 20 results; date-filter heuristics and no completeness claim.",
+      "reason": "First-page keyword search is not exhaustive window coverage.",
+      "retryResult": "All four queries returned 200; no retry because the limit is breadth, not transient failure.",
+      "attempts": [
+        {
+          "query": "United Restricts Access for Third-Party AI Agents November 11 2026 official policy booking ticketing distribution",
+          "executedAt": "2026-11-19T14:24:08.542057+00:00",
+          "artifact": "governance/evidence/2026-11-19/search/fact.json",
+          "sha256": "6d8fdd54205f6ad974752bef608f488e49fe7cd29016046b00198ed7f0669c99",
+          "resultCount": 20
+        },
+        {
+          "query": "United AI agent policy restriction Nov 2026 independent tested booking denied agency API effective observed access",
+          "executedAt": "2026-11-19T14:24:13.043791+00:00",
+          "artifact": "governance/evidence/2026-11-19/search/impact.json",
+          "sha256": "b137c2c5630b5b54cfa3cb2085a584c1e71e3c2dbe42d562cdb2d78445dae377",
+          "resultCount": 20
+        },
+        {
+          "query": "United third-party personal AI agents booking restriction security FAA DOT independent legal analysis 2026",
+          "executedAt": "2026-11-19T14:24:16.831208+00:00",
+          "artifact": "governance/evidence/2026-11-19/search/analysis.json",
+          "sha256": "8fcfdf0ebb491e7c799b1137d3eca8086cffcbc31d4adde291037b1d2b7c3fc1",
+          "resultCount": 20
+        },
+        {
+          "query": "United AI agent booking restriction 2026 criticism travel agency consumer rights FAA DOT counterarguments",
+          "executedAt": "2026-11-19T14:24:20.693304+00:00",
+          "artifact": "governance/evidence/2026-11-19/search/controversy.json",
+          "sha256": "6473ef336991f446d5a7cd0d4fd2296a0f24a89e4081b30da1ad1c832b75339d",
+          "resultCount": 20
+        }
+      ]
+    },
+    {
+      "id": "united-contract-direct",
+      "status": "unavailable",
+      "windowCovered": false,
+      "coverageNote": "Tried direct publicly linked current United contract once; curl HTTP/2 failure, no body retained.",
+      "reason": "HTTP/2 stream INTERNAL_ERROR with curl exit 92; cannot claim to have read current contract.",
+      "retryResult": "Not retried or protocol-switched, avoiding workarounds; official newsroom and reporter quotation remain distinct provenance.",
+      "attempts": [
+        {
+          "query": "https://www.united.com/en/us/fly/contract-of-carriage.html",
+          "executedAt": "2026-11-19T14:26:30.697710+00:00",
+          "artifact": "governance/evidence/2026-11-19/direct/united-contract.meta.json",
+          "sha256": "231b038201f6e9f5d8d8d9f3b4079e0b2b978a9679a21b62ea4efeb148e1d679",
+          "resultCount": 0
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Focused on private product-access restriction of a travel service; other product events outside this targeted scope not checked."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "united-airlines-ai-agent-restrictions",
+      "discoveryUrls": [
+        "https://united.mediaroom.com/news-releases?item=125496",
+        "https://onemileatatime.com/news/united-airlines-bans-ai-agents-protect-customers/",
+        "https://www.forbes.com/sites/suzannerowankelleher/2026/11/12/united-airlines-blocks-ai-agents-booking-flights/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Read direct Nov11 United newsroom announcement and retained full text; technical enforcement not established.",
+        "novelty": "Distinct Nov11 access-restriction announcement from prior agent product availability and court litigation; no same United event in production baseline.",
+        "spillover": "Official notice expressly spans customers’ accounts and third-party agencies/aggregators, two different directly named affected audiences; actual reach unmeasured.",
+        "durability": "Company describes updates to booking/ticketing/distribution policies, a concrete ongoing arrangement; long-term enforcement remains unknown.",
+        "sourceQuality": "One original first-party statement; CBS/TechCrunch/Forbes restating United quote are not independent verification of technical enforcement, and linked contract body failed."
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "A dated first-party announcement of concrete private-platform booking-access policy changes, not a proven system-wide technical ban or measured impact. New distinct action vs prior published agent releases and appellate decision.",
+      "eventId": "united-airlines-ai-agent-restrictions-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "United Restricts Access for Third-Party AI Agents November 11 2026 official policy booking ticketing distribution",
+          "finding": "Direct United statement dated Nov11 reports taking steps and policy updates; does not prove complete implementation.",
+          "evidenceIds": [
+            "u-company-date",
+            "u-company-steps"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "United AI agent policy restriction Nov 2026 independent tested booking denied agency API effective observed access",
+          "finding": "Read company, Forbes and original traveler commentary; no measured blocked booking, confirmed passenger/agency reach or independent enforcement test. Search-result headlines do not establish impacts.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "United third-party personal AI agents booking restriction security FAA DOT independent legal analysis 2026",
+          "finding": "Forbes directly interviewed aviation-risk lecturer John Gradek on rival airline approaches and his interpretation of United’s desire to control customer conversations; a perspective, not proven company motive or binding legal conclusion.",
+          "evidenceIds": [
+            "u-forbes-analysis"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "United AI agent booking restriction 2026 criticism travel agency consumer rights FAA DOT counterarguments",
+          "finding": "One Mile at a Time journalist questions security-only motive and breadth of terms, explicitly as speculation; this is a documented disagreement about rationale, not proof of an alternative motive.",
+          "evidenceIds": [
+            "u-omaat-counter"
+          ]
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Targeted web queries do not substitute for full six-channel discovery.",
+    "Direct United terms read failed curl exit92; do not count OMAAT contract excerpt as a verified copy of current official terms.",
+    "Run candidate new/confirm indicates editorial routing only; any event or rating needs exact record review and human approval."
+  ]
+}
