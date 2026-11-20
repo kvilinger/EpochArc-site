@@ -1,0 +1,103 @@
+{
+  "id": "near-ai-sglang-disclosure-2026",
+  "slug": "near-ai-sglang-disclosure-2026",
+  "date": "2026-11-09",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-09",
+    "zhHans": "2026年11月9日"
+  },
+  "title": {
+    "en": "NEAR AI discloses a security incident involving SGLang",
+    "zhHans": "NEAR AI 披露涉及 SGLang 的安全事件"
+  },
+  "searchSummary": {
+    "en": "NEAR AI disclosed a security incident exploiting an SGLang vulnerability and described its response.",
+    "zhHans": "NEAR AI 披露利用 SGLang 漏洞的安全事件，并说明处理措施。"
+  },
+  "summary": {
+    "en": "Dated 2026-11-09: NEAR AI disclosed a security incident exploiting an SGLang vulnerability and described its response.",
+    "zhHans": "2026-11-09，NEAR AI 披露利用 SGLang 漏洞的安全事件，并说明处理措施。"
+  },
+  "narrative": {
+    "en": "The date records disclosure. The scope of the intrusion and remediation results are attributed to NEAR AI; an independent forensic investigation is not claimed to be complete.",
+    "zhHans": "此处日期为披露日；入侵范围和补救效果按 NEAR 自述，不宣称独立取证完成。"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "near-ai-sglang-disclosure-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "NEAR AI disclosed a security incident exploiting an SGLang vulnerability and described its response.",
+        "zhHans": "NEAR AI 披露利用 SGLang 漏洞的安全事件，并说明处理措施。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-near-sglang",
+        "restart17-near-csa"
+      ],
+      "notes": "Nov20 original full body and claim-local origin verified for the bounded action only; no independent adoption/scale is implied."
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "restart17-near-sglang",
+      "supports": [
+        "near-ai-sglang-disclosure-2026",
+        "near-ai-sglang-disclosure-2026-core"
+      ]
+    },
+    {
+      "sourceId": "restart17-near-csa",
+      "supports": [
+        "near-ai-sglang-disclosure-2026",
+        "near-ai-sglang-disclosure-2026-core"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-17",
+    "updatedAt": "2026-11-20",
+    "lastSourceCheckAt": "2026-11-20",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Unapproved Nov20 exact publication-state candidate after an ACCEPT_LIMITED independent complete reviewed-state v2.4 audit. A primary party establishes only its declared action/stage, not unmeasured impact. Separate published-state review and explicit one-list human approval remain mandatory.",
+    "changeLog": [
+      {
+        "date": "2026-11-17",
+        "changeType": "created",
+        "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Read full source bodies and checked claim-local stage/date/EN-ZH meaning. No substantive correction indicated in full-text diagnostic; production review still pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Assembled claim-local evidence and L1 route in isolated reviewed-state v2.4 proposal; exact packet independent audit remains pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Constructed isolated publication-state candidate from complete reviewed-state audit; not a production deployment or human approval."
+      }
+    ],
+    "reviewedAt": "2026-11-20",
+    "reviewer": "gemini:01a1f68e-8c83-7713-8ad3-6df1003550dd",
+    "reviewRecord": "governance/reviews/independent-20261120/near-ai-sglang-disclosure-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-20"
+  }
+}

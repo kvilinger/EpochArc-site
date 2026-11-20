@@ -1,0 +1,107 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "anthropic-ipo-roadshow-2026",
+  "subjectDigest": "d2b5d8c8ce797b33dab7e6b2bbb2459c56b2aafb03c9b23ab5bd4297b5a19c84",
+  "inputsDigest": "bdf0bd9f21ade2e6c08c9df321f8ec06fc3df05c881db75f41e5b391e1fd0571",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f68c-032b-7282-bb3c-70454ffb1739",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f68c-032b-7282-bb3c-70454ffb1739",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "anthropic-ipo-roadshow-2026-q1",
+      "sourceId": "restart17-anthropic-roadshow",
+      "claimId": "anthropic-ipo-roadshow-2026-core",
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "originId": "restart17-anthropic-ipo-roadshow-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-anthropic-roadshow.txt",
+      "sha256": "8bcd1a0127eb19b5292808c4d54197879df97495c98d93368fd131f8b7c3ce95"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "anthropic-ipo-roadshow",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "anthropic-ipo-roadshow-2026-core"
+  ],
+  "identity": {
+    "seriesId": "anthropic-ipo-roadshow",
+    "action": "Anthropic launches its proposed IPO roadshow",
+    "stage": "announced",
+    "dateBasis": "anthropic-ipo-roadshow-2026 2026-11-10: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Distinct announced dated action compared with already published zai-proposed-financing-2026 and crusoe-series-f-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "zai-proposed-financing-2026",
+      "crusoe-series-f-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "Anthropic launches its proposed IPO roadshow primarily concerns commerce: the verified core is the named announced action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event anthropic-ipo-roadshow-2026: confirmed stage announced, without independently observed downstream effects; comparators are zai-proposed-financing-2026 and crusoe-series-f-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-COMMERCE route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct announced action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "zai-proposed-financing-2026",
+      "crusoe-series-f-2026"
+    ],
+    "comparisonNotes": {
+      "zai-proposed-financing-2026": "zai-proposed-financing-2026: Z.AI files a conditional proposal for up to $5 billion in share and bond financing; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "crusoe-series-f-2026": "crusoe-series-f-2026: Crusoe closes initial $3.9 billion Series F at $30.9 billion valuation; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": null,
+            "rationale": "For anthropic-ipo-roadshow-2026: directly read declared event stage does not independently verify structural change executed against the L2-COMMERCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "For anthropic-ipo-roadshow-2026: directly read declared event stage does not independently verify external actors affected against the L2-COMMERCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared announced action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "anthropic-ipo-roadshow-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f68c-032b-7282-bb3c-70454ffb1739 returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

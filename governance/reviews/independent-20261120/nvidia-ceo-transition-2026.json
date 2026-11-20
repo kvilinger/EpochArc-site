@@ -1,0 +1,163 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "nvidia-ceo-transition-2026",
+  "subjectDigest": "bad24743119f65556291443c57436f608fa153adb4c29d8cc74ae5a95b064888",
+  "inputsDigest": "dc79e4cb14b1f6d66905ef31c2056833a58ff37f33fd7cab271cdf5c6e73e1d1",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f692-f348-7493-8f63-fc353c3e25d6",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f692-f348-7493-8f63-fc353c3e25d6",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "nvidia-ceo-transition-2026-q1",
+      "sourceId": "restart17-nvidia-ceo",
+      "claimId": "nvidia-ceo-transition-2026-core",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "originId": "restart17-nvidia-ceo-transition-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "NVIDIA (NASDAQ: NVDA) Board of Directors announced today that Jensen Huang has resigned as President, Chief Executive Officer, and a member of the Board, effective immediately.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-nvidia-ceo.txt",
+      "sha256": "75b8ec03f97e78184a83dcd8acacafb7f674b33686a0a3a573020f6179c8500d"
+    },
+    {
+      "id": "nvidia-ceo-transition-2026-q2",
+      "sourceId": "restart17-sup-nvidia-abc",
+      "claimId": "nvidia-ceo-transition-2026-core",
+      "url": "https://abcnews.com/US/nvidias-interim-ceo-colette-kress-career/story?id=138081475",
+      "originId": "restart17-nvidia-ceo-transition-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Colette Kress became one of the most influential tech sector leaders on Thursday after she was named interim CEO of Nvidia, following the\nresignation of Jensen Huang",
+      "locator": "ABC News Nov12 original reporting, lead on interim appointment and resignation",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-sup-nvidia-abc.txt",
+      "sha256": "e921f107f60a49a0e707bc31481635436106e1ea2c63dd18df092d2d917dd50f"
+    },
+    {
+      "id": "nvidia-ceo-transition-2026-q3",
+      "sourceId": "restart17-nvidia-ceo",
+      "claimId": "nvidia-ceo-transition-2026-board",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "originId": "restart17-nvidia-ceo-transition-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "NVIDIA (NASDAQ: NVDA) Board of Directors announced today that Jensen Huang has resigned as President, Chief Executive Officer, and a member of the Board, effective immediately.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-nvidia-ceo.txt",
+      "sha256": "75b8ec03f97e78184a83dcd8acacafb7f674b33686a0a3a573020f6179c8500d"
+    },
+    {
+      "id": "nvidia-ceo-transition-2026-q4",
+      "sourceId": "restart17-nvidia-ceo",
+      "claimId": "nvidia-ceo-transition-2026-core",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "originId": "restart17-nvidia-ceo-transition-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Colette Kress, current Executive Vice President and Chief Financial Officer of NVIDIA, has agreed to serve as Interim Chief Executive Officer.",
+      "locator": "NVIDIA Nov12 press release, succession paragraph",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-nvidia-ceo.txt",
+      "sha256": "75b8ec03f97e78184a83dcd8acacafb7f674b33686a0a3a573020f6179c8500d"
+    },
+    {
+      "id": "nvidia-ceo-transition-2026-q5",
+      "sourceId": "restart17-nvidia-ceo",
+      "claimId": "nvidia-ceo-transition-2026-board",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "originId": "restart17-nvidia-ceo-transition-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "The Board of Directors appointed Harvey C. Jones as its first-ever Chair of the Board.",
+      "locator": "NVIDIA Nov12 press release, board chair appointment",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-nvidia-ceo.txt",
+      "sha256": "75b8ec03f97e78184a83dcd8acacafb7f674b33686a0a3a573020f6179c8500d"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "nvidia-ceo-transition",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "nvidia-ceo-transition-2026-core"
+  ],
+  "identity": {
+    "seriesId": "nvidia-ceo-transition",
+    "action": "NVIDIA names Colette Kress interim CEO after Huang resigns",
+    "stage": "effective",
+    "dateBasis": "nvidia-ceo-transition-2026 2026-11-12: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Distinct effective dated action compared with already published nvidia-board-independent-inquiry-2026 and marvell-lumentum-merger-agreement-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "nvidia-board-independent-inquiry-2026",
+      "marvell-lumentum-merger-agreement-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "NVIDIA names Colette Kress interim CEO after Huang resigns primarily concerns commerce: the verified core is the named effective action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event nvidia-ceo-transition-2026: confirmed stage effective, without independently observed downstream effects; comparators are nvidia-board-independent-inquiry-2026 and marvell-lumentum-merger-agreement-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-COMMERCE route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct effective action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "nvidia-board-independent-inquiry-2026",
+      "marvell-lumentum-merger-agreement-2026"
+    ],
+    "comparisonNotes": {
+      "nvidia-board-independent-inquiry-2026": "nvidia-board-independent-inquiry-2026: NVIDIA board initiates independent inquiry after intelligence-target reporting; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "marvell-lumentum-merger-agreement-2026": "marvell-lumentum-merger-agreement-2026: Marvell and Lumentum sign an all-stock acquisition agreement; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": null,
+            "rationale": "Effective interim CEO and board appointments are verified, but no ownership, supply-demand, or transaction-rule structural change is established under the L2-COMMERCE route.",
+            "evidenceIds": []
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "For nvidia-ceo-transition-2026: directly read declared event stage does not independently verify external actors affected against the L2-COMMERCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared effective action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "nvidia-ceo-transition-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f692-f348-7493-8f63-fc353c3e25d6 returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

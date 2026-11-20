@@ -1,0 +1,149 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "openai-chatgpt-wallet-2026",
+  "subjectDigest": "5a5c15c0f8349754f24f99273f8d56a4a6ab858d70f71cfd4722857cdbcdd5c4",
+  "inputsDigest": "8a20c2b243f587f92af779f9c7275163364adb7e1cfd3b5eca669dfd3a7622aa",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f68f-bbd9-7785-9f3b-f2e2ca81b3d0",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f68f-bbd9-7785-9f3b-f2e2ca81b3d0",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "openai-chatgpt-wallet-2026-q1",
+      "sourceId": "restart17-chatgpt-wallet-official-oembed",
+      "claimId": "openai-chatgpt-wallet-2026-core",
+      "url": "https://x.com/ChatGPT/status/2121283151729496235",
+      "originId": "openai-chatgpt-wallet-nov13-announcement",
+      "accessedAt": "2026-11-17",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "With ChatGPT Wallet, agents pay without access to your actual card details. Every purchase requires a security check.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-17/public-posts/restart17-chatgpt-wallet-official-oembed.txt",
+      "sha256": "cb10cdaffa7ab0a7b4af76d187b52a63efe69779148e4983561c284a03575700"
+    },
+    {
+      "id": "openai-chatgpt-wallet-2026-q2",
+      "sourceId": "restart17-sup-wallet-payments",
+      "claimId": "openai-chatgpt-wallet-2026-core",
+      "url": "https://www.paymentsdive.com/news/openai-wallet-taps-card-networks/874769/",
+      "originId": "restart17-openai-chatgpt-wallet-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "“We’re introducing ChatGPT Wallet, setting a new bar for secure payments by agents,”\nOpenAI said in a Friday post\n. “It’s the first wallet that lets agents pay without access to users’ actual card details and that requires a security check for every purchase, while also preserving existing card rewards and protections for eligible disputes.”",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-sup-wallet-payments.txt",
+      "sha256": "488259859c5d157a0a1f1b7e1fc89315b983d283e211b23c156a1007052ff93c"
+    },
+    {
+      "id": "openai-chatgpt-wallet-2026-q3",
+      "sourceId": "restart17-sup-wallet-9to5",
+      "claimId": "openai-chatgpt-wallet-2026-eligibility",
+      "url": "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/",
+      "originId": "restart17-openai-chatgpt-wallet-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "To start, ChatGPT Wallet is only available to ChatGPT Pro subscribers who are 18 or older in the United States.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-sup-wallet-9to5.txt",
+      "sha256": "8acfec41a12ee3d3e26f4a204bf5eb86258ad0e40571d6a751fed58aa3e2bd5e"
+    },
+    {
+      "id": "openai-chatgpt-wallet-2026-q4",
+      "sourceId": "restart17-sup-wallet-9to5",
+      "claimId": "openai-chatgpt-wallet-2026-limits",
+      "url": "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/",
+      "originId": "restart17-openai-chatgpt-wallet-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "The feature won’t work with websites that block agents",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-sup-wallet-9to5.txt",
+      "sha256": "8acfec41a12ee3d3e26f4a204bf5eb86258ad0e40571d6a751fed58aa3e2bd5e"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "openai-chatgpt-wallet",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "openai-chatgpt-wallet-2026-core"
+  ],
+  "identity": {
+    "seriesId": "openai-chatgpt-wallet",
+    "action": "ChatGPT announces a limited Wallet rollout for dot purchases",
+    "stage": "announced",
+    "dateBasis": "openai-chatgpt-wallet-2026 2026-11-13: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Distinct announced dated action compared with already published united-airlines-ai-agent-restrictions-2026 and openai-financial-services-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "united-airlines-ai-agent-restrictions-2026",
+      "openai-financial-services-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "ChatGPT announces a limited Wallet rollout for dot purchases primarily concerns product: the verified core is the named announced action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event openai-chatgpt-wallet-2026: confirmed stage announced, without independently observed downstream effects; comparators are united-airlines-ai-agent-restrictions-2026 and openai-financial-services-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-PRODUCT-ACCESS route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct announced action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "united-airlines-ai-agent-restrictions-2026",
+      "openai-financial-services-2026"
+    ],
+    "comparisonNotes": {
+      "united-airlines-ai-agent-restrictions-2026": "united-airlines-ai-agent-restrictions-2026: United announces steps to restrict unauthorized third-party AI agents; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "openai-financial-services-2026": "openai-financial-services-2026: OpenAI introduces ChatGPT for Financial Services; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "For openai-chatgpt-wallet-2026: directly read declared event stage does not independently verify material access change against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "For openai-chatgpt-wallet-2026: directly read declared event stage does not independently verify unaffiliated production organizations against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared announced action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "openai-chatgpt-wallet-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f68f-bbd9-7785-9f3b-f2e2ca81b3d0 returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

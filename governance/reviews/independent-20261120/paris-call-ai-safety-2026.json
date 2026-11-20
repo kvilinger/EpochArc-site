@@ -1,0 +1,140 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "paris-call-ai-safety-2026",
+  "subjectDigest": "29dfff80f6612ae684c22dcecd934609c11b71497c140feb252155027646ef35",
+  "inputsDigest": "3ef85cad4235639eab5c30f9520200d3d80decacf64bba2fa06a6e4fa42073b2",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f68f-bbd9-7785-9f3b-f2e2ca81b3d0",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f68f-bbd9-7785-9f3b-f2e2ca81b3d0",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "paris-call-ai-safety-2026-q1",
+      "sourceId": "restart17-paris-elysee",
+      "claimId": "paris-call-ai-safety-2026-core",
+      "url": "https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security",
+      "originId": "restart17-paris-call-ai-safety-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "The declaration has been signed on Monday 9 November 2026 by the following Heads of States and Governments and CEOs:",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-paris-elysee.txt",
+      "sha256": "aea82c7bad6481d0e12631e6c9fb7343d64c7d4c870b689a70141e0e1dfdf73d"
+    },
+    {
+      "id": "paris-call-ai-safety-2026-q2",
+      "sourceId": "restart17-paris-canada",
+      "claimId": "paris-call-ai-safety-2026-core",
+      "url": "https://www.pm.gc.ca/en/news/statements/2026/11/09/joint-declaration-paris-call-ai-safety-and-security",
+      "originId": "restart17-paris-call-ai-safety-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "The declaration has been signed on Monday 9 November 2026 by the following Heads of States and Governments and CEOs:",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-paris-canada.txt",
+      "sha256": "d183cc05c351953051fb3deba3e5ff2d3e7b16cd732e2b1532ba7ef2c17364c8"
+    },
+    {
+      "id": "paris-call-ai-safety-2026-q3",
+      "sourceId": "restart17-paris-canada",
+      "claimId": "paris-call-ai-safety-2026-core",
+      "url": "https://www.pm.gc.ca/en/news/statements/2026/11/09/joint-declaration-paris-call-ai-safety-and-security",
+      "originId": "restart17-paris-call-ai-safety-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Civil society: LawZero (Yoshua Bengio), SaferAI (Henry Papadatos), AI Safety Connect (Nicolas Miailhe), Ifri (Laure de Roucy-Rochegonde)",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-paris-canada.txt",
+      "sha256": "d183cc05c351953051fb3deba3e5ff2d3e7b16cd732e2b1532ba7ef2c17364c8"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "paris-call-ai-safety",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "paris-call-ai-safety-2026-core"
+  ],
+  "identity": {
+    "seriesId": "paris-call-ai-safety",
+    "action": "Multiple states and AI groups publish the Paris Call for AI safety and security",
+    "stage": "announced",
+    "dateBasis": "paris-call-ai-safety-2026 2026-11-09: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Distinct announced dated action compared with already published white-house-super-intelligence-order-accord-2026 and uk-ico-foundation-model-changes-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "white-house-super-intelligence-order-accord-2026",
+      "uk-ico-foundation-model-changes-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "Multiple states and AI groups publish the Paris Call for AI safety and security primarily concerns governance: the verified core is the named announced action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event paris-call-ai-safety-2026: confirmed stage announced, without independently observed downstream effects; comparators are white-house-super-intelligence-order-accord-2026 and uk-ico-foundation-model-changes-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-GOVERNANCE route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct announced action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "white-house-super-intelligence-order-accord-2026",
+      "uk-ico-foundation-model-changes-2026"
+    ],
+    "comparisonNotes": {
+      "white-house-super-intelligence-order-accord-2026": "white-house-super-intelligence-order-accord-2026: White House orders federal AI rebranding and announces a voluntary frontier-safety accord; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "uk-ico-foundation-model-changes-2026": "uk-ico-foundation-model-changes-2026: UK ICO reports data-protection changes by ten foundation-model developers; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": null,
+            "rationale": "For paris-call-ai-safety-2026: directly read declared event stage does not independently verify binding or precedential action against the L2-GOVERNANCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "applies_beyond_named_parties": {
+            "value": null,
+            "rationale": "For paris-call-ai-safety-2026: directly read declared event stage does not independently verify applies beyond named parties against the L2-GOVERNANCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "independent_legal_analysis": {
+            "value": null,
+            "rationale": "For paris-call-ai-safety-2026: directly read declared event stage does not independently verify independent legal analysis against the L2-GOVERNANCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared announced action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "paris-call-ai-safety-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f68f-bbd9-7785-9f3b-f2e2ca81b3d0 returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

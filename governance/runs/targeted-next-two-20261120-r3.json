@@ -1,0 +1,235 @@
+{
+  "policyVersion": "2.4",
+  "runId": "targeted-meta-ember-lvmh-signing-20261120-r3",
+  "kind": "targeted",
+  "scopeReason": "Two known original-source November announcements, targeted four-layer follow-up only. Does not certify all 9-20 November six-channel discoveries.",
+  "windowStart": "2026-11-09",
+  "windowEnd": "2026-11-20",
+  "evidenceCutoff": "2026-11-20",
+  "timezone": "UTC",
+  "baselineCommit": "bc06942fc3c0d52e04720540ef10072d98e97060",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "promptVersion": "20261120-next-two-targeted-actual-queries-v1",
+  "channels": [
+    {
+      "id": "brave-web",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Eight keyword queries, first 20 results each, dated Nov9–20, not exhaustive or independent original reading.",
+      "reason": "Targeted first-result pages only, not six-channel complete sweep.",
+      "retryResult": "All eight searches returned 200; no retry warranted for breadth limitation, which is disclosed.",
+      "attempts": [
+        {
+          "query": "Meta Muse Ember November 9 2026 Meta Model API official release",
+          "executedAt": "2026-11-20T00:34:49.704953+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/meta-muse-ember-2026/fact.json",
+          "sha256": "6b4f5ca6eaeffdfec9b32e877ef46976a729ff7a539e09f98fe94d354b726e81",
+          "resultCount": 20
+        },
+        {
+          "query": "Muse Ember November 2026 independent production deployment benchmark adoption measured",
+          "executedAt": "2026-11-20T00:34:52.408867+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/meta-muse-ember-2026/impact.json",
+          "sha256": "9f21f380eaac85595220023b0b21832a81311c861915a7d691a3fa5c27ee2436",
+          "resultCount": 20
+        },
+        {
+          "query": "Muse Ember November 2026 independent analysis price performance Artificial Analysis limitations",
+          "executedAt": "2026-11-20T00:34:55.114028+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/meta-muse-ember-2026/analysis.json",
+          "sha256": "e2aade29bb61d4dcc4f14e942747315a1b1566ce1690b6804d969694cd0b3066",
+          "resultCount": 20
+        },
+        {
+          "query": "Muse Ember November 2026 benchmark disputed cost estimates licensing safety criticism",
+          "executedAt": "2026-11-20T00:34:57.805715+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/meta-muse-ember-2026/controversy.json",
+          "sha256": "98b89e564bd6beb49cd9dfbb9793b75aa740f067c97d33fd734b5a4266cc9af8",
+          "resultCount": 20
+        },
+        {
+          "query": "LVMH media Les Echos Le Parisien OpenAI partnership 16 November 2026 original announcement",
+          "executedAt": "2026-11-20T00:35:00.768450+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-lvmh-partnership-2026/fact.json",
+          "sha256": "c4e414a1f3869a7cbcfd59a44d1e10b7d0450c055799e7152f037916b7a7131d",
+          "resultCount": 20
+        },
+        {
+          "query": "LVMH OpenAI media partnership November 2026 actual team deployment ChatGPT referral traffic measured",
+          "executedAt": "2026-11-20T00:35:03.639558+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-lvmh-partnership-2026/impact.json",
+          "sha256": "af73d12089b5cd9ef8ca794d8af02764201d7dccc5506972dda71c61ba7c319c",
+          "resultCount": 20
+        },
+        {
+          "query": "LVMH media OpenAI news licensing partnership November 2026 independent analysis publisher AI agreements",
+          "executedAt": "2026-11-20T00:35:06.271583+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-lvmh-partnership-2026/analysis.json",
+          "sha256": "efecc6e05e65a24c27fe0b47a737c3ef82b879c3f8aca440bdd5c32a1c52885a",
+          "resultCount": 20
+        },
+        {
+          "query": "LVMH OpenAI Les Echos Le Parisien November 2026 journalist union rights editorial independence criticism",
+          "executedAt": "2026-11-20T00:35:09.076872+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-lvmh-partnership-2026/controversy.json",
+          "sha256": "eb412ca1a4472694035ef8e35d21326e5a1b7eedb1e50e314468365c26c5e8e4",
+          "resultCount": 20
+        }
+      ]
+    },
+    {
+      "id": "openai-lvmh-direct",
+      "status": "unavailable",
+      "windowCovered": false,
+      "coverageNote": "Direct matching OpenAI page returned 403; no readable OpenAI article was retained. French LVMH primary separately readable.",
+      "reason": "HTTP 403; content not obtained.",
+      "retryResult": "No bypass, alternative credential, or 403 replay. LVMH original and PPC independent analysis have distinct roles.",
+      "attempts": [
+        {
+          "query": "https://openai.com/index/lvmh-media-division-partnership/",
+          "executedAt": "2026-11-20T00:36:13.056953+00:00",
+          "artifact": "governance/evidence/2026-11-20/direct/lvmh-openai.meta.json",
+          "sha256": "500b5eed7e595340561120e243990ba90d63d597a63cbf663c5198c3a149fc3f",
+          "resultCount": 0
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Only Muse Ember model availability checked among product events; no claim of full category window coverage."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Only LVMH media partnership signing checked among commercial agreements; broader categories not swept."
+    }
+  ],
+  "candidates": [
+    {
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Read dated Nov9 Meta original announcement plus independent Artificial Analysis evaluation; only availability claim treated B.",
+        "novelty": "Muse Ember is a distinct named smaller model available through Muse Code and Meta Model API, not a reprint of prior Muse Spark or agent releases.",
+        "spillover": "Official distribution addresses developer use via API and named partner/business workflows, distinct audience groups; actual external production reach is unmeasured.",
+        "durability": "Concrete ongoing API/model availability and published price, but persistence and observed external deployment not independently checked.",
+        "sourceQuality": "Primary Meta statement establishes launch; AA independently evaluates benchmark, not independent customer adoption or API availability testing."
+      },
+      "total": 8,
+      "candidateId": "meta-muse-ember",
+      "discoveryUrls": [
+        "https://research.meta.ai/blog/muse-ember",
+        "https://artificialanalysis.ai/models/muse-ember"
+      ],
+      "priority": "confirm",
+      "decision": "new",
+      "eventId": "meta-muse-ember-2026",
+      "reason": "Dated primary-origin announcement or available-model event with distinct identity; production effects not independently established.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Meta Muse Ember November 9 2026 Meta Model API official release",
+          "finding": "Meta dated Nov9 statement says Muse Ember available today on Muse Code and Meta Model API; do not infer external adoption.",
+          "evidenceIds": [
+            "m-meta-date",
+            "m-meta-availability"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Muse Ember November 2026 independent production deployment benchmark adoption measured",
+          "finding": "Independent benchmark is a measured performance evaluation, not observed customer adoption, rollout breadth or external work changes; no such Meta-specific impact established.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Muse Ember November 2026 independent analysis price performance Artificial Analysis limitations",
+          "finding": "Artificial Analysis directly evaluates Muse Ember performance, nominal pricing, and verbosity; a benchmark result is not a production adoption count.",
+          "evidenceIds": [
+            "m-aa-evaluation",
+            "m-aa-price"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Muse Ember November 2026 benchmark disputed cost estimates licensing safety criticism",
+          "finding": "No documented specific contradiction of the availability announcement in read originals; benchmark tradeoffs are limitations, not established dispute.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Dated Nov16 Groupe Les Echos-Le Parisien/LVMH French primary states agreement signature and plans; OpenAI matching page 403 not counted.",
+        "novelty": "New signed OpenAI agreement with LVMH media division, separate actor and agreed content/team tooling from existing infra partnerships.",
+        "spillover": "Signed plan names newsroom workers/teams and ChatGPT readers as two distinct intended audiences; does not assert actual reach, rollout or revenue.",
+        "durability": "Signed strategic agreement and planned tools/content links are concrete continuing terms; duration/implementation not publicly evidenced.",
+        "sourceQuality": "One joint partner-original statement proves signature; PPC documents disclosure gaps but restates agreement origin, not independent implementation test."
+      },
+      "total": 8,
+      "candidateId": "openai-lvmh-partnership",
+      "discoveryUrls": [
+        "https://lesechosleparisien.fr/actualites/le-groupe/le-pole-medias-de-lvmh-annonce-un-partenariat-strategique-avec-openai/",
+        "https://ppc.land/lvmhs-17-media-brands-sign-with-openai-price-not-on-the-label/"
+      ],
+      "priority": "confirm",
+      "decision": "new",
+      "eventId": "openai-lvmh-partnership-2026",
+      "reason": "Dated primary-origin announcement or available-model event with distinct identity; production effects not independently established.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "LVMH media Les Echos Le Parisien OpenAI partnership 16 November 2026 original announcement",
+          "finding": "French Nov16 original from signing party states signed strategic agreement, planned team tools and source-linked ChatGPT summaries, not completed deployment.",
+          "evidenceIds": [
+            "l-group-date",
+            "l-group-signature",
+            "l-group-plans",
+            "l-group-links"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "LVMH OpenAI media partnership November 2026 actual team deployment ChatGPT referral traffic measured",
+          "finding": "Neither signed agreement nor PPC commentary provides measured rollout, traffic or revenue attributable to this agreement.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "LVMH media OpenAI news licensing partnership November 2026 independent analysis publisher AI agreements",
+          "finding": "PPC independently compares public statements and identifies price, duration and training-rights not disclosed, not their absence in contract.",
+          "evidenceIds": [
+            "l-ppc-omissions"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "LVMH OpenAI Les Echos Le Parisien November 2026 journalist union rights editorial independence criticism",
+          "finding": "Analysis of unknown terms and broader publisher debate does not document a directly contradictory claim about this signed agreement.",
+          "evidenceIds": []
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Model limited exact-r2 bilingual review ACCEPT_LIMITED is not an assembled independent v2.4 review.",
+    "Primary actor announcements do not prove customer adoption, signed agreement deployment, measured revenue or benchmarking generalization.",
+    "OpenAI matched article 403; search snippets are leads, never direct cited evidence."
+  ]
+}

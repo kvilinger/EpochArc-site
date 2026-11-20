@@ -1,0 +1,146 @@
+{
+  "id": "openai-chatgpt-wallet-2026",
+  "slug": "openai-chatgpt-wallet-2026",
+  "date": "2026-11-13",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-13",
+    "zhHans": "2026年11月13日"
+  },
+  "title": {
+    "en": "ChatGPT announces a limited Wallet rollout for dot purchases",
+    "zhHans": "ChatGPT 宣布有限推出用于 dot 购物的 Wallet"
+  },
+  "searchSummary": {
+    "en": "ChatGPT announced Wallet for dot-assisted purchases, requiring user approval and a security check for each purchase.",
+    "zhHans": "ChatGPT 宣布用于 dot 辅助购物的 Wallet，每笔购买均需用户批准和安全验证。"
+  },
+  "summary": {
+    "en": "On November 13, ChatGPT publicly announced Wallet for purchases carried out by its dot agent. The public post says agents cannot access actual card details and each purchase requires a security check. The post is truncated after stating rollout to Pro subscribers; separate reporting says access initially covers adult U.S. Pro users.",
+    "zhHans": "11 月 13 日，ChatGPT 公开宣布让 dot 代理使用 Wallet 完成购物。公开帖子称代理不能读取真实卡资料，每笔购买都需安全验证；该帖子在提及面向 Pro 用户推出后即被截断。另据媒体报道，初期准入限定为美国成年 Pro 用户。"
+  },
+  "narrative": {
+    "en": "This is a limited rollout of an agent-assisted payment feature, not evidence of universal merchant compatibility or risk-free autonomous checkout. Payments Dive reports a separately attributed Amex spokesperson confirmation of its first agentic-commerce integration, while eligibility details in the truncated primary post require attribution to 9to5Mac. Neither source establishes the scale of active usage or an independently reproduced transaction test.",
+    "zhHans": "这是智能体辅助支付功能的有限推出，不证明所有商户兼容或代理结账没有风险。Payments Dive 引述美国运通发言人确认其首次智能体商务集成；被截断的官方帖子未载明全部准入条件，因此美国及年龄限制须归因于 9to5Mac。现有材料不证明实际活跃使用规模，也不是独立复现的交易测试。"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "openai-chatgpt-wallet-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 13, ChatGPT announced a limited Wallet rollout for dot-assisted purchases; its post says agents do not receive actual card details and each purchase requires a security check.",
+        "zhHans": "11 月 13 日，ChatGPT 宣布有限推出供 dot 辅助购物使用的 Wallet；其公开帖子称代理不接触真实卡资料，每笔购买都须安全验证。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-chatgpt-wallet-official-oembed",
+        "restart17-sup-wallet-payments"
+      ],
+      "notes": "The official public post directly supports only announcement, limited Pro rollout, card-data boundary and security-check requirements. Payments Dive reports separately on card-network participation; it is not an independent validation of all security guarantees."
+    },
+    {
+      "id": "openai-chatgpt-wallet-2026-eligibility",
+      "claimType": "fact",
+      "text": {
+        "en": "According to 9to5Mac, initial access is limited to U.S. ChatGPT Pro subscribers aged 18 or older.",
+        "zhHans": "据 9to5Mac 报道，初期准入仅面向年满 18 岁的美国 ChatGPT Pro 用户。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "restart17-sup-wallet-9to5"
+      ],
+      "notes": "Not present in the truncated official oEmbed text; source-attributed secondary detail, not a core B-grade fact."
+    },
+    {
+      "id": "openai-chatgpt-wallet-2026-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "According to 9to5Mac, Wallet will not work with sites that block agent access; broad compatibility, active use and security outcomes have not been independently audited.",
+        "zhHans": "据 9to5Mac 报道，Wallet 不适用于拦截代理访问的网站；广泛兼容性、实际活跃使用及安全效果尚未经独立审计。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "restart17-sup-wallet-9to5"
+      ],
+      "notes": "Limits are based on reporting and absence of independently observed broad compatibility; not a claim that specific transactions failed."
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "restart17-chatgpt-wallet-official-oembed",
+      "supports": [
+        "openai-chatgpt-wallet-2026",
+        "openai-chatgpt-wallet-2026-core"
+      ]
+    },
+    {
+      "sourceId": "restart17-sup-wallet-payments",
+      "supports": [
+        "openai-chatgpt-wallet-2026",
+        "openai-chatgpt-wallet-2026-core"
+      ]
+    },
+    {
+      "sourceId": "restart17-sup-wallet-9to5",
+      "supports": [
+        "openai-chatgpt-wallet-2026-eligibility",
+        "openai-chatgpt-wallet-2026-limits"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-17",
+    "updatedAt": "2026-11-20",
+    "lastSourceCheckAt": "2026-11-20",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Unapproved Nov20 exact publication-state candidate after an ACCEPT_LIMITED independent complete reviewed-state v2.4 audit. A primary party establishes only its declared action/stage, not unmeasured impact. Separate published-state review and explicit one-list human approval remain mandatory.",
+    "changeLog": [
+      {
+        "date": "2026-11-17",
+        "changeType": "created",
+        "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+      },
+      {
+        "date": "2026-11-17",
+        "changeType": "correction",
+        "summary": "Split Wallet announcement from secondary-only eligibility, added first-party oEmbed and explicit limitation claim in isolated r2 proposal."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Read full source bodies and checked claim-local stage/date/EN-ZH meaning. Attributed company card-data/security promises; blocked-agent merchant limitation tied to reporting."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Only 9to5Mac cited for site-level agent blocking; Payments Dive used for core announcement."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Assembled claim-local evidence and L1 route in isolated reviewed-state v2.4 proposal; exact packet independent audit remains pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Constructed isolated publication-state candidate from complete reviewed-state audit; not a production deployment or human approval."
+      }
+    ],
+    "reviewedAt": "2026-11-20",
+    "reviewer": "gemini:01a1f68f-bbd9-7785-9f3b-f2e2ca81b3d0",
+    "reviewRecord": "governance/reviews/independent-20261120/openai-chatgpt-wallet-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-20"
+  }
+}

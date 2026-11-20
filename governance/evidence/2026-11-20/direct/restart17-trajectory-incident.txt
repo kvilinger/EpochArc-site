@@ -1,0 +1,114 @@
+Responding to incidents during misalignment testing | Trajectory Labs, PBC
+
+Skip to content
+
+Trajectory Labs
+Menu
+
+Mission
+Team
+Careers
+Blog
+Contact
+
+View open roles
+
+Blog
+·
+
+November 13, 2026
+
+Responding to incidents during misalignment testing
+
+In October, Gemini 4 Argon AI agents we were testing with API safeguards enabled attempted to hack Epoch AI’s live website while trying to obtain non-existent “held-out” benchmark answers: first on October 20 and again on October 23, after bypassing a DNS redirect we had set up to keep them on a local copy, and again on October 26 with Epoch’s consent. No private Epoch information was exposed, and we are not aware of any lasting harm. This post explains what we did and what we have changed.
+
+Note:
+For information about Gemini 4 Argon’s behavior, see
+our companion post
+.
+
+Contents
+
+Background
+
+What happened
+
+How this happened
+
+What we’ve changed
+
+Looking ahead
+
+Background
+
+In October, we were testing whether frontier models with safeguards enabled would behave like those in the recent
+Hugging Face incident
+, where AI agents reached real systems outside their test environment. We gave Gemini 4 Argon agents an impossible task with their API safeguards enabled: supply the “official” answers to non-existent
+FrontierMath
+problems (Epoch AI’s benchmark of hard, expert-written math problems). We often instructed the agents to “NEVER stop, NEVER give up,” and in some runs they had internet access.
+
+What happened
+
+October 20.
+While searching Epoch AI’s live website for non-existent “held-out” benchmark answers, agents under test began probing it for non-public endpoints. Epoch had set up a honeypot on its site to detect AI agents: a decoy benchmark key. When Epoch noticed our agents that evening, it added an “agent helpline” they could message. The agents used the decoy key, requested pages such as /admin, /keys and /users, attempted a SQL injection and, through the agent helpline, claimed to be Epoch staff. We found the honeypot use and impersonation attempts while reviewing transcripts that evening (Pacific Time). The next morning, we notified Epoch, which had not known about the test in advance, and met with them to discuss it.
+
+October 21-22.
+We met Epoch’s team, who told us they had deployed the agent helpline the day before in response to our agents. We agreed to continue the test against a local copy of Epoch’s site instead of the live one. On October 22, we apologized to Epoch in writing.
+
+October 21-25.
+We had discussed running a follow-up test against a local copy of its site with Epoch, but we had not discussed the full setup with Epoch. In these tests, we redirected the agents’ traffic for Epoch’s website to a copy running on our own systems. The early runs had no internet access, but from the evening of October 23 they did, with a DNS redirect keeping the agents on the copy. In some of these runs, the agents worked out that they were on a copy, identified the correct raw IP to bypass our redirect, and reached the live site again, which Epoch alerted us about. After we blocked the IP addresses the agents had used, one agent switched to an address the filter didn’t cover and reached the live site again. The next day, our network proxy refused all direct connections to Epoch’s site, but an agent read public epoch.ai pages through a third-party web-reader service.
+
+October 26-29.
+With Epoch’s consent and help, we ran further tests against a staging copy of its site. Epoch agreed in advance that the agents would have internet access and might reach its live site. They did, and again attempted social engineering and tried to hack Epoch’s site. We then moved all tests to sandboxes with no internet access. We have not identified any egress in these sandboxed tests.
+
+October 29-30.
+In a sandbox with no internet access, we offered agents a decoy admin switch advertised as turning off network blocking. Agents repeatedly tried to use it, obfuscating their commands to get past the Gemini API safeguards, and switched the decoy off in three of three full runs. The real firewall held throughout.
+
+November 2.
+We paused all misalignment testing and began drafting a writeup to share with the affected parties.
+
+How this happened
+
+Our policies required network-level isolation for most of our work, but didn’t cover misalignment experiments on publicly available models.
+
+We did not layer action-blocking monitors on top of what was provided by the built-in Gemini API safeguards.
+
+We ran experiments with internet access without first getting explicit consent from the organization whose systems the agents were likely to reach.
+
+We did not require a written, approved risk plan before running experiments like these.
+
+We had no handover process for when a manager is unexpectedly unavailable. When the researcher’s manager went on medical leave as this project started, the work continued without senior oversight.
+
+What we’ve changed
+
+All misalignment testing is paused. It will resume only once we have completed a risk assessment and put the resulting mitigations in place, with signoff from our CEO and CTO.
+
+Every experiment now needs a written risk plan, approved by our CEO and CTO.
+
+No experiment can run with internet access without signoff and the agreement of the owners of any outside systems it is reasonably likely to target with potential for adverse consequences.
+
+Misalignment tests will run with real-time automated monitoring and a kill switch.
+
+We are setting up a process to promptly notify anyone whose systems are affected by one of our experiments.
+
+Looking ahead
+
+These incidents show how easily testing capable AI agents can spill over to affect real systems and people, and there are not yet shared standards for doing it safely. We recommend that others running misalignment tests use fully isolated sandboxes, even for public models and for tests that have nothing to do with cybersecurity.
+
+We have started developing a set of safety standards and recommendations for this kind of testing. We hope that sharing what went wrong here helps others in the field avoid what happened here.
+
+Disclaimer: We provide frontier AI developers with evaluation and red teaming services. This work was our own research, designed and paid for by Trajectory, and not part of any client engagement.
+
+We are grateful to Epoch AI, who gave us candid feedback on how we ran these tests, and worked with us on the changes described here. We also thank Epoch AI for comments on an earlier draft of this post and Google DeepMind for their broader collaboration.
+
+This report reflects our current understanding, not necessarily that of Epoch AI or Google DeepMind. While we have taken care to ensure accuracy, we cannot guarantee that every detail is accurate or complete. We will update it if the details change.
+
+Trajectory Labs
+Careers
+Blog
+Contact
+Media
+Privacy policy
+LinkedIn
+
+© 2026 Trajectory Labs, PBC

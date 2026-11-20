@@ -1,0 +1,156 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "fireworks-october-incident-update-2026",
+  "subjectDigest": "f09d226192ec741585913890d9a57df4c533562fad5f49169dc06438f2f2d84b",
+  "inputsDigest": "eddb9f8e0674b0e9cc25d8be28a5d5ea096b25c3f1d4ec511c4dc6959eba1a28",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f68c-9652-73ee-8099-0d21ecddf93b",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f68c-9652-73ee-8099-0d21ecddf93b",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "fireworks-october-incident-update-2026-q1",
+      "sourceId": "restart17-fireworks-oct-update",
+      "claimId": "fireworks-october-incident-update-2026-core",
+      "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+      "originId": "restart17-fireworks-october-incident-update-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "This is an update on our investigation into the activity described in our November 9 and October 10 bulletins. We have determined this activity relates to two separate security incidents.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-fireworks-oct-update.txt",
+      "sha256": "e3e6eaa5f406439b94e7b273e542b8d839ad3b5ae63469423eeff995fcd5c814"
+    },
+    {
+      "id": "fireworks-october-incident-update-2026-q2",
+      "sourceId": "restart17-fireworks-oct-update",
+      "claimId": "fireworks-october-incident-update-2026-core",
+      "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+      "originId": "restart17-fireworks-october-incident-update-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "The unauthorized party accessed account and billing information for all accounts created before Oct 30th",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-fireworks-oct-update.txt",
+      "sha256": "e3e6eaa5f406439b94e7b273e542b8d839ad3b5ae63469423eeff995fcd5c814"
+    },
+    {
+      "id": "fireworks-october-incident-update-2026-q3",
+      "sourceId": "restart17-notion-fireworks",
+      "claimId": "fireworks-october-incident-update-2026-notion-limits",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "originId": "restart17-fireworks-october-incident-update-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Unfortunately, during our investigation we learned that data was retained from the Fireworks endpoints that we used.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-notion-fireworks.txt",
+      "sha256": "5780aaeb31e432c53c464661660c4edc95846d625bd621fb924caa927f3fda57"
+    },
+    {
+      "id": "fireworks-october-incident-update-2026-q4",
+      "sourceId": "restart17-notion-fireworks",
+      "claimId": "fireworks-october-incident-update-2026-notion-limits",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "originId": "restart17-fireworks-october-incident-update-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Some unattributable chat sessions with Notion AI may have been exposed in this incident",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-notion-fireworks.txt",
+      "sha256": "5780aaeb31e432c53c464661660c4edc95846d625bd621fb924caa927f3fda57"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "fireworks-october-incident-update",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "fireworks-october-incident-update-2026-core"
+  ],
+  "identity": {
+    "seriesId": "fireworks-october-incident-update",
+    "action": "Fireworks separates two security incidents in updated disclosure",
+    "stage": "disclosed",
+    "dateBasis": "Dated Fireworks Nov17 new two-incident update supersedes its Nov9 interim account; Notion undated notice separately describes its own endpoints.",
+    "deduplicationReason": "Distinct disclosed dated action compared with already published cursor-claude-code-extension-compromise-2026 and cloudflare-glm53-kv-cache-exposure-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "cursor-claude-code-extension-compromise-2026",
+      "cloudflare-glm53-kv-cache-exposure-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Fireworks separates two security incidents in updated disclosure primarily concerns safety: the verified core is the named disclosed action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event fireworks-october-incident-update-2026: confirmed stage disclosed, without independently observed downstream effects; comparators are cursor-claude-code-extension-compromise-2026 and cloudflare-glm53-kv-cache-exposure-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-SAFETY route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct disclosed action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "cursor-claude-code-extension-compromise-2026",
+      "cloudflare-glm53-kv-cache-exposure-2026"
+    ],
+    "comparisonNotes": {
+      "cursor-claude-code-extension-compromise-2026": "cursor-claude-code-extension-compromise-2026: Cursor removes malicious Claude Code extension builds from its marketplace; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "cloudflare-glm53-kv-cache-exposure-2026": "cloudflare-glm53-kv-cache-exposure-2026: Cloudflare GLM-5.3 Workers AI cache exposure begins; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY",
+        "criteria": {
+          "documented_incident": {
+            "value": true,
+            "rationale": "Fireworks dated Nov17 first-party release describes two incidents; not independent investigation of all scope.",
+            "evidenceIds": [
+              "fireworks-october-incident-update-2026-q1"
+            ]
+          },
+          "external_remedial_action": {
+            "value": null,
+            "rationale": "For fireworks-october-incident-update-2026: directly read declared event stage does not independently verify external remedial action against the L2-SAFETY threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "independent_investigation": {
+            "value": null,
+            "rationale": "For fireworks-october-incident-update-2026: directly read declared event stage does not independently verify independent investigation against the L2-SAFETY threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared disclosed action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "fireworks-october-incident-update-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f68c-9652-73ee-8099-0d21ecddf93b returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

@@ -1,0 +1,121 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "claude-fable-mythos-5-2-2026",
+  "subjectDigest": "e38b2140302eac9b08770c53f98bf7ea54bc390544585f77abafebf730554ff2",
+  "inputsDigest": "f37fa791684e41dd07348fc4c37adb03c8dc8d6fda6178f63da5ca1ffdfa40a3",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f68c-032b-7282-bb3c-70454ffb1739",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f68c-032b-7282-bb3c-70454ffb1739",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "claude-fable-mythos-5-2-2026-q1",
+      "sourceId": "restart17-anthropic-fable52",
+      "claimId": "claude-fable-mythos-5-2-2026-core",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "originId": "restart17-claude-fable-mythos-5-2-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Claude Fable and Claude Mythos are the same underlying model. Fable has strong cybersecurity and biology safeguards to guard against misuse, which allows us to make it available to all users. Organizations pursuing beneficial applications in cybersecurity or biomedical research can apply for access to Mythos through our recently expanded\nLife Sciences\nand\nCyber\nVerification Programs.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-anthropic-fable52.txt",
+      "sha256": "8e46c3333599797e5aa34a88ab08681cd8117debeb59617e4063f45cb82514d8"
+    },
+    {
+      "id": "claude-fable-mythos-5-2-2026-q2",
+      "sourceId": "restart17-aa-fable52",
+      "claimId": "claude-fable-mythos-5-2-2026-core",
+      "url": "https://artificialanalysis.ai/models/releases/claude-fable-5-2",
+      "originId": "restart17-claude-fable-mythos-5-2-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "When was Claude Fable 5.2 released?\n\nClaude Fable 5.2 was released on November 9, 2026.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-aa-fable52.txt",
+      "sha256": "01b1b4ac97968ff62e159513847e3775f949b8db7d1ee0415c3d94f18f3636a2"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "claude-fable-mythos-5-2",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "claude-fable-mythos-5-2-2026-core"
+  ],
+  "identity": {
+    "seriesId": "claude-fable-mythos-5-2",
+    "action": "Anthropic releases Fable 5.2 and offers restricted Mythos 5.2 access",
+    "stage": "available",
+    "dateBasis": "claude-fable-mythos-5-2-2026 2026-11-09: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Distinct available dated action compared with already published anthropic-fable-mythos-5-1-2026 and openai-gpt6-cyber-restricted-launch-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "anthropic-fable-mythos-5-1-2026",
+      "openai-gpt6-cyber-restricted-launch-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Anthropic releases Fable 5.2 and offers restricted Mythos 5.2 access primarily concerns product: the verified core is the named available action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event claude-fable-mythos-5-2-2026: confirmed stage available, without independently observed downstream effects; comparators are anthropic-fable-mythos-5-1-2026 and openai-gpt6-cyber-restricted-launch-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-PRODUCT-ACCESS route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct available action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "anthropic-fable-mythos-5-1-2026",
+      "openai-gpt6-cyber-restricted-launch-2026"
+    ],
+    "comparisonNotes": {
+      "anthropic-fable-mythos-5-1-2026": "anthropic-fable-mythos-5-1-2026: Anthropic Releases Claude Fable 5.1 and Restricted-Access Claude Mythos 5.1; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "openai-gpt6-cyber-restricted-launch-2026": "openai-gpt6-cyber-restricted-launch-2026: OpenAI limits GPT-6 Cyber access to approved security customers; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "For claude-fable-mythos-5-2-2026: directly read declared event stage does not independently verify material access change against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "For claude-fable-mythos-5-2-2026: directly read declared event stage does not independently verify unaffiliated production organizations against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared available action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "claude-fable-mythos-5-2-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f68c-032b-7282-bb3c-70454ffb1739 returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

@@ -1,0 +1,122 @@
+{
+  "id": "california-ag-openai-suit-2026",
+  "slug": "california-ag-openai-suit-2026",
+  "date": "2026-11-16",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-16",
+    "zhHans": "2026年11月16日"
+  },
+  "title": {
+    "en": "California’s attorney general files suit against OpenAI",
+    "zhHans": "加州总检察长对 OpenAI 提起诉讼"
+  },
+  "searchSummary": {
+    "en": "California Attorney General Rob Bonta announced filing a lawsuit against OpenAI; OpenAI told TechCrunch the suit singled it out over an industry-wide challenge.",
+    "zhHans": "加州总检察长 Rob Bonta 宣布已对 OpenAI 提起诉讼；OpenAI 向 TechCrunch 表示，该诉讼就全行业共同面临的挑战单独针对它。"
+  },
+  "summary": {
+    "en": "On November 16, California Attorney General Rob Bonta announced filing a lawsuit against OpenAI; OpenAI told TechCrunch the suit singled it out over an industry-wide challenge.",
+    "zhHans": "11 月 16 日，加州总检察长 Rob Bonta 宣布已对 OpenAI 提起诉讼；OpenAI 向 TechCrunch 表示，该诉讼就全行业共同面临的挑战单独针对它。"
+  },
+  "narrative": {
+    "en": "The filing is a procedural fact; the alleged safety failures remain unadjudicated. OpenAI disputes the focus of the lawsuit in its media response, not the filing itself.",
+    "zhHans": "起诉是程序事实，所指安全问题尚未经法院认定。OpenAI 在媒体回应中反对诉讼针对它的方式，并未否认起诉已发生。"
+  },
+  "categories": [
+    "governance"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "debated",
+  "controversy": true,
+  "claims": [
+    {
+      "id": "california-ag-openai-suit-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 16, California Attorney General Rob Bonta announced filing a lawsuit against OpenAI.",
+        "zhHans": "11 月 16 日，加州总检察长 Rob Bonta 宣布已对 OpenAI 提起诉讼。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-california-ag"
+      ],
+      "notes": "AG original establishes filing; TechCrunch directly reports OpenAI response. The complaint allegations and OpenAI defense are not adjudicated findings."
+    },
+    {
+      "id": "california-ag-openai-suit-2026-dispute",
+      "claimType": "limitation",
+      "text": {
+        "en": "OpenAI told TechCrunch the suit singles it out over an industry-wide challenge; the alleged safety violations remain unadjudicated.",
+        "zhHans": "OpenAI 向 TechCrunch 表示，该诉讼就全行业共同面临的挑战单独针对它；所指安全违规尚未经法院认定。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "restart17-california-tc"
+      ],
+      "notes": "A separately reported OpenAI response and ongoing dispute, not independent proof that the complaint is true or false."
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "restart17-california-ag",
+      "supports": [
+        "california-ag-openai-suit-2026",
+        "california-ag-openai-suit-2026-core"
+      ]
+    },
+    {
+      "sourceId": "restart17-california-tc",
+      "supports": [
+        "california-ag-openai-suit-2026",
+        "california-ag-openai-suit-2026-dispute"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "florida-sues-openai-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-17",
+    "updatedAt": "2026-11-20",
+    "lastSourceCheckAt": "2026-11-20",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Unapproved Nov20 exact publication-state candidate after an ACCEPT_LIMITED independent complete reviewed-state v2.4 audit. A primary party establishes only its declared action/stage, not unmeasured impact. Separate published-state review and explicit one-list human approval remain mandatory.",
+    "changeLog": [
+      {
+        "date": "2026-11-17",
+        "changeType": "created",
+        "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Read full source bodies and checked claim-local stage/date/EN-ZH meaning. Contested allegations and OpenAI response explicitly separated from the undisputed filing."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Split AG procedural filing (B) from TechCrunch-reported OpenAI reply (C)."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Assembled claim-local evidence and L1 route in isolated reviewed-state v2.4 proposal; exact packet independent audit remains pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Constructed isolated publication-state candidate from complete reviewed-state audit; not a production deployment or human approval."
+      }
+    ],
+    "reviewedAt": "2026-11-20",
+    "reviewer": "gemini:01a1f68c-032b-7282-bb3c-70454ffb1739",
+    "reviewRecord": "governance/reviews/independent-20261120/california-ag-openai-suit-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-20"
+  }
+}

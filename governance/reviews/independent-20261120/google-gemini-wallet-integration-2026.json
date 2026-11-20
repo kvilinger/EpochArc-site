@@ -1,0 +1,135 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-gemini-wallet-integration-2026",
+  "subjectDigest": "d59e40a4934ff135406c05dfc7305373be42d9e450b6ccebca7d9bc2e8baaf22",
+  "inputsDigest": "a06e21a59396b72695aadd28859c46c5cfdbc84b235d327be3760fc15594cd76",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f68d-4a9d-735e-8f7c-b54196613b91",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f68d-4a9d-735e-8f7c-b54196613b91",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "google-gemini-wallet-integration-2026-q1",
+      "sourceId": "restart17-google-gemini-wallet",
+      "claimId": "google-gemini-wallet-integration-2026-core",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+      "originId": "restart17-google-gemini-wallet-integration-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Rolling out today for all Gemini app users in the U.S., you can connect Google Wallet for responses informed by your spending habits.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-google-gemini-wallet.txt",
+      "sha256": "1f11d7c0753e62a9752611c3f0f72b475fd9bd9e61ebca9c05c6a236ec59f956"
+    },
+    {
+      "id": "google-gemini-wallet-integration-2026-q2",
+      "sourceId": "restart17-wallet-gemini-9to5",
+      "claimId": "google-gemini-wallet-integration-2026-core",
+      "url": "https://9to5google.com/2026/11/13/gemini-google-wallet/",
+      "originId": "restart17-google-gemini-wallet-integration-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "On the privacy front, this integration is read-only, with Gemini not able to “move, manage, or invest your money.”",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-wallet-gemini-9to5.txt",
+      "sha256": "59aa142cbc90e9e9e0330019578cf3567bcd3ad14a728f745341b11dc103b710"
+    },
+    {
+      "id": "google-gemini-wallet-integration-2026-q3",
+      "sourceId": "restart17-wallet-gemini-aa",
+      "claimId": "google-gemini-wallet-integration-2026-core",
+      "url": "https://www.androidauthority.com/google-wallet-gemini-integration-us-3735150/",
+      "originId": "restart17-google-gemini-wallet-integration-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "The optional, read-only integration is rolling out in the US across Android, iOS, and the web.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-wallet-gemini-aa.txt",
+      "sha256": "7f8cb28385f2e1f2f5b62c817a6f34f62e7b042055fd8d93b7a319e756f02e0e"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "google-gemini-wallet-integration",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "google-gemini-wallet-integration-2026-core"
+  ],
+  "identity": {
+    "seriesId": "google-gemini-wallet-integration",
+    "action": "Google announces a read-only Wallet connection for Gemini",
+    "stage": "announced",
+    "dateBasis": "google-gemini-wallet-integration-2026 2026-11-13: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Distinct announced dated action compared with already published openai-financial-services-2026 and meta-muse-spaces-rollout-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "openai-financial-services-2026",
+      "meta-muse-spaces-rollout-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Google announces a read-only Wallet connection for Gemini primarily concerns product: the verified core is the named announced action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event google-gemini-wallet-integration-2026: confirmed stage announced, without independently observed downstream effects; comparators are openai-financial-services-2026 and meta-muse-spaces-rollout-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-PRODUCT-ACCESS route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct announced action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "openai-financial-services-2026",
+      "meta-muse-spaces-rollout-2026"
+    ],
+    "comparisonNotes": {
+      "openai-financial-services-2026": "openai-financial-services-2026: OpenAI introduces ChatGPT for Financial Services; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "meta-muse-spaces-rollout-2026": "meta-muse-spaces-rollout-2026: Meta adds customizable spaces to the Muse app; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "For google-gemini-wallet-integration-2026: directly read declared event stage does not independently verify material access change against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "For google-gemini-wallet-integration-2026: directly read declared event stage does not independently verify unaffiliated production organizations against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared announced action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "google-gemini-wallet-integration-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f68d-4a9d-735e-8f7c-b54196613b91 returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

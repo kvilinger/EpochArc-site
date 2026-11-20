@@ -1,0 +1,110 @@
+{
+  "id": "openai-lvmh-partnership-2026",
+  "slug": "openai-lvmh-partnership-2026",
+  "date": "2026-11-16",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-16",
+    "zhHans": "2026年11月16日"
+  },
+  "title": {
+    "en": "LVMH media division announces signed OpenAI agreement",
+    "zhHans": "LVMH 媒体业务宣布已与 OpenAI 签署协议"
+  },
+  "searchSummary": {
+    "en": "LVMH’s media division announced it had signed a strategic OpenAI agreement, with a planned newsroom-tool rollout and linked news excerpts in ChatGPT.",
+    "zhHans": "LVMH 媒体业务宣布已与 OpenAI 签署战略协议，计划向编辑团队部署工具，并在 ChatGPT 中展示带原文链接的新闻摘录。"
+  },
+  "summary": {
+    "en": "On November 16, Groupe Les Echos-Le Parisien, LVMH’s media division, said it had signed a strategic agreement with OpenAI. It plans tools for its newsroom teams and source-linked summaries and excerpts in ChatGPT; the announcement does not establish that deployment is complete.",
+    "zhHans": "11 月 16 日，LVMH 旗下媒体集团 Groupe Les Echos-Le Parisien 表示已与 OpenAI 签署战略协议。双方计划向编辑团队提供相关工具，并在 ChatGPT 中展示注明来源、附有原文链接的新闻摘要和摘录；公告不能证明部署已完成。"
+  },
+  "narrative": {
+    "en": "The French primary announcement distinguishes signing from intended newsroom rollout and ChatGPT content presentation. PPC Land’s independent analysis notes that the public announcements do not disclose price, duration or model-training rights. Those omissions cannot establish that the deal lacks such terms, or that revenue or traffic has changed.",
+    "zhHans": "法文一手公告将签约与计划中的编辑团队部署、ChatGPT 内容展示区分开。PPC Land 的独立分析指出，公开公告未披露价格、期限或模型训练授权。公告未披露这些条件，不代表协议没有这些条款，也不能据此认定营收或流量已经变化。"
+  },
+  "categories": [
+    "commerce"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "openai-lvmh-partnership-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "LVMH’s media division said on November 16 that it signed a strategic agreement with OpenAI and planned tool deployment for teams plus source-linked news summaries and excerpts in ChatGPT.",
+        "zhHans": "LVMH 媒体业务于 11 月 16 日表示，已与 OpenAI 签署战略协议，并计划向团队部署工具，在 ChatGPT 中提供注明来源、附原文链接的新闻摘要和摘录。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-sup-lvmh-primary"
+      ],
+      "notes": "French signing announcement only: not verified execution, licensing price or user adoption."
+    },
+    {
+      "id": "openai-lvmh-partnership-2026-terms-limit",
+      "claimType": "limitation",
+      "text": {
+        "en": "PPC Land reported that the public partnership announcements do not specify payment, contract duration or model-training rights; a missing public term is not proof the agreement lacks it.",
+        "zhHans": "PPC Land 指出，公开的合作公告没有说明付款金额、合同期限或模型训练授权；未公开某项条件，不代表协议本身没有这项条件。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "restart20-lvmh-ppc"
+      ],
+      "notes": "Independent document comparison/analysis; not evidence of actual business performance or withheld private terms."
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "restart17-sup-lvmh-primary",
+      "supports": [
+        "openai-lvmh-partnership-2026",
+        "openai-lvmh-partnership-2026-core"
+      ]
+    },
+    {
+      "sourceId": "restart20-lvmh-ppc",
+      "supports": [
+        "openai-lvmh-partnership-2026",
+        "openai-lvmh-partnership-2026-terms-limit"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-17",
+    "updatedAt": "2026-11-20",
+    "lastSourceCheckAt": "2026-11-20",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "This bounded published-state candidate was prepared Nov20 from a full-body reviewed-state audit. French signing-party announcement does not establish completed rollout, revenue or private terms. Approval and production deployment are tracked separately, not asserted by this note.",
+    "changeLog": [
+      {
+        "date": "2026-11-17",
+        "changeType": "created",
+        "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Bound the announcement/availability stage and added original analytic limitation source without inferring measured deployment."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Removed unmatched limitation paraphrase from prior full-packet REVISE; kept announcement and impact bounds."
+      }
+    ],
+    "reviewedAt": "2026-11-20",
+    "reviewer": "gemini:01a1f670-52a8-77cc-acc7-667bb81d2af1",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/independent-20261120/openai-lvmh-partnership-2026.json",
+    "publishedAt": "2026-11-20"
+  }
+}

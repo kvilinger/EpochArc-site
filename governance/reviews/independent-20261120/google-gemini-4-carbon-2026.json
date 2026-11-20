@@ -1,0 +1,121 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-gemini-4-carbon-2026",
+  "subjectDigest": "ae6d649de44775f97c9cdc7ff8ba70a76a7a8edd74727fd57a219da34421c4fd",
+  "inputsDigest": "7afc870415d01729ec2941b41c69ac2b9e142ff48f0f9631c2a80cee96dfe89d",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f68c-9652-73ee-8099-0d21ecddf93b",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f68c-9652-73ee-8099-0d21ecddf93b",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "google-gemini-4-carbon-2026-q1",
+      "sourceId": "restart17-google-carbon",
+      "claimId": "google-gemini-4-carbon-2026-core",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "originId": "restart17-google-gemini-4-carbon-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we’re making Gemini 4 Carbon available to developers, enterprises, scientists, and consumers.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-google-carbon.txt",
+      "sha256": "f09f1a7c57d2e7e149721f1d64e0de2abacbad2871317776d2805428236242a1"
+    },
+    {
+      "id": "google-gemini-4-carbon-2026-q2",
+      "sourceId": "restart17-carbon-9to5",
+      "claimId": "google-gemini-4-carbon-2026-core",
+      "url": "https://9to5google.com/2026/11/10/gemini-app-4-carbon/",
+      "originId": "restart17-google-gemini-4-carbon-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "AI Ultra subscribers can now access Carbon in the Gemini app, AI Mode, and Antigravity. Notably, Argon (AI Pro and up) will remain available alongside the new model.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-carbon-9to5.txt",
+      "sha256": "98dc410269917974272fa1cf3528e7fcd4fcefb62ef669ac8f940baf555ba918"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "google-gemini-4-carbon",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "google-gemini-4-carbon-2026-core"
+  ],
+  "identity": {
+    "seriesId": "google-gemini-4-carbon",
+    "action": "Google announces tiered Gemini 4 Carbon availability",
+    "stage": "available",
+    "dateBasis": "google-gemini-4-carbon-2026 2026-11-10: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Distinct available dated action compared with already published google-gemini-4-argon-2026 and google-gemini-omni-12-flash-ga-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "google-gemini-4-argon-2026",
+      "google-gemini-omni-12-flash-ga-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Google announces tiered Gemini 4 Carbon availability primarily concerns product: the verified core is the named available action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event google-gemini-4-carbon-2026: confirmed stage available, without independently observed downstream effects; comparators are google-gemini-4-argon-2026 and google-gemini-omni-12-flash-ga-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-PRODUCT-ACCESS route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct available action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "google-gemini-4-argon-2026",
+      "google-gemini-omni-12-flash-ga-2026"
+    ],
+    "comparisonNotes": {
+      "google-gemini-4-argon-2026": "google-gemini-4-argon-2026: Google announces Gemini 4 Argon in a phased trusted-access rollout; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "google-gemini-omni-12-flash-ga-2026": "google-gemini-omni-12-flash-ga-2026: Google makes Gemini Omni 1.2 Flash generally available; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "For google-gemini-4-carbon-2026: directly read declared event stage does not independently verify material access change against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "For google-gemini-4-carbon-2026: directly read declared event stage does not independently verify unaffiliated production organizations against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared available action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "google-gemini-4-carbon-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f68c-9652-73ee-8099-0d21ecddf93b returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

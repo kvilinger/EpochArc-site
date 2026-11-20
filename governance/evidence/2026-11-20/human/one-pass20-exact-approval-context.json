@@ -1,0 +1,157 @@
+{
+  "piSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "requestMessageId": "59bd6863",
+  "requestTimestampUTC": "2026-11-20T01:40:00.626Z",
+  "requestText": "剩余 **21 份草稿已一次处理完**：20 份完成完整来源核对、双语及 v2.4 复核，隔离构建和双语路由也已通过；**1 份暂缓**。这 20 份均获精确发布态模型 `ACCEPT_LIMITED`，但**尚未获得人工批准，也未写入正式仓库**。\n\n暂缓的是 AMD「收购完成」：已发布的旧条目仍用现在时称交易未完成；本轮范围不含旧条目更新，不能留下相互矛盾的公开记录。检索是针对这 21 份的定向核查，**不是完整六渠道扫描**。\n\n[20 份统一精确批准清单](epocharc-workspace/active/2026-11-09-to-2026-11-17-restart/publication-prep/one-pass-remaining-20261120/published-candidate/EXACT_HUMAN_PUBLICATION_DECISION_REQUEST_20261120_ALL21.json)列有每份最终的 subject／review 摘要；清单 SHA-256 为 `424fd11b0305a54182555086f47adc66d57d420992965d869f11db686f92c7cd`。共同 policy 摘要为 `cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce`；两组 run 摘要为 `7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0`、`a742c92c77f03cbda5848f27ffbe97aaa91c5fc84bdbd4c01bcbdbeaf40384b3`。\n\n若同意，**只需批准这一次**：回复“批准 2026-11-20 统一清单（SHA `424fd11b…92c7cd`）中的 20 份，AMD 暂缓”。我再执行正式发布与上线核验。",
+  "approvalMessageId": "9d671ff8",
+  "approvalTimestampUTC": "2026-11-20T01:40:32.424Z",
+  "approvalText": "批准 2026-11-20 统一清单（SHA 424fd11b…92c7cd）中的 20 份，AMD 暂缓",
+  "directReplyToSingleExact20ItemRequest": true,
+  "requestArtifactSha256": "424fd11b0305a54182555086f47adc66d57d420992965d869f11db686f92c7cd",
+  "approvedItems": [
+    {
+      "subjectId": "anthropic-ipo-roadshow-2026",
+      "subjectDigest": "d2b5d8c8ce797b33dab7e6b2bbb2459c56b2aafb03c9b23ab5bd4297b5a19c84",
+      "reviewDigest": "59a0c6d867ec8b4d3d97d842511b21518c6815e10a470dce46cc96fb256a0ea8",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "apple-health-ai-usage-study-2026",
+      "subjectDigest": "1fa34325e36e3548c520492d46dac09d1a5faed9cfcfd8862a85e795ca9b94a3",
+      "reviewDigest": "47faa9961edaa8b7620237fa97674e91b4a94f431707613a690fdf260e82886c",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "california-ag-openai-suit-2026",
+      "subjectDigest": "7ca17ead03f99448aded823be91a66cbe026969454ce617507d57acf055f51c5",
+      "reviewDigest": "66985e8c451239d92c36356a0239f5cc5b68eaba744745c7519bf9432cbc10e1",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "claude-fable-mythos-5-2-2026",
+      "subjectDigest": "e38b2140302eac9b08770c53f98bf7ea54bc390544585f77abafebf730554ff2",
+      "reviewDigest": "ba7ebc7c504a41a6c113a52336f5164becfc0f88a18d2511f4c833313c06ef5b",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "epoch-trajectory-evaluation-incidents-2026",
+      "subjectDigest": "6b71b20cf46a768a4c03b29b0cde0f2e050b2e6c4284a16ae5864a7b52db20ec",
+      "reviewDigest": "5498f280c3ad774b35728e2e5426ed601ab059d5366406c24c41590e10ca6ef8",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "fireworks-october-incident-update-2026",
+      "subjectDigest": "f09d226192ec741585913890d9a57df4c533562fad5f49169dc06438f2f2d84b",
+      "reviewDigest": "2234421dcc1eae11b2c7da6c0a04b644c58e3a53a440aadb1df7fb385a0b6c7a",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "gemini-chat-history-training-controls-2026",
+      "subjectDigest": "0c64930d6d0f6cf6e05cc03692e6d0f5e93d84239d00662fbc1ee0fc632bbf3f",
+      "reviewDigest": "9c1dda19e19148714ba75c851235a10fe5e6a7702a821f898b70be3c27e31295",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "google-gemini-4-carbon-2026",
+      "subjectDigest": "ae6d649de44775f97c9cdc7ff8ba70a76a7a8edd74727fd57a219da34421c4fd",
+      "reviewDigest": "28f6dc3ded5b0c14ccb94eb1a108c9b4dad0e33cf9003fe62307118f8f7081ec",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "google-gemini-4-hydrogen-2026",
+      "subjectDigest": "87f9872a3464bbd040ee7b9806724fd79c29c67d7020a8dae4bfa1bbdba0cc6e",
+      "reviewDigest": "19497c5cb1a2d92ee4f30fa2918a840e4e893bf53ee5fc37fa6b329a6c7ecb32",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "google-gemini-decisions-api-2026",
+      "subjectDigest": "ce7d1c2d6f44315cdeb874aa4045824b5389021e22083c9d66f65fc449c3b3dd",
+      "reviewDigest": "091ae3902f6233bfd797ca018da48598707b33a9d48ee02eca184ccc51418798",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "google-gemini-wallet-integration-2026",
+      "subjectDigest": "d59e40a4934ff135406c05dfc7305373be42d9e450b6ccebca7d9bc2e8baaf22",
+      "reviewDigest": "30a2b05c7d7ba995d3a0bedb1a3935ebc828a202b7604b058df2b3c6a91ad21f",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "google-tpu-8tx-8i-max-2026",
+      "subjectDigest": "c5727986ae4513b6634b5a3c587608c0d0a3eda1dde08fa449d8cd1ea8a7df44",
+      "reviewDigest": "f5d6749711034b9fefb2b198e964d98fce325bf1a8ec2053169a038cb110e737",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "gtig-ai-threat-tracker-q4-2026",
+      "subjectDigest": "fb8f1c751bdfacd9ddccd44ca6efa94e6c087b74de8f44cdf9b74c506d554386",
+      "reviewDigest": "64578ae093b71bb8b5ba957fc0939a6214b7ccfa52f7024a3a505ec124dd903b",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "near-ai-sglang-disclosure-2026",
+      "subjectDigest": "ea38e1f387a3e4f329f715fbbd0c11cda3f0fcb3ac62249596ae482657177100",
+      "reviewDigest": "656637874838e1de45812b22b9b430b3d49257fd92f09bc51697daf3f5936cb8",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "nvidia-ceo-transition-2026",
+      "subjectDigest": "bad24743119f65556291443c57436f608fa153adb4c29d8cc74ae5a95b064888",
+      "reviewDigest": "93ddbe47b25641d254b53c5cc8de22440fc7b73c08b25d443cce49deab569ee7",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "openai-apollo-embedded-evals-2026",
+      "subjectDigest": "9e3a3780a52a74f461131861291d8357fd3093aee7222e0482bfecbe306bc626",
+      "reviewDigest": "4aea6f77d637a84a79c846a1cca5c08052e0bfba5168afec917df23c40a394c9",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "openai-chatgpt-wallet-2026",
+      "subjectDigest": "5a5c15c0f8349754f24f99273f8d56a4a6ab858d70f71cfd4722857cdbcdd5c4",
+      "reviewDigest": "f9e9225f4c0eca06b83c5a5deefdc32fad2e33b40e7a9b4bc64b23beee123f1a",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "paris-call-ai-safety-2026",
+      "subjectDigest": "29dfff80f6612ae684c22dcecd934609c11b71497c140feb252155027646ef35",
+      "reviewDigest": "e7aec86665a703a37a84560c016038ca865097794ae1cf800c334f985c8a7b17",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0"
+    },
+    {
+      "subjectId": "meta-muse-ember-2026",
+      "subjectDigest": "0d94d8e8ce3ee6241634df16089abc818759cafccadf47fddbea35fcde1af4e6",
+      "reviewDigest": "6835e520f1a3423e1419af1d81aaefc954557574ca45a8367ce07bbb4cb30e64",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "a742c92c77f03cbda5848f27ffbe97aaa91c5fc84bdbd4c01bcbdbeaf40384b3"
+    },
+    {
+      "subjectId": "openai-lvmh-partnership-2026",
+      "subjectDigest": "2f4c7d826cbc0da4d941c40ab0ba1e4667991330069509e9c9779d8a5de76a97",
+      "reviewDigest": "229a1422d150b89d9410c96fdc4aea2780bce6ec6bcec6077b6a4b5b03825a2c",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "a742c92c77f03cbda5848f27ffbe97aaa91c5fc84bdbd4c01bcbdbeaf40384b3"
+    }
+  ],
+  "excludedAndDeferred": {
+    "amd-world-labs-close-2026": "Already-published September acquisition entry still says pending in present tense; old-record change is out of user scope and no silent contradiction allowed."
+  },
+  "scope": "Only exact 20 new event versions in Nov20 unified request. AMD not approved; old event revisions and Nov18–20 leads not approved."
+}

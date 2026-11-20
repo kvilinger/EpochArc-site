@@ -1,0 +1,120 @@
+{
+  "id": "fireworks-october-incident-update-2026",
+  "slug": "fireworks-october-incident-update-2026",
+  "date": "2026-11-17",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-17",
+    "zhHans": "2026年11月17日"
+  },
+  "title": {
+    "en": "Fireworks separates two security incidents in updated disclosure",
+    "zhHans": "Fireworks 更新通报，将安全事件区分为两起"
+  },
+  "searchSummary": {
+    "en": "Fireworks updated its security bulletin on November 17, separating August–October and late-October intrusions and saying account and billing data for all accounts opened before October 30 was accessed.",
+    "zhHans": "Fireworks 于 11 月 17 日更新安全通报，将八月至十月初与十月下旬的入侵区分为两起，并称 10 月 30 日前创建的所有账户的账户及账单资料被访问。"
+  },
+  "summary": {
+    "en": "On November 17, Fireworks updated its security bulletin, separating August–October and late-October intrusions and saying account and billing data for all accounts opened before October 30 was accessed.",
+    "zhHans": "11 月 17 日，Fireworks 更新安全通报，将八月至十月初与十月下旬的入侵区分为两起，并称 10 月 30 日前创建的所有账户的账户及账单资料被访问。"
+  },
+  "narrative": {
+    "en": "Fireworks says the first incident ran August 3–October 7 and its Unit 42 investigation is complete; it says a separate October 23–30 intrusion reached production systems and remains under AprosSyber investigation. Its November 9 interim bulletin reported disabled self-service dataset transfers; that is not the date of the latest update. Separately, Notion says data was retained on Fireworks endpoints it used despite its zero-retention contract, and that some unattributable Notion AI chats may have been exposed. Neither account independently verifies the other party’s full incident scope.",
+    "zhHans": "Fireworks 称，第一起事件持续于 8 月 3 日至 10 月 7 日，Unit 42 对该事件的调查已完成；另一起 10 月 23 日至 30 日的入侵触及生产系统，AprosSyber 仍在调查。11 月 9 日的中期通报曾称暂停自助数据集传输，但那不是最新更新日期。另据 Notion 称，其使用的 Fireworks 端点违反零留存合同，留存了数据，部分无法归属用户的 Notion AI 对话可能暴露。两方表述都不能独立验证对方事件的全部范围。"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "fireworks-october-incident-update-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "Fireworks updated its security bulletin on November 17, separating August–October and late-October intrusions and saying account and billing data for all accounts opened before October 30 was accessed.",
+        "zhHans": "Fireworks 于 11 月 17 日更新安全通报，将八月至十月初与十月下旬的入侵区分为两起，并称 10 月 30 日前创建的所有账户的账户及账单资料被访问。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-fireworks-oct-update"
+      ],
+      "notes": "Fireworks Nov17 update is a later disclosure than its Nov9 interim bulletin; this is the company account, not independent forensics."
+    },
+    {
+      "id": "fireworks-october-incident-update-2026-notion-limits",
+      "claimType": "limitation",
+      "text": {
+        "en": "Notion says data was retained from the Fireworks endpoints it used despite a zero-retention commitment, and some unattributable Notion AI chats may have been exposed.",
+        "zhHans": "Notion 称，其使用的 Fireworks 端点违反零留存承诺而留存数据，部分无法归属用户的 Notion AI 对话可能暴露。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-notion-fireworks"
+      ],
+      "notes": "Notion original describes its own affected integration; does not independently confirm all Fireworks-wide incident findings."
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "restart17-fireworks-oct-update",
+      "supports": [
+        "fireworks-october-incident-update-2026",
+        "fireworks-october-incident-update-2026-core"
+      ]
+    },
+    {
+      "sourceId": "restart17-notion-fireworks",
+      "supports": [
+        "fireworks-october-incident-update-2026",
+        "fireworks-october-incident-update-2026-notion-limits"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-17",
+    "updatedAt": "2026-11-20",
+    "lastSourceCheckAt": "2026-11-20",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Unapproved Nov20 exact publication-state candidate after an ACCEPT_LIMITED independent complete reviewed-state v2.4 audit. A primary party establishes only its declared action/stage, not unmeasured impact. Separate published-state review and explicit one-list human approval remain mandatory.",
+    "changeLog": [
+      {
+        "date": "2026-11-17",
+        "changeType": "created",
+        "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Read full source bodies and checked claim-local stage/date/EN-ZH meaning. Date corrected Nov9 interim bulletin to Nov17 material two-incident update; Notion separately attributed."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Fireworks two-incident split and Notion endpoint observations kept in separate claims."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Assembled claim-local evidence and L1 route in isolated reviewed-state v2.4 proposal; exact packet independent audit remains pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Constructed isolated publication-state candidate from complete reviewed-state audit; not a production deployment or human approval."
+      }
+    ],
+    "reviewedAt": "2026-11-20",
+    "reviewer": "gemini:01a1f68c-9652-73ee-8099-0d21ecddf93b",
+    "reviewRecord": "governance/reviews/independent-20261120/fireworks-october-incident-update-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-20"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "openai-lvmh-partnership-2026",
+  "subjectDigest": "2f4c7d826cbc0da4d941c40ab0ba1e4667991330069509e9c9779d8a5de76a97",
+  "inputsDigest": "5c8387bf8779d67d789b8e8e68cd233e3e2e2a5bd2c1fd8e4dc8688e0a4e9776",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f670-52a8-77cc-acc7-667bb81d2af1",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "OpenAI matching LVMH page returned HTTP 403; French signing-party statement confirms signature only.",
+    "Targeted search is not full six-channel window coverage; search leads cannot prove effects.",
+    "Limited r3 draft review is not approval of the later reviewed-state or published-state subject digests."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Hydrogen full-body r3 draft review accepted EN/zh bounded core and limitation claims; assembled reviewed-state packet is separately audited with exact input hash."
+  },
+  "evidence": [
+    {
+      "id": "l-group-date",
+      "sourceId": "restart17-sup-lvmh-primary",
+      "claimId": "openai-lvmh-partnership-2026-core",
+      "url": "https://lesechosleparisien.fr/actualites/le-groupe/le-pole-medias-de-lvmh-annonce-un-partenariat-strategique-avec-openai/",
+      "originId": "restart17-openai-lvmh-partnership-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "16. 11. 2026",
+      "locator": "French Groupe Les Echos-Le Parisien article date",
+      "artifact": "governance/evidence/2026-11-20/direct/lvmh-group.txt",
+      "sha256": "30cf834e58a6da1c950ab92557fb3a8145c0983780624076913c272214150fca"
+    },
+    {
+      "id": "l-group-signature",
+      "sourceId": "restart17-sup-lvmh-primary",
+      "claimId": "openai-lvmh-partnership-2026-core",
+      "url": "https://lesechosleparisien.fr/actualites/le-groupe/le-pole-medias-de-lvmh-annonce-un-partenariat-strategique-avec-openai/",
+      "originId": "restart17-openai-lvmh-partnership-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Le pôle médias du Groupe LVMH et OpenAI annoncent la signature d’un accord stratégique",
+      "locator": "French signed agreement announcement",
+      "artifact": "governance/evidence/2026-11-20/direct/lvmh-group.txt",
+      "sha256": "30cf834e58a6da1c950ab92557fb3a8145c0983780624076913c272214150fca"
+    },
+    {
+      "id": "l-group-plans",
+      "sourceId": "restart17-sup-lvmh-primary",
+      "claimId": "openai-lvmh-partnership-2026-core",
+      "url": "https://lesechosleparisien.fr/actualites/le-groupe/le-pole-medias-de-lvmh-annonce-un-partenariat-strategique-avec-openai/",
+      "originId": "restart17-openai-lvmh-partnership-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "L’accord prévoit notamment le déploiement des outils OpenAI et de ChatGPT Enterprise pour les équipes du pôle médias",
+      "locator": "Planned team tooling, not completed deployment",
+      "artifact": "governance/evidence/2026-11-20/direct/lvmh-group.txt",
+      "sha256": "30cf834e58a6da1c950ab92557fb3a8145c0983780624076913c272214150fca"
+    },
+    {
+      "id": "l-group-links",
+      "sourceId": "restart17-sup-lvmh-primary",
+      "claimId": "openai-lvmh-partnership-2026-core",
+      "url": "https://lesechosleparisien.fr/actualites/le-groupe/le-pole-medias-de-lvmh-annonce-un-partenariat-strategique-avec-openai/",
+      "originId": "restart17-openai-lvmh-partnership-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "des résumés et des extraits identifiant leur source et comprenant des liens directs vers les articles originaux",
+      "locator": "French ChatGPT content summary/link plan",
+      "artifact": "governance/evidence/2026-11-20/direct/lvmh-group.txt",
+      "sha256": "30cf834e58a6da1c950ab92557fb3a8145c0983780624076913c272214150fca"
+    },
+    {
+      "id": "l-ppc-omissions",
+      "sourceId": "restart20-lvmh-ppc",
+      "claimId": "openai-lvmh-partnership-2026-terms-limit",
+      "url": "https://ppc.land/lvmhs-17-media-brands-sign-with-openai-price-not-on-the-label/",
+      "originId": "ppc-lvmh-contract-terms-analysis-20261116",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Neither version states any payment in either direction, the length of the agreement, its start date or whether it is exclusive. Neither says whether OpenAI may use the division's articles to train models",
+      "locator": "PPC Land original analysis of PUBLIC announcement omissions, not private-contract verification",
+      "artifact": "governance/evidence/2026-11-20/direct/lvmh-ppc.txt",
+      "sha256": "68a532223fbbef24ddf610c4160bd04b9ad80939d939abd514f3dc6a2fa4b359"
+    }
+  ],
+  "runId": "targeted-meta-ember-lvmh-signing-20261120-r3",
+  "candidateId": "openai-lvmh-partnership",
+  "runDigest": "a742c92c77f03cbda5848f27ffbe97aaa91c5fc84bdbd4c01bcbdbeaf40384b3",
+  "coreFactClaimIds": [
+    "openai-lvmh-partnership-2026-core"
+  ],
+  "identity": {
+    "seriesId": "openai-lvmh-partnership",
+    "action": "LVMH media division announces signed OpenAI agreement",
+    "stage": "announced",
+    "dateBasis": "Dated Nov16 French group announcement of signature, not full deployment.",
+    "deduplicationReason": "LVMH media unit signed a Nov16 content and newsroom tool agreement, distinct from Google/Oracle TPU capacity planning and NVIDIA/Meta proposed investment collaboration.",
+    "comparedEventIds": [
+      "google-oracle-tpu-oci-2026",
+      "nvidia-meta-muse-collaboration-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "Signed media content/tools commercial agreement, not product deployment or regulation."
+  },
+  "significance": {
+    "rationale": "Party-original dated signing of a media tools/content agreement is a bounded L1 commerce event; actual implementation and external effects not established.",
+    "whyNotHigher": "Neither independent production adoption nor material external structural execution and observed impact meets L2 route thresholds.",
+    "whyNotLower": "The French signing-party original states agreement signature and intended newsroom and ChatGPT content use, not rumor.",
+    "comparisonEventIds": [
+      "google-oracle-tpu-oci-2026",
+      "nvidia-meta-muse-collaboration-2026"
+    ],
+    "comparisonNotes": {
+      "google-oracle-tpu-oci-2026": "Planned TPU capacity from 2027 versus agreement signed and planned LVMH team tools",
+      "nvidia-meta-muse-collaboration-2026": "Proposed investment and collaboration versus separately signed media agreement"
+    },
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": null,
+            "rationale": "Signature reported by a party, but actual distribution/tool rollout or executed structural change beyond announced agreement not independently evidenced.",
+            "evidenceIds": []
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "No measured downstream revenue, traffic or impact on two independent external actors attributable to the deal.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "French partner notice supports signing; PPC comments on undisclosed terms; actual tool rollout or readership effect remains unmeasured.",
+    "evidenceIds": [
+      "l-group-signature"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "The unknown public financial/licensing terms and wider sector dispute do not constitute a direct counterclaim to this specific signing.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Earlier reviewed-state exact full-body Hydrogen audit in real session 01a1f670-52a8-77cc-acc7-667bb81d2af1 returned ACCEPT_LIMITED; this published-state subject is separately audited, and human approval plus deployment are external records. No measured external adoption or deal execution is inferred.",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f670-52a8-77cc-acc7-667bb81d2af1",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high"
+}

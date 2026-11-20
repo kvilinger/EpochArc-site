@@ -1,0 +1,129 @@
+{
+  "id": "nvidia-ceo-transition-2026",
+  "slug": "nvidia-ceo-transition-2026",
+  "date": "2026-11-12",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-12",
+    "zhHans": "2026年11月12日"
+  },
+  "title": {
+    "en": "NVIDIA names Colette Kress interim CEO after Huang resigns",
+    "zhHans": "黄仁勋辞任 CEO，NVIDIA 任命 Colette Kress 为临时 CEO"
+  },
+  "searchSummary": {
+    "en": "NVIDIA announced Jensen Huang’s resignation as CEO, effective immediately, and named Colette Kress interim CEO.",
+    "zhHans": "NVIDIA 宣布黄仁勋辞去 CEO 职务并立即生效，由 Colette Kress 担任临时 CEO。"
+  },
+  "summary": {
+    "en": "Dated 2026-11-12: NVIDIA announced Jensen Huang’s resignation as CEO, effective immediately, and named Colette Kress interim CEO.",
+    "zhHans": "2026-11-12，NVIDIA 宣布黄仁勋辞去 CEO 职务并立即生效，由 Colette Kress 担任临时 CEO。"
+  },
+  "narrative": {
+    "en": "NVIDIA states Huang resigned as president, CEO and board member effective immediately; Kress became interim CEO while remaining CFO, and Harvey C. Jones became board chair. This executive and board transition is distinct from the already published November 8 board inquiry. Neither the inquiry nor surrounding allegations establish a cause for the resignation.",
+    "zhHans": "NVIDIA 称黄仁勋辞去总裁、CEO 及董事职务并立即生效；Kress 在继续担任 CFO 的同时出任临时 CEO，Harvey C. Jones 出任董事会主席。任免不同于已发布的 11 月 8 日董事会调查；不能据调查或其他未经核实的指控推断辞任原因。"
+  },
+  "categories": [
+    "commerce"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "nvidia-ceo-transition-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "NVIDIA announced Jensen Huang’s resignation as CEO, effective immediately, and named Colette Kress interim CEO.",
+        "zhHans": "NVIDIA 宣布黄仁勋辞去 CEO 职务并立即生效，由 Colette Kress 担任临时 CEO。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-nvidia-ceo",
+        "restart17-sup-nvidia-abc"
+      ],
+      "notes": "Company Nov12 press release directly establishes immediately effective CEO resignation and interim appointment; ABC independently reports personnel announcement, not a causal explanation."
+    },
+    {
+      "id": "nvidia-ceo-transition-2026-board",
+      "claimType": "fact",
+      "text": {
+        "en": "NVIDIA said Huang also left its board and Harvey C. Jones became board chair.",
+        "zhHans": "NVIDIA 称黄仁勋也辞去董事职务，Harvey C. Jones 出任董事会主席。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-nvidia-ceo"
+      ],
+      "notes": "Directly stated in NVIDIA Nov12 release; not a claim about the earlier investigation."
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "restart17-nvidia-ceo",
+      "supports": [
+        "nvidia-ceo-transition-2026",
+        "nvidia-ceo-transition-2026-core",
+        "nvidia-ceo-transition-2026-board"
+      ]
+    },
+    {
+      "sourceId": "restart17-sup-nvidia-abc",
+      "supports": [
+        "nvidia-ceo-transition-2026",
+        "nvidia-ceo-transition-2026-core"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "nvidia-board-independent-inquiry-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-17",
+    "updatedAt": "2026-11-20",
+    "lastSourceCheckAt": "2026-11-20",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Unapproved Nov20 exact publication-state candidate after an ACCEPT_LIMITED independent complete reviewed-state v2.4 audit. A primary party establishes only its declared action/stage, not unmeasured impact. Separate published-state review and explicit one-list human approval remain mandatory.",
+    "changeLog": [
+      {
+        "date": "2026-11-17",
+        "changeType": "created",
+        "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Read full source bodies and checked claim-local stage/date/EN-ZH meaning. Corrected board resignation and chair appointment directly from Nov12 company release; no causality inference."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Board resignation/Chair separately sourced to company original."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Assembled claim-local evidence and L1 route in isolated reviewed-state v2.4 proposal; exact packet independent audit remains pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Repaired exact claim-to-quote semantic gaps found in independent full-packet review; separate new digest and model recheck required."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Constructed isolated publication-state candidate from complete reviewed-state audit; not a production deployment or human approval."
+      }
+    ],
+    "reviewedAt": "2026-11-20",
+    "reviewer": "gemini:01a1f692-f348-7493-8f63-fc353c3e25d6",
+    "reviewRecord": "governance/reviews/independent-20261120/nvidia-ceo-transition-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-20"
+  }
+}

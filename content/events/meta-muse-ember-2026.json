@@ -1,0 +1,110 @@
+{
+  "id": "meta-muse-ember-2026",
+  "slug": "meta-muse-ember-2026",
+  "date": "2026-11-09",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-09",
+    "zhHans": "2026年11月9日"
+  },
+  "title": {
+    "en": "Meta makes Muse Ember available via Muse Code and its Model API",
+    "zhHans": "Meta 通过 Muse Code 和 Model API 提供 Muse Ember"
+  },
+  "searchSummary": {
+    "en": "Meta said Muse Ember was available on Muse Code and the Meta Model API on November 9.",
+    "zhHans": "Meta 表示 Muse Ember 于 11 月 9 日在 Muse Code 与 Meta Model API 上提供。"
+  },
+  "summary": {
+    "en": "On November 9, Meta announced that Muse Ember, its smaller agent-oriented model, was available on Muse Code and the Meta Model API. Its price and benchmark comparisons are separate from evidence of actual customer use.",
+    "zhHans": "11 月 9 日，Meta 宣布面向智能体任务的较小模型 Muse Ember 已可通过 Muse Code 和 Meta Model API 使用。标价和跑分对比不能证明客户实际采用。"
+  },
+  "narrative": {
+    "en": "Meta describes tool-use and coding tasks for the model. Artificial Analysis independently evaluated its performance, but its per-task cost is calculated for benchmark tasks, and benchmark results do not measure outside organizations’ production adoption. Meta’s own availability statement is not a measurement of external reach.",
+    "zhHans": "Meta 将该模型定位于工具调用与编程等任务。Artificial Analysis 对模型表现进行了独立评测，但单任务成本按基准测试任务计算；基准测试无法衡量外部机构的生产采用。Meta 的可用性声明也不等于外部覆盖范围的实测。"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "meta-muse-ember-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "Meta announced that Muse Ember was available on Muse Code and the Meta Model API on November 9.",
+        "zhHans": "Meta 宣布 Muse Ember 于 11 月 9 日已在 Muse Code 和 Meta Model API 上提供。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-meta-ember"
+      ],
+      "notes": "First-party release establishes an announced availability, not actual independent uptake."
+    },
+    {
+      "id": "meta-muse-ember-2026-benchmark-limit",
+      "claimType": "limitation",
+      "text": {
+        "en": "Artificial Analysis evaluated Muse Ember and noted verbose output; its per-task cost is for benchmark tasks, not a measurement of production adoption.",
+        "zhHans": "Artificial Analysis 评测了 Muse Ember 并指出其输出偏冗长；单任务成本针对基准测试任务，并非生产环境采用规模的测量。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "restart20-ember-aa"
+      ],
+      "notes": "Original evaluator analysis is independent of Meta for its benchmark, but not a measurement of actual enterprise adoption."
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "restart17-meta-ember",
+      "supports": [
+        "meta-muse-ember-2026",
+        "meta-muse-ember-2026-core"
+      ]
+    },
+    {
+      "sourceId": "restart20-ember-aa",
+      "supports": [
+        "meta-muse-ember-2026",
+        "meta-muse-ember-2026-benchmark-limit"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-17",
+    "updatedAt": "2026-11-20",
+    "lastSourceCheckAt": "2026-11-20",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "This bounded published-state candidate was prepared Nov20 from a full-body reviewed-state audit. Meta first-party availability and AA benchmark do not establish actual customer uptake. Approval and production deployment are tracked separately, not asserted by this note.",
+    "changeLog": [
+      {
+        "date": "2026-11-17",
+        "changeType": "created",
+        "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Bound the announcement/availability stage and added original analytic limitation source without inferring measured deployment."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Removed unmatched limitation paraphrase from prior full-packet REVISE; kept announcement and impact bounds."
+      }
+    ],
+    "reviewedAt": "2026-11-20",
+    "reviewer": "gemini:01a1f670-52a8-77cc-acc7-667bb81d2af1",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/independent-20261120/meta-muse-ember-2026.json",
+    "publishedAt": "2026-11-20"
+  }
+}

@@ -1,0 +1,248 @@
+A Pilot Towards Embedded Evaluations
+
+Announcing a pilot towards embedded evaluations with OpenAI
+
+CEO Marius Hobbhahn speaks on misaligned AI in the U.S. Senate
+
+Who We Are
+
+About
+Team
+Press
+Blog
+
+Science
+
+Monitoring
+
+Governance
+
+Careers
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher ·
+
+Try Watcher
+
+All blog posts
+
+A Pilot Towards Embedded Evaluations
+
+Written & Edited By
+
+Apollo Research Team
+
+Published on
+
+16 November 2026
+
+Table of Contents
+
+Evaluating anti-scheming training
+
+Share this post
+
+Copy as Markdown
+
+Apollo Research is excited to announce a pilot towards embedded evaluations with OpenAI.
+
+As part of this pilot, a team of six from Apollo Research will work within OpenAI for four months, assessing the alignment of models throughout training, evaluations, and internal deployment with scoped rules of access. Apollo Research’s goal is to investigate whether models attempt to
+subvert their own or their successors’ alignment or control mechanisms
+.
+
+This pilot will focus on examining four areas across development:
+
+Whether training incentivizes subversion
+
+Whether evaluations can elicit subversion
+
+Whether subversion occurs during internal deployment
+
+Whether reasoning relevant to subversion would be detectable.
+
+This pilot builds on Apollo Research’s prior work with OpenAI stress-testing its alignment techniques and investigating how scheming risks change throughout post-training. Our joint work has
+stress-tested OpenAI’s training interventions designed to prevent scheming
+,
+demonstrated how models’ awareness of evaluation and oversight affects their behavior
+, and
+shown that models can increasingly favor grader preferences over user instructions or OpenAI leadership’s stated preferences as reinforcement learning progresses
+.
+
+An essential part of this pilot is OpenAI’s agreement that Apollo Research can publicly explain the conditions and limitations of its work. Apollo Research regards these “meta-transparency” rights as a minimum standard for evaluation engagements.
+
+Embedded evaluations will require Access, Disclosure and Meta-Transparency
+
+Apollo Research’s previous evaluations of frontier models took place after post-training and shortly before public release. This approach is
+not sufficient for testing misaligned behaviors like scheming
+, or for
+non-public use cases of frontier AI models during internal deployment
+. Embedded evaluations with employee-like access can overcome these limitations.
+
+In general, the results of embedded evaluations must be credible independently of whether people trust the developer being evaluated.
+For that to work, evaluators need three things:
+
+1.
+Access:
+Evaluators must be able to access all data, records and documentation relevant to their assessment even if a developer was trying to hide unfavorable information.
+
+2.
+Disclosure:
+Evaluators must be able to disclose the findings of their embedded evaluation to an appropriate outside audience even if the developer was trying to prevent the disclosure of unfavorable findings.[^1]
+
+3.
+Meta-Transparency:
+Evaluators must be able to explain constraints to access and disclosure in sufficient detail for outside audiences to understand what a report can and cannot establish.
+
+Regardless of the level of access and disclosure rights granted, Apollo Research regards strong “meta-transparency” rights as essential in
+every
+evaluation engagement.
+
+This pilot is an ambitious first step towards deeper
+access
+and
+disclosure rights
+, even if it doesn’t yet fulfill the criteria above.
+OpenAI has agreed not to withhold information or access to staff, nor request redactions, simply because the information or findings are unfavorable
+.
+The pilot
+meets our bar for meta-transparency
+. Apollo Research is working towards running full embedded evaluations with multiple AI developers in the future. We see this pilot with OpenAI as a first and significant step for even deeper access in the future.
+
+Access rules of this pilot
+
+OpenAI has committed to giving Apollo Research the access required to assess whether OpenAI’s models engage in subversion attempts.
+For assessing whether training incentivizes subversion, this access includes relevant training code and datasets, reinforcement-learning rollouts with available reasoning traces and rewards, and the ability to query intermediate model checkpoints. The detailed access arrangements for the other claims in the assessment remain to be agreed. Apollo Research will follow its
+framework for claim verification
+to review OpenAI’s existing evidence, gather independent evidence, and assess whether OpenAI’s evidence-collection processes would surface potential failures.
+
+Apollo Research’s access is limited to the agreed scope, and OpenAI may withhold some in-scope information.
+Apollo Research’s assessment will cover only the agreed claims and only for the specific models and time periods agreed for the assessment. Even within that scope, OpenAI may withhold items where OpenAI deems it reasonably necessary because of technical infeasibility, security risks, or IP protection. OpenAI has agreed not to withhold information or access to staff simply because the information is unfavorable, and must inform Apollo Research that withheld items exist and give written reasons for refusals. Where OpenAI considers it feasible and relevant, OpenAI will identify withheld records by category and approximate volume. Apollo Research can request additional access or an expansion of scope through a designated OpenAI contact and escalate refusals, but expansion is not guaranteed.
+
+‍
+For this pilot, Apollo Research may discuss confidential OpenAI information only with authorized staff.
+Apollo Research can request to speak to OpenAI staff with specific expertise and may suggest individuals, but OpenAI selects participants. Formal conversations with approved staff must be logged. If an OpenAI employee outside this group raises confidential information, Apollo Research must stop substantive discussion and route follow-up through its designated OpenAI contact, even if the information is clearly within the scope of Apollo Research’s engagement. All of Apollo Research’s work will be done on OpenAI hardware. Evaluators have separate channels that can be monitored. By default, evaluators do not have access to any of the general channels (e.g. Slack) that a safety researcher at OpenAI would.[^2]
+
+Disclosure rules of this pilot
+
+Apollo Research will publish two reports setting out the findings, methods, and limitations of the assessments.
+The first public report will describe Apollo Research’s assessment of the training incentives for subversion. The second public report covers evaluations, internal deployment, and the detectability of subversive reasoning. Each will describe Apollo Research’s methods, conclusions, and limitations, including questions that could not be assessed, alongside the supporting evidence that can be published.
+
+OpenAI will review the reports and may request redaction of confidential information, including evidence supporting Apollo Research’s findings.
+OpenAI may not redact Apollo Research’s verdicts for each claim and OpenAI may not request redactions merely because a finding is unfavorable. However, OpenAI remains empowered to redact evidence that they consider to reveal sensitive IP, whether the evidence directly contributes to the finding or not. Readers of the public report may therefore be unable to examine all the evidence underlying a published conclusion, but Apollo Research will be able to indicate whether the redactions affected the conclusions. OpenAI will also share Apollo Research’s unredacted reports with its Board’s Safety and Security Committee (SSC).
+
+Publishing claims based on employee discussions requires OpenAI’s formal attestation, unless Apollo Research establishes them independently.
+This also applies to information shared by authorized staff in a formal interview. Attestation requests must be relevant to the agreed assessment, grounded in an employee discussion, specific and reasonably verifiable. Each request must identify the statement to be confirmed and its intended use in the report. Information from formal interviews may therefore inform Apollo Research’s investigation without appearing in the public report. Apollo Research can disclose that an attestation was declined and explain its effect on the conclusions, without revealing the underlying confidential information.
+
+Meta-transparency rules for this pilot
+
+Meta-transparency is the right to publicly explain the conditions and limitations of an evaluator’s work.
+It allows outside audiences to understand what that evaluator’s reports do and do not establish.
+
+For this pilot, OpenAI has agreed to meta-transparency rights that meet our bar.
+These rights allow Apollo Research to describe the scope and conditions of the engagement, the access requested and received, what was withheld or delayed and the reasons given, whether material was removed from a report at OpenAI’s request and how much that removal matters to Apollo Research’s conclusions, as well as any pressure Apollo Research believed shaped its work. The agreement also lets Apollo Research discuss its access and publication terms publicly without prior review by OpenAI. Due to the meta-transparency rights, Apollo Research can state that material was redacted or an attestation declined and explain how that limits Apollo Research’s conclusions, even when the underlying information cannot be disclosed.
+
+Apollo Research considers strong meta-transparency rights a minimum standard for all evaluation engagements.
+Without meta-transparency, a lack of reported problems can look reassuring even when it simply reflects limits on what an evaluator could investigate or disclose. OpenAI’s agreement provides a public benchmark for other evaluation engagements.
+
+What’s next
+
+Apollo Research commends OpenAI for opening its development process to independent scrutiny and hopes to work with OpenAI and other frontier AI developers toward embedded evaluations that fulfill the access and disclosure criteria set out above. We expect to learn a lot from this pilot and refine our approach as we work towards full embedded evaluations with deeper access and stronger disclosure rights.
+
+As Apollo Research prepares for this pilot alongside its other evaluation work, it is currently hiring for technical roles across the organization. Interested researchers can learn more about the open positions on
+Apollo Research’s careers page
+, and more roles will appear in the coming days.
+
+Apollo Research looks forward to sharing more about this pilot as it progresses.
+
+[^1]: The audience need not always be the public: sensitive evidence could, in principle, go to an independent body authorized to receive and assess it.
+
+[^2]: From our own experience, informal conversations and Slack channels can often surface relevant information that an evaluator might not have asked about or the significance of which might not always be immediately obvious to the person sharing it. We are working towards assessments that enable this type of informal information to be in scope to prevent important information being overseen and limiting our conclusions.
+
+All Science Papers
+
+Share this article
+
+Copy as Markdown
+
+Our blog
+
+Latest from
+Apollo
+
+19 November 2026
+
+Towards embedded evaluations for AI monitoring
+
+Six claims for testing whether AI monitors would catch a rogue internal deployment at frontier labs: coverage, capability, trust, disclosure and what’s next.
+
+Read more
+
+16 November 2026
+
+A Pilot Towards Embedded Evaluations
+
+Our pilot with OpenAI: six evaluators, four months across training, evals and internal deployment, with public reports and meta-transparency on our limits.
+
+Read more
+
+01 October 2026
+
+Towards embedded evaluations for scheming propensities
+
+Embedded evaluations for frontier AI scheming: four claims every safety case must make, and the persistent, deep access embedded evaluators need to verify them.
+
+Read more
+
+Stay in the loop.
+Hear from the Apollo Research team on the latest news, studies, and other findings on AI scheming.
+
+One email at a time. Unsubscribe anytime.
+
+Thank you! Your submission has been received!
+
+Oops! Something went wrong while submitting the form.
+
+Who We Are
+
+About
+Team
+Press
+Blog
+
+General
+
+Science
+Monitoring
+Governance
+Careers
+
+Legal
+
+Privacy Policy
+Cookie Policy
+Trust Center
+
+Registration
+
+EIN 93-4310599 DE, USA
+
+EU Transparency Register #837878591690-80
+
+Get in touch

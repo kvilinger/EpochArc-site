@@ -1,0 +1,156 @@
+{
+  "executedAt": "2026-11-20T01:08:08.763768+00:00",
+  "requestUrl": "https://api.search.brave.com/res/v1/web/search?q=Near+AI+SGLang+incident+disclosure+independent+forensics+November+2026+actual+observed+adoption+effects+production+measurements&count=20&freshness=2026-11-09to2026-11-20",
+  "status": "200",
+  "tlsVerify": "0",
+  "finalUrl": "https://api.search.brave.com/res/v1/web/search?q=Near+AI+SGLang+incident+disclosure+independent+forensics+November+2026+actual+observed+adoption+effects+production+measurements&count=20&freshness=2026-11-09to2026-11-20",
+  "curlExit": 0,
+  "ok": true,
+  "results": [
+    {
+      "title": "NEAR AI Security Incident Report: SGLang Vulnerability — NEAR AI",
+      "url": "https://near.ai/blog/security-incident-report-sglang-vulnerability",
+      "description": "Additionally, there was access to 18 agents on a legacy deployment of NEAR AI Agents which were not running in NEAR AI&#x27;s confidential computing (TEE) environment. On November 8, they could also have observed user requests being processed on the accessed server, including requests running in confidential mode.",
+      "age": "1 week ago",
+      "page_age": "2026-11-09T22:58:03"
+    },
+    {
+      "title": "Inside the Enclave, Still Exposed: The NEAR AI SGLang Breach – Lab Space",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-near-ai-sglang-confidential-inference-brea/",
+      "description": "Inside the Enclave, Still Exposed: ... NEAR AI disclosed that <strong>an unauthorized party exploited a remote code execution (RCE) vulnerability in SGLang, the open-source inference engine running on its servers</strong>....",
+      "age": "1 week ago",
+      "page_age": "2026-11-11T13:48:47"
+    },
+    {
+      "title": "Confidential AI Under Pressure: SGLang RCE and SEV-SNP Attacks – Lab Space",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-confidential-ai-inference-tee-limits-20261/",
+      "description": "It stated that requests processed on the compromised server on November 8, including confidential-mode requests, could have been observed, but it has not said whether any were actually read [1]. NEAR AI did not identify which SGLang vulnerability was exploited, and media coverage has not linked it to a specific CVE [2]. The broader state of SGLang security is still relevant context. CERT/CC’s vulnerability note VU#281278, published July 30, 2026, describes six SGLang flaws.",
+      "age": "3 days ago",
+      "page_age": "2026-11-16T13:50:32"
+    },
+    {
+      "title": "CISO Daily Briefing – 2026-11-11 – Lab Space",
+      "url": "https://labs.cloudsecurityalliance.org/research/alt-ciso-briefing-2026-11-11/",
+      "description": "Summary: On November 8, an attacker ... As NEAR AI’s incident report explains, <strong>the attacker could observe in-flight requests on that server, including confidential-mode requests</strong>....",
+      "age": "1 week ago",
+      "page_age": "2026-11-11T13:55:34"
+    },
+    {
+      "title": "CISO Daily Briefing – 2026-11-11 – Lab Space",
+      "url": "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261111/",
+      "description": "According to NEAR AI’s incident report, the attacker then pivoted to a deprecated Private Chat system and took names and emails for about 100 users, history for 18 legacy agents, and two customers’ API keys that had been written to logs. NEAR AI has not said which SGLang flaw was used.",
+      "age": "1 week ago",
+      "page_age": "2026-11-11T13:50:31"
+    },
+    {
+      "title": "Frontier Ready Daily – 11 November 2026 – Lab Space",
+      "url": "https://labs.cloudsecurityalliance.org/research/frontier-ready-daily-20261111/",
+      "description": "On 9 November 2026 NEAR AI reported that <strong>an attacker used a remote code execution flaw in SGLang, the open-source inference engine, to run code on one of its inference servers</strong>. That server processes confidential-mode requests inside a trusted ...",
+      "age": "1 week ago",
+      "page_age": "2026-11-11T15:06:38"
+    },
+    {
+      "title": "NEAR AI Breach Exposes Credentials and Highlights AI Infrastructure Risks | Mallory",
+      "url": "https://mallory.ai/stories/01a1f3b5-de78-7e78-ba77-909fc5cc755a",
+      "description": "ai-platform-securityactively-e... that <strong>an attacker exploited a vulnerability in the SGLang inference engine, exposing account details for approximately 100 users and data from 18 legacy AI agents outside its confidential-computing environment</strong>...",
+      "age": "13 hours ago",
+      "page_age": "2026-11-19T12:12:17"
+    },
+    {
+      "title": "NEAR AI Says SGLang RCE May Have Exposed Confidential Requests | THE D*AI*LY BRIEF",
+      "url": "https://www.beri.net/article/near-ai-sglang-rce-breach-confidential-inference-tee-not-enough-cert-cc-unpatched-cves-pickle-ipc-lock-down-self-hosted-inference",
+      "description": "On November 9, 2026, NEAR AI disclosed that <strong>an attacker exploited a remote code execution flaw in SGLang to run code on one inference server</strong>. The attacker could have observed requests on that server on November 8, including confidential-mode ...",
+      "age": "1 week ago",
+      "page_age": "2026-11-11T21:05:31"
+    },
+    {
+      "title": "SGLang RCE Exploit Breaches NEAR AI: 18 Agents and 100 Users Compromised (2026)",
+      "url": "https://aviatrix.ai/threat-research-center/sglang-rce-exploit-breaches-near-ai-steals-data-18-agents-100-users/",
+      "description": "In November 2026, <strong>an attacker exploited a remote code execution vulnerability in SGLang, an open-source AI inference engine, to compromise one of NEAR AI&#x27;s inference servers</strong>. The breach occurred on a Sunday and allowed the attacker to observe ...",
+      "age": "1 week ago",
+      "page_age": "2026-11-10T23:57:06"
+    },
+    {
+      "title": "CISO Daily Briefing – 2026-11-16 – Lab Space",
+      "url": "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261116/",
+      "description": "Summary: NEAR AI disclosed that <strong>an SGLang RCE gave an attacker code execution on an inference server, where confidential-mode requests could be observed</strong>. The attacker then stole agent chat histories and customer API keys.",
+      "age": "3 days ago",
+      "page_age": "2026-11-16T13:51:51"
+    },
+    {
+      "title": "NEAR AI Restores Cloud After SGLang Breach Exposed About 100 Users",
+      "url": "https://cryptonews.net/news/security/33728684/",
+      "description": "Chat histories, configuration settings and operational logs were pulled from those agents, and two Cloud customers had API keys exposed through the logs; both credentials were subsequently revoked. The team further established that the attacker could have observed requests processed on the compromised inference server on November 8, including requests running in confidential mode, although the report does not say how many.",
+      "age": "1 week ago",
+      "page_age": "2026-11-10T11:48:00"
+    },
+    {
+      "title": "NEAR AI Contains Security Breach After SGLang Vulnerability Exploitation - Crypto Economy",
+      "url": "https://crypto-economy.com/near-ai-contains-security-breach/",
+      "description": "On November 8, the party could also have observed user requests being processed on the compromised server, including requests running in confidential mode. NEAR AI explained that confidential computing protects data from operators and hosts but cannot prevent exploitation of vulnerable software inside the enclave. The SGLang flaw therefore bypassed protections at the software layer rather than breaking the TEE hardware model.",
+      "age": "1 week ago",
+      "page_age": "2026-11-10T12:33:35"
+    },
+    {
+      "title": "Near AI Confirms Security Breach Affecting 100 Users and 18 Agents",
+      "url": "https://news.bitcoin.com/security/near-ai-confirms-security-breach-affecting-100-users-18-agents/",
+      "description": "<strong>Engineers deployed a fix for the SGLang vulnerability across every inference server and completed additional credential rotations</strong>. The company also reported completing a forensic review, notifying affected users and contacting the owners of ...",
+      "age": "1 week ago",
+      "page_age": "2026-11-10T22:50:39"
+    },
+    {
+      "title": "NEAR AI Security Breach : SGLang Vulnerability Reportedly Exposes 100 Users And 18 Agents | Crowdfund Insider",
+      "url": "https://www.crowdfundinsider.com/2026/11/322884-near-ai-security-breach-sglang-vulnerability-reportedly-exposes-100-users-and-18-agents/",
+      "description": "In response, NEAR AI revoked active sessions and administrative credentials, replaced agent tokens, took the Private Chat service offline, and applied a fix for the SGLang vulnerability across all inference servers. It completed credential rotations, conducted a forensic review, and directly notified affected users.",
+      "age": "5 days ago",
+      "page_age": "2026-11-14T22:18:54"
+    },
+    {
+      "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+      "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+      "description": "<strong>After detecting the attack, the company revoked all active sessions and administrator credentials, replaced all agent tokens and took Private Chat offline</strong>. It also deployed a fix for the SGLang flaw on all of its inference servers, rotated its ...",
+      "age": "1 week ago",
+      "page_age": "2026-11-10T22:58:03"
+    },
+    {
+      "title": "Near AI Breach Exposes User Details and Data From 18 AI Agents - Decrypt",
+      "url": "https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents",
+      "description": "NEAR AI says <strong>an attacker exploited a flaw in SGLang, accessed internal systems, and downloaded account details for approximately 100 users</strong>.",
+      "age": "1 week ago",
+      "page_age": "2026-11-10T20:28:02"
+    },
+    {
+      "title": "NEAR AI Discloses SGLang Security Incident and Revokes Exposed API Keys",
+      "url": "https://www.newsbtc.com/security/near-ai-sglang-security-incident-agent-exposure",
+      "description": "The investigation identified <strong>roughly 100 user details and 18 agents in the affected context, with two Cloud API keys exposed and subsequently revoked</strong>. The company said there was no evidence that stored Private Chat content had been compromised.",
+      "age": "1 week ago",
+      "page_age": "2026-11-11T07:00:00"
+    },
+    {
+      "title": "NEAR AI SGLang Breach Exposed Account Details of About 100 Users | Tech Bytes",
+      "url": "https://techbytes.app/posts/near-ai-sglang-incident-exposed-account-details/",
+      "description": "In a security incident report dated November 9, 2026, the company said <strong>the attacker downloaded account details for approximately 100 users and accessed 18 agents on a legacy deployment of NEAR AI Agents</strong>.",
+      "age": "5 days ago",
+      "page_age": "2026-11-15T11:30:00"
+    },
+    {
+      "title": "Near AI Confirms Security Breach Affecting 100 Users and 18 Agents",
+      "url": "https://cryptonews.net/news/security/33733374/",
+      "description": "<strong>Engineers deployed a fix for the SGLang vulnerability across every inference server and completed additional credential rotations</strong>. The company also reported completing a forensic review, notifying affected users and contacting the owners of ...",
+      "age": "1 week ago",
+      "page_age": "2026-11-11T01:51:00"
+    },
+    {
+      "title": "NEAR AI breach may have exposed confidential AI requests - TechInformed",
+      "url": "https://techinformed.com/near-ai-breach-may-have-exposed-confidential-ai-requests/",
+      "description": "NEAR AI said it completed a forensic review and notified users whose account details or agents it confirmed were accessed. It advised users to be cautious of unexpected messages mentioning their accounts or balances. NEAR AI has reported the vulnerability to the SGLang project, but its disclosure does not provide a vulnerability identifier or specify which software versions are affected.",
+      "age": "1 week ago",
+      "page_age": "2026-11-11T15:58:53"
+    }
+  ],
+  "eventId": "near-ai-sglang-disclosure-2026",
+  "layer": "impact",
+  "query": "Near AI SGLang incident disclosure independent forensics November 2026 actual observed adoption effects production measurements",
+  "resultCount": 20,
+  "coverageLimit": "Targeted first 20 search results on Nov20 UTC; snippets/absence not original fact evidence; not six-channel full discovery."
+}

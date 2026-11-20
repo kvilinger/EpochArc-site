@@ -1,0 +1,128 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "california-ag-openai-suit-2026",
+  "subjectDigest": "7ca17ead03f99448aded823be91a66cbe026969454ce617507d57acf055f51c5",
+  "inputsDigest": "54b4c417b8ff3de07001d32a2842df92f6db43f97e92db5f531fd4b1bfb34eb9",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f68c-032b-7282-bb3c-70454ffb1739",
+  "reviewMethod": "independent_model",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f68c-032b-7282-bb3c-70454ffb1739",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high",
+  "limitations": [
+    "Primary actor directly confirms its own dated statement/action; secondary reports or affected-party statements are limited to their own original observation, not full independent implementation proof.",
+    "Only 76 targeted searches across all 19 cases; not full six-channel window coverage.",
+    "No independent adoption, measured production outcomes, total incident prevalence, or signed-plans implementation is inferred."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Original bilingual r2 was compared against directly re-read full original texts in frozen separate Hydrogen fact diagnostics; this assembled exact v2.4 finding requires a separate full-packet audit."
+  },
+  "evidence": [
+    {
+      "id": "california-ag-openai-suit-2026-q1",
+      "sourceId": "restart17-california-ag",
+      "claimId": "california-ag-openai-suit-2026-core",
+      "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+      "originId": "restart17-california-ag-openai-suit-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "In the lawsuit, filed today in San Francisco Superior Court, Attorney General Bonta alleges OpenAI’s failure to adequately secure and monitor the testing of its highly capable and increasingly powerful AI models creates a public nuisance by posing a danger to the public and violates California’s Unfair Competition Law.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-california-ag.txt",
+      "sha256": "904ec12060f48aa9877d68f8766e79482e62e0c854838f666471b03dcb61fc5b"
+    },
+    {
+      "id": "california-ag-openai-suit-2026-q2",
+      "sourceId": "restart17-california-tc",
+      "claimId": "california-ag-openai-suit-2026-dispute",
+      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+      "originId": "openai-press-response-techcrunch-20261116",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "“This lawsuit appears to single out OpenAI over a challenge that’s been identified by every major AI lab",
+      "locator": "TechCrunch Nov16 direct OpenAI quoted response to legal complaint; reported, independent claim-origin but not an adjudication.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-california-tc.txt",
+      "sha256": "e223694216995d521b9ba75b90c3eab6abf21fba8e5c285d9398fe01e70fb689"
+    }
+  ],
+  "runId": "targeted-remaining-19-20261120",
+  "candidateId": "california-ag-openai-suit",
+  "runDigest": "7bfb4cea031aba5e380f2732f262b04475430afb2d3aa317e838a17afaaad8b0",
+  "coreFactClaimIds": [
+    "california-ag-openai-suit-2026-core"
+  ],
+  "identity": {
+    "seriesId": "california-ag-openai-suit",
+    "action": "California’s attorney general files suit against OpenAI",
+    "stage": "announced",
+    "dateBasis": "california-ag-openai-suit-2026 2026-11-16: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Distinct announced dated action compared with already published florida-sues-openai-2026 and eight-state-openai-safety-lawsuits-2026; no copied news summary or assumed later implementation.",
+    "comparedEventIds": [
+      "florida-sues-openai-2026",
+      "eight-state-openai-safety-lawsuits-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "California’s attorney general files suit against OpenAI primarily concerns governance: the verified core is the named announced action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "L1 event california-ag-openai-suit-2026: confirmed stage announced, without independently observed downstream effects; comparators are florida-sues-openai-2026 and eight-state-openai-safety-lawsuits-2026.",
+    "whyNotHigher": "Unlike a satisfied L2-GOVERNANCE route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct announced action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "florida-sues-openai-2026",
+      "eight-state-openai-safety-lawsuits-2026"
+    ],
+    "comparisonNotes": {
+      "florida-sues-openai-2026": "florida-sues-openai-2026: Florida sues OpenAI and Sam Altman in first US state lawsuit against an AI company over safety; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "eight-state-openai-safety-lawsuits-2026": "eight-state-openai-safety-lawsuits-2026: Eight U.S. states file coordinated consumer-protection lawsuits against OpenAI; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": null,
+            "rationale": "For california-ag-openai-suit-2026: directly read declared event stage does not independently verify binding or precedential action against the L2-GOVERNANCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "applies_beyond_named_parties": {
+            "value": null,
+            "rationale": "For california-ag-openai-suit-2026: directly read declared event stage does not independently verify applies beyond named parties against the L2-GOVERNANCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "independent_legal_analysis": {
+            "value": null,
+            "rationale": "For california-ag-openai-suit-2026: directly read declared event stage does not independently verify independent legal analysis against the L2-GOVERNANCE threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "debated",
+    "reason": "Debated legal allegation, distinct from undisputed filing.",
+    "evidenceIds": [
+      "california-ag-openai-suit-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "OpenAI challenges litigation focus in TechCrunch; dispute over alleged safety failure is not a court finding.",
+    "evidenceIds": [
+      "california-ag-openai-suit-2026-q2"
+    ]
+  },
+  "provenanceNote": "Independent full reviewed-state v2.4 session 01a1f68c-032b-7282-bb3c-70454ffb1739 returned ACCEPT_LIMITED; this exact published-state version is separately audited and then requires one-list explicit human approval before production deployment."
+}

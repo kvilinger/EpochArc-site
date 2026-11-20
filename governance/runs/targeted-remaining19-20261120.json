@@ -1,0 +1,1677 @@
+{
+  "policyVersion": "2.4",
+  "runId": "targeted-remaining-19-20261120",
+  "kind": "targeted",
+  "scopeReason": "Exactly the 19 previously unprocessed Nov9–17 existing drafts. Two earlier individually prepared drafts remain in their own separate reviewed run. No old record updates or Nov18–20 new events.",
+  "windowStart": "2026-11-09",
+  "windowEnd": "2026-11-20",
+  "evidenceCutoff": "2026-11-20",
+  "timezone": "UTC",
+  "baselineCommit": "bc06942fc3c0d52e04720540ef10072d98e97060",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "openai-codex/gpt-6-sol",
+  "promptVersion": "20261120-remaining19-full-original-and-four-layer-v1",
+  "channels": [
+    {
+      "id": "brave-web",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Exactly 76 targeted searches across fact, impact, analysis and controversy for 19 named events, first 20 results per query; not six-channel exhaustive discovery.",
+      "reason": "User scope is pre-existing 21 drafts, not a fresh full six-channel window sweep.",
+      "retryResult": "All 76 requests returned 200; breadth restriction honestly recorded, no rebranding as full discovery.",
+      "attempts": [
+        {
+          "query": "acquisition closes vs Sept agreement old event 2026-11-16 original primary announcement document",
+          "executedAt": "2026-11-20T01:05:26.674805+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/amd-world-labs-close-2026/fact.json",
+          "sha256": "fc1577cb6a602ea544639ee0012fc69c689dac5b7ae234030f1eec197e77003c",
+          "resultCount": 18
+        },
+        {
+          "query": "acquisition closes vs Sept agreement old event November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:05:29.564556+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/amd-world-labs-close-2026/impact.json",
+          "sha256": "045eb9061aa5f64a6cf148cfc8424d75ce8b216f71ef6f6ef497620cf117bb39",
+          "resultCount": 18
+        },
+        {
+          "query": "acquisition closes vs Sept agreement old event November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:05:32.471746+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/amd-world-labs-close-2026/analysis.json",
+          "sha256": "7c826b3af861a5e77fda53b00ce02e1050e29feadafbaa810295981eecbda274",
+          "resultCount": 19
+        },
+        {
+          "query": "acquisition closes vs Sept agreement old event November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:05:35.307094+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/amd-world-labs-close-2026/controversy.json",
+          "sha256": "778e9e7a23a946076c6fd69488a6fc5ac459900362626d41e4912ec3a10642cc",
+          "resultCount": 18
+        },
+        {
+          "query": "IPO roadshow versus Nov 18 pricing and listing 2026-11-10 original primary announcement document",
+          "executedAt": "2026-11-20T01:05:38.171770+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/anthropic-ipo-roadshow-2026/fact.json",
+          "sha256": "16155cbe247894e98efe001b09a2c5ea6c713795029ba618497ac9766d7f2d63",
+          "resultCount": 20
+        },
+        {
+          "query": "IPO roadshow versus Nov 18 pricing and listing November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:05:40.962350+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/anthropic-ipo-roadshow-2026/impact.json",
+          "sha256": "80976667f0e03a5f77315f80dc1b9484281a6bbfb3d6748d356f02c5d476c4cd",
+          "resultCount": 20
+        },
+        {
+          "query": "IPO roadshow versus Nov 18 pricing and listing November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:05:43.723679+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/anthropic-ipo-roadshow-2026/analysis.json",
+          "sha256": "c931b07d8dacb112651363b6b133c4e9598c29f9688d772f86611a627a9a7f00",
+          "resultCount": 20
+        },
+        {
+          "query": "IPO roadshow versus Nov 18 pricing and listing November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:05:46.864865+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/anthropic-ipo-roadshow-2026/controversy.json",
+          "sha256": "aa1dd00342eb59c88350d85adb0cfadb253a4362b25cf4cbf4ecc5ce7d78b4b2",
+          "resultCount": 20
+        },
+        {
+          "query": "AI health study enrollment clinical outcomes 2026-11-15 original primary announcement document",
+          "executedAt": "2026-11-20T01:05:49.795304+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/apple-health-ai-usage-study-2026/fact.json",
+          "sha256": "89d0ac82e7fb3b60858186bd0a137c3b6effa8405a9d87ea2503ce91c41757e9",
+          "resultCount": 20
+        },
+        {
+          "query": "AI health study enrollment clinical outcomes November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:05:52.707207+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/apple-health-ai-usage-study-2026/impact.json",
+          "sha256": "ca4a734de666932ce94c7d78b27cbc1af3755a1ffc550fbe993184a233ecc62b",
+          "resultCount": 19
+        },
+        {
+          "query": "AI health study enrollment clinical outcomes November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:05:55.514086+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/apple-health-ai-usage-study-2026/analysis.json",
+          "sha256": "0858a85a462e52b728107fc5f9c1d8c7091bcd9b898c3a091cf34f7e0d8741e5",
+          "resultCount": 20
+        },
+        {
+          "query": "AI health study enrollment clinical outcomes November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:05:58.336431+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/apple-health-ai-usage-study-2026/controversy.json",
+          "sha256": "62932faa2ef48e654db3c9d289da500fd0f2757aa928fc94a56e482dc0620018",
+          "resultCount": 18
+        },
+        {
+          "query": "California AG complaint OpenAI response allegations 2026-11-16 original primary announcement document",
+          "executedAt": "2026-11-20T01:06:01.224747+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/california-ag-openai-suit-2026/fact.json",
+          "sha256": "2cc0c80864df4a451eb715f358190efec8dc435daba9d2fb8777c0635827c5f1",
+          "resultCount": 20
+        },
+        {
+          "query": "California AG complaint OpenAI response allegations November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:06:04.066448+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/california-ag-openai-suit-2026/impact.json",
+          "sha256": "996b26589356631104d702dbdf22bb16968633281e5d68fba362d6f13f94b786",
+          "resultCount": 20
+        },
+        {
+          "query": "California AG complaint OpenAI response allegations November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:06:06.868002+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/california-ag-openai-suit-2026/analysis.json",
+          "sha256": "1503ea826d938003bc7369151d7240eed96fe0a2ba90a19303f3d29f9b13554d",
+          "resultCount": 20
+        },
+        {
+          "query": "California AG complaint OpenAI response allegations November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:06:10.002114+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/california-ag-openai-suit-2026/controversy.json",
+          "sha256": "784329cccf19427e144b3c59a43a23508f2534a02f7f761fcf439638e3210f7d",
+          "resultCount": 20
+        },
+        {
+          "query": "restricted verification program access benchmarks 2026-11-09 original primary announcement document",
+          "executedAt": "2026-11-20T01:06:12.699169+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/claude-fable-mythos-5-2-2026/fact.json",
+          "sha256": "6579a1e4bff87a2923e3c060fc6e38e74c4a88de655de357d58248462dbccc1a",
+          "resultCount": 20
+        },
+        {
+          "query": "restricted verification program access benchmarks November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:06:15.669609+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/claude-fable-mythos-5-2-2026/impact.json",
+          "sha256": "4d7da9100cd4c739db7f66b32e7a693c4e2b3fc678f5fce315f98f3cd6555ccd",
+          "resultCount": 12
+        },
+        {
+          "query": "restricted verification program access benchmarks November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:06:18.394104+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/claude-fable-mythos-5-2-2026/analysis.json",
+          "sha256": "d1fa98b2957ca373a77ed287c9c061fa06c36e67ab51ad26b14cbb3e966bcdb9",
+          "resultCount": 17
+        },
+        {
+          "query": "restricted verification program access benchmarks November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:06:21.156481+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/claude-fable-mythos-5-2-2026/controversy.json",
+          "sha256": "1f83b6a8454ab10792d7e51531fa583bbfa5324029768ff8e4e7c3bff72ed631",
+          "resultCount": 19
+        },
+        {
+          "query": "Epoch AI Trajectory incident model attribution 2026-11-13 original primary announcement document",
+          "executedAt": "2026-11-20T01:06:23.871777+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/epoch-trajectory-evaluation-incidents-2026/fact.json",
+          "sha256": "710f66ea6c1842fabe31d1459f805d6886d0718df57e0428be46c775ca054dbf",
+          "resultCount": 20
+        },
+        {
+          "query": "Epoch AI Trajectory incident model attribution November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:06:26.581165+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/epoch-trajectory-evaluation-incidents-2026/impact.json",
+          "sha256": "3e0bbfeed8c0882ff3bbab6ffc49e533c4a6620621c5fb7a574113a332130cce",
+          "resultCount": 20
+        },
+        {
+          "query": "Epoch AI Trajectory incident model attribution November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:06:29.465009+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/epoch-trajectory-evaluation-incidents-2026/analysis.json",
+          "sha256": "d35ca7cf3938dadba69c98f9e6568103564676a4c21190b7ed24e85a8cb3ccfc",
+          "resultCount": 20
+        },
+        {
+          "query": "Epoch AI Trajectory incident model attribution November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:06:32.132266+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/epoch-trajectory-evaluation-incidents-2026/controversy.json",
+          "sha256": "5811bfdddfde9abb65a408178a80d40e8216c90da564d153a296776d9d4ebe99",
+          "resultCount": 20
+        },
+        {
+          "query": "Notion Fireworks security bulletin dataset suspension 2026-11-09 original primary announcement document",
+          "executedAt": "2026-11-20T01:06:34.773415+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/fireworks-october-incident-update-2026/fact.json",
+          "sha256": "d32164f2eefd7e61f6956e133ee27e2aa504a6bcc9d33964befd97344568a079",
+          "resultCount": 20
+        },
+        {
+          "query": "Notion Fireworks security bulletin dataset suspension November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:06:37.556268+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/fireworks-october-incident-update-2026/impact.json",
+          "sha256": "d1e947f2ec8c0955a07c17ac2d3295533baacc6ad5856c30bb80de63cc553e6b",
+          "resultCount": 20
+        },
+        {
+          "query": "Notion Fireworks security bulletin dataset suspension November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:06:40.430788+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/fireworks-october-incident-update-2026/analysis.json",
+          "sha256": "80172eebea6cf8a98d99db59d80083ceb213c3eeff2b405e9359138cbc740baf",
+          "resultCount": 20
+        },
+        {
+          "query": "Notion Fireworks security bulletin dataset suspension November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:06:43.168919+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/fireworks-october-incident-update-2026/controversy.json",
+          "sha256": "231998eead9f88512be0112bf43f21c3e3d60ebef66070b857b771e910314d02",
+          "resultCount": 20
+        },
+        {
+          "query": "Gemini chat history training control retention rollout 2026-11-16 original primary announcement document",
+          "executedAt": "2026-11-20T01:06:46.285460+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/gemini-chat-history-training-controls-2026/fact.json",
+          "sha256": "15071a9dbf412a76bf4c016fe608980e3a8b2df79a55634b490ca389c4e86e48",
+          "resultCount": 19
+        },
+        {
+          "query": "Gemini chat history training control retention rollout November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:06:48.952024+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/gemini-chat-history-training-controls-2026/impact.json",
+          "sha256": "beb9a56a087d251280cb3867eb85830e27f2bdf60a2ec4dbe01ea5716962b447",
+          "resultCount": 19
+        },
+        {
+          "query": "Gemini chat history training control retention rollout November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:06:51.639952+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/gemini-chat-history-training-controls-2026/analysis.json",
+          "sha256": "8c4975932f2dca760a2f29b016c6a523bf70ad38e5eb9876f5906b2ea7c49e26",
+          "resultCount": 19
+        },
+        {
+          "query": "Gemini chat history training control retention rollout November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:06:54.249631+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/gemini-chat-history-training-controls-2026/controversy.json",
+          "sha256": "0afe613e79d7a98a279adac9ed0d1bbcb12ae5e2f3f81c46f52453908767cbd1",
+          "resultCount": 19
+        },
+        {
+          "query": "Google Carbon rollout API access 2026-11-10 original primary announcement document",
+          "executedAt": "2026-11-20T01:06:56.913629+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-4-carbon-2026/fact.json",
+          "sha256": "b941218ed1442972ab63741a367c363efaa4af2c333903741cee94e281bde18e",
+          "resultCount": 20
+        },
+        {
+          "query": "Google Carbon rollout API access November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:06:59.656518+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-4-carbon-2026/impact.json",
+          "sha256": "97754509941612d9988abf92386264bd6cd1cea90ed4970be8d7f6f687484818",
+          "resultCount": 20
+        },
+        {
+          "query": "Google Carbon rollout API access November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:07:02.429477+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-4-carbon-2026/analysis.json",
+          "sha256": "b110e843a61bacaa683c8842fc9a140e76a7fe442f8c39b1788d34b169c8be46",
+          "resultCount": 20
+        },
+        {
+          "query": "Google Carbon rollout API access November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:07:05.678295+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-4-carbon-2026/controversy.json",
+          "sha256": "c57870917eeb97290b62b0a1682f544c03e6763ed27d3af6823431fd0fb12c1a",
+          "resultCount": 20
+        },
+        {
+          "query": "Google Hydrogen rollout across channels 2026-11-12 original primary announcement document",
+          "executedAt": "2026-11-20T01:07:08.438812+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-4-hydrogen-2026/fact.json",
+          "sha256": "73060b972f30d68e49c70182ec907d00023428694561e8592fe263dbfd85690f",
+          "resultCount": 20
+        },
+        {
+          "query": "Google Hydrogen rollout across channels November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:07:11.724270+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-4-hydrogen-2026/impact.json",
+          "sha256": "27f13113ea511e9977a57597798804c6d9ba1bfe4a1e6433cdde69e68a2ce79d",
+          "resultCount": 20
+        },
+        {
+          "query": "Google Hydrogen rollout across channels November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:07:14.453857+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-4-hydrogen-2026/analysis.json",
+          "sha256": "18345f0dac436ee6737e85c263763da14ebb06b87d51bbdd3d7e9db750e2fafc",
+          "resultCount": 20
+        },
+        {
+          "query": "Google Hydrogen rollout across channels November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:07:17.195958+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-4-hydrogen-2026/controversy.json",
+          "sha256": "b8ce0cc0b74bb8c87cf43b291fa09ff27cfd874343668e5a17b571bf7ed23bb5",
+          "resultCount": 20
+        },
+        {
+          "query": "Decisions API Gemini Decision 1 independent decision benchmark 2026-11-11 original primary announcement document",
+          "executedAt": "2026-11-20T01:07:20.210796+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-decisions-api-2026/fact.json",
+          "sha256": "7a11825b3860d7144ca706aeb90c39bfd12edbbf5bf765f63f3b3d07f744ff82",
+          "resultCount": 20
+        },
+        {
+          "query": "Decisions API Gemini Decision 1 independent decision benchmark November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:07:22.935629+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-decisions-api-2026/impact.json",
+          "sha256": "ecd39409e32adc1b599f26eb91318f0112e64bdc62964323f353192c788f5200",
+          "resultCount": 20
+        },
+        {
+          "query": "Decisions API Gemini Decision 1 independent decision benchmark November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:07:25.890804+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-decisions-api-2026/analysis.json",
+          "sha256": "b044127b8a4dee7b7ef56481dc1d6590650357bc25a874b8bce970e7c5da3f3a",
+          "resultCount": 20
+        },
+        {
+          "query": "Decisions API Gemini Decision 1 independent decision benchmark November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:07:28.600552+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-decisions-api-2026/controversy.json",
+          "sha256": "47a55e57fea582c8962077bdf73da4a035d12a093100df21eb9786bdce7e675f",
+          "resultCount": 20
+        },
+        {
+          "query": "Gemini Google Wallet integration supported users 2026-11-13 original primary announcement document",
+          "executedAt": "2026-11-20T01:07:31.194532+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-wallet-integration-2026/fact.json",
+          "sha256": "1d2f5cef69329e1786179298d6812db93f619c144d4b473b5f5093c33db0fa29",
+          "resultCount": 20
+        },
+        {
+          "query": "Gemini Google Wallet integration supported users November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:07:33.890465+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-wallet-integration-2026/impact.json",
+          "sha256": "515bcefc08ee589f40664459f6e7efde9e467c15edcb5f065b571167280d31d9",
+          "resultCount": 20
+        },
+        {
+          "query": "Gemini Google Wallet integration supported users November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:07:36.607325+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-wallet-integration-2026/analysis.json",
+          "sha256": "26e1e95a1432b5a9e383889435c562d5fa06f8ebc838ce4a459be3dfaf3e325f",
+          "resultCount": 19
+        },
+        {
+          "query": "Gemini Google Wallet integration supported users November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:07:39.339912+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-gemini-wallet-integration-2026/controversy.json",
+          "sha256": "fc0476b79591d3e2a379a666b6ebd1a16d332ae43eee5ec7e98027dfd82ee088",
+          "resultCount": 19
+        },
+        {
+          "query": "TPU 8tx 8i max delivery availability 2026-11-09 original primary announcement document",
+          "executedAt": "2026-11-20T01:07:42.875288+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-tpu-8tx-8i-max-2026/fact.json",
+          "sha256": "90cf630565612c3530ff618c5a305f980bb6acbc91a907b8d4c85efdbd9e8289",
+          "resultCount": 20
+        },
+        {
+          "query": "TPU 8tx 8i max delivery availability November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:07:45.740831+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-tpu-8tx-8i-max-2026/impact.json",
+          "sha256": "f1c039daba9b07a10a108ed24ad3e838c8643ad3ffea0fd49cedba1af860dd0c",
+          "resultCount": 20
+        },
+        {
+          "query": "TPU 8tx 8i max delivery availability November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:07:49.283172+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-tpu-8tx-8i-max-2026/analysis.json",
+          "sha256": "f5dee78de4363d9005bf7fbedba1e44747ac8799108dc54921ee304ca32d3fd5",
+          "resultCount": 20
+        },
+        {
+          "query": "TPU 8tx 8i max delivery availability November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:07:52.255237+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/google-tpu-8tx-8i-max-2026/controversy.json",
+          "sha256": "bd39cc4da14fdb47d3180bcde88c95ee5cb234dbe98353337b26cc64baa07a48",
+          "resultCount": 20
+        },
+        {
+          "query": "GTIG AI threat tracker Q4 primary report 2026-11-16 original primary announcement document",
+          "executedAt": "2026-11-20T01:07:55.061462+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/gtig-ai-threat-tracker-q4-2026/fact.json",
+          "sha256": "cf9363b62bc68e0d99b6d6fe55bb0c08b3a2836903db468f4cc2ea50771bfc31",
+          "resultCount": 20
+        },
+        {
+          "query": "GTIG AI threat tracker Q4 primary report November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:07:57.726593+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/gtig-ai-threat-tracker-q4-2026/impact.json",
+          "sha256": "39dd74d0e085996bd532a28ed227476fa9553096ad670af4c567b1c5c1f554cb",
+          "resultCount": 20
+        },
+        {
+          "query": "GTIG AI threat tracker Q4 primary report November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:08:00.392176+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/gtig-ai-threat-tracker-q4-2026/analysis.json",
+          "sha256": "8c1be3430bc4ff76df2024d563374d3fbb03893e56c01fc94116c0a714be3f21",
+          "resultCount": 20
+        },
+        {
+          "query": "GTIG AI threat tracker Q4 primary report November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:08:03.107058+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/gtig-ai-threat-tracker-q4-2026/controversy.json",
+          "sha256": "fc16fd7e60849f8c0b9ad809eff205a2eeca8cfa92cf237bd5cfaf91a81b2778",
+          "resultCount": 19
+        },
+        {
+          "query": "Near AI SGLang incident disclosure independent forensics 2026-11-09 original primary announcement document",
+          "executedAt": "2026-11-20T01:08:05.732724+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/near-ai-sglang-disclosure-2026/fact.json",
+          "sha256": "c1c8e3419ebf4753757bd84b98522627352d9b068d8b4187dcdaac369e40b54e",
+          "resultCount": 20
+        },
+        {
+          "query": "Near AI SGLang incident disclosure independent forensics November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:08:08.763768+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/near-ai-sglang-disclosure-2026/impact.json",
+          "sha256": "a8faefafa4697bdbc36b532a58fb687f5ec7857afd4b7d025afaf1ef27ceed90",
+          "resultCount": 20
+        },
+        {
+          "query": "Near AI SGLang incident disclosure independent forensics November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:08:11.558875+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/near-ai-sglang-disclosure-2026/analysis.json",
+          "sha256": "250018241d6c3a325e740b4aa16f1272e00215df90584a70cda311c462a04c0e",
+          "resultCount": 20
+        },
+        {
+          "query": "Near AI SGLang incident disclosure independent forensics November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:08:14.709097+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/near-ai-sglang-disclosure-2026/controversy.json",
+          "sha256": "3b63cc6f11fa0808347ca9661bbd60b973a9fd3728a571f55679ae9deafc8cc5",
+          "resultCount": 20
+        },
+        {
+          "query": "NVIDIA CEO transition board prior inquiry 2026-11-12 original primary announcement document",
+          "executedAt": "2026-11-20T01:08:17.425564+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/nvidia-ceo-transition-2026/fact.json",
+          "sha256": "0a3b6c5b08c5e8da6930167f47dafcdbfb5d9b24c15cbff4a4b6d83078623166",
+          "resultCount": 20
+        },
+        {
+          "query": "NVIDIA CEO transition board prior inquiry November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:08:20.223609+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/nvidia-ceo-transition-2026/impact.json",
+          "sha256": "b818491660afcd4160a2fc4016dcc6ec0c21c399a13d4dfe09fc08234cf5181c",
+          "resultCount": 20
+        },
+        {
+          "query": "NVIDIA CEO transition board prior inquiry November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:08:23.022393+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/nvidia-ceo-transition-2026/analysis.json",
+          "sha256": "bf53109a841d4bdddca03cba8933e9ff95f0ebef4f97a534d47489c0011dd2ff",
+          "resultCount": 20
+        },
+        {
+          "query": "NVIDIA CEO transition board prior inquiry November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:08:25.857846+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/nvidia-ceo-transition-2026/controversy.json",
+          "sha256": "51efdf87958a686eaa336881b6daf1ae3495382fa507f54683a079d4165403df",
+          "resultCount": 19
+        },
+        {
+          "query": "OpenAI Apollo embedded evaluation six people 2026-11-16 original primary announcement document",
+          "executedAt": "2026-11-20T01:08:28.640715+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-apollo-embedded-evals-2026/fact.json",
+          "sha256": "c9b1eccb439b6d1917cdbe3a77b0b0aa13e92499e6d7b383832385dbdaa8889d",
+          "resultCount": 20
+        },
+        {
+          "query": "OpenAI Apollo embedded evaluation six people November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:08:31.397149+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-apollo-embedded-evals-2026/impact.json",
+          "sha256": "6e8c8a1d6f171586df274202673c13ee343674b414be4ab317542fe09ca54bc5",
+          "resultCount": 20
+        },
+        {
+          "query": "OpenAI Apollo embedded evaluation six people November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:08:34.490174+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-apollo-embedded-evals-2026/analysis.json",
+          "sha256": "b339795ad7018d1a09d2a53244ddc391c46a7135404e0ac0a80fb2c636ea691c",
+          "resultCount": 20
+        },
+        {
+          "query": "OpenAI Apollo embedded evaluation six people November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:08:37.145732+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-apollo-embedded-evals-2026/controversy.json",
+          "sha256": "c45a409c922ca020bfe49964dbf929bff064069e078c2f84efee29af9a84139c",
+          "resultCount": 20
+        },
+        {
+          "query": "ChatGPT Wallet official social post eligibility 2026-11-13 original primary announcement document",
+          "executedAt": "2026-11-20T01:08:39.852869+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-chatgpt-wallet-2026/fact.json",
+          "sha256": "5dd34a33bd3468fe2cb2a08a03058eab11b795b9b59f658971efa7c7b348e1c4",
+          "resultCount": 20
+        },
+        {
+          "query": "ChatGPT Wallet official social post eligibility November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:08:42.538461+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-chatgpt-wallet-2026/impact.json",
+          "sha256": "9dc99ef2ed14c3d384cdc0773bee43f74c21ae9f20b4e4a44f84d0f2dce88d6b",
+          "resultCount": 20
+        },
+        {
+          "query": "ChatGPT Wallet official social post eligibility November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:08:45.218964+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-chatgpt-wallet-2026/analysis.json",
+          "sha256": "f8992b577b0c79439abaf5d683b40e5c51a6970bc23398765bef254149d35789",
+          "resultCount": 20
+        },
+        {
+          "query": "ChatGPT Wallet official social post eligibility November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:08:47.893137+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/openai-chatgpt-wallet-2026/controversy.json",
+          "sha256": "fdc25104f28fbbb752906bc7a3af037d06674446352b3fadb42795670c9b5246",
+          "resultCount": 20
+        },
+        {
+          "query": "Paris call AI safety joint declaration signatories 2026-11-09 original primary announcement document",
+          "executedAt": "2026-11-20T01:08:50.548755+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/paris-call-ai-safety-2026/fact.json",
+          "sha256": "af8ff0cb97b10668c38ecdb71ab22f60e01053ffa56a07f5277d1bc620d1ef33",
+          "resultCount": 20
+        },
+        {
+          "query": "Paris call AI safety joint declaration signatories November 2026 actual observed adoption effects production measurements",
+          "executedAt": "2026-11-20T01:08:53.335033+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/paris-call-ai-safety-2026/impact.json",
+          "sha256": "ad146bf2c559fe7e32c417e5c2e91200f341a8996ec0ed305bbc965994b15e7f",
+          "resultCount": 20
+        },
+        {
+          "query": "Paris call AI safety joint declaration signatories November 2026 independent expert analysis limitations",
+          "executedAt": "2026-11-20T01:08:56.130889+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/paris-call-ai-safety-2026/analysis.json",
+          "sha256": "4bd4c5f0b5e81fbc17c976a38c187d6e8dc88855fb4dd61f3fc3aa88e7c2cd61",
+          "resultCount": 20
+        },
+        {
+          "query": "Paris call AI safety joint declaration signatories November 2026 criticism contrary evidence rebuttal",
+          "executedAt": "2026-11-20T01:08:58.993201+00:00",
+          "artifact": "governance/evidence/2026-11-20/search/paris-call-ai-safety-2026/controversy.json",
+          "sha256": "9803384acc32a82f03d74e44ddd31e3a9cce69d02ea6bba597c576f085eb065b",
+          "resultCount": 20
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "No candidate from this category in the 19 scoped drafts; no category-wide search performed."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Only identified Nov9–17 existing draft cases from this category followed up, not all events in the full window."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Only identified Nov9–17 existing draft cases from this category followed up, not all events in the full window."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "Only identified Nov9–17 existing draft cases from this category followed up, not all events in the full window."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "Only identified Nov9–17 existing draft cases from this category followed up, not all events in the full window."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "No candidate from this category in the 19 scoped drafts; no category-wide search performed."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "amd-world-labs-close",
+      "eventId": "amd-world-labs-close-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "hold",
+      "reason": "Held despite sourced completion: already published pending-acquisition text would be false in present tense, and old record correction is excluded from user scope.",
+      "discoveryUrls": [
+        "https://newsroom.amd.com/news/amd-completes-acquisition-world-labs/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for acquisition closing; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "acquisition closing is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses GPU/world-model researchers; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal ownership integration can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "acquisition closes vs Sept agreement old event 2026-11-16 original primary announcement document",
+          "finding": "Full directly read dated actor original supports acquisition closing; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "amd-world-labs-close-2026-primary"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "acquisition closes vs Sept agreement old event November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for acquisition closing; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "acquisition closes vs Sept agreement old event November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "acquisition closes vs Sept agreement old event November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-16",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "anthropic-ipo-roadshow",
+      "eventId": "anthropic-ipo-roadshow-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated IPO roadshow launch; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://www.anthropic.com/news/roadshow-launch"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for IPO roadshow launch; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "IPO roadshow launch is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses potential investors and AI capital markets; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal offering stage can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "IPO roadshow versus Nov 18 pricing and listing 2026-11-10 original primary announcement document",
+          "finding": "Full directly read dated actor original supports IPO roadshow launch; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "anthropic-ipo-roadshow-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "IPO roadshow versus Nov 18 pricing and listing November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for IPO roadshow launch; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "IPO roadshow versus Nov 18 pricing and listing November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "IPO roadshow versus Nov 18 pricing and listing November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-10",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "apple-health-ai-usage-study",
+      "eventId": "apple-health-ai-usage-study-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated AI-use health study announced; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for AI-use health study announced; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "AI-use health study announced is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses eligible US adults and clinical researchers; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal study enrollment can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "AI health study enrollment clinical outcomes 2026-11-15 original primary announcement document",
+          "finding": "Full directly read dated actor original supports AI-use health study announced; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "apple-health-ai-usage-study-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "AI health study enrollment clinical outcomes November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for AI-use health study announced; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "AI health study enrollment clinical outcomes November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "AI health study enrollment clinical outcomes November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-15",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "california-ag-openai-suit",
+      "eventId": "california-ag-openai-suit-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated California AG lawsuit filed; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+        "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for California AG lawsuit filed; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "California AG lawsuit filed is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses AI safety regulators and platform defendants; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal litigation can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "California AG complaint OpenAI response allegations 2026-11-16 original primary announcement document",
+          "finding": "Full directly read dated actor original supports California AG lawsuit filed; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "california-ag-openai-suit-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "California AG complaint OpenAI response allegations November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for California AG lawsuit filed; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "California AG complaint OpenAI response allegations November 2026 independent expert analysis limitations",
+          "finding": "A directly read secondary or evaluator source adds limited analysis; shared announcement origin does not imply independent validation.",
+          "evidenceIds": [
+            "california-ag-openai-suit-2026-q2"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "California AG complaint OpenAI response allegations November 2026 criticism contrary evidence rebuttal",
+          "finding": "OpenAI directly quoted by reporter contests California lawsuit focus; filing and allegations are distinct.",
+          "evidenceIds": [
+            "california-ag-openai-suit-2026-q2"
+          ]
+        }
+      },
+      "dateStage": "2026-11-16",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "claude-fable-mythos-5-2",
+      "eventId": "claude-fable-mythos-5-2-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Fable/Mythos 5.2 access stages; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "https://artificialanalysis.ai/models/releases/claude-fable-5-2"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Fable/Mythos 5.2 access stages; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Fable/Mythos 5.2 access stages is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses general users versus vetted research organizations; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal model access can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "restricted verification program access benchmarks 2026-11-09 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Fable/Mythos 5.2 access stages; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "claude-fable-mythos-5-2-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "restricted verification program access benchmarks November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Fable/Mythos 5.2 access stages; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "restricted verification program access benchmarks November 2026 independent expert analysis limitations",
+          "finding": "A directly read secondary or evaluator source adds limited analysis; shared announcement origin does not imply independent validation.",
+          "evidenceIds": [
+            "claude-fable-mythos-5-2-2026-q2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "restricted verification program access benchmarks November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-09",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "epoch-trajectory-evaluation-incidents",
+      "eventId": "epoch-trajectory-evaluation-incidents-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated two actor incident disclosure; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website",
+        "https://www.trajectorylabs.com/blog/responding-to-incidents-during-misalignment-testing"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for two actor incident disclosure; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "two actor incident disclosure is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses external AI evaluators and safety labs; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal evaluation safeguards can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Epoch AI Trajectory incident model attribution 2026-11-13 original primary announcement document",
+          "finding": "Full directly read dated actor original supports two actor incident disclosure; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "epoch-trajectory-evaluation-incidents-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Epoch AI Trajectory incident model attribution November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for two actor incident disclosure; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Epoch AI Trajectory incident model attribution November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Epoch AI Trajectory incident model attribution November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-13",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "fireworks-october-incident-update",
+      "eventId": "fireworks-october-incident-update-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Nov17 incident split and account exposure; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+        "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Nov17 incident split and account exposure; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Nov17 incident split and account exposure is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses Fireworks accounts and Notion workspaces; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal incident response can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Notion Fireworks security bulletin dataset suspension 2026-11-09 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Nov17 incident split and account exposure; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "fireworks-october-incident-update-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Notion Fireworks security bulletin dataset suspension November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Nov17 incident split and account exposure; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Notion Fireworks security bulletin dataset suspension November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Notion Fireworks security bulletin dataset suspension November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-17",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "gemini-chat-history-training-controls",
+      "eventId": "gemini-chat-history-training-controls-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Gemini training/history controls; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/",
+        "https://9to5google.com/2026/11/16/gemini-history-ai-training/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Gemini training/history controls; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Gemini training/history controls is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses app users managing AI chat history; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal retention setting can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Gemini chat history training control retention rollout 2026-11-16 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Gemini training/history controls; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "gemini-chat-history-training-controls-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Gemini chat history training control retention rollout November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Gemini training/history controls; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Gemini chat history training control retention rollout November 2026 independent expert analysis limitations",
+          "finding": "A directly read secondary or evaluator source adds limited analysis; shared announcement origin does not imply independent validation.",
+          "evidenceIds": [
+            "gemini-chat-history-training-controls-2026-q2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Gemini chat history training control retention rollout November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-16",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "google-gemini-4-carbon",
+      "eventId": "google-gemini-4-carbon-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Gemini Carbon tiered launch; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "https://9to5google.com/2026/11/10/gemini-app-4-carbon/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Gemini Carbon tiered launch; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Gemini Carbon tiered launch is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses subscribers, developers and enterprises; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal model distribution can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Google Carbon rollout API access 2026-11-10 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Gemini Carbon tiered launch; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "google-gemini-4-carbon-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Google Carbon rollout API access November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Gemini Carbon tiered launch; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Google Carbon rollout API access November 2026 independent expert analysis limitations",
+          "finding": "A directly read secondary or evaluator source adds limited analysis; shared announcement origin does not imply independent validation.",
+          "evidenceIds": [
+            "google-gemini-4-carbon-2026-q2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Google Carbon rollout API access November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-10",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "google-gemini-4-hydrogen",
+      "eventId": "google-gemini-4-hydrogen-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Hydrogen phased rollout statement; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Hydrogen phased rollout statement; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Hydrogen phased rollout statement is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses Google developer, enterprise and consumer channels; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal model availability can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Google Hydrogen rollout across channels 2026-11-12 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Hydrogen phased rollout statement; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "google-gemini-4-hydrogen-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Google Hydrogen rollout across channels November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Hydrogen phased rollout statement; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Google Hydrogen rollout across channels November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Google Hydrogen rollout across channels November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-12",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "google-gemini-decisions-api",
+      "eventId": "google-gemini-decisions-api-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Decisions API announcement; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Decisions API announcement; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Decisions API announcement is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses developers seeking closed-set classification; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal API introduction can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Decisions API Gemini Decision 1 independent decision benchmark 2026-11-11 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Decisions API announcement; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "google-gemini-decisions-api-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Decisions API Gemini Decision 1 independent decision benchmark November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Decisions API announcement; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Decisions API Gemini Decision 1 independent decision benchmark November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Decisions API Gemini Decision 1 independent decision benchmark November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-11",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "google-gemini-wallet-integration",
+      "eventId": "google-gemini-wallet-integration-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Google Wallet read-only connection; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+        "https://9to5google.com/2026/11/13/gemini-google-wallet/",
+        "https://www.androidauthority.com/google-wallet-gemini-integration-us-3735150/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Google Wallet read-only connection; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Google Wallet read-only connection is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses US Gemini app users and finance data providers; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal account connection can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Gemini Google Wallet integration supported users 2026-11-13 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Google Wallet read-only connection; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "google-gemini-wallet-integration-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Gemini Google Wallet integration supported users November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Google Wallet read-only connection; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Gemini Google Wallet integration supported users November 2026 independent expert analysis limitations",
+          "finding": "A directly read secondary or evaluator source adds limited analysis; shared announcement origin does not imply independent validation.",
+          "evidenceIds": [
+            "google-gemini-wallet-integration-2026-q2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Gemini Google Wallet integration supported users November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-13",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "google-tpu-8tx-8i-max",
+      "eventId": "google-tpu-8tx-8i-max-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated two eighth-generation TPU systems; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for two eighth-generation TPU systems; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "two eighth-generation TPU systems is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses AI cloud developers and infrastructure buyers; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal compute portfolio can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "TPU 8tx 8i max delivery availability 2026-11-09 original primary announcement document",
+          "finding": "Full directly read dated actor original supports two eighth-generation TPU systems; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "google-tpu-8tx-8i-max-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "TPU 8tx 8i max delivery availability November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for two eighth-generation TPU systems; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "TPU 8tx 8i max delivery availability November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "TPU 8tx 8i max delivery availability November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-09",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "gtig-ai-threat-tracker-q4",
+      "eventId": "gtig-ai-threat-tracker-q4-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Nov16 GTIG report introduction; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
+        "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Nov16 GTIG report introduction; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Nov16 GTIG report introduction is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses threat analysts and defenders; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal threat report publication can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "GTIG AI threat tracker Q4 primary report 2026-11-16 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Nov16 GTIG report introduction; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "gtig-ai-threat-tracker-q4-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "GTIG AI threat tracker Q4 primary report November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Nov16 GTIG report introduction; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "GTIG AI threat tracker Q4 primary report November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "GTIG AI threat tracker Q4 primary report November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-16",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "near-ai-sglang-disclosure",
+      "eventId": "near-ai-sglang-disclosure-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated NEAR SGLang incident disclosure; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://near.ai/blog/security-incident-report-sglang-vulnerability",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-near-ai-sglang-confidential-inference-brea/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for NEAR SGLang incident disclosure; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "NEAR SGLang incident disclosure is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses hosted inference users and security investigators; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal incident disclosure can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Near AI SGLang incident disclosure independent forensics 2026-11-09 original primary announcement document",
+          "finding": "Full directly read dated actor original supports NEAR SGLang incident disclosure; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "near-ai-sglang-disclosure-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Near AI SGLang incident disclosure independent forensics November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for NEAR SGLang incident disclosure; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Near AI SGLang incident disclosure independent forensics November 2026 independent expert analysis limitations",
+          "finding": "A directly read secondary or evaluator source adds limited analysis; shared announcement origin does not imply independent validation.",
+          "evidenceIds": [
+            "near-ai-sglang-disclosure-2026-q2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Near AI SGLang incident disclosure independent forensics November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-09",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "nvidia-ceo-transition",
+      "eventId": "nvidia-ceo-transition-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated effective NVIDIA CEO and board changes; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+        "https://abcnews.com/US/nvidias-interim-ceo-colette-kress-career/story?id=138081475"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for effective NVIDIA CEO and board changes; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "effective NVIDIA CEO and board changes is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses company governance and compute supply partners; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal executive transition can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "NVIDIA CEO transition board prior inquiry 2026-11-12 original primary announcement document",
+          "finding": "Full directly read dated actor original supports effective NVIDIA CEO and board changes; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "nvidia-ceo-transition-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "NVIDIA CEO transition board prior inquiry November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for effective NVIDIA CEO and board changes; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "NVIDIA CEO transition board prior inquiry November 2026 independent expert analysis limitations",
+          "finding": "A directly read secondary or evaluator source adds limited analysis; shared announcement origin does not imply independent validation.",
+          "evidenceIds": [
+            "nvidia-ceo-transition-2026-q2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "NVIDIA CEO transition board prior inquiry November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-12",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "openai-apollo-embedded-evals",
+      "eventId": "openai-apollo-embedded-evals-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated Apollo embedded assessment pilot; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://www.apolloresearch.ai/blog/pilot-towards-embedded-evaluations",
+        "https://x.com/OpenAI/status/2122359930628063248"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for Apollo embedded assessment pilot; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "Apollo embedded assessment pilot is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses evaluation researchers and model developer; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal scoped pilot can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "OpenAI Apollo embedded evaluation six people 2026-11-16 original primary announcement document",
+          "finding": "Full directly read dated actor original supports Apollo embedded assessment pilot; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "openai-apollo-embedded-evals-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "OpenAI Apollo embedded evaluation six people November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for Apollo embedded assessment pilot; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "OpenAI Apollo embedded evaluation six people November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "OpenAI Apollo embedded evaluation six people November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-16",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "openai-chatgpt-wallet",
+      "eventId": "openai-chatgpt-wallet-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated dot-assisted Wallet limited rollout; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://x.com/ChatGPT/status/2121283151729496235",
+        "https://www.paymentsdive.com/news/openai-wallet-taps-card-networks/874769/",
+        "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for dot-assisted Wallet limited rollout; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "dot-assisted Wallet limited rollout is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses ChatGPT Pro users and payment networks; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal assisted purchases can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "ChatGPT Wallet official social post eligibility 2026-11-13 original primary announcement document",
+          "finding": "Full directly read dated actor original supports dot-assisted Wallet limited rollout; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "openai-chatgpt-wallet-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "ChatGPT Wallet official social post eligibility November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for dot-assisted Wallet limited rollout; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "ChatGPT Wallet official social post eligibility November 2026 independent expert analysis limitations",
+          "finding": "A directly read secondary or evaluator source adds limited analysis; shared announcement origin does not imply independent validation.",
+          "evidenceIds": [
+            "openai-chatgpt-wallet-2026-q2"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "ChatGPT Wallet official social post eligibility November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-13",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    },
+    {
+      "candidateId": "paris-call-ai-safety",
+      "eventId": "paris-call-ai-safety-2026",
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Distinct dated multi-stakeholder Paris Call declaration; source and bilingual fact reviewed, downstream effect remains unverified.",
+      "discoveryUrls": [
+        "https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security",
+        "https://www.pm.gc.ca/en/news/statements/2026/11/09/joint-declaration-paris-call-ai-safety-and-security"
+      ],
+      "scoreReasons": {
+        "verifiability": "Dated public original directly read Nov20 for multi-stakeholder Paris Call declaration; actor statements establish declared action, not measured downstream outcomes.",
+        "novelty": "multi-stakeholder Paris Call declaration is separately dated and not a recitation of an older event; status/stage compared to prior published baseline.",
+        "spillover": "Addresses states, AI companies and civil society; score is potential audience breadth only, not an observed reach or impact claim.",
+        "durability": "Formal voluntary commitments can persist as a distinct record; actual continuation and long-term effect not measured.",
+        "sourceQuality": "Direct actor original provides B ceiling for dated declared action; media echo or fellow participant does not create a second origin or prove effectiveness."
+      },
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Paris call AI safety joint declaration signatories 2026-11-09 original primary announcement document",
+          "finding": "Full directly read dated actor original supports multi-stakeholder Paris Call declaration; status/phase narrowly bounded.",
+          "evidenceIds": [
+            "paris-call-ai-safety-2026-q1"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Paris call AI safety joint declaration signatories November 2026 actual observed adoption effects production measurements",
+          "finding": "No independent measured external change or attributable use for multi-stakeholder Paris Call declaration; potential audience breadth is not observed impact.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Paris call AI safety joint declaration signatories November 2026 independent expert analysis limitations",
+          "finding": "No distinct directly read independent technical implementation or effect analysis established; targeted search snippets are leads only.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Paris call AI safety joint declaration signatories November 2026 criticism contrary evidence rebuttal",
+          "finding": "No separately verified contradiction of narrowly framed action; uncertainty and vendor promises are not substantiated counterproof.",
+          "evidenceIds": []
+        }
+      },
+      "dateStage": "2026-11-09",
+      "note": "Full-site release and exact approval pending; this candidate screening is not acceptance."
+    }
+  ],
+  "limitations": [
+    "Targeted four-layer web searches and full body direct readings for these 19 only; no complete six-channel coverage claim.",
+    "Actor statements are B for declared original actions but not independent product adoption, private contract execution, incident prevalence or impact.",
+    "AMD closing hold requires synchronized old event revision outside scope.",
+    "Two social posts have archived public oEmbed bodies from Nov17/19; not retried with authenticated X access.",
+    "Exact assembled review, independent published-state model audit and human approval are distinct still-required gates."
+  ]
+}

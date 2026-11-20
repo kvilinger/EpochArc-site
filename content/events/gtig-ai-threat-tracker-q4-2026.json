@@ -1,0 +1,103 @@
+{
+  "id": "gtig-ai-threat-tracker-q4-2026",
+  "slug": "gtig-ai-threat-tracker-q4-2026",
+  "date": "2026-11-16",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-16",
+    "zhHans": "2026年11月16日"
+  },
+  "title": {
+    "en": "Google publishes an introduction to its latest AI threat report",
+    "zhHans": "Google 发布最新 AI 威胁报告导读"
+  },
+  "searchSummary": {
+    "en": "Google published an official introduction to its AI threat-tracking report on November 16, linking the full report, which describes GTIG and Mandiant observations of agentic attack-tool use.",
+    "zhHans": "Google 于十一月十六日发布其 AI 威胁追踪报告的官方导读，链接完整报告；该报告描述 GTIG 与 Mandiant 所观察到的智能体攻击工具使用情况。"
+  },
+  "summary": {
+    "en": "Dated 2026-11-16: Google published an official introduction to its AI threat-tracking report on November 16, linking the full report, which describes GTIG and Mandiant observations of agentic attack-tool use.",
+    "zhHans": "2026-11-16，Google 于十一月十六日发布其 AI 威胁追踪报告的官方导读，链接完整报告；该报告描述 GTIG 与 Mandiant 所观察到的智能体攻击工具使用情况。"
+  },
+  "narrative": {
+    "en": "The action is dated by the November 16 official introduction, not a verified exact first-online UTC timestamp. The full report page is dated November 17. This difference is preserved, not split into two report releases. Observations are GTIG/Mandiant telemetry claims, not an industry-wide rate or independent audit.",
+    "zhHans": "以官方导读页面的十一月十六日发布日期界定本节点动作，不声称已核实报告首次上线的精确 UTC 时刻。完整报告页标期十一月十七日，保留日期差异，不把它们硬拆为两次报告发布。观察按 GTIG/Mandiant 遥测自述，非全行业比例或独立审计。"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "impactIndex": 0,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "gtig-ai-threat-tracker-q4-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "Google published an official introduction to its AI threat-tracking report on November 16, linking the full report, which describes GTIG and Mandiant observations of agentic attack-tool use.",
+        "zhHans": "Google 于十一月十六日发布其 AI 威胁追踪报告的官方导读，链接完整报告；该报告描述 GTIG 与 Mandiant 所观察到的智能体攻击工具使用情况。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-google-gtig",
+        "restart17-gtig-full"
+      ],
+      "notes": "Nov20 original full body and claim-local origin verified for the bounded action only; no independent adoption/scale is implied."
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "restart17-google-gtig",
+      "supports": [
+        "gtig-ai-threat-tracker-q4-2026",
+        "gtig-ai-threat-tracker-q4-2026-core"
+      ]
+    },
+    {
+      "sourceId": "restart17-gtig-full",
+      "supports": [
+        "gtig-ai-threat-tracker-q4-2026",
+        "gtig-ai-threat-tracker-q4-2026-core"
+      ]
+    }
+  ],
+  "relatedEvents": [],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-17",
+    "updatedAt": "2026-11-20",
+    "lastSourceCheckAt": "2026-11-20",
+    "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewNotes": "Unapproved Nov20 exact publication-state candidate after an ACCEPT_LIMITED independent complete reviewed-state v2.4 audit. A primary party establishes only its declared action/stage, not unmeasured impact. Separate published-state review and explicit one-list human approval remain mandatory.",
+    "changeLog": [
+      {
+        "date": "2026-11-17",
+        "changeType": "created",
+        "summary": "Created isolated bilingual production proposal from the fresh restart dossier; all publication gates remain pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Read full source bodies and checked claim-local stage/date/EN-ZH meaning. Removed unattached media claim; preserved separate Nov16 Google intro and Nov17 full report dates."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Assembled claim-local evidence and L1 route in isolated reviewed-state v2.4 proposal; exact packet independent audit remains pending."
+      },
+      {
+        "date": "2026-11-20",
+        "changeType": "correction",
+        "summary": "Constructed isolated publication-state candidate from complete reviewed-state audit; not a production deployment or human approval."
+      }
+    ],
+    "reviewedAt": "2026-11-20",
+    "reviewer": "gemini:01a1f68e-8c83-7713-8ad3-6df1003550dd",
+    "reviewRecord": "governance/reviews/independent-20261120/gtig-ai-threat-tracker-q4-2026.json",
+    "reviewProvenance": "v2.4",
+    "publishedAt": "2026-11-20"
+  }
+}

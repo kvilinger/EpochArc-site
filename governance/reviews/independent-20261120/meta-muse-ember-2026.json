@@ -1,0 +1,179 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "meta-muse-ember-2026",
+  "subjectDigest": "0d94d8e8ce3ee6241634df16089abc818759cafccadf47fddbea35fcde1af4e6",
+  "inputsDigest": "701f88e97ea6a535e2535be68fd6eb636c09faa580e239a3dc0e2e8c9d38e263",
+  "evidenceCutoff": "2026-11-20",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6-sol",
+  "reviewedBy": "gemini:01a1f670-52a8-77cc-acc7-667bb81d2af1",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Meta-only availability statement; no independent production adoption measurement.",
+    "Targeted search is not full six-channel window coverage; search leads cannot prove effects.",
+    "Limited r3 draft review is not approval of the later reviewed-state or published-state subject digests."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Hydrogen full-body r3 draft review accepted EN/zh bounded core and limitation claims; assembled reviewed-state packet is separately audited with exact input hash."
+  },
+  "evidence": [
+    {
+      "id": "m-meta-date",
+      "sourceId": "restart17-meta-ember",
+      "claimId": "meta-muse-ember-2026-core",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "originId": "restart17-meta-muse-ember-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "November 9, 2026",
+      "locator": "Meta research article date",
+      "artifact": "governance/evidence/2026-11-20/direct/ember-meta.txt",
+      "sha256": "56ebcba651a1c6bbaa0eb1789f3c6a5b4d5714efed1ed4953187a5c642457033"
+    },
+    {
+      "id": "m-meta-availability",
+      "sourceId": "restart17-meta-ember",
+      "claimId": "meta-muse-ember-2026-core",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "originId": "restart17-meta-muse-ember-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "is available today on Muse Code and Meta Model API as\nmuse-ember-1.0",
+      "locator": "Meta original Availability paragraph including model identifier",
+      "artifact": "governance/evidence/2026-11-20/direct/ember-meta.txt",
+      "sha256": "56ebcba651a1c6bbaa0eb1789f3c6a5b4d5714efed1ed4953187a5c642457033"
+    },
+    {
+      "id": "m-aa-evaluation",
+      "sourceId": "restart20-ember-aa",
+      "claimId": "meta-muse-ember-2026-benchmark-limit",
+      "url": "https://artificialanalysis.ai/models/muse-ember",
+      "originId": "aa-muse-ember-model-evaluation",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "direct",
+      "quote": "It's also quicker than average per task, however somewhat verbose.",
+      "locator": "Artificial Analysis original evaluated model summary, not external adoption; directly read evaluator original; no production uptake verified",
+      "artifact": "governance/evidence/2026-11-20/direct/ember-aa.txt",
+      "sha256": "e8e6926575e05e01de67f45cbfbc584448857339b4cf2350217a7f8a26b66da7"
+    },
+    {
+      "id": "m-aa-price",
+      "sourceId": "restart20-ember-aa",
+      "claimId": "meta-muse-ember-2026-benchmark-limit",
+      "url": "https://artificialanalysis.ai/models/muse-ember",
+      "originId": "aa-muse-ember-model-evaluation",
+      "accessedAt": "2026-11-20",
+      "relationship": "independent",
+      "verification": "direct",
+      "quote": "On average, it costs $0.14 per task to evaluate Muse Ember (Max) on the Intelligence Index.",
+      "locator": "Artificial Analysis calculated benchmark cost, not customer production costs; directly read evaluator original; no production uptake verified",
+      "artifact": "governance/evidence/2026-11-20/direct/ember-aa.txt",
+      "sha256": "e8e6926575e05e01de67f45cbfbc584448857339b4cf2350217a7f8a26b66da7"
+    }
+  ],
+  "runId": "targeted-meta-ember-lvmh-signing-20261120-r3",
+  "candidateId": "meta-muse-ember",
+  "runDigest": "a742c92c77f03cbda5848f27ffbe97aaa91c5fc84bdbd4c01bcbdbeaf40384b3",
+  "coreFactClaimIds": [
+    "meta-muse-ember-2026-core"
+  ],
+  "identity": {
+    "seriesId": "meta-muse-ember",
+    "action": "Meta makes Muse Ember available on Muse Code and Model API",
+    "stage": "available",
+    "dateBasis": "Dated Nov9 Meta research availability paragraph; no external adoption inferred.",
+    "deduplicationReason": "Muse Ember is the distinct Nov9 smaller hosted model, versus prior published Muse Spark 1.3 agentic coding release and Oct Spark Open weights; not a second record of those launches.",
+    "comparedEventIds": [
+      "meta-muse-spark-1-3-2026",
+      "meta-muse-spark-open-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Hosted model/API product availability, not independent capability demonstration."
+  },
+  "significance": {
+    "rationale": "Meta announced available smaller hosted model; unlike Spark Open weights and earlier Spark 1.3 release, Ember is a separate L1 API/model access event with no independently observed external adoption.",
+    "whyNotHigher": "Neither independent production adoption nor material external structural execution and observed impact meets L2 route thresholds.",
+    "whyNotLower": "Dated Meta original says Muse Ember is available on Muse Code and Model API; AA separately measures a benchmark, not uptake.",
+    "comparisonEventIds": [
+      "meta-muse-spark-1-3-2026",
+      "meta-muse-spark-open-2026"
+    ],
+    "comparisonNotes": {
+      "meta-muse-spark-1-3-2026": "Earlier Muse Spark coding release versus smaller Ember available Nov9",
+      "meta-muse-spark-open-2026": "Open weights for Spark versus hosted proprietary Ember"
+    },
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "Meta says API/model available; independent access test or material change to external organizations not established in this packet.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "Partner list and benchmark score do not verify two unaffiliated production adopters.",
+            "evidenceIds": []
+          }
+        }
+      },
+      {
+        "ruleId": "L2-PRODUCT",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "A smaller hosted model is available, but no novel independent production workflow proved.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No two unaffiliated production deployments independently verified.",
+            "evidenceIds": []
+          }
+        }
+      },
+      {
+        "ruleId": "L2-PRODUCT-SCALE",
+        "criteria": {
+          "new_workflow": {
+            "value": null,
+            "rationale": "No new workflow independently verified from a vendor launch alone.",
+            "evidenceIds": []
+          },
+          "verified_active_users": {
+            "value": null,
+            "rationale": "No dated DAU, WAU or MAU for Muse Ember independently measured.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Meta original supports announced API availability, and AA evaluates benchmark performance; customer uptake is not observed.",
+    "evidenceIds": [
+      "m-meta-availability"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "Benchmark cost and verbosity are qualified measurements, not a documented contradiction of Meta’s stated availability.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "Earlier reviewed-state exact full-body Hydrogen audit in real session 01a1f670-52a8-77cc-acc7-667bb81d2af1 returned ACCEPT_LIMITED; this published-state subject is separately audited, and human approval plus deployment are external records. No measured external adoption or deal execution is inferred.",
+  "producerSessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewerSessionId": "01a1f670-52a8-77cc-acc7-667bb81d2af1",
+  "reviewerModel": "google-antigravity/gemini-4-hydrogen-high"
+}
