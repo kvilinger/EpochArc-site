@@ -1,0 +1,155 @@
+{
+  "policyVersion": "2.4",
+  "runId": "targeted-score-reassessment-20261126",
+  "kind": "targeted",
+  "scopeReason": "User-requested correction of the Nov20 all-zero batch. Local archived full-source reassessment for two availability candidates only; no fresh discovery, network search or full current-window coverage. Existing historical source access dates preserved.",
+  "windowStart": "2026-11-09",
+  "windowEnd": "2026-11-26",
+  "evidenceCutoff": "2026-11-26",
+  "timezone": "UTC",
+  "baselineCommit": "bf0b2ca47d67df44d13bf645e32913fb49bb95b2",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6.1-sol",
+  "promptVersion": "score-repair-v24-bounded-access-20261126",
+  "channels": [
+    {
+      "id": "local-archived-source-reassessment",
+      "status": "partial",
+      "coverageNote": "Re-read previously captured complete source bodies and original record/review; no new web access.",
+      "reason": "Only scoped archived availability candidates are re-evaluated.",
+      "retryResult": "No network retry: this is a local source review, not a failed web fetch.",
+      "attempts": [
+        {
+          "query": "Local full-body re-read of Carbon availability and Decisions endpoint/no-cost tier against IMP-01/02 and EVID-03",
+          "executedAt": "2026-11-26T12:07:47.204347+00:00",
+          "artifact": "governance/evidence/2026-11-26/local/score-reassessment.json",
+          "sha256": "6c9c212a861cf622f9034ddba4ff0c21db26fe7ee0a7d9dde3b91f25cf53d5e1",
+          "resultCount": 2
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Only the two named public-API access candidates; other product consequences remain outside this correction."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "google-gemini-4-carbon-2026-score-repair",
+      "eventId": "google-gemini-4-carbon-2026",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Archived primary body directly states this source-specific availability action.",
+        "novelty": "Update to the existing event, not a new event.",
+        "spillover": "Developers are an explicitly named role; no distinct second-role bonus.",
+        "durability": "Same-day access observation only; no established continuation.",
+        "sourceQuality": "Direct primary account of its own access offer; no independent endpoint execution."
+      },
+      "total": 5,
+      "priority": "pool",
+      "priorityOverrideReason": "Explicit user-directed correction of an existing uniform-zero batch; no new discovery priority inferred.",
+      "decision": "update",
+      "reason": "A provider directly controls and states present API access; EVID-03 permits B for that bounded action. Adding an accessible model option is directional, but no material workflow, rights, realized cost or usage consequence is established: severity +1, not +2. No enterprise audience bonus is added because distinct roles are not independently established.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Local archive: exact dated access wording",
+          "finding": "Google directly states that paying developers can access the public-access Carbon API through AI Studio. The observation is provider-confirmed availability, not measured adoption or completed app rollout.",
+          "evidenceIds": [
+            "google-gemini-4-carbon-2026-access-proof"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Local archive: observed access option versus adoption/materiality",
+          "finding": "A provider directly controls and states present API access; EVID-03 permits B for that bounded action. Adding an accessible model option is directional, but no material workflow, rights, realized cost or usage consequence is established: severity +1, not +2. No enterprise audience bonus is added because distinct roles are not independently established.",
+          "evidenceIds": [
+            "google-gemini-4-carbon-2026-access-proof"
+          ]
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Local archive: external endpoint use, workflow or cost outcomes",
+          "finding": "No independently demonstrated use or material downstream benefit established; none is claimed.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Local source review: contradicted bounded API access statement",
+          "finding": "No captured refutation of the bounded provider statement. This is not a fresh counterevidence search or proof that no contrary evidence exists.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "google-gemini-decisions-api-2026-score-repair",
+      "eventId": "google-gemini-decisions-api-2026",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Archived primary body directly states this source-specific availability action.",
+        "novelty": "Update to the existing event, not a new event.",
+        "spillover": "Developers are an explicitly named role; no distinct second-role bonus.",
+        "durability": "Same-day access observation only; no established continuation.",
+        "sourceQuality": "Direct primary account of its own access offer; no independent endpoint execution."
+      },
+      "total": 5,
+      "priority": "pool",
+      "priorityOverrideReason": "Explicit user-directed correction of an existing uniform-zero batch; no new discovery priority inferred.",
+      "decision": "update",
+      "reason": "Present endpoint availability and a directly specified usable no-cost tier support a bounded access option at B under EVID-03. It is not merely a benchmark or coming-soon Cloud integration. Direction is supported but a material change against other existing options is not: severity +1, not +2.",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Local archive: exact dated access wording",
+          "finding": "Google states the new Decisions API is available through the Gemini API in AI Studio, with a no-cost prototyping tier. This adds a bounded developer access option, not demonstrated use or savings.",
+          "evidenceIds": [
+            "google-gemini-decisions-api-2026-access-proof",
+            "google-gemini-decisions-api-2026-free-tier-proof"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Local archive: observed access option versus adoption/materiality",
+          "finding": "Present endpoint availability and a directly specified usable no-cost tier support a bounded access option at B under EVID-03. It is not merely a benchmark or coming-soon Cloud integration. Direction is supported but a material change against other existing options is not: severity +1, not +2.",
+          "evidenceIds": [
+            "google-gemini-decisions-api-2026-access-proof",
+            "google-gemini-decisions-api-2026-free-tier-proof"
+          ]
+        },
+        "analysis": {
+          "status": "not_found",
+          "query": "Local archive: external endpoint use, workflow or cost outcomes",
+          "finding": "No independently demonstrated use or material downstream benefit established; none is claimed.",
+          "evidenceIds": []
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Local source review: contradicted bounded API access statement",
+          "finding": "No captured refutation of the bounded provider statement. This is not a fresh counterevidence search or proof that no contrary evidence exists.",
+          "evidenceIds": []
+        }
+      }
+    }
+  ]
+}

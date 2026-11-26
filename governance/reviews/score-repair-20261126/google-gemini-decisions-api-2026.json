@@ -1,0 +1,147 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-gemini-decisions-api-2026",
+  "subjectDigest": "36fc2629c62ce3b96a5c8b60899569850435421752b6a2ee03106a67e0d404cd",
+  "inputsDigest": "863a3b4b2365c9eca21a591788f2985cd445a2bca212a57abee825398194e3d3",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "model": "gpt-6.1-sol",
+  "reviewedBy": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "reviewMethod": "self_review",
+  "limitations": [
+    "Local archive reassessment only, no new web search or endpoint execution; raw sources were accessed on the original evidence dates.",
+    "Provider evidence supports its own access action at B, not performance, adoption, broad reach or a material downstream benefit.",
+    "Earlier independent scoring opinions disagreed on whether direct available-now statements prove access. Exact-packet external diagnostic is separate and cannot be inferred from this self_review.",
+    "All public edits remain unapproved. No old approval is reused and no policy digest is changed."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Producer checked both languages: bounded provider-confirmed API option, developers only, no actual usage/savings/completed rollout asserted."
+  },
+  "evidence": [
+    {
+      "id": "google-gemini-decisions-api-2026-q1",
+      "sourceId": "restart17-google-decisions",
+      "claimId": "google-gemini-decisions-api-2026-core",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "originId": "restart17-google-gemini-decisions-api-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Introducing the Gemini Decisions API, powered by our new Gemini Decision 1 model. Evaluate up to 1,000 yes/no, choice, and rubric-scoring questions in a fast, single pass across text, images, audio, video, and PDFs.",
+      "locator": "Direct original source body, Nov20 refreshed unless public post archived with dated public oEmbed; claim-bound excerpt, not an independent impact test.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-google-decisions.txt",
+      "sha256": "363000f89311b03141e8ecfe3b28ca42fc5bc96c076807116b5a69fa49404d8f"
+    },
+    {
+      "id": "google-gemini-decisions-api-2026-access-proof",
+      "sourceId": "restart17-google-decisions",
+      "claimId": "google-gemini-decisions-api-2026-access-impact",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "originId": "restart17-google-gemini-decisions-api-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today, we’re introducing the Gemini Decisions API, a new endpoint for fast, closed-set decisions powered by our new Gemini Decision 1 model (gemini-decision-1), available through the\nGemini API\nin\nGoogle AI Studio\n.",
+      "locator": "Full archived source: explicit API present availability, separate from app rollout/performance; reassessed locally Nov26, original network access date retained.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-google-decisions.txt",
+      "sha256": "363000f89311b03141e8ecfe3b28ca42fc5bc96c076807116b5a69fa49404d8f"
+    },
+    {
+      "id": "google-gemini-decisions-api-2026-free-tier-proof",
+      "sourceId": "restart17-google-decisions",
+      "claimId": "google-gemini-decisions-api-2026-access-impact",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "originId": "restart17-google-gemini-decisions-api-announcement",
+      "accessedAt": "2026-11-20",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Gemini Decision 1 is priced at $0.10 per 1M input tokens and $0 for output tokens, with an API no-cost tier you can use in\nGoogle AI Studio\nfor prototyping.",
+      "locator": "Full archived source, Start building today section: no-cost prototyping tier; not claimed as realized savings.",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-google-decisions.txt",
+      "sha256": "363000f89311b03141e8ecfe3b28ca42fc5bc96c076807116b5a69fa49404d8f"
+    }
+  ],
+  "runId": "targeted-score-reassessment-20261126",
+  "candidateId": "google-gemini-decisions-api-2026-score-repair",
+  "runDigest": "f7c280a081a19a6a61206f7c255c00e1fab265f86c0bddcb5031a9968e8df0b8",
+  "coreFactClaimIds": [
+    "google-gemini-decisions-api-2026-core"
+  ],
+  "identity": {
+    "seriesId": "google-gemini-decisions-api",
+    "action": "Google announces a Gemini Decisions API",
+    "stage": "available",
+    "dateBasis": "google-gemini-decisions-api-2026 2026-11-11: primary source original date and action verified against Nov20 full text; page revisions and release/incident stages distinguished from later developments.",
+    "deduplicationReason": "Impact correction to existing same action/stage; same id, slug, event date, publishedAt. No new event or merge.",
+    "comparedEventIds": [
+      "liquid-d1-edge-decision-models-2026",
+      "cloudflare-clef-decision-models-2026"
+    ],
+    "decision": "update"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Google announces a Gemini Decisions API primarily concerns product: the verified core is the named announced action; adjacent domains do not justify a second category without a separate supported claim."
+  },
+  "significance": {
+    "rationale": "Retain L1: provider-confirmed access change is not proof of the L2 production adoption thresholds. L1 and impact assessment are independent.",
+    "whyNotHigher": "Unlike a satisfied L2-PRODUCT-ACCESS route, missing independent external execution, verified scale or persistence; each unmet criterion is null rather than false.",
+    "whyNotLower": "Dated original supports a concrete distinct announced action, above rumor level, even though effect size is unknown.",
+    "comparisonEventIds": [
+      "liquid-d1-edge-decision-models-2026",
+      "cloudflare-clef-decision-models-2026"
+    ],
+    "comparisonNotes": {
+      "liquid-d1-edge-decision-models-2026": "liquid-d1-edge-decision-models-2026: Liquid AI releases open d1 edge decision models; separate stage/action, comparison only for bounded L1 and no inferred effects.",
+      "cloudflare-clef-decision-models-2026": "cloudflare-clef-decision-models-2026: Cloudflare releases Clef open decision models; independent published comparator for category/significance, not evidence of this event’s outcome."
+    },
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "For google-gemini-decisions-api-2026: directly read declared event stage does not independently verify material access change against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "For google-gemini-decisions-api-2026: directly read declared event stage does not independently verify unaffiliated production organizations against the L2-PRODUCT-ACCESS threshold; no assumption from intended audience or source repetition.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "google-gemini-decisions-api-2026-access-proof",
+        "google-gemini-decisions-api-2026-free-tier-proof"
+      ],
+      "observedSince": "2026-11-11",
+      "observedUntil": "2026-11-11",
+      "baseline": "The new Gemini Decision 1 public endpoint is introduced on November 11. Other classifiers and decision-model options already existed; no claim that this is the first or only way to perform such decisions is made.",
+      "outcome": "Google states the new Decisions API is available through the Gemini API in AI Studio, with a no-cost prototyping tier. This adds a bounded developer access option, not demonstrated use or savings.",
+      "materialChange": "Present endpoint availability and a directly specified usable no-cost tier support a bounded access option at B under EVID-03. It is not merely a benchmark or coming-soon Cloud integration. Direction is supported but a material change against other existing options is not: severity +1, not +2."
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Fact of declared announced action corroborated by party original; effectiveness and reach not independently demonstrated.",
+    "evidenceIds": [
+      "google-gemini-decisions-api-2026-q1"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No documented factual contradiction of narrowly dated original action in directly read sources; limitations alone are not a dispute.",
+    "evidenceIds": []
+  },
+  "provenanceNote": "This correction is the producer's actual Nov26 self_review, not the Nov20 review and not a reused approval. Separate DeepSeek exact-packet diagnostic session 01a217c1-bfc9-74d5-84d9-593bf1386d1b supported severity +1 / impactIndex 2 with limitations; that diagnostic is retained outside this review and is not human authorization. This updated provenance text and same-day available-stage clarification need final-packet recheck."
+}

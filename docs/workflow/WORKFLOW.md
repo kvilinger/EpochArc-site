@@ -47,6 +47,8 @@ Gmail 使用 IMAP + macOS Keychain `epocharc-gmail-app-password`；先用 `pytho
 
 每层保存 query/finding/evidenceIds。found 必须有证据引用。每条摘录同时绑定公开 claim 与来源，材料缺失则停在 hold，不填假 accessedAt。不同 URL 先去重到 publisherId/originId，再判断独立性。
 
+影响层另按 [IMPACT-AUDIT](IMPACT-AUDIT.md) 逐来源、逐维登记候选后果及取舍；模板只提供待填字段，不能批量生成 not_found 判断。L1 不推出影响为零，缺独立采用不推出没有实际暴露或访问变化。
+
 ## 5. Edit：基于冻结证据形成判断
 
 依次完成身份/日期 → 分类 → claim 证据链 → 相关 L2 路径 → L3 条件 → observed impacts → 共识/争议 → 双语。
@@ -56,6 +58,7 @@ Gmail 使用 IMAP + macOS Keychain `epocharc-gmail-app-password`；先用 `pytho
 - 已上线事件缺证据时，只提出复核缺口；未经复核和批准不降级。
 - AI 可以提出等级、severity 和文案建议；人工负责最终接受。禁止把“AI 不做评分”作为省略评级依据的理由。
 - review 结构和批准绑定见 [REVIEW-CONTRACT](../data/REVIEW-CONTRACT.md)。
+- 将影响取舍保存在工作区，计分项写入现行 claims、impacts 和同序 review.impactBasis；运行只读批次风险报告并逐项检查提示，不新增实验审计副件或历史豁免门禁。
 
 ## 6. Review：先复核再批准
 

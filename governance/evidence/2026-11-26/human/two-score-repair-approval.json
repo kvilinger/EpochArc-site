@@ -1,0 +1,31 @@
+{
+  "sessionId": "019f7eb3-bd32-7de0-b812-96efddac7723",
+  "requestMessageId": "48dfbbcc",
+  "requestTimestampUTC": "2026-11-26T12:33:30.921Z",
+  "requestText": "已聚焦到具体问题：\n\n**1. 确认存在漏评，并准备了两条改分修复**\n- Gemini 4 Carbon：**0 → 2**\n- Gemini Decisions API：**0 → 2**\n\n依据是原文直接支持的有限 API 访问变化，不是推测采用或收益。L1 不变；最终独立复核均限定接受。\n\n其余 18 条：5 条暂无支持计分的后果，7 条缺证据，6 条需核清事故与披露身份。**不能认定它们都应为零，也不能盲目加分。**\n\n**2. 已补流程漏洞**\n- 增加整批空影响、重复理由、误用“缺独立采用”的风险提示。\n- 补充逐项影响核查步骤和 7 项回归测试。\n- 暂停无关的政策迁移，撤下未批准的实验门禁。\n\n正式工作树校验通过，92 项测试通过。**两条改分仍在隔离副本，尚未应用到正式内容或上线。**\n\n明细：`epocharc-workspace/active/2026-11-24-impact-process-audit/score-repair-20261126-r2/RESULTS_20.md`",
+  "approvalMessageId": "f3e81f2f",
+  "approvalTimestampUTC": "2026-11-26T12:59:55.754Z",
+  "approvalText": "上线吧",
+  "directParentReply": true,
+  "proposalSha256": "4ecdf7b9be06e063fc0de289ed58f2c633994394e0a3ecab3e095e02f8dd7629",
+  "resultReportSha256": "19186fa379c0e4cf3c797d3472098eb5d65459705666700b86a78451bea9237b",
+  "releaseManifestSha256": "3e295e6e30bfd8a2ac4c13e61d514f3295bd7d9243be94d493b161ae8ee73692",
+  "scope": "Two explicitly described 0-to-2 impact corrections plus related narrow advisory process changes, not UI-only drafts or policy migration.",
+  "approvedItems": [
+    {
+      "subjectId": "google-gemini-4-carbon-2026",
+      "subjectDigest": "2663f83f503c7a377d21cf5922966edc1a84eff6dc234e77a41805c4e5f5d241",
+      "reviewDigest": "7d555e83c721312730f5ae7ca9c674586454e48d44fb7196b118da186c5ad761",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "f7c280a081a19a6a61206f7c255c00e1fab265f86c0bddcb5031a9968e8df0b8"
+    },
+    {
+      "subjectId": "google-gemini-decisions-api-2026",
+      "subjectDigest": "36fc2629c62ce3b96a5c8b60899569850435421752b6a2ee03106a67e0d404cd",
+      "reviewDigest": "1b7971c20905c2ec9e7e40f3e56242dd8fa5737377b5d3ccc82a6818832d95cd",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "f7c280a081a19a6a61206f7c255c00e1fab265f86c0bddcb5031a9968e8df0b8"
+    }
+  ],
+  "limitations": "Recorded from the real local user conversation; validators check fields and digests, not the identity or consent semantics of a human."
+}

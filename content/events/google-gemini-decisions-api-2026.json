@@ -28,7 +28,7 @@
   ],
   "status": "published",
   "significance": 1,
-  "impactIndex": 0,
+  "impactIndex": 2,
   "consensusLevel": "emerging",
   "controversy": false,
   "claims": [
@@ -44,15 +44,47 @@
         "restart17-google-decisions"
       ],
       "notes": "Nov20 original full body and claim-local origin verified for the bounded action only; no independent adoption/scale is implied."
+    },
+    {
+      "id": "google-gemini-decisions-api-2026-access-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Google makes the Decisions API available through Gemini API and AI Studio, including a no-cost prototyping tier. This adds a developer access option; external use, production benefits and savings are not established.",
+        "zhHans": "Google 通过 Gemini API 和 AI Studio 提供 Decisions API，并设有免费原型层。这增加了开发者的访问选项；外部实际使用、生产收益和节省费用尚未得到证实。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-google-decisions"
+      ],
+      "notes": "Provider-confirmed bounded access only; no independent endpoint test, adoption, savings, or completed global rollout claimed."
     }
   ],
-  "impacts": [],
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Google makes the Decisions API available through Gemini API and AI Studio, including a no-cost prototyping tier. This adds a developer access option; external use, production benefits and savings are not established.",
+        "zhHans": "Google 通过 Gemini API 和 AI Studio 提供 Decisions API，并设有免费原型层。这增加了开发者的访问选项；外部实际使用、生产收益和节省费用尚未得到证实。"
+      },
+      "affectedGroups": [
+        "developers"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "restart17-google-decisions"
+      ]
+    }
+  ],
   "sources": [
     {
       "sourceId": "restart17-google-decisions",
       "supports": [
         "google-gemini-decisions-api-2026",
-        "google-gemini-decisions-api-2026-core"
+        "google-gemini-decisions-api-2026-core",
+        "google-gemini-decisions-api-2026-access-impact"
       ]
     }
   ],
@@ -60,10 +92,10 @@
   "relatedForecasts": [],
   "editorial": {
     "createdAt": "2026-11-17",
-    "updatedAt": "2026-11-20",
+    "updatedAt": "2026-11-26",
     "lastSourceCheckAt": "2026-11-20",
     "curator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
-    "reviewNotes": "Unapproved Nov20 exact publication-state candidate after an ACCEPT_LIMITED independent complete reviewed-state v2.4 audit. A primary party establishes only its declared action/stage, not unmeasured impact. Separate published-state review and explicit one-list human approval remain mandatory.",
+    "reviewNotes": "UNAPPROVED isolated score correction. Self-review by the actual producer under unchanged v2.4 L1 policy; independent exact-packet diagnostic requested separately. Original publishedAt and source access dates preserved. No new human approval.",
     "changeLog": [
       {
         "date": "2026-11-17",
@@ -84,11 +116,16 @@
         "date": "2026-11-20",
         "changeType": "correction",
         "summary": "Constructed isolated publication-state candidate from complete reviewed-state audit; not a production deployment or human approval."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "score_changed",
+        "summary": "Propose impactIndex 0→2 under the unchanged formula for provider-confirmed bounded API access (+1 severity, B evidence, developers only); no measured adoption or material downstream benefit inferred. Not deployed or approved."
       }
     ],
-    "reviewedAt": "2026-11-20",
-    "reviewer": "gemini:01a1f68d-4a9d-735e-8f7c-b54196613b91",
-    "reviewRecord": "governance/reviews/independent-20261120/google-gemini-decisions-api-2026.json",
+    "reviewedAt": "2026-11-26",
+    "reviewer": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+    "reviewRecord": "governance/reviews/score-repair-20261126/google-gemini-decisions-api-2026.json",
     "reviewProvenance": "v2.4",
     "publishedAt": "2026-11-20"
   }

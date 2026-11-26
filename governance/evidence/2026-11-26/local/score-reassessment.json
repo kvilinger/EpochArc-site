@@ -1,0 +1,28 @@
+{
+  "kind": "local-archive-reassessment-not-new-web-search",
+  "performedAtUTC": "2026-11-26T12:07:47.204347+00:00",
+  "operator": "pi-session:019f7eb3-bd32-7de0-b812-96efddac7723",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "baseHead": "bf0b2ca47d67df44d13bf645e32913fb49bb95b2",
+  "sources": [
+    {
+      "eventId": "google-gemini-4-carbon-2026",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-google-carbon.txt",
+      "sha256": "f09f1a7c57d2e7e149721f1d64e0de2abacbad2871317776d2805428236242a1",
+      "quote": "Gemini 4 Carbon is available via the API in\nGoogle AI Studio\nand\nGemini for business\nfor all paying developers and enterprises, at the same",
+      "finding": "A provider directly controls and states present API access; EVID-03 permits B for that bounded action. Adding an accessible model option is directional, but no material workflow, rights, realized cost or usage consequence is established: severity +1, not +2. No enterprise audience bonus is added because distinct roles are not independently established."
+    },
+    {
+      "eventId": "google-gemini-decisions-api-2026",
+      "artifact": "governance/evidence/2026-11-20/direct/restart17-google-decisions.txt",
+      "sha256": "363000f89311b03141e8ecfe3b28ca42fc5bc96c076807116b5a69fa49404d8f",
+      "quote": "Today, we’re introducing the Gemini Decisions API, a new endpoint for fast, closed-set decisions powered by our new Gemini Decision 1 model (gemini-decision-1), available through the\nGemini API\nin\nGoogle AI Studio\n.",
+      "finding": "Present endpoint availability and a directly specified usable no-cost tier support a bounded access option at B under EVID-03. It is not merely a benchmark or coming-soon Cloud integration. Direction is supported but a material change against other existing options is not: severity +1, not +2."
+    }
+  ],
+  "limitations": [
+    "Only two archived availability candidates are edited; no new network requests or complete current-window discovery.",
+    "Retrospective editorial assessment as of Nov26; source accessedAt remains the real historical date, not this local read date.",
+    "Other 18 retain unscored status with source-specific reasons in the existing full20 audit; they are not measured neutral."
+  ]
+}
