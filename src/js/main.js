@@ -1,3 +1,6 @@
+import { impactIndexLabel, impactEmptyMessage, impactDimensions } from './impact-display.js';
+import { escapeSourceText, safeSourceUrl, SOURCE_TYPE_LABELS } from './source-safety.js';
+
 const LANGUAGES = {
       en: { html: 'en', content: 'en' },
       'zh-Hans': { html: 'zh-Hans', content: 'zh' }
@@ -248,14 +251,7 @@ const LANGUAGES = {
     let timeframeLabels = {};
     let consensusLabels = {};
 
-    const sourceTypeLabels = {
-      primary: { zhHans: '原始资料', zhHant: '原始資料', en: 'Primary' },
-      official: { zhHans: '官方资料', zhHant: '官方資料', en: 'Official' },
-      news: { zhHans: '新闻报道', zhHant: '新聞報導', en: 'News' },
-      analysis: { zhHans: '分析资料', zhHant: '分析資料', en: 'Analysis' },
-      encyclopedia: { zhHans: '百科资料', zhHant: '百科資料', en: 'Reference' },
-      unknown: { zhHans: '来源资料', zhHant: '來源資料', en: 'Source' }
-    };
+    const sourceTypeLabels = SOURCE_TYPE_LABELS;
 
 
     async function loadJson(url) {
@@ -306,7 +302,7 @@ const LANGUAGES = {
         }
         // 3. Impact Dimension
         if (excludeFilterKey !== 'impactDimension') {
-          if (state.filters.impactDimension !== 'all' && !e.impacts.some(impact => impact.dimension === state.filters.impactDimension)) {
+          if (state.filters.impactDimension !== 'all' && !impactDimensions(e).includes(state.filters.impactDimension)) {
             return false;
           }
         }
@@ -412,11 +408,9 @@ const LANGUAGES = {
       const dimEvents = getFilteredEventsExcept('impactDimension');
       const dimCounts = { all: dimEvents.length };
       dimEvents.forEach(e => {
-        if (e.impacts) {
-          e.impacts.forEach(imp => {
-            dimCounts[imp.dimension] = (dimCounts[imp.dimension] || 0) + 1;
-          });
-        }
+        impactDimensions(e).forEach(dim => {
+          dimCounts[dim] = (dimCounts[dim] || 0) + 1;
+        });
       });
       updateOptions('#impactFilter option', dimCounts);
 
@@ -565,13 +559,15 @@ const LANGUAGES = {
         ? 'EpochArc · AI 时间轴：1950 至今的重要里程碑'
         : 'EpochArc · AI Timeline: Key Milestones from 1950 to Today';
       
+      const count = aiEvents.length;
+      const pageDescription = isZh
+        ? (count ? `浏览 ${count} 个经过策展的 AI 里程碑，以及对应来源、影响分析、专题叙事与可能方向。` : '浏览 AI 里程碑，以及对应来源、影响分析、专题叙事与可能方向。')
+        : (count ? `Explore ${count} curated AI milestones with evidence, impact analysis, narrative arcs, and possible directions.` : 'Explore curated AI milestones with evidence, impact analysis, narrative arcs, and possible directions.');
+
       // Update meta description
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
-        metaDesc.setAttribute('content', isZh
-          ? '浏览 93 个经过策展的 AI 里程碑，以及对应来源、影响分析、专题叙事与可能方向。'
-          : 'Explore 93 curated AI milestones with evidence, impact analysis, narrative arcs, and possible directions.'
-        );
+        metaDesc.setAttribute('content', pageDescription);
       }
       
       // Update OG tags
@@ -580,10 +576,7 @@ const LANGUAGES = {
       
       const ogDesc = document.querySelector('meta[property="og:description"]');
       if (ogDesc) {
-        ogDesc.setAttribute('content', isZh
-          ? '浏览 93 个经过策展的 AI 里程碑，以及对应来源、影响分析、专题叙事与可能方向。'
-          : 'Explore 93 curated AI milestones with evidence, impact analysis, narrative arcs, and possible directions.'
-        );
+        ogDesc.setAttribute('content', pageDescription);
       }
       
       const ogLocale = document.querySelector('meta[property="og:locale"]');
@@ -597,10 +590,7 @@ const LANGUAGES = {
       
       const twDesc = document.querySelector('meta[name="twitter:description"]');
       if (twDesc) {
-        twDesc.setAttribute('content', isZh
-          ? '浏览 93 个经过策展的 AI 里程碑，以及对应来源、影响分析、专题叙事与可能方向。'
-          : 'Explore 93 curated AI milestones with evidence, impact analysis, narrative arcs, and possible directions.'
-        );
+        twDesc.setAttribute('content', pageDescription);
       }
       
       // Update all elements with data-zh / data-en
@@ -831,7 +821,7 @@ const LANGUAGES = {
       const sourceIds = Array.isArray(signal?.sourceIds) ? signal.sourceIds : [];
       const linkedSources = sourceIds
         .map((sourceId) => sourcesById.get(sourceId))
-        .filter((source) => source && source.url);
+        .filter((source) => source && safeSourceUrl(source.url));
 
       if (!linkedSources.length) return '';
 
@@ -1150,7 +1140,7 @@ const LANGUAGES = {
         if (state.filters.category !== 'all' && !e.categories.includes(state.filters.category)) {
           return false;
         }
-        if (state.filters.impactDimension !== 'all' && !e.impacts.some(impact => impact.dimension === state.filters.impactDimension)) {
+        if (state.filters.impactDimension !== 'all' && !impactDimensions(e).includes(state.filters.impactDimension)) {
           return false;
         }
         if (state.filters.consensusLevel !== 'all' && e.consensusLevel !== state.filters.consensusLevel) {
@@ -1340,7 +1330,7 @@ const LANGUAGES = {
       const impactLabel = isChineseContent() ? '影响' : 'Impact';
       return `
         <div class="timeline-node-side">
-          <span class="timeline-node-meta">L${e.significance} · ${impactLabel} ${e.impactIndex}/10 · ${consensusName}</span>
+          <span class="timeline-node-meta">L${e.significance} · ${impactLabel} ${impactIndexLabel(e, isChineseContent())} · ${consensusName}</span>
         </div>
       `;
     }
@@ -1374,10 +1364,11 @@ const LANGUAGES = {
       }));
 
       const sourceItems = eventSources.map(({ ref, source }, index) => {
-        const sourceKind = labelFor(sourceTypeLabels[source.type]) || source.type || labelFor(sourceTypeLabels.unknown);
-        const sourceTitle = source.url
-          ? `<a class="source-title source-title-link" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.title}</a>`
-          : `<span class="source-title">${source.title}</span>`;
+        const sourceKind = labelFor(sourceTypeLabels[source.type] || sourceTypeLabels.unknown);
+        const url = safeSourceUrl(source.url);
+        const sourceTitle = url
+          ? `<a class="source-title source-title-link" href="${escapeSourceText(url)}" target="_blank" rel="noopener noreferrer">${escapeSourceText(source.title)}</a>`
+          : `<span class="source-title">${escapeSourceText(source.title)}</span>`;
         return `
           <li class="source-card">
             <span class="source-index">${index + 1}</span>
@@ -1385,26 +1376,28 @@ const LANGUAGES = {
               <div class="source-row">
                 ${sourceTitle}
               </div>
-              <p class="source-meta">${source.url || (isChineseContent() ? '当前记录的是来源指向。推荐后续补 DOI、原始页面链接、存档链接和抓取时间。' : 'This currently stores the citation pointer. Next step: add DOI, canonical URL, archive URL, and capture timestamp.')}</p>
-              ${ref.quote ? `<div class="source-quote">${ref.quote}</div>` : ''}
+              <p class="source-meta">${escapeSourceText(url ? (isChineseContent() ? `原文链接: ${url}` : `URL: ${url}`) : (isChineseContent() ? '待补原文链接' : 'URL pending'))}</p>
+              ${ref.quote ? `<div class="source-quote">${escapeSourceText(ref.quote)}</div>` : ''}
               <div class="source-status">
-                <span class="source-chip">${sourceKind}</span>
+                <span class="source-chip">${escapeSourceText(sourceKind)}</span>
                 <span class="source-chip">${isChineseContent() ? '引用已记录' : 'Citation logged'}</span>
-                <span class="source-chip">${source.url ? (isChineseContent() ? '原文可访问' : 'Live source') : (isChineseContent() ? '待补原文链接' : 'URL pending')}</span>
+                <span class="source-chip">${url ? (isChineseContent() ? '原文链接' : 'Source link') : (isChineseContent() ? '待补原文链接' : 'URL pending')}</span>
               </div>
             </div>
           </li>
         `;
       }).join('');
 
-      const impactItems = e.impacts.map(impact => `
+      const impactItems = e.impacts.length === 0
+        ? `<li class="impact-item">${impactEmptyMessage(isChineseContent())}</li>`
+        : e.impacts.map(impact => `
         <li class="impact-item">
           <div class="impact-head">
-            <span class="impact-name">${labelFor(impactLabels[impact.dimension])}</span>
-            <span class="impact-score">${impact.severity > 0 ? '+' : ''}${impact.severity} · ${labelFor(timeframeLabels[impact.timeframe])}</span>
+            <span class="impact-name">${escapeSourceText(labelFor(impactLabels[impact.dimension]))}</span>
+            <span class="impact-score">${impact.severity > 0 ? '+' : ''}${escapeSourceText(impact.severity)} · ${escapeSourceText(labelFor(timeframeLabels[impact.timeframe]))}</span>
           </div>
-          <p class="impact-description">${localizedText(impact.description)}</p>
-          <p class="impact-description">${text('affected')}: ${impact.affectedGroups.join(isChineseContent() ? '、' : ', ')}</p>
+          <p class="impact-description">${escapeSourceText(localizedText(impact.description))}</p>
+          <p class="impact-description">${escapeSourceText(text('affected'))}: ${escapeSourceText(impact.affectedGroups.join(isChineseContent() ? '、' : ', '))}</p>
         </li>
       `).join('');
 
@@ -1657,7 +1650,7 @@ const LANGUAGES = {
                       <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.6;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
                     </span>
                   </span>
-                  <span class="val">${e.impactIndex}/10</span>
+                  <span class="val">${impactIndexLabel(e, isChineseContent())}</span>
                 </div>
               </div>
               <ul class="source-list">${sourceItems}</ul>
@@ -1967,15 +1960,25 @@ const LANGUAGES = {
       if (legacyEventId) {
         history.replaceState(null, '', eventStateUrl(legacyEventId));
       }
-      const readerPulseLoaded = await loadReaderPulseStateFromApi();
-      if (!readerPulseLoaded) {
-        syncLocalReaderPulseState(state.selectedForecastId);
-      }
-      
-      // Update UI languages & themes
+      // Update UI languages & themes immediately without blocking on D1 API
       updateLocale();
       updateTheme();
+
+      const pulsePromise = loadReaderPulseStateFromApi()
+        .then((readerPulseLoaded) => {
+          if (!readerPulseLoaded) {
+            syncLocalReaderPulseState(state.selectedForecastId);
+          }
+          if (state.dataStatus === 'ready') {
+            renderPredictions();
+          }
+        })
+        .catch(() => {
+          syncLocalReaderPulseState(state.selectedForecastId);
+        });
+
       await loadSiteData();
+      await pulsePromise;
 
       if (!eventId) {
         restoreTimelineReturnAfterRender();
@@ -2061,16 +2064,16 @@ const LANGUAGES = {
         en: '<strong>Significance (L1-L3):</strong> Editorial historical evaluation.<br>· <strong>L1 (Important)</strong>: Worthy of long-term record; clear but limited impact.<br>· <strong>L2 (Key)</strong>: Key driver of paradigms, adoption, business models, or policy.<br>· <strong>L3 (Turning Point)</strong>: Reshapes tech trajectories, public perception, or regulation.'
       },
       category: {
-        zh: '<strong>事件分类 (Category)：</strong>事件的主导属性类型。<br>· <strong>模型发布</strong>：具体 AI 模型、模型族或能力包的正式发布。<br>· <strong>能力突破</strong>：AI 首次或显著完成了此前不可行的任务。<br>· <strong>研究范式</strong>：论文、算法、架构或评测改变了研究路线。<br>· <strong>产品化</strong>：AI 能力进入了用户实际可用的产品、平台与商业服务。<br>· <strong>开源事件</strong>：开源权重、代码、数据集或生态改变了访问门槛。<br>· <strong>政策法规</strong>：法律、监管、政策或重大判决成为事件主体。<br>· <strong>安全伦理</strong>：对齐、伦理风险、治理框架、重大事故或暂停倡议。<br>· <strong>社会影响</strong>：就业、版权、舆论、劳动市场等社会外溢后果。',
-        en: '<strong>Event Category:</strong> Primary attribute of the recorded event.<br>· <strong>Model</strong>: Release of models, model families, or capabilities.<br>· <strong>Capability</strong>: AI demonstrating previously impossible tasks.<br>· <strong>Research</strong>: Papers, architectures, or paradigms shifting research paths.<br>· <strong>Product</strong>: AI entering shipping products, workflows, or platforms.<br>· <strong>Open Source</strong>: Open weights, codes, or datasets changing access.<br>· <strong>Regulation</strong>: Laws, policies, regulatory acts, or court rulings.<br>· <strong>Safety</strong>: Alignment research, governance, ethical incidents, or safety actions.<br>· <strong>Social</strong>: Market, copyright, education, or macroeconomic impacts.'
+        zh: '<strong>事件分类 (6 类)：</strong>按事件主导动作归类（可附 1 个次分类）。<br>· <strong>能力突破 (Capability)</strong>：AI 首次或显著推进此前不可行的能力、研究范式或评测基线。<br>· <strong>产品工具 (Product)</strong>：模型、系统或智能体进入实际可用的产品、API、开源权重与开发工具。<br>· <strong>商业产业 (Commerce)</strong>：融资、并购、IPO、算力基建交易、定价重塑或关键人事与治理变动。<br>· <strong>治理监管 (Governance)</strong>：立法、行政规则、出口管制、执法诉讼或官方监管框架。<br>· <strong>安全伦理 (Safety)</strong>：对齐与风险评估、真实安全事故、漏洞/越权披露或防护机制。<br>· <strong>社会文化 (Society)</strong>：就业、教育、版权、公共舆论等宏观社会与文化影响。',
+        en: '<strong>Event Category (6 categories):</strong> Classified by primary action (up to 1 secondary category).<br>· <strong>Capability Breakthrough</strong>: Advances in tasks, research paradigms, or evaluated benchmarks.<br>· <strong>Products &amp; Tools</strong>: Models, APIs, open weights, or agents shipping in usable products and developer tools.<br>· <strong>Commerce &amp; Industry</strong>: Financings, M&amp;A, IPOs, compute deals, pricing shifts, or corporate governance moves.<br>· <strong>Governance &amp; Regulation</strong>: Legislation, export controls, binding rules, litigation, or regulatory frameworks.<br>· <strong>Safety &amp; Ethics</strong>: Preparedness evaluations, real-world security incidents, disclosures, or safeguards.<br>· <strong>Society &amp; Culture</strong>: Labor, copyright, education, public discourse, and broader societal effects.'
       },
       consensus: {
         zh: '<strong>共识度</strong> — 反映事件的事实确定性及影响解释的认同程度。<br>请区分：共识度衡量的是<em>对事件的解读</em>到了什么层面，而非事件真实与否。<br>· <strong>广泛共识</strong>：事实清晰，影响解释被广泛接受。<br>· <strong>仍在讨论</strong>：事实清晰，但对影响规模、归因或后果存在分歧。<br>· <strong>共识形成中</strong>：事实和影响的判断都仍在积累中。',
         en: '<strong>Consensus</strong> — Reflects how settled the facts are and how widely the impact interpretation is accepted.<br>Note: This is about <em>interpretation status</em>, not whether the event is real.<br>· <strong>Broad Consensus</strong>: Facts are clear; the impact interpretation is widely agreed upon.<br>· <strong>Actively Debated</strong>: Facts are clear, but the scale, attribution, or consequences remain contested.<br>· <strong>Emerging Consensus</strong>: Both factual understanding and impact judgment are still developing.'
       },
       impactIndex: {
-        zh: '<strong>影响指数算法 (0-10)：</strong>定量评估事件的影响强弱。<br>· <strong>维度得分</strong>：基于能力、经济、普惠、风险、认知等 5 维度影响严重度绝对值求和 (除以3，上限 4 分)。<br>· <strong>证据加分</strong>：支撑材料证据可信度 (最低A级+1.5分，D级-1分)。<br>· <strong>持续性加分</strong>：长期影响+1.5分，中期+1分，短期+0.5分。<br>· <strong>受众广度加分</strong>：影响群体数量 (≥4类+2分)。<br>· <strong>争议调整</strong>：高争议但证据不足时扣减 0.5 分。',
-        en: '<strong>Impact Index Algorithm (0-10):</strong> Quantifies overall event impact.<br>· <strong>Dimension</strong>: Sum of severity absolute values of 5 key areas (cap/econ/access/risk/paradigm, max 4.0).<br>· <strong>Evidence</strong>: Lowest source evidence grade bonus (A:+1.5, D:-1.0).<br>· <strong>Durability</strong>: Higher timeframe bonus (long:+1.5, med:+1.0, short:+0.5).<br>· <strong>Scope</strong>: Number of affected groups (>=4 groups:+2.0).<br>· <strong>Controversy</strong>: Deducts 0.5 if high debate with low evidence.'
+        zh: '<strong>影响指数算法 (0-10)：</strong>仅基于已观察到的下游后果定量计算。<br>· <strong>维度得分</strong>：能力、经济、普惠、风险、认知 5 维度已观察严重度绝对值求和 (除以3，上限 4 分)。<br>· <strong>证据加分</strong>：支撑材料证据可信度 (最低A级+1.5分，D级-1分)。<br>· <strong>持续性加分</strong>：长期+1.5分，中期+1分，短期+0.5分。<br>· <strong>受众广度加分</strong>：影响群体数量 (≥4类+2分)。<br>· <strong>争议调整</strong>：高争议但证据偏弱时扣减 0.5 分。<br>· <strong>尚无已记录影响</strong>：尚未录入可计分的已观察后果，不代表实测影响为零。',
+        en: '<strong>Impact Index Algorithm (0-10):</strong> Quantifies observed downstream consequences only.<br>· <strong>Dimension</strong>: Sum of observed severity magnitudes across 5 dimensions (divided by 3, max 4.0).<br>· <strong>Evidence</strong>: Lowest supporting evidence grade bonus (A:+1.5, D:-1.0).<br>· <strong>Durability</strong>: Observed timeframe bonus (long:+1.5, med:+1.0, short:+0.5).<br>· <strong>Scope</strong>: Affected audience count (&ge;4 groups:+2.0).<br>· <strong>Controversy</strong>: Deducts 0.5 if contested with low-grade evidence.<br>· <strong>No impacts recorded</strong>: No scored observed impacts recorded yet; does not mean measured zero.'
       }
     };
 

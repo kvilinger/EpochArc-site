@@ -2,6 +2,8 @@
 
 本文件是导航，不定义第二套规则。
 
+首次接手先读 [根目录 AGENTS.md](../../AGENTS.md) 和 [当前工作清单](../workflow/WORK-QUEUE.md)，核对实际 Git/UTC、当前任务和权限；任务授权后才认领，旧批次状态不能代替当前交接。
+
 ## 必读顺序
 
 1. [EDITORIAL-STANDARD](../workflow/EDITORIAL-STANDARD.md)：规则、边界、未知处理和权限。

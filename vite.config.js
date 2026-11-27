@@ -56,10 +56,6 @@ export default defineConfig({
           dest: '.'
         },
         {
-          src: 'sitemap.xml',
-          dest: '.'
-        },
-        {
           src: 'arcs.html',
           dest: '.'
         },

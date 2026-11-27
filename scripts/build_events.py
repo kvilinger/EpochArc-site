@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build data/events.json from content/events/*.json with full validation"""
 import json, os, glob, sys, html
+from impact_display import EMPTY as IMPACT_EMPTY, impact_index_label
+from html_safety import http_url, script_json, claim_source_link, SOURCE_TYPE_LABELS
 
 # ⚠️ WARNING FOR OTHER AI AGENTS: DO NOT REMOVE OR BYPASS THIS FUNCTION!
 # All dynamic strings injected into HTML attributes (e.g. data-zh, data-en) MUST be escaped via this function.
@@ -350,24 +352,19 @@ if os.path.exists(TEMPLATE_FILE):
             src_id = source_ref.get('sourceId')
             src = sources_by_id.get(src_id, {'id': src_id, 'title': src_id, 'type': 'unknown', 'url': ''})
             
-            source_types_translation = {
-                'paper': {'en': 'Academic Paper', 'zhHans': '学术论文'},
-                'news': {'en': 'News Report', 'zhHans': '新闻报道'},
-                'blog': {'en': 'Official Blog / Announcement', 'zhHans': '官方博文/公告'},
-                'code': {'en': 'Code Repository', 'zhHans': '开源代码库'},
-                'tweet': {'en': 'Social Media Post', 'zhHans': '社交媒体发布'},
-                'governance': {'en': 'Official Document', 'zhHans': '政策官方文档'},
-                'unknown': {'en': 'Reference Evidence', 'zhHans': '参考证据'}
-            }
             src_type = src.get('type', 'unknown')
-            type_en = source_types_translation.get(src_type, source_types_translation['unknown'])['en']
-            type_zh = source_types_translation.get(src_type, source_types_translation['unknown'])['zhHans']
+            type_en = SOURCE_TYPE_LABELS.get(src_type, SOURCE_TYPE_LABELS['unknown'])['en']
+            type_zh = SOURCE_TYPE_LABELS.get(src_type, SOURCE_TYPE_LABELS['unknown'])['zhHans']
             
-            title_html = f'<a class="source-title source-title-link" href="{src.get("url")}" target="_blank" rel="noopener noreferrer">{src.get("title")}</a>' if src.get("url") else f'<span class="source-title">{src.get("title")}</span>'
-            quote_html = f'<div class="source-quote">{source_ref.get("quote")}</div>' if source_ref.get('quote') else ''
+            source_url = http_url(src.get('url'))
+            source_title = html_escape(src.get('title'))
+            title_html = f'<a class="source-title source-title-link" href="{html_escape(source_url)}" target="_blank" rel="noopener noreferrer">{source_title}</a>' if source_url else f'<span class="source-title">{source_title}</span>'
+            quote_html = f'<div class="source-quote">{html_escape(source_ref.get("quote"))}</div>' if source_ref.get('quote') else ''
             
-            meta_en = html_escape(f'URL: {src.get("url")}' if src.get("url") else 'URL pending')
-            meta_zh = html_escape(f'原文可访问: {src.get("url")}' if src.get("url") else '待补原文链接')
+            meta_en = html_escape(f'URL: {source_url}' if source_url else 'URL pending')
+            meta_zh = html_escape(f'原文链接: {source_url}' if source_url else '待补原文链接')
+            status_en = 'Source link' if source_url else 'URL pending'
+            status_zh = '原文链接' if source_url else '待补原文链接'
             
             source_items.append(f'''
               <li class="source-card" id="source-{html_escape(src_id)}">
@@ -381,13 +378,15 @@ if os.path.exists(TEMPLATE_FILE):
                   <div class="source-status">
                     <span class="source-chip" data-zh="{html_escape(type_zh)}" data-en="{html_escape(type_en)}">{html_escape(type_en)}</span>
                     <span class="source-chip" data-zh="引用已记录" data-en="Citation logged">Citation logged</span>
-                    <span class="source-chip" data-zh="原文可访问" data-en="Live source">Live source</span>
+                    <span class="source-chip" data-zh="{status_zh}" data-en="{status_en}">{status_en}</span>
                   </div>
                 </div>
               </li>
             ''')
             
         impacts_html = '\n'.join(impact_items)
+        if not impact_items:
+            impacts_html = f'<li class="impact-item" data-zh="{html_escape(IMPACT_EMPTY["zhHans"])}" data-en="{html_escape(IMPACT_EMPTY["en"])}">{html_escape(IMPACT_EMPTY["en"])}</li>'
         sources_html = '\n'.join(source_items)
 
         # 3. 渲染带证据绑定的关键结论
@@ -404,18 +403,8 @@ if os.path.exists(TEMPLATE_FILE):
             source_links = []
             for source_id in claim.get('sourceIds', []):
                 source = sources_by_id.get(source_id, {})
-                source_title = html_escape(source.get('title', source_id))
                 source_number = source_index_by_id.get(source_id)
-                if source_number:
-                    source_links.append(
-                        f'<a href="#source-{html_escape(source_id)}" title="{source_title}">[{source_number}]</a>'
-                    )
-                elif source.get('url'):
-                    source_links.append(
-                        f'<a href="{html_escape(source.get("url"))}" target="_blank" rel="noopener noreferrer" title="{source_title}">[↗]</a>'
-                    )
-                else:
-                    source_links.append(f'<span title="{source_title}">[—]</span>')
+                source_links.append(claim_source_link(source, source_id, source_number))
 
             claim_items.append(f'''
               <li class="claim-card claim-{claim_type}">
@@ -458,7 +447,7 @@ if os.path.exists(TEMPLATE_FILE):
                 'title': {'en': re['title']['en'], 'zh': re['title']['zhHans']},
                 'summary': {'en': re['summary']['en'], 'zh': re['summary']['zhHans']}
             }
-        related_data_json = json.dumps(related_data_dict, ensure_ascii=False)
+        related_data_json = script_json(related_data_dict, ensure_ascii=False)
         
         # 前驱
         precursors_html = ''
@@ -686,7 +675,7 @@ if os.path.exists(TEMPLATE_FILE):
             },
             "mainEntityOfPage": f"https://epoch-arc.com/events/{e['slug']}/"
         }
-        schema_json_ld = f'<script type="application/ld+json">\n{json.dumps(schema_data, ensure_ascii=False, indent=2)}\n</script>'
+        schema_json_ld = f'<script type="application/ld+json">\n{script_json(schema_data, ensure_ascii=False, indent=2)}\n</script>'
 
         page_html = template_content
         page_html = page_html.replace('{{SCHEMA_JSON_LD}}', schema_json_ld)
@@ -698,7 +687,8 @@ if os.path.exists(TEMPLATE_FILE):
         page_html = page_html.replace('{{TITLE_ZH}}', html_escape(copy_title_zh))
         page_html = page_html.replace('{{TITLE_EN}}', html_escape(copy_title_en))
         page_html = page_html.replace('{{PRIMARY_CAT}}', primary_cat)
-        page_html = page_html.replace('{{PRIMARY_CAT_NAME}}', primary_cat_name_en)
+        page_html = page_html.replace('{{PRIMARY_CAT_NAME}}', html_escape(primary_cat_name_en))
+        page_html = page_html.replace('{{PRIMARY_CAT_NAME_ZH}}', html_escape(primary_cat_name_zh))
         page_html = page_html.replace('{{SECONDARY_CAT_HTML}}', secondary_cat_html)
         page_html = page_html.replace('{{LEAD_ZH}}', html_escape(copy_lead_zh))
         page_html = page_html.replace('{{LEAD_EN}}', html_escape(copy_lead_en))
@@ -711,8 +701,11 @@ if os.path.exists(TEMPLATE_FILE):
         page_html = page_html.replace('{{SIGNIFICANCE}}', str(e['significance']))
         page_html = page_html.replace('{{CATEGORIES}}', f'<span data-zh="{cats_zh}" data-en="{cats_en}">{cats_en}</span>')
         page_html = page_html.replace('{{CONSENSUS}}', f'<span data-zh="{con_zh}" data-en="{con_en}">{con_en}</span>')
-        page_html = page_html.replace('{{IMPACT_INDEX}}', str(e['impactIndex']))
+        impact_label = f'<span data-zh="{html_escape(impact_index_label(e, "zhHans"))}" data-en="{html_escape(impact_index_label(e))}">{html_escape(impact_index_label(e))}</span>'
+        page_html = page_html.replace('{{IMPACT_INDEX_LABEL}}', impact_label)
         page_html = page_html.replace('{{SOURCES}}', sources_html)
+        related_toc = '<a href="#event-related" data-zh="关联事件" data-en="Related events">Related events</a>' if related_events_list else ''
+        page_html = page_html.replace('{{RELATED_TOC_LINK}}', related_toc)
         page_html = page_html.replace('{{RELATED}}', related_section_html)
         page_html = page_html.replace('{{RELATED_DATA_JSON}}', related_data_json)
         
@@ -731,124 +724,51 @@ if os.path.exists(DIST_DIR):
     shutil.copytree(EVENTS_OUTPUT_DIR, os.path.join(DIST_DIR, 'events'), dirs_exist_ok=True)
     print(f"✅ Synced static events to {DIST_DIR}/events/")
 
-# ─────────────────── Fallback 数据裁剪与回填 ───────────────────
-# This must be ordered: these entries are serialized into a tracked fallback
-# artifact, so iterating an unordered set causes byte-level output drift across
-# Python hash seeds even when the editorial data is unchanged.
+# ─────────────────── 精简摘要数据生成 (events_summary.json) ───────────────────
+# Keep this tuple ordered so generated summary output stays deterministic across
+# Python hash seeds.
 FALLBACK_KEEP_KEYS = (
     'id', 'slug', 'title', 'date', 'datePrecision', 'searchSummary', 'summary',
-    'categories', 'significance', 'impactIndex',
+    'categories', 'significance', 'impactIndex', 'consensusLevel', 'controversy', 'tags',
 )
 
 def trim_for_fallback(events):
-    """裁剪 events 数据用于 HTML fallback，去掉详情页才需要的字段"""
+    """生成首页首屏列表与全筛选器所需的精简事件摘要"""
     trimmed = []
     for e in events:
         entry = {}
         for key in FALLBACK_KEEP_KEYS:
             if key in e:
                 entry[key] = e[key]
+        entry['impactCount'] = len(e.get('impacts', []))
+        entry['impactDimensions'] = list(dict.fromkeys(impact['dimension'] for impact in e.get('impacts', [])))
         trimmed.append(entry)
     return trimmed
 
 import re
 
-def inject_fallback_data(html_path, forecasts_json, events_json, sources_json):
-    if not os.path.exists(html_path):
-        return False
-    with open(html_path, 'r', encoding='utf-8') as fh:
-        content = fh.read()
-    
-    # 替换 fallback-forecasts-data
-    def replace_forecasts(match):
-        return match.group(1) + forecasts_json + match.group(2)
-    content = re.sub(
-        r'(<script\s+type="application/json"\s+id="fallback-forecasts-data">).*?(</script>)',
-        replace_forecasts,
-        content,
-        flags=re.DOTALL
-    )
-    # 替换 fallback-events-data
-    def replace_events(match):
-        return match.group(1) + events_json + match.group(2)
-    content = re.sub(
-        r'(<script\s+type="application/json"\s+id="fallback-events-data">).*?(</script>)',
-        replace_events,
-        content,
-        flags=re.DOTALL
-    )
-    # 替换 fallback-sources-data
-    def replace_sources(match):
-        return match.group(1) + sources_json + match.group(2)
-    content = re.sub(
-        r'(<script\s+type="application/json"\s+id="fallback-sources-data">).*?(</script>)',
-        replace_sources,
-        content,
-        flags=re.DOTALL
-    )
-    
-    with open(html_path, 'w', encoding='utf-8') as fh:
-        fh.write(content)
-    return True
-
-# 准备这三个 JSON 的紧凑字符串
-with open(os.path.join(ROOT_DIR, 'data', 'forecasts.json'), 'r', encoding='utf-8') as fh:
-    forecasts_data_str = json.dumps(json.load(fh), ensure_ascii=False)
 with open(os.path.join(ROOT_DIR, 'data', 'events.json'), 'r', encoding='utf-8') as fh:
     full_events_list = json.load(fh)
-    events_data_str = json.dumps(full_events_list, ensure_ascii=False)
-with open(os.path.join(ROOT_DIR, 'data', 'sources.json'), 'r', encoding='utf-8') as fh:
-    sources_data_str = json.dumps(json.load(fh), ensure_ascii=False)
 
-# 生成精简版 events_summary.json
 trimmed_events = trim_for_fallback(full_events_list)
 trimmed_events_str = json.dumps(trimmed_events, ensure_ascii=False, default=str)
 summary_path = os.path.join(ROOT_DIR, 'data', 'events_summary.json')
 with open(summary_path, 'w', encoding='utf-8') as fh:
     fh.write(trimmed_events_str)
-# 同步写入 dist/data/ 如果存在的话
 dist_data_dir = os.path.join(ROOT_DIR, 'dist', 'data')
 if os.path.exists(dist_data_dir):
     with open(os.path.join(dist_data_dir, 'events_summary.json'), 'w', encoding='utf-8') as fh:
         fh.write(trimmed_events_str)
-
-inject_fallback_data(os.path.join(ROOT_DIR, 'index.html'), forecasts_data_str, trimmed_events_str, sources_data_str)
-inject_fallback_data(os.path.join(ROOT_DIR, 'dist', 'index.html'), forecasts_data_str, trimmed_events_str, sources_data_str)
-print("✅ Injected slimmed fallback data into index.html and dist/index.html")
-
-# ─────────────────── 自动生成 sitemap.xml ───────────────────
-def generate_sitemap(events):
-    import datetime
-    today = datetime.date.today().isoformat()
-    
-    xml_lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-        f'  <url><loc>https://epoch-arc.com/</loc><lastmod>{today}</lastmod></url>',
-        f'  <url><loc>https://epoch-arc.com/methods</loc><lastmod>{today}</lastmod></url>'
-    ]
-    
-    for e in events:
-        slug = e['slug']
-        xml_lines.append(f'  <url><loc>https://epoch-arc.com/events/{slug}/</loc><lastmod>{today}</lastmod></url>')
-        
-    xml_lines.append('</urlset>')
-    sitemap_content = '\n'.join(xml_lines)
-    
-    # 写入根目录下
-    with open(os.path.join(ROOT_DIR, 'sitemap.xml'), 'w', encoding='utf-8') as fh:
-        fh.write(sitemap_content)
-    # 如果 dist/ 存在，同样写入 dist/
-    if os.path.exists(DIST_DIR):
-        with open(os.path.join(DIST_DIR, 'sitemap.xml'), 'w', encoding='utf-8') as fh:
-            fh.write(sitemap_content)
-            
-    print("✅ Generated sitemap.xml with physical routes successfully")
-
-generate_sitemap(events)
+print(f"✅ Built {summary_path} ({len(trimmed_events)} slimmed event summaries)")
 
 # ─────────────────── 旧事件 ID URL → canonical slug ───────────────────
 REDIRECTS_FILE = os.path.join(ROOT_DIR, '_redirects')
+REDIRECTS_BASE = (
+    '# Host-level www → apex redirects must be configured with a Cloudflare\n'
+    '# Single Redirect. Pages _redirects rules only match paths.\n\n'
+    '# Canonical\n'
+    '/index.html / 301'
+)
 REDIRECTS_START = '# BEGIN GENERATED EVENT ID REDIRECTS'
 REDIRECTS_END = '# END GENERATED EVENT ID REDIRECTS'
 FUNCTIONS_EVENT_ROUTES_FILE = os.path.join(
@@ -857,16 +777,6 @@ FUNCTIONS_EVENT_ROUTES_FILE = os.path.join(
 
 def generate_event_id_redirects(events):
     """Keep legacy ID-based event URLs working while canonical pages use slugs."""
-    existing = ''
-    if os.path.exists(REDIRECTS_FILE):
-        with open(REDIRECTS_FILE, 'r', encoding='utf-8') as fh:
-            existing = fh.read()
-
-    generated_block_pattern = re.compile(
-        rf'\n?{re.escape(REDIRECTS_START)}.*?{re.escape(REDIRECTS_END)}\n?',
-        flags=re.DOTALL,
-    )
-    base = generated_block_pattern.sub('\n', existing).rstrip()
     rules = []
     for event in sorted(events, key=lambda item: item['id']):
         event_id = event['id']
@@ -883,16 +793,16 @@ def generate_event_id_redirects(events):
             ])
 
     generated = '\n'.join([REDIRECTS_START, *rules, REDIRECTS_END])
-    content = f'{base}\n\n{generated}\n'
+    content = f'{REDIRECTS_BASE}\n\n{generated}\n'
     with open(REDIRECTS_FILE, 'w', encoding='utf-8') as fh:
         fh.write(content)
     print(f"✅ Generated {len(rules)} legacy event redirect rule(s)")
 
 generate_event_id_redirects(events)
 
-# ─────────────────── Pages middleware event route map ───────────────────
+# ─────────────────── Pages middleware event route & direction ID map ───────────────────
 def generate_event_route_map(events):
-    """Generate the ID/slug lookup used for one-hop canonical redirects."""
+    """Generate the ID/slug lookup and valid direction IDs for Pages Functions."""
     routes = {}
     for event in sorted(events, key=lambda item: item['id']):
         event_id = event['id']
@@ -900,14 +810,23 @@ def generate_event_route_map(events):
         routes[event_id] = slug
         routes[slug] = slug
 
+    forecasts_path = os.path.join(ROOT_DIR, 'data', 'forecasts.json')
+    forecast_ids = []
+    if os.path.exists(forecasts_path):
+        with open(forecasts_path, 'r', encoding='utf-8') as fh:
+            forecast_ids = sorted({item['id'] for item in json.load(fh) if isinstance(item, dict) and item.get('id')})
+
     content = (
         '// Generated by scripts/build_events.py. Do not edit manually.\n'
         'export const EVENT_ROUTES = Object.freeze('
         f'{json.dumps(routes, ensure_ascii=False, sort_keys=True, indent=2)}'
         ');\n'
+        'export const FORECAST_IDS = Object.freeze('
+        f'{json.dumps(forecast_ids, ensure_ascii=False)}'
+        ');\n'
     )
     with open(FUNCTIONS_EVENT_ROUTES_FILE, 'w', encoding='utf-8') as fh:
         fh.write(content)
-    print(f"✅ Generated Pages event route map with {len(routes)} aliases")
+    print(f"✅ Generated Pages event route map with {len(routes)} aliases and {len(forecast_ids)} direction IDs")
 
 generate_event_route_map(events)

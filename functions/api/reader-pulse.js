@@ -1,6 +1,9 @@
+import { FORECAST_IDS } from '../event-routes.generated.js';
+
 const COOKIE_NAME = 'ea_reader_id';
 const ONE_YEAR_SECONDS = 60 * 60 * 24 * 365;
-const FORECAST_ID_PATTERN = /^[a-z0-9-]{1,80}$/;
+const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+const VALID_FORECAST_IDS = new Set(Array.isArray(FORECAST_IDS) ? FORECAST_IDS : []);
 
 function json(data, init = {}) {
   return new Response(JSON.stringify(data), {
@@ -16,23 +19,26 @@ function json(data, init = {}) {
 function readCookie(cookieHeader, name) {
   if (!cookieHeader) return '';
   const match = cookieHeader.match(new RegExp(`(?:^|; )${name}=([^;]+)`));
-  return match ? decodeURIComponent(match[1]) : '';
+  if (!match) return '';
+  try {
+    const value = decodeURIComponent(match[1]).trim();
+    return UUID_PATTERN.test(value) ? value : '';
+  } catch {
+    return '';
+  }
 }
 
 function buildCookie(readerId) {
   return `${COOKIE_NAME}=${encodeURIComponent(readerId)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${ONE_YEAR_SECONDS}; Secure`;
 }
 
-function normalizeForecastId(value) {
-  const forecastId = String(value || '').trim();
-  if (!forecastId) return '';
-  return FORECAST_ID_PATTERN.test(forecastId) ? forecastId : '';
-}
-
-async function ensureReaderId(request) {
+function resolveReaderId(request, { issueIfMissing }) {
   const existing = readCookie(request.headers.get('Cookie'), COOKIE_NAME);
   if (existing) {
     return { readerId: existing, setCookie: '' };
+  }
+  if (!issueIfMissing) {
+    return { readerId: '', setCookie: '' };
   }
   const readerId = crypto.randomUUID();
   return {
@@ -42,11 +48,14 @@ async function ensureReaderId(request) {
 }
 
 async function readSelectedForecastId(db, readerId) {
+  if (!readerId) return '';
   const result = await db
     .prepare('SELECT forecast_id FROM reader_pulse_votes WHERE reader_id = ? LIMIT 1')
     .bind(readerId)
     .first();
-  return typeof result?.forecast_id === 'string' ? result.forecast_id : '';
+  return typeof result?.forecast_id === 'string' && VALID_FORECAST_IDS.has(result.forecast_id)
+    ? result.forecast_id
+    : '';
 }
 
 async function readSelectionCounts(db) {
@@ -61,11 +70,12 @@ async function readSelectionCounts(db) {
   return Object.fromEntries(
     (result?.results || [])
       .map((row) => [row.forecast_id, Number(row.total || 0)])
-      .filter(([forecastId, total]) => forecastId && total > 0)
+      .filter(([forecastId, total]) => VALID_FORECAST_IDS.has(forecastId) && total > 0)
   );
 }
 
 async function writeSelection(db, readerId, forecastId) {
+  if (!readerId) return;
   if (!forecastId) {
     await db
       .prepare('DELETE FROM reader_pulse_votes WHERE reader_id = ?')
@@ -92,11 +102,20 @@ async function handleReaderPulse(context, { allowWrite }) {
     return json({ error: 'Missing READER_PULSE_DB binding.' }, { status: 500 });
   }
 
-  const { readerId, setCookie } = await ensureReaderId(context.request);
-
+  let forecastId = '';
   if (allowWrite) {
     const body = await context.request.json().catch(() => ({}));
-    const forecastId = normalizeForecastId(body?.forecastId);
+    forecastId = String(body?.forecastId || '').trim();
+    if (forecastId && !VALID_FORECAST_IDS.has(forecastId)) {
+      return json({ error: 'Unknown forecastId.' }, { status: 400 });
+    }
+  }
+
+  const { readerId, setCookie } = resolveReaderId(context.request, {
+    issueIfMissing: Boolean(allowWrite && forecastId)
+  });
+
+  if (allowWrite) {
     await writeSelection(db, readerId, forecastId);
   }
 

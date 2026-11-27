@@ -4,6 +4,8 @@
 
 ## 1. 开始前
 
+接手和任务认领先按 [AGENTS.md](../../AGENTS.md) 与 [当前工作清单](WORK-QUEUE.md) 执行。清单负责“现在做什么”，本文负责“怎么做”；二者都不替代用户授权、真实批准或编辑规则。新批次完成/阻断/交接后同步清单，历史 run 不作调度队列。
+
 1. 确认范围：完整扫查 full、定向复核 targeted、历史回溯 backfill；明确是否允许写 canonical、是否允许发布。
 2. 检查工作区，记录 Git 完整 SHA、UTC 日期窗、证据截止日、操作者、模型和提示词版本。
 3. 新 run 写 `governance/runs/{runId}.json`。旧 `data/screening_log.json`、`data/possible_directions_screening_log.json` 是冻结的历史日志，不追加新格式。

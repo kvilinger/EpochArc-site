@@ -132,7 +132,7 @@
           </div>
           <div class="evidence-item">
             <span class="label" data-zh="影响指数" data-en="Impact Index">影响指数</span>
-            <span class="val">{{IMPACT_INDEX}}/10</span>
+            <span class="val">{{IMPACT_INDEX_LABEL}}</span>
           </div>
         </div>
         <ul class="source-list">
@@ -149,7 +149,7 @@
         <section class="rail-card">
           <h2 class="rail-card-title" data-zh="节点概览" data-en="Event overview">节点概览</h2>
           <div class="event-meta-row">
-            <span class="category-badge {{PRIMARY_CAT}}">{{PRIMARY_CAT_NAME}}</span>
+            <span class="category-badge {{PRIMARY_CAT}}" data-zh="{{PRIMARY_CAT_NAME_ZH}}" data-en="{{PRIMARY_CAT_NAME}}">{{PRIMARY_CAT_NAME}}</span>
             {{SECONDARY_CAT_HTML}}
           </div>
           <dl class="rail-facts">
@@ -157,7 +157,7 @@
             <div><dt data-zh="重要度" data-en="Significance">重要度</dt><dd>L{{SIGNIFICANCE}}</dd></div>
             <div><dt data-zh="分类" data-en="Category">分类</dt><dd>{{CATEGORIES}}</dd></div>
             <div><dt data-zh="共识度" data-en="Consensus">共识度</dt><dd>{{CONSENSUS}}</dd></div>
-            <div><dt data-zh="影响指数" data-en="Impact index">影响指数</dt><dd>{{IMPACT_INDEX}} / 10</dd></div>
+            <div><dt data-zh="影响指数" data-en="Impact index">影响指数</dt><dd>{{IMPACT_INDEX_LABEL}}</dd></div>
           </dl>
         </section>
         <section class="rail-card rail-toc-card">
@@ -168,7 +168,7 @@
             <a href="#event-claims" data-zh="关键结论" data-en="Key findings">关键结论</a>
             <a href="#event-impact" data-zh="影响评估" data-en="Impact assessment">影响评估</a>
             <a href="#event-evidence" data-zh="共识度与来源" data-en="Consensus &amp; sources">共识度与来源</a>
-            <a href="#event-related" data-zh="关联事件" data-en="Related events">关联事件</a>
+            {{RELATED_TOC_LINK}}
           </nav>
         </section>
       </aside>

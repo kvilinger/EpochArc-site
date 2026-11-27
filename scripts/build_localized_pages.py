@@ -12,6 +12,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 from xml.sax.saxutils import escape as xml_escape
+from html_safety import script_json
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -295,7 +296,12 @@ def rewrite_json_ld(markup: str, language: str, title: str, description: str) ->
             if "description" in payload:
                 payload["description"] = description
             payload["inLanguage"] = language
-        encoded = json.dumps(payload, ensure_ascii=False, indent=2).replace("</", "<\\/")
+            if language == "zh-Hans":
+                # The source schema holds English-only body/section; omitting optional
+                # fields is preferable to asserting English text is Chinese content.
+                payload.pop("articleBody", None)
+                payload.pop("articleSection", None)
+        encoded = script_json(payload, ensure_ascii=False, indent=2)
         return f"{match.group(1)}\n{encoded}\n{match.group(3)}"
 
     return pattern.sub(replace, markup)

@@ -2,8 +2,9 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
-import { EVENT_ROUTES } from '../functions/event-routes.generated.js';
+import { EVENT_ROUTES, FORECAST_IDS } from '../functions/event-routes.generated.js';
 import { onRequest } from '../functions/_middleware.js';
+import { onRequestGet as pulseGet, onRequestPost as pulsePost } from '../functions/api/reader-pulse.js';
 
 function requestUrl(url) {
   return onRequest({
@@ -107,4 +108,76 @@ test('generated event aliases and sitemap stay aligned with published events', (
       `<loc>https://epoch-arc\\.com/zh-hans/events/${event.slug}/</loc>`
     ));
   }
+});
+
+test('events_summary.json preserves consensusLevel, impactCount, and impactDimensions for homepage filters', () => {
+  const summary = JSON.parse(
+    readFileSync(new URL('../data/events_summary.json', import.meta.url), 'utf8')
+  );
+  assert.ok(summary.length >= 251);
+  for (const item of summary) {
+    assert.ok(['broad', 'debated', 'emerging'].includes(item.consensusLevel), `${item.id} missing consensusLevel`);
+    assert.ok(Number.isInteger(item.impactCount) && item.impactCount >= 0, `${item.id} missing impactCount`);
+    assert.ok(Array.isArray(item.impactDimensions), `${item.id} missing impactDimensions`);
+  }
+});
+
+test('reader-pulse GET does not set unsolicited cookies and POST rejects unknown forecastId', async () => {
+  const rows = new Map();
+  const mockDb = {
+    prepare(sql) {
+      return {
+        bind(...args) {
+          return {
+            async first() {
+              const id = rows.get(args[0]);
+              return id ? { forecast_id: id } : null;
+            },
+            async run() {
+              if (sql.includes('DELETE')) rows.delete(args[0]);
+              else rows.set(args[0], args[1]);
+              return {};
+            }
+          };
+        },
+        async all() {
+          const counts = {};
+          for (const v of rows.values()) counts[v] = (counts[v] || 0) + 1;
+          return { results: Object.entries(counts).map(([forecast_id, total]) => ({ forecast_id, total })) };
+        }
+      };
+    }
+  };
+
+  // Passive GET without cookie must NOT emit Set-Cookie
+  const getRes = await pulseGet({ request: new Request('https://epoch-arc.com/api/reader-pulse'), env: { READER_PULSE_DB: mockDb } });
+  assert.equal(getRes.status, 200);
+  assert.equal(getRes.headers.get('set-cookie'), null);
+
+  // POST with unknown forecastId must return 400
+  const badPost = await pulsePost({
+    request: new Request('https://epoch-arc.com/api/reader-pulse', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ forecastId: 'fake-stuffed-id' })
+    }),
+    env: { READER_PULSE_DB: mockDb }
+  });
+  assert.equal(badPost.status, 400);
+
+  // POST with valid forecastId issues UUID cookie and records vote
+  const validId = FORECAST_IDS[0];
+  const okPost = await pulsePost({
+    request: new Request('https://epoch-arc.com/api/reader-pulse', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ forecastId: validId })
+    }),
+    env: { READER_PULSE_DB: mockDb }
+  });
+  assert.equal(okPost.status, 200);
+  assert.match(okPost.headers.get('set-cookie') || '', /^ea_reader_id=[0-9a-f-]{36};/i);
+  const body = await okPost.json();
+  assert.equal(body.selectedForecastId, validId);
+  assert.equal(body.counts[validId], 1);
 });

@@ -2,6 +2,11 @@
 
 这里按职责归类，避免产品、数据模型和运营流程混在一起。
 
+## Agent 接手与任务
+
+- [AGENTS.md](../AGENTS.md)：接手顺序、认领与交接、权限及验收边界。
+- [WORK-QUEUE.md](workflow/WORK-QUEUE.md)：唯一当前待办索引、已完成发布、阻断和外部材料定位；先核对实际 Git/UTC，不把清单当授权。
+
 ## v2.4 权威入口
 
 - [EDITORIAL-STANDARD.md](workflow/EDITORIAL-STANDARD.md)：唯一规则总表、优先级与阶段边界。
@@ -27,6 +32,9 @@ v2.4 已被接受为生产规则；这不等于全量旧数据已完成 v2.4 事
 
 - [WORKFLOW.md](workflow/WORKFLOW.md)
   内容发现、候选初筛、确认搜索、人工审核和发布流程。
+
+- [IMPACT-AUDIT.md](workflow/IMPACT-AUDIT.md)
+  逐来源与五维影响审计、候选后果取舍、披露/事故日期归因及新增执行门禁。
 
 ## Product
 

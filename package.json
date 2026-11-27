@@ -1,14 +1,18 @@
 {
   "name": "epocharc-site",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "type": "module",
   "scripts": {
+    "build:data": "python3 scripts/build_events.py && python3 scripts/build_directions.py && python3 scripts/build_arcs.py && python3 scripts/build_feed.py",
+    "predev": "npm run build:data",
     "dev": "vite",
     "validate": "python3 scripts/validate_all.py",
+    "pretest:seo": "python3 -B -c \"import os,subprocess; (os.path.exists('sitemap.xml') and os.path.exists('functions/event-routes.generated.js') and os.path.exists('data/events.json')) or subprocess.run(['npm','run','build'],check=True)\"",
     "test:seo": "node --test tests/seo-routing.test.mjs",
+    "test:impact-ui": "node --test tests/impact-display.test.mjs",
     "test:editorial": "python3 -B -m unittest discover -s tests -p 'test_editorial*.py' -v",
-    "test": "npm run test:editorial && npm run test:seo",
-    "build": "npm run test:editorial && python3 scripts/validate_all.py && python3 scripts/build_events.py && node scripts/build_og_images.mjs && python3 scripts/build_directions.py && python3 scripts/build_arcs.py && python3 scripts/build_feed.py && vite build && python3 scripts/validate_build_assets.py && python3 scripts/build_localized_pages.py",
+    "test": "npm run test:editorial && npm run test:impact-ui && npm run test:seo",
+    "build": "npm run test:editorial && npm run test:impact-ui && python3 scripts/validate_all.py && python3 scripts/build_events.py && node scripts/build_og_images.mjs && python3 scripts/build_directions.py && python3 scripts/build_arcs.py && python3 scripts/build_feed.py && vite build && python3 scripts/validate_build_assets.py && python3 scripts/build_localized_pages.py",
     "preview": "vite preview"
   },
   "devDependencies": {
