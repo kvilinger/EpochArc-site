@@ -1,0 +1,133 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "openai-cisco-shirudo-2026",
+  "subjectDigest": "62ec512b706608ff91f15948347efcbee2948705919ea0c48004fabd4be2f4cf",
+  "inputsDigest": "c0e5ff14022db949e317604bfc8cd23f3b301999af500ec5177f34d0793afa88",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "openai-cisco-shirudo-20261123",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "openai-cisco-shirudo",
+    "action": "OpenAI and Cisco launch open-source Shirudo eBPF Linux runtime defense",
+    "stage": "available",
+    "dateBasis": "Dated 2026-11-23 per joint OpenAI and Cisco official launch announcements.",
+    "deduplicationReason": "New open-source Linux eBPF runtime defense project; distinct from NVIDIA Open Agent Safety Platform (2026-09-28).",
+    "comparedEventIds": [
+      "nvidia-open-agent-safety-platform-2026",
+      "openai-gpt6-cyber-restricted-launch-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Core action is launching an open-source defensive cybersecurity runtime practice for mitigating exploit windows."
+  },
+  "significance": {
+    "rationale": "L1 open-source defensive security tool launch; no unaffiliated production deployments documented within 3 days of launch.",
+    "whyNotHigher": "Under L2-SAFETY-PRACTICE, unaffiliated_production_organizations >= 2 is null as of Nov 26.",
+    "whyNotLower": "Verified joint Tier-1 open-source launch by OpenAI and Cisco with independent trade coverage.",
+    "comparisonEventIds": [
+      "nvidia-open-agent-safety-platform-2026",
+      "nvidia-osmo-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY-PRACTICE",
+        "criteria": {
+          "new_safety_practice": {
+            "value": true,
+            "rationale": "Introduces an open-source AI/eBPF runtime shield mechanism for temporary pre-patch Linux defense without restarts.",
+            "evidenceIds": [
+              "shirudo-q1",
+              "shirudo-q2"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "Only controlled vendor demonstration reported; no unaffiliated production deployments verified as of Nov 26.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Joint launch is confirmed; operational effectiveness and enterprise adoption remain unmeasured.",
+    "evidenceIds": [
+      "shirudo-q1",
+      "shirudo-q3"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No factual dispute regarding the open-source release.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "openai-cisco-shirudo-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "shirudo-q1",
+      "sourceId": "ea005-openai-shirudo",
+      "claimId": "openai-cisco-shirudo-2026-core",
+      "url": "https://openai.com/index/introducing-shirudo/",
+      "originId": "openai-cisco-shirudo-launch-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "OpenAI and Cisco are launching Shirudo, an open-source runtime that helps teams protect Linux systems while they roll out patches.",
+      "locator": "openai-shirudo.txt L17",
+      "artifact": "governance/evidence/2026-11-26/sources/openai-shirudo.txt",
+      "sha256": "39d132f3a9025b265d52f7baad670723cb074e29d8857f6ee993e1af0227013b"
+    },
+    {
+      "id": "shirudo-q2",
+      "sourceId": "ea005-cisco-shirudo",
+      "claimId": "openai-cisco-shirudo-2026-core",
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-and-openai-launch-shirudo-a-new-project-to-safeguard-agentic-ai.html",
+      "originId": "openai-cisco-shirudo-launch-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Shirudo, an open source project built on industry-leading eBPF, helps protect running Linux systems without a reboot while teams roll out a patch.",
+      "locator": "shirudo-cisco-newsroom.txt L13",
+      "artifact": "governance/evidence/2026-11-26/sources/shirudo-cisco-newsroom.txt",
+      "sha256": "b11fe9abf0f733a4ba7240344af3eb20cbf867878657ffbcef7e8a02fd6e06dd"
+    },
+    {
+      "id": "shirudo-q3",
+      "sourceId": "ea005-theregister-shirudo",
+      "claimId": "openai-cisco-shirudo-2026-core",
+      "url": "https://www.theregister.com/security/2026/11/24/cisco-and-openai-pitch-ebpf-kernel-plugins-as-the-way-to-tame-the-patchpocalypse/5311795",
+      "originId": "theregister-shirudo-analysis-20261124",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Cisco and OpenAI have released an open-source tool called Shirudo to implement compensating controls in Linux, potentially improving security for users who can’t quickly patch newly discovered software flaws.",
+      "locator": "shirudo-theregister.txt L27",
+      "artifact": "governance/evidence/2026-11-26/sources/shirudo-theregister.txt",
+      "sha256": "b0826cd4bbd960c92f2eb23e39207f036537ad3e306f8121323d20dd22f79f49"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

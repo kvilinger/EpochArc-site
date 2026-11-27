@@ -1,0 +1,27 @@
+Thinking Machines has released Inkling 2 Mini, an open weights looped transformer | Artificial Analysis
+Artificial Analysis
+K
+All articles
+November 20, 2026
+Thinking Machines has released Inkling 2 Mini, an open weights looped transformer
+See model page
+Thinking Machines has released Inkling 2 Mini at 20 on the Artificial Analysis Intelligence Index, an open weights looped transformer on the Pareto frontier for Intelligence vs. Active Parameters
+Inkling 2 Mini is a 26B total, 5.4B active parameter mixture-of-experts model. The 5.4B active parameter count includes three passes through its looped layers; it uses 3.1B unique weights per text token, and it is small enough to run on a MacBook or DGX Spark.
+It is released under an Apache 2.0 license, with text and image input and a 1M token context window.
+Inkling 2 Mini matches Qwen3.8 27B (xhigh) and Nanbeige4.3-33B on the Intelligence Index with ~5x and ~6x fewer active parameters, respectively.
+It is on the Pareto frontier for Intelligence vs. size on both total and active parameters.
+Inkling 2 Mini uses ~38% more output tokens than Qwen3.8 27B for the same Intelligence Index score, but ~2.8x less compute.
+Twelve of its 24 layers run three times per token, adding compute without adding output tokens. It averages ~152K output tokens per Intelligence Index task vs. ~110K for Qwen3.8 27B and ~158K for Nanbeige4.3-33B. On our compute proxy measure (active parameters × tokens), it sits on the Pareto frontier, using ~2.8x less compute than Qwen3.8 27B and ~5x less than Nanbeige4.3-33B.
+Inkling 2 Mini is ~6x cheaper and ~4x faster per task than Qwen3.8 27B.
+It costs $0.59 and takes 9.0 minutes per Intelligence Index task vs. $3.53 and 38.2 minutes for Qwen3.8 27B. GPT-6 Luna (max) scores 28 for $0.15 per task. Cost uses Thinking Machines' first-party pricing ($0.15/$0.50/$0.015 per 1M input/output/cache hit tokens).
+Full Intelligence Index evaluations breakdown:
+Read the latest
+Can language models drive a humanoid robot? Introducing AA-Robotics-Sim v0.1
+AA-Robotics-Sim v0.1 gives frontier language models control of a simulated Unitree G1 humanoid robot across ten household and industrial tasks. Today’s research preview of our simulation benchmark follows last month’s preview of AA-Robotics v0.1, our work with physical robot arms in our lab. In AA-Robotics-Sim v0.1, each model practices five episodes per task, keeps only the notes and code it wrote, and is then scored on ten new evaluation scenes with different rooms, lighting and task details.
+November 25, 2026
+Google continues to accelerate its release cadence with Gemini 4 Neon
+Google continues to accelerate its release cadence with Gemini 4 Neon, delivering a small Intelligence gain over Gemini 4 Carbon at a ~17% lower Cost per Task
+November 18, 2026
+OpenAI has the #2 model in the Intelligence Index with the release of GPT-6.2 Astra and GPT-6.2 Sol
+OpenAI’s release of GPT-6.2 Astra and GPT-6.2 Sol delivers the #2 model in the Artificial Analysis Intelligence Index and most of the Cost per Task Pareto frontier
+November 17, 2026

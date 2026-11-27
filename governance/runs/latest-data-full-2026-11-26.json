@@ -1,0 +1,1691 @@
+{
+  "policyVersion": "2.4",
+  "runId": "latest-data-full-2026-11-26",
+  "kind": "full",
+  "windowStart": "2026-11-17",
+  "windowEnd": "2026-11-26",
+  "evidenceCutoff": "2026-11-26",
+  "timezone": "UTC",
+  "baselineCommit": "bf0b2ca47d67df44d13bf645e32913fb49bb95b2",
+  "operator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "promptVersion": "20261126-ea005-full-discover-confirm-edit-v2",
+  "channels": [
+    {
+      "id": "hf-papers",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Ten dated daily_papers requests covering 2026-11-17 through 2026-11-26 UTC (392 papers total; Nov 21-22 weekend returned 0 as expected). Marked partial per DISC-02 because daily_papers is a ranked snapshot and Nov 26 is partial-day UTC.",
+      "reason": "Daily ranked paper feed does not exhaust arXiv submissions and 2026-11-26 capture is partial-day (15:08 UTC).",
+      "retryResult": "All 10 daily requests succeeded with HTTP 200; no retry needed.",
+      "attempts": [
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-17&limit=100",
+          "executedAt": "2026-11-26T15:07:57.079748+00:00",
+          "resultCount": 42,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-17.json",
+          "sha256": "15ea81a363ed96c294d4ac53e9d4485214c6a06123155ccdeae8ddccae4714f8"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-18&limit=100",
+          "executedAt": "2026-11-26T15:07:58.571739+00:00",
+          "resultCount": 39,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-18.json",
+          "sha256": "9d7a72ca9594e1df078165516bc9c671a93bb8171c31a595324979c80c62e49f"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-19&limit=100",
+          "executedAt": "2026-11-26T15:07:59.761138+00:00",
+          "resultCount": 52,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-19.json",
+          "sha256": "71f85eeb3c1c8c384e304216de8858b342852411947393c73d3aa140671261ff"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-20&limit=100",
+          "executedAt": "2026-11-26T15:08:01.119250+00:00",
+          "resultCount": 50,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-20.json",
+          "sha256": "80799f7a43f149f99d30e7eaec59a780e440e2412b8cc201ee6b2a235be9bc51"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-21&limit=100",
+          "executedAt": "2026-11-26T15:08:03.664408+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-21.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-22&limit=100",
+          "executedAt": "2026-11-26T15:08:04.785523+00:00",
+          "resultCount": 0,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-22.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-23&limit=100",
+          "executedAt": "2026-11-26T15:08:06.617050+00:00",
+          "resultCount": 26,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-23.json",
+          "sha256": "0bcacae9ddcc0c59fd172f7374246ef96c090f3d55da5cf5882d79c871c0d888"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-24&limit=100",
+          "executedAt": "2026-11-26T15:08:08.393778+00:00",
+          "resultCount": 73,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-24.json",
+          "sha256": "77cb7595257339c046f6913c53945dc79a9ee14926bf39b3567104b477d2364f"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-25&limit=100",
+          "executedAt": "2026-11-26T15:08:11.941819+00:00",
+          "resultCount": 59,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-25.json",
+          "sha256": "6d2cbca961953cc3ec0e442fe8f1b7b0ad45d97d3121171ef92b8869c02247db"
+        },
+        {
+          "query": "https://huggingface.co/api/daily_papers?date=2026-11-26&limit=100",
+          "executedAt": "2026-11-26T15:08:13.314488+00:00",
+          "resultCount": 51,
+          "artifact": "governance/evidence/2026-11-26/hf/hf-2026-11-26.json",
+          "sha256": "09cf2de615eb99288b1555772442fc2791ea05dd9ae405885a0ce6a67ac8aa6d"
+        }
+      ]
+    },
+    {
+      "id": "hacker-news",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Daily paginated Algolia search_by_date (query=AI, tags=story) from 2026-11-17 through 2026-11-26 UTC (1,920 story hits across 25 pages). Marked partial per DISC-02 because keyword query does not exhaust all HN stories and Nov 26 is partial-day UTC.",
+      "reason": "Algolia AI-keyword filter can miss stories without literal 'AI' in title/metadata, and 2026-11-26 is partial-day.",
+      "retryResult": "All 25 paginated requests returned HTTP 200; no retry needed.",
+      "attempts": [
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794873600%2Ccreated_at_i%3C1794960000&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:14.459380+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-17-page-0.json",
+          "sha256": "e590b7256e817851331440c108e7b339b04348eee8cf1fb0dfa8c2be950bf76f"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794873600%2Ccreated_at_i%3C1794960000&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:15.914488+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-17-page-1.json",
+          "sha256": "2e9c96cf7a68402772708e7dcf10d9c3bccd8694bb4a389f315675dca09f5042"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794873600%2Ccreated_at_i%3C1794960000&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-26T15:08:17.035484+00:00",
+          "resultCount": 47,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-17-page-2.json",
+          "sha256": "fca09d9b202e8e11f232d07bc1dbda435bcb3bddf5f98503f49c30c66d91596b"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794960000%2Ccreated_at_i%3C1795046400&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:19.081716+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-18-page-0.json",
+          "sha256": "a0f6bab6b275dab9195a24999b493219f2fe0a58d2dcb558d192207df776c197"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794960000%2Ccreated_at_i%3C1795046400&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:20.497087+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-18-page-1.json",
+          "sha256": "a3dffd15ca2b2155f5db1aae7b07366cff702a3af2eae32b54cd9a5264750985"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1794960000%2Ccreated_at_i%3C1795046400&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-26T15:08:21.656719+00:00",
+          "resultCount": 53,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-18-page-2.json",
+          "sha256": "2f72fbd347ffc8acda6c60f8cd971ea764763979a2b00cbfd4366dc629568aa1"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795046400%2Ccreated_at_i%3C1795132800&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:22.800788+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-19-page-0.json",
+          "sha256": "f31bacd473e1721181e58f11b5bf84993b3710cf1715b676135a6d82f3428ac5"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795046400%2Ccreated_at_i%3C1795132800&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:23.920135+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-19-page-1.json",
+          "sha256": "46ee8dda42372921a27185a04b8c0acd582708e9ff97c3ed16596c0e373481bc"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795046400%2Ccreated_at_i%3C1795132800&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-26T15:08:25.613028+00:00",
+          "resultCount": 30,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-19-page-2.json",
+          "sha256": "e5368ecd67e00fc7745368121b2580c6f2d8b5fb529e862bad3d1fc324f779e9"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795132800%2Ccreated_at_i%3C1795219200&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:26.352715+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-20-page-0.json",
+          "sha256": "a6bf2536f98fd3f559e005fde2fe38236639307eaf1dc0c24ef744175b9a2cde"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795132800%2Ccreated_at_i%3C1795219200&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:28.747174+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-20-page-1.json",
+          "sha256": "54cc8d9245d46190b09eb3da488db8cca40a8d5e24d9eead03b1821aa49abe15"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795132800%2Ccreated_at_i%3C1795219200&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-26T15:08:30.014699+00:00",
+          "resultCount": 12,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-20-page-2.json",
+          "sha256": "be887e346adae2ddab6930caca9bc935ceffc9fa937785363bc022c44965ab23"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795219200%2Ccreated_at_i%3C1795305600&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:31.392737+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-21-page-0.json",
+          "sha256": "e794363841c8d24403de8c79e80b6293d95c73243da047755b0ee63c08922350"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795219200%2Ccreated_at_i%3C1795305600&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:32.956943+00:00",
+          "resultCount": 33,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-21-page-1.json",
+          "sha256": "1d80c7228e44bd07f3871ed9a882e997ae7ddaaf4987ec4da394871a33c721d3"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795305600%2Ccreated_at_i%3C1795392000&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:33.963900+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-22-page-0.json",
+          "sha256": "0cf993d4ae247c40f9daf1df19a16dac3a41bf1d9b08dc4ed0fec1a637260647"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795305600%2Ccreated_at_i%3C1795392000&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:35.098660+00:00",
+          "resultCount": 42,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-22-page-1.json",
+          "sha256": "8d913fbe419c54cc738990869332d87d033ee30160f4d17fba2c63933afb1b80"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795392000%2Ccreated_at_i%3C1795478400&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:35.944904+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-23-page-0.json",
+          "sha256": "78499df3f3522d9ce30100a7dce38a4b91627208c4d1bd3979d814f9e3d5a347"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795392000%2Ccreated_at_i%3C1795478400&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:37.380922+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-23-page-1.json",
+          "sha256": "a3f39ff6e02f4b164c3ca192ae7732d520fa6b5ad1d234676cab91766b4c08cb"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795392000%2Ccreated_at_i%3C1795478400&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-26T15:08:38.507632+00:00",
+          "resultCount": 6,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-23-page-2.json",
+          "sha256": "376f751bd796847533bd350f5f4c8833a483a71af1eb44f3439c3f45ed934cc2"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795478400%2Ccreated_at_i%3C1795564800&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:39.264487+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-24-page-0.json",
+          "sha256": "997a1af3bff28c5eb1b38f73528165db03a38cbb1250fedef2957b9c869ba59d"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795478400%2Ccreated_at_i%3C1795564800&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:40.400966+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-24-page-1.json",
+          "sha256": "282d1c957e4ae70efb316450900d1932ad765db6f81cd574dabe2bc58e992779"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795478400%2Ccreated_at_i%3C1795564800&hitsPerPage=100&page=2",
+          "executedAt": "2026-11-26T15:08:41.495470+00:00",
+          "resultCount": 12,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-24-page-2.json",
+          "sha256": "891db6e2a91ab33e62950fecd41f21e688282569955bf477e315b8b73940f709"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795564800%2Ccreated_at_i%3C1795651200&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:42.129071+00:00",
+          "resultCount": 100,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-25-page-0.json",
+          "sha256": "49684aaba50cb902e137bc5b72e496d4bc4716097199280022a65075829e6461"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795564800%2Ccreated_at_i%3C1795651200&hitsPerPage=100&page=1",
+          "executedAt": "2026-11-26T15:08:44.891575+00:00",
+          "resultCount": 93,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-25-page-1.json",
+          "sha256": "3802e5b56a82540e1eccbb9c5d9a9e19b6b3fa420fa5b0aeefeb60f9f8a6d22c"
+        },
+        {
+          "query": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i%3E%3D1795651200%2Ccreated_at_i%3C1795737600&hitsPerPage=100&page=0",
+          "executedAt": "2026-11-26T15:08:45.713014+00:00",
+          "resultCount": 92,
+          "artifact": "governance/evidence/2026-11-26/hn/hn-ai-2026-11-26-page-0.json",
+          "sha256": "3b8f61df57b460f55137b4db7724e3ddbb68a2a1db3720651dcd9914d53871e5"
+        }
+      ]
+    },
+    {
+      "id": "reddit-search",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Two Brave Search API queries with freshness=2026-11-17to2026-11-26 (narrow subreddit query returned 1 result; broader site:reddit.com query returned 20 results). Search index is not exhaustive Reddit coverage.",
+      "reason": "Search engine indexing of Reddit is incomplete and freshness reflects index/crawl date rather than guaranteed post timestamp.",
+      "retryResult": "Broadened query after narrow multi-subreddit query returned only 1 result; broad query returned 20 results (HTTP 200).",
+      "attempts": [
+        {
+          "query": "brave:site:reddit.com/r/MachineLearning OR site:reddit.com/r/LocalLLaMA OR site:reddit.com/r/artificial AI [freshness=2026-11-17to2026-11-26]",
+          "executedAt": "2026-11-26T15:10:13.307687+00:00",
+          "resultCount": 1,
+          "artifact": "governance/evidence/2026-11-26/brave/brave-reddit-search.json",
+          "sha256": "be41246f060fdfa032e26c253086876fa27fddb3b3c668d94ef7d8b69e31ed15"
+        },
+        {
+          "query": "brave:site:reddit.com (Anthropic OR OpenAI OR Gemini OR DeepSeek OR NVIDIA) AI [freshness=2026-11-17to2026-11-26]",
+          "executedAt": "2026-11-26T15:10:15.586315+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-26/brave/brave-reddit-search-broad.json",
+          "sha256": "f220265bcdfe1e7d274ad8bfaf7e00effdfac52bc37d70b3e4fd04b5b4be15e1"
+        }
+      ]
+    },
+    {
+      "id": "x-search",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Brave Search API query for site:x.com / site:twitter.com with freshness=2026-11-17to2026-11-26 (20 results) plus supplementary web search. Search index does not guarantee real-time or complete X coverage.",
+      "reason": "Public web indexing of X/Twitter is partial and cannot verify engagement metrics.",
+      "retryResult": "HTTP 200 with 20 results; no retry needed.",
+      "attempts": [
+        {
+          "query": "brave:(site:x.com OR site:twitter.com) (OpenAI OR Anthropic OR DeepMind OR NVIDIA OR DeepSeek OR Qwen) [freshness=2026-11-17to2026-11-26]",
+          "executedAt": "2026-11-26T15:10:18.303811+00:00",
+          "resultCount": 20,
+          "artifact": "governance/evidence/2026-11-26/brave/brave-x-search.json",
+          "sha256": "b73e0f2eed4d64da8ed1f81fad6a05c74d25dd43dfb2c7f16914f8a10fa592d4"
+        }
+      ]
+    },
+    {
+      "id": "import-ai",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Fetched latest 4 complete issues via Gmail IMAP (scripts/check_mail.py import-ai --limit 4 --max-chars 0), covering Nov 2, Nov 9, Nov 16, and Nov 23 (Import AI #482); full untruncated text verified.",
+      "attempts": [
+        {
+          "query": "python3 scripts/check_mail.py import-ai --limit 4 --max-chars 0",
+          "executedAt": "2026-11-26T15:08:47.887828+00:00",
+          "resultCount": 4,
+          "artifact": "governance/evidence/2026-11-26/mail/import-ai-limit4.txt",
+          "sha256": "bd8db425dceafe66d1b667396a7656ec9bd8fb160e8d5e889460a2d410e1a549"
+        }
+      ]
+    },
+    {
+      "id": "the-batch",
+      "status": "complete",
+      "windowCovered": true,
+      "coverageNote": "Fetched latest 4 complete issues via Gmail IMAP (scripts/check_mail.py the-batch --limit 4 --max-chars 0), covering Oct 29, Nov 5, Nov 12, and Nov 19; full untruncated text verified. Note: Nov 26 weekly issue not yet arrived as of 15:08 UTC.",
+      "attempts": [
+        {
+          "query": "python3 scripts/check_mail.py the-batch --limit 4 --max-chars 0",
+          "executedAt": "2026-11-26T15:09:33.756118+00:00",
+          "resultCount": 4,
+          "artifact": "governance/evidence/2026-11-26/mail/the-batch-limit4.txt",
+          "sha256": "507e1a7f4170c4e1fcd34168fab40ad578110f4f1e5ce5d914d1a7ec1fb60fe9"
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [
+    {
+      "category": "capability",
+      "status": "partial",
+      "finding": "High activity: GPT-6.2 Astra & Sol (Nov 17), Gemini 4 Neon (Nov 18), Inkling 2 Mini (Nov 20), GLM-5.4 loop transformer (Nov 23), Microsoft MAI Code 2 & Ignite models (Nov 17), Tencent Hy4 Flash (Nov 17, direct fetch HTTP 567), OpenAI chip design (Nov 18) & protein design (Nov 24), Google DeepMind Humanity's First Exam (Nov 24), Architect Labs Frostbite (Nov 18), plus 392 HF daily papers."
+    },
+    {
+      "category": "product",
+      "status": "partial",
+      "finding": "Genie 4 in Project Genie (Nov 18) & Gemini API (Nov 19), Signal mobile OS AI-agent capture restrictions (Nov 20), Perplexity Time Machine API (Nov 25), Meta Muse Australia (Nov 17) & UK (Nov 24) rollouts, Google Stitch Loop (Nov 18), Google Gemini Tasks free tier (Nov 17)."
+    },
+    {
+      "category": "commerce",
+      "status": "partial",
+      "finding": "Major structural market events: Anthropic IPO priced at $83/sh (Nov 18), Nasdaq ANT debut (Nov 19), closing of $93.5B IPO + $26B concurrent private placement (Nov 20); NVIDIA Board reinstates Jensen Huang as CEO (Nov 23) after Q3 FY27 earnings (Nov 17); Google-Blue Origin Project Suncatcher launch partnership (Nov 19)."
+    },
+    {
+      "category": "governance",
+      "status": "partial",
+      "finding": "U.S. Commerce BIS Interim Final Rule restricting remote access to advanced AI chips & rescinding AI Diffusion Rule (Federal Register Nov 19); California Governor mandatory AI safety standards next steps (Nov 18); NVIDIA National Security & Export Control Oversight Committee (Nov 17); Lawyers' Committee lawsuit over AI school gun-detection false positive (Nov 17). Also noted Nov 12 Alliance for Secure AI lawsuit as out-of-window backfill."
+    },
+    {
+      "category": "safety",
+      "status": "partial",
+      "finding": "OpenRouter inference-provider data processing incidents disclosure (Nov 22); OpenAI & Cisco open-source Shirudo eBPF runtime defense (Nov 23); European Commission Nov 19 confirmation of Oct 22 AI-assisted cyber campaign; pre-IPO coalition open letter challenging Anthropic safety branding (Nov 18); ongoing agentic cyberattack disclosures (ARTEX/Cairn)."
+    },
+    {
+      "category": "society",
+      "status": "partial",
+      "finding": "Tidal bans AI-generated music (Nov 24); New York Times reportedly warns photographers against updating Photoshop over AI features (Nov 24); workplace/creator surveys & Australian copyright backlash; Nov 16 Reuters NewsGuild strike authorization & Gallup study noted as just before window."
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "anthropic-ipo-close-20261120",
+      "discoveryUrls": [
+        "https://www.anthropic.com/news/ipo-close",
+        "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Anthropic 官方交割公告直接可定位（HTTP 200 已留存）。",
+        "novelty": "与 11 月 10 日路演（anthropic-ipo-roadshow-2026）不同，为已完成的上市交割与同期配售阶段。",
+        "spillover": "直接影响公开市场投资者、主要芯片/云厂商及竞争实验室资本结构。",
+        "durability": "已完成上市与 7 家产业方配售，形成持续公开公司治理与资本安排，但长期市场影响仍在观察。",
+        "sourceQuality": "一手公司交割公告加 Reuters/NYT/Guardian 等独立财经媒体核实挂牌与交易情况。"
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'anthropic-ipo-2026' after four-layer confirmation.",
+      "eventId": "anthropic-ipo-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Anthropic IPO pricing closing Nasdaq ANT November 2026",
+          "finding": "Confirmed Nov 18 $83 pricing, Nov 19 Nasdaq ANT trading start, and Nov 20 closing of 1.127B Class A shares (~$93.5B) + 313.25M Class N shares (~$26B) to 7 chip/cloud partners.",
+          "evidenceIds": [
+            "anthropic-ipo-2026-q1",
+            "anthropic-ipo-2026-q2",
+            "anthropic-ipo-2026-q3"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Anthropic IPO market impact Nasdaq selloff ANT trading November 2026",
+          "finding": "Confirmed ~$119.5B completed raise and immediate volatile Nasdaq trading including 9% day-2 decline amid wider AI equity sell-off.",
+          "evidenceIds": [
+            "anthropic-ipo-2026-q4b",
+            "anthropic-ipo-2026-q4"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Anthropic IPO valuation analysis November 2026",
+          "finding": "Guardian and Crypto Briefing independently analyzed post-debut trading and valuation pressure.",
+          "evidenceIds": [
+            "anthropic-ipo-2026-q4",
+            "anthropic-ipo-2026-q5"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Anthropic IPO criticism stock below $83 safety letter November 2026",
+          "finding": "ANT fell below $83 IPO price ($75.61-$76.60) by Nov 24 amid growth/spending concerns; note BusinessWire pre-IPO safety coalition letter returned HTTP 403 (not bypassed).",
+          "evidenceIds": [
+            "anthropic-ipo-2026-q5"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "nvidia-reinstates-jensen-huang-20261123",
+      "discoveryUrls": [
+        "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "NVIDIA Newsroom 11 月 23 日官方公告已直接抓取留存（HTTP 200）。",
+        "novelty": "在 11 月 12 日辞职与临时 CEO 交接（nvidia-ceo-transition-2026）后仅 11 天的实质公司治理逆转。",
+        "spillover": "影响半导体供应链、云客户、公开市场投资者与公司治理监督机制。",
+        "durability": "实质恢复最高管理层职务并伴随董事会新设监督委员会，后续执行仍待观察。",
+        "sourceQuality": "一手官方新闻稿并获多家独立财经与科技媒体报道。"
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'nvidia-jensen-huang-reinstatement-2026' after four-layer confirmation.",
+      "eventId": "nvidia-jensen-huang-reinstatement-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "NVIDIA Board reinstates Jensen Huang November 23 2026",
+          "finding": "Official NVIDIA release confirms unanimous board vote reinstating Huang effective Nov 23, 2026.",
+          "evidenceIds": [
+            "nvidia-huang-q1"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "NVIDIA stock reaction Jensen Huang reinstated November 23 2026",
+          "finding": "CNBC verified NVDA shares closed up 31% on Nov 23.",
+          "evidenceIds": [
+            "nvidia-huang-q2"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "NVIDIA board reversal governance criticism NBC News November 2026",
+          "finding": "NBC News independently reported Yale governance scholar Jeff Sonnenfeld's criticism and congressional/AG oversight.",
+          "evidenceIds": [
+            "nvidia-huang-q2",
+            "nvidia-huang-q4"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "NVIDIA Jensen Huang reinstatement governance criticism investigation",
+          "finding": "Board inquiry remains unfinished and White House involvement drew corporate-governance criticism.",
+          "evidenceIds": [
+            "nvidia-huang-q3",
+            "nvidia-huang-q4"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "us-bis-remote-access-ai-chips-rule-20261119",
+      "discoveryUrls": [
+        "https://sanctionsnews.bakermckenzie.com/bis-restricts-remote-access-to-advanced-ai-chips-and-formally-rescinds-the-ai-diffusion-rule/",
+        "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "已定位至 2026-11-19《联邦公报》91 FR 74970（Docket 261116-0005, RIN 0694-AK50），待 Confirm 阶段抓取联邦公报一手全文。",
+        "novelty": "首次以临时最终规则监管第三国云端远程算力访问并正式撤销旧 AI Diffusion Rule，属新法规生效动作。",
+        "spillover": "直接约束云服务商、海外数据中心运营方、芯片供应链与跨国 AI 开发者。",
+        "durability": "属即期生效的联邦法规（60 天公众评议至 2027-01-19），具备制度约束力。",
+        "sourceQuality": "联邦公报规则索引加 Baker McKenzie、Akin Gump、Simpson Thacher、Fenwick、NPR 等多方独立律所与媒体分析。"
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'us-bis-remote-access-ai-chips-rule-2026' after four-layer confirmation.",
+      "eventId": "us-bis-remote-access-ai-chips-rule-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Federal Register 91 FR 74970 Addressing Remote Access to Advanced Semiconductors",
+          "finding": "Official Federal Register document 2026-23529 confirms effective date Nov 19, 2026, EAR § 744.24, five diversion-risk destinations, and AI Diffusion Rule rescission.",
+          "evidenceIds": [
+            "bis-remote-q1",
+            "bis-remote-q2",
+            "bis-remote-q3",
+            "bis-remote-q6"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "BIS remote access rule compliance impact Baker McKenzie Gibson Dunn",
+          "finding": "Both independent law firms confirm immediate binding compliance impact with no delayed compliance date across chip exporters and overseas data centers.",
+          "evidenceIds": [
+            "bis-remote-q4",
+            "bis-remote-q5"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "BIS interim final rule legal analysis November 2026",
+          "finding": "Baker McKenzie and Gibson Dunn published detailed independent legal analyses (Nov 18) of § 744.24 and AI Diffusion rescission.",
+          "evidenceIds": [
+            "bis-remote-q4",
+            "bis-remote-q5"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "BIS remote access rule factual dispute litigation November 2026",
+          "finding": "No factual dispute over enactment or immediate effective date found as of Nov 26; comment period open for 60 days.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "openai-gpt-6-2-astra-sol-20261117",
+      "discoveryUrls": [
+        "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+        "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/cybersecurity-trusted-access-for-cyber"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "OpenAI 官方发布页与部署安全系统卡均已直接抓取（HTTP 200）。",
+        "novelty": "相较 9 月 GPT-6 Astra 与 GPT-6.1 Sol 的新一代模型迭代及 API/ChatGPT/Codex/Copilot 同步发布。",
+        "spillover": "面向开发者、企业工作流及安全可信访问用户等多类受众。",
+        "durability": "已进入生产 API 与主流开发工具集成，长期独立采用仍待观察。",
+        "sourceQuality": "一手官方公告与系统卡，并已有 SemiAnalysis GDPx 等独立基准测试报道。"
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'openai-gpt-6-2-astra-sol-2026' after four-layer confirmation.",
+      "eventId": "openai-gpt-6-2-astra-sol-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "OpenAI Introducing GPT-6.2 Astra and Sol System Card Nov 17 2026",
+          "finding": "Official blog and System Card verify Nov 17 release, API pricing, and Preparedness ratings.",
+          "evidenceIds": [
+            "gpt62-q1",
+            "gpt62-q2",
+            "gpt62-q3"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "GPT-6.2 Astra API pricing reduction Preparedness High Self-Improvement",
+          "finding": "Verified 20% API price cut vs GPT-6 Astra and first High AI Self-Improvement rating in an externally released OpenAI model.",
+          "evidenceIds": [
+            "gpt62-q2",
+            "gpt62-q3"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "GPT-6.2 Astra Sol independent benchmarks Latent Space",
+          "finding": "Latent Space aggregated early independent leaderboard results and pricing comparisons; 4sysops returned HTTP 403.",
+          "evidenceIds": [
+            "gpt62-q4"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "GPT-6.2 Astra mixed tester reviews disabled safeguards benchmarks",
+          "finding": "Early developers reported mixed real-world experience, and OpenAI disclosed headline cyber benchmarks disabled safeguards.",
+          "evidenceIds": [
+            "gpt62-q4",
+            "gpt62-q5"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "google-gemini-4-neon-20261118",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Google 官方博客 11 月 18 日原文已抓取（HTTP 200），delta-20261119 亦有留存。",
+        "novelty": "继 Gemini 4 Carbon（11 月 10 日）与 Hydrogen（11 月 12 日）后的新主力模型发布。",
+        "spillover": "覆盖开发者 API、企业 Gemini for Business、付费消费者及网络安全防御计划成员。",
+        "durability": "已上线 API 与多产品下拉选择，外部长期生产采用尚在积累。",
+        "sourceQuality": "一手公告加 Vals AI / SemiAnalysis 等独立基准数据。"
+      },
+      "total": 9,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'google-gemini-4-neon-2026' after four-layer confirmation.",
+      "eventId": "google-gemini-4-neon-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Google Introducing Gemini 4 Neon November 18 2026",
+          "finding": "Official Google post verifies Nov 18 tiered paid rollout across API, AI Studio, Business, Antigravity, and Pro/Ultra app tiers.",
+          "evidenceIds": [
+            "neon-q1"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Gemini 4 Neon Vals AI independent benchmark pricing November 2026",
+          "finding": "Vals AI independently ranked Neon #3/43 on Vals Index (69.23%) and #1 on Legal Research Bench; commentary highlighted $3/1M input pricing.",
+          "evidenceIds": [
+            "neon-q2",
+            "neon-q3",
+            "neon-q4"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Gemini 4 Neon review missing rivals price comparison",
+          "finding": "The NovTech independently analyzed price-performance vs Carbon and noted omitted rivals; DataCamp returned HTTP 403.",
+          "evidenceIds": [
+            "neon-q3"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Gemini 4 Neon factual controversy November 2026",
+          "finding": "No substantive factual dispute over availability; scorecard omissions noted as limitation.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "anthropic-ipo-pricing-20261118",
+      "discoveryUrls": [
+        "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Anthropic 官方定价公告已直接抓取（HTTP 200）。",
+        "novelty": "独立于 11 月 10 日路演的定价阶段；后续 11 月 20 日已交割。",
+        "spillover": "影响公开市场承销、二级市场定价与 AI 板块估值。",
+        "durability": "已直接触发 11 月 19 日上市交易与 20 日交割。",
+        "sourceQuality": "一手定价公告完整，独立媒体报道待 Confirm 阶段逐条归档。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "hold",
+      "reason": "Merged per user instruction into unified event 'anthropic-ipo-2026' (which captures Nov 18 $83 pricing, Nov 19 Nasdaq ANT debut, and Nov 20 closing with full primary evidence)."
+    },
+    {
+      "candidateId": "zai-glm-5-4-loop-transformer-20261123",
+      "discoveryUrls": [
+        "https://z.ai/blog/glm-5.4",
+        "https://news.ycombinator.com/item?id=50615000"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "官方博客 URL 明确（JS 渲染需浏览器或文本提取），且有多家独立科技媒体同步报道架构与参数细节。",
+        "novelty": "继 GLM-5.3 后首次引入循环层（Loop Transformer）架构的旗舰发布。",
+        "spillover": "当前主要面向开发者与 Z.ai/ZCode 订阅用户；API 与开源权重延后。",
+        "durability": "已在 Z.ai Chat/ZCode 上线，API 与开放权重待安全评估后发布。",
+        "sourceQuality": "官方博客加多家独立媒体与 HN 社区验证，需在 Confirm 阶段抓取官方正文。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'zai-glm-5-4-2026' after four-layer confirmation.",
+      "eventId": "zai-glm-5-4-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Z.ai GLM-5.4 Loop Transformer November 23 2026",
+          "finding": "Official Z.ai blog bundle and MLQ.ai confirm Nov 23 hosted launch of 750B 28-layer 2-pass Loop Transformer with deferred API and open weights.",
+          "evidenceIds": [
+            "glm54-q1",
+            "glm54-q2",
+            "glm54-q3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "GLM-5.4 independent benchmarks production adoption November 2026",
+          "finding": "No GLM-5.4 benchmark scores published at launch and API/open weights remain pending; no independently observed downstream impact yet (honest unscored L1, not measured zero).",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "GLM-5.4 Loop Transformer analysis MLQ TestingCatalog",
+          "finding": "MLQ.ai confirmed lack of published GLM-5.4 benchmarks; Technology.org returned HTTP 403.",
+          "evidenceIds": [
+            "glm54-q3",
+            "glm54-q4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "GLM-5.4 factual dispute November 2026",
+          "finding": "No factual dispute over hosted availability; missing benchmarks noted as limitation.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "openrouter-inference-provider-data-incidents-20261122",
+      "discoveryUrls": [
+        "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "OpenRouter 11 月 22 日官方安全披露页已抓取（HTTP 200）。",
+        "novelty": "独立的推理聚合供应链数据处理违规/日志泄露事件披露。",
+        "spillover": "影响通过聚合 API 调用模型的开发者、企业数据合规与上游推理供应商。",
+        "durability": "触发供应商下线/合规整改与隐私保证审计，长期行业影响待观察。",
+        "sourceQuality": "一手平台披露；Confirm 阶段需补充独立安全研究者（canary token 调查）报告。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'openrouter-inference-provider-incidents-2026' after four-layer confirmation.",
+      "eventId": "openrouter-inference-provider-incidents-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "OpenRouter Data Processing Incidents on Inference Providers November 22 2026",
+          "finding": "OpenRouter confirmed off-boarding 3 providers, removing 125 ZDR endpoints, and notifying affected users.",
+          "evidenceIds": [
+            "openrouter-q1",
+            "openrouter-q2",
+            "openrouter-q5"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Dragos AI supply chain canary tokens ongoing access OpenRouter ZDR revocation",
+          "finding": "Dragos confirmed stolen keys/URLs continue to be accessed months after initial incidents, and OpenRouter's Nov 22 action immediately stripped 125 ZDR endpoints and notified affected customers (strictly separating July–Oct historical breaches per IMPACT-AUDIT rule 6).",
+          "evidenceIds": [
+            "openrouter-q3",
+            "openrouter-q4",
+            "openrouter-q4b",
+            "openrouter-q5"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Dragos canary token methodology AI inference marketplace security",
+          "finding": "Dragos documented three distinct failure classes (compromises, marketplace reseller logging, privacy/ZDR failures).",
+          "evidenceIds": [
+            "openrouter-q3",
+            "openrouter-q4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "OpenRouter Dragos dispute November 2026",
+          "finding": "No factual dispute between OpenRouter and Dragos; OpenRouter clarified its own core infrastructure was not breached.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "openai-cisco-shirudo-20261123",
+      "discoveryUrls": [
+        "https://openai.com/index/introducing-shirudo/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "OpenAI 11 月 23 日官方公告已直接抓取（HTTP 200），Cisco 亦有同期官方公告。",
+        "novelty": "面向 AI 代理与高危漏洞场景的新开源 Linux 运行时防护工具发布。",
+        "spillover": "指向基础设施运维方、安全团队与企业开发者。",
+        "durability": "开源发布并依托 eBPF/Tetragon 生态，但无关联生产组织实际采用尚待验证。",
+        "sourceQuality": "OpenAI 与 Cisco 合作双方一手公告（同起源，Confirm 阶段需核验代码仓与独立安全分析）。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'openai-cisco-shirudo-2026' after four-layer confirmation.",
+      "eventId": "openai-cisco-shirudo-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "OpenAI Cisco Shirudo eBPF open source November 23 2026",
+          "finding": "OpenAI, Cisco, and The Register confirm Nov 23 open-source release of Shirudo eBPF Linux runtime.",
+          "evidenceIds": [
+            "shirudo-q1",
+            "shirudo-q2",
+            "shirudo-q3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "Shirudo production deployment enterprise adoption November 2026",
+          "finding": "Only controlled vendor demo cited (Java4Shell); no real-world third-party deployment outcomes observed yet (honest unscored L1).",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Shirudo eBPF analysis The Register The Hacker News",
+          "finding": "The Register independently contextualized Shirudo's eBPF kernel plug-ins amid surging AI-found CVEs.",
+          "evidenceIds": [
+            "shirudo-q3"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Shirudo controversy security flaw November 2026",
+          "finding": "No documented factual dispute or vulnerability in Shirudo as of Nov 26.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "eu-commission-ai-cyberattack-confirmation-20261119",
+      "discoveryUrls": [
+        "https://helpnetsecurity.com/",
+        "https://raillynews.com/2026/11/eu-commission-cybersecurity-breach-ai-powered-attack-exposed/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "已有多家安全媒体转述欧盟委员会发言人 11 月 19 日布鲁塞尔记者会原话；Confirm 需定位欧委会记者会文字实录/CERT-EU 一手记录。",
+        "novelty": "主要超国家政府机构首次正式确认遭 AI 生成/辅助网络攻击并下线部分内部应用。",
+        "spillover": "涉及公共机构安全、EU Academy 用户数据及欧洲关键基础设施防御。",
+        "durability": "引发 CERT-EU 与 EDPS 正式调查与系统防护升级。",
+        "sourceQuality": "POLITICO、Help Net Security、SecurityWeek、Infosecurity Magazine 等多家独立媒体核实。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'eu-commission-ai-cyberattack-disclosure-2026' after four-layer confirmation.",
+      "eventId": "eu-commission-ai-cyberattack-disclosure-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "POLITICO Europe European Commission cyberattack ARTEX Thomas Regnier November 19 2026",
+          "finding": "Two genuinely independent origins (POLITICO Europe leaked-mail/EU-official exclusive + Regnier's Nov 19 Brussels press briefing covered by The Record and DW) confirm the Oct 22 AI-assisted cyber campaign.",
+          "evidenceIds": [
+            "eucyber-q1",
+            "eucyber-q2",
+            "eucyber-q3"
+          ]
+        },
+        "impact": {
+          "status": "not_found",
+          "query": "European Commission cyberattack post-disclosure consequences after November 19 2026",
+          "finding": "Per IMPACT-AUDIT rule 6, October–mid-November Sysper/MyPMO outages preceded the Nov 19 disclosure and were largely restored beforehand; no separate post-Nov-19 downstream impact is scored on this disclosure node.",
+          "evidenceIds": []
+        },
+        "analysis": {
+          "status": "found",
+          "query": "POLITICO Brussels Playbook CERT-EU ARTEX Sysper MyPMO disruption",
+          "finding": "POLITICO detailed over 10 days of HR/reimbursement disruption and Corporate Management Board crisis response; TechXplore returned HTTP 403.",
+          "evidenceIds": [
+            "eucyber-q1",
+            "eucyber-q4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "European Commission AI cyberattack dispute November 2026",
+          "finding": "No factual dispute over the disclosure; spokesperson declined to name specific tools during briefing.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "microsoft-ignite-2026-mai-models-20261117",
+      "discoveryUrls": [
+        "https://microsoft.ai/news/microsoft-ignite-2026/",
+        "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+        "https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Microsoft AI 11 月 17 日两篇一手公告均已直接抓取（HTTP 200）。",
+        "novelty": "微软首次大规模推出含编码主力模型在内的七款自研 MAI 系列模型。",
+        "spillover": "面向企业云客户与软件开发者。",
+        "durability": "纳入微软 Ignite 商业模型目录，外部独立评测与采用仍待观察。",
+        "sourceQuality": "微软一手官方公告；Confirm 阶段需补充独立媒体与外部基准评测。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'microsoft-ignite-mai-models-2026' after four-layer confirmation.",
+      "eventId": "microsoft-ignite-mai-models-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Microsoft Ignite 2026 seven new MAI models MAI Code 2 Nov 17 2026",
+          "finding": "Official Microsoft AI posts and MLQ.ai confirm Nov 17 launch of seven MAI models.",
+          "evidenceIds": [
+            "msft-mai-q1",
+            "msft-mai-q2",
+            "msft-mai-q3"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "MAI Code 2 GitHub Copilot availability pricing November 2026",
+          "finding": "MAI Code 2 launched in GitHub Copilot paid plans alongside six companion MAI models.",
+          "evidenceIds": [
+            "msft-mai-q4",
+            "msft-mai-q5"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Microsoft MAI Code 2 independent coverage MLQ",
+          "finding": "MLQ.ai summarized the seven-model suite and noted benchmark/price comparisons are vendor-reported.",
+          "evidenceIds": [
+            "msft-mai-q3",
+            "msft-mai-q4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Microsoft Ignite MAI models dispute November 2026",
+          "finding": "No factual dispute found.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "thinkingmachines-inkling-2-mini-20261120",
+      "discoveryUrls": [
+        "https://thinkingmachines.ai/news/inkling-2-mini/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 2
+      },
+      "scoreReasons": {
+        "verifiability": "Thinking Machines Lab 11 月 20 日官方发布页已直接抓取（HTTP 200）。",
+        "novelty": "继 11 月 5 日 Inkling 2 Small 后发布的新型号，获 HN 高关注（1488 pts）。",
+        "spillover": "主要面向开发者与本地/开放生态用户，跨行业采用尚早。",
+        "durability": "发布新模型及可用渠道/本地生态适配。",
+        "sourceQuality": "一手官方公告加独立社区与本地部署工具（如 Unsloth）验证。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'thinkingmachines-inkling-2-mini-2026' after four-layer confirmation.",
+      "eventId": "thinkingmachines-inkling-2-mini-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Thinking Machines Lab Inkling 2 Mini open weights November 20 2026",
+          "finding": "Official post and model card verify Nov 20 release of 26.4B looped MoE with open weights on Hugging Face and Tinker access.",
+          "evidenceIds": [
+            "inkling-q1",
+            "inkling-q2",
+            "inkling-q3"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Inkling 2 Mini Artificial Analysis benchmark open weights",
+          "finding": "Artificial Analysis independently verified compute-proxy efficiency (~2.8x less compute than Qwen3.8 27B at same Intelligence Index score, using ~38% more output tokens) alongside immediate Hugging Face weight access.",
+          "evidenceIds": [
+            "inkling-q2",
+            "inkling-q3",
+            "inkling-q4"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Inkling 2 Mini Artificial Analysis looped transformer analysis",
+          "finding": "Artificial Analysis documented looped-layer token vs compute tradeoffs.",
+          "evidenceIds": [
+            "inkling-q4"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Inkling 2 Mini dispute November 2026",
+          "finding": "No factual dispute found.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "google-genie-4-availability-and-api-20261118",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+        "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Google 11 月 18 日与 19 日两篇官方博客均已抓取（HTTP 200）。",
+        "novelty": "从 10 月 27 日研究预览（genie-4-world-simulation-2026）进入实际面向订阅用户和 API 开发者开放的新阶段。",
+        "spillover": "面向消费者订阅用户（Ultra）与开发者/游戏及仿真工具构建者。",
+        "durability": "作为产品与 API 接入上线，真实生产采用仍待验证。",
+        "sourceQuality": "Google 一手官方公告；Confirm 阶段补充独立开发者实测与媒体核实。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'google-genie-4-availability-2026' after four-layer confirmation.",
+      "eventId": "google-genie-4-availability-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Google Genie 4 Project Genie Gemini API November 18 19 2026",
+          "finding": "Two official Google posts confirm Nov 18 AI Ultra Project Genie rollout and Nov 19 Gemini API / AI Studio developer availability.",
+          "evidenceIds": [
+            "genie4-q1",
+            "genie4-q2"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Genie 4 Gemini API paid developer access pricing",
+          "finding": "Confirmed transition from research preview to paid API (~$0.10/sec streamed video reported) and Ultra subscriber access.",
+          "evidenceIds": [
+            "genie4-q4",
+            "genie4-q3"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Genie 4 API developer review TestingCatalog",
+          "finding": "TestingCatalog independently reported Gemini API Interactions endpoint and paid-tier pricing.",
+          "evidenceIds": [
+            "genie4-q3"
+          ]
+        },
+        "controversy": {
+          "status": "not_found",
+          "query": "Genie 4 launch controversy November 2026",
+          "finding": "No factual dispute found.",
+          "evidenceIds": []
+        }
+      }
+    },
+    {
+      "candidateId": "signal-restricts-mobile-os-ai-agents-20261120",
+      "discoveryUrls": [
+        "https://signal.org/blog/protecting-your-privacy/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Signal 官方博客已直接抓取（HTTP 200）；Confirm 需从正文核实精确发布日。",
+        "novelty": "继航空公司限制网页代理后，主流端到端加密通讯应用首次针对 OS 级 AI 代理实施反抓取防御。",
+        "spillover": "同时涉及普通消费者隐私保护与操作系统/AI 代理开发者权限边界。",
+        "durability": "属具体客户端隐私防护变更，后续行业效仿情况待观察。",
+        "sourceQuality": "Signal 一手官方博客；Confirm 阶段核对独立安全媒体报道与版本发布说明。"
+      },
+      "total": 8,
+      "priority": "confirm",
+      "decision": "new",
+      "reason": "Selected as new reviewed-state isolated event 'signal-mobile-ai-agent-restrictions-2026' after four-layer confirmation.",
+      "eventId": "signal-mobile-ai-agent-restrictions-2026",
+      "confirmation": {
+        "fact": {
+          "status": "found",
+          "query": "Signal blocks mobile screenshots OS AI agents November 20 2026",
+          "finding": "Signal blog (Nov 20), TechCrunch, and The Hacker News confirm default screenshot blocking on iOS 27 and Android against OS AI agents.",
+          "evidenceIds": [
+            "signal-q1",
+            "signal-q2",
+            "signal-q4"
+          ]
+        },
+        "impact": {
+          "status": "found",
+          "query": "Signal mobile screenshot block user privacy impact",
+          "finding": "Confirmed default mobile screen-capture protection reducing OS AI agent exposure, with opt-out setting and usability tradeoff.",
+          "evidenceIds": [
+            "signal-q2",
+            "signal-q4"
+          ]
+        },
+        "analysis": {
+          "status": "found",
+          "query": "Signal mobile AI agent restrictions TechCrunch Hacker News",
+          "finding": "TechCrunch and The Hacker News corroborated the scope and incomplete-protection caveats.",
+          "evidenceIds": [
+            "signal-q3",
+            "signal-q4"
+          ]
+        },
+        "controversy": {
+          "status": "found",
+          "query": "Signal Apple Google Microsoft OS AI agents criticism incomplete workaround",
+          "finding": "Meredith Whittaker called OS AI agents an 'existential threat' to privacy and documented Android vendor and macOS Siri AI gaps in Signal's post.",
+          "evidenceIds": [
+            "signal-q3",
+            "signal-q3b",
+            "signal-q3c"
+          ]
+        }
+      }
+    },
+    {
+      "candidateId": "california-mandatory-ai-safety-next-steps-20261118",
+      "discoveryUrls": [
+        "https://www.gov.ca.gov/2026/11/18/governor-newsoms-nation-leading-ai-safety-framework-is-getting-even-stronger-as-california-releases-next-steps-on-mandatory-safety-standards-and-oversight/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "加州州长办公室 11 月 18 日官方公告已直接抓取（HTTP 200）。",
+        "novelty": "提出第三方审计师许可、紧急关停权与 48 小时事故上报等下一步监管建议。",
+        "spillover": "目前主要指向加州管辖下的前沿 AI 开发者与监管程序。",
+        "durability": "属政策建议与立法/规章下一步动作，尚未生效立法。",
+        "sourceQuality": "政府一手新闻稿；需在 Confirm 核实独立法律解读。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；注意属于 proposed 政策建议阶段，不可写成已生效强制法规。"
+    },
+    {
+      "candidateId": "nvidia-natsec-oversight-committee-20261117",
+      "discoveryUrls": [
+        "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "NVIDIA 11 月 17 日官方新闻稿已直接抓取（HTTP 200）。",
+        "novelty": "在独立调查与 CEO 震荡后新设立的董事会常设合规机构。",
+        "spillover": "主要涉及 NVIDIA 内部公司治理与出口管制合规。",
+        "durability": "属常设董事会委员会安排，实际监督效力待观察。",
+        "sourceQuality": "一手公司公告。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；可评估单独成条或作为 NVIDIA 治理危机/黄仁勋复职系列的关联上下文。"
+    },
+    {
+      "candidateId": "nvidia-q3-fy27-earnings-20261117",
+      "discoveryUrls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "NVIDIA 11 月 17 日官方财报新闻稿已抓取（HTTP 200）。",
+        "novelty": "新季度财务披露。",
+        "spillover": "影响资本市场与算力产业链预期。",
+        "durability": "单季财报属周期性财务报告，是否具结构性变化需结合细节判断。",
+        "sourceQuality": "一手财报公告。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；需对照 EpochArc 收录标准评估常规财报是否构成时间轴节点。"
+    },
+    {
+      "candidateId": "google-blue-origin-project-suncatcher-20261119",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Google 11 月 19 日官方博客已抓取（HTTP 200）。",
+        "novelty": "继 10 月 30 日轨道 TPU 原型响应（google-suncatcher-orbital-tpu-demo-2026）后首次签约重型发射合作。",
+        "spillover": "涉及轨道算力基础设施与航天发射合作方。",
+        "durability": "属发射合作协议/计划阶段，尚未完成实际发射。",
+        "sourceQuality": "Google 一手官方公告。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；需严守 IDENT-01，明确区分合作宣布与实际轨道部署。"
+    },
+    {
+      "candidateId": "openai-advancing-chip-design-20261118",
+      "discoveryUrls": [
+        "https://openai.com/index/advancing-chip-design-with-our-models/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "OpenAI 11 月 18 日官方博客已抓取（HTTP 200）。",
+        "novelty": "首次披露将前沿模型用于自研芯片物理设计流程的具体成果。",
+        "spillover": "指向半导体 EDA/芯片设计工程群体。",
+        "durability": "声称用于内部芯片工程流，缺乏独立同行评审与第三方复现。",
+        "sourceQuality": "单一厂商自述博客；Confirm 阶段须查明可审计指标与外部验证情况。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；严格按公司自述技术博客评级，不得将其当作已独立复现的硬件突破。"
+    },
+    {
+      "candidateId": "openai-gpt6-intrinsic-protein-design-20261124",
+      "discoveryUrls": [
+        "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "OpenAI 11 月 24 日官方研究页已抓取（HTTP 200）。",
+        "novelty": "首次公开披露 GPT-6 通用模型内在蛋白质设计能力与安全考量。",
+        "spillover": "指向生命科学研究者与生物安全治理领域。",
+        "durability": "属模型科学能力/生物安全评估披露，外部湿实验独立复现待查。",
+        "sourceQuality": "单一厂商发布，Confirm 阶段需核验是否附带论文、同行评审或生物安全外部评测。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；需核实是否包含湿实验结果及独立安全评估。"
+    },
+    {
+      "candidateId": "google-deepmind-humanitys-first-exam-20261124",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Google DeepMind 11 月 24 日官方博客已抓取（HTTP 200）。",
+        "novelty": "新发布的大模型基础可靠性评测基准。",
+        "spillover": "主要面向 AI 研究者与评测机构。",
+        "durability": "新基准刚发布，外部采用尚待观察。",
+        "sourceQuality": "一手研究团队公告。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；确认是否公开数据集/论文及是否有独立评测结果。"
+    },
+    {
+      "candidateId": "tidal-bans-ai-generated-music-20261124",
+      "discoveryUrls": [
+        "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 2,
+        "spillover": 2,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Variety 11 月 24 日报道已抓取（HTTP 200）；Confirm 阶段需定位 Tidal 官方政策原文。",
+        "novelty": "主流音乐流媒体平台出台明确的 AI 生成音乐禁令。",
+        "spillover": "影响音乐创作者/版权方、AI 音乐生成工具用户及流媒体听众。",
+        "durability": "平台政策规则变更，执行力度与行业连锁反应待观察。",
+        "sourceQuality": "单一主流娱乐财经媒体（Variety），待补一手平台公告与第二独立媒体。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；Confirm 阶段核实 Tidal 官方条款原文、禁令边界（全生成 vs 辅助）及生效日。"
+    },
+    {
+      "candidateId": "lawyers-committee-ai-gun-detection-suit-20261117",
+      "discoveryUrls": [
+        "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "原告方 Lawyers' Committee 11 月 17 日一手起诉公告已抓取（HTTP 200）。",
+        "novelty": "针对校园 AI 枪支检测误报与歧视执法后果的新诉讼立案。",
+        "spillover": "指向弱势群体/学生与公共教育/安防部署方。",
+        "durability": "刚进入立案程序，尚无司法裁决。",
+        "sourceQuality": "原告组织一手新闻稿；需补充起诉书原文与独立媒体核实。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；严格按 IDENT-01 将起诉作为程序事实，不推定违法。"
+    },
+    {
+      "candidateId": "perplexity-time-machine-api-20261125",
+      "discoveryUrls": [
+        "https://perplexity.ai/",
+        "https://unite.ai/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Perplexity 官方 API 文档/发布信息可定位，Confirm 需抓取精确一手公告 URL。",
+        "novelty": "为搜索与代理评测 API 引入 `snapshot_as_of` 时间截断防泄漏功能。",
+        "spillover": "主要面向 AI 评测、预测与金融回测开发者。",
+        "durability": "已作为正式 API 参数上线，外部采用尚待观察。",
+        "sourceQuality": "一手产品发布加科技媒体报道。"
+      },
+      "total": 7,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；Confirm 需抓取 Perplexity 一手发布页并评估历史重要度是否达到收录门槛。"
+    },
+    {
+      "candidateId": "architectlabs-frostbite-ai-cpu-20261118",
+      "discoveryUrls": [
+        "https://architectlabs.com/blog/frostbite"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Architect Labs 11 月 18 日官方博客已抓取（HTTP 200），HN 获 686 pts。",
+        "novelty": "声称端到端由 AI 设计并验证新 CPU 架构。",
+        "spillover": "指向芯片架构研究者与开发者。",
+        "durability": "尚无独立流片、第三方硬件复现或同行评审，仅见发布热度。",
+        "sourceQuality": "单一创业公司博客自述，高度依赖独立验证。"
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；必须严防营销夸大，Confirm 需核实是否有开源 RTL/仿真可复现及独立专家评审。"
+    },
+    {
+      "candidateId": "tencent-hy4-flash-20261117",
+      "discoveryUrls": [
+        "https://hy.tencent.ai/research/hy4-flash",
+        "https://news.ycombinator.com/item?id=50535000"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "官网直抓返回 HTTP 567（未绕过），需通过 Hugging Face 模型卡或官方镜像核实一手信息。",
+        "novelty": "继 11 月 4 日托管版 Hy4（tencent-hy4-hosted-release-2026）后发布 224B Flash 变体。",
+        "spillover": "主要指向本地与开源推理开发者。",
+        "durability": "社区已开始本地推理适配，权重许可与正式状态待一手核实。",
+        "sourceQuality": "目前仅 HN/X 社区信号，一手页面受 HTTP 567 阻断。"
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool（受阻待核）；需在 Confirm 阶段核实 Hugging Face 官方仓库与许可，不绕过官网 567。"
+    },
+    {
+      "candidateId": "meta-muse-uk-and-australia-rollouts-20261117",
+      "discoveryUrls": [
+        "https://about.fb.com/news/2026/11/muse-is-now-available-in-australia/",
+        "https://about.fb.com/news/2026/11/muse-now-available-in-the-uk-muse-does-the-work-you-stay-in-control/",
+        "https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Meta 官方新闻室三篇公告均已抓取（HTTP 200）。",
+        "novelty": "为 9 月 8 日美国上线（meta-muse-personal-agent-2026）的国际区域扩张与零售合作延伸。",
+        "spillover": "面向澳英普通消费者及合作零售商。",
+        "durability": "属实际区域上线安排，但长期采用待观察。",
+        "sourceQuality": "Meta 一手公告。"
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；需评估国际扩张是否单独立项或留作观察，不将合作公告当成已规模采用。"
+    },
+    {
+      "candidateId": "nyt-warns-photographers-photoshop-ai-20261124",
+      "discoveryUrls": [
+        "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features"
+      ],
+      "scores": {
+        "verifiability": 1,
+        "novelty": 2,
+        "spillover": 1,
+        "durability": 1,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "The Verge 11 月 24 日报道已抓取（HTTP 200），但系转述内部备忘录，尚缺 NYT 或 Adobe 公开一手声明。",
+        "novelty": "代表新闻摄影真实性准则与主流创意软件内嵌 AI 功能的直接冲突。",
+        "spillover": "主要指向新闻摄影记者与媒体机构。",
+        "durability": "反映编辑部工具合规限制，是否演变为行业普遍政策待观察。",
+        "sourceQuality": "单一二手科技媒体（The Verge），需补第二独立媒体或官方回应。"
+      },
+      "total": 6,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "中优 pool；Confirm 阶段核实 NYT/Adobe 公开回应及是否具备跨机构外溢。"
+    },
+    {
+      "candidateId": "google-stitch-loop-20261118",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 2,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Google Labs 11 月 18 日官方博客已抓取（HTTP 200）。",
+        "novelty": "新实验性设计/产品优化工具发布。",
+        "spillover": "目前仅限 Labs 工具发布，未见圈外影响材料。",
+        "durability": "属早期实验产品发布，无持续采用证据。",
+        "sourceQuality": "单一厂商官方博客。"
+      },
+      "total": 5,
+      "priority": "pool",
+      "decision": "hold",
+      "reason": "低位 pool（5 分）；暂留观察，除非 Confirm 确认具备明显产品工作流突破。"
+    },
+    {
+      "candidateId": "google-gemini-tasks-free-20261117",
+      "discoveryUrls": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Google 官方博客可定位（delta-20261119 已抓存）。",
+        "novelty": "属常规免费层功能下放，非独立重大产品阶段变化。",
+        "spillover": "未见圈外显著影响材料。",
+        "durability": "常规消费级产品迭代。",
+        "sourceQuality": "单一厂商公告。"
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "总分 4 分（skip）：常规免费功能扩展，优先留给更重要节点。"
+    },
+    {
+      "candidateId": "openai-perplexity-intelligence-essay-20261122",
+      "discoveryUrls": [
+        "https://openai.com/index/perplexity-and-intelligence/"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "OpenAI 11 月 22 日原文已抓取（HTTP 200）。",
+        "novelty": "观点与缩放指标讨论文章，并非模型/产品/监管离散事件。",
+        "spillover": "主要限于 AI 研究与社区讨论。",
+        "durability": "评论性质，无直接制度或采用变化。",
+        "sourceQuality": "单一公司研究博客。"
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "总分 4 分（skip）：研究观点文章，不作为独立时间轴事件。"
+    },
+    {
+      "candidateId": "anthropic-not-safe-coalition-letter-20261118",
+      "discoveryUrls": [
+        "https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO"
+      ],
+      "scores": {
+        "verifiability": 2,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 1
+      },
+      "scoreReasons": {
+        "verifiability": "Business Wire 11 月 18 日新闻稿可定位。",
+        "novelty": "IPO 前的倡导联署声明，适合作为 Anthropic IPO 节点的争议/反方背景，不构成独立重大变更。",
+        "spillover": "未见直接监管或市场约束后果。",
+        "durability": "一次性倡议声明。",
+        "sourceQuality": "单方倡议新闻稿。"
+      },
+      "total": 4,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "总分 4 分（skip）：留作 Anthropic IPO 事件 Confirm 阶段 controversy 层的参考来源，不单独建条。"
+    },
+    {
+      "candidateId": "deepseek-v4-1-pro-ascend-rumor-20261124",
+      "discoveryUrls": [
+        "https://x.com/leo114119/status/2125361169351553147"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "无任何 DeepSeek 或华为官方材料，也无可靠主流媒体核实。",
+        "novelty": "若属实为新动向，但目前仅为传闻。",
+        "spillover": "未核实，不计外溢。",
+        "durability": "仅社媒热度。",
+        "sourceQuality": "D 级单条社区传闻。"
+      },
+      "total": 1,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "总分 1 分（skip）：严守 EVID-03 与宁缺毋滥，D 级未核实传闻不得入库。"
+    },
+    {
+      "candidateId": "frontier-math-rsa-rumor-20261125",
+      "discoveryUrls": [
+        "https://x.com/AndrewCurran_/status/2125589468786909510"
+      ],
+      "scores": {
+        "verifiability": 0,
+        "novelty": 1,
+        "spillover": 0,
+        "durability": 0,
+        "sourceQuality": 0
+      },
+      "scoreReasons": {
+        "verifiability": "无公开论文、预印本或官方声明支撑该传闻。",
+        "novelty": "未核实传闻。",
+        "spillover": "未核实，不计外溢。",
+        "durability": "仅社区讨论。",
+        "sourceQuality": "D 级社区传闻。"
+      },
+      "total": 1,
+      "priority": "skip",
+      "decision": "skip",
+      "reason": "总分 1 分（skip）：无一手论文或可定位验证材料，坚决过滤。"
+    }
+  ]
+}

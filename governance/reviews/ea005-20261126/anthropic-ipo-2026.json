@@ -1,0 +1,190 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "anthropic-ipo-2026",
+  "subjectDigest": "81adad43e7ca1768d122d8addc1423f12c29756481329a83ed8cd3fe615b0c55",
+  "inputsDigest": "4ed346e84434d3cd0b56b01604ced8e17935e666fd8ae2225f665f3f5deeec55",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "anthropic-ipo-close-20261120",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "anthropic-ipo",
+    "action": "Anthropic closes $93.5B Nasdaq IPO and $26B concurrent private placement",
+    "stage": "completed",
+    "dateBasis": "Dated 2026-11-20 on official offering closing; merges Nov 18 $83 pricing and Nov 19 Nasdaq ANT trading debut per user scope confirmation.",
+    "deduplicationReason": "Distinct completed closing and public-trading milestone following the Nov 10 proposed roadshow (anthropic-ipo-roadshow-2026); Nov 18 pricing candidate merged into this event.",
+    "comparedEventIds": [
+      "anthropic-ipo-roadshow-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "Core action is completion of an initial public offering, Nasdaq listing, and concurrent strategic private placement."
+  },
+  "significance": {
+    "rationale": "L1 pending observation of external structural effects beyond offering parties and short-term trading volatility.",
+    "whyNotHigher": "Under L2-COMMERCE, financing/listing proceeds alone do not satisfy external_actors_affected >= 2 verified structural changes outside the offering transaction.",
+    "whyNotLower": "Official closing and Nasdaq listing are verified tier-1/tier-2 capital-market facts.",
+    "comparisonEventIds": [
+      "anthropic-ipo-roadshow-2026",
+      "crusoe-series-f-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": true,
+            "rationale": "Anthropic completed transition from private PBC to Nasdaq-listed public issuer (ANT) with closed public and private share sales on Nov 19–20, 2026.",
+            "evidenceIds": [
+              "anthropic-ipo-2026-q1",
+              "anthropic-ipo-2026-q4"
+            ]
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "Short-term equity volatility occurred, but durable structural changes to at least two unaffiliated external actors beyond offering counterparties are not yet independently established.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "economic_disruption",
+      "observation": "observed",
+      "evidenceIds": [
+        "anthropic-ipo-2026-q4b",
+        "anthropic-ipo-2026-q4"
+      ],
+      "observedSince": "2026-11-20",
+      "observedUntil": "2026-11-24",
+      "baseline": "Anthropic operated as a privately held PBC prior to Nov 19-20 listing and closing.",
+      "outcome": "Closed ~$119.5B combined public IPO and seven-partner Class N private placement; ANT shares traded actively on Nasdaq with immediate 2nd-day 9% drop and Nov 24 slip below $83.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "debated",
+    "reason": "Completion of the record raise is established, but market valuation and AI capex sustainability triggered immediate sell-offs and debate.",
+    "evidenceIds": [
+      "anthropic-ipo-2026-q4",
+      "anthropic-ipo-2026-q5"
+    ]
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "Independent financial reporting documents investor skepticism over AI spending and valuation as ANT slipped below its $83 IPO price by Nov 24.",
+    "evidenceIds": [
+      "anthropic-ipo-2026-q5"
+    ]
+  },
+  "coreFactClaimIds": [
+    "anthropic-ipo-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "anthropic-ipo-2026-q1",
+      "sourceId": "ea005-anthropic-ipo-close",
+      "claimId": "anthropic-ipo-2026-core",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "originId": "anthropic-ipo-close-announcement-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
+      "locator": "anthropic-ipo-close.txt L14",
+      "artifact": "governance/evidence/2026-11-26/sources/anthropic-ipo-close.txt",
+      "sha256": "1aa2dd57a62502956dee5e7686edb7441c1f275a35ff8e5e9be615e6f8ed7e81"
+    },
+    {
+      "id": "anthropic-ipo-2026-q2",
+      "sourceId": "ea005-anthropic-ipo-close",
+      "claimId": "anthropic-ipo-2026-core",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "originId": "anthropic-ipo-close-announcement-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "In addition to the shares of Class A common stock sold in the initial public offering, Anthropic closed the concurrent sale of an aggregate of 313,253,007 shares of Class N common stock to Advanced Micro Devices, Inc., Broadcom Inc., Google LLC, Micron Technology, Inc., Microsoft Corporation, NVIDIA Corporation, and TSMC Partners, Ltd. at the public offering price of $83.00 per share, in a private placement for an aggregate purchase price of approximately $26.0 billion.",
+      "locator": "anthropic-ipo-close.txt L16",
+      "artifact": "governance/evidence/2026-11-26/sources/anthropic-ipo-close.txt",
+      "sha256": "1aa2dd57a62502956dee5e7686edb7441c1f275a35ff8e5e9be615e6f8ed7e81"
+    },
+    {
+      "id": "anthropic-ipo-2026-q3",
+      "sourceId": "ea005-anthropic-ipo-pricing",
+      "claimId": "anthropic-ipo-2026-core",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "originId": "anthropic-ipo-pricing-announcement-20261118",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Today Anthropic, PBC priced its initial public offering of its Class A common stock at $83.00 per share.",
+      "locator": "anthropic-ipo-pricing.txt L14",
+      "artifact": "governance/evidence/2026-11-26/sources/anthropic-ipo-pricing.txt",
+      "sha256": "7ac66ac3122f28c4881397ae517c7b6be5113c37b5c37a19e640ec6770510dad"
+    },
+    {
+      "id": "anthropic-ipo-2026-q4",
+      "sourceId": "ea005-anthropic-ipo-guardian",
+      "claimId": "anthropic-ipo-2026-impact",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "originId": "guardian-anthropic-ipo-trading-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Shares in the frontier AI company behind the Claude chatbot, which floated in the US on Thursday, fell by 9% on Friday, ceding most of the gains from the biggest initial public offering in history.",
+      "locator": "anthropic-ipo-guardian-selloff.txt L15",
+      "artifact": "governance/evidence/2026-11-26/sources/anthropic-ipo-guardian-selloff.txt",
+      "sha256": "d9b03eefb90dbb9db338cf55eb196a2745cc8714ef361caa792235bd321051f7"
+    },
+    {
+      "id": "anthropic-ipo-2026-q4b",
+      "sourceId": "ea005-anthropic-ipo-close",
+      "claimId": "anthropic-ipo-2026-impact",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "originId": "anthropic-ipo-close-announcement-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Aggregate gross proceeds from the initial public offering, including the shares sold by the selling stockholders, and the concurrent private placement were approximately $119.5 billion, before deducting underwriting discounts and commissions and other offering expenses.",
+      "locator": "anthropic-ipo-close.txt L16",
+      "artifact": "governance/evidence/2026-11-26/sources/anthropic-ipo-close.txt",
+      "sha256": "1aa2dd57a62502956dee5e7686edb7441c1f275a35ff8e5e9be615e6f8ed7e81"
+    },
+    {
+      "id": "anthropic-ipo-2026-q5",
+      "sourceId": "ea005-anthropic-ipo-cryptobriefing",
+      "claimId": "anthropic-ipo-2026-limitation",
+      "url": "https://cryptobriefing.com/anthropic-stock-falls-below-ipo-price/",
+      "originId": "cryptobriefing-ant-post-ipo-trading-20261124",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "The Claude developer priced its IPO at $83 per share. By November 24, 2026, the stock had dipped to a range of $75.61 to $76.60, wiping out a first-day pop that once briefly pushed its valuation above $2 trillion.",
+      "locator": "anthropic-ipo-cryptobriefing-dip.txt L36",
+      "artifact": "governance/evidence/2026-11-26/sources/anthropic-ipo-cryptobriefing-dip.txt",
+      "sha256": "8a4ad032f33de8f6a7e50bca2aad190c8e31ab96bc3fe19ad776cac416003261"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

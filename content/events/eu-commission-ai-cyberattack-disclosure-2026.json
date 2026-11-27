@@ -1,0 +1,114 @@
+{
+  "id": "eu-commission-ai-cyberattack-disclosure-2026",
+  "slug": "eu-commission-ai-cyberattack-disclosure-2026",
+  "date": "2026-11-19",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-19",
+    "zhHans": "2026年11月19日"
+  },
+  "title": {
+    "en": "European Commission publicly confirms October AI-assisted cyberattack",
+    "zhHans": "欧盟委员会公开确认 10 月曾遭 AI 辅助网络攻击"
+  },
+  "searchSummary": {
+    "en": "On November 19, 2026, following a POLITICO Europe exclusive citing EU officials and a leaked crisis email, European Commission spokesperson Thomas Regnier publicly confirmed an 'AI-generated cyber campaign' first detected October 22.",
+    "zhHans": "2026 年 11 月 19 日，在 POLITICO Europe 援引欧盟官员及泄露危机邮件独家披露后，欧盟委员会发言人 Thomas Regnier 公开确认该机构曾于 10 月 22 日检测到一场“AI 生成的网络攻击行动”。"
+  },
+  "summary": {
+    "en": "On November 19, 2026, European Commission spokesperson Thomas Regnier publicly confirmed—following a POLITICO Europe exclusive citing EU officials and a leaked Corporate Management Board email—that the Commission had been targeted by an 'AI-generated cyber campaign' first detected on October 22 involving a publicly available AI tool. POLITICO reported that CERT-EU identified the attackers' use of ARTEX and that HR and medical reimbursement systems (Sysper and MyPMO) had been disrupted for over 10 days before largely returning online earlier that week, while Regnier stated investigators had found no evidence of a staff-wide data breach as CERT-EU and EDPS inquiries continued.",
+    "zhHans": "2026 年 11 月 19 日，在 POLITICO Europe 援引欧盟官员与泄露的企业管理委员会内部邮件独家报道后，欧盟委员会发言人 Thomas Regnier 公开确认该机构曾遭一场使用公开可得 AI 工具的“AI 生成的网络攻击行动”，最早于 10 月 22 日被发现。POLITICO 报道称 CERT-EU 识别出攻击者使用了 ARTEX，且人事与医疗报销系统（Sysper 与 MyPMO）一度受扰超过 10 天并于本周早些时候基本恢复；Regnier 则表示调查尚未发现波及全体职员的数据泄露，CERT-EU 与欧洲数据保护监督机构（EDPS）的调查仍在进行中。"
+  },
+  "narrative": {
+    "en": "Deutsche Welle noted this was the first time the European Union publicly reported an AI-assisted cyberattack against the bloc's executive body. While POLITICO's independent reporting linked the intrusion to ARTEX and detailed prior Sysper/MyPMO outages, Regnier declined at the November 19 briefing to officially name the tool or attribute the perpetrator. Because the service disruptions occurred earlier in October and November and had largely been restored prior to the November 19 public confirmation, this disclosure node records no separate post-disclosure impact score pending formal CERT-EU findings.",
+    "zhHans": "德国之声指出，这是欧盟首次公开披露针对其执行机构的 AI 辅助网络攻击。尽管 POLITICO 的独立调查将攻击指向 ARTEX 并披露了此前 Sysper/MyPMO 中断情况，但 Regnier 在 11 月 19 日记者会上拒绝正式点名具体工具或归因攻击者。由于相关服务中断主要发生于 10 月下旬至 11 月中旬且在 11 月 19 日公开确认前已基本恢复，本披露节点按规则不把此前系统中断计为披露日的新增影响，静待 CERT-EU 正式结案报告。"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "eu-commission-ai-cyberattack-disclosure-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 19, 2026, corroborated independently by POLITICO Europe's EU-official/leaked-email investigation and Thomas Regnier's Brussels press briefing, the European Commission publicly confirmed an October 22 AI-assisted cyber campaign targeting Commission systems.",
+        "zhHans": "2026 年 11 月 19 日，经 POLITICO Europe 援引欧盟官员与内部邮件的独家调查及发言人 Thomas Regnier 布鲁塞尔简报两套独立信源印证，欧盟委员会公开确认其系统于 10 月 22 日遭 AI 辅助网络攻击。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-politico-eu-cyber",
+        "ea005-therecord-eu-cyber",
+        "ea005-dw-eu-cyber"
+      ]
+    },
+    {
+      "id": "eu-commission-ai-cyberattack-disclosure-2026-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Sysper and MyPMO disruptions lasted over 10 days prior to the November 19 disclosure and were restored earlier that week (with a brief Sysper crash on November 18), while official attribution and final data-impact scope remained open.",
+        "zhHans": "Sysper 与 MyPMO 中断持续逾 10 天且在 11 月 19 日公开确认前已于当周早些时候恢复（11 月 18 日 Sysper 曾短暂故障），官方归因与最终数据受影响范围尚未结案。"
+      },
+      "evidenceGrade": "C",
+      "sourceIds": [
+        "ea005-politico-eu-cyber"
+      ]
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "ea005-politico-eu-cyber",
+      "supports": [
+        "eu-commission-ai-cyberattack-disclosure-2026",
+        "eu-commission-ai-cyberattack-disclosure-2026-core",
+        "eu-commission-ai-cyberattack-disclosure-2026-limitation"
+      ]
+    },
+    {
+      "sourceId": "ea005-therecord-eu-cyber",
+      "supports": [
+        "eu-commission-ai-cyberattack-disclosure-2026",
+        "eu-commission-ai-cyberattack-disclosure-2026-core"
+      ]
+    },
+    {
+      "sourceId": "ea005-dw-eu-cyber",
+      "supports": [
+        "eu-commission-ai-cyberattack-disclosure-2026",
+        "eu-commission-ai-cyberattack-disclosure-2026-core"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "gtig-ai-threat-tracker-q4-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-26",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-26",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/ea005-20261126/eu-commission-ai-cyberattack-disclosure-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-11-26",
+        "changeType": "created",
+        "summary": "Created isolated EA-005 bilingual reviewed-state candidate from Nov 17-26 full discovery and four-layer Confirm evidence."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "correction",
+        "summary": "Applied all blocking and polish fixes from independent review session 0b5e4807-71c6-4d64-a6a7-325fbe77af19 (impactIndex formula, IMPACT-AUDIT rule 6 separation, EVID-01/02 bindings, LANG-01 parity, and source publication dates)."
+      }
+    ],
+    "publishedAt": "2026-11-27"
+  },
+  "impactIndex": 0
+}

@@ -1,0 +1,196 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "openai-gpt-6-2-astra-sol-2026",
+  "subjectDigest": "7e9c340d0db8f3029b6d3841f312532a7bb61147b4533bef28f659e03aee4323",
+  "inputsDigest": "34c9c7f1c43c3d9bc47488f3e6e0e77b40c133f9db7c5e8d9a99ea1b6c4d2476",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "openai-gpt-6-2-astra-sol-20261117",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "openai-gpt-6-2",
+    "action": "OpenAI releases GPT-6.2 Astra and Sol with lower API pricing and its first High AI Self-Improvement external rating",
+    "stage": "available",
+    "dateBasis": "Dated 2026-11-17 per OpenAI official announcement and System Card publication date.",
+    "deduplicationReason": "Distinct 6.2 generation release following GPT-6 Astra (2026-09-03) and GPT-6.1 Sol (2026-09-29).",
+    "comparedEventIds": [
+      "openai-gpt-6-astra-2026",
+      "openai-gpt-6-1-sol-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "capability",
+    "secondaryClaimId": "openai-gpt-6-2-astra-sol-2026-safety",
+    "reason": "Primary action is frontier model release (GPT-6.2 Astra and Sol); secondary 'safety' category is anchored by the System Card's Preparedness ratings including High for AI Self-Improvement."
+  },
+  "significance": {
+    "rationale": "L1 pending direct independent replication of previously infeasible tasks or verified unaffiliated production adoption.",
+    "whyNotHigher": "Under L2-CAPABILITY, previously_infeasible_task and direct independent_replication are null (secondary summaries cite benchmarks without directly captured primary replication audits).",
+    "whyNotLower": "Verified major frontier model release with direct primary System Card safety threshold changes.",
+    "comparisonEventIds": [
+      "openai-gpt-6-1-sol-2026",
+      "claude-fable-mythos-5-2-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-CAPABILITY",
+        "criteria": {
+          "previously_infeasible_task": {
+            "value": null,
+            "rationale": "Vendor benchmarks show efficiency and score gains over GPT-6 Astra, but a newly feasible previously infeasible task is not independently established.",
+            "evidenceIds": []
+          },
+          "comparable_baseline": {
+            "value": true,
+            "rationale": "OpenAI and third-party summaries compare GPT-6.2 Astra and Sol directly against GPT-6 Astra, GPT-6.1 Sol, and Claude Fable 5.2.",
+            "evidenceIds": [
+              "gpt62-q2",
+              "gpt62-q4"
+            ]
+          },
+          "independent_replication": {
+            "value": null,
+            "rationale": "Primary independent replication reports were not directly verified beyond secondary newsletter aggregation; 4sysops returned HTTP 403.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "gpt62-q2"
+      ],
+      "observedSince": "2026-11-17",
+      "observedUntil": "2026-11-26",
+      "baseline": "GPT-6 Astra API pricing was 25% higher per token prior to GPT-6.2 launch.",
+      "outcome": "GPT-6.2 Astra launched at $8 input / $0.40 cached / $40 output per 1M tokens (20% lower than GPT-6 Astra).",
+      "materialChange": false
+    },
+    {
+      "dimension": "risk_creation",
+      "observation": "observed",
+      "evidenceIds": [
+        "gpt62-q3"
+      ],
+      "observedSince": "2026-11-17",
+      "observedUntil": "2026-11-26",
+      "baseline": "Prior externally released OpenAI models had not been rated High for AI Self-Improvement.",
+      "outcome": "Nov 17 System Card rated GPT-6.2 Astra High for AI Self-Improvement and both models Critical for Cybersecurity / High for Bio & Chem.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Release, pricing, and Preparedness ratings are verified by primary docs; independent quality reception is still accumulating and mixed.",
+    "evidenceIds": [
+      "gpt62-q1",
+      "gpt62-q4"
+    ]
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "Independent developer roundup documents mixed early tester assessments of GPT-6.2 Astra's real-world reliability, and cyber benchmarks disabled safeguards.",
+    "evidenceIds": [
+      "gpt62-q4",
+      "gpt62-q5"
+    ]
+  },
+  "coreFactClaimIds": [
+    "openai-gpt-6-2-astra-sol-2026-core",
+    "openai-gpt-6-2-astra-sol-2026-safety"
+  ],
+  "evidence": [
+    {
+      "id": "gpt62-q1",
+      "sourceId": "ea005-openai-gpt62-blog",
+      "claimId": "openai-gpt-6-2-astra-sol-2026-core",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "originId": "openai-gpt-6-2-release-announcement-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work.",
+      "locator": "openai-gpt-6-2-astra-sol.txt L17",
+      "artifact": "governance/evidence/2026-11-26/sources/openai-gpt-6-2-astra-sol.txt",
+      "sha256": "df5670013a1bb33e8219930c406c06ac1111929f334fbc2789feddfbfb65f1b4"
+    },
+    {
+      "id": "gpt62-q2",
+      "sourceId": "ea005-openai-gpt62-blog",
+      "claimId": "openai-gpt-6-2-astra-sol-2026-access",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "originId": "openai-gpt-6-2-release-announcement-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "In the API, GPT‑6.2 Astra’s input and output token prices are 20% lower than GPT‑6 Astra’s, with a 60% discount on cached input ($8 for input, $0.40 for cached input, and $40 for output, all per million tokens).",
+      "locator": "openai-gpt-6-2-astra-sol.txt L22",
+      "artifact": "governance/evidence/2026-11-26/sources/openai-gpt-6-2-astra-sol.txt",
+      "sha256": "df5670013a1bb33e8219930c406c06ac1111929f334fbc2789feddfbfb65f1b4"
+    },
+    {
+      "id": "gpt62-q3",
+      "sourceId": "ea005-openai-gpt62-system-card",
+      "claimId": "openai-gpt-6-2-astra-sol-2026-safety",
+      "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/cybersecurity-trusted-access-for-cyber",
+      "originId": "openai-gpt-6-2-system-card-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Both models meet the Critical threshold for Cybersecurity\ncapabilities and the High threshold for Biological and Chemical\ncapabilities under our Preparedness\nFramework [1].\nGPT-6.2 Astra meets the High threshold for AI Self-Improvement",
+      "locator": "openai-gpt-6-2-system-card.txt L24-L28",
+      "artifact": "governance/evidence/2026-11-26/sources/openai-gpt-6-2-system-card.txt",
+      "sha256": "bfbfa312e397bc723df21beb3f096ec19c4dca6737e829e58364f17933c6e4bc"
+    },
+    {
+      "id": "gpt62-q4",
+      "sourceId": "ea005-gpt62-latent-space",
+      "claimId": "openai-gpt-6-2-astra-sol-2026-limitation",
+      "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/",
+      "originId": "latentspace-gpt62-roundup-20261118",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "November 17, 2026 — GPT-6.2 Astra and Sol lower benchmark costs. Early testers disagree on what Astra is like to work with.",
+      "locator": "gpt62-latent-space.txt L26",
+      "artifact": "governance/evidence/2026-11-26/sources/gpt62-latent-space.txt",
+      "sha256": "9090e99ad6cc058835eaf8031c67d84462e333b715abd0c8a562afb574e3d903"
+    },
+    {
+      "id": "gpt62-q5",
+      "sourceId": "ea005-openai-gpt62-blog",
+      "claimId": "openai-gpt-6-2-astra-sol-2026-limitation",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "originId": "openai-gpt-6-2-release-announcement-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We highlight key benchmark results below, using internal testing configurations with cybersecurity safeguards and classifiers disabled.",
+      "locator": "openai-gpt-6-2-astra-sol.txt L80",
+      "artifact": "governance/evidence/2026-11-26/sources/openai-gpt-6-2-astra-sol.txt",
+      "sha256": "df5670013a1bb33e8219930c406c06ac1111929f334fbc2789feddfbfb65f1b4"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

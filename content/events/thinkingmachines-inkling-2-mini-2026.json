@@ -1,0 +1,136 @@
+{
+  "id": "thinkingmachines-inkling-2-mini-2026",
+  "slug": "thinkingmachines-inkling-2-mini-2026",
+  "date": "2026-11-20",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-20",
+    "zhHans": "2026年11月20日"
+  },
+  "title": {
+    "en": "Thinking Machines Lab releases open-weight looped transformer Inkling 2 Mini",
+    "zhHans": "Thinking Machines Lab 发布开源权重循环 Transformer 模型 Inkling 2 Mini"
+  },
+  "searchSummary": {
+    "en": "On November 20, 2026, Thinking Machines Lab released Inkling 2 Mini (26.4B total, 5.4B effective active parameters, looped middle layers) with Apache 2.0 open weights on Hugging Face and Tinker API access.",
+    "zhHans": "2026 年 11 月 20 日，Thinking Machines Lab 发布循环 Transformer 模型 Inkling 2 Mini（26.4B 总参、每 token 5.4B 等效激活参数），同步在 Hugging Face 开放 Apache 2.0 权重并上线 Tinker 平台。"
+  },
+  "summary": {
+    "en": "On November 20, 2026, Thinking Machines Lab released Inkling 2 Mini, a multimodal Mixture-of-Experts looped transformer (26.4B total parameters, 3.4B base active, 5.4B effective weight activations per token across three passes through its middle layers) trained and deployed natively in NVFP4/MXFP8 to run on laptops. Unlike Inkling 2 Small (whose weights were deferred on November 5), Inkling 2 Mini launched immediately with downloadable Apache 2.0 weights on Hugging Face alongside Tinker API access; Artificial Analysis independently found it matched Qwen3.8 27B's Intelligence Index score using ~2.8x less compute proxy (while using ~38% more output tokens).",
+    "zhHans": "2026 年 11 月 20 日，Thinking Machines Lab 发布多模态混合专家循环 Transformer 模型 Inkling 2 Mini（总参数 26.4B、基础激活 3.4B、中间层三轮循环下每 token 等效激活 5.4B，原生采用 NVFP4/MXFP8 训练与部署以适配笔记本本地运行）。与 11 月 5 日暂缓开放权重的 Inkling 2 Small 不同，Inkling 2 Mini 发布当日即在 Hugging Face 开放 Apache 2.0 权重并上线 Tinker API；Artificial Analysis 独立评测显示其在同等 Intelligence Index 分数下计算量代理指标较 Qwen3.8 27B 低约 2.8 倍（同时输出 token 多约 38%）。"
+  },
+  "narrative": {
+    "en": "Inkling 2 Mini provides one of the first openly downloadable looped-transformer models—alongside a research variable-loop variant—allowing independent researchers to inspect looped depth and monitorability directly on consumer hardware. While independent Artificial Analysis benchmarks verify its efficiency frontier, independent follow-on papers and unaffiliated production deployments remain to be observed.",
+    "zhHans": "Inkling 2 Mini 及其面向研究的可变循环变体为开源社区提供了首批可直接下载研究的循环 Transformer 权重，使外部研究者能在消费级设备上检验循环深度与可监控性。尽管 Artificial Analysis 已独立验证其效率前沿位置，但后续独立研究跟进与无关联生产采用尚待观察。"
+  },
+  "categories": [
+    "capability",
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "thinkingmachines-inkling-2-mini-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 20, 2026, Thinking Machines Lab released Inkling 2 Mini, a 26.4B-parameter looped Mixture-of-Experts transformer (5.4B weight activations per token across three middle-layer passes).",
+        "zhHans": "2026 年 11 月 20 日，Thinking Machines Lab 发布 26.4B 参数的循环混合专家 Transformer 模型 Inkling 2 Mini（中间层三轮循环，每 token 5.4B 权重激活）。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-tml-inkling-2-mini"
+      ]
+    },
+    {
+      "id": "thinkingmachines-inkling-2-mini-2026-openweights",
+      "claimType": "impact",
+      "text": {
+        "en": "Inkling 2 Mini shipped immediately with downloadable open weights on Hugging Face and Tinker access, with Artificial Analysis independently measuring ~2.8x lower compute proxy than Qwen3.8 27B at the same Intelligence Index score (using ~38% more output tokens).",
+        "zhHans": "Inkling 2 Mini 当日即在 Hugging Face 开放可下载权重并上线 Tinker，Artificial Analysis 独立评测显示其在同等 Intelligence Index 分数下计算量代理指标较 Qwen3.8 27B 低约 2.8 倍（输出 token 多约 38%）。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "ea005-tml-inkling-2-mini",
+        "ea005-tml-inkling-model-card",
+        "ea005-aa-inkling-2-mini"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Immediate open-weight release of a laptop-runnable looped MoE on Hugging Face gives developers and researchers direct local access, independently verified on the efficiency frontier by Artificial Analysis.",
+        "zhHans": "可在笔记本本地运行的循环 MoE 模型当日在 Hugging Face 开放权重，并获 Artificial Analysis 独立评测验证效率前沿，直接扩展开发者与研究者的本地访问能力。"
+      },
+      "affectedGroups": [
+        "developers",
+        "researchers"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "ea005-tml-inkling-2-mini",
+        "ea005-tml-inkling-model-card",
+        "ea005-aa-inkling-2-mini"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "ea005-tml-inkling-2-mini",
+      "supports": [
+        "thinkingmachines-inkling-2-mini-2026",
+        "thinkingmachines-inkling-2-mini-2026-core",
+        "thinkingmachines-inkling-2-mini-2026-openweights"
+      ]
+    },
+    {
+      "sourceId": "ea005-tml-inkling-model-card",
+      "supports": [
+        "thinkingmachines-inkling-2-mini-2026",
+        "thinkingmachines-inkling-2-mini-2026-openweights"
+      ]
+    },
+    {
+      "sourceId": "ea005-aa-inkling-2-mini",
+      "supports": [
+        "thinkingmachines-inkling-2-mini-2026",
+        "thinkingmachines-inkling-2-mini-2026-openweights"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "inkling-2-small-tinker-access-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-26",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-26",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/ea005-20261126/thinkingmachines-inkling-2-mini-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-11-26",
+        "changeType": "created",
+        "summary": "Created isolated EA-005 bilingual reviewed-state candidate from Nov 17-26 full discovery and four-layer Confirm evidence."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "correction",
+        "summary": "Applied all blocking and polish fixes from independent review session 0b5e4807-71c6-4d64-a6a7-325fbe77af19 (impactIndex formula, IMPACT-AUDIT rule 6 separation, EVID-01/02 bindings, LANG-01 parity, and source publication dates)."
+      }
+    ],
+    "publishedAt": "2026-11-27"
+  },
+  "impactIndex": 3
+}

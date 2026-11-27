@@ -1,0 +1,102 @@
+{
+  "id": "openai-cisco-shirudo-2026",
+  "slug": "openai-cisco-shirudo-2026",
+  "date": "2026-11-23",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-23",
+    "zhHans": "2026年11月23日"
+  },
+  "title": {
+    "en": "OpenAI and Cisco launch open-source Shirudo eBPF Linux runtime defense",
+    "zhHans": "OpenAI 与 Cisco 联合开源基于 eBPF 的 Linux 运行时防护工具 Shirudo"
+  },
+  "searchSummary": {
+    "en": "On November 23, 2026, OpenAI and Cisco open-sourced Shirudo, an eBPF-based Linux runtime designed to deploy temporary shields against exploits without rebooting while patches are rolled out.",
+    "zhHans": "2026 年 11 月 23 日，OpenAI 与 Cisco 联合开源基于 eBPF 的 Linux 运行时防护项目 Shirudo，旨在无需重启的情况下部署临时防护盾，填补漏洞披露至正式补丁上线之间的防御窗口。"
+  },
+  "summary": {
+    "en": "On November 23, 2026, OpenAI and Cisco jointly launched Shirudo, an open-source Linux runtime built on eBPF that allows security teams and defensive agents to deploy temporary kernel-level compensating controls ('shields') without rebooting systems while permanent software patches are tested and rolled out. Both partners framed the tool as a response to faster AI-assisted vulnerability discovery and exploitation.",
+    "zhHans": "2026 年 11 月 23 日，OpenAI 与 Cisco 联合推出开源项目 Shirudo，基于 Linux eBPF 技术为安全团队及防御型代理提供内核级临时补偿防护机制（shield），使运行中的 Linux 系统无需重启即可在正式补丁测试与部署期间阻断漏洞利用。两家公司称该项目旨在应对 AI 加速漏洞发现与利用带来的“补丁窗口”压力。"
+  },
+  "narrative": {
+    "en": "Shirudo builds on eBPF kernel instrumentation (such as Tetragon/Cilium concepts) to bridge the gap between rapid AI-powered vulnerability discovery and multi-day enterprise patching cycles. While OpenAI and Cisco cited a controlled test blocking Java4Shell without restarts, independent real-world production adoption and false-positive behavior across unaffiliated Linux fleets have not yet been observed.",
+    "zhHans": "Shirudo 依托 eBPF 内核插桩技术（如 Tetragon/Cilium 理念），试图弥合 AI 加速发现漏洞与企业多日补丁周期之间的时间差。尽管合作方提及在受控测试中无需重启阻断 Java4Shell 的演示结果，但无关联企业在真实生产 Linux 集群中的采用情况及误报影响尚未得到独立观察。"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "openai-cisco-shirudo-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 23, 2026, OpenAI and Cisco launched Shirudo, an open-source eBPF-based Linux runtime for deploying temporary pre-patch compensating controls without system reboots.",
+        "zhHans": "2026 年 11 月 23 日，OpenAI 与 Cisco 联合开源基于 eBPF 的 Linux 运行时项目 Shirudo，用于在不重启系统的前提下部署补丁前临时补偿防护。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-openai-shirudo",
+        "ea005-cisco-shirudo",
+        "ea005-theregister-shirudo"
+      ]
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "ea005-openai-shirudo",
+      "supports": [
+        "openai-cisco-shirudo-2026",
+        "openai-cisco-shirudo-2026-core"
+      ]
+    },
+    {
+      "sourceId": "ea005-cisco-shirudo",
+      "supports": [
+        "openai-cisco-shirudo-2026",
+        "openai-cisco-shirudo-2026-core"
+      ]
+    },
+    {
+      "sourceId": "ea005-theregister-shirudo",
+      "supports": [
+        "openai-cisco-shirudo-2026",
+        "openai-cisco-shirudo-2026-core"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "nvidia-open-agent-safety-platform-2026",
+    "openai-gpt6-cyber-restricted-launch-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-26",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-26",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/ea005-20261126/openai-cisco-shirudo-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-11-26",
+        "changeType": "created",
+        "summary": "Created isolated EA-005 bilingual reviewed-state candidate from Nov 17-26 full discovery and four-layer Confirm evidence."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "correction",
+        "summary": "Applied all blocking and polish fixes from independent review session 0b5e4807-71c6-4d64-a6a7-325fbe77af19 (impactIndex formula, IMPACT-AUDIT rule 6 separation, EVID-01/02 bindings, LANG-01 parity, and source publication dates)."
+      }
+    ],
+    "publishedAt": "2026-11-27"
+  },
+  "impactIndex": 0
+}

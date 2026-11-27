@@ -1,0 +1,162 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "nvidia-jensen-huang-reinstatement-2026",
+  "subjectDigest": "85c999cd6535e8ecb484c884ee7f22debe4e65901b23779d7184b67cd784f6c0",
+  "inputsDigest": "9a1ed6ba3bd344db6bd096d01502834bb4f5d7ff6de02a15ba83e6fe34f9ea04",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "nvidia-reinstates-jensen-huang-20261123",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "nvidia-leadership-2026",
+    "action": "NVIDIA Board reinstates Jensen Huang as President, CEO and director",
+    "stage": "effective",
+    "dateBasis": "Dated 2026-11-23 per NVIDIA official newsroom announcement and effective-immediately board resolution.",
+    "deduplicationReason": "Distinct reversal of the Nov 12 CEO transition (nvidia-ceo-transition-2026) and separate from the Nov 8 inquiry initiation (nvidia-board-independent-inquiry-2026).",
+    "comparedEventIds": [
+      "nvidia-ceo-transition-2026",
+      "nvidia-board-independent-inquiry-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "commerce",
+    "reason": "Core action is an immediate executive-leadership and corporate-governance change at a major semiconductor company."
+  },
+  "significance": {
+    "rationale": "L1 corporate leadership reversal with verified 31% stock rebound, without established permanent structural change to external industry actors.",
+    "whyNotHigher": "Under L2-COMMERCE, reinstating a founder-CEO after 11 days restores prior leadership rather than executing a new industry-wide structural change affecting two external actors.",
+    "whyNotLower": "Verified tier-1 corporate action with major market and governance visibility.",
+    "comparisonEventIds": [
+      "nvidia-ceo-transition-2026",
+      "nvidia-board-independent-inquiry-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-COMMERCE",
+        "criteria": {
+          "structural_change_executed": {
+            "value": false,
+            "rationale": "Reinstatement reverses an 11-day interim CEO period and restores prior CEO leadership rather than altering market ownership or supply structure.",
+            "evidenceIds": [
+              "nvidia-huang-q1"
+            ]
+          },
+          "external_actors_affected": {
+            "value": null,
+            "rationale": "Beyond NVDA equity repricing, durable structural changes to two unaffiliated external organizations are not established.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "economic_disruption",
+      "observation": "observed",
+      "evidenceIds": [
+        "nvidia-huang-q2"
+      ],
+      "observedSince": "2026-11-23",
+      "observedUntil": "2026-11-23",
+      "baseline": "NVDA stock had fallen nearly 33% following Nov 8 reporting and Nov 12 CEO resignation.",
+      "outcome": "NVDA shares closed up 31% on Nov 23 upon immediate reinstatement announcement.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "debated",
+    "reason": "Market rallied sharply, while White House involvement and an unfinished board inquiry drew corporate-governance criticism.",
+    "evidenceIds": [
+      "nvidia-huang-q2",
+      "nvidia-huang-q4"
+    ]
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "Ongoing board investigation and corporate-governance criticism over White House involvement establish documented dispute.",
+    "evidenceIds": [
+      "nvidia-huang-q3",
+      "nvidia-huang-q4"
+    ]
+  },
+  "coreFactClaimIds": [
+    "nvidia-jensen-huang-reinstatement-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "nvidia-huang-q1",
+      "sourceId": "ea005-nvidia-reinstate-primary",
+      "claimId": "nvidia-jensen-huang-reinstatement-2026-core",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "originId": "nvidia-huang-reinstatement-announcement-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President and Chief Executive Officer and as a member of the Board.",
+      "locator": "nvidia-reinstate-huang.txt L4",
+      "artifact": "governance/evidence/2026-11-26/sources/nvidia-reinstate-huang.txt",
+      "sha256": "4efab8dbdb6647e7eb8737437b7baffe712af838858edd66cde0c0a1e522b040"
+    },
+    {
+      "id": "nvidia-huang-q2",
+      "sourceId": "ea005-nvidia-huang-cnbc",
+      "claimId": "nvidia-jensen-huang-reinstatement-2026-impact",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+      "originId": "cnbc-nvidia-huang-reinstatement-interview-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Shares of Nvidia closed up 31% following Huang's reinstatement. The stock had shed nearly 33% from the time Huang admitted to an extramarital affair on Nov. 8.",
+      "locator": "nvidia-huang-cnbc.txt L138",
+      "artifact": "governance/evidence/2026-11-26/sources/nvidia-huang-cnbc.txt",
+      "sha256": "8ae036e536a6e7ad6f5c91ff4548b182efe02f1e5ba79bd6111b2b9f454ffbd9"
+    },
+    {
+      "id": "nvidia-huang-q3",
+      "sourceId": "ea005-nvidia-reinstate-primary",
+      "claimId": "nvidia-jensen-huang-reinstatement-2026-limitation",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "originId": "nvidia-huang-reinstatement-announcement-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "The Board reiterated that the committee’s investigation will proceed to conclusion.",
+      "locator": "nvidia-reinstate-huang.txt L7",
+      "artifact": "governance/evidence/2026-11-26/sources/nvidia-reinstate-huang.txt",
+      "sha256": "4efab8dbdb6647e7eb8737437b7baffe712af838858edd66cde0c0a1e522b040"
+    },
+    {
+      "id": "nvidia-huang-q4",
+      "sourceId": "ea005-nvidia-huang-nbcnews",
+      "claimId": "nvidia-jensen-huang-reinstatement-2026-limitation",
+      "url": "https://www.nbcnews.com/tech/tech-news/nvidia-reinstates-jensen-huang-rcna610864",
+      "originId": "nbcnews-nvidia-board-reversal-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Yale School of Management professor Jeff Sonnenfeld said the White House’s involvement in Huang’s reinstatement raises serious questions about corporate governance and conflicts of interest, creating “total turmoil and confusion over integrity.”",
+      "locator": "nvidia-huang-nbcnews.txt L48",
+      "artifact": "governance/evidence/2026-11-26/sources/nvidia-huang-nbcnews.txt",
+      "sha256": "79968c5bc2494462b66b437448194cb150adc92bd51893a3cd702c857d1ba64d"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

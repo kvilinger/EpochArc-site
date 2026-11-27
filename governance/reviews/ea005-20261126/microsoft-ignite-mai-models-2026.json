@@ -1,0 +1,172 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "microsoft-ignite-mai-models-2026",
+  "subjectDigest": "a66362ba8a4ea86b8ad3a9a0cfb833ed3b188412e95c95b1b9ce316f4668a798",
+  "inputsDigest": "f2d144d8b65659dae0209460c940b8a5af5e36991cb67b1680f8733fd93a0ee2",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "microsoft-ignite-2026-mai-models-20261117",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "microsoft-mai-ignite-2026",
+    "action": "Microsoft unveils seven in-house MAI models at Ignite 2026, led by MAI Code 2",
+    "stage": "available",
+    "dateBasis": "Dated 2026-11-17 per Microsoft AI Ignite official launch posts.",
+    "deduplicationReason": "Distinct seven-model Ignite launch expanding beyond earlier single-modality MAI Transcribe 2 (2026-10-01) and MAI Image 2.7 preview (2026-10-27).",
+    "comparedEventIds": [
+      "microsoft-mai-transcribe-2-streaming-2026",
+      "microsoft-mai-image-27-preview-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Core action is commercial product portfolio launch across Microsoft AI / GitHub Copilot."
+  },
+  "significance": {
+    "rationale": "L1 commercial model-family launch; vendor price-performance claims and unaffiliated production adoption remain unverified independently.",
+    "whyNotHigher": "Under L2-PRODUCT-ACCESS, material_access_change and unaffiliated_production_organizations >= 2 are null.",
+    "whyNotLower": "Verified tier-1 seven-model launch from Microsoft with GitHub Copilot paid-plan deployment.",
+    "comparisonEventIds": [
+      "microsoft-mai-transcribe-2-streaming-2026",
+      "microsoft-mai-image-27-preview-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "Lower advertised enterprise pricing is a commercial price move rather than a verified structural access/licensing shift.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No two unaffiliated external production organizations' deployments of the new Ignite models are independently documented.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "msft-mai-q5",
+        "msft-mai-q4"
+      ],
+      "observedSince": "2026-11-17",
+      "observedUntil": "2026-11-26",
+      "baseline": "MAI Code 2 and the seven-model Ignite batch were not available to GitHub Copilot and enterprise developers prior to Nov 17.",
+      "outcome": "Seven MAI models launched at Ignite with MAI Code 2 live in GitHub Copilot paid plans at lower advertised pricing.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Launch and GitHub Copilot availability are confirmed; vendor benchmark claims lack independent replication.",
+    "evidenceIds": [
+      "msft-mai-q1",
+      "msft-mai-q3"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No factual dispute over the Ignite launch; MLQ.ai explicitly flagged that benchmark comparisons are Microsoft's own.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "microsoft-ignite-mai-models-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "msft-mai-q1",
+      "sourceId": "ea005-msft-ignite-7models",
+      "claimId": "microsoft-ignite-mai-models-2026-core",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "originId": "microsoft-ignite-mai-seven-models-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "That’s why today we’re releasing a family of seven new world class models at a truly exceptional price-performance.",
+      "locator": "msft-ignite-2026-7models.txt L91",
+      "artifact": "governance/evidence/2026-11-26/sources/msft-ignite-2026-7models.txt",
+      "sha256": "66c79dcf766916fa713d09e33278323bc2b0e0ea1107902803d10e0507c657b7"
+    },
+    {
+      "id": "msft-mai-q2",
+      "sourceId": "ea005-msft-mai-code-2",
+      "claimId": "microsoft-ignite-mai-models-2026-core",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "originId": "microsoft-ignite-mai-seven-models-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "MAI Code 2 and MAI Code 2 Flash: two new coding models built for everyday enterprise coding tasks, delivering leading performance at a fraction of the cost of competing models.",
+      "locator": "msft-mai-code-2.txt L89",
+      "artifact": "governance/evidence/2026-11-26/sources/msft-mai-code-2.txt",
+      "sha256": "18c3ec57a20f69d412f2f52a0c9c4f3bf325c6e4f3435342decb4a2f79f31482"
+    },
+    {
+      "id": "msft-mai-q3",
+      "sourceId": "ea005-mlq-msft-mai",
+      "claimId": "microsoft-ignite-mai-models-2026-access",
+      "url": "https://mlq.ai/news/microsoft-launches-seven-mai-models-at-ignite-pitching-its-coding-model-at-5-of-claude-opuss-price/",
+      "originId": "mlq-msft-ignite-mai-coverage-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Microsoft announced seven new MAI models at Ignite on Nov. 17, covering coding, cyber defense, image generation, live voice, medical transcription and model routing [1].",
+      "locator": "msft-mai-mlq.txt L23",
+      "artifact": "governance/evidence/2026-11-26/sources/msft-mai-mlq.txt",
+      "sha256": "1d7aed2086216c3d8f358b976b32560165486e4a4774ce61f8d9f2549d123963"
+    },
+    {
+      "id": "msft-mai-q4",
+      "sourceId": "ea005-mlq-msft-mai",
+      "claimId": "microsoft-ignite-mai-models-2026-access",
+      "url": "https://mlq.ai/news/microsoft-launches-seven-mai-models-at-ignite-pitching-its-coding-model-at-5-of-claude-opuss-price/",
+      "originId": "mlq-msft-ignite-mai-coverage-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Microsoft says MAI Code 2 reaches about 98% of OpenAI's GPT-6.1 Sol on coding benchmarks at about 40% of its price, and 96% of Anthropic's Claude Opus 5.5 at about 5% of the price; it is live in GitHub Copilot [1][2].",
+      "locator": "msft-mai-mlq.txt L24",
+      "artifact": "governance/evidence/2026-11-26/sources/msft-mai-mlq.txt",
+      "sha256": "1d7aed2086216c3d8f358b976b32560165486e4a4774ce61f8d9f2549d123963"
+    },
+    {
+      "id": "msft-mai-q5",
+      "sourceId": "ea005-msft-ignite-7models",
+      "claimId": "microsoft-ignite-mai-models-2026-access",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "originId": "microsoft-ignite-mai-seven-models-20261117",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "MAI Code 2 reaches 98% of the coding quality of GPT-6.1 Sol at about 40% of the price. And against Opus 5.5, it reaches 96% performance for just 5% of the price.",
+      "locator": "msft-ignite-2026-7models.txt L94",
+      "artifact": "governance/evidence/2026-11-26/sources/msft-ignite-2026-7models.txt",
+      "sha256": "66c79dcf766916fa713d09e33278323bc2b0e0ea1107902803d10e0507c657b7"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

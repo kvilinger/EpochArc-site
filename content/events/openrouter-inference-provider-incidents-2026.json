@@ -1,0 +1,140 @@
+{
+  "id": "openrouter-inference-provider-incidents-2026",
+  "slug": "openrouter-inference-provider-incidents-2026",
+  "date": "2026-11-22",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-22",
+    "zhHans": "2026年11月22日"
+  },
+  "title": {
+    "en": "OpenRouter off-boards three providers and revokes 125 ZDR endpoints after Dragos prompt-leak investigation",
+    "zhHans": "Dragos 调查披露推理供应链提示词泄露，OpenRouter 下线三家供应商并取消 125 个零数据留存端点"
+  },
+  "searchSummary": {
+    "en": "Following a five-month Dragos canary-token investigation across two million prompts (published November 19) that uncovered ongoing access to stolen secrets and ZDR failures, OpenRouter off-boarded three providers and stripped 125 endpoints of Zero Data Retention eligibility on November 22, 2026.",
+    "zhHans": "在 Dragos 于 11 月 19 日发布历时五个月、投放约 200 万条金丝雀提示词的调查并证实被盗密钥仍遭持续访问且零数据留存失灵后，OpenRouter 于 2026 年 11 月 22 日下线三家供应商并取消 125 个端点的零数据留存资格。"
+  },
+  "summary": {
+    "en": "On November 22, 2026, OpenRouter disclosed data-processing and compromise incidents among third-party AI inference providers following an independent five-month Dragos canary-token investigation (~2 million prompts, published November 19). Dragos documented active attacker theft from three hosting providers dating back to mid-July—with stolen keys and secret URLs still being accessed months later—alongside marketplace reseller prompt logging and Zero Data Retention (ZDR) failures. While stating OpenRouter's own systems were not breached, OpenRouter off-boarded three providers, removed 125 endpoints from ZDR eligibility, notified potentially affected customers, and linked seven provider incident announcements.",
+    "zhHans": "2026 年 11 月 22 日，OpenRouter 在安全机构 Dragos 历时五个月、投放约 200 万条含金丝雀令牌提示词的独立调查（11 月 19 日发布）之后，公开披露多家第三方推理服务商的数据处理与遭入侵事件。Dragos 发现攻击者自 7 月中旬起从三家托管商主动窃取请求数据——且被盗密钥与私密 URL 数月后仍持续遭到访问——并查出多家市场转售商利用日志留存提示词及零数据留存（ZDR）失灵。OpenRouter 表示自身平台未被攻破，但已下线三家供应商、将 125 个端点移出 ZDR 资格、通知潜在受影响客户，并汇总链接了七家供应商的安全公告。"
+  },
+  "narrative": {
+    "en": "The paired Dragos investigation and OpenRouter enforcement actions exposed systemic trust gaps in multi-provider AI inference routing: contractual Zero Data Retention toggles were not uniformly enforced at downstream hosts, and none of the three compromised hosting providers had detected their breaches prior to Dragos's alerts. Separating historical July–October compromises from November 22 consequences, the immediate Nov 22 enforcement removed 125 endpoints from ZDR eligibility and required customer notifications while Dragos confirmed stolen credentials remained under active access. Neither OpenRouter nor Dragos publicly confirmed whether the three off-boarded providers were identical to the three breached hosts.",
+    "zhHans": "Dragos 的独立取证与 OpenRouter 的处置行动共同揭示了多供应商 AI 推理路由生态的系统性信任漏洞：零数据留存（ZDR）开关在部分下游节点未能得到技术强制执行，且三家遭窃密的托管商在 Dragos 通报前均未察觉入侵。将 7 至 10 月的历史入侵与 11 月 22 日处置后果加以区分：11 月 22 日当天直接触发了 125 个 ZDR 端点撤销、三家供应商下线与客户通知，同时 Dragos 证实被盗凭据截至披露时仍持续遭访问。OpenRouter 与 Dragos 均未公开确认被下线的三家供应商是否即遭入侵的三家托管商。"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 2,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "openrouter-inference-provider-incidents-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 22, 2026, OpenRouter off-boarded three inference providers and removed 125 endpoints from Zero Data Retention (ZDR) eligibility following Dragos's security investigation.",
+        "zhHans": "2026 年 11 月 22 日，OpenRouter 在 Dragos 安全调查之后下线三家推理供应商，并取消 125 个端点的零数据留存（ZDR）资格。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-openrouter-disclosure"
+      ]
+    },
+    {
+      "id": "openrouter-inference-provider-incidents-2026-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Dragos's independent two-million-prompt canary investigation confirmed active theft at three hosting providers with stolen keys and URLs continuing to be accessed months later, prompting OpenRouter on November 22 to revoke 125 ZDR endpoints, off-board three providers, and notify potentially affected customers.",
+        "zhHans": "Dragos 投放约 200 万条提示词的独立金丝雀调查证实三家托管商遭活跃窃密且被盗密钥与 URL 数月后仍遭持续访问，促使 OpenRouter 于 11 月 22 日撤销 125 个 ZDR 端点、下线三家供应商并通知潜在受影响客户。"
+      },
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "ea005-openrouter-disclosure",
+        "ea005-dragos-canary-report"
+      ]
+    },
+    {
+      "id": "openrouter-inference-provider-incidents-2026-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "OpenRouter stated that the findings did not show any breach or unauthorized access of OpenRouter's own infrastructure, and neither OpenRouter nor Dragos publicly confirmed whether the three off-boarded providers were the same three hosts breached.",
+        "zhHans": "OpenRouter 明确指出调查未发现自身基础设施遭入侵或未授权访问；此外，OpenRouter 与 Dragos 均未公开确认被下线的三家供应商是否与遭入侵的三家托管商完全重合。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-openrouter-disclosure"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "risk_creation",
+      "severity": -2,
+      "direction": "negative",
+      "description": {
+        "en": "Ongoing post-disclosure access to stolen prompt credentials confirmed by Dragos alongside Nov 22 emergency revocation of 125 ZDR endpoints and customer breach notifications exposed systemic ZDR enforcement gaps for developers and enterprises.",
+        "zhHans": "Dragos 证实被盗提示词凭据截至披露时仍持续遭访问，伴随 11 月 22 日紧急撤销 125 个 ZDR 端点及客户安全通知，实质暴露出开发者与企业所依赖的 ZDR 合规保护失效风险。"
+      },
+      "affectedGroups": [
+        "developers",
+        "businesses"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "A",
+      "sourceIds": [
+        "ea005-openrouter-disclosure",
+        "ea005-dragos-canary-report"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "ea005-openrouter-disclosure",
+      "supports": [
+        "openrouter-inference-provider-incidents-2026",
+        "openrouter-inference-provider-incidents-2026-core",
+        "openrouter-inference-provider-incidents-2026-impact",
+        "openrouter-inference-provider-incidents-2026-limitation"
+      ]
+    },
+    {
+      "sourceId": "ea005-dragos-canary-report",
+      "supports": [
+        "openrouter-inference-provider-incidents-2026",
+        "openrouter-inference-provider-incidents-2026-impact"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "fireworks-october-incident-update-2026",
+    "near-ai-sglang-disclosure-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-26",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-26",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/ea005-20261126/openrouter-inference-provider-incidents-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-11-26",
+        "changeType": "created",
+        "summary": "Created isolated EA-005 bilingual reviewed-state candidate from Nov 17-26 full discovery and four-layer Confirm evidence."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "correction",
+        "summary": "Applied all blocking and polish fixes from independent review session 0b5e4807-71c6-4d64-a6a7-325fbe77af19 (impactIndex formula, IMPACT-AUDIT rule 6 separation, EVID-01/02 bindings, LANG-01 parity, and source publication dates)."
+      }
+    ],
+    "publishedAt": "2026-11-27"
+  },
+  "impactIndex": 3
+}

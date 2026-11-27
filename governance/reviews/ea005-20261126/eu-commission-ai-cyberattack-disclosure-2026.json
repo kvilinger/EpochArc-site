@@ -1,0 +1,152 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "eu-commission-ai-cyberattack-disclosure-2026",
+  "subjectDigest": "6a96239491fecf65376a2dbf3cb9b1695cc851e13ff5aff4fa7b8efa6e8eb135",
+  "inputsDigest": "fee7503e61637731692fa8d719f9d465dd9c0a7460497c261dd58d2029f883fe",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "eu-commission-ai-cyberattack-confirmation-20261119",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "eu-commission-ai-cyberattack-2026",
+    "action": "European Commission publicly confirms October AI-assisted cyberattack",
+    "stage": "disclosed",
+    "dateBasis": "Dated 2026-11-19 as a disclosure node (when POLITICO published its exclusive and the Commission publicly confirmed the campaign); explicitly distinguishes Oct 22 initial detection date.",
+    "deduplicationReason": "Distinct institutional disclosure of an AI-assisted cyberattack against the European Commission.",
+    "comparedEventIds": [
+      "gtig-ai-threat-tracker-q4-2026",
+      "fireworks-october-incident-update-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Core action is public disclosure of an AI-assisted cybersecurity incident targeting a major public institution."
+  },
+  "significance": {
+    "rationale": "L1 confirmed institutional incident disclosure backed by two genuinely distinct independent Tier-2 origins (POLITICO Europe exclusive via EU officials/leaked email + Brussels briefing via The Record/DW); lacks published external independent investigation and external remedial actions.",
+    "whyNotHigher": "Under L2-SAFETY, external_remedial_action and independent_investigation are null while CERT-EU's internal investigation remains open and unpublicized.",
+    "whyNotLower": "Corroborated by two independent origins and three Tier-2 outlets (POLITICO Europe, The Record, Deutsche Welle).",
+    "comparisonEventIds": [
+      "gtig-ai-threat-tracker-q4-2026",
+      "near-ai-sglang-disclosure-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY",
+        "criteria": {
+          "documented_incident": {
+            "value": true,
+            "rationale": "POLITICO Europe's exclusive and Commission spokesperson Regnier's Nov 19 confirmation both establish the Oct 22 AI-assisted cyber campaign.",
+            "evidenceIds": [
+              "eucyber-q1",
+              "eucyber-q2"
+            ]
+          },
+          "external_remedial_action": {
+            "value": null,
+            "rationale": "Only the Commission's own internal containment and notifications are confirmed; external third-party remedial actions are not established.",
+            "evidenceIds": []
+          },
+          "independent_investigation": {
+            "value": null,
+            "rationale": "Investigation is being handled by EU bodies (CERT-EU and EDPS) and no independent external technical report has been published.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Public confirmation and prior system disruptions are independently corroborated across two origins; full forensic scope and attribution remain undisclosed.",
+    "evidenceIds": [
+      "eucyber-q1",
+      "eucyber-q2"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No factual dispute over the Commission's confirmation; ARTEX tool use is reported by POLITICO via CERT-EU/officials but not officially named by Regnier.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "eu-commission-ai-cyberattack-disclosure-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "eucyber-q1",
+      "sourceId": "ea005-politico-eu-cyber",
+      "claimId": "eu-commission-ai-cyberattack-disclosure-2026-core",
+      "url": "https://www.politico.eu/newsletter/brussels-playbook/cyberattack-hits-the-commission/",
+      "originId": "politico-eu-exclusive-leaked-mail-eu-officials-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Weapon of choice: The EU institutions’ cybersecurity watchdog, CERT-EU, detected earlier this month that international hackers used ARTEX, a publicly available AI-powered tool designed to identify vulnerabilities in IT systems.",
+      "locator": "eu-extra-politico-eu.txt L40",
+      "artifact": "governance/evidence/2026-11-26/sources/eu-extra-politico-eu.txt",
+      "sha256": "85d65256d5482bf3d588c83e32153a246b1400cf2c78a50881e56331a390e753"
+    },
+    {
+      "id": "eucyber-q2",
+      "sourceId": "ea005-therecord-eu-cyber",
+      "claimId": "eu-commission-ai-cyberattack-disclosure-2026-core",
+      "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+      "originId": "ec-brussels-briefing-regnier-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Speaking to journalists, Commission spokesperson Thomas Regnier said the first signs of the attack were detected October 22. He described the incident as an “AI-generated cyber campaign” but did not identify the tool used or the attackers’ apparent motivation.",
+      "locator": "eu-record-therecord-media-european-commission-confirms.txt L17",
+      "artifact": "governance/evidence/2026-11-26/sources/eu-record-therecord-media-european-commission-confirms.txt",
+      "sha256": "591d2e47153ddbbaba8737da80d45c1c862bd9ec41a9a6082fce7879abb43993"
+    },
+    {
+      "id": "eucyber-q3",
+      "sourceId": "ea005-dw-eu-cyber",
+      "claimId": "eu-commission-ai-cyberattack-disclosure-2026-core",
+      "url": "https://www.dw.com/en/eu-commission-confirms-it-was-targeted-in-cyberattack-using-ai-tools/a-79993016",
+      "originId": "ec-brussels-briefing-regnier-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "The incident was detected on October 22 and there was ‌no evidence ​of a data breach affecting Commission staff as a whole, European Commission spokesperson Thomas Regnier told reporters.",
+      "locator": "eu-cyber-dw.txt L16",
+      "artifact": "governance/evidence/2026-11-26/sources/eu-cyber-dw.txt",
+      "sha256": "80735d6195716d475864b225851c1b7dd18ca2521862a0f36c77ed1cefa12580"
+    },
+    {
+      "id": "eucyber-q4",
+      "sourceId": "ea005-politico-eu-cyber",
+      "claimId": "eu-commission-ai-cyberattack-disclosure-2026-limitation",
+      "url": "https://www.politico.eu/newsletter/brussels-playbook/cyberattack-hits-the-commission/",
+      "originId": "politico-eu-exclusive-leaked-mail-eu-officials-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Disruption has lasted over 10 days. Sysper, the Commission’s HR platform for payslips, leave requests and timesheets, and MyPMO, its medical reimbursement system, were restored earlier this week — though Sysper briefly crashed again yesterday.",
+      "locator": "eu-extra-politico-eu.txt L43",
+      "artifact": "governance/evidence/2026-11-26/sources/eu-extra-politico-eu.txt",
+      "sha256": "85d65256d5482bf3d588c83e32153a246b1400cf2c78a50881e56331a390e753"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

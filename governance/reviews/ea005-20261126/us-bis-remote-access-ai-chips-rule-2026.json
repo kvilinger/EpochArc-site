@@ -1,0 +1,215 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "us-bis-remote-access-ai-chips-rule-2026",
+  "subjectDigest": "4f00019f6173941056b8f154b1569103f7076bdcf73be847e1a63c826add9654",
+  "inputsDigest": "239a4a3e55cab857a1d217154d20b5eb81b2d1edb9dc7257c8ed9f7b24236db6",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "us-bis-remote-access-ai-chips-rule-20261119",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "us-ai-chip-export-controls",
+    "action": "U.S. BIS enforces remote-access export controls on AI chips and rescinds AI Diffusion Rule",
+    "stage": "effective",
+    "dateBasis": "Dated 2026-11-19 per official Federal Register publication and effective date (91 FR 74970); rule text was released Nov 16.",
+    "deduplicationReason": "Distinct federal regulatory rulemaking (EAR § 744.24 + rescission of 90 FR 4544) with no overlapping existing event.",
+    "comparedEventIds": [
+      "white-house-super-intelligence-order-accord-2026",
+      "china-spc-ai-dispute-opinions-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "governance",
+    "reason": "Core action is a binding U.S. federal export-control interim final rule amending the Export Administration Regulations."
+  },
+  "significance": {
+    "rationale": "L2-GOVERNANCE satisfied: binding immediate-effect federal rule applying industry-wide beyond named parties, corroborated by two independent export-control law firm analyses (Baker McKenzie and Gibson Dunn).",
+    "whyNotHigher": "L3 requires >= 2 milestone categories and >= 365 observed days; rule took effect Nov 19, 2026 (7 days before cutoff).",
+    "whyNotLower": "Unlike non-binding proposals or company-specific actions, this is a binding federal regulation effective immediately across global data-center supply chains.",
+    "comparisonEventIds": [
+      "china-spc-ai-dispute-opinions-2026",
+      "ninth-circuit-github-copilot-dmca-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-GOVERNANCE",
+        "criteria": {
+          "binding_or_precedential_action": {
+            "value": true,
+            "rationale": "Interim final rule published in the Federal Register (91 FR 74970) amending the EAR with immediate legal effect on November 19, 2026.",
+            "evidenceIds": [
+              "bis-remote-q1",
+              "bis-remote-q4"
+            ]
+          },
+          "applies_beyond_named_parties": {
+            "value": true,
+            "rationale": "Applies generally across all exporters, reexporters, transferors, overseas data centers, foundries, and five designated countries rather than named individual respondents.",
+            "evidenceIds": [
+              "bis-remote-q2",
+              "bis-remote-q5",
+              "bis-remote-q6"
+            ]
+          },
+          "independent_legal_analysis": {
+            "value": true,
+            "rationale": "Baker McKenzie and Gibson Dunn published independent legal analyses (both Nov 18, 2026) of the rule's scope, § 744.24 remote-access mandate, and immediate compliance obligations.",
+            "evidenceIds": [
+              "bis-remote-q4",
+              "bis-remote-q5"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "economic_disruption",
+      "observation": "observed",
+      "evidenceIds": [
+        "bis-remote-q4",
+        "bis-remote-q5",
+        "bis-remote-q6"
+      ],
+      "observedSince": "2026-11-19",
+      "observedUntil": "2026-11-26",
+      "baseline": "Prior EAR controls targeted physical chip exports and left remote third-country data-center access largely outside § 744.24; AI Diffusion Rule remained unenforced.",
+      "outcome": "Immediate binding license requirements took effect Nov 19 for overseas remote-compute data centers and five additional destination countries.",
+      "materialChange": true
+    },
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "bis-remote-q5",
+        "bis-remote-q6"
+      ],
+      "observedSince": "2026-11-19",
+      "observedUntil": "2026-11-26",
+      "baseline": "Entities in Country Group D:5/Macau could previously rent advanced U.S. chips remotely via third-country data centers without § 744.24 licensing.",
+      "outcome": "New § 744.24 legally restricts overseas data-center remote compute access for covered entities effective Nov 19, 2026.",
+      "materialChange": true
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Rule text and immediate compliance scope are verified by independent legal analyses, while downstream enforcement and economic fallout are still unfolding.",
+    "evidenceIds": [
+      "bis-remote-q4",
+      "bis-remote-q5"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No factual dispute over rule enactment or effective date in captured sources; 60-day comment period is standard rulemaking procedure.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "us-bis-remote-access-ai-chips-rule-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "bis-remote-q1",
+      "sourceId": "ea005-bis-fr-2026-23529",
+      "claimId": "us-bis-remote-access-ai-chips-rule-2026-core",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+      "originId": "us-bis-ifr-2026-23529",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Effective date: This rule is effective November 19, 2026.",
+      "locator": "bis-fr-2026-23529-html.txt L525",
+      "artifact": "governance/evidence/2026-11-26/sources/bis-fr-2026-23529-html.txt",
+      "sha256": "7fd92a027f317df9630e104c95a34e7fc85a66e961bcd1d1346194f00a33eeae"
+    },
+    {
+      "id": "bis-remote-q2",
+      "sourceId": "ea005-bis-fr-2026-23529",
+      "claimId": "us-bis-remote-access-ai-chips-rule-2026-core",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+      "originId": "us-bis-ifr-2026-23529",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "First, this rule establishes new restrictions which will apply for exports, reexports, or transfers (in-country) to overseas data centers that remotely supply significant volumes of compute to companies headquartered in Country Group D:5 or Macau.",
+      "locator": "bis-fr-2026-23529-html.txt L737",
+      "artifact": "governance/evidence/2026-11-26/sources/bis-fr-2026-23529-html.txt",
+      "sha256": "7fd92a027f317df9630e104c95a34e7fc85a66e961bcd1d1346194f00a33eeae"
+    },
+    {
+      "id": "bis-remote-q3",
+      "sourceId": "ea005-bis-fr-2026-23529",
+      "claimId": "us-bis-remote-access-ai-chips-rule-2026-core",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+      "originId": "us-bis-ifr-2026-23529",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Rescinding the worldwide Regional Stability (RS) license requirement and other regulatory changes implemented by the AI Diffusion rule, “Framework for Artificial Intelligence Diffusion” published January 15, 2025 (90 FR 4544) (“AI Diffusion Rule”).",
+      "locator": "bis-fr-2026-23529-html.txt L766",
+      "artifact": "governance/evidence/2026-11-26/sources/bis-fr-2026-23529-html.txt",
+      "sha256": "7fd92a027f317df9630e104c95a34e7fc85a66e961bcd1d1346194f00a33eeae"
+    },
+    {
+      "id": "bis-remote-q4",
+      "sourceId": "ea005-bis-bakermckenzie",
+      "claimId": "us-bis-remote-access-ai-chips-rule-2026-impact",
+      "url": "https://sanctionsnews.bakermckenzie.com/bis-restricts-remote-access-to-advanced-ai-chips-and-formally-rescinds-the-ai-diffusion-rule/",
+      "originId": "bakermckenzie-bis-ifr-legal-analysis-20261118",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "The IFR is scheduled to be published in the Federal Register on November 19, 2026 and takes effect on publication, with no delayed compliance date.",
+      "locator": "bis-remote-access-bakermckenzie.txt L15",
+      "artifact": "governance/evidence/2026-11-26/sources/bis-remote-access-bakermckenzie.txt",
+      "sha256": "1d528f43a4cdb604e6c34182bb070c533375b9d8fbfabc4e32f790ffd160645c"
+    },
+    {
+      "id": "bis-remote-q5",
+      "sourceId": "ea005-bis-gibsondunn",
+      "claimId": "us-bis-remote-access-ai-chips-rule-2026-impact",
+      "url": "https://www.gibsondunn.com/bis-expands-advanced-computing-controls-to-address-data-center-remote-access-and-third-country-diversion/",
+      "originId": "gibsondunn-bis-ifr-legal-analysis-20261118",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "A new data center end-use control. New Section 744.24 restricts exports, reexports, and transfers (in-country) to overseas data centers that remotely supply significant volumes of compute to companies headquartered in, or whose ultimate parent company is headquartered in, Macau or a Country Group D:5 destination, which includes China (collectively, “covered companies”).[2]",
+      "locator": "bis-gibsondunn.txt L30",
+      "artifact": "governance/evidence/2026-11-26/sources/bis-gibsondunn.txt",
+      "sha256": "d60b4d021d74da3f86f6c98f21e817d6ee4796adc4331cd6936256abd7547933"
+    },
+    {
+      "id": "bis-remote-q6",
+      "sourceId": "ea005-bis-fr-2026-23529",
+      "claimId": "us-bis-remote-access-ai-chips-rule-2026-impact",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+      "originId": "us-bis-ifr-2026-23529",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Second, in addition to the current license requirements for advanced semiconductors, a license will be required to export, reexport, or transfer (in-country) advanced semiconductors to Indonesia, Malaysia, Singapore, Thailand, or Brazil",
+      "locator": "bis-fr-2026-23529-html.txt L737",
+      "artifact": "governance/evidence/2026-11-26/sources/bis-fr-2026-23529-html.txt",
+      "sha256": "7fd92a027f317df9630e104c95a34e7fc85a66e961bcd1d1346194f00a33eeae"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

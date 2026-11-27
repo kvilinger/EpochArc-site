@@ -1,0 +1,126 @@
+Cisco and OpenAI pitch eBPF kernel plugins as the way to tame the patchpocalypse
+Jump to main content
+Search
+Search
+REG AD
+security
+Cisco and OpenAI pitch eBPF kernel plugins as the way to tame the patchpocalypse
+‘Shirudo’ project promises to whip up compensating controls in a hurry
+Simon Sharwood
+Simon
+Sharwood
+Asia-Pacific Editor
+Published
+tue 24 Nov 2026 // 01:46 UTC
+Make us preferred on Google
+READ MORE
+Critical Cisco remote code execution bug under attack
+2 days ago
+Old-school Linux desktops find fresh routes to Wayland
+3 days ago
+Google claims last week’s critical VMware bug was under attack in September
+3 days ago
+Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else
+6 days ago
+XXRI-OS explores the lowest end of the Linux desktop
+6 days ago
+Cisco and OpenAI have released an open-source tool called Shirudo to implement compensating controls in Linux, potentially improving security for users who can’t quickly patch newly discovered software flaws.
+Shirudo relies on eBPF, the technology that makes it possible to run sandboxed programs in the Linux kernel. eBPF programs are effectively kernel plug-ins but don’t get unrestricted access to system resources.
+Developers have mostly used eBPF to create network functions that enable things like the open source Kubernetes observability and security tool Cilium, a Cloud Native Computing Foundation project.
+REG AD
+Cisco and OpenAI think eBPF can help organizations cope with the flood of 100,000-plus software flaws reported this year, many after the debut of AI-powered bug finders.
+REG AD
+The increased volume of flaws, and patches to fix them, is a problem for many organizations which already struggle to test fixes or find change windows in which to implement them. That problem has seen greater interest in “compensating controls” – changes to applications or infrastructure that harden them against flaws or malware, without requiring a patch.
+With Shirudo, Cisco and OpenAI are suggesting two things:
+The privileges eBPF programs enjoy make them a fine way to implement compensating controls for Linux;
+Agents should scan your infrastructure for vulnerabilities, then use tools like OpenAI’s Codex to write compensating controls as eBPF programs at machine speed.
+“Shirudo” is apparently the Japanese word for “shield,” so Cisco and OpenAI have called the eBPF programs the tool creates “shields.” The two companies envision humans checking every shield Shirudo creates before putting it into production.
+Shirudo is open source and available here. The two companies say they’ve already demonstrated it could mitigate the recently discovered flaws in Java without requiring downtime for an Elasticsearch implementation.
+Cisco and OpenAI are not alone in advocating for compensating controls. Third-party software maintenance outfits like Rimini Street have used them for years to protect software when their clients no longer have the right to access patches. VMware has introduced “virtual patching.” Palo Alto Networks and Rapid 7 also like this approach, and offer automation to develop controls.
+Where Cisco and OpenAI differ is their decision to make Shirudo open source, and their ambition that other players adapt and advance it.
+That offer is not entirely altruistic, as if Shirudo takes off it could create more demand for Codex. Cisco’s angle comes from the fact it owns Isovalent, an early champion of eBPF and the creator of both Cilium and the Tetragon sub-project on which Shirudo is based. Switchzilla is using eBPF in other products, so normalizing its use through an open source project can’t hurt. ®
+security
+compensating controls
+cisco
+ebpf
+openai
+linux
+patches
+patch management
+Make us preferred on Google
+REG AD
+Wyoming uranium operation shuts down after cyberattack
+Peninsula Energy says plant and wellfield control systems were affected, with no restart date yet
+PWNED
+Company was religious about backups but sinned by leaving them exposed
+Never put the backup server in the same Windows domain as production
+The future of datacenters depends on behind-the-meter energy generation
+PARTNER CONTENT: PARTNER CONTENT: Hyperscalers and colos have distinct power strategies, but for both, securing flexible, fast power relies on self-generated solutions
+Hackers help themselves to 1Password's source code and customer data
+An intruder planted malicious code in backend services, but the biz insists passwords are safe
+AWS got hit by an outage too. Here's why you didn't hear about it
+If a service falls in the forest and nobody hears it...
+SC26
+45°C inlets just killed the chiller. Most people haven't noticed yet
+In my mind and in my car, we can't rewind, we've gone too far
+TOP STORIES
+Microsoft's official Python agent framework hijacked to distribute malware
+Bluetooth brakes are broken as researchers find anyone can control them
+Government may apply TV license fee to streaming services to fund the BBC
+Airbus may be leaving Microsoft Office, but for its 36,000 defense staff, Office isn't leaving them
+AWS got hit by an outage too. Here's why you didn't hear about it
+ON CALL
+Support tech fixed malware by charging client less for their services
+AI
+Huawei and crew tout homegrown EDA tools to overcome China’s fab deficit
+Chip design software leans heavily into 3D packaging and multi-node assemblies
+21 hours ago
+Dell and HPE both say they’ve become ‘different companies’
+Still slinging hardware – now with added AI and attendant risks or opportunities
+1 day ago
+AI godfather Yann LeCun torches Anthropic CEO over AI gatekeeping
+‘It’s like the Ottoman Empire banning the printing press for Arabic so they would keep in control of the dogma,’ he says
+1 day ago
+US blacklists Megaspeed hours after Jensen Huang returns to Nvidia
+Chip boss gets his old job back, but Washington isn't done investigating one of his former flame's businesses
+2 days ago
+UK gov invests in defense startup making virtual training ground for AI
+Britain wants sovereign capability to test whether military AI will work before it gets deployed for real
+2 days ago
+Infosec
+'Significant number of customer records' pwned in Flight Centre Travel Group breach
+The latest attack in spate of similar incidents targeting booking systems globally
+now
+Wyoming uranium operation shuts down after cyberattack
+Peninsula Energy says plant and wellfield control systems were affected, with no restart date yet
+1 hour ago
+PWNED
+Company was religious about backups but sinned by leaving them exposed
+Never put the backup server in the same Windows domain as production
+2 hours ago
+Hackers help themselves to 1Password's source code and customer data
+An intruder planted malicious code in backend services, but the biz insists passwords are safe
+4 hours ago
+UK Home Office waved through border system without a working fix for bad data
+ICO reprimand follows failings that risked wrongful detention, with a temporary correction process taking more than a year to arrive
+5 hours ago
+FOSS
+9/UX brings a classic Mac feel to 9front
+A spatial classic Finder in the style of A/UX
+2 days ago
+Ubuntu Core Desktop targets 28.04 debut, with default status in its sights
+Canonical's stretch goal is to make the immutable OS standard in 30.04 – without retiring the traditional distro
+6 days ago
+Inspiring FOSS project Crosspoint Reader has lessons about tech, communities, and LLMs
+Cheap tiny e-readers and the perils of LLM-generated drive-by pull requests – plus much more
+8 days ago
+Omaxian takes the Omarchy look down a different Linux backstreet
+Devuan-based distro swaps Wayland for XLibre and i3, with Xfce waiting if the tiling gets tiresome
+10 days ago
+Microsoft’s Azure Linux dons Fedora to dress itself up for mainstream workloads
+Version 4.0 of Redmond’s cloudy OS is free to use in its cloud. Repeat. Free to use
+10 days ago
+Another Linux kernel developer steps back from some duties due to overload
+You can probably guess what he blames for the excessive workload
+13 days ago
+✕

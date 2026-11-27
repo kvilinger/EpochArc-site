@@ -1,0 +1,155 @@
+OpenRouter AI Supply-Chain Breach 2026: Prompt Theft at Inference Providers
+Clearance Incident Response. Free through May 1, 2027, so you have time to patch.Clearance Incident Response. Free through May 1, 2027, so you have time to patch.Estimate your Blast Radius in 60 secondsEstimateEstimate
+Under Active Attack?
+Docs
+Contact us
+Support
+SearchSubmit
+Aviatrix
+Platform
+Products
+Solutions
+Partners
+Resources
+Why Aviatrix
+Threat Research Center
+Under Active Attack
+Silent for Months: How Attackers Stole Millions of AI Prompts Through OpenRouter's Provider Network
+Dragos canary-token research revealed that three AI inference providers silently exfiltrated customer prompts—including Zero Data Retention requests—for up to four months. Here is what happened, who is affected, and what must change.
+Published: November 22, 2026 Share this on:
+Executive Summary
+Between July and November 2026, researchers at Dragos seeded roughly two million AI inference requests with canary tokens—unique credentials and URLs—and discovered that three providers routing traffic through the OpenRouter gateway had been silently exfiltrating customer prompts for months, including requests explicitly flagged as Zero Data Retention. Attackers copied traffic at the first network hop, tested stolen AWS keys within hours, enumerated S3 buckets, probed Secrets Manager, and attempted persistent IAM access. A separate marketplace-based scheme involved sellers logging enabled requests from home connections. A Chinese AI lab fetched secret links from more than half of seeded prompts, including those marked no-data-collection, with stolen content later appearing in Feishu chats opened from Beijing and Shanghai within minutes.
+This incident exposes a systemic trust gap in AI supply chains: privacy flags and Zero Data Retention settings are contractual constructs that break the moment an intermediary is compromised or acts in bad faith. As enterprises accelerate agentic AI adoption—embedding credentials and sensitive business logic directly into prompts—the attack surface for inference-layer interception is expanding faster than governance frameworks can respond.
+Why This Matters Now
+Enterprises are deploying agentic AI pipelines that embed live credentials, proprietary data, and customer PII directly into prompts routed through third-party inference providers. With OpenRouter's incident confirming months of undetected prompt theft—including from Zero Data Retention endpoints—the AI inference layer has become an unsecured exfiltration vector. Regulatory frameworks like GDPR, HIPAA, and emerging EU AI Act obligations are beginning to treat prompt data as regulated personal data, raising breach-notification exposure for every affected organization.
+Attack Path Analysis
+Attackers compromised AI inference providers through multiple vectors: insider-enabled request logging by rogue marketplace sellers, credential exposure via public GitHub commits, and direct server-level compromise of inference infrastructure. Once inside, threat actors harvested credentials embedded in customer prompts, escalated privileges using stolen AWS keys, moved laterally across cloud services and provider networks, and maintained persistent command and control via rented servers running automated penetration tools. Exfiltration occurred both passively through intercepted prompt traffic and actively through AWS API enumeration targeting S3, Secrets Manager, and IAM, resulting in sustained, undetected theft of sensitive AI inference data over multiple months.
+Kill Chain Progression
+This analysis maps confirmed threat intelligence to the full cloud kill chain to show where defensive gaps would emerge as an attack progresses.
+Initial Compromise
+High
+Privilege Escalation
+High
+Lateral Movement
+High
+Command & Control
+High
+Exfiltration
+High
+Impact
+Mediuminferred
+Initial Compromise
+Description
+Attackers gained initial footholds through three distinct vectors: (1) a rogue marketplace seller approach where low-price AI model listings with request logging enabled passively collected all prompt traffic flowing through them, (2) a credential committed to a public GitHub repository by an AI coding agent at Together AI, allowing unauthorized access to stored prompt samples, and (3) direct server-level compromise of an inference provider's internal credentials at Phala, enabling an attacker to view request data in transit during processing. A routing misconfiguration at Novita additionally caused prompts to be forwarded beyond intended infrastructure.
+Confidence:
+High
+MITRE ATT&CK® Techniques
+Initial Access
+T1195
+Supply Chain Compromise
+Credential Access
+T1552
+Unsecured Credentials
+Collection
+T1530
+Data from Cloud Storage
+Exfiltration
+T1567
+Exfiltration Over Web Service
+Defense Evasion
+T1078
+Valid Accounts
+Persistence
+T1136
+Create Account
+Discovery
+T1538
+Cloud Service Dashboard
+Collection
+T1119
+Automated Collection
+Potential Compliance Exposure
+Mapping incident impact across multiple compliance frameworks.
+NIST SP 800-53 Rev 5 – Transmission and Data-at-Rest Confidentiality
+Control ID: SC-8 / SC-28
+Attackers intercepted AI inference traffic at the first point of arrival before models processed requests, and in some cases copied prompts marked for zero data retention. This demonstrates a failure to enforce cryptographic protections across the full data transit path, including third-party routing hops that customers were never informed of.
+PCI DSS 4.0 – Protection of Stored Account Data and Credential Management
+Control ID: Requirement 3.4 / 8.6
+Planted AWS keys, passwords, and API credentials embedded in prompts were harvested and actively tested within hours by attackers. A developer credential committed to a public GitHub repository enabled unauthorized download of stored prompt samples, constituting a direct violation of requirements for secure credential storage and access control over cardholder and sensitive authentication data environments.
+GDPR (Regulation EU 2016/679) – Integrity, Confidentiality, and Security of Processing
+Control ID: Article 5(1)(f) / Article 32
+Prompts containing personal data and credentials were routed to undisclosed third parties, including a Chinese AI lab and individual marketplace sellers operating on home broadband connections. One stolen prompt was accessed by humans in Beijing and Shanghai via Feishu within two minutes of being posted, constituting unauthorized cross-border personal data transfer and a failure to implement appropriate technical and organizational security measures.
+DORA (EU 2022/2554) – ICT Security and Third-Party Risk Management
+Control ID: Article 9 / Article 19
+Three AI inference providers were breached for months without detection, and the breach at one provider was only discovered through external researcher notification. Routing configurations silently forwarded customer traffic to uncontracted parties. Financial entities relying on these AI services would face DORA violations for failing to monitor, audit, and contractually bind third-party ICT providers to documented security obligations and incident notification timelines.
+NIS2 Directive (EU 2022/2555) – Cybersecurity Risk Management and Incident Reporting
+Control ID: Article 21 / Article 23
+At least one breached provider delayed public disclosure and initially misattributed the breach to an internal misconfiguration rather than attacker compromise. NIS2 requires essential and important entities to implement supply chain security measures and report significant incidents within 24 to 72 hours. The months-long undetected exfiltration and delayed or absent disclosure from multiple providers represents a direct failure of both obligations.
+CISA Zero Trust Maturity Model 2.0 – Data-in-Transit Protection and Encrypted Traffic Visibility
+Control ID: Data Pillar — Data Encryption / Network Pillar — Traffic Inspection
+The attack exploited the assumption that a privacy flag such as Zero Data Retention enforced protection across all hops, when in reality no verification existed for downstream routing behavior. CISA ZTMM 2.0 requires organizations at advanced maturity to continuously verify data flows, inspect all traffic including internal east-west paths, and ensure that no implicit trust is extended to routing intermediaries. Unidentified systems in network paths and undisclosed forwarding to third parties represent a foundational Zero Trust gap.
+Sector Implications
+Industry-specific impact of the vulnerabilities, including operational, regulatory, and cloud security risks.
+Information Technology/IT
+AI supply-chain credential theft via compromised inference providers exposes IT firms to AWS key exfiltration, IAM manipulation, and S3 data loss, demanding Zero Trust segmentation and egress policy enforcement per NIST.800-53.SC-7.
+Internet
+AI routing platforms like OpenRouter face insider data exfiltration across multi-hop provider chains, with unencrypted prompt traffic enabling credential harvesting requiring multicloud visibility controls and FQDN egress filtering per ZTMM.Data.
+Computer Software/Engineering
+AI coding agents committing credentials to public repositories, as seen in Together AI's breach, expose software firms to prompt theft and downstream supply-chain compromise requiring Zero Trust segmentation and NIST.800-53.AC-6 enforcement.
+Financial Services
+Stolen AWS keys enabling Secrets Manager enumeration, Bedrock API abuse, and IAM user creation directly threaten financial services firms using cloud AI pipelines, triggering PCI.4.0.4.2.1 and HIPAA.164.312(e)(1) compliance violations.
+Sources
+OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firmshttps://thehackernews.com/2026/11/openrouter-drops-3-providers-after.htmlVerified
+OpenRouter Data Processing Incidents on Inference Providers - Official Announcementhttps://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/Verified
+Phala Network November Preliminary Incident Reporthttps://phala.com/posts/phala-november-preliminary-incident-reportVerified
+Together AI Security Event - Prompt Leakage for Requests in June and July 2026https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026Verified
+Novita Labs Privacy Notice - Routing Configuration Issuehttps://x.com/novita_labs/status/2124196616358010992Verified
+Dragos AI Supply Chain Security Canary Token Research Bloghttps://www.dragos.com/blog/ai-supply-chain-security-canary-tokensVerified
+Railway Platform Intrusion Likely Part of Series Targeting AI Inference Providershttps://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.htmlVerified
+Frequently Asked Questions
+How did attackers steal prompts even from Zero Data Retention endpoints?
+Attackers intercepted traffic at the first point of network arrival—before any retention policy was applied—by compromising internal credentials at the provider level. Zero Data Retention flags are contractual controls that cannot prevent exfiltration by a compromised or malicious intermediary already inside the network path.
+What compliance obligations are triggered for organizations whose prompts were exposed?
+Could network-layer controls have prevented or detected this attack earlier?
+Cloud Native Security Fabric Mitigations and ControlsCNSF
+Based on the attack progression modeled above, these are the defensive controls that would constrain each stage.
+This incident exposed how uncontrolled access paths across AI inference providers allowed attackers to harvest credentials, move laterally across cloud environments, and exfiltrate sensitive prompt data undetected for months. Aviatrix Zero Trust CNSF would likely reduce attacker reach by enforcing segmented workload boundaries and restricting east-west and egress traffic flows across the multi-provider inference supply chain.
+Initial Compromise
+Control: Cloud Native Security Fabric (CNSF)
+Mitigation: Enforcing workload-level segmentation across inference provider infrastructure would likely constrain the reachability of untrusted marketplace endpoints and reduce the blast radius of credential exposure from a single compromised node.
+Privilege Escalation
+Control: Zero Trust Segmentation
+Mitigation: Zero Trust segmentation enforced at the cloud network layer would likely constrain the scope of API enumeration reachable from a compromised inference workload, reducing the attacker's ability to pivot from a stolen static credential into a broader cloud-native secret store sweep.
+Lateral Movement
+Control: East-West Traffic Security
+Mitigation: East-west traffic enforcement across provider workload boundaries would likely constrain unauthorized cross-provider data flows and reduce the reachability of internal routing paths that enabled silent prompt forwarding and cross-organizational credential reuse.
+Command & Control
+Control: Multicloud Visibility & Control
+Mitigation: Multicloud visibility and policy control over outbound API call patterns would likely reduce the ability of an external rented server to sustain large-scale AWS API enumeration undetected, and could constrain the operational scope of coordinated C2 activity across provider environments.
+Exfiltration
+Control: Egress Security & Policy Enforcement
+Mitigation: Controlled egress enforcement across inference workload boundaries would likely constrain unauthorized outbound data flows, reducing the ability of compromised nodes to silently forward prompt content to undisclosed destinations or external scraper infrastructure.
+Impact (Mitigations)
+Had prior-stage controls constrained lateral movement and egress paths, the residual impact would likely be reduced in scope, with credential exposure limited to fewer provider environments and exfiltrated prompt content constrained to a narrower set of affected workloads.
+Impact at a Glance
+Affected Business Functions
+AI Inference API Services and Model Routing
+Customer Prompt Privacy and Zero Data Retention Compliance
+Cloud Credential and Secrets Management (AWS IAM, Secrets Manager, S3)
+Third-Party AI Provider Trust and Supply Chain Integrity
+Operational Disruption
+Estimated downtime: 18 days
+Financial Impact
+Estimated loss: N/A
+Data Exposure
+Customer prompts submitted to AI inference providers were intercepted and exfiltrated over a multi-month period spanning July through November 2026 across at least three breached providers. Exposed data categories include: plaintext credentials (AWS access keys, passwords, API tokens, SSH credentials) embedded in customer prompts; proprietary business logic and intellectual property contained within AI queries; personally identifiable information potentially present in natural language prompts; private source code repository references cloned via git clients; and secrets submitted by customers under Zero Data Retention agreements that were nonetheless captured and in some cases read by human actors in Beijing and Shanghai. Hundreds of AWS keys were actively tested, with attackers enumerating S3 buckets, Secrets Manager, Parameter Store, and attempting to create Bedrock API keys and add IAM users, generating tens of thousands of AWS API calls. Additionally, one marketplace seller was found to silently inject approximately 1,000 hidden tokens into every prompt, and several hundred unidentified intermediate routing systems were discovered in network path tracing across approximately 2,000 paths. The scope of real customer prompt exposure is estimated in the millions given the volume of seeded requests and the confirmation that windows of complete traffic capture occurred.
+Recommended Actions
+Key Takeaways & Next Steps
+• Apply Egress Security & Policy Enforcement (CNSF) to enforce FQDN-level outbound filtering on all AI inference provider infrastructure, blocking unauthorized data forwarding to undisclosed third-party endpoints and preventing prompt traffic from silently traversing unintended routing hops without policy approval.
+• Deploy Multicloud Visibility & Control to establish centralized traffic observability across all AI routing paths, enabling detection of anomalous interactions such as repeated prompt forwarding, undisclosed relay hops, and cross-provider credential reuse from single C2 nodes before exfiltration completes.
+• Implement Zero Trust Segmentation with identity-based microsegmentation policies to enforce least-privilege access boundaries between inference server components, preventing an attacker who compromises one provider's internal credentials from pivoting laterally to enumerate AWS Secrets Manager, Parameter Store, and IAM services.
+• Activate Encrypted Traffic (HPE) controls ensuring all prompt data in transit between routing gateways and inference providers is protected at line rate with MACsec or IPsec, eliminating the ability of a network-position attacker to intercept unencrypted prompt payloads at the first point of arrival before model execution.
+• Leverage Cloud Native Security Fabric (CNSF) with inline enforcement and real-time inspection to detect shadow AI behavior, unauthorized AI agent tool invocations such as ARTEX framework user agents, and prompt injection patterns, triggering automated incident response when novel agent signatures or covert AI-driven credential validation tools are observed traversing the network fabric.
+Secure the Paths Between Cloud Workloads
+A cloud-native security fabric that enforces Zero Trust across workload communication—reducing attack paths, compliance risk, and operational complexity.
+Stop Advanced ThreatsFree Containment AssessmentUnder Active Attack?

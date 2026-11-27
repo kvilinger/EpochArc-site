@@ -1,0 +1,144 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "zai-glm-5-4-2026",
+  "subjectDigest": "e412b921c4a005f18ece6f697496fdfbae72b026e4b1b73a0af1981a347184a0",
+  "inputsDigest": "9ce8d5cb0019c05e01af6cad79d7863771cd3686ec2919ad9b916c5ba1848bce",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "zai-glm-5-4-loop-transformer-20261123",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "zai-glm-5-4",
+    "action": "Z.ai releases GLM-5.4, its first Loop Transformer flagship, on hosted plans",
+    "stage": "available",
+    "dateBasis": "Dated 2026-11-23 per Z.ai official blog bundle metadata and independent Nov 23 coverage.",
+    "deduplicationReason": "Distinct new flagship model version (GLM-5.4) following earlier GLM-5.3 events.",
+    "comparedEventIds": [
+      "epoch-ai-glm53-firefox-patch-gap-2026",
+      "zai-zcode-workspace-upload-incident-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Verified action is hosted product rollout (GLM Coding Plan/ZCode/Z.ai Chat); capability claims ('2T-3T comparable') lack published benchmarks or independent verification."
+  },
+  "significance": {
+    "rationale": "L1 hosted model launch; architectural novelty is noteworthy, but benchmark proof, API access, open weights, and independent follow-on adoption are absent as of cutoff.",
+    "whyNotHigher": "Under L2-METHOD and L2-PRODUCT-ACCESS, independent_follow_on_works and unaffiliated_production_organizations are null, and even primary benchmark scores are unpublished.",
+    "whyNotLower": "Verified primary release of a 750B looped-transformer commercial model.",
+    "comparisonEventIds": [
+      "tencent-hy4-hosted-release-2026",
+      "inkling-2-small-tinker-access-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-METHOD",
+        "criteria": {
+          "new_method_or_framework": {
+            "value": null,
+            "rationale": "Loop Transformer builds on Universal Transformer / recurrent-depth literature; Z.ai itself states 'The idea is not new' and provides no public GLM-5.4 benchmark evaluation yet.",
+            "evidenceIds": []
+          },
+          "independent_follow_on_works": {
+            "value": null,
+            "rationale": "Model weights are not yet released and no independent follow-on works exist within 3 days of launch.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Hosted rollout is confirmed, while intelligence claims remain unbenchmarked and API/weights remain pending.",
+    "evidenceIds": [
+      "glm54-q1",
+      "glm54-q4"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "Absence of published benchmarks is a documented evidence limitation rather than a factual contradiction of the launch.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "zai-glm-5-4-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "glm54-q1",
+      "sourceId": "ea005-zai-glm54-blog",
+      "claimId": "zai-glm-5-4-2026-core",
+      "url": "https://z.ai/blog/glm-5.4",
+      "originId": "zai-glm-5-4-announcement-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "GLM-5.4 loops 28 layers of the GLM-5 base model for two iterations.",
+      "locator": "zai-glm-5-4-official.txt L17",
+      "artifact": "governance/evidence/2026-11-26/sources/zai-glm-5-4-official.txt",
+      "sha256": "dfbb6205fbe87602bbefb0a530fb92f1675278bd09bd4647075b3327913420c0"
+    },
+    {
+      "id": "glm54-q2",
+      "sourceId": "ea005-zai-glm54-blog",
+      "claimId": "zai-glm-5-4-2026-limitation",
+      "url": "https://z.ai/blog/glm-5.4",
+      "originId": "zai-glm-5-4-announcement-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We plan to open-source the model weights responsibly after completing necessary safety hardening.",
+      "locator": "zai-glm-5-4-official.txt L77",
+      "artifact": "governance/evidence/2026-11-26/sources/zai-glm-5-4-official.txt",
+      "sha256": "dfbb6205fbe87602bbefb0a530fb92f1675278bd09bd4647075b3327913420c0"
+    },
+    {
+      "id": "glm54-q3",
+      "sourceId": "ea005-glm54-mlq",
+      "claimId": "zai-glm-5-4-2026-core",
+      "url": "https://mlq.ai/news/zai-launches-glm-54-a-750-billion-parameter-model-built-on-a-looped-transformer/",
+      "originId": "mlq-glm54-coverage-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Z.ai, the Chinese AI developer also known as Zhipu, launched GLM-5.4 on Nov. 23, calling it its first flagship model built on a \"Loop Transformer\" architecture.",
+      "locator": "glm54-mlq.txt L26",
+      "artifact": "governance/evidence/2026-11-26/sources/glm54-mlq.txt",
+      "sha256": "05128bfa9faee50fecaae9b3ce5b178b056fa09c2982c842e9520a312702c0d1"
+    },
+    {
+      "id": "glm54-q4",
+      "sourceId": "ea005-glm54-mlq",
+      "claimId": "zai-glm-5-4-2026-limitation",
+      "url": "https://mlq.ai/news/zai-launches-glm-54-a-750-billion-parameter-model-built-on-a-looped-transformer/",
+      "originId": "mlq-glm54-coverage-20261123",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "That is the company's claim: no benchmark scores for GLM-5.4 have been published, and a team member said they will come later [2].",
+      "locator": "glm54-mlq.txt L27",
+      "artifact": "governance/evidence/2026-11-26/sources/glm54-mlq.txt",
+      "sha256": "05128bfa9faee50fecaae9b3ce5b178b056fa09c2982c842e9520a312702c0d1"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

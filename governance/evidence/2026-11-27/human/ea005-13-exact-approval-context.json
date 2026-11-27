@@ -1,0 +1,154 @@
+{
+  "sessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "taskId": "EA-005",
+  "requestArtifact": "EA005_EXACT_APPROVAL_REQUEST_13.json",
+  "requestArtifactSha256": "b266b7be70312e642bcd27a3bd811fc8e99c8dcbfffe9f58180b0b85d41b6b06",
+  "requestTimestampUTC": "2026-11-26T17:50:46Z",
+  "requestSummary": "Presented all 13 EA-005 reviewed-state events (2 L2 + 11 L1, manifest SHA-256 b266b7be70312e642bcd27a3bd811fc8e99c8dcbfffe9f58180b0b85d41b6b06) after Round-2 ACCEPT_LIMITED independent review (0b5e4807-71c6-4d64-a6a7-325fbe77af19), explicitly asking: (1) whether to approve all 13 items, and (2) whether to record governance/approvals/, apply whitelisted source files onto a clean release clone of origin/main (aee3fd5f), run build/tests, push, and verify live bilingual pages.",
+  "approvalReplies": [
+    {
+      "timestampUTC": "2026-11-27T07:23:25Z",
+      "text": "继续"
+    },
+    {
+      "timestampUTC": "2026-11-27T07:23:43Z",
+      "text": "批准"
+    }
+  ],
+  "directParentReply": true,
+  "publishedStateTransitionNote": "Each approved reviewed-state event transitioned deterministically to published state by changing ONLY status ('reviewed' -> 'published'), editorial.publishedAt ('2026-11-27'), editorial.updatedAt ('2026-11-27'), and updating review.subjectDigest accordingly; zero factual, bilingual, claim, impact, source, or evidence fields changed (inputsDigest identical for all 13 events).",
+  "scope": "Exact 13 EA-005 events (2026-11-17 to 2026-11-26 UTC) plus 38 ea005-* sources, run latest-data-full-2026-11-26, 13 review files, evidence under governance/evidence/2026-11-26/{hf,hn,mail,brave,sources}, approval records, and built static assets. Excludes local uncommitted UI/policy drafts.",
+  "approvedItems": [
+    {
+      "subjectId": "anthropic-ipo-2026",
+      "reviewedSubjectDigest": "0c4cbbc527f41f0c252c4bad8b107491a40b1abf14998dadfdaa64ba9ad92edb",
+      "reviewedReviewDigest": "504279334fa5397fd8ea3f4447870a592c663f3fc43c0024c40dabc61e35693d",
+      "subjectDigest": "81adad43e7ca1768d122d8addc1423f12c29756481329a83ed8cd3fe615b0c55",
+      "reviewDigest": "8fd9fa59af30f87abfbf5252e48fcb6921c7e114ff4075b5f672bb211df2161a",
+      "inputsDigest": "4ed346e84434d3cd0b56b01604ced8e17935e666fd8ae2225f665f3f5deeec55",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "nvidia-jensen-huang-reinstatement-2026",
+      "reviewedSubjectDigest": "afab72745634003d23e4bde9492999d0566356b5ac951e977d2dd322cbeb23e2",
+      "reviewedReviewDigest": "8df402e60b137a5227ce42b64fb446533992364108e602aad34e19cc617c8590",
+      "subjectDigest": "85c999cd6535e8ecb484c884ee7f22debe4e65901b23779d7184b67cd784f6c0",
+      "reviewDigest": "febf08d3d5fac8adc2b236d97f9c954f5c3b3a4ce1d8ceeba76fd400edd3a4fc",
+      "inputsDigest": "9a1ed6ba3bd344db6bd096d01502834bb4f5d7ff6de02a15ba83e6fe34f9ea04",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "us-bis-remote-access-ai-chips-rule-2026",
+      "reviewedSubjectDigest": "367ce047d16dd7b4675c7e676f5e29f4562bfe5383cd3d1579985ca860bcf989",
+      "reviewedReviewDigest": "f29c44d20aa13ee754ab851da275d75e07ef3b7df1ddd78230e8e5851fb132ea",
+      "subjectDigest": "4f00019f6173941056b8f154b1569103f7076bdcf73be847e1a63c826add9654",
+      "reviewDigest": "be056986b6becbcc588d189cfd5a6394fe17cfa4dfa73d22dc3afa80390dc9a2",
+      "inputsDigest": "239a4a3e55cab857a1d217154d20b5eb81b2d1edb9dc7257c8ed9f7b24236db6",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "openrouter-inference-provider-incidents-2026",
+      "reviewedSubjectDigest": "14e2700cdedb0d456ed26f66a0ffcf2e6274cd061413ff916d8618af46f45dde",
+      "reviewedReviewDigest": "3e98a0a193ab80c28240cee58f8d355c8a111e67e6c27d7dc32739806db8c196",
+      "subjectDigest": "6fb62f735f211e605206c2ab6d3a43b93d2060ec39b38ccc9328a45f86bc2cd5",
+      "reviewDigest": "c4d9b7817e58eaa4e6ba0ee7d5a045486f9122ba9d550f4befe34378a8102e73",
+      "inputsDigest": "0649a09b77cd86bee0019a262f37e3c6585e982fb330884d50502c773fed00ca",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "openai-gpt-6-2-astra-sol-2026",
+      "reviewedSubjectDigest": "905b00776ac514bf1a14280cb4ff323c20f7accdc790a2c5663e10b4736fed82",
+      "reviewedReviewDigest": "3e382f246802cb27245616efb39638149343a2f270c516fda152999f7784ad46",
+      "subjectDigest": "7e9c340d0db8f3029b6d3841f312532a7bb61147b4533bef28f659e03aee4323",
+      "reviewDigest": "b354eb47c2a5bb146b0f7688ce9ed61aae233663282d4aff6bb099fe40c78ace",
+      "inputsDigest": "34c9c7f1c43c3d9bc47488f3e6e0e77b40c133f9db7c5e8d9a99ea1b6c4d2476",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "google-gemini-4-neon-2026",
+      "reviewedSubjectDigest": "14f0cdf455c4bbabfa36d5c5affa2dbc5c20a186352a8f2fda484b9f527f8aaa",
+      "reviewedReviewDigest": "0a2c5f2c3ea646138f2f562a7646f28244524637fc8b334717e5e13685529c64",
+      "subjectDigest": "c6f059d07bfd6d139ec144befd5ddbbd6ced1a82284f5d8cd362608b6ccf9606",
+      "reviewDigest": "29081f6fc04351e7cda086f5262f84256a243c740089a3abbc8f91d4019367e9",
+      "inputsDigest": "056b18713f1d3e367ee01ac14d9741444834931ad0cd69f831b8a338fa4d3cab",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "zai-glm-5-4-2026",
+      "reviewedSubjectDigest": "333847a592d1c2cf99c70ab894d0ba5e3c0b106784d9c6243ab2c6d757d0fb0b",
+      "reviewedReviewDigest": "b266d48ce48d6f684875e161a7676c4aa35727439de30798474d00d9ae9644bb",
+      "subjectDigest": "e412b921c4a005f18ece6f697496fdfbae72b026e4b1b73a0af1981a347184a0",
+      "reviewDigest": "d2fdb6c432c08b47f8da2a7944de5cb33674745e6b0e79663b7b3745f945d408",
+      "inputsDigest": "9ce8d5cb0019c05e01af6cad79d7863771cd3686ec2919ad9b916c5ba1848bce",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "openai-cisco-shirudo-2026",
+      "reviewedSubjectDigest": "e64ec25eab3f25e0d2d0709a79316d8c7b6906aa368eff50a21c379045d02ca3",
+      "reviewedReviewDigest": "bb6a83cf8fb6009b522f66ad1fd3ccc292ad143285fceacc0a2047f0e9ee0f24",
+      "subjectDigest": "62ec512b706608ff91f15948347efcbee2948705919ea0c48004fabd4be2f4cf",
+      "reviewDigest": "8b8a767143e3645d3596f8f224038c2e020f3cca281ea168812e20d8f75b11a4",
+      "inputsDigest": "c0e5ff14022db949e317604bfc8cd23f3b301999af500ec5177f34d0793afa88",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "eu-commission-ai-cyberattack-disclosure-2026",
+      "reviewedSubjectDigest": "5c79e1e3b1ae9a5f283bc6f22ad17744e06498ba53e25c320feacc441f6bccd3",
+      "reviewedReviewDigest": "4e80dfc4714bb53abecddd77c1c975aa528667fd98ce0d687803684673857429",
+      "subjectDigest": "6a96239491fecf65376a2dbf3cb9b1695cc851e13ff5aff4fa7b8efa6e8eb135",
+      "reviewDigest": "de00920bfcd7641b2cca67482af5b1deafb31f5bf85b8408e0bea30a922a3215",
+      "inputsDigest": "fee7503e61637731692fa8d719f9d465dd9c0a7460497c261dd58d2029f883fe",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "microsoft-ignite-mai-models-2026",
+      "reviewedSubjectDigest": "34a49bade0207f705a021e02eb9ff56a82372b82a37450092ec45d67d7e1f4d1",
+      "reviewedReviewDigest": "ac3adc1109a1530d2b054083f34938df62908b564d34a21f620f151d35036817",
+      "subjectDigest": "a66362ba8a4ea86b8ad3a9a0cfb833ed3b188412e95c95b1b9ce316f4668a798",
+      "reviewDigest": "4a748a5f5aadc58001a6b1aab0bc6cb9681b53f95bd1ff2b4896f586c4b9241b",
+      "inputsDigest": "f2d144d8b65659dae0209460c940b8a5af5e36991cb67b1680f8733fd93a0ee2",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "thinkingmachines-inkling-2-mini-2026",
+      "reviewedSubjectDigest": "82f124c8a7a2954a9aad0d35c7775f8012c1d7c14a4f5d09c0ad3fa40e4c2ef0",
+      "reviewedReviewDigest": "12b2693d12b2e11fe81397d955a5097e94e6de2b7c045033abaf582c417d94e7",
+      "subjectDigest": "e8f0880cb612fba431ca59d90416331ce633c9d4c2f52cef160964b37e8c3b5b",
+      "reviewDigest": "58b5efd89b58392bc700fbfd35c2a44eb44b48541a477ab0b26c473f00457f7e",
+      "inputsDigest": "a16e8b5749ff92077060050ad61aaf50938d688e5ad0f868e90d2f7f78de98d8",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "google-genie-4-availability-2026",
+      "reviewedSubjectDigest": "def7a0127d2a00f8f98c08f6e0241966a3f7b6a4fbb1cb130cbee0d693e54aff",
+      "reviewedReviewDigest": "40f5747767cc44dcf44444726be2a7797c9ad3007bedcd449418c38198dedbdb",
+      "subjectDigest": "72ce96f1bdf0707906efbd228c7259fcf4758340d3162259273732287a82659b",
+      "reviewDigest": "772f12f1dde8fc4bb4fb7d4ad5eea82bca7dd5667c6cf29a3e815615f383b6e9",
+      "inputsDigest": "4ee7e2d32d3d5a30a9137ac6c2e9b9e1e1d2c9e17b8d5e8ee0e84883ea5f4b36",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    },
+    {
+      "subjectId": "signal-mobile-ai-agent-restrictions-2026",
+      "reviewedSubjectDigest": "932f4017445de77713227b36684c783db681e24e08e9baeb7fb1952b7ef8197e",
+      "reviewedReviewDigest": "0e1b954f56ddac31b81d88e6695952428fa747f5be352163bc592a4eed342e65",
+      "subjectDigest": "8a2591343af32ba8d3f78dc404ba9f2c028ffe02976abfa1ada057156fee1a9a",
+      "reviewDigest": "9edf0777e235c4a878550208a2495cd24e2ddf1a3bf17ed6e9991b84f2dea1c0",
+      "inputsDigest": "7185860649db32392d382cafd1244ac4f05acb5818118a8a475f81cfd50448a0",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9"
+    }
+  ],
+  "limitations": "Recorded from the real local user conversation; offline validators verify fields and digests, not human identity or legal consent semantics."
+}

@@ -1,0 +1,216 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "openrouter-inference-provider-incidents-2026",
+  "subjectDigest": "6fb62f735f211e605206c2ab6d3a43b93d2060ec39b38ccc9328a45f86bc2cd5",
+  "inputsDigest": "0649a09b77cd86bee0019a262f37e3c6585e982fb330884d50502c773fed00ca",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication.",
+    "L2-SAFETY boundary: OpenRouter also serves as a routing intermediary relied upon by customers for ZDR enforcement (Dragos Figure 7 notes one undisclosed OpenRouter hop), and neither OpenRouter nor Dragos publicly confirmed whether the three off-boarded providers are identical to the three breached hosting providers."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "openrouter-inference-provider-data-incidents-20261122",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "openrouter-inference-supply-chain-2026",
+    "action": "OpenRouter off-boards three providers and revokes 125 ZDR endpoints after Dragos prompt-leak investigation",
+    "stage": "disclosed",
+    "dateBasis": "Dated 2026-11-22 per OpenRouter's official disclosure and remediation notice following Dragos's Nov 19 published report (covering July–November 2026 testing).",
+    "deduplicationReason": "Distinct multi-provider inference marketplace disclosure and remediation; separate from single-provider disclosures (fireworks-october-incident-update-2026, near-ai-sglang-disclosure-2026).",
+    "comparedEventIds": [
+      "fireworks-october-incident-update-2026",
+      "near-ai-sglang-disclosure-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Core event is a documented multi-provider AI supply-chain security compromise, ZDR failure, and platform remediation."
+  },
+  "significance": {
+    "rationale": "L2-SAFETY satisfied: documented active prompt-theft incident across three hosting providers, external routing-platform remedial actions (OpenRouter off-boarding 3 providers, revoking 125 ZDR endpoints, notifying affected customers—analogous to RubyGems removing malicious packages in openai-rubygems-gemstuffer-2026), and independent investigation by Dragos. Boundary note: OpenRouter is also the intermediary whose ZDR toggle customers relied upon (Dragos Fig. 7 noted one undisclosed OpenRouter hop), and neither OpenRouter nor Dragos confirmed whether the 3 off-boarded hosts are the exact 3 compromised hosts.",
+    "whyNotHigher": "L3 requires >= 2 milestone categories and >= 365 observed days.",
+    "whyNotLower": "Unlike unverified rumors or single-vendor self-reports without external action, all three L2-SAFETY criteria are directly established with independent Dragos forensics and concrete OpenRouter remediation.",
+    "comparisonEventIds": [
+      "openai-rubygems-gemstuffer-2026",
+      "fireworks-october-incident-update-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY",
+        "criteria": {
+          "documented_incident": {
+            "value": true,
+            "rationale": "Dragos documented active attacker theft from three AI hosting providers and reseller logging/ZDR violations; OpenRouter confirmed provider-level incidents.",
+            "evidenceIds": [
+              "openrouter-q4",
+              "openrouter-q6"
+            ]
+          },
+          "external_remedial_action": {
+            "value": true,
+            "rationale": "OpenRouter (operating layer external to the breached upstream hosts, with no breach of OpenRouter itself) off-boarded three providers, stripped 125 endpoints from ZDR eligibility, and notified affected customers.",
+            "evidenceIds": [
+              "openrouter-q1",
+              "openrouter-q2",
+              "openrouter-q5"
+            ]
+          },
+          "independent_investigation": {
+            "value": true,
+            "rationale": "Dragos independently executed a five-month, ~2-million-prompt canary-token investigation uncovering the breaches before providers knew.",
+            "evidenceIds": [
+              "openrouter-q3",
+              "openrouter-q4"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "risk_creation",
+      "observation": "observed",
+      "evidenceIds": [
+        "openrouter-q4b",
+        "openrouter-q5"
+      ],
+      "observedSince": "2026-11-22",
+      "observedUntil": "2026-11-26",
+      "baseline": "Prior to Nov 19–22 disclosure, OpenRouter customers relied on ZDR flags across listed inference endpoints assuming prompt confidentiality; historical July–Oct compromises are separated from this disclosure window.",
+      "outcome": "Dragos confirmed stolen keys and secret URLs continued to be accessed months after initial incidents, and OpenRouter's Nov 22 enforcement immediately stripped 125 endpoints of ZDR eligibility, off-boarded three providers, and notified affected customers.",
+      "materialChange": true
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Direct OpenRouter remediation and independent Dragos investigation corroborate the incident; full list of affected providers and customer credential impact remain under investigation.",
+    "evidenceIds": [
+      "openrouter-q1",
+      "openrouter-q4"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "OpenRouter explicitly thanked Dragos and confirmed provider-level incidents; no factual dispute over the core findings.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "openrouter-inference-provider-incidents-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "openrouter-q1",
+      "sourceId": "ea005-openrouter-disclosure",
+      "claimId": "openrouter-inference-provider-incidents-2026-core",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "originId": "openrouter-provider-incidents-disclosure-20261122",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Off-boarded three providers from OpenRouter, based on the results of our investigations.",
+      "locator": "openrouter-data-incidents.txt L9",
+      "artifact": "governance/evidence/2026-11-26/sources/openrouter-data-incidents.txt",
+      "sha256": "cda3c2bc4d380298b7923cf6ba6745308df7b55f70e0e908c96720107943a00b"
+    },
+    {
+      "id": "openrouter-q2",
+      "sourceId": "ea005-openrouter-disclosure",
+      "claimId": "openrouter-inference-provider-incidents-2026-core",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "originId": "openrouter-provider-incidents-disclosure-20261122",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Removed 125 endpoints from Zero Data Retention (ZDR) eligibility. The removals included providers flagged by researchers, plus additional endpoints that we removed as a precautionary measure.",
+      "locator": "openrouter-data-incidents.txt L10",
+      "artifact": "governance/evidence/2026-11-26/sources/openrouter-data-incidents.txt",
+      "sha256": "cda3c2bc4d380298b7923cf6ba6745308df7b55f70e0e908c96720107943a00b"
+    },
+    {
+      "id": "openrouter-q3",
+      "sourceId": "ea005-dragos-canary-report",
+      "claimId": "openrouter-inference-provider-incidents-2026-impact",
+      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "originId": "dragos-ai-supply-chain-canary-investigation-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Over a five-month period from July through November 2026, we submitted approximately two million prompts containing unique URLs and canary token credentials to widely used AI services and monitored what happened after inference.",
+      "locator": "dragos-www-dragos-com-blog-ai-supply-chain-security.txt L28",
+      "artifact": "governance/evidence/2026-11-26/sources/dragos-www-dragos-com-blog-ai-supply-chain-security.txt",
+      "sha256": "623e30e60c3405c5c55c83a7118620f99d193d494b564bf88cda8e4acedf4d8f"
+    },
+    {
+      "id": "openrouter-q4",
+      "sourceId": "ea005-dragos-canary-report",
+      "claimId": "openrouter-inference-provider-incidents-2026-impact",
+      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "originId": "dragos-ai-supply-chain-canary-investigation-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "The most serious finding was also the most direct. We found attackers actively stealing data from three different hosting providers. Although our prompts were bait, they were processed along with real customer requests, and those were almost certainly copied too.",
+      "locator": "dragos-www-dragos-com-blog-ai-supply-chain-security.txt L45",
+      "artifact": "governance/evidence/2026-11-26/sources/dragos-www-dragos-com-blog-ai-supply-chain-security.txt",
+      "sha256": "623e30e60c3405c5c55c83a7118620f99d193d494b564bf88cda8e4acedf4d8f"
+    },
+    {
+      "id": "openrouter-q4b",
+      "sourceId": "ea005-dragos-canary-report",
+      "claimId": "openrouter-inference-provider-incidents-2026-impact",
+      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "originId": "dragos-ai-supply-chain-canary-investigation-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "On the other hand, stolen keys and secret URLs continue to be accessed, even months after the initial incident.",
+      "locator": "dragos-www-dragos-com-blog-ai-supply-chain-security.txt L80",
+      "artifact": "governance/evidence/2026-11-26/sources/dragos-www-dragos-com-blog-ai-supply-chain-security.txt",
+      "sha256": "623e30e60c3405c5c55c83a7118620f99d193d494b564bf88cda8e4acedf4d8f"
+    },
+    {
+      "id": "openrouter-q5",
+      "sourceId": "ea005-openrouter-disclosure",
+      "claimId": "openrouter-inference-provider-incidents-2026-impact",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "originId": "openrouter-provider-incidents-disclosure-20261122",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Notified all potentially affected customers.",
+      "locator": "openrouter-data-incidents.txt L11",
+      "artifact": "governance/evidence/2026-11-26/sources/openrouter-data-incidents.txt",
+      "sha256": "cda3c2bc4d380298b7923cf6ba6745308df7b55f70e0e908c96720107943a00b"
+    },
+    {
+      "id": "openrouter-q6",
+      "sourceId": "ea005-openrouter-disclosure",
+      "claimId": "openrouter-inference-provider-incidents-2026-limitation",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "originId": "openrouter-provider-incidents-disclosure-20261122",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "These findings did not show any breach or unauthorized access of OpenRouter. The results of this testing revealed new findings about specific inference providers.",
+      "locator": "openrouter-data-incidents.txt L7",
+      "artifact": "governance/evidence/2026-11-26/sources/openrouter-data-incidents.txt",
+      "sha256": "cda3c2bc4d380298b7923cf6ba6745308df7b55f70e0e908c96720107943a00b"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

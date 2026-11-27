@@ -1,0 +1,146 @@
+{
+  "id": "signal-mobile-ai-agent-restrictions-2026",
+  "slug": "signal-mobile-ai-agent-restrictions-2026",
+  "date": "2026-11-20",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-20",
+    "zhHans": "2026年11月20日"
+  },
+  "title": {
+    "en": "Signal blocks mobile screenshots by default to stop OS AI agents from capturing chats",
+    "zhHans": "Signal 默认拦截移动端截屏，限制操作系统级 AI 代理抓取聊天内容"
+  },
+  "searchSummary": {
+    "en": "On November 20, 2026, Signal announced default screenshot and screen-capture blocking on iOS 27 and supported Android devices to stop OS-level AI agents from reading encrypted chats, while warning the defense is incomplete.",
+    "zhHans": "2026 年 11 月 20 日，Signal 宣布在 iOS 27 与受支持的 Android 设备上默认拦截截屏及屏幕抓取，以阻止操作系统级 AI 代理读取加密聊天，同时坦言该方案并不完整。"
+  },
+  "summary": {
+    "en": "On November 20, 2026, Signal Technology Foundation President Meredith Whittaker announced that Signal is restricting built-in mobile operating-system AI agents from capturing and storing Signal messages by blocking screenshots by default on iOS 27 and blocking screen capture when AI assistants attempt to read the Signal screen on Android. Users can disable the protection in settings at the expense of privacy guarantees, and Signal called on Apple, Google, and Microsoft to provide formal developer opt-out controls and documentation.",
+    "zhHans": "2026 年 11 月 20 日，Signal 技术基金会主席 Meredith Whittaker 宣布，Signal 通过在 iOS 27 默认禁止应用内截屏、并在 Android 端拦截 AI 助手抓取屏幕数据，限制移动操作系统内置 AI 代理采集和存储 Signal 聊天记录。用户可在设置中手动关闭该防护（代价是削弱隐私保证），Signal 同时呼吁苹果、Google 与微软向开发者提供明确的技术退出接口与文档。"
+  },
+  "narrative": {
+    "en": "Extending the Windows screenshot block Signal deployed against Microsoft Recall in 2025, the mobile restrictions highlight a sharpening conflict between OS-level agentic screen scanning and end-to-end encrypted messaging apps. Signal explicitly acknowledged the workaround is incomplete—unable to reliably cover many non-Pixel Android vendor builds or macOS Siri AI—and forces a usability tradeoff for legitimate user screenshots.",
+    "zhHans": "继 2025 年在 Windows 端拦截微软 Recall 截屏后，Signal 此次移动端措施凸显了操作系统级 AI 代理“读屏”能力与端到端加密通讯软件之间的正面冲突。Signal 坦言该变通方案并不完整——无法可靠覆盖全部非 Pixel 厂商 Android 定制系统，也未覆盖 macOS Siri AI——且不得不以限制用户正常截屏体验为代价。"
+  },
+  "categories": [
+    "safety"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": true,
+  "claims": [
+    {
+      "id": "signal-mobile-ai-agent-restrictions-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 20, 2026, Signal announced default screenshot and screen-capture blocking on iOS 27 and supported Android devices to restrict mobile OS AI agents from capturing Signal chats.",
+        "zhHans": "2026 年 11 月 20 日，Signal 宣布在 iOS 27 与受支持的 Android 设备上默认启用截屏与屏幕抓取拦截，以限制移动操作系统 AI 代理捕获 Signal 聊天内容。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-signal-blog-privacy"
+      ]
+    },
+    {
+      "id": "signal-mobile-ai-agent-restrictions-2026-impact",
+      "claimType": "impact",
+      "text": {
+        "en": "Signal's default mobile screenshot block directly restricts built-in OS AI agents from scanning encrypted Signal screens on iOS 27 and supported Android builds while trading off default screenshot convenience for users.",
+        "zhHans": "Signal 默认移动端截屏限制直接阻断了 iOS 27 与受支持 Android 设备上内置 OS AI 代理扫描加密聊天屏幕，同时改变了用户的默认截屏行为。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-signal-blog-privacy",
+        "ea005-signal-thehackernews"
+      ]
+    },
+    {
+      "id": "signal-mobile-ai-agent-restrictions-2026-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "Signal president Meredith Whittaker conceded the workaround is 'incomplete,' noting in Signal's post that it cannot reliably detect all non-Google Android vendor builds, does not block macOS Siri AI, and does not stop deeper agent data-access paths.",
+        "zhHans": "Signal 主席 Meredith Whittaker 坦言该补救措施“并不完整”，并在官方文章中指出其无法可靠检测全部非 Google 厂商 Android 版本、未拦截 macOS Siri AI，也无法封堵更深层的代理数据访问路径。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-signal-blog-privacy",
+        "ea005-signal-techcrunch"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "risk_creation",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Default screenshot blocking reduces screen-capture exposure of encrypted Signal chats to mobile OS AI agents on iOS 27 and supported Android devices, despite acknowledged coverage gaps.",
+        "zhHans": "默认截屏拦截在 iOS 27 与受支持 Android 设备上降低了加密聊天被移动 OS AI 代理抓取的暴露风险，尽管仍存在覆盖缺口。"
+      },
+      "affectedGroups": [
+        "consumers"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-signal-blog-privacy",
+        "ea005-signal-thehackernews"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "ea005-signal-blog-privacy",
+      "supports": [
+        "signal-mobile-ai-agent-restrictions-2026",
+        "signal-mobile-ai-agent-restrictions-2026-core",
+        "signal-mobile-ai-agent-restrictions-2026-impact",
+        "signal-mobile-ai-agent-restrictions-2026-limitation"
+      ]
+    },
+    {
+      "sourceId": "ea005-signal-techcrunch",
+      "supports": [
+        "signal-mobile-ai-agent-restrictions-2026",
+        "signal-mobile-ai-agent-restrictions-2026-limitation"
+      ]
+    },
+    {
+      "sourceId": "ea005-signal-thehackernews",
+      "supports": [
+        "signal-mobile-ai-agent-restrictions-2026",
+        "signal-mobile-ai-agent-restrictions-2026-impact"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "united-airlines-ai-agent-restrictions-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-26",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-26",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/ea005-20261126/signal-mobile-ai-agent-restrictions-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-11-26",
+        "changeType": "created",
+        "summary": "Created isolated EA-005 bilingual reviewed-state candidate from Nov 17-26 full discovery and four-layer Confirm evidence."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "correction",
+        "summary": "Applied all blocking and polish fixes from independent review session 0b5e4807-71c6-4d64-a6a7-325fbe77af19 (impactIndex formula, IMPACT-AUDIT rule 6 separation, EVID-01/02 bindings, LANG-01 parity, and source publication dates)."
+      }
+    ],
+    "publishedAt": "2026-11-27"
+  },
+  "impactIndex": 2
+}

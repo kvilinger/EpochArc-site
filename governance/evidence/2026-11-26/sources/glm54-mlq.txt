@@ -1,0 +1,72 @@
+Z.ai launches GLM-5.4, a 750 billion-parameter model built on a looped Transformer | MLQ.ai
+Skip to content
+MLQ
+SubscribeSign in
+MLQ
+News
+Search companies
+Back to News
+AI
+CHINA
+TECH
+Z.AI
+Z.ai launches GLM-5.4, a 750 billion-parameter model built on a looped Transformer
+Nov 23, 2026
+·
+11:24 AM
+·
+By MLQ.ai Newsroom · Edited by Peter Foy
+·
+2 min read
+Key points
+GLM-5.4 is Z.ai's first flagship on a Loop Transformer architecture, at about 750 billion parameters, the company said [2].
+It runs 28 layers of the GLM-5 base model for two iterations, adding depth without adding parameters [2].
+Z.ai claims intelligence comparable to 2T-3T-parameter models but has published no GLM-5.4 benchmark scores yet [2][3].
+Available now on the GLM Coding Plan, ZCode and Z.ai Chat with vision and a one-million-token context; API 'coming soon' after a safety evaluation, open weights planned [2][3].
+Z.ai, the Chinese AI developer also known as Zhipu, launched GLM-5.4 on Nov. 23, calling it its first flagship model built on a "Loop Transformer" architecture. The company's launch post is titled "Toward Generalized Coding with Our First Loop Transformer" [1][2].
+Z.ai says the roughly 750 billion-parameter model reaches intelligence comparable to models of 2 trillion to 3 trillion parameters. That is the company's claim: no benchmark scores for GLM-5.4 have been published, and a team member said they will come later [2].
+How the loop works
+In a standard Transformer each layer runs once per token. GLM-5.4 instead runs 28 layers of the GLM-5 base model for two passes, making the network deeper without adding weights, according to TestingCatalog's account of the launch post [2]. Z.ai adapted the already pretrained base through continued training rather than training a looped model from scratch, which it says still trails conventional models on the same compute [2].
+To limit serving cost, per-token gates decide how much each pass writes back, the extra loop uses a sliding-window cache rather than a full-context one, and the second pass reuses the first pass's sparse attention indices [2]. On a 30 billion-parameter test model, looping gave the biggest gains in math, science reasoning and long-context tasks, and cut average output length by 10% to 14% on GPQA-Diamond and MMLU-Pro, the company said [2].
+Availability
+GLM-5.4 is live for GLM Coding Plan subscribers, ZCode and Z.ai Chat, adds vision for visual coding, and is listed with a one-million-token context window [2][3]. Users on weekly quotas get 50% more GLM-5.4 usage than they had on GLM-5.3 [2][3]. API access is "coming soon" after a safety evaluation, and open weights are planned once safety hardening is done, with no date given [2]. Z.ai's Hugging Face page did not yet list GLM-5.4 weights on Nov. 23; its newest models there were the GLM-5.3 family from August [4].
+Z.ai, listed in Hong Kong, said earlier this month it plans to buy back up to HK$4 billion of its shares (MLQ.ai coverage). Watch for published benchmarks and API pricing, which will show whether the loop design delivers on the 2T-3T claim.
+Further sources
+[1]
+Z.ai blog: Toward Generalized Coding with Our First Loop Transformer (GLM-5.4, …
+↗
+[2]
+TestingCatalog: Z.ai launches GLM-5.4, its first Loop Transformer model (Nov. 2…
+↗
+[3]
+TechNode: Zhipu rolls out GLM-5.4 with vision and million-token context (Nov. 2…
+↗
+[4]
+Hugging Face: zai-org models
+↗
+This article was produced by MLQ.ai's AI newsroom and checked against primary sources such as company filings, official releases and court documents. Reports from a single outlet are attributed. Editor: Peter Foy. How we work · Spotted an error? Tell us.
+More like this
+Sharon AI installs 8,208 Nvidia B300 GPUs for ESDS in Sydney
+SHAZ·Nov 26
+Jack Ma makes rare visit to Alibaba's T-Head chip unit before its IPO
+BABA·Nov 26
+AI models on one vLLM server passed signals through GPU rounding errors
+Nov 26
+UK watchdog says Meta turned down joint testing of its Muse agent
+META·Nov 26
+ElevenLabs in early talks to raise at a $33 billion valuation
+Nov 26
+MLQ Newsletter
+At the intersection of AI, tech, and markets.
+The stories that matter, in one email. Free — unsubscribe anytime.
+Subscribe
+You're subscribed!
+Share
+𝕏
+f
+in
+✉
+MLQ Pro
+Every report. All the data.
+Full research and analysis, 10+ years of financials, 13F ownership and AI infrastructure data, with filing alerts on the companies you follow.
+See MLQ Pro →

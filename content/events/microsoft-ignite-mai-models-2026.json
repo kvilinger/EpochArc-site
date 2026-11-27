@@ -1,0 +1,135 @@
+{
+  "id": "microsoft-ignite-mai-models-2026",
+  "slug": "microsoft-ignite-mai-models-2026",
+  "date": "2026-11-17",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-17",
+    "zhHans": "2026年11月17日"
+  },
+  "title": {
+    "en": "Microsoft unveils seven in-house MAI models at Ignite 2026, led by MAI Code 2",
+    "zhHans": "微软在 Ignite 2026 发布七款自研 MAI 模型，主打 MAI Code 2"
+  },
+  "searchSummary": {
+    "en": "At Ignite 2026 on November 17, Microsoft launched seven in-house MAI models covering coding (MAI Code 2 and Code 2 Flash), cyber defense, image, realtime voice, medical transcription, and routing, with MAI Code 2 live in GitHub Copilot.",
+    "zhHans": "2026 年 11 月 17 日 Ignite 大会上，微软发布涵盖编程（MAI Code 2 与 Code 2 Flash）、网络防御、图像、实时语音、医疗转录与路由的七款自研 MAI 模型，其中 MAI Code 2 上线 GitHub Copilot。"
+  },
+  "summary": {
+    "en": "On November 17, 2026, Microsoft AI announced seven in-house models at Microsoft Ignite: MAI Code 2 and MAI Code 2 Flash (coding), MAI Cyber 2 Flash (cyber defense), MAI Image 2.7 (image editing/generation), MAI Realtime 1 (speech-to-speech), Dragon Copilot Transcribe (built on MAI Transcribe 2), and Decision 1.1 (routing/decision). MAI Code 2 went live in GitHub Copilot paid plans, while Microsoft's headline price-performance comparisons against Claude Opus 5.5 and GPT-6.1 Sol reflect vendor-reported benchmarks.",
+    "zhHans": "2026 年 11 月 17 日，Microsoft AI 在 Ignite 2026 大会推出七款自研模型：MAI Code 2、MAI Code 2 Flash（编程）、MAI Cyber 2 Flash（网络防御）、MAI Image 2.7（图像生成与编辑）、MAI Realtime 1（实时语音）、Dragon Copilot Transcribe（基于 MAI Transcribe 2 的医疗转录）及 Decision 1.1（决策路由）。其中 MAI Code 2 上线 GitHub Copilot 付费计划；微软公布的相对 Claude Opus 5.5 与 GPT-6.1 Sol 的性价比对比数据系厂商自测结果。"
+  },
+  "narrative": {
+    "en": "The seven-model Ignite lineup expands Microsoft's push toward lower-cost in-house models across GitHub Copilot, Microsoft 365, FabricIQ, and healthcare workflows, reducing reliance on external frontier providers for high-volume tasks. Independent benchmark replication and unaffiliated enterprise adoption across the newly released models have not yet been established.",
+    "zhHans": "此次七款自研模型集中发布，进一步推进微软在 GitHub Copilot、Microsoft 365、FabricIQ 及医疗场景中以低成本自研模型替代高频外部模型调用的布局。各新款模型的独立第三方基准复测与无关联企业生产采用仍有待验证。"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "microsoft-ignite-mai-models-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 17, 2026 at Ignite, Microsoft AI announced seven new in-house MAI models including MAI Code 2, MAI Code 2 Flash, MAI Cyber 2 Flash, MAI Image 2.7, MAI Realtime 1, Dragon Copilot Transcribe, and Decision 1.1.",
+        "zhHans": "2026 年 11 月 17 日 Ignite 大会上，Microsoft AI 宣布推出七款新自研 MAI 模型，包括 MAI Code 2、MAI Code 2 Flash、MAI Cyber 2 Flash、MAI Image 2.7、MAI Realtime 1、Dragon Copilot Transcribe 与 Decision 1.1。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-msft-ignite-7models",
+        "ea005-msft-mai-code-2"
+      ]
+    },
+    {
+      "id": "microsoft-ignite-mai-models-2026-access",
+      "claimType": "impact",
+      "text": {
+        "en": "MAI Code 2 launched in GitHub Copilot paid plans as part of Microsoft's seven-model portfolio targeting lower-cost enterprise coding, security, voice, and routing workloads.",
+        "zhHans": "MAI Code 2 作为微软七款自研模型矩阵核心成员上线 GitHub Copilot 付费计划，面向更低成本的企业编程、安全、语音与路由场景。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-msft-ignite-7models",
+        "ea005-mlq-msft-mai"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "Immediate rollout of MAI Code 2 in GitHub Copilot paid plans and six companion in-house models expands lower-cost enterprise model options across Microsoft's ecosystem.",
+        "zhHans": "MAI Code 2 登陆 GitHub Copilot 付费计划及六款配套自研模型发布，为微软生态开发者与企业增加了低价模型选项。"
+      },
+      "affectedGroups": [
+        "developers",
+        "businesses"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-msft-ignite-7models",
+        "ea005-mlq-msft-mai"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "ea005-msft-ignite-7models",
+      "supports": [
+        "microsoft-ignite-mai-models-2026",
+        "microsoft-ignite-mai-models-2026-core",
+        "microsoft-ignite-mai-models-2026-access"
+      ]
+    },
+    {
+      "sourceId": "ea005-msft-mai-code-2",
+      "supports": [
+        "microsoft-ignite-mai-models-2026",
+        "microsoft-ignite-mai-models-2026-core"
+      ]
+    },
+    {
+      "sourceId": "ea005-mlq-msft-mai",
+      "supports": [
+        "microsoft-ignite-mai-models-2026",
+        "microsoft-ignite-mai-models-2026-access"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "microsoft-mai-transcribe-2-streaming-2026",
+    "microsoft-mai-image-27-preview-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-26",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-26",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/ea005-20261126/microsoft-ignite-mai-models-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-11-26",
+        "changeType": "created",
+        "summary": "Created isolated EA-005 bilingual reviewed-state candidate from Nov 17-26 full discovery and four-layer Confirm evidence."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "correction",
+        "summary": "Applied all blocking and polish fixes from independent review session 0b5e4807-71c6-4d64-a6a7-325fbe77af19 (impactIndex formula, IMPACT-AUDIT rule 6 separation, EVID-01/02 bindings, LANG-01 parity, and source publication dates)."
+      }
+    ],
+    "publishedAt": "2026-11-27"
+  },
+  "impactIndex": 2
+}

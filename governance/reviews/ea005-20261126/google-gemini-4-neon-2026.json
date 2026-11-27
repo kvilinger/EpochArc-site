@@ -1,0 +1,158 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-gemini-4-neon-2026",
+  "subjectDigest": "c6f059d07bfd6d139ec144befd5ddbbd6ced1a82284f5d8cd362608b6ccf9606",
+  "inputsDigest": "056b18713f1d3e367ee01ac14d9741444834931ad0cd69f831b8a338fa4d3cab",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "google-gemini-4-neon-20261118",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "google-gemini-4-neon",
+    "action": "Google launches Gemini 4 Neon across paid API and subscriber tiers",
+    "stage": "available",
+    "dateBasis": "Dated 2026-11-18 per Google official blog publication and rollout statement.",
+    "deduplicationReason": "Distinct model release in the Gemini 4 series after Carbon (2026-11-10) and Hydrogen (2026-11-12).",
+    "comparedEventIds": [
+      "google-gemini-4-carbon-2026",
+      "google-gemini-4-hydrogen-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Core verified action is multi-tier paid product and API rollout of Gemini 4 Neon."
+  },
+  "significance": {
+    "rationale": "L1 paid model launch corroborated by independent Vals AI benchmarks, without yet proving two unaffiliated production deployments.",
+    "whyNotHigher": "L2-PRODUCT-ACCESS requires material_access_change and >= 2 unaffiliated_production_organizations, both currently null.",
+    "whyNotLower": "Verified primary rollout across developer/business/consumer channels plus independent benchmark evaluation.",
+    "comparisonEventIds": [
+      "google-gemini-4-carbon-2026",
+      "google-gemini-4-hydrogen-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": null,
+            "rationale": "Paid-tier availability at $3 input improves price-performance but does not establish a structural licensing or universal access threshold change.",
+            "evidenceIds": []
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No two unaffiliated organizations' real production deployments are independently documented as of Nov 26.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "neon-q1",
+        "neon-q2"
+      ],
+      "observedSince": "2026-11-18",
+      "observedUntil": "2026-11-26",
+      "baseline": "Gemini 4 Neon was unavailable prior to Nov 18, 2026.",
+      "outcome": "Live across paid Gemini API, AI Studio, Gemini for Business, Antigravity, and Pro/Ultra tiers with independent Vals AI #3/43 ranking.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Tiered rollout and initial Vals AI benchmark scores are verified; broader production adoption is still accumulating.",
+    "evidenceIds": [
+      "neon-q1",
+      "neon-q2"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "Reviewers noted omitted rivals on Google's comparison chart, which is a scorecard limitation rather than a factual dispute over the release.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "google-gemini-4-neon-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "neon-q1",
+      "sourceId": "ea005-google-neon-blog",
+      "claimId": "google-gemini-4-neon-2026-core",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "originId": "google-gemini-4-neon-announcement-20261118",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Gemini 4 Neon is rolling out today in the Gemini API in Google AI Studio, Gemini for business (via API and model dropdown), for paid Google AI Pro and Ultra subscribers in Google Antigravity, and for Pro and Ultra subscribers in the Gemini app.",
+      "locator": "google-gemini-4-neon.txt L36",
+      "artifact": "governance/evidence/2026-11-26/sources/google-gemini-4-neon.txt",
+      "sha256": "4f7e40acccf45dd9e12946fbb24df56a57025778bab6cca99524a3cb0e427c0f"
+    },
+    {
+      "id": "neon-q2",
+      "sourceId": "ea005-neon-vals-ai",
+      "claimId": "google-gemini-4-neon-2026-eval",
+      "url": "https://www.vals.ai/models/google_gemini-4-neon",
+      "originId": "vals-ai-gemini-4-neon-evaluation-20261118",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Gemini 4 Neon is a model from Google, released November 18, 2026. It ranks #3 of 43 models on the Vals Index with 69.23%. Its best result is #1 of 100 on Legal Research Bench.",
+      "locator": "neon-vals-ai.txt L92",
+      "artifact": "governance/evidence/2026-11-26/sources/neon-vals-ai.txt",
+      "sha256": "a7fe7c94b8248dab881ddbe245c0ae49cf72d2357977852b8f857ee0581eaace"
+    },
+    {
+      "id": "neon-q3",
+      "sourceId": "ea005-neon-thenovtech",
+      "claimId": "google-gemini-4-neon-2026-eval",
+      "url": "https://www.thenovtech.com/p/googles-mid-tier-gemini-4-neon-beats",
+      "originId": "thenovtech-gemini-4-neon-analysis-20261125",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Gemini 4 Neon scored 61 against Carbon’s 60 on Artificial Analysis’s index, at $3 per million input tokens. Google’s scorecard leaves out two stronger rivals, so who should you pay?",
+      "locator": "neon-thenovtech.txt L5",
+      "artifact": "governance/evidence/2026-11-26/sources/neon-thenovtech.txt",
+      "sha256": "0f71da45acfecc400ef88a285e467e79c690ba1f44520774162a325bd9c26920"
+    },
+    {
+      "id": "neon-q4",
+      "sourceId": "ea005-google-neon-blog",
+      "claimId": "google-gemini-4-neon-2026-eval",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "originId": "google-gemini-4-neon-announcement-20261118",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Neon ranks ahead of comparable models and #3 overall with a score of 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level, landing just behind larger, slower models.",
+      "locator": "google-gemini-4-neon.txt L34",
+      "artifact": "governance/evidence/2026-11-26/sources/google-gemini-4-neon.txt",
+      "sha256": "4f7e40acccf45dd9e12946fbb24df56a57025778bab6cca99524a3cb0e427c0f"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

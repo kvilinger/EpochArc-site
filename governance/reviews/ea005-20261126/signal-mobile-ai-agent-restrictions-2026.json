@@ -1,0 +1,192 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "signal-mobile-ai-agent-restrictions-2026",
+  "subjectDigest": "8a2591343af32ba8d3f78dc404ba9f2c028ffe02976abfa1ada057156fee1a9a",
+  "inputsDigest": "7185860649db32392d382cafd1244ac4f05acb5818118a8a475f81cfd50448a0",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "signal-restricts-mobile-os-ai-agents-20261120",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "signal-ai-agent-privacy-blocks",
+    "action": "Signal blocks mobile screenshots by default to stop OS AI agents from capturing chats",
+    "stage": "deployed",
+    "dateBasis": "Dated 2026-11-20 per Meredith Whittaker's official Signal blog post ('on 20 Nov 2026').",
+    "deduplicationReason": "Distinct privacy-defense measure by Signal targeting mobile OS AI agents; compared with airline web-agent restriction (united-airlines-ai-agent-restrictions-2026).",
+    "comparedEventIds": [
+      "united-airlines-ai-agent-restrictions-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "safety",
+    "reason": "Core action is deploying a privacy/security defense against unauthorized screen capture by OS-level AI agents."
+  },
+  "significance": {
+    "rationale": "L1 single-organization privacy defense deployment; industry-wide adoption across unaffiliated messaging/app developers is not yet established.",
+    "whyNotHigher": "Under L2-SAFETY-PRACTICE, unaffiliated_production_organizations >= 2 is null (only Signal's deployment is verified here).",
+    "whyNotLower": "Verified tier-1 client privacy deployment affecting a major encrypted messaging platform with independent press coverage.",
+    "comparisonEventIds": [
+      "united-airlines-ai-agent-restrictions-2026",
+      "gemini-chat-history-training-controls-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-SAFETY-PRACTICE",
+        "criteria": {
+          "new_safety_practice": {
+            "value": true,
+            "rationale": "Extends default screenshot/screen-capture blocking to mobile operating systems specifically against built-in OS AI agents.",
+            "evidenceIds": [
+              "signal-q1",
+              "signal-q2"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "Only Signal's own deployment is verified; >= 2 unaffiliated organizations adopting matching mobile OS AI-agent blocks are not documented here.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "risk_creation",
+      "observation": "observed",
+      "evidenceIds": [
+        "signal-q2",
+        "signal-q4"
+      ],
+      "observedSince": "2026-11-20",
+      "observedUntil": "2026-11-26",
+      "baseline": "Signal mobile apps on iOS 27 and Android previously did not block OS AI-agent screen capture by default.",
+      "outcome": "Signal deployed default screenshot/screen-capture blocking on iOS 27 and detectable Android AI-assistant capture paths.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Deployment is verified; broader OS-vendor response and real-world protection completeness remain contested.",
+    "evidenceIds": [
+      "signal-q1",
+      "signal-q4"
+    ]
+  },
+  "dispute": {
+    "exists": true,
+    "reason": "Signal publicly challenges Apple, Google, and Microsoft over OS-level AI screen scanning while acknowledging its own workaround is incomplete.",
+    "evidenceIds": [
+      "signal-q3",
+      "signal-q3b",
+      "signal-q3c"
+    ]
+  },
+  "coreFactClaimIds": [
+    "signal-mobile-ai-agent-restrictions-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "signal-q1",
+      "sourceId": "ea005-signal-blog-privacy",
+      "claimId": "signal-mobile-ai-agent-restrictions-2026-core",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "originId": "signal-mobile-ai-agent-restrictions-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "So, we are blocking such capture by preventing screenshots in the app on iOS 27 and when AI assistants attempt to capture screen data on Android.2",
+      "locator": "signal-mobile-ai-agents.txt L11",
+      "artifact": "governance/evidence/2026-11-26/sources/signal-mobile-ai-agents.txt",
+      "sha256": "44b9987ea8a3d71d58f2635ddd4f6fbbfcff36ffa52627e2f5bff02059a6ffd2"
+    },
+    {
+      "id": "signal-q2",
+      "sourceId": "ea005-signal-blog-privacy",
+      "claimId": "signal-mobile-ai-agent-restrictions-2026-impact",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "originId": "signal-mobile-ai-agent-restrictions-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "This means that we are restricting the latest AI agents built into mobile operating systems from potentially capturing and storing your Signal data.",
+      "locator": "signal-mobile-ai-agents.txt L6",
+      "artifact": "governance/evidence/2026-11-26/sources/signal-mobile-ai-agents.txt",
+      "sha256": "44b9987ea8a3d71d58f2635ddd4f6fbbfcff36ffa52627e2f5bff02059a6ffd2"
+    },
+    {
+      "id": "signal-q3",
+      "sourceId": "ea005-signal-techcrunch",
+      "claimId": "signal-mobile-ai-agent-restrictions-2026-limitation",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "originId": "techcrunch-signal-screenshots-coverage-20261121",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "She also admitted this is an “incomplete” solution, as it doesn’t “address other more sneaky ways AI agents could potentially access application data.”",
+      "locator": "signal-techcrunch.txt L62",
+      "artifact": "governance/evidence/2026-11-26/sources/signal-techcrunch.txt",
+      "sha256": "1ce18a5d7e57caa3e4575a1349301c675a5a36eaa35fa21e1103e68e70bcff3d"
+    },
+    {
+      "id": "signal-q3b",
+      "sourceId": "ea005-signal-blog-privacy",
+      "claimId": "signal-mobile-ai-agent-restrictions-2026-limitation",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "originId": "signal-mobile-ai-agent-restrictions-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Careful readers will note that in addition to not being able to cover all Android devices, we are also not blocking Siri AI on macOS. This is because we cannot reliably block screenshots on macOS.",
+      "locator": "signal-mobile-ai-agents.txt L24",
+      "artifact": "governance/evidence/2026-11-26/sources/signal-mobile-ai-agents.txt",
+      "sha256": "44b9987ea8a3d71d58f2635ddd4f6fbbfcff36ffa52627e2f5bff02059a6ffd2"
+    },
+    {
+      "id": "signal-q3c",
+      "sourceId": "ea005-signal-blog-privacy",
+      "claimId": "signal-mobile-ai-agent-restrictions-2026-limitation",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "originId": "signal-mobile-ai-agent-restrictions-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "There are multiple versions of Android beyond the Google-provided distributions on Pixel devices. For many vendors, we don’t have a reliable way to detect when a screenshot was attempted if screenshots are already disabled.",
+      "locator": "signal-mobile-ai-agents.txt L23",
+      "artifact": "governance/evidence/2026-11-26/sources/signal-mobile-ai-agents.txt",
+      "sha256": "44b9987ea8a3d71d58f2635ddd4f6fbbfcff36ffa52627e2f5bff02059a6ffd2"
+    },
+    {
+      "id": "signal-q4",
+      "sourceId": "ea005-signal-thehackernews",
+      "claimId": "signal-mobile-ai-agent-restrictions-2026-impact",
+      "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+      "originId": "thn-signal-ai-agents-coverage-20261121",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\"",
+      "locator": "signal-thehackernews.txt L24",
+      "artifact": "governance/evidence/2026-11-26/sources/signal-thehackernews.txt",
+      "sha256": "bf72027a9cdef444524bd13a13034608f4589ede2a81ea32004be4d8b9b66441"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

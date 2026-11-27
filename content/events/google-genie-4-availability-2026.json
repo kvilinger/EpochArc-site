@@ -1,0 +1,134 @@
+{
+  "id": "google-genie-4-availability-2026",
+  "slug": "google-genie-4-availability-2026",
+  "date": "2026-11-18",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-18",
+    "zhHans": "2026年11月18日"
+  },
+  "title": {
+    "en": "Google opens Genie 4 world model in Project Genie and the Gemini API",
+    "zhHans": "Google 向 Project Genie 订阅用户与 Gemini API 开发者开放 Genie 4 世界模型"
+  },
+  "searchSummary": {
+    "en": "Google moved Genie 4 out of research preview on November 18, 2026 via Project Genie for AI Ultra subscribers and opened paid developer access through the Gemini Interactions API and AI Studio on November 19.",
+    "zhHans": "Google 于 2026 年 11 月 18 日面向 AI Ultra 订阅用户在 Project Genie 推送 Genie 4，并于 11 月 19 日通过 Gemini Interactions API 与 AI Studio 向付费开发者开放接入。"
+  },
+  "summary": {
+    "en": "On November 18, 2026, Google DeepMind and Google Labs began rolling out the Genie 4 interactive world model to eligible Google AI Ultra subscribers inside Project Genie, adding real-time text modification, native audio, a creative agent, and a community gallery. On November 19, Google opened Genie 4 to paid-tier developers via the Gemini API (Interactions API) and Google AI Studio, streaming 720p interactive worlds at 24 frames per second with synchronized native audio.",
+    "zhHans": "2026 年 11 月 18 日，Google DeepMind 与 Google Labs 开始在 Project Genie 中向符合条件的 Google AI Ultra 订阅用户推送 Genie 4 交互式世界模型，支持实时文本修改、原生音频、创作代理与社区画廊。次日（11 月 19 日），Google 通过 Gemini API（Interactions API）和 Google AI Studio 向付费开发者开放 Genie 4，支持以 720p、24fps 及同步原生音频流式生成可交互世界。"
+  },
+  "narrative": {
+    "en": "The two-day rollout marks Genie 4's transition from its October 27 research preview into paid consumer and developer availability—making it Google's first world model exposed through the Gemini API. Access remains gated to AI Ultra subscribers and paid API tiers (reported at roughly $0.10 per second of streamed video), and independent production adoption has not yet been demonstrated.",
+    "zhHans": "连续两日的上线标志着 Genie 4 从 10 月 27 日研究预览正式迈入付费用户与开发者可用阶段，也是 Google 首次通过 Gemini API 对外开放世界模型。目前访问仍限于 AI Ultra 订阅及付费 API 层（媒体报道流式视频计费约每秒 0.10 美元），外部独立生产采用尚待观察。"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "google-genie-4-availability-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "Google began rolling out Genie 4 to eligible AI Ultra subscribers in Project Genie on November 18, 2026 and opened developer access through the Gemini API and Google AI Studio on November 19.",
+        "zhHans": "Google 于 2026 年 11 月 18 日在 Project Genie 向符合条件的 AI Ultra 用户推送 Genie 4，并于 11 月 19 日通过 Gemini API 与 Google AI Studio 向开发者开放。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-google-genie4-project",
+        "ea005-google-genie4-api"
+      ]
+    },
+    {
+      "id": "google-genie-4-availability-2026-access",
+      "claimType": "impact",
+      "text": {
+        "en": "Opening Genie 4 in Project Genie and the paid Gemini API moves Google's interactive world model from research preview into self-serve paid developer and Ultra subscriber access.",
+        "zhHans": "Genie 4 上线 Project Genie 与付费 Gemini API，使 Google 交互式世界模型从研究预览进入付费开发者与 Ultra 订阅用户自助可用阶段。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-google-genie4-api",
+        "ea005-testingcatalog-genie4"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "dimension": "access_democratization",
+      "severity": 1,
+      "direction": "positive",
+      "description": {
+        "en": "First paid consumer (AI Ultra) and developer API availability for Genie 4 interactive 720p/24fps world generation, transitioning out of closed research preview.",
+        "zhHans": "Genie 4 交互式 720p/24fps 世界生成首次走出封闭研究预览，向 AI Ultra 订阅用户与付费 API 开发者开放。"
+      },
+      "affectedGroups": [
+        "developers",
+        "consumers"
+      ],
+      "timeframe": "immediate",
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-google-genie4-api",
+        "ea005-testingcatalog-genie4"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "ea005-google-genie4-project",
+      "supports": [
+        "google-genie-4-availability-2026",
+        "google-genie-4-availability-2026-core"
+      ]
+    },
+    {
+      "sourceId": "ea005-google-genie4-api",
+      "supports": [
+        "google-genie-4-availability-2026",
+        "google-genie-4-availability-2026-core",
+        "google-genie-4-availability-2026-access"
+      ]
+    },
+    {
+      "sourceId": "ea005-testingcatalog-genie4",
+      "supports": [
+        "google-genie-4-availability-2026",
+        "google-genie-4-availability-2026-access"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "genie-4-world-simulation-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-26",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-26",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/ea005-20261126/google-genie-4-availability-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-11-26",
+        "changeType": "created",
+        "summary": "Created isolated EA-005 bilingual reviewed-state candidate from Nov 17-26 full discovery and four-layer Confirm evidence."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "correction",
+        "summary": "Applied all blocking and polish fixes from independent review session 0b5e4807-71c6-4d64-a6a7-325fbe77af19 (impactIndex formula, IMPACT-AUDIT rule 6 separation, EVID-01/02 bindings, LANG-01 parity, and source publication dates)."
+      }
+    ],
+    "publishedAt": "2026-11-27"
+  },
+  "impactIndex": 2
+}

@@ -1,0 +1,170 @@
+Google opens Genie 4 world model to Ultra users | Techlantis
+Skip to content
+Techlantis
+Search⌘K
+Esc
+Jump to
+Latest news
+Explainers
+AI tools directory
+All topics
+JoinSubscribe →
+AI·News & analysis
+Google opens Genie 4 to Ultra subscribers and developers
+Google DeepMind is rolling Genie 4 into Project Genie for AI Ultra subscribers, adds a creative agent and a community gallery, and a day later opens the model to developers through the Gemini API.
+By Dan Kost aka Poseidan·9 min readNovember 19, 2026·
+Photo: Gciriani / Wikimedia Commons, CC BY-SA 4.0
+Tide
+Wave
+Sci-fi
+8/10
+Reality
+Shipping
+Type a sentence, then walk around inside it.How we rate
+The Squeeze
+Google DeepMind began rolling Genie 4, its world model, out to eligible Google AI Ultra subscribers inside Project Genie on November 18.
+You can type prompts mid-session to change the weather or add characters, with native audio, and a new agent and community gallery come with it. A day later, developers got Genie 4 through the Gemini API and Google AI Studio. Google AI Pro members can join a waitlist.
+What to know
+1Google DeepMind began rolling Genie 4 out to eligible Google AI Ultra subscribers on November 18, 2026, inside Project Genie. AI Pro members can join a waitlist.
+2Genie 4 lets you change a world mid-session with a typed prompt, and it adds sound that follows the scene, from background noise to spoken dialogue.
+3A new Project Genie agent builds worlds from a conversation, and a community gallery lets people publish, explore and remix them.
+4On November 19, Genie 4 reached developers through the Gemini API and Google AI Studio, with 720p worlds at 24 frames per second.
+Google DeepMind announced that Genie 4, its newest world model, is now open to eligible Google AI Ultra subscribers inside Project Genie. You type a sentence, and you step into a world that answers back.
+That is the news. The fun part: you can change the weather while you stand in it.
+First, what's a world model?
+Most AI you have used makes a finished thing: a paragraph, a picture, a video clip. A world model works differently. It is an AI that predicts what happens next in a place, again and again, as you move around.
+Think of a video game with no game designer. Nobody built the hills or the rules. The model makes up each moment as you walk, and it tries to keep the scene believable.
+Google calls Genie 4 its most realistic and interactive world model yet. It first appeared on October 27 as a research preview for a small group of trusted testers. This week is the first time paying subscribers can try it.
+Introducing the new Project Genie, powered by Genie 4 · Video: Google DeepMind
+What can you do with Genie 4?
+Google says the big change is control. While you navigate, you can type a new prompt and edit the world in real time.
+Weather: Shift a sunny hill into a storm without starting over.
+Characters: Drop a new person or creature into the scene.
+Direction: Redirect the action when the story needs a nudge.
+Sound: Hear audio that adapts as the scene unfolds, from ambient noise to character dialogue.
+For the first time, Google says, Genie 4 pairs its visuals with real-time native audio. Native means the model makes the sound itself, rather than a separate tool adding it later.
+In real life You start in a hillside cafe. You type "turn it into a glass pavilion in the desert," and the walls, the light and the background noise change while you are still sitting there.
+What is the Project Genie agent?
+Project Genie also gets a new helper. Google calls it the Project Genie agent, an AI that does tasks for you instead of only answering questions.
+You describe your idea in plain words, and the agent uses Google's family of image, video and sound models to build the first look of your world. It also writes a background score that fits the mood.
+You can bring Gemini models into the session too. Google says Gemini watches what is on screen, suggests where to go next with tappable chips, and can trigger events as your trip goes on.
+Why it matters: until now, building a world meant writing one good prompt. Now it can be a back-and-forth chat, which is a lot easier for people who are not prompt experts.
+What's in the community gallery?
+Project Genie now has a gallery where you can browse curated worlds and worlds made by other people. You can publish your own, and anyone can remix what they find. Remixing means tweaking the world's layout, soundtrack or rules to make your own version.
+Google showed a few examples:
+Living Memory: turns personal photos into spaces you can walk through.
+Dino Field Guide: prehistoric habitats built from 360-degree panorama photos.
+Rock Paper Scissors: themed objects face off on a desk, with Gemini as the referee.
+Villa Giallo: a room-by-room mystery in a gothic manor, made with creative technologist Will, known as BLVCKL!GHT.
+The Life of Ants: a colony seen from an ant's point of view, made with filmmaker Anand Gandhi.
+What changed for Genie 3?
+Genie 3 did not disappear. It stays in the model picker for people who want longer runs. Google says today's Genie 3 update brings three upgrades.
+Longer sessions: up to 3 minutes per generation, up from 60 seconds.
+World chaining: link several worlds into one longer journey.
+Panorama grounding: start a new world from a 360-degree panorama image.
+Google also shows real-time events in Genie 3, such as flying across forests, underwater ruins and icy seas, and summoning a dragon to ride on command.
+How do developers get it?
+A day after the Project Genie launch, Google opened Genie 4 to developers. It is available through the Gemini API, using the Interactions API, and in Google AI Studio. An API is a doorway that lets other apps plug into a service.
+Developers can start from a text prompt, a reference image or both. Google says Genie 4 then makes continuous 720p worlds at 24 frames per second, with synchronized audio. That includes ambient sound, sound effects and character dialogue.
+Controls are real-time keyboard movement plus live text prompts. You can change weather, lighting, objects or events on the fly, and Gemini reasoning keeps the world state consistent.
+Google names three uses: prototyping interactive experiences, visualizing designs for spatial concepts, and training robots and AI agents, which means programs that do tasks on their own. Every output carries an invisible SynthID watermark.
+Why would robots care?
+The October 27 preview included a robotics test. Google paired Genie 4 with Gemini 4 Argon, its reasoning model, to simulate Apptronik's Apollo humanoid robot playing checkers with a person.
+Argon broke the job into steps, and Genie 4 drew each step as it happened. The idea is to try robot behavior in a simulation before trying it in the real world.
+Google research director Tejas Kulkarni described where this is going at the launch briefing. "What we'll increasingly see in the future are these hybrid world models, where you have a combination of Gemini writing code and text, and Genie ingesting that in real time and simulating reality at different levels of abstraction," he said.
+In the same preview, Google also said Gemini 3.8 Flash works as a director, planning steps and checking frames while Genie makes the visuals.
+What are the limits?
+Google is open about the gaps. Genie 3 and Genie 4 remain world models in the frontier research space, it says. The open problems are camera latency (the delay between your move and the picture), intricate physical interactions, real-time audio precision and long-term scene permanence.
+Scene permanence is a simple idea. If you look away from a table and look back, the cup should still be there. In current models, details and objects can drift the longer a simulation runs.
+At the October preview, Google engineers also said they had not yet worked out how to make audio accurate or in-world text readable. Google DeepMind engineer Diego Rivas stressed that it is still early days and that the final product experience is not set.
+The catch: Ultra is the top Google AI subscription tier. People on Google AI Pro get a waitlist for now, and Google has not given a date.
+Who else is building worlds?
+Google is not alone. Runway released its second world model, GWM Worlds 2, a couple of months before Genie 4. AMD agreed in September to acquire Fei-Fei Li's World Labs, and Amazon has been reported to be in talks to buy Decart.
+Not everyone agrees on what counts as a world model. One benchmark called What-If World tested nine video models on predicting how changed physical conditions change outcomes, and none scored above 52%. Google's Genie models were not part of that test.
+So the gap between a world that looks right and a world that behaves like real physics is still wide. That is why Google calls this research, even with paying users inside.
+What it means for you
+Ultra subscribers: open Project Genie, pick Genie 4 and try editing a world mid-session. Genie 3 is still there for longer runs.
+Pro subscribers: join the waitlist on the Project Genie page. There is no date yet.
+Developers: Genie 4 is in the Gemini API and Google AI Studio, so you can test worlds with keyboard controls and live prompts.
+Everyone else: expect AI-made worlds to be watermarked with SynthID, and treat them as demos, not footage.
+The bottom line
+Genie 4 moves from a closed preview to paying users and developers in two days. You can now type a world, walk through it, hear it and change it as you go.
+It is still research, with real limits on physics, sound and memory. But the gallery and the agent show where Google wants this to go: worlds that anyone can make, share and remix.
+Key facts
+RolloutNovember 18, 2026 (Ultra subscribers)
+Developer accessNovember 19, 2026 (Gemini API, AI Studio)
+Output720p at 24 fps with native audio
+WaitlistGoogle AI Pro members
+WatermarkSynthID on all video and audio
+Dan's take
+I typed a sentence in my head and walked into a hillside cafe. Then I typed "make it rain" and nobody got wet. That is the best commute I have ever had.
+The part I like most is the gallery. Somebody out there is already building a world that is just a very detailed desk, and I will be there in five minutes.
+Dan Kost, aka Poseidan
+Know someone who'd get this?
+Send it their way. Every share helps us grow.
+Share
+Got questions?
+Quick answers, plain words
+What is Genie 4?
++
+Genie 4 is Google DeepMind's newest world model. It generates an interactive world from a text prompt or an image, lets you move around in it, and adds matching sound.
+What is a world model?
++
+A world model is an AI that predicts how a place changes as things happen in it. Instead of making a fixed video, it keeps making the next moment based on what you do.
+Who can use Genie 4 right now?
++
+Eligible Google AI Ultra subscribers can use it in Project Genie starting November 18. Google AI Pro members can join a waitlist on the same page. Developers can use it through the Gemini API and Google AI Studio.
+What is Project Genie?
++
+Project Genie is Google's web experience for generating and exploring interactive worlds. It started earlier this year as an experimental research prototype and now includes Genie 4, Genie 3, an agent and a gallery.
+Can I change the world while I am inside it?
++
+Yes. With Genie 4 you can type a new prompt mid-session to shift the weather, drop in a character or redirect the action, and the world updates in real time.
+Does Genie 4 make sound?
++
+Yes. Google says Genie 4 pairs its visuals with real-time native audio that adapts as the scene unfolds, from ambient soundscapes to character dialogue.
+Is Genie 3 still available?
++
+Yes. Genie 3 stays in Project Genie's model picker for longer runs and panorama-seeded spaces. Sessions now last up to 3 minutes per generation, up from 60 seconds, and worlds can be linked together.
+How are the worlds marked as AI-made?
++
+All video and audio generated in Project Genie includes SynthID watermarking, an invisible mark that tools can read later. Google also says model inputs and outputs go through safety screenings.
+What can Genie 4 not do well yet?
++
+Google lists camera latency (the delay between your move and the picture), intricate physical interactions, real-time audio precision and long-term scene permanence as open challenges. In plain terms, details can drift the longer a world runs.
+What can developers build with it?
++
+Google suggests prototyping interactive experiences, visualizing designs for spatial concepts, and training robots and AI agents (programs that do tasks on their own). Developers start from a text prompt, a reference image or both.
+SourcesGoogle DeepMind, Google
+Google DeepMindprimary
+Google
+Topics and tagsGoogle, AI agents, google deepmind, genie 4
+GoogleAI agents#google deepmind#genie 4#world models#gemini api
+Get the next one in your inbox.
+AI, tech and robots in five minutes. Free, every morning.
+Email addressJoin free
+Go deeper
+ExplainerWhat is a humanoid robot?A humanoid robot is a machine built in the shape of a person, with a torso, head, arms and usually legs, so it can...
+ExplainerWhat is physical AI?Physical AI is artificial intelligence that runs machines in the real world, like robots and self-driving cars. It...
+Related guide
+Guide, 8 minHow to use Gemini: Live camera help, Skills and Android scam protectionUse Gemini Live with your camera, prepare for Gems turning into Skills, and switch on the opt-in scam protection in Google Messages.
+Related stories
+AI
+DeepMind's AlphaGenome 2 finds nearly twice as many disease-linked DNA variants
+Google DeepMind's new DNA model predicts how tiny genetic changes act inside specific cell types, and it is open to researchers today.
+November 12, 2026
+AI
+Amodei says handing governance to AI is "a bad idea" and calls the claim absurd
+Anthropic's CEO answered rivals who say his company wants humans to give up control, and drew a line at AI that improves itself without people.
+November 26, 2026
+AI
+42 state attorneys general move to block Character.AI's auction of user chats
+A bipartisan group asks a bankruptcy judge to stop the sale of private chats from more than 21 million US accounts, including 2.1 million registered to minors.
+November 25, 2026
+More in brief
+Neuralink gets FDA approval for its first pivotal brain implant trialNov 26
+WhatsApp now lets you schedule messages up to 14 days aheadNov 25
+Microsoft declares Code Red after its worst Exchange Online outageNov 25
+Ladybird ships its first downloadable alpha, a browser built from scratchNov 25
+FCC lets SpaceX plan up to 1 million AI data center satellitesNov 25
+Amazon Autos is coming to the UK, with £99 car reservationsNov 25

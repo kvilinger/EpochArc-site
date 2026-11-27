@@ -1,0 +1,160 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "google-genie-4-availability-2026",
+  "subjectDigest": "72ce96f1bdf0707906efbd228c7259fcf4758340d3162259273732287a82659b",
+  "inputsDigest": "4ee7e2d32d3d5a30a9137ac6c2e9b9e1e1d2c9e17b8d5e8ee0e84883ea5f4b36",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "google-genie-4-availability-and-api-20261118",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "google-genie-4",
+    "action": "Google opens Genie 4 world model in Project Genie and the Gemini API",
+    "stage": "available",
+    "dateBasis": "Dated 2026-11-18 when public subscriber rollout began in Project Genie, with Nov 19 Gemini API developer opening documented in the same transition from research preview.",
+    "deduplicationReason": "Distinct paid consumer and developer API availability stage following the Oct 27 research preview (genie-4-world-simulation-2026).",
+    "comparedEventIds": [
+      "genie-4-world-simulation-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "product",
+    "reason": "Core action is opening paid product (Project Genie Ultra) and developer API availability."
+  },
+  "significance": {
+    "rationale": "L1 paid rollout of a world model via consumer app and developer API; unaffiliated production deployments remain unverified.",
+    "whyNotHigher": "Under L2-PRODUCT-ACCESS, unaffiliated_production_organizations >= 2 is null as of Nov 26.",
+    "whyNotLower": "Verified primary transition from research preview to live paid consumer and API access.",
+    "comparisonEventIds": [
+      "genie-4-world-simulation-2026",
+      "google-gemini-4-carbon-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-PRODUCT-ACCESS",
+        "criteria": {
+          "material_access_change": {
+            "value": true,
+            "rationale": "Moves Genie 4 from closed research preview into self-serve paid developer API and AI Ultra subscriber access.",
+            "evidenceIds": [
+              "genie4-q1",
+              "genie4-q2"
+            ]
+          },
+          "unaffiliated_production_organizations": {
+            "value": null,
+            "rationale": "No two unaffiliated organizations' real production deployments using Genie 4 API are independently verified yet.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "genie4-q4",
+        "genie4-q3"
+      ],
+      "observedSince": "2026-11-18",
+      "observedUntil": "2026-11-26",
+      "baseline": "Genie 4 was limited to research preview following its Oct 27 announcement.",
+      "outcome": "Became accessible to eligible AI Ultra subscribers (Nov 18) and paid Gemini API / AI Studio developers (Nov 19).",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Paid rollout and API access are confirmed; developer uptake and production durability remain early.",
+    "evidenceIds": [
+      "genie4-q1",
+      "genie4-q2"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No factual dispute regarding availability or pricing tier.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "google-genie-4-availability-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "genie4-q1",
+      "sourceId": "ea005-google-genie4-project",
+      "claimId": "google-genie-4-availability-2026-core",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "originId": "google-genie-4-project-genie-rollout-20261118",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "We are rolling out Genie 4 to eligible Google AI Ultra subscribers for creating interactive worlds.",
+      "locator": "google-genie-4-project.txt L24",
+      "artifact": "governance/evidence/2026-11-26/sources/google-genie-4-project.txt",
+      "sha256": "9561098f4d383b524549b29f32b7a6c7c41e68961929d3ecbb4ffcea35a70cff"
+    },
+    {
+      "id": "genie4-q2",
+      "sourceId": "ea005-google-genie4-api",
+      "claimId": "google-genie-4-availability-2026-core",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+      "originId": "google-genie-4-gemini-api-launch-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Following yesterday's Genie 4 launch, Genie 4 is now available for developers through the Gemini API (via the Interactions API) and Google AI Studio.",
+      "locator": "google-genie-4-api.txt L4",
+      "artifact": "governance/evidence/2026-11-26/sources/google-genie-4-api.txt",
+      "sha256": "fa68b399e074f385d3d86a31b9b5cffe5b297c954b6c7acf350ab023a1f4cbf0"
+    },
+    {
+      "id": "genie4-q3",
+      "sourceId": "ea005-testingcatalog-genie4",
+      "claimId": "google-genie-4-availability-2026-access",
+      "url": "https://www.testingcatalog.com/google-opens-genie-4-world-model-to-developers-in-gemini-api/",
+      "originId": "testingcatalog-genie4-api-coverage-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "reported",
+      "quote": "Genie 4 is now in the Gemini API and Google AI Studio for paid-tier developers, a day after Project Genie, at roughly $0.10 per second of streamed video.",
+      "locator": "genie4-testingcatalog.txt L15",
+      "artifact": "governance/evidence/2026-11-26/sources/genie4-testingcatalog.txt",
+      "sha256": "cd08022b5845147ffa1277e0811453367298f8316f115145c2a8d02c51a03344"
+    },
+    {
+      "id": "genie4-q4",
+      "sourceId": "ea005-google-genie4-api",
+      "claimId": "google-genie-4-availability-2026-access",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+      "originId": "google-genie-4-gemini-api-launch-20261119",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Starting from a text prompt, a reference image, or both, developers can experiment with generating continuous 720p worlds at 24fps with synchronized native audio",
+      "locator": "google-genie-4-api.txt L5",
+      "artifact": "governance/evidence/2026-11-26/sources/google-genie-4-api.txt",
+      "sha256": "fa68b399e074f385d3d86a31b9b5cffe5b297c954b6c7acf350ab023a1f4cbf0"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

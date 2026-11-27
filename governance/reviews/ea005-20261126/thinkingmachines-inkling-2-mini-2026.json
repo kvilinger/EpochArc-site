@@ -1,0 +1,162 @@
+{
+  "policyVersion": "2.4",
+  "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+  "kind": "event",
+  "subjectId": "thinkingmachines-inkling-2-mini-2026",
+  "subjectDigest": "e8f0880cb612fba431ca59d90416331ce633c9d4c2f52cef160964b37e8c3b5b",
+  "inputsDigest": "a16e8b5749ff92077060050ad61aaf50938d688e5ad0f868e90d2f7f78de98d8",
+  "evidenceCutoff": "2026-11-26",
+  "preparedBy": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-neon-high",
+  "reviewedBy": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewMethod": "independent_model",
+  "limitations": [
+    "Offline contract validation cannot verify semantic truth, legal sufficiency, or complete web recall; discovery channels hf-papers, hacker-news, reddit-search, and x-search have partial coverage, 2026-11-26 is partial-day UTC, and the-batch Nov 26 issue had not yet arrived by cutoff.",
+    "Independent review was conducted in a distinct read-only Antigravity subagent session (0b5e4807-71c6-4d64-a6a7-325fbe77af19, Round-2 verdict ACCEPT_LIMITED) using the same model family (independent_model, NOT a cross-model experiment); explicit human approval (PUB-01) for the exact version remains required before any formal repo write, commit/push, or publication."
+  ],
+  "languageReview": {
+    "factsAligned": true,
+    "notes": "Bilingual EN and zhHans titles, summaries, narratives, claims, and impacts audited and aligned against verbatim evidence ledger following independent review round 1 fixes."
+  },
+  "runId": "latest-data-full-2026-11-26",
+  "candidateId": "thinkingmachines-inkling-2-mini-20261120",
+  "runDigest": "4c75b6dda28ba53c5f3391dd40e04d5bb6c257efde5d907b253b1016143355a9",
+  "identity": {
+    "seriesId": "thinkingmachines-inkling-2-mini",
+    "action": "Thinking Machines Lab releases open-weight looped transformer Inkling 2 Mini",
+    "stage": "available",
+    "dateBasis": "Dated 2026-11-20 per official Thinking Machines Lab release post, model card, and Artificial Analysis report.",
+    "deduplicationReason": "Distinct model (Inkling 2 Mini with immediate open weights) separate from Inkling 2 Small (2026-11-05, Tinker-only with deferred weights).",
+    "comparedEventIds": [
+      "inkling-2-small-tinker-access-2026"
+    ],
+    "decision": "new"
+  },
+  "classification": {
+    "primary": "capability",
+    "secondaryClaimId": "thinkingmachines-inkling-2-mini-2026-openweights",
+    "reason": "Primary action is introducing a looped-MoE model architecture; secondary 'product' category is bound to immediate open-weight Hugging Face and Tinker availability."
+  },
+  "significance": {
+    "rationale": "L1 open-weight looped transformer release with independent Artificial Analysis verification, pending follow-on works or unaffiliated production deployments.",
+    "whyNotHigher": "Under L2-METHOD and L2-PRODUCT-ACCESS, independent_follow_on_works >= 2 and unaffiliated_production_organizations >= 2 are null as of Nov 26.",
+    "whyNotLower": "Verified primary open-weight release plus independent Artificial Analysis compute-efficiency verification.",
+    "comparisonEventIds": [
+      "inkling-2-small-tinker-access-2026",
+      "mistral-large-4-open-weights-2026"
+    ],
+    "routes": [
+      {
+        "ruleId": "L2-METHOD",
+        "criteria": {
+          "new_method_or_framework": {
+            "value": true,
+            "rationale": "Ships one of the first open-weight looped MoE models with native NVFP4/MXFP8 deployment and variable-loop research checkpoint.",
+            "evidenceIds": [
+              "inkling-q1",
+              "inkling-q4"
+            ]
+          },
+          "independent_follow_on_works": {
+            "value": null,
+            "rationale": "Only 6 days post-release; >= 2 independent follow-on research works are not yet documented.",
+            "evidenceIds": []
+          }
+        }
+      }
+    ]
+  },
+  "impactBasis": [
+    {
+      "dimension": "access_democratization",
+      "observation": "observed",
+      "evidenceIds": [
+        "inkling-q2",
+        "inkling-q3",
+        "inkling-q4"
+      ],
+      "observedSince": "2026-11-20",
+      "observedUntil": "2026-11-26",
+      "baseline": "Prior Inkling 2 Small release (Nov 5) deferred open weights and restricted access to Tinker.",
+      "outcome": "Inkling 2 Mini shipped immediately with downloadable open weights on Hugging Face and independent Artificial Analysis efficiency verification.",
+      "materialChange": false
+    }
+  ],
+  "consensus": {
+    "level": "emerging",
+    "reason": "Open-weight availability and Artificial Analysis efficiency measurement are verified; long-term adoption is still accumulating.",
+    "evidenceIds": [
+      "inkling-q2",
+      "inkling-q4"
+    ]
+  },
+  "dispute": {
+    "exists": false,
+    "reason": "No factual dispute; Artificial Analysis explicitly noted the tradeoff of ~38% more output tokens for ~2.8x lower compute proxy.",
+    "evidenceIds": []
+  },
+  "coreFactClaimIds": [
+    "thinkingmachines-inkling-2-mini-2026-core"
+  ],
+  "evidence": [
+    {
+      "id": "inkling-q1",
+      "sourceId": "ea005-tml-inkling-2-mini",
+      "claimId": "thinkingmachines-inkling-2-mini-2026-core",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "originId": "tml-inkling-2-mini-release-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Inkling 2 Mini is a Mixture-of-Experts model with 26.4B total parameters, 3.4B active, and 5.4B weight activations per token to account for looping.",
+      "locator": "thinkingmachines-inkling-2-mini.txt L15",
+      "artifact": "governance/evidence/2026-11-26/sources/thinkingmachines-inkling-2-mini.txt",
+      "sha256": "9a9cc02ab9835c806a9537055d16e4d9d2547ca67a718ca26314e9ab7d21d605"
+    },
+    {
+      "id": "inkling-q2",
+      "sourceId": "ea005-tml-inkling-2-mini",
+      "claimId": "thinkingmachines-inkling-2-mini-2026-openweights",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "originId": "tml-inkling-2-mini-release-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "Inkling 2 Mini is released with open weights and is available on Tinker today for inference and customization.",
+      "locator": "thinkingmachines-inkling-2-mini.txt L23",
+      "artifact": "governance/evidence/2026-11-26/sources/thinkingmachines-inkling-2-mini.txt",
+      "sha256": "9a9cc02ab9835c806a9537055d16e4d9d2547ca67a718ca26314e9ab7d21d605"
+    },
+    {
+      "id": "inkling-q3",
+      "sourceId": "ea005-tml-inkling-model-card",
+      "claimId": "thinkingmachines-inkling-2-mini-2026-openweights",
+      "url": "https://thinkingmachines.ai/model-card/inkling-2-mini/",
+      "originId": "tml-inkling-2-mini-release-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "primary",
+      "verification": "direct",
+      "quote": "The weights are available for download through Hugging Face here.",
+      "locator": "inkling-model-card.txt L35",
+      "artifact": "governance/evidence/2026-11-26/sources/inkling-model-card.txt",
+      "sha256": "e2008e127709e767d9a00a1f2d0b83af734ebd0f28b79a320100d5d9799eb3c1"
+    },
+    {
+      "id": "inkling-q4",
+      "sourceId": "ea005-aa-inkling-2-mini",
+      "claimId": "thinkingmachines-inkling-2-mini-2026-openweights",
+      "url": "https://artificialanalysis.ai/articles/inkling-2-mini",
+      "originId": "aa-inkling-2-mini-independent-eval-20261120",
+      "accessedAt": "2026-11-26",
+      "relationship": "independent",
+      "verification": "independent_verification",
+      "quote": "Inkling 2 Mini uses ~38% more output tokens than Qwen3.8 27B for the same Intelligence Index score, but ~2.8x less compute.",
+      "locator": "inkling-artificialanalysis.txt L13",
+      "artifact": "governance/evidence/2026-11-26/sources/inkling-artificialanalysis.txt",
+      "sha256": "b0fc46ad9bcb773f48bca6ac146774401e6540d4dd921b1f92d14d29e066a151"
+    }
+  ],
+  "producerSessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "reviewerSessionId": "0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+  "reviewerModel": "gemini-4-neon-high"
+}

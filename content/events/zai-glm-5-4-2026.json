@@ -1,0 +1,109 @@
+{
+  "id": "zai-glm-5-4-2026",
+  "slug": "zai-glm-5-4-2026",
+  "date": "2026-11-23",
+  "datePrecision": "day",
+  "displayDate": {
+    "en": "2026-11-23",
+    "zhHans": "2026年11月23日"
+  },
+  "title": {
+    "en": "Z.ai releases GLM-5.4, its first Loop Transformer flagship, on hosted plans",
+    "zhHans": "Z.ai（智谱）在托管产品上线首个 Loop Transformer 旗舰模型 GLM-5.4"
+  },
+  "searchSummary": {
+    "en": "On November 23, 2026, Z.ai launched GLM-5.4—looping 28 layers of its 750B GLM-5 base twice—across GLM Coding Plan, ZCode, and Z.ai Chat, while deferring API access, open weights, and public benchmarks.",
+    "zhHans": "2026 年 11 月 23 日，Z.ai 在 GLM Coding Plan、ZCode 与 Z.ai Chat 上线首个循环 Transformer 旗舰模型 GLM-5.4（将 750B 基座的 28 层循环执行两次），API、开源权重与完整基准成绩暂未同步发布。"
+  },
+  "summary": {
+    "en": "On November 23, 2026, Z.ai (Zhipu) launched GLM-5.4, its first flagship model built on a Loop Transformer architecture that executes 28 layers of its 750B GLM-5 base across two iterations using per-token gates, a hybrid sliding-window KV cache, and sparse attention index reuse. GLM-5.4 became live on GLM Coding Plan, ZCode, and Z.ai Chat, while Z.ai listed standard API access as coming soon and stated open weights will follow safety hardening. Independent reporting noted that Z.ai had not yet published GLM-5.4 benchmark scores at launch.",
+    "zhHans": "2026 年 11 月 23 日，Z.ai（智谱）发布首个基于 Loop Transformer 架构的旗舰模型 GLM-5.4，在 750B GLM-5 基座上将 28 层网络循环执行两次，并结合逐 token 门控、混合滑动窗口 KV 缓存与稀疏注意力索引复用。GLM-5.4 已在 GLM Coding Plan、ZCode 和 Z.ai Chat 上线，但 API 标注为即将推出，开源权重则须待安全加固完成后发布；独立媒体同时指出官方上线时尚未公布 GLM-5.4 的基准评测分数。"
+  },
+  "narrative": {
+    "en": "GLM-5.4 marks a notable frontier-scale commercial deployment of weight-shared looped depth (adapted via continued training rather than from-scratch pre-training), arriving three days after Thinking Machines Lab's open-weight looped Inkling 2 Mini. However, Z.ai acknowledged 'marathon thinking' loop limitations, had not released public GLM-5.4 benchmarks, and kept API and weights closed at launch, so independent capability verification remains unavailable.",
+    "zhHans": "GLM-5.4 标志着循环深度架构在 750B 旗舰规模上的商用落地（采用在预训练基座上继续训练的路线），且仅比 Thinking Machines Lab 开源循环模型 Inkling 2 Mini 晚三天。但 Z.ai 坦言模型仍存在“马拉松式长思考”循环局限，且上线时未公布基准分数、未开放 API 与权重，独立能力复核仍属空白。"
+  },
+  "categories": [
+    "product"
+  ],
+  "status": "published",
+  "significance": 1,
+  "consensusLevel": "emerging",
+  "controversy": false,
+  "claims": [
+    {
+      "id": "zai-glm-5-4-2026-core",
+      "claimType": "fact",
+      "text": {
+        "en": "On November 23, 2026, Z.ai launched GLM-5.4 on GLM Coding Plan, ZCode, and Z.ai Chat, using a Loop Transformer architecture that loops 28 layers of its 750B GLM-5 base twice.",
+        "zhHans": "2026 年 11 月 23 日，Z.ai 在 GLM Coding Plan、ZCode 与 Z.ai Chat 推出 GLM-5.4，采用将 750B GLM-5 基座 28 层循环两次的 Loop Transformer 架构。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-zai-glm54-blog",
+        "ea005-glm54-mlq"
+      ]
+    },
+    {
+      "id": "zai-glm-5-4-2026-limitation",
+      "claimType": "limitation",
+      "text": {
+        "en": "At launch, Z.ai had not published GLM-5.4 benchmark scores, listed API access as coming soon, and deferred open-sourcing weights until after safety hardening.",
+        "zhHans": "上线时 Z.ai 尚未公布 GLM-5.4 基准测试分数，API 标注为即将推出，模型权重则延后至安全加固后开源。"
+      },
+      "evidenceGrade": "B",
+      "sourceIds": [
+        "ea005-zai-glm54-blog",
+        "ea005-glm54-mlq"
+      ]
+    }
+  ],
+  "impacts": [],
+  "sources": [
+    {
+      "sourceId": "ea005-zai-glm54-blog",
+      "supports": [
+        "zai-glm-5-4-2026",
+        "zai-glm-5-4-2026-core",
+        "zai-glm-5-4-2026-limitation"
+      ]
+    },
+    {
+      "sourceId": "ea005-glm54-mlq",
+      "supports": [
+        "zai-glm-5-4-2026",
+        "zai-glm-5-4-2026-core",
+        "zai-glm-5-4-2026-limitation"
+      ]
+    }
+  ],
+  "relatedEvents": [
+    "epoch-ai-glm53-firefox-patch-gap-2026",
+    "zai-zcode-workspace-upload-incident-2026"
+  ],
+  "relatedForecasts": [],
+  "editorial": {
+    "createdAt": "2026-11-26",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-26",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity-session:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:0b5e4807-71c6-4d64-a6a7-325fbe77af19",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/ea005-20261126/zai-glm-5-4-2026.json",
+    "changeLog": [
+      {
+        "date": "2026-11-26",
+        "changeType": "created",
+        "summary": "Created isolated EA-005 bilingual reviewed-state candidate from Nov 17-26 full discovery and four-layer Confirm evidence."
+      },
+      {
+        "date": "2026-11-26",
+        "changeType": "correction",
+        "summary": "Applied all blocking and polish fixes from independent review session 0b5e4807-71c6-4d64-a6a7-325fbe77af19 (impactIndex formula, IMPACT-AUDIT rule 6 separation, EVID-01/02 bindings, LANG-01 parity, and source publication dates)."
+      }
+    ],
+    "publishedAt": "2026-11-27"
+  },
+  "impactIndex": 0
+}

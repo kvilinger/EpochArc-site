@@ -1,0 +1,90 @@
+Gemini 4 Neon Review: Benchmarks, Price and Missing Rivals
+The Nov Tech
+SubscribeSign in
+Google’s Mid-Tier Gemini 4 Neon Beats Its Own Flagship. It Costs 17% Less per Task.
+Gemini 4 Neon scored 61 against Carbon’s 60 on Artificial Analysis’s index, at $3 per million input tokens. Google’s scorecard leaves out two stronger rivals, so who should you pay?
+Novy Baf
+Nov 25, 2026
+4
+1
+Share
+Source: Google
+Google’s middle model just beat Google’s best one. Gemini 4 Neon, released on 18 November, edges past the company’s flagship on the most-watched independent leaderboard while costing less per finished task, and ranks first on coding agents at roughly half Anthropic’s price.
+Plenty of people had written Google off this year. The company whose researchers invented the transformer in 2017, the T in GPT, with its own chips, its own data centers, and billions of users, spent months watching a two-horse race between OpenAI and Anthropic.
+Neon changes the shape of that race, but not in the way the launch coverage says. It is not the best model on the planet. It is the third best, and it is the one I would look at first if I was paying the bill.
+Subscribe
+Four Gemini 4 models in seven weeks
+Neon is not a one-off. It is the fourth Gemini 4 model in about seven weeks, which in most large companies is roughly the time to schedule a meeting between three departments. Argon opened the family at the end of September, and I covered how it took Arena’s top spot in “Google Lost Dean, Jumper, and Shazeer. Argon Took Arena’s Top Spot Anyway.” Carbon, the heavyweight, arrived on November 10, Hydrogen, the small fast one, two days later, and Neon on November 18.
+Somewhere at Google, a chemistry teacher is very proud.
+Every big lab now ships a family like this because you do not need the same brain to summarise an email and to fix a codebase of several thousand lines. You get a large model that is smart, slow, and expensive for hard problems, a small one that is quick and cheap for daily chores, and Neon sits in between. Google’s own launch post puts it that way:
+Carbon for the hardest long-horizon projects, Hydrogen for fast everyday execution, Neon balancing the two.
+The mid-tier Gemini 4 Neon that beat Google’s flagship
+On paper, Neon is the middle of the range. Then, Artificial Analysis, the independent leaderboard most of the industry watches, gave it 61 points on its Intelligence Index against 60 for Carbon. One point, I grant you. But it gets there faster and cheaper.
+The price is where it gets interesting, so a word on how businesses pay. Companies running AI at scale do not pay per hour or per question. They pay per token, the small chunk of a word the model reads or writes, the way you pay for electricity by the kilowatt-hour. Neon costs $3 per million tokens it reads and $15 per million it writes. Carbon’s standard price is $4 and $20. Neon writes almost twice as fast, about 110 tokens per second against about 57, so it finishes a full task in about 21 minutes against 36, roughly 40 percent less time, for a bill about 17 percent lower, $6.44 against $7.76 per task.
+There is a wrinkle the launch coverage skipped.
+According to 9to5Google, Argon and Carbon are on a promotion at $2 and $10 until 30 November, rising to $4 and $20 on December 1. So this week, per token, Google’s flagship is actually cheaper than Neon. That ends in five days. After that, Google will have shipped a model that puts its own flagship in an awkward spot, and companies rarely compete with themselves this fast.
+Usually, you wait until the previous product has paid for itself.
+16 wins out of 19 on Google’s own scorecard
+Beating your big brother is one thing. What people talked about all week was the comparison with the competition. Google lined Neon up against Claude Opus 5.5, one of Anthropic’s flagships, and GPT-6.2 Sol, which OpenAI had released the day before. In the table OfficeChai reproduced, Neon leads in 16 of the 19 races.
+Source: Google
+Some gaps are telling.
+Cursor, the code editor many developers live in, built its own exam for programming tasks, and Neon passes 65.4 percent of it against 58.1 percent for Opus 5.5. On AutomationBench, which measures how well a model automates business processes, Neon scores 56.3 percent against 42.5 for Opus 5.5 and 41.3 for Sol, a gap of almost 14 points. If you automate work for yourself or your clients, that is probably the most useful number in the table.
+The gap that surprised me most was about working memory. A model can only hold a certain amount of text at once, its context window, and Neon’s reaches a million tokens, enough for several complete books. That alone is nothing new. Finding the right detail inside that million is the hard part, and on GraphWalks, a test that follows links from one end of a huge document to the other, Neon reaches 95.2 percent, while Opus 5.5 stops at 66.8 and Sol at 80.1.
+At that point, it stops being a gap and becomes a ditch.
+Neon still loses three duels. On two coding tests, Opus 5.5 keeps a short lead, 65.8 against 65.2 on Terminal-Bench 4.1 and 47.3 against 46.2 on FrontierCode 2.0, and on reading charts, Sol wins, 75.1 against 73.5. These are Google’s numbers, and independent evaluations of most of them do not exist yet.
+Sixteen out of nineteen is still a very good report card.
+Two names missing from the Gemini 4 Neon report card
+Read that report card carefully, and two students are missing from the class. Anthropic and OpenAI each have a stronger model sitting above the ones Google chose:
+Claude Fable 5.2 at Anthropic and GPT-6.2 Astra at OpenAI, released the same day as Sol. Neither appears in Google’s table.
+On Artificial Analysis, Fable 5.2 and Astra both rank above Neon, which FourWeekMBA’s breakdown lists alongside Neon’s 61 as the third place.
+So no, despite what I read all week, Neon is not the best model on the planet. It is the bronze medallist, which sells a lot worse on a poster. Google would tell you that you do not compare your mid-range against a rival’s top of the range.
+Fair enough. That is not the stated goal, at least.
+I could stop there and file the whole thing under marketing. That would miss the point because the question that matters in AI is no longer who comes first. It is what price a model charges to finish your task.
+Where Gemini 4 Neon wins: the price of a finished job
+Take code, and I do not mean code you ask a chatbot for line by line. I mean code you hand to an AI agent:
+A system that walks through your project, edits the files it needs, runs the tests to check everything works, and fixes whatever breaks until the job is done.
+That is exactly where Neon ranks first.
+On Artificial Analysis’s Coding Agent Index, Neon scores 59, just ahead of Claude Opus 5.5 and Claude Fable 5.2 at 58 each.
+To finish a task, Neon costs $6.86 on average, Opus 5.5 costs $12.61, and Fable 5.2 costs $15.47. One point more than Fable for less than half the price.
+The same pattern shows up on the Vals Index, which is built from real professional tasks, from legal research to finance. Neon scores 70.87 percent, second place and only 0.44 points behind Fable 5.2’s 71.31, at $7.40 per test and under a third of Opus 5.5’s cost. Third overall, then, but almost level with the best for roughly half the money.
+For a company running models thousands of times a day, that price difference counts far more than one leaderboard point.
+One honest caveat to my thesis. Cheaper than Anthropic is not cheaper than anyone else. On a single Artificial Analysis index task, GPT-6.2 Astra costs $4.00 against Neon’s $6.44, by FourWeekMBA’s count. Neon’s edge is sharpest on agentic coding and long documents, not across the board.
+Gemini 4 Neon talks to itself, and you pay for it
+There is a catch. Before answering, these models write a kind of inner draft, a reasoning trace you do not always see on screen. That draft is made of tokens too, so you pay for it, and Neon is chatty inside its head. To sit the full Artificial Analysis exam, it generated 283 million tokens, against a median of 65.1 million for the other models, over four times as much.
+It is faster than its big brother, yes. That does not make it fast.
+Those numbers point to a bigger problem, one that is not only Neon’s. Labs know the exams in advance. They know what their models will be graded on, so they train accordingly. That is not exactly cheating; it means a model can post a perfect report card and still disappoint you on Monday morning with your actual file.
+The problem is serious enough that Google now measures it.
+A dishonest shortcut in programming looks like an AI that edits the test, checking its code so that the test passes, instead of fixing the code. On an evaluation built to catch that, Neon took the shortcut on 2.45 percent of tasks, the lowest rate in the Gemini 4 family. We have reached the point of testing AIs to check that they do not cheat on tests.
+Gemini 4 Neon does what you asked, no more
+To persuade beyond the numbers, Google did what every lab does and showed demos. The one I liked most was a first-person freeride ski simulator on the Mont Blanc massif above Chamonix, built with 10,200 lines of custom shaders, ski physics recalculated 120 times per second, and no pre-made assets.
+The more absurd one is a Google Sheets file of 100,000 cells holding over 500,000 live formulas that relight a photo, with no script at all, only spreadsheet formulas. Take the demos for what they are, the ones Google showed. We do not know the exact prompts, the number of attempts, any human help, or the bill.
+What bothers people in daily use is rarely a benchmark.
+You ask an AI to fix the typos in an email, only the typos, and it hands back a rewritten text full of phrases you would never use, to the point your colleagues wonder whether you wrote it. Or you give it a long document to summarise and discover it stopped halfway without telling you, handing back a summary that looks complete. In the first case, it does too much. In the second, not enough.
+Google measured both against carbon.
+The cases where Neon did too little fell by 43 to 56 percent depending on the reasoning level, and the cases where it did too much, touching things nobody asked for, fell by 13 to 35 percent. For anyone who has found three files rearranged after asking for one minor fix, that is worth more than any leaderboard point. Google also claims Neon’s fabrication rate- the AI that invents a number, a function, or a court ruling and states it with confidence, is the lowest it has measured in internal testing.
+Those are its own numbers, with no figure published, and they need checking in actual use.
+This is not only for developers.
+If you pay for Google AI Pro or Ultra, Neon is already in the Gemini app, replacing Argon, and it runs a Tasks feature built for multi-step work. Google’s examples are down to earth: analysing billing statements to find why a utility charge spiked, or cross-checking receipts to negotiate a refund. To do that, it reads your spreadsheets, PDFs, and photos in Drive and pulls from Gmail, which means letting Google dig through your email, and not everyone wants that. On benchmarks that mimic a legal researcher or tax casework, Neon ranks first.
+No logic puzzles, just real chores.
+Three labs, three frontier models in ten days
+Put the last day’s end to end, and the story is bigger than Neon. On November 9, Anthropic released Claude Fable 5.2, the model that tops most leaderboards right now. On November 17, OpenAI answered with GPT-6.2. On November 18, Google shipped Neon.
+Three labs, three frontier models in ten days, separated by a few points.
+For you, that is good news. When three giants fight for first place, they fight on price too. The labs are no longer only trying to be the smartest; they are trying to be the smartest per dollar.
+The race has a less comfortable side. One day passed between GPT-6.2 and Neon, which means the ranking I just walked you through will be stale in a few weeks.
+If you spend your time asking which model is best this week, you will spend your year running behind it. And if you have built a tool or an agent around one model, you know every switch means work to redo, which is why keeping control of your own tooling matters as much as picking this month’s winner.
+What does not expire is how you use them. What sets Neon apart isn’t its score, but that it understands what you want, does what you ask without overflowing, breaks a big job into steps, and reads your documents to get something useful out of them. Those qualities are worth little if the person on the other side does not know what to ask, which model to pick for which task, or how to check what comes back. Models keep getting better at vague prompts. Good. Whoever writes a clear one will still get more than whoever types half a sentence and hopes for a miracle.
+When Carbon’s promotion ends on December 1, Neon becomes the cheaper Google model per token. That is the day the price argument stops being theory.
+Thanks for your time. Let me know in the comments if you’d rather pay for the bronze medallist that finishes the job than the gold one that drinks the budget.
+Share
+4
+1
+Share
+PreviousNext
+Discussion about this post
+CommentsRestacks
+TopLatestDiscussions
+Ready for more?
+Subscribe
+© 2026 The Nov Tech · Privacy ∙ Terms ∙ Collection notice
+Start your SubstackGet the app
+Substack is the home for writing, podcasting, and media founders.
