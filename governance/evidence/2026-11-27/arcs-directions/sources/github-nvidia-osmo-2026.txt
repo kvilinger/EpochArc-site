@@ -1,0 +1,108 @@
+URL: https://github.com/NVIDIA/OSMO
+TITLE: GitHub - NVIDIA/OSMO: The developer-first platform for scaling complex Physical AI workloads across heterogeneous compute—unifying training GPUs, simulation clusters, and edge devices in a simple YAML · GitHub
+META_DESCRIPTION: The developer-first platform for scaling complex Physical AI workloads across heterogeneous compute—unifying training GPUs, simulation clusters, and edge devices in a simple YAML - NVIDIA/OSMO
+---
+GitHub - NVIDIA/OSMO: The developer-first platform for scaling complex Physical AI workloads across heterogeneous compute—unifying training GPUs, simulation clusters, and edge devices in a simple YAML · GitHub
+GitHub Repository hosting, code review, and collaboration
+Copilot AI coding agent for tasks, projects, and automated work
+Actions CI/CD and automation
+Code Quality Quality analysis, fixes, and enforcement
+Codespaces Cloud development environments
+Code Security Vulnerability detection and remediation
+Secret Protection Secret scanning and leak prevention
+Changelog Your source for the latest features, improvements, and fixes across GitHub products, all in one place.
+GitHub Advanced Security Enterprise-grade code security
+Copilot for business Enterprise-grade AI features
+Premium Support Enterprise-grade 24/7 support
+GitHub Universe The event for developers, by developers — talks, workshops, and what’s next for GitHub.
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Repository navigation
+Pull requests 44  ( 44 )
+Security and quality
+Notifications You must be signed in to change notification settings
+Star 291  ( 291 ) You must be signed in to star a repository
+The developer-first platform for scaling complex Physical AI workloads across heterogeneous compute—unifying training GPUs, simulation clusters, and edge devices in a simple YAML
+nvidia.github.io/OSMO
+Open more actions menu
+.nspect-allowlist.toml
+.nspect-allowlist.toml
+THIRD_PARTY_NOTICES.txt
+THIRD_PARTY_NOTICES.txt
+Repository files navigation
+Workflow Orchestration Purpose-built for Physical AI
+Use OSMO to manage your workflows and even remotely develop on a backend node. Using OSMO's backend configuration, run your workflows seamlessly on any cloud environment. Build a data factory to manage your synthetic and real robot data, train neural networks with experiment tracking, train robot policies with reinforcement learning, evaluate your models and publish the results, test the robot in simulation with software or hardware in loop (HIL), and automate your workflows on CI/CD systems.
+For Robotics & AI Developers
+Write once, run anywhere. Focus on building robots, not managing infrastructure.
+# Your entire physical AI pipeline in a YAML file
+image : nvcr.io/nvidia/isaac-sim
+platform : rtx-pro-6000 # Runs on NVIDIA RTX PRO 6000 GPUs
+- name : train-policy
+image : nvcr.io/nvidia/pytorch
+platform : gb200 # Runs on NVIDIA GB200 GPUs
+inputs : # Feed the output of simulation task into training
+- name : evaluate-thor
+platform : jetson-agx-thor # Runs on NVIDIA Jetson AGX Thor
+- task : train-policy # Feed the output of the training task into eval
+- url : s3://my-bucket/thor-benchmark/ # Save the benchmark to object storage
+✅ Zero-Code Workflows – Write workflows in YAML and iterate, not Python scripts
+✅ Truly Portable – Same workflow runs on laptop (Docker/KIND) or cloud (EKS/AKS/GKE)
+✅ Interactive Development – Launch VSCode, Jupyter, or SSH & develop remotely on cloud
+✅ Smart Storage – Move data through upstream task outputs or object storage without rewriting workflows
+✅ Infrastructure-Agnostic – Workflows never reference specific infrastructure—scale transparently
+For Platform & Infrastructure Engineers
+Scale infrastructure independently. Add compute backends without disrupting developers.
+✅ Centralized Control Plane – Single pane of glass for heterogeneous compute across clouds and regions
+✅ Plug-and-Play Backends – Register new Kubernetes clusters dynamically via CLI
+✅ Geographic Distribution – Deploy compute wherever it's available—cloud, on-prem, edge
+✅ Zero-Downtime Changes – Scale GPU compute clusters without affecting users or their workflows
+Physical AI development uniquely requires orchestrating three types of compute working together:
+Physics & Sensor Rendering
+Hardware-in-the-Loop
+Traditionally, orchestrating workflows across these heterogeneous systems requires custom scripts, infrastructure expertise, and separate tooling for each environment.
+OSMO solves this Three Computer Problem for robotics by orchestrating your entire Physical AI pipeline — from training to simulation to hardware testing all in a simple YAML. No custom scripts, no infrastructure expertise required. OSMO orchestrates tasks across heterogeneous Kubernetes clusters, managing dependencies and resource allocation. By solving this fundamental problem, OSMO brings us one step closer towards making Physical AI a reality.
+Interactively develop on remote GPU nodes with VSCode, SSH, or Jupyter notebooks
+Interactive Workflows
+Generate synthetic data at scale using Isaac Sim or custom simulation environments
+Train models across distributed GPU clusters
+Train policies for robots using data-parallel reinforcement learning
+Reinforcement Learning
+Validate models in simulation with hardware-in-the-loop testing
+Hardware In The Loop
+Transform and post-process data for iterative improvement
+Benchmark system software on actual robot hardware (NVIDIA Jetson, custom platforms)
+Battle-Tested in Production
+OSMO is production-grade and proven at scale. Originally developed to power Physical AI workloads at NVIDIA—including Project GR00T , Isaac Lab , Isaac Dexterity , Isaac Sim , and Isaac ROS —it orchestrates thousands of GPU-hours daily across heterogeneous compute spanning cloud training clusters to edge devices.
+Now open-source and ready for your robotics workflows. Whether you're building humanoid robots, autonomous vehicles, or warehouse automation systems, OSMO provides the same enterprise-grade orchestration used in production at scale.
+Select one of the deployment options below depending on your needs and environment to get started
+Deploying on Microsoft Azure? Get started with Azure NVIDIA Reference Architecture . This jointly published architecture delivers a production-ready Physical AI pipeline on Microsoft Azure, integrating OSMO, Isaac Lab, and Isaac Sim with GPU-accelerated RL training, auto-scaling compute, and enterprise-grade Kubernetes security.
+Run it locally on your workstation in 10 minutes
+Deploy production grade on cloud providers
+Tutorials, workflows, and how-to guides for developers
+Robotics workflow examples
+Install command-line interface to get started
+Join the community. We welcome contributions, feedback, and collaboration from developers and AI teams worldwide.
+🐛 Report Issues – Bugs, feature requests or technical help
+🤝 Contributing Guide - How to develop OSMO and make contributions
+Short term (Q1 2026)
+Simplified Authentication & Authorization
+Use your existing identity provider without additional infrastructure. Connect directly to Azure AD, Okta, Google Workspace, or any OAuth 2.0 provider. Manage teams and permissions through simple CLI commands ( osmo group ... ). Share credentials at the pool level—eliminate repetitive individual user configuration.
+One-Click Cloud Deployment
+Deploy production-grade OSMO in minutes. Launch from Azure Marketplace or AWS Marketplace with pre-configured templates. Skip complex Kubernetes setup with automated infrastructure provisioning—no deep cloud or Kubernetes expertise required.
+Native Cloud Integration
+Simplify credential management when running in the cloud. Automatic IAM integration for Azure and AWS environments provides seamless access to cloud storage (S3, Azure Blob) and container registries—no manual credential configuration needed.
+Python-Native Workflows
+Define workflows programmatically for developers who prefer code over YAML. Use Python APIs to build dynamic workflows with loops, conditionals, and complex logic that integrate seamlessly with existing Python ML/robotics frameworks.
+Load-Aware Multi-Backend Scheduling
+Automatically optimize cost and performance across compute backends. OSMO selects the best cluster/pool for each workflow based on current utilization, reducing wait times and maximizing cluster efficiency without manual routing.
+High-Performance Data Caching
+Faster data access and broader storage compatibility. Transparent cluster-local caching reduces data transfer time for frequently used inputs, with support for high-performance filesystems (Lustre, NFS) alongside object storage (S3, GCS, Azure).
+Dynamically Changing Workflows
+Adjust workflow scale on-the-fly without restarts or interruptions. Scale running workflows up or down based on changing resource needs, modify parameters without rescheduling tasks, and respond to real-time requirements (e.g., add more GPUs mid-training, reduce simulation parallelism).
+Built with 💚 by NVIDIA Robotics Team
+Making Physical AI a reality, one workflow at a time.
+The developer-first platform for scaling complex Physical AI workloads across heterogeneous compute—unifying training GPUs, simulation clusters, and edge devices in a simple YAML
+nvidia.github.io/OSMO
+Do not share my personal information
+You can’t perform that action at this time.

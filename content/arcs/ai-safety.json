@@ -1,16 +1,16 @@
 {
   "id": "ai-safety",
   "title": {
-    "en": "AI Safety: From Tay to ASL-3",
-    "zhHans": "AI 安全：从翻车聊天机器人到前沿安全框架"
+    "en": "AI Safety: From Tay to Supply-Chain and Agent Scrutiny",
+    "zhHans": "AI 安全：从 Tay 下线到供应链与智能体审查"
   },
   "searchTitle": {
     "en": "AI Safety: Incidents, Safeguards and Legal Scrutiny, 2016–2026",
     "zhHans": "AI 安全：2016—2026 年的事故、防护与法律审查"
   },
   "searchSummary": {
-    "en": "From Tay and staged GPT-2 release to ASL-3, deepfake investigations and 2026 consumer-protection lawsuits: different ways AI safety concerns entered product decisions and public oversight.",
-    "zhHans": "从 Tay、GPT-2 分阶段发布到 ASL-3、深度伪造调查与 2026 年消费者保护诉讼：AI 安全问题如何进入产品决策和公共审查。"
+    "en": "From Tay and GPT-2’s staged release to ASL-3, state consumer-protection suits, inference-provider canary audits and mobile OS agent blocks (2016–2026).",
+    "zhHans": "从 Tay 下线、GPT-2 分阶段发布到 ASL-3、各州消费者保护诉讼、推理供应商金丝雀审计与移动端系统代理拦截（2016—2026）。"
   },
   "subtitle": {
     "en": "Incidents, voluntary safeguards and distinct forms of public scrutiny",
@@ -20,8 +20,8 @@
   "status": "published",
   "significance": 2,
   "abstract": {
-    "en": "Tay’s withdrawal in 2016 and the staged release of GPT-2 in 2019 illustrate early responses to different model risks. Later disputes over voice, copyright and product safety, alongside laboratory safeguards and 2026 court filings, involved different harms and authorities. This Arc asks what these responses can establish—and what remains an allegation, a voluntary commitment or an unresolved legal question. A filing is not a ruling, and restrictions on access are not proof that risks have been resolved.",
-    "zhHans": "2016 年 Tay 下线和 2019 年 GPT-2 分阶段发布，展示了对不同模型风险的早期回应。随后围绕声音、版权和产品安全的争议，以及实验室防护措施和 2026 年的诉讼，涉及不同的损害与权力主体。本专题追问：这些回应能说明什么，哪些仍是指控、自愿承诺或未决的法律问题。起诉不等于判决，限制访问也不等于风险已经消除。"
+    "en": "Tay’s withdrawal in 2016 and the staged release of GPT-2 in 2019 illustrate early responses to different model risks. Later disputes over voice, copyright and product safety, alongside laboratory safeguards, 2026 state lawsuits, inference supply-chain disclosures and client-side agent restrictions, involved distinct harms and actors. This Arc asks what each response actually establishes—and what remains an allegation, an incomplete workaround, a voluntary declaration or an unverified vendor claim.",
+    "zhHans": "2016 年 Tay 下线和 2019 年 GPT-2 分阶段发布，展示了对不同模型风险的早期回应。随后围绕声音、版权和产品安全的争议，以及实验室防护框架、2026 年州级诉讼、推理供应链事故披露与客户端系统代理拦截，涉及截然不同的风险面与责任主体。本专题追问：每一类回应实际证明了什么，哪些仍只是未决诉讼、有限绕过方案、自愿宣言或未经独立核实的厂商声明。"
   },
   "chapters": [
     {
@@ -102,11 +102,33 @@
         "en": "The 2026 access restrictions, investigations and consumer-protection filings concern different authorities and harms; their outcomes cannot be inferred from the initial actions.",
         "zhHans": "2026 年的访问限制、调查和消费者保护诉讼，涉及不同权力主体和损害类型；不能从启动行动推断最终结果。"
       }
+    },
+    {
+      "id": "supply-chain-and-agent-surface",
+      "title": {
+        "en": "Inference Supply Chains, Self-Improvement Thresholds and Endpoint Defenses",
+        "zhHans": "推理供应链、自我改进阈值与终端防御"
+      },
+      "narrative": {
+        "en": "November 2026 expanded the operational surface of AI safety beyond single-lab model behavior. On November 9, government leaders, AI company CEOs and safety groups signed the non-binding Paris Call for AI safety and security. On November 17, OpenAI’s GPT-6.2 System Card rated both Astra and Sol at its Critical threshold for Cybersecurity and High for Biological and Chemical capabilities, and designated GPT-6.2 Astra as its first externally released model meeting the High threshold for AI Self-Improvement—while noting headline cyber benchmarks ran with cybersecurity safeguards and classifiers disabled. Days later, client and infrastructure risks surfaced independently: on November 20, Signal blocked mobile screenshots by default on iOS 27 and detectable Android paths to counter OS-level AI screen capture while acknowledging the workaround is incomplete; on November 22, after Dragos’s five-month, approximately two-million-prompt canary investigation uncovered active compromises at three AI hosting providers and ongoing access to stolen credentials, OpenRouter stated its own systems were not breached, off-boarded three providers (without either party confirming overlap with the three breached hosts) and stripped 125 endpoints of Zero Data Retention status; and on November 23, OpenAI and Cisco open-sourced Shirudo, an eBPF Linux runtime for deploying temporary compensating controls without rebooting while software patches are rolled out. Diplomatic declarations, internal preparedness ratings, marketplace revocations and pre-patch defensive runtimes address different layers, and none proves the underlying vulnerabilities are closed.",
+        "zhHans": "2026 年 11 月的事件表明，AI 安全的风险面已从单一实验室的模型输出扩展至推理基础设施与终端操作系统。11 月 9 日，多国领导人、AI 企业负责人与安全机构签署不具法律约束力的《巴黎 AI 安全呼吁》。11 月 17 日，OpenAI 在 GPT-6.2 系统卡中将 Astra 与 Sol 均定为网络安全 Critical、生化能力 High，并将 GPT-6.2 Astra 标定为首个对外发布且达到 AI 自我改进 High 阈值的模型（同时注明核心网络跑分关闭了网络安全防护与分类器）。数日内，终端与供应链层面的独立风险相继浮现：11 月 20 日，Signal 在 iOS 27 与可检测的 Android 路径上默认拦截截屏以防系统级 AI 代理抓取对话，但坦言这只是不完整的权宜方案；11 月 22 日，继安全公司 Dragos 历时五个月、投放约 200 万条金丝雀提示词查明三家 AI 托管商遭入侵且被窃凭据持续遭访问后，OpenRouter 声明自身系统未被入侵，同时下线三家供应商（双方均未确认与上述三家被入侵托管商重合）并剥离 125 个零数据保留（ZDR）端点资格；11 月 23 日，OpenAI 与思科开源了基于 eBPF 的 Linux 运行时工具 Shirudo，用于在软件补丁部署期间实施免重启临时补偿防护。外交倡议、内部准备度评级、路由平台清退与补丁前防御工具分属不同层面，均不意味着底层风险已经闭环。"
+      },
+      "anchorEvents": [
+        "paris-call-ai-safety-2026",
+        "openai-gpt-6-2-astra-sol-2026",
+        "signal-mobile-ai-agent-restrictions-2026",
+        "openrouter-inference-provider-incidents-2026",
+        "openai-cisco-shirudo-2026"
+      ],
+      "keyInsight": {
+        "en": "Safety claims at the model layer do not secure third-party inference hosts or OS-level screen capture; each layer requires independent verification.",
+        "zhHans": "模型层的安全评级无法自动保障第三方推理托管商或操作系统级截屏链路，每一层都需独立核验。"
+      }
     }
   ],
   "conclusion": {
-    "en": "These episodes do not describe a single industry-wide failure or a completed regulatory settlement. Tay’s removal, GPT-2’s staged release and Anthropic’s ASL-3 approach are different responses to different risks; litigation over consent, copyright and alleged product harms raises additional questions. The Grok investigation and state complaints show public authorities taking specific steps, but investigations and complaints do not establish liability. Export controls on model access raise a national-security question distinct from whether a product is safe for users. Which safeguards reduce harm, for whom, and at what cost remains open to evidence rather than a verdict supplied by this chronology.",
-    "zhHans": "这些事件既不能概括为全行业同一种失败，也不意味着监管争议已经尘埃落定。Tay 下线、GPT-2 分阶段发布和 Anthropic 的 ASL-3 做法，针对的是不同风险；关于同意、版权和涉嫌产品损害的诉讼又提出了其他问题。Grok 调查和州级诉讼体现了公共机构的具体行动，但调查和诉状不等于责任认定。限制模型访问的出口措施涉及国家安全问题，与产品对用户是否安全并不相同。哪些防护能够减少损害、惠及谁、代价如何，仍须由后续证据回答，而非由这条时间线代为下结论。"
+    "en": "Across a decade, AI safety expanded from post-hoc chatbot takedowns and staged weight releases to court filings, export directives, inference-marketplace audits and OS-level privacy countermeasures. None of these episodes establishes a single settled governance regime: lawsuits remain unadjudicated, diplomatic declarations remain voluntary, Signal’s screenshot block is avowedly partial, and OpenRouter’s revocation of 125 ZDR endpoints highlights intermediary dependencies in multi-provider routing. Assessing which interventions materially reduce real-world harm requires independent measurement at each layer rather than treating announcements as outcomes.",
+    "zhHans": "十年间，AI 安全议题从早期的聊天机器人事后下线与分阶段发布，延伸至州级诉讼、出口管制指令、推理市场金丝雀审计以及操作系统级隐私反制。这些事件并未拼出一个已经定型的治理体系：诉讼尚未裁决，外交宣言仍属自愿，Signal 的截屏拦截明确承认存在盲区，而 OpenRouter 撤销 125 个 ZDR 端点则暴露了多供应商路由中的中介信任边界。判断哪些干预真正降低了现实风险，仍须逐层依靠独立实证而非机构声明。"
   },
   "relatedArcs": [
     "open-vs-closed"
@@ -120,14 +142,14 @@
   ],
   "editorial": {
     "createdAt": "2026-06-30",
-    "updatedAt": "2026-10-19",
-    "curator": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
-    "reviewedAt": "2026-10-19",
-    "lastSourceCheckAt": "2026-10-19",
     "publishedAt": "2026-06-30",
-    "reviewer": "gemini-3.8-flash-high:01a1547c-739b-77ba-933a-9a3c812781e9",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-27",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
     "reviewProvenance": "v2.4",
-    "reviewRecord": "governance/reviews/arc-v24-20261019/ai-safety.json",
+    "reviewRecord": "governance/reviews/arcs-directions-20261127/arc-ai-safety.json",
     "changeLog": [
       {
         "date": "2026-10-17",
@@ -138,6 +160,11 @@
         "date": "2026-10-19",
         "changeType": "correction",
         "summary": "Revised dated Fable company-specific directive and June30 lifting / July1 Fable first-party restoration context. Added October19 legal and primary chapter citations; independently re-reviewed exact shadow anchor dependencies. No human approval."
+      },
+      {
+        "date": "2026-11-27",
+        "changeType": "source_added",
+        "summary": "Added Chapter 5 covering November 2026 Paris Call, GPT-6.2 System Card thresholds, Signal mobile OS agent restrictions, OpenRouter/Dragos ZDR incidents, and OpenAI/Cisco Shirudo pre-patch Linux runtime."
       }
     ]
   },
@@ -260,6 +287,54 @@
       "sourceId": "fable-v24-anthropic-redeploy-20261019",
       "supports": [
         "ai-safety/the-crackdown"
+      ]
+    },
+    {
+      "sourceId": "restart17-paris-elysee",
+      "supports": [
+        "ai-safety/supply-chain-and-agent-surface"
+      ]
+    },
+    {
+      "sourceId": "ea005-openai-gpt62-system-card",
+      "supports": [
+        "ai-safety/supply-chain-and-agent-surface"
+      ]
+    },
+    {
+      "sourceId": "ea005-openai-gpt62-blog",
+      "supports": [
+        "ai-safety/supply-chain-and-agent-surface"
+      ]
+    },
+    {
+      "sourceId": "ea005-signal-blog-privacy",
+      "supports": [
+        "ai-safety/supply-chain-and-agent-surface"
+      ]
+    },
+    {
+      "sourceId": "ea005-signal-techcrunch",
+      "supports": [
+        "ai-safety/supply-chain-and-agent-surface"
+      ]
+    },
+    {
+      "sourceId": "ea005-dragos-canary-report",
+      "supports": [
+        "ai-safety/supply-chain-and-agent-surface"
+      ]
+    },
+    {
+      "sourceId": "ea005-openrouter-disclosure",
+      "supports": [
+        "ai-safety/supply-chain-and-agent-surface"
+      ]
+    },
+    {
+      "sourceId": "ea005-theregister-shirudo",
+      "supports": [
+        "ai-safety/supply-chain-and-agent-surface"
       ]
     }
   ]

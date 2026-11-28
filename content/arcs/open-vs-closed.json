@@ -9,8 +9,8 @@
     "zhHans": "开放权重与专有 AI：许可、访问与分发"
   },
   "searchSummary": {
-    "en": "From GPT-3 API access and LLaMA research licensing to later open-weight releases: how AI model access, redistribution rights and verification differ.",
-    "zhHans": "从 GPT-3 的 API 访问、LLaMA 的研究许可到后来的开放权重发布：模型访问、再分发权利与性能核实有何不同。"
+    "en": "From GPT-3 APIs and LLaMA licenses to StepFun, BIS remote-compute rules, looped open weights and Anthropic’s IPO: how access, rights and capital differ.",
+    "zhHans": "从 GPT-3 API、LLaMA 许可到阶跃星辰、BIS 远程算力新规、循环开放权重与 Anthropic 上市：访问、权利与资本路径的分化。"
   },
   "subtitle": {
     "en": "Model access, redistribution rights and performance are different questions",
@@ -92,13 +92,14 @@
         "zhHans": "访问限制与其他发布"
       },
       "narrative": {
-        "en": "A company-specific US export directive led Anthropic to suspend access to Fable 5 and Mythos 5 in June 2026; the restrictions were lifted June 30, and Fable 5 first-party access resumed July 1. After an earlier initial rollout, Z.ai made GLM-5.2’s MIT-licensed weights available on June 16; DeepSeek V4 had appeared earlier in April. These are different decisions by different actors; their sequence cannot show that the directive caused either release. GLM-5.2 and DeepSeek V4 illustrate alternative ways to make weights available, but vendor-reported benchmark and cost figures are not independent proof that they matched a proprietary frontier model. Licensing and technical access vary between releases, and geographic access rules may differ from product policies. The existence of an alternative is relevant to discussions of access, not evidence that export controls were ineffective or that unrestricted cross-border adoption followed.",
-        "zhHans": "2026 年 6 月，一项针对 Anthropic 的美国出口指令使其暂停 Fable 5 和 Mythos 5 的访问；相关限制于 6 月 30 日解除，Fable 5 第一方访问于 7 月 1 日恢复。Z.ai 先前进行了初始推出，随后于 6 月 16 日以 MIT 许可开放 GLM-5.2 权重；DeepSeek V4 则已于同年 4 月发布。这些是不同主体作出的不同决定，时间顺序不能证明出口指令促成了其中任何一次发布。GLM-5.2 与 DeepSeek V4 展示了其他权重可用方式，但厂商公布的基准和成本数字，不能独立证明它们追平某个专有前沿模型。不同发布的许可和技术访问条件并不相同，地域访问规则也可能区别于产品政策。其他模型的存在与访问讨论有关，却不能据此断言出口管制无效或跨境采用已经不受限制。"
+        "en": "A company-specific US export directive led Anthropic to suspend access to Fable 5 and Mythos 5 in June 2026; the restrictions were lifted June 30, and Fable 5 first-party access resumed July 1. Z.ai made GLM-5.2’s MIT-licensed weights available on June 16, while DeepSeek V4 had appeared in April. On November 19, the US Bureau of Industry and Security issued an immediately effective interim final rule (91 FR 74970) rescinding the AI Diffusion Rule and extending export licensing to foreign data centers providing remote access to controlled advanced AI chips for covered entities tied to Macau or Country Group D:5. Together these episodes show export policy moving from physical chip shipments and targeted model directives to remote cloud compute, while open-weight releases continue on separate tracks. Neither sequence establishes that export controls caused foreign releases or failed in their compliance aims.",
+        "zhHans": "2026 年 6 月，一项针对特定公司的美国出口指令使 Anthropic 暂停 Fable 5 和 Mythos 5 访问；限制于 6 月 30 日解除，Fable 5 第一方访问于 7 月 1 日恢复。Z.ai 于 6 月 16 日以 MIT 许可开放 GLM-5.2 权重，DeepSeek V4 则已于 4 月发布。11 月 19 日，美国工业与安全局（BIS）发布立即生效的临时最终规则（91 FR 74970），废止原《AI 扩散规则》，并将出口许可管制延伸至境外数据中心向总部或最终母公司位于中国澳门及 D:5 组国家的主体提供受控先进 AI 芯片远程访问。这表明出口管制正从实体芯片装运与个案模型指令扩展至云端远程算力访问，而开放权重发布则在另一条轨道推进；时间先后既不能证明管制催生了海外权重发布，也不能单独证明管制失效。"
       },
       "anchorEvents": [
         "claude-fable-ban-2026",
         "glm-52-open-source-2026",
-        "deepseek-v4-2026"
+        "deepseek-v4-2026",
+        "us-bis-remote-access-ai-chips-rule-2026"
       ],
       "keyInsight": {
         "en": "The proximity of restrictions and weight releases raises an access question, not evidence of a causal policy reversal.",
@@ -126,11 +127,32 @@
         "en": "Available weights do not by themselves establish unrestricted redistribution, independently verified performance or production adoption.",
         "zhHans": "权重可获取本身，并不意味着可不受限制地再分发、性能已获独立核实或已在生产环境采用。"
       }
+    },
+    {
+      "id": "staged-weights-and-public-capital",
+      "title": {
+        "en": "Staged Weight Releases, Efficiency Architectures and Public Markets",
+        "zhHans": "分阶段开放、高效率架构与公开资本市场"
+      },
+      "narrative": {
+        "en": "Late October and November 2026 showed labs combining hosted services, deferred weights, conditional open weights and public equity rather than choosing a single pure model. Mistral released downloadable weights for an updated Mistral Large 4 after an October preview under a conditional license requiring businesses operating a Model-as-a-Service offering to obtain a separate commercial license. Thinking Machines Lab opened Inkling 2 Small through its hosted Tinker platform on November 5 while deferring weight downloads, then released its looped MoE model Inkling 2 Mini on November 20 with downloadable Hugging Face weights; independent benchmarking by Artificial Analysis measured Inkling 2 Mini at roughly 2.8 times lower compute proxy than Qwen3.8 27B at the same Intelligence Index score while generating about 38% more output tokens. On the same day, Anthropic closed an approximately $93.5 billion Nasdaq initial public offering alongside approximately $26 billion in private placements (~$119.5 billion combined gross capital raised before expenses, with shares dipping to $75.61–$76.60, below the $83 IPO price, by November 24). Efficiency gains in downloadable models and massive public-market capitalization for proprietary services developed concurrently rather than displacing one another.",
+        "zhHans": "2026 年 10 月下旬至 11 月的进展表明，各实验室正混合使用托管服务、延后开放权重、附条件开放权重与公开股权融资，而非固守单一模式。Mistral 在 10 月预览后以附条件许可证开放了新版 Mistral Large 4 的可下载权重（要求运营模型即服务业务的企业须另行向 Mistral 取得商业授权）。Thinking Machines Lab 于 11 月 5 日先通过 Tinker 托管平台开放 Inkling 2 Small 并暂缓权重下载，继而于 11 月 20 日在 Hugging Face 开放循环 MoE 模型 Inkling 2 Mini 的可下载权重；独立评测机构 Artificial Analysis 测得其在同等智能指数得分下计算代理开销较 Qwen3.8 27B 低约 2.8 倍（输出 token 增加约 38%）。同一天，Anthropic 完成约 935 亿美元纳斯达克 IPO 及约 260 亿美元同步私募交割（扣除费用前合计募资约 1,195 亿美元，股价至 11 月 24 日回落至 75.61—76.60 美元区间、低于 83 美元发行价）。可下载模型的架构效率演进与专有服务商的超大规模公开市场融资并行发生，并未彼此取代。"
+      },
+      "anchorEvents": [
+        "mistral-large-4-open-weights-2026",
+        "inkling-2-small-tinker-access-2026",
+        "thinkingmachines-inkling-2-mini-2026",
+        "anthropic-ipo-2026"
+      ],
+      "keyInsight": {
+        "en": "Within a single product line, labs increasingly stage hosted APIs and downloadable weights while frontier proprietary labs tap public equity at hundred-billion-dollar scale.",
+        "zhHans": "各实验室日益在同一产品线内分阶段组合托管 API 与可下载权重，同时专有前沿实验室正以千亿美元量级接入公开资本市场。"
+      }
     }
   ],
   "conclusion": {
-    "en": "The examples in this Arc distinguish access to a service from access to weights, and both from permission to reuse them. LLaMA’s limited research release, later downloadable models and Step 5 Preview’s conditional license did not confer the same rights. DeepSeek R1 was discussed alongside a large market selloff, but a temporal sequence cannot isolate its contribution to price changes. Likewise, selected or company-run benchmarks cannot establish general parity between model families. Open and proprietary approaches may coexist; neither licensing labels nor a single release can settle which approach will prevail. Future comparisons need independent testing of defined tasks, evidence of actual adoption and close reading of the relevant terms.",
-    "zhHans": "本专题的案例区分了服务访问、权重获取和再使用许可。LLaMA 最初有限的研究许可、后来的可下载模型和 Step 5 Preview 附带条件的许可证，赋予的权利并不相同。DeepSeek R1 发布期间出现大规模市场下跌，但时间先后不能分离出它对价格变化的具体贡献。同样，选定的或厂商自行披露的基准测试，也不能证明不同模型系列普遍性能相当。开放与专有路线可能共存；许可证标签和单次发布都不足以判定哪条路线将占优。今后的比较需要针对明确任务的独立测试、实际采用证据，以及对相关条款的仔细核对。"
+    "en": "The examples in this Arc distinguish service access, downloadable weights, redistribution permissions and compute-layer regulation. Conditional licenses (such as Step 5 Preview and Mistral Large 4’s MaaS carve-out), staged hosted-then-open rollouts (Inkling 2 Small and Mini), remote-access chip rules (BIS 91 FR 74970) and Anthropic’s approximately $119.5 billion public-and-private capital raise show that 'open versus closed' is no longer a two-camp contest. Independent task evaluations, license terms and infrastructure controls each govern what users can actually run and verify.",
+    "zhHans": "本专题区分了服务访问、可下载权重、再分发许可与算力层监管。附条件模型许可（如 Step 5 Preview 及 Mistral Large 4 的模型即服务授权例外）、先托管后开源的分阶段推出（Inkling 2 Small 与 Mini）、针对境外远程算力的芯片新规（BIS 91 FR 74970）以及 Anthropic 约 1,195 亿美元公私募融资表明，“开源对闭源”已不再是简单的两极对立。独立任务评测、许可证条款与算力合规约束共同决定了用户实际能运行与验证的边界。"
   },
   "relatedArcs": [
     "transformer-empire"
@@ -145,14 +167,14 @@
   ],
   "editorial": {
     "createdAt": "2026-06-30",
-    "updatedAt": "2026-10-19",
-    "curator": "gpt-6-sol:019f7eb3-bd32-7de0-b812-96efddac7723",
-    "reviewedAt": "2026-10-19",
-    "lastSourceCheckAt": "2026-10-19",
     "publishedAt": "2026-06-30",
-    "reviewer": "gemini-3.8-flash-high:01a1547c-739b-77ba-933a-9a3c812781e9",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-27",
+    "lastSourceCheckAt": "2026-11-26",
+    "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
     "reviewProvenance": "v2.4",
-    "reviewRecord": "governance/reviews/arc-v24-20261019/open-vs-closed.json",
+    "reviewRecord": "governance/reviews/arcs-directions-20261127/arc-open-vs-closed.json",
     "changeLog": [
       {
         "date": "2026-10-17",
@@ -168,6 +190,11 @@
         "date": "2026-10-19",
         "changeType": "correction",
         "summary": "Revised dated Fable company-specific directive and June30 lifting / July1 Fable first-party restoration context. Added October19 legal and primary chapter citations; independently re-reviewed exact shadow anchor dependencies. No human approval."
+      },
+      {
+        "date": "2026-11-27",
+        "changeType": "source_added",
+        "summary": "Added US BIS remote-access chip rule (91 FR 74970) to Chapter 4 and added Chapter 6 covering Mistral Large 4 weights, Inkling 2 Small/Mini staged open weights, and Anthropic's IPO closing."
       }
     ]
   },
@@ -326,6 +353,54 @@
       "sourceId": "fable-v24-anthropic-redeploy-20261019",
       "supports": [
         "open-vs-closed/geopolitical-twist"
+      ]
+    },
+    {
+      "sourceId": "ea005-bis-fr-2026-23529",
+      "supports": [
+        "open-vs-closed/geopolitical-twist"
+      ]
+    },
+    {
+      "sourceId": "ea005-bis-bakermckenzie",
+      "supports": [
+        "open-vs-closed/geopolitical-twist"
+      ]
+    },
+    {
+      "sourceId": "new26-mistral-weights",
+      "supports": [
+        "open-vs-closed/staged-weights-and-public-capital"
+      ]
+    },
+    {
+      "sourceId": "new26nov-inkling-report",
+      "supports": [
+        "open-vs-closed/staged-weights-and-public-capital"
+      ]
+    },
+    {
+      "sourceId": "ea005-tml-inkling-2-mini",
+      "supports": [
+        "open-vs-closed/staged-weights-and-public-capital"
+      ]
+    },
+    {
+      "sourceId": "ea005-aa-inkling-2-mini",
+      "supports": [
+        "open-vs-closed/staged-weights-and-public-capital"
+      ]
+    },
+    {
+      "sourceId": "ea005-anthropic-ipo-close",
+      "supports": [
+        "open-vs-closed/staged-weights-and-public-capital"
+      ]
+    },
+    {
+      "sourceId": "ea005-anthropic-ipo-cryptobriefing",
+      "supports": [
+        "open-vs-closed/staged-weights-and-public-capital"
       ]
     }
   ]

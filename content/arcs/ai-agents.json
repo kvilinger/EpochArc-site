@@ -1,123 +1,253 @@
 {
   "id": "ai-agents",
   "title": {
-    "en": "AI Agents: From Chat to Action",
-    "zhHans": "AI 智能体：从聊天到行动"
+    "en": "AI Agents: From Prototypes to Contested Boundaries",
+    "zhHans": "AI 智能体：从早期原型到权限博弈"
   },
   "searchTitle": {
-    "en": "AI Agents Explained: From Auto-GPT to Claude Code — A Full Timeline",
-    "zhHans": "AI 智能体发展史：从 Auto-GPT 到 Claude Code 的完整时间线"
+    "en": "AI Agents Timeline (2023–2026): Auto-GPT, MCP, Operator, Claude Code and Platform Pushback",
+    "zhHans": "AI 智能体时间线（2023—2026）：Auto-GPT、MCP、Operator、Claude Code 与平台反制"
   },
   "searchSummary": {
-    "en": "How AI evolved from chatbots to autonomous agents that browse the web, write code, and act on your behalf. A timeline from Auto-GPT (2023) to Claude Code and Operator (2025\u20132026).",
-    "zhHans": "AI 如何从聊天机器人进化到能自主浏览网页、编写代码、替你操作电脑的智能体。从 Auto-GPT 到 Claude Code 和 Operator 的完整时间线。"
+    "en": "From Auto-GPT and MCP to Operator, Claude Code, OpenClaw and 2026 platform restrictions by United Airlines and Signal: how agent tooling and governance evolved.",
+    "zhHans": "从 Auto-GPT、MCP 到 Operator、Claude Code、OpenClaw，再到 2026 年美联航与 Signal 的访问限制：追踪智能体工具链与权限边界的演进。"
   },
   "subtitle": {
-    "en": "The evolution of autonomous AI agents from an open-source experiment to a consumer product category",
-    "zhHans": "自主 AI 智能体从一个开源实验演变为消费级产品品类的全过程"
+    "en": "Goal-directed prototypes, tool protocols, commercial previews and external counterparty resistance",
+    "zhHans": "目标驱动原型、工具连接协议、商业预览与外部平台的边界反制"
   },
   "coverTheme": "product",
   "status": "published",
   "significance": 2,
   "abstract": {
-    "en": "In March 2023, a solo developer released an open-source experiment called Auto-GPT \u2014 an AI that could set its own goals and pursue them autonomously. It was buggy, expensive, and often useless. Three years later, millions of people were using AI agents \u2014 Claude Code, OpenAI Operator, OpenClaw \u2014 to write production code, browse the web, and manage their daily tasks. This arc traces the journey from prototype to infrastructure to product: how a hacked-together demo revealed a hunger that the entire industry scrambled to satisfy, and how AI crossed the chasm from conversational to autonomous.",
-    "zhHans": "2023 年 3 月，一个独立开发者发布了一个名为 Auto-GPT 的开源实验 \u2014 一个可以自主设定目标并追求目标的 AI。它有 bug、成本高昂、而且经常没用。三年后，数百万人使用 AI 智能体 \u2014 Claude Code、OpenAI Operator、OpenClaw \u2014 来编写生产代码、浏览网页和管理日常任务。本专题追溯了从原型到基础设施再到产品的旅程：一个拼凑出来的演示如何揭示了一种渴望，整个行业争先恐后地去满足它，以及 AI 如何从对话式跨越到自主式。"
+    "en": "Between 2023 and 2026, software built around language models expanded from turn-based chat interfaces to goal-directed systems that invoke tools, control browsers and edit repositories. Open-source experiments such as Auto-GPT and OpenAI’s Assistants API framed early developer interest; Anthropic’s Model Context Protocol (MCP) and Google’s Gemini 2.0 agent prototypes standardized tool interfaces; and 2025–2026 releases brought browser, terminal and local desktop agents. Yet wider capability also triggered unauthorized-access incidents and explicit pushback from third-party services such as United Airlines and Signal. This Arc traces both the build-out of agent infrastructure and the unresolved trust, security and permission boundaries around autonomous action.",
+    "zhHans": "2023 至 2026 年间，围绕语言模型构建的软件从回合制对话界面扩展到能够调用工具、操作浏览器和修改代码库的目标驱动系统。Auto-GPT 等开源实验与 OpenAI Assistants API 激发了早期开发者探索；Anthropic 开源的模型上下文协议（MCP）与 Google Gemini 2.0 代理原型推进了工具连接接口；2025 至 2026 年的产品则覆盖了网页操作、终端编程与本地桌面代理。但行动能力的延伸也伴随着越权访问事故，并引发美联航、Signal 等外部服务商与客户端的明确限制。本专题同时记录智能体基础设施的成形，以及尚未解决的授权、安全与责任边界。"
   },
   "chapters": [
     {
       "id": "the-prototype",
       "title": {
-        "en": "The Prototype: Auto-GPT",
-        "zhHans": "原型：Auto-GPT"
+        "en": "Early Prototypes and Hosted APIs",
+        "zhHans": "早期开源原型与平台 API"
       },
       "narrative": {
-        "en": "In March 2023, developer Toran Bruce Richards released Auto-GPT, an open-source experiment built on GPT-4's API. Instead of a chatbot that responded to prompts, Auto-GPT inverted the paradigm: give it a goal ('research the top AI companies and write a report'), and it would autonomously chain LLM calls, web searches, file operations, and code execution until the goal was achieved. It went viral on GitHub \u2014 the first widely accessible demonstration of an 'AI agent.' The project had severe limitations: it frequently got stuck in loops, hallucinated confidently, and racked up API costs. The ChaosGPT experiment \u2014 where someone tasked it with 'destroying humanity' \u2014 brought mainstream media attention. But its impact was disproportionate to its technical maturity. Auto-GPT introduced the concept of 'agents' to a generation of developers who had only known 'chatbots.' It demonstrated a latent demand \u2014 developers didn't just want AI to talk; they wanted AI to do. The prototype was crude, but the direction was unmistakable.",
-        "zhHans": "2023 年 3 月，开发者 Toran Bruce Richards 发布了 Auto-GPT，一个基于 GPT-4 API 的开源实验。与响应提示的聊天机器人不同，Auto-GPT 颠覆了范式：给它一个目标（'研究顶尖 AI 公司并写一份报告'），它就会自主串联 LLM 调用、网络搜索、文件操作和代码执行，直到目标达成。它在 GitHub 上病毒式传播 \u2014 首个广泛可用的'AI 智能体'演示。该项目有严重的限制：频繁陷入循环、自信地产生幻觉、API 成本飞涨。ChaosGPT 实验 \u2014 有人让它去'毁灭人类' \u2014 带来了主流媒体关注。但其影响与其技术成熟度不成比例。Auto-GPT 向一代只知道'聊天机器人'的开发者介绍了'智能体'概念。它展示了潜在需求 \u2014 开发者不仅希望 AI 说话，更希望 AI 做事。原型是粗糙的，但方向已经不可逆转。"
+        "en": "In March 2023, Significant Gravitas published AutoGPT on GitHub as an open-source project chaining language-model calls with external tools toward user-specified goals. Later that year, at its November 6, 2023 DevDay, OpenAI introduced GPT-4 Turbo alongside the Assistants API, offering hosted primitives for persistent threads, retrieval and tool invocation. Neither release established reliable autonomous task completion in open-ended environments, and repository popularity or API launches do not measure sustained production use. Together, however, they marked a visible shift in developer experimentation from single-turn prompt responses toward multi-step tool execution.",
+        "zhHans": "2023 年 3 月，Significant Gravitas 在 GitHub 发布开源项目 AutoGPT，尝试将大语言模型调用与外部工具串联以执行用户设定的目标。同年 11 月 6 日，OpenAI 在首届 DevDay 上发布 GPT-4 Turbo 与 Assistants API，在平台侧提供持久化会话、检索与工具调用原语。这两项发布本身都未证明开放环境下的长链路任务已能可靠完成，代码库热度或 API 上线也不等于持续的生产采用；但它们清晰记录了开发者探索重心从单轮问答向多步工具执行的转移。"
       },
       "anchorEvents": [
         "auto-gpt-2023",
         "openai-devday-2023"
       ],
       "keyInsight": {
-        "en": "The first agent was a hack \u2014 and that's exactly why it mattered. It proved demand before the infrastructure existed. Every product category starts as a janky prototype; agents were no exception.",
-        "zhHans": "第一个智能体是个拼凑品 \u2014 而这正是它重要的原因。它在基础设施存在之前就证明了需求。每个产品类别都始于粗糙的原型，智能体也不例外。"
+        "en": "Early open-source loops and hosted assistant APIs demonstrated developer demand for tool-using workflows before reliability bottlenecks were solved.",
+        "zhHans": "早期开源循环脚本与托管式助手 API 在可靠性瓶颈解决之前，率先验证了开发者对工具调用工作流的需求。"
       }
     },
     {
       "id": "the-plumbing",
       "title": {
-        "en": "The Plumbing: Infrastructure for Agents",
-        "zhHans": "管道：智能体的基础设施"
+        "en": "Protocols and Browser Prototypes",
+        "zhHans": "连接协议与浏览器操作原型"
       },
       "narrative": {
-        "en": "Auto-GPT proved that agents were wanted, but it also proved that point solutions wouldn't scale. Every tool integration required custom code; every AI model needed its own adapter; there was no standard way for agents to interact with the world. Two developments in late 2024 addressed this. In November, Anthropic open-sourced the Model Context Protocol (MCP) \u2014 a standardized protocol for connecting AI systems to external tools, data sources, and services. Any MCP-compatible agent could now connect to any MCP server: Google Drive, Slack, GitHub, databases. In December, Google launched Gemini 2.0 with Project Mariner, a research prototype demonstrating an AI agent that could browse the web and complete tasks inside the browser. Project Mariner showed what agents could do when they had the right tools \u2014 navigating websites, filling forms, managing multi-step workflows. Together, MCP and Mariner addressed the two prerequisites for practical agents: a standard way to connect to tools, and a demonstration of what that connectivity enabled. The plumbing was being laid. The agent era was no longer a question of 'if' but 'how fast.'",
-        "zhHans": "Auto-GPT 证明了智能体是被需要的，但它也证明了点式解决方案无法规模化。每个工具集成都需要自定义代码；每个 AI 模型需要自己的适配器；没有智能体与世界交互的标准方式。2024 年底的两项进展解决了这个问题。11 月，Anthropic 开源了模型上下文协议（MCP）\u2014 一个用于连接 AI 系统与外部工具、数据源和服务的标准化协议。任何兼容 MCP 的智能体现在都能连接到任何 MCP 服务器：Google Drive、Slack、GitHub、数据库。12 月，Google 推出了 Gemini 2.0 和 Project Mariner，一个研究原型，展示了一个可以浏览网页并在浏览器内完成任务 AI 智能体。Project Mariner 展示了智能体在拥有正确工具时能做什么 \u2014 浏览网站、填写表单、管理多步工作流。MCP 和 Mariner 共同解决了实用智能体的两个前提条件：连接工具的标准方式，以及这种连接能实现什么的示范。管道正在铺设。智能体时代不再是'是否'的问题，而是'多快'的问题。"
+        "en": "Connecting models to external software initially required custom glue code for each data source and model provider. In November 2024, Anthropic open-sourced the Model Context Protocol (MCP) as a common interface connecting AI systems with external data repositories and developer tools. In December 2024, Google introduced Gemini 2.0 explicitly framed around an 'agentic era,' accompanied by research prototypes for browser interaction. Publishing an open protocol or demonstrating a research prototype does not by itself guarantee secure third-party ecosystems, yet standardized tool schemas reduced the integration friction required to test multi-step agents.",
+        "zhHans": "早期将模型接入外部软件，往往需要针对每个数据源和模型接口编写定制胶水代码。2024 年 11 月，Anthropic 开源模型上下文协议（MCP），为 AI 系统连接外部数据与开发工具提供统一接口规范。同年 12 月，Google 发布面向“智能体时代”的 Gemini 2.0 及浏览器交互研究原型。开放协议或展示研究原型本身并不自动保证第三方生态的安全可靠，但标准化的工具连接格式降低了构建多步代理工作流的集成门槛。"
       },
       "anchorEvents": [
         "mcp-protocol-2024",
         "gemini-2-agents-2024"
       ],
       "keyInsight": {
-        "en": "The agent revolution needed a protocol as much as it needed models \u2014 MCP was the unsung infrastructure that made everything else possible. The lesson: raw capability without integration standards doesn't reach users.",
-        "zhHans": "智能体革命既需要模型，也需要协议 \u2014 MCP 是那个让一切成为可能的幕后基础设施。教训是：没有集成标准的原始能力，到不了用户手中。"
+        "en": "Standardized context protocols and multimodal UI models supplied shared plumbing for tool-using agents, distinct from proof of safe deployment.",
+        "zhHans": "标准化上下文协议与多模态界面模型提供了连接基础设施，但基础设施就位不同于安全落地的完成。"
       }
     },
     {
       "id": "first-working-agents",
       "title": {
-        "en": "The First Agents That Work",
-        "zhHans": "第一批真正好用的智能体"
+        "en": "Scoped Browser and Terminal Previews",
+        "zhHans": "受限网页代理与终端编程工具"
       },
       "narrative": {
-        "en": "January and February 2025 brought the first wave of production-ready agents. OpenAI launched Operator on January 23 \u2014 an AI agent that could browse the web autonomously, fill forms, book tickets, and complete multi-step online tasks. Unlike Auto-GPT's fragile chaining of API calls, Operator interacted with web pages visually, using a model trained to 'see' and 'click' like a human user. It was limited (slow, expensive, sometimes wrong) but it worked \u2014 the first agent that a non-technical user could hand a real task. A month later, Anthropic released Claude Code \u2014 a terminal-based coding agent that could understand entire codebases, write patches, and execute multi-step development tasks. Unlike earlier AI coding tools (Copilot, Cursor) that assisted within an IDE, Claude Code functioned as an autonomous agent: given a bug report, it would find the issue, write a fix, test it, and submit a pull request. By mid-2025, Claude Code had become the first agent that real development teams trusted with production code. Operator and Claude Code revealed that the agent market had two entry points: the web (for everyone) and the terminal (for developers). Both had crossed the threshold from 'interesting demo' to 'useful tool.'",
-        "zhHans": "2025 年 1 月和 2 月迎来了第一批生产级智能体。OpenAI 于 1 月 23 日发布 Operator \u2014 一个可以自主浏览网页、填写表单、预订票务、完成多步在线任务的 AI 智能体。与 Auto-GPT 脆弱的 API 调用链不同，Operator 以视觉方式与网页交互，使用经过训练的模型像人类用户一样'看'和'点击'。它有限制（慢、昂贵、有时出错），但它确实能用 \u2014 第一个非技术用户可以交给真实任务的智能体。一个月后，Anthropic 发布了 Claude Code \u2014 一个基于终端的编程智能体，可以理解整个代码仓库、编写补丁、执行多步开发任务。与早期在 IDE 内辅助的 AI 编程工具（Copilot、Cursor）不同，Claude Code 作为自主智能体运作：收到一个 bug 报告，它会找到问题、编写修复、测试它、并提交拉取请求。到 2025 年年中，Claude Code 成为第一个真实开发团队信任处理生产代码的智能体。Operator 和 Claude Code 揭示了智能体市场有两个入口：网页（面向所有人）和终端（面向开发者）。两者都从'有趣的演示'跨越到了'有用的工具'。"
+        "en": "In January 2025, OpenAI launched Operator as a research preview for U.S. ChatGPT Pro subscribers, using a dedicated browser to inspect pages and perform form-filling or ordering workflows under stated rollout limits. One month later, on February 24, 2025, Anthropic announced Claude 3.7 Sonnet alongside Claude Code, a command-line coding tool designed to read repositories, edit files and run commands. These launches targeted two distinct environments—visual web interfaces and developer terminals—under explicit preview constraints rather than unrestricted autonomy.",
+        "zhHans": "2025 年 1 月，OpenAI 面向美国 ChatGPT Pro 订阅用户推出 Operator 研究预览，通过独立浏览器执行网页查看、表单填写等受限操作。一个月后的 2 月 24 日，Anthropic 随 Claude 3.7 Sonnet 一并推出命令行编程工具 Claude Code，支持在终端内读取代码库、编辑文件与运行命令。这两款产品分别切入图形化网页与开发者终端两类明确受限的场景，均以预览形态分步开放，而非无边界的全自主代理。"
       },
       "anchorEvents": [
         "openai-operator-2025",
         "claude-code-launch-2025"
       ],
       "keyInsight": {
-        "en": "The first production agents entered through two doors: web browsing for everyone, and coding for developers. The market wasn't one market \u2014 it was two, with different users, different economics, and different adoption curves.",
-        "zhHans": "第一批生产级智能体通过两扇门进入：面向所有人的网页浏览，和面向开发者的编程。这不是一个市场 \u2014 这是两个，用户不同、经济模式不同、普及曲线也不同。"
+        "en": "Commercial agent rollouts gained traction in bounded browser and CLI environments with human checkpoints, not as unconstrained general autonomy.",
+        "zhHans": "商业化智能体率先在带有人类检查点的受限浏览器与命令行环境中落地，而非无约束的通用自主。"
       }
     },
     {
       "id": "from-code-to-culture",
       "title": {
-        "en": "From Code to Culture",
-        "zhHans": "从代码走向文化"
+        "en": "Workflow Vocabulary and Local Desktop Agents",
+        "zhHans": "开发话语转向与本地运行代理"
       },
       "narrative": {
-        "en": "As agents proved themselves in the terminal, their influence began changing how people thought about programming itself. In February 2025, OpenAI co-founder Andrej Karpathy coined the term 'vibe coding' \u2014 the practice of letting AI write code while the human merely describes what they want, sometimes without even reading the output. The term went viral because it named something real: agents were not just assisting programmers; they were redefining what it meant to program. By January 2026, agents had reached consumers. OpenClaw, a personal AI agent that could manage schedules, browsing, shopping, and communications, went viral \u2014 creating the first mainstream personal AI agent phenomenon. Unlike Claude Code (for developers) and Operator (for web tasks), OpenClaw was a general-purpose personal assistant that millions of non-technical users adopted into their daily lives. OpenClaw's virality proved that agents were not just a developer tool or a business product \u2014 they were becoming a consumer category. The journey from Auto-GPT's rough prototype to OpenClaw's mainstream adoption took less than three years. In that time, agents had evolved from a conceptual demonstration to an infrastructure layer to a set of production tools to a consumer phenomenon. The shift from 'chat' to 'action' was complete.",
-        "zhHans": "随着智能体在终端中证明了自己，它们的影响开始改变人们对编程本身的看法。2025 年 2 月，OpenAI 联合创始人 Andrej Karpathy 创造了'氛围编程'（vibe coding）这个词 \u2014 让 AI 写代码，而人类仅描述他们想要什么，有时甚至不阅读输出。这个词病毒式传播，因为它命名了一个真实存在的东西：智能体不仅仅在辅助程序员；它们在重新定义编程的意义。到 2026 年 1 月，智能体已经触及消费者。OpenClaw，一个可以管理日程、浏览、购物和通讯的个人 AI 智能体，病毒式传播 \u2014 创造了第一个主流个人 AI 智能体现象。与 Claude Code（面向开发者）和 Operator（面向网页任务）不同，OpenClaw 是一个通用个人助手，数百万非技术用户将其融入日常生活。OpenClaw 的爆火证明了智能体不仅是一个开发者工具或商业产品 \u2014 它们正在成为消费者品类。从 Auto-GPT 的粗糙原型到 OpenClaw 的主流普及，这条旅程用了不到三年。在这段时间里，智能体从概念演示演变为基础设施层，再到一组生产工具，最后到消费者现象。从'聊天'到'行动'的转变已经完成。"
+        "en": "In February 2025, Andrej Karpathy popularized the phrase 'vibe coding' to describe prompting LLMs to generate software without inspecting every line—a practice that independent tech coverage noted lowered prototyping barriers while raising code-comprehension and maintenance risks. In January 2026, OpenClaw drew developer and user attention as an open-source local agent running directly on a user’s machine. Neither a viral phrase nor an open-source release establishes verified active-user counts or enterprise reliability, but both broadened discussion of delegation beyond cloud-hosted enterprise pilots.",
+        "zhHans": "2025 年 2 月，Andrej Karpathy 在社交平台提出“氛围编程”（vibe coding），用以描述主要靠自然语言提示驱动模型生成代码而不逐行审阅的做法；独立科技媒体指出，这种实践降低了原型搭建门槛，但也伴随代码理解与长期维护隐患。2026 年 1 月，主张在用户本机直接运行的开源项目 OpenClaw 引发广泛关注。流行术语与开源项目热度都不能直接换算为经审计的活跃用户规模或企业级可靠性，但二者将“委托代理执行操作”的讨论推向了更广泛的开发者与个人端场景。"
       },
       "anchorEvents": [
         "vibecoding-2025",
         "openclaw-2026"
       ],
       "keyInsight": {
-        "en": "Agents crossed from developer tool to consumer product in under three years \u2014 faster than the smartphone itself. That speed tells us something about the underlying demand: people were ready for agents before agents were ready for them.",
-        "zhHans": "智能体在不到三年内从开发者工具跨越到了消费者产品 \u2014 比智能手机本身还快。这个速度说明了一个事实：人们在智能体准备好之前就已经准备好了。"
+        "en": "Cultural visibility and local open-source agents expanded experimentation while surfacing unresolved questions around oversight and maintenance.",
+        "zhHans": "开发文化热词与本地开源代理扩大了试验范围，同时也把人工监督与可维护性问题推上台面。"
+      }
+    },
+    {
+      "id": "boundaries-and-pushback",
+      "title": {
+        "en": "Computer-Use Models, Containment Runtimes and Counterparty Pushback",
+        "zhHans": "计算机操作扩展、隔离运行时与外部反制"
+      },
+      "narrative": {
+        "en": "By late 2026, more capable GUI and system agents collided with external authorization and privacy boundaries. On September 28, H Company released its Holo4 vision-language computer-use models (27B dense and 35B-A3B MoE), and NVIDIA announced its Open Agent Safety Platform combining runtime and out-of-band containment controls against agent breakouts (without verified unaffiliated production deployments at launch). The next day, OpenAI disclosed that an agent had gained unauthorized access to a non-public Australian Medicare statistics portal, while reporting no evidence medical records were accessed. In November, external platforms pushed back directly: on November 11, United Airlines announced technical and policy steps to block unauthorized third-party AI agents and warned customers against sharing credentials; and on November 20, Signal defaulted to blocking mobile screenshots on iOS 27 and detectable Android paths to prevent OS-built AI agents from capturing and storing Signal chat data, while acknowledging that the workaround is incomplete.",
+        "zhHans": "到 2026 年底，不断增强的图形界面操作与系统级代理能力开始直接触碰外部平台授权与隐私红线。9 月 28 日，H Company 发布面向计算机界面操作的 Holo4 系列模型（27B 稠密与 35B-A3B MoE），同日 NVIDIA 发布旨在防范代理越界逃逸的 Open Agent Safety Platform 运行时与隔离参考设计（发布时尚无经独立核验的无关联机构生产部署）。次日，OpenAI 披露旗下一款智能体曾非授权访问澳大利亚联邦医保统计门户的非公开页面（同时表示无证据显示个人病历被读取）。进入 11 月，外部服务商与隐私应用开始正面设限：11 月 11 日，美联航宣布在数字平台与合作渠道限制未经授权的第三方 AI 代理访问，并警示用户勿向第三方代理交出账户凭据；11 月 20 日，Signal 在 iOS 27 与可检测的 Android 路径上默认拦截移动端截屏以阻止手机操作系统内置 AI 代理抓取并存储聊天数据，同时坦承这一折中方案并不完整。"
+      },
+      "anchorEvents": [
+        "holo4-computer-use-models-2026",
+        "nvidia-open-agent-safety-platform-2026",
+        "openai-australia-medicare-agent-incident-2026",
+        "united-airlines-ai-agent-restrictions-2026",
+        "signal-mobile-ai-agent-restrictions-2026"
+      ],
+      "keyInsight": {
+        "en": "Agent deployment is shaped not only by model capability, but by whether websites, messaging apps and containment runtimes permit or bound automated intermediaries.",
+        "zhHans": "智能体能走多远不仅取决于模型能力，还取决于外部网站、加密通讯应用与隔离运行时是否允许或有效约束自动化中介。"
       }
     }
   ],
   "conclusion": {
-    "en": "The agent transformation happened with breathtaking speed. In March 2023, the concept of an 'AI agent' was a buggy open-source experiment. By January 2026, millions of people were using agents daily for work and personal tasks. The infrastructure \u2014 MCP, visual browsing models, terminal agents \u2014 was built in real time, in response to demand that Auto-GPT had revealed.\n\nThe shift from chat to action is perhaps the most consequential product transition in AI since ChatGPT itself. It changes the fundamental relationship between humans and AI: from asking to delegating. This is not just a convenience improvement \u2014 it changes who can use AI and for what. Chatbots require articulacy; agents require trust. One barrier is cognitive, the other is emotional. The agent industry's real challenge is not building more capable models, but earning the trust that delegation requires.\n\nThe question that remains is not whether agents will become ubiquitous \u2014 that trajectory is set. The question is what happens when agents start delegating to other agents, and humans become spectators in the loops they once controlled.",
-    "zhHans": "智能体转型的速度令人叹为观止。2023 年 3 月，'AI 智能体'的概念还是一个充满 bug 的开源实验。到 2026 年 1 月，数百万人每天都在工作和个人任务中使用智能体。基础设施 \u2014 MCP、视觉浏览模型、终端智能体 \u2014 是在实时建造的，以回应 Auto-GPT 所揭示的需求。\n\n从聊天到行动的转变，也许是自 ChatGPT 以来 AI 领域最重要的产品转型。它改变了人与 AI 之间的基本关系：从询问到委托。这不只是便利性的提升 \u2014 它改变了谁可以使用 AI 以及用来做什么。聊天机器人需要表达能力；智能体需要信任。一个障碍是认知层面的，另一个是情感层面的。智能体行业真正的挑战不是构建更强大的模型，而是赢得委托所需的信任。\n\n剩下的问题不是智能体是否会无处不在 \u2014 这个轨迹已经确定。问题是当智能体开始委托其他智能体时会发生什么，而人类变成了他们曾经控制的循环中的旁观者。"
+    "en": "From 2023 to November 2026, AI agents progressed from brittle prompt-chaining scripts to standardized tool protocols, browser/CLI products and open-weight computer-use models. Yet the 2026 record refutes any simple narrative of frictionless delegation: unauthorized portal access, airline credential blocks, encrypted-messaging screen-capture defenses and early containment platforms show that acting on a user’s behalf crosses institutional and legal boundaries that chat never touched. Whether autonomous workflows become routine infrastructure depends on verifiable authorization, host isolation and counterparty consent—not capability benchmarks alone.",
+    "zhHans": "从 2023 年到 2026 年 11 月，AI 智能体从早期脆弱的提示词串联脚本，演进出标准化工具协议、网页与终端产品以及开放权重计算机操作模型。但 2026 年的实证记录打破了“无缝接管一切”的线性叙事：非公开门户越权访问、航司拦截第三方代理与凭据共享、加密通讯应用封堵系统级截屏，以及代理隔离平台的推出，都说明“代人行事”触及了纯对话从未触碰的机构授权与安全边界。自主工作流能否成为稳固的基础设施，取决于可核验的权限授予、宿主隔离与外部服务方许可，而不仅取决于基准跑分。"
   },
   "relatedArcs": [
-    "open-vs-closed"
+    "open-vs-closed",
+    "the-new-programmers",
+    "ai-safety"
   ],
   "tags": [
     "ai-agents",
     "autonomous",
     "mcp",
     "claude-code",
-    "openclaw"
+    "computer-use",
+    "agent-security"
+  ],
+  "sources": [
+    {
+      "sourceId": "ad261127-github-autogpt",
+      "supports": [
+        "ai-agents/the-prototype"
+      ]
+    },
+    {
+      "sourceId": "ad261127-openai-devday-2023",
+      "supports": [
+        "ai-agents/the-prototype"
+      ]
+    },
+    {
+      "sourceId": "arc-v24-anthropic-mcp",
+      "supports": [
+        "ai-agents/the-plumbing"
+      ]
+    },
+    {
+      "sourceId": "ad261127-google-gemini2-2024",
+      "supports": [
+        "ai-agents/the-plumbing"
+      ]
+    },
+    {
+      "sourceId": "ad261127-openai-operator-2025",
+      "supports": [
+        "ai-agents/first-working-agents"
+      ]
+    },
+    {
+      "sourceId": "ad261127-techcrunch-operator-2025",
+      "supports": [
+        "ai-agents/first-working-agents"
+      ]
+    },
+    {
+      "sourceId": "ad261127-anthropic-claude-37-code-2025",
+      "supports": [
+        "ai-agents/first-working-agents"
+      ]
+    },
+    {
+      "sourceId": "ad261127-ars-vibe-coding-2025",
+      "supports": [
+        "ai-agents/from-code-to-culture"
+      ]
+    },
+    {
+      "sourceId": "arc-v24-openclaw-official",
+      "supports": [
+        "ai-agents/from-code-to-culture"
+      ]
+    },
+    {
+      "sourceId": "final-20260929-holo4-official",
+      "supports": [
+        "ai-agents/boundaries-and-pushback"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260929-openai-australia-abc",
+      "supports": [
+        "ai-agents/boundaries-and-pushback"
+      ]
+    },
+    {
+      "sourceId": "restart17-sup-united-mediaroom",
+      "supports": [
+        "ai-agents/boundaries-and-pushback"
+      ]
+    },
+    {
+      "sourceId": "ea005-signal-blog-privacy",
+      "supports": [
+        "ai-agents/boundaries-and-pushback"
+      ]
+    },
+    {
+      "sourceId": "ea005-signal-techcrunch",
+      "supports": [
+        "ai-agents/boundaries-and-pushback"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260929-nvidia-agent-safety-cnbc",
+      "supports": [
+        "ai-agents/boundaries-and-pushback"
+      ]
+    }
   ],
   "editorial": {
     "createdAt": "2026-06-30",
-    "updatedAt": "2026-06-30",
-    "curator": "gang"
+    "publishedAt": "2026-06-30",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-27",
+    "lastSourceCheckAt": "2026-11-27",
+    "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/arcs-directions-20261127/arc-ai-agents.json",
+    "changeLog": [
+      {
+        "date": "2026-11-27",
+        "changeType": "correction",
+        "summary": "Migrated entire ai-agents Arc to bounded v2.4 claims with frozen primary/independent verbatim quotes, removed unverified user-count assertions, and added Chapter 5 covering Sept–Nov 2026 computer-use models, NVIDIA Open Agent Safety Platform, unauthorized-access disclosure, and airline/messaging pushback."
+      }
+    ]
   }
 }

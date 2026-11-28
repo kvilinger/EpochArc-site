@@ -1,0 +1,102 @@
+{
+  "sessionId": "eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "taskId": "EA-010",
+  "requestArtifact": "EA010_EXACT_APPROVAL_REQUEST_10.json",
+  "requestArtifactSha256": "8c2e4c9d2312fa99e485ddb30ccf6666d78962ebb69a88e64e864bd0916dd964",
+  "requestSummary": "Presented all 10 EA-010 v2.4 items (6 Narrative Arcs + 4 Possible Directions, manifest SHA-256 8c2e4c9d2312fa99e485ddb30ccf6666d78962ebb69a88e64e864bd0916dd964) after Round-2 ACCEPT independent subagent review (e052d72a-4409-43f6-bb18-d8fe7bb15568), asking whether to approve all 10 exact digests and authorize canonical merge, approval recording, push to origin/main, and live bilingual verification.",
+  "approvalReplies": [
+    {
+      "stepIndex": 624,
+      "timestampUTC": "2026-11-28T00:45:30Z",
+      "text": "批准"
+    }
+  ],
+  "directParentReply": true,
+  "scope": "Exact 6 Arcs (content/arcs/*.json) and 4 Directions (data/forecasts.json) updated to the 2026-11-26 event baseline, 37 appended ad261127-* sources, targeted run targeted-arcs-directions-20261127, 10 v2.4 review records under governance/reviews/arcs-directions-20261127/, frozen evidence under governance/evidence/2026-11-27/arcs-directions/, and 10 exact approval records.",
+  "approvedItems": [
+    {
+      "kind": "arc",
+      "subjectId": "ai-safety",
+      "subjectDigest": "f58f074b0aa240538cc2b3df136ec7108f1a2cbd644a30d8f7cab0afc37315f6",
+      "reviewDigest": "cc4a165acb2b956926ae5af12782eed40644abd0df226e16e3fd025bd66bbe2a",
+      "inputsDigest": "adebb649bd0760497b817c38c2d0f8c1fbcab2a103aa9347f66cd98731b8bdc2",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce"
+    },
+    {
+      "kind": "arc",
+      "subjectId": "open-vs-closed",
+      "subjectDigest": "40dadae9157da1ce9cfb2d01dd0d24caa81dc7d0ad51cac386aece08d3bd1a0c",
+      "reviewDigest": "0af2a592934d95a2c67246c90af3d59985faa49f2c8fcd2d5c7c276d2e71a584",
+      "inputsDigest": "38bf5d4cc40a2fc21605f72a3e229d873c2da706a9bd4ca4fbb7946fee7cc51f",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce"
+    },
+    {
+      "kind": "arc",
+      "subjectId": "ai-agents",
+      "subjectDigest": "486d57512b088e76b37c1c98f7e9da81be190d64dd5c1f19e812cd6359c1e5e6",
+      "reviewDigest": "03ce386d0cfccdb627dd202f56919be5eee297c2c80c109fbd0a136aef94ee58",
+      "inputsDigest": "9bd33a7235d920d343ebcb08726a365f867121e83c92a40882968af1263a1f28",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce"
+    },
+    {
+      "kind": "arc",
+      "subjectId": "the-new-programmers",
+      "subjectDigest": "609bd9cc6d834db426537362668738dc044a275efbe44ecf09bba3d397cbf288",
+      "reviewDigest": "87a6d9276d405bc1684ab5dc0eec7196fb0af1ecc5b07776559f2ff808f4a921",
+      "inputsDigest": "d399c82b5d108d196cfe5b309b509e207f217c4776d9ec0bac34cbde5ab497a3",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce"
+    },
+    {
+      "kind": "arc",
+      "subjectId": "transformer-empire",
+      "subjectDigest": "4fae5ee9863c59ea9bb43f2dca3a0ce054fb278fdb4656cbb203e766ea92fcb8",
+      "reviewDigest": "40a1279be5855bf5c279f5c50393292089eefe19bed31d17e85a28220810d117",
+      "inputsDigest": "12ef34f82d48c15b47002ab663cc40d7b75770a0e0b3bdc91b3fd4277ad4f734",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce"
+    },
+    {
+      "kind": "arc",
+      "subjectId": "ai-in-science",
+      "subjectDigest": "58684da8c696121b2a99777dc9523614cb5926d8cfd6e94a2bf6189019781177",
+      "reviewDigest": "f1e59f5e623732e98c597cdf79fad98b27a5a405df9ddfd6ecfb5fed36459669",
+      "inputsDigest": "0baead944f19b2bc24adf996748ad66345e28c0811fd51b597a1ad46f16c82e6",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce"
+    },
+    {
+      "kind": "direction",
+      "subjectId": "ai-software-teams",
+      "subjectDigest": "450473da2918173424e630dba28baf1ef9531a9b7b6433dc4f5103c6e31c5adb",
+      "reviewDigest": "fbe433a3d581181af29d534bee3909ef55b89c354ffb3b9658a05758a85b3c61",
+      "inputsDigest": "10b1692f6e916f8f26d27e46ae097d6d8a477e173ae244d8f32ee19fcb3026b4",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "243c45f061fdece7d5e73e2f9b37c20ba8e1df90fd0a946126a6ef6b0a9cb586"
+    },
+    {
+      "kind": "direction",
+      "subjectId": "autonomous-enterprise-workflows",
+      "subjectDigest": "f9f738cd0229b791b157c98241be615c3d63f72c67a0885d87c64a468ab07711",
+      "reviewDigest": "e8fc27dba7fe79acf19a8944acc6b201cb08fedc031ec11060bd0695ccbdb099",
+      "inputsDigest": "c5aaf82b9287c7c0e2fc11970890a5fc693ba25f3bbcd076a54ccdd9fa7c6591",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "243c45f061fdece7d5e73e2f9b37c20ba8e1df90fd0a946126a6ef6b0a9cb586"
+    },
+    {
+      "kind": "direction",
+      "subjectId": "robots-leave-the-pilot-zone",
+      "subjectDigest": "50066ee8863c86cef272624b00185dd1a405e086c11ac30bf032260d104595a1",
+      "reviewDigest": "306cf11b14da916461a8b630f9df6160f47270bf4f869c5203ff37f7c43f709d",
+      "inputsDigest": "40a983dc0201bd2e8277d096f5dd4152f163ec5b000542b46dc1e8894730ea9c",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "243c45f061fdece7d5e73e2f9b37c20ba8e1df90fd0a946126a6ef6b0a9cb586"
+    },
+    {
+      "kind": "direction",
+      "subjectId": "ai-native-discovery-pipelines",
+      "subjectDigest": "a0a6517d0cf0b904eb5435df86a4ea7dafe031fba322c272d15e0821b7011303",
+      "reviewDigest": "edff84cd88a9fb0cac2de7bdcaa0e3c54b66e09a6ce0ebc84db4b11a27f662bd",
+      "inputsDigest": "49784eb187baf327555cdb96cb1dfc0edfaa4ee9c0b9a63d908888b4f4bb7026",
+      "policyDigest": "cadc24d64d4f0b81066fd3c470d788359a0dc19550d7a61a1aa61e024e9552ce",
+      "runDigest": "243c45f061fdece7d5e73e2f9b37c20ba8e1df90fd0a946126a6ef6b0a9cb586"
+    }
+  ]
+}

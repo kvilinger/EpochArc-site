@@ -1,0 +1,71 @@
+URL: https://arstechnica.com/ai/2025/03/is-vibe-coding-with-ai-gnarly-or-reckless-maybe-some-of-both/
+TITLE: Will the future of software development run on vibes? - Ars Technica
+META_DESCRIPTION: Accepting AI-written code without understanding how it works is growing in popularity.
+---
+Will the future of software development run on vibes? - Ars Technica
+Riding the digital waves
+Will the future of software development run on vibes?
+Accepting AI-written code without understanding how it works is growing in popularity.
+Henrik5000 via Getty Images
+Henrik5000 via Getty Images
+To many people, coding is about precision. It’s about telling a computer what to do and having the computer perform those actions exactly, precisely, and repeatedly. With the rise of AI tools like ChatGPT , it’s now possible for someone to describe a program in English and have the AI model translate it into working code without ever understanding how the code works. Former OpenAI researcher Andrej Karpathy recently gave this practice a name—“vibe coding”—and it’s gaining traction in tech circles.
+The technique, enabled by large language models (LLMs) from companies like OpenAI and Anthropic, has attracted attention for potentially lowering the barrier to entry for software creation. But questions remain about whether the approach can reliably produce code suitable for real-world applications, even as tools like Cursor Composer , GitHub Copilot , and Replit Agent make the process increasingly accessible to non-programmers.
+Instead of being about control and precision, vibe coding is all about surrendering to the flow. On February 2, Karpathy introduced the term in a post on X, writing, “There’s a new kind of coding I call ‘vibe coding,’ where you fully give in to the vibes, embrace exponentials, and forget that the code even exists.” He described the process in deliberately casual terms: “I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works.”
+A screenshot of Karpathy’s original X post about vibe coding from February 2, 2025.
+A screenshot of Karpathy’s original X post about vibe coding from February 2, 2025.
+While vibe coding, if an error occurs, you feed it back into the AI model, accept the changes, hope it works, and repeat the process. Karpathy’s technique stands in stark contrast to traditional software development best practices , which typically emphasize careful planning, testing, and understanding of implementation details.
+As Karpathy humorously acknowledged in his original post, the approach is for the ultimate lazy programmer experience: “I ask for the dumbest things, like ‘decrease the padding on the sidebar by half,’ because I’m too lazy to find it myself. I ‘Accept All’ always; I don’t read the diffs anymore.”
+At its core, the technique transforms anyone with basic communication skills into a new type of natural language programmer—at least for simple projects. With AI models currently being held back by the amount of code an AI model can digest at once (context size), there tends to be an upper limit to how complex a vibe-coded software project can get before the human at the wheel becomes a high-level project manager, manually assembling slices of AI-generated code into a larger architecture. But as technical limits expand with each generation of AI models, those limits may one day disappear.
+Who are the vibe coders?
+There’s no way to know exactly how many people are currently vibe coding their way through either hobby projects or development jobs, but Cursor reported 40,000 paying users in August 2024, and GitHub reported 1.3 million Copilot users just over a year ago (February 2024). While we can’t find user numbers for Replit Agent, the site claims 30 million users, with an unknown percentage using the site’s AI-powered coding agent.
+One thing we do know: the approach has particularly gained traction online as a fun way to rapidly prototype games. Microsoft’s Peter Yang recently demonstrated vibe coding in an X thread by building a simple 3D first-person shooter zombie game through conversational prompts fed into Cursor and Claude 3.7 Sonnet. Yang even used a speech-to-text app so he could verbally describe what he wanted to see and refine the prototype over time.
+In August 2024, the author vibe-coded his way into a working Q-BASIC utility script for MS-DOS, thanks to Claude Sonnet.
+In August 2024, the author vibe-coded his way into a working Q-BASIC utility script for MS-DOS, thanks to Claude Sonnet.
+We’ve been doing some vibe coding ourselves. Multiple Ars staffers have used AI assistants and coding tools for extracurricular hobby projects such as creating small games, crafting bespoke utilities, writing processing scripts, and more. Having a vibe-based code genie can come in handy in unexpected places: Last year, I asked Anthropic’s Claude to write a Microsoft Q-BASIC program in MS-DOS that decompressed 200 ZIP files into custom directories, saving me many hours of manual typing work .
+With all this vibe coding going on, we had to turn to an expert for some input. Simon Willison, an independent software developer and AI researcher, offered a nuanced perspective on AI-assisted programming in an interview with Ars Technica. “I really enjoy vibe coding,” he said. “It’s a fun way to try out an idea and prove if it can work.”
+But there are limits to how far Willison will go. “Vibe coding your way to a production codebase is clearly risky. Most of the work we do as software engineers involves evolving existing systems, where the quality and understandability of the underlying code is crucial.”
+At some point, understanding at least some of the code is important because AI-generated code may include bugs, misunderstandings, and confabulations—for example, instances where the AI model generates references to nonexistent functions or libraries.
+“Vibe coding is all fun and games until you have to vibe debug,” developer Ben South noted wryly on X, highlighting this fundamental issue.
+Willison recently argued on his blog that encountering hallucinations with AI coding tools isn’t as detrimental as embedding false AI-generated information into a written report, because coding tools have built-in fact-checking: If there’s a confabulation, the code won’t work. This provides a natural boundary for vibe coding’s reliability—the code runs or it doesn’t.
+Even so, the risk-reward calculation for vibe coding becomes far more complex in professional settings. While a solo developer might accept the trade-offs of vibe coding for personal projects, enterprise environments typically require code maintainability and reliability standards that vibe-coded solutions may struggle to meet. When code doesn’t work as expected, debugging requires understanding what the code is actually doing—precisely the knowledge that vibe coding tends to sidestep.
+Programming without understanding
+When it comes to defining what exactly constitutes vibe coding, Willison makes an important distinction: “If an LLM wrote every line of your code, but you’ve reviewed, tested, and understood it all, that’s not vibe coding in my book—that’s using an LLM as a typing assistant.” Vibe coding, by contrast, involves accepting code without fully understanding how it works.
+While “vibe coding” originated with Karpathy as a playful term, it may encapsulate a real shift in how some developers approach programming tasks—prioritizing speed and experimentation over deep technical understanding. And to some people, that may be terrifying.
+Willison emphasizes that developers need to take accountability for their code: “I firmly believe that as a developer you have to take accountability for the code you produce—if you’re going to put your name to it you need to be confident that you understand how and why it works—ideally to the point that you can explain it to somebody else.”
+He also warns about a common path to technical debt: “For experiments and low-stake projects where you want to explore what’s possible and build fun prototypes? Go wild! But stay aware of the very real risk that a good enough prototype often faces pressure to get pushed to production.”
+The future of programming jobs
+So, is all this vibe coding going to cost human programmers their jobs? At its heart, programming has always been about telling a computer how to operate. The method of how we do that has changed over time, but there may always be people who are better at telling a computer precisely what to do than others—even in natural language. In some ways, those people may become the new “programmers.”
+There was a point in the late 1970s to early ’80s when many experts thought everyone would require programming skills to use a computer effectively because there were very few pre-built applications for all the various computer platforms available. School systems worldwide made educational computer literacy efforts to teach people to code.
+A brochure for the GE 210 computer from 1964. BASIC’s creators used a similar computer four years later to develop the programming language that many children were taught at home and school.
+A brochure for the GE 210 computer from 1964. BASIC’s creators used a similar computer four years later to develop the programming language that many children were taught at home and school.
+Before too long, people made useful software applications that let non-coders use computers easily—no programming required. Even so, programmers didn’t disappear—instead, they used applications to create better and more complex programs. Perhaps that will also happen with AI coding tools.
+To use an analogy, computer-controlled technologies like autopilot made reliable supersonic flight possible because they could handle aspects of flight that were too taxing for all but the most highly trained and capable humans to safely control. AI may do the same for programming, allowing humans to abstract away complexities that would otherwise take too much time to manually code, and that may allow for the creation of more complex and useful software experiences in the future.
+But at that point, will humans still be able to understand or debug them? Maybe not. We may be completely dependent on AI tools, and some people no doubt find that a little scary or unwise.
+Whether vibe coding lasts in the programming landscape or remains a prototyping technique will likely depend less on the capabilities of AI models and more on the willingness of organizations to accept risky trade-offs in code quality, maintainability, and technical debt. For now, vibe coding remains an apt descriptor of the messy, experimental relationship between AI and human developers—more collaborative than autonomous, but increasingly blurring the lines of who (or what) is really doing the programming.
+Benj Edwards was a reporter at Ars Technica covering artificial intelligence and technology history.
+confabulations—for example, instances where the AI model generates references to nonexistent functions or libraries.
+Doesn't this just mean you need to have the AI write the library too?
+March 6, 2025 at 12:04 am
+"This provides a natural boundary for vibe coding's reliability—the code runs or it doesn't."
+The code runs, or it doesn't. Or it runs, until it doesn't. Or it runs, but it creates the same directory 200 times instead of 200 directories. Or it runs, but it creates the directories but doesn't unzip the files. Or it runs, and it creates the directories, and it unzips the files, but not into the directories (good luck cleaning up the mess). Or it runs, and it creates the directories, and it unzips the files into them, and then it deletes a random file somewhere else. Or it runs, creates the directories, unzips the files, then orders 500 rolls of toilet paper from Amazon...
+March 6, 2025 at 12:08 am
+Ford unveils the GT41 as it hopes to win Le Mans again
+European spacecraft finds chaotic scene after asteroid deflection experiment
+Intel faced a choice: Give Trump 10% or face the consequences
+Google search alternative Kagi launches Gmail rival
+The best Black Friday deals Ars could find
+Ars Technica has been separating the signal from
+the noise for over 25 years. With our unique combination of
+technical savvy and wide-ranging interest in the technological arts
+and sciences, Ars is the trusted source in a sea of information. After
+all, you don’t need to know everything, only what’s important.
+© 2026 Condé Nast. All rights reserved. Use of and/or
+registration on any portion of this site constitutes acceptance of our User Agreement and
+Cookie Statement and Ars
+Technica Addendum and Your
+California Privacy Rights . Ars Technica may earn compensation on
+sales from links on this site. Read our
+affiliate link policy . The material on this site may not be
+reproduced, distributed, transmitted, cached or otherwise used, except
+with the prior written permission of Condé Nast. Ad
+Account Edit Profile

@@ -1,0 +1,78 @@
+{
+  "policyVersion": "2.4",
+  "runId": "targeted-arcs-directions-20261127",
+  "kind": "targeted",
+  "scopeReason": "Targeted v2.4 update of all 6 Narrative Arcs and all 4 Possible Directions up to the 2026-11-26 published event baseline, including consensus/counter-signal searches for the 4 active Directions.",
+  "windowStart": "2026-06-25",
+  "windowEnd": "2026-11-27",
+  "evidenceCutoff": "2026-11-27",
+  "timezone": "UTC",
+  "baselineCommit": "27edfb10ffdeb7904f3a1c36d5e3042a7afd2357",
+  "operator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+  "model": "gemini-4-carbon-high",
+  "promptVersion": "20261127-ea010-arcs-directions-v24-r1",
+  "channels": [
+    {
+      "id": "brave-web-search",
+      "status": "partial",
+      "windowCovered": false,
+      "coverageNote": "Targeted Brave Search API consensus and counter-signal queries across all 4 Possible Directions on 2026-11-27 UTC.",
+      "reason": "Targeted thematic direction consensus check rather than full six-channel event discovery.",
+      "retryResult": "One transient IncompleteRead on the fourth query succeeded cleanly on immediate retry (4/4 HTTP 200 JSON artifacts retained).",
+      "attempts": [
+        {
+          "query": "AI coding agents software engineering teams benchmark production maintenance 2026",
+          "executedAt": "2026-11-27T21:09:34Z",
+          "artifact": "governance/evidence/2026-11-27/arcs-directions/brave/dir-ai-software-teams.json",
+          "sha256": "46c1f990399d60a48c25b5f200d06ae853f0e7490c22ea9eef195bc6fe256aa6",
+          "resultCount": 10
+        },
+        {
+          "query": "enterprise AI agents autonomous workflow deployment reliability standard 2026",
+          "executedAt": "2026-11-27T21:09:34Z",
+          "artifact": "governance/evidence/2026-11-27/arcs-directions/brave/dir-autonomous-enterprise-workflows.json",
+          "sha256": "c20df08489862393d5c2916555535a4101668bf948a3e5269b07d8485174b8b5",
+          "resultCount": 10
+        },
+        {
+          "query": "humanoid robotics commercial factory warehouse deployment pilot 2025 2026",
+          "executedAt": "2026-11-27T21:09:34Z",
+          "artifact": "governance/evidence/2026-11-27/arcs-directions/brave/dir-robots-leave-the-pilot-zone.json",
+          "sha256": "1af33c4d290a478c22109429e72e00009ddb0310c1cd62e519abd3e5da8f713a",
+          "resultCount": 10
+        },
+        {
+          "query": "AI scientific discovery workflow independent replication benchmark 2025 2026",
+          "executedAt": "2026-11-27T21:09:34Z",
+          "artifact": "governance/evidence/2026-11-27/arcs-directions/brave/dir-ai-native-discovery-pipelines.json",
+          "sha256": "8f7fd612ffb68d644333524dfbebbddae4118ec2faae0b224eaade0d6ee4a4c5",
+          "resultCount": 10
+        }
+      ]
+    }
+  ],
+  "categoryCoverage": [],
+  "candidates": [],
+  "directionDecisions": [
+    {
+      "id": "ai-software-teams",
+      "decision": "publish",
+      "reason": "Retained as active monitor_only direction 'ai-software-teams' with updated Sept–Nov 2026 published event signals, frozen v2.4 primary/independent quotes, and verified absence of an external binary completion standard."
+    },
+    {
+      "id": "autonomous-enterprise-workflows",
+      "decision": "publish",
+      "reason": "Retained as active monitor_only direction 'autonomous-enterprise-workflows' with updated Sept–Nov 2026 published event signals, frozen v2.4 primary/independent quotes, and verified absence of an external binary completion standard."
+    },
+    {
+      "id": "robots-leave-the-pilot-zone",
+      "decision": "publish",
+      "reason": "Retained as active monitor_only direction 'robots-leave-the-pilot-zone' with updated Sept–Nov 2026 published event signals, frozen v2.4 primary/independent quotes, and verified absence of an external binary completion standard."
+    },
+    {
+      "id": "ai-native-discovery-pipelines",
+      "decision": "publish",
+      "reason": "Retained as active monitor_only direction 'ai-native-discovery-pipelines' with updated Sept–Nov 2026 published event signals, frozen v2.4 primary/independent quotes, and verified absence of an external binary completion standard."
+    }
+  ]
+}

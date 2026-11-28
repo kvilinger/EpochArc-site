@@ -1,95 +1,95 @@
 {
   "id": "transformer-empire",
   "title": {
-    "en": "Transformer Empire: From Paper to Trillion-Dollar Industry",
-    "zhHans": "Transformer 帝国：从论文到万亿产业"
+    "en": "Transformer Empire: Pre-Training Scale, Test-Time Compute and Looped Variants",
+    "zhHans": "Transformer 演进录：预训练规模、推理算力与循环架构"
   },
   "searchTitle": {
-    "en": "Transformer Architecture Explained: A Full Timeline from 2017 to Trillion-Dollar Industry",
-    "zhHans": "Transformer 架构详解：从 2017 篇论文到万亿帝国的完整时间线"
+    "en": "Transformer Architecture Timeline (2014–2026): From Attention to Test-Time Compute and Looped Variants",
+    "zhHans": "Transformer 架构时间线（2014—2026）：从注意力机制到推理时计算与循环变体"
   },
   "searchSummary": {
-    "en": "From Google\u2019s 2017 paper to trillion-parameter models and NVIDIA\u2019s $3T valuation. An illustrated timeline of how Transformer reshaped computing.",
-    "zhHans": "从 Google 2017 年的论文到万亿参数大模型和 NVIDIA 三万亿市值。用时间线看懂 Transformer 如何重塑了整个计算产业。"
+    "en": "From 2014–2017 attention papers and 2020 scaling laws to o1 test-time reasoning, custom TPU 8 systems, BIS remote-chip controls and 2026 looped Transformers.",
+    "zhHans": "从 2014—2017 年注意力论文、2020 年规模法则到 o1 推理时计算、第八代 TPU 系统、BIS 远程算力管制与 2026 年循环 Transformer。"
   },
   "subtitle": {
-    "en": "A single architecture reshaped computing from translation tasks to trillion-dollar markets",
-    "zhHans": "一种架构从翻译任务开始，重塑了整个计算产业的价值链"
+    "en": "How self-attention evolved through pre-training scale, multimodal alignment, test-time compute and recurrent layer reuse",
+    "zhHans": "自注意力机制如何历经预训练扩展、多模态对齐、推理时计算与层循环复用"
   },
   "coverTheme": "capability",
   "status": "published",
   "significance": 3,
   "abstract": {
-    "en": "In 2017, Google researchers replaced sequential RNNs with a parallelizable self-attention architecture. Over the next seven years, this design scaled from translation tasks to trillion-parameter models, driving the valuation of hardware providers like NVIDIA past $3 trillion. This arc documents the technical milestones and empirical scaling metrics that transformed the Transformer from an academic paper into the primary infrastructure of modern compute.",
-    "zhHans": "2017 年，Google 研究人员用可并行的自注意力机制取代了传统的顺序循环神经网络（RNN）。在接下来的七年中，这一设计从翻译任务一路扩展到万亿参数的大型模型，推动了以 NVIDIA 为代表的硬件供应商市值突破 3 万亿美元。本专题记录了将 Transformer 从一篇学术论文演变为现代计算核心基础设施的关键技术指标与量化演进。"
+    "en": "Proposed in 2017 to replace recurrent sequence bottlenecks with parallelizable self-attention, the Transformer became the shared backbone of modern language and multimodal models. Over the next nine years, labs successively varied how compute was spent: scaling dense pre-training parameters and data (BERT, GPT-3), aligning conversational and multimodal interfaces (ChatGPT, GPT-4, GPT-4o), allocating test-time reasoning tokens (o1, GPT-5) and, by November 2026, introducing looped layer-reuse variants (Inkling 2 Mini, GLM-5.4) alongside specialized eighth-generation TPUs and remote-compute export rules.",
+    "zhHans": "2017 年提出的 Transformer 用可并行的自注意力机制替代了传统循环序列瓶颈，此后成为现代语言与多模态模型的共同骨干。在随后的九年里，研究与工程界不断调整算力的投入方式：从扩大预训练参数与语料规模（BERT、GPT-3），到对话对齐与原生多模态交互（ChatGPT、GPT-4、GPT-4o），再到分配推理时思考算力（o1、GPT-5），直至 2026 年 11 月出现层循环复用变体（Inkling 2 Mini、GLM-5.4）、第八代专用 TPU 系统及针对云端远程算力的出口管制。"
   },
   "chapters": [
     {
       "id": "origins",
       "title": {
-        "en": "Origins & RNN Bottleneck",
-        "zhHans": "起源与顺序计算瓶颈"
+        "en": "Attention Mechanisms and Parallelizable Sequence Modeling",
+        "zhHans": "注意力机制与并行序列建模"
       },
       "narrative": {
-        "en": "In 2014, Bahdanau et al. introduced the attention mechanism to alleviate the information bottleneck in sequence-to-sequence Recurrent Neural Networks (RNNs). However, sequential dependencies in RNNs (such as LSTM) remained a hard constraint, preventing parallel processing across GPU clusters. In June 2017, Vaswani et al. published 'Attention Is All You Need,' proposing the Transformer. By removing recurrence entirely, it allowed parallel training. On the WMT 2014 English-to-German translation task, the Transformer achieved a state-of-the-art 28.4 BLEU score. Crucially, it required only 3.15e18 FLOPS of training compute\u2014about a fraction of the cost of previous architectures, proving that architectural simplification could significantly improve computational efficiency.",
-        "zhHans": "2014 年，Bahdanau 等人引入了注意力机制，以缓解循环神经网络（RNN）中固定长度向量的信息瓶颈。然而，RNN（如 LSTM）的顺序依赖关系仍是硬约束，限制了在 GPU 集群上的并行化训练。2017 年 6 月，Vaswani 等人发表《Attention Is All You Need》，提出 Transformer 架构，彻底移除了循环结构。在 WMT 2014 英语-德语翻译任务上，该模型取得了 28.4 BLEU 的 SOTA 分数。更重要的是，其训练仅消耗 3.15e18 FLOPS 的算力\u2014\u2014仅为先前主流架构的几分之一，实证了通过架构简化换取极高计算并行度的可行性。"
+        "en": "In September 2014, Bahdanau, Cho and Bengio proposed joint alignment and translation to address the fixed-length encoding bottleneck in neural machine translation. Recurrent architectures nevertheless remained constrained by sequential step-by-step computation across tokens. In June 2017, Vaswani and co-authors published 'Attention Is All You Need,' replacing recurrence and convolutions entirely with self-attention so training could parallelize efficiently across accelerators.",
+        "zhHans": "2014 年 9 月，Bahdanau、Cho 与 Bengio 提出联合对齐与翻译机制，缓解了神经机器翻译中固定长度编码向量的信息瓶颈；但循环神经网络按时间步顺序计算的依赖仍限制了并行效率。2017 年 6 月，Vaswani 等人发表《Attention Is All You Need》，完全省去循环与卷积结构而仅依赖自注意力机制，使序列模型训练得以在加速器集群上高效并行。"
       },
       "anchorEvents": [
         "attention-2014",
         "transformer-2017"
       ],
       "keyInsight": {
-        "en": "Removing recurrence unlocked GPU parallel training scalability. This single design decision \u2014 trading sequential computation for parallelism \u2014 is what made the entire scaling trajectory possible. Without it, none of the billion-parameter models that followed would have been feasible.",
-        "zhHans": "彻底移除循环结构释放了 GPU 并行计算的扩展上限。用并行取代顺序计算这一设计决策，是整个 scaling 路径的起点。没有它，后续一切数十亿参数的模型都无从谈起。"
+        "en": "Replacing sequential recurrence with self-attention aligned sequence modeling directly with parallel accelerator hardware.",
+        "zhHans": "用自注意力替代顺序循环结构，使序列建模与并行加速硬件的计算特性直接契合。"
       }
     },
     {
       "id": "understanding-emerges",
       "title": {
-        "en": "Encoder-Decoder Divergence & Scaling Laws",
-        "zhHans": "双向表征与规模法则"
+        "en": "Bidirectional Pre-Training and Empirical Scaling Laws",
+        "zhHans": "双向预训练与实证规模法则"
       },
       "narrative": {
-        "en": "In 2018, Google released BERT-Large, a 340-million-parameter encoder model that set SOTA records on 11 NLP tasks, including GLUE and SQuAD benchmarks. In parallel, OpenAI focused on a decoder-only architecture. In 2020, OpenAI scaled this trajectory with GPT-3, featuring 175 billion parameters trained on 300 billion tokens with an estimated 3.14e23 FLOPS of compute. GPT-3 demonstrated few-shot learning capabilities without weight updates, executing code generation and logical reasoning tasks. This empirical success validated the scaling laws proposed by Kaplan et al., showing that cross-entropy loss decreases as a power-law function of parameter count, dataset size, and training compute.",
-        "zhHans": "2018 年，Google 发布了 3.4 亿参数的编码器模型 BERT-Large，在 GLUE 和 SQuAD 等 11 项自然语言处理基准上刷新了纪录。与此同时，OpenAI 锁定了仅解码器（Decoder-only）的架构。2020 年，OpenAI 推出了拥有 1750 亿参数的 GPT-3，该模型在 3000 亿 Token 数据上用约 3.14e23 FLOPS 的算力完成预训练。GPT-3 在不进行权重更新的情况下展示出少样本学习（Few-shot）能力，直接运行代码生成和复杂翻译任务。这一实证成功支撑了 Kaplan 等人提出的规模法则（Scaling Laws）：交叉熵损失与模型参数量、数据集规模及训练总算力呈幂律关系负相关。"
+        "en": "In October 2018, Devlin et al. introduced BERT, demonstrating that pre-training deep bidirectional Transformers achieved state-of-the-art results across eleven NLP benchmarks including GLUE. In January 2020, Kaplan et al. documented empirical power-law relationships linking cross-entropy loss to model size, dataset size and training compute, and in May 2020 Brown et al. presented GPT-3 to evaluate few-shot task performance at larger decoder scale without task-specific fine-tuning.",
+        "zhHans": "2018 年 10 月，Devlin 等人提出深度双向预训练模型 BERT，在包括 GLUE 在内的 11 项自然语言处理任务上刷新纪录。2020 年 1 月，Kaplan 等人系统刻画了交叉熵损失随模型规模、数据量与训练算力呈幂律下降的经验法则；同年 5 月，Brown 等人发布大规模解码器模型 GPT-3，检验了不经任务微调的少样本学习能力。"
       },
       "anchorEvents": [
         "bert-2018",
         "gpt3-2020"
       ],
       "keyInsight": {
-        "en": "Performance scales as a power-law function of compute and data. The scaling laws transformed AI research from a craft into an engineering discipline. From 2020 onward, the question shifted from \u2018what architecture works\u2019 to \u2018how much compute can you afford.\u2019",
-        "zhHans": "模型损失与算力、参数和数据量呈精确的幂律负相关。scaling law 把 AI 研究从一门手艺变成了可以预测的工程学科。从 2020 年起，核心问题不再是\u300c什么架构最好\u300d，而是\u300c你负担得起多少算力\u300d。"
+        "en": "Empirical power-law scaling shifted research investment toward predictable compute and corpus expansion, though loss reductions do not guarantee downstream reliability.",
+        "zhHans": "幂律规模法则推动研发投入转向可预期的算力与语料扩展，但交叉熵下降本身并不自动保证下游任务的可靠性。"
       }
     },
     {
       "id": "chatgpt-moment",
       "title": {
-        "en": "The ChatGPT Moment & MoE Scaling",
-        "zhHans": "ChatGPT 时刻与混合专家模型"
+        "en": "Conversational Alignment and Multimodal Frontier Releases",
+        "zhHans": "对话对齐与多模态前沿发布"
       },
       "narrative": {
-        "en": "In November 2022, OpenAI launched ChatGPT, which reached 100 million monthly active users in 60 days, making it the fastest-growing consumer application in history. While GPT-3.5 served as the baseline, the addition of Reinforcement Learning from Human Feedback (RLHF) aligned model outputs to user intent. In March 2023, OpenAI released GPT-4. Reports indicated a Mixture-of-Experts (MoE) architecture totaling approximately 1.8 trillion parameters across 16 experts, operating with a 128k token context window. GPT-4 scored in the 90th percentile of the Uniform Bar Exam and 99th percentile of the Biology Olympiad, establishing that dense and sparse parameter scaling yields high-level cognitive task accuracy.",
-        "zhHans": "2022 年 11 月，OpenAI 推出 ChatGPT，在 60 收官天内实现了 1 亿月活跃用户，成为史上增速最快的消费级应用。尽管底层基于百亿级参数的 GPT-3.5，但引入人类反馈强化学习（RLHF）大幅对齐了输出意图。2023 年 3 月，GPT-4 发布。据业界估算，它采用了包含 16 个专家的混合专家（MoE）架构，总参数量达 1.8 万亿，支持 128k 上下文。GPT-4 在模拟美国统一律师考试中取得了前 10%（90th percentile）的成绩，在生物奥林匹克中名列前 1%（99th percentile），验证了稀疏参数扩展对高难度认知任务的攻坚能力。"
+        "en": "In November 2022, OpenAI launched ChatGPT, pairing a conversational interface and alignment tuning with broad public access. In March 2023, OpenAI published its GPT-4 Technical Report describing a large-scale multimodal system accepting image and text inputs while withholding architectural parameter counts and training-compute details from public disclosure. Unverified third-party rumors about exact internal Mixture-of-Experts counts must be distinguished from what the primary report established.",
+        "zhHans": "2022 年 11 月，OpenAI 推出以对话方式交互的 ChatGPT 并向公众开放。2023 年 3 月，OpenAI 发布《GPT-4 技术报告》，介绍这一支持图像与文本输入的大规模多模态系统，但未在公开报告中披露具体参数规模与训练算力细节。编辑记录须将技术报告确认的多模态能力与外部未经证实的内部混合专家参数猜测明确区分。"
       },
       "anchorEvents": [
         "chatgpt-2022",
         "gpt4-2023"
       ],
       "keyInsight": {
-        "en": "Sparse MoE scaling enabled trillion-parameter training feasibility. But the real breakthrough wasn\u2019t the architecture \u2014 it was RLHF. The alignment technique that turned a raw language model into something millions of ordinary people found genuinely useful.",
-        "zhHans": "稀疏 MoE 架构解决了万亿参数模型单设备显存溢出的计算瓶颈。但真正的突破不是模型架构本身，而是 RLHF 对齐技术。正是这项技术把原始语言模型变成了数亿普通人觉得真正有用的东西。"
+        "en": "Post-training alignment turned raw pre-trained models into widely used interactive products even as frontier labs curtailed architectural disclosure.",
+        "zhHans": "后训练对齐将预训练模型转化为大众交互产品，与此同时前沿实验室开始收紧底层架构细节的公开披露。"
       }
     },
     {
       "id": "scaling-frontier",
       "title": {
-        "en": "Native Multimodality & Inference-Time Compute",
-        "zhHans": "原生多模态与推理时计算"
+        "en": "Omni-Modal Interfaces and Test-Time Reasoning",
+        "zhHans": "原生多模态交互与推理时计算"
       },
       "narrative": {
-        "en": "By 2024, scaling strategy diversified. GPT-4o combined text, vision, and audio into a single neural network, reducing audio latency to an average of 232 milliseconds\u2014matching human conversation speeds. In September 2024, OpenAI introduced o1, shifting focus from pre-training compute to inference-time compute. By using reinforcement learning to generate chains of thought before outputting answers, o1 improved performance on the American Invitational Mathematics Examination (AIME) from GPT-4o's 13.4% to 83.3%. By 2025, GPT-5 integrated these paradigms with unified reasoning, backed by mega-datacenters requiring tens of thousands of H100 GPUs and tens of billions in capital expenditure. In parallel, NVIDIA's market capitalization surpassed $3 trillion, reflecting the massive financial scale required to sustain this infrastructure.",
-        "zhHans": "到 2024 年，扩展策略走向多元。GPT-4o 实现了原生多模态融合，将音频响应延迟缩短至平均 232 毫秒。2024 年 9 月，OpenAI 推出 o1，将算力重心由预训练转移到推理时计算（Inference-time Compute），利用强化学习在输出前生成思考链。o1 在美国数学邀请赛（AIME）中的准确率从 GPT-4o 的 13.4% 暴涨至 83.3%。2025 年，GPT-5 整合了原生多模态与系统推理能力，其背后是容纳数万张 H100/B200 芯片、耗资数百亿美元的超大型数据中心。伴随这一进程，NVIDIA 市值突破 3 万亿美元，印证了维持这一物理计算边界所需的庞大金融支撑。"
+        "en": "In May 2024, OpenAI announced GPT-4o to process text, audio, image and video combinations with lower voice response latency than prior multi-model pipelines. In September 2024, OpenAI introduced the o1 preview series, trained to spend additional inference-time compute reasoning through complex problems before responding, and in August 2025 it released GPT-5 to combine multimodal interaction and reasoning modes within one product line.",
+        "zhHans": "2024 年 5 月，OpenAI 发布支持文本、音频、图像与视频组合输入的 GPT-4o，降低了较早期串联式语音管线的响应延迟。同年 9 月，OpenAI 推出 o1 预览系列，将算力投入延伸至输出回答前的推理思考阶段；2025 年 8 月发布的 GPT-5 则进一步在同一产品线内整合多模态与推理模式。"
       },
       "anchorEvents": [
         "gpt4o-2024",
@@ -97,24 +97,163 @@
         "gpt5-2025"
       ],
       "keyInsight": {
-        "en": "Inference-time search bypassed pre-training sample complexity limits. This shift from pre-training compute to inference-time compute represents a second paradigm shift. It changes the bottleneck from \u2018how much data you have\u2019 to \u2018how much compute you are willing to spend at inference time.\u2019",
-        "zhHans": "推理时计算（RL搜索）绕过了高质量预训练语料枯竭的实证上限。从预训练算力到推理时算力的重心转移意味着第二个范式转换。瓶颈从\u300c你有多少数据\u300d变成了\u300c你愿意在推理时花多少算力\u300d。"
+        "en": "Allocating compute at inference time added a second scaling axis alongside pre-training parameter and token budgets.",
+        "zhHans": "在推理阶段分配额外思考算力，在预训练参数与语料规模之外开辟了第二条算力扩展轴线。"
+      }
+    },
+    {
+      "id": "looped-architectures-silicon-and-controls",
+      "title": {
+        "en": "Looped Transformers, Eighth-Gen Silicon and Remote-Compute Rules",
+        "zhHans": "循环 Transformer、第八代专用芯片与远程算力规制"
+      },
+      "narrative": {
+        "en": "November 2026 highlighted simultaneous pressure on cost, architecture and physical compute governance. Google announced eighth-generation TPU 8tx and TPU 8i Max systems built for agentic workloads on November 9, and OpenAI cut GPT-6.2 Astra API token prices by 20% versus GPT-6 Astra on November 17. On November 19, the U.S. BIS enforced rule 91 FR 74970 regulating foreign data-center remote access to controlled AI chips. Within days, two labs shipped recurrent layer-reuse variants of the Transformer itself: on November 20, Thinking Machines Lab released open-weight looped MoE model Inkling 2 Mini (independently measured by Artificial Analysis at ~2.8x lower compute proxy than Qwen3.8 27B at equal Intelligence Index score, using ~38% more output tokens), and on November 23 Z.ai launched GLM-5.4, looping 28 base layers for two iterations on hosted plans while deferring open weights and benchmark tables.",
+        "zhHans": "2026 年 11 月的密集动态同时体现了推理成本优化、架构变体探索与算力地缘规制。11 月 9 日 Google 发布面向智能体工作负载的第八代 TPU 8tx 与 8i Max 系统；11 月 17 日 OpenAI 将 GPT-6.2 Astra 的 API 单价较前代下调 20%；11 月 19 日美国 BIS 实施 91 FR 74970 新规，将出口许可延伸至受控 AI 芯片的境外远程云访问。数日内，两家机构先后推出层循环复用的 Transformer 变体：Thinking Machines Lab 于 11 月 20 日开放循环 MoE 模型 Inkling 2 Mini 权重（经 Artificial Analysis 独立测得同等智能指数得分下计算代理开销较 Qwen3.8 27B 低约 2.8 倍，输出 token 多约 38%）；Z.ai 则于 11 月 23 日上线将 28 层基座循环迭代两次的 GLM-5.4 托管预览（首发暂未公布跑分表或开放权重）。"
+      },
+      "anchorEvents": [
+        "google-tpu-8tx-8i-max-2026",
+        "openai-gpt-6-2-astra-sol-2026",
+        "us-bis-remote-access-ai-chips-rule-2026",
+        "thinkingmachines-inkling-2-mini-2026",
+        "zai-glm-5-4-2026"
+      ],
+      "keyInsight": {
+        "en": "Rather than abandoning the Transformer, 2026 designs re-introduced iterative layer looping inside MoE backbones while custom silicon and export rules tightened around compute clusters.",
+        "zhHans": "2026 年的演进并未抛弃 Transformer，而是在稀疏骨干内部重新引入层循环迭代，同时专用算力系统与出口管制围绕算力集群同步收紧。"
       }
     }
   ],
   "conclusion": {
-    "en": "The Transformer scaling story is not just a technical achievement. It is the defining economic narrative of the 2020s. In less than a decade, a single architectural insight reshaped the entire computing stack: from a 2017 paper to NVIDIA\u2019s $3-trillion valuation, from machine translation to the infrastructure that underpins a new generation of software. The evidence is clear: raw scale combined with basic structural priors produces capabilities that surprise even their creators.\n\nBut this is not a story without costs \u2014 and the costs are mounting. The computational demands of frontier training now exceed the energy output of small countries. The internet\u2019s stock of high-quality text has been largely exhausted. And the alignment techniques that made ChatGPT safe enough for public use remain fragile shortcuts, not robust solutions. The industry has scaled its way into a corner: the next orders of magnitude in compute will require breakthroughs in energy, data efficiency, or both.\n\nThe deeper question \u2014 the one this timeline cannot answer \u2014 is whether the Transformer\u2019s trajectory will continue or plateau. The architecture has proven more durable than anyone expected in 2017. But durability is not destiny. The transition from pre-training scaling to inference-time compute suggests the paradigm is already shifting. What comes next may not look like the Transformer at all.",
-    "zhHans": "Transformer 的 scaling 故事不只是技术成就，它更是 2020 年代最核心的经济叙事。不到十年，一个架构洞察重塑了整个计算栈：从 2017 年的论文到 NVIDIA 三万亿市值，从机器翻译到支撑新一代软件的基础设施。证据很清楚：极端的规模加上基础结构先验，可以产生连创造者自己都没有预料到的能力。\n\n但这不是一个没有代价的故事\u2014\u2014而且代价正在快速累积。前沿训练的计算需求已经超过了一些小国的总能耗。互联网上高质量文本已经被大量耗尽。让 ChatGPT 足够安全推向大众的对齐技术，目前仍是脆弱的权宜之计，远非稳固的解决方案。这个产业用 scaling 把自己逼到了一个角落：下一个数量级的算力扩张需要能源效率和数据效率的突破，或者二者同时突破。\n\n更深层的问题\u2014\u2014这条时间线无法回答的问题\u2014\u2014是 Transformer 的轨迹会继续还是趋于平稳。这个架构的持久力超出了 2017 年任何人的预期。但持久不等于宿命。从预训练 scaling 到推理时计算的重心转移说明范式已经在变了。接替它的东西，可能和 Transformer 完全不同。"
+    "en": "Nine years after 'Attention Is All You Need,' the Transformer remains the dominant substrate of frontier AI not because its original 2017 recipe stayed static, but because researchers layered sparse routing, alignment tuning, test-time search and iterative layer looping onto parallelizable attention. At the same time, custom accelerator portfolios and remote-compute export controls underscore that architectural efficiency and physical compute access remain tightly coupled constraints.",
+    "zhHans": "在《Attention Is All You Need》发表九年后，Transformer 依然构成前沿 AI 的核心底座——并非因为 2017 年的原始配方一成不变，而是因为稀疏专家路由、后训练对齐、推理时搜索与层循环迭代被不断叠加在可并行注意力骨干之上。与此同时，专用加速器迭代与远程算力出口管制也印证了架构效率探索与底层物理算力约束之间的紧密耦合。"
   },
-  "relatedArcs": [],
+  "relatedArcs": [
+    "open-vs-closed",
+    "ai-in-science",
+    "the-new-programmers"
+  ],
   "tags": [
     "transformer",
-    "scaling",
-    "foundation-models"
+    "scaling-laws",
+    "test-time-compute",
+    "looped-transformer",
+    "ai-chips"
+  ],
+  "sources": [
+    {
+      "sourceId": "ad261127-arxiv-attention-2014",
+      "supports": [
+        "transformer-empire/origins"
+      ]
+    },
+    {
+      "sourceId": "ad261127-arxiv-transformer-2017",
+      "supports": [
+        "transformer-empire/origins"
+      ]
+    },
+    {
+      "sourceId": "ad261127-arxiv-bert-2018",
+      "supports": [
+        "transformer-empire/understanding-emerges"
+      ]
+    },
+    {
+      "sourceId": "ad261127-arxiv-gpt3-2020",
+      "supports": [
+        "transformer-empire/understanding-emerges"
+      ]
+    },
+    {
+      "sourceId": "ad261127-arxiv-kaplan-scaling-2020",
+      "supports": [
+        "transformer-empire/understanding-emerges"
+      ]
+    },
+    {
+      "sourceId": "arc-v24-openai-chatgpt",
+      "supports": [
+        "transformer-empire/chatgpt-moment"
+      ]
+    },
+    {
+      "sourceId": "ad261127-arxiv-gpt4-2023",
+      "supports": [
+        "transformer-empire/chatgpt-moment"
+      ]
+    },
+    {
+      "sourceId": "ad261127-openai-gpt4o-2024",
+      "supports": [
+        "transformer-empire/scaling-frontier"
+      ]
+    },
+    {
+      "sourceId": "ad261127-openai-o1-2024",
+      "supports": [
+        "transformer-empire/scaling-frontier"
+      ]
+    },
+    {
+      "sourceId": "ad261127-verge-o1-2024",
+      "supports": [
+        "transformer-empire/scaling-frontier"
+      ]
+    },
+    {
+      "sourceId": "arc-v24-openai-gpt5",
+      "supports": [
+        "transformer-empire/scaling-frontier"
+      ]
+    },
+    {
+      "sourceId": "restart17-google-tpu8",
+      "supports": [
+        "transformer-empire/looped-architectures-silicon-and-controls"
+      ]
+    },
+    {
+      "sourceId": "ea005-openai-gpt62-blog",
+      "supports": [
+        "transformer-empire/looped-architectures-silicon-and-controls"
+      ]
+    },
+    {
+      "sourceId": "ea005-bis-fr-2026-23529",
+      "supports": [
+        "transformer-empire/looped-architectures-silicon-and-controls"
+      ]
+    },
+    {
+      "sourceId": "ea005-aa-inkling-2-mini",
+      "supports": [
+        "transformer-empire/looped-architectures-silicon-and-controls"
+      ]
+    },
+    {
+      "sourceId": "ea005-zai-glm54-blog",
+      "supports": [
+        "transformer-empire/looped-architectures-silicon-and-controls"
+      ]
+    }
   ],
   "editorial": {
     "createdAt": "2026-06-29",
-    "updatedAt": "2026-06-29",
-    "curator": "gang"
+    "publishedAt": "2026-06-29",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-27",
+    "lastSourceCheckAt": "2026-11-27",
+    "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/arcs-directions-20261127/arc-transformer-empire.json",
+    "changeLog": [
+      {
+        "date": "2026-11-27",
+        "changeType": "correction",
+        "summary": "Migrated transformer-empire to bounded v2.4 claims backed by primary papers and announcements, qualified unverified GPT-4 architecture rumors, and added Chapter 5 covering TPU 8 systems, GPT-6.2 pricing, BIS remote-compute controls, and looped Transformers (Inkling 2 Mini and GLM-5.4)."
+      }
+    ]
   }
 }

@@ -1,124 +1,241 @@
 {
   "id": "the-new-programmers",
   "title": {
-    "en": "The New Programmers: How AI Changed Software Development",
-    "zhHans": "新程序员：AI 如何改变了软件开发"
+    "en": "The New Programmers: AI Coding Tools, Agents and Supply-Chain Risks",
+    "zhHans": "新程序员：AI 编程助手、智能体与供应链风险"
   },
   "searchTitle": {
-    "en": "How AI Changed Programming: From Copilot to Vibe Coding \u2014 A Full Timeline",
-    "zhHans": "AI 如何改变了编程：从 Copilot 到 Vibe Coding"
+    "en": "How AI Changed Software Development (2020–2026): Copilot, Claude Code, DMCA Rulings and IDE Security",
+    "zhHans": "AI 编程演进线（2020—2026）：从 Copilot、Claude Code 到版权裁决与插件安全"
   },
   "searchSummary": {
-    "en": "From GitHub Copilot (2022) to Claude Code and the rise of vibe coding. A timeline of how AI transformed software development \u2014 and what it means for the future of programmers.",
-    "zhHans": "从 GitHub Copilot 到 Claude Code 再到 Vibe Coding 的崛起。AI 如何改变了软件开发\u2014\u2014以及对程序员职业的未来意味着什么。"
+    "en": "From GPT-3 APIs and GitHub Copilot to Claude Code, KernelBench, the Ninth Circuit Copilot DMCA ruling, IDE supply-chain incidents and multi-model coding stacks.",
+    "zhHans": "从 GPT-3 API、GitHub Copilot 到 Claude Code、KernelBench、第九巡回法院 Copilot 裁决、IDE 供应链事故与多模型编程栈。"
   },
   "subtitle": {
-    "en": "How AI assistants and coding agents transformed the practice of software development",
-    "zhHans": "AI 助手和编程智能体如何改变了软件开发这件事本身"
+    "en": "Autocomplete, repository-scale agents, appellate copyright rulings and new operational failure modes",
+    "zhHans": "代码补全、仓库级智能体、上诉法院版权裁决与新型工程风险"
   },
   "coverTheme": "society",
   "status": "published",
   "significance": 2,
   "abstract": {
-    "en": "In 2022, GitHub Copilot brought AI pair programming to every IDE. Four years later, 'vibe coding' had entered the developer vocabulary \u2014 the practice of letting AI write code while the human barely reads it. In between, AI coding assistants became agents, agents became trusted coworkers, and the very definition of 'programming' began to shift. This arc is not about technology \u2014 it is about how AI changed what it means to be a programmer, how experienced developers redefined their relationship with code, and how a new generation learned to program by describing what they wanted rather than writing it line by line.",
-    "zhHans": "2022 年，GitHub Copilot 将 AI 结对编程带到了每个 IDE 中。四年后，'氛围编程'进入了开发者词汇表 \u2014 让 AI 写代码而人类几乎不阅读代码的实践。在两者之间，AI 编程助手变成了智能体、智能体变成了值得信赖的同事、而'编程'本身的定义开始转变。本专题不关乎技术 \u2014 而是关于 AI 如何改变了当一名程序员意味着什么，经验丰富的开发者如何重新定义他们与代码的关系，以及新一代如何通过描述他们想要的东西而不是逐行编写来学习编程。"
+    "en": "From OpenAI’s 2020 API and GitHub Copilot’s IDE completions to terminal coding agents, specialized kernel generation and multi-model enterprise IDEs in late 2026, software tooling shifted toward higher-level specification and review. At the same time, the 2026 record exposed concrete operational and legal boundaries: packaging leaks, silent workspace uploads, tampered marketplace extensions and appellate litigation over open-source attribution under DMCA Section 1202(b). This Arc examines what documented tools, benchmarks and court decisions actually show, without assuming unmeasured industry-wide replacement of human software engineering.",
+    "zhHans": "从 2020 年 OpenAI API 与 GitHub Copilot 的 IDE 代码补全，到终端编程智能体、底层内核生成以及 2026 年底的多模型企业开发栈，软件工具链不断向更高层的需求描述与代码审查演进。与此同时，2026 年的一系列事件也暴露了明确的工程与法律边界：源码打包泄露、工作区静默上传争议、编辑器插件市场遭篡改，以及围绕开源代码署名移除的 DMCA 第 1202(b) 条上诉裁决。本专题基于已核实的产品、基准与判例梳理这一演变，而不预设未经实证测量的“全行业手写代码消亡”结论。"
   },
   "chapters": [
     {
       "id": "pair-programmer",
       "title": {
-        "en": "The Pair Programmer Arrives",
-        "zhHans": "结对编程员来了"
+        "en": "API Models and IDE Autocomplete",
+        "zhHans": "模型 API 与 IDE 结对补全"
       },
       "narrative": {
-        "en": "In June 2022, GitHub Copilot launched generally, putting AI pair programming in every major IDE. Copilot was not an agent \u2014 it was an assistant, suggesting the next line or function based on context. It was trained on public code repositories and could generate code in dozens of languages. The reception was polarized: some developers called it a productivity miracle; others called it a plagiarism machine that would flood the world with mediocre code. But the most important reaction was quieter. Developers who used Copilot daily began to notice a subtle shift in their thinking. They spent less time on syntax and boilerplate, more time on architecture and design. They started thinking about problems at a higher level of abstraction. Copilot didn't replace programmers \u2014 it changed what programmers paid attention to. The implications were not yet fully understood in 2022, but the trajectory was set: programming was no longer a solitary craft of translating thoughts into code. It was becoming a collaborative process between human intent and machine suggestion.",
-        "zhHans": "2022 年 6 月，GitHub Copilot 正式发布，将 AI 结对编程带到了每个主流 IDE 中。Copilot 不是智能体 \u2014 它是一个助手，根据上下文建议下一行或下一个函数。它在公开代码仓库上训练，可以生成数十种语言的代码。反响两极分化：一些开发者称之为生产力奇迹；另一些则称之为会淹没世界的平庸代码的剽窃机器。但最重要的反应更安静。每天使用 Copilot 的开发者开始注意到他们思维方式微妙的转变。他们花在语法和样板代码上的时间更少，花在架构和设计上的时间更多。他们开始以更高的抽象层次思考问题。Copilot 没有取代程序员 \u2014 它改变了程序员关注的对象。这些影响在 2022 年还没有被完全理解，但轨迹已经确定：编程不再是独立思考转换为代码的孤独手艺。它正在变成人类意图和机器建议之间的协作过程。"
+        "en": "OpenAI’s 2020 API release made general-purpose text and code generation accessible as a hosted developer service, and GitHub Copilot’s preview and subsequent rollout brought inline code suggestions directly into mainstream editors. Inline assistants operated within human-driven editing loops—proposing lines or functions while leaving repository navigation, test execution and deployment in the developer’s hands. Early debates centered on licensing of public training repositories and code quality rather than autonomous task ownership.",
+        "zhHans": "2020 年 OpenAI 开放 API 使通用文本与代码生成成为可调用的开发者服务，随后 GitHub Copilot 将行内代码补全直接嵌入主流 IDE。这一阶段的编程助手运行在人工主导的编辑循环内——负责建议代码行或函数，而跨文件导航、测试运行与部署仍由开发者执行；早期争议集中于公开训练仓库的许可边界与生成代码质量，而非自主接管工程任务。"
       },
       "anchorEvents": [
         "gpt3-2020",
         "github-copilot-2022"
       ],
       "keyInsight": {
-        "en": "Copilot didn't automate programming \u2014 it automated the parts of programming that weren't the real work. The craft didn't shrink; it moved to a higher level.",
-        "zhHans": "Copilot 没有自动化编程 \u2014 它自动化了编程中不属于真正工作的那部分。手艺没有缩小，它上升到了更高的层次。"
+        "en": "Inline IDE completion altered keystroke-level coding workflows while keeping control flow and verification entirely manual.",
+        "zhHans": "IDE 行内补全改变了击键层面的编码习惯，但控制流与验证闭环仍完全依赖人工。"
       }
     },
     {
       "id": "from-assistant-to-agent",
       "title": {
-        "en": "From Assistant to Agent",
-        "zhHans": "从助手到智能体"
+        "en": "Goal Loops and Tool Protocols",
+        "zhHans": "目标循环实验与工具协议"
       },
       "narrative": {
-        "en": "Copilot suggested code. But what if AI could write entire programs? Auto-GPT, released in March 2023, offered a glimpse of this future \u2014 an agent that could break down a goal into sub-tasks and execute them autonomously, including writing code, browsing the web, and managing files. It was crude, but it planted a seed: the idea that AI could be given a goal and trusted to execute it independently. The seed took time to grow. For most of 2023 and 2024, AI programming tools remained assistants \u2014 they completed your sentences. The shift came in November 2024, when Anthropic open-sourced the Model Context Protocol (MCP). MCP gave AI agents a standardized way to interact with developer tools: file systems, version control, package managers, databases. A programming agent with MCP could clone a repository, understand its structure, make changes, run tests, and commit code \u2014 all without human intervention at each step. The protocol was rapidly adopted by OpenAI, Google, and the broader ecosystem. MCP was the pipe that transformed AI coding from suggestion to execution. The assistant era was ending; the agent era was beginning.",
-        "zhHans": "Copilot 建议代码。但如果 AI 能编写整个程序呢？2023 年 3 月发布的 Auto-GPT 提供了这种未来的一个瞥见 \u2014 一个可以将目标分解为子任务并自主执行的智能体，包括编写代码、浏览网页和管理文件。它很粗糙，但播下了一颗种子：AI 可以被赋予一个目标并被信任独立执行的想法。种子需要时间来生长。在 2023 年和 2024 年的大部分时间里，AI 编程工具仍然是助手 \u2014 它们补全你的句子。转变发生在 2024 年 11 月，Anthropic 开源了模型上下文协议（MCP）。MCP 给了 AI 智能体一种与开发者工具交互的标准化方式：文件系统、版本控制、包管理器、数据库。一个带有 MCP 的编程智能体可以克隆代码仓库、理解其结构、做出修改、运行测试并提交代码 \u2014 所有这些都不需要在每个步骤中人工干预。该协议迅速被 OpenAI、Google 和更广泛的生态系统采用。MCP 是将 AI 编程从建议转变为执行的管道。助手时代正在结束；智能体时代正在开始。"
+        "en": "In March 2023, AutoGPT popularized experiments in chaining model outputs to file and shell actions, illustrating interest in repository-level automation despite frequent looping and reliability limits. In November 2024, Anthropic open-sourced the Model Context Protocol (MCP), providing a standardized interface for connecting models with local repositories, issue trackers and databases. Standardizing tool access did not solve long-horizon reasoning errors, but it gave coding tools a uniform mechanism to read context and invoke local commands.",
+        "zhHans": "2023 年 3 月，AutoGPT 引发了将模型输出与文件及命令行操作串联的实验热潮，尽管受限于死循环与稳定性瓶颈，仍展现出社区对仓库级自动化的兴趣。2024 年 11 月，Anthropic 开源模型上下文协议（MCP），为模型接入本地仓库、工单系统与数据库提供了统一接口。标准化工具协议并未消除长链路推理失误，但为编程工具读取上下文与调用本地命令提供了通用通道。"
       },
       "anchorEvents": [
         "auto-gpt-2023",
         "mcp-protocol-2024"
       ],
       "keyInsight": {
-        "en": "MCP turned AI coding assistants into agents \u2014 the difference between suggesting a fix and writing it yourself. This was the moment AI crossed from tool to coworker.",
-        "zhHans": "MCP 将 AI 编程助手变成了智能体 \u2014 这是建议修复和自己写修复之间的区别。这是 AI 从工具跨越到同事的时刻。"
+        "en": "Connecting models to file systems and test runners via standard protocols enabled multi-step editing loops beyond single-file autocomplete.",
+        "zhHans": "通过标准协议打通文件系统与测试运行器，使 AI 编程从单文件补全迈向多步编辑闭环。"
       }
     },
     {
       "id": "the-agent-coworker",
       "title": {
-        "en": "The Agent Coworker",
-        "zhHans": "智能体同事"
+        "en": "CLI Coding Agents and 'Vibe Coding'",
+        "zhHans": "命令行编程代理与“氛围编程”争议"
       },
       "narrative": {
-        "en": "February 2025 was the month programming changed. Andrej Karpathy coined 'vibe coding' \u2014 a term for the practice of letting AI write code while the human merely describes what they want, often without even reading the output. The term went viral because it named something developers were already doing: relinquishing control over code generation to focus on intent. Days later, Anthropic released Claude Code \u2014 a terminal-based agent that could understand entire codebases, write patches, and execute multi-step tasks. Unlike Copilot, which suggested lines within an IDE, Claude Code took a goal ('fix the login bug') and autonomously found the issue, wrote the fix, tested it, and submitted a pull request. For the first time, real development teams trusted an AI agent with production code. The combination of vibe coding as a cultural concept and Claude Code as a working tool created a new reality: programming was no longer about writing code. It was about describing problems and verifying solutions. The developer\u2019s skill shifted from syntax mastery to problem decomposition, from language expertise to prompt engineering and code review. The craft wasn't dying \u2014 it was moving to a higher level of abstraction.",
-        "zhHans": "2025 年 2 月是编程改变的那个月。Andrej Karpathy 创造了'氛围编程'（vibe coding）这个词 \u2014 一个描述让 AI 写代码而人类仅描述他们想要什么、常常甚至不阅读输出的实践的术语。这个词病毒式传播，因为它命名了开发者已经在做的事情：放弃对代码生成的控制，专注于意图。数天后，Anthropic 发布了 Claude Code \u2014 一个基于终端的智能体，可以理解整个代码仓库、编写补丁和执行多步任务。与在 IDE 内建议代码行的 Copilot 不同，Claude Code 接受一个目标（'修复登录 bug'）并自主找到问题、编写修复、测试并提交拉取请求。第一次，真实开发团队信任 AI 智能体处理生产代码。氛围编程作为一个文化概念和 Claude Code 作为一个工作工具的结合创造了一个新的现实：编程不再是关于写代码。它是关于描述问题和验证解决方案。开发者的技能从语法掌握转向问题分解，从语言专长转向提示工程和代码审查。手艺没有消亡 \u2014 它正在上升到更高的抽象层次。"
+        "en": "In February 2025, Andrej Karpathy coined 'vibe coding' to describe accepting LLM-generated code through natural-language prompts with minimal manual code inspection—a workflow that independent reporting noted accelerated prototypes while introducing comprehension and security debt. Later that month, Anthropic introduced Claude Code alongside Claude 3.7 Sonnet, bringing an agentic command-line tool into terminal workflows. Together these developments highlighted a growing split between rapid prompt-driven prototyping and disciplined engineering review.",
+        "zhHans": "2025 年 2 月，Andrej Karpathy 提出“氛围编程”（vibe coding），形容主要凭自然语言提示接受大模型生成代码而较少深究实现细节的做法；独立报道指出，这种方式加快了原型搭建，但也埋下代码理解不足与安全维护隐患。同月下旬，Anthropic 随 Claude 3.7 Sonnet 推出命令行编程工具 Claude Code，将多步仓库操作引入终端。两者的并行凸显出“提示驱动快速成型”与“严谨工程审查”之间的张力。"
       },
       "anchorEvents": [
         "vibecoding-2025",
         "claude-code-launch-2025"
       ],
       "keyInsight": {
-        "en": "When 'vibe coding' entered the dictionary and agents entered production, programming became about intent, not syntax. The developer's value shifted from what they could type to what they could envision.",
-        "zhHans": "当'氛围编程'进入词典、智能体进入生产时，编程就变成了关于意图而非语法。开发者的价值从能打什么字转向能构想什么。"
+        "en": "Prompt-only coding lowered barriers to building prototypes while increasing the premium on verification, debugging and architectural review.",
+        "zhHans": "纯提示驱动编码降低了构建原型的门槛，但同步抬高了验证、调试与架构审查的权重。"
       }
     },
     {
       "id": "the-new-reality",
       "title": {
-        "en": "The New Reality",
-        "zhHans": "新的现实"
+        "en": "Packaging Mistakes and Specialized Kernel Benchmarks",
+        "zhHans": "源码打包失误与底层内核基准"
       },
       "narrative": {
-        "en": "In March 2026, Anthropic accidentally exposed 512,000 lines of Claude Code source code through a leaked npm package. The leak was a security incident, but it also offered an unprecedented window into how a production coding agent actually worked \u2014 revealing secret agent features, tool orchestration logic, and the infrastructure behind what developers had come to trust with their code. The irony was not lost on the community: the AI that wrote code for thousands of companies had its own code exposed by a packaging mistake, written by humans. By 2026, the transformation was complete. A new programmer \u2014 the 'vibe coder' \u2014 had entered the workforce. These developers might not know the syntax of every language, but they knew how to describe what they wanted, how to evaluate the output, and how to guide an AI agent through complex problem-solving. The experienced developer's role shifted from writing code to orchestrating AI agents, reviewing their output, handling edge cases, and thinking about system architecture. The profession had not been replaced \u2014 it had been elevated. The question was no longer 'will AI replace programmers?' but 'what kind of thinking does programming require when AI handles the typing?'",
-        "zhHans": "2026 年 3 月，Anthropic 通过一个泄露的 npm 包意外暴露了 51.2 万行 Claude Code 源代码。这次泄露是一个安全事件，但它也提供了一个前所未有的窗口，让人们看到一个生产级编程智能体实际上是如何工作的 \u2014 揭示了秘密的智能体特性、工具编排逻辑、以及开发者已经信任其处理代码的基础设施。社区没有忽略其中的讽刺：为数以千计公司编写代码的 AI，其自己的代码却因一个打包错误而被暴露\u2014\u2014由人类编写的。到 2026 年，转变已经完成。一种新程序员 \u2014 '氛围编程者' \u2014 已进入劳动力队伍。这些开发者可能不了解每种语言的语法，但他们知道如何描述他们想要什么、如何评估输出、以及如何引导 AI 智能体解决复杂问题。经验丰富的开发者的角色从编写代码转变为编排 AI 智能体、审查它们的输出、处理边缘情况以及思考系统架构。这个职业没有被取代 \u2014 它被提升了。问题不再是'AI 会取代程序员吗？'而是'当 AI 负责打字时，编程需要什么样的思考？'"
+        "en": "In March 2026, Anthropic confirmed that a packaging error accidentally exposed internal source code for its Claude Code CLI, underscoring that human build-and-release hygiene still governs agent tooling. In July 2026, Import AI documented Fable 5 submitting a fast megakernel on the KernelBench-Mega benchmark, illustrating progress on bounded systems-programming benchmarks. Benchmark submissions on defined GPU tasks, however, do not establish error-free maintenance across large, evolving production codebases.",
+        "zhHans": "2026 年 3 月，Anthropic 证实因打包失误意外泄露了编程助手 Claude Code 的部分内部源码，提醒业界智能体工具本身依然受制于人类构建与发布流程的工程卫生。同年 7 月，Import AI 记录了 Fable 5 在 KernelBench-Mega 基准上提交高性能 GPU 融合内核的案例，展现出模型在边界明确的系统编程基准上的进展；但特定算子基准的跑分并不等同于大型演进生产系统的长期无错维护。"
       },
       "anchorEvents": [
         "claude-code-leak-2026",
         "fable-5-kernelbench-2026"
       ],
       "keyInsight": {
-        "en": "The AI that wrote code for thousands of companies had its own code exposed by a human mistake \u2014 the new programmers were still human. The machines didn't make the profession obsolete; they revealed what it was really about.",
-        "zhHans": "为数千家公司写代码的 AI，其自己的代码因一个人类错误而暴露 \u2014 新程序员仍然是人。机器没有让这个职业过时；它们揭示了编程真正关乎的是什么。"
+        "en": "High scores on self-contained systems benchmarks coexist with mundane packaging and release failures in real software pipelines.",
+        "zhHans": "封闭系统基准上的亮眼表现，与真实软件流水线中基础打包发布失误在现实中并存。"
+      }
+    },
+    {
+      "id": "legal-supply-chain-and-multi-model-ides",
+      "title": {
+        "en": "Appellate Law, Workspace Supply Chains and First-Party Coding Fleets",
+        "zhHans": "上诉判例、插件供应链风险与自研编程模型矩阵"
+      },
+      "narrative": {
+        "en": "September through November 2026 reshaped three structural dimensions of AI software development. Legally, on September 16, the U.S. Ninth Circuit upheld dismissal of programmers’ DMCA Section 1202(b) output claims against GitHub Copilot: while rejecting the argument that a copy must be identical to the original to sustain a Section 1202(b) claim, the court held that plaintiffs’ output theory failed to allege removal or alteration of copyright management information (CMI) from copies of their code, and left unpreserved input-side arguments unaddressed. Operationally, coding tools became a direct supply-chain vector: Z.ai disabled ZCode features in September after researchers documented silent full-workspace archive uploads, and Cursor removed maliciously prepended builds of Anthropic’s Claude Code extension from its marketplace on October 29. Commercially, platform owners expanded in-house coding models: Meta launched Muse Ember across Muse Code and its API on November 9, and Microsoft made MAI Code 2 and MAI Code 2 Flash available in GitHub Copilot (with Code 2 Flash also in limited-access preview in Microsoft Foundry) at Ignite on November 17.",
+        "zhHans": "2026 年 9 至 11 月，AI 软件开发在法律、供应链安全与平台模型供给三个维度出现实质演变。法律层面，美国第九巡回上诉法院于 9 月 16 日在 GitHub Copilot 案中维持驳回程序员基于 DMCA 第 1202(b) 条的输出端索赔：法院虽拒绝了“复制件须与原作完全一致才构成第 1202(b) 条主张”的抗辩，但认定原告的输出端理论未能证明从其代码复制件上移除或篡改了版权管理信息（CMI），同时未审理未保留的输入端争点。安全层面，AI 编程工具自身成为供应链风险入口：9 月 Z.ai 在研究人员披露 ZCode 静默打包上传完整工作区后下线相关功能；10 月 29 日 Cursor 从插件市场移除遭恶意植入前置代码的 Claude Code 扩展包。商业供给层面，大型平台加速推进自研编程模型入列：Meta 于 11 月 9 日在 Muse Code 与 API 上线 Muse Ember，微软则于 11 月 17 日 Ignite 大会在 GitHub Copilot 中提供 MAI Code 2 与 MAI Code 2 Flash（其中 Code 2 Flash 同步在 Microsoft Foundry 开启受限预览）。"
+      },
+      "anchorEvents": [
+        "ninth-circuit-github-copilot-dmca-2026",
+        "zai-zcode-workspace-upload-incident-2026",
+        "cursor-claude-code-extension-compromise-2026",
+        "meta-muse-ember-2026",
+        "microsoft-ignite-mai-models-2026"
+      ],
+      "keyInsight": {
+        "en": "As coding assistants mature into multi-model enterprise platforms, workspace privacy, extension provenance and statutory copyright boundaries become first-order engineering concerns.",
+        "zhHans": "随着编程助手演进为多模型企业平台，工作区数据外传、扩展包供应链溯源与法定版权边界正成为一线工程治理焦点。"
       }
     }
   ],
   "conclusion": {
-    "en": "Four years transformed programming from a craft into a partnership. In 2022, the question was 'can AI help me write code?' By 2026, the question was 'what do I need to know that AI doesn\u2019t?' The answer is not syntax or languages \u2014 it is the ability to decompose problems, verify solutions, and think at the system level. The new programmer is not the one who types faster, but the one who thinks clearer. Programming has not been automated \u2014 it has been unbundled. The typing is handled by AI. The thinking \u2014 the architecture, the edge cases, the tradeoffs, the understanding of what to build and why \u2014 remains the programmer's job. And that shift, more than any specific technology, is the real story of how AI changed software development.\n\nBy mid-2026, the transformation had reached a tipping point. Hand-written code had fallen below 10% of total code produced in many organizations. Developers on Chinese social media were posting threads titled 'I haven\u2019t written a line of code by hand since 2026, and I know my career is over.' 36kr documented programmers whose companies required them to use AI for everything, tracking token consumption as a performance metric. But alongside the productivity gains came a warning: Business Insider reported that the 'vibe coding bubble' was producing a wave of fragile, unmaintainable products built by people who could not support them beyond launch. The next phase of the story was already taking shape \u2014 not about whether AI can write code, but about who can maintain what AI builds.",
-    "zhHans": "四年时间将编程从一门手艺转变为了一种伙伴关系。2022 年，问题是'AI 能帮我写代码吗？'到 2026 年，问题是'我需要知道 AI 不知道的什么？'答案不是语法或语言 \u2014 而是分解问题、验证解决方案和在系统层面思考的能力。新程序员不是打字更快的人，而是思考更清晰的人。编程没有被自动化 \u2014 它被解绑了。打字由 AI 处理。思考 \u2014 架构、边缘情况、权衡、理解构建什么以及为什么 \u2014 仍然是程序员的工作。而这一转变，比任何特定技术都更重要，才是 AI 如何改变软件开发的真正故事。\n\n到 2026 年中，这一转变达到了一个临界点。在许多组织中，手写代码已降至总代码量的 10% 以下。中文社区的 V2EX 上出现了题为《从 2026 年后开始，就没手写过代码了，全部 ai 写，我也知道我的职业要完了》的帖子。36氪的深度报道记录了程序员被公司要求全部使用 AI 写代码、Token 用量被纳入绩效考核的现状。各公司纷纷用 AI 编程来驱动降本增效，程序员们陷入了'越提效越累'的悖论——编码速度是快了，但需求对齐、代码审查和系统维护的负担依然在，被压缩掉的只是开发者原本用于思考和休息的时间。与此同时，Business Insider 发出了警告：'vibe coding 泡沫'正在催生一波脆弱的、不可维护的产品——产品有人建，没人修。故事的下一个篇章已经开始浮现：问题不再是 AI 能否写代码，而是谁能维护 AI 写出来的东西。"
+    "en": "Between 2020 and late 2026, AI coding tools expanded from single-line autocomplete to CLI agents, specialized kernel generators and multi-model IDE suites from Microsoft, Meta, Anthropic and OpenAI. Yet the empirical record does not show software engineering becoming effortless or human-free: appellate rulings hinge on specific statutory text, workspace upload and marketplace tampering incidents expose new developer attack surfaces, and benchmark wins still require human verification and maintenance.",
+    "zhHans": "2020 年至 2026 年底，AI 编程工具从单行代码补全扩展为命令行智能体、特定内核生成以及微软、Meta、Anthropic 与 OpenAI 竞逐的多模型 IDE 矩阵。但实证记录并未指向“软件工程不再需要人类把关”：上诉法院判例受限于具体法条要件，工作区静默上传与插件市场投毒暴露出全新的开发者攻击面，而模型在局部基准上的突破依然离不开人类的架构验证与持续维护。"
   },
   "relatedArcs": [
     "ai-agents",
-    "transformer-empire"
+    "transformer-empire",
+    "ai-safety"
   ],
   "tags": [
     "programming",
     "vibecoding",
     "copilot",
     "claude-code",
-    "developer-tools"
+    "supply-chain-security",
+    "dmca"
+  ],
+  "sources": [
+    {
+      "sourceId": "arc-v24-openai-gpt3-api",
+      "supports": [
+        "the-new-programmers/pair-programmer"
+      ]
+    },
+    {
+      "sourceId": "arc-v24-github-copilot",
+      "supports": [
+        "the-new-programmers/pair-programmer"
+      ]
+    },
+    {
+      "sourceId": "ad261127-github-autogpt",
+      "supports": [
+        "the-new-programmers/from-assistant-to-agent"
+      ]
+    },
+    {
+      "sourceId": "arc-v24-anthropic-mcp",
+      "supports": [
+        "the-new-programmers/from-assistant-to-agent"
+      ]
+    },
+    {
+      "sourceId": "ad261127-ars-vibe-coding-2025",
+      "supports": [
+        "the-new-programmers/the-agent-coworker"
+      ]
+    },
+    {
+      "sourceId": "ad261127-anthropic-claude-37-code-2025",
+      "supports": [
+        "the-new-programmers/the-agent-coworker"
+      ]
+    },
+    {
+      "sourceId": "arc-v24-cnbc-claude-leak",
+      "supports": [
+        "the-new-programmers/the-new-reality"
+      ]
+    },
+    {
+      "sourceId": "ad261127-importai-464-fable5",
+      "supports": [
+        "the-new-programmers/the-new-reality"
+      ]
+    },
+    {
+      "sourceId": "v24-20260920-gibson-dunn-ca9",
+      "supports": [
+        "the-new-programmers/legal-supply-chain-and-multi-model-ides"
+      ]
+    },
+    {
+      "sourceId": "sweep-20260929-zai-zcode-cso",
+      "supports": [
+        "the-new-programmers/legal-supply-chain-and-multi-model-ides"
+      ]
+    },
+    {
+      "sourceId": "new26-cursor",
+      "supports": [
+        "the-new-programmers/legal-supply-chain-and-multi-model-ides"
+      ]
+    },
+    {
+      "sourceId": "restart17-meta-ember",
+      "supports": [
+        "the-new-programmers/legal-supply-chain-and-multi-model-ides"
+      ]
+    },
+    {
+      "sourceId": "ea005-msft-mai-code-2",
+      "supports": [
+        "the-new-programmers/legal-supply-chain-and-multi-model-ides"
+      ]
+    }
   ],
   "editorial": {
     "createdAt": "2026-06-30",
-    "updatedAt": "2026-06-30",
-    "curator": "gang"
+    "publishedAt": "2026-06-30",
+    "updatedAt": "2026-11-27",
+    "reviewedAt": "2026-11-27",
+    "lastSourceCheckAt": "2026-11-27",
+    "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+    "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
+    "reviewProvenance": "v2.4",
+    "reviewRecord": "governance/reviews/arcs-directions-20261127/arc-the-new-programmers.json",
+    "changeLog": [
+      {
+        "date": "2026-11-27",
+        "changeType": "correction",
+        "summary": "Migrated entire the-new-programmers Arc to bounded v2.4 claims with frozen verbatim quotes, removed unsourced '<10% handwritten code' and social-media anecdotes, and added Chapter 5 covering Ninth Circuit Copilot DMCA ruling, ZCode/Cursor supply-chain incidents, Meta Muse Ember, and Microsoft MAI Code 2."
+      }
+    ]
   }
 }

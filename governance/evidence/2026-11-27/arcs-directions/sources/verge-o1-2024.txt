@@ -1,0 +1,104 @@
+URL: https://www.theverge.com/2024/9/12/24242439/openai-o1-model-reasoning-strawberry-chatgpt
+TITLE: OpenAI releases new o1 reasoning model | The Verge
+META_DESCRIPTION: OpenAI is releasing a new model called o1, also secretly known as “Strawberry.” The company says it can handle more complex tasks — at a steep price.
+---
+OpenAI releases new o1 reasoning model | The Verge
+Skip to main content
+See all entertainment
+See all transportation
+Verge Product Updates
+OpenAI releases o1, its first model with ‘reasoning’ abilities
+Getting the conversation ready...
+Posts from this topic will be added to your daily email digest and your homepage feed. Follow
+Posts from this topic will be added to your daily email digest and your homepage feed. Follow
+Posts from this topic will be added to your daily email digest and your homepage feed. Follow
+OpenAI releases o1, its first model with ‘reasoning’ abilities
+The rumored ‘Strawberry’ model is here, and the company says it can handle more complex queries — for a steep price.
+The rumored ‘Strawberry’ model is here, and the company says it can handle more complex queries — for a steep price.
+Former Senior AI Reporter
+Last published Apr 15, 2025
+Posts from this author will be added to your daily email digest and your homepage feed. Follow
+See All by Kylie Robison Sep 12, 2024, 5:05 PM UTC
+From ChatGPT to Gemini: how AI is rewriting the internet
+OpenAI is releasing a new model called o1, the first in a planned series of “reasoning” models that have been trained to answer more complex questions, faster than a human can. It’s being released alongside o1-mini, a smaller, cheaper version. And yes, if you’re steeped in AI rumors: this is, in fact, the extremely hyped Strawberry model.
+For OpenAI, o1 represents a step toward its broader goal of human-like artificial intelligence. More practically, it does a better job at writing code and solving multistep problems than previous models. But it’s also more expensive and slower to use than GPT-4o . OpenAI is calling this release of o1 a “preview” to emphasize how nascent it is.
+ChatGPT Plus and Team users get access to both o1-preview and o1-mini starting today, while Enterprise and Edu users will get access early next week. According to OpenAI, it plans to give o1-mini access to all ChatGPT free users, but it hasn’t committed to a specific date. Developer access to o1 is really expensive: in the API, o1-preview is $15 per 1 million input tokens, or chunks of text parsed by the model, and $60 per 1 million output tokens. For comparison, GPT-4o costs $5 per 1 million input tokens and $15 per 1 million output tokens.
+The training behind o1 is fundamentally different from its predecessors, OpenAI’s research lead, Jerry Tworek, tells me, though the company is being vague about the exact details. He says o1 “has been trained using a completely new optimization algorithm and a new training dataset specifically tailored for it.”
+OpenAI taught previous GPT models to mimic patterns from its training data. With o1, it trained the model to solve problems on its own using a technique known as reinforcement learning, which teaches the system through rewards and penalties. It then uses a “chain of thought” to process queries, similarly to how humans process problems by going through them step-by-step.
+As a result of this new training methodology, OpenAI says the model should be more accurate. “We have noticed that this model hallucinates less,” Tworek says. But the problem still persists. “We can’t say we solved hallucinations.”
+The main thing that sets this new model apart from GPT-4o is its ability to tackle complex problems, such as coding and math, much better than its predecessors while also explaining its reasoning, according to OpenAI.
+“The model is definitely better at solving the AP math test than I am, and I was a math minor in college,” OpenAI’s chief research officer, Bob McGrew, tells me. He says OpenAI also tested o1 against a qualifying exam for the International Mathematics Olympiad, and while GPT-4o only correctly solved only 13 percent of problems, o1 scored 83 percent.
+“We can’t say we solved hallucinations”
+In online programming contests known as Codeforces competitions, this new model reached the 89th percentile of participants, and OpenAI claims the next update of this model will perform “similarly to PhD students on challenging benchmark tasks in physics, chemistry and biology.”
+At the same time, o1 is not as capable as GPT-4o in a lot of areas. It doesn’t do as well on factual knowledge about the world. It also doesn’t have the ability to browse the web or process files and images. Still, the company believes it represents a brand-new class of capabilities. It was named o1 to indicate “resetting the counter back to 1.”
+“I’m gonna be honest: I think we’re terrible at naming, traditionally,” McGrew says. “So I hope this is the first step of newer, more sane names that better convey what we’re doing to the rest of the world.”
+I wasn’t able to demo o1 myself, but McGrew and Tworek showed it to me over a video call this week. They asked it to solve this puzzle:
+“A princess is as old as the prince will be when the princess is twice as old as the prince was when the princess’s age was half the sum of their present age. What is the age of prince and princess? Provide all solutions to that question.”
+The model buffered for 30 seconds and then delivered a correct answer. OpenAI has designed the interface to show the reasoning steps as the model thinks. What’s striking to me isn’t that it showed its work — GPT-4o can do that if prompted — but how deliberately o1 appeared to mimic human-like thought. Phrases like “I’m curious about,” “I’m thinking through,” and “Ok, let me see” created a step-by-step illusion of thinking.
+But this model isn’t thinking, and it’s certainly not human. So, why design it to seem like it is?
+Phrases like “I’m curious about,” “I’m thinking through,” and “Ok, let me see” create a step-by-step illusion of thinking. Image: OpenAI
+OpenAI doesn’t believe in equating AI model thinking with human thinking, according to Tworek. But the interface is meant to show how the model spends more time processing and diving deeper into solving problems, he says. “There are ways in which it feels more human than prior models.”
+“I think you’ll see there are lots of ways where it feels kind of alien, but there are also ways where it feels surprisingly human,” says McGrew. The model is given a limited amount of time to process queries, so it might say something like, “Oh, I’m running out of time, let me get to an answer quickly.” Early on, during its chain of thought, it may also seem like it’s brainstorming and say something like, “I could do this or that, what should I do?”
+Building toward agents
+Large language models aren’t exactly that smart as they exist today. They’re essentially just predicting sequences of words to get you an answer based on patterns learned from vast amounts of data. Take ChatGPT, which tends to mistakenly claim that the word “strawberry” has only two Rs because it doesn’t break down the word correctly. For what it’s worth, the new o1 model did get that query correct.
+As OpenAI reportedly looks to raise more funding at an eye-popping $150 billion valuation , its momentum depends on more research breakthroughs. The company is bringing reasoning capabilities to LLMs because it sees a future with autonomous systems, or agents, that are capable of making decisions and taking actions on your behalf.
+For AI researchers, cracking reasoning is an important next step toward human-level intelligence. The thinking is that, if a model is capable of more than pattern recognition, it could unlock breakthroughs in areas like medicine and engineering. For now, though, o1’s reasoning abilities are relatively slow, not agent-like, and expensive for developers to use.
+“We have been spending many months working on reasoning because we think this is actually the critical breakthrough,” McGrew says. “Fundamentally, this is a new modality for models in order to be able to solve the really hard problems that it takes in order to progress towards human-like levels of intelligence.”
+Follow topics and authors from this story to see more like this in your personalized homepage feed and to receive email updates.
+Former Senior AI Reporter
+Last published Apr 15, 2025
+Posts from this author will be added to your daily email digest and your homepage feed. Follow
+See All by Kylie Robison
+Posts from this topic will be added to your daily email digest and your homepage feed. Follow
+Posts from this topic will be added to your daily email digest and your homepage feed. Follow
+Posts from this topic will be added to your daily email digest and your homepage feed. Follow
+Posts from this topic will be added to your daily email digest and your homepage feed. Follow
+More in: From ChatGPT to Gemini: how AI is rewriting the internet
+Zuck doesn’t want to press pause on AI.
+Sean Hollister Sep 16
+YouTube’s AI chatbot can make your next video thumbnail.
+Richard Lawler Jul 24
+Common Sense Media says that Google’s AI search is unsafe for kids, with no way for parents and teachers to turn it off.
+The absolute best Black Friday deals we’ve found (so far)
+Disney Plus, Hulu, and HBO Max are all over 50 percent off for Black Friday
+Grand Theft Auto VI is a different kind of GTA — so it needed a different kind of ending
+Why GTA VI’s version of Florida feels so real
+Netflix’s coziest show has made a very quiet return
+A free daily digest of the news that matters most.
+By providing your information, you agree to our Terms of Use and our Privacy Policy . We use vendors that may also process your information to help provide our services. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+Advertiser Content From
+This is the title for the native ad
+Can Anthropic afford to put safety first?
+ChatGPT can transcribe as you speak now with Live Dictation
+Not even Sam Altman is safe from AI deepfakes on Instagram
+California sues OpenAI over rogue AI hacking incidents
+Sam Altman says he wants everyone ‘to have a lot of RAM’
+OpenAI wants to stop deepfakes from overwhelming child abuse tiplines
+Can Anthropic afford to put safety first?
+ChatGPT can transcribe as you speak now with Live Dictation
+Stevie Bonifield Nov 19
+Not even Sam Altman is safe from AI deepfakes on Instagram
+California sues OpenAI over rogue AI hacking incidents
+Sam Altman says he wants everyone ‘to have a lot of RAM’
+Stevie Bonifield Nov 16
+OpenAI wants to stop deepfakes from overwhelming child abuse tiplines
+Lauren Feiner Nov 16
+Advertiser Content From
+This is the title for the native ad
+The absolute best Black Friday deals we’ve found (so far)
+Android’s DIY widgets are a bit of vibe-coding fun
+Grand Theft Auto VI is a different kind of GTA — so it needed a different kind of ending
+Waymo conquered city streets — why does it keep stumbling on freeways?
+This gaming mouse should be a Logitech-killer, but it has one big flaw
+Community Guidelines
+How We Rate and Review Products
+Your California Privacy Rights
+Your Privacy Choices
+Penske Media Corporation
+The Verge is a part of PMX Global, LLC, a subsidiary of Penske Media Corporation.
+© 2026 VM Publishing, LLC. All rights reserved.
+The American Pavilion
+Dick Clark Productions
+The Hollywood Reporter
+Notifications Drawer
+Sign in to see your notifications or create an account to join the conversation. Sign in

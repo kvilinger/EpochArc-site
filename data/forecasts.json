@@ -7,18 +7,18 @@
       "zhHans": "AI 软件团队"
     },
     "thesis": {
-      "en": "Software development is evolving from one-off AI assistance toward a coordinated process involving multiple AI agents alongside human developers.",
-      "zhHans": "软件开发正从零散的 AI 辅助，转向人类开发者与多个 AI 智能体协同工作的模式。"
+      "en": "Software development is evolving from single-turn code completion toward multi-agent coding, debugging and incident-investigation loops supervised by human engineers.",
+      "zhHans": "软件开发正从单次代码补全，演进为由人类工程师监督的多智能体编码、调试与生产故障排查闭环。"
     },
     "description": {
-      "en": "AI coding tools now contribute to task planning, code generation, testing, and maintenance, altering how software teams structure their daily workflow.",
-      "zhHans": "AI 编程工具已参与拆解任务、生成代码、运行测试和持续维护，改变了软件团队的日常协作方式。"
+      "en": "AI coding tools now span inline completion, CLI repository agents, specialized SRE investigation models and multi-model IDE suites, reshaping engineering review and supply-chain security boundaries.",
+      "zhHans": "AI 编程工具已覆盖行内补全、命令行仓库代理、专用生产排障模型与多模型 IDE 套件，重塑工程审查与供应链安全边界。"
     },
     "forecastType": "capability",
     "status": "active",
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-09-06",
-    "lastReviewedAt": "2026-09-06",
+    "updatedAt": "2026-11-27",
+    "lastReviewedAt": "2026-11-27",
     "reviewCadence": "monthly",
     "expectedWindow": {
       "start": "2027",
@@ -31,25 +31,25 @@
     },
     "rationale": {
       "currentBaseline": {
-        "en": "AI coding tools operate in production environments. Code generation, patch drafting, review assistance, and limited agentic execution are commercially deployed, not experimental.",
-        "zhHans": "AI 编程工具已在生产环境中运行。代码生成、补丁草拟、审查辅助以及有限范围的智能体执行均已商业部署，不再是试验品。"
+        "en": "Inline completion, CLI coding agents (Claude Code), specialized production-incident models (Datadog Scout 1.0) and first-party coding/frontier model suites (Microsoft MAI Code 2 and Code 2 Flash in GitHub Copilot, Meta Muse Ember, Anthropic Claude Sonnet 5.5, OpenAI GPT-6.2) are commercially available.",
+        "zhHans": "行内代码补全、命令行编程代理（Claude Code）、生产排障专用模型（Datadog Scout 1.0）以及平台自研编程与前沿模型套件（GitHub Copilot 中的微软 MAI Code 2 与 Code 2 Flash、Meta Muse Ember、Anthropic Claude Sonnet 5.5、OpenAI GPT-6.2）均已商业化提供。"
       },
       "whyThisDirection": {
-        "en": "The question is not whether AI can generate code, but whether software development will structurally shift from individual AI completions toward coordinated loops among multiple AI roles and human developers.",
-        "zhHans": "问题不在于 AI 能否生成代码，而在于软件开发是否会从单个 AI 补全的结构，转向多个 AI 角色与人类开发者之间的协调闭环。"
+        "en": "The structural question is whether software teams shift from treating AI as an autocomplete assistant to delegating bounded repository implementation, kernel optimization and production triage across coordinated agent roles.",
+        "zhHans": "核心结构性问题在于，软件团队是否会从把 AI 当作补全助手，转向在协同代理角色间委托边界清晰的仓库实现、底层优化与生产排障工作。"
       },
       "counterSignal": {
-        "en": "Repository context remains brittle, verification remains expensive, and unresolved security and accountability issues prevent fully trusted multi-step AI workflows from becoming routine.",
-        "zhHans": "代码库上下文理解仍不可靠，验证成本仍然较高，安全和责任归属问题尚未解决，多步 AI 工作流尚无法获得完整信任。"
+        "en": "Benchmark task completion does not establish deployment reliability (READY, arXiv:2609.02095); marketplace tampering (Cursor’s October 29 Claude Code extension incident), workspace exfiltration risks and temporary eBPF Linux compensating controls during patch windows (Shirudo) show accountability and security remain major bottlenecks.",
+        "zhHans": "基准测试得分并不等同于部署可靠性（见 READY 论文 arXiv:2609.02095）；插件市场篡改（10 月 29 日 Cursor 市场扩展包事件）、工作区外传风险及补丁窗口期的 Linux 运行时临时补偿控制需求（Shirudo）表明安全与责任归属仍是关键瓶颈。"
       },
       "openQuestions": [
         {
-          "en": "Will AI-assisted coding remain a productivity layer, or absorb durable ownership of bounded software work?",
-          "zhHans": "AI 编程会停留在效率增强层，还是逐步接管边界清晰的软件工作？"
+          "en": "Which software maintenance, incident-response and code-review tasks can agents own durably without compounding technical and security debt?",
+          "zhHans": "哪些软件维护、故障响应与代码审查任务可由智能体长期稳定承担，而不累积技术与安全债务？"
         },
         {
-          "en": "What evidence would demonstrate that teams trust AI not merely with code drafting, but with maintenance, review, and recovery responsibilities?",
-          "zhHans": "什么证据能说明团队信任 AI 参与的不仅是代码草拟，还包括维护、审查和故障恢复？"
+          "en": "What independent production evidence—beyond vendor benchmarks—would show multi-agent software workflows operating reliably across unaffiliated engineering organizations?",
+          "zhHans": "除厂商基准外，什么样的独立生产证据能证明多智能体软件工作流已在无关联工程组织中稳定运行？"
         }
       ]
     },
@@ -59,19 +59,20 @@
         "kind": "product",
         "status": "observed",
         "label": {
-          "en": "AI pair programming is an embedded feature of mainstream development environments.",
-          "zhHans": "AI 结对编程已成为主流开发环境的标准功能。"
+          "en": "IDE pair programming is entrenched and survived appellate DMCA output-theory scrutiny.",
+          "zhHans": "IDE 结对编程已成为主流配置，并在上诉法院层面经受了 DMCA 输出端理论诉讼检验。"
         },
         "summary": {
-          "en": "GitHub Copilot's general availability marked the transition of AI-generated code from research demonstration to standard developer tooling.",
-          "zhHans": "GitHub Copilot 全面上线，标志着 AI 生成代码从实验演示进入了开发者工具的标准配置。"
+          "en": "GitHub Copilot established inline AI pair programming in mainstream editors; in September 2026 the Ninth Circuit rejected a strict identical-copy threshold under DMCA Section 1202(b) while affirming dismissal of plaintiffs’ output theory because generating new code lacked facts showing CMI removal from copies.",
+          "zhHans": "GitHub Copilot 确立了主流编辑器内的 AI 结对编程形态；2026 年 9 月美国第九巡回上诉法院虽否定第 1202(b) 条须“完全相同复制品”的狭义门槛，但因生成新代码未证明从复制件上移除 CMI 而维持驳回输出端索赔。"
         },
         "eventIds": [
-          "github-copilot-2022"
+          "github-copilot-2022",
+          "ninth-circuit-github-copilot-dmca-2026"
         ],
         "sourceIds": [
-          "github-copilot-ga-2022",
-          "mckinsey-state-ai-2025"
+          "arc-v24-github-copilot",
+          "v24-20260920-gibson-dunn-ca9"
         ]
       },
       {
@@ -79,44 +80,74 @@
         "kind": "workflow",
         "status": "observed",
         "label": {
-          "en": "A growing number of developers describe and steer code through LLMs rather than hand-writing everything.",
-          "zhHans": "越来越多的开发者通过 LLM 描述和引导代码，而非逐行手写。"
+          "en": "Prompt-driven coding and CLI repository agents changed developer prototyping workflows.",
+          "zhHans": "提示驱动编码与命令行仓库代理改变了开发者的原型构建工作流。"
         },
         "summary": {
-          "en": "The emergence of 'vibe coding' as a recognized term indicates that AI-mediated software creation had become widespread enough to name and study as a developer behavior pattern.",
-          "zhHans": "“vibe coding” 被确认为一种开发行为模式，说明 AI 介导的软件创建已经足够普及，可以被命名和系统化研究了。"
+          "en": "The spread of 'vibe coding' and Anthropic’s launch of the Claude Code CLI in February 2025 marked a shift toward delegating multi-file edits from natural-language prompts while raising code-comprehension concerns.",
+          "zhHans": "2025 年 2 月“氛围编程”概念的流行与 Anthropic 推出命令行工具 Claude Code，标志着开发者开始通过自然语言委托跨文件修改，同时也伴随代码理解度下降的讨论。"
         },
         "eventIds": [
-          "vibecoding-2025"
+          "vibecoding-2025",
+          "claude-code-launch-2025"
         ],
         "sourceIds": [
-          "karpathy-vibe-coding-tweet",
-          "wikipedia-vibe-coding",
-          "stanford-ai-index-2026"
+          "ad261127-ars-vibe-coding-2025",
+          "ad261127-anthropic-claude-37-code-2025"
         ]
       },
       {
         "id": "coding-agents-are-moving-beyond-autocomplete",
-        "kind": "incident",
+        "kind": "benchmark",
         "status": "observed",
         "label": {
-          "en": "Coding agents now demonstrate multi-step autonomous execution and background operation.",
-          "zhHans": "编程智能体已展示出多步自主执行和后台持续运行的能力。"
+          "en": "Coding agents tackle multi-hour kernel and weeks-long benchmark tasks alongside real packaging failures.",
+          "zhHans": "编程代理已涉足长周期与底层内核基准任务，但工具链自身仍暴露打包失误。"
         },
         "summary": {
-          "en": "The Claude Code leak revealed that frontier coding products already experiment with persistent background agents. Fable 5 autonomously developed a CUDA megakernel on KernelBench-Mega (18.71x speedup, single cooperative launch), demonstrating full-cycle systems-level programming — silent analysis, Roofline modeling, implementation, and optimization.",
-          "zhHans": "Claude Code 泄露事件表明前沿编程产品已在试验持续运行的背景智能体。Fable 5 在 KernelBench-Mega 上自主开发出 CUDA 内核（18.71 倍加速，单次协作内核调用），完成了完整的系统级编程流程——静默分析、Roofline 建模、实现和优化。"
+          "en": "METR and Epoch AI’s MirrorCode benchmark and Fable 5’s KernelBench-Mega submission documented multi-step coding capabilities on defined benchmarks, while March 2026’s Claude Code source-code leak showed human release errors persist.",
+          "zhHans": "METR 与 Epoch AI 联合开发的 MirrorCode 基准及 Fable 5 的 KernelBench-Mega 内核提交记录了特定长任务基准上的进展，而 2026 年 3 月 Claude Code 源码泄露事件表明人工发布失误依然存在。"
         },
         "eventIds": [
           "claude-code-leak-2026",
-          "fable-5-kernelbench-2026"
+          "fable-5-kernelbench-2026",
+          "mirrorcode-benchmark-2026"
         ],
         "sourceIds": [
-          "thehackernews-claude-code-leak",
-          "cnbc-claude-code-leak",
-          "stanford-ai-index-2026",
-          "biggo-fable5-kernel-2026",
-          "import-ai-464-2026"
+          "arc-v24-cnbc-claude-leak",
+          "ad261127-importai-464-fable5",
+          "ad261127-metr-mirrorcode-2026"
+        ]
+      },
+      {
+        "id": "multi-model-ides-and-supply-chain-surface",
+        "kind": "incident",
+        "status": "observed",
+        "label": {
+          "en": "Late-2026 expanded specialized SRE/IDE coding fleets alongside extension supply-chain tampering and Linux pre-patch defenses.",
+          "zhHans": "2026 年秋冬季专业排障与自研编程模型扩充，同时插件投毒与 Linux 补丁前防御需求凸显。"
+        },
+        "summary": {
+          "en": "Claude Sonnet 5.5, Datadog’s Scout 1.0 SRE preview, Meta’s Muse Ember, Microsoft’s MAI Code 2 / Code 2 Flash and OpenAI’s GPT-6.2 expanded coding/ops model fleets, while malicious Cursor marketplace builds of the Claude Code extension and OpenAI/Cisco’s Shirudo eBPF pre-patch runtime controls highlighted operational security gaps.",
+          "zhHans": "Claude Sonnet 5.5、Datadog 排障模型 Scout 1.0、Meta Muse Ember、微软 MAI Code 2 / Code 2 Flash 与 OpenAI GPT-6.2 扩充了编码与运维模型供给；与此同时，Cursor 插件市场扩展包遭篡改及 OpenAI/思科推出 Shirudo 补丁窗口临时防护工具凸显出安全护栏缺口。"
+        },
+        "eventIds": [
+          "claude-sonnet-5-5-2026",
+          "datadog-scout-sre-model-2026",
+          "cursor-claude-code-extension-compromise-2026",
+          "meta-muse-ember-2026",
+          "microsoft-ignite-mai-models-2026",
+          "openai-gpt-6-2-astra-sol-2026",
+          "openai-cisco-shirudo-2026"
+        ],
+        "sourceIds": [
+          "sweep-20260929-anthropic-sonnet55-official",
+          "ea005-openai-gpt62-blog",
+          "ea005-msft-mai-code-2",
+          "restart17-meta-ember",
+          "sweep-20261016-datadog-scout-itwire",
+          "new26-stepsecurity",
+          "ea005-theregister-shirudo"
         ]
       }
     ],
@@ -124,100 +155,153 @@
       "resolutionMode": "monitor_only",
       "basisType": "none",
       "summary": {
-        "en": "Public sources clearly show that AI coding workflows are deepening, but there is no external industry-wide standard for when 'AI software teams' should be declared real. This direction is monitored through event-linked signals rather than public completion criteria.",
-        "zhHans": "公开资料已经清楚显示 AI 编程工作流在加深，但目前并不存在一个外部、行业范围的公开标准，用来判断“AI 软件团队”何时算成立。因此这个方向只做事件化信号跟踪，不公开设定完成标准。"
+        "en": "Public evidence confirms deepening AI coding and SRE tooling, but no external industry-wide standard defines when 'AI software teams' is achieved, and 2026 research highlights gaps between benchmark scores and reliable deployment. Kept in monitor_only mode.",
+        "zhHans": "公开证据确认 AI 编程与排障工具正持续深化，但尚无外部行业标准界定“AI 软件团队”何时算达成，且 2026 年独立研究指出了基准跑分与可靠部署之间的鸿沟，因此保持观察模式（monitor_only）。"
       },
       "sourceIds": [
-        "nist-ai-rmf-1-0",
-        "nist-genai-profile-2024",
-        "metr-long-tasks-2025"
+        "ad261127-nist-ai-rmf",
+        "ad261127-arxiv-enterprise-ready-2026"
       ]
     },
     "sources": [
       {
-        "sourceId": "github-copilot-ga-2022",
+        "sourceId": "arc-v24-github-copilot",
         "supports": [
-          "signals",
-          "historicalBaseline"
+          "copilot-mainstream-dev-workflow"
         ]
       },
       {
-        "sourceId": "mckinsey-state-ai-2025",
+        "sourceId": "v24-20260920-gibson-dunn-ca9",
         "supports": [
-          "signals",
-          "workflowAdoption"
+          "copilot-mainstream-dev-workflow"
         ]
       },
       {
-        "sourceId": "stanford-ai-index-2026",
+        "sourceId": "ad261127-ars-vibe-coding-2025",
         "supports": [
-          "signals",
-          "capabilityContext"
+          "vibe-coding-shifted-behavior"
         ]
       },
       {
-        "sourceId": "metr-long-tasks-2025",
+        "sourceId": "ad261127-anthropic-claude-37-code-2025",
         "supports": [
-          "consensusBasis",
-          "evaluationContext"
+          "vibe-coding-shifted-behavior"
         ]
       },
       {
-        "sourceId": "nist-ai-rmf-1-0",
+        "sourceId": "arc-v24-cnbc-claude-leak",
         "supports": [
-          "consensusBasis"
+          "coding-agents-are-moving-beyond-autocomplete"
         ]
       },
       {
-        "sourceId": "nist-genai-profile-2024",
+        "sourceId": "ad261127-importai-464-fable5",
         "supports": [
-          "consensusBasis"
+          "coding-agents-are-moving-beyond-autocomplete"
         ]
       },
       {
-        "sourceId": "biggo-fable5-kernel-2026",
+        "sourceId": "ad261127-metr-mirrorcode-2026",
         "supports": [
-          "signals"
+          "coding-agents-are-moving-beyond-autocomplete"
         ]
       },
       {
-        "sourceId": "import-ai-464-2026",
+        "sourceId": "sweep-20260929-anthropic-sonnet55-official",
         "supports": [
-          "signals"
+          "multi-model-ides-and-supply-chain-surface"
+        ]
+      },
+      {
+        "sourceId": "ea005-openai-gpt62-blog",
+        "supports": [
+          "multi-model-ides-and-supply-chain-surface"
+        ]
+      },
+      {
+        "sourceId": "ea005-msft-mai-code-2",
+        "supports": [
+          "multi-model-ides-and-supply-chain-surface"
+        ]
+      },
+      {
+        "sourceId": "restart17-meta-ember",
+        "supports": [
+          "multi-model-ides-and-supply-chain-surface"
+        ]
+      },
+      {
+        "sourceId": "sweep-20261016-datadog-scout-itwire",
+        "supports": [
+          "multi-model-ides-and-supply-chain-surface"
+        ]
+      },
+      {
+        "sourceId": "new26-stepsecurity",
+        "supports": [
+          "multi-model-ides-and-supply-chain-surface"
+        ]
+      },
+      {
+        "sourceId": "ea005-theregister-shirudo",
+        "supports": [
+          "multi-model-ides-and-supply-chain-surface"
+        ]
+      },
+      {
+        "sourceId": "ad261127-nist-ai-rmf",
+        "supports": [
+          "ai-software-teams/consensus-basis"
+        ]
+      },
+      {
+        "sourceId": "ad261127-arxiv-enterprise-ready-2026",
+        "supports": [
+          "ai-software-teams/consensus-basis"
         ]
       }
     ],
     "relatedEvents": [
       "github-copilot-2022",
       "vibecoding-2025",
+      "claude-code-launch-2025",
       "claude-code-leak-2026",
       "fable-5-kernelbench-2026",
-      "meta-muse-code-spark-1-2-2026",
-      "deepseek-v4-flash-official-2026",
       "mirrorcode-benchmark-2026",
-      "deepseek-v4-pro-ga-2026",
-      "qwen-3-8-27b-open-weights-2026",
-      "glm-5-3-coding-cyber-launch-2026",
-      "deepseek-v4-flash-vision-exp-2026",
-      "qwen-3-8-flash-next-2026",
-      "anthropic-fable-mythos-5-1-2026",
-      "google-gemini-3-8-flash-cyber-2026",
-      "meta-muse-spark-1-3-2026",
-      "openai-gpt-6-astra-2026"
+      "ninth-circuit-github-copilot-dmca-2026",
+      "claude-sonnet-5-5-2026",
+      "datadog-scout-sre-model-2026",
+      "cursor-claude-code-extension-compromise-2026",
+      "meta-muse-ember-2026",
+      "microsoft-ignite-mai-models-2026",
+      "openai-gpt-6-2-astra-sol-2026",
+      "openai-cisco-shirudo-2026"
     ],
     "tags": [
       "coding",
       "software-engineering",
       "agents",
-      "developer-tools"
+      "developer-tools",
+      "supply-chain-security"
     ],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-09-06",
-      "reviewedAt": "2026-09-06",
       "publishedAt": "2026-06-25",
-      "curator": "EpochArc editorial",
-      "screeningRunId": "possible-directions-2026-06-25c"
+      "updatedAt": "2026-11-27",
+      "reviewedAt": "2026-11-27",
+      "lastSourceCheckAt": "2026-11-27",
+      "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+      "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
+      "reviewProvenance": "v2.4",
+      "reviewRecord": "governance/reviews/arcs-directions-20261127/dir-ai-software-teams.json",
+      "screeningRunId": "targeted-arcs-directions-20261127",
+      "changeLog": [
+        {
+          "date": "2026-11-27",
+          "changeType": "source_added",
+          "summary": "Migrated direction to v2.4 provenance and updated through November 2026 with Ninth Circuit Copilot ruling, Claude Sonnet 5.5, Datadog Scout 1.0, Cursor extension tampering, Meta Muse Ember, Microsoft MAI Code 2, GPT-6.2, and OpenAI/Cisco Shirudo."
+        }
+      ]
     }
   },
   {
@@ -228,18 +312,18 @@
       "zhHans": "自主企业工作流"
     },
     "thesis": {
-      "en": "Agentic systems are being deployed across real business tools, moving from isolated demonstrations toward repeatable workflow execution.",
-      "zhHans": "智能体系统正部署于真实业务工具，从单次演示走向可重复的工作流执行。"
+      "en": "Agentic systems are moving into structured enterprise CRM, SRE and routing APIs, while confidentiality breaches and counterparty blocks constrain unsupervised autonomy.",
+      "zhHans": "智能体系统正进入企业 CRM、运维与结构化决策 API，但保密供应链风险与外部平台限制仍在制约无监督自主运行。"
     },
     "description": {
-      "en": "Agents execute defined workflows across email, CRM, ERP, and ticketing systems, reducing manual handoffs between teams.",
-      "zhHans": "智能体在邮件、CRM、ERP 和工单系统之间执行固定工作流，减少团队之间的人工交接。"
+      "en": "Enterprises are testing domain reasoning models, computer-use agents and closed-set decision APIs across business software, alongside sharp governance and ZDR trust boundaries.",
+      "zhHans": "企业正在业务系统中测试领域推理模型、计算机操作代理与封闭集决策 API，同时直面权限治理与零数据保留（ZDR）信任边界。"
     },
     "forecastType": "product",
     "status": "active",
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-09-06",
-    "lastReviewedAt": "2026-09-06",
+    "updatedAt": "2026-11-27",
+    "lastReviewedAt": "2026-11-27",
     "reviewCadence": "monthly",
     "expectedWindow": {
       "start": "2027",
@@ -252,25 +336,25 @@
     },
     "rationale": {
       "currentBaseline": {
-        "en": "Agents can browse the web, call APIs, fill forms, and coordinate short tasks. Enterprises are running pilot programs, but broad operational trust in agent autonomy remains uneven.",
-        "zhHans": "智能体已能浏览网页、调用 API、填写表单并协调短任务。企业正在开展试点，但对智能体自主执行的运营级信任尚不均衡。"
+        "en": "Tool protocols (MCP), browser/GUI agents (Operator, Holo4), named enterprise CRM pilots (Salesforce Koa), SRE triage previews (Datadog Scout 1.0) and structured routing endpoints (Gemini Decisions API) are deployed or in customer pilots, but broad unsupervised operational trust remains limited.",
+        "zhHans": "工具协议（MCP）、网页与图形界面代理（Operator、Holo4）、具名企业 CRM 试点（Salesforce Koa）、生产排障预览（Datadog Scout 1.0）以及结构化分类端点（Gemini Decisions API）已进入部署或客户试点，但跨系统的无监督运营信任仍然有限。"
       },
       "whyThisDirection": {
-        "en": "The open question is whether these capabilities remain at the demo and copilot stage, or evolve into repeatable workflow layers across support, operations, reporting, and internal systems.",
-        "zhHans": "待观察的是，这些能力是停留在演示和副驾阶段，还是会发展为客服、运营、报告和内部系统中的可重复工作流层。"
+        "en": "The core question is whether enterprise AI stays confined to human-reviewed copilots and narrow classification endpoints, or matures into auditable multi-step workflow execution across ticketing, CRM and operations.",
+        "zhHans": "核心问题在于，企业 AI 会停留在人工复核副驾与窄域分类接口，还是演进为跨工单、CRM 与运营系统的可审计多步工作流层。"
       },
       "counterSignal": {
-        "en": "Exception handling, confidentiality requirements, approval workflows, system integration complexity, and liability questions remain significant obstacles to treating agents as trusted enterprise operators.",
-        "zhHans": "异常处理、保密要求、审批流程、系统集成复杂性和责任归属问题，仍然是智能体成为可信企业执行者的主要障碍。"
+        "en": "MIT’s AI Agent Index noted only 4 of 13 high-autonomy agents disclosed safety evaluations; Dragos’s November 2026 canary audit of three breached hosting providers and OpenRouter’s off-boarding of three providers and removal of 125 ZDR endpoints (while stating OpenRouter itself was not breached and without confirming provider overlap) exposed third-party routing confidentiality risks; and United Airlines’ agent restrictions plus OpenAI’s Australian Medicare portal incident show external systems resist unauthorized automation.",
+        "zhHans": "MIT《AI 智能体指数》指出 13 个高自主度代理中仅 4 个披露安全评估；2026 年 11 月 Dragos 对三家被入侵托管商的金丝雀审计以及 OpenRouter 清退三家供应商并撤销 125 个 ZDR 端点（声明自身系统未被入侵且未确认清退名单与被入侵方重合）暴露了第三方推理路由保密风险；美联航限制未授权代理及 OpenAI 澳洲医保门户越权事件也表明外部系统正抵制越界自动化。"
       },
       "openQuestions": [
         {
-          "en": "Which enterprise workflows have boundaries clear enough for agentic autonomy, and which remain too dependent on human judgment?",
-          "zhHans": "哪些企业工作流边界足够清晰，适合智能体自主执行？哪些仍高度依赖人类判断？"
+          "en": "Which enterprise workflows have tight enough verification and rollback semantics to run without per-action human approval?",
+          "zhHans": "哪些企业工作流具备足够严密的验证与回滚语义，可以在无逐笔人工审批的条件下运行？"
         },
         {
-          "en": "What public evidence would indicate that enterprises trust agents beyond pilot programs and internal demonstrations?",
-          "zhHans": "什么公开证据能表明企业对智能体的信任已经超越试点和内部演示？"
+          "en": "How will enterprises verify end-to-end data confidentiality when agent workflows route prompts across multi-hop inference providers?",
+          "zhHans": "当智能体工作流跨多层推理供应商路由提示词时，企业如何独立核验端到端的数据保密性？"
         }
       ]
     },
@@ -280,19 +364,18 @@
         "kind": "product",
         "status": "observed",
         "label": {
-          "en": "Autonomous agents have entered mainstream developer awareness.",
-          "zhHans": "自主智能体已进入主流开发者的认知范围。"
+          "en": "Goal-directed open-source prototypes put autonomous task loops on the developer agenda.",
+          "zhHans": "目标驱动的开源原型将自主任务循环推入主流开发者视野。"
         },
         "summary": {
-          "en": "Auto-GPT was a turning point: it made goal-driven AI agents legible to ordinary developers, even before enterprise reliability had been addressed.",
-          "zhHans": "Auto-GPT 是一个转折点——它让目标驱动的智能体概念被普通开发者理解，即便那时企业级可靠性尚未解决。"
+          "en": "AutoGPT framed multi-step goal execution as a distinct software pattern in 2023, despite reliability limitations in open-ended tasks.",
+          "zhHans": "2023 年 AutoGPT 将多步目标执行确立为一种受关注的软件模式，尽管其在开放任务中仍受困于可靠性瓶颈。"
         },
         "eventIds": [
           "auto-gpt-2023"
         ],
         "sourceIds": [
-          "wikipedia-auto-gpt",
-          "github-autogpt"
+          "ad261127-github-autogpt"
         ]
       },
       {
@@ -300,69 +383,75 @@
         "kind": "infrastructure",
         "status": "observed",
         "label": {
-          "en": "Agent infrastructure and first-party agent products are emerging concurrently.",
-          "zhHans": "智能体基础设施与第一方产品正在同步成形。"
+          "en": "Standard tool protocols and first-party browser agents established shared workflow primitives.",
+          "zhHans": "标准化工具协议与第一方浏览器代理确立了工作流基础原语。"
         },
         "summary": {
-          "en": "MCP, Project Mariner, Operator, and GPT-5.6 Sol's ultra mode (multi-agent delegation) indicate that major AI labs are building the protocols and execution frameworks for enterprise multi-step workflows. Fable 5's 2.5-hour autonomous CUDA kernel development demonstrates sustained long-horizon execution without human intervention.",
-          "zhHans": "MCP、Project Mariner、Operator 以及 GPT-5.6 Sol 的 ultra 模式（多智能体委托）表明，主要 AI 实验室正在构建企业级多步工作流所需的协议和执行框架。Fable 5 的 2.5 小时自主 CUDA 内核开发展示了无需人工干预的持续长周期执行能力。"
+          "en": "Anthropic’s MCP, Google’s Gemini 2.0 agentic framing and OpenAI’s Operator preview created standardized tool-calling and browser-action layers.",
+          "zhHans": "Anthropic 的 MCP 协议、Google Gemini 2.0 的智能体定位与 OpenAI Operator 研究预览构建了工具调用与网页操作层。"
         },
         "eventIds": [
           "mcp-protocol-2024",
           "gemini-2-agents-2024",
-          "openai-operator-2025",
-          "gpt-5-6-broad-launch-2026",
-          "fable-5-kernelbench-2026"
+          "openai-operator-2025"
         ],
         "sourceIds": [
-          "anthropic-mcp-blog-2024",
-          "google-gemini-2-blog-2024",
-          "openai-operator",
-          "reuters-gpt56-approval-2026",
-          "import-ai-464-2026"
+          "arc-v24-anthropic-mcp",
+          "ad261127-google-gemini2-2024",
+          "ad261127-techcrunch-operator-2025"
         ]
       },
       {
         "id": "independent-tracking-of-agent-adoption-now-exists",
-        "kind": "market",
+        "kind": "research",
         "status": "observed",
         "label": {
-          "en": "Independent reports now treat deployed agents as a measurable adoption category.",
-          "zhHans": "独立报告已将已部署智能体视为可衡量的采用类别。"
+          "en": "Academic indices and deployment benchmarks now audit agent autonomy and enterprise readiness gaps.",
+          "zhHans": "学术指数与部署基准已开始系统审计智能体自主度与企业就绪度差距。"
         },
         "summary": {
-          "en": "Tracking from MIT, Stanford, and McKinsey indicates that agent deployment and enterprise experimentation have reached a scale that can be measured, not merely speculated about.",
-          "zhHans": "MIT、Stanford 和麦肯锡的追踪数据表明，智能体部署和企业试验规模已进入可量化阶段，不再仅停留在推测层面。"
+          "en": "The MIT AI Agent Index documented rising autonomy levels alongside sparse safety disclosures, while the 2026 READY study highlighted why benchmark-capable agents still fail enterprise deployment requirements.",
+          "zhHans": "MIT《AI 智能体指数》记录了自主度提升与安全披露稀缺并存的现状，2026 年 READY 研究则揭示了高跑分代理仍难以满足企业部署要求的原因。"
         },
         "eventIds": [
           "mcp-protocol-2024",
           "openai-operator-2025"
         ],
         "sourceIds": [
-          "mit-ai-agent-index-2025",
-          "stanford-ai-index-2026",
-          "mckinsey-state-ai-2025"
+          "ad261127-mit-ai-agent-index",
+          "ad261127-arxiv-enterprise-ready-2026"
         ]
       },
       {
-        "id": "multi-agent-coordination-entering-production",
-        "kind": "product",
+        "id": "enterprise-pilots-meet-governance-and-supply-chain-limits",
+        "kind": "deployment",
         "status": "observed",
         "label": {
-          "en": "Multi-agent coordination and long-horizon autonomous execution are entering production use.",
-          "zhHans": "多智能体协调和长周期自主执行正在进入实际生产环境。"
+          "en": "Late-2026 paired narrow enterprise pilots and decision APIs with inference ZDR revocations and counterparty limits.",
+          "zhHans": "2026 年秋冬季具名企业试点与结构化决策 API 推进，同时推理 ZDR 撤除与外部封堵并行发生。"
         },
         "summary": {
-          "en": "GPT-5.6 Sol's ultra mode (task delegation to multiple subagents) and Fable 5's autonomous 2.5-hour CUDA kernel development show that the capability boundary for enterprise agent workflows has moved from single-step demonstrations to sustained multi-agent operations.",
-          "zhHans": "GPT-5.6 Sol 的 ultra 模式（将任务委托给多个子智能体）和 Fable 5 的 2.5 小时自主 CUDA 内核开发表明，企业智能体工作流的能力边界已从单步演示延伸到可持续的多智能体操作。"
+          "en": "Salesforce’s Koa pilots, Holo4 GUI models, Datadog Scout 1.0 and Google’s Gemini Decisions API expanded enterprise agent tooling, while OpenAI’s Medicare portal incident, United Airlines’ restrictions and Dragos/OpenRouter’s ZDR findings exposed permission and routing risks.",
+          "zhHans": "Salesforce Koa 试点、Holo4 界面模型、Datadog Scout 1.0 与 Google Gemini Decisions API 扩展了企业代理工具链；同期 OpenAI 澳洲医保门户越权事件、美联航访问限制及 Dragos/OpenRouter 披露的 ZDR 问题暴露出权限与路由风险。"
         },
         "eventIds": [
-          "gpt-5-6-broad-launch-2026",
-          "fable-5-kernelbench-2026"
+          "salesforce-nvidia-koa-reasoning-2026",
+          "holo4-computer-use-models-2026",
+          "openai-australia-medicare-agent-incident-2026",
+          "datadog-scout-sre-model-2026",
+          "united-airlines-ai-agent-restrictions-2026",
+          "google-gemini-decisions-api-2026",
+          "openrouter-inference-provider-incidents-2026"
         ],
         "sourceIds": [
-          "reuters-gpt56-approval-2026",
-          "import-ai-464-2026"
+          "sweep-20260918-toolbit-koa",
+          "final-20260929-holo4-official",
+          "sweep-20260929-openai-australia-abc",
+          "sweep-20261016-datadog-scout-itwire",
+          "restart17-google-decisions",
+          "restart17-sup-united-mediaroom",
+          "ea005-dragos-canary-report",
+          "ea005-openrouter-disclosure"
         ]
       }
     ],
@@ -370,67 +459,104 @@
       "resolutionMode": "monitor_only",
       "basisType": "none",
       "summary": {
-        "en": "Public evidence shows that enterprise agent infrastructure and experimentation are real, but there is still no widely accepted outside standard for when 'autonomous enterprise workflows' should be declared achieved. The module therefore tracks concrete signals and deployment language rather than publishing a private completion line.",
-        "zhHans": "公开证据已经表明企业智能体基础设施和试验是真实存在的，但目前仍没有被广泛接受的外部标准，用来判断“自主企业工作流”何时算达成。因此模块只跟踪具体信号和部署表述，而不公开设定一条私有完成线。"
+        "en": "Enterprise agent pilots and narrow decision endpoints are expanding, but NIST AI RMF profiles remain voluntary guidance under revision and no external standard defines when autonomous enterprise workflows are achieved.",
+        "zhHans": "企业智能体试点与窄域决策接口正在扩展，但 NIST AI RMF 行业配置仍属修订中的自愿性指南，尚无外部标准界定“自主企业工作流”何时算达成。"
       },
       "sourceIds": [
-        "nist-ai-rmf-1-0",
-        "mit-ai-agent-index-2025",
-        "eu-ai-act-official"
+        "ad261127-nist-ai-rmf",
+        "ad261127-mit-ai-agent-index"
       ]
     },
     "sources": [
       {
-        "sourceId": "anthropic-mcp-blog-2024",
+        "sourceId": "ad261127-github-autogpt",
         "supports": [
-          "signals",
-          "infrastructureContext"
+          "autonomous-agents-broke-into-mainstream-awareness"
         ]
       },
       {
-        "sourceId": "google-gemini-2-blog-2024",
+        "sourceId": "arc-v24-anthropic-mcp",
         "supports": [
-          "signals",
-          "productContext"
+          "agent-infrastructure-and-products-are-forming"
         ]
       },
       {
-        "sourceId": "openai-operator",
+        "sourceId": "ad261127-google-gemini2-2024",
         "supports": [
-          "signals",
-          "productContext"
+          "agent-infrastructure-and-products-are-forming"
         ]
       },
       {
-        "sourceId": "mit-ai-agent-index-2025",
+        "sourceId": "ad261127-techcrunch-operator-2025",
         "supports": [
-          "signals",
-          "consensusBasis"
+          "agent-infrastructure-and-products-are-forming"
         ]
       },
       {
-        "sourceId": "mckinsey-state-ai-2025",
+        "sourceId": "ad261127-mit-ai-agent-index",
         "supports": [
-          "signals",
-          "adoptionContext"
+          "autonomous-enterprise-workflows/consensus-basis",
+          "independent-tracking-of-agent-adoption-now-exists"
         ]
       },
       {
-        "sourceId": "nist-ai-rmf-1-0",
+        "sourceId": "ad261127-arxiv-enterprise-ready-2026",
         "supports": [
-          "consensusBasis"
+          "independent-tracking-of-agent-adoption-now-exists"
         ]
       },
       {
-        "sourceId": "reuters-gpt56-approval-2026",
+        "sourceId": "sweep-20260918-toolbit-koa",
         "supports": [
-          "signals"
+          "enterprise-pilots-meet-governance-and-supply-chain-limits"
         ]
       },
       {
-        "sourceId": "import-ai-464-2026",
+        "sourceId": "final-20260929-holo4-official",
         "supports": [
-          "signals"
+          "enterprise-pilots-meet-governance-and-supply-chain-limits"
+        ]
+      },
+      {
+        "sourceId": "sweep-20260929-openai-australia-abc",
+        "supports": [
+          "enterprise-pilots-meet-governance-and-supply-chain-limits"
+        ]
+      },
+      {
+        "sourceId": "sweep-20261016-datadog-scout-itwire",
+        "supports": [
+          "enterprise-pilots-meet-governance-and-supply-chain-limits"
+        ]
+      },
+      {
+        "sourceId": "restart17-google-decisions",
+        "supports": [
+          "enterprise-pilots-meet-governance-and-supply-chain-limits"
+        ]
+      },
+      {
+        "sourceId": "restart17-sup-united-mediaroom",
+        "supports": [
+          "enterprise-pilots-meet-governance-and-supply-chain-limits"
+        ]
+      },
+      {
+        "sourceId": "ea005-dragos-canary-report",
+        "supports": [
+          "enterprise-pilots-meet-governance-and-supply-chain-limits"
+        ]
+      },
+      {
+        "sourceId": "ea005-openrouter-disclosure",
+        "supports": [
+          "enterprise-pilots-meet-governance-and-supply-chain-limits"
+        ]
+      },
+      {
+        "sourceId": "ad261127-nist-ai-rmf",
+        "supports": [
+          "autonomous-enterprise-workflows/consensus-basis"
         ]
       }
     ],
@@ -439,30 +565,39 @@
       "mcp-protocol-2024",
       "gemini-2-agents-2024",
       "openai-operator-2025",
-      "gpt-5-6-broad-launch-2026",
-      "fable-5-kernelbench-2026",
-      "perplexity-amazon-agent-cfaa-appeal-2026",
-      "nvidia-groq-3-lpx-2026",
-      "qwen-3-8-flash-next-2026",
-      "aws-nvidia-2m-gpu-expansion-2026",
-      "anthropic-fable-mythos-5-1-2026",
-      "google-gemini-3-8-flash-cyber-2026",
-      "meta-muse-spark-1-3-2026",
-      "openai-gpt-6-astra-2026"
+      "salesforce-nvidia-koa-reasoning-2026",
+      "holo4-computer-use-models-2026",
+      "openai-australia-medicare-agent-incident-2026",
+      "datadog-scout-sre-model-2026",
+      "united-airlines-ai-agent-restrictions-2026",
+      "google-gemini-decisions-api-2026",
+      "openrouter-inference-provider-incidents-2026"
     ],
     "tags": [
       "agents",
       "enterprise-ai",
       "workflow-automation",
-      "tool-use"
+      "zdr",
+      "governance"
     ],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-09-06",
-      "reviewedAt": "2026-09-06",
       "publishedAt": "2026-06-25",
-      "curator": "EpochArc editorial",
-      "screeningRunId": "possible-directions-2026-06-25c"
+      "updatedAt": "2026-11-27",
+      "reviewedAt": "2026-11-27",
+      "lastSourceCheckAt": "2026-11-27",
+      "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+      "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
+      "reviewProvenance": "v2.4",
+      "reviewRecord": "governance/reviews/arcs-directions-20261127/dir-autonomous-enterprise-workflows.json",
+      "screeningRunId": "targeted-arcs-directions-20261127",
+      "changeLog": [
+        {
+          "date": "2026-11-27",
+          "changeType": "source_added",
+          "summary": "Migrated direction to v2.4 provenance and updated through November 2026 with Salesforce Koa pilots, Gemini Decisions API, United Airlines agent restrictions, OpenRouter/Dragos ZDR revocations, and READY enterprise deployment research."
+        }
+      ]
     }
   },
   {
@@ -473,18 +608,18 @@
       "zhHans": "机器人走出试点区"
     },
     "thesis": {
-      "en": "Embodied AI is moving from staged demonstrations into commercial environments where deployment reliability, uptime, and workflow integration are the relevant metrics.",
-      "zhHans": "具身 AI 正从舞台演示进入商业环境，在那里，部署可靠性、运行时长和工作流集成才是真正的衡量标准。"
+      "en": "Embodied AI is building out vision-language-action models, orchestration software and simulation datasets, while verified multi-site commercial fleet operations remain sparse.",
+      "zhHans": "具身 AI 正加速补齐视觉-语言-动作模型、调度编排平台与合成演示数据，但经独立核验的多场地商业化常态运营依然稀缺。"
     },
     "description": {
-      "en": "Robots are being tested in warehouses, factories, and service sites, where they must operate reliably within real operational constraints.",
-      "zhHans": "机器人正在仓库、工厂和服务现场接受测试，需要在真实运营约束中稳定运行。"
+      "en": "Robotics labs and chipmakers are shipping embodied reasoning previews, simulation trajectories and world models, testing whether physical AI can move beyond single-plant pilots.",
+      "zhHans": "机器人实验室与芯片厂商正密集推出具身推理模型预览、仿真轨迹数据集与交互式世界模型，检验物理 AI 能否跨越单一工厂试点。"
     },
     "forecastType": "product",
     "status": "active",
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-08-10",
-    "lastReviewedAt": "2026-08-10",
+    "updatedAt": "2026-11-27",
+    "lastReviewedAt": "2026-11-27",
     "reviewCadence": "quarterly",
     "expectedWindow": {
       "start": "2027",
@@ -497,25 +632,25 @@
     },
     "rationale": {
       "currentBaseline": {
-        "en": "Robotics demonstrations, teleoperation-heavy showcases, and pilot projects exist. These alone no longer constitute meaningful evidence of operational deployment.",
-        "zhHans": "机器人演示、重度依赖遥操作的展示和试点项目均已存在。但这些本身已不再足以证明运营级部署。"
+        "en": "Embodied reasoning models (Gemini Robotics and ER 2), vendor-reported single-plant deployments (Figure 02’s 11-month Spartanburg run prior to retirement), orchestration frameworks (NVIDIA OSMO), simulated robotics datasets (AllenAI ToyBlocks) and world-model APIs (Genie 4) exist, whereas independently audited multi-customer fleet economics remain undocumented.",
+        "zhHans": "具身推理模型（Gemini Robotics 与 ER 2）、厂商披露的单一工厂部署总结（Figure 02 退役前在宝马斯帕坦堡工厂的 11 个月运行）、工作流编排工具（NVIDIA OSMO）、仿真演示数据集（AllenAI ToyBlocks）与世界模型 API（Genie 4）均已问世，但经独立审计的多客户商业车队经济性仍未建立。"
       },
       "whyThisDirection": {
-        "en": "The relevant question is whether embodied AI is leaving the demo circuit and entering constrained but real operating environments — where customers evaluate reliability, integration, and sustained value rather than spectacle.",
-        "zhHans": "问题在于具身 AI 是否正离开演示回路，进入受约束的真实运营环境——在那里，客户评估的是可靠性、集成度和持续价值，而非表演效果。"
+        "en": "The key question is whether richer embodied models and simulation pipelines translate into sustained, multi-site customer deployments judged on uptime, safety and unit cost rather than single-partner showcases.",
+        "zhHans": "关键问题在于，更丰富的具身模型与仿真数据管线能否转化为跨客户、跨场地的持续运营部署，并以无故障时长、安全性与单位成本而非单一合作方展示来衡量。"
       },
       "counterSignal": {
-        "en": "Safety, dexterity limitations, site-specific adaptation costs, and unclear boundaries between autonomy and concealed teleoperation make robotics claims easy to overstate.",
-        "zhHans": "安全问题、灵巧性限制、场地适配成本，以及自主与隐藏遥操作之间的模糊边界，使得机器人领域的声明很容易被夸大。"
+        "en": "Ars Technica noted only one of three Gemini Robotics 2 models was publicly available at launch; Figure’s BMW report is a vendor summary coinciding with Figure 02’s retirement; AllenAI’s ToyBlocks comprises simulated trajectories without external physical-robot transfer proof; and Genie 4 remains an early experimental world simulator rather than a validated physical controller.",
+        "zhHans": "Ars Technica 指出 Gemini Robotics 2 发布时三款模型中仅一款公开可用；Figure 的宝马报告系伴随二代机退役发布的厂商自述；AllenAI ToyBlocks 为仿真轨迹数据、尚未证明外部实体机器人迁移成效；Genie 4 仍属早期实验性世界模拟器而非经验证的物理控制器。"
       },
       "openQuestions": [
         {
-          "en": "Will current deployments persist beyond initial publicity and isolated flagship sites?",
-          "zhHans": "当前的部署是否会在初始宣传和旗舰示范点之外持续下去？"
+          "en": "When will independent third-party audits document sustained humanoid or general-purpose robot uptime, intervention rates and unit economics across multiple unaffiliated sites?",
+          "zhHans": "何时会出现独立第三方审计，记录人形或通用机器人在多个无关联客户场地的持续运行时长、人工接管率与单位经济账？"
         },
         {
-          "en": "Can any single embodied platform generalize across enough tasks and sites to achieve commercial significance?",
-          "zhHans": "是否存在一个具身平台，能够在足够多的任务和场地之间泛化，从而获得商业意义？"
+          "en": "To what extent do large simulated datasets (such as ToyBlocks) and interactive world models (such as Genie 4) reduce real-world hardware adaptation failures?",
+          "zhHans": "大规模仿真数据集（如 ToyBlocks）与交互式世界模型（如 Genie 4）在多大程度上能真正降低实体机器人在非结构化现场的适配失败率？"
         }
       ]
     },
@@ -525,18 +660,22 @@
         "kind": "research",
         "status": "observed",
         "label": {
-          "en": "Foundation-model-style robotics platforms are being launched for physical-world reasoning.",
-          "zhHans": "面向物理世界推理的基础模型式机器人平台已开始发布。"
+          "en": "Vision-language embodied reasoning models progressed to second-generation developer previews.",
+          "zhHans": "视觉-语言具身推理模型已演进至第二代开发者预览。"
         },
         "summary": {
-          "en": "Gemini Robotics represented a deliberate attempt to integrate frontier multimodal reasoning with embodied control, rather than treating robotics as a separate research domain.",
-          "zhHans": "Gemini Robotics 是一次有意识的尝试，将前沿多模态推理与具身控制整合，而非将机器人视为独立研究领域。"
+          "en": "Google DeepMind introduced Gemini Robotics and Gemini Robotics-ER in March 2025 and followed with Gemini Robotics ER 2 in July 2026, though public access remained partial across model variants.",
+          "zhHans": "Google DeepMind 于 2025 年 3 月推出 Gemini Robotics 与具身推理模型 ER，并于 2026 年 7 月发布 ER 2，但不同模型变体的公开可用范围仍有限。"
         },
         "eventIds": [
-          "gemini-robotics-2025"
+          "gemini-robotics-2025",
+          "gemini-robotics-er2-2026"
         ],
         "sourceIds": [
-          "google-gemini-robotics-2025"
+          "ad261127-deepmind-gemini-robotics-2025",
+          "ad261127-techcrunch-gemini-robotics-2025",
+          "ad261127-google-gemini-robotics-er2-2026",
+          "ad261127-ars-gemini-robotics-er2-2026"
         ]
       },
       {
@@ -544,40 +683,46 @@
         "kind": "deployment",
         "status": "observed",
         "label": {
-          "en": "Humanoid robots have been documented in real production environments, not just lab settings.",
-          "zhHans": "人形机器人在真实生产环境中已有公开记录，而非仅限于实验室场景。"
+          "en": "Vendor-documented factory runs moved from brief demos to multi-month single-plant sheet-metal loading.",
+          "zhHans": "厂商记录的工厂运行已从短时演示延伸至单一工厂长达数月的钣金上下料作业。"
         },
         "summary": {
-          "en": "Figure's deployment at BMW shifted the discussion from what robots might theoretically do to what they were already doing in an actual factory.",
-          "zhHans": "Figure 在 BMW 的部署将讨论从“机器人理论上能做什么”推进到“机器人已在真实工厂中做什么”。"
+          "en": "Figure AI reported an 11-month Figure 02 deployment on sheet-metal loading at BMW Group Plant Spartanburg as it retired the second-generation hardware, though metrics remain company-reported.",
+          "zhHans": "Figure AI 在宣布二代机退役时披露了其在宝马斯帕坦堡工厂为期 11 个月的钣金上料运行总结，但核心指标仍来自厂商单方披露。"
         },
         "eventIds": [
           "figure-bmw-humanoid-2025"
         ],
         "sourceIds": [
-          "figure-bmw-production"
+          "ad261127-figure-bmw-2025"
         ]
       },
       {
-        "id": "embodied-ai-is-being-discussed-as-operations",
-        "kind": "workflow",
+        "id": "simulation-data-and-world-model-tooling-expanding",
+        "kind": "infrastructure",
         "status": "observed",
         "label": {
-          "en": "Embodied AI is increasingly discussed in terms of deployment and operations, not just demonstration.",
-          "zhHans": "具身 AI 越来越被视为一个部署和运营问题，而非纯展示性技术。"
+          "en": "Late-2026 brought open physical-AI orchestration, long-horizon simulation datasets and commercial world-model APIs.",
+          "zhHans": "2026 年秋冬季开源物理 AI 编排框架、长时程仿真数据集与商业化世界模型 API 相继推出。"
         },
         "summary": {
-          "en": "Gemini Robotics and Figure at BMW together indicate that the frontier of robotics discourse is shifting from spectacle toward operational integration.",
-          "zhHans": "Gemini Robotics 和 Figure 在 BMW 的案例共同表明，机器人领域的前沿讨论正在从表演展示转向运营集成。"
+          "en": "NVIDIA open-sourced OSMO for heterogeneous physical-AI workflows, AMD agreed to acquire World Labs, AllenAI published 85,336 simulated demonstrations in ToyBlocks, and Google followed its experimental Genie 4 preview with paid-tier Gemini API access.",
+          "zhHans": "NVIDIA 开源异构物理 AI 编排平台 OSMO，AMD 达成收购 World Labs 协议，AllenAI 公开包含 85,336 条长任务仿真演示的 ToyBlocks 数据集，Google 则在实验性 Genie 4 预览后向付费层开发者开放 Gemini API 访问。"
         },
         "eventIds": [
-          "gemini-robotics-2025",
-          "figure-bmw-humanoid-2025"
+          "nvidia-osmo-2026",
+          "amd-world-labs-acquisition-2026",
+          "genie-4-world-simulation-2026",
+          "allenai-toyblocks-dataset-release-2026",
+          "google-genie-4-availability-2026"
         ],
         "sourceIds": [
-          "google-gemini-robotics-2025",
-          "figure-bmw-production",
-          "stanford-ai-index-2026"
+          "ad261127-github-nvidia-osmo-2026",
+          "nov09-toy-blog",
+          "nov09-toy-api",
+          "sweep-20260929-amd-worldlabs-techcrunch",
+          "fup26-google-genie4",
+          "ea005-testingcatalog-genie4"
         ]
       }
     ],
@@ -585,68 +730,124 @@
       "resolutionMode": "monitor_only",
       "basisType": "none",
       "summary": {
-        "en": "There is growing public evidence that embodied AI is entering real operations, but no stable outside rulebook yet defines when robots have truly left the pilot phase. This direction therefore stays in monitoring mode and follows event-linked deployment evidence rather than publishing a house threshold.",
-        "zhHans": "具身 AI 正在进入真实运营环境的公开证据越来越多，但目前仍没有稳定的外部规则来界定机器人何时真正走出试点阶段。因此这个方向保持观察模式，跟踪事件化部署证据，而不公布本站自定义门槛。"
+        "en": "Physical-AI software, simulation datasets and single-site factory pilots are expanding, but most 2026 updates concern upstream models and synthetic data rather than independently verified multi-site fleet operations, and no external industry threshold defines leaving the pilot phase.",
+        "zhHans": "物理 AI 软件栈、仿真数据集与单点工厂试点正在扩展，但 2026 年的新进展仍集中于上游模型与合成数据，而非经独立核验的多场地商业化运营，且外部尚无界定“走出试点期”的统一标准。"
       },
       "sourceIds": [
-        "nist-ai-rmf-1-0",
-        "oecd-ai-principles-2019",
-        "google-gemini-robotics-2025"
+        "ad261127-nist-ai-rmf",
+        "ad261127-ars-gemini-robotics-er2-2026"
       ]
     },
     "sources": [
       {
-        "sourceId": "google-gemini-robotics-2025",
+        "sourceId": "ad261127-deepmind-gemini-robotics-2025",
         "supports": [
-          "signals",
-          "technicalContext"
+          "robot-foundation-models-are-arriving"
         ]
       },
       {
-        "sourceId": "figure-bmw-production",
+        "sourceId": "ad261127-techcrunch-gemini-robotics-2025",
         "supports": [
-          "signals",
-          "deploymentContext"
+          "robot-foundation-models-are-arriving"
         ]
       },
       {
-        "sourceId": "stanford-ai-index-2026",
+        "sourceId": "ad261127-google-gemini-robotics-er2-2026",
         "supports": [
-          "signals",
-          "ecosystemContext"
+          "robot-foundation-models-are-arriving"
         ]
       },
       {
-        "sourceId": "nist-ai-rmf-1-0",
+        "sourceId": "ad261127-ars-gemini-robotics-er2-2026",
         "supports": [
-          "consensusBasis"
+          "robot-foundation-models-are-arriving",
+          "robots-leave-the-pilot-zone/consensus-basis"
         ]
       },
       {
-        "sourceId": "oecd-ai-principles-2019",
+        "sourceId": "ad261127-figure-bmw-2025",
         "supports": [
-          "consensusBasis"
+          "real-factory-deployment-is-now-public"
+        ]
+      },
+      {
+        "sourceId": "ad261127-github-nvidia-osmo-2026",
+        "supports": [
+          "simulation-data-and-world-model-tooling-expanding"
+        ]
+      },
+      {
+        "sourceId": "nov09-toy-blog",
+        "supports": [
+          "simulation-data-and-world-model-tooling-expanding"
+        ]
+      },
+      {
+        "sourceId": "nov09-toy-api",
+        "supports": [
+          "simulation-data-and-world-model-tooling-expanding"
+        ]
+      },
+      {
+        "sourceId": "sweep-20260929-amd-worldlabs-techcrunch",
+        "supports": [
+          "simulation-data-and-world-model-tooling-expanding"
+        ]
+      },
+      {
+        "sourceId": "fup26-google-genie4",
+        "supports": [
+          "simulation-data-and-world-model-tooling-expanding"
+        ]
+      },
+      {
+        "sourceId": "ea005-testingcatalog-genie4",
+        "supports": [
+          "simulation-data-and-world-model-tooling-expanding"
+        ]
+      },
+      {
+        "sourceId": "ad261127-nist-ai-rmf",
+        "supports": [
+          "robots-leave-the-pilot-zone/consensus-basis"
         ]
       }
     ],
     "relatedEvents": [
       "gemini-robotics-2025",
       "figure-bmw-humanoid-2025",
-      "gemini-robotics-er2-2026"
+      "gemini-robotics-er2-2026",
+      "nvidia-osmo-2026",
+      "amd-world-labs-acquisition-2026",
+      "genie-4-world-simulation-2026",
+      "allenai-toyblocks-dataset-release-2026",
+      "google-genie-4-availability-2026"
     ],
     "tags": [
       "robotics",
       "embodied-ai",
-      "automation",
+      "simulation",
+      "world-models",
       "commercial-deployment"
     ],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-08-10",
-      "reviewedAt": "2026-08-10",
       "publishedAt": "2026-06-25",
-      "curator": "EpochArc editorial",
-      "screeningRunId": "possible-directions-2026-06-25c"
+      "updatedAt": "2026-11-27",
+      "reviewedAt": "2026-11-27",
+      "lastSourceCheckAt": "2026-11-27",
+      "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+      "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
+      "reviewProvenance": "v2.4",
+      "reviewRecord": "governance/reviews/arcs-directions-20261127/dir-robots-leave-the-pilot-zone.json",
+      "screeningRunId": "targeted-arcs-directions-20261127",
+      "changeLog": [
+        {
+          "date": "2026-11-27",
+          "changeType": "source_added",
+          "summary": "Migrated direction to v2.4 provenance and updated through November 2026 with Gemini Robotics ER 2, NVIDIA OSMO, AMD–World Labs agreement, AllenAI ToyBlocks dataset, and Google Genie 4 API availability."
+        }
+      ]
     }
   },
   {
@@ -657,18 +858,18 @@
       "zhHans": "AI 原生发现流水线"
     },
     "thesis": {
-      "en": "AI is no longer just a tool within scientific research; it is becoming part of the workflow through which scientific discoveries are generated, tested, and scaled.",
-      "zhHans": "AI 不再只是科学研究中的工具，它正在成为科学发现本身被生成、验证和扩展的工作流的一部分。"
+      "en": "AI is moving from isolated domain models into iterative hypothesis, proof-assistance and biomolecular design loops, while independent replication and evidence transparency lag vendor claims.",
+      "zhHans": "AI 正从孤立领域模型迈向假设生成、定理辅助推导与生物分子设计的迭代闭环，但独立复现与证据透明度仍滞后于厂商主张。"
     },
     "description": {
-      "en": "AI systems generate hypotheses, design experiments, analyze results, and accelerate subsequent rounds of research within integrated workflows.",
-      "zhHans": "AI 系统在集成工作流中生成假设、设计实验、分析结果，并加速后续研究轮次。"
+      "en": "Researchers combine frontier reasoning models, automated evaluators and domain simulators across biology, math and AI R&D, alongside active debate over human shepherding and audit redactions.",
+      "zhHans": "研究团队在生物学、数学与 AI 自身研发中结合前沿推理模型、自动评估器与领域模拟器，同时围绕人工引导归因与审计材料删减展开激烈讨论。"
     },
     "forecastType": "science",
     "status": "active",
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-09-06",
-    "lastReviewedAt": "2026-09-06",
+    "updatedAt": "2026-11-27",
+    "lastReviewedAt": "2026-11-27",
     "reviewCadence": "quarterly",
     "expectedWindow": {
       "start": "2027",
@@ -681,25 +882,25 @@
     },
     "rationale": {
       "currentBaseline": {
-        "en": "AI contributes to protein structure prediction, literature synthesis, optimization, and scientific coding. These are material achievements, but they do not by themselves constitute a general-purpose discovery pipeline.",
-        "zhHans": "AI 已参与蛋白质结构预测、文献综合、优化和科研编程。这些都是重要进展，但本身尚不足以构成通用的发现流水线。"
+        "en": "Protein structure prediction and watermarked binder design (AlphaFold, SynthID Bio), evolutionary coding loops with automated verifiers (AlphaEvolve), competition-level math reasoning (Gemini Deep Think IMO gold) and human-shepherded research workflows exist, without forming a self-sufficient general discovery pipeline.",
+        "zhHans": "蛋白质结构预测与带水印结合体设计（AlphaFold、SynthID Bio）、结合自动验证器的进化式算法搜索（AlphaEvolve）、奥赛级数学推理（Gemini Deep Think IMO 金牌）以及外部专家引导的辅助科研流程均已出现，但尚未构成可独立运转的通用科学发现流水线。"
       },
       "whyThisDirection": {
-        "en": "The relevant question is whether repeated cycles of hypothesis proposal, experimental design, data analysis, and external validation are emerging around AI-mediated discovery — not whether AI can assist with isolated research tasks.",
-        "zhHans": "关键在于，围绕 AI 介导的发现，是否正在出现由假设提出、实验设计、数据分析和外部验证构成的重复循环——而非 AI 能否辅助孤立的科研任务。"
+        "en": "The central question is whether repeated generate-verify-refine loops—paired with rising internal AI R&D capability ratings—mature into reproducible discovery workflows that unaffiliated external labs adopt and validate.",
+        "zhHans": "核心问题在于，“生成—自动验证—迭代修正”闭环叠加不断上升的模型自我研发评级，能否成熟为可由无关联外部实验室独立复用并核验的科研发现工作流。"
       },
       "counterSignal": {
-        "en": "Many discovery claims originate from the system builders themselves. Independent validation, reproducibility, and proper attribution remain difficult to establish.",
-        "zhHans": "许多发现主张来自系统构建者自身。独立验证、可复现性和贡献归因仍难以建立。"
+        "en": "OpenAI’s October 2026 scientific results relied on external human 'shepherds' guiding problem formulation; METR reported Anthropic redacted a majority of the most informative evidence behind its ~1.9x R&D speedup estimate; and GPT-6.2 Astra’s High AI Self-Improvement rating is an internal Preparedness threshold rather than independent proof of open-ended scientific discovery.",
+        "zhHans": "OpenAI 2026 年 10 月公布的科研成果依赖外部人类专家“引导人”把关方向；METR 在估算 Anthropic 内部研发提速约 1.9 倍时指出大部分最关键证据被删减；而 GPT-6.2 Astra 的 AI 自我改进 High 评级属于内部风险准备度阈值，并非外部开放科学发现的独立证明。"
       },
       "openQuestions": [
         {
-          "en": "At what point does AI transition from being a powerful research tool to becoming a repeatable discovery workflow?",
-          "zhHans": "AI 在什么节点会从强大的研究工具转变为可重复的发现工作流？"
+          "en": "Which scientific domains beyond formalizable math, code optimization and protein folding have fast, reliable enough verifiers to sustain automated discovery loops?",
+          "zhHans": "在可形式化验证的数学、代码优化与蛋白质结构之外，哪些实验科学领域具备足够快速可靠的验证器来支撑自动化发现闭环？"
         },
         {
-          "en": "What public evidence would demonstrate that outside research groups can independently validate or reuse AI-originated discovery workflows?",
-          "zhHans": "什么公开证据能表明外部研究团队能够独立验证或复用 AI 生成的发现工作流？"
+          "en": "What unredacted external benchmarks or pre-registered replications will separate human-shepherded AI assistance from genuinely autonomous discovery workflows?",
+          "zhHans": "什么样的未删减外部基准或预注册独立复现，才能清晰区分“人类专家主导的 AI 辅助”与真正的“原生自动化发现流水线”？"
         }
       ]
     },
@@ -709,39 +910,39 @@
         "kind": "research",
         "status": "observed",
         "label": {
-          "en": "AI has become core infrastructure for at least one major scientific workflow.",
-          "zhHans": "AI 已成为至少一个重大科学工作流的核心基础设施。"
+          "en": "AI protein-structure prediction achieved Nobel recognition as core scientific infrastructure.",
+          "zhHans": "AI 蛋白质结构预测作为基础科研设施获得诺贝尔化学奖制度性认可。"
         },
         "summary": {
-          "en": "AlphaFold and its subsequent Nobel recognition demonstrated that AI can evolve from a supporting tool into part of the fundamental working substrate of modern science.",
-          "zhHans": "AlphaFold 及其后续的诺贝尔奖认可表明，AI 可以从辅助工具演变为现代科学工作基础的一部分。"
+          "en": "AlphaFold’s structural predictions and the 2024 Chemistry Nobel Prize awarded to Baker, Hassabis and Jumper established AI as foundational infrastructure in structural biology.",
+          "zhHans": "AlphaFold 的结构预测突破与 2024 年授予 Baker、Hassabis 和 Jumper 的诺贝尔化学奖，确立了 AI 在结构生物学中的基础设施地位。"
         },
         "eventIds": [
           "alphafold-2020",
           "alphafold-nobel-2024"
         ],
         "sourceIds": [
-          "jumper-alphafold-2021",
-          "nobel-chemistry-2024"
+          "ad261127-nature-alphafold-2021",
+          "ad261127-nobel-chemistry-2024"
         ]
       },
       {
         "id": "algorithmic-discovery-is-now-a-public-claim",
-        "kind": "research",
+        "kind": "workflow",
         "status": "observed",
         "label": {
-          "en": "AI-assisted algorithmic and engineering discovery is now presented as a repeatable workflow claim.",
-          "zhHans": "AI 辅助的算法与工程发现，已被提出为一种可重复的工作流主张。"
+          "en": "Evolutionary LLM-plus-evaluator loops framed algorithmic discovery as a repeatable workflow.",
+          "zhHans": "大模型与自动评估器结合的进化闭环，将算法发现提出为可重复工作流主张。"
         },
         "summary": {
-          "en": "AlphaEvolve advanced the conversation from isolated AI assistance to an explicit claim that AI can participate in an iterative discovery loop for algorithms and systems.",
-          "zhHans": "AlphaEvolve 将讨论从孤立的 AI 辅助推进到明确的声明：AI 可以参与算法和系统的迭代发现闭环。"
+          "en": "Google DeepMind’s AlphaEvolve paired Gemini code generation with automated evaluators to iteratively search for improved mathematical and computing algorithms.",
+          "zhHans": "Google DeepMind 的 AlphaEvolve 将 Gemini 代码生成与自动评估器配对，在可自动打分的数学与计算问题上执行迭代搜索。"
         },
         "eventIds": [
           "alphaevolve-2025"
         ],
         "sourceIds": [
-          "google-alphaevolve-2025"
+          "ad261127-deepmind-alphaevolve-2025"
         ]
       },
       {
@@ -749,40 +950,44 @@
         "kind": "benchmark",
         "status": "observed",
         "label": {
-          "en": "Frontier systems show measurable improvement on advanced scientific and mathematical reasoning tasks.",
-          "zhHans": "前沿系统在高水平科学与数学推理任务中展现出可测量的进步。"
+          "en": "Natural-language test-time reasoning reached certified gold-medal level at IMO 2025.",
+          "zhHans": "纯自然语言推理时计算在 2025 年国际数学奥林匹克（IMO）上达到官方评定金牌线。"
         },
         "summary": {
-          "en": "Gemini Deep Think's IMO gold medal result strengthened the case that frontier models are advancing into reasoning territory relevant to future discovery workflows.",
-          "zhHans": "Gemini Deep Think 在 IMO 中获得金牌，进一步加强了前沿模型正在进入与未来发现工作流相关的高阶推理领域的判断。"
+          "en": "Gemini Deep Think scored 35/42 points under official IMO coordinator grading in July 2025 without manual translation into formal proof languages.",
+          "zhHans": "2025 年 7 月，Gemini Deep Think 在无需人工先转写为形式化语言的情况下，经 IMO 协调员正式评阅取得 35/42 分的金牌成绩。"
         },
         "eventIds": [
           "gemini-deep-think-imo-gold-2025"
         ],
         "sourceIds": [
-          "deepmind-gemini-deep-think-imo",
-          "stanford-ai-index-2026"
+          "ad261127-deepmind-imo-2025",
+          "ad261127-ars-imo-2025"
         ]
       },
       {
-        "id": "full-stack-ai-scientific-research-in-nature",
+        "id": "bio-provenance-shepherded-results-and-rd-audits",
         "kind": "research",
         "status": "observed",
         "label": {
-          "en": "End-to-end automated AI scientific research has appeared in peer-reviewed publications.",
-          "zhHans": "端到端 AI 自动化科学研究已出现在同行评审出版物中。"
+          "en": "Late-2026 paired functional protein watermarking, shepherded research claims and R&D speed audits with transparency caveats.",
+          "zhHans": "2026 年秋冬季功能性蛋白质水印、专家引导科研成果与研发提速审计并进，但伴随显著透明度限定。"
         },
         "summary": {
-          "en": "Nature published 'The AI Scientist' (March 2026), demonstrating end-to-end automation of the scientific process — from idea generation through experimentation to manuscript writing. Google's Hypothesis Generation system (I/O 2026) introduced multi-agent idea tournaments for research. These developments show that discovery pipeline automation is no longer a theoretical concept.",
-          "zhHans": "Nature 于 2026 年 3 月发表了 'The AI Scientist'，展示了从想法生成到实验再到论文写作的端到端科学流程自动化。Google 在 I/O 2026 上发布的 Hypothesis Generation 系统引入了多智能体想法锦标赛。这些进展表明，发现流水线自动化已不再是理论概念。"
+          "en": "SynthID Bio watermarked functional protein binders, OpenAI reported three expert-shepherded research results, METR estimated ~1.9x Anthropic R&D speedup under heavy evidence redaction, and OpenAI rated GPT-6.2 Astra High on AI Self-Improvement.",
+          "zhHans": "SynthID Bio 验证了具结合活性的蛋白质设计水印，OpenAI 公布三项外部专家引导科研成果，METR 在底层证据大量删减条件下估算 Anthropic 研发提速约 1.9 倍，OpenAI 系统卡则将 GPT-6.2 Astra 标定为 AI 自我改进 High 阈值。"
         },
         "eventIds": [
-          "gemini-deep-think-imo-gold-2025",
-          "alphaevolve-2025"
+          "google-synthid-bio-2026",
+          "openai-scientific-results-2026",
+          "metr-anthropic-rd-acceleration-assessment-2026",
+          "openai-gpt-6-2-astra-sol-2026"
         ],
         "sourceIds": [
-          "nature-ai-scientist-2026",
-          "google-hypothesis-generation-2026"
+          "sweep-20261008-synthid-bio-nature",
+          "fup26-verge-openai-science",
+          "new26nov-metr",
+          "ea005-openai-gpt62-system-card"
         ]
       }
     ],
@@ -790,60 +995,76 @@
       "resolutionMode": "monitor_only",
       "basisType": "none",
       "summary": {
-        "en": "Public evidence strongly suggests that AI is entering more of the discovery workflow, but there is no mature external consensus yet for when 'AI-native discovery pipelines' should be declared real in a binary sense. This direction remains a monitored pattern rather than a publicly scored finish line.",
-        "zhHans": "公开证据已经强烈提示 AI 正在进入更多发现工作流环节，但目前仍没有成熟的外部共识，能够以二元方式判断“AI 原生发现流水线”何时算成立。因此这个方向仍是被持续观察的模式，而不是公开计分的终点线。"
+        "en": "AI is embedded in specific scientific and R&D loops, but attribution debates around human shepherding, redacted internal evaluations and voluntary risk frameworks under revision show no external consensus exists for declaring 'AI-native discovery pipelines' achieved.",
+        "zhHans": "AI 已嵌入多项具体科研与算法研发闭环，但围绕人类专家引导归因、受删减的内部评估日志及仍在修订的自愿性风险框架表明，外部尚无宣布“AI 原生发现流水线”已达成的成熟共识。"
       },
       "sourceIds": [
-        "nist-ai-rmf-1-0",
-        "oecd-ai-principles-2019",
-        "stanford-ai-index-2026"
+        "fup26-verge-openai-science",
+        "new26nov-metr",
+        "ad261127-nist-ai-rmf"
       ]
     },
     "sources": [
       {
-        "sourceId": "jumper-alphafold-2021",
+        "sourceId": "ad261127-nature-alphafold-2021",
         "supports": [
-          "signals",
-          "historicalBaseline"
+          "alphafold-became-scientific-infrastructure"
         ]
       },
       {
-        "sourceId": "nobel-chemistry-2024",
+        "sourceId": "ad261127-nobel-chemistry-2024",
         "supports": [
-          "signals",
-          "historicalValidation"
+          "alphafold-became-scientific-infrastructure"
         ]
       },
       {
-        "sourceId": "google-alphaevolve-2025",
+        "sourceId": "ad261127-deepmind-alphaevolve-2025",
         "supports": [
-          "signals",
-          "workflowContext"
+          "algorithmic-discovery-is-now-a-public-claim"
         ]
       },
       {
-        "sourceId": "stanford-ai-index-2026",
+        "sourceId": "ad261127-deepmind-imo-2025",
         "supports": [
-          "signals",
-          "consensusBasis"
+          "advanced-science-reasoning-is-improving"
         ]
       },
       {
-        "sourceId": "nist-ai-rmf-1-0",
+        "sourceId": "ad261127-ars-imo-2025",
         "supports": [
-          "consensusBasis"
+          "advanced-science-reasoning-is-improving"
         ]
       },
       {
-        "sourceId": "nature-ai-scientist-2026",
+        "sourceId": "sweep-20261008-synthid-bio-nature",
         "supports": [
-          "signals"
+          "bio-provenance-shepherded-results-and-rd-audits"
         ]
       },
       {
-        "sourceId": "google-hypothesis-generation-2026",
+        "sourceId": "fup26-verge-openai-science",
         "supports": [
-          "signals"
+          "ai-native-discovery-pipelines/consensus-basis",
+          "bio-provenance-shepherded-results-and-rd-audits"
+        ]
+      },
+      {
+        "sourceId": "new26nov-metr",
+        "supports": [
+          "ai-native-discovery-pipelines/consensus-basis",
+          "bio-provenance-shepherded-results-and-rd-audits"
+        ]
+      },
+      {
+        "sourceId": "ea005-openai-gpt62-system-card",
+        "supports": [
+          "bio-provenance-shepherded-results-and-rd-audits"
+        ]
+      },
+      {
+        "sourceId": "ad261127-nist-ai-rmf",
+        "supports": [
+          "ai-native-discovery-pipelines/consensus-basis"
         ]
       }
     ],
@@ -852,23 +1073,37 @@
       "alphafold-nobel-2024",
       "alphaevolve-2025",
       "gemini-deep-think-imo-gold-2025",
-      "openai-astra-mathematics-2026",
-      "anthropic-mythos-cryptanalysis-2026",
-      "anthropic-model-hardware-standard-2026"
+      "google-synthid-bio-2026",
+      "openai-scientific-results-2026",
+      "metr-anthropic-rd-acceleration-assessment-2026",
+      "openai-gpt-6-2-astra-sol-2026"
     ],
     "tags": [
       "science",
       "discovery",
-      "research-automation",
-      "algorithms"
+      "alphafold",
+      "mathematical-reasoning",
+      "ai-rd",
+      "biosecurity"
     ],
     "editorial": {
       "createdAt": "2026-06-25",
-      "updatedAt": "2026-09-06",
-      "reviewedAt": "2026-09-06",
       "publishedAt": "2026-06-25",
-      "curator": "EpochArc editorial",
-      "screeningRunId": "possible-directions-2026-06-25c"
+      "updatedAt": "2026-11-27",
+      "reviewedAt": "2026-11-27",
+      "lastSourceCheckAt": "2026-11-27",
+      "curator": "antigravity:eb6ae22d-7536-4f8e-b871-01e5e0f2b878",
+      "reviewer": "antigravity-subagent:e052d72a-4409-43f6-bb18-d8fe7bb15568",
+      "reviewProvenance": "v2.4",
+      "reviewRecord": "governance/reviews/arcs-directions-20261127/dir-ai-native-discovery-pipelines.json",
+      "screeningRunId": "targeted-arcs-directions-20261127",
+      "changeLog": [
+        {
+          "date": "2026-11-27",
+          "changeType": "source_added",
+          "summary": "Migrated direction to v2.4 provenance and updated through November 2026 with SynthID Bio, OpenAI shepherded scientific results, METR's Anthropic R&D acceleration assessment caveats, and GPT-6.2 Astra High AI Self-Improvement rating."
+        }
+      ]
     }
   }
 ]
